@@ -9,8 +9,26 @@ import { z } from 'zod'
 import type { ClaudeStatus } from '../../shared/ipc'
 
 const DEFAULT_TIMEOUT_MS = 120_000
+const MAX_CONCURRENT_CALLS = 2
 
 export class ClaudeError extends Error {}
+
+// Limita cuántos procesos de Claude corren a la vez (generar contenido en lote no debe
+// lanzar decenas). Al terminar, el lugar pasa directo al siguiente en espera.
+let activeCalls = 0
+const waiting: (() => void)[] = []
+
+async function withSlot<T>(fn: () => Promise<T>): Promise<T> {
+  if (activeCalls < MAX_CONCURRENT_CALLS) activeCalls++
+  else await new Promise<void>((resolve) => waiting.push(resolve))
+  try {
+    return await fn()
+  } finally {
+    const next = waiting.shift()
+    if (next) next()
+    else activeCalls--
+  }
+}
 
 export function findClaudeExecutable(): string | null {
   const candidates = [
@@ -131,7 +149,7 @@ export async function askClaude<T>({
   let lastError: unknown
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      const { code, stdout, stderr } = await runProcess(exe, args, prompt, timeoutMs)
+      const { code, stdout, stderr } = await withSlot(() => runProcess(exe, args, prompt, timeoutMs))
       if (code !== 0) throw new ClaudeError(stderr.trim() || `Claude Code terminó con código ${code}.`)
       const envelope = resultSchema.parse(JSON.parse(stdout))
       if (envelope.is_error) throw new ClaudeError(envelope.result ?? 'Claude devolvió un error.')

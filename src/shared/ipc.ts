@@ -1,9 +1,16 @@
 // Contrato entre el proceso principal y la interfaz.
 
+import type { AppSettings } from './settings'
+
 export const IPC = {
   claudeStatus: 'claude:status',
-  claudeSample: 'claude:sample'
+  claudeSample: 'claude:sample',
+  settingsGet: 'settings:get',
+  settingsUpdate: 'settings:update'
 } as const
+
+// Todas las respuestas IPC viajan envueltas para que los errores lleguen limpios a la interfaz.
+export type Result<T> = { ok: true; data: T } | { ok: false; error: string }
 
 export type ClaudeStatus =
   | { state: 'ready'; subscription: string | null; email: string | null }
@@ -20,4 +27,6 @@ export interface SampleSentence {
 export interface Api {
   getClaudeStatus(): Promise<ClaudeStatus>
   sampleSentence(): Promise<SampleSentence>
+  getSettings(): Promise<AppSettings>
+  updateSettings(patch: Partial<AppSettings>): Promise<AppSettings>
 }

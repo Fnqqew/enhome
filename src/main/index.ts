@@ -1,9 +1,8 @@
-import { app, BrowserWindow, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, nativeTheme, shell } from 'electron'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
-import { z } from 'zod'
-import { askClaude, getClaudeStatus } from './claude/bridge'
-import { IPC, type SampleSentence } from '../shared/ipc'
+import { openDatabase } from './db/database'
+import { registerIpc } from './ipc'
 
 function createWindow(): void {
   const win = new BrowserWindow({
@@ -14,6 +13,7 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     title: 'Proyecto Inglés',
+    backgroundColor: nativeTheme.shouldUseDarkColors ? '#161719' : '#f6f5f2',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false
@@ -33,20 +33,11 @@ function createWindow(): void {
   }
 }
 
-function registerIpc(): void {
-  ipcMain.handle(IPC.claudeStatus, () => getClaudeStatus())
-
-  ipcMain.handle(IPC.claudeSample, (): Promise<SampleSentence> =>
-    askClaude({
-      systemPrompt: 'Sos un generador de contenido para una app de inglés para hispanohablantes. Respondé solo con lo pedido.',
-      prompt: 'Dame una oración simple en inglés de nivel A1 y su traducción al español rioplatense.',
-      schema: z.object({ english: z.string(), spanish: z.string() })
-    })
-  )
-}
-
 app.whenReady().then(() => {
-  registerIpc()
+  const db = openDatabase(join(app.getPath('userData'), 'proyecto-ingles.db'))
+  app.on('will-quit', () => db.close())
+
+  registerIpc(db)
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()

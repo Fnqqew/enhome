@@ -1,9 +1,17 @@
 import { contextBridge, ipcRenderer } from 'electron'
-import { IPC, type Api } from '../shared/ipc'
+import { IPC, type Api, type Result } from '../shared/ipc'
+
+async function invoke<T>(channel: string, ...args: unknown[]): Promise<T> {
+  const result = (await ipcRenderer.invoke(channel, ...args)) as Result<T>
+  if (!result.ok) throw new Error(result.error)
+  return result.data
+}
 
 const api: Api = {
-  getClaudeStatus: () => ipcRenderer.invoke(IPC.claudeStatus),
-  sampleSentence: () => ipcRenderer.invoke(IPC.claudeSample)
+  getClaudeStatus: () => invoke(IPC.claudeStatus),
+  sampleSentence: () => invoke(IPC.claudeSample),
+  getSettings: () => invoke(IPC.settingsGet),
+  updateSettings: (patch) => invoke(IPC.settingsUpdate, patch)
 }
 
 contextBridge.exposeInMainWorld('api', api)

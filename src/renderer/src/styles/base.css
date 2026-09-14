@@ -1,47 +1,56 @@
-/* Base visual: minimalista, sobria y amigable. Los temas redefinen estas variables. */
+/* Base visual: minimalista, sobria y amigable.
+   SettingsProvider pone data-theme, data-font, data-size y data-density en <html>
+   y define --accent según la paleta elegida. */
+
 :root {
   --bg: #f6f5f2;
   --surface: #ffffff;
+  --surface-hover: #efeee9;
   --border: #e4e2dc;
   --text: #22211f;
   --muted: #6f6c66;
-  --accent: #4f6bd8;
+  --accent: #3f5bd0;
   --accent-contrast: #ffffff;
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, transparent);
   --danger: #c2413b;
   --radius: 12px;
-  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --font-size: 15px;
-  color-scheme: light;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --bg: #161719;
-    --surface: #1f2023;
-    --border: #2e3034;
-    --text: #ecebe8;
-    --muted: #9a9892;
-    --accent: #7d93ee;
-    --accent-contrast: #111214;
-    --danger: #e5726c;
-    color-scheme: dark;
-  }
+  --font-moderna: 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+  --font-clasica: Georgia, Cambria, 'Times New Roman', serif;
+  --font-amigable: 'Nunito Variable', 'Segoe UI', system-ui, sans-serif;
+  --font: var(--font-moderna);
+  --font-size: 16px;
+  --space: 1;
+
+  color-scheme: light;
 }
 
 :root[data-theme='dark'] {
   --bg: #161719;
   --surface: #1f2023;
+  --surface-hover: #292a2e;
   --border: #2e3034;
   --text: #ecebe8;
   --muted: #9a9892;
-  --accent: #7d93ee;
   --accent-contrast: #111214;
   --danger: #e5726c;
   color-scheme: dark;
 }
 
+:root[data-font='clasica'] { --font: var(--font-clasica); }
+:root[data-font='amigable'] { --font: var(--font-amigable); }
+
+:root[data-size='sm'] { --font-size: 14px; }
+:root[data-size='lg'] { --font-size: 18px; }
+
+:root[data-density='compact'] { --space: 0.7; }
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
 }
 
 body {
@@ -49,14 +58,28 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  font-size: var(--font-size);
   line-height: 1.55;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+}
+
 h1 {
-  margin: 0 0 1.25rem;
+  margin: 0 0 calc(1.25rem * var(--space));
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
 }
 
 .muted {
@@ -65,6 +88,12 @@ h1 {
 
 .error {
   color: var(--danger);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem * var(--space));
 }
 
 .centered {
@@ -78,21 +107,25 @@ h1 {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
-  max-width: 40rem;
+  padding: calc(1.5rem * var(--space));
+  max-width: 44rem;
+}
+
+.card + .card {
+  margin-top: calc(1.25rem * var(--space));
 }
 
 .lock {
   text-align: center;
+  max-width: 32rem;
 }
 
 .btn {
-  font: inherit;
   background: var(--accent);
   color: var(--accent-contrast);
   border: none;
   border-radius: calc(var(--radius) - 4px);
-  padding: 0.6rem 1.1rem;
+  padding: calc(0.6rem * var(--space)) 1.1rem;
   cursor: pointer;
 }
 
@@ -100,6 +133,8 @@ h1 {
   opacity: 0.6;
   cursor: default;
 }
+
+/* Estructura principal */
 
 .shell {
   display: grid;
@@ -111,34 +146,33 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding: 1.25rem 0.75rem;
+  padding: calc(1.25rem * var(--space)) 0.75rem;
   border-right: 1px solid var(--border);
   background: var(--surface);
 }
 
 .brand {
   font-weight: 600;
-  padding: 0 0.75rem 1rem;
+  padding: 0 0.75rem calc(1rem * var(--space));
 }
 
 .nav-item {
-  font: inherit;
   text-align: left;
   background: none;
-  color: var(--text);
   border: none;
   border-radius: 8px;
-  padding: 0.55rem 0.75rem;
+  padding: calc(0.55rem * var(--space)) 0.75rem;
   cursor: pointer;
 }
 
 .nav-item:hover {
-  background: var(--bg);
+  background: var(--surface-hover);
 }
 
-.nav-item.active {
-  background: var(--accent);
-  color: var(--accent-contrast);
+.nav-item[aria-current='page'] {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .sidebar-foot {
@@ -148,20 +182,78 @@ h1 {
 }
 
 .content {
-  padding: 2rem 2.5rem;
+  padding: calc(2rem * var(--space)) calc(2.5rem * var(--space));
+}
+
+/* Controles */
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  gap: 3px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.segmented button {
+  background: none;
+  border: none;
+  border-radius: 7px;
+  padding: calc(0.35rem * var(--space)) 0.85rem;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.segmented button:hover {
+  color: var(--text);
+}
+
+.segmented button[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.12);
+}
+
+.swatches {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+}
+
+.swatch[aria-pressed='true'] {
+  outline-color: var(--text);
 }
 
 .sample {
-  margin-top: 1.25rem;
-  padding-top: 1rem;
+  padding-top: calc(1rem * var(--space));
   border-top: 1px solid var(--border);
-}
-
-.sample p {
-  margin: 0.2rem 0;
 }
 
 .sample .en {
   font-size: 1.15rem;
   font-weight: 500;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
