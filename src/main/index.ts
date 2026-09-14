@@ -39,7 +39,7 @@ app.whenReady().then(() => {
 
   // En desarrollo el temario se lee del repo; empaquetada, de los recursos de la app.
   const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-  registerIpc(db, contentDir)
+  registerIpc(db, contentDir, is.dev)
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()

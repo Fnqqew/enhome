@@ -120,6 +120,33 @@ tests/           tests del motor
 7. **Progreso:** racha, experiencia, logros, comodines, mapa visual.
 8. **Ajustes:** personalización completa y pulido final.
 
+## Reglas detalladas del motor (definidas en la fase 3)
+
+Todas las constantes están en `src/main/engine/rules.ts`.
+
+**Examen inicial**
+- Va tópico por tópico, con 3 preguntas de opción múltiple generadas por Claude, cada una de un subtema distinto. Se puede responder «No lo sé», que cuenta como error.
+- Con 2 de 3 correctas se pasa al tópico siguiente. El primer tópico que no se supera es donde empieza el recorrido, y el examen termina ahí.
+- Los tópicos anteriores quedan aprobados. Si se hace lunes o martes, la semana arranca ese mismo día sin contar faltas de los días previos. Si se hace de miércoles en adelante, arranca el lunes siguiente.
+- Si se cierra la app, el examen se retoma donde quedó.
+
+**Semana**
+- Cada semana tiene 5 prácticas en orden. La práctica N se habilita el día N: no se puede adelantar, pero sí ponerse al día con las atrasadas, varias el mismo día.
+- Una falta es un día de lunes a viernes que termina sin ninguna práctica hecha.
+- Practicar un domingo con faltas recupera 1, una sola vez por semana. Si ya no quedan prácticas pendientes, se registra un repaso de recuperación.
+- El examen se habilita con las 5 prácticas hechas y menos de 3 faltas efectivas, desde el viernes y hasta el domingo.
+
+**Fin de semana sin resultado**
+- Si se pasa el domingo sin rendir, sea por prácticas incompletas, bloqueo o porque no se rindió, el lunes arranca una semana de continuación del mismo tópico.
+- Esa semana empieza por las prácticas pendientes y completa los días libres con repaso del tópico.
+- Si pasó más de una semana sin abrir la app, las faltas se cuentan desde el día en que se vuelve.
+
+**Resultado del examen semanal**
+- Con 8 o más, el tópico se aprueba y el siguiente arranca el lunes.
+- Si reprueba, la semana siguiente es de reintento: los 5 días refuerzan los subtemas con más errores.
+- Desde el segundo reprobado, los 2 primeros días repasan los prerrequisitos con más errores y los otros 3 refuerzan.
+- En cualquier examen, un tópico anterior con más del 40 % de errores (y al menos 2 preguntas) queda marcado como «repaso recomendado». La marca se quita al hacer una práctica de repaso de ese tópico.
+
 ## 4. Verificación
 - **Tests del motor con fechas simuladas:**
   - Examen inicial a mitad de semana.

@@ -25,6 +25,18 @@ export function openDatabase(path: string, migrations: Migration[] = MIGRATIONS)
   return db
 }
 
+export function transaction<T>(db: Db, fn: () => T): T {
+  db.exec('BEGIN')
+  try {
+    const result = fn()
+    db.exec('COMMIT')
+    return result
+  } catch (err) {
+    db.exec('ROLLBACK')
+    throw err
+  }
+}
+
 export function schemaVersion(db: Db): number {
   return (db.prepare('SELECT COALESCE(MAX(version), 0) AS v FROM schema_migrations').get() as { v: number }).v
 }

@@ -119,5 +119,37 @@ export const MIGRATIONS: Migration[] = [
         quantity INTEGER NOT NULL DEFAULT 0 CHECK (quantity >= 0)
       );
     `
+  },
+  {
+    version: 2,
+    name: 'semanas y unidades de práctica',
+    sql: `
+      DROP TABLE day_progress;
+
+      -- Una fila por semana de calendario dedicada a un tópico.
+      CREATE TABLE weeks (
+        id           INTEGER PRIMARY KEY,
+        topic_id     TEXT NOT NULL,
+        week_start   TEXT NOT NULL UNIQUE,
+        starts_on    TEXT NOT NULL,
+        kind         TEXT NOT NULL CHECK (kind IN ('normal', 'carry', 'retry')),
+        status       TEXT NOT NULL CHECK (status IN ('active', 'passed', 'failed', 'incomplete')),
+        recovered_on TEXT,
+        exam_id      INTEGER REFERENCES exams (id),
+        created_at   TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+
+      -- Las 5 prácticas de la semana, en orden.
+      CREATE TABLE practice_units (
+        id           INTEGER PRIMARY KEY,
+        week_id      INTEGER NOT NULL REFERENCES weeks (id),
+        unit_index   INTEGER NOT NULL CHECK (unit_index BETWEEN 1 AND 5),
+        kind         TEXT NOT NULL CHECK (kind IN ('lesson', 'focus', 'review')),
+        topic_id     TEXT NOT NULL,
+        subtopic_id  TEXT NOT NULL,
+        completed_on TEXT,
+        UNIQUE (week_id, unit_index)
+      );
+    `
   }
 ]
