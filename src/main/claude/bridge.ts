@@ -90,6 +90,13 @@ const resultSchema = z.object({
   structured_output: z.unknown().optional()
 })
 
+// Claude Code ignora en silencio un --json-schema que incluye "$schema"
+// (responde texto libre), así que se quita esa clave.
+export function toClaudeJsonSchema(schema: z.ZodType): Record<string, unknown> {
+  const { $schema: _ignored, ...jsonSchema } = z.toJSONSchema(schema) as Record<string, unknown>
+  return jsonSchema
+}
+
 export interface AskOptions<T> {
   prompt: string
   systemPrompt: string
@@ -118,7 +125,7 @@ export async function askClaude<T>({
     '--no-session-persistence',
     '--model', model,
     '--system-prompt', systemPrompt,
-    '--json-schema', JSON.stringify(z.toJSONSchema(schema))
+    '--json-schema', JSON.stringify(toClaudeJsonSchema(schema))
   ]
 
   let lastError: unknown
