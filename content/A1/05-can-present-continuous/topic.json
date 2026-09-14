@@ -1,0 +1,121 @@
+{
+  "id": "a1-can-present-continuous",
+  "level": "A1",
+  "order": 5,
+  "title": "Can y presente continuo",
+  "titleEn": "Can and present continuous",
+  "description": "Cómo hablar de lo que podés hacer y de lo que está pasando en este momento.",
+  "objectives": [
+    "Expresar habilidad y pedir permiso con can",
+    "Formar el presente continuo con las reglas del -ing",
+    "Distinguir cuándo usar presente simple y cuándo presente continuo",
+    "Describir una escena o imagen"
+  ],
+  "prerequisites": ["a1-present-simple", "a1-possessives-prepositions"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "can",
+      "day": 1,
+      "title": "Can: habilidad y permiso",
+      "goal": "Usar can y can't para habilidades, permisos y pedidos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Can + verbo base, igual para todas las personas: I can swim, she can swim.",
+        "Negativo: can't (cannot). Pregunta: Can you...?",
+        "Sirve para habilidades (saber, poder) y para pedir permiso o favores.",
+        "Nunca lleva to ni -s: She can drive (no 'She cans to drive')."
+      ],
+      "examples": [
+        { "en": "I can speak two languages.", "es": "Hablo dos idiomas." },
+        { "en": "Can I open the window?", "es": "¿Puedo abrir la ventana?" },
+        { "en": "He can't come tonight.", "es": "No puede venir esta noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "She can to play the guitar.", "right": "She can play the guitar.", "why": "Después de can el verbo va sin to." }
+      ]
+    },
+    {
+      "id": "continuo-forma",
+      "day": 2,
+      "title": "Presente continuo: cómo se forma",
+      "goal": "Formar el presente continuo en afirmativo, negativo y pregunta.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "am / is / are + verbo con -ing: I am reading.",
+        "Reglas del -ing: make → making (se va la e), run → running (se duplica la consonante), lie → lying.",
+        "Negativo: She isn't working. Pregunta: Are you listening?"
+      ],
+      "examples": [
+        { "en": "I'm studying English.", "es": "Estoy estudiando inglés." },
+        { "en": "They aren't watching TV.", "es": "No están mirando la tele." },
+        { "en": "Is it raining?", "es": "¿Está lloviendo?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "I studying now.", "right": "I am studying now.", "why": "El presente continuo necesita am, is o are." },
+        { "wrong": "She is writting.", "right": "She is writing.", "why": "En write se va la e y no se duplica la t." }
+      ]
+    },
+    {
+      "id": "continuo-usos",
+      "day": 3,
+      "title": "Presente continuo: cuándo se usa",
+      "goal": "Usar el presente continuo para acciones en curso y situaciones temporales.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Acciones que pasan ahora mismo: Look! It's snowing.",
+        "Situaciones temporales: I'm living with my cousin this month.",
+        "Palabras típicas: now, right now, at the moment, today, this week.",
+        "Los verbos de estado casi no se usan en continuo: know, like, want, need, understand."
+      ],
+      "examples": [
+        { "en": "She's talking on the phone right now.", "es": "Está hablando por teléfono ahora." },
+        { "en": "We're working from home this week.", "es": "Esta semana estamos trabajando desde casa." },
+        { "en": "I understand you.", "es": "Te entiendo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I am knowing the answer.", "right": "I know the answer.", "why": "Know es un verbo de estado y va en presente simple." }
+      ]
+    },
+    {
+      "id": "simple-vs-continuo",
+      "day": 4,
+      "title": "Presente simple vs. continuo",
+      "goal": "Elegir entre presente simple y continuo según el contexto.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Simple: hábitos y cosas generales (I work in a bank).",
+        "Continuo: lo que pasa ahora o es temporal (I'm working at home today).",
+        "Pistas: always, every day, usually → simple; now, at the moment, today → continuo."
+      ],
+      "examples": [
+        { "en": "He usually drives to work, but today he's walking.", "es": "Generalmente va al trabajo en auto, pero hoy va caminando." },
+        { "en": "Do you work on Saturdays?", "es": "¿Trabajás los sábados?" },
+        { "en": "What are you doing?", "es": "¿Qué estás haciendo?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "I'm playing tennis every Saturday.", "right": "I play tennis every Saturday.", "why": "Con every Saturday se habla de un hábito: presente simple." }
+      ]
+    },
+    {
+      "id": "describir-escena",
+      "day": 5,
+      "title": "Describir una escena",
+      "goal": "Comprender y escribir la descripción de una imagen o un lugar.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combinar there is / there are con presente continuo: There are two kids. They're playing.",
+        "Ubicar con preposiciones: on the left, on the right, in the background, next to the tree.",
+        "Usar can para lo que la gente puede o no puede hacer en la escena."
+      ],
+      "examples": [
+        { "en": "In the picture, there's a woman. She's reading a book.", "es": "En la imagen hay una mujer. Está leyendo un libro." },
+        { "en": "Two dogs are running in the park.", "es": "Dos perros están corriendo en el parque." },
+        { "en": "The man on the left is smiling.", "es": "El hombre de la izquierda está sonriendo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "In the picture there are two kids that plays.", "right": "In the picture there are two kids playing.", "why": "Para describir una acción en curso se usa la forma -ing." }
+      ]
+    }
+  ]
+}

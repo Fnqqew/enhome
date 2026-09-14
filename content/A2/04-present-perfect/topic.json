@@ -1,0 +1,123 @@
+{
+  "id": "a2-present-perfect",
+  "level": "A2",
+  "order": 4,
+  "title": "Present perfect",
+  "titleEn": "Present perfect",
+  "description": "El tiempo que conecta el pasado con el presente: experiencias, novedades y situaciones que siguen.",
+  "objectives": [
+    "Formar el present perfect con have / has y el participio",
+    "Hablar de experiencias con ever y never",
+    "Usar just, already y yet",
+    "Usar for y since y distinguir el present perfect del pasado simple"
+  ],
+  "prerequisites": ["a2-past-simple"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "forma",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el present perfect en afirmativo, negativo y pregunta.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "have / has + participio: I have worked, she has eaten.",
+        "Participio regular = pasado con -ed (worked). Los irregulares hay que aprenderlos: go → gone, see → seen, eat → eaten, do → done, be → been.",
+        "Contracciones: I've, she's, haven't, hasn't. Pregunta: Have you...?"
+      ],
+      "examples": [
+        { "en": "I've finished my homework.", "es": "Terminé la tarea." },
+        { "en": "She hasn't called me.", "es": "No me llamó." },
+        { "en": "Have you eaten?", "es": "¿Comiste?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "She have seen the movie.", "right": "She has seen the movie.", "why": "Con he, she e it se usa has." },
+        { "wrong": "I have went there.", "right": "I have gone there.", "why": "El present perfect usa el participio (gone), no el pasado (went)." }
+      ]
+    },
+    {
+      "id": "experiencias",
+      "day": 2,
+      "title": "Experiencias: ever y never",
+      "goal": "Hablar de experiencias de la vida sin decir cuándo pasaron.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Para experiencias de la vida sin decir cuándo: I've been to Brazil.",
+        "ever en preguntas: Have you ever eaten sushi?",
+        "never en afirmativas con sentido negativo: I've never seen snow.",
+        "been to = fue y volvió; gone to = fue y todavía está allá."
+      ],
+      "examples": [
+        { "en": "Have you ever been to Uruguay?", "es": "¿Alguna vez fuiste a Uruguay?" },
+        { "en": "I've never ridden a horse.", "es": "Nunca anduve a caballo." },
+        { "en": "She's visited ten countries.", "es": "Conoce diez países." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I have been to Brazil last year.", "right": "I went to Brazil last year.", "why": "Si se dice cuándo pasó, se usa pasado simple." }
+      ]
+    },
+    {
+      "id": "just-already-yet",
+      "day": 3,
+      "title": "Just, already y yet",
+      "goal": "Hablar de cosas recientes y de lo que ya pasó o todavía no.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "just = recién: I've just arrived.",
+        "already = ya (a veces antes de lo esperado): She's already left.",
+        "yet = todavía (en negativas) o ya (en preguntas), al final: I haven't finished yet. Have you finished yet?",
+        "just y already van entre have y el participio."
+      ],
+      "examples": [
+        { "en": "I've just had lunch.", "es": "Recién almorcé." },
+        { "en": "They've already bought the tickets.", "es": "Ya compraron las entradas." },
+        { "en": "Has the package arrived yet?", "es": "¿Ya llegó el paquete?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "I have finished yet.", "right": "I have already finished.", "why": "En afirmativas se usa already; yet va en negativas y preguntas." }
+      ]
+    },
+    {
+      "id": "for-since",
+      "day": 4,
+      "title": "For y since",
+      "goal": "Hablar de situaciones que empezaron en el pasado y siguen ahora.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Para algo que empezó en el pasado y sigue ahora: I've lived here for five years.",
+        "for + período de tiempo: for two hours, for a long time.",
+        "since + momento de inicio: since 2020, since Monday, since I was a child.",
+        "How long have you...? para preguntar la duración."
+      ],
+      "examples": [
+        { "en": "I've known her for ten years.", "es": "La conozco hace diez años." },
+        { "en": "We've been married since 2018.", "es": "Estamos casados desde 2018." },
+        { "en": "How long have you worked here?", "es": "¿Hace cuánto trabajás acá?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "I live here since 2019.", "right": "I have lived here since 2019.", "why": "Para algo que empezó y sigue se usa present perfect, no presente simple." },
+        { "wrong": "since three years", "right": "for three years", "why": "Con períodos de tiempo se usa for." }
+      ]
+    },
+    {
+      "id": "perfecto-vs-pasado",
+      "day": 5,
+      "title": "Present perfect vs. pasado simple",
+      "goal": "Elegir entre present perfect y pasado simple según el contexto.",
+      "focus": ["grammar", "reading", "writing"],
+      "keyPoints": [
+        "Pasado simple: momento terminado y definido (yesterday, in 2019, last week).",
+        "Present perfect: sin momento definido o con relación con el presente.",
+        "Se suele preguntar con present perfect y contar los detalles en pasado: Have you ever been to Mendoza? — Yes, I went there last summer."
+      ],
+      "examples": [
+        { "en": "I've lost my keys.", "es": "Perdí las llaves (y todavía no las encuentro)." },
+        { "en": "I lost my keys yesterday.", "es": "Ayer perdí las llaves." },
+        { "en": "Have you seen the new movie? — Yes, I saw it on Sunday.", "es": "¿Viste la película nueva? — Sí, la vi el domingo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "When have you arrived?", "right": "When did you arrive?", "why": "Las preguntas con when piden un momento definido: pasado simple." }
+      ]
+    }
+  ]
+}

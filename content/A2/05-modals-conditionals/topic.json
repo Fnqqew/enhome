@@ -1,0 +1,122 @@
+{
+  "id": "a2-modals-conditionals",
+  "level": "A2",
+  "order": 5,
+  "title": "Obligación, consejos, posibilidad y primer condicional",
+  "titleEn": "Modals and the first conditional",
+  "description": "Cómo expresar lo que hay que hacer, lo que conviene, lo que puede pasar y sus consecuencias.",
+  "objectives": [
+    "Expresar obligación y prohibición con must y have to",
+    "Dar consejos con should",
+    "Expresar posibilidad con might y may",
+    "Formar el primer condicional y escribir un mensaje con consejos"
+  ],
+  "prerequisites": ["a1-can-present-continuous", "a2-future"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "must-have-to",
+      "day": 1,
+      "title": "Must y have to: obligación",
+      "goal": "Expresar obligación, prohibición y falta de necesidad.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "must + verbo base: obligación fuerte o regla, muchas veces decidida por quien habla: I must study.",
+        "have to / has to: obligación externa: She has to wear a uniform.",
+        "mustn't = está prohibido: You mustn't smoke here.",
+        "don't have to = no es necesario: You don't have to come."
+      ],
+      "examples": [
+        { "en": "You must wear a seatbelt.", "es": "Tenés que usar el cinturón." },
+        { "en": "I have to get up early tomorrow.", "es": "Mañana me tengo que levantar temprano." },
+        { "en": "You don't have to pay, it's free.", "es": "No tenés que pagar, es gratis." }
+      ],
+      "commonMistakes": [
+        { "wrong": "You don't have to smoke here.", "right": "You mustn't smoke here.", "why": "Para prohibir se usa mustn't; don't have to significa que no es necesario." },
+        { "wrong": "She must to go.", "right": "She must go.", "why": "Después de must el verbo va sin to." }
+      ]
+    },
+    {
+      "id": "should",
+      "day": 2,
+      "title": "Should: consejos",
+      "goal": "Dar y pedir consejos con should y shouldn't.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "should + verbo base: You should rest.",
+        "shouldn't para aconsejar no hacer algo: You shouldn't eat so late.",
+        "Para pedir consejo: What should I do?",
+        "I think you should... suena más amable."
+      ],
+      "examples": [
+        { "en": "You should see a doctor.", "es": "Deberías ir al médico." },
+        { "en": "We shouldn't spend so much money.", "es": "No deberíamos gastar tanta plata." },
+        { "en": "Should I call her?", "es": "¿Debería llamarla?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "You should to sleep more.", "right": "You should sleep more.", "why": "Should va seguido del verbo sin to." }
+      ]
+    },
+    {
+      "id": "might-may",
+      "day": 3,
+      "title": "Might y may: posibilidad",
+      "goal": "Expresar que algo es posible pero no seguro.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "might / may + verbo base = puede que, quizás: It might rain.",
+        "Negativo: might not, may not (normalmente sin contraer).",
+        "Diferencia con will: will es seguro o muy probable; might es solo posible."
+      ],
+      "examples": [
+        { "en": "I might go to the party.", "es": "Puede que vaya a la fiesta." },
+        { "en": "She may not come tomorrow.", "es": "Puede que mañana no venga." },
+        { "en": "Take an umbrella. It might rain.", "es": "Llevá paraguas. Puede llover." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I might to travel next month.", "right": "I might travel next month.", "why": "Might va seguido del verbo sin to." }
+      ]
+    },
+    {
+      "id": "primer-condicional",
+      "day": 4,
+      "title": "Primer condicional",
+      "goal": "Hablar de situaciones posibles en el futuro y sus consecuencias.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "If + presente simple, will + verbo base: If it rains, I'll stay home.",
+        "Se usa para situaciones reales o probables en el futuro.",
+        "Después de if no se usa will: If I see him (no 'If I will see him').",
+        "Se puede invertir el orden, y entonces no lleva coma: I'll stay home if it rains."
+      ],
+      "examples": [
+        { "en": "If you study, you'll pass the exam.", "es": "Si estudiás, vas a aprobar el examen." },
+        { "en": "If we leave now, we won't be late.", "es": "Si salimos ahora, no vamos a llegar tarde." },
+        { "en": "What will you do if they don't call?", "es": "¿Qué vas a hacer si no llaman?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "If it will rain, we will stay home.", "right": "If it rains, we will stay home.", "why": "En la parte del if se usa presente simple." }
+      ]
+    },
+    {
+      "id": "email-consejos",
+      "day": 5,
+      "title": "Escribir un mensaje con consejos",
+      "goal": "Comprender y escribir un email informal con recomendaciones.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura de un email informal: saludo (Hi Ana,), cuerpo y despedida (See you soon, / Take care,).",
+        "Combinar should, have to, might y el primer condicional para aconsejar.",
+        "Conectores: also, but, because, so."
+      ],
+      "examples": [
+        { "en": "Hi Tomás, thanks for your message!", "es": "¡Hola Tomás, gracias por tu mensaje!" },
+        { "en": "You should bring warm clothes because it might be cold.", "es": "Deberías llevar ropa abrigada porque puede hacer frío." },
+        { "en": "If you have time, you should visit the old town.", "es": "Si tenés tiempo, deberías conocer el casco histórico." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Dear friend Tomás:", "right": "Hi Tomás,", "why": "En un email informal en inglés se saluda con Hi o Hello seguido de coma." }
+      ]
+    }
+  ]
+}

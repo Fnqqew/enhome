@@ -37,7 +37,9 @@ app.whenReady().then(() => {
   const db = openDatabase(join(app.getPath('userData'), 'proyecto-ingles.db'))
   app.on('will-quit', () => db.close())
 
-  registerIpc(db)
+  // En desarrollo el temario se lee del repo; empaquetada, de los recursos de la app.
+  const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
+  registerIpc(db, contentDir)
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()

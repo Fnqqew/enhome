@@ -1,0 +1,121 @@
+{
+  "id": "a1-nouns-articles",
+  "level": "A1",
+  "order": 2,
+  "title": "Sustantivos, artículos y there is / there are",
+  "titleEn": "Nouns, articles and there is / there are",
+  "description": "Cómo nombrar cosas: artículos, plurales, demostrativos y cómo decir 'hay'.",
+  "objectives": [
+    "Elegir entre a, an y the",
+    "Formar plurales regulares e irregulares",
+    "Usar this, that, these y those",
+    "Describir lugares con there is y there are"
+  ],
+  "prerequisites": ["a1-to-be"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "a-an",
+      "day": 1,
+      "title": "Artículos a y an",
+      "goal": "Usar a y an con sustantivos contables en singular.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "A y an significan 'un' o 'una' y van con sustantivos contables en singular.",
+        "Se elige por el sonido, no por la letra: a university (suena /ju/), an hour (la h es muda).",
+        "Se usa a o an con profesiones: She's a doctor."
+      ],
+      "examples": [
+        { "en": "I have a book.", "es": "Tengo un libro." },
+        { "en": "She eats an apple every day.", "es": "Come una manzana todos los días." },
+        { "en": "The class is an hour long.", "es": "La clase dura una hora." }
+      ],
+      "commonMistakes": [
+        { "wrong": "a apple", "right": "an apple", "why": "Delante de un sonido vocal se usa an." }
+      ]
+    },
+    {
+      "id": "the",
+      "day": 2,
+      "title": "El artículo the",
+      "goal": "Saber cuándo usar the y cuándo no usar artículo.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "The equivale a el, la, los y las: no cambia según género ni número.",
+        "Se usa cuando ya se sabe de qué cosa se habla: I have a dog. The dog is black.",
+        "No se usa para hablar de algo en general: I like music (no 'the music')."
+      ],
+      "examples": [
+        { "en": "The keys are on the table.", "es": "Las llaves están sobre la mesa." },
+        { "en": "I love dogs.", "es": "Me encantan los perros." },
+        { "en": "Close the door, please.", "es": "Cerrá la puerta, por favor." }
+      ],
+      "commonMistakes": [
+        { "wrong": "The life is beautiful.", "right": "Life is beautiful.", "why": "Para hablar de algo en general no se usa the." }
+      ]
+    },
+    {
+      "id": "plurales",
+      "day": 3,
+      "title": "Plurales",
+      "goal": "Formar plurales regulares e irregulares frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Regla general: se agrega -s: car → cars.",
+        "Terminados en -s, -sh, -ch, -x u -o: se agrega -es: bus → buses, watch → watches, potato → potatoes.",
+        "Consonante + y → -ies: city → cities (pero day → days).",
+        "Irregulares frecuentes: man → men, woman → women, child → children, person → people, foot → feet, tooth → teeth."
+      ],
+      "examples": [
+        { "en": "They have two children.", "es": "Tienen dos hijos." },
+        { "en": "There are three boxes in the car.", "es": "Hay tres cajas en el auto." },
+        { "en": "Those people are my neighbors.", "es": "Esas personas son mis vecinos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "three childs", "right": "three children", "why": "Child tiene plural irregular." },
+        { "wrong": "The people is nice.", "right": "The people are nice.", "why": "People ya es plural, así que va con are." }
+      ]
+    },
+    {
+      "id": "demostrativos",
+      "day": 4,
+      "title": "This, that, these y those",
+      "goal": "Señalar cosas cercanas y lejanas en singular y plural.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "This (este, esta) y these (estos, estas) para lo que está cerca.",
+        "That (ese, esa, aquel) y those (esos, esas, aquellos) para lo que está lejos.",
+        "This y that van con singular; these y those, con plural."
+      ],
+      "examples": [
+        { "en": "This is my phone.", "es": "Este es mi teléfono." },
+        { "en": "Those shoes are very nice.", "es": "Esos zapatos son muy lindos." },
+        { "en": "Is that your car?", "es": "¿Ese es tu auto?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "This books are new.", "right": "These books are new.", "why": "Con sustantivos en plural se usa these." }
+      ]
+    },
+    {
+      "id": "there-is-are",
+      "day": 5,
+      "title": "There is y there are",
+      "goal": "Describir qué hay en un lugar.",
+      "focus": ["grammar", "reading", "writing"],
+      "keyPoints": [
+        "There is = hay (singular); there are = hay (plural).",
+        "Negativo: there isn't / there aren't. Pregunta: Is there...? / Are there...?",
+        "En negativas y preguntas con plural se suele usar any: There aren't any chairs.",
+        "Sirve para describir lugares: There is a park near my house."
+      ],
+      "examples": [
+        { "en": "There is a cat in the garden.", "es": "Hay un gato en el jardín." },
+        { "en": "There are two bedrooms in the apartment.", "es": "Hay dos dormitorios en el departamento." },
+        { "en": "Is there a pharmacy near here?", "es": "¿Hay una farmacia cerca de acá?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Have a problem in my house.", "right": "There is a problem in my house.", "why": "'Hay' no se traduce con have: se usa there is o there are." }
+      ]
+    }
+  ]
+}

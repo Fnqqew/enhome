@@ -1,0 +1,124 @@
+{
+  "id": "a1-to-be",
+  "level": "A1",
+  "order": 1,
+  "title": "El verbo to be",
+  "titleEn": "The verb to be",
+  "description": "El verbo más usado del inglés: sirve para decir quién sos, cómo estás, de dónde sos y dónde está algo.",
+  "objectives": [
+    "Usar los pronombres personales correctamente",
+    "Formar oraciones afirmativas, negativas e interrogativas con am, is y are",
+    "Usar contracciones y respuestas cortas",
+    "Escribir una presentación personal breve"
+  ],
+  "prerequisites": [],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "pronombres-personales",
+      "day": 1,
+      "title": "Pronombres personales",
+      "goal": "Reconocer y usar I, you, he, she, it, we y they.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "I siempre se escribe con mayúscula.",
+        "You sirve para 'vos', 'usted' y 'ustedes'.",
+        "It se usa para cosas, animales y para hablar del clima o la hora.",
+        "En inglés el sujeto casi nunca se omite: 'Es lindo' es 'It is nice', no 'Is nice'."
+      ],
+      "examples": [
+        { "en": "She is my sister.", "es": "Ella es mi hermana." },
+        { "en": "It is cold today.", "es": "Hoy hace frío." },
+        { "en": "They are from Córdoba.", "es": "Ellos son de Córdoba." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Is very late.", "right": "It is very late.", "why": "En inglés el sujeto es obligatorio; se usa it cuando no hay un sujeto concreto." }
+      ]
+    },
+    {
+      "id": "to-be-afirmativo",
+      "day": 2,
+      "title": "To be en afirmativo",
+      "goal": "Conjugar am, is y are y usar sus contracciones.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "I am → I'm.",
+        "He / she / it is → he's, she's, it's.",
+        "You / we / they are → you're, we're, they're.",
+        "To be equivale a 'ser' y a 'estar' en español."
+      ],
+      "examples": [
+        { "en": "I'm a teacher.", "es": "Soy docente." },
+        { "en": "We're at home.", "es": "Estamos en casa." },
+        { "en": "He's 25 years old.", "es": "Tiene 25 años." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I have 25 years.", "right": "I am 25 years old.", "why": "La edad se expresa con to be, no con have." },
+        { "wrong": "She are happy.", "right": "She is happy.", "why": "Con he, she e it se usa is." }
+      ]
+    },
+    {
+      "id": "to-be-negativo",
+      "day": 3,
+      "title": "To be en negativo",
+      "goal": "Negar con not y usar sus contracciones.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se agrega not después del verbo: I am not, she is not, they are not.",
+        "Contracciones: I'm not, isn't, aren't.",
+        "No existe 'amn't': se dice I'm not."
+      ],
+      "examples": [
+        { "en": "I'm not tired.", "es": "No estoy cansado." },
+        { "en": "It isn't expensive.", "es": "No es caro." },
+        { "en": "They aren't here.", "es": "No están acá." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I no am ready.", "right": "I am not ready.", "why": "Not va después de am, is o are; no se usa 'no' para negar un verbo." }
+      ]
+    },
+    {
+      "id": "to-be-preguntas",
+      "day": 4,
+      "title": "Preguntas y respuestas cortas",
+      "goal": "Hacer preguntas invirtiendo el orden y responder con respuestas cortas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Para preguntar, el verbo va antes del sujeto: Are you ready?",
+        "Respuestas cortas: Yes, I am. / No, I'm not.",
+        "En las respuestas cortas afirmativas no se contrae: Yes, she is (no 'Yes, she's').",
+        "Las palabras de pregunta van al principio: What, Where, Who, How, How old."
+      ],
+      "examples": [
+        { "en": "Are you Argentinian? — Yes, I am.", "es": "¿Sos argentino? — Sí." },
+        { "en": "Where is the bank?", "es": "¿Dónde está el banco?" },
+        { "en": "How old is your brother?", "es": "¿Cuántos años tiene tu hermano?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "You are ready?", "right": "Are you ready?", "why": "En inglés la entonación no alcanza: hay que invertir sujeto y verbo." },
+        { "wrong": "Yes, I'm.", "right": "Yes, I am.", "why": "No se contrae al final de una respuesta corta afirmativa." }
+      ]
+    },
+    {
+      "id": "presentarse",
+      "day": 5,
+      "title": "Presentarte y describir personas",
+      "goal": "Comprender y escribir presentaciones personales usando to be.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura típica: nombre, edad, origen, profesión y cómo estás.",
+        "Nacionalidades e idiomas van con mayúscula: Argentinian, English.",
+        "Delante de una profesión se usa a o an: I'm a nurse, she's an engineer."
+      ],
+      "examples": [
+        { "en": "Hi! My name is Lucía. I'm 30 years old and I'm from Rosario.", "es": "¡Hola! Me llamo Lucía. Tengo 30 años y soy de Rosario." },
+        { "en": "He's an engineer.", "es": "Es ingeniero." },
+        { "en": "We're very happy to be here.", "es": "Estamos muy contentos de estar acá." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I am engineer.", "right": "I am an engineer.", "why": "Delante de una profesión en singular se usa a o an." },
+        { "wrong": "I'm argentinian.", "right": "I'm Argentinian.", "why": "Las nacionalidades se escriben con mayúscula." }
+      ]
+    }
+  ]
+}

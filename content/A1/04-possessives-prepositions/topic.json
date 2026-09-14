@@ -1,0 +1,121 @@
+{
+  "id": "a1-possessives-prepositions",
+  "level": "A1",
+  "order": 4,
+  "title": "Posesivos, pronombres objeto y preposiciones",
+  "titleEn": "Possessives, object pronouns and prepositions",
+  "description": "Cómo decir de quién es algo, a quién se refiere una acción y dónde o cuándo pasa.",
+  "objectives": [
+    "Usar adjetivos posesivos y el posesivo 's",
+    "Usar pronombres objeto después de verbos y preposiciones",
+    "Ubicar cosas con preposiciones de lugar",
+    "Hablar de fechas y horarios con in, on y at"
+  ],
+  "prerequisites": ["a1-nouns-articles", "a1-present-simple"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "adjetivos-posesivos",
+      "day": 1,
+      "title": "Adjetivos posesivos",
+      "goal": "Usar my, your, his, her, its, our y their.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "my, your, his, her, its, our, their.",
+        "No cambian según lo que se posee: my book, my books.",
+        "His = de él; her = de ella; its = de una cosa o un animal."
+      ],
+      "examples": [
+        { "en": "This is my brother.", "es": "Este es mi hermano." },
+        { "en": "Her name is Sofía.", "es": "Se llama Sofía." },
+        { "en": "Their house is very big.", "es": "La casa de ellos es muy grande." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Laura and his husband", "right": "Laura and her husband", "why": "El posesivo concuerda con quien posee: Laura es mujer, entonces her." }
+      ]
+    },
+    {
+      "id": "genitivo",
+      "day": 2,
+      "title": "El posesivo 's",
+      "goal": "Expresar posesión con 's y distinguir its de it's.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Sustantivo + 's indica posesión: Juan's car = el auto de Juan.",
+        "Plural terminado en -s: solo apóstrofo: my parents' house.",
+        "Plurales irregulares llevan 's: the children's toys.",
+        "No confundir it's (it is) con its (posesivo)."
+      ],
+      "examples": [
+        { "en": "Martín's sister is a doctor.", "es": "La hermana de Martín es médica." },
+        { "en": "My friends' apartment is small.", "es": "El departamento de mis amigos es chico." },
+        { "en": "What's your mother's name?", "es": "¿Cómo se llama tu mamá?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "the car of my father", "right": "my father's car", "why": "Con personas, la posesión se expresa con 's." }
+      ]
+    },
+    {
+      "id": "pronombres-objeto",
+      "day": 3,
+      "title": "Pronombres objeto",
+      "goal": "Usar me, you, him, her, it, us y them.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "me, you, him, her, it, us, them.",
+        "Van después del verbo o de una preposición: Call me. Come with us.",
+        "Nunca se usa el pronombre sujeto como objeto: I love her (no 'I love she')."
+      ],
+      "examples": [
+        { "en": "Please call me tomorrow.", "es": "Por favor, llamame mañana." },
+        { "en": "I see them every day.", "es": "Los veo todos los días." },
+        { "en": "This present is for you.", "es": "Este regalo es para vos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "She loves he.", "right": "She loves him.", "why": "Después del verbo se usa el pronombre objeto." }
+      ]
+    },
+    {
+      "id": "preposiciones-lugar",
+      "day": 4,
+      "title": "Preposiciones de lugar",
+      "goal": "Decir dónde está algo o alguien.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "in (dentro de), on (sobre una superficie), under (debajo de), next to (al lado de), between (entre), in front of (delante de), behind (detrás de).",
+        "at para puntos o lugares concretos: at home, at work, at the bus stop.",
+        "on con calles (on Corrientes Street) e in con ciudades y países (in Buenos Aires)."
+      ],
+      "examples": [
+        { "en": "The keys are on the table.", "es": "Las llaves están sobre la mesa." },
+        { "en": "The bank is next to the pharmacy.", "es": "El banco está al lado de la farmacia." },
+        { "en": "She is at work.", "es": "Está en el trabajo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I am in home.", "right": "I am at home.", "why": "Se dice at home, at work y at school." }
+      ]
+    },
+    {
+      "id": "preposiciones-tiempo",
+      "day": 5,
+      "title": "Preposiciones de tiempo: in, on y at",
+      "goal": "Hablar de horarios, días y fechas con la preposición correcta.",
+      "focus": ["grammar", "reading", "writing"],
+      "keyPoints": [
+        "at + horas y momentos puntuales: at 5 o'clock, at noon, at night.",
+        "on + días y fechas: on Monday, on July 9th.",
+        "in + meses, años, estaciones y partes del día: in March, in 2026, in summer, in the morning.",
+        "Sin preposición antes de every, next, last y this: every Friday, next week."
+      ],
+      "examples": [
+        { "en": "The class starts at nine.", "es": "La clase empieza a las nueve." },
+        { "en": "My birthday is on May 3rd.", "es": "Mi cumpleaños es el 3 de mayo." },
+        { "en": "We go on vacation in January.", "es": "Nos vamos de vacaciones en enero." }
+      ],
+      "commonMistakes": [
+        { "wrong": "in Monday", "right": "on Monday", "why": "Los días de la semana van con on." },
+        { "wrong": "I see my family on every Sunday.", "right": "I see my family every Sunday.", "why": "Con every no se usa preposición." }
+      ]
+    }
+  ]
+}

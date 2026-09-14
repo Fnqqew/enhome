@@ -253,6 +253,67 @@ p {
   font-weight: 500;
 }
 
+/* Temario */
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.multiline {
+  white-space: pre-line;
+}
+
+.level {
+  margin: 0 0 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.topic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topic-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: calc(0.7rem * var(--space)) 0;
+  border-top: 1px solid var(--border);
+}
+
+.topic-title {
+  display: block;
+  font-weight: 500;
+}
+
+.topic-sub {
+  display: block;
+  font-size: 0.85rem;
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.badge.ok {
+  border-color: transparent;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;

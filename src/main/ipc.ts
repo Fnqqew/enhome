@@ -1,8 +1,10 @@
 import { ipcMain } from 'electron'
 import { z } from 'zod'
 import { askClaude, getClaudeStatus } from './claude/bridge'
+import { loadCurriculum } from './content/curriculum'
 import type { Db } from './db/database'
 import { loadSettings, updateSettings } from './db/settings-repo'
+import type { CurriculumTopic } from '../shared/curriculum'
 import { IPC, type Result, type SampleSentence } from '../shared/ipc'
 
 // Envuelve cada handler para que la interfaz reciba un Result en vez de un error de Electron.
@@ -17,7 +19,11 @@ function handle<T>(channel: string, fn: (...args: unknown[]) => T | Promise<T>):
   })
 }
 
-export function registerIpc(db: Db): void {
+export function registerIpc(db: Db, contentDir: string): void {
+  // Se carga una vez; si el contenido tiene errores, el mensaje llega a la interfaz.
+  let curriculum: CurriculumTopic[] | null = null
+  handle(IPC.curriculumList, () => (curriculum ??= loadCurriculum(contentDir)))
+
   handle(IPC.claudeStatus, () => getClaudeStatus())
 
   handle(IPC.claudeSample, (): Promise<SampleSentence> =>

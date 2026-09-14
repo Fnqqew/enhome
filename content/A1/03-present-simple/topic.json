@@ -1,0 +1,122 @@
+{
+  "id": "a1-present-simple",
+  "level": "A1",
+  "order": 3,
+  "title": "Presente simple",
+  "titleEn": "Present simple",
+  "description": "El tiempo verbal para hablar de rutinas, hábitos, gustos y verdades generales.",
+  "objectives": [
+    "Conjugar verbos en presente simple, incluida la -s de tercera persona",
+    "Negar y preguntar con do y does",
+    "Usar adverbios de frecuencia en la posición correcta",
+    "Describir una rutina diaria"
+  ],
+  "prerequisites": ["a1-to-be"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "afirmativo",
+      "day": 1,
+      "title": "Afirmativo y la -s de tercera persona",
+      "goal": "Formar oraciones afirmativas y aplicar las reglas de la -s.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se usa para rutinas, hábitos y verdades generales.",
+        "Con I, you, we y they el verbo no cambia: I work.",
+        "Con he, she e it se agrega -s: she works.",
+        "Reglas de la -s: watch → watches, study → studies, go → goes, do → does, have → has."
+      ],
+      "examples": [
+        { "en": "I live in Mendoza.", "es": "Vivo en Mendoza." },
+        { "en": "She works at a hospital.", "es": "Trabaja en un hospital." },
+        { "en": "Water boils at 100 degrees.", "es": "El agua hierve a 100 grados." }
+      ],
+      "commonMistakes": [
+        { "wrong": "He work in an office.", "right": "He works in an office.", "why": "Con he, she e it el verbo lleva -s." }
+      ]
+    },
+    {
+      "id": "negativo",
+      "day": 2,
+      "title": "Negativo con don't y doesn't",
+      "goal": "Negar en presente simple con el auxiliar correcto.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "I / you / we / they + don't + verbo: I don't eat meat.",
+        "He / she / it + doesn't + verbo sin -s: She doesn't eat meat.",
+        "La -s pasa al auxiliar: doesn't, nunca 'doesn't eats'."
+      ],
+      "examples": [
+        { "en": "We don't have a car.", "es": "No tenemos auto." },
+        { "en": "He doesn't like coffee.", "es": "No le gusta el café." },
+        { "en": "It doesn't rain much here.", "es": "Acá no llueve mucho." }
+      ],
+      "commonMistakes": [
+        { "wrong": "She doesn't likes pizza.", "right": "She doesn't like pizza.", "why": "Después de doesn't el verbo va en forma base." },
+        { "wrong": "I no understand.", "right": "I don't understand.", "why": "Para negar un verbo se necesita don't o doesn't." }
+      ]
+    },
+    {
+      "id": "preguntas",
+      "day": 3,
+      "title": "Preguntas con do y does",
+      "goal": "Hacer preguntas y dar respuestas cortas en presente simple.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Do / Does + sujeto + verbo base: Do you speak English?",
+        "Respuestas cortas: Yes, I do. / No, she doesn't.",
+        "Con palabras de pregunta: Where do you live? What does he do?"
+      ],
+      "examples": [
+        { "en": "Do you like football? — Yes, I do.", "es": "¿Te gusta el fútbol? — Sí." },
+        { "en": "What time does the class start?", "es": "¿A qué hora empieza la clase?" },
+        { "en": "Where does your sister work?", "es": "¿Dónde trabaja tu hermana?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "You like football?", "right": "Do you like football?", "why": "Las preguntas en presente simple necesitan do o does." },
+        { "wrong": "Does she speaks French?", "right": "Does she speak French?", "why": "Si el auxiliar es does, el verbo principal va sin -s." }
+      ]
+    },
+    {
+      "id": "frecuencia",
+      "day": 4,
+      "title": "Adverbios de frecuencia",
+      "goal": "Decir con qué frecuencia pasa algo y ubicar el adverbio correctamente.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "always (siempre), usually (generalmente), often (seguido), sometimes (a veces), rarely (casi nunca), never (nunca).",
+        "Van antes del verbo principal: I usually walk to work.",
+        "Van después de to be: She is always late.",
+        "Las expresiones más largas van al final: once a week, every day."
+      ],
+      "examples": [
+        { "en": "I never drink coffee at night.", "es": "Nunca tomo café a la noche." },
+        { "en": "He is often tired.", "es": "Seguido está cansado." },
+        { "en": "We go to the gym twice a week.", "es": "Vamos al gimnasio dos veces por semana." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I go always to the park.", "right": "I always go to the park.", "why": "El adverbio de frecuencia va antes del verbo principal." }
+      ]
+    },
+    {
+      "id": "rutinas",
+      "day": 5,
+      "title": "Describir tu rutina",
+      "goal": "Comprender y escribir un texto sobre una rutina diaria.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Conectores de secuencia: first, then, after that, finally.",
+        "Horas: at 7 o'clock, at half past eight. Partes del día: in the morning, in the afternoon, at night.",
+        "Verbos de rutina: get up, have breakfast, go to work, have lunch, go to bed."
+      ],
+      "examples": [
+        { "en": "I get up at seven o'clock.", "es": "Me levanto a las siete." },
+        { "en": "Then I have breakfast with my family.", "es": "Después desayuno con mi familia." },
+        { "en": "At night she reads a book.", "es": "A la noche lee un libro." }
+      ],
+      "commonMistakes": [
+        { "wrong": "In the night I watch TV.", "right": "At night I watch TV.", "why": "Se dice in the morning e in the afternoon, pero at night." }
+      ]
+    }
+  ]
+}

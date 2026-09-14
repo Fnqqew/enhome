@@ -1,0 +1,120 @@
+{
+  "id": "a2-past-simple",
+  "level": "A2",
+  "order": 1,
+  "title": "Pasado simple",
+  "titleEn": "Past simple",
+  "description": "El tiempo verbal para contar lo que pasó en un momento terminado del pasado.",
+  "objectives": [
+    "Usar was y were",
+    "Formar el pasado de verbos regulares e irregulares frecuentes",
+    "Negar y preguntar con did",
+    "Narrar una experiencia o un día en orden"
+  ],
+  "prerequisites": ["a1-to-be", "a1-present-simple"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "was-were",
+      "day": 1,
+      "title": "Was y were",
+      "goal": "Usar el pasado de to be en afirmativo, negativo y pregunta.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Pasado de to be: I / he / she / it was; you / we / they were.",
+        "Negativo: wasn't, weren't. Pregunta: Were you at home?",
+        "Expresiones de tiempo: yesterday, last night, last week, two days ago, in 2020."
+      ],
+      "examples": [
+        { "en": "I was tired yesterday.", "es": "Ayer estaba cansado." },
+        { "en": "We weren't at the party.", "es": "No estuvimos en la fiesta." },
+        { "en": "Where were you last night?", "es": "¿Dónde estuviste anoche?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "They was happy.", "right": "They were happy.", "why": "Con you, we y they se usa were." }
+      ]
+    },
+    {
+      "id": "regulares",
+      "day": 2,
+      "title": "Verbos regulares",
+      "goal": "Formar el pasado con -ed y aplicar sus reglas de escritura.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se agrega -ed: work → worked. Es igual para todas las personas.",
+        "Terminados en e: like → liked. Consonante + y: study → studied. Una sílaba consonante-vocal-consonante: stop → stopped.",
+        "El -ed suena /ɪd/ solo después de t o d: wanted, needed. En los demás casos no se agrega sílaba: worked, played."
+      ],
+      "examples": [
+        { "en": "I watched a movie last night.", "es": "Anoche vi una película." },
+        { "en": "She studied medicine.", "es": "Estudió medicina." },
+        { "en": "We stopped at a gas station.", "es": "Paramos en una estación de servicio." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I studyed a lot.", "right": "I studied a lot.", "why": "Consonante + y cambia a -ied." }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "day": 3,
+      "title": "Verbos irregulares más usados",
+      "goal": "Reconocer y usar los verbos irregulares más frecuentes.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "No siguen la regla -ed y hay que aprenderlos: go → went, have → had, do → did, make → made, see → saw, get → got, buy → bought, eat → ate, take → took, come → came.",
+        "Igual que los regulares, no cambian según la persona: I went, she went.",
+        "Conviene aprenderlos en grupos que suenan parecido: buy / bought, think / thought, bring / brought."
+      ],
+      "examples": [
+        { "en": "We went to the beach in January.", "es": "Fuimos a la playa en enero." },
+        { "en": "He bought a new phone.", "es": "Se compró un teléfono nuevo." },
+        { "en": "I saw your brother yesterday.", "es": "Ayer vi a tu hermano." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I goed to the cinema.", "right": "I went to the cinema.", "why": "Go es irregular: su pasado es went." }
+      ]
+    },
+    {
+      "id": "negativo-preguntas",
+      "day": 4,
+      "title": "Negativo y preguntas con did",
+      "goal": "Negar y preguntar en pasado simple con did.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Negativo: didn't + verbo base: I didn't go.",
+        "Pregunta: Did + sujeto + verbo base: Did you see it?",
+        "El pasado lo marca did; el verbo principal vuelve a su forma base.",
+        "Respuestas cortas: Yes, I did. / No, she didn't."
+      ],
+      "examples": [
+        { "en": "I didn't sleep well.", "es": "No dormí bien." },
+        { "en": "Did you finish your homework?", "es": "¿Terminaste la tarea?" },
+        { "en": "What did they eat?", "es": "¿Qué comieron?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "She didn't went to work.", "right": "She didn't go to work.", "why": "Después de didn't el verbo va en forma base." },
+        { "wrong": "Did you saw the game?", "right": "Did you see the game?", "why": "En preguntas con did el verbo va en forma base." }
+      ]
+    },
+    {
+      "id": "narrar",
+      "day": 5,
+      "title": "Contar lo que pasó",
+      "goal": "Comprender y escribir un relato breve en pasado.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Conectores para narrar: first, then, after that, later, finally.",
+        "When une dos momentos: When I got home, I made dinner.",
+        "Las expresiones de tiempo pueden ir al principio o al final: Last Sunday we went out. / We went out last Sunday."
+      ],
+      "examples": [
+        { "en": "Last Saturday I got up late.", "es": "El sábado pasado me levanté tarde." },
+        { "en": "After that, we had lunch at my grandmother's house.", "es": "Después almorzamos en la casa de mi abuela." },
+        { "en": "When I got home, I called my mom.", "es": "Cuando llegué a casa, llamé a mi mamá." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Yesterday I go to the supermarket.", "right": "Yesterday I went to the supermarket.", "why": "Con yesterday se usa pasado simple." }
+      ]
+    }
+  ]
+}

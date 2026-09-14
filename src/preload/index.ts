@@ -11,7 +11,8 @@ const api: Api = {
   getClaudeStatus: () => invoke(IPC.claudeStatus),
   sampleSentence: () => invoke(IPC.claudeSample),
   getSettings: () => invoke(IPC.settingsGet),
-  updateSettings: (patch) => invoke(IPC.settingsUpdate, patch)
+  updateSettings: (patch) => invoke(IPC.settingsUpdate, patch),
+  getCurriculum: () => invoke(IPC.curriculumList)
 }
 
 contextBridge.exposeInMainWorld('api', api)

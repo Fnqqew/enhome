@@ -1,12 +1,14 @@
 // Contrato entre el proceso principal y la interfaz.
 
+import type { CurriculumTopic } from './curriculum'
 import type { AppSettings } from './settings'
 
 export const IPC = {
   claudeStatus: 'claude:status',
   claudeSample: 'claude:sample',
   settingsGet: 'settings:get',
-  settingsUpdate: 'settings:update'
+  settingsUpdate: 'settings:update',
+  curriculumList: 'curriculum:list'
 } as const
 
 // Todas las respuestas IPC viajan envueltas para que los errores lleguen limpios a la interfaz.
@@ -29,4 +31,5 @@ export interface Api {
   sampleSentence(): Promise<SampleSentence>
   getSettings(): Promise<AppSettings>
   updateSettings(patch: Partial<AppSettings>): Promise<AppSettings>
+  getCurriculum(): Promise<CurriculumTopic[]>
 }
