@@ -1,0 +1,167 @@
+/* Base visual: minimalista, sobria y amigable. Los temas redefinen estas variables. */
+:root {
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --border: #e4e2dc;
+  --text: #22211f;
+  --muted: #6f6c66;
+  --accent: #4f6bd8;
+  --accent-contrast: #ffffff;
+  --danger: #c2413b;
+  --radius: 12px;
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-size: 15px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #161719;
+    --surface: #1f2023;
+    --border: #2e3034;
+    --text: #ecebe8;
+    --muted: #9a9892;
+    --accent: #7d93ee;
+    --accent-contrast: #111214;
+    --danger: #e5726c;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #161719;
+  --surface: #1f2023;
+  --border: #2e3034;
+  --text: #ecebe8;
+  --muted: #9a9892;
+  --accent: #7d93ee;
+  --accent-contrast: #111214;
+  --danger: #e5726c;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  line-height: 1.55;
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.centered {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  max-width: 40rem;
+}
+
+.lock {
+  text-align: center;
+}
+
+.btn {
+  font: inherit;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: none;
+  border-radius: calc(var(--radius) - 4px);
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.25rem 0.75rem;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.brand {
+  font-weight: 600;
+  padding: 0 0.75rem 1rem;
+}
+
+.nav-item {
+  font: inherit;
+  text-align: left;
+  background: none;
+  color: var(--text);
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: var(--bg);
+}
+
+.nav-item.active {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.sidebar-foot {
+  margin-top: auto;
+  padding: 0 0.75rem;
+  font-size: 0.8rem;
+}
+
+.content {
+  padding: 2rem 2.5rem;
+}
+
+.sample {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.sample p {
+  margin: 0.2rem 0;
+}
+
+.sample .en {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
