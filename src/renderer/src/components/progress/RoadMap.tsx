@@ -32,7 +32,7 @@ export default function RoadMap({ map }: { map: CurriculumMap }): React.JSX.Elem
         const passed = nodes.filter((n) => n.status === 'passed' || n.status === 'review').length
 
         return (
-          <div key={level.level} className={`road-level${level.available ? '' : ' planned'}`}>
+          <div key={level.level} className={`road-level${level.available ? '' : ' planned'}`} data-level={level.level}>
             <div className="road-level-title">
               <span className="level-code">{level.level}</span>
               <span>{level.name}</span>

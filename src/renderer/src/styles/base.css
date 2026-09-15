@@ -19,8 +19,27 @@
   --font-clasica: Georgia, Cambria, 'Times New Roman', serif;
   --font-amigable: 'Nunito Variable', 'Segoe UI', system-ui, sans-serif;
   --font: var(--font-moderna);
+  --font-display: var(--font);
+  --font-numbers: var(--font-display);
   --font-size: 16px;
   --space: 1;
+
+  /* Lo que cada estilo puede redefinir (ver «Estilos» al final). */
+  --style-font: var(--font-moderna);
+  --style-display: var(--font-moderna);
+  --style-numbers: var(--style-display);
+  --btn-radius: calc(var(--radius) - 4px);
+  --btn-border: none;
+  --btn-shadow: none;
+  --card-border: 1px solid var(--border);
+  --card-shadow: none;
+  --sidebar-bg: var(--surface);
+  --sidebar-text: var(--text);
+  --sidebar-muted: var(--muted);
+  --sidebar-hover: var(--surface-hover);
+  --sidebar-border: var(--border);
+  --sidebar-current-bg: var(--accent-soft);
+  --sidebar-current-text: var(--accent);
 
   color-scheme: light;
 }
@@ -37,6 +56,11 @@
   color-scheme: dark;
 }
 
+:root[data-font='estilo'] {
+  --font: var(--style-font);
+  --font-display: var(--style-display);
+  --font-numbers: var(--style-numbers);
+}
 :root[data-font='clasica'] { --font: var(--font-clasica); }
 :root[data-font='amigable'] { --font: var(--font-amigable); }
 
@@ -78,6 +102,23 @@ h2 {
   font-weight: 600;
 }
 
+h1,
+h2,
+.brand,
+.big,
+.flash-text,
+.level-code {
+  font-family: var(--font-display);
+}
+
+.grade,
+.stat-value,
+.streak-count,
+.hero-level-number {
+  font-family: var(--font-numbers);
+  font-variant-numeric: tabular-nums;
+}
+
 p {
   margin: 0;
 }
@@ -105,7 +146,8 @@ p {
 
 .card {
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
   border-radius: var(--radius);
   padding: calc(1.5rem * var(--space));
   max-width: 44rem;
@@ -123,10 +165,13 @@ p {
 .btn {
   background: var(--accent);
   color: var(--accent-contrast);
-  border: none;
-  border-radius: calc(var(--radius) - 4px);
+  border: var(--btn-border);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--btn-shadow);
   padding: calc(0.6rem * var(--space)) 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
 .btn:disabled {
@@ -147,13 +192,29 @@ p {
   flex-direction: column;
   gap: 0.25rem;
   padding: calc(1.25rem * var(--space)) 0.75rem;
-  border-right: 1px solid var(--border);
-  background: var(--surface);
+  border-right: 1px solid var(--sidebar-border);
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
 }
 
 .brand {
-  font-weight: 600;
-  padding: 0 0.75rem calc(1rem * var(--space));
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  padding: 0 0.5rem calc(1rem * var(--space));
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.lock-logo {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -166,12 +227,12 @@ p {
 }
 
 .nav-item:hover {
-  background: var(--surface-hover);
+  background: var(--sidebar-hover);
 }
 
 .nav-item[aria-current='page'] {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--sidebar-current-bg);
+  color: var(--sidebar-current-text);
   font-weight: 600;
 }
 
@@ -179,6 +240,7 @@ p {
   margin-top: auto;
   padding: 0 0.75rem;
   font-size: 0.8rem;
+  color: var(--sidebar-muted);
 }
 
 .content {
@@ -1586,4 +1648,272 @@ h5.level {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* Selector de estilo */
+
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.6rem;
+}
+
+.style-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  text-align: left;
+  cursor: pointer;
+}
+
+.style-card:hover {
+  border-color: var(--accent);
+}
+
+.style-card[aria-pressed='true'] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  background: var(--accent-soft);
+}
+
+.style-card .logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.style-name {
+  font-weight: 700;
+}
+
+.style-dots {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: auto;
+  padding-top: 0.3rem;
+}
+
+.style-dots i {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+/* Estilos visuales.
+   Cada bloque redefine variables; los de modo oscuro van después y tienen más especificidad.
+   Una paleta elegida en Ajustes pisa --accent desde el atributo style de <html>. */
+
+/* Celeste: sobrio y plano, celeste y azul marino, números en tipografía de datos. */
+:root[data-style='celeste'] {
+  --bg: #f5f8fb;
+  --surface: #ffffff;
+  --surface-hover: #eaf1f8;
+  --border: #d5e2ee;
+  --text: #0b1f33;
+  --muted: #5d7085;
+  --accent: #1c6fb3;
+  --accent-contrast: #ffffff;
+  --danger: #c2413b;
+  --radius: 10px;
+  --btn-radius: 8px;
+  --style-font: 'Plus Jakarta Sans Variable', 'Segoe UI', system-ui, sans-serif;
+  --style-display: 'Plus Jakarta Sans Variable', 'Segoe UI', system-ui, sans-serif;
+  --style-numbers: 'JetBrains Mono Variable', Consolas, monospace;
+}
+
+:root[data-style='celeste'][data-theme='dark'] {
+  --bg: #0d1620;
+  --surface: #13202d;
+  --surface-hover: #1a2b3b;
+  --border: #22364a;
+  --text: #e6eef6;
+  --muted: #8ea3b8;
+  --accent: #6cb8ef;
+  --accent-contrast: #06243f;
+  --danger: #ef7f78;
+}
+
+:root[data-style='celeste'] h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Ruta: barra lateral oscura, formas de cápsula y un color por nivel en el mapa. */
+:root[data-style='ruta'] {
+  --bg: #eef1f6;
+  --surface: #ffffff;
+  --surface-hover: #e4e8f0;
+  --border: #d7dce6;
+  --text: #0f1b33;
+  --muted: #5b6478;
+  --accent: #1a8a5c;
+  --accent-contrast: #ffffff;
+  --danger: #c2413b;
+  --radius: 14px;
+  --btn-radius: 999px;
+  --style-font: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --style-display: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+  --sidebar-bg: #0f1b33;
+  --sidebar-text: #e8ecf4;
+  --sidebar-muted: #8f9bb3;
+  --sidebar-hover: rgb(255 255 255 / 0.07);
+  --sidebar-border: transparent;
+  --sidebar-current-bg: rgb(63 207 142 / 0.16);
+  --sidebar-current-text: #5fd3a0;
+}
+
+:root[data-style='ruta'][data-theme='dark'] {
+  --bg: #0b1220;
+  --surface: #121b2e;
+  --surface-hover: #1a2540;
+  --border: #243152;
+  --text: #e8ecf4;
+  --muted: #8f9bb3;
+  --accent: #3fcf8e;
+  --accent-contrast: #06231a;
+  --danger: #ef7f78;
+  --sidebar-bg: #070c17;
+}
+
+:root[data-style='ruta'] h1 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+:root[data-style='ruta'] .day,
+:root[data-style='ruta'] .chip,
+:root[data-style='ruta'] .segmented,
+:root[data-style='ruta'] .segmented button {
+  border-radius: 999px;
+}
+
+:root[data-style='ruta'] .road-node + .road-node::before {
+  height: 5px;
+  top: 0.95rem;
+}
+
+:root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='A2'] {
+  --accent: #0e8fa3;
+  --accent-soft: color-mix(in srgb, #0e8fa3 12%, transparent);
+}
+
+:root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='B1'] {
+  --accent: #e8772e;
+  --accent-soft: color-mix(in srgb, #e8772e 12%, transparent);
+}
+
+:root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='B2'] {
+  --accent: #b0344f;
+  --accent-soft: color-mix(in srgb, #b0344f 12%, transparent);
+}
+
+/* Cuaderno: hoja rayada con margen, títulos en cursiva resaltados. */
+:root[data-style='cuaderno'] {
+  --bg: #fbfbf8;
+  --surface: #ffffff;
+  --surface-hover: #f1f4f9;
+  --border: #dce3ee;
+  --text: #1e2230;
+  --muted: #636a7a;
+  --accent: #2446b8;
+  --accent-contrast: #ffffff;
+  --danger: #d0433c;
+  --radius: 6px;
+  --btn-radius: 6px;
+  --style-font: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --style-display: 'Literata Variable', Georgia, serif;
+  --rule: #e4e9f2;
+  --margin-line: #e0524b;
+  --highlight: #fff07a;
+  --sidebar-bg: #f4f6fa;
+}
+
+:root[data-style='cuaderno'][data-theme='dark'] {
+  --bg: #151923;
+  --surface: #1c2130;
+  --surface-hover: #252b3c;
+  --border: #2c3346;
+  --text: #e9ebf2;
+  --muted: #9aa1b3;
+  --accent: #8da6ff;
+  --accent-contrast: #0e1430;
+  --danger: #ef7f78;
+  --rule: #1f2533;
+  --margin-line: #8a3f3b;
+  --highlight: #5c4f14;
+  --sidebar-bg: #11141c;
+}
+
+:root[data-style='cuaderno'] .content {
+  background-image:
+    linear-gradient(90deg, transparent 1.2rem, var(--margin-line) 1.2rem, var(--margin-line) calc(1.2rem + 2px), transparent calc(1.2rem + 2px)),
+    repeating-linear-gradient(180deg, transparent 0 1.9rem, var(--rule) 1.9rem calc(1.9rem + 1px));
+}
+
+:root[data-style='cuaderno'] .content > h1 {
+  width: fit-content;
+  padding-inline: 0.2rem;
+  font-style: italic;
+  font-weight: 700;
+  background: linear-gradient(transparent 58%, var(--highlight) 58% 92%, transparent 92%);
+}
+
+/* Racha: bordes marcados, sombras duras y botones que se hunden. */
+:root[data-style='racha'] {
+  --bg: #eaf7f1;
+  --surface: #ffffff;
+  --surface-hover: #dff2e8;
+  --border: #b9dccb;
+  --text: #14352a;
+  --muted: #4d6b5f;
+  --accent: #cf4424;
+  --accent-contrast: #ffffff;
+  --danger: #b3261e;
+  --ink: #14532d;
+  --radius: 18px;
+  --btn-radius: 14px;
+  --btn-border: 2px solid var(--ink);
+  --btn-shadow: 0 3px 0 var(--ink);
+  --card-border: 2px solid var(--ink);
+  --card-shadow: 0 4px 0 var(--ink);
+  --style-font: 'Nunito Variable', 'Segoe UI', system-ui, sans-serif;
+  --style-display: 'Baloo 2 Variable', 'Nunito Variable', system-ui, sans-serif;
+  --sidebar-bg: #dff2e8;
+  --sidebar-border: var(--border);
+}
+
+:root[data-style='racha'][data-theme='dark'] {
+  --bg: #0f1f19;
+  --surface: #16291f;
+  --surface-hover: #1d3529;
+  --border: #2d4d3d;
+  --text: #e4f3ea;
+  --muted: #9bbcac;
+  --accent: #ff7a5a;
+  --accent-contrast: #2a0d04;
+  --danger: #ff8a80;
+  --ink: #050d09;
+  --sidebar-bg: #0b1813;
+}
+
+:root[data-style='racha'] h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+:root[data-style='racha'] .btn:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+:root[data-style='racha'] .option,
+:root[data-style='racha'] .token,
+:root[data-style='racha'] .day {
+  border-width: 2px;
 }

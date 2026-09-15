@@ -72,6 +72,7 @@ describe('settings', () => {
   it('rechaza valores inválidos o claves desconocidas sin guardar nada', () => {
     const db = open(':memory:')
     expect(() => updateSettings(db, { palette: 'neon' })).toThrow()
+    expect(() => updateSettings(db, { style: 'neon' })).toThrow()
     expect(() => updateSettings(db, { volumen: 10 })).toThrow()
     expect(loadSettings(db)).toEqual(DEFAULT_SETTINGS)
   })

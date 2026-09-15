@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
-import { FONTS, PALETTES, type AppSettings } from '@shared/settings'
+import { FONTS, PALETTES, STYLES, type AppSettings } from '@shared/settings'
 import { hasVoiceFor, pickVoice, type SpeechLang } from '@shared/speech'
+import Logo from '../components/Logo'
 import Segmented from '../components/Segmented'
 import { INSTALL_VOICE_HELP } from '../components/summaries/SpeechControls'
 import { useVoices } from '../hooks/useSpeech'
@@ -13,6 +14,7 @@ const VOICE_SAMPLES: Record<SpeechLang, string> = {
 }
 
 const FONT_FAMILIES: Record<string, string> = {
+  estilo: 'var(--style-font)',
   moderna: 'var(--font-moderna)',
   clasica: 'var(--font-clasica)',
   amigable: 'var(--font-amigable)'
@@ -21,6 +23,7 @@ const FONT_FAMILIES: Record<string, string> = {
 export default function Settings({ status }: { status: Extract<ClaudeStatus, { state: 'ready' }> }): React.JSX.Element {
   const { settings, update } = useSettings()
   const isDark = document.documentElement.dataset.theme === 'dark'
+  const styleColors = (STYLES.find((s) => s.id === settings.style) ?? STYLES[0]).colors
 
   return (
     <>
@@ -28,6 +31,24 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
 
       <section className="card stack">
         <h2>Apariencia</h2>
+
+        <div className="stack-sm">
+          <span>Estilo</span>
+          <div className="style-grid" role="group" aria-label="Estilo">
+            {STYLES.map((s) => (
+              <button key={s.id} type="button" className="style-card" aria-pressed={s.id === settings.style} onClick={() => update({ style: s.id })}>
+                <Logo style={s.id} />
+                <span className="style-name">{s.label}</span>
+                <span className="muted small">{s.description}</span>
+                <span className="style-dots" aria-hidden="true">
+                  {s.colors.map((c) => (
+                    <i key={c} style={{ background: c }} />
+                  ))}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
 
         <Row label="Tema">
           <Segmented
@@ -51,7 +72,9 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
                 title={p.label}
                 aria-label={p.label}
                 aria-pressed={p.id === settings.palette}
-                style={{ background: isDark ? p.dark : p.light }}
+                style={{
+                  background: p.id === 'estilo' ? `linear-gradient(135deg, ${styleColors[0]} 50%, ${styleColors[1]} 50%)` : isDark ? p.dark : p.light
+                }}
                 onClick={() => update({ palette: p.id })}
               />
             ))}

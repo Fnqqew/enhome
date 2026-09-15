@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
 import type { Navigate, SectionId } from './navigation'
+import Logo from './components/Logo'
+import { useSettings } from './theme/SettingsProvider'
 import Curriculum from './pages/Curriculum'
 import Home from './pages/Home'
 import RewardToasts from './components/RewardToasts'
@@ -53,10 +55,12 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
     'no-subscription': 'Claude Code está usando otro método de acceso. Esta app requiere iniciar sesión con una suscripción de claude.ai (Pro o superior).',
     error: `No se pudo verificar la sesión de Claude: ${status.state === 'error' ? status.message : ''}`
   }[status.state]
+  const { settings } = useSettings()
 
   return (
     <main className="centered">
       <div className="card lock stack">
+        <Logo style={settings.style} className="logo lock-logo" />
         <h1>Proyecto Inglés</h1>
         <p>{message}</p>
         <div>
@@ -70,6 +74,7 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
 }
 
 function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
+  const { settings } = useSettings()
   const [section, setSection] = useState<SectionId>('inicio')
   // Durante un examen semanal no se puede salir de Pruebas.
   const [examLocked, setExamLocked] = useState(false)
@@ -92,7 +97,10 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
   return (
     <div className="shell">
       <nav className="sidebar">
-        <div className="brand">Proyecto Inglés</div>
+        <div className="brand">
+          <Logo style={settings.style} />
+          Proyecto Inglés
+        </div>
         {SECTIONS.map((s) => (
           <button
             key={s.id}

@@ -3,7 +3,20 @@
 import { z } from 'zod'
 import { SUMMARY_TYPE_IDS } from './summaries'
 
+// Estilos visuales completos: cada uno trae su logo, colores, tipografías y formas.
+export const STYLES = [
+  { id: 'celeste', label: 'Celeste', description: 'Sobrio y plano, con un guiño argentino.', colors: ['#4ba3e3', '#0b3c6d', '#f2b33d'] },
+  { id: 'ruta', label: 'Ruta', description: 'El recorrido como una línea de subte.', colors: ['#0f1b33', '#1e9e6a', '#e8772e'] },
+  { id: 'cuaderno', label: 'Cuaderno', description: 'Hoja rayada, birome azul y resaltador.', colors: ['#2446b8', '#e0524b', '#ffe45c'] },
+  { id: 'racha', label: 'Racha', description: 'Táctil y con energía, para la constancia.', colors: ['#ff6b4a', '#ffc53d', '#14532d'] },
+  { id: 'original', label: 'Original', description: 'El diseño con el que nació la app.', colors: ['#3f5bd0', '#f6f5f2', '#22211f'] }
+] as const
+
+export type StyleId = (typeof STYLES)[number]['id']
+
+// «estilo» usa el color propio del estilo elegido; el resto lo reemplaza.
 export const PALETTES = [
+  { id: 'estilo', label: 'Del estilo', light: '', dark: '' },
   { id: 'azul', label: 'Azul', light: '#3f5bd0', dark: '#8aa0f0' },
   { id: 'salvia', label: 'Salvia', light: '#3d7a5c', dark: '#7fc4a0' },
   { id: 'terracota', label: 'Terracota', light: '#b4532f', dark: '#eb9573' },
@@ -15,6 +28,7 @@ export const PALETTES = [
 ] as const
 
 export const FONTS = [
+  { id: 'estilo', label: 'Del estilo' },
   { id: 'moderna', label: 'Moderna' },
   { id: 'clasica', label: 'Clásica' },
   { id: 'amigable', label: 'Amigable' }
@@ -22,6 +36,7 @@ export const FONTS = [
 
 export const settingsSchema = z.object({
   theme: z.enum(['system', 'light', 'dark']),
+  style: z.enum(STYLES.map((s) => s.id) as [StyleId, ...StyleId[]]),
   palette: z.enum(PALETTES.map((p) => p.id) as [string, ...string[]]),
   font: z.enum(FONTS.map((f) => f.id) as [string, ...string[]]),
   fontSize: z.enum(['sm', 'md', 'lg']),
@@ -37,8 +52,9 @@ export type AppSettings = z.infer<typeof settingsSchema>
 
 export const DEFAULT_SETTINGS: AppSettings = {
   theme: 'system',
-  palette: 'azul',
-  font: 'moderna',
+  style: 'celeste',
+  palette: 'estilo',
+  font: 'estilo',
   fontSize: 'md',
   density: 'comfortable',
   favoriteSummaryTypes: [],

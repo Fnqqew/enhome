@@ -39,11 +39,15 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
     const theme = settings.theme === 'system' ? (prefersDark ? 'dark' : 'light') : settings.theme
     const palette = PALETTES.find((p) => p.id === settings.palette) ?? PALETTES[0]
     root.dataset.theme = theme
+    root.dataset.style = settings.style
+    root.dataset.palette = settings.palette
     root.dataset.font = settings.font
     root.dataset.size = settings.fontSize
     root.dataset.density = settings.density
     root.dataset.motion = settings.reduceMotion ? 'reduce' : 'full'
-    root.style.setProperty('--accent', theme === 'dark' ? palette.dark : palette.light)
+    // «Del estilo» deja el color que define el CSS de cada estilo.
+    if (palette.id === 'estilo') root.style.removeProperty('--accent')
+    else root.style.setProperty('--accent', theme === 'dark' ? palette.dark : palette.light)
   }, [settings, prefersDark])
 
   const update = useCallback((patch: Partial<AppSettings>) => {

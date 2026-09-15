@@ -69,7 +69,8 @@ App de escritorio personal para aprender inglés. Nace de un mapa conceptual con
 
 ### Diseño
 - Una sola base visual para toda la app: **minimalista, sobria y amigable**.
-- Personalización: modo claro u oscuro, 6–8 paletas de color, tamaño de letra, 2–3 tipografías y espaciado compacto o amplio. Todo dentro de la misma base visual.
+- **Estilos visuales** a elección, cada uno con su logo, colores, tipografías y formas: *Celeste* (por defecto; sobrio y plano), *Ruta* (el recorrido como línea de subte, con un color por nivel), *Cuaderno* (hoja rayada, birome y resaltador), *Racha* (táctil, con botones que se hunden) y *Original*.
+- Personalización sobre el estilo: modo claro u oscuro, color (el del estilo o una de 8 paletas), tipografía (la del estilo o una de 3), tamaño de letra y espaciado compacto o amplio.
 - **Modo lectura en toda la app:** vista sin distracciones, lectura en voz alta con las voces del sistema (gratis) y la opción de seleccionar un texto para preguntarle a Claude.
 - La interfaz está en español.
 
@@ -86,7 +87,7 @@ App de escritorio personal para aprender inglés. Nace de un mapa conceptual con
 - **Sesión única:** al abrirse, la app verifica que Claude Code esté instalado y con sesión iniciada. Si no, muestra una pantalla de bloqueo con instrucciones. No hay cuentas propias.
 - **Menos llamadas a la IA:** los ejercicios de la semana se generan por adelantado (al empezar el tópico) y quedan guardados. En tiempo real solo se usa para corregir escritura, dar devoluciones, generar exámenes nuevos y responder dudas.
 - **Contenido base dentro del repo:** `content/<nivel>/<tópico>/` con `topic.json` (subtemas, objetivos, etiquetas) y resúmenes base en Markdown. Lo genera Claude y lo revisa el usuario.
-- **Temas visuales:** variables CSS; cada paleta es un archivo de valores.
+- **Temas visuales:** variables CSS. Cada estilo redefine las variables con `data-style` en la raíz, y las tipografías vienen empaquetadas con `@fontsource` para funcionar sin internet.
 - **Tests:** `vitest` para el motor de progresión y las reglas.
 
 ### Estructura prevista
