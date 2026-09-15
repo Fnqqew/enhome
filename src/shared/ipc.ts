@@ -5,6 +5,7 @@ import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } fro
 import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
 import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from './summaries'
+import type { ExamResultView, ExamSessionView, MockScope, ResumeResult, TestsOverview } from './exams'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -32,6 +33,16 @@ export const IPC = {
   summaryRate: 'summaries:rate',
   summaryFavorite: 'summaries:favorite',
   summaryAsk: 'summaries:ask',
+  testsOverview: 'tests:overview',
+  examLock: 'exam:lock',
+  examStartWeekly: 'exam:start-weekly',
+  examStartMock: 'exam:start-mock',
+  examResume: 'exam:resume',
+  examSave: 'exam:save',
+  examHeartbeat: 'exam:heartbeat',
+  examSubmit: 'exam:submit',
+  examResult: 'exam:result',
+  examDiscard: 'exam:discard',
   // Evento del proceso principal a la interfaz.
   dayChanged: 'app:day-changed',
   devSetToday: 'dev:set-today',
@@ -80,6 +91,16 @@ export interface Api {
   rateSummary(topicId: string, type: SummaryTypeId, rating: PracticeRating): Promise<SummaryView>
   setFavoriteSummaryType(type: SummaryTypeId, favorite: boolean): Promise<SummariesIndex>
   askAboutText(topicId: string, fragment: string, question: string): Promise<ClaudeAnswer>
+  getTestsOverview(): Promise<TestsOverview>
+  getExamLock(): Promise<boolean>
+  startWeeklyExam(): Promise<ExamSessionView>
+  startMockExam(scope: MockScope): Promise<ExamSessionView>
+  resumeExam(examId: number): Promise<ResumeResult>
+  saveExamAnswer(examId: number, index: number, answer: ExerciseAnswer | null): Promise<void>
+  examHeartbeat(examId: number): Promise<void>
+  submitExam(examId: number): Promise<ExamResultView>
+  getExamResult(examId: number): Promise<ExamResultView>
+  discardMockExam(examId: number): Promise<void>
   // Se llama con la nueva fecha cuando cambia el día; devuelve la función para dejar de escuchar.
   onDayChanged(callback: (today: string) => void): () => void
   // Solo en desarrollo.

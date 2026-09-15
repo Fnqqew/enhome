@@ -14,6 +14,8 @@ import { generatePracticePool } from './practice/generation'
 import { Practice } from './practice/practice'
 import { answerAboutText, generateSummary } from './summaries/generation'
 import { Summaries } from './summaries/summaries'
+import { Exams } from './exams/exams'
+import { generateExam } from './exams/generation'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
@@ -39,6 +41,7 @@ interface Services {
   placement: Placement
   practice: Practice
   summaries: Summaries
+  exams: Exams
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -59,7 +62,8 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
         progression,
         placement: new Placement(db, curriculum, progression, generatePlacementQuestions),
         practice: new Practice(db, curriculum, progression, generatePracticePool, gradeOpenAnswer),
-        summaries: new Summaries(db, curriculum, progression, generateSummary, answerAboutText)
+        summaries: new Summaries(db, curriculum, progression, generateSummary, answerAboutText),
+        exams: new Exams(db, curriculum, progression, generateExam, gradeOpenAnswer)
       }
     }
     return services
@@ -130,6 +134,19 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
   handle(IPC.summaryAsk, (topicId, fragment, question) =>
     getServices().summaries.ask(z.string().parse(topicId), z.string().parse(fragment), z.string().parse(question), today())
   )
+
+  handle(IPC.testsOverview, () => getServices().exams.getOverview(today()))
+  handle(IPC.examLock, () => getServices().exams.hasBlockingExam())
+  handle(IPC.examStartWeekly, () => getServices().exams.startWeekly(today()))
+  handle(IPC.examStartMock, (scope) => getServices().exams.startMock(z.enum(['topic', 'general']).parse(scope), today()))
+  handle(IPC.examResume, (examId) => getServices().exams.resume(id.parse(examId), today()))
+  handle(IPC.examSave, (examId, index, answer) =>
+    getServices().exams.saveAnswer(id.parse(examId), z.number().int().min(0).parse(index), answer === null ? null : exerciseAnswerSchema.parse(answer))
+  )
+  handle(IPC.examHeartbeat, (examId) => getServices().exams.heartbeat(id.parse(examId)))
+  handle(IPC.examSubmit, (examId) => getServices().exams.submit(id.parse(examId), today()))
+  handle(IPC.examResult, (examId) => getServices().exams.getResult(id.parse(examId)))
+  handle(IPC.examDiscard, (examId) => getServices().exams.discardMock(id.parse(examId)))
 
   if (isDev) {
     handle(IPC.devSetToday, (date) => {

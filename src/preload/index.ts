@@ -33,6 +33,16 @@ const api: Api = {
   rateSummary: (topicId, type, rating) => invoke(IPC.summaryRate, topicId, type, rating),
   setFavoriteSummaryType: (type, favorite) => invoke(IPC.summaryFavorite, type, favorite),
   askAboutText: (topicId, fragment, question) => invoke(IPC.summaryAsk, topicId, fragment, question),
+  getTestsOverview: () => invoke(IPC.testsOverview),
+  getExamLock: () => invoke(IPC.examLock),
+  startWeeklyExam: () => invoke(IPC.examStartWeekly),
+  startMockExam: (scope) => invoke(IPC.examStartMock, scope),
+  resumeExam: (examId) => invoke(IPC.examResume, examId),
+  saveExamAnswer: (examId, index, answer) => invoke(IPC.examSave, examId, index, answer),
+  examHeartbeat: (examId) => invoke(IPC.examHeartbeat, examId),
+  submitExam: (examId) => invoke(IPC.examSubmit, examId),
+  getExamResult: (examId) => invoke(IPC.examResult, examId),
+  discardMockExam: (examId) => invoke(IPC.examDiscard, examId),
   onDayChanged: (callback) => {
     const listener = (_event: Electron.IpcRendererEvent, today: string): void => callback(today)
     ipcRenderer.on(IPC.dayChanged, listener)

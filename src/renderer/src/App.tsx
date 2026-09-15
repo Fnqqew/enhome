@@ -7,6 +7,7 @@ import Placeholder from './pages/Placeholder'
 import Practice from './pages/Practice'
 import Settings from './pages/Settings'
 import Summaries from './pages/Summaries'
+import Tests from './pages/Tests'
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
@@ -15,7 +16,7 @@ const SECTIONS: { id: SectionId; label: string; phase?: number }[] = [
   { id: 'temario', label: 'Temario' },
   { id: 'practica', label: 'Práctica' },
   { id: 'resumenes', label: 'Resúmenes' },
-  { id: 'pruebas', label: 'Pruebas', phase: 6 },
+  { id: 'pruebas', label: 'Pruebas' },
   { id: 'progreso', label: 'Progreso', phase: 7 },
   { id: 'ajustes', label: 'Ajustes' }
 ]
@@ -69,6 +70,23 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
 
 function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
   const [section, setSection] = useState<SectionId>('inicio')
+  // Durante un examen semanal no se puede salir de Pruebas.
+  const [examLocked, setExamLocked] = useState(false)
+
+  useEffect(() => {
+    window.api
+      .getExamLock()
+      .then((locked) => {
+        if (!locked) return
+        setExamLocked(true)
+        setSection('pruebas')
+      })
+      .catch(() => undefined)
+  }, [])
+
+  const navigate: Navigate = (target) => {
+    if (!examLocked || target === 'pruebas') setSection(target)
+  }
 
   return (
     <div className="shell">
@@ -79,25 +97,38 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
             key={s.id}
             className="nav-item"
             aria-current={s.id === section ? 'page' : undefined}
-            onClick={() => setSection(s.id)}
+            disabled={examLocked && s.id !== 'pruebas'}
+            title={examLocked && s.id !== 'pruebas' ? 'Entregá el examen para salir de Pruebas' : undefined}
+            onClick={() => navigate(s.id)}
           >
             {s.label}
           </button>
         ))}
-        <div className="sidebar-foot muted">Claude conectado</div>
+        <div className="sidebar-foot muted">{examLocked ? 'Examen en curso' : 'Claude conectado'}</div>
       </nav>
       <main className="content">
-        <Page section={section} status={status} navigate={setSection} />
+        <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
       </main>
     </div>
   )
 }
 
-function Page({ section, status, navigate }: { section: SectionId; status: ReadyStatus; navigate: Navigate }): React.JSX.Element {
+function Page({
+  section,
+  status,
+  navigate,
+  onExamLock
+}: {
+  section: SectionId
+  status: ReadyStatus
+  navigate: Navigate
+  onExamLock: (locked: boolean) => void
+}): React.JSX.Element {
   if (section === 'inicio') return <Home navigate={navigate} />
   if (section === 'temario') return <Curriculum />
   if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'resumenes') return <Summaries />
+  if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'ajustes') return <Settings status={status} />
   const current = SECTIONS.find((s) => s.id === section)!
   return <Placeholder title={current.label} phase={current.phase ?? 0} />

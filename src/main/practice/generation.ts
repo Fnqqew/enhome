@@ -47,7 +47,7 @@ const KIND_GUIDE: Record<UnitKind, string> = {
   review: 'Es un repaso: ejercicios variados y breves que mezclen los puntos clave del subtema.'
 }
 
-const FORMAT_GUIDE = `Formatos (el campo type indica cuál es):
+export const FORMAT_GUIDE = `Formatos (el campo type indica cuál es):
 - multiple_choice: prompt en inglés (marcá el hueco con ___ si corresponde); 4 opciones con una sola correcta; correctIndex es su posición (0 a 3).
 - fill_blank: sentence en inglés con exactamente un ___; hint con una pista breve entre paréntesis, como "(be)", o vacío; answers con todas las variantes válidas, con y sin contracción.
 - word_order: sentence es una oración correcta en inglés de 4 a 10 palabras (el alumno la arma con las palabras mezcladas); alternatives con otros órdenes válidos o vacío; translation es su traducción al español.

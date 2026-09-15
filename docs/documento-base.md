@@ -193,6 +193,36 @@ Las constantes están en `src/main/practice/composition.ts` y `src/main/practice
 - **Escuchar:** usa las voces instaladas en Windows y detecta qué partes están en español y cuáles en inglés, para leer cada una con su voz. Se puede pausar y elegir la velocidad (0,8×, 1× o 1,2×).
 - **Preguntar a Claude:** al seleccionar texto aparece «Preguntar a Claude». Responde en el momento, en no más de 200 palabras y con el contexto del tópico; estas respuestas no pasan por el revisor, para no hacer esperar.
 
+## Pruebas (fase 6)
+
+Constantes en `src/main/exams/rules.ts`.
+
+**Examen semanal**
+- **20 preguntas**, que genera Claude y controla el revisor:
+  - 2 cerradas por subtema, más 3 extra en los subtemas con más errores en la práctica.
+  - 4 de repaso de los prerrequisitos; si no hay, del tópico anterior.
+  - Al final, una traducción, una lectura y una escritura, si el tópico trabaja lectura y escritura.
+  - Se descartan hasta 2 preguntas que no pasen los controles automáticos.
+- **Preparación:** las preguntas se preparan en segundo plano apenas el examen queda disponible y se usan una sola vez.
+- **Nota:** promedio de las preguntas, de 0 a 10. Lo que no se responde cuenta como incorrecto; la lectura da puntaje parcial; la traducción y la escritura las corrige Claude.
+- **Durante el examen:**
+  - No se puede salir de Pruebas: el menú queda bloqueado.
+  - Se puede navegar entre las preguntas.
+  - Las respuestas se guardan solas.
+  - La interfaz avisa cada 20 s que el examen sigue abierto.
+- **Interrupción:** si pasa más de 1 minuto sin esa señal (la app se cerró o la computadora se suspendió), el examen queda **en pausa**.
+  - Se puede retomar **una sola vez**, dentro de los **30 minutos**.
+  - Si la pausa vence, el examen se **anula sin contar como reprobado** y el próximo tiene preguntas nuevas.
+  - Una **segunda interrupción** entrega el examen con lo respondido.
+- **Medianoche:** mientras hay un examen abierto, la semana no se cierra. Un examen empezado el domingo y entregado después de las 00:00 se evalúa con la fecha en que empezó.
+
+**Simulacros**
+- 10 preguntas cerradas, un poco más fáciles: del tópico actual, o de todo lo desbloqueado repartido entre tópicos.
+- No bloquean la navegación, no cuentan para aprobar y se pueden descartar.
+- Un tópico anterior con más del 40 % de errores queda marcado para repasar.
+
+**Historial:** todas las pruebas con fecha, nota y motivo si se anularon o se entregaron solas. Cada una se puede abrir para ver la corrección completa.
+
 ## Temario interactivo y niveles futuros
 
 - **Sección «Temario»:** desplegable por nivel → tópico → subtema.

@@ -118,26 +118,42 @@ export class Progression {
     })
   }
 
-  submitWeeklyExam({ grade, answers }: ExamSubmission, today: string): ExamOutcome {
+  // examId: examen real ya guardado (con sus respuestas). startedOn: un examen empezado antes de
+  // medianoche se evalúa con la fecha en que empezó.
+  submitWeeklyExam(
+    { grade, answers }: ExamSubmission,
+    today: string,
+    options: { examId?: number; startedOn?: string } = {}
+  ): ExamOutcome {
     if (!Number.isFinite(grade) || grade < 0 || grade > 10) throw new ProgressionError('La nota tiene que estar entre 0 y 10.')
+    const day = options.startedOn ?? today
 
     return transaction(this.db, () => {
-      this.rollover(today)
+      this.rollover(day)
       const week = this.requireActiveWeek()
-      const c = computeWeek(week, today)
+      const c = computeWeek(week, day)
       if (c.examStatus !== 'available') throw new ProgressionError(describeExam(c, week))
 
       const topic = this.topic(week.topicId)
       const passed = grade >= PASS_GRADE
-      const { lastInsertRowid: examId } = this.db
-        .prepare(
-          "INSERT INTO exams (kind, topic_id, status, questions, grade, passed, submitted_at) VALUES ('weekly', ?, 'submitted', '[]', ?, ?, datetime('now'))"
+      let examId: number | bigint
+      if (options.examId !== undefined) {
+        examId = options.examId
+        this.db
+          .prepare("UPDATE exams SET status = 'submitted', grade = ?, passed = ?, submitted_at = datetime('now') WHERE id = ?")
+          .run(grade, passed ? 1 : 0, examId)
+      } else {
+        // Examen simulado (herramientas de prueba): se registra con sus respuestas etiquetadas.
+        examId = this.db
+          .prepare(
+            "INSERT INTO exams (kind, topic_id, week_id, status, questions, grade, passed, started_on, submitted_at) VALUES ('weekly', ?, ?, 'submitted', '[]', ?, ?, ?, datetime('now'))"
+          )
+          .run(topic.id, week.id, grade, passed ? 1 : 0, day).lastInsertRowid
+        const insertAnswer = this.db.prepare(
+          'INSERT INTO exam_answers (exam_id, question_index, answer, correct, topic_tag, subtopic_tag) VALUES (?, ?, NULL, ?, ?, ?)'
         )
-        .run(topic.id, grade, passed ? 1 : 0)
-      const insertAnswer = this.db.prepare(
-        'INSERT INTO exam_answers (exam_id, question_index, answer, correct, topic_tag, subtopic_tag) VALUES (?, ?, NULL, ?, ?, ?)'
-      )
-      answers.forEach((a, i) => insertAnswer.run(examId, i, a.correct ? 1 : 0, a.topicId, a.subtopicId))
+        answers.forEach((a, i) => insertAnswer.run(examId, i, a.correct ? 1 : 0, a.topicId, a.subtopicId))
+      }
 
       this.db.prepare('UPDATE weeks SET status = ?, exam_id = ? WHERE id = ?').run(passed ? 'passed' : 'failed', examId, week.id)
       this.db
@@ -150,7 +166,7 @@ export class Progression {
       const weakTopics = detectWeakTopics(answers, topic.id).filter((id) => isPassed(statuses.get(id)))
       for (const id of weakTopics) this.setTopicStatus(id, 'review')
 
-      const nextMonday = addDays(mondayOf(today), 7)
+      const nextMonday = addDays(mondayOf(day), 7)
       if (passed) {
         this.setTopicStatus(topic.id, 'passed', { passedOn: today })
         const next = this.nextPendingTopic()
@@ -193,6 +209,18 @@ export class Progression {
     })
   }
 
+  // Los simulacros no cuentan para aprobar, pero marcan para repaso los tópicos anteriores con muchos errores.
+  applyMockResult(answers: AnswerTag[], today: string): string[] {
+    return transaction(this.db, () => {
+      this.rollover(today)
+      const currentTopicId = this.activeWeek()?.topicId ?? null
+      const statuses = this.topicStatuses()
+      const weak = detectWeakTopics(answers, currentTopicId).filter((id) => isPassed(statuses.get(id)))
+      for (const id of weak) this.setTopicStatus(id, 'review')
+      return weak
+    })
+  }
+
   getTopicProgress(): Map<string, { status: TopicStatus; bestGrade: number | null; attempts: number }> {
     const rows = this.db.prepare('SELECT topic_id, status, best_grade, attempts FROM topic_progress').all() as unknown as {
       topic_id: string
@@ -209,6 +237,7 @@ export class Progression {
         DELETE FROM exercise_attempts;
         DELETE FROM exercises;
         DELETE FROM practice_sessions;
+        DELETE FROM exam_drafts;
         DELETE FROM practice_units;
         DELETE FROM weeks;
         DELETE FROM exam_answers;
@@ -226,6 +255,8 @@ export class Progression {
     if (week) {
       const sunday = addDays(week.weekStart, 6)
       if (today <= sunday) return
+      // Con un examen en curso o en pausa, la semana no se cierra hasta resolverlo.
+      if (this.db.prepare("SELECT 1 FROM exams WHERE week_id = ? AND status IN ('in_progress', 'paused')").get(week.id)) return
       const pending: PlannedUnit[] = week.units
         .filter((u) => !u.completedOn)
         .map(({ kind, topicId, subtopicId }) => ({ kind, topicId, subtopicId }))

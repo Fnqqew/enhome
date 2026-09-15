@@ -182,5 +182,25 @@ export const MIGRATIONS: Migration[] = [
     sql: `
       CREATE UNIQUE INDEX summaries_topic_type ON summaries (topic_id, type);
     `
+  },
+  {
+    version: 5,
+    name: 'exámenes semanales y simulacros',
+    sql: `
+      ALTER TABLE exams ADD COLUMN week_id INTEGER;
+      ALTER TABLE exams ADD COLUMN scope TEXT;
+      ALTER TABLE exams ADD COLUMN started_on TEXT;
+      ALTER TABLE exams ADD COLUMN last_seen_at TEXT;
+      ALTER TABLE exams ADD COLUMN end_reason TEXT;
+      ALTER TABLE exam_answers ADD COLUMN score REAL;
+      ALTER TABLE exam_answers ADD COLUMN feedback TEXT;
+
+      -- Preguntas del examen semanal preparadas de antemano (se consumen al empezar).
+      CREATE TABLE exam_drafts (
+        week_id    INTEGER PRIMARY KEY REFERENCES weeks (id),
+        questions  TEXT NOT NULL,
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+    `
   }
 ]

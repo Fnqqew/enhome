@@ -159,8 +159,15 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
 
         {week.canRecover && week.nextUnit && <div className="notice">Hoy es domingo: si practicás, recuperás una falta.</div>}
 
-        <div className={`notice${examTone}`}>
-          <strong>Examen:</strong> {week.examMessage}
+        <div className={`notice${examTone} row spread`}>
+          <span>
+            <strong>Examen:</strong> {week.examMessage}
+          </span>
+          {week.examStatus === 'available' && (
+            <button className="btn" onClick={() => navigate('pruebas')}>
+              Rendir examen
+            </button>
+          )}
         </div>
       </section>
 
