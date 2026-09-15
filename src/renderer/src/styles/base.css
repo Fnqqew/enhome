@@ -873,6 +873,250 @@ h5.level {
   margin: 0 0 0.25rem;
 }
 
+/* Resúmenes */
+
+.type-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.type-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.type-chip:hover {
+  border-color: var(--accent);
+}
+
+.type-chip[aria-selected='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.star {
+  color: var(--accent);
+}
+
+.type-chip[aria-selected='true'] .star {
+  color: inherit;
+}
+
+.ready-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.mini-badge {
+  padding: 0 0.4rem;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.toolbar {
+  justify-content: flex-end;
+}
+
+.speech {
+  gap: 0.35rem;
+}
+
+.rate-select {
+  padding: 0.15rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+.markdown {
+  line-height: 1.7;
+}
+
+.markdown > :first-child {
+  margin-top: 0;
+}
+
+.markdown h1 {
+  font-size: 1.4rem;
+}
+
+.markdown h2 {
+  margin: 1.6rem 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+.markdown h3 {
+  margin: 1.2rem 0 0.4rem;
+  font-size: 1.02rem;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  margin: 0 0 0.8rem;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 1.4rem;
+}
+
+.markdown blockquote,
+.quote {
+  margin-left: 0;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--accent-soft);
+}
+
+.markdown table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.markdown th,
+.markdown td {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown th {
+  background: var(--bg);
+  font-weight: 600;
+}
+
+.markdown code {
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+  background: var(--bg);
+  font-size: 0.9em;
+}
+
+.markdown a {
+  color: var(--accent);
+}
+
+.flashcards {
+  max-width: 34rem;
+}
+
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 14rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg);
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.flashcard.flipped {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.flash-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.ask-float {
+  position: fixed;
+  z-index: 30;
+  transform: translateX(-50%);
+  padding: 0.35rem 0.8rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 0.8rem;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgb(0 0 0 / 0.45);
+}
+
+.modal {
+  width: min(40rem, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.answer {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.reading-mode {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  overflow-y: auto;
+  background: var(--bg);
+}
+
+.reading-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.reading-title {
+  margin-right: auto;
+}
+
+.reading-content {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  font-size: 1.12rem;
+}
+
+.reading-content .markdown {
+  line-height: 1.85;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;

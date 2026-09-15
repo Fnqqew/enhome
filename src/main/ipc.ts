@@ -12,10 +12,13 @@ import { Progression } from './engine/progression'
 import { gradeOpenAnswer } from './practice/ai-grading'
 import { generatePracticePool } from './practice/generation'
 import { Practice } from './practice/practice'
+import { answerAboutText, generateSummary } from './summaries/generation'
+import { Summaries } from './summaries/summaries'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
 import { IPC, type Result, type SampleSentence } from '../shared/ipc'
+import { SUMMARY_TYPE_IDS } from '../shared/summaries'
 
 // Envuelve cada handler para que la interfaz reciba un Result en vez de un error de Electron.
 function handle<T>(channel: string, fn: (...args: unknown[]) => T | Promise<T>): void {
@@ -35,7 +38,10 @@ interface Services {
   progression: Progression
   placement: Placement
   practice: Practice
+  summaries: Summaries
 }
+
+const summaryType = z.enum(SUMMARY_TYPE_IDS)
 
 const id = z.number().int()
 const rating = z.union(PRACTICE_RATINGS.map((r) => z.literal(r)) as [z.ZodLiteral<1>, z.ZodLiteral<3>, z.ZodLiteral<5>])
@@ -52,7 +58,8 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
         roadmap: loadRoadmap(contentDir),
         progression,
         placement: new Placement(db, curriculum, progression, generatePlacementQuestions),
-        practice: new Practice(db, curriculum, progression, generatePracticePool, gradeOpenAnswer)
+        practice: new Practice(db, curriculum, progression, generatePracticePool, gradeOpenAnswer),
+        summaries: new Summaries(db, curriculum, progression, generateSummary, answerAboutText)
       }
     }
     return services
@@ -110,6 +117,19 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
   handle(IPC.practiceSkip, (exerciseId) => getServices().practice.skip(id.parse(exerciseId)))
   handle(IPC.practiceRate, (exerciseId, value) => getServices().practice.rate(id.parse(exerciseId), rating.parse(value)))
   handle(IPC.practiceFinish, (sessionId) => getServices().practice.finish(id.parse(sessionId), today()))
+
+  handle(IPC.summariesIndex, () => getServices().summaries.getIndex(today()))
+  handle(IPC.summaryGet, (topicId, type) => getServices().summaries.getSummary(z.string().parse(topicId), summaryType.parse(type), today()))
+  handle(IPC.summaryGenerate, (topicId, type, regenerate) =>
+    getServices().summaries.generateSummary(z.string().parse(topicId), summaryType.parse(type), z.boolean().parse(regenerate), today())
+  )
+  handle(IPC.summaryRate, (topicId, type, value) =>
+    getServices().summaries.rate(z.string().parse(topicId), summaryType.parse(type), rating.parse(value), today())
+  )
+  handle(IPC.summaryFavorite, (type, favorite) => getServices().summaries.setFavorite(summaryType.parse(type), z.boolean().parse(favorite), today()))
+  handle(IPC.summaryAsk, (topicId, fragment, question) =>
+    getServices().summaries.ask(z.string().parse(topicId), z.string().parse(fragment), z.string().parse(question), today())
+  )
 
   if (isDev) {
     handle(IPC.devSetToday, (date) => {

@@ -1,6 +1,7 @@
 // Preferencias de personalización, compartidas entre el proceso principal y la interfaz.
 
 import { z } from 'zod'
+import { SUMMARY_TYPE_IDS } from './summaries'
 
 export const PALETTES = [
   { id: 'azul', label: 'Azul', light: '#3f5bd0', dark: '#8aa0f0' },
@@ -24,7 +25,8 @@ export const settingsSchema = z.object({
   palette: z.enum(PALETTES.map((p) => p.id) as [string, ...string[]]),
   font: z.enum(FONTS.map((f) => f.id) as [string, ...string[]]),
   fontSize: z.enum(['sm', 'md', 'lg']),
-  density: z.enum(['compact', 'comfortable'])
+  density: z.enum(['compact', 'comfortable']),
+  favoriteSummaryTypes: z.array(z.enum(SUMMARY_TYPE_IDS)).max(SUMMARY_TYPE_IDS.length)
 })
 
 export type AppSettings = z.infer<typeof settingsSchema>
@@ -34,5 +36,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   palette: 'azul',
   font: 'moderna',
   fontSize: 'md',
-  density: 'comfortable'
+  density: 'comfortable',
+  favoriteSummaryTypes: []
 }

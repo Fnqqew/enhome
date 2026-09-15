@@ -1,26 +1,14 @@
 import { useCallback, useEffect, useState } from 'react'
-import {
-  EXERCISE_TYPE_LABELS,
-  type ExerciseAnswer,
-  type PracticeRating,
-  type PracticeResult,
-  type PracticeView,
-  type SessionView
-} from '@shared/exercises'
+import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type PracticeResult, type PracticeView, type SessionView } from '@shared/exercises'
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
+import Rating from '../components/Rating'
 import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
 
 // Desde cuántos minutos antes de medianoche se avisa durante una práctica.
 const MIDNIGHT_WARNING_MINUTES = 30
-
-const RATINGS: { value: PracticeRating; label: string }[] = [
-  { value: 1, label: 'No me sirvió' },
-  { value: 3, label: 'Estuvo bien' },
-  { value: 5, label: 'Me encantó' }
-]
 
 export default function Practice({ navigate }: { navigate: Navigate }): React.JSX.Element {
   const [view, setView] = useState<PracticeView | null>(null)
@@ -257,20 +245,10 @@ function SessionPlayer({
             </div>
           ) : (
             <div className="row spread">
-              <div className="rating" role="group" aria-label="¿Qué te pareció este ejercicio?">
-                <span className="muted">¿Qué te pareció?</span>
-                {RATINGS.map((r) => (
-                  <button
-                    key={r.value}
-                    type="button"
-                    className="chip"
-                    aria-pressed={current.rating === r.value}
-                    onClick={() => window.api.rateExercise(current.id, r.value).then(onView).catch((err: Error) => setError(err.message))}
-                  >
-                    {r.label}
-                  </button>
-                ))}
-              </div>
+              <Rating
+                value={current.rating}
+                onRate={(value) => window.api.rateExercise(current.id, value).then(onView).catch((err: Error) => setError(err.message))}
+              />
               <button
                 className="btn"
                 type="button"

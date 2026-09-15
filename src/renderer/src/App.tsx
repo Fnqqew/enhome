@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Placeholder from './pages/Placeholder'
 import Practice from './pages/Practice'
 import Settings from './pages/Settings'
+import Summaries from './pages/Summaries'
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
@@ -13,7 +14,7 @@ const SECTIONS: { id: SectionId; label: string; phase?: number }[] = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'temario', label: 'Temario' },
   { id: 'practica', label: 'Práctica' },
-  { id: 'resumenes', label: 'Resúmenes', phase: 5 },
+  { id: 'resumenes', label: 'Resúmenes' },
   { id: 'pruebas', label: 'Pruebas', phase: 6 },
   { id: 'progreso', label: 'Progreso', phase: 7 },
   { id: 'ajustes', label: 'Ajustes' }
@@ -96,6 +97,7 @@ function Page({ section, status, navigate }: { section: SectionId; status: Ready
   if (section === 'inicio') return <Home navigate={navigate} />
   if (section === 'temario') return <Curriculum />
   if (section === 'practica') return <Practice navigate={navigate} />
+  if (section === 'resumenes') return <Summaries />
   if (section === 'ajustes') return <Settings status={status} />
   const current = SECTIONS.find((s) => s.id === section)!
   return <Placeholder title={current.label} phase={current.phase ?? 0} />

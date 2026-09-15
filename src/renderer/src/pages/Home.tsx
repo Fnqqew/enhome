@@ -145,13 +145,16 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
           {week.nextUnit && !week.canPracticeNow && week.practiceBlockedReason && (
             <p className="muted">{week.practiceBlockedReason}</p>
           )}
-          {(week.canPracticeNow || canRecoverNow) && (
-            <div>
+          <div className="row">
+            {(week.canPracticeNow || canRecoverNow) && (
               <button className="btn" onClick={() => navigate('practica')}>
                 {canRecoverNow ? 'Recuperar una falta' : 'Practicar'}
               </button>
-            </div>
-          )}
+            )}
+            <button className="btn secondary" onClick={() => navigate('resumenes')}>
+              Leer el resumen
+            </button>
+          </div>
         </div>
 
         {week.canRecover && week.nextUnit && <div className="notice">Hoy es domingo: si practicás, recuperás una falta.</div>}

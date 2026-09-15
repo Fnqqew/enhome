@@ -173,6 +173,26 @@ Las constantes están en `src/main/practice/composition.ts` y `src/main/practice
 **Recuperación del domingo**
 - Si ya no quedan prácticas pendientes, es una sesión de repaso del subtema del día que se faltó. Al terminarla se recupera la falta.
 
+## Resúmenes (fase 5)
+
+**Acceso**
+- Solo se ven los tópicos desbloqueados: el que está en curso (aunque su semana todavía no haya empezado), los aprobados y los marcados para repasar.
+- Antes del examen inicial no hay resúmenes disponibles.
+
+**Tipos**
+- **Explicación completa:** es el resumen base del temario y siempre aparece primero.
+- **Generados por Claude:** esquema, tablas comparativas, ejemplos en contexto, errores comunes, comparación con el español, paso a paso, mini historia, diálogo, «explicámelo simple», preguntas frecuentes, trucos para recordar y tarjetas de repaso.
+- **Generación:** cada tipo se genera la primera vez que se pide, pasa por el revisor (esfuerzo medio) y queda guardado. «Regenerar» lo reemplaza y borra su calificación.
+
+**Preferencias**
+- Cada tipo se puede marcar como favorito y cada resumen se califica igual que los ejercicios.
+- Orden de los tipos: explicación completa, después favoritos, después los mejor calificados. Los de promedio 4 o más llevan la marca «Recomendado».
+
+**Lectura**
+- **Modo lectura:** vista sin distracciones a pantalla completa.
+- **Escuchar:** usa las voces instaladas en Windows y detecta qué partes están en español y cuáles en inglés, para leer cada una con su voz. Se puede pausar y elegir la velocidad (0,8×, 1× o 1,2×).
+- **Preguntar a Claude:** al seleccionar texto aparece «Preguntar a Claude». Responde en el momento, en no más de 200 palabras y con el contexto del tópico; estas respuestas no pasan por el revisor, para no hacer esperar.
+
 ## Temario interactivo y niveles futuros
 
 - **Sección «Temario»:** desplegable por nivel → tópico → subtema.

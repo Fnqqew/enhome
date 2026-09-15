@@ -27,6 +27,12 @@ const api: Api = {
   skipExercise: (exerciseId) => invoke(IPC.practiceSkip, exerciseId),
   rateExercise: (exerciseId, rating) => invoke(IPC.practiceRate, exerciseId, rating),
   finishPractice: (sessionId) => invoke(IPC.practiceFinish, sessionId),
+  getSummariesIndex: () => invoke(IPC.summariesIndex),
+  getSummary: (topicId, type) => invoke(IPC.summaryGet, topicId, type),
+  generateSummary: (topicId, type, regenerate) => invoke(IPC.summaryGenerate, topicId, type, regenerate),
+  rateSummary: (topicId, type, rating) => invoke(IPC.summaryRate, topicId, type, rating),
+  setFavoriteSummaryType: (type, favorite) => invoke(IPC.summaryFavorite, type, favorite),
+  askAboutText: (topicId, fragment, question) => invoke(IPC.summaryAsk, topicId, fragment, question),
   onDayChanged: (callback) => {
     const listener = (_event: Electron.IpcRendererEvent, today: string): void => callback(today)
     ipcRenderer.on(IPC.dayChanged, listener)

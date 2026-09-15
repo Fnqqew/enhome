@@ -175,5 +175,12 @@ export const MIGRATIONS: Migration[] = [
       CREATE INDEX exercises_session ON exercises (session_id);
       CREATE INDEX exercises_subtopic ON exercises (topic_id, subtopic_id);
     `
+  },
+  {
+    version: 4,
+    name: 'un resumen por tópico y tipo',
+    sql: `
+      CREATE UNIQUE INDEX summaries_topic_type ON summaries (topic_id, type);
+    `
   }
 ]

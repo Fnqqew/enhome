@@ -4,6 +4,7 @@ import type { CurriculumMap, CurriculumTopic } from './curriculum'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
+import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from './summaries'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -25,6 +26,12 @@ export const IPC = {
   practiceSkip: 'practice:skip',
   practiceRate: 'practice:rate',
   practiceFinish: 'practice:finish',
+  summariesIndex: 'summaries:index',
+  summaryGet: 'summaries:get',
+  summaryGenerate: 'summaries:generate',
+  summaryRate: 'summaries:rate',
+  summaryFavorite: 'summaries:favorite',
+  summaryAsk: 'summaries:ask',
   // Evento del proceso principal a la interfaz.
   dayChanged: 'app:day-changed',
   devSetToday: 'dev:set-today',
@@ -67,6 +74,12 @@ export interface Api {
   skipExercise(exerciseId: number): Promise<PracticeView>
   rateExercise(exerciseId: number, rating: PracticeRating): Promise<PracticeView>
   finishPractice(sessionId: number): Promise<PracticeResult>
+  getSummariesIndex(): Promise<SummariesIndex>
+  getSummary(topicId: string, type: SummaryTypeId): Promise<SummaryView>
+  generateSummary(topicId: string, type: SummaryTypeId, regenerate: boolean): Promise<SummaryView>
+  rateSummary(topicId: string, type: SummaryTypeId, rating: PracticeRating): Promise<SummaryView>
+  setFavoriteSummaryType(type: SummaryTypeId, favorite: boolean): Promise<SummariesIndex>
+  askAboutText(topicId: string, fragment: string, question: string): Promise<ClaudeAnswer>
   // Se llama con la nueva fecha cuando cambia el día; devuelve la función para dejar de escuchar.
   onDayChanged(callback: (today: string) => void): () => void
   // Solo en desarrollo.
