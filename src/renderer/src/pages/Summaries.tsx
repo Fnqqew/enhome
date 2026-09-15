@@ -174,7 +174,7 @@ export default function Summaries(): React.JSX.Element {
           </div>
         </div>
 
-        {content?.format === 'markdown' && <SpeechControls key={`${topicId}/${type}`} getText={() => contentRef.current?.innerText ?? ''} />}
+        {content?.format === 'markdown' && <SpeechControls key={`${topicId}/${type}`} getText={() => content.markdown} />}
         {error && <p className="error multiline">{error}</p>}
 
         {!view && !error && <p className="muted">Cargando…</p>}
@@ -205,7 +205,12 @@ export default function Summaries(): React.JSX.Element {
       </section>
 
       {reading && content && topicId && view && (
-        <ReadingMode title={`${info.label} · ${view.topicTitle}`} topicId={topicId} onClose={() => setReading(false)}>
+        <ReadingMode
+          title={`${info.label} · ${view.topicTitle}`}
+          topicId={topicId}
+          speechText={content.format === 'markdown' ? content.markdown : undefined}
+          onClose={() => setReading(false)}
+        >
           <Content content={content} />
         </ReadingMode>
       )}

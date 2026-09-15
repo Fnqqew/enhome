@@ -26,7 +26,10 @@ export const settingsSchema = z.object({
   font: z.enum(FONTS.map((f) => f.id) as [string, ...string[]]),
   fontSize: z.enum(['sm', 'md', 'lg']),
   density: z.enum(['compact', 'comfortable']),
-  favoriteSummaryTypes: z.array(z.enum(SUMMARY_TYPE_IDS)).max(SUMMARY_TYPE_IDS.length)
+  favoriteSummaryTypes: z.array(z.enum(SUMMARY_TYPE_IDS)).max(SUMMARY_TYPE_IDS.length),
+  // Nombre de la voz del sistema elegida para cada idioma; null = automática.
+  voiceEs: z.string().max(200).nullable(),
+  voiceEn: z.string().max(200).nullable()
 })
 
 export type AppSettings = z.infer<typeof settingsSchema>
@@ -37,5 +40,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   font: 'moderna',
   fontSize: 'md',
   density: 'comfortable',
-  favoriteSummaryTypes: []
+  favoriteSummaryTypes: [],
+  voiceEs: null,
+  voiceEn: null
 }

@@ -1,8 +1,16 @@
 import { useState } from 'react'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
 import { FONTS, PALETTES, type AppSettings } from '@shared/settings'
+import { hasVoiceFor, pickVoice, type SpeechLang } from '@shared/speech'
 import Segmented from '../components/Segmented'
+import { INSTALL_VOICE_HELP } from '../components/summaries/SpeechControls'
+import { useVoices } from '../hooks/useSpeech'
 import { useSettings } from '../theme/SettingsProvider'
+
+const VOICE_SAMPLES: Record<SpeechLang, string> = {
+  es: 'Hola, así suena la voz en español.',
+  en: 'Hello, this is how the English voice sounds.'
+}
 
 const FONT_FAMILIES: Record<string, string> = {
   moderna: 'var(--font-moderna)',
@@ -85,6 +93,7 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
         </Row>
       </section>
 
+      <VoiceSettings />
       <ClaudeConnection status={status} />
     </>
   )
@@ -96,6 +105,66 @@ function Row({ label, children }: { label: string; children: React.ReactNode }):
       <span>{label}</span>
       {children}
     </div>
+  )
+}
+
+function VoiceSettings(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  const voices = useVoices()
+
+  const test = (lang: SpeechLang): void => {
+    const voice = pickVoice(voices, lang, lang === 'es' ? settings.voiceEs : settings.voiceEn)
+    speechSynthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(VOICE_SAMPLES[lang])
+    if (voice) {
+      utterance.voice = voice
+      utterance.lang = voice.lang
+    }
+    speechSynthesis.speak(utterance)
+  }
+
+  const selector = (lang: SpeechLang, value: string | null, onChange: (name: string | null) => void): React.JSX.Element => {
+    const automatic = pickVoice(voices, lang)
+    return (
+      <div className="row">
+        <select value={value ?? ''} onChange={(e) => onChange(e.target.value || null)}>
+          <option value="">Automática{automatic ? ` (${automatic.name})` : ' (no hay)'}</option>
+          {voices.map((v) => (
+            <option key={v.name} value={v.name}>
+              {v.name} · {v.lang}
+            </option>
+          ))}
+        </select>
+        <button type="button" className="chip" onClick={() => test(lang)}>
+          Probar
+        </button>
+      </div>
+    )
+  }
+
+  return (
+    <section className="card stack">
+      <h2>Lectura en voz alta</h2>
+      <p className="muted">
+        Al escuchar un resumen, las partes en español se leen con una voz y las partes en inglés con otra, para que cada una tenga la
+        pronunciación correcta.
+      </p>
+      {voices.length === 0 ? (
+        <p className="warn-text">Windows no tiene voces instaladas. {INSTALL_VOICE_HELP}</p>
+      ) : (
+        <>
+          <Row label="Voz en español">{selector('es', settings.voiceEs, (name) => update({ voiceEs: name }))}</Row>
+          <Row label="Voz en inglés">{selector('en', settings.voiceEn, (name) => update({ voiceEn: name }))}</Row>
+          {!hasVoiceFor(voices, 'es') && (
+            <p className="warn-text small">
+              No hay ninguna voz en español instalada, así que el español se lee con pronunciación inglesa. {INSTALL_VOICE_HELP} Conviene
+              «Español (México)».
+            </p>
+          )}
+          {!hasVoiceFor(voices, 'en') && <p className="warn-text small">No hay ninguna voz en inglés instalada. {INSTALL_VOICE_HELP}</p>}
+        </>
+      )}
+    </section>
   )
 }
 

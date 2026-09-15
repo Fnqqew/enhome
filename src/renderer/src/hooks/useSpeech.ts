@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { pickVoice, splitForSpeech } from '@shared/speech'
+import { hasVoiceFor, pickVoice, splitForSpeech, type SpeechLang } from '@shared/speech'
+import { useSettings } from '../theme/SettingsProvider'
 
 export type SpeechState = 'idle' | 'playing' | 'paused'
 
 const supported = typeof window !== 'undefined' && 'speechSynthesis' in window
 
-function useVoices(): SpeechSynthesisVoice[] {
+export function useVoices(): SpeechSynthesisVoice[] {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>(() => (supported ? speechSynthesis.getVoices() : []))
   useEffect(() => {
     if (!supported) return
@@ -20,9 +21,15 @@ function useVoices(): SpeechSynthesisVoice[] {
 // Lectura en voz alta con las voces del sistema: cada parte en español o en inglés con su voz.
 export function useSpeech() {
   const voices = useVoices()
+  const { settings } = useSettings()
   const [state, setState] = useState<SpeechState>('idle')
   const [rate, setRate] = useState(1)
   const generation = useRef(0)
+
+  const voiceFor = useCallback(
+    (lang: SpeechLang) => pickVoice(voices, lang, lang === 'es' ? settings.voiceEs : settings.voiceEn),
+    [voices, settings.voiceEs, settings.voiceEn]
+  )
 
   const stop = useCallback(() => {
     generation.current++
@@ -40,7 +47,7 @@ export function useSpeech() {
 
       segments.forEach((segment, i) => {
         const utterance = new SpeechSynthesisUtterance(segment.text)
-        const voice = pickVoice(voices, segment.lang)
+        const voice = voiceFor(segment.lang)
         utterance.lang = voice?.lang ?? (segment.lang === 'es' ? 'es-AR' : 'en-US')
         if (voice) utterance.voice = voice
         utterance.rate = rate
@@ -53,7 +60,7 @@ export function useSpeech() {
       })
       setState('playing')
     },
-    [voices, rate]
+    [voiceFor, rate]
   )
 
   const pause = useCallback(() => {
@@ -70,8 +77,8 @@ export function useSpeech() {
 
   return {
     supported: supported && voices.length > 0,
-    hasSpanish: pickVoice(voices, 'es') !== null,
-    hasEnglish: pickVoice(voices, 'en') !== null,
+    hasSpanish: hasVoiceFor(voices, 'es'),
+    hasEnglish: hasVoiceFor(voices, 'en'),
     state,
     rate,
     setRate,
