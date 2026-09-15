@@ -26,6 +26,11 @@ const api: Api = {
   skipExercise: (exerciseId) => invoke(IPC.practiceSkip, exerciseId),
   rateExercise: (exerciseId, rating) => invoke(IPC.practiceRate, exerciseId, rating),
   finishPractice: (sessionId) => invoke(IPC.practiceFinish, sessionId),
+  onDayChanged: (callback) => {
+    const listener = (_event: Electron.IpcRendererEvent, today: string): void => callback(today)
+    ipcRenderer.on(IPC.dayChanged, listener)
+    return () => ipcRenderer.removeListener(IPC.dayChanged, listener)
+  },
   devSetToday: (date) => invoke(IPC.devSetToday, date),
   devSimulateExam: (grade) => invoke(IPC.devSimulateExam, grade),
   devResetProgress: () => invoke(IPC.devResetProgress)

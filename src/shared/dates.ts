@@ -44,6 +44,12 @@ export function weekdayName(date: LocalDate): string {
   return WEEKDAY_NAMES[isoWeekday(date) - 1]
 }
 
+// Milisegundos que faltan para la próxima medianoche local.
+export function msUntilMidnight(now: Date): number {
+  const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1)
+  return midnight.getTime() - now.getTime()
+}
+
 // 'd/m', por ejemplo 14/9.
 export function formatDayMonth(date: LocalDate): string {
   const [, m, d] = date.split('-')

@@ -125,6 +125,16 @@ describe('práctica del día', () => {
     expect(practice.getView(MON)).toMatchObject({ status: 'unavailable', reason: expect.stringMatching(/martes/) })
   })
 
+  it('una práctica empezada antes de medianoche y terminada después cuenta para el día nuevo', async () => {
+    const s = await answerAllRight(session(await practice.start(MON)))
+    practice.finish(s.id, day(1))
+
+    const week = progression.getState(day(1)).week!
+    expect(week.days[0].status).toBe('missed')
+    expect(week.days[1].status).toBe('done')
+    expect(week.units[0].completedOn).toBe(day(1))
+  })
+
   it('no deja terminar con ejercicios sin responder', async () => {
     const s = session(await practice.start(MON))
     expect(() => practice.finish(s.id, MON)).toThrow(/sin responder/)

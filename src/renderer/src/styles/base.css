@@ -475,6 +475,11 @@ p {
 
 /* Práctica */
 
+.day-notice {
+  margin-bottom: calc(1.25rem * var(--space));
+  max-width: 44rem;
+}
+
 .stack-sm {
   display: flex;
   flex-direction: column;

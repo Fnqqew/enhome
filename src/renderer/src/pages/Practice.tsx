@@ -7,9 +7,14 @@ import {
   type PracticeView,
   type SessionView
 } from '@shared/exercises'
+import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
+import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
+
+// Desde cuántos minutos antes de medianoche se avisa durante una práctica.
+const MIDNIGHT_WARNING_MINUTES = 30
 
 const RATINGS: { value: PracticeRating; label: string }[] = [
   { value: 1, label: 'No me sirvió' },
@@ -32,6 +37,12 @@ export default function Practice({ navigate }: { navigate: Navigate }): React.JS
   }, [])
 
   useEffect(load, [load])
+
+  const [dayNotice, setDayNotice] = useState<string | null>(null)
+  useDayChange((today) => {
+    setDayNotice(`Empezó un nuevo día: ${weekdayName(today)} ${formatDayMonth(today)}. La práctica se actualizó.`)
+    load()
+  })
 
   const start = (): void => {
     setStarting(true)
@@ -77,6 +88,7 @@ export default function Practice({ navigate }: { navigate: Navigate }): React.JS
   return (
     <>
       <h1>Práctica</h1>
+      {dayNotice && <div className="notice day-notice">{dayNotice}</div>}
       {error && (
         <section className="card stack">
           <p className="error multiline">{error}</p>
@@ -160,6 +172,7 @@ function SessionPlayer({
   const [draft, setDraft] = useState<ExerciseAnswer | null>(null)
   const [busy, setBusy] = useState<'answer' | 'skip' | 'finish' | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const minutesLeft = useMinutesToMidnight()
 
   const pending = session.exercises.find((e) => !e.feedback)
   const current = session.exercises.find((e) => e.id === shownId) ?? pending
@@ -206,6 +219,13 @@ function SessionPlayer({
           />
         ))}
       </div>
+
+      {minutesLeft <= MIDNIGHT_WARNING_MINUTES && (
+        <div className="notice warn">
+          {minutesLeft === 1 ? 'Falta 1 minuto' : `Faltan ${minutesLeft} minutos`} para las 00:00. La práctica cuenta para el día en que
+          la terminás.
+        </div>
+      )}
 
       {current ? (
         <form className="stack" onSubmit={submit}>

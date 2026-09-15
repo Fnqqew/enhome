@@ -1,8 +1,10 @@
-import { app, BrowserWindow, nativeTheme, shell } from 'electron'
+import { app, BrowserWindow, nativeTheme, powerMonitor, shell } from 'electron'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
+import { watchDayChange } from './day-watcher'
 import { openDatabase } from './db/database'
 import { registerIpc } from './ipc'
+import { IPC } from '../shared/ipc'
 
 function createWindow(): void {
   const win = new BrowserWindow({
@@ -39,7 +41,14 @@ app.whenReady().then(() => {
 
   // En desarrollo el temario se lee del repo; empaquetada, de los recursos de la app.
   const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-  registerIpc(db, contentDir, is.dev)
+  const { today } = registerIpc(db, contentDir, is.dev)
+
+  // Avisa a la interfaz cuando cambia el día para que se actualice sola.
+  const dayWatcher = watchDayChange(today, (date) => {
+    for (const win of BrowserWindow.getAllWindows()) win.webContents.send(IPC.dayChanged, date)
+  })
+  powerMonitor.on('resume', dayWatcher.check)
+  app.on('will-quit', dayWatcher.stop)
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()

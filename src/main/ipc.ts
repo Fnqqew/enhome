@@ -38,7 +38,7 @@ interface Services {
 const id = z.number().int()
 const rating = z.union(PRACTICE_RATINGS.map((r) => z.literal(r)) as [z.ZodLiteral<1>, z.ZodLiteral<3>, z.ZodLiteral<5>])
 
-export function registerIpc(db: Db, contentDir: string, isDev: boolean): void {
+export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today: () => string } {
   // Se arma una vez; si el temario tiene errores, el mensaje llega a la interfaz.
   let services: Services | null = null
   const getServices = (): Services => {
@@ -103,24 +103,26 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): void {
   handle(IPC.practiceRate, (exerciseId, value) => getServices().practice.rate(id.parse(exerciseId), rating.parse(value)))
   handle(IPC.practiceFinish, (sessionId) => getServices().practice.finish(id.parse(sessionId), today()))
 
-  if (!isDev) return
+  if (isDev) {
+    handle(IPC.devSetToday, (date) => {
+      if (date !== null && !isValidLocalDate(date)) throw new Error('Fecha inválida.')
+      todayOverride = date
+      return state()
+    })
+    handle(IPC.devSimulateExam, (grade) => {
+      const { curriculum, progression } = getServices()
+      const week = progression.getState(today()).week
+      if (!week) throw new Error('No hay una semana activa.')
+      const topic = curriculum.find((t) => t.id === week.topicId)!
+      const prerequisite = curriculum.find((t) => t.id === topic.prerequisites[0])
+      progression.submitWeeklyExam(simulatedExam(topic, z.number().min(0).max(10).parse(grade), prerequisite), today())
+      return state()
+    })
+    handle(IPC.devResetProgress, () => {
+      getServices().progression.resetProgress()
+      return state()
+    })
+  }
 
-  handle(IPC.devSetToday, (date) => {
-    if (date !== null && !isValidLocalDate(date)) throw new Error('Fecha inválida.')
-    todayOverride = date
-    return state()
-  })
-  handle(IPC.devSimulateExam, (grade) => {
-    const { curriculum, progression } = getServices()
-    const week = progression.getState(today()).week
-    if (!week) throw new Error('No hay una semana activa.')
-    const topic = curriculum.find((t) => t.id === week.topicId)!
-    const prerequisite = curriculum.find((t) => t.id === topic.prerequisites[0])
-    progression.submitWeeklyExam(simulatedExam(topic, z.number().min(0).max(10).parse(grade), prerequisite), today())
-    return state()
-  })
-  handle(IPC.devResetProgress, () => {
-    getServices().progression.resetProgress()
-    return state()
-  })
+  return { today }
 }

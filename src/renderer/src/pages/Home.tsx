@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useState } from 'react'
-import { formatDayMonth, weekdayName } from '@shared/dates'
+import { formatDayMonth, toLocalDate, weekdayName } from '@shared/dates'
 import type { PracticeUnitView, ProgressState } from '@shared/progress'
 import CurriculumOverview from '../components/CurriculumOverview'
 import DevTools from '../components/DevTools'
 import PlacementFlow from '../components/PlacementFlow'
 import WeekCalendar from '../components/WeekCalendar'
+import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
+
+// Desde cuántos minutos antes de medianoche se avisa que el día sin práctica va a contar como falta.
+const MIDNIGHT_WARNING_MINUTES = 60
 
 export default function Home({ navigate }: { navigate: Navigate }): React.JSX.Element {
   const [progress, setProgress] = useState<ProgressState | null>(null)
@@ -26,6 +30,8 @@ export default function Home({ navigate }: { navigate: Navigate }): React.JSX.El
     reload()
     window.api.getAppInfo().then((info) => setIsDev(info.isDev))
   }, [reload])
+
+  useDayChange(reload)
 
   return (
     <>
@@ -51,6 +57,7 @@ function unitNote(unit: PracticeUnitView, weekTopicId: string): string | null {
 
 function Journey({ progress, navigate }: { progress: ProgressState; navigate: Navigate }): React.JSX.Element {
   const { week } = progress
+  const minutesLeft = useMinutesToMidnight()
 
   if (progress.finished) {
     return (
@@ -72,6 +79,10 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
   const note = week.nextUnit ? unitNote(week.nextUnit, week.topicId) : null
   const canRecoverNow = week.canRecover && !week.nextUnit
   const examTone = week.examStatus === 'available' ? ' ok' : week.examStatus === 'locked' ? ' warn' : ''
+  // Solo con la fecha real (no con una simulada) y si hoy todavía no hubo práctica.
+  const todayPending = week.days.some((d) => d.date === progress.today && d.status === 'today')
+  const showMidnightWarning =
+    progress.today === toLocalDate(new Date()) && todayPending && week.canPracticeNow && minutesLeft <= MIDNIGHT_WARNING_MINUTES
 
   return (
     <>
@@ -90,6 +101,13 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
           <div className="notice">
             Tu semana empieza el {weekdayName(week.startsOn)} {formatDayMonth(week.startsOn)}. Mientras tanto podés leer los
             resúmenes y repasar libremente.
+          </div>
+        )}
+
+        {showMidnightWarning && (
+          <div className="notice warn">
+            {minutesLeft === 1 ? 'Queda 1 minuto' : `Quedan ${minutesLeft} minutos`} para que termine el día. Si no terminás una
+            práctica antes de las 00:00, hoy cuenta como falta.
           </div>
         )}
 

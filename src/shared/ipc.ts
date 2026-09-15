@@ -24,6 +24,8 @@ export const IPC = {
   practiceSkip: 'practice:skip',
   practiceRate: 'practice:rate',
   practiceFinish: 'practice:finish',
+  // Evento del proceso principal a la interfaz.
+  dayChanged: 'app:day-changed',
   devSetToday: 'dev:set-today',
   devSimulateExam: 'dev:simulate-exam',
   devResetProgress: 'dev:reset-progress'
@@ -63,6 +65,8 @@ export interface Api {
   skipExercise(exerciseId: number): Promise<PracticeView>
   rateExercise(exerciseId: number, rating: PracticeRating): Promise<PracticeView>
   finishPractice(sessionId: number): Promise<PracticeResult>
+  // Se llama con la nueva fecha cuando cambia el día; devuelve la función para dejar de escuchar.
+  onDayChanged(callback: (today: string) => void): () => void
   // Solo en desarrollo.
   devSetToday(date: string | null): Promise<ProgressState>
   devSimulateExam(grade: number): Promise<ProgressState>
