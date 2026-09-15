@@ -123,9 +123,9 @@ En issues anotá, en una frase cada uno, los problemas que encontraste (vacío s
   })
   logIssues(topic, type, review.issues)
 
-  const corrected = review.correctedMarkdown.trim()
+  const corrected = cleanMarkdown(review.correctedMarkdown)
   if (corrected && corrected.length < MIN_MARKDOWN_LENGTH) throw new Error('La revisión devolvió un resumen incompleto.')
-  return { format: 'markdown', markdown: corrected || markdown }
+  return { format: 'markdown', markdown: corrected || cleanMarkdown(markdown) }
 }
 
 async function generateCards(topic: CurriculumTopic, ask: Ask): Promise<SummaryContent> {
@@ -139,6 +139,17 @@ async function generateCards(topic: CurriculumTopic, ask: Ask): Promise<SummaryC
   })
   logIssues(topic, 'tarjetas', review.issues)
   return { format: 'cards', cards: applyCorrections(cards, review.corrections) }
+}
+
+// Control automático: a veces el modelo envuelve el texto en etiquetas o bloques de código.
+export function cleanMarkdown(markdown: string): string {
+  return markdown
+    .trim()
+    .replace(/^```(?:markdown|md)?\s*\n/i, '')
+    .replace(/\n```\s*$/, '')
+    .replace(/^<markdown>\s*/i, '')
+    .replace(/\s*<\/markdown>$/i, '')
+    .trim()
 }
 
 function logIssues(topic: CurriculumTopic, type: GeneratedSummaryType, issues: string[]): void {

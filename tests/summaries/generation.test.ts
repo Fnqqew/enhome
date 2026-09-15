@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import type { Ask, AskOptions } from '../../src/main/claude/bridge'
 import { loadCurriculum } from '../../src/main/content/curriculum'
-import { answerAboutText, generateSummary } from '../../src/main/summaries/generation'
+import { answerAboutText, cleanMarkdown, generateSummary } from '../../src/main/summaries/generation'
 
 const topic = loadCurriculum(join(__dirname, '..', '..', 'content'))[0]
 
@@ -53,6 +53,19 @@ describe('resúmenes en Markdown', () => {
   it('nunca entrega un resumen sin revisar', async () => {
     const { ask } = fakeClaude([{ markdown: markdown('A') }, new Error('caída'), { markdown: markdown('B') }, new Error('caída')])
     await expect(generateSummary(topic, 'trucos', ask)).rejects.toThrow('caída')
+  })
+})
+
+describe('cleanMarkdown', () => {
+  it('saca etiquetas y bloques de código que envuelven el texto', () => {
+    expect(cleanMarkdown('## Título\n\nTexto.\n</markdown>')).toBe('## Título\n\nTexto.')
+    expect(cleanMarkdown('<markdown>\n## Título\n</markdown>')).toBe('## Título')
+    expect(cleanMarkdown('```markdown\n## Título\n```')).toBe('## Título')
+  })
+
+  it('no toca el contenido normal', () => {
+    const text = '## Título\n\n- *I am* → soy\n\n```\nno debería pasar pero se respeta\n```\n\nFin.'
+    expect(cleanMarkdown(text)).toBe(text)
   })
 })
 
