@@ -120,9 +120,14 @@ export interface AskOptions<T> {
   systemPrompt: string
   schema: z.ZodType<T>
   model?: string
+  // Cuánto razona Claude antes de responder: menos esfuerzo es más rápido.
+  effort?: 'low' | 'medium' | 'high'
   timeoutMs?: number
   retries?: number
 }
+
+// Firma de askClaude, para poder reemplazarla en los tests.
+export type Ask = <T>(options: AskOptions<T>) => Promise<T>
 
 // Pide a Claude una respuesta estructurada y la valida. Reintenta si el formato no coincide.
 export async function askClaude<T>({
@@ -130,6 +135,7 @@ export async function askClaude<T>({
   systemPrompt,
   schema,
   model = 'sonnet',
+  effort,
   timeoutMs = DEFAULT_TIMEOUT_MS,
   retries = 2
 }: AskOptions<T>): Promise<T> {
@@ -142,6 +148,7 @@ export async function askClaude<T>({
     '--tools', '',
     '--no-session-persistence',
     '--model', model,
+    ...(effort ? ['--effort', effort] : []),
     '--system-prompt', systemPrompt,
     '--json-schema', JSON.stringify(toClaudeJsonSchema(schema))
   ]

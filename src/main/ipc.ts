@@ -1,7 +1,8 @@
 import { ipcMain } from 'electron'
 import { z } from 'zod'
 import { askClaude, getClaudeStatus } from './claude/bridge'
-import { loadCurriculum } from './content/curriculum'
+import { loadCurriculum, loadRoadmap } from './content/curriculum'
+import { buildCurriculumMap } from './content/curriculum-map'
 import type { Db } from './db/database'
 import { loadSettings, updateSettings } from './db/settings-repo'
 import { simulatedExam } from './engine/dev'
@@ -11,7 +12,7 @@ import { Progression } from './engine/progression'
 import { gradeOpenAnswer } from './practice/ai-grading'
 import { generatePracticePool } from './practice/generation'
 import { Practice } from './practice/practice'
-import type { CurriculumTopic } from '../shared/curriculum'
+import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
 import { IPC, type Result, type SampleSentence } from '../shared/ipc'
@@ -30,6 +31,7 @@ function handle<T>(channel: string, fn: (...args: unknown[]) => T | Promise<T>):
 
 interface Services {
   curriculum: CurriculumTopic[]
+  roadmap: Roadmap
   progression: Progression
   placement: Placement
   practice: Practice
@@ -47,6 +49,7 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
       const progression = new Progression(db, curriculum)
       services = {
         curriculum,
+        roadmap: loadRoadmap(contentDir),
         progression,
         placement: new Placement(db, curriculum, progression, generatePlacementQuestions),
         practice: new Practice(db, curriculum, progression, generatePracticePool, gradeOpenAnswer)
@@ -74,6 +77,11 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
   handle(IPC.settingsUpdate, (patch) => updateSettings(db, patch))
 
   handle(IPC.curriculumList, () => getServices().curriculum)
+  handle(IPC.curriculumMap, () => {
+    const { curriculum, roadmap, progression } = getServices()
+    const state = progression.getState(today())
+    return buildCurriculumMap(curriculum, roadmap, progression.getTopicProgress(), state.week?.topicId ?? null, state.placementDone)
+  })
 
   handle(IPC.progressGet, state)
   handle(IPC.practiceComplete, (unitId) => {

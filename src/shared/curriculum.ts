@@ -46,3 +46,57 @@ export interface CurriculumTopic extends Topic {
   // Resumen base (explicación completa) en Markdown.
   summary: string
 }
+
+export const CEFR_LEVEL_NAMES: Record<CefrLevel, string> = {
+  A1: 'Principiante',
+  A2: 'Elemental',
+  B1: 'Intermedio',
+  B2: 'Intermedio alto',
+  C1: 'Avanzado'
+}
+
+export const SKILL_LABELS: Record<Skill, string> = {
+  grammar: 'Gramática',
+  reading: 'Lectura',
+  writing: 'Escritura'
+}
+
+// Tópicos planificados para niveles que todavía no tienen contenido (content/roadmap.json).
+export const roadmapSchema = z
+  .object({
+    levels: z.array(
+      z
+        .object({
+          level: z.enum(CEFR_LEVELS),
+          topics: z.array(z.object({ title: text, description: text }).strict()).min(1)
+        })
+        .strict()
+    )
+  })
+  .strict()
+
+export type Roadmap = z.infer<typeof roadmapSchema>
+export type PlannedTopic = Roadmap['levels'][number]['topics'][number]
+
+export type TopicMapStatus = 'not-started' | 'locked' | 'current' | 'passed' | 'review'
+
+export interface CurriculumMapTopic extends Topic {
+  status: TopicMapStatus
+  bestGrade: number | null
+  attempts: number
+}
+
+export interface CurriculumMapLevel {
+  level: CefrLevel
+  name: string
+  available: boolean
+  topics: CurriculumMapTopic[]
+  planned: PlannedTopic[]
+}
+
+export interface CurriculumMap {
+  currentTopicId: string | null
+  totalTopics: number
+  reviewedCount: number
+  levels: CurriculumMapLevel[]
+}

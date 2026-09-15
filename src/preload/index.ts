@@ -14,6 +14,7 @@ const api: Api = {
   getSettings: () => invoke(IPC.settingsGet),
   updateSettings: (patch) => invoke(IPC.settingsUpdate, patch),
   getCurriculum: () => invoke(IPC.curriculumList),
+  getCurriculumMap: () => invoke(IPC.curriculumMap),
   getProgress: () => invoke(IPC.progressGet),
   completePracticeUnit: (unitId) => invoke(IPC.practiceComplete, unitId),
   recordRecoverySession: () => invoke(IPC.recoveryRecord),

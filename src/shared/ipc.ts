@@ -1,6 +1,6 @@
 // Contrato entre el proceso principal y la interfaz.
 
-import type { CurriculumTopic } from './curriculum'
+import type { CurriculumMap, CurriculumTopic } from './curriculum'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
@@ -12,6 +12,7 @@ export const IPC = {
   settingsGet: 'settings:get',
   settingsUpdate: 'settings:update',
   curriculumList: 'curriculum:list',
+  curriculumMap: 'curriculum:map',
   progressGet: 'progress:get',
   practiceComplete: 'unit:complete',
   recoveryRecord: 'recovery:record',
@@ -53,6 +54,7 @@ export interface Api {
   getSettings(): Promise<AppSettings>
   updateSettings(patch: Partial<AppSettings>): Promise<AppSettings>
   getCurriculum(): Promise<CurriculumTopic[]>
+  getCurriculumMap(): Promise<CurriculumMap>
   getProgress(): Promise<ProgressState>
   completePracticeUnit(unitId: number): Promise<ProgressState>
   recordRecoverySession(): Promise<ProgressState>

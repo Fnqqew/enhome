@@ -25,6 +25,16 @@ describe('prepareExercise', () => {
     expect(() => prepareExercise({ ...base, sentence: 'She ___ happy ___.' })).toThrow()
   })
 
+  it('rechaza opciones repetidas', () => {
+    const e: GeneratedExercise = { type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['is', 'are', 'Is', 'am'], correctIndex: 0, explanation: 'x' }
+    expect(() => prepareExercise(e)).toThrow(/repetidas/)
+  })
+
+  it('rechaza una oración para corregir que no tiene error', () => {
+    const e: GeneratedExercise = { type: 'error_correction', instruction: 'i', sentence: 'She is happy', answers: ['She is happy.'], explanation: 'x' }
+    expect(() => prepareExercise(e)).toThrow(/ningún error/)
+  })
+
   it('rechaza una opción correcta fuera de rango', () => {
     const e: GeneratedExercise = { type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 3, explanation: 'x' }
     expect(() => prepareExercise(e)).toThrow()

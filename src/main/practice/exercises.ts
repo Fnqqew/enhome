@@ -2,6 +2,7 @@
 
 import type { GeneratedExercise, PublicExercise, StoredExercise } from '../../shared/exercises'
 import { shuffleChoices, shuffled } from '../shuffle'
+import { matchesAny, normalize } from './grading'
 
 export function tokenize(sentence: string): string[] {
   return sentence
@@ -15,22 +16,33 @@ function assertIndex(index: number, length: number): void {
   if (index >= length) throw new Error('La opción correcta está fuera de rango.')
 }
 
-// Valida lo que Claude no puede garantizar con el esquema y mezcla opciones y palabras.
+function assertDistinct(options: string[]): void {
+  if (new Set(options.map((o) => normalize(o))).size !== options.length) throw new Error('Hay opciones repetidas.')
+}
+
+// Controles automáticos de lo que el esquema no puede garantizar, y mezcla de opciones y palabras.
 export function prepareExercise(exercise: GeneratedExercise, random: () => number = Math.random): StoredExercise {
   switch (exercise.type) {
     case 'multiple_choice':
       assertIndex(exercise.correctIndex, exercise.options.length)
+      assertDistinct(exercise.options)
       return { ...exercise, ...shuffleChoices(exercise.options, exercise.correctIndex, random) }
     case 'reading':
       return {
         ...exercise,
         questions: exercise.questions.map((q) => {
           assertIndex(q.correctIndex, q.options.length)
+          assertDistinct(q.options)
           return { ...q, ...shuffleChoices(q.options, q.correctIndex, random) }
         })
       }
     case 'fill_blank':
       if (exercise.sentence.split('___').length !== 2) throw new Error('El ejercicio de completar tiene que tener exactamente un ___.')
+      if (exercise.answers.some((a) => a.includes('___'))) throw new Error('Una respuesta de completar contiene el hueco.')
+      return exercise
+    case 'error_correction':
+      // Si la oración "con error" ya coincide con la corrección, no hay nada que corregir.
+      if (matchesAny(exercise.sentence, exercise.answers)) throw new Error('La oración para corregir no tiene ningún error.')
       return exercise
     case 'word_order': {
       const tokens = tokenize(exercise.sentence)

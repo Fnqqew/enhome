@@ -193,6 +193,16 @@ export class Progression {
     })
   }
 
+  getTopicProgress(): Map<string, { status: TopicStatus; bestGrade: number | null; attempts: number }> {
+    const rows = this.db.prepare('SELECT topic_id, status, best_grade, attempts FROM topic_progress').all() as unknown as {
+      topic_id: string
+      status: TopicStatus
+      best_grade: number | null
+      attempts: number
+    }[]
+    return new Map(rows.map((r) => [r.topic_id, { status: r.status, bestGrade: r.best_grade, attempts: r.attempts }]))
+  }
+
   resetProgress(): void {
     transaction(this.db, () => {
       this.db.exec(`

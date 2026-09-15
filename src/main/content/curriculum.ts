@@ -2,7 +2,7 @@
 
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { CEFR_LEVELS, topicSchema, type CurriculumTopic, type Topic } from '../../shared/curriculum'
+import { CEFR_LEVELS, roadmapSchema, topicSchema, type CurriculumTopic, type Roadmap, type Topic } from '../../shared/curriculum'
 
 export class CurriculumError extends Error {}
 
@@ -46,6 +46,17 @@ export function loadCurriculum(dir: string): CurriculumTopic[] {
 
   validateCurriculum(topics)
   return topics.sort(compareTopics)
+}
+
+// El plan de niveles futuros es opcional.
+export function loadRoadmap(dir: string): Roadmap {
+  const path = join(dir, 'roadmap.json')
+  if (!existsSync(path)) return { levels: [] }
+  try {
+    return roadmapSchema.parse(JSON.parse(readFileSync(path, 'utf8')))
+  } catch (err) {
+    throw new CurriculumError(`roadmap.json es inválido: ${message(err)}`)
+  }
 }
 
 // Reglas que el esquema no puede ver solo: relaciones entre tópicos y estructura del resumen.

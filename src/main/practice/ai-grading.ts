@@ -33,7 +33,9 @@ const OUTPUT_GUIDE = `Devolvé:
 - score: de 0 a 10.
 - correctedText: la respuesta del alumno corregida con los cambios mínimos necesarios (igual si no hay errores).
 - comments: devolución breve y alentadora en español rioplatense (2 o 3 oraciones), empezando por algo que hizo bien.
-- mistakes: hasta 5 errores concretos, con fragment copiado tal cual lo escribió el alumno, correction y una explanation breve en español. Vacío si no hay errores.`
+- mistakes: hasta 5 errores concretos, con fragment copiado tal cual lo escribió el alumno, correction y una explanation breve en español. Vacío si no hay errores.
+
+Antes de responder, verificá tu propia corrección: cada error marcado tiene que ser realmente un error (no una variante válida), cada corrección tiene que ser correcta y el puntaje tiene que ser coherente con los errores encontrados.`
 
 export function buildReviewPrompt({ topic, subtopic, exercise, answer }: OpenAnswerRequest): string {
   const context = `Tópico: ${topic.title}, nivel ${topic.level}. Subtema: ${subtopic.title}.

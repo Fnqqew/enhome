@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth, toLocalDate, weekdayName } from '@shared/dates'
 import type { PracticeUnitView, ProgressState } from '@shared/progress'
-import CurriculumOverview from '../components/CurriculumOverview'
 import DevTools from '../components/DevTools'
 import PlacementFlow from '../components/PlacementFlow'
 import WeekCalendar from '../components/WeekCalendar'
@@ -44,7 +43,12 @@ export default function Home({ navigate }: { navigate: Navigate }): React.JSX.El
       {progress && !progress.placementDone && <PlacementFlow resume={progress.placementInProgress} onDone={reload} />}
       {progress?.placementDone && <Journey progress={progress} navigate={navigate} />}
       {isDev && progress && <DevTools progress={progress} onChange={setProgress} />}
-      <CurriculumOverview />
+      <section className="card row spread">
+        <span className="muted">Mirá todos los tópicos, subtemas, reglas y ejemplos del recorrido.</span>
+        <button className="btn secondary" onClick={() => navigate('temario')}>
+          Ver temario
+        </button>
+      </section>
     </>
   )
 }

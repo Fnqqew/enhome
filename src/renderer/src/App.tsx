@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
 import type { Navigate, SectionId } from './navigation'
+import Curriculum from './pages/Curriculum'
 import Home from './pages/Home'
 import Placeholder from './pages/Placeholder'
 import Practice from './pages/Practice'
@@ -10,6 +11,7 @@ type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
 const SECTIONS: { id: SectionId; label: string; phase?: number }[] = [
   { id: 'inicio', label: 'Inicio' },
+  { id: 'temario', label: 'Temario' },
   { id: 'practica', label: 'Práctica' },
   { id: 'resumenes', label: 'Resúmenes', phase: 5 },
   { id: 'pruebas', label: 'Pruebas', phase: 6 },
@@ -92,6 +94,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
 
 function Page({ section, status, navigate }: { section: SectionId; status: ReadyStatus; navigate: Navigate }): React.JSX.Element {
   if (section === 'inicio') return <Home navigate={navigate} />
+  if (section === 'temario') return <Curriculum />
   if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'ajustes') return <Settings status={status} />
   const current = SECTIONS.find((s) => s.id === section)!

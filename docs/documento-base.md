@@ -173,6 +173,44 @@ Las constantes están en `src/main/practice/composition.ts` y `src/main/practice
 **Recuperación del domingo**
 - Si ya no quedan prácticas pendientes, es una sesión de repaso del subtema del día que se faltó. Al terminarla se recupera la falta.
 
+## Temario interactivo y niveles futuros
+
+- **Sección «Temario»:** desplegable por nivel → tópico → subtema.
+  - Cada **tópico** muestra objetivos, prerrequisitos, mejor nota y estado: sin empezar, en curso, aprobado, para repasar o bloqueado.
+  - Cada **subtema** muestra habilidades, objetivo, puntos clave, ejemplos y errores comunes.
+  - Tiene un buscador sin tildes y los botones «Expandir todo» y «Contraer todo».
+- **Recorrido del marco europeo:** A1 → A2 → B1 → B2 → C1.
+  - Hoy tienen contenido A1 y A2.
+  - B1 y B2 figuran como tópicos planificados, en `content/roadmap.json`.
+  - El pasado continuo y los verbos con -ing o to, que quedaron afuera de A2, están en el plan de B1.
+
+## Revisión de calidad de lo que genera la IA
+
+Todo lo que genera Claude pasa por tres filtros antes de llegar al alumno:
+
+1. **Autocontrol al generar:** el prompt le pide verificar respuestas, ambigüedades y errores de inglés y español antes de responder.
+2. **Revisión en una segunda llamada:** un «revisor» recibe lo generado y controla, con máximo rigor, que:
+   - la respuesta marcada sea la única correcta;
+   - el inglés y el español no tengan errores;
+   - las explicaciones sean coherentes;
+   - la consigna no sea ambigua;
+   - el contenido corresponda al subtema y al nivel;
+   - se cumplan los controles propios de cada tipo de ejercicio.
+
+   Devuelve solo las correcciones. Si la revisión falla, se vuelve a generar y revisar: **nunca se entrega contenido sin revisar**. Se aplica a ejercicios de práctica y preguntas del examen inicial.
+
+   La revisión usa esfuerzo «medio». En la medición tardó 35 s, contra 76 s del esfuerzo por defecto, y encontró errores reales que el otro dejó pasar. Una práctica queda lista en unos 70 s, en segundo plano.
+3. **Controles automáticos:**
+   - opciones no repetidas;
+   - la opción correcta dentro de rango;
+   - completar con exactamente un hueco;
+   - la oración a corregir tiene que tener un error de verdad;
+   - extensión mínima menor que la máxima.
+
+   El ejercicio que no pasa estos controles se descarta.
+
+En la corrección de traducciones y textos, Claude verifica su propia corrección dentro de la misma llamada, para no hacer esperar al alumno.
+
 ## 4. Verificación
 - **Tests del motor con fechas simuladas:**
   - Examen inicial a mitad de semana.
