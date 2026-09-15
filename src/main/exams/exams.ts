@@ -23,6 +23,7 @@ import type { Progression } from '../engine/progression'
 import type { OpenAnswerGrader } from '../practice/ai-grading'
 import { toPublicExercise } from '../practice/exercises'
 import { gradeAuto } from '../practice/grading'
+import { secondChanceFor } from '../rewards/inventory'
 import type { ExamGenerator, ExamRequest } from './generation'
 import { planMockExam, planWeeklyExam, type ExamItemPlan } from './plan'
 import { HEARTBEAT_TIMEOUT_MS, PAUSE_LIMIT_MS, WEAK_SUBTOPIC_RATE } from './rules'
@@ -402,7 +403,8 @@ export class Exams {
       scope: row.scope,
       title: this.title(row),
       questions: this.questionViews(row),
-      pauseUsed: row.pause_used === 1
+      pauseUsed: row.pause_used === 1,
+      secondChance: secondChanceFor(this.db, row.id)
     }
   }
 

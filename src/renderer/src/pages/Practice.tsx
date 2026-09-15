@@ -158,7 +158,7 @@ function SessionPlayer({
 }): React.JSX.Element {
   const [shownId, setShownId] = useState<number | null>(null)
   const [draft, setDraft] = useState<ExerciseAnswer | null>(null)
-  const [busy, setBusy] = useState<'answer' | 'skip' | 'finish' | null>(null)
+  const [busy, setBusy] = useState<'answer' | 'skip' | 'finish' | 'hint' | null>(null)
   const [error, setError] = useState<string | null>(null)
   const minutesLeft = useMinutesToMidnight()
 
@@ -167,7 +167,7 @@ function SessionPlayer({
   const total = session.exercises.length
   const position = current ? session.exercises.indexOf(current) + 1 : total
 
-  const run = <T,>(kind: 'answer' | 'skip' | 'finish', action: () => Promise<T>, done: (value: T) => void): void => {
+  const run = <T,>(kind: 'answer' | 'skip' | 'finish' | 'hint', action: () => Promise<T>, done: (value: T) => void): void => {
     setBusy(kind)
     setError(null)
     action()
@@ -220,6 +220,7 @@ function SessionPlayer({
           <span className="exercise-type">{EXERCISE_TYPE_LABELS[current.type]}</span>
           <p>{current.content.instruction}</p>
           <ExerciseInput key={current.id} content={current.content} answer={current.answer} feedback={current.feedback} onChange={setDraft} />
+          {current.hint && !current.feedback && <div className="notice">💡 {current.hint}</div>}
           {current.feedback && <Feedback type={current.type} feedback={current.feedback} />}
           {error && <p className="error">{error}</p>}
 
@@ -228,6 +229,17 @@ function SessionPlayer({
               <button className="btn" type="submit" disabled={!draft || busy !== null}>
                 {busy === 'answer' ? (current.type === 'writing' || current.type === 'translation' ? 'Corrigiendo…' : 'Comprobando…') : 'Comprobar'}
               </button>
+              {!current.hint && (
+                <button
+                  className="btn secondary"
+                  type="button"
+                  disabled={session.hintsAvailable === 0 || busy !== null}
+                  title={session.hintsAvailable === 0 ? 'Ganás pistas cada 3 días de racha' : undefined}
+                  onClick={() => run('hint', () => window.api.usePracticeHint(current.id).then(() => window.api.getPractice()), onView)}
+                >
+                  💡 Pista ({session.hintsAvailable})
+                </button>
+              )}
               <button
                 className="btn secondary"
                 type="button"

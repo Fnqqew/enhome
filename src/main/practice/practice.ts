@@ -21,6 +21,7 @@ import { composeSession, planPool, type TypePreferences } from './composition'
 import { mainText, toPublicExercise } from './exercises'
 import type { PoolGenerator } from './generation'
 import { gradeAuto } from './grading'
+import { quantity, usedHints } from '../rewards/inventory'
 
 export class PracticeError extends Error {}
 
@@ -257,6 +258,7 @@ export class Practice {
           .all(session.id) as unknown as AttemptRow[]
       ).map((a) => [a.exercise_id, a])
     )
+    const hints = usedHints(this.db)
     const exercises = rows
       .filter((r) => r.slot !== null)
       .sort((a, b) => a.slot! - b.slot!)
@@ -269,7 +271,8 @@ export class Practice {
           content: toPublicExercise(JSON.parse(r.payload) as StoredExercise),
           answer: attempt ? (JSON.parse(attempt.answer) as ExerciseAnswer) : null,
           feedback: attempt ? (JSON.parse(attempt.feedback) as ExerciseFeedback) : null,
-          rating: attempt?.user_rating ?? null
+          rating: attempt?.user_rating ?? null,
+          hint: hints.get(r.id) ?? null
         }
       })
 
@@ -288,6 +291,7 @@ export class Practice {
       subtopicTitle: subtopic.title,
       exercises,
       spareCount: rows.filter((r) => r.slot === null && !r.skipped).length,
+      hintsAvailable: quantity(this.db, 'hint'),
       completed,
       canFinish: !completed && exercises.length > 0 && exercises.every((e) => e.feedback !== null)
     }

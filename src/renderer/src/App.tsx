@@ -3,7 +3,9 @@ import type { ClaudeStatus } from '@shared/ipc'
 import type { Navigate, SectionId } from './navigation'
 import Curriculum from './pages/Curriculum'
 import Home from './pages/Home'
+import RewardToasts from './components/RewardToasts'
 import Placeholder from './pages/Placeholder'
+import Progress from './pages/Progress'
 import Practice from './pages/Practice'
 import Settings from './pages/Settings'
 import Summaries from './pages/Summaries'
@@ -17,7 +19,7 @@ const SECTIONS: { id: SectionId; label: string; phase?: number }[] = [
   { id: 'practica', label: 'Práctica' },
   { id: 'resumenes', label: 'Resúmenes' },
   { id: 'pruebas', label: 'Pruebas' },
-  { id: 'progreso', label: 'Progreso', phase: 7 },
+  { id: 'progreso', label: 'Progreso' },
   { id: 'ajustes', label: 'Ajustes' }
 ]
 
@@ -106,6 +108,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
         ))}
         <div className="sidebar-foot muted">{examLocked ? 'Examen en curso' : 'Claude conectado'}</div>
       </nav>
+      <RewardToasts trigger={section} />
       <main className="content">
         <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
       </main>
@@ -129,6 +132,7 @@ function Page({
   if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
+  if (section === 'progreso') return <Progress navigate={navigate} />
   if (section === 'ajustes') return <Settings status={status} />
   const current = SECTIONS.find((s) => s.id === section)!
   return <Placeholder title={current.label} phase={current.phase ?? 0} />

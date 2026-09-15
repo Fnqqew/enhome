@@ -6,6 +6,7 @@ import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
 import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from './summaries'
 import type { ExamResultView, ExamSessionView, MockScope, ResumeResult, TestsOverview } from './exams'
+import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -43,6 +44,10 @@ export const IPC = {
   examSubmit: 'exam:submit',
   examResult: 'exam:result',
   examDiscard: 'exam:discard',
+  rewardsView: 'rewards:view',
+  rewardsNews: 'rewards:news',
+  rewardsHint: 'rewards:hint',
+  rewardsSecondChance: 'rewards:second-chance',
   // Evento del proceso principal a la interfaz.
   dayChanged: 'app:day-changed',
   devSetToday: 'dev:set-today',
@@ -101,6 +106,10 @@ export interface Api {
   submitExam(examId: number): Promise<ExamResultView>
   getExamResult(examId: number): Promise<ExamResultView>
   discardMockExam(examId: number): Promise<void>
+  getProgressView(): Promise<ProgressView>
+  takeRewardNews(): Promise<RewardNews[]>
+  usePracticeHint(exerciseId: number): Promise<string>
+  useSecondChance(examId: number, index: number): Promise<SecondChanceResult>
   // Se llama con la nueva fecha cuando cambia el día; devuelve la función para dejar de escuchar.
   onDayChanged(callback: (today: string) => void): () => void
   // Solo en desarrollo.

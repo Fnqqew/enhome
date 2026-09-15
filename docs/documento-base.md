@@ -223,6 +223,42 @@ Constantes en `src/main/exams/rules.ts`.
 
 **Historial:** todas las pruebas con fecha, nota y motivo si se anularon o se entregaron solas. Cada una se puede abrir para ver la corrección completa.
 
+## Progreso y recompensas (fase 7)
+
+Constantes en `src/main/rewards/rules.ts`. Todo se recalcula a partir de lo que el alumno hizo y cada recompensa se da una sola vez.
+
+**Racha**
+- Cuenta los días hábiles seguidos con al menos una práctica terminada ese día.
+- El fin de semana no cuenta ni corta.
+- El día de hoy no corta hasta que termine.
+- Un día hábil sin práctica corta la racha, salvo que haya un protector de racha: se usa solo y avisa.
+
+**Experiencia**
+
+| Actividad | Experiencia |
+|---|---|
+| Práctica | 20, + 3 por ejercicio correcto |
+| Recuperación del domingo | 15 |
+| Examen inicial | 50 |
+| Examen semanal aprobado | 120, + 15 por punto sobre el 8 |
+| Examen semanal reprobado | 30 |
+| Simulacro | 25 |
+| Logro | 30 |
+
+- **Multiplicador por constancia:** × (1 + 5 % por día de racha), hasta × 1,5. Se aplica a prácticas, recuperaciones, exámenes semanales y simulacros.
+- **Niveles:** el nivel *n* empieza en 50·*n*·(*n*−1) XP (0, 100, 300, 600, 1000…), con títulos de «Recién llegado» a «Leyenda».
+
+**Comodines** (con máximo acumulable)
+- 💡 **Pista** (máx. 5): se gana cada 3 días de racha. En la práctica da una ayuda sin revelar la respuesta; hasta 2 por práctica.
+- 🔁 **Segunda oportunidad** (máx. 3): se gana cada 7 días de racha. En el examen semanal dice si una respuesta cerrada está bien antes de entregar; 1 por examen, no aplica a traducción ni escritura.
+- 🛡️ **Protector de racha** (máx. 2): se gana por cada semana perfecta (5 prácticas desde el lunes, sin faltas). Se usa solo cuando se falta un día y había racha.
+
+**Logros:** 20, entre ellos examen inicial, primera práctica, rachas de 3, 7, 15 y 30 días, semana perfecta, aprobar, sacar 10, remontada, recuperar una falta, 25 y 100 prácticas, 200 ejercicios, simulacro, 5 resúmenes, 20 calificaciones, A1 y A2 completos y nivel 5.
+
+**Avisos:** carteles emergentes al desbloquear logros, subir de nivel, ganar o usar comodines, y cuando se corta una racha de 3 días o más.
+
+**Pantalla de Progreso:** nivel y experiencia, racha y multiplicador, calendario de las últimas 5 semanas, comodines, logros con su avance, mapa del recorrido A1 → B2, estadísticas y últimas experiencias ganadas.
+
 ## Temario interactivo y niveles futuros
 
 - **Sección «Temario»:** desplegable por nivel → tópico → subtema.

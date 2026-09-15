@@ -202,5 +202,48 @@ export const MIGRATIONS: Migration[] = [
         created_at TEXT NOT NULL DEFAULT (datetime('now'))
       );
     `
+  },
+  {
+    version: 6,
+    name: 'recompensas: experiencia, rachas y comodines',
+    sql: `
+      -- Experiencia ganada; source identifica qué la originó para no darla dos veces.
+      CREATE TABLE xp_events (
+        id         INTEGER PRIMARY KEY,
+        source     TEXT NOT NULL UNIQUE,
+        amount     INTEGER NOT NULL,
+        created_on TEXT NOT NULL
+      );
+
+      -- Días hábiles faltados ya resueltos: protegidos por un comodín o que cortaron la racha.
+      CREATE TABLE streak_days (
+        date    TEXT PRIMARY KEY,
+        outcome TEXT NOT NULL CHECK (outcome IN ('protected', 'broken'))
+      );
+
+      -- Comodines otorgados (una vez por hito).
+      CREATE TABLE reward_grants (
+        source     TEXT PRIMARY KEY,
+        item       TEXT NOT NULL,
+        granted_on TEXT NOT NULL
+      );
+
+      CREATE TABLE powerup_uses (
+        id      INTEGER PRIMARY KEY,
+        item    TEXT NOT NULL,
+        context TEXT NOT NULL UNIQUE,
+        detail  TEXT,
+        used_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+
+      -- Avisos para mostrar al alumno (logros, niveles, comodines).
+      CREATE TABLE reward_news (
+        id         INTEGER PRIMARY KEY,
+        kind       TEXT NOT NULL,
+        message    TEXT NOT NULL,
+        seen       INTEGER NOT NULL DEFAULT 0,
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+    `
   }
 ]

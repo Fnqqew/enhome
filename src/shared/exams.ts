@@ -1,6 +1,7 @@
 // Pruebas: examen semanal y simulacros.
 
 import type { ExerciseAnswer, ExerciseFeedback, ExerciseType, PublicExercise, StoredExercise } from './exercises'
+import type { SecondChanceView } from './rewards'
 
 export type ExamKind = 'weekly' | 'mock'
 export type MockScope = 'topic' | 'general'
@@ -32,6 +33,7 @@ export interface ExamSessionView {
   title: string
   questions: ExamQuestionView[]
   pauseUsed: boolean
+  secondChance: SecondChanceView
 }
 
 export interface ExamBreakdownItem {

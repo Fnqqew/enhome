@@ -43,6 +43,10 @@ const api: Api = {
   submitExam: (examId) => invoke(IPC.examSubmit, examId),
   getExamResult: (examId) => invoke(IPC.examResult, examId),
   discardMockExam: (examId) => invoke(IPC.examDiscard, examId),
+  getProgressView: () => invoke(IPC.rewardsView),
+  takeRewardNews: () => invoke(IPC.rewardsNews),
+  usePracticeHint: (exerciseId) => invoke(IPC.rewardsHint, exerciseId),
+  useSecondChance: (examId, index) => invoke(IPC.rewardsSecondChance, examId, index),
   onDayChanged: (callback) => {
     const listener = (_event: Electron.IpcRendererEvent, today: string): void => callback(today)
     ipcRenderer.on(IPC.dayChanged, listener)

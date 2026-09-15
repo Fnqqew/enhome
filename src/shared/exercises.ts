@@ -160,6 +160,8 @@ export interface SessionExerciseView {
   answer: ExerciseAnswer | null
   feedback: ExerciseFeedback | null
   rating: number | null
+  // Pista revelada con un comodín, si se usó.
+  hint: string | null
 }
 
 export interface SessionView {
@@ -171,6 +173,7 @@ export interface SessionView {
   subtopicTitle: string
   exercises: SessionExerciseView[]
   spareCount: number
+  hintsAvailable: number
   completed: boolean
   canFinish: boolean
 }

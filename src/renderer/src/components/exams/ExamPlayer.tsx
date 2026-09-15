@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { EXAM_INTERRUPTED_MESSAGE, type ExamResultView, type ExamSessionView } from '@shared/exams'
-import { EXERCISE_TYPE_LABELS, type ExerciseAnswer } from '@shared/exercises'
+import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type ExerciseType } from '@shared/exercises'
+import { secondChanceMessage, type SecondChanceResult } from '@shared/rewards'
 import ExerciseInput from '../practice/ExerciseInput'
 
 // Señal periódica para que la app sepa que el examen sigue abierto.
 const HEARTBEAT_MS = 20_000
 const SAVE_DELAY_MS = 500
+// La segunda oportunidad no aplica a traducción ni escritura.
+const OPEN_TYPES: ExerciseType[] = ['translation', 'writing']
 
 interface PendingSave {
   index: number
@@ -28,6 +31,10 @@ export default function ExamPlayer({
   const [index, setIndex] = useState(() => Math.max(0, session.questions.findIndex((q) => !q.answer)))
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [chance, setChance] = useState<SecondChanceResult | null>(() =>
+    session.secondChance.used ? { ...session.secondChance.used, message: secondChanceMessage(session.secondChance.used.correct) } : null
+  )
+  const [chancesLeft, setChancesLeft] = useState(session.secondChance.available)
   const pending = useRef<PendingSave | null>(null)
   const latest = useRef({ onLeave })
   latest.current = { onLeave }
@@ -130,6 +137,32 @@ export default function ExamPlayer({
         </div>
         <p>{question.content.instruction}</p>
         <ExerciseInput key={`${session.id}-${index}`} content={question.content} answer={answers[index]} feedback={null} onChange={onChange} />
+        {session.kind === 'weekly' && !OPEN_TYPES.includes(question.type) && chance?.index === index && (
+          <div className={`notice ${chance.correct ? 'ok' : 'warn'}`}>🔁 {chance.message}</div>
+        )}
+        {session.kind === 'weekly' && !OPEN_TYPES.includes(question.type) && !chance && chancesLeft > 0 && (
+          <div>
+            <button
+              type="button"
+              className="chip"
+              disabled={!answers[index] || submitting}
+              title={!answers[index] ? 'Primero respondé la pregunta' : undefined}
+              onClick={async () => {
+                if (!confirm('¿Usar tu segunda oportunidad en esta pregunta? Te decimos si tu respuesta está bien (una sola vez por examen).')) return
+                await flush()
+                window.api
+                  .useSecondChance(session.id, index)
+                  .then((result) => {
+                    setChance(result)
+                    setChancesLeft((n) => n - 1)
+                  })
+                  .catch(fail)
+              }}
+            >
+              🔁 Usar segunda oportunidad ({chancesLeft})
+            </button>
+          </div>
+        )}
       </div>
 
       {error && <p className="error">{error}</p>}

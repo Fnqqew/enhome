@@ -16,6 +16,7 @@ import { answerAboutText, generateSummary } from './summaries/generation'
 import { Summaries } from './summaries/summaries'
 import { Exams } from './exams/exams'
 import { generateExam } from './exams/generation'
+import { Rewards } from './rewards/rewards'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
@@ -42,6 +43,7 @@ interface Services {
   practice: Practice
   summaries: Summaries
   exams: Exams
+  rewards: Rewards
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -56,14 +58,16 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
     if (!services) {
       const curriculum = loadCurriculum(contentDir)
       const progression = new Progression(db, curriculum)
+      const roadmap = loadRoadmap(contentDir)
       services = {
         curriculum,
-        roadmap: loadRoadmap(contentDir),
+        roadmap,
         progression,
         placement: new Placement(db, curriculum, progression, generatePlacementQuestions),
         practice: new Practice(db, curriculum, progression, generatePracticePool, gradeOpenAnswer),
         summaries: new Summaries(db, curriculum, progression, generateSummary, answerAboutText),
-        exams: new Exams(db, curriculum, progression, generateExam, gradeOpenAnswer)
+        exams: new Exams(db, curriculum, progression, generateExam, gradeOpenAnswer),
+        rewards: new Rewards(db, curriculum, roadmap, progression)
       }
     }
     return services
@@ -147,6 +151,13 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
   handle(IPC.examSubmit, (examId) => getServices().exams.submit(id.parse(examId), today()))
   handle(IPC.examResult, (examId) => getServices().exams.getResult(id.parse(examId)))
   handle(IPC.examDiscard, (examId) => getServices().exams.discardMock(id.parse(examId)))
+
+  handle(IPC.rewardsView, () => getServices().rewards.getView(today()))
+  handle(IPC.rewardsNews, () => getServices().rewards.takeNews(today()))
+  handle(IPC.rewardsHint, (exerciseId) => getServices().rewards.useHint(id.parse(exerciseId)))
+  handle(IPC.rewardsSecondChance, (examId, index) =>
+    getServices().rewards.useSecondChance(id.parse(examId), z.number().int().min(0).parse(index))
+  )
 
   if (isDev) {
     handle(IPC.devSetToday, (date) => {

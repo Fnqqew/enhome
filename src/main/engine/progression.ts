@@ -238,6 +238,13 @@ export class Progression {
         DELETE FROM exercises;
         DELETE FROM practice_sessions;
         DELETE FROM exam_drafts;
+        DELETE FROM xp_events;
+        DELETE FROM streak_days;
+        DELETE FROM reward_grants;
+        DELETE FROM powerup_uses;
+        DELETE FROM reward_news;
+        DELETE FROM achievements;
+        DELETE FROM inventory;
         DELETE FROM practice_units;
         DELETE FROM weeks;
         DELETE FROM exam_answers;
