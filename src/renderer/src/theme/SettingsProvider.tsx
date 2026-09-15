@@ -42,6 +42,7 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
     root.dataset.font = settings.font
     root.dataset.size = settings.fontSize
     root.dataset.density = settings.density
+    root.dataset.motion = settings.reduceMotion ? 'reduce' : 'full'
     root.style.setProperty('--accent', theme === 'dark' ? palette.dark : palette.light)
   }, [settings, prefersDark])
 

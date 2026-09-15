@@ -91,6 +91,34 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
             ]}
           />
         </Row>
+
+        <Row label="Animaciones">
+          <Segmented<'full' | 'reduce'>
+            label="Animaciones"
+            value={settings.reduceMotion ? 'reduce' : 'full'}
+            onChange={(motion) => update({ reduceMotion: motion === 'reduce' })}
+            options={[
+              { value: 'full', label: 'Normales' },
+              { value: 'reduce', label: 'Reducidas' }
+            ]}
+          />
+        </Row>
+
+        <div className="preview" aria-label="Vista previa">
+          <span className="level">VISTA PREVIA</span>
+          <p>
+            <strong>She is my sister.</strong> <span className="muted">— Ella es mi hermana.</span>
+          </p>
+          <div className="row">
+            <button type="button" className="btn">
+              Practicar
+            </button>
+            <button type="button" className="btn secondary">
+              Leer el resumen
+            </button>
+            <span className="badge ok">Aprobado</span>
+          </div>
+        </div>
       </section>
 
       <VoiceSettings />

@@ -259,6 +259,22 @@ Constantes en `src/main/rewards/rules.ts`. Todo se recalcula a partir de lo que 
 
 **Pantalla de Progreso:** nivel y experiencia, racha y multiplicador, calendario de las últimas 5 semanas, comodines, logros con su avance, mapa del recorrido A1 → B2, estadísticas y últimas experiencias ganadas.
 
+## Pulido final (fase 8)
+
+**Versión instalable**
+- `npm run dist` genera un instalador para Windows con el temario incluido como recurso.
+- La carpeta de datos es siempre `%APPDATA%\proyecto-ingles`, así la app instalada y la de desarrollo comparten el progreso.
+- Solo puede haber una instancia abierta: si se abre otra, se enfoca la ventana existente.
+
+**Personalización:** se suma la opción de reducir animaciones (también la respetan los carteles y el mapa) y una vista previa en Ajustes.
+
+**Lectura en voz alta y «Preguntar a Claude»**
+- Resúmenes y modo lectura.
+- Introducción de cada práctica.
+- Subtemas del Temario; preguntar a Claude solo en tópicos desbloqueados.
+
+**Robustez:** si una pantalla falla, aparece un aviso con «Recargar» en lugar de quedar en blanco. El progreso nunca se pierde porque vive en la base de datos.
+
 ## Temario interactivo y niveles futuros
 
 - **Sección «Temario»:** desplegable por nivel → tópico → subtema.

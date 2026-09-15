@@ -29,7 +29,8 @@ export const settingsSchema = z.object({
   favoriteSummaryTypes: z.array(z.enum(SUMMARY_TYPE_IDS)).max(SUMMARY_TYPE_IDS.length),
   // Nombre de la voz del sistema elegida para cada idioma; null = automática.
   voiceEs: z.string().max(200).nullable(),
-  voiceEn: z.string().max(200).nullable()
+  voiceEn: z.string().max(200).nullable(),
+  reduceMotion: z.boolean()
 })
 
 export type AppSettings = z.infer<typeof settingsSchema>
@@ -42,5 +43,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   density: 'comfortable',
   favoriteSummaryTypes: [],
   voiceEs: null,
-  voiceEn: null
+  voiceEn: null,
+  reduceMotion: false
 }

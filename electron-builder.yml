@@ -1,0 +1,24 @@
+# Instalador para Windows: npm run dist → dist/proyecto-ingles-<versión>-setup.exe
+appId: com.artemis18.proyectoingles
+productName: Proyecto Inglés
+directories:
+  output: dist
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+  - '!**/*.map'
+# El temario se lee desde los recursos de la app (process.resourcesPath/content).
+extraResources:
+  - from: content
+    to: content
+asar: true
+npmRebuild: false
+win:
+  target: nsis
+  artifactName: proyecto-ingles-${version}-setup.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  shortcutName: Proyecto Inglés

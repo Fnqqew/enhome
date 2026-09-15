@@ -4,7 +4,6 @@ import type { Navigate, SectionId } from './navigation'
 import Curriculum from './pages/Curriculum'
 import Home from './pages/Home'
 import RewardToasts from './components/RewardToasts'
-import Placeholder from './pages/Placeholder'
 import Progress from './pages/Progress'
 import Practice from './pages/Practice'
 import Settings from './pages/Settings'
@@ -13,7 +12,7 @@ import Tests from './pages/Tests'
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
-const SECTIONS: { id: SectionId; label: string; phase?: number }[] = [
+const SECTIONS: { id: SectionId; label: string }[] = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'temario', label: 'Temario' },
   { id: 'practica', label: 'Práctica' },
@@ -133,7 +132,5 @@ function Page({
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />
-  if (section === 'ajustes') return <Settings status={status} />
-  const current = SECTIONS.find((s) => s.id === section)!
-  return <Placeholder title={current.label} phase={current.phase ?? 0} />
+  return <Settings status={status} />
 }

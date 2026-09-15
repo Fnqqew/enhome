@@ -85,6 +85,7 @@ export class Practice {
     const { topic, subtopic } = this.content(target.unit.topicId, target.unit.subtopicId)
     return {
       status: 'ready',
+      topicId: topic.id,
       purpose: target.purpose,
       unitIndex: target.purpose === 'unit' ? target.unit.index : null,
       kind: target.unit.kind,

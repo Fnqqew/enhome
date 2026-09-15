@@ -182,6 +182,7 @@ export type PracticeView =
   | { status: 'unavailable'; reason: string }
   | {
       status: 'ready'
+      topicId: string
       purpose: PracticePurpose
       unitIndex: number | null
       kind: UnitKind

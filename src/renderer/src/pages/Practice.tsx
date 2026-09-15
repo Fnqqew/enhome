@@ -1,9 +1,11 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type PracticeResult, type PracticeView, type SessionView } from '@shared/exercises'
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
 import Rating from '../components/Rating'
+import SelectionAsk from '../components/summaries/SelectionAsk'
+import SpeechControls from '../components/summaries/SpeechControls'
 import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
 
@@ -109,6 +111,17 @@ function Intro({
   starting: boolean
   onStart: () => void
 }): React.JSX.Element {
+  const contentRef = useRef<HTMLDivElement>(null)
+  // Los ejemplos van en cursiva para que se lean con la voz en inglés.
+  const speechText = [
+    view.subtopicTitle,
+    view.goal,
+    'Puntos clave:',
+    ...view.keyPoints,
+    'Ejemplos:',
+    ...view.examples.map((e) => `*${e.en}* — ${e.es}`)
+  ].join('\n')
+
   return (
     <section className="card stack">
       <div className="card-header">
@@ -118,6 +131,8 @@ function Intro({
         </div>
         {view.kind !== 'lesson' && <span className="badge">{view.kind === 'focus' ? 'Refuerzo' : 'Repaso'}</span>}
       </div>
+      <SpeechControls getText={() => speechText} />
+      <div ref={contentRef} className="stack">
       <p>{view.goal}</p>
       <div>
         <h3 className="level">PUNTOS CLAVE</h3>
@@ -137,6 +152,9 @@ function Intro({
           ))}
         </ul>
       </div>
+      </div>
+      <p className="muted small">Seleccioná un texto para preguntarle a Claude.</p>
+      <SelectionAsk containerRef={contentRef} topicId={view.topicId} />
       <div className="row">
         <button className="btn" disabled={starting} onClick={onStart}>
           {starting ? 'Preparando ejercicios…' : 'Empezar práctica'}

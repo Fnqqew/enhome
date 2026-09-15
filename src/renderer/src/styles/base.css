@@ -1560,6 +1560,29 @@ h5.level {
   }
 }
 
+/* Pulido final */
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: calc(1rem * var(--space));
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.crash {
+  max-width: 34rem;
+}
+
+:root[data-motion='reduce'] *,
+:root[data-motion='reduce'] *::before,
+:root[data-motion='reduce'] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;

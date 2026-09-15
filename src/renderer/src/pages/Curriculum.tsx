@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   SKILL_LABELS,
   type CurriculumMap,
@@ -7,6 +7,8 @@ import {
   type Subtopic,
   type TopicMapStatus
 } from '@shared/curriculum'
+import SelectionAsk from '../components/summaries/SelectionAsk'
+import SpeechControls from '../components/summaries/SpeechControls'
 
 const STATUS_LABEL: Record<TopicMapStatus, string> = {
   'not-started': 'Sin empezar',
@@ -288,7 +290,16 @@ function TopicItem({
               .sort((a, b) => a.day - b.day)
               .map((s) => {
                 const key = `${topic.id}/${s.id}`
-                return <SubtopicItem key={key} subtopic={s} open={isSubtopicOpen(key)} onToggle={() => onToggleSubtopic(key)} />
+                return (
+                  <SubtopicItem
+                    key={key}
+                    subtopic={s}
+                    topicId={topic.id}
+                    canAsk={topic.status === 'current' || topic.status === 'passed' || topic.status === 'review'}
+                    open={isSubtopicOpen(key)}
+                    onToggle={() => onToggleSubtopic(key)}
+                  />
+                )
               })}
           </div>
         </div>
@@ -297,7 +308,30 @@ function TopicItem({
   )
 }
 
-function SubtopicItem({ subtopic, open, onToggle }: { subtopic: Subtopic; open: boolean; onToggle: () => void }): React.JSX.Element {
+function SubtopicItem({
+  subtopic,
+  topicId,
+  canAsk,
+  open,
+  onToggle
+}: {
+  subtopic: Subtopic
+  topicId: string
+  // Solo se le puede preguntar a Claude sobre tópicos desbloqueados.
+  canAsk: boolean
+  open: boolean
+  onToggle: () => void
+}): React.JSX.Element {
+  const bodyRef = useRef<HTMLDivElement>(null)
+  // Los ejemplos van en cursiva para que se lean con la voz en inglés.
+  const speechText = [
+    subtopic.title,
+    subtopic.goal,
+    ...subtopic.keyPoints,
+    ...subtopic.examples.map((e) => `*${e.en}* — ${e.es}`),
+    ...subtopic.commonMistakes.map((m) => `Error común: *${m.wrong}*. Correcto: *${m.right}*. ${m.why}`)
+  ].join('\n')
+
   return (
     <div className="subtopic-item">
       <button className="accordion-header" aria-expanded={open} onClick={onToggle}>
@@ -314,7 +348,8 @@ function SubtopicItem({ subtopic, open, onToggle }: { subtopic: Subtopic; open: 
       </button>
 
       {open && (
-        <div className="subtopic-body stack-sm">
+        <div className="subtopic-body stack-sm" ref={bodyRef}>
+          <SpeechControls getText={() => speechText} />
           <p>
             <strong>Objetivo:</strong> {subtopic.goal}
           </p>
@@ -348,6 +383,7 @@ function SubtopicItem({ subtopic, open, onToggle }: { subtopic: Subtopic; open: 
               </ul>
             </div>
           )}
+          {canAsk && <SelectionAsk containerRef={bodyRef} topicId={topicId} />}
         </div>
       )}
     </div>
