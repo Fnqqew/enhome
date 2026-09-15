@@ -1,6 +1,7 @@
 // Contrato entre el proceso principal y la interfaz.
 
 import type { CurriculumTopic } from './curriculum'
+import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
 
@@ -12,11 +13,17 @@ export const IPC = {
   settingsUpdate: 'settings:update',
   curriculumList: 'curriculum:list',
   progressGet: 'progress:get',
-  practiceComplete: 'practice:complete',
+  practiceComplete: 'unit:complete',
   recoveryRecord: 'recovery:record',
   placementStart: 'placement:start',
   placementGet: 'placement:get',
   placementAnswer: 'placement:answer',
+  practiceGet: 'practice:get',
+  practiceStart: 'practice:start',
+  practiceAnswer: 'practice:answer',
+  practiceSkip: 'practice:skip',
+  practiceRate: 'practice:rate',
+  practiceFinish: 'practice:finish',
   devSetToday: 'dev:set-today',
   devSimulateExam: 'dev:simulate-exam',
   devResetProgress: 'dev:reset-progress'
@@ -50,6 +57,12 @@ export interface Api {
   startPlacement(): Promise<PlacementView>
   getPlacement(): Promise<PlacementView>
   answerPlacement(questionId: string, choice: number): Promise<PlacementView>
+  getPractice(): Promise<PracticeView>
+  startPractice(): Promise<PracticeView>
+  answerExercise(exerciseId: number, answer: ExerciseAnswer): Promise<PracticeView>
+  skipExercise(exerciseId: number): Promise<PracticeView>
+  rateExercise(exerciseId: number, rating: PracticeRating): Promise<PracticeView>
+  finishPractice(sessionId: number): Promise<PracticeResult>
   // Solo en desarrollo.
   devSetToday(date: string | null): Promise<ProgressState>
   devSimulateExam(grade: number): Promise<ProgressState>

@@ -5,8 +5,9 @@ import CurriculumOverview from '../components/CurriculumOverview'
 import DevTools from '../components/DevTools'
 import PlacementFlow from '../components/PlacementFlow'
 import WeekCalendar from '../components/WeekCalendar'
+import type { Navigate } from '../navigation'
 
-export default function Home(): React.JSX.Element {
+export default function Home({ navigate }: { navigate: Navigate }): React.JSX.Element {
   const [progress, setProgress] = useState<ProgressState | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [isDev, setIsDev] = useState(false)
@@ -35,7 +36,7 @@ export default function Home(): React.JSX.Element {
         </section>
       )}
       {progress && !progress.placementDone && <PlacementFlow resume={progress.placementInProgress} onDone={reload} />}
-      {progress?.placementDone && <Journey progress={progress} />}
+      {progress?.placementDone && <Journey progress={progress} navigate={navigate} />}
       {isDev && progress && <DevTools progress={progress} onChange={setProgress} />}
       <CurriculumOverview />
     </>
@@ -48,7 +49,7 @@ function unitNote(unit: PracticeUnitView, weekTopicId: string): string | null {
   return null
 }
 
-function Journey({ progress }: { progress: ProgressState }): React.JSX.Element {
+function Journey({ progress, navigate }: { progress: ProgressState; navigate: Navigate }): React.JSX.Element {
   const { week } = progress
 
   if (progress.finished) {
@@ -69,6 +70,7 @@ function Journey({ progress }: { progress: ProgressState }): React.JSX.Element {
 
   const upcoming = progress.today < week.startsOn
   const note = week.nextUnit ? unitNote(week.nextUnit, week.topicId) : null
+  const canRecoverNow = week.canRecover && !week.nextUnit
   const examTone = week.examStatus === 'available' ? ' ok' : week.examStatus === 'locked' ? ' warn' : ''
 
   return (
@@ -108,7 +110,7 @@ function Journey({ progress }: { progress: ProgressState }): React.JSX.Element {
           )}
         </div>
 
-        <div>
+        <div className="stack-sm">
           <h3 className="level">PRÁCTICA</h3>
           {week.nextUnit ? (
             <p>
@@ -121,10 +123,16 @@ function Journey({ progress }: { progress: ProgressState }): React.JSX.Element {
           {week.nextUnit && !week.canPracticeNow && week.practiceBlockedReason && (
             <p className="muted">{week.practiceBlockedReason}</p>
           )}
-          <p className="muted">Los ejercicios llegan en la fase 4.</p>
+          {(week.canPracticeNow || canRecoverNow) && (
+            <div>
+              <button className="btn" onClick={() => navigate('practica')}>
+                {canRecoverNow ? 'Recuperar una falta' : 'Practicar'}
+              </button>
+            </div>
+          )}
         </div>
 
-        {week.canRecover && <div className="notice">Hoy es domingo: si practicás, recuperás una falta.</div>}
+        {week.canRecover && week.nextUnit && <div className="notice">Hoy es domingo: si practicás, recuperás una falta.</div>}
 
         <div className={`notice${examTone}`}>
           <strong>Examen:</strong> {week.examMessage}

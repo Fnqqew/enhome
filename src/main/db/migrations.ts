@@ -151,5 +151,29 @@ export const MIGRATIONS: Migration[] = [
         UNIQUE (week_id, unit_index)
       );
     `
+  },
+  {
+    version: 3,
+    name: 'sesiones de práctica',
+    sql: `
+      -- Una sesión por práctica del día (o por recuperación del domingo, sin unidad).
+      CREATE TABLE practice_sessions (
+        id           INTEGER PRIMARY KEY,
+        week_id      INTEGER NOT NULL REFERENCES weeks (id),
+        unit_id      INTEGER UNIQUE REFERENCES practice_units (id),
+        topic_id     TEXT NOT NULL,
+        subtopic_id  TEXT NOT NULL,
+        kind         TEXT NOT NULL CHECK (kind IN ('lesson', 'focus', 'review')),
+        completed_on TEXT,
+        created_at   TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+
+      -- Los ejercicios generados para una sesión: slot es su posición; NULL = alternativa sin usar.
+      ALTER TABLE exercises ADD COLUMN session_id INTEGER REFERENCES practice_sessions (id);
+      ALTER TABLE exercises ADD COLUMN slot INTEGER;
+      ALTER TABLE exercises ADD COLUMN skipped INTEGER NOT NULL DEFAULT 0;
+      CREATE INDEX exercises_session ON exercises (session_id);
+      CREATE INDEX exercises_subtopic ON exercises (topic_id, subtopic_id);
+    `
   }
 ]

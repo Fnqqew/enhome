@@ -473,6 +473,219 @@ p {
   border-style: dashed;
 }
 
+/* Práctica */
+
+.stack-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.row.spread {
+  justify-content: space-between;
+}
+
+.big {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.examples {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.examples .en {
+  font-weight: 500;
+}
+
+.dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.dot.correct {
+  background: var(--accent);
+}
+
+.dot.wrong {
+  background: var(--danger);
+}
+
+.dot.current {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.exercise-type {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.blank {
+  font: inherit;
+  min-width: 5ch;
+  margin: 0 0.25rem;
+  padding: 0 0.25rem;
+  border: none;
+  border-bottom: 2px solid var(--accent);
+  background: transparent;
+  color: var(--text);
+  text-align: center;
+}
+
+.text-answer {
+  font: inherit;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  resize: vertical;
+}
+
+.blank.correct,
+.text-answer.correct,
+.answer-line.correct {
+  border-color: var(--accent);
+}
+
+.blank.wrong,
+.text-answer.wrong,
+.answer-line.wrong {
+  border-color: var(--danger);
+}
+
+.answer-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 3rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--border);
+}
+
+.token-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.token {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.token:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.option:disabled,
+.token:disabled {
+  cursor: default;
+  color: var(--text);
+}
+
+.option.correct {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.option.wrong {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+}
+
+.reading-text {
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--bg);
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.guidance {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.warn-text {
+  color: var(--danger);
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: calc(0.9rem * var(--space)) 1rem;
+  border-left: 4px solid;
+  border-radius: 10px;
+}
+
+.feedback.ok {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.feedback.bad {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 8%, transparent);
+}
+
+.feedback-title {
+  font-weight: 600;
+}
+
+.mistakes {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.mistakes s {
+  color: var(--danger);
+}
+
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.chip {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.chip[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
 input[type='date'],
 select {
   font: inherit;

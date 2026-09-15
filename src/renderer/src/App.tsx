@@ -1,21 +1,21 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
+import type { Navigate, SectionId } from './navigation'
 import Home from './pages/Home'
 import Placeholder from './pages/Placeholder'
+import Practice from './pages/Practice'
 import Settings from './pages/Settings'
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
-const SECTIONS = [
+const SECTIONS: { id: SectionId; label: string; phase?: number }[] = [
   { id: 'inicio', label: 'Inicio' },
-  { id: 'practica', label: 'Práctica', phase: 4 },
+  { id: 'practica', label: 'Práctica' },
   { id: 'resumenes', label: 'Resúmenes', phase: 5 },
   { id: 'pruebas', label: 'Pruebas', phase: 6 },
   { id: 'progreso', label: 'Progreso', phase: 7 },
   { id: 'ajustes', label: 'Ajustes' }
-] as const
-
-type SectionId = (typeof SECTIONS)[number]['id']
+]
 
 export default function App(): React.JSX.Element {
   const [status, setStatus] = useState<ClaudeStatus | null>(null)
@@ -55,7 +55,9 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
         <h1>Proyecto Inglés</h1>
         <p>{message}</p>
         <div>
-          <button className="btn" onClick={onRetry}>Reintentar</button>
+          <button className="btn" onClick={onRetry}>
+            Reintentar
+          </button>
         </div>
       </div>
     </main>
@@ -82,15 +84,16 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
         <div className="sidebar-foot muted">Claude conectado</div>
       </nav>
       <main className="content">
-        <Page section={section} status={status} />
+        <Page section={section} status={status} navigate={setSection} />
       </main>
     </div>
   )
 }
 
-function Page({ section, status }: { section: SectionId; status: ReadyStatus }): React.JSX.Element {
-  if (section === 'inicio') return <Home />
+function Page({ section, status, navigate }: { section: SectionId; status: ReadyStatus; navigate: Navigate }): React.JSX.Element {
+  if (section === 'inicio') return <Home navigate={navigate} />
+  if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'ajustes') return <Settings status={status} />
   const current = SECTIONS.find((s) => s.id === section)!
-  return <Placeholder title={current.label} phase={'phase' in current ? current.phase : 0} />
+  return <Placeholder title={current.label} phase={current.phase ?? 0} />
 }

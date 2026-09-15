@@ -147,6 +147,32 @@ Todas las constantes están en `src/main/engine/rules.ts`.
 - Desde el segundo reprobado, los 2 primeros días repasan los prerrequisitos con más errores y los otros 3 refuerzan.
 - En cualquier examen, un tópico anterior con más del 40 % de errores (y al menos 2 preguntas) queda marcado como «repaso recomendado». La marca se quita al hacer una práctica de repaso de ese tópico.
 
+## Reglas de la práctica (definidas en la fase 4)
+
+Las constantes están en `src/main/practice/composition.ts` y `src/main/practice/ai-grading.ts`.
+
+**Tipos de ejercicio**
+- Opción múltiple, completar, ordenar la oración y corregir el error. Trabajan gramática y se corrigen al instante.
+- Traducir al inglés, que trabaja escritura. Si la respuesta coincide con una de referencia se corrige al instante; si no, la corrige Claude, que acepta traducciones válidas distintas.
+- Comprensión lectora: un texto con 2 o 3 preguntas, con puntaje parcial.
+- Escritura, que corrige Claude con criterios ponderados: lo que practica el subtema 40 %, gramática y ortografía 25 %, cumplir la consigna 25 %, vocabulario y claridad 10 %. Se considera correcta con 6/10 o más.
+- En la corrección automática no cuentan las mayúsculas, la puntuación final ni las contracciones (*isn't* = *is not*).
+
+**Armado de cada práctica**
+- Claude genera de una vez 9 a 11 ejercicios del subtema, y la sesión usa 6. El resto queda como alternativa para «Cambiar ejercicio».
+- Los días que trabajan lectura o escritura siempre incluyen al menos un ejercicio de ese tipo. La escritura va al final.
+- El resto se elige priorizando variedad de tipos y los tipos mejor calificados. Se ordena de lo más guiado a lo más abierto.
+- El alumno califica cada ejercicio con «No me sirvió», «Estuvo bien» o «Me encantó». Los tipos con promedio de 4 o más se generan más; los de 2 o menos, menos, salvo que sean obligatorios ese día.
+- Se le pide a Claude que no repita las oraciones de los últimos 20 ejercicios del mismo subtema.
+- Las prácticas de refuerzo (después de reprobar) y las de repaso usan una consigna distinta para Claude.
+
+**Cuándo se genera**
+- Al abrir la práctica, los ejercicios se preparan en segundo plano mientras se lee la introducción: puntos clave y ejemplos.
+- Al terminar una práctica se prepara la siguiente, de a una generación por vez.
+
+**Recuperación del domingo**
+- Si ya no quedan prácticas pendientes, es una sesión de repaso del subtema del día que se faltó. Al terminarla se recupera la falta.
+
 ## 4. Verificación
 - **Tests del motor con fechas simuladas:**
   - Examen inicial a mitad de semana.

@@ -3,6 +3,7 @@
 import { z } from 'zod'
 import type { CurriculumTopic } from '../../shared/curriculum'
 import { askClaude } from '../claude/bridge'
+import { shuffleChoices } from '../shuffle'
 import type { GeneratedQuestion } from './placement'
 import { PLACEMENT_QUESTIONS_PER_TOPIC } from './rules'
 
@@ -13,12 +14,7 @@ const MAX_ATTEMPTS = 2
 
 // Mezcla las opciones para que la correcta no quede siempre en la misma posición.
 export function shuffleOptions(question: GeneratedQuestion, random: () => number = Math.random): GeneratedQuestion {
-  const order = question.options.map((_, i) => i)
-  for (let i = order.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1))
-    ;[order[i], order[j]] = [order[j], order[i]]
-  }
-  return { ...question, options: order.map((i) => question.options[i]), correctIndex: order.indexOf(question.correctIndex) }
+  return { ...question, ...shuffleChoices(question.options, question.correctIndex, random) }
 }
 
 function buildPrompt(topic: CurriculumTopic): string {

@@ -196,6 +196,9 @@ export class Progression {
   resetProgress(): void {
     transaction(this.db, () => {
       this.db.exec(`
+        DELETE FROM exercise_attempts;
+        DELETE FROM exercises;
+        DELETE FROM practice_sessions;
         DELETE FROM practice_units;
         DELETE FROM weeks;
         DELETE FROM exam_answers;
