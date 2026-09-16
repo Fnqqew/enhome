@@ -8,7 +8,7 @@ export const STYLES = [
   { id: 'celeste', label: 'Celeste', description: 'Sobrio y plano, con un guiño argentino.', colors: ['#4ba3e3', '#0b3c6d', '#f2b33d'] },
   { id: 'ruta', label: 'Ruta', description: 'El recorrido como una línea de subte.', colors: ['#0f1b33', '#1e9e6a', '#e8772e'] },
   { id: 'cuaderno', label: 'Cuaderno', description: 'Hoja rayada, birome azul y resaltador.', colors: ['#2446b8', '#e0524b', '#ffe45c'] },
-  { id: 'racha', label: 'Racha', description: 'Táctil y con energía, para la constancia.', colors: ['#ff6b4a', '#ffc53d', '#14532d'] },
+  { id: 'racha', label: 'Racha', description: 'Táctil y con energía, para la constancia.', colors: ['#ff6b4a', '#ffc53d', '#2e2e2e'] },
   { id: 'original', label: 'Original', description: 'El diseño con el que nació la app.', colors: ['#3f5bd0', '#f6f5f2', '#22211f'] }
 ] as const
 

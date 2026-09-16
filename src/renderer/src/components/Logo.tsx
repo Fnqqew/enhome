@@ -53,14 +53,14 @@ const MARKS: Record<StyleId, React.JSX.Element> = {
       <path
         d="M14 7h36a10 10 0 0 1 10 10v22a10 10 0 0 1-10 10H31l-13 9v-9h-4A10 10 0 0 1 4 39V17A10 10 0 0 1 14 7z"
         fill="#FF6B4A"
-        stroke="#14532D"
+        stroke="#2E2E2E"
         strokeWidth="3"
         strokeLinejoin="round"
       />
       <path
         d="M32 14c2 6 9 9 9 17a9 9 0 0 1-18 0c0-4 2-6 4-8 0 3 2 5 4 5-1-5-1-9 1-14z"
         fill="#FFC53D"
-        stroke="#14532D"
+        stroke="#2E2E2E"
         strokeWidth="2.5"
         strokeLinejoin="round"
       />

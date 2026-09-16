@@ -19,6 +19,8 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     title: 'Proyecto Inglés',
+    // Instalada, el ícono sale del ejecutable; esto lo muestra también en desarrollo.
+    icon: join(__dirname, '../../resources/icon.png'),
     backgroundColor: nativeTheme.shouldUseDarkColors ? '#161719' : '#f6f5f2',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),

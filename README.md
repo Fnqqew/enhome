@@ -11,7 +11,7 @@ App de escritorio personal para aprender inglés (gramática, comprensión lecto
 - **Pruebas:** examen semanal con pausa única de 30 minutos, simulacros e historial.
 - **Progreso:** racha, experiencia y niveles, comodines, logros y mapa del recorrido.
 - **Temario interactivo** con buscador y el plan de B1 y B2.
-- **Personalización:** tema, color, tipografía, tamaño, espaciado, animaciones y voces.
+- **Personalización:** 5 estilos visuales (Celeste, Ruta, Cuaderno, Racha y Original), tema, color, tipografía, tamaño, espaciado, animaciones y voces.
 
 El diseño completo y todas las reglas están en [docs/documento-base.md](docs/documento-base.md).
 
@@ -38,6 +38,7 @@ npm run dev        # abre la app en modo desarrollo (con herramientas de prueba 
 npm run typecheck  # revisa tipos
 npm test           # tests
 npm run build      # compila sin generar el instalador
+npm run icon       # regenera el ícono (build/icon.ico y resources/icon.png) desde el logo Celeste
 ```
 
 Pruebas contra Claude de verdad (gastan uso de la suscripción):

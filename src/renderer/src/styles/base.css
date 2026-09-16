@@ -1856,6 +1856,11 @@ h5.level {
     repeating-linear-gradient(180deg, transparent 0 1.9rem, var(--rule) 1.9rem calc(1.9rem + 1px));
 }
 
+/* En Literata el «1» se confunde con una «l»: los códigos de nivel van con la letra del texto. */
+:root[data-style='cuaderno'] .level-code {
+  font-family: var(--font);
+}
+
 :root[data-style='cuaderno'] .content > h1 {
   width: fit-content;
   padding-inline: 0.2rem;
@@ -1866,16 +1871,16 @@ h5.level {
 
 /* Racha: bordes marcados, sombras duras y botones que se hunden. */
 :root[data-style='racha'] {
-  --bg: #eaf7f1;
+  --bg: #f5f4f2;
   --surface: #ffffff;
-  --surface-hover: #dff2e8;
-  --border: #b9dccb;
-  --text: #14352a;
-  --muted: #4d6b5f;
+  --surface-hover: #ecebe8;
+  --border: #d3d1cd;
+  --text: #232323;
+  --muted: #5e5e5e;
   --accent: #cf4424;
   --accent-contrast: #ffffff;
   --danger: #b3261e;
-  --ink: #14532d;
+  --ink: #2e2e2e;
   --radius: 18px;
   --btn-radius: 14px;
   --btn-border: 2px solid var(--ink);
@@ -1884,22 +1889,22 @@ h5.level {
   --card-shadow: 0 4px 0 var(--ink);
   --style-font: 'Nunito Variable', 'Segoe UI', system-ui, sans-serif;
   --style-display: 'Baloo 2 Variable', 'Nunito Variable', system-ui, sans-serif;
-  --sidebar-bg: #dff2e8;
+  --sidebar-bg: #ecebe8;
   --sidebar-border: var(--border);
 }
 
 :root[data-style='racha'][data-theme='dark'] {
-  --bg: #0f1f19;
-  --surface: #16291f;
-  --surface-hover: #1d3529;
-  --border: #2d4d3d;
-  --text: #e4f3ea;
-  --muted: #9bbcac;
+  --bg: #161616;
+  --surface: #1f1f1f;
+  --surface-hover: #292929;
+  --border: #3a3a3a;
+  --text: #eeeeee;
+  --muted: #a8a8a8;
   --accent: #ff7a5a;
   --accent-contrast: #2a0d04;
   --danger: #ff8a80;
-  --ink: #050d09;
-  --sidebar-bg: #0b1813;
+  --ink: #000000;
+  --sidebar-bg: #111111;
 }
 
 :root[data-style='racha'] h1 {
