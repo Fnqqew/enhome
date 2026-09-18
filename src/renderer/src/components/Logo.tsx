@@ -8,7 +8,7 @@ export default function Logo({ style, className }: { style: StyleId; className?:
       className={className ?? 'logo'}
       viewBox="0 0 64 64"
       role="img"
-      aria-label="Proyecto Inglés"
+      aria-label="Enhome"
       dangerouslySetInnerHTML={{ __html: LOGOS[style] }}
     />
   )

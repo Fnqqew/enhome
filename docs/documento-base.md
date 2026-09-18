@@ -1,4 +1,4 @@
-# Proyecto Inglés: documento base y plan de implementación
+# Enhome: documento base y plan de implementación
 
 ## Contexto
 App de escritorio personal para aprender inglés. Nace de un mapa conceptual con tres secciones (Práctica, Resúmenes, Pruebas), la lógica de Progresión y el diseño. Después de dos rondas de discusión se cerraron todas las contradicciones y los huecos. Hay tres condiciones de partida: **un solo usuario (el dueño)**, **sin presupuesto** y la IA funciona con **su suscripción de Claude** a través de Claude Code instalado en su compu. La carpeta del proyecto está vacía.
@@ -266,7 +266,7 @@ Constantes en `src/main/rewards/rules.ts`. Todo se recalcula a partir de lo que 
 
 **Versión instalable**
 - `npm run dist` genera un instalador para Windows con el temario incluido como recurso.
-- La carpeta de datos es siempre `%APPDATA%\proyecto-ingles`, así la app instalada y la de desarrollo comparten el progreso.
+- La carpeta de datos es siempre `%APPDATA%\enhome`, así la app instalada y la de desarrollo comparten el progreso. Si quedó progreso de cuando la app se llamaba «Proyecto Inglés», se copia solo la primera vez.
 - Solo puede haber una instancia abierta: si se abre otra, se enfoca la ventana existente.
 
 **Personalización:** se suma la opción de reducir animaciones (también la respetan los carteles y el mapa) y una vista previa en Ajustes.

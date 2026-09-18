@@ -1,14 +1,14 @@
-<div align="center">
+﻿<div align="center">
 
-<img src="resources/icon.png" alt="Logo de Proyecto Inglés" width="104" />
+<img src="resources/icon.png" alt="Logo de Enhome" width="104" />
 
-# Proyecto Inglés
+# Enhome
 
 **Aprendé inglés de A1 a A2, un tópico por semana, con Claude como profe.**
 
 App de escritorio personal para Windows: gramática, comprensión lectora y escritura según el marco europeo (MCER), con ejercicios, resúmenes y exámenes generados y revisados por Claude Code con tu suscripción.
 
-![Versión](https://img.shields.io/badge/versión-1.2.0-1c6fb3?style=flat-square)
+![Versión](https://img.shields.io/badge/versión-1.3.0-1c6fb3?style=flat-square)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b3c6d?style=flat-square&logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-44-47848f?style=flat-square&logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react&logoColor=white)
@@ -73,10 +73,10 @@ npm install
 npm run dist
 ```
 
-Genera `dist/proyecto-ingles-<versión>-setup.exe`, que instala la app y crea el acceso directo en el escritorio.
+Genera `dist/enhome-<versión>-setup.exe`, que instala la app y crea el acceso directo en el escritorio.
 
 > [!NOTE]
-> La app instalada y la de desarrollo guardan el progreso en la misma carpeta (`%APPDATA%\proyecto-ingles`), así que lo comparten. Solo puede haber una ventana abierta a la vez.
+> La app instalada y la de desarrollo guardan el progreso en la misma carpeta (`%APPDATA%\enhome`), así que lo comparten. Solo puede haber una ventana abierta a la vez.
 
 ## Desarrollo
 

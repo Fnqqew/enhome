@@ -1,6 +1,6 @@
-# Instalador para Windows: npm run dist → dist/proyecto-ingles-<versión>-setup.exe
-appId: com.artemis18.proyectoingles
-productName: Proyecto Inglés
+# Instalador para Windows: npm run dist → dist/enhome-<versión>-setup.exe
+appId: com.artemis18.enhome
+productName: Enhome
 directories:
   output: dist
   buildResources: build
@@ -23,9 +23,9 @@ npmRebuild: false
 win:
   target: nsis
   icon: build/icon.ico
-  artifactName: proyecto-ingles-${version}-setup.${ext}
+  artifactName: enhome-${version}-setup.${ext}
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
-  shortcutName: Proyecto Inglés
+  shortcutName: Enhome

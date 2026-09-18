@@ -17,7 +17,7 @@ function open(...args: Parameters<typeof openDatabase>): Db {
 }
 
 beforeEach(() => {
-  dir = mkdtempSync(join(tmpdir(), 'proyecto-ingles-test-'))
+  dir = mkdtempSync(join(tmpdir(), 'enhome-test-'))
   opened = []
 })
 

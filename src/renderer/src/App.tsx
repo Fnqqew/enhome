@@ -41,7 +41,7 @@ export default function App(): React.JSX.Element {
   if (!status) {
     return (
       <>
-        <TitleBar title="Proyecto Inglés" />
+        <TitleBar title="Enhome" />
         <main className="centered">
           <p className="muted">Verificando tu sesión de Claude…</p>
         </main>
@@ -63,11 +63,11 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
 
   return (
     <>
-      <TitleBar title="Proyecto Inglés" />
+      <TitleBar title="Enhome" />
       <main className="centered">
         <div className="card lock stack">
           <Logo style={settings.style} className="logo lock-logo" />
-          <h1>Proyecto Inglés</h1>
+          <h1>Enhome</h1>
           <p>{message}</p>
           <div>
             <button className="btn" onClick={onRetry}>
@@ -101,7 +101,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
     if (!examLocked || target === 'pruebas') setSection(target)
   }
 
-  const title = SECTIONS.find((s) => s.id === section)?.label ?? 'Proyecto Inglés'
+  const title = SECTIONS.find((s) => s.id === section)?.label ?? 'Enhome'
 
   return (
     <div className="shell">
@@ -109,7 +109,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
       <nav className="sidebar">
         <div className="brand">
           <Logo style={settings.style} />
-          Proyecto Inglés
+          Enhome
         </div>
         {SECTIONS.map((s) => (
           <button

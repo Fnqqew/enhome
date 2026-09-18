@@ -1,4 +1,5 @@
 import { app, BrowserWindow, ipcMain, powerMonitor, shell } from 'electron'
+import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
 import { watchDayChange } from './day-watcher'
@@ -10,8 +11,27 @@ import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
 
 // Carpeta de datos fija: la versión instalada y la de desarrollo comparten el mismo progreso.
-app.setPath('userData', join(app.getPath('appData'), 'proyecto-ingles'))
-app.setAppUserModelId('com.artemis18.proyectoingles')
+app.setPath('userData', join(app.getPath('appData'), 'enhome'))
+app.setAppUserModelId('com.artemis18.enhome')
+
+// La app se llamaba «Proyecto Inglés»: si quedó progreso guardado con ese nombre, se trae una sola vez.
+function migrateOldData(): string {
+  const file = 'enhome.db'
+  const target = join(app.getPath('userData'), file)
+  const anterior = join(app.getPath('appData'), 'proyecto-ingles', 'proyecto-ingles.db')
+  if (existsSync(target) || !existsSync(anterior)) return file
+
+  try {
+    mkdirSync(app.getPath('userData'), { recursive: true })
+    // El diario (-wal) puede tener cambios que todavía no pasaron a la base.
+    for (const sufijo of ['', '-wal', '-shm']) {
+      if (existsSync(anterior + sufijo)) copyFileSync(anterior + sufijo, target + sufijo)
+    }
+  } catch (error) {
+    console.error('No se pudo traer el progreso guardado con el nombre anterior', error)
+  }
+  return file
+}
 
 function createWindow(settings: AppSettings): BrowserWindow {
   const win = new BrowserWindow({
@@ -21,7 +41,7 @@ function createWindow(settings: AppSettings): BrowserWindow {
     minHeight: 600,
     show: false,
     autoHideMenuBar: true,
-    title: 'Proyecto Inglés',
+    title: 'Enhome',
     // Barra propia: los botones y el color los dibuja la app, que sabe el estilo elegido.
     frame: false,
     roundedCorners: true,
@@ -67,7 +87,7 @@ if (!app.requestSingleInstanceLock()) {
   })
 
   app.whenReady().then(() => {
-    const db = openDatabase(join(app.getPath('userData'), 'proyecto-ingles.db'))
+    const db = openDatabase(join(app.getPath('userData'), migrateOldData()))
     app.on('will-quit', () => db.close())
 
     // En desarrollo el temario se lee del repo; instalada, de los recursos de la app.

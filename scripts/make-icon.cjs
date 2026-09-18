@@ -39,7 +39,7 @@ function page(style, withText) {
 }
 
 async function render(win, style, withText) {
-  const htmlPath = join(app.getPath('temp'), `proyecto-ingles-icon-${style}-${withText ? 'texto' : 'simple'}.html`)
+  const htmlPath = join(app.getPath('temp'), `enhome-icon-${style}-${withText ? 'texto' : 'simple'}.html`)
   writeFileSync(htmlPath, page(style, withText))
 
   await win.loadFile(htmlPath)

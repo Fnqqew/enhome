@@ -45,7 +45,7 @@ function stableIcon(style: StyleId): string | null {
 
 // Los accesos directos se editan con WScript.Shell, la única forma de tocar un .lnk.
 // Las carpetas las resuelve Windows: el escritorio puede estar redirigido a OneDrive.
-// El nombre se busca con comodín para no escribir la tilde de «Inglés» dentro del script.
+// Se buscan por nombre, incluidos los de la versión anterior de la app.
 // Se actualizan el del escritorio, el del menú Inicio y el anclado a la barra de tareas.
 function updateShortcuts(ico: string): void {
   if (process.platform !== 'win32') return
@@ -58,7 +58,7 @@ function updateShortcuts(ico: string): void {
       (Join-Path $env:APPDATA 'Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar')
     )
     foreach ($c in $carpetas) {
-      Get-ChildItem -LiteralPath $c -Filter 'Proyecto Ingl*.lnk' -ErrorAction SilentlyContinue | ForEach-Object {
+      Get-ChildItem -Path (Join-Path $c '*') -Include 'Enhome*.lnk', 'Proyecto Ingl*.lnk' -ErrorAction SilentlyContinue | ForEach-Object {
         $s = $w.CreateShortcut($_.FullName)
         $s.IconLocation = ${quote(ico)}
         $s.Save()
