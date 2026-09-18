@@ -46,28 +46,36 @@ function stableIcon(style: StyleId): string | null {
 // Los accesos directos se editan con WScript.Shell, la única forma de tocar un .lnk.
 // Las carpetas las resuelve Windows: el escritorio puede estar redirigido a OneDrive.
 // El nombre se busca con comodín para no escribir la tilde de «Inglés» dentro del script.
-function updateShortcuts(style: StyleId): void {
-  const ico = process.platform === 'win32' ? stableIcon(style) : null
-  if (!ico) return
+// Se actualizan el del escritorio, el del menú Inicio y el anclado a la barra de tareas.
+function updateShortcuts(ico: string): void {
+  if (process.platform !== 'win32') return
 
   const script = `
     $w = New-Object -ComObject WScript.Shell
-    $carpetas = @([Environment]::GetFolderPath('Desktop'), (Join-Path ([Environment]::GetFolderPath('StartMenu')) 'Programs'))
+    $carpetas = @(
+      [Environment]::GetFolderPath('Desktop'),
+      (Join-Path ([Environment]::GetFolderPath('StartMenu')) 'Programs'),
+      (Join-Path $env:APPDATA 'Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar')
+    )
     foreach ($c in $carpetas) {
       Get-ChildItem -LiteralPath $c -Filter 'Proyecto Ingl*.lnk' -ErrorAction SilentlyContinue | ForEach-Object {
         $s = $w.CreateShortcut($_.FullName)
         $s.IconLocation = ${quote(ico)}
         $s.Save()
       }
-    }`
+    }
+    # Windows guarda los íconos en caché: esto le avisa que los vuelva a leer.
+    Start-Process -FilePath "$env:SystemRoot\\System32\\ie4uinit.exe" -ArgumentList '-show' -WindowStyle Hidden`
   execFile('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', script], (error) => {
     if (error) console.error('No se pudo cambiar el ícono del acceso directo', error)
   })
 }
 
 export function applyStyle(win: BrowserWindow, settings: AppSettings): void {
-  const png = iconPng(settings.style)
-  if (existsSync(png)) win.setIcon(nativeImage.createFromPath(png))
+  // El .ico trae varios tamaños y la barra de tareas elige el que necesita; el .png es el respaldo.
+  const ico = stableIcon(settings.style)
+  const icon = ico ?? iconPng(settings.style)
+  if (existsSync(icon)) win.setIcon(nativeImage.createFromPath(icon))
   win.setBackgroundColor(windowColor(settings))
-  updateShortcuts(settings.style)
+  if (ico) updateShortcuts(ico)
 }
