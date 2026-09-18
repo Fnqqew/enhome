@@ -24,6 +24,7 @@
   --font-size: 16px;
   --space: 1;
   --titlebar-h: 2.25rem;
+  --sidebar-w: 220px;
 
   /* Lo que cada estilo puede redefinir (ver «Estilos» al final). */
   --style-font: var(--font-moderna);
@@ -76,14 +77,23 @@
 
 html {
   font-size: var(--font-size);
+  height: 100%;
 }
 
+/* La ventana no se desplaza: el scroll vive adentro del contenido, así la barra queda siempre arriba. */
 body {
   margin: 0;
+  height: 100%;
+  overflow: hidden;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
   line-height: 1.55;
+}
+
+/* La app ocupa toda la ventana para que el scroll quede adentro del contenido. */
+#root {
+  height: 100%;
 }
 
 button {
@@ -139,7 +149,8 @@ p {
 }
 
 .centered {
-  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
   display: grid;
   place-items: center;
   padding: calc(2rem + var(--titlebar-h)) 2rem 2rem;
@@ -157,7 +168,13 @@ p {
   align-items: center;
   height: var(--titlebar-h);
   padding-left: 0.85rem;
+  background: var(--bg);
   -webkit-app-region: drag;
+}
+
+/* Dentro de la app la barra continúa los colores de abajo: la lateral a la izquierda y el contenido a la derecha. */
+.shell .titlebar {
+  background: linear-gradient(to right, var(--sidebar-bg) 0 var(--sidebar-w), var(--bg) var(--sidebar-w));
 }
 
 .window-buttons {
@@ -255,8 +272,9 @@ p {
 
 .shell {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  min-height: 100vh;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  height: 100%;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -317,6 +335,8 @@ p {
 }
 
 .content {
+  height: 100%;
+  overflow-y: auto;
   padding: calc(2rem * var(--space)) calc(2.5rem * var(--space));
   padding-top: calc(var(--titlebar-h) + 1rem * var(--space));
 }
