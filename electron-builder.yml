@@ -8,11 +8,15 @@ files:
   - out/**/*
   - package.json
   - resources/icon.png
+  - resources/icons/*.png
   - '!**/*.map'
 # El temario se lee desde los recursos de la app (process.resourcesPath/content).
+# Los .ico van afuera del asar porque los accesos directos de Windows no pueden apuntar adentro.
 extraResources:
   - from: content
     to: content
+  - from: build/icons
+    to: icons
 asar: true
 npmRebuild: false
 # Ícono generado con npm run icon (build/icon.ico).

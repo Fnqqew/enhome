@@ -69,6 +69,8 @@ App de escritorio personal para aprender inglés. Nace de un mapa conceptual con
 
 ### Diseño
 - Una sola base visual para toda la app: **minimalista, sobria y amigable**.
+- **Ventana propia:** la app dibuja su barra superior, sin color aparte, con los tres botones redondos a la izquierda (cerrar, minimizar y maximizar) y el nombre de la sección al medio. Los bordes de la ventana son redondeados.
+- El estilo elegido pinta la ventana y cambia el ícono de la barra de tareas y el del acceso directo del escritorio, que queda con ese logo aunque la app esté cerrada.
 - **Estilos visuales** a elección, cada uno con su logo, colores, tipografías y formas: *Celeste* (por defecto; sobrio y plano), *Ruta* (el recorrido como línea de subte, con un color por nivel), *Cuaderno* (hoja rayada, birome y resaltador), *Racha* (táctil, con botones que se hunden) y *Original*.
 - Personalización sobre el estilo: modo claro u oscuro, color (el del estilo o una de 8 paletas), tipografía (la del estilo o una de 3), tamaño de letra y espaciado compacto o amplio.
 - **Modo lectura en toda la app:** vista sin distracciones, lectura en voz alta con las voces del sistema (gratis) y la opción de seleccionar un texto para preguntarle a Claude.

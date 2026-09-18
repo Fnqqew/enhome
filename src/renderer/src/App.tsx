@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
 import type { Navigate, SectionId } from './navigation'
 import Logo from './components/Logo'
+import TitleBar from './components/TitleBar'
 import { useSettings } from './theme/SettingsProvider'
 import Curriculum from './pages/Curriculum'
 import Home from './pages/Home'
@@ -39,9 +40,12 @@ export default function App(): React.JSX.Element {
 
   if (!status) {
     return (
-      <main className="centered">
-        <p className="muted">Verificando tu sesión de Claude…</p>
-      </main>
+      <>
+        <TitleBar title="Proyecto Inglés" />
+        <main className="centered">
+          <p className="muted">Verificando tu sesión de Claude…</p>
+        </main>
+      </>
     )
   }
   if (status.state !== 'ready') return <LockScreen status={status} onRetry={checkStatus} />
@@ -58,18 +62,21 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
   const { settings } = useSettings()
 
   return (
-    <main className="centered">
-      <div className="card lock stack">
-        <Logo style={settings.style} className="logo lock-logo" />
-        <h1>Proyecto Inglés</h1>
-        <p>{message}</p>
-        <div>
-          <button className="btn" onClick={onRetry}>
-            Reintentar
-          </button>
+    <>
+      <TitleBar title="Proyecto Inglés" />
+      <main className="centered">
+        <div className="card lock stack">
+          <Logo style={settings.style} className="logo lock-logo" />
+          <h1>Proyecto Inglés</h1>
+          <p>{message}</p>
+          <div>
+            <button className="btn" onClick={onRetry}>
+              Reintentar
+            </button>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   )
 }
 
@@ -94,8 +101,11 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
     if (!examLocked || target === 'pruebas') setSection(target)
   }
 
+  const title = SECTIONS.find((s) => s.id === section)?.label ?? 'Proyecto Inglés'
+
   return (
     <div className="shell">
+      <TitleBar title={title} />
       <nav className="sidebar">
         <div className="brand">
           <Logo style={settings.style} />

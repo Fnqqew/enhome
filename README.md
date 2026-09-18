@@ -8,7 +8,7 @@
 
 App de escritorio personal para Windows: gramática, comprensión lectora y escritura según el marco europeo (MCER), con ejercicios, resúmenes y exámenes generados y revisados por Claude Code con tu suscripción.
 
-![Versión](https://img.shields.io/badge/versión-1.1.0-1c6fb3?style=flat-square)
+![Versión](https://img.shields.io/badge/versión-1.2.0-1c6fb3?style=flat-square)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b3c6d?style=flat-square&logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-44-47848f?style=flat-square&logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react&logoColor=white)
@@ -37,6 +37,8 @@ App de escritorio personal para Windows: gramática, comprensión lectora y escr
 ## Estilos visuales
 
 Cinco estilos completos, cada uno con su logo, colores, tipografías y formas, en modo claro y oscuro. Se eligen en **Ajustes**, y encima podés cambiar color, tipografía, tamaño de letra, espaciado y animaciones.
+
+La ventana no tiene barra de Windows: la dibuja la app, sin color aparte, con los tres botones redondos a la izquierda. El estilo elegido también cambia el ícono de la barra de tareas y el del acceso directo del escritorio, que lo conserva con la app cerrada.
 
 | Estilo | Idea |
 |---|---|

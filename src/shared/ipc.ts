@@ -48,7 +48,12 @@ export const IPC = {
   rewardsNews: 'rewards:news',
   rewardsHint: 'rewards:hint',
   rewardsSecondChance: 'rewards:second-chance',
-  // Evento del proceso principal a la interfaz.
+  // Botones de la barra de ventana propia.
+  windowMinimize: 'window:minimize',
+  windowMaximizeToggle: 'window:maximize-toggle',
+  windowClose: 'window:close',
+  // Eventos del proceso principal a la interfaz.
+  windowState: 'window:state',
   dayChanged: 'app:day-changed',
   devSetToday: 'dev:set-today',
   devSimulateExam: 'dev:simulate-exam',
@@ -110,6 +115,11 @@ export interface Api {
   takeRewardNews(): Promise<RewardNews[]>
   usePracticeHint(exerciseId: number): Promise<string>
   useSecondChance(examId: number, index: number): Promise<SecondChanceResult>
+  minimizeWindow(): void
+  toggleMaximizeWindow(): void
+  closeWindow(): void
+  // Se llama cuando la ventana se maximiza o vuelve a su tamaño; devuelve la función para dejar de escuchar.
+  onWindowState(callback: (maximized: boolean) => void): () => void
   // Se llama con la nueva fecha cuando cambia el día; devuelve la función para dejar de escuchar.
   onDayChanged(callback: (today: string) => void): () => void
   // Solo en desarrollo.

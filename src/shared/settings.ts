@@ -4,12 +4,43 @@ import { z } from 'zod'
 import { SUMMARY_TYPE_IDS } from './summaries'
 
 // Estilos visuales completos: cada uno trae su logo, colores, tipografías y formas.
+// «window» es el color de la barra de la ventana, que el proceso principal pinta antes de abrirla.
 export const STYLES = [
-  { id: 'celeste', label: 'Celeste', description: 'Sobrio y plano, con un guiño argentino.', colors: ['#4ba3e3', '#0b3c6d', '#f2b33d'] },
-  { id: 'ruta', label: 'Ruta', description: 'El recorrido como una línea de subte.', colors: ['#0f1b33', '#1e9e6a', '#e8772e'] },
-  { id: 'cuaderno', label: 'Cuaderno', description: 'Hoja rayada, birome azul y resaltador.', colors: ['#2446b8', '#e0524b', '#ffe45c'] },
-  { id: 'racha', label: 'Racha', description: 'Táctil y con energía, para la constancia.', colors: ['#ff6b4a', '#ffc53d', '#2e2e2e'] },
-  { id: 'original', label: 'Original', description: 'El diseño con el que nació la app.', colors: ['#3f5bd0', '#f6f5f2', '#22211f'] }
+  {
+    id: 'celeste',
+    label: 'Celeste',
+    description: 'Sobrio y plano, con un guiño argentino.',
+    colors: ['#4ba3e3', '#0b3c6d', '#f2b33d'],
+    window: { light: '#ffffff', dark: '#13202d' }
+  },
+  {
+    id: 'ruta',
+    label: 'Ruta',
+    description: 'El recorrido como una línea de subte.',
+    colors: ['#0f1b33', '#1e9e6a', '#e8772e'],
+    window: { light: '#0f1b33', dark: '#070c17' }
+  },
+  {
+    id: 'cuaderno',
+    label: 'Cuaderno',
+    description: 'Hoja rayada, birome azul y resaltador.',
+    colors: ['#2446b8', '#e0524b', '#ffe45c'],
+    window: { light: '#f4f6fa', dark: '#11141c' }
+  },
+  {
+    id: 'racha',
+    label: 'Racha',
+    description: 'Táctil y con energía, para la constancia.',
+    colors: ['#ff6b4a', '#ffc53d', '#2e2e2e'],
+    window: { light: '#ecebe8', dark: '#111111' }
+  },
+  {
+    id: 'original',
+    label: 'Original',
+    description: 'El diseño con el que nació la app.',
+    colors: ['#3f5bd0', '#f6f5f2', '#22211f'],
+    window: { light: '#ffffff', dark: '#1f2023' }
+  }
 ] as const
 
 export type StyleId = (typeof STYLES)[number]['id']

@@ -47,6 +47,14 @@ const api: Api = {
   takeRewardNews: () => invoke(IPC.rewardsNews),
   usePracticeHint: (exerciseId) => invoke(IPC.rewardsHint, exerciseId),
   useSecondChance: (examId, index) => invoke(IPC.rewardsSecondChance, examId, index),
+  minimizeWindow: () => ipcRenderer.send(IPC.windowMinimize),
+  toggleMaximizeWindow: () => ipcRenderer.send(IPC.windowMaximizeToggle),
+  closeWindow: () => ipcRenderer.send(IPC.windowClose),
+  onWindowState: (callback) => {
+    const listener = (_event: Electron.IpcRendererEvent, maximized: boolean): void => callback(maximized)
+    ipcRenderer.on(IPC.windowState, listener)
+    return () => ipcRenderer.removeListener(IPC.windowState, listener)
+  },
   onDayChanged: (callback) => {
     const listener = (_event: Electron.IpcRendererEvent, today: string): void => callback(today)
     ipcRenderer.on(IPC.dayChanged, listener)

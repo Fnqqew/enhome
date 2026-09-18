@@ -1,16 +1,19 @@
-import { app, BrowserWindow, nativeTheme, powerMonitor, shell } from 'electron'
+import { app, BrowserWindow, ipcMain, powerMonitor, shell } from 'electron'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
 import { watchDayChange } from './day-watcher'
 import { openDatabase } from './db/database'
+import { loadSettings } from './db/settings-repo'
 import { registerIpc } from './ipc'
+import { applyStyle, windowColor } from './window-style'
 import { IPC } from '../shared/ipc'
+import type { AppSettings } from '../shared/settings'
 
 // Carpeta de datos fija: la versión instalada y la de desarrollo comparten el mismo progreso.
 app.setPath('userData', join(app.getPath('appData'), 'proyecto-ingles'))
 app.setAppUserModelId('com.artemis18.proyectoingles')
 
-function createWindow(): void {
+function createWindow(settings: AppSettings): BrowserWindow {
   const win = new BrowserWindow({
     width: 1200,
     height: 800,
@@ -19,9 +22,12 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     title: 'Proyecto Inglés',
+    // Barra propia: los botones y el color los dibuja la app, que sabe el estilo elegido.
+    frame: false,
+    roundedCorners: true,
     // Instalada, el ícono sale del ejecutable; esto lo muestra también en desarrollo.
     icon: join(__dirname, '../../resources/icon.png'),
-    backgroundColor: nativeTheme.shouldUseDarkColors ? '#161719' : '#f6f5f2',
+    backgroundColor: windowColor(settings),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false
@@ -29,6 +35,9 @@ function createWindow(): void {
   })
 
   win.on('ready-to-show', () => win.show())
+  const sendState = (): void => win.webContents.send(IPC.windowState, win.isMaximized())
+  win.on('maximize', sendState)
+  win.on('unmaximize', sendState)
   win.webContents.setWindowOpenHandler(({ url }) => {
     shell.openExternal(url)
     return { action: 'deny' }
@@ -39,6 +48,11 @@ function createWindow(): void {
   } else {
     win.loadFile(join(__dirname, '../renderer/index.html'))
   }
+  return win
+}
+
+function currentWindow(): BrowserWindow | undefined {
+  return BrowserWindow.getFocusedWindow() ?? BrowserWindow.getAllWindows()[0]
 }
 
 // Una sola instancia: dos ventanas escribiendo la misma base se pisarían.
@@ -58,7 +72,20 @@ if (!app.requestSingleInstanceLock()) {
 
     // En desarrollo el temario se lee del repo; instalada, de los recursos de la app.
     const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-    const { today } = registerIpc(db, contentDir, is.dev)
+    // Al cambiar el estilo se repintan la ventana, el ícono de la barra de tareas y el del escritorio.
+    const { today } = registerIpc(db, contentDir, is.dev, (settings) => {
+      const win = currentWindow()
+      if (win) applyStyle(win, settings)
+    })
+
+    ipcMain.on(IPC.windowMinimize, () => currentWindow()?.minimize())
+    ipcMain.on(IPC.windowMaximizeToggle, () => {
+      const win = currentWindow()
+      if (!win) return
+      if (win.isMaximized()) win.unmaximize()
+      else win.maximize()
+    })
+    ipcMain.on(IPC.windowClose, () => currentWindow()?.close())
 
     // Avisa a la interfaz cuando cambia el día para que se actualice sola.
     const dayWatcher = watchDayChange(today, (date) => {
@@ -67,9 +94,12 @@ if (!app.requestSingleInstanceLock()) {
     powerMonitor.on('resume', dayWatcher.check)
     app.on('will-quit', dayWatcher.stop)
 
-    createWindow()
+    const settings = loadSettings(db)
+    applyStyle(createWindow(settings), settings)
     app.on('activate', () => {
-      if (BrowserWindow.getAllWindows().length === 0) createWindow()
+      if (BrowserWindow.getAllWindows().length > 0) return
+      const current = loadSettings(db)
+      applyStyle(createWindow(current), current)
     })
   })
 

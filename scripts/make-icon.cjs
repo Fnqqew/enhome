@@ -1,45 +1,57 @@
-// Genera el ícono de la app (logo Celeste) con Electron, que dibuja el SVG con la tipografía real.
-// Uso: npm run icon  → build/icon.ico (instalador y ejecutable) y resources/icon.png (ventana).
+// Genera los íconos de la app con Electron, que dibuja los SVG con las tipografías reales.
+// Uso: npm run icon
+//   build/icon.ico + resources/icon.png          → ícono del instalador y del ejecutable (estilo Celeste)
+//   build/icons/<estilo>.ico                     → accesos directos, que cambian con el estilo elegido
+//   resources/icons/<estilo>.png                 → ícono de la ventana y la barra de tareas
 const { app, BrowserWindow } = require('electron')
 const { mkdirSync, writeFileSync } = require('node:fs')
 const { join } = require('node:path')
 const { pathToFileURL } = require('node:url')
+const LOGOS = require('../src/shared/logos.json')
 
 const root = join(__dirname, '..')
 const RENDER = 512
 const ICO_SIZES = [16, 20, 24, 32, 40, 48, 64, 128, 256]
-// Hasta 32 px las letras no se leen: esos tamaños van solo con los globos.
+// Hasta 32 px las letras no se leen: esos tamaños van sin texto.
 const TEXT_FROM = 40
 
-function logo(withText) {
-  const font = "'Plus Jakarta Sans', sans-serif"
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-    <rect x="1" y="1" width="62" height="62" rx="14" fill="#FFFFFF" stroke="#D5E2EE" stroke-width="2"/>
-    <path d="M11 12h24a6 6 0 0 1 6 6v12a6 6 0 0 1-6 6H22l-7 6v-6h-4a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6z" fill="#4BA3E3"/>
-    <path d="M53 25H31a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h12l7 6v-6h3a6 6 0 0 0 6-6V31a6 6 0 0 0-6-6z" fill="#0B3C6D"/>
-    ${withText ? `<text x="14" y="29" font-family="${font}" font-weight="800" font-size="11" fill="#fff">ES</text>
-    <text x="34" y="42" font-family="${font}" font-weight="800" font-size="11" fill="#fff">EN</text>` : ''}
-    <circle cx="54" cy="12" r="4" fill="#F2B33D"/>
-  </svg>`
+const FONTS = {
+  'Plus Jakarta Sans': '@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2',
+  Literata: '@fontsource-variable/literata/files/literata-latin-wght-italic.woff2'
 }
 
-async function render(win, withText) {
-  const fontUrl = pathToFileURL(
-    join(root, 'node_modules/@fontsource-variable/plus-jakarta-sans/files/plus-jakarta-sans-latin-wght-normal.woff2')
-  ).href
-  const html = `<!doctype html><style>
-    @font-face { font-family: 'Plus Jakarta Sans'; src: url('${fontUrl}') format('woff2'); font-weight: 200 800; }
+function page(style, withText) {
+  // El texto se saca en los tamaños chicos, donde sería una mancha.
+  const mark = withText ? LOGOS[style] : LOGOS[style].replace(/<text[\s\S]*?<\/text>/g, '')
+  const faces = Object.entries(FONTS)
+    .map(([family, file]) => {
+      const url = pathToFileURL(join(root, 'node_modules', file)).href
+      return `@font-face { font-family: '${family}'; src: url('${url}') format('woff2'); font-weight: 200 800; font-style: italic; }
+              @font-face { font-family: '${family}'; src: url('${url}') format('woff2'); font-weight: 200 800; }`
+    })
+    .join('\n')
+  return `<!doctype html><style>
+    ${faces}
     html, body { margin: 0; background: transparent; overflow: hidden; }
     /* El escalado de pantalla de Windows cambia el tamaño real: el logo ocupa el lado menor visible. */
     svg { display: block; width: 100vmin; height: 100vmin; }
-  </style>${logo(withText)}`
-  const htmlPath = join(app.getPath('temp'), `proyecto-ingles-icon-${withText ? 'texto' : 'simple'}.html`)
-  writeFileSync(htmlPath, html)
+  </style><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">${mark}</svg>`
+}
+
+async function render(win, style, withText) {
+  const htmlPath = join(app.getPath('temp'), `proyecto-ingles-icon-${style}-${withText ? 'texto' : 'simple'}.html`)
+  writeFileSync(htmlPath, page(style, withText))
 
   await win.loadFile(htmlPath)
   await win.webContents.executeJavaScript('document.fonts.ready.then(() => document.fonts.size)')
-  await new Promise((resolve) => setTimeout(resolve, 300))
-  const image = await win.webContents.capturePage()
+
+  // La primera captura a veces falla mientras la ventana todavía no compuso nada.
+  let image = null
+  for (let intento = 0; intento < 3 && !image; intento++) {
+    await new Promise((resolve) => setTimeout(resolve, 300))
+    image = await win.webContents.capturePage().catch(() => null)
+  }
+  if (!image) throw new Error(`No se pudo capturar el logo de ${style}`)
   const { width, height } = image.getSize()
   const side = Math.min(width, height)
   return image.crop({ x: 0, y: 0, width: side, height: side })
@@ -76,15 +88,23 @@ app.whenReady().then(async () => {
     webPreferences: { offscreen: true }
   })
   try {
-    const full = await render(win, true)
-    const simple = await render(win, false)
-    const png = (size) => (size >= TEXT_FROM ? full : simple).resize({ width: size, height: size, quality: 'best' }).toPNG()
+    mkdirSync(join(root, 'build/icons'), { recursive: true })
+    mkdirSync(join(root, 'resources/icons'), { recursive: true })
 
-    mkdirSync(join(root, 'build'), { recursive: true })
-    mkdirSync(join(root, 'resources'), { recursive: true })
-    writeFileSync(join(root, 'build/icon.ico'), buildIco(ICO_SIZES.map((size) => ({ size, data: png(size) }))))
-    writeFileSync(join(root, 'resources/icon.png'), png(256))
-    console.log(`Ícono generado desde ${full.getSize().width} px: build/icon.ico y resources/icon.png`)
+    for (const style of Object.keys(LOGOS)) {
+      const full = await render(win, style, true)
+      const simple = await render(win, style, false)
+      const png = (size) => (size >= TEXT_FROM ? full : simple).resize({ width: size, height: size, quality: 'best' }).toPNG()
+
+      writeFileSync(join(root, 'build/icons', `${style}.ico`), buildIco(ICO_SIZES.map((size) => ({ size, data: png(size) }))))
+      writeFileSync(join(root, 'resources/icons', `${style}.png`), png(256))
+      // El instalador y el ejecutable llevan el ícono del estilo predeterminado.
+      if (style === 'celeste') {
+        writeFileSync(join(root, 'build/icon.ico'), buildIco(ICO_SIZES.map((size) => ({ size, data: png(size) }))))
+        writeFileSync(join(root, 'resources/icon.png'), png(256))
+      }
+      console.log(`Ícono de ${style} generado`)
+    }
   } catch (err) {
     console.error(err)
     process.exitCode = 1

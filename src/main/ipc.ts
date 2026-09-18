@@ -5,6 +5,7 @@ import { loadCurriculum, loadRoadmap } from './content/curriculum'
 import { buildCurriculumMap } from './content/curriculum-map'
 import type { Db } from './db/database'
 import { loadSettings, updateSettings } from './db/settings-repo'
+import type { AppSettings } from '../shared/settings'
 import { simulatedExam } from './engine/dev'
 import { Placement } from './engine/placement'
 import { generatePlacementQuestions } from './engine/placement-questions'
@@ -51,7 +52,12 @@ const summaryType = z.enum(SUMMARY_TYPE_IDS)
 const id = z.number().int()
 const rating = z.union(PRACTICE_RATINGS.map((r) => z.literal(r)) as [z.ZodLiteral<1>, z.ZodLiteral<3>, z.ZodLiteral<5>])
 
-export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today: () => string } {
+export function registerIpc(
+  db: Db,
+  contentDir: string,
+  isDev: boolean,
+  onSettingsChange: (settings: AppSettings) => void = () => {}
+): { today: () => string } {
   // Se arma una vez; si el temario tiene errores, el mensaje llega a la interfaz.
   let services: Services | null = null
   const getServices = (): Services => {
@@ -89,7 +95,11 @@ export function registerIpc(db: Db, contentDir: string, isDev: boolean): { today
   )
 
   handle(IPC.settingsGet, () => loadSettings(db))
-  handle(IPC.settingsUpdate, (patch) => updateSettings(db, patch))
+  handle(IPC.settingsUpdate, (patch) => {
+    const settings = updateSettings(db, patch)
+    onSettingsChange(settings)
+    return settings
+  })
 
   handle(IPC.curriculumList, () => getServices().curriculum)
   handle(IPC.curriculumMap, () => {
