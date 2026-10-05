@@ -1,0 +1,173 @@
+/* Pantalla de carga.
+   Los estados base son los finales: si las animaciones están reducidas, se ve todo quieto y completo. */
+
+.splash {
+  position: fixed;
+  inset: 0;
+  /* Por encima de la barra de la ventana: la app se arma debajo mientras tanto. */
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  background:
+    radial-gradient(55% 45% at 50% 40%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 72%),
+    var(--bg);
+  color: var(--text);
+  text-align: center;
+  /* Mientras carga, la ventana se puede mover desde cualquier parte. */
+  -webkit-app-region: drag;
+}
+
+.splash.leaving {
+  animation: splash-out 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.splash-mark {
+  position: relative;
+  width: 160px;
+  height: 140px;
+  margin-bottom: 0.9rem;
+}
+
+.splash-house {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.splash-house path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+
+/* La casa se dibuja de un solo trazo y la chimenea se suma al final. */
+.house-line {
+  animation: draw 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.house-chimney {
+  animation: draw 0.35s ease-out 0.85s both;
+}
+
+/* Lo que se escribe adentro: «Hola» en gris, «Hello» en el color del texto. */
+.splash-word {
+  position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--muted);
+  transition: color 0.25s ease;
+}
+
+.splash-word.english {
+  color: var(--text);
+}
+
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 3px;
+  vertical-align: -0.12em;
+  border-radius: 1px;
+  background: var(--accent);
+  animation: blink 1s steps(1) infinite;
+}
+
+.splash-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.splash-name span {
+  display: inline-block;
+  animation: letter-in 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.splash-name .accent {
+  color: var(--accent);
+}
+
+.splash-tagline {
+  color: var(--muted);
+  font-size: 0.95rem;
+  animation: rise-in 0.5s ease-out 0.95s both;
+}
+
+.splash-progress {
+  width: 9rem;
+  height: 3px;
+  margin-top: 1.7rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 22%, transparent);
+}
+
+.splash-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transform-origin: left;
+  animation: progress 2.5s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.splash-status {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  animation: rise-in 0.4s ease-out 1.1s both;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(4px);
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes splash-out {
+  to {
+    opacity: 0;
+    transform: scale(1.04);
+    filter: blur(3px);
+  }
+}

@@ -5,6 +5,7 @@ import Icon from './components/Icon'
 import About from './pages/About'
 import Comments from './pages/Comments'
 import Logo from './components/Logo'
+import Splash from './components/Splash'
 import TitleBar from './components/TitleBar'
 import { useSettings } from './theme/SettingsProvider'
 import Curriculum from './pages/Curriculum'
@@ -23,6 +24,9 @@ const EXTRA_SECTIONS: SectionId[] = ['ajustes', 'comentarios', 'acerca']
 
 export default function App(): React.JSX.Element {
   const [status, setStatus] = useState<ClaudeStatus | null>(null)
+  // La pantalla de carga se muestra una sola vez, al abrir la app.
+  const [splashDone, setSplashDone] = useState(false)
+  const finishSplash = useCallback(() => setSplashDone(true), [])
 
   const checkStatus = useCallback(() => {
     setStatus(null)
@@ -34,18 +38,26 @@ export default function App(): React.JSX.Element {
 
   useEffect(checkStatus, [checkStatus])
 
+  let screen: React.JSX.Element
   if (!status) {
-    return (
+    screen = (
       <>
         <TitleBar title="Enhome" />
-        <main className="centered">
-          <p className="muted">Verificando tu sesión de Claude…</p>
-        </main>
+        <main className="centered">{splashDone && <p className="muted">Verificando tu sesión de Claude…</p>}</main>
       </>
     )
+  } else if (status.state !== 'ready') {
+    screen = <LockScreen status={status} onRetry={checkStatus} />
+  } else {
+    screen = <Shell status={status} />
   }
-  if (status.state !== 'ready') return <LockScreen status={status} onRetry={checkStatus} />
-  return <Shell status={status} />
+
+  return (
+    <>
+      {screen}
+      {!splashDone && <Splash ready={status !== null} onDone={finishSplash} />}
+    </>
+  )
 }
 
 function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadyStatus>; onRetry: () => void }): React.JSX.Element {

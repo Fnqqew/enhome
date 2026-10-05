@@ -116,3 +116,76 @@
 .token:hover:not(:disabled) {
   transform: translateX(2px);
 }
+
+/* Botones de la ventana.
+   Al acercar el cursor, los tres crecen apenas en cascada y muestran su símbolo; el que se toca
+   se agranda más con un halo de su propio color, y al apretarlo se hunde. */
+.win-btn {
+  --win-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition:
+    transform 0.24s var(--win-ease),
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.win-btn svg {
+  transform: scale(0.3);
+  transition:
+    opacity 0.16s ease,
+    transform 0.24s var(--win-ease);
+}
+
+.window-buttons:hover .win-btn {
+  transform: scale(1.12);
+}
+
+.window-buttons:hover .win-btn:nth-child(2) {
+  transition-delay: 0.03s;
+}
+
+.window-buttons:hover .win-btn:nth-child(3) {
+  transition-delay: 0.06s;
+}
+
+.window-buttons:hover .win-btn svg,
+.win-btn:focus-visible svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.window-buttons .win-btn:hover {
+  transform: scale(1.32);
+  transition-delay: 0s;
+  filter: brightness(1.06) saturate(1.15);
+  box-shadow:
+    inset 0 0 0 1px rgb(0 0 0 / 0.12),
+    0 0 0 3px color-mix(in srgb, var(--win-color) 30%, transparent),
+    0 2px 8px -2px var(--win-color);
+}
+
+/* Cada símbolo tiene su gesto: la cruz gira, el guion se estira y el cuadrado se agranda. */
+.window-buttons .win-btn.close:hover svg {
+  transform: rotate(90deg);
+}
+
+.window-buttons .win-btn.minimize:hover svg {
+  transform: scaleX(1.25);
+}
+
+.window-buttons .win-btn.maximize:hover svg {
+  transform: scale(1.15);
+}
+
+.window-buttons .win-btn:active {
+  transform: scale(0.92);
+  transition-duration: 0.08s;
+  filter: brightness(0.92);
+}
+
+/* El foco con teclado usa el color del botón, no el anillo azul general. */
+.win-btn:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 4px var(--win-color);
+}

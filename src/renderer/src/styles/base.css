@@ -196,16 +196,20 @@ p {
   cursor: pointer;
 }
 
+.win-btn {
+  background: var(--win-color);
+}
+
 .win-btn.close {
-  background: #ff5f57;
+  --win-color: #ff5f57;
 }
 
 .win-btn.minimize {
-  background: #febc2e;
+  --win-color: #febc2e;
 }
 
 .win-btn.maximize {
-  background: #28c840;
+  --win-color: #28c840;
 }
 
 .win-btn svg {

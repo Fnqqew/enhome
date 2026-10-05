@@ -6,11 +6,19 @@ import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { STYLES, type AppSettings, type StyleId } from '../shared/settings'
 
-// El color de fondo de la ventana es el de la barra lateral, para que no se vea un parpadeo al abrir.
+export function isDark(settings: AppSettings): boolean {
+  return settings.theme === 'dark' || (settings.theme === 'system' && nativeTheme.shouldUseDarkColors)
+}
+
+// El color de fondo de la ventana es el de la pantalla de carga, para que no se vea un parpadeo al abrir.
 export function windowColor(settings: AppSettings): string {
   const style = STYLES.find((s) => s.id === settings.style) ?? STYLES[0]
-  const dark = settings.theme === 'dark' || (settings.theme === 'system' && nativeTheme.shouldUseDarkColors)
-  return (dark ? style.preview.dark : style.preview.light).sidebar
+  return (isDark(settings) ? style.preview.dark : style.preview.light).bg
+}
+
+// Viaja en la dirección de la página para que el estilo se aplique antes de que cargue la interfaz.
+export function styleHash(settings: AppSettings): string {
+  return `style=${settings.style}&theme=${isDark(settings) ? 'dark' : 'light'}`
 }
 
 function iconPng(style: StyleId): string {

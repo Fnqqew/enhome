@@ -140,7 +140,10 @@ describe('ejercicios de práctica', () => {
       return noCorrections
     })
     await expect(generatePracticePool(request, ask)).resolves.toHaveLength(fullLength)
-    expect(prompts.filter(isGeneration).length).toBe(4)
+    // Solo se vuelve a pedir la tanda que falló: la de los largos se genera una sola vez.
+    const generations = prompts.filter(isGeneration).map(groupOf)
+    expect(generations.filter((g) => g === 'short')).toHaveLength(2)
+    expect(generations.filter((g) => g === 'long')).toHaveLength(1)
   })
 
   it('nunca entrega ejercicios sin revisar', async () => {

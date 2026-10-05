@@ -8,7 +8,7 @@
 
 App de escritorio para Windows que te lleva del nivel **A1 al A2** del marco europeo (MCER) con práctica diaria realista —conversaciones, situaciones y tandas de traducción—, resúmenes a tu medida y exámenes semanales. Todo el material lo genera y lo revisa **Claude Code** con tu propia suscripción.
 
-![Versión](https://img.shields.io/badge/versión-1.4.0-1c6fb3?style=flat-square)
+![Versión](https://img.shields.io/badge/versión-1.5.0-1c6fb3?style=flat-square)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b3c6d?style=flat-square&logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-44-47848f?style=flat-square&logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react&logoColor=white)
@@ -156,6 +156,13 @@ tests/                    tests (tests/live: contra Claude real)
 </details>
 
 ## Novedades
+
+**1.5.0**
+- Pantalla de carga: una casa que se dibuja de un trazo y, adentro, «Hola» que se convierte en «Hello». Toma los colores del estilo desde el primer instante.
+- La práctica se genera más rápido cuando algo falla: se reintenta solo la tanda con problemas.
+- Animación al pasar el cursor por los botones de la ventana.
+
+**1.4.1** · Animación al pasar el cursor por los botones de la ventana.
 
 **1.4.0**
 - Práctica más larga y exigente: 8 ejercicios por día y tres formatos nuevos (tanda de traducción, conversación y situación real) con devolución parte por parte.

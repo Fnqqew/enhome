@@ -6,7 +6,7 @@ import { watchDayChange } from './day-watcher'
 import { openDatabase } from './db/database'
 import { loadSettings } from './db/settings-repo'
 import { registerIpc } from './ipc'
-import { applyStyle, windowColor } from './window-style'
+import { applyStyle, styleHash, windowColor } from './window-style'
 import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
 
@@ -64,9 +64,9 @@ function createWindow(settings: AppSettings): BrowserWindow {
   })
 
   if (is.dev && process.env.ELECTRON_RENDERER_URL) {
-    win.loadURL(process.env.ELECTRON_RENDERER_URL)
+    win.loadURL(`${process.env.ELECTRON_RENDERER_URL}#${styleHash(settings)}`)
   } else {
-    win.loadFile(join(__dirname, '../renderer/index.html'))
+    win.loadFile(join(__dirname, '../renderer/index.html'), { hash: styleHash(settings) })
   }
   return win
 }

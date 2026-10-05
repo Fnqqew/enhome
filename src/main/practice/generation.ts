@@ -162,13 +162,13 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
   return applyCorrections(exercises, review.corrections, (a, b) => a.type === b.type)
 }
 
-export async function generatePracticePool(request: PoolRequest, ask: Ask = askClaude): Promise<StoredExercise[]> {
+// Una tanda lista para usar: generada, revisada y controlada. Si falla, se reintenta solo esa tanda,
+// así un ejercicio corto mal armado no obliga a regenerar también los largos.
+async function generateValidGroup(request: PoolRequest, counts: Partial<Record<ExerciseType, number>>, ask: Ask): Promise<StoredExercise[]> {
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const groups = await Promise.all(split(request.counts).map((counts) => generateGroup(request, counts, ask)))
-      const reviewed = groups.flat()
-
+      const reviewed = await generateGroup(request, counts, ask)
       // Un ejercicio que no pasa los controles automáticos se descarta en lugar de romper toda la práctica.
       const prepared = reviewed.flatMap((e) => {
         try {
@@ -178,14 +178,19 @@ export async function generatePracticePool(request: PoolRequest, ask: Ask = askC
           return []
         }
       })
-      const missing = (Object.keys(request.counts) as ExerciseType[]).filter((type) => !prepared.some((e) => e.type === type))
-      if (prepared.length <= SESSION_SIZE || missing.length > 0) {
-        throw new Error(`Claude no generó suficientes ejercicios válidos${missing.length > 0 ? ` (faltan: ${missing.join(', ')})` : ''}.`)
-      }
+      const missing = (Object.keys(counts) as ExerciseType[]).filter((type) => !prepared.some((e) => e.type === type))
+      if (missing.length > 0) throw new Error(`Claude no generó suficientes ejercicios válidos (faltan: ${missing.join(', ')}).`)
       return prepared
     } catch (err) {
       lastError = err
     }
   }
   throw lastError
+}
+
+export async function generatePracticePool(request: PoolRequest, ask: Ask = askClaude): Promise<StoredExercise[]> {
+  const groups = await Promise.all(split(request.counts).map((counts) => generateValidGroup(request, counts, ask)))
+  const prepared = groups.flat()
+  if (prepared.length <= SESSION_SIZE) throw new Error('Claude no generó suficientes ejercicios válidos para armar la práctica.')
+  return prepared
 }

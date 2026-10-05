@@ -6,6 +6,7 @@ import { loadCurriculum } from '../../src/main/content/curriculum'
 import { gradeOpenAnswer } from '../../src/main/practice/ai-grading'
 import { planPool } from '../../src/main/practice/composition'
 import { generatePracticePool } from '../../src/main/practice/generation'
+import { longSample } from '../helpers/long-exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
 const topic = curriculum.find((t) => t.id === 'a1-to-be')!
@@ -19,7 +20,20 @@ describe.skipIf(!process.env.LIVE_CLAUDE)('práctica con Claude en vivo', () => 
     console.log(`${exercises.length} ejercicios en ${Math.round((Date.now() - started) / 1000)} s`)
     console.log(JSON.stringify(exercises, null, 2))
     for (const type of Object.keys(counts)) expect(exercises.some((e) => e.type === type)).toBe(true)
-  }, 300_000)
+  }, 900_000)
+
+  it('corrige una conversación turno por turno', async () => {
+    const feedback = await gradeOpenAnswer({
+      topic,
+      subtopic,
+      exercise: longSample('dialogue', 'en la recepción de un hotel'),
+      answers: ['Hi Ana, I is fine, thanks.', 'I am from Rosario.']
+    })
+    console.log(JSON.stringify(feedback, null, 2))
+    expect(feedback.parts).toHaveLength(2)
+    expect(feedback.parts?.[0].correct).toBe(false)
+    expect(feedback.parts?.[1].correct).toBe(true)
+  }, 180_000)
 
   it('corrige un texto con errores', async () => {
     const exercise = {
