@@ -65,6 +65,12 @@ function emptyAnswer(exercise: StoredExercise): ExerciseAnswer {
       return { type: exercise.type, choices: [] }
     case 'word_order':
       return { type: exercise.type, tokens: [] }
+    case 'translation_set':
+      return { type: exercise.type, texts: exercise.sentences.map(() => '') }
+    case 'dialogue':
+      return { type: exercise.type, texts: exercise.script.filter((line) => line.role === 'you').map(() => '') }
+    case 'roleplay':
+      return { type: exercise.type, texts: exercise.steps.map(() => '') }
     default:
       return { type: exercise.type, text: '' }
   }
@@ -283,8 +289,8 @@ export class Exams {
         const auto = gradeAuto(question.exercise, answer ?? emptyAnswer(question.exercise))
         if (auto.kind === 'graded') return { answer, feedback: auto.feedback }
         const { topic, subtopic } = this.content(question.topicId, question.subtopicId)
-        const text = answer && 'text' in answer ? answer.text : ''
-        return { answer, feedback: await this.gradeOpen({ topic, subtopic, exercise: question.exercise as OpenExercise, answer: text }) }
+        const answers = answer && 'text' in answer ? [answer.text] : answer && 'texts' in answer ? answer.texts : []
+        return { answer, feedback: await this.gradeOpen({ topic, subtopic, exercise: question.exercise as OpenExercise, answers }) }
       })
     )
 

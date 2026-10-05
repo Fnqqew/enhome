@@ -35,6 +35,41 @@ function sample(type: ExerciseType, n: number): StoredExercise {
     }
     case 'writing':
       return { type, instruction: 'i', task: `Consigna ${n}`, minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
+    case 'translation_set':
+      return {
+        type,
+        instruction: 'i',
+        situation: `Escena ${n}`,
+        sentences: [
+          { spanish: `Hoy trabajo ${n}.`, answers: [`I work today ${n}.`], explanation: 'x' },
+          { spanish: 'Mi hermana estudia.', answers: ['My sister studies.'], explanation: 'x' },
+          { spanish: 'Somos amigos.', answers: ['We are friends.'], explanation: 'x' }
+        ]
+      }
+    case 'dialogue':
+      return {
+        type,
+        instruction: 'i',
+        situation: `Charla ${n}`,
+        script: [
+          { role: 'other', speaker: 'Ana', text: 'Hi! How are you?' },
+          { role: 'you', cue: 'Saludá y decí cómo estás', sample: 'Hi Ana, I am fine, thanks.' },
+          { role: 'other', speaker: 'Ana', text: 'Where are you from?' },
+          { role: 'you', cue: 'Decí de dónde sos', sample: 'I am from Rosario.' }
+        ]
+      }
+    case 'roleplay':
+      return {
+        type,
+        instruction: 'i',
+        situation: `Trámite ${n}`,
+        goal: 'Pedir un turno',
+        steps: [
+          { cue: 'Saludá', sample: 'Good morning.' },
+          { cue: 'Pedí un turno', sample: 'I would like an appointment, please.' },
+          { cue: 'Agradecé', sample: 'Thank you very much.' }
+        ]
+      }
   }
 }
 
@@ -53,6 +88,12 @@ function rightAnswer(e: StoredExercise): ExerciseAnswer {
       return { type: e.type, choices: e.questions.map((q) => q.correctIndex) }
     case 'writing':
       return { type: e.type, text: 'My name is Juan and I am from Rosario.' }
+    case 'translation_set':
+      return { type: e.type, texts: e.sentences.map((s) => s.answers[0]) }
+    case 'dialogue':
+      return { type: e.type, texts: e.script.flatMap((line) => (line.role === 'you' ? [line.sample] : [])) }
+    case 'roleplay':
+      return { type: e.type, texts: e.steps.map((s) => s.sample) }
   }
 }
 
@@ -67,10 +108,11 @@ const generator: PoolGenerator = async ({ subtopic, counts }) => {
   return (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) => Array.from({ length: count }, (_, i) => sample(type, i)))
 }
 
-const grader: OpenAnswerGrader = async ({ exercise, answer }) => {
+const grader: OpenAnswerGrader = async ({ exercise, answers }) => {
   graded.push(exercise.type)
-  const correct = answer.length > 10
-  return { correct, score: correct ? 8 : 3, correctAnswer: 'ref', explanation: '', review: { correctedText: answer, comments: 'Bien.', mistakes: [] } }
+  const text = answers.join(' ')
+  const correct = text.length > 10
+  return { correct, score: correct ? 8 : 3, correctAnswer: 'ref', explanation: '', review: { correctedText: text, comments: 'Bien.', mistakes: [] } }
 }
 
 beforeEach(() => {
@@ -209,5 +251,31 @@ describe('escritura y recuperación', () => {
     const s = await answerAllRight(session(await practice.start(day(6))))
     expect(practice.finish(s.id, day(6)).purpose).toBe('recovery')
     expect(progression.getState(day(6)).week?.recovered).toBe(true)
+  })
+})
+
+describe('práctica larga', () => {
+  it('siempre trae una tanda de traducción y una conversación o situación', async () => {
+    const view = session(await practice.start(MON))
+    expect(view.exercises).toHaveLength(SESSION_SIZE)
+    const types = view.exercises.map((e) => e.type)
+    expect(types).toContain('translation_set')
+    expect(types.filter((t) => t === 'dialogue' || t === 'roleplay')).toHaveLength(1)
+  })
+
+  it('al cambiar la conversación la reemplaza por la situación, y al revés', async () => {
+    const view = session(await practice.start(MON))
+    const immersive = view.exercises.find((e) => e.type === 'dialogue' || e.type === 'roleplay')!
+    const next = session(practice.skip(immersive.id))
+    const replaced = next.exercises.find((e) => e.slot === immersive.slot)!
+    expect(replaced.type).toBe(immersive.type === 'dialogue' ? 'roleplay' : 'dialogue')
+  })
+
+  it('las respuestas de varias partes llegan completas a la corrección', async () => {
+    const view = session(await practice.start(MON))
+    const set = view.exercises.find((e) => e.type === 'translation_set')!
+    // Una oración distinta de la referencia obliga a pedirle la corrección a Claude.
+    await practice.answer(set.id, { type: 'translation_set', texts: ['I work today 0.', 'My sister is a student.', 'We are friends.'] })
+    expect(graded).toContain('translation_set')
   })
 })

@@ -2,6 +2,12 @@ import type { ExerciseFeedback, ExerciseType } from '@shared/exercises'
 
 function title(type: ExerciseType, feedback: ExerciseFeedback): string {
   if (type === 'writing') return `Puntaje: ${feedback.score}/10`
+  if (feedback.parts && feedback.parts.length > 0) {
+    const right = feedback.parts.filter((p) => p.correct).length
+    return right === feedback.parts.length
+      ? `¡Todo bien! ${right} de ${feedback.parts.length}`
+      : `Te salieron ${right} de ${feedback.parts.length} · puntaje ${feedback.score}/10`
+  }
   if (type === 'reading' && feedback.questionResults && !feedback.correct) {
     return `Acertaste ${feedback.questionResults.filter(Boolean).length} de ${feedback.questionResults.length}`
   }

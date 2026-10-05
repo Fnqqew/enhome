@@ -35,7 +35,7 @@ describe.skipIf(!process.env.LIVE_CLAUDE)('práctica con Claude en vivo', () => 
       topic,
       subtopic,
       exercise,
-      answer: 'Hi, my name are Juan. I have 30 years and I am engineer. I am from rosario and I am very happy.'
+      answers: ['Hi, my name are Juan. I have 30 years and I am engineer. I am from rosario and I am very happy.']
     })
     console.log(JSON.stringify(feedback, null, 2))
     expect(feedback.score).toBeLessThan(10)

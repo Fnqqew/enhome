@@ -2,6 +2,7 @@
 
 import type { CurriculumMap, CurriculumTopic } from './curriculum'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
+import type { FeedbackNote, NewFeedback } from './feedback'
 import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
 import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from './summaries'
@@ -48,6 +49,10 @@ export const IPC = {
   rewardsNews: 'rewards:news',
   rewardsHint: 'rewards:hint',
   rewardsSecondChance: 'rewards:second-chance',
+  feedbackList: 'feedback:list',
+  feedbackAdd: 'feedback:add',
+  feedbackToggle: 'feedback:toggle',
+  feedbackRemove: 'feedback:remove',
   // Botones de la barra de ventana propia.
   windowMinimize: 'window:minimize',
   windowMaximizeToggle: 'window:maximize-toggle',
@@ -115,6 +120,10 @@ export interface Api {
   takeRewardNews(): Promise<RewardNews[]>
   usePracticeHint(exerciseId: number): Promise<string>
   useSecondChance(examId: number, index: number): Promise<SecondChanceResult>
+  getFeedback(): Promise<FeedbackNote[]>
+  addFeedback(note: NewFeedback): Promise<FeedbackNote[]>
+  toggleFeedback(id: number): Promise<FeedbackNote[]>
+  removeFeedback(id: number): Promise<FeedbackNote[]>
   minimizeWindow(): void
   toggleMaximizeWindow(): void
   closeWindow(): void

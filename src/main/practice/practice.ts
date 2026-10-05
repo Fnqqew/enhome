@@ -27,6 +27,15 @@ export class PracticeError extends Error {}
 
 const AVOID_RECENT = 20
 
+// Por cuál se reemplaza cada ejercicio largo al cambiarlo, en orden de preferencia.
+const REPLACEMENT_FAMILY: Partial<Record<ExerciseType, ExerciseType[]>> = {
+  dialogue: ['roleplay', 'dialogue'],
+  roleplay: ['dialogue', 'roleplay'],
+  translation_set: ['translation_set', 'translation'],
+  reading: ['reading'],
+  writing: ['writing']
+}
+
 interface SessionRow {
   id: number
   week_id: number
@@ -118,7 +127,8 @@ export class Practice {
       feedback = auto.feedback
     } else {
       const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
-      feedback = await this.gradeOpen({ topic, subtopic, exercise: stored as OpenExercise, answer: 'text' in answer ? answer.text : '' })
+      const answers = 'text' in answer ? [answer.text] : 'texts' in answer ? answer.texts : []
+      feedback = await this.gradeOpen({ topic, subtopic, exercise: stored as OpenExercise, answers })
     }
 
     // Pudo llegar otra respuesta mientras Claude corregía.
@@ -136,9 +146,10 @@ export class Practice {
 
     const spares = this.exerciseRows(session.id).filter((r) => r.slot === null && !r.skipped)
     const sameSkill = (r: ExerciseRow): boolean => SKILL_OF_TYPE[r.type] === SKILL_OF_TYPE[exercise.type]
-    const keepsType = exercise.type === 'reading' || exercise.type === 'writing'
-    const replacement = keepsType
-      ? (spares.find((r) => r.type === exercise.type) ?? spares.find(sameSkill) ?? spares[0])
+    // Los ejercicios largos se cambian por uno equivalente para que la práctica no pierda peso.
+    const family = REPLACEMENT_FAMILY[exercise.type]
+    const replacement = family
+      ? (family.map((type) => spares.find((r) => r.type === type)).find(Boolean) ?? spares.find(sameSkill) ?? spares[0])
       : (spares.find((r) => r.type !== exercise.type && sameSkill(r)) ?? spares.find(sameSkill) ?? spares[0])
     if (!replacement) throw new PracticeError('No quedan ejercicios alternativos para esta práctica.')
 

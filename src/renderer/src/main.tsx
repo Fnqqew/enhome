@@ -15,6 +15,9 @@ import App from './App'
 import ErrorBoundary from './components/ErrorBoundary'
 import { SettingsProvider } from './theme/SettingsProvider'
 import './styles/base.css'
+import './styles/sections.css'
+import './styles/styles.css'
+import './styles/animations.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

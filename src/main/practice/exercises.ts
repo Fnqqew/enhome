@@ -51,6 +51,16 @@ export function prepareExercise(exercise: GeneratedExercise, random: () => numbe
       if (mixed.join(' ') === tokens.join(' ')) mixed = [...tokens.slice(1), tokens[0]]
       return { ...exercise, tokens: mixed }
     }
+    case 'dialogue': {
+      const turns = exercise.script.filter((line) => line.role === 'you')
+      if (turns.length < 2) throw new Error('La conversación tiene que dejarle al menos dos turnos al alumno.')
+      if (turns.length > 5) throw new Error('La conversación le pide demasiados turnos al alumno.')
+      if (!exercise.script.some((line) => line.role === 'other')) throw new Error('La conversación no tiene a nadie con quien hablar.')
+      return exercise
+    }
+    case 'translation_set':
+      if (exercise.sentences.some((s) => s.answers.length === 0)) throw new Error('Una oración de la tanda no tiene traducción de referencia.')
+      return exercise
     case 'writing':
       if (exercise.minWords > exercise.maxWords) throw new Error('La extensión mínima supera a la máxima.')
       return exercise
@@ -71,6 +81,17 @@ export function toPublicExercise(e: StoredExercise): PublicExercise {
       return { type: e.type, instruction: e.instruction, sentence: e.sentence }
     case 'translation':
       return { type: e.type, instruction: e.instruction, spanish: e.spanish }
+    case 'translation_set':
+      return { type: e.type, instruction: e.instruction, situation: e.situation, sentences: e.sentences.map((s) => ({ spanish: s.spanish })) }
+    case 'dialogue':
+      return {
+        type: e.type,
+        instruction: e.instruction,
+        situation: e.situation,
+        script: e.script.map((line) => (line.role === 'other' ? line : { role: 'you' as const, cue: line.cue }))
+      }
+    case 'roleplay':
+      return { type: e.type, instruction: e.instruction, situation: e.situation, goal: e.goal, steps: e.steps.map((s) => ({ cue: s.cue })) }
     case 'reading':
       return { type: e.type, instruction: e.instruction, text: e.text, questions: e.questions.map((q) => ({ prompt: q.prompt, options: q.options })) }
     case 'writing':
@@ -89,6 +110,10 @@ export function mainText(e: StoredExercise): string {
       return e.sentence
     case 'translation':
       return e.spanish
+    case 'translation_set':
+    case 'dialogue':
+    case 'roleplay':
+      return e.situation
     case 'reading':
       return e.text.slice(0, 80)
     case 'writing':

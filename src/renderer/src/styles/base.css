@@ -167,7 +167,8 @@ p {
   display: flex;
   align-items: center;
   height: var(--titlebar-h);
-  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+  justify-content: flex-end;
   background: var(--bg);
   -webkit-app-region: drag;
 }
@@ -1749,16 +1750,16 @@ h5.level {
 
 .style-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
-  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.75rem;
 }
 
 .style-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.3rem;
-  padding: 0.8rem;
+  align-items: stretch;
+  gap: 0.45rem;
+  padding: 0.6rem 0.6rem 0.8rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg);
@@ -1768,6 +1769,7 @@ h5.level {
 
 .style-card:hover {
   border-color: var(--accent);
+  box-shadow: 0 6px 18px -10px rgb(0 0 0 / 0.35);
 }
 
 .style-card[aria-pressed='true'] {
@@ -1776,245 +1778,98 @@ h5.level {
   background: var(--accent-soft);
 }
 
+.style-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline: 0.2rem;
+}
+
+.style-head .badge {
+  margin-left: auto;
+}
+
 .style-card .logo {
-  width: 2.4rem;
-  height: 2.4rem;
-  margin-bottom: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.style-card > .muted {
+  padding-inline: 0.2rem;
 }
 
 .style-name {
   font-weight: 700;
 }
 
-.style-dots {
+/* Miniatura de la app pintada con los colores del estilo. */
+.style-thumb {
+  display: grid;
+  grid-template-columns: 28% 1fr;
+  height: 5.6rem;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.thumb-side {
   display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem 0.4rem;
+}
+
+.thumb-side i {
+  display: block;
+  height: 0.32rem;
+  border-radius: 999px;
+  background: rgb(128 128 128 / 0.35);
+}
+
+.thumb-side i:first-child {
+  width: 70%;
+  height: 0.45rem;
+  margin-bottom: 0.15rem;
+}
+
+.thumb-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem 0.55rem;
+}
+
+.thumb-title {
+  width: 45%;
+  height: 0.45rem;
+  border-radius: 999px;
+  opacity: 0.85;
+}
+
+.thumb-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   gap: 0.25rem;
+  padding: 0.4rem;
+  border: 1px solid;
+  border-radius: 0.35rem;
+}
+
+.thumb-line {
+  height: 0.25rem;
+  border-radius: 999px;
+  opacity: 0.3;
+}
+
+.thumb-line.short {
+  width: 60%;
+}
+
+.thumb-btn {
+  width: 36%;
+  height: 0.5rem;
   margin-top: auto;
-  padding-top: 0.3rem;
-}
-
-.style-dots i {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50%;
-  border: 1px solid rgb(0 0 0 / 0.1);
-}
-
-/* Estilos visuales.
-   Cada bloque redefine variables; los de modo oscuro van después y tienen más especificidad.
-   Una paleta elegida en Ajustes pisa --accent desde el atributo style de <html>. */
-
-/* Celeste: sobrio y plano, celeste y azul marino, números en tipografía de datos. */
-:root[data-style='celeste'] {
-  --bg: #f5f8fb;
-  --surface: #ffffff;
-  --surface-hover: #eaf1f8;
-  --border: #d5e2ee;
-  --text: #0b1f33;
-  --muted: #5d7085;
-  --accent: #1c6fb3;
-  --accent-contrast: #ffffff;
-  --danger: #c2413b;
-  --radius: 14px;
-  --btn-radius: 9px;
-  --sidebar-border: transparent;
-  --style-font: 'Plus Jakarta Sans Variable', 'Segoe UI', system-ui, sans-serif;
-  --style-display: 'Plus Jakarta Sans Variable', 'Segoe UI', system-ui, sans-serif;
-  --style-numbers: 'JetBrains Mono Variable', Consolas, monospace;
-}
-
-:root[data-style='celeste'][data-theme='dark'] {
-  --bg: #0d1620;
-  --surface: #13202d;
-  --surface-hover: #1a2b3b;
-  --border: #22364a;
-  --text: #e6eef6;
-  --muted: #8ea3b8;
-  --accent: #6cb8ef;
-  --accent-contrast: #06243f;
-  --danger: #ef7f78;
-}
-
-:root[data-style='celeste'] h1 {
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-/* Ruta: barra lateral oscura, formas de cápsula y un color por nivel en el mapa. */
-:root[data-style='ruta'] {
-  --bg: #eef1f6;
-  --surface: #ffffff;
-  --surface-hover: #e4e8f0;
-  --border: #d7dce6;
-  --text: #0f1b33;
-  --muted: #5b6478;
-  --accent: #1a8a5c;
-  --accent-contrast: #ffffff;
-  --danger: #c2413b;
-  --radius: 14px;
-  --btn-radius: 999px;
-  --style-font: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
-  --style-display: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
-  --sidebar-bg: #0f1b33;
-  --sidebar-text: #e8ecf4;
-  --sidebar-muted: #8f9bb3;
-  --sidebar-hover: rgb(255 255 255 / 0.07);
-  --sidebar-border: transparent;
-  --sidebar-current-bg: rgb(63 207 142 / 0.16);
-  --sidebar-current-text: #5fd3a0;
-}
-
-:root[data-style='ruta'][data-theme='dark'] {
-  --bg: #0b1220;
-  --surface: #121b2e;
-  --surface-hover: #1a2540;
-  --border: #243152;
-  --text: #e8ecf4;
-  --muted: #8f9bb3;
-  --accent: #3fcf8e;
-  --accent-contrast: #06231a;
-  --danger: #ef7f78;
-  --sidebar-bg: #070c17;
-}
-
-:root[data-style='ruta'] h1 {
-  font-weight: 800;
-  letter-spacing: -0.01em;
-}
-
-:root[data-style='ruta'] .day,
-:root[data-style='ruta'] .chip,
-:root[data-style='ruta'] .segmented,
-:root[data-style='ruta'] .segmented button {
   border-radius: 999px;
 }
 
-:root[data-style='ruta'] .road-node + .road-node::before {
-  height: 5px;
-  top: 0.95rem;
-}
-
-:root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='A2'] {
-  --accent: #0e8fa3;
-  --accent-soft: color-mix(in srgb, #0e8fa3 12%, transparent);
-}
-
-:root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='B1'] {
-  --accent: #e8772e;
-  --accent-soft: color-mix(in srgb, #e8772e 12%, transparent);
-}
-
-:root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='B2'] {
-  --accent: #b0344f;
-  --accent-soft: color-mix(in srgb, #b0344f 12%, transparent);
-}
-
-/* Cuaderno: hoja rayada con margen, títulos en cursiva resaltados. */
-:root[data-style='cuaderno'] {
-  --bg: #fbfbf8;
-  --surface: #ffffff;
-  --surface-hover: #f1f4f9;
-  --border: #dce3ee;
-  --text: #1e2230;
-  --muted: #636a7a;
-  --accent: #2446b8;
-  --accent-contrast: #ffffff;
-  --danger: #d0433c;
-  --radius: 8px;
-  --btn-radius: 7px;
-  --style-font: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
-  --style-display: 'Literata Variable', Georgia, serif;
-  --rule: #e4e9f2;
-  --margin-line: #e0524b;
-  --highlight: #fff07a;
-  --sidebar-bg: #f4f6fa;
-}
-
-:root[data-style='cuaderno'][data-theme='dark'] {
-  --bg: #151923;
-  --surface: #1c2130;
-  --surface-hover: #252b3c;
-  --border: #2c3346;
-  --text: #e9ebf2;
-  --muted: #9aa1b3;
-  --accent: #8da6ff;
-  --accent-contrast: #0e1430;
-  --danger: #ef7f78;
-  --rule: #1f2533;
-  --margin-line: #8a3f3b;
-  --highlight: #5c4f14;
-  --sidebar-bg: #11141c;
-}
-
-:root[data-style='cuaderno'] .content {
-  background-image:
-    linear-gradient(90deg, transparent 1.2rem, var(--margin-line) 1.2rem, var(--margin-line) calc(1.2rem + 2px), transparent calc(1.2rem + 2px)),
-    repeating-linear-gradient(180deg, transparent 0 1.9rem, var(--rule) 1.9rem calc(1.9rem + 1px));
-}
-
-/* En Literata el «1» se confunde con una «l»: los códigos de nivel van con la letra del texto. */
-:root[data-style='cuaderno'] .level-code {
-  font-family: var(--font);
-}
-
-:root[data-style='cuaderno'] .content > h1 {
-  width: fit-content;
-  padding-inline: 0.2rem;
-  font-style: italic;
-  font-weight: 700;
-  background: linear-gradient(transparent 58%, var(--highlight) 58% 92%, transparent 92%);
-}
-
-/* Racha: bordes marcados, sombras duras y botones que se hunden. */
-:root[data-style='racha'] {
-  --bg: #f5f4f2;
-  --surface: #ffffff;
-  --surface-hover: #ecebe8;
-  --border: #d3d1cd;
-  --text: #232323;
-  --muted: #5e5e5e;
-  --accent: #cf4424;
-  --accent-contrast: #ffffff;
-  --danger: #b3261e;
-  --ink: #2e2e2e;
-  --radius: 18px;
-  --btn-radius: 14px;
-  --btn-border: 2px solid var(--ink);
-  --btn-shadow: 0 3px 0 var(--ink);
-  --card-border: 2px solid var(--ink);
-  --card-shadow: 0 4px 0 var(--ink);
-  --style-font: 'Nunito Variable', 'Segoe UI', system-ui, sans-serif;
-  --style-display: 'Baloo 2 Variable', 'Nunito Variable', system-ui, sans-serif;
-  --sidebar-bg: #ecebe8;
-  --sidebar-border: var(--border);
-}
-
-:root[data-style='racha'][data-theme='dark'] {
-  --bg: #161616;
-  --surface: #1f1f1f;
-  --surface-hover: #292929;
-  --border: #3a3a3a;
-  --text: #eeeeee;
-  --muted: #a8a8a8;
-  --accent: #ff7a5a;
-  --accent-contrast: #2a0d04;
-  --danger: #ff8a80;
-  --ink: #000000;
-  --sidebar-bg: #111111;
-}
-
-:root[data-style='racha'] h1 {
-  font-weight: 800;
-  font-size: 1.8rem;
-}
-
-:root[data-style='racha'] .btn:active:not(:disabled) {
-  transform: translateY(3px);
-  box-shadow: 0 0 0 var(--ink);
-}
-
-:root[data-style='racha'] .option,
-:root[data-style='racha'] .token,
-:root[data-style='racha'] .day {
-  border-width: 2px;
-}

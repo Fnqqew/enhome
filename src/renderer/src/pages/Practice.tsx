@@ -1,5 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type PracticeResult, type PracticeView, type SessionView } from '@shared/exercises'
+import {
+  EXERCISE_TYPE_LABELS,
+  type ExerciseAnswer,
+  type ExerciseType,
+  type PracticeResult,
+  type PracticeView,
+  type SessionView
+} from '@shared/exercises'
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
@@ -11,6 +18,9 @@ import type { Navigate } from '../navigation'
 
 // Desde cuántos minutos antes de medianoche se avisa durante una práctica.
 const MIDNIGHT_WARNING_MINUTES = 30
+
+// Los que no se corrigen solos: la espera es más larga y conviene avisarlo.
+const CORRECTED_BY_CLAUDE: ExerciseType[] = ['translation', 'translation_set', 'dialogue', 'roleplay', 'writing']
 
 export default function Practice({ navigate }: { navigate: Navigate }): React.JSX.Element {
   const [view, setView] = useState<PracticeView | null>(null)
@@ -159,7 +169,9 @@ function Intro({
         <button className="btn" disabled={starting} onClick={onStart}>
           {starting ? 'Preparando ejercicios…' : 'Empezar práctica'}
         </button>
-        {starting && <span className="muted">Puede tardar hasta un minuto: Claude está armando tus ejercicios.</span>}
+        {starting && (
+          <span className="muted">Claude está armando y revisando tus ejercicios. La primera vez del día puede tardar un par de minutos.</span>
+        )}
       </div>
     </section>
   )
@@ -245,7 +257,7 @@ function SessionPlayer({
           {!current.feedback ? (
             <div className="row">
               <button className="btn" type="submit" disabled={!draft || busy !== null}>
-                {busy === 'answer' ? (current.type === 'writing' || current.type === 'translation' ? 'Corrigiendo…' : 'Comprobando…') : 'Comprobar'}
+                {busy === 'answer' ? (CORRECTED_BY_CLAUDE.includes(current.type) ? 'Claude está corrigiendo…' : 'Comprobando…') : 'Comprobar'}
               </button>
               {!current.hint && (
                 <button

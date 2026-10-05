@@ -6,10 +6,11 @@ import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { STYLES, type AppSettings, type StyleId } from '../shared/settings'
 
+// El color de fondo de la ventana es el de la barra lateral, para que no se vea un parpadeo al abrir.
 export function windowColor(settings: AppSettings): string {
   const style = STYLES.find((s) => s.id === settings.style) ?? STYLES[0]
   const dark = settings.theme === 'dark' || (settings.theme === 'system' && nativeTheme.shouldUseDarkColors)
-  return dark ? style.window.dark : style.window.light
+  return (dark ? style.preview.dark : style.preview.light).sidebar
 }
 
 function iconPng(style: StyleId): string {
@@ -71,11 +72,24 @@ function updateShortcuts(ico: string): void {
   })
 }
 
+// Cada ajuste que se guarda pasa por acá, pero los íconos solo se tocan cuando cambia el estilo:
+// reescribir los accesos directos lanza PowerShell y no tiene sentido hacerlo por un cambio de letra.
+const windowIcons = new WeakMap<BrowserWindow, StyleId>()
+let shortcutsStyle: StyleId | null = null
+
 export function applyStyle(win: BrowserWindow, settings: AppSettings): void {
+  win.setBackgroundColor(windowColor(settings))
+  if (windowIcons.get(win) === settings.style) return
+  windowIcons.set(win, settings.style)
+
   // El .ico trae varios tamaños y la barra de tareas elige el que necesita; el .png es el respaldo.
   const ico = stableIcon(settings.style)
   const icon = ico ?? iconPng(settings.style)
   if (existsSync(icon)) win.setIcon(nativeImage.createFromPath(icon))
-  win.setBackgroundColor(windowColor(settings))
-  if (ico) updateShortcuts(ico)
+
+  // Una vez por arranque (una reinstalación pudo haberlos pisado) y después solo si cambia el estilo.
+  if (ico && shortcutsStyle !== settings.style) {
+    shortcutsStyle = settings.style
+    updateShortcuts(ico)
+  }
 }

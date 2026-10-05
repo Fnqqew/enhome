@@ -1,3 +1,4 @@
+import { longRightAnswer, longSample } from '../helpers/long-exercises'
 import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { loadCurriculum } from '../../src/main/content/curriculum'
@@ -37,6 +38,10 @@ function sample(type: ExerciseType, n: number): StoredExercise {
     }
     case 'writing':
       return { type, instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
+    case 'translation_set':
+    case 'dialogue':
+    case 'roleplay':
+      return longSample(type, n)
   }
 }
 
@@ -55,6 +60,10 @@ function rightAnswer(e: StoredExercise): ExerciseAnswer {
       return { type: e.type, choices: e.questions.map((q) => q.correctIndex) }
     case 'writing':
       return { type: e.type, text: 'My name is Juan and I am from Rosario.' }
+    case 'translation_set':
+    case 'dialogue':
+    case 'roleplay':
+      return longRightAnswer(e)
   }
 }
 
@@ -70,10 +79,11 @@ const generator: ExamGenerator = async (request) => {
   return request.items.map((item, i) => ({ topicId: item.topic.id, subtopicId: item.subtopic.id, exercise: sample(item.type, i) }))
 }
 
-const grader: OpenAnswerGrader = async ({ exercise, answer }) => {
+const grader: OpenAnswerGrader = async ({ exercise, answers }) => {
   gradedOpen.push(exercise.type)
-  const correct = answer.length > 10
-  return { correct, score: correct ? 8 : 2, correctAnswer: 'ref', explanation: '', review: { correctedText: answer, comments: 'ok', mistakes: [] } }
+  const text = answers.join(' ')
+  const correct = text.length > 10
+  return { correct, score: correct ? 8 : 2, correctAnswer: 'ref', explanation: '', review: { correctedText: text, comments: 'ok', mistakes: [] } }
 }
 
 beforeEach(() => {

@@ -69,7 +69,9 @@ App de escritorio personal para aprender inglés. Nace de un mapa conceptual con
 
 ### Diseño
 - Una sola base visual para toda la app: **minimalista, sobria y amigable**.
-- **Ventana propia:** la app dibuja su barra superior, sin color aparte, con los tres botones redondos a la izquierda (cerrar, minimizar y maximizar) y el nombre de la sección al medio. Los bordes de la ventana son redondeados.
+- **Ventana propia:** la app dibuja su barra superior, sin color aparte, con tres botones redondos a la derecha en el orden de Windows (minimizar, maximizar y cerrar) y el nombre de la sección al medio. Los bordes de la ventana son redondeados.
+- **Secciones de apoyo:** «Comentarios», un cuaderno de ideas, errores y cosas que gustan, guardado solo en la computadora; y «Acerca de», con qué es la app, cómo funciona y los datos técnicos.
+- **Movimiento:** las secciones y tarjetas entran con un desplazamiento breve, la devolución de un ejercicio aparece con un rebote y, si está mal, con una sacudida corta. Todo se apaga con «Animaciones: reducidas».
 - El estilo elegido pinta la ventana y cambia el ícono de la barra de tareas y el del acceso directo del escritorio, que queda con ese logo aunque la app esté cerrada.
 - **Estilos visuales** a elección, cada uno con su logo, colores, tipografías y formas: *Celeste* (por defecto; sobrio y plano), *Ruta* (el recorrido como línea de subte, con un color por nivel), *Cuaderno* (hoja rayada, birome y resaltador), *Racha* (táctil, con botones que se hunden) y *Original*.
 - Personalización sobre el estilo: modo claro u oscuro, color (el del estilo o una de 8 paletas), tipografía (la del estilo o una de 3), tamaño de letra y espaciado compacto o amplio.
@@ -154,16 +156,21 @@ Todas las constantes están en `src/main/engine/rules.ts`.
 
 Las constantes están en `src/main/practice/composition.ts` y `src/main/practice/ai-grading.ts`.
 
-**Tipos de ejercicio**
+**Tipos de ejercicio** (10)
 - Opción múltiple, completar, ordenar la oración y corregir el error. Trabajan gramática y se corrigen al instante.
-- Traducir al inglés, que trabaja escritura. Si la respuesta coincide con una de referencia se corrige al instante; si no, la corrige Claude, que acepta traducciones válidas distintas.
-- Comprensión lectora: un texto con 2 o 3 preguntas, con puntaje parcial.
-- Escritura, que corrige Claude con criterios ponderados: lo que practica el subtema 40 %, gramática y ortografía 25 %, cumplir la consigna 25 %, vocabulario y claridad 10 %. Se considera correcta con 6/10 o más.
+- Traducir al inglés una oración completa, que trabaja escritura. Si la respuesta coincide con una de referencia se corrige al instante; si no, la corrige Claude, que acepta traducciones válidas distintas.
+- **Tanda de traducción** (desde 1.4): una escena cotidiana contada en 3 o 4 oraciones encadenadas que se traducen una por una. Si todas coinciden con una referencia se corrige sola; si no, Claude corrige oración por oración.
+- **Conversación** (desde 1.4): un diálogo en inglés con globos de chat donde el alumno completa 2 o 3 turnos según lo que le pide cada consigna. Claude corrige cada turno: que responda lo pedido, que suene natural y que use bien el subtema.
+- **Situación real** (desde 1.4): un trámite, una compra o un reclamo con un objetivo y 3 o 4 pasos que el alumno resuelve en inglés. Claude evalúa cada paso, incluido el registro y la cortesía.
+- Comprensión lectora: un texto de 90 a 140 palabras con 2 o 3 preguntas, con puntaje parcial.
+- Escritura, que corrige Claude con criterios ponderados: lo que practica el subtema 40 %, gramática y ortografía 25 %, cumplir la consigna 25 %, vocabulario y claridad 10 %. Se considera correcta con 6/10 o más. Extensión: A1 entre 35 y 70 palabras, A2 entre 60 y 110.
 - En la corrección automática no cuentan las mayúsculas, la puntuación final ni las contracciones (*isn't* = *is not*).
+- En los ejercicios de varias partes la devolución es parte por parte: si estuvo bien, cómo se diría y un comentario breve.
 
 **Armado de cada práctica**
-- Claude genera de una vez 9 a 11 ejercicios del subtema, y la sesión usa 6. El resto queda como alternativa para «Cambiar ejercicio».
-- Los días que trabajan lectura o escritura siempre incluyen al menos un ejercicio de ese tipo. La escritura va al final.
+- Cada práctica tiene **8 ejercicios**. Claude genera al menos 10 del subtema en dos tandas en paralelo, una con los cortos y otra con los largos, para que ninguna respuesta quede cortada. Cada tanda pasa por su propio revisor. Lo que sobra queda como alternativa para «Cambiar ejercicio».
+- Siempre entran una tanda de traducción y una conversación o una situación real (se alternan). Los días que trabajan lectura o escritura también incluyen ese tipo. La escritura va al final.
+- Al cambiar un ejercicio largo se lo reemplaza por uno equivalente: la conversación por la situación y viceversa, la tanda por otra tanda o por una traducción.
 - El resto se elige priorizando variedad de tipos y los tipos mejor calificados. Se ordena de lo más guiado a lo más abierto.
 - El alumno califica cada ejercicio con «No me sirvió», «Estuvo bien» o «Me encantó». Los tipos con promedio de 4 o más se generan más; los de 2 o menos, menos, salvo que sean obligatorios ese día.
 - Se le pide a Claude que no repita las oraciones de los últimos 20 ejercicios del mismo subtema.

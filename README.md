@@ -1,44 +1,60 @@
-﻿<div align="center">
+<div align="center">
 
-<img src="resources/icon.png" alt="Logo de Enhome" width="104" />
+<img src="resources/icon.png" alt="Logo de Enhome" width="112" />
 
 # Enhome
 
-**Aprendé inglés de A1 a A2, un tópico por semana, con Claude como profe.**
+### Aprendé inglés en casa, de a un tópico por semana, con Claude de profesor particular.
 
-App de escritorio personal para Windows: gramática, comprensión lectora y escritura según el marco europeo (MCER), con ejercicios, resúmenes y exámenes generados y revisados por Claude Code con tu suscripción.
+App de escritorio para Windows que te lleva del nivel **A1 al A2** del marco europeo (MCER) con práctica diaria realista —conversaciones, situaciones y tandas de traducción—, resúmenes a tu medida y exámenes semanales. Todo el material lo genera y lo revisa **Claude Code** con tu propia suscripción.
 
-![Versión](https://img.shields.io/badge/versión-1.3.0-1c6fb3?style=flat-square)
+![Versión](https://img.shields.io/badge/versión-1.4.0-1c6fb3?style=flat-square)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b3c6d?style=flat-square&logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-44-47848f?style=flat-square&logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat-square&logo=typescript&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-local-003b57?style=flat-square&logo=sqlite&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/IA-Claude%20Code-d97757?style=flat-square&logo=claude&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-215%20en%20verde-2faa5f?style=flat-square&logo=vitest&logoColor=white)
 
-<img src="docs/capturas/estilos.png" alt="Ajustes con los cinco estilos visuales" width="780" />
+<img src="docs/capturas/estilos.png" alt="Ajustes de Enhome con los cinco estilos visuales y sus miniaturas" width="820" />
+
+[Qué hace](#qué-hace) · [Un día de práctica](#un-día-de-práctica) · [Estilos](#estilos-visuales) · [Instalar](#instalar) · [Cómo está hecha](#cómo-está-hecha) · [Novedades](#novedades)
 
 </div>
 
 ---
 
-## Cómo funciona
+## Qué hace
 
 | | |
 |---|---|
-| 🧭 **Examen inicial** | Te ubica en el temario según lo que ya sabés. |
-| 📅 **Recorrido semanal** | Un tópico por semana y un subtema por día, de lunes a viernes. Examen desde el viernes, faltas, bloqueo, recuperación del domingo y semanas de refuerzo. |
-| ✍️ **Práctica diaria** | 7 tipos de ejercicio creados por Claude y controlados por un revisor, con corrección automática o de Claude, pistas y calificación. |
-| 📚 **Resúmenes** | 13 tipos, modo lectura y lectura en voz alta que cambia entre español e inglés. Seleccioná un texto y preguntale a Claude. |
-| 📝 **Pruebas** | Examen semanal (se aprueba con 8) con pausa única de 30 minutos, simulacros e historial. |
-| 🔥 **Progreso** | Racha, experiencia y niveles, comodines, logros y mapa del recorrido de A1 a B2. |
-| 🗂️ **Temario interactivo** | Buscador, niveles desplegables y el plan de B1 y B2. |
+| 🧭 **Examen inicial** | Te ubica en el temario según lo que ya sabés y arranca por el primer tópico que te cuesta. |
+| 📅 **Recorrido semanal** | Un tópico por semana, un subtema por día de lunes a viernes y examen desde el viernes. Hay faltas, bloqueo, recuperación del domingo y semanas de refuerzo cuando algo no sale. |
+| ✍️ **Práctica diaria** | 8 ejercicios por día entre 10 formatos, con conversaciones, situaciones reales y tandas de traducción que solo salen bien si estudiaste. |
+| 📚 **Resúmenes** | 13 maneras de leer el mismo tema, modo lectura y voz que cambia sola entre español e inglés. Seleccioná cualquier texto y preguntale a Claude. |
+| 📝 **Pruebas** | Examen semanal de 20 preguntas (se aprueba con 8), pausa única de 30 minutos, simulacros e historial. |
+| 🔥 **Progreso** | Racha, experiencia y niveles, comodines, logros y el mapa del recorrido de A1 a B2. |
+| 🎨 **Personalización** | 5 estilos completos con su logo, colores y tipografías, modo claro y oscuro, 8 paletas, 3 tipografías, tamaño, espaciado y animaciones. |
+| 💬 **Comentarios** | Un cuaderno para anotar ideas, errores y lo que te gusta mientras usás la app. |
+
+## Un día de práctica
+
+Cada práctica tiene **8 ejercicios** que van de lo más guiado a lo más abierto. Siempre incluye una tanda de traducción y una conversación o una situación real; los días de lectura o escritura suman ese tipo.
+
+| Formato | Qué hacés | Quién corrige |
+|---|---|---|
+| Opción múltiple · Completar · Ordenar · Corregir el error | Gramática del subtema, en oraciones con contexto. | La app, al instante. |
+| Traducir | Una oración completa del español rioplatense al inglés. | La app si coincide con una referencia; si no, Claude. |
+| **Tanda de traducción** | Una escena cotidiana contada en 3 o 4 oraciones encadenadas. | Claude, oración por oración. |
+| **Conversación** | Un chat en inglés donde completás tus turnos según lo que pide cada consigna. | Claude, turno por turno. |
+| **Situación real** | Un trámite, una compra o un reclamo con un objetivo y 3 o 4 pasos. | Claude, paso por paso, incluido el registro. |
+| Comprensión lectora | Un texto de 90 a 140 palabras con preguntas. | La app, con puntaje parcial. |
+| Escritura | Un texto con consigna concreta (A1: 35–70 palabras, A2: 60–110). | Claude, con criterios ponderados. |
+
+Cada ejercicio se puede **cambiar** por uno equivalente, **calificar** (los formatos que más te sirven aparecen más) y, si tenés comodines, pedir una **pista**.
 
 ## Estilos visuales
-
-Cinco estilos completos, cada uno con su logo, colores, tipografías y formas, en modo claro y oscuro. Se eligen en **Ajustes**, y encima podés cambiar color, tipografía, tamaño de letra, espaciado y animaciones.
-
-La ventana no tiene barra de Windows: la dibuja la app, sin color aparte, con los tres botones redondos a la izquierda. El estilo elegido también cambia el ícono de la barra de tareas y el del acceso directo del escritorio, que lo conserva con la app cerrada.
 
 | Estilo | Idea |
 |---|---|
@@ -47,6 +63,8 @@ La ventana no tiene barra de Windows: la dibuja la app, sin color aparte, con lo
 | **Cuaderno** | Hoja rayada, birome azul y resaltador. |
 | **Racha** | Táctil y con energía: bordes marcados y botones que se hunden. |
 | **Original** | El diseño con el que nació la app. |
+
+El estilo pinta toda la app —también la barra de la ventana— y cambia el ícono de la barra de tareas y el de los accesos directos, que lo conservan con la app cerrada.
 
 <table>
   <tr>
@@ -59,33 +77,53 @@ La ventana no tiene barra de Windows: la dibuja la app, sin color aparte, con lo
   </tr>
 </table>
 
-## Requisitos
-
-- **Windows 10 u 11.**
-- **[Claude Code](https://claude.com/claude-code)** instalado y con sesión iniciada con una suscripción de claude.ai (Pro o superior). Sin eso, la app muestra una pantalla de bloqueo. Si Claude Code está en otra ruta, indicala con la variable `CLAUDE_PATH`.
-- **Voces de Windows** en español y en inglés para la lectura en voz alta: *Configuración → Hora e idioma → Voz → Agregar voces*.
-- **Node.js 22 o superior**, solo para desarrollar.
-
 ## Instalar
+
+**Requisitos**
+
+- Windows 10 u 11.
+- [Claude Code](https://claude.com/claude-code) instalado y con sesión iniciada con una suscripción de claude.ai (Pro o superior). Sin eso, la app muestra una pantalla de bloqueo. Si está en otra ruta, indicala con la variable `CLAUDE_PATH`.
+- Voces de Windows en español y en inglés para la lectura en voz alta (*Configuración → Hora e idioma → Voz → Agregar voces*).
+- Node.js 22 o superior, solo para compilar.
 
 ```powershell
 npm install
 npm run dist
 ```
 
-Genera `dist/enhome-<versión>-setup.exe`, que instala la app y crea el acceso directo en el escritorio.
+Genera `dist/enhome-<versión>-setup.exe`, que instala la app y crea los accesos directos.
 
 > [!NOTE]
 > La app instalada y la de desarrollo guardan el progreso en la misma carpeta (`%APPDATA%\enhome`), así que lo comparten. Solo puede haber una ventana abierta a la vez.
 
-## Desarrollo
+> [!TIP]
+> El instalador no está firmado: si Windows lo bloquea con «Control de aplicaciones», permitilo desde *Seguridad de Windows*.
+
+## Cómo está hecha
+
+```mermaid
+flowchart LR
+  UI["Interfaz<br/>React 19"] -- "IPC tipado" --> P["Puente seguro<br/>preload"]
+  P --> M["Proceso principal<br/>Electron"]
+  M --> DB[("SQLite local<br/>progreso y ajustes")]
+  M -- "claude -p" --> C["Claude Code<br/>tu suscripción"]
+  C -- "JSON validado con zod" --> M
+```
+
+- **Nada de servidores ni API paga:** la app ejecuta Claude Code instalado en tu compu. Lo único que sale de la máquina es lo que se le consulta a Claude.
+- **Doble revisión:** un docente genera el material, un revisor lo corrige y la app aplica sus propios controles automáticos antes de mostrar nada. Lo que no pasa los controles se descarta.
+- **Generación en paralelo:** los ejercicios cortos y los largos se piden en tandas separadas para que ninguna respuesta quede cortada.
+- **Calidad:** más de 200 tests cubren el motor de progresión, la práctica, los exámenes, las recompensas y que los estilos sigan coincidiendo con sus miniaturas.
+
+<details>
+<summary><strong>Desarrollo</strong></summary>
 
 ```powershell
 npm run dev        # abre la app en modo desarrollo (con herramientas de prueba en Inicio)
 npm run typecheck  # revisa tipos
 npm test           # tests
 npm run build      # compila sin generar el instalador
-npm run icon       # regenera el ícono (build/icon.ico y resources/icon.png) desde el logo Celeste
+npm run icon       # regenera los íconos de los 5 estilos desde src/shared/logos.json
 ```
 
 Pruebas contra Claude de verdad (gastan uso de la suscripción):
@@ -97,28 +135,39 @@ $env:LIVE_CLAUDE = '1'; npx vitest run tests/live
 > [!WARNING]
 > Si la app no abre y aparece `Cannot read properties of undefined (reading 'isPackaged')`, la terminal tiene definida `ELECTRON_RUN_AS_NODE`. Pasa en las terminales integradas de VS Code: quitala antes de ejecutar `npm run dev`.
 
+</details>
+
 <details>
 <summary><strong>Estructura del proyecto</strong></summary>
 
 ```
-content/            temario base (A1 y A2) y plan de niveles futuros
-docs/               documento base con todas las reglas y capturas
-build/, resources/  ícono de la app
-scripts/            utilidades (generación del ícono)
-src/main/           proceso principal: base de datos, motor, Claude, práctica, resúmenes, pruebas y recompensas
-src/preload/        puente seguro entre la interfaz y el proceso principal
-src/renderer/       interfaz en React
-src/shared/         tipos y utilidades compartidas
-tests/              tests (tests/live: contra Claude real)
+content/                  temario base (A1 y A2) y plan de B1 y B2
+docs/                     documento base con todas las reglas, y capturas
+build/, resources/        íconos de la app, uno por estilo
+scripts/                  generación de íconos
+src/main/                 proceso principal: base de datos, motor, Claude, práctica, resúmenes, pruebas y recompensas
+src/preload/              puente seguro entre la interfaz y el proceso principal
+src/renderer/src/styles/  base.css (estructura) · sections.css (piezas) · styles.css (los 5 estilos) · animations.css
+src/renderer/             interfaz en React
+src/shared/               tipos, esquemas y datos compartidos
+tests/                    tests (tests/live: contra Claude real)
 ```
 
 </details>
 
-<details>
-<summary><strong>Cómo usa a Claude</strong></summary>
+## Novedades
 
-La app no usa la API paga: ejecuta Claude Code instalado en la compu (`claude -p`) con la suscripción del usuario. Todo lo que genera pasa por una autorrevisión en el mismo pedido, un segundo pedido que actúa de revisor y controles automáticos locales antes de mostrarse.
+**1.4.0**
+- Práctica más larga y exigente: 8 ejercicios por día y tres formatos nuevos (tanda de traducción, conversación y situación real) con devolución parte por parte.
+- Botones de la ventana a la derecha, íconos de línea propios, animaciones suaves, sombras y foco de campos más cuidados.
+- Secciones nuevas: **Comentarios** y **Acerca de**.
+- Ajustes muestra una miniatura real de cada estilo.
+- Correcciones: los accesos directos ya no se reescriben con cada ajuste, el selector de colores respeta el tema al instante y la alternancia entre conversación y situación funciona.
 
-</details>
+**1.3.0** · La app pasa a llamarse Enhome. **1.2.0** · Ventana propia y ícono por estilo. **1.1.0** · Ícono propio y estilos visuales.
 
-El diseño completo y todas las reglas están en [docs/documento-base.md](docs/documento-base.md).
+---
+
+<div align="center">
+<sub>El diseño completo y todas las reglas están en <a href="docs/documento-base.md">docs/documento-base.md</a>.</sub>
+</div>

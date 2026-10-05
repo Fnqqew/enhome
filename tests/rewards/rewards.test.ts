@@ -1,3 +1,4 @@
+import { longSample } from '../helpers/long-exercises'
 import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { loadCurriculum, loadRoadmap } from '../../src/main/content/curriculum'
@@ -133,6 +134,10 @@ function sample(type: ExerciseType, n: number): StoredExercise {
     }
     case 'writing':
       return { type, instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 'Hi! I am Ana.' }
+    case 'translation_set':
+    case 'dialogue':
+    case 'roleplay':
+      return longSample(type, n)
   }
 }
 

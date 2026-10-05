@@ -5,8 +5,24 @@ import { composeSession, MIN_POOL_SIZE, planPool, SESSION_SIZE, type PoolItem } 
 const total = (plan: Partial<Record<ExerciseType, number>>): number => Object.values(plan).reduce((s, n) => s + (n ?? 0), 0)
 
 describe('planPool', () => {
-  it('día de gramática: solo ejercicios de gramática y una traducción', () => {
-    expect(planPool(['grammar'])).toEqual({ multiple_choice: 2, fill_blank: 2, word_order: 2, error_correction: 2, translation: 1 })
+  it('día de gramática: gramática, una traducción y los tres ejercicios largos', () => {
+    expect(planPool(['grammar'])).toEqual({
+      multiple_choice: 2,
+      fill_blank: 2,
+      word_order: 2,
+      error_correction: 2,
+      translation: 1,
+      translation_set: 1,
+      dialogue: 1,
+      roleplay: 1
+    })
+  })
+
+  it('los ejercicios largos no se sacan aunque no gusten', () => {
+    const plan = planPool(['grammar'], { translation_set: 1, dialogue: 1, roleplay: 1 })
+    expect(plan.translation_set).toBe(1)
+    expect(plan.dialogue).toBe(1)
+    expect(plan.roleplay).toBe(1)
   })
 
   it('suma lectura y escritura cuando el subtema las trabaja', () => {
@@ -45,7 +61,21 @@ describe('composeSession', () => {
     const items = pool(planPool(['grammar']))
     const types = typesOf(items, composeSession(items, ['grammar'], {}, () => 0))
     expect(types).toHaveLength(SESSION_SIZE)
-    expect(new Set(types).size).toBe(5)
+    // La tanda, una situación y los cinco cortos distintos.
+    expect(new Set(types).size).toBe(7)
+  })
+
+  it('siempre incluye una tanda de traducción y una sola situación para conversar', () => {
+    const items = pool(planPool(['grammar']))
+    const types = typesOf(items, composeSession(items, ['grammar'], {}, () => 0))
+    expect(types).toContain('translation_set')
+    expect(types.filter((t) => t === 'dialogue' || t === 'roleplay')).toHaveLength(1)
+  })
+
+  it('alterna entre la conversación y la situación', () => {
+    const items = pool(planPool(['grammar']))
+    expect(typesOf(items, composeSession(items, ['grammar'], {}, () => 0))).toContain('dialogue')
+    expect(typesOf(items, composeSession(items, ['grammar'], {}, () => 0.9))).toContain('roleplay')
   })
 
   it('incluye lectura y escritura cuando corresponde, con la escritura al final', () => {

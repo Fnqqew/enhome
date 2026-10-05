@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
-import { FONTS, PALETTES, STYLES, type AppSettings } from '@shared/settings'
+import { FONTS, PALETTES, STYLES, type AppSettings, type StylePreview } from '@shared/settings'
 import { hasVoiceFor, pickVoice, type SpeechLang } from '@shared/speech'
 import Logo from '../components/Logo'
 import Segmented from '../components/Segmented'
@@ -21,8 +21,7 @@ const FONT_FAMILIES: Record<string, string> = {
 }
 
 export default function Settings({ status }: { status: Extract<ClaudeStatus, { state: 'ready' }> }): React.JSX.Element {
-  const { settings, update } = useSettings()
-  const isDark = document.documentElement.dataset.theme === 'dark'
+  const { settings, update, dark: isDark } = useSettings()
   const styleColors = (STYLES.find((s) => s.id === settings.style) ?? STYLES[0]).colors
 
   return (
@@ -37,14 +36,13 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
           <div className="style-grid" role="group" aria-label="Estilo">
             {STYLES.map((s) => (
               <button key={s.id} type="button" className="style-card" aria-pressed={s.id === settings.style} onClick={() => update({ style: s.id })}>
-                <Logo style={s.id} />
-                <span className="style-name">{s.label}</span>
-                <span className="muted small">{s.description}</span>
-                <span className="style-dots" aria-hidden="true">
-                  {s.colors.map((c) => (
-                    <i key={c} style={{ background: c }} />
-                  ))}
+                <StyleThumb preview={isDark ? s.preview.dark : s.preview.light} />
+                <span className="style-head">
+                  <Logo style={s.id} />
+                  <span className="style-name">{s.label}</span>
+                  {s.id === settings.style && <span className="badge ok">En uso</span>}
                 </span>
+                <span className="muted small">{s.description}</span>
               </button>
             ))}
           </div>
@@ -147,6 +145,28 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
       <VoiceSettings />
       <ClaudeConnection status={status} />
     </>
+  )
+}
+
+// Miniatura de la app con los colores de un estilo: barra lateral, título, una tarjeta y un botón.
+function StyleThumb({ preview }: { preview: StylePreview }): React.JSX.Element {
+  return (
+    <span className="style-thumb" style={{ background: preview.bg, borderColor: preview.border }} aria-hidden="true">
+      <span className="thumb-side" style={{ background: preview.sidebar }}>
+        <i style={{ background: preview.accent }} />
+        <i />
+        <i />
+        <i />
+      </span>
+      <span className="thumb-main">
+        <span className="thumb-title" style={{ background: preview.text }} />
+        <span className="thumb-card" style={{ background: preview.surface, borderColor: preview.border }}>
+          <span className="thumb-line" style={{ background: preview.text }} />
+          <span className="thumb-line short" style={{ background: preview.text }} />
+          <span className="thumb-btn" style={{ background: preview.accent }} />
+        </span>
+      </span>
+    </span>
   )
 }
 

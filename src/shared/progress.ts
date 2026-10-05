@@ -71,4 +71,11 @@ export type PlacementView =
 
 export interface AppInfo {
   isDev: boolean
+  version: string
+  // Para la sección «Acerca de».
+  electron: string
+  node: string
+  chrome: string
+  dataDir: string
+  repoUrl: string
 }

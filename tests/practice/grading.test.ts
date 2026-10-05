@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import type { StoredExercise } from '../../src/shared/exercises'
 import { gradeAuto, matchesAny, normalize } from '../../src/main/practice/grading'
+import { buildReviewPrompt } from '../../src/main/practice/ai-grading'
+import { loadCurriculum } from '../../src/main/content/curriculum'
+import { join } from 'node:path'
+import { longSample } from '../helpers/long-exercises'
 
 describe('normalize y matchesAny', () => {
   it('ignora mayúsculas, espacios, puntuación final y comillas tipográficas', () => {
@@ -71,5 +75,46 @@ describe('gradeAuto', () => {
   it('rechaza una respuesta de otro tipo', () => {
     const e: StoredExercise = { type: 'translation', instruction: 'i', spanish: 's', answers: ['a'], explanation: 'x' }
     expect(() => gradeAuto(e, { type: 'fill_blank', text: 'a' })).toThrow()
+  })
+})
+
+describe('ejercicios largos', () => {
+  const set = longSample('translation_set', 1)
+  const dialogue = longSample('dialogue', 1)
+
+  it('una tanda que coincide entera se corrige sola, parte por parte', () => {
+    const result = gradeAuto(set, { type: 'translation_set', texts: ['I work today 1.', 'My sister studies', 'we are friends'] })
+    expect(result.kind).toBe('graded')
+    if (result.kind !== 'graded') return
+    expect(result.feedback.correct).toBe(true)
+    expect(result.feedback.parts?.map((p) => p.correct)).toEqual([true, true, true])
+  })
+
+  it('si una oración de la tanda no coincide, la corrige Claude', () => {
+    expect(gradeAuto(set, { type: 'translation_set', texts: ['I work today 1.', 'My sister is study', 'We are friends.'] }).kind).toBe('needs-ai')
+  })
+
+  it('una tanda o una conversación vacías quedan en cero sin consultar a nadie', () => {
+    for (const result of [
+      gradeAuto(set, { type: 'translation_set', texts: ['', ' ', ''] }),
+      gradeAuto(dialogue, { type: 'dialogue', texts: ['', ''] })
+    ]) {
+      expect(result.kind).toBe('graded')
+      if (result.kind === 'graded') expect(result.feedback.score).toBe(0)
+    }
+  })
+
+  it('las conversaciones respondidas siempre las corrige Claude', () => {
+    expect(gradeAuto(dialogue, { type: 'dialogue', texts: ['Hi, I am good.', 'I am from Rosario.'] }).kind).toBe('needs-ai')
+  })
+
+  it('el pedido de corrección incluye cada turno con lo que escribió el alumno', () => {
+    const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
+    const topic = curriculum[0]
+    const prompt = buildReviewPrompt({ topic, subtopic: topic.subtopics[0], exercise: dialogue, answers: ['Hi, I am good.', ''] })
+    expect(prompt).toContain('Ana: Hi! How are you?')
+    expect(prompt).toContain('«Hi, I am good.»')
+    expect(prompt).toContain('(no escribió nada)')
+    expect(prompt).toContain('parts:')
   })
 })

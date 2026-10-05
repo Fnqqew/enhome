@@ -28,6 +28,12 @@ export default function ExerciseInput(props: Props): React.JSX.Element {
       return <ErrorCorrection {...props} content={content} />
     case 'translation':
       return <Translation {...props} content={content} />
+    case 'translation_set':
+      return <TranslationSet {...props} content={content} />
+    case 'dialogue':
+      return <Dialogue {...props} content={content} />
+    case 'roleplay':
+      return <RolePlay {...props} content={content} />
     case 'reading':
       return <Reading {...props} content={content} />
     case 'writing':
@@ -192,6 +198,147 @@ function Translation({ content, answer, feedback, onChange }: ItemProps<'transla
           onChange(e.target.value.trim() ? { type: 'translation', text: e.target.value } : null)
         }}
       />
+    </>
+  )
+}
+
+// Las respuestas de a varias partes: se completan todas antes de entregar.
+function useParts(
+  count: number,
+  initial: string[] | null,
+  type: 'translation_set' | 'dialogue' | 'roleplay',
+  onChange: Props['onChange']
+): [string[], (index: number, value: string) => void] {
+  const [texts, setTexts] = useState<string[]>(() => Array.from({ length: count }, (_, i) => initial?.[i] ?? ''))
+  const update = (index: number, value: string): void => {
+    const next = texts.map((t, i) => (i === index ? value : t))
+    setTexts(next)
+    onChange(next.every((t) => t.trim()) ? ({ type, texts: next } as ExerciseAnswer) : null)
+  }
+  return [texts, update]
+}
+
+function PartResult({ feedback, index }: { feedback: ExerciseFeedback | null; index: number }): React.JSX.Element | null {
+  const part = feedback?.parts?.[index]
+  if (!part) return null
+  return (
+    <div className={`part-result ${part.correct ? 'ok' : 'bad'}`}>
+      <span className="part-mark" aria-hidden="true">
+        {part.correct ? '✓' : '✗'}
+      </span>
+      <div className="stack-sm">
+        <p className="en">{part.expected}</p>
+        {part.comment && <p className="muted small">{part.comment}</p>}
+      </div>
+    </div>
+  )
+}
+
+function partClass(feedback: ExerciseFeedback | null, index: number): string {
+  const part = feedback?.parts?.[index]
+  return part ? (part.correct ? ' correct' : ' wrong') : ''
+}
+
+function TranslationSet({ content, answer, feedback, onChange }: ItemProps<'translation_set'>): React.JSX.Element {
+  const initial = answer?.type === 'translation_set' ? answer.texts : null
+  const [texts, update] = useParts(content.sentences.length, initial, 'translation_set', onChange)
+
+  return (
+    <>
+      <p className="situation">{content.situation}</p>
+      <ol className="part-list">
+        {content.sentences.map((sentence, i) => (
+          <li key={i} className="part">
+            <p className="part-cue">«{sentence.spanish}»</p>
+            <input
+              className={`text-answer${partClass(feedback, i)}`}
+              value={texts[i]}
+              disabled={feedback !== null}
+              placeholder="En inglés…"
+              autoFocus={i === 0}
+              aria-label={`Traducción ${i + 1}`}
+              onChange={(e) => update(i, e.target.value)}
+            />
+            <PartResult feedback={feedback} index={i} />
+          </li>
+        ))}
+      </ol>
+    </>
+  )
+}
+
+function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dialogue'>): React.JSX.Element {
+  // Número de turno del alumno para cada línea del guion (null en las del otro).
+  const turnOf = content.script.reduce<(number | null)[]>((acc, line) => {
+    const previous = acc.filter((n) => n !== null).length
+    return [...acc, line.role === 'you' ? previous : null]
+  }, [])
+  const turns = turnOf.filter((n) => n !== null).length
+  const initial = answer?.type === 'dialogue' ? answer.texts : null
+  const [texts, update] = useParts(turns, initial, 'dialogue', onChange)
+
+  return (
+    <>
+      <p className="situation">{content.situation}</p>
+      <div className="chat">
+        {content.script.map((line, i) => {
+          if (line.role === 'other') {
+            return (
+              <div key={i} className="chat-line">
+                <span className="chat-speaker">{line.speaker}</span>
+                <p className="bubble">{line.text}</p>
+              </div>
+            )
+          }
+          const index = turnOf[i]!
+          return (
+            <div key={i} className="chat-line mine">
+              <span className="chat-speaker">Vos · {line.cue}</span>
+              <input
+                className={`text-answer${partClass(feedback, index)}`}
+                value={texts[index]}
+                disabled={feedback !== null}
+                placeholder="Tu respuesta en inglés…"
+                autoFocus={index === 0}
+                aria-label={`Turno ${index + 1}`}
+                onChange={(e) => update(index, e.target.value)}
+              />
+              <PartResult feedback={feedback} index={index} />
+            </div>
+          )
+        })}
+      </div>
+    </>
+  )
+}
+
+function RolePlay({ content, answer, feedback, onChange }: ItemProps<'roleplay'>): React.JSX.Element {
+  const initial = answer?.type === 'roleplay' ? answer.texts : null
+  const [texts, update] = useParts(content.steps.length, initial, 'roleplay', onChange)
+
+  return (
+    <>
+      <p className="situation">{content.situation}</p>
+      <p className="goal">
+        <strong>Objetivo:</strong> {content.goal}
+      </p>
+      <ol className="part-list">
+        {content.steps.map((step, i) => (
+          <li key={i} className="part">
+            <p className="part-cue">{step.cue}</p>
+            <input
+              className={`text-answer${partClass(feedback, i)}`}
+              value={texts[i]}
+              disabled={feedback !== null}
+              placeholder="En inglés…"
+              autoFocus={i === 0}
+              aria-label={`Paso ${i + 1}`}
+              onChange={(e) => update(i, e.target.value)}
+            />
+            <PartResult feedback={feedback} index={i} />
+          </li>
+        ))}
+      </ol>
     </>
   )
 }

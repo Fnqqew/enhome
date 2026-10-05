@@ -245,5 +245,20 @@ export const MIGRATIONS: Migration[] = [
         created_at TEXT NOT NULL DEFAULT (datetime('now'))
       );
     `
+  },
+  {
+    version: 7,
+    name: 'comentarios del usuario',
+    sql: `
+      -- Lo que el usuario anota sobre la app: ideas, cosas que fallan y lo que le gusta.
+      CREATE TABLE feedback (
+        id         INTEGER PRIMARY KEY,
+        kind       TEXT NOT NULL CHECK (kind IN ('idea', 'problema', 'gusto')),
+        section    TEXT NOT NULL,
+        message    TEXT NOT NULL,
+        done       INTEGER NOT NULL DEFAULT 0,
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+    `
   }
 ]

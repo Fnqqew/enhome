@@ -8,7 +8,8 @@ import { loadCurriculum } from '../src/main/content/curriculum'
 import { generatePlacementQuestions } from '../src/main/engine/placement-questions'
 import { planPool } from '../src/main/practice/composition'
 import { generatePracticePool } from '../src/main/practice/generation'
-import type { ExerciseType, GeneratedExercise } from '../src/shared/exercises'
+import { LONG_TYPES, type ExerciseType, type GeneratedExercise } from '../src/shared/exercises'
+import { longSample } from './helpers/long-exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', 'content'))
 const topic = curriculum.find((t) => t.id === 'a1-to-be')!
@@ -44,15 +45,45 @@ function sample(type: ExerciseType, marker: string): GeneratedExercise {
     }
     case 'writing':
       return { type, instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
+    case 'translation_set':
+    case 'dialogue':
+    case 'roleplay':
+      return longSample(type, marker)
   }
 }
 
 const counts = planPool(subtopic.focus)
-const pool = (marker: string): GeneratedExercise[] =>
-  (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, n]) => Array.from({ length: n }, () => sample(type, marker)))
 const request = { topic, subtopic, kind: 'lesson' as const, counts, avoid: [] }
 const noCorrections = { issues: [], corrections: [] }
-const indexesOf = (type: ExerciseType): number[] => pool('').flatMap((e, i) => (e.type === type ? [i] : []))
+
+// La práctica se pide en dos tandas en paralelo: los ejercicios cortos y los largos.
+type Group = 'short' | 'long'
+const isLongType = (type: string): boolean => (LONG_TYPES as readonly string[]).includes(type)
+const groupCounts = (group: Group): [ExerciseType, number][] =>
+  (Object.entries(counts) as [ExerciseType, number][]).filter(([type]) => isLongType(type) === (group === 'long'))
+const pool = (group: Group, marker: string): GeneratedExercise[] =>
+  groupCounts(group).flatMap(([type, n]) => Array.from({ length: n }, () => sample(type, marker)))
+const fullLength = pool('short', '').length + pool('long', '').length
+const indexesOf = (group: Group, type: ExerciseType): number[] => pool(group, '').flatMap((e, i) => (e.type === type ? [i] : []))
+
+const isGeneration = (prompt: string): boolean => prompt.includes('Generá exactamente')
+// En la generación se ve en la lista de lo pedido; en la revisión, en los ejercicios a revisar.
+const groupOf = (prompt: string): Group =>
+  (isGeneration(prompt) ? /^- (translation_set|dialogue|roleplay|writing): \d/m : /"type":"(translation_set|dialogue|roleplay|writing)"/).test(prompt)
+    ? 'long'
+    : 'short'
+
+// Claude simulado que responde según lo que se le pide, sin depender del orden de las llamadas.
+function routedClaude(reply: (prompt: string, kind: 'generation' | 'review', group: Group) => unknown): { ask: Ask; prompts: string[] } {
+  const prompts: string[] = []
+  const ask = (async (options: AskOptions<unknown>) => {
+    prompts.push(options.prompt)
+    const next = reply(options.prompt, isGeneration(options.prompt) ? 'generation' : 'review', groupOf(options.prompt))
+    if (next instanceof Error) throw next
+    return options.schema.parse(next)
+  }) as Ask
+  return { ask, prompts }
+}
 
 describe('applyCorrections', () => {
   it('reemplaza por posición e ignora lo fuera de rango o de otro tipo', () => {
@@ -71,37 +102,77 @@ describe('applyCorrections', () => {
 })
 
 describe('ejercicios de práctica', () => {
-  it('aplica las correcciones del revisor y le pasa lo generado', async () => {
-    const [mcIndex] = indexesOf('multiple_choice')
-    const { ask, prompts } = fakeClaude([
-      { exercises: pool('ORIGINAL') },
-      { issues: ['Había dos opciones correctas.'], corrections: [{ index: mcIndex, replacement: sample('multiple_choice', 'REVISADO') }] }
-    ])
+  it('pide los cortos y los largos en tandas separadas', async () => {
+    const { ask, prompts } = routedClaude((_, kind, group) => (kind === 'generation' ? { exercises: pool(group, 'A') } : noCorrections))
     const exercises = await generatePracticePool(request, ask)
 
-    expect(prompts).toHaveLength(2)
-    expect(prompts[1]).toContain('ORIGINAL')
-    const prompts2 = exercises.flatMap((e) => (e.type === 'multiple_choice' ? [e.prompt] : []))
-    expect(prompts2.filter((p) => p.startsWith('REVISADO'))).toHaveLength(1)
-    expect(prompts2.filter((p) => p.startsWith('ORIGINAL'))).toHaveLength(prompts2.length - 1)
+    const generations = prompts.filter(isGeneration)
+    expect(generations).toHaveLength(2)
+    expect(generations.map(groupOf).sort()).toEqual(['long', 'short'])
+    expect(exercises).toHaveLength(fullLength)
+    expect(exercises.some((e) => e.type === 'dialogue')).toBe(true)
+  })
+
+  it('aplica las correcciones del revisor y le pasa lo generado', async () => {
+    const [mcIndex] = indexesOf('short', 'multiple_choice')
+    const { ask, prompts } = routedClaude((_, kind, group) => {
+      if (kind === 'generation') return { exercises: pool(group, 'ORIGINAL') }
+      if (group === 'long') return noCorrections
+      return { issues: ['Había dos opciones correctas.'], corrections: [{ index: mcIndex, replacement: sample('multiple_choice', 'REVISADO') }] }
+    })
+    const exercises = await generatePracticePool(request, ask)
+
+    expect(prompts).toHaveLength(4)
+    expect(prompts.filter((p) => !isGeneration(p)).every((p) => p.includes('ORIGINAL'))).toBe(true)
+    const texts = exercises.flatMap((e) => (e.type === 'multiple_choice' ? [e.prompt] : []))
+    expect(texts.filter((p) => p.startsWith('REVISADO'))).toHaveLength(1)
+    expect(texts.filter((p) => p.startsWith('ORIGINAL'))).toHaveLength(texts.length - 1)
   })
 
   it('si la revisión falla, vuelve a generar y revisar', async () => {
-    const { ask, prompts } = fakeClaude([{ exercises: pool('A') }, new Error('revisión caída'), { exercises: pool('B') }, noCorrections])
-    await expect(generatePracticePool(request, ask)).resolves.toHaveLength(pool('B').length)
-    expect(prompts).toHaveLength(4)
+    let failed = false
+    const { ask, prompts } = routedClaude((_, kind, group) => {
+      if (kind === 'generation') return { exercises: pool(group, failed ? 'B' : 'A') }
+      if (group === 'short' && !failed) {
+        failed = true
+        return new Error('revisión caída')
+      }
+      return noCorrections
+    })
+    await expect(generatePracticePool(request, ask)).resolves.toHaveLength(fullLength)
+    expect(prompts.filter(isGeneration).length).toBe(4)
   })
 
   it('nunca entrega ejercicios sin revisar', async () => {
-    const { ask } = fakeClaude([{ exercises: pool('A') }, new Error('caída'), { exercises: pool('B') }, new Error('caída')])
+    const { ask } = routedClaude((_, kind, group) => (kind === 'generation' ? { exercises: pool(group, 'A') } : new Error('caída')))
     await expect(generatePracticePool(request, ask)).rejects.toThrow('caída')
   })
 
   it('descarta ejercicios que no pasan los controles y falla si falta un tipo', async () => {
     const broken = { ...sample('error_correction', ''), sentence: 'She is happy.' }
-    const corrections = { issues: [], corrections: indexesOf('error_correction').map((index) => ({ index, replacement: broken })) }
-    const { ask } = fakeClaude([{ exercises: pool('A') }, corrections, { exercises: pool('A') }, corrections])
+    const corrections = { issues: [], corrections: indexesOf('short', 'error_correction').map((index) => ({ index, replacement: broken })) }
+    const { ask } = routedClaude((_, kind, group) => {
+      if (kind === 'generation') return { exercises: pool(group, 'A') }
+      return group === 'short' ? corrections : noCorrections
+    })
     await expect(generatePracticePool(request, ask)).rejects.toThrow(/error_correction/)
+  })
+
+  it('descarta una conversación sin turnos suficientes para el alumno', async () => {
+    const lonely = {
+      ...longSample('dialogue', 'X'),
+      script: [
+        { role: 'other' as const, speaker: 'Ana', text: 'Hi!' },
+        { role: 'you' as const, cue: 'Saludá', sample: 'Hello!' },
+        { role: 'other' as const, speaker: 'Ana', text: 'Nice to meet you.' },
+        { role: 'other' as const, speaker: 'Ana', text: 'Bye!' }
+      ]
+    }
+    const { ask } = routedClaude((_, kind, group) => {
+      if (kind === 'review') return noCorrections
+      return { exercises: pool(group, 'A').map((e) => (e.type === 'dialogue' ? lonely : e)) }
+    })
+    await expect(generatePracticePool(request, ask)).rejects.toThrow(/dialogue/)
   })
 })
 

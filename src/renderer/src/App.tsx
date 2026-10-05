@@ -1,6 +1,9 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
-import type { Navigate, SectionId } from './navigation'
+import { SECTIONS, type Navigate, type SectionId } from './navigation'
+import Icon from './components/Icon'
+import About from './pages/About'
+import Comments from './pages/Comments'
 import Logo from './components/Logo'
 import TitleBar from './components/TitleBar'
 import { useSettings } from './theme/SettingsProvider'
@@ -15,15 +18,8 @@ import Tests from './pages/Tests'
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
-const SECTIONS: { id: SectionId; label: string }[] = [
-  { id: 'inicio', label: 'Inicio' },
-  { id: 'temario', label: 'Temario' },
-  { id: 'practica', label: 'Práctica' },
-  { id: 'resumenes', label: 'Resúmenes' },
-  { id: 'pruebas', label: 'Pruebas' },
-  { id: 'progreso', label: 'Progreso' },
-  { id: 'ajustes', label: 'Ajustes' }
-]
+// Las secciones de abajo quedan separadas: no son parte del recorrido de estudio.
+const EXTRA_SECTIONS: SectionId[] = ['ajustes', 'comentarios', 'acerca']
 
 export default function App(): React.JSX.Element {
   const [status, setStatus] = useState<ClaudeStatus | null>(null)
@@ -111,23 +107,23 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
           <Logo style={settings.style} />
           Enhome
         </div>
-        {SECTIONS.map((s) => (
-          <button
-            key={s.id}
-            className="nav-item"
-            aria-current={s.id === section ? 'page' : undefined}
-            disabled={examLocked && s.id !== 'pruebas'}
-            title={examLocked && s.id !== 'pruebas' ? 'Entregá el examen para salir de Pruebas' : undefined}
-            onClick={() => navigate(s.id)}
-          >
-            {s.label}
-          </button>
+        {SECTIONS.filter((s) => !EXTRA_SECTIONS.includes(s.id)).map((s) => (
+          <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
         ))}
-        <div className="sidebar-foot muted">{examLocked ? 'Examen en curso' : 'Claude conectado'}</div>
+        <div className="nav-divider" />
+        {SECTIONS.filter((s) => EXTRA_SECTIONS.includes(s.id)).map((s) => (
+          <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
+        ))}
+        <div className="sidebar-foot">
+          <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
+          {examLocked ? 'Examen en curso' : 'Claude conectado'}
+        </div>
       </nav>
       <RewardToasts trigger={section} />
       <main className="content">
-        <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
+        <div key={section} className="page">
+          <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
+        </div>
       </main>
     </div>
   )
@@ -150,5 +146,33 @@ function Page({
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />
+  if (section === 'comentarios') return <Comments />
+  if (section === 'acerca') return <About status={status} navigate={navigate} />
   return <Settings status={status} />
+}
+
+function NavItem({
+  section,
+  current,
+  examLocked,
+  onNavigate
+}: {
+  section: (typeof SECTIONS)[number]
+  current: SectionId
+  examLocked: boolean
+  onNavigate: Navigate
+}): React.JSX.Element {
+  const blocked = examLocked && section.id !== 'pruebas'
+  return (
+    <button
+      className="nav-item"
+      aria-current={section.id === current ? 'page' : undefined}
+      disabled={blocked}
+      title={blocked ? 'Entregá el examen para salir de Pruebas' : undefined}
+      onClick={() => onNavigate(section.id)}
+    >
+      <Icon name={section.id} className="nav-icon" />
+      {section.label}
+    </button>
+  )
 }

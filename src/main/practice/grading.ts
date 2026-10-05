@@ -73,6 +73,40 @@ export function gradeAuto(exercise: StoredExercise, answer: ExerciseAnswer): Aut
       if (!text.trim()) return graded(false, exercise.answers[0], exercise.explanation)
       return { kind: 'needs-ai' }
     }
+    case 'translation_set': {
+      const { texts } = answer as AnswerOf<'translation_set'>
+      if (texts.every((t) => !t.trim())) {
+        return { kind: 'graded', feedback: { correct: false, score: 0, correctAnswer: null, explanation: 'No escribiste ninguna traducción.' } }
+      }
+      // Si todas coinciden con una referencia no hace falta molestar a Claude.
+      if (exercise.sentences.every((s, i) => matchesAny(texts[i] ?? '', s.answers))) {
+        return {
+          kind: 'graded',
+          feedback: {
+            correct: true,
+            score: 10,
+            correctAnswer: null,
+            explanation: exercise.sentences.map((s) => s.explanation).join(' '),
+            parts: exercise.sentences.map((s, i) => ({
+              cue: s.spanish,
+              given: texts[i] ?? '',
+              expected: s.answers[0],
+              correct: true,
+              comment: s.explanation
+            }))
+          }
+        }
+      }
+      return { kind: 'needs-ai' }
+    }
+    case 'dialogue':
+    case 'roleplay': {
+      const { texts } = answer as AnswerOf<'dialogue' | 'roleplay'>
+      if (texts.every((t) => !t.trim())) {
+        return { kind: 'graded', feedback: { correct: false, score: 0, correctAnswer: null, explanation: 'No escribiste ninguna respuesta.' } }
+      }
+      return { kind: 'needs-ai' }
+    }
     case 'reading': {
       const { choices } = answer as AnswerOf<'reading'>
       const results = exercise.questions.map((q, i) => choices[i] === q.correctIndex)

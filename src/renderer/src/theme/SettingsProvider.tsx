@@ -4,6 +4,8 @@ import { DEFAULT_SETTINGS, PALETTES, type AppSettings } from '@shared/settings'
 interface SettingsContextValue {
   settings: AppSettings
   update: (patch: Partial<AppSettings>) => void
+  // Si la app se ve en oscuro ahora mismo (resuelve «Sistema» con la preferencia de Windows).
+  dark: boolean
 }
 
 const SettingsContext = createContext<SettingsContextValue | null>(null)
@@ -34,9 +36,11 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
       .finally(() => setLoaded(true))
   }, [])
 
+  const dark = settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
+
   useEffect(() => {
     const root = document.documentElement
-    const theme = settings.theme === 'system' ? (prefersDark ? 'dark' : 'light') : settings.theme
+    const theme = dark ? 'dark' : 'light'
     const palette = PALETTES.find((p) => p.id === settings.palette) ?? PALETTES[0]
     root.dataset.theme = theme
     root.dataset.style = settings.style
@@ -48,7 +52,7 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
     // «Del estilo» deja el color que define el CSS de cada estilo.
     if (palette.id === 'estilo') root.style.removeProperty('--accent')
     else root.style.setProperty('--accent', theme === 'dark' ? palette.dark : palette.light)
-  }, [settings, prefersDark])
+  }, [settings, dark])
 
   const update = useCallback((patch: Partial<AppSettings>) => {
     setSettings((current) => ({ ...current, ...patch }))
@@ -62,7 +66,7 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
   }, [])
 
   if (!loaded) return null
-  return <SettingsContext.Provider value={{ settings, update }}>{children}</SettingsContext.Provider>
+  return <SettingsContext.Provider value={{ settings, update, dark }}>{children}</SettingsContext.Provider>
 }
 
 export function useSettings(): SettingsContextValue {

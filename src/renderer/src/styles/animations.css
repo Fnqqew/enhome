@@ -1,0 +1,118 @@
+/* Movimiento de la app. Todo es corto y sutil: acompaña, no entretiene.
+   Con «Animaciones: reducidas» en Ajustes, base.css las apaga todas. */
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  60% {
+    transform: scale(1.01);
+  }
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% 0;
+  }
+}
+
+/* Cada sección entra con un desplazamiento mínimo al cambiar de página. */
+.page {
+  animation: page-in 0.22s ease-out;
+}
+
+/* Las tarjetas aparecen escalonadas para que la vista no salte de golpe. */
+.fade-in {
+  animation: rise-in 0.28s ease-out backwards;
+}
+
+.page > .card:nth-of-type(2),
+.fade-in:nth-of-type(2) {
+  animation-delay: 0.05s;
+}
+
+.page > .card:nth-of-type(3),
+.fade-in:nth-of-type(3) {
+  animation-delay: 0.1s;
+}
+
+.page > .card:nth-of-type(n + 4),
+.fade-in:nth-of-type(n + 4) {
+  animation-delay: 0.14s;
+}
+
+/* La devolución de un ejercicio: entra, y si está mal lo dice con un movimiento. */
+.feedback {
+  animation: pop-in 0.22s ease-out;
+}
+
+.feedback.bad {
+  animation: pop-in 0.22s ease-out, shake 0.3s ease-in-out 0.2s;
+}
+
+.part-result {
+  animation: rise-in 0.22s ease-out;
+}
+
+/* Lo que está cargando se marca con un brillo que recorre la barra. */
+.loading-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--border) 0%, var(--accent-soft) 40%, var(--border) 80%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* Al pasar el mouse, las cosas que se pueden tocar se levantan apenas. */
+.card.interactive,
+.style-card,
+.note,
+.achievement {
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.card.interactive:hover,
+.style-card:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.nav-item,
+.option,
+.token,
+.chip,
+.type-chip {
+  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease, transform 0.12s ease;
+}
+
+.option:hover:not(:disabled),
+.token:hover:not(:disabled) {
+  transform: translateX(2px);
+}

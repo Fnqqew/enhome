@@ -1,0 +1,335 @@
+/* Piezas de las secciones nuevas y de la práctica larga:
+   navegación con íconos, estados vacíos, comentarios, «Acerca de», conversaciones y tandas. */
+
+/* Terminaciones que valen para toda la app */
+
+/* El foco de los campos se marca con un halo del color del estilo, no con el contorno del sistema. */
+.text-answer:focus,
+select:focus,
+input[type='date']:focus,
+.blank:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.text-answer,
+select {
+  transition: border-color 0.14s ease, box-shadow 0.14s ease;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+
+.btn.secondary:hover:not(:disabled) {
+  background: var(--surface-hover);
+  filter: none;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+/* Barra de desplazamiento fina y redondeada, con el color del tema. */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 40%, transparent) padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--muted) 65%, transparent) padding-box;
+}
+
+/* La barra lateral se desplaza sola si la ventana es baja. */
+.sidebar {
+  overflow-y: auto;
+}
+
+/* Navegación */
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.nav-item[aria-current='page'] .nav-icon {
+  opacity: 1;
+}
+
+.nav-divider {
+  height: 1px;
+  margin: calc(0.6rem * var(--space)) 0.75rem;
+  background: var(--sidebar-border);
+  opacity: 0.6;
+}
+
+.sidebar-foot {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #2faa5f;
+}
+
+.status-dot.busy {
+  background: var(--danger);
+}
+
+/* Encabezado de cada sección */
+
+.page-intro {
+  max-width: 44rem;
+  margin: calc(-0.5rem * var(--space)) 0 calc(1.25rem * var(--space));
+  color: var(--muted);
+}
+
+/* Estados vacíos: dicen qué va a aparecer ahí, en vez de dejar un hueco. */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  padding-block: calc(2.5rem * var(--space));
+}
+
+.empty-icon {
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+
+/* Comentarios */
+
+.type-chip[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: calc(0.8rem * var(--space)) 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.note:hover {
+  border-color: var(--accent);
+}
+
+.note.done {
+  opacity: 0.6;
+}
+
+.note.done .note-body p {
+  text-decoration: line-through;
+}
+
+.note-icon {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.note-body {
+  flex: 1 1 12rem;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Acerca de */
+
+.about-hero {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.about-logo {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.about-hero .badge {
+  align-self: flex-start;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.spec-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: calc(var(--radius) - 2px);
+  background: var(--bg);
+}
+
+.spec dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.spec dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.mono {
+  font-family: var(--font-numbers);
+  font-size: 0.88rem;
+}
+
+/* Práctica larga: situaciones, conversaciones y tandas */
+
+.situation {
+  padding: calc(0.8rem * var(--space)) 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--accent-soft);
+}
+
+.goal {
+  color: var(--muted);
+}
+
+.part-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.9rem * var(--space));
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.part-cue {
+  font-weight: 500;
+}
+
+.part-result {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--accent-soft);
+  font-size: 0.92rem;
+}
+
+.part-result.bad {
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+}
+
+.part-mark {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.part-result.bad .part-mark {
+  color: var(--danger);
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.8rem * var(--space));
+}
+
+.chat-line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 85%;
+}
+
+.chat-line.mine {
+  align-self: flex-end;
+  width: min(32rem, 100%);
+}
+
+.chat-speaker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.chat-line.mine .chat-speaker {
+  text-align: right;
+}
+
+.bubble {
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius) var(--radius) var(--radius) 4px;
+  background: var(--surface-hover);
+}
+
+.chat-line.mine .text-answer {
+  border-radius: var(--radius) var(--radius) 4px var(--radius);
+}

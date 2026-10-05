@@ -4,6 +4,9 @@ import { askClaude, getClaudeStatus } from './claude/bridge'
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
 import { buildCurriculumMap } from './content/curriculum-map'
 import type { Db } from './db/database'
+import { app } from 'electron'
+import { addFeedback, listFeedback, removeFeedback, toggleFeedback } from './db/feedback-repo'
+import { newFeedbackSchema } from '../shared/feedback'
 import { loadSettings, updateSettings } from './db/settings-repo'
 import type { AppSettings } from '../shared/settings'
 import { simulatedExam } from './engine/dev'
@@ -84,7 +87,20 @@ export function registerIpc(
   const today = (): string => todayOverride ?? toLocalDate(new Date())
   const state = () => getServices().progression.getState(today())
 
-  handle(IPC.appInfo, () => ({ isDev }))
+  handle(IPC.appInfo, () => ({
+    isDev,
+    version: app.getVersion(),
+    electron: process.versions.electron,
+    node: process.versions.node,
+    chrome: process.versions.chrome,
+    dataDir: app.getPath('userData'),
+    repoUrl: 'https://github.com/Fnqqew/enhome'
+  }))
+
+  handle(IPC.feedbackList, () => listFeedback(db))
+  handle(IPC.feedbackAdd, (note) => addFeedback(db, newFeedbackSchema.parse(note)))
+  handle(IPC.feedbackToggle, (noteId) => toggleFeedback(db, id.parse(noteId)))
+  handle(IPC.feedbackRemove, (noteId) => removeFeedback(db, id.parse(noteId)))
   handle(IPC.claudeStatus, () => getClaudeStatus())
   handle(IPC.claudeSample, (): Promise<SampleSentence> =>
     askClaude({
