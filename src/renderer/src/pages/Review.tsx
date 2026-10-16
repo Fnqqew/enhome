@@ -5,6 +5,7 @@ import { REVIEW_INTERVALS, REVIEW_STEPS, type ReviewAnswerResult, type ReviewIte
 import ClaudeWait from '../components/ClaudeWait'
 import Icon from '../components/Icon'
 import ExerciseInput from '../components/practice/ExerciseInput'
+import VocabCards from '../components/review/VocabCards'
 import Feedback from '../components/practice/Feedback'
 import { announceRewards } from '../rewardsBus'
 import type { Navigate } from '../navigation'
@@ -101,6 +102,8 @@ export default function Review({ examId, navigate }: { examId: number | null; na
           <p className="muted small">Cuando te equivoques en una práctica o en un examen, ese ejercicio va a aparecer acá para repasarlo.</p>
         ) : null}
       </section>
+
+      <VocabCards />
 
       {overview.pending > 0 && (
         <section className="card stack fade-in">

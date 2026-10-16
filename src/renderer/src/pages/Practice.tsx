@@ -203,6 +203,8 @@ function SessionPlayer({
   // a su encabezado, así se sigue con Tab desde ahí sin volver al principio de la página.
   const headingRef = useRef<HTMLSpanElement>(null)
   const nextRef = useRef<HTMLButtonElement>(null)
+  // Con el ejercicio ya corregido se puede seleccionar una palabra para traducirla o preguntar.
+  const exerciseRef = useRef<HTMLFormElement>(null)
   const firstRender = useRef(true)
   useEffect(() => {
     if (firstRender.current) {
@@ -349,7 +351,7 @@ function SessionPlayer({
       )}
 
       {current ? (
-        <form className="stack" onSubmit={submit}>
+        <form ref={exerciseRef} className="stack" onSubmit={submit}>
           <span ref={headingRef} tabIndex={-1} className="exercise-type">
             {EXERCISE_TYPE_LABELS[current.type]}
           </span>
@@ -402,6 +404,7 @@ function SessionPlayer({
               </button>
             </div>
           )}
+          {current.feedback && <SelectionAsk containerRef={exerciseRef} topicId={session.topicId} />}
           <p className="muted small shortcuts">
             <kbd>Enter</kbd> comprobar y seguir · <kbd>Ctrl</kbd>+<kbd>H</kbd> pista · <kbd>Ctrl</kbd>+<kbd>→</kbd> cambiar ejercicio
           </p>

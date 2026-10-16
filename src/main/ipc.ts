@@ -25,6 +25,7 @@ import { generateExam } from './exams/generation'
 import { Rewards } from './rewards/rewards'
 import { Notebook } from './review/notebook'
 import { Games } from './games/games'
+import { Vocabulary } from './vocab/vocab'
 import { GAME_IDS } from '../shared/games'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
@@ -56,6 +57,7 @@ interface Services {
   rewards: Rewards
   notebook: Notebook
   games: Games
+  vocab: Vocabulary
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -108,7 +110,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
         exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),
         rewards: new Rewards(courseData, curriculum, roadmap, progression),
         notebook: new Notebook(courseData, curriculum, gradeOpenAnswer),
-        games: new Games(courseData, curriculum, progression)
+        games: new Games(courseData, curriculum, progression),
+        vocab: new Vocabulary(courseData, curriculum, language)
       }
       courses.set(language, services)
     }
@@ -255,6 +258,17 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.practiceAnswer, (exerciseId, answer) =>
     getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today())
   )
+  const wordSchema = z.object({ term: z.string(), translation: z.string(), example: z.string(), exampleEs: z.string(), note: z.string() })
+  handle(IPC.vocabLookup, (term, context) => {
+    const { vocab, progression } = getServices()
+    const level = vocab.levelOf(progression.getState(today()).week?.topicId ?? null)
+    return vocab.lookup(z.string().max(200).parse(term), z.string().max(2000).parse(context ?? ''), level)
+  })
+  handle(IPC.vocabSave, (info) => getServices().vocab.save(wordSchema.parse(info), today()))
+  handle(IPC.vocabOverview, () => getServices().vocab.overview(today()))
+  handle(IPC.vocabDue, () => getServices().vocab.due(today()))
+  handle(IPC.vocabReview, (cardId, knew) => getServices().vocab.review(id.parse(cardId), z.boolean().parse(knew), today()))
+  handle(IPC.vocabRemove, (cardId) => getServices().vocab.remove(id.parse(cardId), today()))
   handle(IPC.gamesDeck, () => getServices().games.deck(today()))
   handle(IPC.gamesFinish, (game, score) => getServices().games.finish(z.enum(GAME_IDS).parse(game), z.number().parse(score), today()))
   handle(IPC.reviewOverview, () => getServices().notebook.overview(today()))

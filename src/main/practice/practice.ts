@@ -445,6 +445,7 @@ export class Practice {
 
     return {
       id: session.id,
+      topicId: topic.id,
       purpose: session.unit_id === null ? 'recovery' : 'unit',
       unitIndex: unit?.unit_index ?? null,
       kind: session.kind,

@@ -1211,15 +1211,42 @@ h5.level {
 .ask-float {
   position: fixed;
   z-index: 30;
+  display: flex;
+  overflow: hidden;
   transform: translateX(-50%);
-  padding: 0.35rem 0.8rem;
-  border: none;
   border-radius: 999px;
   background: var(--accent);
-  color: var(--accent-contrast);
-  font-size: 0.8rem;
   box-shadow: 0 4px 14px rgb(0 0 0 / 0.2);
+}
+
+.ask-float button {
+  padding: 0.35rem 0.8rem;
+  border: none;
+  background: transparent;
+  color: var(--accent-contrast);
+  font: inherit;
+  font-size: 0.8rem;
   cursor: pointer;
+}
+
+.ask-float button + button {
+  border-left: 1px solid color-mix(in srgb, var(--accent-contrast) 35%, transparent);
+}
+
+.ask-float button:hover {
+  background: color-mix(in srgb, var(--accent-contrast) 14%, transparent);
+}
+
+.word-popover {
+  position: fixed;
+  z-index: 31;
+  width: min(340px, calc(100vw - 24px));
+  box-shadow: 0 12px 34px rgb(0 0 0 / 0.22);
+  animation: rise-in 0.18s ease-out;
+}
+
+.word-popover p {
+  margin: 0;
 }
 
 .modal-backdrop {

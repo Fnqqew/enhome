@@ -235,6 +235,7 @@ export interface SessionExerciseView {
 
 export interface SessionView {
   id: number
+  topicId: string
   purpose: PracticePurpose
   unitIndex: number | null
   kind: UnitKind

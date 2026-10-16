@@ -58,20 +58,20 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Práctica y aprendizaje
 
-- [ ] 30 Cuaderno de errores con repaso espaciado
-- [ ] 31 Repaso del examen
-- [ ] 32 Dictado
-- [ ] 33 Vocabulario con tarjetas
-- [ ] 34 Tocar una palabra para traducirla
-- [ ] 35 Volver a un ejercicio anterior de la práctica
-- [ ] 36 Atajos de teclado en la práctica
-- [ ] 37 Dificultad que se adapta por subtema
-- [ ] 38 Elegir la duración de la práctica
+- [x] 30 Cuaderno de errores con repaso espaciado
+- [x] 31 Repaso del examen
+- [x] 32 Dictado
+- [x] 33 Vocabulario con tarjetas
+- [x] 34 Tocar una palabra para traducirla
+- [x] 35 Volver a un ejercicio anterior de la práctica
+- [x] 36 Atajos de teclado en la práctica
+- [x] 37 Dificultad que se adapta por subtema
+- [x] 38 Elegir la duración de la práctica
 - [ ] 39 Lecturas graduadas
 - [ ] 40 Diario en el idioma
 - [ ] 41 Contenido de B1 y B2 (y C1) en los cuatro idiomas
 - [ ] 42 Revisar los tópicos desde la app
-- [ ] 43 Excluir formatos que no te sirven
+- [x] 43 Excluir formatos que no te sirven
 - [ ] 44 Simulacros por subtema
 - [ ] 45 Certificado al terminar un nivel
 - [ ] 46 Pronunciación con reconocimiento de voz

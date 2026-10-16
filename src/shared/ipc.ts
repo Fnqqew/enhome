@@ -11,6 +11,7 @@ import type { ExamResultView, ExamSessionView, MockScope, ResumeResult, TestsOve
 import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './review'
 import type { GameDeck, GameId, GameResult } from './games'
+import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -61,6 +62,12 @@ export const IPC = {
   rewardsNews: 'rewards:news',
   rewardsHint: 'rewards:hint',
   rewardsSecondChance: 'rewards:second-chance',
+  vocabLookup: 'vocab:lookup',
+  vocabSave: 'vocab:save',
+  vocabOverview: 'vocab:overview',
+  vocabDue: 'vocab:due',
+  vocabReview: 'vocab:review',
+  vocabRemove: 'vocab:remove',
   gamesDeck: 'games:deck',
   gamesFinish: 'games:finish',
   reviewOverview: 'review:overview',
@@ -160,6 +167,12 @@ export interface Api {
   takeRewardNews(): Promise<RewardNews[]>
   usePracticeHint(exerciseId: number): Promise<string>
   useSecondChance(examId: number, index: number): Promise<SecondChanceResult>
+  lookupWord(term: string, context: string): Promise<WordInfo & { saved: boolean }>
+  saveWord(info: WordInfo): Promise<VocabOverview>
+  getVocab(): Promise<VocabOverview>
+  getDueWords(): Promise<VocabCard[]>
+  reviewWord(cardId: number, knew: boolean): Promise<VocabCard>
+  removeWord(cardId: number): Promise<VocabOverview>
   getGameDeck(): Promise<GameDeck>
   finishGame(game: GameId, score: number): Promise<GameResult>
   getReviewOverview(): Promise<ReviewOverview>
