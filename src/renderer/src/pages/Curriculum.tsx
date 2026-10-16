@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import TopicEditor from '../components/curriculum/TopicEditor'
 import {
   SKILL_LABELS,
   type CurriculumMap,
@@ -63,6 +64,8 @@ export default function Curriculum(): React.JSX.Element {
   const [openLevels, toggleLevel, setLevels] = useToggleSet()
   const [openTopics, toggleTopic, setTopics] = useToggleSet()
   const [openSubtopics, toggleSubtopic, setSubtopics] = useToggleSet()
+  const [editing, setEditing] = useState<string | null>(null)
+  const [reload, setReload] = useState(0)
 
   useEffect(() => {
     window.api
@@ -76,7 +79,7 @@ export default function Curriculum(): React.JSX.Element {
         setTopics(current ? [current.id] : [])
       })
       .catch((err: Error) => setError(err.message))
-  }, [])
+  }, [reload])
 
   const q = fold(query.trim())
   const matches = useMemo(() => {
@@ -166,6 +169,7 @@ export default function Curriculum(): React.JSX.Element {
             onToggleTopic={toggleTopic}
             isSubtopicOpen={(key) => (matches ? matches.subtopics.has(key) : openSubtopics.has(key))}
             onToggleSubtopic={toggleSubtopic}
+            onEdit={setEditing}
           />
         )
       })}
@@ -174,6 +178,16 @@ export default function Curriculum(): React.JSX.Element {
         <section className="card wide">
           <p className="muted">No hay resultados para «{query}».</p>
         </section>
+      )}
+      {editing && (
+        <TopicEditor
+          topicId={editing}
+          onClose={() => setEditing(null)}
+          onSaved={() => {
+            setEditing(null)
+            setReload((n) => n + 1)
+          }}
+        />
       )}
     </>
   )
@@ -191,6 +205,7 @@ interface LevelSectionProps {
   onToggleTopic: Toggle
   isSubtopicOpen: (key: string) => boolean
   onToggleSubtopic: Toggle
+  onEdit: (topicId: string) => void
 }
 
 function LevelSection({ level, topics, searching, open, onToggle, ...rest }: LevelSectionProps): React.JSX.Element {
@@ -248,7 +263,8 @@ function TopicItem({
   titles,
   onToggleTopic,
   isSubtopicOpen,
-  onToggleSubtopic
+  onToggleSubtopic,
+  onEdit
 }: { topic: CurriculumMapTopic; open: boolean } & Omit<LevelSectionProps, 'level' | 'topics' | 'searching' | 'open' | 'onToggle'>): React.JSX.Element {
   const prerequisites = topic.prerequisites.map((id) => titles.get(id) ?? id)
 
@@ -283,7 +299,12 @@ function TopicItem({
               Mejor nota: {topic.bestGrade} · {topic.attempts} {topic.attempts === 1 ? 'intento' : 'intentos'} de examen
             </p>
           )}
-          {!topic.reviewed && <p className="muted small">Contenido todavía sin revisar.</p>}
+          <div className="row topic-review">
+            {topic.reviewed ? <span className="badge ok">Revisado</span> : <span className="muted small">Contenido todavía sin revisar.</span>}
+            <button type="button" className="chip" onClick={() => onEdit(topic.id)}>
+              {topic.reviewed ? 'Corregir' : 'Revisar y corregir'}
+            </button>
+          </div>
 
           <div className="subtopic-list">
             {[...topic.subtopics]

@@ -19,6 +19,7 @@ const api: Api = {
   updateSettings: (patch) => invoke(IPC.settingsUpdate, patch),
   getCurriculum: () => invoke(IPC.curriculumList),
   getCurriculumMap: () => invoke(IPC.curriculumMap),
+  saveTopicReview: (topicId, edit, markReviewed) => invoke(IPC.topicReviewSave, topicId, edit, markReviewed),
   getProgress: () => invoke(IPC.progressGet),
   getCourses: () => invoke(IPC.coursesList),
   pauseCourse: () => invoke(IPC.coursePause),

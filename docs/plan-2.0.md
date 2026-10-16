@@ -70,7 +70,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 39 Lecturas graduadas
 - [x] 40 Diario en el idioma
 - [ ] 41 Contenido de B1 y B2 (y C1) en los cuatro idiomas
-- [ ] 42 Revisar los tópicos desde la app
+- [x] 42 Revisar los tópicos desde la app
 - [x] 43 Excluir formatos que no te sirven
 - [x] 44 Simulacros por subtema
 - [ ] 45 Certificado al terminar un nivel

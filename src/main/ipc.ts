@@ -4,6 +4,8 @@ import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming } from './clau
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
 import { buildCurriculumMap } from './content/curriculum-map'
 import { loadPlacementBank, withPlacementBank } from './content/placement-bank'
+import { applyTopicReviews, saveTopicReview, writeTopicFiles } from './content/topic-reviews'
+import { topicSchema } from '../shared/curriculum'
 import type { Db } from './db/database'
 import { addFeedback, listFeedback, removeFeedback, toggleFeedback } from './db/feedback-repo'
 import { newFeedbackSchema } from '../shared/feedback'
@@ -94,7 +96,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
     let services = courses.get(language)
     if (!services) {
       const courseData = courseDb(language)
-      const curriculum = loadCurriculum(contentDir, language)
+      // Lo corregido desde la app pisa a lo de los archivos.
+      const curriculum = applyTopicReviews(loadCurriculum(contentDir, language), courseData)
       const progression = new Progression(courseData, curriculum)
       const roadmap = loadRoadmap(contentDir, language)
       services = {
@@ -216,6 +219,15 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   })
 
   handle(IPC.curriculumList, () => getServices().curriculum)
+  handle(IPC.topicReviewSave, (topicId, edit, markReviewed) => {
+    const language = activeLanguage()
+    const parsed = z.object({ topic: topicSchema, summary: z.string().min(1).max(50_000) }).parse(edit)
+    const updated = saveTopicReview(courseDb(language), getServices(language).curriculum, z.string().parse(topicId), parsed, z.boolean().parse(markReviewed), today())
+    if (isDev) writeTopicFiles(contentDir, language, updated)
+    // El temario se vuelve a armar con la corrección la próxima vez que se use.
+    courses.delete(language)
+    return updated
+  })
   handle(IPC.curriculumMap, () => {
     const { curriculum, roadmap, progression } = getServices()
     const state = progression.getState(today())

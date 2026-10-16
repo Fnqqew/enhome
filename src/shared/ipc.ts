@@ -1,6 +1,6 @@
 // Contrato entre el proceso principal y la interfaz.
 
-import type { CurriculumMap, CurriculumTopic } from './curriculum'
+import type { CurriculumMap, CurriculumTopic, Topic } from './curriculum'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { FeedbackNote, NewFeedback } from './feedback'
 import type { CourseSummary, LanguageId } from './languages'
@@ -26,6 +26,7 @@ export const IPC = {
   settingsUpdate: 'settings:update',
   curriculumList: 'curriculum:list',
   curriculumMap: 'curriculum:map',
+  topicReviewSave: 'topic-review:save',
   progressGet: 'progress:get',
   coursesList: 'courses:list',
   coursePause: 'course:pause',
@@ -139,6 +140,8 @@ export interface Api {
   updateSettings(patch: Partial<AppSettings>): Promise<AppSettings>
   getCurriculum(): Promise<CurriculumTopic[]>
   getCurriculumMap(): Promise<CurriculumMap>
+  // Guarda lo corregido de un tópico y, si se pide, lo marca como revisado.
+  saveTopicReview(topicId: string, edit: { topic: Topic; summary: string }, markReviewed: boolean): Promise<CurriculumTopic>
   getProgress(): Promise<ProgressState>
   getCourses(): Promise<CourseSummary[]>
   pauseCourse(): Promise<ProgressState>

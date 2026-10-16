@@ -1202,3 +1202,56 @@ mark.gloss {
 .journal-entry[open] summary {
   margin-bottom: 0.6rem;
 }
+
+/* Editor de tópicos */
+
+.modal.editor {
+  width: min(900px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.6rem 1rem;
+}
+
+.field {
+  min-width: 0;
+}
+
+.editor-subtopic {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.editor-subtopic summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editor-subtopic[open] summary {
+  margin-bottom: 0.7rem;
+}
+
+.editor-row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.editor-row .text-answer {
+  flex: 1;
+  min-width: 0;
+}
+
+.editor-summary {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.topic-review {
+  align-items: center;
+}
