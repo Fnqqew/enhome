@@ -14,6 +14,7 @@ import {
   type ExamResultView,
   type ExamSessionView,
   type MockScope,
+  type MockSubtopicOption,
   type ResumeResult,
   type TestsOverview
 } from '../../shared/exams'
@@ -26,7 +27,7 @@ import { toPublicExercise } from '../practice/exercises'
 import { gradeAuto } from '../practice/grading'
 import { secondChanceFor } from '../rewards/inventory'
 import type { ExamGenerator, ExamRequest } from './generation'
-import { planMockExam, planWeeklyExam, type ExamItemPlan } from './plan'
+import { planMockExam, planSubtopicMock, planWeeklyExam, type ExamItemPlan } from './plan'
 import { HEARTBEAT_TIMEOUT_MS, PAUSE_LIMIT_MS, WEAK_SUBTOPIC_RATE } from './rules'
 
 export class ExamError extends Error {}
@@ -142,7 +143,8 @@ export class Exams {
             : unlocked.length === 0
               ? 'Todavía no hay tópicos para practicar.'
               : null,
-        topicTitle: mockTopic?.title ?? null
+        topicTitle: mockTopic?.title ?? null,
+        subtopics: this.mockSubtopics(unlocked)
       },
       history: this.history()
     }
@@ -171,20 +173,32 @@ export class Exams {
     return this.sessionView(this.exam(examId))
   }
 
-  async startMock(scope: MockScope, today: string): Promise<ExamSessionView> {
+  async startMock(scope: MockScope, today: string, subtopicId: string | null = null): Promise<ExamSessionView> {
     await this.resolveInterruptions(today)
     if (this.openExam()) throw new ExamError('Ya hay una prueba en curso.')
     const unlocked = this.unlockedTopics(today)
     if (unlocked.length === 0) throw new ExamError('Todavía no hay tópicos para practicar.')
 
-    const week = this.progression.getState(today).week
-    const topics = scope === 'topic' ? [(week ? this.topics.get(week.topicId) : undefined) ?? unlocked[unlocked.length - 1]] : unlocked
-    const questions = await this.generateExam(this.request('mock', planMockExam(topics), []))
+    let plan: ExamItemPlan[]
+    let topicId: string | null = null
+    if (scope === 'subtopic') {
+      const topic = unlocked.find((t) => t.subtopics.some((s) => s.id === subtopicId))
+      const subtopic = topic?.subtopics.find((s) => s.id === subtopicId)
+      if (!topic || !subtopic) throw new ExamError('Elegí un subtema de un tópico que ya viste.')
+      plan = planSubtopicMock(topic, subtopic)
+      topicId = topic.id
+    } else {
+      const week = this.progression.getState(today).week
+      const topics = scope === 'topic' ? [(week ? this.topics.get(week.topicId) : undefined) ?? unlocked[unlocked.length - 1]] : unlocked
+      plan = planMockExam(topics)
+      topicId = scope === 'topic' ? topics[0].id : null
+    }
+    const questions = await this.generateExam(this.request('mock', plan, []))
     if (this.openExam()) throw new ExamError('Ya hay una prueba en curso.')
 
     const { lastInsertRowid } = this.db
       .prepare("INSERT INTO exams (kind, scope, topic_id, status, questions, started_on, last_seen_at) VALUES ('mock', ?, ?, 'in_progress', ?, ?, ?)")
-      .run(scope, scope === 'topic' ? topics[0].id : null, JSON.stringify(questions), today, this.nowIso())
+      .run(scope, topicId, JSON.stringify(questions), today, this.nowIso())
     return this.sessionView(this.exam(Number(lastInsertRowid)))
   }
 
@@ -482,9 +496,26 @@ export class Exams {
     }))
   }
 
+  // Los subtemas de lo ya visto, marcando los que más cuestan (más de un tercio de errores).
+  private mockSubtopics(unlocked: CurriculumTopic[]): MockSubtopicOption[] {
+    return [...unlocked].reverse().map((topic) => {
+      const weakness = this.subtopicWeakness(topic.id)
+      return {
+        topicId: topic.id,
+        topicTitle: topic.title,
+        subtopics: topic.subtopics.map((s) => ({ id: s.id, title: s.title, weak: (weakness.get(s.id) ?? 0) > 1 / 3 }))
+      }
+    })
+  }
+
   private title(row: ExamRow): string {
     const topic = row.topic_id ? this.topics.get(row.topic_id)?.title : null
     if (row.kind === 'weekly') return `Examen semanal · ${topic ?? 'tópico'}`
+    if (row.scope === 'subtopic') {
+      const first = this.questions(row)[0]
+      const subtopic = first ? this.topics.get(first.topicId)?.subtopics.find((s) => s.id === first.subtopicId)?.title : null
+      return `Simulacro corto · ${subtopic ?? topic ?? 'subtema'}`
+    }
     return row.scope === 'topic' && topic ? `Simulacro · ${topic}` : 'Simulacro general'
   }
 

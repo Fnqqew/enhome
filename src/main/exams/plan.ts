@@ -2,7 +2,7 @@
 
 import type { Subtopic, Topic } from '../../shared/curriculum'
 import type { ExerciseType } from '../../shared/exercises'
-import { MOCK_EXAM_SIZE, WEEKLY_EXAM_SIZE } from './rules'
+import { MOCK_EXAM_SIZE, SUBTOPIC_MOCK_SIZE, WEEKLY_EXAM_SIZE } from './rules'
 
 export interface ExamItemPlan {
   topicId: string
@@ -56,6 +56,11 @@ export function planWeeklyExam(topic: Topic, reviewTopics: Topic[], weakness: Ma
 }
 
 // Simulacro: preguntas cerradas repartidas entre los tópicos y sus subtemas.
+// Simulacro corto de un solo subtema: todas las preguntas sobre lo mismo, rotando los formatos.
+export function planSubtopicMock(topic: Topic, subtopic: Subtopic): ExamItemPlan[] {
+  return Array.from({ length: SUBTOPIC_MOCK_SIZE }, (_, i) => ({ topicId: topic.id, subtopicId: subtopic.id, type: CLOSED[i % CLOSED.length] }))
+}
+
 export function planMockExam(topics: Topic[]): ExamItemPlan[] {
   const pairs: [Topic, Subtopic][] = []
   const longest = Math.max(...topics.map((t) => t.subtopics.length))

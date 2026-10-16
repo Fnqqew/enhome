@@ -156,7 +156,7 @@ export interface Api {
   getTestsOverview(): Promise<TestsOverview>
   getExamLock(): Promise<boolean>
   startWeeklyExam(): Promise<ExamSessionView>
-  startMockExam(scope: MockScope): Promise<ExamSessionView>
+  startMockExam(scope: MockScope, subtopicId?: string): Promise<ExamSessionView>
   resumeExam(examId: number): Promise<ResumeResult>
   saveExamAnswer(examId: number, index: number, answer: ExerciseAnswer | null): Promise<void>
   examHeartbeat(examId: number): Promise<void>

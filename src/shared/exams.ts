@@ -4,7 +4,14 @@ import type { ExerciseAnswer, ExerciseFeedback, ExerciseType, PublicExercise, St
 import type { SecondChanceView } from './rewards'
 
 export type ExamKind = 'weekly' | 'mock'
-export type MockScope = 'topic' | 'general'
+export type MockScope = 'topic' | 'general' | 'subtopic'
+
+// Subtemas que se pueden elegir para un simulacro corto, agrupados por tópico.
+export interface MockSubtopicOption {
+  topicId: string
+  topicTitle: string
+  subtopics: { id: string; title: string; weak: boolean }[]
+}
 export type ExamEndReason = 'pause-expired' | 'second-interruption' | 'week-closed'
 
 // Mensaje exacto del error que indica que el examen se interrumpió (la interfaz lo reconoce).
@@ -83,7 +90,7 @@ export interface TestsOverview {
   // Aviso de algo que se resolvió al abrir (anulación o entrega automática).
   notice: string | null
   weekly: { available: boolean; message: string; topicTitle: string | null; preparing: boolean; ready: boolean }
-  mock: { available: boolean; reason: string | null; topicTitle: string | null }
+  mock: { available: boolean; reason: string | null; topicTitle: string | null; subtopics: MockSubtopicOption[] }
   history: ExamHistoryItem[]
 }
 

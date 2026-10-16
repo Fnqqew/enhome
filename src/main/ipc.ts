@@ -295,7 +295,9 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.testsOverview, () => getServices().exams.getOverview(today()))
   handle(IPC.examLock, () => getServices().exams.hasBlockingExam())
   handle(IPC.examStartWeekly, () => getServices().exams.startWeekly(today()))
-  handle(IPC.examStartMock, (scope) => getServices().exams.startMock(z.enum(['topic', 'general']).parse(scope), today()))
+  handle(IPC.examStartMock, (scope, subtopicId) =>
+    getServices().exams.startMock(z.enum(['topic', 'general', 'subtopic']).parse(scope), today(), z.string().nullable().optional().parse(subtopicId) ?? null)
+  )
   handle(IPC.examResume, (examId) => getServices().exams.resume(id.parse(examId), today()))
   handle(IPC.examSave, (examId, index, answer) =>
     getServices().exams.saveAnswer(id.parse(examId), z.number().int().min(0).parse(index), answer === null ? null : exerciseAnswerSchema.parse(answer))

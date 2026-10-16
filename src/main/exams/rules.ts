@@ -13,3 +13,6 @@ export const MAX_DROPPED_ITEMS = 2
 
 // En la práctica, un subtema con más de este porcentaje de errores recibe preguntas más exigentes.
 export const WEAK_SUBTOPIC_RATE = 0.3
+
+// Preguntas del simulacro de un solo subtema.
+export const SUBTOPIC_MOCK_SIZE = 6

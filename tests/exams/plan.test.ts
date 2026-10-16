@@ -41,3 +41,15 @@ describe('planMockExam', () => {
     expect(plan.some((p) => OPEN.includes(p.type))).toBe(false)
   })
 })
+
+describe('simulacro de un subtema', () => {
+  it('todas las preguntas son del subtema elegido', async () => {
+    const { planSubtopicMock } = await import('../../src/main/exams/plan')
+    const { SUBTOPIC_MOCK_SIZE } = await import('../../src/main/exams/rules')
+    const topic = curriculum[0]
+    const plan = planSubtopicMock(topic, topic.subtopics[2])
+    expect(plan).toHaveLength(SUBTOPIC_MOCK_SIZE)
+    expect(new Set(plan.map((p) => p.subtopicId))).toEqual(new Set([topic.subtopics[2].id]))
+    expect(new Set(plan.map((p) => p.type)).size).toBeGreaterThan(1)
+  })
+})

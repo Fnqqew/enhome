@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth } from '@shared/dates'
-import type { ExamEndReason, ExamHistoryItem, ExamResultView, ExamSessionView, ResumeResult, TestsOverview } from '@shared/exams'
+import type { ExamEndReason, ExamHistoryItem, ExamResultView, ExamSessionView, MockSubtopicOption, ResumeResult, TestsOverview } from '@shared/exams'
 import ClaudeWait from '../components/ClaudeWait'
 import ExamPlayer from '../components/exams/ExamPlayer'
 import ExamResult from '../components/exams/ExamResult'
@@ -16,7 +16,7 @@ const END_REASON: Record<ExamEndReason, string> = {
   'week-closed': 'fuera de término'
 }
 
-type Busy = 'weekly' | 'topic' | 'general' | 'resume' | null
+type Busy = 'weekly' | 'topic' | 'general' | 'subtopic' | 'resume' | null
 
 export default function Tests({ navigate, onLockChange }: { navigate: Navigate; onLockChange: (locked: boolean) => void }): React.JSX.Element {
   const [overview, setOverview] = useState<TestsOverview | null>(null)
@@ -193,8 +193,18 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
                 {busy === 'general' ? 'Armando el simulacro…' : 'De todo lo visto'}
               </button>
             </div>
-            {(busy === 'topic' || busy === 'general') && <p className="muted small">Claude arma y revisa el simulacro: tarda alrededor de un minuto.</p>}
-            <ClaudeWait active={busy === 'topic' || busy === 'general'} />
+            {overview.mock.available && overview.mock.subtopics.length > 0 && (
+              <SubtopicMock
+                options={overview.mock.subtopics}
+                disabled={busy !== null}
+                busy={busy === 'subtopic'}
+                onStart={(subtopicId) => run('subtopic', () => window.api.startMockExam('subtopic', subtopicId), setSession)}
+              />
+            )}
+            {(busy === 'topic' || busy === 'general' || busy === 'subtopic') && (
+              <p className="muted small">Claude arma y revisa el simulacro: tarda alrededor de un minuto.</p>
+            )}
+            <ClaudeWait active={busy === 'topic' || busy === 'general' || busy === 'subtopic'} />
           </section>
 
           <History
@@ -255,5 +265,44 @@ function History({ items, onOpen }: { items: ExamHistoryItem[]; onOpen: (examId:
         </table>
       </div>
     </section>
+  )
+}
+
+// Simulacro corto de un solo subtema, para reforzar lo que más cuesta. Los marcados con «para reforzar»
+// son los que tienen más errores en las pruebas.
+function SubtopicMock({
+  options,
+  disabled,
+  busy,
+  onStart
+}: {
+  options: MockSubtopicOption[]
+  disabled: boolean
+  busy: boolean
+  onStart: (subtopicId: string) => void
+}): React.JSX.Element {
+  const firstWeak = options.flatMap((t) => t.subtopics).find((s) => s.weak)
+  const [chosen, setChosen] = useState(firstWeak?.id ?? options[0]?.subtopics[0]?.id ?? '')
+  return (
+    <div className="row subtopic-mock">
+      <label className="stack-sm">
+        <span className="small">De un solo subtema (6 preguntas)</span>
+        <select value={chosen} onChange={(e) => setChosen(e.target.value)} disabled={disabled}>
+          {options.map((topic) => (
+            <optgroup key={topic.topicId} label={topic.topicTitle}>
+              {topic.subtopics.map((s) => (
+                <option key={s.id} value={s.id}>
+                  {s.title}
+                  {s.weak ? ' · para reforzar' : ''}
+                </option>
+              ))}
+            </optgroup>
+          ))}
+        </select>
+      </label>
+      <button className="btn secondary" disabled={disabled || !chosen} onClick={() => onStart(chosen)}>
+        {busy ? 'Armando el simulacro…' : 'Empezar'}
+      </button>
+    </div>
   )
 }
