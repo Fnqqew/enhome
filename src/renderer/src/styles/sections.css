@@ -1255,3 +1255,57 @@ mark.gloss {
 .topic-review {
   align-items: center;
 }
+
+/* Certificados */
+
+.certificates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.certificate {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.certificate > .stack-sm {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.certificate.complete {
+  border-color: var(--accent);
+  background: linear-gradient(120deg, var(--accent-soft), transparent 60%);
+}
+
+.certificate-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--muted);
+}
+
+.certificate.complete .certificate-icon {
+  color: var(--accent);
+}
+
+.diploma-modal {
+  width: min(1000px, calc(100vw - 32px));
+}
+
+.diploma-frame {
+  width: 100%;
+  aspect-ratio: 297 / 210;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbf9f4;
+}
+
+.name-input {
+  max-width: 20rem;
+}

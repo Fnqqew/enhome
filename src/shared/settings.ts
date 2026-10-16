@@ -120,7 +120,9 @@ export const settingsSchema = z.object({
   // Cuántos ejercicios tiene la práctica del día.
   practiceLength: z.enum(['short', 'normal', 'intense']),
   // Formatos que el alumno sacó de sus prácticas.
-  excludedTypes: z.array(z.enum(EXERCISE_TYPES)).max(EXERCISE_TYPES.length - 4)
+  excludedTypes: z.array(z.enum(EXERCISE_TYPES)).max(EXERCISE_TYPES.length - 4),
+  // Para los certificados (opcional).
+  studentName: z.string().max(60)
 })
 
 export const PRACTICE_LENGTHS = {
@@ -157,5 +159,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   reduceMotion: false,
   splash: 'full',
   practiceLength: 'normal',
-  excludedTypes: []
+  excludedTypes: [],
+  studentName: ''
 }

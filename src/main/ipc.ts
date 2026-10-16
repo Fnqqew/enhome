@@ -1,4 +1,5 @@
-import { app, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
+import { writeFile } from 'node:fs/promises'
 import { z } from 'zod'
 import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming } from './claude/bridge'
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
@@ -25,6 +26,8 @@ import { Summaries } from './summaries/summaries'
 import { Exams } from './exams/exams'
 import { generateExam } from './exams/generation'
 import { Rewards } from './rewards/rewards'
+import { certificateHtml, certificates } from './rewards/certificates'
+import { CEFR_LEVELS } from '../shared/curriculum'
 import { Notebook } from './review/notebook'
 import { Games } from './games/games'
 import { Vocabulary } from './vocab/vocab'
@@ -334,6 +337,34 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.examResult, (examId) => getServices().exams.getResult(id.parse(examId)))
   handle(IPC.examDiscard, (examId) => getServices().exams.discardMock(id.parse(examId)))
 
+  const certificateFor = (level: unknown) => {
+    const parsed = z.enum(CEFR_LEVELS).parse(level)
+    const cert = certificates(courseDb(activeLanguage()), getServices().curriculum).find((c) => c.level === parsed)
+    if (!cert?.complete) throw new Error('Ese nivel todavía no está completo.')
+    return certificateHtml(cert, activeLanguage(), loadSettings(db).studentName)
+  }
+  handle(IPC.certificatesList, () => certificates(courseDb(activeLanguage()), getServices().curriculum))
+  handle(IPC.certificateHtml, (level) => certificateFor(level))
+  // El diploma se imprime a PDF en una ventana oculta y se guarda donde elija el alumno.
+  handle(IPC.certificatePdf, async (level) => {
+    const html = certificateFor(level)
+    const win = new BrowserWindow({ show: false, webPreferences: { sandbox: true, javascript: false } })
+    try {
+      await win.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(html)}`)
+      const pdf = await win.webContents.printToPDF({ landscape: true, pageSize: 'A4', printBackground: true, margins: { top: 0, bottom: 0, left: 0, right: 0 } })
+      const language = languageInfo(activeLanguage()).name
+      const { canceled, filePath } = await dialog.showSaveDialog({
+        title: 'Guardar certificado',
+        defaultPath: `Certificado ${String(level)} de ${language} - Enhome.pdf`,
+        filters: [{ name: 'PDF', extensions: ['pdf'] }]
+      })
+      if (canceled || !filePath) return null
+      await writeFile(filePath, pdf)
+      return filePath
+    } finally {
+      win.destroy()
+    }
+  })
   handle(IPC.rewardsView, () => getServices().rewards.getView(today()))
   handle(IPC.rewardsNews, () => getServices().rewards.takeNews(today()))
   handle(IPC.rewardsHint, (exerciseId) => getServices().rewards.useHint(id.parse(exerciseId)))

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth } from '@shared/dates'
 import type { CalendarDayStatus, ProgressView } from '@shared/rewards'
 import Icon from '../components/Icon'
+import Certificates from '../components/progress/Certificates'
 import RoadMap from '../components/progress/RoadMap'
 import { useDayChange } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
@@ -197,6 +198,8 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
           </div>
         )}
       </section>
+
+      <Certificates />
     </>
   )
 }

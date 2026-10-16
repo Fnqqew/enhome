@@ -349,6 +349,15 @@ function CourseSettings(): React.JSX.Element {
   return (
     <section className="card stack">
       <h2>Cursos</h2>
+      <Row label="Tu nombre">
+        <input
+          className="text-answer name-input"
+          value={settings.studentName}
+          maxLength={60}
+          placeholder="Para los certificados (opcional)"
+          onChange={(e) => update({ studentName: e.target.value })}
+        />
+      </Row>
       <p className="muted">
         Cada idioma es un curso aparte, con sus semanas, faltas, exámenes, racha y logros. El idioma se cambia desde la barra lateral.
       </p>

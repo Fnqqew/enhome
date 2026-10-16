@@ -73,7 +73,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 42 Revisar los tópicos desde la app
 - [x] 43 Excluir formatos que no te sirven
 - [x] 44 Simulacros por subtema
-- [ ] 45 Certificado al terminar un nivel
+- [x] 45 Certificado al terminar un nivel
 - [ ] 46 Pronunciación con reconocimiento de voz
 - [x] Juegos: contrarreloj, memotest, ahorcado, frases desordenadas, escuchá y elegí
 
