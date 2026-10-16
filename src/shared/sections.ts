@@ -5,6 +5,7 @@ export const SECTIONS = [
   { id: 'temario', label: 'Temario' },
   { id: 'practica', label: 'Práctica' },
   { id: 'repaso', label: 'Repaso' },
+  { id: 'juegos', label: 'Juegos' },
   { id: 'resumenes', label: 'Resúmenes' },
   { id: 'pruebas', label: 'Pruebas' },
   { id: 'progreso', label: 'Progreso' },

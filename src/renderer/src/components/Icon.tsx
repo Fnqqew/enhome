@@ -36,6 +36,12 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M4.5 20v-5h5" />
     </>
   ),
+  juegos: (
+    <>
+      <path d="M7.5 8.5h9a4.5 4.5 0 0 1 4.4 5.4l-.8 3.8a2.2 2.2 0 0 1-3.8 1L14.5 16.5h-5l-1.8 2.2a2.2 2.2 0 0 1-3.8-1l-.8-3.8a4.5 4.5 0 0 1 4.4-5.4z" />
+      <path d="M8 11.5v3M6.5 13h3M15.5 12h.01M17.5 14h.01" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>

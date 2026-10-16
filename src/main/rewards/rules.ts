@@ -9,7 +9,10 @@ export const XP = {
   perPointAbovePass: 15,
   examFailed: 30,
   mock: 25,
-  achievement: 30
+  achievement: 30,
+  // Cada repaso acertado del cuaderno de errores, y un extra cuando queda aprendido.
+  reviewStep: 3,
+  reviewLearned: 5
 } as const
 
 // La constancia multiplica la experiencia: +5 % por día de racha, hasta +50 %.

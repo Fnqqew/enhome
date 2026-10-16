@@ -10,6 +10,7 @@ import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from '.
 import type { ExamResultView, ExamSessionView, MockScope, ResumeResult, TestsOverview } from './exams'
 import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './review'
+import type { GameDeck, GameId, GameResult } from './games'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -60,6 +61,8 @@ export const IPC = {
   rewardsNews: 'rewards:news',
   rewardsHint: 'rewards:hint',
   rewardsSecondChance: 'rewards:second-chance',
+  gamesDeck: 'games:deck',
+  gamesFinish: 'games:finish',
   reviewOverview: 'review:overview',
   reviewDue: 'review:due',
   reviewExam: 'review:exam',
@@ -157,6 +160,8 @@ export interface Api {
   takeRewardNews(): Promise<RewardNews[]>
   usePracticeHint(exerciseId: number): Promise<string>
   useSecondChance(examId: number, index: number): Promise<SecondChanceResult>
+  getGameDeck(): Promise<GameDeck>
+  finishGame(game: GameId, score: number): Promise<GameResult>
   getReviewOverview(): Promise<ReviewOverview>
   getDueReviews(): Promise<ReviewItemView[]>
   getExamReview(examId: number): Promise<ReviewItemView[]>

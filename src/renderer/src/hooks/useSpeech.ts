@@ -62,6 +62,28 @@ export function useSpeech() {
     [voiceFor, rate, target]
   )
 
+  // Lee un texto entero con la voz de un idioma, sin separarlo por partes (juegos y dictado).
+  const speakAs = useCallback(
+    (text: string, lang: SpeechLang = target, slower = false) => {
+      if (!supported) return
+      speechSynthesis.cancel()
+      const run = ++generation.current
+      const utterance = new SpeechSynthesisUtterance(text)
+      const voice = voiceFor(lang)
+      utterance.lang = voice?.lang ?? speechTag(lang)
+      if (voice) utterance.voice = voice
+      utterance.rate = slower ? 0.75 : rate
+      const finish = (): void => {
+        if (generation.current === run) setState('idle')
+      }
+      utterance.onend = finish
+      utterance.onerror = finish
+      speechSynthesis.speak(utterance)
+      setState('playing')
+    },
+    [voiceFor, rate, target]
+  )
+
   const pause = useCallback(() => {
     speechSynthesis.pause()
     setState('paused')
@@ -82,6 +104,7 @@ export function useSpeech() {
     rate,
     setRate,
     speak,
+    speakAs,
     pause,
     resume,
     stop

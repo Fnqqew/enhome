@@ -3,7 +3,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { CEFR_LEVELS, roadmapSchema, topicSchema, type CurriculumTopic, type Roadmap, type Topic } from '../../shared/curriculum'
-import type { LanguageId } from '../../shared/languages'
+import { languageInfo, type LanguageId } from '../../shared/languages'
 
 export class CurriculumError extends Error {}
 
@@ -47,7 +47,9 @@ export function loadCurriculum(dir: string, language: LanguageId = 'en'): Curric
     }
   }
 
-  if (topics.length === 0) throw new CurriculumError(`El curso de ${language} no tiene tópicos en content/${language}.`)
+  if (topics.length === 0) {
+    throw new CurriculumError(`No se encontró el temario de ${languageInfo(language).name} (se busca en ${courseDir}).`)
+  }
   validateCurriculum(topics)
   return topics.sort(compareTopics)
 }

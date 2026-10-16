@@ -15,6 +15,8 @@ export interface RewardStats {
   recoveries: number
   mocks: number
   aiSummaries: number
+  games: number
+  learnedMistakes: number
   levelsComplete: string[]
   playerLevel: number
 }
@@ -66,5 +68,7 @@ export const ACHIEVEMENTS: AchievementDefinition[] = [
   { id: 'critico', icon: 'star', title: 'Buen crítico', description: 'Calificá 20 ejercicios o resúmenes.', target: 20, value: (s) => s.ratings },
   level('A1', 'medal'),
   level('A2', 'medal'),
-  { id: 'jugador-5', icon: 'trophy', title: 'Nivel 5', description: 'Llegá al nivel 5 de jugador.', target: 5, value: (s) => s.playerLevel }
+  { id: 'jugador-5', icon: 'trophy', title: 'Nivel 5', description: 'Llegá al nivel 5 de jugador.', target: 5, value: (s) => s.playerLevel },
+  { id: 'juegos-10', icon: 'sparkle', title: 'A jugar', description: 'Jugá 10 partidas en Juegos.', target: 10, value: (s) => s.games },
+  { id: 'aprendidos-10', icon: 'repaso', title: 'Memoria de elefante', description: 'Aprendé 10 errores del cuaderno.', target: 10, value: (s) => s.learnedMistakes }
 ]

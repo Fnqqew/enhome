@@ -16,6 +16,7 @@ const PAGES = {
   temario: () => import('./pages/Curriculum'),
   practica: () => import('./pages/Practice'),
   repaso: () => import('./pages/Review'),
+  juegos: () => import('./pages/Games'),
   resumenes: () => import('./pages/Summaries'),
   pruebas: () => import('./pages/Tests'),
   progreso: () => import('./pages/Progress'),
@@ -26,6 +27,7 @@ const PAGES = {
 const Curriculum = lazy(PAGES.temario)
 const Practice = lazy(PAGES.practica)
 const Review = lazy(PAGES.repaso)
+const Games = lazy(PAGES.juegos)
 const Summaries = lazy(PAGES.resumenes)
 const Tests = lazy(PAGES.pruebas)
 const Progress = lazy(PAGES.progreso)
@@ -190,6 +192,7 @@ function Page({
   if (section === 'temario') return <Curriculum />
   if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'repaso') return <Review examId={params.examId ?? null} navigate={navigate} />
+  if (section === 'juegos') return <Games />
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />

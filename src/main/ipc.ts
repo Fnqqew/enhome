@@ -24,6 +24,8 @@ import { Exams } from './exams/exams'
 import { generateExam } from './exams/generation'
 import { Rewards } from './rewards/rewards'
 import { Notebook } from './review/notebook'
+import { Games } from './games/games'
+import { GAME_IDS } from '../shared/games'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
@@ -53,6 +55,7 @@ interface Services {
   exams: Exams
   rewards: Rewards
   notebook: Notebook
+  games: Games
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -104,7 +107,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
         summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
         exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),
         rewards: new Rewards(courseData, curriculum, roadmap, progression),
-        notebook: new Notebook(courseData, curriculum, gradeOpenAnswer)
+        notebook: new Notebook(courseData, curriculum, gradeOpenAnswer),
+        games: new Games(courseData, curriculum, progression)
       }
       courses.set(language, services)
     }
@@ -251,6 +255,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.practiceAnswer, (exerciseId, answer) =>
     getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today())
   )
+  handle(IPC.gamesDeck, () => getServices().games.deck(today()))
+  handle(IPC.gamesFinish, (game, score) => getServices().games.finish(z.enum(GAME_IDS).parse(game), z.number().parse(score), today()))
   handle(IPC.reviewOverview, () => getServices().notebook.overview(today()))
   handle(IPC.reviewDue, () => getServices().notebook.due(today()))
   handle(IPC.reviewExam, (examId) => getServices().notebook.fromExam(id.parse(examId)))
