@@ -33,6 +33,8 @@ export interface PoolRequest {
   counts: Partial<Record<ExerciseType, number>>
   // Textos de ejercicios anteriores del mismo subtema, para no repetirlos.
   avoid: string[]
+  // Se llama con cada tanda apenas está lista (la corta suele llegar un minuto antes que la larga).
+  onGroup?: (exercises: StoredExercise[]) => void
 }
 
 export type PoolGenerator = (request: PoolRequest) => Promise<StoredExercise[]>
@@ -200,8 +202,17 @@ async function generateValidGroup(request: PoolRequest, counts: Partial<Record<E
 }
 
 export async function generatePracticePool(request: PoolRequest, ask: Ask = askClaude): Promise<StoredExercise[]> {
-  const groups = await Promise.all(split(request.counts).map((counts) => generateValidGroup(request, counts, ask)))
+  const groups = await Promise.all(
+    split(request.counts).map((counts) =>
+      generateValidGroup(request, counts, ask).then((group) => {
+        request.onGroup?.(group)
+        return group
+      })
+    )
+  )
   const prepared = groups.flat()
-  if (prepared.length <= SESSION_SIZE) throw new Error('Claude no generó suficientes ejercicios válidos para armar la práctica.')
+  // Con el pedido completo tiene que alcanzar para la práctica y alguna alternativa; si solo se pidió una parte, lo que se pidió.
+  const requested = Object.values(request.counts).reduce((sum, n) => sum + (n ?? 0), 0)
+  if (prepared.length < Math.min(requested, SESSION_SIZE + 1)) throw new Error('Claude no generó suficientes ejercicios válidos para armar la práctica.')
   return prepared
 }

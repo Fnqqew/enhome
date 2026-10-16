@@ -65,6 +65,8 @@ function OptionList({
         return (
           <button key={i} type="button" className={`option${state}`} aria-pressed={selected === i} disabled={locked} onClick={() => onSelect(i)}>
             {option}
+            {state === ' correct' && <span className="sr-only"> (respuesta correcta)</span>}
+            {state === ' wrong' && <span className="sr-only"> (tu respuesta, incorrecta)</span>}
           </button>
         )
       })}
@@ -142,7 +144,14 @@ function WordOrder({ content, answer, feedback, onChange }: ItemProps<'word_orde
           <span className="muted">Tocá las palabras en orden</span>
         ) : (
           chosen.map((index, position) => (
-            <button key={position} type="button" className="token" disabled={locked} onClick={() => update(chosen.filter((_, p) => p !== position))}>
+            <button
+              key={position}
+              type="button"
+              className="token"
+              disabled={locked}
+              aria-label={`Quitar «${content.tokens[index]}»`}
+              onClick={() => update(chosen.filter((_, p) => p !== position))}
+            >
               {content.tokens[index]}
             </button>
           ))
@@ -151,7 +160,7 @@ function WordOrder({ content, answer, feedback, onChange }: ItemProps<'word_orde
       <div className="token-bank">
         {content.tokens.map((token, i) =>
           chosen.includes(i) ? null : (
-            <button key={i} type="button" className="token" disabled={locked} onClick={() => update([...chosen, i])}>
+            <button key={i} type="button" className="token" disabled={locked} aria-label={`Agregar «${token}»`} onClick={() => update([...chosen, i])}>
               {token}
             </button>
           )

@@ -1,0 +1,344 @@
+{
+  "topics": {
+    "fr-a1-etre-avoir": [
+      {
+        "subtopicId": "pronoms-salutations",
+        "instruction": "Elegí el pronombre correcto.",
+        "prompt": "— Où sont Paul et Marie ? — ___ sont au café.",
+        "options": ["Ils", "Elles", "Il", "On"],
+        "correctIndex": 0,
+        "explanation": "Para un grupo de hombres y mujeres se usa ils, nunca elles."
+      },
+      {
+        "subtopicId": "verbe-etre",
+        "instruction": "Elegí la forma correcta del verbo être.",
+        "prompt": "Nous ___ argentins, de Rosario.",
+        "options": ["avons", "sommes", "êtes", "sont"],
+        "correctIndex": 1,
+        "explanation": "Con nous, être se conjuga sommes: nous sommes argentins."
+      },
+      {
+        "subtopicId": "verbe-avoir",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Ma sœur ___ vingt-cinq ans.",
+        "options": ["est", "as", "a", "ont"],
+        "correctIndex": 2,
+        "explanation": "La edad se dice con avoir, y con ma sœur (elle) la forma es a."
+      },
+      {
+        "subtopicId": "il-y-a-c-est",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Dans ma rue, ___ deux boulangeries et un café.",
+        "options": ["il a", "c'est", "ils sont", "il y a"],
+        "correctIndex": 3,
+        "explanation": "Para decir 'hay' se usa il y a, que no cambia en plural."
+      }
+    ],
+    "fr-a1-articles": [
+      {
+        "subtopicId": "articles-definis",
+        "instruction": "Elegí el artículo correcto.",
+        "prompt": "___ hôtel est près de la gare.",
+        "options": ["Le", "L'", "La", "Les"],
+        "correctIndex": 1,
+        "explanation": "Hôtel empieza con h muda, así que el artículo se apostrofa: l'hôtel."
+      },
+      {
+        "subtopicId": "indefinis-genre",
+        "instruction": "Elegí el artículo correcto, fijándote en el género de la palabra en francés.",
+        "prompt": "Aujourd'hui, ___ mer est très calme.",
+        "options": ["le", "les", "la", "l'"],
+        "correctIndex": 2,
+        "explanation": "Mer es femenino en francés (la mer), aunque en español digas 'el mar'."
+      },
+      {
+        "subtopicId": "partitifs",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Il n'y a pas ___ lait dans le frigo.",
+        "options": ["du", "le", "un", "de"],
+        "correctIndex": 3,
+        "explanation": "Después de una negación, el partitivo du se convierte en de: pas de lait."
+      },
+      {
+        "subtopicId": "contractions",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Ce soir, je vais ___ cinéma avec Julie.",
+        "options": ["au", "à le", "à la", "en"],
+        "correctIndex": 0,
+        "explanation": "À + le se contrae siempre en au: au cinéma."
+      }
+    ],
+    "fr-a1-present": [
+      {
+        "subtopicId": "verbes-er",
+        "instruction": "Elegí la forma correcta del verbo.",
+        "prompt": "Nous ___ dans une banque à Buenos Aires.",
+        "options": ["travaillez", "travaillent", "travaillons", "travaille"],
+        "correctIndex": 2,
+        "explanation": "Con nous, los verbos en -er terminan en -ons: nous travaillons."
+      },
+      {
+        "subtopicId": "prononciation",
+        "instruction": "Las cuatro opciones suenan igual, así que elegí la que está bien escrita.",
+        "prompt": "Vous ___ très bien français !",
+        "options": ["parlé", "parler", "parlés", "parlez"],
+        "correctIndex": 3,
+        "explanation": "Con vous la terminación se escribe -ez, aunque suene igual que parlé y parler."
+      },
+      {
+        "subtopicId": "aller-faire",
+        "instruction": "Elegí la forma correcta del verbo faire.",
+        "prompt": "Vous ___ du sport le week-end ?",
+        "options": ["faites", "faisez", "font", "fais"],
+        "correctIndex": 0,
+        "explanation": "Faire es irregular y con vous se dice faites, como vous êtes."
+      },
+      {
+        "subtopicId": "prendre-venir",
+        "instruction": "Elegí la forma correcta del verbo prendre.",
+        "prompt": "Le matin, mes parents ___ le bus.",
+        "options": ["prendent", "prennent", "prenent", "prend"],
+        "correctIndex": 1,
+        "explanation": "En la tercera persona del plural, prendre se escribe con doble n: ils prennent."
+      }
+    ],
+    "fr-a1-negation-questions": [
+      {
+        "subtopicId": "ne-pas",
+        "instruction": "Elegí la opción correcta para completar la negación.",
+        "prompt": "Elle ___ habite pas à Paris.",
+        "options": ["ne", "non", "pas", "n'"],
+        "correctIndex": 3,
+        "explanation": "Ne se apostrofa delante de vocal o h muda: elle n'habite pas."
+      },
+      {
+        "subtopicId": "jamais-rien-plus",
+        "instruction": "Elegí la opción que completa la oración con sentido.",
+        "prompt": "Il n'y a ___ dans le frigo. On va faire les courses ?",
+        "options": ["rien", "pas rien", "personne", "jamais"],
+        "correctIndex": 0,
+        "explanation": "Ne… rien significa 'nada': no hay nada en la heladera, por eso hay que hacer las compras."
+      },
+      {
+        "subtopicId": "questions-oui-non",
+        "instruction": "Elegí la versión formal de la pregunta, con inversión, que está bien escrita.",
+        "prompt": "Vous parlez espagnol ?",
+        "options": ["Parlez vous espagnol ?", "Parlez-vous espagnol ?", "Vous parlez-vous espagnol ?", "Parlez-tu espagnol ?"],
+        "correctIndex": 1,
+        "explanation": "En la inversión el verbo va antes del pronombre y los dos se unen con guion: parlez-vous."
+      },
+      {
+        "subtopicId": "mots-interrogatifs",
+        "instruction": "Elegí la opción correcta para empezar la pregunta.",
+        "prompt": "___ tu fais ce soir ?",
+        "options": ["Que", "Quoi", "Qu'est-ce que", "Qui"],
+        "correctIndex": 2,
+        "explanation": "Para preguntar '¿qué?' al principio de la frase sin inversión se usa qu'est-ce que."
+      }
+    ],
+    "fr-a1-possessifs-futur-proche": [
+      {
+        "subtopicId": "possessifs",
+        "instruction": "Elegí el posesivo correcto.",
+        "prompt": "Marie a quinze ans. Elle habite à Lyon avec ___ père.",
+        "options": ["son", "sa", "ses", "leur"],
+        "correctIndex": 0,
+        "explanation": "El posesivo concuerda con père, que es masculino, y no con Marie: son père."
+      },
+      {
+        "subtopicId": "mon-amie-famille",
+        "instruction": "Elegí el posesivo correcto.",
+        "prompt": "Je te présente ___ amie Claire.",
+        "options": ["ma", "mon", "mes", "ta"],
+        "correctIndex": 1,
+        "explanation": "Delante de vocal se usa mon aunque la palabra sea femenina: mon amie."
+      },
+      {
+        "subtopicId": "villes-pays-chez",
+        "instruction": "Elegí la preposición correcta.",
+        "prompt": "Mes cousins habitent ___ Brésil.",
+        "options": ["en", "à", "au", "dans"],
+        "correctIndex": 2,
+        "explanation": "Brésil es un país masculino, así que se usa au: au Brésil."
+      },
+      {
+        "subtopicId": "futur-proche",
+        "instruction": "Elegí la opción correcta para hablar de un plan.",
+        "prompt": "Demain, nous ___ visiter le Louvre.",
+        "options": ["allons à", "allez", "vais", "allons"],
+        "correctIndex": 3,
+        "explanation": "El futuro próximo es aller + infinitivo, sin preposición en el medio: nous allons visiter."
+      }
+    ],
+    "fr-a2-passe-compose": [
+      {
+        "subtopicId": "avec-avoir",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado.",
+        "prompt": "Hier soir, nous ___ un film à la télé.",
+        "options": ["avons regarder", "avons regardé", "sommes regardés", "regardons"],
+        "correctIndex": 1,
+        "explanation": "Regarder forma el passé composé con avoir y el participio en -é: nous avons regardé."
+      },
+      {
+        "subtopicId": "avec-etre",
+        "instruction": "Elegí el auxiliar correcto.",
+        "prompt": "Hier, ___ allé au cinéma avec Paul.",
+        "options": ["j'ai", "j'avais", "je suis", "je vais"],
+        "correctIndex": 2,
+        "explanation": "Aller es de la lista DR MRS VANDERTRAMP, así que va con être: je suis allé."
+      },
+      {
+        "subtopicId": "participes-irreguliers",
+        "instruction": "Elegí el participio correcto.",
+        "prompt": "Ce matin, j'ai ___ le bus pour aller au travail.",
+        "options": ["prendu", "prené", "prit", "pris"],
+        "correctIndex": 3,
+        "explanation": "Prendre tiene participio irregular: j'ai pris."
+      },
+      {
+        "subtopicId": "accord-negation-marqueurs",
+        "instruction": "Elegí la forma correcta del participio.",
+        "prompt": "Ma sœur est ___ à Rome hier soir.",
+        "options": ["partie", "parti", "partis", "partir"],
+        "correctIndex": 0,
+        "explanation": "Con être el participio concuerda con el sujeto, y ma sœur es femenino: partie."
+      }
+    ],
+    "fr-a2-imparfait": [
+      {
+        "subtopicId": "formation-imparfait",
+        "instruction": "Elegí la forma correcta del imparfait.",
+        "prompt": "Avant, nous ___ à Mendoza, mais maintenant nous habitons à Paris.",
+        "options": ["habitons", "habitaient", "habitions", "habitiez"],
+        "correctIndex": 2,
+        "explanation": "El imparfait se forma con la raíz de nous (habit-) y, para nous, la terminación -ions: nous habitions."
+      },
+      {
+        "subtopicId": "etre-descriptions",
+        "instruction": "Elegí la opción correcta para completar la descripción.",
+        "prompt": "Quand ___ petit, j'adorais le foot.",
+        "options": ["j'ai été", "je suis", "j'été", "j'étais"],
+        "correctIndex": 3,
+        "explanation": "Para describir cómo eras en el pasado se usa el imparfait de être: j'étais."
+      },
+      {
+        "subtopicId": "habitudes",
+        "instruction": "Elegí la opción correcta para hablar de una costumbre del pasado.",
+        "prompt": "Quand j'étais petit, le dimanche, nous ___ chez ma grand-mère.",
+        "options": ["allions", "sommes allés", "allons", "irions"],
+        "correctIndex": 0,
+        "explanation": "Una costumbre del pasado, como 'íbamos todos los domingos', va en imparfait: nous allions."
+      },
+      {
+        "subtopicId": "imparfait-passe-compose",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Quand tu as appelé, ___ déjà.",
+        "options": ["j'ai dormi", "je dormais", "je dors", "je dormirai"],
+        "correctIndex": 1,
+        "explanation": "Lo que ya estaba pasando cuando llegó la llamada va en imparfait: je dormais déjà."
+      }
+    ],
+    "fr-a2-pronoms": [
+      {
+        "subtopicId": "pronoms-cod",
+        "instruction": "Elegí el pronombre correcto.",
+        "prompt": "Tu connais Claire ? — Oui, je ___ connais bien.",
+        "options": ["lui", "le", "l'", "la"],
+        "correctIndex": 3,
+        "explanation": "Connaître lleva objeto directo, y para una mujer el pronombre es la: je la connais."
+      },
+      {
+        "subtopicId": "pronoms-coi",
+        "instruction": "Elegí el pronombre correcto.",
+        "prompt": "Tu téléphones à ta mère ? — Oui, je ___ téléphone tous les jours.",
+        "options": ["lui", "la", "le", "leur"],
+        "correctIndex": 0,
+        "explanation": "Téléphoner lleva à, así que el pronombre es indirecto: je lui téléphone, aunque en español digas 'la llamo'."
+      },
+      {
+        "subtopicId": "y-en",
+        "instruction": "Elegí la respuesta correcta.",
+        "prompt": "Tu as des frères ? — Oui, ___ deux.",
+        "options": ["j'ai", "j'en ai", "j'y ai", "je les ai"],
+        "correctIndex": 1,
+        "explanation": "Cuando decís una cantidad sin repetir el sustantivo, en es obligatorio: j'en ai deux."
+      },
+      {
+        "subtopicId": "place-pronoms",
+        "instruction": "Elegí la opción con el pronombre y la negación en el lugar correcto.",
+        "prompt": "Ce film ? Non, je ___.",
+        "options": ["n'ai pas le vu", "ne l'ai vu pas", "ne l'ai pas vu", "l'ai ne pas vu"],
+        "correctIndex": 2,
+        "explanation": "En el passé composé el pronombre va antes del auxiliar y ne… pas rodea al auxiliar: je ne l'ai pas vu."
+      }
+    ],
+    "fr-a2-comparatifs-adverbes": [
+      {
+        "subtopicId": "comparatif-adjectifs",
+        "instruction": "Elegí la palabra correcta para completar la comparación.",
+        "prompt": "Mon frère est aussi grand ___ mon père.",
+        "options": ["que", "comme", "de", "qu'"],
+        "correctIndex": 0,
+        "explanation": "En francés el segundo término de la comparación va con que, aunque en español digas 'tan alto como'."
+      },
+      {
+        "subtopicId": "quantites-verbes",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "J'ai ___ livres que toi.",
+        "options": ["aussi de", "autant de", "autant des", "aussi"],
+        "correctIndex": 1,
+        "explanation": "Para comparar cantidades iguales se usa autant de + sustantivo, sin artículo."
+      },
+      {
+        "subtopicId": "meilleur-mieux-superlatif",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "Elle chante ___ que moi.",
+        "options": ["meilleur", "plus bien", "mieux", "meilleure"],
+        "correctIndex": 2,
+        "explanation": "Con un verbo se usa mieux, el comparativo de bien, mientras que meilleur acompaña a un sustantivo."
+      },
+      {
+        "subtopicId": "adverbes-ment",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "___, le magasin est encore ouvert !",
+        "options": ["Heureuxment", "Heureuse", "Heureux", "Heureusement"],
+        "correctIndex": 3,
+        "explanation": "El adverbio se forma con el femenino del adjetivo más -ment: heureuse → heureusement."
+      }
+    ],
+    "fr-a2-futur-conditionnel": [
+      {
+        "subtopicId": "futur-simple",
+        "instruction": "Elegí la forma correcta del futur simple.",
+        "prompt": "Le train ___ à dix heures demain matin.",
+        "options": ["partiré", "partira", "partirai", "partirons"],
+        "correctIndex": 1,
+        "explanation": "Con il (le train), el futur simple termina en -a: il partira."
+      },
+      {
+        "subtopicId": "futur-irreguliers-si",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "S'il fait beau demain, nous ___ à la plage.",
+        "options": ["allerons", "irions", "irons", "irez"],
+        "correctIndex": 2,
+        "explanation": "Aller tiene raíz irregular en futuro (ir-) y después de si + presente va el futuro: nous irons."
+      },
+      {
+        "subtopicId": "conditionnel",
+        "instruction": "Elegí la opción más cortés y correcta para pedir en un bar.",
+        "prompt": "Bonjour, je ___ un café, s'il vous plaît.",
+        "options": ["voudrai", "veux", "voudrait", "voudrais"],
+        "correctIndex": 3,
+        "explanation": "Para pedir con cortesía se usa el conditionnel de vouloir: je voudrais."
+      },
+      {
+        "subtopicId": "imperatif",
+        "instruction": "Elegí la forma correcta del imperativo.",
+        "prompt": "___, s'il te plaît : la valise est très lourde !",
+        "options": ["Aide-moi", "Me aide", "Aides-moi", "Moi aide"],
+        "correctIndex": 0,
+        "explanation": "En el imperativo afirmativo el pronombre va después del verbo, con guion, y me se vuelve moi: aide-moi."
+      }
+    ]
+  }
+}

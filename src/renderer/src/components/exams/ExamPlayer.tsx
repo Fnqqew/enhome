@@ -100,6 +100,15 @@ export default function ExamPlayer({
   const question = session.questions[index]
   const answeredCount = answers.filter(Boolean).length
 
+  // Al cambiar de pregunta el foco va a su encabezado, para seguir con el teclado desde ahí.
+  const headingRef = useRef<HTMLSpanElement>(null)
+  const shownIndex = useRef(index)
+  useEffect(() => {
+    if (shownIndex.current === index) return
+    shownIndex.current = index
+    headingRef.current?.focus()
+  }, [index])
+
   return (
     <section className="card wide stack">
       <div className="card-header">
@@ -136,7 +145,9 @@ export default function ExamPlayer({
 
       <div className="stack">
         <div className="row spread">
-          <span className="exercise-type">{EXERCISE_TYPE_LABELS[question.type]}</span>
+          <span ref={headingRef} tabIndex={-1} className="exercise-type">
+            {EXERCISE_TYPE_LABELS[question.type]}
+          </span>
           <span className="muted small">
             Pregunta {index + 1} · {question.topicTitle} › {question.subtopicTitle}
           </span>

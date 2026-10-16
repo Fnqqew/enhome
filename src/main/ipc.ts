@@ -3,6 +3,7 @@ import { z } from 'zod'
 import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming } from './claude/bridge'
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
 import { buildCurriculumMap } from './content/curriculum-map'
+import { loadPlacementBank, withPlacementBank } from './content/placement-bank'
 import type { Db } from './db/database'
 import { addFeedback, listFeedback, removeFeedback, toggleFeedback } from './db/feedback-repo'
 import { newFeedbackSchema } from '../shared/feedback'
@@ -88,7 +89,12 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
         curriculum,
         roadmap,
         progression,
-        placement: new Placement(courseData, curriculum, progression, generatePlacementQuestions),
+        placement: new Placement(
+          courseData,
+          curriculum,
+          progression,
+          withPlacementBank(loadPlacementBank(contentDir, language, curriculum), generatePlacementQuestions)
+        ),
         practice: new Practice(courseData, curriculum, progression, generatePracticePool, gradeOpenAnswer),
         summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
         exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),

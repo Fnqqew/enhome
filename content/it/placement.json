@@ -1,0 +1,344 @@
+{
+  "topics": {
+    "it-a1-essere-avere": [
+      {
+        "subtopicId": "pronomi-saluti",
+        "instruction": "Le hablás de usted al señor Bianchi: elegí la forma correcta.",
+        "prompt": "Buongiorno, signor Bianchi. Come ___?",
+        "options": ["sta", "stai", "state", "stanno"],
+        "correctIndex": 0,
+        "explanation": "Con Lei, el 'usted' del italiano, el verbo va en tercera persona del singular: come sta?"
+      },
+      {
+        "subtopicId": "verbo-essere",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Noi ___ argentini, di Rosario.",
+        "options": ["sono", "siamo", "abbiamo", "stiamo"],
+        "correctIndex": 1,
+        "explanation": "El origen y la nacionalidad se dicen con essere, y con noi la forma es siamo."
+      },
+      {
+        "subtopicId": "verbo-avere",
+        "instruction": "Elegí la opción correcta para completar el diálogo.",
+        "prompt": "Quanti anni hai? — ___ ventotto anni.",
+        "options": ["Sono", "O", "Ho", "Hanno"],
+        "correctIndex": 2,
+        "explanation": "La edad se dice con avere, como en español, y con io es ho, con una h que no suena."
+      },
+      {
+        "subtopicId": "c-e-ci-sono",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "In questa strada ___ due farmacie.",
+        "options": ["c'è", "ha", "hanno", "ci sono"],
+        "correctIndex": 3,
+        "explanation": "Con un sustantivo en plural, 'hay' se dice ci sono; c'è es solo para el singular."
+      }
+    ],
+    "it-a1-articoli-genere": [
+      {
+        "subtopicId": "articolo-determinativo",
+        "instruction": "Elegí el artículo correcto.",
+        "prompt": "___ studenti sono in aula.",
+        "options": ["Gli", "I", "Le", "Lo"],
+        "correctIndex": 0,
+        "explanation": "Ante s + consonante, el plural masculino del artículo es gli: gli studenti."
+      },
+      {
+        "subtopicId": "articolo-indeterminativo",
+        "instruction": "Elegí el artículo correcto.",
+        "prompt": "Cerco ___ zaino nuovo.",
+        "options": ["un", "uno", "una", "un'"],
+        "correctIndex": 1,
+        "explanation": "Ante z el masculino usa uno, igual que el definido usa lo: uno zaino."
+      },
+      {
+        "subtopicId": "genere-plurale",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Al bar prendiamo due ___ e un cornetto.",
+        "options": ["cappuccinos", "cappuccino", "cappuccini", "cappuccine"],
+        "correctIndex": 2,
+        "explanation": "El plural italiano no lleva -s: las palabras en -o terminan en -i, así que cappuccino pasa a cappuccini."
+      },
+      {
+        "subtopicId": "aggettivi",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Oggi in piazza ci sono ___ persone.",
+        "options": ["molto", "molti", "molta", "molte"],
+        "correctIndex": 3,
+        "explanation": "Delante de un sustantivo molto concuerda, y persone es femenino plural: molte persone."
+      }
+    ],
+    "it-a1-presente": [
+      {
+        "subtopicId": "verbi-are",
+        "instruction": "Elegí la forma correcta del verbo cercare.",
+        "prompt": "Tu ___ un lavoro a Milano?",
+        "options": ["cerchi", "cerci", "cerca", "cercate"],
+        "correctIndex": 0,
+        "explanation": "Cercare agrega una h delante de la i para mantener el sonido de la c dura: tu cerchi."
+      },
+      {
+        "subtopicId": "verbi-ere-ire",
+        "instruction": "Elegí la forma correcta del verbo capire.",
+        "prompt": "Scusa, non ___ la domanda.",
+        "options": ["capo", "capisco", "capiso", "capiscio"],
+        "correctIndex": 1,
+        "explanation": "Capire agrega -isc- en el presente y con io se escribe capisco."
+      },
+      {
+        "subtopicId": "negazione-domande",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ parlo tedesco, solo italiano e spagnolo.",
+        "options": ["No", "Mai", "Non", "Né"],
+        "correctIndex": 2,
+        "explanation": "Delante del verbo la negación es non; el no suelto se usa solo para responder."
+      },
+      {
+        "subtopicId": "routine-frequenza",
+        "instruction": "Elegí la opción correcta para completar el diálogo.",
+        "prompt": "Che ore sono? — ___ l'una.",
+        "options": ["Sono", "Ha", "C'è", "È"],
+        "correctIndex": 3,
+        "explanation": "La una es singular, así que se dice è l'una; las demás horas van con sono, como sono le due."
+      }
+    ],
+    "it-a1-preposizioni-possessivi": [
+      {
+        "subtopicId": "preposizioni-semplici",
+        "instruction": "Empezaste a estudiar italiano hace seis meses y seguís: elegí la opción correcta.",
+        "prompt": "Studio italiano ___ sei mesi.",
+        "options": ["da", "fa", "per", "tra"],
+        "correctIndex": 0,
+        "explanation": "Para algo que empezó en el pasado y sigue, 'desde hace' se dice da con el presente."
+      },
+      {
+        "subtopicId": "di-a-da-articolo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Il treno arriva ___ otto.",
+        "options": ["a le", "alle", "ale", "alla"],
+        "correctIndex": 1,
+        "explanation": "a + le se escribe todo junto y con doble l: alle otto."
+      },
+      {
+        "subtopicId": "in-su-articolo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Le chiavi sono ___ tavolo, vicino al telefono.",
+        "options": ["nel", "in il", "sul", "su il"],
+        "correctIndex": 2,
+        "explanation": "Para 'arriba de' se usa su, que se une con el artículo il: sul tavolo."
+      },
+      {
+        "subtopicId": "possessivi",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ appartamento è piccolo ma luminoso.",
+        "options": ["Mio", "Mi", "La mia", "Il mio"],
+        "correctIndex": 3,
+        "explanation": "En italiano el posesivo lleva artículo y concuerda con appartamento, que es masculino: il mio appartamento."
+      }
+    ],
+    "it-a1-irregolari-stare": [
+      {
+        "subtopicId": "andare-fare-venire",
+        "instruction": "Elegí la preposición correcta.",
+        "prompt": "Quest'estate vado ___ Italia con mia sorella.",
+        "options": ["in", "a", "all'", "nella"],
+        "correctIndex": 0,
+        "explanation": "Con países se usa in (vado in Italia); a va con ciudades, como en vado a Roma."
+      },
+      {
+        "subtopicId": "volere-potere-dovere",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Stasera non esco: ___ studiare.",
+        "options": ["ho che", "devo", "debo", "tengo"],
+        "correctIndex": 1,
+        "explanation": "'Tener que' se dice con dovere + infinitivo: devo studiare."
+      },
+      {
+        "subtopicId": "stare-gerundio",
+        "instruction": "Elegí la opción correcta para completar el diálogo.",
+        "prompt": "Che cosa fai? — ___ cucinando la cena.",
+        "options": ["Sono", "Ho", "Sto", "Faccio"],
+        "correctIndex": 2,
+        "explanation": "La forma progresiva se arma con stare + gerundio: sto cucinando."
+      },
+      {
+        "subtopicId": "stare-per-piani",
+        "instruction": "Elegí la opción correcta para decir que la película está por empezar.",
+        "prompt": "Il film ___ per cominciare.",
+        "options": ["è", "va", "ha", "sta"],
+        "correctIndex": 3,
+        "explanation": "'Estar por' se dice stare per + infinitivo: il film sta per cominciare."
+      }
+    ],
+    "it-a2-passato-prossimo": [
+      {
+        "subtopicId": "passato-avere",
+        "instruction": "Elegí la forma correcta del passato prossimo.",
+        "prompt": "Ieri sera ___ un film molto bello.",
+        "options": ["ho guardato", "sono guardato", "ho guardata", "guardato"],
+        "correctIndex": 0,
+        "explanation": "Guardare tiene objeto directo y va con avere, con el participio en -o: ho guardato."
+      },
+      {
+        "subtopicId": "passato-essere",
+        "instruction": "Elegí la forma correcta del passato prossimo.",
+        "prompt": "Sabato Laura ___ al mare con le amiche.",
+        "options": ["ha andato", "è andata", "è andato", "ha andata"],
+        "correctIndex": 1,
+        "explanation": "Andare es un verbo de movimiento y va con essere, con el participio concordado con Laura: è andata."
+      },
+      {
+        "subtopicId": "participi-irregolari",
+        "instruction": "Elegí el participio correcto.",
+        "prompt": "Che cosa hai ___ ieri pomeriggio?",
+        "options": ["fato", "faciuto", "fatto", "fatuto"],
+        "correctIndex": 2,
+        "explanation": "Fare tiene participio irregular y se escribe con doble t: fatto."
+      },
+      {
+        "subtopicId": "marcatori-passato",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Sono arrivato in Italia due mesi ___.",
+        "options": ["da", "hace", "passati", "fa"],
+        "correctIndex": 3,
+        "explanation": "'Hace' con un tiempo pasado se dice fa y va después de la cantidad de tiempo: due mesi fa."
+      }
+    ],
+    "it-a2-imperfetto": [
+      {
+        "subtopicId": "imperfetto-forme",
+        "instruction": "Elegí la forma correcta del imperfetto.",
+        "prompt": "Da bambino io ___ sempre con mio nonno.",
+        "options": ["parlavo", "parlava", "parlavi", "parlevo"],
+        "correctIndex": 0,
+        "explanation": "En el imperfetto la forma de io termina en -vo (parlavo) y es distinta de la de lui (parlava)."
+      },
+      {
+        "subtopicId": "imperfetto-irregolari",
+        "instruction": "Elegí la forma correcta del imperfetto de fare.",
+        "prompt": "Da piccolo ___ i compiti con mia sorella.",
+        "options": ["favo", "facevo", "facivo", "fasevo"],
+        "correctIndex": 1,
+        "explanation": "Fare usa la raíz face- en el imperfetto: facevo, facevi, faceva."
+      },
+      {
+        "subtopicId": "usi-imperfetto",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Quando ero piccolo, in piazza ___ sempre tanti bambini.",
+        "options": ["c'era", "ci era", "c'erano", "c'eravano"],
+        "correctIndex": 2,
+        "explanation": "'Había' con un sustantivo en plural es c'erano, igual que en presente se dice ci sono."
+      },
+      {
+        "subtopicId": "imperfetto-passato",
+        "instruction": "Elegí el tiempo verbal correcto.",
+        "prompt": "Mentre ___, è arrivato Luca.",
+        "options": ["ho cucinato", "cucino", "cucinato", "cucinavo"],
+        "correctIndex": 3,
+        "explanation": "La acción que estaba en curso cuando pasó algo va en imperfetto: mentre cucinavo."
+      }
+    ],
+    "it-a2-pronomi": [
+      {
+        "subtopicId": "pronomi-diretti",
+        "instruction": "Elegí el pronombre correcto.",
+        "prompt": "Le ragazze di Milano? Sì, ___ conosco bene.",
+        "options": ["le", "li", "la", "gli"],
+        "correctIndex": 0,
+        "explanation": "Para reemplazar un plural femenino, como le ragazze, el pronombre directo es le."
+      },
+      {
+        "subtopicId": "pronomi-indiretti",
+        "instruction": "Elegí el pronombre correcto.",
+        "prompt": "Domani è il compleanno di Marco: ___ regalo un libro.",
+        "options": ["lo", "gli", "le", "li"],
+        "correctIndex": 1,
+        "explanation": "Regalare a qualcuno lleva objeto indirecto, y para un hombre es gli: gli regalo un libro."
+      },
+      {
+        "subtopicId": "posizione-concordanza",
+        "instruction": "Elegí el participio correcto.",
+        "prompt": "La pizza? L'ho ___ tutta io.",
+        "options": ["mangiato", "mangiati", "mangiata", "mangiate"],
+        "correctIndex": 2,
+        "explanation": "Con la delante del auxiliar avere, el participio concuerda con el objeto femenino: l'ho mangiata."
+      },
+      {
+        "subtopicId": "ne-ci",
+        "instruction": "Elegí la opción correcta para completar el diálogo.",
+        "prompt": "Quanti fratelli hai? — ___ due.",
+        "options": ["Ho", "Li ho", "Ne sono", "Ne ho"],
+        "correctIndex": 3,
+        "explanation": "Cuando decís una cantidad sin repetir el sustantivo, el italiano exige ne: ne ho due."
+      }
+    ],
+    "it-a2-riflessivi-comparativi": [
+      {
+        "subtopicId": "riflessivi-presente",
+        "instruction": "Elegí la forma correcta del verbo svegliarsi.",
+        "prompt": "La mattina io ___ alle sette.",
+        "options": ["mi sveglio", "me sveglio", "sveglio", "si sveglio"],
+        "correctIndex": 0,
+        "explanation": "Svegliarsi es reflexivo y con io lleva mi antes del verbo: mi sveglio."
+      },
+      {
+        "subtopicId": "riflessivi-passato-reciproci",
+        "instruction": "Elegí la forma correcta del passato prossimo.",
+        "prompt": "Ieri sera Luca e Marco ___ molto alla festa.",
+        "options": ["si hanno divertito", "si sono divertiti", "si sono divertito", "ci sono divertiti"],
+        "correctIndex": 1,
+        "explanation": "Los reflexivos van con essere en el passato prossimo y el participio concuerda con el sujeto plural: si sono divertiti."
+      },
+      {
+        "subtopicId": "comparativi",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "Roma è più grande ___ Milano.",
+        "options": ["che", "que", "di", "come"],
+        "correctIndex": 2,
+        "explanation": "Cuando comparás dos cosas en una cualidad, el 'que' del español se dice di: più grande di Milano."
+      },
+      {
+        "subtopicId": "migliore-superlativo",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "Marco cucina ___ di me.",
+        "options": ["migliore", "più migliore", "più buono", "meglio"],
+        "correctIndex": 3,
+        "explanation": "Para acompañar a un verbo como cucinare se usa el adverbio meglio, no el adjetivo migliore."
+      }
+    ],
+    "it-a2-futuro-condizionale": [
+      {
+        "subtopicId": "futuro-semplice",
+        "instruction": "Elegí la forma correcta del futuro.",
+        "prompt": "Domani io ___ con il direttore.",
+        "options": ["parlerò", "parlarò", "parlerà", "parlaré"],
+        "correctIndex": 0,
+        "explanation": "En el futuro de los verbos en -are la a pasa a e, y con io termina en -ò: parlerò."
+      },
+      {
+        "subtopicId": "futuro-irregolare",
+        "instruction": "Elegí la forma correcta del futuro.",
+        "prompt": "L'anno prossimo ___ in Italia per sei mesi.",
+        "options": ["anderò", "andrò", "andarò", "vadrò"],
+        "correctIndex": 1,
+        "explanation": "Andare es irregular en futuro y pierde la vocal: andrò, andrai, andrà."
+      },
+      {
+        "subtopicId": "condizionale",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Noi ___ volentieri alla festa, ma non possiamo.",
+        "options": ["andremo", "andriamo", "andremmo", "andressimo"],
+        "correctIndex": 2,
+        "explanation": "'Iríamos' es condicional y lleva doble m (andremmo); con una sola m es futuro."
+      },
+      {
+        "subtopicId": "imperativo",
+        "instruction": "Le hablás de usted a una señora: elegí la forma correcta.",
+        "prompt": "Scusi, signora, ___ un momento, per favore.",
+        "options": ["aspetta", "aspettate", "aspetto", "aspetti"],
+        "correctIndex": 3,
+        "explanation": "Con Lei el imperativo de los verbos en -are termina en -i: aspetti, igual que scusi."
+      }
+    ]
+  }
+}

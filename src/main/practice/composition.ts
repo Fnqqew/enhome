@@ -1,7 +1,7 @@
 // Qué ejercicios se piden para cada práctica y cuáles entran en la sesión.
 
 import type { Skill } from '../../shared/curriculum'
-import { EXERCISE_TYPES, type ExerciseType } from '../../shared/exercises'
+import { EXERCISE_TYPES, LONG_TYPES, type ExerciseType } from '../../shared/exercises'
 
 export const SESSION_SIZE = 8
 // Siempre se generan alternativas para poder cambiar de ejercicio.
@@ -61,6 +61,42 @@ export interface PoolItem {
   type: ExerciseType
 }
 
+export const isLongType = (type: ExerciseType): boolean => (LONG_TYPES as readonly ExerciseType[]).includes(type)
+
+// Lugares de la sesión que ocupan los ejercicios largos: la tanda de traducción, la parte
+// conversacional y, los días de escritura, el texto.
+export function longSlots(focus: Skill[]): number {
+  return 2 + (focus.includes('writing') ? 1 : 0)
+}
+
+const byTypeOrder = (a: PoolItem, b: PoolItem): number => EXERCISE_TYPES.indexOf(a.type) - EXERCISE_TYPES.indexOf(b.type)
+
+// Primera parte de una sesión que arranca antes de que lleguen los largos: solo ejercicios cortos,
+// dejando libres los lugares de los largos.
+export function composeShort(pool: PoolItem[], focus: Skill[], preferences: TypePreferences = {}, random: () => number = Math.random): number[] {
+  const short = pool.filter((item) => !isLongType(item.type))
+  return composeSession(short, focus, preferences, random, SESSION_SIZE - longSlots(focus))
+}
+
+// Segunda parte: los largos obligatorios, cuando llegan.
+export function composeLong(pool: PoolItem[], focus: Skill[], random: () => number = Math.random): number[] {
+  const available = pool.filter((item) => isLongType(item.type))
+  const chosen: PoolItem[] = []
+  const take = (...types: ExerciseType[]): void => {
+    for (const type of types) {
+      const index = available.findIndex((item) => item.type === type)
+      if (index >= 0) {
+        chosen.push(...available.splice(index, 1))
+        return
+      }
+    }
+  }
+  if (focus.includes('writing')) take('writing')
+  take('translation_set')
+  take(...(random() < 0.5 ? IMMERSIVE_TYPES : [...IMMERSIVE_TYPES].reverse()))
+  return chosen.sort(byTypeOrder).map((item) => item.id)
+}
+
 // Elige los ejercicios de la sesión: primero los obligatorios (lectura, escritura, la tanda de
 // traducción y una situación para conversar), después variedad priorizando los mejor calificados,
 // y los ordena de lo más guiado a lo más abierto.
@@ -68,7 +104,8 @@ export function composeSession(
   pool: PoolItem[],
   focus: Skill[],
   preferences: TypePreferences = {},
-  random: () => number = Math.random
+  random: () => number = Math.random,
+  size = SESSION_SIZE
 ): number[] {
   const available = [...pool]
   const chosen: PoolItem[] = []
@@ -89,7 +126,7 @@ export function composeSession(
   // La conversación y la situación se alternan para que la práctica no se vuelva rutina.
   take(...(random() < 0.5 ? IMMERSIVE_TYPES : [...IMMERSIVE_TYPES].reverse()))
 
-  while (chosen.length < SESSION_SIZE && available.length > 0) {
+  while (chosen.length < size && available.length > 0) {
     const flexible = available.filter((item) => FLEXIBLE_TYPES.includes(item.type))
     const candidates = flexible.length > 0 ? flexible : available
     const used = new Set(chosen.map((item) => item.type))
@@ -108,5 +145,5 @@ export function composeSession(
     chosen.push(...available.splice(available.indexOf(best), 1))
   }
 
-  return chosen.sort((a, b) => EXERCISE_TYPES.indexOf(a.type) - EXERCISE_TYPES.indexOf(b.type)).map((item) => item.id)
+  return chosen.sort(byTypeOrder).map((item) => item.id)
 }

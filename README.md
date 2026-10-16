@@ -99,6 +99,9 @@ Genera `dist/enhome-<versión>-setup.exe`, que instala la app y crea los accesos
 > [!TIP]
 > El instalador no está firmado: si Windows lo bloquea con «Control de aplicaciones», permitilo desde *Seguridad de Windows*.
 
+> [!WARNING]
+> Si el repositorio está dentro de una carpeta de OneDrive, la sincronización puede borrar o bloquear `node_modules`, `out` y `dist` (ya pasó una vez). Lo más seguro es clonarlo fuera de OneDrive, por ejemplo en `C:\dev\enhome`. Si lo dejás ahí, marcá esas tres carpetas con clic derecho → *Mantener siempre en este dispositivo*, o corré `attrib +P node_modules /S /D` desde la carpeta del proyecto.
+
 ## Cómo está hecha
 
 ```mermaid

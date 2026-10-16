@@ -244,6 +244,10 @@ export interface SessionView {
   spareCount: number
   hintsAvailable: number
   completed: boolean
+  // Lugares de los ejercicios largos que todavía están llegando (la sesión empezó con los cortos).
+  pendingCount: number
+  // Si fallaron los largos, por qué; con «Reintentar» se vuelven a pedir.
+  pendingError: string | null
   canFinish: boolean
 }
 

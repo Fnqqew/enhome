@@ -17,7 +17,7 @@ import type { PracticeUnitView, UnitKind } from '../../shared/progress'
 import { transaction, type Db } from '../db/database'
 import type { Progression } from '../engine/progression'
 import type { OpenAnswerGrader } from './ai-grading'
-import { composeSession, planPool, type TypePreferences } from './composition'
+import { composeLong, composeSession, composeShort, isLongType, longSlots, planPool, type TypePreferences } from './composition'
 import { mainText, toPublicExercise } from './exercises'
 import type { PoolGenerator } from './generation'
 import { gradeAuto } from './grading'
@@ -68,8 +68,19 @@ interface Target {
   unit: PracticeUnitView
 }
 
+// Una generación en curso: startable se cumple cuando llega la tanda corta (ya se puede empezar)
+// y done cuando están todos los ejercicios.
+interface Generation {
+  startable: Promise<void>
+  done: Promise<void>
+}
+
+const errorText = (err: unknown): string => (err instanceof Error ? err.message : String(err))
+
 export class Practice {
-  private readonly generating = new Map<number, Promise<void>>()
+  private readonly generating = new Map<number, Generation>()
+  // Por qué falló la tanda larga de una sesión que ya empezó, para mostrarlo con «Reintentar».
+  private readonly failures = new Map<number, string>()
   private readonly topics: Map<string, CurriculumTopic>
 
   constructor(
@@ -87,7 +98,11 @@ export class Practice {
     if ('reason' in target) return { status: 'unavailable', reason: target.reason }
 
     const session = this.repairSession(this.findSession(target), target)
-    if (session && this.hasSlots(session.id)) return { status: 'session', session: this.sessionView(session) }
+    if (session && this.hasSlots(session.id)) {
+      // Una sesión que arrancó con los cortos y quedó sin los largos (por ejemplo, se cerró la app) los vuelve a pedir.
+      if (this.waitingLong(session) && !this.generating.has(session.id) && !this.failures.has(session.id)) this.launch(session)
+      return { status: 'session', session: this.sessionView(session) }
+    }
 
     // Mientras el alumno lee la introducción, se preparan los ejercicios.
     this.prefetch(target)
@@ -120,8 +135,14 @@ export class Practice {
     const target = this.target(today)
     if ('reason' in target) throw new PracticeError(target.reason)
     const session = this.repairSession(this.findSession(target), target) ?? this.createSession(target)
-    await this.ensurePool(session)
-    if (!this.hasSlots(session.id)) this.assignSlots(session)
+    // Reintentar después de una falla de los largos vuelve a pedirlos.
+    this.failures.delete(session.id)
+    const generation = this.ensurePool(session)
+    if (!this.hasSlots(session.id)) {
+      // Se empieza apenas están los cortos; los largos ocupan sus lugares cuando llegan.
+      await generation.startable
+      if (!this.hasSlots(session.id)) this.assignSlots(this.session(session.id))
+    }
     return { status: 'session', session: this.sessionView(this.session(session.id)) }
   }
 
@@ -218,7 +239,7 @@ export class Practice {
     const session = this.repairSession(this.findSession(target), target) ?? this.createSession(target)
     // De a una generación en segundo plano para no gastar de más.
     if (this.generating.size > 0 && !this.generating.has(session.id)) return
-    this.ensurePool(session).catch((err) => console.error('[practice] No se pudo preparar la práctica', err))
+    this.ensurePool(session)
   }
 
   private prefetchUpcoming(today: string): void {
@@ -231,42 +252,113 @@ export class Practice {
     }
   }
 
-  private ensurePool(session: SessionRow): Promise<void> {
-    if (this.exerciseRows(session.id).length > 0) return Promise.resolve()
-
-    let pending = this.generating.get(session.id)
-    if (!pending) {
-      const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
-      const avoid = (
-        this.db
-          .prepare('SELECT payload FROM exercises WHERE topic_id = ? AND subtopic_id = ? ORDER BY id DESC LIMIT ?')
-          .all(session.topic_id, session.subtopic_id, AVOID_RECENT) as unknown as { payload: string }[]
-      ).map((r) => mainText(JSON.parse(r.payload) as StoredExercise))
-
-      pending = this.generatePool({ topic, subtopic, kind: session.kind, counts: planPool(subtopic.focus, this.preferences()), avoid })
-        .then((exercises) => {
-          if (this.exerciseRows(session.id).length > 0) return
-          const insert = this.db.prepare(
-            'INSERT INTO exercises (topic_id, subtopic_id, skill, type, payload, session_id) VALUES (?, ?, ?, ?, ?, ?)'
-          )
-          transaction(this.db, () => {
-            for (const e of exercises) {
-              insert.run(session.topic_id, session.subtopic_id, SKILL_OF_TYPE[e.type], e.type, JSON.stringify(e), session.id)
-            }
-          })
-        })
-        .finally(() => this.generating.delete(session.id))
-      this.generating.set(session.id, pending)
-    }
-    return pending
+  // Qué partes de los ejercicios ya están guardadas: la tanda corta y la larga llegan por separado.
+  private poolState(sessionId: number): { short: boolean; long: boolean } {
+    const rows = this.exerciseRows(sessionId)
+    return { short: rows.some((r) => !isLongType(r.type)), long: rows.some((r) => isLongType(r.type)) }
   }
 
+  // Una sesión ya empezada con solo ejercicios cortos está esperando los largos.
+  private waitingLong(session: SessionRow): boolean {
+    if (session.completed_on) return false
+    const slotted = this.exerciseRows(session.id).filter((r) => r.slot !== null)
+    return slotted.length > 0 && !slotted.some((r) => isLongType(r.type))
+  }
+
+  private ensurePool(session: SessionRow): Generation {
+    const running = this.generating.get(session.id)
+    if (running) return running
+    const state = this.poolState(session.id)
+    if (state.short && state.long) return { startable: Promise.resolve(), done: Promise.resolve() }
+    return this.launch(session)
+  }
+
+  // Pide a Claude lo que falta (todo, o solo la tanda que no llegó) y guarda cada tanda apenas está.
+  private launch(session: SessionRow): Generation {
+    const state = this.poolState(session.id)
+    const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
+    const avoid = (
+      this.db
+        .prepare('SELECT payload FROM exercises WHERE topic_id = ? AND subtopic_id = ? ORDER BY id DESC LIMIT ?')
+        .all(session.topic_id, session.subtopic_id, AVOID_RECENT) as unknown as { payload: string }[]
+    ).map((r) => mainText(JSON.parse(r.payload) as StoredExercise))
+    const counts = Object.fromEntries(
+      Object.entries(planPool(subtopic.focus, this.preferences())).filter(([type]) => {
+        const long = isLongType(type as ExerciseType)
+        return state.short ? long : state.long ? !long : true
+      })
+    )
+
+    let ready!: () => void
+    let fail!: (err: unknown) => void
+    const startable = new Promise<void>((resolve, reject) => {
+      ready = resolve
+      fail = reject
+    })
+    // Quien no espera a que se pueda empezar no tiene que ver un rechazo sin manejar.
+    startable.catch(() => undefined)
+    if (state.short) ready()
+
+    let savedByGroup = false
+    const save = (exercises: StoredExercise[]): void => {
+      const insert = this.db.prepare('INSERT INTO exercises (topic_id, subtopic_id, skill, type, payload, session_id) VALUES (?, ?, ?, ?, ?, ?)')
+      transaction(this.db, () => {
+        for (const e of exercises) insert.run(session.topic_id, session.subtopic_id, SKILL_OF_TYPE[e.type], e.type, JSON.stringify(e), session.id)
+      })
+      if (exercises.some((e) => !isLongType(e.type))) ready()
+      if (exercises.some((e) => isLongType(e.type))) this.fillLongSlots(this.session(session.id))
+    }
+
+    const done = this.generatePool({
+      topic,
+      subtopic,
+      kind: session.kind,
+      counts,
+      avoid,
+      onGroup: (group) => {
+        savedByGroup = true
+        save(group)
+      }
+    })
+      .then((exercises) => {
+        if (!savedByGroup) save(exercises)
+        ready()
+      })
+      .catch((err) => {
+        fail(err)
+        this.failures.set(session.id, errorText(err))
+        console.error('[practice] No se pudieron preparar los ejercicios', err)
+      })
+      .finally(() => this.generating.delete(session.id))
+
+    const generation = { startable, done }
+    this.generating.set(session.id, generation)
+    return generation
+  }
+
+  // Con todos los ejercicios arma la sesión entera; si solo están los cortos, la primera parte.
   private assignSlots(session: SessionRow): void {
     const { subtopic } = this.content(session.topic_id, session.subtopic_id)
     const pool = this.exerciseRows(session.id).filter((r) => !r.skipped)
-    const ids = composeSession(pool, subtopic.focus, this.preferences())
+    const ids = this.poolState(session.id).long
+      ? composeSession(pool, subtopic.focus, this.preferences())
+      : composeShort(pool, subtopic.focus, this.preferences())
     const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
     transaction(this.db, () => ids.forEach((id, i) => update.run(i + 1, id)))
+  }
+
+  // Los largos llegaron con la sesión ya empezada: ocupan los lugares que quedaron al final.
+  private fillLongSlots(session: SessionRow): void {
+    if (!this.waitingLong(session)) return
+    const { subtopic } = this.content(session.topic_id, session.subtopic_id)
+    const rows = this.exerciseRows(session.id)
+    const last = Math.max(...rows.map((r) => r.slot ?? 0))
+    const ids = composeLong(
+      rows.filter((r) => r.slot === null && !r.skipped),
+      subtopic.focus
+    )
+    const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
+    transaction(this.db, () => ids.forEach((id, i) => update.run(last + i + 1, id)))
   }
 
   private sessionView(session: SessionRow): SessionView {
@@ -299,6 +391,7 @@ export class Practice {
       })
 
     const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
+    const pendingCount = this.waitingLong(session) ? longSlots(subtopic.focus) : 0
     const unit = session.unit_id
       ? (this.db.prepare('SELECT unit_index FROM practice_units WHERE id = ?').get(session.unit_id) as { unit_index: number } | undefined)
       : undefined
@@ -315,7 +408,9 @@ export class Practice {
       spareCount: rows.filter((r) => r.slot === null && !r.skipped).length,
       hintsAvailable: quantity(this.db, 'hint'),
       completed,
-      canFinish: !completed && exercises.length > 0 && exercises.every((e) => e.feedback !== null)
+      pendingCount,
+      pendingError: pendingCount > 0 ? (this.failures.get(session.id) ?? null) : null,
+      canFinish: !completed && pendingCount === 0 && exercises.length > 0 && exercises.every((e) => e.feedback !== null)
     }
   }
 

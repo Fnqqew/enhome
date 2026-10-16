@@ -173,7 +173,7 @@ function Intro({
           {starting ? 'Preparando ejercicios…' : 'Empezar práctica'}
         </button>
         {starting && (
-          <span className="muted">Claude está armando y revisando tus ejercicios. La primera vez del día puede tardar un par de minutos.</span>
+          <span className="muted">Claude está armando y revisando tus ejercicios. Empezás apenas estén los cortos; los largos se suman mientras practicás.</span>
         )}
       </div>
       <ClaudeWait active={starting} />
@@ -198,8 +198,36 @@ function SessionPlayer({
 
   const pending = session.exercises.find((e) => !e.feedback)
   const current = session.exercises.find((e) => e.id === shownId) ?? pending
-  const total = session.exercises.length
-  const position = current ? session.exercises.indexOf(current) + 1 : total
+
+  // Orden de foco con teclado: al corregir, el foco pasa a «Siguiente»; con un ejercicio nuevo,
+  // a su encabezado, así se sigue con Tab desde ahí sin volver al principio de la página.
+  const headingRef = useRef<HTMLSpanElement>(null)
+  const nextRef = useRef<HTMLButtonElement>(null)
+  const firstRender = useRef(true)
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false
+      return
+    }
+    if (current?.feedback) nextRef.current?.focus()
+    else headingRef.current?.focus()
+  }, [current?.id, current?.feedback])
+  // Los largos que todavía están llegando también cuentan en el total.
+  const total = session.exercises.length + session.pendingCount
+  const position = current ? session.exercises.indexOf(current) + 1 : session.exercises.length
+
+  // Mientras Claude termina los ejercicios largos, se consulta cada pocos segundos.
+  const waiting = session.pendingCount > 0 && !session.pendingError
+  useEffect(() => {
+    if (!waiting) return
+    const timer = setInterval(() => {
+      window.api
+        .getPractice()
+        .then(onView)
+        .catch(() => undefined)
+    }, 3000)
+    return () => clearInterval(timer)
+  }, [waiting, onView])
 
   const run = <T,>(kind: 'answer' | 'skip' | 'finish' | 'hint', action: () => Promise<T>, done: (value: T) => void): void => {
     setBusy(kind)
@@ -241,6 +269,9 @@ function SessionPlayer({
             className={`dot${e.feedback ? (e.feedback.correct ? ' correct' : ' wrong') : ''}${e === current ? ' current' : ''}`}
           />
         ))}
+        {Array.from({ length: session.pendingCount }, (_, i) => (
+          <span key={`pending-${i}`} className="dot pending" />
+        ))}
       </div>
 
       {minutesLeft <= MIDNIGHT_WARNING_MINUTES && (
@@ -252,7 +283,9 @@ function SessionPlayer({
 
       {current ? (
         <form className="stack" onSubmit={submit}>
-          <span className="exercise-type">{EXERCISE_TYPE_LABELS[current.type]}</span>
+          <span ref={headingRef} tabIndex={-1} className="exercise-type">
+            {EXERCISE_TYPE_LABELS[current.type]}
+          </span>
           <p>{current.content.instruction}</p>
           <ExerciseInput key={current.id} content={current.content} answer={current.answer} feedback={current.feedback} onChange={setDraft} />
           {current.hint && !current.feedback && (
@@ -303,6 +336,7 @@ function SessionPlayer({
                 onRate={(value) => window.api.rateExercise(current.id, value).then(onView).catch((err: Error) => setError(err.message))}
               />
               <button
+                ref={nextRef}
                 className="btn"
                 type="button"
                 onClick={() => {
@@ -315,6 +349,28 @@ function SessionPlayer({
             </div>
           )}
         </form>
+      ) : session.pendingCount > 0 ? (
+        <div className="stack">
+          {session.pendingError ? (
+            <>
+              <p className="error multiline">No llegaron los ejercicios largos: {session.pendingError}</p>
+              <div>
+                <button className="btn" disabled={busy !== null} onClick={() => run('finish', () => window.api.startPractice(), onView)}>
+                  Reintentar
+                </button>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="waiting-long">
+                <span className="spinner" aria-hidden="true" />
+                Ya hiciste los cortos. Claude está terminando {session.pendingCount === 1 ? 'el ejercicio largo' : `los ${session.pendingCount} ejercicios largos`}{' '}
+                (la conversación y la tanda de traducción): aparecen acá solos en unos segundos.
+              </p>
+              <ClaudeWait active />
+            </>
+          )}
+        </div>
       ) : (
         <div className="stack">
           <p>Respondiste todos los ejercicios.</p>

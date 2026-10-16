@@ -177,8 +177,24 @@ function modelAnswer(exercise: OpenExercise): string | null {
   }
 }
 
-export async function gradeOpenAnswer(request: OpenAnswerRequest): Promise<ExerciseFeedback> {
-  const review = await askClaude({ label: 'corrección', systemPrompt: systemPrompt(request.topic.language), prompt: buildReviewPrompt(request), schema: reviewSchema })
+// Qué modelo corrige cada tipo. Haiku tarda unos segundos; Sonnet queda para lo que pide más criterio.
+// Se cambia con la prueba en vivo de tests/live/grading-models (compara los dos con respuestas conocidas).
+export const GRADING_MODEL: Record<OpenExercise['type'], string> = {
+  translation: 'sonnet',
+  translation_set: 'sonnet',
+  dialogue: 'sonnet',
+  roleplay: 'sonnet',
+  writing: 'sonnet'
+}
+
+export async function gradeOpenAnswer(request: OpenAnswerRequest, model = GRADING_MODEL[request.exercise.type]): Promise<ExerciseFeedback> {
+  const review = await askClaude({
+    label: 'corrección',
+    model,
+    systemPrompt: systemPrompt(request.topic.language),
+    prompt: buildReviewPrompt(request),
+    schema: reviewSchema
+  })
   const { exercise, answers } = request
   const sources = partSources(exercise)
 

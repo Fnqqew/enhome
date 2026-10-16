@@ -305,3 +305,64 @@ describe('práctica guardada de un subtema que cambió', () => {
     expect(session(view).exercises[0].feedback).not.toBeNull()
   })
 })
+
+describe('práctica que empieza con los ejercicios cortos', () => {
+  const isLong = (type: ExerciseType): boolean => ['translation_set', 'dialogue', 'roleplay', 'writing'].includes(type)
+
+  it('arranca apenas llegan los cortos y suma los largos al final cuando llegan', async () => {
+    let releaseLong!: () => void
+    const longArrived = new Promise<void>((resolve) => (releaseLong = resolve))
+    const progressive: PoolGenerator = async ({ counts, onGroup }) => {
+      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) => Array.from({ length: count }, (_, i) => sample(type, i)))
+      const short = all.filter((e) => !isLong(e.type))
+      const long = all.filter((e) => isLong(e.type))
+      onGroup?.(short)
+      await longArrived
+      onGroup?.(long)
+      return all
+    }
+    practice = new Practice(db, curriculum, progression, progressive, grader)
+
+    const first = session(await practice.start(day(0)))
+    expect(first.pendingCount).toBeGreaterThan(0)
+    expect(first.exercises.length + first.pendingCount).toBe(SESSION_SIZE)
+    expect(first.exercises.every((e) => !isLong(e.type))).toBe(true)
+
+    // Respondidos los cortos, todavía no se puede terminar.
+    const answered = await answerAllRight(first)
+    expect(answered.canFinish).toBe(false)
+
+    releaseLong()
+    await new Promise((resolve) => setTimeout(resolve, 0))
+    const full = session(practice.getView(day(0)))
+    expect(full.pendingCount).toBe(0)
+    expect(full.exercises).toHaveLength(SESSION_SIZE)
+    expect(full.exercises.slice(-first.pendingCount).every((e) => isLong(e.type))).toBe(true)
+  })
+
+  it('si la app se cerró sin los largos, los vuelve a pedir al abrir la práctica', async () => {
+    const calls: string[][] = []
+    const shortOnly: PoolGenerator = async ({ counts, onGroup }) => {
+      calls.push(Object.keys(counts))
+      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) => Array.from({ length: count }, (_, i) => sample(type, i)))
+      const short = all.filter((e) => !isLong(e.type))
+      onGroup?.(short)
+      if (all.some((e) => isLong(e.type)) && short.length > 0) throw new Error('se cortó')
+      onGroup?.(all.filter((e) => isLong(e.type)))
+      return all
+    }
+    practice = new Practice(db, curriculum, progression, shortOnly, grader)
+    const first = session(await practice.start(day(0)))
+    await new Promise((resolve) => setTimeout(resolve, 0))
+    expect(session(practice.getView(day(0))).pendingError).toBe('se cortó')
+
+    // «Reintentar» pide solo los largos.
+    practice = new Practice(db, curriculum, progression, shortOnly, grader)
+    practice.getView(day(0))
+    await new Promise((resolve) => setTimeout(resolve, 0))
+    expect(calls.at(-1)!.every((type) => isLong(type as ExerciseType))).toBe(true)
+    const full = session(practice.getView(day(0)))
+    expect(full.pendingCount).toBe(0)
+    expect(full.exercises.length).toBe(first.exercises.length + first.pendingCount)
+  })
+})
