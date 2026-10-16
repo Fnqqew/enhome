@@ -42,6 +42,18 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M8 11.5v3M6.5 13h3M15.5 12h.01M17.5 14h.01" />
     </>
   ),
+  lecturas: (
+    <>
+      <path d="M12 6.5c-2-1.6-4.6-2-8-1.8v13c3.4-.2 6 .2 8 1.8 2-1.6 4.6-2 8-1.8v-13c-3.4-.2-6 .2-8 1.8z" />
+      <path d="M12 6.5v13" />
+    </>
+  ),
+  diario: (
+    <>
+      <path d="M6.5 3.5h11a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-11z" />
+      <path d="M6.5 3.5v17M4.5 7.5h4M4.5 12h4M4.5 16.5h4M11 8h5M11 11.5h5" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>

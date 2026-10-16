@@ -67,8 +67,8 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 36 Atajos de teclado en la práctica
 - [x] 37 Dificultad que se adapta por subtema
 - [x] 38 Elegir la duración de la práctica
-- [ ] 39 Lecturas graduadas
-- [ ] 40 Diario en el idioma
+- [x] 39 Lecturas graduadas
+- [x] 40 Diario en el idioma
 - [ ] 41 Contenido de B1 y B2 (y C1) en los cuatro idiomas
 - [ ] 42 Revisar los tópicos desde la app
 - [x] 43 Excluir formatos que no te sirven

@@ -12,6 +12,7 @@ import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './review'
 import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
+import type { JournalView, ReadingSummary, ReadingView } from './reading'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -68,6 +69,14 @@ export const IPC = {
   vocabDue: 'vocab:due',
   vocabReview: 'vocab:review',
   vocabRemove: 'vocab:remove',
+  readingsList: 'readings:list',
+  readingGet: 'reading:get',
+  readingGenerate: 'reading:generate',
+  readingAnswer: 'reading:answer',
+  readingRemove: 'reading:remove',
+  journalGet: 'journal:get',
+  journalSave: 'journal:save',
+  journalCorrect: 'journal:correct',
   gamesDeck: 'games:deck',
   gamesFinish: 'games:finish',
   reviewOverview: 'review:overview',
@@ -173,6 +182,14 @@ export interface Api {
   getDueWords(): Promise<VocabCard[]>
   reviewWord(cardId: number, knew: boolean): Promise<VocabCard>
   removeWord(cardId: number): Promise<VocabOverview>
+  getReadings(): Promise<ReadingSummary[]>
+  getReading(readingId: number): Promise<ReadingView>
+  generateReading(theme: string): Promise<ReadingView>
+  answerReading(readingId: number, answers: number[]): Promise<ReadingView>
+  removeReading(readingId: number): Promise<ReadingSummary[]>
+  getJournal(): Promise<JournalView>
+  saveJournal(text: string): Promise<JournalView>
+  correctJournal(): Promise<JournalView>
   getGameDeck(): Promise<GameDeck>
   finishGame(game: GameId, score: number): Promise<GameResult>
   getReviewOverview(): Promise<ReviewOverview>

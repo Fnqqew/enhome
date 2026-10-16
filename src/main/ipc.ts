@@ -26,6 +26,9 @@ import { Rewards } from './rewards/rewards'
 import { Notebook } from './review/notebook'
 import { Games } from './games/games'
 import { Vocabulary } from './vocab/vocab'
+import { Readings } from './reading/readings'
+import { Journal } from './reading/journal'
+import { MAX_JOURNAL_LENGTH } from '../shared/reading'
 import { GAME_IDS } from '../shared/games'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
@@ -58,6 +61,8 @@ interface Services {
   notebook: Notebook
   games: Games
   vocab: Vocabulary
+  readings: Readings
+  journal: Journal
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -111,7 +116,9 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
         rewards: new Rewards(courseData, curriculum, roadmap, progression),
         notebook: new Notebook(courseData, curriculum, gradeOpenAnswer),
         games: new Games(courseData, curriculum, progression),
-        vocab: new Vocabulary(courseData, curriculum, language)
+        vocab: new Vocabulary(courseData, curriculum, language),
+        readings: new Readings(courseData, curriculum, progression, language),
+        journal: new Journal(courseData, curriculum, progression, language)
       }
       courses.set(language, services)
     }
@@ -269,6 +276,14 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.vocabDue, () => getServices().vocab.due(today()))
   handle(IPC.vocabReview, (cardId, knew) => getServices().vocab.review(id.parse(cardId), z.boolean().parse(knew), today()))
   handle(IPC.vocabRemove, (cardId) => getServices().vocab.remove(id.parse(cardId), today()))
+  handle(IPC.readingsList, () => getServices().readings.list())
+  handle(IPC.readingGet, (readingId) => getServices().readings.get(id.parse(readingId)))
+  handle(IPC.readingGenerate, (theme) => getServices().readings.generate(z.string().min(1).max(80).parse(theme), today()))
+  handle(IPC.readingAnswer, (readingId, answers) => getServices().readings.answer(id.parse(readingId), z.array(z.number().int().min(0).max(3)).parse(answers)))
+  handle(IPC.readingRemove, (readingId) => getServices().readings.remove(id.parse(readingId)))
+  handle(IPC.journalGet, () => getServices().journal.view(today()))
+  handle(IPC.journalSave, (text) => getServices().journal.save(z.string().max(MAX_JOURNAL_LENGTH * 2).parse(text), today()))
+  handle(IPC.journalCorrect, () => getServices().journal.correct(today()))
   handle(IPC.gamesDeck, () => getServices().games.deck(today()))
   handle(IPC.gamesFinish, (game, score) => getServices().games.finish(z.enum(GAME_IDS).parse(game), z.number().parse(score), today()))
   handle(IPC.reviewOverview, () => getServices().notebook.overview(today()))

@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
-import { SECTIONS, type Navigate, type NavParams, type SectionId } from './navigation'
+import { SECTION_GROUPS, SECTIONS, type Navigate, type NavParams, type SectionId } from './navigation'
 import Icon from './components/Icon'
 import Logo from './components/Logo'
 import LanguageSwitcher from './components/LanguageSwitcher'
@@ -17,6 +17,8 @@ const PAGES = {
   practica: () => import('./pages/Practice'),
   repaso: () => import('./pages/Review'),
   juegos: () => import('./pages/Games'),
+  lecturas: () => import('./pages/Readings'),
+  diario: () => import('./pages/Journal'),
   resumenes: () => import('./pages/Summaries'),
   pruebas: () => import('./pages/Tests'),
   progreso: () => import('./pages/Progress'),
@@ -28,6 +30,8 @@ const Curriculum = lazy(PAGES.temario)
 const Practice = lazy(PAGES.practica)
 const Review = lazy(PAGES.repaso)
 const Games = lazy(PAGES.juegos)
+const Readings = lazy(PAGES.lecturas)
+const Journal = lazy(PAGES.diario)
 const Summaries = lazy(PAGES.resumenes)
 const Tests = lazy(PAGES.pruebas)
 const Progress = lazy(PAGES.progreso)
@@ -43,8 +47,6 @@ function preloadPages(): void {
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
-// Las secciones de abajo quedan separadas: no son parte del recorrido de estudio.
-const EXTRA_SECTIONS: SectionId[] = ['ajustes', 'comentarios', 'acerca']
 
 export default function App(): React.JSX.Element {
   const { settings } = useSettings()
@@ -151,12 +153,13 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
           Enhome
         </div>
         <LanguageSwitcher locked={examLocked} />
-        {SECTIONS.filter((s) => !EXTRA_SECTIONS.includes(s.id)).map((s) => (
-          <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
-        ))}
-        <div className="nav-divider" />
-        {SECTIONS.filter((s) => EXTRA_SECTIONS.includes(s.id)).map((s) => (
-          <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
+        {SECTION_GROUPS.map((group, i) => (
+          <div key={group.id} className="nav-group" role="group" aria-label={group.label}>
+            {i > 0 && <span className="nav-group-label">{group.label}</span>}
+            {SECTIONS.filter((s) => s.group === group.id).map((s) => (
+              <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
+            ))}
+          </div>
         ))}
         <div className="sidebar-foot">
           <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
@@ -193,6 +196,8 @@ function Page({
   if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'repaso') return <Review examId={params.examId ?? null} navigate={navigate} />
   if (section === 'juegos') return <Games />
+  if (section === 'lecturas') return <Readings />
+  if (section === 'diario') return <Journal />
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />
