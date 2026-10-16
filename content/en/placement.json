@@ -1,0 +1,344 @@
+{
+  "topics": {
+    "a1-to-be": [
+      {
+        "subtopicId": "pronombres-personales",
+        "instruction": "Elegí la opción correcta para completar la respuesta.",
+        "prompt": "What time is it? — ___ eight o'clock.",
+        "options": ["Is", "It's", "There is", "They're"],
+        "correctIndex": 1,
+        "explanation": "Para decir la hora el sujeto es it y en inglés no se puede omitir: it's eight o'clock."
+      },
+      {
+        "subtopicId": "to-be-afirmativo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My brother ___ 25 years old.",
+        "options": ["has", "are", "is", "have"],
+        "correctIndex": 2,
+        "explanation": "La edad se dice con to be, y con he, she o it va is: my brother is 25 years old."
+      },
+      {
+        "subtopicId": "to-be-negativo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "No, thanks. I ___ hungry.",
+        "options": ["no am", "amn't", "not am", "am not"],
+        "correctIndex": 3,
+        "explanation": "Para negar con to be, not va después del verbo: I am not (I'm not) hungry."
+      },
+      {
+        "subtopicId": "to-be-preguntas",
+        "instruction": "Elegí la respuesta corta correcta.",
+        "prompt": "Are you a teacher? — Yes, ___.",
+        "options": ["I am", "I'm", "I are", "you are"],
+        "correctIndex": 0,
+        "explanation": "En una respuesta corta afirmativa el verbo no se contrae: Yes, I am."
+      }
+    ],
+    "a1-nouns-articles": [
+      {
+        "subtopicId": "a-an",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I waited for ___ at the bus stop.",
+        "options": ["a hour", "hour", "an hour", "an hours"],
+        "correctIndex": 2,
+        "explanation": "La h de hour no suena, así que la palabra empieza con sonido de vocal y lleva an: an hour."
+      },
+      {
+        "subtopicId": "the",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "I have a dog and a cat. ___ dog is black.",
+        "options": ["The", "A", "An", "Some"],
+        "correctIndex": 0,
+        "explanation": "Se usa the porque ya se sabe de qué perro se habla: el que se mencionó antes."
+      },
+      {
+        "subtopicId": "plurales",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I have three ___.",
+        "options": ["childs", "childrens", "child", "children"],
+        "correctIndex": 3,
+        "explanation": "Child tiene plural irregular: children, sin -s."
+      },
+      {
+        "subtopicId": "there-is-are",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ two supermarkets near my house.",
+        "options": ["Have", "There are", "There is", "Are"],
+        "correctIndex": 1,
+        "explanation": "Para decir 'hay' con un sustantivo en plural se usa there are, porque have no significa 'hay'."
+      }
+    ],
+    "a1-present-simple": [
+      {
+        "subtopicId": "afirmativo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My father ___ in a bank.",
+        "options": ["work", "works", "is work", "working"],
+        "correctIndex": 1,
+        "explanation": "Con he, she o it el verbo lleva -s en presente simple: my father works."
+      },
+      {
+        "subtopicId": "negativo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My sister ___ meat.",
+        "options": ["doesn't eats", "don't eat", "doesn't eat", "no eats"],
+        "correctIndex": 2,
+        "explanation": "Con he, she o it se niega con doesn't y el verbo va en forma base: doesn't eat."
+      },
+      {
+        "subtopicId": "preguntas",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ your brother speak English?",
+        "options": ["Does", "Do", "Is", "Are"],
+        "correctIndex": 0,
+        "explanation": "Con he, she o it la pregunta en presente simple se arma con does: Does your brother speak English?"
+      },
+      {
+        "subtopicId": "frecuencia",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ to work by bus.",
+        "options": ["go usually", "usually goes", "am usually go", "usually go"],
+        "correctIndex": 3,
+        "explanation": "El adverbio de frecuencia va antes del verbo principal, y con I el verbo no lleva -s: I usually go."
+      }
+    ],
+    "a1-possessives-prepositions": [
+      {
+        "subtopicId": "adjetivos-posesivos",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Laura lives with ___ husband in Rosario.",
+        "options": ["his", "her", "she", "their"],
+        "correctIndex": 1,
+        "explanation": "El posesivo concuerda con quien posee: Laura es mujer, entonces her husband."
+      },
+      {
+        "subtopicId": "pronombres-objeto",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "I love my grandmother. I visit ___ every Sunday.",
+        "options": ["she", "his", "her", "him"],
+        "correctIndex": 2,
+        "explanation": "Después del verbo va el pronombre objeto, y para una mujer es her."
+      },
+      {
+        "subtopicId": "preposiciones-lugar",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Call me later. I'm ___ home now.",
+        "options": ["in", "on", "to", "at"],
+        "correctIndex": 3,
+        "explanation": "Se dice at home, igual que at work y at school."
+      },
+      {
+        "subtopicId": "preposiciones-tiempo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My English class is ___ Monday.",
+        "options": ["on", "in", "at", "the"],
+        "correctIndex": 0,
+        "explanation": "Los días de la semana van con on: on Monday."
+      }
+    ],
+    "a1-can-present-continuous": [
+      {
+        "subtopicId": "can",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My sister ___ the guitar very well.",
+        "options": ["can to play", "cans play", "can play", "can plays"],
+        "correctIndex": 2,
+        "explanation": "Después de can el verbo va en forma base, sin to ni -s: can play."
+      },
+      {
+        "subtopicId": "continuo-forma",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look! Ana ___ a letter.",
+        "options": ["is writting", "is writing", "writing", "is writeing"],
+        "correctIndex": 1,
+        "explanation": "El presente continuo lleva is y el verbo con -ing, y en write se va la e sin duplicar la t: is writing."
+      },
+      {
+        "subtopicId": "continuo-usos",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ the answer to this question.",
+        "options": ["know", "am knowing", "knowing", "am know"],
+        "correctIndex": 0,
+        "explanation": "Know es un verbo de estado y no se usa en continuo: I know the answer."
+      },
+      {
+        "subtopicId": "simple-vs-continuo",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "Can I call you later? I ___ dinner right now.",
+        "options": ["have", "has", "having", "am having"],
+        "correctIndex": 3,
+        "explanation": "Con right now se habla de algo que está pasando en este momento, así que va el presente continuo: I am having dinner."
+      }
+    ],
+    "a2-past-simple": [
+      {
+        "subtopicId": "was-were",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ at the beach last weekend.",
+        "options": ["was", "were", "are", "been"],
+        "correctIndex": 1,
+        "explanation": "Con last weekend se habla del pasado, y con we el pasado de to be es were."
+      },
+      {
+        "subtopicId": "regulares",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ English for three hours yesterday.",
+        "options": ["studyed", "study", "studied", "studed"],
+        "correctIndex": 2,
+        "explanation": "Study termina en consonante + y, así que en pasado cambia a -ied: studied."
+      },
+      {
+        "subtopicId": "irregulares",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Last summer we ___ to Bariloche.",
+        "options": ["went", "goed", "go", "gone"],
+        "correctIndex": 0,
+        "explanation": "Go es un verbo irregular y su pasado es went."
+      },
+      {
+        "subtopicId": "negativo-preguntas",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She didn't ___ to work yesterday.",
+        "options": ["went", "goes", "going", "go"],
+        "correctIndex": 3,
+        "explanation": "Después de didn't el verbo vuelve a la forma base, porque el pasado ya lo marca did: didn't go."
+      }
+    ],
+    "a2-future": [
+      {
+        "subtopicId": "going-to",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Sara ___ study medicine next year: she decided last month.",
+        "options": ["going to", "is going to", "is going", "will to"],
+        "correctIndex": 1,
+        "explanation": "Para un plan ya decidido se usa am, is o are + going to + verbo: Sara is going to study."
+      },
+      {
+        "subtopicId": "going-to-evidencia",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look at those black clouds! It ___ rain.",
+        "options": ["goes to", "is going", "going to", "is going to"],
+        "correctIndex": 3,
+        "explanation": "Cuando algo que ves ahora anuncia lo que va a pasar se usa be going to: it is going to rain."
+      },
+      {
+        "subtopicId": "will",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "Don't worry, I ___ you with your homework tomorrow. I promise!",
+        "options": ["will help", "will to help", "will helping", "helps"],
+        "correctIndex": 0,
+        "explanation": "Para prometer algo se usa will seguido del verbo en forma base, sin to: I will help you."
+      },
+      {
+        "subtopicId": "continuo-futuro",
+        "instruction": "Leé el mensaje y elegí la respuesta correcta.",
+        "prompt": "Tom: \"I'm meeting Ana at 6 tomorrow. We booked a table at a café.\" What is Tom talking about?",
+        "options": ["Something happening right now", "Something he does every day", "A plan that is already arranged", "A decision he is making now"],
+        "correctIndex": 2,
+        "explanation": "El presente continuo con tomorrow habla de una cita ya organizada, no de algo que pasa en este momento."
+      }
+    ],
+    "a2-comparing-quantifying": [
+      {
+        "subtopicId": "comparativos",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My brother is ___ me.",
+        "options": ["more tall than", "taller than", "taller that", "more taller than"],
+        "correctIndex": 1,
+        "explanation": "Tall es un adjetivo corto, así que el comparativo se forma con -er y than: taller than."
+      },
+      {
+        "subtopicId": "superlativos",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "For me, Messi is the ___ player in the world.",
+        "options": ["better", "most good", "best", "goodest"],
+        "correctIndex": 2,
+        "explanation": "Good es irregular y su superlativo es the best."
+      },
+      {
+        "subtopicId": "as-as",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The bus isn't as ___ as the train.",
+        "options": ["fast", "faster", "fastest", "more fast"],
+        "correctIndex": 0,
+        "explanation": "Con as ... as el adjetivo va en su forma normal, sin -er ni more: as fast as."
+      },
+      {
+        "subtopicId": "contables-incontables",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "I have a problem. Can you give me ___ advice?",
+        "options": ["an", "a", "many", "some"],
+        "correctIndex": 3,
+        "explanation": "Advice es incontable, así que no lleva a, an ni many, y para pedir algo se usa some."
+      }
+    ],
+    "a2-present-perfect": [
+      {
+        "subtopicId": "forma",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "We have ___ all the pizza. There's nothing left.",
+        "options": ["ate", "eaten", "eat", "eating"],
+        "correctIndex": 1,
+        "explanation": "El present perfect se forma con have + participio, y el participio de eat es eaten."
+      },
+      {
+        "subtopicId": "experiencias",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "I've ___ seen snow. I want to see it one day.",
+        "options": ["ever", "already", "never", "yet"],
+        "correctIndex": 2,
+        "explanation": "Para decir que algo nunca te pasó en la vida se usa never entre have y el participio: I've never seen snow."
+      },
+      {
+        "subtopicId": "just-already-yet",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I haven't finished my homework ___.",
+        "options": ["yet", "already", "just", "ever"],
+        "correctIndex": 0,
+        "explanation": "En una negativa, 'todavía' se dice con yet al final de la oración: I haven't finished yet."
+      },
+      {
+        "subtopicId": "for-since",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I have worked here ___ three years.",
+        "options": ["since", "during", "from", "for"],
+        "correctIndex": 3,
+        "explanation": "Con un período de tiempo se usa for (for three years), mientras que since va con el momento de inicio."
+      }
+    ],
+    "a2-modals-conditionals": [
+      {
+        "subtopicId": "must-have-to",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "You ___ smoke here. It's not allowed.",
+        "options": ["don't have to", "mustn't", "must", "have to"],
+        "correctIndex": 1,
+        "explanation": "Para una prohibición se usa mustn't, mientras que don't have to significa que no es necesario."
+      },
+      {
+        "subtopicId": "should",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "You look tired. You ___ go to bed early tonight.",
+        "options": ["should", "should to", "shouldn't", "might to"],
+        "correctIndex": 0,
+        "explanation": "Para aconsejar se usa should seguido del verbo sin to, y acá el consejo es acostarte temprano."
+      },
+      {
+        "subtopicId": "might-may",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I'm not sure, but I ___ travel to Chile next month.",
+        "options": ["will", "must", "might", "might to"],
+        "correctIndex": 2,
+        "explanation": "Para algo posible pero no seguro se usa might seguido del verbo sin to, mientras que will indica seguridad."
+      },
+      {
+        "subtopicId": "primer-condicional",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "If it ___ tomorrow, we'll stay at home.",
+        "options": ["will rain", "rain", "rained", "rains"],
+        "correctIndex": 3,
+        "explanation": "En la parte del if va presente simple y no will: If it rains, we'll stay at home."
+      }
+    ]
+  }
+}

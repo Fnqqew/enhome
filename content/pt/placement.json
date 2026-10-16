@@ -1,0 +1,344 @@
+{
+  "topics": {
+    "pt-a1-ser-estar": [
+      {
+        "subtopicId": "pronomes-saudacoes",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "A gente ___ de Buenos Aires.",
+        "options": ["somos", "é", "são", "está"],
+        "correctIndex": 1,
+        "explanation": "A gente significa 'nosotros' pero se conjuga en tercera persona del singular: a gente é."
+      },
+      {
+        "subtopicId": "verbo-ser",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "A Mariana ___ médica.",
+        "options": ["e", "sou", "é", "és"],
+        "correctIndex": 2,
+        "explanation": "Para una profesión se usa ser, y con ela va é con tilde, porque e sin tilde significa 'y'."
+      },
+      {
+        "subtopicId": "verbo-estar",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Hoje eu ___ muito cansado.",
+        "options": ["sou", "esto", "está", "estou"],
+        "correctIndex": 3,
+        "explanation": "Un estado pasajero se expresa con estar, y con eu la forma es estou."
+      },
+      {
+        "subtopicId": "negacao-perguntas",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Oi! ___ é o seu nome?",
+        "options": ["Qual", "Que", "Quem", "Quanto"],
+        "correctIndex": 0,
+        "explanation": "Para preguntar el nombre en portugués se usa qual: Qual é o seu nome?"
+      }
+    ],
+    "pt-a1-artigos-genero": [
+      {
+        "subtopicId": "artigos-definidos",
+        "instruction": "Elegí el artículo correcto para completar la oración.",
+        "prompt": "___ Brasil é um país enorme.",
+        "options": ["El", "A", "O", "Os"],
+        "correctIndex": 2,
+        "explanation": "Brasil es masculino y lleva artículo, y el artículo masculino en portugués es o."
+      },
+      {
+        "subtopicId": "artigos-indefinidos",
+        "instruction": "Elegí el artículo correcto para completar la oración.",
+        "prompt": "Eu tenho ___ irmã e dois irmãos.",
+        "options": ["uma", "um", "una", "a"],
+        "correctIndex": 0,
+        "explanation": "Irmã es femenino y el artículo indefinido femenino en portugués es uma, con m."
+      },
+      {
+        "subtopicId": "genero",
+        "instruction": "Elegí el artículo correcto para completar la oración.",
+        "prompt": "___ viagem para Salvador é longa.",
+        "options": ["O", "Os", "Um", "A"],
+        "correctIndex": 3,
+        "explanation": "Las palabras terminadas en -agem son femeninas en portugués: a viagem."
+      },
+      {
+        "subtopicId": "plural",
+        "instruction": "Elegí el plural correcto para completar la oración.",
+        "prompt": "No zoológico tem muitos ___.",
+        "options": ["animals", "animais", "animales", "animaes"],
+        "correctIndex": 1,
+        "explanation": "Las palabras terminadas en -al forman el plural en -ais: animal, animais."
+      }
+    ],
+    "pt-a1-presente": [
+      {
+        "subtopicId": "verbos-ar",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Você ___ português muito bem!",
+        "options": ["falas", "falo", "falam", "fala"],
+        "correctIndex": 3,
+        "explanation": "Você se conjuga como ele, sin -s: você fala."
+      },
+      {
+        "subtopicId": "verbos-er-ir",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "À noite eu ___ TV com a minha família.",
+        "options": ["miro", "assisto", "asisto", "assiste"],
+        "correctIndex": 1,
+        "explanation": "Para la televisión se usa assistir, y con eu la forma es assisto, con doble s."
+      },
+      {
+        "subtopicId": "irregulares",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Eu ___ o jantar todos os dias.",
+        "options": ["faço", "fazo", "faz", "hago"],
+        "correctIndex": 0,
+        "explanation": "Fazer es irregular en la primera persona del presente: eu faço."
+      },
+      {
+        "subtopicId": "rotina-frequencia",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Eu ___ bebo café à noite.",
+        "options": ["não nunca", "no nunca", "nunca", "nunca não"],
+        "correctIndex": 2,
+        "explanation": "Nunca ya niega y va antes del verbo, así que no hace falta agregar não."
+      }
+    ],
+    "pt-a1-preposicoes-possessivos": [
+      {
+        "subtopicId": "em-contracoes",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "O livro está ___ mesa.",
+        "options": ["em a", "no", "en la", "na"],
+        "correctIndex": 3,
+        "explanation": "Em + a se contrae siempre en na, y mesa es femenino: na mesa."
+      },
+      {
+        "subtopicId": "de-contracoes",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Este é o carro ___ João.",
+        "options": ["do", "de o", "da", "del"],
+        "correctIndex": 0,
+        "explanation": "De + o se contrae en do: o carro do João."
+      },
+      {
+        "subtopicId": "a-para",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Hoje eu vou ___ cinema com a Ana.",
+        "options": ["a o", "ao", "à", "al"],
+        "correctIndex": 1,
+        "explanation": "A + o se contrae en ao, y cinema es masculino: vou ao cinema."
+      },
+      {
+        "subtopicId": "possessivos",
+        "instruction": "Elegí el posesivo correcto para completar la oración.",
+        "prompt": "___ casa é muito grande.",
+        "options": ["Meu", "Mi", "Minha", "Minhas"],
+        "correctIndex": 2,
+        "explanation": "El posesivo concuerda con la cosa, y casa es femenino singular: minha casa."
+      }
+    ],
+    "pt-a1-ir-gerundio": [
+      {
+        "subtopicId": "estar-gerundio",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Não posso falar agora, estou ___.",
+        "options": ["trabalhendo", "trabalhado", "trabalhar", "trabalhando"],
+        "correctIndex": 3,
+        "explanation": "Los verbos en -ar forman el gerundio en -ando: estou trabalhando."
+      },
+      {
+        "subtopicId": "ir-infinitivo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Amanhã eu vou ___ para o Rio.",
+        "options": ["a viajar", "viajar", "viajo", "viajei"],
+        "correctIndex": 1,
+        "explanation": "Entre ir y el infinitivo no va ninguna preposición: vou viajar."
+      },
+      {
+        "subtopicId": "expressoes-tempo",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "Hoje é domingo. Amanhã é ___.",
+        "options": ["segunda-feira", "lunes", "primeira-feira", "terça-feira"],
+        "correctIndex": 0,
+        "explanation": "Después del domingo viene segunda-feira, porque los días hábiles se cuentan a partir de segunda."
+      },
+      {
+        "subtopicId": "gostar-de",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Eu gosto muito ___ praia.",
+        "options": ["a", "de a", "da", "na"],
+        "correctIndex": 2,
+        "explanation": "Gostar siempre lleva de, que con a se contrae en da: gosto da praia."
+      }
+    ],
+    "pt-a2-preterito-perfeito": [
+      {
+        "subtopicId": "perfeito-ar",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Ontem eu ___ em casa às dez da noite.",
+        "options": ["chegei", "chegué", "cheguei", "chegou"],
+        "correctIndex": 2,
+        "explanation": "Para mantener el sonido de la g, chegar en primera persona del perfeito se escribe cheguei."
+      },
+      {
+        "subtopicId": "perfeito-er-ir",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "No sábado o Pedro ___ muito no churrasco.",
+        "options": ["comeu", "comió", "comiu", "comeou"],
+        "correctIndex": 0,
+        "explanation": "En la tercera persona del perfeito los verbos en -er terminan en -eu: comeu."
+      },
+      {
+        "subtopicId": "perfeito-irregulares",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Ontem eu ___ um bolo de chocolate.",
+        "options": ["fazi", "fez", "fazei", "fiz"],
+        "correctIndex": 3,
+        "explanation": "Fazer es irregular en el pasado: eu fiz, ele fez."
+      },
+      {
+        "subtopicId": "marcadores-passado",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Eu cheguei aqui ___ dois dias.",
+        "options": ["hace", "há", "a", "à"],
+        "correctIndex": 1,
+        "explanation": "Para decir 'hace' con un tiempo pasado se usa há: cheguei há dois dias."
+      }
+    ],
+    "pt-a2-preterito-imperfeito": [
+      {
+        "subtopicId": "imperfeito-formacao",
+        "instruction": "Elegí la forma bien escrita para completar la oración.",
+        "prompt": "Antigamente eu e minha irmã ___ por telefone todos os dias.",
+        "options": ["falavamos", "falábamos", "falavámos", "falávamos"],
+        "correctIndex": 3,
+        "explanation": "En el imperfeito la forma de nós lleva tilde en la a que va antes de -vamos: falávamos."
+      },
+      {
+        "subtopicId": "imperfeito-irregulares",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Quando eu ___ dez anos, morava em Mendoza.",
+        "options": ["tinha", "tenia", "tive", "tenho"],
+        "correctIndex": 0,
+        "explanation": "La edad en el pasado se describe con el imperfeito, y el de ter es irregular: tinha."
+      },
+      {
+        "subtopicId": "habitos-passados",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Quando eu ___ criança, brincava muito na rua.",
+        "options": ["fui", "era", "estava", "sou"],
+        "correctIndex": 1,
+        "explanation": "Para describir una etapa de la vida en el pasado se usa el imperfeito de ser: quando eu era criança."
+      },
+      {
+        "subtopicId": "imperfeito-perfeito",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Ontem à noite, enquanto eu ___, o telefone tocou.",
+        "options": ["dormi", "durmo", "dormia", "dormía"],
+        "correctIndex": 2,
+        "explanation": "La acción de fondo que se interrumpe va en imperfeito, y en portugués se escribe sin tilde: enquanto eu dormia."
+      }
+    ],
+    "pt-a2-comparativos": [
+      {
+        "subtopicId": "mais-menos",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "O Pedro é mais alto ___ eu.",
+        "options": ["de", "como", "do que", "do"],
+        "correctIndex": 2,
+        "explanation": "La comparación se arma con mais ... do que (o solo que) y el pronombre sujeto: mais alto do que eu."
+      },
+      {
+        "subtopicId": "tao-quanto",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "A Ana é tão inteligente ___ a irmã.",
+        "options": ["quanto", "que", "do que", "tanto"],
+        "correctIndex": 0,
+        "explanation": "Para expresar igualdad en Brasil se usa tão ... quanto: tão inteligente quanto a irmã."
+      },
+      {
+        "subtopicId": "irregulares-comparativos",
+        "instruction": "Elegí la opción correcta para completar la comparación.",
+        "prompt": "Este restaurante é ___ do que aquele.",
+        "options": ["mais bom", "mejor", "mais melhor", "melhor"],
+        "correctIndex": 3,
+        "explanation": "El comparativo de bom es irregular: melhor, nunca mais bom."
+      },
+      {
+        "subtopicId": "superlativos",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Esta é a praia mais bonita ___ ilha.",
+        "options": ["de a", "da", "do", "que a"],
+        "correctIndex": 1,
+        "explanation": "El superlativo lleva de, que con a se contrae en da: a praia mais bonita da ilha."
+      }
+    ],
+    "pt-a2-pronomes": [
+      {
+        "subtopicId": "objeto-direto",
+        "instruction": "Elegí la forma escrita correcta para completar la oración.",
+        "prompt": "Esse livro parece ótimo. Vou ___ amanhã.",
+        "options": ["comprar-o", "comprar-lo", "comprá-o", "comprá-lo"],
+        "correctIndex": 3,
+        "explanation": "Después de un verbo terminado en -r el pronombre o pasa a lo y el verbo pierde la r: comprá-lo."
+      },
+      {
+        "subtopicId": "objeto-indireto",
+        "instruction": "Elegí la opción correcta para completar el texto.",
+        "prompt": "Hoje é o aniversário do meu irmão. Eu dei um presente ___.",
+        "options": ["le", "para ele", "ele", "para lhe"],
+        "correctIndex": 1,
+        "explanation": "En portugués no existe le, y en Brasil el objeto indirecto se suele decir con para + pronombre: dei um presente para ele."
+      },
+      {
+        "subtopicId": "me-te-nos",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Não ___ depois das dez, por favor.",
+        "options": ["me ligue", "ligue-me", "liga-me", "ligue-lhe"],
+        "correctIndex": 0,
+        "explanation": "Con não el pronombre va siempre antes del verbo: não me ligue."
+      },
+      {
+        "subtopicId": "fala-brasileira",
+        "instruction": "Elegí la opción adecuada para este email formal.",
+        "prompt": "Prezado senhor Silva, o novo diretor esteve aqui ontem e ___ na reunião.",
+        "options": ["vi ele", "eu lo vi", "eu o vi", "eu le vi"],
+        "correctIndex": 2,
+        "explanation": "En un texto formal se usa el pronombre de la norma (eu o vi), porque vi ele queda para la charla."
+      }
+    ],
+    "pt-a2-futuro-condicional": [
+      {
+        "subtopicId": "futuro-presente",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "O presidente ___ amanhã na televisão.",
+        "options": ["falara", "falarà", "falará", "falarás"],
+        "correctIndex": 2,
+        "explanation": "El futuro do presente lleva tilde en la última sílaba, falará, y sin tilde es otro tiempo verbal."
+      },
+      {
+        "subtopicId": "futuro-irregular",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Amanhã eu ___ um bolo para a festa.",
+        "options": ["fazerei", "fazeria", "farão", "farei"],
+        "correctIndex": 3,
+        "explanation": "Fazer es irregular en el futuro y pierde el -ze-: eu farei."
+      },
+      {
+        "subtopicId": "condicional",
+        "instruction": "Elegí la opción correcta para hacer un pedido con cortesía.",
+        "prompt": "Boa tarde! Eu ___ de um café, por favor.",
+        "options": ["gostaria", "gustaria", "gostarei", "gosto"],
+        "correctIndex": 0,
+        "explanation": "Para pedir con cortesía se usa el condicional de gostar: eu gostaria de."
+      },
+      {
+        "subtopicId": "imperativo",
+        "instruction": "Elegí la opción correcta para completar el cartel.",
+        "prompt": "Placa no hospital: «Por favor, não ___ alto.»",
+        "options": ["fala", "fale", "falas", "hable"],
+        "correctIndex": 1,
+        "explanation": "En un cartel, el imperativo negativo con você usa la forma fale: não fale alto."
+      }
+    ]
+  }
+}

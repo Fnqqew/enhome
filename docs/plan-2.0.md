@@ -30,31 +30,31 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Errores y riesgos
 
-- [ ] 8 Recordar el tamaño y la posición de la ventana
-- [ ] 9 Que la app instalada no pueda arrancar como Node (fuses)
-- [ ] 10 Mover el proyecto fuera de OneDrive
-- [ ] 11 Mensajes de error de Claude que se entiendan
-- [ ] 12 Poder cancelar una generación colgada
-- [ ] 13 Logros y niveles nuevos al instante
-- [ ] 14 Activar el aislamiento de la interfaz (sandbox)
-- [ ] 15 Registro de errores en un archivo
-- [ ] 16 Textos y símbolos coherentes
-- [ ] 17 Limpiar ejercicios sobrantes
-- [ ] 18 Prácticas guardadas de un subtema que cambió
-- [ ] 19 Revisión de accesibilidad
+- [x] 8 Recordar el tamaño y la posición de la ventana
+- [x] 9 Que la app instalada no pueda arrancar como Node (fuses)
+- [x] 10 Mover el proyecto fuera de OneDrive (carpetas fijadas en el equipo y aviso en el README)
+- [x] 11 Mensajes de error de Claude que se entiendan
+- [x] 12 Poder cancelar una generación colgada
+- [x] 13 Logros y niveles nuevos al instante
+- [x] 14 Activar el aislamiento de la interfaz (sandbox)
+- [x] 15 Registro de errores en un archivo
+- [x] 16 Textos y símbolos coherentes
+- [x] 17 Limpiar ejercicios sobrantes
+- [x] 18 Prácticas guardadas de un subtema que cambió
+- [x] 19 Revisión de accesibilidad
 
 ## Velocidad y rendimiento
 
-- [ ] 20 La práctica del día lista antes de abrirla
-- [ ] 21 Empezar con los ejercicios cortos mientras llegan los largos
-- [ ] 22 Corrección más rápida con un modelo liviano
-- [ ] 23 Aceptar errores de tipeo sin consultar a Claude
-- [ ] 24 Banco fijo de preguntas para el examen inicial
-- [ ] 25 Cargar cada sección cuando se usa
-- [ ] 26 Cargar solo las tipografías del estilo elegido
-- [ ] 27 Pantalla de carga configurable
-- [ ] 28 Índices y mantenimiento de la base
-- [ ] 29 Medir los tiempos de Claude
+- [x] 20 La práctica del día lista antes de abrirla
+- [x] 21 Empezar con los ejercicios cortos mientras llegan los largos
+- [~] 22 Corrección más rápida con un modelo liviano
+- [x] 23 Aceptar errores de tipeo sin consultar a Claude
+- [x] 24 Banco fijo de preguntas para el examen inicial
+- [x] 25 Cargar cada sección cuando se usa
+- [x] 26 Cargar solo las tipografías del estilo elegido
+- [x] 27 Pantalla de carga configurable
+- [x] 28 Índices y mantenimiento de la base
+- [x] 29 Medir los tiempos de Claude
 
 ## Práctica y aprendizaje
 
@@ -97,7 +97,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Diseño visual
 
-- [ ] 59 Íconos de línea en toda la app
+- [x] 59 Íconos de línea en toda la app
 - [ ] 60 Esqueletos de carga y estados vacíos
 - [ ] 61 Ejercicio rediseñado
 - [ ] 62 Gráficos de progreso
