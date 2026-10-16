@@ -1,0 +1,118 @@
+{
+  "id": "pt-a2-futuro-condicional",
+  "level": "A2",
+  "order": 5,
+  "title": "Futuro, condicional e imperativo",
+  "targetTitle": "Futuro, condicional e imperativo",
+  "description": "Las formas para prometer, imaginar, pedir con cortesía y dar instrucciones o consejos.",
+  "objectives": [
+    "Reconocer y usar el futuro do presente",
+    "Usar el condicional (futuro do pretérito) para pedir con cortesía",
+    "Dar instrucciones con el imperativo de você",
+    "Escribir consejos para alguien que viaja"
+  ],
+  "prerequisites": ["pt-a1-ir-gerundio", "pt-a2-pronomes"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "futuro-presente",
+      "day": 1,
+      "title": "Futuro do presente",
+      "goal": "Formar el futuro simple y saber cuándo se usa.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Infinitivo + -ei, -á, -emos, -ão: falarei, falará, falaremos, falarão.",
+        "En la charla de Brasil se prefiere ir + infinitivo; el futuro simple aparece en textos, noticias y promesas formales.",
+        "Ojo: falará (futuro) lleva tilde en la última sílaba."
+      ],
+      "examples": [
+        { "target": "O voo chegará às 18h.", "es": "El vuelo llegará a las 18." },
+        { "target": "Amanhã choverá no Sul.", "es": "Mañana lloverá en el Sur." },
+        { "target": "Nós te ajudaremos.", "es": "Te ayudaremos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele falara amanhã.", "right": "Ele falará amanhã.", "why": "El futuro lleva tilde: falará. Sin tilde es otro tiempo verbal." }
+      ]
+    },
+    {
+      "id": "futuro-irregular",
+      "day": 2,
+      "title": "Futuro irregular",
+      "goal": "Usar los tres irregulares del futuro.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "fazer → farei, dizer → direi, trazer → trarei: pierden el -ze-.",
+        "El resto de los verbos es regular, incluso ser (serei) e ir (irei).",
+        "Las mismas raíces se usan en el condicional: faria, diria, traria."
+      ],
+      "examples": [
+        { "target": "Farei o possível.", "es": "Haré lo posible." },
+        { "target": "Direi a verdade.", "es": "Diré la verdad." },
+        { "target": "Quem trará as bebidas?", "es": "¿Quién traerá las bebidas?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu fazerei.", "right": "Eu farei.", "why": "Fazer es irregular en futuro: farei." }
+      ]
+    },
+    {
+      "id": "condicional",
+      "day": 3,
+      "title": "Condicional",
+      "goal": "Pedir con cortesía e imaginar situaciones.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Infinitivo + -ia, -ia, -íamos, -iam: falaria, falaríamos, falariam.",
+        "Para pedir con cortesía: Eu gostaria de... Você poderia...?",
+        "En la charla muchas veces se reemplaza por el imperfeito: Eu queria um café."
+      ],
+      "examples": [
+        { "target": "Eu gostaria de reservar uma mesa.", "es": "Quisiera reservar una mesa." },
+        { "target": "Você poderia falar mais devagar?", "es": "¿Podrías hablar más despacio?" },
+        { "target": "Com mais tempo, eu viajaria mais.", "es": "Con más tiempo, viajaría más." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu gustaria de...", "right": "Eu gostaria de...", "why": "El verbo es gostar: gostaria, con o." }
+      ]
+    },
+    {
+      "id": "imperativo",
+      "day": 4,
+      "title": "Imperativo con você",
+      "goal": "Dar instrucciones, consejos y prohibiciones.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Verbos en -ar cambian a -e: falar → fale. En -er/-ir cambian a -a: comer → coma, abrir → abra.",
+        "Para vocês: falem, comam. La negación usa la misma forma: Não fale.",
+        "En la charla de Brasil es muy común el imperativo con la forma de ele: Fala!, Vem cá!, Olha!"
+      ],
+      "examples": [
+        { "target": "Vire à direita na segunda rua.", "es": "Doblá a la derecha en la segunda calle." },
+        { "target": "Não esqueça o passaporte.", "es": "No te olvides el pasaporte." },
+        { "target": "Vem cá, olha isso!", "es": "Vení, ¡mirá esto!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Não fala alto (en un cartel).", "right": "Não fale alto.", "why": "En lo escrito y formal, la negación usa la forma del subjuntivo: fale." }
+      ]
+    },
+    {
+      "id": "conselhos-viagem",
+      "day": 5,
+      "title": "Consejos e instrucciones",
+      "goal": "Comprender y escribir consejos para un viaje.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combiná imperativo, condicional y futuro: Leve protetor solar. Eu iria em março. Você vai adorar.",
+        "Para aconsejar: É melhor..., Vale a pena..., Eu no seu lugar...",
+        "Conectores: antes de, depois de, além disso."
+      ],
+      "examples": [
+        { "target": "Leve roupa leve e protetor solar.", "es": "Llevá ropa liviana y protector solar." },
+        { "target": "Eu no seu lugar ficaria em Copacabana.", "es": "Yo en tu lugar me quedaría en Copacabana." },
+        { "target": "Vale a pena conhecer o Pão de Açúcar.", "es": "Vale la pena conocer el Pan de Azúcar." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Vale a pena de conhecer.", "right": "Vale a pena conhecer.", "why": "Después de vale a pena el verbo va directo, sin de." }
+      ]
+    }
+  ]
+}

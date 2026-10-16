@@ -1,0 +1,120 @@
+{
+  "id": "pt-a1-presente",
+  "level": "A1",
+  "order": 3,
+  "title": "Presente de los verbos regulares",
+  "targetTitle": "Presente do indicativo",
+  "description": "Cómo conjugar en presente los verbos en -ar, -er e -ir y los irregulares más usados, para hablar de tu rutina.",
+  "objectives": [
+    "Conjugar verbos regulares en -ar, -er e -ir",
+    "Usar los irregulares ter, fazer, ir, querer y poder",
+    "Hablar de la rutina con expresiones de frecuencia",
+    "Escribir un texto corto sobre tu día"
+  ],
+  "prerequisites": ["pt-a1-ser-estar"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "verbos-ar",
+      "day": 1,
+      "title": "Verbos en -ar",
+      "goal": "Conjugar los verbos regulares terminados en -ar.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "falar: eu falo, você/ele fala, nós falamos, vocês/eles falam.",
+        "Con você y a gente el verbo va en tercera persona del singular: você fala, a gente fala.",
+        "Verbos comunes: morar (vivir), trabalhar, estudar, gostar, chegar, comprar."
+      ],
+      "examples": [
+        { "target": "Eu trabalho num banco.", "es": "Trabajo en un banco." },
+        { "target": "Vocês moram perto?", "es": "¿Viven cerca?" },
+        { "target": "A gente estuda à noite.", "es": "Estudiamos a la noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Você falas português.", "right": "Você fala português.", "why": "Você se conjuga como ele, sin -s." },
+        { "wrong": "Eu vivo em Rosario.", "right": "Eu moro em Rosario.", "why": "Para decir dónde vivís, en Brasil se usa morar." }
+      ]
+    },
+    {
+      "id": "verbos-er-ir",
+      "day": 2,
+      "title": "Verbos en -er e -ir",
+      "goal": "Conjugar los verbos regulares terminados en -er e -ir.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "comer: como, come, comemos, comem.",
+        "abrir: abro, abre, abrimos, abrem.",
+        "Comunes: beber, escrever, vender, entender; partir, assistir (mirar TV), decidir."
+      ],
+      "examples": [
+        { "target": "Eu como pão no café da manhã.", "es": "Como pan en el desayuno." },
+        { "target": "Ela escreve muito bem.", "es": "Ella escribe muy bien." },
+        { "target": "Nós assistimos TV à noite.", "es": "Miramos tele a la noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu miro TV.", "right": "Eu assisto TV.", "why": "Para la televisión o una película se usa assistir; mirar existe pero significa 'apuntar con la mirada'." }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "day": 3,
+      "title": "Irregulares frecuentes",
+      "goal": "Conjugar ter, fazer, ir, querer y poder.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "ter: tenho, tem, temos, têm. fazer: faço, faz, fazemos, fazem.",
+        "ir: vou, vai, vamos, vão. querer: quero, quer, queremos, querem.",
+        "poder: posso, pode, podemos, podem."
+      ],
+      "examples": [
+        { "target": "Eu faço academia três vezes por semana.", "es": "Voy al gimnasio tres veces por semana." },
+        { "target": "Você quer um café?", "es": "¿Querés un café?" },
+        { "target": "Nós vamos ao mercado.", "es": "Vamos al súper." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu fazo.", "right": "Eu faço.", "why": "Fazer es irregular en la primera persona: faço." },
+        { "wrong": "Eu podo ir.", "right": "Eu posso ir.", "why": "Poder es irregular: eu posso." }
+      ]
+    },
+    {
+      "id": "rotina-frequencia",
+      "day": 4,
+      "title": "Rutina y frecuencia",
+      "goal": "Hablar de lo que hacés habitualmente.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Frecuencia: sempre, geralmente, às vezes, raramente, nunca.",
+        "Nunca va antes del verbo y no necesita não: Eu nunca bebo café.",
+        "Para la hora: às oito (a las ocho), ao meio-dia, à meia-noite."
+      ],
+      "examples": [
+        { "target": "Eu sempre acordo às sete.", "es": "Siempre me despierto a las siete." },
+        { "target": "Às vezes ela almoça em casa.", "es": "A veces almuerza en casa." },
+        { "target": "Nós nunca trabalhamos no domingo.", "es": "Nunca trabajamos los domingos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu não nunca bebo café.", "right": "Eu nunca bebo café.", "why": "Nunca ya niega: no hace falta não." }
+      ]
+    },
+    {
+      "id": "meu-dia",
+      "day": 5,
+      "title": "Mi día",
+      "goal": "Comprender y escribir un texto sobre la rutina.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Conectores de secuencia: primeiro, depois, então, mais tarde, no fim do dia.",
+        "Comidas del día: café da manhã, almoço, jantar.",
+        "Usá el presente para lo habitual."
+      ],
+      "examples": [
+        { "target": "Primeiro tomo café da manhã, depois vou para o trabalho.", "es": "Primero desayuno, después voy al trabajo." },
+        { "target": "No fim do dia eu leio um pouco.", "es": "Al final del día leo un poco." },
+        { "target": "Eu janto às nove.", "es": "Ceno a las nueve." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu desayuno às oito.", "right": "Eu tomo café da manhã às oito.", "why": "En portugués se dice tomar café da manhã." }
+      ]
+    }
+  ]
+}

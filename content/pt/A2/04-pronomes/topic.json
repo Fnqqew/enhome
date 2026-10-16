@@ -1,0 +1,118 @@
+{
+  "id": "pt-a2-pronomes",
+  "level": "A2",
+  "order": 4,
+  "title": "Pronombres de objeto",
+  "targetTitle": "Pronomes oblíquos",
+  "description": "Cómo reemplazar el objeto de una oración (lo, la, le, me, te) y cómo los usan de verdad en Brasil, donde la norma escrita y la charla son bastante distintas.",
+  "objectives": [
+    "Usar los pronombres directos o, a, os, as y sus variantes",
+    "Usar lhe y para ele como objeto indirecto",
+    "Ubicar me, te y nos antes o después del verbo",
+    "Reconocer el uso hablado de Brasil (vi ele, te ligo)"
+  ],
+  "prerequisites": ["pt-a1-presente"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "objeto-direto",
+      "day": 1,
+      "title": "Objeto directo: o, a, os, as",
+      "goal": "Reemplazar el objeto directo con un pronombre.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "o, a, os, as equivalen a lo, la, los, las: Eu comprei o livro → Eu o comprei.",
+        "Después de un verbo terminado en -r, -s o -z cambian a lo, la: Vou comprá-lo.",
+        "Después de un verbo terminado en sonido nasal cambian a no, na: Viram-no (más escrito que hablado)."
+      ],
+      "examples": [
+        { "target": "Conheço a Marta. Eu a conheço há anos.", "es": "Conozco a Marta. La conozco hace años." },
+        { "target": "Preciso ver o relatório. Vou vê-lo amanhã.", "es": "Tengo que ver el informe. Lo voy a ver mañana." },
+        { "target": "Onde estão as chaves? Não as encontro.", "es": "¿Dónde están las llaves? No las encuentro." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Vou comprar-o.", "right": "Vou comprá-lo.", "why": "Después de -r el pronombre pasa a lo y el verbo pierde la r." }
+      ]
+    },
+    {
+      "id": "objeto-indireto",
+      "day": 2,
+      "title": "Objeto indirecto: lhe y para ele",
+      "goal": "Indicar a quién va dirigida una acción.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "lhe/lhes equivale a le/les: Eu lhe dei um presente (escrito y formal).",
+        "En el habla de Brasil se prefiere preposición + pronombre: Dei um presente para ele.",
+        "Con você, lhe suele significar 'a vos' o 'a usted': Posso lhe ajudar?"
+      ],
+      "examples": [
+        { "target": "Mandei uma mensagem para ela.", "es": "Le mandé un mensaje a ella." },
+        { "target": "Vou explicar para vocês.", "es": "Les voy a explicar." },
+        { "target": "Posso lhe fazer uma pergunta?", "es": "¿Le puedo hacer una pregunta?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le dei o livro.", "right": "Dei o livro para ele.", "why": "En portugués no existe le: se usa lhe o para + pronombre." }
+      ]
+    },
+    {
+      "id": "me-te-nos",
+      "day": 3,
+      "title": "Me, te, nos y dónde van",
+      "goal": "Ubicar los pronombres antes o después del verbo según el uso de Brasil.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "En Brasil, en la charla, el pronombre va antes del verbo: Me liga depois. Te espero aqui.",
+        "Con não, palabras de pregunta, que y adverbios como já o sempre, va antes también en la norma: Não me ligue.",
+        "En el escrito formal no se empieza una oración con pronombre: Ligue-me."
+      ],
+      "examples": [
+        { "target": "Me passa o sal, por favor?", "es": "¿Me pasás la sal, por favor?" },
+        { "target": "Eu não te entendi.", "es": "No te entendí." },
+        { "target": "Ela sempre nos ajuda.", "es": "Ella siempre nos ayuda." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Não ligue-me.", "right": "Não me ligue.", "why": "Con não el pronombre va siempre antes del verbo." }
+      ]
+    },
+    {
+      "id": "fala-brasileira",
+      "day": 4,
+      "title": "Cómo se habla en Brasil",
+      "goal": "Reconocer los usos orales que no coinciden con la gramática escrita.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "En la charla se usa ele/ela como objeto directo: Vi ele ontem (en lo escrito: Eu o vi).",
+        "Te se usa con você aunque la norma pediría lhe u o: Te ligo amanhã.",
+        "Muchas veces el objeto se omite: Você comprou o pão? — Comprei."
+      ],
+      "examples": [
+        { "target": "Encontrei ela no shopping.", "es": "La encontré en el shopping." },
+        { "target": "Te mando o endereço.", "es": "Te mando la dirección." },
+        { "target": "Você viu o jogo? — Vi.", "es": "¿Viste el partido? — Sí, lo vi." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Prezado senhor, vi ele na reunião.", "right": "Prezado senhor, eu o vi na reunião.", "why": "La forma oral es normal en la charla, pero en un texto formal se usa el pronombre de la norma." }
+      ]
+    },
+    {
+      "id": "pedir-oferecer",
+      "day": 5,
+      "title": "Pedir y ofrecer cosas",
+      "goal": "Comprender y escribir pedidos y ofrecimientos usando pronombres.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Pedidos: Você pode me emprestar...? Me empresta...? Pode me mandar...?",
+        "Ofrecimientos: Quer que eu te ajude? Posso te levar?",
+        "Agradecer: Obrigado/a pela ajuda. Valeu!"
+      ],
+      "examples": [
+        { "target": "Você pode me emprestar o carregador?", "es": "¿Me podés prestar el cargador?" },
+        { "target": "Quer que eu te leve no aeroporto?", "es": "¿Querés que te lleve al aeropuerto?" },
+        { "target": "Valeu, você me salvou!", "es": "Gracias, ¡me salvaste!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Você pode prestar-me o carregador?", "right": "Você pode me emprestar o carregador?", "why": "'Prestar' algo a alguien es emprestar en portugués, y en Brasil el pronombre va antes del infinitivo." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "pt-a2-preterito-perfeito",
+  "level": "A2",
+  "order": 1,
+  "title": "Pretérito perfeito",
+  "targetTitle": "Pretérito perfeito",
+  "description": "El pasado para acciones terminadas: lo que hiciste ayer, el año pasado o en un viaje. Equivale al pretérito del español (hablé, comí).",
+  "objectives": [
+    "Conjugar el pretérito perfeito de los verbos regulares",
+    "Usar los irregulares ser, ir, ter, fazer y estar",
+    "Ubicar acciones en el pasado con marcadores de tiempo",
+    "Contar un viaje"
+  ],
+  "prerequisites": ["pt-a1-presente"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "perfeito-ar",
+      "day": 1,
+      "title": "Regulares en -ar",
+      "goal": "Conjugar los verbos en -ar en pretérito perfeito.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "falar: falei, falou, falamos, falaram.",
+        "La forma de nós (falamos) es igual en presente y en pasado: lo aclara el contexto.",
+        "Ojo con la ortografía: chegar → cheguei, ficar → fiquei, começar → comecei."
+      ],
+      "examples": [
+        { "target": "Ontem eu trabalhei até tarde.", "es": "Ayer trabajé hasta tarde." },
+        { "target": "Você comprou o presente?", "es": "¿Compraste el regalo?" },
+        { "target": "Eles chegaram às dez.", "es": "Llegaron a las diez." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu chegei.", "right": "Eu cheguei.", "why": "Para mantener el sonido, chegar se escribe cheguei." }
+      ]
+    },
+    {
+      "id": "perfeito-er-ir",
+      "day": 2,
+      "title": "Regulares en -er e -ir",
+      "goal": "Conjugar los verbos en -er e -ir en pretérito perfeito.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "comer: comi, comeu, comemos, comeram.",
+        "abrir: abri, abriu, abrimos, abriram.",
+        "La tercera persona termina en -eu o -iu, nunca en -ió como en español."
+      ],
+      "examples": [
+        { "target": "Nós comemos num restaurante japonês.", "es": "Comimos en un restaurante japonés." },
+        { "target": "Ela abriu a janela.", "es": "Ella abrió la ventana." },
+        { "target": "Você entendeu?", "es": "¿Entendiste?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele comió muito.", "right": "Ele comeu muito.", "why": "En portugués la terminación es -eu: comeu, bebeu, vendeu." }
+      ]
+    },
+    {
+      "id": "perfeito-irregulares",
+      "day": 3,
+      "title": "Irregulares frecuentes",
+      "goal": "Conjugar ser, ir, ter, fazer y estar en pasado.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "ser e ir comparten formas: fui, foi, fomos, foram.",
+        "ter: tive, teve, tivemos, tiveram. estar: estive, esteve, estivemos, estiveram.",
+        "fazer: fiz, fez, fizemos, fizeram. Otros: dizer (disse), poder (pude), querer (quis), ver (vi)."
+      ],
+      "examples": [
+        { "target": "Eu fui ao Brasil em 2023.", "es": "Fui a Brasil en 2023." },
+        { "target": "Foi uma viagem incrível.", "es": "Fue un viaje increíble." },
+        { "target": "O que você fez no fim de semana?", "es": "¿Qué hiciste el fin de semana?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu fazi.", "right": "Eu fiz.", "why": "Fazer es irregular en pasado: fiz, fez." },
+        { "wrong": "Eu tenhi.", "right": "Eu tive.", "why": "El pasado de ter es tive." }
+      ]
+    },
+    {
+      "id": "marcadores-passado",
+      "day": 4,
+      "title": "Marcadores de pasado",
+      "goal": "Ubicar acciones en el pasado y hablar de lo que ya hiciste.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "ontem, anteontem, semana passada, mês passado, ano passado.",
+        "'Hace' se dice há: há dois dias (hace dos días).",
+        "já (ya) y ainda não (todavía no) se usan con el perfeito: Já comi. Ainda não terminei."
+      ],
+      "examples": [
+        { "target": "Mudei de casa há três meses.", "es": "Me mudé hace tres meses." },
+        { "target": "Você já viu esse filme?", "es": "¿Ya viste esa película?" },
+        { "target": "Ainda não liguei para ela.", "es": "Todavía no la llamé." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Cheguei hace dois dias.", "right": "Cheguei há dois dias.", "why": "En portugués 'hace' con tiempo pasado es há (también se dice faz dois dias que cheguei)." }
+      ]
+    },
+    {
+      "id": "contar-viagem",
+      "day": 5,
+      "title": "Contar un viaje",
+      "goal": "Comprender y escribir el relato de un viaje.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Ordená el relato: primeiro, depois, no dia seguinte, no último dia.",
+        "Vocabulario: pegar um voo, ficar num hotel, conhecer (conocer un lugar), passear.",
+        "Para valorar: Foi ótimo! Adorei. Não gostei muito."
+      ],
+      "examples": [
+        { "target": "No verão passado fomos a Salvador e ficamos uma semana.", "es": "El verano pasado fuimos a Salvador y nos quedamos una semana." },
+        { "target": "Conhecemos o Pelourinho e comemos acarajé.", "es": "Conocimos el Pelourinho y comimos acarajé." },
+        { "target": "Adorei a viagem!", "es": "¡Me encantó el viaje!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Conhecemos a o Pelourinho.", "right": "Conhecemos o Pelourinho.", "why": "Conhecer lleva objeto directo, sin preposición." }
+      ]
+    }
+  ]
+}

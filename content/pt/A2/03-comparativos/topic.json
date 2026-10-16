@@ -1,0 +1,118 @@
+{
+  "id": "pt-a2-comparativos",
+  "level": "A2",
+  "order": 3,
+  "title": "Comparativos y superlativos",
+  "targetTitle": "Comparativos e superlativos",
+  "description": "Cómo comparar personas, lugares y cosas, y cómo decir que algo es el más o es buenísimo.",
+  "objectives": [
+    "Comparar con mais, menos y tão",
+    "Usar los comparativos irregulares melhor, pior, maior y menor",
+    "Formar superlativos con o mais y -íssimo",
+    "Escribir una comparación entre dos ciudades"
+  ],
+  "prerequisites": ["pt-a1-artigos-genero"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "mais-menos",
+      "day": 1,
+      "title": "Mais y menos",
+      "goal": "Comparar con mais ... (do) que y menos ... (do) que.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "mais + adjetivo + (do) que: São Paulo é mais caro (do) que Curitiba.",
+        "menos + adjetivo + (do) que: O ônibus é menos rápido que o metrô.",
+        "Con verbos: Ela trabalha mais do que eu."
+      ],
+      "examples": [
+        { "target": "Meu irmão é mais alto do que eu.", "es": "Mi hermano es más alto que yo." },
+        { "target": "Este celular é menos caro.", "es": "Este celular es menos caro." },
+        { "target": "Hoje está mais frio que ontem.", "es": "Hoy hace más frío que ayer." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele é mais alto de mim.", "right": "Ele é mais alto do que eu.", "why": "La comparación va con (do) que + pronombre sujeto." }
+      ]
+    },
+    {
+      "id": "tao-quanto",
+      "day": 2,
+      "title": "Igualdad: tão ... quanto",
+      "goal": "Decir que dos cosas son iguales.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "tão + adjetivo + quanto: Ela é tão inteligente quanto a irmã.",
+        "tanto/tanta/tantos/tantas + sustantivo + quanto: Tenho tantos livros quanto você.",
+        "Con verbos: Ele estuda tanto quanto eu."
+      ],
+      "examples": [
+        { "target": "O filme é tão bom quanto o livro.", "es": "La película es tan buena como el libro." },
+        { "target": "Não tenho tanto tempo quanto antes.", "es": "No tengo tanto tiempo como antes." },
+        { "target": "Ela corre tanto quanto o treinador.", "es": "Corre tanto como el entrenador." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Tão bom como o livro.", "right": "Tão bom quanto o livro.", "why": "En Brasil la forma más usada es tão... quanto." }
+      ]
+    },
+    {
+      "id": "irregulares-comparativos",
+      "day": 3,
+      "title": "Comparativos irregulares",
+      "goal": "Usar melhor, pior, maior y menor.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "bom → melhor, ruim/mau → pior, grande → maior, pequeno → menor.",
+        "Nunca se dice 'mais bom' ni 'mais grande'.",
+        "Mais pequeno se usa en Portugal, pero en Brasil se prefiere menor."
+      ],
+      "examples": [
+        { "target": "Este café é melhor que o outro.", "es": "Este café es mejor que el otro." },
+        { "target": "O Brasil é maior que a Argentina.", "es": "Brasil es más grande que la Argentina." },
+        { "target": "O trânsito hoje está pior.", "es": "Hoy el tránsito está peor." }
+      ],
+      "commonMistakes": [
+        { "wrong": "É mais bom.", "right": "É melhor.", "why": "El comparativo de bom es melhor." }
+      ]
+    },
+    {
+      "id": "superlativos",
+      "day": 4,
+      "title": "Superlativos",
+      "goal": "Decir que algo es el más y que es muy, muy algo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "o/a mais + adjetivo + de: É a praia mais bonita da ilha.",
+        "o melhor, o pior, o maior, o menor: É o melhor restaurante da cidade.",
+        "-íssimo para intensificar: lindíssimo, caríssimo, facílimo; también muito o super: superbarato."
+      ],
+      "examples": [
+        { "target": "Ela é a aluna mais dedicada da turma.", "es": "Es la alumna más dedicada del curso." },
+        { "target": "O hotel era caríssimo.", "es": "El hotel era carísimo." },
+        { "target": "Foi o pior dia do ano.", "es": "Fue el peor día del año." }
+      ],
+      "commonMistakes": [
+        { "wrong": "A praia mais bonita de a ilha.", "right": "A praia mais bonita da ilha.", "why": "de + a se contrae en da." }
+      ]
+    },
+    {
+      "id": "comparar-cidades",
+      "day": 5,
+      "title": "Comparar ciudades",
+      "goal": "Comprender y escribir una comparación entre dos lugares.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combiná comparativos de superioridad, igualdad y superlativos.",
+        "Vocabulario: trânsito, custo de vida, clima, segurança, vida noturna.",
+        "Para dar tu opinión: Na minha opinião, acho que, prefiro."
+      ],
+      "examples": [
+        { "target": "Na minha opinião, o Rio é mais bonito, mas São Paulo tem mais opções culturais.", "es": "En mi opinión, Río es más lindo, pero San Pablo tiene más opciones culturales." },
+        { "target": "O custo de vida aqui é tão alto quanto lá.", "es": "El costo de vida acá es tan alto como allá." },
+        { "target": "Prefiro cidades menores.", "es": "Prefiero ciudades más chicas." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Prefiro cidades mais pequenas.", "right": "Prefiro cidades menores.", "why": "En Brasil se usa menor como comparativo de pequeno." }
+      ]
+    }
+  ]
+}
