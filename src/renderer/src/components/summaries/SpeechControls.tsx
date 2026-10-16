@@ -1,4 +1,5 @@
 import { useCourse } from '../../hooks/useCourse'
+import Icon from '../Icon'
 import { useSpeech } from '../../hooks/useSpeech'
 
 const RATES = [0.8, 1, 1.2]
@@ -19,22 +20,22 @@ export default function SpeechControls({ getText }: { getText: () => string }): 
       <div className="row speech">
         {speech.state === 'idle' && (
           <button type="button" className="chip" onClick={() => speech.speak(getText())}>
-            ▶ Escuchar
+            <Icon name="play" className="glyph" /> Escuchar
           </button>
         )}
         {speech.state === 'playing' && (
           <button type="button" className="chip" onClick={speech.pause}>
-            ❚❚ Pausar
+            <Icon name="pause" className="glyph" /> Pausar
           </button>
         )}
         {speech.state === 'paused' && (
           <button type="button" className="chip" onClick={speech.resume}>
-            ▶ Seguir
+            <Icon name="play" className="glyph" /> Seguir
           </button>
         )}
         {speech.state !== 'idle' && (
           <button type="button" className="chip" onClick={speech.stop}>
-            ■ Detener
+            <Icon name="stop" className="glyph" /> Detener
           </button>
         )}
         <select className="rate-select" value={speech.rate} aria-label="Velocidad de lectura" onChange={(e) => speech.setRate(Number(e.target.value))}>

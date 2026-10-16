@@ -4,7 +4,7 @@ import { z } from 'zod'
 import type { CefrLevel, CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import type { ExamKind, ExamQuestion } from '../../shared/exams'
 import { generatedExerciseSchema, type ExerciseType, type GeneratedExercise } from '../../shared/exercises'
-import { askClaude, type Ask } from '../claude/bridge'
+import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
 import { CORRECTIONS_GUIDE, qualityChecklist, REVIEW_EFFORT, reviewSystemPrompt, roleSystemPrompt, selfCheck } from '../claude/quality'
 import type { LanguageId } from '../../shared/languages'
 import { prepareExercise } from '../practice/exercises'
@@ -100,7 +100,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const { items } = await ask({ systemPrompt: systemPrompt(request), prompt: buildExamPrompt(request), schema: generationSchema, timeoutMs: TIMEOUT_MS })
+      const { items } = await ask({ label: 'examen', systemPrompt: systemPrompt(request), prompt: buildExamPrompt(request), schema: generationSchema, timeoutMs: TIMEOUT_MS })
       // Cada pregunta se ubica por su número y tiene que ser del tipo pedido.
       const generated = request.items.map((plan, i): GeneratedExercise | undefined => {
         const exercise = items.find((item) => item.index === i)?.exercise
@@ -108,6 +108,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
       })
 
       const review = await ask({
+        label: 'examen · revisión',
         systemPrompt: reviewSystemPrompt(languageOf(request)),
         prompt: buildExamReviewPrompt(request, generated),
         schema: reviewSchema,
@@ -135,6 +136,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
       return questions
     } catch (err) {
       lastError = err
+      if (!shouldRetry(err)) break
     }
   }
   throw lastError

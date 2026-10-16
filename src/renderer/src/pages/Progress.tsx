@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth } from '@shared/dates'
 import type { CalendarDayStatus, ProgressView } from '@shared/rewards'
+import Icon from '../components/Icon'
 import RoadMap from '../components/progress/RoadMap'
 import { useDayChange } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
@@ -66,7 +67,7 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
         </div>
         <div className="hero-streak">
           <span className="streak-flame" aria-hidden>
-            🔥
+            <Icon name="flame" className="glyph" />
           </span>
           <span className="streak-count">{player.streak}</span>
           <span className="small">{player.streak === 1 ? 'día de racha' : 'días de racha'}</span>
@@ -119,7 +120,7 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
           {view.inventory.map((item) => (
             <div key={item.id} className={`powerup${item.quantity > 0 ? ' has' : ''}`}>
               <span className="powerup-icon" aria-hidden>
-                {item.icon}
+                <Icon name={item.icon} className="glyph" />
               </span>
               <div className="stack-sm">
                 <strong>
@@ -146,7 +147,7 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
           {achievements.map((a) => (
             <div key={a.id} className={`achievement${a.unlockedAt ? ' unlocked' : ''}`} title={a.description}>
               <span className="achievement-icon" aria-hidden>
-                {a.icon}
+                <Icon name={a.icon} className="glyph" />
               </span>
               <strong className="small">{a.title}</strong>
               <span className="muted small">{a.description}</span>

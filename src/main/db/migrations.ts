@@ -274,5 +274,32 @@ export const MIGRATIONS: Migration[] = [
         CHECK (resumed_on IS NULL OR resumed_on > paused_on)
       );
     `
+  },
+  {
+    version: 9,
+    name: 'índices, tiempos de Claude y mantenimiento',
+    sql: `
+      CREATE INDEX exercise_attempts_exercise ON exercise_attempts (exercise_id);
+      CREATE INDEX practice_sessions_week ON practice_sessions (week_id);
+      CREATE INDEX exams_week ON exams (week_id);
+
+      -- Cuánto tarda cada pedido a Claude (se guardan los últimos).
+      CREATE TABLE claude_timings (
+        id         INTEGER PRIMARY KEY,
+        label      TEXT NOT NULL,
+        model      TEXT NOT NULL,
+        effort     TEXT,
+        ms         INTEGER NOT NULL,
+        attempts   INTEGER NOT NULL,
+        ok         INTEGER NOT NULL,
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+
+      -- Fechas de las tareas de mantenimiento (limpieza, compactación).
+      CREATE TABLE maintenance (
+        task    TEXT PRIMARY KEY,
+        last_on TEXT NOT NULL
+      );
+    `
   }
 ]

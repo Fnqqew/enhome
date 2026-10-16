@@ -10,6 +10,9 @@ import {
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
+import ClaudeWait from '../components/ClaudeWait'
+import Icon from '../components/Icon'
+import { announceRewards } from '../rewardsBus'
 import Rating from '../components/Rating'
 import SelectionAsk from '../components/summaries/SelectionAsk'
 import SpeechControls from '../components/summaries/SpeechControls'
@@ -173,6 +176,7 @@ function Intro({
           <span className="muted">Claude está armando y revisando tus ejercicios. La primera vez del día puede tardar un par de minutos.</span>
         )}
       </div>
+      <ClaudeWait active={starting} />
     </section>
   )
 }
@@ -211,6 +215,7 @@ function SessionPlayer({
     if (!current || current.feedback || !draft || busy) return
     const exerciseId = current.id
     run('answer', () => window.api.answerExercise(exerciseId, draft), (next) => {
+      announceRewards()
       onView(next)
       setShownId(exerciseId)
       setDraft(null)
@@ -250,9 +255,15 @@ function SessionPlayer({
           <span className="exercise-type">{EXERCISE_TYPE_LABELS[current.type]}</span>
           <p>{current.content.instruction}</p>
           <ExerciseInput key={current.id} content={current.content} answer={current.answer} feedback={current.feedback} onChange={setDraft} />
-          {current.hint && !current.feedback && <div className="notice">💡 {current.hint}</div>}
+          {current.hint && !current.feedback && (
+            <div className="notice with-icon">
+              <Icon name="bulb" className="glyph" />
+              <span>{current.hint}</span>
+            </div>
+          )}
           {current.feedback && <Feedback type={current.type} feedback={current.feedback} />}
           {error && <p className="error">{error}</p>}
+          <ClaudeWait active={busy === 'answer'} />
 
           {!current.feedback ? (
             <div className="row">
@@ -267,7 +278,7 @@ function SessionPlayer({
                   title={session.hintsAvailable === 0 ? 'Ganás pistas cada 3 días de racha' : undefined}
                   onClick={() => run('hint', () => window.api.usePracticeHint(current.id).then(() => window.api.getPractice()), onView)}
                 >
-                  💡 Pista ({session.hintsAvailable})
+                  <Icon name="bulb" className="glyph" /> Pista ({session.hintsAvailable})
                 </button>
               )}
               <button
@@ -309,7 +320,10 @@ function SessionPlayer({
           <p>Respondiste todos los ejercicios.</p>
           {error && <p className="error">{error}</p>}
           <div>
-            <button className="btn" disabled={busy !== null} onClick={() => run('finish', () => window.api.finishPractice(session.id), onFinished)}>
+            <button className="btn" disabled={busy !== null} onClick={() => run('finish', () => window.api.finishPractice(session.id), (result) => {
+                announceRewards()
+                onFinished(result)
+              })}>
               {busy === 'finish' ? 'Guardando…' : 'Terminar práctica'}
             </button>
           </div>

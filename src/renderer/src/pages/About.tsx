@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { AppInfo } from '@shared/progress'
-import type { ClaudeStatus } from '@shared/ipc'
+import type { ClaudeStatus, ClaudeTimingStat } from '@shared/ipc'
 import { EXERCISE_TYPE_LABELS, EXERCISE_TYPES } from '@shared/exercises'
 import { SUMMARY_TYPE_IDS } from '@shared/summaries'
 import { STYLES } from '@shared/settings'
@@ -12,13 +12,24 @@ import type { Navigate } from '../navigation'
 export default function About({ status, navigate }: { status: Extract<ClaudeStatus, { state: 'ready' }>; navigate: Navigate }): React.JSX.Element {
   const { settings } = useSettings()
   const [info, setInfo] = useState<AppInfo | null>(null)
+  const [timings, setTimings] = useState<ClaudeTimingStat[]>([])
+  const [openError, setOpenError] = useState<string | null>(null)
 
   useEffect(() => {
     window.api
       .getAppInfo()
       .then(setInfo)
       .catch(() => undefined)
+    window.api
+      .getClaudeTimings()
+      .then(setTimings)
+      .catch(() => undefined)
   }, [])
+
+  const open = (action: () => Promise<void>): void => {
+    setOpenError(null)
+    action().catch((err: unknown) => setOpenError(err instanceof Error ? err.message : String(err)))
+  }
 
   return (
     <>
@@ -86,6 +97,34 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
           {status.subscription ? ` · plan ${status.subscription}` : ''}. La app usa Claude Code instalado en esta computadora con tu
           suscripción: no hay servidores propios ni API paga, y nada de lo que escribís sale de acá salvo lo que se le consulta a Claude.
         </p>
+        {timings.length > 0 ? (
+          <div className="table-scroll">
+            <table className="history">
+              <thead>
+                <tr>
+                  <th>Tarea</th>
+                  <th>Pedidos</th>
+                  <th>Promedio</th>
+                  <th>Últimos 5</th>
+                  <th>Fallas</th>
+                </tr>
+              </thead>
+              <tbody>
+                {timings.map((t) => (
+                  <tr key={t.label}>
+                    <td>{t.label}</td>
+                    <td>{t.calls}</td>
+                    <td>{seconds(t.averageMs)}</td>
+                    <td className={t.recentMs > t.averageMs * 1.5 ? 'warn-text' : undefined}>{seconds(t.recentMs)}</td>
+                    <td>{t.failures + t.retries > 0 ? `${t.failures} · ${t.retries} reintentos` : '0'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <p className="muted small">Cuando uses la práctica, los exámenes o los resúmenes, acá vas a ver cuánto tarda Claude en cada tarea.</p>
+        )}
       </section>
 
       <section className="card stack fade-in">
@@ -111,10 +150,23 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
           <button className="btn secondary" onClick={() => navigate('comentarios')}>
             Dejar un comentario
           </button>
+          <button className="btn secondary" onClick={() => open(window.api.openLogFile)}>
+            Abrir registro de errores
+          </button>
+          <button className="btn secondary" onClick={() => open(window.api.openDataFolder)}>
+            Abrir carpeta de datos
+          </button>
         </div>
+        {openError && <p className="error small">{openError}</p>}
       </section>
     </>
   )
+}
+
+// Los tiempos se muestran en segundos con un decimal: «8,4 s».
+function seconds(ms: number): string {
+  if (ms === 0) return '—'
+  return `${(ms / 1000).toLocaleString('es-AR', { maximumFractionDigits: 1 })} s`
 }
 
 function Spec({ label, value }: { label: string; value?: string }): React.JSX.Element {

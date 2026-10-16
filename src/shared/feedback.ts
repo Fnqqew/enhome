@@ -4,9 +4,9 @@ import { z } from 'zod'
 import type { SectionId } from './sections'
 
 export const FEEDBACK_KINDS = [
-  { id: 'idea', label: 'Idea', icon: '💡', hint: 'Algo que te gustaría que la app haga' },
-  { id: 'problema', label: 'Algo falla', icon: '🐞', hint: 'Algo que no anda o se ve mal' },
-  { id: 'gusto', label: 'Me gusta', icon: '⭐', hint: 'Algo que querés que quede como está' }
+  { id: 'idea', label: 'Idea', icon: 'bulb', hint: 'Algo que te gustaría que la app haga' },
+  { id: 'problema', label: 'Algo falla', icon: 'bug', hint: 'Algo que no anda o se ve mal' },
+  { id: 'gusto', label: 'Me gusta', icon: 'heart', hint: 'Algo que querés que quede como está' }
 ] as const
 
 export type FeedbackKind = (typeof FEEDBACK_KINDS)[number]['id']

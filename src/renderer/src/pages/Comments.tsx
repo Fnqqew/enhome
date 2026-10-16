@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { FEEDBACK_KINDS, type FeedbackKind, type FeedbackNote } from '@shared/feedback'
 import { SECTIONS, SECTION_LABELS, type SectionId } from '@shared/sections'
+import Icon from '../components/Icon'
 
 const KIND_OF = Object.fromEntries(FEEDBACK_KINDS.map((k) => [k.id, k])) as Record<FeedbackKind, (typeof FEEDBACK_KINDS)[number]>
 
@@ -73,7 +74,7 @@ export default function Comments(): React.JSX.Element {
           <div className="type-chips" role="group" aria-label="Tipo de comentario">
             {FEEDBACK_KINDS.map((k) => (
               <button key={k.id} type="button" className="type-chip" aria-pressed={k.id === kind} title={k.hint} onClick={() => setKind(k.id)}>
-                <span aria-hidden="true">{k.icon}</span> {k.label}
+                <Icon name={k.icon} className="glyph" /> {k.label}
               </button>
             ))}
           </div>
@@ -116,7 +117,7 @@ export default function Comments(): React.JSX.Element {
       ) : notes.length === 0 ? (
         <section className="card empty-state fade-in">
           <span className="empty-icon" aria-hidden="true">
-            💬
+            <Icon name="chat" className="glyph" />
           </span>
           <p>Todavía no anotaste nada.</p>
           <p className="muted">Lo que anotes va a aparecer acá, lo más nuevo primero.</p>
@@ -152,7 +153,7 @@ function NoteList({
         {notes.map((note) => (
           <li key={note.id} className={`note${note.done ? ' done' : ''}`}>
             <span className="note-icon" aria-hidden="true">
-              {KIND_OF[note.kind].icon}
+              <Icon name={KIND_OF[note.kind].icon} className="glyph" />
             </span>
             <div className="note-body">
               <p className="multiline">{note.message}</p>

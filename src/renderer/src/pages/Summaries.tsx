@@ -13,6 +13,8 @@ import Rating from '../components/Rating'
 import Flashcards from '../components/summaries/Flashcards'
 import ReadingMode from '../components/summaries/ReadingMode'
 import SelectionAsk from '../components/summaries/SelectionAsk'
+import ClaudeWait from '../components/ClaudeWait'
+import Icon from '../components/Icon'
 import SpeechControls from '../components/summaries/SpeechControls'
 
 const STATUS_NOTE = { current: ' (en curso)', review: ' (para repasar)', passed: '' } as const
@@ -137,7 +139,11 @@ export default function Summaries(): React.JSX.Element {
         <div className="type-chips" role="tablist" aria-label="Tipo de resumen">
           {index.types.map((t) => (
             <button key={t.id} type="button" role="tab" aria-selected={t.id === type} className="type-chip" onClick={() => setType(t.id)}>
-              {t.favorite && <span className="star" aria-label="favorito">★</span>}
+              {t.favorite && (
+                <span className="star" aria-label="favorito">
+                  <Icon name="star" className="glyph" filled />
+                </span>
+              )}
               {t.label}
               {view?.generatedTypes.includes(t.id) && <span className="ready-dot" title="Ya generado para este tópico" />}
               {t.recommended && <span className="mini-badge">Recomendado</span>}
@@ -159,7 +165,7 @@ export default function Summaries(): React.JSX.Element {
               aria-pressed={typeView?.favorite ?? false}
               onClick={() => window.api.setFavoriteSummaryType(type, !typeView?.favorite).then(setIndex).catch((err: Error) => setError(err.message))}
             >
-              {typeView?.favorite ? '★ Favorito' : '☆ Favorito'}
+              <Icon name="star" className="glyph" filled={typeView?.favorite ?? false} /> Favorito
             </button>
             {content && (
               <button type="button" className="chip" onClick={() => setReading(true)}>
@@ -176,6 +182,7 @@ export default function Summaries(): React.JSX.Element {
 
         {content?.format === 'markdown' && <SpeechControls key={`${topicId}/${type}`} getText={() => content.markdown} />}
         {error && <p className="error multiline">{error}</p>}
+        <ClaudeWait active={generating} />
 
         {!view && !error && <p className="muted">Cargando…</p>}
         {view && !content && (

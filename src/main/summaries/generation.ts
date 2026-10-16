@@ -5,7 +5,7 @@ import { z } from 'zod'
 import type { CurriculumTopic } from '../../shared/curriculum'
 import type { GeneratedSummaryType, SummaryContent } from '../../shared/summaries'
 import { SUMMARY_TYPES } from '../../shared/summaries'
-import { askClaude, type Ask } from '../claude/bridge'
+import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
 import {
   applyCorrections,
   CORRECTIONS_GUIDE,
@@ -112,8 +112,9 @@ ${body}`
 }
 
 async function generateMarkdown(topic: CurriculumTopic, type: GeneratedSummaryType, ask: Ask): Promise<SummaryContent> {
-  const { markdown } = await ask({ systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, type), schema: markdownSchema, timeoutMs: TIMEOUT_MS })
+  const { markdown } = await ask({ label: 'resumen', systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, type), schema: markdownSchema, timeoutMs: TIMEOUT_MS })
   const review = await ask({
+    label: 'resumen · revisión',
     systemPrompt: reviewSystemPrompt(topic.language),
     prompt: reviewPrompt(
       topic,
@@ -134,8 +135,9 @@ En issues anotá, en una frase cada uno, los problemas que encontraste (vacío s
 }
 
 async function generateCards(topic: CurriculumTopic, ask: Ask): Promise<SummaryContent> {
-  const { cards } = await ask({ systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, 'tarjetas'), schema: cardsSchema, timeoutMs: TIMEOUT_MS })
+  const { cards } = await ask({ label: 'resumen', systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, 'tarjetas'), schema: cardsSchema, timeoutMs: TIMEOUT_MS })
   const review = await ask({
+    label: 'resumen · revisión',
     systemPrompt: reviewSystemPrompt(topic.language),
     prompt: reviewPrompt(topic, 'tarjetas', numbered(cards), CORRECTIONS_GUIDE),
     schema: cardsReviewSchema,
@@ -168,6 +170,7 @@ export async function generateSummary(topic: CurriculumTopic, type: GeneratedSum
       return type === 'tarjetas' ? await generateCards(topic, ask) : await generateMarkdown(topic, type, ask)
     } catch (err) {
       lastError = err
+      if (!shouldRetry(err)) break
     }
   }
   throw lastError
@@ -181,6 +184,7 @@ export async function answerAboutText(
   ask: Ask = askClaude
 ): Promise<string> {
   const { answer } = await ask({
+    label: 'pregunta sobre un texto',
     systemPrompt: roleSystemPrompt(topic.language, 'docente', 'Respondés dudas de forma breve, clara y correcta.'),
     prompt: `${topicContext(topic)}
 

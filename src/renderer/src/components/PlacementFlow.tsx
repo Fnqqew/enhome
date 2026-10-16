@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { PlacementView } from '@shared/progress'
 import { useCourse } from '../hooks/useCourse'
+import ClaudeWait from './ClaudeWait'
 
 export default function PlacementFlow({ resume, onDone }: { resume: boolean; onDone: () => void }): React.JSX.Element {
   const [view, setView] = useState<PlacementView | null>(null)
@@ -49,6 +50,7 @@ export default function PlacementFlow({ resume, onDone }: { resume: boolean; onD
           </button>
         </div>
         <p className="muted small">¿Nunca estudiaste {course.name}? Elegí «Empezar desde cero» y arrancás directo en el primer tópico.</p>
+        <ClaudeWait active={loading} />
       </section>
     )
   }
@@ -117,6 +119,7 @@ export default function PlacementFlow({ resume, onDone }: { resume: boolean; onD
         )}
         {loading && <span className="muted">Preparar las preguntas de un tópico nuevo puede tardar unos segundos.</span>}
       </div>
+      <ClaudeWait active={loading} />
     </section>
   )
 }

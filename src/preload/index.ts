@@ -9,7 +9,11 @@ async function invoke<T>(channel: string, ...args: unknown[]): Promise<T> {
 
 const api: Api = {
   getAppInfo: () => invoke(IPC.appInfo),
+  getClaudeTimings: () => invoke(IPC.appTimings),
+  openLogFile: () => invoke(IPC.appOpenLog),
+  openDataFolder: () => invoke(IPC.appOpenData),
   getClaudeStatus: () => invoke(IPC.claudeStatus),
+  cancelClaude: () => invoke(IPC.claudeCancel),
   sampleSentence: () => invoke(IPC.claudeSample),
   getSettings: () => invoke(IPC.settingsGet),
   updateSettings: (patch) => invoke(IPC.settingsUpdate, patch),

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { ExerciseAnswer, ExerciseFeedback, PublicExercise } from '@shared/exercises'
 import { useCourse } from '../../hooks/useCourse'
+import Icon from '../Icon'
 
 type Content<T extends PublicExercise['type']> = Extract<PublicExercise, { type: T }>
 
@@ -226,7 +227,7 @@ function PartResult({ feedback, index }: { feedback: ExerciseFeedback | null; in
   return (
     <div className={`part-result ${part.correct ? 'ok' : 'bad'}`}>
       <span className="part-mark" aria-hidden="true">
-        {part.correct ? '✓' : '✗'}
+        <Icon name={part.correct ? 'check' : 'cross'} className="glyph" />
       </span>
       <div className="stack-sm">
         <p className="en">{part.expected}</p>

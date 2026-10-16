@@ -11,7 +11,7 @@ import {
   type StoredExercise
 } from '../../shared/exercises'
 import type { UnitKind } from '../../shared/progress'
-import { askClaude, type Ask } from '../claude/bridge'
+import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
 import {
   applyCorrections,
   CORRECTIONS_GUIDE,
@@ -147,6 +147,7 @@ function split(counts: Partial<Record<ExerciseType, number>>): Partial<Record<Ex
 async function generateGroup(request: PoolRequest, counts: Partial<Record<ExerciseType, number>>, ask: Ask): Promise<GeneratedExercise[]> {
   const started = Date.now()
   const { exercises } = await ask({
+    label: 'práctica',
     systemPrompt: systemPrompt(request.topic),
     prompt: buildPoolPrompt(request, counts),
     schema: poolSchema,
@@ -154,6 +155,7 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
   })
   const generated = Date.now()
   const review = await ask({
+    label: 'práctica · revisión',
     systemPrompt: reviewSystemPrompt(request.topic.language),
     prompt: buildPoolReviewPrompt(request, exercises),
     schema: reviewSchema,
@@ -191,6 +193,7 @@ async function generateValidGroup(request: PoolRequest, counts: Partial<Record<E
       return prepared
     } catch (err) {
       lastError = err
+      if (!shouldRetry(err)) break
     }
   }
   throw lastError

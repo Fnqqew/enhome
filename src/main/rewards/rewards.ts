@@ -71,7 +71,7 @@ export class Rewards {
         if (streak.current > 0 && quantity(this.db, 'streak-shield') > 0) {
           consume(this.db, 'streak-shield')
           this.db.prepare("INSERT INTO streak_days (date, outcome) VALUES (?, 'protected')").run(streak.pendingMiss)
-          this.news('power-up', `🛡️ Usaste un protector de racha: tu racha de ${streak.current} días sigue en pie.`)
+          this.news('power-up', `Usaste un protector de racha: tu racha de ${streak.current} días sigue en pie.`)
         } else {
           this.db.prepare("INSERT INTO streak_days (date, outcome) VALUES (?, 'broken')").run(streak.pendingMiss)
           if (streak.current >= 3) this.news('streak', `Se cortó tu racha de ${streak.current} días. ¡Hoy podés empezar una nueva!`)
@@ -97,12 +97,12 @@ export class Rewards {
         if (unlocked.has(achievement.id) || achievement.value(stats) < achievement.target) continue
         this.db.prepare('INSERT INTO achievements (id) VALUES (?)').run(achievement.id)
         this.award(`achievement:${achievement.id}`, XP.achievement, today)
-        this.news('achievement', `${achievement.icon} ¡Logro desbloqueado: ${achievement.title}!`)
+        this.news('achievement', `¡Logro desbloqueado: ${achievement.title}!`)
       }
 
       const xp = this.totalXp()
       const level = levelForXp(xp)
-      if (level > previousLevel) this.news('level', `⬆️ ¡Subiste al nivel ${level}: ${levelTitle(level)}!`)
+      if (level > previousLevel) this.news('level', `¡Subiste al nivel ${level}: ${levelTitle(level)}!`)
       this.db.prepare('UPDATE player SET xp = ?, player_level = ?, streak = ?, best_streak = ? WHERE id = 1').run(xp, level, streak.current, streak.best)
     })
   }
@@ -313,7 +313,7 @@ export class Rewards {
   }
 
   private grantItem(item: PowerUpId, source: string, today: string): void {
-    if (grant(this.db, item, source, today)) this.news('power-up', `${POWER_UPS[item].icon} Ganaste un comodín: ${POWER_UPS[item].label}.`)
+    if (grant(this.db, item, source, today)) this.news('power-up', `Ganaste un comodín: ${POWER_UPS[item].label}.`)
   }
 
   private award(source: string, amount: number, date: string): void {

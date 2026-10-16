@@ -12,6 +12,10 @@ import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 
 export const IPC = {
   appInfo: 'app:info',
+  appTimings: 'app:timings',
+  appOpenLog: 'app:open-log',
+  appOpenData: 'app:open-data',
+  claudeCancel: 'claude:cancel',
   claudeStatus: 'claude:status',
   claudeSample: 'claude:sample',
   settingsGet: 'settings:get',
@@ -81,6 +85,18 @@ export type ClaudeStatus =
   | { state: 'no-subscription'; authMethod: string }
   | { state: 'error'; message: string }
 
+// Tiempos de Claude por tarea (práctica, corrección, examen…), en milisegundos.
+export interface ClaudeTimingStat {
+  label: string
+  calls: number
+  failures: number
+  // Intentos extra por respuestas con formato inválido.
+  retries: number
+  averageMs: number
+  // Promedio de los últimos pedidos, para comparar con el general.
+  recentMs: number
+}
+
 export interface SampleSentence {
   english: string
   spanish: string
@@ -88,7 +104,12 @@ export interface SampleSentence {
 
 export interface Api {
   getAppInfo(): Promise<AppInfo>
+  getClaudeTimings(): Promise<ClaudeTimingStat[]>
+  openLogFile(): Promise<void>
+  openDataFolder(): Promise<void>
   getClaudeStatus(): Promise<ClaudeStatus>
+  // Corta los pedidos a Claude en curso; devuelve cuántos había.
+  cancelClaude(): Promise<number>
   sampleSentence(): Promise<SampleSentence>
   getSettings(): Promise<AppSettings>
   updateSettings(patch: Partial<AppSettings>): Promise<AppSettings>

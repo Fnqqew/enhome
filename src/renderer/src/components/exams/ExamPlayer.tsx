@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { EXAM_INTERRUPTED_MESSAGE, type ExamResultView, type ExamSessionView } from '@shared/exams'
 import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type ExerciseType } from '@shared/exercises'
 import { secondChanceMessage, type SecondChanceResult } from '@shared/rewards'
+import { announceRewards } from '../../rewardsBus'
+import ClaudeWait from '../ClaudeWait'
+import Icon from '../Icon'
 import ExerciseInput from '../practice/ExerciseInput'
 
 // Señal periódica para que la app sepa que el examen sigue abierto.
@@ -84,7 +87,10 @@ export default function ExamPlayer({
     await flush()
     window.api
       .submitExam(session.id)
-      .then(onSubmitted)
+      .then((result) => {
+        announceRewards()
+        onSubmitted(result)
+      })
       .catch((err: Error) => {
         setSubmitting(false)
         fail(err)
@@ -138,7 +144,10 @@ export default function ExamPlayer({
         <p>{question.content.instruction}</p>
         <ExerciseInput key={`${session.id}-${index}`} content={question.content} answer={answers[index]} feedback={null} onChange={onChange} />
         {session.kind === 'weekly' && !OPEN_TYPES.includes(question.type) && chance?.index === index && (
-          <div className={`notice ${chance.correct ? 'ok' : 'warn'}`}>🔁 {chance.message}</div>
+          <div className={`notice with-icon ${chance.correct ? 'ok' : 'warn'}`}>
+            <Icon name="retry" className="glyph" />
+            <span>{chance.message}</span>
+          </div>
         )}
         {session.kind === 'weekly' && !OPEN_TYPES.includes(question.type) && !chance && chancesLeft > 0 && (
           <div>
@@ -159,7 +168,7 @@ export default function ExamPlayer({
                   .catch(fail)
               }}
             >
-              🔁 Usar segunda oportunidad ({chancesLeft})
+              <Icon name="retry" className="glyph" /> Usar segunda oportunidad ({chancesLeft})
             </button>
           </div>
         )}
@@ -196,6 +205,7 @@ export default function ExamPlayer({
         </div>
       </div>
       {submitting && <p className="muted small">Corrigiendo: las traducciones y la escritura las corrige Claude, puede tardar unos segundos.</p>}
+      <ClaudeWait active={submitting} />
     </section>
   )
 }

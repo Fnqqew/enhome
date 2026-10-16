@@ -1,12 +1,13 @@
 // Progreso y recompensas: nivel, racha, comodines y logros.
 
 import type { CurriculumMap } from './curriculum'
+import type { Glyph, IconName } from './icons'
 
 export const POWER_UP_IDS = ['hint', 'second-chance', 'streak-shield'] as const
 export type PowerUpId = (typeof POWER_UP_IDS)[number]
 
 export interface PowerUpInfo {
-  icon: string
+  icon: Glyph
   label: string
   description: string
   howToEarn: string
@@ -15,21 +16,21 @@ export interface PowerUpInfo {
 
 export const POWER_UPS: Record<PowerUpId, PowerUpInfo> = {
   hint: {
-    icon: '💡',
+    icon: 'bulb',
     label: 'Pista',
     description: 'En la práctica te da una ayuda para el ejercicio, sin darte la respuesta. Hasta 2 por práctica.',
     howToEarn: 'Cada 3 días seguidos de racha.',
     max: 5
   },
   'second-chance': {
-    icon: '🔁',
+    icon: 'retry',
     label: 'Segunda oportunidad',
     description: 'En el examen semanal te dice si una respuesta cerrada está bien antes de entregar, para que puedas corregirla. 1 por examen.',
     howToEarn: 'Cada 7 días seguidos de racha.',
     max: 3
   },
   'streak-shield': {
-    icon: '🛡️',
+    icon: 'shield',
     label: 'Protector de racha',
     description: 'Si un día no practicás, se usa solo y tu racha no se corta.',
     howToEarn: 'Cada semana perfecta: las 5 prácticas sin faltas.',
@@ -46,7 +47,7 @@ export interface CalendarDay {
 
 export interface AchievementView {
   id: string
-  icon: string
+  icon: IconName
   title: string
   description: string
   unlockedAt: string | null

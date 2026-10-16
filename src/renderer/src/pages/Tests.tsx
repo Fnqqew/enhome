@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth } from '@shared/dates'
 import type { ExamEndReason, ExamHistoryItem, ExamResultView, ExamSessionView, ResumeResult, TestsOverview } from '@shared/exams'
+import ClaudeWait from '../components/ClaudeWait'
 import ExamPlayer from '../components/exams/ExamPlayer'
 import ExamResult from '../components/exams/ExamResult'
 import { useDayChange } from '../hooks/useDay'
@@ -160,6 +161,7 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
                     <span className="muted">Claude está armando y revisando las preguntas: puede tardar un par de minutos.</span>
                   )}
                 </div>
+                <ClaudeWait active={busy === 'weekly'} />
               </>
             )}
           </section>
@@ -191,6 +193,7 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
               </button>
             </div>
             {(busy === 'topic' || busy === 'general') && <p className="muted small">Claude arma y revisa el simulacro: tarda alrededor de un minuto.</p>}
+            <ClaudeWait active={busy === 'topic' || busy === 'general'} />
           </section>
 
           <History

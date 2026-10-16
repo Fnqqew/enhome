@@ -29,3 +29,10 @@ nsis:
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
   shortcutName: Enhome
+# Fuses: la app instalada ignora ELECTRON_RUN_AS_NODE (la terminal de VS Code lo define y la
+# hacía arrancar como Node), NODE_OPTIONS y los argumentos de depuración, y solo carga app.asar.
+electronFuses:
+  runAsNode: false
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  onlyLoadAppFromAsar: true

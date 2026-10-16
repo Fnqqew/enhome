@@ -1,19 +1,26 @@
-import { app, BrowserWindow, ipcMain, powerMonitor, shell } from 'electron'
+import { app, BrowserWindow, ipcMain, powerMonitor, screen, shell } from 'electron'
 import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
 import { watchDayChange } from './day-watcher'
 import { openDatabase, type Db } from './db/database'
+import { runMaintenance } from './db/maintenance'
+import { toLocalDate } from '../shared/dates'
 import type { LanguageId } from '../shared/languages'
 import { loadSettings } from './db/settings-repo'
 import { registerIpc } from './ipc'
 import { applyStyle, styleHash, windowColor } from './window-style'
+import { initialBounds, readWindowState, trackWindowState } from './window-state'
+import { startLog } from './log'
 import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
 
 // Carpeta de datos fija: la versión instalada y la de desarrollo comparten el mismo progreso.
 app.setPath('userData', join(app.getPath('appData'), 'enhome'))
 app.setAppUserModelId('com.artemis18.enhome')
+startLog(join(app.getPath('userData'), 'logs', 'enhome.log'))
+
+const windowStatePath = (): string => join(app.getPath('userData'), 'ventana.json')
 
 // La app se llamaba «Proyecto Inglés»: si quedó progreso guardado con ese nombre, se trae una sola vez.
 function migrateOldData(): string {
@@ -35,9 +42,15 @@ function migrateOldData(): string {
 }
 
 function createWindow(settings: AppSettings): BrowserWindow {
+  const bounds = initialBounds(
+    readWindowState(windowStatePath()),
+    screen.getAllDisplays().map((display) => display.workArea)
+  )
   const win = new BrowserWindow({
-    width: 1200,
-    height: 800,
+    x: bounds.x,
+    y: bounds.y,
+    width: bounds.width,
+    height: bounds.height,
     minWidth: 900,
     minHeight: 600,
     show: false,
@@ -51,11 +64,14 @@ function createWindow(settings: AppSettings): BrowserWindow {
     backgroundColor: windowColor(settings),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
-      sandbox: false
+      // La interfaz solo habla con la app por el puente del preload.
+      sandbox: true
     }
   })
 
-  win.on('ready-to-show', () => win.show())
+  trackWindowState(win, windowStatePath())
+  // Maximizar también la muestra, así no se ve un instante en el tamaño normal.
+  win.on('ready-to-show', () => (bounds.maximized ? win.maximize() : win.show()))
   const sendState = (): void => win.webContents.send(IPC.windowState, win.isMaximized())
   win.on('maximize', sendState)
   win.on('unmaximize', sendState)
@@ -91,12 +107,14 @@ if (!app.requestSingleInstanceLock()) {
     const dataDir = app.getPath('userData')
     // La base principal es la del curso de inglés y además guarda los ajustes de toda la app.
     const db = openDatabase(join(dataDir, migrateOldData()))
+    runMaintenance(db, toLocalDate(new Date()))
     const courseDbs = new Map<LanguageId, Db>([['en', db]])
     const coursePath = (language: LanguageId): string => join(dataDir, `enhome-${language}.db`)
     const courseDb = (language: LanguageId): Db => {
       let course = courseDbs.get(language)
       if (!course) {
         course = openDatabase(coursePath(language))
+        runMaintenance(course, toLocalDate(new Date()))
         courseDbs.set(language, course)
       }
       return course

@@ -1,13 +1,14 @@
-import { ipcMain } from 'electron'
+import { app, ipcMain, shell } from 'electron'
 import { z } from 'zod'
-import { askClaude, getClaudeStatus } from './claude/bridge'
+import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming } from './claude/bridge'
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
 import { buildCurriculumMap } from './content/curriculum-map'
 import type { Db } from './db/database'
-import { app } from 'electron'
 import { addFeedback, listFeedback, removeFeedback, toggleFeedback } from './db/feedback-repo'
 import { newFeedbackSchema } from '../shared/feedback'
 import { loadSettings, updateSettings } from './db/settings-repo'
+import { saveTiming, timingStats } from './db/timings-repo'
+import { currentLogPath } from './log'
 import type { AppSettings } from '../shared/settings'
 import { simulatedExam } from './engine/dev'
 import { Placement } from './engine/placement'
@@ -137,6 +138,18 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
     repoUrl: 'https://github.com/Fnqqew/enhome'
   }))
 
+  onClaudeTiming((timing) => saveTiming(db, timing))
+  handle(IPC.appTimings, () => timingStats(db))
+  handle(IPC.claudeCancel, () => cancelClaude())
+  // openPath devuelve un texto con el error en vez de lanzarlo.
+  const open = async (path: string | null): Promise<void> => {
+    if (!path) throw new Error('Todavía no hay un registro de errores.')
+    const error = await shell.openPath(path)
+    if (error) throw new Error(error)
+  }
+  handle(IPC.appOpenLog, () => open(currentLogPath()))
+  handle(IPC.appOpenData, () => open(app.getPath('userData')))
+
   handle(IPC.feedbackList, () => listFeedback(db))
   handle(IPC.feedbackAdd, (note) => addFeedback(db, newFeedbackSchema.parse(note)))
   handle(IPC.feedbackToggle, (noteId) => toggleFeedback(db, id.parse(noteId)))
@@ -144,6 +157,7 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.claudeStatus, () => getClaudeStatus())
   handle(IPC.claudeSample, (): Promise<SampleSentence> =>
     askClaude({
+      label: 'prueba de conexión',
       systemPrompt: 'Sos un generador de contenido para una app de idiomas para hispanohablantes. Respondé solo con lo pedido.',
       prompt: `Dame una oración simple en ${languageInfo(activeLanguage()).promptName} de nivel A1 y su traducción al español rioplatense.`,
       schema: z.object({ english: z.string(), spanish: z.string() })

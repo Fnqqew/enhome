@@ -1,14 +1,16 @@
 import type { CurriculumMap, TopicMapStatus } from '@shared/curriculum'
+import type { IconName } from '@shared/icons'
+import Icon from '../Icon'
 
 type NodeStatus = TopicMapStatus | 'planned'
 
-const NODE_ICON: Record<NodeStatus, string> = {
-  passed: '✓',
-  current: '★',
-  review: '↻',
-  locked: '',
-  'not-started': '',
-  planned: ''
+const NODE_ICON: Record<NodeStatus, IconName | null> = {
+  passed: 'check',
+  current: 'star',
+  review: 'retry',
+  locked: null,
+  'not-started': null,
+  planned: null
 }
 
 const NODE_LABEL: Record<NodeStatus, string> = {
@@ -41,7 +43,7 @@ export default function RoadMap({ map }: { map: CurriculumMap }): React.JSX.Elem
             <ol className="road">
               {nodes.map((node) => (
                 <li key={node.key} className={`road-node ${node.status}`} title={`${node.title} · ${NODE_LABEL[node.status]}`}>
-                  <span className="road-dot">{NODE_ICON[node.status] || node.order}</span>
+                  <span className="road-dot">{NODE_ICON[node.status] ? <Icon name={NODE_ICON[node.status]!} className="glyph" /> : node.order}</span>
                   <span className="road-label">{node.title}</span>
                 </li>
               ))}

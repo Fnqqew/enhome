@@ -178,7 +178,7 @@ function modelAnswer(exercise: OpenExercise): string | null {
 }
 
 export async function gradeOpenAnswer(request: OpenAnswerRequest): Promise<ExerciseFeedback> {
-  const review = await askClaude({ systemPrompt: systemPrompt(request.topic.language), prompt: buildReviewPrompt(request), schema: reviewSchema })
+  const review = await askClaude({ label: 'corrección', systemPrompt: systemPrompt(request.topic.language), prompt: buildReviewPrompt(request), schema: reviewSchema })
   const { exercise, answers } = request
   const sources = partSources(exercise)
 
