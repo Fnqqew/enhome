@@ -47,7 +47,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 - [x] 20 La práctica del día lista antes de abrirla
 - [x] 21 Empezar con los ejercicios cortos mientras llegan los largos
-- [~] 22 Corrección más rápida con un modelo liviano
+- [x] 22 Corrección más rápida con un modelo liviano (medido: Haiku es más lento por Claude Code, queda Sonnet con consigna más estricta)
 - [x] 23 Aceptar errores de tipeo sin consultar a Claude
 - [x] 24 Banco fijo de preguntas para el examen inicial
 - [x] 25 Cargar cada sección cuando se usa

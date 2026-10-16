@@ -10,7 +10,7 @@ import { newFeedbackSchema } from '../shared/feedback'
 import { loadSettings, updateSettings } from './db/settings-repo'
 import { saveTiming, timingStats } from './db/timings-repo'
 import { currentLogPath } from './log'
-import type { AppSettings } from '../shared/settings'
+import { PRACTICE_LENGTHS, type AppSettings } from '../shared/settings'
 import { simulatedExam } from './engine/dev'
 import { Placement } from './engine/placement'
 import { generatePlacementQuestions } from './engine/placement-questions'
@@ -95,7 +95,10 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
           progression,
           withPlacementBank(loadPlacementBank(contentDir, language, curriculum), generatePlacementQuestions)
         ),
-        practice: new Practice(courseData, curriculum, progression, generatePracticePool, gradeOpenAnswer),
+        practice: new Practice(courseData, curriculum, progression, generatePracticePool, gradeOpenAnswer, () => {
+          const { practiceLength, excludedTypes } = loadSettings(db)
+          return { size: PRACTICE_LENGTHS[practiceLength].size, excluded: excludedTypes }
+        }),
         summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
         exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),
         rewards: new Rewards(courseData, curriculum, roadmap, progression)

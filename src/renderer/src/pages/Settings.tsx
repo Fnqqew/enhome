@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
 import { LANGUAGES, languageInfo, type CourseSummary, type LanguageId } from '@shared/languages'
-import { FONTS, PALETTES, STYLES, VOICE_SETTING, type AppSettings, type StylePreview } from '@shared/settings'
+import { EXERCISE_TYPE_LABELS, EXERCISE_TYPES, type ExerciseType } from '@shared/exercises'
+import { FONTS, PALETTES, PRACTICE_LENGTHS, STYLES, VOICE_SETTING, type AppSettings, type StylePreview } from '@shared/settings'
 import { hasVoiceFor, pickVoice, speechTag, type SpeechLang } from '@shared/speech'
 import Logo from '../components/Logo'
 import { courseLine } from '../courseText'
@@ -152,10 +153,64 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
         </div>
       </section>
 
+      <PracticeSettings />
       <CourseSettings />
       <VoiceSettings />
       <ClaudeConnection status={status} />
     </>
+  )
+}
+
+// Cuántos ejercicios tiene la práctica y qué formatos no aparecen nunca.
+const MAX_EXCLUDED = EXERCISE_TYPES.length - 4
+
+function PracticeSettings(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  const excluded = settings.excludedTypes
+  const toggle = (type: ExerciseType): void => {
+    update({ excludedTypes: excluded.includes(type) ? excluded.filter((t) => t !== type) : [...excluded, type] })
+  }
+
+  return (
+    <section className="card stack">
+      <h2>Práctica</h2>
+      <Row label="Duración">
+        <Segmented<AppSettings['practiceLength']>
+          label="Duración de la práctica"
+          value={settings.practiceLength}
+          onChange={(practiceLength) => update({ practiceLength })}
+          options={(Object.keys(PRACTICE_LENGTHS) as AppSettings['practiceLength'][]).map((id) => ({
+            value: id,
+            label: `${PRACTICE_LENGTHS[id].label} · ${PRACTICE_LENGTHS[id].size}`
+          }))}
+        />
+      </Row>
+      <p className="muted small">Cambia desde la próxima práctica: la que ya empezaste sigue igual.</p>
+      <div className="stack-sm">
+        <span>Formatos</span>
+        <div className="chip-grid" role="group" aria-label="Formatos de ejercicio">
+          {EXERCISE_TYPES.map((type) => {
+            const on = !excluded.includes(type)
+            return (
+              <button
+                key={type}
+                type="button"
+                className="chip"
+                aria-pressed={on}
+                disabled={on && excluded.length >= MAX_EXCLUDED}
+                onClick={() => toggle(type)}
+              >
+                {EXERCISE_TYPE_LABELS[type]}
+              </button>
+            )
+          })}
+        </div>
+        <p className="muted small">
+          Tocá un formato para sacarlo de tus prácticas (hasta {MAX_EXCLUDED}). Si sacás la conversación o la escritura, la práctica
+          se completa con los otros formatos.
+        </p>
+      </div>
+    </section>
   )
 }
 

@@ -622,3 +622,34 @@ select {
 :root[data-motion='reduce'] .dot.pending {
   animation: none;
 }
+
+/* Puntos de la práctica que se pueden tocar y atajos */
+
+.dot-button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.dot-button:hover {
+  transform: scale(1.35);
+}
+
+.shortcuts {
+  margin: 0;
+}
+
+kbd {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: 0 0.35em;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--bg);
+  font-family: var(--font-numbers);
+  font-size: 0.8em;
+  line-height: 1.5;
+  text-align: center;
+}

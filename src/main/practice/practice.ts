@@ -17,9 +17,19 @@ import type { PracticeUnitView, UnitKind } from '../../shared/progress'
 import { transaction, type Db } from '../db/database'
 import type { Progression } from '../engine/progression'
 import type { OpenAnswerGrader } from './ai-grading'
-import { composeLong, composeSession, composeShort, isLongType, longSlots, planPool, type TypePreferences } from './composition'
+import {
+  composeLong,
+  composeSession,
+  composeShort,
+  DEFAULT_SESSION_OPTIONS,
+  isLongType,
+  longSlots,
+  planPool,
+  type SessionOptions,
+  type TypePreferences
+} from './composition'
 import { mainText, toPublicExercise } from './exercises'
-import type { PoolGenerator } from './generation'
+import type { Difficulty, PoolGenerator } from './generation'
 import { gradeAuto } from './grading'
 import { quantity, usedHints } from '../rewards/inventory'
 
@@ -88,7 +98,9 @@ export class Practice {
     curriculum: CurriculumTopic[],
     private readonly progression: Progression,
     private readonly generatePool: PoolGenerator,
-    private readonly gradeOpen: OpenAnswerGrader
+    private readonly gradeOpen: OpenAnswerGrader,
+    // Duración y formatos excluidos, de Ajustes (se leen en cada práctica nueva).
+    private readonly options: () => SessionOptions = () => DEFAULT_SESSION_OPTIONS
   ) {
     this.topics = new Map(curriculum.map((t) => [t.id, t]))
   }
@@ -252,6 +264,22 @@ export class Practice {
     }
   }
 
+  // Cómo le fue en las prácticas anteriores del mismo tópico (las últimas 16 respuestas): con casi
+  // todo bien se sube la exigencia; con la mitad o menos, ejercicios más guiados.
+  private difficulty(session: SessionRow): Difficulty {
+    const rows = this.db
+      .prepare(
+        `SELECT a.correct FROM exercise_attempts a
+           JOIN exercises e ON e.id = a.exercise_id
+          WHERE e.topic_id = ? AND e.session_id <> ?
+          ORDER BY a.id DESC LIMIT 16`
+      )
+      .all(session.topic_id, session.id) as unknown as { correct: number | null }[]
+    if (rows.length < 6) return 'normal'
+    const ratio = rows.filter((r) => r.correct === 1).length / rows.length
+    return ratio >= 0.9 ? 'harder' : ratio <= 0.5 ? 'guided' : 'normal'
+  }
+
   // Qué partes de los ejercicios ya están guardadas: la tanda corta y la larga llegan por separado.
   private poolState(sessionId: number): { short: boolean; long: boolean } {
     const rows = this.exerciseRows(sessionId)
@@ -282,8 +310,10 @@ export class Practice {
         .prepare('SELECT payload FROM exercises WHERE topic_id = ? AND subtopic_id = ? ORDER BY id DESC LIMIT ?')
         .all(session.topic_id, session.subtopic_id, AVOID_RECENT) as unknown as { payload: string }[]
     ).map((r) => mainText(JSON.parse(r.payload) as StoredExercise))
+    const options = this.options()
+    const difficulty = this.difficulty(session)
     const counts = Object.fromEntries(
-      Object.entries(planPool(subtopic.focus, this.preferences())).filter(([type]) => {
+      Object.entries(planPool(subtopic.focus, this.preferences(), options)).filter(([type]) => {
         const long = isLongType(type as ExerciseType)
         return state.short ? long : state.long ? !long : true
       })
@@ -315,6 +345,8 @@ export class Practice {
       kind: session.kind,
       counts,
       avoid,
+      size: options.size,
+      difficulty,
       onGroup: (group) => {
         savedByGroup = true
         save(group)
@@ -339,10 +371,11 @@ export class Practice {
   // Con todos los ejercicios arma la sesión entera; si solo están los cortos, la primera parte.
   private assignSlots(session: SessionRow): void {
     const { subtopic } = this.content(session.topic_id, session.subtopic_id)
-    const pool = this.exerciseRows(session.id).filter((r) => !r.skipped)
+    const options = this.options()
+    const pool = this.exerciseRows(session.id).filter((r) => !r.skipped && !options.excluded.includes(r.type))
     const ids = this.poolState(session.id).long
-      ? composeSession(pool, subtopic.focus, this.preferences())
-      : composeShort(pool, subtopic.focus, this.preferences())
+      ? composeSession(pool, subtopic.focus, this.preferences(), Math.random, options.size)
+      : composeShort(pool, subtopic.focus, this.preferences(), options)
     const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
     transaction(this.db, () => ids.forEach((id, i) => update.run(i + 1, id)))
   }
@@ -353,8 +386,9 @@ export class Practice {
     const { subtopic } = this.content(session.topic_id, session.subtopic_id)
     const rows = this.exerciseRows(session.id)
     const last = Math.max(...rows.map((r) => r.slot ?? 0))
+    const { excluded } = this.options()
     const ids = composeLong(
-      rows.filter((r) => r.slot === null && !r.skipped),
+      rows.filter((r) => r.slot === null && !r.skipped && !excluded.includes(r.type)),
       subtopic.focus
     )
     const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
@@ -391,7 +425,7 @@ export class Practice {
       })
 
     const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
-    const pendingCount = this.waitingLong(session) ? longSlots(subtopic.focus) : 0
+    const pendingCount = this.waitingLong(session) ? longSlots(subtopic.focus, this.options().excluded) : 0
     const unit = session.unit_id
       ? (this.db.prepare('SELECT unit_index FROM practice_units WHERE id = ?').get(session.unit_id) as { unit_index: number } | undefined)
       : undefined

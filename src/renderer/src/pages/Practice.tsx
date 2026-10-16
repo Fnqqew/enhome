@@ -238,8 +238,7 @@ function SessionPlayer({
       .finally(() => setBusy(null))
   }
 
-  const submit = (event: React.FormEvent): void => {
-    event.preventDefault()
+  const check = (): void => {
     if (!current || current.feedback || !draft || busy) return
     const exerciseId = current.id
     run('answer', () => window.api.answerExercise(exerciseId, draft), (next) => {
@@ -249,6 +248,60 @@ function SessionPlayer({
       setDraft(null)
     })
   }
+
+  const submit = (event: React.FormEvent): void => {
+    event.preventDefault()
+    check()
+  }
+
+  const goNext = (): void => {
+    setShownId(null)
+    setDraft(null)
+  }
+
+  const canHint = !!current && !current.feedback && !current.hint && session.hintsAvailable > 0 && busy === null
+  const askHint = (): void => {
+    if (!current || !canHint) return
+    run('hint', () => window.api.usePracticeHint(current.id).then(() => window.api.getPractice()), onView)
+  }
+
+  const canSkip = !!current && !current.feedback && session.spareCount > 0 && busy === null
+  const skip = (): void => {
+    if (!current || !canSkip) return
+    run('skip', () => window.api.skipExercise(current.id), (next) => {
+      onView(next)
+      setDraft(null)
+    })
+  }
+
+  // Atajos: Enter comprueba y sigue (Ctrl+Enter en los textos largos), Ctrl+H pide una pista y Ctrl+→ cambia el ejercicio.
+  const keys = useRef({ check, goNext, askHint, skip, current })
+  keys.current = { check, goNext, askHint, skip, current }
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent): void => {
+      const { check, goNext, askHint, skip, current } = keys.current
+      const target = event.target as HTMLElement | null
+      if (event.ctrlKey && event.key.toLowerCase() === 'h') {
+        event.preventDefault()
+        askHint()
+      } else if (event.ctrlKey && event.key === 'ArrowRight') {
+        event.preventDefault()
+        skip()
+      } else if (event.key === 'Enter' && !event.shiftKey && !event.altKey) {
+        // Un botón con foco ya responde a Enter por su cuenta, y en un texto largo Enter es un salto de línea.
+        if (target?.tagName === 'BUTTON' || (target?.tagName === 'TEXTAREA' && !event.ctrlKey)) return
+        if (current?.feedback) {
+          event.preventDefault()
+          goNext()
+        } else if (event.ctrlKey || target?.tagName !== 'INPUT') {
+          event.preventDefault()
+          check()
+        }
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
 
   return (
     <section className="card stack">
@@ -262,13 +315,27 @@ function SessionPlayer({
         </span>
       </div>
 
-      <div className="dots" aria-hidden>
-        {session.exercises.map((e) => (
-          <span
-            key={e.id}
-            className={`dot${e.feedback ? (e.feedback.correct ? ' correct' : ' wrong') : ''}${e === current ? ' current' : ''}`}
-          />
-        ))}
+      <div className="dots" role="group" aria-label="Ejercicios de la práctica">
+        {session.exercises.map((e, i) => {
+          const className = `dot${e.feedback ? (e.feedback.correct ? ' correct' : ' wrong') : ''}${e === current ? ' current' : ''}`
+          const state = e.feedback ? (e.feedback.correct ? 'bien' : 'con errores') : 'sin responder'
+          // Los ya respondidos se pueden volver a abrir para releer la corrección.
+          return e.feedback ? (
+            <button
+              key={e.id}
+              type="button"
+              className={`${className} dot-button`}
+              aria-label={`Ejercicio ${i + 1}: ${state}. Ver de nuevo`}
+              aria-current={e === current ? 'step' : undefined}
+              onClick={() => {
+                setShownId(e.id)
+                setDraft(null)
+              }}
+            />
+          ) : (
+            <span key={e.id} className={className} role="img" aria-label={`Ejercicio ${i + 1}: ${state}`} />
+          )
+        })}
         {Array.from({ length: session.pendingCount }, (_, i) => (
           <span key={`pending-${i}`} className="dot pending" />
         ))}
@@ -307,9 +374,9 @@ function SessionPlayer({
                 <button
                   className="btn secondary"
                   type="button"
-                  disabled={session.hintsAvailable === 0 || busy !== null}
-                  title={session.hintsAvailable === 0 ? 'Ganás pistas cada 3 días de racha' : undefined}
-                  onClick={() => run('hint', () => window.api.usePracticeHint(current.id).then(() => window.api.getPractice()), onView)}
+                  disabled={!canHint}
+                  title={session.hintsAvailable === 0 ? 'Ganás pistas cada 3 días de racha' : 'Ctrl+H'}
+                  onClick={askHint}
                 >
                   <Icon name="bulb" className="glyph" /> Pista ({session.hintsAvailable})
                 </button>
@@ -317,14 +384,9 @@ function SessionPlayer({
               <button
                 className="btn secondary"
                 type="button"
-                disabled={session.spareCount === 0 || busy !== null}
-                title={session.spareCount === 0 ? 'No quedan ejercicios alternativos' : undefined}
-                onClick={() =>
-                  run('skip', () => window.api.skipExercise(current.id), (next) => {
-                    onView(next)
-                    setDraft(null)
-                  })
-                }
+                disabled={!canSkip}
+                title={session.spareCount === 0 ? 'No quedan ejercicios alternativos' : 'Ctrl+→'}
+                onClick={skip}
               >
                 Cambiar ejercicio
               </button>
@@ -335,19 +397,14 @@ function SessionPlayer({
                 value={current.rating}
                 onRate={(value) => window.api.rateExercise(current.id, value).then(onView).catch((err: Error) => setError(err.message))}
               />
-              <button
-                ref={nextRef}
-                className="btn"
-                type="button"
-                onClick={() => {
-                  setShownId(null)
-                  setDraft(null)
-                }}
-              >
+              <button ref={nextRef} className="btn" type="button" title="Enter" onClick={goNext}>
                 {pending ? 'Siguiente' : 'Ver resultado'}
               </button>
             </div>
           )}
+          <p className="muted small shortcuts">
+            <kbd>Enter</kbd> comprobar y seguir · <kbd>Ctrl</kbd>+<kbd>H</kbd> pista · <kbd>Ctrl</kbd>+<kbd>→</kbd> cambiar ejercicio
+          </p>
         </form>
       ) : session.pendingCount > 0 ? (
         <div className="stack">

@@ -366,3 +366,21 @@ describe('práctica que empieza con los ejercicios cortos', () => {
     expect(full.exercises.length).toBe(first.exercises.length + first.pendingCount)
   })
 })
+
+describe('dificultad que se adapta', () => {
+  it('después de acertar todo, la práctica siguiente se pide más exigente', async () => {
+    const asked: (string | undefined)[] = []
+    const recording: PoolGenerator = async (request) => {
+      asked.push(request.difficulty)
+      return generator(request)
+    }
+    practice = new Practice(db, curriculum, progression, recording, grader)
+    const first = session(await practice.start(day(0)))
+    await answerAllRight(first)
+    practice.finish(first.id, day(0))
+
+    await practice.start(day(1))
+    expect(asked[0]).toBe('normal')
+    expect(asked.at(-1)).toBe('harder')
+  })
+})

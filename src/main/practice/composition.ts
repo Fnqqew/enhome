@@ -10,6 +10,14 @@ export const MIN_POOL_SIZE = SESSION_SIZE + 2
 // Promedio de calificación del alumno por tipo (1 a 5).
 export type TypePreferences = Partial<Record<ExerciseType, number>>
 
+// Lo que eligió el alumno en Ajustes: cuántos ejercicios tiene la práctica y qué formatos no quiere.
+export interface SessionOptions {
+  size: number
+  excluded: ExerciseType[]
+}
+
+export const DEFAULT_SESSION_OPTIONS: SessionOptions = { size: SESSION_SIZE, excluded: [] }
+
 const NEUTRAL_RATING = 3
 const LIKED_RATING = 4
 const DISLIKED_RATING = 2
@@ -27,7 +35,11 @@ function isRequired(type: ExerciseType, focus: Skill[]): boolean {
   return (type === 'reading' && focus.includes('reading')) || (type === 'writing' && focus.includes('writing'))
 }
 
-export function planPool(focus: Skill[], preferences: TypePreferences = {}): Partial<Record<ExerciseType, number>> {
+export function planPool(
+  focus: Skill[],
+  preferences: TypePreferences = {},
+  options: SessionOptions = DEFAULT_SESSION_OPTIONS
+): Partial<Record<ExerciseType, number>> {
   const grammarDay = focus.includes('grammar')
   const writingDay = focus.includes('writing')
   const plan: Record<ExerciseType, number> = {
@@ -48,10 +60,14 @@ export function planPool(focus: Skill[], preferences: TypePreferences = {}): Par
     if (rating(preferences, type) >= LIKED_RATING) plan[type]++
     else if (rating(preferences, type) <= DISLIKED_RATING) plan[type]--
   }
+  for (const type of options.excluded) plan[type] = 0
 
-  const flexibleByRating = [...FLEXIBLE_TYPES].sort((a, b) => rating(preferences, b) - rating(preferences, a))
+  // Si el alumno sacó todos los cortos, se ignora la exclusión de esos: sin ellos no hay práctica.
+  const allowedFlexible = FLEXIBLE_TYPES.filter((type) => !options.excluded.includes(type))
+  const flexible = allowedFlexible.length > 0 ? allowedFlexible : FLEXIBLE_TYPES
+  const flexibleByRating = [...flexible].sort((a, b) => rating(preferences, b) - rating(preferences, a))
   let total = Object.values(plan).reduce((sum, n) => sum + n, 0)
-  for (let i = 0; total < MIN_POOL_SIZE; i++, total++) plan[flexibleByRating[i % flexibleByRating.length]]++
+  for (let i = 0; total < options.size + 2; i++, total++) plan[flexibleByRating[i % flexibleByRating.length]]++
 
   return Object.fromEntries(Object.entries(plan).filter(([, n]) => n > 0))
 }
@@ -65,17 +81,25 @@ export const isLongType = (type: ExerciseType): boolean => (LONG_TYPES as readon
 
 // Lugares de la sesión que ocupan los ejercicios largos: la tanda de traducción, la parte
 // conversacional y, los días de escritura, el texto.
-export function longSlots(focus: Skill[]): number {
-  return 2 + (focus.includes('writing') ? 1 : 0)
+export function longSlots(focus: Skill[], excluded: ExerciseType[] = []): number {
+  const allowed = (type: ExerciseType): boolean => !excluded.includes(type)
+  const immersive = IMMERSIVE_TYPES.some(allowed) ? 1 : 0
+  return (allowed('translation_set') ? 1 : 0) + immersive + (focus.includes('writing') && allowed('writing') ? 1 : 0)
 }
 
 const byTypeOrder = (a: PoolItem, b: PoolItem): number => EXERCISE_TYPES.indexOf(a.type) - EXERCISE_TYPES.indexOf(b.type)
 
 // Primera parte de una sesión que arranca antes de que lleguen los largos: solo ejercicios cortos,
 // dejando libres los lugares de los largos.
-export function composeShort(pool: PoolItem[], focus: Skill[], preferences: TypePreferences = {}, random: () => number = Math.random): number[] {
-  const short = pool.filter((item) => !isLongType(item.type))
-  return composeSession(short, focus, preferences, random, SESSION_SIZE - longSlots(focus))
+export function composeShort(
+  pool: PoolItem[],
+  focus: Skill[],
+  preferences: TypePreferences = {},
+  options: SessionOptions = DEFAULT_SESSION_OPTIONS,
+  random: () => number = Math.random
+): number[] {
+  const short = pool.filter((item) => !isLongType(item.type) && !options.excluded.includes(item.type))
+  return composeSession(short, focus, preferences, random, options.size - longSlots(focus, options.excluded))
 }
 
 // Segunda parte: los largos obligatorios, cuando llegan.

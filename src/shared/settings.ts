@@ -1,6 +1,7 @@
 // Preferencias de personalización, compartidas entre el proceso principal y la interfaz.
 
 import { z } from 'zod'
+import { EXERCISE_TYPES } from './exercises'
 import { LANGUAGE_IDS, type LanguageId } from './languages'
 import { SUMMARY_TYPE_IDS } from './summaries'
 
@@ -115,8 +116,18 @@ export const settingsSchema = z.object({
   voiceFr: z.string().max(200).nullable(),
   reduceMotion: z.boolean(),
   // Pantalla de carga al abrir: completa (la animación entera), breve o ninguna.
-  splash: z.enum(['full', 'short', 'none'])
+  splash: z.enum(['full', 'short', 'none']),
+  // Cuántos ejercicios tiene la práctica del día.
+  practiceLength: z.enum(['short', 'normal', 'intense']),
+  // Formatos que el alumno sacó de sus prácticas.
+  excludedTypes: z.array(z.enum(EXERCISE_TYPES)).max(EXERCISE_TYPES.length - 4)
 })
+
+export const PRACTICE_LENGTHS = {
+  short: { label: 'Corta', size: 5 },
+  normal: { label: 'Normal', size: 8 },
+  intense: { label: 'Intensa', size: 10 }
+} as const
 
 // Qué ajuste guarda la voz de cada idioma.
 export const VOICE_SETTING = {
@@ -144,5 +155,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   voiceIt: null,
   voiceFr: null,
   reduceMotion: false,
-  splash: 'full'
+  splash: 'full',
+  practiceLength: 'normal',
+  excludedTypes: []
 }

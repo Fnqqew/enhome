@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { ExerciseType } from '../../src/shared/exercises'
-import { composeSession, MIN_POOL_SIZE, planPool, SESSION_SIZE, type PoolItem } from '../../src/main/practice/composition'
+import { EXERCISE_TYPES, type ExerciseType } from '../../src/shared/exercises'
+import { composeSession, longSlots, MIN_POOL_SIZE, planPool, SESSION_SIZE, type PoolItem } from '../../src/main/practice/composition'
 
 const total = (plan: Partial<Record<ExerciseType, number>>): number => Object.values(plan).reduce((s, n) => s + (n ?? 0), 0)
 
@@ -96,5 +96,34 @@ describe('composeSession', () => {
     const types = typesOf(items, composeSession(items, ['grammar', 'reading'], {}, () => 0))
     expect(types.indexOf('multiple_choice')).toBeLessThan(types.indexOf('translation'))
     expect(types.indexOf('translation')).toBeLessThan(types.indexOf('reading'))
+  })
+})
+
+describe('duración y formatos excluidos', () => {
+  it('el pedido no incluye los formatos excluidos y alcanza para la duración elegida', () => {
+    const plan = planPool(['grammar'], {}, { size: 10, excluded: ['word_order', 'roleplay'] })
+    expect(plan.word_order).toBeUndefined()
+    expect(plan.roleplay).toBeUndefined()
+    expect(Object.values(plan).reduce((sum, n) => sum + (n ?? 0), 0)).toBeGreaterThanOrEqual(12)
+  })
+
+  it('si se excluyen todos los cortos, igual se piden cortos', () => {
+    const plan = planPool(['grammar'], {}, { size: 8, excluded: ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'] })
+    expect(Object.keys(plan).some((type) => ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'].includes(type))).toBe(true)
+  })
+
+  it('arma sesiones cortas e intensas', () => {
+    const pool = EXERCISE_TYPES.flatMap((type, i) => [
+      { id: i * 2, type },
+      { id: i * 2 + 1, type }
+    ])
+    expect(composeSession(pool, ['grammar'], {}, () => 0.3, 5)).toHaveLength(5)
+    expect(composeSession(pool, ['grammar'], {}, () => 0.3, 10)).toHaveLength(10)
+  })
+
+  it('los lugares de los largos descuentan los formatos excluidos', () => {
+    expect(longSlots(['writing'])).toBe(3)
+    expect(longSlots(['writing'], ['dialogue', 'roleplay'])).toBe(2)
+    expect(longSlots(['grammar'], ['translation_set'])).toBe(1)
   })
 })

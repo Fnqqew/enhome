@@ -35,6 +35,20 @@ export interface PoolRequest {
   avoid: string[]
   // Se llama con cada tanda apenas está lista (la corta suele llegar un minuto antes que la larga).
   onGroup?: (exercises: StoredExercise[]) => void
+  // Ejercicios que tiene la práctica (según la duración elegida).
+  size?: number
+  // Cómo le viene yendo al alumno en el tópico: sube o baja la exigencia.
+  difficulty?: Difficulty
+}
+
+export type Difficulty = 'guided' | 'normal' | 'harder'
+
+const DIFFICULTY_GUIDE: Record<Difficulty, string> = {
+  guided:
+    'Al alumno le está costando este tópico: hacé ejercicios más guiados, con oraciones cortas, contexto claro y pistas en la consigna. Que sigan exigiendo lo del subtema, pero de a un paso por vez.',
+  normal: '',
+  harder:
+    'El alumno viene acertando casi todo en este tópico: subí la exigencia con oraciones más largas, vocabulario menos frecuente del nivel, distractores más finos y situaciones que combinen lo de este subtema con lo de los días anteriores.'
 }
 
 export type PoolGenerator = (request: PoolRequest) => Promise<StoredExercise[]>
@@ -98,6 +112,7 @@ Ejemplos:
 ${examples}
 ${mistakes ? `Errores comunes:\n${mistakes}\n` : ''}
 ${KIND_GUIDE[kind]}
+${DIFFICULTY_GUIDE[request.difficulty ?? 'normal']}
 
 Generá exactamente estos ejercicios, en este orden:
 ${requested}
@@ -213,6 +228,8 @@ export async function generatePracticePool(request: PoolRequest, ask: Ask = askC
   const prepared = groups.flat()
   // Con el pedido completo tiene que alcanzar para la práctica y alguna alternativa; si solo se pidió una parte, lo que se pidió.
   const requested = Object.values(request.counts).reduce((sum, n) => sum + (n ?? 0), 0)
-  if (prepared.length < Math.min(requested, SESSION_SIZE + 1)) throw new Error('Claude no generó suficientes ejercicios válidos para armar la práctica.')
+  if (prepared.length < Math.min(requested, (request.size ?? SESSION_SIZE) + 1)) {
+    throw new Error('Claude no generó suficientes ejercicios válidos para armar la práctica.')
+  }
   return prepared
 }

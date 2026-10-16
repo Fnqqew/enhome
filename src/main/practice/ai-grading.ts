@@ -75,6 +75,7 @@ Traducciones de referencia: ${exercise.answers.map((a) => `«${a}»`).join(', ')
 Respuesta del alumno: ${answered(answers, 0)}
 
 Evaluá si la traducción es aceptable: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas, puntuación ni diferencias de estilo.
+Un artículo, un auxiliar o una preposición que falta o sobra es un error de gramática, no de estilo: en ese caso no es aceptable aunque se entienda.
 
 ${OUTPUT_GUIDE}`
 
@@ -88,6 +89,7 @@ ${exercise.sentences
   .join('\n')}
 
 Evaluá cada oración por separado: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas ni puntuación.
+Un artículo, un auxiliar o una preposición que falta o sobra es un error de gramática: esa oración no es correcta aunque se entienda.
 
 ${OUTPUT_GUIDE}
 ${PARTS_GUIDE}`
@@ -177,8 +179,9 @@ function modelAnswer(exercise: OpenExercise): string | null {
   }
 }
 
-// Qué modelo corrige cada tipo. Haiku tarda unos segundos; Sonnet queda para lo que pide más criterio.
-// Se cambia con la prueba en vivo de tests/live/grading-models (compara los dos con respuestas conocidas).
+// Qué modelo corrige cada tipo. Medido el 2026-10-16 con tests/live/grading-models: a través de Claude Code
+// Haiku acertó 13/13 pero tardó 17 s de promedio y Sonnet 12/13 en 11 s, así que se queda Sonnet.
+// Si cambian los tiempos, se vuelve a medir con esa prueba.
 export const GRADING_MODEL: Record<OpenExercise['type'], string> = {
   translation: 'sonnet',
   translation_set: 'sonnet',
