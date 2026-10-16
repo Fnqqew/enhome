@@ -1,0 +1,134 @@
+{
+  "id": "fr-a1-negation-questions",
+  "level": "A1",
+  "order": 4,
+  "title": "Negación y preguntas",
+  "targetTitle": "La négation et les questions",
+  "description": "Cómo decir que no y cómo preguntar en francés. La negación tiene dos partes que rodean al verbo, y hay tres maneras de hacer una pregunta según lo formal que quieras sonar.",
+  "objectives": [
+    "Negar con ne… pas y sus variantes jamais, rien, plus y personne",
+    "Hacer preguntas con entonación, con est-ce que y con inversión",
+    "Usar qu'est-ce que y las palabras interrogativas",
+    "Pedir información en la calle o en un museo"
+  ],
+  "prerequisites": ["fr-a1-articles", "fr-a1-present"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "ne-pas",
+      "day": 1,
+      "title": "Ne… pas",
+      "goal": "Negar con ne… pas alrededor del verbo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "La negación rodea al verbo conjugado: ne + verbo + pas. Je ne parle pas allemand.",
+        "Delante de vocal o h muda, ne se apostrofa: Je n'aime pas. Il n'habite pas ici.",
+        "Después de pas, un, une, des y los partitivos se vuelven de: Je n'ai pas de voiture.",
+        "En la charla el ne casi desaparece (C'est pas grave, Je sais pas), pero al escribir tenés que ponerlo.",
+        "Para contestar 'sí' a una pregunta negativa se usa si: Tu n'aimes pas le fromage ? — Si !"
+      ],
+      "examples": [
+        { "target": "Je ne suis pas français, je suis argentin.", "es": "No soy francés, soy argentino." },
+        { "target": "Elle n'habite pas à Paris.", "es": "Ella no vive en París." },
+        { "target": "Nous n'avons pas de voiture.", "es": "No tenemos auto." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je ne parle anglais.", "right": "Je ne parle pas anglais.", "why": "La negación tiene dos partes; sin pas, la frase queda incompleta." },
+        { "wrong": "Je ne pas parle anglais.", "right": "Je ne parle pas anglais.", "why": "El verbo va en el medio: ne + verbo + pas." },
+        { "wrong": "Je ne aime pas le thé.", "right": "Je n'aime pas le thé.", "why": "Ne delante de vocal se apostrofa: n'aime." }
+      ]
+    },
+    {
+      "id": "jamais-rien-plus",
+      "day": 2,
+      "title": "Ne… jamais, rien, plus y personne",
+      "goal": "Decir 'nunca', 'nada', 'ya no' y 'nadie'.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "ne… jamais = nunca: Je ne mange jamais de viande.",
+        "ne… rien = nada: Il ne fait rien le dimanche.",
+        "ne… plus = ya no: Elle n'habite plus ici.",
+        "ne… personne = nadie: Il n'y a personne.",
+        "La segunda palabra reemplaza a pas: nunca se dice ne… pas jamais ni ne… pas rien."
+      ],
+      "examples": [
+        { "target": "Je ne bois jamais de café le soir.", "es": "Nunca tomo café a la noche." },
+        { "target": "Il n'y a rien dans le frigo.", "es": "No hay nada en la heladera." },
+        { "target": "Elle ne travaille plus ici.", "es": "Ella ya no trabaja acá." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je ne mange pas jamais de viande.", "right": "Je ne mange jamais de viande.", "why": "Jamais reemplaza a pas; no van juntos." },
+        { "wrong": "Il ne travaille pas plus ici.", "right": "Il ne travaille plus ici.", "why": "'Ya no' es ne… plus, sin pas." }
+      ]
+    },
+    {
+      "id": "questions-oui-non",
+      "day": 3,
+      "title": "Preguntas de sí o no",
+      "goal": "Hacer preguntas con entonación, con est-ce que y con inversión.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con entonación (charla): mismo orden que la afirmación y la voz sube al final: Tu es prêt ?",
+        "Con est-ce que (neutro): se pone adelante y el resto no cambia: Est-ce que tu es prêt ? Delante de vocal: est-ce qu'il…",
+        "Con inversión (formal y escrito): el verbo va antes del pronombre, con guion: Êtes-vous prêt ? Parlez-vous anglais ?",
+        "En la inversión con il, elle u on, si el verbo termina en vocal se agrega -t-: Parle-t-il français ? A-t-elle un chien ?",
+        "En francés se deja un espacio antes de ? y de !: Ça va ?"
+      ],
+      "examples": [
+        { "target": "Tu parles anglais ?", "es": "¿Hablás inglés?" },
+        { "target": "Est-ce que vous avez une chambre libre ?", "es": "¿Tiene una habitación libre?" },
+        { "target": "Parlez-vous espagnol ?", "es": "¿Habla usted español?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Parle il français ?", "right": "Parle-t-il français ?", "why": "En la inversión van guiones, y entre una vocal e il o elle se agrega -t-." },
+        { "wrong": "Est-ce que il est là ?", "right": "Est-ce qu'il est là ?", "why": "Que se apostrofa delante de vocal: est-ce qu'il." }
+      ]
+    },
+    {
+      "id": "mots-interrogatifs",
+      "day": 4,
+      "title": "Palabras interrogativas",
+      "goal": "Preguntar qué, quién, dónde, cuándo, cómo, por qué y cuánto.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Qui ? (¿quién?), Où ? (¿dónde?), Quand ? (¿cuándo?), Comment ? (¿cómo?), Pourquoi ? (¿por qué?), Combien ? (¿cuánto?), Quel / Quelle ? (¿qué? / ¿cuál?).",
+        "Para preguntar por una cosa al principio de la frase se usa qu'est-ce que: Qu'est-ce que tu fais ? En la charla: Tu fais quoi ?",
+        "Quel concuerda con el sustantivo: quel âge, quelle heure, quels films, quelles villes. Las cuatro formas suenan igual.",
+        "Où lleva acento y significa 'dónde'; ou sin acento significa 'o'.",
+        "A pourquoi se responde con parce que (porque): Pourquoi tu apprends le français ? — Parce que j'adore Paris."
+      ],
+      "examples": [
+        { "target": "Où est la gare, s'il vous plaît ?", "es": "¿Dónde está la estación, por favor?" },
+        { "target": "Qu'est-ce que vous faites ce week-end ?", "es": "¿Qué hacen este fin de semana?" },
+        { "target": "Tu as quel âge ?", "es": "¿Cuántos años tenés?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Que tu fais ?", "right": "Qu'est-ce que tu fais ?", "why": "Que solo no alcanza al principio de la pregunta: se dice qu'est-ce que, o Tu fais quoi ? en la charla." },
+        { "wrong": "Ou est la gare ?", "right": "Où est la gare ?", "why": "Sin acento, ou significa 'o'; 'dónde' es où." },
+        { "wrong": "Combien ans tu as ?", "right": "Tu as quel âge ?", "why": "La edad se pregunta con quel âge: Tu as quel âge ? o Quel âge as-tu ?" }
+      ]
+    },
+    {
+      "id": "demander-information",
+      "day": 5,
+      "title": "Pedir información",
+      "goal": "Comprender y escribir un diálogo para pedir información en la calle o en un museo.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para empezar con cortesía: Bonjour, excusez-moi… / Pardon, madame…",
+        "Preguntas útiles: Où est… ? À quelle heure ouvre le musée ? C'est combien, l'entrée ? Est-ce qu'il y a un plan de la ville ?",
+        "Si no entendés: Pardon ? Je ne comprends pas. Vous pouvez répéter, s'il vous plaît ?",
+        "Para agradecer: Merci beaucoup ! — De rien. / Je vous en prie."
+      ],
+      "examples": [
+        { "target": "Excusez-moi, où est le musée d'Orsay ?", "es": "Disculpe, ¿dónde está el museo de Orsay?" },
+        { "target": "À quelle heure ouvre le musée ?", "es": "¿A qué hora abre el museo?" },
+        { "target": "Je ne comprends pas. Vous pouvez répéter, s'il vous plaît ?", "es": "No entiendo. ¿Puede repetir, por favor?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Excuse-moi, madame.", "right": "Excusez-moi, madame.", "why": "Con alguien a quien tratás de usted se usa la forma de vous: excusez-moi." },
+        { "wrong": "Je ne comprends.", "right": "Je ne comprends pas.", "why": "Al escribir, la negación necesita sus dos partes." }
+      ]
+    }
+  ]
+}

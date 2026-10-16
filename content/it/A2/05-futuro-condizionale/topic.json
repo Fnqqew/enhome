@@ -1,0 +1,128 @@
+{
+  "id": "it-a2-futuro-condizionale",
+  "level": "A2",
+  "order": 5,
+  "title": "Futuro, condicional e imperativo",
+  "targetTitle": "Futuro, condizionale e imperativo",
+  "description": "Las formas para hacer planes y suposiciones, pedir con cortesía, dar consejos y dar instrucciones.",
+  "objectives": [
+    "Formar el futuro semplice regular e irregular",
+    "Usar el futuro para hacer suposiciones sobre el presente",
+    "Pedir con cortesía y aconsejar con el condizionale",
+    "Dar instrucciones con el imperativo de tu y de Lei",
+    "Escribir consejos para alguien que viaja a Italia"
+  ],
+  "prerequisites": ["it-a1-irregolari-stare", "it-a2-pronomi"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "futuro-semplice",
+      "day": 1,
+      "title": "Futuro simple",
+      "goal": "Formar el futuro de los verbos regulares y saber cuándo se usa.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se saca la -e final del infinitivo y se agrega -ò, -ai, -à, -emo, -ete, -anno: dormirò, dormirai, dormirà.",
+        "En los verbos en -are la a cambia a e: parlare → parlerò, parlerai, parlerà.",
+        "-care y -gare agregan h (cercherò, pagherò); -ciare y -giare pierden la i (comincerò, mangerò).",
+        "Para planes cercanos alcanza el presente (Domani parto); el futuro se usa para planes más lejanos, promesas y previsiones."
+      ],
+      "examples": [
+        { "target": "L'anno prossimo studierò in Italia.", "es": "El año que viene voy a estudiar en Italia." },
+        { "target": "Domani pioverà al Nord.", "es": "Mañana va a llover en el Norte." },
+        { "target": "Ti chiamerò stasera, promesso.", "es": "Te voy a llamar esta noche, te lo prometo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Parlarò con lui.", "right": "Parlerò con lui.", "why": "En el futuro, la a de -are cambia a e: parlerò, comprerò, lavorerò." },
+        { "wrong": "Mangierò alle otto.", "right": "Mangerò alle otto.", "why": "Los verbos en -giare y -ciare pierden la i: mangerò, comincerò." }
+      ]
+    },
+    {
+      "id": "futuro-irregolare",
+      "day": 2,
+      "title": "Futuro irregular y de probabilidad",
+      "goal": "Usar los futuros irregulares y el futuro para suponer.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "essere → sarò; avere → avrò; fare → farò; stare → starò; dare → darò.",
+        "Pierden una vocal: andare → andrò, potere → potrò, dovere → dovrò, vedere → vedrò, sapere → saprò, vivere → vivrò.",
+        "Con doble r: venire → verrò, volere → vorrò, bere → berrò, rimanere → rimarrò.",
+        "Futuro de probabilidad, como el 'será' del español: Dov'è Marco? — Sarà a casa. Che ore sono? — Saranno le dieci."
+      ],
+      "examples": [
+        { "target": "Quest'estate andremo in Sicilia.", "es": "Este verano vamos a ir a Sicilia." },
+        { "target": "Domani avrò più tempo.", "es": "Mañana voy a tener más tiempo." },
+        { "target": "Non risponde: sarà ancora in riunione.", "es": "No contesta: estará todavía en una reunión." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Venirò domani.", "right": "Verrò domani.", "why": "Venire es irregular en futuro: verrò, con doble r." },
+        { "wrong": "Esserò a casa.", "right": "Sarò a casa.", "why": "El futuro de essere es sarò, sarai, sarà." }
+      ]
+    },
+    {
+      "id": "condizionale",
+      "day": 3,
+      "title": "Condicional",
+      "goal": "Pedir con cortesía, aconsejar e imaginar con el condizionale.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Usa la misma raíz que el futuro + -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, sarei, avrei, vorrei, potrei, andrei.",
+        "Para pedir con cortesía: Vorrei un tavolo per due. Potresti aiutarmi? Mi daresti una mano?",
+        "Para aconsejar: Dovresti riposare (deberías descansar). Io al tuo posto prenderei il treno.",
+        "Ojo con la doble m de noi: parleremmo (hablaríamos) no es parleremo (hablaremos)."
+      ],
+      "examples": [
+        { "target": "Vorrei prenotare un tavolo per stasera.", "es": "Quisiera reservar una mesa para esta noche." },
+        { "target": "Potresti parlare più piano?", "es": "¿Podrías hablar más despacio?" },
+        { "target": "Al tuo posto non comprerei quella macchina.", "es": "Yo en tu lugar no compraría ese auto." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Io potria venire.", "right": "Io potrei venire.", "why": "El condicional de io termina en -ei: potrei, vorrei, sarei. No copies el '-ía' del español." },
+        { "wrong": "Andremo volentieri, ma non possiamo.", "right": "Andremmo volentieri, ma non possiamo.", "why": "'Iríamos' lleva doble m: andremmo. Con una sola m es futuro: andremo (iremos)." }
+      ]
+    },
+    {
+      "id": "imperativo",
+      "day": 4,
+      "title": "Imperativo con tu y con Lei",
+      "goal": "Dar instrucciones y consejos con el imperativo informal y formal.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con tu: -are → -a (parla!, guarda!), -ere e -ire → -i (prendi!, senti!, finisci!). Noi y voi son como el presente: andiamo!, venite!",
+        "Negativo con tu: non + infinitivo: Non parlare! Non preoccuparti!",
+        "Con Lei: -are → -i (scusi, parli), -ere e -ire → -a (prenda, senta). Irregulares: vada, faccia, venga, sia, abbia.",
+        "Irregulares con tu: va' (o vai), fa' (o fai), da' (o dai), sta' (o stai), di', sii, abbi. Los pronombres se pegan al imperativo de tu y con estos cortos se dobla la consonante: dimmi, fammi, dammi."
+      ],
+      "examples": [
+        { "target": "Gira a destra e poi prendi la seconda strada.", "es": "Doblá a la derecha y después agarrá la segunda calle." },
+        { "target": "Non dimenticare il passaporto!", "es": "¡No te olvides el pasaporte!" },
+        { "target": "Senta, scusi: dov'è la stazione?", "es": "Oiga, disculpe: ¿dónde queda la estación?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Non parla!", "right": "Non parlare!", "why": "El negativo de tu se forma con non + infinitivo." },
+        { "wrong": "Scusa, signora, che ore sono?", "right": "Scusi, signora, che ore sono?", "why": "Con alguien a quien tratás de Lei el imperativo cambia: scusi, senta, venga." }
+      ]
+    },
+    {
+      "id": "consigli-viaggio",
+      "day": 5,
+      "title": "Consejos para un viaje",
+      "goal": "Comprender y escribir consejos para alguien que viaja a Italia.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combiná imperativo, condicional y futuro: Prendi il treno. Io andrei a maggio. Ti piacerà tantissimo.",
+        "Para aconsejar: Ti consiglio di…, Dovresti…, È meglio…, Vale la pena…",
+        "Conectores: prima di + infinitivo (antes de), dopo, inoltre (además), comunque (de todos modos)."
+      ],
+      "examples": [
+        { "target": "Compra i biglietti del treno online: costano meno.", "es": "Comprá los pasajes de tren por internet: salen más baratos." },
+        { "target": "Io al tuo posto resterei almeno tre giorni a Roma.", "es": "Yo en tu lugar me quedaría por lo menos tres días en Roma." },
+        { "target": "Vedrai, ti piacerà tantissimo!", "es": "Vas a ver, ¡te va a encantar!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ti consiglio visitare Firenze.", "right": "Ti consiglio di visitare Firenze.", "why": "Consigliare va con di + infinitivo." },
+        { "wrong": "Compra il boleto alla stazione.", "right": "Compra il biglietto alla stazione.", "why": "Boleto no existe en italiano: el pasaje o la entrada es il biglietto." }
+      ]
+    }
+  ]
+}

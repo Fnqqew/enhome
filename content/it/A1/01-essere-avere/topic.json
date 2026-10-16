@@ -1,0 +1,129 @@
+{
+  "id": "it-a1-essere-avere",
+  "level": "A1",
+  "order": 1,
+  "title": "Ser, estar y tener",
+  "targetTitle": "Essere e avere",
+  "description": "Los dos verbos más importantes del italiano: essere, que cubre casi todo lo que en español repartimos entre ser y estar, y avere (tener). Con ellos te presentás, decís tu edad y contás qué hay en un lugar.",
+  "objectives": [
+    "Usar los pronombres personales y saludar con tu (informal) y con Lei (formal)",
+    "Conjugar essere y avere en presente",
+    "Decir la edad y lo que hay en un lugar con c'è y ci sono",
+    "Escribir una presentación personal breve"
+  ],
+  "prerequisites": [],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "pronomi-saluti",
+      "day": 1,
+      "title": "Pronombres y saludos",
+      "goal": "Reconocer io, tu, lui, lei, Lei, noi, voi y loro, y saludar según la situación.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "io, tu, lui, lei, noi, voi, loro. Como en español, el pronombre casi siempre se omite: Sono argentino.",
+        "Tu es el trato informal (vos). Para 'usted' se usa Lei, con mayúscula, que se conjuga en tercera persona como lei (ella): Lei è italiano?",
+        "Voi es 'ustedes' en el trato de todos los días; loro es 'ellos' o 'ellas'.",
+        "Saludos: Ciao (hola y chau, informal), Salve (neutro), Buongiorno, Buonasera, Arrivederci. Para preguntar cómo está alguien: Come stai? (tu) / Come sta? (Lei)."
+      ],
+      "examples": [
+        { "target": "Ciao, Marco! Come stai?", "es": "¡Hola, Marco! ¿Cómo estás?" },
+        { "target": "Buongiorno, signora. Come sta?", "es": "Buen día, señora. ¿Cómo está?" },
+        { "target": "Voi siete di Roma?", "es": "¿Ustedes son de Roma?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Buongiorno, professore. Come stai?", "right": "Buongiorno, professore. Come sta?", "why": "Con alguien a quien tratás de usted se usa Lei y el verbo va en tercera persona: come sta." },
+        { "wrong": "Bongiorno!", "right": "Buongiorno!", "why": "Se escribe con uo, como buono y buona: buongiorno, buonasera." }
+      ]
+    },
+    {
+      "id": "verbo-essere",
+      "day": 2,
+      "title": "El verbo essere",
+      "goal": "Conjugar essere para hablar de identidad, origen, profesión, estados y ubicación.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "io sono, tu sei, lui/lei/Lei è, noi siamo, voi siete, loro sono. Ojo: sono sirve para io y para loro.",
+        "Essere es 'ser' y también casi siempre 'estar': Sono stanco (estoy cansado), Siamo a casa (estamos en casa).",
+        "Stare se usa sobre todo para la salud y el ánimo: Come stai? — Sto bene.",
+        "El origen va con essere di: Sono di Rosario. La nacionalidad, sin preposición: Sono argentina.",
+        "è con acento significa 'es'; e sin acento significa 'y'."
+      ],
+      "examples": [
+        { "target": "Sono argentina, di Córdoba.", "es": "Soy argentina, de Córdoba." },
+        { "target": "Oggi Marco è molto stanco.", "es": "Hoy Marco está muy cansado." },
+        { "target": "Dove siete? — Siamo al bar.", "es": "¿Dónde están? — Estamos en el bar." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Sto stanco.", "right": "Sono stanco.", "why": "En el italiano estándar los estados como cansado, contento o nervioso van con essere, no con stare." },
+        { "wrong": "Lei e italiana.", "right": "Lei è italiana.", "why": "Sin acento, e significa 'y'; el verbo es è." }
+      ]
+    },
+    {
+      "id": "verbo-avere",
+      "day": 3,
+      "title": "El verbo avere",
+      "goal": "Conjugar avere para hablar de lo que tenés, tu edad y lo que sentís.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "io ho, tu hai, lui/lei/Lei ha, noi abbiamo, voi avete, loro hanno.",
+        "La h no se pronuncia, pero se escribe: distingue ho (tengo) de o (o), ha (tiene) de a (a) y hanno (tienen) de anno (año).",
+        "La edad va con avere, como en español: Ho trent'anni.",
+        "Muchas sensaciones también: avere fame, sete, sonno, freddo, caldo, fretta, paura."
+      ],
+      "examples": [
+        { "target": "Quanti anni hai? — Ho ventotto anni.", "es": "¿Cuántos años tenés? — Tengo veintiocho años." },
+        { "target": "Abbiamo una casa al mare.", "es": "Tenemos una casa en la costa." },
+        { "target": "Ho fame e ho anche sonno.", "es": "Tengo hambre y también tengo sueño." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Io o una sorella.", "right": "Io ho una sorella.", "why": "La h no suena, pero se escribe: ho es 'tengo' y o es 'o'." },
+        { "wrong": "Abiamo due gatti.", "right": "Abbiamo due gatti.", "why": "Abbiamo lleva doble b. En italiano las consonantes dobles se escriben y se pronuncian más largas." }
+      ]
+    },
+    {
+      "id": "c-e-ci-sono",
+      "day": 4,
+      "title": "C'è y ci sono",
+      "goal": "Decir qué hay en un lugar con c'è y ci sono, en afirmativo, en negativo y en preguntas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "'Hay' tiene dos formas: c'è con singular y ci sono con plural: C'è un bar. Ci sono due bar.",
+        "Para negar se pone non adelante: Non c'è latte. Non ci sono taxi.",
+        "La pregunta tiene el mismo orden; cambia solo la entonación: C'è un bancomat qui vicino?",
+        "Ecco sirve para señalar algo, 'acá está' o 'acá tenés': Ecco il bar! No es lo mismo que c'è."
+      ],
+      "examples": [
+        { "target": "C'è una farmacia qui vicino?", "es": "¿Hay una farmacia cerca de acá?" },
+        { "target": "In piazza ci sono molti turisti.", "es": "En la plaza hay muchos turistas." },
+        { "target": "Oggi non c'è lezione.", "es": "Hoy no hay clase." }
+      ],
+      "commonMistakes": [
+        { "wrong": "C'è molte persone.", "right": "Ci sono molte persone.", "why": "En español 'hay' no cambia, pero en italiano con plural se usa ci sono." },
+        { "wrong": "Ha un bar qui?", "right": "C'è un bar qui?", "why": "'Hay' nunca se dice con avere: se dice c'è o ci sono." }
+      ]
+    },
+    {
+      "id": "presentarsi",
+      "day": 5,
+      "title": "Presentarte",
+      "goal": "Comprender y escribir una presentación personal con essere y avere.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para decir tu nombre: Mi chiamo Lucía o Sono Lucía. Para preguntar: Come ti chiami? (tu) / Come si chiama? (Lei).",
+        "Estructura: nombre, origen, edad, profesión, dónde vivís (Abito a…) y cómo estás.",
+        "Con ciudades se usa a: Abito a Buenos Aires. Con países, in: Abito in Argentina.",
+        "Al conocer a alguien: Piacere! (mucho gusto) — Piacere mio."
+      ],
+      "examples": [
+        { "target": "Ciao! Mi chiamo Tomás e sono di Mendoza.", "es": "¡Hola! Me llamo Tomás y soy de Mendoza." },
+        { "target": "Ho trentadue anni e sono ingegnere.", "es": "Tengo treinta y dos años y soy ingeniero." },
+        { "target": "Abito a Bologna da due anni.", "es": "Vivo en Bolonia desde hace dos años." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Abito in Roma.", "right": "Abito a Roma.", "why": "Con ciudades se usa a; in va con países y regiones: in Italia, in Toscana." },
+        { "wrong": "Me chiamo Lucía.", "right": "Mi chiamo Lucía.", "why": "El pronombre es mi, no me: mi chiamo, ti chiami, si chiama." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "fr-a2-comparatifs-adverbes",
+  "level": "A2",
+  "order": 4,
+  "title": "Comparativos y adverbios",
+  "targetTitle": "Comparatifs et adverbes",
+  "description": "Cómo comparar personas, cosas y cantidades, decir cuál es el mejor o el más lindo, y describir cómo se hace algo con los adverbios en -ment, que equivalen a los nuestros en '-mente'.",
+  "objectives": [
+    "Comparar adjetivos con plus, moins y aussi… que",
+    "Comparar cantidades y acciones con plus de, autant de y autant que",
+    "Usar meilleur y mieux sin confundirlos, y formar el superlativo",
+    "Formar los adverbios en -ment",
+    "Comparar dos ciudades por escrito"
+  ],
+  "prerequisites": ["fr-a1-etre-avoir", "fr-a1-articles"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "comparatif-adjectifs",
+      "day": 1,
+      "title": "Plus, moins, aussi… que",
+      "goal": "Comparar con adjetivos: más, menos y tan… como.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "plus + adjetivo + que (más… que), moins + adjetivo + que (menos… que), aussi + adjetivo + que (tan… como).",
+        "El adjetivo concuerda con el sujeto: Ma sœur est plus grande que moi.",
+        "Después de que van los pronombres tónicos: moi, toi, lui, elle, nous, vous, eux, elles: plus âgé que lui.",
+        "El segundo término siempre va con que (qu' delante de vocal), aunque en español digas 'tan… como'.",
+        "Delante de vocal, la s de plus se liga y suena z: plus intéressant, plus âgé."
+      ],
+      "examples": [
+        { "target": "Paris est plus cher que Lyon.", "es": "París es más cara que Lyon." },
+        { "target": "Le train est moins rapide que l'avion.", "es": "El tren es menos rápido que el avión." },
+        { "target": "Mon frère est aussi grand que mon père.", "es": "Mi hermano es tan alto como mi papá." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il est plus grand que je.", "right": "Il est plus grand que moi.", "why": "Después de que se usa moi, toi, lui…, nunca je o tu." },
+        { "wrong": "Il est aussi grand comme son père.", "right": "Il est aussi grand que son père.", "why": "En francés el segundo término va con que, aunque en español digas 'tan alto como'." }
+      ]
+    },
+    {
+      "id": "quantites-verbes",
+      "day": 2,
+      "title": "Cantidades y verbos",
+      "goal": "Comparar cantidades con plus de, moins de y autant de, y acciones con plus que y autant que.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con sustantivos: plus de, moins de, autant de + sustantivo + que: J'ai plus de travail que toi.",
+        "Después de estas expresiones va de solo, sin artículo: autant de livres, plus d'amis.",
+        "Con verbos: verbo + plus que, moins que o autant que: Il travaille plus que moi. Je dors autant que toi.",
+        "Resumen de 'tanto': aussi con adjetivos, autant de con sustantivos y autant que con verbos.",
+        "Plus de también es 'más de' con números: plus de cent personnes."
+      ],
+      "examples": [
+        { "target": "Il y a plus de touristes en été qu'en hiver.", "es": "Hay más turistas en verano que en invierno." },
+        { "target": "J'ai autant de livres que toi.", "es": "Tengo tantos libros como vos." },
+        { "target": "Elle travaille moins que l'année dernière.", "es": "Trabaja menos que el año pasado." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'ai plus des amis que lui.", "right": "J'ai plus d'amis que lui.", "why": "Después de plus, moins y autant va de (d'), sin artículo." },
+        { "wrong": "Il travaille aussi que moi.", "right": "Il travaille autant que moi.", "why": "Con verbos, 'tanto como' es autant que; aussi va con adjetivos y adverbios." }
+      ]
+    },
+    {
+      "id": "meilleur-mieux-superlatif",
+      "day": 3,
+      "title": "Meilleur, mieux y el superlativo",
+      "goal": "Distinguir meilleur de mieux y formar el superlativo.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Meilleur es el comparativo de bon y describe una cosa: Ce café est meilleur que l'autre. Concuerda: meilleure, meilleurs, meilleures.",
+        "Mieux es el comparativo de bien y describe cómo se hace algo: Tu chantes mieux que moi.",
+        "Nunca se dice plus bon ni plus bien. Pista: si hablás de una cosa, meilleur; si hablás de una acción, mieux.",
+        "Superlativo: le, la o les + plus o moins + adjetivo, y de para el grupo: le plus grand musée du monde.",
+        "Si el adjetivo va después del sustantivo, el artículo se repite: la plage la plus belle de la région."
+      ],
+      "examples": [
+        { "target": "C'est le meilleur restaurant du quartier.", "es": "Es el mejor restaurante del barrio." },
+        { "target": "Je parle mieux français qu'avant.", "es": "Hablo francés mejor que antes." },
+        { "target": "C'est la plage la plus belle de la région.", "es": "Es la playa más linda de la región." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ce gâteau est plus bon.", "right": "Ce gâteau est meilleur.", "why": "Bon tiene comparativo irregular, meilleur, igual que 'bueno' tiene 'mejor'." },
+        { "wrong": "Elle danse meilleur que moi.", "right": "Elle danse mieux que moi.", "why": "Con un verbo se usa mieux (de bien); meilleur describe un sustantivo." }
+      ]
+    },
+    {
+      "id": "adverbes-ment",
+      "day": 4,
+      "title": "Adverbios en -ment",
+      "goal": "Formar adverbios en -ment y ubicarlos en la frase.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "-ment equivale a '-mente' y se agrega al adjetivo femenino: lent → lente → lentement, heureux → heureuse → heureusement.",
+        "Si el masculino termina en vocal, se usa el masculino: vrai → vraiment, poli → poliment.",
+        "Los adjetivos en -ant y -ent dan -amment y -emment, que suenan igual ('amán'): courant → couramment, évident → évidemment.",
+        "Irregulares: bon → bien, mauvais → mal.",
+        "El adverbio va después del verbo conjugado: Il parle lentement. En el passé composé, los cortos van entre auxiliar y participio: J'ai bien dormi."
+      ],
+      "examples": [
+        { "target": "Parlez lentement, s'il vous plaît.", "es": "Hable despacio, por favor." },
+        { "target": "Elle parle couramment trois langues.", "es": "Habla tres idiomas con fluidez." },
+        { "target": "Malheureusement, le magasin est fermé.", "es": "Lamentablemente, el negocio está cerrado." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Heureuxment, il fait beau.", "right": "Heureusement, il fait beau.", "why": "El adverbio se forma sobre el femenino: heureuse → heureusement." },
+        { "wrong": "Il parle bon français.", "right": "Il parle bien français.", "why": "Con un verbo se usa el adverbio bien, no el adjetivo bon." }
+      ]
+    },
+    {
+      "id": "comparer-villes",
+      "day": 5,
+      "title": "Comparar dos ciudades",
+      "goal": "Comprender y escribir un texto que compara dos ciudades y da una opinión.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura: presentá las dos opciones, compará con plus, moins, aussi y autant, y cerrá con tu preferencia.",
+        "Para opinar: À mon avis… (en mi opinión), Pour moi…, Je préfère…",
+        "Vocabulario: cher, bon marché (barato, no cambia), animé (con mucha movida), calme, bruyant (ruidoso), agréable.",
+        "Conectores: mais, par contre (en cambio), en plus (además). Beaucoup plus = mucho más."
+      ],
+      "examples": [
+        { "target": "La vie à Lyon est moins chère qu'à Paris.", "es": "La vida en Lyon es más barata que en París." },
+        { "target": "Par contre, Paris a plus de musées.", "es": "En cambio, París tiene más museos." },
+        { "target": "À mon avis, c'est la ville la plus agréable de France.", "es": "Para mí, es la ciudad más agradable de Francia." }
+      ],
+      "commonMistakes": [
+        { "wrong": "En mon opinion, Lyon est plus calme.", "right": "À mon avis, Lyon est plus calme.", "why": "'En mi opinión' se dice à mon avis (o selon moi)." },
+        { "wrong": "Paris a plus musées que Lyon.", "right": "Paris a plus de musées que Lyon.", "why": "Con un sustantivo, plus necesita de." }
+      ]
+    }
+  ]
+}

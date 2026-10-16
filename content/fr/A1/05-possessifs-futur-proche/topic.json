@@ -1,0 +1,133 @@
+{
+  "id": "fr-a1-possessifs-futur-proche",
+  "level": "A1",
+  "order": 5,
+  "title": "Posesivos, lugares y futuro próximo",
+  "targetTitle": "Possessifs, lieux et futur proche",
+  "description": "Cómo decir de quién es algo, qué preposición va con cada ciudad y cada país, y cómo contar tus planes con aller + infinitivo, el 'voy a' del francés.",
+  "objectives": [
+    "Usar los posesivos mon, ma, mes, ton, son, notre, votre y leur",
+    "Elegir à, en, au o aux con ciudades y países, y usar chez",
+    "Hablar del futuro con aller + infinitivo",
+    "Escribir un mensaje con tus planes para el fin de semana"
+  ],
+  "prerequisites": ["fr-a1-articles", "fr-a1-present"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "possessifs",
+      "day": 1,
+      "title": "Posesivos",
+      "goal": "Usar los posesivos de todas las personas.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "mon, ma, mes (mi, mis); ton, ta, tes (tu, tus); son, sa, ses (su, sus de él o de ella).",
+        "notre, nos (nuestro, nuestros); votre, vos (su de usted o de ustedes); leur, leurs (su de ellos).",
+        "El posesivo concuerda con lo que se posee, no con el dueño: son père, sa mère, ses parents.",
+        "Son, sa y ses sirven para 'de él' y 'de ella': sa voiture puede ser el auto de Pedro o de Ana, porque voiture es femenino.",
+        "Votre es también el 'su' de usted: Votre passeport, s'il vous plaît."
+      ],
+      "examples": [
+        { "target": "Mon frère habite à Rosario.", "es": "Mi hermano vive en Rosario." },
+        { "target": "C'est sa maison.", "es": "Es su casa (de él o de ella)." },
+        { "target": "Nos amis arrivent demain.", "es": "Nuestros amigos llegan mañana." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Marie cherche sa père.", "right": "Marie cherche son père.", "why": "El posesivo concuerda con père (masculino), no con Marie." },
+        { "wrong": "Ses voiture est rouge.", "right": "Sa voiture est rouge.", "why": "Ses es plural; para un solo auto, femenino, va sa." }
+      ]
+    },
+    {
+      "id": "mon-amie-famille",
+      "day": 2,
+      "title": "Mon amie, de y à moi",
+      "goal": "Usar mon delante de vocal, expresar la posesión con de y à, y hablar de la familia.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Delante de vocal o h muda se usa mon, ton, son aunque el sustantivo sea femenino: mon amie, ton école, son histoire.",
+        "Para la posesión con un nombre se usa de, como en español: la voiture de Marc, la maison de mes parents.",
+        "Para decir 'es mío' o 'es tuyo': C'est à moi, c'est à toi, c'est à lui, c'est à elle.",
+        "Familia: le père, la mère, le frère, la sœur, le fils, la fille, le mari, la femme, les grands-parents.",
+        "En fils la s sí suena ('fis'), y femme se pronuncia 'fam'."
+      ],
+      "examples": [
+        { "target": "Mon amie Julie est infirmière.", "es": "Mi amiga Julie es enfermera." },
+        { "target": "C'est la voiture de mon père.", "es": "Es el auto de mi papá." },
+        { "target": "Ce sac est à toi ?", "es": "¿Este bolso es tuyo?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ma amie s'appelle Inès.", "right": "Mon amie s'appelle Inès.", "why": "Delante de vocal se usa mon aunque la palabra sea femenina." },
+        { "wrong": "C'est de moi.", "right": "C'est à moi.", "why": "'Es mío' se dice c'est à moi." }
+      ]
+    },
+    {
+      "id": "villes-pays-chez",
+      "day": 3,
+      "title": "Ciudades, países y chez",
+      "goal": "Elegir la preposición correcta con ciudades y países, y usar chez.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con ciudades se usa à, tanto para 'en' como para 'a': J'habite à Paris. Je vais à Rome.",
+        "Con países femeninos y con los que empiezan con vocal se usa en: en France, en Argentine, en Italie, en Uruguay.",
+        "Con países masculinos se usa au: au Brésil, au Chili, au Pérou, au Canada. Con plurales, aux: aux États-Unis.",
+        "Casi todos los países que terminan en -e son femeninos, con excepciones como le Mexique (au Mexique).",
+        "Chez + persona es 'en lo de' o 'a lo de': chez moi (en casa), chez Paul, chez le médecin."
+      ],
+      "examples": [
+        { "target": "J'habite à Rosario, en Argentine.", "es": "Vivo en Rosario, en Argentina." },
+        { "target": "Mes cousins habitent au Chili.", "es": "Mis primos viven en Chile." },
+        { "target": "Ce soir, on dîne chez Marie.", "es": "Esta noche cenamos en lo de Marie." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'habite en Paris.", "right": "J'habite à Paris.", "why": "Con ciudades se usa à; en es para países femeninos." },
+        { "wrong": "Je vais en Brésil.", "right": "Je vais au Brésil.", "why": "Brésil es masculino: au Brésil." },
+        { "wrong": "Je vais à la maison de Paul.", "right": "Je vais chez Paul.", "why": "'A lo de alguien' se dice chez + persona." }
+      ]
+    },
+    {
+      "id": "futur-proche",
+      "day": 4,
+      "title": "Futuro próximo",
+      "goal": "Hablar del futuro con aller + infinitivo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "aller en presente + infinitivo, igual que 'voy a + infinitivo': je vais manger, tu vas partir, nous allons voir.",
+        "Es la forma más común de hablar del futuro en la charla.",
+        "A diferencia del español, entre aller y el infinitivo no va preposición: je vais manger.",
+        "La negación rodea a aller: Je ne vais pas sortir ce soir.",
+        "Expresiones de tiempo: ce soir, demain, ce week-end, la semaine prochaine, l'année prochaine, bientôt."
+      ],
+      "examples": [
+        { "target": "Demain, je vais visiter le Louvre.", "es": "Mañana voy a visitar el Louvre." },
+        { "target": "Nous allons dîner chez mes parents.", "es": "Vamos a cenar en lo de mis padres." },
+        { "target": "Il ne va pas pleuvoir ce week-end.", "es": "Este fin de semana no va a llover." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je vais à manger.", "right": "Je vais manger.", "why": "Entre aller y el infinitivo no va à, aunque en español digas 'voy a comer'." },
+        { "wrong": "Je vais ne pas sortir.", "right": "Je ne vais pas sortir.", "why": "Ne… pas rodea al verbo conjugado, que es aller." }
+      ]
+    },
+    {
+      "id": "projets-week-end",
+      "day": 5,
+      "title": "Planes para el fin de semana",
+      "goal": "Comprender y escribir un mensaje con tus planes y una invitación.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para un día concreto no va artículo: samedi = este sábado; le samedi = todos los sábados.",
+        "Para proponer: Tu veux venir ? On va au cinéma ? Ça te dit ? (¿Te pinta?)",
+        "Para responder: Avec plaisir ! Bonne idée ! Désolé (o désolée), je ne peux pas.",
+        "Ordená los planes por momentos: samedi matin, samedi soir, dimanche après-midi."
+      ],
+      "examples": [
+        { "target": "Samedi, je vais faire les courses avec ma sœur.", "es": "El sábado voy a hacer las compras con mi hermana." },
+        { "target": "Dimanche, on va déjeuner chez mes grands-parents.", "es": "El domingo vamos a almorzar en lo de mis abuelos." },
+        { "target": "Tu veux venir avec nous ?", "es": "¿Querés venir con nosotros?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Dans le samedi, je vais au cinéma.", "right": "Samedi, je vais au cinéma.", "why": "Para un día concreto no va preposición: samedi = el sábado." },
+        { "wrong": "Je vais à chez Marie.", "right": "Je vais chez Marie.", "why": "Chez ya incluye la idea de 'a lo de': no lleva à." }
+      ]
+    }
+  ]
+}

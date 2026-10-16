@@ -1,0 +1,129 @@
+{
+  "id": "it-a2-pronomi",
+  "level": "A2",
+  "order": 3,
+  "title": "Pronombres, ne y ci",
+  "targetTitle": "Pronomi diretti, indiretti, ne e ci",
+  "description": "Cómo reemplazar personas y cosas para no repetirlas (lo, la, gli, le) y dos pronombres muy italianos que no tienen un equivalente directo en español: ne y ci.",
+  "objectives": [
+    "Usar los pronombres directos lo, la, li y le",
+    "Usar los indirectos gli y le sin confundirlos",
+    "Ubicar los pronombres antes del verbo o unidos al infinitivo",
+    "Hacer concordar el participio con lo, la, li y le",
+    "Usar ne para cantidades y ci para lugares"
+  ],
+  "prerequisites": ["it-a1-presente", "it-a2-passato-prossimo"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "pronomi-diretti",
+      "day": 1,
+      "title": "Pronombres directos",
+      "goal": "Reemplazar el objeto directo con mi, ti, lo, la, ci, vi, li y le.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "mi, ti, lo, la, ci, vi, li, le equivalen a me, te, lo, la, nos, los (a ustedes), los, las.",
+        "En plural, li es masculino y le es femenino: I libri? Li compro. Le chiavi? Le prendo io.",
+        "Lo y la ante vocal o h se apostrofan: L'aspetto (lo/la espero), L'ho visto.",
+        "A diferencia del español, el objeto directo de persona no lleva a: Conosco Marco (conozco a Marco)."
+      ],
+      "examples": [
+        { "target": "Conosci Marco? — Sì, lo conosco bene.", "es": "¿Conocés a Marco? — Sí, lo conozco bien." },
+        { "target": "Dove sono le chiavi? Non le trovo.", "es": "¿Dónde están las llaves? No las encuentro." },
+        { "target": "Ti chiamo stasera.", "es": "Te llamo esta noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Conosco a Marco.", "right": "Conosco Marco.", "why": "En italiano el objeto directo de persona va sin a." },
+        { "wrong": "Le ragazze? Li conosco.", "right": "Le ragazze? Le conosco.", "why": "Para un plural femenino el pronombre es le; li es solo masculino." }
+      ]
+    },
+    {
+      "id": "pronomi-indiretti",
+      "day": 2,
+      "title": "Pronombres indirectos",
+      "goal": "Usar mi, ti, gli, le, ci y vi para decir a quién.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "mi, ti, gli (a él), le (a ella), Le (a usted), ci, vi, gli (a ellos y a ellas).",
+        "Ojo: gli es masculino y le es femenino. Gli scrivo = le escribo a él; Le scrivo = le escribo a ella.",
+        "Llevan indirecto los verbos que van con a: telefonare a, scrivere a, dire a, regalare a, chiedere a, rispondere a, piacere a: Gli piace il calcio.",
+        "Telefonare lleva indirecto (Le telefono), pero chiamare lleva directo (La chiamo)."
+      ],
+      "examples": [
+        { "target": "Gli scrivo un messaggio.", "es": "Le escribo un mensaje (a él)." },
+        { "target": "A Giulia piace il mare? — Sì, le piace molto.", "es": "¿A Giulia le gusta el mar? — Sí, le gusta mucho." },
+        { "target": "Ci potete dare una mano?", "es": "¿Nos pueden dar una mano?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le ho detto a Marco la verità.", "right": "Ho detto la verità a Marco.", "why": "En italiano no se duplica el pronombre con el nombre como en 'le dije a Marco'. Y si lo reemplazás, para un hombre es gli: Gli ho detto la verità." },
+        { "wrong": "La telefono domani.", "right": "Le telefono domani.", "why": "Telefonare va con a (telefonare a qualcuno), así que lleva el indirecto le." }
+      ]
+    },
+    {
+      "id": "posizione-concordanza",
+      "day": 3,
+      "title": "Posición y concordancia del participio",
+      "goal": "Ubicar bien los pronombres y hacer concordar el participio en el passato prossimo.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Los pronombres van antes del verbo conjugado: Lo compro. Non lo compro.",
+        "Con un infinitivo se pegan al final, que pierde la -e: Voglio comprarlo. Con volere, potere y dovere también pueden ir adelante: Lo voglio comprare.",
+        "Con ecco también se pegan: Eccolo! (¡acá está!), Eccomi!",
+        "En el passato prossimo, con lo, la, li, le delante, el participio concuerda: La pizza? L'ho mangiata. Le chiavi? Le ho perse. Con los indirectos no concuerda: Le ho scritto."
+      ],
+      "examples": [
+        { "target": "Devo chiamare Anna. Devo chiamarla oggi.", "es": "Tengo que llamar a Anna. Tengo que llamarla hoy." },
+        { "target": "Hai visto Marta? — Sì, l'ho vista ieri.", "es": "¿Viste a Marta? — Sí, la vi ayer." },
+        { "target": "Le foto? Le ho mandate stamattina.", "es": "¿Las fotos? Las mandé hoy a la mañana." }
+      ],
+      "commonMistakes": [
+        { "wrong": "La pizza? L'ho mangiato.", "right": "La pizza? L'ho mangiata.", "why": "Con lo, la, li, le delante del auxiliar avere, el participio concuerda: la pizza → mangiata." },
+        { "wrong": "Voglio lo comprare.", "right": "Voglio comprarlo.", "why": "El pronombre va antes de todo el grupo (Lo voglio comprare) o pegado al infinitivo, nunca en el medio." }
+      ]
+    },
+    {
+      "id": "ne-ci",
+      "day": 4,
+      "title": "Ne y ci",
+      "goal": "Usar ne para cantidades y ci para lugares ya mencionados.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Ne reemplaza al sustantivo cuando decís una cantidad: Quanti fratelli hai? — Ne ho due. En español no decimos nada; en italiano ne es obligatorio.",
+        "También va con un po', tanto o con la negación: Ne vuoi un po'? Non ne ho.",
+        "Ci reemplaza un lugar ya mencionado: Vai a Roma? — Sì, ci vado domani. Ci sono stato tre volte.",
+        "Ci vuole (con singular) y ci vogliono (con plural) significan 'hace falta' o 'se tarda': Ci vuole un'ora. Ci vogliono due uova."
+      ],
+      "examples": [
+        { "target": "Quanti anni hai? — Ne ho trentacinque.", "es": "¿Cuántos años tenés? — Tengo treinta y cinco." },
+        { "target": "Sei mai stata a Venezia? — Sì, ci sono stata l'anno scorso.", "es": "¿Alguna vez estuviste en Venecia? — Sí, estuve el año pasado." },
+        { "target": "Per andare in centro ci vogliono venti minuti.", "es": "Para ir al centro se tarda veinte minutos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quanti figli hai? — Ho due.", "right": "Quanti figli hai? — Ne ho due.", "why": "Cuando decís una cantidad sin repetir el sustantivo, el italiano exige ne." },
+        { "wrong": "Ci vuole due ore.", "right": "Ci vogliono due ore.", "why": "Ci vuole va con singular (ci vuole un'ora); con plural es ci vogliono." }
+      ]
+    },
+    {
+      "id": "fare-acquisti",
+      "day": 5,
+      "title": "De compras",
+      "goal": "Comprender y escribir un diálogo para comprar en un negocio o en el mercado.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para pedir: Vorrei…, Mi dà…? (¿me da?), Posso provarla? (¿me la puedo probar?).",
+        "Con cantidades usá ne: Ne prendo mezzo chilo. Ne vorrei due.",
+        "Para decidir: La prendo (me la llevo), Li prendo, No, grazie, ci penso (lo voy a pensar).",
+        "Precios y talles: Quanto costa? / Quanto costano?, Che taglia porta? (¿qué talle usa?), È in saldo (está en liquidación)."
+      ],
+      "examples": [
+        { "target": "Le pesche sono buone? Allora ne prendo quattro.", "es": "¿Los duraznos están buenos? Entonces llevo cuatro." },
+        { "target": "Questa camicia mi piace. Posso provarla?", "es": "Esta camisa me gusta. ¿Me la puedo probar?" },
+        { "target": "È un po' cara. Ci penso, grazie.", "es": "Es un poco cara. Lo voy a pensar, gracias." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Sto solo mirando, grazie.", "right": "Sto solo guardando, grazie.", "why": "Mirar es guardare; mirare significa apuntar a un objetivo." },
+        { "wrong": "Ne prendo quattro pesche.", "right": "Ne prendo quattro.", "why": "Ne ya reemplaza al sustantivo: no hace falta repetirlo." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "fr-a1-articles",
+  "level": "A1",
+  "order": 2,
+  "title": "Artículos y partitivos",
+  "targetTitle": "Les articles",
+  "description": "En francés un sustantivo casi nunca va solo. Aprendé los artículos definidos, indefinidos y partitivos, cómo se contraen con à y de, y qué palabras tienen otro género que en español.",
+  "objectives": [
+    "Usar le, la, l' y les, y un, une y des",
+    "Reconocer los sustantivos que cambian de género respecto del español",
+    "Elegir el partitivo du, de la o de l' y pasar a de después de una negación",
+    "Contraer à y de con el artículo: au, aux, du, des",
+    "Pedir en una boulangerie"
+  ],
+  "prerequisites": ["fr-a1-etre-avoir"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "articles-definis",
+      "day": 1,
+      "title": "Artículos definidos",
+      "goal": "Usar le, la, l' y les.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "le para masculino, la para femenino y les para el plural de los dos: le livre, la table, les livres.",
+        "Delante de vocal o h muda, le y la se acortan: l'ami, l'école, l'hôtel.",
+        "La -s del plural no suena: le livre y les livres se distinguen por el artículo. Delante de vocal, la s de les se liga y suena z: les amis ('le-zamí').",
+        "Con gustos va el definido, como en español: J'aime le café."
+      ],
+      "examples": [
+        { "target": "Le train est en retard.", "es": "El tren está demorado." },
+        { "target": "J'adore la musique française.", "es": "Me encanta la música francesa." },
+        { "target": "Les enfants sont à l'école.", "es": "Los chicos están en la escuela." }
+      ],
+      "commonMistakes": [
+        { "wrong": "La école est fermée.", "right": "L'école est fermée.", "why": "Delante de vocal o h muda, le y la pierden la vocal: l'école, l'hôtel." },
+        { "wrong": "J'aime café.", "right": "J'aime le café.", "why": "Con aimer, adorer y détester el sustantivo lleva artículo definido, como en 'me gusta el café'." }
+      ]
+    },
+    {
+      "id": "indefinis-genre",
+      "day": 2,
+      "title": "Indefinidos y género",
+      "goal": "Usar un, une y des, y reconocer los sustantivos con otro género que en español.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "un (masculino), une (femenino) y des (plural de los dos): un croissant, une baguette, des croissants.",
+        "Des no se traduce, pero no se puede omitir: J'ai des amis à Paris = Tengo amigos en París.",
+        "En un la n no suena (es una vocal nasal); en une la n sí se pronuncia.",
+        "Género distinto del español: le lait, le sel, le miel y le nez son masculinos; la mer, la dent, la couleur y la fin son femeninos.",
+        "Pistas: las palabras en -age suelen ser masculinas (le fromage, le voyage, pero la plage) y las terminadas en -tion, femeninas (la station)."
+      ],
+      "examples": [
+        { "target": "J'ai un frère et une sœur.", "es": "Tengo un hermano y una hermana." },
+        { "target": "Il y a des fleurs sur la table.", "es": "Hay flores en la mesa." },
+        { "target": "Le lait est froid.", "es": "La leche está fría." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il y a enfants dans le parc.", "right": "Il y a des enfants dans le parc.", "why": "El plural indefinido necesita des, aunque en español digas 'hay chicos'." },
+        { "wrong": "La lait est chaud.", "right": "Le lait est chaud.", "why": "Lait es masculino en francés, aunque 'leche' sea femenino." },
+        { "wrong": "Le mer est belle.", "right": "La mer est belle.", "why": "Mer es femenino: la mer." }
+      ]
+    },
+    {
+      "id": "partitifs",
+      "day": 3,
+      "title": "Partitivos y de en la negación",
+      "goal": "Hablar de cantidades que no se cuentan con du, de la y de l', y usar de después de una negación.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Para una cantidad indefinida de algo que no se cuenta se usa el partitivo: du (masculino), de la (femenino), de l' (delante de vocal) y des (plural).",
+        "En español no se dice nada: Je mange du pain = Como pan. En francés el artículo es obligatorio.",
+        "Después de una negación, un, une, des y los partitivos se vuelven de (d' delante de vocal): Je ne bois pas de café. Il n'y a pas d'eau.",
+        "Con cantidades también va de solo: beaucoup de sucre, un kilo de tomates, un peu d'eau.",
+        "Con aimer va el definido y con manger o boire, el partitivo: J'aime le café, pero Je bois du café."
+      ],
+      "examples": [
+        { "target": "Le matin, je bois du café avec du lait.", "es": "A la mañana tomo café con leche." },
+        { "target": "Tu veux de l'eau ?", "es": "¿Querés agua?" },
+        { "target": "Il n'y a pas de pain.", "es": "No hay pan." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je mange pain.", "right": "Je mange du pain.", "why": "En francés el sustantivo no puede ir sin artículo: para 'pan' en general va du." },
+        { "wrong": "Je ne bois pas du café.", "right": "Je ne bois pas de café.", "why": "Después de ne… pas, el partitivo se convierte en de." }
+      ]
+    },
+    {
+      "id": "contractions",
+      "day": 4,
+      "title": "Contracciones con à y de",
+      "goal": "Contraer à y de con le y les: au, aux, du, des.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "à + le = au y à + les = aux; à la y à l' no cambian: au cinéma, aux États-Unis, à la plage, à l'hôpital.",
+        "de + le = du y de + les = des; de la y de l' no cambian: le livre du professeur, la voiture des voisins.",
+        "Es como 'al' y 'del' en español, pero en francés también se contrae en plural.",
+        "Con sabores e ingredientes se usa à + artículo: une glace au chocolat, une tarte aux pommes."
+      ],
+      "examples": [
+        { "target": "Je suis au bureau.", "es": "Estoy en la oficina." },
+        { "target": "C'est le chien des voisins.", "es": "Es el perro de los vecinos." },
+        { "target": "Une crêpe au chocolat, s'il vous plaît.", "es": "Una crêpe de chocolate, por favor." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je suis à le bureau.", "right": "Je suis au bureau.", "why": "à + le se contrae siempre en au." },
+        { "wrong": "La porte de le garage.", "right": "La porte du garage.", "why": "de + le se contrae en du, como 'del' en español." }
+      ]
+    },
+    {
+      "id": "boulangerie",
+      "day": 5,
+      "title": "En la boulangerie",
+      "goal": "Comprender y escribir un diálogo para comprar en una panadería.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Siempre empezá con Bonjour: en Francia, entrar a un negocio sin saludar es de mala educación.",
+        "Para pedir: Je voudrais… (quisiera) o directamente …, s'il vous plaît.",
+        "Productos: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, des macarons.",
+        "Para el precio: C'est combien ? / Ça fait combien ? — Ça fait quatre euros cinquante."
+      ],
+      "examples": [
+        { "target": "Bonjour ! Je voudrais une baguette et deux croissants, s'il vous plaît.", "es": "¡Buen día! Quisiera una baguette y dos medialunas, por favor." },
+        { "target": "Vous avez des tartes aux pommes ?", "es": "¿Tiene tartas de manzana?" },
+        { "target": "Ça fait combien ?", "es": "¿Cuánto es?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je voudrais un baguette.", "right": "Je voudrais une baguette.", "why": "Baguette es femenino: une baguette." },
+        { "wrong": "Une tarte de pommes.", "right": "Une tarte aux pommes.", "why": "Para el sabor o el ingrediente principal se usa à + artículo: aux pommes, au chocolat." }
+      ]
+    }
+  ]
+}

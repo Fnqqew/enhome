@@ -1,0 +1,126 @@
+{
+  "id": "it-a2-riflessivi-comparativi",
+  "level": "A2",
+  "order": 4,
+  "title": "Reflexivos y comparativos",
+  "targetTitle": "Verbi riflessivi e comparativi",
+  "description": "Los verbos reflexivos de la rutina (mi alzo, mi vesto) y los recíprocos (ci vediamo), y las formas para comparar personas, lugares y cosas: più, meno, tanto quanto, migliore y el superlativo en -issimo.",
+  "objectives": [
+    "Conjugar los verbos reflexivos en presente y en passato prossimo",
+    "Usar los recíprocos: ci vediamo, si conoscono",
+    "Comparar con più … di, meno … di, più … che y tanto … quanto",
+    "Usar migliore, peggiore, meglio, peggio y el superlativo en -issimo",
+    "Comparar dos ciudades"
+  ],
+  "prerequisites": ["it-a1-articoli-genere", "it-a2-passato-prossimo"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "riflessivi-presente",
+      "day": 1,
+      "title": "Verbos reflexivos",
+      "goal": "Conjugar los reflexivos en presente para contar tu rutina.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Los reflexivos terminan en -si (alzarsi, svegliarsi, vestirsi) y llevan mi, ti, si, ci, vi, si antes del verbo: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+        "Con un infinitivo el pronombre se pega al final: Domani devo alzarmi presto.",
+        "Muchos coinciden con el español: lavarsi, vestirsi, sedersi, divertirsi, arrabbiarsi (enojarse), sbagliarsi (equivocarse).",
+        "Pero 'quedarse' se dice restare o rimanere, sin pronombre; y 'dormirse' es addormentarsi."
+      ],
+      "examples": [
+        { "target": "Mi sveglio alle sette, ma mi alzo alle sette e mezza.", "es": "Me despierto a las siete, pero me levanto a las siete y media." },
+        { "target": "Come si chiama tua sorella?", "es": "¿Cómo se llama tu hermana?" },
+        { "target": "Con loro ci divertiamo sempre.", "es": "Con ellos siempre nos divertimos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mi resto a casa.", "right": "Resto a casa.", "why": "'Quedarse' se dice restare o rimanere, sin pronombre reflexivo." },
+        { "wrong": "Me sveglio presto.", "right": "Mi sveglio presto.", "why": "Los pronombres reflexivos son mi, ti, si, ci, vi, si." }
+      ]
+    },
+    {
+      "id": "riflessivi-passato-reciproci",
+      "day": 2,
+      "title": "Reflexivos en pasado y recíprocos",
+      "goal": "Usar los reflexivos en passato prossimo y expresar acciones recíprocas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "En el passato prossimo los reflexivos van siempre con essere y el participio concuerda: mi sono alzato/a, ci siamo divertiti.",
+        "Recíprocos con ci, vi, si en plural: Ci vediamo domani. Si conoscono da anni. Ci siamo conosciuti a Roma.",
+        "Despedidas muy usadas: Ci vediamo! (nos vemos), Ci sentiamo! (hablamos), Ci vediamo dopo."
+      ],
+      "examples": [
+        { "target": "Stamattina mi sono svegliata tardi.", "es": "Hoy a la mañana me desperté tarde." },
+        { "target": "Ci siamo conosciuti all'università.", "es": "Nos conocimos en la facultad." },
+        { "target": "Ci sentiamo domani, va bene?", "es": "Hablamos mañana, ¿dale?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mi ho alzato presto.", "right": "Mi sono alzato presto.", "why": "Los reflexivos usan essere en el passato prossimo, aunque en español digamos 'me he levantado'." },
+        { "wrong": "Ci siamo divertito.", "right": "Ci siamo divertiti.", "why": "Con essere el participio concuerda con el sujeto: noi → divertiti." }
+      ]
+    },
+    {
+      "id": "comparativi",
+      "day": 3,
+      "title": "Più, meno y tanto quanto",
+      "goal": "Comparar con più, meno, tanto … quanto y così … come.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Superioridad e inferioridad: più o meno + adjetivo + di: Roma è più grande di Firenze. Luca è meno alto di me.",
+        "Di se contrae con el artículo: più alto del padre, più cara della pizza.",
+        "Se usa che cuando comparás dos adjetivos, dos verbos, dos cantidades o dos complementos con preposición: È più bello che utile. Bevo più tè che caffè. Fa più caldo a Roma che a Milano.",
+        "Igualdad: (tanto) … quanto o (così) … come: Marta è alta quanto me / come me."
+      ],
+      "examples": [
+        { "target": "Il treno è più comodo dell'autobus.", "es": "El tren es más cómodo que el colectivo." },
+        { "target": "Il mio telefono è meno caro del tuo.", "es": "Mi celular es menos caro que el tuyo." },
+        { "target": "Mi piace più il mare che la montagna.", "es": "Me gusta más el mar que la montaña." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Roma è più grande che Milano.", "right": "Roma è più grande di Milano.", "why": "Cuando comparás dos personas o cosas en una cualidad, el 'que' del español se dice di." },
+        { "wrong": "Luca è più alto che io.", "right": "Luca è più alto di me.", "why": "Después de di van me, te, lui, lei: di me, di te." }
+      ]
+    },
+    {
+      "id": "migliore-superlativo",
+      "day": 4,
+      "title": "Migliore, meglio y -issimo",
+      "goal": "Usar los comparativos irregulares y los superlativos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "buono → migliore (mejor), cattivo → peggiore (peor), grande → maggiore (mayor), piccolo → minore (menor): mio fratello maggiore.",
+        "Migliore y peggiore son adjetivos (un ristorante migliore); meglio y peggio son adverbios y acompañan a un verbo (cucina meglio, sto peggio).",
+        "Superlativo relativo: il/la più + adjetivo + di: È la città più bella d'Italia.",
+        "Superlativo absoluto con -issimo: bello → bellissimo, buono → buonissimo, facile → facilissimo. Equivale a molto bello."
+      ],
+      "examples": [
+        { "target": "Questa pizza è la migliore della città.", "es": "Esta pizza es la mejor de la ciudad." },
+        { "target": "Oggi sto meglio, grazie.", "es": "Hoy estoy mejor, gracias." },
+        { "target": "Il panorama è bellissimo!", "es": "¡El paisaje es hermosísimo!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Questo vino è più migliore.", "right": "Questo vino è migliore.", "why": "Migliore ya significa 'más bueno': no lleva più, igual que en español no decimos 'más mejor'." },
+        { "wrong": "Marco cucina migliore di me.", "right": "Marco cucina meglio di me.", "why": "Con un verbo se usa el adverbio meglio, no el adjetivo migliore." }
+      ]
+    },
+    {
+      "id": "confrontare-citta",
+      "day": 5,
+      "title": "Comparar ciudades",
+      "goal": "Comprender y escribir un texto que compara dos ciudades.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combiná comparativos y superlativos: Milano è più cara di Napoli, ma Napoli è più vivace.",
+        "Vocabulario: caro / economico (barato), tranquillo / caotico, vivace (animado), pulito / sporco, i mezzi pubblici (el transporte público).",
+        "Para opinar: Secondo me…, Preferisco…, Mi trovo meglio a… (me siento más cómodo en…)."
+      ],
+      "examples": [
+        { "target": "Secondo me, Bologna è più vivibile di Milano.", "es": "Para mí, Bolonia es más vivible que Milán." },
+        { "target": "Buenos Aires è molto più grande di Roma.", "es": "Buenos Aires es mucho más grande que Roma." },
+        { "target": "A Napoli il caffè è buonissimo e costa pochissimo.", "es": "En Nápoles el café es buenísimo y cuesta poquísimo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "A Napoli la vita è più barata.", "right": "A Napoli la vita è più economica.", "why": "Barato no existe en italiano: se dice economico o, con un verbo, costa poco." }
+      ]
+    }
+  ]
+}

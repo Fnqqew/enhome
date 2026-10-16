@@ -1,0 +1,127 @@
+{
+  "id": "it-a1-presente",
+  "level": "A1",
+  "order": 3,
+  "title": "Presente regular",
+  "targetTitle": "Il presente",
+  "description": "El presente de los verbos regulares en -are, -ere e -ire, para hablar de lo que hacés todos los días, hacer preguntas y contar tu rutina.",
+  "objectives": [
+    "Conjugar los verbos regulares en -are, -ere e -ire",
+    "Reconocer los verbos en -ire que agregan -isc-",
+    "Negar con non y hacer preguntas con chi, che cosa, dove, quando, come y perché",
+    "Contar tu rutina diaria"
+  ],
+  "prerequisites": ["it-a1-essere-avere"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "verbi-are",
+      "day": 1,
+      "title": "Verbos en -are",
+      "goal": "Conjugar los verbos regulares en -are, el grupo más grande.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "parlare: parlo, parli, parla, parliamo, parlate, parlano.",
+        "En loro el acento cae en la misma sílaba que en io: PARlo, PARlano. No digas parLAno.",
+        "Los verbos en -care y -gare agregan h para mantener el sonido duro: cercare → cerchi, cerchiamo; pagare → paghi, paghiamo.",
+        "Los verbos en -iare no repiten la i: mangiare → mangi, mangiamo; studiare → studi, studiamo."
+      ],
+      "examples": [
+        { "target": "Lavoro in una banca.", "es": "Trabajo en un banco." },
+        { "target": "Parli italiano?", "es": "¿Hablás italiano?" },
+        { "target": "La sera guardiamo un film.", "es": "A la noche miramos una película." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Tu cerci un lavoro?", "right": "Tu cerchi un lavoro?", "why": "Para mantener el sonido de la c dura se agrega h: cerchi, cerchiamo." },
+        { "wrong": "Mangiiamo alle nove.", "right": "Mangiamo alle nove.", "why": "Los verbos en -iare no repiten la i: mangiamo, studiamo." }
+      ]
+    },
+    {
+      "id": "verbi-ere-ire",
+      "day": 2,
+      "title": "Verbos en -ere e -ire",
+      "goal": "Conjugar los verbos en -ere e -ire, incluidos los que agregan -isc-.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "prendere: prendo, prendi, prende, prendiamo, prendete, prendono.",
+        "dormire: dormo, dormi, dorme, dormiamo, dormite, dormono. Respecto de -ere, solo cambia la forma de voi: prendete / dormite.",
+        "Muchos verbos en -ire agregan -isc- en todas las personas menos noi y voi: capire → capisco, capisci, capisce, capiamo, capite, capiscono.",
+        "Como capire: finire, preferire, pulire, spedire. Como dormire: partire, aprire, sentire, offrire."
+      ],
+      "examples": [
+        { "target": "Prendo un caffè, grazie.", "es": "Tomo un café, gracias." },
+        { "target": "Scusa, non capisco.", "es": "Perdón, no entiendo." },
+        { "target": "A che ora finisci di lavorare?", "es": "¿A qué hora terminás de trabajar?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Io capiso.", "right": "Io capisco.", "why": "Capire agrega -isc- y se escribe con sc: capisco, capisci, capisce." },
+        { "wrong": "Noi capisciamo.", "right": "Noi capiamo.", "why": "En noi y voi no va -isc-: capiamo, capite." }
+      ]
+    },
+    {
+      "id": "negazione-domande",
+      "day": 3,
+      "title": "Negación y preguntas",
+      "goal": "Negar con non y formar preguntas con y sin palabras interrogativas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Non va siempre antes del verbo: Non parlo tedesco. El no suelto es solo para responder: No, grazie.",
+        "Las preguntas de sí o no no cambian el orden: Abiti qui? Se nota por la entonación.",
+        "Interrogativos: chi (quién), che cosa o cosa (qué), dove, quando, come, quanto, quale (cuál), perché.",
+        "Perché sirve para preguntar (¿por qué?) y para responder (porque). Y qual è se escribe sin apóstrofo."
+      ],
+      "examples": [
+        { "target": "Dove abiti?", "es": "¿Dónde vivís?" },
+        { "target": "Che cosa studi? — Studio medicina.", "es": "¿Qué estudiás? — Estudio medicina." },
+        { "target": "Perché impari l'italiano? — Perché amo l'Italia.", "es": "¿Por qué aprendés italiano? — Porque amo Italia." }
+      ],
+      "commonMistakes": [
+        { "wrong": "No parlo francese.", "right": "Non parlo francese.", "why": "Delante del verbo la negación es non; no se usa solo como respuesta." },
+        { "wrong": "Qual'è il tuo numero?", "right": "Qual è il tuo numero?", "why": "Qual è se escribe sin apóstrofo, aunque muchos italianos también se equivocan." }
+      ]
+    },
+    {
+      "id": "routine-frequenza",
+      "day": 4,
+      "title": "Rutina, horarios y frecuencia",
+      "goal": "Decir a qué hora y con qué frecuencia hacés las cosas.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "La hora: Che ore sono? — Sono le otto. È l'una. È mezzogiorno. Para 'a las': alle otto, all'una, a mezzogiorno.",
+        "Frecuencia: sempre, spesso (seguido), di solito (por lo general), a volte, qualche volta, non… mai.",
+        "Mai (nunca) va con non antes del verbo: Non bevo mai caffè.",
+        "Con los días de la semana, el artículo indica costumbre: il sabato (los sábados) / sabato (este sábado)."
+      ],
+      "examples": [
+        { "target": "Di solito pranzo all'una.", "es": "Por lo general almuerzo a la una." },
+        { "target": "Il lunedì lavoro fino a tardi.", "es": "Los lunes trabajo hasta tarde." },
+        { "target": "Non guardo mai la televisione.", "es": "Nunca miro televisión." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mai bevo caffè.", "right": "Non bevo mai caffè.", "why": "En italiano lo normal es non antes del verbo y mai después: la doble negación es obligatoria." },
+        { "wrong": "Sono le una.", "right": "È l'una.", "why": "La una es singular: è l'una. Las demás horas van en plural: sono le due, sono le tre." }
+      ]
+    },
+    {
+      "id": "la-mia-giornata",
+      "day": 5,
+      "title": "Mi día",
+      "goal": "Comprender y escribir un texto sobre tu rutina.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Conectores de secuencia: prima, poi, dopo, più tardi, alla fine.",
+        "Comidas: la colazione (desayuno), il pranzo (almuerzo), la cena. Los verbos: fare colazione, pranzare, cenare.",
+        "Usá el presente para lo habitual y marcá los momentos del día: la mattina, il pomeriggio, la sera, di notte."
+      ],
+      "examples": [
+        { "target": "La mattina prendo un caffè e poi comincio a lavorare.", "es": "A la mañana tomo un café y después empiezo a trabajar." },
+        { "target": "Pranzo con i colleghi in un bar vicino all'ufficio.", "es": "Almuerzo con mis compañeros en un bar cerca de la oficina." },
+        { "target": "La sera ceno e leggo un po'.", "es": "A la noche ceno y leo un poco." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Desayuno alle otto.", "right": "Faccio colazione alle otto.", "why": "Desayunar se dice fare colazione; almorzar es pranzare y cenar, cenare." },
+        { "wrong": "Comincio lavorare alle nove.", "right": "Comincio a lavorare alle nove.", "why": "Cominciare va con a antes del infinitivo, como 'empezar a'. Finire va con di: finisco di lavorare." }
+      ]
+    }
+  ]
+}

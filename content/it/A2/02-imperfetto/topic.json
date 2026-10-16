@@ -1,0 +1,126 @@
+{
+  "id": "it-a2-imperfetto",
+  "level": "A2",
+  "order": 2,
+  "title": "Imperfecto",
+  "targetTitle": "L'imperfetto",
+  "description": "El pasado de las descripciones y los hábitos: cómo era tu barrio, qué hacías de chico, qué estaba pasando cuando ocurrió algo. Funciona casi igual que el pretérito imperfecto del español.",
+  "objectives": [
+    "Conjugar el imperfetto regular y sus pocos irregulares",
+    "Describir personas, lugares y situaciones del pasado",
+    "Hablar de hábitos y de acciones en curso en el pasado",
+    "Combinar imperfetto y passato prossimo para narrar",
+    "Escribir un recuerdo de infancia"
+  ],
+  "prerequisites": ["it-a2-passato-prossimo"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "imperfetto-forme",
+      "day": 1,
+      "title": "Formación",
+      "goal": "Conjugar el imperfetto de los verbos regulares.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se saca -re al infinitivo y se agrega -vo, -vi, -va, -vamo, -vate, -vano: parla-vo, legge-vo, dormi-vo.",
+        "Es muy regular: capire hace capivo, sin -isc-, y avere, andare, stare y venire también son regulares (avevo, andavo, stavo, venivo).",
+        "A diferencia del español, io y lui no son iguales: io parlavo, lui parlava.",
+        "En loro el acento va en la sílaba anterior a -va-: parLAvano, dorMIvano."
+      ],
+      "examples": [
+        { "target": "Da piccolo abitavo a Córdoba.", "es": "De chico vivía en Córdoba." },
+        { "target": "Mia nonna cucinava benissimo.", "es": "Mi abuela cocinaba buenísimo." },
+        { "target": "Dormivamo sempre con la finestra aperta.", "es": "Dormíamos siempre con la ventana abierta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Io parlava molto.", "right": "Io parlavo molto.", "why": "En italiano la primera persona termina en -vo y la tercera en -va. En español son iguales ('yo hablaba, él hablaba'), por eso se confunden." },
+        { "wrong": "Non capiscevo niente.", "right": "Non capivo niente.", "why": "El -isc- de capire solo aparece en el presente." }
+      ]
+    },
+    {
+      "id": "imperfetto-irregolari",
+      "day": 2,
+      "title": "Irregulares",
+      "goal": "Usar essere, fare, dire y bere en imperfetto.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "essere: ero, eri, era, eravamo, eravate, erano.",
+        "fare, dire y bere usan una raíz más larga: facevo, dicevo, bevevo.",
+        "'Había' se dice c'era con singular y c'erano con plural.",
+        "El tiempo atmosférico va con fare: faceva caldo, faceva freddo."
+      ],
+      "examples": [
+        { "target": "Quando ero bambino, ero molto timido.", "es": "Cuando era chico, era muy tímido." },
+        { "target": "Faceva freddo e non c'era nessuno in strada.", "es": "Hacía frío y no había nadie en la calle." },
+        { "target": "Mio nonno diceva sempre la stessa cosa.", "es": "Mi abuelo siempre decía lo mismo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Favo i compiti.", "right": "Facevo i compiti.", "why": "Fare usa la raíz face-: facevo, facevi, faceva." },
+        { "wrong": "C'era tanti bambini.", "right": "C'erano tanti bambini.", "why": "Igual que c'è y ci sono, en plural se usa c'erano." }
+      ]
+    },
+    {
+      "id": "usi-imperfetto",
+      "day": 3,
+      "title": "Descripciones, hábitos y acciones en curso",
+      "goal": "Usar el imperfetto para describir, para lo habitual y para lo que estaba pasando.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Descripción: aspecto, carácter, edad, hora y clima en el pasado: Era alta e aveva i capelli ricci. Erano le dieci.",
+        "Hábitos, lo que hacías siempre o seguido: Ogni estate andavamo al mare. Marcadores: di solito, sempre, ogni giorno, da bambino, a quei tempi.",
+        "Acción en curso: Mentre cucinavo, ascoltavo la radio. También stavo + gerundio: Stavo dormendo.",
+        "Una volta puede ser 'una vez' o 'antes, en otra época': Una volta qui c'era un cinema."
+      ],
+      "examples": [
+        { "target": "Ogni domenica andavamo a pranzo dai nonni.", "es": "Todos los domingos íbamos a almorzar a lo de los abuelos." },
+        { "target": "Mentre studiavo, mio fratello giocava ai videogiochi.", "es": "Mientras yo estudiaba, mi hermano jugaba a los videojuegos." },
+        { "target": "Una volta qui c'era un cinema.", "es": "Antes acá había un cine." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Da bambino ho giocato sempre a calcio.", "right": "Da bambino giocavo sempre a calcio.", "why": "Un hábito del pasado va en imperfetto, como 'jugaba' en español." }
+      ]
+    },
+    {
+      "id": "imperfetto-passato",
+      "day": 4,
+      "title": "Imperfetto y passato prossimo juntos",
+      "goal": "Combinar los dos pasados para contar una historia.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "El imperfetto pinta el fondo (cómo era todo, qué estaba pasando); el passato prossimo cuenta los hechos (qué pasó).",
+        "Mentre + imperfetto para lo que estaba en curso; quando + passato prossimo para lo que lo interrumpió: Mentre guardavo la TV, è arrivato Marco.",
+        "Un período cerrado va con passato prossimo, aunque sea largo: Ho abitato a Roma per due anni.",
+        "El criterio es el mismo que en español: 'llovía' → pioveva; 'llovió' → è piovuto o ha piovuto."
+      ],
+      "examples": [
+        { "target": "Dormivo quando è arrivato il tuo messaggio.", "es": "Dormía cuando llegó tu mensaje." },
+        { "target": "Stavamo cenando quando è andata via la luce.", "es": "Estábamos cenando cuando se cortó la luz." },
+        { "target": "Ho abitato a Torino per cinque anni.", "es": "Viví en Turín cinco años." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mentre ho cucinato, è arrivato Luca.", "right": "Mentre cucinavo, è arrivato Luca.", "why": "La acción que estaba en curso, de fondo, va en imperfetto." },
+        { "wrong": "Ero a Roma per due anni.", "right": "Sono stato a Roma per due anni.", "why": "Con un período cerrado (per due anni) se usa el passato prossimo, como 'estuve dos años' en español." }
+      ]
+    },
+    {
+      "id": "ricordi-infanzia",
+      "day": 5,
+      "title": "Recuerdos de infancia",
+      "goal": "Comprender y escribir un recuerdo de tu infancia.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Empezá con el marco: Quando ero piccolo/a…, Da bambino/a…, A quei tempi…",
+        "Usá el imperfetto para cómo era todo y el passato prossimo para el hecho especial: Un giorno…, Una volta…",
+        "Ojo: il paese es el país y también el pueblo. Y tocar un instrumento es suonare, no toccare."
+      ],
+      "examples": [
+        { "target": "Quando ero piccola, abitavo in un paese vicino a Rosario.", "es": "Cuando era chica, vivía en un pueblo cerca de Rosario." },
+        { "target": "D'estate giocavamo a calcio fino a tardi.", "es": "En verano jugábamos al fútbol hasta tarde." },
+        { "target": "Un giorno mio padre mi ha regalato una bicicletta.", "es": "Un día mi papá me regaló una bicicleta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Toccavo la chitarra.", "right": "Suonavo la chitarra.", "why": "Tocar un instrumento es suonare; toccare es tocar con la mano." }
+      ]
+    }
+  ]
+}

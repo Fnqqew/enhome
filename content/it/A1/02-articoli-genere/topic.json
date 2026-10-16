@@ -1,0 +1,127 @@
+{
+  "id": "it-a1-articoli-genere",
+  "level": "A1",
+  "order": 2,
+  "title": "Artículos, género y plural",
+  "targetTitle": "Articoli, genere e plurale",
+  "description": "El italiano tiene más artículos que el español y cuál usar depende de la letra con la que empieza la palabra. Además, el plural no se forma con -s sino cambiando la vocal final.",
+  "objectives": [
+    "Elegir el artículo definido correcto: il, lo, la, l', i, gli, le",
+    "Usar los indefinidos un, uno, una y un'",
+    "Formar el plural de sustantivos y adjetivos",
+    "Describir un lugar con adjetivos que concuerdan"
+  ],
+  "prerequisites": ["it-a1-essere-avere"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "articolo-determinativo",
+      "day": 1,
+      "title": "El artículo definido",
+      "goal": "Elegir entre il, lo, la, l', i, gli y le según el género y la primera letra de la palabra.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Masculino singular: il ante consonante (il libro), lo ante s + consonante, z, gn y ps (lo studente, lo zaino), l' ante vocal (l'amico).",
+        "Femenino singular: la ante consonante (la casa) y l' ante vocal (l'amica).",
+        "Plural: il → i (i libri); lo y l' masculino → gli (gli studenti, gli amici); la y l' femenino → le (le case, le amiche).",
+        "El artículo se elige por la palabra que viene justo después: lo studente, pero il bravo studente."
+      ],
+      "examples": [
+        { "target": "Il ragazzo e la ragazza sono amici.", "es": "El chico y la chica son amigos." },
+        { "target": "Lo zaino è qui.", "es": "La mochila está acá." },
+        { "target": "Gli studenti sono in aula.", "es": "Los estudiantes están en el aula." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il studente", "right": "Lo studente", "why": "Ante s + consonante (st, sp, sc…) y ante z, el masculino usa lo." },
+        { "wrong": "I amici", "right": "Gli amici", "why": "Ante vocal, el plural masculino es gli." }
+      ]
+    },
+    {
+      "id": "articolo-indeterminativo",
+      "day": 2,
+      "title": "El artículo indefinido",
+      "goal": "Usar un, uno, una y un' según el género y la primera letra de la palabra.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Masculino: un (un libro, un amico) y uno ante s + consonante, z, gn y ps (uno studente, uno zio).",
+        "Femenino: una ante consonante (una casa) y un' ante vocal (un'amica).",
+        "El apóstrofo va solo en femenino, porque un' es una forma corta de una: un amico, pero un'amica.",
+        "Para 'unos' o 'unas' se usan dei, degli y delle: dei libri, degli amici, delle amiche."
+      ],
+      "examples": [
+        { "target": "Ho un fratello e una sorella.", "es": "Tengo un hermano y una hermana." },
+        { "target": "C'è uno studente spagnolo in classe.", "es": "Hay un estudiante español en la clase." },
+        { "target": "Giulia è un'amica di Paola.", "es": "Giulia es una amiga de Paola." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Un'amico", "right": "Un amico", "why": "El apóstrofo solo va en femenino (un'amica). En masculino, un ya termina en consonante." },
+        { "wrong": "Un zaino", "right": "Uno zaino", "why": "Ante z y ante s + consonante, el masculino usa uno, igual que el definido usa lo." }
+      ]
+    },
+    {
+      "id": "genere-plurale",
+      "day": 3,
+      "title": "Género y plural de los sustantivos",
+      "goal": "Reconocer el género de los sustantivos y formar el plural sin -s.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "El plural cambia la vocal final: -o → -i (il libro → i libri), -a → -e (la casa → le case), -e → -i (il fiore → i fiori, la chiave → le chiavi).",
+        "Las palabras en -e pueden ser masculinas o femeninas: il pane, la notte. Conviene aprenderlas con el artículo.",
+        "No cambian en plural las que terminan con acento (la città → le città), las de una sílaba (il re → i re) y las extranjeras (il bar → i bar, il film → i film).",
+        "Ojo con el género: il latte (la leche), il fiore (la flor), il sale (la sal), il miele (la miel), il sangue (la sangre)."
+      ],
+      "examples": [
+        { "target": "Il latte è freddo.", "es": "La leche está fría." },
+        { "target": "Le città italiane sono molto antiche.", "es": "Las ciudades italianas son muy antiguas." },
+        { "target": "Ho due chiavi e tre libri.", "es": "Tengo dos llaves y tres libros." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Due cappuccinos, per favore.", "right": "Due cappuccini, per favore.", "why": "El plural italiano no usa -s: -o pasa a -i." },
+        { "wrong": "La latte", "right": "Il latte", "why": "Latte es masculino en italiano, aunque en español digamos 'la leche'." }
+      ]
+    },
+    {
+      "id": "aggettivi",
+      "day": 4,
+      "title": "Los adjetivos",
+      "goal": "Hacer concordar los adjetivos con el sustantivo en género y número.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Los adjetivos en -o tienen cuatro formas: alto, alta, alti, alte.",
+        "Los adjetivos en -e tienen dos: grande para masculino y femenino, grandi para el plural: una casa grande, due case grandi.",
+        "En general van después del sustantivo: un ragazzo simpatico. Algunos muy comunes pueden ir antes: un bel posto, una brava persona, un buon caffè.",
+        "Molto delante de un adjetivo no cambia (sono molto belle); delante de un sustantivo concuerda (molte persone, molti amici)."
+      ],
+      "examples": [
+        { "target": "Giulia è alta e simpatica.", "es": "Giulia es alta y simpática." },
+        { "target": "I ragazzi sono molto gentili.", "es": "Los chicos son muy amables." },
+        { "target": "Firenze è una città molto bella.", "es": "Florencia es una ciudad muy linda." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le case sono grande.", "right": "Le case sono grandi.", "why": "Los adjetivos en -e también cambian en plural: grande → grandi." },
+        { "wrong": "Ci sono molto persone.", "right": "Ci sono molte persone.", "why": "Delante de un sustantivo, molto concuerda como un adjetivo: molti, molta, molte." }
+      ]
+    },
+    {
+      "id": "descrivere-luogo",
+      "day": 5,
+      "title": "Describir un lugar",
+      "goal": "Comprender y escribir la descripción de un barrio o una casa.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combiná c'è y ci sono con artículos indefinidos y adjetivos: C'è un parco grande. Ci sono dei negozi carini.",
+        "Vocabulario: il quartiere (el barrio), la piazza, il negozio, il supermercato, la fermata dell'autobus, l'appartamento (el departamento).",
+        "Para valorar: è tranquillo, è rumoroso (ruidoso), è carino (lindo), è comodo."
+      ],
+      "examples": [
+        { "target": "Abito in un quartiere tranquillo.", "es": "Vivo en un barrio tranquilo." },
+        { "target": "Ci sono due supermercati e un parco con molti alberi.", "es": "Hay dos supermercados y un parque con muchos árboles." },
+        { "target": "L'appartamento è piccolo ma luminoso.", "es": "El departamento es chico pero luminoso." }
+      ],
+      "commonMistakes": [
+        { "wrong": "La casa è molto bonita.", "right": "La casa è molto bella.", "why": "Bonito no existe en italiano: se dice bello, bella o carino, carina." },
+        { "wrong": "Ci sono molti negozios.", "right": "Ci sono molti negozi.", "why": "El plural no lleva -s: negozio → negozi." }
+      ]
+    }
+  ]
+}

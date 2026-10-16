@@ -1,0 +1,133 @@
+{
+  "id": "fr-a2-futur-conditionnel",
+  "level": "A2",
+  "order": 5,
+  "title": "Futuro, condicional e imperativo",
+  "targetTitle": "Futur simple, conditionnel et impératif",
+  "description": "Las formas para prometer y predecir, pedir con cortesía, imaginar y dar instrucciones o consejos.",
+  "objectives": [
+    "Formar el futur simple y sus irregulares más frecuentes",
+    "Hablar de condiciones reales con si + presente + futuro",
+    "Pedir con cortesía y aconsejar con el conditionnel",
+    "Dar instrucciones con el imperativo",
+    "Escribir consejos para alguien que viaja a Francia"
+  ],
+  "prerequisites": ["fr-a1-possessifs-futur-proche", "fr-a2-imparfait", "fr-a2-pronoms"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "futur-simple",
+      "day": 1,
+      "title": "Futur simple",
+      "goal": "Formar el futuro simple y saber cuándo se usa.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Infinitivo + -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu parleras, il parlera, nous parlerons, vous parlerez, ils parleront.",
+        "Las terminaciones son casi el presente de avoir: ai, as, a, (av)ons, (av)ez, ont.",
+        "Los verbos en -re pierden la e final: prendre → je prendrai, boire → je boirai.",
+        "En la charla, para lo inmediato se prefiere aller + infinitivo; el futur simple aparece en promesas, pronósticos y planes más lejanos."
+      ],
+      "examples": [
+        { "target": "Je t'appellerai demain.", "es": "Mañana te llamo." },
+        { "target": "Le train partira à dix heures.", "es": "El tren saldrá a las diez." },
+        { "target": "Nous finirons le projet en juin.", "es": "Vamos a terminar el proyecto en junio." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je prendreai le bus.", "right": "Je prendrai le bus.", "why": "Los verbos en -re pierden la e antes de la terminación: prendr- + ai." },
+        { "wrong": "Demain, je te téléphonerais.", "right": "Demain, je te téléphonerai.", "why": "El futuro termina en -ai; con -ais es condicional. Suenan casi igual, pero no significan lo mismo." }
+      ]
+    },
+    {
+      "id": "futur-irreguliers-si",
+      "day": 2,
+      "title": "Irregulares y si + presente",
+      "goal": "Usar los futuros irregulares y expresar condiciones reales.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Raíces irregulares: être → ser-, avoir → aur-, aller → ir-, faire → fer-: je serai, j'aurai, j'irai, je ferai.",
+        "Otras: venir → viendr-, pouvoir → pourr-, vouloir → voudr-, voir → verr-, devoir → devr-, savoir → saur-.",
+        "Para una condición real: si + presente, futuro: S'il fait beau, nous irons à la plage.",
+        "Después de si nunca va futuro, igual que en español: Si tu viens ('si venís'), no si tu viendras.",
+        "Si se apostrofa solo delante de il e ils: s'il, s'ils, pero si elle."
+      ],
+      "examples": [
+        { "target": "L'année prochaine, j'irai au Canada.", "es": "El año que viene voy a ir a Canadá." },
+        { "target": "S'il pleut, on restera à la maison.", "es": "Si llueve, nos vamos a quedar en casa." },
+        { "target": "Je serai là à huit heures.", "es": "Voy a estar ahí a las ocho." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'allerai à Paris.", "right": "J'irai à Paris.", "why": "Aller tiene raíz irregular en futuro: ir-." },
+        { "wrong": "Si tu viendras, on mangera ensemble.", "right": "Si tu viens, on mangera ensemble.", "why": "Después de si va presente, como en español 'si venís'." },
+        { "wrong": "Si il fait beau, on sort.", "right": "S'il fait beau, on sort.", "why": "Si delante de il se apostrofa: s'il." }
+      ]
+    },
+    {
+      "id": "conditionnel",
+      "day": 3,
+      "title": "Conditionnel",
+      "goal": "Pedir con cortesía, aconsejar e imaginar con el conditionnel.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Raíz del futuro + terminaciones del imparfait (-ais, -ais, -ait, -ions, -iez, -aient): je voudrais, tu pourrais, il serait, nous aimerions.",
+        "Para pedir con cortesía: Je voudrais un café (quisiera), J'aimerais réserver…, Pourriez-vous m'aider ? (¿Podría ayudarme?)",
+        "Para aconsejar: Tu devrais te reposer (deberías). À ta place, je partirais tôt (yo en tu lugar…).",
+        "Para imaginar: si + imparfait, conditionnel: Si j'avais le temps, je voyagerais plus.",
+        "En un negocio, je veux suena exigente: usá je voudrais."
+      ],
+      "examples": [
+        { "target": "Bonjour, je voudrais réserver une table pour deux.", "es": "Buenas, quisiera reservar una mesa para dos." },
+        { "target": "Pourriez-vous parler plus lentement ?", "es": "¿Podría hablar más despacio?" },
+        { "target": "Tu devrais appeler ta mère.", "es": "Deberías llamar a tu mamá." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je veux un café (al mozo).", "right": "Je voudrais un café, s'il vous plaît.", "why": "Je veux suena a orden; para pedir se usa el conditionnel je voudrais." },
+        { "wrong": "Si j'aurais le temps, je voyagerais.", "right": "Si j'avais le temps, je voyagerais.", "why": "Después de si nunca va condicional: va imparfait, como 'si tuviera' y no 'si tendría'." }
+      ]
+    },
+    {
+      "id": "imperatif",
+      "day": 4,
+      "title": "Imperativo",
+      "goal": "Dar instrucciones, consejos y prohibiciones con el imperativo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se usa el presente de tu, nous y vous sin el pronombre: Viens ! Allons-y ! Venez !",
+        "Los verbos en -er, y también aller, pierden la -s en la forma de tu: Tu regardes → Regarde ! Tu vas → Va !",
+        "Irregulares: être → sois, soyons, soyez; avoir → aie, ayons, ayez.",
+        "La negación rodea al verbo: Ne parle pas ! N'oubliez pas votre passeport.",
+        "En el afirmativo, el pronombre va después, con guion, y me se vuelve moi: Aide-moi ! Dis-lui. En el negativo vuelve adelante: Ne me dis pas ça."
+      ],
+      "examples": [
+        { "target": "Tournez à droite, puis continuez tout droit.", "es": "Doble a la derecha y después siga derecho." },
+        { "target": "N'oublie pas ton parapluie !", "es": "¡No te olvides el paraguas!" },
+        { "target": "Attends-moi devant la gare.", "es": "Esperame frente a la estación." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Parles plus fort !", "right": "Parle plus fort !", "why": "En el imperativo de tu, los verbos en -er pierden la -s." },
+        { "wrong": "Me aide !", "right": "Aide-moi !", "why": "En el imperativo afirmativo el pronombre va después del verbo, y me se vuelve moi." }
+      ]
+    },
+    {
+      "id": "conseils-voyage",
+      "day": 5,
+      "title": "Consejos para un viaje",
+      "goal": "Comprender y escribir consejos para alguien que viaja.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Combiná imperativo, condicional y futuro: Prends le métro. À ta place, je partirais en mai. Tu adoreras !",
+        "Para aconsejar: Tu devrais…, Il vaut mieux… (es mejor…), À ta place, je…, N'oublie pas de…",
+        "Para condiciones: Si tu as le temps, va voir… / Si tu vas à Paris, tu verras…",
+        "Después de il vaut mieux el infinitivo va directo; después de n'oublie pas va de: Il vaut mieux réserver. N'oublie pas de réserver."
+      ],
+      "examples": [
+        { "target": "Si tu vas à Paris en hiver, prends un bon manteau.", "es": "Si vas a París en invierno, llevate un buen abrigo." },
+        { "target": "Il vaut mieux acheter les billets à l'avance.", "es": "Es mejor comprar las entradas con anticipación." },
+        { "target": "À ta place, je visiterais aussi Montmartre.", "es": "Yo en tu lugar también visitaría Montmartre." }
+      ],
+      "commonMistakes": [
+        { "wrong": "N'oublie pas prendre ton passeport.", "right": "N'oublie pas de prendre ton passeport.", "why": "Oublier va con de delante de un infinitivo, como 'olvidarse de'." },
+        { "wrong": "Il vaut mieux de réserver.", "right": "Il vaut mieux réserver.", "why": "Después de il vaut mieux el infinitivo va directo, sin de." }
+      ]
+    }
+  ]
+}

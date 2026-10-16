@@ -1,0 +1,132 @@
+{
+  "id": "fr-a1-present",
+  "level": "A1",
+  "order": 3,
+  "title": "Presente, aller y faire",
+  "targetTitle": "Le présent",
+  "description": "El presente de los verbos en -er, que son la gran mayoría, y de cuatro irregulares que vas a usar todo el tiempo: aller, faire, prendre y venir. Con ellos ya podés contar tu rutina.",
+  "objectives": [
+    "Conjugar los verbos regulares en -er",
+    "Pronunciar el presente sin hacer sonar las terminaciones mudas",
+    "Usar aller, faire, prendre y venir",
+    "Describir tu rutina diaria"
+  ],
+  "prerequisites": ["fr-a1-etre-avoir"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "verbes-er",
+      "day": 1,
+      "title": "Verbos en -er",
+      "goal": "Conjugar los verbos regulares en -er en presente.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se saca -er y se agrega -e, -es, -e, -ons, -ez, -ent: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+        "El presente también sirve para lo que está pasando ahora: je parle = hablo y estoy hablando.",
+        "Delante de vocal o h muda, je se apostrofa: j'aime, j'habite, j'écoute.",
+        "Verbos frecuentes: parler, habiter, travailler, aimer, regarder, écouter, manger, chercher.",
+        "Con manger se agrega una e en nous para que la g siga sonando suave: nous mangeons."
+      ],
+      "examples": [
+        { "target": "J'habite à Buenos Aires et je travaille dans une banque.", "es": "Vivo en Buenos Aires y trabajo en un banco." },
+        { "target": "Vous parlez espagnol ?", "es": "¿Habla español?" },
+        { "target": "Nous regardons un film ce soir.", "es": "Esta noche miramos una película." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je aime le chocolat.", "right": "J'aime le chocolat.", "why": "Je delante de vocal se apostrofa: j'aime." },
+        { "wrong": "Nous mangons.", "right": "Nous mangeons.", "why": "Sin la e, la g sonaría fuerte, como en 'gato'; por eso se escribe mangeons." }
+      ]
+    },
+    {
+      "id": "prononciation",
+      "day": 2,
+      "title": "Letras mudas y pronunciación",
+      "goal": "Pronunciar el presente sin hacer sonar las terminaciones mudas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "je parle, tu parles, il parle e ils parlent suenan exactamente igual, 'parl': la -e, la -es y la -ent finales no se pronuncian.",
+        "Solo se oyen las terminaciones de nous (parlons, 'parlón', con o nasal) y de vous (parlez, 'parlé').",
+        "Por eso el pronombre es obligatorio: es lo que te dice quién hace la acción.",
+        "Si el verbo empieza con vocal, la s de nous, vous, ils y elles se liga y suena z: ils aiment ('il-zem'), vous habitez ('vu-zabité').",
+        "La -ent de los verbos nunca suena; en otras palabras sí, como vocal nasal: souvent, comment."
+      ],
+      "examples": [
+        { "target": "Ils parlent très vite.", "es": "Hablan muy rápido." },
+        { "target": "Elles aiment le cinéma.", "es": "A ellas les gusta el cine." },
+        { "target": "Tu écoutes la radio ?", "es": "¿Escuchás la radio?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ils parlent (pronunciado con -ent al final).", "right": "Ils parlent (pronunciado 'il parl', igual que il parle).", "why": "La terminación -ent de los verbos es muda." },
+        { "wrong": "Vous parlé.", "right": "Vous parlez.", "why": "Suenan igual, pero con vous la terminación se escribe -ez." }
+      ]
+    },
+    {
+      "id": "aller-faire",
+      "day": 3,
+      "title": "Aller y faire",
+      "goal": "Conjugar aller y faire y usarlos en expresiones frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "aller (ir): je vais, tu vas, il va, nous allons, vous allez, ils vont. Aunque termine en -er, es irregular.",
+        "faire (hacer): je fais, tu fais, il fait, nous faisons, vous faites, ils font. Faisons se pronuncia 'fesón'.",
+        "Aller también sirve para preguntar cómo está alguien: Comment ça va ? Comment allez-vous ?",
+        "Faire aparece en muchas expresiones: faire les courses (hacer las compras), faire du sport, faire la cuisine (cocinar), il fait beau (hace buen tiempo)."
+      ],
+      "examples": [
+        { "target": "Je vais au travail en métro.", "es": "Voy al trabajo en subte." },
+        { "target": "Le samedi, nous faisons les courses.", "es": "Los sábados hacemos las compras." },
+        { "target": "Il fait froid aujourd'hui.", "es": "Hoy hace frío." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Vous faisez.", "right": "Vous faites.", "why": "Faire es irregular: vous faites, como vous êtes." },
+        { "wrong": "Ils allent.", "right": "Ils vont.", "why": "Aller es irregular aunque termine en -er: ils vont." },
+        { "wrong": "Je vais à le cinéma.", "right": "Je vais au cinéma.", "why": "à + le se contrae en au." }
+      ]
+    },
+    {
+      "id": "prendre-venir",
+      "day": 4,
+      "title": "Prendre y venir",
+      "goal": "Conjugar prendre y venir y sus derivados.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "prendre (tomar): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+        "venir (venir): je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+        "Prendre va con transportes y comidas: prendre le bus, prendre un café, prendre le petit-déjeuner.",
+        "Venir de + lugar indica de dónde sos o de dónde venís: Je viens d'Argentine.",
+        "Como prendre se conjugan apprendre (aprender) y comprendre (entender); como venir, revenir y devenir."
+      ],
+      "examples": [
+        { "target": "Je prends le bus à huit heures.", "es": "Tomo el colectivo a las ocho." },
+        { "target": "Tu viens d'où ?", "es": "¿De dónde sos?" },
+        { "target": "Je comprends un peu le français.", "es": "Entiendo un poco de francés." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ils prendent.", "right": "Ils prennent.", "why": "En la tercera del plural, prendre pierde la d y duplica la n: prennent." },
+        { "wrong": "Je viens de Argentine.", "right": "Je viens d'Argentine.", "why": "De delante de vocal se apostrofa: d'Argentine." }
+      ]
+    },
+    {
+      "id": "ma-routine",
+      "day": 5,
+      "title": "Mi rutina",
+      "goal": "Comprender y escribir un texto sobre tu día a día.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Ordená el día: d'abord (primero), ensuite o puis (después), enfin (por último).",
+        "Momentos: le matin, l'après-midi, le soir. Con un día de la semana, le lundi = los lunes.",
+        "La hora: à sept heures, à midi, à huit heures et demie.",
+        "Je me lève (me levanto) y je me couche (me acuesto) son pronominales: por ahora, aprendelos como frases hechas."
+      ],
+      "examples": [
+        { "target": "Le matin, je me lève à sept heures et je prends un café.", "es": "A la mañana me levanto a las siete y tomo un café." },
+        { "target": "Ensuite, je vais au bureau en bus.", "es": "Después voy a la oficina en colectivo." },
+        { "target": "Le soir, je fais la cuisine et je regarde une série.", "es": "A la noche cocino y miro una serie." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je me lève à les sept heures.", "right": "Je me lève à sept heures.", "why": "Con la hora no va artículo: à sept heures (a las siete)." },
+        { "wrong": "Dans le matin, je travaille.", "right": "Le matin, je travaille.", "why": "'A la mañana' se dice simplemente le matin, sin preposición." }
+      ]
+    }
+  ]
+}

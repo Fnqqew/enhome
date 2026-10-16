@@ -1,0 +1,129 @@
+{
+  "id": "it-a1-preposizioni-possessivi",
+  "level": "A1",
+  "order": 4,
+  "title": "Preposiciones y posesivos",
+  "targetTitle": "Preposizioni articolate e possessivi",
+  "description": "En italiano las preposiciones se juntan con el artículo (del, al, nel, sul) y los posesivos llevan artículo: il mio libro. Con la familia hay una excepción importante.",
+  "objectives": [
+    "Usar las preposiciones simples di, a, da, in, su, con, per y tra",
+    "Unir di, a, da, in y su con el artículo: del, al, dal, nel, sul",
+    "Usar los posesivos con artículo, y sin artículo con la familia",
+    "Describir tu casa y tu familia"
+  ],
+  "prerequisites": ["it-a1-articoli-genere"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "preposizioni-semplici",
+      "day": 1,
+      "title": "Preposiciones simples",
+      "goal": "Elegir la preposición adecuada para origen, lugar, destino y tiempo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "di: origen y pertenencia (Sono di Rosario, il libro di Marco). a: ciudades (Abito a Roma) y la persona que recibe algo (Scrivo a Luca).",
+        "in: países, regiones y muchos lugares sin artículo (in Italia, in ufficio, in banca, in centro, in farmacia).",
+        "da: de dónde viene algo (Il treno arriva da Milano), 'en lo de' alguien (da Giulia, dal medico) y 'desde hace' con presente (Studio italiano da un anno).",
+        "su (sobre), con, per (para, por) y tra o fra (entre, y también 'dentro de' en el tiempo: tra due giorni)."
+      ],
+      "examples": [
+        { "target": "Il treno arriva da Milano alle tre.", "es": "El tren llega de Milán a las tres." },
+        { "target": "Studio italiano da sei mesi.", "es": "Estudio italiano desde hace seis meses." },
+        { "target": "Stasera ceno da Giulia.", "es": "Esta noche ceno en lo de Giulia." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Studio italiano fa sei mesi.", "right": "Studio italiano da sei mesi.", "why": "Para algo que empezó y sigue, 'hace' se dice da con el presente." },
+        { "wrong": "Lavoro a la banca.", "right": "Lavoro in banca.", "why": "Con muchos lugares (banca, farmacia, ufficio, centro, palestra) se usa in sin artículo." }
+      ]
+    },
+    {
+      "id": "di-a-da-articolo",
+      "day": 2,
+      "title": "di, a y da + artículo",
+      "goal": "Unir di, a y da con el artículo definido.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "a + il = al, a + lo = allo, a + la = alla, a + l' = all', a + i = ai, a + gli = agli, a + le = alle.",
+        "di y da siguen el mismo modelo: del, dello, della, dell', dei, degli, delle; dal, dallo, dalla, dall', dai, dagli, dalle.",
+        "Es como 'al' y 'del' en español, pero en italiano se contrae con todos los artículos, también con los femeninos y los plurales.",
+        "Del, della, dei… también significan 'algo de' o 'unos': Compro del pane e delle mele."
+      ],
+      "examples": [
+        { "target": "Torno dal lavoro alle sei.", "es": "Vuelvo del trabajo a las seis." },
+        { "target": "Le chiavi della macchina sono qui.", "es": "Las llaves del auto están acá." },
+        { "target": "Compro del pane e delle mele.", "es": "Compro pan y unas manzanas." }
+      ],
+      "commonMistakes": [
+        { "wrong": "La casa di il medico.", "right": "La casa del medico.", "why": "di + il se contrae siempre: del." },
+        { "wrong": "Arrivo a le otto.", "right": "Arrivo alle otto.", "why": "a + le se escribe todo junto y con doble l: alle." }
+      ]
+    },
+    {
+      "id": "in-su-articolo",
+      "day": 3,
+      "title": "in y su + artículo: dónde está algo",
+      "goal": "Decir dónde está algo con nel, sul y otras expresiones de lugar.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "in + artículo cambia a ne-: nel, nello, nella, nell', nei, negli, nelle.",
+        "su + artículo: sul, sullo, sulla, sull', sui, sugli, sulle.",
+        "In va sin artículo con lugares generales (in cucina, in Italia), pero con artículo si el lugar está especificado o es plural: nella cucina di Marta, negli Stati Uniti.",
+        "Expresiones de lugar: sopra, sotto, dentro, dietro, davanti a, accanto a, vicino a, lontano da.",
+        "Con y per no se contraen en el italiano de hoy: con il, per la."
+      ],
+      "examples": [
+        { "target": "Il gatto dorme sul divano.", "es": "El gato duerme en el sillón." },
+        { "target": "Il latte è nel frigo.", "es": "La leche está en la heladera." },
+        { "target": "Abito vicino alla stazione.", "es": "Vivo cerca de la estación." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il libro è in il tavolo.", "right": "Il libro è sul tavolo.", "why": "Para 'arriba de' se usa su, que se contrae: sul tavolo. In + il sería nel, es decir, 'adentro'." },
+        { "wrong": "Abito vicino la stazione.", "right": "Abito vicino alla stazione.", "why": "Vicino va con a, que se contrae con el artículo: vicino al, vicino alla." }
+      ]
+    },
+    {
+      "id": "possessivi",
+      "day": 4,
+      "title": "Los posesivos",
+      "goal": "Usar los posesivos con artículo y saber cuándo se omite.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "mio, tuo, suo, nostro, vostro y loro concuerdan con la cosa poseída: il mio libro, la mia casa, i miei amici, le mie amiche.",
+        "A diferencia del español, llevan artículo: il mio telefono (mi teléfono), la nostra città (nuestra ciudad).",
+        "Con familiares en singular no va artículo: mia madre, tuo fratello, suo marito. Sí va en plural (i miei fratelli), con diminutivos (la mia sorellina) y casi siempre con mamma y papà (la mia mamma).",
+        "Suo es 'de él', 'de ella' y también 'de usted'. Loro no cambia y siempre lleva artículo: la loro casa, il loro figlio."
+      ],
+      "examples": [
+        { "target": "Il mio appartamento è piccolo.", "es": "Mi departamento es chico." },
+        { "target": "Mia sorella abita a Torino con i suoi figli.", "es": "Mi hermana vive en Turín con sus hijos." },
+        { "target": "Dove sono le tue chiavi?", "es": "¿Dónde están tus llaves?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mio libro è qui.", "right": "Il mio libro è qui.", "why": "En italiano el posesivo lleva artículo: il mio libro, la mia borsa." },
+        { "wrong": "La mia madre è medico.", "right": "Mia madre è medico.", "why": "Con un familiar en singular y sin adjetivo no va artículo: mia madre, mio padre." }
+      ]
+    },
+    {
+      "id": "casa-famiglia",
+      "day": 5,
+      "title": "Mi casa y mi familia",
+      "goal": "Comprender y escribir un texto sobre tu casa y tu familia.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Familia: il padre, la madre, il fratello, la sorella, il marito, la moglie, il figlio, la figlia, i nonni, lo zio, la zia, il cugino, la cugina.",
+        "Ojo: i genitori son 'los padres' (papá y mamá); i parenti son 'los parientes'.",
+        "Casa: la cucina, il soggiorno (el living), la camera da letto, il bagno, il balcone.",
+        "Para decir cuántos son: Nella mia famiglia siamo in quattro."
+      ],
+      "examples": [
+        { "target": "Nella mia famiglia siamo in quattro.", "es": "En mi familia somos cuatro." },
+        { "target": "I miei genitori abitano a Salta.", "es": "Mis padres viven en Salta." },
+        { "target": "La cucina è accanto al soggiorno.", "es": "La cocina está al lado del living." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I miei parenti sono Marco e Lucia.", "right": "I miei genitori sono Marco e Lucia.", "why": "Parenti son los parientes en general; los padres son i genitori." },
+        { "wrong": "Mi moglie si chiama Ana.", "right": "Mia moglie si chiama Ana.", "why": "El posesivo concuerda: mio para masculino, mia para femenino. Mi es solo pronombre (mi chiamo)." }
+      ]
+    }
+  ]
+}

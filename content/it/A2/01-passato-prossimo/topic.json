@@ -1,0 +1,127 @@
+{
+  "id": "it-a2-passato-prossimo",
+  "level": "A2",
+  "order": 1,
+  "title": "Pasado compuesto",
+  "targetTitle": "Il passato prossimo",
+  "description": "El pasado que más se usa en italiano para contar lo que ya pasó, ayer o hace años. Se forma con avere o essere más el participio, y elegir bien el auxiliar es la clave.",
+  "objectives": [
+    "Formar el passato prossimo con avere y con essere",
+    "Hacer concordar el participio cuando el auxiliar es essere",
+    "Usar los participios irregulares más frecuentes",
+    "Ubicar acciones en el pasado con ieri, fa, già y non… ancora",
+    "Contar un fin de semana"
+  ],
+  "prerequisites": ["it-a1-essere-avere", "it-a1-presente"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "passato-avere",
+      "day": 1,
+      "title": "Con avere: participios regulares",
+      "goal": "Formar el passato prossimo de los verbos que van con avere.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Passato prossimo = presente de avere o essere + participio: ho mangiato, sono andato.",
+        "Participio regular: -are → -ato (parlato), -ere → -uto (venduto), -ire → -ito (dormito).",
+        "Con avere el participio no cambia: Ho comprato il pane. Marta ha comprato le mele.",
+        "Equivale tanto a 'compré' como a 'he comprado': en la charla de todos los días es el pasado normal."
+      ],
+      "examples": [
+        { "target": "Ieri sera ho guardato un film.", "es": "Anoche miré una película." },
+        { "target": "Abbiamo venduto la macchina.", "es": "Vendimos el auto." },
+        { "target": "Hai dormito bene?", "es": "¿Dormiste bien?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ieri parlai con Marco.", "right": "Ieri ho parlato con Marco.", "why": "Para 'hablé' se usa el passato prossimo. El passato remoto (parlai) aparece sobre todo en libros y en el sur de Italia." },
+        { "wrong": "Marta ha comprata le mele.", "right": "Marta ha comprato le mele.", "why": "Con avere el participio queda en -o y no concuerda con el objeto (salvo con los pronombres lo, la, li, le, que vas a ver más adelante)." }
+      ]
+    },
+    {
+      "id": "passato-essere",
+      "day": 2,
+      "title": "Con essere: la concordancia",
+      "goal": "Reconocer los verbos que van con essere y hacer concordar el participio.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Van con essere los verbos de movimiento y de cambio de estado que no tienen objeto directo: andare, venire, arrivare, partire, uscire, entrare, tornare, restare, nascere, morire, diventare.",
+        "También essere y stare, que comparten participio: sono stato (fui, estuve). Sono stata a Roma = estuve en Roma.",
+        "Con essere el participio concuerda con el sujeto como un adjetivo: Marco è andato, Giulia è andata, siamo andati, le ragazze sono andate.",
+        "Los verbos que pueden llevar objeto directo (comprar algo, comer algo) van con avere. Ojo: algunos sin objeto también: ho dormito, ho camminato, ho viaggiato."
+      ],
+      "examples": [
+        { "target": "Laura è arrivata alle otto.", "es": "Laura llegó a las ocho." },
+        { "target": "Siamo andati al mare in treno.", "es": "Fuimos a la playa en tren." },
+        { "target": "Sei mai stato in Sicilia?", "es": "¿Alguna vez estuviste en Sicilia?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ho andato al cinema.", "right": "Sono andato al cinema.", "why": "Andare es un verbo de movimiento y va con essere. Como en español siempre usamos 'haber', este es el error más común." },
+        { "wrong": "Maria è andato a casa.", "right": "Maria è andata a casa.", "why": "Con essere el participio concuerda con el sujeto: Maria → andata." }
+      ]
+    },
+    {
+      "id": "participi-irregolari",
+      "day": 3,
+      "title": "Participios irregulares",
+      "goal": "Usar los participios irregulares más frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "fare → fatto, dire → detto, leggere → letto, scrivere → scritto, rompere → rotto.",
+        "prendere → preso, mettere → messo, chiudere → chiuso, decidere → deciso, spendere → speso, perdere → perso.",
+        "vedere → visto, aprire → aperto, offrire → offerto, chiedere → chiesto, rispondere → risposto, bere → bevuto.",
+        "Con essere: venire → venuto, essere → stato, nascere → nato, morire → morto, rimanere → rimasto."
+      ],
+      "examples": [
+        { "target": "Che cosa hai fatto ieri?", "es": "¿Qué hiciste ayer?" },
+        { "target": "Abbiamo preso un taxi per l'aeroporto.", "es": "Tomamos un taxi al aeropuerto." },
+        { "target": "Mia nonna è nata a Bari.", "es": "Mi abuela nació en Bari." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ho fato i compiti.", "right": "Ho fatto i compiti.", "why": "Fatto lleva doble t, y se pronuncia: la consonante doble suena más larga." },
+        { "wrong": "Ho vedito Marco.", "right": "Ho visto Marco.", "why": "Vedere tiene participio irregular: visto, como en español." }
+      ]
+    },
+    {
+      "id": "marcatori-passato",
+      "day": 4,
+      "title": "Marcadores de pasado",
+      "goal": "Ubicar acciones en el pasado y hablar de lo que ya hiciste o todavía no.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "ieri, l'altro ieri, ieri sera (anoche), la settimana scorsa, il mese scorso, l'anno scorso, sabato scorso.",
+        "'Hace' + tiempo se dice con fa al final: due giorni fa (hace dos días), un anno fa.",
+        "già (ya), non… ancora (todavía no), appena (recién) y mai (alguna vez, nunca) van entre el auxiliar y el participio: Ho già mangiato. Non ho ancora finito. Sono appena arrivato."
+      ],
+      "examples": [
+        { "target": "Ho cambiato casa tre mesi fa.", "es": "Me mudé hace tres meses." },
+        { "target": "Hai già prenotato l'albergo?", "es": "¿Ya reservaste el hotel?" },
+        { "target": "Non ho ancora chiamato Giulia.", "es": "Todavía no la llamé a Giulia." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Fa due giorni sono arrivato.", "right": "Sono arrivato due giorni fa.", "why": "Fa va después de la cantidad de tiempo: due giorni fa." },
+        { "wrong": "Ho visto già il film.", "right": "Ho già visto il film.", "why": "Già va entre el auxiliar y el participio." }
+      ]
+    },
+    {
+      "id": "raccontare-weekend",
+      "day": 5,
+      "title": "Contar un fin de semana",
+      "goal": "Comprender y escribir el relato de un fin de semana.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Ordená el relato: prima, poi, dopo, più tardi, alla fine.",
+        "Vocabulario: uscire con gli amici, fare una passeggiata, fare un giro (dar una vuelta), andare a trovare qualcuno (visitar a alguien), restare a casa.",
+        "Para valorar: È stato bellissimo! Mi è piaciuto molto. Che noia!"
+      ],
+      "examples": [
+        { "target": "Sabato sono uscita con le mie amiche.", "es": "El sábado salí con mis amigas." },
+        { "target": "Domenica siamo andati a trovare i nonni.", "es": "El domingo fuimos a visitar a los abuelos." },
+        { "target": "È stato un fine settimana tranquillo.", "es": "Fue un fin de semana tranquilo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Sono salito di casa alle otto.", "right": "Sono uscito di casa alle otto.", "why": "Salire significa 'subir'; 'salir' es uscire." },
+        { "wrong": "Sabato ho uscito con Marco.", "right": "Sabato sono uscito con Marco.", "why": "Uscire es un verbo de movimiento y va con essere." }
+      ]
+    }
+  ]
+}

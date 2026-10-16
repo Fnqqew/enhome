@@ -1,0 +1,132 @@
+{
+  "id": "fr-a2-passe-compose",
+  "level": "A2",
+  "order": 1,
+  "title": "Pasado compuesto",
+  "targetTitle": "Le passé composé",
+  "description": "El pasado de las acciones terminadas: lo que hiciste ayer, el finde o en un viaje. Se arma como el 'he hablado' del español, pero se usa como 'hablé', y algunos verbos van con être en lugar de avoir.",
+  "objectives": [
+    "Formar el passé composé con avoir y los participios regulares",
+    "Elegir être como auxiliar con los verbos de movimiento y los pronominales",
+    "Usar los participios irregulares más frecuentes",
+    "Hacer concordar el participio con être y negar en pasado",
+    "Contar un fin de semana"
+  ],
+  "prerequisites": ["fr-a1-present", "fr-a1-negation-questions"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "avec-avoir",
+      "day": 1,
+      "title": "Con avoir",
+      "goal": "Formar el passé composé con avoir y los participios regulares.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se forma con avoir en presente + participio: j'ai parlé, tu as mangé, nous avons fini.",
+        "Participios regulares: -er → -é (parler → parlé), -ir → -i (finir → fini), -re → -u (attendre → attendu, vendre → vendu).",
+        "Aunque se parezca al 'he hablado', se usa como el pretérito del español: Hier, j'ai parlé avec Ana = Ayer hablé con Ana.",
+        "Parler, parlé y parlez suenan igual: fijate qué va antes (je vais, j'ai, vous) para saber cuál escribir."
+      ],
+      "examples": [
+        { "target": "Hier soir, j'ai regardé un film.", "es": "Anoche miré una película." },
+        { "target": "Nous avons fini le travail à six heures.", "es": "Terminamos el trabajo a las seis." },
+        { "target": "Tu as attendu longtemps ?", "es": "¿Esperaste mucho?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Hier, je parle avec Ana.", "right": "Hier, j'ai parlé avec Ana.", "why": "Una acción terminada en el pasado va en passé composé." },
+        { "wrong": "J'ai parler avec Ana.", "right": "J'ai parlé avec Ana.", "why": "Después de avoir va el participio (-é), no el infinitivo, aunque suenen igual." }
+      ]
+    },
+    {
+      "id": "avec-etre",
+      "day": 2,
+      "title": "Con être: DR MRS VANDERTRAMP",
+      "goal": "Reconocer los verbos que forman el passé composé con être.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Unos pocos verbos, casi todos de movimiento o cambio de estado, usan être: aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, rentrer, devenir, revenir.",
+        "Sus iniciales forman la regla DR MRS VANDERTRAMP: Devenir, Revenir, Monter, Rester, Sortir, Venir, Aller, Naître, Descendre, Entrer, Rentrer, Tomber, Retourner, Arriver, Mourir, Partir.",
+        "Muchos van de a pares opuestos: aller/venir, arriver/partir, entrer/sortir, monter/descendre, naître/mourir.",
+        "También usan être todos los verbos pronominales: je me suis levé, elle s'est couchée.",
+        "En español nunca se usa 'ser' como auxiliar, por eso este es el error más común: je suis allé, no j'ai allé."
+      ],
+      "examples": [
+        { "target": "Je suis allé à Marseille le mois dernier.", "es": "Fui a Marsella el mes pasado." },
+        { "target": "Elle est née en 1995.", "es": "Nació en 1995." },
+        { "target": "Nous sommes restés à la maison.", "es": "Nos quedamos en casa." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'ai allé au cinéma.", "right": "Je suis allé au cinéma.", "why": "Aller es de la lista DR MRS VANDERTRAMP: va con être." },
+        { "wrong": "Il a tombé dans la rue.", "right": "Il est tombé dans la rue.", "why": "Tomber (caerse) usa être." }
+      ]
+    },
+    {
+      "id": "participes-irreguliers",
+      "day": 3,
+      "title": "Participios irregulares",
+      "goal": "Usar los participios irregulares más frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "être → été, avoir → eu (suena 'ü'), faire → fait, prendre → pris, mettre → mis.",
+        "voir → vu, lire → lu, boire → bu, pouvoir → pu, vouloir → voulu, devoir → dû.",
+        "dire → dit, écrire → écrit, ouvrir → ouvert, venir → venu, naître → né, mourir → mort.",
+        "Los derivados siguen el modelo: comprendre → compris, apprendre → appris, devenir → devenu."
+      ],
+      "examples": [
+        { "target": "J'ai fait les courses ce matin.", "es": "Esta mañana hice las compras." },
+        { "target": "Elle a été malade toute la semaine.", "es": "Estuvo enferma toda la semana." },
+        { "target": "Nous avons pris le train de nuit.", "es": "Tomamos el tren nocturno." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'ai prendu le bus.", "right": "J'ai pris le bus.", "why": "Prendre tiene participio irregular: pris." },
+        { "wrong": "J'ai écrivé une lettre.", "right": "J'ai écrit une lettre.", "why": "El participio de écrire es écrit, como 'escrito'." }
+      ]
+    },
+    {
+      "id": "accord-negation-marqueurs",
+      "day": 4,
+      "title": "Concordancia, negación y marcadores",
+      "goal": "Hacer concordar el participio con être, negar en pasado y ubicar las acciones en el tiempo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con être el participio concuerda con el sujeto, como un adjetivo: il est parti, elle est partie, ils sont partis, elles sont parties.",
+        "Esa -e y esa -s casi nunca suenan (partie suena igual que parti), pero hay que escribirlas.",
+        "En la negación, ne… pas rodea al auxiliar: Je n'ai pas compris. Elle n'est pas venue.",
+        "Marcadores: hier, avant-hier, la semaine dernière, l'année dernière, il y a deux jours (hace dos días).",
+        "Déjà (ya) y pas encore (todavía no) van entre el auxiliar y el participio: J'ai déjà mangé. Je n'ai pas encore fini."
+      ],
+      "examples": [
+        { "target": "Ma sœur est arrivée il y a trois jours.", "es": "Mi hermana llegó hace tres días." },
+        { "target": "Je n'ai pas encore fini mes devoirs.", "es": "Todavía no terminé la tarea." },
+        { "target": "Vous avez déjà visité Paris ?", "es": "¿Ya visitaron París?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je n'ai compris pas.", "right": "Je n'ai pas compris.", "why": "Ne… pas rodea al auxiliar, no al participio." },
+        { "wrong": "Elle est parti hier.", "right": "Elle est partie hier.", "why": "Con être, el participio concuerda con el sujeto: elle → partie." },
+        { "wrong": "J'ai mangé déjà.", "right": "J'ai déjà mangé.", "why": "Déjà va entre el auxiliar y el participio." }
+      ]
+    },
+    {
+      "id": "raconter-week-end",
+      "day": 5,
+      "title": "Contar un fin de semana",
+      "goal": "Comprender y escribir el relato de un fin de semana.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Ordená el relato: d'abord, ensuite, puis, après, enfin.",
+        "Ubicá cada acción: samedi matin, samedi soir, dimanche après-midi, le week-end dernier.",
+        "Si quien cuenta es mujer, los participios con être llevan -e: je suis allée, je suis restée.",
+        "Para valorar se usa una frase fija en imparfait, que vas a ver en el próximo tópico: C'était génial ! C'était super."
+      ],
+      "examples": [
+        { "target": "Samedi matin, je suis allé au marché avec des amis.", "es": "El sábado a la mañana fui a la feria con unos amigos." },
+        { "target": "Ensuite, nous avons déjeuné dans un petit restaurant.", "es": "Después almorzamos en un restaurantito." },
+        { "target": "Dimanche, je suis resté à la maison et j'ai lu un roman.", "es": "El domingo me quedé en casa y leí una novela." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Samedi, j'ai resté à la maison.", "right": "Samedi, je suis resté à la maison.", "why": "Rester (quedarse) usa être." },
+        { "wrong": "Je suis allé au parc (dicho por una mujer).", "right": "Je suis allée au parc.", "why": "Con être el participio concuerda con quien habla: allée." }
+      ]
+    }
+  ]
+}

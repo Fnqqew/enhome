@@ -1,0 +1,134 @@
+{
+  "id": "fr-a2-pronoms",
+  "level": "A2",
+  "order": 3,
+  "title": "Pronombres, y y en",
+  "targetTitle": "Les pronoms COD, COI, y et en",
+  "description": "Los pronombres que reemplazan cosas, personas y lugares para no repetir. Funcionan parecido al lo, la y le del español, pero siempre van antes del verbo, y el francés tiene dos más: y y en.",
+  "objectives": [
+    "Reemplazar el objeto directo con le, la, l' y les",
+    "Reemplazar el objeto indirecto con lui y leur",
+    "Usar y para lugares y en para partitivos y cantidades",
+    "Ubicar los pronombres con la negación, el passé composé y los infinitivos",
+    "Pedir y ofrecer cosas en una conversación"
+  ],
+  "prerequisites": ["fr-a1-articles", "fr-a2-passe-compose"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "pronoms-cod",
+      "day": 1,
+      "title": "Objeto directo",
+      "goal": "Reemplazar el objeto directo con me, te, le, la, nous, vous y les.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "me, te, le, la, nous, vous, les reemplazan al objeto directo: Je regarde le film → Je le regarde.",
+        "Le y la se apostrofan delante de vocal o h muda: Je l'aime. Je l'attends.",
+        "Van antes del verbo conjugado, como en español: Je la connais (la conozco).",
+        "Con un infinitivo van antes del infinitivo, nunca pegados al final: Je vais le faire (lo voy a hacer o voy a hacerlo).",
+        "En francés no existe la 'a' delante del objeto directo de persona: Je connais Marie (conozco a Marie)."
+      ],
+      "examples": [
+        { "target": "Ce livre ? Je le lis en ce moment.", "es": "¿Este libro? Lo estoy leyendo ahora." },
+        { "target": "Tu connais Claire ? — Oui, je la connais bien.", "es": "¿Conocés a Claire? — Sí, la conozco bien." },
+        { "target": "Les clés ? Je vais les chercher.", "es": "¿Las llaves? Voy a buscarlas." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je connais à Marie.", "right": "Je connais Marie.", "why": "En francés no se pone 'a' delante del objeto directo de persona." },
+        { "wrong": "Je vais faire le.", "right": "Je vais le faire.", "why": "El pronombre nunca va pegado al final del infinitivo: va antes." }
+      ]
+    },
+    {
+      "id": "pronoms-coi",
+      "day": 2,
+      "title": "Objeto indirecto",
+      "goal": "Reemplazar à + persona con lui y leur.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "lui (le) y leur (les) reemplazan a à + persona: Je parle à Paul → Je lui parle.",
+        "Lui sirve para él y para ella: Je lui téléphone puede ser a Paul o a Julie.",
+        "me, te, nous y vous son iguales como directos e indirectos: Il me regarde. Il me parle.",
+        "Verbos con à que en español no lo parecen: téléphoner à (llamar), demander à, répondre à, dire à, donner à. Por eso: Je lui téléphone (lo llamo, la llamo).",
+        "No se repite el pronombre como en español: 'le di el regalo a Ana' es J'ai donné le cadeau à Ana, sin lui."
+      ],
+      "examples": [
+        { "target": "Tu téléphones à ta mère ? — Oui, je lui téléphone tous les jours.", "es": "¿Llamás a tu mamá? — Sí, la llamo todos los días." },
+        { "target": "Je leur donne des bonbons.", "es": "Les doy caramelos." },
+        { "target": "Qu'est-ce que tu lui as dit ?", "es": "¿Qué le dijiste?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je la téléphone.", "right": "Je lui téléphone.", "why": "Téléphoner lleva à, así que el pronombre es indirecto (lui), aunque en español digas 'la llamo'." },
+        { "wrong": "Je lui ai donné le cadeau à Ana.", "right": "J'ai donné le cadeau à Ana.", "why": "En francés no se duplica: o va lui o va à Ana, no los dos." },
+        { "wrong": "Je leurs parle.", "right": "Je leur parle.", "why": "El pronombre leur nunca lleva -s; leurs es el posesivo." }
+      ]
+    },
+    {
+      "id": "y-en",
+      "day": 3,
+      "title": "Y y en",
+      "goal": "Usar y para un lugar y en para partitivos y cantidades.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Y reemplaza un lugar introducido por à, en, chez o dans: Tu vas à Paris ? — Oui, j'y vais (voy ahí).",
+        "En reemplaza un partitivo o un sustantivo con des: Tu veux du café ? — Oui, j'en veux.",
+        "Con un número o una cantidad, en es obligatorio y el número se repite: J'ai deux frères → J'en ai deux.",
+        "En español a menudo no se dice nada ('¿Tenés hijos? Sí, tengo dos'); en francés hace falta en.",
+        "Expresiones fijas: On y va ! (¡Vamos!), Ça y est ! (¡Listo!), Je m'en vais (me voy)."
+      ],
+      "examples": [
+        { "target": "Tu habites à Lyon ? — Oui, j'y habite depuis cinq ans.", "es": "¿Vivís en Lyon? — Sí, vivo ahí hace cinco años." },
+        { "target": "Tu as des enfants ? — Oui, j'en ai deux.", "es": "¿Tenés hijos? — Sí, tengo dos." },
+        { "target": "On y va ?", "es": "¿Vamos?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Oui, j'ai deux.", "right": "Oui, j'en ai deux.", "why": "Cuando decís una cantidad sin repetir el sustantivo, en es obligatorio." },
+        { "wrong": "Oui, je vais.", "right": "Oui, j'y vais.", "why": "Aller necesita un lugar: si no lo repetís, va y." }
+      ]
+    },
+    {
+      "id": "place-pronoms",
+      "day": 4,
+      "title": "Dónde van los pronombres",
+      "goal": "Ubicar los pronombres con la negación, el passé composé y los infinitivos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con un verbo conjugado, el pronombre va antes: Je le vois. Je lui parle. J'y vais.",
+        "Con la negación queda pegado al verbo, dentro de ne… pas: Je ne le vois pas. Je n'y vais pas. Il n'y en a plus.",
+        "En el passé composé va antes del auxiliar: Je l'ai vu. Je ne l'ai pas vu. Je lui ai parlé.",
+        "Con aller, pouvoir o vouloir + infinitivo va antes del infinitivo: Je vais lui parler. Tu peux m'aider ?",
+        "Si el objeto directo va antes de avoir, el participio concuerda con él: Tes clés ? Je les ai mises sur la table."
+      ],
+      "examples": [
+        { "target": "Je ne la connais pas.", "es": "No la conozco." },
+        { "target": "Tes clés ? Je les ai mises sur la table.", "es": "¿Tus llaves? Las puse en la mesa." },
+        { "target": "Je vais leur téléphoner ce soir.", "es": "Los voy a llamar esta noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je ne vois le pas.", "right": "Je ne le vois pas.", "why": "El pronombre va pegado al verbo, dentro de ne… pas." },
+        { "wrong": "J'ai le vu.", "right": "Je l'ai vu.", "why": "En el passé composé el pronombre va antes del auxiliar." }
+      ]
+    },
+    {
+      "id": "demander-offrir",
+      "day": 5,
+      "title": "Pedir y ofrecer",
+      "goal": "Comprender y escribir un diálogo para pedir, prestar y ofrecer cosas.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para pedir: Tu peux me prêter… ? (¿Me prestás…?) Tu peux m'aider ? Tu me passes le sel ?",
+        "Para ofrecer: Je t'aide ? Tu en veux ? Je te prête mon parapluie, si tu veux.",
+        "Con dos pronombres, me, te, nous y vous van antes de le, la, les, como en español: Je te le prête (te lo presto).",
+        "Prêter es 'prestar'; emprunter es 'pedir prestado': J'emprunte la voiture de mon père."
+      ],
+      "examples": [
+        { "target": "Tu peux me prêter ton chargeur, s'il te plaît ?", "es": "¿Me prestás tu cargador, por favor?" },
+        { "target": "Des chips ? Tu en veux ?", "es": "¿Papitas? ¿Querés?" },
+        { "target": "Merci ! Je te le rends ce soir.", "es": "¡Gracias! Te lo devuelvo esta noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Tu peux m'emprunter ton vélo ?", "right": "Tu peux me prêter ton vélo ?", "why": "Emprunter es 'pedir prestado'; para que alguien te preste algo se usa prêter." },
+        { "wrong": "Oui, je te prête.", "right": "Oui, je te le prête.", "why": "Prêter necesita su objeto: si no repetís el sustantivo, va le." }
+      ]
+    }
+  ]
+}

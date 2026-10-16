@@ -1,0 +1,129 @@
+{
+  "id": "fr-a2-imparfait",
+  "level": "A2",
+  "order": 2,
+  "title": "Imperfecto",
+  "targetTitle": "L'imparfait",
+  "description": "El pasado para describir y para contar lo que pasaba habitualmente. Se parece mucho al imperfecto del español (hablaba, comía) y casi siempre aparece combinado con el passé composé.",
+  "objectives": [
+    "Formar el imparfait a partir de la forma de nous",
+    "Usar être en imparfait y las descripciones más frecuentes",
+    "Hablar de costumbres y de acciones en curso en el pasado",
+    "Elegir entre imparfait y passé composé",
+    "Contar un recuerdo de la infancia"
+  ],
+  "prerequisites": ["fr-a2-passe-compose"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formation-imparfait",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el imparfait de cualquier verbo a partir de nous.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se toma la forma de nous en presente, se saca -ons y se agrega -ais, -ais, -ait, -ions, -iez, -aient: nous parlons → je parlais.",
+        "Sirve también para los irregulares: nous faisons → je faisais, nous prenons → je prenais, nous avons → j'avais, nous allons → j'allais.",
+        "-ais, -ait y -aient suenan igual, como una 'é': je parlais, il parlait, ils parlaient.",
+        "Ortografía: manger → je mangeais, commencer → je commençais, para mantener el sonido."
+      ],
+      "examples": [
+        { "target": "Avant, je travaillais dans un café.", "es": "Antes trabajaba en un café." },
+        { "target": "Nous avions un chien noir.", "es": "Teníamos un perro negro." },
+        { "target": "Ils prenaient toujours le train de huit heures.", "es": "Siempre tomaban el tren de las ocho." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je avais un chat.", "right": "J'avais un chat.", "why": "Je se apostrofa delante de vocal: j'avais." },
+        { "wrong": "Ils parlaitent.", "right": "Ils parlaient.", "why": "La terminación de ils y elles es -aient." }
+      ]
+    },
+    {
+      "id": "etre-descriptions",
+      "day": 2,
+      "title": "Être y las descripciones",
+      "goal": "Conjugar être en imparfait y describir personas, lugares y situaciones del pasado.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Être es el único irregular, con la raíz ét-: j'étais, tu étais, il était, nous étions, vous étiez, ils étaient.",
+        "El imparfait describe cómo era algo en el pasado: personas, lugares, el clima, la hora, la edad.",
+        "Frases muy frecuentes: c'était (era, estuvo), il y avait (había), il faisait beau (hacía buen tiempo), j'avais dix ans (tenía diez años).",
+        "Para valorar algo que pasó, el francés usa c'était: Le concert ? C'était génial ! (estuvo genial)."
+      ],
+      "examples": [
+        { "target": "La maison était grande et il y avait un jardin.", "es": "La casa era grande y había un jardín." },
+        { "target": "Il faisait très chaud cet été-là.", "es": "Ese verano hacía mucho calor." },
+        { "target": "Le concert ? C'était génial !", "es": "¿El recital? ¡Estuvo genial!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'été content.", "right": "J'étais content.", "why": "Été es el participio; el imparfait de être es étais." },
+        { "wrong": "Il avait beaucoup de monde.", "right": "Il y avait beaucoup de monde.", "why": "'Había' es il y avait; sin la y, il avait significa 'él tenía'." }
+      ]
+    },
+    {
+      "id": "habitudes",
+      "day": 3,
+      "title": "Costumbres y acciones en curso",
+      "goal": "Contar lo que hacías habitualmente y lo que estaba pasando en un momento del pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Lo que hacías habitualmente va en imparfait: Quand j'étais petit, je jouais au foot tous les samedis.",
+        "Marcadores de costumbre: d'habitude, tous les jours, le dimanche, souvent, toujours, avant, à l'époque.",
+        "Lo que estaba pasando en un momento también: À huit heures, je dormais encore.",
+        "El francés no usa être + gerundio. Para 'estaba haciendo' usá el imparfait o être en train de: J'étais en train de cuisiner."
+      ],
+      "examples": [
+        { "target": "Le dimanche, nous allions chez ma grand-mère.", "es": "Los domingos íbamos a lo de mi abuela." },
+        { "target": "Avant, je fumais, mais maintenant je fais du sport.", "es": "Antes fumaba, pero ahora hago deporte." },
+        { "target": "À huit heures, je dormais encore.", "es": "A las ocho todavía estaba durmiendo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quand j'ai été petit, j'ai joué au foot.", "right": "Quand j'étais petit, je jouais au foot.", "why": "Las costumbres y las descripciones del pasado van en imparfait, como 'cuando era chico jugaba'." },
+        { "wrong": "J'étais mangeant.", "right": "Je mangeais. / J'étais en train de manger.", "why": "El francés no usa être + gerundio: usá el imparfait o être en train de." }
+      ]
+    },
+    {
+      "id": "imparfait-passe-compose",
+      "day": 4,
+      "title": "Imparfait o passé composé",
+      "goal": "Elegir entre imparfait y passé composé al contar algo.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Passé composé = acción puntual y terminada (salí, comí). Imparfait = fondo, descripción o costumbre (salía, comía).",
+        "Una acción en curso puede ser interrumpida por otra: Je dormais quand tu as appelé.",
+        "Pista: pensalo en español. Si dirías 'hablaba', va imparfait; si dirías 'hablé', passé composé. Funciona casi siempre.",
+        "Con una duración cerrada va el passé composé: J'ai habité trois ans à Lyon (viví tres años en Lyon)."
+      ],
+      "examples": [
+        { "target": "Il pleuvait quand je suis sorti du bureau.", "es": "Llovía cuando salí de la oficina." },
+        { "target": "Je regardais la télé quand tu as appelé.", "es": "Estaba mirando la tele cuando llamaste." },
+        { "target": "Hier, j'étais fatigué, alors je suis rentré tôt.", "es": "Ayer estaba cansado, así que volví temprano." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Hier, j'allais au cinéma.", "right": "Hier, je suis allé au cinéma.", "why": "Una acción puntual y terminada va en passé composé, como 'ayer fui al cine'." },
+        { "wrong": "Quand je suis arrivé, il a plu.", "right": "Quand je suis arrivé, il pleuvait.", "why": "Lo que ya estaba pasando, el fondo de la escena, va en imparfait." }
+      ]
+    },
+    {
+      "id": "souvenir-enfance",
+      "day": 5,
+      "title": "Un recuerdo de la infancia",
+      "goal": "Comprender y escribir un recuerdo combinando imparfait y passé composé.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Empezá por el fondo en imparfait: Quand j'étais petit (o petite), j'habitais…, il y avait…",
+        "Contá lo que pasó un día concreto en passé composé: Un jour, …",
+        "Conectores: un jour, soudain (de repente), à ce moment-là, alors, finalement.",
+        "Cómo te sentías va en imparfait (J'étais très content); una reacción puntual, en passé composé (J'ai eu très peur)."
+      ],
+      "examples": [
+        { "target": "Quand j'avais huit ans, nous passions les vacances à Mar del Plata.", "es": "Cuando tenía ocho años, pasábamos las vacaciones en Mar del Plata." },
+        { "target": "Un jour, mon frère est tombé dans la piscine.", "es": "Un día, mi hermano se cayó a la pileta." },
+        { "target": "Soudain, il a commencé à pleuvoir.", "es": "De repente empezó a llover." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je suis allé à la plage tous les étés.", "right": "J'allais à la plage tous les étés.", "why": "Tous les étés indica costumbre: va en imparfait, como 'iba a la playa todos los veranos'." },
+        { "wrong": "Un jour, mon frère tombait dans la piscine.", "right": "Un jour, mon frère est tombé dans la piscine.", "why": "Un hecho puntual de la historia va en passé composé." }
+      ]
+    }
+  ]
+}

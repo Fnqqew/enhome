@@ -20,7 +20,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Idiomas nuevos
 
-- [~] 1 Cursos de portugués, italiano y francés de A1 y A2 (portugués listo)
+- [x] 1 Cursos de portugués, italiano y francés de A1 y A2
 - [x] 2 Cambiar de idioma desde la barra lateral, cada uno con su progreso
 - [x] 3 Claude genera y corrige en el idioma de cada curso
 - [x] 4 Lectura en voz alta en los cuatro idiomas
