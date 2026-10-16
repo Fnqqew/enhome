@@ -9,6 +9,7 @@ import type { AppSettings } from './settings'
 import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from './summaries'
 import type { ExamResultView, ExamSessionView, MockScope, ResumeResult, TestsOverview } from './exams'
 import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
+import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './review'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -59,6 +60,10 @@ export const IPC = {
   rewardsNews: 'rewards:news',
   rewardsHint: 'rewards:hint',
   rewardsSecondChance: 'rewards:second-chance',
+  reviewOverview: 'review:overview',
+  reviewDue: 'review:due',
+  reviewExam: 'review:exam',
+  reviewAnswer: 'review:answer',
   feedbackList: 'feedback:list',
   feedbackAdd: 'feedback:add',
   feedbackToggle: 'feedback:toggle',
@@ -152,6 +157,10 @@ export interface Api {
   takeRewardNews(): Promise<RewardNews[]>
   usePracticeHint(exerciseId: number): Promise<string>
   useSecondChance(examId: number, index: number): Promise<SecondChanceResult>
+  getReviewOverview(): Promise<ReviewOverview>
+  getDueReviews(): Promise<ReviewItemView[]>
+  getExamReview(examId: number): Promise<ReviewItemView[]>
+  answerReview(mistakeId: number, answer: ExerciseAnswer): Promise<ReviewAnswerResult>
   getFeedback(): Promise<FeedbackNote[]>
   addFeedback(note: NewFeedback): Promise<FeedbackNote[]>
   toggleFeedback(id: number): Promise<FeedbackNote[]>

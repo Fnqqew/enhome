@@ -75,6 +75,7 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
             setResult(null)
             navigate('inicio')
           }}
+          onReview={() => navigate('repaso', { examId: result.id })}
         />
       </>
     )

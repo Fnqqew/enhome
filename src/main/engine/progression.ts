@@ -277,6 +277,11 @@ export class Progression {
         DELETE FROM exams;
         DELETE FROM topic_progress;
         DELETE FROM course_pauses;
+        DELETE FROM mistakes;
+        DELETE FROM vocab;
+        DELETE FROM game_scores;
+        DELETE FROM readings;
+        DELETE FROM journal;
         UPDATE player SET cefr_level = NULL, placement_done_at = NULL, xp = 0, player_level = 1,
           streak = 0, best_streak = 0, last_practice_date = NULL WHERE id = 1;
       `)

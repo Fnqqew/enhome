@@ -23,6 +23,7 @@ import { Summaries } from './summaries/summaries'
 import { Exams } from './exams/exams'
 import { generateExam } from './exams/generation'
 import { Rewards } from './rewards/rewards'
+import { Notebook } from './review/notebook'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
@@ -51,6 +52,7 @@ interface Services {
   summaries: Summaries
   exams: Exams
   rewards: Rewards
+  notebook: Notebook
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -101,7 +103,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
         }),
         summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
         exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),
-        rewards: new Rewards(courseData, curriculum, roadmap, progression)
+        rewards: new Rewards(courseData, curriculum, roadmap, progression),
+        notebook: new Notebook(courseData, curriculum, gradeOpenAnswer)
       }
       courses.set(language, services)
     }
@@ -246,8 +249,12 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.practiceGet, () => getServices().practice.getView(today()))
   handle(IPC.practiceStart, () => getServices().practice.start(today()))
   handle(IPC.practiceAnswer, (exerciseId, answer) =>
-    getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer))
+    getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today())
   )
+  handle(IPC.reviewOverview, () => getServices().notebook.overview(today()))
+  handle(IPC.reviewDue, () => getServices().notebook.due(today()))
+  handle(IPC.reviewExam, (examId) => getServices().notebook.fromExam(id.parse(examId)))
+  handle(IPC.reviewAnswer, (mistakeId, answer) => getServices().notebook.answer(id.parse(mistakeId), exerciseAnswerSchema.parse(answer), today()))
   handle(IPC.practiceSkip, (exerciseId) => getServices().practice.skip(id.parse(exerciseId)))
   handle(IPC.practiceRate, (exerciseId, value) => getServices().practice.rate(id.parse(exerciseId), rating.parse(value)))
   handle(IPC.practiceFinish, (sessionId) => getServices().practice.finish(id.parse(sessionId), today()))

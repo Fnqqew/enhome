@@ -17,8 +17,19 @@ function message(result: ExamResultView): string {
     : 'Se aprueba con 8.'
 }
 
-export default function ExamResult({ result, onClose, onHome }: { result: ExamResultView; onClose: () => void; onHome: () => void }): React.JSX.Element {
+export default function ExamResult({
+  result,
+  onClose,
+  onHome,
+  onReview
+}: {
+  result: ExamResultView
+  onClose: () => void
+  onHome: () => void
+  onReview?: () => void
+}): React.JSX.Element {
   const weakTopics = result.outcome?.weakTopics ?? []
+  const wrong = result.questions.filter((q) => q.feedback && !q.feedback.correct && q.type !== 'writing').length
 
   return (
     <>
@@ -35,7 +46,12 @@ export default function ExamResult({ result, onClose, onHome }: { result: ExamRe
         <p>{message(result)}</p>
         {weakTopics.length > 0 && <div className="notice">Te recomendamos repasar: {weakTopics.join(', ')}.</div>}
         <div className="row">
-          <button className="btn" onClick={onHome}>
+          {onReview && wrong > 0 && (
+            <button className="btn" onClick={onReview}>
+              Repasar lo que fallaste ({wrong})
+            </button>
+          )}
+          <button className={onReview && wrong > 0 ? 'btn secondary' : 'btn'} onClick={onHome}>
             Ir al inicio
           </button>
           <button className="btn secondary" onClick={onClose}>

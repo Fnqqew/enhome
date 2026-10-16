@@ -653,3 +653,90 @@ kbd {
   line-height: 1.5;
   text-align: center;
 }
+
+/* Repaso: cuaderno de errores */
+
+.hero-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--accent);
+}
+
+.review-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.review-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: calc(var(--radius) - 2px);
+  background: var(--bg);
+}
+
+.review-stat strong {
+  font-family: var(--font-numbers);
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
+.upcoming {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.5rem;
+  height: 7rem;
+  align-items: end;
+}
+
+.upcoming-day {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  height: 100%;
+}
+
+.upcoming-bar {
+  width: 70%;
+  min-height: 3px;
+  border-radius: 6px 6px 2px 2px;
+  background: var(--accent);
+  opacity: 0.85;
+  transition: height 0.4s ease;
+}
+
+.upcoming-count {
+  font-family: var(--font-numbers);
+  font-size: 0.8rem;
+  min-height: 1em;
+}
+
+.topic-counts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topic-counts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.review-next {
+  margin: 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.review-next.ok {
+  color: var(--accent);
+}

@@ -4,6 +4,7 @@ export const SECTIONS = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'temario', label: 'Temario' },
   { id: 'practica', label: 'Práctica' },
+  { id: 'repaso', label: 'Repaso' },
   { id: 'resumenes', label: 'Resúmenes' },
   { id: 'pruebas', label: 'Pruebas' },
   { id: 'progreso', label: 'Progreso' },

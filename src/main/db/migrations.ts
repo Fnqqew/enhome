@@ -301,5 +301,83 @@ export const MIGRATIONS: Migration[] = [
         last_on TEXT NOT NULL
       );
     `
+  },
+  {
+    version: 10,
+    name: 'repaso, vocabulario, juegos, lecturas y diario',
+    sql: `
+      -- Cuaderno de errores: cada respuesta incorrecta vuelve a los 1, 3, 7 y 15 días hasta acertarla.
+      CREATE TABLE mistakes (
+        id          INTEGER PRIMARY KEY,
+        source      TEXT NOT NULL CHECK (source IN ('practice', 'exam')),
+        source_id   INTEGER NOT NULL,
+        item_index  INTEGER NOT NULL DEFAULT 0,
+        topic_id    TEXT NOT NULL,
+        subtopic_id TEXT NOT NULL,
+        payload     TEXT NOT NULL,
+        given       TEXT,
+        stage       INTEGER NOT NULL DEFAULT 0,
+        due_on      TEXT NOT NULL,
+        reviews     INTEGER NOT NULL DEFAULT 0,
+        resolved_on TEXT,
+        created_on  TEXT NOT NULL,
+        UNIQUE (source, source_id, item_index)
+      );
+      CREATE INDEX mistakes_due ON mistakes (resolved_on, due_on);
+
+      -- Palabras guardadas con su traducción, para repasar con tarjetas.
+      CREATE TABLE vocab (
+        id          INTEGER PRIMARY KEY,
+        term        TEXT NOT NULL UNIQUE,
+        translation TEXT NOT NULL,
+        example     TEXT,
+        example_es  TEXT,
+        note        TEXT,
+        topic_id    TEXT,
+        stage       INTEGER NOT NULL DEFAULT 0,
+        due_on      TEXT NOT NULL,
+        created_on  TEXT NOT NULL
+      );
+
+      -- Partidas de los juegos, para los récords y la experiencia del día.
+      CREATE TABLE game_scores (
+        id         INTEGER PRIMARY KEY,
+        game       TEXT NOT NULL,
+        score      INTEGER NOT NULL,
+        detail     TEXT,
+        played_on  TEXT NOT NULL,
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+      CREATE INDEX game_scores_game ON game_scores (game, score);
+
+      -- Lecturas graduadas generadas por Claude, guardadas para releer.
+      CREATE TABLE readings (
+        id         INTEGER PRIMARY KEY,
+        level      TEXT NOT NULL,
+        topic_id   TEXT,
+        title      TEXT NOT NULL,
+        content    TEXT NOT NULL,
+        answers    TEXT,
+        score      INTEGER,
+        created_on TEXT NOT NULL
+      );
+
+      -- Diario en el idioma: una entrada por día, corregida por Claude.
+      CREATE TABLE journal (
+        id         INTEGER PRIMARY KEY,
+        day        TEXT NOT NULL UNIQUE,
+        text       TEXT NOT NULL,
+        review     TEXT,
+        created_at TEXT NOT NULL DEFAULT (datetime('now')),
+        updated_at TEXT
+      );
+
+      -- Revisión de tópicos desde la app: el contenido corregido y la fecha en que se marcó como revisado.
+      CREATE TABLE topic_reviews (
+        topic_id    TEXT PRIMARY KEY,
+        content     TEXT,
+        reviewed_on TEXT
+      );
+    `
   }
 ]

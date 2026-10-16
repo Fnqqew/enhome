@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
-import { SECTIONS, type Navigate, type SectionId } from './navigation'
+import { SECTIONS, type Navigate, type NavParams, type SectionId } from './navigation'
 import Icon from './components/Icon'
 import Logo from './components/Logo'
 import LanguageSwitcher from './components/LanguageSwitcher'
@@ -15,6 +15,7 @@ import RewardToasts from './components/RewardToasts'
 const PAGES = {
   temario: () => import('./pages/Curriculum'),
   practica: () => import('./pages/Practice'),
+  repaso: () => import('./pages/Review'),
   resumenes: () => import('./pages/Summaries'),
   pruebas: () => import('./pages/Tests'),
   progreso: () => import('./pages/Progress'),
@@ -24,6 +25,7 @@ const PAGES = {
 }
 const Curriculum = lazy(PAGES.temario)
 const Practice = lazy(PAGES.practica)
+const Review = lazy(PAGES.repaso)
 const Summaries = lazy(PAGES.resumenes)
 const Tests = lazy(PAGES.pruebas)
 const Progress = lazy(PAGES.progreso)
@@ -113,6 +115,7 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
 function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
   const { settings } = useSettings()
   const [section, setSection] = useState<SectionId>('inicio')
+  const [params, setParams] = useState<NavParams>({})
   // Durante un examen semanal no se puede salir de Pruebas.
   const [examLocked, setExamLocked] = useState(false)
 
@@ -129,8 +132,10 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
 
   useEffect(preloadPages, [])
 
-  const navigate: Navigate = (target) => {
-    if (!examLocked || target === 'pruebas') setSection(target)
+  const navigate: Navigate = (target, extra = {}) => {
+    if (examLocked && target !== 'pruebas') return
+    setSection(target)
+    setParams(extra)
   }
 
   const title = SECTIONS.find((s) => s.id === section)?.label ?? 'Enhome'
@@ -160,7 +165,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
       <main className="content">
         <div key={section} className="page">
           <Suspense fallback={<p className="muted">Cargando…</p>}>
-            <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
+            <Page section={section} params={params} status={status} navigate={navigate} onExamLock={setExamLocked} />
           </Suspense>
         </div>
       </main>
@@ -170,11 +175,13 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
 
 function Page({
   section,
+  params,
   status,
   navigate,
   onExamLock
 }: {
   section: SectionId
+  params: NavParams
   status: ReadyStatus
   navigate: Navigate
   onExamLock: (locked: boolean) => void
@@ -182,6 +189,7 @@ function Page({
   if (section === 'inicio') return <Home navigate={navigate} />
   if (section === 'temario') return <Curriculum />
   if (section === 'practica') return <Practice navigate={navigate} />
+  if (section === 'repaso') return <Review examId={params.examId ?? null} navigate={navigate} />
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />

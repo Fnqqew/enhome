@@ -1,5 +1,6 @@
 // Pruebas: examen semanal (con una única pausa de 30 minutos si se interrumpe) y simulacros.
 
+import { recordMistake } from '../review/notebook'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import {
   EXAM_INTERRUPTED_MESSAGE,
@@ -310,6 +311,14 @@ export class Exams {
       questions.forEach((q, i) => {
         const { answer, feedback } = graded[i]
         upsert.run(row.id, i, answer ? JSON.stringify(answer) : null, feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback), q.topicId, q.subtopicId)
+        // Las preguntas falladas van al cuaderno de errores y al repaso del examen.
+        if (!feedback.correct) {
+          recordMistake(
+            this.db,
+            { source: 'exam', sourceId: row.id, index: i, topicId: q.topicId, subtopicId: q.subtopicId, exercise: q.exercise, given: answer },
+            today
+          )
+        }
       })
       this.db.prepare('UPDATE exams SET end_reason = ? WHERE id = ?').run(endReason, row.id)
     })

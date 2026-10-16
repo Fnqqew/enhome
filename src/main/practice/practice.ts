@@ -32,6 +32,8 @@ import { mainText, toPublicExercise } from './exercises'
 import type { Difficulty, PoolGenerator } from './generation'
 import { gradeAuto } from './grading'
 import { quantity, usedHints } from '../rewards/inventory'
+import { recordMistake } from '../review/notebook'
+import { toLocalDate } from '../../shared/dates'
 
 export class PracticeError extends Error {}
 
@@ -158,7 +160,7 @@ export class Practice {
     return { status: 'session', session: this.sessionView(this.session(session.id)) }
   }
 
-  async answer(exerciseId: number, answer: ExerciseAnswer): Promise<PracticeView> {
+  async answer(exerciseId: number, answer: ExerciseAnswer, today: string = toLocalDate(new Date())): Promise<PracticeView> {
     const { exercise, session } = this.openExercise(exerciseId)
     if (this.attempt(exerciseId)) throw new PracticeError('Ese ejercicio ya está respondido.')
     const stored = JSON.parse(exercise.payload) as StoredExercise
@@ -176,9 +178,19 @@ export class Practice {
 
     // Pudo llegar otra respuesta mientras Claude corregía.
     if (this.attempt(exerciseId)) throw new PracticeError('Ese ejercicio ya está respondido.')
-    this.db
-      .prepare('INSERT INTO exercise_attempts (exercise_id, answer, correct, score, feedback) VALUES (?, ?, ?, ?, ?)')
-      .run(exerciseId, JSON.stringify(answer), feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback))
+    transaction(this.db, () => {
+      this.db
+        .prepare('INSERT INTO exercise_attempts (exercise_id, answer, correct, score, feedback) VALUES (?, ?, ?, ?, ?)')
+        .run(exerciseId, JSON.stringify(answer), feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback))
+      // Lo que salió mal pasa al cuaderno de errores para repasarlo en los próximos días.
+      if (!feedback.correct) {
+        recordMistake(
+          this.db,
+          { source: 'practice', sourceId: exerciseId, topicId: session.topic_id, subtopicId: session.subtopic_id, exercise: stored, given: answer },
+          today
+        )
+      }
+    })
     return { status: 'session', session: this.sessionView(session) }
   }
 

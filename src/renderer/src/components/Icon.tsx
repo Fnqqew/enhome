@@ -28,6 +28,14 @@ const PATHS: Record<IconName, React.JSX.Element> = {
   inicio: <path d="M3.5 10.5 12 3.5l8.5 7V19a1.5 1.5 0 0 1-1.5 1.5h-4.5v-6h-5v6H5A1.5 1.5 0 0 1 3.5 19z" />,
   temario: BOOK,
   practica: PENCIL,
+  repaso: (
+    <>
+      <path d="M4.5 11.5a7.5 7.5 0 0 1 13.3-4.3l1.7 1.8" />
+      <path d="M19.5 4v5h-5" />
+      <path d="M19.5 12.5a7.5 7.5 0 0 1-13.3 4.3L4.5 15" />
+      <path d="M4.5 20v-5h5" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>
