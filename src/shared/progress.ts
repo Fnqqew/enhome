@@ -2,8 +2,8 @@
 
 export type UnitKind = 'lesson' | 'focus' | 'review'
 export type WeekKind = 'normal' | 'carry' | 'retry'
-export type DayStatus = 'upcoming' | 'today' | 'done' | 'missed' | 'recovered' | 'skipped' | 'weekend'
-export type ExamStatus = 'not-ready' | 'too-early' | 'locked' | 'available' | 'closed'
+export type DayStatus = 'upcoming' | 'today' | 'done' | 'missed' | 'recovered' | 'skipped' | 'weekend' | 'paused'
+export type ExamStatus = 'not-ready' | 'too-early' | 'locked' | 'available' | 'closed' | 'paused'
 
 export interface WeekDayView {
   date: string
@@ -54,6 +54,8 @@ export interface ProgressState {
   finished: boolean
   reviewTopics: { id: string; title: string; level: string }[]
   attempts: { attempts: number; failed: number } | null
+  // Desde cuándo está en pausa el curso; null si está activo.
+  pausedSince: string | null
 }
 
 export type PlacementView =

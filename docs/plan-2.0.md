@@ -1,0 +1,145 @@
+# Plan Enhome 2.0
+
+Aprobado el 2026-10-16: los 89 puntos de la [propuesta](https://claude.ai/artifact/QAhksvQDzPH3To8W62Zzwi), más todos los niveles posibles (A1 a C1) en los cuatro idiomas y juegos para practicar.
+
+Decisiones: **D1** portugués de Brasil · **D2** racha y experiencia por idioma · **D3** los cursos se pueden pausar.
+
+Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al cerrar cada etapa.
+
+## Etapas
+
+1. Base de idiomas (1–7, 73 pausar, 84 nombres neutros)
+2. Contenido A1–A2 de portugués, italiano y francés (1)
+3. Arreglos y velocidad (8–29)
+4. Juegos y aprendizaje (30–46)
+5. Contenido B1–C1 de los cuatro idiomas (41)
+6. Secciones nuevas e inicio (47–58)
+7. Diseño y animación (59–71)
+8. Ajustes y datos (72–81)
+9. Código y publicación (82–89)
+
+## Idiomas nuevos
+
+- [~] 1 Cursos de portugués, italiano y francés de A1 y A2
+- [x] 2 Cambiar de idioma desde la barra lateral, cada uno con su progreso
+- [x] 3 Claude genera y corrige en el idioma de cada curso
+- [x] 4 Lectura en voz alta en los cuatro idiomas
+- [x] 5 «Empezar desde cero» en el examen inicial
+- [x] 6 Reiniciar un curso desde Ajustes
+- [x] 7 Saludo del idioma en la pantalla de carga y color de cada curso
+
+## Errores y riesgos
+
+- [ ] 8 Recordar el tamaño y la posición de la ventana
+- [ ] 9 Que la app instalada no pueda arrancar como Node (fuses)
+- [ ] 10 Mover el proyecto fuera de OneDrive
+- [ ] 11 Mensajes de error de Claude que se entiendan
+- [ ] 12 Poder cancelar una generación colgada
+- [ ] 13 Logros y niveles nuevos al instante
+- [ ] 14 Activar el aislamiento de la interfaz (sandbox)
+- [ ] 15 Registro de errores en un archivo
+- [ ] 16 Textos y símbolos coherentes
+- [ ] 17 Limpiar ejercicios sobrantes
+- [ ] 18 Prácticas guardadas de un subtema que cambió
+- [ ] 19 Revisión de accesibilidad
+
+## Velocidad y rendimiento
+
+- [ ] 20 La práctica del día lista antes de abrirla
+- [ ] 21 Empezar con los ejercicios cortos mientras llegan los largos
+- [ ] 22 Corrección más rápida con un modelo liviano
+- [ ] 23 Aceptar errores de tipeo sin consultar a Claude
+- [ ] 24 Banco fijo de preguntas para el examen inicial
+- [ ] 25 Cargar cada sección cuando se usa
+- [ ] 26 Cargar solo las tipografías del estilo elegido
+- [ ] 27 Pantalla de carga configurable
+- [ ] 28 Índices y mantenimiento de la base
+- [ ] 29 Medir los tiempos de Claude
+
+## Práctica y aprendizaje
+
+- [ ] 30 Cuaderno de errores con repaso espaciado
+- [ ] 31 Repaso del examen
+- [ ] 32 Dictado
+- [ ] 33 Vocabulario con tarjetas
+- [ ] 34 Tocar una palabra para traducirla
+- [ ] 35 Volver a un ejercicio anterior de la práctica
+- [ ] 36 Atajos de teclado en la práctica
+- [ ] 37 Dificultad que se adapta por subtema
+- [ ] 38 Elegir la duración de la práctica
+- [ ] 39 Lecturas graduadas
+- [ ] 40 Diario en el idioma
+- [ ] 41 Contenido de B1 y B2 (y C1) en los cuatro idiomas
+- [ ] 42 Revisar los tópicos desde la app
+- [ ] 43 Excluir formatos que no te sirven
+- [ ] 44 Simulacros por subtema
+- [ ] 45 Certificado al terminar un nivel
+- [ ] 46 Pronunciación con reconocimiento de voz
+- [ ] Juegos: contrarreloj, memotest, ahorcado, frases desordenadas, escuchá y elegí
+
+## Secciones nuevas
+
+- [ ] 47 Charla con Claude
+- [ ] 48 Estadísticas
+- [ ] 49 Biblioteca
+- [ ] 50 Novedades de cada versión
+- [ ] 51 Ayuda
+
+## Inicio y navegación
+
+- [ ] 52 Inicio enfocado en «qué hago hoy»
+- [ ] 53 Recorrido de bienvenida
+- [ ] 54 Modo enfoque en la práctica y el examen
+- [ ] 55 Barra lateral plegable
+- [ ] 56 Buscador general con Ctrl+K
+- [ ] 57 Atajos Ctrl+1 a Ctrl+9
+- [ ] 58 Volver a la última sección al abrir
+
+## Diseño visual
+
+- [ ] 59 Íconos de línea en toda la app
+- [ ] 60 Esqueletos de carga y estados vacíos
+- [ ] 61 Ejercicio rediseñado
+- [ ] 62 Gráficos de progreso
+- [ ] 63 Modo lectura cómodo
+- [ ] 64 Tres estilos nuevos: Noche, Papel y Alto contraste
+- [ ] 65 Ordenar el sistema de diseño
+- [ ] 66 Editor de estilo propio
+- [ ] 67 Ventanas chicas
+
+## Animación y sensación
+
+- [ ] 68 Celebración sutil al cerrar bien
+- [ ] 69 Números que cuentan al cambiar
+- [ ] 70 Sonidos opcionales
+- [ ] 71 Transición de la tarjeta del día a la práctica
+
+## Ajustes y opciones
+
+- [ ] 72 Recordatorio diario, bandeja y arranque con Windows
+- [x] 73 Pausar un curso
+- [ ] 74 Ajustes por pestañas
+- [ ] 75 Meta diaria
+- [ ] 76 Racha y experiencia compartidas (resuelto por D2: quedan por idioma)
+- [ ] 77 Elegir velocidad o precisión de Claude
+- [ ] 78 Variante del español de las explicaciones
+
+## Datos y seguridad
+
+- [ ] 79 Copia de seguridad automática
+- [ ] 80 Exportar e importar el progreso
+- [ ] 81 Borrado de datos claro
+
+## Calidad del código
+
+- [ ] 82 Revisión automática en GitHub
+- [ ] 83 Pruebas de la interfaz (e2e)
+- [x] 84 Nombres neutros en el contenido
+- [ ] 85 Ejemplos de prueba compartidos
+- [ ] 86 Formato y linter automáticos
+
+## Instalación y versiones
+
+- [ ] 87 Actualizar con un solo comando
+- [ ] 88 Versiones publicadas en GitHub
+- [ ] 89 Buscar actualizaciones desde la app

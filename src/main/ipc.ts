@@ -25,6 +25,7 @@ import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
 import { isValidLocalDate, toLocalDate } from '../shared/dates'
 import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
 import { IPC, type Result, type SampleSentence } from '../shared/ipc'
+import { LANGUAGE_IDS, languageInfo, type CourseSummary, type LanguageId } from '../shared/languages'
 import { SUMMARY_TYPE_IDS } from '../shared/summaries'
 
 // Envuelve cada handler para que la interfaz reciba un Result en vez de un error de Electron.
@@ -55,29 +56,41 @@ const summaryType = z.enum(SUMMARY_TYPE_IDS)
 const id = z.number().int()
 const rating = z.union(PRACTICE_RATINGS.map((r) => z.literal(r)) as [z.ZodLiteral<1>, z.ZodLiteral<3>, z.ZodLiteral<5>])
 
-export function registerIpc(
-  db: Db,
-  contentDir: string,
-  isDev: boolean,
-  onSettingsChange: (settings: AppSettings) => void = () => {}
-): { today: () => string } {
-  // Se arma una vez; si el temario tiene errores, el mensaje llega a la interfaz.
-  let services: Services | null = null
-  const getServices = (): Services => {
+export interface IpcOptions {
+  // Base principal: el curso de inglés más los ajustes y comentarios, que son de toda la app.
+  db: Db
+  // Base de cada curso (la de inglés es la principal). Se abre recién cuando hace falta.
+  courseDb: (language: LanguageId) => Db
+  // Si el curso ya tiene datos guardados, sin crear la base para averiguarlo.
+  courseExists: (language: LanguageId) => boolean
+  contentDir: string
+  isDev: boolean
+  onSettingsChange?: (settings: AppSettings) => void
+}
+
+export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onSettingsChange = () => {} }: IpcOptions): { today: () => string } {
+  // Un juego de servicios por idioma, armado la primera vez que se usa; si el temario
+  // tiene errores, el mensaje llega a la interfaz.
+  const courses = new Map<LanguageId, Services>()
+  const activeLanguage = (): LanguageId => loadSettings(db).language
+  const getServices = (language: LanguageId = activeLanguage()): Services => {
+    let services = courses.get(language)
     if (!services) {
-      const curriculum = loadCurriculum(contentDir)
-      const progression = new Progression(db, curriculum)
-      const roadmap = loadRoadmap(contentDir)
+      const courseData = courseDb(language)
+      const curriculum = loadCurriculum(contentDir, language)
+      const progression = new Progression(courseData, curriculum)
+      const roadmap = loadRoadmap(contentDir, language)
       services = {
         curriculum,
         roadmap,
         progression,
-        placement: new Placement(db, curriculum, progression, generatePlacementQuestions),
-        practice: new Practice(db, curriculum, progression, generatePracticePool, gradeOpenAnswer),
-        summaries: new Summaries(db, curriculum, progression, generateSummary, answerAboutText),
-        exams: new Exams(db, curriculum, progression, generateExam, gradeOpenAnswer),
-        rewards: new Rewards(db, curriculum, roadmap, progression)
+        placement: new Placement(courseData, curriculum, progression, generatePlacementQuestions),
+        practice: new Practice(courseData, curriculum, progression, generatePracticePool, gradeOpenAnswer),
+        summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
+        exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),
+        rewards: new Rewards(courseData, curriculum, roadmap, progression)
       }
+      courses.set(language, services)
     }
     return services
   }
@@ -87,6 +100,33 @@ export function registerIpc(
   const today = (): string => todayOverride ?? toLocalDate(new Date())
   const state = () => getServices().progression.getState(today())
 
+  // Lo que muestra el selector de idioma: un curso sin datos no se abre para no crear su base.
+  const topicCounts = new Map<LanguageId, number>()
+  const topicCount = (language: LanguageId): number => {
+    if (!topicCounts.has(language)) {
+      let count = 0
+      try {
+        count = loadCurriculum(contentDir, language).length
+      } catch {
+        // Un curso sin temario todavía se muestra como «próximamente».
+      }
+      topicCounts.set(language, count)
+    }
+    return topicCounts.get(language)!
+  }
+  const courseSummary = (language: LanguageId): CourseSummary => {
+    const topics = topicCount(language)
+    const empty: CourseSummary = { language, available: topics > 0, started: false, paused: false, level: null, topicTitle: null, topics }
+    if (topics === 0 || !courseExists(language)) return empty
+    const progress = getServices(language).progression.getState(today())
+    return {
+      ...empty,
+      started: progress.placementDone,
+      paused: progress.pausedSince !== null,
+      level: progress.level,
+      topicTitle: progress.week?.topicTitle ?? null
+    }
+  }
   handle(IPC.appInfo, () => ({
     isDev,
     version: app.getVersion(),
@@ -104,14 +144,19 @@ export function registerIpc(
   handle(IPC.claudeStatus, () => getClaudeStatus())
   handle(IPC.claudeSample, (): Promise<SampleSentence> =>
     askClaude({
-      systemPrompt: 'Sos un generador de contenido para una app de inglés para hispanohablantes. Respondé solo con lo pedido.',
-      prompt: 'Dame una oración simple en inglés de nivel A1 y su traducción al español rioplatense.',
+      systemPrompt: 'Sos un generador de contenido para una app de idiomas para hispanohablantes. Respondé solo con lo pedido.',
+      prompt: `Dame una oración simple en ${languageInfo(activeLanguage()).promptName} de nivel A1 y su traducción al español rioplatense.`,
       schema: z.object({ english: z.string(), spanish: z.string() })
     })
   )
 
   handle(IPC.settingsGet, () => loadSettings(db))
   handle(IPC.settingsUpdate, (patch) => {
+    // Cambiar de idioma en medio de un examen semanal dejaría el examen colgado.
+    const next = (patch as Partial<AppSettings> | null)?.language
+    if (next && next !== activeLanguage() && getServices().exams.hasBlockingExam()) {
+      throw new Error('Entregá el examen semanal antes de cambiar de idioma.')
+    }
     const settings = updateSettings(db, patch)
     onSettingsChange(settings)
     return settings
@@ -125,6 +170,21 @@ export function registerIpc(
   })
 
   handle(IPC.progressGet, state)
+  handle(IPC.coursesList, () => LANGUAGE_IDS.map(courseSummary))
+  handle(IPC.coursePause, () => {
+    getServices().progression.pause(today())
+    return state()
+  })
+  handle(IPC.courseResume, () => {
+    getServices().progression.resume(today())
+    return state()
+  })
+  // Borra el progreso de un curso (no los ajustes ni los comentarios, que son de toda la app).
+  handle(IPC.courseReset, (language) => {
+    const id = z.enum(LANGUAGE_IDS).parse(language)
+    getServices(id).progression.resetProgress()
+    return courseSummary(id)
+  })
   handle(IPC.practiceComplete, (unitId) => {
     getServices().progression.completeUnit(id.parse(unitId), today())
     return state()
@@ -139,6 +199,10 @@ export function registerIpc(
     return getServices().placement.view(today())
   })
   handle(IPC.placementGet, () => getServices().placement.view(today()))
+  handle(IPC.placementSkip, () => {
+    getServices().placement.startFromScratch(today())
+    return getServices().placement.view(today())
+  })
   handle(IPC.placementAnswer, (questionId, choice) =>
     getServices().placement.answer(z.string().parse(questionId), z.number().int().min(-1).max(3).parse(choice), today())
   )

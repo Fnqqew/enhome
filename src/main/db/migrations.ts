@@ -260,5 +260,19 @@ export const MIGRATIONS: Migration[] = [
         created_at TEXT NOT NULL DEFAULT (datetime('now'))
       );
     `
+  },
+  {
+    version: 8,
+    name: 'pausas del curso',
+    sql: `
+      -- Mientras un curso está en pausa sus días no cuentan como faltas ni cortan la racha.
+      -- resumed_on NULL es la pausa en curso; el día de la reanudación ya cuenta.
+      CREATE TABLE course_pauses (
+        id         INTEGER PRIMARY KEY,
+        paused_on  TEXT NOT NULL,
+        resumed_on TEXT,
+        CHECK (resumed_on IS NULL OR resumed_on > paused_on)
+      );
+    `
   }
 ]

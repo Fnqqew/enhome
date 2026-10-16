@@ -13,7 +13,7 @@ function makeTopic(overrides: Partial<CurriculumTopic> = {}): CurriculumTopic {
     level: 'A1',
     order: 1,
     title: 'Prueba',
-    titleEn: 'Test',
+    targetTitle: 'Test',
     description: 'Tópico de prueba.',
     objectives: ['Probar'],
     prerequisites: [],
@@ -26,14 +26,14 @@ function makeTopic(overrides: Partial<CurriculumTopic> = {}): CurriculumTopic {
       focus: ['grammar'],
       keyPoints: ['Punto'],
       examples: [
-        { en: 'Hello', es: 'Hola' },
-        { en: 'Bye', es: 'Chau' }
+        { target: 'Hello', es: 'Hola' },
+        { target: 'Bye', es: 'Chau' }
       ],
       commonMistakes: []
     }))
   }
   const summary = [1, 2, 3, 4, 5].map((d) => `## Día ${d} — Subtema ${d}\n\nTexto.`).join('\n\n')
-  return { ...topic, summary, ...overrides }
+  return { ...topic, language: 'en', summary, ...overrides }
 }
 
 describe('temario real (content/)', () => {
@@ -99,23 +99,23 @@ describe('loadCurriculum', () => {
 
   it('informa la carpeta cuando un topic.json es inválido', () => {
     dir = mkdtempSync(join(tmpdir(), 'curriculum-'))
-    const { summary, ...topic } = makeTopic()
-    writeTopic('A1/01-prueba', { ...topic, title: '' }, summary)
+    const { summary, language: _language, ...topic } = makeTopic()
+    writeTopic('en/A1/01-prueba', { ...topic, title: '' }, summary)
     expect(() => loadCurriculum(dir!)).toThrow(CurriculumError)
     expect(() => loadCurriculum(dir!)).toThrow(/A1\/01-prueba/)
   })
 
   it('detecta un nivel que no coincide con la carpeta', () => {
     dir = mkdtempSync(join(tmpdir(), 'curriculum-'))
-    const { summary, ...topic } = makeTopic({ level: 'A2' })
-    writeTopic('A1/01-prueba', topic, summary)
+    const { summary, language: _language, ...topic } = makeTopic({ level: 'A2' })
+    writeTopic('en/A1/01-prueba', topic, summary)
     expect(() => loadCurriculum(dir!)).toThrow(/carpeta A1/)
   })
 
   it('exige resumen.md', () => {
     dir = mkdtempSync(join(tmpdir(), 'curriculum-'))
-    const { summary: _summary, ...topic } = makeTopic()
-    writeTopic('A1/01-prueba', topic)
+    const { summary: _summary, language: _language, ...topic } = makeTopic()
+    writeTopic('en/A1/01-prueba', topic)
     expect(() => loadCurriculum(dir!)).toThrow(/resumen\.md/)
   })
 })

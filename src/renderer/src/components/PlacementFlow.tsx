@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import type { PlacementView } from '@shared/progress'
+import { useCourse } from '../hooks/useCourse'
 
 export default function PlacementFlow({ resume, onDone }: { resume: boolean; onDone: () => void }): React.JSX.Element {
   const [view, setView] = useState<PlacementView | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [choice, setChoice] = useState<number | null>(null)
+  const course = useCourse()
 
   const run = (action: () => Promise<PlacementView>): void => {
     setLoading(true)
@@ -33,11 +35,20 @@ export default function PlacementFlow({ resume, onDone }: { resume: boolean; onD
         </p>
         <p className="muted">No hay tiempo límite. Si no sabés una respuesta, elegí «No lo sé»: así el resultado es más preciso.</p>
         {error && <p className="error">{error}</p>}
-        <div>
+        <div className="row">
           <button className="btn" disabled={loading} onClick={() => run(() => (resume ? window.api.getPlacement() : window.api.startPlacement()))}>
             {loading ? 'Preparando preguntas…' : resume ? 'Continuar examen' : 'Empezar'}
           </button>
+          <button
+            className="btn secondary"
+            disabled={loading}
+            title="Para un idioma que no sabés: empezás en el primer tópico, sin examen."
+            onClick={() => run(() => window.api.startFromScratch())}
+          >
+            Empezar desde cero
+          </button>
         </div>
+        <p className="muted small">¿Nunca estudiaste {course.name}? Elegí «Empezar desde cero» y arrancás directo en el primer tópico.</p>
       </section>
     )
   }

@@ -28,7 +28,7 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
         <Logo style={settings.style} className="logo about-logo" />
         <div className="stack-sm">
           <h2>Enhome</h2>
-          <p className="muted">Aprender inglés en casa, de a un tópico por semana, con Claude de profesor particular.</p>
+          <p className="muted">Aprender idiomas en casa, de a un tópico por semana, con Claude de profesor particular: inglés, portugués, italiano y francés, cada uno con su propio progreso.</p>
           {info && <span className="badge ok">versión {info.version}</span>}
         </div>
       </section>

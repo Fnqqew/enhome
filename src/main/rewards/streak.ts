@@ -24,12 +24,13 @@ export interface StreakResult {
   expected: Set<string>
 }
 
-export function expectedDays(weeks: StreakWeek[], today: string): string[] {
+// excluded: días que no se esperan aunque caigan en una semana (por ejemplo, con el curso en pausa).
+export function expectedDays(weeks: StreakWeek[], today: string, excluded: (date: string) => boolean = () => false): string[] {
   const days = new Set<string>()
   for (const week of weeks) {
     for (let i = 0; i < 5; i++) {
       const date = addDays(week.weekStart, i)
-      if (date >= week.startsOn && date <= today) days.add(date)
+      if (date >= week.startsOn && date <= today && !excluded(date)) days.add(date)
     }
   }
   return [...days].sort()
@@ -39,14 +40,16 @@ export function computeStreak({
   weeks,
   practiced,
   events,
-  today
+  today,
+  excluded
 }: {
   weeks: StreakWeek[]
   practiced: Set<string>
   events: Map<string, 'protected' | 'broken'>
   today: string
+  excluded?: (date: string) => boolean
 }): StreakResult {
-  const expected = expectedDays(weeks, today)
+  const expected = expectedDays(weeks, today, excluded)
   const milestones: StreakMilestone[] = []
   let current = 0
   let best = 0

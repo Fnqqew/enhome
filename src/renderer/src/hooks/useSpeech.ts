@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { hasVoiceFor, pickVoice, splitForSpeech, type SpeechLang } from '@shared/speech'
+import { VOICE_SETTING } from '@shared/settings'
+import { hasVoiceFor, pickVoice, speechTag, splitForSpeech, type SpeechLang } from '@shared/speech'
 import { useSettings } from '../theme/SettingsProvider'
 
 export type SpeechState = 'idle' | 'playing' | 'paused'
@@ -18,18 +19,16 @@ export function useVoices(): SpeechSynthesisVoice[] {
   return voices
 }
 
-// Lectura en voz alta con las voces del sistema: cada parte en español o en inglés con su voz.
+// Lectura en voz alta con las voces del sistema: cada parte en español o en el idioma del curso con su voz.
 export function useSpeech() {
   const voices = useVoices()
   const { settings } = useSettings()
+  const target = settings.language
   const [state, setState] = useState<SpeechState>('idle')
   const [rate, setRate] = useState(1)
   const generation = useRef(0)
 
-  const voiceFor = useCallback(
-    (lang: SpeechLang) => pickVoice(voices, lang, lang === 'es' ? settings.voiceEs : settings.voiceEn),
-    [voices, settings.voiceEs, settings.voiceEn]
-  )
+  const voiceFor = useCallback((lang: SpeechLang) => pickVoice(voices, lang, settings[VOICE_SETTING[lang]]), [voices, settings])
 
   const stop = useCallback(() => {
     generation.current++
@@ -42,13 +41,13 @@ export function useSpeech() {
       if (!supported) return
       speechSynthesis.cancel()
       const run = ++generation.current
-      const segments = splitForSpeech(text)
+      const segments = splitForSpeech(text, target)
       if (segments.length === 0) return
 
       segments.forEach((segment, i) => {
         const utterance = new SpeechSynthesisUtterance(segment.text)
         const voice = voiceFor(segment.lang)
-        utterance.lang = voice?.lang ?? (segment.lang === 'es' ? 'es-AR' : 'en-US')
+        utterance.lang = voice?.lang ?? speechTag(segment.lang)
         if (voice) utterance.voice = voice
         utterance.rate = rate
         const finish = (): void => {
@@ -60,7 +59,7 @@ export function useSpeech() {
       })
       setState('playing')
     },
-    [voiceFor, rate]
+    [voiceFor, rate, target]
   )
 
   const pause = useCallback(() => {
@@ -78,7 +77,7 @@ export function useSpeech() {
   return {
     supported: supported && voices.length > 0,
     hasSpanish: hasVoiceFor(voices, 'es'),
-    hasEnglish: hasVoiceFor(voices, 'en'),
+    hasTarget: hasVoiceFor(voices, target),
     state,
     rate,
     setRate,

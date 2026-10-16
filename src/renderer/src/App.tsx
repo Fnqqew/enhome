@@ -5,6 +5,7 @@ import Icon from './components/Icon'
 import About from './pages/About'
 import Comments from './pages/Comments'
 import Logo from './components/Logo'
+import LanguageSwitcher from './components/LanguageSwitcher'
 import Splash from './components/Splash'
 import TitleBar from './components/TitleBar'
 import { useSettings } from './theme/SettingsProvider'
@@ -23,6 +24,7 @@ type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 const EXTRA_SECTIONS: SectionId[] = ['ajustes', 'comentarios', 'acerca']
 
 export default function App(): React.JSX.Element {
+  const { settings } = useSettings()
   const [status, setStatus] = useState<ClaudeStatus | null>(null)
   // La pantalla de carga se muestra una sola vez, al abrir la app.
   const [splashDone, setSplashDone] = useState(false)
@@ -49,7 +51,8 @@ export default function App(): React.JSX.Element {
   } else if (status.state !== 'ready') {
     screen = <LockScreen status={status} onRetry={checkStatus} />
   } else {
-    screen = <Shell status={status} />
+    // Cambiar de idioma rearma todas las secciones con los datos del otro curso.
+    screen = <Shell key={settings.language} status={status} />
   }
 
   return (
@@ -119,6 +122,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
           <Logo style={settings.style} />
           Enhome
         </div>
+        <LanguageSwitcher locked={examLocked} />
         {SECTIONS.filter((s) => !EXTRA_SECTIONS.includes(s.id)).map((s) => (
           <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
         ))}

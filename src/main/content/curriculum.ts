@@ -3,6 +3,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { CEFR_LEVELS, roadmapSchema, topicSchema, type CurriculumTopic, type Roadmap, type Topic } from '../../shared/curriculum'
+import type { LanguageId } from '../../shared/languages'
 
 export class CurriculumError extends Error {}
 
@@ -16,17 +17,19 @@ function message(err: unknown): string {
   return err instanceof Error ? err.message : String(err)
 }
 
-export function loadCurriculum(dir: string): CurriculumTopic[] {
+// dir es la carpeta content/; cada idioma tiene su temario en content/<idioma>/.
+export function loadCurriculum(dir: string, language: LanguageId = 'en'): CurriculumTopic[] {
   const topics: CurriculumTopic[] = []
+  const courseDir = join(dir, language)
 
   for (const level of CEFR_LEVELS) {
-    const levelDir = join(dir, level)
+    const levelDir = join(courseDir, level)
     if (!existsSync(levelDir)) continue
 
     for (const entry of readdirSync(levelDir, { withFileTypes: true })) {
       if (!entry.isDirectory()) continue
       const topicDir = join(levelDir, entry.name)
-      const where = `${level}/${entry.name}`
+      const where = `${language}/${level}/${entry.name}`
 
       let topic: Topic
       try {
@@ -40,22 +43,23 @@ export function loadCurriculum(dir: string): CurriculumTopic[] {
 
       const summaryPath = join(topicDir, 'resumen.md')
       if (!existsSync(summaryPath)) throw new CurriculumError(`${where}: falta resumen.md`)
-      topics.push({ ...topic, summary: readFileSync(summaryPath, 'utf8') })
+      topics.push({ ...topic, language, summary: readFileSync(summaryPath, 'utf8') })
     }
   }
 
+  if (topics.length === 0) throw new CurriculumError(`El curso de ${language} no tiene tópicos en content/${language}.`)
   validateCurriculum(topics)
   return topics.sort(compareTopics)
 }
 
 // El plan de niveles futuros es opcional.
-export function loadRoadmap(dir: string): Roadmap {
-  const path = join(dir, 'roadmap.json')
+export function loadRoadmap(dir: string, language: LanguageId = 'en'): Roadmap {
+  const path = join(dir, language, 'roadmap.json')
   if (!existsSync(path)) return { levels: [] }
   try {
     return roadmapSchema.parse(JSON.parse(readFileSync(path, 'utf8')))
   } catch (err) {
-    throw new CurriculumError(`roadmap.json es inválido: ${message(err)}`)
+    throw new CurriculumError(`${language}/roadmap.json es inválido: ${message(err)}`)
   }
 }
 

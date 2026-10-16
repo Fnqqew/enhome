@@ -5,9 +5,10 @@ import type { CefrLevel, CurriculumTopic, Subtopic } from '../../shared/curricul
 import type { ExamKind, ExamQuestion } from '../../shared/exams'
 import { generatedExerciseSchema, type ExerciseType, type GeneratedExercise } from '../../shared/exercises'
 import { askClaude, type Ask } from '../claude/bridge'
-import { CORRECTIONS_GUIDE, QUALITY_CHECKLIST, REVIEW_EFFORT, REVIEW_SYSTEM_PROMPT, SELF_CHECK } from '../claude/quality'
+import { CORRECTIONS_GUIDE, qualityChecklist, REVIEW_EFFORT, reviewSystemPrompt, roleSystemPrompt, selfCheck } from '../claude/quality'
+import type { LanguageId } from '../../shared/languages'
 import { prepareExercise } from '../practice/exercises'
-import { FORMAT_GUIDE } from '../practice/generation'
+import { formatGuide } from '../practice/generation'
 import { MAX_DROPPED_ITEMS } from './rules'
 
 export interface ExamRequestItem {
@@ -28,8 +29,11 @@ export type ExamGenerator = (request: ExamRequest) => Promise<ExamQuestion[]>
 const TIMEOUT_MS = 360_000
 const MAX_ATTEMPTS = 2
 
-const SYSTEM_PROMPT =
-  'Sos un evaluador de inglés para hispanohablantes de Argentina. Armás pruebas justas, claras y sin ambigüedades. Respondé solo con el JSON pedido.'
+// Todas las preguntas de un examen son del mismo curso.
+const languageOf = (request: ExamRequest): LanguageId => request.items[0]?.topic.language ?? 'en'
+
+const systemPrompt = (request: ExamRequest): string =>
+  roleSystemPrompt(languageOf(request), 'evaluador', 'Armás pruebas justas, claras y sin ambigüedades.')
 
 const DIFFICULTY: Record<ExamKind, string> = {
   weekly:
@@ -67,11 +71,11 @@ ${notes}
 Generá exactamente estas ${request.items.length} preguntas, con el subtema y el tipo indicados:
 ${request.items.map(label).join('\n')}
 
-${FORMAT_GUIDE}
+${formatGuide(languageOf(request))}
 
 Devolvé en items un objeto por pregunta: index es su número (#) y exercise tiene el formato de su tipo. No repitas oraciones entre preguntas y que ninguna pregunta revele la respuesta de otra.
 
-${SELF_CHECK}`
+${selfCheck(languageOf(request))}`
 }
 
 export function buildExamReviewPrompt(request: ExamRequest, generated: (GeneratedExercise | undefined)[]): string {
@@ -79,14 +83,14 @@ export function buildExamReviewPrompt(request: ExamRequest, generated: (Generate
   return `${context(request)}
 
 Otro evaluador armó estas preguntas para ${request.kind === 'weekly' ? 'un examen semanal' : 'un simulacro'}. Revisalas una por una.
-${QUALITY_CHECKLIST}
+${qualityChecklist(languageOf(request))}
 - Cada pregunta evalúa el subtema indicado y respeta el formato de su tipo.
 - No hay preguntas repetidas ni una pregunta que revele la respuesta de otra.
 
 Si una pregunta tiene un error, corregila; si no tiene arreglo, reemplazala por otra del mismo tipo y subtema.
 ${CORRECTIONS_GUIDE}
 
-${FORMAT_GUIDE}
+${formatGuide(languageOf(request))}
 
 Preguntas a revisar:
 ${body}`
@@ -96,7 +100,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const { items } = await ask({ systemPrompt: SYSTEM_PROMPT, prompt: buildExamPrompt(request), schema: generationSchema, timeoutMs: TIMEOUT_MS })
+      const { items } = await ask({ systemPrompt: systemPrompt(request), prompt: buildExamPrompt(request), schema: generationSchema, timeoutMs: TIMEOUT_MS })
       // Cada pregunta se ubica por su número y tiene que ser del tipo pedido.
       const generated = request.items.map((plan, i): GeneratedExercise | undefined => {
         const exercise = items.find((item) => item.index === i)?.exercise
@@ -104,7 +108,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
       })
 
       const review = await ask({
-        systemPrompt: REVIEW_SYSTEM_PROMPT,
+        systemPrompt: reviewSystemPrompt(languageOf(request)),
         prompt: buildExamReviewPrompt(request, generated),
         schema: reviewSchema,
         effort: REVIEW_EFFORT,

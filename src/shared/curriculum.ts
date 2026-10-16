@@ -1,6 +1,7 @@
 // Formato del temario base (content/<nivel>/<nn-tópico>/topic.json + resumen.md).
 
 import { z } from 'zod'
+import type { LanguageId } from './languages'
 
 export const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const
 export const SKILLS = ['grammar', 'reading', 'writing'] as const
@@ -19,7 +20,7 @@ export const subtopicSchema = z
     goal: text,
     focus: z.array(z.enum(SKILLS)).min(1),
     keyPoints: z.array(text).min(1),
-    examples: z.array(z.object({ en: text, es: text }).strict()).min(2),
+    examples: z.array(z.object({ target: text, es: text }).strict()).min(2),
     commonMistakes: z.array(z.object({ wrong: text, right: text, why: text }).strict())
   })
   .strict()
@@ -30,7 +31,7 @@ export const topicSchema = z
     level: z.enum(CEFR_LEVELS),
     order: z.number().int().min(1),
     title: text,
-    titleEn: text,
+    targetTitle: text,
     description: text,
     objectives: z.array(text).min(1),
     prerequisites: z.array(slug),
@@ -43,6 +44,8 @@ export type Subtopic = z.infer<typeof subtopicSchema>
 export type Topic = z.infer<typeof topicSchema>
 
 export interface CurriculumTopic extends Topic {
+  // El curso al que pertenece: define en qué idioma se generan ejemplos, ejercicios y correcciones.
+  language: LanguageId
   // Resumen base (explicación completa) en Markdown.
   summary: string
 }

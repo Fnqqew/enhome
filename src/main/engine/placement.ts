@@ -51,6 +51,15 @@ export class Placement {
     }
   }
 
+  // Para un idioma que no se sabe: arranca en el primer tópico sin hacer el examen.
+  startFromScratch(today: string): void {
+    if (this.isDone()) throw new PlacementError('El examen inicial ya está hecho.')
+    const first = this.curriculum[0]
+    if (!first) throw new PlacementError('El curso no tiene tópicos.')
+    this.db.prepare("UPDATE exams SET status = 'voided' WHERE kind = 'placement' AND status = 'in_progress'").run()
+    this.progression.applyPlacementResult(first.id, [], today)
+  }
+
   async view(today: string): Promise<PlacementView> {
     const exam = this.currentExam()
     if (!exam) return this.isDone() ? this.result() : { status: 'not-started' }

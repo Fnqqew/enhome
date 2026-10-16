@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
+import { languageInfo } from '@shared/languages'
 import { useSettings } from '../theme/SettingsProvider'
 
 // Pantalla de carga: una casa que se dibuja de un trazo y, adentro, alguien que escribe «Hola»,
-// lo borra y escribe «Hello». Es lo que hace la app: pasar del español al inglés, en casa.
+// lo borra y escribe el saludo del idioma del curso. Es lo que hace la app: pasar del español a otro idioma, en casa.
 
 const WORDMARK = ['E', 'n', 'h', 'o', 'm', 'e']
 
@@ -12,24 +13,30 @@ const MIN_MS_REDUCED = 350
 const EXIT_MS = 450
 
 // Línea de tiempo de lo que se escribe adentro de la casa (en milisegundos desde que aparece).
-const TIMELINE: { at: number; text: string; english: boolean }[] = [
-  ...['H', 'Ho', 'Hol', 'Hola'].map((text, i) => ({ at: 750 + i * 115, text, english: false })),
-  ...['Hol', 'Ho', 'H', ''].map((text, i) => ({ at: 1500 + i * 65, text, english: false })),
-  ...['H', 'He', 'Hel', 'Hell', 'Hello'].map((text, i) => ({ at: 1820 + i * 105, text, english: true }))
-]
+// english marca la segunda palabra: el saludo en el idioma del curso.
+function timeline(greeting: string): { at: number; text: string; english: boolean }[] {
+  const typing = (word: string): string[] => Array.from({ length: word.length }, (_, i) => word.slice(0, i + 1))
+  const step = Math.min(115, Math.round(520 / greeting.length))
+  return [
+    ...typing('Hola').map((text, i) => ({ at: 750 + i * 115, text, english: false })),
+    ...['Hol', 'Ho', 'H', ''].map((text, i) => ({ at: 1500 + i * 65, text, english: false })),
+    ...typing(greeting).map((text, i) => ({ at: 1820 + i * step, text, english: true }))
+  ]
+}
 
 export default function Splash({ ready, onDone }: { ready: boolean; onDone: () => void }): React.JSX.Element {
   const { settings } = useSettings()
+  const course = languageInfo(settings.language)
   const [reduced] = useState(() => settings.reduceMotion || window.matchMedia('(prefers-reduced-motion: reduce)').matches)
-  const [word, setWord] = useState(reduced ? { text: 'Hello', english: true } : { text: '', english: false })
+  const [word, setWord] = useState(reduced ? { text: course.greeting, english: true } : { text: '', english: false })
   const [minElapsed, setMinElapsed] = useState(false)
   const [leaving, setLeaving] = useState(false)
 
   useEffect(() => {
-    const timers = reduced ? [] : TIMELINE.map((step) => setTimeout(() => setWord(step), step.at))
+    const timers = reduced ? [] : timeline(course.greeting).map((step) => setTimeout(() => setWord(step), step.at))
     timers.push(setTimeout(() => setMinElapsed(true), reduced ? MIN_MS_REDUCED : MIN_MS))
     return () => timers.forEach(clearTimeout)
-  }, [reduced])
+  }, [reduced, course.greeting])
 
   useEffect(() => {
     if (ready && minElapsed) setLeaving(true)
@@ -61,7 +68,7 @@ export default function Splash({ ready, onDone }: { ready: boolean; onDone: () =
           </span>
         ))}
       </p>
-      <p className="splash-tagline">Inglés en casa, de a un tema por semana</p>
+      <p className="splash-tagline">Idiomas en casa, de a un tema por semana</p>
 
       <div className="splash-progress" aria-hidden="true">
         <span />

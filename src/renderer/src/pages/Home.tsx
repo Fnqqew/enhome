@@ -40,6 +40,27 @@ export default function Home({ navigate }: { navigate: Navigate }): React.JSX.El
           <p className="error multiline">{error}</p>
         </section>
       )}
+      {progress?.pausedSince && (
+        <section className="card notice-card row spread">
+          <div className="stack-sm">
+            <strong>Este curso está en pausa</strong>
+            <span className="muted">
+              Desde el {formatDayMonth(progress.pausedSince)} no cuenta faltas ni corta la racha. Reanudalo cuando quieras volver.
+            </span>
+          </div>
+          <button
+            className="btn"
+            onClick={() =>
+              window.api
+                .resumeCourse()
+                .then(setProgress)
+                .catch((err: Error) => setError(err.message))
+            }
+          >
+            Reanudar curso
+          </button>
+        </section>
+      )}
       {progress && !progress.placementDone && <PlacementFlow resume={progress.placementInProgress} onDone={reload} />}
       {progress?.placementDone && <Journey progress={progress} navigate={navigate} />}
       {isDev && progress && <DevTools progress={progress} onChange={setProgress} />}

@@ -5,6 +5,8 @@ import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import type { ExerciseFeedback, ExercisePart, OpenExercise } from '../../shared/exercises'
 import { askClaude } from '../claude/bridge'
+import { roleSystemPrompt } from '../claude/quality'
+import { languageInfo, type LanguageId } from '../../shared/languages'
 
 export interface OpenAnswerRequest {
   topic: CurriculumTopic
@@ -19,8 +21,8 @@ export type OpenAnswerGrader = (request: OpenAnswerRequest) => Promise<ExerciseF
 // Puntaje mínimo para considerar correcto un texto escrito.
 export const WRITING_PASS_SCORE = 6
 
-const SYSTEM_PROMPT =
-  'Sos un docente de inglés para hispanohablantes de Argentina. Corregís con precisión y de forma alentadora. Respondé solo con el JSON pedido.'
+const systemPrompt = (language: LanguageId): string =>
+  roleSystemPrompt(language, 'docente', 'Corregís con precisión y de forma alentadora.')
 
 const reviewSchema = z.object({
   acceptable: z.boolean(),
@@ -62,12 +64,13 @@ function answered(answers: string[], index: number): string {
 export function buildReviewPrompt(request: OpenAnswerRequest): string {
   const { exercise, answers } = request
   const head = context(request)
+  const target = languageInfo(request.topic.language).name
 
   switch (exercise.type) {
     case 'translation':
       return `${head}
 
-Ejercicio de traducción al inglés: «${exercise.spanish}»
+Ejercicio de traducción al ${target}: «${exercise.spanish}»
 Traducciones de referencia: ${exercise.answers.map((a) => `«${a}»`).join(', ')}
 Respuesta del alumno: ${answered(answers, 0)}
 
@@ -78,7 +81,7 @@ ${OUTPUT_GUIDE}`
     case 'translation_set':
       return `${head}
 
-El alumno tradujo al inglés una tanda de oraciones sobre esta situación: ${exercise.situation}
+El alumno tradujo al ${target} una tanda de oraciones sobre esta situación: ${exercise.situation}
 
 ${exercise.sentences
   .map((s, i) => `${i + 1}. Español: «${s.spanish}»\n   Referencias: ${s.answers.map((a) => `«${a}»`).join(', ')}\n   Alumno: ${answered(answers, i)}`)
@@ -175,7 +178,7 @@ function modelAnswer(exercise: OpenExercise): string | null {
 }
 
 export async function gradeOpenAnswer(request: OpenAnswerRequest): Promise<ExerciseFeedback> {
-  const review = await askClaude({ systemPrompt: SYSTEM_PROMPT, prompt: buildReviewPrompt(request), schema: reviewSchema })
+  const review = await askClaude({ systemPrompt: systemPrompt(request.topic.language), prompt: buildReviewPrompt(request), schema: reviewSchema })
   const { exercise, answers } = request
   const sources = partSources(exercise)
 

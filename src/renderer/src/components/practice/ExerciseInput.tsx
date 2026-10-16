@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { ExerciseAnswer, ExerciseFeedback, PublicExercise } from '@shared/exercises'
+import { useCourse } from '../../hooks/useCourse'
 
 type Content<T extends PublicExercise['type']> = Extract<PublicExercise, { type: T }>
 
@@ -182,6 +183,7 @@ function ErrorCorrection({ content, answer, feedback, onChange }: ItemProps<'err
 }
 
 function Translation({ content, answer, feedback, onChange }: ItemProps<'translation'>): React.JSX.Element {
+  const lang = useCourse().name
   const [text, setText] = useState(answer?.type === 'translation' ? answer.text : '')
   return (
     <>
@@ -190,7 +192,7 @@ function Translation({ content, answer, feedback, onChange }: ItemProps<'transla
         className={`text-answer${resultClass(feedback)}`}
         value={text}
         disabled={feedback !== null}
-        placeholder="Escribí la traducción en inglés"
+        placeholder={`Escribí la traducción en ${lang}`}
         autoFocus
         aria-label="Traducción"
         onChange={(e) => {
@@ -240,6 +242,7 @@ function partClass(feedback: ExerciseFeedback | null, index: number): string {
 }
 
 function TranslationSet({ content, answer, feedback, onChange }: ItemProps<'translation_set'>): React.JSX.Element {
+  const lang = useCourse().name
   const initial = answer?.type === 'translation_set' ? answer.texts : null
   const [texts, update] = useParts(content.sentences.length, initial, 'translation_set', onChange)
 
@@ -254,7 +257,7 @@ function TranslationSet({ content, answer, feedback, onChange }: ItemProps<'tran
               className={`text-answer${partClass(feedback, i)}`}
               value={texts[i]}
               disabled={feedback !== null}
-              placeholder="En inglés…"
+              placeholder={`En ${lang}…`}
               autoFocus={i === 0}
               aria-label={`Traducción ${i + 1}`}
               onChange={(e) => update(i, e.target.value)}
@@ -268,6 +271,7 @@ function TranslationSet({ content, answer, feedback, onChange }: ItemProps<'tran
 }
 
 function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dialogue'>): React.JSX.Element {
+  const lang = useCourse().name
   // Número de turno del alumno para cada línea del guion (null en las del otro).
   const turnOf = content.script.reduce<(number | null)[]>((acc, line) => {
     const previous = acc.filter((n) => n !== null).length
@@ -298,7 +302,7 @@ function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dialogue'>
                 className={`text-answer${partClass(feedback, index)}`}
                 value={texts[index]}
                 disabled={feedback !== null}
-                placeholder="Tu respuesta en inglés…"
+                placeholder={`Tu respuesta en ${lang}…`}
                 autoFocus={index === 0}
                 aria-label={`Turno ${index + 1}`}
                 onChange={(e) => update(index, e.target.value)}
@@ -313,6 +317,7 @@ function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dialogue'>
 }
 
 function RolePlay({ content, answer, feedback, onChange }: ItemProps<'roleplay'>): React.JSX.Element {
+  const lang = useCourse().name
   const initial = answer?.type === 'roleplay' ? answer.texts : null
   const [texts, update] = useParts(content.steps.length, initial, 'roleplay', onChange)
 
@@ -330,7 +335,7 @@ function RolePlay({ content, answer, feedback, onChange }: ItemProps<'roleplay'>
               className={`text-answer${partClass(feedback, i)}`}
               value={texts[i]}
               disabled={feedback !== null}
-              placeholder="En inglés…"
+              placeholder={`En ${lang}…`}
               autoFocus={i === 0}
               aria-label={`Paso ${i + 1}`}
               onChange={(e) => update(i, e.target.value)}
@@ -375,6 +380,7 @@ function Reading({ content, answer, feedback, onChange }: ItemProps<'reading'>):
 const countWords = (text: string): number => (text.trim() ? text.trim().split(/\s+/).length : 0)
 
 function Writing({ content, answer, feedback, onChange }: ItemProps<'writing'>): React.JSX.Element {
+  const lang = useCourse().name
   const [text, setText] = useState(answer?.type === 'writing' ? answer.text : '')
   const words = countWords(text)
   const outOfRange = words > 0 && (words < content.minWords || words > content.maxWords)
@@ -392,7 +398,7 @@ function Writing({ content, answer, feedback, onChange }: ItemProps<'writing'>):
         rows={6}
         value={text}
         disabled={feedback !== null}
-        placeholder="Escribí tu texto en inglés…"
+        placeholder={`Escribí tu texto en ${lang}…`}
         aria-label="Texto"
         onChange={(e) => {
           setText(e.target.value)

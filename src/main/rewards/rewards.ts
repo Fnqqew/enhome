@@ -34,6 +34,7 @@ import {
   xpForLevel
 } from './rules'
 import { computeStreak, perfectWeeks, type StreakWeek } from './streak'
+import { isPausedDay, loadPauses } from '../engine/pauses'
 
 export class RewardsError extends Error {}
 
@@ -65,7 +66,7 @@ export class Rewards {
       const { weeks, practiced } = this.streakData()
 
       // Días faltados nuevos: se usa un protector si hay (y había racha); si no, se corta.
-      let streak = computeStreak({ weeks, practiced, events: this.streakEvents(), today })
+      let streak = computeStreak({ weeks, practiced, events: this.streakEvents(), today, excluded: this.pausedDay() })
       while (streak.pendingMiss) {
         if (streak.current > 0 && quantity(this.db, 'streak-shield') > 0) {
           consume(this.db, 'streak-shield')
@@ -75,7 +76,7 @@ export class Rewards {
           this.db.prepare("INSERT INTO streak_days (date, outcome) VALUES (?, 'broken')").run(streak.pendingMiss)
           if (streak.current >= 3) this.news('streak', `Se cortó tu racha de ${streak.current} días. ¡Hoy podés empezar una nueva!`)
         }
-        streak = computeStreak({ weeks, practiced, events: this.streakEvents(), today })
+        streak = computeStreak({ weeks, practiced, events: this.streakEvents(), today, excluded: this.pausedDay() })
       }
 
       for (const m of streak.milestones) {
@@ -111,7 +112,7 @@ export class Rewards {
     const player = this.player()
     const { weeks, practiced } = this.streakData()
     const events = this.streakEvents()
-    const streak = computeStreak({ weeks, practiced, events, today })
+    const streak = computeStreak({ weeks, practiced, events, today, excluded: this.pausedDay() })
     const level = player.player_level
     const unlocked = this.unlockedAchievements()
     const stats = this.stats(streak.best, perfectWeeks(weeks, practiced, today).length, level)
@@ -298,6 +299,12 @@ export class Rewards {
       date: string
     }[]
     return { weeks, practiced: new Set(dates.map((d) => d.date)) }
+  }
+
+  // Los días con el curso en pausa no se esperan: no suman ni cortan la racha.
+  private pausedDay(): (date: string) => boolean {
+    const pauses = loadPauses(this.db)
+    return (date) => isPausedDay(pauses, date)
   }
 
   private streakEvents(): Map<string, 'protected' | 'broken'> {

@@ -1,17 +1,14 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
-import { FONTS, PALETTES, STYLES, type AppSettings, type StylePreview } from '@shared/settings'
-import { hasVoiceFor, pickVoice, type SpeechLang } from '@shared/speech'
+import { LANGUAGES, languageInfo, type CourseSummary, type LanguageId } from '@shared/languages'
+import { FONTS, PALETTES, STYLES, VOICE_SETTING, type AppSettings, type StylePreview } from '@shared/settings'
+import { hasVoiceFor, pickVoice, speechTag, type SpeechLang } from '@shared/speech'
 import Logo from '../components/Logo'
+import { courseLine } from '../courseText'
 import Segmented from '../components/Segmented'
 import { INSTALL_VOICE_HELP } from '../components/summaries/SpeechControls'
 import { useVoices } from '../hooks/useSpeech'
 import { useSettings } from '../theme/SettingsProvider'
-
-const VOICE_SAMPLES: Record<SpeechLang, string> = {
-  es: 'Hola, así suena la voz en español.',
-  en: 'Hello, this is how the English voice sounds.'
-}
 
 const FONT_FAMILIES: Record<string, string> = {
   estilo: 'var(--style-font)',
@@ -142,6 +139,7 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
         </div>
       </section>
 
+      <CourseSettings />
       <VoiceSettings />
       <ClaudeConnection status={status} />
     </>
@@ -179,62 +177,188 @@ function Row({ label, children }: { label: string; children: React.ReactNode }):
   )
 }
 
+const VOICE_SAMPLES: Record<SpeechLang, string> = {
+  es: 'Hola, así suena la voz en español.',
+  en: 'Hello, this is how the English voice sounds.',
+  pt: 'Olá, é assim que soa a voz em português.',
+  it: 'Ciao, così suona la voce in italiano.',
+  fr: 'Bonjour, voici la voix en français.'
+}
+
+const VOICE_LANGS: { lang: SpeechLang; label: string }[] = [
+  { lang: 'es', label: 'Español' },
+  ...LANGUAGES.map((l) => ({ lang: l.id, label: l.label }))
+]
+
 function VoiceSettings(): React.JSX.Element {
   const { settings, update } = useSettings()
   const voices = useVoices()
+  const missing = VOICE_LANGS.filter(({ lang }) => !hasVoiceFor(voices, lang))
 
   const test = (lang: SpeechLang): void => {
-    const voice = pickVoice(voices, lang, lang === 'es' ? settings.voiceEs : settings.voiceEn)
+    const voice = pickVoice(voices, lang, settings[VOICE_SETTING[lang]])
     speechSynthesis.cancel()
     const utterance = new SpeechSynthesisUtterance(VOICE_SAMPLES[lang])
-    if (voice) {
-      utterance.voice = voice
-      utterance.lang = voice.lang
-    }
+    utterance.lang = voice?.lang ?? speechTag(lang)
+    if (voice) utterance.voice = voice
     speechSynthesis.speak(utterance)
-  }
-
-  const selector = (lang: SpeechLang, value: string | null, onChange: (name: string | null) => void): React.JSX.Element => {
-    const automatic = pickVoice(voices, lang)
-    return (
-      <div className="row">
-        <select value={value ?? ''} onChange={(e) => onChange(e.target.value || null)}>
-          <option value="">Automática{automatic ? ` (${automatic.name})` : ' (no hay)'}</option>
-          {voices.map((v) => (
-            <option key={v.name} value={v.name}>
-              {v.name} · {v.lang}
-            </option>
-          ))}
-        </select>
-        <button type="button" className="chip" onClick={() => test(lang)}>
-          Probar
-        </button>
-      </div>
-    )
   }
 
   return (
     <section className="card stack">
       <h2>Lectura en voz alta</h2>
       <p className="muted">
-        Al escuchar un resumen, las partes en español se leen con una voz y las partes en inglés con otra, para que cada una tenga la
-        pronunciación correcta.
+        Al escuchar un resumen, las partes en español se leen con una voz y las del idioma que estudiás con otra, para que cada una tenga
+        la pronunciación correcta.
       </p>
       {voices.length === 0 ? (
         <p className="warn-text">Windows no tiene voces instaladas. {INSTALL_VOICE_HELP}</p>
       ) : (
         <>
-          <Row label="Voz en español">{selector('es', settings.voiceEs, (name) => update({ voiceEs: name }))}</Row>
-          <Row label="Voz en inglés">{selector('en', settings.voiceEn, (name) => update({ voiceEn: name }))}</Row>
-          {!hasVoiceFor(voices, 'es') && (
+          {VOICE_LANGS.map(({ lang, label }) => {
+            const automatic = pickVoice(voices, lang)
+            const key = VOICE_SETTING[lang]
+            return (
+              <Row key={lang} label={`Voz en ${label.toLowerCase()}`}>
+                <div className="row">
+                  <select id={`voice-${lang}`} value={settings[key] ?? ''} onChange={(e) => update({ [key]: e.target.value || null })}>
+                    <option value="">Automática{automatic ? ` (${automatic.name})` : ' (no hay)'}</option>
+                    {voices.map((v) => (
+                      <option key={v.name} value={v.name}>
+                        {v.name} · {v.lang}
+                      </option>
+                    ))}
+                  </select>
+                  <button type="button" className="chip" onClick={() => test(lang)}>
+                    Probar
+                  </button>
+                </div>
+              </Row>
+            )
+          })}
+          {missing.length > 0 && (
             <p className="warn-text small">
-              No hay ninguna voz en español instalada, así que el español se lee con pronunciación inglesa. {INSTALL_VOICE_HELP} Conviene
-              «Español (México)».
+              No hay voz instalada para {missing.map((m) => m.label.toLowerCase()).join(', ')}: esas partes se leen con otra pronunciación.{' '}
+              {INSTALL_VOICE_HELP}
             </p>
           )}
-          {!hasVoiceFor(voices, 'en') && <p className="warn-text small">No hay ninguna voz en inglés instalada. {INSTALL_VOICE_HELP}</p>}
         </>
       )}
+    </section>
+  )
+}
+
+// Los cursos: el que está activo se puede pausar o reanudar, y cualquiera se puede reiniciar.
+function CourseSettings(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  const [courses, setCourses] = useState<CourseSummary[] | null>(null)
+  const [paused, setPaused] = useState<string | null>(null)
+  const [confirming, setConfirming] = useState<LanguageId | null>(null)
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const load = useCallback(() => {
+    window.api.getCourses().then(setCourses).catch((err: Error) => setError(err.message))
+    window.api
+      .getProgress()
+      .then((p) => setPaused(p.pausedSince))
+      .catch(() => undefined)
+  }, [])
+
+  useEffect(load, [load, settings.language])
+
+  const run = (action: () => Promise<unknown>): void => {
+    setBusy(true)
+    setError(null)
+    action()
+      .then(load)
+      .catch((err: Error) => setError(err.message))
+      .finally(() => setBusy(false))
+  }
+
+  const active = courses?.find((c) => c.language === settings.language)
+
+  return (
+    <section className="card stack">
+      <h2>Cursos</h2>
+      <p className="muted">
+        Cada idioma es un curso aparte, con sus semanas, faltas, exámenes, racha y logros. El idioma se cambia desde la barra lateral.
+      </p>
+      {!courses ? (
+        <p className="muted">Cargando…</p>
+      ) : (
+        <ul className="course-list">
+          {courses.map((course) => {
+            const info = languageInfo(course.language)
+            const isActive = course.language === settings.language
+            return (
+              <li key={course.language} className={`course-row${isActive ? ' active' : ''}`}>
+                <span className="lang-badge" style={{ background: info.color }}>
+                  {info.code}
+                </span>
+                <div className="course-text">
+                  <strong>{info.label}</strong>
+                  <span className="muted small">{courseLine(course)}</span>
+                </div>
+                <div className="row">
+                  {!isActive && course.available && (
+                    <button type="button" className="chip" disabled={busy} onClick={() => update({ language: course.language })}>
+                      Abrir
+                    </button>
+                  )}
+                  {course.started &&
+                    (confirming === course.language ? (
+                      <>
+                        <button
+                          type="button"
+                          className="chip danger"
+                          disabled={busy}
+                          onClick={() => {
+                            setConfirming(null)
+                            run(() => window.api.resetCourse(course.language))
+                          }}
+                        >
+                          Sí, borrar
+                        </button>
+                        <button type="button" className="chip" onClick={() => setConfirming(null)}>
+                          Cancelar
+                        </button>
+                      </>
+                    ) : (
+                      <button type="button" className="chip" disabled={busy} onClick={() => setConfirming(course.language)}>
+                        Reiniciar
+                      </button>
+                    ))}
+                </div>
+                {confirming === course.language && (
+                  <p className="warn-text small course-warning">
+                    Se borra el progreso de {info.name}: semanas, prácticas, exámenes, racha, experiencia y logros. Los resúmenes guardados y
+                    los ajustes se mantienen.
+                  </p>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+      )}
+      {active?.started && (
+        <div className="notice row spread">
+          <span>
+            {paused
+              ? `El curso de ${languageInfo(settings.language).name} está en pausa desde el ${paused.split('-').reverse().slice(0, 2).join('/')}: no cuenta faltas ni corta la racha.`
+              : `Si vas a dejar ${languageInfo(settings.language).name} por un tiempo, pausalo: así no junta faltas ni pierde la racha.`}
+          </span>
+          <button
+            type="button"
+            className="btn secondary"
+            disabled={busy}
+            onClick={() => run(() => (paused ? window.api.resumeCourse() : window.api.pauseCourse()))}
+          >
+            {paused ? 'Reanudar curso' : 'Pausar curso'}
+          </button>
+        </div>
+      )}
+      {error && <p className="error">{error}</p>}
     </section>
   )
 }

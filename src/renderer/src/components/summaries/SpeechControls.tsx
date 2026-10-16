@@ -1,3 +1,4 @@
+import { useCourse } from '../../hooks/useCourse'
 import { useSpeech } from '../../hooks/useSpeech'
 
 const RATES = [0.8, 1, 1.2]
@@ -7,6 +8,7 @@ export const INSTALL_VOICE_HELP =
 
 export default function SpeechControls({ getText }: { getText: () => string }): React.JSX.Element {
   const speech = useSpeech()
+  const course = useCourse()
 
   if (!speech.supported) {
     return <p className="muted small">La lectura en voz alta no está disponible: Windows no tiene voces instaladas. {INSTALL_VOICE_HELP}</p>
@@ -44,9 +46,13 @@ export default function SpeechControls({ getText }: { getText: () => string }): 
         </select>
       </div>
       {!speech.hasSpanish && (
-        <p className="warn-text small">Windows no tiene una voz en español: el texto en español se va a leer con pronunciación inglesa. {INSTALL_VOICE_HELP}</p>
+        <p className="warn-text small">Windows no tiene una voz en español: el texto en español se va a leer con otra pronunciación. {INSTALL_VOICE_HELP}</p>
       )}
-      {!speech.hasEnglish && <p className="warn-text small">Windows no tiene una voz en inglés: los ejemplos se van a leer con otra voz. {INSTALL_VOICE_HELP}</p>}
+      {!speech.hasTarget && (
+        <p className="warn-text small">
+          Windows no tiene una voz en {course.name}: los ejemplos se van a leer con otra voz. {INSTALL_VOICE_HELP}
+        </p>
+      )}
     </div>
   )
 }

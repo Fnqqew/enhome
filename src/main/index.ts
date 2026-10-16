@@ -3,7 +3,8 @@ import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
 import { watchDayChange } from './day-watcher'
-import { openDatabase } from './db/database'
+import { openDatabase, type Db } from './db/database'
+import type { LanguageId } from '../shared/languages'
 import { loadSettings } from './db/settings-repo'
 import { registerIpc } from './ipc'
 import { applyStyle, styleHash, windowColor } from './window-style'
@@ -87,15 +88,34 @@ if (!app.requestSingleInstanceLock()) {
   })
 
   app.whenReady().then(() => {
-    const db = openDatabase(join(app.getPath('userData'), migrateOldData()))
-    app.on('will-quit', () => db.close())
+    const dataDir = app.getPath('userData')
+    // La base principal es la del curso de inglés y además guarda los ajustes de toda la app.
+    const db = openDatabase(join(dataDir, migrateOldData()))
+    const courseDbs = new Map<LanguageId, Db>([['en', db]])
+    const coursePath = (language: LanguageId): string => join(dataDir, `enhome-${language}.db`)
+    const courseDb = (language: LanguageId): Db => {
+      let course = courseDbs.get(language)
+      if (!course) {
+        course = openDatabase(coursePath(language))
+        courseDbs.set(language, course)
+      }
+      return course
+    }
+    app.on('will-quit', () => courseDbs.forEach((course) => course.close()))
 
     // En desarrollo el temario se lee del repo; instalada, de los recursos de la app.
     const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-    // Al cambiar el estilo se repintan la ventana, el ícono de la barra de tareas y el del escritorio.
-    const { today } = registerIpc(db, contentDir, is.dev, (settings) => {
-      const win = currentWindow()
-      if (win) applyStyle(win, settings)
+    const { today } = registerIpc({
+      db,
+      courseDb,
+      courseExists: (language) => language === 'en' || existsSync(coursePath(language)),
+      contentDir,
+      isDev: is.dev,
+      // Al cambiar el estilo se repintan la ventana, el ícono de la barra de tareas y el del escritorio.
+      onSettingsChange: (settings) => {
+        const win = currentWindow()
+        if (win) applyStyle(win, settings)
+      }
     })
 
     ipcMain.on(IPC.windowMinimize, () => currentWindow()?.minimize())

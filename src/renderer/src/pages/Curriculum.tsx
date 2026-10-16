@@ -27,12 +27,12 @@ const fold = (value: string): string =>
 
 const subtopicText = (s: Subtopic): string =>
   fold(
-    [s.title, s.goal, ...s.keyPoints, ...s.examples.flatMap((e) => [e.en, e.es]), ...s.commonMistakes.flatMap((m) => [m.wrong, m.right, m.why])].join(
+    [s.title, s.goal, ...s.keyPoints, ...s.examples.flatMap((e) => [e.target, e.es]), ...s.commonMistakes.flatMap((m) => [m.wrong, m.right, m.why])].join(
       ' '
     )
   )
 
-const topicText = (t: CurriculumMapTopic): string => fold([t.title, t.titleEn, t.description, ...t.objectives].join(' '))
+const topicText = (t: CurriculumMapTopic): string => fold([t.title, t.targetTitle, t.description, ...t.objectives].join(' '))
 
 type Toggle = (key: string) => void
 
@@ -259,7 +259,7 @@ function TopicItem({
         <span className="topic-heading">
           <span className="topic-title">{topic.title}</span>
           <span className="muted topic-sub">
-            {topic.titleEn} · {topic.subtopics.length} subtemas
+            {topic.targetTitle} · {topic.subtopics.length} subtemas
           </span>
         </span>
         <span className={`status-chip ${topic.status}`}>{STATUS_LABEL[topic.status]}</span>
@@ -323,12 +323,12 @@ function SubtopicItem({
   onToggle: () => void
 }): React.JSX.Element {
   const bodyRef = useRef<HTMLDivElement>(null)
-  // Los ejemplos van en cursiva para que se lean con la voz en inglés.
+  // Los ejemplos van en cursiva para que se lean con la voz del idioma del curso.
   const speechText = [
     subtopic.title,
     subtopic.goal,
     ...subtopic.keyPoints,
-    ...subtopic.examples.map((e) => `*${e.en}* — ${e.es}`),
+    ...subtopic.examples.map((e) => `*${e.target}* — ${e.es}`),
     ...subtopic.commonMistakes.map((m) => `Error común: *${m.wrong}*. Correcto: *${m.right}*. ${m.why}`)
   ].join('\n')
 
@@ -366,7 +366,7 @@ function SubtopicItem({
             <ul className="examples">
               {subtopic.examples.map((example, i) => (
                 <li key={i}>
-                  <span className="en">{example.en}</span> <span className="muted">— {example.es}</span>
+                  <span className="en">{example.target}</span> <span className="muted">— {example.es}</span>
                 </li>
               ))}
             </ul>

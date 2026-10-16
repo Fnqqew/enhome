@@ -1,6 +1,7 @@
 // Preferencias de personalización, compartidas entre el proceso principal y la interfaz.
 
 import { z } from 'zod'
+import { LANGUAGE_IDS, type LanguageId } from './languages'
 import { SUMMARY_TYPE_IDS } from './summaries'
 
 // Los colores con los que se dibuja la vista previa de un estilo y el fondo de la ventana al abrir.
@@ -104,11 +105,25 @@ export const settingsSchema = z.object({
   fontSize: z.enum(['sm', 'md', 'lg']),
   density: z.enum(['compact', 'comfortable']),
   favoriteSummaryTypes: z.array(z.enum(SUMMARY_TYPE_IDS)).max(SUMMARY_TYPE_IDS.length),
+  // El curso que se está viendo: cada idioma tiene su propio progreso.
+  language: z.enum(LANGUAGE_IDS),
   // Nombre de la voz del sistema elegida para cada idioma; null = automática.
   voiceEs: z.string().max(200).nullable(),
   voiceEn: z.string().max(200).nullable(),
+  voicePt: z.string().max(200).nullable(),
+  voiceIt: z.string().max(200).nullable(),
+  voiceFr: z.string().max(200).nullable(),
   reduceMotion: z.boolean()
 })
+
+// Qué ajuste guarda la voz de cada idioma.
+export const VOICE_SETTING = {
+  es: 'voiceEs',
+  en: 'voiceEn',
+  pt: 'voicePt',
+  it: 'voiceIt',
+  fr: 'voiceFr'
+} as const satisfies Record<'es' | LanguageId, keyof z.infer<typeof settingsSchema>>
 
 export type AppSettings = z.infer<typeof settingsSchema>
 
@@ -120,7 +135,11 @@ export const DEFAULT_SETTINGS: AppSettings = {
   fontSize: 'md',
   density: 'comfortable',
   favoriteSummaryTypes: [],
+  language: 'en',
   voiceEs: null,
   voiceEn: null,
+  voicePt: null,
+  voiceIt: null,
+  voiceFr: null,
   reduceMotion: false
 }

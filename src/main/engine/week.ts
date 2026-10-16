@@ -23,6 +23,9 @@ export interface WeekRecord {
   status: 'active' | 'passed' | 'failed' | 'incomplete'
   recoveredOn: string | null
   units: UnitRecord[]
+  // Días de la semana que cayeron en una pausa del curso, y si el curso sigue en pausa hoy.
+  pausedDays?: ReadonlySet<string>
+  paused?: boolean
 }
 
 export interface WeekComputation {
@@ -50,6 +53,7 @@ export function firstWeekFor(today: string): { weekStart: string; startsOn: stri
 export function computeWeek(week: WeekRecord, today: string): WeekComputation {
   const offset = daysBetween(week.weekStart, today)
   const practicedDates = new Set(week.units.flatMap((u) => (u.completedOn ? [u.completedOn] : [])))
+  const pausedDays = week.pausedDays ?? new Set<string>()
   const missed: number[] = []
 
   const days: WeekDayView[] = WEEKDAY_NAMES.map((_, i) => {
@@ -59,6 +63,7 @@ export function computeWeek(week: WeekRecord, today: string): WeekComputation {
     if (i >= PRACTICE_DAYS) status = 'weekend'
     else if (date < week.startsOn) status = 'skipped'
     else if (practiced) status = 'done'
+    else if (pausedDays.has(date) && date <= today) status = 'paused'
     else if (date > today) status = 'upcoming'
     else if (date === today) status = 'today'
     else {
@@ -82,12 +87,14 @@ export function computeWeek(week: WeekRecord, today: string): WeekComputation {
 
   let practiceBlockedReason: string | null = null
   if (!active || offset > 6) practiceBlockedReason = 'La semana ya terminó.'
+  else if (week.paused) practiceBlockedReason = 'El curso está en pausa. Reanudalo para seguir practicando.'
   else if (offset < 0) practiceBlockedReason = `La semana empieza el ${WEEKDAY_NAMES[isoWeekday(week.startsOn) - 1]} ${formatDayMonth(week.startsOn)}.`
   else if (!nextUnit) practiceBlockedReason = 'Ya completaste todas las prácticas de la semana.'
   else if (nextUnit.index > allowedIndex) practiceBlockedReason = `La práctica ${nextUnit.index} se habilita el ${WEEKDAY_NAMES[nextUnit.index - 1]}.`
 
   let examStatus: ExamStatus
   if (!active || offset > 6) examStatus = 'closed'
+  else if (week.paused) examStatus = 'paused'
   else if (effectiveFaltas >= MAX_FALTAS) examStatus = 'locked'
   else if (completedUnits < units.length) examStatus = 'not-ready'
   else if (offset < EXAM_OPENS_ON_DAY) examStatus = 'too-early'
@@ -103,7 +110,7 @@ export function computeWeek(week: WeekRecord, today: string): WeekComputation {
     nextUnit,
     canPracticeNow: practiceBlockedReason === null,
     practiceBlockedReason,
-    canRecover: active && offset === 6 && faltas > 0 && week.recoveredOn === null,
+    canRecover: active && !week.paused && offset === 6 && faltas > 0 && week.recoveredOn === null,
     examStatus
   }
 }
@@ -124,5 +131,7 @@ export function describeExam(c: WeekComputation, week: WeekRecord): string {
         : `Examen bloqueado por ${c.effectiveFaltas} faltas. La semana que viene seguís con este tópico.`
     case 'closed':
       return 'La semana terminó.'
+    case 'paused':
+      return 'El curso está en pausa: el examen se habilita cuando lo reanudes.'
   }
 }

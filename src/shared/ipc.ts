@@ -3,6 +3,7 @@
 import type { CurriculumMap, CurriculumTopic } from './curriculum'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { FeedbackNote, NewFeedback } from './feedback'
+import type { CourseSummary, LanguageId } from './languages'
 import type { AppInfo, PlacementView, ProgressState } from './progress'
 import type { AppSettings } from './settings'
 import type { ClaudeAnswer, SummariesIndex, SummaryTypeId, SummaryView } from './summaries'
@@ -18,10 +19,15 @@ export const IPC = {
   curriculumList: 'curriculum:list',
   curriculumMap: 'curriculum:map',
   progressGet: 'progress:get',
+  coursesList: 'courses:list',
+  coursePause: 'course:pause',
+  courseResume: 'course:resume',
+  courseReset: 'course:reset',
   practiceComplete: 'unit:complete',
   recoveryRecord: 'recovery:record',
   placementStart: 'placement:start',
   placementGet: 'placement:get',
+  placementSkip: 'placement:skip',
   placementAnswer: 'placement:answer',
   practiceGet: 'practice:get',
   practiceStart: 'practice:start',
@@ -89,10 +95,15 @@ export interface Api {
   getCurriculum(): Promise<CurriculumTopic[]>
   getCurriculumMap(): Promise<CurriculumMap>
   getProgress(): Promise<ProgressState>
+  getCourses(): Promise<CourseSummary[]>
+  pauseCourse(): Promise<ProgressState>
+  resumeCourse(): Promise<ProgressState>
+  resetCourse(language: LanguageId): Promise<CourseSummary>
   completePracticeUnit(unitId: number): Promise<ProgressState>
   recordRecoverySession(): Promise<ProgressState>
   startPlacement(): Promise<PlacementView>
   getPlacement(): Promise<PlacementView>
+  startFromScratch(): Promise<PlacementView>
   answerPlacement(questionId: string, choice: number): Promise<PlacementView>
   getPractice(): Promise<PracticeView>
   startPractice(): Promise<PracticeView>

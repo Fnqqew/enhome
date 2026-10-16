@@ -122,14 +122,14 @@ function Intro({
   onStart: () => void
 }): React.JSX.Element {
   const contentRef = useRef<HTMLDivElement>(null)
-  // Los ejemplos van en cursiva para que se lean con la voz en inglés.
+  // Los ejemplos van en cursiva para que se lean con la voz del idioma del curso.
   const speechText = [
     view.subtopicTitle,
     view.goal,
     'Puntos clave:',
     ...view.keyPoints,
     'Ejemplos:',
-    ...view.examples.map((e) => `*${e.en}* — ${e.es}`)
+    ...view.examples.map((e) => `*${e.target}* — ${e.es}`)
   ].join('\n')
 
   return (
@@ -157,7 +157,7 @@ function Intro({
         <ul className="examples">
           {view.examples.map((example, i) => (
             <li key={i}>
-              <span className="en">{example.en}</span> <span className="muted">— {example.es}</span>
+              <span className="en">{example.target}</span> <span className="muted">— {example.es}</span>
             </li>
           ))}
         </ul>

@@ -10,19 +10,22 @@ import {
   applyCorrections,
   CORRECTIONS_GUIDE,
   numbered,
-  QUALITY_CHECKLIST,
+  qualityChecklist,
   REVIEW_EFFORT,
-  REVIEW_SYSTEM_PROMPT,
-  SELF_CHECK
+  reviewSystemPrompt,
+  roleSystemPrompt,
+  selfCheck
 } from '../claude/quality'
+import { languageInfo } from '../../shared/languages'
 
 const TIMEOUT_MS = 240_000
 const MAX_ATTEMPTS = 2
 export const MIN_MARKDOWN_LENGTH = 80
 
-const SYSTEM_PROMPT =
-  'Sos un docente de inglés para hispanohablantes de Argentina. Escribís materiales de estudio claros, ordenados y sin errores. Respondé solo con el JSON pedido.'
+const systemPrompt = (topic: CurriculumTopic): string =>
+  roleSystemPrompt(topic.language, 'docente', 'Escribís materiales de estudio claros, ordenados y sin errores.')
 
+// Qué es cada tipo de resumen. {idioma} se reemplaza por el idioma del curso.
 const GUIDANCE: Record<GeneratedSummaryType, string> = {
   esquema: 'Un esquema jerárquico con viñetas cortas: lo esencial de cada subtema, sin párrafos largos. Entre 150 y 350 palabras.',
   tablas: 'Tablas comparativas con las formas, los usos y ejemplos de cada subtema, con una frase de introducción antes de cada tabla. Entre 200 y 450 palabras.',
@@ -34,17 +37,19 @@ const GUIDANCE: Record<GeneratedSummaryType, string> = {
   'paso-a-paso':
     'Cómo construir las oraciones paso a paso, como una receta: pasos numerados para afirmar, negar y preguntar según corresponda, con un ejemplo armado en cada paso. Entre 250 y 500 palabras.',
   historia:
-    'Una mini historia en inglés de 150 a 250 palabras que use el tema de forma natural, seguida de su traducción y de notas que señalen dónde aparece cada punto del tópico.',
-  dialogo: 'Un diálogo cotidiano en inglés entre dos personas, de 12 a 20 intervenciones, que use el tema, con la traducción de cada línea y notas breves sobre lo que se practica.',
+    'Una mini historia en {idioma} de 150 a 250 palabras que use el tema de forma natural, seguida de su traducción y de notas que señalen dónde aparece cada punto del tópico.',
+  dialogo: 'Un diálogo cotidiano en {idioma} entre dos personas, de 12 a 20 intervenciones, que use el tema, con la traducción de cada línea y notas breves sobre lo que se practica.',
   simple: 'La explicación más simple posible, para alguien que nunca estudió gramática: pocas palabras técnicas, ideas cortas y uno o dos ejemplos por idea. Entre 150 y 300 palabras.',
   preguntas: 'Entre 6 y 10 preguntas frecuentes que se hace un alumno sobre este tópico, cada una con una respuesta clara y un ejemplo.',
   trucos: 'Trucos para recordar: reglas mnemotécnicas, asociaciones y atajos para no equivocarse, cada uno con un ejemplo. Entre 200 y 400 palabras.',
   tarjetas:
-    'Entre 10 y 14 tarjetas de repaso que cubran todos los subtemas: front es una pregunta o consigna corta (en español, o una oración en inglés para completar), back es la respuesta breve y example es un ejemplo en inglés con su traducción entre paréntesis.'
+    'Entre 10 y 14 tarjetas de repaso que cubran todos los subtemas: front es una pregunta o consigna corta (en español, o una oración en {idioma} para completar), back es la respuesta breve y example es un ejemplo en {idioma} con su traducción entre paréntesis.'
 }
 
-const WRITING_RULES = `Reglas:
-- Explicaciones en español rioplatense; ejemplos en inglés con su traducción.
+const guidance = (topic: CurriculumTopic, type: GeneratedSummaryType): string => GUIDANCE[type].replaceAll('{idioma}', languageInfo(topic.language).name)
+
+const writingRules = (topic: CurriculumTopic): string => `Reglas:
+- Explicaciones en español rioplatense; ejemplos en ${languageInfo(topic.language).name} con su traducción, en *cursiva* para que se lean con la voz del idioma.
 - Solo sobre este tópico y su nivel: no adelantes contenidos de tópicos posteriores.
 - No inventes reglas: todo tiene que ser coherente con el resumen base.`
 
@@ -69,7 +74,7 @@ function topicContext(topic: CurriculumTopic): string {
         }`
     )
     .join('\n\n')
-  return `Tópico: ${topic.title} (${topic.titleEn}), nivel ${topic.level}.
+  return `Tópico: ${topic.title} (${topic.targetTitle}), nivel ${topic.level}.
 ${topic.description}
 
 ${subtopics}
@@ -83,21 +88,21 @@ ${topic.summary}
 export function buildSummaryPrompt(topic: CurriculumTopic, type: GeneratedSummaryType): string {
   return `${topicContext(topic)}
 
-Escribí un resumen de tipo «${SUMMARY_TYPES[type].label}»: ${GUIDANCE[type]}
+Escribí un resumen de tipo «${SUMMARY_TYPES[type].label}»: ${guidance(topic, type)}
 
-${WRITING_RULES}
+${writingRules(topic)}
 ${type === 'tarjetas' ? '' : MARKDOWN_RULES}
 
-${SELF_CHECK}`
+${selfCheck(topic.language)}`
 }
 
 function reviewPrompt(topic: CurriculumTopic, type: GeneratedSummaryType, body: string, outputGuide: string): string {
   return `${topicContext(topic)}
 
-Otro docente escribió este material de tipo «${SUMMARY_TYPES[type].label}» (${GUIDANCE[type]}). Revisalo con máximo rigor.
-${QUALITY_CHECKLIST}
+Otro docente escribió este material de tipo «${SUMMARY_TYPES[type].label}» (${guidance(topic, type)}). Revisalo con máximo rigor.
+${qualityChecklist(topic.language)}
 - Las reglas gramaticales son correctas y coinciden con el resumen base.
-- Los ejemplos en inglés son correctos y naturales, y sus traducciones son fieles.
+- Los ejemplos en ${languageInfo(topic.language).name} son correctos y naturales, y sus traducciones son fieles.
 - No hay información inventada, contenido de otros niveles ni contradicciones.
 
 ${outputGuide}
@@ -107,9 +112,9 @@ ${body}`
 }
 
 async function generateMarkdown(topic: CurriculumTopic, type: GeneratedSummaryType, ask: Ask): Promise<SummaryContent> {
-  const { markdown } = await ask({ systemPrompt: SYSTEM_PROMPT, prompt: buildSummaryPrompt(topic, type), schema: markdownSchema, timeoutMs: TIMEOUT_MS })
+  const { markdown } = await ask({ systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, type), schema: markdownSchema, timeoutMs: TIMEOUT_MS })
   const review = await ask({
-    systemPrompt: REVIEW_SYSTEM_PROMPT,
+    systemPrompt: reviewSystemPrompt(topic.language),
     prompt: reviewPrompt(
       topic,
       type,
@@ -129,9 +134,9 @@ En issues anotá, en una frase cada uno, los problemas que encontraste (vacío s
 }
 
 async function generateCards(topic: CurriculumTopic, ask: Ask): Promise<SummaryContent> {
-  const { cards } = await ask({ systemPrompt: SYSTEM_PROMPT, prompt: buildSummaryPrompt(topic, 'tarjetas'), schema: cardsSchema, timeoutMs: TIMEOUT_MS })
+  const { cards } = await ask({ systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, 'tarjetas'), schema: cardsSchema, timeoutMs: TIMEOUT_MS })
   const review = await ask({
-    systemPrompt: REVIEW_SYSTEM_PROMPT,
+    systemPrompt: reviewSystemPrompt(topic.language),
     prompt: reviewPrompt(topic, 'tarjetas', numbered(cards), CORRECTIONS_GUIDE),
     schema: cardsReviewSchema,
     effort: REVIEW_EFFORT,
@@ -176,7 +181,7 @@ export async function answerAboutText(
   ask: Ask = askClaude
 ): Promise<string> {
   const { answer } = await ask({
-    systemPrompt: 'Sos un docente de inglés para hispanohablantes de Argentina. Respondés dudas de forma breve, clara y correcta. Respondé solo con el JSON pedido.',
+    systemPrompt: roleSystemPrompt(topic.language, 'docente', 'Respondés dudas de forma breve, clara y correcta.'),
     prompt: `${topicContext(topic)}
 
 El alumno seleccionó este fragmento mientras estudiaba:
@@ -185,9 +190,9 @@ ${fragment}
 """
 Su pregunta: ${question}
 
-Respondé en español rioplatense, en Markdown y en no más de 200 palabras, con al menos un ejemplo en inglés con su traducción cuando ayude. Si la pregunta se va del tema, respondé lo esencial y volvé al tópico.
+Respondé en español rioplatense, en Markdown y en no más de 200 palabras, con al menos un ejemplo en ${languageInfo(topic.language).name} con su traducción cuando ayude. Si la pregunta se va del tema, respondé lo esencial y volvé al tópico.
 
-${SELF_CHECK}`,
+${selfCheck(topic.language)}`,
     schema: answerSchema
   })
   return answer

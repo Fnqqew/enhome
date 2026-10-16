@@ -9,7 +9,8 @@ const STATUS_LABEL: Record<Exclude<DayStatus, 'weekend'>, string> = {
   done: 'Hecho',
   missed: 'Falta',
   recovered: 'Recuperada',
-  skipped: '—'
+  skipped: '—',
+  paused: 'Pausa'
 }
 
 export default function WeekCalendar({ days, today }: { days: WeekDayView[]; today: string }): React.JSX.Element {

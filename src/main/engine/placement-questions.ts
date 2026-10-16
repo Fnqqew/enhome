@@ -7,17 +7,19 @@ import {
   applyCorrections,
   CORRECTIONS_GUIDE,
   numbered,
-  QUALITY_CHECKLIST,
+  qualityChecklist,
   REVIEW_EFFORT,
-  REVIEW_SYSTEM_PROMPT,
-  SELF_CHECK
+  reviewSystemPrompt,
+  roleSystemPrompt,
+  selfCheck
 } from '../claude/quality'
+import { languageInfo } from '../../shared/languages'
 import { shuffleChoices } from '../shuffle'
 import type { GeneratedQuestion } from './placement'
 import { PLACEMENT_QUESTIONS_PER_TOPIC } from './rules'
 
-const SYSTEM_PROMPT =
-  'Sos un evaluador de inglés para hispanohablantes de Argentina. Armás preguntas para un examen de nivelación. Respondé solo con el JSON pedido.'
+const systemPrompt = (topic: CurriculumTopic): string =>
+  roleSystemPrompt(topic.language, 'evaluador', 'Armás preguntas para un examen de nivelación.')
 
 const MAX_ATTEMPTS = 2
 
@@ -49,14 +51,14 @@ function topicContext(topic: CurriculumTopic): string {
   const subtopics = topic.subtopics
     .map((s) => `- ${s.id} (día ${s.day}): ${s.title}. ${s.goal} Puntos clave: ${s.keyPoints.join(' ')}`)
     .join('\n')
-  return `Tópico: ${topic.title} (${topic.titleEn}), nivel ${topic.level}.
+  return `Tópico: ${topic.title} (${topic.targetTitle}), nivel ${topic.level}.
 Subtemas:
 ${subtopics}`
 }
 
-const FORMAT_RULES = `- Cada pregunta evalúa un subtema distinto. En subtopicId poné el id exacto del subtema.
+const formatRules = (topic: CurriculumTopic): string => `- Cada pregunta evalúa un subtema distinto. En subtopicId poné el id exacto del subtema.
 - instruction: la consigna en español, breve (por ejemplo: "Elegí la opción correcta para completar la oración.").
-- prompt: la oración o el texto en inglés. Marcá el hueco con ___ cuando corresponda. Podés usar un texto corto de 2 o 3 oraciones con una pregunta de comprensión.
+- prompt: la oración o el texto en ${languageInfo(topic.language).name}. Marcá el hueco con ___ cuando corresponda. Podés usar un texto corto de 2 o 3 oraciones con una pregunta de comprensión.
 - options: exactamente 4 opciones plausibles y distintas entre sí, con una sola correcta sin ambigüedad. Nada de "todas las anteriores".
 - correctIndex: la posición (0 a 3) de la opción correcta.
 - explanation: por qué es la correcta, en español y en una oración.`
@@ -66,20 +68,20 @@ function buildPrompt(topic: CurriculumTopic): string {
 
 Generá ${PLACEMENT_QUESTIONS_PER_TOPIC} preguntas de opción múltiple para decidir si el alumno ya domina este tópico.
 Reglas:
-${FORMAT_RULES}
+${formatRules(topic)}
 - Vocabulario acorde al nivel ${topic.level}.
 
-${SELF_CHECK}`
+${selfCheck(topic.language)}`
 }
 
 function buildReviewPrompt(topic: CurriculumTopic, questions: GeneratedQuestion[]): string {
   return `${topicContext(topic)}
 
 Otro evaluador armó estas preguntas para un examen de nivelación. Revisalas una por una.
-${QUALITY_CHECKLIST}
+${qualityChecklist(topic.language)}
 
 Si una pregunta tiene un error, corregila; si no tiene arreglo, reemplazala por otra del mismo subtema. Las preguntas corregidas tienen que respetar estas reglas:
-${FORMAT_RULES}
+${formatRules(topic)}
 ${CORRECTIONS_GUIDE}
 
 Preguntas a revisar:
@@ -92,8 +94,8 @@ export async function generatePlacementQuestions(topic: CurriculumTopic, ask: As
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const { questions } = await ask({ systemPrompt: SYSTEM_PROMPT, prompt: buildPrompt(topic), schema: schema.generation })
-      const review = await ask({ systemPrompt: REVIEW_SYSTEM_PROMPT, prompt: buildReviewPrompt(topic, questions), schema: schema.review, effort: REVIEW_EFFORT })
+      const { questions } = await ask({ systemPrompt: systemPrompt(topic), prompt: buildPrompt(topic), schema: schema.generation })
+      const review = await ask({ systemPrompt: reviewSystemPrompt(topic.language), prompt: buildReviewPrompt(topic, questions), schema: schema.review, effort: REVIEW_EFFORT })
       if (review.issues.length > 0) {
         console.info(`[placement] La revisión encontró ${review.issues.length} problema(s):\n- ${review.issues.join('\n- ')}`)
       }

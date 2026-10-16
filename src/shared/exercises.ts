@@ -259,7 +259,7 @@ export type PracticeView =
       subtopicTitle: string
       goal: string
       keyPoints: string[]
-      examples: { en: string; es: string }[]
+      examples: { target: string; es: string }[]
     }
   | { status: 'session'; session: SessionView }
 

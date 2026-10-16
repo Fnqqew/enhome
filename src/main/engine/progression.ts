@@ -7,6 +7,7 @@ import { transaction, type Db } from '../db/database'
 import { detectWeakTopics, planCarryWeek, planLessonWeek, planRetryWeek, type AnswerTag, type PlannedUnit } from './planning'
 import { PASS_GRADE, PRACTICE_DAYS } from './rules'
 import { computeWeek, describeExam, firstWeekFor, type UnitRecord, type WeekRecord } from './week'
+import { isPausedDay, loadPauses, openPause } from './pauses'
 
 export class ProgressionError extends Error {}
 
@@ -79,7 +80,8 @@ export class Progression {
         reviewTopics: this.curriculum
           .filter((t) => statuses.get(t.id) === 'review')
           .map((t) => ({ id: t.id, title: t.title, level: t.level })),
-        attempts: progress ? { attempts: progress.attempts, failed: progress.failed_attempts } : null
+        attempts: progress ? { attempts: progress.attempts, failed: progress.failed_attempts } : null,
+        pausedSince: openPause(loadPauses(this.db))?.pausedOn ?? null
       }
     })
   }
@@ -183,6 +185,30 @@ export class Progression {
     })
   }
 
+  // Pausa el curso: desde hoy sus días no cuentan como faltas ni cortan la racha.
+  pause(today: string): void {
+    transaction(this.db, () => {
+      if (this.player().placement_done_at === null) throw new ProgressionError('Todavía no empezaste este curso.')
+      if (openPause(loadPauses(this.db))) throw new ProgressionError('El curso ya está en pausa.')
+      if (this.db.prepare("SELECT 1 FROM exams WHERE kind = 'weekly' AND status IN ('in_progress', 'paused')").get()) {
+        throw new ProgressionError('Terminá el examen semanal antes de pausar el curso.')
+      }
+      this.rollover(today)
+      this.db.prepare('INSERT INTO course_pauses (paused_on) VALUES (?)').run(today)
+    })
+  }
+
+  // Reanuda el curso: el día de hoy ya cuenta. Una pausa del mismo día no deja rastro.
+  resume(today: string): void {
+    transaction(this.db, () => {
+      const current = openPause(loadPauses(this.db))
+      if (!current) throw new ProgressionError('El curso no está en pausa.')
+      if (today <= current.pausedOn) this.db.prepare('DELETE FROM course_pauses WHERE resumed_on IS NULL').run()
+      else this.db.prepare('UPDATE course_pauses SET resumed_on = ? WHERE resumed_on IS NULL').run(today)
+      this.rollover(today)
+    })
+  }
+
   // startTopicId null significa que el alumno superó todo el temario disponible.
   applyPlacementResult(startTopicId: string | null, answers: AnswerTag[], today: string): void {
     transaction(this.db, () => {
@@ -250,6 +276,7 @@ export class Progression {
         DELETE FROM exam_answers;
         DELETE FROM exams;
         DELETE FROM topic_progress;
+        DELETE FROM course_pauses;
         UPDATE player SET cefr_level = NULL, placement_done_at = NULL, xp = 0, player_level = 1,
           streak = 0, best_streak = 0, last_practice_date = NULL WHERE id = 1;
       `)
@@ -355,6 +382,8 @@ export class Progression {
       | undefined
     if (!row) return null
     const units = this.db.prepare('SELECT * FROM practice_units WHERE week_id = ? ORDER BY unit_index').all(row.id) as unknown as UnitRow[]
+    const pauses = loadPauses(this.db)
+    const dates = Array.from({ length: 7 }, (_, i) => addDays(row.week_start, i))
     return {
       id: row.id,
       topicId: row.topic_id,
@@ -363,6 +392,8 @@ export class Progression {
       kind: row.kind,
       status: row.status,
       recoveredOn: row.recovered_on,
+      pausedDays: new Set(dates.filter((date) => isPausedDay(pauses, date))),
+      paused: openPause(pauses) !== null,
       units: units.map((u) => ({
         id: u.id,
         index: u.unit_index,
