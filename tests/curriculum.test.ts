@@ -41,26 +41,28 @@ function makeTopic(overrides: Partial<CurriculumTopic> = {}): CurriculumTopic {
 const COURSES = LANGUAGE_IDS.filter((language) => existsSync(join(CONTENT_DIR, language)))
 
 describe.each(COURSES)('temario real de %s (content/)', (language) => {
-  const topics = loadCurriculum(CONTENT_DIR, language)
+  // Se carga dentro de cada prueba: con -t "temario real de it" se valida un solo idioma.
+  let loaded: CurriculumTopic[] | null = null
+  const load = (): CurriculumTopic[] => (loaded ??= loadCurriculum(CONTENT_DIR, language))
 
   it('carga los tópicos de A1 y A2 sin errores', () => {
-    expect(topics.filter((t) => t.level === 'A1').length).toBeGreaterThanOrEqual(5)
-    expect(topics.filter((t) => t.level === 'A2').length).toBeGreaterThanOrEqual(5)
+    expect(load().filter((t) => t.level === 'A1').length).toBeGreaterThanOrEqual(5)
+    expect(load().filter((t) => t.level === 'A2').length).toBeGreaterThanOrEqual(5)
   })
 
   it('queda ordenado por nivel y orden', () => {
-    const keys = topics.map((t) => `${t.level}-${String(t.order).padStart(2, '0')}`)
+    const keys = load().map((t) => `${t.level}-${String(t.order).padStart(2, '0')}`)
     expect(keys).toEqual([...keys].sort())
   })
 
   it('tiene al menos dos ejemplos por subtema', () => {
-    for (const topic of topics) {
+    for (const topic of load()) {
       for (const sub of topic.subtopics) expect(sub.examples.length).toBeGreaterThanOrEqual(2)
     }
   })
 
   it('todos los tópicos son del idioma del curso', () => {
-    for (const topic of topics) {
+    for (const topic of load()) {
       expect(topic.language).toBe(language)
       if (language !== 'en') expect(topic.id.startsWith(`${language}-`)).toBe(true)
     }
