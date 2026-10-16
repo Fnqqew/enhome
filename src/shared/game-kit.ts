@@ -1,4 +1,4 @@
-// Utilidades compartidas por los juegos.
+// Utilidades de los juegos (puras: se usan en la interfaz y se prueban sin ella).
 
 export function shuffle<T>(items: readonly T[]): T[] {
   const copy = [...items]

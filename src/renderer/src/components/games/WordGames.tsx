@@ -3,7 +3,7 @@ import type { GamePhrase } from '@shared/games'
 import { useSpeech } from '../../hooks/useSpeech'
 import Icon from '../Icon'
 import type { GameProps } from './QuizGames'
-import { normalizeText, sample, scoreDictation, shuffle, unique, withoutAccents } from './kit'
+import { normalizeText, sample, scoreDictation, shuffle, unique, withoutAccents } from '@shared/game-kit'
 
 const phraseKey = (p: GamePhrase): string => p.target
 const words = (text: string): string[] => text.split(/\s+/).filter(Boolean)

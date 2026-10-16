@@ -5,7 +5,7 @@ import { openDatabase, type Db } from '../../src/main/db/database'
 import { Progression } from '../../src/main/engine/progression'
 import { Games } from '../../src/main/games/games'
 import { Rewards } from '../../src/main/rewards/rewards'
-import { choices, normalizeText, scoreDictation } from '../../src/renderer/src/components/games/kit'
+import { choices, normalizeText, scoreDictation } from '../../src/shared/game-kit'
 import { GAMES_WITH_XP_PER_DAY } from '../../src/shared/games'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))

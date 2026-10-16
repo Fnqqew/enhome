@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { GameDeck, GamePhrase } from '@shared/games'
 import { useSpeech } from '../../hooks/useSpeech'
 import Icon from '../Icon'
-import { choices, sample, unique } from './kit'
+import { choices, sample, unique } from '@shared/game-kit'
 
 export interface GameProps {
   deck: GameDeck
