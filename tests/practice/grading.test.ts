@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { StoredExercise } from '../../src/shared/exercises'
-import { gradeAuto, matchesAny, normalize } from '../../src/main/practice/grading'
+import { findTypo, gradeAuto, matchesAny, normalize } from '../../src/main/practice/grading'
 import { buildReviewPrompt } from '../../src/main/practice/ai-grading'
 import { loadCurriculum } from '../../src/main/content/curriculum'
 import { join } from 'node:path'
@@ -116,5 +116,29 @@ describe('ejercicios largos', () => {
     expect(prompt).toContain('«Hi, I am good.»')
     expect(prompt).toContain('(no escribió nada)')
     expect(prompt).toContain('parts:')
+  })
+})
+describe('errores de tipeo', () => {
+  const accepted = ['I am a teacher.', 'I am a professor.']
+
+  it('acepta una letra de más, de menos o cambiada en una palabra larga', () => {
+    expect(findTypo('I am a techer', accepted)).toMatchObject({ typed: 'techer', intended: 'teacher' })
+    expect(findTypo('I am a teacjer', accepted)).toMatchObject({ intended: 'teacher' })
+    expect(findTypo('Ich weiss es nicht becuase', ['Ich weiss es nicht because'])).toMatchObject({ typed: 'becuase' })
+  })
+
+  it('no confunde errores de gramática con tipeo', () => {
+    expect(findTypo('I am a teachers', accepted)).toBeNull()
+    expect(findTypo('She work every day', ['She works every day'])).toBeNull()
+    expect(findTypo('Ele falei ontem', ['Ele falou ontem'])).toBeNull()
+    expect(findTypo('I is a teacher', accepted)).toBeNull()
+    expect(findTypo('I am a tcher', accepted)).toBeNull()
+  })
+
+  it('una traducción con un tipeo se corrige sola, con el aviso', () => {
+    const exercise = { type: 'translation', instruction: 'i', spanish: 'Soy docente.', answers: accepted, explanation: 'Usamos am.' } as const
+    const result = gradeAuto(exercise, { type: 'translation', text: 'I am a techer' })
+    expect(result).toMatchObject({ kind: 'graded', feedback: { correct: true, score: 9 } })
+    if (result.kind === 'graded') expect(result.feedback.explanation).toContain('«teacher»')
   })
 })

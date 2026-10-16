@@ -69,7 +69,10 @@ export interface IpcOptions {
   onSettingsChange?: (settings: AppSettings) => void
 }
 
-export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onSettingsChange = () => {} }: IpcOptions): { today: () => string } {
+export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onSettingsChange = () => {} }: IpcOptions): {
+  today: () => string
+  warmUp: () => void
+} {
   // Un juego de servicios por idioma, armado la primera vez que se usa; si el temario
   // tiene errores, el mensaje llega a la interfaz.
   const courses = new Map<LanguageId, Services>()
@@ -100,6 +103,15 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   let todayOverride: string | null = null
   const today = (): string => todayOverride ?? toLocalDate(new Date())
   const state = () => getServices().progression.getState(today())
+
+  // Prepara en segundo plano la práctica del día del curso abierto.
+  const warmUp = (): void => {
+    try {
+      getServices().practice.warmUp(today())
+    } catch (err) {
+      console.error('[practice] No se pudo preparar la práctica al abrir', err)
+    }
+  }
 
   // Lo que muestra el selector de idioma: un curso sin datos no se abre para no crear su base.
   const topicCounts = new Map<LanguageId, number>()
@@ -173,6 +185,7 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
     }
     const settings = updateSettings(db, patch)
     onSettingsChange(settings)
+    if (next) warmUp()
     return settings
   })
 
@@ -284,5 +297,5 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
     })
   }
 
-  return { today }
+  return { today, warmUp }
 }

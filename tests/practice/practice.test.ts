@@ -279,3 +279,29 @@ describe('práctica larga', () => {
     expect(graded).toContain('translation_set')
   })
 })
+describe('práctica guardada de un subtema que cambió', () => {
+  it('sin respuestas, se descarta y se arma con el subtema actual del mismo día', async () => {
+    await practice.start(day(0))
+    // Como si el temario se hubiera editado: el subtema guardado ya no existe.
+    db.exec("UPDATE practice_units SET subtopic_id = 'subtema-viejo'; UPDATE practice_sessions SET subtopic_id = 'subtema-viejo'")
+
+    const view = practice.getView(day(0))
+    expect(view.status).toBe('ready')
+    const started = session(await practice.start(day(0)))
+    const firstDay = curriculum.find((t) => t.id === 'a1-to-be')!.subtopics[0]
+    expect(started.subtopicTitle).toBe(firstDay.title)
+    expect(generated.at(-1)).toBe(firstDay.id)
+    const row = db.prepare('SELECT subtopic_id FROM practice_sessions').get() as { subtopic_id: string }
+    expect(row.subtopic_id).toBe(firstDay.id)
+  })
+
+  it('con respuestas, sigue con lo que ya tenía en vez de fallar', async () => {
+    const s = session(await practice.start(day(0)))
+    await practice.answer(s.exercises[0].id, rightAnswer(stored(s.exercises[0].id)))
+    db.exec("UPDATE practice_units SET subtopic_id = 'subtema-viejo'; UPDATE practice_sessions SET subtopic_id = 'subtema-viejo'")
+
+    const view = practice.getView(day(0))
+    expect(view.status).toBe('session')
+    expect(session(view).exercises[0].feedback).not.toBeNull()
+  })
+})

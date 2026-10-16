@@ -171,3 +171,26 @@
     filter: blur(3px);
   }
 }
+
+/* Breve: la misma escena, comprimida en un segundo. */
+.splash.short .house-line {
+  animation-duration: 0.5s;
+}
+
+.splash.short .house-chimney {
+  animation-delay: 0.4s;
+  animation-duration: 0.25s;
+}
+
+.splash.short .splash-name span {
+  animation-duration: 0.4s;
+}
+
+.splash.short .splash-tagline,
+.splash.short .splash-status {
+  animation-delay: 0.25s;
+}
+
+.splash.short .splash-progress span {
+  animation-duration: 0.95s;
+}

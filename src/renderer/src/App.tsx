@@ -1,22 +1,41 @@
-import { useCallback, useEffect, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
 import { SECTIONS, type Navigate, type SectionId } from './navigation'
 import Icon from './components/Icon'
-import About from './pages/About'
-import Comments from './pages/Comments'
 import Logo from './components/Logo'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import Splash from './components/Splash'
 import TitleBar from './components/TitleBar'
 import { useSettings } from './theme/SettingsProvider'
-import Curriculum from './pages/Curriculum'
 import Home from './pages/Home'
 import RewardToasts from './components/RewardToasts'
-import Progress from './pages/Progress'
-import Practice from './pages/Practice'
-import Settings from './pages/Settings'
-import Summaries from './pages/Summaries'
-import Tests from './pages/Tests'
+
+// Inicio va en el paquete principal; el resto de las secciones se carga cuando se abre
+// (y en segundo plano apenas la app queda tranquila, para que el primer clic sea instantáneo).
+const PAGES = {
+  temario: () => import('./pages/Curriculum'),
+  practica: () => import('./pages/Practice'),
+  resumenes: () => import('./pages/Summaries'),
+  pruebas: () => import('./pages/Tests'),
+  progreso: () => import('./pages/Progress'),
+  ajustes: () => import('./pages/Settings'),
+  comentarios: () => import('./pages/Comments'),
+  acerca: () => import('./pages/About')
+}
+const Curriculum = lazy(PAGES.temario)
+const Practice = lazy(PAGES.practica)
+const Summaries = lazy(PAGES.resumenes)
+const Tests = lazy(PAGES.pruebas)
+const Progress = lazy(PAGES.progreso)
+const Settings = lazy(PAGES.ajustes)
+const Comments = lazy(PAGES.comentarios)
+const About = lazy(PAGES.acerca)
+
+function preloadPages(): void {
+  const run = (): void => Object.values(PAGES).forEach((load) => void load().catch(() => undefined))
+  if ('requestIdleCallback' in window) window.requestIdleCallback(run, { timeout: 4000 })
+  else setTimeout(run, 2000)
+}
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
@@ -26,8 +45,8 @@ const EXTRA_SECTIONS: SectionId[] = ['ajustes', 'comentarios', 'acerca']
 export default function App(): React.JSX.Element {
   const { settings } = useSettings()
   const [status, setStatus] = useState<ClaudeStatus | null>(null)
-  // La pantalla de carga se muestra una sola vez, al abrir la app.
-  const [splashDone, setSplashDone] = useState(false)
+  // La pantalla de carga se muestra una sola vez, al abrir la app (si no está apagada en Ajustes).
+  const [splashDone, setSplashDone] = useState(() => settings.splash === 'none')
   const finishSplash = useCallback(() => setSplashDone(true), [])
 
   const checkStatus = useCallback(() => {
@@ -108,6 +127,8 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
       .catch(() => undefined)
   }, [])
 
+  useEffect(preloadPages, [])
+
   const navigate: Navigate = (target) => {
     if (!examLocked || target === 'pruebas') setSection(target)
   }
@@ -138,7 +159,9 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
       <RewardToasts trigger={section} />
       <main className="content">
         <div key={section} className="page">
-          <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
+          <Suspense fallback={<p className="muted">Cargando…</p>}>
+            <Page section={section} status={status} navigate={navigate} onExamLock={setExamLocked} />
+          </Suspense>
         </div>
       </main>
     </div>

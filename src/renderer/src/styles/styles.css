@@ -47,7 +47,8 @@
   --border: #d7dce6;
   --text: #0f1b33;
   --muted: #5b6478;
-  --accent: #1a8a5c;
+  /* Un poco más oscuro que el verde original para llegar a contraste AA como texto. */
+  --accent: #167d53;
   --accent-contrast: #ffffff;
   --danger: #c2413b;
   --radius: 14px;
@@ -107,6 +108,15 @@
 :root[data-style='ruta'][data-palette='estilo'] .road-level[data-level='B2'] {
   --accent: #b0344f;
   --accent-soft: color-mix(in srgb, #b0344f 12%, transparent);
+}
+
+/* En claro, los tramos A2 y B1 van más oscuros para que sus códigos se lean bien (AA). */
+:root[data-style='ruta'][data-theme='light'][data-palette='estilo'] .road-level[data-level='A2'] {
+  --accent: #0c7888;
+}
+
+:root[data-style='ruta'][data-theme='light'][data-palette='estilo'] .road-level[data-level='B1'] {
+  --accent: #b45512;
 }
 
 /* Cuaderno: hoja rayada con margen, títulos en cursiva resaltados. */

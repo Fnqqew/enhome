@@ -86,12 +86,12 @@ export class Practice {
     const target = this.target(today)
     if ('reason' in target) return { status: 'unavailable', reason: target.reason }
 
-    const session = this.findSession(target)
+    const session = this.repairSession(this.findSession(target), target)
     if (session && this.hasSlots(session.id)) return { status: 'session', session: this.sessionView(session) }
 
     // Mientras el alumno lee la introducción, se preparan los ejercicios.
     this.prefetch(target)
-    const { topic, subtopic } = this.content(target.unit.topicId, target.unit.subtopicId)
+    const { topic, subtopic } = this.content(target.unit.topicId, target.unit.subtopicId, target.unit.index)
     return {
       status: 'ready',
       topicId: topic.id,
@@ -106,10 +106,20 @@ export class Practice {
     }
   }
 
+  // Al abrir la app (o cambiar de día o de idioma) se prepara la práctica pendiente en segundo
+  // plano, así al entrar a Práctica ya está lista.
+  warmUp(today: string): void {
+    const target = this.target(today)
+    if ('reason' in target) return
+    const session = this.findSession(target)
+    if (session && this.hasSlots(session.id)) return
+    this.prefetch(target)
+  }
+
   async start(today: string): Promise<PracticeView> {
     const target = this.target(today)
     if ('reason' in target) throw new PracticeError(target.reason)
-    const session = this.findSession(target) ?? this.createSession(target)
+    const session = this.repairSession(this.findSession(target), target) ?? this.createSession(target)
     await this.ensurePool(session)
     if (!this.hasSlots(session.id)) this.assignSlots(session)
     return { status: 'session', session: this.sessionView(this.session(session.id)) }
@@ -205,7 +215,7 @@ export class Practice {
   }
 
   private prefetch(target: Target): void {
-    const session = this.findSession(target) ?? this.createSession(target)
+    const session = this.repairSession(this.findSession(target), target) ?? this.createSession(target)
     // De a una generación en segundo plano para no gastar de más.
     if (this.generating.size > 0 && !this.generating.has(session.id)) return
     this.ensurePool(session).catch((err) => console.error('[practice] No se pudo preparar la práctica', err))
@@ -366,10 +376,41 @@ export class Practice {
     return Object.fromEntries(rows.map((r) => [r.type, r.rating]))
   }
 
-  private content(topicId: string, subtopicId: string): { topic: CurriculumTopic; subtopic: Subtopic } {
+  // Si el temario cambió y el subtema guardado ya no existe, se usa el del mismo día del tópico.
+  private content(topicId: string, subtopicId: string, day?: number): { topic: CurriculumTopic; subtopic: Subtopic } {
     const topic = this.topics.get(topicId)
-    const subtopic = topic?.subtopics.find((s) => s.id === subtopicId)
-    if (!topic || !subtopic) throw new PracticeError(`El subtema ${topicId}/${subtopicId} ya no existe en el temario.`)
+    if (!topic) {
+      throw new PracticeError(
+        `El tópico «${topicId}» ya no está en el temario. Si editaste los archivos del curso, volvé a ponerlo o reiniciá el curso desde Ajustes.`
+      )
+    }
+    const subtopic = topic.subtopics.find((s) => s.id === subtopicId) ?? topic.subtopics.find((s) => s.day === day) ?? topic.subtopics[0]
     return { topic, subtopic }
+  }
+
+  // Una práctica guardada de un subtema que ya no existe: si todavía no se respondió nada, se descartan
+  // sus ejercicios y pasa al subtema actual para generarla de nuevo; si ya tiene respuestas, sigue como está.
+  private repairSession(session: SessionRow | null, target: Target): SessionRow | null {
+    const topic = this.topics.get(target.unit.topicId)
+    const exists = (id: string): boolean => topic?.subtopics.some((s) => s.id === id) ?? false
+    if (!topic || (exists(target.unit.subtopicId) && (!session || exists(session.subtopic_id)))) return session
+
+    const { subtopic } = this.content(target.unit.topicId, target.unit.subtopicId, target.unit.index)
+    const answered =
+      session !== null &&
+      this.db.prepare('SELECT 1 FROM exercise_attempts a JOIN exercises e ON e.id = a.exercise_id WHERE e.session_id = ? LIMIT 1').get(session.id) !==
+        undefined
+    if (answered) return session
+
+    console.warn(`[practice] El subtema ${target.unit.topicId}/${target.unit.subtopicId} ya no existe: la práctica pasa a ${subtopic.id}`)
+    transaction(this.db, () => {
+      if (target.purpose === 'unit') this.db.prepare('UPDATE practice_units SET subtopic_id = ? WHERE id = ?').run(subtopic.id, target.unit.id)
+      if (session) {
+        this.db.prepare('DELETE FROM exercises WHERE session_id = ?').run(session.id)
+        this.db.prepare('UPDATE practice_sessions SET subtopic_id = ? WHERE id = ?').run(subtopic.id, session.id)
+      }
+    })
+    target.unit = { ...target.unit, subtopicId: subtopic.id, subtopicTitle: subtopic.title }
+    return session ? this.session(session.id) : null
   }
 }

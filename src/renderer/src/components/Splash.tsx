@@ -9,6 +9,7 @@ const WORDMARK = ['E', 'n', 'h', 'o', 'm', 'e']
 
 // Cuánto dura como mínimo, para que la animación se vea entera aunque todo cargue antes.
 const MIN_MS = 2600
+const MIN_MS_SHORT = 1000
 const MIN_MS_REDUCED = 350
 const EXIT_MS = 450
 
@@ -28,15 +29,17 @@ export default function Splash({ ready, onDone }: { ready: boolean; onDone: () =
   const { settings } = useSettings()
   const course = languageInfo(settings.language)
   const [reduced] = useState(() => settings.reduceMotion || window.matchMedia('(prefers-reduced-motion: reduce)').matches)
-  const [word, setWord] = useState(reduced ? { text: course.greeting, english: true } : { text: '', english: false })
+  // La breve muestra el saludo ya escrito y sale al segundo.
+  const [short] = useState(() => settings.splash === 'short')
+  const [word, setWord] = useState(reduced || short ? { text: course.greeting, english: true } : { text: '', english: false })
   const [minElapsed, setMinElapsed] = useState(false)
   const [leaving, setLeaving] = useState(false)
 
   useEffect(() => {
-    const timers = reduced ? [] : timeline(course.greeting).map((step) => setTimeout(() => setWord(step), step.at))
-    timers.push(setTimeout(() => setMinElapsed(true), reduced ? MIN_MS_REDUCED : MIN_MS))
+    const timers = reduced || short ? [] : timeline(course.greeting).map((step) => setTimeout(() => setWord(step), step.at))
+    timers.push(setTimeout(() => setMinElapsed(true), reduced ? MIN_MS_REDUCED : short ? MIN_MS_SHORT : MIN_MS))
     return () => timers.forEach(clearTimeout)
-  }, [reduced, course.greeting])
+  }, [reduced, short, course.greeting])
 
   useEffect(() => {
     if (ready && minElapsed) setLeaving(true)
@@ -49,7 +52,7 @@ export default function Splash({ ready, onDone }: { ready: boolean; onDone: () =
   }, [leaving, onDone, reduced])
 
   return (
-    <div className={`splash${leaving ? ' leaving' : ''}`} role="status" aria-label="Cargando Enhome">
+    <div className={`splash${leaving ? ' leaving' : ''}${short ? ' short' : ''}`} role="status" aria-label="Cargando Enhome">
       <div className="splash-mark">
         <svg className="splash-house" viewBox="0 0 160 140" aria-hidden="true">
           <path className="house-line" pathLength={1} d="M20 70 L80 18 L140 70 V124 H20 Z" />
@@ -63,7 +66,7 @@ export default function Splash({ ready, onDone }: { ready: boolean; onDone: () =
 
       <p className="splash-name" aria-hidden="true">
         {WORDMARK.map((letter, i) => (
-          <span key={i} className={i < 2 ? 'accent' : undefined} style={{ animationDelay: `${0.45 + i * 0.06}s` }}>
+          <span key={i} className={i < 2 ? 'accent' : undefined} style={{ animationDelay: `${short ? 0.1 + i * 0.04 : 0.45 + i * 0.06}s` }}>
             {letter}
           </span>
         ))}

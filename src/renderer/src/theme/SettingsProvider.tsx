@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import { DEFAULT_SETTINGS, PALETTES, type AppSettings } from '@shared/settings'
+import { loadFonts } from './fonts'
 
 interface SettingsContextValue {
   settings: AppSettings
@@ -29,12 +30,21 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
   const prefersDark = usePrefersDark()
 
   useEffect(() => {
+    // Las tipografías del estilo llegan antes de mostrar nada, así no se ve un cambio de letra.
     window.api
       .getSettings()
-      .then(setSettings)
+      .then(async (saved) => {
+        await loadFonts(saved)
+        setSettings(saved)
+      })
       .catch((err) => console.error('No se pudieron cargar las preferencias', err))
       .finally(() => setLoaded(true))
   }, [])
+
+  const { style, font } = settings
+  useEffect(() => {
+    void loadFonts({ style, font })
+  }, [style, font])
 
   const dark = settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
 

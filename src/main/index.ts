@@ -123,7 +123,7 @@ if (!app.requestSingleInstanceLock()) {
 
     // En desarrollo el temario se lee del repo; instalada, de los recursos de la app.
     const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-    const { today } = registerIpc({
+    const { today, warmUp } = registerIpc({
       db,
       courseDb,
       courseExists: (language) => language === 'en' || existsSync(coursePath(language)),
@@ -148,12 +148,15 @@ if (!app.requestSingleInstanceLock()) {
     // Avisa a la interfaz cuando cambia el día para que se actualice sola.
     const dayWatcher = watchDayChange(today, (date) => {
       for (const win of BrowserWindow.getAllWindows()) win.webContents.send(IPC.dayChanged, date)
+      warmUp()
     })
     powerMonitor.on('resume', dayWatcher.check)
     app.on('will-quit', dayWatcher.stop)
 
     const settings = loadSettings(db)
     applyStyle(createWindow(settings), settings)
+    // Unos segundos después de abrir, para no competir con la carga de la ventana.
+    setTimeout(warmUp, 6_000)
     app.on('activate', () => {
       if (BrowserWindow.getAllWindows().length > 0) return
       const current = loadSettings(db)

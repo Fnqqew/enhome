@@ -122,6 +122,19 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
           />
         </Row>
 
+        <Row label="Pantalla de carga">
+          <Segmented<AppSettings['splash']>
+            label="Pantalla de carga"
+            value={settings.splash}
+            onChange={(splash) => update({ splash })}
+            options={[
+              { value: 'full', label: 'Completa' },
+              { value: 'short', label: 'Breve' },
+              { value: 'none', label: 'Ninguna' }
+            ]}
+          />
+        </Row>
+
         <div className="preview" aria-label="Vista previa">
           <span className="level">VISTA PREVIA</span>
           <p>

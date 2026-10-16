@@ -39,7 +39,7 @@ export const STYLES: readonly {
     description: 'El recorrido como una línea de subte.',
     colors: ['#0f1b33', '#1e9e6a', '#e8772e'],
     preview: {
-      light: { bg: '#eef1f6', sidebar: '#0f1b33', surface: '#ffffff', accent: '#1a8a5c', text: '#0f1b33', border: '#d7dce6' },
+      light: { bg: '#eef1f6', sidebar: '#0f1b33', surface: '#ffffff', accent: '#167d53', text: '#0f1b33', border: '#d7dce6' },
       dark: { bg: '#0b1220', sidebar: '#070c17', surface: '#121b2e', accent: '#3fcf8e', text: '#e8ecf4', border: '#243152' }
     }
   },
@@ -113,7 +113,9 @@ export const settingsSchema = z.object({
   voicePt: z.string().max(200).nullable(),
   voiceIt: z.string().max(200).nullable(),
   voiceFr: z.string().max(200).nullable(),
-  reduceMotion: z.boolean()
+  reduceMotion: z.boolean(),
+  // Pantalla de carga al abrir: completa (la animación entera), breve o ninguna.
+  splash: z.enum(['full', 'short', 'none'])
 })
 
 // Qué ajuste guarda la voz de cada idioma.
@@ -141,5 +143,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   voicePt: null,
   voiceIt: null,
   voiceFr: null,
-  reduceMotion: false
+  reduceMotion: false,
+  splash: 'full'
 }
