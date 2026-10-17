@@ -419,5 +419,16 @@ export const MIGRATIONS: Migration[] = [
       );
       CREATE INDEX highlights_doc ON highlights (doc_key);
     `
+  },
+  {
+    version: 13,
+    name: 'tiempo de estudio',
+    sql: `
+      -- Segundos de estudio de cada día (con la ventana activa y en una sección de estudio).
+      CREATE TABLE study_time (
+        day     TEXT PRIMARY KEY,
+        seconds INTEGER NOT NULL DEFAULT 0
+      );
+    `
   }
 ]

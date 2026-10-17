@@ -7,7 +7,7 @@ import { addDays } from '../../shared/dates'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 import { MAX_JOURNAL_LENGTH, type JournalEntry, type JournalReview, type JournalView } from '../../shared/reading'
 import { askClaude, type Ask } from '../claude/bridge'
-import { roleSystemPrompt } from '../claude/quality'
+import { roleSystemPrompt, spanish } from '../claude/quality'
 import type { Db } from '../db/database'
 import type { Progression } from '../engine/progression'
 
@@ -52,7 +52,7 @@ Esta semana estudia: ${topic.title} (${topic.targetTitle}).
 
 Corregila como un buen profesor particular:
 - correctedText: el texto corregido con los cambios mínimos para que quede correcto y natural (sin reescribirlo con otras ideas).
-- comments: 2 o 3 oraciones en español rioplatense, empezando por algo que hizo bien y terminando con un consejo concreto.
+- comments: 2 o 3 oraciones en ${spanish()}, empezando por algo que hizo bien y terminando con un consejo concreto.
 - mistakes: hasta 8 errores reales, con fragment copiado tal cual lo escribió, correction y una explanation breve en español. Vacío si no hay.
 - tip: una palabra o expresión natural en ${target} que le serviría para lo que quiso contar, con su traducción entre paréntesis.
 - score: de 0 a 10 según corrección y riqueza para su nivel.

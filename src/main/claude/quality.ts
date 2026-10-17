@@ -3,6 +3,20 @@
 
 import { languageInfo, type LanguageId } from '../../shared/languages'
 
+// Variante del español de las explicaciones (Ajustes → Estudio): rioplatense con voseo o neutro con tú.
+export type SpanishVariant = 'rioplatense' | 'neutro'
+let variant: SpanishVariant = 'rioplatense'
+
+export function setSpanishVariant(value: SpanishVariant): void {
+  variant = value
+}
+
+export function spanish(): string {
+  return variant === 'rioplatense' ? 'español rioplatense (con voseo)' : 'español neutro latinoamericano (con tú, sin voseo)'
+}
+
+const audience = (): string => (variant === 'rioplatense' ? 'hispanohablantes de Argentina' : 'hispanohablantes de Latinoamérica')
+
 const nameOf = (language: LanguageId): string => languageInfo(language).promptName
 
 export function selfCheck(language: LanguageId): string {
@@ -14,12 +28,12 @@ export function selfCheck(language: LanguageId): string {
 export const REVIEW_EFFORT = 'medium'
 
 export function reviewSystemPrompt(language: LanguageId): string {
-  return `Sos un revisor de calidad de materiales de ${nameOf(language)} para hispanohablantes de Argentina. Tu trabajo es encontrar y corregir cualquier error antes de que llegue al alumno, con máximo rigor. Respondé solo con el JSON pedido.`
+  return `Sos un revisor de calidad de materiales de ${nameOf(language)} para ${audience()}. Tu trabajo es encontrar y corregir cualquier error antes de que llegue al alumno, con máximo rigor. Respondé solo con el JSON pedido.`
 }
 
 // «docente» o «evaluador» del idioma del curso, con lo que hace en cada caso.
 export function roleSystemPrompt(language: LanguageId, role: string, task: string): string {
-  return `Sos un ${role} de ${nameOf(language)} para hispanohablantes de Argentina. ${task} Respondé solo con el JSON pedido.`
+  return `Sos un ${role} de ${nameOf(language)} para ${audience()}. ${task} Respondé solo con el JSON pedido.`
 }
 
 // El revisor devuelve solo lo que corrige (mucho más rápido que reescribir todo).
@@ -46,7 +60,7 @@ En issues anotá, en una frase cada uno, los problemas que encontraste (vacío s
 export function qualityChecklist(language: LanguageId): string {
   return `Verificá en cada uno:
 - La respuesta marcada como correcta es correcta y es la única correcta: ninguna otra opción puede ser válida en un contexto razonable.
-- El ${nameOf(language)} es correcto y natural; el español es correcto y rioplatense.
+- El ${nameOf(language)} es correcto y natural; el español es correcto (${spanish()}).
 - La explicación es correcta y coincide con la respuesta.
 - La consigna se entiende sin ambigüedad.
 - Corresponde al subtema y al nivel indicados.`

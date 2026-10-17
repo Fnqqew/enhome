@@ -1,4 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
+import type { BackupInfo } from '@shared/data'
+import { formatDayMonth } from '@shared/dates'
+import { readLocal, writeLocal } from '../shell'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
 import { LANGUAGES, languageInfo, type CourseSummary, type LanguageId } from '@shared/languages'
 import { EXERCISE_TYPE_LABELS, EXERCISE_TYPES, type ExerciseType } from '@shared/exercises'
@@ -32,14 +35,71 @@ const FONT_FAMILIES: Record<string, string> = {
   amigable: 'var(--font-amigable)'
 }
 
+const TABS = [
+  { id: 'apariencia', label: 'Apariencia' },
+  { id: 'estudio', label: 'Estudio' },
+  { id: 'voz', label: 'Voz' },
+  { id: 'avisos', label: 'Notificaciones' },
+  { id: 'datos', label: 'Datos' },
+  { id: 'claude', label: 'Claude' },
+  { id: 'avanzado', label: 'Avanzado' }
+] as const
+
+type TabId = (typeof TABS)[number]['id']
+
+// Ajustes por pestañas; la última que se abrió se recuerda.
 export default function Settings({ status }: { status: Extract<ClaudeStatus, { state: 'ready' }> }): React.JSX.Element {
+  const [tab, setTab] = useState<TabId>(() => {
+    const saved = readLocal('settings-tab')
+    return TABS.some((t) => t.id === saved) ? (saved as TabId) : 'apariencia'
+  })
+  useEffect(() => writeLocal('settings-tab', tab), [tab])
+
+  return (
+    <>
+      <h1>Ajustes</h1>
+      <div className="tabs" role="tablist" aria-label="Ajustes">
+        {TABS.map((t) => (
+          <button key={t.id} type="button" role="tab" aria-selected={tab === t.id} className="tab" onClick={() => setTab(t.id)}>
+            {t.label}
+          </button>
+        ))}
+      </div>
+      <div role="tabpanel" key={tab} className="tab-panel">
+        {tab === 'apariencia' && <AppearanceSettings />}
+        {tab === 'estudio' && (
+          <>
+            <PracticeSettings />
+            <GoalSettings />
+            <CourseSettings />
+          </>
+        )}
+        {tab === 'voz' && (
+          <>
+            <VoiceSettings />
+            <SpeechModelSettings />
+          </>
+        )}
+        {tab === 'avisos' && <NotificationSettings />}
+        {tab === 'datos' && <DataSettings />}
+        {tab === 'claude' && (
+          <>
+            <ClaudeConnection status={status} />
+            <ClaudeModeSettings />
+          </>
+        )}
+        {tab === 'avanzado' && <AdvancedSettings />}
+      </div>
+    </>
+  )
+}
+
+function AppearanceSettings(): React.JSX.Element {
   const { settings, update, dark: isDark } = useSettings()
   const styleColors = (STYLES.find((s) => s.id === settings.style) ?? STYLES[0]).colors
 
   return (
     <>
-      <h1>Ajustes</h1>
-
       <section className="card stack">
         <h2>Apariencia</h2>
 
@@ -179,13 +239,306 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
           </div>
         </div>
       </section>
-
-      <PracticeSettings />
-      <CourseSettings />
-      <VoiceSettings />
-      <SpeechModelSettings />
-      <ClaudeConnection status={status} />
     </>
+  )
+}
+
+// Meta diaria: minutos de estudio o actividades, y la variante del español de las explicaciones.
+function GoalSettings(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  const goal = settings.dailyGoal
+  const amounts = goal.kind === 'minutes' ? [5, 10, 15, 20, 30, 45, 60] : [1, 2, 3, 4, 5]
+  return (
+    <section className="card stack">
+      <h2>Meta diaria</h2>
+      <Row label="Medir por">
+        <Segmented<AppSettings['dailyGoal']['kind']>
+          label="Meta diaria"
+          value={goal.kind}
+          onChange={(kind) => update({ dailyGoal: { kind, amount: kind === 'minutes' ? 15 : 2 } })}
+          options={[
+            { value: 'minutes', label: 'Minutos' },
+            { value: 'activities', label: 'Actividades' },
+            { value: 'off', label: 'Sin meta' }
+          ]}
+        />
+      </Row>
+      {goal.kind !== 'off' && (
+        <Row label="Cuánto">
+          <select value={goal.amount} aria-label="Cantidad de la meta" onChange={(e) => update({ dailyGoal: { ...goal, amount: Number(e.target.value) } })}>
+            {amounts.map((n) => (
+              <option key={n} value={n}>
+                {n} {goal.kind === 'minutes' ? 'minutos' : n === 1 ? 'actividad' : 'actividades'}
+              </option>
+            ))}
+          </select>
+        </Row>
+      )}
+      <p className="muted small">
+        {goal.kind === 'minutes'
+          ? 'Cuenta el tiempo con la ventana activa en las secciones de estudio (si dejás de usarla un par de minutos, se pausa).'
+          : 'Cuenta la práctica, las partidas, las lecturas, el diario corregido y las charlas del día.'}{' '}
+        Se ve en el Inicio, y si se acerca la medianoche sin cumplirla te avisa.
+      </p>
+      <h2>Explicaciones de Claude</h2>
+      <Row label="Español">
+        <Segmented<AppSettings['spanishVariant']>
+          label="Variante del español"
+          value={settings.spanishVariant}
+          onChange={(spanishVariant) => update({ spanishVariant })}
+          options={[
+            { value: 'rioplatense', label: 'Rioplatense (vos)' },
+            { value: 'neutro', label: 'Neutro (tú)' }
+          ]}
+        />
+      </Row>
+      <p className="muted small">Cambia cómo te habla Claude en las correcciones, los resúmenes y las respuestas nuevas. El temario base sigue en rioplatense.</p>
+    </section>
+  )
+}
+
+// Recordatorio diario, bandeja del sistema y arranque con Windows.
+function NotificationSettings(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  return (
+    <section className="card stack">
+      <h2>Notificaciones</h2>
+      <Row label="Recordatorio diario">
+        <Segmented<'on' | 'off'>
+          label="Recordatorio diario"
+          value={settings.reminderEnabled ? 'on' : 'off'}
+          onChange={(v) => update({ reminderEnabled: v === 'on' })}
+          options={[
+            { value: 'off', label: 'Apagado' },
+            { value: 'on', label: 'Prendido' }
+          ]}
+        />
+      </Row>
+      {settings.reminderEnabled && (
+        <Row label="A las">
+          <input type="time" className="time-input" value={settings.reminderTime} onChange={(e) => e.target.value && update({ reminderTime: e.target.value })} />
+        </Row>
+      )}
+      <p className="muted small">
+        Una notificación de Windows a esa hora si todavía no hiciste la práctica del día o no llegaste a tu meta, y otra a las 23 si la meta
+        sigue pendiente. Para que lleguen, la app tiene que estar abierta (o en la bandeja).
+      </p>
+      <Row label="Al cerrar la ventana">
+        <Segmented<'tray' | 'quit'>
+          label="Al cerrar la ventana"
+          value={settings.tray ? 'tray' : 'quit'}
+          onChange={(v) => update({ tray: v === 'tray' })}
+          options={[
+            { value: 'quit', label: 'Cerrar la app' },
+            { value: 'tray', label: 'Quedar en la bandeja' }
+          ]}
+        />
+      </Row>
+      <Row label="Arrancar con Windows">
+        <Segmented<'on' | 'off'>
+          label="Arrancar con Windows"
+          value={settings.startWithWindows ? 'on' : 'off'}
+          onChange={(v) => update({ startWithWindows: v === 'on' })}
+          options={[
+            { value: 'off', label: 'No' },
+            { value: 'on', label: 'Sí' }
+          ]}
+        />
+      </Row>
+      <p className="muted small">Al arrancar con Windows la app abre escondida en la bandeja (si está activa), lista para el recordatorio.</p>
+    </section>
+  )
+}
+
+// Velocidad o precisión de Claude.
+function ClaudeModeSettings(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  const notes: Record<AppSettings['claudeMode'], string> = {
+    rapido: 'Claude piensa menos antes de responder: las correcciones y los ejercicios llegan alrededor de un 30 % antes, con algo menos de cuidado en los detalles.',
+    equilibrado: 'Lo de siempre: cada tarea usa el esfuerzo que mejor le queda.',
+    preciso: 'Claude piensa más antes de responder: tarda alrededor de un 50 % más, pero revisa con más cuidado ejercicios, correcciones y exámenes.'
+  }
+  return (
+    <section className="card stack">
+      <h2>Velocidad o precisión</h2>
+      <Row label="Claude">
+        <Segmented<AppSettings['claudeMode']>
+          label="Velocidad o precisión"
+          value={settings.claudeMode}
+          onChange={(claudeMode) => update({ claudeMode })}
+          options={[
+            { value: 'rapido', label: 'Rápido' },
+            { value: 'equilibrado', label: 'Equilibrado' },
+            { value: 'preciso', label: 'Preciso' }
+          ]}
+        />
+      </Row>
+      <p className="muted small">{notes[settings.claudeMode]} En Acerca de ves cuánto tarda cada tarea.</p>
+    </section>
+  )
+}
+
+// Copias de seguridad, exportar e importar, y borrar todo con la explicación de qué se pierde.
+function DataSettings(): React.JSX.Element {
+  const [backups, setBackups] = useState<BackupInfo[] | null>(null)
+  const [message, setMessage] = useState<string | null>(null)
+  const [error, setError] = useState<string | null>(null)
+  const [confirm, setConfirm] = useState<'delete' | `restore:${string}` | null>(null)
+
+  const load = useCallback(() => {
+    window.api
+      .getBackups()
+      .then(setBackups)
+      .catch((err: Error) => setError(err.message))
+  }, [])
+  useEffect(load, [load])
+
+  const act = (action: () => Promise<unknown>, done?: string): void => {
+    setError(null)
+    setMessage(null)
+    action()
+      .then((result) => {
+        if (done) setMessage(typeof result === 'string' ? `${done} ${result}` : done)
+        load()
+      })
+      .catch((err: Error) => setError(err.message))
+  }
+
+  return (
+    <>
+      <section className="card stack">
+        <h2>Copias de seguridad</h2>
+        <p className="muted small">
+          Todos los días, al abrir la app, se guarda una copia de cada curso. Quedan las últimas siete. Restaurar una vuelve todo (progreso, ajustes,
+          vocabulario, diario) a ese día y reinicia la app.
+        </p>
+        {backups && backups.length === 0 && <p className="muted small">Todavía no hay copias: la primera se hace unos segundos después de abrir la app.</p>}
+        {backups && backups.length > 0 && (
+          <ul className="backup-list">
+            {backups.map((b) => (
+              <li key={b.date} className="row spread">
+                <span>
+                  <strong>{formatDayMonth(b.date)}</strong>{' '}
+                  <span className="muted small">
+                    · {b.courses} {b.courses === 1 ? 'curso' : 'cursos'} · {(b.size / 1_000_000).toLocaleString('es-AR', { maximumFractionDigits: 1 })} MB
+                  </span>
+                </span>
+                {confirm === `restore:${b.date}` ? (
+                  <span className="row">
+                    <button className="btn" onClick={() => act(() => window.api.restoreBackup(b.date))}>
+                      Sí, restaurar
+                    </button>
+                    <button className="btn secondary" onClick={() => setConfirm(null)}>
+                      Cancelar
+                    </button>
+                  </span>
+                ) : (
+                  <button className="btn secondary" onClick={() => setConfirm(`restore:${b.date}`)}>
+                    Restaurar
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+        <div>
+          <button className="btn secondary" onClick={() => act(() => window.api.backupNow(), 'Copia guardada.')}>
+            Hacer una copia ahora
+          </button>
+        </div>
+      </section>
+
+      <section className="card stack">
+        <h2>Pasar el progreso a otra computadora</h2>
+        <p className="muted small">
+          Exportar guarda todo en un solo archivo .enhome. En la otra computadora, «Importar» lo trae (antes guarda una copia de lo que había) y
+          reinicia la app.
+        </p>
+        <div className="row">
+          <button className="btn" onClick={() => act(() => window.api.exportData(), 'Exportado en')}>
+            Exportar
+          </button>
+          <button className="btn secondary" onClick={() => act(() => window.api.importData())}>
+            Importar…
+          </button>
+        </div>
+      </section>
+
+      <section className="card stack danger-zone">
+        <h2>Borrar todo</h2>
+        <div className="delete-explain">
+          <div>
+            <strong>Se borra</strong>
+            <ul>
+              <li>El progreso de los cuatro cursos: semanas, prácticas, exámenes, racha, experiencia y logros.</li>
+              <li>Repaso, vocabulario, lecturas, diario, charlas, resaltados y partidas.</li>
+              <li>Tus ajustes y tus comentarios.</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Queda</strong>
+            <ul>
+              <li>Las copias de seguridad (antes de borrar se guarda una más, por si te arrepentís).</li>
+              <li>El modelo de reconocimiento de voz descargado.</li>
+              <li>El temario, que viene con la app.</li>
+            </ul>
+          </div>
+        </div>
+        <p className="muted small">Para empezar de cero un solo idioma, usá «Reiniciar» en Estudio → Cursos.</p>
+        {confirm === 'delete' ? (
+          <div className="row">
+            <button className="btn danger" onClick={() => act(() => window.api.deleteAllData())}>
+              Sí, borrar todo y reiniciar
+            </button>
+            <button className="btn secondary" onClick={() => setConfirm(null)}>
+              Cancelar
+            </button>
+          </div>
+        ) : (
+          <div>
+            <button className="btn secondary" onClick={() => setConfirm('delete')}>
+              Borrar todo…
+            </button>
+          </div>
+        )}
+      </section>
+      {message && <p className="muted small">{message}</p>}
+      {error && <p className="error">{error}</p>}
+    </>
+  )
+}
+
+// Avanzado: registro de errores, carpeta de datos y volver a ver la bienvenida.
+function AdvancedSettings(): React.JSX.Element {
+  const [message, setMessage] = useState<string | null>(null)
+  const open = (action: () => Promise<void>): void => {
+    setMessage(null)
+    action().catch((err: Error) => setMessage(err.message))
+  }
+  return (
+    <section className="card stack">
+      <h2>Avanzado</h2>
+      <div className="row">
+        <button className="btn secondary" onClick={() => open(window.api.openLogFile)}>
+          Abrir registro de errores
+        </button>
+        <button className="btn secondary" onClick={() => open(window.api.openDataFolder)}>
+          Abrir carpeta de datos
+        </button>
+        <button
+          className="btn secondary"
+          onClick={() => {
+            for (const id of ['en', 'pt', 'it', 'fr']) writeLocal(`tour:${id}`, '')
+            writeLocal('version', '')
+            setMessage('Listo: la bienvenida y las novedades vuelven a aparecer la próxima vez que abras la app.')
+          }}
+        >
+          Volver a ver la bienvenida
+        </button>
+      </div>
+      {message && <p className="muted small">{message}</p>}
+      <p className="muted small">Los tiempos de cada tarea de Claude y los datos técnicos están en Acerca de.</p>
+    </section>
   )
 }
 

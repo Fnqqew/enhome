@@ -104,3 +104,34 @@
     align-items: center;
   }
 }
+
+.today-actions {
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.goal-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 12rem;
+}
+
+.goal-meter .glyph {
+  color: var(--accent);
+}
+
+.goal-bar {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-hover);
+}
+
+.goal-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width 0.6s ease;
+}

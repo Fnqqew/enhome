@@ -5,7 +5,7 @@ import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import type { ExerciseFeedback, ExercisePart, OpenExercise } from '../../shared/exercises'
 import { askClaude } from '../claude/bridge'
-import { roleSystemPrompt } from '../claude/quality'
+import { roleSystemPrompt, spanish } from '../claude/quality'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 
 export interface OpenAnswerRequest {
@@ -37,11 +37,11 @@ const reviewSchema = z.object({
     .optional()
 })
 
-const OUTPUT_GUIDE = `Devolvé:
+const outputGuide = (): string => `Devolvé:
 - acceptable: true si la respuesta es correcta en lo esencial.
 - score: de 0 a 10.
 - correctedText: la respuesta del alumno corregida con los cambios mínimos necesarios (igual si no hay errores).
-- comments: devolución breve y alentadora en español rioplatense (2 o 3 oraciones), empezando por algo que hizo bien.
+- comments: devolución breve y alentadora en ${spanish()} (2 o 3 oraciones), empezando por algo que hizo bien.
 - mistakes: hasta 5 errores concretos, con fragment copiado tal cual lo escribió el alumno, correction y una explanation breve en español. Vacío si no hay errores.
 
 Antes de responder, verificá tu propia corrección: cada error marcado tiene que ser realmente un error (no una variante válida), cada corrección tiene que ser correcta y el puntaje tiene que ser coherente con los errores encontrados.`
@@ -77,7 +77,7 @@ Respuesta del alumno: ${answered(answers, 0)}
 Evaluá si la traducción es aceptable: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas, puntuación ni diferencias de estilo.
 Un artículo, un auxiliar o una preposición que falta o sobra es un error de gramática, no de estilo: en ese caso no es aceptable aunque se entienda.
 
-${OUTPUT_GUIDE}`
+${outputGuide()}`
 
     case 'translation_set':
       return `${head}
@@ -91,7 +91,7 @@ ${exercise.sentences
 Evaluá cada oración por separado: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas ni puntuación.
 Un artículo, un auxiliar o una preposición que falta o sobra es un error de gramática: esa oración no es correcta aunque se entienda.
 
-${OUTPUT_GUIDE}
+${outputGuide()}
 ${PARTS_GUIDE}`
 
     case 'dialogue': {
@@ -112,7 +112,7 @@ ${script}
 
 Evaluá cada turno del alumno: tiene que responder lo que pide la consigna, sonar natural en una conversación real y usar bien la gramática del subtema. La respuesta modelo es solo una opción válida entre varias.
 
-${OUTPUT_GUIDE}
+${outputGuide()}
 ${PARTS_GUIDE}`
     }
 
@@ -128,7 +128,7 @@ ${exercise.steps
 
 Evaluá cada paso: tiene que cumplir lo que pide la consigna, ser apropiado para la situación (registro y cortesía) y usar bien la gramática del subtema. La respuesta modelo es solo una opción válida entre varias.
 
-${OUTPUT_GUIDE}
+${outputGuide()}
 ${PARTS_GUIDE}`
 
     default:
@@ -150,7 +150,7 @@ Criterios de corrección:
 4. Vocabulario y claridad acordes al nivel ${request.topic.level} (10 %).
 Si la extensión está muy por fuera de lo pedido, mencionalo y descontá en el criterio 3.
 
-${OUTPUT_GUIDE}`
+${outputGuide()}`
   }
 }
 

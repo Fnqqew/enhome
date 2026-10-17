@@ -6,16 +6,7 @@ import type { CurriculumTopic } from '../../shared/curriculum'
 import type { GeneratedSummaryType, SummaryContent } from '../../shared/summaries'
 import { SUMMARY_TYPES } from '../../shared/summaries'
 import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
-import {
-  applyCorrections,
-  CORRECTIONS_GUIDE,
-  numbered,
-  qualityChecklist,
-  REVIEW_EFFORT,
-  reviewSystemPrompt,
-  roleSystemPrompt,
-  selfCheck
-} from '../claude/quality'
+import { applyCorrections, CORRECTIONS_GUIDE, numbered, qualityChecklist, REVIEW_EFFORT, reviewSystemPrompt, roleSystemPrompt, selfCheck, spanish } from '../claude/quality'
 import { languageInfo } from '../../shared/languages'
 
 const TIMEOUT_MS = 240_000
@@ -49,7 +40,7 @@ const GUIDANCE: Record<GeneratedSummaryType, string> = {
 const guidance = (topic: CurriculumTopic, type: GeneratedSummaryType): string => GUIDANCE[type].replaceAll('{idioma}', languageInfo(topic.language).name)
 
 const writingRules = (topic: CurriculumTopic): string => `Reglas:
-- Explicaciones en español rioplatense; ejemplos en ${languageInfo(topic.language).name} con su traducción, en *cursiva* para que se lean con la voz del idioma.
+- Explicaciones en ${spanish()}; ejemplos en ${languageInfo(topic.language).name} con su traducción, en *cursiva* para que se lean con la voz del idioma.
 - Solo sobre este tópico y su nivel: no adelantes contenidos de tópicos posteriores.
 - No inventes reglas: todo tiene que ser coherente con el resumen base.`
 
@@ -194,7 +185,7 @@ ${fragment}
 """
 Su pregunta: ${question}
 
-Respondé en español rioplatense, en Markdown y en no más de 200 palabras, con al menos un ejemplo en ${languageInfo(topic.language).name} con su traducción cuando ayude. Si la pregunta se va del tema, respondé lo esencial y volvé al tópico.
+Respondé en ${spanish()}, en Markdown y en no más de 200 palabras, con al menos un ejemplo en ${languageInfo(topic.language).name} con su traducción cuando ayude. Si la pregunta se va del tema, respondé lo esencial y volvé al tópico.
 
 ${selfCheck(topic.language)}`,
     schema: answerSchema

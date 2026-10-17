@@ -1,0 +1,85 @@
+/* Ajustes por pestañas, datos y notificaciones */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  max-width: 44rem;
+  margin-bottom: calc(1.25rem * var(--space));
+  padding: 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 2px);
+  background: var(--surface);
+}
+
+.tab {
+  padding: 0.45rem 0.9rem;
+  border: none;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tab:hover {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
+.tab[aria-selected='true'] {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.tab-panel {
+  animation: rise-in 0.2s ease-out;
+}
+
+.time-input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.backup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.backup-list li {
+  align-items: center;
+  padding: 0.45rem 0.7rem;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--bg);
+}
+
+.danger-zone {
+  border-color: color-mix(in srgb, var(--danger) 40%, var(--border));
+}
+
+.delete-explain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+}
+
+.delete-explain ul {
+  margin: 0.3rem 0 0;
+  padding-left: 1.1rem;
+  line-height: 1.5;
+}
+
+.btn.danger {
+  background: var(--danger);
+  color: #ffffff;
+}

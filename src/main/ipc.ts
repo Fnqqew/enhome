@@ -1,7 +1,11 @@
 import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
-import { writeFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
+import type { DataManager } from './data/data'
 import { z } from 'zod'
-import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming } from './claude/bridge'
+import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming, setClaudeProfile } from './claude/bridge'
+import { setSpanishVariant } from './claude/quality'
+import { addStudyTime, goalView } from './goal/goal'
+import type { DayStatus } from './reminders'
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
 import { buildCurriculumMap } from './content/curriculum-map'
 import { loadPlacementBank, withPlacementBank } from './content/placement-bank'
@@ -47,6 +51,7 @@ import { exerciseAnswerSchema, PRACTICE_RATINGS } from '../shared/exercises'
 import { IPC, type Result, type SampleSentence } from '../shared/ipc'
 import { LANGUAGE_IDS, languageInfo, type CourseSummary, type LanguageId } from '../shared/languages'
 import { SUMMARY_TYPE_IDS } from '../shared/summaries'
+import { spanish } from './claude/quality'
 
 // Envuelve cada handler para que la interfaz reciba un Result en vez de un error de Electron.
 function handle<T>(channel: string, fn: (...args: unknown[]) => T | Promise<T>): void {
@@ -91,13 +96,21 @@ export interface IpcOptions {
   courseExists: (language: LanguageId) => boolean
   contentDir: string
   isDev: boolean
+  data: DataManager
   onSettingsChange?: (settings: AppSettings) => void
 }
 
-export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onSettingsChange = () => {} }: IpcOptions): {
+export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, data, onSettingsChange = () => {} }: IpcOptions): {
   today: () => string
   warmUp: () => void
+  dayStatus: () => DayStatus | null
 } {
+  // Cómo trabaja Claude (velocidad y variante del español) sale de los ajustes.
+  const applyClaudePrefs = (settings: AppSettings): void => {
+    setClaudeProfile(settings.claudeMode)
+    setSpanishVariant(settings.spanishVariant)
+  }
+  applyClaudePrefs(loadSettings(db))
   // Un juego de servicios por idioma, armado la primera vez que se usa; si el temario
   // tiene errores, el mensaje llega a la interfaz.
   const courses = new Map<LanguageId, Services>()
@@ -194,6 +207,47 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.appTimings, () => timingStats(db))
   handle(IPC.claudeCancel, () => cancelClaude())
   handle(IPC.modelsSize, () => modelsSize())
+  handle(IPC.studyAdd, (seconds) => addStudyTime(courseDb(activeLanguage()), today(), z.number().parse(seconds)))
+  handle(IPC.goalGet, () => goalView(courseDb(activeLanguage()), loadSettings(db).dailyGoal, today()))
+  // Datos: copias, exportar, importar y borrar. Lo que reemplaza las bases reinicia la app.
+  const relaunch = (): void => {
+    setTimeout(() => {
+      app.relaunch()
+      app.exit(0)
+    }, 300)
+  }
+  handle(IPC.dataBackups, () => data.backups())
+  handle(IPC.dataBackupNow, () => data.backup(today(), true))
+  handle(IPC.dataRestore, (date) => {
+    data.restore(z.string().parse(date))
+    relaunch()
+  })
+  handle(IPC.dataExport, async () => {
+    const { canceled, filePath } = await dialog.showSaveDialog({
+      title: 'Exportar el progreso',
+      defaultPath: `Enhome ${today()}.enhome`,
+      filters: [{ name: 'Progreso de Enhome', extensions: ['enhome'] }]
+    })
+    if (canceled || !filePath) return null
+    await writeFile(filePath, data.exportData(app.getVersion()))
+    return filePath
+  })
+  handle(IPC.dataImport, async () => {
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: 'Importar el progreso',
+      filters: [{ name: 'Progreso de Enhome', extensions: ['enhome'] }],
+      properties: ['openFile']
+    })
+    if (canceled || filePaths.length === 0) return false
+    data.importData(await readFile(filePaths[0]), today())
+    relaunch()
+    return true
+  })
+  handle(IPC.dataDeleteAll, () => {
+    data.backup(today(), true)
+    data.deleteAll()
+    relaunch()
+  })
   handle(IPC.modelsRemove, () => removeModels())
   // openPath devuelve un texto con el error en vez de lanzarlo.
   const open = async (path: string | null): Promise<void> => {
@@ -213,7 +267,7 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
     askClaude({
       label: 'prueba de conexión',
       systemPrompt: 'Sos un generador de contenido para una app de idiomas para hispanohablantes. Respondé solo con lo pedido.',
-      prompt: `Dame una oración simple en ${languageInfo(activeLanguage()).promptName} de nivel A1 y su traducción al español rioplatense.`,
+      prompt: `Dame una oración simple en ${languageInfo(activeLanguage()).promptName} de nivel A1 y su traducción al ${spanish()}.`,
       schema: z.object({ english: z.string(), spanish: z.string() })
     })
   )
@@ -226,6 +280,7 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
       throw new Error('Entregá el examen semanal antes de cambiar de idioma.')
     }
     const settings = updateSettings(db, patch)
+    applyClaudePrefs(settings)
     onSettingsChange(settings)
     if (next) warmUp()
     return settings
@@ -416,5 +471,16 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
     })
   }
 
-  return { today, warmUp }
+  // Para el recordatorio: si falta la práctica de hoy y cómo va la meta del curso abierto.
+  const dayStatus = (): DayStatus | null => {
+    try {
+      const { week } = state()
+      const practicePending = !!week?.canPracticeNow && week.days.some((d) => d.date === today() && d.status === 'today')
+      return { practicePending, goal: goalView(courseDb(activeLanguage()), loadSettings(db).dailyGoal, today()) }
+    } catch {
+      return null
+    }
+  }
+
+  return { today, warmUp, dayStatus }
 }

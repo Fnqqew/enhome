@@ -6,8 +6,11 @@ import type { ProgressView } from '@shared/rewards'
 import { useCourse } from '../../hooks/useCourse'
 import type { Navigate } from '../../navigation'
 import Icon from '../Icon'
+import { goalUnit, type GoalView } from '@shared/goal'
+import { useMinutesToMidnight } from '../../hooks/useDay'
 
 interface Extras {
+  goal: GoalView | null
   player: ProgressView['player'] | null
   mistakesDue: number
   cardsDue: number
@@ -24,12 +27,20 @@ interface Action {
 // regresiva al examen arriba de todo, y atajos a lo demás.
 export default function TodayCard({ progress, navigate }: { progress: ProgressState; navigate: Navigate }): React.JSX.Element {
   const course = useCourse()
-  const [extras, setExtras] = useState<Extras>({ player: null, mistakesDue: 0, cardsDue: 0, journalDone: false })
+  const [extras, setExtras] = useState<Extras>({ goal: null, player: null, mistakesDue: 0, cardsDue: 0, journalDone: false })
+  const minutesLeft = useMinutesToMidnight()
 
   useEffect(() => {
-    Promise.allSettled([window.api.getProgressView(), window.api.getReviewOverview(), window.api.getVocab(), window.api.getJournal()]).then(
-      ([view, review, vocab, journal]) =>
+    Promise.allSettled([
+      window.api.getProgressView(),
+      window.api.getReviewOverview(),
+      window.api.getVocab(),
+      window.api.getJournal(),
+      window.api.getGoal()
+    ]).then(
+      ([view, review, vocab, journal, goal]) =>
         setExtras({
+          goal: goal.status === 'fulfilled' ? goal.value : null,
           player: view.status === 'fulfilled' ? view.value.player : null,
           mistakesDue: review.status === 'fulfilled' ? review.value.dueToday : 0,
           cardsDue: vocab.status === 'fulfilled' ? vocab.value.dueToday : 0,
@@ -72,11 +83,18 @@ export default function TodayCard({ progress, navigate }: { progress: ProgressSt
           )}
         </div>
       </div>
-      <div className="row">
+      <div className="row today-actions">
         <button className="btn today-go" onClick={action.go}>
           {action.label}
         </button>
+        {extras.goal && extras.goal.kind !== 'off' && <GoalMeter goal={extras.goal} />}
       </div>
+      {extras.goal && !extras.goal.met && extras.goal.kind !== 'off' && minutesLeft <= 90 && (
+        <div className="notice warn">
+          Quedan {minutesLeft} minutos del día y te {extras.goal.target - extras.goal.done === 1 ? 'falta' : 'faltan'}{' '}
+          {extras.goal.target - extras.goal.done} {goalUnit(extras.goal, extras.goal.target - extras.goal.done)} para tu meta.
+        </div>
+      )}
       <div className="today-shortcuts">
         <Shortcut icon="repaso" label="Repaso" count={extras.mistakesDue + extras.cardsDue} onClick={() => navigate('repaso')} />
         <Shortcut icon="diario" label={extras.journalDone ? 'Diario hecho' : 'Diario de hoy'} done={extras.journalDone} onClick={() => navigate('diario')} />
@@ -130,6 +148,21 @@ function mainAction(progress: ProgressState, extras: Extras, navigate: Navigate)
   }
   const done = week?.practiceBlockedReason ?? 'Lo de hoy ya está.'
   return { label: 'Jugar un rato', detail: `${done} Si querés seguir, los juegos y las lecturas suman.`, go: () => navigate('juegos') }
+}
+
+function GoalMeter({ goal }: { goal: GoalView }): React.JSX.Element {
+  const ratio = Math.min(1, goal.done / Math.max(goal.target, 1))
+  return (
+    <div className={`goal-meter${goal.met ? ' met' : ''}`} title="Meta de hoy (se cambia en Ajustes → Estudio)">
+      <span className="small">
+        {goal.met ? <Icon name="check" className="glyph" /> : null} Meta de hoy: <strong>{Math.min(goal.done, goal.target)}</strong>/{goal.target}{' '}
+        {goal.kind === 'minutes' ? 'min' : goalUnit(goal, goal.target)}
+      </span>
+      <span className="goal-bar">
+        <span style={{ width: `${ratio * 100}%` }} />
+      </span>
+    </div>
+  )
 }
 
 function Shortcut({

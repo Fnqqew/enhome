@@ -6,7 +6,7 @@ import { addDays } from '../../shared/dates'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 import { MAX_TERM_LENGTH, VOCAB_INTERVALS, type VocabCard, type VocabOverview, type WordInfo } from '../../shared/vocab'
 import { askClaude, type Ask } from '../claude/bridge'
-import { roleSystemPrompt } from '../claude/quality'
+import { roleSystemPrompt, spanish } from '../claude/quality'
 import type { Db } from '../db/database'
 
 export class VocabError extends Error {}
@@ -50,7 +50,7 @@ export function buildLookupPrompt(term: string, context: string, language: Langu
 ${context ? `Aparece en: «${context}»\n` : ''}
 Devolvé:
 - term: la palabra o expresión en su forma de diccionario (infinitivo, singular, masculino), en ${target}. Si es una expresión fija, la expresión completa.
-- translation: la traducción al español rioplatense que corresponde en ese contexto (si tiene otra acepción muy común, agregala después de una barra).
+- translation: la traducción al ${spanish()} que corresponde en ese contexto (si tiene otra acepción muy común, agregala después de una barra).
 - example: una oración corta y natural en ${target}, de nivel ${level}, que use la palabra con ese significado.
 - exampleEs: la traducción de esa oración.
 - note: un dato útil y breve en español (género, plural irregular, verbo irregular, falso amigo, registro), o vacío si no hace falta.`

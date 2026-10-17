@@ -1,5 +1,5 @@
 import { app, BrowserWindow, ipcMain, powerMonitor, screen, shell } from 'electron'
-import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { is } from '@electron-toolkit/utils'
 import { watchDayChange } from './day-watcher'
@@ -13,6 +13,8 @@ import { applyStyle, styleHash, windowColor } from './window-style'
 import { initialBounds, readWindowState, trackWindowState } from './window-state'
 import { startLog } from './log'
 import { registerModelScheme, serveModels } from './models'
+import { DataManager } from './data/data'
+import { startReminders, TrayIcon } from './reminders'
 import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
 
@@ -29,6 +31,11 @@ function migrateOldData(): string {
   const file = 'enhome.db'
   const target = join(app.getPath('userData'), file)
   const anterior = join(app.getPath('appData'), 'proyecto-ingles', 'proyecto-ingles.db')
+  // Se intenta una sola vez: si después se borran los datos, no vuelve a traer lo viejo.
+  const marker = join(app.getPath('userData'), 'migracion-revisada')
+  if (existsSync(marker)) return file
+  mkdirSync(app.getPath('userData'), { recursive: true })
+  writeFileSync(marker, new Date().toISOString())
   if (existsSync(target) || !existsSync(anterior)) return file
 
   try {
@@ -43,7 +50,9 @@ function migrateOldData(): string {
   return file
 }
 
-function createWindow(settings: AppSettings): BrowserWindow {
+let quitting = false
+
+function createWindow(settings: AppSettings, hidden = false): BrowserWindow {
   const bounds = initialBounds(
     readWindowState(windowStatePath()),
     screen.getAllDisplays().map((display) => display.workArea)
@@ -74,7 +83,11 @@ function createWindow(settings: AppSettings): BrowserWindow {
 
   trackWindowState(win, windowStatePath())
   // Maximizar también la muestra, así no se ve un instante en el tamaño normal.
-  win.on('ready-to-show', () => (bounds.maximized ? win.maximize() : win.show()))
+  win.on('ready-to-show', () => {
+    if (hidden) return
+    if (bounds.maximized) win.maximize()
+    else win.show()
+  })
   const sendState = (): void => win.webContents.send(IPC.windowState, win.isMaximized())
   win.on('maximize', sendState)
   win.on('unmaximize', sendState)
@@ -103,6 +116,8 @@ if (!app.requestSingleInstanceLock()) {
     const win = BrowserWindow.getAllWindows()[0]
     if (!win) return
     if (win.isMinimized()) win.restore()
+    // Pudo haber quedado escondida en la bandeja.
+    win.show()
     win.focus()
   })
 
@@ -123,20 +138,31 @@ if (!app.requestSingleInstanceLock()) {
       }
       return course
     }
-    app.on('will-quit', () => courseDbs.forEach((course) => course.close()))
+    app.on('will-quit', () =>
+      courseDbs.forEach((course) => {
+        try {
+          course.close()
+        } catch {
+          // Ya estaba cerrada (por ejemplo, después de restaurar una copia).
+        }
+      })
+    )
+    const data = new DataManager({ dataDir, openDbs: courseDbs, courseDb })
 
     // En desarrollo el temario se lee del repo; instalada, de los recursos de la app.
     const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-    const { today, warmUp } = registerIpc({
+    const { today, warmUp, dayStatus } = registerIpc({
       db,
       courseDb,
       courseExists: (language) => language === 'en' || existsSync(coursePath(language)),
       contentDir,
       isDev: is.dev,
+      data,
       // Al cambiar el estilo se repintan la ventana, el ícono de la barra de tareas y el del escritorio.
       onSettingsChange: (settings) => {
         const win = currentWindow()
         if (win) applyStyle(win, settings)
+        applySystem(settings)
       }
     })
 
@@ -157,10 +183,52 @@ if (!app.requestSingleInstanceLock()) {
     powerMonitor.on('resume', dayWatcher.check)
     app.on('will-quit', dayWatcher.stop)
 
+    // Bandeja del sistema y arranque con Windows (minimizada en la bandeja).
+    const showSection = (section?: string): void => {
+      const win = BrowserWindow.getAllWindows()[0]
+      if (!win) return
+      if (win.isMinimized()) win.restore()
+      win.show()
+      win.focus()
+      if (section) win.webContents.send(IPC.navigate, section)
+    }
+    const tray = new TrayIcon(showSection, () => {
+      quitting = true
+      app.quit()
+    })
+    const applySystem = (current: AppSettings): void => {
+      tray.update(current.tray, join(app.getAppPath(), 'resources/icons', `${current.style}.png`))
+      // Solo instalada: en desarrollo registraría el Electron del repo.
+      if (app.isPackaged) app.setLoginItemSettings({ openAtLogin: current.startWithWindows, args: ['--oculta'] })
+    }
+    startReminders(() => loadSettings(db), dayStatus, today, showSection)
+
     const settings = loadSettings(db)
-    applyStyle(createWindow(settings), settings)
+    applySystem(settings)
+    // Al arrancar con Windows la ventana queda escondida en la bandeja.
+    const startHidden = process.argv.includes('--oculta') && settings.tray
+    const mainWindow = createWindow(settings, startHidden)
+    applyStyle(mainWindow, settings)
+    // Con la bandeja activa, cerrar la ventana la esconde en vez de salir.
+    mainWindow.on('close', (event) => {
+      if (!quitting && loadSettings(db).tray) {
+        event.preventDefault()
+        mainWindow.hide()
+      }
+    })
+    app.on('before-quit', () => {
+      quitting = true
+    })
     // Unos segundos después de abrir, para no competir con la carga de la ventana.
     setTimeout(warmUp, 6_000)
+    // Una copia de seguridad por día de cada curso.
+    setTimeout(() => {
+      try {
+        data.backup(today())
+      } catch (error) {
+        console.error('No se pudo hacer la copia de seguridad', error)
+      }
+    }, 15_000)
     app.on('activate', () => {
       if (BrowserWindow.getAllWindows().length > 0) return
       const current = loadSettings(db)

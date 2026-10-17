@@ -116,19 +116,19 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Ajustes y opciones
 
-- [ ] 72 Recordatorio diario, bandeja y arranque con Windows
+- [x] 72 Recordatorio diario, bandeja y arranque con Windows
 - [x] 73 Pausar un curso
-- [ ] 74 Ajustes por pestañas
-- [ ] 75 Meta diaria
+- [x] 74 Ajustes por pestañas
+- [x] 75 Meta diaria
 - [x] 76 Racha y experiencia compartidas (resuelto por D2: quedan por idioma)
-- [ ] 77 Elegir velocidad o precisión de Claude
-- [ ] 78 Variante del español de las explicaciones
+- [x] 77 Elegir velocidad o precisión de Claude
+- [x] 78 Variante del español de las explicaciones
 
 ## Datos y seguridad
 
-- [ ] 79 Copia de seguridad automática
-- [ ] 80 Exportar e importar el progreso
-- [ ] 81 Borrado de datos claro
+- [x] 79 Copia de seguridad automática
+- [x] 80 Exportar e importar el progreso
+- [x] 81 Borrado de datos claro
 
 ## Calidad del código
 

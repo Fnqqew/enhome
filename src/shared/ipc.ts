@@ -3,6 +3,8 @@
 import type { CefrLevel, CurriculumMap, CurriculumTopic, Topic } from './curriculum'
 import type { CertificateView } from './certificates'
 import type { StatsView } from './stats'
+import type { BackupInfo } from './data'
+import type { GoalView } from './goal'
 import type { LibraryResult } from './library'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { FeedbackNote, NewFeedback } from './feedback'
@@ -24,6 +26,15 @@ export const IPC = {
   appOpenLog: 'app:open-log',
   appOpenData: 'app:open-data',
   modelsSize: 'models:size',
+  studyAdd: 'study:add',
+  goalGet: 'goal:get',
+  navigate: 'app:navigate',
+  dataBackups: 'data:backups',
+  dataBackupNow: 'data:backup-now',
+  dataRestore: 'data:restore',
+  dataExport: 'data:export',
+  dataImport: 'data:import',
+  dataDeleteAll: 'data:delete-all',
   modelsRemove: 'models:remove',
   claudeCancel: 'claude:cancel',
   claudeStatus: 'claude:status',
@@ -154,6 +165,18 @@ export interface Api {
   openDataFolder(): Promise<void>
   // Bytes que ocupan los modelos de voz descargados, y borrarlos.
   getModelsSize(): Promise<number>
+  // Suma segundos de estudio activo de hoy (para la meta en minutos).
+  addStudyTime(seconds: number): Promise<void>
+  getGoal(): Promise<GoalView>
+  // El proceso principal pide abrir una sección (desde la bandeja o una notificación).
+  onNavigate(callback: (section: string) => void): () => void
+  getBackups(): Promise<BackupInfo[]>
+  backupNow(): Promise<BackupInfo | null>
+  // Restaurar, importar y borrar reinician la app.
+  restoreBackup(date: string): Promise<void>
+  exportData(): Promise<string | null>
+  importData(): Promise<boolean>
+  deleteAllData(): Promise<void>
   removeModels(): Promise<void>
   getClaudeStatus(): Promise<ClaudeStatus>
   // Corta los pedidos a Claude en curso; devuelve cuántos había.

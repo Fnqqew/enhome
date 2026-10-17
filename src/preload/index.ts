@@ -13,6 +13,19 @@ const api: Api = {
   openLogFile: () => invoke(IPC.appOpenLog),
   openDataFolder: () => invoke(IPC.appOpenData),
   getModelsSize: () => invoke(IPC.modelsSize),
+  addStudyTime: (seconds) => invoke(IPC.studyAdd, seconds),
+  getGoal: () => invoke(IPC.goalGet),
+  onNavigate: (callback) => {
+    const listener = (_event: Electron.IpcRendererEvent, section: string): void => callback(section)
+    ipcRenderer.on(IPC.navigate, listener)
+    return () => ipcRenderer.removeListener(IPC.navigate, listener)
+  },
+  getBackups: () => invoke(IPC.dataBackups),
+  backupNow: () => invoke(IPC.dataBackupNow),
+  restoreBackup: (date) => invoke(IPC.dataRestore, date),
+  exportData: () => invoke(IPC.dataExport),
+  importData: () => invoke(IPC.dataImport),
+  deleteAllData: () => invoke(IPC.dataDeleteAll),
   removeModels: () => invoke(IPC.modelsRemove),
   getClaudeStatus: () => invoke(IPC.claudeStatus),
   cancelClaude: () => invoke(IPC.claudeCancel),

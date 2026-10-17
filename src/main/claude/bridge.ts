@@ -223,6 +223,20 @@ export interface ClaudeTiming {
 
 let recordTiming: (timing: ClaudeTiming) => void = () => {}
 
+// Ajustes → Claude: rápido piensa menos antes de responder; preciso, más.
+export type ClaudeProfile = 'rapido' | 'equilibrado' | 'preciso'
+let profile: ClaudeProfile = 'equilibrado'
+
+export function setClaudeProfile(value: ClaudeProfile): void {
+  profile = value
+}
+
+export function effortFor(requested: AskOptions<unknown>['effort']): AskOptions<unknown>['effort'] {
+  if (profile === 'rapido') return 'low'
+  if (profile === 'preciso') return 'high'
+  return requested
+}
+
 export function onClaudeTiming(record: (timing: ClaudeTiming) => void): void {
   recordTiming = record
 }
@@ -248,7 +262,7 @@ export async function askClaude<T>({
     '--tools', '',
     '--no-session-persistence',
     '--model', model,
-    ...(effort ? ['--effort', effort] : []),
+    ...(effortFor(effort) ? ['--effort', effortFor(effort)!] : []),
     '--system-prompt', systemPrompt,
     '--json-schema', JSON.stringify(toClaudeJsonSchema(schema))
   ]

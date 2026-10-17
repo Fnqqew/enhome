@@ -6,7 +6,7 @@ import type { CefrLevel, CurriculumTopic } from '../../shared/curriculum'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 import type { ReadingSummary, ReadingView } from '../../shared/reading'
 import { askClaude, type Ask } from '../claude/bridge'
-import { roleSystemPrompt, selfCheck } from '../claude/quality'
+import { roleSystemPrompt, selfCheck, spanish } from '../claude/quality'
 import type { Db } from '../db/database'
 import type { Progression } from '../engine/progression'
 
@@ -62,7 +62,7 @@ Vocabulario y estructuras del nivel ${topic.level}; como mucho un 5 % de palabra
 Devolvé:
 - title: un título corto en ${target}.
 - text: el texto.
-- glossary: entre 6 y 10 palabras o expresiones que aparecen tal cual en el texto y que pueden costar, con su traducción al español rioplatense en ese contexto.
+- glossary: entre 6 y 10 palabras o expresiones que aparecen tal cual en el texto y que pueden costar, con su traducción al ${spanish()} en ese contexto.
 - questions: 4 preguntas de comprensión ${questionsLanguage}, con 4 opciones cada una (una sola correcta, que se deduzca del texto), correctIndex y una explanation breve en español que cite el fragmento que la responde.
 
 ${selfCheck(topic.language)}`

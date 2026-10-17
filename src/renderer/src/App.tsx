@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
 import { SECTION_GROUPS, SECTIONS, type Navigate, type NavParams, type SectionId } from './navigation'
 import Icon from './components/Icon'
@@ -180,6 +180,17 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
     [examLocked]
   )
 
+  // La bandeja o una notificación pueden pedir abrir una sección.
+  useEffect(
+    () =>
+      window.api.onNavigate((target) => {
+        if (SECTIONS.some((s) => s.id === target)) navigate(target as SectionId)
+      }),
+    [navigate]
+  )
+
+  useStudyTimer(section)
+
   // Ctrl+K busca, Ctrl+1 a Ctrl+9 van a las secciones, Ctrl+B pliega la barra y Esc sale del modo enfoque.
   useEffect(() => {
     const onKey = (event: KeyboardEvent): void => {
@@ -339,4 +350,34 @@ function useMediaQuery(query: string): boolean {
     return () => list.removeEventListener('change', onChange)
   }, [query])
   return matches
+}
+
+// Secciones donde se estudia: el tiempo con la ventana activa cuenta para la meta en minutos.
+const STUDY_SECTIONS: SectionId[] = ['practica', 'repaso', 'resumenes', 'pruebas', 'temario', 'charla', 'juegos', 'lecturas', 'diario', 'biblioteca']
+const STUDY_TICK_MS = 30_000
+const IDLE_AFTER_MS = 120_000
+
+function useStudyTimer(section: SectionId): void {
+  const lastInput = useRef(Date.now())
+  useEffect(() => {
+    const touch = (): void => {
+      lastInput.current = Date.now()
+    }
+    window.addEventListener('keydown', touch)
+    window.addEventListener('pointermove', touch)
+    window.addEventListener('pointerdown', touch)
+    return () => {
+      window.removeEventListener('keydown', touch)
+      window.removeEventListener('pointermove', touch)
+      window.removeEventListener('pointerdown', touch)
+    }
+  }, [])
+  useEffect(() => {
+    if (!STUDY_SECTIONS.includes(section)) return
+    const timer = setInterval(() => {
+      const active = document.hasFocus() && !document.hidden && Date.now() - lastInput.current < IDLE_AFTER_MS
+      if (active) window.api.addStudyTime(STUDY_TICK_MS / 1000).catch(() => undefined)
+    }, STUDY_TICK_MS)
+    return () => clearInterval(timer)
+  }, [section])
 }

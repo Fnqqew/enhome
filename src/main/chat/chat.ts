@@ -6,7 +6,7 @@ import type { ChatCorrection, ChatMessage, ChatSuggestion, ChatSummary, ChatView
 import type { CurriculumTopic } from '../../shared/curriculum'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 import { askClaude, type Ask } from '../claude/bridge'
-import { roleSystemPrompt } from '../claude/quality'
+import { roleSystemPrompt, spanish } from '../claude/quality'
 import type { Db } from '../db/database'
 import type { Progression } from '../engine/progression'
 
@@ -58,7 +58,7 @@ Devolvé:
 - correction: la corrección del último mensaje del alumno.
   - ok: true si es correcto y natural (detalles de puntuación o mayúsculas no cuentan).
   - corrected: el mensaje corregido con los cambios mínimos (igual al original si está bien). Si escribió partes en español, cómo se dicen en ${target}.
-  - notes: hasta 4 explicaciones breves en español rioplatense de lo que cambiaste. Vacío si está bien.`
+  - notes: hasta 4 explicaciones breves en ${spanish()} de lo que cambiaste. Vacío si está bien.`
 }
 
 export class Chats {

@@ -199,7 +199,20 @@ export const settingsSchema = z.object({
   // Sonidos de acierto, error y logro (apagados por defecto).
   sounds: z.boolean(),
   // Los colores del estilo «Personalizado».
-  customStyle: customStyleSchema
+  customStyle: customStyleSchema,
+  // Aviso diario de Windows a la hora elegida si falta la práctica o la meta.
+  reminderEnabled: z.boolean(),
+  reminderTime: z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/),
+  // Al cerrar, la app queda en la bandeja del sistema.
+  tray: z.boolean(),
+  // Arranca con Windows, minimizada en la bandeja.
+  startWithWindows: z.boolean(),
+  // Meta de cada día: minutos de estudio o actividades (práctica, juegos, lecturas, diario, charlas).
+  dailyGoal: z.object({ kind: z.enum(['minutes', 'activities', 'off']), amount: z.number().int().min(1).max(180) }),
+  // Velocidad o precisión de Claude.
+  claudeMode: z.enum(['rapido', 'equilibrado', 'preciso']),
+  // Variante del español de las explicaciones de Claude.
+  spanishVariant: z.enum(['rioplatense', 'neutro'])
 })
 
 export const PRACTICE_LENGTHS = {
@@ -239,5 +252,12 @@ export const DEFAULT_SETTINGS: AppSettings = {
   excludedTypes: [],
   studentName: '',
   sounds: false,
-  customStyle: { bg: '#f3f1ec', accent: '#3f5bd0', radius: 'soft' }
+  customStyle: { bg: '#f3f1ec', accent: '#3f5bd0', radius: 'soft' },
+  reminderEnabled: false,
+  reminderTime: '19:00',
+  tray: false,
+  startWithWindows: false,
+  dailyGoal: { kind: 'minutes', amount: 15 },
+  claudeMode: 'equilibrado',
+  spanishVariant: 'rioplatense'
 }
