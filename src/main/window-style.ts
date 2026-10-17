@@ -4,14 +4,16 @@ import { app, nativeImage, nativeTheme, type BrowserWindow } from 'electron'
 import { execFile } from 'node:child_process'
 import { copyFileSync, existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { STYLES, type AppSettings, type StyleId } from '../shared/settings'
+import { isDarkColor, STYLES, type AppSettings, type StyleId } from '../shared/settings'
 
 export function isDark(settings: AppSettings): boolean {
+  if (settings.style === 'personal') return isDarkColor(settings.customStyle.bg)
   return settings.theme === 'dark' || (settings.theme === 'system' && nativeTheme.shouldUseDarkColors)
 }
 
 // El color de fondo de la ventana es el de la pantalla de carga, para que no se vea un parpadeo al abrir.
 export function windowColor(settings: AppSettings): string {
+  if (settings.style === 'personal') return settings.customStyle.bg
   const style = STYLES.find((s) => s.id === settings.style) ?? STYLES[0]
   return (isDark(settings) ? style.preview.dark : style.preview.light).bg
 }

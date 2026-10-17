@@ -343,3 +343,26 @@
 :root[data-style='contraste'] .nav-item[aria-current='page'] {
   outline: 2px solid var(--accent);
 }
+
+/* Personalizado: los colores salen de --custom-bg y --custom-accent, que pone la app según lo elegido;
+   el modo (claro u oscuro) depende de qué tan oscuro es el fondo. */
+:root[data-style='personal'] {
+  --bg: var(--custom-bg, #f6f5f2);
+  --surface: color-mix(in srgb, var(--custom-bg, #f6f5f2) 35%, #ffffff);
+  --surface-hover: color-mix(in srgb, var(--custom-bg, #f6f5f2) 92%, #000000);
+  --border: color-mix(in srgb, var(--custom-bg, #f6f5f2) 80%, #000000);
+  --text: #1d1d1f;
+  --muted: #55555e;
+  --accent: var(--custom-accent, #3f5bd0);
+  --accent-contrast: var(--custom-accent-text, #ffffff);
+  --radius: var(--custom-radius, 12px);
+  --btn-radius: calc(var(--custom-radius, 12px) * 0.7);
+}
+
+:root[data-style='personal'][data-theme='dark'] {
+  --surface: color-mix(in srgb, var(--custom-bg, #161719) 88%, #ffffff);
+  --surface-hover: color-mix(in srgb, var(--custom-bg, #161719) 80%, #ffffff);
+  --border: color-mix(in srgb, var(--custom-bg, #161719) 70%, #ffffff);
+  --text: #ececf0;
+  --muted: #a8a8b2;
+}

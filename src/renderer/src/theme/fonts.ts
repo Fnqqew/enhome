@@ -25,7 +25,8 @@ const STYLE_FONTS: Record<StyleId, FontId[]> = {
   noche: [],
   papel: ['literata'],
   contraste: ['atkinson'],
-  original: []
+  original: [],
+  personal: []
 }
 
 const loaded = new Map<FontId, Promise<unknown>>()

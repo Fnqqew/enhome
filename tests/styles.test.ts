@@ -31,7 +31,8 @@ function tokens(id: string, dark: boolean): Partial<StylePreview> {
 }
 
 describe('vista previa de los estilos', () => {
-  for (const style of STYLES) {
+  // El estilo propio arma sus colores en el momento con lo que elige el alumno.
+  for (const style of STYLES.filter((s) => s.id !== 'personal')) {
     for (const mode of ['light', 'dark'] as const) {
       it(`${style.label} en ${mode === 'dark' ? 'oscuro' : 'claro'} coincide con la hoja de estilo`, () => {
         const css = tokens(style.id, mode === 'dark')

@@ -18,7 +18,7 @@ export interface StylePreview {
 
 // Estilos visuales completos: cada uno trae su logo, colores, tipografías y formas.
 export const STYLES: readonly {
-  id: 'celeste' | 'ruta' | 'cuaderno' | 'racha' | 'noche' | 'papel' | 'contraste' | 'original'
+  id: 'celeste' | 'ruta' | 'cuaderno' | 'racha' | 'noche' | 'papel' | 'contraste' | 'original' | 'personal'
   label: string
   description: string
   colors: readonly string[]
@@ -103,8 +103,51 @@ export const STYLES: readonly {
       light: { bg: '#f6f5f2', sidebar: '#ffffff', surface: '#ffffff', accent: '#3f5bd0', text: '#22211f', border: '#e4e2dc' },
       dark: { bg: '#161719', sidebar: '#1f2023', surface: '#1f2023', accent: '#3f5bd0', text: '#ecebe8', border: '#2e3034' }
     }
+  },
+  {
+    id: 'personal',
+    label: 'Personalizado',
+    description: 'Tus colores: elegís el fondo, el acento y los bordes.',
+    colors: ['#f6f5f2', '#3f5bd0', '#22211f'],
+    // La miniatura real se arma con los colores elegidos (ver customPreview).
+    preview: {
+      light: { bg: '#f6f5f2', sidebar: '#ffffff', surface: '#ffffff', accent: '#3f5bd0', text: '#22211f', border: '#e4e2dc' },
+      dark: { bg: '#161719', sidebar: '#1f2023', surface: '#1f2023', accent: '#3f5bd0', text: '#ecebe8', border: '#2e3034' }
+    }
   }
 ]
+
+
+// El estilo propio: fondo y acento a elección, y qué tan redondeados son los bordes.
+export const CUSTOM_RADII = { square: '4px', soft: '12px', round: '20px' } as const
+export type CustomRadius = keyof typeof CUSTOM_RADII
+
+const hex = z.string().regex(/^#[0-9a-f]{6}$/i)
+
+export const customStyleSchema = z.object({
+  bg: hex,
+  accent: hex,
+  radius: z.enum(['square', 'soft', 'round'])
+})
+
+export type CustomStyle = z.infer<typeof customStyleSchema>
+
+function luminance(color: string): number {
+  const channels = [1, 3, 5].map((i) => parseInt(color.slice(i, i + 2), 16) / 255)
+  const [r, g, b] = channels.map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4))
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b
+}
+
+export function contrast(a: string, b: string): number {
+  const [x, y] = [luminance(a), luminance(b)].sort((m, n) => n - m)
+  return (x + 0.05) / (y + 0.05)
+}
+
+// Con un fondo oscuro, la app usa letras claras (y al revés).
+export const isDarkColor = (color: string): boolean => luminance(color) < 0.18
+
+// Texto sobre el acento: negro o blanco, el que más contraste.
+export const contrastText = (color: string): string => (contrast(color, '#000000') >= contrast(color, '#ffffff') ? '#111111' : '#ffffff')
 
 export type StyleId = (typeof STYLES)[number]['id']
 
@@ -154,7 +197,9 @@ export const settingsSchema = z.object({
   // Para los certificados (opcional).
   studentName: z.string().max(60),
   // Sonidos de acierto, error y logro (apagados por defecto).
-  sounds: z.boolean()
+  sounds: z.boolean(),
+  // Los colores del estilo «Personalizado».
+  customStyle: customStyleSchema
 })
 
 export const PRACTICE_LENGTHS = {
@@ -193,5 +238,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   practiceLength: 'normal',
   excludedTypes: [],
   studentName: '',
-  sounds: false
+  sounds: false,
+  customStyle: { bg: '#f3f1ec', accent: '#3f5bd0', radius: 'soft' }
 }

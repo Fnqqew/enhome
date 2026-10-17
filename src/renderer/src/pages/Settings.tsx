@@ -2,7 +2,21 @@ import { useCallback, useEffect, useState } from 'react'
 import type { ClaudeStatus, SampleSentence } from '@shared/ipc'
 import { LANGUAGES, languageInfo, type CourseSummary, type LanguageId } from '@shared/languages'
 import { EXERCISE_TYPE_LABELS, EXERCISE_TYPES, type ExerciseType } from '@shared/exercises'
-import { FONTS, PALETTES, PRACTICE_LENGTHS, STYLES, VOICE_SETTING, type AppSettings, type StylePreview } from '@shared/settings'
+import {
+  contrast,
+  contrastText,
+  CUSTOM_RADII,
+  FONTS,
+  isDarkColor,
+  PALETTES,
+  PRACTICE_LENGTHS,
+  STYLES,
+  VOICE_SETTING,
+  type AppSettings,
+  type CustomRadius,
+  type CustomStyle,
+  type StylePreview
+} from '@shared/settings'
 import { hasVoiceFor, pickVoice, speechTag, type SpeechLang } from '@shared/speech'
 import Logo from '../components/Logo'
 import { courseLine } from '../courseText'
@@ -34,7 +48,7 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
           <div className="style-grid" role="group" aria-label="Estilo">
             {STYLES.map((s) => (
               <button key={s.id} type="button" className="style-card" aria-pressed={s.id === settings.style} onClick={() => update({ style: s.id })}>
-                <StyleThumb preview={isDark ? s.preview.dark : s.preview.light} />
+                <StyleThumb preview={s.id === 'personal' ? customPreview(settings.customStyle) : isDark ? s.preview.dark : s.preview.light} />
                 <span className="style-head">
                   <Logo style={s.id} />
                   <span className="style-name">{s.label}</span>
@@ -45,6 +59,7 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
             ))}
           </div>
         </div>
+        {settings.style === 'personal' && <CustomStyleEditor />}
 
         <Row label="Tema">
           <Segmented
@@ -228,6 +243,63 @@ function PracticeSettings(): React.JSX.Element {
 }
 
 // Miniatura de la app con los colores de un estilo: barra lateral, título, una tarjeta y un botón.
+// Miniatura del estilo propio con sus colores (los mismos tonos que calcula styles.css).
+function customPreview(custom: CustomStyle): StylePreview {
+  const dark = isDarkColor(custom.bg)
+  const mix = (amount: number, other: string): string => `color-mix(in srgb, ${custom.bg} ${amount}%, ${other})`
+  return {
+    bg: custom.bg,
+    sidebar: dark ? mix(88, '#ffffff') : mix(35, '#ffffff'),
+    surface: dark ? mix(88, '#ffffff') : mix(35, '#ffffff'),
+    accent: custom.accent,
+    text: dark ? '#ececf0' : '#1d1d1f',
+    border: dark ? mix(70, '#ffffff') : mix(80, '#000000')
+  }
+}
+
+// Editor del estilo propio: fondo, acento y bordes, con la app entera como vista previa.
+function CustomStyleEditor(): React.JSX.Element {
+  const { settings, update } = useSettings()
+  const custom = settings.customStyle
+  const set = (patch: Partial<CustomStyle>): void => update({ customStyle: { ...custom, ...patch } })
+  const dark = isDarkColor(custom.bg)
+  const accentContrast = contrast(custom.accent, custom.bg)
+
+  return (
+    <div className="custom-style stack-sm">
+      <div className="row custom-colors">
+        <label className="color-field">
+          <input type="color" value={custom.bg} onChange={(e) => set({ bg: e.target.value })} />
+          <span>Fondo</span>
+        </label>
+        <label className="color-field">
+          <input type="color" value={custom.accent} onChange={(e) => set({ accent: e.target.value })} />
+          <span>Acento</span>
+        </label>
+        <Segmented<CustomRadius>
+          label="Bordes"
+          value={custom.radius}
+          onChange={(radius) => set({ radius })}
+          options={(Object.keys(CUSTOM_RADII) as CustomRadius[]).map((r) => ({
+            value: r,
+            label: r === 'square' ? 'Rectos' : r === 'soft' ? 'Suaves' : 'Redondeados'
+          }))}
+        />
+      </div>
+      <div className="custom-sample" style={{ background: custom.bg, color: dark ? '#ececf0' : '#1d1d1f', borderRadius: CUSTOM_RADII[custom.radius] }}>
+        <span>Así se ve el texto</span>
+        <span className="custom-sample-btn" style={{ background: custom.accent, color: contrastText(custom.accent), borderRadius: CUSTOM_RADII[custom.radius] }}>
+          Botón
+        </span>
+      </div>
+      <p className="muted small">
+        Con un fondo {dark ? 'oscuro' : 'claro'} la app usa letras {dark ? 'claras' : 'oscuras'}. La tipografía se elige más abajo.
+        {accentContrast < 3 && ' Ojo: el acento se distingue poco del fondo; probá uno más oscuro o más claro.'}
+      </p>
+    </div>
+  )
+}
+
 function StyleThumb({ preview }: { preview: StylePreview }): React.JSX.Element {
   return (
     <span className="style-thumb" style={{ background: preview.bg, borderColor: preview.border }} aria-hidden="true">

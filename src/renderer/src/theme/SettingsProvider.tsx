@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react'
-import { DEFAULT_SETTINGS, PALETTES, type AppSettings } from '@shared/settings'
+import { contrastText, CUSTOM_RADII, DEFAULT_SETTINGS, isDarkColor, PALETTES, type AppSettings } from '@shared/settings'
 import { loadFonts } from './fonts'
 import { setSoundsEnabled } from '../sounds'
 
@@ -49,7 +49,11 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
 
   useEffect(() => setSoundsEnabled(settings.sounds), [settings.sounds])
 
-  const dark = settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
+  // El estilo propio decide el modo por su fondo.
+  const dark =
+    settings.style === 'personal'
+      ? isDarkColor(settings.customStyle.bg)
+      : settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
 
   useEffect(() => {
     const root = document.documentElement
@@ -63,8 +67,13 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
     root.dataset.density = settings.density
     root.dataset.motion = settings.reduceMotion ? 'reduce' : 'full'
     // «Del estilo» deja el color que define el CSS de cada estilo.
-    if (palette.id === 'estilo') root.style.removeProperty('--accent')
+    if (palette.id === 'estilo' || settings.style === 'personal') root.style.removeProperty('--accent')
     else root.style.setProperty('--accent', theme === 'dark' ? palette.dark : palette.light)
+    const custom = settings.customStyle
+    root.style.setProperty('--custom-bg', custom.bg)
+    root.style.setProperty('--custom-accent', custom.accent)
+    root.style.setProperty('--custom-accent-text', contrastText(custom.accent))
+    root.style.setProperty('--custom-radius', CUSTOM_RADII[custom.radius])
   }, [settings, dark])
 
   const update = useCallback((patch: Partial<AppSettings>) => {
