@@ -66,6 +66,12 @@ describe('utilidades de los juegos', () => {
     expect(scoreDictation('', 'Hola').score).toBe(0)
   })
 
+  it('una palabra de más o de menos no corre a las demás', () => {
+    expect(scoreDictation('my sister is a very good teacher', 'My sister is a teacher.').score).toBe(100)
+    expect(scoreDictation('sister is a teacher', 'My sister is a teacher.')).toMatchObject({ score: 80 })
+    expect(scoreDictation('sister is a teacher', 'My sister is a teacher.').marks[0]).toEqual({ word: 'my', ok: 'no' })
+  })
+
   it('las opciones incluyen la correcta una sola vez', () => {
     const pool = ['a', 'b', 'c', 'd', 'e', 'a']
     const { options, answer } = choices('a', pool, 4, (x) => x)
