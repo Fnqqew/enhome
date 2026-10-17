@@ -3,6 +3,7 @@ import { formatDayMonth } from '@shared/dates'
 import type { VocabCard, VocabOverview } from '@shared/vocab'
 import { useSpeech } from '../../hooks/useSpeech'
 import Icon from '../Icon'
+import { SkeletonCard } from '../Skeleton'
 
 // Vocabulario guardado: tarjetas para repasar (de la palabra a la traducción) y la lista completa.
 export default function VocabCards(): React.JSX.Element {
@@ -20,7 +21,7 @@ export default function VocabCards(): React.JSX.Element {
   useEffect(load, [load])
 
   if (error) return <p className="error">{error}</p>
-  if (!overview) return <p className="muted">Cargando…</p>
+  if (!overview) return <SkeletonCard lines={3} />
 
   if (due) {
     return (

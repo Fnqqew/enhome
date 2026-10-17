@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { flushSync } from 'react-dom'
 import { daysBetween, weekdayName } from '@shared/dates'
 import type { ProgressState } from '@shared/progress'
 import type { ProgressView } from '@shared/rewards'
@@ -87,6 +88,17 @@ export default function TodayCard({ progress, navigate }: { progress: ProgressSt
   )
 }
 
+// La tarjeta del día se transforma en la de la práctica (View Transitions). Sin soporte o con
+// animaciones reducidas, se cambia de sección directamente.
+function morphTo(go: () => void): void {
+  const reduced = document.documentElement.dataset.motion === 'reduce' || window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduced || !document.startViewTransition) {
+    go()
+    return
+  }
+  document.startViewTransition(() => flushSync(go))
+}
+
 function mainAction(progress: ProgressState, extras: Extras, navigate: Navigate): Action {
   const week = progress.week
   if (week?.examStatus === 'available') {
@@ -96,7 +108,7 @@ function mainAction(progress: ProgressState, extras: Extras, navigate: Navigate)
     return {
       label: 'Practicar',
       detail: `Día ${week.nextUnit.index}: ${week.nextUnit.subtopicTitle}.`,
-      go: () => navigate('practica')
+      go: () => morphTo(() => navigate('practica'))
     }
   }
   if (week?.canRecover && !week.nextUnit) {

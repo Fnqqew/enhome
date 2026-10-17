@@ -5,6 +5,7 @@ import DevTools from '../components/DevTools'
 import PlacementFlow from '../components/PlacementFlow'
 import TodayCard from '../components/home/TodayCard'
 import WeekCalendar from '../components/WeekCalendar'
+import { WeekRing } from '../components/progress/Charts'
 import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
 
@@ -114,14 +115,15 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
   return (
     <>
       <section className="card stack">
-        <div className="card-header">
+        <div className="card-header with-ring">
           <div>
             <span className="level">
               {week.level} · SEMANA DEL {formatDayMonth(week.weekStart)}
             </span>
             <h2>{week.topicTitle}</h2>
+            {week.kind !== 'normal' && <span className="badge">{week.kind === 'carry' ? 'Continuación' : 'Reintento'}</span>}
           </div>
-          {week.kind !== 'normal' && <span className="badge">{week.kind === 'carry' ? 'Continuación' : 'Reintento'}</span>}
+          <WeekRing done={week.completedUnits} total={week.units.length} />
         </div>
 
         {upcoming && (

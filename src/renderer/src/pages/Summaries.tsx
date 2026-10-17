@@ -16,6 +16,7 @@ import SelectionAsk from '../components/summaries/SelectionAsk'
 import ClaudeWait from '../components/ClaudeWait'
 import Icon from '../components/Icon'
 import SpeechControls from '../components/summaries/SpeechControls'
+import { SkeletonCard } from '../components/Skeleton'
 
 const STATUS_NOTE = { current: ' (en curso)', review: ' (para repasar)', passed: '' } as const
 
@@ -89,7 +90,7 @@ export default function Summaries(): React.JSX.Element {
     return (
       <>
         <h1>Resúmenes</h1>
-        {error ? <p className="error">{error}</p> : <p className="muted">Cargando…</p>}
+        {error ? <p className="error">{error}</p> : <SkeletonCard lines={3} />}
       </>
     )
   }
@@ -184,7 +185,7 @@ export default function Summaries(): React.JSX.Element {
         {error && <p className="error multiline">{error}</p>}
         <ClaudeWait active={generating} />
 
-        {!view && !error && <p className="muted">Cargando…</p>}
+        {!view && !error && <SkeletonCard lines={6} title={false} />}
         {view && !content && (
           <div className="notice stack-sm">
             <p>Este resumen todavía no existe para «{view.topicTitle}».</p>

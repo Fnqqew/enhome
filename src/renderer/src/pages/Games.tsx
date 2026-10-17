@@ -8,6 +8,7 @@ import Icon from '../components/Icon'
 import { INSTALL_VOICE_HELP } from '../components/summaries/SpeechControls'
 import { useCourse } from '../hooks/useCourse'
 import { useSpeech } from '../hooks/useSpeech'
+import PageSkeleton from '../components/Skeleton'
 
 const COMPONENTS: Record<GameId, (props: GameProps) => React.JSX.Element> = {
   contrarreloj: Countdown,
@@ -48,7 +49,7 @@ export default function Games(): React.JSX.Element {
   const onEnd = useCallback((score: number, summary: string) => setEnded({ score, summary }), [])
 
   if (error) return <p className="error">{error}</p>
-  if (!deck) return <p className="muted">Cargando…</p>
+  if (!deck) return <PageSkeleton cards={3} />
 
   if (playing) {
     const Game = COMPONENTS[playing]

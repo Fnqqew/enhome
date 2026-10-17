@@ -12,6 +12,7 @@ import CommandPalette from './components/CommandPalette'
 import { readLocal, ShellContext, writeLocal } from './shell'
 import { WelcomeTour, WhatsNew } from './components/Welcome'
 import RewardToasts from './components/RewardToasts'
+import PageSkeleton from './components/Skeleton'
 
 // Inicio va en el paquete principal; el resto de las secciones se carga cuando se abre
 // (y en segundo plano apenas la app queda tranquila, para que el primer clic sea instantáneo).
@@ -258,8 +259,8 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
       {version && <WhatsNew version={version} />}
       <RewardToasts trigger={section} />
       <main className="content">
-        <div key={section} className="page">
-          <Suspense fallback={<p className="muted">Cargando…</p>}>
+        <div key={section} className={`page page-${section}`}>
+          <Suspense fallback={<PageSkeleton />}>
             <Page section={section} params={params} status={status} navigate={navigate} onExamLock={setExamLocked} />
           </Suspense>
         </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { SKILL_LABELS } from '@shared/curriculum'
 import { formatDayMonth, isoWeekday } from '@shared/dates'
 import type { StatsView } from '@shared/stats'
+import PageSkeleton from '../components/Skeleton'
 
 // Estadísticas: aciertos por habilidad y por tópico, constancia y notas en el tiempo.
 export default function Stats(): React.JSX.Element {
@@ -16,7 +17,7 @@ export default function Stats(): React.JSX.Element {
   }, [])
 
   if (error) return <p className="error">{error}</p>
-  if (!stats) return <p className="muted">Cargando…</p>
+  if (!stats) return <PageSkeleton cards={3} />
 
   const empty = stats.totals.answered === 0 && stats.exams.length === 0
   return (

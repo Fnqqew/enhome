@@ -5,6 +5,7 @@ import { MAX_JOURNAL_LENGTH, type JournalEntry, type JournalView } from '@shared
 import ClaudeWait from '../components/ClaudeWait'
 import Icon from '../components/Icon'
 import { useCourse } from '../hooks/useCourse'
+import PageSkeleton from '../components/Skeleton'
 
 const SAVE_DELAY_MS = 800
 
@@ -69,7 +70,7 @@ export default function Journal(): React.JSX.Element {
     }
   }
 
-  if (!view) return error ? <p className="error">{error}</p> : <p className="muted">Cargando…</p>
+  if (!view) return error ? <p className="error">{error}</p> : <PageSkeleton />
 
   const words = text.trim() ? text.trim().split(/\s+/).length : 0
   const today = view.today

@@ -98,9 +98,9 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 ## Diseño visual
 
 - [x] 59 Íconos de línea en toda la app
-- [ ] 60 Esqueletos de carga y estados vacíos
-- [ ] 61 Ejercicio rediseñado
-- [ ] 62 Gráficos de progreso
+- [x] 60 Esqueletos de carga y estados vacíos
+- [x] 61 Ejercicio rediseñado
+- [x] 62 Gráficos de progreso
 - [ ] 63 Modo lectura cómodo
 - [x] 64 Tres estilos nuevos: Noche, Papel y Alto contraste
 - [ ] 65 Ordenar el sistema de diseño
@@ -112,7 +112,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 68 Celebración sutil al cerrar bien
 - [x] 69 Números que cuentan al cambiar
 - [x] 70 Sonidos opcionales
-- [ ] 71 Transición de la tarjeta del día a la práctica
+- [x] 71 Transición de la tarjeta del día a la práctica
 
 ## Ajustes y opciones
 

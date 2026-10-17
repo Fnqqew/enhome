@@ -6,6 +6,7 @@ import ExamPlayer from '../components/exams/ExamPlayer'
 import ExamResult from '../components/exams/ExamResult'
 import { useDayChange } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
+import { SkeletonCard } from '../components/Skeleton'
 
 const WEEKLY_RULES =
   'Cuando empieces no vas a poder salir de Pruebas hasta entregarlo. Podés moverte entre las preguntas y cambiar respuestas; se guardan solas. Si se cierra la app, tenés una única pausa de hasta 30 minutos para retomarlo.'
@@ -112,7 +113,7 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
         </section>
       )}
       {!overview ? (
-        <p className="muted">Cargando…</p>
+        <SkeletonCard lines={4} />
       ) : (
         <>
           {paused && (

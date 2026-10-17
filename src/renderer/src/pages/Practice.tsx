@@ -21,6 +21,7 @@ import SelectionAsk from '../components/summaries/SelectionAsk'
 import SpeechControls from '../components/summaries/SpeechControls'
 import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
+import { SkeletonCard } from '../components/Skeleton'
 
 // Desde cuántos minutos antes de medianoche se avisa durante una práctica.
 const MIDNIGHT_WARNING_MINUTES = 30
@@ -88,7 +89,7 @@ export default function Practice({ navigate }: { navigate: Navigate }): React.JS
   } else if (view?.status === 'session') {
     body = <SessionPlayer key={view.session.id} session={view.session} onView={setView} onFinished={setResult} />
   } else if (!error) {
-    body = <p className="muted">Cargando…</p>
+    body = <SkeletonCard lines={5} />
   }
 
   return (
@@ -204,7 +205,7 @@ function SessionPlayer({
 
   // Orden de foco con teclado: al corregir, el foco pasa a «Siguiente»; con un ejercicio nuevo,
   // a su encabezado, así se sigue con Tab desde ahí sin volver al principio de la página.
-  const headingRef = useRef<HTMLSpanElement>(null)
+  const headingRef = useRef<HTMLHeadingElement>(null)
   const nextRef = useRef<HTMLButtonElement>(null)
   // Con el ejercicio ya corregido se puede seleccionar una palabra para traducirla o preguntar.
   const exerciseRef = useRef<HTMLFormElement>(null)
@@ -312,8 +313,12 @@ function SessionPlayer({
     return () => window.removeEventListener('keydown', onKey)
   }, [])
 
+  const answeredCount = session.exercises.filter((e) => e.feedback).length
   return (
-    <section className="card stack">
+    <section className={`card stack exercise-card${current?.feedback ? ' has-feedback' : ''}`}>
+      <div className="exercise-progress" aria-hidden="true">
+        <span style={{ width: `${(answeredCount / Math.max(total, 1)) * 100}%` }} />
+      </div>
       <div className="card-header">
         <div>
           <Heading purpose={session.purpose} unitIndex={session.unitIndex} topicTitle={session.topicTitle} />
@@ -362,18 +367,27 @@ function SessionPlayer({
 
       {current ? (
         <form ref={exerciseRef} className="stack" onSubmit={submit}>
-          <span ref={headingRef} tabIndex={-1} className="exercise-type">
-            {EXERCISE_TYPE_LABELS[current.type]}
-          </span>
-          <p>{current.content.instruction}</p>
-          <ExerciseInput key={current.id} content={current.content} answer={current.answer} feedback={current.feedback} onChange={setDraft} />
-          {current.hint && !current.feedback && (
-            <div className="notice with-icon">
-              <Icon name="bulb" className="glyph" />
-              <span>{current.hint}</span>
+          {/* En pantallas anchas, la corrección queda en un panel al costado del ejercicio. */}
+          <div className="exercise-layout">
+            <div className="exercise-main stack">
+              <h3 ref={headingRef} tabIndex={-1} className="exercise-type exercise-heading">
+                {EXERCISE_TYPE_LABELS[current.type]}
+              </h3>
+              <p>{current.content.instruction}</p>
+              <ExerciseInput key={current.id} content={current.content} answer={current.answer} feedback={current.feedback} onChange={setDraft} />
+              {current.hint && !current.feedback && (
+                <div className="notice with-icon">
+                  <Icon name="bulb" className="glyph" />
+                  <span>{current.hint}</span>
+                </div>
+              )}
             </div>
-          )}
-          {current.feedback && <Feedback type={current.type} feedback={current.feedback} />}
+            {current.feedback && (
+              <div className="exercise-side">
+                <Feedback type={current.type} feedback={current.feedback} />
+              </div>
+            )}
+          </div>
           {error && <p className="error">{error}</p>}
           <ClaudeWait active={busy === 'answer'} />
 

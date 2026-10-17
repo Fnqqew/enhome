@@ -10,6 +10,7 @@ import Feedback from '../components/practice/Feedback'
 import { announceRewards } from '../rewardsBus'
 import { play } from '../sounds'
 import type { Navigate } from '../navigation'
+import { SkeletonCard } from '../components/Skeleton'
 
 // Repaso: el cuaderno de errores. Lo que se respondió mal vuelve a los 1, 3, 7 y 15 días hasta acertarlo
 // cuatro veces seguidas. Desde el resultado de un examen se abre con exactamente las preguntas falladas.
@@ -50,7 +51,7 @@ export default function Review({ examId, navigate }: { examId: number | null; na
     return (
       <>
         <h1>Repaso</h1>
-        <p className="muted">Cargando…</p>
+        <SkeletonCard lines={4} />
       </>
     )
   }

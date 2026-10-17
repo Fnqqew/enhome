@@ -5,8 +5,10 @@ import CountUp from '../components/CountUp'
 import Icon from '../components/Icon'
 import Certificates from '../components/progress/Certificates'
 import RoadMap from '../components/progress/RoadMap'
+import { JourneyBar } from '../components/progress/Charts'
 import { useDayChange } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
+import { SkeletonCard } from '../components/Skeleton'
 
 const WEEKDAYS = ['L', 'M', 'M', 'J', 'V', 'S', 'D']
 
@@ -40,7 +42,7 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
     return (
       <>
         <h1>Progreso</h1>
-        {error ? <p className="error">{error}</p> : <p className="muted">Cargando…</p>}
+        {error ? <p className="error">{error}</p> : <SkeletonCard lines={4} />}
       </>
     )
   }
@@ -171,10 +173,16 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
       <section className="card wide stack">
         <div className="card-header">
           <h2>Tu recorrido</h2>
-          <button className="chip" onClick={() => navigate('temario')}>
-            Ver temario
-          </button>
+          <div className="row">
+            <button className="chip" onClick={() => navigate('estadisticas')}>
+              Ver estadísticas
+            </button>
+            <button className="chip" onClick={() => navigate('temario')}>
+              Ver temario
+            </button>
+          </div>
         </div>
+        <JourneyBar map={view.map} />
         <RoadMap map={view.map} />
       </section>
 

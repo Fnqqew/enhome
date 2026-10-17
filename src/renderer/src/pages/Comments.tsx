@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { FEEDBACK_KINDS, type FeedbackKind, type FeedbackNote } from '@shared/feedback'
 import { SECTIONS, SECTION_LABELS, type SectionId } from '@shared/sections'
 import Icon from '../components/Icon'
+import { SkeletonCard } from '../components/Skeleton'
 
 const KIND_OF = Object.fromEntries(FEEDBACK_KINDS.map((k) => [k.id, k])) as Record<FeedbackKind, (typeof FEEDBACK_KINDS)[number]>
 
@@ -113,7 +114,7 @@ export default function Comments(): React.JSX.Element {
       </section>
 
       {notes === null ? (
-        <p className="muted">Cargando…</p>
+        <SkeletonCard lines={3} />
       ) : notes.length === 0 ? (
         <section className="card empty-state fade-in">
           <span className="empty-icon" aria-hidden="true">
