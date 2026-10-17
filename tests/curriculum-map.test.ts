@@ -2,14 +2,19 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { loadCurriculum, loadRoadmap } from '../src/main/content/curriculum'
 import { buildCurriculumMap } from '../src/main/content/curriculum-map'
+import type { Roadmap } from '../src/shared/curriculum'
+import { LANGUAGE_IDS } from '../src/shared/languages'
 
 const CONTENT_DIR = join(__dirname, '..', 'content')
 const curriculum = loadCurriculum(CONTENT_DIR)
 const roadmap = loadRoadmap(CONTENT_DIR)
 
 describe('roadmap', () => {
-  it('planifica B1 y B2', () => {
-    expect(roadmap.levels.map((l) => l.level)).toEqual(['B1', 'B2'])
+  it('los cuatro cursos tienen contenido de A1 a C1, así que no queda nada planificado', () => {
+    for (const language of LANGUAGE_IDS) {
+      expect(loadRoadmap(CONTENT_DIR, language).levels).toEqual([])
+      expect(new Set(loadCurriculum(CONTENT_DIR, language).map((t) => t.level))).toEqual(new Set(['A1', 'A2', 'B1', 'B2', 'C1']))
+    }
   })
 })
 
@@ -35,7 +40,10 @@ describe('buildCurriculumMap', () => {
   })
 
   it('incluye niveles futuros con sus tópicos planificados y sin el resumen pesado', () => {
-    const map = buildCurriculumMap(curriculum, roadmap, new Map(), null, false)
+    // Un curso que solo tiene A1 y A2, con B1 planificado.
+    const planned: Roadmap = { levels: [{ level: 'B1', topics: [{ title: 'Pasado continuo', description: 'Historias.' }] }] }
+    const basics = curriculum.filter((t) => t.level === 'A1' || t.level === 'A2')
+    const map = buildCurriculumMap(basics, planned, new Map(), null, false)
     const b1 = map.levels.find((l) => l.level === 'B1')!
     expect(b1.available).toBe(false)
     expect(b1.planned.length).toBeGreaterThan(0)

@@ -1,0 +1,131 @@
+{
+  "id": "b1-narrative-tenses",
+  "level": "B1",
+  "order": 1,
+  "title": "Tiempos para narrar",
+  "targetTitle": "Narrative tenses",
+  "description": "Cómo contar historias en inglés: lo que pasaba de fondo, lo que lo interrumpió, lo que ya había pasado antes y las costumbres del pasado.",
+  "objectives": [
+    "Distinguir el past simple del past continuous para separar los hechos del escenario",
+    "Usar el past perfect para hablar de lo que había pasado antes",
+    "Hablar de costumbres del pasado con used to y would",
+    "Contar una historia en orden con conectores de tiempo"
+  ],
+  "prerequisites": ["a2-past-simple"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "past-continuous",
+      "day": 1,
+      "title": "Past continuous: el escenario",
+      "goal": "Formar el past continuous y usarlo para describir lo que estaba pasando en un momento del pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "was / were + verbo con -ing: I was working, they were sleeping.",
+        "Describe una acción en desarrollo en un momento concreto del pasado: At eight o'clock I was having dinner.",
+        "Sirve para armar el escenario de una historia: The sun was shining and people were walking in the park.",
+        "Los verbos de estado (know, like, want, believe, understand) casi nunca van en continuo: se dice I knew the answer, no I was knowing."
+      ],
+      "examples": [
+        { "target": "At ten o'clock last night, I was watching TV.", "es": "Anoche a las diez estaba mirando la tele." },
+        { "target": "It was raining and everyone was wearing a coat.", "es": "Estaba lloviendo y todos tenían puesto un abrigo." },
+        { "target": "They weren't listening to the teacher.", "es": "No estaban escuchando a la profesora." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I was knowing the answer.", "right": "I knew the answer.", "why": "Know es un verbo de estado: no se usa en forma continua, aunque en español digas 'sabía'." },
+        { "wrong": "We was waiting for the bus.", "right": "We were waiting for the bus.", "why": "Con we, you y they va were; was es para I, he, she e it." }
+      ]
+    },
+    {
+      "id": "simple-vs-continuous",
+      "day": 2,
+      "title": "Past simple vs. past continuous",
+      "goal": "Combinar los dos pasados para contar una acción que interrumpe a otra.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Past continuous para la acción larga (el fondo) y past simple para la corta que la interrumpe: I was cooking when the phone rang.",
+        "when suele ir con la acción corta y while con la larga: While I was cooking, the phone rang.",
+        "Dos acciones largas al mismo tiempo van las dos en continuous: I was reading while she was studying.",
+        "Acciones seguidas, una después de la otra, van todas en past simple: I got up, had a shower and left.",
+        "El imperfecto del español ('cocinaba') se traduce con past continuous cuando describe algo en curso."
+      ],
+      "examples": [
+        { "target": "I was driving to work when my phone rang.", "es": "Iba manejando al trabajo cuando sonó el celular." },
+        { "target": "While we were having dinner, the lights went out.", "es": "Mientras cenábamos, se cortó la luz." },
+        { "target": "She opened the door, turned on the light and screamed.", "es": "Abrió la puerta, prendió la luz y gritó." }
+      ],
+      "commonMistakes": [
+        { "wrong": "When I arrived, she cooked dinner.", "right": "When I arrived, she was cooking dinner.", "why": "Si querés decir que ya estaba cocinando ('cocinaba'), va past continuous. Con past simple parece que empezó a cocinar después de que llegaste." },
+        { "wrong": "While I was cooking, the phone was ringing.", "right": "While I was cooking, the phone rang.", "why": "La acción corta que interrumpe va en past simple." }
+      ]
+    },
+    {
+      "id": "past-perfect",
+      "day": 3,
+      "title": "Past perfect: lo que había pasado",
+      "goal": "Usar el past perfect para marcar que algo pasó antes que otra acción del pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "had + participio, igual para todas las personas: I had left, she hadn't seen. Contracción: I'd left.",
+        "Marca la acción más vieja cuando ya estás contando en pasado: When we arrived, the movie had started.",
+        "Compará: When I got there, she left (se fue cuando llegué) / When I got there, she had left (ya se había ido).",
+        "Palabras frecuentes: already, just, never, before, by the time: By the time the police arrived, the thieves had escaped.",
+        "Con before y after el orden ya está claro, así que muchas veces alcanza el past simple: I had a shower after I got home."
+      ],
+      "examples": [
+        { "target": "When I got to the station, the train had already left.", "es": "Cuando llegué a la estación, el tren ya se había ido." },
+        { "target": "She had never seen the ocean before that trip.", "es": "Nunca había visto el mar antes de ese viaje." },
+        { "target": "I didn't recognize him because he had grown a beard.", "es": "No lo reconocí porque se había dejado barba." }
+      ],
+      "commonMistakes": [
+        { "wrong": "When I arrived, the movie already started.", "right": "When I arrived, the movie had already started.", "why": "Para decir que algo ya había pasado antes de otro momento del pasado se usa had + participio (en español, 'había empezado')." },
+        { "wrong": "I had went there before.", "right": "I had gone there before.", "why": "Después de had va el participio (gone), no el pasado (went)." }
+      ]
+    },
+    {
+      "id": "used-to-would",
+      "day": 4,
+      "title": "Used to y would: costumbres del pasado",
+      "goal": "Hablar de hábitos y situaciones del pasado que ya no son así.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "used to + verbo base para hábitos y estados del pasado que ya no siguen: I used to live in Córdoba.",
+        "Negativo y pregunta con did, y sin -d: I didn't use to like coffee. Did you use to play football?",
+        "would + verbo base también describe acciones repetidas del pasado, sobre todo al contar recuerdos: Every summer we would go to the coast.",
+        "would no sirve para estados (be, have, live, like): se dice I used to have long hair, no I would have long hair.",
+        "No lo confundas con be used to + -ing, que significa 'estar acostumbrado': I'm used to getting up early."
+      ],
+      "examples": [
+        { "target": "I used to play the guitar when I was a teenager.", "es": "De adolescente tocaba la guitarra." },
+        { "target": "My grandmother would tell us stories every night.", "es": "Mi abuela nos contaba cuentos todas las noches." },
+        { "target": "Did you use to live near here?", "es": "¿Antes vivías cerca de acá?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "I use to wake up at seven.", "right": "I usually wake up at seven.", "why": "Used to es solo para el pasado. Para decir 'suelo' en presente se usa usually + presente simple." },
+        { "wrong": "I didn't used to smoke.", "right": "I didn't use to smoke.", "why": "Con did, el verbo vuelve a la forma base: use to, sin -d." }
+      ]
+    },
+    {
+      "id": "contar-historia",
+      "day": 5,
+      "title": "Contar una historia",
+      "goal": "Leer y escribir un relato corto combinando los tiempos del pasado.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Empezá con el escenario en past continuous (It was raining, I was waiting...) y avanzá la acción con past simple.",
+        "Usá el past perfect para volver atrás y explicar algo que había pasado antes.",
+        "Ordená los hechos con conectores: first, then, after that, suddenly, as soon as, eventually, in the end.",
+        "in the end = al final, finalmente; at the end of = al final de algo: at the end of the movie."
+      ],
+      "examples": [
+        { "target": "It was a cold Saturday night and I was waiting for the last bus.", "es": "Era un sábado a la noche, hacía frío y yo estaba esperando el último colectivo." },
+        { "target": "Suddenly, I realized I had left my wallet at the restaurant.", "es": "De repente me di cuenta de que me había olvidado la billetera en el restaurante." },
+        { "target": "In the end, a kind stranger lent me some money for a taxi.", "es": "Al final, un desconocido muy amable me prestó plata para un taxi." }
+      ],
+      "commonMistakes": [
+        { "wrong": "At the end, everything was OK.", "right": "In the end, everything was OK.", "why": "Para decir 'al final, finalmente' se usa in the end; at the end necesita of + algo: at the end of the day." },
+        { "wrong": "Suddenly I realized that I forgot my keys.", "right": "Suddenly I realized that I had forgotten my keys.", "why": "Lo que pasó antes del momento del relato va en past perfect." }
+      ]
+    }
+  ]
+}

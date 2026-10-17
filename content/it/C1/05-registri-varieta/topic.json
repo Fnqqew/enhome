@@ -1,0 +1,125 @@
+{
+  "id": "it-c1-registri-varieta",
+  "level": "C1",
+  "order": 5,
+  "title": "Registros e italiano regional",
+  "targetTitle": "Registri e varietà dell'italiano",
+  "description": "Cómo cambia el italiano según la situación, del burocrático al coloquial, y según la región: rasgos del italiano regional del norte, el centro y el sur, la relación con los dialectos y el lenguaje de los mensajes.",
+  "objectives": [
+    "Reconocer los registros del italiano: burocrático, formal, neutro y coloquial",
+    "Reconocer los rasgos del italiano coloquial: dislocaciones, che polivalente y ci con avere",
+    "Reconocer rasgos del italiano regional del norte, el centro y el sur",
+    "Distinguir italiano regional y dialecto",
+    "Adaptar un mismo mensaje a distintos registros"
+  ],
+  "prerequisites": ["it-b2-registro-formale", "it-c1-passato-remoto"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "registri",
+      "day": 1,
+      "title": "Los registros",
+      "goal": "Reconocer y comparar los registros del italiano.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Burocrático y formal: verbos y sustantivos largos (effettuare, procedere, provvedere), pasiva, si pasivante y formas implícitas: Si prega di effettuare il pagamento entro il 30.",
+        "Neutro: el de los diarios y la televisión. Coloquial: frases cortas, dislocaciones, ci y che: Il pagamento lo faccio domani.",
+        "Lo mismo en tres registros: Si prega di non fumare / Vi preghiamo di non fumare / Qui non si fuma, eh!",
+        "El burocratese (el italiano burocrático) es tan oscuro que los propios italianos lo critican: en tus textos, preferí la claridad."
+      ],
+      "examples": [
+        { "target": "Si prega di effettuare il pagamento entro trenta giorni.", "es": "Se ruega efectuar el pago dentro de los treinta días." },
+        { "target": "Devi pagare entro un mese.", "es": "Tenés que pagar dentro de un mes." },
+        { "target": "Il pagamento? Lo faccio domani, tranquillo.", "es": "¿El pago? Lo hago mañana, quedate tranquilo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Gentile direttore, ciao! Ti scrivo per…", "right": "Gentile direttore, Le scrivo per…", "why": "Un mail formal no mezcla registros: con gentile y direttore va el Lei, sin ciao ni tu." }
+      ]
+    },
+    {
+      "id": "italiano-colloquiale",
+      "day": 2,
+      "title": "El italiano coloquial",
+      "goal": "Reconocer y usar los rasgos típicos del italiano hablado.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Dislocación: se adelanta el objeto y se repite con un pronombre: Il caffè lo prendo amaro. Di soldi non ne ho. El objeto adelantado va sin a.",
+        "Che polivalente, con valor de causa o de tiempo: Vieni che ti offro un caffè (vení, que te invito un café). Il giorno che ci siamo conosciuti.",
+        "Ci con avere: c'ho fame, c'hai tempo? En lo escrito informal aparece como c'ho o ci ho.",
+        "En la charla son frecuentes el indicativo en lugar del congiuntivo (Penso che è vero) y el imperfetto en lugar del condicional (Volevo un caffè); evitalos al escribir.",
+        "Muletillas: cioè, tipo, insomma, boh (ni idea), dai (dale), mica (para nada): Non è mica facile."
+      ],
+      "examples": [
+        { "target": "La pizza la porto io, tu pensa alle bibite.", "es": "La pizza la llevo yo, vos encargate de las bebidas." },
+        { "target": "Boh, non lo so, tipo verso le nove?", "es": "Ni idea, no sé, ¿tipo a eso de las nueve?" },
+        { "target": "Non è mica colpa mia!", "es": "¡No es para nada culpa mía!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il caffè prendo amaro.", "right": "Il caffè lo prendo amaro.", "why": "Si adelantás el objeto directo, el italiano lo repite con un pronombre: il caffè lo prendo." }
+      ]
+    },
+    {
+      "id": "italiano-regionale",
+      "day": 3,
+      "title": "Italiano regional: norte, centro y sur",
+      "goal": "Reconocer rasgos del italiano regional de distintas zonas.",
+      "focus": ["reading"],
+      "keyPoints": [
+        "Norte: artículo delante de los nombres de persona (la Giulia, il Paolo), passato prossimo para todo y una s sonora entre vocales, como la s de 'mismo'.",
+        "Centro: en Toscana la c entre vocales se aspira (la casa suena 'la hasa'); en Roma se acortan palabras (annamo por andiamo) y se oyen daje (¡dale!) y aho.",
+        "Sur: passato remoto en la charla (Ieri andai al mare), tenere por avere (tengo fame), stare por essere (sto stanco) y, en Sicilia, el verbo al final (Montalbano sono).",
+        "El léxico también cambia: la sandía es anguria en el norte, cocomero en el centro y mellone en el sur."
+      ],
+      "examples": [
+        { "target": "Hai visto la Giulia?", "es": "¿La viste a Giulia?" },
+        { "target": "Tengo fame, andiamo a mangiare?", "es": "Tengo hambre, ¿vamos a comer?" },
+        { "target": "Montalbano sono.", "es": "Soy Montalbano." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Sto stanco e tengo fame.", "right": "Sono stanco e ho fame.", "why": "Stare por essere y tenere por avere son rasgos del sur; se parecen al español, pero en el estándar se dice sono stanco y ho fame." }
+      ]
+    },
+    {
+      "id": "dialetti",
+      "day": 4,
+      "title": "Italiano regional y dialectos",
+      "goal": "Distinguir el italiano regional de los dialectos y conocer su historia.",
+      "focus": ["reading"],
+      "keyPoints": [
+        "Los dialectos (napoletano, siciliano, veneto, milanese y muchos más) no son 'italiano mal hablado': son variedades hermanas del italiano, nacidas también del latín.",
+        "El italiano estándar viene del florentino del siglo XIV (Dante, Petrarca, Boccaccio) y se difundió sobre todo en el siglo XX, con la escuela y la televisión.",
+        "Hoy la mayoría de los italianos habla italiano, a menudo con rasgos regionales, y muchos alternan con el dialecto en familia.",
+        "El español rioplatense tiene muchas palabras de origen italiano o dialectal: laburo (lavoro), fiaca (fiacca), nono (nonno) y el propio chau, que viene de ciao."
+      ],
+      "examples": [
+        { "target": "Ciao viene dal veneziano «s'ciavo», cioè «schiavo».", "es": "Ciao viene del veneciano 's'ciavo', es decir, 'esclavo'." },
+        { "target": "In famiglia parliamo napoletano, a scuola italiano.", "es": "En familia hablamos napolitano; en la escuela, italiano." },
+        { "target": "La lingua italiana si basa sul fiorentino del Trecento.", "es": "La lengua italiana se basa en el florentino del siglo XIV." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ho trovato un laburo nuovo.", "right": "Ho trovato un lavoro nuovo.", "why": "Laburo es lunfardo rioplatense que viene del italiano lavoro; en Italia se dice lavoro." },
+        { "wrong": "Il dialetto è un italiano sbagliato.", "right": "Il dialetto è una lingua con una storia propria.", "why": "Los dialectos no son errores del italiano, sino variedades nacidas del latín, como el propio italiano." }
+      ]
+    },
+    {
+      "id": "adattare-registro",
+      "day": 5,
+      "title": "Adaptar un mensaje al registro",
+      "goal": "Comprender un mismo mensaje en distintos registros y reescribirlo según el destinatario.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Antes de escribir pensá a quién (amigo, colega, institución), por qué medio (WhatsApp, mail, carta) y para qué.",
+        "En los chats aparecen abreviaturas como cmq (comunque), xké (perché), nn (non), tvb (ti voglio bene) y raga (ragazzi): fuera de ese contexto, evitalas.",
+        "Para pasar de coloquial a formal: tu → Lei, frases más largas, conectores (pertanto, tuttavia), congiuntivo y condizionale de cortesía."
+      ],
+      "examples": [
+        { "target": "Raga, cmq stasera nn vengo, scusate!", "es": "Chicos, igual esta noche no voy, ¡perdón!" },
+        { "target": "Ciao Marco, stasera non riesco a venire, scusa!", "es": "Hola, Marco, esta noche no puedo ir, ¡perdón!" },
+        { "target": "Gentile dott. Rossi, purtroppo questa sera non potrò essere presente.", "es": "Estimado Dr. Rossi: lamentablemente esta noche no podré estar presente." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Gentile dott. Rossi, xké nn posso venire stasera…", "right": "Gentile dott. Rossi, purtroppo stasera non potrò venire…", "why": "Las abreviaturas de chat son solo para mensajes entre amigos; en un mail formal escribí todas las palabras." }
+      ]
+    }
+  ]
+}

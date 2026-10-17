@@ -1,0 +1,133 @@
+{
+  "id": "fr-b1-subjonctif-present",
+  "level": "B1",
+  "order": 1,
+  "title": "Subjuntivo presente",
+  "targetTitle": "Le subjonctif présent",
+  "description": "El modo de la necesidad, el deseo, la emoción y la duda. El español también lo tiene, así que la lógica te va a resultar conocida, pero el francés lo usa en lugares distintos y casi siempre después de que.",
+  "objectives": [
+    "Formar el subjonctif présent de los verbos regulares e irregulares",
+    "Usarlo después de il faut que y de los verbos de voluntad",
+    "Usarlo después de expresiones de emoción y de duda",
+    "Usarlo después de bien que, avant que, pour que y à condition que",
+    "Escribir un mensaje con pedidos y condiciones"
+  ],
+  "prerequisites": ["fr-a2-futur-conditionnel"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formation-subjonctif",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el subjonctif présent a partir de la forma de ils.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se toma la forma de ils en presente, se saca -ent y se agrega -e, -es, -e, -ions, -iez, -ent: ils parlent → que je parle, ils finissent → que je finisse, ils prennent → que je prenne.",
+        "Nous y vous son iguales al imparfait: que nous prenions, que vous veniez.",
+        "En los verbos en -er, el singular y la tercera del plural suenan igual que el presente: la diferencia se nota sobre todo en los irregulares.",
+        "Irregulares clave: être (que je sois, que nous soyons), avoir (que j'aie, que nous ayons), aller (que j'aille), faire (que je fasse), pouvoir (que je puisse), savoir (que je sache), vouloir (que je veuille).",
+        "Siempre se aprende con que adelante, porque casi siempre va después de que: il faut que je parte."
+      ],
+      "examples": [
+        { "target": "Il faut que tu viennes demain.", "es": "Tenés que venir mañana." },
+        { "target": "Il faut que nous soyons à l'heure.", "es": "Tenemos que llegar a horario." },
+        { "target": "Je veux que vous fassiez attention.", "es": "Quiero que presten atención." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il faut que je vais à la banque.", "right": "Il faut que j'aille à la banque.", "why": "Después de il faut que va subjuntivo, y el de aller es irregular: que j'aille." },
+        { "wrong": "Il faut que tu es là à midi.", "right": "Il faut que tu sois là à midi.", "why": "El subjuntivo de être es sois." }
+      ]
+    },
+    {
+      "id": "necessite-volonte",
+      "day": 2,
+      "title": "Necesidad y voluntad",
+      "goal": "Usar el subjonctif después de il faut que y de los verbos de deseo y voluntad.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Il faut que (hace falta que, tenés que) siempre lleva subjuntivo: Il faut que tu partes tôt.",
+        "También il est important que, il est nécessaire que, il vaut mieux que.",
+        "Verbos de voluntad: vouloir que, aimer que, préférer que, souhaiter que, demander que, exiger que.",
+        "Con el mismo sujeto va infinitivo, como en español: Je veux partir (quiero irme), pero Je veux que tu partes (quiero que te vayas).",
+        "Espérer que es la gran excepción: lleva indicativo. J'espère que tu vas bien, aunque en español digas 'espero que estés bien'."
+      ],
+      "examples": [
+        { "target": "Je voudrais que tu m'appelles ce soir.", "es": "Quisiera que me llames esta noche." },
+        { "target": "Mes parents préfèrent que je reste à Paris.", "es": "Mis papás prefieren que me quede en París." },
+        { "target": "J'espère que tu vas bien.", "es": "Espero que estés bien." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'espère que tu sois content.", "right": "J'espère que tu es content.", "why": "Espérer que lleva indicativo en francés, aunque en español digas 'espero que estés'." },
+        { "wrong": "Je veux que je parte.", "right": "Je veux partir.", "why": "Con el mismo sujeto se usa infinitivo, igual que en 'quiero irme'." }
+      ]
+    },
+    {
+      "id": "emotions-doute",
+      "day": 3,
+      "title": "Emoción y duda",
+      "goal": "Usar el subjonctif después de expresiones de emoción, duda y posibilidad.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Emociones: être content que, être triste que, avoir peur que, regretter que, c'est dommage que: Je suis contente que tu sois là.",
+        "Duda y posibilidad: douter que, il est possible que, il se peut que: Il est possible qu'il pleuve.",
+        "Penser, croire y trouver en afirmativo llevan indicativo (Je pense qu'il a raison); en negativo, en general subjuntivo (Je ne pense pas qu'il ait raison).",
+        "Il est probable que y il est sûr que llevan indicativo; il est possible que, subjuntivo.",
+        "Con el mismo sujeto, de + infinitivo: Je suis content de te voir."
+      ],
+      "examples": [
+        { "target": "Je suis désolé que tu ne puisses pas venir.", "es": "Lamento que no puedas venir." },
+        { "target": "Je doute qu'il sache la vérité.", "es": "Dudo que sepa la verdad." },
+        { "target": "Je ne crois pas que ce soit une bonne idée.", "es": "No creo que sea una buena idea." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je pense qu'il soit malade.", "right": "Je pense qu'il est malade.", "why": "Penser que en afirmativo lleva indicativo, igual que 'pienso que está enfermo'." },
+        { "wrong": "Je suis content que je te vois.", "right": "Je suis content de te voir.", "why": "Con el mismo sujeto se usa de + infinitivo." }
+      ]
+    },
+    {
+      "id": "conjonctions-subjonctif",
+      "day": 4,
+      "title": "Bien que, avant que, pour que",
+      "goal": "Usar el subjonctif después de las conjunciones que lo exigen.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Siempre con subjuntivo: bien que (aunque), pour que (para que), avant que (antes de que), à condition que (con la condición de que), sans que (sin que), jusqu'à ce que (hasta que).",
+        "Bien que lleva subjuntivo aunque el hecho sea real: Bien qu'il soit tard, je continue (aunque es tarde, sigo).",
+        "Con el mismo sujeto se usa la preposición + infinitivo: avant de partir, pour comprendre, sans rien dire.",
+        "Après que lleva indicativo en la norma, aunque en la charla mucha gente use subjuntivo: après qu'il est parti.",
+        "En lo escrito, después de avant que a veces aparece un ne que no niega: avant qu'il ne parte."
+      ],
+      "examples": [
+        { "target": "Bien qu'il fasse froid, on va se promener.", "es": "Aunque hace frío, vamos a pasear." },
+        { "target": "Je t'explique pour que tu comprennes.", "es": "Te lo explico para que entiendas." },
+        { "target": "Rentre avant qu'il fasse nuit.", "es": "Volvé antes de que se haga de noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Bien qu'il est fatigué, il travaille.", "right": "Bien qu'il soit fatigué, il travaille.", "why": "Bien que siempre lleva subjuntivo, aunque en español digas 'aunque está cansado'." },
+        { "wrong": "Avant que je pars, je t'appelle.", "right": "Avant de partir, je t'appelle.", "why": "Con el mismo sujeto se usa avant de + infinitivo." }
+      ]
+    },
+    {
+      "id": "demandes-conditions",
+      "day": 5,
+      "title": "Pedidos y condiciones",
+      "goal": "Comprender y escribir un mensaje para organizar algo con pedidos y condiciones.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para pedir con suavidad: Il faudrait que…, J'aimerais que…, Ce serait bien que…, todos con subjuntivo.",
+        "Para poner condiciones: à condition que… y pourvu que… (siempre que), también con subjuntivo.",
+        "Pourvu que solo, al principio de la frase, expresa un deseo: Pourvu qu'il fasse beau ! (¡Ojalá haga lindo!)",
+        "Combiná con el indicativo cuando corresponde: J'espère que…, Je pense que…"
+      ],
+      "examples": [
+        { "target": "Il faudrait que tout le monde soit là à huit heures.", "es": "Haría falta que estén todos a las ocho." },
+        { "target": "Tu peux venir à condition que tu apportes le dessert.", "es": "Podés venir con la condición de que traigas el postre." },
+        { "target": "Pourvu qu'il fasse beau samedi !", "es": "¡Ojalá haga lindo el sábado!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Pourvu qu'il fait beau !", "right": "Pourvu qu'il fasse beau !", "why": "Pourvu que lleva subjuntivo, como 'ojalá'." },
+        { "wrong": "Il faudrait que tu viens tôt.", "right": "Il faudrait que tu viennes tôt.", "why": "Il faudrait que, igual que il faut que, lleva subjuntivo: que tu viennes." }
+      ]
+    }
+  ]
+}

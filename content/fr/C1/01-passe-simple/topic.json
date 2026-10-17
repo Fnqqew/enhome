@@ -1,0 +1,128 @@
+{
+  "id": "fr-c1-passe-simple",
+  "level": "C1",
+  "order": 1,
+  "title": "Pretérito simple literario",
+  "targetTitle": "Le passé simple",
+  "description": "El pasado de las novelas, los cuentos y los libros de historia. Casi no se usa al hablar, pero aparece en cualquier libro: aprendé a reconocerlo, a conjugarlo y a combinarlo con el imparfait, y a identificar las otras formas literarias.",
+  "objectives": [
+    "Conjugar el passé simple de los verbos regulares",
+    "Reconocer y usar los irregulares más frecuentes",
+    "Combinar passé simple e imparfait en un relato",
+    "Reconocer el passé antérieur y el imperfecto del subjuntivo",
+    "Escribir un pasaje narrativo en estilo literario"
+  ],
+  "prerequisites": ["fr-b1-plus-que-parfait"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "ps-reguliers",
+      "day": 1,
+      "title": "Verbos regulares",
+      "goal": "Conjugar el passé simple de los verbos en -er, -ir y -re.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "-er: je parlai, tu parlas, il parla, nous parlâmes, vous parlâtes, ils parlèrent.",
+        "-ir y la mayoría de los verbos en -re: je finis, il finit, nous finîmes, vous finîtes, ils finirent; je rendis, il rendit, ils rendirent.",
+        "En la práctica se usan sobre todo la tercera persona del singular y la del plural: il parla, ils parlèrent.",
+        "Ojo: je parlai (passé simple) y je parlais (imparfait) casi suenan igual pero no significan lo mismo; il finit es igual en presente y en passé simple, y lo aclara el contexto."
+      ],
+      "examples": [
+        { "target": "Il entra dans la pièce et alluma la lumière.", "es": "Entró en la habitación y prendió la luz." },
+        { "target": "Les invités arrivèrent vers huit heures.", "es": "Los invitados llegaron alrededor de las ocho." },
+        { "target": "Elle répondit sans hésiter.", "es": "Respondió sin dudar." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ils parlirent longtemps.", "right": "Ils parlèrent longtemps.", "why": "Los verbos en -er hacen la tercera del plural en -èrent." },
+        { "wrong": "Il parlat à voix basse.", "right": "Il parla à voix basse.", "why": "En la tercera del singular, los verbos en -er terminan en -a, sin t." }
+      ]
+    },
+    {
+      "id": "ps-irreguliers",
+      "day": 2,
+      "title": "Irregulares frecuentes",
+      "goal": "Reconocer y usar el passé simple de los verbos irregulares más comunes.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "être: il fut, ils furent. avoir: il eut, ils eurent (eut suena 'ü').",
+        "En -i-: faire → il fit, dire → il dit, voir → il vit, prendre → il prit, mettre → il mit.",
+        "En -u-: pouvoir → il put, vouloir → il voulut, savoir → il sut, devoir → il dut, lire → il lut, boire → il but, connaître → il connut, vivre → il vécut, mourir → il mourut.",
+        "En -in-: venir → il vint, ils vinrent; tenir → il tint. Y naître → il naquit.",
+        "Muchos se parecen al participio: pris → il prit, mis → il mit, lu → il lut, su → il sut."
+      ],
+      "examples": [
+        { "target": "Il fit nuit très tôt ce soir-là.", "es": "Esa noche oscureció muy temprano." },
+        { "target": "Elle prit son manteau et sortit.", "es": "Tomó el abrigo y salió." },
+        { "target": "Ils vinrent nous voir le lendemain.", "es": "Vinieron a vernos al día siguiente." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il venit le lendemain.", "right": "Il vint le lendemain.", "why": "Venir y tenir tienen un passé simple propio, en -in-: il vint, il tint." },
+        { "wrong": "Il naissa en 1802.", "right": "Il naquit en 1802.", "why": "Naître es irregular en passé simple: il naquit." }
+      ]
+    },
+    {
+      "id": "ps-imparfait",
+      "day": 3,
+      "title": "Passé simple e imparfait",
+      "goal": "Combinar passé simple e imparfait en un relato escrito.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "En la literatura, el passé simple cumple el papel del passé composé: los hechos que hacen avanzar la historia.",
+        "El imparfait sigue marcando el fondo, la descripción y la costumbre: Il pleuvait. Soudain, quelqu'un frappa à la porte.",
+        "Un relato no mezcla passé simple y passé composé para los hechos; en los diálogos, en cambio, los personajes hablan con passé composé.",
+        "También aparece en biografías y libros de historia: Victor Hugo naquit à Besançon en 1802."
+      ],
+      "examples": [
+        { "target": "La nuit tombait quand ils arrivèrent au village.", "es": "Caía la noche cuando llegaron al pueblo." },
+        { "target": "Elle lisait près de la fenêtre lorsque le téléphone sonna.", "es": "Leía junto a la ventana cuando sonó el teléfono." },
+        { "target": "Il pleuvait. Soudain, quelqu'un frappa à la porte.", "es": "Llovía. De repente, alguien golpeó la puerta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Elle est entrée et ferma la porte.", "right": "Elle entra et ferma la porte.", "why": "En un relato no se mezclan passé composé y passé simple para los hechos: se elige uno de los dos." }
+      ]
+    },
+    {
+      "id": "formes-litteraires",
+      "day": 4,
+      "title": "Passé antérieur y otras formas",
+      "goal": "Reconocer el passé antérieur, el imperfecto del subjuntivo y el plus-que-parfait du subjonctif.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Passé antérieur: passé simple de avoir o être + participio (il eut fini, elle fut partie). Marca una acción inmediatamente anterior, después de quand, lorsque, dès que, après que o à peine… que.",
+        "Subjonctif imparfait: solo en textos muy literarios, sobre todo en tercera persona: qu'il fût, qu'il eût, qu'il fît. Alcanza con reconocerlo.",
+        "Plus-que-parfait du subjonctif con valor de condicional pasado: S'il l'eût su, il serait venu = S'il l'avait su… También il eût fallu = il aurait fallu.",
+        "Hoy no hace falta usarlos al escribir: lo importante es entenderlos al leer.",
+        "Eut (passé simple, sin acento) y eût (subjuntivo, con circunflejo) se distinguen solo por el acento."
+      ],
+      "examples": [
+        { "target": "Dès qu'il eut terminé sa lettre, il la posta.", "es": "Apenas terminó la carta, la mandó por correo." },
+        { "target": "Il fallait qu'il fût prudent.", "es": "Tenía que ser prudente." },
+        { "target": "À peine fut-elle sortie qu'il se mit à pleuvoir.", "es": "Apenas salió, se puso a llover." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Dès qu'il eût fini, il sortit.", "right": "Dès qu'il eut fini, il sortit.", "why": "En el passé antérieur, eut va sin acento; eût con circunflejo es subjuntivo." }
+      ]
+    },
+    {
+      "id": "recit-litteraire",
+      "day": 5,
+      "title": "Escribir como en una novela",
+      "goal": "Comprender y escribir un pasaje narrativo con passé simple e imparfait.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Elegí un narrador en tercera persona y usá passé simple para los hechos e imparfait para el fondo.",
+        "Los diálogos van entre comillas francesas (« … ») o con raya, y los personajes hablan en presente o en passé composé.",
+        "Después de una cita, el verbo de diálogo va invertido: dit-il, répondit-elle, demanda-t-il.",
+        "Para el ritmo, alterná frases cortas de acción con descripciones más largas."
+      ],
+      "examples": [
+        { "target": "Il était minuit. La ville dormait, mais Julien ne trouvait pas le sommeil.", "es": "Era medianoche. La ciudad dormía, pero Julien no lograba dormirse." },
+        { "target": "Il se leva, s'habilla et descendit dans la rue.", "es": "Se levantó, se vistió y bajó a la calle." },
+        { "target": "« Tu es encore là ? » demanda-t-elle.", "es": "—¿Todavía estás acá? —preguntó ella." }
+      ],
+      "commonMistakes": [
+        { "wrong": "« Tu es encore là ? » elle demanda.", "right": "« Tu es encore là ? » demanda-t-elle.", "why": "Después de una cita, el verbo de diálogo va invertido: demanda-t-elle, dit-il." }
+      ]
+    }
+  ]
+}

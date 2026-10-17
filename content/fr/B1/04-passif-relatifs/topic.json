@@ -1,0 +1,130 @@
+{
+  "id": "fr-b1-passif-relatifs",
+  "level": "B1",
+  "order": 4,
+  "title": "Pasiva y relativos",
+  "targetTitle": "Le passif et les pronoms relatifs",
+  "description": "Dos herramientas para armar oraciones más largas y precisas: la voz pasiva, para poner el foco en lo que recibe la acción, y los pronombres relativos qui, que, dont y où, que en español se resuelven casi siempre con 'que'.",
+  "objectives": [
+    "Formar la voz pasiva con être + participio en distintos tiempos",
+    "Elegir entre pasiva, on y verbo pronominal",
+    "Elegir entre qui y que",
+    "Usar dont y où",
+    "Describir un lugar con oraciones relativas"
+  ],
+  "prerequisites": ["fr-a2-passe-compose", "fr-a2-pronoms"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "voix-passive",
+      "day": 1,
+      "title": "La voz pasiva",
+      "goal": "Formar la pasiva con être + participio y expresar el agente con par.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "être en el tiempo que corresponda + participio, que concuerda con el sujeto: La maison a été construite en 1900.",
+        "Tiempos: est construit (presente), a été construit (passé composé), était construit (imparfait), sera construit (futuro).",
+        "El agente va con par: Ce roman a été écrit par Victor Hugo. Con verbos de sentimiento a veces va de: Elle est aimée de tous.",
+        "Solo los verbos con objeto directo tienen pasiva: como téléphoner lleva à, no se dice Paul a été téléphoné."
+      ],
+      "examples": [
+        { "target": "Ce pont a été construit au XIXe siècle.", "es": "Este puente fue construido en el siglo XIX." },
+        { "target": "Les résultats seront publiés lundi.", "es": "Los resultados se van a publicar el lunes." },
+        { "target": "La réunion a été annulée par la directrice.", "es": "La reunión fue cancelada por la directora." }
+      ],
+      "commonMistakes": [
+        { "wrong": "La maison a été construit en 1900.", "right": "La maison a été construite en 1900.", "why": "En la pasiva el participio concuerda con el sujeto: la maison → construite." },
+        { "wrong": "Paul a été téléphoné hier.", "right": "On a téléphoné à Paul hier.", "why": "Téléphoner lleva à, así que no tiene pasiva: se usa on." }
+      ]
+    },
+    {
+      "id": "on-pronominal",
+      "day": 2,
+      "title": "On y los pronominales",
+      "goal": "Elegir entre pasiva, on y verbo pronominal para expresar lo impersonal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "En la charla, el francés prefiere on a la pasiva: On a volé mon vélo (me robaron la bici).",
+        "El 'se' impersonal del español ('se habla español', 'se dice') no existe así en francés: se usa on. Ici, on parle espagnol.",
+        "Los pronominales con valor pasivo describen cómo se hace algo en general: Ce vin se boit frais. Ça ne se dit pas.",
+        "En avisos: On recherche un serveur. À louer. À vendre."
+      ],
+      "examples": [
+        { "target": "On m'a volé mon portefeuille dans le métro.", "es": "Me robaron la billetera en el subte." },
+        { "target": "Ce plat se mange chaud.", "es": "Este plato se come caliente." },
+        { "target": "Ça ne se fait pas !", "es": "¡Eso no se hace!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se parle espagnol ici.", "right": "Ici, on parle espagnol.", "why": "El se impersonal del español no se traduce con se: en francés va on." },
+        { "wrong": "Se vend appartement.", "right": "Appartement à vendre.", "why": "Para 'se vende' en un aviso se usa à vendre." }
+      ]
+    },
+    {
+      "id": "qui-que",
+      "day": 3,
+      "title": "Qui y que",
+      "goal": "Elegir entre qui (sujeto) y que (objeto directo).",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Qui reemplaza al sujeto del verbo que sigue: L'homme qui parle est mon oncle (el hombre habla).",
+        "Que reemplaza al objeto directo: L'homme que tu vois est mon oncle (vos ves al hombre).",
+        "Truco: si después viene directamente un verbo, casi siempre es qui; si viene un sujeto (je, tu, Marie…), es que.",
+        "Que se apostrofa delante de vocal (qu'il, qu'elle); qui nunca: l'ami qui est venu.",
+        "Con que y avoir, el participio concuerda con el antecedente: les photos que j'ai prises."
+      ],
+      "examples": [
+        { "target": "C'est le film qui a gagné la Palme d'or.", "es": "Es la película que ganó la Palma de Oro." },
+        { "target": "Le livre que tu m'as prêté est génial.", "es": "El libro que me prestaste es buenísimo." },
+        { "target": "La fille qu'il aime habite à Lille.", "es": "La chica que él quiere vive en Lille." }
+      ],
+      "commonMistakes": [
+        { "wrong": "L'homme que parle est mon oncle.", "right": "L'homme qui parle est mon oncle.", "why": "Si el relativo es el sujeto del verbo, va qui, aunque en español siempre digas 'que'." },
+        { "wrong": "Le livre qui tu lis est intéressant.", "right": "Le livre que tu lis est intéressant.", "why": "El sujeto es tu; el libro es el objeto directo, así que va que." }
+      ]
+    },
+    {
+      "id": "dont-ou",
+      "day": 4,
+      "title": "Dont y où",
+      "goal": "Usar dont para reemplazar un complemento con de, y où para lugar y tiempo.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Dont reemplaza a un complemento con de: J'ai besoin de ce livre → le livre dont j'ai besoin. Va con parler de, avoir besoin de, avoir peur de, être fier de, se souvenir de.",
+        "Dont también expresa posesión, como 'cuyo': un ami dont le père est médecin (un amigo cuyo papá es médico).",
+        "Où sirve para lugar (la ville où j'habite) y también para tiempo (le jour où je t'ai connu).",
+        "El 'en que' de tiempo se traduce con où, nunca con quand: l'année où…",
+        "Para el origen se usa d'où: la ville d'où je viens."
+      ],
+      "examples": [
+        { "target": "C'est le livre dont tout le monde parle.", "es": "Es el libro del que todos hablan." },
+        { "target": "J'ai un collègue dont la femme est québécoise.", "es": "Tengo un compañero de trabajo cuya mujer es quebequense." },
+        { "target": "Je me souviens du jour où on s'est rencontrés.", "es": "Me acuerdo del día en que nos conocimos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le livre que j'ai besoin.", "right": "Le livre dont j'ai besoin.", "why": "Avoir besoin lleva de, así que el relativo es dont." },
+        { "wrong": "Le jour quand je suis arrivé.", "right": "Le jour où je suis arrivé.", "why": "Después de una palabra de tiempo, 'en que' se dice où." }
+      ]
+    },
+    {
+      "id": "decrire-lieu",
+      "day": 5,
+      "title": "Describir un lugar",
+      "goal": "Comprender y escribir la descripción de un lugar con oraciones relativas y pasivas.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Encadená la información con qui, que, dont y où en lugar de hacer oraciones cortas: C'est un quartier où il y a beaucoup de cafés et que j'adore.",
+        "Para presentar: C'est un endroit qui…, C'est une ville que…, C'est la région d'où je viens.",
+        "La pasiva sirve para los datos históricos: Le château a été construit au XVIe siècle.",
+        "No encadenes demasiados relativos: con dos por oración alcanza."
+      ],
+      "examples": [
+        { "target": "Le Marais est un quartier où on trouve beaucoup de petites boutiques.", "es": "El Marais es un barrio donde hay muchos negocios chiquitos." },
+        { "target": "La place des Vosges, qui a été construite au XVIIe siècle, est l'une des plus anciennes places de Paris.", "es": "La Place des Vosges, que fue construida en el siglo XVII, es una de las plazas más antiguas de París." },
+        { "target": "C'est un endroit dont je garde un très bon souvenir.", "es": "Es un lugar del que guardo un muy buen recuerdo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "C'est la ville où je viens.", "right": "C'est la ville d'où je viens.", "why": "Venir lleva de, así que para el origen se usa d'où." }
+      ]
+    }
+  ]
+}

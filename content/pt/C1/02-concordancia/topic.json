@@ -1,0 +1,131 @@
+{
+  "id": "pt-c1-concordancia",
+  "level": "C1",
+  "order": 2,
+  "title": "Concordancia avanzada",
+  "targetTitle": "Concordância verbal e nominal",
+  "description": "Los casos de concordancia que fallan incluso a los nativos: a gente vai, havia muitas pessoas, faz dois anos, meio cansada, seguem anexas. Varios son, además, trampas para el hablante rioplatense.",
+  "objectives": [
+    "Concordar el verbo con sujetos compuestos y con a gente",
+    "Usar haver y fazer impersonales, y concordar con colectivos y porcentajes",
+    "Resolver la concordancia con se, con ser y con que y quem",
+    "Aplicar la concordancia nominal con meio, anexo, menos y é proibido",
+    "Revisar un informe con datos"
+  ],
+  "prerequisites": ["pt-b1-voz-passiva", "pt-b2-registro-formal"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "sujeito-composto",
+      "day": 1,
+      "title": "Sujeto compuesto y a gente",
+      "goal": "Concordar el verbo con sujetos compuestos, pronombres combinados y a gente.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Sujeto compuesto antes del verbo: plural. O diretor e os alunos chegaram.",
+        "Sujeto compuesto después del verbo: plural o concordancia con el más cercano. Chegaram o diretor e os alunos / Chegou o diretor e os alunos.",
+        "Pronombres de personas distintas: manda la primera persona sobre las demás. Eu e você vamos. Você e ele vão.",
+        "A gente lleva verbo en tercera del singular: a gente vai, a gente fez. 'A gente vamos' es popular y se considera un error."
+      ],
+      "examples": [
+        { "target": "Eu e minha irmã moramos em Curitiba.", "es": "Mi hermana y yo vivimos en Curitiba." },
+        { "target": "Chegaram a encomenda e as cartas.", "es": "Llegaron el paquete y las cartas." },
+        { "target": "A gente vai se encontrar na praça.", "es": "Nos vamos a encontrar en la plaza." }
+      ],
+      "commonMistakes": [
+        { "wrong": "A gente vamos sair cedo.", "right": "A gente vai sair cedo.", "why": "A gente se conjuga en tercera persona del singular, aunque signifique 'nosotros'." },
+        { "wrong": "Eu e você vão juntos.", "right": "Eu e você vamos juntos.", "why": "Si en el sujeto aparece eu, el verbo va en primera persona del plural." }
+      ]
+    },
+    {
+      "id": "haver-fazer-coletivos",
+      "day": 2,
+      "title": "Haver, fazer, colectivos y porcentajes",
+      "goal": "Resolver la concordancia en los verbos impersonales y en las cantidades.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Haver con sentido de existir es impersonal y va siempre en singular: Havia muitas pessoas. Houve problemas. Deve haver soluções.",
+        "Fazer con tiempo transcurrido o clima, también en singular: Faz dois anos que moro aqui. Fazia dias que chovia.",
+        "Colectivo + de + plural (a maioria dos, grande parte dos): singular o plural. A maioria dos alunos passou / passaram.",
+        "Porcentajes: el verbo concuerda con el número o con lo que sigue. 1% da população votou. 30% dos eleitores votaram.",
+        "Mais de um va en singular: Mais de um candidato desistiu."
+      ],
+      "examples": [
+        { "target": "Havia muitas pessoas na fila.", "es": "Había mucha gente en la fila." },
+        { "target": "Faz três meses que não o vejo.", "es": "Hace tres meses que no lo veo." },
+        { "target": "Mais de um funcionário reclamou do horário.", "es": "Más de un empleado se quejó del horario." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Haviam muitas pessoas na festa.", "right": "Havia muitas pessoas na festa.", "why": "Haver como 'existir' no tiene sujeto y va en singular. Es el mismo error que el 'habían muchas personas' del español." },
+        { "wrong": "Fazem dois anos que moro aqui.", "right": "Faz dois anos que moro aqui.", "why": "Fazer con tiempo transcurrido es impersonal: siempre faz, como 'hace' en español." }
+      ]
+    },
+    {
+      "id": "concordancia-se-ser",
+      "day": 3,
+      "title": "Se, ser y fui eu que",
+      "goal": "Resolver la concordancia con la partícula se, con el verbo ser y con que y quem.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Se pasivo: el verbo concuerda (Vendem-se casas). Se con preposición: singular (Trata-se de casos graves, Precisa-se de técnicos).",
+        "Ser con horas, fechas y distancias concuerda con el número: São duas horas. É uma hora. É meio-dia e meia.",
+        "Con cantidades vistas como un todo, ser queda en singular: Dez reais é pouco. Dois quilos é demais.",
+        "Con que, el verbo concuerda con el pronombre: Fui eu que fiz. Con quem, va en tercera persona (o con el pronombre): Fui eu quem fez."
+      ],
+      "examples": [
+        { "target": "Trata-se de problemas antigos.", "es": "Se trata de problemas viejos." },
+        { "target": "Já são onze horas e ninguém chegou.", "es": "Ya son las once y no llegó nadie." },
+        { "target": "Fomos nós que organizamos a festa.", "es": "Fuimos nosotros los que organizamos la fiesta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Tratam-se de questões importantes.", "right": "Trata-se de questões importantes.", "why": "Tratar-se de es impersonal: siempre trata-se, como 'se trata de' en español." },
+        { "wrong": "Fui eu que fez o bolo.", "right": "Fui eu que fiz o bolo.", "why": "Con que, el verbo concuerda con el pronombre: eu fiz." }
+      ]
+    },
+    {
+      "id": "concordancia-nominal",
+      "day": 4,
+      "title": "Concordancia nominal",
+      "goal": "Concordar adjetivos y saber qué palabras cambian de forma y cuáles no.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Meio como adverbio ('un poco') no cambia: Ela está meio cansada. Como adjetivo ('mitad') sí: meia hora, meia garrafa.",
+        "Anexo, incluso y obrigado concuerdan: Seguem anexas as fotos. Ela disse: obrigada. En cambio, em anexo no cambia: Segue em anexo a planilha.",
+        "Menos no cambia nunca: menos pessoas. Bastante concuerda solo como adjetivo: bastantes livros, pero eles estudam bastante.",
+        "É proibido, é necessário, é bom: sin artículo quedan en masculino (É proibido entrada); con artículo, concuerdan (É proibida a entrada).",
+        "Adjetivo después de varios sustantivos: plural o concordancia con el más cercano: camisa e calça brancas / camisa e calça branca."
+      ],
+      "examples": [
+        { "target": "Ela ficou meio nervosa antes da entrevista.", "es": "Se puso medio nerviosa antes de la entrevista." },
+        { "target": "Seguem anexas as fotos do evento.", "es": "Van adjuntas las fotos del evento." },
+        { "target": "É proibida a entrada de animais.", "es": "Está prohibida la entrada de animales." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ela está meia cansada.", "right": "Ela está meio cansada.", "why": "Meio como 'un poco' es adverbio y no cambia. El 'media cansada' del habla rioplatense también es un error en español." },
+        { "wrong": "Segue anexo as fotos.", "right": "Seguem anexas as fotos.", "why": "Anexo es adjetivo y concuerda con fotos, y seguir va en plural. Si querés una forma fija, usá em anexo: Seguem em anexo as fotos." }
+      ]
+    },
+    {
+      "id": "revisar-relatorio",
+      "day": 5,
+      "title": "Revisar un informe con datos",
+      "goal": "Comprender y escribir un informe breve con porcentajes y cantidades.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Porcentajes y colectivos: 45% dos entrevistados afirmaram..., A maioria prefere..., Grande parte dos usuários...",
+        "Existencia y tiempo: Houve um aumento..., Faz dois anos que..., Há poucos dados sobre...",
+        "Fórmulas de informe: Segundo a pesquisa, Os resultados indicam que, Cabe destacar que.",
+        "El porcentaje suele ir sin artículo: 62% dos entrevistados. Si lo ponés, va en plural: os 62%."
+      ],
+      "examples": [
+        { "target": "Segundo a pesquisa, 62% dos entrevistados trabalham de casa pelo menos uma vez por semana.", "es": "Según la encuesta, el 62 % de los encuestados trabaja desde casa al menos una vez por semana." },
+        { "target": "Houve uma queda de 10% nas vendas.", "es": "Hubo una caída del 10 % en las ventas." },
+        { "target": "Mais de um setor relatou problemas de comunicação.", "es": "Más de un sector informó problemas de comunicación." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Houveram muitas reclamações.", "right": "Houve muitas reclamações.", "why": "Haver como 'existir' va en singular en todos los tiempos." },
+        { "wrong": "O 62% dos entrevistados aprovou.", "right": "62% dos entrevistados aprovaram.", "why": "El porcentaje suele ir sin artículo (o con os, en plural), y el verbo concuerda con el número o con entrevistados." }
+      ]
+    }
+  ]
+}

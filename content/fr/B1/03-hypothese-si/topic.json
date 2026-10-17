@@ -1,0 +1,129 @@
+{
+  "id": "fr-b1-hypothese-si",
+  "level": "B1",
+  "order": 3,
+  "title": "Hipótesis con si",
+  "targetTitle": "L'hypothèse avec si",
+  "description": "Cómo hablar de condiciones posibles, de situaciones imaginarias y de lo que harías si… La regla de oro: después del si de condición nunca va futuro ni condicional.",
+  "objectives": [
+    "Expresar condiciones reales con si + presente",
+    "Imaginar situaciones con si + imparfait y conditionnel présent",
+    "Distinguir el si de condición del si de las preguntas indirectas",
+    "Expresar condiciones sin si: au cas où, sinon, à condition de, sans",
+    "Escribir sobre lo que harías en una situación imaginaria"
+  ],
+  "prerequisites": ["fr-a2-imparfait", "fr-a2-futur-conditionnel"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "si-present",
+      "day": 1,
+      "title": "Si + presente: lo posible",
+      "goal": "Expresar condiciones reales o probables con si + presente.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Si + presente, y en la otra parte presente, futuro o imperativo: Si tu veux, on y va. Si tu viens, on mangera ensemble. Si tu es fatigué, repose-toi.",
+        "Funciona igual que en español: 'si querés, vamos'.",
+        "Si se apostrofa solo delante de il e ils: s'il, s'ils, pero si elle, si on.",
+        "Con dos presentes también expresa algo que pasa siempre: Si je bois du café le soir, je ne dors pas."
+      ],
+      "examples": [
+        { "target": "Si tu as le temps, passe me voir.", "es": "Si tenés tiempo, pasá a verme." },
+        { "target": "S'il pleut demain, nous resterons à la maison.", "es": "Si mañana llueve, nos vamos a quedar en casa." },
+        { "target": "Si vous ne comprenez pas, demandez-moi.", "es": "Si no entienden, pregúntenme." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si tu viendras, on ira au cinéma.", "right": "Si tu viens, on ira au cinéma.", "why": "Después de si nunca va futuro, igual que en español 'si venís'." },
+        { "wrong": "Si il fait beau, on sort.", "right": "S'il fait beau, on sort.", "why": "Si delante de il se apostrofa: s'il." }
+      ]
+    },
+    {
+      "id": "si-imparfait",
+      "day": 2,
+      "title": "Si + imparfait: lo imaginario",
+      "goal": "Imaginar situaciones con si + imparfait y conditionnel présent.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Si + imparfait, conditionnel présent: Si j'avais de l'argent, je voyagerais.",
+        "Donde el español usa el imperfecto del subjuntivo ('si tuviera'), el francés usa el imparfait del indicativo ('si j'avais').",
+        "Sirve para lo poco probable (Si je gagnais au loto…) y para lo imposible en el presente (Si j'étais toi…).",
+        "Para aconsejar: Si j'étais toi… o À ta place…, + conditionnel.",
+        "El orden se puede invertir: Je voyagerais plus si j'avais le temps."
+      ],
+      "examples": [
+        { "target": "Si j'avais plus de temps, j'apprendrais l'italien.", "es": "Si tuviera más tiempo, aprendería italiano." },
+        { "target": "Si j'étais toi, j'accepterais ce travail.", "es": "Yo que vos, aceptaría ese trabajo." },
+        { "target": "Qu'est-ce que tu ferais si tu gagnais au loto ?", "es": "¿Qué harías si ganaras la lotería?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si j'aurais de l'argent, j'achèterais une maison.", "right": "Si j'avais de l'argent, j'achèterais une maison.", "why": "Después de si nunca va condicional: 'si tuviera' se dice si j'avais." },
+        { "wrong": "Si j'avais le temps, je voyagerai.", "right": "Si j'avais le temps, je voyagerais.", "why": "Con si + imparfait, la otra parte va en condicional (-ais), no en futuro (-ai)." }
+      ]
+    },
+    {
+      "id": "deux-si",
+      "day": 3,
+      "title": "Si de condición y si de pregunta",
+      "goal": "Distinguir el si de condición del si de las preguntas indirectas y elegir el grado de probabilidad.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "La regla 'nada de futuro ni condicional después de si' vale solo para el si de condición.",
+        "El si de las preguntas indirectas ('si acaso') sí puede ir con futuro o condicional: Je ne sais pas s'il viendra. Je me demandais s'il accepterait.",
+        "Truco: si va después de savoir, demander o se demander, es de pregunta; si podés reemplazarlo por 'en el caso de que', es de condición.",
+        "Si + presente o si + imparfait cambian la probabilidad: Si je gagne (puede pasar), Si je gagnais (lo veo difícil)."
+      ],
+      "examples": [
+        { "target": "Je ne sais pas s'il viendra ce soir.", "es": "No sé si va a venir esta noche." },
+        { "target": "Si tu gagnes le match, on fêtera ça.", "es": "Si ganás el partido, lo vamos a festejar." },
+        { "target": "Si je gagnais au loto, j'arrêterais de travailler.", "es": "Si ganara la lotería, dejaría de trabajar." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si je serais riche, je voyagerais.", "right": "Si j'étais riche, je voyagerais.", "why": "Es un si de condición: va imparfait, nunca condicional." }
+      ]
+    },
+    {
+      "id": "autres-conditions",
+      "day": 4,
+      "title": "Otras formas de la condición",
+      "goal": "Expresar condiciones sin si: au cas où, sinon, à condition de, avec y sans.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Au cas où (por si) va con conditionnel: Prends un parapluie au cas où il pleuvrait.",
+        "Sinon (si no) evita repetir la condición: Dépêche-toi, sinon on va rater le train.",
+        "À condition de + infinitivo con el mismo sujeto: Tu peux sortir à condition de rentrer avant minuit.",
+        "Avec y sans también pueden expresar una condición: Sans ton aide, je ne pourrais pas finir. Avec un peu de chance, on arrivera à l'heure.",
+        "Même si (aunque, incluso si) sigue las reglas de si: Même si tu insistes, je ne viendrai pas."
+      ],
+      "examples": [
+        { "target": "Je te donne mon numéro au cas où tu aurais un problème.", "es": "Te doy mi número por si tenés algún problema." },
+        { "target": "Mets ton manteau, sinon tu vas avoir froid.", "es": "Ponete el abrigo, si no vas a tener frío." },
+        { "target": "Sans ton aide, je ne pourrais pas finir à temps.", "es": "Sin tu ayuda, no podría terminar a tiempo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Au cas où il pleut, prends un parapluie.", "right": "Au cas où il pleuvrait, prends un parapluie.", "why": "Au cas où va con conditionnel, aunque en español 'por si llueve' vaya en presente." },
+        { "wrong": "Dépêche-toi, si non on va rater le train.", "right": "Dépêche-toi, sinon on va rater le train.", "why": "'Si no' con el sentido de 'de lo contrario' se escribe en una sola palabra: sinon." }
+      ]
+    },
+    {
+      "id": "et-si",
+      "day": 5,
+      "title": "¿Y si…? Imaginar otra vida",
+      "goal": "Comprender y escribir un texto sobre lo que harías en una situación imaginaria.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para imaginar: Si je pouvais…, Si j'habitais…, Si j'étais…, con conditionnel en la otra parte.",
+        "Para proponer algo: Et si on allait au cinéma ? (¿Y si vamos al cine?), con si + imparfait solo.",
+        "Para encadenar ideas: d'abord, ensuite, en plus, et puis, finalement.",
+        "Para matizar: peut-être, sans doute, probablement."
+      ],
+      "examples": [
+        { "target": "Si je pouvais vivre n'importe où, je choisirais Montréal.", "es": "Si pudiera vivir en cualquier lugar, elegiría Montreal." },
+        { "target": "Et si on partait en week-end à la mer ?", "es": "¿Y si nos vamos un fin de semana a la costa?" },
+        { "target": "Je travaillerais moins et je passerais plus de temps avec ma famille.", "es": "Trabajaría menos y pasaría más tiempo con mi familia." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si je pourrais vivre n'importe où, je choisirais Montréal.", "right": "Si je pouvais vivre n'importe où, je choisirais Montréal.", "why": "Después del si de condición va imparfait: si je pouvais, como 'si pudiera'." }
+      ]
+    }
+  ]
+}

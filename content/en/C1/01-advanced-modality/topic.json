@@ -1,0 +1,133 @@
+{
+  "id": "c1-advanced-modality",
+  "level": "C1",
+  "order": 1,
+  "title": "Modalidad avanzada",
+  "targetTitle": "Advanced modality",
+  "description": "Matices de necesidad, obligación, probabilidad y especulación: needn't have frente a didn't need to, be bound / likely / set to y otras formas de decir qué tan seguro estás.",
+  "objectives": [
+    "Distinguir needn't have de didn't need to y otras formas de falta de necesidad",
+    "Expresar probabilidad con be bound to, be likely to y be set to",
+    "Graduar la especulación con may well, could easily, can't possibly y expresiones con chance",
+    "Expresar obligación, permiso y expectativas con be supposed to, had better y be required to"
+  ],
+  "prerequisites": ["b2-conditionals-past-modals", "b2-future-forms"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "neednt-have",
+      "day": 1,
+      "title": "Needn't have vs. didn't need to",
+      "goal": "Expresar que algo no era necesario y dejar claro si se hizo o no.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "needn't have + participio: lo hiciste, pero no hacía falta: You needn't have brought a present (y lo trajiste).",
+        "didn't need to + verbo base: no hacía falta, y normalmente no se hizo: I didn't need to take a taxi, so I walked.",
+        "didn't need to también puede usarse cuando sí se hizo, si el contexto lo aclara; needn't have siempre implica que se hizo.",
+        "No lo confundas con shouldn't have: needn't have = era innecesario; shouldn't have = estuvo mal hacerlo.",
+        "needn't + verbo base para el presente es más británico y formal: You needn't wait. En inglés americano es más común You don't have to wait."
+      ],
+      "examples": [
+        { "target": "You needn't have cooked so much; there were only four of us.", "es": "No hacía falta que cocinaras tanto: éramos solo cuatro." },
+        { "target": "The meeting was canceled, so I didn't need to prepare the presentation after all.", "es": "Se canceló la reunión, así que al final no tuve que preparar la presentación." },
+        { "target": "We needn't have hurried: the train was forty minutes late.", "es": "No hacía falta que nos apuráramos: el tren vino con cuarenta minutos de demora." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I needn't have gone to work, so I stayed in bed.", "right": "I didn't need to go to work, so I stayed in bed.", "why": "Si no lo hiciste, va didn't need to; needn't have implica que sí lo hiciste." },
+        { "wrong": "You needn't to worry.", "right": "You needn't worry.", "why": "Needn't funciona como modal y va sin to. Need como verbo común sí lleva to: You don't need to worry." }
+      ]
+    },
+    {
+      "id": "bound-likely-set",
+      "day": 2,
+      "title": "Be bound to, be likely to y be set to",
+      "goal": "Expresar distintos grados de probabilidad sobre el futuro.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "be bound to / be sure to / be certain to = es casi seguro: It's bound to rain on the day of the wedding.",
+        "be likely to / be unlikely to = probable / poco probable: Prices are likely to rise again. También It's likely that...",
+        "be set to = está previsto o todo indica que va a pasar; muy usado en noticias: The company is set to announce record profits.",
+        "Escala aproximada: be bound to > be likely to > may / might > be unlikely to.",
+        "likely es adjetivo, así que va con be: He's likely to win (no He likely wins). En inglés americano también se usa will likely: He will likely win."
+      ],
+      "examples": [
+        { "target": "With so many fans in town, the hotels are bound to be full.", "es": "Con tantos hinchas en la ciudad, los hoteles van a estar llenos seguro." },
+        { "target": "The new law is unlikely to come into force before next year.", "es": "Es poco probable que la ley nueva entre en vigencia antes del año que viene." },
+        { "target": "The festival is set to attract over a million visitors.", "es": "Se espera que el festival atraiga a más de un millón de visitantes." }
+      ],
+      "commonMistakes": [
+        { "wrong": "He is probable to win.", "right": "He is likely to win.", "why": "Probable no admite persona + to: se dice likely to o It's probable that he'll win." },
+        { "wrong": "It's bound to raining.", "right": "It's bound to rain.", "why": "Be bound to va seguido del verbo base." }
+      ]
+    },
+    {
+      "id": "especulacion",
+      "day": 3,
+      "title": "Matices de la especulación",
+      "goal": "Graduar la certeza al especular sobre el presente, el pasado y el futuro.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "may well / might well = es bastante probable: She may well be right. Para el pasado: might well have + participio.",
+        "could easily = es muy posible, podría pasar sin problema: That could easily happen to anyone.",
+        "can't possibly / couldn't possibly = es imposible: He can't possibly have finished already.",
+        "Expresiones con sustantivo: There's a good chance (that)..., The chances are (that)..., In all likelihood..., There's no way (that)... (informal).",
+        "Adverbios para graduar: definitely, almost certainly, probably, possibly, conceivably. Van después de will y antes de won't: She'll probably come. She probably won't come."
+      ],
+      "examples": [
+        { "target": "Don't throw the box away; we may well need it later.", "es": "No tires la caja: es muy posible que después la necesitemos." },
+        { "target": "Chances are she's already heard the news.", "es": "Lo más probable es que ya se haya enterado de la noticia." },
+        { "target": "He can't possibly have written the whole report in one night.", "es": "Es imposible que haya escrito todo el informe en una noche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Is possible that he comes later.", "right": "It's possible that he'll come later.", "why": "La oración necesita sujeto (It's possible), y después de that no hay subjuntivo como en español: va will o el presente según el caso. También podés decir He may come later." },
+        { "wrong": "She might well to be right.", "right": "She might well be right.", "why": "Después de might well va el verbo base, sin to." }
+      ]
+    },
+    {
+      "id": "obligacion-matices",
+      "day": 4,
+      "title": "Obligación, permiso y expectativas",
+      "goal": "Expresar obligación, permiso y expectativas con matices de registro.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "be supposed to = se supone que, se espera que (una regla o un plan que muchas veces no se cumple): We were supposed to meet at six, but he never showed up.",
+        "had better + verbo base = más vale que; es una advertencia con consecuencia: You'd better leave now or you'll miss the bus.",
+        "be required to / be obliged to = obligación formal: Passengers are required to wear seatbelts.",
+        "be allowed to / be permitted to (formal) = permiso. Para un permiso puntual en el pasado se usa was allowed to, no could: I was allowed to leave early.",
+        "it's up to you = depende de vos; there's no point in + -ing = no tiene sentido: There's no point in arguing."
+      ],
+      "examples": [
+        { "target": "You're not supposed to park here; it's a loading zone.", "es": "Acá no se puede estacionar: es zona de carga y descarga." },
+        { "target": "We'd better book a table; it gets really busy on Fridays.", "es": "Mejor reservemos una mesa: los viernes se llena." },
+        { "target": "All employees are required to complete the safety training.", "es": "Todos los empleados tienen la obligación de hacer la capacitación de seguridad." }
+      ],
+      "commonMistakes": [
+        { "wrong": "You had better to go.", "right": "You'd better go.", "why": "Had better va seguido del verbo base sin to y, aunque tenga had, habla del presente o del futuro." },
+        { "wrong": "I'm supposed that he's coming.", "right": "I suppose he's coming.", "why": "'Supongo que' es I suppose (that); be supposed to es 'se supone que' (una expectativa o una regla): He's supposed to be coming." }
+      ]
+    },
+    {
+      "id": "reclamo-formal",
+      "day": 5,
+      "title": "Un reclamo formal",
+      "goal": "Leer y escribir un email formal de reclamo que mida con precisión obligaciones, expectativas y consecuencias.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Abrí con el motivo: I am writing to complain about... / to express my dissatisfaction with...",
+        "Contrastá lo que se suponía que tenía que pasar con lo que pasó: The order was supposed to arrive within 48 hours.",
+        "Usá needn't have y didn't need to para esfuerzos o gastos innecesarios: As it turned out, I needn't have taken the day off.",
+        "Medí las consecuencias con matices: This is bound to affect..., It is unlikely that..., Further delays could easily...",
+        "Cerrá con un pedido concreto y una fórmula formal: I would appreciate a full refund. I look forward to your prompt reply."
+      ],
+      "examples": [
+        { "target": "The technician was supposed to arrive between 9 and 12, but nobody turned up.", "es": "El técnico tenía que venir entre las 9 y las 12, pero no apareció nadie." },
+        { "target": "As it turned out, I needn't have taken the day off work.", "es": "Al final, no hacía falta que me tomara el día en el trabajo." },
+        { "target": "Further delays are bound to cause serious problems for my business.", "es": "Si hay más demoras, sin duda van a causar problemas serios en mi negocio." }
+      ],
+      "commonMistakes": [
+        { "wrong": "I would like to receive a compensation.", "right": "I would like to receive compensation.", "why": "Compensation es incontable en este sentido: no lleva a." },
+        { "wrong": "I expect your answer.", "right": "I look forward to your reply.", "why": "'Espero su respuesta' traducido literal suena brusco, casi una exigencia; la fórmula formal es I look forward to your reply o to hearing from you." }
+      ]
+    }
+  ]
+}

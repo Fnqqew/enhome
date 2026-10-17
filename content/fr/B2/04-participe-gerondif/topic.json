@@ -1,0 +1,129 @@
+{
+  "id": "fr-b2-participe-gerondif",
+  "level": "B2",
+  "order": 4,
+  "title": "Participio presente y gerundio",
+  "targetTitle": "Le participe présent et le gérondif",
+  "description": "Las formas en -ant: el gérondif (en parlant), que expresa simultaneidad, manera o condición, y el participio presente (parlant), más propio de lo escrito. Ojo: el 'estoy hablando' del español no se traduce con -ant.",
+  "objectives": [
+    "Formar el participio presente a partir de nous",
+    "Usar el gérondif para simultaneidad, manera, medio y condición",
+    "Usar el participio presente en lugar de qui + verbo y para expresar causa",
+    "Distinguir el participio presente del adjetivo verbal",
+    "Escribir consejos que explican cómo lograr algo"
+  ],
+  "prerequisites": ["fr-b1-passif-relatifs"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formation-ant",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el participio presente y su forma compuesta.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se toma nous en presente, se saca -ons y se agrega -ant: nous parlons → parlant, nous finissons → finissant, nous faisons → faisant.",
+        "Solo tres irregulares: être → étant, avoir → ayant, savoir → sachant.",
+        "El participio presente no cambia nunca: les étudiants parlant français.",
+        "Forma compuesta para una acción anterior: ayant fini, étant parti (habiendo terminado, habiéndose ido).",
+        "El 'estoy hablando' del español no se dice con -ant: se usa el presente o être en train de."
+      ],
+      "examples": [
+        { "target": "Ayant fini son travail, elle est rentrée chez elle.", "es": "Como había terminado su trabajo, volvió a su casa." },
+        { "target": "Étant malade, il n'a pas pu venir.", "es": "Como estaba enfermo, no pudo venir." },
+        { "target": "Sachant que tu étais occupé, je ne t'ai pas appelé.", "es": "Como sabía que estabas ocupado, no te llamé." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Savant que tu étais occupé, je ne t'ai pas appelé.", "right": "Sachant que tu étais occupé, je ne t'ai pas appelé.", "why": "Savoir tiene participio presente irregular: sachant." },
+        { "wrong": "Je suis parlant avec Marie.", "right": "Je suis en train de parler avec Marie.", "why": "El 'estoy hablando' del español no se traduce con -ant: se usa el presente o être en train de." }
+      ]
+    },
+    {
+      "id": "gerondif",
+      "day": 2,
+      "title": "El gérondif",
+      "goal": "Usar en + participio presente para simultaneidad, manera, medio y condición.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "en + participio presente: en parlant, en mangeant, en faisant.",
+        "Simultaneidad: Je chante en cuisinant (canto mientras cocino). Los dos verbos tienen que tener el mismo sujeto.",
+        "Manera o medio: Il a appris le français en regardant des séries. Condición: En partant maintenant, tu arriveras à l'heure.",
+        "Tout en + gérondif insiste en la simultaneidad o marca un contraste: Il est sympa tout en étant très exigeant.",
+        "Muchos gerundios del español que indican manera se traducen con gérondif: 'aprendí jugando' → j'ai appris en jouant."
+      ],
+      "examples": [
+        { "target": "Elle écoute de la musique en travaillant.", "es": "Escucha música mientras trabaja." },
+        { "target": "J'ai appris l'anglais en regardant des films.", "es": "Aprendí inglés mirando películas." },
+        { "target": "En prenant le métro, tu gagneras du temps.", "es": "Si tomás el subte, vas a ganar tiempo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "En arrivant à la gare, le train était parti.", "right": "En arrivant à la gare, j'ai vu que le train était parti.", "why": "El gérondif tiene que tener el mismo sujeto que el verbo principal: el que llegó a la estación fuiste vos, no el tren." },
+        { "wrong": "Il a appris le français regardant des séries.", "right": "Il a appris le français en regardant des séries.", "why": "Para expresar la manera se usa el gérondif, con en." }
+      ]
+    },
+    {
+      "id": "participe-present",
+      "day": 3,
+      "title": "El participio presente",
+      "goal": "Usar el participio presente en lugar de qui + verbo y para expresar causa.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Reemplaza a qui + verbo, sobre todo en lo escrito: les personnes souhaitant participer = les personnes qui souhaitent participer.",
+        "Al principio de la frase expresa causa: Étant fatigué, je suis resté à la maison.",
+        "Es típico de los avisos y los textos administrativos: Les voyageurs ayant un billet… Toute personne désirant…",
+        "En la charla casi no se usa: se prefiere qui, comme o parce que."
+      ],
+      "examples": [
+        { "target": "Les étudiants souhaitant s'inscrire doivent remplir ce formulaire.", "es": "Los estudiantes que quieran inscribirse tienen que completar este formulario." },
+        { "target": "N'ayant pas reçu de réponse, je vous écris de nouveau.", "es": "Como no recibí respuesta, le vuelvo a escribir." },
+        { "target": "Nous cherchons une personne parlant couramment espagnol.", "es": "Buscamos una persona que hable español con fluidez." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Les étudiants souhaitants s'inscrire doivent remplir ce formulaire.", "right": "Les étudiants souhaitant s'inscrire doivent remplir ce formulaire.", "why": "El participio presente es invariable: no lleva -s ni -e." }
+      ]
+    },
+    {
+      "id": "adjectif-verbal",
+      "day": 4,
+      "title": "Participio o adjetivo",
+      "goal": "Distinguir el participio presente, invariable, del adjetivo verbal, que concuerda.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Algunas formas en -ant son adjetivos y concuerdan: une histoire intéressante, des enfants obéissants.",
+        "El participio expresa una acción y no cambia (des enfants obéissant à leurs parents); el adjetivo expresa una cualidad y concuerda (des enfants obéissants).",
+        "A veces cambia la ortografía: fatiguant / fatigant, convainquant / convaincant, précédant / précédent, différant / différent, négligeant / négligent.",
+        "Truco: si podés reemplazarlo por qui + verbo, es participio; si podés poner très adelante, es adjetivo."
+      ],
+      "examples": [
+        { "target": "C'est un travail très fatigant.", "es": "Es un trabajo muy cansador." },
+        { "target": "Ses arguments étaient très convaincants.", "es": "Sus argumentos eran muy convincentes." },
+        { "target": "Le jour précédant l'examen, je n'ai pas dormi.", "es": "El día anterior al examen no dormí." }
+      ],
+      "commonMistakes": [
+        { "wrong": "C'est un travail fatiguant.", "right": "C'est un travail fatigant.", "why": "El adjetivo se escribe sin u: fatigant. Fatiguant es el participio." },
+        { "wrong": "Le mois précédant, j'étais en vacances.", "right": "Le mois précédent, j'étais en vacances.", "why": "Como adjetivo ('el mes anterior') se escribe précédent, con e." }
+      ]
+    },
+    {
+      "id": "conseils-gerondif",
+      "day": 5,
+      "title": "Explicar cómo se logra algo",
+      "goal": "Comprender y escribir consejos que explican cómo lograr algo, con gérondif.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "El gérondif es ideal para explicar el medio: On progresse en pratiquant tous les jours.",
+        "Para dar énfasis: C'est en… que… C'est en forgeant qu'on devient forgeron (la práctica hace al maestro).",
+        "Combinalo con el imperativo y con il vaut mieux: Il vaut mieux apprendre en s'amusant.",
+        "Cuidá que el sujeto sea el mismo en las dos partes de la oración."
+      ],
+      "examples": [
+        { "target": "C'est en lisant beaucoup qu'on enrichit son vocabulaire.", "es": "Leyendo mucho es como se enriquece el vocabulario." },
+        { "target": "Essayez de penser en français en faisant vos courses.", "es": "Traten de pensar en francés mientras hacen las compras." },
+        { "target": "Tout en travaillant, il a réussi à finir ses études.", "es": "Aun trabajando, logró terminar sus estudios." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Tu apprendras en lire beaucoup.", "right": "Tu apprendras en lisant beaucoup.", "why": "Después de en va el participio presente, no el infinitivo, aunque en español digas 'al leer'." }
+      ]
+    }
+  ]
+}

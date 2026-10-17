@@ -1,0 +1,130 @@
+{
+  "id": "it-b1-congiuntivo-presente",
+  "level": "B1",
+  "order": 1,
+  "title": "Subjuntivo presente",
+  "targetTitle": "Il congiuntivo presente",
+  "description": "El modo de la opinión, el deseo, la duda y la emoción. Se usa casi siempre donde el español usa el subjuntivo, pero también después de penso che y credo che, donde nosotros decimos 'creo que es'.",
+  "objectives": [
+    "Conjugar el congiuntivo presente de los verbos regulares e irregulares",
+    "Usarlo después de verbos de opinión, deseo y emoción",
+    "Usarlo con expresiones impersonales como è importante che y bisogna che",
+    "Usarlo después de conjunciones como benché, perché (para que) y prima che",
+    "Escribir un mensaje para dar tu opinión"
+  ],
+  "prerequisites": ["it-a1-presente", "it-a2-futuro-condizionale"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "congiuntivo-forme",
+      "day": 1,
+      "title": "Formación",
+      "goal": "Conjugar el congiuntivo presente de los verbos regulares.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "-are → -i (che io parli); -ere e -ire → -a (che io prenda, che io dorma). Los verbos con -isc- lo mantienen: che io capisca.",
+        "Las tres personas del singular son iguales; por eso muchas veces se pone el pronombre: che io parli, che tu parli, che lui parli.",
+        "Noi es igual que en el presente (parliamo); voi termina en -iate (parliate); loro agrega -no a la forma del singular (parlino, prendano).",
+        "Es el mismo esquema que el imperativo de Lei que ya conocés: scusi, senta, prenda."
+      ],
+      "examples": [
+        { "target": "Spero che Luca arrivi presto.", "es": "Espero que Luca llegue pronto." },
+        { "target": "È meglio che voi partiate domani.", "es": "Es mejor que ustedes salgan mañana." },
+        { "target": "Voglio che i ragazzi capiscano bene.", "es": "Quiero que los chicos entiendan bien." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Spero che tu parla italiano.", "right": "Spero che tu parli italiano.", "why": "Los verbos en -are toman -i en el congiuntivo: che tu parli." },
+        { "wrong": "È importante che voi partite presto.", "right": "È importante che voi partiate presto.", "why": "La forma de voi en el congiuntivo termina en -iate." }
+      ]
+    },
+    {
+      "id": "congiuntivo-irregolari",
+      "day": 2,
+      "title": "Irregulares",
+      "goal": "Conjugar los irregulares más frecuentes del congiuntivo presente.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "essere: sia, siamo, siate, siano. avere: abbia, abbiamo, abbiate, abbiano.",
+        "Muchos salen de la forma de io del presente: vado → vada, faccio → faccia, vengo → venga, posso → possa, voglio → voglia, dico → dica, esco → esca.",
+        "Otros: stare → stia, dare → dia, sapere → sappia, dovere → debba.",
+        "En noi y voi vuelven a la raíz del infinitivo: andiamo, andiate; veniamo, veniate."
+      ],
+      "examples": [
+        { "target": "Spero che tu stia meglio.", "es": "Espero que estés mejor." },
+        { "target": "Bisogna che tu vada dal medico.", "es": "Hace falta que vayas al médico." },
+        { "target": "Voglio che mi dicano la verità.", "es": "Quiero que me digan la verdad." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Spero che tu sei contento.", "right": "Spero che tu sia contento.", "why": "Después de sperare che va el congiuntivo: essere → sia." },
+        { "wrong": "Bisogna che tu vadi dal medico.", "right": "Bisogna che tu vada dal medico.", "why": "La forma de tu es vada, igual que la de io; vadi es un error frecuente incluso entre italianos." }
+      ]
+    },
+    {
+      "id": "opinione-desiderio",
+      "day": 3,
+      "title": "Opinión, deseo y emoción",
+      "goal": "Usar el congiuntivo después de verbos de opinión, deseo y emoción.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Después de verbos de opinión va el congiuntivo: penso che, credo che, mi sembra che, immagino che: Penso che sia tardi.",
+        "Ojo: en español 'creo que es' va con indicativo; en el italiano cuidado va el congiuntivo: Credo che sia vero. En la charla se oye a veces el indicativo, pero conviene usar el congiuntivo.",
+        "Deseo y voluntad: voglio che, spero che, preferisco che. Emoción: sono contento che, mi dispiace che, ho paura che.",
+        "Si el sujeto es el mismo, se usa di + infinitivo: Penso di partire. Spero di vederti.",
+        "Con certeza va el indicativo: So che è vero. È chiaro che hai ragione."
+      ],
+      "examples": [
+        { "target": "Penso che il museo sia chiuso il lunedì.", "es": "Creo que el museo está cerrado los lunes." },
+        { "target": "Mi dispiace che tu non possa venire.", "es": "Lamento que no puedas venir." },
+        { "target": "Spero di vederti presto.", "es": "Espero verte pronto." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Penso che è una buona idea.", "right": "Penso che sia una buona idea.", "why": "En el italiano cuidado, después de pensare che va el congiuntivo, aunque en español digamos 'creo que es'." },
+        { "wrong": "Spero che io possa venire.", "right": "Spero di poter venire.", "why": "Si el sujeto de los dos verbos es el mismo, se usa di + infinitivo." }
+      ]
+    },
+    {
+      "id": "impersonali-congiunzioni",
+      "day": 4,
+      "title": "Expresiones impersonales y conjunciones",
+      "goal": "Usar el congiuntivo con expresiones impersonales y con conjunciones.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Expresiones impersonales: è importante che, è meglio che, è necessario che, bisogna che, è possibile che, è strano che: È meglio che tu parta presto.",
+        "Sin un sujeto concreto van con infinitivo directo: È importante studiare. Bisogna partire.",
+        "Conjunciones que piden congiuntivo: benché y sebbene (aunque), perché y affinché (para que), prima che, a patto che (con tal de que), senza che.",
+        "Ojo: perché con indicativo es 'porque'; con congiuntivo es 'para que': Parlo piano perché tutti capiscano.",
+        "Prima che va con sujetos distintos; con el mismo sujeto se usa prima di + infinitivo: Chiamami prima di uscire."
+      ],
+      "examples": [
+        { "target": "Benché sia stanco, vengo alla festa.", "es": "Aunque estoy cansado, voy a la fiesta." },
+        { "target": "Parlo piano perché tutti capiscano.", "es": "Hablo despacio para que todos entiendan." },
+        { "target": "Ti presto la macchina a patto che tu torni prima delle dieci.", "es": "Te presto el auto con tal de que vuelvas antes de las diez." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Benché è tardi, esco.", "right": "Benché sia tardi, esco.", "why": "Benché y sebbene siempre piden congiuntivo, aunque en español 'aunque' pueda ir con indicativo." },
+        { "wrong": "È importante che studiare.", "right": "È importante studiare.", "why": "Sin un sujeto concreto, la expresión impersonal va directo con el infinitivo; con sujeto, che + congiuntivo: è importante che tu studi." }
+      ]
+    },
+    {
+      "id": "dare-opinione",
+      "day": 5,
+      "title": "Dar tu opinión",
+      "goal": "Comprender y escribir un mensaje en un foro dando tu opinión.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para opinar: Secondo me… (con indicativo), Penso che…, Credo che…, Mi sembra che… (con congiuntivo).",
+        "Para matizar: Non sono sicuro che…, Dubito che…, Può darsi che… (puede ser que), todos con congiuntivo.",
+        "Para estar de acuerdo o no: Sono d'accordo con te, Non sono d'accordo, Hai ragione, Dipende."
+      ],
+      "examples": [
+        { "target": "Secondo me, il centro è troppo caro.", "es": "Para mí, el centro es demasiado caro." },
+        { "target": "Dubito che aprano un nuovo parco.", "es": "Dudo que abran un parque nuevo." },
+        { "target": "Può darsi che tu abbia ragione.", "es": "Puede ser que tengas razón." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Secondo me sia una buona idea.", "right": "Secondo me è una buona idea.", "why": "Secondo me no es un verbo de opinión: después va el indicativo. El congiuntivo va con penso che o credo che." },
+        { "wrong": "Sono d'accordo contigo.", "right": "Sono d'accordo con te.", "why": "'Contigo' no existe en italiano: se dice con te." }
+      ]
+    }
+  ]
+}

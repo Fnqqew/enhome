@@ -1,0 +1,128 @@
+{
+  "id": "pt-b1-futuro-subjuntivo",
+  "level": "B1",
+  "order": 3,
+  "title": "Futuro del subjuntivo",
+  "targetTitle": "Futuro do subjuntivo",
+  "description": "Un tiempo que el español moderno perdió y el portugués usa todos los días: quando eu puder, se você quiser, assim que chegar. Aparece donde en español decimos 'cuando puedas' o 'si llueve mañana'.",
+  "objectives": [
+    "Formar el futuro do subjuntivo a partir del perfeito",
+    "Usar los irregulares más frecuentes: for, tiver, fizer, puder, quiser, vier",
+    "Hablar de condiciones y momentos futuros con se y quando",
+    "Usarlo con assim que, enquanto y relativos como o que você quiser",
+    "Escribir un mensaje para coordinar planes"
+  ],
+  "prerequisites": ["pt-b1-presente-subjuntivo", "pt-a2-preterito-perfeito"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "futuro-subj-formacao",
+      "day": 1,
+      "title": "Formación",
+      "goal": "Formar el futuro do subjuntivo de cualquier verbo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Se parte de la tercera persona plural del perfeito sin -ram: falaram → falar, comeram → comer, puderam → puder.",
+        "Terminaciones: eu y você sin terminación, nós -rmos, vocês -rem: quando eu puder, quando nós pudermos, quando eles puderem.",
+        "En los regulares es igual al infinitivo: se você falar, quando eles chegarem.",
+        "No existe en el español actual (solo en leyes y refranes: 'adonde fueres, haz lo que vieres')."
+      ],
+      "examples": [
+        { "target": "Quando eu chegar, te ligo.", "es": "Cuando llegue, te llamo." },
+        { "target": "Se vocês precisarem de ajuda, me avisem.", "es": "Si necesitan ayuda, avísenme." },
+        { "target": "Quando nós terminarmos, vamos jantar.", "es": "Cuando terminemos, vamos a cenar." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando eu poder, te visito.", "right": "Quando eu puder, te visito.", "why": "Se forma desde el perfeito (puderam → puder), no desde el infinitivo." }
+      ]
+    },
+    {
+      "id": "futuro-subj-irregulares",
+      "day": 2,
+      "title": "Irregulares",
+      "goal": "Usar los irregulares más frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "ser e ir: for. ter: tiver. estar: estiver. fazer: fizer. dizer: disser.",
+        "querer: quiser. poder: puder. saber: souber. trazer: trouxer. dar: der. pôr: puser.",
+        "vir (venir): vier. ver: vir. La trampa: el futuro do subjuntivo de ver es igual al infinitivo de vir.",
+        "En la charla mucha gente dice 'se eu ver', pero la norma es se eu vir."
+      ],
+      "examples": [
+        { "target": "Se for possível, chego mais cedo.", "es": "Si es posible, llego más temprano." },
+        { "target": "Quando você vier ao Rio, me avisa.", "es": "Cuando vengas a Río, avisame." },
+        { "target": "Se eu vir a Ana, dou o recado.", "es": "Si veo a Ana, le doy el mensaje." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando você vir aqui, me avisa.", "right": "Quando você vier aqui, me avisa.", "why": "De vir (venir) la forma es vier; vir es el futuro do subjuntivo de ver." },
+        { "wrong": "Se eu tenho tempo amanhã, passo aí.", "right": "Se eu tiver tempo amanhã, passo aí.", "why": "Para una condición en el futuro no se usa el presente como en español ('si tengo tiempo'), sino el futuro do subjuntivo." }
+      ]
+    },
+    {
+      "id": "se-quando",
+      "day": 3,
+      "title": "Con se y quando",
+      "goal": "Hablar de condiciones y momentos futuros.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "se + futuro do subjuntivo para condiciones posibles: Se chover, a gente fica em casa.",
+        "quando + futuro do subjuntivo para un momento del futuro: Quando eu me formar, vou viajar.",
+        "La otra parte de la oración va en presente, futuro, ir + infinitivo o imperativo.",
+        "Para hábitos y verdades generales, quando va con presente: Quando chove, o trânsito para."
+      ],
+      "examples": [
+        { "target": "Se chover amanhã, o jogo vai ser adiado.", "es": "Si llueve mañana, el partido se va a postergar." },
+        { "target": "Quando eu me formar, quero morar fora.", "es": "Cuando me reciba, quiero vivir afuera." },
+        { "target": "Se você quiser, a gente pode ir junto.", "es": "Si querés, podemos ir juntos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando você possa, me liga.", "right": "Quando você puder, me liga.", "why": "Donde el español usa presente del subjuntivo después de 'cuando' ('cuando puedas'), el portugués usa el futuro do subjuntivo." },
+        { "wrong": "Se chove amanhã, não vamos.", "right": "Se chover amanhã, não vamos.", "why": "Para una condición en el futuro va el futuro do subjuntivo, no el presente." }
+      ]
+    },
+    {
+      "id": "assim-que-relativos",
+      "day": 4,
+      "title": "Assim que, enquanto y o que você quiser",
+      "goal": "Usar el futuro do subjuntivo con otras conjunciones y con relativos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Conjunciones de tiempo: assim que y logo que (en cuanto), enquanto (mientras), sempre que (cada vez que), depois que.",
+        "Relativos que miran al futuro: quem quiser (el que quiera), o que você quiser (lo que quieras), como você preferir, onde você estiver.",
+        "Antes que y para que no van con futuro, sino con presente do subjuntivo: antes que chova, para que você entenda.",
+        "El sujeto se omite mucho: Assim que chegar, me avisa."
+      ],
+      "examples": [
+        { "target": "Assim que eu souber o resultado, te conto.", "es": "En cuanto sepa el resultado, te cuento." },
+        { "target": "Pode pedir o que você quiser.", "es": "Podés pedir lo que quieras." },
+        { "target": "Enquanto você estiver aqui, não precisa pagar nada.", "es": "Mientras estés acá, no tenés que pagar nada." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Faça como você prefira.", "right": "Faça como você preferir.", "why": "Con como, onde, quem y o que referidos al futuro se usa el futuro do subjuntivo." },
+        { "wrong": "Assim que eu chegue, te ligo.", "right": "Assim que eu chegar, te ligo.", "why": "Assim que, como 'en cuanto', pide futuro do subjuntivo cuando se habla del futuro." }
+      ]
+    },
+    {
+      "id": "combinar-planos",
+      "day": 5,
+      "title": "Coordinar planes",
+      "goal": "Comprender y escribir un mensaje para organizar una visita.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Ofrecer: Se você quiser, posso te buscar. Qualquer coisa, me avisa.",
+        "Condicionar: Se der, passo aí (si puedo). Se não der, a gente marca outro dia.",
+        "Pedir aviso: Assim que chegar, me manda uma mensagem. Quando puder, me liga.",
+        "'Quedar' en una cita se dice marcar o combinar: Vamos marcar para sábado?"
+      ],
+      "examples": [
+        { "target": "Se der, passo aí depois do trabalho.", "es": "Si puedo, paso por ahí después del trabajo." },
+        { "target": "Assim que o avião pousar, te mando uma mensagem.", "es": "En cuanto aterrice el avión, te mando un mensaje." },
+        { "target": "Se precisar de alguma coisa, é só falar.", "es": "Si necesitás algo, decime nomás." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se você precisa algo, me avisa.", "right": "Se você precisar de alguma coisa, me avisa.", "why": "La condición futura va en futuro do subjuntivo, y precisar lleva de antes de un sustantivo." },
+        { "wrong": "Vamos quedar para sábado?", "right": "Vamos marcar para sábado?", "why": "'Quedar' en una cita se dice marcar o combinar." }
+      ]
+    }
+  ]
+}

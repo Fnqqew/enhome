@@ -1,0 +1,128 @@
+{
+  "id": "fr-c1-nominalisation",
+  "level": "C1",
+  "order": 2,
+  "title": "Nominalización",
+  "targetTitle": "La nominalisation",
+  "description": "Transformar verbos y adjetivos en sustantivos para escribir de forma más concisa y abstracta, como en la prensa, los informes y los textos académicos. Es una de las marcas más claras de un francés escrito de nivel avanzado.",
+  "objectives": [
+    "Formar sustantivos a partir de verbos con los sufijos más frecuentes",
+    "Formar sustantivos a partir de adjetivos y conocer su género",
+    "Transformar oraciones enteras en grupos nominales",
+    "Usar la nominalización en titulares, consignas y textos académicos",
+    "Redactar titulares y un resumen de prensa"
+  ],
+  "prerequisites": ["fr-b2-registre-soutenu"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "noms-de-verbes",
+      "day": 1,
+      "title": "De verbo a sustantivo",
+      "goal": "Formar sustantivos a partir de verbos con los sufijos más frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "-tion y -sion, femeninos: créer → la création, décider → la décision, augmenter → l'augmentation.",
+        "-ment, masculinos: changer → le changement, développer → le développement, licencier → le licenciement.",
+        "-age, masculinos: nettoyer → le nettoyage, laver → le lavage, atterrir → l'atterrissage.",
+        "-ure, -ance y -ence, femeninos: ouvrir → l'ouverture, naître → la naissance, préférer → la préférence.",
+        "Formas cortas, sin sufijo: appeler → l'appel, choisir → le choix, visiter → la visite, arrêter → l'arrêt, baisser → la baisse."
+      ],
+      "examples": [
+        { "target": "L'augmentation des prix inquiète les consommateurs.", "es": "El aumento de los precios preocupa a los consumidores." },
+        { "target": "Le développement du projet a pris deux ans.", "es": "El desarrollo del proyecto llevó dos años." },
+        { "target": "L'ouverture du musée est prévue pour juin.", "es": "La apertura del museo está prevista para junio." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le choisissement du candidat a été difficile.", "right": "Le choix du candidat a été difficile.", "why": "Choisir tiene una forma corta: le choix. No todos los verbos se nominalizan con un sufijo." },
+        { "wrong": "L'aumentation des prix.", "right": "L'augmentation des prix.", "why": "El sustantivo se forma sobre el verbo francés augmenter, no sobre el español 'aumento'." }
+      ]
+    },
+    {
+      "id": "noms-d-adjectifs",
+      "day": 2,
+      "title": "De adjetivo a sustantivo",
+      "goal": "Formar sustantivos abstractos a partir de adjetivos y reconocer su género.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "-té e -ité: beau → la beauté, fier → la fierté, rapide → la rapidité, sincère → la sincérité.",
+        "-eur: long → la longueur, grand → la grandeur, épais → l'épaisseur, chaud → la chaleur.",
+        "-esse, -ise y -ence: jeune → la jeunesse, sage → la sagesse, franc → la franchise, absent → l'absence.",
+        "Casi todos son femeninos, también los abstractos en -eur (la chaleur, la valeur, la douleur), aunque en español sean masculinos. Excepciones: le bonheur, le malheur, l'honneur."
+      ],
+      "examples": [
+        { "target": "La rapidité de sa réponse m'a surpris.", "es": "La rapidez de su respuesta me sorprendió." },
+        { "target": "Je n'avais jamais ressenti une telle chaleur.", "es": "Nunca había sentido un calor así." },
+        { "target": "La franchise est sa plus grande qualité.", "es": "La franqueza es su mayor cualidad." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le chaleur était insupportable.", "right": "La chaleur était insupportable.", "why": "Los sustantivos abstractos en -eur son femeninos en francés, aunque 'el calor' sea masculino." },
+        { "wrong": "Le valeur de cette maison a doublé.", "right": "La valeur de cette maison a doublé.", "why": "Valeur es femenino: la valeur, aunque en español digas 'el valor'." }
+      ]
+    },
+    {
+      "id": "phrase-groupe-nominal",
+      "day": 3,
+      "title": "De la oración al grupo nominal",
+      "goal": "Condensar oraciones completas en grupos nominales.",
+      "focus": ["grammar", "writing"],
+      "keyPoints": [
+        "Una oración completa se puede condensar: Le gouvernement a décidé de fermer l'usine → la décision du gouvernement de fermer l'usine.",
+        "El sujeto y el objeto pasan a complementos con de: Les prix augmentent → l'augmentation des prix. Les touristes arrivent → l'arrivée des touristes.",
+        "Los adverbios se vuelven adjetivos: Il a répondu rapidement → sa réponse rapide.",
+        "Así se arman frases más densas: Après que le directeur est parti → Après le départ du directeur. Parce que les ventes ont baissé → En raison de la baisse des ventes."
+      ],
+      "examples": [
+        { "target": "En raison de la hausse des prix, la consommation a diminué.", "es": "Debido al aumento de los precios, el consumo bajó." },
+        { "target": "Après le départ des invités, nous avons rangé la maison.", "es": "Después de que se fueron los invitados, ordenamos la casa." },
+        { "target": "La fermeture de l'usine a provoqué de nombreuses manifestations.", "es": "El cierre de la fábrica provocó numerosas manifestaciones." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Sa réponse rapidement nous a surpris.", "right": "Sa réponse rapide nous a surpris.", "why": "Al nominalizar, el adverbio se transforma en adjetivo: rapidement → rapide." },
+        { "wrong": "À cause de la baisse de les ventes.", "right": "À cause de la baisse des ventes.", "why": "De + les se contrae siempre en des, también dentro de un grupo nominal." }
+      ]
+    },
+    {
+      "id": "usages-nominalisation",
+      "day": 4,
+      "title": "Titulares, carteles y textos académicos",
+      "goal": "Reconocer y usar la nominalización en la prensa, los carteles y la escritura académica.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Los titulares de prensa casi siempre son nominales: Hausse du chômage en mars. Fermeture d'une usine à Lyon. Grève dans les transports.",
+        "Los carteles y las consignas también: Interdiction de fumer. Lecture du texte, puis réponse aux questions.",
+        "En la escritura académica permite hablar de procesos sin nombrar a quién los hace: la mise en place d'un dispositif, l'analyse des résultats.",
+        "Abusar de ella vuelve el texto pesado: alterná grupos nominales con verbos conjugados."
+      ],
+      "examples": [
+        { "target": "Hausse du chômage chez les jeunes.", "es": "Aumento del desempleo entre los jóvenes." },
+        { "target": "Interdiction de stationner devant le garage.", "es": "Prohibido estacionar frente al garaje." },
+        { "target": "L'analyse des résultats montre une nette amélioration.", "es": "El análisis de los resultados muestra una clara mejora." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Prohibé de stationner.", "right": "Interdiction de stationner. / Stationnement interdit.", "why": "'Prohibido' se traduce con interdire: en los carteles se usa interdiction de o el sustantivo + interdit." }
+      ]
+    },
+    {
+      "id": "revue-presse",
+      "day": 5,
+      "title": "Titulares y resumen de prensa",
+      "goal": "Comprender y escribir titulares y un resumen breve de una noticia.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Para resumir una noticia: título nominal y una o dos frases con los datos clave (qui, quoi, où, quand).",
+        "Verbos de la prensa: annoncer, confirmer, démentir (desmentir), dénoncer, faire état de (informar sobre).",
+        "Combiná la nominalización con el condicional de los datos no confirmados: Démission du ministre ? Il aurait quitté ses fonctions hier soir.",
+        "Conectores del resumen: selon, d'après, à la suite de, en raison de, malgré."
+      ],
+      "examples": [
+        { "target": "Grève des contrôleurs aériens : des centaines de vols annulés.", "es": "Huelga de controladores aéreos: cientos de vuelos cancelados." },
+        { "target": "À la suite de fortes pluies, plusieurs routes ont été fermées.", "es": "Tras las fuertes lluvias, cerraron varias rutas." },
+        { "target": "Le ministre a démenti toute augmentation des impôts.", "es": "El ministro desmintió cualquier aumento de impuestos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le ministre a démenti tout augmentation des impôts.", "right": "Le ministre a démenti toute augmentation des impôts.", "why": "Tout concuerda con el sustantivo: augmentation es femenino, así que va toute." }
+      ]
+    }
+  ]
+}

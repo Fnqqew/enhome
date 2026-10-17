@@ -1,0 +1,127 @@
+{
+  "id": "it-b1-trapassato-remoto",
+  "level": "B1",
+  "order": 2,
+  "title": "Pluscuamperfecto y pasado remoto",
+  "targetTitle": "Trapassato prossimo e passato remoto",
+  "description": "El pasado del pasado (avevo già mangiato) para ordenar un relato, y el passato remoto, el pasado de los libros, los cuentos y la historia, que necesitás por lo menos reconocer.",
+  "objectives": [
+    "Formar y usar el trapassato prossimo",
+    "Ordenar hechos del pasado con già, dopo che y dopo + infinitivo pasado",
+    "Reconocer el passato remoto de los verbos regulares",
+    "Reconocer los passati remoti irregulares más frecuentes",
+    "Comprender y escribir un relato breve"
+  ],
+  "prerequisites": ["it-a2-passato-prossimo", "it-a2-imperfetto"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "trapassato-forme",
+      "day": 1,
+      "title": "El trapassato prossimo",
+      "goal": "Formar el trapassato prossimo y usarlo para una acción anterior a otra del pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Imperfetto de avere o essere + participio: avevo mangiato, ero partito. Equivale a 'había comido', 'había salido'.",
+        "El auxiliar se elige igual que en el passato prossimo, y con essere el participio concuerda: Giulia era già uscita.",
+        "Expresa una acción anterior a otra del pasado: Quando sono arrivato, Marco era già andato via.",
+        "En el discurso indirecto reemplaza al passato prossimo: Mi ha detto che aveva perso le chiavi."
+      ],
+      "examples": [
+        { "target": "Quando siamo arrivati alla stazione, il treno era già partito.", "es": "Cuando llegamos a la estación, el tren ya había salido." },
+        { "target": "Non avevo mai visto il mare prima di quel viaggio.", "es": "Nunca había visto el mar antes de ese viaje." },
+        { "target": "Marta mi ha detto che aveva perso le chiavi.", "es": "Marta me dijo que había perdido las llaves." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando sono arrivato, Giulia aveva già uscita.", "right": "Quando sono arrivato, Giulia era già uscita.", "why": "Uscire va con essere también en el trapassato, y el participio concuerda: era uscita." },
+        { "wrong": "Avevo andato a Roma prima.", "right": "Ero andato a Roma prima.", "why": "Andare usa essere en todos los tiempos compuestos, aunque en español digamos 'había ido'." }
+      ]
+    },
+    {
+      "id": "ordinare-eventi",
+      "day": 2,
+      "title": "Ordenar los hechos",
+      "goal": "Ordenar los hechos de un relato con el trapassato y el infinitivo pasado.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Con dopo che, appena y quando, el hecho anterior puede ir en trapassato: Dopo che avevamo cenato, siamo usciti.",
+        "Già (ya), non… ancora (todavía no) y mai (nunca) van entre el auxiliar y el participio: Non era ancora arrivato nessuno.",
+        "Con el mismo sujeto podés usar dopo + infinitivo pasado: Dopo aver mangiato, siamo usciti. Dopo essere arrivati, abbiamo chiamato.",
+        "Para lo posterior, prima di + infinitivo: Prima di partire, avevo prenotato tutto."
+      ],
+      "examples": [
+        { "target": "Dopo che avevamo cenato, siamo andati a fare una passeggiata.", "es": "Después de cenar, fuimos a dar una vuelta." },
+        { "target": "Dopo aver letto la lettera, si è messa a piangere.", "es": "Después de leer la carta, se puso a llorar." },
+        { "target": "Non era ancora arrivato nessuno.", "es": "Todavía no había llegado nadie." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Dopo di mangiare, siamo usciti.", "right": "Dopo aver mangiato, siamo usciti.", "why": "Dopo va con el infinitivo pasado y sin di: dopo aver mangiato, dopo essere arrivati." }
+      ]
+    },
+    {
+      "id": "passato-remoto-regolare",
+      "day": 3,
+      "title": "El passato remoto regular",
+      "goal": "Reconocer y formar el passato remoto de los verbos regulares.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Es un pasado simple, como 'hablé' en español: parlai, parlasti, parlò, parlammo, parlaste, parlarono.",
+        "-ere: credei (o credetti), credesti, credé (o credette), credemmo, credeste, crederono (o credettero). -ire: dormii, dormisti, dormì, dormimmo, dormiste, dormirono.",
+        "Se usa en la narración escrita (novelas, cuentos, biografías, historia) para hechos lejanos y cerrados. En la charla del norte casi no se usa; en el sur, mucho más.",
+        "Ojo con los acentos: parlò (habló) no es parlo (hablo); dormì (durmió) no es dormi (dormís)."
+      ],
+      "examples": [
+        { "target": "Colombo arrivò in America nel 1492.", "es": "Colón llegó a América en 1492." },
+        { "target": "I miei nonni emigrarono in Argentina dopo la guerra.", "es": "Mis abuelos emigraron a la Argentina después de la guerra." },
+        { "target": "Quella notte nessuno dormì.", "es": "Esa noche nadie durmió." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Colombo arrivo in America nel 1492.", "right": "Colombo arrivò in America nel 1492.", "why": "La tercera persona del passato remoto lleva acento: arrivò. Sin acento, arrivo es 'llego'." },
+        { "wrong": "Parló a lungo.", "right": "Parlò a lungo.", "why": "En italiano el acento final de -ò es grave (ò), no agudo como en español (ó)." }
+      ]
+    },
+    {
+      "id": "passato-remoto-irregolare",
+      "day": 4,
+      "title": "Irregulares del passato remoto",
+      "goal": "Reconocer los passati remoti irregulares más frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "essere: fui, fosti, fu, fummo, foste, furono. avere: ebbi, avesti, ebbe, avemmo, aveste, ebbero.",
+        "Muchos irregulares siguen el esquema 1-3-3: son irregulares en io, lui y loro, y regulares en el resto: scrissi, scrivesti, scrisse, scrivemmo, scriveste, scrissero.",
+        "Frecuentes: fare → feci, fece; dire → dissi, disse; vedere → vidi, vide; venire → venni, venne; nascere → nacqui, nacque; prendere → presi, prese; mettere → misi, mise; vivere → vissi, visse.",
+        "En un texto, alcanza con reconocer la tercera persona: fu, ebbe, fece, disse, vide, nacque."
+      ],
+      "examples": [
+        { "target": "Dante nacque a Firenze nel 1265.", "es": "Dante nació en Florencia en 1265." },
+        { "target": "Fu un viaggio lunghissimo.", "es": "Fue un viaje larguísimo." },
+        { "target": "Il re disse che non voleva più vederlo.", "es": "El rey dijo que ya no quería verlo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Nascé a Roma nel 1950.", "right": "Nacque a Roma nel 1950.", "why": "Nascere es irregular en el passato remoto: nacqui, nacque, nacquero." },
+        { "wrong": "Lei vidde il mare per la prima volta.", "right": "Lei vide il mare per la prima volta.", "why": "Vedere hace vide, con una sola d; vidde es una forma dialectal." }
+      ]
+    },
+    {
+      "id": "raccontare-storia",
+      "day": 5,
+      "title": "Contar una historia",
+      "goal": "Comprender un relato en passato remoto y escribir uno breve combinando los pasados.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "En los cuentos, el passato remoto cuenta los hechos y el imperfetto describe el fondo: C'era una volta un re che aveva tre figlie.",
+        "El trapassato marca lo que había pasado antes: Il principe era partito da molto tempo.",
+        "Conectores: un giorno, all'improvviso (de repente), allora, poco dopo, alla fine.",
+        "Si escribís sobre tu propia vida, usá el passato prossimo; el remoto queda para relatos y hechos lejanos o históricos."
+      ],
+      "examples": [
+        { "target": "C'era una volta un pescatore che viveva vicino al mare.", "es": "Había una vez un pescador que vivía cerca del mar." },
+        { "target": "Un giorno trovò una bottiglia sulla spiaggia.", "es": "Un día encontró una botella en la playa." },
+        { "target": "All'improvviso sentì una voce.", "es": "De repente oyó una voz." }
+      ],
+      "commonMistakes": [
+        { "wrong": "C'era una volta un re che ebbe tre figlie.", "right": "C'era una volta un re che aveva tre figlie.", "why": "Para describir el fondo de un cuento (quién era, qué tenía) se usa el imperfetto, igual que 'tenía' en español." }
+      ]
+    }
+  ]
+}

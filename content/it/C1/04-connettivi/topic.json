@@ -1,0 +1,127 @@
+{
+  "id": "it-c1-connettivi",
+  "level": "C1",
+  "order": 4,
+  "title": "Conectores avanzados",
+  "targetTitle": "Connettivi e coesione testuale",
+  "description": "Los conectores para argumentar con precisión (causa, concesión, consecuencia, finalidad y condición) y los recursos que le dan cohesión a un texto: referencias, sinónimos y nominalizaciones.",
+  "objectives": [
+    "Expresar causa y consecuencia con matices",
+    "Expresar concesión y contraste con el modo correcto",
+    "Expresar finalidad y condición",
+    "Dar cohesión a un texto con pronombres, sinónimos y nominalizaciones",
+    "Escribir un texto argumentativo"
+  ],
+  "prerequisites": ["it-b2-registro-formale", "it-c1-concordanza-tempi"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "causa-conseguenza",
+      "day": 1,
+      "title": "Causa y consecuencia",
+      "goal": "Expresar causa y consecuencia con los conectores adecuados.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Causa: perché, poiché, siccome, dato che, visto che, dal momento che, in quanto (más formal).",
+        "Siccome va al comienzo de la oración: Siccome pioveva, siamo rimasti a casa. Al final, mejor perché: Siamo rimasti a casa perché pioveva.",
+        "Causa con sustantivo: a causa di (causa negativa), grazie a (positiva), per via di (coloquial): A causa dello sciopero… Grazie al tuo aiuto…",
+        "Consecuencia: quindi, perciò, pertanto, di conseguenza, cosicché, tant'è vero che (tanto es así que)."
+      ],
+      "examples": [
+        { "target": "Dato che il treno era in ritardo, abbiamo preso un taxi.", "es": "Como el tren estaba atrasado, tomamos un taxi." },
+        { "target": "Grazie al tuo aiuto ho finito in tempo.", "es": "Gracias a tu ayuda terminé a tiempo." },
+        { "target": "Il progetto costava troppo, perciò è stato abbandonato.", "es": "El proyecto costaba demasiado, por eso lo abandonaron." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Grazie allo sciopero, siamo arrivati tardi.", "right": "A causa dello sciopero, siamo arrivati tardi.", "why": "Grazie a se usa para causas positivas; para las negativas, a causa di." },
+        { "wrong": "Siamo rimasti a casa siccome pioveva.", "right": "Siccome pioveva, siamo rimasti a casa.", "why": "En el italiano cuidado siccome va al principio; si la causa va al final, usá perché o poiché." }
+      ]
+    },
+    {
+      "id": "concessione-contrasto",
+      "day": 2,
+      "title": "Concesión y contraste",
+      "goal": "Expresar concesión y contraste eligiendo bien el modo verbal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Con congiuntivo: benché, sebbene, nonostante, malgrado, per quanto: Nonostante fosse tardi, siamo usciti.",
+        "Con indicativo: anche se: Anche se è tardi, esco. Ojo: el 'aunque' del español va con los dos modos; benché siempre con congiuntivo, anche se con indicativo.",
+        "Con sustantivo: nonostante o malgrado + sustantivo (Nonostante la pioggia…). Con gerundio: pur + gerundio (Pur essendo stanco, è venuto).",
+        "Contraste: ma, però, tuttavia, eppure (y sin embargo), invece, mentre (en cambio), al contrario."
+      ],
+      "examples": [
+        { "target": "Pur non avendo esperienza, l'hanno assunto.", "es": "Aunque no tenía experiencia, lo contrataron." },
+        { "target": "Nonostante la crisi, l'azienda ha aumentato le vendite.", "es": "A pesar de la crisis, la empresa aumentó las ventas." },
+        { "target": "Io sono stanchissimo, mentre lei è piena di energia.", "es": "Yo estoy cansadísimo, mientras que ella tiene muchísima energía." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Anche se sia tardi, esco.", "right": "Anche se è tardi, esco.", "why": "Anche se va con indicativo; si querés congiuntivo, usá benché o sebbene." },
+        { "wrong": "Nonostante è tardi, esco.", "right": "Nonostante sia tardi, esco.", "why": "Nonostante seguido de un verbo pide congiuntivo." }
+      ]
+    },
+    {
+      "id": "fine-condizione",
+      "day": 3,
+      "title": "Finalidad y condición",
+      "goal": "Expresar finalidad y condición con infinitivo o congiuntivo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Finalidad: per, al fine di, allo scopo di, in modo da + infinitivo (mismo sujeto); perché, affinché, in modo che + congiuntivo (sujeto distinto).",
+        "Condición con congiuntivo: a condizione che, purché, a patto che, qualora, nel caso in cui, a meno che (non).",
+        "El non después de a meno che es expletivo, no niega nada: Esco, a meno che non piova (salgo, a menos que llueva).",
+        "Purché equivale a 'siempre que' en sentido de condición: Puoi uscire, purché torni presto."
+      ],
+      "examples": [
+        { "target": "Ti lascio le chiavi affinché tu possa entrare.", "es": "Te dejo las llaves para que puedas entrar." },
+        { "target": "Puoi usare la mia macchina, purché tu la riporti entro sera.", "es": "Podés usar mi auto, siempre que me lo devuelvas antes de la noche." },
+        { "target": "Partiamo domani, a meno che non ci sia sciopero.", "es": "Salimos mañana, a menos que haya paro." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ti chiamo per che tu lo sappia.", "right": "Ti chiamo perché tu lo sappia.", "why": "'Para que' se dice perché o affinché + congiuntivo, en una sola palabra." },
+        { "wrong": "Partiamo, a meno che piove.", "right": "Partiamo, a meno che non piova.", "why": "A meno che pide congiuntivo y suele llevar un non que no niega." }
+      ]
+    },
+    {
+      "id": "coesione",
+      "day": 4,
+      "title": "Cohesión: referencias, sinónimos y nominalizaciones",
+      "goal": "Dar cohesión a un texto sin repetir palabras.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Evitá repetir con pronombres (lo, ne, ci), con demostrativos (quest'ultimo, il primo… il secondo) y con sinónimos: il presidente della Repubblica → il capo dello Stato.",
+        "La nominalización compacta el texto: Il governo ha deciso di aumentare le tasse → La decisione del governo di aumentare le tasse…",
+        "Ordená el texto: innanzitutto, in primo luogo, in secondo luogo, inoltre, infine, in conclusione.",
+        "Reformulá y ejemplificá: cioè, ossia, vale a dire, in altre parole, per esempio, tra cui."
+      ],
+      "examples": [
+        { "target": "Ho parlato con Marco e Luca: quest'ultimo era d'accordo.", "es": "Hablé con Marco y Luca: este último estaba de acuerdo." },
+        { "target": "L'aumento dei prezzi ha causato molte proteste.", "es": "El aumento de los precios provocó muchas protestas." },
+        { "target": "Il problema, vale a dire la mancanza di fondi, resta irrisolto.", "es": "El problema, es decir, la falta de fondos, sigue sin resolverse." }
+      ],
+      "commonMistakes": [
+        { "wrong": "In primer luogo, bisogna dire che…", "right": "In primo luogo, bisogna dire che…", "why": "'En primer lugar' se dice in primo luogo: primer no existe en italiano." }
+      ]
+    },
+    {
+      "id": "testo-argomentativo",
+      "day": 5,
+      "title": "Texto argumentativo",
+      "goal": "Comprender y escribir un texto argumentativo breve sobre un tema actual.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura: tesis (Ritengo che…), argumentos (In primo luogo…, Inoltre…), contraargumento (È vero che…, tuttavia…) y conclusión (In conclusione…, Per questi motivi…).",
+        "Para opinar con distancia: A mio avviso, Dal mio punto di vista, Si potrebbe obiettare che…",
+        "Cuidá el congiuntivo después de ritengo che, è probabile che, sebbene, y la concordancia de tiempos."
+      ],
+      "examples": [
+        { "target": "A mio avviso, lo smart working ha più vantaggi che svantaggi.", "es": "En mi opinión, el trabajo remoto tiene más ventajas que desventajas." },
+        { "target": "È vero che si risparmia tempo; tuttavia, si rischia l'isolamento.", "es": "Es cierto que se ahorra tiempo; sin embargo, se corre el riesgo de aislarse." },
+        { "target": "Per questi motivi, ritengo che sia necessario un equilibrio.", "es": "Por estos motivos, considero que hace falta un equilibrio." }
+      ],
+      "commonMistakes": [
+        { "wrong": "A mio aviso, è una buona idea.", "right": "A mio avviso, è una buona idea.", "why": "Avviso lleva doble v." },
+        { "wrong": "Ritengo che è necessario un equilibrio.", "right": "Ritengo che sia necessario un equilibrio.", "why": "Ritenere che, como pensare che, pide congiuntivo." }
+      ]
+    }
+  ]
+}

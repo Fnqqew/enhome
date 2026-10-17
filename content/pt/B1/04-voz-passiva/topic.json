@@ -1,0 +1,128 @@
+{
+  "id": "pt-b1-voz-passiva",
+  "level": "B1",
+  "order": 4,
+  "title": "Voz pasiva y se",
+  "targetTitle": "Voz passiva e partícula se",
+  "description": "Cómo contar qué se hace sin decir quién lo hace: foi construído, vende-se, alugam-se, a gente. Incluye la diferencia entre lo que pide la norma y lo que se ve en los carteles de la calle.",
+  "objectives": [
+    "Formar la voz pasiva con ser + participio",
+    "Usar los participios dobles (aceito, entregue, preso)",
+    "Usar el se pasivo con concordancia (vendem-se casas)",
+    "Expresar sujeto indeterminado con precisa-se de, eles y a gente",
+    "Leer y escribir avisos clasificados y noticias breves"
+  ],
+  "prerequisites": ["pt-a2-preterito-perfeito", "pt-b1-mais-que-perfeito"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "passiva-ser",
+      "day": 1,
+      "title": "Pasiva con ser",
+      "goal": "Formar la voz pasiva con ser + participio.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "ser + participio + por: O livro foi escrito por Jorge Amado.",
+        "El participio concuerda con el sujeto: A ponte foi construída. Os prédios foram construídos.",
+        "por + artículo se contrae: pelo, pela, pelos, pelas.",
+        "Es típica de noticias y textos formales; al hablar se prefiere la activa."
+      ],
+      "examples": [
+        { "target": "A casa foi construída em 1920.", "es": "La casa fue construida en 1920." },
+        { "target": "Os ingressos foram vendidos em duas horas.", "es": "Las entradas se vendieron en dos horas." },
+        { "target": "Esse quadro foi pintado pela Tarsila do Amaral.", "es": "Ese cuadro fue pintado por Tarsila do Amaral." }
+      ],
+      "commonMistakes": [
+        { "wrong": "O livro foi escrito por o autor.", "right": "O livro foi escrito pelo autor.", "why": "por + o se contrae en pelo, y por + a en pela." },
+        { "wrong": "As cartas foram enviado ontem.", "right": "As cartas foram enviadas ontem.", "why": "En la pasiva con ser el participio concuerda en género y número con el sujeto." }
+      ]
+    },
+    {
+      "id": "participios-duplos",
+      "day": 2,
+      "title": "Participios dobles",
+      "goal": "Elegir el participio correcto con ter y con ser.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Algunos verbos tienen dos participios: el regular va con ter y el irregular, con ser o estar.",
+        "aceitar: tinha aceitado / foi aceito. entregar: tinha entregado / foi entregue. eleger: tinha elegido / foi eleito.",
+        "prender: tinha prendido / foi preso. imprimir: tinha imprimido / foi impresso. matar: tinha matado / foi morto.",
+        "Ganho, gasto y pago se usan con los dos en Brasil: tinha pago, foi pago."
+      ],
+      "examples": [
+        { "target": "A proposta foi aceita pela diretoria.", "es": "La propuesta fue aceptada por la dirección." },
+        { "target": "A encomenda foi entregue ontem.", "es": "El paquete fue entregado ayer." },
+        { "target": "O deputado foi eleito com muitos votos.", "es": "El diputado fue elegido con muchos votos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "O ladrão foi prendido.", "right": "O ladrão foi preso.", "why": "Con ser se usa el participio irregular: preso." },
+        { "wrong": "A encomenda foi entregada.", "right": "A encomenda foi entregue.", "why": "El participio de entregar con ser es entregue, que sirve para masculino y femenino." }
+      ]
+    },
+    {
+      "id": "se-apassivador",
+      "day": 3,
+      "title": "Vende-se, alugam-se",
+      "goal": "Usar el se pasivo con la concordancia de la norma.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Verbo + se + sustantivo: el verbo concuerda con el sustantivo. Vende-se uma casa. Vendem-se casas.",
+        "En lo escrito, el pronombre va después del verbo con guion: Aluga-se, Conserta-se.",
+        "En la charla y en muchos carteles vas a ver Aluga-se quartos o Se vende carro; en un texto cuidado escribí Alugam-se quartos.",
+        "Equivale a la pasiva con ser: Vendem-se casas = Casas são vendidas."
+      ],
+      "examples": [
+        { "target": "Alugam-se apartamentos mobiliados.", "es": "Se alquilan departamentos amoblados." },
+        { "target": "Consertam-se celulares.", "es": "Se arreglan celulares." },
+        { "target": "Ouviu-se um barulho estranho.", "es": "Se oyó un ruido raro." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Aluga-se quartos.", "right": "Alugam-se quartos.", "why": "Según la norma, quartos es el sujeto y el verbo va en plural. La forma en singular es muy común en la calle, pero evitala al escribir." },
+        { "wrong": "Se vende carro.", "right": "Vende-se carro.", "why": "En lo escrito la oración no empieza con pronombre: va vende-se." }
+      ]
+    },
+    {
+      "id": "sujeito-indeterminado",
+      "day": 4,
+      "title": "Sujeto indeterminado",
+      "goal": "Hablar de lo que hace la gente en general sin nombrar a nadie.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con verbo + preposición, el se no concuerda: Precisa-se de vendedores. Trata-se de problemas sérios.",
+        "Tercera persona plural sin sujeto: Disseram que vai chover. Roubaram meu celular.",
+        "En la charla, a gente y você sirven para hablar de todos: No Brasil a gente almoça cedo. Aqui você encontra de tudo.",
+        "El 'uno' impersonal del español no se traduce como um: se dice a gente o você."
+      ],
+      "examples": [
+        { "target": "Precisa-se de garçons.", "es": "Se necesitan mozos." },
+        { "target": "Disseram que a loja vai fechar.", "es": "Dijeron que el negocio va a cerrar." },
+        { "target": "Em São Paulo você come bem a qualquer hora.", "es": "En San Pablo se come bien a cualquier hora." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Precisam-se de funcionários.", "right": "Precisa-se de funcionários.", "why": "Con preposición (precisar de) el se es impersonal y el verbo queda en singular." },
+        { "wrong": "Um nunca sabe o que vai acontecer.", "right": "A gente nunca sabe o que vai acontecer.", "why": "El 'uno' impersonal del español se dice a gente o você en portugués." }
+      ]
+    },
+    {
+      "id": "anuncios-noticias",
+      "day": 5,
+      "title": "Clasificados y noticias",
+      "goal": "Comprender y escribir un aviso clasificado y una noticia breve.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "En los clasificados: Aluga-se, Vende-se, Precisa-se de, Contrata-se, Tratar com... (comunicarse con).",
+        "En Brasil los departamentos se describen por dormitorios: apartamento de dois quartos, com suíte, com vaga de garagem.",
+        "En las noticias: foi preso, foram registrados, foi inaugurado, segundo a polícia."
+      ],
+      "examples": [
+        { "target": "Aluga-se apartamento de dois quartos perto do metrô.", "es": "Se alquila departamento de tres ambientes cerca del subte." },
+        { "target": "Foram registrados mais de cem acidentes no feriado.", "es": "Se registraron más de cien accidentes durante el feriado." },
+        { "target": "Precisa-se de recepcionista com inglês fluente.", "es": "Se busca recepcionista con inglés fluido." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Aluga-se departamento de três ambientes.", "right": "Aluga-se apartamento de dois quartos.", "why": "En Brasil se dice apartamento y se cuentan los dormitorios (quartos), no los ambientes." },
+        { "wrong": "Se busca vendedor.", "right": "Precisa-se de vendedor.", "why": "En los avisos de trabajo se usa precisa-se de o contrata-se; 'se busca' es español." }
+      ]
+    }
+  ]
+}

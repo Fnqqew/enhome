@@ -1,0 +1,127 @@
+{
+  "id": "fr-b2-subjonctif-passe",
+  "level": "B2",
+  "order": 1,
+  "title": "Subjuntivo pasado",
+  "targetTitle": "Le subjonctif passé",
+  "description": "El subjuntivo de las acciones terminadas: que tu aies fini, qu'elle soit partie. Aprendé a formarlo, a elegir entre presente y pasado, y a usarlo en relativas y después de superlativos, donde el español no lo usa.",
+  "objectives": [
+    "Formar el subjonctif passé con avoir o être",
+    "Elegir entre subjonctif présent y passé según la anterioridad",
+    "Usarlo después de emociones, dudas y conjunciones",
+    "Usar el subjuntivo en relativas y después de superlativos",
+    "Escribir mensajes para felicitar, agradecer o lamentar algo"
+  ],
+  "prerequisites": ["fr-b1-subjonctif-present"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formation-subj-passe",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el subjonctif passé con el subjuntivo de avoir o être y el participio.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con avoir: que j'aie fini, que tu aies fini, qu'il ait fini, que nous ayons fini, que vous ayez fini, qu'ils aient fini.",
+        "Con être: que je sois parti(e), qu'elle soit arrivée, qu'ils se soient trompés.",
+        "Las reglas del auxiliar y de la concordancia son las mismas del passé composé.",
+        "Aie, aies y ait suenan igual: 'e'. La diferencia está solo en la escritura."
+      ],
+      "examples": [
+        { "target": "Je suis content que tu aies réussi ton examen.", "es": "Me alegra que hayas aprobado el examen." },
+        { "target": "Il est possible qu'elle soit déjà partie.", "es": "Es posible que ya se haya ido." },
+        { "target": "Je ne crois pas qu'ils aient compris.", "es": "No creo que hayan entendido." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je suis content que tu as réussi.", "right": "Je suis content que tu aies réussi.", "why": "Después de una emoción va subjuntivo; para una acción terminada, el subjonctif passé." },
+        { "wrong": "Il est possible qu'elle ait partie.", "right": "Il est possible qu'elle soit partie.", "why": "Partir usa être también en el subjuntivo pasado, y el participio concuerda." }
+      ]
+    },
+    {
+      "id": "present-ou-passe",
+      "day": 2,
+      "title": "Presente o pasado",
+      "goal": "Elegir entre subjonctif présent y passé según el momento de la acción.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Subjonctif présent: la acción es simultánea o posterior al verbo principal. Je suis content que tu viennes (que vengas).",
+        "Subjonctif passé: la acción es anterior. Je suis content que tu sois venu (que hayas venido).",
+        "El tiempo del verbo principal no cambia la elección: J'étais content que tu viennes. El francés actual no usa el imperfecto del subjuntivo ('vinieras'), que es solo literario.",
+        "Por eso 'me alegró que vinieras' se dice J'étais content que tu viennes (o que tu sois venu, si ya habías llegado)."
+      ],
+      "examples": [
+        { "target": "Je regrette que tu ne sois pas venu hier.", "es": "Lamento que no hayas venido ayer." },
+        { "target": "Il faut que tu aies terminé avant lundi.", "es": "Tenés que haber terminado antes del lunes." },
+        { "target": "J'avais peur qu'il se perde.", "es": "Tenía miedo de que se perdiera." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'étais content que tu venais.", "right": "J'étais content que tu viennes.", "why": "El 'vinieras' del español no se traduce con imparfait: en francés va el subjonctif présent." }
+      ]
+    },
+    {
+      "id": "subj-emotions-conjonctions",
+      "day": 3,
+      "title": "Después de emociones y conjunciones",
+      "goal": "Usar el subjonctif passé después de emociones, dudas y conjunciones.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Emociones y juicios sobre algo ya pasado: Je suis désolé que tu aies attendu. C'est dommage qu'il ait plu.",
+        "Duda sobre el pasado: Je doute qu'il ait dit la vérité.",
+        "Conjunciones con un hecho anterior: Bien qu'il ait beaucoup étudié, il n'a pas réussi. Attends jusqu'à ce que j'aie fini.",
+        "Après que lleva indicativo en la norma: après qu'il est parti. El subjuntivo ahí es muy frecuente al hablar, pero se considera un error."
+      ],
+      "examples": [
+        { "target": "C'est dommage que vous ayez raté le début du film.", "es": "Es una lástima que se hayan perdido el principio de la película." },
+        { "target": "Bien qu'il ait beaucoup étudié, il n'a pas réussi.", "es": "Aunque estudió mucho, no aprobó." },
+        { "target": "Attends-moi jusqu'à ce que j'aie fini.", "es": "Esperame hasta que haya terminado." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Bien qu'il a beaucoup étudié, il n'a pas réussi.", "right": "Bien qu'il ait beaucoup étudié, il n'a pas réussi.", "why": "Bien que lleva subjuntivo aunque el hecho sea real: 'aunque estudió' se dice bien qu'il ait étudié." },
+        { "wrong": "Après qu'il soit parti, on a dîné.", "right": "Après qu'il est parti, on a dîné.", "why": "En la norma, après que lleva indicativo." }
+      ]
+    },
+    {
+      "id": "relatives-superlatifs",
+      "day": 4,
+      "title": "Relativas y superlativos",
+      "goal": "Usar el subjuntivo en relativas de búsqueda o negación y después de superlativos.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "En una relativa sobre algo que buscás y no sabés si existe va subjuntivo: Je cherche un appartement qui soit calme. Si ya lo encontraste: J'ai trouvé un appartement qui est calme.",
+        "Después de il n'y a personne qui, il n'y a rien qui, je ne connais personne qui: Il n'y a personne qui puisse m'aider.",
+        "Después de un superlativo o de le seul, le premier, le dernier, l'unique: C'est le meilleur film que j'aie vu.",
+        "El español usa subjuntivo en los dos primeros casos ('busco un depto que sea tranquilo'), pero no con los superlativos ('la mejor película que vi')."
+      ],
+      "examples": [
+        { "target": "Je cherche quelqu'un qui sache parler japonais.", "es": "Busco a alguien que sepa hablar japonés." },
+        { "target": "C'est le plus beau voyage que j'aie jamais fait.", "es": "Es el viaje más lindo que hice en mi vida." },
+        { "target": "Il n'y a rien qui puisse le faire changer d'avis.", "es": "No hay nada que lo pueda hacer cambiar de opinión." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il n'y a personne qui peut m'aider.", "right": "Il n'y a personne qui puisse m'aider.", "why": "Después de il n'y a personne qui va subjuntivo, igual que 'no hay nadie que pueda'." }
+      ]
+    },
+    {
+      "id": "messages-sentiments",
+      "day": 5,
+      "title": "Felicitar, agradecer, lamentar",
+      "goal": "Comprender y escribir mensajes para felicitar, agradecer o expresar pesar.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Felicitar: Je suis ravi(e) que tu aies obtenu ce poste. Félicitations pour ton diplôme !",
+        "Agradecer con de + infinitivo pasado: Merci d'être venu(e). Je te remercie de m'avoir aidé(e).",
+        "Lamentar: Je suis désolé(e) que tu aies eu ce problème. Je regrette de ne pas avoir pu venir.",
+        "Con el mismo sujeto, de + infinitivo pasado (avoir o être + participio): Je suis content d'avoir fini."
+      ],
+      "examples": [
+        { "target": "Je suis ravie que tu aies trouvé un travail qui te plaise.", "es": "Estoy feliz de que hayas encontrado un trabajo que te guste." },
+        { "target": "Merci de m'avoir aidé à déménager.", "es": "Gracias por haberme ayudado con la mudanza." },
+        { "target": "Je regrette de ne pas avoir pu venir à ta fête.", "es": "Lamento no haber podido ir a tu fiesta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Merci pour m'avoir aidé.", "right": "Merci de m'avoir aidé.", "why": "Delante de un infinitivo, merci va con de, aunque en español digas 'gracias por'." },
+        { "wrong": "Je regrette de ne pas pouvoir venir hier.", "right": "Je regrette de ne pas avoir pu venir hier.", "why": "Para algo ya pasado se usa el infinitivo pasado: ne pas avoir pu." }
+      ]
+    }
+  ]
+}

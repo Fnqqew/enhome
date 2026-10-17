@@ -1,0 +1,129 @@
+{
+  "id": "fr-b2-relatifs-composes",
+  "level": "B2",
+  "order": 3,
+  "title": "Relativos compuestos",
+  "targetTitle": "Les pronoms relatifs composés",
+  "description": "Lequel, auquel, duquel y sus variantes: los relativos que van después de una preposición. Son el equivalente de 'el cual', 'al cual' y 'del cual', y en francés son obligatorios donde el español dice 'con el que' o 'para la que'.",
+  "objectives": [
+    "Usar lequel, laquelle, lesquels y lesquelles después de una preposición",
+    "Contraer con à y de: auquel, duquel y sus formas",
+    "Elegir entre qui y lequel para personas",
+    "Distinguir dont de duquel",
+    "Escribir un texto formal con relativos compuestos y con ce dont, ce à quoi"
+  ],
+  "prerequisites": ["fr-b1-passif-relatifs"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "lequel",
+      "day": 1,
+      "title": "Lequel y sus formas",
+      "goal": "Usar lequel, laquelle, lesquels y lesquelles después de una preposición.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Concuerda con el antecedente: lequel (masculino singular), laquelle (femenino singular), lesquels (masculino plural), lesquelles (femenino plural).",
+        "Va después de preposiciones como avec, pour, sans, sur, sous, dans, par, entre: la table sur laquelle j'ai posé mes clés.",
+        "Equivale a 'el cual' o a 'el que' con preposición: le stylo avec lequel j'écris (la lapicera con la que escribo).",
+        "Después de una preposición nunca va que: l'entreprise pour laquelle je travaille, no pour que je travaille."
+      ],
+      "examples": [
+        { "target": "C'est la raison pour laquelle je suis parti.", "es": "Es la razón por la que me fui." },
+        { "target": "Voici l'ordinateur avec lequel je travaille.", "es": "Esta es la computadora con la que trabajo." },
+        { "target": "Le projet sur lequel je travaille est passionnant.", "es": "El proyecto en el que estoy trabajando es apasionante." }
+      ],
+      "commonMistakes": [
+        { "wrong": "L'entreprise pour que je travaille est à Lyon.", "right": "L'entreprise pour laquelle je travaille est à Lyon.", "why": "Después de una preposición no se usa que: va lequel, laquelle, lesquels o lesquelles." },
+        { "wrong": "La raison pour lequel je pars.", "right": "La raison pour laquelle je pars.", "why": "Raison es femenino, así que va laquelle." }
+      ]
+    },
+    {
+      "id": "auquel-duquel",
+      "day": 2,
+      "title": "Auquel y duquel",
+      "goal": "Contraer lequel con à y con de.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "à + lequel = auquel, à + lesquels = auxquels, à + lesquelles = auxquelles; à laquelle no cambia.",
+        "Se usan con verbos que llevan à: penser à, s'intéresser à, participer à, assister à, répondre à: le concours auquel j'ai participé.",
+        "de + lequel = duquel, de + lesquels = desquels, de + lesquelles = desquelles; de laquelle no cambia.",
+        "Duquel aparece sobre todo después de locuciones con de: près de, à côté de, au milieu de, à cause de, au bord de: le lac au bord duquel nous avons dîné."
+      ],
+      "examples": [
+        { "target": "C'est un problème auquel je n'avais pas pensé.", "es": "Es un problema en el que no había pensado." },
+        { "target": "Les réunions auxquelles j'assiste sont trop longues.", "es": "Las reuniones a las que asisto son demasiado largas." },
+        { "target": "Le parc près duquel j'habite est immense.", "es": "El parque cerca del cual vivo es inmenso." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le film à lequel je pense.", "right": "Le film auquel je pense.", "why": "À + lequel se contrae siempre en auquel, como à + le en au." },
+        { "wrong": "Le restaurant à côté de lequel j'habite.", "right": "Le restaurant à côté duquel j'habite.", "why": "De + lequel se contrae en duquel." }
+      ]
+    },
+    {
+      "id": "qui-ou-lequel",
+      "day": 3,
+      "title": "Qui o lequel con personas",
+      "goal": "Elegir entre preposición + qui y preposición + lequel.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Para personas, después de una preposición se prefiere qui: la personne avec qui je travaille, l'ami à qui j'ai prêté mon vélo.",
+        "Lequel también es posible con personas (la personne avec laquelle…), pero suena más formal.",
+        "Para cosas, nunca qui: la table sur laquelle…, no sur qui.",
+        "Después de parmi y entre se usa lequel también para personas: les candidats parmi lesquels…"
+      ],
+      "examples": [
+        { "target": "La femme à qui j'ai parlé est avocate.", "es": "La mujer con la que hablé es abogada." },
+        { "target": "C'est le collègue avec qui je partage mon bureau.", "es": "Es el compañero con quien comparto la oficina." },
+        { "target": "Il y avait vingt candidats, parmi lesquels trois Argentins.", "es": "Había veinte candidatos, entre ellos tres argentinos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "La table sur qui j'ai posé le livre.", "right": "La table sur laquelle j'ai posé le livre.", "why": "Qui después de una preposición solo se usa para personas." },
+        { "wrong": "Les invités parmi qui il y avait ton frère.", "right": "Les invités parmi lesquels il y avait ton frère.", "why": "Después de parmi se usa lesquels, aunque se trate de personas." }
+      ]
+    },
+    {
+      "id": "dont-ou-duquel",
+      "day": 4,
+      "title": "Dont o duquel",
+      "goal": "Distinguir dont de duquel y de de qui.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Dont reemplaza un complemento con de que depende directamente del verbo o del sustantivo: le livre dont je parle, l'homme dont la fille est médecin.",
+        "Duquel, o de qui para personas, se usa cuando de forma parte de una locución: au milieu duquel, à côté de qui, à cause duquel.",
+        "Con dont no se repite el posesivo: l'homme dont la fille…, nunca l'homme dont sa fille.",
+        "Después de una locución con de nunca va dont: no se dice le parc près dont j'habite."
+      ],
+      "examples": [
+        { "target": "Voici le collègue dont je t'ai parlé.", "es": "Este es el compañero del que te hablé." },
+        { "target": "C'est une maison au milieu de laquelle il y a un patio.", "es": "Es una casa en medio de la cual hay un patio." },
+        { "target": "La personne à côté de qui je me suis assis était très bavarde.", "es": "La persona al lado de la cual me senté era muy charlatana." }
+      ],
+      "commonMistakes": [
+        { "wrong": "L'homme dont sa fille est médecin.", "right": "L'homme dont la fille est médecin.", "why": "Dont ya expresa la posesión, como 'cuyo': no se agrega sa." },
+        { "wrong": "Le parc près dont j'habite.", "right": "Le parc près duquel j'habite.", "why": "Después de una locución con de se usa duquel, no dont." }
+      ]
+    },
+    {
+      "id": "texte-formel-relatifs",
+      "day": 5,
+      "title": "Escribir con precisión",
+      "goal": "Comprender y escribir la presentación formal de un proyecto con relativos compuestos.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Los relativos compuestos son típicos de la escritura formal: informes, cartas, presentaciones de proyectos.",
+        "Expresiones fijas: la raison pour laquelle, les conditions dans lesquelles, la façon dont, le moment où.",
+        "Ce dont y ce à quoi sirven para ideas: Ce dont nous avons besoin, c'est de temps. Ce à quoi je pense, c'est à l'avenir.",
+        "Evitá encadenar más de dos relativos en la misma oración."
+      ],
+      "examples": [
+        { "target": "C'est la raison pour laquelle nous avons créé cette association.", "es": "Es la razón por la que creamos esta asociación." },
+        { "target": "Ce dont nous avons besoin, c'est de bénévoles.", "es": "Lo que necesitamos son voluntarios." },
+        { "target": "Les conditions dans lesquelles ils travaillent sont difficiles.", "es": "Las condiciones en las que trabajan son difíciles." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ce que j'ai besoin, c'est de temps.", "right": "Ce dont j'ai besoin, c'est de temps.", "why": "Avoir besoin lleva de, así que 'lo que necesito' es ce dont j'ai besoin." },
+        { "wrong": "La façon que tu parles me plaît.", "right": "La façon dont tu parles me plaît.", "why": "Después de façon y manière se usa dont." }
+      ]
+    }
+  ]
+}

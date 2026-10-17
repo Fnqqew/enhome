@@ -1,0 +1,128 @@
+{
+  "id": "it-b2-registro-formale",
+  "level": "B2",
+  "order": 5,
+  "title": "Registro formal",
+  "targetTitle": "Il registro formale",
+  "description": "Cómo escribir y hablar en situaciones formales: el Lei en todas sus formas, la estructura de un mail o una carta, las fórmulas de cortesía y los conectores del registro cuidado.",
+  "objectives": [
+    "Usar el Lei de forma coherente en verbos, pronombres, posesivos e imperativo",
+    "Estructurar un mail o una carta formal",
+    "Usar fórmulas de cortesía para pedir, agradecer y disculparte",
+    "Usar conectores propios del registro formal",
+    "Escribir un mail formal para pedir información o hacer un reclamo"
+  ],
+  "prerequisites": ["it-b1-congiuntivo-presente", "it-b2-forme-implicite"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "lei-coerente",
+      "day": 1,
+      "title": "El Lei de punta a punta",
+      "goal": "Usar el Lei de forma coherente en toda la oración.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con Lei, el verbo va en tercera persona (Lei è, Lei ha), el pronombre directo es La, el indirecto es Le y el posesivo es Suo.",
+        "Los adjetivos y participios concuerdan con la persona real: a una mujer, Lei è stata molto gentile; a un hombre, Lei è stato molto chiaro.",
+        "El imperativo formal usa el congiuntivo: Si accomodi, Mi scusi, Mi dica, Non si preoccupi.",
+        "En las cartas son frecuentes las mayúsculas de cortesía (La, Le, Suo), aunque son opcionales: La ringrazio per la Sua risposta.",
+        "Para varias personas, en el registro formal de hoy se usa voi: Vi ringraziamo per la pazienza."
+      ],
+      "examples": [
+        { "target": "La ringrazio per la Sua disponibilità.", "es": "Le agradezco su disponibilidad." },
+        { "target": "Le invio in allegato il documento richiesto.", "es": "Le envío adjunto el documento solicitado." },
+        { "target": "Non si preoccupi, ci penso io.", "es": "No se preocupe, yo me encargo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le ringrazio per la Sua risposta.", "right": "La ringrazio per la Sua risposta.", "why": "Ringraziare lleva objeto directo (ringraziare qualcuno), así que el pronombre es La, aunque en español digamos 'le agradezco'." },
+        { "wrong": "Senti, signora, posso farLe una domanda?", "right": "Senta, signora, posso farLe una domanda?", "why": "Con Lei el imperativo es el formal: senta, scusi, venga." }
+      ]
+    },
+    {
+      "id": "struttura-email",
+      "day": 2,
+      "title": "La estructura de un mail formal",
+      "goal": "Abrir, desarrollar y cerrar un mail o una carta formal.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Encabezado: Gentile signora Rossi, Gentile dottor Bianchi, Egregio direttore, Spettabile ditta (para empresas, abreviado Spett.le).",
+        "Apertura: Le scrivo per…, Le scrivo in merito a…, Con riferimento alla Sua email del 3 marzo…",
+        "Cierre: In attesa di un Suo cortese riscontro, Le porgo distinti saluti. Más simple: Cordiali saluti.",
+        "Gentile sirve para cualquiera; Egregio es muy formal y se usa sobre todo con hombres; Caro, solo con gente de confianza."
+      ],
+      "examples": [
+        { "target": "Gentile dottoressa Ferri, Le scrivo in merito al corso di giugno.", "es": "Estimada doctora Ferri: le escribo en relación con el curso de junio." },
+        { "target": "Con riferimento alla Sua email del 5 maggio, Le confermo la prenotazione.", "es": "En relación con su mail del 5 de mayo, le confirmo la reserva." },
+        { "target": "In attesa di un Suo riscontro, Le porgo cordiali saluti.", "es": "A la espera de su respuesta, la saludo cordialmente." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Estimata signora Rossi,", "right": "Gentile signora Rossi,", "why": "Estimata no existe: el encabezado formal más común es gentile." },
+        { "wrong": "Cara dottoressa Ferri, (a una desconocida)", "right": "Gentile dottoressa Ferri,", "why": "Caro se usa solo con personas de confianza; con desconocidos, gentile." }
+      ]
+    },
+    {
+      "id": "formule-cortesia",
+      "day": 3,
+      "title": "Fórmulas para pedir, agradecer y disculparte",
+      "goal": "Pedir, agradecer y disculparte con cortesía en el registro formal.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Pedir: Le sarei grato (o grata) se potesse…, Potrebbe cortesemente…?, Vorrei chiederLe se…",
+        "Agradecer: La ringrazio per…, Grazie per la Sua disponibilità, Le sono molto grato per…",
+        "Disculparte: Mi scuso per il ritardo, Ci scusiamo per il disagio (pedimos disculpas por las molestias).",
+        "El condizionale y el congiuntivo suavizan: Sarebbe possibile…? Le chiederei di… Se fosse possibile…"
+      ],
+      "examples": [
+        { "target": "Le sarei grata se potesse inviarmi il programma.", "es": "Le agradecería que me pudiera enviar el programa." },
+        { "target": "Potrebbe cortesemente indicarmi gli orari?", "es": "¿Podría indicarme los horarios, por favor?" },
+        { "target": "Ci scusiamo per il disagio.", "es": "Pedimos disculpas por las molestias." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Le sarei grato se può inviarmi il programma.", "right": "Le sarei grato se potesse inviarmi il programma.", "why": "Con un condicional en la otra parte, después de se va el congiuntivo imperfetto: se potesse." },
+        { "wrong": "Mi scuso per la molestia.", "right": "Mi scuso per il disturbo.", "why": "Molestia en italiano se usa sobre todo para el acoso; 'las molestias' son il disturbo o il disagio." }
+      ]
+    },
+    {
+      "id": "connettivi-formali",
+      "day": 4,
+      "title": "Conectores del registro formal",
+      "goal": "Usar conectores propios de la escritura formal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Para introducir un tema: in merito a, per quanto riguarda, riguardo a, con riferimento a, quanto a.",
+        "Para agregar y concluir: inoltre, altresì (muy formal), infine, pertanto (por lo tanto), quindi.",
+        "Para causa y contraste: poiché, dato che, in quanto; tuttavia, ciononostante, benché + congiuntivo.",
+        "Para finalidad y condición: al fine di + infinitivo, affinché + congiuntivo, qualora + congiuntivo."
+      ],
+      "examples": [
+        { "target": "Per quanto riguarda il pagamento, può effettuarlo tramite bonifico.", "es": "En cuanto al pago, puede hacerlo por transferencia." },
+        { "target": "Il volo è stato cancellato; pertanto, Le offriamo un rimborso.", "es": "El vuelo fue cancelado; por lo tanto, le ofrecemos un reembolso." },
+        { "target": "Qualora avesse bisogno di ulteriori informazioni, non esiti a contattarci.", "es": "Si necesitara más información, no dude en contactarnos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "In quanto al pagamento, può pagare con bonifico.", "right": "Quanto al pagamento, può pagare con bonifico.", "why": "'En cuanto a' se dice quanto a o per quanto riguarda; in quanto significa 'porque' o 'en calidad de'." }
+      ]
+    },
+    {
+      "id": "email-formale",
+      "day": 5,
+      "title": "Escribir un mail formal",
+      "goal": "Comprender y escribir un mail formal para pedir información o hacer un reclamo.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Orden: encabezado, motivo (Le scrivo per…), detalles, pedido concreto, cierre y firma.",
+        "Para un reclamo: Desidero segnalare che…, Purtroppo…, Chiedo pertanto che… + congiuntivo.",
+        "Antes de enviarlo, revisá que todo esté en Lei: Lei, La, Le, Suo y el imperativo formal."
+      ],
+      "examples": [
+        { "target": "Desidero segnalare che il pacco è arrivato danneggiato.", "es": "Quiero informar que el paquete llegó dañado." },
+        { "target": "Chiedo pertanto che mi venga inviato un nuovo prodotto.", "es": "Pido, por lo tanto, que se me envíe un producto nuevo." },
+        { "target": "Resto in attesa di una Sua risposta.", "es": "Quedo a la espera de su respuesta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Resto alla espera di una Sua risposta.", "right": "Resto in attesa di una Sua risposta.", "why": "'A la espera de' se dice in attesa di." },
+        { "wrong": "Gentile signor Rossi, ti scrivo per…", "right": "Gentile signor Rossi, Le scrivo per…", "why": "En un mail formal todo va en Lei: Le scrivo, no ti scrivo." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "pt-b1-mais-que-perfeito",
+  "level": "B1",
+  "order": 2,
+  "title": "Pluscuamperfecto",
+  "targetTitle": "Pretérito mais-que-perfeito",
+  "description": "El pasado del pasado: lo que ya había pasado cuando pasó otra cosa. Al hablar se usa la forma compuesta (tinha feito); en libros y diarios aparece también la forma simple (fizera).",
+  "objectives": [
+    "Formar el mais-que-perfeito composto con tinha + participio",
+    "Usar los participios irregulares más frecuentes",
+    "Reconocer la forma simple (falara, fizera) en textos escritos",
+    "Ordenar hechos en el pasado",
+    "Contar una anécdota"
+  ],
+  "prerequisites": ["pt-a2-preterito-perfeito", "pt-a2-preterito-imperfeito"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "mqp-composto",
+      "day": 1,
+      "title": "Tinha + participio",
+      "goal": "Formar el pluscuamperfecto compuesto.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Imperfeito de ter + participio: eu tinha falado, você tinha comido, nós tínhamos saído, eles tinham partido.",
+        "Participios regulares: -ar → -ado (falado); -er e -ir → -ido (comido, partido).",
+        "Haver + participio (havia falado) significa lo mismo, pero suena escrito y formal.",
+        "El participio no cambia: Ela tinha chegado. Elas tinham chegado."
+      ],
+      "examples": [
+        { "target": "Quando cheguei, o filme já tinha começado.", "es": "Cuando llegué, la película ya había empezado." },
+        { "target": "Ela tinha saído cinco minutos antes.", "es": "Ella había salido cinco minutos antes." },
+        { "target": "Nós nunca tínhamos comido açaí.", "es": "Nunca habíamos comido açaí." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando cheguei, ela já saiu.", "right": "Quando cheguei, ela já tinha saído.", "why": "Para una acción anterior a otra del pasado se usa tinha + participio, como 'ya había salido'." },
+        { "wrong": "Nós tinhamos ido.", "right": "Nós tínhamos ido.", "why": "La forma de nós lleva tilde: tínhamos, igual que en el imperfeito." }
+      ]
+    },
+    {
+      "id": "participios-irregulares",
+      "day": 2,
+      "title": "Participios irregulares",
+      "goal": "Usar los participios irregulares más comunes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "fazer → feito, dizer → dito, escrever → escrito, ver → visto, pôr → posto, abrir → aberto.",
+        "vir → vindo: el participio es igual al gerundio (Ele tinha vindo de longe).",
+        "Algunos que en español son irregulares en portugués son regulares: voltar → voltado (vuelto), romper → rompido (roto), aunque para 'roto' se usa más quebrado.",
+        "Con ter, en Brasil se usan mucho ganho, gasto y pago: Eu já tinha pago a conta."
+      ],
+      "examples": [
+        { "target": "Ele disse que tinha feito tudo sozinho.", "es": "Dijo que había hecho todo solo." },
+        { "target": "Eu nunca tinha visto tanta gente.", "es": "Nunca había visto tanta gente." },
+        { "target": "Eles tinham vindo de ônibus.", "es": "Habían venido en colectivo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu tinha escrevido uma carta.", "right": "Eu tinha escrito uma carta.", "why": "Escrever tiene participio irregular: escrito." },
+        { "wrong": "Ela tinha vinido cedo.", "right": "Ela tinha vindo cedo.", "why": "El participio de vir es vindo, igual que el gerundio." },
+        { "wrong": "Eu tinha volto tarde.", "right": "Eu tinha voltado tarde.", "why": "Voltar es regular: voltado. No copies el 'vuelto' del español." }
+      ]
+    },
+    {
+      "id": "mqp-simples",
+      "day": 3,
+      "title": "La forma simple: fizera",
+      "goal": "Reconocer el mais-que-perfeito simples en la literatura y en expresiones fijas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Se forma con la tercera persona plural del perfeito sin -ram + -ra: falaram → falara, fizeram → fizera, tiveram → tivera, foram → fora.",
+        "Significa lo mismo que tinha + participio: Quando chegou, o ônibus já partira (= já tinha partido).",
+        "Casi no se usa al hablar: aparece en novelas, en la prensa y en textos formales. Vos usá tinha feito.",
+        "La forma de nós lleva tilde: faláramos, fizéramos, tivéramos.",
+        "Sobrevive en expresiones fijas: Quem me dera! (¡Ojalá!), Pudera! (¡Con razón!)."
+      ],
+      "examples": [
+        { "target": "Ela percebeu que esquecera as chaves.", "es": "Se dio cuenta de que se había olvidado las llaves." },
+        { "target": "O escritor nascera numa pequena cidade de Minas Gerais.", "es": "El escritor había nacido en un pueblito de Minas Gerais." },
+        { "target": "Quem me dera ter mais tempo!", "es": "¡Ojalá tuviera más tiempo!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se eu falara português, moraria no Rio.", "right": "Se eu falasse português, moraria no Rio.", "why": "En portugués la forma en -ra es indicativo ('había hablado'), no subjuntivo. El 'si yo hablara' del español es se eu falasse." }
+      ]
+    },
+    {
+      "id": "sequencias-passado",
+      "day": 4,
+      "title": "Ordenar hechos en el pasado",
+      "goal": "Combinar perfeito, imperfeito y mais-que-perfeito para ordenar un relato.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "El imperfeito describe el fondo, el perfeito cuenta los hechos y el mais-que-perfeito, lo que había pasado antes: Quando ela ligou, eu já tinha saído.",
+        "Marcadores: já, ainda não, nunca... antes, até então, na véspera (el día anterior), dias antes.",
+        "'Después de que' se dice depois que + indicativo: Depois que ele chegou, jantamos. O depois de + infinitivo: Depois de jantar, saímos.",
+        "Para algo que pasaba por primera vez: Eu nunca tinha andado de avião até aquele dia."
+      ],
+      "examples": [
+        { "target": "Na véspera da prova, eu ainda não tinha estudado nada.", "es": "El día antes del examen, todavía no había estudiado nada." },
+        { "target": "Até então, ninguém tinha percebido o erro.", "es": "Hasta ese momento, nadie se había dado cuenta del error." },
+        { "target": "Depois que todos saíram, percebi que tinha perdido o celular.", "es": "Después de que se fueron todos, me di cuenta de que había perdido el celular." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Depois de que ele chegou, jantamos.", "right": "Depois que ele chegou, jantamos.", "why": "En Brasil se dice depois que, sin de. 'Depois de que' es un calco del español." }
+      ]
+    },
+    {
+      "id": "contar-anedota",
+      "day": 5,
+      "title": "Contar una anécdota",
+      "goal": "Comprender y escribir el relato de algo que salió mal.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura: la situación (imperfeito), los hechos (perfeito) y lo que ya había pasado (tinha + participio).",
+        "Para dar suspenso: de repente, foi aí que, para piorar (para colmo), no fim das contas (al final).",
+        "Vocabulario: perder o voo, decolar (despegar), esquecer, perceber (darse cuenta), virar (convertirse en)."
+      ],
+      "examples": [
+        { "target": "Quando chegamos ao aeroporto, o voo já tinha decolado.", "es": "Cuando llegamos al aeropuerto, el vuelo ya había despegado." },
+        { "target": "Para piorar, eu tinha deixado a carteira no táxi.", "es": "Para colmo, me había dejado la billetera en el taxi." },
+        { "target": "No fim das contas, virou uma história engraçada.", "es": "Al final, terminó siendo una historia graciosa." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu tinha me esquecido o passaporte.", "right": "Eu tinha esquecido o passaporte.", "why": "Esquecer va sin pronombre con objeto directo (esqueci o passaporte) o con me y de (me esqueci do passaporte). Mezclar las dos es un calco de 'me había olvidado el pasaporte'." }
+      ]
+    }
+  ]
+}

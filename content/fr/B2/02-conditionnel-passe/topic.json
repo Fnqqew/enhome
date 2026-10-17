@@ -1,0 +1,128 @@
+{
+  "id": "fr-b2-conditionnel-passe",
+  "level": "B2",
+  "order": 2,
+  "title": "Condicional pasado e hipótesis irreales",
+  "targetTitle": "Le conditionnel passé et l'irréel du passé",
+  "description": "Cómo hablar de lo que habría pasado, de lo que tendrías que haber hecho y de información no confirmada. La pieza central es si + plus-que-parfait con conditionnel passé, el 'si hubiera…, habría…' del español.",
+  "objectives": [
+    "Formar el conditionnel passé",
+    "Expresar hipótesis irreales en el pasado con si + plus-que-parfait",
+    "Expresar arrepentimientos y reproches con j'aurais dû, j'aurais pu y j'aurais aimé",
+    "Usar el condicional para información no confirmada",
+    "Escribir sobre una decisión que cambió tu vida"
+  ],
+  "prerequisites": ["fr-b1-plus-que-parfait", "fr-b1-hypothese-si"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formation-cond-passe",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el conditionnel passé con el condicional de avoir o être y el participio.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Conditionnel présent de avoir o être + participio: j'aurais fini, tu aurais vu, elle serait venue, nous serions partis.",
+        "Mismas reglas que el passé composé para elegir el auxiliar y para la concordancia.",
+        "Equivale a 'habría' o 'hubiera' + participio: j'aurais aimé = me habría gustado, me hubiera gustado.",
+        "Ojo: j'aurai fini (futur antérieur, 'habré terminado') y j'aurais fini (conditionnel passé) suenan casi igual."
+      ],
+      "examples": [
+        { "target": "À ta place, je serais parti plus tôt.", "es": "En tu lugar, me habría ido más temprano." },
+        { "target": "Nous aurions aimé vous voir.", "es": "Nos habría gustado verlos." },
+        { "target": "Sans toi, elle ne serait jamais arrivée à l'heure.", "es": "Sin vos, nunca habría llegado a horario." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je serais aimé venir.", "right": "J'aurais aimé venir.", "why": "Aimer forma los tiempos compuestos con avoir: j'aurais aimé." },
+        { "wrong": "Elle aurait venue avec nous.", "right": "Elle serait venue avec nous.", "why": "Venir usa être también en el condicional pasado." }
+      ]
+    },
+    {
+      "id": "irreel-passe",
+      "day": 2,
+      "title": "Si + plus-que-parfait",
+      "goal": "Expresar hipótesis sobre algo que no pasó, y sus consecuencias pasadas o presentes.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Para algo que no pasó: si + plus-que-parfait, conditionnel passé. Si j'avais su, je serais venu.",
+        "El español dice 'si hubiera sabido, habría venido'; el francés nunca pone condicional después de si.",
+        "Hipótesis mixta, con consecuencia en el presente: Si j'avais pris le train, je serais déjà là (ya estaría acá).",
+        "Y al revés, una característica presente con consecuencia pasada: Si j'étais plus organisé, j'aurais fini hier."
+      ],
+      "examples": [
+        { "target": "Si tu m'avais appelé, je serais venu te chercher.", "es": "Si me hubieras llamado, te habría ido a buscar." },
+        { "target": "Si nous étions partis plus tôt, nous n'aurions pas raté l'avion.", "es": "Si hubiéramos salido más temprano, no habríamos perdido el avión." },
+        { "target": "Si j'avais accepté ce poste, j'habiterais à Genève aujourd'hui.", "es": "Si hubiera aceptado ese puesto, hoy viviría en Ginebra." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si j'aurais su, je serais venu.", "right": "Si j'avais su, je serais venu.", "why": "Después de si va plus-que-parfait, nunca condicional: 'si hubiera sabido' es si j'avais su." },
+        { "wrong": "Si j'avais su, je serai venu.", "right": "Si j'avais su, je serais venu.", "why": "La consecuencia va en condicional (serais), no en futuro (serai)." }
+      ]
+    },
+    {
+      "id": "regrets-reproches",
+      "day": 3,
+      "title": "Arrepentimientos y reproches",
+      "goal": "Expresar lo que tendrías que haber hecho, lo que podrías haber hecho y lo que te habría gustado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "J'aurais dû + infinitivo = tendría que haber, debería haber: J'aurais dû t'écouter.",
+        "J'aurais pu + infinitivo = podría haber, y también sirve para reprochar: Tu aurais pu me prévenir !",
+        "J'aurais aimé o j'aurais voulu + infinitivo = me habría gustado.",
+        "El orden es auxiliar conjugado + dû o pu + infinitivo: j'aurais dû partir. El infinitivo va directo, sin de.",
+        "Ojo: prévenir quelqu'un significa 'avisarle'; solo con un riesgo o una enfermedad significa 'prevenir' (prévenir un risque)."
+      ],
+      "examples": [
+        { "target": "J'aurais dû réserver plus tôt.", "es": "Tendría que haber reservado antes." },
+        { "target": "Tu aurais pu me prévenir !", "es": "¡Me podrías haber avisado!" },
+        { "target": "J'aurais aimé être là pour ton anniversaire.", "es": "Me habría gustado estar ahí para tu cumpleaños." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'aurais dû de partir plus tôt.", "right": "J'aurais dû partir plus tôt.", "why": "Devoir va seguido del infinitivo sin preposición." },
+        { "wrong": "J'ai dû t'écouter (como reproche).", "right": "J'aurais dû t'écouter.", "why": "J'ai dû significa 'tuve que' o 'debo haber'; el arrepentimiento se expresa con el condicional pasado." }
+      ]
+    },
+    {
+      "id": "info-non-confirmee",
+      "day": 4,
+      "title": "Información no confirmada",
+      "goal": "Usar el condicional para presentar datos que no están confirmados.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "En la prensa, el condicional marca que un dato no está confirmado: Le ministre serait malade (estaría enfermo, según se dice).",
+        "El condicional pasado hace lo mismo con hechos pasados: L'incendie aurait fait trois blessés.",
+        "En el periodismo en español también se ve ('habría tres heridos'), aunque muchos manuales lo desaconsejan; en francés es totalmente normal.",
+        "Otras formas de tomar distancia: selon, d'après, il paraît que, il semblerait que."
+      ],
+      "examples": [
+        { "target": "Selon la police, le voleur serait entré par la fenêtre.", "es": "Según la policía, el ladrón habría entrado por la ventana." },
+        { "target": "L'accident aurait fait deux blessés.", "es": "El accidente habría dejado dos heridos." },
+        { "target": "D'après la radio, la grève continuerait demain.", "es": "Según la radio, la huelga seguiría mañana." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Les manifestants seraient arrivé vers midi.", "right": "Les manifestants seraient arrivés vers midi.", "why": "Con être el participio concuerda con el sujeto, también en el condicional pasado." }
+      ]
+    },
+    {
+      "id": "decision-vie",
+      "day": 5,
+      "title": "Una decisión que cambió todo",
+      "goal": "Comprender y escribir un texto sobre una decisión importante y lo que habría pasado sin ella.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Contá qué pasó con passé composé e imparfait, y después imaginá la otra versión con si + plus-que-parfait y conditionnel passé.",
+        "Para la consecuencia en el presente, conditionnel présent: Si je n'étais pas venu en France, je ne parlerais pas français.",
+        "Para valorar: Avec le recul, je me dis que… (con el tiempo, me doy cuenta de que…), Je ne regrette rien.",
+        "Conectores: à l'époque, à ce moment-là, finalement, aujourd'hui."
+      ],
+      "examples": [
+        { "target": "Si je n'avais pas raté ce train, je n'aurais jamais rencontré Léa.", "es": "Si no hubiera perdido ese tren, nunca habría conocido a Léa." },
+        { "target": "Avec le recul, je me dis que j'ai pris la bonne décision.", "es": "Con el tiempo, me doy cuenta de que tomé la decisión correcta." },
+        { "target": "Si j'étais resté à Buenos Aires, je travaillerais encore dans la même banque.", "es": "Si me hubiera quedado en Buenos Aires, todavía trabajaría en el mismo banco." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si je ne serais pas parti, je n'aurais pas rencontré Léa.", "right": "Si je n'étais pas parti, je n'aurais pas rencontré Léa.", "why": "Después de si va plus-que-parfait: 'si no me hubiera ido' es si je n'étais pas parti." }
+      ]
+    }
+  ]
+}

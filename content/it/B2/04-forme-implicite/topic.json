@@ -1,0 +1,125 @@
+{
+  "id": "it-b2-forme-implicite",
+  "level": "B2",
+  "order": 4,
+  "title": "Gerundio, participio e infinitivo",
+  "targetTitle": "Le forme implicite",
+  "description": "Cómo acortar oraciones con el gerundio (essendo stanco), el participio (finita la cena) y el infinitivo (dopo aver mangiato), formas muy usadas en la escritura y en las noticias.",
+  "objectives": [
+    "Usar el gerundio presente con valor de causa, tiempo, modo o condición",
+    "Usar el gerundio compuesto para una acción anterior",
+    "Usar el participio passato en lugar de una oración temporal",
+    "Usar el infinitivo presente y pasado después de preposiciones y como sustantivo",
+    "Reescribir un texto con formas implícitas"
+  ],
+  "prerequisites": ["it-a1-irregolari-stare", "it-b1-trapassato-remoto"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "gerundio-presente",
+      "day": 1,
+      "title": "El gerundio en lugar de una oración",
+      "goal": "Usar el gerundio para expresar causa, tiempo, modo o condición.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Además de stare + gerundio, el gerundio puede reemplazar una oración de causa (Essendo stanco, sono rimasto a casa: como estaba cansado), de tiempo (Tornando a casa, ho visto Marco: mientras volvía) o de modo (Ho imparato l'italiano ascoltando canzoni).",
+        "También de condición: Studiando di più, passeresti l'esame (si estudiaras más).",
+        "En general el sujeto del gerundio es el mismo que el del verbo principal: Uscendo, ho chiuso la porta (salía yo, cerré yo).",
+        "Los pronombres se pegan al gerundio: Vedendolo, l'ho riconosciuto."
+      ],
+      "examples": [
+        { "target": "Essendo malato, non sono andato al lavoro.", "es": "Como estaba enfermo, no fui a trabajar." },
+        { "target": "Ho conosciuto Marta facendo un corso di cucina.", "es": "Conocí a Marta haciendo un curso de cocina." },
+        { "target": "Camminando per il centro, ho trovato una libreria bellissima.", "es": "Caminando por el centro, encontré una librería hermosa." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ho imparato l'italiano con ascoltare canzoni.", "right": "Ho imparato l'italiano ascoltando canzoni.", "why": "Para decir de qué modo hacés algo se usa el gerundio solo, sin preposición." },
+        { "wrong": "Ho visto Luca uscendo dal cinema (si el que salía era Luca).", "right": "Ho visto Luca che usciva dal cinema.", "why": "Con el gerundio se entiende que el que salía sos vos; si el que salía era Luca, usá che + imperfetto." }
+      ]
+    },
+    {
+      "id": "gerundio-passato",
+      "day": 2,
+      "title": "El gerundio compuesto",
+      "goal": "Usar el gerundio compuesto para una acción anterior al verbo principal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Avendo o essendo + participio, para algo anterior al verbo principal: Avendo finito il lavoro, sono uscito (como había terminado, salí).",
+        "El auxiliar es el mismo que en el passato prossimo, y con essere el participio concuerda: Essendo arrivata tardi, Giulia non ha trovato posto.",
+        "Es típico de la escritura formal; en la charla se prefiere dopo + infinitivo pasado o una oración con siccome o dopo che.",
+        "Los pronombres se pegan al auxiliar: Avendolo visto, Essendomi alzato tardi."
+      ],
+      "examples": [
+        { "target": "Avendo perso le chiavi, ho chiamato un fabbro.", "es": "Como había perdido las llaves, llamé a un cerrajero." },
+        { "target": "Essendo partiti all'alba, siamo arrivati presto.", "es": "Como salimos al amanecer, llegamos temprano." },
+        { "target": "Non avendo ricevuto risposta, le ho scritto di nuovo.", "es": "Como no había recibido respuesta, le escribí de nuevo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Avendo arrivato tardi, ho perso il treno.", "right": "Essendo arrivato tardi, ho perso il treno.", "why": "El auxiliar del gerundio compuesto es el mismo que en el passato prossimo: arrivare va con essere." }
+      ]
+    },
+    {
+      "id": "participio-assoluto",
+      "day": 3,
+      "title": "El participio absoluto",
+      "goal": "Usar el participio passato solo en lugar de una oración temporal o causal.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Un participio solo puede reemplazar una oración temporal o causal: Finita la cena, siamo usciti (una vez terminada la cena, salimos).",
+        "Concuerda con el sustantivo al que se refiere: Finiti i compiti, i bambini sono andati a giocare. Arrivata a casa, Marta ha acceso la luce.",
+        "Es como el español 'terminada la cena' o 'una vez llegados'; se usa mucho en textos escritos y en las noticias.",
+        "Puede ir con appena o una volta: Una volta arrivati, chiamateci."
+      ],
+      "examples": [
+        { "target": "Finita la riunione, siamo andati a pranzo.", "es": "Terminada la reunión, fuimos a almorzar." },
+        { "target": "Arrivati a Roma, abbiamo preso un taxi.", "es": "Una vez en Roma, tomamos un taxi." },
+        { "target": "Una volta letto il contratto, firmatelo.", "es": "Una vez leído el contrato, fírmenlo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Finito la cena, siamo usciti.", "right": "Finita la cena, siamo usciti.", "why": "El participio absoluto concuerda con el sustantivo: la cena → finita." }
+      ]
+    },
+    {
+      "id": "infinito",
+      "day": 4,
+      "title": "El infinitivo: presente, pasado y sustantivo",
+      "goal": "Usar el infinitivo presente y pasado después de preposiciones y como sustantivo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Infinitivo pasado: avere o essere + participio (aver mangiato, essere partito). Se usa después de dopo y para algo anterior: Dopo essere tornati, abbiamo cenato. Mi dispiace di averti fatto aspettare.",
+        "Muchos verbos introducen el infinitivo con di o con a: decidere di, finire di, smettere di, cercare di (tratar de); cominciare a, riuscire a, aiutare a.",
+        "El infinitivo puede funcionar como sustantivo, con o sin artículo: Il mangiare sano è importante. Viaggiare apre la mente.",
+        "Con el mismo sujeto, se prefiere el infinitivo a che + congiuntivo: Credo di avere ragione."
+      ],
+      "examples": [
+        { "target": "Mi dispiace di averti fatto aspettare.", "es": "Perdón por haberte hecho esperar." },
+        { "target": "Dopo essere tornati dal viaggio, abbiamo dormito dodici ore.", "es": "Después de volver del viaje, dormimos doce horas." },
+        { "target": "Ho smesso di fumare tre anni fa.", "es": "Dejé de fumar hace tres años." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ho deciso partire.", "right": "Ho deciso di partire.", "why": "Decidere va con di antes del infinitivo." },
+        { "wrong": "Cerco a capire.", "right": "Cerco di capire.", "why": "Cercare di es 'tratar de'; va con di, no con a." }
+      ]
+    },
+    {
+      "id": "riscrivere-testo",
+      "day": 5,
+      "title": "Reescribir un texto",
+      "goal": "Comprender un texto con formas implícitas y escribir uno más compacto.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Las formas implícitas dan un estilo más formal y compacto: Siccome era stanco → Essendo stanco. Dopo che aveva finito → Finito il lavoro o Dopo aver finito.",
+        "No abuses: en un mensaje informal, una oración con siccome, quando o dopo che suena más natural.",
+        "Fijate que el sujeto quede claro: con gerundio e infinitivo suele ser el mismo que el del verbo principal."
+      ],
+      "examples": [
+        { "target": "Terminati gli studi, si è trasferita a Milano.", "es": "Terminados los estudios, se mudó a Milán." },
+        { "target": "Avendo vissuto all'estero, parla tre lingue.", "es": "Como vivió en el exterior, habla tres idiomas." },
+        { "target": "Prima di firmare, leggete attentamente il contratto.", "es": "Antes de firmar, lean con atención el contrato." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Prima di firmare il contratto, l'avvocato mi ha spiegato tutto.", "right": "Prima che firmassi il contratto, l'avvocato mi ha spiegato tutto.", "why": "Con prima di + infinitivo el sujeto tiene que ser el mismo; si cambia, usá prima che + congiuntivo." }
+      ]
+    }
+  ]
+}

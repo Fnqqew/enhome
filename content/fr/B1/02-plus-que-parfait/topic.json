@@ -1,0 +1,124 @@
+{
+  "id": "fr-b1-plus-que-parfait",
+  "level": "B1",
+  "order": 2,
+  "title": "Pluscuamperfecto",
+  "targetTitle": "Le plus-que-parfait",
+  "description": "El pasado del pasado: lo que ya había pasado antes de otro momento pasado. Se forma y se usa casi igual que el 'había hablado' del español, y es la pieza que te falta para narrar con varios planos.",
+  "objectives": [
+    "Formar el plus-que-parfait con avoir y con être",
+    "Ubicar una acción antes de otra en el pasado",
+    "Combinarlo con el passé composé y el imparfait en un relato",
+    "Usarlo para lamentos, sorpresas y para contar lo que alguien dijo",
+    "Contar una anécdota con varios planos de pasado"
+  ],
+  "prerequisites": ["fr-a2-passe-compose", "fr-a2-imparfait"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formation-pqp",
+      "day": 1,
+      "title": "Cómo se forma",
+      "goal": "Formar el plus-que-parfait con el imparfait de avoir o être y el participio.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Imparfait de avoir o être + participio: j'avais mangé, tu avais fini, elle était partie, nous étions arrivés.",
+        "Los verbos que usan être en el passé composé (DR MRS VANDERTRAMP y los pronominales) también lo usan acá: j'étais allé, je m'étais levé.",
+        "Con être, el participio concuerda con el sujeto: elle était sortie, ils étaient partis.",
+        "La negación rodea al auxiliar: je n'avais pas compris, elle n'était jamais venue."
+      ],
+      "examples": [
+        { "target": "J'avais déjà mangé quand tu es arrivé.", "es": "Ya había comido cuando llegaste." },
+        { "target": "Elle était partie avant la fin du film.", "es": "Se había ido antes del final de la película." },
+        { "target": "Nous ne nous étions jamais vus.", "es": "Nunca nos habíamos visto." }
+      ],
+      "commonMistakes": [
+        { "wrong": "J'avais allé à Paris.", "right": "J'étais allé à Paris.", "why": "Aller usa être también en el plus-que-parfait." },
+        { "wrong": "Elle était parti tôt.", "right": "Elle était partie tôt.", "why": "Con être el participio concuerda con el sujeto: elle → partie." }
+      ]
+    },
+    {
+      "id": "anteriorite",
+      "day": 2,
+      "title": "Lo que pasó antes",
+      "goal": "Usar el plus-que-parfait para una acción anterior a otra pasada.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Marca que algo ya había pasado antes de otro momento pasado: Quand je suis arrivé, le train était parti.",
+        "Compará: Quand je suis arrivé, le train est parti (salió en ese momento) y Quand je suis arrivé, le train était parti (ya se había ido).",
+        "Marcadores frecuentes: déjà, jamais, avant, la veille (el día anterior), quelques jours plus tôt.",
+        "En la charla rioplatense a veces decimos 'cuando llegué, el tren ya se fue'; en francés hace falta el plus-que-parfait."
+      ],
+      "examples": [
+        { "target": "Quand je suis arrivé à la gare, le train était déjà parti.", "es": "Cuando llegué a la estación, el tren ya se había ido." },
+        { "target": "Il avait plu la veille, donc la route était glissante.", "es": "Había llovido el día anterior, así que la ruta estaba resbaladiza." },
+        { "target": "Je n'avais jamais vu la mer avant ce voyage.", "es": "Nunca había visto el mar antes de ese viaje." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quand je suis arrivé, le train est déjà parti.", "right": "Quand je suis arrivé, le train était déjà parti.", "why": "Si la salida del tren fue antes de tu llegada, va el plus-que-parfait." }
+      ]
+    },
+    {
+      "id": "trois-passes",
+      "day": 3,
+      "title": "Los tres pasados juntos",
+      "goal": "Combinar passé composé, imparfait y plus-que-parfait en un relato.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Passé composé: los hechos que hacen avanzar la historia. Imparfait: el fondo y las descripciones. Plus-que-parfait: lo que había pasado antes.",
+        "Una misma oración puede tener los tres: Je suis rentré tard parce que j'avais raté le bus et qu'il pleuvait.",
+        "Para explicar la causa de un estado pasado se usa mucho parce que + plus-que-parfait: Il était fatigué parce qu'il avait mal dormi.",
+        "Con avoir, el participio concuerda con el objeto directo si va antes: les fleurs que tu m'avais offertes."
+      ],
+      "examples": [
+        { "target": "J'étais en retard parce que j'avais oublié mes clés.", "es": "Llegué tarde porque me había olvidado las llaves." },
+        { "target": "Elle était contente : elle avait réussi son examen.", "es": "Estaba contenta: había aprobado el examen." },
+        { "target": "Nous sommes allés au restaurant que Paul nous avait conseillé.", "es": "Fuimos al restaurante que Paul nos había recomendado." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Les fleurs que tu m'avais offert étaient magnifiques.", "right": "Les fleurs que tu m'avais offertes étaient magnifiques.", "why": "Con avoir, el participio concuerda con el objeto directo cuando va antes: que = les fleurs, femenino plural." }
+      ]
+    },
+    {
+      "id": "regrets-surprises",
+      "day": 4,
+      "title": "Lamentos, sorpresas y dichos",
+      "goal": "Usar el plus-que-parfait con si seulement, para la sorpresa y para contar lo que alguien dijo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Si seulement + plus-que-parfait expresa un lamento sobre el pasado: Si seulement j'avais su ! (¡Si lo hubiera sabido!)",
+        "Donde el español usa 'hubiera' + participio, el francés usa el plus-que-parfait del indicativo.",
+        "Para la sorpresa: Je croyais que tu étais déjà parti ! (Creía que ya te habías ido.)",
+        "Para contar lo que alguien dijo sobre algo anterior: Il m'a dit qu'il avait fini. Lo vas a ver a fondo con el discurso indirecto."
+      ],
+      "examples": [
+        { "target": "Si seulement j'avais pris mon parapluie !", "es": "¡Si me hubiera llevado el paraguas!" },
+        { "target": "Je croyais que tu avais déjà réservé.", "es": "Creía que ya habías reservado." },
+        { "target": "Elle m'a dit qu'elle avait trouvé un appartement.", "es": "Me dijo que había encontrado un departamento." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si seulement j'aurais su !", "right": "Si seulement j'avais su !", "why": "Después de si nunca va condicional: el 'hubiera sabido' del español se dice j'avais su." }
+      ]
+    },
+    {
+      "id": "anecdote",
+      "day": 5,
+      "title": "Contar una anécdota",
+      "goal": "Comprender y escribir una anécdota con varios planos de pasado.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Arrancá con el fondo en imparfait (C'était un dimanche, il faisait beau…), contá los hechos en passé composé y usá el plus-que-parfait para lo que había pasado antes.",
+        "Conectores: ce jour-là, la veille, quelques jours plus tôt, soudain, au bout d'un moment, finalement.",
+        "Para cerrar: Depuis, je… (desde entonces) o Je ne l'oublierai jamais."
+      ],
+      "examples": [
+        { "target": "Ce jour-là, j'étais très stressé : la veille, j'avais perdu mon passeport.", "es": "Ese día estaba muy estresado: el día anterior había perdido el pasaporte." },
+        { "target": "Heureusement, quelqu'un l'avait trouvé et l'avait déposé à la réception.", "es": "Por suerte, alguien lo había encontrado y lo había dejado en la recepción." },
+        { "target": "Depuis, je vérifie toujours mes poches.", "es": "Desde entonces, siempre reviso los bolsillos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ce jour-là, j'étais stressé : la veille, j'ai perdu mon passeport.", "right": "Ce jour-là, j'étais stressé : la veille, j'avais perdu mon passeport.", "why": "La veille ubica la acción antes del momento del relato, así que va en plus-que-parfait." }
+      ]
+    }
+  ]
+}

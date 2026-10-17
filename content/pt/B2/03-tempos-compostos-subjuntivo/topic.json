@@ -1,0 +1,127 @@
+{
+  "id": "pt-b2-tempos-compostos-subjuntivo",
+  "level": "B2",
+  "order": 3,
+  "title": "Tiempos compuestos del subjuntivo",
+  "targetTitle": "Tempos compostos do subjuntivo",
+  "description": "Los subjuntivos con ter + participio: espero que você tenha gostado, se eu tivesse sabido, quando você tiver terminado. Son el 'haya hecho' y el 'hubiera hecho' del español, más uno que el español no tiene.",
+  "objectives": [
+    "Usar el pretérito perfeito do subjuntivo (tenha feito)",
+    "Usar el mais-que-perfeito do subjuntivo (tivesse feito)",
+    "Construir condicionales sobre el pasado (se eu tivesse sabido, teria ido)",
+    "Usar el futuro composto do subjuntivo (tiver feito)",
+    "Escribir un reclamo formal"
+  ],
+  "prerequisites": ["pt-b2-imperfeito-subjuntivo", "pt-b1-mais-que-perfeito", "pt-b1-futuro-subjuntivo"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "perfeito-subjuntivo",
+      "day": 1,
+      "title": "Tenha feito",
+      "goal": "Hablar de un hecho pasado con duda, deseo o emoción.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Presente do subjuntivo de ter + participio: eu tenha feito, nós tenhamos feito, eles tenham feito.",
+        "Equivale a 'haya hecho': Espero que você tenha gostado.",
+        "Aparece después de espero que, talvez, duvido que, é possível que, que bom que, cuando se habla de algo ya pasado.",
+        "El auxiliar es ter: haja feito existe, pero suena muy formal.",
+        "Ojo: el indicativo tem vindo no es 'ha venido', sino 'viene viniendo' (algo repetido hasta ahora): Ele tem vindo muito aqui."
+      ],
+      "examples": [
+        { "target": "Espero que você tenha gostado do jantar.", "es": "Espero que te haya gustado la cena." },
+        { "target": "Talvez ele já tenha saído.", "es": "Tal vez ya se haya ido." },
+        { "target": "Não acredito que eles tenham perdido o voo!", "es": "¡No puedo creer que hayan perdido el vuelo!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Espero que você haya gostado.", "right": "Espero que você tenha gostado.", "why": "El 'haya' del español se dice tenha: el auxiliar de los tiempos compuestos en Brasil es ter." },
+        { "wrong": "Fico feliz que você tem vindo.", "right": "Fico feliz que você tenha vindo.", "why": "Después de una emoción va subjuntivo; además, tem vindo significa 'venís seguido', no 'viniste'." }
+      ]
+    },
+    {
+      "id": "mais-que-perfeito-subjuntivo",
+      "day": 2,
+      "title": "Tivesse feito",
+      "goal": "Hablar de lo que no pasó y de deseos sobre el pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Imperfeito do subjuntivo de ter + participio: eu tivesse feito, nós tivéssemos feito, eles tivessem feito.",
+        "Equivale a 'hubiera hecho': Eu queria que você tivesse vindo.",
+        "Aparece con como se, quem dera, mesmo que y después de un verbo principal en pasado: Agiu como se nada tivesse acontecido.",
+        "Con haver (houvesse feito) significa lo mismo, pero es formal; al hablar, siempre tivesse."
+      ],
+      "examples": [
+        { "target": "Eu queria que você tivesse visto o show.", "es": "Me hubiera gustado que vieras el recital." },
+        { "target": "Ele agiu como se nada tivesse acontecido.", "es": "Actuó como si nada hubiera pasado." },
+        { "target": "Quem dera eu tivesse estudado mais!", "es": "¡Ojalá hubiera estudiado más!" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Como se nada tivera acontecido.", "right": "Como se nada tivesse acontecido.", "why": "El 'hubiera' es tivesse; tivera es una forma de indicativo." }
+      ]
+    },
+    {
+      "id": "condicionais-passado",
+      "day": 3,
+      "title": "Condicionales sobre el pasado",
+      "goal": "Imaginar cómo habría sido algo que no pasó.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "se + tivesse + participio, teria + participio: Se você tivesse me avisado, eu teria ido.",
+        "En la charla, teria se reemplaza muchas veces por tinha, y tivesse sabido por soubesse: Se eu soubesse, tinha ido.",
+        "Con resultado en el presente: Se eu tivesse estudado, hoje teria um emprego melhor.",
+        "El subjuntivo va solo después de se: la otra parte va en condicional (teria) o en imperfeito (tinha)."
+      ],
+      "examples": [
+        { "target": "Se você tivesse me avisado, eu teria ido te buscar.", "es": "Si me hubieras avisado, te habría ido a buscar." },
+        { "target": "Se eu soubesse, não tinha vindo.", "es": "Si sabía, no venía." },
+        { "target": "Se tivéssemos saído mais cedo, não teríamos pegado trânsito.", "es": "Si hubiéramos salido más temprano, no habríamos agarrado tránsito." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se eu tivesse sabido, eu tivesse ido.", "right": "Se eu tivesse sabido, eu teria ido.", "why": "En español se dice 'si hubiera sabido, hubiera ido'; en portugués la consecuencia va en teria (o tinha al hablar)." },
+        { "wrong": "Se você teria me avisado, eu teria ido.", "right": "Se você tivesse me avisado, eu teria ido.", "why": "Después de se nunca va condicional." }
+      ]
+    },
+    {
+      "id": "futuro-composto-subjuntivo",
+      "day": 4,
+      "title": "Tiver feito",
+      "goal": "Hablar de algo que va a estar terminado en un momento del futuro.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Futuro do subjuntivo de ter + participio: quando eu tiver terminado, se vocês tiverem lido.",
+        "Corresponde al 'cuando hayas terminado' y al 'si para el viernes no recibí' del español.",
+        "Va con quando, assim que, se, depois que: Assim que tiver lido o contrato, me avise.",
+        "Al hablar se simplifica mucho: Quando terminar, me avisa."
+      ],
+      "examples": [
+        { "target": "Quando você tiver terminado, me mande o arquivo.", "es": "Cuando hayas terminado, mandame el archivo." },
+        { "target": "Se até sexta eu não tiver recebido a resposta, ligo de novo.", "es": "Si para el viernes no recibí la respuesta, llamo de nuevo." },
+        { "target": "Assim que todos tiverem chegado, começamos.", "es": "En cuanto hayan llegado todos, empezamos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando você haya terminado, me avisa.", "right": "Quando você tiver terminado, me avisa.", "why": "'Cuando hayas terminado' se dice con el futuro do subjuntivo de ter: tiver terminado." }
+      ]
+    },
+    {
+      "id": "reclamacao-formal",
+      "day": 5,
+      "title": "Un reclamo formal",
+      "goal": "Comprender y escribir un e-mail de reclamo usando los tiempos compuestos.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Contar el problema y suponer causas: Até hoje o produto não foi entregue. Espero que tenha sido apenas um erro.",
+        "Lamentar y fijar plazos: Se vocês tivessem avisado, eu teria cancelado. Se até sexta a situação não tiver sido resolvida, ...",
+        "Vocabulario: reclamação (reclamo), pedido, prazo (plazo), estorno (reintegro), nota fiscal (factura), Procon (defensa del consumidor)."
+      ],
+      "examples": [
+        { "target": "Espero que o atraso tenha sido apenas um erro do sistema.", "es": "Espero que la demora haya sido solo un error del sistema." },
+        { "target": "Se vocês tivessem avisado sobre o atraso, eu teria cancelado a compra.", "es": "Si hubieran avisado de la demora, habría cancelado la compra." },
+        { "target": "Se até sexta a situação não tiver sido resolvida, vou registrar uma reclamação no Procon.", "es": "Si para el viernes no se resolvió la situación, voy a hacer un reclamo en Defensa del Consumidor." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quero fazer um reclamo.", "right": "Quero fazer uma reclamação.", "why": "En portugués el sustantivo es reclamação (femenino)." },
+        { "wrong": "Envio a fatura da compra.", "right": "Envio a nota fiscal da compra.", "why": "La factura de una compra es nota fiscal; fatura se usa para el resumen de la tarjeta o la cuenta de un servicio." }
+      ]
+    }
+  ]
+}

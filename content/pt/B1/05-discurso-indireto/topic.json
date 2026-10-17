@@ -1,0 +1,126 @@
+{
+  "id": "pt-b1-discurso-indireto",
+  "level": "B1",
+  "order": 5,
+  "title": "Discurso indirecto y conectores",
+  "targetTitle": "Discurso indireto e conectores",
+  "description": "Cómo contar lo que otro dijo, preguntó o pidió, y cómo hilar el relato con conectores. Los cambios de tiempo son casi los mismos que en español; las trampas están en algunos conectores que parecen iguales y no lo son.",
+  "objectives": [
+    "Reproducir lo que alguien dijo con dizer, falar, contar y avisar",
+    "Cambiar tiempos verbales y referencias de tiempo y lugar",
+    "Reproducir preguntas y pedidos (perguntou se, pediu para)",
+    "Usar conectores para contar y evitar sus falsos amigos",
+    "Contarle a alguien una conversación"
+  ],
+  "prerequisites": ["pt-b1-presente-subjuntivo", "pt-b1-mais-que-perfeito", "pt-a2-futuro-condicional"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "verbos-dizer",
+      "day": 1,
+      "title": "Contar lo que alguien dijo",
+      "goal": "Reproducir palabras ajenas con los verbos más comunes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "dizer que es el verbo general; en la charla de Brasil se usa muchísimo falar que: Ele falou que vem.",
+        "Otros verbos: contar, comentar, avisar, explicar, responder, prometer.",
+        "Si el verbo que introduce está en presente, el tiempo no cambia: Ela diz que está cansada.",
+        "A quién: Ele me disse que... En la charla también: Ele falou para mim que..."
+      ],
+      "examples": [
+        { "target": "O João falou que chega às oito.", "es": "Juan dijo que llega a las ocho." },
+        { "target": "Ela me contou que vai casar.", "es": "Me contó que se casa." },
+        { "target": "O professor avisa que a prova é na terça.", "es": "El profesor avisa que el examen es el martes." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ela me disse de ir ao cinema.", "right": "Ela me chamou para ir ao cinema.", "why": "El 'me dijo de ir' rioplatense no funciona en portugués: para invitar se dice me chamou para." },
+        { "wrong": "Ele dizeu que sim.", "right": "Ele disse que sim.", "why": "El perfeito de dizer es irregular: disse." }
+      ]
+    },
+    {
+      "id": "mudanca-tempos",
+      "day": 2,
+      "title": "Cambios de tiempo y referencias",
+      "goal": "Pasar al discurso indirecto cuando el verbo que introduce está en pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "presente → imperfeito: 'Estou cansado.' → Ele disse que estava cansado.",
+        "perfeito → mais-que-perfeito: 'Comprei o carro.' → Ela disse que tinha comprado o carro.",
+        "vou + infinitivo → ia + infinitivo; futuro → condicional: 'Vou viajar.' → Disse que ia viajar. 'Viajarei.' → Disse que viajaria.",
+        "Referencias: hoje → naquele dia, amanhã → no dia seguinte, ontem → no dia anterior, aqui → lá, este → aquele."
+      ],
+      "examples": [
+        { "target": "Ela disse que estava com fome.", "es": "Dijo que tenía hambre." },
+        { "target": "Ele contou que tinha perdido o emprego.", "es": "Contó que había perdido el trabajo." },
+        { "target": "Eles disseram que iam voltar no dia seguinte.", "es": "Dijeron que iban a volver al día siguiente." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele disse que ia a viajar.", "right": "Ele disse que ia viajar.", "why": "En portugués ir + infinitivo va sin a: vou viajar, ia viajar." }
+      ]
+    },
+    {
+      "id": "perguntas-pedidos",
+      "day": 3,
+      "title": "Preguntas y pedidos indirectos",
+      "goal": "Reproducir preguntas, pedidos y órdenes.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Preguntas de sí o no: perguntar se. 'Você quer café?' → Ela perguntou se eu queria café.",
+        "Con palabra interrogativa: perguntou onde, quando, o que, quem, por que. Sin inversión: Perguntou onde ficava a estação.",
+        "Pedidos en la charla: pedir para + infinitivo: Ela pediu para eu esperar. En lo escrito vas a ver pediu que eu esperasse.",
+        "En las preguntas, también indirectas, 'por qué' se escribe por que, separado: Quero saber por que você não veio."
+      ],
+      "examples": [
+        { "target": "Ela me perguntou se eu queria café.", "es": "Me preguntó si quería café." },
+        { "target": "Ele quis saber por que a reunião foi cancelada.", "es": "Quiso saber por qué se canceló la reunión." },
+        { "target": "A chefe pediu para a gente chegar mais cedo.", "es": "La jefa nos pidió que llegáramos más temprano." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele perguntou porque eu não fui.", "right": "Ele perguntou por que eu não fui.", "why": "En una pregunta, aunque sea indirecta, se escribe por que, separado. Porque junto es la respuesta: 'porque'." },
+        { "wrong": "Ela me pediu que eu ligo para ela.", "right": "Ela me pediu para ligar para ela.", "why": "Un pedido no va en indicativo: en la charla se usa pedir para + infinitivo." }
+      ]
+    },
+    {
+      "id": "conectores-relato",
+      "day": 4,
+      "title": "Conectores para contar",
+      "goal": "Hilar un relato con conectores de la charla y de lo escrito.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Secuencia: primeiro, depois, em seguida, então, aí (muy oral), no final.",
+        "Contraste y causa: mas, só que (pero, en la charla), porém (escrito), porque, por isso, como (al principio: Como estava tarde, ...).",
+        "Fuente: segundo ele, de acordo com a empresa, conforme o combinado.",
+        "Falsos amigos: todavia es 'sin embargo' (el 'todavía' es ainda) y logo es 'enseguida' (el 'luego' de una secuencia es depois)."
+      ],
+      "examples": [
+        { "target": "Aí ele disse que não ia mais, só que já tinha comprado o ingresso.", "es": "Entonces dijo que ya no iba, pero ya había comprado la entrada." },
+        { "target": "Como estava chovendo, ficamos em casa.", "es": "Como estaba lloviendo, nos quedamos en casa." },
+        { "target": "Segundo a Marta, a festa foi ótima.", "es": "Según Marta, la fiesta estuvo buenísima." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Todavia não terminei.", "right": "Ainda não terminei.", "why": "Todavia es un conector formal que significa 'sin embargo'. El 'todavía' del español es ainda." },
+        { "wrong": "Primeiro jantamos e logo fomos ao cinema.", "right": "Primeiro jantamos e depois fomos ao cinema.", "why": "Logo significa 'enseguida' o 'pronto' (até logo); el 'luego' de una secuencia es depois." }
+      ]
+    },
+    {
+      "id": "contar-conversa",
+      "day": 5,
+      "title": "Contar una conversación",
+      "goal": "Comprender y escribir un mensaje que resume lo que se habló en una llamada de trabajo.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Elegí el verbo justo: disse, explicou, perguntou, pediu, prometeu, sugeriu.",
+        "Pasá los tiempos al pasado y ajustá las referencias: amanhã → no dia seguinte.",
+        "Ordená con conectores: primeiro, aí, depois, no final, por isso. Aí es muy oral: en un informe usá em seguida."
+      ],
+      "examples": [
+        { "target": "O cliente ligou e perguntou se o pedido já tinha saído.", "es": "El cliente llamó y preguntó si el pedido ya había salido." },
+        { "target": "Ele explicou que precisava da entrega até sexta.", "es": "Explicó que necesitaba la entrega para el viernes." },
+        { "target": "No final, prometi que ia mandar o código de rastreio.", "es": "Al final, le prometí que le iba a mandar el código de seguimiento." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Na semana passada ela disse que viria amanhã.", "right": "Na semana passada ela disse que viria no dia seguinte.", "why": "Si lo contás otro día, amanhã pasa a no dia seguinte, igual que 'mañana' pasa a 'al día siguiente'." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "fr-b2-registre-soutenu",
+  "level": "B2",
+  "order": 5,
+  "title": "Registro formal",
+  "targetTitle": "Le registre soutenu",
+  "description": "Cómo escribir cartas y mails formales en francés: fórmulas de apertura y de cierre, el vous de principio a fin, conectores del discurso y las palabras que reemplazan a las de la charla.",
+  "objectives": [
+    "Abrir y cerrar cartas y mails formales",
+    "Usar el vous y las fórmulas de cortesía para pedir",
+    "Organizar un texto con conectores formales",
+    "Reemplazar estructuras y palabras coloquiales por formales",
+    "Escribir un mail formal de reclamo"
+  ],
+  "prerequisites": ["fr-b1-subjonctif-present", "fr-b2-conditionnel-passe"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "ouvrir-fermer",
+      "day": 1,
+      "title": "Abrir y cerrar",
+      "goal": "Usar las fórmulas de apertura y de cierre de una carta o un mail formal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Apertura: Madame, / Monsieur, / Madame, Monsieur, si no sabés quién lee. En el saludo formal no se agrega el apellido.",
+        "Primera frase: Je me permets de vous écrire au sujet de… / Je vous écris afin de… / Suite à notre conversation téléphonique, …",
+        "Antes del cierre: Dans l'attente de votre réponse, … / Je vous remercie par avance de votre attention.",
+        "Cierre de carta: Je vous prie d'agréer, Madame, l'expression de mes salutations distinguées. En un mail alcanza con Cordialement o Bien cordialement."
+      ],
+      "examples": [
+        { "target": "Je me permets de vous écrire au sujet de votre offre d'emploi.", "es": "Me dirijo a ustedes en relación con su oferta de empleo." },
+        { "target": "Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.", "es": "A la espera de su respuesta, lo saludo atentamente." },
+        { "target": "Je vous remercie par avance de votre attention.", "es": "Le agradezco de antemano su atención." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Chère Madame Dupont,", "right": "Madame,", "why": "En el saludo formal francés no se agrega el apellido; si ya hay trato, se puede escribir Chère Madame." },
+        { "wrong": "Je vous prie d'agréer mes salutations distinguées, Cordialement.", "right": "Je vous prie d'agréer mes salutations distinguées.", "why": "Se usa una sola fórmula de cierre: la larga en una carta o Cordialement en un mail, nunca las dos juntas." }
+      ]
+    },
+    {
+      "id": "vous-politesse",
+      "day": 2,
+      "title": "El vous y la cortesía",
+      "goal": "Mantener el vous y pedir con las fórmulas de cortesía del registro formal.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "En lo formal siempre vous, con todo lo que va con él: votre, vos, vous-même. Nunca mezcles con tu.",
+        "Para pedir, conditionnel: Pourriez-vous… ? Auriez-vous l'amabilité de… ? Je vous serais reconnaissant(e) de bien vouloir…",
+        "Bien vouloir + infinitivo suaviza un pedido: Je vous prie de bien vouloir me transmettre ce document.",
+        "Para no sonar demasiado directo: Il me semble que…, Je me permets de vous rappeler que…"
+      ],
+      "examples": [
+        { "target": "Pourriez-vous m'indiquer la date limite d'inscription ?", "es": "¿Podría indicarme la fecha límite de inscripción?" },
+        { "target": "Je vous serais reconnaissante de bien vouloir me répondre rapidement.", "es": "Le agradecería que me respondiera a la brevedad." },
+        { "target": "Je me permets de vous rappeler que la facture n'a pas été réglée.", "es": "Me permito recordarle que la factura todavía no fue pagada." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Pourriez-vous me dire si tu as reçu mon dossier ?", "right": "Pourriez-vous me dire si vous avez reçu mon dossier ?", "why": "En un texto formal se mantiene vous de principio a fin." },
+        { "wrong": "Je vous prie de bien vouloir de me répondre.", "right": "Je vous prie de bien vouloir me répondre.", "why": "Después de bien vouloir el infinitivo va directo, sin de." }
+      ]
+    },
+    {
+      "id": "connecteurs-formels",
+      "day": 3,
+      "title": "Conectores formales",
+      "goal": "Organizar un texto formal con conectores de adición, oposición, causa, consecuencia y conclusión.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Para agregar: de plus, par ailleurs, en outre. Para oponer: cependant, toutefois, néanmoins, en revanche.",
+        "Para causa y consecuencia: étant donné que, c'est pourquoi, par conséquent, ainsi.",
+        "En effet no confirma algo sorprendente como 'en efecto': introduce la justificación de lo que acabás de decir. Je ne pourrai pas venir. En effet, je serai à Lyon.",
+        "Para concluir: en conclusion, en définitive, pour conclure.",
+        "En plus y par contre son de la charla; en lo formal se prefieren de plus y en revanche."
+      ],
+      "examples": [
+        { "target": "Par ailleurs, je souhaiterais savoir si le stage est rémunéré.", "es": "Por otra parte, quisiera saber si la pasantía es paga." },
+        { "target": "Le délai est court ; toutefois, nous ferons notre possible.", "es": "El plazo es corto; sin embargo, vamos a hacer todo lo posible." },
+        { "target": "Je ne pourrai pas assister à la réunion. En effet, je serai à Lyon ce jour-là.", "es": "No voy a poder asistir a la reunión, ya que ese día voy a estar en Lyon." }
+      ],
+      "commonMistakes": [
+        { "wrong": "En plus, je souhaiterais savoir si le stage est rémunéré.", "right": "De plus, je souhaiterais savoir si le stage est rémunéré.", "why": "En plus es coloquial; en un texto formal se usa de plus o en outre." }
+      ]
+    },
+    {
+      "id": "soutenu-courant",
+      "day": 4,
+      "title": "De lo coloquial a lo formal",
+      "goal": "Reemplazar estructuras y palabras de la charla por sus equivalentes formales.",
+      "focus": ["grammar", "writing"],
+      "keyPoints": [
+        "Negación completa (je ne sais pas, nunca je sais pas) y preguntas con inversión (Pourriez-vous… ? en lugar de Vous pouvez… ?).",
+        "Nous en lugar de on: Nous vous remercions…, no On vous remercie.",
+        "Verbos más precisos: obtenir en lugar de avoir, effectuer en lugar de faire, souhaiter en lugar de vouloir, se rendre en lugar de aller.",
+        "Cela en lugar de ça, y nada de palabras familiares ni abreviaturas: travail y no boulot, restaurant y no resto."
+      ],
+      "examples": [
+        { "target": "Nous souhaiterions obtenir davantage d'informations.", "es": "Quisiéramos obtener más información." },
+        { "target": "Je me rendrai à Paris la semaine prochaine.", "es": "Viajaré a París la semana que viene." },
+        { "target": "Cela ne correspond pas à ce qui était prévu.", "es": "Eso no corresponde a lo que estaba previsto." }
+      ],
+      "commonMistakes": [
+        { "wrong": "On vous remercie pour votre réponse.", "right": "Nous vous remercions de votre réponse.", "why": "En un texto formal se usa nous en lugar de on." },
+        { "wrong": "Je sais pas si mon dossier est complet.", "right": "Je ne sais pas si mon dossier est complet.", "why": "Por escrito y en lo formal, la negación siempre lleva ne." }
+      ]
+    },
+    {
+      "id": "mail-reclamation",
+      "day": 5,
+      "title": "Un mail formal de reclamo",
+      "goal": "Comprender y escribir un mail formal para reclamar y pedir una solución.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura: asunto, saludo, motivo (Je vous écris au sujet de…), hechos en passé composé, pedido en conditionnel y cierre.",
+        "Asunto breve: Objet : Réclamation concernant la commande n° 4521.",
+        "Para reclamar sin agresividad: Je constate que…, Malgré mes relances, …, Je me vois dans l'obligation de…",
+        "Para pedir una solución: Je vous saurais gré de… (le agradecería que…), Je vous demande de bien vouloir…"
+      ],
+      "examples": [
+        { "target": "Le 3 mars, j'ai commandé un ordinateur sur votre site.", "es": "El 3 de marzo compré una computadora en su sitio." },
+        { "target": "Malgré mes relances, je n'ai reçu aucune réponse de votre part.", "es": "A pesar de mis reiterados reclamos, no recibí ninguna respuesta de su parte." },
+        { "target": "Je vous saurais gré de bien vouloir procéder au remboursement.", "es": "Le agradecería que procediera al reembolso." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Je n'ai reçu aucune réponse de votre partie.", "right": "Je n'ai reçu aucune réponse de votre part.", "why": "'De su parte' se dice de votre part; partie es 'parte' de un todo o 'partido'." }
+      ]
+    }
+  ]
+}

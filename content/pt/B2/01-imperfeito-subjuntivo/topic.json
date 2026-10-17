@@ -1,0 +1,127 @@
+{
+  "id": "pt-b2-imperfeito-subjuntivo",
+  "level": "B2",
+  "order": 1,
+  "title": "Imperfecto del subjuntivo y condicionales",
+  "targetTitle": "Imperfeito do subjuntivo e condicionais",
+  "description": "La forma para imaginar y para pedir en pasado: se eu tivesse tempo, viajaria; queria que você viesse. En portugués termina siempre en -sse: la forma en -ra del español no sirve.",
+  "objectives": [
+    "Formar el imperfeito do subjuntivo de regulares e irregulares",
+    "Construir condicionales hipotéticas con se + imperfeito do subjuntivo",
+    "Usar como se, quem dera, e se y mesmo que",
+    "Encadenar tiempos: queria que, pediu que, era importante que",
+    "Escribir sobre una situación imaginaria"
+  ],
+  "prerequisites": ["pt-b1-presente-subjuntivo", "pt-b1-futuro-subjuntivo", "pt-a2-futuro-condicional"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "imperfeito-subj-formacao",
+      "day": 1,
+      "title": "Formación",
+      "goal": "Formar el imperfeito do subjuntivo de cualquier verbo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Tercera persona plural del perfeito sin -ram + -sse: falaram → falasse, fizeram → fizesse, tiveram → tivesse.",
+        "Personas: eu y você falasse, nós falássemos, vocês falassem. La forma de nós siempre lleva tilde: comêssemos, partíssemos, fôssemos.",
+        "Sale de la misma raíz que el futuro do subjuntivo: puder → pudesse, quiser → quisesse, vier → viesse, for → fosse.",
+        "Solo existe la forma en -sse: el 'tuviera' del español no es tivera (eso es pluscuamperfecto), sino tivesse."
+      ],
+      "examples": [
+        { "target": "Se eu soubesse a resposta, te diria.", "es": "Si supiera la respuesta, te la diría." },
+        { "target": "Eu queria que você ficasse mais um pouco.", "es": "Quería que te quedaras un rato más." },
+        { "target": "Se nós fôssemos mais organizados, terminaríamos antes.", "es": "Si fuéramos más organizados, terminaríamos antes." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se eu tivera dinheiro, compraria um carro.", "right": "Se eu tivesse dinheiro, compraria um carro.", "why": "El imperfeito do subjuntivo termina en -sse; tivera es el pluscuamperfecto de indicativo." },
+        { "wrong": "Se nós tivessemos tempo, iríamos.", "right": "Se nós tivéssemos tempo, iríamos.", "why": "La forma de nós lleva tilde: tivéssemos, fôssemos, falássemos." }
+      ]
+    },
+    {
+      "id": "condicionais-hipoteticas",
+      "day": 2,
+      "title": "Condicionales hipotéticas",
+      "goal": "Construir condicionales hipotéticas y distinguirlas de las posibles.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Condición posible en el futuro: se + futuro do subjuntivo: Se eu tiver tempo, vou.",
+        "Condición hipotética o imposible ahora: se + imperfeito do subjuntivo + condicional: Se eu tivesse tempo, iria.",
+        "En la charla de Brasil el condicional se reemplaza muchísimo por el imperfeito: Se eu tivesse tempo, ia.",
+        "Nunca va condicional después de se: el 'si tendría' que a veces se escucha en la Argentina es un error en los dos idiomas."
+      ],
+      "examples": [
+        { "target": "Se eu morasse perto, iria a pé.", "es": "Si viviera cerca, iría caminando." },
+        { "target": "Se ela ganhasse mais, trocava de carro.", "es": "Si ganara más, cambiaba el auto." },
+        { "target": "O que você faria se fosse presidente?", "es": "¿Qué harías si fueras presidente?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se eu teria tempo, viajaria mais.", "right": "Se eu tivesse tempo, viajaria mais.", "why": "Después de se nunca va condicional: va imperfeito do subjuntivo." },
+        { "wrong": "Se eu tenho dinheiro, compraria uma casa.", "right": "Se eu tivesse dinheiro, compraria uma casa.", "why": "Con condicional en la consecuencia, la condición va en imperfeito do subjuntivo." }
+      ]
+    },
+    {
+      "id": "como-se-quem-dera",
+      "day": 3,
+      "title": "Como se, quem dera y e se",
+      "goal": "Usar el imperfeito do subjuntivo en comparaciones, deseos, propuestas y concesiones.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "como se + imperfeito do subjuntivo: Ele fala como se fosse o dono.",
+        "Deseos difíciles o imposibles: Quem dera eu pudesse! Se pelo menos eu tivesse mais tempo!",
+        "Propuestas: E se a gente fosse à praia? (¿Y si vamos a la playa?)",
+        "Concesión y condición hipotéticas: mesmo que, ainda que, caso: Mesmo que chovesse, eu iria. Caso precisasse, ligaria."
+      ],
+      "examples": [
+        { "target": "Ela me olhou como se não me conhecesse.", "es": "Me miró como si no me conociera." },
+        { "target": "Quem dera eu tivesse férias agora!", "es": "¡Ojalá tuviera vacaciones ahora!" },
+        { "target": "E se a gente pedisse uma pizza?", "es": "¿Y si pedimos una pizza?" }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele fala como se fora o chefe.", "right": "Ele fala como se fosse o chefe.", "why": "Después de como se va la forma en -sse; fora es el pluscuamperfecto de ser e ir." },
+        { "wrong": "Ojalá pudesse ir.", "right": "Quem dera eu pudesse ir.", "why": "Para deseos poco probables o imposibles se usa quem dera; 'ojalá' no existe en portugués." }
+      ]
+    },
+    {
+      "id": "correlacao-tempos",
+      "day": 4,
+      "title": "Correlación de tiempos",
+      "goal": "Usar el imperfeito do subjuntivo cuando la oración principal está en pasado o en condicional.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Verbo principal en pasado o condicional → imperfeito do subjuntivo: Eu queria que você viesse. Seria bom que todos participassem.",
+        "Compará: Peço que você ligue (presente) / Pedi que você ligasse (pasado).",
+        "Eu queria que... también sirve para pedir con cortesía en el presente: Eu queria que você revisasse isso.",
+        "Con pedir, en la charla se sigue usando para + infinitivo: Ele pediu para eu ligar."
+      ],
+      "examples": [
+        { "target": "O médico mandou que eu descansasse.", "es": "El médico me indicó que descansara." },
+        { "target": "Era importante que todos soubessem a verdade.", "es": "Era importante que todos supieran la verdad." },
+        { "target": "Duvidei que ele viesse, mas ele veio.", "es": "Dudé que viniera, pero vino." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu queria que você vinhesse.", "right": "Eu queria que você viesse.", "why": "Se forma desde vieram: viesse. No lo mezcles con el imperfeito de indicativo vinha." },
+        { "wrong": "Duvidei que ele vinha.", "right": "Duvidei que ele viesse.", "why": "La duda pide subjuntivo también en pasado." }
+      ]
+    },
+    {
+      "id": "situacoes-imaginarias",
+      "day": 5,
+      "title": "Situaciones imaginarias",
+      "goal": "Comprender y escribir un texto sobre qué harías en una situación hipotética.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Plantear: Se eu pudesse..., Se eu ganhasse na loteria..., Imagina se...",
+        "Desarrollar con condicional (o imperfeito en la charla): eu moraria, eu trabalharia menos, eu ia viajar.",
+        "Matizar: Mesmo que..., Ainda que..., Pensando bem..."
+      ],
+      "examples": [
+        { "target": "Se eu ganhasse na loteria, a primeira coisa que faria seria comprar uma casa para os meus pais.", "es": "Si ganara la lotería, lo primero que haría sería comprarles una casa a mis padres." },
+        { "target": "Se eu pudesse morar em qualquer lugar, escolheria uma cidade com praia.", "es": "Si pudiera vivir en cualquier lugar, elegiría una ciudad con playa." },
+        { "target": "Pensando bem, mesmo que eu fosse rico, continuaria trabalhando.", "es": "Pensándolo bien, aunque fuera rico, seguiría trabajando." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Se eu ganhasse a loteria, pararia de trabalhar.", "right": "Se eu ganhasse na loteria, pararia de trabalhar.", "why": "En Brasil se dice ganhar na loteria, con em." }
+      ]
+    }
+  ]
+}

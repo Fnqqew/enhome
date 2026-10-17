@@ -1,0 +1,127 @@
+{
+  "id": "it-b1-passiva-si",
+  "level": "B1",
+  "order": 4,
+  "title": "Pasiva y si impersonal",
+  "targetTitle": "La forma passiva e il si impersonale",
+  "description": "Cómo decir lo que se hace sin importar tanto quién lo hace: la pasiva con essere y con venire (il pane viene fatto ogni giorno), andare + participio para la obligación y el si impersonal y pasivante (si mangia bene, si vendono case).",
+  "objectives": [
+    "Formar la pasiva con essere y con venire",
+    "Usar andare + participio para expresar obligación",
+    "Usar el si impersonal, también con verbos reflexivos (ci si)",
+    "Usar el si pasivante y formar sus tiempos compuestos",
+    "Comprender y escribir una receta"
+  ],
+  "prerequisites": ["it-a2-passato-prossimo", "it-a2-riflessivi-comparativi"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "passiva-essere",
+      "day": 1,
+      "title": "La pasiva con essere",
+      "goal": "Formar la pasiva con essere y presentar al agente con da.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Essere + participio que concuerda con el sujeto: La casa è costruita, le case sono costruite.",
+        "El agente se introduce con da y sus contracciones: Il libro è stato scritto da Calvino. Il ponte è stato distrutto dall'alluvione.",
+        "En los tiempos compuestos se agrega stato, que también concuerda: è stato scritto, sono state vendute.",
+        "Ojo: el 'por' del agente es da, nunca per."
+      ],
+      "examples": [
+        { "target": "La Divina Commedia è stata scritta da Dante.", "es": "La Divina Comedia fue escrita por Dante." },
+        { "target": "Le finestre sono state chiuse dal custode.", "es": "Las ventanas fueron cerradas por el encargado." },
+        { "target": "Il nuovo ponte sarà inaugurato a maggio.", "es": "El nuevo puente va a ser inaugurado en mayo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il libro è stato scritto per Calvino.", "right": "Il libro è stato scritto da Calvino.", "why": "El agente de la pasiva se introduce con da, no con per." },
+        { "wrong": "La lettera è stata scritto ieri.", "right": "La lettera è stata scritta ieri.", "why": "En la pasiva el participio concuerda con el sujeto: la lettera → scritta." }
+      ]
+    },
+    {
+      "id": "passiva-venire-andare",
+      "day": 2,
+      "title": "Venire y andare + participio",
+      "goal": "Usar venire en la pasiva y andare + participio para la obligación.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Venire puede reemplazar a essere en los tiempos simples y destaca la acción: Il pane viene fatto ogni mattina.",
+        "Con venire no hay ambigüedad: La porta è chiusa (estado) frente a La porta viene chiusa alle otto (acción).",
+        "Venire no se usa en los tiempos compuestos: è stato fatto, nunca 'è venuto fatto'.",
+        "Andare + participio expresa obligación: Il modulo va compilato in stampatello (hay que completarlo en imprenta). Questi farmaci vanno presi a stomaco pieno."
+      ],
+      "examples": [
+        { "target": "Il pane viene sfornato ogni mattina alle sei.", "es": "El pan se saca del horno todas las mañanas a las seis." },
+        { "target": "Le lettere vengono consegnate entro le dieci.", "es": "Las cartas se entregan antes de las diez." },
+        { "target": "Il biglietto va convalidato prima di salire.", "es": "El boleto hay que validarlo antes de subir." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il ponte è venuto costruito nel 1900.", "right": "Il ponte è stato costruito nel 1900.", "why": "Venire solo reemplaza a essere en los tiempos simples; en los compuestos se usa stato." },
+        { "wrong": "Il modulo va compilare.", "right": "Il modulo va compilato.", "why": "La obligación se arma con andare + participio, no con el infinitivo." }
+      ]
+    },
+    {
+      "id": "si-impersonale",
+      "day": 3,
+      "title": "El si impersonal",
+      "goal": "Decir lo que se hace en general con el si impersonal.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Si + verbo en tercera persona del singular para lo que se hace en general: In Italia si cena verso le otto. Qui si sta bene.",
+        "Es como el 'se' impersonal del español: se vive bien, se trabaja mucho.",
+        "Con essere y un adjetivo, el adjetivo va en plural: Quando si è giovani, si è ottimisti.",
+        "Con verbos reflexivos se usa ci si: Ci si alza presto (uno se levanta temprano), nunca 'si si alza'."
+      ],
+      "examples": [
+        { "target": "In questo ristorante si mangia benissimo.", "es": "En este restaurante se come buenísimo." },
+        { "target": "Da qui si vede tutta la città.", "es": "Desde acá se ve toda la ciudad." },
+        { "target": "In vacanza ci si sveglia tardi.", "es": "En vacaciones uno se despierta tarde." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si si diverte molto.", "right": "Ci si diverte molto.", "why": "Con un verbo reflexivo, el si impersonal se convierte en ci si." },
+        { "wrong": "Quando si è giovane, si è ottimista.", "right": "Quando si è giovani, si è ottimisti.", "why": "Con el si impersonal, el adjetivo que acompaña a essere va en plural." }
+      ]
+    },
+    {
+      "id": "si-passivante",
+      "day": 4,
+      "title": "El si pasivante y los tiempos compuestos",
+      "goal": "Hacer concordar el verbo con el objeto y formar los tiempos compuestos con si.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con un objeto, el verbo concuerda con él: Si vende la casa / Si vendono case. Si parla italiano / Si parlano molte lingue.",
+        "En los tiempos compuestos va siempre essere: Si è mangiato bene. Si sono vendute molte case.",
+        "Sin objeto, si el verbo usa avere el participio queda en -o (Si è lavorato molto); si usa essere, va en plural (Si è arrivati tardi).",
+        "Es la forma de los carteles y avisos: Si affitta (se alquila), Si prega di non toccare (se ruega no tocar)."
+      ],
+      "examples": [
+        { "target": "In questo negozio si vendono libri usati.", "es": "En este negocio se venden libros usados." },
+        { "target": "Alla festa si è ballato fino all'alba.", "es": "En la fiesta se bailó hasta el amanecer." },
+        { "target": "Si affittano appartamenti al mare.", "es": "Se alquilan departamentos en la costa." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si vende appartamenti.", "right": "Si vendono appartamenti.", "why": "Con un objeto en plural, el verbo va en plural: si vendono, igual que 'se venden' en español." },
+        { "wrong": "Si ha mangiato bene.", "right": "Si è mangiato bene.", "why": "Con si, los tiempos compuestos van siempre con essere." }
+      ]
+    },
+    {
+      "id": "ricetta",
+      "day": 5,
+      "title": "Una receta",
+      "goal": "Comprender y escribir una receta con la pasiva y el si.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "En las recetas se usa el si (si taglia, si mette), el imperativo (taglia, metti) o el infinitivo (tagliare, mettere). Elegí uno y mantenelo.",
+        "Para lo obligatorio, andare + participio: La pasta va scolata al dente.",
+        "Vocabulario: tagliare (cortar), soffriggere (rehogar), mescolare (mezclar), scolare (colar), aggiungere (agregar), un pizzico di sale (una pizca de sal), q.b. (quanto basta: a gusto)."
+      ],
+      "examples": [
+        { "target": "Si taglia la cipolla e si fa soffriggere nell'olio.", "es": "Se corta la cebolla y se rehoga en aceite." },
+        { "target": "Si aggiungono i pomodori e un pizzico di sale.", "es": "Se agregan los tomates y una pizca de sal." },
+        { "target": "La pasta va scolata al dente.", "es": "La pasta hay que colarla al dente." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Si fa soffriggere la cipolla nell'aceto.", "right": "Si fa soffriggere la cipolla nell'olio.", "why": "Aceto es 'vinagre'; el aceite es l'olio." }
+      ]
+    }
+  ]
+}

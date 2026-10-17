@@ -1,0 +1,129 @@
+{
+  "id": "c1-formal-style",
+  "level": "C1",
+  "order": 2,
+  "title": "Nominalización y estilo formal",
+  "targetTitle": "Nominalization and formal register",
+  "description": "Cómo pasar de un inglés conversacional a uno formal: convertir verbos en sustantivos, elegir vocabulario de registro alto y armar frases impersonales y compactas.",
+  "objectives": [
+    "Transformar verbos y adjetivos en sustantivos para condensar información",
+    "Reescribir frases verbales en estilo nominal con las preposiciones correctas",
+    "Reemplazar phrasal verbs y palabras informales por equivalentes formales",
+    "Usar estructuras impersonales para dar un tono objetivo"
+  ],
+  "prerequisites": ["b2-passive-causative", "b2-emphasis-cohesion"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "nominalizacion",
+      "day": 1,
+      "title": "Qué es la nominalización",
+      "goal": "Convertir acciones y cualidades en sustantivos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Nominalizar es expresar como sustantivo lo que normalmente diría un verbo o un adjetivo: decide → decision, fail → failure, important → importance.",
+        "Sufijos frecuentes: -tion / -sion (reduce → reduction), -ment (develop → development), -ance / -ence (perform → performance), -ity (possible → possibility), -al (refuse → refusal), -ness (aware → awareness).",
+        "Hace el texto más compacto y abstracto, y pone el foco en los conceptos: Prices increased rapidly → There was a rapid increase in prices.",
+        "Algunos verbos y sustantivos tienen la misma forma: increase, change, decline, rise, report, use, demand."
+      ],
+      "examples": [
+        { "target": "The government's decision to raise taxes caused widespread anger.", "es": "La decisión del gobierno de subir los impuestos provocó un enojo generalizado." },
+        { "target": "There has been a significant improvement in air quality.", "es": "Hubo una mejora significativa en la calidad del aire." },
+        { "target": "The failure of the project was due to poor planning.", "es": "El fracaso del proyecto se debió a una mala planificación." }
+      ],
+      "commonMistakes": [
+        { "wrong": "The augment of prices worried consumers.", "right": "The increase in prices worried consumers.", "why": "'Aumento' no es augment: el sustantivo es increase (o rise) y va seguido de in." },
+        { "wrong": "The realization of the project took two years.", "right": "The completion of the project took two years.", "why": "Realization significa 'darse cuenta' o 'concreción de un sueño'; para 'realización' en el sentido de llevar a cabo se usa completion, implementation o carrying out." }
+      ]
+    },
+    {
+      "id": "transformar-frases",
+      "day": 2,
+      "title": "Del verbo al sustantivo: transformar frases",
+      "goal": "Reescribir frases verbales en estilo nominal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "El verbo pasa a sustantivo, el adverbio a adjetivo y el sujeto a posesivo o a una frase con of: The company expanded quickly → the company's rapid expansion / the rapid expansion of the company.",
+        "El sustantivo necesita un verbo que lo sostenga: make a decision, carry out research, reach an agreement, take into account, give rise to.",
+        "Las preposiciones cambian: increase in, demand for, reason for, effect on, impact on, solution to, access to, investigation into.",
+        "No abuses: demasiados sustantivos encadenados hacen que el texto sea pesado y difícil de leer."
+      ],
+      "examples": [
+        { "target": "An aging population has led to a growing demand for healthcare.", "es": "El envejecimiento de la población generó una demanda creciente de atención médica." },
+        { "target": "The committee will carry out a thorough review of the policy.", "es": "El comité va a hacer una revisión exhaustiva de la política." },
+        { "target": "Social media has had a profound impact on the way we communicate.", "es": "Las redes sociales tuvieron un impacto profundo en la forma en que nos comunicamos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "This had a big impact in the economy.", "right": "This had a significant impact on the economy.", "why": "Impact y effect van con on, no con in." },
+        { "wrong": "They made an investigation about the accident.", "right": "They carried out an investigation into the accident.", "why": "Con investigation se usa carry out o conduct, y la preposición es into." }
+      ]
+    },
+    {
+      "id": "vocabulario-formal",
+      "day": 3,
+      "title": "Vocabulario formal",
+      "goal": "Elegir palabras y expresiones adecuadas para un registro formal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Muchos phrasal verbs tienen un equivalente de origen latino más formal, que te va a resultar familiar por el español: find out → discover, put off → postpone, go up → increase, look into → investigate, get → obtain / receive.",
+        "Evitá contracciones (don't → do not), preguntas retóricas informales y palabras como a lot of, get, thing, stuff, really, kids.",
+        "Equivalentes útiles: a lot of → a considerable number / amount of; about → approximately / regarding; but → however; so → therefore; need → require; help → assist.",
+        "Formal no es rebuscado: una palabra simple y precisa vale más que una larga."
+      ],
+      "examples": [
+        { "target": "The event has been postponed due to unforeseen circumstances.", "es": "El evento se postergó por circunstancias imprevistas." },
+        { "target": "Further information can be obtained from the main office.", "es": "Se puede obtener más información en la oficina central." },
+        { "target": "Applicants are required to submit two references.", "es": "Los postulantes tienen que presentar dos referencias." }
+      ],
+      "commonMistakes": [
+        { "wrong": "We need to discuss about the budget.", "right": "We need to discuss the budget.", "why": "Discuss no lleva about: en español es 'discutir sobre', pero en inglés va discuss + objeto directo." },
+        { "wrong": "I am writing to solicit information about the course.", "right": "I am writing to request information about the course.", "why": "'Solicitar' se traduce request o apply for; solicit se usa para pedir dinero, votos o clientes, y acá suena raro." }
+      ]
+    },
+    {
+      "id": "estructuras-impersonales",
+      "day": 4,
+      "title": "Estructuras impersonales y objetividad",
+      "goal": "Dar un tono objetivo sin hablar en primera persona.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Sujetos impersonales: It is widely accepted that..., It should be noted that..., It could be argued that...",
+        "There + be: There is little evidence that..., There appears to be growing concern about...",
+        "Sujetos abstractos en lugar de personas: The results suggest..., This study examines..., The figures indicate...",
+        "Frases participiales para condensar: Having analyzed the data, the team concluded... / Based on these findings, ... El sujeto de la oración principal tiene que ser quien hizo la acción.",
+        "En textos académicos, data suele ir en plural: The data show..."
+      ],
+      "examples": [
+        { "target": "It is widely acknowledged that early education has long-term benefits.", "es": "Está ampliamente reconocido que la educación temprana tiene beneficios a largo plazo." },
+        { "target": "There appears to be a correlation between sleep and academic performance.", "es": "Parece haber una correlación entre el sueño y el rendimiento académico." },
+        { "target": "Having reviewed the evidence, the panel recommended a change in policy.", "es": "Tras revisar la evidencia, el panel recomendó un cambio de política." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Exists a correlation between sleep and performance.", "right": "There is a correlation between sleep and performance.", "why": "El 'existe' impersonal del español no se traduce con exist sin sujeto: se usa There is (o There exists, más formal)." },
+        { "wrong": "Having finished the report, the computer crashed.", "right": "Having finished the report, I sent it to my manager.", "why": "El sujeto de la oración principal tiene que ser el mismo que hizo la acción de la frase con -ing; si no, parece que la computadora terminó el informe. Otra opción: After I had finished the report, the computer crashed." }
+      ]
+    },
+    {
+      "id": "de-informal-a-formal",
+      "day": 5,
+      "title": "De informal a formal",
+      "goal": "Leer y escribir un párrafo formal de un informe a partir de notas informales.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Partí de las ideas, no de las palabras: identificá las acciones principales y convertilas en sustantivos.",
+        "Usá sujetos abstractos y estructuras impersonales; evitá I think, really y a lot.",
+        "Conectá con conectores formales: Furthermore, In addition, Consequently, Nevertheless.",
+        "Revisá que cada oración se entienda a la primera: un texto formal también tiene que ser claro."
+      ],
+      "examples": [
+        { "target": "Following a large number of complaints, the schedule was revised.", "es": "Tras recibir una gran cantidad de quejas, se modificó el horario." },
+        { "target": "The introduction of flexible hours has resulted in higher staff satisfaction.", "es": "La introducción del horario flexible generó una mayor satisfacción del personal." },
+        { "target": "Furthermore, a reduction in absenteeism has been observed.", "es": "Además, se observó una disminución del ausentismo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Actually, the situation is worse than last year.", "right": "Currently, the situation is worse than last year.", "why": "Actually significa 'en realidad'; 'actualmente' es currently o at present." },
+        { "wrong": "Also, the employees are a lot happier.", "right": "In addition, staff satisfaction has increased considerably.", "why": "En un texto formal, also al principio y a lot happier suenan coloquiales: usá un conector formal y un sustantivo preciso." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "it-c1-concordanza-tempi",
+  "level": "C1",
+  "order": 1,
+  "title": "Concordancia de los tiempos",
+  "targetTitle": "La concordanza dei tempi",
+  "description": "Las reglas que relacionan el tiempo del verbo principal con el de la subordinada, con indicativo y con congiuntivo, y los casos en que el italiano y el español no coinciden, como el futuro en el pasado.",
+  "objectives": [
+    "Aplicar la concordancia con el indicativo: anterioridad, simultaneidad y posterioridad",
+    "Aplicar la concordancia con el congiuntivo",
+    "Expresar el futuro en el pasado con el condizionale passato",
+    "Manejar la concordancia después de un condicional, de come se y de los comparativos",
+    "Revisar la concordancia en un texto propio"
+  ],
+  "prerequisites": ["it-b2-congiuntivo-imperfetto", "it-b2-ipotetico-irreale"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "concordanza-indicativo",
+      "day": 1,
+      "title": "Concordancia con el indicativo",
+      "goal": "Elegir el tiempo del indicativo en la subordinada según el verbo principal.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con el verbo principal en presente: anterioridad → passato prossimo o imperfetto; simultaneidad → presente; posterioridad → futuro: So che è partito / che parte / che partirà.",
+        "Con el verbo principal en pasado: anterioridad → trapassato; simultaneidad → imperfetto; posterioridad → condizionale passato: Sapevo che era partito / che partiva / che sarebbe partito.",
+        "En la charla, el imperfetto también expresa posterioridad (Ha detto che veniva), pero en un texto cuidado usá el condizionale passato."
+      ],
+      "examples": [
+        { "target": "Dice che ha già pagato.", "es": "Dice que ya pagó." },
+        { "target": "Sapevo che Luca abitava a Torino.", "es": "Sabía que Luca vivía en Turín." },
+        { "target": "Eravamo sicuri che avrebbe vinto.", "es": "Estábamos seguros de que iba a ganar." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Sapevo che sarà difficile.", "right": "Sapevo che sarebbe stato difficile.", "why": "Con el verbo principal en pasado, lo posterior se expresa con el condizionale passato." }
+      ]
+    },
+    {
+      "id": "concordanza-congiuntivo",
+      "day": 2,
+      "title": "Concordancia con el congiuntivo",
+      "goal": "Elegir el tiempo del congiuntivo según el verbo principal.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Principal en presente o futuro: simultaneidad → congiuntivo presente (Penso che sia vero); anterioridad → congiuntivo passato (Penso che sia stato vero).",
+        "Principal en pasado: simultaneidad → congiuntivo imperfetto (Pensavo che fosse vero); anterioridad → congiuntivo trapassato (Pensavo che fosse stato vero).",
+        "Para un estado o una acción habitual del pasado, con principal en presente se usa el congiuntivo imperfetto: Penso che da giovane fosse molto timido.",
+        "Posterioridad: con principal en presente, futuro o congiuntivo presente (Penso che arriverà / che arrivi); con principal en pasado, condizionale passato (Pensavo che sarebbe arrivato)."
+      ],
+      "examples": [
+        { "target": "Non credo che abbiano capito.", "es": "No creo que hayan entendido." },
+        { "target": "Temevo che non mi avessero riconosciuto.", "es": "Temía que no me hubieran reconocido." },
+        { "target": "Si dice che da giovane fosse un ottimo calciatore.", "es": "Se dice que de joven era un excelente jugador de fútbol." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Pensavo che sia vero.", "right": "Pensavo che fosse vero.", "why": "Con el verbo principal en pasado, el congiuntivo simultáneo va en imperfetto." },
+        { "wrong": "Temevo che non mi abbiano riconosciuto.", "right": "Temevo che non mi avessero riconosciuto.", "why": "Con el verbo principal en pasado, lo anterior va en congiuntivo trapassato." }
+      ]
+    },
+    {
+      "id": "futuro-nel-passato",
+      "day": 3,
+      "title": "El futuro en el pasado",
+      "goal": "Expresar un hecho posterior a un momento pasado.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Para algo posterior a un momento pasado se usa el condizionale passato: Mi ha detto che mi avrebbe chiamato. En español decimos 'me dijo que me llamaría', con condicional simple.",
+        "El condizionale presente en ese contexto es un error típico del hispanohablante: Ha detto che verrebbe.",
+        "En la charla también se usa el imperfetto (Ha detto che mi chiamava); en un texto cuidado, evitalo.",
+        "Si el hecho todavía es futuro respecto de hoy, se acepta el futuro: Mi ha detto che verrà domani."
+      ],
+      "examples": [
+        { "target": "Ero sicura che avresti capito.", "es": "Estaba segura de que ibas a entender." },
+        { "target": "Ci avevano promesso che i lavori sarebbero finiti a maggio.", "es": "Nos habían prometido que las obras iban a terminar en mayo." },
+        { "target": "Non immaginavo che saremmo diventati amici.", "es": "No me imaginaba que íbamos a hacernos amigos." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mi aveva detto che mi chiamerebbe.", "right": "Mi aveva detto che mi avrebbe chiamato.", "why": "El futuro visto desde el pasado se expresa con el condizionale passato, no con el condicional simple como en español." }
+      ]
+    },
+    {
+      "id": "concordanza-condizionale",
+      "day": 4,
+      "title": "Después del condicional y casos especiales",
+      "goal": "Aplicar la concordancia después de un condicional, de come se y de los comparativos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Después de vorrei, preferirei, mi piacerebbe y sarebbe meglio + che va el congiuntivo imperfetto, o el trapassato para lo anterior: Vorrei che tu restassi.",
+        "Después de un condizionale passato, también imperfetto o trapassato: Avrei preferito che me lo dicessi / che me l'avessi detto.",
+        "Come se va con imperfetto o trapassato, sin importar el tiempo principal: Parla come se sapesse tutto. Parlava come se avesse visto un fantasma.",
+        "En los comparativos con di quanto, el congiuntivo sigue el tiempo del verbo principal: È più difficile di quanto pensassi. Era più facile di quanto avessi immaginato."
+      ],
+      "examples": [
+        { "target": "Mi piacerebbe che venissi anche tu.", "es": "Me gustaría que vinieras vos también." },
+        { "target": "Avrei voluto che me lo avessi detto prima.", "es": "Hubiera querido que me lo hubieras dicho antes." },
+        { "target": "L'esame è stato più facile di quanto temessi.", "es": "El examen fue más fácil de lo que temía." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Vorrei che tu venga.", "right": "Vorrei che tu venissi.", "why": "Después de un condicional como vorrei va el congiuntivo imperfetto, como 'quisiera que vinieras'." }
+      ]
+    },
+    {
+      "id": "revisione-testo",
+      "day": 5,
+      "title": "Revisar un texto",
+      "goal": "Comprender un texto narrativo y corregir la concordancia de tiempos en uno propio.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Primero identificá el verbo principal y su tiempo; después, si lo subordinado es anterior, simultáneo o posterior.",
+        "Revisá los verbos de opinión, deseo y emoción: piden congiuntivo, y su tiempo depende del principal.",
+        "Atención a las mezclas típicas: Pensavo che sia, Ha detto che verrebbe, Vorrei che tu venga."
+      ],
+      "examples": [
+        { "target": "Quando l'ho conosciuto, non immaginavo che sarebbe diventato mio marito.", "es": "Cuando lo conocí, no me imaginaba que iba a ser mi marido." },
+        { "target": "Mi sembrava che tutti mi stessero guardando.", "es": "Me parecía que todos me estaban mirando." },
+        { "target": "Ero convinta che il treno fosse già partito.", "es": "Estaba convencida de que el tren ya había salido." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Mi sembrava che tutti mi guardano.", "right": "Mi sembrava che tutti mi guardassero.", "why": "Mi sembrava che pide congiuntivo y, con el verbo principal en pasado, en imperfetto." }
+      ]
+    }
+  ]
+}

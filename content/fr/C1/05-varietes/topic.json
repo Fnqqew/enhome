@@ -1,0 +1,129 @@
+{
+  "id": "fr-c1-varietes",
+  "level": "C1",
+  "order": 5,
+  "title": "Variedades del francés",
+  "targetTitle": "Les variétés du français",
+  "description": "El francés no es uno solo: cambia entre Francia, Bélgica, Suiza, Quebec y los países africanos, y también según el registro. Aprendé a reconocer las diferencias más frecuentes, el argot y el verlan, igual que en español distinguís un argentino de un mexicano.",
+  "objectives": [
+    "Reconocer los números y las palabras propias de Bélgica y Suiza",
+    "Reconocer los rasgos del francés de Quebec",
+    "Conocer el francés de África y parte de su vocabulario propio",
+    "Distinguir los registros: soutenu, courant, familier, argot y verlan",
+    "Comprender textos de distintas variedades y adaptarlos al francés estándar"
+  ],
+  "prerequisites": ["fr-b2-registre-soutenu", "fr-c1-expressions-idiomatiques"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "belgique-suisse",
+      "day": 1,
+      "title": "Bélgica y Suiza",
+      "goal": "Reconocer los números, las comidas y las palabras propias de Bélgica y de Suiza.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Números: septante (70) y nonante (90) en Bélgica y en Suiza; huitante (80) en algunos cantones suizos como Vaud y Valais. En Francia: soixante-dix, quatre-vingts, quatre-vingt-dix.",
+        "Comidas: en Bélgica y en Suiza el déjeuner es el desayuno, el dîner el almuerzo y el souper la cena, como antes en Francia.",
+        "Bélgica: une drache (lluvia fuerte), le GSM (el celular), savoir con el sentido de pouvoir (Je ne sais pas venir = no puedo venir).",
+        "Suiza: le natel (el celular), une panosse (el trapo de piso), le chenit (el desorden)."
+      ],
+      "examples": [
+        { "target": "Ma grand-mère a nonante ans.", "es": "Mi abuela tiene noventa años." },
+        { "target": "On se retrouve pour le dîner à midi ?", "es": "¿Nos encontramos para almorzar al mediodía?" },
+        { "target": "Il drache depuis ce matin.", "es": "Llueve a cántaros desde esta mañana." }
+      ],
+      "commonMistakes": [
+        { "wrong": "En Bélgica: Rendez-vous pour le dîner à vingt heures.", "right": "Rendez-vous pour le souper à vingt heures.", "why": "En Bélgica y en Suiza la cena es el souper; el dîner es el almuerzo." },
+        { "wrong": "En París: Ça coûte nonante euros.", "right": "Ça coûte quatre-vingt-dix euros.", "why": "Nonante se usa en Bélgica y en Suiza; en Francia se dice quatre-vingt-dix." }
+      ]
+    },
+    {
+      "id": "quebec",
+      "day": 2,
+      "title": "Quebec",
+      "goal": "Reconocer la pronunciación, el vocabulario y los giros del francés de Quebec.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Pronunciación: la t y la d delante de i y de u suenan 'ts' y 'dz' (tu suena 'tsu', dire suena 'dzire'), y muchas vocales largas se diptongan.",
+        "Vocabulario: le char (el auto), le dépanneur (el almacén de barrio), la blonde (la novia), le chum (el novio o el amigo), magasiner (ir de compras), la fin de semaine (el fin de semana).",
+        "Comidas como en Bélgica: déjeuner (desayuno), dîner (almuerzo), souper (cena).",
+        "Se evitan los anglicismos de Francia: courriel (mail), clavarder (chatear), stationnement (estacionamiento), magasinage (shopping).",
+        "En la charla: tu como partícula de pregunta (Tu viens-tu ?), c'est correct (está bien) y bienvenue para responder a un gracias."
+      ],
+      "examples": [
+        { "target": "Ma blonde et moi, on va magasiner en fin de semaine.", "es": "Mi novia y yo vamos a ir de compras el fin de semana." },
+        { "target": "Je vais au dépanneur acheter du lait.", "es": "Voy al almacén a comprar leche." },
+        { "target": "Envoie-moi un courriel.", "es": "Mandame un mail." }
+      ],
+      "commonMistakes": [
+        { "wrong": "En Quebec: Je t'envoie un mail ce week-end.", "right": "Je t'envoie un courriel en fin de semaine.", "why": "En Quebec se evitan los anglicismos de Francia: courriel y fin de semaine." },
+        { "wrong": "Merci ! — Bienvenue ! (en París)", "right": "Merci ! — De rien ! / Je vous en prie.", "why": "Bienvenue como respuesta a un gracias es propio de Quebec; en Francia se dice de rien o je vous en prie." }
+      ]
+    },
+    {
+      "id": "afrique",
+      "day": 3,
+      "title": "El francés en África",
+      "goal": "Conocer la francofonía africana y parte de su vocabulario propio.",
+      "focus": ["reading"],
+      "keyPoints": [
+        "Más de la mitad de los francófonos del mundo vive en África: Senegal, Costa de Marfil, Camerún, la República Democrática del Congo, Marruecos, Argelia y Túnez, entre otros países.",
+        "Palabras propias: une essencerie (estación de servicio, en Senegal), un maquis (restaurante popular, en Costa de Marfil), un taxi-brousse (taxi colectivo de larga distancia), gâter (romper, arruinar).",
+        "También hay usos nuevos de expresiones francesas, como le deuxième bureau (el amante, en varios países).",
+        "El nouchi de Costa de Marfil y el camfranglais de Camerún mezclan francés, lenguas locales e inglés.",
+        "La norma escrita es la misma en todas partes: las diferencias están en el vocabulario, la pronunciación y las expresiones."
+      ],
+      "examples": [
+        { "target": "On va manger au maquis ce soir ?", "es": "¿Vamos a comer al bodegón esta noche?" },
+        { "target": "Je dois passer à l'essencerie avant de partir.", "es": "Tengo que pasar por la estación de servicio antes de salir." },
+        { "target": "Mon téléphone est gâté.", "es": "Se me rompió el teléfono." }
+      ],
+      "commonMistakes": [
+        { "wrong": "En París: Je vais à l'essencerie.", "right": "Je vais à la station-service.", "why": "Essencerie es propio de Senegal; en Francia se dice station-service." }
+      ]
+    },
+    {
+      "id": "registres-verlan",
+      "day": 4,
+      "title": "Registros, argot y verlan",
+      "goal": "Distinguir los registros del francés y reconocer el argot y el verlan.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "Registros: soutenu, courant, familier. Une automobile / une voiture / une bagnole; un emploi / un travail / un boulot; de l'argent / du fric / de la thune.",
+        "El argot familier: bouffer (comer), un mec (un tipo), un flic (un policía), avoir la trouille (tener miedo), c'est nul (es malísimo).",
+        "El verlan invierte las sílabas (verlan viene de à l'envers): fou → ouf, femme → meuf, louche → chelou, bizarre → zarbi, fête → teuf, lourd → relou, flic → keuf.",
+        "El francés familier también omite: ne (J'sais pas), il (Faut y aller) y acorta: t'as, t'es, y a (il y a).",
+        "El argot y el verlan son de la charla entre amigos y de la música: en un contexto formal suenan fuera de lugar."
+      ],
+      "examples": [
+        { "target": "C'est ouf, ce concert !", "es": "¡Es una locura este recital!" },
+        { "target": "J'ai plus de thune pour finir le mois.", "es": "No me queda guita para terminar el mes." },
+        { "target": "Il est chelou, ce mec.", "es": "Es medio raro este tipo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Monsieur le directeur, votre projet est ouf.", "right": "Monsieur le directeur, votre projet est remarquable.", "why": "Ouf es verlan muy coloquial: en un registro formal se usa un adjetivo estándar." }
+      ]
+    },
+    {
+      "id": "adapter-variete",
+      "day": 5,
+      "title": "Reconocer y adaptar",
+      "goal": "Comprender textos de distintas variedades y pasarlos al francés estándar de Francia.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Primero identificá la variedad por las pistas: números (septante), comidas (dîner al mediodía), vocabulario (char, dépanneur) o verlan (ouf, meuf).",
+        "Para adaptar al estándar, reemplazá las palabras propias y revisá el registro: familier → courant.",
+        "Ninguna variedad es un error: adaptá solo si cambia el público al que te dirigís.",
+        "Si no entendés una palabra, preguntá: Qu'est-ce que ça veut dire, chez vous ? / Comment vous dites ça ici ?"
+      ],
+      "examples": [
+        { "target": "Ma blonde a stationné son char devant le dépanneur.", "es": "Mi novia estacionó el auto frente al almacén (francés de Quebec)." },
+        { "target": "En Belgique, on dit septante au lieu de soixante-dix.", "es": "En Bélgica se dice septante en lugar de soixante-dix." },
+        { "target": "Ce mec est relou, il me prend la tête.", "es": "Ese tipo es un pesado, me tiene podrido." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ma blonde a garé sa voiture (adaptado para lectores de Francia).", "right": "Ma copine a garé sa voiture.", "why": "Al adaptar al estándar de Francia hay que cambiar también blonde, que en Quebec significa 'novia'." }
+      ]
+    }
+  ]
+}

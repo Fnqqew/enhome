@@ -1,0 +1,125 @@
+{
+  "id": "it-c1-passato-remoto",
+  "level": "C1",
+  "order": 2,
+  "title": "El passato remoto en la narración",
+  "targetTitle": "Il passato remoto nella narrazione",
+  "description": "Dominar el passato remoto: todas sus formas irregulares, el trapassato remoto, cuándo elegirlo frente al passato prossimo y cómo cambia su uso entre el norte, Toscana y el sur.",
+  "objectives": [
+    "Conjugar el passato remoto regular e irregular en todas las personas",
+    "Reconocer y usar el trapassato remoto",
+    "Elegir entre passato remoto y passato prossimo según el texto y la distancia",
+    "Reconocer el uso regional del passato remoto",
+    "Escribir una biografía breve"
+  ],
+  "prerequisites": ["it-b1-trapassato-remoto"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "remoto-forme-complete",
+      "day": 1,
+      "title": "Todas las formas",
+      "goal": "Conjugar el passato remoto regular e irregular en todas las personas.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Regulares: -are → -ai, -asti, -ò, -ammo, -aste, -arono; -ere → -ei/-etti, -esti, -é/-ette, -emmo, -este, -erono/-ettero; -ire → -ii, -isti, -ì, -immo, -iste, -irono.",
+        "En los irregulares, tu, noi y voi son casi siempre regulares y se forman desde el infinitivo: facesti, facemmo, faceste; dicesti; vedesti.",
+        "Irregulares del esquema 1-3-3 (io, lui, loro): chiedere → chiesi, chiese, chiesero; rispondere → risposi; conoscere → conobbi; sapere → seppi; volere → volli; tenere → tenni; rimanere → rimasi; piacere → piacque.",
+        "Muy irregulares: essere (fui, fosti, fu, fummo, foste, furono), dare (diedi, desti, diede, demmo, deste, diedero) y stare (stetti, stesti, stette, stemmo, steste, stettero)."
+      ],
+      "examples": [
+        { "target": "Lo conobbi a una festa nel 1998.", "es": "Lo conocí en una fiesta en 1998." },
+        { "target": "Rimanemmo in silenzio per un lungo momento.", "es": "Nos quedamos en silencio un largo rato." },
+        { "target": "Gli chiesero perché fosse tornato.", "es": "Le preguntaron por qué había vuelto." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Noi fecimo una lunga passeggiata.", "right": "Noi facemmo una lunga passeggiata.", "why": "Noi es regular y se forma desde el infinitivo: facemmo. La raíz fec- solo va en io, lui y loro." },
+        { "wrong": "Lui sapé la verità.", "right": "Lui seppe la verità.", "why": "Sapere es irregular: seppi, seppe, seppero." }
+      ]
+    },
+    {
+      "id": "trapassato-remoto",
+      "day": 2,
+      "title": "El trapassato remoto",
+      "goal": "Reconocer y usar el trapassato remoto en la narración literaria.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Passato remoto de avere o essere + participio: ebbi finito, fui arrivato. Equivale al pretérito anterior del español ('hubo terminado').",
+        "Solo se usa después de quando, dopo che, appena o non appena, con el verbo principal en passato remoto: Appena ebbe finito, uscì.",
+        "Expresa una acción inmediatamente anterior; en los demás casos se usa el trapassato prossimo: Disse che era stato malato.",
+        "En la escritura actual muchas veces se reemplaza por el participio o el infinitivo: Finito il lavoro, uscì. Dopo aver finito, uscì."
+      ],
+      "examples": [
+        { "target": "Quando ebbe letto la lettera, la bruciò.", "es": "Cuando hubo leído la carta, la quemó." },
+        { "target": "Non appena fu uscito, cominciò a piovere.", "es": "Apenas hubo salido, empezó a llover." },
+        { "target": "Dopo che ebbero cenato, andarono a dormire.", "es": "Después de que hubieron cenado, se fueron a dormir." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Quando ebbe finito, è uscito.", "right": "Quando ebbe finito, uscì.", "why": "El trapassato remoto va solo con un verbo principal en passato remoto." }
+      ]
+    },
+    {
+      "id": "remoto-o-prossimo",
+      "day": 3,
+      "title": "Remoto o prossimo",
+      "goal": "Elegir entre passato remoto y passato prossimo según el tipo de texto y la distancia psicológica.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "En el estándar, el remoto se usa para hechos cerrados que se sienten lejanos o sin relación con el presente; el prossimo, para hechos que siguen pesando en el presente.",
+        "La distancia es psicológica más que cronológica: Dante nacque nel 1265, pero Ho conosciuto mia moglie trent'anni fa (sigue importando hoy).",
+        "En la narrativa literaria y en los libros de historia predomina el remoto; en los diarios, la charla y los mails, el prossimo.",
+        "En un mismo relato no mezcles los dos para la misma línea de acción: elegí uno y mantenelo."
+      ],
+      "examples": [
+        { "target": "Garibaldi sbarcò in Sicilia nel 1860.", "es": "Garibaldi desembarcó en Sicilia en 1860." },
+        { "target": "Mi sono laureata nel 2015 e da allora lavoro qui.", "es": "Me recibí en 2015 y desde entonces trabajo acá." },
+        { "target": "Quell'estate conobbi l'uomo che sarebbe diventato mio marito.", "es": "Ese verano conocí al hombre que iba a ser mi marido." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Stamattina mi alzai alle sette.", "right": "Stamattina mi sono alzato alle sette.", "why": "Para algo de hoy, el estándar usa el passato prossimo; el remoto con stamattina suena a uso regional del sur." }
+      ]
+    },
+    {
+      "id": "remoto-regionale",
+      "day": 4,
+      "title": "Norte, Toscana y sur",
+      "goal": "Reconocer cómo cambia el uso del passato remoto según la región.",
+      "focus": ["reading", "grammar"],
+      "keyPoints": [
+        "En el norte, en la charla, el remoto casi desapareció: se usa el prossimo incluso para hechos lejanos (Mio nonno è nato nel 1920).",
+        "En Toscana el remoto sigue vivo en la charla para hechos pasados que se sienten cerrados, con una distinción parecida a la del español de España entre 'comí' y 'he comido'.",
+        "En el sur (Sicilia, Calabria, partes de Campania y Puglia), en la charla el remoto se usa mucho, incluso para hechos recientes: Ieri andai al mare. Es un rasgo regional.",
+        "Para un rioplatense, el uso del sur suena natural ('ayer fui'); en el estándar escrito y en el norte, preferí el prossimo para el pasado reciente."
+      ],
+      "examples": [
+        { "target": "Ieri andai al mare con mio cugino.", "es": "Ayer fui a la playa con mi primo." },
+        { "target": "Mio nonno è nato nel 1920.", "es": "Mi abuelo nació en 1920." },
+        { "target": "Quando ero piccolo, mia nonna mi raccontò questa storia.", "es": "Cuando era chico, mi abuela me contó esta historia." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ieri ricevetti il Suo messaggio e Le rispondo subito.", "right": "Ieri ho ricevuto il Suo messaggio e Le rispondo subito.", "why": "En el estándar, un hecho de ayer ligado al presente va en passato prossimo; el remoto en ese contexto suena regional." }
+      ]
+    },
+    {
+      "id": "biografia",
+      "day": 5,
+      "title": "Escribir una biografía",
+      "goal": "Comprender y escribir una biografía breve en passato remoto.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Estructura: nacimiento (nacque a…), formación (studiò, si laureò), obra o hechos principales, muerte (morì) y legado (oggi è ricordato come…).",
+        "Combiná el remoto con el imperfetto para el fondo (all'epoca viveva a Roma) y el trapassato para lo anterior (aveva già pubblicato due libri).",
+        "Verbos frecuentes: nacque, crebbe (crecer), si trasferì, pubblicò, divenne o diventò, morì."
+      ],
+      "examples": [
+        { "target": "Italo Calvino nacque a Cuba nel 1923.", "es": "Italo Calvino nació en Cuba en 1923." },
+        { "target": "Crebbe a Sanremo e poi si trasferì a Torino.", "es": "Creció en San Remo y después se mudó a Turín." },
+        { "target": "Morì a Siena nel 1985.", "es": "Murió en Siena en 1985." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Crescé a Sanremo.", "right": "Crebbe a Sanremo.", "why": "Crescere es irregular en el passato remoto: crebbi, crebbe, crebbero." },
+        { "wrong": "Morí a Siena nel 1985.", "right": "Morì a Siena nel 1985.", "why": "La tercera persona de morire es morì, con acento grave; morí, con acento agudo, es español." }
+      ]
+    }
+  ]
+}

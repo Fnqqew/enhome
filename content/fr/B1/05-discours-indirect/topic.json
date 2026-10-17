@@ -1,0 +1,127 @@
+{
+  "id": "fr-b1-discours-indirect",
+  "level": "B1",
+  "order": 5,
+  "title": "Discurso indirecto",
+  "targetTitle": "Le discours indirect",
+  "description": "Cómo contar lo que dijo, preguntó o pidió otra persona. Cambian los pronombres, las expresiones de tiempo y, si el verbo que introduce la frase está en pasado, también los tiempos verbales.",
+  "objectives": [
+    "Transmitir afirmaciones con dire que y adaptar los pronombres",
+    "Transmitir preguntas con si, ce que, ce qui y las palabras interrogativas",
+    "Transmitir órdenes y pedidos con de + infinitivo",
+    "Hacer la concordancia de tiempos y cambiar las expresiones de tiempo",
+    "Contar una conversación por escrito"
+  ],
+  "prerequisites": ["fr-a2-futur-conditionnel", "fr-b1-plus-que-parfait"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "dire-que",
+      "day": 1,
+      "title": "Contar lo que alguien dice",
+      "goal": "Transmitir afirmaciones con un verbo introductor en presente y adaptar pronombres y posesivos.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con el verbo introductor en presente, los tiempos no cambian: Je suis fatigué → Il dit qu'il est fatigué.",
+        "Cambian los pronombres y los posesivos según quién habla: Je viens avec ma sœur → Elle dit qu'elle vient avec sa sœur.",
+        "Que se repite delante de cada oración que depende del verbo: Il dit qu'il est fatigué et qu'il va se coucher.",
+        "Variá los verbos introductores: expliquer, répondre, annoncer, ajouter, affirmer, raconter."
+      ],
+      "examples": [
+        { "target": "Marie dit qu'elle arrive dans dix minutes.", "es": "Marie dice que llega en diez minutos." },
+        { "target": "Il explique qu'il ne peut pas venir et qu'il est désolé.", "es": "Explica que no puede venir y que lo lamenta." },
+        { "target": "Mes parents disent que tout va bien.", "es": "Mis papás dicen que todo está bien." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il dit que il est fatigué.", "right": "Il dit qu'il est fatigué.", "why": "Que se apostrofa delante de vocal: qu'il, qu'elle." },
+        { "wrong": "Elle dit qu'elle vient avec ma sœur (hablando de la hermana de ella).", "right": "Elle dit qu'elle vient avec sa sœur.", "why": "Al pasar al discurso indirecto, el posesivo cambia como el pronombre: ma → sa." }
+      ]
+    },
+    {
+      "id": "questions-indirectes",
+      "day": 2,
+      "title": "Preguntas indirectas",
+      "goal": "Transmitir preguntas con si, ce que, ce qui y las palabras interrogativas.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Pregunta de sí o no → si: Tu viens ? → Il demande si je viens.",
+        "Qu'est-ce que → ce que; qu'est-ce qui → ce qui: Il demande ce que je veux. Il demande ce qui se passe.",
+        "Où, quand, comment, pourquoi, combien y qui se mantienen: Il demande où j'habite.",
+        "En la pregunta indirecta no hay est-ce que ni inversión del pronombre, y no se pone signo de pregunta."
+      ],
+      "examples": [
+        { "target": "Elle me demande si j'aime le jazz.", "es": "Me pregunta si me gusta el jazz." },
+        { "target": "Je ne sais pas ce que tu veux dire.", "es": "No sé qué querés decir." },
+        { "target": "Il voudrait savoir à quelle heure le concert commence.", "es": "Quisiera saber a qué hora empieza el recital." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il me demande qu'est-ce que je veux.", "right": "Il me demande ce que je veux.", "why": "En la pregunta indirecta qu'est-ce que se vuelve ce que." },
+        { "wrong": "Je ne sais pas où est-ce qu'il habite.", "right": "Je ne sais pas où il habite.", "why": "En la pregunta indirecta no se usa est-ce que." }
+      ]
+    },
+    {
+      "id": "ordres-demandes",
+      "day": 3,
+      "title": "Órdenes y pedidos",
+      "goal": "Transmitir órdenes, pedidos y consejos con de + infinitivo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Imperativo → de + infinitivo: Ferme la porte ! → Il me dit de fermer la porte.",
+        "La negación va junta delante del infinitivo: Ne fume pas ! → Il me dit de ne pas fumer.",
+        "Verbos: dire de, demander de, conseiller de, interdire de, proposer de, rappeler de.",
+        "Donde el español usa 'que' + subjuntivo ('me dijo que cerrara'), el francés prefiere de + infinitivo."
+      ],
+      "examples": [
+        { "target": "Le médecin m'a conseillé de faire du sport.", "es": "El médico me aconsejó que hiciera deporte." },
+        { "target": "Ma mère m'a demandé de ne pas rentrer tard.", "es": "Mi mamá me pidió que no volviera tarde." },
+        { "target": "Le prof nous a dit de lire le chapitre trois.", "es": "El profe nos dijo que leyéramos el capítulo tres." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il m'a dit que je ferme la porte.", "right": "Il m'a dit de fermer la porte.", "why": "Para transmitir una orden se usa de + infinitivo, no que + verbo como en español." },
+        { "wrong": "Elle m'a demandé de pas fumer.", "right": "Elle m'a demandé de ne pas fumer.", "why": "Delante del infinitivo, ne pas va completo y junto: de ne pas fumer." }
+      ]
+    },
+    {
+      "id": "concordance-temps",
+      "day": 4,
+      "title": "Concordancia de tiempos",
+      "goal": "Cambiar los tiempos y las expresiones de tiempo cuando el verbo introductor está en pasado.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "Con il a dit, il disait, etc.: présent → imparfait, passé composé → plus-que-parfait, futur → conditionnel présent, aller + infinitivo → allait + infinitivo.",
+        "El imparfait, el plus-que-parfait y el conditionnel no cambian.",
+        "Expresiones de tiempo: aujourd'hui → ce jour-là, hier → la veille, demain → le lendemain, la semaine prochaine → la semaine suivante, ici → là.",
+        "Es casi igual que en español: 'dijo que vendría', 'dijo que había terminado'."
+      ],
+      "examples": [
+        { "target": "Il m'a dit qu'il était fatigué.", "es": "Me dijo que estaba cansado." },
+        { "target": "Elle a dit qu'elle viendrait le lendemain.", "es": "Dijo que vendría al día siguiente." },
+        { "target": "Ils ont expliqué qu'ils avaient raté le train.", "es": "Explicaron que habían perdido el tren." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il m'a dit qu'il viendra le lendemain.", "right": "Il m'a dit qu'il viendrait le lendemain.", "why": "Si contás la frase desde el pasado (le lendemain), el futuro pasa a condicional: viendrait." }
+      ]
+    },
+    {
+      "id": "raconter-conversation",
+      "day": 5,
+      "title": "Contar una conversación",
+      "goal": "Comprender y escribir el relato de una conversación.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Variá los verbos introductores: il a expliqué que, elle a répondu que, il a ajouté que, elle m'a demandé si, il m'a conseillé de.",
+        "Usá el discurso indirecto para resumir y dejá la cita textual para lo más importante.",
+        "Cuidado con los pronombres: el je de la conversación pasa a il o elle, y el tu pasa a je si te lo dijeron a vos.",
+        "Conectores: d'abord, ensuite, alors, finalement, à la fin."
+      ],
+      "examples": [
+        { "target": "Mon chef m'a appelé et m'a demandé si je pouvais venir samedi.", "es": "Mi jefe me llamó y me preguntó si podía ir el sábado." },
+        { "target": "Je lui ai répondu que j'avais déjà des projets.", "es": "Le contesté que ya tenía planes." },
+        { "target": "Finalement, il m'a dit de ne pas m'inquiéter.", "es": "Al final, me dijo que no me preocupara." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Il m'a dit de ne m'inquiéter pas.", "right": "Il m'a dit de ne pas m'inquiéter.", "why": "Con un infinitivo, ne pas va junto delante del pronombre y del verbo." }
+      ]
+    }
+  ]
+}

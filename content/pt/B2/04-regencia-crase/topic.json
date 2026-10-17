@@ -1,0 +1,132 @@
+{
+  "id": "pt-b2-regencia-crase",
+  "level": "B2",
+  "order": 4,
+  "title": "Régimen verbal y crase",
+  "targetTitle": "Regência e crase",
+  "description": "Qué preposición pide cada verbo (assistir a, precisar de, ir para) y cuándo se escribe à. Es un tema de escritura: al hablar, en Brasil la crase no se nota y muchas preposiciones se relajan.",
+  "objectives": [
+    "Usar la preposición correcta con los verbos que cambian respecto del español",
+    "Elegir entre ir a, ir para y chegar a/em según el registro",
+    "Saber cuándo se escribe à (crase)",
+    "Aplicar la crase en horas, expresiones fijas y nombres de lugar",
+    "Revisar un correo formal"
+  ],
+  "prerequisites": ["pt-a1-preposicoes-possessivos", "pt-a2-pronomes"],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "regencia-verbal",
+      "day": 1,
+      "title": "Verbos y preposiciones",
+      "goal": "Usar la preposición que pide cada verbo.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Con preposición en portugués y sin ella en español: precisar de (necesitar), assistir a (ver una película o un partido).",
+        "Sin preposición en portugués: namorar alguém (salir con alguien), sin com.",
+        "preferir A a B: Prefiro cinema a teatro (sin 'mais' y sin 'do que').",
+        "lembrar y esquecer: o sin pronombre y sin de (lembrei o nome) o con los dos (me lembrei do nome).",
+        "Al hablar, en Brasil se dice assistir o filme; en lo escrito, assistir ao filme."
+      ],
+      "examples": [
+        { "target": "Preciso de um carregador.", "es": "Necesito un cargador." },
+        { "target": "Você assistiu ao jogo ontem?", "es": "¿Viste el partido ayer?" },
+        { "target": "Ela namora o Pedro há dois anos.", "es": "Sale con Pedro hace dos años." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Eu preciso um carro.", "right": "Eu preciso de um carro.", "why": "Precisar lleva de antes de un sustantivo (antes de un infinitivo, no: preciso sair)." },
+        { "wrong": "Ela namora com o Pedro.", "right": "Ela namora o Pedro.", "why": "En la norma namorar va sin preposición; namorar com se oye mucho, pero evitalo al escribir." },
+        { "wrong": "Prefiro mais praia do que montanha.", "right": "Prefiro praia a montanha.", "why": "Preferir ya incluye la idea de 'más': se construye preferir algo a otra cosa." }
+      ]
+    },
+    {
+      "id": "ir-chegar",
+      "day": 2,
+      "title": "Ir a, ir para y chegar em",
+      "goal": "Elegir la preposición con verbos de movimiento según el registro.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "ir a: ir y volver pronto, y en lo escrito: Vou ao banco. ir para: quedarse un tiempo, y en general al hablar: Vou para casa. Ele foi para a Europa.",
+        "En la charla se oye ir em: Vou no médico. Al escribir: Vou ao médico.",
+        "chegar em es lo normal al hablar (Cheguei em casa); en textos formales se recomienda chegar a: Chegamos ao aeroporto às dez.",
+        "Casa, cuando es la tuya, va sin artículo: Vou para casa, Estou em casa, Saí de casa."
+      ],
+      "examples": [
+        { "target": "Vou ao mercado e já volto.", "es": "Voy al súper y ya vuelvo." },
+        { "target": "Eles foram para Portugal e não voltaram mais.", "es": "Se fueron a Portugal y no volvieron más." },
+        { "target": "Chegamos ao hotel à meia-noite.", "es": "Llegamos al hotel a la medianoche." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Prezada Ana, ontem fui no médico.", "right": "Prezada Ana, ontem fui ao médico.", "why": "Ir em es de la charla; al escribir se usa ir a (ao, à)." },
+        { "wrong": "Vou a casa.", "right": "Vou para casa.", "why": "En Brasil se dice ir para casa; vou a casa suena a Portugal." }
+      ]
+    },
+    {
+      "id": "crase-regra",
+      "day": 3,
+      "title": "La crase: a + a = à",
+      "goal": "Saber cuándo se escribe à.",
+      "focus": ["grammar", "reading"],
+      "keyPoints": [
+        "La crase es la fusión de la preposición a con el artículo a: Vou a + a praia = Vou à praia.",
+        "Truco: cambiá el sustantivo por uno masculino. Si queda ao, va à: Vou à praia → Vou ao parque.",
+        "Nunca va antes de masculino, de verbo, de uma (salvo en la hora: à uma) ni de la mayoría de los pronombres: a pé, começar a falar, a uma amiga, a ela, a você.",
+        "También se junta con aquele, aquela, aquilo: àquele, àquela, àquilo.",
+        "En Brasil se pronuncia igual que a: es solo una cuestión de escritura."
+      ],
+      "examples": [
+        { "target": "Fomos à praia no domingo.", "es": "Fuimos a la playa el domingo." },
+        { "target": "Entreguei o documento à secretária.", "es": "Le entregué el documento a la secretaria." },
+        { "target": "Não fui àquela festa.", "es": "No fui a esa fiesta." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Ele começou à trabalhar cedo.", "right": "Ele começou a trabalhar cedo.", "why": "Antes de un verbo no hay artículo, así que no hay crase." },
+        { "wrong": "Fomos à pé.", "right": "Fomos a pé.", "why": "Pé es masculino: no lleva artículo femenino y no hay crase." }
+      ]
+    },
+    {
+      "id": "crase-casos",
+      "day": 4,
+      "title": "Horas, expresiones y lugares",
+      "goal": "Aplicar la crase en los casos especiales más frecuentes.",
+      "focus": ["grammar"],
+      "keyPoints": [
+        "Horas: às três, à uma, à meia-noite, das 8h às 18h. Después de otra preposición no hay crase: para as três, desde as três, após as três. Con até es opcional.",
+        "Expresiones femeninas fijas: à noite, à tarde, à direita, à esquerda, às vezes, à vontade, à toa, à vista.",
+        "'A la manera de' lleva crase aunque no se vea la palabra moda: bife à milanesa, frango à passarinho.",
+        "Lugares, con el truco de la vuelta: Vou à Bahia (volto da Bahia) lleva crase; Vou a Salvador (volto de Salvador), no."
+      ],
+      "examples": [
+        { "target": "A loja abre das 9h às 18h.", "es": "El negocio abre de 9 a 18." },
+        { "target": "Pode ficar à vontade.", "es": "Ponete cómodo." },
+        { "target": "Na semana que vem vou à Argentina e depois a Montevidéu.", "es": "La semana que viene voy a la Argentina y después a Montevideo." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Vou viajar à Curitiba.", "right": "Vou viajar a Curitiba.", "why": "Curitiba no lleva artículo (volto de Curitiba), así que no hay crase." },
+        { "wrong": "A reunião foi adiada para às 15h.", "right": "A reunião foi adiada para as 15h.", "why": "Después de otra preposición (para, desde, após) no hay crase." },
+        { "wrong": "As vezes eu trabalho de casa.", "right": "Às vezes eu trabalho de casa.", "why": "Às vezes es una expresión femenina fija y lleva crase." }
+      ]
+    },
+    {
+      "id": "revisar-email",
+      "day": 5,
+      "title": "Revisar un correo antes de mandarlo",
+      "goal": "Comprender y escribir un correo profesional con regencia y crase correctas.",
+      "focus": ["reading", "writing"],
+      "keyPoints": [
+        "Revisá los verbos con preposición: assistir à reunião, referir-se ao relatório, informar algo a alguém.",
+        "Revisá cada a antes de una palabra femenina: à equipe, à diretoria, às 10h.",
+        "Expresiones de correo: em anexo, conforme combinado, referente a, devido a (referente à reunião, devido à greve)."
+      ],
+      "examples": [
+        { "target": "Envio em anexo o relatório referente à reunião de ontem.", "es": "Adjunto el informe sobre la reunión de ayer." },
+        { "target": "Peço que todos assistam à apresentação de quinta-feira.", "es": "Les pido a todos que asistan a la presentación del jueves." },
+        { "target": "Devido à greve, o evento foi transferido para as 14h.", "es": "Debido al paro, el evento se pasó a las 14." }
+      ],
+      "commonMistakes": [
+        { "wrong": "Referente a reunião de ontem, envio as notas.", "right": "Referente à reunião de ontem, envio as notas.", "why": "Referente pide a, y reunião lleva artículo: a + a = à." },
+        { "wrong": "Informo à todos que o prazo mudou.", "right": "Informo a todos que o prazo mudou.", "why": "Todos es masculino: no lleva crase." }
+      ]
+    }
+  ]
+}
