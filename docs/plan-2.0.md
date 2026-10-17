@@ -82,13 +82,13 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [ ] 47 Charla con Claude
 - [ ] 48 Estadísticas
 - [ ] 49 Biblioteca
-- [ ] 50 Novedades de cada versión
-- [ ] 51 Ayuda
+- [x] 50 Novedades de cada versión
+- [x] 51 Ayuda
 
 ## Inicio y navegación
 
 - [x] 52 Inicio enfocado en «qué hago hoy»
-- [ ] 53 Recorrido de bienvenida
+- [x] 53 Recorrido de bienvenida
 - [x] 54 Modo enfoque en la práctica y el examen
 - [x] 55 Barra lateral plegable
 - [x] 56 Buscador general con Ctrl+K

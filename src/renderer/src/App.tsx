@@ -10,6 +10,7 @@ import { useSettings } from './theme/SettingsProvider'
 import Home from './pages/Home'
 import CommandPalette from './components/CommandPalette'
 import { readLocal, ShellContext, writeLocal } from './shell'
+import { WelcomeTour, WhatsNew } from './components/Welcome'
 import RewardToasts from './components/RewardToasts'
 
 // Inicio va en el paquete principal; el resto de las secciones se carga cuando se abre
@@ -21,6 +22,7 @@ const PAGES = {
   juegos: () => import('./pages/Games'),
   lecturas: () => import('./pages/Readings'),
   diario: () => import('./pages/Journal'),
+  ayuda: () => import('./pages/Help'),
   resumenes: () => import('./pages/Summaries'),
   pruebas: () => import('./pages/Tests'),
   progreso: () => import('./pages/Progress'),
@@ -34,6 +36,7 @@ const Review = lazy(PAGES.repaso)
 const Games = lazy(PAGES.juegos)
 const Readings = lazy(PAGES.lecturas)
 const Journal = lazy(PAGES.diario)
+const Help = lazy(PAGES.ayuda)
 const Summaries = lazy(PAGES.resumenes)
 const Tests = lazy(PAGES.pruebas)
 const Progress = lazy(PAGES.progreso)
@@ -131,6 +134,14 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
   const [collapsed, setCollapsed] = useState(() => readLocal('sidebar') === 'collapsed')
   const [focus, setFocus] = useState(false)
   const [palette, setPalette] = useState(false)
+  const [version, setVersion] = useState<string | null>(null)
+
+  useEffect(() => {
+    window.api
+      .getAppInfo()
+      .then((info) => setVersion(info.version))
+      .catch(() => undefined)
+  }, [])
 
   useEffect(() => writeLocal('section', section), [section])
   useEffect(() => writeLocal('sidebar', collapsed ? 'collapsed' : 'open'), [collapsed])
@@ -232,6 +243,8 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
         </div>
       </nav>
       {palette && <CommandPalette navigate={navigate} onClose={() => setPalette(false)} />}
+      <WelcomeTour />
+      {version && <WhatsNew version={version} />}
       <RewardToasts trigger={section} />
       <main className="content">
         <div key={section} className="page">
@@ -265,6 +278,7 @@ function Page({
   if (section === 'juegos') return <Games />
   if (section === 'lecturas') return <Readings />
   if (section === 'diario') return <Journal />
+  if (section === 'ayuda') return <Help navigate={navigate} />
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />

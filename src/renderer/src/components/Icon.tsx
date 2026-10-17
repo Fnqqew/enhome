@@ -54,6 +54,12 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M6.5 3.5v17M4.5 7.5h4M4.5 12h4M4.5 16.5h4M11 8h5M11 11.5h5" />
     </>
   ),
+  ayuda: (
+    <>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6M12 16.8v.2" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>

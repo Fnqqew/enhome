@@ -20,6 +20,7 @@ export const SECTIONS = [
   { id: 'lecturas', label: 'Lecturas', group: 'extra' },
   { id: 'diario', label: 'Diario', group: 'extra' },
   { id: 'ajustes', label: 'Ajustes', group: 'app' },
+  { id: 'ayuda', label: 'Ayuda', group: 'app' },
   { id: 'comentarios', label: 'Comentarios', group: 'app' },
   { id: 'acerca', label: 'Acerca de', group: 'app' }
 ] as const satisfies readonly { id: string; label: string; group: SectionGroup }[]
