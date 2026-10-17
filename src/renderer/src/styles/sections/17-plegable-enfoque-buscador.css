@@ -1,0 +1,146 @@
+/* Barra lateral plegable, modo enfoque y buscador */
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.search-item {
+  margin-bottom: 0.3rem;
+  color: var(--muted);
+}
+
+.search-item kbd {
+  margin-left: auto;
+  font-size: 0.68rem;
+}
+
+.collapse-button {
+  margin-left: auto;
+  color: var(--sidebar-text);
+  opacity: 0.7;
+  transition: transform 0.2s ease;
+}
+
+.shell {
+  transition: grid-template-columns 0.22s ease;
+}
+
+.shell.collapsed {
+  --sidebar-w: 68px;
+}
+
+.shell.collapsed .nav-label,
+.shell.collapsed .nav-group-label,
+.shell.collapsed .lang-name,
+.shell.collapsed .lang-chevron {
+  display: none;
+}
+
+.shell.collapsed .nav-item,
+.shell.collapsed .brand {
+  justify-content: center;
+  padding-inline: 0;
+}
+
+.shell.collapsed .sidebar-foot {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shell.collapsed .collapse-button {
+  margin-left: 0;
+  transform: rotate(180deg);
+}
+
+.shell.collapsed .lang-current {
+  justify-content: center;
+}
+
+.shell.focus {
+  --sidebar-w: 0px;
+}
+
+.shell.focus .sidebar {
+  visibility: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.palette-backdrop {
+  align-items: flex-start;
+  padding-top: 12vh;
+}
+
+.palette {
+  width: min(620px, calc(100vw - 32px));
+  padding: 0.6rem;
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  animation: rise-in 0.16s ease-out;
+}
+
+.palette-input {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 1.05rem;
+  outline: none;
+}
+
+.palette-list {
+  max-height: 52vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.palette-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+[aria-selected='true'] > .palette-item {
+  background: var(--accent-soft);
+}
+
+.palette-label {
+  flex: 1;
+  min-width: 0;
+}
+
+.palette-empty {
+  padding: 0.8rem;
+}
+
+.palette-foot {
+  margin: 0;
+  padding: 0.3rem 0.6rem 0.2rem;
+}
+
+.header-tools {
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.shell.focus .content .page {
+  max-width: 920px;
+  margin-inline: auto;
+}

@@ -1,0 +1,12 @@
+/* Ventanas chicas: las grillas pasan a una columna y las tarjetas usan todo el ancho. */
+@media (max-width: 999px) {
+  .content {
+    padding-inline: 1rem;
+  }
+  .review-stats {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+  .today-head h2 {
+    font-size: 1.35rem;
+  }
+}

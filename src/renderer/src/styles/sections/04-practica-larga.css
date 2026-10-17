@@ -1,0 +1,92 @@
+/* Práctica larga: situaciones, conversaciones y tandas */
+
+.situation {
+  padding: calc(0.8rem * var(--space)) 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--accent-soft);
+}
+
+.goal {
+  color: var(--muted);
+}
+
+.part-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.9rem * var(--space));
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.part-cue {
+  font-weight: 500;
+}
+
+.part-result {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--accent-soft);
+  font-size: 0.92rem;
+}
+
+.part-result.bad {
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+}
+
+.part-mark {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.part-result.bad .part-mark {
+  color: var(--danger);
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.8rem * var(--space));
+}
+
+.chat-line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 85%;
+}
+
+.chat-line.mine {
+  align-self: flex-end;
+  width: min(32rem, 100%);
+}
+
+.chat-speaker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.chat-line.mine .chat-speaker {
+  text-align: right;
+}
+
+.bubble {
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius) var(--radius) var(--radius) 4px;
+  background: var(--surface-hover);
+}
+
+.chat-line.mine .text-answer {
+  border-radius: var(--radius) var(--radius) 4px var(--radius);
+}

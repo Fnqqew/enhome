@@ -1,0 +1,126 @@
+/* Selector de estilo */
+
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.75rem;
+}
+
+.style-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+  padding: 0.6rem 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  text-align: left;
+  cursor: pointer;
+}
+
+.style-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px -10px rgb(0 0 0 / 0.35);
+}
+
+.style-card[aria-pressed='true'] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  background: var(--accent-soft);
+}
+
+.style-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline: 0.2rem;
+}
+
+.style-head .badge {
+  margin-left: auto;
+}
+
+.style-card .logo {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.style-card > .muted {
+  padding-inline: 0.2rem;
+}
+
+.style-name {
+  font-weight: 700;
+}
+
+/* Miniatura de la app pintada con los colores del estilo. */
+.style-thumb {
+  display: grid;
+  grid-template-columns: 28% 1fr;
+  height: 5.6rem;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.thumb-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem 0.4rem;
+}
+
+.thumb-side i {
+  display: block;
+  height: 0.32rem;
+  border-radius: 999px;
+  background: rgb(128 128 128 / 0.35);
+}
+
+.thumb-side i:first-child {
+  width: 70%;
+  height: 0.45rem;
+  margin-bottom: 0.15rem;
+}
+
+.thumb-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem 0.55rem;
+}
+
+.thumb-title {
+  width: 45%;
+  height: 0.45rem;
+  border-radius: 999px;
+  opacity: 0.85;
+}
+
+.thumb-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.4rem;
+  border: 1px solid;
+  border-radius: 0.35rem;
+}
+
+.thumb-line {
+  height: 0.25rem;
+  border-radius: 999px;
+  opacity: 0.3;
+}
+
+.thumb-line.short {
+  width: 60%;
+}
+
+.thumb-btn {
+  width: 36%;
+  height: 0.5rem;
+  margin-top: auto;
+  border-radius: 999px;
+}

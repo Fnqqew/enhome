@@ -1,0 +1,72 @@
+/* Aviso de espera larga con Claude */
+
+.claude-wait {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  animation: rise-in 0.3s ease both;
+}
+
+.claude-wait span {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+/* Íconos de línea dentro de texto: miden lo mismo que la letra que los rodea */
+
+.glyph {
+  display: inline-block;
+  flex: none;
+  width: 1.05em;
+  height: 1.05em;
+  vertical-align: -0.16em;
+}
+
+.notice.with-icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.notice.with-icon .glyph {
+  margin-top: 0.15em;
+  color: var(--accent);
+}
+
+.streak-flame .glyph,
+.powerup-icon .glyph,
+.achievement-icon .glyph,
+.empty-icon .glyph {
+  vertical-align: middle;
+}
+
+.achievement.unlocked .achievement-icon,
+.powerup.has .powerup-icon,
+.streak-flame {
+  color: var(--accent);
+}
+
+.achievement:not(.unlocked) .achievement-icon {
+  color: var(--muted);
+}
+
+/* Texto solo para lectores de pantalla */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Los encabezados que reciben el foco al cambiar de ejercicio no muestran el recuadro del mouse. */
+.exercise-type:focus:not(:focus-visible) {
+  outline: none;
+}

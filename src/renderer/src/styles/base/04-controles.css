@@ -1,0 +1,67 @@
+/* Controles */
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  gap: 3px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.segmented button {
+  background: none;
+  border: none;
+  border-radius: 7px;
+  padding: calc(0.35rem * var(--space)) 0.85rem;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.segmented button:hover {
+  color: var(--text);
+}
+
+.segmented button[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.12);
+}
+
+.swatches {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+}
+
+.swatch[aria-pressed='true'] {
+  outline-color: var(--text);
+}
+
+.sample {
+  padding-top: calc(1rem * var(--space));
+  border-top: 1px solid var(--border);
+}
+
+.sample .en {
+  font-size: 1.15rem;
+  font-weight: 500;
+}

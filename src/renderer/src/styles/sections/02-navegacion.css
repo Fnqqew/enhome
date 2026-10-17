@@ -1,0 +1,67 @@
+/* Navegación */
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.nav-item[aria-current='page'] .nav-icon {
+  opacity: 1;
+}
+
+.nav-divider {
+  height: 1px;
+  margin: calc(0.6rem * var(--space)) 0.75rem;
+  background: var(--sidebar-border);
+  opacity: 0.6;
+}
+
+.sidebar-foot {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #2faa5f;
+}
+
+.status-dot.busy {
+  background: var(--danger);
+}
+
+/* Encabezado de cada sección */
+
+.page-intro {
+  max-width: 44rem;
+  margin: calc(-0.5rem * var(--space)) 0 calc(1.25rem * var(--space));
+  color: var(--muted);
+}
+
+/* Estados vacíos: dicen qué va a aparecer ahí, en vez de dejar un hueco. */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  padding-block: calc(2.5rem * var(--space));
+}
+
+.empty-icon {
+  font-size: 2.2rem;
+  opacity: 0.8;
+}

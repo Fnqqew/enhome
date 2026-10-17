@@ -1,0 +1,176 @@
+/* Base visual: minimalista, sobria y amigable.
+   SettingsProvider pone data-theme, data-font, data-size y data-density en <html>
+   y define --accent según la paleta elegida. */
+
+:root {
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-hover: #efeee9;
+  --border: #e4e2dc;
+  --text: #22211f;
+  --muted: #6f6c66;
+  --accent: #3f5bd0;
+  --accent-contrast: #ffffff;
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, transparent);
+  --danger: #c2413b;
+  --radius: 12px;
+
+  --font-moderna: 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+  --font-clasica: Georgia, Cambria, 'Times New Roman', serif;
+  --font-amigable: 'Nunito Variable', 'Segoe UI', system-ui, sans-serif;
+  --font: var(--font-moderna);
+  --font-display: var(--font);
+  --font-numbers: var(--font-display);
+  --font-size: 16px;
+  --space: 1;
+  --titlebar-h: 2.25rem;
+  --sidebar-w: 220px;
+
+  /* Lo que cada estilo puede redefinir (ver «Estilos» al final). */
+  --style-font: var(--font-moderna);
+  --style-display: var(--font-moderna);
+  --style-numbers: var(--style-display);
+  --btn-radius: calc(var(--radius) - 4px);
+  --btn-border: none;
+  --btn-shadow: none;
+  --card-border: 1px solid var(--border);
+  --card-shadow: none;
+  --sidebar-bg: var(--surface);
+  --sidebar-text: var(--text);
+  --sidebar-muted: var(--muted);
+  --sidebar-hover: var(--surface-hover);
+  --sidebar-border: var(--border);
+  --sidebar-current-bg: var(--accent-soft);
+  --sidebar-current-text: var(--accent);
+
+  /* Escala de diseño: tamaños de letra, espacios (se multiplican por la densidad) y radios.
+     Lo nuevo se escribe con estas variables en vez de números sueltos. */
+  --text-xs: 0.75rem;
+  --text-sm: 0.8rem;
+  --text-md: 1rem;
+  --text-lg: 1.1rem;
+  --text-xl: 1.35rem;
+  --text-2xl: 1.6rem;
+  --space-1: calc(0.25rem * var(--space));
+  --space-2: calc(0.5rem * var(--space));
+  --space-3: calc(0.75rem * var(--space));
+  --space-4: calc(1rem * var(--space));
+  --space-5: calc(1.5rem * var(--space));
+  --space-6: calc(2rem * var(--space));
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 1.4);
+  --radius-pill: 999px;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #161719;
+  --surface: #1f2023;
+  --surface-hover: #292a2e;
+  --border: #2e3034;
+  --text: #ecebe8;
+  --muted: #9a9892;
+  --accent-contrast: #111214;
+  --danger: #e5726c;
+  color-scheme: dark;
+}
+
+:root[data-font='estilo'] {
+  --font: var(--style-font);
+  --font-display: var(--style-display);
+  --font-numbers: var(--style-numbers);
+}
+:root[data-font='clasica'] { --font: var(--font-clasica); }
+:root[data-font='amigable'] { --font: var(--font-amigable); }
+
+:root[data-size='sm'] { --font-size: 14px; }
+:root[data-size='lg'] { --font-size: 18px; }
+
+:root[data-density='compact'] { --space: 0.7; }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  height: 100%;
+}
+
+/* La ventana no se desplaza: el scroll vive adentro del contenido, así la barra queda siempre arriba. */
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.55;
+}
+
+/* La app ocupa toda la ventana para que el scroll quede adentro del contenido. */
+#root {
+  height: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+h1 {
+  margin: 0 0 calc(1.25rem * var(--space));
+  font-size: var(--text-2xl);
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+h1,
+h2,
+.brand,
+.big,
+.flash-text,
+.level-code {
+  font-family: var(--font-display);
+}
+
+.grade,
+.stat-value,
+.streak-count,
+.hero-level-number {
+  font-family: var(--font-numbers);
+  font-variant-numeric: tabular-nums;
+}
+
+p {
+  margin: 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem * var(--space));
+}
+
+.centered {
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+  place-items: center;
+  padding: calc(2rem + var(--titlebar-h)) 2rem 2rem;
+}

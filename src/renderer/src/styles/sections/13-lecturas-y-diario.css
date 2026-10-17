@@ -1,0 +1,108 @@
+/* Lecturas */
+
+.reading-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.reading-item:hover {
+  border-color: var(--accent);
+}
+
+.reading-title {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.reading-text {
+  max-width: 68ch;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.reading-text p {
+  margin: 0 0 0.9rem;
+}
+
+mark.gloss {
+  padding: 0 0.1em;
+  border-radius: 3px;
+  background: var(--accent-soft);
+  color: inherit;
+  text-decoration: underline dotted var(--accent);
+  text-underline-offset: 3px;
+  cursor: help;
+}
+
+.glossary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 0.5rem 1rem;
+  margin: 0;
+}
+
+.glossary div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.glossary dt {
+  font-weight: 600;
+}
+
+.glossary dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Diario */
+
+.journal-text {
+  min-height: 9rem;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.badge.idea {
+  font-weight: 400;
+  white-space: normal;
+}
+
+.journal-entry {
+  padding: 0.6rem 0.8rem;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--bg);
+}
+
+.journal-entry summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.journal-entry[open] summary {
+  margin-bottom: 0.6rem;
+}

@@ -1,0 +1,72 @@
+/* Estructura principal */
+
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: calc(0.75rem * var(--space)) 0.75rem;
+  padding-top: calc(var(--titlebar-h) + 0.5rem);
+  border-right: 1px solid var(--sidebar-border);
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  padding: 0 0.5rem calc(1rem * var(--space));
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.lock-logo {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.nav-item {
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  padding: calc(0.55rem * var(--space)) 0.75rem;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: var(--sidebar-hover);
+}
+
+.nav-item[aria-current='page'] {
+  background: var(--sidebar-current-bg);
+  color: var(--sidebar-current-text);
+  font-weight: 600;
+}
+
+.sidebar-foot {
+  margin-top: auto;
+  padding: 0 0.75rem;
+  font-size: 0.8rem;
+  color: var(--sidebar-muted);
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  padding: calc(2rem * var(--space)) calc(2.5rem * var(--space));
+  padding-top: calc(var(--titlebar-h) + 1rem * var(--space));
+}

@@ -1,0 +1,106 @@
+/* Inicio: «¿qué hago hoy?» */
+
+.today-card {
+  background: linear-gradient(135deg, var(--accent-soft), transparent 55%), var(--surface);
+}
+
+.today-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.today-head > div:first-child {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+.today-head h2 {
+  margin: 0.15rem 0 0.25rem;
+  font-size: 1.6rem;
+}
+
+.today-head p {
+  margin: 0;
+}
+
+.greeting {
+  color: var(--accent);
+}
+
+.today-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-end;
+}
+
+.today-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.today-stat .glyph {
+  color: var(--accent);
+}
+
+.today-go {
+  padding-inline: 1.6rem;
+  font-size: 1.05rem;
+}
+
+.today-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.today-shortcut {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.today-shortcut:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.today-shortcut.done .glyph {
+  color: var(--accent);
+}
+
+.today-shortcut .count {
+  min-width: 1.4em;
+  padding: 0 0.35em;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .today-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

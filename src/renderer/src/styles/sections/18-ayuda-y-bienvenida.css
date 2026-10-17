@@ -1,0 +1,72 @@
+/* Ayuda, bienvenida y novedades */
+
+.faq {
+  padding: 0.65rem 0.8rem;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--bg);
+}
+
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.shortcut-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tour {
+  width: min(460px, calc(100vw - 32px));
+  text-align: center;
+  align-items: center;
+}
+
+.tour .row {
+  width: 100%;
+}
+
+.tour-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.7rem;
+  border-radius: 18px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  animation: pop-in 0.3s ease-out;
+}
+
+.tour-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tour-dots span {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.tour-dots span.on {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+.whats-new {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-left: 1.1rem;
+  line-height: 1.5;
+}

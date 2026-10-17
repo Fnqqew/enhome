@@ -103,7 +103,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 62 Gráficos de progreso
 - [x] 63 Modo lectura cómodo
 - [x] 64 Tres estilos nuevos: Noche, Papel y Alto contraste
-- [ ] 65 Ordenar el sistema de diseño
+- [x] 65 Ordenar el sistema de diseño
 - [x] 66 Editor de estilo propio
 - [x] 67 Ventanas chicas
 

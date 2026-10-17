@@ -1,0 +1,20 @@
+/* Transición de la tarjeta del día a la práctica */
+
+.today-card,
+.page-practica > section.card:first-of-type {
+  view-transition-name: day-card;
+}
+
+::view-transition-group(day-card) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.25s;
+}
+
+.card-header.with-ring {
+  align-items: center;
+}

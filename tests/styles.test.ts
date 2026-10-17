@@ -7,7 +7,7 @@ import { describe, expect, it } from 'vitest'
 import { STYLES, type StylePreview } from '../src/shared/settings'
 
 const stylesDir = join(__dirname, '..', 'src', 'renderer', 'src', 'styles')
-const base = readFileSync(join(stylesDir, 'base.css'), 'utf8')
+const base = readFileSync(join(stylesDir, 'base', '01-temas-y-elementos.css'), 'utf8')
 const styles = readFileSync(join(stylesDir, 'styles.css'), 'utf8')
 
 // Las variables de un bloque cuyo selector es exactamente el pedido.

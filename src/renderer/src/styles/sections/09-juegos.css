@@ -1,0 +1,237 @@
+/* Juegos */
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: calc(1rem * var(--space));
+}
+
+.game-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-2px);
+}
+
+.game-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.game-card-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.game-icon {
+  flex: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.45rem;
+  border-radius: 12px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.game-board {
+  transition: box-shadow 0.2s ease;
+}
+
+.game-board.flash-ok {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.game-board.flash-bad {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--danger) 55%, transparent);
+  animation: shake 0.25s ease;
+}
+
+.game-hud {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.timer {
+  flex: 1;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+.timer span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width 0.1s linear;
+}
+
+.game-prompt {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 650;
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+.game-score {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.game-score strong {
+  font-family: var(--font-numbers);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.game-score .hero-icon {
+  align-self: center;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.memory-card {
+  min-height: 5.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  background: var(--accent-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.2s ease;
+}
+
+.memory-card:not(.visible):hover {
+  transform: translateY(-2px);
+}
+
+.memory-card.visible {
+  background: var(--surface);
+  transform: rotateY(0deg);
+  animation: flip-in 0.25s ease;
+}
+
+.memory-card.found {
+  border-color: var(--accent);
+  opacity: 0.75;
+}
+
+@keyframes flip-in {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.lives {
+  display: inline-flex;
+  gap: 0.15rem;
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.lives .alive {
+  color: var(--danger);
+}
+
+.hangman-word {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.hangman-word span {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 1.6rem;
+  height: 2.1rem;
+  border-bottom: 2px solid var(--muted);
+  font-family: var(--font-numbers);
+  font-size: 1.3rem;
+  text-transform: lowercase;
+}
+
+.hangman-word span.shown {
+  border-color: var(--accent);
+  animation: rise-in 0.2s ease;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2.3rem, 1fr));
+  gap: 0.35rem;
+}
+
+.key {
+  padding: 0.45rem 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.key.hit {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.key.miss {
+  opacity: 0.35;
+}
+
+.dictation-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.mark {
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+}
+
+.mark.yes {
+  background: var(--accent-soft);
+}
+
+.mark.accent {
+  background: color-mix(in srgb, #e0a100 22%, transparent);
+}
+
+.mark.no {
+  background: color-mix(in srgb, var(--danger) 18%, transparent);
+  text-decoration: underline wavy var(--danger);
+}
+
+@media (max-width: 640px) {
+  .memory-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* En una grilla, las tarjetas no llevan el margen de las que van apiladas. */
+.games-grid > .card + .card {
+  margin-top: 0;
+}
