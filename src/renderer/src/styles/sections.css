@@ -1802,3 +1802,51 @@ mark.gloss {
 .page > .card:has(table.history) {
   max-width: 54rem;
 }
+
+/* Biblioteca */
+
+.library-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.library-list li {
+  padding: 0.25rem 0.4rem 0.4rem;
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.library-list li.open {
+  background: var(--bg);
+}
+
+.library-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 0.35rem 0.3rem;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.library-title {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.library-snippet {
+  margin: 0 0.3rem;
+}
+
+.library-body {
+  padding: 0.3rem 0.6rem 0.4rem;
+}

@@ -66,6 +66,12 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M7 16v-4M11 16V8M15 16v-6M19 16V5" />
     </>
   ),
+  biblioteca: (
+    <>
+      <path d="M5 4.5h3v15H5zM10 4.5h3v15h-3z" />
+      <path d="M15 5.5l2.9-.8 3.6 14.5-2.9.8z" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>

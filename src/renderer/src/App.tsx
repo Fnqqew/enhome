@@ -24,6 +24,7 @@ const PAGES = {
   diario: () => import('./pages/Journal'),
   ayuda: () => import('./pages/Help'),
   estadisticas: () => import('./pages/Stats'),
+  biblioteca: () => import('./pages/Library'),
   resumenes: () => import('./pages/Summaries'),
   pruebas: () => import('./pages/Tests'),
   progreso: () => import('./pages/Progress'),
@@ -39,6 +40,7 @@ const Readings = lazy(PAGES.lecturas)
 const Journal = lazy(PAGES.diario)
 const Help = lazy(PAGES.ayuda)
 const Stats = lazy(PAGES.estadisticas)
+const Library = lazy(PAGES.biblioteca)
 const Summaries = lazy(PAGES.resumenes)
 const Tests = lazy(PAGES.pruebas)
 const Progress = lazy(PAGES.progreso)
@@ -282,6 +284,7 @@ function Page({
   if (section === 'diario') return <Journal />
   if (section === 'ayuda') return <Help navigate={navigate} />
   if (section === 'estadisticas') return <Stats />
+  if (section === 'biblioteca') return <Library />
   if (section === 'resumenes') return <Summaries />
   if (section === 'pruebas') return <Tests navigate={navigate} onLockChange={onExamLock} />
   if (section === 'progreso') return <Progress navigate={navigate} />

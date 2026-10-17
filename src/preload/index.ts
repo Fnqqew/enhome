@@ -59,6 +59,7 @@ const api: Api = {
   takeRewardNews: () => invoke(IPC.rewardsNews),
   getCertificates: () => invoke(IPC.certificatesList),
   getStats: () => invoke(IPC.statsGet),
+  searchLibrary: (query) => invoke(IPC.librarySearch, query),
   getCertificateHtml: (level) => invoke(IPC.certificateHtml, level),
   saveCertificatePdf: (level) => invoke(IPC.certificatePdf, level),
   usePracticeHint: (exerciseId) => invoke(IPC.rewardsHint, exerciseId),

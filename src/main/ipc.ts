@@ -29,6 +29,7 @@ import { generateExam } from './exams/generation'
 import { Rewards } from './rewards/rewards'
 import { certificateHtml, certificates } from './rewards/certificates'
 import { buildStats } from './stats/stats'
+import { searchLibrary } from './library/library'
 import { CEFR_LEVELS } from '../shared/curriculum'
 import { Notebook } from './review/notebook'
 import { Games } from './games/games'
@@ -369,6 +370,7 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
       win.destroy()
     }
   })
+  handle(IPC.librarySearch, (query) => searchLibrary(courseDb(activeLanguage()), getServices().curriculum, z.string().max(200).parse(query ?? '')))
   handle(IPC.statsGet, () => buildStats(courseDb(activeLanguage()), getServices().curriculum, today()))
   handle(IPC.rewardsView, () => getServices().rewards.getView(today()))
   handle(IPC.rewardsNews, () => getServices().rewards.takeNews(today()))
