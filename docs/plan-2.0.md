@@ -80,7 +80,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 ## Secciones nuevas
 
 - [ ] 47 Charla con Claude
-- [ ] 48 Estadísticas
+- [x] 48 Estadísticas
 - [ ] 49 Biblioteca
 - [x] 50 Novedades de cada versión
 - [x] 51 Ayuda

@@ -60,6 +60,12 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.6M12 16.8v.2" />
     </>
   ),
+  estadisticas: (
+    <>
+      <path d="M4.5 19.5h15" />
+      <path d="M7 16v-4M11 16V8M15 16v-6M19 16V5" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>

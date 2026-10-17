@@ -111,6 +111,18 @@ export function WhatsNew({ version }: { version: string }): React.JSX.Element | 
       .catch(() => undefined)
   }, [version])
 
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent): void => {
+      if (e.key === 'Escape') {
+        writeLocal('version', version)
+        setOpen(false)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open, version])
+
   if (!open) return null
   const release = CHANGELOG.find((r) => r.version === version)!
   const close = (): void => {

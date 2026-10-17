@@ -58,6 +58,7 @@ const api: Api = {
   getProgressView: () => invoke(IPC.rewardsView),
   takeRewardNews: () => invoke(IPC.rewardsNews),
   getCertificates: () => invoke(IPC.certificatesList),
+  getStats: () => invoke(IPC.statsGet),
   getCertificateHtml: (level) => invoke(IPC.certificateHtml, level),
   saveCertificatePdf: (level) => invoke(IPC.certificatePdf, level),
   usePracticeHint: (exerciseId) => invoke(IPC.rewardsHint, exerciseId),

@@ -2,6 +2,7 @@
 
 import type { CefrLevel, CurriculumMap, CurriculumTopic, Topic } from './curriculum'
 import type { CertificateView } from './certificates'
+import type { StatsView } from './stats'
 import type { ExerciseAnswer, PracticeRating, PracticeResult, PracticeView } from './exercises'
 import type { FeedbackNote, NewFeedback } from './feedback'
 import type { CourseSummary, LanguageId } from './languages'
@@ -66,6 +67,7 @@ export const IPC = {
   rewardsView: 'rewards:view',
   rewardsNews: 'rewards:news',
   certificatesList: 'certificates:list',
+  statsGet: 'stats:get',
   certificateHtml: 'certificate:html',
   certificatePdf: 'certificate:pdf',
   rewardsHint: 'rewards:hint',
@@ -187,6 +189,7 @@ export interface Api {
   getProgressView(): Promise<ProgressView>
   takeRewardNews(): Promise<RewardNews[]>
   getCertificates(): Promise<CertificateView[]>
+  getStats(): Promise<StatsView>
   getCertificateHtml(level: CefrLevel): Promise<string>
   // Devuelve dónde se guardó, o null si se canceló.
   saveCertificatePdf(level: CefrLevel): Promise<string | null>
