@@ -404,5 +404,20 @@ export const MIGRATIONS: Migration[] = [
       );
       CREATE INDEX chat_messages_chat ON chat_messages (chat_id);
     `
+  },
+  {
+    version: 12,
+    name: 'resaltados del modo lectura',
+    sql: `
+      -- Lo que el alumno resalta al leer un resumen o una lectura, con una nota opcional.
+      CREATE TABLE highlights (
+        id         INTEGER PRIMARY KEY,
+        doc_key    TEXT NOT NULL,
+        text       TEXT NOT NULL,
+        note       TEXT NOT NULL DEFAULT '',
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+      CREATE INDEX highlights_doc ON highlights (doc_key);
+    `
   }
 ]

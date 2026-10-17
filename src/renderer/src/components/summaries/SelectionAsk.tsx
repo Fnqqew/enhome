@@ -25,7 +25,16 @@ function contextOf(range: Range): string {
 const isShort = (text: string): boolean => text.split(/\s+/).length <= MAX_WORDS_TO_TRANSLATE && text.length <= 60
 
 // Botón flotante para preguntarle a Claude sobre el texto seleccionado dentro del contenedor.
-export default function SelectionAsk({ containerRef, topicId }: { containerRef: RefObject<HTMLElement | null>; topicId: string }): React.JSX.Element {
+export default function SelectionAsk({
+  containerRef,
+  topicId,
+  onHighlight
+}: {
+  containerRef: RefObject<HTMLElement | null>
+  topicId: string
+  // En el modo lectura: guarda el fragmento seleccionado como resaltado.
+  onHighlight?: (text: string) => void
+}): React.JSX.Element {
   const [anchor, setAnchor] = useState<Anchor | null>(null)
   const [fragment, setFragment] = useState<string | null>(null)
   const [word, setWord] = useState<Anchor | null>(null)
@@ -63,7 +72,7 @@ export default function SelectionAsk({ containerRef, topicId }: { containerRef: 
 
   return (
     <>
-      {anchor && !fragment && !word && (isShort(anchor.text) || topicId) && (
+      {anchor && !fragment && !word && (isShort(anchor.text) || topicId || onHighlight) && (
         <div className="ask-float" style={{ left: anchor.x, top: Math.max(8, anchor.y - 44) }}>
           {isShort(anchor.text) && (
             <button
@@ -73,6 +82,18 @@ export default function SelectionAsk({ containerRef, topicId }: { containerRef: 
               onClick={() => setWord(anchor)}
             >
               Traducir
+            </button>
+          )}
+          {onHighlight && (
+            <button
+              type="button"
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={() => {
+                onHighlight(anchor.text)
+                setAnchor(null)
+              }}
+            >
+              Resaltar
             </button>
           )}
           {/* Sin tópico (por ejemplo, en la charla) solo se ofrece traducir. */}

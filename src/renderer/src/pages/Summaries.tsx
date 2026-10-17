@@ -216,6 +216,7 @@ export default function Summaries(): React.JSX.Element {
         <ReadingMode
           title={`${info.label} · ${view.topicTitle}`}
           topicId={topicId}
+          docKey={`resumen:${topicId}:${type}`}
           speechText={content.format === 'markdown' ? content.markdown : undefined}
           onClose={() => setReading(false)}
         >

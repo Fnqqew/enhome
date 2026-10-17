@@ -101,7 +101,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 60 Esqueletos de carga y estados vacíos
 - [x] 61 Ejercicio rediseñado
 - [x] 62 Gráficos de progreso
-- [ ] 63 Modo lectura cómodo
+- [x] 63 Modo lectura cómodo
 - [x] 64 Tres estilos nuevos: Noche, Papel y Alto contraste
 - [ ] 65 Ordenar el sistema de diseño
 - [ ] 66 Editor de estilo propio

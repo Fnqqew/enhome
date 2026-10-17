@@ -15,7 +15,7 @@ import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './review'
 import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
-import type { JournalView, ReadingSummary, ReadingView } from './reading'
+import type { Highlight, JournalView, ReadingSummary, ReadingView } from './reading'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 
 export const IPC = {
@@ -86,6 +86,10 @@ export const IPC = {
   chatStart: 'chat:start',
   chatSend: 'chat:send',
   chatRemove: 'chat:remove',
+  highlightsList: 'highlights:list',
+  highlightAdd: 'highlight:add',
+  highlightNote: 'highlight:note',
+  highlightRemove: 'highlight:remove',
   readingsList: 'readings:list',
   readingGet: 'reading:get',
   readingGenerate: 'reading:generate',
@@ -215,6 +219,10 @@ export interface Api {
   startChat(suggestion: ChatSuggestion): Promise<ChatView>
   sendChat(chatId: number, text: string): Promise<ChatView>
   removeChat(chatId: number): Promise<ChatSummary[]>
+  getHighlights(docKey: string): Promise<Highlight[]>
+  addHighlight(docKey: string, text: string): Promise<Highlight[]>
+  noteHighlight(highlightId: number, note: string): Promise<void>
+  removeHighlight(docKey: string, highlightId: number): Promise<Highlight[]>
   getReadings(): Promise<ReadingSummary[]>
   getReading(readingId: number): Promise<ReadingView>
   generateReading(theme: string): Promise<ReadingView>

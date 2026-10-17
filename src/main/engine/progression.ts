@@ -284,6 +284,7 @@ export class Progression {
         DELETE FROM journal;
         DELETE FROM chat_messages;
         DELETE FROM chats;
+        DELETE FROM highlights;
         UPDATE player SET cefr_level = NULL, placement_done_at = NULL, xp = 0, player_level = 1,
           streak = 0, best_streak = 0, last_practice_date = NULL WHERE id = 1;
       `)

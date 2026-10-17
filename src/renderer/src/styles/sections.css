@@ -2256,3 +2256,122 @@ h3.exercise-heading {
 .card-header.with-ring {
   align-items: center;
 }
+
+/* Modo lectura cómodo: ajustes, índice y resaltados */
+
+.reading-prefs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.pref-group {
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.reading-layout {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.reading-toc {
+  position: sticky;
+  top: 5rem;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 13rem;
+  padding: 2.5rem 0 0;
+}
+
+.reading-toc button {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.reading-toc button:hover {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.reading-content.width-narrow {
+  max-width: 36rem;
+}
+
+.reading-content.width-normal {
+  max-width: 44rem;
+}
+
+.reading-content.width-wide {
+  max-width: 58rem;
+}
+
+.reading-content.size-sm {
+  font-size: 1rem;
+}
+
+.reading-content.size-md {
+  font-size: 1.12rem;
+}
+
+.reading-content.size-lg {
+  font-size: 1.3rem;
+}
+
+.reading-content.spacing-tight .markdown {
+  line-height: 1.55;
+}
+
+.reading-content.spacing-normal .markdown {
+  line-height: 1.85;
+}
+
+.reading-content.spacing-loose .markdown {
+  line-height: 2.15;
+}
+
+.reading-content {
+  flex: 1;
+  min-width: 0;
+}
+
+::highlight(enhome-marks) {
+  background-color: color-mix(in srgb, #ffd400 45%, transparent);
+}
+
+.reading-marks {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.mark-item .quote {
+  margin: 0 0 0.4rem;
+}
+
+.mark-item textarea {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 1100px) {
+  .reading-toc {
+    display: none;
+  }
+}

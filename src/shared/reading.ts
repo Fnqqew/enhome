@@ -58,3 +58,10 @@ export interface JournalView {
 }
 
 export const MAX_JOURNAL_LENGTH = 3000
+
+// Un fragmento resaltado en el modo lectura, con su nota.
+export interface Highlight {
+  id: number
+  text: string
+  note: string
+}

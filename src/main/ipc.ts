@@ -37,6 +37,7 @@ import { Vocabulary } from './vocab/vocab'
 import { Readings } from './reading/readings'
 import { Journal } from './reading/journal'
 import { Chats } from './chat/chat'
+import { addHighlight, listHighlights, removeHighlight, updateHighlightNote } from './reading/highlights'
 import { MAX_CHAT_MESSAGE } from '../shared/chat'
 import { MAX_JOURNAL_LENGTH } from '../shared/reading'
 import { GAME_IDS } from '../shared/games'
@@ -306,6 +307,11 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.chatStart, (suggestion) => getServices().chats.start(suggestionSchema.parse(suggestion), today()))
   handle(IPC.chatSend, (chatId, text) => getServices().chats.send(id.parse(chatId), z.string().max(MAX_CHAT_MESSAGE).parse(text)))
   handle(IPC.chatRemove, (chatId) => getServices().chats.remove(id.parse(chatId)))
+  const docKey = z.string().min(1).max(200)
+  handle(IPC.highlightsList, (key) => listHighlights(courseDb(activeLanguage()), docKey.parse(key)))
+  handle(IPC.highlightAdd, (key, text) => addHighlight(courseDb(activeLanguage()), docKey.parse(key), z.string().parse(text)))
+  handle(IPC.highlightNote, (highlightId, note) => updateHighlightNote(courseDb(activeLanguage()), id.parse(highlightId), z.string().parse(note)))
+  handle(IPC.highlightRemove, (key, highlightId) => removeHighlight(courseDb(activeLanguage()), docKey.parse(key), id.parse(highlightId)))
   handle(IPC.readingsList, () => getServices().readings.list())
   handle(IPC.readingGet, (readingId) => getServices().readings.get(id.parse(readingId)))
   handle(IPC.readingGenerate, (theme) => getServices().readings.generate(z.string().min(1).max(80).parse(theme), today()))
