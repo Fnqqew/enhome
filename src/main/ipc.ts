@@ -36,6 +36,8 @@ import { Games } from './games/games'
 import { Vocabulary } from './vocab/vocab'
 import { Readings } from './reading/readings'
 import { Journal } from './reading/journal'
+import { Chats } from './chat/chat'
+import { MAX_CHAT_MESSAGE } from '../shared/chat'
 import { MAX_JOURNAL_LENGTH } from '../shared/reading'
 import { GAME_IDS } from '../shared/games'
 import type { CurriculumTopic, Roadmap } from '../shared/curriculum'
@@ -71,6 +73,7 @@ interface Services {
   vocab: Vocabulary
   readings: Readings
   journal: Journal
+  chats: Chats
 }
 
 const summaryType = z.enum(SUMMARY_TYPE_IDS)
@@ -127,7 +130,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
         games: new Games(courseData, curriculum, progression),
         vocab: new Vocabulary(courseData, curriculum, language),
         readings: new Readings(courseData, curriculum, progression, language),
-        journal: new Journal(courseData, curriculum, progression, language)
+        journal: new Journal(courseData, curriculum, progression, language),
+        chats: new Chats(courseData, curriculum, progression, language)
       }
       courses.set(language, services)
     }
@@ -296,6 +300,12 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   handle(IPC.vocabDue, () => getServices().vocab.due(today()))
   handle(IPC.vocabReview, (cardId, knew) => getServices().vocab.review(id.parse(cardId), z.boolean().parse(knew), today()))
   handle(IPC.vocabRemove, (cardId) => getServices().vocab.remove(id.parse(cardId), today()))
+  const suggestionSchema = z.object({ title: z.string().max(120), scenario: z.string().max(600) })
+  handle(IPC.chatList, () => ({ chats: getServices().chats.list(), suggestions: getServices().chats.suggestions(today()) }))
+  handle(IPC.chatGet, (chatId) => getServices().chats.get(id.parse(chatId)))
+  handle(IPC.chatStart, (suggestion) => getServices().chats.start(suggestionSchema.parse(suggestion), today()))
+  handle(IPC.chatSend, (chatId, text) => getServices().chats.send(id.parse(chatId), z.string().max(MAX_CHAT_MESSAGE).parse(text)))
+  handle(IPC.chatRemove, (chatId) => getServices().chats.remove(id.parse(chatId)))
   handle(IPC.readingsList, () => getServices().readings.list())
   handle(IPC.readingGet, (readingId) => getServices().readings.get(id.parse(readingId)))
   handle(IPC.readingGenerate, (theme) => getServices().readings.generate(z.string().min(1).max(80).parse(theme), today()))

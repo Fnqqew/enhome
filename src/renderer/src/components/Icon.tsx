@@ -72,6 +72,12 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M15 5.5l2.9-.8 3.6 14.5-2.9.8z" />
     </>
   ),
+  charla: (
+    <>
+      <path d="M3.5 6.5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-4l-3.5 3v-3h-.5a2 2 0 0 1-2-2z" />
+      <path d="M15.5 9h3a2 2 0 0 1 2 2v4.5a2 2 0 0 1-2 2H18v2.5l-3-2.5h-2.5a2 2 0 0 1-2-2v-.5" />
+    </>
+  ),
   resumenes: PAGE,
   pruebas: (
     <>

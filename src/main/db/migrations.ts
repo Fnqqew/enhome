@@ -379,5 +379,30 @@ export const MIGRATIONS: Migration[] = [
         reviewed_on TEXT
       );
     `
+  },
+  {
+    version: 11,
+    name: 'charla con Claude',
+    sql: `
+      -- Conversaciones libres en el idioma del curso.
+      CREATE TABLE chats (
+        id         INTEGER PRIMARY KEY,
+        title      TEXT NOT NULL,
+        scenario   TEXT NOT NULL,
+        level      TEXT NOT NULL,
+        created_on TEXT NOT NULL
+      );
+
+      -- Cada mensaje; los del alumno guardan la corrección que hizo Claude.
+      CREATE TABLE chat_messages (
+        id         INTEGER PRIMARY KEY,
+        chat_id    INTEGER NOT NULL REFERENCES chats (id) ON DELETE CASCADE,
+        role       TEXT NOT NULL CHECK (role IN ('user', 'assistant')),
+        text       TEXT NOT NULL,
+        review     TEXT,
+        created_at TEXT NOT NULL DEFAULT (datetime('now'))
+      );
+      CREATE INDEX chat_messages_chat ON chat_messages (chat_id);
+    `
   }
 ]

@@ -79,7 +79,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Secciones nuevas
 
-- [ ] 47 Charla con Claude
+- [x] 47 Charla con Claude
 - [x] 48 Estadísticas
 - [x] 49 Biblioteca
 - [x] 50 Novedades de cada versión

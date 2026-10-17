@@ -63,7 +63,7 @@ export default function SelectionAsk({ containerRef, topicId }: { containerRef: 
 
   return (
     <>
-      {anchor && !fragment && !word && (
+      {anchor && !fragment && !word && (isShort(anchor.text) || topicId) && (
         <div className="ask-float" style={{ left: anchor.x, top: Math.max(8, anchor.y - 44) }}>
           {isShort(anchor.text) && (
             <button
@@ -75,9 +75,12 @@ export default function SelectionAsk({ containerRef, topicId }: { containerRef: 
               Traducir
             </button>
           )}
-          <button type="button" onMouseDown={(e) => e.preventDefault()} onClick={() => setFragment(anchor.text)}>
-            Preguntar a Claude
-          </button>
+          {/* Sin tópico (por ejemplo, en la charla) solo se ofrece traducir. */}
+          {topicId && (
+            <button type="button" onMouseDown={(e) => e.preventDefault()} onClick={() => setFragment(anchor.text)}>
+              Preguntar a Claude
+            </button>
+          )}
         </div>
       )}
       {word && (

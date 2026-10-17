@@ -17,6 +17,7 @@ export const SECTIONS = [
   { id: 'pruebas', label: 'Pruebas', group: 'estudio' },
   { id: 'progreso', label: 'Progreso', group: 'estudio' },
   { id: 'estadisticas', label: 'Estadísticas', group: 'estudio' },
+  { id: 'charla', label: 'Charla', group: 'extra' },
   { id: 'juegos', label: 'Juegos', group: 'extra' },
   { id: 'lecturas', label: 'Lecturas', group: 'extra' },
   { id: 'diario', label: 'Diario', group: 'extra' },

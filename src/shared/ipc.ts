@@ -16,6 +16,7 @@ import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './revie
 import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 import type { JournalView, ReadingSummary, ReadingView } from './reading'
+import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -80,6 +81,11 @@ export const IPC = {
   vocabDue: 'vocab:due',
   vocabReview: 'vocab:review',
   vocabRemove: 'vocab:remove',
+  chatList: 'chat:list',
+  chatGet: 'chat:get',
+  chatStart: 'chat:start',
+  chatSend: 'chat:send',
+  chatRemove: 'chat:remove',
   readingsList: 'readings:list',
   readingGet: 'reading:get',
   readingGenerate: 'reading:generate',
@@ -204,6 +210,11 @@ export interface Api {
   getDueWords(): Promise<VocabCard[]>
   reviewWord(cardId: number, knew: boolean): Promise<VocabCard>
   removeWord(cardId: number): Promise<VocabOverview>
+  getChats(): Promise<{ chats: ChatSummary[]; suggestions: ChatSuggestion[] }>
+  getChat(chatId: number): Promise<ChatView>
+  startChat(suggestion: ChatSuggestion): Promise<ChatView>
+  sendChat(chatId: number, text: string): Promise<ChatView>
+  removeChat(chatId: number): Promise<ChatSummary[]>
   getReadings(): Promise<ReadingSummary[]>
   getReading(readingId: number): Promise<ReadingView>
   generateReading(theme: string): Promise<ReadingView>
