@@ -140,6 +140,6 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Instalación y versiones
 
-- [ ] 87 Actualizar con un solo comando
-- [ ] 88 Versiones publicadas en GitHub
-- [ ] 89 Buscar actualizaciones desde la app
+- [x] 87 Actualizar con un solo comando
+- [x] 88 Versiones publicadas en GitHub
+- [x] 89 Buscar actualizaciones desde la app
