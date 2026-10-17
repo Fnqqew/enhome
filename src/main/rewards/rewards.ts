@@ -105,7 +105,9 @@ export class Rewards {
       const xp = this.totalXp()
       const level = levelForXp(xp)
       if (level > previousLevel) this.news('level', `¡Subiste al nivel ${level}: ${levelTitle(level)}!`)
-      this.db.prepare('UPDATE player SET xp = ?, player_level = ?, streak = ?, best_streak = ? WHERE id = 1').run(xp, level, streak.current, streak.best)
+      this.db
+        .prepare('UPDATE player SET xp = ?, player_level = ?, streak = ?, best_streak = ? WHERE id = 1')
+        .run(xp, level, streak.current, streak.best)
     })
   }
 
@@ -196,7 +198,8 @@ export class Rewards {
         throw new RewardsError('Ese ejercicio ya está respondido.')
       }
 
-      const existing = this.db.prepare('SELECT detail FROM powerup_uses WHERE context = ?').get(hintContext(exerciseId)) as { detail: string } | undefined
+      const existing = this.db.prepare('SELECT detail FROM powerup_uses WHERE context = ?').get(hintContext(exerciseId)) as
+        { detail: string } | undefined
       if (existing) return existing.detail
 
       const usedInSession = this.count(
@@ -215,8 +218,7 @@ export class Rewards {
   useSecondChance(examId: number, index: number): SecondChanceResult {
     return transaction(this.db, () => {
       const exam = this.db.prepare('SELECT kind, status, questions FROM exams WHERE id = ?').get(examId) as
-        | { kind: string; status: string; questions: string }
-        | undefined
+        { kind: string; status: string; questions: string } | undefined
       if (!exam || exam.kind !== 'weekly' || exam.status !== 'in_progress') {
         throw new RewardsError('La segunda oportunidad solo se usa durante un examen semanal.')
       }
@@ -227,8 +229,7 @@ export class Rewards {
       if (!question) throw new RewardsError('Esa pregunta no existe.')
       if (OPEN_TYPES.has(question.exercise.type)) throw new RewardsError('La segunda oportunidad no se puede usar en traducción ni escritura.')
       const saved = this.db.prepare('SELECT answer FROM exam_answers WHERE exam_id = ? AND question_index = ?').get(examId, index) as
-        | { answer: string | null }
-        | undefined
+        { answer: string | null } | undefined
       if (!saved?.answer) throw new RewardsError('Primero respondé la pregunta.')
 
       const graded = gradeAuto(question.exercise, JSON.parse(saved.answer) as ExerciseAnswer)
@@ -324,7 +325,9 @@ export class Rewards {
   }
 
   private streakData(): { weeks: StreakWeek[]; practiced: Set<string> } {
-    const weeks = this.db.prepare('SELECT id, week_start AS weekStart, starts_on AS startsOn FROM weeks ORDER BY week_start').all() as unknown as StreakWeek[]
+    const weeks = this.db
+      .prepare('SELECT id, week_start AS weekStart, starts_on AS startsOn FROM weeks ORDER BY week_start')
+      .all() as unknown as StreakWeek[]
     const dates = this.db.prepare('SELECT DISTINCT completed_on AS date FROM practice_units WHERE completed_on IS NOT NULL').all() as unknown as {
       date: string
     }[]

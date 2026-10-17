@@ -12,7 +12,7 @@ describe('normalize y matchesAny', () => {
   })
 
   it('acepta contracciones equivalentes', () => {
-    expect(matchesAny("She is not at home.", ["She isn't at home."])).toBe(true)
+    expect(matchesAny('She is not at home.', ["She isn't at home."])).toBe(true)
     expect(matchesAny('I cannot swim', ["I can't swim"])).toBe(true)
     expect(matchesAny("They're here", ['They are here'])).toBe(true)
   })
@@ -25,7 +25,14 @@ describe('normalize y matchesAny', () => {
 
 describe('gradeAuto', () => {
   it('opción múltiple', () => {
-    const e: StoredExercise = { type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['a', 'b', 'c', 'd'], correctIndex: 2, explanation: 'x' }
+    const e: StoredExercise = {
+      type: 'multiple_choice',
+      instruction: 'i',
+      prompt: 'p',
+      options: ['a', 'b', 'c', 'd'],
+      correctIndex: 2,
+      explanation: 'x'
+    }
     expect(gradeAuto(e, { type: 'multiple_choice', choice: 2 })).toMatchObject({ kind: 'graded', feedback: { correct: true, score: 10 } })
     expect(gradeAuto(e, { type: 'multiple_choice', choice: 0 })).toMatchObject({ kind: 'graded', feedback: { correct: false, correctAnswer: 'c' } })
   })

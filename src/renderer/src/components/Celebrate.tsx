@@ -23,7 +23,11 @@ export default function Celebrate({ active }: { active: boolean }): React.JSX.El
     <div className="celebrate" aria-hidden="true">
       <span className="celebrate-ring" />
       {Array.from({ length: SPARKS }, (_, i) => (
-        <span key={i} className="celebrate-spark" style={{ '--angle': `${(360 / SPARKS) * i}deg`, '--delay': `${(i % 3) * 40}ms` } as React.CSSProperties} />
+        <span
+          key={i}
+          className="celebrate-spark"
+          style={{ '--angle': `${(360 / SPARKS) * i}deg`, '--delay': `${(i % 3) * 40}ms` } as React.CSSProperties}
+        />
       ))}
     </div>
   )

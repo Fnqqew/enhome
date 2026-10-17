@@ -7,7 +7,9 @@ export type Db = DatabaseSync
 export function openDatabase(path: string, migrations: Migration[] = MIGRATIONS): Db {
   const db = new DatabaseSync(path)
   db.exec('PRAGMA foreign_keys = ON; PRAGMA journal_mode = WAL;')
-  db.exec('CREATE TABLE IF NOT EXISTS schema_migrations (version INTEGER PRIMARY KEY, name TEXT NOT NULL, applied_at TEXT NOT NULL DEFAULT (datetime(\'now\')))')
+  db.exec(
+    "CREATE TABLE IF NOT EXISTS schema_migrations (version INTEGER PRIMARY KEY, name TEXT NOT NULL, applied_at TEXT NOT NULL DEFAULT (datetime('now')))"
+  )
 
   const current = (db.prepare('SELECT COALESCE(MAX(version), 0) AS v FROM schema_migrations').get() as { v: number }).v
   for (const m of migrations.filter((m) => m.version > current).sort((a, b) => a.version - b.version)) {

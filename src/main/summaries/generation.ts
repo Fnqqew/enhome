@@ -6,7 +6,17 @@ import type { CurriculumTopic } from '../../shared/curriculum'
 import type { GeneratedSummaryType, SummaryContent } from '../../shared/summaries'
 import { SUMMARY_TYPES } from '../../shared/summaries'
 import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
-import { applyCorrections, CORRECTIONS_GUIDE, numbered, qualityChecklist, REVIEW_EFFORT, reviewSystemPrompt, roleSystemPrompt, selfCheck, spanish } from '../claude/quality'
+import {
+  applyCorrections,
+  CORRECTIONS_GUIDE,
+  numbered,
+  qualityChecklist,
+  REVIEW_EFFORT,
+  reviewSystemPrompt,
+  roleSystemPrompt,
+  selfCheck,
+  spanish
+} from '../claude/quality'
 import { languageInfo } from '../../shared/languages'
 
 const TIMEOUT_MS = 240_000
@@ -19,25 +29,30 @@ const systemPrompt = (topic: CurriculumTopic): string =>
 // Qué es cada tipo de resumen. {idioma} se reemplaza por el idioma del curso.
 const GUIDANCE: Record<GeneratedSummaryType, string> = {
   esquema: 'Un esquema jerárquico con viñetas cortas: lo esencial de cada subtema, sin párrafos largos. Entre 150 y 350 palabras.',
-  tablas: 'Tablas comparativas con las formas, los usos y ejemplos de cada subtema, con una frase de introducción antes de cada tabla. Entre 200 y 450 palabras.',
+  tablas:
+    'Tablas comparativas con las formas, los usos y ejemplos de cada subtema, con una frase de introducción antes de cada tabla. Entre 200 y 450 palabras.',
   ejemplos:
     'Muchos ejemplos en contexto agrupados por subtema y por situación cotidiana (al menos 4 por subtema), cada uno con su traducción y, si hace falta, una nota breve. Entre 300 y 600 palabras.',
   errores:
     'Los errores más comunes de hispanohablantes en este tópico: para cada uno, la forma incorrecta, la correcta, por qué pasa (influencia del español) y un truco para evitarlo. Entre 250 y 500 palabras.',
-  comparacion: 'Comparación con el español: qué funciona igual, qué cambia y qué no existe en español, con ejemplos lado a lado. Entre 250 y 500 palabras.',
+  comparacion:
+    'Comparación con el español: qué funciona igual, qué cambia y qué no existe en español, con ejemplos lado a lado. Entre 250 y 500 palabras.',
   'paso-a-paso':
     'Cómo construir las oraciones paso a paso, como una receta: pasos numerados para afirmar, negar y preguntar según corresponda, con un ejemplo armado en cada paso. Entre 250 y 500 palabras.',
   historia:
     'Una mini historia en {idioma} de 150 a 250 palabras que use el tema de forma natural, seguida de su traducción y de notas que señalen dónde aparece cada punto del tópico.',
-  dialogo: 'Un diálogo cotidiano en {idioma} entre dos personas, de 12 a 20 intervenciones, que use el tema, con la traducción de cada línea y notas breves sobre lo que se practica.',
-  simple: 'La explicación más simple posible, para alguien que nunca estudió gramática: pocas palabras técnicas, ideas cortas y uno o dos ejemplos por idea. Entre 150 y 300 palabras.',
+  dialogo:
+    'Un diálogo cotidiano en {idioma} entre dos personas, de 12 a 20 intervenciones, que use el tema, con la traducción de cada línea y notas breves sobre lo que se practica.',
+  simple:
+    'La explicación más simple posible, para alguien que nunca estudió gramática: pocas palabras técnicas, ideas cortas y uno o dos ejemplos por idea. Entre 150 y 300 palabras.',
   preguntas: 'Entre 6 y 10 preguntas frecuentes que se hace un alumno sobre este tópico, cada una con una respuesta clara y un ejemplo.',
   trucos: 'Trucos para recordar: reglas mnemotécnicas, asociaciones y atajos para no equivocarse, cada uno con un ejemplo. Entre 200 y 400 palabras.',
   tarjetas:
     'Entre 10 y 14 tarjetas de repaso que cubran todos los subtemas: front es una pregunta o consigna corta (en español, o una oración en {idioma} para completar), back es la respuesta breve y example es un ejemplo en {idioma} con su traducción entre paréntesis.'
 }
 
-const guidance = (topic: CurriculumTopic, type: GeneratedSummaryType): string => GUIDANCE[type].replaceAll('{idioma}', languageInfo(topic.language).name)
+const guidance = (topic: CurriculumTopic, type: GeneratedSummaryType): string =>
+  GUIDANCE[type].replaceAll('{idioma}', languageInfo(topic.language).name)
 
 const writingRules = (topic: CurriculumTopic): string => `Reglas:
 - Explicaciones en ${spanish()}; ejemplos en ${languageInfo(topic.language).name} con su traducción, en *cursiva* para que se lean con la voz del idioma.
@@ -103,7 +118,13 @@ ${body}`
 }
 
 async function generateMarkdown(topic: CurriculumTopic, type: GeneratedSummaryType, ask: Ask): Promise<SummaryContent> {
-  const { markdown } = await ask({ label: 'resumen', systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, type), schema: markdownSchema, timeoutMs: TIMEOUT_MS })
+  const { markdown } = await ask({
+    label: 'resumen',
+    systemPrompt: systemPrompt(topic),
+    prompt: buildSummaryPrompt(topic, type),
+    schema: markdownSchema,
+    timeoutMs: TIMEOUT_MS
+  })
   const review = await ask({
     label: 'resumen · revisión',
     systemPrompt: reviewSystemPrompt(topic.language),
@@ -126,7 +147,13 @@ En issues anotá, en una frase cada uno, los problemas que encontraste (vacío s
 }
 
 async function generateCards(topic: CurriculumTopic, ask: Ask): Promise<SummaryContent> {
-  const { cards } = await ask({ label: 'resumen', systemPrompt: systemPrompt(topic), prompt: buildSummaryPrompt(topic, 'tarjetas'), schema: cardsSchema, timeoutMs: TIMEOUT_MS })
+  const { cards } = await ask({
+    label: 'resumen',
+    systemPrompt: systemPrompt(topic),
+    prompt: buildSummaryPrompt(topic, 'tarjetas'),
+    schema: cardsSchema,
+    timeoutMs: TIMEOUT_MS
+  })
   const review = await ask({
     label: 'resumen · revisión',
     systemPrompt: reviewSystemPrompt(topic.language),

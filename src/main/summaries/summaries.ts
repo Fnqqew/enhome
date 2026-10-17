@@ -53,7 +53,8 @@ export class Summaries {
 
   getIndex(today: string): SummariesIndex {
     const state = this.progression.getState(today)
-    if (!state.placementDone) return { unlocked: false, reason: 'Hacé el examen inicial desde Inicio para desbloquear los resúmenes de tu recorrido.' }
+    if (!state.placementDone)
+      return { unlocked: false, reason: 'Hacé el examen inicial desde Inicio para desbloquear los resúmenes de tu recorrido.' }
     return { unlocked: true, currentTopicId: state.week?.topicId ?? null, topics: this.unlockedTopics(today), types: this.typeViews() }
   }
 
@@ -196,7 +197,6 @@ export class Summaries {
 
   private row(topicId: string, type: SummaryTypeId): SummaryRow | undefined {
     return this.db.prepare('SELECT content, source, user_rating, created_at FROM summaries WHERE topic_id = ? AND type = ?').get(topicId, type) as
-      | SummaryRow
-      | undefined
+      SummaryRow | undefined
   }
 }

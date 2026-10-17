@@ -90,8 +90,8 @@ export default function Journal(): React.JSX.Element {
           <h2>Escribí unas líneas en {course.name}</h2>
         </div>
         <p className="muted small">
-          No hace falta que sea largo: tres o cuatro oraciones alcanzan. Si no sabés cómo decir algo, escribilo en español y Claude te
-          muestra cómo se dice.
+          No hace falta que sea largo: tres o cuatro oraciones alcanzan. Si no sabés cómo decir algo, escribilo en español y Claude te muestra cómo se
+          dice.
         </p>
         <div className="chip-grid" aria-label="Ideas para escribir">
           {view.prompts.map((p) => (

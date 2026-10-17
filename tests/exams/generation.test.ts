@@ -37,13 +37,18 @@ describe('generateExam', () => {
   })
 
   it('descarta hasta 2 preguntas del tipo equivocado', async () => {
-    const wrong = items('A').map((item, i) => (i < 2 ? { ...item, exercise: sample(types[i] === 'fill_blank' ? 'multiple_choice' : 'fill_blank', 'A') } : item))
+    const wrong = items('A').map((item, i) =>
+      i < 2 ? { ...item, exercise: sample(types[i] === 'fill_blank' ? 'multiple_choice' : 'fill_blank', 'A') } : item
+    )
     const { ask } = fakeClaude([{ items: wrong }, noCorrections])
     expect(await generateExam(request, ask)).toHaveLength(3)
   })
 
   it('el revisor puede completar una pregunta que faltaba', async () => {
-    const { ask } = fakeClaude([{ items: items('A').slice(1) }, { issues: ['faltaba'], corrections: [{ index: 0, replacement: sample('multiple_choice', 'NUEVA') }] }])
+    const { ask } = fakeClaude([
+      { items: items('A').slice(1) },
+      { issues: ['faltaba'], corrections: [{ index: 0, replacement: sample('multiple_choice', 'NUEVA') }] }
+    ])
     const questions = await generateExam(request, ask)
     expect(questions).toHaveLength(5)
   })

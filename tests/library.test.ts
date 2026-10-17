@@ -25,6 +25,10 @@ describe('biblioteca', () => {
     const cordoba = searchLibrary(db, curriculum, 'cordoba')
     expect(cordoba.map((r) => r.kind).sort()).toEqual(['diario', 'resumen'])
     expect(cordoba.find((r) => r.kind === 'resumen')?.snippet).toContain('Córdoba')
-    expect(searchLibrary(db, curriculum, 'wake').map((r) => r.kind).sort()).toEqual(['lectura', 'palabra'])
+    expect(
+      searchLibrary(db, curriculum, 'wake')
+        .map((r) => r.kind)
+        .sort()
+    ).toEqual(['lectura', 'palabra'])
   })
 })

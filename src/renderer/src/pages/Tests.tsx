@@ -150,10 +150,14 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
                     disabled={busy !== null || overview.exam !== null}
                     onClick={() => {
                       if (confirm(`${WEEKLY_RULES}\n\n¿Empezás el examen?`)) {
-                        run('weekly', () => window.api.startWeeklyExam(), (started) => {
-                          setNotice(null)
-                          setSession(started)
-                        })
+                        run(
+                          'weekly',
+                          () => window.api.startWeeklyExam(),
+                          (started) => {
+                            setNotice(null)
+                            setSession(started)
+                          }
+                        )
                       }
                     }}
                   >
@@ -174,8 +178,8 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
               <h2>Medí cómo vas</h2>
             </div>
             <p className="muted">
-              10 preguntas, un poco más fáciles que el examen. No cuentan para aprobar, pero si fallás mucho en un tópico anterior te lo
-              marcamos para repasar. Podés dejarlo y retomarlo.
+              10 preguntas, un poco más fáciles que el examen. No cuentan para aprobar, pero si fallás mucho en un tópico anterior te lo marcamos para
+              repasar. Podés dejarlo y retomarlo.
             </p>
             {overview.mock.reason && <p className="muted">{overview.mock.reason}</p>}
             <div className="row">

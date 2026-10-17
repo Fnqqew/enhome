@@ -166,7 +166,9 @@ describe('segunda oportunidad en el examen', () => {
     give('second-chance', 2)
 
     const session = await exams.startWeekly(day(4))
-    const questions = JSON.parse((db.prepare('SELECT questions FROM exams WHERE id = ?').get(session.id) as { questions: string }).questions) as ExamQuestion[]
+    const questions = JSON.parse(
+      (db.prepare('SELECT questions FROM exams WHERE id = ?').get(session.id) as { questions: string }).questions
+    ) as ExamQuestion[]
     const mcIndex = questions.findIndex((q) => q.exercise.type === 'multiple_choice')
     const writingIndex = questions.findIndex((q) => q.exercise.type === 'writing')
 

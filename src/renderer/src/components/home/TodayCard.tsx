@@ -37,15 +37,14 @@ export default function TodayCard({ progress, navigate }: { progress: ProgressSt
       window.api.getVocab(),
       window.api.getJournal(),
       window.api.getGoal()
-    ]).then(
-      ([view, review, vocab, journal, goal]) =>
-        setExtras({
-          goal: goal.status === 'fulfilled' ? goal.value : null,
-          player: view.status === 'fulfilled' ? view.value.player : null,
-          mistakesDue: review.status === 'fulfilled' ? review.value.dueToday : 0,
-          cardsDue: vocab.status === 'fulfilled' ? vocab.value.dueToday : 0,
-          journalDone: journal.status === 'fulfilled' && journal.value.today?.review != null
-        })
+    ]).then(([view, review, vocab, journal, goal]) =>
+      setExtras({
+        goal: goal.status === 'fulfilled' ? goal.value : null,
+        player: view.status === 'fulfilled' ? view.value.player : null,
+        mistakesDue: review.status === 'fulfilled' ? review.value.dueToday : 0,
+        cardsDue: vocab.status === 'fulfilled' ? vocab.value.dueToday : 0,
+        journalDone: journal.status === 'fulfilled' && journal.value.today?.review != null
+      })
     )
   }, [progress])
 
@@ -78,7 +77,13 @@ export default function TodayCard({ progress, navigate }: { progress: ProgressSt
           {week && week.examStatus !== 'closed' && daysToExam !== null && daysToExam >= 0 && (
             <span className="today-stat" title={week.examMessage}>
               <Icon name="pruebas" className="glyph" />{' '}
-              {week.examStatus === 'available' ? <strong>Examen abierto</strong> : daysToExam === 0 ? <strong>Examen hoy</strong> : <>Examen el {weekdayName(examDay!.date)}</>}
+              {week.examStatus === 'available' ? (
+                <strong>Examen abierto</strong>
+              ) : daysToExam === 0 ? (
+                <strong>Examen hoy</strong>
+              ) : (
+                <>Examen el {weekdayName(examDay!.date)}</>
+              )}
             </span>
           )}
         </div>
@@ -97,7 +102,12 @@ export default function TodayCard({ progress, navigate }: { progress: ProgressSt
       )}
       <div className="today-shortcuts">
         <Shortcut icon="repaso" label="Repaso" count={extras.mistakesDue + extras.cardsDue} onClick={() => navigate('repaso')} />
-        <Shortcut icon="diario" label={extras.journalDone ? 'Diario hecho' : 'Diario de hoy'} done={extras.journalDone} onClick={() => navigate('diario')} />
+        <Shortcut
+          icon="diario"
+          label={extras.journalDone ? 'Diario hecho' : 'Diario de hoy'}
+          done={extras.journalDone}
+          onClick={() => navigate('diario')}
+        />
         <Shortcut icon="juegos" label="Juegos" onClick={() => navigate('juegos')} />
         <Shortcut icon="lecturas" label="Lecturas" onClick={() => navigate('lecturas')} />
         <Shortcut icon="resumenes" label="Resumen" onClick={() => navigate('resumenes')} />
@@ -130,7 +140,11 @@ function mainAction(progress: ProgressState, extras: Extras, navigate: Navigate)
     }
   }
   if (week?.canRecover && !week.nextUnit) {
-    return { label: 'Recuperar una falta', detail: 'Es domingo: una práctica de repaso recupera un día que faltaste.', go: () => navigate('practica') }
+    return {
+      label: 'Recuperar una falta',
+      detail: 'Es domingo: una práctica de repaso recupera un día que faltaste.',
+      go: () => navigate('practica')
+    }
   }
   if (extras.mistakesDue > 0) {
     return {

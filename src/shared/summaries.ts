@@ -65,8 +65,7 @@ export interface SummaryTopicOption {
 }
 
 export type SummariesIndex =
-  | { unlocked: false; reason: string }
-  | { unlocked: true; currentTopicId: string | null; topics: SummaryTopicOption[]; types: SummaryTypeView[] }
+  { unlocked: false; reason: string } | { unlocked: true; currentTopicId: string | null; topics: SummaryTopicOption[]; types: SummaryTypeView[] }
 
 export interface SummaryView {
   topicId: string

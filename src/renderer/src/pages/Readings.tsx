@@ -47,10 +47,13 @@ export default function Readings(): React.JSX.Element {
             Volver a la lista
           </button>
         </div>
-        <Reading reading={open} onAnswered={(r) => {
-          setOpen(r)
-          load()
-        }} />
+        <Reading
+          reading={open}
+          onAnswered={(r) => {
+            setOpen(r)
+            load()
+          }}
+        />
       </>
     )
   }
@@ -64,15 +67,21 @@ export default function Readings(): React.JSX.Element {
           <h2>Un texto corto en {course.name}, a tu medida</h2>
         </div>
         <p className="muted">
-          Claude escribe una historia de tu nivel que usa lo que estás estudiando, con un glosario de las palabras difíciles y cuatro
-          preguntas de comprensión. Queda guardada para releerla cuando quieras.
+          Claude escribe una historia de tu nivel que usa lo que estás estudiando, con un glosario de las palabras difíciles y cuatro preguntas de
+          comprensión. Queda guardada para releerla cuando quieras.
         </p>
         <div className="chip-grid" role="group" aria-label="Tema">
           {READING_THEMES.map((t) => (
-            <button key={t} type="button" className="chip" aria-pressed={!custom.trim() && theme === t} onClick={() => {
-              setTheme(t)
-              setCustom('')
-            }}>
+            <button
+              key={t}
+              type="button"
+              className="chip"
+              aria-pressed={!custom.trim() && theme === t}
+              onClick={() => {
+                setTheme(t)
+                setCustom('')
+              }}
+            >
               {t}
             </button>
           ))}
@@ -127,9 +136,7 @@ export default function Readings(): React.JSX.Element {
 // Marca las palabras del glosario dentro del texto, con la traducción al pasar el cursor.
 function highlight(paragraph: string, glossary: ReadingView['glossary']): React.ReactNode {
   if (glossary.length === 0) return paragraph
-  const escaped = [...glossary]
-    .sort((a, b) => b.term.length - a.term.length)
-    .map((g) => g.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  const escaped = [...glossary].sort((a, b) => b.term.length - a.term.length).map((g) => g.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
   const pattern = new RegExp(`(${escaped.join('|')})`, 'gi')
   return paragraph.split(pattern).map((part, i) => {
     const entry = glossary.find((g) => g.term.toLowerCase() === part.toLowerCase())

@@ -112,7 +112,11 @@ function detectRomance(tokens: string[], target: Exclude<LanguageId, 'en'>): Spe
 // Puntaje por palabra: las palabras conocidas valen 1; las pistas por la forma de la palabra, menos.
 // null cuando no hay pistas suficientes.
 export function detectLang(text: string, target: LanguageId = 'en'): SpeechLang | null {
-  const tokens = text.toLowerCase().replace(/’/g, "'").match(/[\p{L}']+/gu) ?? []
+  const tokens =
+    text
+      .toLowerCase()
+      .replace(/’/g, "'")
+      .match(/[\p{L}']+/gu) ?? []
   return target === 'en' ? detectEnglish(tokens) : detectRomance(tokens, target)
 }
 

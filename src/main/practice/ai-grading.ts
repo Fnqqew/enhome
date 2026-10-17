@@ -21,8 +21,7 @@ export type OpenAnswerGrader = (request: OpenAnswerRequest) => Promise<ExerciseF
 // Puntaje mínimo para considerar correcto un texto escrito.
 export const WRITING_PASS_SCORE = 6
 
-const systemPrompt = (language: LanguageId): string =>
-  roleSystemPrompt(language, 'docente', 'Corregís con precisión y de forma alentadora.')
+const systemPrompt = (language: LanguageId): string => roleSystemPrompt(language, 'docente', 'Corregís con precisión y de forma alentadora.')
 
 const reviewSchema = z.object({
   acceptable: z.boolean(),
@@ -85,7 +84,9 @@ ${outputGuide()}`
 El alumno tradujo al ${target} una tanda de oraciones sobre esta situación: ${exercise.situation}
 
 ${exercise.sentences
-  .map((s, i) => `${i + 1}. Español: «${s.spanish}»\n   Referencias: ${s.answers.map((a) => `«${a}»`).join(', ')}\n   Alumno: ${answered(answers, i)}`)
+  .map(
+    (s, i) => `${i + 1}. Español: «${s.spanish}»\n   Referencias: ${s.answers.map((a) => `«${a}»`).join(', ')}\n   Alumno: ${answered(answers, i)}`
+  )
   .join('\n')}
 
 Evaluá cada oración por separado: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas ni puntuación.
@@ -122,9 +123,7 @@ ${PARTS_GUIDE}`
 El alumno resolvió una situación simulada. Situación: ${exercise.situation}
 Objetivo: ${exercise.goal}
 
-${exercise.steps
-  .map((s, i) => `${i + 1}. Tenía que: ${s.cue}\n   Respuesta modelo: «${s.sample}»\n   Escribió: ${answered(answers, i)}`)
-  .join('\n')}
+${exercise.steps.map((s, i) => `${i + 1}. Tenía que: ${s.cue}\n   Respuesta modelo: «${s.sample}»\n   Escribió: ${answered(answers, i)}`).join('\n')}
 
 Evaluá cada paso: tiene que cumplir lo que pide la consigna, ser apropiado para la situación (registro y cortesía) y usar bien la gramática del subtema. La respuesta modelo es solo una opción válida entre varias.
 

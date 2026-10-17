@@ -65,21 +65,17 @@ export class Progression {
       const week = this.activeWeek()
       const progress = week
         ? (this.db.prepare('SELECT attempts, failed_attempts FROM topic_progress WHERE topic_id = ?').get(week.topicId) as
-            | { attempts: number; failed_attempts: number }
-            | undefined)
+            { attempts: number; failed_attempts: number } | undefined)
         : undefined
 
       return {
         today,
         placementDone: player.placement_done_at !== null,
-        placementInProgress:
-          this.db.prepare("SELECT 1 FROM exams WHERE kind = 'placement' AND status = 'in_progress'").get() !== undefined,
+        placementInProgress: this.db.prepare("SELECT 1 FROM exams WHERE kind = 'placement' AND status = 'in_progress'").get() !== undefined,
         level: week ? this.topic(week.topicId).level : player.cefr_level,
         week: week ? this.toView(week, today) : null,
         finished: player.placement_done_at !== null && !week && this.curriculum.every((t) => isPassed(statuses.get(t.id))),
-        reviewTopics: this.curriculum
-          .filter((t) => statuses.get(t.id) === 'review')
-          .map((t) => ({ id: t.id, title: t.title, level: t.level })),
+        reviewTopics: this.curriculum.filter((t) => statuses.get(t.id) === 'review').map((t) => ({ id: t.id, title: t.title, level: t.level })),
         attempts: progress ? { attempts: progress.attempts, failed: progress.failed_attempts } : null,
         pausedSince: openPause(loadPauses(this.db))?.pausedOn ?? null
       }
@@ -122,11 +118,7 @@ export class Progression {
 
   // examId: examen real ya guardado (con sus respuestas). startedOn: un examen empezado antes de
   // medianoche se evalúa con la fecha en que empezó.
-  submitWeeklyExam(
-    { grade, answers }: ExamSubmission,
-    today: string,
-    options: { examId?: number; startedOn?: string } = {}
-  ): ExamOutcome {
+  submitWeeklyExam({ grade, answers }: ExamSubmission, today: string, options: { examId?: number; startedOn?: string } = {}): ExamOutcome {
     if (!Number.isFinite(grade) || grade < 0 || grade > 10) throw new ProgressionError('La nota tiene que estar entre 0 y 10.')
     const day = options.startedOn ?? today
 
@@ -176,9 +168,9 @@ export class Progression {
         return { passed, nextWeekStart: next ? nextMonday : null, finished: !next, weakTopics }
       }
 
-      const { failed_attempts: failedAttempts } = this.db
-        .prepare('SELECT failed_attempts FROM topic_progress WHERE topic_id = ?')
-        .get(topic.id) as { failed_attempts: number }
+      const { failed_attempts: failedAttempts } = this.db.prepare('SELECT failed_attempts FROM topic_progress WHERE topic_id = ?').get(topic.id) as {
+        failed_attempts: number
+      }
       const prerequisites = topic.prerequisites.flatMap((id) => this.topics.get(id) ?? [])
       this.insertWeek(topic.id, nextMonday, nextMonday, 'retry', planRetryWeek(topic, answers, failedAttempts, prerequisites))
       return { passed, nextWeekStart: nextMonday, finished: false, weakTopics }
@@ -300,9 +292,7 @@ export class Progression {
       if (today <= sunday) return
       // Con un examen en curso o en pausa, la semana no se cierra hasta resolverlo.
       if (this.db.prepare("SELECT 1 FROM exams WHERE week_id = ? AND status IN ('in_progress', 'paused')").get(week.id)) return
-      const pending: PlannedUnit[] = week.units
-        .filter((u) => !u.completedOn)
-        .map(({ kind, topicId, subtopicId }) => ({ kind, topicId, subtopicId }))
+      const pending: PlannedUnit[] = week.units.filter((u) => !u.completedOn).map(({ kind, topicId, subtopicId }) => ({ kind, topicId, subtopicId }))
       this.db.prepare("UPDATE weeks SET status = 'incomplete' WHERE id = ?").run(week.id)
       const weekStart = mondayOf(today)
       // Si pasó más de una semana sin abrir la app, las faltas se cuentan desde hoy.
@@ -326,9 +316,7 @@ export class Progression {
     const { lastInsertRowid: weekId } = this.db
       .prepare("INSERT INTO weeks (topic_id, week_start, starts_on, kind, status) VALUES (?, ?, ?, ?, 'active')")
       .run(topicId, weekStart, startsOn, kind)
-    const insert = this.db.prepare(
-      'INSERT INTO practice_units (week_id, unit_index, kind, topic_id, subtopic_id) VALUES (?, ?, ?, ?, ?)'
-    )
+    const insert = this.db.prepare('INSERT INTO practice_units (week_id, unit_index, kind, topic_id, subtopic_id) VALUES (?, ?, ?, ?, ?)')
     units.slice(0, PRACTICE_DAYS).forEach((u, i) => insert.run(weekId, i + 1, u.kind, u.topicId, u.subtopicId))
     this.setTopicStatus(topicId, 'in_progress', { weekStart })
   }
@@ -386,9 +374,7 @@ export class Progression {
   }
 
   private activeWeek(): WeekRecord | null {
-    const row = this.db.prepare("SELECT * FROM weeks WHERE status = 'active' ORDER BY week_start DESC LIMIT 1").get() as
-      | WeekRow
-      | undefined
+    const row = this.db.prepare("SELECT * FROM weeks WHERE status = 'active' ORDER BY week_start DESC LIMIT 1").get() as WeekRow | undefined
     if (!row) return null
     const units = this.db.prepare('SELECT * FROM practice_units WHERE week_id = ? ORDER BY unit_index').all(row.id) as unknown as UnitRow[]
     const pauses = loadPauses(this.db)

@@ -73,6 +73,10 @@ self.onmessage = async (event: MessageEvent<AsrRequest>) => {
     const text = Array.isArray(output) ? output.map((o) => o.text).join(' ') : output.text
     post({ type: 'result', id: request.id, text: text.trim() })
   } catch (error) {
-    post({ type: 'error', id: request.type === 'transcribe' ? request.id : undefined, message: error instanceof Error ? error.message : String(error) })
+    post({
+      type: 'error',
+      id: request.type === 'transcribe' ? request.id : undefined,
+      message: error instanceof Error ? error.message : String(error)
+    })
   }
 }

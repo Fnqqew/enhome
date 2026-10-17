@@ -1,0 +1,13 @@
+#!/bin/sh
+# Antes de cada commit: formatea con Prettier lo que se guarda y lo revisa con ESLint.
+files=$(git diff --cached --name-only --diff-filter=ACMR -- '*.ts' '*.tsx' '*.js' '*.mjs' '*.cjs' '*.css' '*.json' '*.yml')
+[ -z "$files" ] && exit 0
+
+echo "$files" | xargs -d '\n' npx prettier --write --ignore-unknown --log-level warn || exit 1
+echo "$files" | xargs -d '\n' git add
+
+code=$(echo "$files" | grep -E '\.(ts|tsx|js|mjs|cjs)$')
+if [ -n "$code" ]; then
+  echo "$code" | xargs -d '\n' npx eslint --max-warnings 0 --no-warn-ignored || exit 1
+fi
+exit 0

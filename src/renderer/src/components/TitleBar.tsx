@@ -11,13 +11,7 @@ export default function TitleBar({ title }: { title: string }): React.JSX.Elemen
     <div className="titlebar" onDoubleClick={() => window.api.toggleMaximizeWindow()}>
       <span className="titlebar-title">{title}</span>
       <div className="window-buttons">
-        <button
-          type="button"
-          className="win-btn minimize"
-          aria-label="Minimizar"
-          title="Minimizar"
-          onClick={() => window.api.minimizeWindow()}
-        >
+        <button type="button" className="win-btn minimize" aria-label="Minimizar" title="Minimizar" onClick={() => window.api.minimizeWindow()}>
           <svg viewBox="0 0 10 10" aria-hidden="true">
             <path d="M2.5 5h5" />
           </svg>

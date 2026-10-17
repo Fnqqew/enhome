@@ -39,7 +39,10 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
         <Logo style={settings.style} className="logo about-logo" />
         <div className="stack-sm">
           <h2>Enhome</h2>
-          <p className="muted">Aprender idiomas en casa, de a un tópico por semana, con Claude de profesor particular: inglés, portugués, italiano y francés, cada uno con su propio progreso.</p>
+          <p className="muted">
+            Aprender idiomas en casa, de a un tópico por semana, con Claude de profesor particular: inglés, portugués, italiano y francés, cada uno
+            con su propio progreso.
+          </p>
           {info && <span className="badge ok">versión {info.version}</span>}
         </div>
       </section>
@@ -48,24 +51,24 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
         <h2>Cómo funciona</h2>
         <ul className="feature-list">
           <li>
-            <strong>Una semana, un tópico.</strong> De lunes a viernes trabajás un subtema por día; el examen se abre el viernes. Si faltás,
-            el día queda pendiente y el domingo podés recuperar una falta.
+            <strong>Una semana, un tópico.</strong> De lunes a viernes trabajás un subtema por día; el examen se abre el viernes. Si faltás, el día
+            queda pendiente y el domingo podés recuperar una falta.
           </li>
           <li>
-            <strong>La práctica es larga y realista.</strong> Cada día son {EXERCISE_TYPES.length} formatos posibles, con conversaciones,
-            situaciones para resolver y tandas de traducción que solo salen bien si estudiaste el tema.
+            <strong>La práctica es larga y realista.</strong> Cada día son {EXERCISE_TYPES.length} formatos posibles, con conversaciones, situaciones
+            para resolver y tandas de traducción que solo salen bien si estudiaste el tema.
           </li>
           <li>
-            <strong>Todo lo revisa Claude dos veces.</strong> Un docente genera el material, un revisor lo corrige y la app aplica sus
-            propios controles antes de mostrarte nada.
+            <strong>Todo lo revisa Claude dos veces.</strong> Un docente genera el material, un revisor lo corrige y la app aplica sus propios
+            controles antes de mostrarte nada.
           </li>
           <li>
-            <strong>{SUMMARY_TYPE_IDS.length} tipos de resumen</strong> del mismo tema, para que lo leas como más te entre: explicación
-            completa, tabla, mini historia, tarjetas y más.
+            <strong>{SUMMARY_TYPE_IDS.length} tipos de resumen</strong> del mismo tema, para que lo leas como más te entre: explicación completa,
+            tabla, mini historia, tarjetas y más.
           </li>
           <li>
-            <strong>La constancia se premia.</strong> Racha, experiencia, logros y comodines que te salvan un día o te dan una segunda
-            oportunidad en un examen.
+            <strong>La constancia se premia.</strong> Racha, experiencia, logros y comodines que te salvan un día o te dan una segunda oportunidad en
+            un examen.
           </li>
         </ul>
       </section>
@@ -80,8 +83,8 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
           ))}
         </div>
         <p className="muted small">
-          Los ejercicios cambian según el día: la gramática, la lectura y la escritura se reparten en la semana, y siempre entra una
-          conversación o una situación para resolver.
+          Los ejercicios cambian según el día: la gramática, la lectura y la escritura se reparten en la semana, y siempre entra una conversación o
+          una situación para resolver.
         </p>
         <div className="row">
           <button className="btn secondary" onClick={() => navigate('practica')}>
@@ -94,8 +97,8 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
         <h2>Tu sesión de Claude</h2>
         <p className="muted">
           Conectado{status.email ? ` como ${status.email}` : ''}
-          {status.subscription ? ` · plan ${status.subscription}` : ''}. La app usa Claude Code instalado en esta computadora con tu
-          suscripción: no hay servidores propios ni API paga, y nada de lo que escribís sale de acá salvo lo que se le consulta a Claude.
+          {status.subscription ? ` · plan ${status.subscription}` : ''}. La app usa Claude Code instalado en esta computadora con tu suscripción: no
+          hay servidores propios ni API paga, y nada de lo que escribís sale de acá salvo lo que se le consulta a Claude.
         </p>
         {timings.length > 0 ? (
           <div className="table-scroll">

@@ -59,7 +59,10 @@ const typesOf = (items: PoolItem[], ids: number[]): ExerciseType[] => ids.map((i
 describe('composeSession', () => {
   it('arma sesiones del tamaño pedido con variedad de tipos', () => {
     const items = pool(planPool(['grammar']))
-    const types = typesOf(items, composeSession(items, ['grammar'], {}, () => 0))
+    const types = typesOf(
+      items,
+      composeSession(items, ['grammar'], {}, () => 0)
+    )
     expect(types).toHaveLength(SESSION_SIZE)
     // La tanda, una situación y los cinco cortos distintos.
     expect(new Set(types).size).toBe(7)
@@ -67,33 +70,55 @@ describe('composeSession', () => {
 
   it('siempre incluye una tanda de traducción y una sola situación para conversar', () => {
     const items = pool(planPool(['grammar']))
-    const types = typesOf(items, composeSession(items, ['grammar'], {}, () => 0))
+    const types = typesOf(
+      items,
+      composeSession(items, ['grammar'], {}, () => 0)
+    )
     expect(types).toContain('translation_set')
     expect(types.filter((t) => t === 'dialogue' || t === 'roleplay')).toHaveLength(1)
   })
 
   it('alterna entre la conversación y la situación', () => {
     const items = pool(planPool(['grammar']))
-    expect(typesOf(items, composeSession(items, ['grammar'], {}, () => 0))).toContain('dialogue')
-    expect(typesOf(items, composeSession(items, ['grammar'], {}, () => 0.9))).toContain('roleplay')
+    expect(
+      typesOf(
+        items,
+        composeSession(items, ['grammar'], {}, () => 0)
+      )
+    ).toContain('dialogue')
+    expect(
+      typesOf(
+        items,
+        composeSession(items, ['grammar'], {}, () => 0.9)
+      )
+    ).toContain('roleplay')
   })
 
   it('incluye lectura y escritura cuando corresponde, con la escritura al final', () => {
     const items = pool(planPool(['reading', 'writing']))
-    const types = typesOf(items, composeSession(items, ['reading', 'writing'], {}, () => 0))
+    const types = typesOf(
+      items,
+      composeSession(items, ['reading', 'writing'], {}, () => 0)
+    )
     expect(types).toContain('reading')
     expect(types[types.length - 1]).toBe('writing')
   })
 
   it('usa el lugar extra para el tipo mejor calificado', () => {
     const items = pool(planPool(['grammar']))
-    const types = typesOf(items, composeSession(items, ['grammar'], { word_order: 5 }, () => 0))
+    const types = typesOf(
+      items,
+      composeSession(items, ['grammar'], { word_order: 5 }, () => 0)
+    )
     expect(types.filter((t) => t === 'word_order')).toHaveLength(2)
   })
 
   it('ordena de lo más guiado a lo más abierto', () => {
     const items = pool(planPool(['grammar', 'reading']))
-    const types = typesOf(items, composeSession(items, ['grammar', 'reading'], {}, () => 0))
+    const types = typesOf(
+      items,
+      composeSession(items, ['grammar', 'reading'], {}, () => 0)
+    )
     expect(types.indexOf('multiple_choice')).toBeLessThan(types.indexOf('translation'))
     expect(types.indexOf('translation')).toBeLessThan(types.indexOf('reading'))
   })
@@ -109,7 +134,9 @@ describe('duración y formatos excluidos', () => {
 
   it('si se excluyen todos los cortos, igual se piden cortos', () => {
     const plan = planPool(['grammar'], {}, { size: 8, excluded: ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'] })
-    expect(Object.keys(plan).some((type) => ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'].includes(type))).toBe(true)
+    expect(Object.keys(plan).some((type) => ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'].includes(type))).toBe(
+      true
+    )
   })
 
   it('arma sesiones cortas e intensas', () => {

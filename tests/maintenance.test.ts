@@ -8,19 +8,22 @@ let db: Db
 
 beforeEach(() => {
   db = openDatabase(':memory:')
-  db.prepare("INSERT INTO weeks (id, topic_id, week_start, starts_on, kind, status) VALUES (1, 't', '2026-08-03', '2026-08-03', 'normal', 'passed')").run()
+  db.prepare(
+    "INSERT INTO weeks (id, topic_id, week_start, starts_on, kind, status) VALUES (1, 't', '2026-08-03', '2026-08-03', 'normal', 'passed')"
+  ).run()
 })
 
 function session(id: number, completedOn: string | null): void {
-  db.prepare("INSERT INTO practice_sessions (id, week_id, topic_id, subtopic_id, kind, completed_on) VALUES (?, 1, 't', 's', 'lesson', ?)").run(id, completedOn)
+  db.prepare("INSERT INTO practice_sessions (id, week_id, topic_id, subtopic_id, kind, completed_on) VALUES (?, 1, 't', 's', 'lesson', ?)").run(
+    id,
+    completedOn
+  )
 }
 
 function exercise(id: number, sessionId: number, slot: number | null): void {
-  db.prepare("INSERT INTO exercises (id, topic_id, subtopic_id, skill, type, payload, session_id, slot) VALUES (?, 't', 's', 'grammar', 'mcq', '{}', ?, ?)").run(
-    id,
-    sessionId,
-    slot
-  )
+  db.prepare(
+    "INSERT INTO exercises (id, topic_id, subtopic_id, skill, type, payload, session_id, slot) VALUES (?, 't', 's', 'grammar', 'mcq', '{}', ?, ?)"
+  ).run(id, sessionId, slot)
 }
 
 const ids = (): number[] => (db.prepare('SELECT id FROM exercises ORDER BY id').all() as { id: number }[]).map((r) => r.id)
@@ -35,7 +38,7 @@ describe('limpieza de ejercicios sobrantes', () => {
     exercise(3, 2, null) // práctica reciente: queda
     exercise(4, 3, null) // práctica sin terminar: queda
     exercise(5, 1, null) // tiene un intento guardado: queda
-    db.prepare("INSERT INTO exercise_attempts (exercise_id, answer) VALUES (5, '\"x\"')").run()
+    db.prepare('INSERT INTO exercise_attempts (exercise_id, answer) VALUES (5, \'"x"\')').run()
 
     expect(cleanupUnusedExercises(db, '2026-10-16')).toBe(1)
     expect(ids()).toEqual([1, 3, 4, 5])

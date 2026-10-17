@@ -7,7 +7,9 @@
 }
 
 .game-card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .game-card:hover {
@@ -110,7 +112,9 @@
   font: inherit;
   font-size: 0.92rem;
   cursor: pointer;
-  transition: transform 0.25s ease, background 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    background 0.2s ease;
 }
 
 .memory-card:not(.visible):hover {

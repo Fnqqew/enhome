@@ -69,12 +69,15 @@ export default function TopicEditor({ topicId, onClose, onSaved }: { topicId: st
           </button>
         </div>
         {!topic ? (
-          error ? <p className="error">{error}</p> : <p className="muted">Cargando…</p>
+          error ? (
+            <p className="error">{error}</p>
+          ) : (
+            <p className="muted">Cargando…</p>
+          )
         ) : (
           <>
             <p className="muted small">
-              Corregí lo que haga falta y marcalo como revisado. Los cambios se usan en las prácticas, los exámenes y los resúmenes desde
-              ahora.
+              Corregí lo que haga falta y marcalo como revisado. Los cambios se usan en las prácticas, los exámenes y los resúmenes desde ahora.
             </p>
             <div className="editor-grid">
               <Field label="Título">
@@ -85,7 +88,12 @@ export default function TopicEditor({ topicId, onClose, onSaved }: { topicId: st
               </Field>
             </div>
             <Field label="Descripción">
-              <textarea className="text-answer" rows={2} value={topic.description} onChange={(e) => setTopic({ ...topic, description: e.target.value })} />
+              <textarea
+                className="text-answer"
+                rows={2}
+                value={topic.description}
+                onChange={(e) => setTopic({ ...topic, description: e.target.value })}
+              />
             </Field>
             <Field label="Objetivos (uno por línea)">
               <textarea
@@ -212,7 +220,12 @@ function Rows<T extends Record<string, string>>({
               onChange={(e) => onChange(items.map((it, j) => (j === i ? { ...it, [c.key]: e.target.value } : it)))}
             />
           ))}
-          <button type="button" className="icon-button" aria-label={`Quitar ${label.toLowerCase()} ${i + 1}`} onClick={() => onChange(items.filter((_, j) => j !== i))}>
+          <button
+            type="button"
+            className="icon-button"
+            aria-label={`Quitar ${label.toLowerCase()} ${i + 1}`}
+            onClick={() => onChange(items.filter((_, j) => j !== i))}
+          >
             <Icon name="cross" className="glyph" />
           </button>
         </div>

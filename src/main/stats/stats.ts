@@ -58,9 +58,9 @@ export function buildStats(db: Db, curriculum: CurriculumTopic[], today: string)
     })
     .filter((t) => t.answered > 0 || t.bestGrade !== null)
 
-  const practiceDays = db
-    .prepare('SELECT completed_on AS date FROM practice_sessions WHERE completed_on IS NOT NULL')
-    .all() as unknown as { date: string }[]
+  const practiceDays = db.prepare('SELECT completed_on AS date FROM practice_sessions WHERE completed_on IS NOT NULL').all() as unknown as {
+    date: string
+  }[]
   const thisWeek = mondayOf(today)
   const weeks = Array.from({ length: WEEKS }, (_, i) => {
     const weekStart = addDays(thisWeek, -7 * (WEEKS - 1 - i))

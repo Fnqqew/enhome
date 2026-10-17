@@ -3,16 +3,20 @@
 
 import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
-import {
-  generatedExerciseSchema,
-  LONG_TYPES,
-  type ExerciseType,
-  type GeneratedExercise,
-  type StoredExercise
-} from '../../shared/exercises'
+import { generatedExerciseSchema, LONG_TYPES, type ExerciseType, type GeneratedExercise, type StoredExercise } from '../../shared/exercises'
 import type { UnitKind } from '../../shared/progress'
 import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
-import { applyCorrections, CORRECTIONS_GUIDE, numbered, qualityChecklist, REVIEW_EFFORT, reviewSystemPrompt, roleSystemPrompt, selfCheck, spanish } from '../claude/quality'
+import {
+  applyCorrections,
+  CORRECTIONS_GUIDE,
+  numbered,
+  qualityChecklist,
+  REVIEW_EFFORT,
+  reviewSystemPrompt,
+  roleSystemPrompt,
+  selfCheck,
+  spanish
+} from '../claude/quality'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 import { SESSION_SIZE } from './composition'
 import { prepareExercise } from './exercises'
@@ -112,7 +116,9 @@ ${formatGuide(topic.language)}
 
 ${immersionGuide(topic.language)}
 Usá vocabulario acorde al nivel ${topic.level}. El alumno tiene que necesitar lo que estudió del subtema para resolverlos: que no se puedan contestar de memoria ni adivinando.${
-    avoid.length > 0 ? `\nNo repitas estas oraciones, situaciones o consignas que el alumno ya practicó:\n${avoid.map((a) => `- ${a}`).join('\n')}` : ''
+    avoid.length > 0
+      ? `\nNo repitas estas oraciones, situaciones o consignas que el alumno ya practicó:\n${avoid.map((a) => `- ${a}`).join('\n')}`
+      : ''
   }
 
 ${selfCheck(topic.language)}`

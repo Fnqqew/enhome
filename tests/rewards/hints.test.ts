@@ -3,7 +3,14 @@ import { buildHint } from '../../src/main/rewards/hints'
 
 describe('buildHint', () => {
   it('opción múltiple: descarta dos incorrectas y nunca la correcta', () => {
-    const hint = buildHint({ type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['is', 'are', 'am', 'be'], correctIndex: 0, explanation: 'x' })
+    const hint = buildHint({
+      type: 'multiple_choice',
+      instruction: 'i',
+      prompt: 'p',
+      options: ['is', 'are', 'am', 'be'],
+      correctIndex: 0,
+      explanation: 'x'
+    })
     expect(hint).toBe('Descartá «are» y «am».')
   })
 
@@ -14,7 +21,15 @@ describe('buildHint', () => {
   })
 
   it('ordenar: primeras dos palabras', () => {
-    const hint = buildHint({ type: 'word_order', instruction: 'i', sentence: 'She is my sister.', alternatives: [], translation: 't', explanation: 'x', tokens: [] })
+    const hint = buildHint({
+      type: 'word_order',
+      instruction: 'i',
+      sentence: 'She is my sister.',
+      alternatives: [],
+      translation: 't',
+      explanation: 'x',
+      tokens: []
+    })
     expect(hint).toBe('La oración empieza con «She is».')
   })
 
@@ -24,13 +39,23 @@ describe('buildHint', () => {
   })
 
   it('traducción, lectura y escritura dan un comienzo o descartan opciones', () => {
-    expect(buildHint({ type: 'translation', instruction: 'i', spanish: 's', answers: ['I am a teacher.'], explanation: 'x' })).toBe('Podés empezar así: «I am…»')
+    expect(buildHint({ type: 'translation', instruction: 'i', spanish: 's', answers: ['I am a teacher.'], explanation: 'x' })).toBe(
+      'Podés empezar así: «I am…»'
+    )
     const q = { prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }
     expect(buildHint({ type: 'reading', instruction: 'i', text: 't', questions: [q, { ...q, correctIndex: 1 }] })).toBe(
       'Pregunta 1: descartá «b». Pregunta 2: descartá «a».'
     )
     expect(
-      buildHint({ type: 'writing', instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 'Hi! My name is Ana. I live here.' })
+      buildHint({
+        type: 'writing',
+        instruction: 'i',
+        task: 't',
+        minWords: 20,
+        maxWords: 50,
+        guidance: ['g'],
+        sampleAnswer: 'Hi! My name is Ana. I live here.'
+      })
     ).toBe('Una forma de empezar: «Hi!»')
   })
 })

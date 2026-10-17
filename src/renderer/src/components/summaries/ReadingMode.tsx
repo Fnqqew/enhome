@@ -138,9 +138,19 @@ export default function ReadingMode({
         </button>
         {showPrefs && (
           <div className="reading-prefs">
-            <PrefGroup label="Ancho" value={prefs.width} onChange={(v) => set('width', v)} options={{ narrow: 'Angosto', normal: 'Normal', wide: 'Ancho' }} />
+            <PrefGroup
+              label="Ancho"
+              value={prefs.width}
+              onChange={(v) => set('width', v)}
+              options={{ narrow: 'Angosto', normal: 'Normal', wide: 'Ancho' }}
+            />
             <PrefGroup label="Letra" value={prefs.size} onChange={(v) => set('size', v)} options={{ sm: 'Chica', md: 'Normal', lg: 'Grande' }} />
-            <PrefGroup label="Interlineado" value={prefs.spacing} onChange={(v) => set('spacing', v)} options={{ tight: 'Junto', normal: 'Normal', loose: 'Amplio' }} />
+            <PrefGroup
+              label="Interlineado"
+              value={prefs.spacing}
+              onChange={(v) => set('spacing', v)}
+              options={{ tight: 'Junto', normal: 'Normal', loose: 'Amplio' }}
+            />
           </div>
         )}
       </div>
@@ -149,7 +159,11 @@ export default function ReadingMode({
           <nav className="reading-toc" aria-label="Índice">
             <span className="level">ÍNDICE</span>
             {toc.map((item) => (
-              <button key={item.id} type="button" onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              >
                 {item.label}
               </button>
             ))}

@@ -51,8 +51,8 @@ export default function VocabCards(): React.JSX.Element {
         <h2>{heading}</h2>
       </div>
       <p className="muted small">
-        Seleccioná (o tocá dos veces) una palabra en un resumen, una lectura o un ejercicio corregido y elegí «Traducir»: desde ahí la
-        guardás. Vuelve en tarjetas a los 1, 3, 7, 15 y 30 días, y también aparece en los juegos.
+        Seleccioná (o tocá dos veces) una palabra en un resumen, una lectura o un ejercicio corregido y elegí «Traducir»: desde ahí la guardás. Vuelve
+        en tarjetas a los 1, 3, 7, 15 y 30 días, y también aparece en los juegos.
       </p>
       {overview.dueToday > 0 && (
         <div>

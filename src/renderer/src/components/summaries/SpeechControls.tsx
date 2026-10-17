@@ -38,7 +38,12 @@ export default function SpeechControls({ getText }: { getText: () => string }): 
             <Icon name="stop" className="glyph" /> Detener
           </button>
         )}
-        <select className="rate-select" value={speech.rate} aria-label="Velocidad de lectura" onChange={(e) => speech.setRate(Number(e.target.value))}>
+        <select
+          className="rate-select"
+          value={speech.rate}
+          aria-label="Velocidad de lectura"
+          onChange={(e) => speech.setRate(Number(e.target.value))}
+        >
           {RATES.map((r) => (
             <option key={r} value={r}>
               {r}×
@@ -47,7 +52,9 @@ export default function SpeechControls({ getText }: { getText: () => string }): 
         </select>
       </div>
       {!speech.hasSpanish && (
-        <p className="warn-text small">Windows no tiene una voz en español: el texto en español se va a leer con otra pronunciación. {INSTALL_VOICE_HELP}</p>
+        <p className="warn-text small">
+          Windows no tiene una voz en español: el texto en español se va a leer con otra pronunciación. {INSTALL_VOICE_HELP}
+        </p>
       )}
       {!speech.hasTarget && (
         <p className="warn-text small">

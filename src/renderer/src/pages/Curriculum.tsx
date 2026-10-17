@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import TopicEditor from '../components/curriculum/TopicEditor'
 import {
   SKILL_LABELS,
@@ -20,17 +20,17 @@ const STATUS_LABEL: Record<TopicMapStatus, string> = {
 }
 
 // Minúsculas y sin tildes, para que la búsqueda no dependa de cómo se escriba.
-const fold = (value: string): string =>
-  value
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
+const fold = (value: string): string => value.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 const subtopicText = (s: Subtopic): string =>
   fold(
-    [s.title, s.goal, ...s.keyPoints, ...s.examples.flatMap((e) => [e.target, e.es]), ...s.commonMistakes.flatMap((m) => [m.wrong, m.right, m.why])].join(
-      ' '
-    )
+    [
+      s.title,
+      s.goal,
+      ...s.keyPoints,
+      ...s.examples.flatMap((e) => [e.target, e.es]),
+      ...s.commonMistakes.flatMap((m) => [m.wrong, m.right, m.why])
+    ].join(' ')
   )
 
 const topicText = (t: CurriculumMapTopic): string => fold([t.title, t.targetTitle, t.description, ...t.objectives].join(' '))
@@ -46,7 +46,8 @@ function useToggleSet(): [Set<string>, Toggle, (keys: string[]) => void] {
       else next.add(key)
       return next
     })
-  return [open, toggle, (keys) => setOpen(new Set(keys))]
+  const set = useCallback((keys: string[]) => setOpen(new Set(keys)), [])
+  return [open, toggle, set]
 }
 
 function Chevron({ open }: { open: boolean }): React.JSX.Element {
@@ -81,7 +82,7 @@ export default function Curriculum({ focusTopicId = null }: { focusTopicId?: str
         if (focusTopicId) requestAnimationFrame(() => document.getElementById(`topic-${focusTopicId}`)?.scrollIntoView({ block: 'start' }))
       })
       .catch((err: Error) => setError(err.message))
-  }, [reload, focusTopicId])
+  }, [reload, focusTopicId, setLevels, setTopics])
 
   const q = fold(query.trim())
   const matches = useMemo(() => {
@@ -121,8 +122,8 @@ export default function Curriculum({ focusTopicId = null }: { focusTopicId?: str
       <h1>Temario</h1>
       <section className="card wide stack">
         <p className="muted">
-          {map.totalTopics} tópicos disponibles ({availableLevels.join(' y ')}) · {map.reviewedCount} revisados. Cada tópico dura una
-          semana, con un subtema por día de lunes a viernes.
+          {map.totalTopics} tópicos disponibles ({availableLevels.join(' y ')}) · {map.reviewedCount} revisados. Cada tópico dura una semana, con un
+          subtema por día de lunes a viernes.
         </p>
         <div className="row">
           <input
@@ -267,7 +268,10 @@ function TopicItem({
   isSubtopicOpen,
   onToggleSubtopic,
   onEdit
-}: { topic: CurriculumMapTopic; open: boolean } & Omit<LevelSectionProps, 'level' | 'topics' | 'searching' | 'open' | 'onToggle'>): React.JSX.Element {
+}: { topic: CurriculumMapTopic; open: boolean } & Omit<
+  LevelSectionProps,
+  'level' | 'topics' | 'searching' | 'open' | 'onToggle'
+>): React.JSX.Element {
   const prerequisites = topic.prerequisites.map((id) => titles.get(id) ?? id)
 
   return (

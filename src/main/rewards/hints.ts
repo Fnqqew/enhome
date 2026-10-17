@@ -40,14 +40,14 @@ export function buildHint(exercise: StoredExercise): string {
       return `La primera empieza así: «${exercise.sentences[0].answers[0].split(/\s+/).slice(0, 2).join(' ')}…»`
     case 'dialogue': {
       const first = exercise.script.find((line) => line.role === 'you')
-      return first?.role === 'you' ? `Tu primer turno puede empezar con «${first.sample.split(/\s+/).slice(0, 2).join(' ')}…»` : 'Respondé a lo último que te dijeron.'
+      return first?.role === 'you'
+        ? `Tu primer turno puede empezar con «${first.sample.split(/\s+/).slice(0, 2).join(' ')}…»`
+        : 'Respondé a lo último que te dijeron.'
     }
     case 'roleplay':
       return `Para el primer paso te sirve empezar con «${exercise.steps[0].sample.split(/\s+/).slice(0, 2).join(' ')}…»`
     case 'reading':
-      return exercise.questions
-        .map((q, i) => `Pregunta ${i + 1}: descartá «${q.options.find((_, k) => k !== q.correctIndex)}».`)
-        .join(' ')
+      return exercise.questions.map((q, i) => `Pregunta ${i + 1}: descartá «${q.options.find((_, k) => k !== q.correctIndex)}».`).join(' ')
     case 'writing':
       return `Una forma de empezar: «${exercise.sampleAnswer.split(/(?<=[.!?])\s+/)[0]}»`
   }

@@ -59,7 +59,6 @@ function preloadPages(): void {
 
 type ReadyStatus = Extract<ClaudeStatus, { state: 'ready' }>
 
-
 export default function App(): React.JSX.Element {
   const { settings } = useSettings()
   const [status, setStatus] = useState<ClaudeStatus | null>(null)
@@ -104,7 +103,8 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
   const message = {
     'not-installed': 'No se encontró Claude Code en esta computadora. Instalalo desde claude.com/claude-code y volvé a intentar.',
     'logged-out': 'Claude Code está instalado pero no tiene sesión iniciada. Abrí una terminal, ejecutá "claude" e iniciá sesión con tu cuenta.',
-    'no-subscription': 'Claude Code está usando otro método de acceso. Esta app requiere iniciar sesión con una suscripción de claude.ai (Pro o superior).',
+    'no-subscription':
+      'Claude Code está usando otro método de acceso. Esta app requiere iniciar sesión con una suscripción de claude.ai (Pro o superior).',
     error: `No se pudo verificar la sesión de Claude: ${status.state === 'error' ? status.message : ''}`
   }[status.state]
   const { settings } = useSettings()
@@ -221,62 +221,62 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
 
   return (
     <ShellContext.Provider value={{ focus, setFocus }}>
-    <div className={`shell${folded ? ' collapsed' : ''}${focus ? ' focus' : ''}`}>
-      <TitleBar title={focus ? `${title} · modo enfoque (Esc para salir)` : title} />
-      <nav className="sidebar" aria-hidden={focus || undefined}>
-        <div className="brand">
-          <Logo style={settings.style} />
-          <span className="nav-label">Enhome</span>
-        </div>
-        <LanguageSwitcher locked={examLocked} />
-        <button type="button" className="nav-item search-item" onClick={() => setPalette(true)} title="Buscar (Ctrl+K)">
-          <Icon name="search" className="nav-icon" />
-          <span className="nav-label">Buscar</span>
-          <kbd className="nav-label">Ctrl K</kbd>
-        </button>
-        {SECTION_GROUPS.map((group, i) => (
-          <div key={group.id} className="nav-group" role="group" aria-label={group.label}>
-            {i > 0 && <span className="nav-group-label">{group.label}</span>}
-            {SECTIONS.filter((s) => s.group === group.id).map((s) => (
-              <NavItem
-                key={s.id}
-                section={s}
-                shortcut={SECTIONS.indexOf(s) < 9 ? SECTIONS.indexOf(s) + 1 : null}
-                current={section}
-                examLocked={examLocked}
-                onNavigate={navigate}
-              />
-            ))}
+      <div className={`shell${folded ? ' collapsed' : ''}${focus ? ' focus' : ''}`}>
+        <TitleBar title={focus ? `${title} · modo enfoque (Esc para salir)` : title} />
+        <nav className="sidebar" aria-hidden={focus || undefined}>
+          <div className="brand">
+            <Logo style={settings.style} />
+            <span className="nav-label">Enhome</span>
           </div>
-        ))}
-        <div className="sidebar-foot">
-          <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
-          <span className="nav-label">{examLocked ? 'Examen en curso' : 'Claude conectado'}</span>
-          {!narrow && (
-          <button
-            type="button"
-            className="icon-button collapse-button"
-            aria-label={collapsed ? 'Mostrar la barra lateral' : 'Plegar la barra lateral'}
-            title={`${collapsed ? 'Mostrar' : 'Plegar'} la barra (Ctrl+B)`}
-            onClick={() => setCollapsed(!collapsed)}
-          >
-            <Icon name="chevron" className="glyph" />
+          <LanguageSwitcher locked={examLocked} />
+          <button type="button" className="nav-item search-item" onClick={() => setPalette(true)} title="Buscar (Ctrl+K)">
+            <Icon name="search" className="nav-icon" />
+            <span className="nav-label">Buscar</span>
+            <kbd className="nav-label">Ctrl K</kbd>
           </button>
-          )}
-        </div>
-      </nav>
-      {palette && <CommandPalette navigate={navigate} onClose={() => setPalette(false)} />}
-      <WelcomeTour />
-      {version && <WhatsNew version={version} />}
-      <RewardToasts trigger={section} />
-      <main className="content">
-        <div key={section} className={`page page-${section}`}>
-          <Suspense fallback={<PageSkeleton />}>
-            <Page section={section} params={params} status={status} navigate={navigate} onExamLock={setExamLocked} />
-          </Suspense>
-        </div>
-      </main>
-    </div>
+          {SECTION_GROUPS.map((group, i) => (
+            <div key={group.id} className="nav-group" role="group" aria-label={group.label}>
+              {i > 0 && <span className="nav-group-label">{group.label}</span>}
+              {SECTIONS.filter((s) => s.group === group.id).map((s) => (
+                <NavItem
+                  key={s.id}
+                  section={s}
+                  shortcut={SECTIONS.indexOf(s) < 9 ? SECTIONS.indexOf(s) + 1 : null}
+                  current={section}
+                  examLocked={examLocked}
+                  onNavigate={navigate}
+                />
+              ))}
+            </div>
+          ))}
+          <div className="sidebar-foot">
+            <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
+            <span className="nav-label">{examLocked ? 'Examen en curso' : 'Claude conectado'}</span>
+            {!narrow && (
+              <button
+                type="button"
+                className="icon-button collapse-button"
+                aria-label={collapsed ? 'Mostrar la barra lateral' : 'Plegar la barra lateral'}
+                title={`${collapsed ? 'Mostrar' : 'Plegar'} la barra (Ctrl+B)`}
+                onClick={() => setCollapsed(!collapsed)}
+              >
+                <Icon name="chevron" className="glyph" />
+              </button>
+            )}
+          </div>
+        </nav>
+        {palette && <CommandPalette navigate={navigate} onClose={() => setPalette(false)} />}
+        <WelcomeTour />
+        {version && <WhatsNew version={version} />}
+        <RewardToasts trigger={section} />
+        <main className="content">
+          <div key={section} className={`page page-${section}`}>
+            <Suspense fallback={<PageSkeleton />}>
+              <Page section={section} params={params} status={status} navigate={navigate} onExamLock={setExamLocked} />
+            </Suspense>
+          </div>
+        </main>
+      </div>
     </ShellContext.Provider>
   )
 }

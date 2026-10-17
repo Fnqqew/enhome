@@ -47,10 +47,7 @@ export default function Stats(): React.JSX.Element {
                 <span className="muted small">
                   {s.accuracy === null ? 'sin datos' : `${s.accuracy} %`}
                   {s.recentAccuracy !== null && s.accuracy !== null && s.recentAccuracy !== s.accuracy && (
-                    <span className={s.recentAccuracy > s.accuracy ? 'trend up' : 'trend down'}>
-                      {' '}
-                      · último mes {s.recentAccuracy} %
-                    </span>
+                    <span className={s.recentAccuracy > s.accuracy ? 'trend up' : 'trend down'}> · último mes {s.recentAccuracy} %</span>
                   )}
                 </span>
               </div>
@@ -94,7 +91,9 @@ export default function Stats(): React.JSX.Element {
                       <span className="level-code">{t.level}</span> {t.title}
                     </td>
                     <td>{t.answered}</td>
-                    <td className={t.accuracy !== null && t.accuracy < 60 ? 'warn-text' : undefined}>{t.accuracy === null ? '—' : `${t.accuracy} %`}</td>
+                    <td className={t.accuracy !== null && t.accuracy < 60 ? 'warn-text' : undefined}>
+                      {t.accuracy === null ? '—' : `${t.accuracy} %`}
+                    </td>
                     <td>{t.bestGrade ?? '—'}</td>
                   </tr>
                 ))}

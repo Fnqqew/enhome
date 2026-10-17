@@ -15,11 +15,7 @@ interface Command {
 }
 
 // Sin tildes ni mayúsculas, para buscar «practica» y encontrar «Práctica».
-const fold = (value: string): string =>
-  value
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
+const fold = (value: string): string => value.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 // Buscador general (Ctrl+K): secciones, tópicos, acciones y ajustes, escribiendo.
 export default function CommandPalette({ navigate, onClose }: { navigate: Navigate; onClose: () => void }): React.JSX.Element {
@@ -60,15 +56,13 @@ export default function CommandPalette({ navigate, onClose }: { navigate: Naviga
         icon: 'ajustes',
         run: go(() => update({ theme: settings.theme === 'dark' ? 'light' : 'dark' }))
       },
-      ...LANGUAGES.filter((l) => l.id !== settings.language).map(
-        (l): Command => ({
-          id: `language:${l.id}`,
-          label: `Cambiar al curso de ${l.name}`,
-          hint: 'Idioma',
-          icon: 'temario',
-          run: go(() => update({ language: l.id }))
-        })
-      )
+      ...LANGUAGES.filter((l) => l.id !== settings.language).map((l): Command => ({
+        id: `language:${l.id}`,
+        label: `Cambiar al curso de ${l.name}`,
+        hint: 'Idioma',
+        icon: 'temario',
+        run: go(() => update({ language: l.id }))
+      }))
     ]
     const topicCommands: Command[] = topics.map((t) => ({
       id: `topic:${t.id}`,

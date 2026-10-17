@@ -107,10 +107,7 @@ export const generatedExerciseSchema = z.union([
     situation: text,
     script: z
       .array(
-        z.union([
-          z.object({ role: z.literal('other'), speaker: text, text: text }),
-          z.object({ role: z.literal('you'), cue: text, sample: text })
-        ])
+        z.union([z.object({ role: z.literal('other'), speaker: text, text: text }), z.object({ role: z.literal('you'), cue: text, sample: text })])
       )
       .min(4)
       .max(10)
@@ -149,8 +146,7 @@ export type GeneratedExercise = z.infer<typeof generatedExerciseSchema>
 
 // Lo que se guarda: igual a lo generado, con las palabras ya mezcladas para ordenar.
 export type StoredExercise =
-  | Exclude<GeneratedExercise, { type: 'word_order' }>
-  | (Extract<GeneratedExercise, { type: 'word_order' }> & { tokens: string[] })
+  Exclude<GeneratedExercise, { type: 'word_order' }> | (Extract<GeneratedExercise, { type: 'word_order' }> & { tokens: string[] })
 
 // Los que corrige Claude en lugar de compararse con una respuesta exacta.
 export type OpenExercise = Extract<StoredExercise, { type: 'translation' | 'translation_set' | 'dialogue' | 'roleplay' | 'writing' }>

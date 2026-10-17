@@ -160,7 +160,14 @@ function WordOrder({ content, answer, feedback, onChange }: ItemProps<'word_orde
       <div className="token-bank">
         {content.tokens.map((token, i) =>
           chosen.includes(i) ? null : (
-            <button key={i} type="button" className="token" disabled={locked} aria-label={`Agregar «${token}»`} onClick={() => update([...chosen, i])}>
+            <button
+              key={i}
+              type="button"
+              className="token"
+              disabled={locked}
+              aria-label={`Agregar «${token}»`}
+              onClick={() => update([...chosen, i])}
+            >
               {token}
             </button>
           )

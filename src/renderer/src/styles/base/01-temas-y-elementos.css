@@ -82,13 +82,23 @@
   --font-display: var(--style-display);
   --font-numbers: var(--style-numbers);
 }
-:root[data-font='clasica'] { --font: var(--font-clasica); }
-:root[data-font='amigable'] { --font: var(--font-amigable); }
+:root[data-font='clasica'] {
+  --font: var(--font-clasica);
+}
+:root[data-font='amigable'] {
+  --font: var(--font-amigable);
+}
 
-:root[data-size='sm'] { --font-size: 14px; }
-:root[data-size='lg'] { --font-size: 18px; }
+:root[data-size='sm'] {
+  --font-size: 14px;
+}
+:root[data-size='lg'] {
+  --font-size: 18px;
+}
 
-:root[data-density='compact'] { --space: 0.7; }
+:root[data-density='compact'] {
+  --space: 0.7;
+}
 
 * {
   box-sizing: border-box;

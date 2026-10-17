@@ -117,7 +117,6 @@ export const STYLES: readonly {
   }
 ]
 
-
 // El estilo propio: fondo y acento a elección, y qué tan redondeados son los bordes.
 export const CUSTOM_RADII = { square: '4px', soft: '12px', round: '20px' } as const
 export type CustomRadius = keyof typeof CUSTOM_RADII

@@ -83,10 +83,7 @@ export interface ExamHistoryItem {
 }
 
 export interface TestsOverview {
-  exam:
-    | { state: 'active'; session: ExamSessionView }
-    | { state: 'paused'; examId: number; kind: ExamKind; title: string; minutesLeft: number }
-    | null
+  exam: { state: 'active'; session: ExamSessionView } | { state: 'paused'; examId: number; kind: ExamKind; title: string; minutesLeft: number } | null
   // Aviso de algo que se resolvió al abrir (anulación o entrega automática).
   notice: string | null
   weekly: { available: boolean; message: string; topicTitle: string | null; preparing: boolean; ready: boolean }
@@ -95,6 +92,4 @@ export interface TestsOverview {
 }
 
 export type ResumeResult =
-  | { state: 'active'; session: ExamSessionView }
-  | { state: 'result'; result: ExamResultView }
-  | { state: 'voided'; message: string }
+  { state: 'active'; session: ExamSessionView } | { state: 'result'; result: ExamResultView } | { state: 'voided'; message: string }

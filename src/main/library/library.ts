@@ -5,15 +5,14 @@ import type { LibraryItem } from '../../shared/library'
 import { SUMMARY_TYPES, type SummaryContent, type SummaryTypeId } from '../../shared/summaries'
 import type { Db } from '../db/database'
 
-const fold = (value: string): string =>
-  value
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
+const fold = (value: string): string => value.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 // El fragmento donde aparece lo buscado (o el principio del texto).
 function snippet(text: string, query: string): string {
-  const clean = text.replace(/[#*_>|`-]+/g, ' ').replace(/\s+/g, ' ').trim()
+  const clean = text
+    .replace(/[#*_>|`-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
   const at = query ? fold(clean).indexOf(fold(query)) : -1
   const start = Math.max(0, at - 60)
   const piece = clean.slice(start, start + 200)
@@ -47,7 +46,14 @@ export function libraryItems(db: Db, curriculum: CurriculumTopic[]): LibraryItem
     created_on: string
   }[]
   for (const r of readings) {
-    items.push({ kind: 'lectura', id: `lectura:${r.id}`, title: r.title, date: r.created_on, text: (JSON.parse(r.content) as { text: string }).text, markdown: false })
+    items.push({
+      kind: 'lectura',
+      id: `lectura:${r.id}`,
+      title: r.title,
+      date: r.created_on,
+      text: (JSON.parse(r.content) as { text: string }).text,
+      markdown: false
+    })
   }
 
   const words = db.prepare('SELECT id, term, translation, example, example_es, note, created_on FROM vocab').all() as unknown as {

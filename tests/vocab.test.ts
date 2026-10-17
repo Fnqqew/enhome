@@ -9,7 +9,13 @@ import { addDays } from '../src/shared/dates'
 const curriculum = loadCurriculum(join(__dirname, '..', 'content'), 'pt')
 const TODAY = '2026-10-16'
 
-const word = { term: 'emprestar', translation: 'prestar', example: 'Pode me emprestar a caneta?', exampleEs: '¿Me prestás la lapicera?', note: 'Falso amigo: no es «pedir prestado».' }
+const word = {
+  term: 'emprestar',
+  translation: 'prestar',
+  example: 'Pode me emprestar a caneta?',
+  exampleEs: '¿Me prestás la lapicera?',
+  note: 'Falso amigo: no es «pedir prestado».'
+}
 const fakeAsk = (async () => word) as unknown as Ask
 
 let db: Db

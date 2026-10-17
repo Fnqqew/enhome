@@ -51,9 +51,7 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
 
   // El estilo propio decide el modo por su fondo.
   const dark =
-    settings.style === 'personal'
-      ? isDarkColor(settings.customStyle.bg)
-      : settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
+    settings.style === 'personal' ? isDarkColor(settings.customStyle.bg) : settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
 
   useEffect(() => {
     const root = document.documentElement

@@ -15,7 +15,10 @@ const prompts: string[] = []
 const fakeAsk = (async ({ prompt }: { prompt: string }) => {
   prompts.push(prompt)
   if (prompt.startsWith('Empezá')) return { reply: 'Bonjour ! Comment ça va ?' }
-  return { reply: 'Super ! Et tu fais quoi ce week-end ?', correction: { ok: false, corrected: 'Je vais bien, merci.', notes: ['Con «bien» no va «bon».'] } }
+  return {
+    reply: 'Super ! Et tu fais quoi ce week-end ?',
+    correction: { ok: false, corrected: 'Je vais bien, merci.', notes: ['Con «bien» no va «bon».'] }
+  }
 }) as unknown as Ask
 
 beforeEach(() => {

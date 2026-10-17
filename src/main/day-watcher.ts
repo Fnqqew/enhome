@@ -25,10 +25,13 @@ export function watchDayChange(getToday: () => string, onChange: (today: string)
   }
 
   const scheduleMidnight = (): void => {
-    midnightTimer = setTimeout(() => {
-      check()
-      scheduleMidnight()
-    }, msUntilMidnight(new Date()) + MIDNIGHT_MARGIN_MS)
+    midnightTimer = setTimeout(
+      () => {
+        check()
+        scheduleMidnight()
+      },
+      msUntilMidnight(new Date()) + MIDNIGHT_MARGIN_MS
+    )
   }
 
   const interval = setInterval(check, CHECK_INTERVAL_MS)

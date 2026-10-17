@@ -96,15 +96,17 @@ export default function Games(): React.JSX.Element {
     <>
       <h1>Juegos</h1>
       <p className="muted">
-        Para practicar {course.name} cuando quieras, con las frases y los errores típicos de los tópicos que ya viste. No usan a Claude,
-        así que empiezan al instante. Las primeras {GAMES_WITH_XP_PER_DAY} partidas de cada día suman experiencia
+        Para practicar {course.name} cuando quieras, con las frases y los errores típicos de los tópicos que ya viste. No usan a Claude, así que
+        empiezan al instante. Las primeras {GAMES_WITH_XP_PER_DAY} partidas de cada día suman experiencia
         {deck.xpGamesLeft < GAMES_WITH_XP_PER_DAY ? ` (hoy te quedan ${deck.xpGamesLeft})` : ''}.
       </p>
       <div className="games-grid">
         {GAME_IDS.map((game) => {
           const info = GAMES[game]
           const record = deck.records[game]
-          const reason = missing(game, deck) ?? (info.needsVoice && !speech.hasTarget ? `Necesita una voz de ${course.label} instalada. ${INSTALL_VOICE_HELP}` : null)
+          const reason =
+            missing(game, deck) ??
+            (info.needsVoice && !speech.hasTarget ? `Necesita una voz de ${course.label} instalada. ${INSTALL_VOICE_HELP}` : null)
           return (
             <section key={game} className="card stack game-card fade-in">
               <div className="game-card-head">

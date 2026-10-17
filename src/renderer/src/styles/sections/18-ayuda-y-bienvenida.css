@@ -55,7 +55,9 @@
   height: 0.5rem;
   border-radius: 50%;
   background: var(--border);
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .tour-dots span.on {

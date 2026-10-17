@@ -94,8 +94,8 @@ const SECTIONS: { title: string; questions: Question[] }[] = [
               <kbd>Ctrl</kbd>+<kbd>1</kbd> a <kbd>9</kbd> ir a las secciones · <kbd>Ctrl</kbd>+<kbd>B</kbd> plegar la barra lateral
             </li>
             <li>
-              En la práctica: <kbd>Enter</kbd> comprobar y seguir (<kbd>Ctrl</kbd>+<kbd>Enter</kbd> en textos largos), <kbd>Ctrl</kbd>+<kbd>H</kbd> pista,{' '}
-              <kbd>Ctrl</kbd>+<kbd>→</kbd> cambiar ejercicio
+              En la práctica: <kbd>Enter</kbd> comprobar y seguir (<kbd>Ctrl</kbd>+<kbd>Enter</kbd> en textos largos), <kbd>Ctrl</kbd>+<kbd>H</kbd>{' '}
+              pista, <kbd>Ctrl</kbd>+<kbd>→</kbd> cambiar ejercicio
             </li>
             <li>
               <kbd>Esc</kbd> salir del modo enfoque o cerrar una ventana

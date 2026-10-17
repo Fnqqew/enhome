@@ -30,7 +30,7 @@ export function normalizeText(value: string): string {
     .normalize('NFC')
     .toLowerCase()
     .replace(/[’‘`´]/g, "'")
-    .replace(/[.,!?;:¿¡"«»()… ]/g, ' ')
+    .replace(/[.,!?;:¿¡"«»()…\u202f]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -66,7 +66,7 @@ export function scoreDictation(typed: string, expected: string): { score: number
     }
   }
   const matched = new Map<number, number>()
-  for (let i = 0, j = 0; i < a.length && j < b.length; ) {
+  for (let i = 0, j = 0; i < a.length && j < b.length;) {
     if (a[i] === b[j]) {
       matched.set(i, j)
       i++

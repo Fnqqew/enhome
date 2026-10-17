@@ -159,15 +159,12 @@ export class Placement {
     this.progression.applyPlacementResult(startTopicId, tags, today)
     const correct = tags.filter((t) => t.correct).length
     const grade = tags.length === 0 ? 0 : Math.round((correct / tags.length) * 100) / 10
-    this.db
-      .prepare("UPDATE exams SET status = 'submitted', grade = ?, submitted_at = datetime('now') WHERE id = ?")
-      .run(grade, exam.id)
+    this.db.prepare("UPDATE exams SET status = 'submitted', grade = ?, submitted_at = datetime('now') WHERE id = ?").run(grade, exam.id)
   }
 
   private result(): PlacementView {
-    const exam = this.db
-      .prepare("SELECT id FROM exams WHERE kind = 'placement' AND status = 'submitted' ORDER BY id DESC LIMIT 1")
-      .get() as { id: number } | undefined
+    const exam = this.db.prepare("SELECT id FROM exams WHERE kind = 'placement' AND status = 'submitted' ORDER BY id DESC LIMIT 1").get() as
+      { id: number } | undefined
     const counts = exam
       ? (this.db.prepare('SELECT COUNT(*) AS answered, COALESCE(SUM(correct), 0) AS correct FROM exam_answers WHERE exam_id = ?').get(exam.id) as {
           answered: number
@@ -175,8 +172,7 @@ export class Placement {
         })
       : { answered: 0, correct: 0 }
     const start = this.db.prepare("SELECT topic_id FROM topic_progress WHERE status = 'in_progress' LIMIT 1").get() as
-      | { topic_id: string }
-      | undefined
+      { topic_id: string } | undefined
     const startTopic = start ? this.curriculum.find((t) => t.id === start.topic_id) : undefined
     const player = this.db.prepare('SELECT cefr_level FROM player WHERE id = 1').get() as { cefr_level: string | null }
     return {
@@ -191,8 +187,7 @@ export class Placement {
   private currentExam(): ExamRow | null {
     return (
       (this.db.prepare("SELECT id, questions FROM exams WHERE kind = 'placement' AND status = 'in_progress' ORDER BY id DESC LIMIT 1").get() as
-        | ExamRow
-        | undefined) ?? null
+        ExamRow | undefined) ?? null
     )
   }
 

@@ -136,7 +136,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [ ] 83 Pruebas de la interfaz (e2e)
 - [x] 84 Nombres neutros en el contenido
 - [x] 85 Ejemplos de prueba compartidos
-- [ ] 86 Formato y linter automáticos
+- [x] 86 Formato y linter automáticos
 
 ## Instalación y versiones
 

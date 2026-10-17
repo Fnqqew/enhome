@@ -3,13 +3,7 @@ import { addDays, weekdayName } from '@shared/dates'
 import type { ProgressState } from '@shared/progress'
 
 // Solo en desarrollo: simular fechas, prácticas y exámenes hasta que existan los reales.
-export default function DevTools({
-  progress,
-  onChange
-}: {
-  progress: ProgressState
-  onChange: (state: ProgressState) => void
-}): React.JSX.Element {
+export default function DevTools({ progress, onChange }: { progress: ProgressState; onChange: (state: ProgressState) => void }): React.JSX.Element {
   const [date, setDate] = useState(progress.today)
   const [grade, setGrade] = useState(9)
   const [error, setError] = useState<string | null>(null)
@@ -69,11 +63,7 @@ export default function DevTools({
             </option>
           ))}
         </select>
-        <button
-          className="btn secondary"
-          disabled={week?.examStatus !== 'available'}
-          onClick={() => run(() => window.api.devSimulateExam(grade))}
-        >
+        <button className="btn secondary" disabled={week?.examStatus !== 'available'} onClick={() => run(() => window.api.devSimulateExam(grade))}>
           Simular examen
         </button>
         <button

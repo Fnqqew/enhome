@@ -64,15 +64,18 @@ export default function Library(): React.JSX.Element {
           <ul className="library-list">
             {visible.map((item) => (
               <li key={item.id} className={open === item.id ? 'open' : undefined}>
-                <button type="button" className="library-item" aria-expanded={open === item.id} onClick={() => setOpen(open === item.id ? null : item.id)}>
+                <button
+                  type="button"
+                  className="library-item"
+                  aria-expanded={open === item.id}
+                  onClick={() => setOpen(open === item.id ? null : item.id)}
+                >
                   <span className="badge">{LIBRARY_KINDS[item.kind]}</span>
                   <span className="library-title">{item.title}</span>
                   <span className="muted small">{formatDayMonth(item.date)}</span>
                 </button>
                 {open === item.id ? (
-                  <div className="library-body">
-                    {item.markdown ? <Markdown markdown={item.text} /> : <p className="multiline">{item.text}</p>}
-                  </div>
+                  <div className="library-body">{item.markdown ? <Markdown markdown={item.text} /> : <p className="multiline">{item.text}</p>}</div>
                 ) : (
                   item.snippet && <p className="muted small library-snippet">{item.snippet}</p>
                 )}

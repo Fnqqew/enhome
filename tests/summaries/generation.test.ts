@@ -26,7 +26,10 @@ const cards = (label: string) => Array.from({ length: 10 }, (_, i) => ({ front: 
 
 describe('resúmenes en Markdown', () => {
   it('usa la versión corregida por el revisor', async () => {
-    const { ask, prompts, efforts } = fakeClaude([{ markdown: markdown('ORIGINAL') }, { issues: ['Un ejemplo mal traducido.'], correctedMarkdown: markdown('CORREGIDO') }])
+    const { ask, prompts, efforts } = fakeClaude([
+      { markdown: markdown('ORIGINAL') },
+      { issues: ['Un ejemplo mal traducido.'], correctedMarkdown: markdown('CORREGIDO') }
+    ])
     const content = await generateSummary(topic, 'errores', ask)
     expect(content).toEqual({ format: 'markdown', markdown: markdown('CORREGIDO') })
     expect(prompts[0]).toContain('Errores comunes')

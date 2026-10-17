@@ -15,7 +15,9 @@ input[type='date']:focus,
 
 .text-answer,
 select {
-  transition: border-color 0.14s ease, box-shadow 0.14s ease;
+  transition:
+    border-color 0.14s ease,
+    box-shadow 0.14s ease;
 }
 
 .btn:hover:not(:disabled) {

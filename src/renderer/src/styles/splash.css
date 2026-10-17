@@ -11,9 +11,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  background:
-    radial-gradient(55% 45% at 50% 40%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 72%),
-    var(--bg);
+  background: radial-gradient(55% 45% at 50% 40%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 72%), var(--bg);
   color: var(--text);
   text-align: center;
   /* Mientras carga, la ventana se puede mover desde cualquier parte. */

@@ -122,7 +122,10 @@ export function gradeAuto(exercise: StoredExercise, answer: ExerciseAnswer): Aut
       if (!text.trim()) return graded(false, exercise.answers[0], exercise.explanation)
       const typo = findTypo(text, exercise.answers)
       if (typo) {
-        return { kind: 'graded', feedback: { correct: true, score: 9, correctAnswer: typo.expected, explanation: `${typoNote(typo)} ${exercise.explanation}` } }
+        return {
+          kind: 'graded',
+          feedback: { correct: true, score: 9, correctAnswer: typo.expected, explanation: `${typoNote(typo)} ${exercise.explanation}` }
+        }
       }
       return { kind: 'needs-ai' }
     }

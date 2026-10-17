@@ -290,7 +290,14 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
   handle(IPC.topicReviewSave, (topicId, edit, markReviewed) => {
     const language = activeLanguage()
     const parsed = z.object({ topic: topicSchema, summary: z.string().min(1).max(50_000) }).parse(edit)
-    const updated = saveTopicReview(courseDb(language), getServices(language).curriculum, z.string().parse(topicId), parsed, z.boolean().parse(markReviewed), today())
+    const updated = saveTopicReview(
+      courseDb(language),
+      getServices(language).curriculum,
+      z.string().parse(topicId),
+      parsed,
+      z.boolean().parse(markReviewed),
+      today()
+    )
     if (isDev) writeTopicFiles(contentDir, language, updated)
     // El temario se vuelve a armar con la corrección la próxima vez que se use.
     courses.delete(language)
@@ -342,14 +349,19 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
 
   handle(IPC.practiceGet, () => getServices().practice.getView(today()))
   handle(IPC.practiceStart, () => getServices().practice.start(today()))
-  handle(IPC.practiceAnswer, (exerciseId, answer) =>
-    getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today())
-  )
+  handle(IPC.practiceAnswer, (exerciseId, answer) => getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today()))
   const wordSchema = z.object({ term: z.string(), translation: z.string(), example: z.string(), exampleEs: z.string(), note: z.string() })
   handle(IPC.vocabLookup, (term, context) => {
     const { vocab, progression } = getServices()
     const level = vocab.levelOf(progression.getState(today()).week?.topicId ?? null)
-    return vocab.lookup(z.string().max(200).parse(term), z.string().max(2000).parse(context ?? ''), level)
+    return vocab.lookup(
+      z.string().max(200).parse(term),
+      z
+        .string()
+        .max(2000)
+        .parse(context ?? ''),
+      level
+    )
   })
   handle(IPC.vocabSave, (info) => getServices().vocab.save(wordSchema.parse(info), today()))
   handle(IPC.vocabOverview, () => getServices().vocab.overview(today()))
@@ -370,10 +382,20 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
   handle(IPC.readingsList, () => getServices().readings.list())
   handle(IPC.readingGet, (readingId) => getServices().readings.get(id.parse(readingId)))
   handle(IPC.readingGenerate, (theme) => getServices().readings.generate(z.string().min(1).max(80).parse(theme), today()))
-  handle(IPC.readingAnswer, (readingId, answers) => getServices().readings.answer(id.parse(readingId), z.array(z.number().int().min(0).max(3)).parse(answers)))
+  handle(IPC.readingAnswer, (readingId, answers) =>
+    getServices().readings.answer(id.parse(readingId), z.array(z.number().int().min(0).max(3)).parse(answers))
+  )
   handle(IPC.readingRemove, (readingId) => getServices().readings.remove(id.parse(readingId)))
   handle(IPC.journalGet, () => getServices().journal.view(today()))
-  handle(IPC.journalSave, (text) => getServices().journal.save(z.string().max(MAX_JOURNAL_LENGTH * 2).parse(text), today()))
+  handle(IPC.journalSave, (text) =>
+    getServices().journal.save(
+      z
+        .string()
+        .max(MAX_JOURNAL_LENGTH * 2)
+        .parse(text),
+      today()
+    )
+  )
   handle(IPC.journalCorrect, () => getServices().journal.correct(today()))
   handle(IPC.gamesDeck, () => getServices().games.deck(today()))
   handle(IPC.gamesFinish, (game, score) => getServices().games.finish(z.enum(GAME_IDS).parse(game), z.number().parse(score), today()))
@@ -402,11 +424,19 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
   handle(IPC.examLock, () => getServices().exams.hasBlockingExam())
   handle(IPC.examStartWeekly, () => getServices().exams.startWeekly(today()))
   handle(IPC.examStartMock, (scope, subtopicId) =>
-    getServices().exams.startMock(z.enum(['topic', 'general', 'subtopic']).parse(scope), today(), z.string().nullable().optional().parse(subtopicId) ?? null)
+    getServices().exams.startMock(
+      z.enum(['topic', 'general', 'subtopic']).parse(scope),
+      today(),
+      z.string().nullable().optional().parse(subtopicId) ?? null
+    )
   )
   handle(IPC.examResume, (examId) => getServices().exams.resume(id.parse(examId), today()))
   handle(IPC.examSave, (examId, index, answer) =>
-    getServices().exams.saveAnswer(id.parse(examId), z.number().int().min(0).parse(index), answer === null ? null : exerciseAnswerSchema.parse(answer))
+    getServices().exams.saveAnswer(
+      id.parse(examId),
+      z.number().int().min(0).parse(index),
+      answer === null ? null : exerciseAnswerSchema.parse(answer)
+    )
   )
   handle(IPC.examHeartbeat, (examId) => getServices().exams.heartbeat(id.parse(examId)))
   handle(IPC.examSubmit, (examId) => getServices().exams.submit(id.parse(examId), today()))
@@ -427,7 +457,12 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
     const win = new BrowserWindow({ show: false, webPreferences: { sandbox: true, javascript: false } })
     try {
       await win.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(html)}`)
-      const pdf = await win.webContents.printToPDF({ landscape: true, pageSize: 'A4', printBackground: true, margins: { top: 0, bottom: 0, left: 0, right: 0 } })
+      const pdf = await win.webContents.printToPDF({
+        landscape: true,
+        pageSize: 'A4',
+        printBackground: true,
+        margins: { top: 0, bottom: 0, left: 0, right: 0 }
+      })
       const language = languageInfo(activeLanguage()).name
       const { canceled, filePath } = await dialog.showSaveDialog({
         title: 'Guardar certificado',
@@ -441,14 +476,21 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
       win.destroy()
     }
   })
-  handle(IPC.librarySearch, (query) => searchLibrary(courseDb(activeLanguage()), getServices().curriculum, z.string().max(200).parse(query ?? '')))
+  handle(IPC.librarySearch, (query) =>
+    searchLibrary(
+      courseDb(activeLanguage()),
+      getServices().curriculum,
+      z
+        .string()
+        .max(200)
+        .parse(query ?? '')
+    )
+  )
   handle(IPC.statsGet, () => buildStats(courseDb(activeLanguage()), getServices().curriculum, today()))
   handle(IPC.rewardsView, () => getServices().rewards.getView(today()))
   handle(IPC.rewardsNews, () => getServices().rewards.takeNews(today()))
   handle(IPC.rewardsHint, (exerciseId) => getServices().rewards.useHint(id.parse(exerciseId)))
-  handle(IPC.rewardsSecondChance, (examId, index) =>
-    getServices().rewards.useSecondChance(id.parse(examId), z.number().int().min(0).parse(index))
-  )
+  handle(IPC.rewardsSecondChance, (examId, index) => getServices().rewards.useSecondChance(id.parse(examId), z.number().int().min(0).parse(index)))
 
   if (isDev) {
     handle(IPC.devSetToday, (date) => {

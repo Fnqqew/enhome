@@ -20,7 +20,12 @@ const story = {
     { term: 'arrabbiato', translation: 'enojado' },
     { term: 'inesistente', translation: 'no está en el texto' }
   ],
-  questions: Array.from({ length: 4 }, (_, i) => ({ prompt: `Pregunta ${i}`, options: ['a', 'b', 'c', 'd'], correctIndex: i % 4, explanation: 'Porque sí.' }))
+  questions: Array.from({ length: 4 }, (_, i) => ({
+    prompt: `Pregunta ${i}`,
+    options: ['a', 'b', 'c', 'd'],
+    correctIndex: i % 4,
+    explanation: 'Porque sí.'
+  }))
 }
 const review = { correctedText: 'Oggi sono andato al mare.', comments: 'Muy bien.', mistakes: [], tip: 'fare un tuffo (darse un chapuzón)', score: 8 }
 

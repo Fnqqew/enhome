@@ -47,7 +47,8 @@ const FAILURES: { kind: ClaudeErrorKind; pattern: RegExp; message: string }[] = 
   },
   {
     kind: 'offline',
-    pattern: /enotfound|econnrefused|econnreset|etimedout|eai_again|getaddrinfo|network|fetch failed|connection (error|refused)|socket hang up|unable to connect/i,
+    pattern:
+      /enotfound|econnrefused|econnreset|etimedout|eai_again|getaddrinfo|network|fetch failed|connection (error|refused)|socket hang up|unable to connect/i,
     message: 'No hay conexión con Claude. Revisá tu internet y reintentá.'
   }
 ]
@@ -142,7 +143,14 @@ function runProcess(exe: string, args: string[], input: string, timeoutMs: numbe
     running.add(cancel)
     const timer = setTimeout(() => {
       child.kill()
-      settle(() => reject(new ClaudeError(`Claude tardó más de ${duration(timeoutMs)} en responder. Suele pasar cuando está saturado: reintentá en un rato.`, 'timeout')))
+      settle(() =>
+        reject(
+          new ClaudeError(
+            `Claude tardó más de ${duration(timeoutMs)} en responder. Suele pasar cuando está saturado: reintentá en un rato.`,
+            'timeout'
+          )
+        )
+      )
     }, timeoutMs)
     child.stdout.on('data', (d) => (stdout += d))
     child.stderr.on('data', (d) => (stderr += d))
@@ -256,6 +264,7 @@ export async function askClaude<T>({
   if (!exe) throw new ClaudeError('Claude Code no está instalado.', 'missing')
   const epoch = cancelEpoch
 
+  // prettier-ignore
   const args = [
     '-p',
     '--output-format', 'json',
@@ -307,5 +316,8 @@ export async function askClaude<T>({
   finish(attempts, false)
   if (lastError instanceof ClaudeError) throw lastError
   console.error(`[claude] ${label}: respuesta con formato inválido`, lastError)
-  throw new ClaudeError('Claude respondió con un formato inesperado varias veces seguidas. Reintentá: suele salir bien en el intento siguiente.', 'format')
+  throw new ClaudeError(
+    'Claude respondió con un formato inesperado varias veces seguidas. Reintentá: suele salir bien en el intento siguiente.',
+    'format'
+  )
 }

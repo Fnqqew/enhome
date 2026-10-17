@@ -233,7 +233,9 @@ describe('práctica que empieza con los ejercicios cortos', () => {
     let releaseLong!: () => void
     const longArrived = new Promise<void>((resolve) => (releaseLong = resolve))
     const progressive: PoolGenerator = async ({ counts, onGroup }) => {
-      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) => Array.from({ length: count }, (_, i) => sample(type, i)))
+      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) =>
+        Array.from({ length: count }, (_, i) => sample(type, i))
+      )
       const short = all.filter((e) => !isLong(e.type))
       const long = all.filter((e) => isLong(e.type))
       onGroup?.(short)
@@ -264,7 +266,9 @@ describe('práctica que empieza con los ejercicios cortos', () => {
     const calls: string[][] = []
     const shortOnly: PoolGenerator = async ({ counts, onGroup }) => {
       calls.push(Object.keys(counts))
-      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) => Array.from({ length: count }, (_, i) => sample(type, i)))
+      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) =>
+        Array.from({ length: count }, (_, i) => sample(type, i))
+      )
       const short = all.filter((e) => !isLong(e.type))
       onGroup?.(short)
       if (all.some((e) => isLong(e.type)) && short.length > 0) throw new Error('se cortó')

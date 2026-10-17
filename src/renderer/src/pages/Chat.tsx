@@ -60,12 +60,19 @@ export default function Chat(): React.JSX.Element {
           <h2>Practicá {course.name} conversando</h2>
         </div>
         <p className="muted">
-          Elegí una situación y charlá con Claude como con una persona. Cada mensaje tuyo aparece corregido al costado, con la explicación,
-          sin cortar la conversación.
+          Elegí una situación y charlá con Claude como con una persona. Cada mensaje tuyo aparece corregido al costado, con la explicación, sin cortar
+          la conversación.
         </p>
         <div className="suggestions">
           {suggestions.map((s) => (
-            <button key={s.title} type="button" className="suggestion" disabled={busy} title={s.scenario} onClick={() => run(() => window.api.startChat(s))}>
+            <button
+              key={s.title}
+              type="button"
+              className="suggestion"
+              disabled={busy}
+              title={s.scenario}
+              onClick={() => run(() => window.api.startChat(s))}
+            >
               <strong>{s.title}</strong>
               <span className="muted small">{s.scenario}</span>
             </button>
@@ -167,7 +174,13 @@ function Conversation({
           {chat.messages.map((m) => (
             <Bubble key={m.id} message={m} onListen={() => speech.speakAs(m.text)} />
           ))}
-          {busy && <div className="bubble assistant typing" aria-label="Claude está escribiendo"><span /><span /><span /></div>}
+          {busy && (
+            <div className="bubble assistant typing" aria-label="Claude está escribiendo">
+              <span />
+              <span />
+              <span />
+            </div>
+          )}
         </div>
         <SelectionAsk containerRef={listRef} topicId="" />
         {error && <p className="error multiline">{error}</p>}

@@ -55,13 +55,7 @@ describe('planRetryWeek', () => {
 
 describe('detectWeakTopics', () => {
   it('marca tópicos anteriores con más del 40 % de errores', () => {
-    const answers = [
-      wrong(toBe.id, 'x'),
-      right(toBe.id, 'x'),
-      wrong(toBe.id, 'x'),
-      wrong(nouns.id, 'x'),
-      wrong(nouns.id, 'x')
-    ]
+    const answers = [wrong(toBe.id, 'x'), right(toBe.id, 'x'), wrong(toBe.id, 'x'), wrong(nouns.id, 'x'), wrong(nouns.id, 'x')]
     expect(detectWeakTopics(answers, nouns.id)).toEqual([toBe.id])
   })
 

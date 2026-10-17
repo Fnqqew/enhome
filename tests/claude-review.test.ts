@@ -52,7 +52,10 @@ function routedClaude(reply: (prompt: string, kind: 'generation' | 'review', gro
 
 describe('applyCorrections', () => {
   it('reemplaza por posición e ignora lo fuera de rango o de otro tipo', () => {
-    const items = [{ type: 'a', v: 1 }, { type: 'b', v: 2 }]
+    const items = [
+      { type: 'a', v: 1 },
+      { type: 'b', v: 2 }
+    ]
     const result = applyCorrections(
       items,
       [

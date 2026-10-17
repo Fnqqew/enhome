@@ -35,15 +35,17 @@ export function Pronunciation({ deck, onEnd }: GameProps): React.JSX.Element {
         <span className="level">EXPERIMENTAL</span>
         <h2>Reconocimiento de voz en tu computadora</h2>
         <p className="muted">
-          Grabás una frase y Whisper, un reconocimiento de voz que corre acá mismo, te dice qué entendió. La primera vez se baja el
-          modelo (unos 80 MB) y después funciona sin internet. Lo que grabás no sale de la computadora.
+          Grabás una frase y Whisper, un reconocimiento de voz que corre acá mismo, te dice qué entendió. La primera vez se baja el modelo (unos 80
+          MB) y después funciona sin internet. Lo que grabás no sale de la computadora.
         </p>
         {asr.state === 'loading' ? (
           <div className="stack-sm">
             <div className="timer" aria-label={`Descargando: ${percent} %`}>
               <span style={{ width: `${percent}%` }} />
             </div>
-            <span className="muted small">{percent > 0 && percent < 100 ? `Descargando el modelo: ${percent} %` : 'Preparando el reconocimiento…'}</span>
+            <span className="muted small">
+              {percent > 0 && percent < 100 ? `Descargando el modelo: ${percent} %` : 'Preparando el reconocimiento…'}
+            </span>
           </div>
         ) : (
           <div>
@@ -115,8 +117,7 @@ export function Pronunciation({ deck, onEnd }: GameProps): React.JSX.Element {
             ))}
           </p>
           <p className="muted small">
-            {result.score} % de las palabras.{' '}
-            {result.score >= 80 ? '¡Muy bien!' : 'Escuchá el modelo y probá de nuevo, más despacio.'}
+            {result.score} % de las palabras. {result.score >= 80 ? '¡Muy bien!' : 'Escuchá el modelo y probá de nuevo, más despacio.'}
           </p>
           <div>
             <button className="btn" onClick={next}>

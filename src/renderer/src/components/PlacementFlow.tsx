@@ -31,8 +31,8 @@ export default function PlacementFlow({ resume, onDone }: { resume: boolean; onD
       <section className="card stack">
         <h2>Examen inicial</h2>
         <p>
-          Antes de empezar vamos a ver qué sabés. Son preguntas cortas de opción múltiple, tópico por tópico: si respondés bien al
-          menos 2 de 3, pasás al siguiente. El primer tópico que te cueste es donde empieza tu recorrido.
+          Antes de empezar vamos a ver qué sabés. Son preguntas cortas de opción múltiple, tópico por tópico: si respondés bien al menos 2 de 3, pasás
+          al siguiente. El primer tópico que te cueste es donde empieza tu recorrido.
         </p>
         <p className="muted">No hay tiempo límite. Si no sabés una respuesta, elegí «No lo sé»: así el resultado es más preciso.</p>
         {error && <p className="error">{error}</p>}

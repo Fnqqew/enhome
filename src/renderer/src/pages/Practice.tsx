@@ -150,25 +150,25 @@ function Intro({
       </div>
       <SpeechControls getText={() => speechText} />
       <div ref={contentRef} className="stack">
-      <p>{view.goal}</p>
-      <div>
-        <h3 className="level">PUNTOS CLAVE</h3>
-        <ul>
-          {view.keyPoints.map((point, i) => (
-            <li key={i}>{point}</li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <h3 className="level">EJEMPLOS</h3>
-        <ul className="examples">
-          {view.examples.map((example, i) => (
-            <li key={i}>
-              <span className="en">{example.target}</span> <span className="muted">— {example.es}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+        <p>{view.goal}</p>
+        <div>
+          <h3 className="level">PUNTOS CLAVE</h3>
+          <ul>
+            {view.keyPoints.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className="level">EJEMPLOS</h3>
+          <ul className="examples">
+            {view.examples.map((example, i) => (
+              <li key={i}>
+                <span className="en">{example.target}</span> <span className="muted">— {example.es}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       <p className="muted small">Seleccioná un texto para preguntarle a Claude.</p>
       <SelectionAsk containerRef={contentRef} topicId={view.topicId} />
@@ -177,7 +177,9 @@ function Intro({
           {starting ? 'Preparando ejercicios…' : 'Empezar práctica'}
         </button>
         {starting && (
-          <span className="muted">Claude está armando y revisando tus ejercicios. Empezás apenas estén los cortos; los largos se suman mientras practicás.</span>
+          <span className="muted">
+            Claude está armando y revisando tus ejercicios. Empezás apenas estén los cortos; los largos se suman mientras practicás.
+          </span>
         )}
       </div>
       <ClaudeWait active={starting} />
@@ -247,16 +249,20 @@ function SessionPlayer({
   const check = (): void => {
     if (!current || current.feedback || !draft || busy) return
     const exerciseId = current.id
-    run('answer', () => window.api.answerExercise(exerciseId, draft), (next) => {
-      announceRewards()
-      if (next.status === 'session') {
-        const answered = next.session.exercises.find((e) => e.id === exerciseId)
-        if (answered?.feedback) play(answered.feedback.correct ? 'correct' : 'wrong')
+    run(
+      'answer',
+      () => window.api.answerExercise(exerciseId, draft),
+      (next) => {
+        announceRewards()
+        if (next.status === 'session') {
+          const answered = next.session.exercises.find((e) => e.id === exerciseId)
+          if (answered?.feedback) play(answered.feedback.correct ? 'correct' : 'wrong')
+        }
+        onView(next)
+        setShownId(exerciseId)
+        setDraft(null)
       }
-      onView(next)
-      setShownId(exerciseId)
-      setDraft(null)
-    })
+    )
   }
 
   const submit = (event: React.FormEvent): void => {
@@ -278,10 +284,14 @@ function SessionPlayer({
   const canSkip = !!current && !current.feedback && session.spareCount > 0 && busy === null
   const skip = (): void => {
     if (!current || !canSkip) return
-    run('skip', () => window.api.skipExercise(current.id), (next) => {
-      onView(next)
-      setDraft(null)
-    })
+    run(
+      'skip',
+      () => window.api.skipExercise(current.id),
+      (next) => {
+        onView(next)
+        setDraft(null)
+      }
+    )
   }
 
   // Atajos: Enter comprueba y sigue (Ctrl+Enter en los textos largos), Ctrl+H pide una pista y Ctrl+→ cambia el ejercicio.
@@ -360,8 +370,7 @@ function SessionPlayer({
 
       {minutesLeft <= MIDNIGHT_WARNING_MINUTES && (
         <div className="notice warn">
-          {minutesLeft === 1 ? 'Falta 1 minuto' : `Faltan ${minutesLeft} minutos`} para las 00:00. La práctica cuenta para el día en que
-          la terminás.
+          {minutesLeft === 1 ? 'Falta 1 minuto' : `Faltan ${minutesLeft} minutos`} para las 00:00. La práctica cuenta para el día en que la terminás.
         </div>
       )}
 
@@ -421,7 +430,12 @@ function SessionPlayer({
             <div className="row spread">
               <Rating
                 value={current.rating}
-                onRate={(value) => window.api.rateExercise(current.id, value).then(onView).catch((err: Error) => setError(err.message))}
+                onRate={(value) =>
+                  window.api
+                    .rateExercise(current.id, value)
+                    .then(onView)
+                    .catch((err: Error) => setError(err.message))
+                }
               />
               <button ref={nextRef} className="btn" type="button" title="Enter" onClick={goNext}>
                 {pending ? 'Siguiente' : 'Ver resultado'}
@@ -448,8 +462,9 @@ function SessionPlayer({
             <>
               <p className="waiting-long">
                 <span className="spinner" aria-hidden="true" />
-                Ya hiciste los cortos. Claude está terminando {session.pendingCount === 1 ? 'el ejercicio largo' : `los ${session.pendingCount} ejercicios largos`}{' '}
-                (la conversación y la tanda de traducción): aparecen acá solos en unos segundos.
+                Ya hiciste los cortos. Claude está terminando{' '}
+                {session.pendingCount === 1 ? 'el ejercicio largo' : `los ${session.pendingCount} ejercicios largos`} (la conversación y la tanda de
+                traducción): aparecen acá solos en unos segundos.
               </p>
               <ClaudeWait active />
             </>
@@ -460,10 +475,20 @@ function SessionPlayer({
           <p>Respondiste todos los ejercicios.</p>
           {error && <p className="error">{error}</p>}
           <div>
-            <button className="btn" disabled={busy !== null} onClick={() => run('finish', () => window.api.finishPractice(session.id), (result) => {
-                announceRewards()
-                onFinished(result)
-              })}>
+            <button
+              className="btn"
+              disabled={busy !== null}
+              onClick={() =>
+                run(
+                  'finish',
+                  () => window.api.finishPractice(session.id),
+                  (result) => {
+                    announceRewards()
+                    onFinished(result)
+                  }
+                )
+              }
+            >
               {busy === 'finish' ? 'Guardando…' : 'Terminar práctica'}
             </button>
           </div>

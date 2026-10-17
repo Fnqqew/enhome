@@ -109,7 +109,8 @@ export class Exams {
 
     let exam: TestsOverview['exam'] = null
     if (open?.status === 'in_progress') exam = { state: 'active', session: this.sessionView(open) }
-    else if (open?.status === 'paused') exam = { state: 'paused', examId: open.id, kind: open.kind, title: this.title(open), minutesLeft: this.minutesLeft(open) }
+    else if (open?.status === 'paused')
+      exam = { state: 'paused', examId: open.id, kind: open.kind, title: this.title(open), minutesLeft: this.minutesLeft(open) }
 
     const available = week?.examStatus === 'available'
     const ready = week ? this.hasDraft(week.id) : false
@@ -232,7 +233,9 @@ export class Exams {
     await this.resolveInterruptions(today)
     const row = this.exam(examId)
     if (row.status === 'paused') {
-      this.db.prepare("UPDATE exams SET status = 'in_progress', pause_used = 1, paused_at = NULL, last_seen_at = ? WHERE id = ?").run(this.nowIso(), examId)
+      this.db
+        .prepare("UPDATE exams SET status = 'in_progress', pause_used = 1, paused_at = NULL, last_seen_at = ? WHERE id = ?")
+        .run(this.nowIso(), examId)
       return { state: 'active', session: this.sessionView(this.exam(examId)) }
     }
     if (row.status === 'in_progress') {
@@ -324,7 +327,16 @@ export class Exams {
       )
       questions.forEach((q, i) => {
         const { answer, feedback } = graded[i]
-        upsert.run(row.id, i, answer ? JSON.stringify(answer) : null, feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback), q.topicId, q.subtopicId)
+        upsert.run(
+          row.id,
+          i,
+          answer ? JSON.stringify(answer) : null,
+          feedback.correct ? 1 : 0,
+          feedback.score,
+          JSON.stringify(feedback),
+          q.topicId,
+          q.subtopicId
+        )
         // Las preguntas falladas van al cuaderno de errores y al repaso del examen.
         if (!feedback.correct) {
           recordMistake(
@@ -480,9 +492,7 @@ export class Exams {
 
   private history(): ExamHistoryItem[] {
     const rows = this.db
-      .prepare(
-        "SELECT * FROM exams WHERE kind IN ('weekly', 'mock') AND status IN ('submitted', 'voided') ORDER BY id DESC LIMIT ?"
-      )
+      .prepare("SELECT * FROM exams WHERE kind IN ('weekly', 'mock') AND status IN ('submitted', 'voided') ORDER BY id DESC LIMIT ?")
       .all(HISTORY_LIMIT) as unknown as ExamRow[]
     return rows.map((row) => ({
       id: row.id,

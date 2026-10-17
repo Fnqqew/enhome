@@ -133,7 +133,8 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
               </span>
               <div className="stack-sm">
                 <strong>
-                  {item.label} <span className="muted">
+                  {item.label}{' '}
+                  <span className="muted">
                     {item.quantity}/{item.max}
                   </span>
                 </strong>

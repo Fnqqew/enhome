@@ -265,7 +265,11 @@ function GoalSettings(): React.JSX.Element {
       </Row>
       {goal.kind !== 'off' && (
         <Row label="Cuánto">
-          <select value={goal.amount} aria-label="Cantidad de la meta" onChange={(e) => update({ dailyGoal: { ...goal, amount: Number(e.target.value) } })}>
+          <select
+            value={goal.amount}
+            aria-label="Cantidad de la meta"
+            onChange={(e) => update({ dailyGoal: { ...goal, amount: Number(e.target.value) } })}
+          >
             {amounts.map((n) => (
               <option key={n} value={n}>
                 {n} {goal.kind === 'minutes' ? 'minutos' : n === 1 ? 'actividad' : 'actividades'}
@@ -292,7 +296,9 @@ function GoalSettings(): React.JSX.Element {
           ]}
         />
       </Row>
-      <p className="muted small">Cambia cómo te habla Claude en las correcciones, los resúmenes y las respuestas nuevas. El temario base sigue en rioplatense.</p>
+      <p className="muted small">
+        Cambia cómo te habla Claude en las correcciones, los resúmenes y las respuestas nuevas. El temario base sigue en rioplatense.
+      </p>
     </section>
   )
 }
@@ -316,12 +322,17 @@ function NotificationSettings(): React.JSX.Element {
       </Row>
       {settings.reminderEnabled && (
         <Row label="A las">
-          <input type="time" className="time-input" value={settings.reminderTime} onChange={(e) => e.target.value && update({ reminderTime: e.target.value })} />
+          <input
+            type="time"
+            className="time-input"
+            value={settings.reminderTime}
+            onChange={(e) => e.target.value && update({ reminderTime: e.target.value })}
+          />
         </Row>
       )}
       <p className="muted small">
-        Una notificación de Windows a esa hora si todavía no hiciste la práctica del día o no llegaste a tu meta, y otra a las 23 si la meta
-        sigue pendiente. Para que lleguen, la app tiene que estar abierta (o en la bandeja).
+        Una notificación de Windows a esa hora si todavía no hiciste la práctica del día o no llegaste a tu meta, y otra a las 23 si la meta sigue
+        pendiente. Para que lleguen, la app tiene que estar abierta (o en la bandeja).
       </p>
       <Row label="Al cerrar la ventana">
         <Segmented<'tray' | 'quit'>
@@ -354,7 +365,8 @@ function NotificationSettings(): React.JSX.Element {
 function ClaudeModeSettings(): React.JSX.Element {
   const { settings, update } = useSettings()
   const notes: Record<AppSettings['claudeMode'], string> = {
-    rapido: 'Claude piensa menos antes de responder: las correcciones y los ejercicios llegan alrededor de un 30 % antes, con algo menos de cuidado en los detalles.',
+    rapido:
+      'Claude piensa menos antes de responder: las correcciones y los ejercicios llegan alrededor de un 30 % antes, con algo menos de cuidado en los detalles.',
     equilibrado: 'Lo de siempre: cada tarea usa el esfuerzo que mejor le queda.',
     preciso: 'Claude piensa más antes de responder: tarda alrededor de un 50 % más, pero revisa con más cuidado ejercicios, correcciones y exámenes.'
   }
@@ -412,7 +424,9 @@ function DataSettings(): React.JSX.Element {
           Todos los días, al abrir la app, se guarda una copia de cada curso. Quedan las últimas siete. Restaurar una vuelve todo (progreso, ajustes,
           vocabulario, diario) a ese día y reinicia la app.
         </p>
-        {backups && backups.length === 0 && <p className="muted small">Todavía no hay copias: la primera se hace unos segundos después de abrir la app.</p>}
+        {backups && backups.length === 0 && (
+          <p className="muted small">Todavía no hay copias: la primera se hace unos segundos después de abrir la app.</p>
+        )}
         {backups && backups.length > 0 && (
           <ul className="backup-list">
             {backups.map((b) => (
@@ -420,7 +434,8 @@ function DataSettings(): React.JSX.Element {
                 <span>
                   <strong>{formatDayMonth(b.date)}</strong>{' '}
                   <span className="muted small">
-                    · {b.courses} {b.courses === 1 ? 'curso' : 'cursos'} · {(b.size / 1_000_000).toLocaleString('es-AR', { maximumFractionDigits: 1 })} MB
+                    · {b.courses} {b.courses === 1 ? 'curso' : 'cursos'} ·{' '}
+                    {(b.size / 1_000_000).toLocaleString('es-AR', { maximumFractionDigits: 1 })} MB
                   </span>
                 </span>
                 {confirm === `restore:${b.date}` ? (
@@ -587,8 +602,8 @@ function PracticeSettings(): React.JSX.Element {
           })}
         </div>
         <p className="muted small">
-          Tocá un formato para sacarlo de tus prácticas (hasta {MAX_EXCLUDED}). Si sacás la conversación o la escritura, la práctica
-          se completa con los otros formatos.
+          Tocá un formato para sacarlo de tus prácticas (hasta {MAX_EXCLUDED}). Si sacás la conversación o la escritura, la práctica se completa con
+          los otros formatos.
         </p>
       </div>
     </section>
@@ -639,9 +654,15 @@ function CustomStyleEditor(): React.JSX.Element {
           }))}
         />
       </div>
-      <div className="custom-sample" style={{ background: custom.bg, color: dark ? '#ececf0' : '#1d1d1f', borderRadius: CUSTOM_RADII[custom.radius] }}>
+      <div
+        className="custom-sample"
+        style={{ background: custom.bg, color: dark ? '#ececf0' : '#1d1d1f', borderRadius: CUSTOM_RADII[custom.radius] }}
+      >
         <span>Así se ve el texto</span>
-        <span className="custom-sample-btn" style={{ background: custom.accent, color: contrastText(custom.accent), borderRadius: CUSTOM_RADII[custom.radius] }}>
+        <span
+          className="custom-sample-btn"
+          style={{ background: custom.accent, color: contrastText(custom.accent), borderRadius: CUSTOM_RADII[custom.radius] }}
+        >
           Botón
         </span>
       </div>
@@ -746,8 +767,8 @@ function VoiceSettings(): React.JSX.Element {
     <section className="card stack">
       <h2>Lectura en voz alta</h2>
       <p className="muted">
-        Al escuchar un resumen, las partes en español se leen con una voz y las del idioma que estudiás con otra, para que cada una tenga
-        la pronunciación correcta.
+        Al escuchar un resumen, las partes en español se leen con una voz y las del idioma que estudiás con otra, para que cada una tenga la
+        pronunciación correcta.
       </p>
       {voices.length === 0 ? (
         <p className="warn-text">Windows no tiene voces instaladas. {INSTALL_VOICE_HELP}</p>
@@ -796,7 +817,10 @@ function CourseSettings(): React.JSX.Element {
   const [error, setError] = useState<string | null>(null)
 
   const load = useCallback(() => {
-    window.api.getCourses().then(setCourses).catch((err: Error) => setError(err.message))
+    window.api
+      .getCourses()
+      .then(setCourses)
+      .catch((err: Error) => setError(err.message))
     window.api
       .getProgress()
       .then((p) => setPaused(p.pausedSince))
@@ -879,8 +903,8 @@ function CourseSettings(): React.JSX.Element {
                 </div>
                 {confirming === course.language && (
                   <p className="warn-text small course-warning">
-                    Se borra el progreso de {info.name}: semanas, prácticas, exámenes, racha, experiencia y logros. Los resúmenes guardados y
-                    los ajustes se mantienen.
+                    Se borra el progreso de {info.name}: semanas, prácticas, exámenes, racha, experiencia y logros. Los resúmenes guardados y los
+                    ajustes se mantienen.
                   </p>
                 )}
               </li>

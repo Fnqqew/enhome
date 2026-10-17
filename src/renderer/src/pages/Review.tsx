@@ -86,8 +86,8 @@ export default function Review({ examId, navigate }: { examId: number | null; na
           <Icon name="repaso" className="hero-icon" />
         </div>
         <p className="muted">
-          Cada respuesta incorrecta de la práctica o de un examen se anota acá y vuelve a los {REVIEW_INTERVALS.join(', ')} días. Cuando
-          la acertás {REVIEW_STEPS} veces seguidas, queda aprendida.
+          Cada respuesta incorrecta de la práctica o de un examen se anota acá y vuelve a los {REVIEW_INTERVALS.join(', ')} días. Cuando la acertás{' '}
+          {REVIEW_STEPS} veces seguidas, queda aprendida.
         </p>
         <div className="review-stats">
           <Stat value={overview.dueToday} label="para hoy" />
@@ -112,7 +112,12 @@ export default function Review({ examId, navigate }: { examId: number | null; na
           <h2>Próximos días</h2>
           <div className="upcoming" role="list">
             {overview.upcoming.map((day) => (
-              <div key={day.date} className="upcoming-day" role="listitem" aria-label={`${weekdayName(day.date)} ${formatDayMonth(day.date)}: ${day.count}`}>
+              <div
+                key={day.date}
+                className="upcoming-day"
+                role="listitem"
+                aria-label={`${weekdayName(day.date)} ${formatDayMonth(day.date)}: ${day.count}`}
+              >
                 <span className="upcoming-bar" style={{ height: `${Math.min(100, day.count * 18 + (day.count > 0 ? 10 : 0))}%` }} />
                 <span className="upcoming-count">{day.count || ''}</span>
                 <span className="muted small">{weekdayName(day.date).slice(0, 3)}</span>

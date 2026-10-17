@@ -92,9 +92,7 @@ export class Chats {
     if (!chat) throw new ChatError('Esa charla no existe.')
     const messages = (
       this.db.prepare('SELECT id, role, text, review FROM chat_messages WHERE chat_id = ? ORDER BY id').all(id) as unknown as MessageRow[]
-    ).map(
-      (m): ChatMessage => ({ id: m.id, role: m.role, text: m.text, correction: m.review ? (JSON.parse(m.review) as ChatCorrection) : null })
-    )
+    ).map((m): ChatMessage => ({ id: m.id, role: m.role, text: m.text, correction: m.review ? (JSON.parse(m.review) as ChatCorrection) : null }))
     return { id: chat.id, title: chat.title, scenario: chat.scenario, level: chat.level, messages }
   }
 
@@ -128,7 +126,11 @@ Devolvé reply: tu primer mensaje en ${target}, corto (1 a 3 oraciones), del niv
     const turn = await this.ask({
       label: 'charla',
       effort: 'low',
-      systemPrompt: roleSystemPrompt(this.language, 'compañero de conversación', 'Charlás para que el alumno practique y corregís sus mensajes aparte.'),
+      systemPrompt: roleSystemPrompt(
+        this.language,
+        'compañero de conversación',
+        'Charlás para que el alumno practique y corregís sus mensajes aparte.'
+      ),
       prompt: buildTurnPrompt(languageInfo(this.language).promptName, chat.level, chat.scenario, history, clean),
       schema: turnSchema,
       timeoutMs: 90_000

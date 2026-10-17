@@ -48,9 +48,7 @@ function schemas(topic: CurriculumTopic) {
 }
 
 function topicContext(topic: CurriculumTopic): string {
-  const subtopics = topic.subtopics
-    .map((s) => `- ${s.id} (día ${s.day}): ${s.title}. ${s.goal} Puntos clave: ${s.keyPoints.join(' ')}`)
-    .join('\n')
+  const subtopics = topic.subtopics.map((s) => `- ${s.id} (día ${s.day}): ${s.title}. ${s.goal} Puntos clave: ${s.keyPoints.join(' ')}`).join('\n')
   return `Tópico: ${topic.title} (${topic.targetTitle}), nivel ${topic.level}.
 Subtemas:
 ${subtopics}`
@@ -94,8 +92,19 @@ export async function generatePlacementQuestions(topic: CurriculumTopic, ask: As
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const { questions } = await ask({ label: 'examen inicial', systemPrompt: systemPrompt(topic), prompt: buildPrompt(topic), schema: schema.generation })
-      const review = await ask({ label: 'examen inicial · revisión', systemPrompt: reviewSystemPrompt(topic.language), prompt: buildReviewPrompt(topic, questions), schema: schema.review, effort: REVIEW_EFFORT })
+      const { questions } = await ask({
+        label: 'examen inicial',
+        systemPrompt: systemPrompt(topic),
+        prompt: buildPrompt(topic),
+        schema: schema.generation
+      })
+      const review = await ask({
+        label: 'examen inicial · revisión',
+        systemPrompt: reviewSystemPrompt(topic.language),
+        prompt: buildReviewPrompt(topic, questions),
+        schema: schema.review,
+        effort: REVIEW_EFFORT
+      })
       if (review.issues.length > 0) {
         console.info(`[placement] La revisión encontró ${review.issues.length} problema(s):\n- ${review.issues.join('\n- ')}`)
       }

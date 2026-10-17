@@ -100,7 +100,13 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const { items } = await ask({ label: 'examen', systemPrompt: systemPrompt(request), prompt: buildExamPrompt(request), schema: generationSchema, timeoutMs: TIMEOUT_MS })
+      const { items } = await ask({
+        label: 'examen',
+        systemPrompt: systemPrompt(request),
+        prompt: buildExamPrompt(request),
+        schema: generationSchema,
+        timeoutMs: TIMEOUT_MS
+      })
       // Cada pregunta se ubica por su número y tiene que ser del tipo pedido.
       const generated = request.items.map((plan, i): GeneratedExercise | undefined => {
         const exercise = items.find((item) => item.index === i)?.exercise

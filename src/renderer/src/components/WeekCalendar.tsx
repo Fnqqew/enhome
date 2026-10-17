@@ -27,7 +27,9 @@ export default function WeekCalendar({ days, today }: { days: WeekDayView[]; tod
             aria-label={`${WEEKDAY_NAMES[d.weekday - 1]} ${Number(d.date.slice(8))}: ${label}`}
             aria-current={d.date === today ? 'date' : undefined}
           >
-            <span className="dow" aria-hidden="true">{INITIALS[d.weekday - 1]}</span>
+            <span className="dow" aria-hidden="true">
+              {INITIALS[d.weekday - 1]}
+            </span>
             <span className="num">{Number(d.date.slice(8))}</span>
             <span className="state">{label}</span>
           </div>

@@ -9,9 +9,7 @@ export interface PauseRecord {
 }
 
 export function loadPauses(db: Db): PauseRecord[] {
-  return db
-    .prepare('SELECT paused_on AS pausedOn, resumed_on AS resumedOn FROM course_pauses ORDER BY paused_on')
-    .all() as unknown as PauseRecord[]
+  return db.prepare('SELECT paused_on AS pausedOn, resumed_on AS resumedOn FROM course_pauses ORDER BY paused_on').all() as unknown as PauseRecord[]
 }
 
 export function openPause(pauses: PauseRecord[]): PauseRecord | null {

@@ -32,7 +32,12 @@ export default function ExamPlayer({
 }): React.JSX.Element {
   const total = session.questions.length
   const [answers, setAnswers] = useState<(ExerciseAnswer | null)[]>(() => session.questions.map((q) => q.answer))
-  const [index, setIndex] = useState(() => Math.max(0, session.questions.findIndex((q) => !q.answer)))
+  const [index, setIndex] = useState(() =>
+    Math.max(
+      0,
+      session.questions.findIndex((q) => !q.answer)
+    )
+  )
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [chance, setChance] = useState<SecondChanceResult | null>(() =>
@@ -71,6 +76,8 @@ export default function ExamPlayer({
       clearInterval(timer)
       void flush()
     }
+    // Solo al cambiar de prueba: al salir se guarda la última respuesta pendiente.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session.id])
 
   const go = (target: number): void => {
@@ -80,7 +87,12 @@ export default function ExamPlayer({
 
   const submit = async (): Promise<void> => {
     const unanswered = answers.filter((a) => !a).length
-    if (unanswered > 0 && !confirm(`Te ${unanswered === 1 ? 'queda 1 pregunta' : `quedan ${unanswered} preguntas`} sin responder: cuentan como incorrectas. ¿Entregás igual?`)) {
+    if (
+      unanswered > 0 &&
+      !confirm(
+        `Te ${unanswered === 1 ? 'queda 1 pregunta' : `quedan ${unanswered} preguntas`} sin responder: cuentan como incorrectas. ¿Entregás igual?`
+      )
+    ) {
       return
     }
     setSubmitting(true)

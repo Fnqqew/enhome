@@ -76,7 +76,13 @@ export default function Certificates(): React.JSX.Element | null {
       {message && <p className="muted small">{message}</p>}
       {preview && (
         <div className="modal-backdrop" onMouseDown={() => setPreview(null)}>
-          <div className="modal card stack diploma-modal" role="dialog" aria-modal="true" aria-label="Diploma" onMouseDown={(e) => e.stopPropagation()}>
+          <div
+            className="modal card stack diploma-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Diploma"
+            onMouseDown={(e) => e.stopPropagation()}
+          >
             <DiplomaFrame level={preview.level} html={preview.html} />
             <div className="row">
               <button className="btn" onClick={() => save(preview.level)}>

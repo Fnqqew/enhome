@@ -52,7 +52,11 @@ export default function GameEnd({
         <div className="row">
           {result.record && <span className="badge ok">¡Nuevo récord!</span>}
           <span className="badge">Récord: {result.best}</span>
-          {result.xp > 0 ? <span className="badge">+{result.xp} XP</span> : <span className="muted small">Por hoy los juegos ya no suman experiencia.</span>}
+          {result.xp > 0 ? (
+            <span className="badge">+{result.xp} XP</span>
+          ) : (
+            <span className="muted small">Por hoy los juegos ya no suman experiencia.</span>
+          )}
         </div>
       )}
       {error && <p className="error">{error}</p>}

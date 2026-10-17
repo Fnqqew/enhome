@@ -39,7 +39,10 @@ export function JourneyBar({ map }: { map: CurriculumMap }): React.JSX.Element {
             <div key={level.level} className={`journey-segment${current ? ' current' : ''}`} style={{ flexGrow: level.topics.length }}>
               <span className="journey-fill" style={{ width: `${(done / level.topics.length) * 100}%` }} />
               <span className="journey-label">
-                <strong>{level.level}</strong> <span className="muted">{done}/{level.topics.length}</span>
+                <strong>{level.level}</strong>{' '}
+                <span className="muted">
+                  {done}/{level.topics.length}
+                </span>
               </span>
             </div>
           )

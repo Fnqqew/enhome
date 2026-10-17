@@ -1,13 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { CEFR_LEVELS } from '@shared/curriculum'
-import {
-  BASE_SUMMARY_TYPE,
-  SUMMARY_TYPES,
-  type SummariesIndex,
-  type SummaryContent,
-  type SummaryTypeId,
-  type SummaryView
-} from '@shared/summaries'
+import { BASE_SUMMARY_TYPE, SUMMARY_TYPES, type SummariesIndex, type SummaryContent, type SummaryTypeId, type SummaryView } from '@shared/summaries'
 import Markdown from '../components/Markdown'
 import Rating from '../components/Rating'
 import Flashcards from '../components/summaries/Flashcards'
@@ -61,8 +54,7 @@ export default function Summaries(): React.JSX.Element {
     }
   }, [topicId, type])
 
-  const isCurrent = (result: SummaryView): boolean =>
-    result.topicId === selection.current.topicId && result.type === selection.current.type
+  const isCurrent = (result: SummaryView): boolean => result.topicId === selection.current.topicId && result.type === selection.current.type
 
   const generate = (regenerate: boolean): void => {
     if (!topicId) return
@@ -164,7 +156,12 @@ export default function Summaries(): React.JSX.Element {
               type="button"
               className="chip"
               aria-pressed={typeView?.favorite ?? false}
-              onClick={() => window.api.setFavoriteSummaryType(type, !typeView?.favorite).then(setIndex).catch((err: Error) => setError(err.message))}
+              onClick={() =>
+                window.api
+                  .setFavoriteSummaryType(type, !typeView?.favorite)
+                  .then(setIndex)
+                  .catch((err: Error) => setError(err.message))
+              }
             >
               <Icon name="star" className="glyph" filled={typeView?.favorite ?? false} /> Favorito
             </button>

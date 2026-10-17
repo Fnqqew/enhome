@@ -28,12 +28,18 @@ export const CHANGELOG: Release[] = [
     version: '1.5.0',
     date: '2026-10-14',
     title: 'Pantalla de carga y botones de ventana animados',
-    items: ['Una pantalla de carga con la casa que se dibuja y el saludo en el idioma del curso.', 'Animación al pasar por los botones de la ventana.']
+    items: [
+      'Una pantalla de carga con la casa que se dibuja y el saludo en el idioma del curso.',
+      'Animación al pasar por los botones de la ventana.'
+    ]
   },
   {
     version: '1.4.0',
     date: '2026-10-12',
     title: 'Práctica larga e inmersiva',
-    items: ['Conversaciones, situaciones para resolver y tandas de traducción.', 'Secciones Comentarios y Acerca de, y estilos visuales intercambiables.']
+    items: [
+      'Conversaciones, situaciones para resolver y tandas de traducción.',
+      'Secciones Comentarios y Acerca de, y estilos visuales intercambiables.'
+    ]
   }
 ]

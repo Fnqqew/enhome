@@ -10,7 +10,10 @@ const MAX_SECONDS_PER_CALL = 60
 export function addStudyTime(db: Db, day: string, seconds: number): void {
   const amount = Math.max(0, Math.min(MAX_SECONDS_PER_CALL, Math.round(seconds)))
   if (amount === 0) return
-  db.prepare('INSERT INTO study_time (day, seconds) VALUES (?, ?) ON CONFLICT (day) DO UPDATE SET seconds = seconds + excluded.seconds').run(day, amount)
+  db.prepare('INSERT INTO study_time (day, seconds) VALUES (?, ?) ON CONFLICT (day) DO UPDATE SET seconds = seconds + excluded.seconds').run(
+    day,
+    amount
+  )
 }
 
 export function studyMinutes(db: Db, day: string): number {

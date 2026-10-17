@@ -485,9 +485,8 @@ export class Practice {
   }
 
   private openExercise(exerciseId: number, { allowCompleted = false } = {}): { exercise: ExerciseRow; session: SessionRow } {
-    const exercise = this.db
-      .prepare('SELECT id, type, payload, slot, skipped, session_id FROM exercises WHERE id = ?')
-      .get(exerciseId) as ExerciseRow | undefined
+    const exercise = this.db.prepare('SELECT id, type, payload, slot, skipped, session_id FROM exercises WHERE id = ?').get(exerciseId) as
+      ExerciseRow | undefined
     if (!exercise || exercise.session_id === null) throw new PracticeError('Ese ejercicio no existe.')
     const session = this.session(exercise.session_id)
     if (session.completed_on && !allowCompleted) throw new PracticeError('Esta práctica ya está terminada.')

@@ -4,7 +4,14 @@
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import { addDays } from '../../shared/dates'
 import type { ExerciseAnswer, ExerciseFeedback, ExerciseType, OpenExercise, StoredExercise } from '../../shared/exercises'
-import { REVIEW_INTERVALS, REVIEW_STEPS, type MistakeSource, type ReviewAnswerResult, type ReviewItemView, type ReviewOverview } from '../../shared/review'
+import {
+  REVIEW_INTERVALS,
+  REVIEW_STEPS,
+  type MistakeSource,
+  type ReviewAnswerResult,
+  type ReviewItemView,
+  type ReviewOverview
+} from '../../shared/review'
 import type { Db } from '../db/database'
 import type { OpenAnswerGrader } from '../practice/ai-grading'
 import { toPublicExercise } from '../practice/exercises'

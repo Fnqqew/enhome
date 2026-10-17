@@ -24,7 +24,10 @@ export const READING_LENGTH: Record<CefrLevel, [number, number]> = {
 const readingSchema = z.object({
   title: z.string().min(1),
   text: z.string().min(150),
-  glossary: z.array(z.object({ term: z.string().min(1), translation: z.string().min(1) })).min(4).max(12),
+  glossary: z
+    .array(z.object({ term: z.string().min(1), translation: z.string().min(1) }))
+    .min(4)
+    .max(12),
   questions: z
     .array(
       z.object({
@@ -131,7 +134,10 @@ export class Readings {
   // El tópico de la semana (o el último aprobado) y lo visto hasta ahí.
   private context(today: string): { topic: CurriculumTopic; seen: CurriculumTopic[] } {
     const state = this.progression.getState(today)
-    const index = Math.max(0, this.curriculum.findIndex((t) => t.id === state.week?.topicId))
+    const index = Math.max(
+      0,
+      this.curriculum.findIndex((t) => t.id === state.week?.topicId)
+    )
     return { topic: this.curriculum[index], seen: this.curriculum.slice(0, index + 1) }
   }
 

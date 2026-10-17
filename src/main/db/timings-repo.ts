@@ -19,9 +19,12 @@ export function saveTiming(db: Db, timing: ClaudeTiming): void {
 
 // Por tarea: el promedio de todo lo guardado y el de los últimos pedidos, para ver si empeora.
 export function timingStats(db: Db): ClaudeTimingStat[] {
-  const rows = db
-    .prepare('SELECT label, ms, attempts, ok FROM claude_timings ORDER BY id DESC')
-    .all() as unknown as { label: string; ms: number; attempts: number; ok: number }[]
+  const rows = db.prepare('SELECT label, ms, attempts, ok FROM claude_timings ORDER BY id DESC').all() as unknown as {
+    label: string
+    ms: number
+    attempts: number
+    ok: number
+  }[]
 
   const byLabel = new Map<string, typeof rows>()
   for (const row of rows) byLabel.set(row.label, [...(byLabel.get(row.label) ?? []), row])

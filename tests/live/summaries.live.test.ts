@@ -31,7 +31,7 @@ describe.skipIf(!process.env.LIVE_CLAUDE)('resúmenes con Claude en vivo', () =>
 
   it('responde una duda sobre un fragmento', async () => {
     const answer = await timed('pregunta', () =>
-      answerAboutText({ topic, fragment: 'No existe amn\'t: con I siempre se dice I\'m not.', question: '¿Y en las preguntas negativas cómo se dice?' })
+      answerAboutText({ topic, fragment: "No existe amn't: con I siempre se dice I'm not.", question: '¿Y en las preguntas negativas cómo se dice?' })
     )
     console.log(answer)
     expect(answer.length).toBeGreaterThan(20)

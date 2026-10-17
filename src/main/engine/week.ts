@@ -88,7 +88,8 @@ export function computeWeek(week: WeekRecord, today: string): WeekComputation {
   let practiceBlockedReason: string | null = null
   if (!active || offset > 6) practiceBlockedReason = 'La semana ya terminó.'
   else if (week.paused) practiceBlockedReason = 'El curso está en pausa. Reanudalo para seguir practicando.'
-  else if (offset < 0) practiceBlockedReason = `La semana empieza el ${WEEKDAY_NAMES[isoWeekday(week.startsOn) - 1]} ${formatDayMonth(week.startsOn)}.`
+  else if (offset < 0)
+    practiceBlockedReason = `La semana empieza el ${WEEKDAY_NAMES[isoWeekday(week.startsOn) - 1]} ${formatDayMonth(week.startsOn)}.`
   else if (!nextUnit) practiceBlockedReason = 'Ya completaste todas las prácticas de la semana.'
   else if (nextUnit.index > allowedIndex) practiceBlockedReason = `La práctica ${nextUnit.index} se habilita el ${WEEKDAY_NAMES[nextUnit.index - 1]}.`
 

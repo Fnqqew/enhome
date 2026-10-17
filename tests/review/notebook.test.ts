@@ -30,7 +30,14 @@ beforeEach(() => {
   notebook = new Notebook(db, curriculum, grader)
   recordMistake(
     db,
-    { source: 'practice', sourceId: 1, topicId: topic.id, subtopicId: topic.subtopics[0].id, exercise: mcq, given: { type: 'multiple_choice', choice: 1 } },
+    {
+      source: 'practice',
+      sourceId: 1,
+      topicId: topic.id,
+      subtopicId: topic.subtopics[0].id,
+      exercise: mcq,
+      given: { type: 'multiple_choice', choice: 1 }
+    },
     TODAY
   )
 })
@@ -73,7 +80,11 @@ describe('cuaderno de errores', () => {
 
   it('el repaso de un examen trae todas sus preguntas falladas aunque no venzan hoy', () => {
     for (const index of [0, 3]) {
-      recordMistake(db, { source: 'exam', sourceId: 7, index, topicId: topic.id, subtopicId: topic.subtopics[1].id, exercise: mcq, given: null }, TODAY)
+      recordMistake(
+        db,
+        { source: 'exam', sourceId: 7, index, topicId: topic.id, subtopicId: topic.subtopics[1].id, exercise: mcq, given: null },
+        TODAY
+      )
     }
     expect(notebook.fromExam(7)).toHaveLength(2)
     expect(notebook.due(TODAY)).toHaveLength(0)
@@ -81,7 +92,11 @@ describe('cuaderno de errores', () => {
 
   it('los textos largos no se anotan', () => {
     const writing: StoredExercise = { type: 'writing', instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
-    recordMistake(db, { source: 'practice', sourceId: 2, topicId: topic.id, subtopicId: topic.subtopics[0].id, exercise: writing, given: null }, TODAY)
+    recordMistake(
+      db,
+      { source: 'practice', sourceId: 2, topicId: topic.id, subtopicId: topic.subtopics[0].id, exercise: writing, given: null },
+      TODAY
+    )
     expect(notebook.overview(TODAY).pending).toBe(1)
   })
 })

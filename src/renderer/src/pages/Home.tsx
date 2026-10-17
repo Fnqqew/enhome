@@ -128,15 +128,15 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
 
         {upcoming && (
           <div className="notice">
-            Tu semana empieza el {weekdayName(week.startsOn)} {formatDayMonth(week.startsOn)}. Mientras tanto podés leer los
-            resúmenes y repasar libremente.
+            Tu semana empieza el {weekdayName(week.startsOn)} {formatDayMonth(week.startsOn)}. Mientras tanto podés leer los resúmenes y repasar
+            libremente.
           </div>
         )}
 
         {showMidnightWarning && (
           <div className="notice warn">
-            {minutesLeft === 1 ? 'Queda 1 minuto' : `Quedan ${minutesLeft} minutos`} para que termine el día. Si no terminás una
-            práctica antes de las 00:00, hoy cuenta como falta.
+            {minutesLeft === 1 ? 'Queda 1 minuto' : `Quedan ${minutesLeft} minutos`} para que termine el día. Si no terminás una práctica antes de las
+            00:00, hoy cuenta como falta.
           </div>
         )}
 
@@ -144,7 +144,10 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
 
         <div className="stats">
           <span>
-            Prácticas <strong>{week.completedUnits}/{week.units.length}</strong>
+            Prácticas{' '}
+            <strong>
+              {week.completedUnits}/{week.units.length}
+            </strong>
           </span>
           <span>
             Faltas <strong>{week.effectiveFaltas}</strong>
@@ -161,15 +164,16 @@ function Journey({ progress, navigate }: { progress: ProgressState; navigate: Na
           <h3 className="level">PRÁCTICA</h3>
           {week.nextUnit ? (
             <p>
-              Próxima: <strong>Día {week.nextUnit.index} — {week.nextUnit.subtopicTitle}</strong>
+              Próxima:{' '}
+              <strong>
+                Día {week.nextUnit.index} — {week.nextUnit.subtopicTitle}
+              </strong>
               {note && <span className="muted"> ({note})</span>}
             </p>
           ) : (
             <p>Completaste todas las prácticas de la semana.</p>
           )}
-          {week.nextUnit && !week.canPracticeNow && week.practiceBlockedReason && (
-            <p className="muted">{week.practiceBlockedReason}</p>
-          )}
+          {week.nextUnit && !week.canPracticeNow && week.practiceBlockedReason && <p className="muted">{week.practiceBlockedReason}</p>}
           <div className="row">
             {(week.canPracticeNow || canRecoverNow) && (
               <button className="btn" onClick={() => navigate('practica')}>

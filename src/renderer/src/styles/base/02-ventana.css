@@ -107,7 +107,9 @@
   padding: calc(0.6rem * var(--space)) 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease;
 }
 
 .btn:disabled {

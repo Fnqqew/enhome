@@ -14,7 +14,10 @@ describe.skipIf(!process.env.LIVE_CLAUDE)('charla con Claude en vivo', () => {
     const db = openDatabase(':memory:')
     const chats = new Chats(db, curriculum, new Progression(db, curriculum), 'pt')
     const started = Date.now()
-    const chat = await chats.start({ title: 'Em um café', scenario: 'Estás en un café de São Paulo: pedís algo y charlás con el mozo.' }, '2026-10-16')
+    const chat = await chats.start(
+      { title: 'Em um café', scenario: 'Estás en un café de São Paulo: pedís algo y charlás con el mozo.' },
+      '2026-10-16'
+    )
     const opened = Date.now()
     const after = await chats.send(chat.id, 'Eu quero um café com leite e um pão de queijo, por favor. Quanto é?')
     const lines = [

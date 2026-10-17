@@ -4,14 +4,28 @@ import { prepareExercise, tokenize, toPublicExercise } from '../../src/main/prac
 
 describe('prepareExercise', () => {
   it('mezcla las opciones manteniendo la correcta', () => {
-    const e: GeneratedExercise = { type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['a', 'b', 'c', 'd'], correctIndex: 1, explanation: 'x' }
+    const e: GeneratedExercise = {
+      type: 'multiple_choice',
+      instruction: 'i',
+      prompt: 'p',
+      options: ['a', 'b', 'c', 'd'],
+      correctIndex: 1,
+      explanation: 'x'
+    }
     const prepared = prepareExercise(e, () => 0)
     if (prepared.type !== 'multiple_choice') throw new Error()
     expect(prepared.options[prepared.correctIndex]).toBe('b')
   })
 
   it('mezcla las palabras para ordenar sin dejarlas en el orden correcto', () => {
-    const e: GeneratedExercise = { type: 'word_order', instruction: 'i', sentence: 'She is my sister.', alternatives: [], translation: 't', explanation: 'x' }
+    const e: GeneratedExercise = {
+      type: 'word_order',
+      instruction: 'i',
+      sentence: 'She is my sister.',
+      alternatives: [],
+      translation: 't',
+      explanation: 'x'
+    }
     // Un random que no mueve nada dejaría el orden original.
     const prepared = prepareExercise(e, () => 0.999)
     if (prepared.type !== 'word_order') throw new Error()
@@ -26,17 +40,37 @@ describe('prepareExercise', () => {
   })
 
   it('rechaza opciones repetidas', () => {
-    const e: GeneratedExercise = { type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['is', 'are', 'Is', 'am'], correctIndex: 0, explanation: 'x' }
+    const e: GeneratedExercise = {
+      type: 'multiple_choice',
+      instruction: 'i',
+      prompt: 'p',
+      options: ['is', 'are', 'Is', 'am'],
+      correctIndex: 0,
+      explanation: 'x'
+    }
     expect(() => prepareExercise(e)).toThrow(/repetidas/)
   })
 
   it('rechaza una oración para corregir que no tiene error', () => {
-    const e: GeneratedExercise = { type: 'error_correction', instruction: 'i', sentence: 'She is happy', answers: ['She is happy.'], explanation: 'x' }
+    const e: GeneratedExercise = {
+      type: 'error_correction',
+      instruction: 'i',
+      sentence: 'She is happy',
+      answers: ['She is happy.'],
+      explanation: 'x'
+    }
     expect(() => prepareExercise(e)).toThrow(/ningún error/)
   })
 
   it('rechaza una opción correcta fuera de rango', () => {
-    const e: GeneratedExercise = { type: 'multiple_choice', instruction: 'i', prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 3, explanation: 'x' }
+    const e: GeneratedExercise = {
+      type: 'multiple_choice',
+      instruction: 'i',
+      prompt: 'p',
+      options: ['a', 'b', 'c'],
+      correctIndex: 3,
+      explanation: 'x'
+    }
     expect(() => prepareExercise(e)).toThrow()
   })
 })
@@ -47,8 +81,9 @@ describe('toPublicExercise', () => {
       type: 'reading',
       instruction: 'i',
       text: 't',
-      questions: [{ prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }]
-        .concat([{ prompt: 'q', options: ['a', 'b', 'c'], correctIndex: 1, explanation: 'y' }])
+      questions: [{ prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }].concat([
+        { prompt: 'q', options: ['a', 'b', 'c'], correctIndex: 1, explanation: 'y' }
+      ])
     })
     const json = JSON.stringify(toPublicExercise(reading))
     expect(json).not.toContain('correctIndex')

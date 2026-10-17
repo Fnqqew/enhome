@@ -65,8 +65,8 @@ export default function Comments(): React.JSX.Element {
     <>
       <h1>Comentarios</h1>
       <p className="page-intro">
-        Anotá acá lo que se te ocurra mientras usás la app: una idea, algo que falla o algo que te gusta como está. Queda guardado en tu
-        computadora y te sirve para contarme qué cambiar.
+        Anotá acá lo que se te ocurra mientras usás la app: una idea, algo que falla o algo que te gusta como está. Queda guardado en tu computadora y
+        te sirve para contarme qué cambiar.
       </p>
 
       <section className="card stack fade-in">
@@ -125,9 +125,19 @@ export default function Comments(): React.JSX.Element {
         </section>
       ) : (
         <>
-          <NoteList title={`Pendientes (${pending.length})`} notes={pending} onToggle={(id) => act(window.api.toggleFeedback(id))} onRemove={(id) => act(window.api.removeFeedback(id))} />
+          <NoteList
+            title={`Pendientes (${pending.length})`}
+            notes={pending}
+            onToggle={(id) => act(window.api.toggleFeedback(id))}
+            onRemove={(id) => act(window.api.removeFeedback(id))}
+          />
           {done.length > 0 && (
-            <NoteList title={`Listas (${done.length})`} notes={done} onToggle={(id) => act(window.api.toggleFeedback(id))} onRemove={(id) => act(window.api.removeFeedback(id))} />
+            <NoteList
+              title={`Listas (${done.length})`}
+              notes={done}
+              onToggle={(id) => act(window.api.toggleFeedback(id))}
+              onRemove={(id) => act(window.api.removeFeedback(id))}
+            />
           )}
         </>
       )}

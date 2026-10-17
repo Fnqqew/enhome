@@ -71,7 +71,9 @@
 }
 
 .feedback.bad {
-  animation: pop-in 0.22s ease-out, shake 0.3s ease-in-out 0.2s;
+  animation:
+    pop-in 0.22s ease-out,
+    shake 0.3s ease-in-out 0.2s;
 }
 
 .part-result {
@@ -92,7 +94,11 @@
 .style-card,
 .note,
 .achievement {
-  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    border-color 0.16s ease,
+    background 0.16s ease;
 }
 
 .card.interactive:hover,
@@ -109,7 +115,11 @@
 .token,
 .chip,
 .type-chip {
-  transition: background 0.14s ease, color 0.14s ease, border-color 0.14s ease, transform 0.12s ease;
+  transition:
+    background 0.14s ease,
+    color 0.14s ease,
+    border-color 0.14s ease,
+    transform 0.12s ease;
 }
 
 .option:hover:not(:disabled),

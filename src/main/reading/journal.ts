@@ -114,7 +114,9 @@ export class Journal {
       prompt: buildJournalPrompt(row.text, this.topic(today)),
       schema: reviewSchema
     })
-    this.db.prepare("UPDATE journal SET review = ?, updated_at = datetime('now') WHERE day = ?").run(JSON.stringify({ ...review, text: row.text }), today)
+    this.db
+      .prepare("UPDATE journal SET review = ?, updated_at = datetime('now') WHERE day = ?")
+      .run(JSON.stringify({ ...review, text: row.text }), today)
     return this.view(today)
   }
 

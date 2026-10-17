@@ -38,7 +38,12 @@ describe('pedidos a Claude según el idioma del curso', () => {
   })
 
   it('la corrección habla del idioma del curso', () => {
-    const prompt = buildReviewPrompt({ topic: french, subtopic: french.subtopics[0], exercise: longSample('translation_set', 1), answers: ['a', 'b', 'c'] })
+    const prompt = buildReviewPrompt({
+      topic: french,
+      subtopic: french.subtopics[0],
+      exercise: longSample('translation_set', 1),
+      answers: ['a', 'b', 'c']
+    })
     expect(prompt).toContain('al francés')
     expect(prompt).not.toContain('inglés')
   })

@@ -2,13 +2,7 @@
 
 import type { Topic } from '../../shared/curriculum'
 import type { UnitKind } from '../../shared/progress'
-import {
-  MIN_QUESTIONS_FOR_WEAKNESS,
-  PRACTICE_DAYS,
-  REVIEW_AFTER_FAILURES,
-  REVIEW_UNITS,
-  WEAK_TOPIC_ERROR_RATE
-} from './rules'
+import { MIN_QUESTIONS_FOR_WEAKNESS, PRACTICE_DAYS, REVIEW_AFTER_FAILURES, REVIEW_UNITS, WEAK_TOPIC_ERROR_RATE } from './rules'
 
 export interface PlannedUnit {
   kind: UnitKind
@@ -57,12 +51,7 @@ function rankSubtopics(topic: Topic, answers: AnswerTag[]): Topic['subtopics'] {
 }
 
 // Semana de reintento: refuerzo de lo que falló y, desde el segundo reprobado, repaso de prerrequisitos.
-export function planRetryWeek(
-  topic: Topic,
-  answers: AnswerTag[],
-  failedAttempts: number,
-  prerequisites: Topic[]
-): PlannedUnit[] {
+export function planRetryWeek(topic: Topic, answers: AnswerTag[], failedAttempts: number, prerequisites: Topic[]): PlannedUnit[] {
   const units: PlannedUnit[] = []
 
   if (failedAttempts >= REVIEW_AFTER_FAILURES && prerequisites.length > 0) {
@@ -92,7 +81,5 @@ export function detectWeakTopics(answers: AnswerTag[], currentTopicId: string | 
     if (!a.correct) s.wrong++
     stats.set(a.topicId, s)
   }
-  return [...stats]
-    .filter(([, s]) => s.total >= MIN_QUESTIONS_FOR_WEAKNESS && s.wrong / s.total > WEAK_TOPIC_ERROR_RATE)
-    .map(([id]) => id)
+  return [...stats].filter(([, s]) => s.total >= MIN_QUESTIONS_FOR_WEAKNESS && s.wrong / s.total > WEAK_TOPIC_ERROR_RATE).map(([id]) => id)
 }
