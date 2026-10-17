@@ -230,3 +230,116 @@
 :root[data-style='racha'] .day {
   border-width: 2px;
 }
+
+/* Noche: negro puro (pantallas OLED), sin sombras y con un violeta suave. */
+:root[data-style='noche'] {
+  --bg: #f4f4f6;
+  --surface: #ffffff;
+  --surface-hover: #ececf1;
+  --border: #dedee6;
+  --text: #16161c;
+  --muted: #5e5e6e;
+  --accent: #5b3fd0;
+  --accent-contrast: #ffffff;
+  --danger: #c2413b;
+  --radius: 16px;
+  --btn-radius: 10px;
+}
+
+:root[data-style='noche'][data-theme='dark'] {
+  --bg: #000000;
+  --surface: #0b0b0d;
+  --surface-hover: #141418;
+  --border: #1f1f26;
+  --text: #ececf1;
+  --muted: #9a9aa8;
+  --accent: #9d8cff;
+  --accent-contrast: #0b0614;
+  --danger: #ff7b72;
+  --sidebar-bg: #000000;
+  --card-shadow: none;
+}
+
+/* Papel: sepia y Literata, como un libro; para leer mucho. */
+:root[data-style='papel'] {
+  --bg: #f4ecd8;
+  --surface: #fbf6ea;
+  --surface-hover: #efe5cc;
+  --border: #dccfae;
+  --text: #3b2f20;
+  --muted: #6e5e45;
+  --accent: #8a4b1f;
+  --accent-contrast: #fff8ec;
+  --danger: #a8322d;
+  --radius: 10px;
+  --btn-radius: 8px;
+  --sidebar-bg: #efe5cc;
+  --card-shadow: 0 1px 2px rgb(59 47 32 / 0.06), 0 10px 26px -20px rgb(59 47 32 / 0.35);
+  --style-font: 'Literata Variable', Georgia, serif;
+  --style-display: 'Literata Variable', Georgia, serif;
+}
+
+:root[data-style='papel'][data-theme='dark'] {
+  --bg: #1e1912;
+  --surface: #27211a;
+  --surface-hover: #312a20;
+  --border: #3d3427;
+  --text: #eadfc8;
+  --muted: #b3a58a;
+  --accent: #e0a46a;
+  --accent-contrast: #26180a;
+  --danger: #f08a7e;
+  --sidebar-bg: #191510;
+}
+
+:root[data-style='papel'] .content {
+  line-height: 1.7;
+}
+
+/* Alto contraste: blanco y negro, bordes de 2 px, foco bien visible y Atkinson Hyperlegible. */
+:root[data-style='contraste'] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-hover: #f0f0f0;
+  --border: #000000;
+  --text: #000000;
+  --muted: #333333;
+  --accent: #0037c9;
+  --accent-contrast: #ffffff;
+  --danger: #b00000;
+  --radius: 10px;
+  --btn-radius: 8px;
+  --btn-border: 2px solid var(--text);
+  --card-shadow: none;
+  --style-font: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --style-display: 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+}
+
+:root[data-style='contraste'][data-theme='dark'] {
+  --bg: #000000;
+  --surface: #000000;
+  --surface-hover: #1a1a1a;
+  --border: #ffffff;
+  --text: #ffffff;
+  --muted: #e0e0e0;
+  --accent: #ffd400;
+  --accent-contrast: #000000;
+  --danger: #ff6b6b;
+}
+
+:root[data-style='contraste'] .card,
+:root[data-style='contraste'] .option,
+:root[data-style='contraste'] .text-answer,
+:root[data-style='contraste'] .chip {
+  border-width: 2px;
+  border-color: var(--border);
+}
+
+:root[data-style='contraste'] :focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+:root[data-style='contraste'] .nav-item[aria-current='page'] {
+  outline: 2px solid var(--accent);
+}

@@ -123,6 +123,18 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
           />
         </Row>
 
+        <Row label="Sonidos">
+          <Segmented<'on' | 'off'>
+            label="Sonidos"
+            value={settings.sounds ? 'on' : 'off'}
+            onChange={(v) => update({ sounds: v === 'on' })}
+            options={[
+              { value: 'off', label: 'Apagados' },
+              { value: 'on', label: 'Prendidos' }
+            ]}
+          />
+        </Row>
+
         <Row label="Pantalla de carga">
           <Segmented<AppSettings['splash']>
             label="Pantalla de carga"

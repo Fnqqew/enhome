@@ -22,6 +22,9 @@ const STYLE_FONTS: Record<StyleId, FontId[]> = {
   ruta: ['plex', 'bricolage'],
   cuaderno: ['atkinson', 'literata'],
   racha: ['nunito', 'baloo'],
+  noche: [],
+  papel: ['literata'],
+  contraste: ['atkinson'],
   original: []
 }
 

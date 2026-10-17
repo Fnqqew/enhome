@@ -8,6 +8,7 @@ import ExerciseInput from '../components/practice/ExerciseInput'
 import VocabCards from '../components/review/VocabCards'
 import Feedback from '../components/practice/Feedback'
 import { announceRewards } from '../rewardsBus'
+import { play } from '../sounds'
 import type { Navigate } from '../navigation'
 
 // Repaso: el cuaderno de errores. Lo que se respondió mal vuelve a los 1, 3, 7 y 15 días hasta acertarlo
@@ -162,6 +163,7 @@ function ReviewPlayer({ items, title, onDone }: { items: ReviewItemView[]; title
       .answerReview(item.id, draft)
       .then((r) => {
         setResult(r)
+        play(r.feedback.correct ? 'correct' : 'wrong')
         if (r.feedback.correct) setRight((n) => n + 1)
       })
       .catch((err: Error) => setError(err.message))

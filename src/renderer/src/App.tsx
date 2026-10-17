@@ -138,6 +138,9 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
   // Durante un examen semanal no se puede salir de Pruebas.
   const [examLocked, setExamLocked] = useState(false)
   const [collapsed, setCollapsed] = useState(() => readLocal('sidebar') === 'collapsed')
+  // En ventanas de menos de 1000 px la barra lateral queda plegada sola.
+  const narrow = useMediaQuery('(max-width: 999px)')
+  const folded = collapsed || narrow
   const [focus, setFocus] = useState(false)
   const [palette, setPalette] = useState(false)
   const [version, setVersion] = useState<string | null>(null)
@@ -206,7 +209,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
 
   return (
     <ShellContext.Provider value={{ focus, setFocus }}>
-    <div className={`shell${collapsed ? ' collapsed' : ''}${focus ? ' focus' : ''}`}>
+    <div className={`shell${folded ? ' collapsed' : ''}${focus ? ' focus' : ''}`}>
       <TitleBar title={focus ? `${title} · modo enfoque (Esc para salir)` : title} />
       <nav className="sidebar" aria-hidden={focus || undefined}>
         <div className="brand">
@@ -237,6 +240,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
         <div className="sidebar-foot">
           <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
           <span className="nav-label">{examLocked ? 'Examen en curso' : 'Claude conectado'}</span>
+          {!narrow && (
           <button
             type="button"
             className="icon-button collapse-button"
@@ -246,6 +250,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
           >
             <Icon name="chevron" className="glyph" />
           </button>
+          )}
         </div>
       </nav>
       {palette && <CommandPalette navigate={navigate} onClose={() => setPalette(false)} />}
@@ -322,4 +327,15 @@ function NavItem({
       <span className="nav-label">{section.label}</span>
     </button>
   )
+}
+
+function useMediaQuery(query: string): boolean {
+  const [matches, setMatches] = useState(() => window.matchMedia(query).matches)
+  useEffect(() => {
+    const list = window.matchMedia(query)
+    const onChange = (e: MediaQueryListEvent): void => setMatches(e.matches)
+    list.addEventListener('change', onChange)
+    return () => list.removeEventListener('change', onChange)
+  }, [query])
+  return matches
 }

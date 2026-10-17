@@ -53,7 +53,8 @@ function createWindow(settings: AppSettings): BrowserWindow {
     y: bounds.y,
     width: bounds.width,
     height: bounds.height,
-    minWidth: 900,
+    // Con ventanas angostas la barra lateral se pliega sola.
+    minWidth: 720,
     minHeight: 600,
     show: false,
     autoHideMenuBar: true,

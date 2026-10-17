@@ -2002,3 +2002,82 @@ mark.gloss {
     max-width: 90%;
   }
 }
+
+/* Ventanas chicas: las grillas pasan a una columna y las tarjetas usan todo el ancho. */
+@media (max-width: 999px) {
+  .content {
+    padding-inline: 1rem;
+  }
+  .review-stats {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  }
+  .today-head h2 {
+    font-size: 1.35rem;
+  }
+}
+
+/* Celebración sutil */
+
+.celebrate-host {
+  position: relative;
+}
+
+.celebrate {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.celebrate-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  animation: celebrate-ring 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.celebrate-spark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  transform: rotate(var(--angle)) translateY(0);
+  animation: celebrate-spark 0.9s ease-out var(--delay) forwards;
+}
+
+.celebrate-spark:nth-child(3n) {
+  background: color-mix(in srgb, var(--accent) 50%, #ffd400);
+}
+
+@keyframes celebrate-ring {
+  from {
+    transform: scale(0.4);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(12);
+    opacity: 0;
+  }
+}
+
+@keyframes celebrate-spark {
+  0% {
+    opacity: 0.9;
+    transform: rotate(var(--angle)) translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translateY(-140px) scale(0.4);
+  }
+}

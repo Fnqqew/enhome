@@ -10,7 +10,9 @@ import {
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
+import Celebrate from '../components/Celebrate'
 import ClaudeWait from '../components/ClaudeWait'
+import { play } from '../sounds'
 import FocusToggle from '../components/FocusToggle'
 import Icon from '../components/Icon'
 import { announceRewards } from '../rewardsBus'
@@ -246,6 +248,10 @@ function SessionPlayer({
     const exerciseId = current.id
     run('answer', () => window.api.answerExercise(exerciseId, draft), (next) => {
       announceRewards()
+      if (next.status === 'session') {
+        const answered = next.session.exercises.find((e) => e.id === exerciseId)
+        if (answered?.feedback) play(answered.feedback.correct ? 'correct' : 'wrong')
+      }
       onView(next)
       setShownId(exerciseId)
       setDraft(null)
@@ -463,7 +469,8 @@ function ResultCard({ result, onHome, onContinue }: { result: PracticeResult; on
         : 'Este tema necesita más práctica. Releé los puntos clave y el resumen.'
 
   return (
-    <section className="card stack">
+    <section className="card stack celebrate-host">
+      <Celebrate active={result.correct === result.total} />
       <h2>{result.purpose === 'recovery' ? 'Recuperaste una falta' : `Terminaste la práctica del día ${result.unitIndex}`}</h2>
       <p className="big">
         {result.correct} de {result.total} correctos

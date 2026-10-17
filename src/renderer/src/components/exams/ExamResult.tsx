@@ -1,6 +1,8 @@
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import type { ExamResultView } from '@shared/exams'
 import { EXERCISE_TYPE_LABELS } from '@shared/exercises'
+import Celebrate from '../Celebrate'
+import CountUp from '../CountUp'
 import ExerciseInput from '../practice/ExerciseInput'
 import Feedback from '../practice/Feedback'
 
@@ -33,11 +35,14 @@ export default function ExamResult({
 
   return (
     <>
-      <section className="card wide stack">
+      <section className="card wide stack celebrate-host">
+        <Celebrate active={result.outcome !== null && (result.kind === 'weekly' ? result.passed === true : result.grade >= 9)} />
         <span className="level">{result.kind === 'weekly' ? 'RESULTADO DEL EXAMEN' : 'RESULTADO DEL SIMULACRO'}</span>
         <h2>{result.title}</h2>
         <div className="row">
-          <span className={`grade${result.passed === false ? ' failed' : ''}`}>{result.grade}</span>
+          <span className={`grade${result.passed === false ? ' failed' : ''}`}>
+            <CountUp value={result.grade} decimals={Number.isInteger(result.grade) ? 0 : 1} />
+          </span>
           {result.kind === 'weekly' && <span className={`badge${result.passed ? ' ok' : ''}`}>{result.passed ? 'Aprobado' : 'No aprobado'}</span>}
         </div>
         {result.endReason === 'second-interruption' && (

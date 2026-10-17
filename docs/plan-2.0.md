@@ -102,16 +102,16 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [ ] 61 Ejercicio rediseñado
 - [ ] 62 Gráficos de progreso
 - [ ] 63 Modo lectura cómodo
-- [ ] 64 Tres estilos nuevos: Noche, Papel y Alto contraste
+- [x] 64 Tres estilos nuevos: Noche, Papel y Alto contraste
 - [ ] 65 Ordenar el sistema de diseño
 - [ ] 66 Editor de estilo propio
-- [ ] 67 Ventanas chicas
+- [x] 67 Ventanas chicas
 
 ## Animación y sensación
 
-- [ ] 68 Celebración sutil al cerrar bien
-- [ ] 69 Números que cuentan al cambiar
-- [ ] 70 Sonidos opcionales
+- [x] 68 Celebración sutil al cerrar bien
+- [x] 69 Números que cuentan al cambiar
+- [x] 70 Sonidos opcionales
 - [ ] 71 Transición de la tarjeta del día a la práctica
 
 ## Ajustes y opciones
@@ -120,7 +120,7 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 - [x] 73 Pausar un curso
 - [ ] 74 Ajustes por pestañas
 - [ ] 75 Meta diaria
-- [ ] 76 Racha y experiencia compartidas (resuelto por D2: quedan por idioma)
+- [x] 76 Racha y experiencia compartidas (resuelto por D2: quedan por idioma)
 - [ ] 77 Elegir velocidad o precisión de Claude
 - [ ] 78 Variante del español de las explicaciones
 

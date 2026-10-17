@@ -18,7 +18,7 @@ export interface StylePreview {
 
 // Estilos visuales completos: cada uno trae su logo, colores, tipografías y formas.
 export const STYLES: readonly {
-  id: 'celeste' | 'ruta' | 'cuaderno' | 'racha' | 'original'
+  id: 'celeste' | 'ruta' | 'cuaderno' | 'racha' | 'noche' | 'papel' | 'contraste' | 'original'
   label: string
   description: string
   colors: readonly string[]
@@ -62,6 +62,36 @@ export const STYLES: readonly {
     preview: {
       light: { bg: '#f5f4f2', sidebar: '#ecebe8', surface: '#ffffff', accent: '#cf4424', text: '#232323', border: '#2e2e2e' },
       dark: { bg: '#161616', sidebar: '#111111', surface: '#1f1f1f', accent: '#ff7a5a', text: '#eeeeee', border: '#000000' }
+    }
+  },
+  {
+    id: 'noche',
+    label: 'Noche',
+    description: 'Negro puro para pantallas OLED y para estudiar de noche.',
+    colors: ['#000000', '#9d8cff', '#ededed'],
+    preview: {
+      light: { bg: '#f4f4f6', sidebar: '#ffffff', surface: '#ffffff', accent: '#5b3fd0', text: '#16161c', border: '#dedee6' },
+      dark: { bg: '#000000', sidebar: '#000000', surface: '#0b0b0d', accent: '#9d8cff', text: '#ececf1', border: '#1f1f26' }
+    }
+  },
+  {
+    id: 'papel',
+    label: 'Papel',
+    description: 'Sepia y letra de libro, para leer mucho sin cansarte.',
+    colors: ['#f4ecd8', '#8a4b1f', '#3b2f20'],
+    preview: {
+      light: { bg: '#f4ecd8', sidebar: '#efe5cc', surface: '#fbf6ea', accent: '#8a4b1f', text: '#3b2f20', border: '#dccfae' },
+      dark: { bg: '#1e1912', sidebar: '#191510', surface: '#27211a', accent: '#e0a46a', text: '#eadfc8', border: '#3d3427' }
+    }
+  },
+  {
+    id: 'contraste',
+    label: 'Alto contraste',
+    description: 'Blanco y negro, bordes marcados y letra muy legible.',
+    colors: ['#000000', '#ffffff', '#ffd400'],
+    preview: {
+      light: { bg: '#ffffff', sidebar: '#ffffff', surface: '#ffffff', accent: '#0037c9', text: '#000000', border: '#000000' },
+      dark: { bg: '#000000', sidebar: '#000000', surface: '#000000', accent: '#ffd400', text: '#ffffff', border: '#ffffff' }
     }
   },
   {
@@ -122,7 +152,9 @@ export const settingsSchema = z.object({
   // Formatos que el alumno sacó de sus prácticas.
   excludedTypes: z.array(z.enum(EXERCISE_TYPES)).max(EXERCISE_TYPES.length - 4),
   // Para los certificados (opcional).
-  studentName: z.string().max(60)
+  studentName: z.string().max(60),
+  // Sonidos de acierto, error y logro (apagados por defecto).
+  sounds: z.boolean()
 })
 
 export const PRACTICE_LENGTHS = {
@@ -160,5 +192,6 @@ export const DEFAULT_SETTINGS: AppSettings = {
   splash: 'full',
   practiceLength: 'normal',
   excludedTypes: [],
-  studentName: ''
+  studentName: '',
+  sounds: false
 }

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth } from '@shared/dates'
 import type { CalendarDayStatus, ProgressView } from '@shared/rewards'
+import CountUp from '../components/CountUp'
 import Icon from '../components/Icon'
 import Certificates from '../components/progress/Certificates'
 import RoadMap from '../components/progress/RoadMap'
@@ -54,7 +55,9 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
 
       <section className="card wide hero">
         <div className="hero-level">
-          <span className="hero-level-number">{player.level}</span>
+          <span className="hero-level-number">
+            <CountUp value={player.level} from={Math.max(1, player.level - 1)} />
+          </span>
           <span className="small">nivel</span>
         </div>
         <div className="hero-body stack-sm">
@@ -63,14 +66,17 @@ export default function Progress({ navigate }: { navigate: Navigate }): React.JS
             <span style={{ width: percent(player.xpIntoLevel, player.xpForNextLevel) }} />
           </div>
           <span className="muted small">
-            {player.xpIntoLevel} / {player.xpForNextLevel} XP para el nivel {player.level + 1} · {player.xp} XP en total
+            <CountUp value={player.xpIntoLevel} /> / {player.xpForNextLevel} XP para el nivel {player.level + 1} · <CountUp value={player.xp} /> XP en
+            total
           </span>
         </div>
         <div className="hero-streak">
           <span className="streak-flame" aria-hidden>
             <Icon name="flame" className="glyph" />
           </span>
-          <span className="streak-count">{player.streak}</span>
+          <span className="streak-count">
+            <CountUp value={player.streak} />
+          </span>
           <span className="small">{player.streak === 1 ? 'día de racha' : 'días de racha'}</span>
           <span className="muted small">
             Mejor: {player.bestStreak} · ×{player.multiplier.toLocaleString('es-AR')} XP

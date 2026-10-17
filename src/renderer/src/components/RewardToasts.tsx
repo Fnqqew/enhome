@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { RewardNews } from '@shared/rewards'
 import { onRewards } from '../rewardsBus'
+import { play } from '../sounds'
 
 const POLL_MS = 15_000
 const VISIBLE_MS = 6_000
@@ -16,7 +17,10 @@ export default function RewardToasts({ trigger }: { trigger: string }): React.JS
       window.api
         .takeRewardNews()
         .then((news) => {
-          if (news.length > 0) setToasts((current) => [...current, ...news].slice(-MAX_VISIBLE))
+          if (news.length > 0) {
+            setToasts((current) => [...current, ...news].slice(-MAX_VISIBLE))
+            play('achievement')
+          }
         })
         .catch(() => undefined)
     }

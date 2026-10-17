@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { GAMES, type GameId, type GameResult } from '@shared/games'
+import Celebrate from '../Celebrate'
+import CountUp from '../CountUp'
 import Icon from '../Icon'
 import { announceRewards } from '../../rewardsBus'
 
@@ -35,11 +37,14 @@ export default function GameEnd({
   }, [game, score])
 
   return (
-    <section className="card stack game-end fade-in">
+    <section className="card stack game-end fade-in celebrate-host">
+      <Celebrate active={result?.record === true} />
       <span className="level">{GAMES[game].title.toUpperCase()}</span>
       <div className="game-score">
         <Icon name={GAMES[game].icon} className="hero-icon" />
-        <strong>{score}</strong>
+        <strong>
+          <CountUp value={score} />
+        </strong>
         <span className="muted">puntos</span>
       </div>
       <p>{summary}</p>

@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react'
 import { DEFAULT_SETTINGS, PALETTES, type AppSettings } from '@shared/settings'
 import { loadFonts } from './fonts'
+import { setSoundsEnabled } from '../sounds'
 
 interface SettingsContextValue {
   settings: AppSettings
@@ -45,6 +46,8 @@ export function SettingsProvider({ children }: { children: React.ReactNode }): R
   useEffect(() => {
     void loadFonts({ style, font })
   }, [style, font])
+
+  useEffect(() => setSoundsEnabled(settings.sounds), [settings.sounds])
 
   const dark = settings.theme === 'dark' || (settings.theme === 'system' && prefersDark)
 
