@@ -10,48 +10,13 @@ import { planPool } from '../src/main/practice/composition'
 import { generatePracticePool } from '../src/main/practice/generation'
 import { LONG_TYPES, type ExerciseType, type GeneratedExercise } from '../src/shared/exercises'
 import { longSample } from './helpers/long-exercises'
+import { fakeClaude, generatedSample as sample } from './helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', 'content'))
 const topic = curriculum.find((t) => t.id === 'a1-to-be')!
 const subtopic = topic.subtopics[0]
 
 // Devuelve las respuestas en orden (validadas con el esquema pedido) y guarda los prompts.
-function fakeClaude(responses: unknown[]): { ask: Ask; prompts: string[] } {
-  const prompts: string[] = []
-  const ask = (async (options: AskOptions<unknown>) => {
-    prompts.push(options.prompt)
-    const next = responses.shift()
-    if (next instanceof Error) throw next
-    return options.schema.parse(next)
-  }) as Ask
-  return { ask, prompts }
-}
-
-function sample(type: ExerciseType, marker: string): GeneratedExercise {
-  switch (type) {
-    case 'multiple_choice':
-      return { type, instruction: 'i', prompt: `${marker} She ___ happy.`, options: ['is', 'are', 'am', 'be'], correctIndex: 0, explanation: 'x' }
-    case 'fill_blank':
-      return { type, instruction: 'i', sentence: 'They ___ here.', hint: '(be)', answers: ['are'], explanation: 'x' }
-    case 'word_order':
-      return { type, instruction: 'i', sentence: 'She is my sister.', alternatives: [], translation: 't', explanation: 'x' }
-    case 'error_correction':
-      return { type, instruction: 'i', sentence: 'She are happy.', answers: ['She is happy.'], explanation: 'x' }
-    case 'translation':
-      return { type, instruction: 'i', spanish: 'Soy docente.', answers: ["I'm a teacher."], explanation: 'x' }
-    case 'reading': {
-      const q = { prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }
-      return { type, instruction: 'i', text: 't', questions: [q, { ...q, prompt: 'q' }] }
-    }
-    case 'writing':
-      return { type, instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
-    case 'translation_set':
-    case 'dialogue':
-    case 'roleplay':
-      return longSample(type, marker)
-  }
-}
-
 const counts = planPool(subtopic.focus)
 const request = { topic, subtopic, kind: 'lesson' as const, counts, avoid: [] }
 const noCorrections = { issues: [], corrections: [] }

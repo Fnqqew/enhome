@@ -5,97 +5,17 @@ import { openDatabase, type Db } from '../../src/main/db/database'
 import { Progression } from '../../src/main/engine/progression'
 import type { OpenAnswerGrader } from '../../src/main/practice/ai-grading'
 import { SESSION_SIZE } from '../../src/main/practice/composition'
-import { tokenize } from '../../src/main/practice/exercises'
 import type { PoolGenerator } from '../../src/main/practice/generation'
 import { Practice } from '../../src/main/practice/practice'
 import { addDays } from '../../src/shared/dates'
-import type { ExerciseAnswer, ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
+import type { ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
+import { rightAnswer, sample } from '../helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
 
 // 14/9/2026 es lunes.
 const MON = '2026-09-14'
 const day = (offset: number): string => addDays(MON, offset)
-
-function sample(type: ExerciseType, n: number): StoredExercise {
-  switch (type) {
-    case 'multiple_choice':
-      return { type, instruction: 'i', prompt: `Pregunta ${n}`, options: ['a', 'b', 'c', 'd'], correctIndex: 0, explanation: 'x' }
-    case 'fill_blank':
-      return { type, instruction: 'i', sentence: `She ___ happy ${n}.`, hint: '(be)', answers: ['is'], explanation: 'x' }
-    case 'word_order':
-      return { type, instruction: 'i', sentence: 'She is my sister.', alternatives: [], translation: 't', explanation: 'x', tokens: ['sister', 'is', 'She', 'my'] }
-    case 'error_correction':
-      return { type, instruction: 'i', sentence: `She are happy ${n}.`, answers: [`She is happy ${n}.`], explanation: 'x' }
-    case 'translation':
-      return { type, instruction: 'i', spanish: `Soy docente ${n}.`, answers: [`I am a teacher ${n}.`], explanation: 'x' }
-    case 'reading': {
-      const question = { prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }
-      return { type, instruction: 'i', text: `Texto ${n}`, questions: [question, question] }
-    }
-    case 'writing':
-      return { type, instruction: 'i', task: `Consigna ${n}`, minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
-    case 'translation_set':
-      return {
-        type,
-        instruction: 'i',
-        situation: `Escena ${n}`,
-        sentences: [
-          { spanish: `Hoy trabajo ${n}.`, answers: [`I work today ${n}.`], explanation: 'x' },
-          { spanish: 'Mi hermana estudia.', answers: ['My sister studies.'], explanation: 'x' },
-          { spanish: 'Somos amigos.', answers: ['We are friends.'], explanation: 'x' }
-        ]
-      }
-    case 'dialogue':
-      return {
-        type,
-        instruction: 'i',
-        situation: `Charla ${n}`,
-        script: [
-          { role: 'other', speaker: 'Ana', text: 'Hi! How are you?' },
-          { role: 'you', cue: 'Saludá y decí cómo estás', sample: 'Hi Ana, I am fine, thanks.' },
-          { role: 'other', speaker: 'Ana', text: 'Where are you from?' },
-          { role: 'you', cue: 'Decí de dónde sos', sample: 'I am from Rosario.' }
-        ]
-      }
-    case 'roleplay':
-      return {
-        type,
-        instruction: 'i',
-        situation: `Trámite ${n}`,
-        goal: 'Pedir un turno',
-        steps: [
-          { cue: 'Saludá', sample: 'Good morning.' },
-          { cue: 'Pedí un turno', sample: 'I would like an appointment, please.' },
-          { cue: 'Agradecé', sample: 'Thank you very much.' }
-        ]
-      }
-  }
-}
-
-function rightAnswer(e: StoredExercise): ExerciseAnswer {
-  switch (e.type) {
-    case 'multiple_choice':
-      return { type: e.type, choice: e.correctIndex }
-    case 'fill_blank':
-      return { type: e.type, text: e.answers[0] }
-    case 'word_order':
-      return { type: e.type, tokens: tokenize(e.sentence) }
-    case 'error_correction':
-    case 'translation':
-      return { type: e.type, text: e.answers[0] }
-    case 'reading':
-      return { type: e.type, choices: e.questions.map((q) => q.correctIndex) }
-    case 'writing':
-      return { type: e.type, text: 'My name is Juan and I am from Rosario.' }
-    case 'translation_set':
-      return { type: e.type, texts: e.sentences.map((s) => s.answers[0]) }
-    case 'dialogue':
-      return { type: e.type, texts: e.script.flatMap((line) => (line.role === 'you' ? [line.sample] : [])) }
-    case 'roleplay':
-      return { type: e.type, texts: e.steps.map((s) => s.sample) }
-  }
-}
 
 let db: Db
 let progression: Progression

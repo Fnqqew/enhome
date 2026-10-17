@@ -1,4 +1,3 @@
-import { longSample } from '../helpers/long-exercises'
 import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { loadCurriculum, loadRoadmap } from '../../src/main/content/curriculum'
@@ -13,7 +12,8 @@ import { quantity } from '../../src/main/rewards/inventory'
 import { Rewards } from '../../src/main/rewards/rewards'
 import { addDays } from '../../src/shared/dates'
 import type { ExamQuestion } from '../../src/shared/exams'
-import type { ExerciseType, StoredExercise } from '../../src/shared/exercises'
+import type { ExerciseType } from '../../src/shared/exercises'
+import { sample } from '../helpers/exercises'
 
 const CONTENT = join(__dirname, '..', '..', 'content')
 const curriculum = loadCurriculum(CONTENT)
@@ -115,31 +115,6 @@ describe('racha, experiencia y logros', () => {
     expect(view.map.levels[0].topics[0].status).toBe('passed')
   })
 })
-
-function sample(type: ExerciseType, n: number): StoredExercise {
-  switch (type) {
-    case 'multiple_choice':
-      return { type, instruction: 'i', prompt: `P${n}`, options: ['a', 'b', 'c', 'd'], correctIndex: 0, explanation: 'x' }
-    case 'fill_blank':
-      return { type, instruction: 'i', sentence: `She ___ happy ${n}.`, hint: '', answers: ['is'], explanation: 'x' }
-    case 'word_order':
-      return { type, instruction: 'i', sentence: 'She is my sister.', alternatives: [], translation: 't', explanation: 'x', tokens: ['my', 'She', 'is', 'sister'] }
-    case 'error_correction':
-      return { type, instruction: 'i', sentence: `She are happy ${n}.`, answers: [`She is happy ${n}.`], explanation: 'x' }
-    case 'translation':
-      return { type, instruction: 'i', spanish: 's', answers: ['I am a teacher.'], explanation: 'x' }
-    case 'reading': {
-      const q = { prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }
-      return { type, instruction: 'i', text: 't', questions: [q, q] }
-    }
-    case 'writing':
-      return { type, instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 'Hi! I am Ana.' }
-    case 'translation_set':
-    case 'dialogue':
-    case 'roleplay':
-      return longSample(type, n)
-  }
-}
 
 describe('pista en la práctica', () => {
   it('se descuenta una vez por ejercicio y hasta 2 por práctica', async () => {

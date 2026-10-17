@@ -1,4 +1,3 @@
-import { longRightAnswer, longSample } from '../helpers/long-exercises'
 import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { loadCurriculum } from '../../src/main/content/curriculum'
@@ -7,10 +6,10 @@ import { Progression } from '../../src/main/engine/progression'
 import { Exams } from '../../src/main/exams/exams'
 import type { ExamGenerator } from '../../src/main/exams/generation'
 import type { OpenAnswerGrader } from '../../src/main/practice/ai-grading'
-import { tokenize } from '../../src/main/practice/exercises'
 import { addDays } from '../../src/shared/dates'
 import { EXAM_INTERRUPTED_MESSAGE, type ExamQuestion, type ExamSessionView } from '../../src/shared/exams'
-import type { ExerciseAnswer, ExerciseType, StoredExercise } from '../../src/shared/exercises'
+import type { ExerciseAnswer } from '../../src/shared/exercises'
+import { rightAnswer, sample } from '../helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
 
@@ -19,53 +18,6 @@ const MON = '2026-09-14'
 const day = (offset: number): string => addDays(MON, offset)
 const FRI = day(4)
 const MINUTE = 60_000
-
-function sample(type: ExerciseType, n: number): StoredExercise {
-  switch (type) {
-    case 'multiple_choice':
-      return { type, instruction: 'i', prompt: `Pregunta ${n}`, options: ['a', 'b', 'c', 'd'], correctIndex: 0, explanation: 'x' }
-    case 'fill_blank':
-      return { type, instruction: 'i', sentence: `She ___ happy ${n}.`, hint: '', answers: ['is'], explanation: 'x' }
-    case 'word_order':
-      return { type, instruction: 'i', sentence: 'She is my sister.', alternatives: [], translation: 't', explanation: 'x', tokens: ['sister', 'is', 'She', 'my'] }
-    case 'error_correction':
-      return { type, instruction: 'i', sentence: `She are happy ${n}.`, answers: [`She is happy ${n}.`], explanation: 'x' }
-    case 'translation':
-      return { type, instruction: 'i', spanish: 'Soy docente.', answers: ['I am a teacher.'], explanation: 'x' }
-    case 'reading': {
-      const q = { prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 0, explanation: 'x' }
-      return { type, instruction: 'i', text: 't', questions: [q, q] }
-    }
-    case 'writing':
-      return { type, instruction: 'i', task: 't', minWords: 20, maxWords: 50, guidance: ['g'], sampleAnswer: 's' }
-    case 'translation_set':
-    case 'dialogue':
-    case 'roleplay':
-      return longSample(type, n)
-  }
-}
-
-function rightAnswer(e: StoredExercise): ExerciseAnswer {
-  switch (e.type) {
-    case 'multiple_choice':
-      return { type: e.type, choice: e.correctIndex }
-    case 'fill_blank':
-      return { type: e.type, text: e.answers[0] }
-    case 'word_order':
-      return { type: e.type, tokens: tokenize(e.sentence) }
-    case 'error_correction':
-    case 'translation':
-      return { type: e.type, text: e.answers[0] }
-    case 'reading':
-      return { type: e.type, choices: e.questions.map((q) => q.correctIndex) }
-    case 'writing':
-      return { type: e.type, text: 'My name is Juan and I am from Rosario.' }
-    case 'translation_set':
-    case 'dialogue':
-    case 'roleplay':
-      return longRightAnswer(e)
-  }
-}
 
 let db: Db
 let progression: Progression

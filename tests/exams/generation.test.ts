@@ -2,30 +2,12 @@
 
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import type { Ask, AskOptions } from '../../src/main/claude/bridge'
 import { loadCurriculum } from '../../src/main/content/curriculum'
 import { generateExam, type ExamRequest } from '../../src/main/exams/generation'
-import type { ExerciseType, GeneratedExercise } from '../../src/shared/exercises'
+import type { ExerciseType } from '../../src/shared/exercises'
+import { fakeClaude, generatedSample as sample } from '../helpers/exercises'
 
 const topic = loadCurriculum(join(__dirname, '..', '..', 'content')).find((t) => t.id === 'a1-to-be')!
-
-function fakeClaude(responses: unknown[]): { ask: Ask; prompts: string[] } {
-  const prompts: string[] = []
-  const ask = (async (options: AskOptions<unknown>) => {
-    prompts.push(options.prompt)
-    const next = responses.shift()
-    if (next instanceof Error) throw next
-    return options.schema.parse(next)
-  }) as Ask
-  return { ask, prompts }
-}
-
-function sample(type: ExerciseType, marker: string): GeneratedExercise {
-  if (type === 'multiple_choice') {
-    return { type, instruction: 'i', prompt: `${marker} She ___ happy.`, options: ['is', 'are', 'am', 'be'], correctIndex: 0, explanation: 'x' }
-  }
-  return { type: 'fill_blank', instruction: 'i', sentence: `${marker} They ___ here.`, hint: '', answers: ['are'], explanation: 'x' }
-}
 
 const types: ExerciseType[] = ['multiple_choice', 'fill_blank', 'multiple_choice', 'fill_blank', 'multiple_choice']
 const request: ExamRequest = {
