@@ -87,13 +87,13 @@ Estado: `[x]` hecho · `[~]` en curso · `[ ]` pendiente. Se guarda en git al ce
 
 ## Inicio y navegación
 
-- [ ] 52 Inicio enfocado en «qué hago hoy»
+- [x] 52 Inicio enfocado en «qué hago hoy»
 - [ ] 53 Recorrido de bienvenida
-- [ ] 54 Modo enfoque en la práctica y el examen
-- [ ] 55 Barra lateral plegable
-- [ ] 56 Buscador general con Ctrl+K
-- [ ] 57 Atajos Ctrl+1 a Ctrl+9
-- [ ] 58 Volver a la última sección al abrir
+- [x] 54 Modo enfoque en la práctica y el examen
+- [x] 55 Barra lateral plegable
+- [x] 56 Buscador general con Ctrl+K
+- [x] 57 Atajos Ctrl+1 a Ctrl+9
+- [x] 58 Volver a la última sección al abrir
 
 ## Diseño visual
 

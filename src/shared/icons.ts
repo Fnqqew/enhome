@@ -31,7 +31,10 @@ export const GLYPHS = [
   'calendar',
   'clock',
   'sparkle',
-  'mic'
+  'mic',
+  'search',
+  'chevron',
+  'focus'
 ] as const
 
 export type Glyph = (typeof GLYPHS)[number]

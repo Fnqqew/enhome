@@ -57,7 +57,7 @@ function Chevron({ open }: { open: boolean }): React.JSX.Element {
   )
 }
 
-export default function Curriculum(): React.JSX.Element {
+export default function Curriculum({ focusTopicId = null }: { focusTopicId?: string | null }): React.JSX.Element {
   const [map, setMap] = useState<CurriculumMap | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [query, setQuery] = useState('')
@@ -72,14 +72,16 @@ export default function Curriculum(): React.JSX.Element {
       .getCurriculumMap()
       .then((result) => {
         setMap(result)
-        // Se abre el nivel y el tópico en curso (o el primer nivel disponible).
-        const current = result.levels.flatMap((l) => l.topics).find((t) => t.id === result.currentTopicId)
+        // Se abre el tópico pedido (desde el buscador), el que está en curso o el primer nivel disponible.
+        const all = result.levels.flatMap((l) => l.topics)
+        const current = all.find((t) => t.id === focusTopicId) ?? all.find((t) => t.id === result.currentTopicId)
         const firstLevel = current?.level ?? result.levels.find((l) => l.available)?.level
         setLevels(firstLevel ? [firstLevel] : [])
         setTopics(current ? [current.id] : [])
+        if (focusTopicId) requestAnimationFrame(() => document.getElementById(`topic-${focusTopicId}`)?.scrollIntoView({ block: 'start' }))
       })
       .catch((err: Error) => setError(err.message))
-  }, [reload])
+  }, [reload, focusTopicId])
 
   const q = fold(query.trim())
   const matches = useMemo(() => {
@@ -269,7 +271,7 @@ function TopicItem({
   const prerequisites = topic.prerequisites.map((id) => titles.get(id) ?? id)
 
   return (
-    <div className={`topic-item${topic.id === currentTopicId ? ' is-current' : ''}`}>
+    <div id={`topic-${topic.id}`} className={`topic-item${topic.id === currentTopicId ? ' is-current' : ''}`}>
       <button className="accordion-header" aria-expanded={open} onClick={() => onToggleTopic(topic.id)}>
         <span className="topic-number">{topic.order}</span>
         <span className="topic-heading">

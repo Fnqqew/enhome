@@ -8,6 +8,8 @@ import Splash from './components/Splash'
 import TitleBar from './components/TitleBar'
 import { useSettings } from './theme/SettingsProvider'
 import Home from './pages/Home'
+import CommandPalette from './components/CommandPalette'
+import { readLocal, ShellContext, writeLocal } from './shell'
 import RewardToasts from './components/RewardToasts'
 
 // Inicio va en el paquete principal; el resto de las secciones se carga cuando se abre
@@ -118,10 +120,22 @@ function LockScreen({ status, onRetry }: { status: Exclude<ClaudeStatus, ReadySt
 
 function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
   const { settings } = useSettings()
-  const [section, setSection] = useState<SectionId>('inicio')
+  // Al abrir, vuelve a la última sección que se usó.
+  const [section, setSection] = useState<SectionId>(() => {
+    const last = readLocal('section')
+    return SECTIONS.some((s) => s.id === last) ? (last as SectionId) : 'inicio'
+  })
   const [params, setParams] = useState<NavParams>({})
   // Durante un examen semanal no se puede salir de Pruebas.
   const [examLocked, setExamLocked] = useState(false)
+  const [collapsed, setCollapsed] = useState(() => readLocal('sidebar') === 'collapsed')
+  const [focus, setFocus] = useState(false)
+  const [palette, setPalette] = useState(false)
+
+  useEffect(() => writeLocal('section', section), [section])
+  useEffect(() => writeLocal('sidebar', collapsed ? 'collapsed' : 'open'), [collapsed])
+  // Al cambiar de sección se sale del modo enfoque.
+  useEffect(() => setFocus(false), [section])
 
   useEffect(() => {
     window.api
@@ -136,36 +150,88 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
 
   useEffect(preloadPages, [])
 
-  const navigate: Navigate = (target, extra = {}) => {
-    if (examLocked && target !== 'pruebas') return
-    setSection(target)
-    setParams(extra)
-  }
+  const navigate: Navigate = useCallback(
+    (target, extra = {}) => {
+      if (examLocked && target !== 'pruebas') return
+      setSection(target)
+      setParams(extra)
+    },
+    [examLocked]
+  )
+
+  // Ctrl+K busca, Ctrl+1 a Ctrl+9 van a las secciones, Ctrl+B pliega la barra y Esc sale del modo enfoque.
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent): void => {
+      if (event.ctrlKey && !event.shiftKey && !event.altKey) {
+        const key = event.key.toLowerCase()
+        if (key === 'k') {
+          event.preventDefault()
+          setPalette((open) => !open)
+        } else if (key === 'b') {
+          event.preventDefault()
+          setCollapsed((c) => !c)
+        } else if (/^[1-9]$/.test(key)) {
+          const target = SECTIONS[Number(key) - 1]
+          if (target) {
+            event.preventDefault()
+            navigate(target.id)
+          }
+        }
+      } else if (event.key === 'Escape' && focus) {
+        setFocus(false)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [navigate, focus])
 
   const title = SECTIONS.find((s) => s.id === section)?.label ?? 'Enhome'
 
   return (
-    <div className="shell">
-      <TitleBar title={title} />
-      <nav className="sidebar">
+    <ShellContext.Provider value={{ focus, setFocus }}>
+    <div className={`shell${collapsed ? ' collapsed' : ''}${focus ? ' focus' : ''}`}>
+      <TitleBar title={focus ? `${title} · modo enfoque (Esc para salir)` : title} />
+      <nav className="sidebar" aria-hidden={focus || undefined}>
         <div className="brand">
           <Logo style={settings.style} />
-          Enhome
+          <span className="nav-label">Enhome</span>
         </div>
         <LanguageSwitcher locked={examLocked} />
+        <button type="button" className="nav-item search-item" onClick={() => setPalette(true)} title="Buscar (Ctrl+K)">
+          <Icon name="search" className="nav-icon" />
+          <span className="nav-label">Buscar</span>
+          <kbd className="nav-label">Ctrl K</kbd>
+        </button>
         {SECTION_GROUPS.map((group, i) => (
           <div key={group.id} className="nav-group" role="group" aria-label={group.label}>
             {i > 0 && <span className="nav-group-label">{group.label}</span>}
             {SECTIONS.filter((s) => s.group === group.id).map((s) => (
-              <NavItem key={s.id} section={s} current={section} examLocked={examLocked} onNavigate={navigate} />
+              <NavItem
+                key={s.id}
+                section={s}
+                shortcut={SECTIONS.indexOf(s) < 9 ? SECTIONS.indexOf(s) + 1 : null}
+                current={section}
+                examLocked={examLocked}
+                onNavigate={navigate}
+              />
             ))}
           </div>
         ))}
         <div className="sidebar-foot">
           <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
-          {examLocked ? 'Examen en curso' : 'Claude conectado'}
+          <span className="nav-label">{examLocked ? 'Examen en curso' : 'Claude conectado'}</span>
+          <button
+            type="button"
+            className="icon-button collapse-button"
+            aria-label={collapsed ? 'Mostrar la barra lateral' : 'Plegar la barra lateral'}
+            title={`${collapsed ? 'Mostrar' : 'Plegar'} la barra (Ctrl+B)`}
+            onClick={() => setCollapsed(!collapsed)}
+          >
+            <Icon name="chevron" className="glyph" />
+          </button>
         </div>
       </nav>
+      {palette && <CommandPalette navigate={navigate} onClose={() => setPalette(false)} />}
       <RewardToasts trigger={section} />
       <main className="content">
         <div key={section} className="page">
@@ -175,6 +241,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
         </div>
       </main>
     </div>
+    </ShellContext.Provider>
   )
 }
 
@@ -192,7 +259,7 @@ function Page({
   onExamLock: (locked: boolean) => void
 }): React.JSX.Element {
   if (section === 'inicio') return <Home navigate={navigate} />
-  if (section === 'temario') return <Curriculum />
+  if (section === 'temario') return <Curriculum focusTopicId={params.topicId ?? null} />
   if (section === 'practica') return <Practice navigate={navigate} />
   if (section === 'repaso') return <Review examId={params.examId ?? null} navigate={navigate} />
   if (section === 'juegos') return <Games />
@@ -208,11 +275,13 @@ function Page({
 
 function NavItem({
   section,
+  shortcut,
   current,
   examLocked,
   onNavigate
 }: {
   section: (typeof SECTIONS)[number]
+  shortcut: number | null
   current: SectionId
   examLocked: boolean
   onNavigate: Navigate
@@ -223,11 +292,11 @@ function NavItem({
       className="nav-item"
       aria-current={section.id === current ? 'page' : undefined}
       disabled={blocked}
-      title={blocked ? 'Entregá el examen para salir de Pruebas' : undefined}
+      title={blocked ? 'Entregá el examen para salir de Pruebas' : shortcut ? `${section.label} (Ctrl+${shortcut})` : section.label}
       onClick={() => onNavigate(section.id)}
     >
       <Icon name={section.id} className="nav-icon" />
-      {section.label}
+      <span className="nav-label">{section.label}</span>
     </button>
   )
 }

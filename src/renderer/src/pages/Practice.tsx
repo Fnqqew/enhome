@@ -11,6 +11,7 @@ import { formatDayMonth, weekdayName } from '@shared/dates'
 import ExerciseInput from '../components/practice/ExerciseInput'
 import Feedback from '../components/practice/Feedback'
 import ClaudeWait from '../components/ClaudeWait'
+import FocusToggle from '../components/FocusToggle'
 import Icon from '../components/Icon'
 import { announceRewards } from '../rewardsBus'
 import Rating from '../components/Rating'
@@ -312,9 +313,12 @@ function SessionPlayer({
           <Heading purpose={session.purpose} unitIndex={session.unitIndex} topicTitle={session.topicTitle} />
           <h2>{session.subtopicTitle}</h2>
         </div>
-        <span className="muted">
-          {position} / {total}
-        </span>
+        <div className="row header-tools">
+          <FocusToggle />
+          <span className="muted">
+            {position} / {total}
+          </span>
+        </div>
       </div>
 
       <div className="dots" role="group" aria-label="Ejercicios de la práctica">

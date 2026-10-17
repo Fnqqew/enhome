@@ -4,6 +4,7 @@ import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type ExerciseType } from '@s
 import { secondChanceMessage, type SecondChanceResult } from '@shared/rewards'
 import { announceRewards } from '../../rewardsBus'
 import ClaudeWait from '../ClaudeWait'
+import FocusToggle from '../FocusToggle'
 import Icon from '../Icon'
 import ExerciseInput from '../practice/ExerciseInput'
 
@@ -116,9 +117,12 @@ export default function ExamPlayer({
           <span className="level">{session.kind === 'weekly' ? 'EXAMEN SEMANAL' : 'SIMULACRO'}</span>
           <h2>{session.title}</h2>
         </div>
-        <span className="muted">
-          {answeredCount} de {total} respondidas
-        </span>
+        <div className="row header-tools">
+          <FocusToggle />
+          <span className="muted">
+            {answeredCount} de {total} respondidas
+          </span>
+        </div>
       </div>
 
       {session.kind === 'weekly' && (

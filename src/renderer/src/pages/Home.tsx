@@ -3,6 +3,7 @@ import { formatDayMonth, toLocalDate, weekdayName } from '@shared/dates'
 import type { PracticeUnitView, ProgressState } from '@shared/progress'
 import DevTools from '../components/DevTools'
 import PlacementFlow from '../components/PlacementFlow'
+import TodayCard from '../components/home/TodayCard'
 import WeekCalendar from '../components/WeekCalendar'
 import { useDayChange, useMinutesToMidnight } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
@@ -62,6 +63,7 @@ export default function Home({ navigate }: { navigate: Navigate }): React.JSX.El
         </section>
       )}
       {progress && !progress.placementDone && <PlacementFlow resume={progress.placementInProgress} onDone={reload} />}
+      {progress?.placementDone && !progress.pausedSince && !progress.finished && <TodayCard progress={progress} navigate={navigate} />}
       {progress?.placementDone && <Journey progress={progress} navigate={navigate} />}
       {isDev && progress && <DevTools progress={progress} onChange={setProgress} />}
       <section className="card row spread">

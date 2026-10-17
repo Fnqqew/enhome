@@ -172,6 +172,14 @@ const PATHS: Record<IconName, React.JSX.Element> = {
     </>
   ),
   sparkle: <path d="M12 3.5c.6 4.2 2.5 6.6 6.5 7.5-4 .9-5.9 3.3-6.5 7.5-.6-4.2-2.5-6.6-6.5-7.5 4-.9 5.9-3.3 6.5-7.5z" />,
+  search: (
+    <>
+      <circle cx="11" cy="11" r="6.5" />
+      <path d="M16 16l4.5 4.5" />
+    </>
+  ),
+  chevron: <path d="M14.5 6.5 9 12l5.5 5.5" />,
+  focus: <path d="M4.5 9V4.5H9M15 4.5h4.5V9M19.5 15v4.5H15M9 19.5H4.5V15" />,
   mic: (
     <>
       <path d="M12 3.5a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0v-5a3 3 0 0 0-3-3z" />
