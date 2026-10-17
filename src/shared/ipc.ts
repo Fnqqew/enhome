@@ -19,12 +19,15 @@ import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 import type { Highlight, JournalView, ReadingSummary, ReadingView } from './reading'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
+import type { UpdateInfo } from './updates'
 
 export const IPC = {
   appInfo: 'app:info',
   appTimings: 'app:timings',
   appOpenLog: 'app:open-log',
   appOpenData: 'app:open-data',
+  updatesCheck: 'updates:check',
+  updatesInstall: 'updates:install',
   modelsSize: 'models:size',
   studyAdd: 'study:add',
   goalGet: 'goal:get',
@@ -163,6 +166,9 @@ export interface Api {
   getClaudeTimings(): Promise<ClaudeTimingStat[]>
   openLogFile(): Promise<void>
   openDataFolder(): Promise<void>
+  // Versiones publicadas en GitHub: buscar una nueva e instalarla (cierra la app).
+  checkUpdates(): Promise<UpdateInfo>
+  installUpdate(): Promise<void>
   // Bytes que ocupan los modelos de voz descargados, y borrarlos.
   getModelsSize(): Promise<number>
   // Suma segundos de estudio activo de hoy (para la meta en minutos).

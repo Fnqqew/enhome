@@ -114,3 +114,12 @@
   font-family: var(--font-numbers);
   font-size: 0.88rem;
 }
+
+/* Notas de una versión nueva: se leen sin ocupar toda la tarjeta. */
+.update-notes {
+  max-height: 12rem;
+  overflow-y: auto;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--surface-hover);
+}

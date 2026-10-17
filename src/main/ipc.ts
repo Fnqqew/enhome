@@ -4,6 +4,7 @@ import type { DataManager } from './data/data'
 import { z } from 'zod'
 import { askClaude, cancelClaude, getClaudeStatus, onClaudeTiming, setClaudeProfile } from './claude/bridge'
 import { setSpanishVariant } from './claude/quality'
+import { checkUpdates, installUpdate, REPO } from './updates'
 import { addStudyTime, goalView } from './goal/goal'
 import type { DayStatus } from './reminders'
 import { loadCurriculum, loadRoadmap } from './content/curriculum'
@@ -200,8 +201,15 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
     node: process.versions.node,
     chrome: process.versions.chrome,
     dataDir: app.getPath('userData'),
-    repoUrl: 'https://github.com/Fnqqew/enhome'
+    repoUrl: `https://github.com/${REPO}`
   }))
+  handle(IPC.updatesCheck, () => checkUpdates())
+  handle(IPC.updatesInstall, () =>
+    installUpdate(() => {
+      // Se da tiempo a que la respuesta llegue a la ventana antes de cerrar.
+      setTimeout(() => app.quit(), 300)
+    })
+  )
 
   onClaudeTiming((timing) => saveTiming(db, timing))
   handle(IPC.appTimings, () => timingStats(db))

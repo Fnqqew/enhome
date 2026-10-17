@@ -5,6 +5,7 @@ import { EXERCISE_TYPE_LABELS, EXERCISE_TYPES } from '@shared/exercises'
 import { SUMMARY_TYPE_IDS } from '@shared/summaries'
 import { STYLES } from '@shared/settings'
 import Logo from '../components/Logo'
+import UpdateCheck from '../components/UpdateCheck'
 import { useSettings } from '../theme/SettingsProvider'
 import type { Navigate } from '../navigation'
 
@@ -129,6 +130,8 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
           <p className="muted small">Cuando uses la práctica, los exámenes o los resúmenes, acá vas a ver cuánto tarda Claude en cada tarea.</p>
         )}
       </section>
+
+      <UpdateCheck />
 
       <section className="card stack fade-in">
         <h2>Datos técnicos</h2>

@@ -10,6 +10,7 @@
     "build": "electron-vite build",
     "start": "electron-vite preview",
     "dist": "electron-vite build && electron-builder --win --publish never",
+    "update-local": "node scripts/update-local.cjs",
     "icon": "electron scripts/make-icon.cjs",
     "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
     "test": "vitest run",
