@@ -171,7 +171,13 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M12 7.5V12l3 2" />
     </>
   ),
-  sparkle: <path d="M12 3.5c.6 4.2 2.5 6.6 6.5 7.5-4 .9-5.9 3.3-6.5 7.5-.6-4.2-2.5-6.6-6.5-7.5 4-.9 5.9-3.3 6.5-7.5z" />
+  sparkle: <path d="M12 3.5c.6 4.2 2.5 6.6 6.5 7.5-4 .9-5.9 3.3-6.5 7.5-.6-4.2-2.5-6.6-6.5-7.5 4-.9 5.9-3.3 6.5-7.5z" />,
+  mic: (
+    <>
+      <path d="M12 3.5a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0v-5a3 3 0 0 0-3-3z" />
+      <path d="M6 11a6 6 0 0 0 12 0M12 17v3.5M9 20.5h6" />
+    </>
+  )
 }
 
 // filled rellena la forma (por ejemplo, la estrella de favorito marcada).

@@ -1309,3 +1309,8 @@ mark.gloss {
 .name-input {
   max-width: 20rem;
 }
+
+.btn.recording {
+  background: var(--danger);
+  animation: pulse 1.4s ease-in-out infinite;
+}

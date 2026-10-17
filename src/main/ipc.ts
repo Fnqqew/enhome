@@ -13,6 +13,7 @@ import { newFeedbackSchema } from '../shared/feedback'
 import { loadSettings, updateSettings } from './db/settings-repo'
 import { saveTiming, timingStats } from './db/timings-repo'
 import { currentLogPath } from './log'
+import { modelsSize, removeModels } from './models'
 import { PRACTICE_LENGTHS, type AppSettings } from '../shared/settings'
 import { simulatedExam } from './engine/dev'
 import { Placement } from './engine/placement'
@@ -185,6 +186,8 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, onS
   onClaudeTiming((timing) => saveTiming(db, timing))
   handle(IPC.appTimings, () => timingStats(db))
   handle(IPC.claudeCancel, () => cancelClaude())
+  handle(IPC.modelsSize, () => modelsSize())
+  handle(IPC.modelsRemove, () => removeModels())
   // openPath devuelve un texto con el error en vez de lanzarlo.
   const open = async (path: string | null): Promise<void> => {
     if (!path) throw new Error('Todavía no hay un registro de errores.')

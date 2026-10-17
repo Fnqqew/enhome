@@ -20,6 +20,8 @@ export const IPC = {
   appTimings: 'app:timings',
   appOpenLog: 'app:open-log',
   appOpenData: 'app:open-data',
+  modelsSize: 'models:size',
+  modelsRemove: 'models:remove',
   claudeCancel: 'claude:cancel',
   claudeStatus: 'claude:status',
   claudeSample: 'claude:sample',
@@ -136,6 +138,9 @@ export interface Api {
   getClaudeTimings(): Promise<ClaudeTimingStat[]>
   openLogFile(): Promise<void>
   openDataFolder(): Promise<void>
+  // Bytes que ocupan los modelos de voz descargados, y borrarlos.
+  getModelsSize(): Promise<number>
+  removeModels(): Promise<void>
   getClaudeStatus(): Promise<ClaudeStatus>
   // Corta los pedidos a Claude en curso; devuelve cuántos había.
   cancelClaude(): Promise<number>

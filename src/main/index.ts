@@ -12,6 +12,7 @@ import { registerIpc } from './ipc'
 import { applyStyle, styleHash, windowColor } from './window-style'
 import { initialBounds, readWindowState, trackWindowState } from './window-state'
 import { startLog } from './log'
+import { registerModelScheme, serveModels } from './models'
 import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
 
@@ -19,6 +20,7 @@ import type { AppSettings } from '../shared/settings'
 app.setPath('userData', join(app.getPath('appData'), 'enhome'))
 app.setAppUserModelId('com.artemis18.enhome')
 startLog(join(app.getPath('userData'), 'logs', 'enhome.log'))
+registerModelScheme()
 
 const windowStatePath = (): string => join(app.getPath('userData'), 'ventana.json')
 
@@ -104,6 +106,7 @@ if (!app.requestSingleInstanceLock()) {
   })
 
   app.whenReady().then(() => {
+    serveModels()
     const dataDir = app.getPath('userData')
     // La base principal es la del curso de inglés y además guarda los ajustes de toda la app.
     const db = openDatabase(join(dataDir, migrateOldData()))

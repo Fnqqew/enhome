@@ -156,6 +156,7 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
       <PracticeSettings />
       <CourseSettings />
       <VoiceSettings />
+      <SpeechModelSettings />
       <ClaudeConnection status={status} />
     </>
   )
@@ -257,6 +258,38 @@ const VOICE_LANGS: { lang: SpeechLang; label: string }[] = [
   { lang: 'es', label: 'Español' },
   ...LANGUAGES.map((l) => ({ lang: l.id, label: l.label }))
 ]
+
+// El reconocimiento de voz de Pronunciación: cuánto ocupa el modelo descargado y la opción de borrarlo.
+function SpeechModelSettings(): React.JSX.Element | null {
+  const [size, setSize] = useState<number | null>(null)
+  useEffect(() => {
+    window.api
+      .getModelsSize()
+      .then(setSize)
+      .catch(() => setSize(0))
+  }, [])
+  if (!size) return null
+  return (
+    <section className="card stack">
+      <h2>Reconocimiento de voz</h2>
+      <Row label={`Modelo descargado · ${Math.round(size / 1_000_000)} MB`}>
+        <button
+          type="button"
+          className="btn secondary"
+          onClick={() =>
+            window.api
+              .removeModels()
+              .then(() => setSize(0))
+              .catch(() => undefined)
+          }
+        >
+          Borrar
+        </button>
+      </Row>
+      <p className="muted small">Lo usa el juego Pronunciación. Si lo borrás, se vuelve a bajar la próxima vez que juegues.</p>
+    </section>
+  )
+}
 
 function VoiceSettings(): React.JSX.Element {
   const { settings, update } = useSettings()
