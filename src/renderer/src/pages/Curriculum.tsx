@@ -122,8 +122,8 @@ export default function Curriculum({ focusTopicId = null }: { focusTopicId?: str
       <h1>Temario</h1>
       <section className="card wide stack">
         <p className="muted">
-          {map.totalTopics} tópicos disponibles ({availableLevels.join(' y ')}) · {map.reviewedCount} revisados. Cada tópico dura una semana, con un
-          subtema por día de lunes a viernes.
+          {map.totalTopics} tópicos disponibles ({new Intl.ListFormat('es', { type: 'conjunction' }).format(availableLevels)}) · {map.reviewedCount}{' '}
+          revisados. Cada tópico dura una semana, con un subtema por día de lunes a viernes.
         </p>
         <div className="row">
           <input

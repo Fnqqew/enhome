@@ -110,16 +110,16 @@ export default function Review({ examId, navigate }: { examId: number | null; na
       {overview.pending > 0 && (
         <section className="card stack fade-in">
           <h2>Próximos días</h2>
-          <div className="upcoming" role="list">
+          <div className="review-upcoming" role="list">
             {overview.upcoming.map((day) => (
               <div
                 key={day.date}
-                className="upcoming-day"
+                className="review-upcoming-day"
                 role="listitem"
                 aria-label={`${weekdayName(day.date)} ${formatDayMonth(day.date)}: ${day.count}`}
               >
-                <span className="upcoming-bar" style={{ height: `${Math.min(100, day.count * 18 + (day.count > 0 ? 10 : 0))}%` }} />
-                <span className="upcoming-count">{day.count || ''}</span>
+                <span className="review-upcoming-bar" style={{ height: `${Math.min(100, day.count * 18 + (day.count > 0 ? 10 : 0))}%` }} />
+                <span className="review-upcoming-count">{day.count || ''}</span>
                 <span className="muted small">{weekdayName(day.date).slice(0, 3)}</span>
               </div>
             ))}

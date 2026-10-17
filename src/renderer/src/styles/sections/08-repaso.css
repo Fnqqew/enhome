@@ -27,7 +27,7 @@
   line-height: 1.1;
 }
 
-.upcoming {
+.review-upcoming {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 0.5rem;
@@ -35,7 +35,7 @@
   align-items: end;
 }
 
-.upcoming-day {
+.review-upcoming-day {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@
   height: 100%;
 }
 
-.upcoming-bar {
+.review-upcoming-bar {
   width: 70%;
   min-height: 3px;
   border-radius: 6px 6px 2px 2px;
@@ -54,7 +54,7 @@
   transition: height 0.4s ease;
 }
 
-.upcoming-count {
+.review-upcoming-count {
   font-family: var(--font-numbers);
   font-size: 0.8rem;
   min-height: 1em;

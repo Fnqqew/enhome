@@ -21,12 +21,15 @@ export const CHANGELOG: Release[] = [
       'Seleccioná una palabra en cualquier texto para traducirla y guardarla.',
       'La práctica empieza apenas llegan los ejercicios cortos, se prepara sola al abrir la app y se adapta a cómo te viene yendo.',
       'Buscador con Ctrl+K, atajos de teclado, barra lateral plegable y modo enfoque.',
-      'Certificado en PDF al completar un nivel, estadísticas y biblioteca de todo lo generado.'
+      'Certificado en PDF al completar un nivel, estadísticas y biblioteca de todo lo generado.',
+      'Meta diaria en minutos o actividades, recordatorio de Windows a la hora que elijas e ícono en la bandeja.',
+      'Modo lectura con resaltados para los resúmenes, cuatro estilos nuevos y un estilo propio con tus colores.',
+      'Copias de seguridad automáticas, exportar e importar el progreso, y buscar actualizaciones desde Acerca de.'
     ]
   },
   {
     version: '1.5.0',
-    date: '2026-10-14',
+    date: '2026-10-05',
     title: 'Pantalla de carga y botones de ventana animados',
     items: [
       'Una pantalla de carga con la casa que se dibuja y el saludo en el idioma del curso.',
@@ -35,7 +38,7 @@ export const CHANGELOG: Release[] = [
   },
   {
     version: '1.4.0',
-    date: '2026-10-12',
+    date: '2026-10-05',
     title: 'Práctica larga e inmersiva',
     items: [
       'Conversaciones, situaciones para resolver y tandas de traducción.',
