@@ -19,7 +19,9 @@ import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
 
 // Carpeta de datos fija: la versión instalada y la de desarrollo comparten el mismo progreso.
-app.setPath('userData', join(app.getPath('appData'), 'enhome'))
+// Las pruebas de interfaz usan una propia (ENHOME_DATA_DIR) para no tocar el progreso real.
+const testDataDir = process.env.ENHOME_DATA_DIR
+app.setPath('userData', testDataDir || join(app.getPath('appData'), 'enhome'))
 app.setAppUserModelId('com.artemis18.enhome')
 startLog(join(app.getPath('userData'), 'logs', 'enhome.log'))
 registerModelScheme()
@@ -33,7 +35,7 @@ function migrateOldData(): string {
   const anterior = join(app.getPath('appData'), 'proyecto-ingles', 'proyecto-ingles.db')
   // Se intenta una sola vez: si después se borran los datos, no vuelve a traer lo viejo.
   const marker = join(app.getPath('userData'), 'migracion-revisada')
-  if (existsSync(marker)) return file
+  if (testDataDir || existsSync(marker)) return file
   mkdirSync(app.getPath('userData'), { recursive: true })
   writeFileSync(marker, new Date().toISOString())
   if (existsSync(target) || !existsSync(anterior)) return file

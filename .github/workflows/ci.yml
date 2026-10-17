@@ -28,3 +28,21 @@ jobs:
       - run: npm run lint
       - run: npm run format:check
       - run: npm test
+
+  # Pruebas de interfaz: abren la app compilada con datos vacíos y un Claude simulado.
+  interfaz:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run e2e
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: capturas-e2e
+          path: out/e2e

@@ -28,6 +28,11 @@ export default tseslint.config(
     }
   },
   {
+    // Las funciones que se pasan a evaluate() corren dentro de la ventana.
+    files: ['tests/e2e/**/*.mjs'],
+    languageOptions: { globals: { ...globals.browser } }
+  },
+  {
     files: ['**/*.cjs'],
     rules: { '@typescript-eslint/no-require-imports': 'off' }
   }

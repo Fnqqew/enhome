@@ -95,6 +95,10 @@ async function withSlot<T>(fn: () => Promise<T>): Promise<T> {
   }
 }
 
+// Las pruebas de interfaz usan un Claude simulado: figura conectado, pero cada pedido falla
+// (así no gastan la suscripción y de paso se prueban los avisos de error).
+const fakeClaude = (): boolean => !!process.env.ENHOME_CLAUDE_FALSO
+
 export function findClaudeExecutable(): string | null {
   const candidates = [
     process.env.CLAUDE_PATH,
@@ -177,6 +181,7 @@ const authStatusSchema = z.object({
 })
 
 export async function getClaudeStatus(): Promise<ClaudeStatus> {
+  if (fakeClaude()) return { state: 'ready', subscription: 'pruebas', email: null }
   const exe = findClaudeExecutable()
   if (!exe) return { state: 'not-installed' }
   try {
@@ -260,6 +265,7 @@ export async function askClaude<T>({
   timeoutMs = DEFAULT_TIMEOUT_MS,
   retries = 2
 }: AskOptions<T>): Promise<T> {
+  if (fakeClaude()) throw new ClaudeError('Claude simulado: en las pruebas de interfaz no responde.', 'offline')
   const exe = findClaudeExecutable()
   if (!exe) throw new ClaudeError('Claude Code no está instalado.', 'missing')
   const epoch = cancelEpoch
