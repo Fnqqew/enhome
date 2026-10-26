@@ -24,7 +24,7 @@ import { simulatedExam } from './engine/dev'
 import { Placement } from './engine/placement'
 import { generatePlacementQuestions } from './engine/placement-questions'
 import { Progression } from './engine/progression'
-import { gradeOpenAnswer } from './practice/ai-grading'
+import { gradeOpenAnswer, prewarmGrading } from './practice/ai-grading'
 import { generatePracticePool } from './practice/generation'
 import { Practice } from './practice/practice'
 import { answerAboutText, generateSummary } from './summaries/generation'
@@ -356,7 +356,10 @@ export function registerIpc({ db, courseDb, courseExists, contentDir, isDev, dat
   )
 
   handle(IPC.practiceGet, () => getServices().practice.getView(today()))
-  handle(IPC.practiceStart, () => getServices().practice.start(today()))
+  handle(IPC.practiceStart, () => {
+    prewarmGrading(activeLanguage())
+    return getServices().practice.start(today())
+  })
   handle(IPC.practiceAnswer, (exerciseId, answer) => getServices().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today()))
   const wordSchema = z.object({ term: z.string(), translation: z.string(), example: z.string(), exampleEs: z.string(), note: z.string() })
   handle(IPC.vocabLookup, (term, context) => {

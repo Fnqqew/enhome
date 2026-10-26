@@ -4,7 +4,7 @@
 import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import type { ExerciseFeedback, ExercisePart, OpenExercise } from '../../shared/exercises'
-import { askClaude } from '../claude/bridge'
+import { askClaude, prewarmClaude } from '../claude/bridge'
 import { roleSystemPrompt, spanish } from '../claude/quality'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 
@@ -189,10 +189,14 @@ export const GRADING_MODEL: Record<OpenExercise['type'], string> = {
   writing: 'sonnet'
 }
 
+// Con esfuerzo bajo la corrección de una traducción baja de 23 s a 12 s con el mismo veredicto (medido el 2026-10-26).
+export const GRADING_EFFORT = 'low'
+
 export async function gradeOpenAnswer(request: OpenAnswerRequest, model = GRADING_MODEL[request.exercise.type]): Promise<ExerciseFeedback> {
   const review = await askClaude({
     label: 'corrección',
     model,
+    effort: GRADING_EFFORT,
     systemPrompt: systemPrompt(request.topic.language),
     prompt: buildReviewPrompt(request),
     schema: reviewSchema
@@ -221,4 +225,9 @@ export async function gradeOpenAnswer(request: OpenAnswerRequest, model = GRADIN
     parts,
     review: { correctedText: review.correctedText, comments: review.comments, mistakes: review.mistakes }
   }
+}
+
+// Al empezar una práctica se abre la sesión de corrección, así la primera corrección no paga el arranque.
+export function prewarmGrading(language: LanguageId): void {
+  prewarmClaude({ model: 'sonnet', effort: GRADING_EFFORT, systemPrompt: systemPrompt(language), schema: reviewSchema })
 }

@@ -5,7 +5,7 @@ import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import { generatedExerciseSchema, LONG_TYPES, type ExerciseType, type GeneratedExercise, type StoredExercise } from '../../shared/exercises'
 import type { UnitKind } from '../../shared/progress'
-import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
+import { askClaude, shouldRetry, type Ask, type Ticket } from '../claude/bridge'
 import {
   applyCorrections,
   CORRECTIONS_GUIDE,
@@ -34,6 +34,8 @@ export interface PoolRequest {
   size?: number
   // Cómo le viene yendo al alumno en el tópico: sube o baja la exigencia.
   difficulty?: Difficulty
+  // Prioridad en la cola de Claude: de fondo al prepararla, urgente cuando el alumno la abre.
+  ticket?: Ticket
 }
 
 export type Difficulty = 'guided' | 'normal' | 'harder'
@@ -165,7 +167,8 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
     systemPrompt: systemPrompt(request.topic),
     prompt: buildPoolPrompt(request, counts),
     schema: poolSchema,
-    timeoutMs: GENERATION_TIMEOUT_MS
+    timeoutMs: GENERATION_TIMEOUT_MS,
+    ticket: request.ticket
   })
   const generated = Date.now()
   const review = await ask({
@@ -174,7 +177,8 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
     prompt: buildPoolReviewPrompt(request, exercises),
     schema: reviewSchema,
     effort: REVIEW_EFFORT,
-    timeoutMs: GENERATION_TIMEOUT_MS
+    timeoutMs: GENERATION_TIMEOUT_MS,
+    ticket: request.ticket
   })
   const tipos = Object.keys(counts).join(', ')
   console.info(

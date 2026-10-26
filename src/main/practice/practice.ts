@@ -16,6 +16,7 @@ import {
 import type { PracticeUnitView, UnitKind } from '../../shared/progress'
 import { transaction, type Db } from '../db/database'
 import type { Progression } from '../engine/progression'
+import { promote, type Priority, type Ticket } from '../claude/bridge'
 import type { OpenAnswerGrader } from './ai-grading'
 import {
   composeLong,
@@ -85,6 +86,7 @@ interface Target {
 interface Generation {
   startable: Promise<void>
   done: Promise<void>
+  ticket: Ticket
 }
 
 const errorText = (err: unknown): string => (err instanceof Error ? err.message : String(err))
@@ -114,7 +116,7 @@ export class Practice {
     const session = this.repairSession(this.findSession(target), target)
     if (session && this.hasSlots(session.id)) {
       // Una sesión que arrancó con los cortos y quedó sin los largos (por ejemplo, se cerró la app) los vuelve a pedir.
-      if (this.waitingLong(session) && !this.generating.has(session.id) && !this.failures.has(session.id)) this.launch(session)
+      if (this.waitingLong(session) && !this.generating.has(session.id) && !this.failures.has(session.id)) this.launch(session, 'now')
       return { status: 'session', session: this.sessionView(session) }
     }
 
@@ -151,7 +153,9 @@ export class Practice {
     const session = this.repairSession(this.findSession(target), target) ?? this.createSession(target)
     // Reintentar después de una falla de los largos vuelve a pedirlos.
     this.failures.delete(session.id)
-    const generation = this.ensurePool(session)
+    const generation = this.ensurePool(session, 'now')
+    // Si se estaba preparando de fondo, pasa adelante en la cola de Claude.
+    promote(generation.ticket)
     if (!this.hasSlots(session.id)) {
       // Se empieza apenas están los cortos; los largos ocupan sus lugares cuando llegan.
       await generation.startable
@@ -263,7 +267,7 @@ export class Practice {
     const session = this.repairSession(this.findSession(target), target) ?? this.createSession(target)
     // De a una generación en segundo plano para no gastar de más.
     if (this.generating.size > 0 && !this.generating.has(session.id)) return
-    this.ensurePool(session)
+    this.ensurePool(session, 'background')
   }
 
   private prefetchUpcoming(today: string): void {
@@ -305,16 +309,17 @@ export class Practice {
     return slotted.length > 0 && !slotted.some((r) => isLongType(r.type))
   }
 
-  private ensurePool(session: SessionRow): Generation {
+  private ensurePool(session: SessionRow, priority: Priority): Generation {
     const running = this.generating.get(session.id)
     if (running) return running
     const state = this.poolState(session.id)
-    if (state.short && state.long) return { startable: Promise.resolve(), done: Promise.resolve() }
-    return this.launch(session)
+    if (state.short && state.long) return { startable: Promise.resolve(), done: Promise.resolve(), ticket: { priority: 'now' } }
+    return this.launch(session, priority)
   }
 
   // Pide a Claude lo que falta (todo, o solo la tanda que no llegó) y guarda cada tanda apenas está.
-  private launch(session: SessionRow): Generation {
+  private launch(session: SessionRow, priority: Priority): Generation {
+    const ticket: Ticket = { priority }
     const state = this.poolState(session.id)
     const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
     const avoid = (
@@ -359,6 +364,7 @@ export class Practice {
       avoid,
       size: options.size,
       difficulty,
+      ticket,
       onGroup: (group) => {
         savedByGroup = true
         save(group)
@@ -375,7 +381,7 @@ export class Practice {
       })
       .finally(() => this.generating.delete(session.id))
 
-    const generation = { startable, done }
+    const generation = { startable, done, ticket }
     this.generating.set(session.id, generation)
     return generation
   }

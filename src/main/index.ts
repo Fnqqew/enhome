@@ -14,6 +14,7 @@ import { initialBounds, readWindowState, trackWindowState } from './window-state
 import { startLog } from './log'
 import { registerModelScheme, serveModels } from './models'
 import { DataManager } from './data/data'
+import { shutdownClaude } from './claude/bridge'
 import { startReminders, TrayIcon } from './reminders'
 import { IPC } from '../shared/ipc'
 import type { AppSettings } from '../shared/settings'
@@ -140,6 +141,8 @@ if (!app.requestSingleInstanceLock()) {
       }
       return course
     }
+    // Al salir no quedan sesiones de Claude abiertas.
+    app.on('will-quit', shutdownClaude)
     app.on('will-quit', () =>
       courseDbs.forEach((course) => {
         try {

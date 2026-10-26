@@ -203,6 +203,7 @@ export async function answerAboutText(
 ): Promise<string> {
   const { answer } = await ask({
     label: 'pregunta sobre un texto',
+    cache: true,
     systemPrompt: roleSystemPrompt(topic.language, 'docente', 'Respondés dudas de forma breve, clara y correcta.'),
     prompt: `${topicContext(topic)}
 

@@ -70,6 +70,7 @@ export class Vocabulary {
     const info = await this.ask({
       label: 'vocabulario',
       effort: 'low',
+      cache: true,
       systemPrompt: roleSystemPrompt(this.language, 'docente', 'Traducís palabras en contexto, con precisión y en pocas palabras.'),
       prompt: buildLookupPrompt(clean, context.trim().slice(0, 400), this.language, level),
       schema: lookupSchema,
