@@ -1566,6 +1566,744 @@
           }
         ]
       }
+    ],
+    "verbo-estar": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Eu ___ muito cansado depois da viagem para Salvador.",
+        "options": [
+          "somos",
+          "está",
+          "estou",
+          "sou"
+        ],
+        "correctIndex": 2,
+        "explanation": "El cansancio es un estado pasajero y se expresa con estar; eu se conjuga como estou.",
+        "optionNotes": [
+          "Incorrecto: 'somos' corresponde a nós, no a eu.",
+          "Incorrecto: 'está' corresponde a ele/ela/você, no a eu.",
+          "Correcto: eu se conjuga con estar como estou, usado para estados pasajeros.",
+          "Incorrecto: el cansancio es temporal, se expresa con estar, no con ser."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Bia liga e pergunta: 'Onde você ___?'",
+        "options": [
+          "está",
+          "estou",
+          "são",
+          "é"
+        ],
+        "correctIndex": 0,
+        "explanation": "Você se conjuga como ele/ela: você está, usado para preguntar ubicación.",
+        "optionNotes": [
+          "Correcto: você se conjuga con estar como está, usado para la ubicación.",
+          "Incorrecto: 'estou' es la primera persona (eu), no corresponde a você.",
+          "Incorrecto: 'são' es plural, pero você en esta frase es singular.",
+          "Incorrecto: la ubicación se expresa con estar, no con ser."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Nós ___ no hostel agora, perto da praia.",
+        "options": [
+          "somos",
+          "são",
+          "está",
+          "estamos"
+        ],
+        "correctIndex": 3,
+        "explanation": "Nós se conjuga con estar como estamos, usado para la ubicación temporal.",
+        "optionNotes": [
+          "Incorrecto: la ubicación temporal se expresa con estar, no con ser.",
+          "Incorrecto: 'são' corresponde a eles/elas/vocês, no a nós.",
+          "Incorrecto: 'está' es singular (ele/ela/você), no corresponde a nós.",
+          "Correcto: nós se conjuga con estar como estamos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Carlos e Bia ___ na praia agora.",
+        "options": [
+          "somos",
+          "estão",
+          "está",
+          "são"
+        ],
+        "correctIndex": 1,
+        "explanation": "Eles/elas se conjuga con estar como estão, usado para la ubicación de varias personas.",
+        "optionNotes": [
+          "Incorrecto: 'somos' corresponde a nós, no a eles.",
+          "Correcto: Carlos e Bia (eles) se conjuga con estar como estão.",
+          "Incorrecto: 'está' es singular, pero Carlos e Bia son dos personas (plural).",
+          "Incorrecto: la ubicación se expresa con estar, no con ser, aunque sean varias personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para un lugar fijo.",
+        "prompt": "O Pelourinho ___ no centro histórico de Salvador.",
+        "options": [
+          "está",
+          "fica",
+          "é",
+          "são"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para la ubicación de lugares fijos como barrios o ciudades se prefiere ficar: o Pelourinho fica.",
+        "optionNotes": [
+          "Incorrecto: aunque estar se usa para ubicación de personas y cosas, para lugares fijos se prefiere ficar.",
+          "Correcto: para lugares fijos (barrios, ciudades) se usa ficar.",
+          "Incorrecto: ser no se usa para expresar ubicación geográfica.",
+          "Incorrecto: 'são' es plural y además ser no se usa para ubicación."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta (forma informal hablada).",
+        "prompt": "Bia pergunta no WhatsApp: 'Cadê você? Você ___ perto do hotel?'",
+        "options": [
+          "são",
+          "é",
+          "estão",
+          "tá"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Tá' es la forma informal hablada de 'está', usada con você para preguntar ubicación.",
+        "optionNotes": [
+          "Incorrecto: 'são' es plural, pero você en esta frase es singular.",
+          "Incorrecto: la ubicación se expresa con estar, no con ser.",
+          "Incorrecto: 'estão' es plural (eles/elas/vocês), pero acá se habla de una sola persona.",
+          "Correcto: 'tá' es la contracción informal de 'está', usada con você."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de estar.",
+        "sentence": "Depois do voo, eu ___ muito cansado.",
+        "hint": "(estar)",
+        "answers": [
+          "estou"
+        ],
+        "explanation": "Eu se conjuga con estar como estou, usado para estados temporales como el cansancio.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "El cansancio es un estado pasajero, se expresa con estar, no con ser."
+          },
+          {
+            "answer": "está",
+            "why": "'Está' corresponde a ele/ela/você, no a eu."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de ficar (lugar fijo).",
+        "sentence": "Bia explica: 'A praia ___ perto do hotel.'",
+        "hint": "(ficar - lugar fijo)",
+        "answers": [
+          "fica"
+        ],
+        "explanation": "Para la ubicación de lugares fijos se usa ficar: a praia fica perto do hotel.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "Para lugares fijos como una playa se prefiere ficar en vez de estar."
+          },
+          {
+            "answer": "é",
+            "why": "Ser no se usa para expresar la ubicación de un lugar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de estar.",
+        "sentence": "Juan Martín diz: 'Nós ___ no hostel, mas vamos sair agora.'",
+        "hint": "(estar)",
+        "answers": [
+          "estamos"
+        ],
+        "explanation": "Nós se conjuga con estar como estamos.",
+        "wrongAnswers": [
+          {
+            "answer": "somos",
+            "why": "La ubicación temporal se expresa con estar, no con ser."
+          },
+          {
+            "answer": "está",
+            "why": "'Está' es singular (ele/ela/você), pero nós necesita estamos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de estar.",
+        "sentence": "Carlos e Bia ___ na praia agora.",
+        "hint": "(estar)",
+        "answers": [
+          "estão"
+        ],
+        "explanation": "Eles/elas se conjuga con estar como estão.",
+        "wrongAnswers": [
+          {
+            "answer": "são",
+            "why": "La ubicación se expresa con estar, no con ser, aunque sean varias personas."
+          },
+          {
+            "answer": "está",
+            "why": "'Está' es singular, pero Carlos e Bia son dos personas (plural)."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma informal de estar.",
+        "sentence": "No bilhete, Bia escreve: 'Oi, eu ___ muito feliz hoje!'",
+        "hint": "(estar, forma informal)",
+        "answers": [
+          "tô",
+          "estou"
+        ],
+        "explanation": "'Tô' es la contracción informal de 'estou', usada con eu en el habla cotidiana para expresar un estado pasajero como la felicidad.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "La felicidad es un estado pasajero, se expresa con estar, no con ser."
+          },
+          {
+            "answer": "tá",
+            "why": "'Tá' es la forma informal para ele/ela/você, no para eu; con eu se usa tô."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de ficar (lugar fijo).",
+        "sentence": "O Rio de Janeiro ___ no Brasil, perto do mar.",
+        "hint": "(ficar - lugar fijo)",
+        "answers": [
+          "fica"
+        ],
+        "explanation": "Para la ubicación de lugares fijos como ciudades se usa ficar: o Rio de Janeiro fica no Brasil.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "Para ciudades y lugares fijos se prefiere ficar en vez de estar."
+          },
+          {
+            "answer": "é",
+            "why": "Ser no se usa para expresar la ubicación geográfica de una ciudad."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu estou muito cansado hoje.",
+        "alternatives": [
+          "Hoje eu estou muito cansado."
+        ],
+        "translation": "Hoy estoy muy cansado.",
+        "explanation": "Eu se conjuga con estar como estou, usado para expresar un estado pasajero.",
+        "tokens": [
+          "Eu",
+          "estou",
+          "cansado",
+          "muito",
+          "hoje"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Onde você está agora, Bia?",
+        "alternatives": [],
+        "translation": "¿Dónde estás ahora, Bia?",
+        "explanation": "Você se conjuga con estar como está, usado para preguntar por la ubicación de alguien.",
+        "tokens": [
+          "você",
+          "Onde",
+          "está",
+          "Bia",
+          "agora,"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós estamos no hostel perto da praia.",
+        "alternatives": [],
+        "translation": "Nosotros estamos en el hostel cerca de la playa.",
+        "explanation": "Nós se conjuga con estar como estamos, usado para expresar ubicación temporal.",
+        "tokens": [
+          "Nós",
+          "perto",
+          "da",
+          "estamos",
+          "praia",
+          "no",
+          "hostel"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Carlos e Bia estão na praia agora.",
+        "alternatives": [],
+        "translation": "Carlos y Bia están en la playa ahora.",
+        "explanation": "Eles/elas se conjuga con estar como estão, usado para la ubicación de varias personas.",
+        "tokens": [
+          "praia",
+          "Carlos",
+          "agora",
+          "estão",
+          "e",
+          "na",
+          "Bia"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O Pelourinho fica no centro histórico de Salvador.",
+        "alternatives": [],
+        "translation": "El Pelourinho queda en el centro histórico de Salvador.",
+        "explanation": "Para lugares fijos como un barrio se usa ficar en vez de estar.",
+        "tokens": [
+          "de",
+          "O",
+          "centro",
+          "no",
+          "histórico",
+          "Pelourinho",
+          "Salvador",
+          "fica"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación (ser/estar).",
+        "sentence": "Eu sou cansado depois da viagem.",
+        "answers": [
+          "Eu estou cansado depois da viagem."
+        ],
+        "explanation": "Un estado pasajero como el cansancio se expresa con estar: eu estou cansado.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu é cansado depois da viagem.",
+            "why": "El cansancio se expresa con estar, no con ser; además 'é' no corresponde a eu."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de ubicación (estar/ficar).",
+        "sentence": "O Rio de Janeiro está no Brasil.",
+        "answers": [
+          "O Rio de Janeiro fica no Brasil."
+        ],
+        "explanation": "Para ciudades y lugares fijos se prefiere ficar en vez de estar: o Rio de Janeiro fica no Brasil.",
+        "wrongAnswers": [
+          {
+            "answer": "O Rio de Janeiro é no Brasil.",
+            "why": "Ser no se usa para expresar ubicación; para lugares fijos se usa ficar, no ser."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación del verbo estar.",
+        "sentence": "Nós está no hostel agora.",
+        "answers": [
+          "Nós estamos no hostel agora."
+        ],
+        "explanation": "Nós se conjuga con estar como estamos, no está.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós somos no hostel agora.",
+            "why": "La ubicación temporal se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación (ser/estar).",
+        "sentence": "Carlos e Bia é na praia agora.",
+        "answers": [
+          "Carlos e Bia estão na praia agora."
+        ],
+        "explanation": "Eles/elas se conjuga con estar como estão, usado para la ubicación.",
+        "wrongAnswers": [
+          {
+            "answer": "Carlos e Bia são na praia agora.",
+            "why": "La ubicación se expresa con estar, no con ser, aunque sean varias personas."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación del verbo estar.",
+        "sentence": "Juan Martín pergunta: 'Bia, você sou perto do hotel?'",
+        "answers": [
+          "Juan Martín pergunta: 'Bia, você está perto do hotel?'"
+        ],
+        "explanation": "Você se conjuga con estar como está, usado para preguntar por la ubicación.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan Martín pergunta: 'Bia, você somos perto do hotel?'",
+            "why": "Você se conjuga en tercera persona del singular, no como nós; además se necesita estar, no ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Estoy muy cansado después del viaje.",
+        "answers": [
+          "Eu estou muito cansado depois da viagem.",
+          "Estou muito cansado depois da viagem."
+        ],
+        "explanation": "Eu se conjuga con estar como estou, usado para expresar estados temporales.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou muito cansado depois da viagem.",
+            "why": "El cansancio es un estado pasajero y se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Dónde estás ahora, Bia?",
+        "answers": [
+          "Onde você está agora, Bia?",
+          "Onde você tá agora, Bia?"
+        ],
+        "explanation": "Você se conjuga con estar como está (o informalmente tá), usado para preguntar ubicación.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde você é agora, Bia?",
+            "why": "La ubicación se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Nosotros estamos en el hostel, cerca de la playa.",
+        "answers": [
+          "Nós estamos no hostel, perto da praia.",
+          "A gente está no hostel, perto da praia."
+        ],
+        "explanation": "Nós se conjuga con estar como estamos; a gente (equivalente informal) usa está.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós somos no hostel, perto da praia.",
+            "why": "La ubicación temporal se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Carlos y Bia están en la playa ahora.",
+        "answers": [
+          "Carlos e Bia estão na praia agora."
+        ],
+        "explanation": "Eles/elas se conjuga con estar como estão, usado para expresar ubicación.",
+        "wrongAnswers": [
+          {
+            "answer": "Carlos e Bia são na praia agora.",
+            "why": "La ubicación se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "La playa queda cerca del hotel.",
+        "answers": [
+          "A praia fica perto do hotel."
+        ],
+        "explanation": "Para la ubicación de lugares fijos se usa ficar: a praia fica perto do hotel.",
+        "wrongAnswers": [
+          {
+            "answer": "A praia está perto do hotel.",
+            "why": "Para lugares fijos como una playa se prefiere ficar, no estar."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Río de Janeiro queda en Brasil, cerca del mar.",
+        "answers": [
+          "O Rio de Janeiro fica no Brasil, perto do mar."
+        ],
+        "explanation": "Para la ubicación de lugares fijos como ciudades se usa ficar.",
+        "wrongAnswers": [
+          {
+            "answer": "O Rio de Janeiro está no Brasil, perto do mar.",
+            "why": "Para ciudades y lugares fijos se usa ficar, no estar."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Lucas, eu estou muito cansado hoje.",
+        "alternatives": [
+          "Lucas, eu tô muito cansado hoje."
+        ],
+        "translation": "Lucas, hoy estoy muy cansado.",
+        "explanation": "\"Estou\" se pronuncia casi como \"stou\" y en el habla rápida se acorta a \"tô\"; cuidado con confundirlo con \"sou\" (de ser), que indica una característica permanente."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Onde vocês estão agora, no centro?",
+        "alternatives": [
+          "Onde vocês tão agora, no centro?"
+        ],
+        "translation": "¿Dónde están ustedes ahora, en el centro?",
+        "explanation": "El final nasal de \"estão\" puede confundirse con \"são\" (de ser); hay que guiarse por el sentido de la frase, que pregunta por una ubicación momentánea."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Minha amiga está doente, por isso não vem.",
+        "alternatives": [
+          "Minha amiga tá doente, por isso não vem."
+        ],
+        "translation": "Mi amiga está enferma, por eso no viene.",
+        "explanation": "\"Está\" se reduce a \"tá\" en el habla coloquial; no se debe escribir con ser (\"é doente\"), porque se trata de un estado pasajero."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "O museu fica perto do hotel, mas agora estamos longe dele.",
+        "alternatives": [],
+        "translation": "El museo queda cerca del hotel, pero ahora estamos lejos de él.",
+        "explanation": "Para la ubicación fija de un lugar (el museo) se usa \"fica\", mientras que para la ubicación momentánea de las personas se usa \"estamos\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál de las dos se dijo.",
+        "pair": [
+          "lá",
+          "lã"
+        ],
+        "target": 1,
+        "meanings": [
+          "allí",
+          "lana"
+        ],
+        "explanation": "La vocal nasal \"ã\" se pronuncia dejando salir el aire por la nariz, mientras que \"á\" es una vocal abierta sin ese sonido nasal; en español no existe esta diferencia."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál de las dos se dijo.",
+        "pair": [
+          "avô",
+          "avó"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "El acento agudo (ó) marca una \"o\" abierta como en \"bola\", y el circunflejo (ô) marca una \"o\" cerrada como en \"bolso\"; en español ambas se pronuncian igual, así que hay que prestar atención al timbre."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál de las dos se dijo.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 0,
+        "meanings": [
+          "caza (acción de cazar)",
+          "casa (vivienda)"
+        ],
+        "explanation": "La \"ç\" suena como una \"s\" sorda (como en \"sapo\"), mientras que la \"s\" entre vocales suena como \"z\" (un zumbido); en español ambas letras sonarían igual."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "Eu estou com fome, vamos comer alguma coisa?",
+        "translation": "Tengo hambre, ¿vamos a comer algo?",
+        "tip": "Uní \"estou com\" como si fuera una sola palabra, algo como \"stôcom\", sin pausas entre las dos."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "A gente está muito feliz com a viagem.",
+        "translation": "Estamos muy felices con el viaje.",
+        "tip": "Encadená \"está muito\" sin cortar: la vocal final de \"está\" se pega a la inicial de \"muito\", como \"tá-muito\"."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "Vocês estão prontos para sair agora?",
+        "translation": "¿Ustedes están listos para salir ahora?",
+        "tip": "Alargá un poco la nasal final de \"estão\", como si terminara en un \"ão\" cantado, sin pronunciar una \"n\" fuerte."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas según lo que dicen los personajes.",
+        "situation": "En la recepción de un hotel en Río de Janeiro, un turista argentino (Martín) llega con su esposa y habla con la recepcionista (Fernanda).",
+        "lines": [
+          {
+            "speaker": "Fernanda",
+            "text": "Boa tarde! Bem-vindo ao Hotel Copacabana. Como você está?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "Oi! Eu estou bem, mas estou um pouco cansado da viagem."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Entendo. O senhor está sozinho ou com a família?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "Estou com minha esposa. Ela está no carro, estacionando."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Perfeito. O quarto de vocês fica no quinto andar, com vista para o mar."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Ótimo! E a praia fica perto do hotel?"
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Sim, a praia fica a cinco minutos a pé daqui."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Que bom! Minha esposa está muito feliz, ela adora praia."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "Según el diálogo, ¿cómo se siente Martín cuando llega al hotel?",
+            "options": [
+              "Está un poco cansado del viaje",
+              "Está feliz y descansado",
+              "Está nervioso por el viaje",
+              "Está enfermo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Martín usa 'estou um pouco cansado' porque el cansancio es un estado pasajero, y eso se expresa con el verbo estar."
+          },
+          {
+            "prompt": "¿Dónde está la esposa de Martín mientras él habla con la recepcionista?",
+            "options": [
+              "Está en la recepción",
+              "Está en la habitación",
+              "Está en el auto, estacionando",
+              "Está en la playa"
+            ],
+            "correctIndex": 2,
+            "explanation": "Martín dice 'Ela está no carro, estacionando', indicando la ubicación momentanea de una persona, que se expresa con estar."
+          },
+          {
+            "prompt": "¿En qué piso fica (queda) el cuarto de Martín?",
+            "options": [
+              "En el quinto piso",
+              "En el primer piso",
+              "En el décimo piso",
+              "En el segundo piso"
+            ],
+            "correctIndex": 0,
+            "explanation": "La recepcionista dice 'O quarto de vocês fica no quinto andar'; para la ubicación de lugares fijos como habitaciones o edificios se usa ficar."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la llamada telefónica y respondé las preguntas según lo que dicen las amigas.",
+        "situation": "Marina, desde Buenos Aires, llama por teléfono a su amiga Juliana, que vive y trabaja en São Paulo, para saber cómo está ella y su marido Pedro.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Alô, Juliana! Como você está?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Oi, Marina! Eu estou bem, mas estou com um pouco de dor de cabeça."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Ah, que pena! Você está em casa agora?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, eu estou no trabalho. Meu escritório fica no centro de São Paulo."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Entendo. E o Pedro, onde ele está?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Ele está em casa, descansando. Ele está gripado."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Puxa, espero que ele fique melhor. E vocês estão com tempo para viajar este mês?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, estamos muito ocupados. Mas no mês que vem estamos de férias!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo se siente Juliana cuando atiende la llamada?",
+            "options": [
+              "Está con dolor de cabeza",
+              "Está muy feliz",
+              "Está enojada",
+              "Está de vacaciones"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana dice 'estou com um pouco de dor de cabeça', un estado físico pasajero que se expresa con estar."
+          },
+          {
+            "prompt": "¿Dónde fica (queda) el escritorio de Juliana?",
+            "options": [
+              "En el centro de São Paulo",
+              "En Buenos Aires",
+              "En su casa",
+              "En la playa"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana dice 'Meu escritório fica no centro de São Paulo'; para la ubicación de un lugar fijo como una oficina se usa ficar, no estar."
+          },
+          {
+            "prompt": "¿Dónde está Pedro y cómo se encuentra?",
+            "options": [
+              "Está en casa, gripado",
+              "Está en el centro, cansado",
+              "Está de viaje, feliz",
+              "Está en el trabajo, muy ocupado"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana explica 'Ele está em casa, descansando. Ele está gripado', describiendo tanto la ubicación como el estado de salud pasajero con el verbo estar."
+          }
+        ]
+      }
     ]
   }
 }

@@ -9,6 +9,18 @@ export interface Release {
 
 export const CHANGELOG: Release[] = [
   {
+    version: '3.1.0',
+    date: '2026-10-26',
+    title: 'El día con estructura y Claude que vuelve a crear los ejercicios',
+    items: [
+      'Arreglado: Claude no creaba los ejercicios de los tópicos sin banco (como los de portugués) y la práctica no abría.',
+      'El día empieza con un calentamiento: hasta 5 errores del cuaderno que tocan hoy.',
+      'Microlección antes de practicar: la regla, ejemplos para escuchar, los errores típicos de hispanohablantes y una pregunta para comprobar que se entendió.',
+      'Al terminar, el cierre te dice qué trabajaste, qué pasó al cuaderno y cuántos repasos vuelven mañana.',
+      'El primer tópico de portugués trae sus ejercicios listos: la práctica abre al instante.'
+    ]
+  },
+  {
     version: '3.0.0',
     date: '2026-10-26',
     title: 'Más rápida, con voz incluida y ejercicios para escuchar y hablar',

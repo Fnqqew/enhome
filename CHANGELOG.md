@@ -2,6 +2,25 @@
 
 Todas las versiones de Enhome. Los instaladores están en las [versiones publicadas](https://github.com/Fnqqew/enhome/releases) del repositorio.
 
+## 3.1.0 · 2026-10-26
+
+El día con estructura y Claude que vuelve a crear los ejercicios.
+
+### Arreglos
+
+- **Claude no creaba los ejercicios** de los tópicos que todavía no tienen banco (por ejemplo, en portugués) y la práctica no abría. Claude omitía campos o devolvía la lista sin el formato pedido. Ahora cada pedido lleva los campos exactos de cada formato, se acepta la lista sola y cada ejercicio se valida por su cuenta: uno mal armado se descarta en vez de tirar abajo la práctica entera. Lo mismo en los exámenes.
+
+### El día de práctica
+
+- **Calentamiento:** si hay errores del cuaderno para hoy, el día empieza con hasta 5 (se puede saltar).
+- **Microlección:** qué se aprende, la regla, ejemplos con un botón para escuchar cada uno, los errores típicos de hispanohablantes y una pregunta para comprobar que se entendió.
+- **Cierre:** qué trabajaste, cuánto pasó al cuaderno, cuántos repasos vuelven mañana y un juego rápido para la fluidez.
+- Arriba de Práctica se ve en qué parte del día estás.
+
+### Contenido
+
+- Bancos de ejercicios para el primer tópico de portugués: la práctica abre al instante.
+
 ## 3.0.0 · 2026-10-26
 
 Más rápida, con voz incluida y ejercicios para escuchar y hablar todos los días.
