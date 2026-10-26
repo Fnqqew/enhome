@@ -122,3 +122,97 @@ h3.exercise-heading {
 .transcript .chat {
   margin-top: 0.5rem;
 }
+
+/* El recorrido del día y la microlección */
+
+.day-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.day-path li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.day-path-dot {
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.day-path li.done .day-path-dot {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.day-path li.current {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.day-path li.current .day-path-dot {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--surface);
+}
+
+.lesson-examples li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  border-color: var(--accent);
+}
+
+.lesson-contrast ul,
+.day-close {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.lesson-check {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-hover);
+}
+
+.ok-text {
+  color: var(--accent);
+}

@@ -207,6 +207,11 @@ export type PracticeView =
       goal: string
       keyPoints: string[]
       examples: { target: string; es: string }[]
+      // Los errores típicos de hispanohablantes en el subtema: el contraste con el español y la pregunta
+      // para comprobar que se entendió, en la microlección.
+      commonMistakes: { wrong: string; right: string; why: string }[]
+      // Cuántos errores del cuaderno tocan hoy: con alguno, el día arranca con un calentamiento.
+      warmUp: number
     }
   | { status: 'session'; session: SessionView }
 
@@ -216,4 +221,8 @@ export interface PracticeResult {
   correct: number
   total: number
   averageScore: number
+  // Para el cierre del día: qué se trabajó, cuánto pasó al cuaderno y cuánto vuelve mañana.
+  subtopicTitle: string
+  newMistakes: number
+  dueTomorrow: number
 }

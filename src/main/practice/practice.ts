@@ -37,7 +37,8 @@ import type { Difficulty, PoolGenerator } from './generation'
 import { gradeAuto } from './grading'
 import { quantity, usedHints } from '../rewards/inventory'
 import { recordMistake } from '../review/notebook'
-import { toLocalDate } from '../../shared/dates'
+import { addDays, toLocalDate } from '../../shared/dates'
+import { countCards } from '../review/cards'
 
 export class PracticeError extends Error {}
 
@@ -158,7 +159,9 @@ export class Practice {
       subtopicTitle: subtopic.title,
       goal: subtopic.goal,
       keyPoints: subtopic.keyPoints,
-      examples: subtopic.examples
+      examples: subtopic.examples,
+      commonMistakes: subtopic.commonMistakes,
+      warmUp: countCards(this.db, ['mistake'], 'due_on <= ?', today)
     }
   }
 
@@ -373,7 +376,10 @@ export class Practice {
       unitIndex: view.unitIndex,
       correct: feedbacks.filter((f) => f.correct).length,
       total: feedbacks.length,
-      averageScore: Math.round((feedbacks.reduce((sum, f) => sum + f.score, 0) / feedbacks.length) * 10) / 10
+      averageScore: Math.round((feedbacks.reduce((sum, f) => sum + f.score, 0) / feedbacks.length) * 10) / 10,
+      subtopicTitle: view.subtopicTitle,
+      newMistakes: feedbacks.filter((f) => !f.correct).length,
+      dueTomorrow: countCards(this.db, ['mistake', 'word', 'phrase', 'sentence'], 'due_on <= ?', addDays(today, 1))
     }
   }
 

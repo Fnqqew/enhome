@@ -56,8 +56,8 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 
 ## Actividades y ejercicios
 
-- [ ] 20 Cada día con una estructura que funciona
-- [ ] 21 Microlección antes de practicar
+- [x] 20 Cada día con una estructura que funciona
+- [x] 21 Microlección antes de practicar
 - [~] 22 Recordar en vez de releer
 - [x] 23 Corrección que hace pensar
 - [x] 24 Repaso con FSRS

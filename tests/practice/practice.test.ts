@@ -9,6 +9,7 @@ import type { PoolGenerator } from '../../src/main/practice/generation'
 import { Practice } from '../../src/main/practice/practice'
 import { addDays } from '../../src/shared/dates'
 import type { ExerciseAnswer, ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
+import { emptyAnswer } from '../../src/shared/exercise-types'
 import { rightAnswer, sample } from '../helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
@@ -449,5 +450,28 @@ describe('práctica que empieza antes de que llegue lo de escuchar', () => {
     expect(types.some((t) => ['dictation', 'listening', 'minimal_pair'].includes(t))).toBe(true)
     // El primero sigue en su lugar: es el que el alumno tiene a la vista.
     expect(after.exercises[0].id).toBe(s.exercises[0].id)
+  })
+})
+
+describe('el recorrido del día', () => {
+  it('la microlección trae los errores típicos y cuántos repasos tocan para el calentamiento', () => {
+    const view = practice.getView(MON)
+    if (view.status !== 'ready') throw new Error('se esperaba la microlección')
+    expect(view.commonMistakes.length).toBeGreaterThan(0)
+    expect(view.warmUp).toBe(0)
+  })
+
+  it('el cierre dice qué se trabajó, cuánto pasó al cuaderno y cuánto vuelve mañana', async () => {
+    const s = session(await practice.start(MON))
+    const [first, ...rest] = s.exercises
+    // La primera, en blanco dos veces: queda mal y pasa al cuaderno.
+    const blank = (): ExerciseAnswer => emptyAnswer(stored(first.id))
+    await practice.answer(first.id, blank(), MON)
+    if (!session(practice.getView(MON)).exercises.find((e) => e.id === first.id)!.answer) await practice.answer(first.id, blank(), MON)
+    for (const e of rest) await practice.answer(e.id, rightAnswer(stored(e.id)))
+    await practice.settled()
+    for (const e of session(practice.getView(MON)).exercises.filter((x) => x.repeat)) await practice.answer(e.id, rightAnswer(stored(e.id)))
+    const result = practice.finish(s.id, MON)
+    expect(result).toMatchObject({ subtopicTitle: 'Pronombres personales', newMistakes: 1, dueTomorrow: 1 })
   })
 })
