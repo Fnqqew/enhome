@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useCourse } from '../hooks/useCourse'
 import { PartResult, partClass, resultClass, useParts, type ItemProps } from './common'
 
-export function Translation({ content, answer, feedback, onChange }: ItemProps<'translation'>): React.JSX.Element {
+export function Translation({ content, answer, feedback, locked, onChange }: ItemProps<'translation'>): React.JSX.Element {
   const lang = useCourse().name
   const [text, setText] = useState(answer?.type === 'translation' ? answer.text : '')
   return (
@@ -11,7 +11,7 @@ export function Translation({ content, answer, feedback, onChange }: ItemProps<'
       <input
         className={`text-answer${resultClass(feedback)}`}
         value={text}
-        disabled={feedback !== null}
+        disabled={feedback !== null || !!locked}
         placeholder={`Escribí la traducción en ${lang}`}
         autoFocus
         aria-label="Traducción"
@@ -24,7 +24,7 @@ export function Translation({ content, answer, feedback, onChange }: ItemProps<'
   )
 }
 
-export function TranslationSet({ content, answer, feedback, onChange }: ItemProps<'translation_set'>): React.JSX.Element {
+export function TranslationSet({ content, answer, feedback, locked, onChange }: ItemProps<'translation_set'>): React.JSX.Element {
   const lang = useCourse().name
   const initial = answer?.type === 'translation_set' ? answer.texts : null
   const [texts, update] = useParts(content.sentences.length, initial, 'translation_set', onChange)
@@ -39,7 +39,7 @@ export function TranslationSet({ content, answer, feedback, onChange }: ItemProp
             <input
               className={`text-answer${partClass(feedback, i)}`}
               value={texts[i]}
-              disabled={feedback !== null}
+              disabled={feedback !== null || !!locked}
               placeholder={`En ${lang}…`}
               autoFocus={i === 0}
               aria-label={`Traducción ${i + 1}`}

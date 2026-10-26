@@ -1,6 +1,7 @@
 // Practicar: la práctica del día, el repaso de errores, los comodines, los juegos y la charla.
 
 import { z } from 'zod'
+import { saveTiming } from '../db/timings-repo'
 import { prewarmGrading } from '../practice/ai-grading'
 import { MAX_CHAT_MESSAGE } from '../../shared/chat'
 import { exerciseAnswerSchema } from '../../shared/exercises'
@@ -12,12 +13,22 @@ export function registerPractice(ctx: IpcContext): void {
   const { activeLanguage, services, today } = ctx
 
   handle(IPC.practiceGet, () => services().practice.getView(today()))
+  // Lo que tarda la app en abrir la práctica y en dejar seguir después de responder (metas en Acerca de).
+  const timed = async <T>(label: string, run: () => T | Promise<T>): Promise<T> => {
+    const started = performance.now()
+    const result = await run()
+    saveTiming(ctx.db, { label, model: 'app', effort: null, ms: performance.now() - started, attempts: 1, ok: true })
+    return result
+  }
   handle(IPC.practiceStart, () => {
     prewarmGrading(activeLanguage())
-    return services().practice.start(today())
+    return timed('práctica · abrir', () => services().practice.start(today()))
   })
-  handle(IPC.practiceAnswer, (exerciseId, answer) => services().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today()))
+  handle(IPC.practiceAnswer, (exerciseId, answer) =>
+    timed('veredicto', () => services().practice.answer(id.parse(exerciseId), exerciseAnswerSchema.parse(answer), today()))
+  )
   handle(IPC.practiceSkip, (exerciseId) => services().practice.skip(id.parse(exerciseId)))
+  handle(IPC.practiceRegrade, (exerciseId) => services().practice.regrade(id.parse(exerciseId), today()))
   handle(IPC.practiceRate, (exerciseId, value) => services().practice.rate(id.parse(exerciseId), rating.parse(value)))
   handle(IPC.practiceFinish, (sessionId) => services().practice.finish(id.parse(sessionId), today()))
 

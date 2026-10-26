@@ -22,7 +22,7 @@ import type { ExerciseAnswer, ExerciseFeedback, OpenExercise } from '../../share
 import { transaction, type Db } from '../db/database'
 import type { AnswerTag } from '../engine/planning'
 import type { Progression } from '../engine/progression'
-import type { OpenAnswerGrader } from '../practice/ai-grading'
+import type { OpenAnswerBatchGrader, OpenAnswerGrader } from '../practice/ai-grading'
 import { toPublicExercise } from '../practice/exercises'
 import { emptyAnswer, gradeAuto } from '../../shared/exercise-types'
 import { secondChanceFor } from '../rewards/inventory'
@@ -71,7 +71,9 @@ export class Exams {
     private readonly progression: Progression,
     private readonly generateExam: ExamGenerator,
     private readonly gradeOpen: OpenAnswerGrader,
-    private readonly now: () => number = Date.now
+    private readonly now: () => number = Date.now,
+    // Corrige varias respuestas abiertas juntas (por defecto, de a una con gradeOpen).
+    private readonly gradeBatch: OpenAnswerBatchGrader = (requests) => Promise.all(requests.map((r) => this.gradeOpen(r)))
   ) {
     this.topics = new Map(curriculum.map((t) => [t.id, t]))
   }
@@ -280,25 +282,33 @@ export class Exams {
     const questions = this.questions(row)
     const saved = this.answerRows(row.id)
 
-    const graded = await Promise.all(
-      questions.map(async (question, i): Promise<{ answer: ExerciseAnswer | null; feedback: ExerciseFeedback }> => {
-        const stored = saved.get(i)?.answer
-        const answer = stored ? (JSON.parse(stored) as ExerciseAnswer) : null
-        const auto = gradeAuto(question.exercise, answer ?? emptyAnswer(question.exercise))
-        if (auto.kind === 'graded') return { answer, feedback: auto.feedback }
+    // Lo que se corrige solo, al instante; lo abierto, en tanda con Claude.
+    const graded: { answer: ExerciseAnswer | null; feedback: ExerciseFeedback | null }[] = questions.map((question, i) => {
+      const stored = saved.get(i)?.answer
+      const answer = stored ? (JSON.parse(stored) as ExerciseAnswer) : null
+      const auto = gradeAuto(question.exercise, answer ?? emptyAnswer(question.exercise))
+      return { answer, feedback: auto.kind === 'graded' ? auto.feedback : null }
+    })
+    const open = graded.flatMap((g, i) => (g.feedback ? [] : [i]))
+    const reviews = await this.gradeBatch(
+      open.map((i) => {
+        const question = questions[i]
+        const { answer } = graded[i]
         const { topic, subtopic } = this.content(question.topicId, question.subtopicId)
         const answers = answer && 'text' in answer ? [answer.text] : answer && 'texts' in answer ? answer.texts : []
-        return { answer, feedback: await this.gradeOpen({ topic, subtopic, exercise: question.exercise as OpenExercise, answers }) }
+        return { topic, subtopic, exercise: question.exercise as OpenExercise, answers }
       })
     )
+    open.forEach((i, k) => (graded[i].feedback = reviews[k]))
+    const results = graded as { answer: ExerciseAnswer | null; feedback: ExerciseFeedback }[]
 
     // Si mientras se corregía el examen cambió de estado, no se vuelve a registrar.
     const current = this.exam(row.id)
     if (current.status === 'submitted') return this.resultView(current, null)
     if (current.status === 'voided') throw new ExamError(this.voidedMessage(current))
 
-    const grade = round1(graded.reduce((sum, g) => sum + g.feedback.score, 0) / Math.max(graded.length, 1))
-    const tags: AnswerTag[] = questions.map((q, i) => ({ topicId: q.topicId, subtopicId: q.subtopicId, correct: graded[i].feedback.correct }))
+    const grade = round1(results.reduce((sum, g) => sum + g.feedback.score, 0) / Math.max(results.length, 1))
+    const tags: AnswerTag[] = questions.map((q, i) => ({ topicId: q.topicId, subtopicId: q.subtopicId, correct: results[i].feedback.correct }))
 
     transaction(this.db, () => {
       const upsert = this.db.prepare(
@@ -306,7 +316,7 @@ export class Exams {
          ON CONFLICT (exam_id, question_index) DO UPDATE SET correct = excluded.correct, score = excluded.score, feedback = excluded.feedback`
       )
       questions.forEach((q, i) => {
-        const { answer, feedback } = graded[i]
+        const { answer, feedback } = results[i]
         upsert.run(
           row.id,
           i,

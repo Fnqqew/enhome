@@ -129,6 +129,10 @@ export interface SessionExerciseView {
   rating: number | null
   // Pista revelada con un comodín, si se usó.
   hint: string | null
+  // Respondido y esperando la corrección de Claude (se puede seguir con el próximo mientras tanto).
+  grading: boolean
+  // Si la corrección de Claude falló, por qué; con «Reintentar» se vuelve a pedir.
+  gradingError: string | null
 }
 
 export interface SessionView {

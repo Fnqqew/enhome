@@ -10,6 +10,8 @@ export interface InputProps {
   content: PublicExercise
   answer: ExerciseAnswer | null
   feedback: ExerciseFeedback | null
+  // Ya respondido y esperando la corrección: se ve pero no se edita.
+  locked?: boolean
   // null mientras la respuesta no está completa.
   onChange: (answer: ExerciseAnswer | null) => void
 }

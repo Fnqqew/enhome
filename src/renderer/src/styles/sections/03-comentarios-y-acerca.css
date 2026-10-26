@@ -123,3 +123,35 @@
   border-radius: var(--radius-sm);
   background: var(--surface-hover);
 }
+
+/* Metas de tiempo: tres tarjetas chicas con lo medido y la meta. */
+.time-goals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: var(--space-2);
+}
+
+.time-goal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--surface-hover);
+}
+
+.time-goal strong {
+  font-family: var(--font-numbers);
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.time-goal .badge {
+  align-self: flex-start;
+}
+
+.badge.warn {
+  border-color: transparent;
+  background: color-mix(in srgb, var(--danger) 14%, transparent);
+  color: var(--danger);
+}

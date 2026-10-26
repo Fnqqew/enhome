@@ -62,6 +62,8 @@ export const IPC = {
   practiceStart: 'practice:start',
   practiceAnswer: 'practice:answer',
   practiceSkip: 'practice:skip',
+  practiceRegrade: 'practice:regrade',
+  practiceGraded: 'practice:graded',
   practiceRate: 'practice:rate',
   practiceFinish: 'practice:finish',
   summariesIndex: 'summaries:index',
@@ -145,6 +147,13 @@ export type ClaudeStatus =
   | { state: 'error'; message: string }
 
 // Tiempos de Claude por tarea (práctica, corrección, examen…), en milisegundos.
+// Metas de tiempo del plan 3.0: lo que mide la app y cuánto debería tardar como mucho.
+export const TIME_GOALS = [
+  { label: 'práctica · abrir', title: 'Abrir la práctica', goalMs: 1_000 },
+  { label: 'veredicto', title: 'Responder y seguir', goalMs: 200 },
+  { label: 'corrección', title: 'Explicación de Claude', goalMs: 8_000 }
+] as const
+
 export interface ClaudeTimingStat {
   label: string
   calls: number
@@ -209,6 +218,10 @@ export interface Api {
   startPractice(): Promise<PracticeView>
   answerExercise(exerciseId: number, answer: ExerciseAnswer): Promise<PracticeView>
   skipExercise(exerciseId: number): Promise<PracticeView>
+  // Vuelve a pedir la corrección de Claude que falló.
+  regradeExercise(exerciseId: number): Promise<PracticeView>
+  // Avisa cuando llega una corrección de Claude (para actualizar la práctica).
+  onPracticeGraded(callback: () => void): () => void
   rateExercise(exerciseId: number, rating: PracticeRating): Promise<PracticeView>
   finishPractice(sessionId: number): Promise<PracticeResult>
   getSummariesIndex(): Promise<SummariesIndex>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { AppInfo } from '@shared/progress'
-import type { ClaudeStatus, ClaudeTimingStat } from '@shared/ipc'
+import { TIME_GOALS, type ClaudeStatus, type ClaudeTimingStat } from '@shared/ipc'
 import { EXERCISE_TYPE_LABELS, EXERCISE_TYPES } from '@shared/exercises'
 import { SUMMARY_TYPE_IDS } from '@shared/summaries'
 import { STYLES } from '@shared/settings'
@@ -101,6 +101,7 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
           {status.subscription ? ` · plan ${status.subscription}` : ''}. La app usa Claude Code instalado en esta computadora con tu suscripción: no
           hay servidores propios ni API paga, y nada de lo que escribís sale de acá salvo lo que se le consulta a Claude.
         </p>
+        {timings.length > 0 && <TimeGoals timings={timings} />}
         {timings.length > 0 ? (
           <div className="table-scroll">
             <table className="history">
@@ -166,6 +167,28 @@ export default function About({ status, navigate }: { status: Extract<ClaudeStat
         {openError && <p className="error small">{openError}</p>}
       </section>
     </>
+  )
+}
+
+// Las metas de tiempo: lo medido en los últimos usos contra lo que debería tardar como mucho.
+function TimeGoals({ timings }: { timings: ClaudeTimingStat[] }): React.JSX.Element {
+  return (
+    <div className="time-goals">
+      {TIME_GOALS.map((goal) => {
+        const stat = timings.find((t) => t.label === goal.label)
+        const measured = stat ? stat.recentMs : null
+        const met = measured !== null && measured <= goal.goalMs
+        return (
+          <div key={goal.label} className="time-goal">
+            <span className="muted small">{goal.title}</span>
+            <strong>{measured === null ? '—' : goal.goalMs < 1000 ? `${Math.round(measured)} ms` : seconds(measured)}</strong>
+            <span className={`badge${measured === null ? '' : met ? ' ok' : ' warn'}`}>
+              meta {goal.goalMs < 1000 ? `${goal.goalMs} ms` : seconds(goal.goalMs)}
+            </span>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 

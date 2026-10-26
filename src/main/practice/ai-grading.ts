@@ -95,6 +95,13 @@ export async function gradeOpenAnswer(request: OpenAnswerRequest, model = GRADIN
     prompt: buildReviewPrompt(request),
     schema: reviewSchema
   })
+  return toFeedback(request, review)
+}
+
+type Review = z.infer<typeof reviewSchema>
+
+// De la corrección de Claude a la devolución que ve el alumno.
+function toFeedback(request: OpenAnswerRequest, review: Review): ExerciseFeedback {
   const { exercise, answers } = request
   const sources = partSources(exercise)
 
@@ -120,6 +127,41 @@ export async function gradeOpenAnswer(request: OpenAnswerRequest, model = GRADIN
     parts,
     review: { correctedText: review.correctedText, comments: review.comments, mistakes: review.mistakes }
   }
+}
+
+// Varias respuestas abiertas (las de un examen) en pocos pedidos: de a BATCH_SIZE por pedido y en
+// paralelo. Son menos llamadas y, según Karpo y Chernodub (2026), los modelos sobrecorrigen menos
+// cuando ven varias juntas. Si una tanda falla o vuelve incompleta, esas se corrigen de a una.
+const BATCH_SIZE = 6
+
+export type OpenAnswerBatchGrader = (requests: OpenAnswerRequest[]) => Promise<ExerciseFeedback[]>
+
+export async function gradeOpenBatch(requests: OpenAnswerRequest[]): Promise<ExerciseFeedback[]> {
+  if (requests.length <= 1) return Promise.all(requests.map((r) => gradeOpenAnswer(r)))
+  const chunks = Array.from({ length: Math.ceil(requests.length / BATCH_SIZE) }, (_, i) => requests.slice(i * BATCH_SIZE, (i + 1) * BATCH_SIZE))
+  const graded = await Promise.all(
+    chunks.map(async (chunk) => {
+      if (chunk.length === 1) return [await gradeOpenAnswer(chunk[0])]
+      try {
+        const { results } = await askClaude({
+          label: 'corrección · tanda',
+          effort: GRADING_EFFORT,
+          systemPrompt: systemPrompt(chunk[0].topic.language),
+          prompt: `Corregí cada uno de estos ${chunk.length} ejercicios por separado, como si fueran pedidos distintos, y devolvé results con una corrección por ejercicio, en el mismo orden.
+
+${chunk.map((r, i) => `### Ejercicio ${i + 1}\n\n${buildReviewPrompt(r)}`).join('\n\n')}`,
+          schema: z.object({ results: z.array(reviewSchema) }),
+          timeoutMs: 180_000
+        })
+        if (results.length !== chunk.length) throw new Error(`La tanda volvió con ${results.length} correcciones de ${chunk.length}.`)
+        return chunk.map((r, i) => toFeedback(r, results[i]))
+      } catch (err) {
+        console.error('[corrección] La tanda falló; se corrige de a una', err)
+        return Promise.all(chunk.map((r) => gradeOpenAnswer(r)))
+      }
+    })
+  )
+  return graded.flat()
 }
 
 // Al empezar una práctica se abre la sesión de corrección, así la primera corrección no paga el arranque.

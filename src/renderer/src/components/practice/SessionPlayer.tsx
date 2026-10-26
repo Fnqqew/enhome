@@ -1,14 +1,7 @@
 // La práctica en curso: un ejercicio por vez, la corrección y el avance.
 
 import { useEffect, useRef, useState } from 'react'
-import {
-  EXERCISE_TYPE_LABELS,
-  type ExerciseAnswer,
-  type ExerciseType,
-  type PracticeResult,
-  type PracticeView,
-  type SessionView
-} from '@shared/exercises'
+import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type PracticeResult, type PracticeView, type SessionView } from '@shared/exercises'
 import ExerciseInput from './ExerciseInput'
 import Feedback from './Feedback'
 import ClaudeWait from '../ClaudeWait'
@@ -23,9 +16,6 @@ import Heading from './Heading'
 
 // Desde cuántos minutos antes de medianoche se avisa durante una práctica.
 const MIDNIGHT_WARNING_MINUTES = 30
-
-// Los que no se corrigen solos: la espera es más larga y conviene avisarlo.
-const CORRECTED_BY_CLAUDE: ExerciseType[] = ['translation', 'translation_set', 'dialogue', 'roleplay', 'writing']
 
 export default function SessionPlayer({
   session,
@@ -42,8 +32,11 @@ export default function SessionPlayer({
   const [error, setError] = useState<string | null>(null)
   const minutesLeft = useMinutesToMidnight()
 
-  const pending = session.exercises.find((e) => !e.feedback)
+  // El próximo sin responder (lo que corrige Claude no frena: se sigue mientras llega la corrección).
+  const pending = session.exercises.find((e) => !e.answer)
   const current = session.exercises.find((e) => e.id === shownId) ?? pending
+  const grading = session.exercises.filter((e) => e.grading)
+  const gradingFailed = session.exercises.filter((e) => e.gradingError)
 
   // Orden de foco con teclado: al corregir, el foco pasa a «Siguiente»; con un ejercicio nuevo,
   // a su encabezado, así se sigue con Tab desde ahí sin volver al principio de la página.
@@ -57,9 +50,9 @@ export default function SessionPlayer({
       firstRender.current = false
       return
     }
-    if (current?.feedback) nextRef.current?.focus()
+    if (current?.answer) nextRef.current?.focus()
     else headingRef.current?.focus()
-  }, [current?.id, current?.feedback])
+  }, [current?.id, current?.answer])
   // Los largos que todavía están llegando también cuentan en el total.
   const total = session.exercises.length + session.pendingCount
   const position = current ? session.exercises.indexOf(current) + 1 : session.exercises.length
@@ -77,6 +70,25 @@ export default function SessionPlayer({
     return () => clearInterval(timer)
   }, [waiting, onView])
 
+  // Cuando llega una corrección de Claude se actualiza la práctica; si es la que está a la vista, suena.
+  const gradingIds = useRef(new Set<number>())
+  useEffect(() => {
+    for (const e of session.exercises) {
+      if (gradingIds.current.has(e.id) && e.feedback && e.id === current?.id) play(e.feedback.correct ? 'correct' : 'wrong')
+    }
+    gradingIds.current = new Set(session.exercises.filter((e) => e.grading).map((e) => e.id))
+  }, [session, current?.id])
+  useEffect(
+    () =>
+      window.api.onPracticeGraded(() => {
+        window.api
+          .getPractice()
+          .then(onView)
+          .catch(() => undefined)
+      }),
+    [onView]
+  )
+
   const run = <T,>(kind: 'answer' | 'skip' | 'finish' | 'hint', action: () => Promise<T>, done: (value: T) => void): void => {
     setBusy(kind)
     setError(null)
@@ -87,7 +99,7 @@ export default function SessionPlayer({
   }
 
   const check = (): void => {
-    if (!current || current.feedback || !draft || busy) return
+    if (!current || current.answer || !draft || busy) return
     const exerciseId = current.id
     run(
       'answer',
@@ -115,13 +127,13 @@ export default function SessionPlayer({
     setDraft(null)
   }
 
-  const canHint = !!current && !current.feedback && !current.hint && session.hintsAvailable > 0 && busy === null
+  const canHint = !!current && !current.answer && !current.hint && session.hintsAvailable > 0 && busy === null
   const askHint = (): void => {
     if (!current || !canHint) return
     run('hint', () => window.api.usePracticeHint(current.id).then(() => window.api.getPractice()), onView)
   }
 
-  const canSkip = !!current && !current.feedback && session.spareCount > 0 && busy === null
+  const canSkip = !!current && !current.answer && session.spareCount > 0 && busy === null
   const skip = (): void => {
     if (!current || !canSkip) return
     run(
@@ -150,7 +162,7 @@ export default function SessionPlayer({
       } else if (event.key === 'Enter' && !event.shiftKey && !event.altKey) {
         // Un botón con foco ya responde a Enter por su cuenta, y en un texto largo Enter es un salto de línea.
         if (target?.tagName === 'BUTTON' || (target?.tagName === 'TEXTAREA' && !event.ctrlKey)) return
-        if (current?.feedback) {
+        if (current?.answer) {
           event.preventDefault()
           goNext()
         } else if (event.ctrlKey || target?.tagName !== 'INPUT') {
@@ -163,7 +175,8 @@ export default function SessionPlayer({
     return () => window.removeEventListener('keydown', onKey)
   }, [])
 
-  const answeredCount = session.exercises.filter((e) => e.feedback).length
+  const answeredCount = session.exercises.filter((e) => e.answer).length
+  const regrade = (exerciseId: number): void => run('answer', () => window.api.regradeExercise(exerciseId), onView)
   return (
     <section className={`card stack exercise-card${current?.feedback ? ' has-feedback' : ''}`}>
       <div className="exercise-progress" aria-hidden="true">
@@ -184,10 +197,11 @@ export default function SessionPlayer({
 
       <div className="dots" role="group" aria-label="Ejercicios de la práctica">
         {session.exercises.map((e, i) => {
-          const className = `dot${e.feedback ? (e.feedback.correct ? ' correct' : ' wrong') : ''}${e === current ? ' current' : ''}`
-          const state = e.feedback ? (e.feedback.correct ? 'bien' : 'con errores') : 'sin responder'
+          const mark = e.feedback ? (e.feedback.correct ? ' correct' : ' wrong') : e.answer ? ' grading' : ''
+          const className = `dot${mark}${e === current ? ' current' : ''}`
+          const state = e.feedback ? (e.feedback.correct ? 'bien' : 'con errores') : e.answer ? 'Claude lo está corrigiendo' : 'sin responder'
           // Los ya respondidos se pueden volver a abrir para releer la corrección.
-          return e.feedback ? (
+          return e.answer ? (
             <button
               key={e.id}
               type="button"
@@ -223,27 +237,48 @@ export default function SessionPlayer({
                 {EXERCISE_TYPE_LABELS[current.type]}
               </h3>
               <p>{current.content.instruction}</p>
-              <ExerciseInput key={current.id} content={current.content} answer={current.answer} feedback={current.feedback} onChange={setDraft} />
-              {current.hint && !current.feedback && (
+              <ExerciseInput
+                key={current.id}
+                content={current.content}
+                answer={current.answer}
+                feedback={current.feedback}
+                locked={!!current.answer}
+                onChange={setDraft}
+              />
+              {current.hint && !current.answer && (
                 <div className="notice with-icon">
                   <Icon name="bulb" className="glyph" />
                   <span>{current.hint}</span>
                 </div>
               )}
             </div>
-            {current.feedback && (
+            {current.feedback ? (
               <div className="exercise-side">
                 <Feedback type={current.type} feedback={current.feedback} />
               </div>
-            )}
+            ) : current.grading ? (
+              <div className="exercise-side">
+                <p className="notice grading-notice" role="status">
+                  <span className="spinner" aria-hidden="true" />
+                  Claude está corrigiendo tu respuesta. Seguí con el próximo: la corrección aparece acá sola.
+                </p>
+              </div>
+            ) : current.gradingError ? (
+              <div className="exercise-side stack-sm">
+                <p className="error multiline">No se pudo corregir: {current.gradingError}</p>
+                <div>
+                  <button className="btn secondary" type="button" disabled={busy !== null} onClick={() => regrade(current.id)}>
+                    Reintentar la corrección
+                  </button>
+                </div>
+              </div>
+            ) : null}
           </div>
           {error && <p className="error">{error}</p>}
-          <ClaudeWait active={busy === 'answer'} />
-
-          {!current.feedback ? (
+          {!current.answer ? (
             <div className="row">
               <button className="btn" type="submit" disabled={!draft || busy !== null}>
-                {busy === 'answer' ? (CORRECTED_BY_CLAUDE.includes(current.type) ? 'Claude está corrigiendo…' : 'Comprobando…') : 'Comprobar'}
+                {busy === 'answer' ? 'Comprobando…' : 'Comprobar'}
               </button>
               {!current.hint && (
                 <button
@@ -268,15 +303,19 @@ export default function SessionPlayer({
             </div>
           ) : (
             <div className="row spread">
-              <Rating
-                value={current.rating}
-                onRate={(value) =>
-                  window.api
-                    .rateExercise(current.id, value)
-                    .then(onView)
-                    .catch((err: Error) => setError(err.message))
-                }
-              />
+              {current.feedback ? (
+                <Rating
+                  value={current.rating}
+                  onRate={(value) =>
+                    window.api
+                      .rateExercise(current.id, value)
+                      .then(onView)
+                      .catch((err: Error) => setError(err.message))
+                  }
+                />
+              ) : (
+                <span />
+              )}
               <button ref={nextRef} className="btn" type="button" title="Enter" onClick={goNext}>
                 {pending ? 'Siguiente' : 'Ver resultado'}
               </button>
@@ -313,11 +352,24 @@ export default function SessionPlayer({
       ) : (
         <div className="stack">
           <p>Respondiste todos los ejercicios.</p>
+          {grading.length > 0 && (
+            <p className="waiting-long" role="status">
+              <span className="spinner" aria-hidden="true" />
+              Claude está terminando de corregir {grading.length === 1 ? 'un ejercicio' : `${grading.length} ejercicios`}. Mientras tanto podés releer
+              las correcciones tocando los puntos de arriba.
+            </p>
+          )}
+          {gradingFailed.length > 0 && (
+            <p className="error">
+              No se {gradingFailed.length === 1 ? 'pudo corregir un ejercicio' : `pudieron corregir ${gradingFailed.length} ejercicios`}: abrilo desde
+              los puntos de arriba y tocá «Reintentar la corrección».
+            </p>
+          )}
           {error && <p className="error">{error}</p>}
           <div>
             <button
               className="btn"
-              disabled={busy !== null}
+              disabled={busy !== null || !session.canFinish}
               onClick={() =>
                 run(
                   'finish',

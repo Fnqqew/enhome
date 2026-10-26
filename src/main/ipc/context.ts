@@ -1,7 +1,7 @@
 // Lo que comparten los canales entre la interfaz y el proceso principal: la base, los servicios de
 // cada idioma (se arman la primera vez que se usan), el idioma abierto y la fecha de hoy.
 
-import { ipcMain } from 'electron'
+import { BrowserWindow, ipcMain } from 'electron'
 import { z } from 'zod'
 import { setClaudeProfile } from '../claude/bridge'
 import { setSpanishVariant } from '../claude/quality'
@@ -17,7 +17,7 @@ import { Progression } from '../engine/progression'
 import { Exams } from '../exams/exams'
 import { generateExam } from '../exams/generation'
 import { Games } from '../games/games'
-import { gradeOpenAnswer } from '../practice/ai-grading'
+import { gradeOpenAnswer, gradeOpenBatch } from '../practice/ai-grading'
 import { bankedGenerator, ExerciseBank } from '../practice/bank'
 import { CourseBanks } from '../content/bank'
 import { Practice } from '../practice/practice'
@@ -32,7 +32,7 @@ import { Chats } from '../chat/chat'
 import type { CurriculumTopic, Roadmap } from '../../shared/curriculum'
 import { toLocalDate } from '../../shared/dates'
 import { PRACTICE_RATINGS } from '../../shared/exercises'
-import type { Result } from '../../shared/ipc'
+import { IPC, type Result } from '../../shared/ipc'
 import type { CourseSummary, LanguageId } from '../../shared/languages'
 import { PRACTICE_LENGTHS, type AppSettings } from '../../shared/settings'
 
@@ -127,7 +127,7 @@ export function createContext(options: IpcOptions): IpcContext {
           return { size: PRACTICE_LENGTHS[practiceLength].size, excluded: excludedTypes }
         }),
         summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
-        exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer),
+        exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer, Date.now, gradeOpenBatch),
         rewards: new Rewards(courseData, curriculum, roadmap, progression),
         notebook: new Notebook(courseData, curriculum, gradeOpenAnswer),
         games: new Games(courseData, curriculum, progression),
@@ -136,6 +136,8 @@ export function createContext(options: IpcOptions): IpcContext {
         journal: new Journal(courseData, curriculum, progression, language),
         chats: new Chats(courseData, curriculum, progression, language)
       }
+      // Cuando llega una corrección de Claude, la ventana actualiza la práctica.
+      found.practice.onGraded = () => BrowserWindow.getAllWindows()[0]?.webContents.send(IPC.practiceGraded)
       courses.set(language, found)
     }
     return found

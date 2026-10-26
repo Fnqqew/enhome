@@ -53,10 +53,11 @@ const session = (view: PracticeView): SessionView => {
 const stored = (exerciseId: number): StoredExercise =>
   JSON.parse((db.prepare('SELECT payload FROM exercises WHERE id = ?').get(exerciseId) as { payload: string }).payload) as StoredExercise
 
-async function answerAllRight(s: SessionView): Promise<SessionView> {
-  let current = s
-  for (const e of s.exercises) current = session(await practice.answer(e.id, rightAnswer(stored(e.id))))
-  return current
+// Responde todo bien y espera las correcciones de Claude (llegan en segundo plano).
+async function answerAllRight(s: SessionView, today = MON): Promise<SessionView> {
+  for (const e of s.exercises) await practice.answer(e.id, rightAnswer(stored(e.id)))
+  await practice.settled()
+  return session(practice.getView(today))
 }
 
 describe('práctica del día', () => {
@@ -130,12 +131,40 @@ describe('práctica del día', () => {
     expect(() => practice.skip(s.exercises[0].id)).toThrow(/alternativos/)
   })
 
-  it('una traducción distinta de la referencia la corrige Claude', async () => {
+  it('una traducción distinta de la referencia la corrige Claude sin frenar la práctica', async () => {
     const s = session(await practice.start(MON))
     const translation = s.exercises.find((e) => e.type === 'translation')!
     const view = session(await practice.answer(translation.id, { type: 'translation', text: 'I work teaching English' }))
+    // Queda respondida y corrigiéndose: se puede seguir con el próximo.
+    expect(view.exercises.find((e) => e.id === translation.id)).toMatchObject({ grading: true, feedback: null })
+    expect(view.canFinish).toBe(false)
+    let notified = 0
+    practice.onGraded = () => notified++
+    await practice.settled()
     expect(graded).toEqual(['translation'])
-    expect(view.exercises.find((e) => e.id === translation.id)?.feedback?.review?.comments).toBe('Bien.')
+    expect(notified).toBe(1)
+    const after = session(practice.getView(MON))
+    expect(after.exercises.find((e) => e.id === translation.id)).toMatchObject({ grading: false, feedback: { review: { comments: 'Bien.' } } })
+  })
+
+  it('si la corrección de Claude falla, se puede reintentar sin volver a responder', async () => {
+    let fail = true
+    practice = new Practice(db, curriculum, progression, generator, async (request) => {
+      if (fail) throw new Error('Claude saturado')
+      return grader(request)
+    })
+    const s = session(await practice.start(MON))
+    const translation = s.exercises.find((e) => e.type === 'translation')!
+    await practice.answer(translation.id, { type: 'translation', text: 'I work teaching English' })
+    await practice.settled()
+    expect(session(practice.getView(MON)).exercises.find((e) => e.id === translation.id)).toMatchObject({
+      grading: false,
+      gradingError: 'Claude saturado'
+    })
+    fail = false
+    practice.regrade(translation.id, MON)
+    await practice.settled()
+    expect(session(practice.getView(MON)).exercises.find((e) => e.id === translation.id)?.feedback?.correct).toBe(true)
   })
 
   it('guarda la calificación del alumno solo después de responder', async () => {
@@ -157,7 +186,7 @@ describe('escritura y recuperación', () => {
     completeUntilThursday()
     const s = session(await practice.start(day(4)))
     expect(s.exercises[s.exercises.length - 1].type).toBe('writing')
-    await answerAllRight(s)
+    await answerAllRight(s, day(4))
     expect(graded).toContain('writing')
   })
 
@@ -168,7 +197,9 @@ describe('escritura y recuperación', () => {
     for (let i = 2; i <= 4; i++) progression.completeUnit(progression.getState(day(i)).week!.nextUnit!.id, day(i))
 
     expect(practice.getView(day(6))).toMatchObject({ status: 'ready', purpose: 'recovery', kind: 'review', subtopicTitle: 'Pronombres personales' })
-    const s = await answerAllRight(session(await practice.start(day(6))))
+    const s = session(await practice.start(day(6)))
+    for (const e of s.exercises) await practice.answer(e.id, rightAnswer(stored(e.id)))
+    await practice.settled()
     expect(practice.finish(s.id, day(6)).purpose).toBe('recovery')
     expect(progression.getState(day(6)).week?.recovered).toBe(true)
   })
@@ -196,6 +227,7 @@ describe('práctica larga', () => {
     const set = view.exercises.find((e) => e.type === 'translation_set')!
     // Una oración distinta de la referencia obliga a pedirle la corrección a Claude.
     await practice.answer(set.id, { type: 'translation_set', texts: ['I work today 0.', 'My sister is a student.', 'We are friends.'] })
+    await practice.settled()
     expect(graded).toContain('translation_set')
   })
 })

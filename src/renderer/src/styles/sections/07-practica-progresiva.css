@@ -29,8 +29,22 @@
   }
 }
 
+/* Respondido y esperando la corrección de Claude: el alumno ya siguió con el próximo. */
+.dot.grading {
+  background: var(--accent-soft);
+  border: 1.5px solid var(--accent);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+.grading-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
 :root[data-motion='reduce'] .spinner,
-:root[data-motion='reduce'] .dot.pending {
+:root[data-motion='reduce'] .dot.pending,
+:root[data-motion='reduce'] .dot.grading {
   animation: none;
 }
 

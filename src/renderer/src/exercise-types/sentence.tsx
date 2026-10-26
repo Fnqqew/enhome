@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { resultClass, type ItemProps } from './common'
 
-export function FillBlank({ content, answer, feedback, onChange }: ItemProps<'fill_blank'>): React.JSX.Element {
+export function FillBlank({ content, answer, feedback, locked, onChange }: ItemProps<'fill_blank'>): React.JSX.Element {
   const [text, setText] = useState(answer?.type === 'fill_blank' ? answer.text : '')
   const [before, after] = content.sentence.split('___')
   return (
@@ -11,7 +11,7 @@ export function FillBlank({ content, answer, feedback, onChange }: ItemProps<'fi
         <input
           className={`blank${resultClass(feedback)}`}
           value={text}
-          disabled={feedback !== null}
+          disabled={feedback !== null || !!locked}
           size={Math.max(6, text.length + 1)}
           autoFocus
           aria-label="Respuesta"
@@ -27,7 +27,7 @@ export function FillBlank({ content, answer, feedback, onChange }: ItemProps<'fi
   )
 }
 
-export function WordOrder({ content, answer, feedback, onChange }: ItemProps<'word_order'>): React.JSX.Element {
+export function WordOrder({ content, answer, feedback, locked, onChange }: ItemProps<'word_order'>): React.JSX.Element {
   const [chosen, setChosen] = useState<number[]>(() => {
     if (answer?.type !== 'word_order') return []
     const used = new Set<number>()
@@ -38,7 +38,7 @@ export function WordOrder({ content, answer, feedback, onChange }: ItemProps<'wo
       return [index]
     })
   })
-  const locked = feedback !== null
+  const frozen = feedback !== null || !!locked
 
   const update = (next: number[]): void => {
     setChosen(next)
@@ -56,7 +56,7 @@ export function WordOrder({ content, answer, feedback, onChange }: ItemProps<'wo
               key={position}
               type="button"
               className="token"
-              disabled={locked}
+              disabled={frozen}
               aria-label={`Quitar «${content.tokens[index]}»`}
               onClick={() => update(chosen.filter((_, p) => p !== position))}
             >
@@ -72,7 +72,7 @@ export function WordOrder({ content, answer, feedback, onChange }: ItemProps<'wo
               key={i}
               type="button"
               className="token"
-              disabled={locked}
+              disabled={frozen}
               aria-label={`Agregar «${token}»`}
               onClick={() => update([...chosen, i])}
             >
@@ -86,7 +86,7 @@ export function WordOrder({ content, answer, feedback, onChange }: ItemProps<'wo
   )
 }
 
-export function ErrorCorrection({ content, answer, feedback, onChange }: ItemProps<'error_correction'>): React.JSX.Element {
+export function ErrorCorrection({ content, answer, feedback, locked, onChange }: ItemProps<'error_correction'>): React.JSX.Element {
   const [text, setText] = useState(answer?.type === 'error_correction' ? answer.text : content.sentence)
   return (
     <>
@@ -94,7 +94,7 @@ export function ErrorCorrection({ content, answer, feedback, onChange }: ItemPro
       <input
         className={`text-answer${resultClass(feedback)}`}
         value={text}
-        disabled={feedback !== null}
+        disabled={feedback !== null || !!locked}
         autoFocus
         aria-label="Oración corregida"
         onChange={(e) => {

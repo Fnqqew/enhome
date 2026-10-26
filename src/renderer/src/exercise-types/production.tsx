@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useCourse } from '../hooks/useCourse'
 import { countWords, PartResult, partClass, useParts, type ItemProps } from './common'
 
-export function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dialogue'>): React.JSX.Element {
+export function Dialogue({ content, answer, feedback, locked, onChange }: ItemProps<'dialogue'>): React.JSX.Element {
   const lang = useCourse().name
   // Número de turno del alumno para cada línea del guion (null en las del otro).
   const turnOf = content.script.reduce<(number | null)[]>((acc, line) => {
@@ -33,7 +33,7 @@ export function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dia
               <input
                 className={`text-answer${partClass(feedback, index)}`}
                 value={texts[index]}
-                disabled={feedback !== null}
+                disabled={feedback !== null || !!locked}
                 placeholder={`Tu respuesta en ${lang}…`}
                 autoFocus={index === 0}
                 aria-label={`Turno ${index + 1}`}
@@ -48,7 +48,7 @@ export function Dialogue({ content, answer, feedback, onChange }: ItemProps<'dia
   )
 }
 
-export function RolePlay({ content, answer, feedback, onChange }: ItemProps<'roleplay'>): React.JSX.Element {
+export function RolePlay({ content, answer, feedback, locked, onChange }: ItemProps<'roleplay'>): React.JSX.Element {
   const lang = useCourse().name
   const initial = answer?.type === 'roleplay' ? answer.texts : null
   const [texts, update] = useParts(content.steps.length, initial, 'roleplay', onChange)
@@ -66,7 +66,7 @@ export function RolePlay({ content, answer, feedback, onChange }: ItemProps<'rol
             <input
               className={`text-answer${partClass(feedback, i)}`}
               value={texts[i]}
-              disabled={feedback !== null}
+              disabled={feedback !== null || !!locked}
               placeholder={`En ${lang}…`}
               autoFocus={i === 0}
               aria-label={`Paso ${i + 1}`}
@@ -80,7 +80,7 @@ export function RolePlay({ content, answer, feedback, onChange }: ItemProps<'rol
   )
 }
 
-export function Writing({ content, answer, feedback, onChange }: ItemProps<'writing'>): React.JSX.Element {
+export function Writing({ content, answer, feedback, locked, onChange }: ItemProps<'writing'>): React.JSX.Element {
   const lang = useCourse().name
   const [text, setText] = useState(answer?.type === 'writing' ? answer.text : '')
   const words = countWords(text)
@@ -98,7 +98,7 @@ export function Writing({ content, answer, feedback, onChange }: ItemProps<'writ
         className="text-answer"
         rows={6}
         value={text}
-        disabled={feedback !== null}
+        disabled={feedback !== null || !!locked}
         placeholder={`Escribí tu texto en ${lang}…`}
         aria-label="Texto"
         onChange={(e) => {

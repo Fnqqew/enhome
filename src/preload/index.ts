@@ -52,6 +52,12 @@ const api: Api = {
   startPractice: () => invoke(IPC.practiceStart),
   answerExercise: (exerciseId, answer) => invoke(IPC.practiceAnswer, exerciseId, answer),
   skipExercise: (exerciseId) => invoke(IPC.practiceSkip, exerciseId),
+  regradeExercise: (exerciseId) => invoke(IPC.practiceRegrade, exerciseId),
+  onPracticeGraded: (callback) => {
+    const listener = (): void => callback()
+    ipcRenderer.on(IPC.practiceGraded, listener)
+    return () => ipcRenderer.removeListener(IPC.practiceGraded, listener)
+  },
   rateExercise: (exerciseId, rating) => invoke(IPC.practiceRate, exerciseId, rating),
   finishPractice: (sessionId) => invoke(IPC.practiceFinish, sessionId),
   getSummariesIndex: () => invoke(IPC.summariesIndex),

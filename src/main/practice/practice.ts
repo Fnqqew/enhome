@@ -71,7 +71,8 @@ interface ExerciseRow {
 interface AttemptRow {
   exercise_id: number
   answer: string
-  feedback: string
+  // Vacío mientras Claude corrige.
+  feedback: string | null
   user_rating: number | null
 }
 
@@ -93,6 +94,11 @@ const errorText = (err: unknown): string => (err instanceof Error ? err.message 
 
 export class Practice {
   private readonly generating = new Map<number, Generation>()
+  // Correcciones de Claude en curso y las que fallaron, por ejercicio.
+  private readonly grading = new Map<number, Promise<void>>()
+  private readonly gradingErrors = new Map<number, string>()
+  // Se llama cuando llega una corrección, para que la ventana se actualice.
+  onGraded: (sessionId: number) => void = () => {}
   // Por qué falló la tanda larga de una sesión que ya empezó, para mostrarlo con «Reintentar».
   private readonly failures = new Map<number, string>()
   private readonly topics: Map<string, CurriculumTopic>
@@ -114,6 +120,7 @@ export class Practice {
     if ('reason' in target) return { status: 'unavailable', reason: target.reason }
 
     const session = this.repairSession(this.findSession(target), target)
+    if (session) this.resumeGrading(session)
     if (session && this.hasSlots(session.id)) {
       // Una sesión que arrancó con los cortos y quedó sin los largos (por ejemplo, se cerró la app) los vuelve a pedir.
       if (this.waitingLong(session) && !this.generating.has(session.id) && !this.failures.has(session.id)) this.launch(session, 'now')
@@ -171,21 +178,66 @@ export class Practice {
     if (stored.type !== answer.type) throw new PracticeError('La respuesta no corresponde a este ejercicio.')
 
     const auto = gradeAuto(stored, answer)
-    let feedback: ExerciseFeedback
     if (auto.kind === 'graded') {
-      feedback = auto.feedback
-    } else {
-      const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
-      const answers = 'text' in answer ? [answer.text] : 'texts' in answer ? answer.texts : []
-      feedback = await this.gradeOpen({ topic, subtopic, exercise: stored as OpenExercise, answers })
-    }
-
-    // Pudo llegar otra respuesta mientras Claude corregía.
-    if (this.attempt(exerciseId)) throw new PracticeError('Ese ejercicio ya está respondido.')
-    transaction(this.db, () => {
       this.db
         .prepare('INSERT INTO exercise_attempts (exercise_id, answer, correct, score, feedback) VALUES (?, ?, ?, ?, ?)')
-        .run(exerciseId, JSON.stringify(answer), feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback))
+        .run(exerciseId, JSON.stringify(answer), null, null, null)
+      this.saveFeedback(exerciseId, session, stored, answer, auto.feedback, today)
+    } else {
+      // Lo que corrige Claude no frena: la respuesta queda guardada y la corrección llega sola mientras
+      // el alumno sigue con el ejercicio siguiente.
+      this.db.prepare('INSERT INTO exercise_attempts (exercise_id, answer) VALUES (?, ?)').run(exerciseId, JSON.stringify(answer))
+      this.launchGrading(exerciseId, session, stored, answer, today)
+    }
+    return { status: 'session', session: this.sessionView(session) }
+  }
+
+  // Vuelve a pedir una corrección que falló, con la respuesta ya guardada.
+  regrade(exerciseId: number, today: string = toLocalDate(new Date())): PracticeView {
+    const { exercise, session } = this.openExercise(exerciseId)
+    const row = this.db.prepare('SELECT answer, feedback FROM exercise_attempts WHERE exercise_id = ?').get(exerciseId) as
+      { answer: string; feedback: string | null } | undefined
+    if (!row) throw new PracticeError('Primero respondé el ejercicio.')
+    if (row.feedback === null && !this.grading.has(exerciseId)) {
+      this.launchGrading(exerciseId, session, JSON.parse(exercise.payload) as StoredExercise, JSON.parse(row.answer) as ExerciseAnswer, today)
+    }
+    return { status: 'session', session: this.sessionView(session) }
+  }
+
+  // Espera las correcciones en curso (las pruebas y el cierre de la app la usan).
+  async settled(): Promise<void> {
+    await Promise.allSettled([...this.grading.values()])
+  }
+
+  private launchGrading(exerciseId: number, session: SessionRow, stored: StoredExercise, answer: ExerciseAnswer, today: string): void {
+    this.gradingErrors.delete(exerciseId)
+    const { topic, subtopic } = this.content(session.topic_id, session.subtopic_id)
+    const answers = 'text' in answer ? [answer.text] : 'texts' in answer ? answer.texts : []
+    const job = this.gradeOpen({ topic, subtopic, exercise: stored as OpenExercise, answers })
+      .then((feedback) => this.saveFeedback(exerciseId, session, stored, answer, feedback, today))
+      .catch((err) => {
+        this.gradingErrors.set(exerciseId, errorText(err))
+        console.error('[practice] No se pudo corregir', err)
+      })
+      .finally(() => {
+        this.grading.delete(exerciseId)
+        this.onGraded(session.id)
+      })
+    this.grading.set(exerciseId, job)
+  }
+
+  private saveFeedback(
+    exerciseId: number,
+    session: SessionRow,
+    stored: StoredExercise,
+    answer: ExerciseAnswer,
+    feedback: ExerciseFeedback,
+    today: string
+  ): void {
+    transaction(this.db, () => {
+      this.db
+        .prepare('UPDATE exercise_attempts SET correct = ?, score = ?, feedback = ? WHERE exercise_id = ?')
+        .run(feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback), exerciseId)
       // Lo que salió mal pasa al cuaderno de errores para repasarlo en los próximos días.
       if (!feedback.correct) {
         recordMistake(
@@ -195,7 +247,27 @@ export class Practice {
         )
       }
     })
-    return { status: 'session', session: this.sessionView(session) }
+  }
+
+  // Si se cerró la app con correcciones pendientes, se vuelven a pedir al abrir la práctica.
+  private resumeGrading(session: SessionRow): void {
+    if (session.completed_on) return
+    const pending = this.db
+      .prepare(
+        `SELECT a.exercise_id, a.answer, e.payload FROM exercise_attempts a JOIN exercises e ON e.id = a.exercise_id
+          WHERE e.session_id = ? AND a.feedback IS NULL`
+      )
+      .all(session.id) as unknown as { exercise_id: number; answer: string; payload: string }[]
+    for (const row of pending) {
+      if (this.grading.has(row.exercise_id) || this.gradingErrors.has(row.exercise_id)) continue
+      this.launchGrading(
+        row.exercise_id,
+        session,
+        JSON.parse(row.payload) as StoredExercise,
+        JSON.parse(row.answer) as ExerciseAnswer,
+        toLocalDate(new Date())
+      )
+    }
   }
 
   // Cambia un ejercicio sin responder por una alternativa, priorizando mantener el tipo de habilidad.
@@ -436,9 +508,11 @@ export class Practice {
           type: r.type,
           content: toPublicExercise(JSON.parse(r.payload) as StoredExercise),
           answer: attempt ? (JSON.parse(attempt.answer) as ExerciseAnswer) : null,
-          feedback: attempt ? (JSON.parse(attempt.feedback) as ExerciseFeedback) : null,
+          feedback: attempt?.feedback ? (JSON.parse(attempt.feedback) as ExerciseFeedback) : null,
           rating: attempt?.user_rating ?? null,
-          hint: hints.get(r.id) ?? null
+          hint: hints.get(r.id) ?? null,
+          grading: !!attempt && !attempt.feedback && !this.gradingErrors.has(r.id),
+          gradingError: attempt && !attempt.feedback ? (this.gradingErrors.get(r.id) ?? null) : null
         }
       })
 
