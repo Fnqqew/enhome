@@ -44,8 +44,10 @@ describe('vocabulario', () => {
     const { cards } = vocab.save(word, TODAY)
     const day = addDays(TODAY, 1)
     expect(vocab.due(day)).toHaveLength(1)
-    expect(vocab.review(cards[0].id, true, day)).toMatchObject({ stage: 1, dueOn: addDays(day, 3) })
-    expect(vocab.review(cards[0].id, false, day)).toMatchObject({ stage: 0, dueOn: addDays(day, 1) })
+    const knew = vocab.review(cards[0].id, true, day)
+    expect(knew.stage).toBeGreaterThan(0)
+    expect(knew.dueOn > addDays(day, 1)).toBe(true)
+    expect(vocab.review(cards[0].id, false, knew.dueOn)).toMatchObject({ stage: 0, dueOn: addDays(knew.dueOn, 1) })
   })
 
   it('se puede borrar', () => {

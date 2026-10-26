@@ -269,8 +269,8 @@ export class Progression {
         DELETE FROM exams;
         DELETE FROM topic_progress;
         DELETE FROM course_pauses;
-        DELETE FROM mistakes;
-        DELETE FROM vocab;
+        DELETE FROM card_reviews;
+        DELETE FROM cards;
         DELETE FROM game_scores;
         DELETE FROM readings;
         DELETE FROM journal;

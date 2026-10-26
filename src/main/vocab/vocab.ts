@@ -2,12 +2,12 @@
 
 import { z } from 'zod'
 import type { CurriculumTopic } from '../../shared/curriculum'
-import { addDays } from '../../shared/dates'
 import { languageInfo, type LanguageId } from '../../shared/languages'
-import { MAX_TERM_LENGTH, VOCAB_INTERVALS, type VocabCard, type VocabOverview, type WordInfo } from '../../shared/vocab'
+import { MAX_TERM_LENGTH, type VocabCard, type VocabOverview, type WordInfo } from '../../shared/vocab'
 import { askClaude, type Ask } from '../claude/bridge'
 import { roleSystemPrompt, spanish } from '../claude/quality'
 import type { Db } from '../db/database'
+import { addCard, dueCards, getCard, removeCard, reviewCard, strength, type CardRow } from '../review/cards'
 
 export class VocabError extends Error {}
 
@@ -19,29 +19,26 @@ const lookupSchema = z.object({
   note: z.string()
 })
 
-interface VocabRow {
-  id: number
-  term: string
-  translation: string
-  example: string | null
-  example_es: string | null
-  note: string | null
-  stage: number
-  due_on: string
-  created_on: string
+interface WordExtra {
+  example: string
+  exampleEs: string
+  note: string
 }
 
-const card = (r: VocabRow): VocabCard => ({
-  id: r.id,
-  term: r.term,
-  translation: r.translation,
-  example: r.example ?? '',
-  exampleEs: r.example_es ?? '',
-  note: r.note ?? '',
-  stage: r.stage,
-  dueOn: r.due_on,
-  createdOn: r.created_on
-})
+const card = (r: CardRow): VocabCard => {
+  const extra = (r.payload ? JSON.parse(r.payload) : {}) as Partial<WordExtra>
+  return {
+    id: r.id,
+    term: r.front,
+    translation: r.back,
+    example: extra.example ?? '',
+    exampleEs: extra.exampleEs ?? '',
+    note: extra.note ?? '',
+    stage: strength(r),
+    dueOn: r.due_on,
+    createdOn: r.created_on
+  }
+}
 
 export function buildLookupPrompt(term: string, context: string, language: LanguageId, level: string): string {
   // promptName distingue la variante (portugués de Brasil).
@@ -82,44 +79,50 @@ export class Vocabulary {
   save(info: WordInfo, today: string): VocabOverview {
     const term = info.term.trim().slice(0, MAX_TERM_LENGTH)
     if (!term || !info.translation.trim()) throw new VocabError('Falta la palabra o su traducción.')
-    if (this.find(term)) return this.overview(today)
-    this.db
-      .prepare('INSERT INTO vocab (term, translation, example, example_es, note, due_on, created_on) VALUES (?, ?, ?, ?, ?, ?, ?)')
-      .run(term, info.translation.trim(), info.example.trim(), info.exampleEs.trim(), info.note.trim(), addDays(today, VOCAB_INTERVALS[0]), today)
+    addCard(
+      this.db,
+      {
+        kind: 'word',
+        source: 'vocab',
+        sourceKey: term.toLowerCase(),
+        front: term,
+        back: info.translation.trim(),
+        payload: { example: info.example.trim(), exampleEs: info.exampleEs.trim(), note: info.note.trim() } satisfies WordExtra
+      },
+      today
+    )
     return this.overview(today)
   }
 
   overview(today: string): VocabOverview {
-    const rows = this.db.prepare('SELECT * FROM vocab ORDER BY id DESC').all() as unknown as VocabRow[]
+    const rows = this.db.prepare("SELECT * FROM cards WHERE kind = 'word' ORDER BY id DESC").all() as unknown as CardRow[]
     const cards = rows.map(card)
     return { cards, dueToday: cards.filter((c) => c.dueOn <= today).length }
   }
 
   due(today: string): VocabCard[] {
-    return (this.db.prepare('SELECT * FROM vocab WHERE due_on <= ? ORDER BY due_on, id LIMIT 30').all(today) as unknown as VocabRow[]).map(card)
+    return dueCards(this.db, ['word'], today, 30).map(card)
   }
 
-  // Me la sabía: avanza un escalón. No me la sabía: vuelve mañana.
+  // Me la sabía o no: FSRS decide cuándo vuelve.
   review(id: number, knew: boolean, today: string): VocabCard {
-    const row = this.row(id)
-    const stage = knew ? Math.min(row.stage + 1, VOCAB_INTERVALS.length - 1) : 0
-    const due = addDays(today, knew ? VOCAB_INTERVALS[stage] : VOCAB_INTERVALS[0])
-    this.db.prepare('UPDATE vocab SET stage = ?, due_on = ? WHERE id = ?').run(stage, due, id)
-    return card(this.row(id))
+    this.row(id)
+    return card(reviewCard(this.db, id, knew ? 'good' : 'again', today).card)
   }
 
   remove(id: number, today: string): VocabOverview {
-    this.db.prepare('DELETE FROM vocab WHERE id = ?').run(id)
+    this.row(id)
+    removeCard(this.db, id)
     return this.overview(today)
   }
 
-  private find(term: string): VocabRow | null {
-    return (this.db.prepare('SELECT * FROM vocab WHERE lower(term) = lower(?)').get(term.trim()) as VocabRow | undefined) ?? null
+  private find(term: string): CardRow | null {
+    return (this.db.prepare("SELECT * FROM cards WHERE kind = 'word' AND source_key = lower(?)").get(term.trim()) as CardRow | undefined) ?? null
   }
 
-  private row(id: number): VocabRow {
-    const row = this.db.prepare('SELECT * FROM vocab WHERE id = ?').get(id) as VocabRow | undefined
-    if (!row) throw new VocabError('Esa palabra no está en tu vocabulario.')
+  private row(id: number): CardRow {
+    const row = getCard(this.db, id)
+    if (!row || row.kind !== 'word') throw new VocabError('Esa palabra no está en tu vocabulario.')
     return row
   }
 

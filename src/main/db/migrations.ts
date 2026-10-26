@@ -430,5 +430,79 @@ export const MIGRATIONS: Migration[] = [
         seconds INTEGER NOT NULL DEFAULT 0
       );
     `
+  },
+  {
+    version: 14,
+    name: 'un solo repaso con FSRS',
+    sql: `
+      -- Todo lo que se repasa (errores, palabras, frases y oraciones) en una sola tabla, con el estado
+      -- de memoria de FSRS: cada tarjeta vuelve justo antes de que se olvide.
+      CREATE TABLE cards (
+        id          INTEGER PRIMARY KEY,
+        kind        TEXT NOT NULL CHECK (kind IN ('mistake', 'word', 'phrase', 'sentence')),
+        -- De dónde viene (practice, exam, vocab, reading…) y una clave para no anotar dos veces lo mismo.
+        source      TEXT NOT NULL,
+        source_key  TEXT NOT NULL,
+        topic_id    TEXT,
+        subtopic_id TEXT,
+        -- Lo que se pregunta y la respuesta (palabras y frases); los errores guardan su ejercicio en payload.
+        front       TEXT NOT NULL DEFAULT '',
+        back        TEXT NOT NULL DEFAULT '',
+        payload     TEXT,
+        given       TEXT,
+        due_on      TEXT NOT NULL,
+        stability   REAL NOT NULL DEFAULT 0,
+        difficulty  REAL NOT NULL DEFAULT 0,
+        reps        INTEGER NOT NULL DEFAULT 0,
+        lapses      INTEGER NOT NULL DEFAULT 0,
+        state       INTEGER NOT NULL DEFAULT 0,
+        last_review TEXT,
+        created_on  TEXT NOT NULL,
+        UNIQUE (kind, source, source_key)
+      );
+      CREATE INDEX cards_due ON cards (kind, due_on);
+
+      -- Cada repaso, para las estadísticas, la experiencia y, con el tiempo, ajustar FSRS a vos.
+      CREATE TABLE card_reviews (
+        id          INTEGER PRIMARY KEY,
+        card_id     INTEGER NOT NULL REFERENCES cards (id) ON DELETE CASCADE,
+        day         TEXT NOT NULL,
+        rating      INTEGER NOT NULL,
+        interval    INTEGER NOT NULL
+      );
+      CREATE INDEX card_reviews_card ON card_reviews (card_id);
+
+      -- Los errores conservan su número (la experiencia ya ganada se calcula con él).
+      INSERT INTO cards (id, kind, source, source_key, topic_id, subtopic_id, payload, given, due_on, stability, difficulty, reps, state, last_review, created_on)
+        SELECT id, 'mistake', source, source_id || ':' || item_index, topic_id, subtopic_id, payload, given,
+               CASE WHEN resolved_on IS NOT NULL THEN date(resolved_on, '+60 days') ELSE due_on END,
+               CASE WHEN resolved_on IS NOT NULL THEN 60 WHEN stage = 1 THEN 3 WHEN stage = 2 THEN 7 WHEN stage >= 3 THEN 15 ELSE 0 END,
+               CASE WHEN stage > 0 OR resolved_on IS NOT NULL THEN 5 ELSE 0 END,
+               reviews,
+               CASE WHEN stage > 0 OR resolved_on IS NOT NULL THEN 2 ELSE 0 END,
+               COALESCE(resolved_on, CASE WHEN stage > 0 THEN date(due_on, '-' || CASE stage WHEN 1 THEN 3 WHEN 2 THEN 7 ELSE 15 END || ' days') END),
+               created_on
+          FROM mistakes;
+      -- Los repasos acertados de antes quedan en el historial (uno por escalón alcanzado).
+      INSERT INTO card_reviews (card_id, day, rating, interval)
+        WITH RECURSIVE steps(n) AS (SELECT 1 UNION ALL SELECT n + 1 FROM steps WHERE n < 4)
+        SELECT m.id, COALESCE(m.resolved_on, m.due_on), 3, 0
+          FROM mistakes m JOIN steps ON steps.n <= CASE WHEN m.resolved_on IS NOT NULL THEN 4 ELSE m.stage END;
+
+      INSERT INTO cards (kind, source, source_key, topic_id, front, back, payload, due_on, stability, difficulty, reps, state, last_review, created_on)
+        SELECT 'word', 'vocab', lower(term), topic_id, term, translation,
+               json_object('example', COALESCE(example, ''), 'exampleEs', COALESCE(example_es, ''), 'note', COALESCE(note, '')),
+               due_on,
+               CASE stage WHEN 0 THEN 0 WHEN 1 THEN 3 WHEN 2 THEN 7 WHEN 3 THEN 15 WHEN 4 THEN 30 ELSE 60 END,
+               CASE WHEN stage > 0 THEN 5 ELSE 0 END,
+               stage,
+               CASE WHEN stage > 0 THEN 2 ELSE 0 END,
+               CASE WHEN stage > 0 THEN date(due_on, '-' || CASE stage WHEN 1 THEN 3 WHEN 2 THEN 7 WHEN 3 THEN 15 WHEN 4 THEN 30 ELSE 60 END || ' days') END,
+               created_on
+          FROM vocab;
+
+      DROP TABLE mistakes;
+      DROP TABLE vocab;
+    `
   }
 ]

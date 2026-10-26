@@ -56,7 +56,13 @@ export function libraryItems(db: Db, curriculum: CurriculumTopic[]): LibraryItem
     })
   }
 
-  const words = db.prepare('SELECT id, term, translation, example, example_es, note, created_on FROM vocab').all() as unknown as {
+  const words = db
+    .prepare(
+      `SELECT id, front AS term, back AS translation, json_extract(payload, '$.example') AS example,
+              json_extract(payload, '$.exampleEs') AS example_es, json_extract(payload, '$.note') AS note, created_on
+         FROM cards WHERE kind = 'word'`
+    )
+    .all() as unknown as {
     id: number
     term: string
     translation: string

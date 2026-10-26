@@ -1,8 +1,5 @@
 // Vocabulario guardado: palabras o expresiones con su traducción, repasadas con tarjetas.
 
-// Días hasta la próxima vez según cuántas veces seguidas te la supiste.
-export const VOCAB_INTERVALS = [1, 3, 7, 15, 30, 60] as const
-
 export interface WordInfo {
   term: string
   translation: string
@@ -13,6 +10,7 @@ export interface WordInfo {
 
 export interface VocabCard extends WordInfo {
   id: number
+  // Qué tan firme está en la memoria (0 a 3), según FSRS.
   stage: number
   dueOn: string
   createdOn: string

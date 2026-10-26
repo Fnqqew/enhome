@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { formatDayMonth, weekdayName } from '@shared/dates'
 import { EXERCISE_TYPE_LABELS, type ExerciseAnswer } from '@shared/exercises'
-import { REVIEW_INTERVALS, REVIEW_STEPS, type ReviewAnswerResult, type ReviewItemView, type ReviewOverview } from '@shared/review'
+import { REVIEW_STEPS, type ReviewAnswerResult, type ReviewItemView, type ReviewOverview } from '@shared/review'
 import ClaudeWait from '../components/ClaudeWait'
 import Icon from '../components/Icon'
 import ExerciseInput from '../components/practice/ExerciseInput'
@@ -86,8 +86,8 @@ export default function Review({ examId, navigate }: { examId: number | null; na
           <Icon name="repaso" className="hero-icon" />
         </div>
         <p className="muted">
-          Cada respuesta incorrecta de la práctica o de un examen se anota acá y vuelve a los {REVIEW_INTERVALS.join(', ')} días. Cuando la acertás{' '}
-          {REVIEW_STEPS} veces seguidas, queda aprendida.
+          Cada respuesta incorrecta de la práctica o de un examen se anota acá y vuelve justo antes de que la olvides: pronto mientras te cuesta y
+          cada vez más espaciada cuando la acertás. Cuando la memoria llega a {REVIEW_STEPS - 1} de {REVIEW_STEPS - 1}, queda aprendida.
         </p>
         <div className="review-stats">
           <Stat value={overview.dueToday} label="para hoy" />
@@ -216,7 +216,7 @@ function ReviewPlayer({ items, title, onDone }: { items: ReviewItemView[]; title
         <div className="row">
           <span className="exercise-type">{EXERCISE_TYPE_LABELS[item.type]}</span>
           <span className="muted small">
-            {item.source === 'exam' ? 'De un examen' : 'De una práctica'} · repaso {item.stage + 1} de {REVIEW_STEPS}
+            {item.source === 'exam' ? 'De un examen' : 'De una práctica'} · memoria {item.stage} de {REVIEW_STEPS - 1}
           </span>
         </div>
         <p>{item.content.instruction}</p>
@@ -225,7 +225,7 @@ function ReviewPlayer({ items, title, onDone }: { items: ReviewItemView[]; title
         {result && (
           <p className={result.feedback.correct ? 'review-next ok' : 'review-next'}>
             {result.learned
-              ? '¡Aprendido! Ya no vuelve.'
+              ? `¡Aprendido! Vuelve recién el ${formatDayMonth(result.nextDue!)}, para que no se te olvide.`
               : result.feedback.correct
                 ? `Bien: vuelve el ${weekdayName(result.nextDue!)} ${formatDayMonth(result.nextDue!)}.`
                 : 'Vuelve mañana para que lo practiques de nuevo.'}

@@ -34,7 +34,9 @@ export class Games {
       topic.subtopics.flatMap((s) => s.examples.map((e) => ({ target: e.target, es: e.es, topicTitle: topic.title })))
     )
     const mistakes = topics.flatMap((topic) => topic.subtopics.flatMap((s) => s.commonMistakes))
-    const words = this.db.prepare('SELECT term, translation FROM vocab ORDER BY id DESC LIMIT 200').all() as unknown as {
+    const words = this.db
+      .prepare("SELECT front AS term, back AS translation FROM cards WHERE kind = 'word' ORDER BY id DESC LIMIT 200")
+      .all() as unknown as {
       term: string
       translation: string
     }[]

@@ -16,7 +16,9 @@ describe('biblioteca', () => {
     db.prepare("INSERT INTO readings (level, title, content, created_on) VALUES ('A1', 'A day in London', ?, '2026-10-12')").run(
       JSON.stringify({ text: 'Tom wakes up early.', glossary: [], questions: [] })
     )
-    db.prepare("INSERT INTO vocab (term, translation, due_on, created_on) VALUES ('wake up', 'despertarse', '2026-10-13', '2026-10-12')").run()
+    db.prepare(
+      "INSERT INTO cards (kind, source, source_key, front, back, payload, due_on, created_on) VALUES ('word', 'vocab', 'wake up', 'wake up', 'despertarse', '{}', '2026-10-13', '2026-10-12')"
+    ).run()
     db.prepare("INSERT INTO journal (day, text) VALUES ('2026-10-14', 'Today I went to Cordoba.')").run()
 
     const all = searchLibrary(db, curriculum, '')

@@ -1,10 +1,10 @@
-// Cuaderno de errores: lo que el alumno respondió mal vuelve en repasos espaciados hasta que lo acierta.
+// Cuaderno de errores: lo que el alumno respondió mal vuelve en repasos espaciados con FSRS.
 
 import type { ExerciseAnswer, ExerciseFeedback, ExerciseType, PublicExercise } from './exercises'
 
-// Días hasta el próximo repaso según cuántas veces seguidas lo acertó: con la cuarta queda aprendido.
-export const REVIEW_INTERVALS = [1, 3, 7, 15] as const
-export const REVIEW_STEPS = REVIEW_INTERVALS.length
+// Escalones de memoria que se muestran (0 a 3): con el cuarto queda aprendido, aunque siga volviendo
+// cada vez más espaciado.
+export const REVIEW_STEPS = 4
 
 export type MistakeSource = 'practice' | 'exam'
 
@@ -14,7 +14,7 @@ export interface ReviewItemView {
   content: PublicExercise
   topicTitle: string
   subtopicTitle: string
-  // Repasos acertados seguidos (0 a 3).
+  // Qué tan firme está en la memoria (0 a 3).
   stage: number
   source: MistakeSource
   // Lo que había respondido cuando se equivocó.

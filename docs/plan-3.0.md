@@ -58,7 +58,7 @@ Mediciones e investigación de respaldo:
 - [ ] 21 Microlección antes de practicar
 - [ ] 22 Recordar en vez de releer
 - [ ] 23 Corrección que hace pensar
-- [ ] 24 Repaso con FSRS
+- [x] 24 Repaso con FSRS
 - [ ] 25 Mezclar lo que se confunde
 - [ ] 26 Escucha todos los días
 - [ ] 27 Hablar todos los días
@@ -92,7 +92,7 @@ Mediciones e investigación de respaldo:
 - [x] 49 Un motor de Claude
 - [ ] 50 Un motor de voz aparte
 - [x] 51 El proceso principal ordenado por áreas
-- [ ] 52 Pantallas grandes divididas
-- [ ] 53 Un solo repaso
-- [ ] 54 Herramientas para el contenido
-- [ ] 55 Más pruebas
+- [x] 52 Pantallas grandes divididas
+- [x] 53 Un solo repaso
+- [~] 54 Herramientas para el contenido
+- [~] 55 Más pruebas

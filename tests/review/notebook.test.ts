@@ -55,27 +55,31 @@ describe('cuaderno de errores', () => {
     expect(notebook.overview(TODAY).pending).toBe(1)
   })
 
-  it('acertado cuatro veces seguidas (1, 3, 7 y 15 días) queda aprendido', async () => {
+  it('al acertarlo vuelve cada vez más espaciado hasta quedar aprendido', async () => {
     let day = addDays(TODAY, 1)
     const id = notebook.due(day)[0].id
-    const steps = [3, 7, 15]
-    for (const wait of steps) {
+    const gaps: number[] = []
+    let learned = false
+    for (let review = 0; review < 6 && !learned; review++) {
       const result = await notebook.answer(id, { type: 'multiple_choice', choice: 0 }, day)
-      expect(result.learned).toBe(false)
-      expect(result.nextDue).toBe(addDays(day, wait))
+      const gap = Math.round((Date.parse(result.nextDue!) - Date.parse(day)) / 86_400_000)
+      gaps.push(gap)
+      learned = result.learned
       day = result.nextDue!
     }
-    const last = await notebook.answer(id, { type: 'multiple_choice', choice: 0 }, day)
-    expect(last).toMatchObject({ learned: true, nextDue: null })
+    // FSRS: cada acierto aleja el próximo repaso, y en pocos repasos queda aprendido (a semanas de distancia).
+    expect(gaps.every((gap, i) => i === 0 || gap > gaps[i - 1])).toBe(true)
+    expect(learned).toBe(true)
+    expect(gaps[gaps.length - 1]).toBeGreaterThanOrEqual(21)
     expect(notebook.overview(day)).toMatchObject({ pending: 0, learned: 1 })
   })
 
-  it('si se vuelve a fallar, empieza de nuevo', async () => {
+  it('si se vuelve a fallar, vuelve al día siguiente', async () => {
     const day = addDays(TODAY, 1)
     const id = notebook.due(day)[0].id
-    await notebook.answer(id, { type: 'multiple_choice', choice: 0 }, day)
-    const wrong = await notebook.answer(id, { type: 'multiple_choice', choice: 2 }, addDays(day, 3))
-    expect(wrong).toMatchObject({ stage: 0, learned: false, nextDue: addDays(day, 4) })
+    const first = await notebook.answer(id, { type: 'multiple_choice', choice: 0 }, day)
+    const wrong = await notebook.answer(id, { type: 'multiple_choice', choice: 2 }, first.nextDue!)
+    expect(wrong).toMatchObject({ stage: 0, learned: false, nextDue: addDays(first.nextDue!, 1) })
   })
 
   it('el repaso de un examen trae todas sus preguntas falladas aunque no venzan hoy', () => {

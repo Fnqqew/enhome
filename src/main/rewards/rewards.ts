@@ -3,6 +3,7 @@
 
 import { GAMES_WITH_XP_PER_DAY, gameXp, type GameId } from '../../shared/games'
 import { REVIEW_STEPS } from '../../shared/review'
+import { isLearned, LEARNED_STABILITY } from '../review/cards'
 import type { CurriculumTopic, Roadmap } from '../../shared/curriculum'
 import { addDays, isoWeekday, mondayOf } from '../../shared/dates'
 import type { ExamQuestion } from '../../shared/exams'
@@ -285,16 +286,21 @@ export class Rewards {
       if (played < GAMES_WITH_XP_PER_DAY && g.score > 0) this.award(`game:${g.id}`, gameXp(g.game, g.score), g.date)
     }
 
-    // Cuaderno de errores: cada escalón alcanzado, una sola vez aunque después se vuelva a empezar.
-    const reviewed = this.db.prepare('SELECT id, stage, resolved_on FROM mistakes WHERE stage > 0 OR resolved_on IS NOT NULL').all() as unknown as {
-      id: number
-      stage: number
-      resolved_on: string | null
-    }[]
+    // Cuaderno de errores: cada repaso acertado (hasta cuatro por error) y al quedar aprendido, una sola vez.
+    const reviewed = this.db
+      .prepare(
+        `SELECT c.id, c.stability, c.state, c.last_review, r.day
+           FROM cards c JOIN card_reviews r ON r.card_id = c.id
+          WHERE c.kind = 'mistake' AND r.rating > 1
+          ORDER BY r.id`
+      )
+      .all() as unknown as { id: number; stability: number; state: number; last_review: string | null; day: string }[]
+    const steps = new Map<number, number>()
     for (const r of reviewed) {
-      const steps = r.resolved_on ? REVIEW_STEPS : r.stage
-      for (let step = 1; step <= steps; step++) this.award(`review:${r.id}:${step}`, XP.reviewStep, r.resolved_on ?? today)
-      if (r.resolved_on) this.award(`learned:${r.id}`, XP.reviewLearned, r.resolved_on)
+      const step = (steps.get(r.id) ?? 0) + 1
+      steps.set(r.id, step)
+      if (step <= REVIEW_STEPS) this.award(`review:${r.id}:${step}`, XP.reviewStep, r.day)
+      if (isLearned(r)) this.award(`learned:${r.id}`, XP.reviewLearned, r.last_review ?? today)
     }
   }
 
@@ -318,7 +324,7 @@ export class Rewards {
       mocks: this.count("SELECT COUNT(*) AS n FROM exams WHERE kind = 'mock' AND status = 'submitted'"),
       aiSummaries: this.count("SELECT COUNT(*) AS n FROM summaries WHERE source = 'ai'"),
       games: this.count('SELECT COUNT(*) AS n FROM game_scores'),
-      learnedMistakes: this.count('SELECT COUNT(*) AS n FROM mistakes WHERE resolved_on IS NOT NULL'),
+      learnedMistakes: this.count(`SELECT COUNT(*) AS n FROM cards WHERE kind = 'mistake' AND state = 2 AND stability >= ${LEARNED_STABILITY}`),
       levelsComplete: levels.filter((level) => this.curriculum.filter((t) => t.level === level).every((t) => passed(t.id))),
       playerLevel
     }
