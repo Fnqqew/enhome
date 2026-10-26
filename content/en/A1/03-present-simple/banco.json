@@ -243,17 +243,7 @@
           "Usually, Lucía walks to work in the morning."
         ],
         "translation": "Lucía generalmente camina al trabajo por la mañana.",
-        "explanation": "El adverbio de frecuencia 'usually' va antes del verbo principal o al inicio de la oración; con 'Lucía' (she) el verbo lleva -s: walks.",
-        "tokens": [
-          "to",
-          "Lucía",
-          "work",
-          "the",
-          "in",
-          "usually",
-          "walks",
-          "morning"
-        ]
+        "explanation": "El adverbio de frecuencia 'usually' va antes del verbo principal o al inicio de la oración; con 'Lucía' (she) el verbo lleva -s: walks."
       },
       {
         "type": "word_order",
@@ -263,17 +253,7 @@
           "Often, my brother cooks dinner for the family."
         ],
         "translation": "Mi hermano a menudo cocina la cena para la familia.",
-        "explanation": "El adverbio 'often' se coloca antes del verbo principal; 'cooks' lleva -s porque el sujeto es 'he' (my brother).",
-        "tokens": [
-          "often",
-          "dinner",
-          "cooks",
-          "the",
-          "brother",
-          "for",
-          "My",
-          "family"
-        ]
+        "explanation": "El adverbio 'often' se coloca antes del verbo principal; 'cooks' lleva -s porque el sujeto es 'he' (my brother)."
       },
       {
         "type": "word_order",
@@ -281,16 +261,7 @@
         "sentence": "The pharmacy closes at nine every night.",
         "alternatives": [],
         "translation": "La farmacia cierra a las nueve todas las noches.",
-        "explanation": "'The pharmacy' equivale a 'it', por eso el verbo close agrega -s: closes.",
-        "tokens": [
-          "every",
-          "night",
-          "at",
-          "nine",
-          "pharmacy",
-          "closes",
-          "The"
-        ]
+        "explanation": "'The pharmacy' equivale a 'it', por eso el verbo close agrega -s: closes."
       },
       {
         "type": "word_order",
@@ -298,16 +269,7 @@
         "sentence": "She always checks her email before breakfast.",
         "alternatives": [],
         "translation": "Ella siempre revisa su correo antes del desayuno.",
-        "explanation": "El adverbio 'always' va antes del verbo principal; 'checks' lleva -s porque el sujeto es 'she'.",
-        "tokens": [
-          "breakfast",
-          "email",
-          "always",
-          "She",
-          "before",
-          "her",
-          "checks"
-        ]
+        "explanation": "El adverbio 'always' va antes del verbo principal; 'checks' lleva -s porque el sujeto es 'she'."
       },
       {
         "type": "word_order",
@@ -315,16 +277,7 @@
         "sentence": "Mr. García rarely eats breakfast before work.",
         "alternatives": [],
         "translation": "El señor García rara vez desayuna antes del trabajo.",
-        "explanation": "Con sujetos de tercera persona singular como 'Mr. García' (he), el verbo 'eat' se convierte en 'eats'.",
-        "tokens": [
-          "rarely",
-          "eats",
-          "breakfast",
-          "work",
-          "before",
-          "García",
-          "Mr."
-        ]
+        "explanation": "Con sujetos de tercera persona singular como 'Mr. García' (he), el verbo 'eat' se convierte en 'eats'."
       },
       {
         "type": "error_correction",
@@ -501,6 +454,249 @@
           {
             "answer": "The kids goes to school at eight.",
             "why": "Con sujeto plural 'the kids' (they) el verbo no lleva -s; 'goes' es solo para he/she/it."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Pablo flies to Bariloche every winter for vacation.",
+        "alternatives": [],
+        "translation": "Pablo vuela a Bariloche cada invierno de vacaciones.",
+        "explanation": "Fly termina en consonante + y, por eso en tercera persona la y cambia a i y se agrega -es: flies."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Carla washes the windows every Saturday morning.",
+        "alternatives": [],
+        "translation": "Carla lava las ventanas todos los sábados por la mañana.",
+        "explanation": "Wash termina en sh, por eso en tercera persona se agrega -es: washes, no solo -s."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "The baker mixes flour and sugar before sunrise.",
+        "alternatives": [],
+        "translation": "El panadero mezcla harina y azúcar antes del amanecer.",
+        "explanation": "Mix termina en x, por eso en tercera persona se agrega -es: mixes."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "We travel to Salta together every December.",
+        "alternatives": [],
+        "translation": "Viajamos a Salta juntos cada diciembre.",
+        "explanation": "Con we el verbo no cambia: travel, sin -s, porque la -s solo se usa con he, she e it."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál de las dos se dice.",
+        "pair": [
+          "rise",
+          "rice"
+        ],
+        "target": 1,
+        "meanings": [
+          "subir, levantarse",
+          "arroz"
+        ],
+        "explanation": "Rice termina en sonido s suave (sin vibración), mientras que rise termina en sonido z (con vibración en las cuerdas vocales)."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál de las dos se dice.",
+        "pair": [
+          "sheep",
+          "ship"
+        ],
+        "target": 1,
+        "meanings": [
+          "oveja",
+          "barco"
+        ],
+        "explanation": "Sheep tiene vocal larga /iː/, como una ee prolongada, mientras que ship tiene vocal corta /ɪ/, más breve y relajada."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál de las dos se dice.",
+        "pair": [
+          "watch",
+          "wash"
+        ],
+        "target": 0,
+        "meanings": [
+          "mirar / reloj",
+          "lavar"
+        ],
+        "explanation": "Watch termina en el sonido ch, como en 'chico', mientras que wash termina en el sonido sh, más suave, como un 'shh' de silencio."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta con el mismo ritmo.",
+        "phrase": "My brother has a meeting with his boss every Monday.",
+        "translation": "Mi hermano tiene una reunión con su jefe todos los lunes.",
+        "tip": "Unís 'has a' casi como una sola palabra: /hæzə/, sin pausa entre las dos."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta con el mismo ritmo.",
+        "phrase": "She usually arrives at the office before everyone else.",
+        "translation": "Ella generalmente llega a la oficina antes que todos los demás.",
+        "tip": "Marcá el acento en 'arrives' y en 'before', y decí 'usually' rápido, casi como 'yoo-zhuh-lee'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta con el mismo ritmo.",
+        "phrase": "He often forgets his keys at home.",
+        "translation": "Él a menudo se olvida las llaves en casa.",
+        "tip": "Decí 'forgets his' uniendo las palabras, bajando un poco el volumen en 'his' porque no lleva el acento principal."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre dos amigos sobre la rutina de un compañero de depto y respondé las preguntas.",
+        "situation": "Valentina le cuenta a su amigo Nico sobre la rutina diaria de Diego, su nuevo compañero de departamento en Buenos Aires.",
+        "lines": [
+          {
+            "speaker": "Nico",
+            "text": "Hey Valentina, how's your new roommate? What's he like?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Diego's great! He studies medicine at the university."
+          },
+          {
+            "speaker": "Nico",
+            "text": "Really? What does he do in the morning?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "He wakes up early and goes for a run in the park."
+          },
+          {
+            "speaker": "Nico",
+            "text": "Does he cook breakfast?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "No, he usually drinks coffee and eats a sandwich before class."
+          },
+          {
+            "speaker": "Nico",
+            "text": "And at night?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "He watches a movie or reads before bed."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué estudia Diego?",
+            "options": [
+              "Ingeniería",
+              "Medicina",
+              "Arquitectura",
+              "Derecho"
+            ],
+            "correctIndex": 1,
+            "explanation": "Valentina dice 'He studies medicine'; como el verbo termina en consonante + y, se cambia la y por ies: study → studies."
+          },
+          {
+            "prompt": "¿Qué hace Diego por la mañana antes de ir a clase?",
+            "options": [
+              "Cocina un desayuno completo",
+              "Va al gimnasio",
+              "Corre y toma café con un sandwich",
+              "Duerme hasta tarde"
+            ],
+            "correctIndex": 2,
+            "explanation": "Valentina dice 'He wakes up early and goes for a run' y luego 'he usually drinks coffee and eats a sandwich'; con he se agrega -s o -es al verbo (goes, drinks, eats)."
+          },
+          {
+            "prompt": "¿Qué hace Diego antes de dormir?",
+            "options": [
+              "Estudia para un examen",
+              "Habla por teléfono",
+              "Mira una película o lee",
+              "Sale a caminar"
+            ],
+            "correctIndex": 2,
+            "explanation": "Valentina dice 'He watches a movie or reads before bed'; watch termina en ch, por eso se agrega -es: watch → watches."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la llamada de un paciente a una clínica en Mendoza y respondé las preguntas.",
+        "situation": "Un paciente llama a la recepción de una clínica en Mendoza para pedir un turno con la Dra. Molina y pregunta por su horario.",
+        "lines": [
+          {
+            "speaker": "Receptionist",
+            "text": "Good morning, Molina Clinic. How can I help you?"
+          },
+          {
+            "speaker": "Patient",
+            "text": "Hi, I'd like to know Dr. Molina's schedule. Does she work on Saturdays?"
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "No, she doesn't. She works Monday to Friday."
+          },
+          {
+            "speaker": "Patient",
+            "text": "What time does she start?"
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "She starts at nine and finishes at five."
+          },
+          {
+            "speaker": "Patient",
+            "text": "Does she have time for a quick appointment at noon?"
+          },
+          {
+            "speaker": "Receptionist",
+            "text": "She usually has lunch at noon, but she sees patients until four thirty."
+          },
+          {
+            "speaker": "Patient",
+            "text": "Perfect, I'll come at four."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué días trabaja la Dra. Molina?",
+            "options": [
+              "Todos los días",
+              "Solo los fines de semana",
+              "Lunes a sábado",
+              "Lunes a viernes"
+            ],
+            "correctIndex": 3,
+            "explanation": "La recepcionista dice 'She works Monday to Friday'; con she el verbo work lleva -s: works."
+          },
+          {
+            "prompt": "¿A qué hora empieza a trabajar la doctora?",
+            "options": [
+              "A las ocho",
+              "A las once",
+              "A las diez",
+              "A las nueve"
+            ],
+            "correctIndex": 3,
+            "explanation": "La recepcionista dice 'She starts at nine'; con she el verbo start agrega -s: starts."
+          },
+          {
+            "prompt": "¿Hasta qué hora atiende pacientes la doctora, según la recepcionista?",
+            "options": [
+              "Hasta las cuatro y media",
+              "Hasta las cuatro",
+              "Hasta las cinco",
+              "Hasta las tres"
+            ],
+            "correctIndex": 0,
+            "explanation": "La recepcionista dice 'she sees patients until four thirty'; con she el verbo see agrega -s: sees."
           }
         ]
       }
@@ -732,16 +928,7 @@
           "At parties, Camila doesn't like loud music."
         ],
         "translation": "A Camila no le gusta la música fuerte en las fiestas.",
-        "explanation": "'Camila' es tercera persona singular (she), por eso se usa 'doesn't' con el verbo 'like' en forma base.",
-        "tokens": [
-          "Camila",
-          "doesn't",
-          "at",
-          "music",
-          "like",
-          "parties",
-          "loud"
-        ]
+        "explanation": "'Camila' es tercera persona singular (she), por eso se usa 'doesn't' con el verbo 'like' en forma base."
       },
       {
         "type": "word_order",
@@ -751,18 +938,7 @@
           "Today, we don't have time to visit the museum."
         ],
         "translation": "No tenemos tiempo para visitar el museo hoy.",
-        "explanation": "Con 'we' se usa 'don't' para negar el verbo 'have' en presente simple.",
-        "tokens": [
-          "museum",
-          "don't",
-          "We",
-          "to",
-          "today",
-          "visit",
-          "have",
-          "time",
-          "the"
-        ]
+        "explanation": "Con 'we' se usa 'don't' para negar el verbo 'have' en presente simple."
       },
       {
         "type": "word_order",
@@ -772,17 +948,7 @@
           "Before the surgery, the doctor doesn't recommend coffee."
         ],
         "translation": "El médico no recomienda el café antes de la cirugía.",
-        "explanation": "'The doctor' equivale a 'he/she', por eso se usa 'doesn't' con el verbo 'recommend' en forma base.",
-        "tokens": [
-          "coffee",
-          "recommend",
-          "before",
-          "doctor",
-          "doesn't",
-          "The",
-          "surgery",
-          "the"
-        ]
+        "explanation": "'The doctor' equivale a 'he/she', por eso se usa 'doesn't' con el verbo 'recommend' en forma base."
       },
       {
         "type": "word_order",
@@ -792,18 +958,7 @@
           "Without a guarantor, they don't rent apartments to students."
         ],
         "translation": "No alquilan departamentos a estudiantes sin garante.",
-        "explanation": "Con 'they' se usa 'don't' para negar el verbo 'rent' en presente simple.",
-        "tokens": [
-          "without",
-          "a",
-          "rent",
-          "don't",
-          "guarantor",
-          "apartments",
-          "They",
-          "to",
-          "students"
-        ]
+        "explanation": "Con 'they' se usa 'don't' para negar el verbo 'rent' en presente simple."
       },
       {
         "type": "word_order",
@@ -813,17 +968,7 @@
           "On the weekend, my boss doesn't answer emails."
         ],
         "translation": "Mi jefe no responde los correos el fin de semana.",
-        "explanation": "'My boss' es tercera persona singular, por eso se usa 'doesn't' con el verbo 'answer' en forma base.",
-        "tokens": [
-          "the",
-          "on",
-          "boss",
-          "My",
-          "emails",
-          "answer",
-          "weekend",
-          "doesn't"
-        ]
+        "explanation": "'My boss' es tercera persona singular, por eso se usa 'doesn't' con el verbo 'answer' en forma base."
       },
       {
         "type": "error_correction",
@@ -998,6 +1143,257 @@
           {
             "answer": "My boss don't answer emails on the weekend.",
             "why": "'My boss' es tercera persona singular, corresponde 'doesn't', no 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "He doesn't eat breakfast on weekdays.",
+        "alternatives": [
+          "He does not eat breakfast on weekdays."
+        ],
+        "translation": "Él no desayuna los días de semana.",
+        "explanation": "Con 'doesn't' el verbo va en forma base ('eat', no 'eats'), porque la -s ya está en el auxiliar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "We don't need a visa to travel to Chile.",
+        "alternatives": [
+          "We do not need a visa to travel to Chile."
+        ],
+        "translation": "No necesitamos visa para viajar a Chile.",
+        "explanation": "'Don't' se usa con 'we'; hay que escuchar bien la contracción, que puede sonar breve y perderse si no se presta atención."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "The landlord doesn't allow pets in this building.",
+        "alternatives": [
+          "The landlord does not allow pets in this building."
+        ],
+        "translation": "El dueño no permite mascotas en este edificio.",
+        "explanation": "'Landlord' es 'he/she', por eso va con 'doesn't' y el verbo 'allow' queda sin -s."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "I don't remember his phone number.",
+        "alternatives": [
+          "I do not remember his phone number."
+        ],
+        "translation": "No me acuerdo de su número de teléfono.",
+        "explanation": "Con 'I' siempre se usa 'don't', nunca 'doesn't'; el verbo 'remember' queda en forma base."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "sip",
+          "zip"
+        ],
+        "target": 0,
+        "meanings": [
+          "sorbo",
+          "cierre (cremallera)"
+        ],
+        "explanation": "La 's' de 'sip' es sorda (sin vibración de cuerdas vocales); la 'z' de 'zip' es sonora y vibra más al pronunciarla."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "bet",
+          "bat"
+        ],
+        "target": 1,
+        "meanings": [
+          "apuesta",
+          "murciélago"
+        ],
+        "explanation": "La vocal de 'bet' es la /e/, con la boca poco abierta; la de 'bat' es la /æ/, se abre mucho más la boca al pronunciarla."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "fool",
+          "full"
+        ],
+        "target": 1,
+        "meanings": [
+          "tonto",
+          "lleno"
+        ],
+        "explanation": "La 'u' de 'full' es corta y relajada; la de 'fool' es larga y tensa, se alarga notablemente el sonido."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "I don't drink coffee after six o'clock.",
+        "translation": "No tomo café después de las seis.",
+        "tip": "Uní 'don't drink' sin pausa entre las dos palabras, como si fueran una sola."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "She doesn't check her phone during meetings.",
+        "translation": "Ella no revisa su celular durante las reuniones.",
+        "tip": "Enlazá 'doesn't check' y bajá un poco el tono al llegar a 'meetings' para sonar natural."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "They don't open on public holidays.",
+        "translation": "No abren los feriados.",
+        "tip": "La 't' final de 'don't' casi no se pronuncia antes de 'open'; decilo suave y seguido."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas.",
+        "situation": "En una oficina de Buenos Aires, el entrevistador Mr. Lopez le hace preguntas a la candidata Sofia sobre sus hábitos de trabajo.",
+        "lines": [
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Do you work on weekends, Sofia?"
+          },
+          {
+            "speaker": "Sofia",
+            "text": "No, I don't work on weekends. I need time with my family."
+          },
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Does your current job require travel?"
+          },
+          {
+            "speaker": "Sofia",
+            "text": "No, it doesn't require travel. I work from the office every day."
+          },
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Do you use Excel in your daily tasks?"
+          },
+          {
+            "speaker": "Sofia",
+            "text": "No, I don't use Excel much, but I use Google Sheets."
+          },
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Does your team have meetings every morning?"
+          },
+          {
+            "speaker": "Sofia",
+            "text": "No, it doesn't have meetings every morning, only on Mondays."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Sofia trabaja los fines de semana?",
+            "options": [
+              "Solo los sábados",
+              "No se menciona",
+              "Sí, siempre",
+              "No, no trabaja los fines de semana"
+            ],
+            "correctIndex": 3,
+            "explanation": "Sofia usa 'I don't work on weekends' para negar con el sujeto I, confirmando que no trabaja esos días."
+          },
+          {
+            "prompt": "¿Cuándo tiene reuniones el equipo de Sofia?",
+            "options": [
+              "Todos los días",
+              "Solo los lunes",
+              "Los viernes",
+              "Nunca"
+            ],
+            "correctIndex": 1,
+            "explanation": "Con 'team' (it) se usa doesn't y el verbo en forma base: 'it doesn't have meetings every morning, only on Mondays'."
+          },
+          {
+            "prompt": "¿Qué usa Sofia en sus tareas diarias en lugar de Excel?",
+            "options": [
+              "Word",
+              "Google Sheets",
+              "PowerPoint",
+              "Nada"
+            ],
+            "correctIndex": 1,
+            "explanation": "Sofia dice 'I don't use Excel much, but I use Google Sheets', negando con don't y aclarando la alternativa que sí usa."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la consulta médica y respondé las preguntas.",
+        "situation": "En un consultorio de Córdoba, la Dra. Pérez le pregunta a su paciente Martín sobre sus hábitos antes de un chequeo.",
+        "lines": [
+          {
+            "speaker": "Dra. Pérez",
+            "text": "Martín, do you exercise every day?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "No, I don't exercise every day. I go to the gym twice a week."
+          },
+          {
+            "speaker": "Dra. Pérez",
+            "text": "Does your wife cook with a lot of salt?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "No, she doesn't cook with a lot of salt. She prefers healthy food."
+          },
+          {
+            "speaker": "Dra. Pérez",
+            "text": "Do you and your wife smoke?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "No, we don't smoke, but my father does."
+          },
+          {
+            "speaker": "Dra. Pérez",
+            "text": "Does your father have any health problems?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "Yes, he does. He doesn't sleep well, and he has high blood pressure."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántas veces por semana va Martín al gimnasio?",
+            "options": [
+              "Todos los días",
+              "Dos veces por semana",
+              "Nunca",
+              "Una vez por semana"
+            ],
+            "correctIndex": 1,
+            "explanation": "Martín niega la rutina diaria con 'I don't exercise every day' y aclara que va al gimnasio dos veces por semana."
+          },
+          {
+            "prompt": "¿Quién fuma según la conversación?",
+            "options": [
+              "La doctora",
+              "Nadie",
+              "El padre de Martín",
+              "Martín y su esposa"
+            ],
+            "correctIndex": 2,
+            "explanation": "Martín dice 'we don't smoke, but my father does', usando don't para negar sobre él y su esposa y 'does' para confirmar que su padre sí fuma."
+          },
+          {
+            "prompt": "¿Qué problema tiene el padre de Martín con el sueño?",
+            "options": [
+              "Duerme bien",
+              "Duerme demasiado",
+              "No se menciona",
+              "No duerme bien"
+            ],
+            "correctIndex": 3,
+            "explanation": "Con 'he' se usa doesn't: 'he doesn't sleep well', lo que indica que el padre de Martín tiene problemas para dormir."
           }
         ]
       }
@@ -1235,16 +1631,7 @@
         "sentence": "Do you have a reservation for tonight?",
         "alternatives": [],
         "translation": "¿Tenés una reserva para esta noche?",
-        "explanation": "La pregunta en presente simple con 'you' se forma con 'do' al inicio.",
-        "tokens": [
-          "tonight",
-          "have",
-          "you",
-          "for",
-          "Do",
-          "a",
-          "reservation"
-        ]
+        "explanation": "La pregunta en presente simple con 'you' se forma con 'do' al inicio."
       },
       {
         "type": "word_order",
@@ -1252,15 +1639,7 @@
         "sentence": "Does Valentina work at the clinic?",
         "alternatives": [],
         "translation": "¿Valentina trabaja en la clínica?",
-        "explanation": "Con un nombre propio femenino (she) se usa el auxiliar 'does'.",
-        "tokens": [
-          "work",
-          "at",
-          "Valentina",
-          "the",
-          "clinic",
-          "Does"
-        ]
+        "explanation": "Con un nombre propio femenino (she) se usa el auxiliar 'does'."
       },
       {
         "type": "word_order",
@@ -1268,16 +1647,7 @@
         "sentence": "What time does the meeting start tomorrow?",
         "alternatives": [],
         "translation": "¿A qué hora empieza la reunión mañana?",
-        "explanation": "Las preguntas con palabra interrogativa llevan 'does' y el verbo principal en infinitivo: start.",
-        "tokens": [
-          "meeting",
-          "start",
-          "does",
-          "time",
-          "What",
-          "the",
-          "tomorrow"
-        ]
+        "explanation": "Las preguntas con palabra interrogativa llevan 'does' y el verbo principal en infinitivo: start."
       },
       {
         "type": "word_order",
@@ -1285,16 +1655,7 @@
         "sentence": "Where do your cousins live in Spain?",
         "alternatives": [],
         "translation": "¿Dónde viven tus primos en España?",
-        "explanation": "'Your cousins' es plural (they), por eso la pregunta usa 'do'.",
-        "tokens": [
-          "do",
-          "cousins",
-          "live",
-          "in",
-          "Spain",
-          "Where",
-          "your"
-        ]
+        "explanation": "'Your cousins' es plural (they), por eso la pregunta usa 'do'."
       },
       {
         "type": "word_order",
@@ -1302,15 +1663,7 @@
         "sentence": "Does he speak Portuguese very well?",
         "alternatives": [],
         "translation": "¿Él habla portugués muy bien?",
-        "explanation": "Con 'he' se usa 'does', y el verbo principal 'speak' va sin -s.",
-        "tokens": [
-          "he",
-          "speak",
-          "well",
-          "very",
-          "Does",
-          "Portuguese"
-        ]
+        "explanation": "Con 'he' se usa 'does', y el verbo principal 'speak' va sin -s."
       },
       {
         "type": "error_correction",
@@ -1813,16 +2166,7 @@
         "sentence": "I always brush my teeth before bed.",
         "alternatives": [],
         "translation": "Siempre me cepillo los dientes antes de acostarme.",
-        "explanation": "'Always' va antes del verbo principal 'brush'.",
-        "tokens": [
-          "teeth",
-          "my",
-          "bed",
-          "I",
-          "always",
-          "brush",
-          "before"
-        ]
+        "explanation": "'Always' va antes del verbo principal 'brush'."
       },
       {
         "type": "word_order",
@@ -1832,16 +2176,7 @@
           "Usually, she is busy on Monday mornings."
         ],
         "translation": "Ella generalmente está ocupada los lunes por la mañana.",
-        "explanation": "Con el verbo 'to be', el adverbio 'usually' va después: is usually.",
-        "tokens": [
-          "She",
-          "usually",
-          "on",
-          "mornings",
-          "is",
-          "busy",
-          "Monday"
-        ]
+        "explanation": "Con el verbo 'to be', el adverbio 'usually' va después: is usually."
       },
       {
         "type": "word_order",
@@ -1851,17 +2186,7 @@
           "Sometimes we have lunch at that new café."
         ],
         "translation": "A veces almorzamos en ese café nuevo.",
-        "explanation": "'Sometimes' va antes del verbo principal 'have'.",
-        "tokens": [
-          "lunch",
-          "at",
-          "have",
-          "sometimes",
-          "that",
-          "new",
-          "café",
-          "We"
-        ]
+        "explanation": "'Sometimes' va antes del verbo principal 'have'."
       },
       {
         "type": "word_order",
@@ -1869,16 +2194,7 @@
         "sentence": "My grandfather rarely uses his cell phone.",
         "alternatives": [],
         "translation": "Mi abuelo casi nunca usa su celular.",
-        "explanation": "'Rarely' va antes del verbo principal, que lleva -s porque el sujeto es 'he'.",
-        "tokens": [
-          "cell",
-          "uses",
-          "rarely",
-          "My",
-          "grandfather",
-          "his",
-          "phone"
-        ]
+        "explanation": "'Rarely' va antes del verbo principal, que lleva -s porque el sujeto es 'he'."
       },
       {
         "type": "word_order",
@@ -1888,17 +2204,7 @@
           "Twice a week, they go to the market."
         ],
         "translation": "Ellos van al mercado dos veces por semana.",
-        "explanation": "Las expresiones largas de frecuencia como 'twice a week' van al final de la oración.",
-        "tokens": [
-          "They",
-          "market",
-          "to",
-          "go",
-          "twice",
-          "week",
-          "a",
-          "the"
-        ]
+        "explanation": "Las expresiones largas de frecuencia como 'twice a week' van al final de la oración."
       },
       {
         "type": "error_correction",
@@ -2401,17 +2707,7 @@
           "Every morning Sofía gets up at seven o'clock."
         ],
         "translation": "Sofía se levanta a las siete todas las mañanas.",
-        "explanation": "En presente simple con tercera persona singular el verbo lleva -s; los conectores de tiempo pueden ir al final o al principio.",
-        "tokens": [
-          "at",
-          "gets",
-          "up",
-          "every",
-          "o'clock",
-          "morning",
-          "Sofía",
-          "seven"
-        ]
+        "explanation": "En presente simple con tercera persona singular el verbo lleva -s; los conectores de tiempo pueden ir al final o al principio."
       },
       {
         "type": "word_order",
@@ -2419,16 +2715,7 @@
         "sentence": "First, Martín has breakfast with his family.",
         "alternatives": [],
         "translation": "Primero, Martín desayuna con su familia.",
-        "explanation": "El conector 'first' se coloca al inicio de la oración para marcar la primera acción de una secuencia.",
-        "tokens": [
-          "has",
-          "Martín",
-          "family",
-          "First,",
-          "his",
-          "with",
-          "breakfast"
-        ]
+        "explanation": "El conector 'first' se coloca al inicio de la oración para marcar la primera acción de una secuencia."
       },
       {
         "type": "word_order",
@@ -2436,16 +2723,7 @@
         "sentence": "Then she goes to work by bus.",
         "alternatives": [],
         "translation": "Después ella va al trabajo en colectivo.",
-        "explanation": "'Then' indica la acción que sigue cronológicamente y suele ir al comienzo de la oración.",
-        "tokens": [
-          "Then",
-          "bus",
-          "by",
-          "work",
-          "she",
-          "goes",
-          "to"
-        ]
+        "explanation": "'Then' indica la acción que sigue cronológicamente y suele ir al comienzo de la oración."
       },
       {
         "type": "word_order",
@@ -2453,16 +2731,7 @@
         "sentence": "Martín doesn't go to bed before midnight.",
         "alternatives": [],
         "translation": "Martín no se va a dormir antes de la medianoche.",
-        "explanation": "En presente simple negativo con tercera persona se usa 'doesn't' seguido del verbo base.",
-        "tokens": [
-          "midnight",
-          "bed",
-          "Martín",
-          "doesn't",
-          "to",
-          "go",
-          "before"
-        ]
+        "explanation": "En presente simple negativo con tercera persona se usa 'doesn't' seguido del verbo base."
       },
       {
         "type": "word_order",
@@ -2472,17 +2741,7 @@
           "Sofía reads a book before sleeping at night."
         ],
         "translation": "A la noche, Sofía lee un libro antes de dormir.",
-        "explanation": "'At night' es la expresión fija para referirse a esa parte del día, y puede ir al principio o al final de la oración.",
-        "tokens": [
-          "night,",
-          "a",
-          "sleeping",
-          "book",
-          "At",
-          "Sofía",
-          "before",
-          "reads"
-        ]
+        "explanation": "'At night' es la expresión fija para referirse a esa parte del día, y puede ir al principio o al final de la oración."
       },
       {
         "type": "error_correction",

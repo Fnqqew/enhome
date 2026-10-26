@@ -2,6 +2,53 @@
 
 Todas las versiones de Enhome. Los instaladores están en las [versiones publicadas](https://github.com/Fnqqew/enhome/releases) del repositorio.
 
+## 3.0.0 · 2026-10-26
+
+Más rápida, con voz incluida y ejercicios para escuchar y hablar todos los días.
+
+### Velocidad
+
+- **La práctica abre al instante:** cada subtema trae ejercicios cortos ya escritos y revisados, que se corrigen sin Claude. Los largos se piden cada uno por separado y en paralelo, y aparecen a medida que llegan. Cuando a un subtema le quedan pocos ejercicios sin usar, la app escribe más en segundo plano.
+- **La corrección no frena:** respondés y seguís con el siguiente mientras Claude corrige. La corrección aparece sola, y si falla se reintenta sin volver a responder.
+- **Claude más rápido:** trabaja en sesiones que quedan abiertas y con una cola que atiende primero lo que estás esperando. Corregir una traducción pasó de unos 30 segundos a unos 5, y a cada pedido se le manda solo lo que necesita.
+- **Exámenes:** las respuestas abiertas se corrigen en tanda.
+- Más correcciones al instante: los ejercicios traen los errores típicos ya explicados.
+
+### Voz
+
+- **Voces naturales incluidas** para cada idioma y para el español, que se bajan solas la primera vez y funcionan sin internet. La segunda voz del idioma se baja con la primera conversación.
+- Las conversaciones se escuchan **a dos voces** y cada frase queda guardada, así la segunda vez suena al instante.
+- *Ajustes → Voz*: elegís la voz de cada idioma (con una voz rioplatense para el español) o volvés a las de Windows.
+- El reconocimiento de voz usa un modelo chico o uno más preciso según tu compu, y se puede cambiar.
+
+### Ejercicios
+
+- **Seis formatos nuevos:**
+  - dictado;
+  - escucha de una charla con preguntas;
+  - pares mínimos (*ship* o *sheep*);
+  - repetí en voz alta, con el reconocimiento de voz;
+  - transformar una oración;
+  - ordenar las oraciones de un texto.
+- **Escuchar y hablar todos los días:** desde 8 ejercicios, la práctica suma siempre algo para escuchar y algo para decir en voz alta.
+- **Recordar más que reconocer:** con el nivel hay menos opción múltiple y más ejercicios en los que escribís la respuesta.
+- **Segundo intento:** si le errás a un ejercicio corto, te dice por qué no era y probás de nuevo. Si acertás, vale con menos puntaje. Si volvés a errar, va al cuaderno de errores y vuelve al final de la práctica, sin contar en el puntaje.
+
+### Repaso
+
+- Errores, palabras y frases pasan a un solo repaso con **FSRS**, que aprende de lo que recordás y te los muestra justo antes de que se te olviden. Se conservan el progreso y la experiencia.
+
+### Arreglos
+
+- El ícono de los accesos directos ya no queda en blanco después de correr las pruebas.
+- Las respuestas de Claude con un formato inesperado se registran para poder revisarlas.
+
+### Por dentro
+
+- Un módulo por tipo de ejercicio, cada idioma como un paquete con sus voces y los canales de la app separados por área.
+- `npm run content:check` revisa el temario y los bancos, y `npm run content:banks` los escribe con Claude.
+- 442 tests y 9 pruebas de interfaz.
+
 ## 2.0.0 · 2026-10-16
 
 Cuatro idiomas completos y mucho más para practicar.

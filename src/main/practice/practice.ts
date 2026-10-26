@@ -25,6 +25,7 @@ import {
   composeShort,
   DEFAULT_SESSION_OPTIONS,
   isLongType,
+  lateSwaps,
   longSlots,
   planPool,
   type SessionOptions,
@@ -481,7 +482,10 @@ export class Practice {
       transaction(this.db, () => {
         for (const e of exercises) insert.run(session.topic_id, session.subtopic_id, SKILL_OF_TYPE[e.type], e.type, JSON.stringify(e), session.id)
       })
-      if (exercises.some((e) => !isLongType(e.type))) ready()
+      if (exercises.some((e) => !isLongType(e.type))) {
+        if (this.hasSlots(session.id)) this.swapInLate(this.session(session.id))
+        ready()
+      }
       if (exercises.some((e) => isLongType(e.type))) this.fillLongSlots(this.session(session.id))
     }
 
@@ -540,6 +544,26 @@ export class Practice {
     )
     const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
     transaction(this.db, () => ids.forEach((id, i) => update.run(last + i + 1, id)))
+  }
+
+  // Lo de escuchar y hablar que llegó con la práctica empezada entra en lugar de un corto repetido.
+  private swapInLate(session: SessionRow): void {
+    if (session.completed_on) return
+    const rows = this.exerciseRows(session.id).filter((r) => !r.skipped)
+    const slotted = rows
+      .filter((r) => r.slot !== null && r.repeat_of === null)
+      .sort((a, b) => a.slot! - b.slot!)
+      .map((r) => ({ id: r.id, type: r.type, answered: r.first_try !== null || this.attempt(r.id) }))
+    const { excluded, size } = this.options()
+    const arrived = rows.filter((r) => r.slot === null && !excluded.includes(r.type))
+    const slotOf = new Map(rows.map((r) => [r.id, r.slot]))
+    const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
+    transaction(this.db, () => {
+      for (const [leaving, incoming] of lateSwaps(slotted, arrived, size)) {
+        update.run(null, leaving)
+        update.run(slotOf.get(leaving)!, incoming)
+      }
+    })
   }
 
   private sessionView(session: SessionRow): SessionView {

@@ -9,6 +9,22 @@ export interface Release {
 
 export const CHANGELOG: Release[] = [
   {
+    version: '3.0.0',
+    date: '2026-10-26',
+    title: 'Más rápida, con voz incluida y ejercicios para escuchar y hablar',
+    items: [
+      'La práctica abre al instante con ejercicios ya escritos y revisados, y los largos aparecen a medida que llegan.',
+      'Lo que corrige Claude no frena: seguís con el siguiente y la corrección aparece sola, en unos segundos.',
+      'Voces naturales para cada idioma y para el español, que se bajan solas y funcionan sin internet. Las conversaciones se escuchan a dos voces.',
+      'Seis ejercicios nuevos: dictado, escucha de una charla, pares mínimos, repetí en voz alta, transformar una oración y ordenar un texto.',
+      'Todos los días hay algo para escuchar y algo para decir en voz alta (en las prácticas de 8 ejercicios o más).',
+      'Si le errás a un ejercicio corto, te dice por qué no era y probás de nuevo. Lo que fallás dos veces vuelve al final de la práctica.',
+      'Con el nivel hay menos opción múltiple y más ejercicios en los que escribís la respuesta.',
+      'Errores, palabras y frases se repasan con FSRS, justo antes de que se te olviden.',
+      'Ajustes → Voz: elegí la voz de cada idioma, una voz rioplatense para el español o las voces de Windows.'
+    ]
+  },
+  {
     version: '2.0.0',
     date: '2026-10-16',
     title: 'Cuatro idiomas completos y mucho más para practicar',

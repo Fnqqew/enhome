@@ -227,3 +227,26 @@ export function composeSession(
 
   return chosen.sort(byTypeOrder).map((item) => item.id)
 }
+
+// Lo de escuchar y hablar que llegó con la práctica ya empezada (el banco no lo tenía y lo escribió
+// Claude): cada uno entra en el lugar de un corto que todavía no se respondió (mejor uno repetido), como
+// si hubiera llegado a tiempo, y la práctica no se alarga. El primero sin responder no se toca, porque es
+// el que el alumno tiene a la vista.
+// Devuelve los pares [sale, entra].
+export function lateSwaps(slotted: (PoolItem & { answered: boolean })[], arrived: PoolItem[], size: number): [number, number][] {
+  if (size < FULL_SESSION) return []
+  const showing = slotted.find((s) => !s.answered)?.id
+  const out = new Set<number>()
+  const swaps: [number, number][] = []
+  for (const group of [LISTENING_TYPES, SPEAKING_TYPES]) {
+    if (slotted.some((s) => group.includes(s.type))) continue
+    const incoming = arrived.find((a) => group.includes(a.type))
+    const remaining = (type: ExerciseType): number => slotted.filter((s) => s.type === type && !out.has(s.id)).length
+    const candidates = [...slotted].reverse().filter((s) => !s.answered && s.id !== showing && !out.has(s.id) && FLEXIBLE_TYPES.includes(s.type))
+    const leaving = candidates.find((s) => remaining(s.type) > 1) ?? candidates[0]
+    if (!incoming || !leaving) continue
+    out.add(leaving.id)
+    swaps.push([leaving.id, incoming.id])
+  }
+  return swaps
+}

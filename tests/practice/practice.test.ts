@@ -421,3 +421,33 @@ describe('segundo intento y repetición al final', () => {
     expect(practice.finish(view.id, MON)).toMatchObject({ correct: SESSION_SIZE - 1, total: SESSION_SIZE })
   })
 })
+
+describe('práctica que empieza antes de que llegue lo de escuchar', () => {
+  it('lo de escuchar y hablar que llega tarde entra en lugar de un corto repetido, sin alargar la práctica', async () => {
+    const LATE: ExerciseType[] = ['dictation', 'listening', 'minimal_pair', 'shadowing']
+    let release!: () => void
+    const later = new Promise<void>((resolve) => (release = resolve))
+    const lateGenerator: PoolGenerator = async ({ counts, onGroup }) => {
+      const all = (Object.entries(counts) as [ExerciseType, number][]).flatMap(([type, count]) =>
+        Array.from({ length: count }, (_, i) => sample(type, i))
+      )
+      onGroup?.(all.filter((e) => !LATE.includes(e.type)))
+      await later
+      onGroup?.(all.filter((e) => LATE.includes(e.type)))
+      return all
+    }
+    practice = new Practice(db, curriculum, progression, lateGenerator, grader)
+    const s = session(await practice.start(MON))
+    expect(s.exercises.some((e) => LATE.includes(e.type))).toBe(false)
+
+    release()
+    await new Promise((resolve) => setTimeout(resolve, 10))
+    const after = session(practice.getView(MON))
+    const types = after.exercises.map((e) => e.type)
+    expect(after.exercises).toHaveLength(s.exercises.length)
+    expect(types).toContain('shadowing')
+    expect(types.some((t) => ['dictation', 'listening', 'minimal_pair'].includes(t))).toBe(true)
+    // El primero sigue en su lugar: es el que el alumno tiene a la vista.
+    expect(after.exercises[0].id).toBe(s.exercises[0].id)
+  })
+})

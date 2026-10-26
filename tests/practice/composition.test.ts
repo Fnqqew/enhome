@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { EXERCISE_TYPES, type ExerciseType } from '../../src/shared/exercises'
-import { composeSession, longSlots, MIN_POOL_SIZE, planPool, SESSION_SIZE, type PoolItem } from '../../src/main/practice/composition'
+import { composeSession, lateSwaps, longSlots, MIN_POOL_SIZE, planPool, SESSION_SIZE, type PoolItem } from '../../src/main/practice/composition'
 
 const total = (plan: Partial<Record<ExerciseType, number>>): number => Object.values(plan).reduce((s, n) => s + (n ?? 0), 0)
 
@@ -176,5 +176,47 @@ describe('duración y formatos excluidos', () => {
     expect(longSlots(['writing'])).toBe(3)
     expect(longSlots(['writing'], ['dialogue', 'roleplay'])).toBe(2)
     expect(longSlots(['grammar'], ['translation_set'])).toBe(1)
+  })
+})
+
+describe('lo de escuchar y hablar que llega tarde', () => {
+  const slotted = (types: ExerciseType[], answered = 0): (PoolItem & { answered: boolean })[] =>
+    types.map((type, i) => ({ id: i + 1, type, answered: i < answered }))
+
+  it('entra en el lugar de un corto repetido, sin tocar el que está a la vista', () => {
+    const current = slotted([
+      'multiple_choice',
+      'multiple_choice',
+      'fill_blank',
+      'fill_blank',
+      'word_order',
+      'translation_set',
+      'dialogue',
+      'error_correction'
+    ])
+    const swaps = lateSwaps(
+      current,
+      [
+        { id: 20, type: 'dictation' },
+        { id: 21, type: 'shadowing' }
+      ],
+      8
+    )
+    expect(swaps).toEqual([
+      [4, 20],
+      [2, 21]
+    ])
+  })
+
+  it('no cambia nada si ya hay escucha, si no queda otro corto sin responder o si la práctica es corta', () => {
+    const arrived: PoolItem[] = [{ id: 20, type: 'dictation' }]
+    expect(lateSwaps(slotted(['dictation', 'multiple_choice', 'multiple_choice']), arrived, 8)).toEqual([])
+    expect(lateSwaps(slotted(['multiple_choice', 'multiple_choice', 'fill_blank'], 2), arrived, 8)).toEqual([])
+    expect(lateSwaps(slotted(['multiple_choice', 'multiple_choice', 'fill_blank', 'fill_blank']), arrived, 6)).toEqual([])
+  })
+
+  it('sin repetidos, sale el último corto sin responder', () => {
+    const current = slotted(['multiple_choice', 'fill_blank', 'word_order', 'translation', 'translation_set', 'dialogue'])
+    expect(lateSwaps(current, [{ id: 20, type: 'listening' }], 8)).toEqual([[4, 20]])
   })
 })

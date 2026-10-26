@@ -253,17 +253,7 @@
         "sentence": "Her brother works at a bank in Córdoba.",
         "alternatives": [],
         "translation": "El hermano de ella trabaja en un banco en Córdoba.",
-        "explanation": "El posesivo 'her' va siempre antes del sustantivo e indica que el hermano es de ella.",
-        "tokens": [
-          "Her",
-          "works",
-          "Córdoba",
-          "bank",
-          "at",
-          "brother",
-          "a",
-          "in"
-        ]
+        "explanation": "El posesivo 'her' va siempre antes del sustantivo e indica que el hermano es de ella."
       },
       {
         "type": "word_order",
@@ -271,15 +261,7 @@
         "sentence": "Their new house has three bedrooms.",
         "alternatives": [],
         "translation": "La casa nueva de ellos tiene tres habitaciones.",
-        "explanation": "'Their' se usa porque la casa pertenece a más de una persona.",
-        "tokens": [
-          "has",
-          "Their",
-          "new",
-          "bedrooms",
-          "three",
-          "house"
-        ]
+        "explanation": "'Their' se usa porque la casa pertenece a más de una persona."
       },
       {
         "type": "word_order",
@@ -287,16 +269,7 @@
         "sentence": "His girlfriend is a nurse in Salta.",
         "alternatives": [],
         "translation": "La novia de él es enfermera en Salta.",
-        "explanation": "'His' indica que la novia es de él, un varón.",
-        "tokens": [
-          "girlfriend",
-          "Salta",
-          "in",
-          "nurse",
-          "His",
-          "a",
-          "is"
-        ]
+        "explanation": "'His' indica que la novia es de él, un varón."
       },
       {
         "type": "word_order",
@@ -304,15 +277,7 @@
         "sentence": "Our flight leaves early tomorrow morning.",
         "alternatives": [],
         "translation": "Nuestro vuelo sale temprano mañana por la mañana.",
-        "explanation": "'Our' se usa porque el vuelo es de quien habla y de alguien más, como un compañero de viaje.",
-        "tokens": [
-          "tomorrow",
-          "leaves",
-          "morning",
-          "Our",
-          "flight",
-          "early"
-        ]
+        "explanation": "'Our' se usa porque el vuelo es de quien habla y de alguien más, como un compañero de viaje."
       },
       {
         "type": "word_order",
@@ -320,16 +285,7 @@
         "sentence": "Its screen shows an error message now.",
         "alternatives": [],
         "translation": "Su pantalla muestra un mensaje de error ahora.",
-        "explanation": "'Its' se usa para referirse a una cosa, en este caso un aparato electrónico.",
-        "tokens": [
-          "shows",
-          "an",
-          "message",
-          "now",
-          "Its",
-          "error",
-          "screen"
-        ]
+        "explanation": "'Its' se usa para referirse a una cosa, en este caso un aparato electrónico."
       },
       {
         "type": "error_correction",
@@ -602,6 +558,249 @@
             "explanation": "Lucas usa 'our' para hablar de su equipo en el hotel, el trabajo que mencionó justo antes en la misma oración."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Pablo lost his keys at the gym this morning.",
+        "alternatives": [],
+        "translation": "Pablo perdió sus llaves en el gimnasio esta mañana.",
+        "explanation": "El posesivo 'his' puede confundirse con la contracción 'he's' porque suenan parecido; acá 'his keys' indica que las llaves le pertenecen a Pablo."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Julieta's dog broke its leg yesterday.",
+        "alternatives": [],
+        "translation": "El perro de Julieta se rompió la pata ayer.",
+        "explanation": "'Its' (posesivo, sin apóstrofe) se confunde fácil con 'it's' (contracción de 'it is'); acá se usa para indicar que la pata es del perro."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Our neighbors are moving to Ushuaia next month.",
+        "alternatives": [],
+        "translation": "Nuestros vecinos se mudan a Ushuaia el mes que viene.",
+        "explanation": "'Our' puede sonar parecido a 'are' al principio de la oración; hay que escuchar que el posesivo acompaña a 'neighbors'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Nadia and Franco are selling their old car.",
+        "alternatives": [],
+        "translation": "Nadia y Franco están vendiendo su auto viejo.",
+        "explanation": "'Their' se usa porque el auto es de dos personas (Nadia y Franco); no confundir con 'there' o 'they're', que suenan igual."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "eats",
+          "its"
+        ],
+        "target": 1,
+        "meanings": [
+          "come (él/ella)",
+          "su (de eso)"
+        ],
+        "explanation": "La 'i' de 'its' es corta y relajada; la 'ee' de 'eats' es larga y tensa, estirando más los labios."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "hair",
+          "her"
+        ],
+        "target": 0,
+        "meanings": [
+          "pelo",
+          "su (de ella)"
+        ],
+        "explanation": "En 'her' el sonido vocálico es más cerrado y corto; en 'hair' la vocal se abre más y se alarga antes de la 'r'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "sheep",
+          "ship"
+        ],
+        "target": 1,
+        "meanings": [
+          "oveja",
+          "barco"
+        ],
+        "explanation": "La 'i' de 'ship' es breve y relajada; la 'ee' de 'sheep' es larga y tensa, un error común para hispanohablantes."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Can I borrow your phone for a minute?",
+        "translation": "¿Me prestás tu teléfono un minuto?",
+        "tip": "Uní 'Can I' como si fuera una sola palabra: 'canai', y subí un poco el tono al final por ser pregunta."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Her flight was delayed because of the storm.",
+        "translation": "Su vuelo se retrasó por la tormenta.",
+        "tip": "Conectá 'flight was' sin pausa y bajá el tono al llegar a 'storm' para sonar más natural."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Their kids go to school in Tucumán.",
+        "translation": "Sus hijos van a la escuela en Tucumán.",
+        "tip": "Marcá bien la 'th' de 'their' con la lengua entre los dientes para que no suene como 'there'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la visita al departamento y respondé las preguntas.",
+        "situation": "En una inmobiliaria de Buenos Aires, la agente Valeria le muestra un departamento en alquiler a la pareja Martín y Lucía.",
+        "lines": [
+          {
+            "speaker": "Valeria",
+            "text": "This is the living room. Your sofa will fit perfectly here."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Great! And is this our bedroom?"
+          },
+          {
+            "speaker": "Valeria",
+            "text": "Yes, exactly. Lucía, is this your closet?"
+          },
+          {
+            "speaker": "Lucía",
+            "text": "Yes, it's my closet. My clothes will go here."
+          },
+          {
+            "speaker": "Martín",
+            "text": "What about the kitchen? Is it big?"
+          },
+          {
+            "speaker": "Valeria",
+            "text": "Yes, and look, the oven has its own timer."
+          },
+          {
+            "speaker": "Lucía",
+            "text": "Perfect. Our neighbors seem nice too."
+          },
+          {
+            "speaker": "Valeria",
+            "text": "Yes, their apartment is right next door."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De quién es el placard que menciona Valeria?",
+            "options": [
+              "Martín",
+              "Valeria",
+              "Los vecinos",
+              "Lucía"
+            ],
+            "correctIndex": 3,
+            "explanation": "Valeria le pregunta a Lucía 'is this your closet?' y Lucía responde 'it's my closet', usando el posesivo my para lo que le pertenece a ella."
+          },
+          {
+            "prompt": "¿Qué característica tiene el horno según Valeria?",
+            "options": [
+              "Su propia puerta",
+              "Nada especial",
+              "Su propio reloj",
+              "Su propio temporizador"
+            ],
+            "correctIndex": 3,
+            "explanation": "Valeria dice 'the oven has its own timer'; its se usa para referirse a cosas u objetos, como el horno."
+          },
+          {
+            "prompt": "¿Dónde queda el departamento de los vecinos?",
+            "options": [
+              "En el piso de arriba",
+              "Al lado",
+              "Lejos",
+              "En el mismo piso"
+            ],
+            "correctIndex": 1,
+            "explanation": "Valeria dice 'their apartment is right next door', usando their porque el departamento le pertenece a los vecinos."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la consulta veterinaria y respondé las preguntas.",
+        "situation": "En una clínica veterinaria, la Dra. Ibarra atiende a Carlos, que trae a su perro Rocky, y a su vecina Noelia, que trae a su gata Mía.",
+        "lines": [
+          {
+            "speaker": "Dra. Ibarra",
+            "text": "Carlos, is this your dog?"
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Yes, his name is Rocky. He hurt his leg yesterday."
+          },
+          {
+            "speaker": "Dra. Ibarra",
+            "text": "I see. And Noelia, is this your cat?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "Yes, her name is Mía. Her eyes look a little red."
+          },
+          {
+            "speaker": "Dra. Ibarra",
+            "text": "Okay, let's check Rocky first. Does he eat his food normally?"
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Yes, but his energy is low today."
+          },
+          {
+            "speaker": "Dra. Ibarra",
+            "text": "And Mía? Does her appetite change?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "No, her appetite is normal, just her eyes are red."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué le pasó a Rocky?",
+            "options": [
+              "No come",
+              "Tiene los ojos rojos",
+              "Se lastimó la pata",
+              "Tiene fiebre"
+            ],
+            "correctIndex": 2,
+            "explanation": "Carlos dice 'he hurt his leg yesterday', usando his porque Rocky (el perro) es quien se lastimó la pata."
+          },
+          {
+            "prompt": "¿Qué problema tiene la gata de Noelia?",
+            "options": [
+              "Baja energía",
+              "Ojos rojos",
+              "No come",
+              "Pata lastimada"
+            ],
+            "correctIndex": 1,
+            "explanation": "Noelia dice 'her eyes look a little red', usando her para referirse a Mía, su gata."
+          },
+          {
+            "prompt": "¿Cómo está el apetito de Mía?",
+            "options": [
+              "No se sabe",
+              "Muy bajo",
+              "Muy alto",
+              "Normal"
+            ],
+            "correctIndex": 3,
+            "explanation": "Noelia responde 'her appetite is normal', usando her porque habla del apetito de su gata Mía."
+          }
+        ]
       }
     ],
     "genitivo": [
@@ -838,15 +1037,7 @@
         "sentence": "Sofía's brother works at a bank.",
         "alternatives": [],
         "translation": "El hermano de Sofía trabaja en un banco.",
-        "explanation": "'Sofía's brother' muestra posesión con 's: el hermano de Sofía.",
-        "tokens": [
-          "at",
-          "brother",
-          "a",
-          "works",
-          "bank",
-          "Sofía's"
-        ]
+        "explanation": "'Sofía's brother' muestra posesión con 's: el hermano de Sofía."
       },
       {
         "type": "word_order",
@@ -854,16 +1045,7 @@
         "sentence": "My parents' house is near the station.",
         "alternatives": [],
         "translation": "La casa de mis padres está cerca de la estación.",
-        "explanation": "'Parents'' indica posesión plural solo con apóstrofo, ya que 'parents' termina en s.",
-        "tokens": [
-          "station",
-          "My",
-          "house",
-          "parents'",
-          "near",
-          "the",
-          "is"
-        ]
+        "explanation": "'Parents'' indica posesión plural solo con apóstrofo, ya que 'parents' termina en s."
       },
       {
         "type": "word_order",
@@ -871,15 +1053,7 @@
         "sentence": "The children's bedroom has two beds.",
         "alternatives": [],
         "translation": "El dormitorio de los chicos tiene dos camas.",
-        "explanation": "'Children's' es el posesivo del plural irregular 'children'.",
-        "tokens": [
-          "The",
-          "beds",
-          "children's",
-          "two",
-          "bedroom",
-          "has"
-        ]
+        "explanation": "'Children's' es el posesivo del plural irregular 'children'."
       },
       {
         "type": "word_order",
@@ -887,16 +1061,7 @@
         "sentence": "It's cold today, so wear a jacket.",
         "alternatives": [],
         "translation": "Hoy hace frío, así que ponete una chaqueta.",
-        "explanation": "'It's' es la contracción de 'it is', usada para hablar del clima.",
-        "tokens": [
-          "wear",
-          "jacket",
-          "It's",
-          "so",
-          "cold",
-          "today,",
-          "a"
-        ]
+        "explanation": "'It's' es la contracción de 'it is', usada para hablar del clima."
       },
       {
         "type": "word_order",
@@ -904,16 +1069,7 @@
         "sentence": "The cat likes its new soft bed.",
         "alternatives": [],
         "translation": "Al gato le gusta su nueva cama blanda.",
-        "explanation": "'Its' es el adjetivo posesivo para animales, sin apóstrofo.",
-        "tokens": [
-          "its",
-          "cat",
-          "new",
-          "soft",
-          "The",
-          "bed",
-          "likes"
-        ]
+        "explanation": "'Its' es el adjetivo posesivo para animales, sin apóstrofo."
       },
       {
         "type": "error_correction",
@@ -1335,14 +1491,7 @@
           "Call me tomorrow morning, please."
         ],
         "translation": "Por favor, llamame mañana por la mañana.",
-        "explanation": "'Me' es el pronombre objeto que va después del verbo 'call' para referirse al hablante.",
-        "tokens": [
-          "morning",
-          "Please",
-          "me",
-          "tomorrow",
-          "call"
-        ]
+        "explanation": "'Me' es el pronombre objeto que va después del verbo 'call' para referirse al hablante."
       },
       {
         "type": "word_order",
@@ -1350,16 +1499,7 @@
         "sentence": "Can you pick them up at five?",
         "alternatives": [],
         "translation": "¿Podés pasar a buscarlos a las cinco?",
-        "explanation": "'Them' es el pronombre objeto que se usa para referirse a personas ya mencionadas, en este caso en plural.",
-        "tokens": [
-          "Can",
-          "five",
-          "up",
-          "pick",
-          "at",
-          "them",
-          "you"
-        ]
+        "explanation": "'Them' es el pronombre objeto que se usa para referirse a personas ya mencionadas, en este caso en plural."
       },
       {
         "type": "word_order",
@@ -1369,15 +1509,7 @@
           "Tomorrow, the nurse will call him."
         ],
         "translation": "La enfermera lo va a llamar mañana.",
-        "explanation": "'Him' es el pronombre objeto que va después del verbo 'call' para referirse a un hombre.",
-        "tokens": [
-          "call",
-          "tomorrow",
-          "him",
-          "The",
-          "nurse",
-          "will"
-        ]
+        "explanation": "'Him' es el pronombre objeto que va después del verbo 'call' para referirse a un hombre."
       },
       {
         "type": "word_order",
@@ -1385,17 +1517,7 @@
         "sentence": "This apartment is small, but I like it.",
         "alternatives": [],
         "translation": "Este departamento es chico, pero me gusta.",
-        "explanation": "'It' es el pronombre objeto que se usa para referirse a cosas en singular, como 'apartment'.",
-        "tokens": [
-          "small,",
-          "it",
-          "is",
-          "apartment",
-          "like",
-          "but",
-          "This",
-          "I"
-        ]
+        "explanation": "'It' es el pronombre objeto que se usa para referirse a cosas en singular, como 'apartment'."
       },
       {
         "type": "word_order",
@@ -1403,16 +1525,7 @@
         "sentence": "Do you want to come with us?",
         "alternatives": [],
         "translation": "¿Querés venir con nosotros?",
-        "explanation": "'Us' es el pronombre objeto que va después de la preposición 'with' para referirse al hablante y otra persona.",
-        "tokens": [
-          "with",
-          "to",
-          "you",
-          "come",
-          "us",
-          "want",
-          "Do"
-        ]
+        "explanation": "'Us' es el pronombre objeto que va después de la preposición 'with' para referirse al hablante y otra persona."
       },
       {
         "type": "error_correction",
@@ -1827,17 +1940,7 @@
         "sentence": "The bank is next to the pharmacy downtown.",
         "alternatives": [],
         "translation": "El banco está al lado de la farmacia en el centro.",
-        "explanation": "El orden en inglés es sujeto + verbo + preposición de lugar + complemento; 'next to' significa 'al lado de'.",
-        "tokens": [
-          "pharmacy",
-          "is",
-          "bank",
-          "downtown",
-          "the",
-          "to",
-          "next",
-          "The"
-        ]
+        "explanation": "El orden en inglés es sujeto + verbo + preposición de lugar + complemento; 'next to' significa 'al lado de'."
       },
       {
         "type": "word_order",
@@ -1845,18 +1948,7 @@
         "sentence": "Her office is between the bakery and the bank.",
         "alternatives": [],
         "translation": "Su oficina está entre la panadería y el banco.",
-        "explanation": "Se usa 'between' cuando hay dos referencias, aquí la panadería y el banco.",
-        "tokens": [
-          "is",
-          "Her",
-          "the",
-          "between",
-          "the",
-          "bakery",
-          "bank",
-          "office",
-          "and"
-        ]
+        "explanation": "Se usa 'between' cuando hay dos referencias, aquí la panadería y el banco."
       },
       {
         "type": "word_order",
@@ -1864,16 +1956,7 @@
         "sentence": "Marcos is at work until six o'clock.",
         "alternatives": [],
         "translation": "Marcos está en el trabajo hasta las seis.",
-        "explanation": "'At work' es la expresión fija para decir que alguien está en su trabajo.",
-        "tokens": [
-          "until",
-          "Marcos",
-          "o'clock",
-          "six",
-          "work",
-          "at",
-          "is"
-        ]
+        "explanation": "'At work' es la expresión fija para decir que alguien está en su trabajo."
       },
       {
         "type": "word_order",
@@ -1881,18 +1964,7 @@
         "sentence": "The children are playing in front of the school.",
         "alternatives": [],
         "translation": "Los chicos están jugando delante de la escuela.",
-        "explanation": "'In front of' significa 'delante de' y se coloca antes del lugar de referencia.",
-        "tokens": [
-          "The",
-          "playing",
-          "are",
-          "children",
-          "front",
-          "the",
-          "of",
-          "school",
-          "in"
-        ]
+        "explanation": "'In front of' significa 'delante de' y se coloca antes del lugar de referencia."
       },
       {
         "type": "word_order",
@@ -1900,16 +1972,7 @@
         "sentence": "Our new apartment is on Defensa Street.",
         "alternatives": [],
         "translation": "Nuestro departamento nuevo está en la calle Defensa.",
-        "explanation": "Con nombres de calles se usa 'on', no 'in' ni 'at'.",
-        "tokens": [
-          "on",
-          "Our",
-          "new",
-          "is",
-          "Street",
-          "apartment",
-          "Defensa"
-        ]
+        "explanation": "Con nombres de calles se usa 'on', no 'in' ni 'at'."
       },
       {
         "type": "error_correction",
@@ -2406,17 +2469,7 @@
           "The interview is at ten o'clock on Monday."
         ],
         "translation": "La entrevista es el lunes a las diez.",
-        "explanation": "Los días de la semana van con 'on' y las horas puntuales van con 'at'; ambos complementos de tiempo pueden intercambiar su orden en la oración.",
-        "tokens": [
-          "is",
-          "on",
-          "interview",
-          "The",
-          "ten",
-          "Monday",
-          "at",
-          "o'clock"
-        ]
+        "explanation": "Los días de la semana van con 'on' y las horas puntuales van con 'at'; ambos complementos de tiempo pueden intercambiar su orden en la oración."
       },
       {
         "type": "word_order",
@@ -2424,17 +2477,7 @@
         "sentence": "Valentina's flight leaves at six in the morning.",
         "alternatives": [],
         "translation": "El vuelo de Valentina sale a las seis de la mañana.",
-        "explanation": "Las horas puntuales van con 'at' y las partes del día como 'morning' van con 'in'.",
-        "tokens": [
-          "at",
-          "six",
-          "leaves",
-          "Valentina's",
-          "the",
-          "morning",
-          "in",
-          "flight"
-        ]
+        "explanation": "Las horas puntuales van con 'at' y las partes del día como 'morning' van con 'in'."
       },
       {
         "type": "word_order",
@@ -2442,15 +2485,7 @@
         "sentence": "Nico's birthday is on July ninth.",
         "alternatives": [],
         "translation": "El cumpleaños de Nico es el nueve de julio.",
-        "explanation": "Las fechas completas, con mes y día, van con la preposición 'on'.",
-        "tokens": [
-          "is",
-          "Nico's",
-          "birthday",
-          "ninth",
-          "July",
-          "on"
-        ]
+        "explanation": "Las fechas completas, con mes y día, van con la preposición 'on'."
       },
       {
         "type": "word_order",
@@ -2458,16 +2493,7 @@
         "sentence": "Valentina starts her new job in March.",
         "alternatives": [],
         "translation": "Valentina empieza su nuevo trabajo en marzo.",
-        "explanation": "Los meses solos van con la preposición 'in'.",
-        "tokens": [
-          "Valentina",
-          "starts",
-          "her",
-          "new",
-          "job",
-          "March",
-          "in"
-        ]
+        "explanation": "Los meses solos van con la preposición 'in'."
       },
       {
         "type": "word_order",
@@ -2475,16 +2501,7 @@
         "sentence": "Nico has a doctor's appointment next Tuesday.",
         "alternatives": [],
         "translation": "Nico tiene un turno con el médico el martes que viene.",
-        "explanation": "Antes de 'next' no se usa ninguna preposición de tiempo.",
-        "tokens": [
-          "Nico",
-          "next",
-          "a",
-          "appointment",
-          "doctor's",
-          "has",
-          "Tuesday"
-        ]
+        "explanation": "Antes de 'next' no se usa ninguna preposición de tiempo."
       },
       {
         "type": "error_correction",
