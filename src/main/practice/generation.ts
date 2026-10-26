@@ -19,7 +19,7 @@ import {
 } from '../claude/quality'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 import { SESSION_SIZE } from './composition'
-import { prepareExercise } from './exercises'
+import { formatGuide as formatGuideFor, prepareExercise, reviewChecks } from '../../shared/exercise-types'
 
 export interface PoolRequest {
   topic: CurriculumTopic
@@ -69,21 +69,9 @@ const KIND_GUIDE: Record<UnitKind, string> = {
   review: 'Es un repaso: ejercicios variados que mezclen los puntos clave del subtema.'
 }
 
-// Cómo es cada formato. El idioma cambia en qué lengua van las oraciones; la extensión depende del nivel.
+// Cómo es cada formato (lo define cada tipo). El idioma cambia en qué lengua van las oraciones.
 export function formatGuide(language: LanguageId): string {
-  const l = languageInfo(language).name
-  return `Formatos (el campo type indica cuál es):
-- multiple_choice: prompt en ${l} (marcá el hueco con ___ si corresponde); 4 opciones con una sola correcta; correctIndex es su posición (0 a 3).
-- fill_blank: sentence en ${l} con exactamente un ___; hint con una pista breve entre paréntesis (por ejemplo, el infinitivo del verbo) o vacío; answers con todas las variantes válidas (con y sin contracción o apóstrofo cuando el idioma las tenga).
-- word_order: sentence es una oración correcta en ${l} de 5 a 12 palabras (el alumno la arma con las palabras mezcladas); alternatives con otros órdenes válidos o vacío; translation es su traducción al español.
-- error_correction: sentence en ${l} con un solo error relacionado con el subtema; answers con la oración corregida y sus variantes válidas.
-- translation: spanish es una oración completa en ${spanish()} para traducir al ${l}; answers con 1 a 3 traducciones correctas.
-- translation_set: situation describe en español una escena cotidiana; sentences son 3 o 4 oraciones completas de esa misma escena, cada una con spanish, answers (traducciones válidas al ${l}) y explanation. Las oraciones tienen que encadenarse como un relato, no ser frases sueltas.
-- dialogue: situation describe en español dónde pasa la charla y con quién; script es la conversación en orden, alternando partes: las del otro con role "other", speaker (el nombre o rol de quien habla) y text en ${l}; las del alumno con role "you", cue (en español, qué tiene que decir, concreto) y sample (una respuesta modelo natural en ${l}). Tiene que haber 2 o 3 turnos del alumno y la charla tiene que cerrar bien.
-- roleplay: situation plantea en español una situación real (un trámite, una compra, un reclamo, una presentación); goal es lo que el alumno tiene que conseguir; steps son 3 o 4 pasos en orden, cada uno con cue (qué tiene que decir o preguntar, en español) y sample (cómo se diría en ${l}). Los pasos tienen que avanzar la situación, no repetirse.
-- reading: text en ${l} con 2 o 3 preguntas de opción múltiple (4 opciones, una correcta). Extensión: A1 y A2, de 90 a 140 palabras; B1, de 140 a 200; B2, de 180 a 250; C1, de 220 a 300.
-- writing: task en español con una consigna concreta y realista; minWords y maxWords acordes al nivel (A1: entre 35 y 70; A2: entre 60 y 110; B1: entre 100 y 160; B2: entre 150 y 220; C1: entre 200 y 280); guidance con 2 a 4 puntos de qué incluir; sampleAnswer con una respuesta modelo en ${l}.
-Todas las instruction van en español y son breves. Toda explanation va en español, en una o dos oraciones, y explica la regla.`
+  return formatGuideFor({ language: languageInfo(language).name, spanish: spanish() })
 }
 
 const immersionGuide = (language: LanguageId): string =>
@@ -132,15 +120,7 @@ export function buildPoolReviewPrompt(request: PoolRequest, exercises: Generated
 
 Otro docente generó estos ejercicios de práctica. Revisalos uno por uno.
 ${qualityChecklist(topic.language)}
-- fill_blank: el hueco admite solo las respuestas de answers, y answers incluye todas las variantes válidas (con y sin contracción).
-- word_order: la oración es correcta y alternatives incluye los otros órdenes válidos.
-- error_correction: la oración tiene exactamente un error y answers lo corrige.
-- translation: answers son traducciones correctas y naturales.
-- translation_set: las oraciones cuentan una misma escena en orden y cada answers es una traducción natural.
-- dialogue: la conversación tiene sentido de principio a fin, cada cue pide algo concreto y cada sample responde de verdad a lo anterior.
-- roleplay: los pasos avanzan hacia el objetivo, no se repiten y cada sample es lo que diría un hablante nativo en esa situación.
-- reading: cada respuesta se deduce del texto y solo una opción es correcta.
-- writing: la consigna es clara, la extensión es acorde al nivel y sampleAnswer no tiene errores.
+${reviewChecks()}
 
 Si un ejercicio tiene un error, corregilo; si no tiene arreglo, reemplazalo por otro del mismo tipo.
 ${CORRECTIONS_GUIDE}

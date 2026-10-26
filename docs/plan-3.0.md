@@ -87,11 +87,11 @@ Mediciones e investigación de respaldo:
 
 ## Estructura del programa
 
-- [ ] 47 Cada tipo de ejercicio, un módulo
-- [ ] 48 Cada idioma, un paquete
+- [x] 47 Cada tipo de ejercicio, un módulo
+- [x] 48 Cada idioma, un paquete
 - [x] 49 Un motor de Claude
 - [ ] 50 Un motor de voz aparte
-- [ ] 51 El proceso principal ordenado por áreas
+- [x] 51 El proceso principal ordenado por áreas
 - [ ] 52 Pantallas grandes divididas
 - [ ] 53 Un solo repaso
 - [ ] 54 Herramientas para el contenido

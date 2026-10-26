@@ -1,6 +1,6 @@
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
-  "include": ["src/renderer/src/**/*", "src/preload/*.d.ts", "src/shared/**/*"],
+  "include": ["src/renderer/src/**/*", "src/preload/*.d.ts", "src/shared/**/*", "content/*/idioma.json"],
   "compilerOptions": {
     "composite": true,
     "jsx": "react-jsx",

@@ -18,13 +18,13 @@ import {
   type ResumeResult,
   type TestsOverview
 } from '../../shared/exams'
-import type { ExerciseAnswer, ExerciseFeedback, OpenExercise, StoredExercise } from '../../shared/exercises'
+import type { ExerciseAnswer, ExerciseFeedback, OpenExercise } from '../../shared/exercises'
 import { transaction, type Db } from '../db/database'
 import type { AnswerTag } from '../engine/planning'
 import type { Progression } from '../engine/progression'
 import type { OpenAnswerGrader } from '../practice/ai-grading'
 import { toPublicExercise } from '../practice/exercises'
-import { gradeAuto } from '../practice/grading'
+import { emptyAnswer, gradeAuto } from '../../shared/exercise-types'
 import { secondChanceFor } from '../rewards/inventory'
 import type { ExamGenerator, ExamRequest } from './generation'
 import { planMockExam, planSubtopicMock, planWeeklyExam, type ExamItemPlan } from './plan'
@@ -56,26 +56,6 @@ interface AnswerRow {
   question_index: number
   answer: string | null
   feedback: string | null
-}
-
-// Respuesta vacía para corregir una pregunta sin responder (siempre queda incorrecta, sin usar IA).
-function emptyAnswer(exercise: StoredExercise): ExerciseAnswer {
-  switch (exercise.type) {
-    case 'multiple_choice':
-      return { type: exercise.type, choice: -1 }
-    case 'reading':
-      return { type: exercise.type, choices: [] }
-    case 'word_order':
-      return { type: exercise.type, tokens: [] }
-    case 'translation_set':
-      return { type: exercise.type, texts: exercise.sentences.map(() => '') }
-    case 'dialogue':
-      return { type: exercise.type, texts: exercise.script.filter((line) => line.role === 'you').map(() => '') }
-    case 'roleplay':
-      return { type: exercise.type, texts: exercise.steps.map(() => '') }
-    default:
-      return { type: exercise.type, text: '' }
-  }
 }
 
 const round1 = (n: number): number => Math.round(n * 10) / 10

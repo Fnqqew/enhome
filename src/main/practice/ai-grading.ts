@@ -5,6 +5,7 @@ import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import type { ExerciseFeedback, ExercisePart, OpenExercise } from '../../shared/exercises'
 import { askClaude, prewarmClaude } from '../claude/bridge'
+import { kindOf, modelAnswer, partSources, reviewPrompt } from '../../shared/exercise-types'
 import { roleSystemPrompt, spanish } from '../claude/quality'
 import { languageInfo, type LanguageId } from '../../shared/languages'
 
@@ -18,8 +19,7 @@ export interface OpenAnswerRequest {
 
 export type OpenAnswerGrader = (request: OpenAnswerRequest) => Promise<ExerciseFeedback>
 
-// Puntaje mínimo para considerar correcto un texto escrito.
-export const WRITING_PASS_SCORE = 6
+export { WRITING_PASS_SCORE } from '../../shared/exercise-types/production'
 
 const systemPrompt = (language: LanguageId): string => roleSystemPrompt(language, 'docente', 'Corregís con precisión y de forma alentadora.')
 
@@ -62,120 +62,14 @@ function answered(answers: string[], index: number): string {
 
 export function buildReviewPrompt(request: OpenAnswerRequest): string {
   const { exercise, answers } = request
-  const head = context(request)
-  const target = languageInfo(request.topic.language).name
-
-  switch (exercise.type) {
-    case 'translation':
-      return `${head}
-
-Ejercicio de traducción al ${target}: «${exercise.spanish}»
-Traducciones de referencia: ${exercise.answers.map((a) => `«${a}»`).join(', ')}
-Respuesta del alumno: ${answered(answers, 0)}
-
-Evaluá si la traducción es aceptable: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas, puntuación ni diferencias de estilo.
-Un artículo, un auxiliar o una preposición que falta o sobra es un error de gramática, no de estilo: en ese caso no es aceptable aunque se entienda.
-
-${outputGuide()}`
-
-    case 'translation_set':
-      return `${head}
-
-El alumno tradujo al ${target} una tanda de oraciones sobre esta situación: ${exercise.situation}
-
-${exercise.sentences
-  .map(
-    (s, i) => `${i + 1}. Español: «${s.spanish}»\n   Referencias: ${s.answers.map((a) => `«${a}»`).join(', ')}\n   Alumno: ${answered(answers, i)}`
-  )
-  .join('\n')}
-
-Evaluá cada oración por separado: tiene que conservar el significado y usar bien la gramática del subtema. Las referencias no son las únicas respuestas válidas. No penalices mayúsculas ni puntuación.
-Un artículo, un auxiliar o una preposición que falta o sobra es un error de gramática: esa oración no es correcta aunque se entienda.
-
-${outputGuide()}
-${PARTS_GUIDE}`
-
-    case 'dialogue': {
-      let turn = 0
-      const script = exercise.script
-        .map((line) => {
-          if (line.role === 'other') return `${line.speaker}: ${line.text}`
-          const i = turn++
-          return `Alumno (tenía que: ${line.cue})\n   Respuesta modelo: «${line.sample}»\n   Escribió: ${answered(answers, i)}`
-        })
-        .join('\n')
-
-      return `${head}
-
-El alumno completó sus turnos en esta conversación. Situación: ${exercise.situation}
-
-${script}
-
-Evaluá cada turno del alumno: tiene que responder lo que pide la consigna, sonar natural en una conversación real y usar bien la gramática del subtema. La respuesta modelo es solo una opción válida entre varias.
-
-${outputGuide()}
-${PARTS_GUIDE}`
-    }
-
-    case 'roleplay':
-      return `${head}
-
-El alumno resolvió una situación simulada. Situación: ${exercise.situation}
-Objetivo: ${exercise.goal}
-
-${exercise.steps.map((s, i) => `${i + 1}. Tenía que: ${s.cue}\n   Respuesta modelo: «${s.sample}»\n   Escribió: ${answered(answers, i)}`).join('\n')}
-
-Evaluá cada paso: tiene que cumplir lo que pide la consigna, ser apropiado para la situación (registro y cortesía) y usar bien la gramática del subtema. La respuesta modelo es solo una opción válida entre varias.
-
-${outputGuide()}
-${PARTS_GUIDE}`
-
-    default:
-      return `${head}
-
-Consigna de escritura: ${exercise.task}
-Qué tenía que incluir:
-${exercise.guidance.map((g) => `- ${g}`).join('\n')}
-Extensión pedida: entre ${exercise.minWords} y ${exercise.maxWords} palabras.
-Respuesta modelo (solo orientativa): «${exercise.sampleAnswer}»
-
-Texto del alumno:
-${answered(answers, 0)}
-
-Criterios de corrección:
-1. Uso correcto de lo que practica el subtema (40 %).
-2. Gramática y ortografía en general (25 %).
-3. Cumple la consigna y los puntos pedidos (25 %).
-4. Vocabulario y claridad acordes al nivel ${request.topic.level} (10 %).
-Si la extensión está muy por fuera de lo pedido, mencionalo y descontá en el criterio 3.
-
-${outputGuide()}`
-  }
-}
-
-// Las consignas y las respuestas modelo de cada parte, para armar la devolución.
-function partSources(exercise: OpenExercise): { cue: string; expected: string }[] {
-  switch (exercise.type) {
-    case 'translation_set':
-      return exercise.sentences.map((s) => ({ cue: s.spanish, expected: s.answers[0] }))
-    case 'dialogue':
-      return exercise.script.flatMap((line) => (line.role === 'you' ? [{ cue: line.cue, expected: line.sample }] : []))
-    case 'roleplay':
-      return exercise.steps.map((s) => ({ cue: s.cue, expected: s.sample }))
-    default:
-      return []
-  }
-}
-
-function modelAnswer(exercise: OpenExercise): string | null {
-  switch (exercise.type) {
-    case 'translation':
-      return exercise.answers[0]
-    case 'writing':
-      return exercise.sampleAnswer
-    default:
-      return null
-  }
+  return reviewPrompt(exercise, {
+    head: context(request),
+    target: languageInfo(request.topic.language).name,
+    level: request.topic.level,
+    answered: (index) => answered(answers, index),
+    output: outputGuide(),
+    parts: PARTS_GUIDE
+  })
 }
 
 // Qué modelo corrige cada tipo. Medido el 2026-10-16 con tests/live/grading-models: a través de Claude Code
@@ -216,12 +110,13 @@ export async function gradeOpenAnswer(request: OpenAnswerRequest, model = GRADIN
         }))
       : undefined
 
-  const passes = exercise.type === 'writing' ? review.score >= WRITING_PASS_SCORE : review.acceptable
+  const kind = kindOf(exercise.type)
+  const passes = kind.passScore !== undefined ? review.score >= kind.passScore : review.acceptable
   return {
     correct: passes,
     score: review.score,
     correctAnswer: modelAnswer(exercise),
-    explanation: exercise.type === 'translation' ? exercise.explanation : '',
+    explanation: kind.explanation?.(exercise) ?? '',
     parts,
     review: { correctedText: review.correctedText, comments: review.comments, mistakes: review.mistakes }
   }
