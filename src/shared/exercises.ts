@@ -173,6 +173,8 @@ export interface SessionExerciseView {
   retry: string | null
   // Salió mal y vuelve al final de la práctica para fijarlo (no cuenta en el puntaje).
   repeat: boolean
+  // Si es de un tópico anterior que se mezcló en la práctica, cuál.
+  from: string | null
 }
 
 export interface SessionView {

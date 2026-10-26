@@ -61,7 +61,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [~] 22 Recordar en vez de releer
 - [x] 23 Corrección que hace pensar
 - [x] 24 Repaso con FSRS
-- [ ] 25 Mezclar lo que se confunde
+- [x] 25 Mezclar lo que se confunde
 - [x] 26 Escucha todos los días
 - [x] 27 Hablar todos los días
 - [x] 28 Pares mínimos y sonidos difíciles
@@ -69,7 +69,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [ ] 30 La historia de la semana
 - [ ] 31 La misión de la semana
 - [ ] 32 Conversación por voz con Claude
-- [ ] 33 Ejercicios hechos con tus errores
+- [x] 33 Ejercicios hechos con tus errores
 - [ ] 34 Lecturas y escuchas largas a tu nivel
 - [x] 35 Formatos nuevos
 - [ ] 36 Ejercicio rediseñado

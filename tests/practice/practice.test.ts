@@ -10,7 +10,8 @@ import { Practice } from '../../src/main/practice/practice'
 import { addDays } from '../../src/shared/dates'
 import type { ExerciseAnswer, ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
 import { emptyAnswer } from '../../src/shared/exercise-types'
-import { rightAnswer, sample } from '../helpers/exercises'
+import { recordMistake } from '../../src/main/review/notebook'
+import { generatedSample, rightAnswer, sample } from '../helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
 
@@ -473,5 +474,40 @@ describe('el recorrido del día', () => {
     for (const e of session(practice.getView(MON)).exercises.filter((x) => x.repeat)) await practice.answer(e.id, rightAnswer(stored(e.id)))
     const result = practice.finish(s.id, MON)
     expect(result).toMatchObject({ subtopicTitle: 'Pronombres personales', newMistakes: 1, dueTomorrow: 1 })
+  })
+})
+
+describe('lo de otros tópicos que se mezcla', () => {
+  it('trae ejercicios de los subtemas con más errores de otros tópicos, sin alargar la práctica', async () => {
+    const other = curriculum[1]
+    const subtopicId = other.subtopics[0].id
+    recordMistake(
+      db,
+      {
+        source: 'practice',
+        sourceId: 999,
+        topicId: other.id,
+        subtopicId,
+        exercise: sample('fill_blank', 'x'),
+        given: { type: 'fill_blank', text: 'z' }
+      },
+      MON
+    )
+    const picked: string[] = []
+    practice = new Practice(db, curriculum, progression, generator, grader, undefined, (topic, sub) => {
+      picked.push(`${topic.id}/${sub}`)
+      return generatedSample('fill_blank', `mezcla ${sub}`)
+    })
+    const s = session(await practice.start(MON))
+    expect(s.exercises).toHaveLength(SESSION_SIZE)
+    expect(picked).toEqual([`${other.id}/${subtopicId}`])
+    const mixed = s.exercises.filter((e) => e.from)
+    expect(mixed.map((e) => e.from)).toEqual([other.title])
+
+    // Si sale mal, el error queda anotado en su tópico.
+    const wrong: ExerciseAnswer = { type: 'fill_blank', text: 'zzz' }
+    await practice.answer(mixed[0].id, wrong, MON)
+    await practice.answer(mixed[0].id, wrong, MON)
+    expect((db.prepare('SELECT COUNT(*) AS n FROM cards WHERE topic_id = ?').get(other.id) as { n: number }).n).toBe(2)
   })
 })

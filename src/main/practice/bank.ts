@@ -84,6 +84,16 @@ export class ExerciseBank {
     return { taken, missing }
   }
 
+  // Un ejercicio de alguno de estos formatos (el primero que haya, en orden al azar), preferentemente
+  // uno que el alumno no vio.
+  pick(topic: CurriculumTopic, subtopicId: string, types: ExerciseType[], random: () => number = Math.random): GeneratedExercise | null {
+    for (const type of shuffled(types, random)) {
+      const { taken } = this.take(topic, subtopicId, { [type]: 1 }, [], random)
+      if (taken[0]) return taken[0]
+    }
+    return null
+  }
+
   add(topicId: string, subtopicId: string, exercises: GeneratedExercise[], today: string): void {
     const insert = this.db.prepare('INSERT INTO bank_exercises (topic_id, subtopic_id, type, payload, created_on) VALUES (?, ?, ?, ?, ?)')
     for (const e of exercises) insert.run(topicId, subtopicId, e.type, JSON.stringify(e), today)
@@ -106,6 +116,9 @@ export class ExerciseBank {
       .finally(() => this.filling.delete(id))
   }
 }
+
+// Los formatos que se mezclan de tópicos anteriores: los que piden recordar la respuesta.
+export const MIX_TYPES: ExerciseType[] = ['fill_blank', 'error_correction', 'transformation', 'translation', 'multiple_choice']
 
 // El generador de la práctica: cortos del banco (y de Claude lo que falte) y cada largo en su pedido.
 export function bankedGenerator(bank: ExerciseBank, ask?: Ask): PoolGenerator {

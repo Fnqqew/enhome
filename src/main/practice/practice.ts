@@ -27,6 +27,8 @@ import {
   isLongType,
   lateSwaps,
   longSlots,
+  mixCount,
+  mixSwaps,
   planPool,
   type SessionOptions,
   type TypePreferences
@@ -38,6 +40,7 @@ import { gradeAuto } from './grading'
 import { quantity, usedHints } from '../rewards/inventory'
 import { recordMistake } from '../review/notebook'
 import { addDays, toLocalDate } from '../../shared/dates'
+import { shuffled } from '../../shared/shuffle'
 import { countCards } from '../review/cards'
 
 export class PracticeError extends Error {}
@@ -72,7 +75,12 @@ interface ExerciseRow {
   session_id: number | null
   first_try: string | null
   repeat_of: number | null
+  topic_id: string
+  subtopic_id: string
 }
+
+// De dónde salen los ejercicios de tópicos anteriores que se mezclan en la práctica (los bancos).
+export type MixSource = (topic: CurriculumTopic, subtopicId: string) => GeneratedExercise | null
 
 // Lo que vuelve al final va después de todo (también de los largos que llegan con la práctica empezada).
 const REPEAT_SLOT = 1000
@@ -107,7 +115,7 @@ interface Generation {
   ticket: Ticket
 }
 
-const EXERCISE_COLUMNS = 'id, type, payload, slot, skipped, session_id, first_try, repeat_of'
+const EXERCISE_COLUMNS = 'id, type, payload, slot, skipped, session_id, first_try, repeat_of, topic_id, subtopic_id'
 
 const errorText = (err: unknown): string => (err instanceof Error ? err.message : String(err))
 
@@ -129,7 +137,8 @@ export class Practice {
     private readonly generatePool: PoolGenerator,
     private readonly gradeOpen: OpenAnswerGrader,
     // Duración y formatos excluidos, de Ajustes (se leen en cada práctica nueva).
-    private readonly options: () => SessionOptions = () => DEFAULT_SESSION_OPTIONS
+    private readonly options: () => SessionOptions = () => DEFAULT_SESSION_OPTIONS,
+    private readonly mixSource?: MixSource
   ) {
     this.topics = new Map(curriculum.map((t) => [t.id, t]))
   }
@@ -261,8 +270,8 @@ export class Practice {
     graded: ExerciseFeedback,
     today: string
   ): void {
-    const row = this.db.prepare('SELECT first_try, repeat_of FROM exercises WHERE id = ?').get(exerciseId) as
-      Pick<ExerciseRow, 'first_try' | 'repeat_of'> | undefined
+    const row = this.db.prepare('SELECT first_try, repeat_of, topic_id, subtopic_id FROM exercises WHERE id = ?').get(exerciseId) as
+      Pick<ExerciseRow, 'first_try' | 'repeat_of' | 'topic_id' | 'subtopic_id'> | undefined
     const feedback = row?.first_try && graded.correct ? secondTry(graded) : graded
     transaction(this.db, () => {
       this.db
@@ -273,7 +282,15 @@ export class Practice {
       if (!feedback.correct && !row?.repeat_of) {
         recordMistake(
           this.db,
-          { source: 'practice', sourceId: exerciseId, topicId: session.topic_id, subtopicId: session.subtopic_id, exercise: stored, given: answer },
+          {
+            source: 'practice',
+            sourceId: exerciseId,
+            // Lo que vino de un tópico anterior se anota en su tópico.
+            topicId: row?.topic_id ?? session.topic_id,
+            subtopicId: row?.subtopic_id ?? session.subtopic_id,
+            exercise: stored,
+            given: answer
+          },
           today
         )
         if (canRetry(stored.type)) this.repeatAtEnd(exerciseId, session, stored)
@@ -535,6 +552,70 @@ export class Practice {
       : composeShort(pool, subtopic.focus, this.preferences(), options)
     const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
     transaction(this.db, () => ids.forEach((id, i) => update.run(i + 1, id)))
+    this.mixIn(session)
+  }
+
+  // Ejercicios de tópicos anteriores en lugar de cortos de hoy: recordar lo de otras semanas, mezclado
+  // con lo nuevo, fija más y ayuda a no confundir temas parecidos. Salen de los bancos, al instante.
+  private mixIn(session: SessionRow): void {
+    if (!this.mixSource || session.kind !== 'lesson') return
+    const insert = this.db.prepare('INSERT INTO exercises (topic_id, subtopic_id, skill, type, payload, session_id) VALUES (?, ?, ?, ?, ?, ?)')
+    const incoming = this.mixTargets(session, mixCount(this.options().size)).flatMap(({ topic, subtopicId }) => {
+      const generated = this.mixSource!(topic, subtopicId)
+      if (!generated) return []
+      try {
+        const stored = prepareExercise(generated)
+        const { lastInsertRowid } = insert.run(topic.id, subtopicId, SKILL_OF_TYPE[stored.type], stored.type, JSON.stringify(stored), session.id)
+        return [{ id: Number(lastInsertRowid), type: stored.type }]
+      } catch {
+        return []
+      }
+    })
+    if (incoming.length === 0) return
+    const rows = this.exerciseRows(session.id)
+    const slotted = rows
+      .filter((r) => r.slot !== null)
+      .sort((a, b) => a.slot! - b.slot!)
+      .map((r) => ({ id: r.id, type: r.type, answered: false }))
+    const slotOf = new Map(rows.map((r) => [r.id, r.slot]))
+    const update = this.db.prepare('UPDATE exercises SET slot = ? WHERE id = ?')
+    transaction(this.db, () => {
+      for (const [leaving, entering] of mixSwaps(slotted, incoming)) {
+        update.run(null, leaving)
+        update.run(slotOf.get(leaving)!, entering)
+      }
+    })
+  }
+
+  // De dónde mezclar: primero los subtemas de otros tópicos que más errores dejaron en el cuaderno y,
+  // si no alcanza, subtemas de tópicos ya aprobados.
+  private mixTargets(session: SessionRow, count: number): { topic: CurriculumTopic; subtopicId: string }[] {
+    const weak = this.db
+      .prepare(
+        `SELECT topic_id, subtopic_id FROM cards WHERE kind = 'mistake' AND topic_id IS NOT NULL AND topic_id != ?
+          GROUP BY topic_id, subtopic_id ORDER BY COUNT(*) DESC, MAX(created_on) DESC LIMIT 6`
+      )
+      .all(session.topic_id) as unknown as { topic_id: string; subtopic_id: string | null }[]
+    const passed = shuffled(
+      (
+        this.db
+          .prepare("SELECT topic_id FROM topic_progress WHERE status IN ('passed', 'review') AND topic_id != ?")
+          .all(session.topic_id) as unknown as { topic_id: string }[]
+      ).flatMap(({ topic_id }) => {
+        const topic = this.topics.get(topic_id)
+        return topic ? topic.subtopics.map((s) => ({ topic_id, subtopic_id: s.id })) : []
+      }),
+      Math.random
+    )
+    const targets: { topic: CurriculumTopic; subtopicId: string }[] = []
+    for (const { topic_id, subtopic_id } of [...weak, ...passed]) {
+      const topic = this.topics.get(topic_id)
+      if (!topic || !subtopic_id || !topic.subtopics.some((s) => s.id === subtopic_id)) continue
+      if (targets.some((t) => t.topic.id === topic_id && t.subtopicId === subtopic_id)) continue
+      targets.push({ topic, subtopicId: subtopic_id })
+      if (targets.length >= count) break
+    }
+    return targets
   }
 
   // Los largos llegaron con la sesión ya empezada: ocupan los lugares que quedaron al final.
@@ -602,7 +683,8 @@ export class Practice {
           grading: !!attempt && !attempt.feedback && !this.gradingErrors.has(r.id),
           gradingError: attempt && !attempt.feedback ? (this.gradingErrors.get(r.id) ?? null) : null,
           retry: !attempt && r.first_try ? retryNote(stored, JSON.parse(r.first_try) as ExerciseAnswer) : null,
-          repeat: r.repeat_of !== null
+          repeat: r.repeat_of !== null,
+          from: r.topic_id !== session.topic_id ? (this.topics.get(r.topic_id)?.title ?? null) : null
         }
       })
 

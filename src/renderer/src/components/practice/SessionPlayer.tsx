@@ -239,6 +239,7 @@ export default function SessionPlayer({
                 {EXERCISE_TYPE_LABELS[current.type]}
                 {current.repeat && ' · otra vez'}
               </h3>
+              {current.from && <p className="muted small">Repaso de «{current.from}»: mezclar lo de otras semanas ayuda a no confundir temas.</p>}
               {current.repeat && !current.answer && (
                 <p className="muted small">Este te costó: vuelve al final para que lo fijes. No cuenta en el puntaje.</p>
               )}

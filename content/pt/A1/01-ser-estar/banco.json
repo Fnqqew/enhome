@@ -2304,6 +2304,829 @@
           }
         ]
       }
+    ],
+    "negacao-perguntas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de negar.",
+        "prompt": "Eu ___ brasileiro, sou argentino.",
+        "options": [
+          "não é",
+          "não somos",
+          "sou não",
+          "não sou"
+        ],
+        "correctIndex": 3,
+        "explanation": "Não siempre va antes del verbo: eu não sou.",
+        "optionNotes": [
+          "Incorrecto: 'é' corresponde a ele/ela/você, no a eu.",
+          "Incorrecto: 'somos' corresponde a nós, no a eu.",
+          "Incorrecto: não no puede ir después del verbo, siempre va antes.",
+          "Correcto: não se coloca antes del verbo conjugado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta.",
+        "prompt": "Na recepção do consultório, perguntam: '___ é o seu nome?'",
+        "options": [
+          "Qual",
+          "Que",
+          "Quem",
+          "Como"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para preguntar el nombre se usa qual: qual é o seu nome?",
+        "optionNotes": [
+          "Correcto: qual se usa para pedir el nombre con el verbo é.",
+          "Incorrecto: 'que' es un calco del español; en portugués no se dice 'que é seu nome'.",
+          "Incorrecto: 'quem' pregunta 'quién', no sirve para pedir el nombre de esta forma.",
+          "Incorrecto: 'como' pregunta 'cómo'; se usaría distinto: 'como você se chama?'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de hacer una pregunta de sí o no.",
+        "prompt": "Paula pergunta ao Juan Martín, sem inverter a ordem: '___ ocupado agora?'",
+        "options": [
+          "Está você",
+          "És você",
+          "Você está",
+          "Você é"
+        ],
+        "correctIndex": 2,
+        "explanation": "En portugués las preguntas de sí o no mantienen el orden normal sujeto-verbo, solo cambia la entonación.",
+        "optionNotes": [
+          "Incorrecto: en portugués no se invierte el verbo y el sujeto como en español.",
+          "Incorrecto: 'tu' casi no se usa en Brasil, y además el orden está invertido.",
+          "Correcto: se mantiene el orden normal você + está, solo sube la entonación al preguntar.",
+          "Incorrecto: estar ocupado es un estado temporal, se expresa con estar, no con ser."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la respuesta corta correcta.",
+        "prompt": "No consultório, o médico pergunta: 'Você é alérgico a algum remédio?' Resposta de Juan Martín:",
+        "options": [
+          "Eu é.",
+          "Sim.",
+          "Sou.",
+          "É."
+        ],
+        "correctIndex": 2,
+        "explanation": "En portugués se suele responder repitiendo el verbo conjugado en la persona correcta: sou.",
+        "optionNotes": [
+          "Incorrecto: con eu nunca se usa 'é'; la forma correcta es sou.",
+          "Incorrecto: aunque se entiende, en portugués es más natural repetir el verbo que responder solo con sim.",
+          "Correcto: se repite el verbo ser conjugado en primera persona (eu): sou.",
+          "Incorrecto: 'é' corresponde a ele/ela/você, pero Juan Martín habla de sí mismo (eu)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de negar con estar.",
+        "prompt": "Carlos nunca está satisfeito; ele ___ feliz no trabalho.",
+        "options": [
+          "está não",
+          "não está",
+          "não estão",
+          "não é"
+        ],
+        "correctIndex": 1,
+        "explanation": "Não va antes del verbo conjugado; ele se conjuga con estar como está para un estado de ánimo temporal.",
+        "optionNotes": [
+          "Incorrecto: não no puede ir después del verbo.",
+          "Correcto: não antes del verbo, y ele usa la forma está de estar.",
+          "Incorrecto: 'estão' es plural, pero ele (Carlos) es singular.",
+          "Incorrecto: un estado de ánimo temporal se expresa con estar, no con ser."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta.",
+        "prompt": "O Sr. Nunes pergunta: '___ é o seu telefone, para eu entrar em contato?'",
+        "options": [
+          "Quem",
+          "Qual",
+          "Onde",
+          "Que"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para pedir un dato específico como el teléfono se usa qual: qual é o seu telefone?",
+        "optionNotes": [
+          "Incorrecto: 'quem' pregunta 'quién', no sirve para pedir un número de teléfono.",
+          "Correcto: qual se usa para pedir datos específicos como el teléfono.",
+          "Incorrecto: 'onde' pregunta 'dónde', no corresponde para pedir un teléfono.",
+          "Incorrecto: 'que' es un calco del español; en portugués no se dice 'que é seu telefone'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la negación correcta.",
+        "sentence": "Eu ___ brasileiro; sou argentino.",
+        "hint": "(negar)",
+        "answers": [
+          "não sou"
+        ],
+        "explanation": "Não se coloca antes del verbo conjugado: eu não sou.",
+        "wrongAnswers": [
+          {
+            "answer": "sou não",
+            "why": "Não siempre va antes del verbo, no después."
+          },
+          {
+            "answer": "não é",
+            "why": "'É' corresponde a ele/ela/você, no a eu; con eu se usa sou."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra interrogativa correcta.",
+        "sentence": "'___ é o seu nome?' pergunta a recepcionista do consultório.",
+        "hint": "(palavra interrogativa)",
+        "answers": [
+          "Qual"
+        ],
+        "explanation": "Para preguntar el nombre en portugués se usa qual: qual é o seu nome?",
+        "wrongAnswers": [
+          {
+            "answer": "Que",
+            "why": "'Que' es un calco del español; en portugués se usa qual para pedir el nombre."
+          },
+          {
+            "answer": "Quem",
+            "why": "'Quem' pregunta 'quién', no sirve para pedir el nombre con esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá manteniendo el orden normal de la pregunta.",
+        "sentence": "Paula pergunta: 'Você ___ ocupado agora?'",
+        "hint": "(estar)",
+        "answers": [
+          "está"
+        ],
+        "explanation": "Las preguntas de sí o no mantienen el orden normal: você está, solo cambia la entonación.",
+        "wrongAnswers": [
+          {
+            "answer": "estás",
+            "why": "En Brasil casi no se usa 'tu'; con você el verbo va en tercera persona: está."
+          },
+          {
+            "answer": "é",
+            "why": "Estar ocupado es un estado temporal, se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la respuesta corta repitiendo el verbo.",
+        "sentence": "No consultório, o médico pergunta: 'Você é alérgico a algum remédio?' Juan Martín responde: '___.'",
+        "hint": "(repetir o verbo)",
+        "answers": [
+          "Sou"
+        ],
+        "explanation": "En portugués la respuesta afirmativa corta suele repetir el verbo conjugado en la persona correcta: sou.",
+        "wrongAnswers": [
+          {
+            "answer": "É",
+            "why": "'É' corresponde a ele/ela/você, pero Juan Martín habla de sí mismo (eu); debe responder sou."
+          },
+          {
+            "answer": "Sim",
+            "why": "En portugués se prefiere repetir el verbo conjugado en vez de responder solo con sim."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la negación correcta.",
+        "sentence": "Carlos explica: 'Eu ___ satisfeito com o salário atual.'",
+        "hint": "(negar, estar)",
+        "answers": [
+          "não estou"
+        ],
+        "explanation": "Não se coloca antes del verbo: eu não estou satisfeito.",
+        "wrongAnswers": [
+          {
+            "answer": "estou não",
+            "why": "Não siempre va antes del verbo, no después."
+          },
+          {
+            "answer": "não sou",
+            "why": "La satisfacción con el sueldo es un estado que puede cambiar, se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra interrogativa correcta.",
+        "sentence": "O Sr. Nunes pergunta: '___ é o seu telefone?'",
+        "hint": "(palavra interrogativa)",
+        "answers": [
+          "Qual"
+        ],
+        "explanation": "Para pedir un dato específico como el teléfono se usa qual: qual é o seu telefone?",
+        "wrongAnswers": [
+          {
+            "answer": "Que",
+            "why": "'Que' es un calco del español; en portugués se usa qual para pedir datos específicos."
+          },
+          {
+            "answer": "Quanto",
+            "why": "'Quanto' pregunta por cantidad, no sirve para pedir un número de teléfono con esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu não sou de São Paulo.",
+        "alternatives": [],
+        "translation": "Yo no soy de San Pablo.",
+        "explanation": "Não se coloca siempre antes del verbo conjugado: eu não sou.",
+        "tokens": [
+          "não",
+          "Paulo",
+          "de",
+          "São",
+          "sou",
+          "Eu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Como você se chama, por favor?",
+        "alternatives": [
+          "Por favor, como você se chama?"
+        ],
+        "translation": "¿Cómo te llamás, por favor?",
+        "explanation": "Como se usa para preguntar el nombre con el verbo chamar-se, otra forma común junto con qual; 'por favor' puede ir al final o al principio de la oración.",
+        "tokens": [
+          "favor",
+          "você",
+          "por",
+          "Como",
+          "se",
+          "chama,"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Você está ocupado agora, Juan Martín?",
+        "alternatives": [
+          "Juan Martín, você está ocupado agora?"
+        ],
+        "translation": "¿Estás ocupado ahora, Juan Martín?",
+        "explanation": "Las preguntas de sí o no mantienen el orden normal sujeto-verbo en portugués, solo cambia la entonación; el nombre (vocativo) puede ir al final o al principio de la oración.",
+        "tokens": [
+          "ocupado",
+          "está",
+          "agora,",
+          "Martín",
+          "Juan",
+          "Você"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu não estou satisfeito com o salário.",
+        "alternatives": [],
+        "translation": "No estoy satisfecho con el sueldo.",
+        "explanation": "Não se coloca antes del verbo conjugado: eu não estou.",
+        "tokens": [
+          "salário",
+          "não",
+          "satisfeito",
+          "estou",
+          "com",
+          "Eu",
+          "o"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Qual é o valor do aluguel deste apartamento?",
+        "alternatives": [],
+        "translation": "¿Cuál es el valor del alquiler de este departamento?",
+        "explanation": "Qual se usa para pedir un dato específico, como el valor de algo, junto con el verbo é.",
+        "tokens": [
+          "aluguel",
+          "o",
+          "é",
+          "do",
+          "deste",
+          "valor",
+          "Qual",
+          "apartamento"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de posición de la negación.",
+        "sentence": "Eu sou não brasileiro.",
+        "answers": [
+          "Eu não sou brasileiro."
+        ],
+        "explanation": "Não siempre va antes del verbo conjugado, nunca después.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não é brasileiro.",
+            "why": "Corrige la posición de não pero cambia mal el verbo; con eu se usa sou, no é."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la palabra interrogativa.",
+        "sentence": "Que é o seu nome?",
+        "answers": [
+          "Qual é o seu nome?"
+        ],
+        "explanation": "Para preguntar el nombre en portugués se usa qual, no que.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem é o seu nome?",
+            "why": "'Quem' pregunta 'quién', no corresponde para pedir el nombre con esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de orden en la pregunta.",
+        "sentence": "Está você ocupado agora?",
+        "answers": [
+          "Você está ocupado agora?"
+        ],
+        "explanation": "En portugués las preguntas de sí o no mantienen el orden normal sujeto-verbo, no se invierten como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Você é ocupado agora?",
+            "why": "Estar ocupado es un estado temporal, se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de posición de la negación.",
+        "sentence": "Carlos está não feliz no trabalho.",
+        "answers": [
+          "Carlos não está feliz no trabalho."
+        ],
+        "explanation": "Não siempre va antes del verbo conjugado, nunca después.",
+        "wrongAnswers": [
+          {
+            "answer": "Carlos não são feliz no trabalho.",
+            "why": "Carlos (ele) requiere la forma está, no são, que es plural."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la respuesta corta.",
+        "sentence": "No consultório, o médico pergunta: 'Você é alérgico a algum remédio?' Juan Martín responde: 'É.'",
+        "answers": [
+          "Sou."
+        ],
+        "explanation": "La respuesta corta debe repetir el verbo en la persona correcta: eu sou.",
+        "wrongAnswers": [
+          {
+            "answer": "É sim.",
+            "why": "'É' corresponde a ele/ela/você, pero Juan Martín habla de sí mismo (eu); debe responder sou."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "No soy de San Pablo, soy de Rosario.",
+        "answers": [
+          "Eu não sou de São Paulo, sou de Rosario.",
+          "Não sou de São Paulo, sou de Rosario."
+        ],
+        "explanation": "Não se coloca siempre antes del verbo conjugado: eu não sou.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou não de São Paulo, sou de Rosario.",
+            "why": "Não debe ir antes del verbo, no después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Cuál es tu nombre?",
+        "answers": [
+          "Qual é o seu nome?",
+          "Qual é seu nome?"
+        ],
+        "explanation": "En portugués se pregunta el nombre con qual: qual é o seu nome?",
+        "wrongAnswers": [
+          {
+            "answer": "Que é o seu nome?",
+            "why": "Para preguntar el nombre se usa qual, no que, que es un calco del español."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Estás ocupada ahora, Paula?",
+        "answers": [
+          "Você está ocupada agora, Paula?"
+        ],
+        "explanation": "Las preguntas de sí o no mantienen el orden normal sujeto-verbo en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "Está você ocupada agora, Paula?",
+            "why": "En portugués no se invierte el verbo y el sujeto para hacer preguntas; se mantiene el orden normal."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "No estoy satisfecho con el sueldo.",
+        "answers": [
+          "Eu não estou satisfeito com o salário.",
+          "Não estou satisfeito com o salário."
+        ],
+        "explanation": "Não se coloca antes del verbo conjugado: eu não estou.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu estou não satisfeito com o salário.",
+            "why": "Não va siempre antes del verbo, no después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Cuál es el valor del alquiler?",
+        "answers": [
+          "Qual é o valor do aluguel?"
+        ],
+        "explanation": "Qual se usa para pedir un dato específico como el valor del alquiler.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto é o valor do aluguel?",
+            "why": "Para pedir el valor específico con 'o valor' se prefiere qual; quanto se usa más con 'custa'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Sos alérgico a algún remedio? — Soy.",
+        "answers": [
+          "Você é alérgico a algum remédio? — Sou.",
+          "Você é alérgico a algum remédio? — Sim, sou."
+        ],
+        "explanation": "En portugués la respuesta corta repite el verbo conjugado en la persona correcta: eu sou.",
+        "wrongAnswers": [
+          {
+            "answer": "Você é alérgico a algum remédio? — É.",
+            "why": "La respuesta debe repetir el verbo en primera persona (sou), no en tercera persona (é)."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eu não sou brasileiro, sou argentino.",
+        "alternatives": [
+          "Eu não sou brasileiro, eu sou argentino."
+        ],
+        "translation": "No soy brasileño, soy argentino.",
+        "explanation": "Não va siempre antes del verbo (não sou), nunca después como en algunos usos del español; prestá atención a la nasalización breve de 'não'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la pregunta y escribila completa.",
+        "sentence": "Marcos, você não está ocupado agora?",
+        "alternatives": [],
+        "translation": "Marcos, ¿no estás ocupado ahora?",
+        "explanation": "En las preguntas de sí o no el orden sujeto-verbo no cambia, solo sube la entonación al final; no se agrega 'é que' como en algunas preguntas del español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la pregunta y escribila completa.",
+        "sentence": "Qual é o seu nome completo, por favor?",
+        "alternatives": [],
+        "translation": "¿Cuál es tu nombre completo, por favor?",
+        "explanation": "Para pedir el nombre se usa 'qual', no 'que'; 'que' se reserva para otro tipo de preguntas, no para esta."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você não é daqui, é de onde então?",
+        "alternatives": [
+          "Você não é daqui, é de onde, então?"
+        ],
+        "translation": "No sos de aquí, ¿de dónde sos entonces?",
+        "explanation": "Onde (dónde) y quando (cuándo) suenan parecido al empezar, hay que escuchar bien la vocal final para no confundirlos."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "carro",
+          "caro"
+        ],
+        "target": 0,
+        "meanings": [
+          "auto",
+          "caro (costoso)"
+        ],
+        "explanation": "El 'r' simple entre vocales se pronuncia suave, como la 'r' del español, mientras que el 'rr' doble se pronuncia fuerte, casi como una jota raspada en la garganta."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 1,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "'ão' es un sonido nasal, el aire sale por la nariz y suena como 'ãun'; 'au' es un diptongo oral, sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "'avó' tiene una 'o' abierta (como en 'bola') y 'avô' tiene una 'o' cerrada (como en 'bolo'); la diferencia está en cuánto se abre la boca."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Oi, Marcos! Como você está hoje?",
+        "translation": "¡Hola, Marcos! ¿Cómo estás hoy?",
+        "tip": "Uní 'você está' sin pausa, casi como una sola palabra; como es una pregunta con palabra interrogativa ('como'), el tono baja al final, en 'hoje', a diferencia de las preguntas de sí o no."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Eu não sou daqui, mas estou gostando muito do Rio.",
+        "translation": "No soy de aquí, pero me está gustando mucho Río.",
+        "tip": "Marcá el 'não' nasal y breve antes de 'sou', y relajá el ritmo en 'gostando muito'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Qual é o seu nome e de onde você é?",
+        "translation": "¿Cuál es tu nombre y de dónde sos?",
+        "tip": "Enlazá 'de onde' rápido, sin separar las palabras, y bajá el tono al final de 'é'."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre ser, estar, la negación y las preguntas.",
+        "text": "Mariana chega a uma pousada em Salvador. Ela não é de lá, é de Buenos Aires. Na recepção, o atendente pergunta: 'Qual é o seu nome?' Mariana responde: 'Meu nome é Mariana.' O atendente pergunta: 'Você está cansada da viagem?' Mariana diz: 'Não, não estou cansada, estou feliz!' Depois, ele pergunta: 'De onde você é?' Mariana responde: 'Sou da Argentina.' O atendente sorri e diz: 'Que bom! Você não é a primeira argentina aqui hoje.' Mariana pergunta: 'Onde está o meu quarto?' O atendente responde: 'Seu quarto não está pronto ainda, mas está quase pronto.' Mariana espera na recepção e lê uma revista.",
+        "questions": [
+          {
+            "prompt": "¿Cómo le responde Mariana al atendente cuando le pregunta si está cansada del viaje?",
+            "options": [
+              "Sou cansada",
+              "Não sou cansada",
+              "Não estou cansada",
+              "Estou não cansada"
+            ],
+            "correctIndex": 2,
+            "explanation": "Para negar con estar, não se coloca antes del verbo: 'não estou cansada'. 'Sou/não sou' usarían ser, que no corresponde aquí porque el cansancio es un estado temporal."
+          },
+          {
+            "prompt": "¿Qué expresión usa el atendente para preguntar el nombre de Mariana?",
+            "options": [
+              "Que é seu nome?",
+              "Quem é seu nome?",
+              "Onde é seu nome?",
+              "Qual é o seu nome?"
+            ],
+            "correctIndex": 3,
+            "explanation": "En portugués, para preguntar el nombre se usa 'Qual', no 'Que': 'Qual é o seu nome?'. Decir 'Que é seu nome?' es un error común."
+          },
+          {
+            "prompt": "¿Por qué Mariana tiene que esperar en la recepción?",
+            "options": [
+              "Porque quiere leer una revista",
+              "Porque está perdida",
+              "Porque su cuarto todavía no está listo",
+              "Porque está cansada del viaje"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Seu quarto não está pronto ainda', por eso Mariana espera leyendo una revista."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre una entrevista de trabajo y respondé las preguntas.",
+        "text": "Pedro tem uma entrevista de emprego em uma empresa de São Paulo. Ele não é de São Paulo, é de Curitiba, mas agora está morando lá. Na entrevista, a gerente pergunta: 'Você é formado em quê?' Pedro responde: 'Sou formado em administração.' A gerente pergunta: 'Você está livre para trabalhar à noite?' Pedro diz: 'Não, não estou livre à noite, só de manhã.' A gerente pergunta: 'Qual é o seu telefone?' Pedro responde com o número. No final, a gerente pergunta: 'Você está nervoso?' Pedro ri e diz: 'Um pouco, mas estou animado com a oportunidade.' A gerente diz que vai ligar na próxima semana.",
+        "questions": [
+          {
+            "prompt": "¿Cómo se dice en portugués que Pedro no es de São Paulo?",
+            "options": [
+              "Não é de São Paulo eu",
+              "Eu de São Paulo não sou",
+              "Não sou de São Paulo",
+              "Sou não de São Paulo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Não siempre va justo antes del verbo: 'Não sou de São Paulo', nunca después del verbo ni al final de la oración."
+          },
+          {
+            "prompt": "¿Cuándo está libre Pedro para trabajar, según su respuesta?",
+            "options": [
+              "Estou livre à noite",
+              "Não estou livre à noite",
+              "Estou não livre à noite",
+              "Não estou livre de manhã"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro dice 'não estou livre à noite, só de manhã'. La negación con estar también lleva não antes del verbo."
+          },
+          {
+            "prompt": "¿Cómo se siente Pedro al final de la entrevista?",
+            "options": [
+              "Un poco nervioso pero animado",
+              "Tranquilo y aburrido",
+              "Nervioso y triste",
+              "Muy cansado"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro responde 'Um pouco, mas estou animado com a oportunidade', usando estar para describir un estado de ánimo momentáneo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas sobre lo que dicen los hablantes.",
+        "situation": "En una consulta médica en Florianópolis, el doctor le hace preguntas a Juliana, una paciente argentina que vive allí temporalmente.",
+        "lines": [
+          {
+            "speaker": "Médico",
+            "text": "Bom dia! Qual é o seu nome completo?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Bom dia, doutor! Meu nome é Juliana Pérez."
+          },
+          {
+            "speaker": "Médico",
+            "text": "Você é brasileira?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, não sou brasileira. Sou argentina."
+          },
+          {
+            "speaker": "Médico",
+            "text": "Como você está hoje? Está com dor?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não estou com dor, mas estou um pouco cansada."
+          },
+          {
+            "speaker": "Médico",
+            "text": "Você está tomando algum remédio?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, não estou tomando nenhum remédio agora."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Juliana es brasileña?",
+            "options": [
+              "No lo dice",
+              "Sí, es brasileña",
+              "No, es uruguaya",
+              "No, es argentina"
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana responde 'não sou brasileira. Sou argentina', usando não antes del verbo ser para negar."
+          },
+          {
+            "prompt": "¿Cómo se siente Juliana hoy?",
+            "options": [
+              "Con fiebre",
+              "Muy bien, sin cansancio",
+              "Cansada pero sin dolor",
+              "Con dolor"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ella dice 'não estou com dor, mas estou um pouco cansada', negando con estar antes de confirmar su cansancio."
+          },
+          {
+            "prompt": "¿Juliana está tomando algún remedio en este momento?",
+            "options": [
+              "No, no está tomando ninguno",
+              "No sabe",
+              "Sí, dos remedios diferentes",
+              "Sí, uno para el dolor"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana responde 'não estou tomando nenhum remédio agora', combinando não con nenhum para reforzar la negación."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo telefónico y respondé las preguntas sobre los detalles del departamento.",
+        "situation": "En Porto Alegre, Martín, un inquilino argentino, habla por teléfono con la señora Célia, dueña de un departamento que quiere alquilar.",
+        "lines": [
+          {
+            "speaker": "Célia",
+            "text": "Alô! O apartamento ainda está disponível, sim."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Que bom! Ele é mobiliado?"
+          },
+          {
+            "speaker": "Célia",
+            "text": "Não, não é mobiliado. É um apartamento vazio."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Entendo. Onde ele está localizado exatamente?"
+          },
+          {
+            "speaker": "Célia",
+            "text": "Está no centro, perto do mercado."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Perfeito. Quanto é o aluguel?"
+          },
+          {
+            "speaker": "Célia",
+            "text": "O aluguel é mil e duzentos reais."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Está incluído o condomínio?"
+          },
+          {
+            "speaker": "Célia",
+            "text": "Não, o condomínio não está incluído no valor."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿El departamento está amueblado?",
+            "options": [
+              "No lo sabe",
+              "No, está vacío",
+              "Sí, está amueblado",
+              "Sí, parcialmente amueblado"
+            ],
+            "correctIndex": 1,
+            "explanation": "Célia responde 'não é mobiliado. É um apartamento vazio', negando con não antes del verbo ser."
+          },
+          {
+            "prompt": "¿Dónde está ubicado el departamento?",
+            "options": [
+              "Cerca de la universidad",
+              "En la playa",
+              "En el centro, cerca del mercado",
+              "En las afueras"
+            ],
+            "correctIndex": 2,
+            "explanation": "Célia dice 'Está no centro, perto do mercado', usando estar para indicar ubicación."
+          },
+          {
+            "prompt": "¿El condominio está incluido en el valor del alquiler?",
+            "options": [
+              "No, no está incluido",
+              "Está incluido solo el agua",
+              "Sí, está incluido",
+              "No lo menciona"
+            ],
+            "correctIndex": 0,
+            "explanation": "Célia responde 'o condomínio não está incluído no valor', con não antes del verbo estar para negar."
+          }
+        ]
+      }
     ]
   }
 }

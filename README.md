@@ -63,7 +63,7 @@ El día tiene cuatro partes:
 
 1. **Calentamiento:** hasta 5 errores del cuaderno que tocan hoy.
 2. **Microlección:** la regla, ejemplos para escuchar, los errores típicos de hispanohablantes y una pregunta para comprobar que se entendió.
-3. **Práctica.**
+3. **Práctica**, con hasta 2 ejercicios de tópicos anteriores donde más errores tenés.
 4. **Cierre:** qué trabajaste, qué pasó al cuaderno, qué vuelve mañana y un juego rápido.
 
 Cada práctica va de lo más guiado a lo más abierto. Siempre incluye una tanda de traducción y una conversación o una situación real y, desde 8 ejercicios, algo para escuchar y algo para decir en voz alta. Los días de lectura o escritura también suman ese formato. A medida que subís de nivel hay menos opción múltiple y más ejercicios en los que tenés que escribir la respuesta. La cantidad de ejercicios (5, 8 o 10) y los formatos que no te sirven se eligen en Ajustes.

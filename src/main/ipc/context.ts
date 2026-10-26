@@ -18,7 +18,7 @@ import { Exams } from '../exams/exams'
 import { generateExam } from '../exams/generation'
 import { Games } from '../games/games'
 import { gradeOpenAnswer, gradeOpenBatch } from '../practice/ai-grading'
-import { bankedGenerator, ExerciseBank } from '../practice/bank'
+import { bankedGenerator, ExerciseBank, MIX_TYPES } from '../practice/bank'
 import { CourseBanks } from '../content/bank'
 import { Practice } from '../practice/practice'
 import { Journal } from '../reading/journal'
@@ -122,10 +122,18 @@ export function createContext(options: IpcOptions): IpcContext {
           progression,
           withPlacementBank(loadPlacementBank(contentDir, language, curriculum), generatePlacementQuestions)
         ),
-        practice: new Practice(courseData, curriculum, progression, bankedGenerator(bank), gradeOpenAnswer, () => {
-          const { practiceLength, excludedTypes } = loadSettings(db)
-          return { size: PRACTICE_LENGTHS[practiceLength].size, excluded: excludedTypes }
-        }),
+        practice: new Practice(
+          courseData,
+          curriculum,
+          progression,
+          bankedGenerator(bank),
+          gradeOpenAnswer,
+          () => {
+            const { practiceLength, excludedTypes } = loadSettings(db)
+            return { size: PRACTICE_LENGTHS[practiceLength].size, excluded: excludedTypes }
+          },
+          (topic, subtopicId) => bank.pick(topic, subtopicId, MIX_TYPES)
+        ),
         summaries: new Summaries(courseData, curriculum, progression, generateSummary, answerAboutText),
         exams: new Exams(courseData, curriculum, progression, generateExam, gradeOpenAnswer, Date.now, gradeOpenBatch),
         rewards: new Rewards(courseData, curriculum, roadmap, progression),

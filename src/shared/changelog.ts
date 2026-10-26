@@ -16,6 +16,7 @@ export const CHANGELOG: Release[] = [
       'Arreglado: Claude no creaba los ejercicios de los tópicos sin banco (como los de portugués) y la práctica no abría.',
       'El día empieza con un calentamiento: hasta 5 errores del cuaderno que tocan hoy.',
       'Microlección antes de practicar: la regla, ejemplos para escuchar, los errores típicos de hispanohablantes y una pregunta para comprobar que se entendió.',
+      'Cada práctica mezcla hasta 2 ejercicios de tópicos anteriores, de lo que más te cuesta según el cuaderno de errores.',
       'Al terminar, el cierre te dice qué trabajaste, qué pasó al cuaderno y cuántos repasos vuelven mañana.',
       'El primer tópico de portugués trae sus ejercicios listos: la práctica abre al instante.'
     ]

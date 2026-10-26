@@ -16,6 +16,7 @@ El día con estructura y Claude que vuelve a crear los ejercicios.
 - **Microlección:** qué se aprende, la regla, ejemplos con un botón para escuchar cada uno, los errores típicos de hispanohablantes y una pregunta para comprobar que se entendió.
 - **Cierre:** qué trabajaste, cuánto pasó al cuaderno, cuántos repasos vuelven mañana y un juego rápido para la fluidez.
 - Arriba de Práctica se ve en qué parte del día estás.
+- **Lo de otras semanas, mezclado:** cada práctica trae hasta 2 ejercicios de tópicos anteriores, de los subtemas donde más errores tenés en el cuaderno (o de tópicos ya aprobados). Recordar mezclado fija más y ayuda a no confundir temas parecidos.
 
 ### Contenido
 
