@@ -27,6 +27,8 @@ Mediciones e investigación de respaldo:
 6. Idiomas (37–46)
 7. Versión 3.0.0
 
+La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a 4 y parte de la 5. Lo que falta sale en versiones 3.1, 3.2…, a medida que se termina (la etapa 7 queda para la última).
+
 ## Velocidad
 
 - [x] 1 Llamadas a Claude sin carga ajena
