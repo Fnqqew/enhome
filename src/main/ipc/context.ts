@@ -18,7 +18,8 @@ import { Exams } from '../exams/exams'
 import { generateExam } from '../exams/generation'
 import { Games } from '../games/games'
 import { gradeOpenAnswer } from '../practice/ai-grading'
-import { generatePracticePool } from '../practice/generation'
+import { bankedGenerator, ExerciseBank } from '../practice/bank'
+import { CourseBanks } from '../content/bank'
 import { Practice } from '../practice/practice'
 import { Journal } from '../reading/journal'
 import { Readings } from '../reading/readings'
@@ -65,6 +66,7 @@ export interface Services {
   readings: Readings
   journal: Journal
   chats: Chats
+  bank: ExerciseBank
 }
 
 export interface IpcOptions {
@@ -108,7 +110,9 @@ export function createContext(options: IpcOptions): IpcContext {
       const curriculum = applyTopicReviews(loadCurriculum(contentDir, language), courseData)
       const progression = new Progression(courseData, curriculum)
       const roadmap = loadRoadmap(contentDir, language)
+      const bank = new ExerciseBank(courseData, new CourseBanks(contentDir, language))
       found = {
+        bank,
         curriculum,
         roadmap,
         progression,
@@ -118,7 +122,7 @@ export function createContext(options: IpcOptions): IpcContext {
           progression,
           withPlacementBank(loadPlacementBank(contentDir, language, curriculum), generatePlacementQuestions)
         ),
-        practice: new Practice(courseData, curriculum, progression, generatePracticePool, gradeOpenAnswer, () => {
+        practice: new Practice(courseData, curriculum, progression, bankedGenerator(bank), gradeOpenAnswer, () => {
           const { practiceLength, excludedTypes } = loadSettings(db)
           return { size: PRACTICE_LENGTHS[practiceLength].size, excluded: excludedTypes }
         }),
@@ -142,10 +146,15 @@ export function createContext(options: IpcOptions): IpcContext {
   const today = (): string => todayOverride ?? toLocalDate(new Date())
   const state = (): ReturnType<Progression['getState']> => services().progression.getState(today())
 
-  // Prepara en segundo plano la práctica del día del curso abierto.
+  // Prepara en segundo plano la práctica del día del curso abierto y completa los bancos de los
+  // subtemas de la semana a los que les quedan pocos ejercicios sin usar.
   const warmUp = (): void => {
     try {
-      services().practice.warmUp(today())
+      const { practice, progression, curriculum, bank } = services()
+      practice.warmUp(today())
+      const week = progression.getState(today()).week
+      const topic = week ? curriculum.find((t) => t.id === week.topicId) : undefined
+      if (topic) for (const subtopic of topic.subtopics) bank.topUp({ topic, subtopic, kind: 'lesson' }, today())
     } catch (err) {
       console.error('[practice] No se pudo preparar la práctica al abrir', err)
     }

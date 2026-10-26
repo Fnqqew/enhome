@@ -21,7 +21,9 @@ const mcGenerated = z.object({
   prompt: text,
   options: z.array(text).min(3).max(4),
   correctIndex: choiceIndex,
-  explanation: text
+  explanation: text,
+  // Por qué cada opción está bien o mal, en el mismo orden que options (opcional).
+  optionNotes: z.array(z.string()).min(3).max(4).optional()
 })
 type McGenerated = z.infer<typeof mcGenerated>
 const mcAnswer = z.object({ type: z.literal('multiple_choice'), choice: choiceIndex })
@@ -43,18 +45,26 @@ export const multipleChoice: ExerciseKind<McGenerated, McGenerated, McPublic, Mc
   prepare: (e, random) => {
     assertIndex(e.correctIndex, e.options.length)
     assertDistinct(e.options)
-    return { ...e, ...shuffleChoices(e.options, e.correctIndex, random) }
+    if (e.optionNotes && e.optionNotes.length !== e.options.length) throw new Error('Las notas no coinciden con las opciones.')
+    const shuffled = shuffleChoices(e.options, e.correctIndex, random)
+    // Las notas siguen a su opción al mezclar.
+    const optionNotes = e.optionNotes ? shuffled.options.map((option) => e.optionNotes![e.options.indexOf(option)]) : undefined
+    return { ...e, ...shuffled, ...(optionNotes ? { optionNotes } : {}) }
   },
   toPublic: (e) => ({ type: e.type, instruction: e.instruction, prompt: e.prompt, options: e.options }),
   mainText: (e) => e.prompt,
-  grade: (e, a) => graded(a.choice === e.correctIndex, e.options[e.correctIndex], e.explanation),
+  grade: (e, a) => {
+    const right = a.choice === e.correctIndex
+    const note = !right && a.choice >= 0 ? e.optionNotes?.[a.choice]?.trim() : ''
+    return graded(right, e.options[e.correctIndex], note ? `${note} ${e.explanation}` : e.explanation)
+  },
   empty: (e) => ({ type: e.type, choice: -1 }),
   hint: (e) => {
     const wrong = e.options.filter((_, i) => i !== e.correctIndex)
     return `Descartá ${quoted(wrong.slice(0, Math.max(1, e.options.length - 2)))}.`
   },
   guide: ({ language }) =>
-    `multiple_choice: prompt en ${language} (marcá el hueco con ___ si corresponde); 4 opciones con una sola correcta; correctIndex es su posición (0 a 3).`,
+    `multiple_choice: prompt en ${language} (marcá el hueco con ___ si corresponde); 4 opciones con una sola correcta; correctIndex es su posición (0 a 3); optionNotes con una frase breve en español por opción, en el mismo orden, que diga por qué está bien o mal (los distractores tienen que ser errores típicos de hispanohablantes).`,
   check: 'multiple_choice: solo una opción es correcta en cualquier contexto razonable.'
 }
 

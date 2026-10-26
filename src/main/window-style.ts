@@ -60,6 +60,9 @@ function stableIcon(style: StyleId): string | null {
 // Se actualizan el del escritorio, el del menú Inicio y el anclado a la barra de tareas.
 function updateShortcuts(ico: string): void {
   if (process.platform !== 'win32') return
+  // Con una carpeta de datos aparte (pruebas de interfaz, capturas) no se tocan los accesos directos
+  // reales: quedarían apuntando a un ícono temporal que después se borra y se verían en blanco.
+  if (process.env.ENHOME_DATA_DIR) return
 
   const script = `
     $w = New-Object -ComObject WScript.Shell

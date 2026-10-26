@@ -6,6 +6,7 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { CEFR_LEVELS, type CurriculumTopic } from '../../shared/curriculum'
 import { languageInfo, type LanguageId } from '../../shared/languages'
+import { bankPath, readBank } from './bank'
 import { loadCurriculum } from './curriculum'
 import { loadPlacementBank } from './placement-bank'
 
@@ -18,6 +19,9 @@ export interface LevelStats {
   mistakesAvg: number
   // Preguntas del banco del examen inicial para los tópicos de ese nivel.
   placement: number
+  // Ejercicios en los bancos de práctica (banco.json) y tópicos que todavía no tienen banco.
+  bank: number
+  withoutBank: number
 }
 
 export interface AuditReport {
@@ -73,6 +77,14 @@ export function auditContent(contentDir: string, language: LanguageId): AuditRep
     }
   }
 
+  // Bancos de práctica: lo que no pasa el formato o los controles es un error del contenido.
+  const bankSizes = new Map<string, number>()
+  for (const topic of curriculum) {
+    const bank = readBank(bankPath(contentDir, language, topic), topic)
+    errors.push(...bank.problems)
+    bankSizes.set(topic.id, [...bank.subtopics.values()].reduce((sum, list) => sum + list.length, 0))
+  }
+
   let placement = new Map<string, unknown[]>()
   if (existsSync(join(contentDir, language, 'placement.json'))) {
     try {
@@ -94,7 +106,9 @@ export function auditContent(contentDir: string, language: LanguageId): AuditRep
       examplesMin: examples.length ? Math.min(...examples) : 0,
       examplesAvg: examples.length ? round1(examples.reduce((a, b) => a + b, 0) / examples.length) : 0,
       mistakesAvg: subtopics.length ? round1(subtopics.reduce((a, s) => a + s.commonMistakes.length, 0) / subtopics.length) : 0,
-      placement: topics.reduce((sum, t) => sum + (placement.get(t.id)?.length ?? 0), 0)
+      placement: topics.reduce((sum, t) => sum + (placement.get(t.id)?.length ?? 0), 0),
+      bank: topics.reduce((sum, t) => sum + (bankSizes.get(t.id) ?? 0), 0),
+      withoutBank: topics.filter((t) => !bankSizes.get(t.id)).length
     }
   }).filter((l) => l.topics > 0)
 

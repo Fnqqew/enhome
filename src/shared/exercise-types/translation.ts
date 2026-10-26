@@ -1,8 +1,8 @@
 // Traducir una oración y la tanda de traducción: si coincide con una referencia corrige la app; si no, Claude.
 
 import { z } from 'zod'
-import { graded, text, type ExerciseKind } from './kind'
-import { findTypo, firstWords, matchesAny, typoNote } from './text'
+import { graded, text, wrongAnswers, type ExerciseKind } from './kind'
+import { findTypo, firstWords, matchesAny, predictedMistake, typoNote } from './text'
 
 // Traducir
 
@@ -11,7 +11,8 @@ const singleGenerated = z.object({
   instruction: text,
   spanish: text,
   answers: z.array(text).min(1),
-  explanation: text
+  explanation: text,
+  wrongAnswers
 })
 type SingleGenerated = z.infer<typeof singleGenerated>
 const singleAnswer = z.object({ type: z.literal('translation'), text: z.string().max(500) })
@@ -35,6 +36,9 @@ export const translation: ExerciseKind<SingleGenerated, SingleGenerated, SingleP
   grade: (e, a) => {
     if (matchesAny(a.text, e.answers)) return graded(true, e.answers[0], e.explanation)
     if (!a.text.trim()) return graded(false, e.answers[0], e.explanation)
+    // Un error previsto se corrige al instante, sin esperar a Claude.
+    const mistake = predictedMistake(a.text, e.wrongAnswers)
+    if (mistake) return graded(false, e.answers[0], `${mistake.why} ${e.explanation}`)
     const typo = findTypo(a.text, e.answers)
     if (typo) return graded(true, typo.expected, `${typoNote(typo)} ${e.explanation}`, 9)
     return { kind: 'needs-ai' }
@@ -42,7 +46,7 @@ export const translation: ExerciseKind<SingleGenerated, SingleGenerated, SingleP
   empty: (e) => ({ type: e.type, text: '' }),
   hint: (e) => `Podés empezar así: «${firstWords(e.answers[0])}…»`,
   guide: ({ language, spanish }) =>
-    `translation: spanish es una oración completa en ${spanish} para traducir al ${language}; answers con 1 a 3 traducciones correctas.`,
+    `translation: spanish es una oración completa en ${spanish} para traducir al ${language}; answers con todas las traducciones correctas y naturales que se te ocurran (de 2 a 6, con y sin contracciones); wrongAnswers con 1 a 3 traducciones equivocadas típicas de hispanohablantes (calcos del español), cada una con why.`,
   check: 'translation: answers son traducciones correctas y naturales.',
   review: (e, c) => `${c.head}
 

@@ -85,6 +85,11 @@ export function findTypo(answer: string, accepted: string[]): Typo | null {
 
 export const typoNote = (typo: Typo): string => `Ojo con la ortografía: escribiste «${typo.typed}», se escribe «${typo.intended}».`
 
+// Si la respuesta coincide con uno de los errores previstos, cuál.
+export function predictedMistake(answer: string, wrong: { answer: string; why: string }[] | undefined): { answer: string; why: string } | null {
+  return wrong?.find((w) => matchesAny(answer, [w.answer])) ?? null
+}
+
 export function tokenize(sentence: string): string[] {
   return sentence
     .trim()

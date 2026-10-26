@@ -70,8 +70,8 @@ const KIND_GUIDE: Record<UnitKind, string> = {
 }
 
 // Cómo es cada formato (lo define cada tipo). El idioma cambia en qué lengua van las oraciones.
-export function formatGuide(language: LanguageId): string {
-  return formatGuideFor({ language: languageInfo(language).name, spanish: spanish() })
+export function formatGuide(language: LanguageId, types?: ExerciseType[]): string {
+  return formatGuideFor({ language: languageInfo(language).name, spanish: spanish() }, types)
 }
 
 const immersionGuide = (language: LanguageId): string =>
@@ -102,7 +102,7 @@ ${DIFFICULTY_GUIDE[request.difficulty ?? 'normal']}
 Generá exactamente estos ejercicios, en este orden:
 ${requested}
 
-${formatGuide(topic.language)}
+${formatGuide(topic.language, Object.keys(counts) as ExerciseType[])}
 
 ${immersionGuide(topic.language)}
 Usá vocabulario acorde al nivel ${topic.level}. El alumno tiene que necesitar lo que estudió del subtema para resolverlos: que no se puedan contestar de memoria ni adivinando.${
@@ -213,4 +213,64 @@ export async function generatePracticePool(request: PoolRequest, ask: Ask = askC
     throw new Error('Claude no generó suficientes ejercicios válidos para armar la práctica.')
   }
   return prepared
+}
+
+// Esfuerzo de lo que se genera en el momento: una sola pasada con autocontrol (decisión D3 del plan 3.0).
+const ONE_PASS_EFFORT = 'medium'
+
+// Ejercicios en una sola pasada (sin revisión aparte), con los controles automáticos de cada tipo.
+async function generateOnce(request: PoolRequest, counts: Partial<Record<ExerciseType, number>>, ask: Ask, label: string): Promise<StoredExercise[]> {
+  let lastError: unknown
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    try {
+      const { exercises } = await ask({
+        label,
+        systemPrompt: systemPrompt(request.topic),
+        prompt: buildPoolPrompt(request, counts),
+        schema: poolSchema,
+        effort: ONE_PASS_EFFORT,
+        timeoutMs: GENERATION_TIMEOUT_MS,
+        ticket: request.ticket
+      })
+      const prepared = exercises.flatMap((e) => {
+        try {
+          return [prepareExercise(e)]
+        } catch (err) {
+          console.info(`[practice] Se descartó un ejercicio ${e.type}: ${(err as Error).message}`)
+          return []
+        }
+      })
+      const missing = (Object.keys(counts) as ExerciseType[]).filter((type) => !prepared.some((e) => e.type === type))
+      if (missing.length > 0) throw new Error(`Claude no generó ejercicios válidos de: ${missing.join(', ')}.`)
+      return prepared
+    } catch (err) {
+      lastError = err
+      if (!shouldRetry(err)) break
+    }
+  }
+  throw lastError
+}
+
+// Un ejercicio largo en su propio pedido: así se piden en paralelo y aparece cada uno apenas está.
+export async function generateLongOnce(request: PoolRequest, type: ExerciseType, ask: Ask = askClaude): Promise<StoredExercise> {
+  const [exercise] = await generateOnce(request, { [type]: 1 }, ask, `práctica · ${type}`)
+  return exercise
+}
+
+// Cortos que el banco no tenía, en una sola pasada.
+export function generateShortOnce(
+  request: PoolRequest,
+  counts: Partial<Record<ExerciseType, number>>,
+  ask: Ask = askClaude
+): Promise<StoredExercise[]> {
+  return generateOnce(request, counts, ask, 'práctica · cortos')
+}
+
+// Para el banco: se genera y se revisa (dos pasadas), porque cada ejercicio se va a usar muchas veces.
+export async function generateBankSet(
+  request: PoolRequest,
+  counts: Partial<Record<ExerciseType, number>>,
+  ask: Ask = askClaude
+): Promise<StoredExercise[]> {
+  return generateValidGroup(request, counts, ask)
 }

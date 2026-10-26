@@ -1,0 +1,2551 @@
+{
+  "subtopics": {
+    "pronombres-personales": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para completar la oración.",
+        "prompt": "Juan is from Mendoza. ___ is a student.",
+        "options": [
+          "She",
+          "It",
+          "He",
+          "They"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para referirse a un varón ya mencionado se usa el pronombre 'he'.",
+        "optionNotes": [
+          "Incorrecto: 'she' es para mujeres, pero Juan es varón.",
+          "Incorrecto: 'it' se usa para cosas o animales, no personas.",
+          "Correcto: Juan es varón, se usa 'he'.",
+          "Incorrecto: 'they' es plural, pero se habla de una sola persona, Juan."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para completar la oración.",
+        "prompt": "Martina and Sofía are friends. ___ are from Rosario.",
+        "options": [
+          "He",
+          "She",
+          "It",
+          "They"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para hablar de dos o más personas se usa el pronombre 'they' con el verbo 'are'.",
+        "optionNotes": [
+          "Incorrecto: 'he' es para un varón; además es singular.",
+          "Incorrecto: 'she' es singular, pero son dos personas.",
+          "Incorrecto: 'it' no se usa para personas.",
+          "Correcto: 'they' se usa para hablar de más de una persona."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para completar la oración.",
+        "prompt": "This is Mr. Pérez. ___ is my new boss.",
+        "options": [
+          "It",
+          "She",
+          "You",
+          "He"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para hablar de un varón (como 'Mr. Pérez') se usa 'he', no 'you' ni 'it'.",
+        "optionNotes": [
+          "Incorrecto: 'it' no se usa para personas.",
+          "Incorrecto: 'she' es para mujeres, pero 'Mr. Pérez' es varón.",
+          "Incorrecto: 'you' se usa para hablar con alguien directamente, no para hablar de él.",
+          "Correcto: Mr. Pérez es varón, se usa 'he'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para completar la oración.",
+        "prompt": "Look outside! ___ is raining.",
+        "options": [
+          "She",
+          "He",
+          "They",
+          "It"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para describir el clima en inglés siempre se usa 'it' como sujeto.",
+        "optionNotes": [
+          "Incorrecto: 'she' es para personas mujeres.",
+          "Incorrecto: 'he' es para personas varones.",
+          "Incorrecto: 'they' es plural y no se usa para el clima.",
+          "Correcto: para hablar del clima siempre se usa 'it'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para formar la pregunta.",
+        "prompt": "Mr. Pérez, ___ from Buenos Aires?",
+        "options": [
+          "is you",
+          "you is",
+          "are he",
+          "are you"
+        ],
+        "correctIndex": 3,
+        "explanation": "En preguntas con to be, el verbo 'are' va antes del pronombre 'you'.",
+        "optionNotes": [
+          "Incorrecto: con 'you' nunca se usa 'is'.",
+          "Incorrecto: el orden correcto en preguntas es verbo + sujeto, no al revés.",
+          "Incorrecto: se está hablando de 'you' (Mr. Pérez), no de 'he'.",
+          "Correcto: con 'you' el verbo es 'are' y en preguntas va antes del sujeto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para completar la oración.",
+        "prompt": "Look at those shoes! ___ are very expensive.",
+        "options": [
+          "She",
+          "They",
+          "It",
+          "He"
+        ],
+        "correctIndex": 1,
+        "explanation": "Como 'shoes' es plural, el pronombre que lo reemplaza es 'they', no 'it'.",
+        "optionNotes": [
+          "Incorrecto: 'she' se usa para personas mujeres.",
+          "Correcto: 'shoes' es plural, se usa 'they'.",
+          "Incorrecto: 'it' es singular, pero 'shoes' es plural.",
+          "Incorrecto: 'he' se usa para personas varones."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "Hi, I ___ Lucía, your new neighbor.",
+        "hint": "(to be)",
+        "answers": [
+          "am",
+          "'m"
+        ],
+        "explanation": "Con el pronombre 'I' siempre se usa 'am' (o la contracción 'I'm').",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'Is' se usa con he/she/it, no con 'I'."
+          },
+          {
+            "answer": "are",
+            "why": "'Are' se usa con you/we/they, no con 'I'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "It ___ very cold in Bariloche today.",
+        "hint": "(to be)",
+        "answers": [
+          "is",
+          "'s"
+        ],
+        "explanation": "'It' es singular, por eso lleva 'is'; se usa para hablar del clima.",
+        "wrongAnswers": [
+          {
+            "answer": "are",
+            "why": "'It' es singular, necesita 'is', no 'are'."
+          },
+          {
+            "answer": "am",
+            "why": "'Am' solo se usa con el pronombre 'I'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "Doctor: How ___ you feeling today, Mrs. Alonso?",
+        "hint": "(to be)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Con 'you' el verbo to be siempre es 'are', tanto en afirmaciones como en preguntas.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "Con 'you' el verbo to be es 'are', no 'is'."
+          },
+          {
+            "answer": "do",
+            "why": "Para preguntas con to be no se usa 'do'; alcanza con el verbo to be."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "This apartment ___ very small for three people.",
+        "hint": "(to be)",
+        "answers": [
+          "is",
+          "'s"
+        ],
+        "explanation": "El sujeto 'this apartment' es singular, por eso el verbo es 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "are",
+            "why": "'Apartment' es singular, necesita 'is'."
+          },
+          {
+            "answer": "be",
+            "why": "Falta conjugar el verbo; no se usa la forma base 'be' sola."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "Tomás and I ___ best friends since school.",
+        "hint": "(to be)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Cuando el sujeto incluye a 'I' junto con otra persona, se transforma en plural y usa 'are'. No existe una contracción válida aquí porque 'I' nunca se contrae con 'are' (no existe la forma 'I're').",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'Tomás and I' equivale a 'we', que es plural y necesita 'are'."
+          },
+          {
+            "answer": "'re",
+            "why": "No se puede contraer 'are' con 'I'; la contracción 'I're' no existe en inglés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "She ___ not from Córdoba; she is from Salta.",
+        "hint": "(to be)",
+        "answers": [
+          "is"
+        ],
+        "explanation": "Con 'she' siempre se usa 'is', también en oraciones negativas.",
+        "wrongAnswers": [
+          {
+            "answer": "are",
+            "why": "'She' es singular, necesita 'is', no 'are'."
+          },
+          {
+            "answer": "am",
+            "why": "'Am' solo se usa con 'I', no con 'she'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My brother and I are students here.",
+        "alternatives": [],
+        "translation": "Mi hermano y yo somos estudiantes aquí.",
+        "explanation": "Con sujetos compuestos que incluyen 'I', el verbo to be se usa en plural ('are')."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She is not ready for the trip yet.",
+        "alternatives": [
+          "She's not ready for the trip yet."
+        ],
+        "translation": "Ella no está lista para el viaje todavía.",
+        "explanation": "La negación con to be se forma agregando 'not' después del verbo ('is not' o 'isn't')."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Are you free for an interview tomorrow?",
+        "alternatives": [],
+        "translation": "¿Estás libre para una entrevista mañana?",
+        "explanation": "En preguntas con to be, el verbo va antes del sujeto: 'Are you...?'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "It is very cold in Bariloche today.",
+        "alternatives": [
+          "It's very cold in Bariloche today."
+        ],
+        "translation": "Hace mucho frío en Bariloche hoy.",
+        "explanation": "Para hablar del clima en inglés siempre se usa el pronombre 'it' como sujeto."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "They are new students at this school.",
+        "alternatives": [],
+        "translation": "Ellos son nuevos estudiantes en esta escuela.",
+        "explanation": "Con sujetos plurales como 'they', el verbo to be es 'are'."
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "Is very late, we need to go.",
+        "answers": [
+          "It is very late, we need to go."
+        ],
+        "explanation": "En inglés el sujeto nunca se omite; cuando no hay un sujeto concreto se usa 'it'.",
+        "wrongAnswers": [
+          {
+            "answer": "Is very late, we needs to go.",
+            "why": "Corrige el verbo 'need' en vez de agregar el sujeto que falta, que es el verdadero error."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "My parents is from Mendoza.",
+        "answers": [
+          "My parents are from Mendoza."
+        ],
+        "explanation": "'Parents' es plural, por eso el verbo to be correcto es 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "My parents is from Mendoza, right?",
+            "why": "No corrige el verbo, que es el error principal."
+          },
+          {
+            "answer": "My parent is from Mendoza.",
+            "why": "Cambia 'parents' a singular en vez de corregir el verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "She is a doctor and he is a nurse. They is very busy today.",
+        "answers": [
+          "She is a doctor and he is a nurse. They are very busy today."
+        ],
+        "explanation": "'They' es plural, por eso el verbo to be correcto es 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "She are a doctor and he is a nurse. They is very busy today.",
+            "why": "Cambia 'she is', que ya estaba correcto, y deja sin corregir el error original."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "I is ready for the interview, Mr. Pérez.",
+        "answers": [
+          "I am ready for the interview, Mr. Pérez.",
+          "I'm ready for the interview, Mr. Pérez."
+        ],
+        "explanation": "Con el pronombre 'I' siempre se usa 'am', nunca 'is' ni 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "I are ready for the interview, Mr. Pérez.",
+            "why": "'Are' no se usa con 'I'; corresponde 'am'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "You is late for the appointment, Lucía.",
+        "answers": [
+          "You are late for the appointment, Lucía."
+        ],
+        "explanation": "Con 'you' el verbo to be siempre es 'are', ya sea para 'vos', 'usted' o 'ustedes'.",
+        "wrongAnswers": [
+          {
+            "answer": "You am late for the appointment, Lucía.",
+            "why": "'Am' solo se usa con 'I', no con 'you'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Sos de Buenos Aires?",
+        "answers": [
+          "Are you from Buenos Aires?"
+        ],
+        "explanation": "Con 'you' el verbo to be es 'are', y en preguntas va antes del sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "Are you of Buenos Aires?",
+            "why": "Se usa 'from' para indicar origen, no 'of'."
+          },
+          {
+            "answer": "Is you from Buenos Aires?",
+            "why": "Con 'you' el verbo to be es 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hace mucho frío hoy en Bariloche.",
+        "answers": [
+          "It is very cold today in Bariloche.",
+          "It's very cold today in Bariloche.",
+          "It is very cold in Bariloche today.",
+          "It's very cold in Bariloche today."
+        ],
+        "explanation": "Para hablar del clima se necesita el sujeto 'it', que nunca se omite en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "Is very cold today in Bariloche.",
+            "why": "Falta el sujeto 'it'; en inglés el sujeto es obligatorio."
+          },
+          {
+            "answer": "He is very cold today in Bariloche.",
+            "why": "Para hablar del clima se usa 'it', no 'he'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nosotros somos de Rosario, pero ellos son de Salta.",
+        "answers": [
+          "We are from Rosario, but they are from Salta.",
+          "We're from Rosario, but they're from Salta."
+        ],
+        "explanation": "Con 'we' y 'they' el verbo to be es siempre 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "We is from Rosario, but they is from Salta.",
+            "why": "Con 'we' y 'they' el verbo to be es 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vos sos muy puntual, Martina.",
+        "answers": [
+          "You are very punctual, Martina.",
+          "You're very punctual, Martina."
+        ],
+        "explanation": "Con 'you' (tanto para 'vos' como 'usted') el verbo to be es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "You is very punctual, Martina.",
+            "why": "Con 'you' corresponde 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermana es médica y yo soy enfermero.",
+        "answers": [
+          "My sister is a doctor and I am a nurse.",
+          "My sister is a doctor and I'm a nurse."
+        ],
+        "explanation": "Cada sujeto necesita su propia forma del verbo to be: 'is' para 'sister' y 'am' para 'I'.",
+        "wrongAnswers": [
+          {
+            "answer": "My sister are a doctor and I am a nurse.",
+            "why": "'Sister' es singular, necesita 'is', no 'are'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Están listos para la entrevista, chicos?",
+        "answers": [
+          "Are you ready for the interview, guys?",
+          "Are you guys ready for the interview?"
+        ],
+        "explanation": "Al hablar directamente con un grupo de personas se usa 'you' (no 'they'), con el verbo 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "Is you ready for the interview, guys?",
+            "why": "Con 'you' el verbo to be es 'are', no 'is'."
+          },
+          {
+            "answer": "Are they ready for the interview, guys?",
+            "why": "Se le habla directamente a 'ustedes', corresponde 'you', no 'they'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la familia de Martín y respondé las preguntas sobre los pronombres y el verbo to be.",
+        "text": "My name is Martín and I am from Mendoza. I am a student. This is my family. My sister's name is Lucía. She is twenty years old. She is a nurse. My brother is Pablo. He is fifteen. He is a student too. My parents are Rosa and Carlos. They are from Mendoza too. We are a big family! Our dog is Toby. It is very friendly. It is black and white. Right now, it is sunny in Mendoza. It is a beautiful day. My friend Ana is here too. She is very nice.",
+        "questions": [
+          {
+            "prompt": "¿Qué es Toby?",
+            "options": [
+              "La hermana de Martín",
+              "El hermano de Martín",
+              "El perro de Martín",
+              "El amigo de Martín"
+            ],
+            "correctIndex": 2,
+            "explanation": "El pronombre 'it' se usa para animales y cosas; como Toby es el perro de la familia, se lo describe con 'it is very friendly'."
+          },
+          {
+            "prompt": "En la oración 'She is a nurse', ¿a quién se refiere 'she'?",
+            "options": [
+              "A Rosa",
+              "A Lucía",
+              "A Pablo",
+              "A Ana"
+            ],
+            "correctIndex": 1,
+            "explanation": "El pronombre 'she' reemplaza al sujeto femenino mencionado antes en el texto, que es Lucía, la hermana de Martín."
+          },
+          {
+            "prompt": "En 'it is sunny in Mendoza', ¿a qué se refiere 'it'?",
+            "options": [
+              "Al clima",
+              "A Toby",
+              "A la familia",
+              "A Ana"
+            ],
+            "correctIndex": 0,
+            "explanation": "En inglés se usa 'it' obligatoriamente para hablar del clima, aunque en español esa información a veces no lleva sujeto ('hace sol')."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el viaje de Sofía a Bariloche y respondé las preguntas sobre los pronombres y el verbo to be.",
+        "text": "Hi! I am Sofía, and I am at a hostel in Bariloche with my friends. We are here for five days. It is very cold outside, but the mountains are beautiful with the snow. My friend Denise is from Brazil. She is very funny. Her boyfriend Lucas is here too. He is quiet, but he is a good cook. They are a lovely couple. The hostel is small, but it is comfortable. The owner, Mr. Gómez, is very kind. He is always ready to help. \"You are welcome here,\" he always says to new guests. Tomorrow we are going skiing. It is going to be sunny. I am excited for the trip!",
+        "questions": [
+          {
+            "prompt": "¿Quiénes son Denise y Lucas?",
+            "options": [
+              "Las hermanas de Sofía",
+              "Amigos de Sofía, una pareja",
+              "Los padres de Sofía",
+              "Los dueños del hostel"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto usa 'they' para referirse a Denise y Lucas juntos como 'a lovely couple', es decir, una pareja de amigos de Sofía."
+          },
+          {
+            "prompt": "En 'but it is comfortable', ¿a qué se refiere 'it'?",
+            "options": [
+              "Al hostel",
+              "Al señor Gómez",
+              "Al clima",
+              "A la nieve"
+            ],
+            "correctIndex": 0,
+            "explanation": "El pronombre 'it' retoma el sujeto mencionado justo antes, 'the hostel', para no repetir la palabra."
+          },
+          {
+            "prompt": "¿Quién dice 'You are welcome here' a los huéspedes nuevos?",
+            "options": [
+              "Denise",
+              "Lucas",
+              "El señor Gómez",
+              "Sofía"
+            ],
+            "correctIndex": 2,
+            "explanation": "El pronombre 'he' antes de la frase señala que el sujeto es el dueño del hostel, el señor Gómez, quien les da la bienvenida a los huéspedes."
+          }
+        ]
+      }
+    ],
+    "to-be-afirmativo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de to be.",
+        "prompt": "Hi, my name is Laura. I ___ a graphic designer from Buenos Aires.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con el pronombre 'I' siempre corresponde 'am', nunca otra forma del verbo to be.",
+        "optionNotes": [
+          "Incorrecto: 'is' se usa con he/she/it, no con 'I'.",
+          "Correcto: con el sujeto 'I' siempre se usa 'am'.",
+          "Incorrecto: 'are' se usa con you/we/they, no con 'I'.",
+          "Incorrecto: 'be' es el infinitivo, no se conjuga así en presente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de to be.",
+        "prompt": "The receptionist tells you: 'The doctor ___ ready to see you now.'",
+        "options": [
+          "be",
+          "is",
+          "are",
+          "am"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando el sujeto es una persona o cosa en singular (he/she/it), el verbo to be se conjuga como 'is'.",
+        "optionNotes": [
+          "Incorrecto: 'be' es el infinitivo, falta conjugarlo.",
+          "Correcto: 'the doctor' equivale a he/she, por eso se usa 'is'.",
+          "Incorrecto: 'are' corresponde a you/we/they, no a 'the doctor' (he/she).",
+          "Incorrecto: 'am' solo se usa con 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de to be.",
+        "prompt": "This apartment in Palermo ___ perfect for a young couple.",
+        "options": [
+          "are",
+          "be",
+          "is",
+          "am"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las cosas y lugares se reemplazan por 'it', que siempre lleva 'is' en presente.",
+        "optionNotes": [
+          "Incorrecto: 'are' no corresponde a 'this apartment', que equivale a 'it' y es singular.",
+          "Incorrecto: 'be' es el infinitivo, no la forma conjugada.",
+          "Correcto: 'this apartment' equivale a 'it', y con it se usa 'is'.",
+          "Incorrecto: 'am' solo se usa con 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de to be.",
+        "prompt": "My cousin Nico ___ 25 years old now.",
+        "options": [
+          "has",
+          "are",
+          "is",
+          "am"
+        ],
+        "correctIndex": 2,
+        "explanation": "En inglés la edad siempre se expresa con el verbo to be, nunca con have, como en el error común 'I have 25 years'.",
+        "optionNotes": [
+          "Incorrecto: 'has' es un calco del español 'tiene 25 años'; en inglés la edad se expresa con to be.",
+          "Incorrecto: 'are' no corresponde a un sujeto singular como 'my cousin'.",
+          "Correcto: para decir la edad en inglés se usa to be ('is' con he/she/it), no have.",
+          "Incorrecto: 'am' solo se usa con 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de to be.",
+        "prompt": "Sofía and I ___ co-workers at the same marketing agency.",
+        "options": [
+          "be",
+          "am",
+          "are",
+          "is"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando el sujeto combina a otra persona con 'I', equivale a 'we' y el verbo correcto es 'are'.",
+        "optionNotes": [
+          "Incorrecto: 'be' es el infinitivo, falta conjugarlo.",
+          "Incorrecto: 'am' solo se usa con 'I' solo, no con un sujeto compuesto.",
+          "Correcto: 'Sofía and I' equivale a 'we', y con we se usa 'are'.",
+          "Incorrecto: 'is' se usa con he/she/it, no con 'we' (Sofía and I)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de to be.",
+        "prompt": "You ___ very kind, thank you for helping me move, Pablo.",
+        "options": [
+          "am",
+          "are",
+          "is",
+          "be"
+        ],
+        "correctIndex": 1,
+        "explanation": "El pronombre 'you' siempre lleva 'are', sin importar si se refiere a una persona o a varias.",
+        "optionNotes": [
+          "Incorrecto: 'am' solo se usa con 'I'.",
+          "Correcto: con 'you' siempre se usa 'are', ya sea vos, usted o ustedes.",
+          "Incorrecto: 'is' no corresponde a 'you'.",
+          "Incorrecto: 'be' es el infinitivo, no la forma conjugada en presente."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de to be (con o sin contracción).",
+        "sentence": "___ excited about my new job at the law firm.",
+        "hint": "(to be)",
+        "answers": [
+          "I am",
+          "I'm"
+        ],
+        "explanation": "Con el pronombre 'I' siempre se usa 'am', y se puede contraer como 'I'm'.",
+        "wrongAnswers": [
+          {
+            "answer": "I is",
+            "why": "'is' se usa con he/she/it, no con 'I'."
+          },
+          {
+            "answer": "I are",
+            "why": "'are' se usa con you/we/they, no con 'I'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de to be (con o sin contracción).",
+        "sentence": "My brother Tomás works at a bank. ___ very responsible.",
+        "hint": "(to be)",
+        "answers": [
+          "He is",
+          "He's"
+        ],
+        "explanation": "'He' corresponde a 'is', y se puede contraer como 'he's'.",
+        "wrongAnswers": [
+          {
+            "answer": "He are",
+            "why": "'are' no corresponde a 'he'; se usa 'is' con he/she/it."
+          },
+          {
+            "answer": "He be",
+            "why": "'be' es el infinitivo, falta conjugarlo como 'is'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de to be (con o sin contracción).",
+        "sentence": "___ very sunny today in Bariloche.",
+        "hint": "(to be)",
+        "answers": [
+          "It is",
+          "It's"
+        ],
+        "explanation": "Para hablar del clima en inglés se usa 'it is' (o 'it's'), nunca se omite el sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "It are",
+            "why": "'are' no corresponde a 'it'; se usa 'is' con he/she/it."
+          },
+          {
+            "answer": "It am",
+            "why": "'am' solo se usa con 'I', nunca con 'it'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de to be.",
+        "sentence": "You and Lucas ___ great teammates on this project.",
+        "hint": "(to be)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Cuando el sujeto incluye a 'you' junto con otra persona, el verbo correcto es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'is' se usa con sujetos singulares (he/she/it), no con un sujeto compuesto como 'you and Lucas'."
+          },
+          {
+            "answer": "am",
+            "why": "'am' es exclusivo del pronombre 'I'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de to be.",
+        "sentence": "My parents ___ proud of my work at the hospital.",
+        "hint": "(to be)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Los sujetos plurales como 'my parents' equivalen a 'they' y llevan 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'is' se usa con sujetos singulares; 'my parents' es plural (equivale a 'they')."
+          },
+          {
+            "answer": "am",
+            "why": "'am' es exclusivo del pronombre 'I'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de to be (con o sin contracción).",
+        "sentence": "___ tourists from Brazil, staying at our hostel.",
+        "hint": "(to be)",
+        "answers": [
+          "They are",
+          "They're"
+        ],
+        "explanation": "'They' siempre lleva 'are', y se puede contraer como 'they're'.",
+        "wrongAnswers": [
+          {
+            "answer": "They is",
+            "why": "'is' no corresponde a 'they'; se usa 'are'."
+          },
+          {
+            "answer": "They am",
+            "why": "'am' es exclusivo del pronombre 'I'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My new apartment is close to the subway station.",
+        "alternatives": [],
+        "translation": "Mi departamento nuevo está cerca de la estación de subte.",
+        "explanation": "El sujeto singular 'my new apartment' (it) va seguido de 'is' y el resto del predicado."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We are very happy about the new job offer.",
+        "alternatives": [],
+        "translation": "Estamos muy felices por la nueva oferta de trabajo.",
+        "explanation": "Con el sujeto 'we' se usa 'are', ubicado justo después del pronombre."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The doctor is ready to see you now.",
+        "alternatives": [
+          "Now the doctor is ready to see you."
+        ],
+        "translation": "El doctor está listo para atenderte ahora.",
+        "explanation": "'The doctor' equivale a 'he/she' y por eso lleva 'is'; el adverbio 'now' puede ir al final o al principio."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Lucía and Martín are excellent English teachers.",
+        "alternatives": [],
+        "translation": "Lucía y Martín son excelentes profesores de inglés.",
+        "explanation": "'Lucía and Martín' equivale a 'they', un sujeto plural que lleva 'are'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You are the best candidate for this position.",
+        "alternatives": [],
+        "translation": "Vos sos el mejor candidato para este puesto.",
+        "explanation": "Con 'you' siempre se usa 'are', sin importar si se refiere a una o varias personas."
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo to be.",
+        "sentence": "She are a very good doctor at the clinic.",
+        "answers": [
+          "She is a very good doctor at the clinic.",
+          "She's a very good doctor at the clinic."
+        ],
+        "explanation": "Con 'she' (he/she/it) el verbo to be correcto es 'is', no 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "They are a very good doctor at the clinic.",
+            "why": "Cambia el sujeto en vez de corregir el verbo; además 'they' con un sujeto singular ('a doctor') no concuerda."
+          },
+          {
+            "answer": "She am a very good doctor at the clinic.",
+            "why": "'am' es exclusivo del pronombre 'I', no corresponde a 'she'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo to be.",
+        "sentence": "I is 28 years old and I work in marketing.",
+        "answers": [
+          "I am 28 years old and I work in marketing.",
+          "I'm 28 years old and I work in marketing."
+        ],
+        "explanation": "Con el pronombre 'I' siempre se usa 'am', nunca 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "I are 28 years old and I work in marketing.",
+            "why": "'are' corresponde a you/we/they, no a 'I'."
+          },
+          {
+            "answer": "I have 28 years old and I work in marketing.",
+            "why": "Es un calco del español 'tener años'; en inglés la edad se expresa con to be, no con have."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo to be.",
+        "sentence": "We is ready for the exam tomorrow.",
+        "answers": [
+          "We are ready for the exam tomorrow.",
+          "We're ready for the exam tomorrow."
+        ],
+        "explanation": "Con 'we' el verbo to be correcto es 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "We am ready for the exam tomorrow.",
+            "why": "'am' es exclusivo del pronombre 'I', no corresponde a 'we'."
+          },
+          {
+            "answer": "We be ready for the exam tomorrow.",
+            "why": "'be' es el infinitivo; en presente hay que conjugarlo como 'are'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo to be.",
+        "sentence": "My brother and sister is at home right now.",
+        "answers": [
+          "My brother and sister are at home right now."
+        ],
+        "explanation": "'My brother and sister' equivale a 'they', un sujeto plural que lleva 'are'. No existe una contracción natural aquí, porque 're solo se contrae con pronombres (we're, you're, they're), no con frases nominales.",
+        "wrongAnswers": [
+          {
+            "answer": "My brother and sister am at home right now.",
+            "why": "'am' es exclusivo del pronombre 'I'."
+          },
+          {
+            "answer": "My brother and sister be at home right now.",
+            "why": "'be' es el infinitivo; falta conjugarlo correctamente como 'are'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo to be.",
+        "sentence": "You am very talented, Carla.",
+        "answers": [
+          "You are very talented, Carla.",
+          "You're very talented, Carla."
+        ],
+        "explanation": "Con 'you' siempre se usa 'are', nunca 'am'.",
+        "wrongAnswers": [
+          {
+            "answer": "You is very talented, Carla.",
+            "why": "'is' se usa con he/she/it, no con 'you'."
+          },
+          {
+            "answer": "You be very talented, Carla.",
+            "why": "'be' es el infinitivo; en presente debe conjugarse como 'are'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Soy profesor de inglés en una escuela de Córdoba.",
+        "answers": [
+          "I am an English teacher at a school in Córdoba.",
+          "I'm an English teacher at a school in Córdoba."
+        ],
+        "explanation": "Para decir profesiones en inglés se usa to be ('I am a/an...'), con artículo antes de la profesión.",
+        "wrongAnswers": [
+          {
+            "answer": "I am teacher of English at a school in Córdoba.",
+            "why": "Falta el artículo 'an' antes de la profesión y 'of English' no es la forma natural; debe ser 'an English teacher'."
+          },
+          {
+            "answer": "I have an English teacher at a school in Córdoba.",
+            "why": "Calco incorrecto: para decir la profesión se usa to be, no have."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vos sos muy simpático, Nico.",
+        "answers": [
+          "You are very nice, Nico.",
+          "You're very nice, Nico."
+        ],
+        "explanation": "El pronombre 'you' siempre lleva 'are', sea para vos, usted o ustedes.",
+        "wrongAnswers": [
+          {
+            "answer": "You is very nice, Nico.",
+            "why": "'is' no corresponde a 'you'; se usa 'are'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nosotros estamos cansados después del viaje.",
+        "answers": [
+          "We are tired after the trip.",
+          "We're tired after the trip."
+        ],
+        "explanation": "Con 'we' el verbo to be correcto es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "We is tired after the trip.",
+            "why": "'is' se usa con he/she/it, no con 'we'."
+          },
+          {
+            "answer": "We has tired after the trip.",
+            "why": "Calco incorrecto con have; el estado se expresa con to be, no con have."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella es médica en el hospital Italiano.",
+        "answers": [
+          "She is a doctor at the Italian Hospital.",
+          "She's a doctor at the Italian Hospital."
+        ],
+        "explanation": "Con 'she' se usa 'is', y las profesiones en inglés siempre llevan artículo ('a doctor').",
+        "wrongAnswers": [
+          {
+            "answer": "She are a doctor at the Italian Hospital.",
+            "why": "'are' no corresponde a 'she'; se usa 'is'."
+          },
+          {
+            "answer": "She is doctor at the Italian Hospital.",
+            "why": "Falta el artículo 'a' antes de la profesión 'doctor'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ellos son de Rosario, pero viven en Buenos Aires.",
+        "answers": [
+          "They are from Rosario, but they live in Buenos Aires.",
+          "They're from Rosario, but they live in Buenos Aires."
+        ],
+        "explanation": "Con 'they' el verbo to be correcto es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "They is from Rosario, but they live in Buenos Aires.",
+            "why": "'is' no corresponde a 'they'; se usa 'are'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tengo 30 años y trabajo en una startup.",
+        "answers": [
+          "I am 30 years old and I work at a startup.",
+          "I'm 30 years old and I work at a startup."
+        ],
+        "explanation": "En inglés la edad siempre se expresa con to be ('I am... years old'), nunca con have.",
+        "wrongAnswers": [
+          {
+            "answer": "I have 30 years and I work at a startup.",
+            "why": "Calco del español 'tener años'; en inglés la edad se expresa con to be, no con have."
+          }
+        ]
+      }
+    ],
+    "to-be-negativo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma negativa correcta del verbo to be.",
+        "prompt": "Lucía: I ___ nervous, but I am a little tired for the interview.",
+        "options": [
+          "not am",
+          "aren't",
+          "isn't",
+          "am not"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con el pronombre 'I' la negación correcta es 'am not'; no existe la forma 'amn't'.",
+        "optionNotes": [
+          "Incorrecto: 'not' debe ir después del verbo 'am', no antes.",
+          "Incorrecto: 'aren't' se usa con you/we/they, no con 'I'.",
+          "Incorrecto: 'isn't' se usa con he/she/it, no con 'I'.",
+          "Correcto: con 'I' la negación es 'am not' (no existe 'amn't')."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma negativa correcta del verbo to be.",
+        "prompt": "Landlord: This apartment ___ expensive. It's only 50,000 pesos a month.",
+        "options": [
+          "am not",
+          "no is",
+          "aren't",
+          "isn't"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'it' (singular) la negación correcta es 'isn't' (is not).",
+        "optionNotes": [
+          "Incorrecto: 'am not' se usa solo con 'I'.",
+          "Incorrecto: no se usa 'no' para negar el verbo to be; se agrega 'not' después del verbo.",
+          "Incorrecto: 'aren't' se usa con you/we/they, pero 'apartment' es singular (it).",
+          "Correcto: 'it' es singular y su negación es 'isn't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma negativa correcta del verbo to be.",
+        "prompt": "Tomás and Martina ___ from Bariloche. They are from Rosario.",
+        "options": [
+          "am not",
+          "not are",
+          "aren't",
+          "isn't"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando el sujeto es plural, como 'Tomás and Martina' (they), la negación es 'aren't'.",
+        "optionNotes": [
+          "Incorrecto: 'am not' solo se usa con 'I'.",
+          "Incorrecto: 'not' va después del verbo 'are', no antes.",
+          "Correcto: con sujetos plurales (they) la negación es 'aren't'.",
+          "Incorrecto: 'isn't' es para singular (he/she/it), pero el sujeto es plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma negativa correcta del verbo to be.",
+        "prompt": "Doctor: Mrs. Alonso, your test results ___ bad. You are very healthy.",
+        "options": [
+          "isn't",
+          "am not",
+          "no are",
+          "aren't"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Results' es plural, entonces la negación correcta del verbo to be es 'aren't'.",
+        "optionNotes": [
+          "Incorrecto: 'results' es plural, necesita 'aren't', no 'isn't'.",
+          "Incorrecto: 'am not' solo se usa con 'I'.",
+          "Incorrecto: no se usa 'no' para negar el verbo to be.",
+          "Correcto: 'results' es plural, por eso se usa 'aren't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma negativa correcta del verbo to be.",
+        "prompt": "Lucía: I ___ busy tonight, do you want to grab a coffee?",
+        "options": [
+          "not am",
+          "isn't",
+          "amn't",
+          "am not"
+        ],
+        "correctIndex": 3,
+        "explanation": "No existe la contracción 'amn't'; con 'I' siempre se dice 'am not'.",
+        "optionNotes": [
+          "Incorrecto: 'not' debe ir después de 'am', no antes.",
+          "Incorrecto: 'isn't' se usa con he/she/it, no con 'I'.",
+          "Incorrecto: 'amn't' no existe en inglés.",
+          "Correcto: con 'I' la negación es 'am not'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma negativa correcta del verbo to be.",
+        "prompt": "Tomás: My boss ___ happy with the report.",
+        "options": [
+          "isn't",
+          "no is",
+          "aren't",
+          "don't is"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con un sujeto singular como 'my boss' (he), la negación del verbo to be es 'isn't'.",
+        "optionNotes": [
+          "Correcto: 'boss' es singular (he), la negación correcta es 'isn't'.",
+          "Incorrecto: no se usa 'no' para negar el verbo to be.",
+          "Incorrecto: 'boss' es singular (he), necesita 'isn't', no 'aren't'.",
+          "Incorrecto: con el verbo to be nunca se usa 'don't'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta del verbo to be.",
+        "sentence": "It ___ cold today; it's actually quite warm.",
+        "hint": "(to be, negativo)",
+        "answers": [
+          "isn't",
+          "is not"
+        ],
+        "explanation": "Con 'it' (singular) la negación es 'isn't' o 'is not'.",
+        "wrongAnswers": [
+          {
+            "answer": "amn't",
+            "why": "'Amn't' no existe en inglés."
+          },
+          {
+            "answer": "aren't",
+            "why": "'It' es singular, necesita 'isn't', no 'aren't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta del verbo to be.",
+        "sentence": "I ___ late for the interview; I'm actually ten minutes early.",
+        "hint": "(to be, negativo - yo)",
+        "answers": [
+          "am not",
+          "'m not"
+        ],
+        "explanation": "Con 'I' la negación correcta es 'am not' (o 'I'm not').",
+        "wrongAnswers": [
+          {
+            "answer": "isn't",
+            "why": "'Isn't' se usa con he/she/it, no con 'I'."
+          },
+          {
+            "answer": "amn't",
+            "why": "'Amn't' no existe en inglés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta del verbo to be.",
+        "sentence": "Lucía and Tomás ___ ready to sign the contract yet.",
+        "hint": "(to be, negativo)",
+        "answers": [
+          "aren't",
+          "are not"
+        ],
+        "explanation": "Con sujetos plurales como 'Lucía and Tomás' (they), la negación es 'aren't'.",
+        "wrongAnswers": [
+          {
+            "answer": "isn't",
+            "why": "El sujeto es plural (they), necesita 'aren't', no 'isn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta del verbo to be.",
+        "sentence": "Mrs. Alonso ___ allergic to this medicine; she can take it.",
+        "hint": "(to be, negativo)",
+        "answers": [
+          "isn't",
+          "is not"
+        ],
+        "explanation": "Con un sujeto singular femenino como 'Mrs. Alonso' (she), la negación es 'isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "aren't",
+            "why": "'Mrs. Alonso' es singular (she), necesita 'isn't', no 'aren't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta del verbo to be.",
+        "sentence": "We ___ busy this weekend, so let's meet on Saturday.",
+        "hint": "(to be, negativo)",
+        "answers": [
+          "aren't",
+          "are not"
+        ],
+        "explanation": "Con 'we' (plural) la negación del verbo to be es 'aren't'.",
+        "wrongAnswers": [
+          {
+            "answer": "isn't",
+            "why": "'We' es plural, necesita 'aren't', no 'isn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta del verbo to be.",
+        "sentence": "This soup ___ very good; I don't want to finish it.",
+        "hint": "(to be, negativo)",
+        "answers": [
+          "isn't",
+          "is not"
+        ],
+        "explanation": "La negación se forma agregando 'not' después del verbo to be, nunca usando 'no' antes del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "no is",
+            "why": "No se usa 'no' para negar el verbo to be; 'not' va después del verbo."
+          },
+          {
+            "answer": "not is",
+            "why": "El orden correcto es verbo + not, no 'not' antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I am not ready for the interview yet.",
+        "alternatives": [
+          "I'm not ready for the interview yet."
+        ],
+        "translation": "No estoy listo/a para la entrevista todavía.",
+        "explanation": "Con 'I' la negación del verbo to be es 'am not'; no existe la forma 'amn't'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "This apartment isn't expensive at all.",
+        "alternatives": [
+          "This apartment is not expensive at all."
+        ],
+        "translation": "Este departamento no es nada caro.",
+        "explanation": "Con sujetos singulares como 'this apartment' (it), la negación es 'isn't'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Tomás and Martina aren't from Bariloche.",
+        "alternatives": [
+          "Tomás and Martina are not from Bariloche."
+        ],
+        "translation": "Tomás y Martina no son de Bariloche.",
+        "explanation": "Con sujetos plurales como 'Tomás and Martina' (they), la negación es 'aren't'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Your test results aren't bad, Mrs. Alonso.",
+        "alternatives": [
+          "Your test results are not bad, Mrs. Alonso."
+        ],
+        "translation": "Sus resultados no son malos, señora Alonso.",
+        "explanation": "'Results' es plural, por eso la negación correcta es 'aren't'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We aren't busy this weekend.",
+        "alternatives": [
+          "We are not busy this weekend."
+        ],
+        "translation": "Nosotros no estamos ocupados este fin de semana.",
+        "explanation": "Con 'we' (plural) la negación del verbo to be es 'aren't'."
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "I no am ready for the interview.",
+        "answers": [
+          "I am not ready for the interview."
+        ],
+        "explanation": "Para negar el verbo to be se agrega 'not' después de 'am', 'is' o 'are'; no se usa 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "I not am ready for the interview.",
+            "why": "El orden correcto es 'am not', no 'not am'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "This apartment amn't expensive.",
+        "answers": [
+          "This apartment isn't expensive.",
+          "This apartment is not expensive."
+        ],
+        "explanation": "No existe 'amn't'; con sujetos como 'it' (this apartment) se usa 'isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment am not expensive.",
+            "why": "'Apartment' es 'it', no 'I'; no corresponde 'am not'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "Tomás and Martina isn't from here.",
+        "answers": [
+          "Tomás and Martina aren't from here.",
+          "Tomás and Martina are not from here."
+        ],
+        "explanation": "Con sujetos plurales (they) la negación es 'aren't', no 'isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "Tomás and Martina is not from here.",
+            "why": "El sujeto es plural, necesita 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "Mrs. Alonso, your results no are bad.",
+        "answers": [
+          "Mrs. Alonso, your results aren't bad.",
+          "Mrs. Alonso, your results are not bad."
+        ],
+        "explanation": "No se usa 'no' para negar el verbo to be; se agrega 'not' después del verbo, o se usa la contracción 'aren't'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mrs. Alonso, your results are no bad.",
+            "why": "'No' no se usa para negar el verbo to be; se necesita 'not' después del verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "We isn't busy this weekend.",
+        "answers": [
+          "We aren't busy this weekend.",
+          "We are not busy this weekend."
+        ],
+        "explanation": "Con 'we' (plural) la negación correcta es 'aren't', no 'isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "We am not busy this weekend.",
+            "why": "'Am not' solo se usa con 'I', no con 'we'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No estoy listo para la entrevista todavía.",
+        "answers": [
+          "I am not ready for the interview yet.",
+          "I'm not ready for the interview yet."
+        ],
+        "explanation": "Con 'I' se niega con 'am not'; no existe 'amn't' ni se usa 'no' para negar el verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "I no am ready for the interview yet.",
+            "why": "No se usa 'no' para negar el verbo to be; 'not' va después de 'am'."
+          },
+          {
+            "answer": "I amn't ready for the interview yet.",
+            "why": "'Amn't' no existe en inglés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este departamento no es caro.",
+        "answers": [
+          "This apartment isn't expensive.",
+          "This apartment is not expensive."
+        ],
+        "explanation": "Con sujetos singulares (it) se usa 'isn't' o 'is not' para negar.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment no is expensive.",
+            "why": "No se usa 'no' antes del verbo to be; se usa 'not' después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tomás y Martina no son de Bariloche.",
+        "answers": [
+          "Tomás and Martina aren't from Bariloche.",
+          "Tomás and Martina are not from Bariloche."
+        ],
+        "explanation": "Con sujetos plurales (they) se usa 'aren't' o 'are not' para negar.",
+        "wrongAnswers": [
+          {
+            "answer": "Tomás and Martina isn't from Bariloche.",
+            "why": "El sujeto es plural, necesita 'aren't', no 'isn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Sus resultados no son malos, señora Alonso.",
+        "answers": [
+          "Your test results aren't bad, Mrs. Alonso.",
+          "Your test results are not bad, Mrs. Alonso."
+        ],
+        "explanation": "'Results' es plural, por eso la negación correcta es 'aren't' o 'are not'.",
+        "wrongAnswers": [
+          {
+            "answer": "Your test results isn't bad, Mrs. Alonso.",
+            "why": "'Results' es plural, necesita 'aren't', no 'isn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nosotros no estamos ocupados este finde.",
+        "answers": [
+          "We aren't busy this weekend.",
+          "We're not busy this weekend.",
+          "We are not busy this weekend."
+        ],
+        "explanation": "Con 'we' (plural) se usa 'aren't' o 'are not' para negar.",
+        "wrongAnswers": [
+          {
+            "answer": "We isn't busy this weekend.",
+            "why": "'We' es plural, necesita 'aren't', no 'isn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vos no estás lista para el viaje, Lucía.",
+        "answers": [
+          "You aren't ready for the trip, Lucía.",
+          "You're not ready for the trip, Lucía.",
+          "You are not ready for the trip, Lucía."
+        ],
+        "explanation": "Con 'you' (singular o plural) se usa 'aren't' o 'are not' para negar.",
+        "wrongAnswers": [
+          {
+            "answer": "You isn't ready for the trip, Lucía.",
+            "why": "Con 'you' corresponde 'aren't', no 'isn't'."
+          },
+          {
+            "answer": "You no are ready for the trip, Lucía.",
+            "why": "No se usa 'no' para negar el verbo to be."
+          }
+        ]
+      }
+    ],
+    "to-be-preguntas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para la pregunta.",
+        "prompt": "___ you available for a new interview next week, Mr. Gómez?",
+        "options": [
+          "Is",
+          "You are",
+          "Do",
+          "Are"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para formar preguntas con to be, el verbo va antes del sujeto: 'Are you...?'.",
+        "optionNotes": [
+          "Incorrecto: 'is' no corresponde a 'you'.",
+          "Incorrecto: no se invierte el orden; falta poner el verbo antes del sujeto.",
+          "Incorrecto: 'do' no se usa con el verbo to be.",
+          "Correcto: para preguntar con 'you' se invierte el orden: 'Are you...?'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la respuesta corta correcta.",
+        "prompt": "Doctor: Is your throat sore? Patient: Yes, ___.",
+        "options": [
+          "it's",
+          "it are",
+          "it is",
+          "is it"
+        ],
+        "correctIndex": 2,
+        "explanation": "En las respuestas cortas afirmativas con to be no se contrae: 'Yes, it is', no 'Yes, it's'.",
+        "optionNotes": [
+          "Incorrecto: no se puede contraer en una respuesta corta afirmativa.",
+          "Incorrecto: 'are' no corresponde a 'it'.",
+          "Correcto: en respuestas cortas afirmativas no se contrae, se dice 'it is'.",
+          "Incorrecto: el orden está invertido; debe ser sujeto + verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta.",
+        "prompt": "___ the bathroom, please? I need to wash my hands.",
+        "options": [
+          "Where is",
+          "Where's is",
+          "Is where",
+          "Where are"
+        ],
+        "correctIndex": 0,
+        "explanation": "Las preguntas con palabra interrogativa siguen el orden: palabra de pregunta + verbo + sujeto.",
+        "optionNotes": [
+          "Correcto: la palabra de pregunta va primero, luego el verbo y el sujeto: 'Where is the bathroom?'.",
+          "Incorrecto: no se puede repetir el verbo dos veces.",
+          "Incorrecto: el orden de las palabras está mal; 'where' debe ir primero.",
+          "Incorrecto: 'bathroom' es singular (it); corresponde 'is', no 'are'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta.",
+        "prompt": "___ your sister? She looks really young.",
+        "options": [
+          "How old's",
+          "How old are",
+          "How old is",
+          "Is how old"
+        ],
+        "correctIndex": 2,
+        "explanation": "La pregunta 'How old' va seguida del verbo to be conjugado según el sujeto: 'How old is she?'.",
+        "optionNotes": [
+          "Incorrecto: no es una contracción válida en este caso.",
+          "Incorrecto: 'are' no corresponde a un sujeto singular como 'your sister'.",
+          "Correcto: 'How old' va primero, seguido del verbo 'is' porque 'your sister' es singular (she).",
+          "Incorrecto: el orden está mal; el verbo no puede ir antes de la palabra de pregunta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la respuesta corta correcta.",
+        "prompt": "Are you tired after the flight? — No, ___.",
+        "options": [
+          "I'm not",
+          "I not",
+          "I amn't",
+          "not I am"
+        ],
+        "correctIndex": 0,
+        "explanation": "La respuesta corta negativa con 'I' es 'No, I'm not' (o 'No, I am not'), nunca 'amn't'.",
+        "optionNotes": [
+          "Correcto: la forma negativa corta es 'I'm not' (o 'I am not').",
+          "Incorrecto: falta el verbo 'am'; no se puede decir solo 'I not'.",
+          "Incorrecto: 'amn't' no existe en inglés; no es una contracción válida.",
+          "Incorrecto: el orden de las palabras está mal."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta.",
+        "prompt": "___ the new manager at the office?",
+        "options": [
+          "Who are",
+          "Who's are",
+          "Who is",
+          "Is who"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las preguntas con 'who' sobre una persona llevan 'is' cuando el sujeto es singular.",
+        "optionNotes": [
+          "Incorrecto: 'are' no corresponde porque se pregunta por una persona (singular).",
+          "Incorrecto: no se puede repetir el verbo dos veces.",
+          "Correcto: 'Who' va primero seguido de 'is' porque se pregunta por una sola persona.",
+          "Incorrecto: el orden está invertido mal; 'who' debe ir primero."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta invirtiendo el orden del verbo to be.",
+        "sentence": "___ you from Mendoza, Camila?",
+        "hint": "(be)",
+        "answers": [
+          "Are"
+        ],
+        "explanation": "Para preguntar con 'you' se invierte el orden: 'Are you...?'.",
+        "wrongAnswers": [
+          {
+            "answer": "Is",
+            "why": "'is' no corresponde a 'you'; se usa 'are'."
+          },
+          {
+            "answer": "Do",
+            "why": "'do' no se usa para preguntar con el verbo to be."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la respuesta corta afirmativa.",
+        "sentence": "Is the hotel near the beach? — Yes, ___.",
+        "hint": "(it - be, respuesta corta)",
+        "answers": [
+          "it is"
+        ],
+        "explanation": "En las respuestas cortas afirmativas con to be no se contrae: se dice 'Yes, it is'.",
+        "wrongAnswers": [
+          {
+            "answer": "it's",
+            "why": "No se contrae en una respuesta corta afirmativa; debe ser 'it is'."
+          },
+          {
+            "answer": "is it",
+            "why": "El orden está invertido; en la respuesta corta va sujeto + verbo, no verbo + sujeto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa y el verbo en el orden correcto.",
+        "sentence": "___ the nearest pharmacy? I need some medicine.",
+        "hint": "(where - be)",
+        "answers": [
+          "Where is",
+          "Where's"
+        ],
+        "explanation": "Las preguntas con palabra interrogativa siguen el orden: palabra de pregunta + verbo + sujeto; 'where is' se puede contraer como 'where's'.",
+        "wrongAnswers": [
+          {
+            "answer": "Where are",
+            "why": "'pharmacy' es singular (it); corresponde 'is', no 'are'."
+          },
+          {
+            "answer": "Is where",
+            "why": "El orden de las palabras es incorrecto; 'where' debe ir primero."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la respuesta corta negativa.",
+        "sentence": "Are you nervous about the exam? — No, ___.",
+        "hint": "(I - be, negativo)",
+        "answers": [
+          "I'm not",
+          "I am not"
+        ],
+        "explanation": "La respuesta corta negativa con 'I' es 'No, I'm not' o 'No, I am not'.",
+        "wrongAnswers": [
+          {
+            "answer": "I not",
+            "why": "Falta el verbo 'am'; no se puede decir solo 'I not'."
+          },
+          {
+            "answer": "I amn't",
+            "why": "Esa contracción no existe en inglés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'how old' y el verbo en el orden correcto.",
+        "sentence": "___ your grandfather? He looks very fit for his age.",
+        "hint": "(how old - be)",
+        "answers": [
+          "How old is"
+        ],
+        "explanation": "La pregunta 'How old' va seguida del verbo to be conjugado según el sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "How old are",
+            "why": "'your grandfather' es singular (he); corresponde 'is', no 'are'."
+          },
+          {
+            "answer": "Is how old",
+            "why": "El orden de las palabras es incorrecto; 'how old' debe ir primero."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'who' y el verbo en el orden correcto.",
+        "sentence": "___ responsible for the hiring process?",
+        "hint": "(who - be)",
+        "answers": [
+          "Who is",
+          "Who's"
+        ],
+        "explanation": "Las preguntas con 'who' sobre una persona llevan 'is' cuando el sujeto es singular.",
+        "wrongAnswers": [
+          {
+            "answer": "Who are",
+            "why": "Se pregunta por una sola persona (singular); corresponde 'is', no 'are'."
+          },
+          {
+            "answer": "Is who",
+            "why": "El orden de las palabras es incorrecto; 'who' debe ir primero."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Are you ready for your flight tomorrow morning?",
+        "alternatives": [],
+        "translation": "¿Estás listo para tu vuelo de mañana por la mañana?",
+        "explanation": "Para preguntar con 'you' el verbo 'are' va antes del sujeto."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Is the manager available for a quick meeting?",
+        "alternatives": [],
+        "translation": "¿Está disponible el gerente para una reunión rápida?",
+        "explanation": "'The manager' equivale a 'he/she', por eso el verbo 'is' va antes del sujeto en la pregunta."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Where is the closest supermarket to this apartment?",
+        "alternatives": [
+          "Where's the closest supermarket to this apartment?"
+        ],
+        "translation": "¿Dónde está el supermercado más cercano a este departamento?",
+        "explanation": "Las preguntas con palabra interrogativa siguen el orden: palabra de pregunta + verbo + sujeto; 'where is' admite la contracción 'where's'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "How old is your little brother now?",
+        "alternatives": [],
+        "translation": "¿Cuántos años tiene tu hermanito ahora?",
+        "explanation": "'How old' va seguido del verbo to be conjugado según el sujeto, que aquí es singular (he)."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Who is the new doctor at the clinic?",
+        "alternatives": [
+          "Who's the new doctor at the clinic?"
+        ],
+        "translation": "¿Quién es el nuevo doctor en la clínica?",
+        "explanation": "'Who' va seguido de 'is' cuando se pregunta por una sola persona; 'who is' admite la contracción 'who's'."
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la pregunta.",
+        "sentence": "You are ready for the trip?",
+        "answers": [
+          "Are you ready for the trip?"
+        ],
+        "explanation": "En inglés, para preguntar con to be hay que invertir el orden: el verbo va antes del sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "You're ready for the trip?",
+            "why": "Sigue sin invertir el orden; solo contrae el verbo, pero no corrige la posición."
+          },
+          {
+            "answer": "Ready you are for the trip?",
+            "why": "El orden de las palabras es incorrecto; así no se invierte una pregunta en inglés."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la pregunta.",
+        "sentence": "Where the bank is?",
+        "answers": [
+          "Where is the bank?",
+          "Where's the bank?"
+        ],
+        "explanation": "Las preguntas con palabra interrogativa siguen el orden: palabra de pregunta + verbo + sujeto; 'where is' se puede contraer como 'where's'.",
+        "wrongAnswers": [
+          {
+            "answer": "Where the bank's?",
+            "why": "Sigue sin invertir correctamente; falta mover el verbo antes del sujeto."
+          },
+          {
+            "answer": "Is where the bank?",
+            "why": "El orden de las palabras es incorrecto; 'where' debe ir primero."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la pregunta.",
+        "sentence": "How old your sister is?",
+        "answers": [
+          "How old is your sister?"
+        ],
+        "explanation": "La pregunta 'How old' va seguida del verbo to be y después el sujeto: 'How old is your sister?'.",
+        "wrongAnswers": [
+          {
+            "answer": "How old is your sister are?",
+            "why": "Agrega un verbo de más; solo se necesita un verbo to be en la pregunta."
+          },
+          {
+            "answer": "Your sister how old is?",
+            "why": "El orden de las palabras es incorrecto; 'how old' debe ir al principio."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la respuesta corta.",
+        "sentence": "Is she ready? Yes, she's.",
+        "answers": [
+          "Is she ready? Yes, she is."
+        ],
+        "explanation": "En las respuestas cortas afirmativas con to be no se contrae: debe ser 'Yes, she is'.",
+        "wrongAnswers": [
+          {
+            "answer": "Is she ready? Yes, she're.",
+            "why": "'she're' no existe; esa contracción no es válida en inglés."
+          },
+          {
+            "answer": "Is she ready? Yes, is she.",
+            "why": "El orden está invertido incorrectamente; la respuesta corta debe ser sujeto + verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Estás listo para la entrevista de trabajo?",
+        "answers": [
+          "Are you ready for the job interview?"
+        ],
+        "explanation": "Para preguntar con to be en inglés, el verbo va antes del sujeto: 'Are you...?'.",
+        "wrongAnswers": [
+          {
+            "answer": "You are ready for the job interview?",
+            "why": "Falta invertir el sujeto y el verbo para formar la pregunta en inglés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Es ella la nueva recepcionista?",
+        "answers": [
+          "Is she the new receptionist?"
+        ],
+        "explanation": "Con 'she' la pregunta se forma invirtiendo: 'Is she...?'.",
+        "wrongAnswers": [
+          {
+            "answer": "She is the new receptionist?",
+            "why": "Falta invertir el orden; en inglés la entonación no alcanza para formar una pregunta."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Dónde está el consultorio del doctor Pérez?",
+        "answers": [
+          "Where is Dr. Pérez's office?",
+          "Where is Doctor Pérez's office?",
+          "Where's Dr. Pérez's office?",
+          "Where's Doctor Pérez's office?"
+        ],
+        "explanation": "Las preguntas con 'where' siguen el orden: where + verbo + sujeto; 'where is' admite la contracción 'where's'.",
+        "wrongAnswers": [
+          {
+            "answer": "Where the doctor Pérez's office is?",
+            "why": "El orden es incorrecto; falta invertir el verbo y el sujeto después de 'where'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta y la respuesta corta al inglés.",
+        "spanish": "¿Sos argentino? — Sí, lo soy.",
+        "answers": [
+          "Are you Argentinian? Yes, I am.",
+          "Are you Argentinean? Yes, I am."
+        ],
+        "explanation": "La respuesta corta afirmativa con 'I' nunca se contrae: 'Yes, I am'.",
+        "wrongAnswers": [
+          {
+            "answer": "Are you Argentinian? Yes, I'm.",
+            "why": "No se contrae en una respuesta corta afirmativa; debe ser 'Yes, I am'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Cuántos años tiene tu abuela?",
+        "answers": [
+          "How old is your grandmother?"
+        ],
+        "explanation": "La pregunta 'How old' va seguida del verbo to be y después el sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "How old your grandmother is?",
+            "why": "El orden es incorrecto; falta invertir el verbo antes del sujeto después de 'how old'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta y la respuesta corta al inglés.",
+        "spanish": "¿Estás nervioso por el examen? — No, no lo estoy.",
+        "answers": [
+          "Are you nervous about the exam? No, I'm not.",
+          "Are you nervous about the exam? No, I am not."
+        ],
+        "explanation": "La respuesta corta negativa con 'I' es 'No, I'm not' o 'No, I am not'.",
+        "wrongAnswers": [
+          {
+            "answer": "Are you nervous about the exam? No, I not.",
+            "why": "Falta el verbo 'am' en la respuesta negativa; no se puede omitir el verbo to be."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el diálogo de la entrevista de trabajo y respondé las preguntas.",
+        "text": "Lucía is at a job interview at a small company in Buenos Aires. Mr. Pérez, the manager, is talking to her.\n\nMr. Pérez: Hello, Lucía. Are you ready for the interview?\nLucía: Yes, I am. I'm a little nervous, but I'm ready.\nMr. Pérez: Don't worry. Are you from Buenos Aires?\nLucía: No, I'm not. I'm from Córdoba, but I live here now.\nMr. Pérez: Is this your first job?\nLucía: No, it isn't. I have two years of experience.\nMr. Pérez: Great. Is your English good?\nLucía: Yes, it is. I study English every day.\nMr. Pérez: Perfect. Are you free to start on Monday?\nLucía: Yes, I am!",
+        "questions": [
+          {
+            "prompt": "Where is Lucía from?",
+            "options": [
+              "Rosario",
+              "Córdoba",
+              "Buenos Aires",
+              "Mendoza"
+            ],
+            "correctIndex": 1,
+            "explanation": "A la pregunta de si es de Buenos Aires, Lucía responde 'No, I'm not' y aclara 'I'm from Córdoba'."
+          },
+          {
+            "prompt": "Is this Lucía's first job?",
+            "options": [
+              "Yes, she is.",
+              "Yes, it is.",
+              "No, it isn't.",
+              "No, she isn't."
+            ],
+            "correctIndex": 2,
+            "explanation": "La pregunta usa 'this' (it), por eso la respuesta corta correcta es 'No, it isn't', tal como dice Lucía en el texto."
+          },
+          {
+            "prompt": "Is Lucía free to start on Monday?",
+            "options": [
+              "Yes, she am.",
+              "Yes, she is.",
+              "No, she isn't.",
+              "Yes, is she."
+            ],
+            "correctIndex": 1,
+            "explanation": "Como la pregunta es sobre Lucía (tercera persona), la respuesta corta debe usar 'she is', aunque en el texto ella diga 'Yes, I am' en primera persona."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el diálogo en el consultorio médico y respondé las preguntas.",
+        "text": "Tomás is at Dr. Gómez's office today. He doesn't feel very well.\n\nDr. Gómez: Good morning, Tomás. How are you today?\nTomás: I'm not very well, doctor. I have a headache.\nDr. Gómez: Are you tired too?\nTomás: Yes, I am. I'm very tired.\nDr. Gómez: How old are you?\nTomás: I'm twenty-eight.\nDr. Gómez: Is this your first visit to this clinic?\nTomás: No, it isn't. I'm here every year for a check-up.\nDr. Gómez: OK. Are you allergic to any medicine?\nTomás: No, I'm not. I'm not allergic to anything.\nDr. Gómez: Good. Is your family healthy?\nTomás: Yes, they are. My parents are very healthy.",
+        "questions": [
+          {
+            "prompt": "How old is Tomás?",
+            "options": [
+              "82",
+              "18",
+              "28",
+              "20"
+            ],
+            "correctIndex": 2,
+            "explanation": "Tomás responde 'I'm twenty-eight' a la pregunta 'How old are you?'."
+          },
+          {
+            "prompt": "Is this Tomás's first visit to the clinic?",
+            "options": [
+              "No, it isn't.",
+              "Yes, it is.",
+              "Yes, he is.",
+              "No, he isn't."
+            ],
+            "correctIndex": 0,
+            "explanation": "Tomás dice 'No, it isn't' porque va a la clínica todos los años para un control, y la pregunta usa 'this' (it)."
+          },
+          {
+            "prompt": "Is Tomás's family healthy?",
+            "options": [
+              "No, it isn't.",
+              "Yes, they are.",
+              "Yes, he is.",
+              "No, they aren't."
+            ],
+            "correctIndex": 1,
+            "explanation": "La pregunta es sobre 'family' (ellos), por eso la respuesta corta correcta usa 'they are', no 'he is' ni 'it isn't'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Sofía está mirando un departamento en alquiler en Córdoba con el dueño, el señor Ibarra. Corregí el error en lo que dice ella sobre el baño.",
+        "sentence": "The bathroom is clean?",
+        "answers": [
+          "Is the bathroom clean?"
+        ],
+        "explanation": "Para hacer una pregunta con el verbo to be hay que invertir el orden: el verbo va antes del sujeto, por eso es 'Is the bathroom clean?' y no alcanza con la entonación como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "The bathroom clean is?",
+            "why": "El orden de las palabras está mal: el adjetivo no puede ir antes del verbo; la estructura correcta es verbo + sujeto + adjetivo."
+          },
+          {
+            "answer": "Is clean the bathroom?",
+            "why": "El sujeto 'the bathroom' debe ir inmediatamente después del verbo 'is', no al final de la oración."
+          }
+        ]
+      }
+    ],
+    "presentarse": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto para presentar la profesión.",
+        "prompt": "Hi, I'm Lucía. I'm ___ nurse at the hospital.",
+        "options": [
+          "an",
+          "the",
+          "a",
+          "no article"
+        ],
+        "correctIndex": 2,
+        "explanation": "Antes de una profesión en singular que empieza con sonido consonante, como 'nurse', se usa 'a'.",
+        "optionNotes": [
+          "Incorrecto: 'an' se usa antes de sonido vocálico, pero 'nurse' empieza con sonido consonante.",
+          "Incorrecto: 'the' se usa para algo específico ya mencionado, no para presentar una profesión.",
+          "Correcto: 'nurse' empieza con sonido consonante, por eso se usa 'a'.",
+          "Incorrecto: en inglés siempre se necesita un artículo antes de una profesión en singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto para presentar la profesión.",
+        "prompt": "He's ___ engineer from Rosario.",
+        "options": [
+          "no article",
+          "the",
+          "an",
+          "a"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Engineer' empieza con sonido vocálico, por eso se usa 'an' en vez de 'a'.",
+        "optionNotes": [
+          "Incorrecto: en inglés siempre se necesita un artículo antes de una profesión en singular.",
+          "Incorrecto: 'the' se usa para algo específico ya mencionado, no para presentar una profesión.",
+          "Correcto: 'engineer' empieza con sonido vocálico, por eso se usa 'an'.",
+          "Incorrecto: 'engineer' empieza con sonido vocálico, necesita 'an', no 'a'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto para presentar la profesión.",
+        "prompt": "She's ___ doctor at the clinic.",
+        "options": [
+          "a",
+          "no article",
+          "an",
+          "the"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Doctor' empieza con sonido consonante, por eso se usa 'a', no 'an' ni 'the'.",
+        "optionNotes": [
+          "Correcto: 'doctor' empieza con sonido consonante, por eso se usa 'a'.",
+          "Incorrecto: en inglés siempre se necesita un artículo antes de una profesión en singular.",
+          "Incorrecto: 'doctor' empieza con sonido consonante, necesita 'a', no 'an'.",
+          "Incorrecto: 'the' se usa para algo específico ya mencionado, no para presentar una profesión."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto para presentar la profesión.",
+        "prompt": "My brother is ___ English teacher; he's British.",
+        "options": [
+          "a",
+          "no article",
+          "an",
+          "the"
+        ],
+        "correctIndex": 2,
+        "explanation": "'English' empieza con sonido vocálico, por eso se usa 'an' aunque 'teacher' empiece con consonante.",
+        "optionNotes": [
+          "Incorrecto: la palabra que sigue al artículo es 'English', que empieza con sonido vocálico, necesita 'an'.",
+          "Incorrecto: en inglés siempre se necesita un artículo antes de una profesión en singular.",
+          "Correcto: 'English' empieza con sonido vocálico, por eso se usa 'an'.",
+          "Incorrecto: 'the' se usa para algo específico ya mencionado, no para presentar una profesión."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para hablar de profesiones en plural.",
+        "prompt": "They are ___ engineers at that company.",
+        "options": [
+          "the",
+          "an",
+          "no article",
+          "a"
+        ],
+        "correctIndex": 2,
+        "explanation": "Delante de una profesión en plural no se usa artículo ('a' o 'an' solo van con singular).",
+        "optionNotes": [
+          "Incorrecto: 'the' se usa para algo específico ya mencionado, no en este caso general.",
+          "Incorrecto: 'an' solo se usa delante de una profesión en singular, no en plural.",
+          "Correcto: delante de una profesión en plural no se usa artículo.",
+          "Incorrecto: 'a' solo se usa delante de una profesión en singular, no en plural."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "Hi, my name's Tomás. I ___ a taxi driver here in Buenos Aires.",
+        "hint": "(to be)",
+        "answers": [
+          "am",
+          "'m"
+        ],
+        "explanation": "Con el pronombre 'I' siempre se usa 'am' (o la contracción 'I'm').",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'Is' no se usa con 'I'; corresponde 'am'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto.",
+        "sentence": "She's ___ architect; she designs houses.",
+        "hint": "(a / an)",
+        "answers": [
+          "an"
+        ],
+        "explanation": "'Architect' empieza con sonido vocálico, por eso se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "'Architect' empieza con sonido vocálico, se necesita 'an', no 'a'."
+          },
+          {
+            "answer": "the",
+            "why": "'The' se usa para algo específico, no para presentar una profesión por primera vez."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el gentilicio correcto.",
+        "sentence": "I'm from Chile, so I'm ___.",
+        "hint": "(gentilicio)",
+        "answers": [
+          "Chilean"
+        ],
+        "explanation": "Los gentilicios en inglés siempre se escriben con mayúscula inicial.",
+        "wrongAnswers": [
+          {
+            "answer": "chilean",
+            "why": "Los gentilicios se escriben con mayúscula en inglés."
+          },
+          {
+            "answer": "Chile",
+            "why": "'Chile' es el nombre del país, no el gentilicio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto.",
+        "sentence": "My sister is ___ nurse at the hospital in Mendoza.",
+        "hint": "(a / an)",
+        "answers": [
+          "a"
+        ],
+        "explanation": "'Nurse' empieza con sonido consonante, por eso se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "an",
+            "why": "'Nurse' empieza con sonido consonante, se necesita 'a', no 'an'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "We ___ very happy to be here in Bariloche.",
+        "hint": "(to be)",
+        "answers": [
+          "are",
+          "'re"
+        ],
+        "explanation": "Con 'we' (plural) el verbo to be es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'We' es plural, necesita 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo to be.",
+        "sentence": "My parents ___ teachers at a school in Rosario.",
+        "hint": "(to be)",
+        "answers": [
+          "are",
+          "'re"
+        ],
+        "explanation": "Con sujetos plurales como 'parents' el verbo to be es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'Parents' es plural, necesita 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Hi, my name is Lucía Fernández.",
+        "alternatives": [],
+        "translation": "Hola, me llamo Lucía Fernández.",
+        "explanation": "Para presentarse se usa la estructura 'My name is...' con el verbo to be."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I am twenty-five years old.",
+        "alternatives": [],
+        "translation": "Tengo veinticinco años.",
+        "explanation": "En inglés la edad se expresa con el verbo to be, no con 'tener' como en español."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I'm an engineer from Rosario.",
+        "alternatives": [
+          "I am an engineer from Rosario."
+        ],
+        "translation": "Soy ingeniero/a de Rosario.",
+        "explanation": "'Engineer' empieza con sonido vocálico, por eso se usa 'an' antes de la profesión."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We are very happy to be here.",
+        "alternatives": [],
+        "translation": "Estamos muy contentos de estar acá.",
+        "explanation": "Con 'we' (plural) el verbo to be es 'are'."
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She is a nurse at this hospital.",
+        "alternatives": [],
+        "translation": "Ella es enfermera en este hospital.",
+        "explanation": "'Nurse' empieza con sonido consonante, por eso se usa 'a' antes de la profesión."
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "I am engineer.",
+        "answers": [
+          "I am an engineer."
+        ],
+        "explanation": "Delante de una profesión en singular se necesita un artículo; como 'engineer' empieza con sonido vocálico, corresponde 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "I are engineer.",
+            "why": "Cambia el verbo en vez de agregar el artículo que falta antes de la profesión."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "She's a architect.",
+        "answers": [
+          "She's an architect.",
+          "She is an architect."
+        ],
+        "explanation": "'Architect' empieza con sonido vocálico, por eso corresponde 'an', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "She's the architect.",
+            "why": "Cambia el artículo a 'the', pero el error real es que 'architect' necesita 'an', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "He is a English teacher.",
+        "answers": [
+          "He is an English teacher."
+        ],
+        "explanation": "'English' empieza con sonido vocálico, por eso corresponde 'an', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "He is the English teacher.",
+            "why": "No corrige el artículo correcto; 'English' necesita 'an', no 'the'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregilo.",
+        "sentence": "My parents is teachers.",
+        "answers": [
+          "My parents are teachers."
+        ],
+        "explanation": "'Parents' es plural, por eso el verbo to be correcto es 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "My parent is teachers.",
+            "why": "Cambia 'parents' a singular en vez de corregir el verbo, que es el error principal."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hola, me llamo Lucía y soy enfermera.",
+        "answers": [
+          "Hi, my name is Lucía and I'm a nurse.",
+          "Hi, my name is Lucía and I am a nurse."
+        ],
+        "explanation": "Delante de una profesión en singular como 'nurse' se necesita el artículo 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Hi, my name is Lucía and I'm nurse.",
+            "why": "Falta el artículo 'a' delante de la profesión en singular."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Soy de Chile, así que soy chileno.",
+        "answers": [
+          "I'm from Chile, so I'm Chilean.",
+          "I am from Chile, so I am Chilean."
+        ],
+        "explanation": "El gentilicio 'Chilean' siempre se escribe con mayúscula inicial.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm from Chile, so I'm chilean.",
+            "why": "Los gentilicios se escriben con mayúscula en inglés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermano es ingeniero y vive en Rosario.",
+        "answers": [
+          "My brother is an engineer and he lives in Rosario.",
+          "My brother's an engineer and he lives in Rosario."
+        ],
+        "explanation": "'Engineer' empieza con sonido vocálico, por eso corresponde 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "My brother is a engineer and he lives in Rosario.",
+            "why": "'Engineer' empieza con sonido vocálico, necesita 'an', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estamos muy contentos de estar en Bariloche.",
+        "answers": [
+          "We are very happy to be in Bariloche.",
+          "We're very happy to be in Bariloche."
+        ],
+        "explanation": "Con 'we' (plural) el verbo to be es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "We is very happy to be in Bariloche.",
+            "why": "'We' es plural, necesita 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella es arquitecta y tiene treinta años.",
+        "answers": [
+          "She is an architect and she is thirty years old.",
+          "She's an architect and she's thirty years old."
+        ],
+        "explanation": "'Architect' empieza con sonido vocálico, por eso corresponde 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "She is a architect and she is thirty years old.",
+            "why": "'Architect' empieza con sonido vocálico, necesita 'an', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Somos profesores en una escuela de Mendoza.",
+        "answers": [
+          "We are teachers at a school in Mendoza.",
+          "We're teachers at a school in Mendoza."
+        ],
+        "explanation": "Delante de una profesión en plural no se usa artículo, y con 'we' el verbo to be es 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "We are a teachers at a school in Mendoza.",
+            "why": "No se usa artículo delante de una profesión en plural."
+          },
+          {
+            "answer": "We is teachers at a school in Mendoza.",
+            "why": "'We' es plural, necesita 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la presentación de Valentina antes de su entrevista de trabajo y respondé las preguntas.",
+        "text": "Hello! My name is Valentina Fernández. I'm 27 years old and I'm from Córdoba, Argentina. I'm an accountant at a small company, and I'm here for a job interview today. This is my colleague, Martín. He's 32 years old. He's an engineer, and he's very friendly. He's not Argentinian; he's Chilean, but he lives in Buenos Aires now. We're both excited about this new opportunity. My manager, Ms. Lopez, is very professional. She's an experienced businesswoman. She's always on time for meetings. I'm a little nervous, but I'm ready for the interview. I'm sure it's going to be a great day!",
+        "questions": [
+          {
+            "prompt": "¿Cuál es la profesión de Valentina?",
+            "options": [
+              "Manager",
+              "Businesswoman",
+              "Accountant",
+              "Engineer"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'I'm an accountant at a small company', usando 'an' porque accountant empieza con sonido vocálico; esa es la profesión de Valentina."
+          },
+          {
+            "prompt": "¿De qué nacionalidad es Martín?",
+            "options": [
+              "Chilean",
+              "Peruvian",
+              "Uruguayan",
+              "Argentinian"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto aclara 'He's not Argentinian; he's Chilean', mostrando cómo se usa to be para indicar la nacionalidad, siempre con mayúscula inicial."
+          },
+          {
+            "prompt": "En la oración 'She's an experienced businesswoman', ¿a quién se refiere 'she'?",
+            "options": [
+              "A Ms. Lopez",
+              "A Valentina",
+              "A nadie en particular",
+              "A Martín"
+            ],
+            "correctIndex": 0,
+            "explanation": "El pronombre 'she' se refiere a Ms. Lopez, la última persona mencionada como sujeto femenino antes de esa oración."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la presentación de Tomás en un hostel de Barcelona y respondé las preguntas.",
+        "text": "Hi, I'm Tomás! I'm a photographer from Mendoza, and right now I'm traveling around Europe. I'm 24 years old. In this hostel in Barcelona, I meet many interesting people. My roommate is from Brazil. His name is Rafael. He's 29, and he's a chef in a famous restaurant. He's Brazilian, but he speaks Spanish very well. There's also a girl from Italy. Her name is Giulia. She's a student, and she's studying architecture. She's Italian, and she's very friendly. We're all different, but we're good friends now. Tonight, we're having dinner together to celebrate. I'm happy to be here with them. This trip is an amazing experience for me!",
+        "questions": [
+          {
+            "prompt": "¿Cuál es la profesión de Rafael?",
+            "options": [
+              "Architect",
+              "Chef",
+              "Photographer",
+              "Student"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'he's a chef in a famous restaurant', usando el artículo 'a' delante de la profesión chef."
+          },
+          {
+            "prompt": "¿De dónde es Giulia?",
+            "options": [
+              "Italy",
+              "Spain",
+              "Argentina",
+              "Brazil"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'a girl from Italy... She's Italian', confirmando el origen de Giulia con mayúscula inicial en la nacionalidad."
+          },
+          {
+            "prompt": "¿Qué está estudiando Giulia?",
+            "options": [
+              "Photography",
+              "Architecture",
+              "Spanish",
+              "Cooking"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'she's studying architecture', indicando qué está estudiando Giulia."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -504,5 +504,21 @@ export const MIGRATIONS: Migration[] = [
       DROP TABLE mistakes;
       DROP TABLE vocab;
     `
+  },
+  {
+    version: 15,
+    name: 'bancos de ejercicios',
+    sql: `
+      -- Ejercicios cortos que la app generó (y revisó) en segundo plano para sumar al banco del temario.
+      CREATE TABLE bank_exercises (
+        id          INTEGER PRIMARY KEY,
+        topic_id    TEXT NOT NULL,
+        subtopic_id TEXT NOT NULL,
+        type        TEXT NOT NULL,
+        payload     TEXT NOT NULL,
+        created_on  TEXT NOT NULL
+      );
+      CREATE INDEX bank_exercises_subtopic ON bank_exercises (topic_id, subtopic_id);
+    `
   }
 ]

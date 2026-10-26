@@ -34,10 +34,10 @@ Mediciones e investigación de respaldo:
 - [x] 3 Corregir con esfuerzo bajo
 - [ ] 4 La corrección no te frena
 - [ ] 5 Corregir en tanda
-- [ ] 6 Bancos de ejercicios listos en el temario
-- [ ] 7 Respuestas aceptadas y errores previstos
-- [ ] 8 Ejercicios largos en paralelo, a medida que llegan
-- [ ] 9 Una sola pasada con autocontrol
+- [~] 6 Bancos de ejercicios listos en el temario
+- [x] 7 Respuestas aceptadas y errores previstos
+- [x] 8 Ejercicios largos en paralelo, a medida que llegan
+- [x] 9 Una sola pasada con autocontrol
 - [x] 10 Cola de trabajos de Claude con prioridades
 - [ ] 11 Todo listo antes de que lo abras
 - [ ] 12 Metas de tiempo a la vista

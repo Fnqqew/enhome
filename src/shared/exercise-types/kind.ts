@@ -8,6 +8,13 @@ import type { ExerciseFeedback } from '../exercises'
 export const text = z.string().trim().min(1)
 export const choiceIndex = z.number().int().min(0).max(3)
 
+// Errores previstos: respuestas equivocadas típicas con su explicación, para corregirlas al instante.
+export const wrongAnswers = z
+  .array(z.object({ answer: text, why: text }))
+  .max(4)
+  .optional()
+export type WrongAnswer = { answer: string; why: string }
+
 export type AutoGrade = { kind: 'graded'; feedback: ExerciseFeedback } | { kind: 'needs-ai' }
 
 export const graded = (correct: boolean, correctAnswer: string | null, explanation: string, score = correct ? 10 : 0): AutoGrade => ({

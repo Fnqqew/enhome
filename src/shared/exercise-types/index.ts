@@ -40,11 +40,10 @@ export function buildHint(exercise: StoredExercise): string {
 }
 
 // Cómo es cada formato, para pedirle ejercicios a Claude.
-export function formatGuide(context: GuideContext): string {
+export function formatGuide(context: GuideContext, types?: ExerciseType[]): string {
+  const kinds = types ? types.map(kindOf) : (Object.values(EXERCISE_KINDS) as AnyKind[])
   return `Formatos (el campo type indica cuál es):
-${Object.values(EXERCISE_KINDS)
-  .map((kind) => `- ${(kind as AnyKind).guide(context)}`)
-  .join('\n')}
+${kinds.map((kind) => `- ${kind.guide(context)}`).join('\n')}
 Todas las instruction van en español y son breves. Toda explanation va en español, en una o dos oraciones, y explica la regla.`
 }
 

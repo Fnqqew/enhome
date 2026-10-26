@@ -2,8 +2,8 @@
 
 import { z } from 'zod'
 import { shuffled } from '../shuffle'
-import { graded, text, type ExerciseKind } from './kind'
-import { matchesAny, normalize, tokenize } from './text'
+import { graded, text, wrongAnswers, type ExerciseKind } from './kind'
+import { matchesAny, normalize, predictedMistake, tokenize } from './text'
 
 // Completar
 
@@ -13,7 +13,8 @@ const fillGenerated = z.object({
   sentence: text,
   hint: z.string(),
   answers: z.array(text).min(1),
-  explanation: text
+  explanation: text,
+  wrongAnswers
 })
 type FillGenerated = z.infer<typeof fillGenerated>
 const fillAnswer = z.object({ type: z.literal('fill_blank'), text: z.string().max(200) })
@@ -39,14 +40,18 @@ export const fillBlank: ExerciseKind<FillGenerated, FillGenerated, FillPublic, F
   },
   toPublic: (e) => ({ type: e.type, instruction: e.instruction, sentence: e.sentence, hint: e.hint }),
   mainText: (e) => e.sentence,
-  grade: (e, a) => graded(matchesAny(a.text, e.answers), e.sentence.replace('___', e.answers[0]), e.explanation),
+  grade: (e, a) => {
+    const right = matchesAny(a.text, e.answers)
+    const mistake = right ? null : predictedMistake(a.text, e.wrongAnswers)
+    return graded(right, e.sentence.replace('___', e.answers[0]), mistake ? `${mistake.why} ${e.explanation}` : e.explanation)
+  },
   empty: (e) => ({ type: e.type, text: '' }),
   hint: (e) => {
     const answer = e.answers[0]
     return `La respuesta empieza con «${answer[0]}» y tiene ${answer.length} ${answer.length === 1 ? 'carácter' : 'caracteres'}.`
   },
   guide: ({ language }) =>
-    `fill_blank: sentence en ${language} con exactamente un ___; hint con una pista breve entre paréntesis (por ejemplo, el infinitivo del verbo) o vacío; answers con todas las variantes válidas (con y sin contracción o apóstrofo cuando el idioma las tenga).`,
+    `fill_blank: sentence en ${language} con exactamente un ___; hint con una pista breve entre paréntesis (por ejemplo, el infinitivo del verbo) o vacío; answers con todas las variantes válidas (con y sin contracción o apóstrofo cuando el idioma las tenga); wrongAnswers con 1 a 3 respuestas equivocadas típicas de hispanohablantes, cada una con why (por qué está mal, en español).`,
   check: 'fill_blank: el hueco admite solo las respuestas de answers, y answers incluye todas las variantes válidas (con y sin contracción).'
 }
 
@@ -102,7 +107,8 @@ const fixGenerated = z.object({
   instruction: text,
   sentence: text,
   answers: z.array(text).min(1),
-  explanation: text
+  explanation: text,
+  wrongAnswers
 })
 type FixGenerated = z.infer<typeof fixGenerated>
 const fixAnswer = z.object({ type: z.literal('error_correction'), text: z.string().max(500) })
@@ -136,13 +142,17 @@ export const errorCorrection: ExerciseKind<FixGenerated, FixGenerated, FixPublic
   },
   toPublic: (e) => ({ type: e.type, instruction: e.instruction, sentence: e.sentence }),
   mainText: (e) => e.sentence,
-  grade: (e, a) => graded(matchesAny(a.text, e.answers), e.answers[0], e.explanation),
+  grade: (e, a) => {
+    const right = matchesAny(a.text, e.answers)
+    const mistake = right ? null : predictedMistake(a.text, e.wrongAnswers)
+    return graded(right, e.answers[0], mistake ? `${mistake.why} ${e.explanation}` : e.explanation)
+  },
   empty: (e) => ({ type: e.type, text: '' }),
   hint: (e) => {
     const word = firstDifferentWord(e.sentence, e.answers[0])
     return word ? `Fijate en «${word}».` : 'Revisá el verbo y los artículos de la oración.'
   },
   guide: ({ language }) =>
-    `error_correction: sentence en ${language} con un solo error relacionado con el subtema; answers con la oración corregida y sus variantes válidas.`,
+    `error_correction: sentence en ${language} con un solo error relacionado con el subtema; answers con la oración corregida y sus variantes válidas; wrongAnswers con 1 o 2 correcciones equivocadas típicas (por ejemplo, corregir otra palabra), cada una con why.`,
   check: 'error_correction: la oración tiene exactamente un error y answers lo corrige.'
 }
