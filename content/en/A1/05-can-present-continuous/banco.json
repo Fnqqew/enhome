@@ -245,16 +245,7 @@
           "Can you open the door, Marta, please?"
         ],
         "translation": "¿Podés abrir la puerta, por favor, Marta?",
-        "explanation": "En preguntas con can, la palabra can va primero, seguida del sujeto y el verbo base.",
-        "tokens": [
-          "Marta",
-          "open",
-          "the",
-          "please,",
-          "door,",
-          "you",
-          "Can"
-        ]
+        "explanation": "En preguntas con can, la palabra can va primero, seguida del sujeto y el verbo base."
       },
       {
         "type": "word_order",
@@ -262,17 +253,7 @@
         "sentence": "The tenants can't paint the walls without permission.",
         "alternatives": [],
         "translation": "Los inquilinos no pueden pintar las paredes sin permiso.",
-        "explanation": "Can't se coloca después del sujeto y antes del verbo base, sin agregar to.",
-        "tokens": [
-          "can't",
-          "paint",
-          "The",
-          "walls",
-          "without",
-          "permission",
-          "tenants",
-          "the"
-        ]
+        "explanation": "Can't se coloca después del sujeto y antes del verbo base, sin agregar to."
       },
       {
         "type": "word_order",
@@ -280,15 +261,7 @@
         "sentence": "Can Lucía speak English at work?",
         "alternatives": [],
         "translation": "¿Puede Lucía hablar inglés en el trabajo?",
-        "explanation": "En preguntas, can va antes del sujeto, y el verbo que sigue queda en su forma base.",
-        "tokens": [
-          "Can",
-          "English",
-          "speak",
-          "work",
-          "at",
-          "Lucía"
-        ]
+        "explanation": "En preguntas, can va antes del sujeto, y el verbo que sigue queda en su forma base."
       },
       {
         "type": "word_order",
@@ -296,15 +269,7 @@
         "sentence": "I can't find my passport anywhere.",
         "alternatives": [],
         "translation": "No puedo encontrar mi pasaporte en ningún lado.",
-        "explanation": "Can't expresa imposibilidad y va justo antes del verbo base find.",
-        "tokens": [
-          "my",
-          "I",
-          "find",
-          "anywhere",
-          "passport",
-          "can't"
-        ]
+        "explanation": "Can't expresa imposibilidad y va justo antes del verbo base find."
       },
       {
         "type": "word_order",
@@ -312,16 +277,7 @@
         "sentence": "Can we check in before three o'clock?",
         "alternatives": [],
         "translation": "¿Podemos hacer el check-in antes de las tres?",
-        "explanation": "Para pedir permiso sobre una acción futura se usa Can we...? al inicio de la pregunta.",
-        "tokens": [
-          "Can",
-          "check",
-          "we",
-          "before",
-          "three",
-          "o'clock",
-          "in"
-        ]
+        "explanation": "Para pedir permiso sobre una acción futura se usa Can we...? al inicio de la pregunta."
       },
       {
         "type": "error_correction",
@@ -505,6 +461,249 @@
           {
             "answer": "Do you can help me with the suitcases, please?",
             "why": "La pregunta con can se forma invirtiendo can y el sujeto, sin usar do."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Agustín can fix the printer before noon.",
+        "alternatives": [],
+        "translation": "Agustín puede arreglar la impresora antes del mediodía.",
+        "explanation": "Después de 'can' el verbo va en forma base, sin 's', aunque el sujeto sea 'he/she'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "We can't check out until eleven tomorrow.",
+        "alternatives": [
+          "We cannot check out until eleven tomorrow."
+        ],
+        "translation": "No podemos hacer el check-out hasta las once mañana.",
+        "explanation": "La diferencia entre 'can' y 'can't' está en la 't' final; si no se escucha bien, hay que fijarse en el contexto para saber si es afirmación o negación."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Can your brother lend me his car this weekend?",
+        "alternatives": [],
+        "translation": "¿Tu hermano me puede prestar su auto este fin de semana?",
+        "explanation": "En las preguntas, 'can' va al principio de la oración, antes del sujeto, y el verbo principal queda sin 'to'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Nicolás can't swim very well yet.",
+        "alternatives": [
+          "Nicolás cannot swim very well yet."
+        ],
+        "translation": "Nicolás todavía no sabe nadar muy bien.",
+        "explanation": "Después de 'can't' el verbo va en forma base, sin 'to' y sin 's', igual que con 'can'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "can",
+          "can't"
+        ],
+        "target": 1,
+        "meanings": [
+          "puede",
+          "no puede"
+        ],
+        "explanation": "La diferencia clave es la 't' final: en 'can't' se corta el aire al final, mientras que 'can' termina en la 'n' sin más sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "walk",
+          "work"
+        ],
+        "target": 0,
+        "meanings": [
+          "caminar",
+          "trabajar"
+        ],
+        "explanation": "La vocal de 'walk' es más abierta y redondeada; la de 'work' es más cerrada y central, casi como una 'e' relajada."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "tree",
+          "three"
+        ],
+        "target": 1,
+        "meanings": [
+          "árbol",
+          "tres"
+        ],
+        "explanation": "El sonido 'th' de 'three' se hace con la lengua entre los dientes; la 't' de 'tree' es un golpe seco sin sacar la lengua."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Can you pick me up at the airport?",
+        "translation": "¿Podés pasarme a buscar por el aeropuerto?",
+        "tip": "Uní 'Can you' como si fuera una sola palabra, algo así como 'kenyu', para sonar más natural."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "I can't believe how expensive rent is here.",
+        "translation": "No puedo creer lo caro que es el alquiler acá.",
+        "tip": "Marcá bien la 't' final de 'can't' para que no se confunda con 'can' en una oración negativa."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "She can speak three languages fluently.",
+        "translation": "Ella sabe hablar tres idiomas con fluidez.",
+        "tip": "Pronunciá 'can' rápido y sin fuerza, como una palabra corta que casi no se acentúa en la frase."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la evaluación en el gimnasio y respondé las preguntas.",
+        "situation": "En un gimnasio de Rosario, el entrenador Fede le hace una evaluación inicial a la nueva socia Antonella.",
+        "lines": [
+          {
+            "speaker": "Fede",
+            "text": "Antonella, can you lift ten kilos with each arm?"
+          },
+          {
+            "speaker": "Antonella",
+            "text": "Yes, I can. I train with weights at home too."
+          },
+          {
+            "speaker": "Fede",
+            "text": "Great. Can you run for twenty minutes without stopping?"
+          },
+          {
+            "speaker": "Antonella",
+            "text": "No, I can't. I hurt my knee last month."
+          },
+          {
+            "speaker": "Fede",
+            "text": "No problem. Can I check your knee quickly?"
+          },
+          {
+            "speaker": "Antonella",
+            "text": "Sure, you can check it."
+          },
+          {
+            "speaker": "Fede",
+            "text": "Okay. And can you use the pool after your workout?"
+          },
+          {
+            "speaker": "Antonella",
+            "text": "Yes, I can use it until nine o'clock."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Antonella puede levantar diez kilos con cada brazo?",
+            "options": [
+              "Solo con un brazo",
+              "Sí, puede",
+              "No se sabe",
+              "No, no puede"
+            ],
+            "correctIndex": 1,
+            "explanation": "Antonella responde 'Yes, I can', usando can para confirmar que tiene esa habilidad."
+          },
+          {
+            "prompt": "¿Por qué Antonella no puede correr veinte minutos?",
+            "options": [
+              "No tiene tiempo",
+              "Está cansada",
+              "Se lastimó la rodilla",
+              "No le gusta correr"
+            ],
+            "correctIndex": 2,
+            "explanation": "Antonella dice 'No, I can't. I hurt my knee last month'; can't indica que ahora no tiene esa habilidad por la lesión."
+          },
+          {
+            "prompt": "¿Hasta qué hora puede usar la pileta?",
+            "options": [
+              "Las diez",
+              "Las ocho",
+              "No puede usarla",
+              "Las nueve"
+            ],
+            "correctIndex": 3,
+            "explanation": "Antonella dice 'I can use it until nine o'clock', usando can para expresar el permiso de horario."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación en la agencia de alquiler de autos y respondé las preguntas.",
+        "situation": "En una agencia de alquiler de autos en Mendoza, la agente Mariana atiende al cliente extranjero James.",
+        "lines": [
+          {
+            "speaker": "Mariana",
+            "text": "Good morning! Can I see your driver's license, please?"
+          },
+          {
+            "speaker": "James",
+            "text": "Sure, here it is. Can I drive this car outside the city?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Yes, you can drive it anywhere in the province."
+          },
+          {
+            "speaker": "James",
+            "text": "Great. Can my wife drive it too?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Yes, she can, but she needs her own license."
+          },
+          {
+            "speaker": "James",
+            "text": "Okay. Can we return the car at the airport?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "No, you can't return it there. Only at this office."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿James puede manejar el auto fuera de la ciudad?",
+            "options": [
+              "Sí, en toda la provincia",
+              "No se permite",
+              "Sí, pero solo de día",
+              "No, solo en la ciudad"
+            ],
+            "correctIndex": 0,
+            "explanation": "Mariana dice 'Yes, you can drive it anywhere in the province', usando can para dar permiso."
+          },
+          {
+            "prompt": "¿Qué necesita la esposa de James para poder manejar el auto?",
+            "options": [
+              "El permiso de James",
+              "Su propia licencia",
+              "Un seguro extra",
+              "Nada especial"
+            ],
+            "correctIndex": 1,
+            "explanation": "Mariana dice 'Yes, she can, but she needs her own license', confirmando el permiso con can pero con una condición."
+          },
+          {
+            "prompt": "¿Dónde pueden devolver el auto?",
+            "options": [
+              "En el aeropuerto",
+              "Solo en esta oficina",
+              "En la casa del cliente",
+              "En cualquier sucursal"
+            ],
+            "correctIndex": 1,
+            "explanation": "Mariana dice 'No, you can't return it there. Only at this office', usando can't para negar el permiso de devolverlo en el aeropuerto."
           }
         ]
       }
@@ -752,17 +951,7 @@
         "sentence": "Carla is writing an email to her boss.",
         "alternatives": [],
         "translation": "Carla está escribiendo un mail para su jefe.",
-        "explanation": "El presente continuo se forma con 'is' + verbo-ing para la tercera persona singular.",
-        "tokens": [
-          "email",
-          "boss",
-          "writing",
-          "to",
-          "Carla",
-          "an",
-          "her",
-          "is"
-        ]
+        "explanation": "El presente continuo se forma con 'is' + verbo-ing para la tercera persona singular."
       },
       {
         "type": "word_order",
@@ -770,17 +959,7 @@
         "sentence": "Are you waiting for the bus right now?",
         "alternatives": [],
         "translation": "¿Estás esperando el colectivo ahora?",
-        "explanation": "En las preguntas de presente continuo el auxiliar 'are' va antes del sujeto 'you'.",
-        "tokens": [
-          "right",
-          "Are",
-          "the",
-          "for",
-          "now",
-          "you",
-          "bus",
-          "waiting"
-        ]
+        "explanation": "En las preguntas de presente continuo el auxiliar 'are' va antes del sujeto 'you'."
       },
       {
         "type": "word_order",
@@ -788,13 +967,7 @@
         "sentence": "Pablo isn't working today.",
         "alternatives": [],
         "translation": "Pablo no está trabajando hoy.",
-        "explanation": "El negativo del presente continuo con 'he' se forma con 'isn't' + verbo-ing.",
-        "tokens": [
-          "today",
-          "isn't",
-          "Pablo",
-          "working"
-        ]
+        "explanation": "El negativo del presente continuo con 'he' se forma con 'isn't' + verbo-ing."
       },
       {
         "type": "word_order",
@@ -802,16 +975,7 @@
         "sentence": "The dog is running across the park.",
         "alternatives": [],
         "translation": "El perro está corriendo por el parque.",
-        "explanation": "'Run' duplica la consonante final antes de agregar '-ing': 'running'.",
-        "tokens": [
-          "dog",
-          "park",
-          "The",
-          "running",
-          "is",
-          "across",
-          "the"
-        ]
+        "explanation": "'Run' duplica la consonante final antes de agregar '-ing': 'running'."
       },
       {
         "type": "word_order",
@@ -819,16 +983,7 @@
         "sentence": "We aren't lying on the beach today.",
         "alternatives": [],
         "translation": "No estamos tirados en la playa hoy.",
-        "explanation": "El negativo del presente continuo con 'we' se forma con 'aren't' + verbo-ing.",
-        "tokens": [
-          "We",
-          "lying",
-          "today",
-          "on",
-          "beach",
-          "aren't",
-          "the"
-        ]
+        "explanation": "El negativo del presente continuo con 'we' se forma con 'aren't' + verbo-ing."
       },
       {
         "type": "error_correction",
@@ -998,6 +1153,253 @@
           {
             "answer": "Nico and Carla are makeing dinner together.",
             "why": "'Make' pierde la e final al agregar '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Julieta is planning a trip to Salta next month.",
+        "alternatives": [
+          "Julieta's planning a trip to Salta next month."
+        ],
+        "translation": "Julieta está planeando un viaje a Salta el mes que viene.",
+        "explanation": "'Plan' termina en consonante-vocal-consonante con acento en esa sílaba, por eso se duplica la 'n' al agregar -ing: planning."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Franco isn't answering his phone right now.",
+        "alternatives": [
+          "Franco is not answering his phone right now."
+        ],
+        "translation": "Franco no está contestando el teléfono ahora.",
+        "explanation": "'Answer' no duplica la consonante final porque el acento no cae en la última sílaba; isn't marca la negación."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Are the kids swimming in the pool at the hotel?",
+        "alternatives": [],
+        "translation": "¿Los chicos están nadando en la pileta del hotel?",
+        "explanation": "'Swim' duplica la 'm' al formar el gerundio porque es una sílaba corta y acentuada: swimming."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Mr. Aguirre is taking a taxi to the airport.",
+        "alternatives": [],
+        "translation": "El señor Aguirre está tomando un taxi al aeropuerto.",
+        "explanation": "'Take' pierde la 'e' final antes de agregar -ing, por eso se escribe 'taking' y no 'takeing'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "bad",
+          "bed"
+        ],
+        "target": 0,
+        "meanings": [
+          "malo",
+          "cama"
+        ],
+        "explanation": "La vocal de 'bad' es más abierta, parecida a la 'a' del español; la de 'bed' es más cerrada, como una 'e' breve."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "pool",
+          "pull"
+        ],
+        "target": 0,
+        "meanings": [
+          "pileta",
+          "tirar"
+        ],
+        "explanation": "La 'u' de 'pull' es corta y relajada; la de 'pool' se alarga mucho más al pronunciarla."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "heat",
+          "hit"
+        ],
+        "target": 1,
+        "meanings": [
+          "calor",
+          "golpear"
+        ],
+        "explanation": "La 'i' de 'hit' es breve; la de 'heat' se estira y se tensa más la boca al decirla."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "I'm looking for a cheap hotel near downtown.",
+        "translation": "Estoy buscando un hotel barato cerca del centro.",
+        "tip": "Uní 'I'm looking' sin pausa y acentuá un poco más la palabra 'looking'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "She's not feeling well today, so she's staying home.",
+        "translation": "Ella no se siente bien hoy, así que se queda en casa.",
+        "tip": "Marcá bien la 's' final de 'she's' para que se note la contracción de 'she is'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Are you coming to the meeting this afternoon?",
+        "translation": "¿Vas a venir a la reunión esta tarde?",
+        "tip": "Uní 'Are you' como 'aryu' y subí el tono al final, porque es una pregunta."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la llamada sobre la boda y respondé las preguntas.",
+        "situation": "Juan llama por teléfono a su amiga Valentina, que está en una boda en Mendoza, para preguntarle cómo va todo.",
+        "lines": [
+          {
+            "speaker": "Juan",
+            "text": "Hi Valentina! What's happening at the wedding right now?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Hi Juan! The band is playing a song, and everyone is dancing."
+          },
+          {
+            "speaker": "Juan",
+            "text": "Nice! Is the bride wearing a white dress?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Yes, she's wearing a beautiful white dress."
+          },
+          {
+            "speaker": "Juan",
+            "text": "And are the kids behaving well?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "No, they aren't behaving well. They're running around the tables."
+          },
+          {
+            "speaker": "Juan",
+            "text": "Ha! Are you taking photos?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Yes, I'm taking a lot of photos for Instagram."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué están haciendo los invitados mientras toca la banda?",
+            "options": [
+              "Comiendo",
+              "Cantando",
+              "Bailando",
+              "Durmiendo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Valentina dice 'everyone is dancing', usando is + verbo con -ing para describir una acción que está pasando ahora."
+          },
+          {
+            "prompt": "¿Cómo se están comportando los chicos?",
+            "options": [
+              "No hay chicos en la boda",
+              "Están durmiendo",
+              "Mal, corriendo entre las mesas",
+              "Bien, sentados"
+            ],
+            "correctIndex": 2,
+            "explanation": "Valentina dice 'they aren't behaving well. They're running around the tables', usando el negativo aren't para la primera acción y are + running para la segunda."
+          },
+          {
+            "prompt": "¿Qué está haciendo Valentina para Instagram?",
+            "options": [
+              "Nada",
+              "Tomando fotos",
+              "Escribiendo un posteo",
+              "Grabando un video"
+            ],
+            "correctIndex": 1,
+            "explanation": "Valentina responde 'I'm taking a lot of photos for Instagram', usando am + verbo con -ing para una acción en curso."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la videollamada de trabajo y respondé las preguntas.",
+        "situation": "En una videollamada, el Sr. Medina llama a su empleado Rodrigo, que está trabajando desde un café, para preguntarle qué está pasando.",
+        "lines": [
+          {
+            "speaker": "Sr. Medina",
+            "text": "Rodrigo, where are you? I can hear a lot of noise."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "I'm sitting at a café near my house. The coffee machine is making a lot of noise."
+          },
+          {
+            "speaker": "Sr. Medina",
+            "text": "I see. Is your internet working well there?"
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Yes, it's working fine. I'm sending you the report now."
+          },
+          {
+            "speaker": "Sr. Medina",
+            "text": "Good. Is anyone else using your laptop today?"
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "No, nobody is using it. I'm working alone this morning."
+          },
+          {
+            "speaker": "Sr. Medina",
+            "text": "Perfect. Are you joining the 3 PM call?"
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Yes, I'm joining it from home this afternoon."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Por qué hay tanto ruido donde está Rodrigo?",
+            "options": [
+              "Hay una fiesta",
+              "La máquina de café está haciendo ruido",
+              "Está lloviendo",
+              "Hay un camión afuera"
+            ],
+            "correctIndex": 1,
+            "explanation": "Rodrigo dice 'The coffee machine is making a lot of noise', usando is + making; make pierde la e antes de agregar -ing."
+          },
+          {
+            "prompt": "¿Qué está haciendo Rodrigo con el reporte en este momento?",
+            "options": [
+              "Escribiéndolo",
+              "Corrigiéndolo",
+              "Enviándolo",
+              "Imprimiéndolo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rodrigo dice 'I'm sending you the report now', usando am + sending para una acción que está pasando ahora."
+          },
+          {
+            "prompt": "¿Desde dónde se va a unir Rodrigo a la llamada de las 3?",
+            "options": [
+              "Desde la oficina",
+              "Desde su casa",
+              "No se va a unir",
+              "Desde el café"
+            ],
+            "correctIndex": 1,
+            "explanation": "Rodrigo responde 'I'm joining it from home this afternoon', usando am + joining en afirmativo para confirmar dónde estará."
           }
         ]
       }
@@ -1243,16 +1645,7 @@
         "sentence": "Look! It is snowing outside right now.",
         "alternatives": [],
         "translation": "¡Mirá! Está nevando afuera ahora.",
-        "explanation": "Se usa el presente continuo ('is' + verbo-ing) para una acción que está pasando en este momento.",
-        "tokens": [
-          "right",
-          "is",
-          "It",
-          "Look!",
-          "snowing",
-          "now",
-          "outside"
-        ]
+        "explanation": "Se usa el presente continuo ('is' + verbo-ing) para una acción que está pasando en este momento."
       },
       {
         "type": "word_order",
@@ -1260,17 +1653,7 @@
         "sentence": "Mica is living with her cousin this month.",
         "alternatives": [],
         "translation": "Mica está viviendo con su prima este mes.",
-        "explanation": "'This month' indica una situación temporal, por eso se usa el presente continuo.",
-        "tokens": [
-          "with",
-          "is",
-          "her",
-          "Mica",
-          "cousin",
-          "month",
-          "this",
-          "living"
-        ]
+        "explanation": "'This month' indica una situación temporal, por eso se usa el presente continuo."
       },
       {
         "type": "word_order",
@@ -1278,16 +1661,7 @@
         "sentence": "I know the answer to that question.",
         "alternatives": [],
         "translation": "Yo sé la respuesta a esa pregunta.",
-        "explanation": "'Know' es un verbo de estado y siempre va en presente simple.",
-        "tokens": [
-          "that",
-          "the",
-          "I",
-          "question",
-          "know",
-          "to",
-          "answer"
-        ]
+        "explanation": "'Know' es un verbo de estado y siempre va en presente simple."
       },
       {
         "type": "word_order",
@@ -1295,17 +1669,7 @@
         "sentence": "Lucas is talking on the phone right now.",
         "alternatives": [],
         "translation": "Lucas está hablando por teléfono ahora.",
-        "explanation": "Con 'right now' se usa el presente continuo para una acción en curso.",
-        "tokens": [
-          "Lucas",
-          "now",
-          "on",
-          "right",
-          "talking",
-          "the",
-          "phone",
-          "is"
-        ]
+        "explanation": "Con 'right now' se usa el presente continuo para una acción en curso."
       },
       {
         "type": "word_order",
@@ -1313,16 +1677,7 @@
         "sentence": "We are working from home this week.",
         "alternatives": [],
         "translation": "Esta semana estamos trabajando desde casa.",
-        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo.",
-        "tokens": [
-          "We",
-          "working",
-          "home",
-          "are",
-          "this",
-          "from",
-          "week"
-        ]
+        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo."
       },
       {
         "type": "error_correction",
@@ -1575,6 +1930,257 @@
             "explanation": "Los verbos de estado como understand y need expresan algo que no cambia momento a momento, por eso van en presente simple."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "Valentina is cooking dinner for her family right now.",
+        "alternatives": [
+          "Valentina's cooking dinner for her family right now."
+        ],
+        "translation": "Valentina está cocinando la cena para su familia ahora mismo.",
+        "explanation": "'Right now' marca que la acción pasa en este momento; la terminación -ing suena rápida y puede confundirse con el verbo base."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "We are staying at a small hotel in Bariloche this week.",
+        "alternatives": [
+          "We're staying at a small hotel in Bariloche this week."
+        ],
+        "translation": "Esta semana nos estamos quedando en un hotel pequeño en Bariloche.",
+        "explanation": "'This week' indica una situación temporal; 'staying' no debe confundirse con 'studying', que suena parecido."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "The doctor is examining Javier's knee at the moment.",
+        "alternatives": [
+          "The doctor's examining Javier's knee at the moment."
+        ],
+        "translation": "El médico está examinando la rodilla de Javier en este momento.",
+        "explanation": "'At the moment' muestra que la acción ocurre ahora; el acento de 'examining' cae en la segunda sílaba, no en la primera."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "I understand the instructions, so you don't need to repeat them.",
+        "alternatives": [
+          "I understand the instructions, so you do not need to repeat them."
+        ],
+        "translation": "Entiendo las instrucciones, así que no necesitás repetirlas.",
+        "explanation": "'Understand' es un verbo de estado y nunca va en presente continuo, aunque la frase hable de algo que pasa en el momento."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "sheep",
+          "ship"
+        ],
+        "target": 1,
+        "meanings": [
+          "oveja",
+          "barco"
+        ],
+        "explanation": "La i corta de 'ship' es breve y relajada, mientras que la i larga de 'sheep' se mantiene más tiempo y tensa; fijate en la duración de la vocal."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "rise",
+          "rice"
+        ],
+        "target": 0,
+        "meanings": [
+          "subir / levantarse",
+          "arroz"
+        ],
+        "explanation": "La diferencia está en el sonido final: 's' sorda en 'rice' frente a 'z' sonora en 'rise'; notá si hay vibración en la garganta."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "cup",
+          "cap"
+        ],
+        "target": 0,
+        "meanings": [
+          "taza",
+          "gorra"
+        ],
+        "explanation": "La 'u' de 'cup' es más cerrada y corta que la 'a' abierta de 'cap'; prestá atención a cómo se abre la boca al pronunciarla."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "I'm looking for a new apartment near the subway this month.",
+        "translation": "Estoy buscando un departamento nuevo cerca del subte este mes.",
+        "tip": "La contracción 'I'm' se pronuncia como una sola sílaba, casi como 'aim', sin pausa."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "We're traveling around Patagonia for two weeks this summer.",
+        "translation": "Estamos viajando por la Patagonia durante dos semanas este verano.",
+        "tip": "Uní 'We're' en una sola sílaba fluida y no marques pausa antes de 'traveling'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "He's waiting in the lobby for his doctor's appointment.",
+        "translation": "Él está esperando en el lobby su cita con el médico.",
+        "tip": "Uní 'waiting in' sin pausa, como si fuera 'waitin-in', para sonar más natural."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la llamada entre compañeras de oficina y respondé las preguntas.",
+        "situation": "Mientras viaja por trabajo, Agustina llama a su compañera de oficina Noelia para preguntarle cómo va todo esta semana.",
+        "lines": [
+          {
+            "speaker": "Agustina",
+            "text": "Hi Noelia! How's everything at the office today?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "Hi! It's crazy. Three people are working on the new project right now."
+          },
+          {
+            "speaker": "Agustina",
+            "text": "Oh wow. Are you helping them too?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "Yes, I'm helping with the presentation this week."
+          },
+          {
+            "speaker": "Agustina",
+            "text": "Do you need more time for it?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "No, I don't need more time. I understand the project well."
+          },
+          {
+            "speaker": "Agustina",
+            "text": "Great. Is the boss checking the progress right now?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "Yes, he's checking it right now in his office."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántas personas están trabajando en el proyecto nuevo en este momento?",
+            "options": [
+              "Tres",
+              "Cinco",
+              "Cuatro",
+              "Dos"
+            ],
+            "correctIndex": 0,
+            "explanation": "Noelia dice 'Three people are working on the new project right now', usando are + working para una acción que pasa ahora mismo."
+          },
+          {
+            "prompt": "¿Noelia necesita más tiempo para la presentación?",
+            "options": [
+              "Sí, necesita mucho más tiempo",
+              "Sí, un poco más",
+              "No sabe",
+              "No, no necesita más tiempo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Noelia responde 'I don't need more time. I understand the project well', usando el presente simple porque need y understand son verbos de estado que casi no se usan en continuo."
+          },
+          {
+            "prompt": "¿Cuándo está revisando el jefe el progreso del proyecto?",
+            "options": [
+              "La semana que viene",
+              "Esta tarde",
+              "Ahora mismo",
+              "Mañana"
+            ],
+            "correctIndex": 2,
+            "explanation": "Noelia dice 'he's checking it right now in his office', usando el presente continuo para una acción que está pasando en este momento."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la consulta médica y respondé las preguntas.",
+        "situation": "En el consultorio, la Dra. Suárez atiende a su paciente Walter, que está haciendo rehabilitación esta semana por una lesión en la rodilla.",
+        "lines": [
+          {
+            "speaker": "Dra. Suárez",
+            "text": "Walter, how's your knee feeling today?"
+          },
+          {
+            "speaker": "Walter",
+            "text": "It's much better. I'm doing physical therapy twice a week this month."
+          },
+          {
+            "speaker": "Dra. Suárez",
+            "text": "Good. Are you resting enough at home?"
+          },
+          {
+            "speaker": "Walter",
+            "text": "Yes, I'm resting a lot this week because I have no classes."
+          },
+          {
+            "speaker": "Dra. Suárez",
+            "text": "Do you want more painkillers?"
+          },
+          {
+            "speaker": "Walter",
+            "text": "No, I don't want more painkillers. I understand the recovery process now."
+          },
+          {
+            "speaker": "Dra. Suárez",
+            "text": "Perfect. Is your wife helping you with exercises?"
+          },
+          {
+            "speaker": "Walter",
+            "text": "Yes, she's helping me every morning this week."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántas veces por semana hace fisioterapia Walter este mes?",
+            "options": [
+              "Una vez",
+              "Dos veces",
+              "Tres veces",
+              "Todos los días"
+            ],
+            "correctIndex": 1,
+            "explanation": "Walter dice 'I'm doing physical therapy twice a week this month', usando el presente continuo para una situación temporal de este mes."
+          },
+          {
+            "prompt": "¿Walter quiere más analgésicos?",
+            "options": [
+              "No sabe",
+              "Sí, quiere más",
+              "No, no quiere más",
+              "Sí, pero pocos"
+            ],
+            "correctIndex": 2,
+            "explanation": "Walter responde 'I don't want more painkillers. I understand the recovery process now', usando el presente simple porque want y understand son verbos de estado."
+          },
+          {
+            "prompt": "¿Quién ayuda a Walter con los ejercicios esta semana?",
+            "options": [
+              "Su esposa, todas las mañanas",
+              "Su vecino",
+              "Nadie",
+              "Su médica"
+            ],
+            "correctIndex": 0,
+            "explanation": "Walter dice 'she's helping me every morning this week', usando el presente continuo para describir una situación temporal de esta semana."
+          }
+        ]
       }
     ],
     "simple-vs-continuo": [
@@ -1821,15 +2427,7 @@
           "Usually, she eats lunch at home."
         ],
         "translation": "Ella generalmente almuerza en casa.",
-        "explanation": "Usually con un hábito pide presente simple; el adverbio de frecuencia va antes del verbo o al principio de la oración.",
-        "tokens": [
-          "lunch",
-          "at",
-          "eats",
-          "home",
-          "usually",
-          "She"
-        ]
+        "explanation": "Usually con un hábito pide presente simple; el adverbio de frecuencia va antes del verbo o al principio de la oración."
       },
       {
         "type": "word_order",
@@ -1839,15 +2437,7 @@
           "Today I am working from home."
         ],
         "translation": "Hoy estoy trabajando desde casa.",
-        "explanation": "Today indica una situación temporal, distinta de lo habitual, por eso se usa presente continuo.",
-        "tokens": [
-          "home",
-          "am",
-          "from",
-          "I",
-          "today",
-          "working"
-        ]
+        "explanation": "Today indica una situación temporal, distinta de lo habitual, por eso se usa presente continuo."
       },
       {
         "type": "word_order",
@@ -1855,15 +2445,7 @@
         "sentence": "Do you usually travel by plane?",
         "alternatives": [],
         "translation": "¿Generalmente viajás en avión?",
-        "explanation": "Para preguntar sobre un hábito se usa presente simple con el auxiliar do al inicio de la pregunta.",
-        "tokens": [
-          "by",
-          "travel",
-          "usually",
-          "you",
-          "plane",
-          "Do"
-        ]
+        "explanation": "Para preguntar sobre un hábito se usa presente simple con el auxiliar do al inicio de la pregunta."
       },
       {
         "type": "word_order",
@@ -1873,16 +2455,7 @@
           "Right now, she is washing the dishes."
         ],
         "translation": "Ella está lavando los platos ahora mismo.",
-        "explanation": "Right now indica que la acción está pasando en este momento, por eso se usa presente continuo.",
-        "tokens": [
-          "dishes",
-          "now",
-          "washing",
-          "right",
-          "She",
-          "the",
-          "is"
-        ]
+        "explanation": "Right now indica que la acción está pasando en este momento, por eso se usa presente continuo."
       },
       {
         "type": "word_order",
@@ -1890,16 +2463,7 @@
         "sentence": "We are meeting the landlord this afternoon.",
         "alternatives": [],
         "translation": "Nos encontramos con el propietario esta tarde.",
-        "explanation": "This afternoon indica un plan específico y temporal, por eso se usa presente continuo.",
-        "tokens": [
-          "this",
-          "meeting",
-          "the",
-          "landlord",
-          "We",
-          "afternoon",
-          "are"
-        ]
+        "explanation": "This afternoon indica un plan específico y temporal, por eso se usa presente continuo."
       },
       {
         "type": "error_correction",
@@ -2396,17 +2960,7 @@
         "sentence": "There are two dogs playing in the park.",
         "alternatives": [],
         "translation": "Hay dos perros jugando en el parque.",
-        "explanation": "'There are' se usa con sujetos plurales, seguido del verbo en '-ing' para describir la acción.",
-        "tokens": [
-          "playing",
-          "park",
-          "are",
-          "two",
-          "in",
-          "dogs",
-          "the",
-          "There"
-        ]
+        "explanation": "'There are' se usa con sujetos plurales, seguido del verbo en '-ing' para describir la acción."
       },
       {
         "type": "word_order",
@@ -2414,16 +2968,7 @@
         "sentence": "The man on the left is smiling.",
         "alternatives": [],
         "translation": "El hombre de la izquierda está sonriendo.",
-        "explanation": "Las preposiciones de lugar como 'on the left' ubican a la persona dentro de la escena.",
-        "tokens": [
-          "on",
-          "left",
-          "smiling",
-          "man",
-          "is",
-          "The",
-          "the"
-        ]
+        "explanation": "Las preposiciones de lugar como 'on the left' ubican a la persona dentro de la escena."
       },
       {
         "type": "word_order",
@@ -2431,16 +2976,7 @@
         "sentence": "She can't swim in this pool today.",
         "alternatives": [],
         "translation": "Ella no puede nadar en esta pileta hoy.",
-        "explanation": "'Can't' expresa que algo no está permitido o no es posible en ese momento.",
-        "tokens": [
-          "today",
-          "in",
-          "can't",
-          "She",
-          "this",
-          "pool",
-          "swim"
-        ]
+        "explanation": "'Can't' expresa que algo no está permitido o no es posible en ese momento."
       },
       {
         "type": "word_order",
@@ -2450,16 +2986,7 @@
           "There's a woman reading a book."
         ],
         "translation": "Hay una mujer leyendo un libro.",
-        "explanation": "'There is' se usa con un sujeto singular, seguido de la acción en '-ing' para describir la escena.",
-        "tokens": [
-          "a",
-          "a",
-          "is",
-          "reading",
-          "book",
-          "There",
-          "woman"
-        ]
+        "explanation": "'There is' se usa con un sujeto singular, seguido de la acción en '-ing' para describir la escena."
       },
       {
         "type": "word_order",
@@ -2467,17 +2994,7 @@
         "sentence": "My nephew can ride a bike very well.",
         "alternatives": [],
         "translation": "Mi sobrino puede andar en bici muy bien.",
-        "explanation": "'Can' expresa habilidad y va seguido del verbo base sin 'to'.",
-        "tokens": [
-          "ride",
-          "a",
-          "can",
-          "bike",
-          "nephew",
-          "My",
-          "well",
-          "very"
-        ]
+        "explanation": "'Can' expresa habilidad y va seguido del verbo base sin 'to'."
       },
       {
         "type": "error_correction",

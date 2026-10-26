@@ -1246,6 +1246,249 @@
             "why": "Falta el apóstrofo después de Carlos para indicar posesión: Carlos's."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "Lucía's manager is from Bariloche.",
+        "alternatives": [],
+        "translation": "La jefa de Lucía es de Bariloche.",
+        "explanation": "El sonido 's' al final de 'Lucía's' indica posesión; no lo confundas con un simple plural del nombre."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "The students' classroom is upstairs.",
+        "alternatives": [
+          "The student's classroom is upstairs."
+        ],
+        "translation": "El salón de los estudiantes está arriba.",
+        "explanation": "'Students'' (plural) y 'student's' (singular) suenan exactamente igual, así que ambas formas son válidas al dictado; el contexto escrito no las distingue por audio."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "The men's shoes are too small for Nicolás.",
+        "alternatives": [],
+        "translation": "Los zapatos de los hombres le quedan chicos a Nicolás.",
+        "explanation": "'Men' es un plural irregular, así que el posesivo se forma con 's' como si fuera singular; nunca se escribe 'mens''."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "It's your dog, but its leash is broken.",
+        "alternatives": [
+          "It is your dog, but its leash is broken."
+        ],
+        "translation": "Es tu perro, pero su correa está rota.",
+        "explanation": "'It's' es la contracción de 'it is' e 'its' es el posesivo sin apóstrofo; suenan igual pero se escriben distinto según el significado de la oración."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "buzz",
+          "bus"
+        ],
+        "target": 1,
+        "meanings": [
+          "zumbido",
+          "colectivo"
+        ],
+        "explanation": "La 's' final de 'bus' es sorda, mientras que la 'zz' de 'buzz' es sonora y hace vibrar la garganta."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "prize",
+          "price"
+        ],
+        "target": 0,
+        "meanings": [
+          "premio",
+          "precio"
+        ],
+        "explanation": "La diferencia está en el sonido final: 'price' termina en 's' sorda y 'prize' en 'z' sonora; fijate si hay vibración al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "ice",
+          "eyes"
+        ],
+        "target": 0,
+        "meanings": [
+          "hielo",
+          "ojos"
+        ],
+        "explanation": "'Ice' termina en 's' sorda y 'eyes' en 'z' sonora, además 'eyes' tiene un diptongo más marcado al principio."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Can you give me your sister's phone number?",
+        "translation": "¿Me podés dar el número de teléfono de tu hermana?",
+        "tip": "La 's' de 'sister's' suena como una z suave; uní 'sister's phone' sin pausa entre las palabras."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "The landlord's apartment is on the second floor.",
+        "translation": "El departamento del propietario está en el segundo piso.",
+        "tip": "Decí 'landlord's apartment' rápido; la 's' posesiva se pega a la palabra siguiente sin pausa."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "My doctor's office opens at nine o'clock.",
+        "translation": "El consultorio de mi médico abre a las nueve.",
+        "tip": "'Doctor's office' se pronuncia como una sola unidad; la 's' se escucha breve, casi como una 'z'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la visita a la casa en venta y respondé las preguntas.",
+        "situation": "En una casa en venta, el agente inmobiliario Diego le muestra el jardín y el barrio a la compradora Marcela.",
+        "lines": [
+          {
+            "speaker": "Diego",
+            "text": "This is the garden. It's beautiful in spring."
+          },
+          {
+            "speaker": "Marcela",
+            "text": "I love it! Is that the Lopez family's house next door?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Yes, that's their house. Mr. Lopez's car is always parked there."
+          },
+          {
+            "speaker": "Marcela",
+            "text": "And whose bikes are those by the fence?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Those are the Garcia children's bikes. They live on the other side."
+          },
+          {
+            "speaker": "Marcela",
+            "text": "Is it noisy here on weekends?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "A little, but it's quiet most of the time."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De quién es el auto que está siempre estacionado ahí?",
+            "options": [
+              "De Marcela",
+              "De la Sra. García",
+              "De Diego",
+              "Del Sr. López"
+            ],
+            "correctIndex": 3,
+            "explanation": "Diego dice 'Mr. Lopez's car is always parked there', usando 's después del nombre para indicar posesión."
+          },
+          {
+            "prompt": "¿De quién son las bicicletas junto a la reja?",
+            "options": [
+              "De la familia López",
+              "De los chicos de la familia García",
+              "De Marcela",
+              "De Diego"
+            ],
+            "correctIndex": 1,
+            "explanation": "Diego dice 'those are the Garcia children's bikes'; como children ya es plural, se agrega 's para marcar que las bicicletas son de ellos."
+          },
+          {
+            "prompt": "¿Cómo es el barrio los fines de semana según Diego?",
+            "options": [
+              "Llueve mucho",
+              "Tranquilo la mayor parte del tiempo",
+              "Nadie vive ahí",
+              "Muy ruidoso siempre"
+            ],
+            "correctIndex": 1,
+            "explanation": "Diego dice 'it's quiet most of the time', donde it's es la contracción de it is y no el posesivo its."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación en la oficina y respondé las preguntas.",
+        "situation": "En una oficina, Natalia y su compañero Bruno hablan sobre objetos perdidos en la sala de reuniones.",
+        "lines": [
+          {
+            "speaker": "Bruno",
+            "text": "Natalia, is this your sister's umbrella? I found it in the meeting room."
+          },
+          {
+            "speaker": "Natalia",
+            "text": "No, it's not my sister's. Maybe it's Carla's."
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Could be. And look, these are the kids' drawings on the wall."
+          },
+          {
+            "speaker": "Natalia",
+            "text": "Oh, those are my nephew's drawings. He visited last week."
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Nice! Is this laptop our boss's?"
+          },
+          {
+            "speaker": "Natalia",
+            "text": "Yes, it's Mr. Alonso's laptop. Please don't touch it."
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Okay. By the way, is it broken? Its screen looks cracked."
+          },
+          {
+            "speaker": "Natalia",
+            "text": "No, it's fine. That's just a sticker."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De quién son los dibujos en la pared?",
+            "options": [
+              "De Carla",
+              "De la hermana de Natalia",
+              "Del sobrino de Natalia",
+              "Del Sr. Alonso"
+            ],
+            "correctIndex": 2,
+            "explanation": "Natalia dice 'those are my nephew's drawings', usando 's después de nephew para mostrar que los dibujos son de él."
+          },
+          {
+            "prompt": "¿De quién es la laptop?",
+            "options": [
+              "De Bruno",
+              "De Natalia",
+              "De Carla",
+              "Del Sr. Alonso"
+            ],
+            "correctIndex": 3,
+            "explanation": "Natalia dice 'it's Mr. Alonso's laptop', usando 's después del nombre propio para indicar que la laptop le pertenece a él."
+          },
+          {
+            "prompt": "¿La laptop realmente está rota?",
+            "options": [
+              "Sí, pero todavía funciona",
+              "Sí, está rota",
+              "No se sabe",
+              "No, es solo una calcomanía"
+            ],
+            "correctIndex": 3,
+            "explanation": "Natalia responde 'No, it's fine. That's just a sticker'; aquí it's es la contracción de it is, distinta del posesivo its que usa Bruno para 'its screen'."
+          }
+        ]
       }
     ],
     "pronombres-objeto": [

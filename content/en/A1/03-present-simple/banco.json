@@ -1923,6 +1923,249 @@
             "explanation": "La respuesta corta repite el auxiliar de la pregunta: como la pregunta usa 'does', la respuesta corta es 'it does'."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Does the hotel have free Wi-Fi in the rooms?",
+        "alternatives": [],
+        "translation": "¿El hotel tiene wifi gratis en las habitaciones?",
+        "explanation": "Con 'does' el verbo principal va en forma base, por eso es 'have' y no 'has'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Do you need my passport number for the reservation?",
+        "alternatives": [],
+        "translation": "¿Necesitás mi número de pasaporte para la reserva?",
+        "explanation": "'Do' se usa con 'you', y el verbo 'need' queda sin -s porque el auxiliar ya marca la pregunta."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "What time does the bus leave for Bariloche?",
+        "alternatives": [],
+        "translation": "¿A qué hora sale el micro para Bariloche?",
+        "explanation": "Después de la palabra de pregunta 'what time' va 'does' y luego el verbo base 'leave', sin agregarle -s."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Does your doctor work on weekends, Camila?",
+        "alternatives": [],
+        "translation": "¿Tu médico trabaja los fines de semana, Camila?",
+        "explanation": "Como 'doctor' es tercera persona singular, la pregunta necesita 'does' y el verbo 'work' sin -s."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "leave",
+          "live"
+        ],
+        "target": 1,
+        "meanings": [
+          "irse",
+          "vivir"
+        ],
+        "explanation": "La 'i' de 'live' es corta y relajada; la 'ea' de 'leave' se alarga y se tensa más la boca."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "seat",
+          "sit"
+        ],
+        "target": 0,
+        "meanings": [
+          "asiento",
+          "sentarse"
+        ],
+        "explanation": "En 'sit' la vocal es breve; en 'seat' se alarga notablemente y suena más cerrada."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "cap",
+          "cup"
+        ],
+        "target": 1,
+        "meanings": [
+          "gorra",
+          "taza"
+        ],
+        "explanation": "La vocal de 'cup' es central y corta, como una 'a' relajada; la de 'cap' es más abierta, parecida a la 'a' del español."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Do you have any plans this weekend?",
+        "translation": "¿Tenés planes este fin de semana?",
+        "tip": "Uní 'Do you' como si fuera 'd'you', de forma rápida y sin pausa."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "Does this bus go to the city center?",
+        "translation": "¿Este colectivo va al centro?",
+        "tip": "Pronunciá 'does' corto y sin fuerza, y subí el tono al final de la pregunta."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "What time does your flight leave tomorrow?",
+        "translation": "¿A qué hora sale tu vuelo mañana?",
+        "tip": "Enlazá 'does your' sin pausa y bajá el tono al final, en 'tomorrow'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla y respondé las preguntas sobre los detalles.",
+        "situation": "En un café de Palermo, Buenos Aires, Lucas charla con Mia, una estudiante de intercambio australiana, sobre su vida en la ciudad.",
+        "lines": [
+          {
+            "speaker": "Lucas",
+            "text": "Hi Mia! Do you like Buenos Aires so far?"
+          },
+          {
+            "speaker": "Mia",
+            "text": "Yes, I do. I love the food here."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Where do you live now?"
+          },
+          {
+            "speaker": "Mia",
+            "text": "I live near Plaza Serrano, with a local family."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Cool! Does your host family speak English?"
+          },
+          {
+            "speaker": "Mia",
+            "text": "No, they don't. We speak Spanish every day."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "What time do you usually study Spanish?"
+          },
+          {
+            "speaker": "Mia",
+            "text": "I study every morning before breakfast."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Con quién vive Mia en Buenos Aires?",
+            "options": [
+              "Vive en un hotel",
+              "Vive sola",
+              "Vive con amigos",
+              "Vive con una familia local"
+            ],
+            "correctIndex": 3,
+            "explanation": "Mia responde a 'Where do you live now?' diciendo 'I live near Plaza Serrano, with a local family'."
+          },
+          {
+            "prompt": "¿La familia anfitriona de Mia habla inglés?",
+            "options": [
+              "Sí, a veces",
+              "Sí, siempre",
+              "No lo menciona",
+              "No, no habla inglés"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ante la pregunta 'Does your host family speak English?', Mia contesta con la respuesta corta negativa 'No, they don't'."
+          },
+          {
+            "prompt": "¿Cuándo estudia español Mia?",
+            "options": [
+              "Por la tarde",
+              "Por la noche",
+              "Cada mañana antes del desayuno",
+              "Los fines de semana"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mia responde a 'What time do you usually study Spanish?' con 'I study every morning before breakfast'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla y respondé las preguntas sobre los detalles.",
+        "situation": "En un gimnasio de Mendoza, Valeria habla con Nico, el nuevo instructor, sobre las clases de los fines de semana.",
+        "lines": [
+          {
+            "speaker": "Valeria",
+            "text": "Do you teach yoga classes on weekends?"
+          },
+          {
+            "speaker": "Nico",
+            "text": "No, I don't. I teach yoga only on Tuesdays and Thursdays."
+          },
+          {
+            "speaker": "Valeria",
+            "text": "What time does the Saturday spinning class start?"
+          },
+          {
+            "speaker": "Nico",
+            "text": "It starts at nine in the morning."
+          },
+          {
+            "speaker": "Valeria",
+            "text": "Does Carla teach the spinning class?"
+          },
+          {
+            "speaker": "Nico",
+            "text": "No, she doesn't. Diego teaches it now."
+          },
+          {
+            "speaker": "Valeria",
+            "text": "Do you have classes for beginners?"
+          },
+          {
+            "speaker": "Nico",
+            "text": "Yes, we do. The beginner class is on Mondays."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Nico da clases de yoga los fines de semana?",
+            "options": [
+              "Sí, todos los fines de semana",
+              "Sí, solo los sábados",
+              "No, solo los martes y jueves",
+              "No da clases de yoga"
+            ],
+            "correctIndex": 2,
+            "explanation": "Nico responde 'No, I don't. I teach yoga only on Tuesdays and Thursdays' a la pregunta con 'Do you teach...?'."
+          },
+          {
+            "prompt": "¿A qué hora empieza la clase de spinning del sábado?",
+            "options": [
+              "A las nueve",
+              "A las diez",
+              "A las once",
+              "A las ocho"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ante 'What time does the Saturday spinning class start?', Nico contesta 'It starts at nine in the morning'."
+          },
+          {
+            "prompt": "¿Quién da la clase de spinning ahora?",
+            "options": [
+              "Diego",
+              "Carla",
+              "Nico",
+              "Valeria"
+            ],
+            "correctIndex": 0,
+            "explanation": "A la pregunta 'Does Carla teach the spinning class?' Nico responde 'No, she doesn't. Diego teaches it now'."
+          }
+        ]
       }
     ],
     "frecuencia": [
@@ -2460,6 +2703,233 @@
             "explanation": "El adverbio de frecuencia 'never' va antes del verbo principal: 'she never smokes'."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Lucas usually takes the train to work.",
+        "alternatives": [],
+        "translation": "Lucas generalmente toma el tren para ir al trabajo.",
+        "explanation": "El adverbio 'usually' va antes del verbo principal 'takes', no después."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "My landlord is always friendly when I pay the rent.",
+        "alternatives": [],
+        "translation": "Mi casero siempre es amable cuando pago el alquiler.",
+        "explanation": "Con el verbo 'to be', el adverbio de frecuencia va después, por eso es 'is always' y no 'always is'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "We rarely eat out during the week.",
+        "alternatives": [],
+        "translation": "Casi nunca comemos afuera entre semana.",
+        "explanation": "'Rarely' va antes del verbo principal 'eat', no se dice 'eat rarely'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Agustina visits her grandmother twice a month.",
+        "alternatives": [],
+        "translation": "Agustina visita a su abuela dos veces por mes.",
+        "explanation": "Las expresiones de frecuencia más largas, como 'twice a month', se colocan al final de la oración, no antes del verbo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "fin",
+          "thin"
+        ],
+        "target": 1,
+        "meanings": [
+          "aleta",
+          "flaco"
+        ],
+        "explanation": "El sonido 'th' de 'thin' se hace con la lengua entre los dientes; la 'f' de 'fin' se hace con el labio inferior tocando los dientes de arriba."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "berry",
+          "very"
+        ],
+        "target": 0,
+        "meanings": [
+          "baya (fruta)",
+          "muy"
+        ],
+        "explanation": "La 'v' se pronuncia con los dientes tocando apenas el labio inferior; la 'b' cierra completamente los labios antes de soltar el sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "chip",
+          "ship"
+        ],
+        "target": 0,
+        "meanings": [
+          "papita frita",
+          "barco"
+        ],
+        "explanation": "'Ch' empieza con un pequeño golpe de aire (como una 't' suave) antes del sonido 'sh'; 'sh' es un sonido continuo, sin ese golpe inicial."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "I always check my email before breakfast.",
+        "translation": "Siempre reviso mi email antes de desayunar.",
+        "tip": "Acentuá un poco más la palabra 'always' y bajá el tono al final de la frase."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "My boss is sometimes late for meetings.",
+        "translation": "Mi jefe a veces llega tarde a las reuniones.",
+        "tip": "Uní 'is sometimes' sin pausa entre las dos palabras, como si fueran una sola."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta tratando de imitar el ritmo.",
+        "phrase": "We rarely go out during the week.",
+        "translation": "Casi nunca salimos entre semana.",
+        "tip": "Pronunciá la 'r' de 'rarely' suave, sin vibrarla como en español, y enlazala con 'go out'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla y respondé las preguntas sobre los detalles.",
+        "situation": "En una entrevista de trabajo en un hotel de Bariloche, la gerente Laura le pregunta a Tomás sobre sus hábitos de trabajo.",
+        "lines": [
+          {
+            "speaker": "Laura",
+            "text": "Do you usually arrive early to work?"
+          },
+          {
+            "speaker": "Tomás",
+            "text": "Yes, I always arrive ten minutes before my shift."
+          },
+          {
+            "speaker": "Laura",
+            "text": "Great. Are you often tired after a long shift?"
+          },
+          {
+            "speaker": "Tomás",
+            "text": "No, I rarely feel tired. I sleep eight hours every night."
+          },
+          {
+            "speaker": "Laura",
+            "text": "And do you sometimes work on weekends?"
+          },
+          {
+            "speaker": "Tomás",
+            "text": "Yes, I usually work on Saturdays, but I never work on Sundays."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Tomás llega tarde al trabajo?",
+            "options": [
+              "Nunca llega a horario",
+              "Sí, seguido llega tarde",
+              "A veces llega tarde",
+              "No, siempre llega diez minutos antes"
+            ],
+            "correctIndex": 3,
+            "explanation": "Tomás dice 'I always arrive ten minutes before my shift', usando el adverbio 'always' antes del verbo principal."
+          },
+          {
+            "prompt": "¿Tomás se siente cansado después de un turno largo?",
+            "options": [
+              "Siempre se siente cansado",
+              "A veces se siente muy cansado",
+              "Generalmente se siente cansado",
+              "Casi nunca se siente cansado"
+            ],
+            "correctIndex": 3,
+            "explanation": "Tomás responde 'No, I rarely feel tired', donde 'rarely' se ubica antes del verbo principal 'feel'."
+          },
+          {
+            "prompt": "¿Tomás trabaja los domingos?",
+            "options": [
+              "A veces trabaja los domingos",
+              "No, nunca trabaja los domingos",
+              "Sí, siempre trabaja los domingos",
+              "Generalmente trabaja los domingos"
+            ],
+            "correctIndex": 1,
+            "explanation": "Tomás dice 'I never work on Sundays', usando 'never' antes del verbo principal 'work'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla y respondé las preguntas sobre los detalles.",
+        "situation": "En un bar de Rosario, las amigas Sofía y Valentina charlan sobre sus rutinas de ejercicio y alimentación.",
+        "lines": [
+          {
+            "speaker": "Sofía",
+            "text": "Do you exercise every day?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "No, I usually go for a run three times a week."
+          },
+          {
+            "speaker": "Sofía",
+            "text": "And what about breakfast? Do you always eat breakfast?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Yes, I never skip breakfast. It's my favorite meal."
+          },
+          {
+            "speaker": "Sofía",
+            "text": "Do you often eat vegetables?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "I sometimes eat vegetables for lunch, but I rarely eat them for dinner."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántas veces por semana corre Valentina?",
+            "options": [
+              "Una vez por semana",
+              "Todos los días",
+              "Nunca corre",
+              "Tres veces por semana"
+            ],
+            "correctIndex": 3,
+            "explanation": "Valentina dice 'I usually go for a run three times a week'; la expresión de frecuencia más larga va al final de la oración."
+          },
+          {
+            "prompt": "¿Valentina se salta el desayuno alguna vez?",
+            "options": [
+              "No, nunca se lo salta",
+              "Casi nunca desayuna",
+              "Sí, seguido",
+              "Sí, a veces"
+            ],
+            "correctIndex": 0,
+            "explanation": "Valentina responde 'I never skip breakfast', usando 'never' antes del verbo principal 'skip'."
+          },
+          {
+            "prompt": "¿Cuándo come verduras más seguido Valentina?",
+            "options": [
+              "En la cena",
+              "En el desayuno",
+              "En el almuerzo",
+              "No come verduras nunca"
+            ],
+            "correctIndex": 2,
+            "explanation": "Valentina dice 'I sometimes eat vegetables for lunch, but I rarely eat them for dinner', mostrando que las come con más frecuencia al mediodía."
+          }
+        ]
       }
     ],
     "rutinas": [
@@ -2989,6 +3459,249 @@
             ],
             "correctIndex": 3,
             "explanation": "Se usa \"at night\" (no \"in the night\") para hablar de actividades nocturnas, como leer o llamar a su hermana."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "First, Ignacio gets up at half past six and makes his bed.",
+        "alternatives": [
+          "First, Ignacio gets up at six thirty and makes his bed."
+        ],
+        "translation": "Primero, Ignacio se levanta a las seis y media y hace la cama.",
+        "explanation": "'Half past six' se pronuncia como una sola unidad, sin pausa entre 'half' y 'past'; no confundas 'half' con 'have'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "Then he has a quick breakfast before leaving for the interview.",
+        "alternatives": [
+          "Then he has a quick breakfast before leaving for his interview."
+        ],
+        "translation": "Después desayuna rápido antes de salir para la entrevista.",
+        "explanation": "'Before leaving' se une al hablar; la 'b' de 'before' es suave y no debe confundirse con una pausa marcada."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "After that, he takes the train to the city center for his new job.",
+        "alternatives": [
+          "After that he takes the train to the city center for his new job."
+        ],
+        "translation": "Después de eso, toma el tren hacia el centro de la ciudad para su nuevo trabajo.",
+        "explanation": "'After that' marca el siguiente paso en la rutina; cuidado con 'train', que tiene un diptongo claro /eɪ/ y no se pronuncia como 'tren' en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila.",
+        "sentence": "At night, he writes about his day in a small notebook.",
+        "alternatives": [
+          "At night he writes about his day in a small notebook."
+        ],
+        "translation": "A la noche, escribe sobre su día en un cuaderno pequeño.",
+        "explanation": "Se dice 'at night', nunca 'in the night'; ese es un error común al hablar de la rutina nocturna."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "bad",
+          "bed"
+        ],
+        "target": 1,
+        "meanings": [
+          "malo / mala",
+          "cama"
+        ],
+        "explanation": "La vocal de 'bed' es más cerrada, mientras que la de 'bad' se abre más; fijate en cuánto bajás la mandíbula."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "work",
+          "walk"
+        ],
+        "target": 0,
+        "meanings": [
+          "trabajar",
+          "caminar"
+        ],
+        "explanation": "'Walk' tiene una o larga y redondeada, mientras que 'work' tiene una vocal central con la r marcada; prestá atención a si la lengua se curva."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí la palabra que corresponde.",
+        "pair": [
+          "nine",
+          "night"
+        ],
+        "target": 1,
+        "meanings": [
+          "nueve",
+          "noche"
+        ],
+        "explanation": "La diferencia está en el final: 'night' termina en una consonante corta y seca, mientras que 'nine' termina en el sonido nasal de la 'n'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "I usually get up early and make my bed before breakfast.",
+        "translation": "Normalmente me levanto temprano y hago la cama antes del desayuno.",
+        "tip": "Uní 'get up' como si fuera una sola palabra, 'gedup', sin pausa entre las dos."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "After lunch, I go for a walk around the block.",
+        "translation": "Después del almuerzo, salgo a caminar por la cuadra.",
+        "tip": "Decí 'go for a walk' rápido y junto, casi como 'gofora walk', sin cortar entre palabras."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "At night, I call my family before going to sleep.",
+        "translation": "A la noche, llamo a mi familia antes de ir a dormir.",
+        "tip": "Marcá bien el golpe de voz en 'night' y recordá que siempre va con 'at', nunca con 'in'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista y respondé las preguntas sobre los detalles.",
+        "situation": "En una radio de Mendoza, el locutor entrevista a Pedro, un panadero, sobre su rutina diaria.",
+        "lines": [
+          {
+            "speaker": "Locutor",
+            "text": "What time do you get up, Pedro?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "I get up at four o'clock in the morning."
+          },
+          {
+            "speaker": "Locutor",
+            "text": "Wow, that's early! What do you do first?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "First, I have a cup of coffee. Then I go to the bakery."
+          },
+          {
+            "speaker": "Locutor",
+            "text": "What time do you start baking bread?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "I start at half past four. After that, I bake bread until seven."
+          },
+          {
+            "speaker": "Locutor",
+            "text": "And when do you go to bed at night?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "I usually go to bed at nine o'clock at night. I'm very tired!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿A qué hora se levanta Pedro?",
+            "options": [
+              "A las cuatro y media",
+              "A las siete de la mañana",
+              "A las nueve de la mañana",
+              "A las cuatro de la mañana"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro dice 'I get up at four o'clock in the morning', usando la hora exacta con la parte del día correspondiente."
+          },
+          {
+            "prompt": "¿Qué hace Pedro primero, antes de ir a la panadería?",
+            "options": [
+              "Toma un café",
+              "Se baña",
+              "Desayuna pan",
+              "Mira el celular"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro responde 'First, I have a cup of coffee. Then I go to the bakery', usando el conector 'first' para la primera acción."
+          },
+          {
+            "prompt": "¿A qué hora empieza a hornear pan?",
+            "options": [
+              "A las cuatro",
+              "A las cuatro y media",
+              "A las siete",
+              "A las cinco"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro dice 'I start at half past four', indicando la hora exacta en que comienza a hornear."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla y respondé las preguntas sobre los detalles.",
+        "situation": "En la facultad, dos compañeras, Carla y Noelia, charlan sobre la rutina de Noelia, que trabaja de niñera por las tardes.",
+        "lines": [
+          {
+            "speaker": "Carla",
+            "text": "What's your daily routine like, Noelia?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "In the morning, I have classes at the university."
+          },
+          {
+            "speaker": "Carla",
+            "text": "And in the afternoon?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "In the afternoon, I take care of two kids. First, I pick them up from school. Then we do homework together."
+          },
+          {
+            "speaker": "Carla",
+            "text": "What do you do after that?"
+          },
+          {
+            "speaker": "Noelia",
+            "text": "After that, we play games until their parents come home. Finally, I go home at six o'clock."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué hace Noelia por la mañana?",
+            "options": [
+              "Juega con los niños",
+              "Tiene clases en la universidad",
+              "Cuida niños",
+              "Hace la tarea con los chicos"
+            ],
+            "correctIndex": 1,
+            "explanation": "Noelia dice 'In the morning, I have classes at the university', usando la parte del día correcta para esa actividad."
+          },
+          {
+            "prompt": "¿Qué hace primero con los chicos por la tarde?",
+            "options": [
+              "Les prepara la comida",
+              "Juega con ellos",
+              "Los busca por la escuela",
+              "Hace la tarea con ellos"
+            ],
+            "correctIndex": 2,
+            "explanation": "Noelia responde 'First, I pick them up from school', usando el conector 'first' para marcar la primera acción de la tarde."
+          },
+          {
+            "prompt": "¿A qué hora se va a su casa Noelia?",
+            "options": [
+              "A las siete",
+              "A las cinco",
+              "A las seis",
+              "A las cuatro"
+            ],
+            "correctIndex": 2,
+            "explanation": "Noelia dice 'Finally, I go home at six o'clock', usando el conector 'finally' para la última acción del día."
           }
         ]
       }
