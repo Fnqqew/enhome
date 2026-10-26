@@ -57,12 +57,26 @@ const systemPrompt = (topic: CurriculumTopic): string =>
   roleSystemPrompt(topic.language, 'docente', 'Diseñás ejercicios de práctica exigentes, realistas y sin ambigüedades.')
 
 // Lo que devuelve Claude, con el esquema de solo los tipos pedidos.
-const poolSchema = (types: ExerciseType[]) => z.object({ exercises: z.array(generatedSchemaFor(types)).min(1) })
+// Lo que devuelve Claude, con el esquema de solo los tipos pedidos. Cada ejercicio se valida por su
+// cuenta: uno mal armado se descarta (queda null) en vez de tirar abajo el pedido entero.
+const lenient = (types: ExerciseType[]) => generatedSchemaFor(types).catch(null as unknown as GeneratedExercise)
+const poolSchema = (types: ExerciseType[]) => z.object({ exercises: z.array(lenient(types)).min(1) })
 const reviewSchema = (types: ExerciseType[]) =>
   z.object({
     issues: z.array(z.string()),
-    corrections: z.array(z.object({ index: z.number().int().min(0), replacement: generatedSchemaFor(types) }))
+    corrections: z.array(
+      z
+        .object({ index: z.number().int().min(0), replacement: generatedSchemaFor(types) })
+        .catch(null as unknown as { index: number; replacement: GeneratedExercise })
+    )
   })
+
+// Los ejercicios que pasaron el esquema (avisa en el registro cuántos se descartaron).
+function valid<T>(items: (T | null)[], label: string): T[] {
+  const kept = items.filter((item): item is T => item !== null)
+  if (kept.length < items.length) console.info(`[practice] ${label}: se descartaron ${items.length - kept.length} con formato inválido`)
+  return kept
+}
 const typesOf = (counts: Partial<Record<ExerciseType, number>>): ExerciseType[] => Object.keys(counts) as ExerciseType[]
 
 const KIND_GUIDE: Record<UnitKind, string> = {
@@ -145,7 +159,7 @@ function split(counts: Partial<Record<ExerciseType, number>>): Partial<Record<Ex
 // Una tanda: se genera, se revisa y se devuelven los ejercicios ya corregidos.
 async function generateGroup(request: PoolRequest, counts: Partial<Record<ExerciseType, number>>, ask: Ask): Promise<GeneratedExercise[]> {
   const started = Date.now()
-  const { exercises } = await ask({
+  const raw = await ask({
     label: 'práctica',
     systemPrompt: systemPrompt(request.topic),
     prompt: buildPoolPrompt(request, counts),
@@ -153,6 +167,7 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
     timeoutMs: GENERATION_TIMEOUT_MS,
     ticket: request.ticket
   })
+  const exercises = valid(raw.exercises, 'práctica')
   const generated = Date.now()
   const review = await ask({
     label: 'práctica · revisión',
@@ -170,7 +185,7 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
   if (review.issues.length > 0) {
     console.info(`[practice] La revisión encontró ${review.issues.length} problema(s):\n- ${review.issues.join('\n- ')}`)
   }
-  return applyCorrections(exercises, review.corrections, (a, b) => a.type === b.type)
+  return applyCorrections(exercises, valid(review.corrections, 'correcciones'), (a, b) => a.type === b.type)
 }
 
 // Una tanda lista para usar: generada, revisada y controlada. Si falla, se reintenta solo esa tanda,
@@ -226,7 +241,7 @@ async function generateOnce(request: PoolRequest, counts: Partial<Record<Exercis
   let lastError: unknown
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
     try {
-      const { exercises } = await ask({
+      const raw = await ask({
         label,
         systemPrompt: systemPrompt(request.topic),
         prompt: buildPoolPrompt(request, counts),
@@ -235,6 +250,7 @@ async function generateOnce(request: PoolRequest, counts: Partial<Record<Exercis
         timeoutMs: GENERATION_TIMEOUT_MS,
         ticket: request.ticket
       })
+      const exercises = valid(raw.exercises, label)
       const prepared = exercises.flatMap((e) => {
         try {
           return [prepareExercise(e)]

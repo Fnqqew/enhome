@@ -220,6 +220,16 @@ function readPayload(payload: unknown): unknown {
   return JSON.parse(text)
 }
 
+// A veces Claude devuelve solo la lista cuando se pedía un objeto con una lista adentro
+// ({ exercises: [...] }): si el esquema tiene un único campo y es una lista, se envuelve.
+function wrapList(raw: unknown, schema: z.ZodType): unknown {
+  if (!Array.isArray(raw) || !(schema instanceof z.ZodObject)) return raw
+  const keys = Object.keys(schema.shape)
+  const required = keys.filter((key) => !schema.shape[key].safeParse(undefined).success)
+  if (required.length !== 1 || !(schema.shape[required[0]] instanceof z.ZodArray)) return raw
+  return { [required[0]]: raw }
+}
+
 async function oneShot(exe: string, spec: CallSpec, prompt: string, timeoutMs: number, label: string): Promise<unknown> {
   const { code, stdout, stderr } = await runProcess(exe, oneShotArgs(spec), prompt, timeoutMs)
   if (code !== 0) {
@@ -292,7 +302,7 @@ export async function askClaude<T>(options: AskOptions<T>): Promise<T> {
         if (cancelEpoch !== epoch) throw new ClaudeError(CANCELLED_MESSAGE, 'cancelled')
         return run(exe, spec, prompt, timeoutMs, label)
       })
-      const raw = readPayload(payload)
+      const raw = wrapList(readPayload(payload), schema)
       const parsed = schema.safeParse(raw)
       if (!parsed.success) {
         lastInvalid = raw

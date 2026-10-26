@@ -45,12 +45,21 @@ const DIFFICULTY: Record<ExamKind, string> = {
 const typesOf = (request: ExamRequest): ExerciseType[] => [...new Set(request.items.map((item) => item.type))]
 const generationSchema = (request: ExamRequest) =>
   z.object({
-    items: z.array(z.object({ index: z.number().int().min(0), exercise: generatedSchemaFor(typesOf(request)) }))
+    // Cada pregunta se valida por su cuenta: una mal armada queda null y se vuelve a pedir sola.
+    items: z.array(
+      z
+        .object({ index: z.number().int().min(0), exercise: generatedSchemaFor(typesOf(request)) })
+        .catch(null as unknown as { index: number; exercise: GeneratedExercise })
+    )
   })
 const reviewSchema = (request: ExamRequest) =>
   z.object({
     issues: z.array(z.string()),
-    corrections: z.array(z.object({ index: z.number().int().min(0), replacement: generatedSchemaFor(typesOf(request)) }))
+    corrections: z.array(
+      z
+        .object({ index: z.number().int().min(0), replacement: generatedSchemaFor(typesOf(request)) })
+        .catch(null as unknown as { index: number; replacement: GeneratedExercise })
+    )
   })
 
 function context(request: ExamRequest): string {
@@ -113,7 +122,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
       })
       // Cada pregunta se ubica por su número y tiene que ser del tipo pedido.
       const generated = request.items.map((plan, i): GeneratedExercise | undefined => {
-        const exercise = items.find((item) => item.index === i)?.exercise
+        const exercise = items.find((item) => item?.index === i)?.exercise
         return exercise?.type === plan.type ? exercise : undefined
       })
 
@@ -128,7 +137,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
       if (review.issues.length > 0) {
         console.info(`[exams] La revisión encontró ${review.issues.length} problema(s):\n- ${review.issues.join('\n- ')}`)
       }
-      for (const { index, replacement } of review.corrections) {
+      for (const { index, replacement } of review.corrections.filter(Boolean)) {
         if (index < generated.length && replacement.type === request.items[index].type) generated[index] = replacement
       }
 

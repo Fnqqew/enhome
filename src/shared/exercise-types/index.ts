@@ -48,10 +48,44 @@ export function retryNote(exercise: StoredExercise, answer: ExerciseAnswer): str
 export const canRetry = (type: ExerciseType): boolean => !!kindOf(type).retry
 
 // Cómo es cada formato, para pedirle ejercicios a Claude.
+// Los campos de un esquema, con sus nombres, para escribirlos en el pedido: Claude Code no siempre hace
+// respetar el esquema y, sin los nombres a la vista, a veces omite campos o los renombra.
+export function fieldsOf(schema: unknown): string {
+  const def = (schema as { _zod?: { def?: Record<string, unknown> } })._zod?.def
+  if (!def) return '…'
+  switch (def.type) {
+    case 'object': {
+      const shape = def.shape as Record<string, unknown>
+      const fields = Object.entries(shape).map(([key, value]) => {
+        const optional = (value as { _zod?: { def?: { type?: string } } })._zod?.def?.type === 'optional'
+        const inner = fieldsOf(value)
+        return `${key}${optional ? '?' : ''}${inner === '…' ? '' : `: ${inner}`}`
+      })
+      return `{ ${fields.join(', ')} }`
+    }
+    case 'array':
+      return `[${fieldsOf(def.element)}]`
+    case 'tuple':
+      return `[${(def.items as unknown[]).map(fieldsOf).join(', ')}]`
+    case 'optional':
+    case 'nullable':
+    case 'default':
+      return fieldsOf(def.innerType)
+    case 'pipe':
+      return fieldsOf(def.in)
+    case 'literal':
+      return JSON.stringify((def.values as unknown[])[0])
+    case 'number':
+      return 'número'
+    default:
+      return '…'
+  }
+}
+
 export function formatGuide(context: GuideContext, types?: ExerciseType[]): string {
   const kinds = types ? types.map(kindOf) : (Object.values(EXERCISE_KINDS) as AnyKind[])
   return `Formatos (el campo type indica cuál es):
-${kinds.map((kind) => `- ${kind.guide(context)}`).join('\n')}
+${kinds.map((kind) => `- ${kind.guide(context)}\n  Campos, con estos nombres exactos (? es opcional): ${fieldsOf(kind.generated)}`).join('\n')}
 Todas las instruction van en español y son breves. Toda explanation va en español, en una o dos oraciones, y explica la regla.`
 }
 
