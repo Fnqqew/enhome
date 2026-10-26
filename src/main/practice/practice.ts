@@ -6,6 +6,7 @@ import {
   type ExerciseAnswer,
   type ExerciseFeedback,
   type ExerciseType,
+  type GeneratedExercise,
   type OpenExercise,
   type PracticeRating,
   type PracticeResult,
@@ -30,6 +31,7 @@ import {
   type TypePreferences
 } from './composition'
 import { mainText, toPublicExercise } from './exercises'
+import { canRetry, prepareExercise, retryNote } from '../../shared/exercise-types'
 import type { Difficulty, PoolGenerator } from './generation'
 import { gradeAuto } from './grading'
 import { quantity, usedHints } from '../rewards/inventory'
@@ -66,7 +68,20 @@ interface ExerciseRow {
   slot: number | null
   skipped: number
   session_id: number | null
+  first_try: string | null
+  repeat_of: number | null
 }
+
+// Lo que vuelve al final va después de todo (también de los largos que llegan con la práctica empezada).
+const REPEAT_SLOT = 1000
+// Lo que sale bien al segundo intento vale, pero con menos puntaje.
+const SECOND_TRY_SCORE = 7
+
+const secondTry = (feedback: ExerciseFeedback): ExerciseFeedback => ({
+  ...feedback,
+  score: Math.min(feedback.score, SECOND_TRY_SCORE),
+  explanation: `Bien al segundo intento. ${feedback.explanation}`.trim()
+})
 
 interface AttemptRow {
   exercise_id: number
@@ -89,6 +104,8 @@ interface Generation {
   done: Promise<void>
   ticket: Ticket
 }
+
+const EXERCISE_COLUMNS = 'id, type, payload, slot, skipped, session_id, first_try, repeat_of'
 
 const errorText = (err: unknown): string => (err instanceof Error ? err.message : String(err))
 
@@ -178,6 +195,12 @@ export class Practice {
     if (stored.type !== answer.type) throw new PracticeError('La respuesta no corresponde a este ejercicio.')
 
     const auto = gradeAuto(stored, answer)
+    // Lo que sale mal la primera vez se puede intentar de nuevo, con una pista de por qué no era.
+    const firstMiss = auto.kind === 'graded' && !auto.feedback.correct && exercise.first_try === null && exercise.repeat_of === null
+    if (firstMiss && canRetry(stored.type)) {
+      this.db.prepare('UPDATE exercises SET first_try = ? WHERE id = ?').run(JSON.stringify(answer), exerciseId)
+      return { status: 'session', session: this.sessionView(session) }
+    }
     if (auto.kind === 'graded') {
       this.db
         .prepare('INSERT INTO exercise_attempts (exercise_id, answer, correct, score, feedback) VALUES (?, ?, ?, ?, ?)')
@@ -231,22 +254,50 @@ export class Practice {
     session: SessionRow,
     stored: StoredExercise,
     answer: ExerciseAnswer,
-    feedback: ExerciseFeedback,
+    graded: ExerciseFeedback,
     today: string
   ): void {
+    const row = this.db.prepare('SELECT first_try, repeat_of FROM exercises WHERE id = ?').get(exerciseId) as
+      Pick<ExerciseRow, 'first_try' | 'repeat_of'> | undefined
+    const feedback = row?.first_try && graded.correct ? secondTry(graded) : graded
     transaction(this.db, () => {
       this.db
         .prepare('UPDATE exercise_attempts SET correct = ?, score = ?, feedback = ? WHERE exercise_id = ?')
         .run(feedback.correct ? 1 : 0, feedback.score, JSON.stringify(feedback), exerciseId)
-      // Lo que salió mal pasa al cuaderno de errores para repasarlo en los próximos días.
-      if (!feedback.correct) {
+      // Lo que salió mal pasa al cuaderno de errores para repasarlo en los próximos días y, si es corto,
+      // vuelve al final de esta práctica (una sola vez).
+      if (!feedback.correct && !row?.repeat_of) {
         recordMistake(
           this.db,
           { source: 'practice', sourceId: exerciseId, topicId: session.topic_id, subtopicId: session.subtopic_id, exercise: stored, given: answer },
           today
         )
+        if (canRetry(stored.type)) this.repeatAtEnd(exerciseId, session, stored)
       }
     })
+  }
+
+  // La repetición de un ejercicio que salió mal, al final de la práctica y mezclado de nuevo.
+  private repeatAtEnd(exerciseId: number, session: SessionRow, stored: StoredExercise): void {
+    const { last } = this.db.prepare('SELECT MAX(slot) AS last FROM exercises WHERE session_id = ?').get(session.id) as { last: number | null }
+    let payload = stored
+    try {
+      payload = prepareExercise(stored as unknown as GeneratedExercise)
+    } catch {
+      // Si no se puede volver a mezclar, vuelve tal cual.
+    }
+    this.db
+      .prepare('INSERT INTO exercises (topic_id, subtopic_id, skill, type, payload, session_id, slot, repeat_of) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+      .run(
+        session.topic_id,
+        session.subtopic_id,
+        SKILL_OF_TYPE[stored.type],
+        stored.type,
+        JSON.stringify(payload),
+        session.id,
+        Math.max(REPEAT_SLOT, (last ?? 0) + 1),
+        exerciseId
+      )
   }
 
   // Si se cerró la app con correcciones pendientes, se vuelven a pedir al abrir la práctica.
@@ -274,6 +325,11 @@ export class Practice {
   skip(exerciseId: number): PracticeView {
     const { exercise, session } = this.openExercise(exerciseId)
     if (this.attempt(exerciseId)) throw new PracticeError('Ya respondiste ese ejercicio.')
+    // Una repetición se deja sin cambiarla por otra.
+    if (exercise.repeat_of !== null) {
+      this.db.prepare('UPDATE exercises SET slot = NULL, skipped = 1 WHERE id = ?').run(exercise.id)
+      return { status: 'session', session: this.sessionView(session) }
+    }
 
     const spares = this.exerciseRows(session.id).filter((r) => r.slot === null && !r.skipped)
     const sameSkill = (r: ExerciseRow): boolean => SKILL_OF_TYPE[r.type] === SKILL_OF_TYPE[exercise.type]
@@ -309,7 +365,8 @@ export class Practice {
     this.db.prepare('UPDATE practice_sessions SET completed_on = ? WHERE id = ?').run(today, session.id)
     this.prefetchUpcoming(today)
 
-    const feedbacks = view.exercises.map((e) => e.feedback!)
+    // Las repeticiones de lo que salió mal no cuentan en el resultado.
+    const feedbacks = view.exercises.filter((e) => !e.repeat).map((e) => e.feedback!)
     return {
       purpose: view.purpose,
       unitIndex: view.unitIndex,
@@ -402,7 +459,7 @@ export class Practice {
     const options = this.options()
     const difficulty = this.difficulty(session)
     const counts = Object.fromEntries(
-      Object.entries(planPool(subtopic.focus, this.preferences(), options)).filter(([type]) => {
+      Object.entries(planPool(subtopic.focus, this.preferences(), options, topic.level)).filter(([type]) => {
         const long = isLongType(type as ExerciseType)
         return state.short ? long : state.long ? !long : true
       })
@@ -475,7 +532,7 @@ export class Practice {
     if (!this.waitingLong(session)) return
     const { subtopic } = this.content(session.topic_id, session.subtopic_id)
     const rows = this.exerciseRows(session.id)
-    const last = Math.max(...rows.map((r) => r.slot ?? 0))
+    const last = Math.max(0, ...rows.filter((r) => r.slot !== null && r.slot < REPEAT_SLOT).map((r) => r.slot!))
     const { excluded } = this.options()
     const ids = composeLong(
       rows.filter((r) => r.slot === null && !r.skipped && !excluded.includes(r.type)),
@@ -502,17 +559,20 @@ export class Practice {
       .sort((a, b) => a.slot! - b.slot!)
       .map((r) => {
         const attempt = attempts.get(r.id)
+        const stored = JSON.parse(r.payload) as StoredExercise
         return {
           id: r.id,
           slot: r.slot!,
           type: r.type,
-          content: toPublicExercise(JSON.parse(r.payload) as StoredExercise),
+          content: toPublicExercise(stored),
           answer: attempt ? (JSON.parse(attempt.answer) as ExerciseAnswer) : null,
           feedback: attempt?.feedback ? (JSON.parse(attempt.feedback) as ExerciseFeedback) : null,
           rating: attempt?.user_rating ?? null,
           hint: hints.get(r.id) ?? null,
           grading: !!attempt && !attempt.feedback && !this.gradingErrors.has(r.id),
-          gradingError: attempt && !attempt.feedback ? (this.gradingErrors.get(r.id) ?? null) : null
+          gradingError: attempt && !attempt.feedback ? (this.gradingErrors.get(r.id) ?? null) : null,
+          retry: !attempt && r.first_try ? retryNote(stored, JSON.parse(r.first_try) as ExerciseAnswer) : null,
+          repeat: r.repeat_of !== null
         }
       })
 
@@ -565,8 +625,7 @@ export class Practice {
   }
 
   private openExercise(exerciseId: number, { allowCompleted = false } = {}): { exercise: ExerciseRow; session: SessionRow } {
-    const exercise = this.db.prepare('SELECT id, type, payload, slot, skipped, session_id FROM exercises WHERE id = ?').get(exerciseId) as
-      ExerciseRow | undefined
+    const exercise = this.db.prepare(`SELECT ${EXERCISE_COLUMNS} FROM exercises WHERE id = ?`).get(exerciseId) as ExerciseRow | undefined
     if (!exercise || exercise.session_id === null) throw new PracticeError('Ese ejercicio no existe.')
     const session = this.session(exercise.session_id)
     if (session.completed_on && !allowCompleted) throw new PracticeError('Esta práctica ya está terminada.')
@@ -575,9 +634,7 @@ export class Practice {
   }
 
   private exerciseRows(sessionId: number): ExerciseRow[] {
-    return this.db
-      .prepare('SELECT id, type, payload, slot, skipped, session_id FROM exercises WHERE session_id = ? ORDER BY id')
-      .all(sessionId) as unknown as ExerciseRow[]
+    return this.db.prepare(`SELECT ${EXERCISE_COLUMNS} FROM exercises WHERE session_id = ? ORDER BY id`).all(sessionId) as unknown as ExerciseRow[]
   }
 
   private hasSlots(sessionId: number): boolean {

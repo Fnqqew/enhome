@@ -5,7 +5,7 @@ import { composeSession, longSlots, MIN_POOL_SIZE, planPool, SESSION_SIZE, type 
 const total = (plan: Partial<Record<ExerciseType, number>>): number => Object.values(plan).reduce((s, n) => s + (n ?? 0), 0)
 
 describe('planPool', () => {
-  it('día de gramática: gramática, una traducción y los tres ejercicios largos', () => {
+  it('día de gramática: gramática, una traducción, los tres largos, y algo para escuchar y para decir', () => {
     expect(planPool(['grammar'])).toEqual({
       multiple_choice: 2,
       fill_blank: 2,
@@ -14,8 +14,20 @@ describe('planPool', () => {
       translation: 1,
       translation_set: 1,
       dialogue: 1,
-      roleplay: 1
+      roleplay: 1,
+      dictation: 1,
+      listening: 1,
+      minimal_pair: 1,
+      shadowing: 1
     })
+  })
+
+  it('con el nivel, menos opción múltiple y más formatos en los que hay que escribir', () => {
+    const a1 = planPool(['grammar'], {}, undefined, 'A1')
+    const b2 = planPool(['grammar'], {}, undefined, 'B2')
+    expect(b2.multiple_choice).toBeLessThan(a1.multiple_choice!)
+    expect(a1.transformation).toBeUndefined()
+    expect(b2.transformation).toBe(2)
   })
 
   it('los ejercicios largos no se sacan aunque no gusten', () => {
@@ -64,8 +76,19 @@ describe('composeSession', () => {
       composeSession(items, ['grammar'], {}, () => 0)
     )
     expect(types).toHaveLength(SESSION_SIZE)
-    // La tanda, una situación y los cinco cortos distintos.
-    expect(new Set(types).size).toBe(7)
+    // La tanda, una situación, una escucha, una para decir en voz alta y cuatro cortos distintos.
+    expect(new Set(types).size).toBe(8)
+    expect(types).toContain('shadowing')
+    expect(types.some((t) => ['dictation', 'listening', 'minimal_pair'].includes(t))).toBe(true)
+  })
+
+  it('las prácticas cortas no suman escucha ni habla', () => {
+    const items = pool(planPool(['grammar']))
+    const types = typesOf(
+      items,
+      composeSession(items, ['grammar'], {}, () => 0, 5)
+    )
+    expect(types).not.toContain('shadowing')
   })
 
   it('siempre incluye una tanda de traducción y una sola situación para conversar', () => {
@@ -104,13 +127,14 @@ describe('composeSession', () => {
     expect(types[types.length - 1]).toBe('writing')
   })
 
-  it('usa el lugar extra para el tipo mejor calificado', () => {
+  it('prioriza los tipos mejor calificados', () => {
     const items = pool(planPool(['grammar']))
     const types = typesOf(
       items,
-      composeSession(items, ['grammar'], { word_order: 5 }, () => 0)
+      composeSession(items, ['grammar'], { word_order: 5, multiple_choice: 1 }, () => 0, 6)
     )
-    expect(types.filter((t) => t === 'word_order')).toHaveLength(2)
+    expect(types).toContain('word_order')
+    expect(types).not.toContain('multiple_choice')
   })
 
   it('ordena de lo más guiado a lo más abierto', () => {
@@ -119,8 +143,9 @@ describe('composeSession', () => {
       items,
       composeSession(items, ['grammar', 'reading'], {}, () => 0)
     )
-    expect(types.indexOf('multiple_choice')).toBeLessThan(types.indexOf('translation'))
-    expect(types.indexOf('translation')).toBeLessThan(types.indexOf('reading'))
+    expect(types.indexOf('multiple_choice')).toBeGreaterThanOrEqual(0)
+    expect(types.indexOf('multiple_choice')).toBeLessThan(types.indexOf('reading'))
+    expect(types.indexOf('reading')).toBeLessThan(types.indexOf('translation_set'))
   })
 })
 
@@ -133,10 +158,9 @@ describe('duración y formatos excluidos', () => {
   })
 
   it('si se excluyen todos los cortos, igual se piden cortos', () => {
-    const plan = planPool(['grammar'], {}, { size: 8, excluded: ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'] })
-    expect(Object.keys(plan).some((type) => ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'].includes(type))).toBe(
-      true
-    )
+    const shorts = ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation', 'transformation', 'dictation', 'minimal_pair']
+    const plan = planPool(['grammar'], {}, { size: 8, excluded: shorts as ExerciseType[] })
+    expect(Object.keys(plan).some((type) => shorts.includes(type))).toBe(true)
   })
 
   it('arma sesiones cortas e intensas', () => {

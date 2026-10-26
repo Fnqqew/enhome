@@ -23,9 +23,43 @@ const LIKED_RATING = 4
 const DISLIKED_RATING = 2
 
 // Los cortos, que se pueden cambiar por otro sin desarmar la práctica.
-const FLEXIBLE_TYPES: ExerciseType[] = ['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation']
+const FLEXIBLE_TYPES: ExerciseType[] = [
+  'multiple_choice',
+  'fill_blank',
+  'word_order',
+  'error_correction',
+  'translation',
+  'transformation',
+  'dictation',
+  'minimal_pair'
+]
 // Siempre entra uno de estos: es la parte en la que el alumno se mete en una situación real.
 const IMMERSIVE_TYPES: ExerciseType[] = ['dialogue', 'roleplay']
+// Escuchar y hablar todos los días (en las prácticas de 8 o más ejercicios).
+const LISTENING_TYPES: ExerciseType[] = ['dictation', 'listening', 'minimal_pair']
+const SPEAKING_TYPES: ExerciseType[] = ['shadowing']
+// Desde cuántos ejercicios la práctica suma una escucha y algo para decir en voz alta.
+const FULL_SESSION = 8
+
+// El orden de la sesión: de lo más guiado a lo más abierto, con la escucha y el habla en el medio.
+const SESSION_ORDER: ExerciseType[] = [
+  'multiple_choice',
+  'fill_blank',
+  'word_order',
+  'error_correction',
+  'transformation',
+  'minimal_pair',
+  'dictation',
+  'translation',
+  'reorder_text',
+  'reading',
+  'listening',
+  'shadowing',
+  'translation_set',
+  'dialogue',
+  'roleplay',
+  'writing'
+]
 
 const rating = (preferences: TypePreferences, type: ExerciseType): number => preferences[type] ?? NEUTRAL_RATING
 
@@ -35,24 +69,37 @@ function isRequired(type: ExerciseType, focus: Skill[]): boolean {
   return (type === 'reading' && focus.includes('reading')) || (type === 'writing' && focus.includes('writing'))
 }
 
+// Recordar fija más que reconocer: la opción múltiple va quedando para A1 y, con el nivel, pesan más
+// los formatos en los que hay que escribir la respuesta.
+const RECALL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+
 export function planPool(
   focus: Skill[],
   preferences: TypePreferences = {},
-  options: SessionOptions = DEFAULT_SESSION_OPTIONS
+  options: SessionOptions = DEFAULT_SESSION_OPTIONS,
+  level = 'A1'
 ): Partial<Record<ExerciseType, number>> {
   const grammarDay = focus.includes('grammar')
   const writingDay = focus.includes('writing')
+  const rank = Math.max(0, RECALL_LEVELS.indexOf(level))
+  const full = options.size >= FULL_SESSION
   const plan: Record<ExerciseType, number> = {
-    multiple_choice: grammarDay ? 2 : 1,
+    multiple_choice: rank === 0 ? (grammarDay ? 2 : 1) : 1,
     fill_blank: grammarDay ? 2 : 1,
-    word_order: grammarDay ? 2 : 1,
+    word_order: grammarDay && rank < 3 ? 2 : 1,
     error_correction: grammarDay ? 2 : 1,
     translation: writingDay ? 2 : 1,
     translation_set: 1,
     dialogue: 1,
     roleplay: 1,
     reading: focus.includes('reading') ? 2 : 0,
-    writing: writingDay ? 2 : 0
+    writing: writingDay ? 2 : 0,
+    dictation: full ? 1 : 0,
+    listening: full ? 1 : 0,
+    minimal_pair: full && rank < 3 ? 1 : 0,
+    shadowing: full ? 1 : 0,
+    transformation: rank >= 1 ? (grammarDay ? 2 : 1) : 0,
+    reorder_text: rank >= 1 && focus.includes('reading') ? 1 : 0
   }
 
   for (const type of EXERCISE_TYPES) {
@@ -87,7 +134,11 @@ export function longSlots(focus: Skill[], excluded: ExerciseType[] = []): number
   return (allowed('translation_set') ? 1 : 0) + immersive + (focus.includes('writing') && allowed('writing') ? 1 : 0)
 }
 
-const byTypeOrder = (a: PoolItem, b: PoolItem): number => EXERCISE_TYPES.indexOf(a.type) - EXERCISE_TYPES.indexOf(b.type)
+const orderOf = (type: ExerciseType): number => {
+  const index = SESSION_ORDER.indexOf(type)
+  return index === -1 ? SESSION_ORDER.length + EXERCISE_TYPES.indexOf(type) : index
+}
+const byTypeOrder = (a: PoolItem, b: PoolItem): number => orderOf(a.type) - orderOf(b.type)
 
 // Primera parte de una sesión que arranca antes de que lleguen los largos: solo ejercicios cortos,
 // dejando libres los lugares de los largos.
@@ -149,6 +200,11 @@ export function composeSession(
   take('translation_set')
   // La conversación y la situación se alternan para que la práctica no se vuelva rutina.
   take(...(random() < 0.5 ? IMMERSIVE_TYPES : [...IMMERSIVE_TYPES].reverse()))
+  // Escuchar y hablar todos los días.
+  if (size >= FULL_SESSION) {
+    take(...[...LISTENING_TYPES].sort(() => random() - 0.5))
+    take(...SPEAKING_TYPES)
+  }
 
   while (chosen.length < size && available.length > 0) {
     const flexible = available.filter((item) => FLEXIBLE_TYPES.includes(item.type))

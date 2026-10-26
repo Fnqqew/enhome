@@ -1,9 +1,9 @@
 // Escribe los bancos de ejercicios del temario con Claude (generados y revisados): npm run content:banks -- <idioma> [nivel] [tópico]
-// Completa solo los subtemas que tienen menos de lo que pide BANK_TARGET y guarda después de cada uno,
+// Completa solo los subtemas que tienen menos de lo que pide el banco y guarda después de cada uno,
 // así se puede cortar y retomar. Usa la suscripción de Claude: en un temario entero tarda horas.
 
 import { join, resolve } from 'node:path'
-import { BANK_TARGET, BANK_TYPES, type BankType } from '../src/shared/bank'
+import { bankWants, splitBankCounts, type BankType } from '../src/shared/bank'
 import { mainText } from '../src/shared/exercise-types'
 import type { GeneratedExercise, StoredExercise } from '../src/shared/exercises'
 import { LANGUAGE_IDS, type LanguageId } from '../src/shared/languages'
@@ -22,17 +22,12 @@ const CONTENT = resolve(import.meta.dirname, '..', '..', 'content')
 const PARALLEL = 3
 
 // Lo que le falta a un subtema para llegar a lo que pide el banco.
-function missing(subtopic: Subtopic, have: GeneratedExercise[]): Partial<Record<BankType, number>> {
-  const want = BANK_TYPES.filter((t) => t !== 'reading' || subtopic.focus.includes('reading'))
+function missing(topic: CurriculumTopic, subtopic: Subtopic, have: GeneratedExercise[]): Partial<Record<BankType, number>> {
   return Object.fromEntries(
-    want.map((t) => [t, BANK_TARGET[t] - have.filter((e) => e.type === t).length] as const).filter(([, n]) => n > 0)
+    (Object.entries(bankWants(subtopic, topic.level)) as [BankType, number][])
+      .map(([t, want]) => [t, want - have.filter((e) => e.type === t).length] as const)
+      .filter(([, n]) => n > 0)
   ) as Partial<Record<BankType, number>>
-}
-
-// Los cortos de una vez y la lectura aparte: así ningún pedido queda demasiado largo.
-function split(counts: Partial<Record<BankType, number>>): Partial<Record<BankType, number>>[] {
-  const { reading, ...rest } = counts
-  return [rest, reading ? { reading } : {}].filter((c) => Object.keys(c).length > 0)
 }
 
 async function fillTopic(topic: CurriculumTopic): Promise<void> {
@@ -40,11 +35,11 @@ async function fillTopic(topic: CurriculumTopic): Promise<void> {
   const bank = Object.fromEntries(readBank(path, topic).subtopics) as Record<string, GeneratedExercise[]>
   for (const subtopic of topic.subtopics) {
     const have = bank[subtopic.id] ?? []
-    const counts = missing(subtopic, have)
+    const counts = missing(topic, subtopic, have)
     if (Object.keys(counts).length === 0) continue
     const started = Date.now()
     const parts = await Promise.all(
-      split(counts).map((part) =>
+      splitBankCounts(counts).map((part) =>
         generateBankSet(
           { topic, subtopic, kind: 'lesson', counts: part, avoid: have.map((e) => mainText(e as StoredExercise)), ticket: { priority: 'now' } },
           part

@@ -6,6 +6,7 @@ import { CourseBanks, readBank } from '../../src/main/content/bank'
 import { loadCurriculum } from '../../src/main/content/curriculum'
 import { openDatabase, type Db } from '../../src/main/db/database'
 import { bankedGenerator, ExerciseBank } from '../../src/main/practice/bank'
+import { bankWants, splitBankCounts } from '../../src/shared/bank'
 import type { CurriculumTopic } from '../../src/shared/curriculum'
 import type { GeneratedExercise, StoredExercise } from '../../src/shared/exercises'
 import { fakeClaude, generatedSample } from '../helpers/exercises'
@@ -102,5 +103,28 @@ describe('banco de ejercicios', () => {
     // Un pedido para la traducción que faltaba y otro para la conversación, cada uno con solo su formato.
     expect(prompts).toHaveLength(2)
     expect(prompts.some((p) => p.includes('- translation:') && !p.includes('- dialogue:'))).toBe(true)
+  })
+})
+
+describe('qué lleva el banco de cada subtema', () => {
+  it('en A1, sin transformar ni ordenar textos, pero con pares mínimos y para escuchar y repetir', () => {
+    const wants = bankWants({ focus: ['grammar'] }, 'A1')
+    expect(wants.transformation).toBeUndefined()
+    expect(wants.reorder_text).toBeUndefined()
+    expect(wants.reading).toBeUndefined()
+    expect(wants).toMatchObject({ dictation: 4, minimal_pair: 3, shadowing: 3, listening: 2 })
+  })
+
+  it('desde A2 suma transformar, y en los días de lectura, ordenar el texto; los pares mínimos llegan hasta B1', () => {
+    expect(bankWants({ focus: ['grammar'] }, 'A2').transformation).toBe(5)
+    expect(bankWants({ focus: ['reading'] }, 'B1')).toMatchObject({ reading: 2, reorder_text: 2, minimal_pair: 3 })
+    expect(bankWants({ focus: ['reading'] }, 'B2').minimal_pair).toBeUndefined()
+  })
+
+  it('se escribe en pedidos chicos, uno por grupo de formatos', () => {
+    const parts = splitBankCounts(bankWants({ focus: ['reading'] }, 'B1'))
+    expect(parts).toHaveLength(3)
+    expect(Object.keys(parts[0])).toEqual(['multiple_choice', 'fill_blank', 'word_order', 'error_correction', 'translation'])
+    expect(splitBankCounts({ dictation: 2 })).toEqual([{ dictation: 2 }])
   })
 })

@@ -1,0 +1,2822 @@
+{
+  "subtopics": {
+    "was-were": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de was o were.",
+        "prompt": "Last week, Daniela ___ at a job interview in Rosario.",
+        "options": [
+          "was",
+          "be",
+          "is",
+          "were"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con sujetos singulares como Daniela se usa was en pasado simple de to be.",
+        "optionNotes": [
+          "Correcto: con sujetos singulares como Daniela se usa was.",
+          "Incorrecto: be es la forma base del verbo, no el pasado.",
+          "Incorrecto: is es presente, no pasado.",
+          "Incorrecto: were se usa con you, we, they, no con un sujeto singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de was o were.",
+        "prompt": "We ___ very happy with the hotel in Bariloche last winter.",
+        "options": [
+          "is",
+          "are",
+          "were",
+          "was"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con we se usa were en pasado simple de to be.",
+        "optionNotes": [
+          "Incorrecto: is es presente, no pasado.",
+          "Incorrecto: are es presente, no pasado.",
+          "Correcto: were es la forma correcta para we en pasado.",
+          "Incorrecto: was se usa con I, he, she, it, no con we."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de was o were.",
+        "prompt": "Mariano ___ at work yesterday because he was sick.",
+        "options": [
+          "weren't",
+          "didn't was",
+          "wasn't",
+          "not was"
+        ],
+        "correctIndex": 2,
+        "explanation": "La forma negativa de was es wasn't, usada con sujetos singulares como Mariano.",
+        "optionNotes": [
+          "Incorrecto: weren't se usa con you, we, they, no con Mariano.",
+          "Incorrecto: no se combina didn't con was.",
+          "Correcto: wasn't es la negación de was, usada con sujetos singulares.",
+          "Incorrecto: el orden correcto es wasn't, no not was."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de was o were.",
+        "prompt": "___ you at the doctor's office this morning?",
+        "options": [
+          "Did",
+          "Were",
+          "Was",
+          "Are"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con you se usa were, incluso en preguntas de pasado.",
+        "optionNotes": [
+          "Incorrecto: did se usa con verbos de acción, no con to be en pasado.",
+          "Correcto: were es la forma correcta para you en preguntas de pasado.",
+          "Incorrecto: was no se usa con you.",
+          "Incorrecto: are es presente, no pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de was o were.",
+        "prompt": "They ___ at the airport two hours ago.",
+        "options": [
+          "are",
+          "is",
+          "was",
+          "were"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con they se usa were en pasado simple de to be.",
+        "optionNotes": [
+          "Incorrecto: are es presente, no pasado.",
+          "Incorrecto: is es presente, no pasado.",
+          "Incorrecto: was no se usa con they.",
+          "Correcto: were es la forma correcta para they en pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de was o were.",
+        "prompt": "___ your parents at home last night?",
+        "options": [
+          "Were",
+          "Did",
+          "Are",
+          "Was"
+        ],
+        "correctIndex": 0,
+        "explanation": "Your parents es un sujeto plural, por eso se usa were en la pregunta.",
+        "optionNotes": [
+          "Correcto: were se usa con sujetos plurales como your parents.",
+          "Incorrecto: did se usa con verbos de acción, no con to be.",
+          "Incorrecto: are es presente, no pasado.",
+          "Incorrecto: was se usa con sujetos singulares, no con parents (plural)."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con was o were.",
+        "sentence": "Valentina ___ nervous before the interview, but she felt better after it started.",
+        "hint": "(estar - pasado)",
+        "answers": [
+          "was"
+        ],
+        "explanation": "Con sujetos singulares como Valentina se usa was en pasado simple de to be.",
+        "wrongAnswers": [
+          {
+            "answer": "were",
+            "why": "Were no se usa con sujetos singulares como Valentina."
+          },
+          {
+            "answer": "is",
+            "why": "Is es presente, no corresponde al pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con was o were.",
+        "sentence": "We ___ at the hospital all afternoon because my dad had a check-up.",
+        "hint": "(estar - pasado)",
+        "answers": [
+          "were"
+        ],
+        "explanation": "Con we siempre se usa were en pasado simple de to be.",
+        "wrongAnswers": [
+          {
+            "answer": "was",
+            "why": "Was no se usa con we; corresponde were."
+          },
+          {
+            "answer": "are",
+            "why": "Are es presente, no pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa correcta.",
+        "sentence": "The tenants ___ happy with the apartment because there was a leak in the kitchen.",
+        "hint": "(negativo)",
+        "answers": [
+          "weren't",
+          "were not"
+        ],
+        "explanation": "La negación de were es weren't, usada con sujetos plurales como tenants.",
+        "wrongAnswers": [
+          {
+            "answer": "wasn't",
+            "why": "Wasn't no se usa con tenants, que es un sujeto plural; corresponde weren't."
+          },
+          {
+            "answer": "didn't were",
+            "why": "No se combina didn't con were en inglés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con was o were.",
+        "sentence": "___ you at home yesterday afternoon? I called you three times.",
+        "hint": "(pregunta)",
+        "answers": [
+          "Were"
+        ],
+        "explanation": "Con you siempre se usa were, tanto en afirmativo como en preguntas.",
+        "wrongAnswers": [
+          {
+            "answer": "Was",
+            "why": "Was no se usa con you; corresponde were."
+          },
+          {
+            "answer": "Did",
+            "why": "Did se usa con verbos de acción, no con to be en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con was o were.",
+        "sentence": "Two days ago, Martín ___ very tired after the trip to Mendoza.",
+        "hint": "(estar - pasado)",
+        "answers": [
+          "was"
+        ],
+        "explanation": "Con sujetos singulares como Martín se usa was en pasado simple de to be.",
+        "wrongAnswers": [
+          {
+            "answer": "were",
+            "why": "Were no se usa con un sujeto singular como Martín; corresponde was."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa correcta.",
+        "sentence": "I ___ at the meeting last Monday because I had a doctor's appointment.",
+        "hint": "(negativo)",
+        "answers": [
+          "wasn't",
+          "was not"
+        ],
+        "explanation": "La negación de was es wasn't, usada con I, he, she e it.",
+        "wrongAnswers": [
+          {
+            "answer": "weren't",
+            "why": "Weren't no se usa con I; corresponde wasn't."
+          },
+          {
+            "answer": "didn't was",
+            "why": "No se combina didn't con was en inglés."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Was Lucas at the job interview yesterday?",
+        "alternatives": [],
+        "translation": "¿Estuvo Lucas en la entrevista de trabajo ayer?",
+        "explanation": "En preguntas con un sujeto singular como Lucas, was va antes del sujeto.",
+        "tokens": [
+          "the",
+          "Lucas",
+          "interview",
+          "at",
+          "Was",
+          "job",
+          "yesterday"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We weren't at home last night.",
+        "alternatives": [],
+        "translation": "No estuvimos en casa anoche.",
+        "explanation": "La negación de were es weren't, usada con we.",
+        "tokens": [
+          "night",
+          "at",
+          "We",
+          "weren't",
+          "home",
+          "last"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The landlord was very friendly during the visit.",
+        "alternatives": [],
+        "translation": "El propietario fue muy amable durante la visita.",
+        "explanation": "The landlord es un sujeto singular, por eso se usa was.",
+        "tokens": [
+          "The",
+          "the",
+          "landlord",
+          "friendly",
+          "visit",
+          "was",
+          "during",
+          "very"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Were your parents worried about the trip?",
+        "alternatives": [],
+        "translation": "¿Estaban preocupados tus padres por el viaje?",
+        "explanation": "Your parents es plural, por eso la pregunta usa were.",
+        "tokens": [
+          "about",
+          "the",
+          "worried",
+          "trip",
+          "Were",
+          "your",
+          "parents"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I wasn't ready for the English exam.",
+        "alternatives": [],
+        "translation": "No estaba listo/a para el examen de inglés.",
+        "explanation": "La negación de was es wasn't, usada con el sujeto I.",
+        "tokens": [
+          "English",
+          "wasn't",
+          "the",
+          "for",
+          "I",
+          "ready",
+          "exam"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con was/were.",
+        "sentence": "They was at the hotel in Bariloche last week.",
+        "answers": [
+          "They were at the hotel in Bariloche last week."
+        ],
+        "explanation": "Con they se usa were, no was, en pasado simple de to be.",
+        "wrongAnswers": [
+          {
+            "answer": "They was in the hotel in Bariloche last week.",
+            "why": "El error no es la preposición, sino que was debe ser were porque el sujeto es they."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con was/were.",
+        "sentence": "She were very nervous before the interview.",
+        "answers": [
+          "She was very nervous before the interview."
+        ],
+        "explanation": "Con she se usa was, no were, en pasado simple de to be.",
+        "wrongAnswers": [
+          {
+            "answer": "She were very nervous before the interviews.",
+            "why": "El error no es interview, sino que were debe ser was porque el sujeto es she."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con was/were.",
+        "sentence": "We wasn't at the party last Saturday.",
+        "answers": [
+          "We weren't at the party last Saturday."
+        ],
+        "explanation": "Con we se usa la negación weren't, no wasn't.",
+        "wrongAnswers": [
+          {
+            "answer": "We wasn't at the parties last Saturday.",
+            "why": "El error no es party, sino que wasn't debe ser weren't porque el sujeto es we."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con was/were.",
+        "sentence": "Was you at the doctor's office this morning?",
+        "answers": [
+          "Were you at the doctor's office this morning?"
+        ],
+        "explanation": "Con you se usa were, no was, incluso en preguntas.",
+        "wrongAnswers": [
+          {
+            "answer": "Was you at the doctor's offices this morning?",
+            "why": "El error no es office, sino que was debe ser were porque el sujeto es you."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con was/were.",
+        "sentence": "My parents was worried about the trip.",
+        "answers": [
+          "My parents were worried about the trip."
+        ],
+        "explanation": "My parents es un sujeto plural, por eso corresponde were y no was.",
+        "wrongAnswers": [
+          {
+            "answer": "My parent was worried about the trip.",
+            "why": "El error no es el sustantivo parents, sino que was debe ser were porque el sujeto es plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando was o were.",
+        "spanish": "¿Dónde estuviste anoche?",
+        "answers": [
+          "Where were you last night?"
+        ],
+        "explanation": "En preguntas con you siempre se usa were, nunca was.",
+        "wrongAnswers": [
+          {
+            "answer": "Where was you last night?",
+            "why": "Con you se usa were, no was."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando was o were.",
+        "spanish": "No estuvimos en la fiesta de cumpleaños.",
+        "answers": [
+          "We weren't at the birthday party.",
+          "We were not at the birthday party."
+        ],
+        "explanation": "La negación de were es weren't, usada con el sujeto we.",
+        "wrongAnswers": [
+          {
+            "answer": "We wasn't at the birthday party.",
+            "why": "Wasn't no se usa con we; corresponde weren't."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando was o were.",
+        "spanish": "Mi jefe estaba muy ocupado la semana pasada.",
+        "answers": [
+          "My boss was very busy last week."
+        ],
+        "explanation": "Con sujetos singulares como my boss se usa was, no were.",
+        "wrongAnswers": [
+          {
+            "answer": "My boss were very busy last week.",
+            "why": "Were no se usa con un sujeto singular como my boss; corresponde was."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando was o were.",
+        "spanish": "¿Estuvieron ustedes en el médico ayer?",
+        "answers": [
+          "Were you at the doctor's yesterday?",
+          "Were you at the doctor yesterday?"
+        ],
+        "explanation": "Con you siempre se usa were en pasado simple de to be.",
+        "wrongAnswers": [
+          {
+            "answer": "Was you at the doctor's yesterday?",
+            "why": "Con you se usa were, no was, incluso en preguntas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando was o were.",
+        "spanish": "Los inquilinos no estaban contentos con el departamento.",
+        "answers": [
+          "The tenants weren't happy with the apartment.",
+          "The tenants were not happy with the apartment."
+        ],
+        "explanation": "The tenants es un sujeto plural, por eso se usa la negación weren't.",
+        "wrongAnswers": [
+          {
+            "answer": "The tenants wasn't happy with the apartment.",
+            "why": "Wasn't no se usa con tenants, que es plural; corresponde weren't."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando was o were.",
+        "spanish": "Yo no estaba listo para la entrevista.",
+        "answers": [
+          "I wasn't ready for the interview.",
+          "I was not ready for the interview."
+        ],
+        "explanation": "Con el sujeto I se usa la negación wasn't, no weren't.",
+        "wrongAnswers": [
+          {
+            "answer": "I weren't ready for the interview.",
+            "why": "Weren't no se usa con I; corresponde wasn't."
+          }
+        ]
+      }
+    ],
+    "regulares": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del pasado según la regla de ortografía.",
+        "prompt": "Last night, Marcos ___ a documentary about space.",
+        "options": [
+          "watched",
+          "watchied",
+          "watching",
+          "watchs"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Watch' termina en consonante y no sigue las reglas especiales, así que solo se agrega '-ed': watched.",
+        "optionNotes": [
+          "Correcto: se agrega '-ed' sin cambios en el verbo.",
+          "Incorrecto: no corresponde agregar 'i' antes de '-ed' en este verbo.",
+          "Incorrecto: es la forma -ing, no el pasado simple.",
+          "Incorrecto: no existe esa terminación para el pasado; no se agrega '-s'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del pasado según la regla de ortografía.",
+        "prompt": "Sofía ___ in Córdoba for five years before moving to Buenos Aires.",
+        "options": [
+          "studies",
+          "studyed",
+          "studied",
+          "studed"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Study' termina en consonante + y, así que la 'y' cambia a 'i' antes de agregar '-ed': studied.",
+        "optionNotes": [
+          "Incorrecto: es la forma del presente para 'he/she/it', no el pasado.",
+          "Incorrecto: con consonante + y, la 'y' cambia a 'i'; no se escribe 'studyed'.",
+          "Correcto: la 'y' cambia a 'i' y se agrega '-ed'.",
+          "Incorrecto: falta la 'i' antes de '-ed'; es un error de ortografía."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del pasado según la regla de ortografía.",
+        "prompt": "We ___ at a small hotel near the beach.",
+        "options": [
+          "stied",
+          "staied",
+          "stayed",
+          "stayied"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Stay' termina en vocal + y, así que la 'y' no cambia: solo se agrega '-ed': stayed.",
+        "optionNotes": [
+          "Incorrecto: no corresponde eliminar la 'y' del verbo.",
+          "Incorrecto: la 'y' no cambia a 'i' cuando va después de una vocal.",
+          "Correcto: con vocal + y, la 'y' no cambia y se agrega '-ed'.",
+          "Incorrecto: no corresponde agregar una 'i' extra."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del pasado según la regla de ortografía.",
+        "prompt": "The car ___ suddenly on the highway.",
+        "options": [
+          "stoped",
+          "stopeed",
+          "stopped",
+          "stopd"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Stop' es una sílaba consonante-vocal-consonante, así que se duplica la consonante final antes de agregar '-ed': stopped.",
+        "optionNotes": [
+          "Incorrecto: falta duplicar la consonante final 'p'.",
+          "Incorrecto: no corresponde agregar una 'e' extra.",
+          "Correcto: se duplica la 'p' antes de agregar '-ed'.",
+          "Incorrecto: falta la vocal 'e' antes de la 'd' final."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del pasado según la regla de ortografía.",
+        "prompt": "Lucas ___ his resume before the interview.",
+        "options": [
+          "prepared",
+          "preparied",
+          "preparred",
+          "prepareed"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Prepare' ya termina en 'e', así que solo se agrega 'd': prepared.",
+        "optionNotes": [
+          "Correcto: como el verbo termina en 'e', solo se agrega 'd'.",
+          "Incorrecto: no corresponde agregar una 'i' en este verbo.",
+          "Incorrecto: no corresponde duplicar la consonante 'r' en este verbo.",
+          "Incorrecto: no se agrega '-ed' completo cuando el verbo ya termina en 'e'; solo se agrega 'd'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del pasado según la regla de ortografía.",
+        "prompt": "The nurse ___ my blood pressure twice.",
+        "options": [
+          "checkted",
+          "checkied",
+          "checkes",
+          "checked"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Check' no sigue ninguna regla especial, así que solo se agrega '-ed': checked.",
+        "optionNotes": [
+          "Incorrecto: no corresponde agregar una 't' extra.",
+          "Incorrecto: no corresponde agregar una 'i' en este verbo.",
+          "Incorrecto: no existe esa terminación para el pasado simple.",
+          "Correcto: se agrega '-ed' sin cambios en el verbo."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pasado del verbo indicado.",
+        "sentence": "Yesterday, Pablo ___ until 9 p.m. at the office.",
+        "hint": "(trabajar - work)",
+        "answers": [
+          "worked"
+        ],
+        "explanation": "'Work' no sigue reglas especiales, así que solo se agrega '-ed': worked.",
+        "wrongAnswers": [
+          {
+            "answer": "work",
+            "why": "Falta el '-ed' para formar el pasado simple."
+          },
+          {
+            "answer": "workes",
+            "why": "La terminación correcta es '-ed', no '-es'."
+          },
+          {
+            "answer": "workded",
+            "why": "No se duplica la terminación; solo se agrega '-ed' una vez."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pasado del verbo indicado.",
+        "sentence": "Camila ___ English at a language institute in 2019.",
+        "hint": "(estudiar - study)",
+        "answers": [
+          "studied"
+        ],
+        "explanation": "'Study' termina en consonante + y, así que la 'y' cambia a 'i': studied.",
+        "wrongAnswers": [
+          {
+            "answer": "studyed",
+            "why": "Con consonante + y, la 'y' cambia a 'i' antes de agregar '-ed'."
+          },
+          {
+            "answer": "studys",
+            "why": "Esa no es una forma de pasado simple."
+          },
+          {
+            "answer": "studed",
+            "why": "Falta la 'i'; es un error de ortografía."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pasado del verbo indicado.",
+        "sentence": "They ___ at a cheap hostel during their trip to Bariloche.",
+        "hint": "(quedarse - stay)",
+        "answers": [
+          "stayed"
+        ],
+        "explanation": "'Stay' termina en vocal + y, así que solo se agrega '-ed': stayed.",
+        "wrongAnswers": [
+          {
+            "answer": "staied",
+            "why": "Con vocal + y, la 'y' no cambia a 'i'; se agrega '-ed' directamente."
+          },
+          {
+            "answer": "stayied",
+            "why": "No corresponde agregar una 'i' extra; la ortografía es incorrecta."
+          },
+          {
+            "answer": "stay",
+            "why": "Falta el '-ed' para formar el pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pasado del verbo indicado.",
+        "sentence": "The bus ___ suddenly in the middle of the street.",
+        "hint": "(parar - stop)",
+        "answers": [
+          "stopped"
+        ],
+        "explanation": "'Stop' es consonante-vocal-consonante, así que se duplica la 'p' antes de agregar '-ed': stopped.",
+        "wrongAnswers": [
+          {
+            "answer": "stoped",
+            "why": "Se debe duplicar la consonante final porque es una sílaba consonante-vocal-consonante."
+          },
+          {
+            "answer": "stopeed",
+            "why": "No corresponde agregar una 'e' extra; la ortografía es incorrecta."
+          },
+          {
+            "answer": "stop",
+            "why": "Falta el '-ed' para formar el pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pasado del verbo indicado.",
+        "sentence": "My brother ___ to visit the doctor because of his headache.",
+        "hint": "(querer - want)",
+        "answers": [
+          "wanted"
+        ],
+        "explanation": "'Want' termina en 't', así que solo se agrega '-ed': wanted (se pronuncia /ɪd/).",
+        "wrongAnswers": [
+          {
+            "answer": "wantted",
+            "why": "No se duplica la 't' final; solo se agrega '-ed'."
+          },
+          {
+            "answer": "want",
+            "why": "Falta el '-ed' para formar el pasado simple."
+          },
+          {
+            "answer": "wantied",
+            "why": "No corresponde agregar una 'i'; la ortografía es incorrecta."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pasado del verbo indicado.",
+        "sentence": "Lucía ___ a new passport before the trip.",
+        "hint": "(necesitar - need)",
+        "answers": [
+          "needed"
+        ],
+        "explanation": "'Need' termina en 'd', así que solo se agrega '-ed': needed (se pronuncia /ɪd/).",
+        "wrongAnswers": [
+          {
+            "answer": "need",
+            "why": "Falta el '-ed' para formar el pasado simple."
+          },
+          {
+            "answer": "needded",
+            "why": "No se duplica la 'd' final; solo se agrega '-ed'."
+          },
+          {
+            "answer": "needied",
+            "why": "No corresponde agregar una 'i'; la ortografía es incorrecta."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I watched a movie with my sister last night.",
+        "alternatives": [],
+        "translation": "Anoche vi una película con mi hermana.",
+        "explanation": "'Watch' solo agrega '-ed' para formar el pasado: watched.",
+        "tokens": [
+          "last",
+          "a",
+          "with",
+          "movie",
+          "my",
+          "sister",
+          "watched",
+          "night",
+          "I"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She studied medicine at a university in Rosario.",
+        "alternatives": [],
+        "translation": "Ella estudió medicina en una universidad en Rosario.",
+        "explanation": "'Study' termina en consonante + y, así que la 'y' cambia a 'i': studied.",
+        "tokens": [
+          "university",
+          "in",
+          "She",
+          "Rosario",
+          "at",
+          "a",
+          "medicine",
+          "studied"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We stopped at a gas station near the highway.",
+        "alternatives": [],
+        "translation": "Paramos en una estación de servicio cerca de la autopista.",
+        "explanation": "'Stop' duplica la consonante final antes de agregar '-ed': stopped.",
+        "tokens": [
+          "highway",
+          "gas",
+          "a",
+          "the",
+          "near",
+          "We",
+          "station",
+          "stopped",
+          "at"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "He prepared his resume before the interview yesterday.",
+        "alternatives": [
+          "He prepared his resume yesterday before the interview."
+        ],
+        "translation": "Él preparó su currículum antes de la entrevista ayer.",
+        "explanation": "'Prepare' ya termina en 'e', así que solo se agrega 'd': prepared; los dos complementos finales pueden intercambiar su orden.",
+        "tokens": [
+          "resume",
+          "interview",
+          "prepared",
+          "his",
+          "He",
+          "yesterday",
+          "before",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The nurse checked my blood pressure this morning.",
+        "alternatives": [],
+        "translation": "La enfermera me controló la presión esta mañana.",
+        "explanation": "'Check' solo agrega '-ed' para formar el pasado: checked.",
+        "tokens": [
+          "checked",
+          "blood",
+          "this",
+          "The",
+          "nurse",
+          "pressure",
+          "morning",
+          "my"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error de ortografía en el verbo en pasado.",
+        "sentence": "I studyed a lot for the exam.",
+        "answers": [
+          "I studied a lot for the exam."
+        ],
+        "explanation": "Con consonante + y, la 'y' cambia a 'i' antes de agregar '-ed': studied.",
+        "wrongAnswers": [
+          {
+            "answer": "I studyed a lot for the exams.",
+            "why": "Cambia 'exam' a plural en lugar de corregir 'studyed', que es el error real de ortografía."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error de ortografía en el verbo en pasado.",
+        "sentence": "We stoped at a small restaurant for lunch.",
+        "answers": [
+          "We stopped at a small restaurant for lunch."
+        ],
+        "explanation": "'Stop' es consonante-vocal-consonante, así que se duplica la 'p': stopped.",
+        "wrongAnswers": [
+          {
+            "answer": "We stoped at a small restaurants for lunch.",
+            "why": "Cambia 'restaurant' a plural en lugar de corregir 'stoped', que necesita duplicar la consonante final."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error de ortografía en el verbo en pasado.",
+        "sentence": "She liveed in Mendoza for two years.",
+        "answers": [
+          "She lived in Mendoza for two years."
+        ],
+        "explanation": "'Live' ya termina en 'e', así que solo se agrega 'd': lived.",
+        "wrongAnswers": [
+          {
+            "answer": "She liveed in Mendozas for two years.",
+            "why": "Agrega una 's' incorrecta a 'Mendoza' en lugar de corregir 'liveed', que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error de ortografía en el verbo en pasado.",
+        "sentence": "He carryed the boxes to the new apartment.",
+        "answers": [
+          "He carried the boxes to the new apartment."
+        ],
+        "explanation": "Con consonante + y, la 'y' cambia a 'i' antes de agregar '-ed': carried.",
+        "wrongAnswers": [
+          {
+            "answer": "He carryed the box to the new apartment.",
+            "why": "Cambia 'boxes' a singular en lugar de corregir 'carryed', que necesita cambiar la 'y' por 'i'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error de ortografía en el verbo en pasado.",
+        "sentence": "They playied soccer every weekend last summer.",
+        "answers": [
+          "They played soccer every weekend last summer."
+        ],
+        "explanation": "'Play' termina en vocal + y, así que la 'y' no cambia: played.",
+        "wrongAnswers": [
+          {
+            "answer": "They playied soccer every weekends last summer.",
+            "why": "Cambia 'weekend' a plural en lugar de corregir 'playied', que no debe tener una 'i' extra."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Anoche miré una película en casa de mi amigo.",
+        "answers": [
+          "Last night I watched a movie at my friend's house.",
+          "I watched a movie at my friend's house last night."
+        ],
+        "explanation": "'Watch' solo agrega '-ed' para formar el pasado: watched.",
+        "wrongAnswers": [
+          {
+            "answer": "Last night I watch a movie at my friend's house.",
+            "why": "Falta el '-ed'; se usa el presente en lugar del pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella estudió enfermería en Córdoba.",
+        "answers": [
+          "She studied nursing in Córdoba."
+        ],
+        "explanation": "'Study' cambia la 'y' por 'i' antes de agregar '-ed': studied.",
+        "wrongAnswers": [
+          {
+            "answer": "She studyed nursing in Córdoba.",
+            "why": "Con consonante + y, la 'y' cambia a 'i' antes de '-ed'; no se escribe 'studyed'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Paramos en una estación de servicio antes del viaje.",
+        "answers": [
+          "We stopped at a gas station before the trip."
+        ],
+        "explanation": "'Stop' duplica la 'p' antes de agregar '-ed': stopped.",
+        "wrongAnswers": [
+          {
+            "answer": "We stoped at a gas station before the trip.",
+            "why": "Falta duplicar la consonante final; 'stop' es una sílaba consonante-vocal-consonante."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico me revisó la presión ayer.",
+        "answers": [
+          "The doctor checked my blood pressure yesterday."
+        ],
+        "explanation": "'Check' solo agrega '-ed' para formar el pasado: checked.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor check my blood pressure yesterday.",
+            "why": "Falta el '-ed'; se usa el presente en lugar del pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Preparé mi currículum antes de la entrevista.",
+        "answers": [
+          "I prepared my resume before the interview."
+        ],
+        "explanation": "'Prepare' ya termina en 'e', así que solo se agrega 'd': prepared.",
+        "wrongAnswers": [
+          {
+            "answer": "I prepareed my resume before the interview.",
+            "why": "Ortografía incorrecta: los verbos terminados en 'e' solo agregan 'd', no '-ed' completo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Necesité un médico porque mi hijo tenía fiebre.",
+        "answers": [
+          "I needed a doctor because my son had a fever."
+        ],
+        "explanation": "'Need' termina en 'd', así que solo se agrega '-ed': needed.",
+        "wrongAnswers": [
+          {
+            "answer": "I need a doctor because my son had a fever.",
+            "why": "Falta el '-ed'; se necesita el pasado 'needed', no el presente 'need'."
+          }
+        ]
+      }
+    ],
+    "irregulares": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado simple.",
+        "prompt": "Martín ___ to Mendoza last weekend for a job interview.",
+        "options": [
+          "gone",
+          "went",
+          "go",
+          "goed"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Go' es un verbo irregular y su pasado simple es 'went', no sigue la regla -ed.",
+        "optionNotes": [
+          "Incorrecto: 'gone' es el participio pasado, se usa con 'have', no solo en pasado simple.",
+          "Correcto: 'went' es el pasado simple irregular de 'go'.",
+          "Incorrecto: 'go' es presente, pero la oración necesita pasado.",
+          "Incorrecto: 'goed' no existe, 'go' no es regular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado simple.",
+        "prompt": "He ___ a great breakfast at the hotel before the interview.",
+        "options": [
+          "haved",
+          "had",
+          "have",
+          "has"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Have' es irregular y su pasado simple es 'had', igual para todas las personas.",
+        "optionNotes": [
+          "Incorrecto: 'haved' no existe, 'have' no sigue la regla -ed.",
+          "Correcto: 'had' es el pasado simple irregular de 'have'.",
+          "Incorrecto: 'have' es presente, no corresponde al pasado.",
+          "Incorrecto: 'has' es presente para tercera persona, tampoco es pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado simple.",
+        "prompt": "The company ___ him a great job offer the next day.",
+        "options": [
+          "makes",
+          "make",
+          "made",
+          "maked"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Make' es irregular y su pasado simple es 'made' para todas las personas.",
+        "optionNotes": [
+          "Incorrecto: 'makes' es presente de tercera persona, no es pasado.",
+          "Incorrecto: 'make' es presente, no sirve para una acción pasada.",
+          "Correcto: 'made' es el pasado irregular de 'make'.",
+          "Incorrecto: 'maked' no existe, 'make' no es regular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado simple.",
+        "prompt": "Sofía ___ her brother at the airport yesterday.",
+        "options": [
+          "sawed",
+          "saw",
+          "seen",
+          "see"
+        ],
+        "correctIndex": 1,
+        "explanation": "'See' es irregular y su pasado simple es 'saw'; 'seen' es el participio y se usa con 'have'.",
+        "optionNotes": [
+          "Incorrecto: 'sawed' no existe, 'see' no sigue la regla -ed.",
+          "Correcto: 'saw' es el pasado simple irregular de 'see'.",
+          "Incorrecto: 'seen' es el participio, necesita un auxiliar como 'have'.",
+          "Incorrecto: 'see' es presente, no corresponde a 'yesterday'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado simple.",
+        "prompt": "We ___ a taxi to the clinic because Martín felt sick.",
+        "options": [
+          "took",
+          "takes",
+          "taked",
+          "take"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Take' es irregular y su pasado simple es 'took', igual para todas las personas.",
+        "optionNotes": [
+          "Correcto: 'took' es el pasado irregular de 'take'.",
+          "Incorrecto: 'takes' es presente de tercera persona, no es pasado.",
+          "Incorrecto: 'taked' no existe, 'take' no es regular.",
+          "Incorrecto: 'take' es presente, no corresponde al contexto pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en pasado simple.",
+        "prompt": "I ___ a new suitcase for the trip to Mendoza.",
+        "options": [
+          "buyed",
+          "bought",
+          "buy",
+          "buys"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Buy' es irregular y su pasado simple es 'bought', no 'buyed'.",
+        "optionNotes": [
+          "Incorrecto: 'buyed' no existe, 'buy' no sigue la regla -ed.",
+          "Correcto: 'bought' es el pasado irregular de 'buy'.",
+          "Incorrecto: 'buy' es presente, no corresponde al pasado.",
+          "Incorrecto: 'buys' es presente de tercera persona, no es pasado."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pasado simple del verbo entre paréntesis.",
+        "sentence": "Martín ___ a lot of paperwork at the rental agency.",
+        "hint": "(do)",
+        "answers": [
+          "did"
+        ],
+        "explanation": "El pasado simple de 'do' es 'did', y se usa igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "doed",
+            "why": "'Do' es irregular; su pasado simple es 'did', no sigue la regla -ed."
+          },
+          {
+            "answer": "done",
+            "why": "'Done' es el participio pasado, se usa con 'have', no como pasado simple solo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pasado simple del verbo entre paréntesis.",
+        "sentence": "Sofía ___ empanadas for lunch with her colleagues.",
+        "hint": "(eat)",
+        "answers": [
+          "ate"
+        ],
+        "explanation": "El pasado simple de 'eat' es 'ate', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "eated",
+            "why": "'Eat' es irregular; su pasado simple es 'ate', no 'eated'."
+          },
+          {
+            "answer": "eaten",
+            "why": "'Eaten' es el participio pasado, necesita un auxiliar como 'have'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pasado simple del verbo entre paréntesis.",
+        "sentence": "They ___ to Buenos Aires last Friday for the conference.",
+        "hint": "(come)",
+        "answers": [
+          "came"
+        ],
+        "explanation": "El pasado simple de 'come' es 'came', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "comed",
+            "why": "'Come' es irregular; su pasado simple es 'came', no 'comed'."
+          },
+          {
+            "answer": "come",
+            "why": "'Come' sin cambios es la forma base; en pasado se necesita 'came'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pasado simple del verbo entre paréntesis.",
+        "sentence": "The doctor ___ the test results quickly.",
+        "hint": "(get)",
+        "answers": [
+          "got"
+        ],
+        "explanation": "El pasado simple de 'get' es 'got', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "getted",
+            "why": "'Get' es irregular; su pasado simple es 'got', no 'getted'."
+          },
+          {
+            "answer": "get",
+            "why": "'Get' es presente; la oración describe una acción pasada."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pasado simple del verbo entre paréntesis.",
+        "sentence": "Martín ___ the bus to the new apartment.",
+        "hint": "(take)",
+        "answers": [
+          "took"
+        ],
+        "explanation": "El pasado simple de 'take' es 'took', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "taked",
+            "why": "'Take' es irregular; su pasado simple es 'took', no 'taked'."
+          },
+          {
+            "answer": "take",
+            "why": "'Take' es presente; la oración necesita el pasado 'took'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pasado simple del verbo entre paréntesis.",
+        "sentence": "We ___ a long conversation about the rental contract.",
+        "hint": "(have)",
+        "answers": [
+          "had"
+        ],
+        "explanation": "El pasado simple de 'have' es 'had', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "haved",
+            "why": "'Have' es irregular; su pasado simple es 'had', no 'haved'."
+          },
+          {
+            "answer": "have",
+            "why": "'Have' es presente; la oración describe algo que ya pasó."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en pasado simple.",
+        "sentence": "Martín went to Mendoza last weekend.",
+        "alternatives": [
+          "Last weekend, Martín went to Mendoza."
+        ],
+        "translation": "Martín fue a Mendoza el fin de semana pasado.",
+        "explanation": "El pasado simple de 'go' es 'went' y los marcadores de tiempo como 'last weekend' pueden ir al final o al principio de la oración.",
+        "tokens": [
+          "to",
+          "Mendoza",
+          "weekend",
+          "last",
+          "went",
+          "Martín"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en pasado simple.",
+        "sentence": "He had a big breakfast before the interview.",
+        "alternatives": [
+          "Before the interview, he had a big breakfast."
+        ],
+        "translation": "Él tomó un desayuno grande antes de la entrevista.",
+        "explanation": "El pasado simple de 'have' es 'had', y no cambia según la persona; la frase de tiempo 'before the interview' puede ir al final o al principio de la oración.",
+        "tokens": [
+          "before",
+          "had",
+          "interview",
+          "a",
+          "He",
+          "breakfast",
+          "the",
+          "big"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en pasado simple.",
+        "sentence": "The company made him a great job offer.",
+        "alternatives": [],
+        "translation": "La empresa le hizo una gran oferta de trabajo.",
+        "explanation": "El pasado simple de 'make' es 'made', igual para todas las personas.",
+        "tokens": [
+          "a",
+          "him",
+          "made",
+          "company",
+          "great",
+          "job",
+          "The",
+          "offer"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en pasado simple.",
+        "sentence": "Sofía saw her brother at the airport.",
+        "alternatives": [],
+        "translation": "Sofía vio a su hermano en el aeropuerto.",
+        "explanation": "El pasado simple de 'see' es 'saw', no se usa 'seen' sin auxiliar.",
+        "tokens": [
+          "saw",
+          "the",
+          "brother",
+          "at",
+          "Sofía",
+          "airport",
+          "her"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en pasado simple.",
+        "sentence": "We took a taxi to the clinic quickly.",
+        "alternatives": [],
+        "translation": "Tomamos un taxi a la clínica rápidamente.",
+        "explanation": "El pasado simple de 'take' es 'took', igual para todas las personas.",
+        "tokens": [
+          "to",
+          "took",
+          "taxi",
+          "the",
+          "We",
+          "clinic",
+          "quickly",
+          "a"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo en pasado simple.",
+        "sentence": "Martín goed to the interview by bus.",
+        "answers": [
+          "Martín went to the interview by bus."
+        ],
+        "explanation": "'Go' es irregular y su pasado simple es 'went', no 'goed'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín goes to the interview by bus.",
+            "why": "Cambia el verbo a presente, pero la oración debe quedar en pasado simple."
+          },
+          {
+            "answer": "Martín gone to the interview by bus.",
+            "why": "'Gone' es el participio pasado y necesita un auxiliar como 'has', no se usa solo en pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo en pasado simple.",
+        "sentence": "Sofía buyed a new laptop last week.",
+        "answers": [
+          "Sofía bought a new laptop last week."
+        ],
+        "explanation": "'Buy' es irregular y su pasado simple es 'bought', no 'buyed'.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía buys a new laptop last week.",
+            "why": "Queda en presente, pero 'last week' indica que la acción fue en el pasado."
+          },
+          {
+            "answer": "Sofía has buyed a new laptop last week.",
+            "why": "Agrega un auxiliar innecesario y mantiene el verbo mal formado; el pasado simple de 'buy' es 'bought'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo en pasado simple.",
+        "sentence": "The doctor seen Martín yesterday morning.",
+        "answers": [
+          "The doctor saw Martín yesterday morning."
+        ],
+        "explanation": "'See' es irregular; su pasado simple es 'saw', mientras que 'seen' es el participio y necesita un auxiliar.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor sees Martín yesterday morning.",
+            "why": "Queda en presente, pero 'yesterday morning' necesita pasado simple."
+          },
+          {
+            "answer": "The doctor has seen Martín yesterday morning.",
+            "why": "El present perfect no se combina con marcadores de pasado específico como 'yesterday morning'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo en pasado simple.",
+        "sentence": "We eated lunch at a nice restaurant in Mendoza.",
+        "answers": [
+          "We ate lunch at a nice restaurant in Mendoza."
+        ],
+        "explanation": "'Eat' es irregular y su pasado simple es 'ate', no 'eated'.",
+        "wrongAnswers": [
+          {
+            "answer": "We eat lunch at a nice restaurant in Mendoza.",
+            "why": "Queda en presente, pero la oración describe una acción pasada."
+          },
+          {
+            "answer": "We have eaten lunch at a nice restaurant in Mendoza.",
+            "why": "Usa present perfect en vez de pasado simple, que es lo que corresponde aquí."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo en pasado simple.",
+        "sentence": "I taked the apartment keys from the landlord.",
+        "answers": [
+          "I took the apartment keys from the landlord."
+        ],
+        "explanation": "'Take' es irregular y su pasado simple es 'took', no 'taked'.",
+        "wrongAnswers": [
+          {
+            "answer": "I take the apartment keys from the landlord.",
+            "why": "Queda en presente, pero la acción ya ocurrió."
+          },
+          {
+            "answer": "I have took the apartment keys from the landlord.",
+            "why": "Mezcla mal el present perfect: debería ser 'have taken', pero la oración necesita pasado simple 'took'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el pasado simple.",
+        "spanish": "¿Fuiste a la entrevista ayer?",
+        "answers": [
+          "Did you go to the interview yesterday?"
+        ],
+        "explanation": "En preguntas con 'did', el verbo principal vuelve a su forma base: 'Did you go...?'.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you went to the interview yesterday?",
+            "why": "Después de 'did' el verbo va en infinitivo ('go'), no en pasado ('went')."
+          },
+          {
+            "answer": "You went to the interview yesterday?",
+            "why": "Falta el auxiliar 'did' para formar correctamente la pregunta en pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el pasado simple.",
+        "spanish": "Martín no tuvo tiempo para desayunar.",
+        "answers": [
+          "Martín didn't have time for breakfast.",
+          "Martín did not have time for breakfast."
+        ],
+        "explanation": "La negación en pasado simple se forma con 'didn't' + verbo en infinitivo: 'didn't have'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín not had time for breakfast.",
+            "why": "Falta el auxiliar 'did' en la negación; no alcanza con poner 'not' antes del verbo en pasado."
+          },
+          {
+            "answer": "Martín didn't had time for breakfast.",
+            "why": "Después de 'didn't' el verbo va en infinitivo ('have'), no en pasado ('had')."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el pasado simple.",
+        "spanish": "La empresa le hizo una oferta a Martín la semana pasada.",
+        "answers": [
+          "The company made Martín an offer last week.",
+          "The company made an offer to Martín last week."
+        ],
+        "explanation": "El pasado simple de 'make' es 'made', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "The company maked Martín an offer last week.",
+            "why": "'Make' es irregular; su pasado simple es 'made', no 'maked'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el pasado simple.",
+        "spanish": "Vimos a Sofía en el supermercado el martes.",
+        "answers": [
+          "We saw Sofía at the supermarket on Tuesday.",
+          "We saw Sofía in the supermarket on Tuesday."
+        ],
+        "explanation": "El pasado simple de 'see' es 'saw', no se usa 'seen' sin un auxiliar como 'have'.",
+        "wrongAnswers": [
+          {
+            "answer": "We seen Sofía at the supermarket on Tuesday.",
+            "why": "'Seen' es el participio pasado; el pasado simple correcto es 'saw'."
+          },
+          {
+            "answer": "We saw to Sofía at the supermarket on Tuesday.",
+            "why": "En inglés 'see' no lleva la preposición 'to' antes del objeto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el pasado simple.",
+        "spanish": "¿Compraste el pasaje para Mendoza?",
+        "answers": [
+          "Did you buy the ticket for Mendoza?",
+          "Did you buy the ticket to Mendoza?"
+        ],
+        "explanation": "En preguntas con 'did', el verbo principal vuelve a su forma base: 'Did you buy...?'.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you bought the ticket for Mendoza?",
+            "why": "Después de 'did' el verbo va en infinitivo ('buy'), no en pasado ('bought')."
+          },
+          {
+            "answer": "You buyed the ticket for Mendoza?",
+            "why": "Falta el auxiliar 'did' y además 'buyed' no existe; el pasado de 'buy' es 'bought'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el pasado simple.",
+        "spanish": "Martín vino a Buenos Aires para la entrevista.",
+        "answers": [
+          "Martín came to Buenos Aires for the interview."
+        ],
+        "explanation": "El pasado simple de 'come' es 'came', igual para todas las personas.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín comed to Buenos Aires for the interview.",
+            "why": "'Come' es irregular; su pasado simple es 'came', no 'comed'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Last weekend, Mariana went to Bariloche with her sister, Pilar. They took the bus on Friday night and arrived early on Saturday morning. On Saturday, they saw the lake and the mountains, and they took a lot of photos. In the afternoon, they bought some chocolate in a small shop because Bariloche is famous for it. Mariana also bought a woolen hat for her mother. On Sunday, they had breakfast in a nice café near the lake, and then they ate a big lunch with their friend Tomás, who lives there. Tomás made a delicious pasta dish for them. Before they came home, they took one last photo of the mountains. It was a wonderful weekend!",
+        "questions": [
+          {
+            "prompt": "What did Mariana and Pilar do first on Saturday?",
+            "options": [
+              "They ate lunch with Tomás.",
+              "They saw the lake and the mountains.",
+              "They had breakfast in a café.",
+              "They bought chocolate."
+            ],
+            "correctIndex": 1,
+            "explanation": "Según el orden del relato, 'saw' (pasado irregular de 'see') aparece antes que las demás acciones del sábado: primero vieron el lago y las montañas."
+          },
+          {
+            "prompt": "What did Mariana buy for her mother?",
+            "options": [
+              "A box of chocolate.",
+              "A woolen hat.",
+              "Pasta.",
+              "A photo book."
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto usa 'bought' (pasado irregular de 'buy') para decir que Mariana compró un gorro de lana para su madre."
+          },
+          {
+            "prompt": "Who made lunch for Mariana and Pilar on Sunday?",
+            "options": [
+              "Pilar made it.",
+              "Tomás made it.",
+              "Mariana made it.",
+              "They bought it in a shop."
+            ],
+            "correctIndex": 1,
+            "explanation": "El verbo 'made' (pasado irregular de 'make') indica que fue Tomás quien preparó la comida para ellas."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Yesterday, Diego had a job interview at a travel agency in Córdoba. He woke up early and ate a quick breakfast before he left home. He took the bus and arrived fifteen minutes early. In the waiting room, he saw an old friend, Valentina, who also came for an interview. They didn't talk much because Valentina went in first. When it was his turn, Diego went into the office and met the manager, Mr. Rojas. Mr. Rojas asked some questions, and Diego did his best to answer clearly. After the interview, Diego felt happy, so he bought a coffee and a sandwich to celebrate. Later, he got a call: he got the job! Diego made a special dinner that night with his family.",
+        "questions": [
+          {
+            "prompt": "Who did Diego see in the waiting room?",
+            "options": [
+              "Valentina",
+              "His manager",
+              "Mr. Rojas",
+              "His sister"
+            ],
+            "correctIndex": 0,
+            "explanation": "El verbo 'saw' (pasado irregular de 'see') indica que Diego vio a su amiga Valentina en la sala de espera."
+          },
+          {
+            "prompt": "What did Diego do after the interview?",
+            "options": [
+              "He bought a coffee and a sandwich.",
+              "He went home immediately.",
+              "He made dinner right away.",
+              "He called his family."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'he bought a coffee and a sandwich' usando 'bought' (pasado irregular de 'buy') para describir lo que hizo justo después de la entrevista."
+          },
+          {
+            "prompt": "What happened after Diego got the call?",
+            "options": [
+              "He went to the travel agency again.",
+              "He ate a sandwich with Valentina.",
+              "He bought a new phone.",
+              "He made a special dinner for his family."
+            ],
+            "correctIndex": 3,
+            "explanation": "El verbo 'made' (pasado irregular de 'make') muestra que, luego de recibir la noticia, Diego preparó una cena especial para celebrar con su familia."
+          }
+        ]
+      }
+    ],
+    "negativo-preguntas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para formar la pregunta en pasado simple.",
+        "prompt": "___ you sleep well before the exam?",
+        "options": [
+          "Do",
+          "Did",
+          "Was",
+          "Does"
+        ],
+        "correctIndex": 1,
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base; 'does' y 'do' corresponden al presente.",
+        "optionNotes": [
+          "Incorrecto: 'do' es para presente, no para pasado.",
+          "Correcto: 'did' forma preguntas en pasado simple.",
+          "Incorrecto: 'was' se usa con adjetivos o sustantivos, no para preguntar con un verbo de acción como 'sleep'.",
+          "Incorrecto: 'does' es para presente con él/ella, no corresponde al pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración negativa en pasado simple.",
+        "prompt": "She didn't ___ to the meeting on time.",
+        "options": [
+          "go",
+          "goes",
+          "went",
+          "going"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'didn't' el verbo principal va en su forma base, sin cambios.",
+        "optionNotes": [
+          "Correcto: después de 'didn't' el verbo va en forma base.",
+          "Incorrecto: 'goes' es presente con 's' de tercera persona, no corresponde después de 'didn't'.",
+          "Incorrecto: 'went' ya tiene marcado el pasado, pero 'didn't' ya lo marca, no se puede repetir.",
+          "Incorrecto: 'going' es gerundio, no se usa después de 'didn't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para formar la pregunta en pasado simple.",
+        "prompt": "___ they finish the project last Friday?",
+        "options": [
+          "Did",
+          "Was",
+          "Does",
+          "Do"
+        ],
+        "correctIndex": 0,
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base.",
+        "optionNotes": [
+          "Correcto: 'did' forma preguntas en pasado simple.",
+          "Incorrecto: 'was' se usa con adjetivos o sustantivos, no con un verbo de acción como 'finish'.",
+          "Incorrecto: 'does' es presente, no corresponde a 'last Friday'.",
+          "Incorrecto: 'do' es presente, no marca el pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración negativa en pasado simple.",
+        "prompt": "He didn't ___ his passport at the airport.",
+        "options": [
+          "found",
+          "finding",
+          "finds",
+          "find"
+        ],
+        "correctIndex": 3,
+        "explanation": "Después de 'didn't' el verbo principal va en su forma base, sin cambios.",
+        "optionNotes": [
+          "Incorrecto: 'found' ya está en pasado, pero 'didn't' ya marca el pasado, no se repite.",
+          "Incorrecto: 'finding' es gerundio, no corresponde después de 'didn't'.",
+          "Incorrecto: 'finds' es presente con 's' de tercera persona.",
+          "Correcto: después de 'didn't' el verbo va en forma base."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para formar la pregunta en pasado simple.",
+        "prompt": "___ Laura see the doctor yesterday?",
+        "options": [
+          "Does",
+          "Is",
+          "Was",
+          "Did"
+        ],
+        "correctIndex": 3,
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base.",
+        "optionNotes": [
+          "Incorrecto: 'does' es presente, no corresponde a 'yesterday'.",
+          "Incorrecto: 'is' es presente, no marca el pasado.",
+          "Incorrecto: 'was' se usa con adjetivos o sustantivos, no con un verbo de acción como 'see'.",
+          "Correcto: 'did' forma preguntas en pasado simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración negativa en pasado simple.",
+        "prompt": "We didn't ___ the bus this morning.",
+        "options": [
+          "catches",
+          "catching",
+          "catch",
+          "caught"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'didn't' el verbo principal va en su forma base, sin cambios.",
+        "optionNotes": [
+          "Incorrecto: 'catches' es presente con 's' de tercera persona.",
+          "Incorrecto: 'catching' es gerundio, no corresponde después de 'didn't'.",
+          "Correcto: después de 'didn't' el verbo va en forma base.",
+          "Incorrecto: 'caught' ya está en pasado, pero 'didn't' ya marca el pasado, no se repite."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta en pasado simple con el auxiliar correcto.",
+        "sentence": "___ you sleep well last night?",
+        "hint": "(pregunta en pasado)",
+        "answers": [
+          "Did"
+        ],
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base, sin importar la persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Do",
+            "why": "'Do' es el auxiliar de presente; para preguntar en pasado se necesita 'did'."
+          },
+          {
+            "answer": "Does",
+            "why": "'Does' es el auxiliar de presente para él/ella; no corresponde al pasado ni al sujeto 'you'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con el verbo en su forma base.",
+        "sentence": "She didn't ___ the bus this morning.",
+        "hint": "(catch)",
+        "answers": [
+          "catch"
+        ],
+        "explanation": "Después de 'didn't' el verbo principal siempre va en su forma base, sin -ed ni -s.",
+        "wrongAnswers": [
+          {
+            "answer": "caught",
+            "why": "Después de 'didn't' el verbo va en forma base; 'caught' ya está en pasado y no se repite el marcador."
+          },
+          {
+            "answer": "catches",
+            "why": "'Catches' es presente con 's' de tercera persona; después de 'didn't' no se agrega 's'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta en pasado simple con el auxiliar correcto.",
+        "sentence": "___ they arrive on time for the interview?",
+        "hint": "(pregunta en pasado)",
+        "answers": [
+          "Did"
+        ],
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Does",
+            "why": "'Does' es presente para él/ella; no corresponde al sujeto 'they' ni al pasado."
+          },
+          {
+            "answer": "Do",
+            "why": "'Do' es auxiliar de presente; para el pasado se necesita 'did'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con el verbo en su forma base.",
+        "sentence": "He didn't ___ his keys at home.",
+        "hint": "(forget)",
+        "answers": [
+          "forget"
+        ],
+        "explanation": "Después de 'didn't' el verbo principal siempre va en su forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "forgot",
+            "why": "Después de 'didn't' el verbo va en forma base; 'forgot' ya marca el pasado y no se repite."
+          },
+          {
+            "answer": "forgets",
+            "why": "'Forgets' es presente con 's' de tercera persona; no corresponde después de 'didn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta en pasado simple con el auxiliar correcto.",
+        "sentence": "___ Sofía finish the report yesterday?",
+        "hint": "(pregunta en pasado)",
+        "answers": [
+          "Did"
+        ],
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Does",
+            "why": "'Does' es presente para él/ella; no corresponde al marcador de pasado 'yesterday'."
+          },
+          {
+            "answer": "Was",
+            "why": "'Was' se usa con adjetivos o sustantivos, no con un verbo de acción como 'finish'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con el verbo en su forma base.",
+        "sentence": "We didn't ___ the train because we left late.",
+        "hint": "(catch)",
+        "answers": [
+          "catch"
+        ],
+        "explanation": "Después de 'didn't' el verbo principal siempre va en su forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "caught",
+            "why": "Después de 'didn't' el verbo va en forma base; 'caught' ya marca el pasado y no se repite."
+          },
+          {
+            "answer": "catches",
+            "why": "'Catches' es presente con 's' de tercera persona; no corresponde después de 'didn't'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta en pasado simple.",
+        "sentence": "Did you see the landlord yesterday?",
+        "alternatives": [],
+        "translation": "¿Viste al propietario ayer?",
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base, aquí 'see'.",
+        "tokens": [
+          "landlord",
+          "you",
+          "yesterday",
+          "the",
+          "see",
+          "Did"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración negativa correcta en pasado simple.",
+        "sentence": "She didn't go to the interview on Monday.",
+        "alternatives": [],
+        "translation": "Ella no fue a la entrevista el lunes.",
+        "explanation": "Después de 'didn't' el verbo va en forma base: 'go', no 'went'.",
+        "tokens": [
+          "didn't",
+          "Monday",
+          "the",
+          "on",
+          "to",
+          "go",
+          "She",
+          "interview"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta en pasado simple.",
+        "sentence": "Did they finish the project before the deadline?",
+        "alternatives": [],
+        "translation": "¿Terminaron el proyecto antes de la fecha límite?",
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base, aquí 'finish'.",
+        "tokens": [
+          "before",
+          "the",
+          "finish",
+          "they",
+          "Did",
+          "deadline",
+          "project",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta en pasado simple.",
+        "sentence": "What did you eat for breakfast this morning?",
+        "alternatives": [],
+        "translation": "¿Qué comiste de desayuno esta mañana?",
+        "explanation": "En preguntas con palabra interrogativa, el orden es: palabra + did + sujeto + verbo base.",
+        "tokens": [
+          "breakfast",
+          "this",
+          "What",
+          "you",
+          "eat",
+          "for",
+          "did",
+          "morning"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración negativa correcta en pasado simple.",
+        "sentence": "We didn't catch the bus because we woke up late.",
+        "alternatives": [],
+        "translation": "No alcanzamos el colectivo porque nos despertamos tarde.",
+        "explanation": "Después de 'didn't' el verbo va en forma base: 'catch', no 'caught'.",
+        "tokens": [
+          "catch",
+          "didn't",
+          "because",
+          "the",
+          "bus",
+          "late",
+          "woke",
+          "We",
+          "we",
+          "up"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el pasado simple negativo o la pregunta con did.",
+        "sentence": "She didn't went to work yesterday.",
+        "answers": [
+          "She didn't go to work yesterday."
+        ],
+        "explanation": "Después de 'didn't' el verbo principal siempre va en su forma base, sin marcar el pasado otra vez.",
+        "wrongAnswers": [
+          {
+            "answer": "She doesn't went to work yesterday.",
+            "why": "'Doesn't' es presente y no corresponde con 'yesterday'; además, el verbo debería ir en forma base después del auxiliar."
+          },
+          {
+            "answer": "She didn't gone to work yesterday.",
+            "why": "'Gone' es el participio pasado; después de 'didn't' el verbo va en forma base 'go'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el pasado simple negativo o la pregunta con did.",
+        "sentence": "Did you saw the game last night?",
+        "answers": [
+          "Did you see the game last night?"
+        ],
+        "explanation": "En preguntas con 'did', el verbo principal va en su forma base, no en pasado ni en participio.",
+        "wrongAnswers": [
+          {
+            "answer": "Does you see the game last night?",
+            "why": "'Does' no concuerda con el sujeto 'you' ni con el tiempo pasado; corresponde usar 'did'."
+          },
+          {
+            "answer": "Did you seen the game last night?",
+            "why": "'Seen' es el participio pasado; después de 'did' el verbo va en forma base 'see'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el pasado simple negativo o la pregunta con did.",
+        "sentence": "Martín didn't bought a new phone.",
+        "answers": [
+          "Martín didn't buy a new phone."
+        ],
+        "explanation": "Después de 'didn't' el verbo principal siempre va en su forma base: 'buy', no 'bought'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín doesn't bought a new phone.",
+            "why": "'Doesn't' es presente, no corresponde al contexto pasado; además el verbo debería ir en forma base."
+          },
+          {
+            "answer": "Martín didn't buys a new phone.",
+            "why": "Después de 'didn't' el verbo va en forma base, no con 's' de tercera persona."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el pasado simple negativo o la pregunta con did.",
+        "sentence": "Did she had time to call the doctor?",
+        "answers": [
+          "Did she have time to call the doctor?"
+        ],
+        "explanation": "Después de 'did' el verbo principal siempre va en su forma base: 'have', no 'had'.",
+        "wrongAnswers": [
+          {
+            "answer": "Does she had time to call the doctor?",
+            "why": "'Does' no corresponde al pasado; se necesita 'did' y el verbo en forma base."
+          },
+          {
+            "answer": "Did she has time to call the doctor?",
+            "why": "Después de 'did' el verbo va en forma base: 'have', no 'has'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el pasado simple negativo o la pregunta con did.",
+        "sentence": "What did they ate for lunch at the restaurant?",
+        "answers": [
+          "What did they eat for lunch at the restaurant?"
+        ],
+        "explanation": "En preguntas con 'did', el verbo principal va en su forma base: 'eat', no 'ate' ni 'eaten'.",
+        "wrongAnswers": [
+          {
+            "answer": "What did they eaten for lunch at the restaurant?",
+            "why": "'Eaten' es el participio pasado; después de 'did' el verbo va en forma base 'eat'."
+          },
+          {
+            "answer": "What does they eat for lunch at the restaurant?",
+            "why": "'Does' no concuerda con 'they' ni con el pasado; se necesita 'did'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando pregunta o negación con did.",
+        "spanish": "¿Dormiste bien antes del examen?",
+        "answers": [
+          "Did you sleep well before the exam?",
+          "Did you sleep well before the test?"
+        ],
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you slept well before the exam?",
+            "why": "Después de 'did' el verbo va en forma base: 'sleep', no 'slept'."
+          },
+          {
+            "answer": "You did sleep well before the exam?",
+            "why": "El orden correcto en preguntas es 'Did + sujeto + verbo', no 'sujeto + did + verbo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando pregunta o negación con did.",
+        "spanish": "No llegamos a tiempo a la reunión.",
+        "answers": [
+          "We didn't arrive on time for the meeting.",
+          "We didn't arrive on time to the meeting."
+        ],
+        "explanation": "La negación en pasado simple se forma con 'didn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "We don't arrived on time for the meeting.",
+            "why": "'Don't' es presente; para negar en pasado se usa 'didn't', y el verbo va en forma base."
+          },
+          {
+            "answer": "We didn't arrived on time for the meeting.",
+            "why": "Después de 'didn't' el verbo va en forma base: 'arrive', no 'arrived'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando pregunta o negación con did.",
+        "spanish": "¿Qué comieron en el restaurante anoche?",
+        "answers": [
+          "What did they eat at the restaurant last night?",
+          "What did they eat in the restaurant last night?"
+        ],
+        "explanation": "En preguntas con palabra interrogativa, el orden es: palabra + did + sujeto + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "What did they ate at the restaurant last night?",
+            "why": "Después de 'did' el verbo va en forma base: 'eat', no 'ate'."
+          },
+          {
+            "answer": "What they did eat at the restaurant last night?",
+            "why": "El orden correcto es 'What did + sujeto + verbo', no 'sujeto + did + verbo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando pregunta o negación con did.",
+        "spanish": "Martín no encontró las llaves del departamento.",
+        "answers": [
+          "Martín didn't find the apartment keys.",
+          "Martín didn't find the keys to the apartment."
+        ],
+        "explanation": "La negación en pasado simple se forma con 'didn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín didn't found the apartment keys.",
+            "why": "Después de 'didn't' el verbo va en forma base: 'find', no 'found'."
+          },
+          {
+            "answer": "Martín not found the apartment keys.",
+            "why": "Falta el auxiliar 'did' para formar la negación en pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando pregunta o negación con did.",
+        "spanish": "¿Viste al médico la semana pasada?",
+        "answers": [
+          "Did you see the doctor last week?",
+          "Did you see a doctor last week?"
+        ],
+        "explanation": "Las preguntas en pasado simple se forman con 'did' + sujeto + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you saw the doctor last week?",
+            "why": "Después de 'did' el verbo va en forma base: 'see', no 'saw'."
+          },
+          {
+            "answer": "Did you see to the doctor last week?",
+            "why": "En inglés 'see' no lleva la preposición 'to' antes del objeto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando pregunta o negación con did.",
+        "spanish": "Ellos no alcanzaron el colectivo esta mañana.",
+        "answers": [
+          "They didn't catch the bus this morning.",
+          "This morning, they didn't catch the bus."
+        ],
+        "explanation": "La negación en pasado simple se forma con 'didn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "They didn't caught the bus this morning.",
+            "why": "Después de 'didn't' el verbo va en forma base: 'catch', no 'caught'."
+          },
+          {
+            "answer": "They not caught the bus this morning.",
+            "why": "Falta el auxiliar 'did' para negar correctamente en pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Last Monday, Sofía had a job interview at a travel agency in Palermo. She woke up early, but she didn't eat breakfast because she felt nervous. She arrived at the office at nine o'clock, ten minutes before the interview.\nThe manager, Mr. Lopez, asked her many questions. 'Did you work in a similar company before?' he asked. Sofía said, 'Yes, I did. I worked at a hotel for two years.' He also asked, 'Did you study English at university?' She answered, 'No, I didn't. I studied English at a language school.'\nThe interview lasted thirty minutes. Sofía didn't get the answer that day, but Mr. Lopez called her the next morning. She got the job!",
+        "questions": [
+          {
+            "prompt": "Why didn't Sofía eat breakfast?",
+            "options": [
+              "Because she felt nervous",
+              "Because she wasn't hungry",
+              "Because she didn't have time",
+              "Because she woke up late"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'she didn't eat breakfast because she felt nervous'; el negativo con didn't explica por qué no desayunó."
+          },
+          {
+            "prompt": "Did Sofía study English at university?",
+            "options": [
+              "The text doesn't say",
+              "No, she didn't; she studied at a language school",
+              "Yes, she did",
+              "Yes, she studied engineering there"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ella responde 'No, I didn't. I studied English at a language school', una respuesta corta negativa con didn't."
+          },
+          {
+            "prompt": "What happened after the interview?",
+            "options": [
+              "Mr. Lopez called her the next morning and she got the job",
+              "She left before finishing the interview",
+              "She didn't answer his questions",
+              "She didn't get the job"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto cuenta que 'Mr. Lopez called her the next morning. She got the job!', mostrando el resultado final de la historia."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Mariano went to Bariloche last weekend with his girlfriend, Valentina. They took an early flight, but something went wrong: the airline didn't send their suitcases on the same plane.\nAt the hotel, Valentina asked, 'Did you check the bags before we left the airport?' Mariano said, 'Yes, I did, but the airline lost them anyway.'\nThey didn't have clothes for two days, so they bought new ones in the city center. On Monday, Mariano called his friend Nico and told him about the trip. Nico asked, 'Did you enjoy the trip, even with that problem?' Mariano answered, 'Yes, we did! Bariloche was beautiful, and the lake was amazing.' In the end, the airline found their suitcases and sent them to the hotel.",
+        "questions": [
+          {
+            "prompt": "Why didn't Mariano and Valentina have their suitcases at the hotel?",
+            "options": [
+              "The airline didn't send them on the same plane",
+              "Valentina lost them on the plane",
+              "They forgot them at home",
+              "They didn't check them at the airport"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto explica que 'the airline didn't send their suitcases on the same plane', usando el negativo con didn't."
+          },
+          {
+            "prompt": "Did Mariano check the bags before leaving the airport?",
+            "options": [
+              "Yes, but he checked the wrong bags",
+              "No, he didn't check them",
+              "Yes, he did, but the airline lost them anyway",
+              "No, Valentina checked them instead"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mariano responde con la forma corta 'Yes, I did', confirmando que sí revisó las valijas antes de salir."
+          },
+          {
+            "prompt": "Did Mariano and Valentina enjoy the trip?",
+            "options": [
+              "No, they didn't enjoy it because of the problem",
+              "The text doesn't say if they enjoyed it",
+              "Yes, they did; they loved Bariloche despite the problem",
+              "They didn't go to Bariloche in the end"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mariano contesta 'Yes, we did! Bariloche was beautiful...', una respuesta corta afirmativa con did a pesar del problema con las valijas."
+          }
+        ]
+      }
+    ],
+    "narrar": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Last Saturday, Lucía ___ up at eight and made breakfast for her family.",
+        "options": [
+          "woke",
+          "waked",
+          "wake",
+          "woken"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Wake' es un verbo irregular; su forma de pasado simple es 'woke'.",
+        "optionNotes": [
+          "Correcto: 'woke' es el pasado irregular de 'wake'.",
+          "Incorrecto: 'wake' es irregular, no se le agrega -ed.",
+          "Incorrecto: falta el pasado simple, esta es la forma base.",
+          "Incorrecto: 'woken' es el participio pasado, no la forma de pasado simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el conector correcto para completar la narración.",
+        "prompt": "First, we packed our bags. ___, we took a taxi to the airport.",
+        "options": [
+          "When",
+          "After",
+          "Then",
+          "Finally"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Then' conecta el segundo paso de una secuencia de acciones pasadas.",
+        "optionNotes": [
+          "Incorrecto: 'when' une dos momentos simultáneos, no enumera pasos.",
+          "Incorrecto: 'After' solo no funciona como conector de pasos; se necesitaría 'after that'.",
+          "Correcto: 'then' indica el siguiente paso después de 'first'.",
+          "Incorrecto: 'finally' se usa para el último paso de la secuencia, no el segundo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "When Marcos ___ home, he called his mother.",
+        "options": [
+          "got",
+          "gets",
+          "get",
+          "getting"
+        ],
+        "correctIndex": 0,
+        "explanation": "'When' conecta dos momentos pasados, por eso el verbo va en pasado simple: 'got'.",
+        "optionNotes": [
+          "Correcto: 'got' es el pasado irregular de 'get', usado con 'when' para un momento pasado.",
+          "Incorrecto: 'gets' es presente simple, pero la oración narra un hecho pasado.",
+          "Incorrecto: falta el pasado simple, es la forma base.",
+          "Incorrecto: falta el auxiliar y la forma -ing no corresponde a un hecho puntual en pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Natalia ___ to the interview late because the bus didn't arrive on time.",
+        "options": [
+          "come",
+          "comes",
+          "coming",
+          "came"
+        ],
+        "correctIndex": 3,
+        "explanation": "El contexto narra un hecho pasado ('didn't arrive'), por eso se usa el pasado irregular 'came'.",
+        "optionNotes": [
+          "Incorrecto: falta el pasado simple, es la forma base.",
+          "Incorrecto: 'comes' es presente simple de tercera persona.",
+          "Incorrecto: falta el auxiliar y no corresponde la forma -ing para narrar un hecho puntual.",
+          "Correcto: 'came' es el pasado irregular de 'come'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "After that, they ___ lunch at a restaurant near the office.",
+        "options": [
+          "had",
+          "has",
+          "have",
+          "having"
+        ],
+        "correctIndex": 0,
+        "explanation": "'After that' conecta con una acción pasada, por eso se usa el pasado irregular 'had'.",
+        "optionNotes": [
+          "Correcto: 'had' es el pasado irregular de 'have'.",
+          "Incorrecto: 'has' es presente simple de tercera persona singular, y el sujeto es plural.",
+          "Incorrecto: es la forma base, falta el pasado.",
+          "Incorrecto: falta el auxiliar y la forma -ing no corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Yesterday I ___ to the supermarket after work.",
+        "options": [
+          "going",
+          "went",
+          "go",
+          "goes"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Yesterday' indica un hecho pasado, por eso se usa el pasado irregular 'went'.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar y la forma -ing no corresponde a un hecho puntual pasado.",
+          "Correcto: 'went' es el pasado irregular de 'go'.",
+          "Incorrecto: es presente simple, pero 'yesterday' pide pasado.",
+          "Incorrecto: 'goes' es presente simple de tercera persona y no corresponde al sujeto 'I'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Last Sunday, Camila ___ her grandmother in Quilmes.",
+        "hint": "(visit)",
+        "answers": [
+          "visited"
+        ],
+        "explanation": "'Last Sunday' marca un momento pasado y específico, por eso el verbo regular lleva la terminación -ed.",
+        "wrongAnswers": [
+          {
+            "answer": "visit",
+            "why": "Falta la terminación -ed del pasado simple; 'last Sunday' indica un hecho ya ocurrido."
+          },
+          {
+            "answer": "visiting",
+            "why": "Falta el auxiliar y la forma -ing no corresponde para narrar un hecho puntual en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la narración con el conector correcto.",
+        "sentence": "We arrived at the hotel first. ___, we unpacked our bags and went to the pool.",
+        "hint": "(conector: después de eso)",
+        "answers": [
+          "After that"
+        ],
+        "explanation": "'After that' conecta el segundo paso de una secuencia de acciones pasadas con el primero.",
+        "wrongAnswers": [
+          {
+            "answer": "At first",
+            "why": "'At first' se usa para el primer paso de la secuencia, no para el segundo."
+          },
+          {
+            "answer": "When",
+            "why": "'When' conecta dos momentos simultáneos, no se usa para enumerar los pasos de una narración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "When Diego ___ at the office, his boss was already waiting for him.",
+        "hint": "(arrive)",
+        "answers": [
+          "arrived"
+        ],
+        "explanation": "'When' une dos momentos pasados, por eso ambos verbos de la oración van en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "arrive",
+            "why": "Falta la terminación -ed del pasado simple; 'when' conecta dos momentos pasados."
+          },
+          {
+            "answer": "arriving",
+            "why": "Falta el auxiliar y la forma -ing no corresponde para narrar un hecho puntual en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Later that day, Sofía ___ a new dress for the party.",
+        "hint": "(buy)",
+        "answers": [
+          "bought"
+        ],
+        "explanation": "'Buy' es irregular y su forma de pasado simple es 'bought'.",
+        "wrongAnswers": [
+          {
+            "answer": "buyed",
+            "why": "'Buy' es un verbo irregular; su pasado es 'bought', no se forma agregando -ed."
+          },
+          {
+            "answer": "buy",
+            "why": "Falta el pasado simple; 'later that day' indica un hecho ya ocurrido."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Finally, the doctor ___ me the test results.",
+        "hint": "(tell)",
+        "answers": [
+          "told"
+        ],
+        "explanation": "'Tell' es irregular y su forma de pasado simple es 'told'.",
+        "wrongAnswers": [
+          {
+            "answer": "telled",
+            "why": "'Tell' es un verbo irregular; su pasado es 'told', no se forma agregando -ed."
+          },
+          {
+            "answer": "tell",
+            "why": "Falta el pasado simple; 'finally' indica el último paso de una secuencia ya ocurrida."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la narración con el conector correcto.",
+        "sentence": "First, I called the landlord. ___, I sent him an email to confirm the appointment.",
+        "hint": "(conector: luego)",
+        "answers": [
+          "Then"
+        ],
+        "explanation": "'Then' indica el siguiente paso de la secuencia, después de 'first'.",
+        "wrongAnswers": [
+          {
+            "answer": "First",
+            "why": "'First' ya se usó para el primer paso, no puede repetirse para el segundo."
+          },
+          {
+            "answer": "When",
+            "why": "'When' no se usa para enumerar pasos, conecta dos momentos simultáneos."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Last Saturday, Pablo woke up late.",
+        "alternatives": [
+          "Pablo woke up late last Saturday."
+        ],
+        "translation": "El sábado pasado, Pablo se levantó tarde.",
+        "explanation": "Las expresiones de tiempo como 'last Saturday' pueden ir al principio o al final de la oración.",
+        "tokens": [
+          "late",
+          "Saturday,",
+          "woke",
+          "Last",
+          "Pablo",
+          "up"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "First, they checked in at the hotel.",
+        "alternatives": [],
+        "translation": "Primero, se registraron en el hotel.",
+        "explanation": "'First' se usa para marcar el primer paso de una narración en pasado simple.",
+        "tokens": [
+          "hotel",
+          "checked",
+          "at",
+          "in",
+          "First,",
+          "they",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "When she got home, she called her sister.",
+        "alternatives": [],
+        "translation": "Cuando llegó a casa, llamó a su hermana.",
+        "explanation": "'When' une dos momentos pasados, y ambos verbos de la oración van en pasado simple.",
+        "tokens": [
+          "called",
+          "home,",
+          "got",
+          "When",
+          "sister",
+          "she",
+          "her",
+          "she"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "After that, we had lunch at a café.",
+        "alternatives": [],
+        "translation": "Después de eso, almorzamos en un café.",
+        "explanation": "'After that' conecta un paso con el anterior en una narración de hechos pasados.",
+        "tokens": [
+          "that,",
+          "café",
+          "we",
+          "After",
+          "a",
+          "had",
+          "at",
+          "lunch"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Finally, the doctor told her the results.",
+        "alternatives": [],
+        "translation": "Finalmente, el médico le dijo los resultados.",
+        "explanation": "'Finally' marca el último paso de una secuencia de acciones en pasado simple.",
+        "tokens": [
+          "doctor",
+          "her",
+          "the",
+          "the",
+          "Finally,",
+          "results",
+          "told"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Yesterday I go to the supermarket after work.",
+        "answers": [
+          "Yesterday I went to the supermarket after work."
+        ],
+        "explanation": "'Yesterday' indica un hecho pasado, por eso el verbo debe ir en pasado simple: 'went'.",
+        "wrongAnswers": [
+          {
+            "answer": "Yesterday I goes to the supermarket after work.",
+            "why": "'Goes' es presente simple de tercera persona, no corresponde al pasado que pide 'yesterday' ni al sujeto 'I'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "First, we packed our bags, then we taked a taxi to the airport.",
+        "answers": [
+          "First, we packed our bags, then we took a taxi to the airport."
+        ],
+        "explanation": "'Take' es un verbo irregular; su pasado es 'took', no se forma agregando -ed.",
+        "wrongAnswers": [
+          {
+            "answer": "First, we packed our bags, then we take a taxi to the airport.",
+            "why": "'Take' está en presente, pero la oración narra una secuencia pasada junto con 'packed', se necesita el pasado 'took'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "When Marcos get home, he called his mother.",
+        "answers": [
+          "When Marcos got home, he called his mother."
+        ],
+        "explanation": "'When' une dos momentos pasados, por eso ambos verbos deben ir en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "When Marcos gets home, he called his mother.",
+            "why": "'Gets' es presente simple, pero el resto de la oración está en pasado ('called'), se necesita 'got'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "After that, they eat lunch at a nice restaurant.",
+        "answers": [
+          "After that, they ate lunch at a nice restaurant."
+        ],
+        "explanation": "'Eat' es un verbo irregular; su pasado es 'ate', no 'eat' ni 'eats'.",
+        "wrongAnswers": [
+          {
+            "answer": "After that, they eats lunch at a nice restaurant.",
+            "why": "'Eats' es presente simple de tercera persona singular, pero el sujeto es plural ('they') y la oración necesita pasado."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Finally, the doctor tells me the test results.",
+        "answers": [
+          "Finally, the doctor told me the test results."
+        ],
+        "explanation": "'Finally' marca el último paso de una narración pasada, por eso el verbo debe ir en pasado simple: 'told'.",
+        "wrongAnswers": [
+          {
+            "answer": "Finally, the doctor telled me the test results.",
+            "why": "'Tell' es un verbo irregular; su pasado es 'told', no 'telled'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El sábado pasado, Valentina se levantó temprano y preparó el desayuno.",
+        "answers": [
+          "Last Saturday, Valentina got up early and made breakfast.",
+          "Last Saturday, Valentina got up early and prepared breakfast.",
+          "Last Saturday Valentina got up early and made breakfast."
+        ],
+        "explanation": "'Last Saturday' marca un hecho pasado, por eso los verbos irregulares van en pasado simple: 'got' y 'made'.",
+        "wrongAnswers": [
+          {
+            "answer": "Last Saturday, Valentina gets up early and makes breakfast.",
+            "why": "Es un calco del presente; con 'last Saturday' se necesita pasado simple en los dos verbos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Primero fuimos al banco, después almorzamos en un bar.",
+        "answers": [
+          "First we went to the bank, then we had lunch at a bar.",
+          "First, we went to the bank. After that, we had lunch at a bar.",
+          "We went to the bank first, then we had lunch at a bar."
+        ],
+        "explanation": "Los conectores 'first' y 'then' organizan una secuencia de acciones pasadas, y los verbos van en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "First we go to the bank, then we have lunch at a bar.",
+            "why": "Usa presente en vez de pasado; la narración cuenta hechos ya ocurridos, se necesita pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Cuando llegamos al hotel, el recepcionista nos saludó amablemente.",
+        "answers": [
+          "When we arrived at the hotel, the receptionist greeted us kindly.",
+          "When we arrived at the hotel, the receptionist greeted us warmly."
+        ],
+        "explanation": "'When' conecta dos acciones que pasaron juntas en el pasado, por eso ambos verbos van en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "When we arrive at the hotel, the receptionist greets us kindly.",
+            "why": "Es un calco del presente; 'when' une dos momentos pasados, ambos verbos deben ir en pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Finalmente, el médico me dio los resultados de los análisis.",
+        "answers": [
+          "Finally, the doctor gave me the test results.",
+          "Finally, the doctor gave me my test results."
+        ],
+        "explanation": "'Give' es irregular y su forma de pasado simple es 'gave'.",
+        "wrongAnswers": [
+          {
+            "answer": "Finally, the doctor gived me the test results.",
+            "why": "'Give' es un verbo irregular; su pasado es 'gave', no 'gived'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Después de eso, llamamos al dueño del departamento para confirmar la visita.",
+        "answers": [
+          "After that, we called the landlord to confirm the visit.",
+          "After that, we called the landlord to confirm the appointment."
+        ],
+        "explanation": "'After that' conecta con una acción anterior, por eso el verbo va en pasado simple: 'called'.",
+        "wrongAnswers": [
+          {
+            "answer": "After that, we call the landlord to confirm the visit.",
+            "why": "Falta el pasado simple 'called'; la oración narra un hecho que ya ocurrió."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ayer tuve una entrevista de trabajo muy larga.",
+        "answers": [
+          "Yesterday I had a very long job interview.",
+          "Yesterday I had a job interview that was very long."
+        ],
+        "explanation": "'Yesterday' marca un hecho pasado, por eso el verbo irregular 'have' se usa en su forma de pasado: 'had'.",
+        "wrongAnswers": [
+          {
+            "answer": "Yesterday I have a very long job interview.",
+            "why": "Con 'ayer' (yesterday) se necesita pasado simple, no presente."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Last Tuesday, Valentina had a busy day. First, she woke up early and had breakfast with her brother, Nico. Then, she took the bus to the city center for a doctor's appointment. When she arrived, the waiting room was full, so she waited for almost an hour. After that, the doctor checked her and said she was fine. Later, Valentina met her friend Carla for lunch at a small restaurant near the hospital. They talked for a long time and ate empanadas. Finally, in the afternoon, Valentina went to the supermarket and bought food for the week. When she got home, she was very tired, so she went to bed early that night.",
+        "questions": [
+          {
+            "prompt": "What did Valentina do first that day?",
+            "options": [
+              "She had lunch with Carla.",
+              "She went to the supermarket.",
+              "She saw the doctor.",
+              "She woke up and had breakfast with Nico."
+            ],
+            "correctIndex": 3,
+            "explanation": "La palabra 'First' marca la primera acción del relato, contada en pasado simple: 'woke up' y 'had breakfast'."
+          },
+          {
+            "prompt": "What happened when Valentina arrived at the hospital?",
+            "options": [
+              "She bought food for the week.",
+              "She met Carla for lunch.",
+              "The waiting room was full, so she waited.",
+              "She went to bed early."
+            ],
+            "correctIndex": 2,
+            "explanation": "'When' conecta dos momentos: cuando Valentina llegó, encontró la sala de espera llena y por eso tuvo que esperar."
+          },
+          {
+            "prompt": "What did Valentina do after lunch with Carla?",
+            "options": [
+              "She went to the supermarket.",
+              "She had breakfast with Nico.",
+              "She saw the doctor.",
+              "She took the bus to the city center."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Finally' introduce la última etapa del relato, que ocurre después del almuerzo con Carla: ir al supermercado."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Last Saturday was moving day for Martín. First, he woke up at six and had a strong coffee. Then, his friends Lucas and Flor arrived to help him carry boxes to the new apartment. After that, they loaded everything into a small truck and drove across town. When they arrived at the new building, the elevator wasn't working, so they carried every box up three flights of stairs. Later, they ordered pizza and ate it on the floor because there was no furniture yet. Finally, in the evening, Martín thanked his friends and said goodbye. When he was alone, he looked around his new home and felt very happy.",
+        "questions": [
+          {
+            "prompt": "What did Martín do first on moving day?",
+            "options": [
+              "He thanked his friends.",
+              "He woke up and had coffee.",
+              "He carried boxes up the stairs.",
+              "He ordered pizza."
+            ],
+            "correctIndex": 1,
+            "explanation": "'First' señala la acción inicial del relato: despertarse y tomar un café, contado en pasado simple."
+          },
+          {
+            "prompt": "Why did Martín and his friends carry boxes up the stairs?",
+            "options": [
+              "Because the elevator wasn't working.",
+              "Because the truck broke down.",
+              "Because the building didn't allow the elevator for moving.",
+              "Because they wanted exercise."
+            ],
+            "correctIndex": 0,
+            "explanation": "'When' conecta la llegada al edificio con el problema del ascensor que no funcionaba, por eso tuvieron que subir por las escaleras."
+          },
+          {
+            "prompt": "What did Martín do finally, at the end of the day?",
+            "options": [
+              "He thanked his friends and said goodbye.",
+              "He carried boxes upstairs.",
+              "He drove across town.",
+              "He ordered pizza."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Finally' introduce la última acción del día en el relato: agradecer a sus amigos y despedirse."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2779 @@
+{
+  "subtopics": {
+    "can": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta con can.",
+        "prompt": "In the interview, Mr. García asks, 'Rocío, ___ you speak English?' She answers, 'Yes, I can.'",
+        "options": [
+          "are",
+          "cans",
+          "can",
+          "do"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para preguntar sobre habilidad se usa can delante del sujeto, sin agregar -s ni usar do.",
+        "optionNotes": [
+          "Incorrecto: are no corresponde porque acá no se usa el verbo to be.",
+          "Incorrecto: can nunca lleva -s, sin importar la persona.",
+          "Correcto: can se usa igual para todas las personas y va antes del sujeto en la pregunta.",
+          "Incorrecto: no se usa do con can; la pregunta se forma invirtiendo can y el sujeto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta con can.",
+        "prompt": "At the doctor's office, Tomás asks, '___ I open the window? It's very hot.'",
+        "options": [
+          "Do",
+          "Am",
+          "Can",
+          "Cans"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para pedir permiso se usa la forma Can I...? al comienzo de la pregunta.",
+        "optionNotes": [
+          "Incorrecto: do no se combina con can.",
+          "Incorrecto: am corresponde al verbo to be, no a can.",
+          "Correcto: Can I...? es la forma habitual de pedir permiso.",
+          "Incorrecto: can nunca lleva -s."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta con can.",
+        "prompt": "Lucía is at the airport. She says, 'I ___ find my passport. I'm worried.'",
+        "options": [
+          "not can",
+          "can't",
+          "can't to",
+          "doesn't can"
+        ],
+        "correctIndex": 1,
+        "explanation": "La forma negativa de can es can't (o cannot), y va directamente antes del verbo base, sin to.",
+        "optionNotes": [
+          "Incorrecto: el orden correcto es can't, no not can.",
+          "Correcto: can't es la negación de can y va justo antes del verbo.",
+          "Incorrecto: después de can't el verbo va sin to.",
+          "Incorrecto: doesn't no se combina con can."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta con can.",
+        "prompt": "Martín says, 'My sister ___ play the piano very well.'",
+        "options": [
+          "can",
+          "cans",
+          "is can",
+          "can to"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de can el verbo va en su forma base, sin to y sin -s, sin importar la persona.",
+        "optionNotes": [
+          "Correcto: can se usa igual para todas las personas y el verbo que sigue va sin to.",
+          "Incorrecto: can nunca lleva -s.",
+          "Incorrecto: no se combina is con can.",
+          "Incorrecto: después de can no se agrega to."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta con can.",
+        "prompt": "Before signing the lease, Valentina asks the landlord, '___ we paint the walls a different color?'",
+        "options": [
+          "Cans",
+          "Do",
+          "Can",
+          "Are"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para pedir permiso sobre una acción futura se usa Can we...? al inicio de la pregunta.",
+        "optionNotes": [
+          "Incorrecto: can nunca lleva -s.",
+          "Incorrecto: no se usa do con can para formar la pregunta.",
+          "Correcto: Can we...? pide permiso para hacer algo en conjunto.",
+          "Incorrecto: are corresponde al verbo to be, no a can."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta con can.",
+        "prompt": "The manager says, 'You ___ park here. This space is for visitors.'",
+        "options": [
+          "can't",
+          "not can",
+          "doesn't can",
+          "can't to"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para prohibir algo con can se usa can't (o cannot) antes del verbo base, sin to.",
+        "optionNotes": [
+          "Correcto: can't expresa prohibición o imposibilidad y va antes del verbo base.",
+          "Incorrecto: el orden correcto es can't, no not can.",
+          "Incorrecto: doesn't no se combina con can.",
+          "Incorrecto: después de can't el verbo va sin to."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "In the job interview, Sofía says, 'I ___ speak French and Italian.'",
+        "hint": "(hablar - habilidad)",
+        "answers": [
+          "can"
+        ],
+        "explanation": "Can expresa habilidad y no cambia según la persona ni lleva -s.",
+        "wrongAnswers": [
+          {
+            "answer": "cans",
+            "why": "Can nunca lleva -s, es igual para todas las personas."
+          },
+          {
+            "answer": "do",
+            "why": "Para hablar de habilidad se usa can, no do."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "Excuse me, ___ I use your phone for a minute?",
+        "hint": "(pedir permiso)",
+        "answers": [
+          "can"
+        ],
+        "explanation": "Can I...? es la forma habitual de pedir permiso en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "do",
+            "why": "Para pedir permiso se usa can, no do."
+          },
+          {
+            "answer": "am",
+            "why": "Am corresponde al verbo to be, no se usa para pedir permiso con can."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "My grandmother is 90 years old. She ___ walk very fast now.",
+        "hint": "(caminar - negativo)",
+        "answers": [
+          "can't",
+          "cannot"
+        ],
+        "explanation": "La forma negativa de can es can't o cannot, y se usa antes del verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't can",
+            "why": "La negación de can es can't o cannot, no doesn't can."
+          },
+          {
+            "answer": "not can",
+            "why": "El orden correcto es can't, no not can."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "At the hotel, the receptionist says, 'You ___ check in after two o'clock.'",
+        "hint": "(permiso)",
+        "answers": [
+          "can"
+        ],
+        "explanation": "Can se usa para dar permiso y va igual para todas las personas, sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "cans",
+            "why": "Can nunca lleva -s."
+          },
+          {
+            "answer": "do",
+            "why": "No se usa do junto con can en esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "Diego, ___ you help me with these boxes, please?",
+        "hint": "(pedido - favor)",
+        "answers": [
+          "can"
+        ],
+        "explanation": "Can you...? es una forma común de pedir un favor de manera amable.",
+        "wrongAnswers": [
+          {
+            "answer": "do",
+            "why": "Para pedir un favor con can no se agrega do."
+          },
+          {
+            "answer": "are",
+            "why": "Are corresponde al verbo to be, no a can."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "After the surgery, the patient ___ walk without help yet.",
+        "hint": "(caminar - negativo)",
+        "answers": [
+          "can't",
+          "cannot"
+        ],
+        "explanation": "Can't (o cannot) es la forma negativa de can para expresar que algo no es posible.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't can",
+            "why": "La negación de can es can't o cannot, no doesn't can."
+          },
+          {
+            "answer": "not can",
+            "why": "El orden correcto es can't, no not can."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Can you open the door, please, Marta?",
+        "alternatives": [
+          "Can you open the door, Marta, please?"
+        ],
+        "translation": "¿Podés abrir la puerta, por favor, Marta?",
+        "explanation": "En preguntas con can, la palabra can va primero, seguida del sujeto y el verbo base.",
+        "tokens": [
+          "Marta",
+          "open",
+          "the",
+          "please,",
+          "door,",
+          "you",
+          "Can"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The tenants can't paint the walls without permission.",
+        "alternatives": [],
+        "translation": "Los inquilinos no pueden pintar las paredes sin permiso.",
+        "explanation": "Can't se coloca después del sujeto y antes del verbo base, sin agregar to.",
+        "tokens": [
+          "can't",
+          "paint",
+          "The",
+          "walls",
+          "without",
+          "permission",
+          "tenants",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Can Lucía speak English at work?",
+        "alternatives": [],
+        "translation": "¿Puede Lucía hablar inglés en el trabajo?",
+        "explanation": "En preguntas, can va antes del sujeto, y el verbo que sigue queda en su forma base.",
+        "tokens": [
+          "Can",
+          "English",
+          "speak",
+          "work",
+          "at",
+          "Lucía"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I can't find my passport anywhere.",
+        "alternatives": [],
+        "translation": "No puedo encontrar mi pasaporte en ningún lado.",
+        "explanation": "Can't expresa imposibilidad y va justo antes del verbo base find.",
+        "tokens": [
+          "my",
+          "I",
+          "find",
+          "anywhere",
+          "passport",
+          "can't"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Can we check in before three o'clock?",
+        "alternatives": [],
+        "translation": "¿Podemos hacer el check-in antes de las tres?",
+        "explanation": "Para pedir permiso sobre una acción futura se usa Can we...? al inicio de la pregunta.",
+        "tokens": [
+          "Can",
+          "check",
+          "we",
+          "before",
+          "three",
+          "o'clock",
+          "in"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con can.",
+        "sentence": "She can to drive a car very well.",
+        "answers": [
+          "She can drive a car very well."
+        ],
+        "explanation": "Después de can el verbo va en su forma base, sin to.",
+        "wrongAnswers": [
+          {
+            "answer": "She can drives a car very well.",
+            "why": "El error no está en el verbo drive, sino en el to que no debe ir después de can."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con can.",
+        "sentence": "My friends cans speak Portuguese.",
+        "answers": [
+          "My friends can speak Portuguese."
+        ],
+        "explanation": "Can es igual para todas las personas y nunca se le agrega -s.",
+        "wrongAnswers": [
+          {
+            "answer": "My friend cans speak Portuguese.",
+            "why": "El problema no es el sujeto, sino que can nunca lleva -s."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con can.",
+        "sentence": "Can I to ask you something, Doctor Pérez?",
+        "answers": [
+          "Can I ask you something, Doctor Pérez?"
+        ],
+        "explanation": "Después de can el verbo siempre va sin to.",
+        "wrongAnswers": [
+          {
+            "answer": "Can I asks you something, Doctor Pérez?",
+            "why": "El error es el to después de can, no la forma del verbo ask."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con can.",
+        "sentence": "He doesn't can come to the meeting tomorrow.",
+        "answers": [
+          "He can't come to the meeting tomorrow.",
+          "He cannot come to the meeting tomorrow."
+        ],
+        "explanation": "La forma negativa de can es can't o cannot; nunca se combina con doesn't.",
+        "wrongAnswers": [
+          {
+            "answer": "He doesn't can comes to the meeting tomorrow.",
+            "why": "La negación correcta de can es can't o cannot, no doesn't can."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con can.",
+        "sentence": "The guests not can smoke in the rooms.",
+        "answers": [
+          "The guests can't smoke in the rooms.",
+          "The guests cannot smoke in the rooms."
+        ],
+        "explanation": "El orden correcto para negar can es sujeto + can't/cannot + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "The guests don't can smoke in the rooms.",
+            "why": "La negación correcta de can es can't o cannot, no don't can."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando can.",
+        "spanish": "¿Podés venir a la reunión el lunes?",
+        "answers": [
+          "Can you come to the meeting on Monday?",
+          "Can you make it to the meeting on Monday?"
+        ],
+        "explanation": "Las preguntas con can se forman colocando can antes del sujeto, sin agregar do.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you come to the meeting in Monday?",
+            "why": "Los días de la semana se usan con on, no con in."
+          },
+          {
+            "answer": "Do you can come to the meeting on Monday?",
+            "why": "No se usa do junto con can; la pregunta se forma invirtiendo can y el sujeto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando can't o cannot.",
+        "spanish": "No puedo entender este formulario.",
+        "answers": [
+          "I can't understand this form.",
+          "I cannot understand this form."
+        ],
+        "explanation": "Can't y cannot son las formas negativas de can en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "I no can understand this form.",
+            "why": "La negación de can se forma con can't o cannot, no con no can."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando can.",
+        "spanish": "¿Puedo hacerte una pregunta?",
+        "answers": [
+          "Can I ask you a question?",
+          "Can I ask you something?"
+        ],
+        "explanation": "Can I...? se usa para pedir permiso, y el verbo que sigue va sin to.",
+        "wrongAnswers": [
+          {
+            "answer": "Can I to ask you a question?",
+            "why": "Después de can el verbo va sin to."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando can.",
+        "spanish": "Mi hermano sabe nadar muy bien.",
+        "answers": [
+          "My brother can swim very well.",
+          "My brother can swim really well."
+        ],
+        "explanation": "Can expresa habilidad, y en este caso equivale a saber hacer algo.",
+        "wrongAnswers": [
+          {
+            "answer": "My brother knows swim very well.",
+            "why": "Para hablar de habilidades usamos can, no el verbo know."
+          },
+          {
+            "answer": "My brother can to swim very well.",
+            "why": "Después de can el verbo va sin to."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando can't o cannot.",
+        "spanish": "No podemos estacionar acá, es zona prohibida.",
+        "answers": [
+          "We can't park here, it's a restricted area.",
+          "We cannot park here, it's a restricted area."
+        ],
+        "explanation": "Can't (o cannot) va antes del verbo base, sin agregar to.",
+        "wrongAnswers": [
+          {
+            "answer": "We can't to park here, it's a restricted area.",
+            "why": "Después de can't el verbo va sin to."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando can.",
+        "spanish": "¿Podés ayudarme con las valijas, por favor?",
+        "answers": [
+          "Can you help me with the suitcases, please?",
+          "Can you help me with my suitcases, please?"
+        ],
+        "explanation": "Can you...? es una forma amable de pedir ayuda, y el verbo que sigue va sin to.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you to help me with the suitcases, please?",
+            "why": "Después de can el verbo va sin to."
+          },
+          {
+            "answer": "Do you can help me with the suitcases, please?",
+            "why": "La pregunta con can se forma invirtiendo can y el sujeto, sin usar do."
+          }
+        ]
+      }
+    ],
+    "continuo-forma": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Carla ___ a message to her boss right now.",
+        "options": [
+          "writes",
+          "write",
+          "is writting",
+          "is writing"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Write' pierde la e final al agregar '-ing', pero la t no se duplica.",
+        "optionNotes": [
+          "Incorrecto: es la forma de presente simple, no continuo.",
+          "Incorrecto: falta el auxiliar 'is' y el sufijo '-ing' para el presente continuo.",
+          "Incorrecto: 'write' no duplica la t al formar el gerundio.",
+          "Correcto: 'write' pierde la e y agrega '-ing' sin duplicar consonantes."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ you listening to the podcast about travel tips?",
+        "options": [
+          "Do",
+          "Does",
+          "Are",
+          "Is"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para formar preguntas en presente continuo con 'you' se usa el auxiliar 'are'.",
+        "optionNotes": [
+          "Incorrecto: 'do' es el auxiliar del presente simple, no del continuo.",
+          "Incorrecto: 'does' es el auxiliar del presente simple.",
+          "Correcto: con 'you' se usa 'are' para formar la pregunta en presente continuo.",
+          "Incorrecto: 'is' se usa con he/she/it, no con 'you'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Pablo and Lucía ___ for the bus at the corner.",
+        "options": [
+          "waits",
+          "are waiting",
+          "waiting",
+          "is waiting"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con un sujeto plural como 'Pablo and Lucía' se usa el auxiliar 'are'.",
+        "optionNotes": [
+          "Incorrecto: es presente simple, no continuo.",
+          "Correcto: con sujeto plural se usa 'are' + verbo-ing.",
+          "Incorrecto: falta el auxiliar 'are' para formar el presente continuo.",
+          "Incorrecto: con sujeto plural se usa 'are', no 'is'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Right now, my boss ___ working; he's in a meeting.",
+        "options": [
+          "don't",
+          "isn't",
+          "aren't",
+          "doesn't"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'he' el negativo del presente continuo se forma con 'isn't'.",
+        "optionNotes": [
+          "Incorrecto: 'don't' es el auxiliar negativo del presente simple para I/you/we/they.",
+          "Correcto: con 'he' se usa 'isn't' para el negativo del presente continuo.",
+          "Incorrecto: 'aren't' corresponde a you/we/they, no a 'he'.",
+          "Incorrecto: 'doesn't' es el auxiliar negativo del presente simple, no del continuo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look! The baby ___ for the first time.",
+        "options": [
+          "is craling",
+          "crawling",
+          "crawls",
+          "is crawling"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Crawl' solo agrega '-ing' sin quitar letras porque termina en una combinación de vocal y consonante que no duplica.",
+        "optionNotes": [
+          "Incorrecto: no se quita ninguna letra de 'crawl' al agregar '-ing'.",
+          "Incorrecto: falta el auxiliar 'is' para formar el presente continuo.",
+          "Incorrecto: es presente simple, no continuo.",
+          "Correcto: 'crawl' solo agrega '-ing' sin cambios."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ our flight to Bariloche; we are at the gate already.",
+        "options": [
+          "isn't missing",
+          "don't miss",
+          "aren't missing",
+          "not missing"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'we' el negativo del presente continuo se forma con 'aren't' + verbo-ing.",
+        "optionNotes": [
+          "Incorrecto: 'isn't' corresponde a he/she/it, no a 'we'.",
+          "Incorrecto: es el negativo del presente simple, no del continuo.",
+          "Correcto: con 'we' se usa 'aren't' + verbo-ing para el negativo.",
+          "Incorrecto: falta el auxiliar 'are' antes de 'not'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del presente continuo.",
+        "sentence": "Carla ___ an email to her boss right now.",
+        "hint": "(write)",
+        "answers": [
+          "is writing"
+        ],
+        "explanation": "'Write' pierde la e final antes de agregar '-ing': 'writing'.",
+        "wrongAnswers": [
+          {
+            "answer": "is writting",
+            "why": "'Write' pierde la e final al agregar '-ing' pero no duplica la t."
+          },
+          {
+            "answer": "writes",
+            "why": "Es la forma de presente simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con el auxiliar correcto.",
+        "sentence": "___ you waiting for the bus at the corner?",
+        "hint": "(pregunta con you)",
+        "answers": [
+          "Are"
+        ],
+        "explanation": "Para preguntas en presente continuo con 'you' se usa el auxiliar 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "Do",
+            "why": "'Do' es el auxiliar del presente simple, no del continuo."
+          },
+          {
+            "answer": "Is",
+            "why": "'Is' se usa con he/she/it, no con 'you'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del presente continuo.",
+        "sentence": "Pablo isn't working today; he ___ to Bariloche.",
+        "hint": "(travel)",
+        "answers": [
+          "is traveling",
+          "is travelling"
+        ],
+        "explanation": "'Travel' agrega '-ing' sin cambios importantes de ortografía (ambas formas, con una o dos 'l', son aceptadas).",
+        "wrongAnswers": [
+          {
+            "answer": "travels",
+            "why": "Es la forma de presente simple, no continuo."
+          },
+          {
+            "answer": "is travels",
+            "why": "No se puede combinar el auxiliar 'is' con la forma conjugada 'travels'; debe ser 'traveling'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del presente continuo.",
+        "sentence": "Look! The dog ___ across the park.",
+        "hint": "(run)",
+        "answers": [
+          "is running"
+        ],
+        "explanation": "'Run' duplica la consonante final antes de agregar '-ing': 'running'.",
+        "wrongAnswers": [
+          {
+            "answer": "is runing",
+            "why": "'Run' duplica la 'n' final antes de agregar '-ing' porque termina en consonante precedida de una sola vocal."
+          },
+          {
+            "answer": "runs",
+            "why": "Es presente simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa correcta del presente continuo.",
+        "sentence": "We ___ on the beach; we are working at a café.",
+        "hint": "(not/lie)",
+        "answers": [
+          "aren't lying",
+          "are not lying"
+        ],
+        "explanation": "'Lie' cambia 'ie' por 'y' antes de agregar '-ing': 'lying'.",
+        "wrongAnswers": [
+          {
+            "answer": "aren't liing",
+            "why": "'Lie' cambia la 'ie' por 'y' antes de agregar '-ing': 'lying'."
+          },
+          {
+            "answer": "don't lie",
+            "why": "Es el negativo del presente simple, no del continuo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del presente continuo.",
+        "sentence": "Nico and Carla ___ dinner together tonight.",
+        "hint": "(make)",
+        "answers": [
+          "are making"
+        ],
+        "explanation": "'Make' pierde la e final antes de agregar '-ing': 'making'.",
+        "wrongAnswers": [
+          {
+            "answer": "are makeing",
+            "why": "'Make' pierde la e final al agregar '-ing'."
+          },
+          {
+            "answer": "make",
+            "why": "Falta el auxiliar 'are' y el sufijo '-ing' para el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Carla is writing an email to her boss.",
+        "alternatives": [],
+        "translation": "Carla está escribiendo un mail para su jefe.",
+        "explanation": "El presente continuo se forma con 'is' + verbo-ing para la tercera persona singular.",
+        "tokens": [
+          "email",
+          "boss",
+          "writing",
+          "to",
+          "Carla",
+          "an",
+          "her",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Are you waiting for the bus right now?",
+        "alternatives": [],
+        "translation": "¿Estás esperando el colectivo ahora?",
+        "explanation": "En las preguntas de presente continuo el auxiliar 'are' va antes del sujeto 'you'.",
+        "tokens": [
+          "right",
+          "Are",
+          "the",
+          "for",
+          "now",
+          "you",
+          "bus",
+          "waiting"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Pablo isn't working today.",
+        "alternatives": [],
+        "translation": "Pablo no está trabajando hoy.",
+        "explanation": "El negativo del presente continuo con 'he' se forma con 'isn't' + verbo-ing.",
+        "tokens": [
+          "today",
+          "isn't",
+          "Pablo",
+          "working"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The dog is running across the park.",
+        "alternatives": [],
+        "translation": "El perro está corriendo por el parque.",
+        "explanation": "'Run' duplica la consonante final antes de agregar '-ing': 'running'.",
+        "tokens": [
+          "dog",
+          "park",
+          "The",
+          "running",
+          "is",
+          "across",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We aren't lying on the beach today.",
+        "alternatives": [],
+        "translation": "No estamos tirados en la playa hoy.",
+        "explanation": "El negativo del presente continuo con 'we' se forma con 'aren't' + verbo-ing.",
+        "tokens": [
+          "We",
+          "lying",
+          "today",
+          "on",
+          "beach",
+          "aren't",
+          "the"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo.",
+        "sentence": "Carla is writting an email to her boss.",
+        "answers": [
+          "Carla is writing an email to her boss."
+        ],
+        "explanation": "'Write' pierde la e final al agregar '-ing' y no duplica la t.",
+        "wrongAnswers": [
+          {
+            "answer": "Carla is writting an email for her boss.",
+            "why": "Cambia la preposición 'to' por 'for', pero el error real es la ortografía de 'writing'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo.",
+        "sentence": "Pablo studying English right now.",
+        "answers": [
+          "Pablo is studying English right now."
+        ],
+        "explanation": "El presente continuo siempre necesita el auxiliar 'am', 'is' o 'are' antes del verbo con '-ing'.",
+        "wrongAnswers": [
+          {
+            "answer": "Pablo studies English right now.",
+            "why": "Cambia a presente simple, pero la oración necesita presente continuo porque incluye 'right now'; falta el auxiliar 'is'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo.",
+        "sentence": "Is she working at the moment? Yes, she working.",
+        "answers": [
+          "Is she working at the moment? Yes, she is working."
+        ],
+        "explanation": "En las respuestas con presente continuo no se puede omitir el auxiliar 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "Is she working at the moment? Yes, she works.",
+            "why": "Cambia a presente simple, pero la respuesta debe mantener el auxiliar 'is' del presente continuo que usó la pregunta."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo.",
+        "sentence": "The baby is craling across the room.",
+        "answers": [
+          "The baby is crawling across the room."
+        ],
+        "explanation": "'Crawl' solo agrega '-ing' sin quitar ninguna letra: 'crawling'.",
+        "wrongAnswers": [
+          {
+            "answer": "The baby is craws across the room.",
+            "why": "Usa una forma incorrecta del verbo; el presente continuo necesita 'is' + verbo-ing, no 'craws'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo.",
+        "sentence": "We isn't missing our flight; we are at the gate.",
+        "answers": [
+          "We aren't missing our flight; we are at the gate."
+        ],
+        "explanation": "Con 'we' el negativo del presente continuo se forma con 'aren't', no con 'isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "We isn't miss our flight; we are at the gate.",
+            "why": "Quita el sufijo '-ing', pero el error real es usar 'isn't' con 'we' en lugar de 'aren't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Carla está escribiendo un mail para su jefe ahora.",
+        "answers": [
+          "Carla is writing an email to her boss now.",
+          "Carla's writing an email to her boss now."
+        ],
+        "explanation": "Para acciones que están ocurriendo ahora se usa el presente continuo: 'is' + verbo-ing.",
+        "wrongAnswers": [
+          {
+            "answer": "Carla writes an email to her boss now.",
+            "why": "Es presente simple; la oración necesita el presente continuo porque habla de una acción en curso."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Estás esperando el colectivo?",
+        "answers": [
+          "Are you waiting for the bus?"
+        ],
+        "explanation": "En las preguntas de presente continuo el auxiliar va antes del sujeto: 'Are you...?'.",
+        "wrongAnswers": [
+          {
+            "answer": "You are waiting for the bus?",
+            "why": "En las preguntas el auxiliar 'are' debe ir antes del sujeto, no después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Pablo no está trabajando hoy; está viajando a Bariloche.",
+        "answers": [
+          "Pablo isn't working today; he's traveling to Bariloche.",
+          "Pablo isn't working today; he's travelling to Bariloche.",
+          "Pablo is not working today; he is traveling to Bariloche."
+        ],
+        "explanation": "Con 'he' el negativo del presente continuo se forma con 'isn't' + verbo-ing.",
+        "wrongAnswers": [
+          {
+            "answer": "Pablo don't working today; he's traveling to Bariloche.",
+            "why": "El negativo del presente continuo se forma con 'isn't', no con 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¡Mirá! El perro está corriendo por el parque.",
+        "answers": [
+          "Look! The dog is running across the park.",
+          "Look! The dog's running across the park."
+        ],
+        "explanation": "'Run' duplica la consonante final antes de agregar '-ing': 'running'.",
+        "wrongAnswers": [
+          {
+            "answer": "Look! The dog is runing across the park.",
+            "why": "'Run' duplica la 'n' final antes de agregar '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No estamos tirados en la playa, estamos trabajando en un café.",
+        "answers": [
+          "We aren't lying on the beach, we're working at a café.",
+          "We are not lying on the beach, we are working at a café."
+        ],
+        "explanation": "'Lie' cambia 'ie' por 'y' antes de agregar '-ing': 'lying'.",
+        "wrongAnswers": [
+          {
+            "answer": "We aren't liing on the beach, we're working at a café.",
+            "why": "'Lie' cambia la 'ie' por 'y' antes de agregar '-ing': 'lying'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nico y Carla están preparando la cena juntos.",
+        "answers": [
+          "Nico and Carla are making dinner together.",
+          "Nico and Carla's making dinner together."
+        ],
+        "explanation": "'Make' pierde la e final antes de agregar '-ing': 'making'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nico and Carla are makeing dinner together.",
+            "why": "'Make' pierde la e final al agregar '-ing'."
+          }
+        ]
+      }
+    ],
+    "continuo-usos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look! It ___ outside, take an umbrella.",
+        "options": [
+          "snow",
+          "is snowing",
+          "snows",
+          "are snowing"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa el presente continuo para describir una acción que está pasando en este momento.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'is' y el sufijo '-ing'.",
+          "Correcto: se usa presente continuo para acciones en curso en este momento.",
+          "Incorrecto: el presente simple no se usa para una acción que está pasando ahora mismo.",
+          "Incorrecto: 'it' es singular y necesita 'is', no 'are'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Mica ___ with her cousin this month because her apartment is being painted.",
+        "options": [
+          "lives",
+          "living",
+          "is living",
+          "live"
+        ],
+        "correctIndex": 2,
+        "explanation": "'This month' indica una situación temporal, por eso se usa el presente continuo.",
+        "optionNotes": [
+          "Incorrecto: describe una situación permanente, pero la oración es temporal.",
+          "Incorrecto: falta el auxiliar 'is'.",
+          "Correcto: 'this month' indica una situación temporal.",
+          "Incorrecto: falta el auxiliar 'is' y el sufijo '-ing'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ the answer to that question; it's really easy.",
+        "options": [
+          "am knowing",
+          "know",
+          "is knowing",
+          "knows"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Know' es un verbo de estado y casi nunca se usa en presente continuo.",
+        "optionNotes": [
+          "Incorrecto: 'know' es un verbo de estado y no se usa en presente continuo.",
+          "Correcto: los verbos de estado como 'know' van en presente simple.",
+          "Incorrecto: además de usar mal el continuo, el sujeto 'I' no corresponde con 'is'.",
+          "Incorrecto: con 'I' el verbo no lleva -s."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Lucas ___ on the phone right now; call him later.",
+        "options": [
+          "is talking",
+          "talk",
+          "talks",
+          "talking"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'right now' se usa el presente continuo para una acción en curso.",
+        "optionNotes": [
+          "Correcto: se usa presente continuo con 'right now'.",
+          "Incorrecto: falta el auxiliar y el sufijo '-ing' para una acción en curso.",
+          "Incorrecto: el presente simple no corresponde a una acción que ocurre en este momento.",
+          "Incorrecto: falta el auxiliar 'is'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ from home this week because of the strike.",
+        "options": [
+          "are working",
+          "is working",
+          "work",
+          "works"
+        ],
+        "correctIndex": 0,
+        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo.",
+        "optionNotes": [
+          "Correcto: 'this week' indica una situación temporal.",
+          "Incorrecto: 'we' necesita 'are', no 'is'.",
+          "Incorrecto: no indica que la situación es temporal, como sí lo hace el presente continuo.",
+          "Incorrecto: 'we' no lleva -s en el verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ a coffee right now, do you want one too?",
+        "options": [
+          "wants",
+          "am wanting",
+          "want",
+          "is wanting"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Want' es un verbo de estado y va en presente simple, aunque la frase incluya 'right now'.",
+        "optionNotes": [
+          "Incorrecto: con 'I' no corresponde la -s.",
+          "Incorrecto: 'want' es un verbo de estado y no se usa en presente continuo.",
+          "Correcto: los verbos de estado van en presente simple aunque la frase tenga 'right now'.",
+          "Incorrecto: combina mal el sujeto 'I' con 'is' y además 'want' no se usa en continuo."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Look! It ___ outside; take an umbrella.",
+        "hint": "(snow, ahora mismo)",
+        "answers": [
+          "is snowing"
+        ],
+        "explanation": "Se usa el presente continuo para describir una acción que está pasando ahora mismo.",
+        "wrongAnswers": [
+          {
+            "answer": "snows",
+            "why": "El presente simple no se usa para una acción que está pasando en este momento."
+          },
+          {
+            "answer": "snow",
+            "why": "Falta el auxiliar 'is' y el sufijo '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Mica ___ with her cousin this month because her apartment is being painted.",
+        "hint": "(live, situación temporal)",
+        "answers": [
+          "is living"
+        ],
+        "explanation": "Para situaciones temporales, aunque se usen verbos como 'live', se prefiere el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "lives",
+            "why": "'This month' indica una situación temporal, por eso se usa el presente continuo."
+          },
+          {
+            "answer": "live",
+            "why": "Falta el auxiliar 'is'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "I ___ the answer to that question; it's really easy.",
+        "hint": "(know, verbo de estado)",
+        "answers": [
+          "know"
+        ],
+        "explanation": "'Know' es un verbo de estado y va en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "am knowing",
+            "why": "'Know' es un verbo de estado y no se usa en presente continuo."
+          },
+          {
+            "answer": "knows",
+            "why": "Con 'I' el verbo no lleva -s."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Lucas ___ on the phone right now; call him later.",
+        "hint": "(talk)",
+        "answers": [
+          "is talking"
+        ],
+        "explanation": "Con 'right now' se usa el presente continuo para una acción en curso.",
+        "wrongAnswers": [
+          {
+            "answer": "talks",
+            "why": "El presente simple no corresponde a una acción que ocurre en este momento."
+          },
+          {
+            "answer": "talk",
+            "why": "Falta el auxiliar 'is' y el sufijo '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "We ___ from home this week because of the strike.",
+        "hint": "(work, situación temporal)",
+        "answers": [
+          "are working"
+        ],
+        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "work",
+            "why": "No indica que la situación es temporal, como sí lo hace el presente continuo."
+          },
+          {
+            "answer": "is working",
+            "why": "'We' necesita 'are', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "I ___ a glass of water right now; I'm really thirsty.",
+        "hint": "(want, verbo de estado)",
+        "answers": [
+          "want"
+        ],
+        "explanation": "'Want' es un verbo de estado y va en presente simple aunque haya 'right now'.",
+        "wrongAnswers": [
+          {
+            "answer": "am wanting",
+            "why": "'Want' es un verbo de estado y no se usa en presente continuo."
+          },
+          {
+            "answer": "wants",
+            "why": "Con 'I' no corresponde la -s."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Look! It is snowing outside right now.",
+        "alternatives": [],
+        "translation": "¡Mirá! Está nevando afuera ahora.",
+        "explanation": "Se usa el presente continuo ('is' + verbo-ing) para una acción que está pasando en este momento.",
+        "tokens": [
+          "right",
+          "is",
+          "It",
+          "Look!",
+          "snowing",
+          "now",
+          "outside"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Mica is living with her cousin this month.",
+        "alternatives": [],
+        "translation": "Mica está viviendo con su prima este mes.",
+        "explanation": "'This month' indica una situación temporal, por eso se usa el presente continuo.",
+        "tokens": [
+          "with",
+          "is",
+          "her",
+          "Mica",
+          "cousin",
+          "month",
+          "this",
+          "living"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I know the answer to that question.",
+        "alternatives": [],
+        "translation": "Yo sé la respuesta a esa pregunta.",
+        "explanation": "'Know' es un verbo de estado y siempre va en presente simple.",
+        "tokens": [
+          "that",
+          "the",
+          "I",
+          "question",
+          "know",
+          "to",
+          "answer"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Lucas is talking on the phone right now.",
+        "alternatives": [],
+        "translation": "Lucas está hablando por teléfono ahora.",
+        "explanation": "Con 'right now' se usa el presente continuo para una acción en curso.",
+        "tokens": [
+          "Lucas",
+          "now",
+          "on",
+          "right",
+          "talking",
+          "the",
+          "phone",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We are working from home this week.",
+        "alternatives": [],
+        "translation": "Esta semana estamos trabajando desde casa.",
+        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo.",
+        "tokens": [
+          "We",
+          "working",
+          "home",
+          "are",
+          "this",
+          "from",
+          "week"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el uso del presente continuo.",
+        "sentence": "Look! It snows outside; take an umbrella.",
+        "answers": [
+          "Look! It's snowing outside; take an umbrella.",
+          "Look! It is snowing outside; take an umbrella."
+        ],
+        "explanation": "Se usa el presente continuo para una acción que está pasando en este momento, no el presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Look! It snowing outside; take an umbrella.",
+            "why": "Quita la 's' de 'snows' pero no agrega el auxiliar 'is', necesario para el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el uso del presente continuo.",
+        "sentence": "Mica lives with her cousin this month because her apartment is being painted.",
+        "answers": [
+          "Mica is living with her cousin this month because her apartment is being painted."
+        ],
+        "explanation": "'This month' indica una situación temporal, por eso se necesita el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "Mica live with her cousin this month because her apartment is being painted.",
+            "why": "Quita la 's' del verbo pero no agrega el auxiliar 'is' ni el sufijo '-ing', necesarios para describir una situación temporal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el uso del presente continuo.",
+        "sentence": "I am knowing the answer to that question.",
+        "answers": [
+          "I know the answer to that question."
+        ],
+        "explanation": "'Know' es un verbo de estado y casi nunca se usa en presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "I am know the answer to that question.",
+            "why": "Mantiene el auxiliar 'am', que no corresponde porque 'know' es un verbo de estado y no se usa en continuo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el uso del presente continuo.",
+        "sentence": "Lucas talks on the phone right now; call him later.",
+        "answers": [
+          "Lucas is talking on the phone right now; call him later."
+        ],
+        "explanation": "Con 'right now' se usa el presente continuo, no el presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas talk on the phone right now; call him later.",
+            "why": "Quita la 's' del verbo pero no agrega el auxiliar 'is' ni el sufijo '-ing', necesarios para una acción en curso."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el uso del presente continuo.",
+        "sentence": "We works from home this week because of the strike.",
+        "answers": [
+          "We are working from home this week because of the strike.",
+          "We're working from home this week because of the strike."
+        ],
+        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "We work from home this week because of the strike.",
+            "why": "Quita la 's' incorrecta pero no cambia a presente continuo, necesario para describir una situación temporal."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¡Mirá! Está nevando afuera, llevá un paraguas.",
+        "answers": [
+          "Look! It's snowing outside, take an umbrella.",
+          "Look! It is snowing outside, take an umbrella."
+        ],
+        "explanation": "Se usa el presente continuo para describir una acción en curso.",
+        "wrongAnswers": [
+          {
+            "answer": "Look! It snows outside, take an umbrella.",
+            "why": "El presente simple no se usa para una acción que está pasando en este momento."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mica está viviendo con su prima este mes porque están pintando su departamento.",
+        "answers": [
+          "Mica is living with her cousin this month because they're painting her apartment.",
+          "Mica is living with her cousin this month because they are painting her apartment."
+        ],
+        "explanation": "Las situaciones temporales se expresan con presente continuo, aunque el verbo sea 'live'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mica lives with her cousin this month because they're painting her apartment.",
+            "why": "'This month' indica una situación temporal, por eso se usa el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Yo sé la respuesta, es muy fácil.",
+        "answers": [
+          "I know the answer, it's really easy.",
+          "I know the answer, it is really easy."
+        ],
+        "explanation": "'Know' es un verbo de estado y siempre va en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I am knowing the answer, it's really easy.",
+            "why": "'Know' es un verbo de estado y no se usa en presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Lucas está hablando por teléfono ahora, llamalo más tarde.",
+        "answers": [
+          "Lucas is talking on the phone right now, call him later."
+        ],
+        "explanation": "Con 'right now' se usa el presente continuo para una acción en curso.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas talks on the phone right now, call him later.",
+            "why": "El presente simple no corresponde a una acción que está ocurriendo en este momento."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Esta semana estamos trabajando desde casa por el paro.",
+        "answers": [
+          "We're working from home this week because of the strike.",
+          "We are working from home this week because of the strike."
+        ],
+        "explanation": "'This week' indica una situación temporal, por eso se usa el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "We work from home this week because of the strike.",
+            "why": "No indica que la situación es temporal, como sí lo hace el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Quiero un vaso de agua ahora, tengo mucha sed.",
+        "answers": [
+          "I want a glass of water right now, I'm really thirsty.",
+          "I want a glass of water now, I am really thirsty."
+        ],
+        "explanation": "'Want' es un verbo de estado y va en presente simple aunque haya 'right now'.",
+        "wrongAnswers": [
+          {
+            "answer": "I am wanting a glass of water right now, I'm really thirsty.",
+            "why": "'Want' es un verbo de estado y no se usa en presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la conversación telefónica y respondé las preguntas sobre el presente continuo.",
+        "text": "Martina calls her friend Pedro on a Monday morning.\n\n'Hi Pedro! What are you doing right now?' she asks.\n\n'I'm working from home this week,' Pedro answers. 'My office is closed for repairs.'\n\n'That's great! Are you having a coffee break?' Martina asks.\n\n'Yes, I'm drinking coffee at the moment,' says Pedro. 'Look out the window! It's raining a lot in Buenos Aires today.'\n\n'I know,' says Martina. 'I don't like this weather.'\n\n'Me too. But I understand it's good for the plants,' Pedro says, laughing.\n\n'Are you still studying English this month?' Martina asks.\n\n'Yes, I'm taking an online course now. I need more practice,' Pedro answers.\n\n'Good luck!' says Martina.",
+        "questions": [
+          {
+            "prompt": "¿Qué está haciendo Pedro en este momento, según la conversación?",
+            "options": [
+              "He's drinking coffee.",
+              "He's at his office.",
+              "He's cooking dinner.",
+              "He's sleeping."
+            ],
+            "correctIndex": 0,
+            "explanation": "El presente continuo (I'm drinking) describe una acción que está pasando justo en el momento de hablar."
+          },
+          {
+            "prompt": "¿Por qué Pedro dice 'I'm working from home this week'?",
+            "options": [
+              "Porque es una situación temporal mientras su oficina está cerrada.",
+              "Porque siempre trabaja desde su casa.",
+              "Porque está de vacaciones.",
+              "Porque no tiene trabajo."
+            ],
+            "correctIndex": 0,
+            "explanation": "El presente continuo también se usa para situaciones temporales, como trabajar desde casa solo esta semana."
+          },
+          {
+            "prompt": "¿Por qué Martina dice 'I know' y 'I don't like this weather' en presente simple y no en continuo?",
+            "options": [
+              "Porque está hablando del futuro.",
+              "Porque el continuo solo se usa en preguntas.",
+              "Porque know y like son verbos de estado y casi no se usan en continuo.",
+              "Porque cometió un error de gramática."
+            ],
+            "correctIndex": 2,
+            "explanation": "Verbos de estado como know y like expresan algo permanente, no una acción en curso, por eso van en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la videollamada con el médico y respondé las preguntas sobre el presente continuo.",
+        "text": "Dr. Fernández is on a video call with her patient, Nicolás, in Mendoza.\n\n'How are you feeling today?' she asks.\n\n'I'm feeling better, thanks,' says Nicolás. 'But I'm coughing a lot right now.'\n\n'I see. Are you taking the medicine I gave you?' Dr. Fernández asks.\n\n'Yes, I'm taking it twice a day,' Nicolás answers. 'I'm staying at my sister's house this week because my apartment needs repairs.'\n\n'That's fine. Do you understand how to use the inhaler?' the doctor asks.\n\n'Yes, I understand it very well,' says Nicolás. 'I don't need help with that.'\n\n'Perfect. Look at your arm. Is it still hurting?'\n\n'No, it isn't hurting now. I'm feeling much better,' Nicolás says, smiling.\n\n'Great! Call me if you need anything,' says Dr. Fernández.",
+        "questions": [
+          {
+            "prompt": "¿Qué está haciendo Nicolás en este momento, según la llamada?",
+            "options": [
+              "He's eating lunch.",
+              "He's driving to the doctor.",
+              "He's sleeping.",
+              "He's coughing a lot."
+            ],
+            "correctIndex": 3,
+            "explanation": "El presente continuo (I'm coughing) describe algo que está pasando justo en el momento de la llamada."
+          },
+          {
+            "prompt": "¿Por qué Nicolás dice 'I'm staying at my sister's house this week'?",
+            "options": [
+              "Porque es una situación temporal mientras reparan su departamento.",
+              "Porque su hermana está enferma.",
+              "Porque está de viaje de vacaciones.",
+              "Porque vive ahí permanentemente."
+            ],
+            "correctIndex": 0,
+            "explanation": "El presente continuo se usa para situaciones temporales, como quedarse en otra casa solo por un tiempo limitado."
+          },
+          {
+            "prompt": "¿Por qué Nicolás usa el presente simple en 'I understand' y 'I need' en lugar del continuo?",
+            "options": [
+              "Porque understand y need son verbos de estado y casi no se usan en continuo.",
+              "Porque cometió un error de gramática.",
+              "Porque esos verbos siempre necesitan 'do'.",
+              "Porque está hablando del pasado."
+            ],
+            "correctIndex": 0,
+            "explanation": "Los verbos de estado como understand y need expresan algo que no cambia momento a momento, por eso van en presente simple."
+          }
+        ]
+      }
+    ],
+    "simple-vs-continuo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Marcos usually drives to work, but today he ___ by bus because his car is broken.",
+        "options": [
+          "goes",
+          "is going",
+          "is go",
+          "go"
+        ],
+        "correctIndex": 1,
+        "explanation": "Today marca una situación temporal y puntual, por eso se usa presente continuo.",
+        "optionNotes": [
+          "Incorrecto: goes es presente simple, pero today pide continuo.",
+          "Correcto: today indica algo temporal, se usa presente continuo.",
+          "Incorrecto: is go no es una forma verbal válida, falta el -ing.",
+          "Incorrecto: falta la -s y de todos modos no es la forma continua que se necesita."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Laura ___ tennis every Saturday morning.",
+        "options": [
+          "play",
+          "plays",
+          "is playing",
+          "playing"
+        ],
+        "correctIndex": 1,
+        "explanation": "Every Saturday morning describe un hábito, por eso se usa presente simple con -s en tercera persona.",
+        "optionNotes": [
+          "Incorrecto: falta la -s de la tercera persona singular en presente simple.",
+          "Correcto: presente simple con -s para la tercera persona singular.",
+          "Incorrecto: every Saturday indica un hábito, no una acción en curso.",
+          "Incorrecto: falta el auxiliar is y además el continuo no corresponde a un hábito."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "What ___ you doing right now? I can hear music.",
+        "options": [
+          "are",
+          "is",
+          "do",
+          "does"
+        ],
+        "correctIndex": 0,
+        "explanation": "Right now indica una acción en curso, por eso se necesita el auxiliar are del presente continuo.",
+        "optionNotes": [
+          "Correcto: right now pide continuo, y el sujeto you usa are.",
+          "Incorrecto: el sujeto you necesita are, no is.",
+          "Incorrecto: falta el auxiliar be para formar el presente continuo.",
+          "Incorrecto: does se usa en presente simple, no en continuo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta del médico.",
+        "prompt": "Doctor: Do you ___ a lot of coffee every day?",
+        "options": [
+          "drinking",
+          "drink",
+          "drinks",
+          "are drinking"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después del auxiliar do el verbo va en infinitivo sin -s, y every day confirma que es presente simple.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar correcto y la forma no corresponde a una pregunta con do.",
+          "Correcto: después de do el verbo va en infinitivo, sin -s.",
+          "Incorrecto: con el auxiliar do no se agrega -s al verbo.",
+          "Incorrecto: every day indica un hábito, no una acción en curso."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look! That man ___ his suitcase. I think it's broken.",
+        "options": [
+          "carrying",
+          "carries",
+          "is carrying",
+          "carry"
+        ],
+        "correctIndex": 2,
+        "explanation": "Look! señala que algo está pasando en este momento, por eso se usa presente continuo.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar is para formar el presente continuo.",
+          "Incorrecto: el presente simple no describe lo que está pasando en este momento.",
+          "Correcto: Look! indica una acción que está pasando ahora.",
+          "Incorrecto: falta la -s y de todos modos no es la forma continua necesaria."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ English very well, but I'm still learning French.",
+        "options": [
+          "is speaking",
+          "am speaking",
+          "speaks",
+          "speak"
+        ],
+        "correctIndex": 3,
+        "explanation": "Hablar bien un idioma es una habilidad general y permanente, por eso se usa presente simple.",
+        "optionNotes": [
+          "Incorrecto: el sujeto I nunca usa el auxiliar is.",
+          "Incorrecto: hablar inglés bien es una habilidad general, no algo temporal.",
+          "Incorrecto: el sujeto I no lleva -s en presente simple.",
+          "Correcto: presente simple para describir una capacidad o hecho general."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Every morning, Sofía ___ her dog before work.",
+        "hint": "(walk)",
+        "answers": [
+          "walks"
+        ],
+        "explanation": "Los hábitos que se repiten (every morning) se expresan con presente simple y la -s de la tercera persona.",
+        "wrongAnswers": [
+          {
+            "answer": "is walking",
+            "why": "Every morning indica un hábito, se necesita presente simple, no continuo."
+          },
+          {
+            "answer": "walk",
+            "why": "Falta la -s de la tercera persona singular en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Right now, the kids ___ a cartoon in the living room.",
+        "hint": "(watch)",
+        "answers": [
+          "are watching"
+        ],
+        "explanation": "Right now señala una acción que está pasando en este momento, por eso se usa presente continuo con are para sujetos plurales.",
+        "wrongAnswers": [
+          {
+            "answer": "watch",
+            "why": "Right now indica una acción en curso, se necesita presente continuo."
+          },
+          {
+            "answer": "is watching",
+            "why": "El sujeto the kids es plural y necesita are, no is."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "This week, Mariana ___ the bus to work because the train station is closed.",
+        "hint": "(take)",
+        "answers": [
+          "is taking"
+        ],
+        "explanation": "This week indica algo temporal y distinto de lo habitual, por eso se usa presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "takes",
+            "why": "This week señala una situación temporal, se necesita presente continuo."
+          },
+          {
+            "answer": "take",
+            "why": "Falta el auxiliar is para formar el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa correcta del verbo entre paréntesis.",
+        "sentence": "My grandfather ___ coffee; he prefers tea.",
+        "hint": "(not drink)",
+        "answers": [
+          "doesn't drink",
+          "does not drink"
+        ],
+        "explanation": "Una costumbre general y permanente se expresa en presente simple, con doesn't para la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "isn't drinking",
+            "why": "Es un hábito general y permanente, se necesita presente simple, no continuo."
+          },
+          {
+            "answer": "don't drink",
+            "why": "El sujeto my grandfather es tercera persona singular y necesita doesn't, no don't."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Excuse me, ___ for a two-bedroom apartment?",
+        "hint": "(you / look - pregunta sobre ahora)",
+        "answers": [
+          "are you looking"
+        ],
+        "explanation": "Preguntar por una búsqueda activa en el presente requiere presente continuo con el auxiliar antes del sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "do you look",
+            "why": "La pregunta es sobre algo que la persona está haciendo en este momento, se necesita continuo."
+          },
+          {
+            "answer": "you are looking",
+            "why": "En preguntas, el auxiliar are va antes del sujeto you."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Hey Diego, what ___ tonight? Do you want to come to my house?",
+        "hint": "(you / do)",
+        "answers": [
+          "are you doing"
+        ],
+        "explanation": "Tonight se refiere a un plan puntual, por eso se usa presente continuo con el auxiliar antes del sujeto en la pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "do you do",
+            "why": "Tonight indica un plan específico de esta noche, se necesita presente continuo."
+          },
+          {
+            "answer": "you doing",
+            "why": "Falta el auxiliar are para formar la pregunta en presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She usually eats lunch at home.",
+        "alternatives": [
+          "Usually, she eats lunch at home."
+        ],
+        "translation": "Ella generalmente almuerza en casa.",
+        "explanation": "Usually con un hábito pide presente simple; el adverbio de frecuencia va antes del verbo o al principio de la oración.",
+        "tokens": [
+          "lunch",
+          "at",
+          "eats",
+          "home",
+          "usually",
+          "She"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I am working from home today.",
+        "alternatives": [
+          "Today I am working from home."
+        ],
+        "translation": "Hoy estoy trabajando desde casa.",
+        "explanation": "Today indica una situación temporal, distinta de lo habitual, por eso se usa presente continuo.",
+        "tokens": [
+          "home",
+          "am",
+          "from",
+          "I",
+          "today",
+          "working"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Do you usually travel by plane?",
+        "alternatives": [],
+        "translation": "¿Generalmente viajás en avión?",
+        "explanation": "Para preguntar sobre un hábito se usa presente simple con el auxiliar do al inicio de la pregunta.",
+        "tokens": [
+          "by",
+          "travel",
+          "usually",
+          "you",
+          "plane",
+          "Do"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She is washing the dishes right now.",
+        "alternatives": [
+          "Right now, she is washing the dishes."
+        ],
+        "translation": "Ella está lavando los platos ahora mismo.",
+        "explanation": "Right now indica que la acción está pasando en este momento, por eso se usa presente continuo.",
+        "tokens": [
+          "dishes",
+          "now",
+          "washing",
+          "right",
+          "She",
+          "the",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We are meeting the landlord this afternoon.",
+        "alternatives": [],
+        "translation": "Nos encontramos con el propietario esta tarde.",
+        "explanation": "This afternoon indica un plan específico y temporal, por eso se usa presente continuo.",
+        "tokens": [
+          "this",
+          "meeting",
+          "the",
+          "landlord",
+          "We",
+          "afternoon",
+          "are"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I am playing football every Saturday with my friends.",
+        "answers": [
+          "I play football every Saturday with my friends."
+        ],
+        "explanation": "Every Saturday describe un hábito, por eso el verbo debe estar en presente simple, no en continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "I am playing football every Saturday with my friend.",
+            "why": "Cambiar friends por friend no corrige el error; el problema es usar continuo con un hábito (every Saturday)."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Right now, my sister cooks dinner in the kitchen.",
+        "answers": [
+          "Right now, my sister is cooking dinner in the kitchen."
+        ],
+        "explanation": "Right now indica una acción en curso en este momento, por eso se necesita presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "Right now, my sister cook dinner in the kitchen.",
+            "why": "Quitar la -s no corrige el error real: con right now se necesita presente continuo, no simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Mariano doesn't working today because he's sick.",
+        "answers": [
+          "Mariano isn't working today because he's sick."
+        ],
+        "explanation": "Para negar una acción temporal de hoy se usa el presente continuo con isn't, no doesn't.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariano doesn't work today because he's sick.",
+            "why": "Today indica una situación temporal, se necesita presente continuo negativo con isn't, no presente simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Every winter, we are skiing in Bariloche.",
+        "answers": [
+          "Every winter, we ski in Bariloche."
+        ],
+        "explanation": "Every winter describe un hábito que se repite, por eso se usa presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Every winter, we are ski in Bariloche.",
+            "why": "Esta forma sigue sin ser correcta: hay que usar presente simple completo, no una mezcla de continuo y simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Look! The bus is arrive at the corner.",
+        "answers": [
+          "Look! The bus is arriving at the corner."
+        ],
+        "explanation": "El verbo en presente continuo necesita la terminación -ing después del auxiliar is.",
+        "wrongAnswers": [
+          {
+            "answer": "Look! The bus arrives at the corner.",
+            "why": "Con Look! se describe una acción que está pasando ahora, se necesita presente continuo, no simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿A qué hora empezás a trabajar normalmente?",
+        "answers": [
+          "What time do you usually start work?",
+          "What time do you usually start working?"
+        ],
+        "explanation": "Normalmente señala una rutina, por eso la pregunta se forma con presente simple y el auxiliar do.",
+        "wrongAnswers": [
+          {
+            "answer": "What time are you usually starting work?",
+            "why": "Normalmente indica un hábito, se necesita presente simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estoy buscando un departamento de un dormitorio en Palermo.",
+        "answers": [
+          "I'm looking for a one-bedroom apartment in Palermo.",
+          "I am looking for a one-bedroom apartment in Palermo."
+        ],
+        "explanation": "Una acción que se está desarrollando actualmente se expresa con presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "I look for a one-bedroom apartment in Palermo.",
+            "why": "La búsqueda es algo que estás haciendo en este período, se necesita presente continuo, no simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi médico siempre revisa mi presión antes de la consulta.",
+        "answers": [
+          "My doctor always checks my blood pressure before the appointment.",
+          "My doctor always checks my blood pressure before the consultation.",
+          "My doctor always checks my blood pressure before the visit."
+        ],
+        "explanation": "Una rutina habitual se describe con presente simple, incluso con el adverbio always.",
+        "wrongAnswers": [
+          {
+            "answer": "My doctor is always checking my blood pressure before the appointment.",
+            "why": "Siempre con una rutina médica general pide presente simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Qué estás haciendo en este momento?",
+        "answers": [
+          "What are you doing right now?",
+          "What are you doing at the moment?"
+        ],
+        "explanation": "En este momento señala que algo está pasando ahora, por eso se usa presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "What do you do right now?",
+            "why": "En este momento indica una acción actual, se necesita presente continuo, no simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Normalmente alquilamos un auto cuando viajamos a Bariloche.",
+        "answers": [
+          "We usually rent a car when we travel to Bariloche.",
+          "We usually rent a car when we go to Bariloche."
+        ],
+        "explanation": "Un hábito que se repite en los viajes se expresa con presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "We are usually renting a car when we travel to Bariloche.",
+            "why": "Normalmente describe un hábito, se necesita presente simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hoy no estoy trabajando porque tengo una entrevista de trabajo.",
+        "answers": [
+          "Today I'm not working because I have a job interview.",
+          "Today I am not working because I have a job interview."
+        ],
+        "explanation": "Hoy indica una excepción temporal a la rutina, por eso se usa presente continuo negativo con am not.",
+        "wrongAnswers": [
+          {
+            "answer": "Today I don't work because I have a job interview.",
+            "why": "Hoy señala una situación temporal de ese día, se necesita presente continuo negativo, no simple."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Hi! My name is Laura and I live in Buenos Aires. I usually work in a bank from Monday to Friday. Every morning, I take the bus to work, but this week is different. My car is broken, so today I'm walking to the office. It's a nice day, and I'm enjoying the walk! At the moment, I'm standing at a corner near Plaza de Mayo, and I'm waiting for my friend Sofía. We always have coffee together before work, but today we're meeting a little later because the bus is late. Sofía doesn't usually drink coffee in the morning, but today she wants a cappuccino because she's very tired.",
+        "questions": [
+          {
+            "prompt": "What does Laura usually do to get to work?",
+            "options": [
+              "She usually takes the bus.",
+              "She usually rides a bike.",
+              "She usually walks.",
+              "She usually drives a car."
+            ],
+            "correctIndex": 0,
+            "explanation": "La palabra 'usually' indica un hábito, y el texto dice 'I take the bus to work' en presente simple."
+          },
+          {
+            "prompt": "Why is Laura walking to work today?",
+            "options": [
+              "Because she wants exercise.",
+              "Because her car is broken.",
+              "Because she is meeting Sofía.",
+              "Because the bus is late."
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'My car is broken, so today I'm walking to the office', una acción puntual por una razón concreta de hoy."
+          },
+          {
+            "prompt": "What is Laura doing at the moment?",
+            "options": [
+              "She's taking the bus.",
+              "She's working in the bank.",
+              "She's waiting for Sofía.",
+              "She's drinking coffee."
+            ],
+            "correctIndex": 2,
+            "explanation": "La expresión 'at the moment' señala una acción que está pasando ahora, por eso se usa presente continuo: 'I'm waiting for my friend Sofía'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Dear Diary, my name is Martín and I work as a waiter in a restaurant in Palermo. I usually start work at six in the evening and finish at midnight. I like my job, but tonight is a bit strange. The restaurant isn't busy, so I'm standing near the door and I'm talking to my coworker, Flor. We don't usually have time to chat during work, but tonight it's quiet. My boss, Daniel, usually checks the kitchen every hour, but right now he's sitting in his office because he isn't feeling well. Flor usually works on Tuesdays, but today she's covering for another waiter because he's sick. I hope more customers arrive soon!",
+        "questions": [
+          {
+            "prompt": "What does Martín usually do at work?",
+            "options": [
+              "He usually checks the kitchen.",
+              "He usually starts work at six in the evening.",
+              "He usually sits in the office.",
+              "He usually works on Tuesdays."
+            ],
+            "correctIndex": 1,
+            "explanation": "La palabra 'usually' marca una rutina, y el texto dice 'I usually start work at six in the evening' en presente simple."
+          },
+          {
+            "prompt": "Why is Daniel sitting in his office right now?",
+            "options": [
+              "Because he's covering for another waiter.",
+              "Because he's talking to Flor.",
+              "Because he isn't feeling well.",
+              "Because he's checking the kitchen."
+            ],
+            "correctIndex": 2,
+            "explanation": "La expresión 'right now' indica una acción actual, y el texto explica el motivo puntual: 'because he isn't feeling well'."
+          },
+          {
+            "prompt": "Why is Flor working tonight?",
+            "options": [
+              "Because she usually works on Tuesdays.",
+              "Because her boss asked her to check the kitchen.",
+              "Because the restaurant is busy.",
+              "Because she's covering for another waiter."
+            ],
+            "correctIndex": 3,
+            "explanation": "La palabra 'today' introduce una situación temporal distinta del hábito, por eso se usa presente continuo: 'today she's covering for another waiter'."
+          }
+        ]
+      }
+    ],
+    "describir-escena": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "In the photo, there ___ two children playing near the tree.",
+        "options": [
+          "have",
+          "do",
+          "is",
+          "are"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para describir una escena con un sujeto plural se usa 'there are', no 'there is'.",
+        "optionNotes": [
+          "Incorrecto: 'have' no se combina con 'there' para describir una escena.",
+          "Incorrecto: 'do' no corresponde a esta estructura.",
+          "Incorrecto: 'is' se usa con sujetos singulares, no con 'two children'.",
+          "Correcto: 'there are' concuerda con el sujeto plural 'two children'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The woman ___ next to the tree is reading a book.",
+        "options": [
+          "sits",
+          "is sit",
+          "sit",
+          "sitting"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para describir lo que alguien está haciendo en una imagen se usa el verbo en '-ing' como descripción adicional, sin otro auxiliar.",
+        "optionNotes": [
+          "Incorrecto: 'sits' es presente simple y no describe una acción en curso dentro de la imagen.",
+          "Incorrecto: 'is sit' no es una forma correcta en inglés.",
+          "Incorrecto: 'sit' es la forma base del verbo y no describe la acción en curso.",
+          "Correcto: 'sitting' describe a la mujer como una acción que se ve en la imagen, funcionando como descripción adicional."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look, there's a sign in the park. Visitors ___ play football here.",
+        "options": [
+          "not can",
+          "can't",
+          "isn't can",
+          "doesn't can"
+        ],
+        "correctIndex": 1,
+        "explanation": "La negación de 'can' es 'can't' (o 'cannot'); no se combina con 'not', 'isn't' ni 'doesn't'.",
+        "optionNotes": [
+          "Incorrecto: el orden correcto es 'can't', no 'not can'.",
+          "Correcto: 'can't' es la forma negativa de 'can', usada para prohibiciones.",
+          "Incorrecto: 'can' no se niega con 'isn't'.",
+          "Incorrecto: 'can' no se combina con 'doesn't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ the picture, a man is talking on the phone.",
+        "options": [
+          "At",
+          "On",
+          "To",
+          "In"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para describir lo que se ve en una imagen se usa la expresión 'in the picture'.",
+        "optionNotes": [
+          "Incorrecto: no se usa 'at' con 'picture' para esta descripción.",
+          "Incorrecto: no se usa 'on' con 'picture' en este sentido.",
+          "Incorrecto: 'to the picture' no tiene sentido en esta oración.",
+          "Correcto: la expresión para describir una imagen es 'in the picture'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "In the photo, my nephew ___ ride a bike without help.",
+        "options": [
+          "can to",
+          "cans",
+          "is can",
+          "can"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Can' expresa habilidad, no cambia con la persona y va seguido del verbo base sin 'to'.",
+        "optionNotes": [
+          "Incorrecto: después de 'can' el verbo va sin 'to'.",
+          "Incorrecto: 'can' nunca lleva -s.",
+          "Incorrecto: no se combina 'is' con 'can'.",
+          "Correcto: 'can' expresa habilidad y no cambia según el sujeto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "There ___ a dog running next to the kids in the park.",
+        "options": [
+          "are",
+          "has",
+          "is",
+          "be"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con un sujeto singular como 'a dog' corresponde 'there is', no 'there are'.",
+        "optionNotes": [
+          "Incorrecto: 'are' se usa con sujetos plurales, no con 'a dog'.",
+          "Incorrecto: 'has' no se combina con 'there' para describir una escena.",
+          "Correcto: 'there is' concuerda con el sujeto singular 'a dog'.",
+          "Incorrecto: 'be' no es la forma conjugada correcta después de 'there'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con 'there is' o 'there are'.",
+        "sentence": "In the photo, there ___ two women talking near the door.",
+        "hint": "(there is / there are)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Con sujetos plurales como 'two women' se usa 'there are'.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'Two women' es un sujeto plural, corresponde 'there are'."
+          },
+          {
+            "answer": "have",
+            "why": "'Have' no se usa junto con 'there' para describir una escena."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración describiendo la acción en curso.",
+        "sentence": "The man ___ next to the window is drinking coffee.",
+        "hint": "(stand - descripción con -ing)",
+        "answers": [
+          "standing"
+        ],
+        "explanation": "Para describir una acción en curso como parte adicional de la oración se usa el verbo en '-ing', sin agregar otro auxiliar.",
+        "wrongAnswers": [
+          {
+            "answer": "stands",
+            "why": "El presente simple no describe una acción en curso dentro de una escena; se usa el gerundio 'standing'."
+          },
+          {
+            "answer": "is standing",
+            "why": "Agregar 'is' aquí es incorrecto porque la oración ya tiene el verbo principal 'is drinking'; 'standing' funciona como descripción adicional sin otro auxiliar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa de 'can'.",
+        "sentence": "Visitors ___ play football in this area.",
+        "hint": "(can - prohibición)",
+        "answers": [
+          "can't",
+          "cannot"
+        ],
+        "explanation": "La negación de 'can' es 'can't' o 'cannot', usada para indicar que algo no está permitido.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't can",
+            "why": "'Can' no se niega con 'doesn't'; la forma correcta es 'can't' o 'cannot'."
+          },
+          {
+            "answer": "not can",
+            "why": "El orden correcto es 'can't', no 'not can'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'can'.",
+        "sentence": "My nephew ___ swim very well for his age.",
+        "hint": "(can - habilidad)",
+        "answers": [
+          "can"
+        ],
+        "explanation": "'Can' expresa habilidad y no cambia con la persona; va seguido del verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "cans",
+            "why": "'Can' nunca lleva -s, no cambia según el sujeto."
+          },
+          {
+            "answer": "is can",
+            "why": "No se combina 'is' con 'can'; alcanza con 'can' solo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición correcta.",
+        "sentence": "___ the right, there's a small café with tables outside.",
+        "hint": "(preposición de lugar)",
+        "answers": [
+          "On"
+        ],
+        "explanation": "Para ubicar algo a un lado de una escena se usa 'on the left/right'.",
+        "wrongAnswers": [
+          {
+            "answer": "At",
+            "why": "Para ubicar algo en una imagen se usa 'on the right', no 'at the right'."
+          },
+          {
+            "answer": "In",
+            "why": "La expresión correcta es 'on the right', no 'in the right'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con 'there is' o 'there are'.",
+        "sentence": "There ___ a lot of people walking in the square today.",
+        "hint": "(there is / there are)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Con sujetos plurales como 'a lot of people' se usa 'there are'.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'A lot of people' es un sujeto plural, corresponde 'there are'."
+          },
+          {
+            "answer": "have",
+            "why": "'Have' no se combina con 'there' para describir una escena."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There are two dogs playing in the park.",
+        "alternatives": [],
+        "translation": "Hay dos perros jugando en el parque.",
+        "explanation": "'There are' se usa con sujetos plurales, seguido del verbo en '-ing' para describir la acción.",
+        "tokens": [
+          "playing",
+          "park",
+          "are",
+          "two",
+          "in",
+          "dogs",
+          "the",
+          "There"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The man on the left is smiling.",
+        "alternatives": [],
+        "translation": "El hombre de la izquierda está sonriendo.",
+        "explanation": "Las preposiciones de lugar como 'on the left' ubican a la persona dentro de la escena.",
+        "tokens": [
+          "on",
+          "left",
+          "smiling",
+          "man",
+          "is",
+          "The",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She can't swim in this pool today.",
+        "alternatives": [],
+        "translation": "Ella no puede nadar en esta pileta hoy.",
+        "explanation": "'Can't' expresa que algo no está permitido o no es posible en ese momento.",
+        "tokens": [
+          "today",
+          "in",
+          "can't",
+          "She",
+          "this",
+          "pool",
+          "swim"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There is a woman reading a book.",
+        "alternatives": [
+          "There's a woman reading a book."
+        ],
+        "translation": "Hay una mujer leyendo un libro.",
+        "explanation": "'There is' se usa con un sujeto singular, seguido de la acción en '-ing' para describir la escena.",
+        "tokens": [
+          "a",
+          "a",
+          "is",
+          "reading",
+          "book",
+          "There",
+          "woman"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My nephew can ride a bike very well.",
+        "alternatives": [],
+        "translation": "Mi sobrino puede andar en bici muy bien.",
+        "explanation": "'Can' expresa habilidad y va seguido del verbo base sin 'to'.",
+        "tokens": [
+          "ride",
+          "a",
+          "can",
+          "bike",
+          "nephew",
+          "My",
+          "well",
+          "very"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "In the photo, two kids is playing in the sand.",
+        "answers": [
+          "In the photo, two kids are playing in the sand."
+        ],
+        "explanation": "Con un sujeto plural como 'two kids' el presente continuo necesita 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "In the photo, two kids is play in the sand.",
+            "why": "Quitar el '-ing' no corrige el error real: el problema es la concordancia 'is/are' con el sujeto plural, y el verbo principal debe mantener la forma continua."
+          },
+          {
+            "answer": "In the photo, two kid is playing in the sand.",
+            "why": "Cambiar 'kids' por 'kid' no corrige el error; el sujeto es plural ('two kids') y el verbo debe ser 'are playing'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "She can to drive a car.",
+        "answers": [
+          "She can drive a car."
+        ],
+        "explanation": "Después de 'can' el verbo va en forma base, sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "She cans drive a car.",
+            "why": "'Can' nunca lleva -s, no cambia según el sujeto."
+          },
+          {
+            "answer": "She is can drive a car.",
+            "why": "No se combina 'is' con 'can'; alcanza con 'can' solo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "On the picture, a dog is running in the garden.",
+        "answers": [
+          "In the picture, a dog is running in the garden."
+        ],
+        "explanation": "Para describir lo que se ve en una imagen se usa la expresión 'in the picture', no 'on the picture'.",
+        "wrongAnswers": [
+          {
+            "answer": "At the picture, a dog is running in the garden.",
+            "why": "No se usa 'at' con 'picture'; se dice 'in the picture'."
+          },
+          {
+            "answer": "In the picture, a dog running in the garden.",
+            "why": "Falta el verbo auxiliar 'is' para formar correctamente el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "There are a woman sitting next to the window.",
+        "answers": [
+          "There is a woman sitting next to the window."
+        ],
+        "explanation": "Con un sujeto singular como 'a woman' se usa 'there is', no 'there are'.",
+        "wrongAnswers": [
+          {
+            "answer": "There're a woman sitting next to the window.",
+            "why": "'There're' es la contracción de 'there are', pero el sujeto 'a woman' es singular, por lo que corresponde 'there is'."
+          },
+          {
+            "answer": "There is a woman sitting on the window.",
+            "why": "Cambia la preposición correcta 'next to' por 'on', alterando el significado de la ubicación."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "The kids can't to play here, it's dangerous.",
+        "answers": [
+          "The kids can't play here, it's dangerous."
+        ],
+        "explanation": "Después de 'can't' el verbo va sin 'to' y sin terminaciones extra.",
+        "wrongAnswers": [
+          {
+            "answer": "The kids don't can play here, it's dangerous.",
+            "why": "La negación de 'can' es 'can't' o 'cannot', no 'don't can'."
+          },
+          {
+            "answer": "The kids can't plays here, it's dangerous.",
+            "why": "Después de 'can't' el verbo va en forma base, sin -s."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "En la foto hay dos chicos jugando en la playa.",
+        "answers": [
+          "In the photo, there are two kids playing on the beach.",
+          "There are two kids playing on the beach in the photo."
+        ],
+        "explanation": "'Hay' + sujeto plural se traduce con 'there are', y la acción en curso con el verbo en '-ing'.",
+        "wrongAnswers": [
+          {
+            "answer": "In the photo, there is two kids playing on the beach.",
+            "why": "'Two kids' es plural, corresponde 'there are', no 'there is'."
+          },
+          {
+            "answer": "In the photo, there are two kids that play on the beach.",
+            "why": "Para describir la acción en curso de la imagen se usa el gerundio 'playing', no el presente simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La mujer de la izquierda está leyendo un libro.",
+        "answers": [
+          "The woman on the left is reading a book.",
+          "On the left, the woman is reading a book."
+        ],
+        "explanation": "La ubicación en una imagen se expresa con 'on the left/right', y la acción en curso con presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "The woman in the left is reading a book.",
+            "why": "La preposición correcta para ubicar algo en una imagen es 'on the left', no 'in the left'."
+          },
+          {
+            "answer": "The woman on the left reads a book.",
+            "why": "Para describir lo que está pasando en la imagen se usa el presente continuo, no el presente simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No podés nadar en esta pileta hoy, está cerrada.",
+        "answers": [
+          "You can't swim in this pool today, it's closed.",
+          "You cannot swim in this pool today, it's closed."
+        ],
+        "explanation": "La negación de 'can' es 'can't' (o 'cannot'), seguida del verbo base sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "You don't can swim in this pool today, it's closed.",
+            "why": "La negación de 'can' es 'can't' o 'cannot', no 'don't can'."
+          },
+          {
+            "answer": "You can't to swim in this pool today, it's closed.",
+            "why": "Después de 'can't' el verbo va sin 'to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi sobrino puede andar en bici sin ayuda.",
+        "answers": [
+          "My nephew can ride a bike without help.",
+          "My nephew can ride a bike on his own."
+        ],
+        "explanation": "'Can' expresa habilidad y no cambia según el sujeto; va seguido del verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "My nephew can rides a bike without help.",
+            "why": "Después de 'can' el verbo va en forma base, sin -s."
+          },
+          {
+            "answer": "My nephew cans ride a bike without help.",
+            "why": "'Can' nunca lleva -s, no cambia según el sujeto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "En el fondo de la imagen hay una montaña.",
+        "answers": [
+          "In the background of the picture, there's a mountain.",
+          "There's a mountain in the background of the picture."
+        ],
+        "explanation": "La expresión correcta para ubicar algo detrás en una imagen es 'in the background', y con 'there' se usa 'is/are'.",
+        "wrongAnswers": [
+          {
+            "answer": "At the background of the picture, there's a mountain.",
+            "why": "La preposición correcta es 'in the background', no 'at the background'."
+          },
+          {
+            "answer": "In the background of the picture, there has a mountain.",
+            "why": "Con 'there' se usa 'is/are', no 'has'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hay un perro corriendo al lado del árbol.",
+        "answers": [
+          "There's a dog running next to the tree.",
+          "There is a dog running next to the tree."
+        ],
+        "explanation": "Para señalar que algo existe en una escena se usa 'there is/there's', y la acción en curso se describe con el gerundio.",
+        "wrongAnswers": [
+          {
+            "answer": "There's a dog that runs next to the tree.",
+            "why": "Para describir una acción que se ve en curso se prefiere el gerundio 'running', no el presente simple."
+          },
+          {
+            "answer": "It's a dog running next to the tree.",
+            "why": "Para señalar la existencia de algo en una escena se usa 'there is/there's', no 'it's'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Camila is sending a message to her friend Juan about a photo from the park near her new apartment.\n'Look at this picture! There are a lot of people in the park today. On the left, there's a man. He's sitting on a bench and he's reading a newspaper. In the middle, two girls are playing with a dog. The dog can run very fast! On the right, there's a food truck. A woman is selling coffee and sandwiches there. In the background, you can see some trees and a small lake. People can walk around the lake, but they can't swim in it. It's a beautiful place for a weekend walk.'",
+        "questions": [
+          {
+            "prompt": "Where is the man with the newspaper?",
+            "options": [
+              "In the middle",
+              "On the left",
+              "On the right",
+              "In the background"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'On the left, there's a man... reading a newspaper', usando la preposición de lugar 'on the left'."
+          },
+          {
+            "prompt": "What are the two girls doing?",
+            "options": [
+              "They're reading a newspaper",
+              "They're selling coffee",
+              "They're playing with a dog",
+              "They're swimming in the lake"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto usa presente continuo: 'two girls are playing with a dog', para describir una acción en curso en la escena."
+          },
+          {
+            "prompt": "What can people do at the lake?",
+            "options": [
+              "They can swim in it",
+              "They can sell coffee there",
+              "They can't walk near it",
+              "They can walk around it"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'People can walk around the lake, but they can't swim in it', usando can y can't para describir lo permitido."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Hi Laura! It's Mariana! I'm sending you photos of the apartment. In the living room, there's a big window on the left, and next to it, there's a green sofa. The landlord is standing in the middle of the room, and he's explaining the rules to me. In the kitchen, there's a small table, but there isn't a dishwasher. You can see a balcony in the background; it's very sunny there. The landlord says I can have a pet, but I can't make noise after ten at night. On the right, there's a bedroom with a big bed. I really like this place!",
+        "questions": [
+          {
+            "prompt": "What is on the left in the living room?",
+            "options": [
+              "A bedroom",
+              "A balcony",
+              "A big window",
+              "A green sofa"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'there's a big window on the left', usando la preposición de lugar 'on the left' para ubicar el objeto."
+          },
+          {
+            "prompt": "What is the landlord doing?",
+            "options": [
+              "He's selling coffee",
+              "He's explaining the rules to Mariana",
+              "He's reading a newspaper",
+              "He's cleaning the kitchen"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto usa presente continuo: 'he's explaining the rules to me' (Mariana es quien escribe el mensaje), para describir la acción que está pasando en ese momento."
+          },
+          {
+            "prompt": "What can't Mariana do after ten at night?",
+            "options": [
+              "She can't make noise",
+              "She can't see the bedroom",
+              "She can't use the balcony",
+              "She can't have a pet"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'I can't make noise after ten at night', usando can't para expresar una restricción o regla del lugar."
+          }
+        ]
+      }
+    ]
+  }
+}

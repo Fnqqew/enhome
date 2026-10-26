@@ -13,15 +13,24 @@ export function openDatabase(path: string, migrations: Migration[] = MIGRATIONS)
 
   const current = (db.prepare('SELECT COALESCE(MAX(version), 0) AS v FROM schema_migrations').get() as { v: number }).v
   for (const m of migrations.filter((m) => m.version > current).sort((a, b) => a.version - b.version)) {
+    // Rearmar una tabla (procedimiento de SQLite): claves foráneas apagadas fuera de la transacción y
+    // revisadas antes de confirmar, así nada queda apuntando a datos que no existen.
+    if (m.rebuildsTables) db.exec('PRAGMA foreign_keys = OFF')
     db.exec('BEGIN')
     try {
       db.exec(m.sql)
+      if (m.rebuildsTables) {
+        const broken = db.prepare('PRAGMA foreign_key_check').all()
+        if (broken.length > 0) throw new Error(`quedarían ${broken.length} referencias rotas`)
+      }
       db.prepare('INSERT INTO schema_migrations (version, name) VALUES (?, ?)').run(m.version, m.name)
       db.exec('COMMIT')
     } catch (err) {
       db.exec('ROLLBACK')
       db.close()
       throw new Error(`Falló la migración ${m.version} (${m.name}): ${err instanceof Error ? err.message : String(err)}`)
+    } finally {
+      if (m.rebuildsTables && db.isOpen) db.exec('PRAGMA foreign_keys = ON')
     }
   }
   return db

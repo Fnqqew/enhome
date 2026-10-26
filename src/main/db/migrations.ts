@@ -4,6 +4,8 @@ export interface Migration {
   version: number
   name: string
   sql: string
+  // Para rearmar una tabla: las claves foráneas se apagan durante la migración y se revisan al final.
+  rebuildsTables?: boolean
 }
 
 export const MIGRATIONS: Migration[] = [
@@ -519,6 +521,43 @@ export const MIGRATIONS: Migration[] = [
         created_on  TEXT NOT NULL
       );
       CREATE INDEX bank_exercises_subtopic ON bank_exercises (topic_id, subtopic_id);
+    `
+  },
+  {
+    version: 16,
+    name: 'escuchar y hablar',
+    rebuildsTables: true,
+    sql: `
+      -- Los ejercicios suman dos habilidades: escuchar y hablar. SQLite no deja cambiar una restricción,
+      -- así que la tabla se rearma con los mismos datos (las respuestas siguen apuntando a los mismos ids).
+      CREATE TABLE exercises_new (
+        id          INTEGER PRIMARY KEY,
+        topic_id    TEXT NOT NULL,
+        subtopic_id TEXT NOT NULL,
+        skill       TEXT NOT NULL CHECK (skill IN ('grammar', 'reading', 'writing', 'listening', 'speaking')),
+        type        TEXT NOT NULL,
+        payload     TEXT NOT NULL,
+        created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+        session_id  INTEGER REFERENCES practice_sessions (id),
+        slot        INTEGER,
+        skipped     INTEGER NOT NULL DEFAULT 0
+      );
+      INSERT INTO exercises_new (id, topic_id, subtopic_id, skill, type, payload, created_at, session_id, slot, skipped)
+        SELECT id, topic_id, subtopic_id, skill, type, payload, created_at, session_id, slot, skipped FROM exercises;
+      DROP TABLE exercises;
+      ALTER TABLE exercises_new RENAME TO exercises;
+      CREATE INDEX exercises_session ON exercises (session_id);
+      CREATE INDEX exercises_subtopic ON exercises (topic_id, subtopic_id);
+    `
+  },
+  {
+    version: 17,
+    name: 'segundo intento',
+    sql: `
+      -- La primera respuesta equivocada (se puede intentar de nuevo con una pista) y, en lo que vuelve al
+      -- final de la práctica porque salió mal, de qué ejercicio es la repetición.
+      ALTER TABLE exercises ADD COLUMN first_try TEXT;
+      ALTER TABLE exercises ADD COLUMN repeat_of INTEGER;
     `
   }
 ]

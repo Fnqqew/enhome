@@ -28,6 +28,35 @@ export function generatedSample(type: ExerciseType, mark: number | string): Gene
     case 'dialogue':
     case 'roleplay':
       return longSample(type, mark)
+    case 'dictation':
+      return { type, instruction: 'i', sentence: `My sister is a teacher ${mark}.`, alternatives: [], translation: 't', explanation: 'x' }
+    case 'listening': {
+      const question = { prompt: 'p', options: ['a', 'b', 'c'], correctIndex: 1, explanation: 'x' }
+      return {
+        type,
+        instruction: 'i',
+        situation: `Escucha ${mark}`,
+        lines: [
+          { speaker: 'Ana', text: 'Hi, how are you?' },
+          { speaker: 'Tom', text: 'Fine, thanks.' }
+        ],
+        questions: [question, { ...question, prompt: 'q' }]
+      }
+    }
+    case 'minimal_pair':
+      return { type, instruction: 'i', pair: ['ship', `sheep${mark}`], target: 1, meanings: ['barco', 'oveja'], explanation: 'x' }
+    case 'shadowing':
+      return { type, instruction: 'i', phrase: `Nice to meet you ${mark}.`, translation: 't', tip: 'Uní meet y you.' }
+    case 'transformation':
+      return {
+        type,
+        instruction: 'Pasala a negativa.',
+        sentence: `She is happy ${mark}.`,
+        answers: [`She is not happy ${mark}.`, `She isn't happy ${mark}.`],
+        explanation: 'x'
+      }
+    case 'reorder_text':
+      return { type, instruction: 'i', sentences: [`First ${mark}.`, 'Then we ate.', 'Finally we left.'], translation: 't', explanation: 'x' }
   }
 }
 
@@ -35,6 +64,7 @@ export function generatedSample(type: ExerciseType, mark: number | string): Gene
 export function sample(type: ExerciseType, mark: number | string): StoredExercise {
   const exercise = generatedSample(type, mark)
   if (exercise.type === 'word_order') return { ...exercise, tokens: ['sister', 'is', 'She', 'my'] }
+  if (exercise.type === 'reorder_text') return { ...exercise, order: [2, 0, 1] }
   return exercise as StoredExercise
 }
 
@@ -58,6 +88,19 @@ export function rightAnswer(e: StoredExercise): ExerciseAnswer {
     case 'dialogue':
     case 'roleplay':
       return longRightAnswer(e)
+    case 'dictation':
+      return { type: e.type, text: e.sentence }
+    case 'listening':
+      return { type: e.type, choices: e.questions.map((q) => q.correctIndex) }
+    case 'minimal_pair':
+      return { type: e.type, choice: e.target }
+    case 'shadowing':
+      return { type: e.type, text: e.phrase }
+    case 'transformation':
+      return { type: e.type, text: e.answers[0] }
+    case 'reorder_text':
+      // En qué posición de las mezcladas está cada oración, en el orden correcto.
+      return { type: e.type, order: e.sentences.map((_, k) => e.order.indexOf(k)) }
   }
 }
 

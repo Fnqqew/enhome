@@ -8,7 +8,8 @@ function title(type: ExerciseType, feedback: ExerciseFeedback): string {
       ? `¡Todo bien! ${right} de ${feedback.parts.length}`
       : `Te salieron ${right} de ${feedback.parts.length} · puntaje ${feedback.score}/10`
   }
-  if (type === 'reading' && feedback.questionResults && !feedback.correct) {
+  if (type === 'shadowing') return feedback.correct ? `¡Se entendió! ${feedback.score * 10} %` : `Se entendió el ${feedback.score * 10} %`
+  if ((type === 'reading' || type === 'listening') && feedback.questionResults && !feedback.correct) {
     return `Acertaste ${feedback.questionResults.filter(Boolean).length} de ${feedback.questionResults.length}`
   }
   return feedback.correct ? '¡Correcto!' : 'No es correcto'

@@ -281,6 +281,8 @@ export async function askClaude<T>(options: AskOptions<T>): Promise<T> {
   }
 
   let lastError: unknown
+  // La última respuesta que no respetó el esquema, para ver en el registro qué mandó Claude.
+  let lastInvalid: unknown
   let attempts = 0
   for (let attempt = 0; attempt <= retries; attempt++) {
     attempts = attempt + 1
@@ -290,10 +292,15 @@ export async function askClaude<T>(options: AskOptions<T>): Promise<T> {
         if (cancelEpoch !== epoch) throw new ClaudeError(CANCELLED_MESSAGE, 'cancelled')
         return run(exe, spec, prompt, timeoutMs, label)
       })
-      const result = schema.parse(readPayload(payload))
-      if (cacheKey) remember(cacheKey, result)
+      const raw = readPayload(payload)
+      const parsed = schema.safeParse(raw)
+      if (!parsed.success) {
+        lastInvalid = raw
+        throw parsed.error
+      }
+      if (cacheKey) remember(cacheKey, parsed.data)
       finish(attempts, true)
-      return result
+      return parsed.data
     } catch (err) {
       lastError = err
       if (!shouldRetry(err)) break
@@ -302,6 +309,7 @@ export async function askClaude<T>(options: AskOptions<T>): Promise<T> {
   finish(attempts, false)
   if (lastError instanceof ClaudeError) throw lastError
   console.error(`[claude] ${label}: respuesta con formato inválido`, lastError)
+  if (lastInvalid !== undefined) console.error(`[claude] ${label}: lo que respondió`, JSON.stringify(lastInvalid).slice(0, 4000))
   throw new ClaudeError(
     'Claude respondió con un formato inesperado varias veces seguidas. Reintentá: suele salir bien en el intento siguiente.',
     'format'

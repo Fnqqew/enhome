@@ -4,8 +4,10 @@ import type { ComponentType } from 'react'
 import type { ExerciseType } from '@shared/exercises'
 import { MultipleChoice, Reading } from './choice'
 import type { InputProps, ItemProps } from './common'
+import { Dictation, Listening, MinimalPair, Shadowing } from './listening'
 import { Dialogue, RolePlay, Writing } from './production'
 import { ErrorCorrection, FillBlank, WordOrder } from './sentence'
+import { ReorderText, Transformation } from './transform'
 import { Translation, TranslationSet } from './translation'
 
 const INPUTS: { [T in ExerciseType]: ComponentType<ItemProps<T>> } = {
@@ -18,7 +20,13 @@ const INPUTS: { [T in ExerciseType]: ComponentType<ItemProps<T>> } = {
   dialogue: Dialogue,
   roleplay: RolePlay,
   reading: Reading,
-  writing: Writing
+  writing: Writing,
+  dictation: Dictation,
+  listening: Listening,
+  minimal_pair: MinimalPair,
+  shadowing: Shadowing,
+  transformation: Transformation,
+  reorder_text: ReorderText
 }
 
 export default function ExerciseInput(props: InputProps): React.JSX.Element {

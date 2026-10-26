@@ -80,7 +80,8 @@ export const GRADING_MODEL: Record<OpenExercise['type'], string> = {
   translation_set: 'sonnet',
   dialogue: 'sonnet',
   roleplay: 'sonnet',
-  writing: 'sonnet'
+  writing: 'sonnet',
+  transformation: 'sonnet'
 }
 
 // Con esfuerzo bajo la corrección de una traducción baja de 23 s a 12 s con el mismo veredicto (medido el 2026-10-26).

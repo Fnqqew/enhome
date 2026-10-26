@@ -1,0 +1,2856 @@
+{
+  "subtopics": {
+    "past-continuous": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "At six o'clock, Juan ___ for his flight at Ezeiza airport.",
+        "options": [
+          "waited",
+          "were waiting",
+          "is waiting",
+          "was waiting"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Was' + gerundio describe una acción en desarrollo en un momento concreto del pasado, con sujetos como 'Juan' (he).",
+        "optionNotes": [
+          "Incorrecto: el pasado simple no describe la acción en desarrollo en ese momento preciso, se necesita el past continuous.",
+          "Incorrecto: con 'Juan' (he) se usa 'was', no 'were'.",
+          "Incorrecto: no se usa el presente, la historia pasó en el pasado.",
+          "Correcto: 'was' + gerundio describe una acción en desarrollo en un momento concreto del pasado, con el sujeto 'Juan' (él)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "While Juan was waiting, his friends ___ coffee nearby.",
+        "options": [
+          "drank",
+          "were drinking",
+          "was drinking",
+          "drinking"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Were' + gerundio describe una acción en desarrollo simultánea con sujetos plurales como 'his friends'.",
+        "optionNotes": [
+          "Incorrecto: el pasado simple no transmite la simultaneidad con la otra acción en desarrollo.",
+          "Correcto: 'were' + gerundio describe una acción simultánea en desarrollo con un sujeto plural.",
+          "Incorrecto: con 'his friends' (ellos) se usa 'were', no 'was'.",
+          "Incorrecto: falta el auxiliar 'were'; el gerundio solo no forma el past continuous."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "It ___ heavily when the announcement came.",
+        "options": [
+          "was raining",
+          "were raining",
+          "raining",
+          "rained"
+        ],
+        "correctIndex": 0,
+        "explanation": "'It' usa 'was' + gerundio para describir el escenario en desarrollo en ese momento del pasado.",
+        "optionNotes": [
+          "Correcto: 'it' usa 'was' + gerundio para describir el escenario en ese momento del pasado.",
+          "Incorrecto: con 'it' se usa 'was', no 'were'.",
+          "Incorrecto: falta el auxiliar 'was'; el gerundio solo no forma el past continuous.",
+          "Incorrecto: el pasado simple no describe la acción en desarrollo interrumpida por otro evento."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Juan ___ the answer, so he didn't ask again.",
+        "options": [
+          "know",
+          "were knowing",
+          "knew",
+          "was knowing"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Know' es un verbo de estado y casi nunca se usa en forma continua; se usa en pasado simple: 'knew'.",
+        "optionNotes": [
+          "Incorrecto: falta la conjugación en pasado; 'know' en presente no corresponde a una historia en pasado.",
+          "Incorrecto: además de usar mal el verbo de estado en continuo, 'were' no corresponde a 'Juan' (he).",
+          "Correcto: los verbos de estado como 'know' van en pasado simple, no en continuo.",
+          "Incorrecto: 'know' es un verbo de estado y casi nunca se usa en forma continua."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The passengers ___ to the announcements because of the noise.",
+        "options": [
+          "weren't listen",
+          "weren't listening",
+          "didn't listening",
+          "wasn't listening"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Weren't' + gerundio es la forma negativa del past continuous con sujetos plurales como 'the passengers'.",
+        "optionNotes": [
+          "Incorrecto: falta el gerundio '-ing'; después de 'weren't' el verbo necesita terminar en '-ing'.",
+          "Correcto: 'weren't' + gerundio es la forma negativa del past continuous con sujetos plurales.",
+          "Incorrecto: 'didn't' se usa con el pasado simple, no se combina con el gerundio '-ing'.",
+          "Incorrecto: con 'the passengers' (ellos) se usa 'weren't', no 'wasn't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ for the connecting bus when it started to rain.",
+        "options": [
+          "waiting",
+          "was waiting",
+          "is waiting",
+          "were waiting"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'we' se usa 'were' + gerundio para formar el past continuous.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'were'; el gerundio solo no forma el past continuous.",
+          "Incorrecto: con 'we' se usa 'were', no 'was'.",
+          "Incorrecto: no se usa el presente, la historia pasó en el pasado.",
+          "Correcto: 'were' + gerundio es la forma correcta del past continuous con 'we'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el past continuous del verbo entre paréntesis.",
+        "sentence": "At six o'clock, Juan ___ for his flight at Ezeiza airport.",
+        "hint": "(wait)",
+        "answers": [
+          "was waiting"
+        ],
+        "explanation": "'Was' + gerundio describe una acción en desarrollo en un momento concreto del pasado con sujetos como 'he'.",
+        "wrongAnswers": [
+          {
+            "answer": "were waiting",
+            "why": "Con 'Juan' (he) se usa 'was', no 'were'."
+          },
+          {
+            "answer": "waited",
+            "why": "El pasado simple no describe la acción en desarrollo en ese momento preciso del pasado."
+          },
+          {
+            "answer": "is waiting",
+            "why": "No se usa el presente, la historia pasó en el pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el past continuous del verbo entre paréntesis.",
+        "sentence": "While Juan was waiting, his friends ___ coffee nearby.",
+        "hint": "(drink)",
+        "answers": [
+          "were drinking"
+        ],
+        "explanation": "'Were' + gerundio describe una acción simultánea en desarrollo con un sujeto plural.",
+        "wrongAnswers": [
+          {
+            "answer": "was drinking",
+            "why": "Con 'his friends' (ellos) se usa 'were', no 'was'."
+          },
+          {
+            "answer": "drank",
+            "why": "El pasado simple no transmite la simultaneidad con la otra acción en desarrollo."
+          },
+          {
+            "answer": "drinking",
+            "why": "Falta el auxiliar 'were'; el gerundio solo no forma el past continuous."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el past continuous del verbo entre paréntesis.",
+        "sentence": "It ___ heavily when the announcement came.",
+        "hint": "(rain)",
+        "answers": [
+          "was raining"
+        ],
+        "explanation": "'Was' + gerundio describe el escenario en desarrollo en ese momento del pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "were raining",
+            "why": "Con 'it' se usa 'was', no 'were'."
+          },
+          {
+            "answer": "rained",
+            "why": "El pasado simple no describe la acción en desarrollo interrumpida por otro evento."
+          },
+          {
+            "answer": "raining",
+            "why": "Falta el auxiliar 'was'; el gerundio solo no forma el past continuous."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el verbo entre paréntesis en el tiempo correcto.",
+        "sentence": "Juan ___ the answer, so he didn't ask again.",
+        "hint": "(know)",
+        "answers": [
+          "knew"
+        ],
+        "explanation": "Los verbos de estado como 'know' casi nunca se usan en forma continua; van en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "was knowing",
+            "why": "'Know' es un verbo de estado y casi nunca se usa en forma continua."
+          },
+          {
+            "answer": "were knowing",
+            "why": "Además de usar mal el verbo de estado en continuo, 'were' no corresponde a 'Juan' (he)."
+          },
+          {
+            "answer": "knows",
+            "why": "Falta la conjugación en pasado; se necesita 'knew' para una historia en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa del past continuous del verbo entre paréntesis.",
+        "sentence": "The passengers ___ to the announcements because of the noise.",
+        "hint": "(not/listen)",
+        "answers": [
+          "weren't listening",
+          "were not listening"
+        ],
+        "explanation": "'Weren't' + gerundio es la forma negativa del past continuous con sujetos plurales.",
+        "wrongAnswers": [
+          {
+            "answer": "wasn't listening",
+            "why": "Con 'the passengers' (ellos) se usa 'weren't', no 'wasn't'."
+          },
+          {
+            "answer": "didn't listening",
+            "why": "'Didn't' se usa con el pasado simple, no se combina con el gerundio '-ing'."
+          },
+          {
+            "answer": "weren't listen",
+            "why": "Falta el gerundio '-ing'; después de 'weren't' el verbo necesita terminar en '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el past continuous del verbo entre paréntesis.",
+        "sentence": "We ___ for the connecting bus when it started to rain.",
+        "hint": "(wait)",
+        "answers": [
+          "were waiting"
+        ],
+        "explanation": "Con 'we' se usa 'were' + gerundio para formar el past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "was waiting",
+            "why": "Con 'we' se usa 'were', no 'was'."
+          },
+          {
+            "answer": "waiting",
+            "why": "Falta el auxiliar 'were'; el gerundio solo no forma el past continuous."
+          },
+          {
+            "answer": "are waiting",
+            "why": "No se usa el presente, la historia pasó en el pasado."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "At six o'clock, Juan was waiting for his flight.",
+        "alternatives": [],
+        "translation": "A las seis, Juan estaba esperando su vuelo.",
+        "explanation": "'Was' + gerundio describe una acción en desarrollo en un momento concreto del pasado.",
+        "tokens": [
+          "Juan",
+          "o'clock,",
+          "his",
+          "was",
+          "for",
+          "six",
+          "waiting",
+          "At",
+          "flight"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "His friends were drinking coffee nearby.",
+        "alternatives": [],
+        "translation": "Sus amigos estaban tomando un café cerca.",
+        "explanation": "'Were' + gerundio describe una acción en desarrollo con un sujeto plural.",
+        "tokens": [
+          "His",
+          "drinking",
+          "nearby",
+          "coffee",
+          "were",
+          "friends"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "It was raining when the announcement came.",
+        "alternatives": [],
+        "translation": "Estaba lloviendo cuando llegó el anuncio.",
+        "explanation": "El past continuous ('was raining') describe una acción en desarrollo que es interrumpida por otra acción puntual en pasado simple ('came').",
+        "tokens": [
+          "the",
+          "when",
+          "came",
+          "raining",
+          "announcement",
+          "It",
+          "was"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The passengers weren't listening to the announcements.",
+        "alternatives": [
+          "The passengers were not listening to the announcements."
+        ],
+        "translation": "Los pasajeros no estaban escuchando los anuncios.",
+        "explanation": "'Weren't' + gerundio es la forma negativa del past continuous con sujetos plurales.",
+        "tokens": [
+          "to",
+          "listening",
+          "weren't",
+          "the",
+          "passengers",
+          "announcements",
+          "The"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We were waiting for the bus when it started to rain.",
+        "alternatives": [],
+        "translation": "Estábamos esperando el colectivo cuando empezó a llover.",
+        "explanation": "El past continuous describe la acción en desarrollo interrumpida por otro evento en pasado simple.",
+        "tokens": [
+          "it",
+          "for",
+          "waiting",
+          "to",
+          "We",
+          "bus",
+          "rain",
+          "when",
+          "started",
+          "the",
+          "were"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past continuous.",
+        "sentence": "At six o'clock, Juan were waiting for his flight.",
+        "answers": [
+          "At six o'clock, Juan was waiting for his flight."
+        ],
+        "explanation": "Con 'Juan' (he) se usa 'was', no 'were', en el past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "At six o'clock, Juan were wait for his flight.",
+            "why": "Quita el gerundio '-ing' en vez de corregir el auxiliar, que sigue mal con 'Juan' (he)."
+          },
+          {
+            "answer": "At six o'clock, Juan was wait for his flight.",
+            "why": "Corrige el auxiliar pero quita el '-ing', dejando el verbo en forma base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past continuous.",
+        "sentence": "His friends was drinking coffee nearby.",
+        "answers": [
+          "His friends were drinking coffee nearby."
+        ],
+        "explanation": "Con 'his friends' (ellos) se usa 'were', no 'was', en el past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "His friends was drink coffee nearby.",
+            "why": "Quita el gerundio en vez de corregir el auxiliar 'was', que sigue mal con un sujeto plural."
+          },
+          {
+            "answer": "His friends were drink coffee nearby.",
+            "why": "Corrige el auxiliar pero quita el '-ing', dejando el verbo en forma base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past continuous.",
+        "sentence": "It were raining when the announcement came.",
+        "answers": [
+          "It was raining when the announcement came."
+        ],
+        "explanation": "Con 'it' se usa 'was', no 'were', en el past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "It were rain when the announcement came.",
+            "why": "Quita el gerundio en vez de corregir el auxiliar 'were', que no corresponde a 'it'."
+          },
+          {
+            "answer": "It was rain when the announcement came.",
+            "why": "Corrige el auxiliar pero quita el '-ing', dejando el verbo en forma base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los verbos de estado.",
+        "sentence": "Juan was knowing the answer, so he didn't ask again.",
+        "answers": [
+          "Juan knew the answer, so he didn't ask again."
+        ],
+        "explanation": "'Know' es un verbo de estado y casi nunca se usa en forma continua; se usa en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan is knowing the answer, so he didn't ask again.",
+            "why": "Cambia el auxiliar a presente pero mantiene el verbo de estado en forma continua, que sigue siendo incorrecto."
+          },
+          {
+            "answer": "Juan were knowing the answer, so he didn't ask again.",
+            "why": "Cambia el auxiliar a 'were', que no corresponde a 'Juan' (he), y mantiene el verbo de estado en continuo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past continuous.",
+        "sentence": "The passengers wasn't listening to the announcements.",
+        "answers": [
+          "The passengers weren't listening to the announcements.",
+          "The passengers were not listening to the announcements."
+        ],
+        "explanation": "Con 'the passengers' (ellos) se usa 'weren't', no 'wasn't', en el past continuous negativo.",
+        "wrongAnswers": [
+          {
+            "answer": "The passengers wasn't listen to the announcements.",
+            "why": "Quita el gerundio en vez de corregir el auxiliar, que sigue mal con un sujeto plural."
+          },
+          {
+            "answer": "The passengers didn't listening to the announcements.",
+            "why": "Mezcla el auxiliar de pasado simple 'didn't' con el gerundio '-ing', una combinación inválida."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el past continuous.",
+        "spanish": "A las seis, Juan estaba esperando su vuelo en Ezeiza.",
+        "answers": [
+          "At six o'clock, Juan was waiting for his flight at Ezeiza.",
+          "At six, Juan was waiting for his flight at Ezeiza."
+        ],
+        "explanation": "'Was' + gerundio describe una acción en desarrollo en un momento concreto del pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "At six o'clock, Juan were waiting for his flight at Ezeiza.",
+            "why": "Con 'Juan' (he) se usa 'was', no 'were'."
+          },
+          {
+            "answer": "At six o'clock, Juan waited for his flight at Ezeiza.",
+            "why": "El pasado simple no transmite la idea de una acción en desarrollo en ese momento preciso."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el past continuous.",
+        "spanish": "Sus amigos estaban tomando un café cerca.",
+        "answers": [
+          "His friends were drinking coffee nearby."
+        ],
+        "explanation": "'Were' + gerundio describe una acción en desarrollo con un sujeto plural.",
+        "wrongAnswers": [
+          {
+            "answer": "His friends was drinking coffee nearby.",
+            "why": "Con 'his friends' (ellos) se usa 'were', no 'was'."
+          },
+          {
+            "answer": "His friends drank coffee nearby.",
+            "why": "El pasado simple no describe la acción en desarrollo simultánea con otra."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el past continuous.",
+        "spanish": "Estaba lloviendo cuando llegó el anuncio del vuelo.",
+        "answers": [
+          "It was raining when the flight announcement came.",
+          "It was raining when the announcement about the flight came."
+        ],
+        "explanation": "'Was raining' describe el escenario en desarrollo en el momento en que ocurrió otro evento.",
+        "wrongAnswers": [
+          {
+            "answer": "It were raining when the flight announcement came.",
+            "why": "Con 'it' se usa 'was', no 'were'."
+          },
+          {
+            "answer": "It rained when the flight announcement came.",
+            "why": "El pasado simple no describe la acción en desarrollo interrumpida por otro evento."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el verbo de estado en el tiempo correcto.",
+        "spanish": "Juan sabía la respuesta, así que no preguntó de nuevo.",
+        "answers": [
+          "Juan knew the answer, so he didn't ask again."
+        ],
+        "explanation": "Los verbos de estado como 'know' casi nunca se usan en forma continua; van en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan was knowing the answer, so he didn't ask again.",
+            "why": "'Know' es un verbo de estado y casi nunca se usa en forma continua."
+          },
+          {
+            "answer": "Juan is knowing the answer, so he didn't ask again.",
+            "why": "Además de usar mal el verbo de estado en continuo, la historia está en pasado, no en presente."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el past continuous negativo.",
+        "spanish": "Los pasajeros no estaban escuchando los anuncios por el ruido.",
+        "answers": [
+          "The passengers weren't listening to the announcements because of the noise.",
+          "The passengers were not listening to the announcements because of the noise."
+        ],
+        "explanation": "'Weren't' + gerundio es la forma negativa del past continuous con sujetos plurales.",
+        "wrongAnswers": [
+          {
+            "answer": "The passengers wasn't listening to the announcements because of the noise.",
+            "why": "Con 'the passengers' (ellos) se usa 'weren't', no 'wasn't'."
+          },
+          {
+            "answer": "The passengers didn't listening to the announcements because of the noise.",
+            "why": "'Didn't' se usa con el pasado simple, no se combina con el gerundio '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el past continuous.",
+        "spanish": "Estábamos esperando el colectivo cuando empezó a llover.",
+        "answers": [
+          "We were waiting for the bus when it started to rain.",
+          "We were waiting for the bus when it started raining."
+        ],
+        "explanation": "Con 'we' se usa 'were' + gerundio para formar el past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "We was waiting for the bus when it started to rain.",
+            "why": "Con 'we' se usa 'were', no 'was'."
+          },
+          {
+            "answer": "We waited for the bus when it started to rain.",
+            "why": "El pasado simple no describe la acción en desarrollo interrumpida por otro evento."
+          }
+        ]
+      }
+    ],
+    "simple-vs-continuous": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I ___ dinner when the phone rang.",
+        "options": [
+          "cooked",
+          "was cooking",
+          "cook",
+          "had cooked"
+        ],
+        "correctIndex": 1,
+        "explanation": "La acción larga que estaba en curso (cocinar) va en past continuous, y la acción corta que la interrumpe (sonar el teléfono) va en past simple.",
+        "optionNotes": [
+          "Incorrecto: sugiere que empezó a cocinar recién después de que sonó el teléfono, como una secuencia.",
+          "Correcto: describe la acción en curso que fue interrumpida por el llamado.",
+          "Incorrecto: el presente no corresponde en una narración en pasado.",
+          "Incorrecto: el pasado perfecto implica que ya había terminado de cocinar antes de que sonara el teléfono."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "While Marcos ___ the report, his boss called him into a meeting.",
+        "options": [
+          "was writing",
+          "writes",
+          "wrote",
+          "had written"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'while' se usa past continuous para la acción larga que ya estaba en curso cuando ocurrió la otra.",
+        "optionNotes": [
+          "Correcto: Marcos ya estaba escribiendo el informe cuando lo llamaron.",
+          "Incorrecto: el presente no corresponde en una narración en pasado.",
+          "Incorrecto: sugiere que escribió el informe después del llamado, como una secuencia.",
+          "Incorrecto: el pasado perfecto implica que ya había terminado el informe antes del llamado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "She ___ the door, turned on the light and screamed.",
+        "options": [
+          "was opening",
+          "opens",
+          "had opened",
+          "opened"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando las acciones ocurren una después de la otra en una secuencia, todas van en past simple.",
+        "optionNotes": [
+          "Incorrecto: el past continuous no corresponde porque abrir la puerta no es una acción interrumpida, sino parte de una secuencia.",
+          "Incorrecto: el presente no corresponde en una narración en pasado.",
+          "Incorrecto: el pasado perfecto implica que la puerta ya estaba abierta antes de los otros eventos, lo cual no tiene sentido aquí.",
+          "Correcto: las tres acciones son una secuencia de eventos puntuales en pasado simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "We ___ for the bus when it started to rain.",
+        "options": [
+          "waited",
+          "were waiting",
+          "had waited",
+          "wait"
+        ],
+        "correctIndex": 1,
+        "explanation": "La acción larga en curso (esperar el colectivo) va en past continuous porque fue interrumpida por el comienzo de la lluvia.",
+        "optionNotes": [
+          "Incorrecto: sugiere que esperamos recién después de que empezó a llover, como una secuencia.",
+          "Correcto: ya estábamos esperando cuando empezó a llover.",
+          "Incorrecto: el pasado perfecto implica que ya habíamos terminado de esperar antes de que empezara a llover.",
+          "Incorrecto: el presente no corresponde en una narración en pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "The doctor ___ my throat when I started coughing.",
+        "options": [
+          "had examined",
+          "was examining",
+          "examined",
+          "examines"
+        ],
+        "correctIndex": 1,
+        "explanation": "La acción larga en curso (examinar la garganta) va en past continuous porque fue interrumpida por el comienzo de la tos.",
+        "optionNotes": [
+          "Incorrecto: el pasado perfecto implica que ya había terminado el examen antes de la tos.",
+          "Correcto: el médico ya estaba examinando cuando empecé a toser.",
+          "Incorrecto: sugiere que empezó a examinar recién después de la tos, como una secuencia.",
+          "Incorrecto: el presente no corresponde en una narración en pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "While the landlord was signing the lease, I ___ photos of the apartment.",
+        "options": [
+          "was taking",
+          "had taken",
+          "take",
+          "took"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando dos acciones largas ocurren al mismo tiempo, ambas van en past continuous.",
+        "optionNotes": [
+          "Correcto: ambas acciones (firmar y sacar fotos) eran simultáneas y extendidas en el tiempo.",
+          "Incorrecto: el pasado perfecto implica que ya había terminado de sacar fotos antes de la firma, lo cual no tiene sentido aquí.",
+          "Incorrecto: el presente no corresponde en una narración en pasado.",
+          "Incorrecto: sugiere una acción puntual que corta la otra, pero sacar fotos también era una acción extendida y simultánea."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "When Pablo arrived at the office, Marina ___ (talk) on the phone.",
+        "hint": "(talk)",
+        "answers": [
+          "was talking"
+        ],
+        "explanation": "La acción larga en curso (hablar por teléfono) va en past continuous porque ya estaba pasando cuando Pablo llegó.",
+        "wrongAnswers": [
+          {
+            "answer": "talked",
+            "why": "Sugiere que Marina empezó a hablar recién después de que Pablo llegó, como una secuencia, en vez de que ya estaba hablando."
+          },
+          {
+            "answer": "had talked",
+            "why": "El pasado perfecto implica que ya había terminado de hablar antes de que Pablo llegara, lo cual cambia el sentido."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I ___ (walk) to the station when I saw Sofía.",
+        "hint": "(walk)",
+        "answers": [
+          "was walking"
+        ],
+        "explanation": "La acción larga en curso (caminar a la estación) va en past continuous porque fue interrumpida por el momento en que la vi.",
+        "wrongAnswers": [
+          {
+            "answer": "walked",
+            "why": "Sugiere que caminé recién después de ver a Sofía, en vez de que ya estaba caminando cuando la vi."
+          },
+          {
+            "answer": "had walked",
+            "why": "El pasado perfecto implica que ya había terminado de caminar antes de verla, lo cual no corresponde aquí."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "While we ___ (have) dinner, the lights went out.",
+        "hint": "(have)",
+        "answers": [
+          "were having"
+        ],
+        "explanation": "Con 'while' se usa past continuous para la acción larga (cenar) que servía de fondo cuando ocurrió el corte de luz.",
+        "wrongAnswers": [
+          {
+            "answer": "had",
+            "why": "El pasado simple no describe el fondo de la situación; con 'while' se necesita past continuous para la acción larga."
+          },
+          {
+            "answer": "have",
+            "why": "El presente no corresponde en una narración en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "The nurse ___ (check) my blood pressure when the doctor came in.",
+        "hint": "(check)",
+        "answers": [
+          "was checking"
+        ],
+        "explanation": "La acción larga en curso (revisar la presión) va en past continuous porque fue interrumpida por la llegada del médico.",
+        "wrongAnswers": [
+          {
+            "answer": "checked",
+            "why": "Sugiere que la enfermera empezó a revisar recién después de que entró el médico, en vez de que ya lo estaba haciendo."
+          },
+          {
+            "answer": "checks",
+            "why": "El presente no corresponde en una narración en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "Yesterday I ___ (wake up), had breakfast and left for the interview.",
+        "hint": "(wake up)",
+        "answers": [
+          "woke up"
+        ],
+        "explanation": "Cuando las acciones ocurren una después de la otra, todas se narran en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "was waking up",
+            "why": "Son acciones consecutivas en una secuencia, así que todas van en past simple, no en continuo."
+          },
+          {
+            "answer": "wake up",
+            "why": "El presente no corresponde en una narración en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "While Javier was driving to Mendoza, his car ___ (break down).",
+        "hint": "(break down)",
+        "answers": [
+          "broke down"
+        ],
+        "explanation": "La acción corta que interrumpe a la acción larga en curso (manejar) va en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "was breaking down",
+            "why": "Es la acción corta y puntual que interrumpe a la acción larga (manejar), así que va en past simple."
+          },
+          {
+            "answer": "had broken down",
+            "why": "El pasado perfecto implica que el auto ya se había roto antes de que empezara a manejar, lo cual no tiene sentido aquí."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I was cooking dinner when the phone rang.",
+        "alternatives": [
+          "When the phone rang, I was cooking dinner."
+        ],
+        "translation": "Estaba cocinando la cena cuando sonó el teléfono.",
+        "explanation": "La acción larga en curso (cocinar) va en past continuous y la acción corta que la interrumpe (sonar el teléfono) va en past simple.",
+        "tokens": [
+          "I",
+          "when",
+          "was",
+          "dinner",
+          "the",
+          "cooking",
+          "rang",
+          "phone"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "While Marcos was writing the report, his boss called him.",
+        "alternatives": [
+          "Marcos was writing the report while his boss called him."
+        ],
+        "translation": "Mientras Marcos escribía el informe, su jefe lo llamó.",
+        "explanation": "Con 'while' la acción larga (escribir el informe) va en past continuous y la acción corta (llamar) va en past simple.",
+        "tokens": [
+          "the",
+          "While",
+          "boss",
+          "was",
+          "his",
+          "report,",
+          "called",
+          "him",
+          "Marcos",
+          "writing"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She opened the door, turned on the light and screamed.",
+        "alternatives": [],
+        "translation": "Abrió la puerta, prendió la luz y gritó.",
+        "explanation": "Las acciones consecutivas de una secuencia se narran todas en past simple.",
+        "tokens": [
+          "turned",
+          "the",
+          "on",
+          "and",
+          "light",
+          "door,",
+          "the",
+          "opened",
+          "She",
+          "screamed"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We were waiting for the bus when it started to rain.",
+        "alternatives": [
+          "When it started to rain, we were waiting for the bus."
+        ],
+        "translation": "Estábamos esperando el colectivo cuando empezó a llover.",
+        "explanation": "La acción larga en curso (esperar el colectivo) va en past continuous y la acción corta que la interrumpe va en past simple.",
+        "tokens": [
+          "bus",
+          "started",
+          "when",
+          "rain",
+          "the",
+          "it",
+          "waiting",
+          "were",
+          "to",
+          "for",
+          "We"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The doctor was examining my throat when I coughed.",
+        "alternatives": [
+          "When I coughed, the doctor was examining my throat."
+        ],
+        "translation": "El médico me estaba examinando la garganta cuando tosí.",
+        "explanation": "La acción larga en curso (examinar) va en past continuous y la acción corta que la interrumpe (toser) va en past simple.",
+        "tokens": [
+          "when",
+          "coughed",
+          "was",
+          "my",
+          "The",
+          "throat",
+          "doctor",
+          "examining",
+          "I"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los tiempos narrativos.",
+        "sentence": "When I arrived, she cooked dinner.",
+        "answers": [
+          "When I arrived, she was cooking dinner."
+        ],
+        "explanation": "Si ella ya estaba cocinando cuando llegaste, se usa past continuous; con past simple parece que empezó a cocinar recién después de que llegaste.",
+        "wrongAnswers": [
+          {
+            "answer": "When I was arriving, she cooked dinner.",
+            "why": "La acción de llegar es puntual y corta, así que debe quedar en past simple, no en continuous."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los tiempos narrativos.",
+        "sentence": "While I was cooking, the phone was ringing.",
+        "answers": [
+          "While I was cooking, the phone rang."
+        ],
+        "explanation": "La acción corta que interrumpe a la acción larga en curso va en past simple, no en past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "While I cooked, the phone was ringing.",
+            "why": "Invierte los tiempos: la acción larga (cocinar) debe ir en continuous y la acción corta que interrumpe (sonar) debe ir en simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los tiempos narrativos.",
+        "sentence": "I was getting up, had a shower and left for work.",
+        "answers": [
+          "I got up, had a shower and left for work."
+        ],
+        "explanation": "Cuando las acciones ocurren una después de la otra en una secuencia, todas se narran en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I got up, was having a shower and left for work.",
+            "why": "Son acciones consecutivas de una secuencia, así que todas deben ir en past simple, no en continuous."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los tiempos narrativos.",
+        "sentence": "The interviewer was asking me about my experience when I was mentioning my last job.",
+        "answers": [
+          "The interviewer was asking me about my experience when I mentioned my last job."
+        ],
+        "explanation": "La acción corta que interrumpe a la acción larga en curso va en past simple, no en past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "The interviewer asked me about my experience when I was mentioning my last job.",
+            "why": "Invierte los tiempos: la pregunta en curso (fondo) debe ir en continuous y la mención puntual debe ir en simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los tiempos narrativos.",
+        "sentence": "While the landlord was showing me the apartment, I am taking photos.",
+        "answers": [
+          "While the landlord was showing me the apartment, I was taking photos."
+        ],
+        "explanation": "Cuando dos acciones largas ocurren al mismo tiempo, ambas van en past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "While the landlord showed me the apartment, I was taking photos.",
+            "why": "Cambia la primera acción larga a pasado simple, pero ambas acciones simultáneas y extendidas deben ir en past continuous."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estaba manejando al trabajo cuando mi celular sonó.",
+        "answers": [
+          "I was driving to work when my phone rang.",
+          "I was driving to work when my cell phone rang."
+        ],
+        "explanation": "La acción larga en curso (manejar) va en past continuous y la acción corta que la interrumpe (sonar) va en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I drove to work when my phone rang.",
+            "why": "Pierde el sentido de acción en curso interrumpida; la acción larga (manejar) debe ir en past continuous."
+          },
+          {
+            "answer": "I was driving to work when my phone was ringing.",
+            "why": "La acción corta que interrumpe (sonar) debe ir en past simple, no en continuous."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mientras cenábamos, se cortó la luz.",
+        "answers": [
+          "While we were having dinner, the lights went out.",
+          "The lights went out while we were having dinner."
+        ],
+        "explanation": "Con 'while' la acción larga que servía de fondo (cenar) va en past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "While we had dinner, the lights went out.",
+            "why": "La acción larga (cenar) que sirve de fondo debe ir en past continuous, no en past simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Se levantó, se duchó y se fue a trabajar.",
+        "answers": [
+          "She got up, had a shower and left for work.",
+          "She got up, took a shower and left for work."
+        ],
+        "explanation": "Cuando las acciones ocurren una después de la otra, todas se narran en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "She was getting up, had a shower and left for work.",
+            "why": "Son acciones consecutivas de una secuencia y todas deben ir en past simple, no en continuous."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico me estaba revisando la rodilla cuando le conté sobre el dolor.",
+        "answers": [
+          "The doctor was examining my knee when I told him about the pain.",
+          "The doctor was examining my knee when I told her about the pain."
+        ],
+        "explanation": "La acción larga en curso (revisar la rodilla) va en past continuous y la acción corta que la interrumpe (contar) va en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor examined my knee when I told him about the pain.",
+            "why": "Pierde la idea de que el examen ya estaba en curso; la acción larga debe ir en past continuous."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mientras el dueño me mostraba el departamento, yo sacaba fotos.",
+        "answers": [
+          "While the landlord was showing me the apartment, I was taking photos.",
+          "While the landlord was showing me the apartment, I was taking pictures."
+        ],
+        "explanation": "Cuando dos acciones largas ocurren al mismo tiempo, ambas se narran en past continuous.",
+        "wrongAnswers": [
+          {
+            "answer": "While the landlord showed me the apartment, I was taking photos.",
+            "why": "Ambas acciones son simultáneas y extendidas en el tiempo, así que las dos deben ir en past continuous."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estaba explicando mi experiencia cuando sonó mi celular.",
+        "answers": [
+          "I was explaining my experience when my phone rang."
+        ],
+        "explanation": "La acción larga en curso (explicar) va en past continuous y la acción corta que la interrumpe (sonar) va en past simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I explained my experience when my phone rang.",
+            "why": "Pierde el sentido de que la explicación ya estaba en curso cuando sonó el teléfono; la acción larga debe ir en past continuous."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la historia del viaje de Marina y respondé las preguntas usando lo que entendiste sobre past simple y past continuous.",
+        "text": "Last Saturday, Marina was traveling from Córdoba to Mendoza by bus to visit her cousin. While she was watching a movie on her phone, the bus suddenly stopped. She looked out the window and saw a long line of cars on the road.\n\nThe driver explained that there was an accident ahead, so they had to wait. While some passengers were complaining, others were sleeping or reading. Marina decided to call her cousin to explain the situation.\n\nTwo hours later, the bus started moving again. When they finally arrived in Mendoza, it was already dark. Marina's cousin, Pablo, was waiting at the station with a sign that said her name. He hugged her, took her bag and walked to the car.\n\nThat night, while they were having dinner, Marina told Pablo the whole story. He laughed and said, 'Next time, take the plane!'",
+        "questions": [
+          {
+            "prompt": "What was Marina doing when the bus stopped?",
+            "options": [
+              "She was sleeping.",
+              "She was calling her cousin.",
+              "She was watching a movie on her phone.",
+              "She was reading a book."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Was watching' está en past continuous porque describe la acción larga que ya estaba en curso cuando ocurrió la acción corta 'stopped' en past simple."
+          },
+          {
+            "prompt": "Why did the bus stop?",
+            "options": [
+              "Because the driver was tired.",
+              "Because it ran out of fuel.",
+              "Because there was an accident ahead.",
+              "Because Marina wanted to get off."
+            ],
+            "correctIndex": 2,
+            "explanation": "'There was an accident' usa past simple porque es un hecho puntual del pasado, no una acción en desarrollo."
+          },
+          {
+            "prompt": "What was Pablo doing when Marina arrived at the station?",
+            "options": [
+              "He was sleeping at home.",
+              "He was waiting with a sign.",
+              "He was having dinner.",
+              "He was traveling to Mendoza too."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Was waiting' en past continuous indica que Pablo ya estaba en esa acción cuando ocurrió 'arrived', la acción corta en past simple que interrumpe."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la historia de la entrevista de trabajo de Franco y respondé las preguntas combinando past simple y past continuous.",
+        "text": "Yesterday morning, Franco was getting ready for a job interview at a software company in Buenos Aires. While he was ironing his shirt, his phone rang. It was the HR manager, Valeria, calling to change the interview time.\n\nFranco got dressed quickly, grabbed his resume and left the apartment. While he was walking to the subway, it started raining heavily. He didn't have an umbrella, so he ran to the nearest café and waited there.\n\nWhen the rain stopped, he continued walking to the office. He arrived ten minutes early. While he was waiting in the reception area, he practiced his answers in his head.\n\nFinally, Valeria came out, shook his hand and invited him into her office. During the interview, while she was asking questions, Franco noticed she was writing notes carefully. At the end, she smiled and said, 'We'll call you next week.'",
+        "questions": [
+          {
+            "prompt": "What was Franco doing when his phone rang?",
+            "options": [
+              "He was waiting in reception.",
+              "He was having the interview.",
+              "He was ironing his shirt.",
+              "He was walking to the subway."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Was ironing' es past continuous porque describe la acción en curso que fue interrumpida por 'rang', la acción corta en past simple."
+          },
+          {
+            "prompt": "What happened while Franco was walking to the subway?",
+            "options": [
+              "He lost his resume.",
+              "It started raining heavily.",
+              "His phone rang.",
+              "He met Valeria."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Started raining' va en past simple porque es el evento puntual que interrumpe la acción larga 'was walking', expresada en past continuous."
+          },
+          {
+            "prompt": "What was Valeria doing at the same time as she was asking questions?",
+            "options": [
+              "She was ironing a shirt.",
+              "She was traveling to Buenos Aires.",
+              "She was sleeping.",
+              "She was also writing notes carefully."
+            ],
+            "correctIndex": 3,
+            "explanation": "Cuando dos acciones largas ocurren al mismo tiempo y son de la misma persona, ambas van en past continuous: 'she was asking' y 'she was writing'."
+          }
+        ]
+      }
+    ],
+    "past-perfect": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "When I got to the station, the train ___ already left.",
+        "options": [
+          "had",
+          "was",
+          "has",
+          "have"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para marcar que el tren se fue antes de que yo llegara (otro momento del pasado) se usa past perfect: had + participio.",
+        "optionNotes": [
+          "Correcto: marca que el tren se fue antes de que yo llegara a la estación.",
+          "Incorrecto: 'was' no es el auxiliar correcto para formar el past perfect con 'left'.",
+          "Incorrecto: el presente perfecto no corresponde en una narración que ya está en pasado.",
+          "Incorrecto: no concuerda en tiempo con el resto de la narración pasada."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "By the time Marina arrived at the office, the meeting ___ already started.",
+        "options": [
+          "did",
+          "was",
+          "has",
+          "had"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'by the time' se marca que la reunión empezó antes de que Marina llegara, por eso se usa past perfect.",
+        "optionNotes": [
+          "Incorrecto: 'did' no se combina con 'started' ya conjugado; sería redundante.",
+          "Incorrecto: 'was' no funciona como auxiliar del past perfect junto a 'started'.",
+          "Incorrecto: el presente perfecto no corresponde en una narración en pasado.",
+          "Correcto: la reunión ya había empezado antes de que Marina llegara."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "The patient told the doctor that he ___ never had this kind of pain before.",
+        "options": [
+          "have",
+          "has",
+          "did",
+          "had"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Had never had' es el past perfect del verbo 'have', usado para marcar que nunca había sentido ese dolor antes de ese momento pasado.",
+        "optionNotes": [
+          "Incorrecto: no concuerda en tiempo con el resto de la narración pasada.",
+          "Incorrecto: el presente perfecto no corresponde en una narración en pasado.",
+          "Incorrecto: 'did' no se combina así con 'had' ya conjugado; sería redundante.",
+          "Correcto: forma el past perfect 'had never had' para indicar anterioridad."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "When Lucía visited the apartment, the landlord ___ already rented it to someone else.",
+        "options": [
+          "has",
+          "was",
+          "did",
+          "had"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para marcar que el alquiler ya se había concretado antes de la visita de Lucía se usa past perfect.",
+        "optionNotes": [
+          "Incorrecto: el presente perfecto no corresponde en una narración en pasado.",
+          "Incorrecto: 'was' no funciona como auxiliar del past perfect junto a 'rented'.",
+          "Incorrecto: 'did' no se combina con 'rented' ya conjugado; sería redundante.",
+          "Correcto: el departamento ya estaba alquilado antes de que Lucía lo visitara."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "By the time I started this job, I ___ to that company three times for interviews.",
+        "options": [
+          "had gone",
+          "have gone",
+          "went",
+          "had went"
+        ],
+        "correctIndex": 0,
+        "explanation": "'By the time' marca que las visitas a la empresa ocurrieron antes de empezar el trabajo (otro momento del pasado); por eso se usa past perfect: had + participio (gone, no went).",
+        "optionNotes": [
+          "Correcto: 'had gone' usa el participio correcto y marca que las visitas fueron antes de empezar el trabajo.",
+          "Incorrecto: el presente perfecto no corresponde en una narración que ya está en pasado.",
+          "Incorrecto: el pasado simple no deja en claro que las visitas fueron antes de empezar el trabajo, otro momento del pasado.",
+          "Incorrecto: después de 'had' va el participio (gone), no el pasado simple (went)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I didn't recognize Daniel at the reunion because he ___ a beard.",
+        "options": [
+          "was growing",
+          "had grown",
+          "has grown",
+          "grew"
+        ],
+        "correctIndex": 1,
+        "explanation": "La barba ya estaba crecida antes del momento de no reconocerlo, por eso se usa past perfect para marcar esa anterioridad.",
+        "optionNotes": [
+          "Incorrecto: el pasado continuo no expresa que el proceso ya se había completado antes.",
+          "Correcto: marca que la barba ya había crecido antes del reencuentro.",
+          "Incorrecto: el presente perfecto no corresponde en una narración en pasado.",
+          "Incorrecto: sugiere que le creció la barba justo en el momento del reencuentro, no antes."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "When we got to the airport, our flight ___ already.",
+        "hint": "(leave)",
+        "answers": [
+          "had left"
+        ],
+        "explanation": "Para marcar que una acción pasada ocurrió antes de otra también pasada (llegar al aeropuerto) se usa past perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "left",
+            "why": "El pasado simple no marca que el vuelo se fue antes de que nosotros llegáramos; se necesita past perfect."
+          },
+          {
+            "answer": "has left",
+            "why": "El presente perfecto no corresponde en una narración que ya está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "Marina was upset because she ___ (not / finish) the report by the deadline.",
+        "hint": "(not finish)",
+        "answers": [
+          "hadn't finished",
+          "had not finished"
+        ],
+        "explanation": "Con expresiones como 'by + momento pasado' se usa past perfect para marcar que algo no se había completado para ese punto.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't finish",
+            "why": "Con 'by the deadline' se marca un punto límite anterior, así que se necesita past perfect para indicar que no había terminado para ese momento."
+          },
+          {
+            "answer": "doesn't finish",
+            "why": "El presente no corresponde en una narración en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "The doctor couldn't believe that I ___ a check-up before.",
+        "hint": "(never / have)",
+        "answers": [
+          "had never had"
+        ],
+        "explanation": "Past perfect con 'never' marca que algo no había ocurrido nunca antes de otro momento del pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "never had",
+            "why": "Falta el auxiliar 'had'; para marcar que nunca había tenido un chequeo antes de ese momento pasado se necesita past perfect."
+          },
+          {
+            "answer": "haven't had",
+            "why": "El presente perfecto no corresponde en una narración que ya está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "By the time Clara called the landlord, someone else ___ the lease.",
+        "hint": "(sign)",
+        "answers": [
+          "had signed"
+        ],
+        "explanation": "Con 'by the time' se usa past perfect para marcar la acción que ya había ocurrido antes de la otra acción pasada.",
+        "wrongAnswers": [
+          {
+            "answer": "signed",
+            "why": "El pasado simple no marca que la firma del contrato ocurrió antes del llamado de Clara; se necesita past perfect."
+          },
+          {
+            "answer": "was signing",
+            "why": "El pasado continuo no expresa que la firma ya se había completado antes del llamado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I felt confident in the interview because I ___ a lot of answers in advance.",
+        "hint": "(prepare)",
+        "answers": [
+          "had prepared"
+        ],
+        "explanation": "Para marcar que algo ya se había hecho antes de otro momento del pasado (la entrevista) se usa past perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "prepared",
+            "why": "El pasado simple no marca claramente que la preparación ocurrió antes de la entrevista; se necesita past perfect."
+          },
+          {
+            "answer": "was preparing",
+            "why": "El pasado continuo no expresa que la preparación ya se había completado antes de la entrevista."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "Javier told me he ___ Bariloche before that trip.",
+        "hint": "(never / visit)",
+        "answers": [
+          "had never visited"
+        ],
+        "explanation": "Past perfect con 'never' marca que algo no había ocurrido nunca antes de otro momento del pasado (ese viaje).",
+        "wrongAnswers": [
+          {
+            "answer": "never visited",
+            "why": "Falta el auxiliar 'had'; para marcar que nunca había visitado Bariloche antes de ese viaje se necesita past perfect."
+          },
+          {
+            "answer": "has never visited",
+            "why": "El presente perfecto no corresponde en una narración que ya está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "When I got to the station, the train had already left.",
+        "alternatives": [
+          "The train had already left when I got to the station."
+        ],
+        "translation": "Cuando llegué a la estación, el tren ya se había ido.",
+        "explanation": "Past perfect marca que el tren se fue antes de que yo llegara, otro momento del pasado.",
+        "tokens": [
+          "train",
+          "I",
+          "left",
+          "to",
+          "had",
+          "the",
+          "station,",
+          "When",
+          "got",
+          "already",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "By the time the police arrived, the thieves had escaped.",
+        "alternatives": [
+          "The thieves had escaped by the time the police arrived."
+        ],
+        "translation": "Para cuando llegó la policía, los ladrones ya se habían escapado.",
+        "explanation": "Con 'by the time' se usa past perfect para marcar la acción que ya había ocurrido antes de la llegada de la policía.",
+        "tokens": [
+          "time",
+          "had",
+          "arrived,",
+          "By",
+          "thieves",
+          "police",
+          "the",
+          "the",
+          "the",
+          "escaped"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She had never seen the ocean before that trip.",
+        "alternatives": [
+          "Before that trip, she had never seen the ocean."
+        ],
+        "translation": "Nunca había visto el mar antes de ese viaje.",
+        "explanation": "Past perfect con 'never' marca que algo no había ocurrido nunca antes de otro momento del pasado.",
+        "tokens": [
+          "seen",
+          "trip",
+          "had",
+          "She",
+          "that",
+          "ocean",
+          "before",
+          "the",
+          "never"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I didn't recognize him because he had grown a beard.",
+        "alternatives": [
+          "Because he had grown a beard, I didn't recognize him."
+        ],
+        "translation": "No lo reconocí porque se había dejado barba.",
+        "explanation": "Past perfect marca que la barba ya había crecido antes del momento de no reconocerlo.",
+        "tokens": [
+          "a",
+          "I",
+          "grown",
+          "beard",
+          "didn't",
+          "recognize",
+          "because",
+          "had",
+          "he",
+          "him"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Marina was upset because she hadn't finished the report.",
+        "alternatives": [
+          "Because she hadn't finished the report, Marina was upset."
+        ],
+        "translation": "Marina estaba enojada porque no había terminado el informe.",
+        "explanation": "Past perfect negativo marca que el informe no se había completado antes de sentirse enojada.",
+        "tokens": [
+          "because",
+          "was",
+          "finished",
+          "upset",
+          "report",
+          "Marina",
+          "the",
+          "hadn't",
+          "she"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past perfect.",
+        "sentence": "When I arrived, the movie already started.",
+        "answers": [
+          "When I arrived, the movie had already started."
+        ],
+        "explanation": "Para marcar que la película ya había empezado antes de que yo llegara se usa past perfect: had + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "When I had arrived, the movie already started.",
+            "why": "Pone en past perfect la acción más reciente (llegar) cuando debería quedar en past simple, y es la acción anterior (empezar) la que necesita past perfect."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past perfect.",
+        "sentence": "I had went there before.",
+        "answers": [
+          "I had gone there before."
+        ],
+        "explanation": "Después de 'had' va el participio del verbo (gone), no el pasado simple (went).",
+        "wrongAnswers": [
+          {
+            "answer": "I have went there before.",
+            "why": "Cambia a present perfect, que no corresponde en una narración en pasado, y además sigue usando mal el participio."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past perfect.",
+        "sentence": "Sofía was nervous because she never had taken a flight before.",
+        "answers": [
+          "Sofía was nervous because she had never taken a flight before."
+        ],
+        "explanation": "El orden correcto es 'had never taken': el auxiliar 'had' va antes de 'never' y después el participio.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía was nervous because she has never taken a flight before.",
+            "why": "Cambia a present perfect, pero la narración está en pasado y se necesita past perfect para marcar anterioridad."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past perfect.",
+        "sentence": "The landlord told us that he already have rented the apartment.",
+        "answers": [
+          "The landlord told us that he had already rented the apartment."
+        ],
+        "explanation": "El auxiliar correcto en una narración en pasado es 'had', no 'have', para formar el past perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord told us that he was already renting the apartment.",
+            "why": "Cambia a pasado continuo, pero se necesita past perfect para marcar que el alquiler ya se había concretado antes de contárnoslo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el past perfect.",
+        "sentence": "By the time the interview started, I had study all the company's history.",
+        "answers": [
+          "By the time the interview started, I had studied all the company's history."
+        ],
+        "explanation": "Después de 'had' va el participio del verbo (studied), no el infinitivo (study).",
+        "wrongAnswers": [
+          {
+            "answer": "By the time the interview started, I have studied all the company's history.",
+            "why": "Cambia a present perfect, pero la narración está en pasado y requiere past perfect."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Cuando llegué a la estación, el tren ya se había ido.",
+        "answers": [
+          "When I got to the station, the train had already left.",
+          "When I arrived at the station, the train had already left."
+        ],
+        "explanation": "Past perfect marca que el tren se fue antes de otro momento del pasado (mi llegada).",
+        "wrongAnswers": [
+          {
+            "answer": "When I got to the station, the train already left.",
+            "why": "Falta el auxiliar 'had'; para marcar que el tren se fue antes de que yo llegara se necesita past perfect."
+          },
+          {
+            "answer": "When I got to the station, the train has already left.",
+            "why": "El presente perfecto no corresponde en una narración que ya está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nunca había visto el mar antes de ese viaje.",
+        "answers": [
+          "I had never seen the ocean before that trip.",
+          "I'd never seen the ocean before that trip.",
+          "I had never seen the sea before that trip."
+        ],
+        "explanation": "Past perfect con 'never' marca que algo no había ocurrido nunca antes de otro momento del pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "I never saw the ocean before that trip.",
+            "why": "El pasado simple no marca con claridad que fue antes de otro momento pasado (el viaje); se necesita past perfect."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No lo reconocí porque se había dejado barba.",
+        "answers": [
+          "I didn't recognize him because he had grown a beard.",
+          "I didn't recognize him because he'd grown a beard."
+        ],
+        "explanation": "Past perfect marca que la barba ya había crecido antes del momento de no reconocerlo.",
+        "wrongAnswers": [
+          {
+            "answer": "I didn't recognize him because he grew a beard.",
+            "why": "Sugiere que se dejó la barba justo en el momento en que no lo reconocí, en vez de antes."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Para cuando Marina llegó a la oficina, la reunión ya había empezado.",
+        "answers": [
+          "By the time Marina arrived at the office, the meeting had already started.",
+          "By the time Marina got to the office, the meeting had already started."
+        ],
+        "explanation": "Con 'by the time' se usa past perfect para marcar que la reunión ya había empezado antes de la llegada de Marina.",
+        "wrongAnswers": [
+          {
+            "answer": "By the time Marina arrived at the office, the meeting already started.",
+            "why": "Falta el auxiliar 'had'; con 'by the time' se necesita past perfect para marcar la acción anterior."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico se sorprendió porque nunca había visto un caso así.",
+        "answers": [
+          "The doctor was surprised because he had never seen a case like that.",
+          "The doctor was surprised because he'd never seen a case like that."
+        ],
+        "explanation": "Past perfect con 'never' marca que algo no había ocurrido nunca antes de ese momento pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor was surprised because he never saw a case like that.",
+            "why": "El pasado simple no marca que fue antes de otro momento pasado; se necesita past perfect con 'never'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Cuando Lucía visitó el departamento, el dueño ya se lo había alquilado a otra persona.",
+        "answers": [
+          "When Lucía visited the apartment, the landlord had already rented it to someone else."
+        ],
+        "explanation": "Past perfect marca que el departamento ya se había alquilado antes de otro momento del pasado (la visita de Lucía).",
+        "wrongAnswers": [
+          {
+            "answer": "When Lucía visited the apartment, the landlord already rented it to someone else.",
+            "why": "Falta el auxiliar 'had'; se necesita past perfect para marcar que el alquiler ocurrió antes de la visita."
+          }
+        ]
+      }
+    ],
+    "used-to-would": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "When I was young, I ___ a lot of energy and could run for hours.",
+        "options": [
+          "would have",
+          "use to have",
+          "used to have",
+          "having"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Would' no se usa con verbos de estado como 'have' (tener); para estados del pasado se usa 'used to'.",
+        "optionNotes": [
+          "Incorrecto: 'would' no se usa con verbos de estado como 'have' (tener).",
+          "Incorrecto: falta la 'd' en 'used to'; solo se quita en negativo y pregunta con did.",
+          "Correcto: 'used to' sí puede describir estados del pasado que ya no son así.",
+          "Incorrecto: falta el auxiliar 'used to' o 'would', no es una oración completa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "My grandmother ___ us stories every night before bed.",
+        "options": [
+          "would tell",
+          "was telling",
+          "would telling",
+          "use to tell"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Would' + verbo base describe una acción repetida en el pasado, ideal para contar recuerdos.",
+        "optionNotes": [
+          "Correcto: 'would' + verbo base describe una acción repetida en el pasado, ideal para recuerdos.",
+          "Incorrecto: el pasado continuo no expresa hábito repetido con esta estructura.",
+          "Incorrecto: después de 'would' va el verbo en forma base, sin -ing.",
+          "Incorrecto: falta la 'd'; en afirmativo se escribe 'used to tell'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I ___ coffee, but now I drink it every morning.",
+        "options": [
+          "usedn't to drink",
+          "didn't used to drink",
+          "didn't use to drink",
+          "don't used to drink"
+        ],
+        "correctIndex": 2,
+        "explanation": "En negativo, 'used to' se forma con did + sujeto + 'use to' (sin -d) + verbo base.",
+        "optionNotes": [
+          "Incorrecto: esa forma no se usa en inglés moderno.",
+          "Incorrecto: con 'did', el verbo vuelve a la forma base 'use to', sin -d.",
+          "Correcto: negativo con did + use to (sin -d) + verbo base.",
+          "Incorrecto: 'used to' es solo para el pasado, no se usa con 'don't' (presente)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "___ you use to work night shifts at your last job?",
+        "options": [
+          "Would",
+          "Use",
+          "Did",
+          "Used"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las preguntas con 'used to' se forman con 'did' + sujeto + 'use to' + verbo base.",
+        "optionNotes": [
+          "Incorrecto: 'would' no se usa así en preguntas sobre hábitos pasados en general; 'used to' es la forma estándar.",
+          "Incorrecto: falta el auxiliar 'did' para formar la pregunta.",
+          "Correcto: la pregunta con 'used to' se forma con did + sujeto + use to + verbo base.",
+          "Incorrecto: con el auxiliar 'did' el verbo principal va en forma base, sin 'used'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Every winter, my brother and I ___ snowmen in the garden.",
+        "options": [
+          "would build",
+          "used to building",
+          "would built",
+          "use to build"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Would' + verbo base expresa una acción repetida en el pasado; no lleva -d ni gerundio.",
+        "optionNotes": [
+          "Correcto: 'would' + verbo base para una acción repetida en el pasado.",
+          "Incorrecto: después de 'used to' va el verbo base, no la forma en -ing.",
+          "Incorrecto: después de 'would' va el verbo base, no el pasado.",
+          "Incorrecto: en afirmativo se necesita 'used to', con -d, no 'use to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I'm used to ___ up early now because of my new job.",
+        "options": [
+          "getting",
+          "get",
+          "to get",
+          "got"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Be used to' + gerundio significa 'estar acostumbrado a algo', una estructura distinta de 'used to' + verbo base para hábitos pasados.",
+        "optionNotes": [
+          "Correcto: 'be used to' + -ing significa 'estar acostumbrado a algo', distinto de 'used to' + verbo base.",
+          "Incorrecto: después de 'be used to' va un gerundio (-ing), no el verbo base.",
+          "Incorrecto: 'be used to' no se combina con infinitivo con to, sino con gerundio.",
+          "Incorrecto: no corresponde el pasado aquí, se necesita gerundio después de 'used to' (estar acostumbrado)."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "When I was a child, I ___ to the park every Sunday with my dad.",
+        "hint": "(go)",
+        "answers": [
+          "used to go",
+          "would go"
+        ],
+        "explanation": "'Used to' + verbo base describe un hábito del pasado que ya no se repite; como 'go' no es un verbo de estado, también se puede usar 'would' para la misma idea.",
+        "wrongAnswers": [
+          {
+            "answer": "use to go",
+            "why": "Falta la 'd'; en afirmativo se escribe 'used to', no 'use to'."
+          },
+          {
+            "answer": "would went",
+            "why": "Después de 'would' va el verbo en forma base, no en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta (negativo).",
+        "sentence": "She ___ spicy food when she was young, but now she loves it.",
+        "hint": "(not/like)",
+        "answers": [
+          "didn't use to like",
+          "did not use to like"
+        ],
+        "explanation": "El negativo de 'used to' se forma con did + not + use to (sin -d) + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't used to like",
+            "why": "Con 'did' el verbo vuelve a la forma base: 'use to', sin -d."
+          },
+          {
+            "answer": "wouldn't like",
+            "why": "'Would' no se usa para negar estados como 'like' en sentido habitual; se usa 'didn't use to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "Every afternoon, Martín's grandfather ___ him jokes at the kitchen table.",
+        "hint": "(tell)",
+        "answers": [
+          "would tell",
+          "used to tell"
+        ],
+        "explanation": "Tanto 'would' como 'used to' + verbo base pueden describir una acción repetida en el pasado al contar recuerdos.",
+        "wrongAnswers": [
+          {
+            "answer": "would telling",
+            "why": "Después de 'would' va el verbo base, sin -ing."
+          },
+          {
+            "answer": "used to telling",
+            "why": "Después de 'used to' va el verbo base, no el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el auxiliar correcto.",
+        "sentence": "___ you use to play football when you were at school?",
+        "hint": "(auxiliar)",
+        "answers": [
+          "Did"
+        ],
+        "explanation": "Las preguntas con 'used to' se forman con 'did' + sujeto + 'use to' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Would",
+            "why": "Para preguntar por un hábito general del pasado se usa 'did... use to', no 'would' en la pregunta."
+          },
+          {
+            "answer": "Were",
+            "why": "No es el auxiliar correcto para formar esta pregunta con 'use to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I'm not used to ___ in such a big city; Buenos Aires is very different from my hometown.",
+        "hint": "(live)",
+        "answers": [
+          "living"
+        ],
+        "explanation": "'Be used to' + gerundio significa 'estar acostumbrado a algo', distinto de 'used to' + verbo base para hábitos pasados.",
+        "wrongAnswers": [
+          {
+            "answer": "live",
+            "why": "Después de 'be used to' va un gerundio (-ing), no el verbo base."
+          },
+          {
+            "answer": "lived",
+            "why": "No corresponde el pasado; se necesita gerundio después de 'used to' (estar acostumbrado)."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "We ___ a dog when I was little, but it died a few years ago.",
+        "hint": "(have)",
+        "answers": [
+          "used to have"
+        ],
+        "explanation": "Para estados del pasado que ya no son así, como tener algo, se usa 'used to', nunca 'would'.",
+        "wrongAnswers": [
+          {
+            "answer": "would have",
+            "why": "'Would' no se usa con verbos de estado como 'have' (tener); se necesita 'used to'."
+          },
+          {
+            "answer": "use to have",
+            "why": "Falta la 'd' en afirmativo: se escribe 'used to', no 'use to'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I used to play the guitar when I was a teenager.",
+        "alternatives": [
+          "When I was a teenager, I used to play the guitar."
+        ],
+        "translation": "De adolescente tocaba la guitarra.",
+        "explanation": "'Used to' + verbo base describe un hábito del pasado que ya no continúa.",
+        "tokens": [
+          "play",
+          "was",
+          "used",
+          "I",
+          "to",
+          "when",
+          "I",
+          "a",
+          "guitar",
+          "teenager",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My grandmother would tell us stories every night.",
+        "alternatives": [
+          "Every night, my grandmother would tell us stories."
+        ],
+        "translation": "Mi abuela nos contaba cuentos todas las noches.",
+        "explanation": "'Would' + verbo base describe una acción repetida en el pasado, típica de los recuerdos.",
+        "tokens": [
+          "night",
+          "stories",
+          "us",
+          "tell",
+          "would",
+          "every",
+          "My",
+          "grandmother"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Did you use to live near here?",
+        "alternatives": [],
+        "translation": "¿Antes vivías cerca de acá?",
+        "explanation": "Las preguntas con 'used to' se forman con did + sujeto + 'use to' (sin -d) + verbo base.",
+        "tokens": [
+          "use",
+          "live",
+          "near",
+          "here",
+          "you",
+          "to",
+          "Did"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We didn't use to have much money.",
+        "alternatives": [],
+        "translation": "Antes no teníamos mucha plata.",
+        "explanation": "El negativo de 'used to' se forma con did + not + 'use to' (sin -d) + verbo base.",
+        "tokens": [
+          "use",
+          "We",
+          "didn't",
+          "to",
+          "money",
+          "much",
+          "have"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I'm used to working long hours now.",
+        "alternatives": [
+          "Now I'm used to working long hours."
+        ],
+        "translation": "Ahora estoy acostumbrado a trabajar muchas horas.",
+        "explanation": "'Be used to' + gerundio expresa que alguien está acostumbrado a algo, a diferencia de 'used to' + verbo base para hábitos pasados.",
+        "tokens": [
+          "long",
+          "to",
+          "I'm",
+          "now",
+          "working",
+          "hours",
+          "used"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "I didn't used to smoke when I was younger.",
+        "answers": [
+          "I didn't use to smoke when I was younger."
+        ],
+        "explanation": "Con el auxiliar 'did', el verbo 'used to' pierde la 'd': 'use to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I didn't use to smoked when I was younger.",
+            "why": "Cambia el verbo principal a pasado en vez de dejarlo en forma base después de 'use to'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "I use to wake up at seven, but now I wake up at six.",
+        "answers": [
+          "I used to wake up at seven, but now I wake up at six."
+        ],
+        "explanation": "En afirmativo, sin auxiliar 'did', se escribe 'used to' con -d para describir un hábito pasado que ya cambió.",
+        "wrongAnswers": [
+          {
+            "answer": "I use to waking up at seven, but now I wake up at six.",
+            "why": "Cambia la forma del verbo a gerundio en vez de agregar la 'd' que falta en 'used to'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "Every summer we would went to the coast with our cousins.",
+        "answers": [
+          "Every summer we would go to the coast with our cousins."
+        ],
+        "explanation": "Después de 'would' siempre va el verbo en forma base, nunca en pasado ni en gerundio.",
+        "wrongAnswers": [
+          {
+            "answer": "Every summer we would going to the coast with our cousins.",
+            "why": "Después de 'would' va el verbo base, no el gerundio; el error original era el tiempo verbal, no la forma -ing."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "When I was a student, I would have a lot of free time.",
+        "answers": [
+          "When I was a student, I used to have a lot of free time."
+        ],
+        "explanation": "'Would' no se usa con verbos de estado como 'have' (tener); para estados del pasado corresponde 'used to'.",
+        "wrongAnswers": [
+          {
+            "answer": "When I was a student, I would had a lot of free time.",
+            "why": "El problema no es la forma del verbo después de would, sino que 'have' (estado) no puede usarse con 'would'; se necesita 'used to'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "Did you would play basketball when you were younger?",
+        "answers": [
+          "Did you use to play basketball when you were younger?"
+        ],
+        "explanation": "No se puede combinar 'did' con 'would'; las preguntas sobre hábitos pasados se forman con did + sujeto + use to + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you used to play basketball when you were younger?",
+            "why": "Con el auxiliar 'did', el verbo va en forma base 'use to', sin -d."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Antes jugaba al fútbol todos los fines de semana.",
+        "answers": [
+          "I used to play football every weekend.",
+          "I would play football every weekend."
+        ],
+        "explanation": "Para un hábito repetido del pasado que ya no se cumple se puede usar 'used to' o 'would' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "I use to play football every weekend.",
+            "why": "Falta la 'd'; en afirmativo se escribe 'used to', no 'use to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi abuelo nos contaba historias de su juventud.",
+        "answers": [
+          "My grandfather would tell us stories about his youth.",
+          "My grandfather used to tell us stories about his youth."
+        ],
+        "explanation": "'Would' + verbo base es muy común para contar recuerdos de acciones repetidas en el pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "My grandfather would told us stories about his youth.",
+            "why": "Después de 'would' va el verbo en forma base, no en pasado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Antes no me gustaba el mate, pero ahora lo tomo todos los días.",
+        "answers": [
+          "I didn't use to like mate, but now I drink it every day.",
+          "I didn't use to like mate, but now I have it every day."
+        ],
+        "explanation": "El negativo de un estado en el pasado se expresa con 'didn't use to' (sin -d), nunca con 'would'.",
+        "wrongAnswers": [
+          {
+            "answer": "I didn't used to like mate, but now I drink it every day.",
+            "why": "Con 'did' el verbo vuelve a la forma base: 'use to', sin -d."
+          },
+          {
+            "answer": "I wouldn't like mate, but now I drink it every day.",
+            "why": "'Would' no se usa para negar estados como 'like' en sentido habitual; se necesita 'didn't use to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Vivías cerca de la facultad antes?",
+        "answers": [
+          "Did you use to live near the university?",
+          "Did you use to live close to the university?"
+        ],
+        "explanation": "Las preguntas sobre hábitos pasados se forman con did + sujeto + 'use to' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you used to live near the university?",
+            "why": "Con el auxiliar 'did' el verbo va en forma base: 'use to', sin -d."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ya me acostumbré a levantarme temprano por el nuevo trabajo.",
+        "answers": [
+          "I'm used to getting up early because of the new job.",
+          "I've gotten used to getting up early because of the new job.",
+          "I am used to getting up early because of the new job."
+        ],
+        "explanation": "'Be/get used to' + gerundio expresa estar acostumbrado a algo, una estructura distinta de 'used to' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm used to get up early because of the new job.",
+            "why": "Después de 'be used to' va un gerundio (-ing), no el verbo base."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Antes teníamos un perro, pero se murió hace unos años.",
+        "answers": [
+          "We used to have a dog, but it died a few years ago."
+        ],
+        "explanation": "Para describir un estado del pasado que ya no es así, como tener una mascota, se usa 'used to', nunca 'would'.",
+        "wrongAnswers": [
+          {
+            "answer": "We would have a dog, but it died a few years ago.",
+            "why": "'Would' no se usa con verbos de estado como 'have' (tener); se necesita 'used to'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre los recuerdos de infancia de Marisa y respondé las preguntas sobre used to y would.",
+        "text": "When I was a child, I used to live in Tandil, a small town in Buenos Aires province. My family used to have a small house near the hills, and every weekend we would go for long walks in the countryside. My grandmother would cook delicious stews, and we would all sit together at the table and talk for hours.\n\nI used to have a lot of free time back then, but things are very different now. I moved to the city five years ago, and I didn't use to like living in such a busy place, but I've gotten used to it. I don't have as much time as before, and I rarely see my family.\n\nSometimes I miss those quiet afternoons. My brother still lives in Tandil, and he says the town hasn't changed much. He asked me the other day, 'Did you use to miss the city when you lived here?' I laughed and said, 'Never!'",
+        "questions": [
+          {
+            "prompt": "What would Marisa's family do every weekend in Tandil?",
+            "options": [
+              "They would travel to Buenos Aires.",
+              "They would go for long walks in the countryside.",
+              "They would visit their grandmother's house in the city.",
+              "They would work on the family farm."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Would' describe una acción repetida en el pasado, como las caminatas de todos los fines de semana."
+          },
+          {
+            "prompt": "Why does Marisa say \"I've gotten used to it\" about living in the city?",
+            "options": [
+              "Because her grandmother used to live there too.",
+              "Because she used to live in the city before moving to Tandil.",
+              "Because she didn't use to like living in such a busy place, but now she is accustomed to it.",
+              "Because she would visit the city every weekend."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Didn't use to' habla de un hábito pasado que ya no es así, mientras que 'be used to' significa estar acostumbrado a algo en el presente; son dos estructuras distintas."
+          },
+          {
+            "prompt": "What did Marisa's grandmother use to do?",
+            "options": [
+              "She would complain about the countryside.",
+              "She used to live in the city.",
+              "She would cook delicious stews for the family.",
+              "She would work in Buenos Aires."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Would cook' expresa una acción que se repetía habitualmente en el pasado, típica de los recuerdos familiares."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el primer trabajo de Diego y respondé las preguntas sobre used to y would.",
+        "text": "Diego has worked as an accountant for ten years, but his first job was very different. He used to work at a small family business in San Telmo, where only six people worked together. Every Friday, they would have lunch together in a nearby café, and the owner would tell jokes to make everyone laugh.\n\nDiego used to arrive at work by bike because the office was close to his apartment. He didn't use to wear a suit either; the dress code was very relaxed. Now he works at a big company downtown, and he has to wear formal clothes every day.\n\nLast week, his old boss called him and asked, 'Did you use to miss the family business after you left?' Diego said he still missed the friendly atmosphere, but he enjoys his new responsibilities too.\n\nHis colleagues at the new company find it hard to believe that Diego would ride his bike to work every day and have lunch with his boss every Friday.",
+        "questions": [
+          {
+            "prompt": "What would Diego and his colleagues do every Friday at his old job?",
+            "options": [
+              "They would ride bikes to the countryside.",
+              "They would have lunch together in a nearby café.",
+              "They would close the office early.",
+              "They would wear suits for a meeting."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Would have lunch' describe una acción repetida y habitual del pasado, típica de los recuerdos de trabajo."
+          },
+          {
+            "prompt": "Why didn't Diego use to wear a suit at his old job?",
+            "options": [
+              "Because he didn't have enough money for one.",
+              "Because the owner didn't allow formal clothes.",
+              "Because the dress code was very relaxed.",
+              "Because he used to work from home."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Didn't use to wear' describe un estado o hábito del pasado que ya no es así; con 'did' el verbo vuelve a su forma base, sin -d."
+          },
+          {
+            "prompt": "What do Diego's new colleagues find hard to believe?",
+            "options": [
+              "That he would wear a suit every day.",
+              "That he used to work as an accountant.",
+              "That he would ride his bike to work every day and have lunch with his boss every Friday.",
+              "That he didn't use to like his new job."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Would ride' y 'would have lunch' describen acciones repetidas del pasado que contrastan con su rutina actual en la empresa nueva."
+          }
+        ]
+      }
+    ],
+    "contar-historia": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "It ___ heavily when Sofía left the office last Friday.",
+        "options": [
+          "rained",
+          "rains",
+          "was raining",
+          "has rained"
+        ],
+        "correctIndex": 2,
+        "explanation": "El pasado continuo describe el escenario de fondo de una historia (lo que estaba pasando) antes de contar los hechos puntuales.",
+        "optionNotes": [
+          "Incorrecto: para describir el escenario de fondo en una narración se usa pasado continuo, no pasado simple.",
+          "Incorrecto: el presente simple no sirve para narrar hechos del pasado.",
+          "Correcto: el pasado continuo describe lo que estaba pasando en el momento del relato.",
+          "Incorrecto: el present perfect no se usa para narrar hechos pasados con un marco temporal definido."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "When Diego arrived at the airport, he realized he ___ his passport at home.",
+        "options": [
+          "had left",
+          "has left",
+          "was leaving",
+          "left"
+        ],
+        "correctIndex": 0,
+        "explanation": "El pasado perfecto marca una acción anterior a otro momento del pasado dentro del relato.",
+        "optionNotes": [
+          "Correcto: el pasado perfecto indica que olvidar el pasaporte sucedió antes de llegar al aeropuerto.",
+          "Incorrecto: el present perfect no se usa para narrar hechos dentro de una historia en pasado.",
+          "Incorrecto: el pasado continuo no expresa una acción anterior ya completada.",
+          "Incorrecto: no marca que la acción de olvidar el pasaporte fue anterior a llegar al aeropuerto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I was reading on the couch. ___, the lights went out.",
+        "options": [
+          "Eventually",
+          "As soon as",
+          "At the end",
+          "Suddenly"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Suddenly' introduce un hecho inesperado en medio de la escena; 'at the end' necesita 'of algo' y 'as soon as' une dos cláusulas.",
+        "optionNotes": [
+          "Incorrecto: se usa para decir que algo pasó finalmente tras un proceso largo, no de forma repentina.",
+          "Incorrecto: 'as soon as' necesita dos cláusulas (as soon as + sujeto + verbo), no se usa solo al inicio de una oración independiente.",
+          "Incorrecto: 'at the end' necesita 'of algo', no funciona solo así para decir 'de repente'.",
+          "Correcto: indica que algo pasó de forma inesperada en medio de la escena."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "___ the interview, Martina felt confident about her answers.",
+        "options": [
+          "At the end of",
+          "Eventually",
+          "In the end",
+          "Suddenly"
+        ],
+        "correctIndex": 0,
+        "explanation": "'At the end of' + sustantivo significa 'al final de algo'; 'in the end' (sin 'of') significa 'finalmente'.",
+        "optionNotes": [
+          "Correcto: 'al final de algo' se dice 'at the end of' + sustantivo.",
+          "Incorrecto: no se combina directamente con 'the interview' de esta forma.",
+          "Incorrecto: significa 'finalmente' y no se combina con 'of algo'.",
+          "Incorrecto: no tiene sentido de conclusión temporal aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Lucas couldn't pay for the taxi because he ___ his wallet at the restaurant.",
+        "options": [
+          "forgets",
+          "forgot",
+          "was forgetting",
+          "had forgotten"
+        ],
+        "correctIndex": 3,
+        "explanation": "El pasado perfecto explica la causa de algo que pasó antes del momento que se está narrando.",
+        "optionNotes": [
+          "Incorrecto: el presente simple no corresponde en una narración en pasado.",
+          "Incorrecto: no marca claramente que el olvido fue anterior al momento de pagar el taxi.",
+          "Incorrecto: el pasado continuo no expresa una acción anterior ya completada.",
+          "Correcto: el pasado perfecto indica que olvidar la billetera sucedió antes del momento narrado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "We waited for almost an hour. ___, the doctor called our name.",
+        "options": [
+          "At the end",
+          "First",
+          "Suddenly",
+          "Eventually"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Eventually' indica que algo sucedió finalmente después de un proceso o espera, a diferencia de 'suddenly' o 'first'.",
+        "optionNotes": [
+          "Incorrecto: necesita 'of algo' para funcionar así, no se usa solo.",
+          "Incorrecto: se usa para indicar el primer paso de una secuencia, no el resultado final.",
+          "Incorrecto: implica algo inesperado y repentino, no el resultado de una espera.",
+          "Correcto: indica que algo pasó finalmente después de un proceso o espera."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "It ___ when we left the restaurant last night.",
+        "hint": "(rain)",
+        "answers": [
+          "was raining"
+        ],
+        "explanation": "El pasado continuo se usa para describir el escenario de fondo de una historia.",
+        "wrongAnswers": [
+          {
+            "answer": "rained",
+            "why": "Para describir el escenario de fondo en una narración se usa pasado continuo, no pasado simple."
+          },
+          {
+            "answer": "has rained",
+            "why": "El present perfect no se usa para narrar hechos pasados con un marco temporal definido."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "When Valentina opened her suitcase, she realized she ___ the wrong shoes.",
+        "hint": "(pack)",
+        "answers": [
+          "had packed"
+        ],
+        "explanation": "El pasado perfecto marca una acción que ocurrió antes de otro momento del pasado en el relato.",
+        "wrongAnswers": [
+          {
+            "answer": "packed",
+            "why": "La acción de guardar las valijas ocurrió antes del momento de abrirla; se necesita pasado perfecto."
+          },
+          {
+            "answer": "has packed",
+            "why": "El present perfect no se usa para narrar hechos dentro de una historia en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el conector correcto.",
+        "sentence": "___ the meeting, everyone was relieved that the project was finally approved.",
+        "hint": "(conector)",
+        "answers": [
+          "At the end of",
+          "By the end of"
+        ],
+        "explanation": "'At the end of' (o 'by the end of') + sustantivo significa 'al final de algo', a diferencia de 'in the end' que significa 'finalmente'.",
+        "wrongAnswers": [
+          {
+            "answer": "In the end of",
+            "why": "'In the end' no se combina con 'of'; para decir 'al final de algo' se usa 'at the end of'."
+          },
+          {
+            "answer": "In the end",
+            "why": "'In the end' significa 'finalmente' y no lleva un sustantivo después con 'of'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Mariano was nervous because he ___ enough for the exam.",
+        "hint": "(not/study)",
+        "answers": [
+          "hadn't studied",
+          "had not studied"
+        ],
+        "explanation": "El pasado perfecto explica la causa de un sentimiento o situación que viene de algo anterior en la historia.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't study",
+            "why": "La falta de estudio ocurrió antes del momento de estar nervioso; se necesita pasado perfecto para marcar lo anterior."
+          },
+          {
+            "answer": "wasn't studying",
+            "why": "El pasado continuo no expresa una acción anterior ya completada antes del momento narrado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el conector correcto.",
+        "sentence": "___, a stranger offered to help Julieta find her lost phone.",
+        "hint": "(finalmente)",
+        "answers": [
+          "In the end",
+          "Eventually"
+        ],
+        "explanation": "'In the end' y 'eventually' se usan para decir 'finalmente', sin necesidad de un sustantivo después.",
+        "wrongAnswers": [
+          {
+            "answer": "At the end",
+            "why": "'At the end' necesita 'of algo' para funcionar; para decir 'al final, finalmente' se usa 'in the end' o 'eventually'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I was walking down the street when I ___ my old teacher from high school.",
+        "hint": "(see)",
+        "answers": [
+          "saw"
+        ],
+        "explanation": "La acción puntual que interrumpe el escenario de fondo (pasado continuo) se expresa en pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "had seen",
+            "why": "La acción que interrumpe el escenario de fondo va en pasado simple, no en pasado perfecto."
+          },
+          {
+            "answer": "was seeing",
+            "why": "El pasado continuo no se usa para la acción puntual que interrumpe la escena, sino para el fondo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "It was raining when I left the office.",
+        "alternatives": [],
+        "translation": "Llovía cuando salí de la oficina.",
+        "explanation": "El pasado continuo describe el escenario de fondo de la historia, interrumpido por una acción en pasado simple.",
+        "tokens": [
+          "the",
+          "raining",
+          "when",
+          "I",
+          "left",
+          "It",
+          "office",
+          "was"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She realized she had left her keys inside.",
+        "alternatives": [],
+        "translation": "Se dio cuenta de que se había olvidado las llaves adentro.",
+        "explanation": "El pasado perfecto marca que olvidar las llaves ocurrió antes del momento de darse cuenta.",
+        "tokens": [
+          "keys",
+          "left",
+          "her",
+          "inside",
+          "she",
+          "realized",
+          "had",
+          "She"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eventually, the doctor called our name.",
+        "alternatives": [],
+        "translation": "Finalmente, el médico dijo nuestro nombre.",
+        "explanation": "'Eventually' indica que algo pasó finalmente después de un proceso o una espera larga.",
+        "tokens": [
+          "Eventually,",
+          "the",
+          "name",
+          "our",
+          "doctor",
+          "called"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "At the end of the interview, Camila felt relieved.",
+        "alternatives": [
+          "Camila felt relieved at the end of the interview."
+        ],
+        "translation": "Al final de la entrevista, Camila se sintió aliviada.",
+        "explanation": "'At the end of' + sustantivo significa 'al final de algo'.",
+        "tokens": [
+          "interview,",
+          "the",
+          "the",
+          "Camila",
+          "At",
+          "end",
+          "of",
+          "felt",
+          "relieved"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Suddenly, the lights went out in the apartment.",
+        "alternatives": [],
+        "translation": "De repente, se cortó la luz en el departamento.",
+        "explanation": "'Suddenly' introduce un hecho inesperado dentro de la narración.",
+        "tokens": [
+          "apartment",
+          "lights",
+          "out",
+          "in",
+          "went",
+          "Suddenly,",
+          "the",
+          "the"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "At the end, everything was OK.",
+        "answers": [
+          "In the end, everything was OK."
+        ],
+        "explanation": "Para decir 'al final, finalmente' se usa 'in the end'; 'at the end' necesita 'of algo'.",
+        "wrongAnswers": [
+          {
+            "answer": "At the end, everything is OK.",
+            "why": "Cambia el tiempo verbal en vez de corregir la expresión incorrecta 'at the end'; el error estaba en el conector, no en el verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "Suddenly I realized that I forgot my keys.",
+        "answers": [
+          "Suddenly I realized that I had forgotten my keys."
+        ],
+        "explanation": "Lo que pasó antes del momento del relato se expresa en pasado perfecto.",
+        "wrongAnswers": [
+          {
+            "answer": "Suddenly I realized that I have forgotten my keys.",
+            "why": "El present perfect no corresponde dentro de una narración en pasado; se necesita pasado perfecto porque la acción fue anterior."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "It was rain all afternoon, so we stayed inside.",
+        "answers": [
+          "It was raining all afternoon, so we stayed inside."
+        ],
+        "explanation": "El pasado continuo ('was raining') describe la situación de fondo que duró un tiempo en la historia.",
+        "wrongAnswers": [
+          {
+            "answer": "It rained all afternoon, so we stayed inside.",
+            "why": "Cambia la oración a pasado simple en vez de mantener el pasado continuo, que describe mejor el escenario de fondo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "When Nico arrived at the party, he realized he was forgetting the gift at home.",
+        "answers": [
+          "When Nico arrived at the party, he realized he had forgotten the gift at home."
+        ],
+        "explanation": "El pasado perfecto se usa para la acción anterior (olvidar el regalo) respecto a otro momento del pasado (llegar a la fiesta).",
+        "wrongAnswers": [
+          {
+            "answer": "When Nico arrived at the party, he realized he forgot the gift at home.",
+            "why": "El pasado simple no marca claramente que olvidar el regalo fue anterior a llegar a la fiesta; se necesita pasado perfecto."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "First we had dinner, after that we had ordered dessert.",
+        "answers": [
+          "First we had dinner, after that we ordered dessert."
+        ],
+        "explanation": "Cuando los hechos se cuentan en el orden en que pasaron, se usa pasado simple para ambos, sin pasado perfecto.",
+        "wrongAnswers": [
+          {
+            "answer": "First we had had dinner, after that we ordered dessert.",
+            "why": "Agrega pasado perfecto a la primera acción en vez de corregir la segunda, que no necesita pasado perfecto porque sigue el orden cronológico normal."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Llovía mucho cuando salimos del cine.",
+        "answers": [
+          "It was raining a lot when we left the cinema.",
+          "It was raining hard when we left the cinema."
+        ],
+        "explanation": "El pasado continuo describe la situación de fondo (la lluvia) en el momento en que ocurre otra acción puntual.",
+        "wrongAnswers": [
+          {
+            "answer": "It rained a lot when we left the cinema.",
+            "why": "Para describir el escenario de fondo de una historia se usa pasado continuo, no pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Cuando llegamos al aeropuerto, nos dimos cuenta de que habíamos olvidado los pasaportes.",
+        "answers": [
+          "When we arrived at the airport, we realized we had forgotten our passports.",
+          "When we got to the airport, we realized we had forgotten our passports."
+        ],
+        "explanation": "El pasado perfecto marca la acción (olvidar los pasaportes) anterior a otro momento del pasado (llegar al aeropuerto).",
+        "wrongAnswers": [
+          {
+            "answer": "When we arrived at the airport, we realized we forgot our passports.",
+            "why": "El olvido de los pasaportes ocurrió antes de llegar al aeropuerto; se necesita pasado perfecto para marcar esa acción anterior."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "De repente, se fue la luz en todo el edificio.",
+        "answers": [
+          "Suddenly, the power went out in the whole building.",
+          "Suddenly, the electricity went out in the whole building."
+        ],
+        "explanation": "'Suddenly' se usa para introducir un hecho inesperado en medio de una narración.",
+        "wrongAnswers": [
+          {
+            "answer": "At the end, the power went out in the whole building.",
+            "why": "'At the end' no significa 'de repente'; para eso se usa 'suddenly'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Al final de la reunión, todos estaban de acuerdo con el plan.",
+        "answers": [
+          "At the end of the meeting, everyone agreed with the plan.",
+          "At the end of the meeting, everybody agreed with the plan.",
+          "By the end of the meeting, everyone agreed with the plan."
+        ],
+        "explanation": "'At the end of' (o 'by the end of') + sustantivo se usa para decir 'al final de algo' concreto, como una reunión.",
+        "wrongAnswers": [
+          {
+            "answer": "In the end of the meeting, everyone agreed with the plan.",
+            "why": "'In the end' no se combina con 'of'; para decir 'al final de algo' se usa 'at the end of'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Esperamos como una hora y, finalmente, nos atendió el médico.",
+        "answers": [
+          "We waited for about an hour and eventually the doctor saw us.",
+          "We waited for around an hour and, in the end, the doctor saw us."
+        ],
+        "explanation": "'Eventually' o 'in the end' expresan que algo pasó finalmente después de un proceso o espera.",
+        "wrongAnswers": [
+          {
+            "answer": "We waited for about an hour and at the end the doctor saw us.",
+            "why": "'At the end' necesita 'of algo'; para decir 'finalmente' se usa 'eventually' o 'in the end'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mientras caminaba a casa, me di cuenta de que había perdido el celular.",
+        "answers": [
+          "While I was walking home, I realized I had lost my phone.",
+          "As I was walking home, I realized I had lost my phone."
+        ],
+        "explanation": "El pasado continuo describe el fondo (caminar a casa) y el pasado perfecto marca lo que había pasado antes (perder el celular).",
+        "wrongAnswers": [
+          {
+            "answer": "While I was walking home, I realized I lost my phone.",
+            "why": "La pérdida del celular ocurrió antes de darse cuenta; se necesita pasado perfecto para marcar esa acción anterior."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la historia y elegí la opción correcta para cada pregunta.",
+        "text": "Last winter, Lucía was travelling to Bariloche to visit her cousin Martín. It was a freezing Friday evening and she was waiting at the bus terminal in Buenos Aires. She had already bought her ticket online, so she wasn't worried about missing the bus. First, she checked her phone and saw a message from Martín. Then, she looked for her passport in her bag, but she couldn't find it. Suddenly, she remembered that she had left it on the kitchen table that morning. She felt terrible because the bus was leaving in twenty minutes. As soon as she called her mother, she explained the problem. Her mother said she could bring the passport to the terminal, but the traffic was heavy. Lucía waited anxiously. Eventually, her mother arrived with only five minutes to spare. In the end, Lucía managed to get on the bus just in time, and she finally relaxed when it left the station.",
+        "questions": [
+          {
+            "prompt": "¿Por qué Lucía no podía encontrar el pasaporte en su bolso?",
+            "options": [
+              "Because she was waiting at the bus terminal.",
+              "Because her mother had lost it.",
+              "Because the bus was leaving in twenty minutes.",
+              "Because she had left it on the kitchen table that morning."
+            ],
+            "correctIndex": 3,
+            "explanation": "El past perfect (had left) marca una acción anterior al momento del relato: ella ya había dejado el pasaporte en su casa antes de llegar a la terminal."
+          },
+          {
+            "prompt": "Según la historia, ¿qué había pasado antes de que Lucía llegara a la terminal?",
+            "options": [
+              "She had already bought her ticket online.",
+              "She was going to buy it at the terminal.",
+              "She lost her ticket at the terminal.",
+              "Martín had bought it for her."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto usa el past perfect (had already bought) para indicar una acción completada antes de otro momento del pasado, en este caso antes de llegar a esperar el colectivo."
+          },
+          {
+            "prompt": "¿Por qué Lucía finalmente se relajó?",
+            "options": [
+              "Because her mother drove her to Bariloche.",
+              "Because she got on the bus just in time.",
+              "Because the bus left early.",
+              "Because she found her passport at the terminal."
+            ],
+            "correctIndex": 1,
+            "explanation": "La expresión 'in the end' introduce el resultado final de toda la secuencia de hechos: después de los problemas, logró subirse al colectivo justo a tiempo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la historia y elegí la opción correcta para cada pregunta.",
+        "text": "Daniel had an important job interview at a marketing agency in Palermo last Tuesday. It was a sunny morning and he was walking to the office, feeling confident. He had prepared his answers the night before, so he wasn't nervous. First, he arrived at the building and waited in the reception area. Then, the receptionist told him that the interviewer, Ms. Torres, was running late because of a meeting. While he was waiting, he was reading his notes again. After that, Ms. Torres finally called him into her office. As soon as the interview began, she asked him why he had left his previous job. Daniel explained that the company had closed down three months earlier. Suddenly, Ms. Torres smiled and said she had read his CV carefully and was impressed. They talked for almost an hour. Eventually, she told him the agency would contact him soon. In the end, Daniel left the building feeling relieved, even though he didn't know the final result yet.",
+        "questions": [
+          {
+            "prompt": "¿Por qué Daniel no estaba nervioso antes de la entrevista?",
+            "options": [
+              "Because the agency had already hired him.",
+              "Because he knew the receptionist.",
+              "Because he had prepared his answers the night before.",
+              "Because Ms. Torres was running late."
+            ],
+            "correctIndex": 2,
+            "explanation": "El past perfect (had prepared) muestra una acción terminada antes del momento de la entrevista, que explica por qué él se sentía seguro esa mañana."
+          },
+          {
+            "prompt": "¿Por qué Daniel había dejado su trabajo anterior?",
+            "options": [
+              "Because Ms. Torres offered him a better salary.",
+              "Because he didn't like his old job.",
+              "Because he wanted to work in Palermo.",
+              "Because the company had closed down three months earlier."
+            ],
+            "correctIndex": 3,
+            "explanation": "El relato usa el past perfect (had closed down) para contar un hecho anterior que explica la pregunta de la entrevistadora, formulada en past simple (asked)."
+          },
+          {
+            "prompt": "¿Qué estaba haciendo Daniel mientras esperaba a Ms. Torres?",
+            "options": [
+              "He was reading his notes again.",
+              "He was talking to the receptionist.",
+              "He was writing his CV.",
+              "He was calling his previous boss."
+            ],
+            "correctIndex": 0,
+            "explanation": "El past continuous (was reading) describe una acción en curso durante ese momento de la espera, mientras ocurrían los otros hechos puntuales en past simple."
+          }
+        ]
+      }
+    ]
+  }
+}

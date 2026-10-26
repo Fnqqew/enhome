@@ -1,0 +1,2329 @@
+{
+  "subtopics": {
+    "pasiva-forma": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This report ___ by the finance team every month.",
+        "options": [
+          "is written",
+          "writes",
+          "has written",
+          "was written"
+        ],
+        "correctIndex": 0,
+        "explanation": "Presente pasivo (is/are + participio) para describir una acción habitual: el informe no escribe, es escrito.",
+        "optionNotes": [
+          "Correcto: presente pasivo para una acción habitual.",
+          "Incorrecto: writes es voz activa, pero el informe no escribe por sí mismo.",
+          "Incorrecto: has written es voz activa en present perfect, no corresponde al sujeto 'report'.",
+          "Incorrecto: was written es pasado, pero 'every month' indica una rutina presente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The old theatre in San Telmo ___ in 1908.",
+        "options": [
+          "built",
+          "is built",
+          "has been built",
+          "was built"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con una fecha específica del pasado se usa el pasado simple pasivo: was/were + participio.",
+        "optionNotes": [
+          "Incorrecto: falta el verbo be; la pasiva necesita was built, no solo built.",
+          "Incorrecto: is built es presente, no corresponde a un hecho de 1908.",
+          "Incorrecto: has been built (present perfect) no se usa con una fecha concreta como 1908.",
+          "Correcto: pasado simple pasivo con una fecha específica."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I just got home and realized my laptop ___ from the office.",
+        "options": [
+          "is stolen",
+          "was stolen",
+          "has been stolen",
+          "stole"
+        ],
+        "correctIndex": 2,
+        "explanation": "Present perfect pasivo (has/have been + participio) se usa para una acción reciente sin un momento específico mencionado.",
+        "optionNotes": [
+          "Incorrecto: is stolen describe un hecho general, no un evento reciente y puntual.",
+          "Incorrecto: was stolen necesitaría un momento específico del pasado, que no se menciona aquí.",
+          "Correcto: present perfect pasivo para una acción reciente recién descubierta.",
+          "Incorrecto: stole es voz activa, pero la laptop no roba."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ the rent been paid this month?",
+        "options": [
+          "Did",
+          "Has",
+          "Was",
+          "Is"
+        ],
+        "correctIndex": 1,
+        "explanation": "La pregunta en present perfect pasivo se forma con has/have + sujeto + been + participio.",
+        "optionNotes": [
+          "Incorrecto: Did es auxiliar de voz activa y no se usa con been.",
+          "Correcto: Has combina con been + participio en una pregunta de present perfect pasivo.",
+          "Incorrecto: Was combinaría con paid, no con been paid.",
+          "Incorrecto: Is combinaría con being paid, no con been paid."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The pizza ___ yet; it's still in the oven.",
+        "options": [
+          "isn't baked",
+          "wasn't baked",
+          "doesn't bake",
+          "hasn't been baked"
+        ],
+        "correctIndex": 3,
+        "explanation": "Present perfect pasivo negativo se usa con 'yet' para una acción todavía no terminada.",
+        "optionNotes": [
+          "Incorrecto: isn't baked describe un hecho general, no una acción pendiente puntual.",
+          "Incorrecto: wasn't baked necesitaría un momento específico del pasado, no 'yet'.",
+          "Incorrecto: doesn't bake es voz activa; la pizza no hornea, es horneada.",
+          "Correcto: present perfect pasivo negativo, apropiado con 'yet' para una acción pendiente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This position ___ online for two weeks.",
+        "options": [
+          "advertises",
+          "has been advertised",
+          "is advertised",
+          "was advertised"
+        ],
+        "correctIndex": 1,
+        "explanation": "Present perfect pasivo se usa con 'for' para describir una duración que llega hasta el presente.",
+        "optionNotes": [
+          "Incorrecto: advertises es voz activa; el puesto no anuncia, es anunciado.",
+          "Correcto: present perfect pasivo para una duración que continúa hasta el presente.",
+          "Incorrecto: is advertised describe un hecho general, no la duración expresada con 'for two weeks'.",
+          "Incorrecto: was advertised es pasado simple, pero 'for two weeks' indica duración hasta ahora."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma pasiva correcta del verbo.",
+        "sentence": "Fresh bread ___ every morning at this café in Palermo.",
+        "hint": "(bake)",
+        "answers": [
+          "is baked"
+        ],
+        "explanation": "Presente pasivo (is + participio) para describir una acción habitual.",
+        "wrongAnswers": [
+          {
+            "answer": "bakes",
+            "why": "Bakes es voz activa; el pan no hornea, se usa is baked."
+          },
+          {
+            "answer": "was baked",
+            "why": "Was baked es pasado, pero la oración describe una rutina en presente."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma pasiva correcta del verbo.",
+        "sentence": "My car ___ at the garage last Friday.",
+        "hint": "(fix)",
+        "answers": [
+          "was fixed"
+        ],
+        "explanation": "Pasado simple pasivo (was + participio) con un momento específico del pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "fixed",
+            "why": "Fixed sin be es voz activa; el auto no arregla, necesita was fixed."
+          },
+          {
+            "answer": "has been fixed",
+            "why": "Has been fixed es present perfect, pero la fecha específica 'last Friday' pide pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma pasiva correcta del verbo.",
+        "sentence": "My application ___ yet; I'm still waiting for an answer.",
+        "hint": "(review)",
+        "answers": [
+          "hasn't been reviewed",
+          "has not been reviewed"
+        ],
+        "explanation": "Present perfect pasivo negativo con 'yet' para una acción todavía no terminada.",
+        "wrongAnswers": [
+          {
+            "answer": "wasn't reviewed",
+            "why": "Wasn't reviewed necesita un momento específico del pasado; aquí la situación sigue pendiente, así que va present perfect."
+          },
+          {
+            "answer": "isn't reviewed",
+            "why": "Isn't reviewed describe un hecho general, no una acción pendiente reciente."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma pasiva correcta del verbo.",
+        "sentence": "Has the contract ___ yet?",
+        "hint": "(sign)",
+        "answers": [
+          "been signed"
+        ],
+        "explanation": "La pregunta en present perfect pasivo se forma con has + been + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "signed",
+            "why": "Falta been; en pasiva con has se necesita been + participio."
+          },
+          {
+            "answer": "being signed",
+            "why": "Being signed se usa para pasiva continua, no para present perfect pasivo con has."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma pasiva correcta del verbo.",
+        "sentence": "Unfortunately, my suitcase ___ when I arrived at the hotel.",
+        "hint": "(not deliver)",
+        "answers": [
+          "wasn't delivered",
+          "was not delivered"
+        ],
+        "explanation": "Pasado simple pasivo negativo con un momento específico del pasado (when I arrived).",
+        "wrongAnswers": [
+          {
+            "answer": "didn't deliver",
+            "why": "Didn't deliver es voz activa; la maleta no entrega, hay que usar wasn't delivered."
+          },
+          {
+            "answer": "hasn't been delivered",
+            "why": "Hasn't been delivered es present perfect, pero 'when I arrived' marca un momento específico del pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma pasiva correcta del verbo.",
+        "sentence": "Several languages ___ in this region, including Guaraní and Spanish.",
+        "hint": "(speak)",
+        "answers": [
+          "are spoken"
+        ],
+        "explanation": "Presente pasivo (are + participio) para describir una situación actual y general.",
+        "wrongAnswers": [
+          {
+            "answer": "speak",
+            "why": "Speak es voz activa; los idiomas no hablan, se usa are spoken."
+          },
+          {
+            "answer": "were spoken",
+            "why": "Were spoken es pasado, pero la oración describe una situación actual."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "The bridge was built in 1920.",
+        "alternatives": [],
+        "translation": "El puente se construyó en 1920.",
+        "explanation": "Pasado simple pasivo (was + participio) con una fecha específica del pasado.",
+        "tokens": [
+          "1920",
+          "built",
+          "bridge",
+          "was",
+          "The",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "My wallet has been stolen from my bag.",
+        "alternatives": [],
+        "translation": "Me robaron la billetera de la mochila.",
+        "explanation": "Present perfect pasivo (has been + participio) para una acción reciente sin un momento específico mencionado.",
+        "tokens": [
+          "my",
+          "wallet",
+          "has",
+          "bag",
+          "My",
+          "from",
+          "stolen",
+          "been"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "Breakfast is served between seven and ten.",
+        "alternatives": [],
+        "translation": "El desayuno se sirve entre las siete y las diez.",
+        "explanation": "Presente pasivo (is + participio) para describir un horario habitual.",
+        "tokens": [
+          "ten",
+          "is",
+          "seven",
+          "served",
+          "Breakfast",
+          "between",
+          "and"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "The keys weren't left at the reception.",
+        "alternatives": [],
+        "translation": "Las llaves no se dejaron en la recepción.",
+        "explanation": "Pasado simple pasivo negativo (weren't + participio) para una acción puntual del pasado.",
+        "tokens": [
+          "left",
+          "weren't",
+          "at",
+          "The",
+          "reception",
+          "the",
+          "keys"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "Has the invoice been sent to the client yet?",
+        "alternatives": [],
+        "translation": "¿Ya se envió la factura al cliente?",
+        "explanation": "Pregunta en present perfect pasivo (has + been + participio) usada con 'yet'.",
+        "tokens": [
+          "Has",
+          "the",
+          "been",
+          "client",
+          "sent",
+          "invoice",
+          "to",
+          "the",
+          "yet"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "The house was build in 1950.",
+        "answers": [
+          "The house was built in 1950."
+        ],
+        "explanation": "La pasiva necesita el participio (built), no el verbo base (build).",
+        "wrongAnswers": [
+          {
+            "answer": "The house is built in 1950.",
+            "why": "Cambiar 'was' por 'is' no corrige el error; el problema es el verbo 'build', que debe ir en participio (built)."
+          },
+          {
+            "answer": "The house was building in 1950.",
+            "why": "Building es gerundio, no participio; la pasiva necesita el participio built, no la forma -ing."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "Here is spoken English.",
+        "answers": [
+          "English is spoken here."
+        ],
+        "explanation": "En la pasiva, el sujeto (English) va antes del verbo be; 'here' se coloca después del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "Here English is spoken.",
+            "why": "El sujeto English debe ir antes del verbo is spoken; 'here' va después del verbo, no al principio de la oración."
+          },
+          {
+            "answer": "Here it is spoken English.",
+            "why": "Agregar 'it' no corrige el orden; la pasiva necesita el sujeto real (English) antes del verbo be."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "My phone was stole yesterday.",
+        "answers": [
+          "My phone was stolen yesterday."
+        ],
+        "explanation": "La pasiva necesita el participio (stolen), no el pasado simple (stole).",
+        "wrongAnswers": [
+          {
+            "answer": "My phone has stole yesterday.",
+            "why": "Cambiar was por has no corrige el error; el problema es el verbo, que debe ser el participio stolen, no stole."
+          },
+          {
+            "answer": "My phone were stolen yesterday.",
+            "why": "Were no concuerda con el sujeto singular 'phone'; se necesita was, no were."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "The results haven't send to the doctor yet.",
+        "answers": [
+          "The results haven't been sent to the doctor yet."
+        ],
+        "explanation": "El present perfect pasivo necesita been + participio: haven't been sent.",
+        "wrongAnswers": [
+          {
+            "answer": "The results didn't send to the doctor yet.",
+            "why": "Didn't es pasado simple, pero 'yet' indica present perfect; además falta el participio sent, no send."
+          },
+          {
+            "answer": "The results haven't sent to the doctor yet.",
+            "why": "Falta been; en pasiva con haven't se necesita been + participio: haven't been sent."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "Breakfast serves between seven and ten at this hotel.",
+        "answers": [
+          "Breakfast is served between seven and ten at this hotel."
+        ],
+        "explanation": "El desayuno no sirve por sí mismo: necesita la pasiva presente is served.",
+        "wrongAnswers": [
+          {
+            "answer": "Breakfast served between seven and ten at this hotel.",
+            "why": "Quitar la 's' no corrige el error; falta el verbo be (is) para formar la pasiva: is served."
+          },
+          {
+            "answer": "Breakfast was served between seven and ten at this hotel.",
+            "why": "Was indica pasado, pero la oración describe un horario habitual actual del hotel; corresponde el presente is served."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi celular fue robado en el colectivo esta mañana.",
+        "answers": [
+          "My phone was stolen on the bus this morning.",
+          "My cell phone was stolen on the bus this morning.",
+          "My mobile phone was stolen on the bus this morning."
+        ],
+        "explanation": "Pasado simple pasivo (was + participio) con un momento específico del pasado (this morning).",
+        "wrongAnswers": [
+          {
+            "answer": "My phone has stolen on the bus this morning.",
+            "why": "Falta been; además 'this morning' ya terminó, así que corresponde pasado simple was stolen, no present perfect."
+          },
+          {
+            "answer": "My phone was steal on the bus this morning.",
+            "why": "Steal es el infinitivo; la pasiva necesita el participio stolen."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este edificio se construyó en 1930.",
+        "answers": [
+          "This building was built in 1930."
+        ],
+        "explanation": "Pasado simple pasivo (was + participio) con una fecha específica del pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "This building is built in 1930.",
+            "why": "Is built es presente, pero la fecha 1930 pide pasado simple: was built."
+          },
+          {
+            "answer": "This building has been built in 1930.",
+            "why": "Has been built es present perfect, pero con una fecha específica del pasado se usa pasado simple: was built."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Todavía no me devolvieron el depósito del alquiler.",
+        "answers": [
+          "My deposit hasn't been returned yet.",
+          "My deposit has not been returned yet.",
+          "The rental deposit hasn't been returned yet."
+        ],
+        "explanation": "Present perfect pasivo negativo con 'yet' para una acción todavía pendiente.",
+        "wrongAnswers": [
+          {
+            "answer": "My deposit wasn't returned yet.",
+            "why": "Wasn't returned necesita un momento específico del pasado; con 'yet' y una situación pendiente se usa present perfect: hasn't been returned."
+          },
+          {
+            "answer": "My deposit hasn't returned yet.",
+            "why": "Falta been; la pasiva con hasn't necesita been + participio: hasn't been returned."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Ya se envió la factura al cliente?",
+        "answers": [
+          "Has the invoice been sent to the client yet?",
+          "Has the invoice already been sent to the client?"
+        ],
+        "explanation": "Pregunta en present perfect pasivo (has + been + participio) usada con 'yet'.",
+        "wrongAnswers": [
+          {
+            "answer": "Was the invoice sent to the client yet?",
+            "why": "Yet normalmente se usa con present perfect en preguntas; corresponde has the invoice been sent, no was."
+          },
+          {
+            "answer": "Has the invoice sent to the client yet?",
+            "why": "Falta been; en pasiva con has se necesita been + participio: been sent."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El desayuno se sirve de siete a diez en este hotel.",
+        "answers": [
+          "Breakfast is served from seven to ten at this hotel.",
+          "Breakfast is served between seven and ten at this hotel."
+        ],
+        "explanation": "Presente pasivo (is + participio) para describir un horario habitual.",
+        "wrongAnswers": [
+          {
+            "answer": "Breakfast serves from seven to ten at this hotel.",
+            "why": "Serves es voz activa; el desayuno no sirve, hay que usar is served."
+          },
+          {
+            "answer": "Breakfast was served from seven to ten at this hotel.",
+            "why": "Was served es pasado, pero la oración describe un horario habitual actual."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Las llaves no se dejaron en la recepción anoche.",
+        "answers": [
+          "The keys weren't left at reception last night.",
+          "The keys were not left at reception last night.",
+          "The keys weren't left at the reception desk last night."
+        ],
+        "explanation": "Pasado simple pasivo negativo (weren't + participio) con un momento específico del pasado (last night).",
+        "wrongAnswers": [
+          {
+            "answer": "The keys didn't leave at reception last night.",
+            "why": "Didn't leave es voz activa; las llaves no se van solas, hay que usar weren't left."
+          },
+          {
+            "answer": "The keys haven't been left at reception last night.",
+            "why": "Haven't been left es present perfect, pero 'last night' marca un momento específico del pasado, así que corresponde weren't left."
+          }
+        ]
+      }
+    ],
+    "pasiva-uso": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la conversación.",
+        "prompt": "Mariana told Tomás: 'My laptop ___ last night while I was sleeping.'",
+        "options": [
+          "was stolen",
+          "stole",
+          "has stolen",
+          "was stolen by someone"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando no se sabe o no importa quién hizo la acción, se usa la pasiva sin agente; 'by someone' no aporta información y se omite.",
+        "optionNotes": [
+          "Correcto: pasiva simple, no se sabe ni importa quién lo hizo.",
+          "Incorrecto: forma activa sin sujeto, estructura incompleta.",
+          "Incorrecto: forma activa mal conjugada, no es pasiva.",
+          "Error típico: agrega 'by someone', que no aporta información."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The birthday cake ___ by Sofía's aunt, who is a professional baker.",
+        "options": [
+          "was made",
+          "made",
+          "is make",
+          "was made for"
+        ],
+        "correctIndex": 0,
+        "explanation": "El agente de la pasiva (quién hizo la acción) va con by; for significa 'para', no 'por autor'.",
+        "optionNotes": [
+          "Correcto: el agente que hizo la torta va con by.",
+          "Incorrecto: forma activa sin auxiliar, incompleta.",
+          "Incorrecto: forma verbal mal conjugada.",
+          "Error típico: 'for' indica para quién es algo, no quién lo hizo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la noticia.",
+        "prompt": "According to the local news, the new highway ___ by the end of next year.",
+        "options": [
+          "finishes",
+          "will finish",
+          "is finished",
+          "will be finished"
+        ],
+        "correctIndex": 3,
+        "explanation": "En noticias sobre procesos futuros se usa la pasiva con will + be + participio cuando importa más el resultado que quién lo hace.",
+        "optionNotes": [
+          "Incorrecto: activa presente, no corresponde al contexto de noticia futura.",
+          "Error típico: forma activa sin sujeto lógico que termine la obra.",
+          "Incorrecto: presente simple pasivo, no expresa futuro.",
+          "Correcto: pasiva con will, típica de noticias sobre procesos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Gonzalo bought tickets for the concert, but the show ___ due to bad weather.",
+        "options": [
+          "was cancelled by people",
+          "have cancel",
+          "cancelled",
+          "was cancelled"
+        ],
+        "correctIndex": 3,
+        "explanation": "La pasiva equivale muchas veces al 'se' del español cuando no importa quién hizo la acción, como en 'se canceló el show'.",
+        "optionNotes": [
+          "Error típico: agrega 'by people', que no aporta información.",
+          "Incorrecto: forma verbal mal construida, mezcla tiempos verbales.",
+          "Incorrecto: forma activa sin sujeto explícito, no suena natural acá porque el show no cancela por sí mismo en este sentido.",
+          "Correcto: equivale a 'se canceló' del español, sin necesidad de agente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la explicación del guía.",
+        "prompt": "The tour guide explained: 'This painting ___ by Xul Solar in the 1930s.'",
+        "options": [
+          "was painted",
+          "is paint",
+          "painted",
+          "was painted for"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando el agente aporta información importante, como el autor de una obra, se menciona con by.",
+        "optionNotes": [
+          "Correcto: el autor aporta información relevante, por eso se nombra con by.",
+          "Incorrecto: forma verbal inválida.",
+          "Incorrecto: forma activa sin auxiliar, incompleta.",
+          "Error típico: 'for' no indica autor, sino destinatario."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The results of the blood test ___ to the patient by email.",
+        "options": [
+          "are send",
+          "will be sent",
+          "will be sent by someone",
+          "will send"
+        ],
+        "correctIndex": 1,
+        "explanation": "En textos formales e instrucciones, se usa la pasiva para destacar la acción o el resultado, sin necesidad de nombrar al agente si no aporta información.",
+        "optionNotes": [
+          "Incorrecto: forma verbal mal conjugada.",
+          "Correcto: pasiva formal típica en contextos médicos o administrativos.",
+          "Error típico: agrega 'by someone', que no aporta información.",
+          "Incorrecto: forma activa sin sujeto explícito que envíe los resultados."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo en pasiva.",
+        "sentence": "Lucía's wallet ___ while she was on the subway yesterday.",
+        "hint": "(steal - pasado pasivo)",
+        "answers": [
+          "was stolen"
+        ],
+        "explanation": "Cuando no se sabe quién hizo la acción, se usa la pasiva sin agente.",
+        "wrongAnswers": [
+          {
+            "answer": "stole",
+            "why": "Es forma activa; falta el sujeto que hizo la acción y no se sabe quién fue."
+          },
+          {
+            "answer": "was stolen by someone",
+            "why": "'By someone' no aporta información y se omite cuando no se sabe o no importa quién lo hizo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo en pasiva.",
+        "sentence": "The famous mural in the city centre ___ by a local artist named Fede Minuchin.",
+        "hint": "(paint - pasado pasivo)",
+        "answers": [
+          "was painted"
+        ],
+        "explanation": "El agente que aporta información relevante, como el autor de una obra, se introduce con by.",
+        "wrongAnswers": [
+          {
+            "answer": "was painted for",
+            "why": "'For' indica para quién es algo, no quién lo hizo; el agente va con by."
+          },
+          {
+            "answer": "painted",
+            "why": "Es forma activa; falta el verbo auxiliar 'was' para la pasiva."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo en pasiva.",
+        "sentence": "The new bridge over the river ___ by next March, according to the construction company.",
+        "hint": "(finish - futuro pasivo)",
+        "answers": [
+          "will be finished"
+        ],
+        "explanation": "En noticias sobre procesos futuros se usa la pasiva con will + be + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "will finish",
+            "why": "Es forma activa; falta el sujeto lógico que termina la obra, y en noticias se prioriza el resultado con pasiva."
+          },
+          {
+            "answer": "is finished",
+            "why": "Es presente simple, no expresa una acción futura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo en pasiva.",
+        "sentence": "All the flights to Bariloche ___ because of the storm yesterday.",
+        "hint": "(cancel - pasado pasivo)",
+        "answers": [
+          "were cancelled",
+          "were canceled"
+        ],
+        "explanation": "La pasiva equivale muchas veces al 'se' del español, como en 'se cancelaron todos los vuelos'.",
+        "wrongAnswers": [
+          {
+            "answer": "cancelled",
+            "why": "Falta el auxiliar 'were' para formar la pasiva."
+          },
+          {
+            "answer": "were cancelled by someone",
+            "why": "'By someone' no aporta información y se omite."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo en pasiva.",
+        "sentence": "This birthday card ___ by my little sister, not bought in a shop.",
+        "hint": "(make - pasado pasivo)",
+        "answers": [
+          "was made"
+        ],
+        "explanation": "El agente de la pasiva (quién hizo algo) se introduce con by; for significa 'para'.",
+        "wrongAnswers": [
+          {
+            "answer": "was made for",
+            "why": "'For' indica para quién es algo; acá se necesita el agente que hizo la tarjeta, que va con by."
+          },
+          {
+            "answer": "made",
+            "why": "Falta el auxiliar 'was' para formar la pasiva."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo en pasiva.",
+        "sentence": "Patients ___ to arrive fifteen minutes before their appointment.",
+        "hint": "(ask - pasiva presente)",
+        "answers": [
+          "are asked"
+        ],
+        "explanation": "En instrucciones formales, se usa la pasiva para dar indicaciones generales sin necesidad de nombrar quién las da.",
+        "wrongAnswers": [
+          {
+            "answer": "ask",
+            "why": "Es forma activa; falta el auxiliar 'are' y el participio para la pasiva."
+          },
+          {
+            "answer": "are asked by someone",
+            "why": "'By someone' no aporta información y se omite en instrucciones generales."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "My bike was stolen outside the supermarket.",
+        "alternatives": [],
+        "translation": "Me robaron la bici afuera del supermercado.",
+        "explanation": "Se usa la pasiva porque no se sabe ni importa quién robó la bici, solo el resultado de la acción.",
+        "tokens": [
+          "supermarket",
+          "the",
+          "outside",
+          "My",
+          "stolen",
+          "was",
+          "bike"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "Guernica was painted by Pablo Picasso in 1937.",
+        "alternatives": [],
+        "translation": "Guernica fue pintada por Pablo Picasso en 1937.",
+        "explanation": "El agente (Picasso) aporta información relevante sobre la obra, por eso se menciona con by.",
+        "tokens": [
+          "was",
+          "Picasso",
+          "painted",
+          "Pablo",
+          "1937",
+          "Guernica",
+          "by",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "The results will be announced next Monday morning.",
+        "alternatives": [],
+        "translation": "Los resultados van a ser anunciados el próximo lunes por la mañana.",
+        "explanation": "Se usa la pasiva con will porque importa más el resultado del anuncio que quién lo hace.",
+        "tokens": [
+          "be",
+          "will",
+          "morning",
+          "Monday",
+          "next",
+          "results",
+          "The",
+          "announced"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "All the tickets were sold in two hours.",
+        "alternatives": [],
+        "translation": "Se vendieron todas las entradas en dos horas.",
+        "explanation": "La pasiva equivale aquí al 'se' del español, ya que no importa quién vendió las entradas.",
+        "tokens": [
+          "hours",
+          "were",
+          "two",
+          "the",
+          "tickets",
+          "in",
+          "All",
+          "sold"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "The road has been closed because of the snow.",
+        "alternatives": [],
+        "translation": "Cerraron la ruta por la nieve.",
+        "explanation": "La pasiva equivale a la tercera persona del plural impersonal del español ('cerraron la ruta').",
+        "tokens": [
+          "been",
+          "road",
+          "The",
+          "the",
+          "closed",
+          "snow",
+          "has",
+          "because",
+          "of"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con la voz pasiva.",
+        "sentence": "My phone was stolen by someone on the bus.",
+        "answers": [
+          "My phone was stolen on the bus."
+        ],
+        "explanation": "Si el agente no aporta información (como 'someone'), no se menciona en la pasiva.",
+        "wrongAnswers": [
+          {
+            "answer": "My phone stole by someone on the bus.",
+            "why": "Cambia mal el verbo a una forma activa incompleta; el error real es agregar 'by someone', que no aporta información."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con la voz pasiva.",
+        "sentence": "This famous novel was written for Gabriel García Márquez, who won the Nobel Prize in 1982.",
+        "answers": [
+          "This famous novel was written by Gabriel García Márquez, who won the Nobel Prize in 1982."
+        ],
+        "explanation": "El agente de la pasiva (quien hizo la acción) va con by; for significa 'para' y no se usa para indicar quién escribió algo.",
+        "wrongAnswers": [
+          {
+            "answer": "This famous novel is written for Gabriel García Márquez, who won the Nobel Prize in 1982.",
+            "why": "Cambia el tiempo verbal, pero el error real está en 'for', que debería ser 'by' porque García Márquez es el autor de la novela."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con la voz pasiva.",
+        "sentence": "The museum was build in 1890 by a famous architect.",
+        "answers": [
+          "The museum was built in 1890 by a famous architect."
+        ],
+        "explanation": "La pasiva se forma con be + participio pasado; 'build' es el infinitivo, no el participio ('built').",
+        "wrongAnswers": [
+          {
+            "answer": "The museum was build in 1890 for a famous architect.",
+            "why": "Cambia 'by' por 'for', pero el error real está en 'build', que debe ser el participio pasado 'built'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con la voz pasiva.",
+        "sentence": "All the information will send to you by email tomorrow.",
+        "answers": [
+          "All the information will be sent to you by email tomorrow."
+        ],
+        "explanation": "La pasiva con will se forma con will + be + participio pasado; en la oración original falta 'be'.",
+        "wrongAnswers": [
+          {
+            "answer": "All the information will sent to you by email tomorrow.",
+            "why": "Sigue faltando el auxiliar 'be', necesario entre 'will' y el participio 'sent' en la pasiva."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con la voz pasiva.",
+        "sentence": "This chocolate cake was maked by my mom for my birthday, so it's really special.",
+        "answers": [
+          "This chocolate cake was made by my mom for my birthday, so it's really special."
+        ],
+        "explanation": "El participio pasado de 'make' es irregular: 'made', no 'maked'; la pasiva se forma con be + participio pasado correcto.",
+        "wrongAnswers": [
+          {
+            "answer": "This chocolate cake is maked by my mom for my birthday, so it's really special.",
+            "why": "Cambia el tiempo verbal, pero el error real sigue siendo 'maked', que debe ser el participio irregular 'made'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la voz pasiva.",
+        "spanish": "Me robaron la bici anoche.",
+        "answers": [
+          "My bike was stolen last night."
+        ],
+        "explanation": "Cuando no se sabe o no importa quién hizo la acción, se usa la pasiva sin agente: 'was stolen', no 'was robbed', porque el objeto robado es la bici.",
+        "wrongAnswers": [
+          {
+            "answer": "My bike was robbed last night.",
+            "why": "'Robbed' se usa para personas o lugares (robaron a alguien o un banco); para objetos robados se usa 'stolen'."
+          },
+          {
+            "answer": "My bike was stolen by someone last night.",
+            "why": "'By someone' no aporta información y se omite cuando no se sabe quién lo hizo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la voz pasiva.",
+        "spanish": "Esa pintura fue hecha por un artista muy famoso.",
+        "answers": [
+          "That painting was made by a very famous artist.",
+          "That painting was painted by a very famous artist."
+        ],
+        "explanation": "El agente que aporta información relevante, como el autor de una obra, se introduce con by.",
+        "wrongAnswers": [
+          {
+            "answer": "That painting was made for a very famous artist.",
+            "why": "'For' indica para quién es algo, no quién lo hizo; el agente va con by."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la voz pasiva.",
+        "spanish": "Los resultados del examen van a ser publicados el viernes.",
+        "answers": [
+          "The exam results will be published on Friday.",
+          "The results of the exam will be published on Friday."
+        ],
+        "explanation": "En anuncios formales sobre el futuro, se usa la pasiva con will + be + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "The exam results will publish on Friday.",
+            "why": "Falta el auxiliar 'be' para formar la pasiva con will; 'will publish' es activa y necesita un sujeto que publique."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la voz pasiva.",
+        "spanish": "Se vendieron todas las entradas para el recital en una hora.",
+        "answers": [
+          "All the tickets for the concert were sold in an hour.",
+          "All the tickets for the gig were sold in an hour."
+        ],
+        "explanation": "La pasiva equivale muchas veces al 'se' del español, como en 'se vendieron todas las entradas'.",
+        "wrongAnswers": [
+          {
+            "answer": "All the tickets for the concert sold in an hour.",
+            "why": "Falta el auxiliar 'were' para formar la pasiva; sin él, la oración queda incompleta en este contexto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la voz pasiva.",
+        "spanish": "Esta carta fue escrita por mi abuela antes de morir.",
+        "answers": [
+          "This letter was written by my grandmother before she died.",
+          "This letter was written by my grandmother before she passed away."
+        ],
+        "explanation": "El agente de la pasiva va con by; for significa 'para', no se usa para indicar quién hizo la acción.",
+        "wrongAnswers": [
+          {
+            "answer": "This letter was written for my grandmother before she died.",
+            "why": "'For' indica para quién es algo, no quién lo hizo; el agente (quien escribió la carta) va con by."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la voz pasiva.",
+        "spanish": "Cerraron la ruta 7 por el temporal.",
+        "answers": [
+          "Route 7 was closed because of the storm.",
+          "Route 7 has been closed because of the storm."
+        ],
+        "explanation": "La pasiva equivale muchas veces a la tercera persona del plural impersonal del español, como en 'cerraron la ruta' = 'the road was closed'.",
+        "wrongAnswers": [
+          {
+            "answer": "Route 7 was closed by someone because of the storm.",
+            "why": "'By someone' no aporta información y se omite cuando no importa quién hizo la acción."
+          },
+          {
+            "answer": "They closed route 7 because of the storm.",
+            "why": "Es gramaticalmente válida en voz activa, pero no refleja el uso típico de la pasiva cuando el sujeto es impersonal, como en 'cerraron la ruta'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la noticia y respondé las preguntas.",
+        "text": "Last night, a small bakery on Honduras Street in Palermo was broken into. According to the owner, Marisa Gómez, the back door was forced open sometime after midnight. Several bags of flour, a few trays of pastries, and about 15,000 pesos in cash were stolen.\n\nThe police were called immediately, and the shop has been checked for fingerprints. Nobody was hurt, but Marisa says the bakery was left in a mess. 'The shelves were knocked over, and the cash register was emptied,' she said.\n\nThe security camera outside the shop had been disconnected a few days before the robbery. Neighbors think it was disconnected by the same person who broke in, because only someone who knew the shop's schedule could have planned it so well.\n\nThe police are still investigating, and Marisa has been asked to make a list of everything that was taken. She hopes the thief will be found soon so her bakery can get back to normal.",
+        "questions": [
+          {
+            "prompt": "¿Por qué el texto no dice quién robó la plata y las facturas?",
+            "options": [
+              "Porque la policía ya atrapó al ladrón",
+              "Porque fue la propia Marisa",
+              "Porque no se sabe quién fue el ladrón",
+              "Porque el texto usa voz activa para esconder al sujeto"
+            ],
+            "correctIndex": 2,
+            "explanation": "La pasiva se usa sin agente cuando no se sabe quién hizo la acción, como en 'were stolen'."
+          },
+          {
+            "prompt": "Según el texto, ¿por qué tiene sentido decir que la cámara 'was disconnected by the same person who broke in' en vez de solo 'by someone'?",
+            "options": [
+              "Porque Marisa la desconectó ella misma",
+              "Porque 'by someone' es gramaticalmente incorrecto en oraciones pasivas",
+              "Porque da información extra sobre quién pudo haberlo hecho",
+              "Porque la cámara en realidad la rompió la policía"
+            ],
+            "correctIndex": 2,
+            "explanation": "El agente con by solo se menciona cuando aporta información útil; decir simplemente 'by someone' no agregaría nada al relato."
+          },
+          {
+            "prompt": "¿Qué significa la frase 'the shop has been checked for fingerprints'?",
+            "options": [
+              "El local va a ser revisado en el futuro",
+              "La policía examinó el local buscando pruebas",
+              "Marisa revisó el local ella misma",
+              "El local nunca fue revisado"
+            ],
+            "correctIndex": 1,
+            "explanation": "El present perfect pasivo (has been checked) indica que la acción ya se realizó y el resultado importa ahora, aunque no se mencione el agente porque es obvio que fue la policía."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el mural y respondé las preguntas.",
+        "text": "If you walk around San Telmo, you'll probably see the giant mural on Humberto Primo Street. It was painted by Martín Ron, one of Argentina's most famous street artists, in 2015. The mural shows an enormous photorealistic face, and it was finished in less than two weeks, which is impressive considering its size.\n\nLast year, the mural was damaged by heavy rain, and part of the paint was washed away. Luckily, it was restored by a group of local artists who wanted to keep the artwork alive. The restoration was paid for by donations from neighbors and tourists who love the piece.\n\nNowadays, the mural is visited by hundreds of people every week, and photos of it are shared on social media all the time. Tours of San Telmo's street art are organized by local guides who know the stories behind each piece. If you ever visit Buenos Aires, this mural shouldn't be missed.",
+        "questions": [
+          {
+            "prompt": "¿Por qué el texto menciona 'by Martín Ron' al hablar del mural?",
+            "options": [
+              "Porque en realidad el mural lo pintaron los turistas",
+              "Porque saber quién lo pintó es información relevante",
+              "Porque 'by' siempre es obligatorio en oraciones pasivas",
+              "Porque Martín Ron escribió el texto"
+            ],
+            "correctIndex": 1,
+            "explanation": "El agente con by se incluye cuando aporta información relevante, como el nombre del artista que pintó el mural."
+          },
+          {
+            "prompt": "Según el texto, ¿quién pagó la restauración del mural?",
+            "options": [
+              "Donaciones de vecinos y turistas",
+              "Un grupo de turistas que pasaba por casualidad",
+              "El gobierno de la ciudad",
+              "Martín Ron mismo"
+            ],
+            "correctIndex": 0,
+            "explanation": "La frase 'was paid for by donations' usa la pasiva con agente porque indica claramente quién financió la restauración."
+          },
+          {
+            "prompt": "¿Por qué se usa la pasiva en 'the mural was damaged by heavy rain' en vez de decir 'heavy rain damaged the mural'?",
+            "options": [
+              "Porque 'rain' no puede ser sujeto en inglés",
+              "Las dos son posibles, pero la pasiva pone el foco en el mural y el daño, no en la causa",
+              "La voz activa es gramaticalmente incorrecta en inglés",
+              "La pasiva se usa porque no se sabe cuál fue la causa"
+            ],
+            "correctIndex": 1,
+            "explanation": "La pasiva se usa para poner el foco en el resultado (el mural dañado), aunque el agente (la lluvia) se mencione porque aporta información útil."
+          }
+        ]
+      }
+    ],
+    "estilo-indirecto": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en estilo indirecto.",
+        "prompt": "Walter ___ me that he was going to be late for the meeting.",
+        "options": [
+          "say",
+          "said",
+          "tells",
+          "told"
+        ],
+        "correctIndex": 3,
+        "explanation": "Tell va seguido directamente de la persona (told me); say no lleva a la persona sin 'to' (said to me) o se usa sin persona (said that).",
+        "optionNotes": [
+          "Incorrecto: forma base sin conjugar.",
+          "Error típico: say no lleva a la persona directamente sin 'to'.",
+          "Incorrecto: tiempo presente, no corresponde a la narración en pasado.",
+          "Correcto: tell + persona es la estructura natural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en estilo indirecto.",
+        "prompt": "He ___ that he was coming to the party later.",
+        "options": [
+          "tell",
+          "told",
+          "says",
+          "said"
+        ],
+        "correctIndex": 3,
+        "explanation": "Tell necesita a quién se lo dijo (told me, told us); si no se menciona a la persona, se usa say.",
+        "optionNotes": [
+          "Incorrecto: forma base, no corresponde al pasado.",
+          "Error típico: falta la persona a quien se lo dijo.",
+          "Incorrecto: presente, no corresponde a la narración pasada.",
+          "Correcto: say no necesita persona explícita."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en estilo indirecto.",
+        "prompt": "Flor said she ___ really tired after the exam.",
+        "options": [
+          "is",
+          "has been",
+          "were",
+          "was"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando el verbo introductorio está en pasado, el tiempo se corre un paso atrás: is/am → was.",
+        "optionNotes": [
+          "Error típico: mantiene el presente sin correr el tiempo.",
+          "Incorrecto: cambia el aspecto verbal, no corresponde al corrimiento simple.",
+          "Incorrecto: no concuerda con el sujeto 'she'.",
+          "Correcto: retroceso de is/am a was."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en estilo indirecto.",
+        "prompt": "Nico told Romina that he ___ call her the next day.",
+        "options": [
+          "will have",
+          "will",
+          "would",
+          "can"
+        ],
+        "correctIndex": 2,
+        "explanation": "Will retrocede a would cuando el verbo introductorio está en pasado.",
+        "optionNotes": [
+          "Incorrecto: cambia la estructura, no corresponde.",
+          "Error típico: mantiene 'will' sin correr el tiempo.",
+          "Correcto: retroceso de will a would.",
+          "Incorrecto: no es el corrimiento correcto de will."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en estilo indirecto.",
+        "prompt": "On Monday, Lucía said she had a doctor's appointment ___.",
+        "options": [
+          "yesterday",
+          "today",
+          "the next day",
+          "tomorrow"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las referencias temporales cambian en estilo indirecto: tomorrow se convierte en the next day.",
+        "optionNotes": [
+          "Incorrecto: es una referencia al pasado, no al día siguiente.",
+          "Incorrecto: cambia el sentido temporal de la oración.",
+          "Correcto: tomorrow se ajusta a the next day en estilo indirecto.",
+          "Error típico: mantiene la referencia original sin ajustarla."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración en estilo indirecto.",
+        "prompt": "Gonzalo said he ___ speak three languages fluently.",
+        "options": [
+          "may",
+          "could",
+          "will can",
+          "can"
+        ],
+        "correctIndex": 1,
+        "explanation": "Can retrocede a could cuando el verbo introductorio está en pasado.",
+        "optionNotes": [
+          "Incorrecto: no es el corrimiento correcto de can.",
+          "Correcto: retroceso de can a could.",
+          "Incorrecto: estructura inválida, no existe en inglés.",
+          "Error típico: mantiene 'can' sin correr el tiempo."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Marta ___ me that the doctor was running late.",
+        "hint": "(tell - pasado)",
+        "answers": [
+          "told"
+        ],
+        "explanation": "Tell va seguido directamente de la persona (told me).",
+        "wrongAnswers": [
+          {
+            "answer": "said",
+            "why": "Say no lleva a la persona directamente; se necesita 'told me' o 'said to me'."
+          },
+          {
+            "answer": "tell",
+            "why": "Falta conjugar el verbo en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Jorge ___ that he had already paid the rent.",
+        "hint": "(say - pasado)",
+        "answers": [
+          "said"
+        ],
+        "explanation": "Say no necesita mencionar a la persona; si no se menciona, se usa say, no tell.",
+        "wrongAnswers": [
+          {
+            "answer": "told",
+            "why": "Tell necesita a quién se lo dijo (told me, told us); acá no se menciona a la persona."
+          },
+          {
+            "answer": "says",
+            "why": "Es presente, pero la narración está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Sofía said she ___ nervous about the job interview.",
+        "hint": "(be - pasado)",
+        "answers": [
+          "was"
+        ],
+        "explanation": "Cuando el verbo introductorio está en pasado, is/am retrocede a was.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "El verbo introductorio está en pasado, por lo que 'is' debe retroceder a 'was'."
+          },
+          {
+            "answer": "were",
+            "why": "No concuerda con el sujeto 'she'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Pablo told me he ___ send the documents by email.",
+        "hint": "(will - pasado)",
+        "answers": [
+          "would"
+        ],
+        "explanation": "Will retrocede a would cuando el verbo introductorio está en pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "will",
+            "why": "El tiempo debe retroceder porque el verbo introductorio ('told') está en pasado."
+          },
+          {
+            "answer": "will have",
+            "why": "Cambia la estructura; el corrimiento correcto de will es would."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la referencia temporal correcta.",
+        "sentence": "On Tuesday, Mariana said she had seen Esteban ___.",
+        "hint": "(yesterday → estilo indirecto)",
+        "answers": [
+          "the day before",
+          "the previous day"
+        ],
+        "explanation": "Las referencias temporales cambian en estilo indirecto: yesterday se convierte en the day before (o the previous day).",
+        "wrongAnswers": [
+          {
+            "answer": "yesterday",
+            "why": "'Yesterday' se ajusta a 'the day before' en estilo indirecto, porque la referencia temporal cambia según el momento en que se cuenta."
+          },
+          {
+            "answer": "the previous week",
+            "why": "No corresponde, cambia el sentido temporal original."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Tomás said he ___ to Bariloche the month before.",
+        "hint": "(go - pasado perfecto)",
+        "answers": [
+          "had gone"
+        ],
+        "explanation": "Went (pasado simple) retrocede a had gone (pasado perfecto) en estilo indirecto cuando el verbo introductorio está en pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "went",
+            "why": "Si el verbo original ya estaba en pasado simple, en estilo indirecto retrocede a pasado perfecto (had gone)."
+          },
+          {
+            "answer": "has gone",
+            "why": "Es presente perfecto, pero el verbo introductorio está en pasado y necesita retroceder a pasado perfecto."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "She said she was too tired to go out.",
+        "alternatives": [],
+        "translation": "Dijo que estaba demasiado cansada para salir.",
+        "explanation": "Say no necesita mencionar a la persona, y el tiempo retrocede porque el verbo introductorio está en pasado.",
+        "tokens": [
+          "she",
+          "tired",
+          "to",
+          "said",
+          "go",
+          "She",
+          "too",
+          "was",
+          "out"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "He told me he would call me the next day.",
+        "alternatives": [],
+        "translation": "Me dijo que me iba a llamar al día siguiente.",
+        "explanation": "Tell + persona (told me), will retrocede a would, y tomorrow cambia a the next day.",
+        "tokens": [
+          "He",
+          "day",
+          "me",
+          "would",
+          "call",
+          "the",
+          "told",
+          "he",
+          "me",
+          "next"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "They said they had already seen the movie.",
+        "alternatives": [],
+        "translation": "Dijeron que ya habían visto la película.",
+        "explanation": "El presente perfecto retrocede a pasado perfecto (had seen) en estilo indirecto.",
+        "tokens": [
+          "they",
+          "said",
+          "movie",
+          "already",
+          "They",
+          "had",
+          "the",
+          "seen"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "Walter told us he could speak four languages.",
+        "alternatives": [],
+        "translation": "Walter nos dijo que podía hablar cuatro idiomas.",
+        "explanation": "Tell + persona (told us) y can retrocede a could en estilo indirecto.",
+        "tokens": [
+          "Walter",
+          "he",
+          "four",
+          "languages",
+          "told",
+          "speak",
+          "could",
+          "us"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "Flor said she was moving to Rosario soon.",
+        "alternatives": [],
+        "translation": "Flor dijo que se iba a mudar a Rosario pronto.",
+        "explanation": "Say no necesita mencionar a la persona, y el tiempo retrocede porque el verbo introductorio está en pasado.",
+        "tokens": [
+          "moving",
+          "was",
+          "soon",
+          "she",
+          "to",
+          "Flor",
+          "Rosario",
+          "said"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con say y tell.",
+        "sentence": "She said me that she was busy.",
+        "answers": [
+          "She told me that she was busy.",
+          "She said to me that she was busy."
+        ],
+        "explanation": "Say no lleva a la persona directamente: se dice told me o said to me.",
+        "wrongAnswers": [
+          {
+            "answer": "She told that she was busy.",
+            "why": "Quita el objeto 'me', pero tell necesita mencionar a quién se le dijo algo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con say y tell.",
+        "sentence": "He told that he was coming to the barbecue.",
+        "answers": [
+          "He said that he was coming to the barbecue.",
+          "He said he was coming to the barbecue."
+        ],
+        "explanation": "Tell necesita a quién se lo dijo (told me, told us); si no se menciona a la persona, se usa say.",
+        "wrongAnswers": [
+          {
+            "answer": "He told us he was coming to the barbecue.",
+            "why": "Esta opción es válida gramaticalmente, pero agrega información ('us') que no estaba en la oración original; la corrección más directa es cambiar 'told' por 'said'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el corrimiento de tiempos.",
+        "sentence": "Lucía said she is studying medicine in Córdoba.",
+        "answers": [
+          "Lucía said she was studying medicine in Córdoba."
+        ],
+        "explanation": "Cuando el verbo introductorio está en pasado, is/am retrocede a was en estilo indirecto.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucía said she were studying medicine in Córdoba.",
+            "why": "Were no concuerda con el sujeto 'she'; el retroceso correcto de 'is' es 'was'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el corrimiento de tiempos.",
+        "sentence": "Gonzalo said he will help us move the furniture.",
+        "answers": [
+          "Gonzalo said he would help us move the furniture."
+        ],
+        "explanation": "Will retrocede a would cuando el verbo introductorio está en pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "Gonzalo said he will helps us move the furniture.",
+            "why": "Agrega una 's' incorrecta al verbo, pero el error real es que 'will' debe retroceder a 'would'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con las referencias temporales.",
+        "sentence": "On Friday, Camila told me she was flying to Mendoza tomorrow.",
+        "answers": [
+          "On Friday, Camila told me she was flying to Mendoza the next day."
+        ],
+        "explanation": "Las referencias temporales cambian en estilo indirecto: tomorrow se convierte en the next day.",
+        "wrongAnswers": [
+          {
+            "answer": "On Friday, Camila told me she is flying to Mendoza tomorrow.",
+            "why": "Cambia 'was' por 'is', pero el error real es 'tomorrow', que debe ajustarse a 'the next day' en estilo indirecto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando estilo indirecto.",
+        "spanish": "Me dijo que estaba muy cansado después del partido.",
+        "answers": [
+          "He told me he was very tired after the match.",
+          "He told me that he was very tired after the match.",
+          "She told me she was very tired after the match."
+        ],
+        "explanation": "Tell va seguido directamente de la persona (told me); say no lleva a la persona sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "He said me he was very tired after the match.",
+            "why": "Say no lleva a la persona directamente; se necesita 'told me' o 'said to me'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando estilo indirecto.",
+        "spanish": "Dijo que iba a llegar tarde a la reunión.",
+        "answers": [
+          "She said she was going to be late for the meeting.",
+          "He said he was going to be late for the meeting.",
+          "She said that she was going to be late for the meeting."
+        ],
+        "explanation": "Cuando el verbo introductorio está en pasado, el tiempo se corre un paso atrás: is/am → was.",
+        "wrongAnswers": [
+          {
+            "answer": "She said she is going to be late for the meeting.",
+            "why": "El verbo introductorio está en pasado, por lo que 'is going' debe retroceder a 'was going'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando estilo indirecto.",
+        "spanish": "Nos dijo que nos iba a llamar al día siguiente.",
+        "answers": [
+          "He told us he would call us the next day.",
+          "She told us she would call us the next day."
+        ],
+        "explanation": "Will retrocede a would, y tomorrow cambia a the next day cuando se cuenta lo que dijo otra persona.",
+        "wrongAnswers": [
+          {
+            "answer": "He told us he will call us the next day.",
+            "why": "Will debe retroceder a would porque el verbo introductorio ('told') está en pasado."
+          },
+          {
+            "answer": "He told us he would call us tomorrow.",
+            "why": "La referencia temporal 'tomorrow' debe ajustarse a 'the next day' en estilo indirecto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando estilo indirecto.",
+        "spanish": "Dijeron que ya habían visto esa película dos veces.",
+        "answers": [
+          "They said they had already seen that movie twice.",
+          "They said that they had already seen that movie twice."
+        ],
+        "explanation": "El presente perfecto (have seen) retrocede a pasado perfecto (had seen) en estilo indirecto cuando el verbo introductorio está en pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "They said they have already seen that movie twice.",
+            "why": "El verbo introductorio está en pasado, por lo que 'have seen' debe retroceder a 'had seen'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando estilo indirecto.",
+        "spanish": "El médico me dijo que podía volver a entrenar en dos semanas.",
+        "answers": [
+          "The doctor told me I could go back to training in two weeks.",
+          "The doctor told me that I could go back to training in two weeks."
+        ],
+        "explanation": "Tell + persona es la forma correcta (told me), y can retrocede a could en estilo indirecto.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor said me I could go back to training in two weeks.",
+            "why": "Say no lleva a la persona directamente; se necesita 'told me' o 'said to me'."
+          },
+          {
+            "answer": "The doctor told me I can go back to training in two weeks.",
+            "why": "Can debe retroceder a could porque el verbo introductorio está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando estilo indirecto.",
+        "spanish": "Romina me dijo que vivía en Salta, y creo que todavía vive ahí.",
+        "answers": [
+          "Romina told me she lives in Salta, and I think she still does.",
+          "Romina told me she lived in Salta, and I think she still does."
+        ],
+        "explanation": "Si lo que se dijo sigue siendo cierto, se puede no correr el tiempo (she lives) o retroceder igual (she lived); ambas son válidas.",
+        "wrongAnswers": [
+          {
+            "answer": "Romina told me she is living in Salta, and I think she still does.",
+            "why": "Cambia el aspecto verbal a presente continuo, que no corresponde al corrimiento típico de 'lives' a 'lived', aunque también se podría mantener el presente simple porque sigue siendo cierto."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas de opción múltiple sobre el estilo indirecto usado.",
+        "text": "Lucía called her friend Martina to tell her about the apartment she had seen in Córdoba that morning. 'The landlord, Mr. Molina, told me that the apartment was available from next month,' she said. 'He also said he had just painted the walls, so everything looked really clean.'\n\nMartina asked, 'Did he mention the price?'\n\n'Yes,' Lucía replied. 'He told me that the rent was eight thousand pesos, but he said I would have to pay a deposit too. He also said that the neighbors were very quiet, which I liked.'\n\n'That sounds great! Did he say when you could move in?'\n\n'He said I could move in the following week if I signed the contract soon. He told me that he was going on a trip the next day, so I had to decide fast.'\n\n'What did you tell him?'\n\n'I told him that I needed to talk to my parents first, but that I would call him the next morning with my answer.'\n\nMartina smiled. 'I hope it works out. That apartment sounds perfect for you.'",
+        "questions": [
+          {
+            "prompt": "¿Qué dijo realmente el Sr. Molina sobre las paredes, en discurso directo?",
+            "options": [
+              "\"I have just painted the walls.\"",
+              "\"I am painting the walls now.\"",
+              "\"I will paint the walls.\"",
+              "\"I painted the walls last year.\""
+            ],
+            "correctIndex": 0,
+            "explanation": "En estilo indirecto, 'had + participio' corresponde al presente perfecto en el discurso directo, por eso lo que dijo fue \"I have just painted the walls\"."
+          },
+          {
+            "prompt": "¿Cuándo dijo el Sr. Molina que se iba de viaje?",
+            "options": [
+              "El mismo día en que habló con Lucía.",
+              "La semana siguiente.",
+              "Al día siguiente de hablar con Lucía.",
+              "Dos días antes de hablar con Lucía."
+            ],
+            "correctIndex": 2,
+            "explanation": "'The next day' en estilo indirecto equivale a 'tomorrow' en el discurso directo, es decir, el día después de la conversación."
+          },
+          {
+            "prompt": "¿Qué le dijo originalmente Lucía al Sr. Molina sobre llamarlo, en discurso directo?",
+            "options": [
+              "\"I call you every morning with my answer.\"",
+              "\"I will call you tomorrow morning with my answer.\"",
+              "\"I would have called you this morning.\"",
+              "\"I called you yesterday morning with my answer.\""
+            ],
+            "correctIndex": 1,
+            "explanation": "'Would call' en estilo indirecto corresponde a 'will call' en el discurso directo, y 'the next morning' equivale a 'tomorrow morning'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas de opción múltiple sobre el estilo indirecto usado.",
+        "text": "Franco had a job interview last week at a company in Mendoza, and he told his brother Diego all about it.\n\n'The interviewer, Ms. Ibarra, told me that the company needed someone who could speak English and Portuguese,' Franco said. 'She said I had the right experience for the position.'\n\n'That's great news!' Diego replied. 'Did she say anything about the salary?'\n\n'Yes, she told me that the salary would depend on my experience, but she said it was usually around one hundred thousand pesos a month. She also said that I would have a three-month trial period.'\n\n'When does she want you to start?'\n\n'She said I could start the following Monday if I accepted the offer. She told me that she needed my answer by the next day, so I didn't have much time to think.'\n\n'What did you say?'\n\n'I told her that I was very interested, but that I wanted to talk to you first. I said I would call her back the next morning.'\n\n'Well, I think you should take it,' Diego said. 'It sounds like a great opportunity, and you've been looking for this kind of job for a long time.'",
+        "questions": [
+          {
+            "prompt": "¿Qué dijo realmente la Sra. Ibarra sobre el salario, en discurso directo?",
+            "options": [
+              "\"It was usually around one hundred thousand pesos a month.\"",
+              "\"It will be one hundred thousand pesos a month.\"",
+              "\"It is usually around one hundred thousand pesos a month.\"",
+              "\"It has been one hundred thousand pesos a month.\""
+            ],
+            "correctIndex": 2,
+            "explanation": "El pasado simple 'was' en estilo indirecto corresponde al presente simple 'is' en el discurso directo, porque el verbo introductorio (said) está en pasado."
+          },
+          {
+            "prompt": "¿Para cuándo necesitaba la Sra. Ibarra la respuesta de Franco?",
+            "options": [
+              "Para el mismo día de la entrevista.",
+              "Para el día después de la entrevista.",
+              "Para el lunes siguiente.",
+              "Para una semana después de la entrevista."
+            ],
+            "correctIndex": 1,
+            "explanation": "'The next day' en estilo indirecto se refiere al día siguiente al momento en que se dijo la frase original (la entrevista), no al día siguiente de contarle la historia a Diego."
+          },
+          {
+            "prompt": "¿Qué le dijo originalmente Franco a la Sra. Ibarra sobre llamarla, en discurso directo?",
+            "options": [
+              "\"I called you back yesterday morning.\"",
+              "\"I would have called you back this morning.\"",
+              "\"I call you back every morning.\"",
+              "\"I will call you back tomorrow morning.\""
+            ],
+            "correctIndex": 3,
+            "explanation": "'Would call ... the next morning' en estilo indirecto corresponde a 'will call ... tomorrow morning' en el discurso directo."
+          }
+        ]
+      }
+    ],
+    "preguntas-pedidos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la pregunta en estilo indirecto.",
+        "prompt": "The interviewer asked Marcos ___ .",
+        "options": [
+          "where did he work",
+          "where does he work",
+          "where he did work",
+          "where he worked"
+        ],
+        "correctIndex": 3,
+        "explanation": "En preguntas indirectas no se usa did y el orden es sujeto + verbo, como en una afirmación.",
+        "optionNotes": [
+          "Incorrecto: no se usa 'did' en preguntas indirectas.",
+          "Incorrecto: falta el backshift a pasado y mantiene estructura de pregunta directa.",
+          "Incorrecto: orden mezclado, 'did' no va después del sujeto tampoco.",
+          "Correcto: orden afirmativo sujeto + verbo, con backshift a pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la pregunta de sí o no en estilo indirecto.",
+        "prompt": "Lucía asked Pablo ___ coming to the party.",
+        "options": [
+          "if was he",
+          "was he",
+          "if he was",
+          "that he was"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las preguntas de sí/no se introducen con if o whether, y luego van en orden afirmativo: sujeto + verbo.",
+        "optionNotes": [
+          "Incorrecto: aunque usa 'if', el orden sujeto-verbo está invertido.",
+          "Incorrecto: mantiene el orden de pregunta directa (verbo antes del sujeto).",
+          "Correcto: 'if' + sujeto + verbo, con backshift a pasado.",
+          "Incorrecto: 'that' no se usa para introducir preguntas de sí/no, se necesita 'if' o 'whether'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la orden en estilo indirecto.",
+        "prompt": "The doctor told the patient ___ .",
+        "options": [
+          "sit down",
+          "to sit down",
+          "sitting down",
+          "that he sits down"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para órdenes en estilo indirecto se usa tell + persona + to + infinitivo.",
+        "optionNotes": [
+          "Incorrecto: falta el 'to' antes del infinitivo.",
+          "Correcto: tell + persona + to + infinitivo.",
+          "Incorrecto: el gerundio no se usa en esta estructura.",
+          "Incorrecto: no se usa 'that' con un verbo conjugado para órdenes indirectas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente el pedido negativo en estilo indirecto.",
+        "prompt": "The teacher told the students ___ late for the exam.",
+        "options": [
+          "don't be",
+          "that they not be",
+          "to not be",
+          "not to be"
+        ],
+        "correctIndex": 3,
+        "explanation": "La forma negativa de la orden indirecta es tell + persona + not to + infinitivo, con 'not' siempre antes de 'to'.",
+        "optionNotes": [
+          "Incorrecto: mantiene la forma imperativa directa, no transformada a estilo indirecto.",
+          "Incorrecto: estructura calcada del español, no existe en inglés de esta forma.",
+          "Incorrecto: el orden correcto es 'not to', no 'to not'.",
+          "Correcto: not + to + infinitivo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la pregunta indirecta con palabra interrogativa.",
+        "prompt": "The tourist asked the clerk ___ .",
+        "options": [
+          "what time did the flight leave",
+          "what time the flight left",
+          "what time does the flight leave",
+          "what time the flight did leave"
+        ],
+        "correctIndex": 1,
+        "explanation": "En la pregunta indirecta no va 'did' y el verbo hace backshift de presente a pasado: 'left'.",
+        "optionNotes": [
+          "Incorrecto: usa 'did', que no corresponde en preguntas indirectas.",
+          "Correcto: orden afirmativo y backshift a pasado simple.",
+          "Incorrecto: mantiene el presente sin hacer el backshift necesario.",
+          "Incorrecto: orden mezclado con 'did' después del sujeto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la pregunta de sí o no con modal en estilo indirecto.",
+        "prompt": "The woman asked the porter ___ her with her suitcase.",
+        "options": [
+          "that he could help",
+          "if he could help",
+          "if could he help",
+          "can he help"
+        ],
+        "correctIndex": 1,
+        "explanation": "El modal 'can' hace backshift a 'could' en estilo indirecto, y el orden después de 'if' es sujeto + verbo.",
+        "optionNotes": [
+          "Incorrecto: 'that' no introduce preguntas de sí/no.",
+          "Correcto: 'if' + sujeto + 'could' + verbo.",
+          "Incorrecto: orden invertido de sujeto y modal.",
+          "Incorrecto: mantiene estructura de pregunta directa, sin 'if' ni backshift."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta indirecta con la forma correcta del verbo.",
+        "sentence": "The interviewer asked Marcos why ___ to work there.",
+        "hint": "(want - pasado)",
+        "answers": [
+          "he wanted"
+        ],
+        "explanation": "En la pregunta indirecta no se usa 'did' y el verbo hace backshift a pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "he did want",
+            "why": "No se usa 'did' en preguntas indirectas, el verbo va solo en pasado."
+          },
+          {
+            "answer": "did he want",
+            "why": "Mantiene el orden de pregunta directa, pero en estilo indirecto el orden es sujeto + verbo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta de sí o no en estilo indirecto.",
+        "sentence": "My boss asked if I ___ available on Mondays.",
+        "hint": "(be - pasado)",
+        "answers": [
+          "was"
+        ],
+        "explanation": "El verbo 'be' hace backshift de presente a pasado en estilo indirecto: am/is → was.",
+        "wrongAnswers": [
+          {
+            "answer": "am",
+            "why": "Falta el backshift a pasado, que es necesario cuando el verbo que introduce el reporte está en pasado."
+          },
+          {
+            "answer": "were",
+            "why": "'Were' se usa en condicionales irreales, no en el backshift simple de estilo indirecto para la primera persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el pedido en estilo indirecto.",
+        "sentence": "Mrs. Gómez asked Juan ___ the rent before the fifth.",
+        "hint": "(pay - infinitivo)",
+        "answers": [
+          "to pay"
+        ],
+        "explanation": "Los pedidos en estilo indirecto usan ask + persona + to + infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "pay",
+            "why": "Falta el 'to' antes del infinitivo, necesario en esta estructura."
+          },
+          {
+            "answer": "that he pays",
+            "why": "No se usa 'that' con un verbo conjugado para pedidos en estilo indirecto, sino to + infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la orden negativa en estilo indirecto.",
+        "sentence": "The doctor told me ___ fried food.",
+        "hint": "(eat - infinitivo negativo)",
+        "answers": [
+          "not to eat"
+        ],
+        "explanation": "La negación en órdenes indirectas va siempre antes de 'to': not to + infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "to not eat",
+            "why": "El orden correcto es 'not to', no 'to not'."
+          },
+          {
+            "answer": "don't eat",
+            "why": "Mantiene la forma imperativa directa en lugar de transformarla a estilo indirecto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta indirecta con palabra interrogativa.",
+        "sentence": "The immigration officer asked the tourist where ___ in Buenos Aires.",
+        "hint": "(stay - pasado continuo)",
+        "answers": [
+          "she was staying"
+        ],
+        "explanation": "El orden es sujeto + verbo (sin did) y el presente continuo hace backshift a pasado continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "was she staying",
+            "why": "Mantiene el orden de pregunta directa, pero en estilo indirecto va sujeto antes del verbo."
+          },
+          {
+            "answer": "she is staying",
+            "why": "Falta el backshift a pasado, necesario porque el verbo introductorio 'asked' está en pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta de sí o no con modal en estilo indirecto.",
+        "sentence": "Lucía asked her lawyer if he ___ send her the contract.",
+        "hint": "(could)",
+        "answers": [
+          "could"
+        ],
+        "explanation": "El modal 'could' es el backshift de 'can' en estilo indirecto.",
+        "wrongAnswers": [
+          {
+            "answer": "can",
+            "why": "Falta el backshift del modal 'can' a 'could', necesario en estilo indirecto."
+          },
+          {
+            "answer": "would could",
+            "why": "No existen dos modales juntos; solo corresponde usar 'could'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración en estilo indirecto.",
+        "sentence": "The waiter asked us what we wanted to order.",
+        "alternatives": [],
+        "translation": "El mozo nos preguntó qué queríamos pedir.",
+        "explanation": "La pregunta indirecta con palabra interrogativa sigue el orden sujeto + verbo, sin 'did'.",
+        "tokens": [
+          "to",
+          "asked",
+          "order",
+          "wanted",
+          "us",
+          "The",
+          "what",
+          "we",
+          "waiter"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración en estilo indirecto.",
+        "sentence": "She asked me if I was feeling better.",
+        "alternatives": [
+          "She asked me whether I was feeling better."
+        ],
+        "translation": "Ella me preguntó si me sentía mejor.",
+        "explanation": "La pregunta de sí o no se introduce con 'if' (o 'whether') seguido de sujeto + verbo.",
+        "tokens": [
+          "better",
+          "I",
+          "asked",
+          "was",
+          "She",
+          "if",
+          "me",
+          "feeling"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración en estilo indirecto.",
+        "sentence": "The manager told Sofía to arrive earlier.",
+        "alternatives": [],
+        "translation": "El gerente le dijo a Sofía que llegara más temprano.",
+        "explanation": "Las órdenes en estilo indirecto se forman con tell + persona + to + infinitivo.",
+        "tokens": [
+          "The",
+          "told",
+          "Sofía",
+          "earlier",
+          "manager",
+          "arrive",
+          "to"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración en estilo indirecto.",
+        "sentence": "He asked the nurse not to wake him up.",
+        "alternatives": [],
+        "translation": "Le pidió a la enfermera que no lo despertara.",
+        "explanation": "La forma negativa del pedido lleva 'not' antes de 'to': ask + persona + not to + infinitivo.",
+        "tokens": [
+          "him",
+          "nurse",
+          "He",
+          "wake",
+          "asked",
+          "up",
+          "not",
+          "to",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración en estilo indirecto.",
+        "sentence": "The recruiter asked her why she wanted the job.",
+        "alternatives": [],
+        "translation": "El reclutador le preguntó por qué quería el trabajo.",
+        "explanation": "La pregunta indirecta con 'why' mantiene el orden afirmativo sujeto + verbo, con backshift a pasado.",
+        "tokens": [
+          "job",
+          "why",
+          "the",
+          "her",
+          "wanted",
+          "asked",
+          "recruiter",
+          "The",
+          "she"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración en estilo indirecto.",
+        "sentence": "The officer asked me where did I come from.",
+        "answers": [
+          "The officer asked me where I came from."
+        ],
+        "explanation": "En las preguntas indirectas no se usa 'did'; el orden es sujeto + verbo en pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "The officer asked me where did I came from.",
+            "why": "Sigue manteniendo 'did', que no corresponde en estilo indirecto, y además duplica el pasado con 'came'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración en estilo indirecto.",
+        "sentence": "He told me that I don't be late.",
+        "answers": [
+          "He told me not to be late."
+        ],
+        "explanation": "Las órdenes en estilo indirecto se forman con tell + persona + (not) to + infinitivo, no con 'that' + verbo conjugado.",
+        "wrongAnswers": [
+          {
+            "answer": "He told me that I not be late.",
+            "why": "Sigue usando 'that' con un verbo conjugado, estructura que no se usa para órdenes indirectas."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración en estilo indirecto.",
+        "sentence": "My boss asked if I can finish the report by Friday.",
+        "answers": [
+          "My boss asked if I could finish the report by Friday."
+        ],
+        "explanation": "El modal 'can' debe hacer backshift a 'could' cuando el verbo introductorio está en pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "My boss asked that I can finish the report by Friday.",
+            "why": "Cambia 'if' por 'that', pero el verdadero error es la falta de backshift del modal, no la conjunción."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración en estilo indirecto.",
+        "sentence": "The doctor asked me what medicine was I taking.",
+        "answers": [
+          "The doctor asked me what medicine I was taking."
+        ],
+        "explanation": "En la pregunta indirecta el orden es sujeto + verbo, no verbo + sujeto como en la pregunta directa.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor asked me what medicine I taking was.",
+            "why": "El verbo auxiliar 'was' queda en una posición incorrecta; debe ir inmediatamente después del sujeto."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración en estilo indirecto.",
+        "sentence": "The landlord told us to not smoke in the apartment.",
+        "answers": [
+          "The landlord told us not to smoke in the apartment."
+        ],
+        "explanation": "La negación en órdenes indirectas se coloca antes de 'to': not to + infinitivo, nunca 'to not'.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord told us to don't smoke in the apartment.",
+            "why": "Mezcla incorrectamente 'to' con la forma negativa 'don't', que no existe en esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El recepcionista me preguntó si tenía una reserva.",
+        "answers": [
+          "The receptionist asked me if I had a reservation.",
+          "The receptionist asked me whether I had a reservation.",
+          "The receptionist asked if I had a reservation.",
+          "The receptionist asked whether I had a reservation."
+        ],
+        "explanation": "Las preguntas de sí/no se introducen con 'if' o 'whether', y el verbo hace backshift a pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "The receptionist asked me if I have a reservation.",
+            "why": "Falta el backshift a pasado, necesario porque 'asked' está en pasado."
+          },
+          {
+            "answer": "The receptionist asked me that I had a reservation.",
+            "why": "No se usa 'that' para introducir preguntas de sí/no, se necesita 'if' o 'whether'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La inmobiliaria me preguntó cuándo podía mudarme.",
+        "answers": [
+          "The real estate agency asked me when I could move in.",
+          "The real estate agency asked when I could move in."
+        ],
+        "explanation": "El modal 'podía' corresponde al backshift de 'can' a 'could', y el orden es sujeto + verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "The real estate agency asked me when can I move in.",
+            "why": "Falta el backshift de 'can' a 'could' y mantiene el orden de pregunta directa."
+          },
+          {
+            "answer": "The real estate agency asked me when could I move in.",
+            "why": "Aunque usa 'could', mantiene el orden de pregunta directa; debe ser sujeto + verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico me dijo que no tomara alcohol.",
+        "answers": [
+          "The doctor told me not to drink alcohol."
+        ],
+        "explanation": "Las órdenes negativas en estilo indirecto se forman con tell + persona + not to + infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor told me that I not drink alcohol.",
+            "why": "Es un calco de la estructura española con 'que'; en inglés se usa 'not to' + infinitivo."
+          },
+          {
+            "answer": "The doctor told me to not drink alcohol.",
+            "why": "El orden correcto es 'not to', no 'to not'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vos le preguntaste a Lucía si podía venir a la fiesta.",
+        "answers": [
+          "You asked Lucía if she could come to the party.",
+          "You asked Lucía whether she could come to the party."
+        ],
+        "explanation": "El modal 'podía' hace backshift a 'could', y la pregunta de sí/no se introduce con 'if' o 'whether'.",
+        "wrongAnswers": [
+          {
+            "answer": "You asked Lucía if she can come to the party.",
+            "why": "Falta el backshift de 'can' a 'could', necesario en estilo indirecto."
+          },
+          {
+            "answer": "You asked Lucía that she could come to the party.",
+            "why": "No se usa 'that' para introducir preguntas de sí/no, se necesita 'if' o 'whether'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El entrevistador me preguntó por qué había dejado mi trabajo anterior.",
+        "answers": [
+          "The interviewer asked me why I had left my previous job.",
+          "The interviewer asked me why I left my previous job."
+        ],
+        "explanation": "La pregunta indirecta mantiene el orden sujeto + verbo, sin 'did', con backshift a pasado o pasado perfecto.",
+        "wrongAnswers": [
+          {
+            "answer": "The interviewer asked me why did I leave my previous job.",
+            "why": "Mantiene el orden de pregunta directa con 'did', que no corresponde en estilo indirecto."
+          },
+          {
+            "answer": "The interviewer asked me why I have left my previous job.",
+            "why": "El tiempo verbal no corresponde; se necesita backshift a pasado o pasado perfecto, no present perfect."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El jefe te pidió que llegaras a las ocho.",
+        "answers": [
+          "The boss asked you to arrive at eight."
+        ],
+        "explanation": "Los pedidos en estilo indirecto se forman con ask + persona + to + infinitivo, no con 'that' + verbo conjugado como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "The boss asked you that you arrived at eight.",
+            "why": "Es un calco de la estructura española; en inglés se usa 'to' + infinitivo, no 'that' + verbo conjugado."
+          },
+          {
+            "answer": "The boss told you arrive at eight.",
+            "why": "Falta el 'to' antes del infinitivo, necesario en esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la entrevista de trabajo de Camila y respondé las preguntas sobre el estilo indirecto.",
+        "text": "Camila Fernández had a job interview yesterday at a marketing agency in Córdoba. The interviewer, Mr. Suárez, started by saying, 'How long did you work at your last job?' Camila answered that she had worked there for three years. Then he asked, 'Are you willing to travel for work?' and she said she was. He also asked, 'What salary are you expecting?' and Camila mentioned a number that she thought was fair, though she wasn't sure if it was too high. Later, he said, 'Please wait in the lobby for a few minutes,' and left the room. Before leaving, he added, 'Don't talk to the other candidates about the interview.' When he returned, he said, 'We will call you within a week.' Camila left the building wondering if she had impressed him, and she called her friend Nicolás to tell him everything that had happened during the interview.",
+        "questions": [
+          {
+            "prompt": "¿Cuál de estas oraciones reporta correctamente la primera pregunta de Mr. Suárez sobre el trabajo anterior de Camila?",
+            "options": [
+              "Mr. Suárez asked her how long worked she at her last job.",
+              "Mr. Suárez asked her how long she has worked at her last job.",
+              "Mr. Suárez asked her how long she had worked at her last job.",
+              "Mr. Suárez asked her how long did she work at her last job."
+            ],
+            "correctIndex": 2,
+            "explanation": "En la pregunta indirecta no se usa 'did' y el orden es sujeto + verbo; además, el verbo retrocede a pasado perfecto (had worked) por el backshift."
+          },
+          {
+            "prompt": "¿Cuál de estas oraciones reporta correctamente la pregunta sobre si estaba dispuesta a viajar?",
+            "options": [
+              "He asked was she willing to travel for work.",
+              "He asked that she was willing to travel for work.",
+              "He asked whether did she willing to travel for work.",
+              "He asked if she was willing to travel for work."
+            ],
+            "correctIndex": 3,
+            "explanation": "Para reportar una pregunta de sí o no se usa 'if' o 'whether' sin invertir el orden del sujeto y el verbo."
+          },
+          {
+            "prompt": "¿Cuál de estas oraciones reporta correctamente lo que Mr. Suárez le dijo a Camila antes de salir de la sala?",
+            "options": [
+              "He told her to not talking to the other candidates about the interview.",
+              "He told her not to talk to the other candidates about the interview.",
+              "He told her that she don't talk to the other candidates about the interview.",
+              "He asked her don't talk to the other candidates about the interview."
+            ],
+            "correctIndex": 1,
+            "explanation": "Para órdenes indirectas negativas se usa tell + persona + not to + infinitivo, no 'that' + verbo ni el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la consulta médica de Martín y respondé las preguntas sobre el estilo indirecto.",
+        "text": "Martín went to Dr. Paredes's clinic in Mendoza because of severe back pain. The doctor asked, 'How long have you had this pain?' Martín answered that it had started about two weeks before, after he moved some furniture. Dr. Paredes then asked, 'Can you touch your toes without bending your knees?' Martín tried, but he couldn't. The doctor said, 'Don't lift anything heavy for the next two weeks,' and also told him, 'Take this medicine twice a day.' He also asked, 'Do you exercise regularly?' and Martín admitted that he didn't, which seemed to concern the doctor. Before Martín left, he asked the doctor, 'Will I need surgery?' Dr. Paredes said it was too early to know, but he told Martín to come back if the pain got worse. Martín left the clinic feeling a bit worried, and that night he called his sister Valentina to tell her what the doctor had said.",
+        "questions": [
+          {
+            "prompt": "¿Cuál de estas oraciones reporta correctamente la pregunta del doctor sobre el dolor de Martín?",
+            "options": [
+              "He asked him how long he has had the pain.",
+              "He asked him how long had he the pain.",
+              "He asked him how long he had had the pain.",
+              "He asked him how long did he have the pain."
+            ],
+            "correctIndex": 2,
+            "explanation": "En la pregunta indirecta no se usa 'did' y el verbo retrocede de presente perfecto (have had) a pasado perfecto (had had) por el backshift."
+          },
+          {
+            "prompt": "¿Cuál de estas oraciones reporta correctamente lo que el doctor le dijo a Martín sobre levantar cosas pesadas?",
+            "options": [
+              "He asked him don't lift anything heavy for the next two weeks.",
+              "He told him to not lifting anything heavy for the next two weeks.",
+              "He told him not to lift anything heavy for the next two weeks.",
+              "He told him that he don't lift anything heavy for the next two weeks."
+            ],
+            "correctIndex": 2,
+            "explanation": "Para órdenes indirectas negativas se usa tell + persona + not to + infinitivo, no 'that' + verbo ni el gerundio."
+          },
+          {
+            "prompt": "¿Cuál de estas oraciones reporta correctamente la pregunta que Martín le hizo al doctor antes de irse?",
+            "options": [
+              "He asked the doctor if will he need surgery.",
+              "He asked the doctor will he need surgery.",
+              "He asked the doctor that he would need surgery.",
+              "He asked the doctor if he would need surgery."
+            ],
+            "correctIndex": 3,
+            "explanation": "Para reportar una pregunta de sí o no se usa 'if', sin invertir el orden del sujeto y el verbo ni mantener la forma del futuro directo."
+          }
+        ]
+      }
+    ]
+  }
+}

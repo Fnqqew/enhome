@@ -44,6 +44,7 @@ export const translation: ExerciseKind<SingleGenerated, SingleGenerated, SingleP
     return { kind: 'needs-ai' }
   },
   empty: (e) => ({ type: e.type, text: '' }),
+  retry: (e, a) => predictedMistake(a.text, e.wrongAnswers)?.why ?? translation.hint(e),
   hint: (e) => `Podés empezar así: «${firstWords(e.answers[0])}…»`,
   guide: ({ language, spanish }) =>
     `translation: spanish es una oración completa en ${spanish} para traducir al ${language}; answers con todas las traducciones correctas y naturales que se te ocurran (de 2 a 6, con y sin contracciones); wrongAnswers con 1 a 3 traducciones equivocadas típicas de hispanohablantes (calcos del español), cada una con why.`,

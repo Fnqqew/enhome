@@ -1,0 +1,2817 @@
+{
+  "subtopics": {
+    "comparativos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This apartment is ___ than the one in Palermo.",
+        "options": [
+          "big",
+          "biggest",
+          "bigger",
+          "more big"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Big' es un adjetivo corto (una sílaba), por eso el comparativo se forma duplicando la consonante final y agregando -er.",
+        "optionNotes": [
+          "Incorrecto: falta la forma comparativa; 'big' solo es el adjetivo base.",
+          "Incorrecto: 'biggest' es el superlativo, no el comparativo entre dos cosas.",
+          "Correcto: 'big' duplica la consonante final y agrega -er para el comparativo.",
+          "Incorrecto: los adjetivos cortos no usan 'more', forman el comparativo con -er."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The new job is ___ than my last one.",
+        "options": [
+          "more interesting",
+          "more interestinger",
+          "interestinger",
+          "interesting"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Interesting' es un adjetivo largo, por eso el comparativo se forma con 'more' antes del adjetivo.",
+        "optionNotes": [
+          "Correcto: los adjetivos largos forman el comparativo con 'more' + adjetivo.",
+          "Incorrecto: no se puede combinar 'more' con la terminación -er en el mismo adjetivo.",
+          "Incorrecto: no se agrega -er a los adjetivos largos como 'interesting'.",
+          "Incorrecto: falta la forma comparativa; 'interesting' solo es el adjetivo base."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My English is ___ than it was last year.",
+        "options": [
+          "more good",
+          "better",
+          "gooder",
+          "best"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Good' es un adjetivo irregular; su comparativo es 'better', no sigue la regla de -er ni de 'more'.",
+        "optionNotes": [
+          "Incorrecto: 'good' es irregular, no se usa 'more' con él.",
+          "Correcto: 'better' es el comparativo irregular de 'good'.",
+          "Incorrecto: 'good' es irregular, no forma el comparativo agregando -er.",
+          "Incorrecto: 'best' es el superlativo, no el comparativo entre dos momentos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Mariana is ___ in her new job than in the old one.",
+        "options": [
+          "happiest",
+          "more happy",
+          "happyer",
+          "happier"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Happy' termina en consonante + y, por eso el comparativo cambia la 'y' por 'i' y agrega '-er': 'happier'.",
+        "optionNotes": [
+          "Incorrecto: 'happiest' es el superlativo, no el comparativo entre dos situaciones.",
+          "Incorrecto: los adjetivos cortos como 'happy' no usan 'more'.",
+          "Incorrecto: la 'y' debe cambiarse por 'i' antes de agregar '-er'.",
+          "Correcto: la 'y' final se cambia por 'i' antes de agregar '-er'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This hotel is better ___ the other one.",
+        "options": [
+          "as",
+          "then",
+          "that",
+          "than"
+        ],
+        "correctIndex": 3,
+        "explanation": "En las comparaciones se usa 'than', no 'that' ni 'then', que son palabras distintas que se confunden por su sonido similar.",
+        "optionNotes": [
+          "Incorrecto: 'as' se usa en comparaciones de igualdad (as...as), no con el comparativo '-er'.",
+          "Incorrecto: 'then' significa 'entonces' o 'luego', no se usa en comparaciones.",
+          "Incorrecto: 'that' no se usa en comparaciones, es un error común por su parecido con 'than'.",
+          "Correcto: 'than' es la palabra que se usa después de un comparativo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Bariloche is ___ from Buenos Aires than Rosario.",
+        "options": [
+          "farer",
+          "farther",
+          "farrer",
+          "more far"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Far' es un adjetivo irregular; uno de sus comparativos es 'farther' (también existe 'further').",
+        "optionNotes": [
+          "Incorrecto: 'far' es irregular, no se forma el comparativo agregando simplemente -er.",
+          "Correcto: 'farther' es una de las formas irregulares del comparativo de 'far'.",
+          "Incorrecto: esta forma no existe; el comparativo correcto es 'farther', no 'farrer'.",
+          "Incorrecto: 'far' es irregular, no se usa 'more' con él."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el comparativo del adjetivo entre paréntesis.",
+        "sentence": "This phone is ___ than my old one.",
+        "hint": "(expensive)",
+        "answers": [
+          "more expensive"
+        ],
+        "explanation": "Los adjetivos largos como 'expensive' forman el comparativo con 'more' antes del adjetivo.",
+        "wrongAnswers": [
+          {
+            "answer": "expensiver",
+            "why": "'Expensive' es un adjetivo largo; no se le agrega -er, se usa 'more' antes del adjetivo."
+          },
+          {
+            "answer": "more expensiver",
+            "why": "No se puede combinar 'more' con la terminación -er en el mismo adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el comparativo del adjetivo entre paréntesis.",
+        "sentence": "My sister is ___ than me.",
+        "hint": "(young)",
+        "answers": [
+          "younger"
+        ],
+        "explanation": "'Young' es un adjetivo corto, por eso el comparativo se forma agregando '-er': 'younger'.",
+        "wrongAnswers": [
+          {
+            "answer": "more young",
+            "why": "'Young' es un adjetivo corto; el comparativo se forma agregando -er, no con 'more'."
+          },
+          {
+            "answer": "youngest",
+            "why": "'Youngest' es el superlativo, no el comparativo entre dos personas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el comparativo del adjetivo entre paréntesis.",
+        "sentence": "The weather in Mendoza is ___ than here.",
+        "hint": "(good)",
+        "answers": [
+          "better"
+        ],
+        "explanation": "'Good' es un adjetivo irregular cuyo comparativo es 'better'.",
+        "wrongAnswers": [
+          {
+            "answer": "gooder",
+            "why": "'Good' es un adjetivo irregular; no forma el comparativo agregando -er."
+          },
+          {
+            "answer": "more good",
+            "why": "'Good' es irregular; no se usa 'more' con él, su comparativo es 'better'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el comparativo del adjetivo entre paréntesis.",
+        "sentence": "This exercise is ___ than the last one.",
+        "hint": "(difficult)",
+        "answers": [
+          "more difficult"
+        ],
+        "explanation": "Los adjetivos largos como 'difficult' forman el comparativo con 'more' antes del adjetivo.",
+        "wrongAnswers": [
+          {
+            "answer": "difficulter",
+            "why": "'Difficult' es un adjetivo largo; no se le agrega -er, se usa 'more' antes del adjetivo."
+          },
+          {
+            "answer": "more difficulter",
+            "why": "No se puede combinar 'more' con la terminación -er en el mismo adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el comparativo del adjetivo entre paréntesis.",
+        "sentence": "Buenos Aires is ___ than Mar del Plata.",
+        "hint": "(big)",
+        "answers": [
+          "bigger"
+        ],
+        "explanation": "'Big' termina en consonante-vocal-consonante, por eso se duplica la consonante final antes de agregar '-er'.",
+        "wrongAnswers": [
+          {
+            "answer": "more big",
+            "why": "'Big' es un adjetivo corto; el comparativo se forma agregando -er, no con 'more'."
+          },
+          {
+            "answer": "biger",
+            "why": "Al agregar '-er' a 'big' se duplica la consonante final: 'bigger', no 'biger'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el comparativo del adjetivo entre paréntesis.",
+        "sentence": "The second apartment is ___ from the subway than the first one.",
+        "hint": "(far)",
+        "answers": [
+          "farther",
+          "further"
+        ],
+        "explanation": "'Far' es un adjetivo irregular cuyos comparativos son 'farther' y 'further'.",
+        "wrongAnswers": [
+          {
+            "answer": "farer",
+            "why": "'Far' es un adjetivo irregular; no forma el comparativo simplemente agregando -er."
+          },
+          {
+            "answer": "more far",
+            "why": "'Far' es irregular; no se usa 'more' con él, sus comparativos son 'farther' o 'further'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "This apartment is bigger than the other one.",
+        "alternatives": [],
+        "translation": "Este departamento es más grande que el otro.",
+        "explanation": "'Big' es un adjetivo corto y forma el comparativo duplicando la consonante y agregando '-er'.",
+        "tokens": [
+          "one",
+          "other",
+          "apartment",
+          "than",
+          "bigger",
+          "the",
+          "This",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The new job is more interesting than my last one.",
+        "alternatives": [],
+        "translation": "El trabajo nuevo es más interesante que el anterior.",
+        "explanation": "'Interesting' es un adjetivo largo y forma el comparativo con 'more' antes del adjetivo.",
+        "tokens": [
+          "The",
+          "my",
+          "new",
+          "interesting",
+          "last",
+          "is",
+          "job",
+          "more",
+          "than",
+          "one"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My English is better than it was last year.",
+        "alternatives": [],
+        "translation": "Mi inglés es mejor de lo que era el año pasado.",
+        "explanation": "'Good' es irregular y su comparativo es 'better'.",
+        "tokens": [
+          "was",
+          "English",
+          "last",
+          "better",
+          "year",
+          "My",
+          "it",
+          "is",
+          "than"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "This hotel is better than the other one.",
+        "alternatives": [],
+        "translation": "Este hotel es mejor que el otro.",
+        "explanation": "En las comparaciones se usa 'than' después del comparativo, no 'that'.",
+        "tokens": [
+          "is",
+          "better",
+          "than",
+          "hotel",
+          "one",
+          "the",
+          "other",
+          "This"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Bariloche is farther from here than Rosario.",
+        "alternatives": [
+          "Bariloche is further from here than Rosario."
+        ],
+        "translation": "Bariloche está más lejos de aquí que Rosario.",
+        "explanation": "'Far' es un adjetivo irregular cuyos comparativos son 'farther' y 'further'.",
+        "tokens": [
+          "is",
+          "here",
+          "than",
+          "Bariloche",
+          "farther",
+          "from",
+          "Rosario"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "She is more tall than me.",
+        "answers": [
+          "She is taller than me."
+        ],
+        "explanation": "'Tall' es un adjetivo corto; su comparativo se forma agregando '-er', no con 'more'.",
+        "wrongAnswers": [
+          {
+            "answer": "She is more tall that me.",
+            "why": "El problema no es 'than', sino el uso de 'more' con un adjetivo corto; 'tall' forma el comparativo con -er."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "This apartment is gooder than the other one.",
+        "answers": [
+          "This apartment is better than the other one."
+        ],
+        "explanation": "'Good' es un adjetivo irregular cuyo comparativo es 'better', no 'gooder'.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment is more good than the other one.",
+            "why": "'Good' es irregular; no se usa 'more' con él, su comparativo correcto es 'better'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "The exam was more difficult that I expected.",
+        "answers": [
+          "The exam was more difficult than I expected."
+        ],
+        "explanation": "Después de un comparativo se usa 'than', no 'that', aunque suenen parecido.",
+        "wrongAnswers": [
+          {
+            "answer": "The exam was difficulter that I expected.",
+            "why": "El error principal es usar 'that' en lugar de 'than'; además 'difficult' no forma el comparativo con -er."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "My new phone is more cheap than my old one.",
+        "answers": [
+          "My new phone is cheaper than my old one."
+        ],
+        "explanation": "'Cheap' es un adjetivo corto; su comparativo se forma agregando '-er', no con 'more'.",
+        "wrongAnswers": [
+          {
+            "answer": "My new phone is more cheaper than my old one.",
+            "why": "No se puede combinar 'more' con la terminación '-er' en el mismo adjetivo; hay que elegir una sola forma."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Mendoza is farer from here than Rosario.",
+        "answers": [
+          "Mendoza is farther from here than Rosario.",
+          "Mendoza is further from here than Rosario."
+        ],
+        "explanation": "'Far' es un adjetivo irregular cuyos comparativos son 'farther' y 'further', no 'farer'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mendoza is more far from here than Rosario.",
+            "why": "'Far' es irregular; no se usa 'more' con él, sus comparativos son 'farther' o 'further'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este departamento es más barato que el de Palermo.",
+        "answers": [
+          "This apartment is cheaper than the one in Palermo.",
+          "This apartment is cheaper than the apartment in Palermo."
+        ],
+        "explanation": "'Cheap' es un adjetivo corto, por eso el comparativo se forma agregando '-er': 'cheaper'.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment is more cheap than the one in Palermo.",
+            "why": "'Cheap' es un adjetivo corto; el comparativo se forma agregando '-er', no con 'more'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermano es más alto que yo.",
+        "answers": [
+          "My brother is taller than me.",
+          "My brother is taller than I am."
+        ],
+        "explanation": "'Tall' es un adjetivo corto, por eso el comparativo se forma agregando '-er': 'taller'.",
+        "wrongAnswers": [
+          {
+            "answer": "My brother is more tall than me.",
+            "why": "'Tall' es un adjetivo corto; el comparativo se forma agregando '-er', no con 'more'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este trabajo nuevo es más interesante que el anterior.",
+        "answers": [
+          "This new job is more interesting than the previous one.",
+          "This new job is more interesting than my last one."
+        ],
+        "explanation": "'Interesting' es un adjetivo largo, por eso el comparativo se forma con 'more' antes del adjetivo.",
+        "wrongAnswers": [
+          {
+            "answer": "This new job is interestinger than the previous one.",
+            "why": "'Interesting' es un adjetivo largo; no se le agrega '-er', se usa 'more' antes del adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El clima de hoy está peor que el de ayer.",
+        "answers": [
+          "Today's weather is worse than yesterday's."
+        ],
+        "explanation": "'Bad' es un adjetivo irregular cuyo comparativo es 'worse'.",
+        "wrongAnswers": [
+          {
+            "answer": "Today's weather is more bad than yesterday's.",
+            "why": "'Bad' es un adjetivo irregular; no se usa 'more' con él, su comparativo correcto es 'worse'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Bariloche está más lejos de Buenos Aires que Rosario.",
+        "answers": [
+          "Bariloche is farther from Buenos Aires than Rosario.",
+          "Bariloche is further from Buenos Aires than Rosario."
+        ],
+        "explanation": "'Far' es un adjetivo irregular cuyos comparativos son 'farther' y 'further'.",
+        "wrongAnswers": [
+          {
+            "answer": "Bariloche is more far from Buenos Aires than Rosario.",
+            "why": "'Far' es irregular; no se usa 'more' con él, sus comparativos son 'farther' o 'further'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Esta entrevista fue más fácil que la anterior.",
+        "answers": [
+          "This interview was easier than the previous one.",
+          "This interview was easier than the last one."
+        ],
+        "explanation": "'Easy' termina en consonante + y, por eso el comparativo se forma cambiando la 'y' por 'i' y agregando '-er': 'easier'.",
+        "wrongAnswers": [
+          {
+            "answer": "This interview was more easy than the previous one.",
+            "why": "'Easy' termina en consonante + y; el comparativo cambia la 'y' por 'i' y agrega '-er', no se usa 'more'."
+          }
+        ]
+      }
+    ],
+    "superlativos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del superlativo.",
+        "prompt": "This is ___ apartment in the building.",
+        "options": [
+          "the biggest",
+          "the most big",
+          "the bigger",
+          "biggest"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Big' es un adjetivo corto; su superlativo se forma duplicando la consonante final y agregando '-est': 'the biggest'.",
+        "optionNotes": [
+          "Correcto: 'the biggest' es el superlativo de 'big', un adjetivo corto.",
+          "Incorrecto: 'most' se usa con adjetivos largos, no con adjetivos cortos como 'big'.",
+          "Incorrecto: 'the bigger' es comparativo, pero la oración compara con todo el edificio, por lo que necesita el superlativo.",
+          "Incorrecto: falta el artículo 'the', que siempre acompaña al superlativo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del superlativo.",
+        "prompt": "Mendoza is ___ city I visited this year.",
+        "options": [
+          "most interesting",
+          "the most interesting",
+          "the interestingest",
+          "the more interesting"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Interesting' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "optionNotes": [
+          "Incorrecto: falta el artículo 'the', que siempre acompaña al superlativo.",
+          "Correcto: 'the most interesting' es el superlativo de un adjetivo largo.",
+          "Incorrecto: 'interestingest' no existe; los adjetivos largos no llevan '-est'.",
+          "Incorrecto: 'more' se usa en comparativos, no en superlativos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del superlativo.",
+        "prompt": "Martín is ___ player in the team.",
+        "options": [
+          "the most good",
+          "the best",
+          "the better",
+          "the goodest"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Good' es irregular; su superlativo es 'the best', no se forma con '-est' ni con 'most'.",
+        "optionNotes": [
+          "Incorrecto: 'most good' no es correcto; 'good' tiene una forma irregular, no se usa 'most'.",
+          "Correcto: 'the best' es el superlativo irregular de 'good'.",
+          "Incorrecto: 'the better' es comparativo, pero la oración compara con todo el equipo, por lo que necesita el superlativo.",
+          "Incorrecto: 'goodest' no existe porque 'good' es irregular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del superlativo.",
+        "prompt": "This hotel is ___ one in the city for the price.",
+        "options": [
+          "the cheapest",
+          "cheapest",
+          "the most cheap",
+          "the cheaper"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Cheap' es un adjetivo corto; su superlativo se forma con '-est': 'the cheapest'.",
+        "optionNotes": [
+          "Correcto: 'the cheapest' es el superlativo de 'cheap', un adjetivo corto.",
+          "Incorrecto: falta el artículo 'the', que siempre acompaña al superlativo.",
+          "Incorrecto: 'most' se usa con adjetivos largos, no con adjetivos cortos como 'cheap'.",
+          "Incorrecto: 'the cheaper' es comparativo, pero la oración compara con toda la ciudad, por lo que necesita el superlativo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del superlativo.",
+        "prompt": "That was ___ exam of the year.",
+        "options": [
+          "the difficultest",
+          "the more difficult",
+          "most difficult",
+          "the most difficult"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Difficult' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "optionNotes": [
+          "Incorrecto: 'difficultest' no existe; los adjetivos largos no llevan '-est'.",
+          "Incorrecto: 'more' se usa en comparativos, no en superlativos.",
+          "Incorrecto: falta el artículo 'the', que siempre acompaña al superlativo.",
+          "Correcto: 'the most difficult' es el superlativo de un adjetivo largo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del superlativo.",
+        "prompt": "He's ___ student in the class.",
+        "options": [
+          "the most bad",
+          "the worse",
+          "the baddest",
+          "the worst"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Bad' es irregular; su superlativo es 'the worst', no se forma con '-est' ni con 'most'.",
+        "optionNotes": [
+          "Incorrecto: 'most bad' no es correcto; 'bad' tiene una forma irregular, no se usa 'most'.",
+          "Incorrecto: 'the worse' es comparativo, pero la oración compara con toda la clase, por lo que necesita el superlativo.",
+          "Incorrecto: 'baddest' no existe porque 'bad' es irregular.",
+          "Correcto: 'the worst' es el superlativo irregular de 'bad'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el superlativo correcto del adjetivo entre paréntesis.",
+        "sentence": "This is ___ apartment in the building.",
+        "hint": "(big)",
+        "answers": [
+          "the biggest"
+        ],
+        "explanation": "'Big' es un adjetivo corto; su superlativo duplica la consonante final y agrega '-est'.",
+        "wrongAnswers": [
+          {
+            "answer": "the most big",
+            "why": "'Big' es un adjetivo corto; su superlativo se forma con '-est', no con 'most'."
+          },
+          {
+            "answer": "the biggerest",
+            "why": "No existe esa forma; el superlativo correcto de 'big' es 'the biggest'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el superlativo correcto del adjetivo entre paréntesis.",
+        "sentence": "Bariloche is ___ place I know.",
+        "hint": "(beautiful)",
+        "answers": [
+          "the most beautiful"
+        ],
+        "explanation": "'Beautiful' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "the beautifulest",
+            "why": "'Beautiful' es un adjetivo largo; su superlativo se forma con 'the most', no con '-est'."
+          },
+          {
+            "answer": "the more beautiful",
+            "why": "'More' se usa en comparativos; para el superlativo corresponde 'the most'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el superlativo correcto del adjetivo entre paréntesis.",
+        "sentence": "Martín is ___ player in the team.",
+        "hint": "(good)",
+        "answers": [
+          "the best"
+        ],
+        "explanation": "'Good' es irregular; su superlativo es 'the best'.",
+        "wrongAnswers": [
+          {
+            "answer": "the goodest",
+            "why": "'Good' es irregular; su superlativo es 'the best', no 'goodest'."
+          },
+          {
+            "answer": "the most good",
+            "why": "'Good' tiene una forma irregular; no se usa 'most' con este adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el superlativo correcto del adjetivo entre paréntesis.",
+        "sentence": "This restaurant is ___ one in the neighborhood.",
+        "hint": "(expensive)",
+        "answers": [
+          "the most expensive"
+        ],
+        "explanation": "'Expensive' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "the expensivest",
+            "why": "'Expensive' es un adjetivo largo; su superlativo se forma con 'the most', no con '-est'."
+          },
+          {
+            "answer": "the more expensive",
+            "why": "'More' se usa en comparativos; para el superlativo corresponde 'the most'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el superlativo correcto del adjetivo entre paréntesis.",
+        "sentence": "That was ___ interview I ever had.",
+        "hint": "(bad)",
+        "answers": [
+          "the worst"
+        ],
+        "explanation": "'Bad' es irregular; su superlativo es 'the worst'.",
+        "wrongAnswers": [
+          {
+            "answer": "the baddest",
+            "why": "'Bad' es irregular; su superlativo es 'the worst', no 'baddest'."
+          },
+          {
+            "answer": "the most bad",
+            "why": "'Bad' tiene una forma irregular; no se usa 'most' con este adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el superlativo correcto del adjetivo entre paréntesis.",
+        "sentence": "My new office is ___ from home.",
+        "hint": "(far)",
+        "answers": [
+          "the farthest",
+          "the furthest"
+        ],
+        "explanation": "'Far' es irregular; su superlativo es 'the farthest' o 'the furthest'.",
+        "wrongAnswers": [
+          {
+            "answer": "the most far",
+            "why": "'Far' es irregular; su superlativo es 'the farthest' o 'the furthest', no se forma con 'most'."
+          },
+          {
+            "answer": "the farest",
+            "why": "No existe esa forma; el superlativo correcto de 'far' es irregular: 'farthest' o 'furthest'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta con superlativo.",
+        "sentence": "This is the biggest apartment in the building.",
+        "alternatives": [],
+        "translation": "Este es el departamento más grande del edificio.",
+        "explanation": "'Big' es un adjetivo corto; su superlativo es 'the biggest', y con edificios o lugares se usa 'in'.",
+        "tokens": [
+          "is",
+          "in",
+          "biggest",
+          "This",
+          "the",
+          "building",
+          "the",
+          "apartment"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta con superlativo.",
+        "sentence": "Bariloche is the most beautiful place I know.",
+        "alternatives": [],
+        "translation": "Bariloche es el lugar más lindo que conozco.",
+        "explanation": "'Beautiful' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "tokens": [
+          "know",
+          "is",
+          "the",
+          "most",
+          "Bariloche",
+          "beautiful",
+          "I",
+          "place"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta con superlativo.",
+        "sentence": "Martín is the best player in the team.",
+        "alternatives": [],
+        "translation": "Martín es el mejor jugador del equipo.",
+        "explanation": "'Good' es irregular y su superlativo es 'the best'; con grupos como un equipo se usa 'in'.",
+        "tokens": [
+          "in",
+          "best",
+          "team",
+          "Martín",
+          "is",
+          "the",
+          "player",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta con superlativo.",
+        "sentence": "This restaurant is the most expensive one in the neighborhood.",
+        "alternatives": [],
+        "translation": "Este restaurante es el más caro del barrio.",
+        "explanation": "'Expensive' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "tokens": [
+          "expensive",
+          "neighborhood",
+          "restaurant",
+          "is",
+          "the",
+          "most",
+          "in",
+          "the",
+          "This",
+          "one"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta con superlativo.",
+        "sentence": "That was the worst interview I ever had.",
+        "alternatives": [],
+        "translation": "Esa fue la peor entrevista que tuve.",
+        "explanation": "'Bad' es irregular; su superlativo es 'the worst'.",
+        "tokens": [
+          "That",
+          "ever",
+          "worst",
+          "had",
+          "interview",
+          "I",
+          "the",
+          "was"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el superlativo.",
+        "sentence": "This is the most big apartment in the building.",
+        "answers": [
+          "This is the biggest apartment in the building."
+        ],
+        "explanation": "'Big' es un adjetivo corto; su superlativo se forma con '-est', no con 'most'.",
+        "wrongAnswers": [
+          {
+            "answer": "This is the bigger apartment in the building.",
+            "why": "'Bigger' es comparativo, pero la oración necesita el superlativo 'biggest' porque compara con todo el edificio."
+          },
+          {
+            "answer": "This is the most biggest apartment in the building.",
+            "why": "No se puede combinar 'most' con la terminación '-est'; se usa una sola forma de superlativo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el superlativo.",
+        "sentence": "Bariloche is the beautifulest place I know.",
+        "answers": [
+          "Bariloche is the most beautiful place I know."
+        ],
+        "explanation": "'Beautiful' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo', no con '-est'.",
+        "wrongAnswers": [
+          {
+            "answer": "Bariloche is the more beautiful place I know.",
+            "why": "'More' se usa en comparativos, pero aquí se necesita el superlativo 'the most beautiful'."
+          },
+          {
+            "answer": "Bariloche is the most beautifulest place I know.",
+            "why": "No se puede combinar 'most' con la terminación '-est'; los adjetivos largos solo usan 'the most + adjetivo'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el superlativo.",
+        "sentence": "Martín is the goodest player in the team.",
+        "answers": [
+          "Martín is the best player in the team."
+        ],
+        "explanation": "'Good' es irregular; su superlativo es 'the best', no 'goodest'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín is the most good player in the team.",
+            "why": "'Good' es irregular; su superlativo es 'best', no se forma con 'most'."
+          },
+          {
+            "answer": "Martín is the better player in the team.",
+            "why": "'Better' es comparativo, pero la oración necesita el superlativo 'best' porque compara con todo el equipo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el superlativo.",
+        "sentence": "This restaurant is the expensivest one in the neighborhood.",
+        "answers": [
+          "This restaurant is the most expensive one in the neighborhood."
+        ],
+        "explanation": "'Expensive' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo', no con '-est'.",
+        "wrongAnswers": [
+          {
+            "answer": "This restaurant is the more expensive one in the neighborhood.",
+            "why": "'More' se usa en comparativos; aquí corresponde el superlativo 'the most expensive'."
+          },
+          {
+            "answer": "This restaurant is the most expensivest one in the neighborhood.",
+            "why": "No se puede combinar 'most' con la terminación '-est'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el superlativo.",
+        "sentence": "He's the tallest player of the team.",
+        "answers": [
+          "He's the tallest player in the team."
+        ],
+        "explanation": "Con grupos como un equipo se usa la preposición 'in', no 'of'.",
+        "wrongAnswers": [
+          {
+            "answer": "He's the taller player of the team.",
+            "why": "'Taller' es comparativo, pero la oración necesita el superlativo 'tallest'; además no corrige la preposición equivocada 'of'."
+          },
+          {
+            "answer": "He's the most tall player of the team.",
+            "why": "'Tall' es un adjetivo corto; su superlativo es 'tallest', no se forma con 'most', y además no corrige la preposición 'of'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el superlativo correcto.",
+        "spanish": "Este es el departamento más barato del edificio.",
+        "answers": [
+          "This is the cheapest apartment in the building."
+        ],
+        "explanation": "'Cheap' es un adjetivo corto; su superlativo es 'the cheapest', y con lugares se usa 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "This is the most cheap apartment in the building.",
+            "why": "'Cheap' es un adjetivo corto; su superlativo se forma con '-est', no con 'most'."
+          },
+          {
+            "answer": "This is the cheapest apartment of the building.",
+            "why": "Con lugares o grupos se usa la preposición 'in', no 'of'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el superlativo correcto.",
+        "spanish": "Bariloche es el lugar más lindo que visité este año.",
+        "answers": [
+          "Bariloche is the most beautiful place I visited this year."
+        ],
+        "explanation": "'Beautiful' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Bariloche is the beautifulest place I visited this year.",
+            "why": "'Beautiful' es un adjetivo largo; su superlativo se forma con 'the most', no con '-est'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el superlativo correcto.",
+        "spanish": "Martín es el mejor jugador del equipo.",
+        "answers": [
+          "Martín is the best player in the team."
+        ],
+        "explanation": "'Good' es irregular; su superlativo es 'the best', y con grupos se usa 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín is the goodest player in the team.",
+            "why": "'Good' es irregular; su superlativo es 'best', no 'goodest'."
+          },
+          {
+            "answer": "Martín is the best player of the team.",
+            "why": "Con grupos como un equipo se usa la preposición 'in', no 'of'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el superlativo correcto.",
+        "spanish": "Esa fue la entrevista más difícil que tuve.",
+        "answers": [
+          "That was the most difficult interview I had.",
+          "That was the most difficult interview I've ever had."
+        ],
+        "explanation": "'Difficult' es un adjetivo largo; su superlativo se forma con 'the most + adjetivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "That was the difficultest interview I had.",
+            "why": "'Difficult' es un adjetivo largo; su superlativo se forma con 'the most', no con '-est'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el superlativo correcto.",
+        "spanish": "Este es el peor restaurante de la ciudad.",
+        "answers": [
+          "This is the worst restaurant in the city."
+        ],
+        "explanation": "'Bad' es irregular; su superlativo es 'the worst', y con lugares se usa 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "This is the baddest restaurant in the city.",
+            "why": "'Bad' es irregular; su superlativo es 'worst', no 'baddest'."
+          },
+          {
+            "answer": "This is the worst restaurant of the city.",
+            "why": "Con lugares se usa la preposición 'in', no 'of'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el superlativo correcto.",
+        "spanish": "Mi nueva oficina es la más lejana de mi casa.",
+        "answers": [
+          "My new office is the farthest from my house.",
+          "My new office is the furthest from my house."
+        ],
+        "explanation": "'Far' es irregular; su superlativo es 'the farthest' o 'the furthest', y se usa con 'from' para indicar distancia desde un punto.",
+        "wrongAnswers": [
+          {
+            "answer": "My new office is the most far from my house.",
+            "why": "'Far' tiene un superlativo irregular, 'farthest' o 'furthest'; no se forma con 'most'."
+          },
+          {
+            "answer": "My new office is the farthest of my house.",
+            "why": "Para indicar distancia desde un lugar se usa 'from', no 'of'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los superlativos.",
+        "text": "Last month, Valentina spent a week in Bariloche. She tried three hotels to decide which one to recommend to her friends. The first hotel, Lake View, was very comfortable, but it was the most expensive in the city. The second hotel, Sunny Rooms, was cheaper, but the rooms were small and dark. The third hotel, Mountain House, was the cheapest of the three, and it had the friendliest staff. Valentina also visited three restaurants. The pizza place near the lake was the most popular with tourists, but the small restaurant in the center had the best food, according to Valentina. It wasn't the cheapest, but it was worth it. She's going back to Mountain House next year.",
+        "questions": [
+          {
+            "prompt": "Which hotel had the friendliest staff?",
+            "options": [
+              "Mountain House",
+              "Sunny Rooms",
+              "Lake View",
+              "The pizza place"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice que Mountain House 'had the friendliest staff', el superlativo de 'friendly'."
+          },
+          {
+            "prompt": "According to Valentina, which restaurant had the best food?",
+            "options": [
+              "Sunny Rooms",
+              "The pizza place near the lake",
+              "Mountain House",
+              "The small restaurant in the center"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice que el restaurante pequeño del centro 'had the best food', el superlativo irregular de 'good'."
+          },
+          {
+            "prompt": "Which hotel was the most expensive in the city?",
+            "options": [
+              "Sunny Rooms",
+              "Mountain House",
+              "Lake View",
+              "All of them had the same price"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que Lake View 'was the most expensive in the city', superlativo de un adjetivo largo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los superlativos.",
+        "text": "Martín works at a small company in Buenos Aires. There are five people in his team: Carla, Diego, Sofía, Pablo, and him. Carla is the oldest member of the team, but she's also the most experienced with new software. Diego is the youngest, and he's the fastest at solving problems. Sofía has the best ideas for new projects, but she isn't the most organized person in the office - that's Pablo. Pablo always finishes his work before the deadline. Martín thinks he's the most patient person in the team, especially when clients call with complicated questions. Next month, the company will choose the best employee of the year, and everyone thinks it will be Pablo or Sofía.",
+        "questions": [
+          {
+            "prompt": "Who is the youngest member of the team?",
+            "options": [
+              "Diego",
+              "Carla",
+              "Pablo",
+              "Sofía"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Diego is the youngest'; 'young' es un adjetivo corto y forma el superlativo regular agregando '-est'."
+          },
+          {
+            "prompt": "According to the text, who is the most organized person in the office?",
+            "options": [
+              "Diego",
+              "Pablo",
+              "Sofía",
+              "Carla"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice que Sofía no es 'the most organized' y que esa es Pablo, superlativo de un adjetivo largo."
+          },
+          {
+            "prompt": "Who does Martín think is the most patient person in the team?",
+            "options": [
+              "Martín himself",
+              "Carla",
+              "Diego",
+              "Sofía"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Martín thinks he's the most patient person in the team', refiriéndose a sí mismo."
+          }
+        ]
+      }
+    ],
+    "as-as": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This apartment in Palermo is ___ the one in Belgrano.",
+        "options": [
+          "as expensive as",
+          "so expensive as",
+          "as more expensive as",
+          "as expensive than"
+        ],
+        "correctIndex": 0,
+        "explanation": "La estructura de igualdad es 'as + adjetivo + as', con el adjetivo en su forma normal, sin 'more' ni '-er'.",
+        "optionNotes": [
+          "Correcto: 'as + adjetivo + as' expresa igualdad, sin cambiar el adjetivo.",
+          "Incorrecto: no se dice 'so expensive as'; la estructura correcta es 'as...as'.",
+          "Incorrecto: no se agrega 'more' dentro de la estructura 'as...as'; el adjetivo va en su forma normal.",
+          "Incorrecto: 'as...than' mezcla dos estructuras distintas; 'as' siempre va con 'as', no con 'than'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The salary at TechNova isn't ___ the salary at the other company.",
+        "options": [
+          "as higher as",
+          "so high as",
+          "as high as",
+          "as high than"
+        ],
+        "correctIndex": 2,
+        "explanation": "En 'not as + adjetivo + as' el adjetivo queda en su forma normal, sin '-er' y sin usar 'so' ni 'than'.",
+        "optionNotes": [
+          "Incorrecto: con 'as...as' el adjetivo no lleva '-er', se usa 'high', no 'higher'.",
+          "Incorrecto: no se usa 'so' en esta estructura; se necesita el primer 'as' también.",
+          "Correcto: la forma negativa es 'not as + adjetivo + as', con el adjetivo en su forma normal 'high'.",
+          "Incorrecto: se mezcla 'as' con 'than', que corresponde a comparativos con '-er' o 'more'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My flight to Bariloche was ___ Mariana's flight to Mendoza.",
+        "options": [
+          "as longer as",
+          "as long as",
+          "so long as",
+          "as long than"
+        ],
+        "correctIndex": 1,
+        "explanation": "'As long as' expresa igualdad de duración; el adjetivo 'long' queda en su forma normal y ambos 'as' deben estar presentes.",
+        "optionNotes": [
+          "Incorrecto: el adjetivo no lleva '-er' en esta estructura, se usa 'long', no 'longer'.",
+          "Correcto: 'as long as' expresa igualdad de duración entre los dos vuelos.",
+          "Incorrecto: falta el primer 'as'; la estructura correcta es 'as...as', no 'so...as'.",
+          "Incorrecto: 'as' no se combina con 'than'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Lucas' gym isn't ___ the one near my house.",
+        "options": [
+          "cheap as as",
+          "as cheap as",
+          "as cheaper as",
+          "so cheaper as"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Not as + adjetivo + as' indica que algo no alcanza el mismo nivel; el adjetivo 'cheap' no lleva '-er'.",
+        "optionNotes": [
+          "Incorrecto: el orden de las palabras está mal, debe ser 'as cheap as'.",
+          "Correcto: 'not as + adjetivo + as' expresa que algo no alcanza el mismo nivel; 'cheap' queda en forma normal.",
+          "Incorrecto: el adjetivo no debe llevar '-er' en esta estructura.",
+          "Incorrecto: combina 'so' con un comparativo en '-er'; ninguna de las dos formas es correcta aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Doctor Pérez said my cholesterol is ___ it was last year.",
+        "options": [
+          "not as higher as",
+          "not as high as",
+          "so high as",
+          "as high than"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Not as + adjetivo + as' indica que el nivel actual es menor que el de antes; el adjetivo queda en su forma normal.",
+        "optionNotes": [
+          "Incorrecto: el adjetivo no lleva '-er' en esta estructura.",
+          "Correcto: 'not as + adjetivo + as' indica que el nivel actual es menor que antes.",
+          "Incorrecto: falta el primer 'as'; además no incluye la negación necesaria para el sentido de la oración.",
+          "Incorrecto: 'as' no se combina con 'than'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Sofía doesn't speak English ___ her sister.",
+        "options": [
+          "as fluently than",
+          "as fluently as",
+          "so fluently as",
+          "as more fluently as"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con adverbios la estructura es la misma: 'as + adverbio + as', sin agregar 'more' ni usar 'so' o 'than'.",
+        "optionNotes": [
+          "Incorrecto: 'as' no se combina con 'than'.",
+          "Correcto: 'as + adverbio + as' compara la fluidez de ambas; el adverbio queda en su forma normal.",
+          "Incorrecto: falta el primer 'as'; no se usa 'so' en esta estructura.",
+          "Incorrecto: no se agrega 'more' dentro de la estructura 'as...as'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el adjetivo correcto, en su forma normal.",
+        "sentence": "This apartment is as ___ as the one in Belgrano.",
+        "hint": "(expensive)",
+        "answers": [
+          "expensive"
+        ],
+        "explanation": "En 'as + adjetivo + as' el adjetivo se usa en su forma normal, sin '-er' ni 'more'.",
+        "wrongAnswers": [
+          {
+            "answer": "expensiver",
+            "why": "El adjetivo no lleva '-er' en la estructura 'as...as', se usa la forma normal."
+          },
+          {
+            "answer": "more expensive",
+            "why": "No se agrega 'more' dentro de 'as...as'; el adjetivo va en su forma normal."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la estructura de comparación correcta.",
+        "sentence": "The bus isn't ___ the train.",
+        "hint": "(fast)",
+        "answers": [
+          "as fast as"
+        ],
+        "explanation": "La negación de igualdad se forma con 'isn't as + adjetivo + as', con el adjetivo en su forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "as faster as",
+            "why": "El adjetivo no lleva '-er' en la estructura 'as...as'."
+          },
+          {
+            "answer": "faster than",
+            "why": "Cambia a la estructura de comparativo con '-er' y 'than', en vez de usar 'as...as' para igualdad/desigualdad."
+          },
+          {
+            "answer": "so fast as",
+            "why": "Falta el primer 'as'; no se usa 'so' en esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el adjetivo correcto, en su forma normal.",
+        "sentence": "My new job is as ___ as my old job.",
+        "hint": "(stressful)",
+        "answers": [
+          "stressful"
+        ],
+        "explanation": "En 'as + adjetivo + as' el adjetivo se mantiene en su forma normal, sin comparativos.",
+        "wrongAnswers": [
+          {
+            "answer": "more stressful",
+            "why": "No se agrega 'more' dentro de la estructura 'as...as'."
+          },
+          {
+            "answer": "stressfuler",
+            "why": "'Stressful' no admite el sufijo '-er'; además esta estructura usa el adjetivo en forma normal."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la estructura de comparación correcta.",
+        "sentence": "Bariloche isn't ___ Ushuaia in winter.",
+        "hint": "(cold)",
+        "answers": [
+          "as cold as"
+        ],
+        "explanation": "La negación de igualdad se forma con 'isn't as + adjetivo + as', manteniendo el adjetivo en forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "as colder as",
+            "why": "El adjetivo no lleva '-er' en la estructura 'as...as'."
+          },
+          {
+            "answer": "colder than",
+            "why": "Cambia a la estructura de comparativo con '-er' y 'than', en vez de 'as...as'."
+          },
+          {
+            "answer": "so cold as",
+            "why": "Falta el primer 'as'; no se usa 'so' en esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el adverbio correcto, en su forma normal.",
+        "sentence": "Sofía doesn't speak German as ___ as English.",
+        "hint": "(fluently)",
+        "answers": [
+          "fluently"
+        ],
+        "explanation": "Con verbos se usa el adverbio dentro de 'as + adverbio + as', en su forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "more fluently",
+            "why": "No se agrega 'more' dentro de la estructura 'as...as'."
+          },
+          {
+            "answer": "fluent",
+            "why": "Con el verbo 'speak' se necesita el adverbio 'fluently', no el adjetivo 'fluent'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el adjetivo correcto, en su forma normal.",
+        "sentence": "The second interview was as ___ as the first one.",
+        "hint": "(difficult)",
+        "answers": [
+          "difficult"
+        ],
+        "explanation": "En 'as + adjetivo + as' el adjetivo se mantiene en su forma normal, sin comparativos.",
+        "wrongAnswers": [
+          {
+            "answer": "more difficult",
+            "why": "No se agrega 'more' dentro de la estructura 'as...as'."
+          },
+          {
+            "answer": "difficulter",
+            "why": "'Difficult' no admite el sufijo '-er'; esta estructura usa el adjetivo en forma normal."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "This apartment is as expensive as the one in Belgrano.",
+        "alternatives": [],
+        "translation": "Este departamento es tan caro como el de Belgrano.",
+        "explanation": "La estructura 'as + adjetivo + as' compara dos cosas en igualdad; el adjetivo 'expensive' no cambia de forma.",
+        "tokens": [
+          "is",
+          "as",
+          "apartment",
+          "Belgrano",
+          "expensive",
+          "one",
+          "This",
+          "in",
+          "the",
+          "as"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The bus isn't as fast as the train.",
+        "alternatives": [],
+        "translation": "El colectivo no es tan rápido como el tren.",
+        "explanation": "La negación de igualdad usa 'isn't as + adjetivo + as', con el adjetivo en forma normal.",
+        "tokens": [
+          "the",
+          "isn't",
+          "as",
+          "train",
+          "bus",
+          "as",
+          "The",
+          "fast"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My new job isn't as stressful as my old job.",
+        "alternatives": [],
+        "translation": "Mi nuevo trabajo no es tan estresante como mi viejo trabajo.",
+        "explanation": "'Not as + adjetivo + as' expresa que algo no llega al mismo nivel que otra cosa.",
+        "tokens": [
+          "new",
+          "as",
+          "stressful",
+          "job",
+          "as",
+          "job",
+          "my",
+          "isn't",
+          "My",
+          "old"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Bariloche isn't as cold as Ushuaia in winter.",
+        "alternatives": [],
+        "translation": "Bariloche no es tan frío como Ushuaia en invierno.",
+        "explanation": "'Not as + adjetivo + as' compara el frío de dos lugares, con el adjetivo en su forma normal.",
+        "tokens": [
+          "as",
+          "isn't",
+          "as",
+          "Ushuaia",
+          "Bariloche",
+          "winter",
+          "in",
+          "cold"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sofía doesn't speak German as fluently as English.",
+        "alternatives": [],
+        "translation": "Sofía no habla alemán tan fluido como inglés.",
+        "explanation": "Con verbos de habilidad se usa el adverbio dentro de 'as + adverbio + as' para comparar el nivel.",
+        "tokens": [
+          "speak",
+          "as",
+          "as",
+          "doesn't",
+          "Sofía",
+          "German",
+          "fluently",
+          "English"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'as...as'.",
+        "sentence": "This apartment is as expensiver as the one in Belgrano.",
+        "answers": [
+          "This apartment is as expensive as the one in Belgrano."
+        ],
+        "explanation": "En la estructura 'as...as' el adjetivo va en su forma normal, sin '-er'; lo correcto es 'expensive'.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment is more expensiver as the one in Belgrano.",
+            "why": "Agrega 'more' y mantiene el '-er', duplicando el error en el adjetivo."
+          },
+          {
+            "answer": "This apartment is as expensiver than the one in Belgrano.",
+            "why": "Cambia el segundo 'as' por 'than' pero no corrige el adjetivo, que sigue mal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'as...as'.",
+        "sentence": "The bus isn't as faster as the train.",
+        "answers": [
+          "The bus isn't as fast as the train.",
+          "The bus is not as fast as the train."
+        ],
+        "explanation": "El adjetivo dentro de 'as...as' no lleva '-er'; lo correcto es 'fast'.",
+        "wrongAnswers": [
+          {
+            "answer": "The bus isn't faster as the train.",
+            "why": "Quita el primer 'as' en vez de corregir el adjetivo; la estructura necesita los dos 'as'."
+          },
+          {
+            "answer": "The bus isn't as fast than the train.",
+            "why": "Cambia el segundo 'as' por 'than', lo que forma una estructura inválida."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'as...as'.",
+        "sentence": "My new job is as stressfuler as my old job.",
+        "answers": [
+          "My new job is as stressful as my old job."
+        ],
+        "explanation": "'Stressful' no admite '-er'; en 'as...as' el adjetivo va en su forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "My new job is more stressfuler as my old job.",
+            "why": "Agrega 'more' y mantiene el error en el adjetivo, que ya estaba mal formado."
+          },
+          {
+            "answer": "My new job is as stressful than my old job.",
+            "why": "Cambia el segundo 'as' por 'than', formando una estructura inválida."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'as...as'.",
+        "sentence": "Bariloche isn't as colder as Ushuaia in winter.",
+        "answers": [
+          "Bariloche isn't as cold as Ushuaia in winter.",
+          "Bariloche is not as cold as Ushuaia in winter."
+        ],
+        "explanation": "El adjetivo dentro de 'as...as' no lleva '-er'; lo correcto es 'cold'.",
+        "wrongAnswers": [
+          {
+            "answer": "Bariloche isn't so colder as Ushuaia in winter.",
+            "why": "Cambia el primer 'as' por 'so' pero no corrige el adjetivo, que sigue mal."
+          },
+          {
+            "answer": "Bariloche isn't as colder than Ushuaia in winter.",
+            "why": "Cambia el segundo 'as' por 'than' sin corregir el adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'as...as'.",
+        "sentence": "Sofía doesn't speak German as fluentlier as English.",
+        "answers": [
+          "Sofía doesn't speak German as fluently as English."
+        ],
+        "explanation": "'Fluently' ya es un adverbio y no admite '-er'; la forma 'fluentlier' no existe.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía doesn't speak German more fluentlier as English.",
+            "why": "Agrega 'more' y mantiene el error en el adverbio, que ya estaba mal formado."
+          },
+          {
+            "answer": "Sofía doesn't speak German as fluently than English.",
+            "why": "Cambia el segundo 'as' por 'than', formando una estructura inválida."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'as...as'.",
+        "spanish": "Este departamento es tan caro como el de Belgrano.",
+        "answers": [
+          "This apartment is as expensive as the one in Belgrano."
+        ],
+        "explanation": "Para expresar igualdad se usa 'as + adjetivo + as', con el adjetivo en su forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment is more expensive as the one in Belgrano.",
+            "why": "Mezcla el comparativo 'more' con 'as', una estructura inválida para expresar igualdad."
+          },
+          {
+            "answer": "This apartment is as expensive than the one in Belgrano.",
+            "why": "'As' no se combina con 'than'; el segundo elemento debe ser otro 'as'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'not as...as'.",
+        "spanish": "El colectivo no es tan rápido como el tren.",
+        "answers": [
+          "The bus isn't as fast as the train.",
+          "The bus is not as fast as the train."
+        ],
+        "explanation": "La negación de igualdad se forma con 'isn't/is not as + adjetivo + as'.",
+        "wrongAnswers": [
+          {
+            "answer": "The bus isn't as faster as the train.",
+            "why": "El adjetivo no debe llevar '-er' en la estructura 'as...as'."
+          },
+          {
+            "answer": "The bus isn't so fast as the train.",
+            "why": "Falta el primer 'as'; no se usa 'so' en esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'not as...as'.",
+        "spanish": "Mi nuevo trabajo no es tan estresante como el viejo.",
+        "answers": [
+          "My new job isn't as stressful as my old job.",
+          "My new job is not as stressful as my old job.",
+          "My new job isn't as stressful as the old one.",
+          "My new job is not as stressful as the old one."
+        ],
+        "explanation": "'Not as + adjetivo + as' expresa que algo no alcanza el mismo nivel que otra cosa.",
+        "wrongAnswers": [
+          {
+            "answer": "My new job isn't as stressfuler as my old job.",
+            "why": "El adjetivo no lleva '-er' en esta estructura; 'stressful' no admite ese sufijo."
+          },
+          {
+            "answer": "My new job isn't stressful as my old job.",
+            "why": "Falta el primer 'as' antes del adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'not as...as'.",
+        "spanish": "Bariloche no es tan frío como Ushuaia en invierno.",
+        "answers": [
+          "Bariloche isn't as cold as Ushuaia in winter.",
+          "Bariloche is not as cold as Ushuaia in winter."
+        ],
+        "explanation": "La comparación negativa usa 'not as + adjetivo + as', con el adjetivo en forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "Bariloche isn't as colder as Ushuaia in winter.",
+            "why": "El adjetivo no debe llevar '-er' en la estructura 'as...as'."
+          },
+          {
+            "answer": "Bariloche isn't as cold than Ushuaia in winter.",
+            "why": "'As' no se combina con 'than'; el segundo elemento debe ser otro 'as'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'not as...as'.",
+        "spanish": "Sofía no habla alemán tan fluido como inglés.",
+        "answers": [
+          "Sofía doesn't speak German as fluently as English.",
+          "Sofía does not speak German as fluently as English."
+        ],
+        "explanation": "Con verbos se usa el adverbio dentro de 'as + adverbio + as' para comparar el nivel de habilidad.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía doesn't speak German as fluent as English.",
+            "why": "Con el verbo 'speak' se necesita el adverbio 'fluently', no el adjetivo 'fluent'."
+          },
+          {
+            "answer": "Sofía doesn't speak German more fluently as English.",
+            "why": "Mezcla 'more' con 'as', una combinación inválida para esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'as...as'.",
+        "spanish": "La segunda entrevista fue tan difícil como la primera.",
+        "answers": [
+          "The second interview was as difficult as the first one.",
+          "The second interview was as difficult as the first."
+        ],
+        "explanation": "Para expresar igualdad se usa 'as + adjetivo + as', manteniendo el adjetivo en su forma normal.",
+        "wrongAnswers": [
+          {
+            "answer": "The second interview was as difficulter as the first one.",
+            "why": "El adjetivo no lleva '-er' en la estructura 'as...as'; 'difficult' no admite ese sufijo."
+          },
+          {
+            "answer": "The second interview was so difficult as the first one.",
+            "why": "Falta el primer 'as'; no se usa 'so' en esta estructura."
+          }
+        ]
+      }
+    ],
+    "contables-incontables": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Lucía: Do we have ___ milk left?",
+        "options": [
+          "some",
+          "many",
+          "any",
+          "a"
+        ],
+        "correctIndex": 2,
+        "explanation": "En preguntas comunes con sustantivos incontables como 'milk' se usa 'any', no 'some'.",
+        "optionNotes": [
+          "Incorrecto: 'some' se usa en afirmativas o para ofrecer/pedir, no en preguntas comunes.",
+          "Incorrecto: 'many' se usa con sustantivos contables, y 'milk' es incontable.",
+          "Correcto: 'any' es lo que corresponde en preguntas con incontables.",
+          "Incorrecto: 'milk' es incontable y no puede llevar el artículo 'a'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la respuesta.",
+        "prompt": "Juan: No, we don't have ___ milk. We need to buy some.",
+        "options": [
+          "an",
+          "a",
+          "some",
+          "any"
+        ],
+        "correctIndex": 3,
+        "explanation": "En oraciones negativas se usa 'any', no 'some', incluso con sustantivos incontables.",
+        "optionNotes": [
+          "Incorrecto: mismo motivo, 'milk' no lleva artículo y además no empieza con sonido vocalónico que justifique 'an'.",
+          "Incorrecto: 'milk' es incontable y no lleva el artículo 'a'.",
+          "Incorrecto: en negativas se usa 'any', no 'some'.",
+          "Correcto: 'any' es lo que corresponde en negativas con incontables."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el ofrecimiento.",
+        "prompt": "Would you like ___ coffee, Martín?",
+        "options": [
+          "a",
+          "some",
+          "many",
+          "any"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para ofrecer algo cortésmente se usa 'some', aunque la oración sea una pregunta.",
+        "optionNotes": [
+          "Incorrecto: 'coffee' es incontable en este contexto, no lleva el artículo 'a'.",
+          "Correcto: para ofrecer algo se usa 'some', incluso en preguntas.",
+          "Incorrecto: 'coffee' es incontable, no se usa 'many' con él.",
+          "Incorrecto: 'any' no se usa cuando se ofrece algo; eso se reserva para preguntas comunes o negativas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta de la entrevista.",
+        "prompt": "Interviewer: Do you have ___ questions for me?",
+        "options": [
+          "any",
+          "an",
+          "some",
+          "much"
+        ],
+        "correctIndex": 0,
+        "explanation": "En preguntas comunes (no para ofrecer) se usa 'any', incluso con sustantivos contables en plural como 'questions'.",
+        "optionNotes": [
+          "Correcto: 'any' es lo que corresponde en esta pregunta.",
+          "Incorrecto: 'questions' está en plural, no puede llevar el artículo singular 'an'.",
+          "Incorrecto: en preguntas comunes se usa 'any', no 'some'.",
+          "Incorrecto: 'much' se usa con incontables, y 'questions' es un sustantivo contable."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The doctor gave me ___ advice about my diet.",
+        "options": [
+          "a",
+          "some",
+          "many",
+          "an"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Advice' es incontable y en afirmativas se usa 'some', nunca artículos como 'a' o 'an'.",
+        "optionNotes": [
+          "Incorrecto: 'advice' es incontable, no puede llevar el artículo 'a'.",
+          "Correcto: 'advice' es incontable y en afirmativas corresponde 'some'.",
+          "Incorrecto: 'many' se usa con sustantivos contables en plural, y 'advice' no tiene plural.",
+          "Incorrecto: mismo motivo, 'advice' no lleva artículo 'an'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el pedido.",
+        "prompt": "Juan: Could you give me ___ information about the building?",
+        "options": [
+          "some",
+          "an",
+          "a",
+          "many"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Information' es incontable y para pedir algo se usa 'some', no artículos ni 'many'.",
+        "optionNotes": [
+          "Correcto: 'information' es incontable y se usa 'some' para pedir algo.",
+          "Incorrecto: 'information' es incontable, no lleva el artículo 'an'.",
+          "Incorrecto: mismo motivo que 'an', 'information' no lleva artículo 'a'.",
+          "Incorrecto: 'many' se usa con contables en plural, y 'information' no tiene plural."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración afirmativa con 'some' o 'any'.",
+        "sentence": "We need ___ eggs for the omelette.",
+        "hint": "(contable, afirmativa)",
+        "answers": [
+          "some"
+        ],
+        "explanation": "En afirmativas con sustantivos contables en plural se usa 'some'.",
+        "wrongAnswers": [
+          {
+            "answer": "any",
+            "why": "'any' se usa en negativas y preguntas, no en afirmativas comunes."
+          },
+          {
+            "answer": "a",
+            "why": "'eggs' está en plural, no puede llevar el artículo 'a'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'some' o 'any'.",
+        "sentence": "Is there ___ sugar in the kitchen?",
+        "hint": "(incontable, pregunta)",
+        "answers": [
+          "any"
+        ],
+        "explanation": "En preguntas comunes con sustantivos incontables se usa 'any'.",
+        "wrongAnswers": [
+          {
+            "answer": "some",
+            "why": "En preguntas comunes se usa 'any', no 'some' (salvo cuando se ofrece algo)."
+          },
+          {
+            "answer": "many",
+            "why": "'many' se usa con sustantivos contables, y 'sugar' es incontable."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con 'some' o 'any'.",
+        "sentence": "I don't have ___ coins for the bus.",
+        "hint": "(contable, negativa)",
+        "answers": [
+          "any"
+        ],
+        "explanation": "En negativas con sustantivos contables en plural se usa 'any'.",
+        "wrongAnswers": [
+          {
+            "answer": "some",
+            "why": "En oraciones negativas se usa 'any', no 'some'."
+          },
+          {
+            "answer": "a",
+            "why": "'coins' está en plural, no puede llevar el artículo 'a'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el pedido cortés con 'some' o 'any'.",
+        "sentence": "Can I have ___ water, please?",
+        "hint": "(incontable, pedido)",
+        "answers": [
+          "some"
+        ],
+        "explanation": "Cuando se pide algo cortésmente, se usa 'some' incluso en preguntas.",
+        "wrongAnswers": [
+          {
+            "answer": "any",
+            "why": "Para pedir algo cortésmente se usa 'some', aunque la oración sea una pregunta."
+          },
+          {
+            "answer": "a",
+            "why": "'water' es incontable y no puede llevar el artículo 'a'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con 'some' o 'any'.",
+        "sentence": "There aren't ___ chairs in this room.",
+        "hint": "(contable, negativa)",
+        "answers": [
+          "any"
+        ],
+        "explanation": "En negativas con sustantivos contables en plural se usa 'any'.",
+        "wrongAnswers": [
+          {
+            "answer": "some",
+            "why": "En oraciones negativas se usa 'any', no 'some'."
+          },
+          {
+            "answer": "much",
+            "why": "'much' se usa con sustantivos incontables, y 'chairs' es un sustantivo contable."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración afirmativa con 'some' o 'any'.",
+        "sentence": "She gave me ___ good advice before my interview.",
+        "hint": "(incontable, afirmativa)",
+        "answers": [
+          "some"
+        ],
+        "explanation": "'Advice' es incontable y en afirmativas se usa 'some', nunca artículos.",
+        "wrongAnswers": [
+          {
+            "answer": "an",
+            "why": "'advice' es incontable y no puede llevar el artículo 'an'."
+          },
+          {
+            "answer": "many",
+            "why": "'many' se usa con sustantivos contables en plural, y 'advice' no tiene forma plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Do you have any information about the apartment?",
+        "alternatives": [],
+        "translation": "¿Tenés alguna información sobre el departamento?",
+        "explanation": "'Information' es incontable y en preguntas comunes se usa 'any'.",
+        "tokens": [
+          "information",
+          "about",
+          "any",
+          "have",
+          "apartment",
+          "Do",
+          "you",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There are some apples in the kitchen.",
+        "alternatives": [],
+        "translation": "Hay algunas manzanas en la cocina.",
+        "explanation": "En afirmativas con sustantivos contables en plural se usa 'some'.",
+        "tokens": [
+          "apples",
+          "the",
+          "some",
+          "There",
+          "are",
+          "kitchen",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We don't have any money for the trip.",
+        "alternatives": [],
+        "translation": "No tenemos nada de dinero para el viaje.",
+        "explanation": "'Money' es incontable y en negativas se usa 'any', no 'some'.",
+        "tokens": [
+          "for",
+          "don't",
+          "We",
+          "the",
+          "money",
+          "have",
+          "any",
+          "trip"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Could you give me some advice, please?",
+        "alternatives": [],
+        "translation": "¿Me podés dar algún consejo, por favor?",
+        "explanation": "'Advice' es incontable y para pedir algo se usa 'some'.",
+        "tokens": [
+          "give",
+          "Could",
+          "advice,",
+          "some",
+          "me",
+          "you",
+          "please"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I need some help with my homework.",
+        "alternatives": [],
+        "translation": "Necesito algo de ayuda con mi tarea.",
+        "explanation": "'Help' es incontable y en afirmativas se usa 'some'.",
+        "tokens": [
+          "with",
+          "homework",
+          "I",
+          "help",
+          "my",
+          "need",
+          "some"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I need an advice before my job interview with Mr. Lopez.",
+        "answers": [
+          "I need some advice before my job interview with Mr. Lopez."
+        ],
+        "explanation": "'Advice' es incontable y no puede llevar el artículo 'an'; en afirmativas corresponde 'some advice'.",
+        "wrongAnswers": [
+          {
+            "answer": "I need advices before my job interview with Mr. Lopez.",
+            "why": "'advice' es incontable y no tiene forma plural, no se puede decir 'advices'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Camila asked the manager, 'Do you have some questions for me?'",
+        "answers": [
+          "Camila asked the manager, 'Do you have any questions for me?'"
+        ],
+        "explanation": "En preguntas comunes (no para ofrecer) se usa 'any', no 'some'.",
+        "wrongAnswers": [
+          {
+            "answer": "Camila asked the manager, 'Do you have much questions for me?'",
+            "why": "'much' se usa con incontables, y 'questions' es un sustantivo contable."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Thanks for the informations about the apartment, Sofía.",
+        "answers": [
+          "Thanks for the information about the apartment, Sofía."
+        ],
+        "explanation": "'Information' es incontable y no tiene forma plural, por lo que nunca se dice 'informations'.",
+        "wrongAnswers": [
+          {
+            "answer": "Thanks for the some information about the apartment, Sofía.",
+            "why": "No se puede usar 'the' junto con 'some' antes del mismo sustantivo; el error real es el plural incorrecto 'informations'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "We don't have some eggs for breakfast, so we need to go to the store.",
+        "answers": [
+          "We don't have any eggs for breakfast, so we need to go to the store."
+        ],
+        "explanation": "En oraciones negativas se usa 'any', no 'some'.",
+        "wrongAnswers": [
+          {
+            "answer": "We don't have a eggs for breakfast, so we need to go to the store.",
+            "why": "'eggs' está en plural, no puede llevar el artículo 'a'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "There isn't some water in the fridge, so I'll buy some at the supermarket.",
+        "answers": [
+          "There isn't any water in the fridge, so I'll buy some at the supermarket."
+        ],
+        "explanation": "En oraciones negativas se usa 'any', no 'some'.",
+        "wrongAnswers": [
+          {
+            "answer": "There isn't a water in the fridge, so I'll buy some at the supermarket.",
+            "why": "'water' es incontable y no puede llevar el artículo 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Tenés alguna pregunta para el gerente?",
+        "answers": [
+          "Do you have any questions for the manager?",
+          "Have you got any questions for the manager?"
+        ],
+        "explanation": "En preguntas comunes con sustantivos contables se usa 'any'.",
+        "wrongAnswers": [
+          {
+            "answer": "Do you have some questions for the manager?",
+            "why": "En preguntas comunes (no para ofrecer) se usa 'any', no 'some'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No tenemos nada de leche en la heladera.",
+        "answers": [
+          "We don't have any milk in the fridge.",
+          "We haven't got any milk in the fridge."
+        ],
+        "explanation": "'Milk' es incontable y en negativas corresponde 'any'.",
+        "wrongAnswers": [
+          {
+            "answer": "We don't have some milk in the fridge.",
+            "why": "En negativas se usa 'any', no 'some'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Me darías un poco de información sobre el alquiler?",
+        "answers": [
+          "Could you give me some information about the rent?",
+          "Can you give me some information about the rent?"
+        ],
+        "explanation": "'Information' es incontable y para pedir algo se usa 'some', sin artículos ni plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Could you give me an information about the rent?",
+            "why": "'information' es incontable y no puede llevar el artículo 'an'."
+          },
+          {
+            "answer": "Could you give me some informations about the rent?",
+            "why": "'information' no tiene forma plural, no se dice 'informations'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico me dio algunos consejos sobre mi dieta.",
+        "answers": [
+          "The doctor gave me some advice about my diet."
+        ],
+        "explanation": "'Advice' es incontable; en afirmativas se usa 'some advice', sin plural ni artículo.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor gave me some advices about my diet.",
+            "why": "'advice' es incontable y no tiene forma plural 'advices'."
+          },
+          {
+            "answer": "The doctor gave me an advice about my diet.",
+            "why": "'advice' es incontable, no puede llevar el artículo 'an'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Querés un poco de café, Martín?",
+        "answers": [
+          "Would you like some coffee, Martín?"
+        ],
+        "explanation": "Cuando se ofrece algo cortésmente, se usa 'some' aunque la oración sea una pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Would you like any coffee, Martín?",
+            "why": "Para ofrecer algo se usa 'some', incluso en preguntas, no 'any'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No compramos ningún huevo en el supermercado.",
+        "answers": [
+          "We didn't buy any eggs at the supermarket."
+        ],
+        "explanation": "En negativas con sustantivos contables en plural se usa 'any'.",
+        "wrongAnswers": [
+          {
+            "answer": "We didn't buy some eggs at the supermarket.",
+            "why": "En oraciones negativas se usa 'any', no 'some'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las compras de Lucía y Martín.",
+        "text": "Lucía and her roommate Martín live in an apartment in Mendoza. On Sunday night, Lucía opens the fridge and says, 'We don't have any milk, and we don't have any eggs either.' Martín checks the cupboard and says, 'But we have some rice and some pasta, so we won't starve.' Lucía makes a shopping list: some bread, some cheese, and some fruit. She asks Martín, 'Do you need anything else?' Martín says, 'Yes, can you buy some coffee? We don't have any left, and I need some energy for work tomorrow.' Lucía also remembers they need some advice about a letter from the landlord, so she calls him before going to the supermarket.",
+        "questions": [
+          {
+            "prompt": "What does the fridge NOT have?",
+            "options": [
+              "Coffee and fruit",
+              "Bread and cheese",
+              "Milk and eggs",
+              "Some rice and pasta"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'we don't have any milk, and we don't have any eggs either', usándose 'any' en frases negativas."
+          },
+          {
+            "prompt": "Why does Martín want some coffee?",
+            "options": [
+              "Because Lucía likes it",
+              "Because they have a guest coming",
+              "Because it's cheap",
+              "Because he needs some energy for work"
+            ],
+            "correctIndex": 3,
+            "explanation": "Martín dice que necesita 'some energy for work tomorrow', por eso pide café."
+          },
+          {
+            "prompt": "Which word in the text is uncountable and doesn't use a number or plural?",
+            "options": [
+              "advice",
+              "apples",
+              "letters",
+              "eggs"
+            ],
+            "correctIndex": 0,
+            "explanation": "'Advice' es incontable: nunca lleva 'a/an' ni se usa en plural, por eso aparece como 'some advice'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre la entrevista de Camila.",
+        "text": "Camila is having a job interview at a company in Córdoba. The interviewer, Rodrigo, asks her some questions about her experience. Camila doesn't have any experience in marketing, but she has some experience in sales. Rodrigo asks, 'Do you have any questions for me?' Camila says, 'Yes, I have some questions about the schedule. Also, could you give me some information about the salary?' Rodrigo answers that the company offers some benefits, like health insurance, but he can't give any details about the salary yet. At the end, Camila says, 'Thank you for your time. I don't have any more questions right now, but I would like some advice about the next steps.'",
+        "questions": [
+          {
+            "prompt": "Does Camila have any experience in marketing?",
+            "options": [
+              "Yes, a lot",
+              "No, she doesn't",
+              "Yes, a little",
+              "The text doesn't say"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Camila doesn't have any experience in marketing', usándose 'any' en una frase negativa."
+          },
+          {
+            "prompt": "What does Camila ask Rodrigo for?",
+            "options": [
+              "A contract",
+              "Some information about the salary",
+              "Some coffee",
+              "Some money"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila pide 'some information about the salary', usando 'some' para pedir algo en una pregunta cortés."
+          },
+          {
+            "prompt": "Can Rodrigo give Camila any details about the salary?",
+            "options": [
+              "He doesn't answer",
+              "Yes, but only about benefits",
+              "No, he can't give any details yet",
+              "Yes, he gives her all the details"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'he can't give any details about the salary yet', usándose 'any' en una frase negativa."
+          }
+        ]
+      }
+    ],
+    "much-many": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Martina: How ___ people are coming to the party?",
+        "options": [
+          "a lot",
+          "many",
+          "much",
+          "a little"
+        ],
+        "correctIndex": 1,
+        "explanation": "'People' es un sustantivo contable en plural, por lo que se usa 'How many' para preguntar la cantidad.",
+        "optionNotes": [
+          "Incorrecto: no se dice 'How a lot...?'; la estructura con 'how' requiere 'much' o 'many'.",
+          "Correcto: 'many' es lo que corresponde con 'people' después de 'how'.",
+          "Incorrecto: 'much' se usa con sustantivos incontables, y 'people' es contable.",
+          "Incorrecto: 'a little' es para incontables y tampoco se usa después de 'how' de esta forma."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We don't have ___ time to prepare everything.",
+        "options": [
+          "much",
+          "a little",
+          "many",
+          "a few"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Time' es incontable, y en negativas se usa 'much' para preguntar o negar cantidad.",
+        "optionNotes": [
+          "Correcto: 'much' es lo que corresponde con 'time' en una oración negativa.",
+          "Incorrecto: 'a little' expresa 'un poco' en afirmativas, pero no tiene sentido lógico negar 'a little time' de esta forma.",
+          "Incorrecto: 'many' se usa con sustantivos contables, y 'time' es incontable.",
+          "Incorrecto: 'a few' se usa con sustantivos contables, no con 'time'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I have ___ experience in sales, so I feel confident about this job.",
+        "options": [
+          "a lot of",
+          "few",
+          "much",
+          "many"
+        ],
+        "correctIndex": 0,
+        "explanation": "En afirmativas con sustantivos incontables como 'experience' se prefiere 'a lot of' en lugar de 'much'.",
+        "optionNotes": [
+          "Correcto: en afirmativas se prefiere 'a lot of' para expresar cantidad grande.",
+          "Incorrecto: 'few' (sin 'a') significa 'casi ninguna', un sentido negativo que no corresponde aquí.",
+          "Incorrecto: 'much' se usa sobre todo en negativas y preguntas, no tanto en afirmativas comunes.",
+          "Incorrecto: 'experience' es incontable, no se usa 'many' con él."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I have ___ friends in this city, but they are great.",
+        "options": [
+          "much",
+          "many of",
+          "a few",
+          "a little"
+        ],
+        "correctIndex": 2,
+        "explanation": "'A few' se usa con sustantivos contables como 'friends' para expresar 'unos pocos' con sentido positivo.",
+        "optionNotes": [
+          "Incorrecto: 'much' se usa con incontables y sobre todo en negativas o preguntas.",
+          "Incorrecto: 'many of' necesita un sustantivo definido después (como 'many of my friends'), y esa estructura está incompleta aquí.",
+          "Correcto: 'a few' + contable expresa 'unos pocos', con sentido positivo como en esta oración.",
+          "Incorrecto: 'a little' se usa con sustantivos incontables, y 'friends' es contable."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta del médico.",
+        "prompt": "Doctor: How ___ water do you drink every day?",
+        "options": [
+          "a lot",
+          "much",
+          "a few",
+          "many"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Water' es incontable, por lo que se usa 'How much' para preguntar la cantidad.",
+        "optionNotes": [
+          "Incorrecto: no se dice 'How a lot water...?'; la estructura con 'how' requiere 'much' o 'many'.",
+          "Correcto: 'much' es lo que corresponde con 'water' después de 'how'.",
+          "Incorrecto: 'a few' se usa con contables y no se usa después de 'how' de esta forma.",
+          "Incorrecto: 'many' se usa con sustantivos contables, y 'water' es incontable."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We only have ___ money saved for the deposit.",
+        "options": [
+          "a little",
+          "many",
+          "much",
+          "a few"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Money' es incontable, y 'a little' expresa una cantidad pequeña en afirmativas.",
+        "optionNotes": [
+          "Correcto: 'a little' + incontable expresa 'un poco', que es lo que corresponde aquí.",
+          "Incorrecto: 'many' se usa con sustantivos contables, y 'money' es incontable.",
+          "Incorrecto: 'much' se usa sobre todo en negativas y preguntas, no para afirmar una cantidad pequeña de esta forma.",
+          "Incorrecto: 'a few' se usa con sustantivos contables, y 'money' es incontable."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'much' o 'many'.",
+        "sentence": "How ___ books did you bring for the trip?",
+        "hint": "(contable)",
+        "answers": [
+          "many"
+        ],
+        "explanation": "'Books' es contable, por lo que se usa 'How many' para preguntar la cantidad.",
+        "wrongAnswers": [
+          {
+            "answer": "much",
+            "why": "'much' se usa con sustantivos incontables, y 'books' es un sustantivo contable."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con el cuantificador correcto.",
+        "sentence": "I don't have ___ money left this month.",
+        "hint": "(incontable, negativa)",
+        "answers": [
+          "much"
+        ],
+        "explanation": "'Money' es incontable, y en negativas se usa 'much'.",
+        "wrongAnswers": [
+          {
+            "answer": "many",
+            "why": "'many' se usa con sustantivos contables, y 'money' es incontable."
+          },
+          {
+            "answer": "a few",
+            "why": "'a few' es para sustantivos contables, no para 'money'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el cuantificador correcto para una cantidad pequeña.",
+        "sentence": "We have ___ time before the flight, so let's hurry!",
+        "hint": "(incontable, poco)",
+        "answers": [
+          "a little"
+        ],
+        "explanation": "'Time' es incontable, y 'a little' expresa una cantidad pequeña pero suficiente.",
+        "wrongAnswers": [
+          {
+            "answer": "a few",
+            "why": "'a few' es para sustantivos contables, y 'time' es incontable."
+          },
+          {
+            "answer": "little",
+            "why": "'little' sin 'a' significa 'casi nada', lo que cambiaría el sentido de la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el cuantificador correcto para una cantidad pequeña.",
+        "sentence": "There are ___ seats left, so book now!",
+        "hint": "(contable, poco)",
+        "answers": [
+          "a few"
+        ],
+        "explanation": "'Seats' es contable, y 'a few' expresa 'unos pocos' con sentido positivo.",
+        "wrongAnswers": [
+          {
+            "answer": "a little",
+            "why": "'a little' es para sustantivos incontables, y 'seats' es un sustantivo contable."
+          },
+          {
+            "answer": "few",
+            "why": "'few' sin 'a' significa 'casi ninguno', lo que cambia el sentido positivo de la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración afirmativa con el cuantificador correcto.",
+        "sentence": "She has ___ experience working as a nurse.",
+        "hint": "(incontable, afirmativa)",
+        "answers": [
+          "a lot of"
+        ],
+        "explanation": "En afirmativas con sustantivos incontables se prefiere 'a lot of' en lugar de 'much'.",
+        "wrongAnswers": [
+          {
+            "answer": "much",
+            "why": "'much' se usa sobre todo en negativas y preguntas; en afirmativas se prefiere 'a lot of'."
+          },
+          {
+            "answer": "many",
+            "why": "'experience' es incontable, no se usa 'many' con él."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'much' o 'many'.",
+        "sentence": "How ___ people work in your office?",
+        "hint": "(contable)",
+        "answers": [
+          "many"
+        ],
+        "explanation": "'People' es contable, por lo que se usa 'How many' para preguntar la cantidad.",
+        "wrongAnswers": [
+          {
+            "answer": "much",
+            "why": "'much' se usa con sustantivos incontables, y 'people' es un sustantivo contable."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "How many people were at the party?",
+        "alternatives": [],
+        "translation": "¿Cuánta gente había en la fiesta?",
+        "explanation": "'People' es contable, por lo que se usa 'how many' para preguntar la cantidad.",
+        "tokens": [
+          "party",
+          "many",
+          "were",
+          "at",
+          "the",
+          "How",
+          "people"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I don't have much time today.",
+        "alternatives": [],
+        "translation": "No tengo mucho tiempo hoy.",
+        "explanation": "'Time' es incontable, y en negativas se usa 'much'.",
+        "tokens": [
+          "don't",
+          "have",
+          "much",
+          "time",
+          "today",
+          "I"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I have a few friends in London.",
+        "alternatives": [],
+        "translation": "Tengo algunos amigos en Londres.",
+        "explanation": "'Friends' es contable, y 'a few' expresa 'unos pocos' con sentido positivo.",
+        "tokens": [
+          "have",
+          "a",
+          "friends",
+          "in",
+          "I",
+          "London",
+          "few"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We only have a little money left.",
+        "alternatives": [],
+        "translation": "Solo nos queda un poco de dinero.",
+        "explanation": "'Money' es incontable, y 'a little' expresa una cantidad pequeña.",
+        "tokens": [
+          "only",
+          "have",
+          "money",
+          "little",
+          "We",
+          "left",
+          "a"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has a lot of experience in marketing.",
+        "alternatives": [],
+        "translation": "Ella tiene mucha experiencia en marketing.",
+        "explanation": "En afirmativas con sustantivos incontables como 'experience' se prefiere 'a lot of'.",
+        "tokens": [
+          "marketing",
+          "She",
+          "lot",
+          "of",
+          "a",
+          "has",
+          "experience",
+          "in"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "How much chairs do we need for the meeting?",
+        "answers": [
+          "How many chairs do we need for the meeting?"
+        ],
+        "explanation": "'Chairs' es un sustantivo contable, por lo que se usa 'How many', no 'How much'.",
+        "wrongAnswers": [
+          {
+            "answer": "How much chair do we need for the meeting?",
+            "why": "El problema no es el singular/plural de 'chair', sino el cuantificador: debe ser 'many', no 'much'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I don't have many money for the trip.",
+        "answers": [
+          "I don't have much money for the trip."
+        ],
+        "explanation": "'Money' es incontable, por lo que se usa 'much', no 'many'.",
+        "wrongAnswers": [
+          {
+            "answer": "I don't have a few money for the trip.",
+            "why": "'a few' se usa con sustantivos contables, y 'money' es incontable; además no corresponde en esta negativa."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "We have much friends in this neighborhood.",
+        "answers": [
+          "We have a lot of friends in this neighborhood.",
+          "We have many friends in this neighborhood."
+        ],
+        "explanation": "'Friends' es contable, y en afirmativas se prefiere 'a lot of' o 'many', no 'much'.",
+        "wrongAnswers": [
+          {
+            "answer": "We have much of friends in this neighborhood.",
+            "why": "'much of' no es la forma correcta; además 'friends' es contable y no se usa 'much' con él."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "There are a little apples in the fridge.",
+        "answers": [
+          "There are a few apples in the fridge."
+        ],
+        "explanation": "'Apples' es contable, por lo que se usa 'a few', no 'a little'.",
+        "wrongAnswers": [
+          {
+            "answer": "There are little apples in the fridge.",
+            "why": "'little' sin 'a' significa 'casi ninguna', y además 'little' es para incontables, no para 'apples'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "How many water do you need for the recipe?",
+        "answers": [
+          "How much water do you need for the recipe?"
+        ],
+        "explanation": "'Water' es incontable, por lo que se usa 'How much', no 'How many'.",
+        "wrongAnswers": [
+          {
+            "answer": "How many waters do you need for the recipe?",
+            "why": "'water' es incontable y no tiene forma plural 'waters'; además el cuantificador correcto es 'much', no 'many'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Cuánta gente vino a la entrevista grupal?",
+        "answers": [
+          "How many people came to the group interview?"
+        ],
+        "explanation": "'People' es contable, por lo que se usa 'How many'.",
+        "wrongAnswers": [
+          {
+            "answer": "How much people came to the group interview?",
+            "why": "'people' es contable, se usa 'many', no 'much'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No tengo mucho dinero ahorrado para el alquiler.",
+        "answers": [
+          "I don't have much money saved for the rent."
+        ],
+        "explanation": "'Money' es incontable, por lo que en negativas se usa 'much'.",
+        "wrongAnswers": [
+          {
+            "answer": "I don't have many money saved for the rent.",
+            "why": "'money' es incontable, se usa 'much', no 'many'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tengo unos pocos amigos en esta ciudad, pero son geniales.",
+        "answers": [
+          "I have a few friends in this city, but they're great.",
+          "I have a few friends in this city, but they are great."
+        ],
+        "explanation": "'Friends' es contable, y 'a few' expresa 'unos pocos' con sentido positivo.",
+        "wrongAnswers": [
+          {
+            "answer": "I have a little friends in this city, but they're great.",
+            "why": "'a little' es para sustantivos incontables, y 'friends' es un sustantivo contable."
+          },
+          {
+            "answer": "I have few friends in this city, but they're great.",
+            "why": "'few' sin 'a' tiene un matiz negativo ('casi ninguno'), distinto del sentido positivo de 'unos pocos' que pide la oración."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Solo nos queda un poco de tiempo antes del vuelo.",
+        "answers": [
+          "We only have a little time left before the flight."
+        ],
+        "explanation": "'Time' es incontable, y 'a little' expresa una cantidad pequeña.",
+        "wrongAnswers": [
+          {
+            "answer": "We only have a few time left before the flight.",
+            "why": "'a few' es para sustantivos contables, y 'time' es incontable."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella tiene mucha experiencia trabajando como enfermera.",
+        "answers": [
+          "She has a lot of experience working as a nurse."
+        ],
+        "explanation": "En afirmativas con sustantivos incontables se prefiere 'a lot of' en lugar de 'much'.",
+        "wrongAnswers": [
+          {
+            "answer": "She has much experience working as a nurse.",
+            "why": "'much' se usa sobre todo en negativas y preguntas; en afirmativas se prefiere 'a lot of'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Cuántas sillas necesitamos para la reunión?",
+        "answers": [
+          "How many chairs do we need for the meeting?"
+        ],
+        "explanation": "'Chairs' es contable, por lo que se usa 'How many', no 'How much'.",
+        "wrongAnswers": [
+          {
+            "answer": "How much chairs do we need for the meeting?",
+            "why": "'chairs' es contable, se usa 'many', no 'much'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre la fiesta de Emilia.",
+        "text": "Emilia is organizing a birthday party for her sister in Rosario. She doesn't have much time because the party is tomorrow, so she calls her friend Tomás for help. 'How many chairs do we need?' Tomás asks. Emilia says they don't need many, because only a few people are coming, about ten. 'How much food should we buy?' Tomás asks next. Emilia answers that they don't need a lot of food, just a little bread, a little cheese, and some fruit. She also says they have a few bottles of soda, but they need more. Tomás says he can buy a lot of ice on his way, so the drinks stay cold.",
+        "questions": [
+          {
+            "prompt": "How many people are coming to the party?",
+            "options": [
+              "Nobody",
+              "A lot of people",
+              "The text doesn't say",
+              "Only a few, about ten"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'only a few people are coming, about ten', usándose 'a few' para una cantidad pequeña de algo contable."
+          },
+          {
+            "prompt": "Does Emilia have much time to organize the party?",
+            "options": [
+              "The text doesn't say",
+              "No, she doesn't have much time",
+              "Yes, a lot of time",
+              "She has too much time"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'she doesn't have much time', usándose 'much' con un incontable en una frase negativa."
+          },
+          {
+            "prompt": "What does Tomás offer to buy?",
+            "options": [
+              "A few chairs",
+              "A little soda",
+              "Much bread",
+              "A lot of ice"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice que Tomás 'can buy a lot of ice on his way', usando 'a lot of' en una afirmación."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre la mudanza de Nicolás.",
+        "text": "Nicolás is moving to a new apartment in La Plata next week. His friend Agustina comes to help him pack. 'How many boxes do you need?' she asks. Nicolás says he doesn't need many boxes, just a few, because he doesn't have a lot of furniture. 'How much money did you spend on the move?' Agustina asks. Nicolás answers that he didn't spend much money because his brother lent him a truck. He says he only has a little furniture: a bed, a table, and a few chairs. Agustina says, 'That's good, because moving with a lot of things takes much longer.' Nicolás agrees and they start packing the last boxes together.",
+        "questions": [
+          {
+            "prompt": "How many boxes does Nicolás need?",
+            "options": [
+              "A lot of boxes",
+              "Just a few",
+              "Many boxes",
+              "He doesn't need any boxes"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice que Nicolás 'doesn't need many boxes, just a few', usando 'a few' para una cantidad pequeña de cajas."
+          },
+          {
+            "prompt": "Did Nicolás spend much money on the move?",
+            "options": [
+              "He spent all his money",
+              "Yes, a lot of money",
+              "No, he didn't spend much money",
+              "The text doesn't say"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'he didn't spend much money', usándose 'much' con un incontable en una frase negativa."
+          },
+          {
+            "prompt": "How much furniture does Nicolás have?",
+            "options": [
+              "Only a little furniture",
+              "Many pieces of furniture",
+              "No furniture at all",
+              "A lot of furniture"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice que Nicolás 'only has a little furniture', usando 'a little' para una pequeña cantidad de algo incontable."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -109,6 +109,8 @@ export default function SessionPlayer({
         if (next.status === 'session') {
           const answered = next.session.exercises.find((e) => e.id === exerciseId)
           if (answered?.feedback) play(answered.feedback.correct ? 'correct' : 'wrong')
+          // Le erró la primera vez: queda en el mismo ejercicio para el segundo intento.
+          else if (answered?.retry) play('wrong')
         }
         onView(next)
         setShownId(exerciseId)
@@ -235,7 +237,11 @@ export default function SessionPlayer({
             <div className="exercise-main stack">
               <h3 ref={headingRef} tabIndex={-1} className="exercise-type exercise-heading">
                 {EXERCISE_TYPE_LABELS[current.type]}
+                {current.repeat && ' · otra vez'}
               </h3>
+              {current.repeat && !current.answer && (
+                <p className="muted small">Este te costó: vuelve al final para que lo fijes. No cuenta en el puntaje.</p>
+              )}
               <p>{current.content.instruction}</p>
               <ExerciseInput
                 key={current.id}
@@ -245,6 +251,14 @@ export default function SessionPlayer({
                 locked={!!current.answer}
                 onChange={setDraft}
               />
+              {current.retry && !current.answer && (
+                <div className="notice warn with-icon retry-notice" role="status">
+                  <Icon name="retry" className="glyph" />
+                  <span>
+                    <strong>Todavía no.</strong> {current.retry} Probá de nuevo.
+                  </span>
+                </div>
+              )}
               {current.hint && !current.answer && (
                 <div className="notice with-icon">
                   <Icon name="bulb" className="glyph" />

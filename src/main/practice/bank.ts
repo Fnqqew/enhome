@@ -2,8 +2,8 @@
 // y solo los largos se le piden a Claude, de a uno y en paralelo. Cuando a un subtema le quedan pocos
 // ejercicios sin usar, se generan más en segundo plano.
 
-import { BANK_LOW_WATER, BANK_TARGET, BANK_TYPES, isBankType, type BankType } from '../../shared/bank'
-import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
+import { BANK_LOW_WATER, bankWants, isBankType, splitBankCounts } from '../../shared/bank'
+import type { CurriculumTopic } from '../../shared/curriculum'
 import { mainText, prepareExercise } from '../../shared/exercise-types'
 import type { ExerciseType, GeneratedExercise, StoredExercise } from '../../shared/exercises'
 import { shuffled } from '../../shared/shuffle'
@@ -95,18 +95,16 @@ export class ExerciseBank {
     const id = `${topic.id}/${subtopic.id}`
     if (this.filling.has(id) || this.unused(topic, subtopic.id) >= BANK_LOW_WATER) return null
     this.filling.add(id)
-    const counts = bankCounts(subtopic)
     const seen = [...this.seen(topic.id, subtopic.id)].slice(-40)
-    return generateBankSet({ ...request, counts, avoid: seen, ticket: { priority: 'background' } }, counts, ask)
-      .then((exercises) => this.add(topic.id, subtopic.id, exercises, today))
-      .catch((err) => console.error(`[banco] No se pudo sumar ejercicios a ${id}`, err))
+    const parts = splitBankCounts(bankWants(subtopic, topic.level)).map((counts) =>
+      generateBankSet({ ...request, counts, avoid: seen, ticket: { priority: 'background' } }, counts, ask)
+        .then((exercises) => this.add(topic.id, subtopic.id, exercises, today))
+        .catch((err) => console.error(`[banco] No se pudo sumar ejercicios a ${id}`, err))
+    )
+    return Promise.all(parts)
+      .then(() => undefined)
       .finally(() => this.filling.delete(id))
   }
-}
-
-// Cuántos de cada formato lleva el banco de un subtema (la lectura, solo los días de lectura).
-export function bankCounts(subtopic: Subtopic): Partial<Record<BankType, number>> {
-  return Object.fromEntries(BANK_TYPES.filter((t) => t !== 'reading' || subtopic.focus.includes('reading')).map((t) => [t, BANK_TARGET[t]]))
 }
 
 // El generador de la práctica: cortos del banco (y de Claude lo que falte) y cada largo en su pedido.

@@ -1,0 +1,2738 @@
+{
+  "subtopics": {
+    "afirmativo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Martín ___ at a hospital in Córdoba.",
+        "options": [
+          "working",
+          "work",
+          "works",
+          "is work"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'he/she/it' el verbo lleva -s en presente simple: Martín works.",
+        "optionNotes": [
+          "'working' solo, sin auxiliar, no funciona como presente simple.",
+          "Falta la -s; con 'he' se necesita 'works'.",
+          "Correcto: con 'he' agregamos -s al verbo.",
+          "'is work' no es una forma válida del presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Sofía ___ English every afternoon.",
+        "options": [
+          "is study",
+          "study",
+          "studys",
+          "studies"
+        ],
+        "correctIndex": 3,
+        "explanation": "Los verbos terminados en consonante + y cambian la y por i y agregan -es: study → studies.",
+        "optionNotes": [
+          "'is study' no es la forma correcta del presente simple.",
+          "Falta la -s porque el sujeto es 'she' (Sofía).",
+          "No existe 'studys'; la y se cambia por i antes de -es.",
+          "Correcto: study termina en consonante + y, entonces se escribe studies."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My father ___ a car, but he never drives it.",
+        "options": [
+          "haves",
+          "is having",
+          "has",
+          "have"
+        ],
+        "correctIndex": 2,
+        "explanation": "El verbo 'have' es irregular en tercera persona: he/she/it have → has.",
+        "optionNotes": [
+          "'haves' no existe; la forma irregular es 'has'.",
+          "No se usa presente continuo acá; se necesita el presente simple 'has'.",
+          "Correcto: have se convierte en has con he/she/it.",
+          "Falta la forma irregular; con 'he' es 'has', no 'have'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The train ___ to Rosario at 9 a.m.",
+        "options": [
+          "go",
+          "goed",
+          "goes",
+          "is go"
+        ],
+        "correctIndex": 2,
+        "explanation": "Los verbos terminados en -o agregan -es en tercera persona: go → goes.",
+        "optionNotes": [
+          "Falta la -s porque 'the train' equivale a 'it'.",
+          "'goed' no existe; go es irregular pero en presente simple es 'goes'.",
+          "Correcto: go termina en -o, entonces se agrega -es.",
+          "'is go' no es una forma correcta del presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My parents ___ in a small house near the beach.",
+        "options": [
+          "live",
+          "living",
+          "lives",
+          "is living"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con sujetos plurales como 'my parents' (equivalente a 'they'), el verbo no lleva -s.",
+        "optionNotes": [
+          "Correcto: 'my parents' equivale a they, el verbo queda sin cambios.",
+          "Falta el auxiliar y no es la forma pedida (presente simple).",
+          "Con 'they' no se agrega -s; 'lives' es para he/she/it.",
+          "No corresponde presente continuo en esta oración de hábito."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She ___ the news every night before dinner.",
+        "options": [
+          "watches",
+          "watch",
+          "is watch",
+          "watchs"
+        ],
+        "correctIndex": 0,
+        "explanation": "Los verbos terminados en -ch agregan -es en tercera persona: watch → watches.",
+        "optionNotes": [
+          "Correcto: watch termina en ch, entonces es watches.",
+          "Falta la -s porque el sujeto es 'she'.",
+          "'is watch' no es una forma válida de presente simple.",
+          "'watchs' no existe; después de -ch se agrega -es."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Mr. Pérez ___ as an engineer at a factory in Mendoza.",
+        "hint": "(work)",
+        "answers": [
+          "works"
+        ],
+        "explanation": "Con 'he' (Mr. Pérez) el verbo agrega -s: works.",
+        "wrongAnswers": [
+          {
+            "answer": "work",
+            "why": "Falta la -s; con 'he' el verbo necesita -s."
+          },
+          {
+            "answer": "working",
+            "why": "Sin auxiliar, 'working' no es presente simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "The doctor ___ my blood pressure every visit.",
+        "hint": "(check)",
+        "answers": [
+          "checks"
+        ],
+        "explanation": "Check termina en consonante simple, así que solo se agrega -s: checks.",
+        "wrongAnswers": [
+          {
+            "answer": "check",
+            "why": "Falta la -s porque 'the doctor' equivale a he/she."
+          },
+          {
+            "answer": "checkes",
+            "why": "Check no termina en ch, sh, s, x o o, así que solo se agrega -s, no -es."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "This apartment ___ two bedrooms and a small balcony.",
+        "hint": "(have)",
+        "answers": [
+          "has"
+        ],
+        "explanation": "Have es irregular en tercera persona: he/she/it have → has.",
+        "wrongAnswers": [
+          {
+            "answer": "haves",
+            "why": "No existe 'haves'; have es irregular y se convierte en has."
+          },
+          {
+            "answer": "have",
+            "why": "Falta la forma irregular; con 'it' corresponde 'has'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Sofía ___ to the gym on Tuesdays and Thursdays.",
+        "hint": "(go)",
+        "answers": [
+          "goes"
+        ],
+        "explanation": "Go termina en -o, así que en tercera persona se agrega -es: goes.",
+        "wrongAnswers": [
+          {
+            "answer": "go",
+            "why": "Falta la -s porque el sujeto es 'she'."
+          },
+          {
+            "answer": "goed",
+            "why": "Go es irregular; la forma de presente simple en tercera persona es goes, no goed."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "This train ___ in three cities before Buenos Aires.",
+        "hint": "(stop)",
+        "answers": [
+          "stops"
+        ],
+        "explanation": "Stop es un verbo regular que solo agrega -s en tercera persona: stops.",
+        "wrongAnswers": [
+          {
+            "answer": "stop",
+            "why": "Falta la -s porque 'this train' equivale a it."
+          },
+          {
+            "answer": "stopes",
+            "why": "Stop no termina en s, sh, ch, x, o, y; solo necesita -s, no -es."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "My sister ___ the dishes after every dinner.",
+        "hint": "(do)",
+        "answers": [
+          "does"
+        ],
+        "explanation": "Do es irregular en tercera persona: he/she/it do → does.",
+        "wrongAnswers": [
+          {
+            "answer": "dos",
+            "why": "No existe 'dos' como verbo; la forma correcta es does."
+          },
+          {
+            "answer": "do",
+            "why": "Falta la forma irregular; con 'she' es does, no do."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Lucía usually walks to work in the morning.",
+        "alternatives": [
+          "Usually, Lucía walks to work in the morning."
+        ],
+        "translation": "Lucía generalmente camina al trabajo por la mañana.",
+        "explanation": "El adverbio de frecuencia 'usually' va antes del verbo principal o al inicio de la oración; con 'Lucía' (she) el verbo lleva -s: walks.",
+        "tokens": [
+          "to",
+          "Lucía",
+          "work",
+          "the",
+          "in",
+          "usually",
+          "walks",
+          "morning"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My brother often cooks dinner for the family.",
+        "alternatives": [
+          "Often, my brother cooks dinner for the family."
+        ],
+        "translation": "Mi hermano a menudo cocina la cena para la familia.",
+        "explanation": "El adverbio 'often' se coloca antes del verbo principal; 'cooks' lleva -s porque el sujeto es 'he' (my brother).",
+        "tokens": [
+          "often",
+          "dinner",
+          "cooks",
+          "the",
+          "brother",
+          "for",
+          "My",
+          "family"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The pharmacy closes at nine every night.",
+        "alternatives": [],
+        "translation": "La farmacia cierra a las nueve todas las noches.",
+        "explanation": "'The pharmacy' equivale a 'it', por eso el verbo close agrega -s: closes.",
+        "tokens": [
+          "every",
+          "night",
+          "at",
+          "nine",
+          "pharmacy",
+          "closes",
+          "The"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She always checks her email before breakfast.",
+        "alternatives": [],
+        "translation": "Ella siempre revisa su correo antes del desayuno.",
+        "explanation": "El adverbio 'always' va antes del verbo principal; 'checks' lleva -s porque el sujeto es 'she'.",
+        "tokens": [
+          "breakfast",
+          "email",
+          "always",
+          "She",
+          "before",
+          "her",
+          "checks"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Mr. García rarely eats breakfast before work.",
+        "alternatives": [],
+        "translation": "El señor García rara vez desayuna antes del trabajo.",
+        "explanation": "Con sujetos de tercera persona singular como 'Mr. García' (he), el verbo 'eat' se convierte en 'eats'.",
+        "tokens": [
+          "rarely",
+          "eats",
+          "breakfast",
+          "work",
+          "before",
+          "García",
+          "Mr."
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "My cousin lives in Rosario and work at a bank.",
+        "answers": [
+          "My cousin lives in Rosario and works at a bank."
+        ],
+        "explanation": "Como el sujeto es 'my cousin' (he/she), el verbo 'work' también debe llevar -s: works.",
+        "wrongAnswers": [
+          {
+            "answer": "My cousins live in Rosario and work at a bank.",
+            "why": "Cambiar 'cousin' a plural no corrige el error; el problema real es que falta la -s en 'work'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "Martina studys French at a language school.",
+        "answers": [
+          "Martina studies French at a language school."
+        ],
+        "explanation": "Los verbos terminados en consonante + y cambian la y por i y agregan -es: study → studies.",
+        "wrongAnswers": [
+          {
+            "answer": "Martina study French at a language school.",
+            "why": "Quitar la -s no es correcto; el sujeto 'Martina' (she) necesita el verbo con -s: studies."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "The museum open at ten o'clock every day.",
+        "answers": [
+          "The museum opens at ten o'clock every day."
+        ],
+        "explanation": "'The museum' equivale a 'it', por lo tanto el verbo 'open' debe llevar -s: opens.",
+        "wrongAnswers": [
+          {
+            "answer": "The museums open at ten o'clock every day.",
+            "why": "Cambiar 'museum' a plural evita la regla, pero el error real es la falta de -s en 'open' porque el sujeto original es singular (it)."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "My uncle haves a small farm near Córdoba.",
+        "answers": [
+          "My uncle has a small farm near Córdoba."
+        ],
+        "explanation": "El verbo 'have' es irregular en tercera persona: he/she/it have → has.",
+        "wrongAnswers": [
+          {
+            "answer": "My uncle have a small farm near Córdoba.",
+            "why": "'have' sin -s tampoco es correcto; la forma irregular necesaria es 'has', no simplemente quitar la terminación."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "The train goes to Rosario, and it stop in two small towns.",
+        "answers": [
+          "The train goes to Rosario, and it stops in two small towns."
+        ],
+        "explanation": "'It' requiere -s en el verbo: stop → stops, igual que 'goes' ya está correctamente formado.",
+        "wrongAnswers": [
+          {
+            "answer": "The train go to Rosario, and it stop in two small towns.",
+            "why": "Quitar la -s de 'goes' hace incorrecta la primera parte; el único error real está en 'stop', que debe ser 'stops'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermana trabaja en un hospital en Rosario.",
+        "answers": [
+          "My sister works in a hospital in Rosario.",
+          "My sister works at a hospital in Rosario."
+        ],
+        "explanation": "Con 'she' el verbo 'work' agrega -s: works.",
+        "wrongAnswers": [
+          {
+            "answer": "My sister work in a hospital in Rosario.",
+            "why": "Falta la -s en el verbo porque el sujeto es 'she'."
+          },
+          {
+            "answer": "My sister is working in a hospital in Rosario.",
+            "why": "Se usa presente continuo en lugar de presente simple para hablar de un hecho habitual."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Él estudia inglés todos los lunes.",
+        "answers": [
+          "He studies English every Monday."
+        ],
+        "explanation": "Study termina en consonante + y, entonces cambia a studies en tercera persona.",
+        "wrongAnswers": [
+          {
+            "answer": "He study English every Monday.",
+            "why": "Falta la -s; con 'he' el verbo necesita la forma 'studies'."
+          },
+          {
+            "answer": "He studys English every Monday.",
+            "why": "La y se cambia por i antes de agregar -es: studies, no studys."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nosotros vivimos cerca de la estación de trenes.",
+        "answers": [
+          "We live near the train station."
+        ],
+        "explanation": "Con 'we' el verbo queda en su forma base, sin -s: live.",
+        "wrongAnswers": [
+          {
+            "answer": "We lives near the train station.",
+            "why": "Con 'we' el verbo no lleva -s; esa terminación es solo para he/she/it."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La farmacia cierra a las nueve de la noche.",
+        "answers": [
+          "The pharmacy closes at nine at night.",
+          "The pharmacy closes at nine p.m."
+        ],
+        "explanation": "'The pharmacy' funciona como 'it', por lo tanto el verbo agrega -s: closes.",
+        "wrongAnswers": [
+          {
+            "answer": "The pharmacy close at nine at night.",
+            "why": "Falta la -s; 'the pharmacy' equivale a 'it' y necesita el verbo con -s."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi papá tiene un auto viejo, pero funciona bien.",
+        "answers": [
+          "My dad has an old car, but it works well.",
+          "My father has an old car, but it works well."
+        ],
+        "explanation": "Have cambia a has con he/she/it; 'it' (el auto) también necesita -s en 'works'.",
+        "wrongAnswers": [
+          {
+            "answer": "My dad have an old car, but it works well.",
+            "why": "Have es irregular; con 'he' la forma correcta es has, no have."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Los chicos van a la escuela a las ocho.",
+        "answers": [
+          "The kids go to school at eight.",
+          "The children go to school at eight.",
+          "The kids go to school at eight o'clock."
+        ],
+        "explanation": "Con sujetos plurales (they) el verbo va en su forma base: go, sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "The kids goes to school at eight.",
+            "why": "Con sujeto plural 'the kids' (they) el verbo no lleva -s; 'goes' es solo para he/she/it."
+          }
+        ]
+      }
+    ],
+    "negativo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Mariana ___ like spicy food, so she never orders tacos.",
+        "options": [
+          "isn't",
+          "not",
+          "doesn't",
+          "don't"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "optionNotes": [
+          "Incorrecto: 'isn't' niega el verbo 'be', pero acá se necesita negar el verbo 'like'.",
+          "Incorrecto: 'not' solo no alcanza para negar un verbo en presente simple, falta el auxiliar.",
+          "Correcto: con 'she' se usa 'doesn't' para negar el verbo en presente simple.",
+          "Incorrecto: 'Mariana' es tercera persona singular (she), corresponde 'doesn't', no 'don't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My parents ___ live in Mendoza anymore; they moved to Rosario.",
+        "options": [
+          "doesn't",
+          "don't",
+          "not",
+          "aren't"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con I/you/we/they se usa 'don't' para negar en presente simple.",
+        "optionNotes": [
+          "Incorrecto: 'doesn't' es para he/she/it, no para 'they'.",
+          "Correcto: 'my parents' equivale a 'they', por eso corresponde 'don't'.",
+          "Incorrecto: falta el auxiliar 'don't' para negar el verbo en presente simple.",
+          "Incorrecto: 'aren't' niega el verbo 'be', no sirve para negar el verbo 'live'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The 9 AM train ___ stop at this station on weekends.",
+        "options": [
+          "not",
+          "don't",
+          "isn't",
+          "doesn't"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'doesn't' para negar el verbo.",
+          "Incorrecto: 'the train' equivale a 'it', tercera persona singular, corresponde 'doesn't'.",
+          "Incorrecto: 'isn't' niega el verbo 'be', pero acá se necesita negar el verbo 'stop'.",
+          "Correcto: con 'it' se usa 'doesn't' para negar el verbo en presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ have time to finish the report before the meeting.",
+        "options": [
+          "not",
+          "am not",
+          "don't",
+          "doesn't"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con I/you/we/they se usa 'don't' para negar en presente simple.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'don't' para negar el verbo.",
+          "Incorrecto: 'am not' niega el verbo 'be', no sirve para negar el verbo 'have'.",
+          "Correcto: con 'I' se usa 'don't' para negar el verbo en presente simple.",
+          "Incorrecto: 'doesn't' es para he/she/it, no para 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She doesn't ___ coffee in the morning; she prefers tea.",
+        "options": [
+          "drink",
+          "drinking",
+          "to drink",
+          "drinks"
+        ],
+        "correctIndex": 0,
+        "explanation": "La -s de la tercera persona pasa al auxiliar 'doesn't'; el verbo siempre queda en forma base.",
+        "optionNotes": [
+          "Correcto: después de 'doesn't' el verbo va en forma base, sin -s.",
+          "Incorrecto: no se usa gerundio después de 'doesn't' en presente simple negativo.",
+          "Incorrecto: no se usa el infinitivo con 'to' después de 'doesn't'.",
+          "Incorrecto: la -s ya está en 'doesn't', no se repite en el verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ understand the instructions for the visa application.",
+        "options": [
+          "doesn't",
+          "don't",
+          "not",
+          "aren't"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con I/you/we/they se usa 'don't' para negar en presente simple.",
+        "optionNotes": [
+          "Incorrecto: 'doesn't' es para he/she/it, no para 'we'.",
+          "Correcto: con 'we' se usa 'don't' para negar el verbo en presente simple.",
+          "Incorrecto: falta el auxiliar 'don't' para negar el verbo.",
+          "Incorrecto: 'aren't' niega el verbo 'be', no sirve para negar el verbo 'understand'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con don't o doesn't.",
+        "sentence": "Tomás ___ eat breakfast before going to work.",
+        "hint": "(negar presente simple)",
+        "answers": [
+          "doesn't"
+        ],
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "don't",
+            "why": "'Tomás' es tercera persona singular (he), corresponde 'doesn't', no 'don't'."
+          },
+          {
+            "answer": "not",
+            "why": "Falta el auxiliar 'doesn't' para negar el verbo en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con don't o doesn't.",
+        "sentence": "I ___ speak French, so I need a translator for the meeting in Paris.",
+        "hint": "(negar presente simple)",
+        "answers": [
+          "don't"
+        ],
+        "explanation": "Con I/you/we/they se usa 'don't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't",
+            "why": "Con 'I' no se usa 'doesn't'; corresponde 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con don't o doesn't.",
+        "sentence": "My sister ___ drive, so she always takes the bus to work.",
+        "hint": "(negar presente simple)",
+        "answers": [
+          "doesn't"
+        ],
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "don't",
+            "why": "'My sister' es tercera persona singular (she), corresponde 'doesn't', no 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con don't o doesn't.",
+        "sentence": "This restaurant ___ accept credit cards, only cash.",
+        "hint": "(negar presente simple)",
+        "answers": [
+          "doesn't"
+        ],
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "don't",
+            "why": "'This restaurant' equivale a 'it', tercera persona singular, corresponde 'doesn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con don't o doesn't.",
+        "sentence": "We ___ have enough money for a new apartment this year.",
+        "hint": "(negar presente simple)",
+        "answers": [
+          "don't"
+        ],
+        "explanation": "Con I/you/we/they se usa 'don't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't",
+            "why": "'We' es plural, corresponde 'don't', no 'doesn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo 'live'.",
+        "sentence": "She doesn't ___ in this neighborhood anymore; she moved last month.",
+        "hint": "(vivir)",
+        "answers": [
+          "live"
+        ],
+        "explanation": "Después de 'doesn't' el verbo siempre va en forma base, sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "lives",
+            "why": "Después de 'doesn't' el verbo va en forma base, sin -s."
+          },
+          {
+            "answer": "living",
+            "why": "No se usa gerundio después de 'doesn't' en presente simple negativo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Camila doesn't like loud music at parties.",
+        "alternatives": [
+          "At parties, Camila doesn't like loud music."
+        ],
+        "translation": "A Camila no le gusta la música fuerte en las fiestas.",
+        "explanation": "'Camila' es tercera persona singular (she), por eso se usa 'doesn't' con el verbo 'like' en forma base.",
+        "tokens": [
+          "Camila",
+          "doesn't",
+          "at",
+          "music",
+          "like",
+          "parties",
+          "loud"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We don't have time to visit the museum today.",
+        "alternatives": [
+          "Today, we don't have time to visit the museum."
+        ],
+        "translation": "No tenemos tiempo para visitar el museo hoy.",
+        "explanation": "Con 'we' se usa 'don't' para negar el verbo 'have' en presente simple.",
+        "tokens": [
+          "museum",
+          "don't",
+          "We",
+          "to",
+          "today",
+          "visit",
+          "have",
+          "time",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The doctor doesn't recommend coffee before the surgery.",
+        "alternatives": [
+          "Before the surgery, the doctor doesn't recommend coffee."
+        ],
+        "translation": "El médico no recomienda el café antes de la cirugía.",
+        "explanation": "'The doctor' equivale a 'he/she', por eso se usa 'doesn't' con el verbo 'recommend' en forma base.",
+        "tokens": [
+          "coffee",
+          "recommend",
+          "before",
+          "doctor",
+          "doesn't",
+          "The",
+          "surgery",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "They don't rent apartments to students without a guarantor.",
+        "alternatives": [
+          "Without a guarantor, they don't rent apartments to students."
+        ],
+        "translation": "No alquilan departamentos a estudiantes sin garante.",
+        "explanation": "Con 'they' se usa 'don't' para negar el verbo 'rent' en presente simple.",
+        "tokens": [
+          "without",
+          "a",
+          "rent",
+          "don't",
+          "guarantor",
+          "apartments",
+          "They",
+          "to",
+          "students"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My boss doesn't answer emails on the weekend.",
+        "alternatives": [
+          "On the weekend, my boss doesn't answer emails."
+        ],
+        "translation": "Mi jefe no responde los correos el fin de semana.",
+        "explanation": "'My boss' es tercera persona singular, por eso se usa 'doesn't' con el verbo 'answer' en forma base.",
+        "tokens": [
+          "the",
+          "on",
+          "boss",
+          "My",
+          "emails",
+          "answer",
+          "weekend",
+          "doesn't"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "She doesn't likes spicy food.",
+        "answers": [
+          "She doesn't like spicy food."
+        ],
+        "explanation": "Después de 'doesn't' el verbo va en forma base, sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "She don't like spicy food.",
+            "why": "El auxiliar 'doesn't' ya es correcto para 'she'; el error real es la -s en el verbo 'likes'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I no understand the contract for the apartment.",
+        "answers": [
+          "I don't understand the contract for the apartment."
+        ],
+        "explanation": "Para negar un verbo en presente simple se necesita el auxiliar 'don't' o 'doesn't', no alcanza con 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "I doesn't understand the contract for the apartment.",
+            "why": "Con 'I' no se usa 'doesn't'; además el error era la falta de auxiliar, no el verbo 'understand'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "My parents doesn't live in Rosario anymore.",
+        "answers": [
+          "My parents don't live in Rosario anymore."
+        ],
+        "explanation": "Con 'they' se usa 'don't' para negar en presente simple, no 'doesn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "My parents doesn't lives in Rosario anymore.",
+            "why": "El error es el auxiliar 'doesn't' con 'my parents' (they); agregar -s al verbo no corrige el error."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "The train don't stop at this station on Sundays.",
+        "answers": [
+          "The train doesn't stop at this station on Sundays."
+        ],
+        "explanation": "Con 'it' se usa 'doesn't' para negar en presente simple, no 'don't'.",
+        "wrongAnswers": [
+          {
+            "answer": "The train don't stops at this station on Sundays.",
+            "why": "El error es el auxiliar 'don't' con 'the train' (it); no se trata de agregar -s al verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "He doesn't has enough experience for the job.",
+        "answers": [
+          "He doesn't have enough experience for the job."
+        ],
+        "explanation": "Después de 'doesn't' el verbo va en forma base: 'have', no 'has'.",
+        "wrongAnswers": [
+          {
+            "answer": "He don't has enough experience for the job.",
+            "why": "El auxiliar 'doesn't' ya es correcto para 'he'; el error real es la forma del verbo, que debe ser 'have', no 'has'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tomás no desayuna antes de ir al trabajo.",
+        "answers": [
+          "Tomás doesn't eat breakfast before going to work.",
+          "Tomás does not eat breakfast before going to work.",
+          "Tomás doesn't have breakfast before going to work."
+        ],
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Tomás don't eat breakfast before going to work.",
+            "why": "'Tomás' es tercera persona singular (he), corresponde 'doesn't', no 'don't'."
+          },
+          {
+            "answer": "Tomás no eat breakfast before going to work.",
+            "why": "En inglés se necesita el auxiliar 'doesn't' para negar, no se puede usar 'no' antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No hablo francés, así que necesito un traductor.",
+        "answers": [
+          "I don't speak French, so I need a translator.",
+          "I do not speak French, so I need a translator."
+        ],
+        "explanation": "Con 'I' se usa 'don't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I no speak French, so I need a translator.",
+            "why": "Para negar un verbo en presente simple se necesita 'don't', no alcanza con 'no'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermana no maneja, así que siempre toma el colectivo.",
+        "answers": [
+          "My sister doesn't drive, so she always takes the bus.",
+          "My sister does not drive, so she always takes the bus."
+        ],
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "My sister don't drive, so she always takes the bus.",
+            "why": "'My sister' es tercera persona singular (she), corresponde 'doesn't', no 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este restaurante no acepta tarjetas de crédito.",
+        "answers": [
+          "This restaurant doesn't accept credit cards.",
+          "This restaurant does not accept credit cards."
+        ],
+        "explanation": "Con 'it' se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "This restaurant don't accept credit cards.",
+            "why": "'This restaurant' equivale a 'it', tercera persona singular, corresponde 'doesn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No tenemos plata suficiente para un departamento nuevo.",
+        "answers": [
+          "We don't have enough money for a new apartment.",
+          "We do not have enough money for a new apartment."
+        ],
+        "explanation": "Con 'we' se usa 'don't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "We doesn't have enough money for a new apartment.",
+            "why": "'We' es plural, corresponde 'don't', no 'doesn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi jefe no responde los mails el fin de semana.",
+        "answers": [
+          "My boss doesn't answer emails on the weekend.",
+          "My boss does not answer emails on the weekend."
+        ],
+        "explanation": "Con he/she/it se usa 'doesn't' para negar en presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "My boss don't answer emails on the weekend.",
+            "why": "'My boss' es tercera persona singular, corresponde 'doesn't', no 'don't'."
+          }
+        ]
+      }
+    ],
+    "preguntas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ you speak English?",
+        "options": [
+          "Is",
+          "Are",
+          "Does",
+          "Do"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'you' se usa el auxiliar 'do' para hacer preguntas en presente simple.",
+        "optionNotes": [
+          "'Is' tampoco corresponde a preguntas con verbos de acción en presente simple.",
+          "'Are' corresponde a presente continuo o a ser/estar, no a verbos de acción en presente simple.",
+          "'Does' se usa con he/she/it, no con you.",
+          "Correcto: 'you' siempre usa 'do' en preguntas de presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ your sister work at the hospital?",
+        "options": [
+          "Does",
+          "Is",
+          "Do",
+          "Are"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'your sister' (she) se usa el auxiliar 'does' para preguntar en presente simple.",
+        "optionNotes": [
+          "Correcto: 'does' corresponde a he/she/it, como 'your sister'.",
+          "'Is' no se usa con verbos de acción como 'work' en presente simple.",
+          "'Do' es para I/you/we/they, no para 'she'.",
+          "'Are' tampoco corresponde a este tipo de pregunta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "What time ___ the pharmacy open?",
+        "options": [
+          "are",
+          "does",
+          "do",
+          "is"
+        ],
+        "correctIndex": 1,
+        "explanation": "'The pharmacy' equivale a 'it', por eso la pregunta necesita 'does'.",
+        "optionNotes": [
+          "'are' tampoco corresponde, ya que el sujeto es singular.",
+          "Correcto: 'the pharmacy' es 'it', y usa 'does'.",
+          "'do' no corresponde a 'it'; se usa con I/you/we/they.",
+          "'is' no se usa con verbos de acción como 'open' en presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la respuesta corta.",
+        "prompt": "Does Marta like coffee? — Yes, she ___.",
+        "options": [
+          "is",
+          "do",
+          "likes",
+          "does"
+        ],
+        "correctIndex": 3,
+        "explanation": "En las respuestas cortas se repite el auxiliar de la pregunta, no el verbo principal: Yes, she does.",
+        "optionNotes": [
+          "'is' no es el auxiliar correspondiente a esta pregunta.",
+          "'do' no corresponde a 'she'; se usa con I/you/we/they.",
+          "'likes' no se usa en la respuesta corta; solo se repite el auxiliar.",
+          "Correcto: se repite el auxiliar 'does' usado en la pregunta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Does she ___ French very well?",
+        "options": [
+          "spoke",
+          "speak",
+          "speaks",
+          "speaking"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando el auxiliar es 'does', el verbo principal va en infinitivo sin -s: speak.",
+        "optionNotes": [
+          "'spoke' es pasado, no corresponde en una pregunta de presente simple.",
+          "Correcto: con el auxiliar 'does', el verbo principal se usa en su forma base.",
+          "'speaks' tiene una -s de más; con 'does' el verbo principal va sin -s.",
+          "'speaking' es gerundio y no corresponde después de 'does'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Where ___ your parents live?",
+        "options": [
+          "are",
+          "is",
+          "does",
+          "do"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Your parents' es plural (they), por eso la pregunta necesita 'do'.",
+        "optionNotes": [
+          "'are' tampoco corresponde a este tipo de pregunta con verbo de acción.",
+          "'is' no se usa con verbos de acción en presente simple.",
+          "'does' es para he/she/it, no para un sujeto plural.",
+          "Correcto: 'your parents' equivale a 'they', que usa 'do'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'Do' o 'Does'.",
+        "sentence": "___ you have a passport for the trip to Brazil?",
+        "hint": "",
+        "answers": [
+          "Do"
+        ],
+        "explanation": "Con 'you' siempre se usa el auxiliar 'do' en preguntas de presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Does",
+            "why": "Con 'you' se usa 'do', no 'does'."
+          },
+          {
+            "answer": "Are",
+            "why": "No se usa 'are' para preguntas con verbos de acción en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'Do' o 'Does'.",
+        "sentence": "___ Mr. Pérez work on Saturdays?",
+        "hint": "",
+        "answers": [
+          "Does"
+        ],
+        "explanation": "Con he/she/it se usa el auxiliar 'does'.",
+        "wrongAnswers": [
+          {
+            "answer": "Do",
+            "why": "Con 'Mr. Pérez' (he) corresponde 'does', no 'do'."
+          },
+          {
+            "answer": "Is",
+            "why": "No se usa 'is' para preguntas con verbos de acción en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "What time does the train ___ to Rosario?",
+        "hint": "(leave)",
+        "answers": [
+          "leave"
+        ],
+        "explanation": "Cuando el auxiliar es 'does', el verbo principal pierde la -s.",
+        "wrongAnswers": [
+          {
+            "answer": "leaves",
+            "why": "Con el auxiliar 'does', el verbo principal va sin -s: leave."
+          },
+          {
+            "answer": "leaving",
+            "why": "No se usa gerundio después de 'does'; se necesita el verbo base."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la respuesta corta.",
+        "sentence": "Do you like spicy food? — Yes, I ___.",
+        "hint": "(respuesta corta)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "Las respuestas cortas repiten el auxiliar usado en la pregunta: Yes, I do.",
+        "wrongAnswers": [
+          {
+            "answer": "like",
+            "why": "En la respuesta corta se repite el auxiliar 'do', no el verbo principal."
+          },
+          {
+            "answer": "does",
+            "why": "Con 'I' corresponde 'do', no 'does'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Does your brother ___ in Buenos Aires?",
+        "hint": "(live)",
+        "answers": [
+          "live"
+        ],
+        "explanation": "Con 'does', el verbo principal se usa en su forma base, sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "lives",
+            "why": "Con el auxiliar 'does', el verbo principal va sin -s: live."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con 'Do' o 'Does'.",
+        "sentence": "___ the kids go to school by bus?",
+        "hint": "(the kids = they)",
+        "answers": [
+          "Do"
+        ],
+        "explanation": "Con sujetos plurales se usa el auxiliar 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Does",
+            "why": "'The kids' es plural (they), por eso corresponde 'do', no 'does'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Do you have a reservation for tonight?",
+        "alternatives": [],
+        "translation": "¿Tenés una reserva para esta noche?",
+        "explanation": "La pregunta en presente simple con 'you' se forma con 'do' al inicio.",
+        "tokens": [
+          "tonight",
+          "have",
+          "you",
+          "for",
+          "Do",
+          "a",
+          "reservation"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Does Valentina work at the clinic?",
+        "alternatives": [],
+        "translation": "¿Valentina trabaja en la clínica?",
+        "explanation": "Con un nombre propio femenino (she) se usa el auxiliar 'does'.",
+        "tokens": [
+          "work",
+          "at",
+          "Valentina",
+          "the",
+          "clinic",
+          "Does"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "What time does the meeting start tomorrow?",
+        "alternatives": [],
+        "translation": "¿A qué hora empieza la reunión mañana?",
+        "explanation": "Las preguntas con palabra interrogativa llevan 'does' y el verbo principal en infinitivo: start.",
+        "tokens": [
+          "meeting",
+          "start",
+          "does",
+          "time",
+          "What",
+          "the",
+          "tomorrow"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Where do your cousins live in Spain?",
+        "alternatives": [],
+        "translation": "¿Dónde viven tus primos en España?",
+        "explanation": "'Your cousins' es plural (they), por eso la pregunta usa 'do'.",
+        "tokens": [
+          "do",
+          "cousins",
+          "live",
+          "in",
+          "Spain",
+          "Where",
+          "your"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Does he speak Portuguese very well?",
+        "alternatives": [],
+        "translation": "¿Él habla portugués muy bien?",
+        "explanation": "Con 'he' se usa 'does', y el verbo principal 'speak' va sin -s.",
+        "tokens": [
+          "he",
+          "speak",
+          "well",
+          "very",
+          "Does",
+          "Portuguese"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la pregunta.",
+        "sentence": "Do she work at the bank on Fridays?",
+        "answers": [
+          "Does she work at the bank on Fridays?"
+        ],
+        "explanation": "Con 'she' corresponde el auxiliar 'does', no 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Do she works at the bank on Fridays?",
+            "why": "Agregar -s al verbo principal no corrige el error; el problema es el auxiliar, que debe ser 'does' porque el sujeto es 'she'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la pregunta.",
+        "sentence": "Does you need help with the suitcase?",
+        "answers": [
+          "Do you need help with the suitcase?"
+        ],
+        "explanation": "Con 'you' se usa el auxiliar 'do', no 'does'.",
+        "wrongAnswers": [
+          {
+            "answer": "Does you needs help with the suitcase?",
+            "why": "Agregar -s al verbo no corrige el error; el auxiliar debe ser 'do' porque el sujeto es 'you'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la pregunta.",
+        "sentence": "What does your brother does on weekends?",
+        "answers": [
+          "What does your brother do on weekends?"
+        ],
+        "explanation": "Con el auxiliar 'does', el verbo principal va en infinitivo sin -s: do.",
+        "wrongAnswers": [
+          {
+            "answer": "What do your brother does on weekends?",
+            "why": "Cambiar 'does' por 'do' en el auxiliar no corrige el error; el problema es que el verbo principal no debe llevar -s ni repetirse como 'does'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la pregunta.",
+        "sentence": "Does the pharmacy opens at nine?",
+        "answers": [
+          "Does the pharmacy open at nine?"
+        ],
+        "explanation": "Con el auxiliar 'does', el verbo principal pierde la -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Do the pharmacy opens at nine?",
+            "why": "Cambiar el auxiliar a 'do' no corrige el error; 'pharmacy' es 'it' y requiere 'does', mientras que el verbo principal debe ir sin -s: open."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la pregunta.",
+        "sentence": "Do your parents speaks English at home?",
+        "answers": [
+          "Do your parents speak English at home?"
+        ],
+        "explanation": "Con el auxiliar 'do', el verbo principal va sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Does your parents speaks English at home?",
+            "why": "Cambiar el auxiliar a 'does' no corrige el error; 'parents' es plural (they) y corresponde 'do', y el verbo principal debe ir sin -s: speak."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Hablás inglés?",
+        "answers": [
+          "Do you speak English?",
+          "Do you speak any English?"
+        ],
+        "explanation": "Las preguntas con 'you' en presente simple necesitan 'do' al inicio.",
+        "wrongAnswers": [
+          {
+            "answer": "You speak English?",
+            "why": "Falta el auxiliar 'do'; las preguntas en presente simple lo necesitan."
+          },
+          {
+            "answer": "Speak you English?",
+            "why": "El orden calca el español; en inglés el auxiliar va al principio: Do you speak English?"
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Tu hermana trabaja en el hospital?",
+        "answers": [
+          "Does your sister work at the hospital?",
+          "Does your sister work in the hospital?"
+        ],
+        "explanation": "Con 'she' se usa 'does' y el verbo principal va sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Does your sister works at the hospital?",
+            "why": "Con el auxiliar 'does', el verbo principal va sin -s: work."
+          },
+          {
+            "answer": "Do your sister work at the hospital?",
+            "why": "Con 'your sister' (she) corresponde 'does', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿A qué hora abre la farmacia?",
+        "answers": [
+          "What time does the pharmacy open?",
+          "At what time does the pharmacy open?"
+        ],
+        "explanation": "Las preguntas con palabra interrogativa necesitan 'does' más el verbo en forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "What time the pharmacy opens?",
+            "why": "Falta el auxiliar 'does' en la pregunta; no alcanza con agregar -s al verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés.",
+        "spanish": "¿Dónde viven tus padres?",
+        "answers": [
+          "Where do your parents live?",
+          "Where do your mom and dad live?"
+        ],
+        "explanation": "Con sujetos plurales se usa el auxiliar 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Where does your parents live?",
+            "why": "'Parents' es plural (they); corresponde 'do', no 'does'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta y la respuesta al inglés.",
+        "spanish": "¿Él habla francés? — No, no habla.",
+        "answers": [
+          "Does he speak French? — No, he doesn't.",
+          "Does he speak French? — No, he does not."
+        ],
+        "explanation": "Con 'does', el verbo principal va sin -s y la respuesta corta negativa usa 'doesn't' (o 'does not') para he/she/it.",
+        "wrongAnswers": [
+          {
+            "answer": "Does he speaks French? — No, he don't.",
+            "why": "El verbo principal no debe llevar -s con 'does', y la negación corta de 'he' es 'doesn't', no 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta y la respuesta al inglés.",
+        "spanish": "¿Tenés una reserva para esta noche? — Sí, tengo.",
+        "answers": [
+          "Do you have a reservation for tonight? — Yes, I do.",
+          "Do you have a booking for tonight? — Yes, I do."
+        ],
+        "explanation": "Las respuestas cortas repiten el auxiliar de la pregunta: Yes, I do.",
+        "wrongAnswers": [
+          {
+            "answer": "Do you have a reservation for tonight? — Yes, I have.",
+            "why": "La respuesta corta repite el auxiliar 'do', no el verbo principal 'have'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las preguntas con do/does.",
+        "text": "On Juan's first day at the office, he meets Lucía, a coworker from Rosario. Juan asks, 'Do you like your job here?' Lucía says, 'Yes, I do. I love this company.' Then Juan asks, 'Does Mr. Fernández work in this building too?' Lucía answers, 'No, he doesn't. He works downtown.' Juan wants to know more, so he asks, 'What time does the office open?' Lucía says it opens at eight thirty. Later, Lucía asks Juan, 'Do you speak Portuguese? We have clients from Brazil.' Juan replies, 'No, I don't, but I speak English well.' Lucía smiles and says that's very useful for the team.",
+        "questions": [
+          {
+            "prompt": "Does Mr. Fernández work in the same building as Juan and Lucía?",
+            "options": [
+              "Yes, he does",
+              "Yes, sometimes",
+              "The text doesn't say",
+              "No, he doesn't"
+            ],
+            "correctIndex": 3,
+            "explanation": "Lucía responde: 'No, he doesn't. He works downtown', usando la respuesta corta con 'doesn't' porque la pregunta era con 'does' y 'he'."
+          },
+          {
+            "prompt": "What does Lucía ask Juan about languages?",
+            "options": [
+              "Does she speak Portuguese?",
+              "Does he speak Portuguese?",
+              "Do you speak Portuguese?",
+              "Do you speak English?"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucía le habla directamente a Juan ('you'), por eso usa 'Do you speak Portuguese?' con el auxiliar 'do'."
+          },
+          {
+            "prompt": "Which question is correctly formed to ask about the office's opening time, according to the text?",
+            "options": [
+              "What time does the office open?",
+              "What time the office does open?",
+              "What time do the office opens?",
+              "What time does the office opens?"
+            ],
+            "correctIndex": 0,
+            "explanation": "Con 'does' el verbo principal va en forma base, sin -s: 'does the office open', no 'opens'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las preguntas con do/does.",
+        "text": "Tomás has a job interview at a travel agency in Buenos Aires. The interviewer, Mrs. Castro, asks, 'Do you have experience with tourists?' Tomás answers, 'Yes, I do. I worked in a hotel for two years.' Then she asks, 'Does your English help you talk to foreign clients?' Tomás says, 'Yes, it does. I practice every day.' Mrs. Castro smiles and asks one more question: 'Do you work well in a team?' Tomás replies, 'Yes, I do. I enjoy working with other people.' At the end, Tomás asks, 'Does the agency offer training for new employees?' Mrs. Castro answers, 'Yes, it does. We have a training program every month.' Tomás feels confident about the job.",
+        "questions": [
+          {
+            "prompt": "What does Tomás say about his experience?",
+            "options": [
+              "The text doesn't say",
+              "He worked in a hotel for two years",
+              "He never had a job before",
+              "He worked in a restaurant for one year"
+            ],
+            "correctIndex": 1,
+            "explanation": "Tomás dice: 'Yes, I do. I worked in a hotel for two years', respondiendo primero con la respuesta corta y luego dando el detalle."
+          },
+          {
+            "prompt": "What does Tomás ask about at the end of the interview?",
+            "options": [
+              "Salary",
+              "Training for new employees",
+              "Working hours",
+              "Vacation days"
+            ],
+            "correctIndex": 1,
+            "explanation": "Tomás pregunta: 'Does the agency offer training for new employees?', usando 'does' porque 'the agency' es tercera persona singular (it)."
+          },
+          {
+            "prompt": "Which short answer correctly completes: 'Does the agency offer training? — Yes, ___.'",
+            "options": [
+              "they does",
+              "it do",
+              "it does",
+              "does it"
+            ],
+            "correctIndex": 2,
+            "explanation": "La respuesta corta repite el auxiliar de la pregunta: como la pregunta usa 'does', la respuesta corta es 'it does'."
+          }
+        ]
+      }
+    ],
+    "frecuencia": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ coffee at night; it keeps me awake.",
+        "options": [
+          "don't never drink",
+          "never drink",
+          "never drinks",
+          "drink never"
+        ],
+        "correctIndex": 1,
+        "explanation": "El adverbio de frecuencia 'never' va antes del verbo principal: I never drink.",
+        "optionNotes": [
+          "No se usa 'don't' junto con 'never'; eso sería una doble negación.",
+          "Correcto: el adverbio de frecuencia va antes del verbo principal.",
+          "Con 'I' el verbo no lleva -s; la forma correcta es 'drink'.",
+          "El orden es incorrecto; 'never' no puede ir después del verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Marta ___ late for work.",
+        "options": [
+          "is always",
+          "is being always",
+          "always is",
+          "always being"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con el verbo 'to be', el adverbio de frecuencia va después: is always.",
+        "optionNotes": [
+          "Correcto: con 'to be' el adverbio va después del verbo.",
+          "No se necesita el gerundio 'being' en esta oración de hábito.",
+          "El orden es incorrecto; 'always' no puede ir antes de 'is'.",
+          "Falta el verbo 'is' conjugado correctamente antes del adverbio."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la oración correcta.",
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "Once a week visits he his grandmother.",
+          "He visits once a week his grandmother.",
+          "He visits his grandmother once a week.",
+          "He once a week visits his grandmother."
+        ],
+        "correctIndex": 2,
+        "explanation": "Las expresiones largas de frecuencia como 'once a week' se colocan al final de la oración.",
+        "optionNotes": [
+          "El orden de sujeto y verbo está invertido incorrectamente.",
+          "La expresión de frecuencia no puede separar el verbo de su objeto.",
+          "Correcto: la expresión larga de frecuencia va al final de la oración.",
+          "'once a week' no puede ir entre el sujeto y el verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My father ___ tired after work.",
+        "options": [
+          "is being sometimes",
+          "is sometimes",
+          "sometimes to be",
+          "sometimes is"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con el verbo 'to be', el adverbio 'sometimes' va después: is sometimes.",
+        "optionNotes": [
+          "No se necesita el gerundio 'being' en esta oración de hábito.",
+          "Correcto: con 'to be' el adverbio va después del verbo.",
+          "'to be' sin conjugar no es una forma correcta en presente simple.",
+          "El orden es incorrecto; 'sometimes' no puede ir antes de 'is'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My neighbors ___ loud music.",
+        "options": [
+          "are rarely play",
+          "rarely play",
+          "play rarely",
+          "rarely plays"
+        ],
+        "correctIndex": 1,
+        "explanation": "El adverbio 'rarely' va antes del verbo principal, que no lleva -s porque el sujeto es plural.",
+        "optionNotes": [
+          "No se usa 'are' junto con un verbo de acción en presente simple de esta forma.",
+          "Correcto: el adverbio va antes del verbo, y 'play' no lleva -s porque 'neighbors' es plural.",
+          "El orden es incorrecto; 'rarely' no puede ir después del verbo.",
+          "'plays' lleva una -s que no corresponde a un sujeto plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The doctor ___ her patients on time.",
+        "options": [
+          "sees usually",
+          "usually see",
+          "usually sees",
+          "is usually sees"
+        ],
+        "correctIndex": 2,
+        "explanation": "El adverbio 'usually' va antes del verbo principal, que lleva -s porque el sujeto es 'the doctor' (she).",
+        "optionNotes": [
+          "El orden es incorrecto; 'usually' no puede ir después del verbo.",
+          "Falta la -s en 'see'; con 'the doctor' (she) corresponde 'sees'.",
+          "Correcto: el adverbio va antes del verbo, y 'sees' lleva -s porque el sujeto es ella.",
+          "No se usa 'is' junto a un verbo de acción conjugado de esta forma."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adverbio y el verbo en el orden correcto.",
+        "sentence": "I ___ breakfast before work.",
+        "hint": "(siempre / eat)",
+        "answers": [
+          "always eat"
+        ],
+        "explanation": "El adverbio 'always' se coloca antes del verbo principal: I always eat breakfast.",
+        "wrongAnswers": [
+          {
+            "answer": "eat always",
+            "why": "El adverbio de frecuencia debe ir antes del verbo principal, no después."
+          },
+          {
+            "answer": "always eats",
+            "why": "Con 'I' el verbo no lleva -s; la forma correcta es 'eat'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el verbo y el adverbio en el orden correcto.",
+        "sentence": "She ___ late for her appointments.",
+        "hint": "(siempre / be)",
+        "answers": [
+          "is always"
+        ],
+        "explanation": "Con el verbo 'to be', el adverbio de frecuencia va después: is always.",
+        "wrongAnswers": [
+          {
+            "answer": "always is",
+            "why": "Con el verbo 'to be', el adverbio de frecuencia va después, no antes."
+          },
+          {
+            "answer": "always be",
+            "why": "Falta conjugar 'be' como 'is' para la tercera persona, además el orden es incorrecto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adverbio y el verbo en el orden correcto.",
+        "sentence": "We ___ to the cinema on Sundays.",
+        "hint": "(a veces / go)",
+        "answers": [
+          "sometimes go"
+        ],
+        "explanation": "'Sometimes' va antes del verbo principal: we sometimes go.",
+        "wrongAnswers": [
+          {
+            "answer": "go sometimes",
+            "why": "El adverbio de frecuencia debe ir antes del verbo principal."
+          },
+          {
+            "answer": "sometimes goes",
+            "why": "Con 'we' el verbo no lleva -s; la forma correcta es 'go'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adverbio y el verbo en el orden correcto.",
+        "sentence": "My brother ___ fast food; he prefers home cooking.",
+        "hint": "(casi nunca / eat)",
+        "answers": [
+          "rarely eats"
+        ],
+        "explanation": "'Rarely' va antes del verbo principal, que lleva -s porque el sujeto es 'he': rarely eats.",
+        "wrongAnswers": [
+          {
+            "answer": "eats rarely",
+            "why": "El adverbio debe ir antes del verbo principal, no después."
+          },
+          {
+            "answer": "rarely eat",
+            "why": "Con 'my brother' (he) el verbo necesita -s: eats."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adverbio y el verbo en el orden correcto.",
+        "sentence": "They ___ their homework before dinner.",
+        "hint": "(seguido / do)",
+        "answers": [
+          "often do"
+        ],
+        "explanation": "'Often' va antes del verbo principal: they often do.",
+        "wrongAnswers": [
+          {
+            "answer": "do often",
+            "why": "El adverbio debe ir antes del verbo principal."
+          },
+          {
+            "answer": "often does",
+            "why": "Con 'they' el verbo no lleva -s; la forma correcta es 'do'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adverbio y el verbo en el orden correcto.",
+        "sentence": "I ___ my keys at home; I always check my bag.",
+        "hint": "(nunca / forget)",
+        "answers": [
+          "never forget"
+        ],
+        "explanation": "'Never' va antes del verbo principal: I never forget.",
+        "wrongAnswers": [
+          {
+            "answer": "forget never",
+            "why": "El adverbio debe ir antes del verbo principal."
+          },
+          {
+            "answer": "never forgets",
+            "why": "Con 'I' el verbo no lleva -s; la forma correcta es 'forget'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I always brush my teeth before bed.",
+        "alternatives": [],
+        "translation": "Siempre me cepillo los dientes antes de acostarme.",
+        "explanation": "'Always' va antes del verbo principal 'brush'.",
+        "tokens": [
+          "teeth",
+          "my",
+          "bed",
+          "I",
+          "always",
+          "brush",
+          "before"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She is usually busy on Monday mornings.",
+        "alternatives": [
+          "Usually, she is busy on Monday mornings."
+        ],
+        "translation": "Ella generalmente está ocupada los lunes por la mañana.",
+        "explanation": "Con el verbo 'to be', el adverbio 'usually' va después: is usually.",
+        "tokens": [
+          "She",
+          "usually",
+          "on",
+          "mornings",
+          "is",
+          "busy",
+          "Monday"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We sometimes have lunch at that new café.",
+        "alternatives": [
+          "Sometimes we have lunch at that new café."
+        ],
+        "translation": "A veces almorzamos en ese café nuevo.",
+        "explanation": "'Sometimes' va antes del verbo principal 'have'.",
+        "tokens": [
+          "lunch",
+          "at",
+          "have",
+          "sometimes",
+          "that",
+          "new",
+          "café",
+          "We"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My grandfather rarely uses his cell phone.",
+        "alternatives": [],
+        "translation": "Mi abuelo casi nunca usa su celular.",
+        "explanation": "'Rarely' va antes del verbo principal, que lleva -s porque el sujeto es 'he'.",
+        "tokens": [
+          "cell",
+          "uses",
+          "rarely",
+          "My",
+          "grandfather",
+          "his",
+          "phone"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "They go to the market twice a week.",
+        "alternatives": [
+          "Twice a week, they go to the market."
+        ],
+        "translation": "Ellos van al mercado dos veces por semana.",
+        "explanation": "Las expresiones largas de frecuencia como 'twice a week' van al final de la oración.",
+        "tokens": [
+          "They",
+          "market",
+          "to",
+          "go",
+          "twice",
+          "week",
+          "a",
+          "the"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "I drink always coffee in the morning.",
+        "answers": [
+          "I always drink coffee in the morning."
+        ],
+        "explanation": "'Always' debe colocarse antes del verbo principal: I always drink.",
+        "wrongAnswers": [
+          {
+            "answer": "I drink coffee always in the morning.",
+            "why": "El adverbio de frecuencia debe ir antes del verbo principal, no después."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "She usually is tired after her shift at the hospital.",
+        "answers": [
+          "She is usually tired after her shift at the hospital."
+        ],
+        "explanation": "Con el verbo 'to be', el adverbio de frecuencia va después: is usually.",
+        "wrongAnswers": [
+          {
+            "answer": "She usually tired is after her shift at the hospital.",
+            "why": "Ese orden rompe la oración; con el verbo 'to be', el adverbio va justo después de 'is', no en otro lugar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "We never eats meat on Fridays.",
+        "answers": [
+          "We never eat meat on Fridays."
+        ],
+        "explanation": "Con 'we' el verbo no lleva -s: never eat.",
+        "wrongAnswers": [
+          {
+            "answer": "We eats never meat on Fridays.",
+            "why": "Cambiar el orden no corrige el error principal; el verbo no debe llevar -s porque el sujeto es 'we'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "My neighbors play often loud music at night.",
+        "answers": [
+          "My neighbors often play loud music at night."
+        ],
+        "explanation": "El adverbio 'often' debe ir antes del verbo principal: often play.",
+        "wrongAnswers": [
+          {
+            "answer": "My neighbors plays often loud music at night.",
+            "why": "Agregar -s al verbo no corrige el error de orden; además 'neighbors' es plural y no necesita -s."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "He visits once a week his mother.",
+        "answers": [
+          "He visits his mother once a week."
+        ],
+        "explanation": "Las expresiones de frecuencia largas como 'once a week' se colocan al final de la oración.",
+        "wrongAnswers": [
+          {
+            "answer": "He once a week visits his mother.",
+            "why": "Las expresiones largas de frecuencia como 'once a week' van al final de la oración, no antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Siempre desayuno antes de ir al trabajo.",
+        "answers": [
+          "I always have breakfast before going to work.",
+          "I always eat breakfast before going to work."
+        ],
+        "explanation": "'Always' va antes del verbo principal: I always have breakfast.",
+        "wrongAnswers": [
+          {
+            "answer": "I have always breakfast before going to work.",
+            "why": "El adverbio debe ir antes del verbo principal 'have', no entre el verbo y el objeto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi jefa generalmente está ocupada los lunes.",
+        "answers": [
+          "My boss is usually busy on Mondays.",
+          "Usually, my boss is busy on Mondays."
+        ],
+        "explanation": "Con 'to be', el adverbio va después: is usually.",
+        "wrongAnswers": [
+          {
+            "answer": "My boss usually is busy on Mondays.",
+            "why": "Con el verbo 'to be', el adverbio de frecuencia va después, no antes."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "A veces cenamos en ese restaurante italiano.",
+        "answers": [
+          "We sometimes have dinner at that Italian restaurant.",
+          "Sometimes we have dinner at that Italian restaurant."
+        ],
+        "explanation": "'Sometimes' puede ir al inicio de la oración o antes del verbo principal.",
+        "wrongAnswers": [
+          {
+            "answer": "We have sometimes dinner at that Italian restaurant.",
+            "why": "El adverbio debe ir antes del verbo principal 'have', no después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi abuela casi nunca usa la computadora.",
+        "answers": [
+          "My grandmother rarely uses the computer.",
+          "My grandmother hardly ever uses the computer."
+        ],
+        "explanation": "'Rarely' va antes del verbo, que lleva -s porque el sujeto es 'she': rarely uses.",
+        "wrongAnswers": [
+          {
+            "answer": "My grandmother uses rarely the computer.",
+            "why": "El adverbio debe ir antes del verbo principal, no después."
+          },
+          {
+            "answer": "My grandmother rarely use the computer.",
+            "why": "Con 'my grandmother' (she) el verbo necesita -s: uses."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ellos nunca llegan tarde a las reuniones.",
+        "answers": [
+          "They never arrive late for meetings.",
+          "They never arrive late to meetings."
+        ],
+        "explanation": "'Never' va antes del verbo principal: they never arrive.",
+        "wrongAnswers": [
+          {
+            "answer": "They arrive never late for meetings.",
+            "why": "El adverbio debe ir antes del verbo principal, no después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vamos al gimnasio dos veces por semana.",
+        "answers": [
+          "We go to the gym twice a week.",
+          "Twice a week, we go to the gym."
+        ],
+        "explanation": "Las expresiones largas de frecuencia como 'twice a week' se colocan al final de la oración (o al inicio, para dar énfasis).",
+        "wrongAnswers": [
+          {
+            "answer": "We go two times at week to the gym.",
+            "why": "'two times' no es tan natural como 'twice', y 'at week' es un calco incorrecto; la expresión correcta es 'twice a week'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los adverbios de frecuencia.",
+        "text": "Juan works at a bank in Buenos Aires. He usually wakes up at six thirty and always has coffee before leaving home. He often takes the bus to work, but sometimes he walks because he lives close to the office. At work, Juan rarely arrives late; his boss, Mrs. Soto, says he is always on time. Juan never eats lunch at his desk; he usually goes to a small restaurant with his coworker, Lucía. In the afternoon, he sometimes has meetings with clients. After work, he often goes to the gym, but he rarely stays there for more than an hour. On weekends, he never checks his email.",
+        "questions": [
+          {
+            "prompt": "How often does Juan arrive late to work?",
+            "options": [
+              "Usually",
+              "Always",
+              "Rarely",
+              "Often"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Juan rarely arrives late', es decir que casi nunca llega tarde."
+          },
+          {
+            "prompt": "Where does Juan usually have lunch?",
+            "options": [
+              "At a small restaurant with Lucía",
+              "At the gym",
+              "At his desk",
+              "At home"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice: 'he usually goes to a small restaurant with his coworker, Lucía'."
+          },
+          {
+            "prompt": "Which sentence is correctly placed according to the text?",
+            "options": [
+              "He always is on time.",
+              "He is always on time.",
+              "He on time is always.",
+              "Always he is on time."
+            ],
+            "correctIndex": 1,
+            "explanation": "Con el verbo 'to be', el adverbio de frecuencia va después: 'is always'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los adverbios de frecuencia.",
+        "text": "Camila goes to Dr. Ríos for a check-up. The doctor asks about her habits. Camila says she usually sleeps seven hours a night, but she sometimes stays up late to study. She always eats breakfast, but she rarely eats vegetables. Dr. Ríos looks worried and says that vegetables are important for her health. Camila explains that she often eats fruit instead, like apples and bananas. She never smokes, and she rarely drinks soda. Dr. Ríos is happy about that. He says Camila should exercise more because she only goes to the gym once a week. Camila promises to start walking every day after work.",
+        "questions": [
+          {
+            "prompt": "How often does Camila eat vegetables?",
+            "options": [
+              "Never",
+              "Always",
+              "Usually",
+              "Rarely"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'she rarely eats vegetables', es decir que casi nunca come verduras."
+          },
+          {
+            "prompt": "What does Dr. Ríos recommend Camila do more?",
+            "options": [
+              "Eat fruit",
+              "Study",
+              "Exercise",
+              "Sleep"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que el doctor le recomienda hacer más ejercicio porque solo va al gimnasio una vez por semana."
+          },
+          {
+            "prompt": "Which sentence about Camila's smoking habit is correct, according to English word order rules?",
+            "options": [
+              "She never smokes.",
+              "She smokes never.",
+              "She does never smoke.",
+              "Never she smokes."
+            ],
+            "correctIndex": 0,
+            "explanation": "El adverbio de frecuencia 'never' va antes del verbo principal: 'she never smokes'."
+          }
+        ]
+      }
+    ],
+    "rutinas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Sofía ___ up at seven o'clock every day.",
+        "options": [
+          "is get",
+          "get",
+          "getting",
+          "gets"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con la tercera persona singular (he/she/it) el verbo en presente simple afirmativo lleva -s.",
+        "optionNotes": [
+          "Incorrecto: mezcla el presente continuo con el verbo base; no es una forma válida.",
+          "Incorrecto: falta la -s de la tercera persona singular.",
+          "Incorrecto: la forma -ing no corresponde al presente simple afirmativo.",
+          "Correcto: con 'she' el verbo lleva -s en presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ night, Sofía reads a book before bed.",
+        "options": [
+          "On",
+          "In",
+          "At",
+          "During"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Night' es una excepción: se usa 'at night', no 'in night' como con morning y afternoon.",
+        "optionNotes": [
+          "Incorrecto: 'on' no se usa con partes del día.",
+          "Incorrecto: 'in' se usa con morning y afternoon, pero no con night.",
+          "Correcto: se dice 'at night' como excepción a la regla general.",
+          "Incorrecto: aunque existe en inglés, no es la expresión fija que corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Martín has breakfast at half past seven. ___, he goes to work.",
+        "options": [
+          "Finally",
+          "After",
+          "Then",
+          "First"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Then' se usa para indicar la acción que sigue cronológicamente a otra ya mencionada.",
+        "optionNotes": [
+          "Incorrecto: 'finally' se usa para la última acción de la secuencia.",
+          "Incorrecto: 'after' necesita un complemento, como en 'after that'; no se usa solo así.",
+          "Correcto: 'then' indica la acción que sigue cronológicamente.",
+          "Incorrecto: 'first' indica la primera acción de una secuencia, no la que sigue."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Does Sofía ___ lunch at the office?",
+        "options": [
+          "have",
+          "haves",
+          "has",
+          "having"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después del auxiliar 'does' el verbo principal va en infinitivo sin -s.",
+        "optionNotes": [
+          "Correcto: después de 'does' el verbo va en infinitivo sin -s.",
+          "Incorrecto: esta forma no existe en inglés.",
+          "Incorrecto: la -s ya está en 'does', no se repite en el verbo.",
+          "Incorrecto: la forma -ing no corresponde a esta estructura de pregunta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Martín doesn't ___ to bed before midnight.",
+        "options": [
+          "goes",
+          "go",
+          "going",
+          "went"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después del auxiliar negativo 'doesn't' el verbo va en infinitivo sin -s.",
+        "optionNotes": [
+          "Incorrecto: después de 'doesn't' el verbo va sin -s.",
+          "Correcto: forma base del verbo tras el auxiliar negativo 'doesn't'.",
+          "Incorrecto: la forma -ing no corresponde al presente simple negativo.",
+          "Incorrecto: 'went' es la forma de pasado, no corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ the morning, Sofía drinks coffee and checks her emails.",
+        "options": [
+          "In",
+          "At",
+          "On",
+          "Then"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'in' con 'the morning', al igual que con 'the afternoon'.",
+        "optionNotes": [
+          "Correcto: se dice 'in the morning'.",
+          "Incorrecto: 'at' se usa con 'night', no con 'morning'.",
+          "Incorrecto: 'on' no se usa con partes del día.",
+          "Incorrecto: 'then' es un conector de secuencia, no una preposición de tiempo."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Sofía ___ at a call center in Córdoba.",
+        "hint": "(work)",
+        "answers": [
+          "works"
+        ],
+        "explanation": "Con la tercera persona singular (she) el verbo en presente simple afirmativo lleva -s.",
+        "wrongAnswers": [
+          {
+            "answer": "work",
+            "why": "Falta la -s de la tercera persona singular en presente simple."
+          },
+          {
+            "answer": "working",
+            "why": "La forma -ing no corresponde al presente simple afirmativo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "___ the afternoon, Martín studies English for an hour.",
+        "hint": "(preposición de tiempo)",
+        "answers": [
+          "In"
+        ],
+        "explanation": "Se dice 'in the afternoon', igual que 'in the morning'.",
+        "wrongAnswers": [
+          {
+            "answer": "At",
+            "why": "'At' se usa con 'night', no con 'afternoon'."
+          },
+          {
+            "answer": "On",
+            "why": "'On' no se usa con partes del día."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el conector de secuencia correcto.",
+        "sentence": "First, Sofía has breakfast. ___, she takes the bus to work.",
+        "hint": "(conector de secuencia)",
+        "answers": [
+          "Then",
+          "After that"
+        ],
+        "explanation": "'Then' o 'after that' se usan para indicar la acción que sigue a otra ya mencionada.",
+        "wrongAnswers": [
+          {
+            "answer": "First",
+            "why": "'First' ya se usó para la primera acción, no puede repetirse para la siguiente."
+          },
+          {
+            "answer": "Finally",
+            "why": "'Finally' se usa para la última acción de la secuencia, no para una intermedia."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa correcta.",
+        "sentence": "Martín ___ waking up early on Mondays.",
+        "hint": "(not/like)",
+        "answers": [
+          "doesn't like",
+          "does not like"
+        ],
+        "explanation": "Con la tercera persona singular el presente simple negativo se forma con 'doesn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "don't like",
+            "why": "Con 'he' se usa el auxiliar 'doesn't', no 'don't'."
+          },
+          {
+            "answer": "not likes",
+            "why": "El auxiliar negativo 'doesn't' va antes del verbo base; no se agrega '-s' ni se usa 'not' solo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición fija correcta.",
+        "sentence": "___ night, Sofía and her sister watch a movie together.",
+        "hint": "(preposición fija)",
+        "answers": [
+          "At"
+        ],
+        "explanation": "'Night' es una excepción y siempre va con 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "In",
+            "why": "Se dice 'at night', no 'in night'."
+          },
+          {
+            "answer": "On",
+            "why": "'On' no se usa con partes del día."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo.",
+        "sentence": "Does Martín ___ to the gym every morning?",
+        "hint": "(go)",
+        "answers": [
+          "go"
+        ],
+        "explanation": "Después del auxiliar 'does' el verbo principal va en infinitivo sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "goes",
+            "why": "Después de 'does' el verbo va en infinitivo sin -s."
+          },
+          {
+            "answer": "going",
+            "why": "No corresponde la forma -ing en esta pregunta con 'does'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sofía gets up at seven o'clock every morning.",
+        "alternatives": [
+          "Every morning Sofía gets up at seven o'clock."
+        ],
+        "translation": "Sofía se levanta a las siete todas las mañanas.",
+        "explanation": "En presente simple con tercera persona singular el verbo lleva -s; los conectores de tiempo pueden ir al final o al principio.",
+        "tokens": [
+          "at",
+          "gets",
+          "up",
+          "every",
+          "o'clock",
+          "morning",
+          "Sofía",
+          "seven"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "First, Martín has breakfast with his family.",
+        "alternatives": [],
+        "translation": "Primero, Martín desayuna con su familia.",
+        "explanation": "El conector 'first' se coloca al inicio de la oración para marcar la primera acción de una secuencia.",
+        "tokens": [
+          "has",
+          "Martín",
+          "family",
+          "First,",
+          "his",
+          "with",
+          "breakfast"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Then she goes to work by bus.",
+        "alternatives": [],
+        "translation": "Después ella va al trabajo en colectivo.",
+        "explanation": "'Then' indica la acción que sigue cronológicamente y suele ir al comienzo de la oración.",
+        "tokens": [
+          "Then",
+          "bus",
+          "by",
+          "work",
+          "she",
+          "goes",
+          "to"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Martín doesn't go to bed before midnight.",
+        "alternatives": [],
+        "translation": "Martín no se va a dormir antes de la medianoche.",
+        "explanation": "En presente simple negativo con tercera persona se usa 'doesn't' seguido del verbo base.",
+        "tokens": [
+          "midnight",
+          "bed",
+          "Martín",
+          "doesn't",
+          "to",
+          "go",
+          "before"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "At night, Sofía reads a book before sleeping.",
+        "alternatives": [
+          "Sofía reads a book before sleeping at night."
+        ],
+        "translation": "A la noche, Sofía lee un libro antes de dormir.",
+        "explanation": "'At night' es la expresión fija para referirse a esa parte del día, y puede ir al principio o al final de la oración.",
+        "tokens": [
+          "night,",
+          "a",
+          "sleeping",
+          "book",
+          "At",
+          "Sofía",
+          "before",
+          "reads"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente simple.",
+        "sentence": "Sofía get up at seven o'clock every day.",
+        "answers": [
+          "Sofía gets up at seven o'clock every day."
+        ],
+        "explanation": "Con la tercera persona singular el verbo en presente simple afirmativo lleva -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía gets up in seven o'clock every day.",
+            "why": "Corrige el verbo agregando la -s, pero cambia la preposición correcta 'at' por 'in'; con horas exactas se dice 'at seven o'clock', no 'in seven o'clock'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las partes del día.",
+        "sentence": "In the night, Martín watches TV with his wife.",
+        "answers": [
+          "At night, Martín watches TV with his wife."
+        ],
+        "explanation": "Se dice 'at night', no 'in the night'; es una excepción a la regla de 'in the morning/afternoon'.",
+        "wrongAnswers": [
+          {
+            "answer": "In the night, Martín watch TV with his wife.",
+            "why": "Quita la -s del verbo 'watches', pero el error real es la preposición 'in' en lugar de 'at' con 'night'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preguntas en presente simple.",
+        "sentence": "Does Sofía has lunch at the office every day?",
+        "answers": [
+          "Does Sofía have lunch at the office every day?"
+        ],
+        "explanation": "Después del auxiliar 'does' el verbo principal va en infinitivo sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Does Sofía has lunches at the office every day?",
+            "why": "Cambia 'lunch' a plural, pero el error real es usar 'has' después de 'does'; debe ser la forma base 'have'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente simple negativo.",
+        "sentence": "Martín don't like waking up early.",
+        "answers": [
+          "Martín doesn't like waking up early."
+        ],
+        "explanation": "Con la tercera persona singular el presente simple negativo se forma con 'doesn't', no 'don't'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín don't likes waking up early.",
+            "why": "Agrega -s al verbo, pero el error real es usar 'don't' en lugar de 'doesn't' con la tercera persona 'Martín'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente simple.",
+        "sentence": "First Sofía has breakfast, then she have lunch at noon.",
+        "answers": [
+          "First Sofía has breakfast, then she has lunch at noon."
+        ],
+        "explanation": "Con la tercera persona singular el verbo 'have' se transforma en 'has' en presente simple afirmativo.",
+        "wrongAnswers": [
+          {
+            "answer": "First Sofía has breakfast, then she haves lunch at noon.",
+            "why": "'Haves' no existe en inglés; la forma correcta de tercera persona singular es 'has'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Sofía se levanta a las siete de la mañana todos los días.",
+        "answers": [
+          "Sofía gets up at seven o'clock every day.",
+          "Sofía gets up at seven in the morning every day."
+        ],
+        "explanation": "Con la tercera persona singular el verbo en presente simple afirmativo lleva -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía get up at seven o'clock every day.",
+            "why": "Falta la -s de la tercera persona singular en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Primero desayuno, después voy al trabajo.",
+        "answers": [
+          "First I have breakfast, then I go to work.",
+          "First, I have breakfast, then I go to work."
+        ],
+        "explanation": "'First' y 'then' son los conectores correctos para marcar el orden de las acciones.",
+        "wrongAnswers": [
+          {
+            "answer": "First I have breakfast, after I go to work.",
+            "why": "'After' necesita un complemento, como en 'after that'; no se usa solo como conector de secuencia."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "A la noche, Martín mira una película con su familia.",
+        "answers": [
+          "At night, Martín watches a movie with his family."
+        ],
+        "explanation": "'Night' es una excepción y siempre va con la preposición 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "In the night, Martín watches a movie with his family.",
+            "why": "Se dice 'at night', no 'in the night'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Martín va al gimnasio todas las mañanas?",
+        "answers": [
+          "Does Martín go to the gym every morning?"
+        ],
+        "explanation": "En preguntas con 'does' el verbo principal va en infinitivo sin -s.",
+        "wrongAnswers": [
+          {
+            "answer": "Does Martín goes to the gym every morning?",
+            "why": "Después de 'does' el verbo va sin -s; debe ser 'go', no 'goes'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Sofía no desayuna antes de las siete.",
+        "answers": [
+          "Sofía doesn't have breakfast before seven.",
+          "Sofía does not have breakfast before seven."
+        ],
+        "explanation": "Con la tercera persona singular el presente simple negativo se forma con 'doesn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía don't have breakfast before seven.",
+            "why": "Con la tercera persona singular se usa 'doesn't', no 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Finalmente, se van a dormir a las once de la noche.",
+        "answers": [
+          "Finally, they go to bed at eleven at night.",
+          "Finally, they go to bed at eleven o'clock at night."
+        ],
+        "explanation": "'Night' siempre va con la preposición 'at', incluso cuando se menciona una hora específica.",
+        "wrongAnswers": [
+          {
+            "answer": "Finally, they go to bed at eleven in the night.",
+            "why": "Se dice 'at night', no 'in the night', aunque se especifique la hora."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la rutina de Mariana y respondé las preguntas.",
+        "text": "Mariana is a nurse in Córdoba. Her shifts start early, so she has a simple routine.\n\nFirst, she gets up at six o'clock in the morning. Then she has breakfast with coffee and toast. After that, she takes a shower and gets dressed for work.\n\nAt half past seven, she goes to work at the hospital. She works with Dr. Pérez and many patients.\n\nIn the afternoon, she has lunch with her friend Lucas in the hospital cafeteria. They talk about their day.\n\nAfter work, she goes home and cooks dinner. At night, she watches TV for a little while.\n\nFinally, she goes to bed at ten o'clock. Tomorrow, she starts again.",
+        "questions": [
+          {
+            "prompt": "¿Qué hace Mariana primero por la mañana?",
+            "options": [
+              "Se levanta a las seis en punto.",
+              "Mira televisión.",
+              "Va al trabajo.",
+              "Almuerza con Lucas."
+            ],
+            "correctIndex": 0,
+            "explanation": "El conector \"first\" indica la primera acción de la rutina, que en el texto es levantarse a las seis."
+          },
+          {
+            "prompt": "¿Cuándo almuerza Mariana con Lucas?",
+            "options": [
+              "Por la mañana (in the morning).",
+              "Después de cenar.",
+              "Por la tarde (in the afternoon).",
+              "Por la noche (at night)."
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice \"In the afternoon, she has lunch with her friend Lucas\", es decir, por la tarde."
+          },
+          {
+            "prompt": "Según el texto, ¿cómo se dice correctamente \"por la noche mira televisión\"?",
+            "options": [
+              "In the night she watches TV.",
+              "On the night she watches TV.",
+              "At night she watches TV.",
+              "At the night she watches TV."
+            ],
+            "correctIndex": 2,
+            "explanation": "Para referirse a la noche se usa \"at night\", no \"in the night\"; en cambio se dice \"in the morning\" e \"in the afternoon\"."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el diálogo sobre la rutina de Sofía y respondé las preguntas.",
+        "text": "Sofía works as an English teacher in Rosario. On her first day, her new colleague, Diego, asks about her daily routine.\n\nSofía says, 'First, I get up at quarter to seven. Then I have a shower and get dressed.'\n\n'What about breakfast?' asks Diego.\n\n'After that, I have breakfast with my husband. We have tea and bread,' says Sofía.\n\n'And when do you go to work?' Diego asks.\n\n'At half past eight, I go to work by bus,' she answers. 'In the morning, I teach three classes. In the afternoon, I correct homework and plan lessons.'\n\n'What do you do at night?' Diego asks.\n\n'At night, I read a book or call my sister. Finally, I go to bed at eleven o'clock,' says Sofía.\n\nDiego smiles and says, 'That sounds like a nice routine!'",
+        "questions": [
+          {
+            "prompt": "¿Cuándo da Sofía sus clases?",
+            "options": [
+              "Por la mañana (in the morning).",
+              "Después de cenar.",
+              "Por la noche (at night).",
+              "Por la tarde (in the afternoon)."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice \"In the morning, I teach three classes\", es decir que enseña por la mañana."
+          },
+          {
+            "prompt": "¿Qué hace Sofía por la tarde?",
+            "options": [
+              "Enseña tres clases.",
+              "Va al trabajo en colectivo.",
+              "Corrige tareas y planea clases.",
+              "Lee un libro."
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto indica \"In the afternoon, I correct homework and plan lessons\", es decir que corrige tareas y planifica clases."
+          },
+          {
+            "prompt": "¿Qué parte del día usa Sofía para leer y llamar a su hermana?",
+            "options": [
+              "At noon.",
+              "In the morning.",
+              "In the afternoon.",
+              "At night."
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa \"at night\" (no \"in the night\") para hablar de actividades nocturnas, como leer o llamar a su hermana."
+          }
+        ]
+      }
+    ]
+  }
+}

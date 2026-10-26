@@ -3,7 +3,7 @@
 
 import { z } from 'zod'
 import type { CurriculumTopic, Subtopic } from '../../shared/curriculum'
-import { generatedExerciseSchema, LONG_TYPES, type ExerciseType, type GeneratedExercise, type StoredExercise } from '../../shared/exercises'
+import { generatedSchemaFor, LONG_TYPES, type ExerciseType, type GeneratedExercise, type StoredExercise } from '../../shared/exercises'
 import type { UnitKind } from '../../shared/progress'
 import { askClaude, shouldRetry, type Ask, type Ticket } from '../claude/bridge'
 import {
@@ -56,11 +56,14 @@ const MAX_ATTEMPTS = 2
 const systemPrompt = (topic: CurriculumTopic): string =>
   roleSystemPrompt(topic.language, 'docente', 'Diseñás ejercicios de práctica exigentes, realistas y sin ambigüedades.')
 
-const poolSchema = z.object({ exercises: z.array(generatedExerciseSchema).min(1) })
-const reviewSchema = z.object({
-  issues: z.array(z.string()),
-  corrections: z.array(z.object({ index: z.number().int().min(0), replacement: generatedExerciseSchema }))
-})
+// Lo que devuelve Claude, con el esquema de solo los tipos pedidos.
+const poolSchema = (types: ExerciseType[]) => z.object({ exercises: z.array(generatedSchemaFor(types)).min(1) })
+const reviewSchema = (types: ExerciseType[]) =>
+  z.object({
+    issues: z.array(z.string()),
+    corrections: z.array(z.object({ index: z.number().int().min(0), replacement: generatedSchemaFor(types) }))
+  })
+const typesOf = (counts: Partial<Record<ExerciseType, number>>): ExerciseType[] => Object.keys(counts) as ExerciseType[]
 
 const KIND_GUIDE: Record<UnitKind, string> = {
   lesson: 'Es la práctica del día en que el alumno trabaja este subtema. Empezá por lo más simple y subí la dificultad de a poco.',
@@ -125,7 +128,7 @@ ${reviewChecks()}
 Si un ejercicio tiene un error, corregilo; si no tiene arreglo, reemplazalo por otro del mismo tipo.
 ${CORRECTIONS_GUIDE}
 
-${formatGuide(topic.language)}
+${formatGuide(topic.language, [...new Set(exercises.map((e) => e.type))])}
 
 Ejercicios a revisar:
 ${numbered(exercises)}`
@@ -146,7 +149,7 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
     label: 'práctica',
     systemPrompt: systemPrompt(request.topic),
     prompt: buildPoolPrompt(request, counts),
-    schema: poolSchema,
+    schema: poolSchema(typesOf(counts)),
     timeoutMs: GENERATION_TIMEOUT_MS,
     ticket: request.ticket
   })
@@ -155,7 +158,7 @@ async function generateGroup(request: PoolRequest, counts: Partial<Record<Exerci
     label: 'práctica · revisión',
     systemPrompt: reviewSystemPrompt(request.topic.language),
     prompt: buildPoolReviewPrompt(request, exercises),
-    schema: reviewSchema,
+    schema: reviewSchema(typesOf(counts)),
     effort: REVIEW_EFFORT,
     timeoutMs: GENERATION_TIMEOUT_MS,
     ticket: request.ticket
@@ -227,7 +230,7 @@ async function generateOnce(request: PoolRequest, counts: Partial<Record<Exercis
         label,
         systemPrompt: systemPrompt(request.topic),
         prompt: buildPoolPrompt(request, counts),
-        schema: poolSchema,
+        schema: poolSchema(typesOf(counts)),
         effort: ONE_PASS_EFFORT,
         timeoutMs: GENERATION_TIMEOUT_MS,
         ticket: request.ticket

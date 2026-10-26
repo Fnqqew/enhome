@@ -1,0 +1,2740 @@
+{
+  "subtopics": {
+    "adjetivos-posesivos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Diego se presenta ante su nuevo jefe en Buenos Aires. Elegí la opción correcta.",
+        "prompt": "Hello, I'm Diego. ___ last name is Pérez.",
+        "options": [
+          "My",
+          "Her",
+          "Your",
+          "His"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como Diego habla de sí mismo, el posesivo correcto es 'my'.",
+        "optionNotes": [
+          "Correcto: Diego habla de sí mismo, por eso usa 'my'.",
+          "Incorrecto: 'her' es el posesivo de ella, pero Diego habla de sí mismo.",
+          "Incorrecto: 'your' se usa para el posesivo de la persona con quien se habla, no de uno mismo.",
+          "Incorrecto: 'his' es el posesivo de él (otra persona masculina), no de quien habla."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Una recepcionista le habla al Sr. Fernández en una clínica. Elegí la opción correcta.",
+        "prompt": "Mr. Fernández, can I see ___ insurance card, please?",
+        "options": [
+          "their",
+          "his",
+          "your",
+          "our"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como la recepcionista le habla directamente al Sr. Fernández, corresponde el posesivo 'your'.",
+        "optionNotes": [
+          "Incorrecto: 'their' es para varias personas, pero acá se habla de un solo paciente.",
+          "Incorrecto: 'his' se usa para hablar de él en tercera persona, no para hablarle directamente.",
+          "Correcto: se dirige directamente al Sr. Fernández, por eso usa 'your'.",
+          "Incorrecto: 'our' indica posesión de quien habla, no del paciente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Nahuel presenta a su hermana en un almuerzo familiar. Elegí la opción correcta.",
+        "prompt": "This is Camila, my sister. ___ husband is a chef.",
+        "options": [
+          "Their",
+          "His",
+          "Her",
+          "Its"
+        ],
+        "correctIndex": 2,
+        "explanation": "Camila es mujer, entonces el posesivo correcto para hablar de su esposo es 'her'.",
+        "optionNotes": [
+          "Incorrecto: 'their' se usa para varias personas, no para una sola.",
+          "Incorrecto: 'his' es el posesivo de un hombre, pero se habla del esposo de Camila.",
+          "Correcto: Camila es mujer, entonces corresponde 'her'.",
+          "Incorrecto: 'its' se usa para cosas o animales, no para personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Agustín le cuenta a su jefe sobre un proyecto que hace con Lucas. Elegí la opción correcta.",
+        "prompt": "Lucas and I are working on a new app. ___ project is almost finished.",
+        "options": [
+          "My",
+          "Your",
+          "Our",
+          "Their"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como Agustín se incluye a sí mismo junto con Lucas, el posesivo correcto es 'our'.",
+        "optionNotes": [
+          "Incorrecto: 'my' indicaría que el proyecto es solo de Agustín, pero también participa Lucas.",
+          "Incorrecto: 'your' es el posesivo de la persona con quien se habla, no de quien habla.",
+          "Correcto: Agustín incluye a Lucas y a sí mismo, por eso usa 'our'.",
+          "Incorrecto: 'their' excluiría a quien habla, pero Agustín también participa del proyecto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Valentina habla de la casa de sus padres en Tandil. Elegí la opción correcta.",
+        "prompt": "My parents live in Tandil. ___ house has a big garden.",
+        "options": [
+          "Their",
+          "Our",
+          "His",
+          "Her"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como 'parents' es plural, el posesivo correcto es 'their'.",
+        "optionNotes": [
+          "Correcto: 'parents' es plural, entonces corresponde 'their'.",
+          "Incorrecto: 'our' incluiría a quien habla como dueño de la casa, pero la casa es de los padres.",
+          "Incorrecto: 'his' es para un solo hombre, pero acá son dos personas.",
+          "Incorrecto: 'her' es para una sola mujer, pero acá son dos personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Una persona describe a un compañero nuevo en la oficina. Elegí la opción correcta.",
+        "prompt": "Martín is the new guy at the office. ___ desk is next to mine.",
+        "options": [
+          "Their",
+          "Her",
+          "His",
+          "Its"
+        ],
+        "correctIndex": 2,
+        "explanation": "Martín es un hombre, entonces el posesivo correcto es 'his'.",
+        "optionNotes": [
+          "Incorrecto: 'their' es para varias personas, pero acá se habla solo de Martín.",
+          "Incorrecto: 'her' es para una mujer, pero Martín es varón.",
+          "Correcto: Martín es un hombre, entonces corresponde 'his'.",
+          "Incorrecto: 'its' se usa para cosas o animales, no para personas."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto según la situación en un hotel de Mar del Plata.",
+        "sentence": "Mrs. López, is this ___ suitcase?",
+        "hint": "(la persona que escucha)",
+        "answers": [
+          "your"
+        ],
+        "explanation": "Cuando se le habla directamente a alguien, el posesivo correcto es 'your', sin importar su género.",
+        "wrongAnswers": [
+          {
+            "answer": "her",
+            "why": "'her' es el posesivo de una tercera persona mujer, pero acá se le habla directamente a la Sra. López."
+          },
+          {
+            "answer": "their",
+            "why": "'their' es para varias personas, pero acá se habla con una sola persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto. Lucía cuenta por qué Nico llega tarde.",
+        "sentence": "Nico is running late because ___ car broke down.",
+        "hint": "(Nico, un varón)",
+        "answers": [
+          "his"
+        ],
+        "explanation": "El posesivo debe concordar con quien posee: como Nico es varón, corresponde 'his'.",
+        "wrongAnswers": [
+          {
+            "answer": "her",
+            "why": "'her' es el posesivo femenino, pero Nico es varón."
+          },
+          {
+            "answer": "its",
+            "why": "'its' se usa para cosas o animales, pero el posesivo se refiere a Nico, una persona."
+          },
+          {
+            "answer": "their",
+            "why": "'their' es para varias personas, pero acá se habla solo de Nico."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto para describir a un gato.",
+        "sentence": "The cat is sleeping again; ___ bed is right next to the window.",
+        "hint": "(el gato, no se especifica el sexo)",
+        "answers": [
+          "its"
+        ],
+        "explanation": "Cuando no se especifica el género de un animal o se habla de una cosa, se usa 'its'.",
+        "wrongAnswers": [
+          {
+            "answer": "his",
+            "why": "'his' supone que el gato es macho, pero la oración no lo especifica."
+          },
+          {
+            "answer": "her",
+            "why": "'her' supone que el gato es hembra, pero la oración no lo especifica."
+          },
+          {
+            "answer": "their",
+            "why": "'their' es para varios animales o personas, pero acá hay un solo gato."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto. Agustina y Tomás están mudándose a un departamento nuevo.",
+        "sentence": "Agustina and Tomás are excited because ___ new apartment has a balcony.",
+        "hint": "(Agustina y Tomás, los dos)",
+        "answers": [
+          "their"
+        ],
+        "explanation": "Como Agustina y Tomás son dos personas, el posesivo correcto es 'their'.",
+        "wrongAnswers": [
+          {
+            "answer": "our",
+            "why": "'our' incluiría a quien habla como dueño del departamento, pero el departamento es de Agustina y Tomás."
+          },
+          {
+            "answer": "his",
+            "why": "'his' es singular y masculino, pero acá son dos personas."
+          },
+          {
+            "answer": "her",
+            "why": "'her' es singular y femenino, pero acá son dos personas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto. Un entrevistador le habla a un candidato.",
+        "sentence": "Before we start, can you tell me about ___ previous job?",
+        "hint": "(la persona entrevistada)",
+        "answers": [
+          "your"
+        ],
+        "explanation": "Cuando se le habla directamente a alguien, el posesivo correcto es 'your'.",
+        "wrongAnswers": [
+          {
+            "answer": "his",
+            "why": "'his' es para hablar de otra persona en tercera persona, pero el entrevistador le habla directamente al candidato."
+          },
+          {
+            "answer": "my",
+            "why": "'my' indicaría que el entrevistador habla de su propio trabajo anterior, pero está preguntando por el del candidato."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto. Mateo habla de su propia familia con un amigo.",
+        "sentence": "I love ___ family; we always have dinner together on Sundays.",
+        "hint": "(quien habla)",
+        "answers": [
+          "my"
+        ],
+        "explanation": "Cuando alguien habla de su propia familia, el posesivo correcto es 'my'.",
+        "wrongAnswers": [
+          {
+            "answer": "his",
+            "why": "'his' es el posesivo de otra persona (varón), pero quien habla se refiere a su propia familia."
+          },
+          {
+            "answer": "your",
+            "why": "'your' es el posesivo de la persona con quien se habla, pero acá se habla de la propia familia de quien dice la oración."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Her brother works at a bank in Córdoba.",
+        "alternatives": [],
+        "translation": "El hermano de ella trabaja en un banco en Córdoba.",
+        "explanation": "El posesivo 'her' va siempre antes del sustantivo e indica que el hermano es de ella.",
+        "tokens": [
+          "Her",
+          "works",
+          "Córdoba",
+          "bank",
+          "at",
+          "brother",
+          "a",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Their new house has three bedrooms.",
+        "alternatives": [],
+        "translation": "La casa nueva de ellos tiene tres habitaciones.",
+        "explanation": "'Their' se usa porque la casa pertenece a más de una persona.",
+        "tokens": [
+          "has",
+          "Their",
+          "new",
+          "bedrooms",
+          "three",
+          "house"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "His girlfriend is a nurse in Salta.",
+        "alternatives": [],
+        "translation": "La novia de él es enfermera en Salta.",
+        "explanation": "'His' indica que la novia es de él, un varón.",
+        "tokens": [
+          "girlfriend",
+          "Salta",
+          "in",
+          "nurse",
+          "His",
+          "a",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Our flight leaves early tomorrow morning.",
+        "alternatives": [],
+        "translation": "Nuestro vuelo sale temprano mañana por la mañana.",
+        "explanation": "'Our' se usa porque el vuelo es de quien habla y de alguien más, como un compañero de viaje.",
+        "tokens": [
+          "tomorrow",
+          "leaves",
+          "morning",
+          "Our",
+          "flight",
+          "early"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Its screen shows an error message now.",
+        "alternatives": [],
+        "translation": "Su pantalla muestra un mensaje de error ahora.",
+        "explanation": "'Its' se usa para referirse a una cosa, en este caso un aparato electrónico.",
+        "tokens": [
+          "shows",
+          "an",
+          "message",
+          "now",
+          "Its",
+          "error",
+          "screen"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta descripción sobre Laura y su esposo, dueños de un restaurante en Mendoza.",
+        "sentence": "Laura and his husband own a small restaurant in Mendoza.",
+        "answers": [
+          "Laura and her husband own a small restaurant in Mendoza."
+        ],
+        "explanation": "El posesivo debe concordar con quien posee: como Laura es mujer, el esposo es 'her husband', no 'his husband'.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura and her husband owns a small restaurant in Mendoza.",
+            "why": "Cambia el verbo en vez de corregir el posesivo; además 'owns' no concuerda con el sujeto plural 'Laura and her husband'."
+          },
+          {
+            "answer": "Laura and their husband own a small restaurant in Mendoza.",
+            "why": "Usa 'their' (plural), pero el posesivo debe concordar con Laura, una sola persona, por eso corresponde 'her'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta descripción de la startup TechNow.",
+        "sentence": "TechNow is a startup. His offices are in Palermo.",
+        "answers": [
+          "TechNow is a startup. Its offices are in Palermo."
+        ],
+        "explanation": "Para referirse a una empresa o cosa se usa el posesivo 'its', no 'his' ni 'her'.",
+        "wrongAnswers": [
+          {
+            "answer": "TechNow is a startup. Her offices are in Palermo.",
+            "why": "Usa 'her', un posesivo femenino de persona, pero TechNow es una empresa (una cosa), corresponde 'its'."
+          },
+          {
+            "answer": "TechNow is a startup. Their office is in Palermo.",
+            "why": "Corrige el número del sustantivo en vez del posesivo, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre la costumbre de Mariano.",
+        "sentence": "Mariano calls your mother every Sunday to say hello.",
+        "answers": [
+          "Mariano calls his mother every Sunday to say hello."
+        ],
+        "explanation": "Como la oración habla de Mariano, un varón, el posesivo correcto es 'his mother', no 'your mother'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariano call his mother every Sunday to say hello.",
+            "why": "Corrige el verbo (quita la 's') en vez del posesivo, pero 'calls' ya estaba bien conjugado para tercera persona singular."
+          },
+          {
+            "answer": "Mariano calls her mother every Sunday to say hello.",
+            "why": "Usa 'her' (posesivo femenino), pero Mariano es varón, por lo tanto corresponde 'his'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre Valentina e Iván, que vendieron su departamento.",
+        "sentence": "Valentina and Iván sold his apartment last month.",
+        "answers": [
+          "Valentina and Iván sold their apartment last month."
+        ],
+        "explanation": "Como Valentina e Iván son dos personas, el posesivo correcto es 'their', no 'his'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina and Iván sold her apartment last month.",
+            "why": "Cambia a un posesivo femenino singular, pero son dos personas, por eso corresponde 'their'."
+          },
+          {
+            "answer": "Valentina and Iván sell their apartment last month.",
+            "why": "Corrige el verbo en vez del posesivo; el error real estaba en 'his', no en el tiempo verbal 'sold'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre un auto viejo.",
+        "sentence": "My car is old, but her engine still works perfectly.",
+        "answers": [
+          "My car is old, but its engine still works perfectly."
+        ],
+        "explanation": "Para referirse a una cosa como un auto se usa el posesivo 'its', no 'her' ni 'his'.",
+        "wrongAnswers": [
+          {
+            "answer": "My car is old, but his engine still works perfectly.",
+            "why": "Usa 'his', un posesivo masculino de persona, pero un auto es una cosa, corresponde 'its'."
+          },
+          {
+            "answer": "My car is old, but their engine still works perfectly.",
+            "why": "Usa 'their' (plural), pero se habla de un solo auto, por eso corresponde 'its'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermana trabaja en un hospital en La Plata.",
+        "answers": [
+          "My sister works at a hospital in La Plata.",
+          "My sister works in a hospital in La Plata."
+        ],
+        "explanation": "Como quien habla se refiere a su propia hermana, el posesivo correcto es 'my'.",
+        "wrongAnswers": [
+          {
+            "answer": "Her sister works at a hospital in La Plata.",
+            "why": "Traduce como si fuera la hermana de otra persona, pero el posesivo debe ser 'my' porque quien habla se refiere a su propia hermana."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Podés darme tu número de teléfono?",
+        "answers": [
+          "Can you give me your phone number?",
+          "Could you give me your phone number?"
+        ],
+        "explanation": "Cuando se le pide algo directamente a alguien, el posesivo correcto es 'your'.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you give me his phone number?",
+            "why": "Usa el posesivo de tercera persona en vez de 'your', que corresponde a la persona con quien se habla."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Sofía y Martín venden su casa en Rosario.",
+        "answers": [
+          "Sofía and Martín are selling their house in Rosario.",
+          "Sofia and Martin are selling their house in Rosario.",
+          "Sofía and Martín sell their house in Rosario."
+        ],
+        "explanation": "Como Sofía y Martín son dos personas, el posesivo correcto es 'their'.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía and Martín are selling his house in Rosario.",
+            "why": "Usa 'his', un posesivo singular masculino, pero son dos personas, por eso corresponde 'their'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nuestro vuelo sale a las ocho de la noche.",
+        "answers": [
+          "Our flight leaves at eight at night.",
+          "Our flight leaves at eight in the evening.",
+          "Our flight leaves at 8 p.m."
+        ],
+        "explanation": "Como el vuelo es de quien habla y de alguien más, el posesivo correcto es 'our'.",
+        "wrongAnswers": [
+          {
+            "answer": "Your flight leaves at eight at night.",
+            "why": "Usa 'your' en vez de 'our', pero la oración habla del vuelo de quien habla junto con otra persona."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El perro perdió su pelota en el parque.",
+        "answers": [
+          "The dog lost its ball in the park."
+        ],
+        "explanation": "Cuando no se especifica el género de un animal, el posesivo correcto es 'its'.",
+        "wrongAnswers": [
+          {
+            "answer": "The dog lost his ball in the park.",
+            "why": "'His' asume que el perro es macho sin que la oración lo especifique; para animales o cosas sin género indicado se usa 'its'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Laura y vos tienen que traer sus pasaportes para el vuelo.",
+        "answers": [
+          "Laura and you have to bring your passports for the flight.",
+          "Laura and you need to bring your passports for the flight."
+        ],
+        "explanation": "Como se incluye a la persona con quien se habla, el posesivo correcto es 'your'.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura and you have to bring their passports for the flight.",
+            "why": "Usa 'their' en vez de 'your', pero se habla de Laura y de la persona que escucha, no de terceros."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los adjetivos posesivos.",
+        "text": "Hi! My name is Valentina and I live in Mendoza. This is my new apartment. It is small, but I like it a lot. My bedroom has a big window, and its view is beautiful. My boyfriend's name is Tomás. His office is near my apartment, so he visits me every day. My neighbors are Marta and Juan. Their dog is very friendly, and its name is Rocky. Marta works at a bank, and her husband works at a school. Juan is a doctor, and his patients love him. Our building is quiet, and our neighbors are nice. I love my new home!",
+        "questions": [
+          {
+            "prompt": "En 'My bedroom has a big window, and its view is beautiful', ¿a qué se refiere 'its'?",
+            "options": [
+              "the apartment",
+              "the window",
+              "the bedroom",
+              "the building"
+            ],
+            "correctIndex": 1,
+            "explanation": "'Its' se refiere a la palabra más cercana que la antecede, 'the window', porque es una cosa (no una persona)."
+          },
+          {
+            "prompt": "¿Por qué el texto dice 'her husband' para hablar del esposo de Marta?",
+            "options": [
+              "Porque 'husband' es una palabra femenina",
+              "Porque es un error del texto",
+              "Porque 'husband' es plural",
+              "Porque Marta, la dueña, es mujer"
+            ],
+            "correctIndex": 3,
+            "explanation": "El adjetivo posesivo concuerda con quien posee algo: como Marta es mujer, se usa 'her'."
+          },
+          {
+            "prompt": "¿De quiénes es el perro Rocky?",
+            "options": [
+              "Del vecino de enfrente",
+              "De Tomás",
+              "De Valentina",
+              "De Marta y Juan"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'Their dog is very friendly, and its name is Rocky', y 'their' se refiere a Marta y Juan, los dueños del perro."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los adjetivos posesivos.",
+        "text": "Today, Lucas has a job interview at a travel agency in Buenos Aires. His interview is at ten o'clock. He wears his best suit and brings his resume. The manager, Mrs. Ortiz, welcomes him into her office. Her desk is full of papers, but her smile is friendly. Mrs. Ortiz asks about his last job. Lucas says, 'My last job was at a hotel. My boss was very nice, and our team worked well together.' Mrs. Ortiz tells Lucas about the company. 'Our agency is small, but our clients love us,' she says. Then she introduces her assistant, Pablo. 'His name is Pablo, and his English is excellent,' she explains. At the end, Lucas thanks Mrs. Ortiz for her time and leaves the office with a big smile.",
+        "questions": [
+          {
+            "prompt": "¿De quién es la oficina en la que entra Lucas?",
+            "options": [
+              "De la agencia de otro empleado",
+              "De Pablo",
+              "De la señora Ortiz",
+              "De Lucas"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'her office', y 'her' se refiere a Mrs. Ortiz, la dueña de la oficina."
+          },
+          {
+            "prompt": "¿De quién habla la señora Ortiz cuando dice 'His English is excellent'?",
+            "options": [
+              "De ella misma",
+              "Del jefe anterior de Lucas",
+              "De Pablo",
+              "De Lucas"
+            ],
+            "correctIndex": 2,
+            "explanation": "'His' se refiere a Pablo, el asistente que la señora Ortiz acaba de presentar."
+          },
+          {
+            "prompt": "Cuando Lucas dice 'our team worked well together', ¿a qué equipo se refiere?",
+            "options": [
+              "Al equipo de la agencia de viajes de la señora Ortiz",
+              "A su equipo en su trabajo anterior en el hotel",
+              "Al equipo de Pablo",
+              "A los clientes de la agencia"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lucas usa 'our' para hablar de su equipo en el hotel, el trabajo que mencionó justo antes en la misma oración."
+          }
+        ]
+      }
+    ],
+    "genitivo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ office is on the third floor.",
+        "options": [
+          "Anas'",
+          "Anas",
+          "Ana's",
+          "Ana"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para indicar posesión con un nombre propio se agrega 's: Ana's office.",
+        "optionNotes": [
+          "El apóstrofo va antes de la s en los nombres propios singulares, no 'Anas''.",
+          "Falta el apóstrofo; 'Anas' no es una forma posesiva.",
+          "Correcto: Ana's indica que la oficina es de Ana.",
+          "Sin 's' no se indica posesión; falta agregar 's."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My ___ house is near the beach.",
+        "options": [
+          "parent's",
+          "parents",
+          "parents'",
+          "parents's"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con plurales terminados en -s, solo se agrega el apóstrofo: parents'.",
+        "optionNotes": [
+          "'parent's' indicaría que es la casa de un solo padre, no de ambos.",
+          "Sin apóstrofo no se indica posesión.",
+          "Correcto: 'parents' ya termina en s, entonces solo se agrega el apóstrofo.",
+          "No se agrega una 's' extra cuando el plural ya termina en s; alcanza con el apóstrofo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The ___ toys are all over the floor.",
+        "options": [
+          "childrens'",
+          "childs'",
+          "children",
+          "children's"
+        ],
+        "correctIndex": 3,
+        "explanation": "Los plurales irregulares como 'children' agregan 's, igual que un sustantivo singular: children's.",
+        "optionNotes": [
+          "'childrens' no existe; 'children' ya es el plural de 'child'.",
+          "'childs' no es una palabra; el plural correcto es 'children'.",
+          "Sin 's' no se indica posesión.",
+          "Correcto: children es plural irregular y se le agrega 's como a un singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ raining outside, so bring an umbrella.",
+        "options": [
+          "Its'",
+          "It's",
+          "It isn't",
+          "Its"
+        ],
+        "correctIndex": 1,
+        "explanation": "'It's' es la contracción de 'it is', necesaria para decir 'está lloviendo'.",
+        "optionNotes": [
+          "'Its'' no existe; no se usa apóstrofo después de 'its'.",
+          "Correcto: it's = it is, usado para describir el clima.",
+          "'It isn't' significa 'no está', lo opuesto a lo que necesita la oración.",
+          "'Its' sin apóstrofo es el posesivo, no significa 'it is'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The dog is happy because ___ owner came home.",
+        "options": [
+          "it's",
+          "it is",
+          "its'",
+          "its"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Its' sin apóstrofo es el adjetivo posesivo para cosas o animales.",
+        "optionNotes": [
+          "'it's' significa 'it is', no tiene sentido aquí como posesivo.",
+          "'it is owner' no tiene sentido gramatical en esta oración.",
+          "'its'' no existe; el posesivo 'its' nunca lleva apóstrofo.",
+          "Correcto: 'its' indica que el dueño es del perro."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ car is in the garage.",
+        "options": [
+          "Carlo's",
+          "Carloss'",
+          "Carlos",
+          "Carlos's"
+        ],
+        "correctIndex": 3,
+        "explanation": "Aunque el nombre termine en s, se agrega 's para indicar posesión: Carlos's.",
+        "optionNotes": [
+          "'Carlo's' cambia el nombre; el nombre es Carlos, no Carlo.",
+          "'Carloss'' no es una forma correcta; no se duplica la s antes del apóstrofo.",
+          "Sin 's' no se indica que el auto es de Carlos.",
+          "Correcto: se agrega 's aunque el nombre ya termine en s."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma posesiva correcta.",
+        "sentence": "___ passport is on the table.",
+        "hint": "(Lucía)",
+        "answers": [
+          "Lucía's"
+        ],
+        "explanation": "Para mostrar posesión con un nombre propio se agrega 's: Lucía's passport.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucias",
+            "why": "Falta el apóstrofo antes de la s para indicar posesión."
+          },
+          {
+            "answer": "Lucía",
+            "why": "Sin 's no se indica que el pasaporte es de Lucía."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma posesiva correcta.",
+        "sentence": "The ___ toys are in the box.",
+        "hint": "(children)",
+        "answers": [
+          "children's"
+        ],
+        "explanation": "Los plurales irregulares llevan 's, igual que un sustantivo singular: children's.",
+        "wrongAnswers": [
+          {
+            "answer": "childrens'",
+            "why": "'children' ya es plural; no se agrega una s extra antes del apóstrofo."
+          },
+          {
+            "answer": "childs'",
+            "why": "'childs' no existe; el plural correcto de child es children."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma posesiva correcta.",
+        "sentence": "My ___ car is very old.",
+        "hint": "(parents)",
+        "answers": [
+          "parents'"
+        ],
+        "explanation": "Con plurales terminados en -s, solo se agrega el apóstrofo: parents'.",
+        "wrongAnswers": [
+          {
+            "answer": "parent's",
+            "why": "'parent's' se refiere a un solo padre, no a ambos."
+          },
+          {
+            "answer": "parents's",
+            "why": "Cuando el plural ya termina en s, no se agrega una s extra; solo el apóstrofo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "___ raining a lot today, isn't it?",
+        "hint": "(it is)",
+        "answers": [
+          "It's"
+        ],
+        "explanation": "It's es la contracción de 'it is'.",
+        "wrongAnswers": [
+          {
+            "answer": "Its",
+            "why": "'Its' es el posesivo; para decir 'it is' se necesita 'it's' con apóstrofo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "The cat is sleeping because ___ bed is warm.",
+        "hint": "(posesivo de cat)",
+        "answers": [
+          "its"
+        ],
+        "explanation": "'Its' sin apóstrofo es el adjetivo posesivo para animales y cosas.",
+        "wrongAnswers": [
+          {
+            "answer": "it's",
+            "why": "'it's' significa 'it is', no es el posesivo que necesita esta oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma posesiva correcta.",
+        "sentence": "This is ___ restaurant.",
+        "hint": "(James)",
+        "answers": [
+          "James's",
+          "James'"
+        ],
+        "explanation": "Con nombres que terminan en s, se puede agregar 's o solo el apóstrofo: James's/James'.",
+        "wrongAnswers": [
+          {
+            "answer": "James",
+            "why": "Sin 's no se indica que el restaurante es de James."
+          },
+          {
+            "answer": "Jamess'",
+            "why": "No se duplica la s; alcanza con agregar 's o solo el apóstrofo tras la s existente."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sofía's brother works at a bank.",
+        "alternatives": [],
+        "translation": "El hermano de Sofía trabaja en un banco.",
+        "explanation": "'Sofía's brother' muestra posesión con 's: el hermano de Sofía.",
+        "tokens": [
+          "at",
+          "brother",
+          "a",
+          "works",
+          "bank",
+          "Sofía's"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My parents' house is near the station.",
+        "alternatives": [],
+        "translation": "La casa de mis padres está cerca de la estación.",
+        "explanation": "'Parents'' indica posesión plural solo con apóstrofo, ya que 'parents' termina en s.",
+        "tokens": [
+          "station",
+          "My",
+          "house",
+          "parents'",
+          "near",
+          "the",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The children's bedroom has two beds.",
+        "alternatives": [],
+        "translation": "El dormitorio de los chicos tiene dos camas.",
+        "explanation": "'Children's' es el posesivo del plural irregular 'children'.",
+        "tokens": [
+          "The",
+          "beds",
+          "children's",
+          "two",
+          "bedroom",
+          "has"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "It's cold today, so wear a jacket.",
+        "alternatives": [],
+        "translation": "Hoy hace frío, así que ponete una chaqueta.",
+        "explanation": "'It's' es la contracción de 'it is', usada para hablar del clima.",
+        "tokens": [
+          "wear",
+          "jacket",
+          "It's",
+          "so",
+          "cold",
+          "today,",
+          "a"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The cat likes its new soft bed.",
+        "alternatives": [],
+        "translation": "Al gato le gusta su nueva cama blanda.",
+        "explanation": "'Its' es el adjetivo posesivo para animales, sin apóstrofo.",
+        "tokens": [
+          "its",
+          "cat",
+          "new",
+          "soft",
+          "The",
+          "bed",
+          "likes"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "Lauras car is parked outside the clinic.",
+        "answers": [
+          "Laura's car is parked outside the clinic."
+        ],
+        "explanation": "Falta el apóstrofo antes de la s para mostrar que el auto es de Laura: Laura's.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura car is parked outside the clinic.",
+            "why": "Quitar la 's' no indica posesión; se necesita el apóstrofo: Laura's."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "My parent's house is very big, and both of them live there.",
+        "answers": [
+          "My parents' house is very big, and both of them live there."
+        ],
+        "explanation": "Como se refiere a ambos padres (plural), corresponde 'parents'' con el apóstrofo después de la s.",
+        "wrongAnswers": [
+          {
+            "answer": "My parents's house is very big, and both of them live there.",
+            "why": "Cuando el plural ya termina en s, no se agrega una s extra; alcanza con el apóstrofo: parents'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "The childrens' shoes are in the closet.",
+        "answers": [
+          "The children's shoes are in the closet."
+        ],
+        "explanation": "'Children' ya es plural irregular; se agrega 's como en un sustantivo singular: children's.",
+        "wrongAnswers": [
+          {
+            "answer": "The childs' shoes are in the closet.",
+            "why": "'childs' no existe; el plural correcto de child es children."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "Its raining, so we need an umbrella.",
+        "answers": [
+          "It's raining, so we need an umbrella."
+        ],
+        "explanation": "'It's' es la contracción de 'it is'; 'its' sin apóstrofo es el posesivo, que no corresponde aquí.",
+        "wrongAnswers": [
+          {
+            "answer": "It isn't raining, so we need an umbrella.",
+            "why": "Eso cambia el significado a negativo; el error era solo de ortografía en 'Its', que debía ser 'It's'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el único error de la oración.",
+        "sentence": "The dog loves it's new toy.",
+        "answers": [
+          "The dog loves its new toy."
+        ],
+        "explanation": "'Its' sin apóstrofo es el adjetivo posesivo para el perro (animal), mientras que 'it's' significa 'it is'.",
+        "wrongAnswers": [
+          {
+            "answer": "The dog loves it toy.",
+            "why": "Quitar 's' deja la oración incompleta; se necesita el posesivo 'its', no eliminar la palabra."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El auto de Martín está en el taller.",
+        "answers": [
+          "Martín's car is at the mechanic's.",
+          "Martín's car is at the garage."
+        ],
+        "explanation": "Con personas, la posesión se expresa con 's: Martín's car.",
+        "wrongAnswers": [
+          {
+            "answer": "The car of Martín is at the mechanic's.",
+            "why": "En inglés no se usa 'the car of + nombre'; se usa 's: Martín's car."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La casa de mis padres es enorme.",
+        "answers": [
+          "My parents' house is huge.",
+          "My parents' house is enormous."
+        ],
+        "explanation": "'Parents'' lleva solo el apóstrofo porque el plural ya termina en s.",
+        "wrongAnswers": [
+          {
+            "answer": "My parents's house is huge.",
+            "why": "Cuando el plural ya termina en s, no se agrega una s extra; alcanza con el apóstrofo: parents'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Los juguetes de los chicos están en el jardín.",
+        "answers": [
+          "The children's toys are in the garden.",
+          "The children's toys are in the yard."
+        ],
+        "explanation": "'Children's' es el posesivo correcto del plural irregular 'children'.",
+        "wrongAnswers": [
+          {
+            "answer": "The childrens' toys are in the garden.",
+            "why": "'children' ya es plural; no se agrega una s extra antes del apóstrofo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Está lloviendo mucho esta tarde.",
+        "answers": [
+          "It's raining a lot this afternoon.",
+          "It is raining a lot this afternoon."
+        ],
+        "explanation": "'It's' = it is, se usa para describir el clima; también se puede usar la forma sin contraer 'it is'.",
+        "wrongAnswers": [
+          {
+            "answer": "Its raining a lot this afternoon.",
+            "why": "Falta el apóstrofo; 'it's' es la contracción de 'it is', necesaria aquí."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El gato perdió su juguete favorito.",
+        "answers": [
+          "The cat lost its favorite toy.",
+          "The cat lost its favourite toy."
+        ],
+        "explanation": "'Its' sin apóstrofo es el adjetivo posesivo para animales; 'favourite' es la ortografía británica de 'favorite'.",
+        "wrongAnswers": [
+          {
+            "answer": "The cat lost it's favorite toy.",
+            "why": "'it's' significa 'it is'; para el posesivo del gato se necesita 'its' sin apóstrofo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Cómo se llama la jefa de Carlos?",
+        "answers": [
+          "What's the name of Carlos's boss?",
+          "What is the name of Carlos's boss?",
+          "What's Carlos's boss's name?"
+        ],
+        "explanation": "Se usa 's para formar el posesivo 'Carlos's boss' (la jefa de Carlos); se puede preguntar por 'the name of Carlos's boss' o encadenar dos posesivos en 'Carlos's boss's name'.",
+        "wrongAnswers": [
+          {
+            "answer": "What's the name of the boss of Carlos?",
+            "why": "En inglés no se usa 'the boss of + nombre'; se dice Carlos's boss, con 's."
+          },
+          {
+            "answer": "What's Carlos boss's name?",
+            "why": "Falta el apóstrofo después de Carlos para indicar posesión: Carlos's."
+          }
+        ]
+      }
+    ],
+    "pronombres-objeto": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre objeto correcto.",
+        "prompt": "Laura can't talk now. Please call ___ tomorrow instead of today.",
+        "options": [
+          "them",
+          "her",
+          "it",
+          "she"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después del verbo se usa el pronombre objeto; para una mujer (she) corresponde 'her'.",
+        "optionNotes": [
+          "Incorrecto: 'them' es plural y acá se habla de una sola persona, Laura.",
+          "Correcto: 'her' es el pronombre objeto para 'Laura' (she).",
+          "Incorrecto: 'it' no se usa para referirse a personas.",
+          "Incorrecto: 'she' es pronombre sujeto, no se usa después del verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre objeto correcto.",
+        "prompt": "Mariana and Tomás are waiting at the airport. Can you pick ___ up at 5 PM?",
+        "options": [
+          "them",
+          "they",
+          "us",
+          "him"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para referirse a dos o más personas ya mencionadas se usa el pronombre objeto 'them'.",
+        "optionNotes": [
+          "Correcto: 'them' es el pronombre objeto para 'Mariana and Tomás' (they).",
+          "Incorrecto: 'they' es pronombre sujeto, no objeto.",
+          "Incorrecto: 'us' se refiere al hablante y otra persona, no a Mariana y Tomás.",
+          "Incorrecto: 'him' es singular y acá se habla de dos personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre objeto correcto.",
+        "prompt": "The doctor wants to see Martín again next week. The nurse will call ___ to confirm the appointment.",
+        "options": [
+          "them",
+          "him",
+          "it",
+          "he"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para un hombre (he) ya mencionado, el pronombre objeto correcto es 'him'.",
+        "optionNotes": [
+          "Incorrecto: 'them' es plural, pero se habla de una sola persona, Martín.",
+          "Correcto: 'him' es el pronombre objeto para Martín (he).",
+          "Incorrecto: 'it' no se usa para referirse a personas.",
+          "Incorrecto: 'he' es pronombre sujeto, no se usa después del verbo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre objeto correcto.",
+        "prompt": "This apartment is a bit small, but Juan really likes ___.",
+        "options": [
+          "it",
+          "him",
+          "them",
+          "its"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para referirse a una cosa en singular, como 'apartment', se usa el pronombre objeto 'it'.",
+        "optionNotes": [
+          "Correcto: 'it' es el pronombre objeto para 'apartment', una cosa en singular.",
+          "Incorrecto: 'him' se usa para personas, no para cosas.",
+          "Incorrecto: 'them' es plural, pero 'apartment' es singular.",
+          "Incorrecto: 'its' es un posesivo ('su'), no un pronombre objeto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre objeto correcto.",
+        "prompt": "The manager liked Sofía's resume, so he invited ___ for an interview.",
+        "options": [
+          "she",
+          "hers",
+          "her",
+          "it"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para una mujer (she) ya mencionada, el pronombre objeto correcto es 'her'.",
+        "optionNotes": [
+          "Incorrecto: 'she' es pronombre sujeto, no se usa después del verbo.",
+          "Incorrecto: 'hers' es un pronombre posesivo ('de ella'), no un pronombre objeto.",
+          "Correcto: 'her' es el pronombre objeto para Sofía (she).",
+          "Incorrecto: 'it' no se usa para referirse a personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre objeto correcto.",
+        "prompt": "Juan and I are going to the movies tonight. Do you want to come with ___?",
+        "options": [
+          "us",
+          "we",
+          "them",
+          "you"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de una preposición como 'with' se usa el pronombre objeto; para 'Juan and I' corresponde 'us'.",
+        "optionNotes": [
+          "Correcto: 'us' es el pronombre objeto que se usa después de la preposición 'with' para referirse a 'Juan and I'.",
+          "Incorrecto: 'we' es pronombre sujeto, no se usa después de una preposición.",
+          "Incorrecto: 'them' se refiere a otras personas, no a Juan y el hablante.",
+          "Incorrecto: 'you' se refiere al oyente, no incluye a Juan y al hablante."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre objeto correcto.",
+        "sentence": "Laura can't talk now, so please call ___ later.",
+        "hint": "(pronombre objeto para 'Laura')",
+        "answers": [
+          "her"
+        ],
+        "explanation": "Para una mujer (she) ya mencionada, el pronombre objeto correcto es 'her'.",
+        "wrongAnswers": [
+          {
+            "answer": "she",
+            "why": "'She' es pronombre sujeto; después del verbo se necesita el pronombre objeto 'her'."
+          },
+          {
+            "answer": "it",
+            "why": "'It' no se usa para referirse a personas como Laura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre objeto correcto.",
+        "sentence": "Mariana and Tomás are at the airport. Can you pick ___ up at five?",
+        "hint": "(pronombre objeto para 'Mariana and Tomás')",
+        "answers": [
+          "them"
+        ],
+        "explanation": "Para dos o más personas ya mencionadas se usa el pronombre objeto 'them'.",
+        "wrongAnswers": [
+          {
+            "answer": "they",
+            "why": "'They' es pronombre sujeto, no se usa después del verbo."
+          },
+          {
+            "answer": "him",
+            "why": "'Him' es singular, pero se habla de dos personas, Mariana y Tomás."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre objeto correcto.",
+        "sentence": "The nurse will call ___ to confirm Martín's appointment.",
+        "hint": "(pronombre objeto para 'Martín')",
+        "answers": [
+          "him"
+        ],
+        "explanation": "Para un hombre (he) ya mencionado, el pronombre objeto correcto es 'him'.",
+        "wrongAnswers": [
+          {
+            "answer": "he",
+            "why": "'He' es pronombre sujeto; después del verbo se necesita el pronombre objeto 'him'."
+          },
+          {
+            "answer": "it",
+            "why": "'It' no se usa para referirse a personas como Martín."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre objeto correcto.",
+        "sentence": "This apartment is small, but Juan really likes ___.",
+        "hint": "(pronombre objeto para 'apartment')",
+        "answers": [
+          "it"
+        ],
+        "explanation": "Para una cosa en singular, como 'apartment', se usa el pronombre objeto 'it'.",
+        "wrongAnswers": [
+          {
+            "answer": "them",
+            "why": "'Them' es plural, pero 'apartment' es singular."
+          },
+          {
+            "answer": "him",
+            "why": "'Him' se usa para personas, no para cosas como un departamento."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre objeto correcto.",
+        "sentence": "The manager liked Sofía's resume, so he invited ___ for an interview.",
+        "hint": "(pronombre objeto para 'Sofía')",
+        "answers": [
+          "her"
+        ],
+        "explanation": "Para una mujer (she) ya mencionada, el pronombre objeto correcto es 'her'.",
+        "wrongAnswers": [
+          {
+            "answer": "she",
+            "why": "'She' es pronombre sujeto; después del verbo se necesita el pronombre objeto 'her'."
+          },
+          {
+            "answer": "it",
+            "why": "'It' no se usa para referirse a personas como Sofía."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre objeto correcto.",
+        "sentence": "Juan and I are going to the movies. Do you want to come with ___?",
+        "hint": "(pronombre objeto para 'Juan and I')",
+        "answers": [
+          "us"
+        ],
+        "explanation": "Después de una preposición como 'with' se usa el pronombre objeto; para 'Juan and I' corresponde 'us'.",
+        "wrongAnswers": [
+          {
+            "answer": "we",
+            "why": "'We' es pronombre sujeto, no se usa después de una preposición como 'with'."
+          },
+          {
+            "answer": "them",
+            "why": "'Them' se refiere a otras personas, no a Juan y el hablante."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Please call me tomorrow morning.",
+        "alternatives": [
+          "Call me tomorrow morning, please."
+        ],
+        "translation": "Por favor, llamame mañana por la mañana.",
+        "explanation": "'Me' es el pronombre objeto que va después del verbo 'call' para referirse al hablante.",
+        "tokens": [
+          "morning",
+          "Please",
+          "me",
+          "tomorrow",
+          "call"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Can you pick them up at five?",
+        "alternatives": [],
+        "translation": "¿Podés pasar a buscarlos a las cinco?",
+        "explanation": "'Them' es el pronombre objeto que se usa para referirse a personas ya mencionadas, en este caso en plural.",
+        "tokens": [
+          "Can",
+          "five",
+          "up",
+          "pick",
+          "at",
+          "them",
+          "you"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The nurse will call him tomorrow.",
+        "alternatives": [
+          "Tomorrow, the nurse will call him."
+        ],
+        "translation": "La enfermera lo va a llamar mañana.",
+        "explanation": "'Him' es el pronombre objeto que va después del verbo 'call' para referirse a un hombre.",
+        "tokens": [
+          "call",
+          "tomorrow",
+          "him",
+          "The",
+          "nurse",
+          "will"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "This apartment is small, but I like it.",
+        "alternatives": [],
+        "translation": "Este departamento es chico, pero me gusta.",
+        "explanation": "'It' es el pronombre objeto que se usa para referirse a cosas en singular, como 'apartment'.",
+        "tokens": [
+          "small,",
+          "it",
+          "is",
+          "apartment",
+          "like",
+          "but",
+          "This",
+          "I"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Do you want to come with us?",
+        "alternatives": [],
+        "translation": "¿Querés venir con nosotros?",
+        "explanation": "'Us' es el pronombre objeto que va después de la preposición 'with' para referirse al hablante y otra persona.",
+        "tokens": [
+          "with",
+          "to",
+          "you",
+          "come",
+          "us",
+          "want",
+          "Do"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Please call I tomorrow.",
+        "answers": [
+          "Please call me tomorrow."
+        ],
+        "explanation": "Después del verbo se usa el pronombre objeto 'me', no el sujeto 'I'.",
+        "wrongAnswers": [
+          {
+            "answer": "Please called me tomorrow.",
+            "why": "El verbo 'call' ya estaba bien en presente; el error real era el pronombre sujeto 'I' en lugar del objeto 'me'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Can you pick they up at five?",
+        "answers": [
+          "Can you pick them up at five?"
+        ],
+        "explanation": "Después del verbo se usa el pronombre objeto 'them', no el sujeto 'they'.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you picks them up at five?",
+            "why": "El verbo 'pick' ya estaba bien; el error real era el pronombre sujeto 'they' en lugar del objeto 'them'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "The nurse will call he tomorrow.",
+        "answers": [
+          "The nurse will call him tomorrow."
+        ],
+        "explanation": "Después del verbo se usa el pronombre objeto 'him', no el sujeto 'he'.",
+        "wrongAnswers": [
+          {
+            "answer": "The nurse will calls him tomorrow.",
+            "why": "El verbo 'call' ya estaba bien después de 'will'; el error real era el pronombre sujeto 'he' en lugar del objeto 'him'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "This apartment is small, but I like he.",
+        "answers": [
+          "This apartment is small, but I like it."
+        ],
+        "explanation": "'Apartment' es una cosa, no una persona, así que corresponde el pronombre objeto 'it', no 'he'.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment is small, but I likes it.",
+            "why": "El verbo 'like' ya estaba bien con 'I'; el error real era usar 'he' en lugar del pronombre objeto 'it' para referirse al departamento."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Do you want to come with we?",
+        "answers": [
+          "Do you want to come with us?"
+        ],
+        "explanation": "Después de la preposición 'with' se usa el pronombre objeto 'us', no el sujeto 'we'.",
+        "wrongAnswers": [
+          {
+            "answer": "Do you wants to come with us?",
+            "why": "El verbo 'want' ya estaba bien con 'you'; el error real era el pronombre sujeto 'we' en lugar del objeto 'us' después de 'with'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Por favor, llamame mañana.",
+        "answers": [
+          "Please call me tomorrow.",
+          "Please, call me tomorrow."
+        ],
+        "explanation": "Después del verbo 'call' se usa el pronombre objeto 'me' para referirse al hablante.",
+        "wrongAnswers": [
+          {
+            "answer": "Please call I tomorrow.",
+            "why": "Después del verbo se necesita el pronombre objeto 'me', no el sujeto 'I'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Podés pasar a buscarlos a las cinco?",
+        "answers": [
+          "Can you pick them up at five?",
+          "Can you pick them up at 5?"
+        ],
+        "explanation": "Para referirse a personas ya mencionadas en plural se usa el pronombre objeto 'them'.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you pick they up at five?",
+            "why": "Después del verbo se necesita el pronombre objeto 'them', no el sujeto 'they'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La enfermera lo va a llamar mañana para confirmar el turno de Martín.",
+        "answers": [
+          "The nurse is going to call him tomorrow to confirm Martín's appointment.",
+          "The nurse will call him tomorrow to confirm Martín's appointment."
+        ],
+        "explanation": "Para referirse a un hombre ya mencionado se usa el pronombre objeto 'him'.",
+        "wrongAnswers": [
+          {
+            "answer": "The nurse is going to call he tomorrow to confirm Martín's appointment.",
+            "why": "Después del verbo se necesita el pronombre objeto 'him', no el sujeto 'he'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este departamento es chico, pero me gusta.",
+        "answers": [
+          "This apartment is small, but I like it.",
+          "This apartment is small, but I really like it."
+        ],
+        "explanation": "Para referirse a una cosa en singular se usa el pronombre objeto 'it'.",
+        "wrongAnswers": [
+          {
+            "answer": "This apartment is small, but I like him.",
+            "why": "'Apartment' es una cosa, no una persona; corresponde el pronombre objeto 'it', no 'him'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Al gerente le gustó el currículum de Sofía, así que la invitó a una entrevista.",
+        "answers": [
+          "The manager liked Sofía's resume, so he invited her to an interview.",
+          "The manager liked Sofía's resume, so he invited her for an interview."
+        ],
+        "explanation": "Para referirse a una mujer ya mencionada se usa el pronombre objeto 'her'.",
+        "wrongAnswers": [
+          {
+            "answer": "The manager liked Sofía's resume, so he invited she to an interview.",
+            "why": "Después del verbo se necesita el pronombre objeto 'her', no el sujeto 'she'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Juan y yo vamos al cine. ¿Querés venir con nosotros?",
+        "answers": [
+          "Juan and I are going to the movies. Do you want to come with us?",
+          "Juan and I are going to the movies. Do you want to join us?"
+        ],
+        "explanation": "Después de una preposición como 'with' se usa el pronombre objeto; para el hablante y Juan corresponde 'us'.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan and I are going to the movies. Do you want to come with we?",
+            "why": "Después de la preposición 'with' se necesita el pronombre objeto 'us', no el sujeto 'we'."
+          }
+        ]
+      }
+    ],
+    "preposiciones-lugar": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The keys are ___ the kitchen table.",
+        "options": [
+          "between",
+          "in",
+          "on",
+          "at"
+        ],
+        "correctIndex": 2,
+        "explanation": "Se usa 'on' para indicar que algo está sobre una superficie, como la mesa.",
+        "optionNotes": [
+          "Incorrecto: 'between' necesita dos elementos de referencia.",
+          "Incorrecto: 'in' se usa para estar dentro de algo cerrado, no sobre una superficie.",
+          "Correcto: 'on' se usa para algo que está sobre una superficie.",
+          "Incorrecto: 'at' se usa para puntos o lugares concretos, no para superficies."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Marcos is ___ work right now; he's finishing a report.",
+        "options": [
+          "on",
+          "next to",
+          "at",
+          "in"
+        ],
+        "correctIndex": 2,
+        "explanation": "La expresión fija 'at work' indica estar en el lugar de trabajo; no se dice 'in work'.",
+        "optionNotes": [
+          "Incorrecto: 'on' no se usa en esta expresión.",
+          "Incorrecto: 'next to' significa 'al lado de', no corresponde aquí.",
+          "Correcto: 'at work' es la expresión fija para decir que alguien está en su trabajo.",
+          "Incorrecto: no se dice 'in work'; es un calco común del español 'en el trabajo'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The pharmacy is ___ the bank and the supermarket.",
+        "options": [
+          "in front of",
+          "next to",
+          "behind",
+          "between"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Between' se usa cuando algo está en medio de dos referencias, aquí el banco y el supermercado.",
+        "optionNotes": [
+          "Incorrecto: 'in front of' significa 'delante de', no corresponde con dos referencias.",
+          "Incorrecto: 'next to' se usa con un solo elemento de referencia, no con dos.",
+          "Incorrecto: 'behind' significa 'detrás de', no corresponde aquí.",
+          "Correcto: 'between' se usa cuando algo está en medio de dos elementos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Her new apartment is ___ Corrientes Street.",
+        "options": [
+          "at",
+          "in",
+          "under",
+          "on"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con nombres de calles en inglés se usa la preposición 'on', no 'in'.",
+        "optionNotes": [
+          "Incorrecto: 'at' se usa para direcciones exactas con número, no solo con el nombre de la calle.",
+          "Incorrecto: 'in' se usa con ciudades y países, no con calles.",
+          "Incorrecto: 'under' significa 'debajo de', no corresponde aquí.",
+          "Correcto: con nombres de calles se usa 'on'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Every afternoon, the cat hides ___ the bed and sleeps there quietly.",
+        "options": [
+          "under",
+          "on",
+          "between",
+          "in front of"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Under' indica que algo está debajo de otra cosa; como el gato se esconde, tiene sentido que esté debajo de la cama.",
+        "optionNotes": [
+          "Correcto: 'under' indica que el gato se esconde debajo de la cama.",
+          "Incorrecto: 'on' significa estar sobre la superficie, lo cual no tiene sentido si el gato se está escondiendo.",
+          "Incorrecto: 'between' necesita dos referencias distintas.",
+          "Incorrecto: 'in front of' significa 'delante de', no corresponde a esconderse."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My doctor's office is ___ Buenos Aires.",
+        "options": [
+          "on",
+          "at",
+          "in",
+          "between"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con ciudades se usa 'in', ya que indica estar dentro de un área geográfica más grande.",
+        "optionNotes": [
+          "Incorrecto: 'on' se usa con calles, no con ciudades.",
+          "Incorrecto: 'at' se usa para puntos concretos, no para ciudades enteras.",
+          "Correcto: con ciudades se usa 'in'.",
+          "Incorrecto: 'between' necesita dos referencias distintas."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de lugar correcta.",
+        "sentence": "The bus stop is ___ the pharmacy and the bakery.",
+        "hint": "(dos referencias)",
+        "answers": [
+          "between"
+        ],
+        "explanation": "'Between' se usa para ubicar algo en medio de dos referencias concretas.",
+        "wrongAnswers": [
+          {
+            "answer": "next to",
+            "why": "'next to' se usa con un solo elemento de referencia, no con dos."
+          },
+          {
+            "answer": "on",
+            "why": "'on' no indica estar en medio de dos lugares."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de lugar correcta.",
+        "sentence": "Please wait for me ___ the bus stop.",
+        "hint": "(punto concreto)",
+        "answers": [
+          "at"
+        ],
+        "explanation": "'At' se usa para puntos concretos como una parada de colectivo.",
+        "wrongAnswers": [
+          {
+            "answer": "in",
+            "why": "'in' no se usa para puntos concretos como una parada de colectivo."
+          },
+          {
+            "answer": "on",
+            "why": "'on' se usa con superficies o calles, no con paradas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de lugar correcta.",
+        "sentence": "Juan's new apartment is ___ Defensa Street, near San Telmo.",
+        "hint": "(nombre de calle)",
+        "answers": [
+          "on"
+        ],
+        "explanation": "Con nombres de calles se usa 'on', no 'in' ni 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "in",
+            "why": "'in' se usa con ciudades, no con el nombre de una calle."
+          },
+          {
+            "answer": "at",
+            "why": "'at' se usa con la dirección completa (número), no solo con el nombre de la calle."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de lugar correcta.",
+        "sentence": "I can't find my glasses. They are ___ the sofa, I think.",
+        "hint": "(debajo de)",
+        "answers": [
+          "under"
+        ],
+        "explanation": "'Under' indica que algo está debajo de otro objeto.",
+        "wrongAnswers": [
+          {
+            "answer": "on",
+            "why": "'on' significa estar sobre la superficie, no debajo."
+          },
+          {
+            "answer": "in",
+            "why": "'in' significa dentro de algo, no debajo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de lugar correcta.",
+        "sentence": "Laura works ___ Buenos Aires, but she lives in Mendoza.",
+        "hint": "(ciudad)",
+        "answers": [
+          "in"
+        ],
+        "explanation": "Con ciudades se usa 'in' para indicar ubicación dentro de un área amplia.",
+        "wrongAnswers": [
+          {
+            "answer": "at",
+            "why": "'at' se usa para puntos concretos, no para ciudades enteras."
+          },
+          {
+            "answer": "on",
+            "why": "'on' se usa con calles, no con ciudades."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de lugar correcta.",
+        "sentence": "Marcos is working ___ home today instead of going to the office.",
+        "hint": "(expresión fija)",
+        "answers": [
+          "at"
+        ],
+        "explanation": "'At home' es una expresión fija para decir que alguien está en su casa.",
+        "wrongAnswers": [
+          {
+            "answer": "in",
+            "why": "Se dice 'at home', no 'in home'."
+          },
+          {
+            "answer": "on",
+            "why": "'on' no corresponde con esta expresión fija."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The bank is next to the pharmacy downtown.",
+        "alternatives": [],
+        "translation": "El banco está al lado de la farmacia en el centro.",
+        "explanation": "El orden en inglés es sujeto + verbo + preposición de lugar + complemento; 'next to' significa 'al lado de'.",
+        "tokens": [
+          "pharmacy",
+          "is",
+          "bank",
+          "downtown",
+          "the",
+          "to",
+          "next",
+          "The"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Her office is between the bakery and the bank.",
+        "alternatives": [],
+        "translation": "Su oficina está entre la panadería y el banco.",
+        "explanation": "Se usa 'between' cuando hay dos referencias, aquí la panadería y el banco.",
+        "tokens": [
+          "is",
+          "Her",
+          "the",
+          "between",
+          "the",
+          "bakery",
+          "bank",
+          "office",
+          "and"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Marcos is at work until six o'clock.",
+        "alternatives": [],
+        "translation": "Marcos está en el trabajo hasta las seis.",
+        "explanation": "'At work' es la expresión fija para decir que alguien está en su trabajo.",
+        "tokens": [
+          "until",
+          "Marcos",
+          "o'clock",
+          "six",
+          "work",
+          "at",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The children are playing in front of the school.",
+        "alternatives": [],
+        "translation": "Los chicos están jugando delante de la escuela.",
+        "explanation": "'In front of' significa 'delante de' y se coloca antes del lugar de referencia.",
+        "tokens": [
+          "The",
+          "playing",
+          "are",
+          "children",
+          "front",
+          "the",
+          "of",
+          "school",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Our new apartment is on Defensa Street.",
+        "alternatives": [],
+        "translation": "Nuestro departamento nuevo está en la calle Defensa.",
+        "explanation": "Con nombres de calles se usa 'on', no 'in' ni 'at'.",
+        "tokens": [
+          "on",
+          "Our",
+          "new",
+          "is",
+          "Street",
+          "apartment",
+          "Defensa"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de lugar.",
+        "sentence": "Laura is in home today because she feels sick.",
+        "answers": [
+          "Laura is at home today because she feels sick."
+        ],
+        "explanation": "Se dice 'at home', no 'in home'; es una expresión fija en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura is in home today because she feel sick.",
+            "why": "Corrige el verbo 'feels' en lugar de la preposición, que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de lugar.",
+        "sentence": "The supermarket is on front of the pharmacy.",
+        "answers": [
+          "The supermarket is in front of the pharmacy."
+        ],
+        "explanation": "La expresión completa es 'in front of', no se puede usar 'on front of' ni omitir 'of'.",
+        "wrongAnswers": [
+          {
+            "answer": "The supermarket is in front the pharmacy.",
+            "why": "Falta la preposición 'of'; la expresión completa es 'in front of'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de lugar.",
+        "sentence": "Marcos works in a small office in Florida Street.",
+        "answers": [
+          "Marcos works in a small office on Florida Street."
+        ],
+        "explanation": "Con nombres de calles se usa 'on', no 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "Marcos work in a small office in Florida Street.",
+            "why": "Corrige el verbo 'works' pero el error real está en la preposición antes del nombre de la calle."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de lugar.",
+        "sentence": "The cat is hiding on the bed because it's scared of the storm.",
+        "answers": [
+          "The cat is hiding under the bed because it's scared of the storm."
+        ],
+        "explanation": "Cuando un animal se esconde por miedo, lo natural es que esté debajo de algo, no sobre la superficie; por eso corresponde 'under', no 'on'.",
+        "wrongAnswers": [
+          {
+            "answer": "The cat is hiding on the beds because it's scared of the storm.",
+            "why": "Cambiar 'bed' a plural no corrige el error real; el problema es la preposición, que debe ser 'under', no 'on'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de lugar.",
+        "sentence": "The doctor's office is in Corrientes Street, near the subway station.",
+        "answers": [
+          "The doctor's office is on Corrientes Street, near the subway station."
+        ],
+        "explanation": "Con nombres de calles se usa 'on', no 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor's office is in Corrientes Street, near the subway stations.",
+            "why": "Cambia 'station' a plural, pero el error real es la preposición 'in' en lugar de 'on' con el nombre de la calle."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Las llaves están sobre la mesa de la cocina.",
+        "answers": [
+          "The keys are on the kitchen table.",
+          "The keys are on the table in the kitchen."
+        ],
+        "explanation": "'On' se usa para algo que está sobre una superficie, como la mesa.",
+        "wrongAnswers": [
+          {
+            "answer": "The keys are in the kitchen table.",
+            "why": "'in' indica estar dentro de algo, no sobre una superficie; debe usarse 'on'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Laura está en el trabajo hasta las seis.",
+        "answers": [
+          "Laura is at work until six.",
+          "Laura is at work until six o'clock."
+        ],
+        "explanation": "'At work' es la expresión fija para decir 'en el trabajo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura is in work until six.",
+            "why": "La expresión fija es 'at work', no 'in work'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El banco está al lado de la farmacia.",
+        "answers": [
+          "The bank is next to the pharmacy.",
+          "The bank is beside the pharmacy."
+        ],
+        "explanation": "'Next to' y 'beside' significan 'al lado de'.",
+        "wrongAnswers": [
+          {
+            "answer": "The bank is besides the pharmacy.",
+            "why": "'besides' significa 'además de', no 'al lado de'; la expresión correcta es 'next to' o 'beside'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi consultorio está en la calle Defensa, cerca de San Telmo.",
+        "answers": [
+          "My office is on Defensa Street, near San Telmo.",
+          "My doctor's office is on Defensa Street, near San Telmo."
+        ],
+        "explanation": "Con nombres de calles se usa 'on', no 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "My office is in Defensa Street, near San Telmo.",
+            "why": "Con nombres de calles se usa 'on', no 'in'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El gato está debajo de la cama, durmiendo.",
+        "answers": [
+          "The cat is under the bed, sleeping.",
+          "The cat is sleeping under the bed."
+        ],
+        "explanation": "'Under' indica estar debajo de algo, como la cama.",
+        "wrongAnswers": [
+          {
+            "answer": "The cat is on the bed, sleeping.",
+            "why": "'on' significa sobre la superficie, no debajo; se necesita 'under'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vivimos en Buenos Aires, pero trabajamos en San Isidro.",
+        "answers": [
+          "We live in Buenos Aires, but we work in San Isidro.",
+          "We live in Buenos Aires, but work in San Isidro."
+        ],
+        "explanation": "Con ciudades se usa 'in', no 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "We live at Buenos Aires, but we work at San Isidro.",
+            "why": "Con ciudades se usa 'in', no 'at'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las preposiciones de lugar.",
+        "text": "Hello! My name is Sofía, and this is my new apartment in Mendoza. The kitchen is next to the living room, and the bathroom is between the kitchen and my bedroom. My bed is in the corner, and there is a small lamp on the table next to it. My shoes are under the bed, and my jacket is on the chair in front of the window. My cat usually sleeps behind the sofa. I work at a travel agency, but today I am at home because it's Sunday. My apartment is on Belgrano Street, in the center of the city. I love my new home!",
+        "questions": [
+          {
+            "prompt": "¿Dónde está el baño?",
+            "options": [
+              "Al lado de la cocina",
+              "Delante de la ventana",
+              "Detrás del sofá",
+              "Entre la cocina y el dormitorio"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'the bathroom is between the kitchen and my bedroom'; 'between' se usa para indicar algo ubicado entre dos cosas."
+          },
+          {
+            "prompt": "¿Dónde están los zapatos de Sofía?",
+            "options": [
+              "Sobre la cama",
+              "Al lado de la silla",
+              "En el placard",
+              "Debajo de la cama"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'My shoes are under the bed'; 'under' significa debajo de algo."
+          },
+          {
+            "prompt": "¿Por qué Sofía está en su casa hoy?",
+            "options": [
+              "Porque es domingo",
+              "Porque trabaja desde la casa",
+              "Porque su gato está enfermo",
+              "Porque su apartamento está en la calle Belgrano"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'today I am at home because it's Sunday'; se usa 'at home' para decir que alguien está en su casa."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las preposiciones de lugar.",
+        "text": "Today, Pablo has a job interview at a travel agency. The office is on Mitre Street, between a bank and a pharmacy. Pablo arrives early and waits at the bus stop in front of the building. He sees a small café next to the entrance, and he waits there for ten minutes. At nine o'clock, Pablo walks into the building. The receptionist's desk is in the lobby, behind a big plant. She tells him, 'The manager's office is on the second floor, next to the meeting room.' Pablo takes the elevator and finds the office. The manager, Mrs. Ramos, is at her desk, and there are two chairs in front of her. Pablo sits down and starts the interview.",
+        "questions": [
+          {
+            "prompt": "¿Dónde queda la oficina de la agencia de viajes, según la descripción de la calle?",
+            "options": [
+              "Delante de la parada de colectivo",
+              "En la calle Mitre, entre un banco y una farmacia",
+              "Al lado del ascensor",
+              "Detrás del café"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'The office is on Mitre Street, between a bank and a pharmacy'; se usa 'on' con el nombre de una calle y 'between' para algo ubicado entre dos cosas."
+          },
+          {
+            "prompt": "¿Dónde espera Pablo antes de entrar al edificio?",
+            "options": [
+              "Detrás de la planta",
+              "En la parada de colectivo, delante del edificio",
+              "En la sala de reuniones",
+              "En el hall de entrada"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Pablo arrives early and waits at the bus stop in front of the building'; 'at' se usa para un punto concreto y 'in front of' significa delante de algo."
+          },
+          {
+            "prompt": "¿Dónde está el escritorio de la recepcionista?",
+            "options": [
+              "En el segundo piso",
+              "En el hall, detrás de una planta grande",
+              "Al lado de la sala de reuniones",
+              "Delante del banco"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'The receptionist's desk is in the lobby, behind a big plant'; 'in' se usa para un lugar cerrado y 'behind' significa detrás de algo."
+          }
+        ]
+      }
+    ],
+    "preposiciones-tiempo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "The job interview is ___ Monday morning.",
+        "options": [
+          "every",
+          "at",
+          "in",
+          "on"
+        ],
+        "correctIndex": 3,
+        "explanation": "Los días de la semana van con la preposición 'on'.",
+        "optionNotes": [
+          "Incorrecto: 'every' cambiaría el sentido a 'todos los lunes', no corresponde aquí.",
+          "Incorrecto: 'at' se usa con horas puntuales, no con días.",
+          "Incorrecto: 'in' no se usa con días de la semana.",
+          "Correcto: los días de la semana van con 'on'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Valentina's flight to Bariloche leaves ___ six o'clock in the morning.",
+        "options": [
+          "at",
+          "on",
+          "in",
+          "every"
+        ],
+        "correctIndex": 0,
+        "explanation": "Las horas puntuales van con la preposición 'at'.",
+        "optionNotes": [
+          "Correcto: las horas puntuales van con 'at'.",
+          "Incorrecto: 'on' se usa con días y fechas, no con horas.",
+          "Incorrecto: 'in' no se usa con horas puntuales.",
+          "Incorrecto: 'every' cambiaría el significado a una acción repetida."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "We visit our grandmother ___ Sundays.",
+        "options": [
+          "at",
+          "every",
+          "in",
+          "on"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando el día está en plural para indicar algo habitual, se usa 'on Sundays'; con 'every' el día debe ir en singular y sin preposición.",
+        "optionNotes": [
+          "Incorrecto: 'at' se usa con horas puntuales, no con días.",
+          "Incorrecto: 'every' no lleva preposición y se usa con el día en singular, no con 'Sundays' en plural.",
+          "Incorrecto: 'in' no se usa con días de la semana.",
+          "Correcto: 'on Sundays' indica algo habitual los domingos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Nico's birthday party is ___ July 9th.",
+        "options": [
+          "every",
+          "on",
+          "at",
+          "in"
+        ],
+        "correctIndex": 1,
+        "explanation": "Las fechas completas (mes + día) van con la preposición 'on'.",
+        "optionNotes": [
+          "Incorrecto: 'every' cambiaría el sentido a repetición anual sin preposición.",
+          "Correcto: las fechas completas van con 'on'.",
+          "Incorrecto: 'at' se usa con horas puntuales, no con fechas.",
+          "Incorrecto: 'in' se usa con meses y años solos, no con la fecha completa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Valentina starts her new job ___ March.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "every"
+        ],
+        "correctIndex": 0,
+        "explanation": "Los meses van con la preposición 'in'.",
+        "optionNotes": [
+          "Correcto: los meses van con 'in'.",
+          "Incorrecto: 'on' se usa con días y fechas, no con meses solos.",
+          "Incorrecto: 'at' se usa con horas puntuales, no con meses.",
+          "Incorrecto: 'every' cambiaría el sentido de la oración."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Nico has a check-up ___.",
+        "options": [
+          "on next Tuesday",
+          "in next Tuesday",
+          "at next Tuesday",
+          "next Tuesday"
+        ],
+        "correctIndex": 3,
+        "explanation": "Antes de 'next', 'last', 'every' y 'this' no se usa ninguna preposición de tiempo.",
+        "optionNotes": [
+          "Incorrecto: no se usa preposición antes de 'next'.",
+          "Incorrecto: no se usa preposición antes de 'next'.",
+          "Incorrecto: no se usa preposición antes de 'next'.",
+          "Correcto: con 'next' no se usa ninguna preposición."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "The interview is ___ Monday at ten o'clock.",
+        "hint": "(día)",
+        "answers": [
+          "on"
+        ],
+        "explanation": "Los días de la semana van con la preposición 'on'.",
+        "wrongAnswers": [
+          {
+            "answer": "in",
+            "why": "'in' no se usa con días de la semana."
+          },
+          {
+            "answer": "at",
+            "why": "'at' se usa con horas puntuales, no con días."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "Valentina's flight leaves ___ six o'clock in the morning.",
+        "hint": "(hora puntual)",
+        "answers": [
+          "at"
+        ],
+        "explanation": "Las horas puntuales van con la preposición 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "on",
+            "why": "'on' se usa con días y fechas, no con horas."
+          },
+          {
+            "answer": "in",
+            "why": "'in' no se usa con horas puntuales."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "Nico's birthday is ___ July 9th.",
+        "hint": "(fecha completa)",
+        "answers": [
+          "on"
+        ],
+        "explanation": "Las fechas completas van con la preposición 'on'.",
+        "wrongAnswers": [
+          {
+            "answer": "in",
+            "why": "'in' se usa con meses solos, no con la fecha completa."
+          },
+          {
+            "answer": "at",
+            "why": "'at' se usa con horas puntuales, no con fechas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "Valentina starts her new job ___ March.",
+        "hint": "(mes)",
+        "answers": [
+          "in"
+        ],
+        "explanation": "Los meses van con la preposición 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "on",
+            "why": "'on' se usa con días y fechas, no con meses."
+          },
+          {
+            "answer": "at",
+            "why": "'at' se usa con horas puntuales, no con meses."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "We always have a big dinner ___ night on Christmas Eve.",
+        "hint": "(momento del día, excepción)",
+        "answers": [
+          "at"
+        ],
+        "explanation": "'Night' es una excepción dentro de las partes del día y siempre va con 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "in",
+            "why": "'night' es una excepción y va con 'at', no con 'in'."
+          },
+          {
+            "answer": "on",
+            "why": "'on' no se usa con partes del día."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición de tiempo correcta.",
+        "sentence": "Valentina moved to Buenos Aires ___ 2024.",
+        "hint": "(año)",
+        "answers": [
+          "in"
+        ],
+        "explanation": "Los años van con la preposición 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "on",
+            "why": "'on' no se usa con años."
+          },
+          {
+            "answer": "at",
+            "why": "'at' se usa con horas puntuales, no con años."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The interview is on Monday at ten o'clock.",
+        "alternatives": [
+          "The interview is at ten o'clock on Monday."
+        ],
+        "translation": "La entrevista es el lunes a las diez.",
+        "explanation": "Los días de la semana van con 'on' y las horas puntuales van con 'at'; ambos complementos de tiempo pueden intercambiar su orden en la oración.",
+        "tokens": [
+          "is",
+          "on",
+          "interview",
+          "The",
+          "ten",
+          "Monday",
+          "at",
+          "o'clock"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Valentina's flight leaves at six in the morning.",
+        "alternatives": [],
+        "translation": "El vuelo de Valentina sale a las seis de la mañana.",
+        "explanation": "Las horas puntuales van con 'at' y las partes del día como 'morning' van con 'in'.",
+        "tokens": [
+          "at",
+          "six",
+          "leaves",
+          "Valentina's",
+          "the",
+          "morning",
+          "in",
+          "flight"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nico's birthday is on July ninth.",
+        "alternatives": [],
+        "translation": "El cumpleaños de Nico es el nueve de julio.",
+        "explanation": "Las fechas completas, con mes y día, van con la preposición 'on'.",
+        "tokens": [
+          "is",
+          "Nico's",
+          "birthday",
+          "ninth",
+          "July",
+          "on"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Valentina starts her new job in March.",
+        "alternatives": [],
+        "translation": "Valentina empieza su nuevo trabajo en marzo.",
+        "explanation": "Los meses solos van con la preposición 'in'.",
+        "tokens": [
+          "Valentina",
+          "starts",
+          "her",
+          "new",
+          "job",
+          "March",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nico has a doctor's appointment next Tuesday.",
+        "alternatives": [],
+        "translation": "Nico tiene un turno con el médico el martes que viene.",
+        "explanation": "Antes de 'next' no se usa ninguna preposición de tiempo.",
+        "tokens": [
+          "Nico",
+          "next",
+          "a",
+          "appointment",
+          "doctor's",
+          "has",
+          "Tuesday"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de tiempo.",
+        "sentence": "The interview is in Monday at ten o'clock.",
+        "answers": [
+          "The interview is on Monday at ten o'clock."
+        ],
+        "explanation": "Los días de la semana van con la preposición 'on', no con 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "The interview is in Monday in ten o'clock.",
+            "why": "Cambia también 'at ten o'clock' por 'in ten o'clock', pero las horas puntuales van con 'at'; el error real está solo en la preposición del día."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de tiempo.",
+        "sentence": "Valentina's flight leaves in six o'clock in the morning.",
+        "answers": [
+          "Valentina's flight leaves at six o'clock in the morning."
+        ],
+        "explanation": "Las horas puntuales van con la preposición 'at', no con 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina's flight leaves in six o'clock on the morning.",
+            "why": "Cambia 'in the morning' por 'on the morning', pero esa parte ya era correcta; el error real es la preposición de la hora puntual, que debe ser 'at'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de tiempo.",
+        "sentence": "Nico's birthday party is at July 9th.",
+        "answers": [
+          "Nico's birthday party is on July 9th."
+        ],
+        "explanation": "Las fechas completas van con la preposición 'on', no con 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nico's birthday party is at July 9.",
+            "why": "Quita el sufijo ordinal pero no corrige la preposición, que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de tiempo.",
+        "sentence": "Valentina starts her new job on March.",
+        "answers": [
+          "Valentina starts her new job in March."
+        ],
+        "explanation": "Los meses solos van con la preposición 'in', no con 'on'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina starts her new job on marzo.",
+            "why": "Mezcla la palabra en español 'marzo' en lugar de 'March', pero el error real es la preposición incorrecta."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las preposiciones de tiempo.",
+        "sentence": "Nico has a doctor's appointment on next Tuesday.",
+        "answers": [
+          "Nico has a doctor's appointment next Tuesday."
+        ],
+        "explanation": "Antes de 'next' no se usa ninguna preposición de tiempo.",
+        "wrongAnswers": [
+          {
+            "answer": "Nico has a doctor's appointment in next Tuesday.",
+            "why": "Cambia la preposición por 'in', pero la regla es que con 'next' no se usa ninguna preposición."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La entrevista es el lunes a las diez de la mañana.",
+        "answers": [
+          "The interview is on Monday at ten in the morning.",
+          "The interview is on Monday at ten o'clock in the morning."
+        ],
+        "explanation": "Los días de la semana van con 'on' y las horas puntuales van con 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "The interview is in Monday at ten in the morning.",
+            "why": "Los días de la semana van con 'on', no con 'in'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El vuelo sale a las seis de la mañana.",
+        "answers": [
+          "The flight leaves at six in the morning.",
+          "The flight leaves at six o'clock in the morning."
+        ],
+        "explanation": "Las horas puntuales van con la preposición 'at'.",
+        "wrongAnswers": [
+          {
+            "answer": "The flight leaves on six in the morning.",
+            "why": "Las horas puntuales van con 'at', no con 'on'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El cumpleaños de Nico es el nueve de julio.",
+        "answers": [
+          "Nico's birthday is on July ninth.",
+          "Nico's birthday is on July 9th."
+        ],
+        "explanation": "Las fechas completas (mes + día) van con la preposición 'on'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nico's birthday is in July ninth.",
+            "why": "Las fechas completas van con 'on'; 'in' se usa solo con el mes solo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Valentina empieza su nuevo trabajo en marzo.",
+        "answers": [
+          "Valentina starts her new job in March."
+        ],
+        "explanation": "Los meses van con la preposición 'in'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina starts her new job on March.",
+            "why": "Los meses solos van con 'in', no con 'on'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vemos a nuestra abuela todos los domingos.",
+        "answers": [
+          "We see our grandmother every Sunday.",
+          "We see our grandmother on Sundays."
+        ],
+        "explanation": "Con 'every' no se usa preposición; también se puede decir 'on Sundays' para algo habitual.",
+        "wrongAnswers": [
+          {
+            "answer": "We see our grandmother on every Sunday.",
+            "why": "Con 'every' no se usa ninguna preposición."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nico tiene un turno con el médico el martes que viene.",
+        "answers": [
+          "Nico has a doctor's appointment next Tuesday."
+        ],
+        "explanation": "Antes de 'next' no se usa ninguna preposición de tiempo.",
+        "wrongAnswers": [
+          {
+            "answer": "Nico has a doctor's appointment on next Tuesday.",
+            "why": "Con 'next' no se usa ninguna preposición de tiempo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los horarios y las fechas.",
+        "text": "Lucía has a new job at a hotel in Mendoza. She starts work at eight in the morning and finishes at four in the afternoon. On Mondays, she has a meeting with her manager, Mr. Paz. The meeting is at nine o'clock, before breakfast. In the afternoon, she checks the rooms and talks to the guests. Her birthday is on October 30th, and this year it is on a Friday. In October, the hotel is very busy because of a big conference. Next week, Lucía has three days off. She is very happy because she can visit her parents in Córdoba. They live near the mountains, and in winter, the view is beautiful.",
+        "questions": [
+          {
+            "prompt": "¿Cuándo tiene Lucía la reunión con su jefe?",
+            "options": [
+              "On Mondays, at nine o'clock",
+              "On Fridays, at nine o'clock",
+              "In the morning, at ten o'clock",
+              "On Sundays, at nine o'clock"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'On Mondays... the meeting is at nine o'clock': se usa 'on' con el día y 'at' con la hora puntual."
+          },
+          {
+            "prompt": "¿Cuándo es el cumpleaños de Lucía este año?",
+            "options": [
+              "On a Friday",
+              "At Friday",
+              "In Friday",
+              "On a Saturday"
+            ],
+            "correctIndex": 0,
+            "explanation": "Se usa 'on' con los días de la semana; 'in Friday' y 'at Friday' son errores comunes porque esas preposiciones no se usan con días."
+          },
+          {
+            "prompt": "¿Cuándo visita Lucía a sus padres?",
+            "options": [
+              "On next week",
+              "Next week",
+              "In next week",
+              "At next week"
+            ],
+            "correctIndex": 1,
+            "explanation": "Con 'next' no se usa preposición: se dice 'next week', sin 'on', 'in' ni 'at'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los horarios y las fechas.",
+        "text": "Tomás is planning a trip to Bariloche with his friend Pablo. Their flight is on Saturday, December 12th. The flight leaves at six in the morning, so they need to wake up very early. They arrive in Bariloche at nine in the morning, and their hotel is near the lake. In December, the weather in Patagonia is warm and sunny. On the first day, they want to visit a chocolate shop in the city center. In the evening, they are going to have dinner at a nice restaurant. Every summer, Tomás travels with Pablo, but this year is special because it is Pablo's birthday. His birthday is on December 15th, during the trip. They are very excited for this adventure.",
+        "questions": [
+          {
+            "prompt": "¿Cuándo es el vuelo de Tomás y Pablo?",
+            "options": [
+              "On Sunday, December 12th",
+              "On Saturday, December 12th",
+              "In Saturday, December 12th",
+              "At Saturday, December 12th"
+            ],
+            "correctIndex": 1,
+            "explanation": "Las fechas específicas, como los días con número, van con 'on': 'on Saturday, December 12th'."
+          },
+          {
+            "prompt": "¿A qué hora llegan a Bariloche?",
+            "options": [
+              "On nine in the morning",
+              "In nine in the morning",
+              "At nine in the morning",
+              "At nine in the evening"
+            ],
+            "correctIndex": 2,
+            "explanation": "Se usa 'at' con la hora puntual ('at nine') e 'in the morning' para la parte del día; el texto dice que llegan a la mañana, no a la noche."
+          },
+          {
+            "prompt": "¿Cuándo viaja habitualmente Tomás con Pablo?",
+            "options": [
+              "Every summer",
+              "In every summer",
+              "At every summer",
+              "On every summer"
+            ],
+            "correctIndex": 0,
+            "explanation": "Con 'every' no se usa preposición: se dice 'every summer', sin 'in', 'on' ni 'at'."
+          }
+        ]
+      }
+    ]
+  }
+}

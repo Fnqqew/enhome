@@ -6,12 +6,18 @@ import type { UnitKind } from './progress'
 
 import {
   dialogue,
+  dictation,
   errorCorrection,
   EXERCISE_KINDS,
   fillBlank,
+  listening,
+  minimalPair,
   multipleChoice,
   reading,
+  reorderText,
   roleplay,
+  shadowing,
+  transformation,
   translation,
   translationSet,
   wordOrder,
@@ -29,7 +35,13 @@ export const EXERCISE_TYPES = [
   'dialogue',
   'roleplay',
   'reading',
-  'writing'
+  'writing',
+  'dictation',
+  'listening',
+  'minimal_pair',
+  'shadowing',
+  'transformation',
+  'reorder_text'
 ] as const
 
 export type ExerciseType = (typeof EXERCISE_TYPES)[number]
@@ -55,10 +67,25 @@ export const generatedExerciseSchema = z.union([
   dialogue.generated,
   roleplay.generated,
   reading.generated,
-  writing.generated
+  writing.generated,
+  dictation.generated,
+  listening.generated,
+  minimalPair.generated,
+  shadowing.generated,
+  transformation.generated,
+  reorderText.generated
 ])
 
 export type GeneratedExercise = z.infer<typeof generatedExerciseSchema>
+
+// El esquema de solo los tipos que se le piden a Claude: uno chico lo respeta mucho mejor que el de
+// todos los formatos juntos (con todos, a veces cambia los nombres de los campos).
+export function generatedSchemaFor(types: readonly ExerciseType[]): z.ZodType<GeneratedExercise> {
+  const schemas = [...new Set(types)].map((type) => EXERCISE_KINDS[type].generated as z.ZodType<GeneratedExercise>)
+  if (schemas.length === 0) return generatedExerciseSchema
+  if (schemas.length === 1) return schemas[0]
+  return z.union(schemas as [z.ZodType<GeneratedExercise>, z.ZodType<GeneratedExercise>, ...z.ZodType<GeneratedExercise>[]])
+}
 
 type Kinds = typeof EXERCISE_KINDS
 
@@ -66,7 +93,10 @@ type Kinds = typeof EXERCISE_KINDS
 export type StoredExercise = { [T in ExerciseType]: StoredOf<Kinds[T]> }[ExerciseType]
 
 // Los que corrige Claude en lugar de compararse con una respuesta exacta.
-export type OpenExercise = Extract<StoredExercise, { type: 'translation' | 'translation_set' | 'dialogue' | 'roleplay' | 'writing' }>
+export type OpenExercise = Extract<
+  StoredExercise,
+  { type: 'translation' | 'translation_set' | 'dialogue' | 'roleplay' | 'writing' | 'transformation' }
+>
 
 // Lo que ve el alumno (sin respuestas).
 export type PublicExercise = { [T in ExerciseType]: PublicOf<Kinds[T]> }[ExerciseType]
@@ -81,7 +111,13 @@ export const exerciseAnswerSchema = z.union([
   dialogue.answer,
   roleplay.answer,
   reading.answer,
-  writing.answer
+  writing.answer,
+  dictation.answer,
+  listening.answer,
+  minimalPair.answer,
+  shadowing.answer,
+  transformation.answer,
+  reorderText.answer
 ])
 
 export type ExerciseAnswer = z.infer<typeof exerciseAnswerSchema>
@@ -133,6 +169,10 @@ export interface SessionExerciseView {
   grading: boolean
   // Si la corrección de Claude falló, por qué; con «Reintentar» se vuelve a pedir.
   gradingError: string | null
+  // Le erró la primera vez: la pista para el segundo intento (todavía no hay respuesta guardada).
+  retry: string | null
+  // Salió mal y vuelve al final de la práctica para fijarlo (no cuenta en el puntaje).
+  repeat: boolean
 }
 
 export interface SessionView {

@@ -1,0 +1,2802 @@
+{
+  "subtopics": {
+    "a-an": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Before flying to Dublin, Juan buys ___ umbrella because it always rains there.",
+        "options": [
+          "an",
+          "a",
+          "the",
+          "some"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'an' delante de sustantivos que empiezan con sonido vocálico, como 'umbrella'.",
+        "optionNotes": [
+          "Correcto: el sonido inicial de 'umbrella' es vocálico, por eso se usa 'an'.",
+          "Incorrecto: 'umbrella' suena con vocal al principio (/ʌ/), así que corresponde 'an'.",
+          "Incorrecto: 'the' se usaría si el paraguas ya hubiera sido mencionado antes.",
+          "Incorrecto: 'some' no se usa con un sustantivo contable en singular como 'umbrella'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "At the interview, Laura explains that she works as ___ engineer for a construction company in Córdoba.",
+        "options": [
+          "the",
+          "a",
+          "-- (no article)",
+          "an"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con profesiones en inglés siempre se usa 'a' o 'an'; se elige según el sonido inicial de la palabra.",
+        "optionNotes": [
+          "Incorrecto: 'the' se usaría solo si se hablara de una ingeniera específica ya mencionada.",
+          "Incorrecto: 'engineer' empieza con sonido vocálico, por eso necesita 'an'.",
+          "Incorrecto: en inglés, a diferencia del español, las profesiones siempre llevan artículo.",
+          "Correcto: el sonido inicial de 'engineer' es vocálico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The doctor tells Martín, 'You need ___ hour of exercise every day.'",
+        "options": [
+          "some",
+          "an",
+          "the",
+          "a"
+        ],
+        "correctIndex": 1,
+        "explanation": "La 'h' de 'hour' es muda, así que el sonido inicial es vocálico y corresponde 'an'.",
+        "optionNotes": [
+          "Incorrecto: 'some' no se usa con un sustantivo contable en singular como 'hour'.",
+          "Correcto: como la h es muda, 'hour' suena como si empezara con vocal.",
+          "Incorrecto: 'the' se usaría solo si ya se hablara de una hora específica.",
+          "Incorrecto: 'hour' tiene la h muda, el sonido inicial es vocálico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Juan's sister studies at ___ university in Rosario.",
+        "options": [
+          "an",
+          "the",
+          "a",
+          "some"
+        ],
+        "correctIndex": 2,
+        "explanation": "El artículo se elige por el sonido, no por la letra: 'university' suena /ju/, un sonido consonántico, por eso se usa 'a'.",
+        "optionNotes": [
+          "Incorrecto: es un error común pensar que toda palabra que empieza con vocal necesita 'an', pero acá el sonido es consonántico.",
+          "Incorrecto: 'the' se usaría si ya se hubiera mencionado esa universidad antes.",
+          "Correcto: aunque 'university' empieza con la letra u, el sonido inicial es /ju/, que suena como consonante.",
+          "Incorrecto: 'some' no se usa con un sustantivo contable en singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Tomás always says his grandfather is ___ honest man who never lies.",
+        "options": [
+          "an",
+          "the",
+          "a",
+          "some"
+        ],
+        "correctIndex": 0,
+        "explanation": "En 'honest' la h es muda, por eso el sonido inicial es vocálico y corresponde 'an'.",
+        "optionNotes": [
+          "Correcto: como la h de 'honest' no se pronuncia, el sonido inicial es vocálico.",
+          "Incorrecto: 'the' se usaría si ya se hablara de un hombre específico mencionado antes.",
+          "Incorrecto: 'honest' tiene la h muda, el sonido inicial es vocálico.",
+          "Incorrecto: 'some' no se usa con un sustantivo contable en singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "At the restaurant, Sofía asks the waiter, 'Can we have ___ table for two, please?'",
+        "options": [
+          "an",
+          "the",
+          "a",
+          "some"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Table' empieza con sonido consonántico, así que se usa 'a', no 'an'.",
+        "optionNotes": [
+          "Incorrecto: 'table' no empieza con sonido vocálico, no corresponde 'an'.",
+          "Incorrecto: es la primera vez que se pide la mesa, todavía no es una mesa específica conocida.",
+          "Correcto: 'table' empieza con sonido consonántico /t/, por eso corresponde 'a'.",
+          "Incorrecto: 'some' no se usa con un sustantivo contable en singular como 'table'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo correcto (a / an).",
+        "sentence": "At the check-in counter, Juan shows ___ passport to the officer.",
+        "hint": "(fijate en el sonido inicial, no en la letra)",
+        "answers": [
+          "a"
+        ],
+        "explanation": "'Passport' comienza con un sonido consonántico, así que se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "an",
+            "why": "'Passport' empieza con sonido consonántico /p/, por eso corresponde 'a', no 'an'."
+          },
+          {
+            "answer": "the",
+            "why": "'The' se usaría si el pasaporte ya hubiera sido mencionado antes; acá es la primera vez."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo correcto (a / an).",
+        "sentence": "During the interview, Laura says she has ___ university degree in engineering.",
+        "hint": "(fijate en el sonido, no en la letra inicial)",
+        "answers": [
+          "a"
+        ],
+        "explanation": "El artículo se elige por el sonido: 'university' suena /ju/, un sonido consonántico, así que se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "an",
+            "why": "Aunque 'university' empieza con la letra u, el sonido inicial es /ju/, consonántico, por eso corresponde 'a'."
+          },
+          {
+            "answer": "the",
+            "why": "'The' no corresponde porque es la primera vez que se menciona ese título."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo correcto (a / an).",
+        "sentence": "The doctor says Martín needs ___ hour of rest after the operation.",
+        "hint": "(la h es muda)",
+        "answers": [
+          "an"
+        ],
+        "explanation": "La h de 'hour' no se pronuncia, así que el sonido inicial es vocálico y se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "'Hour' tiene la h muda, por lo que el sonido inicial es vocálico y corresponde 'an'."
+          },
+          {
+            "answer": "the",
+            "why": "'The' no corresponde porque no se habla de una hora específica ya mencionada."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo correcto (a / an).",
+        "sentence": "Mariana found ___ apartment with a nice balcony near the subway.",
+        "hint": "(sonido vocálico)",
+        "answers": [
+          "an"
+        ],
+        "explanation": "'Apartment' empieza con sonido vocálico, así que se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "'Apartment' empieza con sonido vocálico /ə/, por eso corresponde 'an', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo correcto (a / an).",
+        "sentence": "Tomás just got ___ dog from the shelter.",
+        "hint": "(sonido consonántico)",
+        "answers": [
+          "a"
+        ],
+        "explanation": "'Dog' empieza con sonido consonántico, así que se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "an",
+            "why": "'Dog' empieza con sonido consonántico /d/, por eso corresponde 'a', no 'an'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo correcto (a / an).",
+        "sentence": "Camila's brother is ___ honest and hardworking person.",
+        "hint": "(la h es muda)",
+        "answers": [
+          "an"
+        ],
+        "explanation": "La h de 'honest' no se pronuncia, así que el sonido inicial es vocálico y se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "'Honest' tiene la h muda, el sonido inicial es vocálico, por eso corresponde 'an'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Laura is an engineer at a big company.",
+        "alternatives": [],
+        "translation": "Laura es ingeniera en una empresa grande.",
+        "explanation": "Se usa 'an' delante de 'engineer' porque empieza con sonido vocálico. En cambio, antes de 'big' se usa 'a', porque el artículo concuerda con el sonido de la palabra que sigue inmediatamente (en este caso 'big', sonido consonántico), no con 'company'.",
+        "tokens": [
+          "at",
+          "an",
+          "a",
+          "big",
+          "company",
+          "Laura",
+          "engineer",
+          "is"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Martín needs an hour of rest today.",
+        "alternatives": [
+          "Today, Martín needs an hour of rest."
+        ],
+        "translation": "Martín necesita una hora de descanso hoy.",
+        "explanation": "'Hour' tiene la h muda, así que el sonido inicial es vocálico y corresponde 'an'.",
+        "tokens": [
+          "of",
+          "needs",
+          "Martín",
+          "hour",
+          "today",
+          "an",
+          "rest"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Mariana found a nice apartment near the subway.",
+        "alternatives": [],
+        "translation": "Mariana encontró un lindo departamento cerca del subte.",
+        "explanation": "El artículo depende de la palabra que sigue inmediatamente: antes de 'nice' (sonido consonántico) se usa 'a', aunque 'apartment' solo necesitaría 'an'.",
+        "tokens": [
+          "subway",
+          "found",
+          "nice",
+          "near",
+          "the",
+          "Mariana",
+          "a",
+          "apartment"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Tomás adopted a friendly dog from the shelter.",
+        "alternatives": [],
+        "translation": "Tomás adoptó un perro amigable del refugio.",
+        "explanation": "'Friendly' empieza con sonido consonántico /f/, por eso corresponde 'a', no 'an'.",
+        "tokens": [
+          "adopted",
+          "friendly",
+          "dog",
+          "the",
+          "from",
+          "a",
+          "shelter",
+          "Tomás"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Camila's brother is an honest, hardworking person.",
+        "alternatives": [],
+        "translation": "El hermano de Camila es una persona honesta y trabajadora.",
+        "explanation": "'Honest' tiene la h muda, el sonido inicial es vocálico, por eso corresponde 'an'.",
+        "tokens": [
+          "an",
+          "hardworking",
+          "brother",
+          "is",
+          "honest,",
+          "person",
+          "Camila's"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Juan needs a umbrella for his trip to Dublin.",
+        "answers": [
+          "Juan needs an umbrella for his trip to Dublin."
+        ],
+        "explanation": "'Umbrella' empieza con sonido vocálico, por eso corresponde 'an', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan need an umbrella for his trip to Dublin.",
+            "why": "El error no está en el verbo 'needs', sino en el artículo antes de 'umbrella'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Laura works as a engineer in Córdoba.",
+        "answers": [
+          "Laura works as an engineer in Córdoba."
+        ],
+        "explanation": "'Engineer' empieza con sonido vocálico, por eso corresponde 'an', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura works as a engineer in Córdobas.",
+            "why": "El error está en el artículo 'a' antes de 'engineer', no en el nombre de la ciudad."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "The doctor says I need a hour of rest.",
+        "answers": [
+          "The doctor says I need an hour of rest."
+        ],
+        "explanation": "La h de 'hour' es muda, el sonido inicial es vocálico, por eso corresponde 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor say I need a hour of rest.",
+            "why": "El verbo 'says' ya está correcto; el error real es el artículo delante de 'hour'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Mariana is looking for a apartment with cheap rent.",
+        "answers": [
+          "Mariana is looking for an apartment with cheap rent."
+        ],
+        "explanation": "'Apartment' empieza con sonido vocálico, por eso corresponde 'an', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana is looking for an apartment with cheaps rent.",
+            "why": "El error no está en 'cheap', sino en el artículo antes de 'apartment'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Camila's brother is a honest person who always tells the truth.",
+        "answers": [
+          "Camila's brother is an honest person who always tells the truth."
+        ],
+        "explanation": "'Honest' tiene la h muda, el sonido inicial es vocálico, por eso corresponde 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "Camila's brother is a honest persons who always tells the truth.",
+            "why": "El error no es el plural de 'person', sino el artículo antes de 'honest'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Juan necesita un paraguas para el viaje a Dublín.",
+        "answers": [
+          "Juan needs an umbrella for the trip to Dublin.",
+          "Juan needs an umbrella for his trip to Dublin."
+        ],
+        "explanation": "'Umbrella' empieza con sonido vocálico, así que se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan needs a umbrella for the trip to Dublin.",
+            "why": "'Umbrella' empieza con sonido vocálico, por eso corresponde 'an', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Laura trabaja como ingeniera en una empresa de Córdoba.",
+        "answers": [
+          "Laura works as an engineer at a company in Córdoba.",
+          "Laura works as an engineer in a company in Córdoba."
+        ],
+        "explanation": "Con profesiones siempre se usa 'a' o 'an' en inglés; 'engineer' necesita 'an' por su sonido inicial.",
+        "wrongAnswers": [
+          {
+            "answer": "Laura works as a engineer at a company in Córdoba.",
+            "why": "'Engineer' empieza con sonido vocálico, por eso corresponde 'an', no 'a'."
+          },
+          {
+            "answer": "Laura works as engineer at a company in Córdoba.",
+            "why": "En inglés las profesiones siempre llevan artículo (a/an), a diferencia del español."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico dice que necesito una hora de descanso.",
+        "answers": [
+          "The doctor says I need an hour of rest.",
+          "The doctor says that I need an hour of rest."
+        ],
+        "explanation": "La h de 'hour' no se pronuncia, así que el sonido inicial es vocálico y se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor says I need a hour of rest.",
+            "why": "'Hour' tiene la h muda, el sonido inicial es vocálico, por eso corresponde 'an'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mariana está buscando un departamento cerca del subte.",
+        "answers": [
+          "Mariana is looking for an apartment near the subway.",
+          "Mariana is looking for an apartment close to the subway."
+        ],
+        "explanation": "'Apartment' empieza con sonido vocálico, así que se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana is looking for a apartment near the subway.",
+            "why": "'Apartment' empieza con sonido vocálico, por eso corresponde 'an', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tomás adoptó un perro amigable del refugio.",
+        "answers": [
+          "Tomás adopted a friendly dog from the shelter.",
+          "Tomás adopted a friendly dog from the animal shelter."
+        ],
+        "explanation": "'Friendly' empieza con sonido consonántico, así que se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Tomás adopted an friendly dog from the shelter.",
+            "why": "'Friendly' empieza con sonido consonántico /f/, por eso corresponde 'a', no 'an'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El hermano de Camila es una persona honesta.",
+        "answers": [
+          "Camila's brother is an honest person.",
+          "Camila's brother is an honest man."
+        ],
+        "explanation": "La h de 'honest' no se pronuncia, así que el sonido inicial es vocálico y se usa 'an'.",
+        "wrongAnswers": [
+          {
+            "answer": "Camila's brother is a honest person.",
+            "why": "'Honest' tiene la h muda, el sonido inicial es vocálico, por eso corresponde 'an'."
+          }
+        ]
+      }
+    ],
+    "the": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Marcos le cuenta a un amigo sobre su departamento nuevo. Elegí la opción correcta.",
+        "prompt": "I just moved into a new apartment. ___ apartment is in Palermo.",
+        "options": [
+          "An",
+          "The",
+          "-",
+          "A"
+        ],
+        "correctIndex": 1,
+        "explanation": "Como el departamento ya fue mencionado antes, corresponde usar 'the'.",
+        "optionNotes": [
+          "Incorrecto: 'an' tampoco corresponde porque ya fue presentado antes; además no hace falta artículo indefinido.",
+          "Correcto: ya se mencionó el departamento antes, entonces corresponde 'the'.",
+          "Incorrecto: no se puede omitir el artículo cuando ya se sabe de qué cosa específica se habla.",
+          "Incorrecto: 'a' se usa para presentar algo por primera vez, pero el departamento ya fue mencionado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Alguien habla de sus gustos en general. Elegí la opción correcta.",
+        "prompt": "I really like ___ pizza; I eat it every Friday.",
+        "options": [
+          "the",
+          "a",
+          "-",
+          "an"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para hablar de algo en general, como un tipo de comida, no se usa artículo.",
+        "optionNotes": [
+          "Incorrecto: 'the' se usa cuando ya se sabe de qué pizza específica se habla, pero acá se habla de la pizza en general.",
+          "Incorrecto: 'a' se usa para una unidad no específica, no para hablar de algo en general como categoría.",
+          "Correcto: para hablar de algo en general no se usa artículo.",
+          "Incorrecto: 'an' no corresponde porque 'pizza' empieza con consonante y además acá no se necesita artículo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "En una oficina hace frío. Elegí la opción correcta.",
+        "prompt": "Close ___ window, please; it's really cold in here.",
+        "options": [
+          "the",
+          "-",
+          "an",
+          "a"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se refiere a una ventana específica y conocida por ambos, entonces corresponde 'the'.",
+        "optionNotes": [
+          "Correcto: se refiere a una ventana específica y conocida, entonces corresponde 'the'.",
+          "Incorrecto: no se puede omitir el artículo cuando se habla de algo específico y conocido por ambos.",
+          "Incorrecto: 'an' no corresponde porque 'window' empieza con consonante y además se necesita el artículo definido.",
+          "Incorrecto: 'a' implicaría cualquier ventana, pero acá se habla de una ventana específica y visible."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Alguien habla de un concepto general. Elegí la opción correcta.",
+        "prompt": "___ money can't buy happiness, they say.",
+        "options": [
+          "-",
+          "A",
+          "An",
+          "The"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para hablar de un concepto general como el dinero no se usa artículo.",
+        "optionNotes": [
+          "Correcto: para hablar de un concepto general no se usa artículo.",
+          "Incorrecto: 'a' no se usa con sustantivos no contables como 'money'.",
+          "Incorrecto: 'an' tampoco corresponde con sustantivos no contables como 'money'.",
+          "Incorrecto: 'the' se usaría si habláramos de un dinero específico, pero acá 'money' es un concepto general."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Alguien cuenta sobre una compra reciente. Elegí la opción correcta.",
+        "prompt": "I bought a laptop yesterday. ___ laptop was really expensive.",
+        "options": [
+          "An",
+          "A",
+          "The",
+          "-"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como la laptop ya fue mencionada antes, corresponde usar 'the'.",
+        "optionNotes": [
+          "Incorrecto: 'an' no corresponde porque 'laptop' empieza con consonante, y además ya fue mencionada antes.",
+          "Incorrecto: 'a' se usa para presentar algo por primera vez, pero ya se mencionó antes.",
+          "Correcto: la laptop ya fue mencionada antes, entonces corresponde 'the'.",
+          "Incorrecto: no se puede omitir el artículo cuando ya se habló de algo específico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Alguien da su opinión general sobre los perros. Elegí la opción correcta.",
+        "prompt": "___ dogs are loyal animals, in my opinion.",
+        "options": [
+          "An",
+          "-",
+          "A",
+          "The"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para hablar de los perros en general, con un sustantivo plural, no se usa artículo.",
+        "optionNotes": [
+          "Incorrecto: 'an' tampoco se puede usar con un sustantivo plural.",
+          "Correcto: para hablar de algo en general con un sustantivo plural no se usa artículo.",
+          "Incorrecto: 'a' no se puede usar con un sustantivo plural como 'dogs'.",
+          "Incorrecto: 'the' se usaría si habláramos de perros específicos, pero acá se habla de los perros en general."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto. Lucía habla de una valija que compró antes de viajar.",
+        "sentence": "I bought a suitcase at the airport shop. ___ suitcase is bright red.",
+        "hint": "(ya mencionada antes)",
+        "answers": [
+          "The",
+          "the"
+        ],
+        "explanation": "Cuando algo ya fue mencionado antes, se usa 'the' para referirse a esa misma cosa.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'A' se usa para presentar algo por primera vez, pero la valija ya fue mencionada en la oración anterior."
+          },
+          {
+            "answer": "An",
+            "why": "'An' no corresponde porque 'suitcase' empieza con consonante, y además ya fue mencionada antes."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto. El señor Ibarra le muestra un departamento a un inquilino.",
+        "sentence": "This is the key to the apartment. ___ key also opens the storage room downstairs.",
+        "hint": "(la misma llave que ya se mostró)",
+        "answers": [
+          "the",
+          "The"
+        ],
+        "explanation": "Como la llave ya fue mencionada y es la misma de la que se habla, corresponde usar 'the'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "'a' implicaría cualquier llave, pero se habla de la misma llave específica que ya se mostró."
+          },
+          {
+            "answer": "an",
+            "why": "'an' no corresponde porque 'key' empieza con consonante, y además ya se mencionó antes."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto. En la recepción de una clínica.",
+        "sentence": "There is a nurse at the front desk. ___ nurse can give you the forms.",
+        "hint": "(la misma enfermera ya mencionada)",
+        "answers": [
+          "The",
+          "the"
+        ],
+        "explanation": "Como la enfermera ya fue mencionada antes, corresponde usar 'the' para referirse a ella.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'A' se usa para presentar algo por primera vez, pero la enfermera ya fue mencionada en la oración anterior."
+          },
+          {
+            "answer": "An",
+            "why": "'An' no corresponde porque 'nurse' empieza con consonante, y además ya fue mencionada antes."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto. Dos amigos comentan sobre una cena reciente en Recoleta.",
+        "sentence": "We had dinner at a new restaurant in Recoleta last night. ___ restaurant was amazing.",
+        "hint": "(el mismo restaurante ya mencionado)",
+        "answers": [
+          "The",
+          "the"
+        ],
+        "explanation": "Como el restaurante ya fue mencionado, corresponde usar 'the' para referirse a él.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'A' se usa para presentar algo por primera vez, pero el restaurante ya fue mencionado antes."
+          },
+          {
+            "answer": "An",
+            "why": "'An' no corresponde porque 'restaurant' empieza con consonante, y además ya fue mencionado antes."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto sobre una montaña única.",
+        "sentence": "Aconcagua is ___ highest mountain in South America.",
+        "hint": "(superlativo, algo único)",
+        "answers": [
+          "the"
+        ],
+        "explanation": "Con superlativos como 'highest', que indican algo único, siempre se usa 'the'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "'a' no corresponde con superlativos como 'highest', porque se refiere a algo único, no a cualquiera."
+          },
+          {
+            "answer": "an",
+            "why": "'an' tampoco corresponde con superlativos; además 'highest' empieza con consonante."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto. Alguien cuenta sobre una búsqueda laboral.",
+        "sentence": "I sent my resume to a company in Córdoba last week. ___ company called me back today.",
+        "hint": "(la misma empresa ya mencionada)",
+        "answers": [
+          "The",
+          "the"
+        ],
+        "explanation": "Como la empresa ya fue mencionada, corresponde usar 'the' para referirse a ella.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'A' se usa para presentar algo por primera vez, pero la empresa ya fue mencionada antes."
+          },
+          {
+            "answer": "An",
+            "why": "'An' no corresponde porque 'company' empieza con consonante, y además ya fue mencionada antes."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The keys are on the kitchen table.",
+        "alternatives": [],
+        "translation": "Las llaves están sobre la mesa de la cocina.",
+        "explanation": "Se usa 'the' dos veces porque se habla de llaves y una mesa específicas y conocidas.",
+        "tokens": [
+          "the",
+          "kitchen",
+          "on",
+          "keys",
+          "The",
+          "table",
+          "are"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I really love Argentine wine.",
+        "alternatives": [],
+        "translation": "Me encanta mucho el vino argentino.",
+        "explanation": "No se usa artículo porque se habla del vino argentino en general, no de uno específico.",
+        "tokens": [
+          "wine",
+          "love",
+          "really",
+          "I",
+          "Argentine"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The manager is waiting for you outside.",
+        "alternatives": [],
+        "translation": "El gerente te está esperando afuera.",
+        "explanation": "Se usa 'the' porque se habla de un gerente específico y conocido por ambos.",
+        "tokens": [
+          "waiting",
+          "for",
+          "you",
+          "is",
+          "manager",
+          "outside",
+          "The"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Life is full of surprises.",
+        "alternatives": [],
+        "translation": "La vida está llena de sorpresas.",
+        "explanation": "No se usa artículo porque 'life' se usa como concepto general.",
+        "tokens": [
+          "surprises",
+          "Life",
+          "full",
+          "is",
+          "of"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Please turn off the lights before leaving.",
+        "alternatives": [],
+        "translation": "Por favor apagá las luces antes de salir.",
+        "explanation": "Se usa 'the' porque se habla de luces específicas y conocidas, las del lugar.",
+        "tokens": [
+          "turn",
+          "leaving",
+          "off",
+          "before",
+          "lights",
+          "the",
+          "Please"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en este dicho popular.",
+        "sentence": "The honesty is the best policy.",
+        "answers": [
+          "Honesty is the best policy."
+        ],
+        "explanation": "Para hablar de la honestidad como concepto general no se usa 'the', pero sí se mantiene con el superlativo 'the best policy'.",
+        "wrongAnswers": [
+          {
+            "answer": "Honesty is best policy.",
+            "why": "Quita el 'the' necesario antes de 'best policy' (un superlativo, que sí debe llevar artículo) y no corrige el error real al comienzo de la oración."
+          },
+          {
+            "answer": "The honesty is best policy.",
+            "why": "Corrige la parte equivocada: saca el artículo necesario antes de 'best policy' en vez de sacar el que sobra antes de 'honesty'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta opinión sobre los perros en general.",
+        "sentence": "I love the dogs, especially puppies.",
+        "answers": [
+          "I love dogs, especially puppies."
+        ],
+        "explanation": "Para hablar de los perros en general no se usa 'the'.",
+        "wrongAnswers": [
+          {
+            "answer": "I love dog, especially puppies.",
+            "why": "Cambia el sustantivo a singular en vez de sacar el artículo; el error real era usar 'the' para hablar de los perros en general."
+          },
+          {
+            "answer": "I love the dog, especially puppies.",
+            "why": "Mantiene el artículo 'the', que no corresponde cuando se habla de perros en general, y además cambia el número del sustantivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre un auto que ya fue mencionado.",
+        "sentence": "I bought a car last month. Car is very fuel-efficient.",
+        "answers": [
+          "I bought a car last month. The car is very fuel-efficient."
+        ],
+        "explanation": "Como el auto ya fue mencionado antes, hay que usar 'the' para referirse a él en la segunda oración.",
+        "wrongAnswers": [
+          {
+            "answer": "I bought a car last month. A car is very fuel-efficient.",
+            "why": "Repite el artículo indefinido 'a', pero como el auto ya fue mencionado antes, corresponde 'the'."
+          },
+          {
+            "answer": "I bought a car last month. Cars is very fuel-efficient.",
+            "why": "Cambia el sustantivo a plural en vez de agregar 'the', y además 'Cars is' no concuerda en número con el verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en este pedido sobre una ventana específica.",
+        "sentence": "Please close window; it's cold.",
+        "answers": [
+          "Please close the window; it's cold."
+        ],
+        "explanation": "Cuando se habla de algo específico y conocido, como la única ventana del lugar, hay que usar 'the'.",
+        "wrongAnswers": [
+          {
+            "answer": "Please close a window; it's cold.",
+            "why": "Usa el artículo indefinido 'a', que implica cualquier ventana, pero se habla de una ventana específica y conocida."
+          },
+          {
+            "answer": "Please close windows; it's cold.",
+            "why": "Cambia el sustantivo a plural en vez de agregar el artículo necesario 'the'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta afirmación general sobre el agua.",
+        "sentence": "The water is important for life.",
+        "answers": [
+          "Water is important for life."
+        ],
+        "explanation": "Para hablar del agua como concepto general no se usa 'the'.",
+        "wrongAnswers": [
+          {
+            "answer": "The water are important for life.",
+            "why": "Cambia el verbo a plural en vez de sacar el artículo innecesario; además 'water' es incontable y no se pluraliza el verbo así."
+          },
+          {
+            "answer": "Waters is important for life.",
+            "why": "Pluraliza 'water' incorrectamente en vez de sacar el artículo 'the', que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Las llaves están en la mesa.",
+        "answers": [
+          "The keys are on the table."
+        ],
+        "explanation": "Como se habla de llaves y una mesa específicas y conocidas, corresponde usar 'the' en ambos casos.",
+        "wrongAnswers": [
+          {
+            "answer": "Keys are on the table.",
+            "why": "Omite el artículo 'the' antes de 'keys', pero se habla de llaves específicas y conocidas."
+          },
+          {
+            "answer": "The keys are on table.",
+            "why": "Omite el artículo 'the' antes de 'table', pero se habla de una mesa específica y conocida."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Me encanta la música clásica.",
+        "answers": [
+          "I love classical music."
+        ],
+        "explanation": "Para hablar de un género musical en general no se usa artículo en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "I love the classical music.",
+            "why": "Agrega 'the' innecesariamente; para hablar de un tipo de música en general no se usa artículo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El gerente está en la oficina.",
+        "answers": [
+          "The manager is in the office."
+        ],
+        "explanation": "Como se habla de un gerente y una oficina específicos y conocidos, corresponde usar 'the' en ambos casos.",
+        "wrongAnswers": [
+          {
+            "answer": "Manager is in office.",
+            "why": "Omite ambos artículos 'the', pero se habla de un gerente y una oficina específicos y conocidos."
+          },
+          {
+            "answer": "A manager is in an office.",
+            "why": "Usa artículos indefinidos, pero la oración habla de un gerente y una oficina específicos, no de cualquiera."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La vida es corta.",
+        "answers": [
+          "Life is short."
+        ],
+        "explanation": "Para hablar de la vida como concepto general no se usa artículo en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "The life is short.",
+            "why": "Agrega 'the' innecesariamente; para hablar de la vida como concepto general no se usa artículo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Compré una mochila nueva. La mochila es azul.",
+        "answers": [
+          "I bought a new backpack. The backpack is blue."
+        ],
+        "explanation": "La primera vez que se presenta algo se usa 'a', y luego, al referirse de nuevo a lo mismo, se usa 'the'.",
+        "wrongAnswers": [
+          {
+            "answer": "I bought a new backpack. A backpack is blue.",
+            "why": "Repite el artículo indefinido 'a' en la segunda oración, pero como la mochila ya fue mencionada, corresponde 'the'."
+          },
+          {
+            "answer": "I bought the new backpack. The backpack is blue.",
+            "why": "Usa 'the' en la primera mención, pero la primera vez que se presenta algo se usa el artículo indefinido 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El amor es importante en la vida.",
+        "answers": [
+          "Love is important in life."
+        ],
+        "explanation": "Para hablar de conceptos generales como el amor y la vida no se usa artículo en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "The love is important in the life.",
+            "why": "Agrega 'the' en ambos sustantivos, pero 'love' y 'life' son conceptos generales y no llevan artículo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre el uso de 'the'.",
+        "text": "Juan is looking for a new apartment in Buenos Aires. Yesterday, he saw an apartment near the subway station. The apartment has two bedrooms and a small kitchen. Juan likes the kitchen because it has a lot of light. The owner, Mrs. Pérez, says the rent is not expensive. Juan also visited another apartment, but he didn't like it. The first apartment is better because it's close to his office. Juan thinks life in a big city is difficult, but he needs a place to live. Tomorrow, he's going to call Mrs. Pérez to ask about the contract. He hopes the apartment is still available.",
+        "questions": [
+          {
+            "prompt": "Why does Juan like the kitchen in the first apartment?",
+            "options": [
+              "Because it's very big",
+              "Because it has a lot of light",
+              "Because it's cheap",
+              "Because it's near his office"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice explícitamente: 'Juan likes the kitchen because it has a lot of light'."
+          },
+          {
+            "prompt": "In the sentence 'The apartment has two bedrooms', why do we use 'the'?",
+            "options": [
+              "Because 'apartment' is a general, uncountable word",
+              "Because all apartments need 'the' before them",
+              "Because 'apartment' starts with a vowel sound",
+              "Because the apartment was already mentioned before in the text"
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa 'the' porque ese departamento ya fue mencionado antes ('he saw an apartment'); ahora ambos sabemos de cuál se habla."
+          },
+          {
+            "prompt": "Which option correctly completes this idea from the text: 'Juan thinks ___ in a big city is difficult'?",
+            "options": [
+              "lives",
+              "life",
+              "a life",
+              "the life"
+            ],
+            "correctIndex": 1,
+            "explanation": "Cuando se habla de algo en general, como 'life' (la vida en general), no se usa 'the'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre el uso de 'the'.",
+        "text": "Sofía has a job interview today at a company in Córdoba. The interview is at ten o'clock. She wants to work there because she loves fashion. In the waiting room, she meets another candidate, Martín. He says the company is very serious about punctuality. Sofía thinks money isn't the most important thing for her; she wants experience. The manager, Mr. Ríos, calls her name and opens the door of his office. 'Please, sit down,' he says. Sofía looks at the photos on the wall and feels calm. She knows that confidence is important in interviews, so she smiles and starts talking about her last job.",
+        "questions": [
+          {
+            "prompt": "Who does Sofía meet in the waiting room?",
+            "options": [
+              "Mr. Ríos",
+              "The receptionist",
+              "Her old boss",
+              "Another candidate named Martín"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice: 'In the waiting room, she meets another candidate, Martín'."
+          },
+          {
+            "prompt": "According to the text, why doesn't Sofía say 'the money'?",
+            "options": [
+              "Because she's talking about money in general, not a specific amount",
+              "Because 'money' always needs 'a' instead of 'the'",
+              "Because 'money' starts with a consonant sound",
+              "Because 'the' is only used with plural nouns"
+            ],
+            "correctIndex": 0,
+            "explanation": "No se usa 'the' cuando se habla de algo en general, como el dinero en general y no una cantidad específica."
+          },
+          {
+            "prompt": "Which sentence correctly completes: 'Mr. Ríos opens ___ door of his office'?",
+            "options": [
+              "a",
+              "an",
+              "(no article)",
+              "the"
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa 'the' porque se habla de una puerta específica, la de la oficina de Mr. Ríos, que ya se identificó en el contexto."
+          }
+        ]
+      }
+    ],
+    "plurales": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Estás en el supermercado en Mendoza haciendo las compras. Elegí la opción correcta.",
+        "prompt": "I'm at the supermarket in Mendoza. I need to buy some ___ for dinner tonight.",
+        "options": [
+          "potatos",
+          "potatoes",
+          "potato",
+          "potatoe"
+        ],
+        "correctIndex": 1,
+        "explanation": "Los sustantivos terminados en 'o' agregan '-es' en plural, por eso corresponde 'potatoes'.",
+        "optionNotes": [
+          "Incorrecto: falta la 'e' antes de la 's'; la regla para sustantivos terminados en 'o' es agregar '-es'.",
+          "Correcto: los sustantivos terminados en 'o' agregan '-es' en plural, por eso 'potatoes'.",
+          "Incorrecto: esta es la forma singular; falta agregar '-es' para formar el plural.",
+          "Incorrecto: falta la 's' final; el plural correcto es 'potatoes', no 'potatoe'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Volvés del dentista después de un control. Elegí la opción correcta.",
+        "prompt": "The dentist checked all my ___ this morning.",
+        "options": [
+          "tooth",
+          "teeth",
+          "tooths",
+          "teeths"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Tooth' tiene un plural irregular: 'teeth'.",
+        "optionNotes": [
+          "Incorrecto: esta es la forma singular; el plural irregular correcto es 'teeth'.",
+          "Correcto: 'tooth' tiene un plural irregular: 'teeth'.",
+          "Incorrecto: 'tooth' no sigue la regla general de agregar '-s'; su plural irregular es 'teeth'.",
+          "Incorrecto: no se agrega '-s' a un plural irregular que ya cambió de forma."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Estás charlando con un vecino sobre su familia. Elegí la opción correcta.",
+        "prompt": "My neighbors have three ___; two girls and one boy.",
+        "options": [
+          "childes",
+          "children",
+          "child",
+          "childs"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Child' tiene un plural irregular: 'children'.",
+        "optionNotes": [
+          "Incorrecto: 'childes' no es una forma válida en inglés.",
+          "Correcto: 'child' tiene un plural irregular: 'children'.",
+          "Incorrecto: esta es la forma singular; el plural irregular correcto es 'children'.",
+          "Incorrecto: 'child' no sigue la regla general de agregar '-s'; su plural irregular es 'children'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Estás esperando el transporte público en la esquina. Elegí la opción correcta.",
+        "prompt": "There are two ___ waiting at the corner.",
+        "options": [
+          "bus",
+          "buss",
+          "buse",
+          "buses"
+        ],
+        "correctIndex": 3,
+        "explanation": "Los sustantivos terminados en '-s' agregan '-es' en plural, por eso corresponde 'buses'.",
+        "optionNotes": [
+          "Incorrecto: esta es la forma singular; falta agregar '-es' para formar el plural.",
+          "Incorrecto: 'buss' no es la forma correcta; se agrega '-es', no se duplica la 's'.",
+          "Incorrecto: falta la 's' final; el plural correcto es 'buses', no 'buse'.",
+          "Correcto: los sustantivos terminados en '-s' agregan '-es' en plural, por eso 'buses'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Estás hablando de ciudades argentinas con un amigo. Elegí la opción correcta.",
+        "prompt": "Buenos Aires and Córdoba are two big ___ in Argentina.",
+        "options": [
+          "citties",
+          "citys",
+          "cities",
+          "citi"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando el sustantivo termina en consonante + 'y', el plural cambia la 'y' por 'ies', por eso corresponde 'cities'.",
+        "optionNotes": [
+          "Incorrecto: no se duplica la 't'; la regla es cambiar la 'y' por 'ies'.",
+          "Incorrecto: no se puede agregar solo '-s' cuando el sustantivo termina en consonante + 'y'; hay que cambiar la 'y' por 'ies'.",
+          "Correcto: cuando el sustantivo termina en consonante + 'y', el plural cambia la 'y' por 'ies', por eso 'cities'.",
+          "Incorrecto: esta no es una forma válida en inglés."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Terminás de correr una maratón y te duele todo el cuerpo. Elegí la opción correcta.",
+        "prompt": "After the marathon, his ___ were really sore.",
+        "options": [
+          "feets",
+          "foots",
+          "foot",
+          "feet"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Foot' tiene un plural irregular: 'feet'.",
+        "optionNotes": [
+          "Incorrecto: no se agrega '-s' a un plural irregular que ya cambió de forma.",
+          "Incorrecto: 'foot' no sigue la regla general de agregar '-s'; su plural irregular es 'feet'.",
+          "Incorrecto: esta es la forma singular; el plural irregular correcto es 'feet'.",
+          "Correcto: 'foot' tiene un plural irregular: 'feet'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el plural correcto. Mariana está cocinando y le pide algo a su pareja.",
+        "sentence": "Can you pass me two ___? I need them for the salad.",
+        "hint": "(tomato)",
+        "answers": [
+          "tomatoes"
+        ],
+        "explanation": "Los sustantivos terminados en 'o' agregan '-es' en plural, por eso es 'tomatoes'.",
+        "wrongAnswers": [
+          {
+            "answer": "tomatos",
+            "why": "Falta la 'e' antes de la 's'; los sustantivos terminados en 'o' agregan '-es' en plural."
+          },
+          {
+            "answer": "tomatoe",
+            "why": "Falta la 's' final; el plural correcto es 'tomatoes', no 'tomatoe'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el plural correcto. Alguien comenta sobre sus vecinos ruidosos.",
+        "sentence": "My neighbors have four ___; they are very noisy.",
+        "hint": "(child)",
+        "answers": [
+          "children"
+        ],
+        "explanation": "'Child' tiene un plural irregular: 'children'.",
+        "wrongAnswers": [
+          {
+            "answer": "childs",
+            "why": "'Child' no sigue la regla general de agregar '-s'; su plural irregular es 'children'."
+          },
+          {
+            "answer": "childrens",
+            "why": "'Children' ya es la forma plural irregular; no necesita una 's' adicional."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el plural correcto. Alguien cuenta sobre un viaje por Europa.",
+        "sentence": "We visited five different ___ during our trip through Europe.",
+        "hint": "(city)",
+        "answers": [
+          "cities"
+        ],
+        "explanation": "Cuando un sustantivo termina en consonante + 'y', el plural cambia la 'y' por 'ies'.",
+        "wrongAnswers": [
+          {
+            "answer": "citys",
+            "why": "No se puede agregar solo '-s' cuando el sustantivo termina en consonante + 'y'; hay que cambiar la 'y' por 'ies'."
+          },
+          {
+            "answer": "citties",
+            "why": "No se duplica la 't'; la regla es cambiar la 'y' por 'ies', no agregar letras extra."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el plural correcto. Estás en el dentista explicando tu problema.",
+        "sentence": "The doctor says I need to take care of my ___; I have a cavity.",
+        "hint": "(tooth)",
+        "answers": [
+          "teeth"
+        ],
+        "explanation": "'Tooth' tiene un plural irregular: 'teeth'.",
+        "wrongAnswers": [
+          {
+            "answer": "tooths",
+            "why": "'Tooth' no sigue la regla general de agregar '-s'; su plural irregular es 'teeth'."
+          },
+          {
+            "answer": "teeths",
+            "why": "'Teeth' ya es la forma plural irregular; no necesita una 's' adicional."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el plural correcto. Describís una fiesta muy concurrida.",
+        "sentence": "There are many ___ at the party; it's really crowded.",
+        "hint": "(person)",
+        "answers": [
+          "people"
+        ],
+        "explanation": "El plural de 'person' en el uso cotidiano es 'people', no 'persons'.",
+        "wrongAnswers": [
+          {
+            "answer": "persons",
+            "why": "'Persons' no es la forma natural en inglés cotidiano; se usa 'people' como plural habitual de 'person'."
+          },
+          {
+            "answer": "peoples",
+            "why": "'People' ya es la forma plural de 'person'; no necesita una 's' adicional."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el plural correcto. Volvés de una caminata larga.",
+        "sentence": "After the hike, my ___ hurt a lot.",
+        "hint": "(foot)",
+        "answers": [
+          "feet"
+        ],
+        "explanation": "'Foot' tiene un plural irregular: 'feet'.",
+        "wrongAnswers": [
+          {
+            "answer": "foots",
+            "why": "'Foot' no sigue la regla general de agregar '-s'; su plural irregular es 'feet'."
+          },
+          {
+            "answer": "feets",
+            "why": "'Feet' ya es la forma plural irregular; no necesita una 's' adicional."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There are three buses outside the school.",
+        "alternatives": [],
+        "translation": "Hay tres colectivos afuera de la escuela.",
+        "explanation": "'Bus' termina en '-s', por eso su plural es 'buses', agregando '-es'.",
+        "tokens": [
+          "There",
+          "are",
+          "the",
+          "outside",
+          "school",
+          "three",
+          "buses"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My sister has two beautiful children.",
+        "alternatives": [],
+        "translation": "Mi hermana tiene dos hijos hermosos.",
+        "explanation": "'Child' tiene un plural irregular: 'children'.",
+        "tokens": [
+          "sister",
+          "beautiful",
+          "two",
+          "children",
+          "has",
+          "My"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The dentist cleaned all my teeth yesterday.",
+        "alternatives": [],
+        "translation": "El dentista me limpió todos los dientes ayer.",
+        "explanation": "'Tooth' tiene un plural irregular: 'teeth'.",
+        "tokens": [
+          "yesterday",
+          "teeth",
+          "all",
+          "my",
+          "The",
+          "dentist",
+          "cleaned"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Many people visit these cities every summer.",
+        "alternatives": [],
+        "translation": "Mucha gente visita estas ciudades todos los veranos.",
+        "explanation": "'People' es el plural de 'person' y 'cities' es el plural de 'city', cambiando la 'y' por 'ies'.",
+        "tokens": [
+          "every",
+          "these",
+          "cities",
+          "summer",
+          "people",
+          "Many",
+          "visit"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "His feet were sore after the race.",
+        "alternatives": [],
+        "translation": "Los pies de él estaban doloridos después de la carrera.",
+        "explanation": "'Foot' tiene un plural irregular: 'feet'.",
+        "tokens": [
+          "sore",
+          "feet",
+          "His",
+          "the",
+          "were",
+          "after",
+          "race"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre una familia.",
+        "sentence": "I have three childs from my first marriage.",
+        "answers": [
+          "I have three children from my first marriage."
+        ],
+        "explanation": "'Child' tiene un plural irregular: 'children', no 'childs'.",
+        "wrongAnswers": [
+          {
+            "answer": "I have three child from my first marriage.",
+            "why": "Quita la 's' pero no corrige la forma irregular; el plural correcto de 'child' es 'children', no simplemente 'child'."
+          },
+          {
+            "answer": "I have three childrens from my first marriage.",
+            "why": "Agrega una 's' extra a 'children', que ya es un plural irregular y no necesita 's' adicional."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta descripción de un barrio.",
+        "sentence": "The people in this neighborhood is very friendly.",
+        "answers": [
+          "The people in this neighborhood are very friendly."
+        ],
+        "explanation": "'People' ya es plural, por eso el verbo correcto es 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "The peoples in this neighborhood are very friendly.",
+            "why": "Agrega 's' a 'people', que ya es la forma plural de 'person' y no necesita 's' adicional."
+          },
+          {
+            "answer": "The person in this neighborhood are very friendly.",
+            "why": "Cambia 'people' por la forma singular 'person', pero la oración se refiere a varias personas."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre gente esperando afuera de una oficina.",
+        "sentence": "There were two mans waiting outside the office.",
+        "answers": [
+          "There were two men waiting outside the office."
+        ],
+        "explanation": "'Man' tiene un plural irregular: 'men', no 'mans'.",
+        "wrongAnswers": [
+          {
+            "answer": "There were two man waiting outside the office.",
+            "why": "Quita la 's' pero no usa la forma plural irregular correcta; el plural de 'man' es 'men'."
+          },
+          {
+            "answer": "There were two mens waiting outside the office.",
+            "why": "Agrega una 's' extra a la forma plural irregular 'men', que no necesita 's' adicional."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre una compra para la sopa.",
+        "sentence": "She bought six potato for the soup.",
+        "answers": [
+          "She bought six potatoes for the soup."
+        ],
+        "explanation": "'Potato' termina en 'o', por eso su plural es 'potatoes', agregando '-es'.",
+        "wrongAnswers": [
+          {
+            "answer": "She bought six potatos for the soup.",
+            "why": "Falta la 'e' antes de la 's'; los sustantivos terminados en 'o' agregan '-es' en plural."
+          },
+          {
+            "answer": "She bought six potatoe for the soup.",
+            "why": "Falta la 's' final; el plural correcto es 'potatoes'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta oración sobre una conferencia.",
+        "sentence": "We saw a lot of woman at the conference.",
+        "answers": [
+          "We saw a lot of women at the conference."
+        ],
+        "explanation": "'Woman' tiene un plural irregular: 'women', no 'woman' ni 'womans'.",
+        "wrongAnswers": [
+          {
+            "answer": "We saw a lot of womans at the conference.",
+            "why": "Agrega 's' a una palabra que ya tiene un plural irregular distinto; el plural correcto de 'woman' es 'women'."
+          },
+          {
+            "answer": "We saw a lot of woman's at the conference.",
+            "why": "Agrega un apóstrofo como si fuera posesivo, pero acá se necesita el plural, no el posesivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tenemos tres hijos; son muy traviesos.",
+        "answers": [
+          "We have three children; they are very naughty.",
+          "We have three children; they are very mischievous."
+        ],
+        "explanation": "'Child' tiene un plural irregular: 'children'.",
+        "wrongAnswers": [
+          {
+            "answer": "We have three childs; they are very naughty.",
+            "why": "'Child' tiene un plural irregular: 'children', no 'childs'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hay muchas personas en la fiesta esta noche.",
+        "answers": [
+          "There are many people at the party tonight.",
+          "There are a lot of people at the party tonight."
+        ],
+        "explanation": "El plural habitual de 'person' es 'people', y al ser plural lleva el verbo 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "There are many persons at the party tonight.",
+            "why": "'Persons' no es la forma natural en inglés cotidiano; se usa 'people' como plural habitual de 'person'."
+          },
+          {
+            "answer": "There is many people at the party tonight.",
+            "why": "El verbo 'is' no concuerda con el sustantivo plural 'people'; debe ser 'are'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Compré cinco tomates para la ensalada.",
+        "answers": [
+          "I bought five tomatoes for the salad.",
+          "I got five tomatoes for the salad."
+        ],
+        "explanation": "'Tomato' termina en 'o', por eso su plural es 'tomatoes'.",
+        "wrongAnswers": [
+          {
+            "answer": "I bought five tomatos for the salad.",
+            "why": "Falta la 'e' antes de la 's'; los sustantivos terminados en 'o' agregan '-es' en plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Visitamos tres ciudades distintas en nuestro viaje.",
+        "answers": [
+          "We visited three different cities on our trip.",
+          "We visited three different cities during our trip."
+        ],
+        "explanation": "Cuando un sustantivo termina en consonante + 'y', el plural cambia la 'y' por 'ies'.",
+        "wrongAnswers": [
+          {
+            "answer": "We visited three different citys on our trip.",
+            "why": "No se puede agregar solo '-s' cuando el sustantivo termina en consonante + 'y'; hay que cambiar la 'y' por 'ies'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Me duelen los pies después de caminar todo el día.",
+        "answers": [
+          "My feet hurt after walking all day.",
+          "My feet hurt after walking the whole day."
+        ],
+        "explanation": "'Foot' tiene un plural irregular: 'feet'.",
+        "wrongAnswers": [
+          {
+            "answer": "My foots hurt after walking all day.",
+            "why": "'Foot' tiene un plural irregular: 'feet', no 'foots'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El dentista revisó todos mis dientes la semana pasada.",
+        "answers": [
+          "The dentist checked all my teeth last week.",
+          "The dentist examined all my teeth last week."
+        ],
+        "explanation": "'Tooth' tiene un plural irregular: 'teeth'.",
+        "wrongAnswers": [
+          {
+            "answer": "The dentist checked all my tooths last week.",
+            "why": "'Tooth' tiene un plural irregular: 'teeth', no 'tooths'."
+          }
+        ]
+      }
+    ],
+    "demostrativos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You and your friend are at a fruit stall. ___ apples (right in front of you) are fresh.",
+        "options": [
+          "That",
+          "These",
+          "This",
+          "Those"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa 'these' porque 'apples' es plural y están cerca de quien habla.",
+        "optionNotes": [
+          "Incorrecto: además de ser singular, 'that' se usa para lo lejano.",
+          "Correcto: 'these' concuerda en plural y las manzanas están cerca.",
+          "Incorrecto: 'this' es singular y 'apples' es plural.",
+          "Incorrecto: 'those' es plural pero se usa para lo lejano, no para algo que tenés al lado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You and your friend are looking across the store. Is ___ shirt yours?",
+        "options": [
+          "these",
+          "this",
+          "those",
+          "that"
+        ],
+        "correctIndex": 3,
+        "explanation": "Se usa 'that' porque la camisa está lejos y 'shirt' es singular.",
+        "optionNotes": [
+          "Incorrecto: 'these' es plural y no concuerda con 'shirt'.",
+          "Incorrecto: 'this' se usa para algo cerca, pero la camisa está lejos.",
+          "Incorrecto: 'those' es plural y no concuerda con 'shirt'.",
+          "Correcto: 'that' es singular y se usa para lo lejano."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "The nurse is right next to you with some papers. Please sign ___ forms.",
+        "options": [
+          "that",
+          "this",
+          "those",
+          "these"
+        ],
+        "correctIndex": 3,
+        "explanation": "Se usa 'these' porque 'forms' es plural y están cerca.",
+        "optionNotes": [
+          "Incorrecto: 'that' es singular y se usa para lo lejano.",
+          "Incorrecto: 'this' es singular y no concuerda con 'forms'.",
+          "Incorrecto: 'those' es plural pero se usa para lo lejano.",
+          "Correcto: 'these' es plural y las hojas están cerca."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are standing far from the baggage carousel. ___ bags over there are mine.",
+        "options": [
+          "That",
+          "Those",
+          "These",
+          "This"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa 'those' porque 'bags' es plural y están lejos ('over there').",
+        "optionNotes": [
+          "Incorrecto: 'that' es singular.",
+          "Correcto: 'those' es plural y se usa para lo lejano.",
+          "Incorrecto: 'these' es plural pero se usa para lo cercano, y las valijas están lejos.",
+          "Incorrecto: 'this' es singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You hand your paper to the interviewer. ___ is my resume.",
+        "options": [
+          "This",
+          "That",
+          "Those",
+          "These"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'this' porque el currículum está en tu mano, es singular y cercano.",
+        "optionNotes": [
+          "Correcto: 'this' es singular y cercano, lo tenés en la mano.",
+          "Incorrecto: 'that' se usa para lo lejano.",
+          "Incorrecto: 'those' es plural y se usa para lo lejano.",
+          "Incorrecto: 'these' es plural y no concuerda con 'resume'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are on a hiking trip. Look at ___ mountains in the distance!",
+        "options": [
+          "those",
+          "this",
+          "these",
+          "that"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'those' porque 'mountains' es plural y están lejos ('in the distance').",
+        "optionNotes": [
+          "Correcto: 'those' es plural y se usa para lo lejano.",
+          "Incorrecto: 'this' es singular.",
+          "Incorrecto: 'these' es plural pero se usa para lo cercano, y las montañas están lejos.",
+          "Incorrecto: 'that' es singular."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con this, that, these o those según corresponda.",
+        "sentence": "___ is my new phone.",
+        "hint": "(cerca, singular)",
+        "answers": [
+          "This"
+        ],
+        "explanation": "Se usa 'this' porque 'phone' es singular y está cerca de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "These",
+            "why": "'These' es plural, pero 'phone' es singular."
+          },
+          {
+            "answer": "That",
+            "why": "'That' se usa para algo lejano, no para lo que tenés en la mano."
+          },
+          {
+            "answer": "Those",
+            "why": "'Those' es plural y para lo lejano; no concuerda con 'phone'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con this, that, these o those según corresponda.",
+        "sentence": "___ shoes are very comfortable.",
+        "hint": "(cerca, plural)",
+        "answers": [
+          "These"
+        ],
+        "explanation": "Se usa 'these' porque 'shoes' es plural y están cerca.",
+        "wrongAnswers": [
+          {
+            "answer": "This",
+            "why": "'This' es singular, pero 'shoes' es plural."
+          },
+          {
+            "answer": "That",
+            "why": "'That' es singular y se usa para lo lejano."
+          },
+          {
+            "answer": "Those",
+            "why": "'Those' se usa para lo lejano; en esta frase los zapatos están cerca."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con this, that, these o those según corresponda.",
+        "sentence": "Is ___ car yours, Martín?",
+        "hint": "(lejos, singular)",
+        "answers": [
+          "that"
+        ],
+        "explanation": "Se usa 'that' porque 'car' es singular y está lejos de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "this",
+            "why": "'this' se usa para algo cerca, no lejano."
+          },
+          {
+            "answer": "these",
+            "why": "'these' es plural, pero 'car' es singular."
+          },
+          {
+            "answer": "those",
+            "why": "'those' es plural, pero 'car' es singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con this, that, these o those según corresponda.",
+        "sentence": "___ dishes on that table are for another customer.",
+        "hint": "(lejos, plural)",
+        "answers": [
+          "Those"
+        ],
+        "explanation": "Se usa 'those' porque 'dishes' es plural y están lejos, en otra mesa.",
+        "wrongAnswers": [
+          {
+            "answer": "These",
+            "why": "'These' se usa para lo cercano, pero los platos están en otra mesa."
+          },
+          {
+            "answer": "That",
+            "why": "'That' es singular, pero 'dishes' es plural."
+          },
+          {
+            "answer": "This",
+            "why": "'This' es singular, pero 'dishes' es plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con this, that, these o those según corresponda.",
+        "sentence": "Please fill out ___ form before the appointment.",
+        "hint": "(cerca, singular)",
+        "answers": [
+          "this"
+        ],
+        "explanation": "Se usa 'this' porque 'form' es singular y el formulario está cerca, en tus manos.",
+        "wrongAnswers": [
+          {
+            "answer": "these",
+            "why": "'these' es plural, pero 'form' es singular."
+          },
+          {
+            "answer": "that",
+            "why": "'that' se usa para algo lejano."
+          },
+          {
+            "answer": "those",
+            "why": "'those' es plural y para lo lejano."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con this, that, these o those según corresponda.",
+        "sentence": "Can I see ___ postcards, please?",
+        "hint": "(lejos, plural, del otro lado del local)",
+        "answers": [
+          "those"
+        ],
+        "explanation": "Se usa 'those' porque 'postcards' es plural y están lejos de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "these",
+            "why": "'these' se usa para lo cercano; las postales están lejos, del otro lado del local."
+          },
+          {
+            "answer": "this",
+            "why": "'this' es singular, pero 'postcards' es plural."
+          },
+          {
+            "answer": "that",
+            "why": "'that' es singular, pero 'postcards' es plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "This is my boarding pass for the flight.",
+        "alternatives": [],
+        "translation": "Esta es mi tarjeta de embarque para el vuelo.",
+        "explanation": "Se usa 'this' porque la tarjeta de embarque es singular y la tenés cerca, en la mano.",
+        "tokens": [
+          "pass",
+          "flight",
+          "for",
+          "the",
+          "boarding",
+          "This",
+          "is",
+          "my"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Those passengers are waiting for the bus.",
+        "alternatives": [],
+        "translation": "Esos pasajeros están esperando el colectivo.",
+        "explanation": "Se usa 'those' porque 'passengers' es plural y están lejos de quien habla.",
+        "tokens": [
+          "passengers",
+          "waiting",
+          "are",
+          "Those",
+          "the",
+          "for",
+          "bus"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Is that man your new neighbor?",
+        "alternatives": [],
+        "translation": "¿Ese hombre es tu nuevo vecino?",
+        "explanation": "Se usa 'that' porque 'man' es singular y está lejos de quien habla.",
+        "tokens": [
+          "man",
+          "that",
+          "Is",
+          "neighbor",
+          "your",
+          "new"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "These documents are ready for the interview.",
+        "alternatives": [],
+        "translation": "Estos documentos están listos para la entrevista.",
+        "explanation": "Se usa 'these' porque 'documents' es plural y están cerca de quien habla.",
+        "tokens": [
+          "documents",
+          "for",
+          "the",
+          "These",
+          "ready",
+          "interview",
+          "are"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "That restaurant near the hotel is excellent.",
+        "alternatives": [],
+        "translation": "Ese restaurante cerca del hotel es excelente.",
+        "explanation": "Se usa 'that' porque 'restaurant' es singular y está lejos de quien habla.",
+        "tokens": [
+          "the",
+          "excellent",
+          "is",
+          "hotel",
+          "That",
+          "restaurant",
+          "near"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con this/that/these/those.",
+        "sentence": "This books are new.",
+        "answers": [
+          "These books are new."
+        ],
+        "explanation": "Con sustantivos en plural como 'books' se usa 'these', no 'this'.",
+        "wrongAnswers": [
+          {
+            "answer": "This book is new.",
+            "why": "Cambia el sustantivo a singular en lugar de corregir el demostrativo a 'these', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con this/that/these/those.",
+        "sentence": "These phone is expensive.",
+        "answers": [
+          "This phone is expensive."
+        ],
+        "explanation": "Con un sustantivo singular como 'phone' se usa 'this', no 'these'.",
+        "wrongAnswers": [
+          {
+            "answer": "These phones is expensive.",
+            "why": "Cambia el sustantivo a plural pero el verbo 'is' queda sin concordar, y no corrige el verdadero error del demostrativo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con this/that/these/those.",
+        "sentence": "That shoes are on sale.",
+        "answers": [
+          "Those shoes are on sale."
+        ],
+        "explanation": "Con sustantivos en plural como 'shoes' se usa 'those', no 'that'.",
+        "wrongAnswers": [
+          {
+            "answer": "That shoe is on sale.",
+            "why": "Cambia el sustantivo a singular en lugar de usar 'those', que es la corrección esperada para concordar con 'shoes'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con this/that/these/those.",
+        "sentence": "Those car is very old.",
+        "answers": [
+          "That car is very old."
+        ],
+        "explanation": "Con un sustantivo singular como 'car' se usa 'that', no 'those'.",
+        "wrongAnswers": [
+          {
+            "answer": "Those cars is very old.",
+            "why": "Cambia el sustantivo a plural pero el verbo 'is' queda sin concordar; no corrige el demostrativo, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con this/that/these/those.",
+        "sentence": "This keys are on the table.",
+        "answers": [
+          "These keys are on the table."
+        ],
+        "explanation": "Con sustantivos en plural como 'keys' se usa 'these', no 'this'.",
+        "wrongAnswers": [
+          {
+            "answer": "This key is on the table.",
+            "why": "Cambia el sustantivo a singular en lugar de usar 'these', que es la corrección esperada para concordar con 'keys'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Me pasás esos papeles, por favor?",
+        "answers": [
+          "Can you pass me those papers, please?",
+          "Could you pass me those papers, please?",
+          "Can you hand me those papers, please?"
+        ],
+        "explanation": "Se usa 'those' porque 'papers' es plural y están lejos de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you pass me these papers, please?",
+            "why": "'These' se usa para lo cercano, pero 'esos' indica que los papeles están lejos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Esta es mi hermana, Lucía.",
+        "answers": [
+          "This is my sister, Lucía."
+        ],
+        "explanation": "Se usa 'this' porque 'sister' es singular y está cerca de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "These is my sister, Lucía.",
+            "why": "'These' es plural y no concuerda con el verbo 'is' ni con 'sister', que es singular."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿De quién son estas llaves?",
+        "answers": [
+          "Whose keys are these?",
+          "Whose are these keys?"
+        ],
+        "explanation": "Se usa 'these' porque 'keys' es plural y están cerca de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "Whose keys are this?",
+            "why": "'This' es singular, pero 'llaves' (keys) es plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Aquellas montañas son hermosas.",
+        "answers": [
+          "Those mountains are beautiful."
+        ],
+        "explanation": "Se usa 'those' porque 'mountains' es plural y están lejos de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "These mountains are beautiful.",
+            "why": "'These' se usa para lo cercano, pero 'aquellas' indica que las montañas están lejos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Podés alcanzarme ese libro, por favor?",
+        "answers": [
+          "Can you pass me that book, please?",
+          "Could you pass me that book, please?",
+          "Can you hand me that book, please?"
+        ],
+        "explanation": "Se usa 'that' porque 'book' es singular y está lejos de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "Can you pass me this book, please?",
+            "why": "'This' se usa para algo cerca, pero 'ese' indica que el libro está lejos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estos zapatos son muy cómodos.",
+        "answers": [
+          "These shoes are very comfortable."
+        ],
+        "explanation": "Se usa 'these' porque 'shoes' es plural y están cerca de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "This shoes are very comfortable.",
+            "why": "'This' es singular, pero 'shoes' (zapatos) es plural."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre this, that, these y those.",
+        "text": "Laura is at a market in San Telmo, Buenos Aires. She is looking for a gift for her sister. The seller, Martín, is standing next to a table full of things.\n\nLaura says, \"This bag is beautiful. I like the colors.\" The bag is right in front of her, on the table.\n\nThen she looks at some scarves far away, on a shelf near the wall. \"Are those scarves made of wool?\" she asks.\n\nMartín answers, \"Yes, those are from Salta.\"\n\nLaura also sees two small boxes near her hand. \"These boxes are very pretty,\" she says.\n\nFinally, she points at a big mirror far from the table, near the door. \"Is that mirror for sale?\"\n\nMartín smiles and says, \"Yes, it is very old.\"",
+        "questions": [
+          {
+            "prompt": "¿Dónde está \"this bag\" en relación con Laura?",
+            "options": [
+              "Está dentro de una caja.",
+              "Está en las manos de Martín.",
+              "Está lejos, cerca de la puerta.",
+              "Está cerca de ella, en la mesa."
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa \"this\" para algo singular y cercano a quien habla, como la cartera que está sobre la mesa frente a Laura."
+          },
+          {
+            "prompt": "¿Por qué Laura usa \"those\" para hablar de los pañuelos?",
+            "options": [
+              "Porque \"those\" se usa para cosas cercanas.",
+              "Porque hay un solo pañuelo cerca de ella.",
+              "Porque los pañuelos están sobre la mesa frente a ella.",
+              "Porque los pañuelos están lejos, en un estante cerca de la pared."
+            ],
+            "correctIndex": 3,
+            "explanation": "\"Those\" se usa con sustantivos plurales que están lejos de quien habla, como los pañuelos en el estante."
+          },
+          {
+            "prompt": "¿Qué nos indica la frase \"these boxes\"?",
+            "options": [
+              "Que hay una sola caja y está lejos.",
+              "Que hay varias cajas lejos de Laura.",
+              "Que hay dos o más cajas y están cerca de Laura.",
+              "Que hay una sola caja cerca de Laura."
+            ],
+            "correctIndex": 2,
+            "explanation": "\"These\" es la forma plural de \"this\" y se usa para varios objetos que están cerca de quien habla."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre this, that, these y those.",
+        "text": "Juan is visiting an apartment in Palermo with the real estate agent, Sofía. They are in the living room.\n\nSofía says, \"This sofa is very comfortable. It's new.\" The sofa is right next to them.\n\nJuan looks across the room, near the window, and asks, \"Are those chairs included in the price?\"\n\nSofía answers, \"Yes, those two chairs are included, and the small table too.\"\n\nThen Juan sees some books on a shelf close to him. \"These books are interesting,\" he says.\n\nFinally, he looks at a lamp far away, in the kitchen. \"Is that lamp also included?\"\n\nSofía says, \"No, that lamp is not included. It's mine.\"\n\nJuan likes the apartment and decides to rent it.",
+        "questions": [
+          {
+            "prompt": "¿Dónde está \"this sofa\"?",
+            "options": [
+              "En otro departamento.",
+              "Cerca de la ventana, del otro lado del living.",
+              "Justo al lado de Juan y Sofía.",
+              "Lejos, en la cocina."
+            ],
+            "correctIndex": 2,
+            "explanation": "\"This\" se usa para un objeto singular que está muy cerca de quien habla, como el sofá junto a ellos."
+          },
+          {
+            "prompt": "¿Por qué Juan dice \"those chairs\" y no \"this chair\"?",
+            "options": [
+              "Porque las sillas son nuevas.",
+              "Porque \"those\" se usa para cosas cercanas al hablante.",
+              "Porque hay una sola silla cerca de él.",
+              "Porque hay dos sillas y están lejos de él, cerca de la ventana."
+            ],
+            "correctIndex": 3,
+            "explanation": "\"Those\" se usa con sustantivos plurales que están lejos de quien habla, como las dos sillas junto a la ventana."
+          },
+          {
+            "prompt": "¿Qué sabemos sobre \"that lamp\" según el texto?",
+            "options": [
+              "Hay varias lámparas cerca de la ventana.",
+              "Está cerca de Juan y hay varias lámparas.",
+              "Está lejos, en la cocina, y es una sola lámpara.",
+              "Está en el estante, cerca de Sofía."
+            ],
+            "correctIndex": 2,
+            "explanation": "\"That\" se usa para un objeto singular que está lejos de quien habla, como la lámpara en la cocina."
+          }
+        ]
+      }
+    ],
+    "there-is-are": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are looking at an apartment to rent. ___ a small kitchen in the apartment.",
+        "options": [
+          "There isn't",
+          "Is there",
+          "There are",
+          "There is"
+        ],
+        "correctIndex": 3,
+        "explanation": "Se usa 'there is' porque 'kitchen' es singular y la oración es afirmativa.",
+        "optionNotes": [
+          "Incorrecto: es la forma negativa, pero la oración es afirmativa.",
+          "Incorrecto: es la forma de pregunta, pero la oración no es una pregunta.",
+          "Incorrecto: 'there are' se usa con sustantivos en plural.",
+          "Correcto: 'kitchen' es singular y la oración es afirmativa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are visiting a house for rent. ___ two bathrooms in this house?",
+        "options": [
+          "There is",
+          "Is there",
+          "Are there",
+          "There are"
+        ],
+        "correctIndex": 2,
+        "explanation": "Se usa 'are there' porque es una pregunta y 'bathrooms' es plural.",
+        "optionNotes": [
+          "Incorrecto: es singular y afirmativa, no pregunta.",
+          "Incorrecto: 'is there' es singular, pero 'bathrooms' es plural.",
+          "Correcto: es la forma de pregunta para el plural.",
+          "Incorrecto: falta la inversión; para preguntar se necesita 'are there', no 'there are'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are at the pharmacy. ___ any pills for headaches here?",
+        "options": [
+          "Is there",
+          "There is",
+          "There are",
+          "Are there"
+        ],
+        "correctIndex": 3,
+        "explanation": "Se usa 'are there' porque 'pills' es plural y la oración es una pregunta.",
+        "optionNotes": [
+          "Incorrecto: es singular, pero 'pills' es plural.",
+          "Incorrecto: es afirmativa y singular, no pregunta.",
+          "Incorrecto: es afirmativa, falta la inversión para preguntar.",
+          "Correcto: forma de pregunta en plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are at a doctor's waiting room. ___ any chairs left.",
+        "options": [
+          "There are",
+          "There aren't",
+          "There isn't",
+          "There is"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa 'there aren't' porque 'chairs' es plural y la oración es negativa.",
+        "optionNotes": [
+          "Incorrecto: es afirmativa, pero la oración necesita ser negativa.",
+          "Correcto: forma negativa para el plural.",
+          "Incorrecto: es singular, pero 'chairs' es plural.",
+          "Incorrecto: es afirmativa, pero la oración necesita ser negativa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You call the hotel to ask about facilities. ___ a pool in this hotel?",
+        "options": [
+          "Are there",
+          "Is there",
+          "There is",
+          "There are"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa 'is there' porque 'pool' es singular y la oración es una pregunta.",
+        "optionNotes": [
+          "Incorrecto: 'pool' es singular, no plural.",
+          "Correcto: forma de pregunta en singular.",
+          "Incorrecto: es afirmativa, falta la inversión para preguntar.",
+          "Incorrecto: es plural y afirmativa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are describing the new office to a friend. ___ many computers in the office.",
+        "options": [
+          "There are",
+          "There isn't",
+          "There is",
+          "Is there"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'there are' porque 'computers' es plural y la oración es afirmativa.",
+        "optionNotes": [
+          "Correcto: 'computers' es plural y la oración es afirmativa.",
+          "Incorrecto: es la forma negativa, pero la oración es afirmativa.",
+          "Incorrecto: 'there is' se usa con sustantivos singulares.",
+          "Incorrecto: es la forma de pregunta, pero la oración no es una pregunta."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de there is / there are.",
+        "sentence": "There ___ a supermarket near my new apartment.",
+        "hint": "(hay, singular)",
+        "answers": [
+          "is"
+        ],
+        "explanation": "Se usa 'is' porque 'supermarket' es singular y la oración es afirmativa.",
+        "wrongAnswers": [
+          {
+            "answer": "are",
+            "why": "'Supermarket' es singular, no plural."
+          },
+          {
+            "answer": "isn't",
+            "why": "Es la forma negativa, pero la oración es afirmativa."
+          },
+          {
+            "answer": "aren't",
+            "why": "Es negativa y plural; la oración es afirmativa y singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de there is / there are.",
+        "sentence": "There ___ two bedrooms in the house we are renting.",
+        "hint": "(hay, plural)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Se usa 'are' porque 'bedrooms' es plural y la oración es afirmativa.",
+        "wrongAnswers": [
+          {
+            "answer": "is",
+            "why": "'Bedrooms' es plural, no singular."
+          },
+          {
+            "answer": "isn't",
+            "why": "Es negativa y singular; la oración es afirmativa y plural."
+          },
+          {
+            "answer": "aren't",
+            "why": "Es la forma negativa, pero la oración es afirmativa."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de there is / there are.",
+        "sentence": "___ there a pharmacy near the hotel?",
+        "hint": "(pregunta, singular)",
+        "answers": [
+          "Is"
+        ],
+        "explanation": "Se usa 'Is' porque 'pharmacy' es singular y la oración es una pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Are",
+            "why": "'Pharmacy' es singular, no plural."
+          },
+          {
+            "answer": "Do",
+            "why": "No se usa 'do' con there is/there are."
+          },
+          {
+            "answer": "Does",
+            "why": "No se usa 'does' con there is/there are."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de there is / there are.",
+        "sentence": "___ there enough chairs for everyone at the meeting?",
+        "hint": "(pregunta, plural)",
+        "answers": [
+          "Are"
+        ],
+        "explanation": "Se usa 'Are' porque 'chairs' es plural y la oración es una pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Is",
+            "why": "'Chairs' es plural, no singular."
+          },
+          {
+            "answer": "Do",
+            "why": "No se usa 'do' con there is/there are."
+          },
+          {
+            "answer": "Does",
+            "why": "No se usa 'does' con there is/there are."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de there is / there are.",
+        "sentence": "There ___ an elevator in this building, so we have to use the stairs.",
+        "hint": "(negativo, singular)",
+        "answers": [
+          "isn't",
+          "is not"
+        ],
+        "explanation": "Se usa 'isn't' porque 'elevator' es singular y la oración es negativa.",
+        "wrongAnswers": [
+          {
+            "answer": "aren't",
+            "why": "'Elevator' es singular, no plural."
+          },
+          {
+            "answer": "are not",
+            "why": "'Elevator' es singular, no plural."
+          },
+          {
+            "answer": "doesn't",
+            "why": "No se usa 'doesn't' con there is/there are."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de there is / there are.",
+        "sentence": "There ___ any clean towels in the bathroom.",
+        "hint": "(negativo, plural)",
+        "answers": [
+          "aren't",
+          "are not"
+        ],
+        "explanation": "Se usa 'aren't' porque 'towels' es plural y la oración es negativa.",
+        "wrongAnswers": [
+          {
+            "answer": "isn't",
+            "why": "'Towels' es plural, no singular."
+          },
+          {
+            "answer": "is not",
+            "why": "'Towels' es plural, no singular."
+          },
+          {
+            "answer": "don't",
+            "why": "No se usa 'don't' con there is/there are."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There is a nice park near my house.",
+        "alternatives": [],
+        "translation": "Hay un parque lindo cerca de mi casa.",
+        "explanation": "Se usa 'there is' porque 'park' es singular y la oración es afirmativa.",
+        "tokens": [
+          "nice",
+          "my",
+          "park",
+          "There",
+          "near",
+          "is",
+          "a",
+          "house"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There are three bedrooms in this apartment.",
+        "alternatives": [],
+        "translation": "Hay tres dormitorios en este departamento.",
+        "explanation": "Se usa 'there are' porque 'bedrooms' es plural y la oración es afirmativa.",
+        "tokens": [
+          "this",
+          "are",
+          "in",
+          "There",
+          "apartment",
+          "bedrooms",
+          "three"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Is there a doctor available this afternoon?",
+        "alternatives": [],
+        "translation": "¿Hay un médico disponible esta tarde?",
+        "explanation": "Se usa 'is there' porque 'doctor' es singular y la oración es una pregunta.",
+        "tokens": [
+          "this",
+          "there",
+          "Is",
+          "a",
+          "doctor",
+          "available",
+          "afternoon"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "There aren't any seats left on this flight.",
+        "alternatives": [],
+        "translation": "No quedan asientos en este vuelo.",
+        "explanation": "Se usa 'there aren't' porque 'seats' es plural y la oración es negativa.",
+        "tokens": [
+          "left",
+          "aren't",
+          "any",
+          "on",
+          "There",
+          "this",
+          "seats",
+          "flight"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Are there any good restaurants near the hotel?",
+        "alternatives": [],
+        "translation": "¿Hay buenos restaurantes cerca del hotel?",
+        "explanation": "Se usa 'are there' porque 'restaurants' es plural y la oración es una pregunta.",
+        "tokens": [
+          "Are",
+          "any",
+          "hotel",
+          "restaurants",
+          "good",
+          "the",
+          "there",
+          "near"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con there is / there are.",
+        "sentence": "There is two bathrooms in the apartment.",
+        "answers": [
+          "There are two bathrooms in the apartment."
+        ],
+        "explanation": "Con sustantivos en plural como 'bathrooms' se usa 'there are', no 'there is'.",
+        "wrongAnswers": [
+          {
+            "answer": "There is two bathroom in the apartment.",
+            "why": "Cambia el sustantivo a singular en lugar de corregir el verbo a 'are', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con there is / there are.",
+        "sentence": "There are a problem with the heating.",
+        "answers": [
+          "There is a problem with the heating."
+        ],
+        "explanation": "Con un sustantivo singular como 'problem' se usa 'there is', no 'there are'.",
+        "wrongAnswers": [
+          {
+            "answer": "There are a problems with the heating.",
+            "why": "Agrega el plural al sustantivo pero deja el artículo 'a', que no corresponde en plural, y no corrige el verbo, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con there is / there are.",
+        "sentence": "Have a pharmacy near the hotel.",
+        "answers": [
+          "There is a pharmacy near the hotel."
+        ],
+        "explanation": "'Hay' no se traduce con 'have': se usa 'there is' o 'there are'.",
+        "wrongAnswers": [
+          {
+            "answer": "There have a pharmacy near the hotel.",
+            "why": "Agrega 'there' pero mantiene 'have' en lugar de 'is', que es la forma correcta para expresar 'hay'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con there is / there are.",
+        "sentence": "Is there many people at the party?",
+        "answers": [
+          "Are there many people at the party?"
+        ],
+        "explanation": "Con sustantivos en plural como 'people' se usa 'are there', no 'is there'.",
+        "wrongAnswers": [
+          {
+            "answer": "Is there much people at the party?",
+            "why": "Cambia 'many' por 'much', pero el verdadero error es el verbo: con 'people' (plural) se usa 'are there', no 'is there'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con there is / there are.",
+        "sentence": "There isn't any chairs in the room.",
+        "answers": [
+          "There aren't any chairs in the room."
+        ],
+        "explanation": "Con sustantivos en plural como 'chairs' se usa 'there aren't', no 'there isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "There isn't any chair in the room.",
+            "why": "Cambia el sustantivo a singular en lugar de corregir el verbo a 'aren't', que es la corrección esperada para concordar con 'chairs'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hay un gato en el jardín.",
+        "answers": [
+          "There is a cat in the garden.",
+          "There's a cat in the garden."
+        ],
+        "explanation": "Se usa 'there is' porque 'cat' es singular y la oración es afirmativa.",
+        "wrongAnswers": [
+          {
+            "answer": "Is a cat in the garden.",
+            "why": "Falta la palabra 'there', que es obligatoria para expresar 'hay' en inglés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Hay una farmacia cerca de acá?",
+        "answers": [
+          "Is there a pharmacy near here?",
+          "Is there a pharmacy nearby?"
+        ],
+        "explanation": "Para preguntar se invierte el orden: 'is there', no 'there is'.",
+        "wrongAnswers": [
+          {
+            "answer": "There is a pharmacy near here?",
+            "why": "Falta la inversión para formar la pregunta; debe empezar con 'Is there', no 'There is'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No hay sillas libres en la sala de espera.",
+        "answers": [
+          "There aren't any free chairs in the waiting room.",
+          "There are no free chairs in the waiting room."
+        ],
+        "explanation": "Con sustantivos en plural como 'chairs' se usa 'there aren't', no 'there isn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "There isn't any free chairs in the waiting room.",
+            "why": "Usa la forma singular 'isn't' con un sustantivo plural ('chairs')."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hay dos dormitorios en el departamento que alquilamos.",
+        "answers": [
+          "There are two bedrooms in the apartment we're renting.",
+          "There are two bedrooms in the apartment we are renting."
+        ],
+        "explanation": "Con sustantivos en plural como 'bedrooms' se usa 'there are', no 'there is'.",
+        "wrongAnswers": [
+          {
+            "answer": "There is two bedrooms in the apartment we're renting.",
+            "why": "Usa la forma singular 'is' con un sustantivo plural ('bedrooms')."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hay un problema en mi casa.",
+        "answers": [
+          "There is a problem in my house.",
+          "There's a problem in my house."
+        ],
+        "explanation": "Se usa 'there is' porque 'problem' es singular y la oración es afirmativa.",
+        "wrongAnswers": [
+          {
+            "answer": "Have a problem in my house.",
+            "why": "'Hay' no se traduce con 'have'; en inglés se usa 'there is' o 'there are'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Hay muchos turistas en Bariloche en el verano?",
+        "answers": [
+          "Are there many tourists in Bariloche in the summer?"
+        ],
+        "explanation": "Para preguntar con plural se invierte el orden: 'are there', no 'there are'.",
+        "wrongAnswers": [
+          {
+            "answer": "There are many tourists in Bariloche in the summer?",
+            "why": "Falta la inversión para formar la pregunta; debe empezar con 'Are there', no 'There are'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el diálogo sobre el departamento y respondé las preguntas con there is / there are.",
+        "text": "Camila is looking for an apartment in Belgrano. She calls the owner, Mr. Rodríguez, to ask about it.\n\n'Is there a kitchen in the apartment?' Camila asks.\n\n'Yes, there is a small kitchen with a fridge,' says Mr. Rodríguez. 'There are two bedrooms and one bathroom.'\n\n'Are there any windows in the bedrooms?' Camila asks.\n\n'Yes, there are big windows in both bedrooms,' he answers.\n\n'Is there a balcony?' she asks.\n\n'No, there isn't a balcony, but there is a nice garden,' says Mr. Rodríguez.\n\n'Are there any shops near the apartment?'\n\n'Yes, there are two supermarkets and a pharmacy on the next street.'\n\nCamila is happy. She decides to visit the apartment on Saturday.",
+        "questions": [
+          {
+            "prompt": "¿Cuántos dormitorios hay en el departamento?",
+            "options": [
+              "There are two bedrooms.",
+              "There are three bedrooms.",
+              "There aren't any bedrooms.",
+              "There is one bedroom."
+            ],
+            "correctIndex": 0,
+            "explanation": "Se usa there are porque bedrooms está en plural, y el texto dice \"There are two bedrooms\"."
+          },
+          {
+            "prompt": "¿Hay balcón en el departamento?",
+            "options": [
+              "Yes, there are two balconies.",
+              "Yes, there is a balcony.",
+              "No, there isn't a garden.",
+              "No, there isn't a balcony."
+            ],
+            "correctIndex": 3,
+            "explanation": "La forma negativa singular es there isn't, y el texto dice \"there isn't a balcony\"."
+          },
+          {
+            "prompt": "¿Qué hay cerca del departamento, según el Sr. Rodríguez?",
+            "options": [
+              "There is only one supermarket.",
+              "There is a park and a school.",
+              "There aren't any shops near the apartment.",
+              "There are two supermarkets and a pharmacy."
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa there are porque se mencionan varios comercios en plural: dos supermercados y una farmacia."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el diálogo sobre el viaje a Mendoza y respondé las preguntas con there is / there are.",
+        "text": "Pablo is on a trip to Mendoza. He talks to the hotel receptionist, Ana, about the town.\n\n'Is there a good restaurant near the hotel?' Pablo asks.\n\n'Yes, there is a very good restaurant on Mitre Street,' Ana answers. 'There are also two cafés near the plaza.'\n\n'Are there any supermarkets nearby?'\n\n'Yes, there is a small supermarket two blocks from here.'\n\n'Is there a bank in this area?'\n\n'No, there isn't a bank near the hotel, but there is one in the city center.'\n\n'Are there any tours to the mountains?'\n\n'Yes, there are tours every morning. There is also a tour to the vineyards in the afternoon.'\n\nPablo thanks Ana and decides to book a tour to the mountains for tomorrow.",
+        "questions": [
+          {
+            "prompt": "¿Qué hay en la calle Mitre, según Ana?",
+            "options": [
+              "There is a very good restaurant.",
+              "There are two supermarkets.",
+              "There isn't a restaurant.",
+              "There is a bank."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto usa there is porque restaurant es singular: \"there is a very good restaurant on Mitre Street\"."
+          },
+          {
+            "prompt": "¿Hay un banco cerca del hotel?",
+            "options": [
+              "Yes, there is a bank near the hotel.",
+              "No, there isn't a bank near the hotel.",
+              "No, there isn't a bank in the city.",
+              "Yes, there are two banks near the hotel."
+            ],
+            "correctIndex": 1,
+            "explanation": "La forma negativa singular there isn't se usa para decir que no hay un banco cerca del hotel."
+          },
+          {
+            "prompt": "¿Qué excursiones hay disponibles en la zona, según Ana?",
+            "options": [
+              "There aren't any tours.",
+              "There is only a tour to the city center.",
+              "There are tours to the beach.",
+              "There are tours to the mountains and a tour to the vineyards."
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa there are para las excursiones a la montaña (plural) y there is para la excursión a los viñedos (singular)."
+          }
+        ]
+      }
+    ]
+  }
+}

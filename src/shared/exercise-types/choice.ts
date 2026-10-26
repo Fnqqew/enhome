@@ -59,6 +59,7 @@ export const multipleChoice: ExerciseKind<McGenerated, McGenerated, McPublic, Mc
     return graded(right, e.options[e.correctIndex], note ? `${note} ${e.explanation}` : e.explanation)
   },
   empty: (e) => ({ type: e.type, choice: -1 }),
+  retry: (e, a) => (a.choice >= 0 ? e.optionNotes?.[a.choice]?.trim() : '') || 'Esa no es. Releé la oración y pensá qué regla del subtema se aplica.',
   hint: (e) => {
     const wrong = e.options.filter((_, i) => i !== e.correctIndex)
     return `Descartá ${quoted(wrong.slice(0, Math.max(1, e.options.length - 2)))}.`

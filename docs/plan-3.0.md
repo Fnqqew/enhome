@@ -56,20 +56,20 @@ Mediciones e investigación de respaldo:
 
 - [ ] 20 Cada día con una estructura que funciona
 - [ ] 21 Microlección antes de practicar
-- [ ] 22 Recordar en vez de releer
-- [ ] 23 Corrección que hace pensar
+- [~] 22 Recordar en vez de releer
+- [x] 23 Corrección que hace pensar
 - [x] 24 Repaso con FSRS
 - [ ] 25 Mezclar lo que se confunde
-- [ ] 26 Escucha todos los días
-- [ ] 27 Hablar todos los días
-- [ ] 28 Pares mínimos y sonidos difíciles
+- [x] 26 Escucha todos los días
+- [x] 27 Hablar todos los días
+- [x] 28 Pares mínimos y sonidos difíciles
 - [ ] 29 Frases hechas como bloques
 - [ ] 30 La historia de la semana
 - [ ] 31 La misión de la semana
 - [ ] 32 Conversación por voz con Claude
 - [ ] 33 Ejercicios hechos con tus errores
 - [ ] 34 Lecturas y escuchas largas a tu nivel
-- [ ] 35 Formatos nuevos
+- [x] 35 Formatos nuevos
 - [ ] 36 Ejercicio rediseñado
 
 ## Idiomas

@@ -3,7 +3,7 @@
 import { z } from 'zod'
 import type { CefrLevel, CurriculumTopic, Subtopic } from '../../shared/curriculum'
 import type { ExamKind, ExamQuestion } from '../../shared/exams'
-import { generatedExerciseSchema, type ExerciseType, type GeneratedExercise } from '../../shared/exercises'
+import { generatedSchemaFor, type ExerciseType, type GeneratedExercise } from '../../shared/exercises'
 import { askClaude, shouldRetry, type Ask } from '../claude/bridge'
 import { CORRECTIONS_GUIDE, qualityChecklist, REVIEW_EFFORT, reviewSystemPrompt, roleSystemPrompt, selfCheck } from '../claude/quality'
 import type { LanguageId } from '../../shared/languages'
@@ -41,13 +41,17 @@ const DIFFICULTY: Record<ExamKind, string> = {
   mock: 'Es un simulacro de práctica: un poco más fácil que el examen real, para que el alumno mida cómo va.'
 }
 
-const generationSchema = z.object({
-  items: z.array(z.object({ index: z.number().int().min(0), exercise: generatedExerciseSchema }))
-})
-const reviewSchema = z.object({
-  issues: z.array(z.string()),
-  corrections: z.array(z.object({ index: z.number().int().min(0), replacement: generatedExerciseSchema }))
-})
+// Con el esquema de solo los tipos que tiene la prueba (uno chico Claude lo respeta mejor).
+const typesOf = (request: ExamRequest): ExerciseType[] => [...new Set(request.items.map((item) => item.type))]
+const generationSchema = (request: ExamRequest) =>
+  z.object({
+    items: z.array(z.object({ index: z.number().int().min(0), exercise: generatedSchemaFor(typesOf(request)) }))
+  })
+const reviewSchema = (request: ExamRequest) =>
+  z.object({
+    issues: z.array(z.string()),
+    corrections: z.array(z.object({ index: z.number().int().min(0), replacement: generatedSchemaFor(typesOf(request)) }))
+  })
 
 function context(request: ExamRequest): string {
   const seen = new Set<string>()
@@ -71,7 +75,7 @@ ${notes}
 Generá exactamente estas ${request.items.length} preguntas, con el subtema y el tipo indicados:
 ${request.items.map(label).join('\n')}
 
-${formatGuide(languageOf(request))}
+${formatGuide(languageOf(request), typesOf(request))}
 
 Devolvé en items un objeto por pregunta: index es su número (#) y exercise tiene el formato de su tipo. No repitas oraciones entre preguntas y que ninguna pregunta revele la respuesta de otra.
 
@@ -90,7 +94,7 @@ ${qualityChecklist(languageOf(request))}
 Si una pregunta tiene un error, corregila; si no tiene arreglo, reemplazala por otra del mismo tipo y subtema.
 ${CORRECTIONS_GUIDE}
 
-${formatGuide(languageOf(request))}
+${formatGuide(languageOf(request), typesOf(request))}
 
 Preguntas a revisar:
 ${body}`
@@ -104,7 +108,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
         label: 'examen',
         systemPrompt: systemPrompt(request),
         prompt: buildExamPrompt(request),
-        schema: generationSchema,
+        schema: generationSchema(request),
         timeoutMs: TIMEOUT_MS
       })
       // Cada pregunta se ubica por su número y tiene que ser del tipo pedido.
@@ -117,7 +121,7 @@ export async function generateExam(request: ExamRequest, ask: Ask = askClaude): 
         label: 'examen · revisión',
         systemPrompt: reviewSystemPrompt(languageOf(request)),
         prompt: buildExamReviewPrompt(request, generated),
-        schema: reviewSchema,
+        schema: reviewSchema(request),
         effort: REVIEW_EFFORT,
         timeoutMs: TIMEOUT_MS
       })

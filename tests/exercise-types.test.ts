@@ -8,7 +8,7 @@ import { generatedSample, rightAnswer } from './helpers/exercises'
 
 // Campos que nunca puede ver el alumno antes de responder.
 const SECRET_KEYS = ['answers', 'correctIndex', 'sample', 'sampleAnswer', 'explanation', 'alternatives', 'sentence']
-const OPEN: ExerciseType[] = ['translation', 'translation_set', 'dialogue', 'roleplay', 'writing']
+const OPEN: ExerciseType[] = ['translation', 'translation_set', 'dialogue', 'roleplay', 'writing', 'transformation']
 
 const secretPaths = (value: unknown, path = ''): string[] => {
   if (Array.isArray(value)) return value.flatMap((v, i) => secretPaths(v, `${path}[${i}]`))

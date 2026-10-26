@@ -39,6 +39,14 @@ export function buildHint(exercise: StoredExercise): string {
   return kindOf(exercise.type).hint(exercise)
 }
 
+// Lo que se le dice al alumno para el segundo intento, o null si el tipo no lo tiene.
+export function retryNote(exercise: StoredExercise, answer: ExerciseAnswer): string | null {
+  const kind = kindOf(exercise.type)
+  return kind.retry && exercise.type === answer.type ? kind.retry(exercise, answer) : null
+}
+
+export const canRetry = (type: ExerciseType): boolean => !!kindOf(type).retry
+
 // Cómo es cada formato, para pedirle ejercicios a Claude.
 export function formatGuide(context: GuideContext, types?: ExerciseType[]): string {
   const kinds = types ? types.map(kindOf) : (Object.values(EXERCISE_KINDS) as AnyKind[])

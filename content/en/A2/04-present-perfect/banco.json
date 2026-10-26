@@ -1,0 +1,2878 @@
+{
+  "subtopics": {
+    "forma": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Mariana ___ finished the report for the meeting.",
+        "options": [
+          "have finished",
+          "have finish",
+          "has finish",
+          "has finished"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con sujetos en tercera persona singular (she/he/it/Mariana) el auxiliar del present perfect es 'has', no 'have'.",
+        "optionNotes": [
+          "Incorrecto: con 'Mariana' (tercera persona singular) se usa 'has', no 'have'.",
+          "Incorrecto: combina el auxiliar equivocado 'have' con el verbo base 'finish' sin participio.",
+          "Incorrecto: falta el '-ed', 'finish' es la forma base, no el participio.",
+          "Correcto: 'has' + participio 'finished' es la forma correcta del present perfect para 'she/Mariana'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Juan ___ to London for a job interview.",
+        "options": [
+          "have gone",
+          "has go",
+          "has gone",
+          "has went"
+        ],
+        "correctIndex": 2,
+        "explanation": "El present perfect usa el participio ('gone'), no el pasado simple ('went') ni la forma base ('go').",
+        "optionNotes": [
+          "Incorrecto: el sujeto 'Juan' es tercera persona singular, por lo que el auxiliar debe ser 'has', no 'have'.",
+          "Incorrecto: 'go' es la forma base, no el participio; falta usar 'gone'.",
+          "Correcto: 'has' + 'gone' es la forma correcta del present perfect para la tercera persona singular.",
+          "Incorrecto: 'went' es el pasado simple, el present perfect necesita el participio 'gone'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ breakfast yet, I'm starving.",
+        "options": [
+          "haven't ate",
+          "haven't eat",
+          "haven't eaten",
+          "hasn't eaten"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'I' el auxiliar negativo es 'haven't', y el verbo 'eat' necesita su participio 'eaten'.",
+        "optionNotes": [
+          "Incorrecto: 'ate' es el pasado simple, se necesita el participio 'eaten'.",
+          "Incorrecto: falta el '-en', 'eat' es la forma base, no el participio.",
+          "Correcto: 'haven't' + participio 'eaten' es la forma negativa correcta del present perfect con 'I'.",
+          "Incorrecto: con 'I' el auxiliar negativo es 'haven't', no 'hasn't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Have you ever ___ this doctor before, Juan?",
+        "options": [
+          "seen",
+          "saw",
+          "seeing",
+          "see"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'have/has' se usa el participio del verbo, y el de 'see' es 'seen'.",
+        "optionNotes": [
+          "Correcto: después de 'have/has' se usa el participio, y el de 'see' es 'seen'.",
+          "Incorrecto: 'saw' es el pasado simple, no corresponde después de 'have'.",
+          "Incorrecto: 'seeing' es el gerundio, no el participio necesario para el present perfect.",
+          "Incorrecto: 'see' es la forma base, el present perfect necesita el participio 'seen'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She ___ never been to Argentina.",
+        "options": [
+          "has",
+          "is",
+          "was",
+          "have"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'she' el auxiliar correcto del present perfect es 'has', no 'have', 'is' ni 'was'.",
+        "optionNotes": [
+          "Correcto: 'has' + 'never been' forma el present perfect negativo de experiencia con 'she'.",
+          "Incorrecto: 'is' no se combina con el participio 'been' para formar present perfect.",
+          "Incorrecto: 'was' es pasado simple, no se combina con 'been' para formar present perfect.",
+          "Incorrecto: con 'she' el auxiliar correcto es 'has', no 'have'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Carlos isn't home, he ___ to the bank.",
+        "options": [
+          "has gone",
+          "has go",
+          "has been",
+          "have gone"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Has gone' indica que Carlos fue a un lugar y todavía no volvió, lo que coincide con que no está en casa; 'has been' se usaría si ya hubiera vuelto.",
+        "optionNotes": [
+          "Correcto: 'has gone' indica que fue a un lugar y todavía no volvió, coincide con que no está en casa.",
+          "Incorrecto: falta el participio, 'go' es la forma base, se necesita 'gone'.",
+          "Incorrecto: 'has been' sugiere que fue y volvió, pero aquí indica que todavía no está, se usa 'gone'.",
+          "Incorrecto: el sujeto es 'he', por lo tanto el auxiliar debe ser 'has', no 'have'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el present perfect del verbo entre paréntesis.",
+        "sentence": "I ___ the project report, Mariana.",
+        "hint": "(finish)",
+        "answers": [
+          "have finished",
+          "'ve finished"
+        ],
+        "explanation": "El present perfect se forma con 'have/has' + participio; con 'I' se usa 'have'.",
+        "wrongAnswers": [
+          {
+            "answer": "finished",
+            "why": "Falta el auxiliar 'have'; sin él es pasado simple, no present perfect."
+          },
+          {
+            "answer": "has finished",
+            "why": "El sujeto es 'I', por lo que el auxiliar debe ser 'have', no 'has'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el present perfect negativo del verbo entre paréntesis.",
+        "sentence": "Juan ___ the landlord about the apartment yet.",
+        "hint": "(not/call)",
+        "answers": [
+          "hasn't called",
+          "has not called"
+        ],
+        "explanation": "Con sujetos en tercera persona singular la negación del present perfect es 'hasn't' + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "haven't called",
+            "why": "El sujeto 'Juan' es tercera persona singular, se necesita 'hasn't', no 'haven't'."
+          },
+          {
+            "answer": "didn't call",
+            "why": "Con 'yet' se usa present perfect, no pasado simple."
+          },
+          {
+            "answer": "not called",
+            "why": "Falta el auxiliar 'has' para formar la negación correctamente."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con el participio del verbo entre paréntesis.",
+        "sentence": "Have you ever ___ to London, Sofía?",
+        "hint": "(be)",
+        "answers": [
+          "been"
+        ],
+        "explanation": "'Have you ever been to...?' es la estructura típica para preguntar por experiencias de vida; el participio de 'be' es 'been'.",
+        "wrongAnswers": [
+          {
+            "answer": "be",
+            "why": "Después de 'have' se necesita el participio 'been', no la forma base."
+          },
+          {
+            "answer": "gone",
+            "why": "'Gone' indica que fue y no volvió; para preguntar por experiencia se usa 'been'."
+          },
+          {
+            "answer": "was",
+            "why": "'Was' es pasado simple, no se combina con 'have' en present perfect."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el present perfect negativo del verbo entre paréntesis.",
+        "sentence": "Mariana ___ lunch yet; she's still in the meeting.",
+        "hint": "(not/eat)",
+        "answers": [
+          "hasn't eaten",
+          "has not eaten"
+        ],
+        "explanation": "La negación del present perfect con tercera persona singular es 'hasn't' + participio ('eaten').",
+        "wrongAnswers": [
+          {
+            "answer": "haven't eaten",
+            "why": "El sujeto es 'Mariana' (tercera persona singular), se necesita 'hasn't', no 'haven't'."
+          },
+          {
+            "answer": "didn't ate",
+            "why": "No se puede combinar el auxiliar de pasado simple 'did' con el participio 'ate'; además 'ate' no es el participio."
+          },
+          {
+            "answer": "not eaten",
+            "why": "Falta el auxiliar 'has' para formar la negación."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con el participio del verbo entre paréntesis.",
+        "sentence": "Has Dr. Pérez already ___ your test results?",
+        "hint": "(see)",
+        "answers": [
+          "seen"
+        ],
+        "explanation": "Las preguntas con present perfect siguen el orden 'Has/Have + sujeto + participio'; el participio de 'see' es 'seen'.",
+        "wrongAnswers": [
+          {
+            "answer": "saw",
+            "why": "'Saw' es pasado simple; después de 'has' se necesita el participio 'seen'."
+          },
+          {
+            "answer": "see",
+            "why": "Falta el participio; 'see' es la forma base."
+          },
+          {
+            "answer": "seeing",
+            "why": "'Seeing' es gerundio, no corresponde al present perfect."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el present perfect del verbo entre paréntesis.",
+        "sentence": "We ___ all the paperwork for the rental contract.",
+        "hint": "(do)",
+        "answers": [
+          "have done",
+          "'ve done"
+        ],
+        "explanation": "El participio de 'do' es 'done', y con 'we' el auxiliar correcto del present perfect es 'have'.",
+        "wrongAnswers": [
+          {
+            "answer": "has done",
+            "why": "El sujeto 'we' requiere el auxiliar 'have', no 'has'."
+          },
+          {
+            "answer": "did",
+            "why": "'Did' es pasado simple; se necesita present perfect con 'have' + participio."
+          },
+          {
+            "answer": "done",
+            "why": "Falta el auxiliar 'have' para formar el present perfect."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Mariana has already signed the rental contract.",
+        "alternatives": [
+          "Mariana has signed the rental contract already."
+        ],
+        "translation": "Mariana ya firmó el contrato de alquiler.",
+        "explanation": "El adverbio 'already' puede ir entre el auxiliar y el participio o al final de la oración en present perfect afirmativo.",
+        "tokens": [
+          "Mariana",
+          "the",
+          "rental",
+          "already",
+          "has",
+          "signed",
+          "contract"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Juan hasn't called the landlord yet.",
+        "alternatives": [
+          "Juan has not called the landlord yet."
+        ],
+        "translation": "Juan todavía no llamó al propietario.",
+        "explanation": "'Yet' se usa al final de oraciones negativas en present perfect para indicar que algo no pasó todavía.",
+        "tokens": [
+          "yet",
+          "hasn't",
+          "Juan",
+          "called",
+          "landlord",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Have you ever been to London, Sofía?",
+        "alternatives": [],
+        "translation": "¿Alguna vez estuviste en Londres, Sofía?",
+        "explanation": "Las preguntas de experiencia con present perfect siguen el orden: Have/Has + sujeto + participio + complemento.",
+        "tokens": [
+          "Have",
+          "you",
+          "been",
+          "to",
+          "London,",
+          "Sofía",
+          "ever"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Dr. Pérez hasn't seen the test results yet.",
+        "alternatives": [
+          "Dr. Pérez has not seen the test results yet."
+        ],
+        "translation": "El Dr. Pérez todavía no vio los resultados de los análisis.",
+        "explanation": "El auxiliar 'has' corresponde a la tercera persona singular, y 'yet' cierra la oración negativa.",
+        "tokens": [
+          "hasn't",
+          "test",
+          "Pérez",
+          "seen",
+          "Dr.",
+          "the",
+          "results",
+          "yet"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We have done all the paperwork for the apartment.",
+        "alternatives": [],
+        "translation": "Hicimos todo el papeleo para el departamento.",
+        "explanation": "'Have' + participio 'done' forma el present perfect afirmativo con el sujeto 'we'.",
+        "tokens": [
+          "for",
+          "apartment",
+          "all",
+          "We",
+          "paperwork",
+          "done",
+          "the",
+          "the",
+          "have"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el present perfect.",
+        "sentence": "Mariana have finished the report for the meeting.",
+        "answers": [
+          "Mariana has finished the report for the meeting."
+        ],
+        "explanation": "Con sujetos en tercera persona singular (she/he/it/Mariana) se usa 'has', no 'have'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana have finish the report for the meeting.",
+            "why": "No corrige el auxiliar incorrecto y además cambia el participio por la forma base."
+          },
+          {
+            "answer": "Mariana has finish the report for the meeting.",
+            "why": "Corrige el auxiliar pero deja el verbo en forma base en vez del participio 'finished'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el present perfect.",
+        "sentence": "Juan has went to London for a job interview.",
+        "answers": [
+          "Juan has gone to London for a job interview."
+        ],
+        "explanation": "El present perfect usa el participio ('gone'), no el pasado simple ('went').",
+        "wrongAnswers": [
+          {
+            "answer": "Juan has go to London for a job interview.",
+            "why": "Usa la forma base 'go' en vez del participio correcto 'gone'."
+          },
+          {
+            "answer": "Juan have gone to London for a job interview.",
+            "why": "Cambia el auxiliar correcto 'has' por 'have', pero el sujeto 'Juan' requiere 'has'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el present perfect.",
+        "sentence": "I haven't ate breakfast yet.",
+        "answers": [
+          "I haven't eaten breakfast yet.",
+          "I have not eaten breakfast yet."
+        ],
+        "explanation": "Después de 'haven't' se necesita el participio del verbo, que para 'eat' es 'eaten', no el pasado simple 'ate'.",
+        "wrongAnswers": [
+          {
+            "answer": "I didn't eaten breakfast yet.",
+            "why": "Mezcla el auxiliar de pasado simple 'didn't' con el participio 'eaten', una combinación inválida."
+          },
+          {
+            "answer": "I haven't eat breakfast yet.",
+            "why": "Usa la forma base 'eat' en vez del participio 'eaten'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el present perfect.",
+        "sentence": "She have never been to Argentina.",
+        "answers": [
+          "She has never been to Argentina.",
+          "She's never been to Argentina."
+        ],
+        "explanation": "Con 'she' el auxiliar correcto es 'has', no 'have'; también se puede usar la contracción 'she's'.",
+        "wrongAnswers": [
+          {
+            "answer": "She have never gone to Argentina.",
+            "why": "No corrige el auxiliar incorrecto y cambia innecesariamente 'been' por 'gone'."
+          },
+          {
+            "answer": "She has never be to Argentina.",
+            "why": "Corrige el auxiliar pero deja el verbo en forma base 'be' en vez del participio 'been'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el present perfect.",
+        "sentence": "Carlos isn't home, he has went to the bank.",
+        "answers": [
+          "Carlos isn't home, he has gone to the bank."
+        ],
+        "explanation": "El participio de 'go' es 'gone', no 'went' (que es el pasado simple).",
+        "wrongAnswers": [
+          {
+            "answer": "Carlos isn't home, he have gone to the bank.",
+            "why": "Cambia el auxiliar correcto 'has' por 'have', pero el sujeto 'he' requiere 'has'."
+          },
+          {
+            "answer": "Carlos isn't home, he has go to the bank.",
+            "why": "Deja el verbo en forma base 'go' en vez del participio correcto 'gone'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect.",
+        "spanish": "Mariana ya terminó el informe para la reunión.",
+        "answers": [
+          "Mariana has already finished the report for the meeting.",
+          "Mariana has finished the report for the meeting already."
+        ],
+        "explanation": "'Already' se usa con present perfect para indicar que algo pasó antes de ahora, con 'has' para tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana already finished the report for the meeting.",
+            "why": "Usa pasado simple en vez de present perfect, que es necesario para indicar una acción reciente con 'ya'."
+          },
+          {
+            "answer": "Mariana have already finished the report for the meeting.",
+            "why": "El sujeto 'Mariana' requiere el auxiliar 'has', no 'have'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect.",
+        "spanish": "Juan todavía no llamó al propietario del departamento.",
+        "answers": [
+          "Juan hasn't called the landlord of the apartment yet.",
+          "Juan has not called the landlord of the apartment yet."
+        ],
+        "explanation": "'Todavía no...' + verbo se traduce con present perfect negativo y 'yet' al final.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan didn't call the landlord of the apartment yet.",
+            "why": "'Yet' en oraciones negativas requiere present perfect, no pasado simple."
+          },
+          {
+            "answer": "Juan haven't called the landlord of the apartment yet.",
+            "why": "El sujeto 'Juan' es tercera persona singular, se necesita 'hasn't', no 'haven't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés usando present perfect.",
+        "spanish": "¿Alguna vez estuviste en Londres?",
+        "answers": [
+          "Have you ever been to London?"
+        ],
+        "explanation": "Para preguntar por experiencias de vida se usa 'Have you ever been to...?' con el participio 'been'.",
+        "wrongAnswers": [
+          {
+            "answer": "Have you ever gone to London?",
+            "why": "'Gone' implica que fue y no volvió; para preguntar por experiencia se usa 'been'."
+          },
+          {
+            "answer": "Did you ever be to London?",
+            "why": "Mezcla el auxiliar de pasado simple 'did' con la forma base 'be', una estructura inválida."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect.",
+        "spanish": "El médico todavía no vio los resultados de mis análisis.",
+        "answers": [
+          "The doctor hasn't seen my test results yet.",
+          "The doctor has not seen my test results yet."
+        ],
+        "explanation": "'Todavía no' + acción reciente se traduce con 'hasn't/has not' + participio + 'yet'.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor didn't see my test results yet.",
+            "why": "Con 'yet' en negativo se necesita present perfect, no pasado simple."
+          },
+          {
+            "answer": "The doctor haven't seen my test results yet.",
+            "why": "El sujeto 'the doctor' es tercera persona singular, se necesita 'hasn't', no 'haven't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect.",
+        "spanish": "Hicimos todo el papeleo para el alquiler del departamento.",
+        "answers": [
+          "We have done all the paperwork for the apartment rental.",
+          "We've done all the paperwork for the apartment rental."
+        ],
+        "explanation": "El participio de 'do' es 'done', y con 'we' el auxiliar correcto es 'have'.",
+        "wrongAnswers": [
+          {
+            "answer": "We have did all the paperwork for the apartment rental.",
+            "why": "Usa el pasado simple 'did' en vez del participio correcto 'done'."
+          },
+          {
+            "answer": "We has done all the paperwork for the apartment rental.",
+            "why": "El sujeto 'we' requiere el auxiliar 'have', no 'has'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect.",
+        "spanish": "Nunca estuve en una entrevista de trabajo tan larga.",
+        "answers": [
+          "I've never had such a long job interview.",
+          "I have never had such a long job interview."
+        ],
+        "explanation": "'Never' + present perfect expresa experiencias que nunca ocurrieron hasta ahora; el participio de 'have' es 'had'.",
+        "wrongAnswers": [
+          {
+            "answer": "I never was in such a long job interview.",
+            "why": "Con 'never' para hablar de experiencia acumulada se usa present perfect, no pasado simple."
+          },
+          {
+            "answer": "I have never went to such a long job interview.",
+            "why": "Usa el pasado simple 'went' en vez del participio correcto, y 'go to an interview' no es la expresión natural; se usa 'have'."
+          }
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Martín: ___ you ever eaten sushi, Sofía?",
+        "options": [
+          "Do",
+          "Did",
+          "Has",
+          "Have"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'you' y 'ever' para preguntar sobre experiencias de vida se usa 'Have' + participio.",
+        "optionNotes": [
+          "Incorrecto: 'Do' no es el auxiliar del present perfect.",
+          "Incorrecto: 'Did' es pasado simple y no se combina con 'ever' para hablar de experiencias.",
+          "Incorrecto: 'Has' se usa con he/she/it, no con 'you'.",
+          "Correcto: 'Have' es el auxiliar que corresponde con 'you' en present perfect."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la respuesta.",
+        "prompt": "Sofía: Yes, I ___ eaten sushi many times.",
+        "options": [
+          "has",
+          "has been",
+          "have",
+          "did"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el sujeto 'I' el auxiliar del present perfect es 'have', seguido directamente del participio 'eaten'.",
+        "optionNotes": [
+          "Incorrecto: 'has' se usa con he/she/it, no con 'I'.",
+          "Incorrecto: sobra 'been', aquí solo se necesita el auxiliar antes del participio 'eaten'.",
+          "Correcto: 'have' es el auxiliar que corresponde con 'I'.",
+          "Incorrecto: 'did' es pasado simple, no corresponde con 'many times' sin marcador específico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "Martín ___ to Peru, but he's back home now.",
+        "options": [
+          "has go",
+          "has been",
+          "has gone",
+          "went"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Has been to' se usa cuando la persona fue y ya volvió, que es justamente lo que indica 'he's back home now'.",
+        "optionNotes": [
+          "Incorrecto: 'has go' no es gramaticalmente válido, falta el participio 'gone' o 'been'.",
+          "Correcto: 'has been' indica que fue y volvió, coherente con 'he's back home now'.",
+          "Incorrecto: 'has gone' significa que todavía está allá, pero la oración dice que ya está en casa.",
+          "Incorrecto: 'went' es pasado simple y no hay marcador de tiempo específico que lo justifique."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ never ridden a horse before.",
+        "options": [
+          "haven't",
+          "have",
+          "didn't",
+          "has"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'I' y 'never' para expresar sentido negativo sin decir cuándo, se usa 'have never' + participio, sin agregar otra negación.",
+        "optionNotes": [
+          "Incorrecto: 'haven't' junto con 'never' forma una doble negación incorrecta.",
+          "Correcto: 'have' es el auxiliar para 'I', y junto con 'never' ya tiene sentido negativo.",
+          "Incorrecto: 'didn't' es pasado simple y no se combina con 'never' de esta forma.",
+          "Incorrecto: 'has' se usa con he/she/it, no con 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta de la entrevista.",
+        "prompt": "Have you ever ___ a job interview in English?",
+        "options": [
+          "have",
+          "having",
+          "had",
+          "has"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'have ever' se necesita el participio pasado del verbo; el participio de 'have' es 'had'.",
+        "optionNotes": [
+          "Incorrecto: 'have' es el infinitivo, no el participio que se necesita acá.",
+          "Incorrecto: 'having' es gerundio, no corresponde después de 'have ever'.",
+          "Correcto: 'had' es el participio pasado de 'have', necesario después del auxiliar 'have ever'.",
+          "Incorrecto: 'has' es la forma del auxiliar para tercera persona, no un participio."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el marcador de tiempo.",
+        "prompt": "Camila ___ to Mexico last year.",
+        "options": [
+          "went",
+          "has gone",
+          "has go",
+          "has been"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como la oración tiene un marcador de tiempo específico ('last year'), se usa pasado simple y no present perfect.",
+        "optionNotes": [
+          "Correcto: 'went' (pasado simple) es lo que corresponde cuando se dice cuándo pasó algo.",
+          "Incorrecto: mismo problema, 'has gone' tampoco se combina con un momento específico del pasado.",
+          "Incorrecto: 'has go' no es una forma gramatical válida.",
+          "Incorrecto: no se puede usar present perfect con un marcador de tiempo específico como 'last year'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con el auxiliar correcto.",
+        "sentence": "___ you ever worked as a waiter, Lucas?",
+        "hint": "(pregunta sobre experiencia)",
+        "answers": [
+          "Have"
+        ],
+        "explanation": "Para preguntar por experiencias de vida con 'ever' y el sujeto 'you', se usa el auxiliar 'Have' + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "Did",
+            "why": "'Did' es pasado simple y no se combina con 'ever' para hablar de experiencias de vida."
+          },
+          {
+            "answer": "Has",
+            "why": "'Has' se usa con he/she/it, no con 'you'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el participio correcto del verbo 'see'.",
+        "sentence": "I have never ___ snow because I live in the north.",
+        "hint": "(see)",
+        "answers": [
+          "seen"
+        ],
+        "explanation": "El participio irregular de 'see' es 'seen', y se usa después de 'have never' para hablar de experiencias de vida.",
+        "wrongAnswers": [
+          {
+            "answer": "saw",
+            "why": "'saw' es pasado simple; después de 'have never' se necesita el participio 'seen'."
+          },
+          {
+            "answer": "see",
+            "why": "'see' es el infinitivo; falta usar la forma de participio 'seen'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con 'been' o 'gone' según corresponda.",
+        "sentence": "Martina ___ to Chile three times. She loves it there!",
+        "hint": "(be - experiencia repetida, ya volvió)",
+        "answers": [
+          "has been"
+        ],
+        "explanation": "'Has been to' se usa para experiencias de vida en las que la persona fue y volvió, como indica 'three times'.",
+        "wrongAnswers": [
+          {
+            "answer": "has gone",
+            "why": "'has gone' implicaría que todavía está allá, pero el contexto indica que ya volvió varias veces."
+          },
+          {
+            "answer": "went",
+            "why": "'went' es pasado simple, pero no hay un marcador de tiempo específico, así que corresponde present perfect."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con 'been' o 'gone' según corresponda.",
+        "sentence": "He's ___ to Brazil for work, so he's not in the office right now.",
+        "hint": "(go - todavía está allá)",
+        "answers": [
+          "gone"
+        ],
+        "explanation": "'Has gone to' se usa cuando la persona todavía está en ese lugar, como lo confirma 'he's not in the office right now'.",
+        "wrongAnswers": [
+          {
+            "answer": "been",
+            "why": "'been' indicaría que ya volvió, pero la oración dice que no está en la oficina, o sea que sigue en Brasil."
+          },
+          {
+            "answer": "went",
+            "why": "'went' es pasado simple y no corresponde después del auxiliar 'has'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con el participio correcto del verbo 'be'.",
+        "sentence": "Has your sister ever ___ to Europe?",
+        "hint": "(be - participio)",
+        "answers": [
+          "been"
+        ],
+        "explanation": "Para preguntar por experiencias generales de vida se usa 'has/have been to', con el participio 'been'.",
+        "wrongAnswers": [
+          {
+            "answer": "gone",
+            "why": "'gone' implicaría que todavía está allí, pero la pregunta es general sobre su experiencia de vida."
+          },
+          {
+            "answer": "be",
+            "why": "'be' es el infinitivo; después de 'has ever' se necesita el participio 'been'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la respuesta corta negativa.",
+        "sentence": "A: Have you ever ridden a motorcycle? B: No, I ___.",
+        "hint": "(negación completa)",
+        "answers": [
+          "haven't",
+          "have not"
+        ],
+        "explanation": "La respuesta corta a una pregunta con 'Have you ever...?' se forma con el mismo auxiliar: 'I haven't'.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't",
+            "why": "'didn't' es pasado simple y no concuerda con la pregunta hecha en present perfect."
+          },
+          {
+            "answer": "don't",
+            "why": "'don't' es presente simple y no corresponde para responder una pregunta en present perfect."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Have you ever worked in a restaurant before?",
+        "alternatives": [],
+        "translation": "¿Alguna vez trabajaste en un restaurante?",
+        "explanation": "La pregunta sigue el orden: auxiliar 'Have' + sujeto + 'ever' + participio + resto de la oración.",
+        "tokens": [
+          "before",
+          "ever",
+          "in",
+          "restaurant",
+          "a",
+          "worked",
+          "you",
+          "Have"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I have never been to Uruguay.",
+        "alternatives": [],
+        "translation": "Nunca fui a Uruguay.",
+        "explanation": "El orden correcto es sujeto + auxiliar + 'never' + participio + complemento.",
+        "tokens": [
+          "have",
+          "been",
+          "I",
+          "to",
+          "Uruguay",
+          "never"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has visited more than ten countries.",
+        "alternatives": [],
+        "translation": "Ella visitó más de diez países.",
+        "explanation": "Se usa present perfect porque se habla de una experiencia de vida sin especificar cuándo pasó cada visita.",
+        "tokens": [
+          "has",
+          "She",
+          "ten",
+          "visited",
+          "than",
+          "countries",
+          "more"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Has your brother ever had a car accident?",
+        "alternatives": [],
+        "translation": "¿Tu hermano tuvo alguna vez un accidente de auto?",
+        "explanation": "La pregunta usa 'Has' porque el sujeto es tercera persona singular ('your brother'), seguido de 'ever' y el participio 'had'.",
+        "tokens": [
+          "a",
+          "accident",
+          "had",
+          "ever",
+          "brother",
+          "your",
+          "Has",
+          "car"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My doctor has never seen a case like this.",
+        "alternatives": [],
+        "translation": "Mi médico nunca vio un caso como este.",
+        "explanation": "'Has never seen' expresa una experiencia negativa sin decir cuándo, usando 'never' entre el auxiliar y el participio.",
+        "tokens": [
+          "My",
+          "this",
+          "seen",
+          "never",
+          "has",
+          "doctor",
+          "case",
+          "a",
+          "like"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I have went to Brazil three times.",
+        "answers": [
+          "I have been to Brazil three times."
+        ],
+        "explanation": "Después del auxiliar 'have' se necesita el participio pasado, que para 'be' es 'been', no la forma de pasado simple 'went'.",
+        "wrongAnswers": [
+          {
+            "answer": "I have go to Brazil three times.",
+            "why": "'go' no es el participio correcto; se necesita 'been' después de 'have'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "She has visited Peru last summer.",
+        "answers": [
+          "She visited Peru last summer."
+        ],
+        "explanation": "Cuando se menciona un momento específico como 'last summer', se debe usar pasado simple y no present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "She has visited Peru the last summer.",
+            "why": "Agregar 'the' no soluciona el problema; igual no se puede usar present perfect con un marcador de tiempo específico como 'last summer'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "He hasn't never eaten Japanese food.",
+        "answers": [
+          "He has never eaten Japanese food.",
+          "He hasn't ever eaten Japanese food."
+        ],
+        "explanation": "No se pueden combinar 'hasn't' y 'never' en la misma oración porque forman una doble negación incorrecta.",
+        "wrongAnswers": [
+          {
+            "answer": "He haven't never eaten Japanese food.",
+            "why": "Sigue teniendo la doble negación, y además el auxiliar debería ser 'hasn't' con 'he', no 'haven't'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Have you ever rode a horse?",
+        "answers": [
+          "Have you ever ridden a horse?"
+        ],
+        "explanation": "Después de 'have ever' se necesita el participio pasado, y el de 'ride' es la forma irregular 'ridden', no 'rode' (pasado simple).",
+        "wrongAnswers": [
+          {
+            "answer": "Have you ever rided a horse?",
+            "why": "'rided' no existe; el participio irregular correcto del verbo 'ride' es 'ridden'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "My sister has gone to Spain, but now she lives here again.",
+        "answers": [
+          "My sister has been to Spain, but now she lives here again."
+        ],
+        "explanation": "'Has gone to' indica que todavía está allá, pero la oración dice que ya volvió a vivir aquí, por lo que corresponde 'has been to'.",
+        "wrongAnswers": [
+          {
+            "answer": "My sister has go to Spain, but now she lives here again.",
+            "why": "'go' no es el participio correcto, y además no resuelve la contradicción de usar 'gone' cuando ya volvió."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Alguna vez trabajaste en atención al cliente?",
+        "answers": [
+          "Have you ever worked in customer service?",
+          "Have you ever worked in customer service before?"
+        ],
+        "explanation": "'Have you ever...?' es la forma correcta de preguntar por experiencias de vida sin especificar cuándo ocurrieron.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you ever work in customer service?",
+            "why": "Para preguntar por experiencias de vida con 'ever' se usa present perfect, no pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nunca alquilé un departamento en Buenos Aires.",
+        "answers": [
+          "I have never rented an apartment in Buenos Aires.",
+          "I've never rented an apartment in Buenos Aires."
+        ],
+        "explanation": "El orden correcto en present perfect negativo con sentido de 'never' es sujeto + have/has + never + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "I never have rented an apartment in Buenos Aires.",
+            "why": "El orden correcto es auxiliar + 'never' + participio: 'have never rented', no 'never have rented'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico nunca vio un caso así.",
+        "answers": [
+          "The doctor has never seen a case like this.",
+          "The doctor's never seen a case like this."
+        ],
+        "explanation": "'Has never seen' es la forma correcta: auxiliar + never + participio para hablar de una experiencia negativa sin decir cuándo.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor never has seen a case like this.",
+            "why": "El orden correcto es 'has never seen', con 'never' ubicado después del auxiliar, no antes."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Fuiste alguna vez a una entrevista de trabajo en inglés?",
+        "answers": [
+          "Have you ever had a job interview in English?",
+          "Have you ever been to a job interview in English?"
+        ],
+        "explanation": "Las preguntas sobre experiencias generales de vida con 'ever' se forman con 'Have you ever...?' más el participio correspondiente.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you ever go to a job interview in English?",
+            "why": "Para preguntar sobre experiencias de vida con 'ever' se usa present perfect, no pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella fue a Brasil el año pasado.",
+        "answers": [
+          "She went to Brazil last year.",
+          "Last year she went to Brazil."
+        ],
+        "explanation": "Cuando se dice cuándo pasó algo, como con 'last year', se debe usar pasado simple ('went') en lugar de present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "She has been to Brazil last year.",
+            "why": "Con un marcador de tiempo específico como 'last year' se usa pasado simple, no present perfect."
+          },
+          {
+            "answer": "She has gone to Brazil last year.",
+            "why": "Mismo error: no se puede usar present perfect con un momento específico como 'last year'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermano fue a Italia y todavía está allá.",
+        "answers": [
+          "My brother has gone to Italy and he's still there.",
+          "My brother has gone to Italy and he is still there."
+        ],
+        "explanation": "'Has gone to' se usa cuando la persona fue a un lugar y todavía sigue ahí, a diferencia de 'has been to' que indica que ya volvió.",
+        "wrongAnswers": [
+          {
+            "answer": "My brother has been to Italy and he's still there.",
+            "why": "'has been' implica que ya volvió; para decir que todavía está allá se usa 'has gone'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las experiencias de Sofía y Lucas.",
+        "text": "Sofía and Lucas are friends from Rosario. They both love to travel, but they have very different experiences. Sofía has been to many countries. She has been to Chile, Peru, and Bolivia, and she has also been to Brazil twice. However, she has never been to Europe because the flights are too expensive. Lucas, on the other hand, has never left Argentina. He has visited Mendoza, Córdoba, and Bariloche, but he has never been on a plane. Last year, Sofía asked him, 'Have you ever thought about going abroad?' Lucas said he wants to go to Brazil next year, but first he has to save some money for the trip.",
+        "questions": [
+          {
+            "prompt": "How many times has Sofía been to Brazil?",
+            "options": [
+              "Twice",
+              "Three times",
+              "She has never been to Brazil.",
+              "Once"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'she has also been to Brazil twice', usando present perfect para hablar de una experiencia sin decir cuándo pasó exactamente."
+          },
+          {
+            "prompt": "Has Lucas ever been on a plane?",
+            "options": [
+              "Yes, once",
+              "The text doesn't say",
+              "Yes, many times",
+              "No, he hasn't"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'he has never been on a plane', es decir que nunca tuvo esa experiencia."
+          },
+          {
+            "prompt": "Why hasn't Sofía been to Europe?",
+            "options": [
+              "Because she doesn't like Europe",
+              "Because she doesn't have a passport",
+              "Because the flights are too expensive",
+              "Because her friend didn't go with her"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto explica que Sofía nunca fue a Europa 'because the flights are too expensive'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre la entrevista de Martina.",
+        "text": "Martina is in a job interview at a software company in Buenos Aires. The manager, Diego, wants to know about her experience. He asks, 'Have you ever worked with a foreign team?' Martina answers that she has worked with people from Spain and Mexico, but she has never worked with a team from the United States. Diego also asks, 'Have you ever used this software before?' Martina says she has never used it, but she has used a similar program at her last job. Diego smiles and says the company can teach her. He thinks Martina has the right experience for the job, even though she hasn't used their software yet.",
+        "questions": [
+          {
+            "prompt": "Has Martina ever worked with a team from the United States?",
+            "options": [
+              "Yes, twice",
+              "The text doesn't say",
+              "No, she hasn't",
+              "Yes, once"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'she has never worked with a team from the United States', mostrando que nunca tuvo esa experiencia."
+          },
+          {
+            "prompt": "Which countries' teams has Martina worked with before?",
+            "options": [
+              "Mexico and Argentina",
+              "The United States and Spain",
+              "She has never worked with a foreign team",
+              "Spain and Mexico"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice que Martina 'has worked with people from Spain and Mexico', usando present perfect para describir su experiencia previa."
+          },
+          {
+            "prompt": "Has Martina ever used the company's software?",
+            "options": [
+              "She used it at her last job",
+              "Yes, but only once",
+              "No, she has never used it",
+              "Yes, she has used it many times"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'she has never used it', aunque sí usó un programa similar en su trabajo anterior."
+          }
+        ]
+      }
+    ],
+    "just-already-yet": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Don't call Mariana now, she's ___ walked into a meeting.",
+        "options": [
+          "just",
+          "still",
+          "already",
+          "yet"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Just' se usa para hablar de algo que pasó hace muy poco tiempo, justo ahora.",
+        "optionNotes": [
+          "Correcto: 'just' indica que la acción pasó hace muy poco tiempo, justo ahora.",
+          "Incorrecto: 'still' no se combina así con el present perfect afirmativo en esta estructura.",
+          "Incorrecto: 'already' no transmite la idea de 'en este instante', que es lo que pide el contexto; para eso se usa 'just'.",
+          "Incorrecto: 'yet' no se usa en oraciones afirmativas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Juan, you've only been at the new job for two days and you've ___ finished your first project!",
+        "options": [
+          "just",
+          "yet",
+          "still",
+          "already"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Already' expresa que algo pasó antes de lo esperado, como terminar un proyecto en solo dos días.",
+        "optionNotes": [
+          "Incorrecto: 'just' indica que algo pasó hace un momento, pero aquí se destaca que pasó antes de lo esperado, que es el uso de 'already'.",
+          "Incorrecto: 'yet' no se usa en oraciones afirmativas.",
+          "Incorrecto: 'still' no se combina así con el present perfect afirmativo en esta estructura.",
+          "Correcto: 'already' expresa que algo pasó antes de lo esperado, destacando la sorpresa por lo rápido que fue."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I haven't received the package ___.",
+        "options": [
+          "already",
+          "still",
+          "just",
+          "yet"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Yet' se usa al final de oraciones negativas para indicar que algo no pasó todavía.",
+        "optionNotes": [
+          "Incorrecto: 'already' no se usa en oraciones negativas con este sentido.",
+          "Incorrecto: 'still' no se coloca así al final de la oración con este significado; iría antes del auxiliar ('I still haven't').",
+          "Incorrecto: 'just' no se usa al final de oraciones negativas con este sentido.",
+          "Correcto: 'yet' al final de la oración negativa indica que algo no pasó todavía."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "Has the landlord replied to your email ___?",
+        "options": [
+          "yet",
+          "never",
+          "still",
+          "just"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Yet' al final de la pregunta se usa para preguntar si algo pasó hasta ahora.",
+        "optionNotes": [
+          "Correcto: 'yet' al final de la pregunta pregunta si algo pasó hasta ahora.",
+          "Incorrecto: 'never' cambia el significado a 'nunca', y no corresponde a una pregunta sobre un hecho reciente.",
+          "Incorrecto: 'still' no se usa así al final de la pregunta.",
+          "Incorrecto: 'just' no se coloca al final de preguntas con este sentido."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ paid the deposit for the apartment, so don't worry.",
+        "options": [
+          "yet have",
+          "have yet",
+          "have already",
+          "already have"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Already' va entre 'have' y el participio en oraciones afirmativas de present perfect.",
+        "optionNotes": [
+          "Incorrecto: el orden está invertido y 'yet' tampoco corresponde en una oración afirmativa.",
+          "Incorrecto: 'yet' no se usa en oraciones afirmativas.",
+          "Correcto: 'already' va entre 'have' y el participio para indicar que algo ya pasó.",
+          "Incorrecto: 'already' debe ir después de 'have', no antes."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Sofía ___ bought her plane tickets to Bariloche.",
+        "options": [
+          "just has",
+          "has just",
+          "has yet",
+          "yet has"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Just' va entre 'has' y el participio en oraciones afirmativas de present perfect.",
+        "optionNotes": [
+          "Incorrecto: 'just' debe ir después de 'has', no antes.",
+          "Correcto: 'just' va entre 'has' y el participio para indicar que algo pasó hace muy poco.",
+          "Incorrecto: 'yet' no se usa en oraciones afirmativas.",
+          "Incorrecto: el orden está invertido y 'yet' tampoco corresponde en una oración afirmativa."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra que indica que algo pasó hace muy poco.",
+        "sentence": "I've ___ had lunch, so I'm not hungry right now.",
+        "hint": "(recently)",
+        "answers": [
+          "just"
+        ],
+        "explanation": "'Just' se usa para hablar de acciones que pasaron hace muy poco tiempo.",
+        "wrongAnswers": [
+          {
+            "answer": "already",
+            "why": "'Already' no enfatiza la idea de que algo acaba de pasar en este instante; para eso se usa 'just'."
+          },
+          {
+            "answer": "yet",
+            "why": "'Yet' solo se usa en oraciones negativas o preguntas, no en afirmativas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra que expresa que algo pasó antes de lo esperado.",
+        "sentence": "Mariana has ___ finished packing all her boxes; I'm surprised it was so fast.",
+        "hint": "",
+        "answers": [
+          "already"
+        ],
+        "explanation": "'Already' expresa que algo pasó antes de lo esperado, a veces con sorpresa.",
+        "wrongAnswers": [
+          {
+            "answer": "just",
+            "why": "'Just' indica algo muy reciente, pero aquí se quiere expresar que pasó antes de lo esperado, que es el uso de 'already'."
+          },
+          {
+            "answer": "yet",
+            "why": "'Yet' no se usa en oraciones afirmativas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negativa con la palabra correcta.",
+        "sentence": "I haven't received the package ___.",
+        "hint": "",
+        "answers": [
+          "yet"
+        ],
+        "explanation": "'Yet' se usa al final de oraciones negativas para indicar que algo no pasó todavía.",
+        "wrongAnswers": [
+          {
+            "answer": "already",
+            "why": "'Already' no se usa en oraciones negativas con este sentido."
+          },
+          {
+            "answer": "just",
+            "why": "'Just' no se coloca al final de la oración ni se usa así en negativas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra correcta.",
+        "sentence": "Has the landlord replied to your email ___?",
+        "hint": "",
+        "answers": [
+          "yet"
+        ],
+        "explanation": "'Yet' al final de la pregunta se usa para preguntar si algo pasó hasta el momento.",
+        "wrongAnswers": [
+          {
+            "answer": "already",
+            "why": "En esta posición, al final de una pregunta neutra sobre si algo pasó hasta ahora, se espera 'yet'."
+          },
+          {
+            "answer": "just",
+            "why": "'Just' no se usa al final de preguntas de este tipo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con 'have' y la palabra que expresa que algo ya pasó.",
+        "sentence": "We ___ paid the deposit for the apartment, so don't worry.",
+        "hint": "",
+        "answers": [
+          "have already"
+        ],
+        "explanation": "'Already' va entre 'have' y el participio para indicar que algo ya pasó.",
+        "wrongAnswers": [
+          {
+            "answer": "have yet",
+            "why": "'Yet' no se usa en oraciones afirmativas."
+          },
+          {
+            "answer": "already have",
+            "why": "El orden correcto es 'have' + 'already' + participio, no al revés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con 'has' y la palabra que indica que algo pasó hace muy poco.",
+        "sentence": "Sofía ___ bought her plane tickets to Bariloche.",
+        "hint": "",
+        "answers": [
+          "has just"
+        ],
+        "explanation": "'Just' va entre 'has' y el participio para indicar que algo pasó hace muy poco.",
+        "wrongAnswers": [
+          {
+            "answer": "just has",
+            "why": "El orden correcto es auxiliar + 'just' + participio, no al revés."
+          },
+          {
+            "answer": "has yet",
+            "why": "'Yet' no se usa en oraciones afirmativas."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I've just had lunch, so I'm not hungry.",
+        "alternatives": [],
+        "translation": "Recién almorcé, así que no tengo hambre.",
+        "explanation": "'Just' va entre 'have' y el participio para indicar que algo pasó hace muy poco.",
+        "tokens": [
+          "I'm",
+          "lunch,",
+          "so",
+          "not",
+          "had",
+          "just",
+          "hungry",
+          "I've"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Mariana has already finished packing her bags.",
+        "alternatives": [],
+        "translation": "Mariana ya terminó de hacer las valijas.",
+        "explanation": "'Already' va entre 'has' y el participio en oraciones afirmativas de present perfect.",
+        "tokens": [
+          "bags",
+          "Mariana",
+          "already",
+          "packing",
+          "finished",
+          "has",
+          "her"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I haven't received the package yet.",
+        "alternatives": [],
+        "translation": "Todavía no recibí el paquete.",
+        "explanation": "'Yet' se coloca al final de oraciones negativas de present perfect.",
+        "tokens": [
+          "yet",
+          "received",
+          "package",
+          "I",
+          "haven't",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Has the landlord replied to your email yet?",
+        "alternatives": [],
+        "translation": "¿Ya te respondió el propietario el mail?",
+        "explanation": "'Yet' se coloca al final de preguntas de present perfect para saber si algo pasó hasta ahora.",
+        "tokens": [
+          "landlord",
+          "replied",
+          "to",
+          "the",
+          "yet",
+          "Has",
+          "your",
+          "email"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sofía has just bought her plane tickets to Bariloche.",
+        "alternatives": [],
+        "translation": "Sofía recién compró los pasajes a Bariloche.",
+        "explanation": "'Just' va entre 'has' y el participio para indicar que algo pasó hace muy poco.",
+        "tokens": [
+          "to",
+          "tickets",
+          "her",
+          "Bariloche",
+          "plane",
+          "bought",
+          "has",
+          "Sofía",
+          "just"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'just', 'already' o 'yet'.",
+        "sentence": "I have finished the report yet.",
+        "answers": [
+          "I have already finished the report."
+        ],
+        "explanation": "'Yet' no se usa en oraciones afirmativas; para eso se usa 'already'.",
+        "wrongAnswers": [
+          {
+            "answer": "I have finished yet the report.",
+            "why": "Solo cambia la posición de 'yet', pero sigue siendo incorrecto usarlo en una oración afirmativa."
+          },
+          {
+            "answer": "I have just finish the report.",
+            "why": "Cambia 'yet' por 'just' pero deja el verbo en forma base 'finish' en vez del participio 'finished'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'just', 'already' o 'yet'.",
+        "sentence": "She has just leave for the airport.",
+        "answers": [
+          "She has just left for the airport."
+        ],
+        "explanation": "Después de 'has just' se usa el participio del verbo; el de 'leave' es 'left', no 'leave'.",
+        "wrongAnswers": [
+          {
+            "answer": "She has just leaves for the airport.",
+            "why": "Agrega '-s' al verbo, pero después de 'has just' se necesita el participio, no una forma conjugada."
+          },
+          {
+            "answer": "She just has left for the airport.",
+            "why": "Cambia el orden de 'just', que debe ir entre 'has' y el participio, no antes de 'has'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'just', 'already' o 'yet'.",
+        "sentence": "We have yet paid the deposit for the apartment.",
+        "answers": [
+          "We have already paid the deposit for the apartment."
+        ],
+        "explanation": "'Yet' no se usa en oraciones afirmativas; para indicar que algo ya pasó se usa 'already'.",
+        "wrongAnswers": [
+          {
+            "answer": "We have yet to paid the deposit for the apartment.",
+            "why": "Mezcla una expresión distinta ('yet to' + infinitivo) sin corregir correctamente la estructura con el participio."
+          },
+          {
+            "answer": "We yet have paid the deposit for the apartment.",
+            "why": "Solo cambia el orden de 'yet', pero sigue sin ser correcto en una oración afirmativa."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'just', 'already' o 'yet'.",
+        "sentence": "I haven't finished the paperwork already.",
+        "answers": [
+          "I haven't finished the paperwork yet.",
+          "I have not finished the paperwork yet."
+        ],
+        "explanation": "'Already' no se usa en oraciones negativas; para eso se usa 'yet' al final de la oración.",
+        "wrongAnswers": [
+          {
+            "answer": "I haven't already finished the paperwork.",
+            "why": "Solo cambia la posición de 'already', pero 'already' no se usa en oraciones negativas con este sentido; se necesita 'yet' al final."
+          },
+          {
+            "answer": "I haven't finish the paperwork already.",
+            "why": "Cambia el verbo a la forma base 'finish' en vez de mantener el participio, y no corrige el uso incorrecto de 'already'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregi el error relacionado con 'just', 'already' o 'yet'.",
+        "sentence": "Sofía just has bought her plane tickets to Bariloche.",
+        "answers": [
+          "Sofía has just bought her plane tickets to Bariloche."
+        ],
+        "explanation": "'Just' debe ir entre el auxiliar 'has' y el participio, no antes de 'has'.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía has bought just her plane tickets to Bariloche.",
+            "why": "Coloca 'just' después del participio y antes del objeto, lo que cambia el sentido hacia 'solamente' en vez de ubicarlo correctamente entre 'has' y el participio."
+          },
+          {
+            "answer": "Sofía has bought her plane tickets just to Bariloche.",
+            "why": "Mueve 'just' al final modificando el sentido de la oración en vez de colocarlo junto al verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'just'.",
+        "spanish": "Recién almorcé, por eso no tengo hambre.",
+        "answers": [
+          "I've just had lunch, so I'm not hungry.",
+          "I have just had lunch, so I'm not hungry."
+        ],
+        "explanation": "'Just' se usa para hablar de algo que pasó hace muy poco tiempo, y va entre 'have' y el participio.",
+        "wrongAnswers": [
+          {
+            "answer": "I've already had lunch, so I'm not hungry.",
+            "why": "'Already' no transmite la idea de 'recién'; para eso se usa 'just'."
+          },
+          {
+            "answer": "I've had just lunch, so I'm not hungry.",
+            "why": "'Just' debe ir entre 'have' y el participio, no después del participio."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'already'.",
+        "spanish": "Mariana ya terminó de hacer las valijas.",
+        "answers": [
+          "Mariana has already finished packing her bags.",
+          "Mariana has already finished packing.",
+          "Mariana's already finished packing her bags."
+        ],
+        "explanation": "'Already' expresa que algo ya pasó, y va entre 'has' y el participio.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana has just finished packing her bags.",
+            "why": "'Just' indica algo muy reciente, pero aquí 'ya' se traduce mejor con 'already'."
+          },
+          {
+            "answer": "Mariana already has finished packing her bags.",
+            "why": "'Already' debe ir después de 'has', no antes."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'yet'.",
+        "spanish": "Todavía no recibí el paquete.",
+        "answers": [
+          "I haven't received the package yet.",
+          "I have not received the package yet."
+        ],
+        "explanation": "'Yet' se coloca al final de oraciones negativas para indicar que algo no pasó todavía.",
+        "wrongAnswers": [
+          {
+            "answer": "I haven't received already the package.",
+            "why": "'Already' no se usa en oraciones negativas con este sentido; se necesita 'yet' al final."
+          },
+          {
+            "answer": "I haven't received yet the package.",
+            "why": "'Yet' debe ir al final de la oración, después del objeto, no antes."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés usando 'yet'.",
+        "spanish": "¿Ya te respondió el propietario el mail?",
+        "answers": [
+          "Has the landlord replied to your email yet?",
+          "Has the landlord answered your email yet?"
+        ],
+        "explanation": "'Yet' al final de la pregunta se usa para preguntar si algo pasó hasta ahora.",
+        "wrongAnswers": [
+          {
+            "answer": "Does the landlord have replied to your email yet?",
+            "why": "Mezcla incorrectamente el auxiliar 'does' con 'have'; en present perfect la pregunta se forma solo con 'has/have'."
+          },
+          {
+            "answer": "Has the landlord replied to your email already yet?",
+            "why": "Usa 'already' y 'yet' juntos en la misma oración, lo cual es redundante e incorrecto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'yet'.",
+        "spanish": "No terminé el papeleo todavía.",
+        "answers": [
+          "I haven't finished the paperwork yet.",
+          "I have not finished the paperwork yet."
+        ],
+        "explanation": "'Yet' se coloca al final de oraciones negativas para indicar que algo no pasó todavía.",
+        "wrongAnswers": [
+          {
+            "answer": "I haven't already finished the paperwork.",
+            "why": "'Already' no se usa en oraciones negativas con este sentido; se necesita 'yet' al final."
+          },
+          {
+            "answer": "I haven't finished yet the paperwork.",
+            "why": "'Yet' debe ir al final de la oración, después del objeto, no antes."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'just'.",
+        "spanish": "Sofía recién compró los pasajes a Bariloche.",
+        "answers": [
+          "Sofía has just bought her plane tickets to Bariloche.",
+          "Sofía's just bought her plane tickets to Bariloche."
+        ],
+        "explanation": "'Just' se usa para hablar de algo que pasó hace muy poco tiempo, y va entre 'has' y el participio.",
+        "wrongAnswers": [
+          {
+            "answer": "Sofía has already bought her plane tickets to Bariloche.",
+            "why": "'Already' no transmite la idea de 'recién'; para eso se usa 'just'."
+          },
+          {
+            "answer": "Sofía just has bought her plane tickets to Bariloche.",
+            "why": "'Just' debe ir entre 'has' y el participio, no antes de 'has'."
+          }
+        ]
+      }
+    ],
+    "for-since": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Martina ___ at this company for three years.",
+        "options": [
+          "has worked",
+          "works",
+          "is working",
+          "worked"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'for + período' y una acción que empezó en el pasado y sigue ahora se usa present perfect.",
+        "optionNotes": [
+          "Correcto: present perfect con 'for' indica que Martina sigue trabajando ahí.",
+          "Incorrecto: el presente simple no muestra cuánto tiempo lleva en la situación.",
+          "Incorrecto: el presente continuo no expresa duración desde el pasado hasta ahora.",
+          "Incorrecto: el pasado simple sugiere que ya no trabaja más ahí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Doctor: How long ___ you had this pain?",
+        "options": [
+          "have",
+          "do",
+          "has",
+          "did"
+        ],
+        "correctIndex": 0,
+        "explanation": "El sujeto 'you' siempre lleva el auxiliar 'have' en present perfect, nunca 'has'.",
+        "optionNotes": [
+          "Correcto: concuerda con el sujeto 'you'.",
+          "Incorrecto: el presente simple no se usa para preguntar duración con 'had'.",
+          "Incorrecto: 'has' se usa con he/she/it, no con 'you'.",
+          "Incorrecto: el pasado simple no combina con 'had' en esta estructura de present perfect."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "They ___ in this apartment since 2021.",
+        "options": [
+          "lived",
+          "are living",
+          "live",
+          "have lived"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'since' + momento de inicio y una situación que continúa, se usa present perfect.",
+        "optionNotes": [
+          "Incorrecto: el pasado simple implica que ya no viven ahí.",
+          "Incorrecto: el presente continuo no conecta el inicio en 2021 con el presente.",
+          "Incorrecto: el presente simple no se combina con 'since' para este significado.",
+          "Correcto: present perfect con 'since' indica que siguen viviendo ahí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Interviewer: ___ has Sofía worked as a nurse?",
+        "options": [
+          "How long",
+          "How",
+          "What time",
+          "How much"
+        ],
+        "correctIndex": 0,
+        "explanation": "'How long' es la expresión correcta para preguntar por la duración de una situación con present perfect.",
+        "optionNotes": [
+          "Correcto: se usa para preguntar duración en el tiempo.",
+          "Incorrecto: 'how' solo no tiene sentido gramatical en esta pregunta.",
+          "Incorrecto: 'what time' pregunta por una hora puntual, no por duración.",
+          "Incorrecto: 'how much' no se usa solo para preguntar duración así."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I've known Pablo ___ we were in primary school.",
+        "options": [
+          "from",
+          "for",
+          "in",
+          "since"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Since' se usa antes de un momento o evento que marca el inicio de la situación.",
+        "optionNotes": [
+          "Incorrecto: 'from' no se usa así junto al present perfect para este significado.",
+          "Incorrecto: 'for' se usa con períodos de tiempo, no con un momento específico.",
+          "Incorrecto: 'in' no expresa el inicio de una situación continua.",
+          "Correcto: indica el momento de inicio de la amistad."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "We ___ in Bariloche for two weeks now.",
+        "options": [
+          "have being",
+          "are",
+          "have been",
+          "were"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'for + período' y una situación que sigue, se usa present perfect: have/has been.",
+        "optionNotes": [
+          "Incorrecto: gramaticalmente mal formado; después de 'have' va el participio 'been', no el gerundio.",
+          "Incorrecto: el presente simple no indica duración desde el pasado.",
+          "Correcto: present perfect con 'for' indica que siguen en Bariloche.",
+          "Incorrecto: el pasado simple sugiere que ya no están ahí."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en present perfect.",
+        "sentence": "Lucía ___ (work) at the hospital for six years.",
+        "hint": "(work)",
+        "answers": [
+          "has worked",
+          "'s worked"
+        ],
+        "explanation": "Con 'for + período' y una situación que continúa en el presente se usa present perfect: has/have + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "works",
+            "why": "El presente simple no indica cuánto tiempo lleva la situación, que es lo que pide 'for'."
+          },
+          {
+            "answer": "is working",
+            "why": "El presente continuo no expresa una duración que empezó en el pasado y sigue ahora."
+          },
+          {
+            "answer": "worked",
+            "why": "El pasado simple sugiere que la acción ya terminó, pero Lucía sigue trabajando ahí."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta en present perfect.",
+        "sentence": "We ___ (not see) Martín since his wedding.",
+        "hint": "(not see)",
+        "answers": [
+          "haven't seen",
+          "have not seen"
+        ],
+        "explanation": "Con 'since' + momento de inicio se usa present perfect negativo: haven't/hasn't + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't see",
+            "why": "El pasado simple no conecta la falta de contacto con el presente; se necesita present perfect con 'since'."
+          },
+          {
+            "answer": "don't see",
+            "why": "El presente simple no expresa que la situación empezó en un momento pasado y continúa."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el auxiliar correcto para preguntar por duración.",
+        "sentence": "How long ___ you had your dog?",
+        "hint": "(auxiliar de have)",
+        "answers": [
+          "have"
+        ],
+        "explanation": "Para preguntar duración con 'How long' y el sujeto 'you' se usa el auxiliar 'have' + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "has",
+            "why": "'Has' se usa con he/she/it, no con el sujeto 'you'."
+          },
+          {
+            "answer": "do",
+            "why": "El presente simple no se usa para preguntar por duración junto con 'had'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta en present perfect.",
+        "sentence": "I ___ (not visit) my grandmother since January.",
+        "hint": "(not visit)",
+        "answers": [
+          "haven't visited",
+          "have not visited"
+        ],
+        "explanation": "Con 'since' y una acción que no ocurrió desde ese momento hasta ahora se usa present perfect negativo.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't visit",
+            "why": "El pasado simple no es compatible con 'since' cuando la situación sigue siendo cierta hoy."
+          },
+          {
+            "answer": "don't visit",
+            "why": "El presente simple no indica que la falta de visitas empezó en un momento pasado concreto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'be' en present perfect.",
+        "sentence": "Diego and Clara ___ (be) married for twelve years.",
+        "hint": "(be)",
+        "answers": [
+          "have been"
+        ],
+        "explanation": "Con 'for + período' y una situación que continúa se usa present perfect: have been.",
+        "wrongAnswers": [
+          {
+            "answer": "are",
+            "why": "El presente simple no indica cuánto tiempo llevan casados, solo que lo están ahora."
+          },
+          {
+            "answer": "were",
+            "why": "El pasado simple sugiere que ya no están casados."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta en present perfect.",
+        "sentence": "The landlord ___ (not fix) the heater since we moved in.",
+        "hint": "(not fix)",
+        "answers": [
+          "hasn't fixed",
+          "has not fixed"
+        ],
+        "explanation": "Con 'since' + momento de inicio y un problema que sigue sin resolverse se usa present perfect negativo.",
+        "wrongAnswers": [
+          {
+            "answer": "didn't fix",
+            "why": "El pasado simple no conecta el problema con el presente; se necesita present perfect con 'since'."
+          },
+          {
+            "answer": "doesn't fix",
+            "why": "El presente simple no expresa que la situación empezó en un momento pasado y continúa sin resolverse."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Laura has lived in Mendoza for ten years.",
+        "alternatives": [
+          "For ten years, Laura has lived in Mendoza."
+        ],
+        "translation": "Laura vive en Mendoza hace diez años.",
+        "explanation": "Present perfect ('has lived') + 'for' + período de tiempo expresa una situación que empezó en el pasado y sigue ahora.",
+        "tokens": [
+          "ten",
+          "years",
+          "Mendoza",
+          "has",
+          "in",
+          "for",
+          "lived",
+          "Laura"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has worked as a teacher since 2015.",
+        "alternatives": [
+          "Since 2015, she has worked as a teacher."
+        ],
+        "translation": "Ella trabaja como maestra desde 2015.",
+        "explanation": "Present perfect ('has worked') + 'since' + momento de inicio indica que la situación continúa en el presente.",
+        "tokens": [
+          "She",
+          "2015",
+          "as",
+          "worked",
+          "has",
+          "a",
+          "since",
+          "teacher"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We haven't seen Julián since last summer.",
+        "alternatives": [],
+        "translation": "No hemos visto a Julián desde el verano pasado.",
+        "explanation": "Present perfect negativo ('haven't seen') con 'since' indica que la falta de contacto sigue hasta ahora.",
+        "tokens": [
+          "Julián",
+          "haven't",
+          "seen",
+          "since",
+          "We",
+          "last",
+          "summer"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "How long have you had that apartment?",
+        "alternatives": [],
+        "translation": "¿Hace cuánto tenés ese departamento?",
+        "explanation": "'How long' + 'have' + participio pregunta por la duración de una situación que continúa.",
+        "tokens": [
+          "that",
+          "apartment",
+          "long",
+          "had",
+          "How",
+          "you",
+          "have"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "They have been colleagues for twenty years.",
+        "alternatives": [
+          "For twenty years, they have been colleagues."
+        ],
+        "translation": "Son colegas hace veinte años.",
+        "explanation": "Present perfect ('have been') + 'for' + período de tiempo expresa una situación que sigue siendo cierta.",
+        "tokens": [
+          "for",
+          "twenty",
+          "They",
+          "years",
+          "have",
+          "been",
+          "colleagues"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect.",
+        "sentence": "I live in Buenos Aires since 2010.",
+        "answers": [
+          "I have lived in Buenos Aires since 2010.",
+          "I've lived in Buenos Aires since 2010."
+        ],
+        "explanation": "Para algo que empezó en el pasado y sigue ahora, con 'since' se usa present perfect, no presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I lived in Buenos Aires since 2010.",
+            "why": "El pasado simple no es compatible con 'since' cuando la situación sigue siendo cierta hoy."
+          },
+          {
+            "answer": "I have lived in Buenos Aires in 2010.",
+            "why": "Cambiar 'since' por 'in' pierde el sentido de continuidad desde ese momento hasta ahora."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect.",
+        "sentence": "She has worked here since five years.",
+        "answers": [
+          "She has worked here for five years.",
+          "She's worked here for five years."
+        ],
+        "explanation": "Con un período de tiempo (cinco años) se usa 'for', no 'since'; 'since' va con un momento de inicio.",
+        "wrongAnswers": [
+          {
+            "answer": "She has worked here from five years.",
+            "why": "'From' no se usa para expresar un período de tiempo; con períodos se usa 'for'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect.",
+        "sentence": "We have been married for 2015.",
+        "answers": [
+          "We have been married since 2015.",
+          "We've been married since 2015."
+        ],
+        "explanation": "Con un momento puntual (el año 2015) se usa 'since', no 'for'; 'for' va con períodos de tiempo.",
+        "wrongAnswers": [
+          {
+            "answer": "We have been married from 2015.",
+            "why": "'From' no es la preposición correcta para marcar el inicio de una situación con present perfect."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect.",
+        "sentence": "How long do you have this job?",
+        "answers": [
+          "How long have you had this job?"
+        ],
+        "explanation": "Para preguntar por la duración de una situación que continúa se usa 'How long have you had...?', no el presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "How long are you having this job?",
+            "why": "'Have' en el sentido de posesión es un verbo estativo y no se usa normalmente en continuo; se necesita present perfect."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect.",
+        "sentence": "I haven't seen my cousin since five years.",
+        "answers": [
+          "I haven't seen my cousin for five years.",
+          "I've not seen my cousin for five years."
+        ],
+        "explanation": "Con un período de tiempo (cinco años) corresponde usar 'for', no 'since'.",
+        "wrongAnswers": [
+          {
+            "answer": "I haven't seen my cousin from five years.",
+            "why": "'From' no se usa para expresar un período de tiempo; con períodos se usa 'for'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vivo en este barrio hace ocho años.",
+        "answers": [
+          "I have lived in this neighborhood for eight years.",
+          "I've lived in this neighborhood for eight years."
+        ],
+        "explanation": "Para una situación que empezó en el pasado y sigue ahora, con 'for + período' se usa present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "I live in this neighborhood since eight years.",
+            "why": "Es un calco del español: se necesita present perfect (no presente simple) y 'since' no se usa con períodos de tiempo, sino 'for'."
+          },
+          {
+            "answer": "I live in this neighborhood for eight years.",
+            "why": "Falta el present perfect; el presente simple no expresa que la situación empezó en el pasado y continúa."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Hace cuánto que conocés a Martín?",
+        "answers": [
+          "How long have you known Martín?",
+          "How long have you known Martin?"
+        ],
+        "explanation": "Para preguntar por cuánto tiempo lleva una situación se usa 'How long have you...?' en present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "How long do you know Martín?",
+            "why": "El presente simple no sirve para preguntar por la duración de una situación que continúa; se necesita present perfect."
+          },
+          {
+            "answer": "Since when do you know Martín?",
+            "why": "Estructura incorrecta: para preguntar por duración se necesita present perfect, no presente simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Trabajamos en este proyecto desde marzo.",
+        "answers": [
+          "We have worked on this project since March.",
+          "We've worked on this project since March."
+        ],
+        "explanation": "Con 'since' + momento de inicio y una situación que continúa se usa present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "We work on this project since March.",
+            "why": "Es un calco: el presente simple no se combina con 'since' para una situación que empezó en el pasado y continúa."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No hemos hablado con el médico desde el lunes.",
+        "answers": [
+          "We haven't spoken to the doctor since Monday.",
+          "We have not spoken to the doctor since Monday.",
+          "We haven't spoken with the doctor since Monday."
+        ],
+        "explanation": "Con 'since' y una acción que no ocurrió desde ese momento hasta ahora se usa present perfect negativo.",
+        "wrongAnswers": [
+          {
+            "answer": "We didn't speak with the doctor since Monday.",
+            "why": "El pasado simple no combina con 'since' cuando la falta de contacto sigue hasta el presente."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Alquilo este departamento hace dos años.",
+        "answers": [
+          "I have rented this apartment for two years.",
+          "I've rented this apartment for two years."
+        ],
+        "explanation": "Para una situación que empezó en el pasado y sigue ahora, con 'for + período' se usa present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "I rent this apartment since two years.",
+            "why": "Dos errores: el presente simple no expresa una situación que continúa, y 'since' no se usa con períodos de tiempo, sino 'for'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella ha sido gerente desde enero.",
+        "answers": [
+          "She has been a manager since January.",
+          "She's been a manager since January."
+        ],
+        "explanation": "Con 'since' + momento de inicio y una situación que continúa se usa present perfect: has/have been.",
+        "wrongAnswers": [
+          {
+            "answer": "She is a manager since January.",
+            "why": "El presente simple no expresa la idea de continuidad desde un punto en el pasado; se necesita present perfect."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas prestando atención al uso de 'for' y 'since'.",
+        "text": "Camila moved to a new apartment in Palermo last month. Her neighbor, Rodrigo, has lived in the same building since 2015. 'I've lived here for almost nine years,' he tells her. 'I moved in when I started my first job.' Camila is surprised. 'Wow, that's a long time! Have you always liked the neighborhood?' Rodrigo smiles. 'Yes, I've loved it since my first week here. The restaurants are great, and my best friend has lived two blocks away for six years.' Camila feels happy to have a friendly neighbor. 'I hope I like it as much as you do,' she says. Rodrigo laughs. 'Don't worry, you will. Everyone who moves here stays for a long time.'",
+        "questions": [
+          {
+            "prompt": "How long has Rodrigo lived in the building?",
+            "options": [
+              "For two blocks.",
+              "For almost nine years.",
+              "Since he met Camila.",
+              "Since last month."
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'I've lived here for almost nine years', usando 'for' porque se menciona un período de tiempo."
+          },
+          {
+            "prompt": "Since when has Rodrigo loved the neighborhood?",
+            "options": [
+              "Since he started his new job.",
+              "Since his first week there.",
+              "Since Camila became his neighbor.",
+              "Since last month."
+            ],
+            "correctIndex": 1,
+            "explanation": "Rodrigo dice 'I've loved it since my first week here', usando 'since' para indicar el momento en que empezó ese sentimiento."
+          },
+          {
+            "prompt": "How long has Rodrigo's best friend lived two blocks away?",
+            "options": [
+              "Since 2015.",
+              "For nine years.",
+              "For six years.",
+              "Since last month."
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'my best friend has lived two blocks away for six years', usando 'for' con una duración de tiempo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas prestando atención al uso de 'for' y 'since'.",
+        "text": "Valentina has a bad cough, so she goes to see Dr. Ramírez. 'How long have you had this cough?' asks the doctor. 'I've had it for about ten days,' Valentina answers. 'I've also had a sore throat since last Thursday.' The doctor checks her and asks more questions. 'Have you taken any medicine?' 'Yes, I've taken cough syrup since Friday, but it hasn't helped much.' Dr. Ramírez looks worried. 'Have you had a fever?' 'No, but I've felt very tired since the cough started.' The doctor decides to do some tests. 'Don't worry,' she says. 'Many patients have had this same cough for the last two weeks. It's probably just a seasonal virus.' Valentina feels relieved and thanks the doctor for her help.",
+        "questions": [
+          {
+            "prompt": "How long has Valentina had the cough?",
+            "options": [
+              "For about ten days.",
+              "Since last Thursday.",
+              "Since Friday.",
+              "For two weeks."
+            ],
+            "correctIndex": 0,
+            "explanation": "Valentina dice 'I've had it for about ten days', usando 'for' con una duración de tiempo."
+          },
+          {
+            "prompt": "Since when has Valentina had a sore throat?",
+            "options": [
+              "For two weeks.",
+              "For ten days.",
+              "Since Friday.",
+              "Since last Thursday."
+            ],
+            "correctIndex": 3,
+            "explanation": "Valentina dice 'I've also had a sore throat since last Thursday', usando 'since' para indicar el momento en que empezó."
+          },
+          {
+            "prompt": "How long have many patients had this same cough, according to the doctor?",
+            "options": [
+              "Since Friday.",
+              "Since last Thursday.",
+              "For ten days.",
+              "For the last two weeks."
+            ],
+            "correctIndex": 3,
+            "explanation": "La doctora dice 'Many patients have had this same cough for the last two weeks', usando 'for' con un período de tiempo."
+          }
+        ]
+      }
+    ],
+    "perfecto-vs-pasado": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "___ you ever been to Bariloche?",
+        "options": [
+          "Has",
+          "Were",
+          "Did",
+          "Have"
+        ],
+        "correctIndex": 3,
+        "explanation": "Las preguntas sobre experiencias con 'ever' se forman con present perfect: Have/Has + sujeto + participio.",
+        "optionNotes": [
+          "Incorrecto: 'has' se usa con he/she/it, no con 'you'.",
+          "Incorrecto: 'were' no es un auxiliar válido para formar el present perfect con 'been'.",
+          "Incorrecto: 'ever' en preguntas de experiencia pide present perfect, no pasado simple.",
+          "Correcto: 'you' + 'have' es la forma correcta del present perfect para preguntar por experiencia."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I ___ my CV last night.",
+        "options": [
+          "sent",
+          "has sent",
+          "have send",
+          "have sent"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Last night' es un momento definido del pasado, por eso se usa pasado simple.",
+        "optionNotes": [
+          "Correcto: pasado simple para una acción terminada en un momento definido.",
+          "Incorrecto: el sujeto es 'I', no corresponde 'has', y además el tiempo es definido.",
+          "Incorrecto: combina mal el auxiliar con la forma base del verbo, y el tiempo definido pide pasado simple.",
+          "Incorrecto: no se puede usar present perfect con un tiempo definido como 'last night'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "When ___ the pain start?",
+        "options": [
+          "has",
+          "did",
+          "has been",
+          "have"
+        ],
+        "correctIndex": 1,
+        "explanation": "Las preguntas con 'when' piden un momento definido, por eso se usa pasado simple con 'did'.",
+        "optionNotes": [
+          "Incorrecto: 'when' pide pasado simple, no present perfect.",
+          "Correcto: 'when' + pasado simple para preguntar por un momento definido.",
+          "Incorrecto: forma de present perfect continuo, no corresponde con 'when'.",
+          "Incorrecto: igual que 'has', no corresponde con preguntas de 'when'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I ___ this apartment since March.",
+        "options": [
+          "did rent",
+          "rented",
+          "have rented",
+          "renting"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Since' indica una acción que empezó en el pasado y continúa hasta ahora, por eso se usa present perfect.",
+        "optionNotes": [
+          "Incorrecto: forma de pregunta/énfasis en pasado simple, no corresponde con 'since'.",
+          "Incorrecto: con 'since' se necesita present perfect, no pasado simple.",
+          "Correcto: present perfect con 'since' para una acción que sigue siendo verdad.",
+          "Incorrecto: falta el auxiliar, no es una forma verbal completa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "___ you finished the report yet?",
+        "options": [
+          "Do",
+          "Have",
+          "Has",
+          "Did"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Yet' en preguntas sin tiempo definido se usa con present perfect.",
+        "optionNotes": [
+          "Incorrecto: 'do' es para presente simple, no para present perfect.",
+          "Correcto: 'have' + sujeto 'you' + participio para preguntar si algo ya pasó.",
+          "Incorrecto: 'has' no corresponde con el sujeto 'you'.",
+          "Incorrecto: con 'yet' en este contexto se espera present perfect."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "She ___ in Mendoza for five years before she moved to Buenos Aires.",
+        "options": [
+          "has been working",
+          "has worked",
+          "worked",
+          "have worked"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como la acción terminó antes de otro evento pasado ('before she moved'), se usa pasado simple.",
+        "optionNotes": [
+          "Incorrecto: forma continua innecesaria para una acción ya terminada.",
+          "Incorrecto: la acción ya terminó en el pasado, no sigue relacionada con el presente.",
+          "Correcto: pasado simple para una acción completa y terminada antes de otro evento pasado.",
+          "Incorrecto: el sujeto 'she' requiere 'has', y además el tiempo no es correcto."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I ___ my keys and I can't find them.",
+        "hint": "(lose)",
+        "answers": [
+          "have lost",
+          "'ve lost"
+        ],
+        "explanation": "El resultado de la acción sigue siendo relevante ahora (no encuentra las llaves), por eso se usa present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "lost",
+            "why": "Falta relación con el presente (todavía no las encuentra); se necesita present perfect."
+          },
+          {
+            "answer": "had lost",
+            "why": "El pasado perfecto no corresponde porque no hay otra acción pasada de referencia."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I ___ to the dentist last Tuesday.",
+        "hint": "(go)",
+        "answers": [
+          "went"
+        ],
+        "explanation": "'Last Tuesday' marca un momento definido en el pasado, así que se usa pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "have gone",
+            "why": "'Last Tuesday' es un momento definido, por eso corresponde pasado simple."
+          },
+          {
+            "answer": "have been",
+            "why": "No corresponde present perfect porque hay un tiempo definido en la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "We ___ in this house since 2015.",
+        "hint": "(live)",
+        "answers": [
+          "have lived",
+          "'ve lived"
+        ],
+        "explanation": "'Since 2015' indica que la acción empezó en el pasado y sigue siendo verdad, por eso se usa present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "lived",
+            "why": "Con 'since' la acción continúa hasta el presente, se necesita present perfect."
+          },
+          {
+            "answer": "are living",
+            "why": "Esta estructura no combina correctamente con 'since' para expresar duración desde un punto pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Martina ___ her passport yesterday, so she can't travel today.",
+        "hint": "(lose)",
+        "answers": [
+          "lost"
+        ],
+        "explanation": "Como hay un tiempo definido ('yesterday'), se usa pasado simple en vez de present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "has lost",
+            "why": "'Yesterday' es un momento definido del pasado, por eso corresponde pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el auxiliar correcto.",
+        "sentence": "___ you finished the interview questions yet?",
+        "hint": "(auxiliar)",
+        "answers": [
+          "Have"
+        ],
+        "explanation": "'Yet' en preguntas sin tiempo definido acompaña al present perfect, formado con 'have/has' + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "Did",
+            "why": "Con 'yet' en este tipo de pregunta se espera present perfect, no pasado simple."
+          },
+          {
+            "answer": "Has",
+            "why": "El sujeto 'you' requiere 'have', no 'has'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I ___ this movie three times. It's my favourite.",
+        "hint": "(watch)",
+        "answers": [
+          "have watched",
+          "'ve watched"
+        ],
+        "explanation": "Sin un momento específico y con relación directa al presente, corresponde usar present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "watched",
+            "why": "No hay tiempo definido y la oración conecta con el presente ('it's my favourite'), por eso se necesita present perfect."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Have you ever visited Iguazú Falls?",
+        "alternatives": [],
+        "translation": "¿Alguna vez visitaste las Cataratas del Iguazú?",
+        "explanation": "Las preguntas de experiencia con 'ever' llevan present perfect: Have + sujeto + ever + participio.",
+        "tokens": [
+          "Have",
+          "ever",
+          "you",
+          "Iguazú",
+          "visited",
+          "Falls"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I went to Mendoza last summer with my family.",
+        "alternatives": [],
+        "translation": "Fui a Mendoza el verano pasado con mi familia.",
+        "explanation": "'Last summer' es un momento definido del pasado, por eso se usa pasado simple.",
+        "tokens": [
+          "family",
+          "summer",
+          "my",
+          "went",
+          "last",
+          "I",
+          "with",
+          "Mendoza",
+          "to"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has already finished her English homework.",
+        "alternatives": [
+          "She has finished her English homework already."
+        ],
+        "translation": "Ella ya terminó su tarea de inglés.",
+        "explanation": "'Already' con relación al presente acompaña al present perfect para indicar que algo ya sucedió.",
+        "tokens": [
+          "already",
+          "finished",
+          "has",
+          "She",
+          "homework",
+          "her",
+          "English"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Did you see Julián at the gym yesterday?",
+        "alternatives": [],
+        "translation": "¿Viste a Julián en el gimnasio ayer?",
+        "explanation": "'Yesterday' es un momento definido, por eso la pregunta se forma con pasado simple ('did').",
+        "tokens": [
+          "yesterday",
+          "the",
+          "at",
+          "see",
+          "Julián",
+          "you",
+          "gym",
+          "Did"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We haven't received the contract from the landlord yet.",
+        "alternatives": [],
+        "translation": "Todavía no recibimos el contrato del dueño del departamento.",
+        "explanation": "'Yet' en oraciones negativas sin tiempo definido se usa con present perfect ('haven't received').",
+        "tokens": [
+          "from",
+          "the",
+          "landlord",
+          "yet",
+          "received",
+          "We",
+          "the",
+          "haven't",
+          "contract"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "When have you arrived in Buenos Aires?",
+        "answers": [
+          "When did you arrive in Buenos Aires?"
+        ],
+        "explanation": "Las preguntas con 'when' piden un momento definido, por eso se usa pasado simple en vez de present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "When have you arrive in Buenos Aires?",
+            "why": "El problema no es la forma del verbo sino el auxiliar: 'when' pide pasado simple, no present perfect."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "I have seen that doctor in 2020.",
+        "answers": [
+          "I saw that doctor in 2020."
+        ],
+        "explanation": "'In 2020' es un momento definido del pasado, por eso se usa pasado simple en vez de present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "I have saw that doctor in 2020.",
+            "why": "Mezcla el auxiliar 'have' con el pasado simple; con una fecha definida ('in 2020') corresponde pasado simple puro, sin auxiliar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "She didn't finish the report yet.",
+        "answers": [
+          "She hasn't finished the report yet.",
+          "She has not finished the report yet."
+        ],
+        "explanation": "'Yet' en oraciones negativas sin tiempo definido acompaña al present perfect, no al pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "She not finish the report yet.",
+            "why": "Falta el auxiliar correcto y la forma del verbo; se necesita 'hasn't finished', no solo quitar 'did'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "I have bought this jacket last week.",
+        "answers": [
+          "I bought this jacket last week."
+        ],
+        "explanation": "'Last week' marca un momento definido en el pasado, por eso se usa pasado simple sin auxiliar.",
+        "wrongAnswers": [
+          {
+            "answer": "I have buy this jacket last week.",
+            "why": "Cambia la forma del verbo pero mantiene el auxiliar 'have', que no corresponde porque 'last week' es un tiempo definido."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la oración.",
+        "sentence": "Have you called the landlord yesterday?",
+        "answers": [
+          "Did you call the landlord yesterday?"
+        ],
+        "explanation": "'Yesterday' es un tiempo definido, por eso la pregunta se forma con pasado simple ('did'), no con present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "Have you call the landlord yesterday?",
+            "why": "Solo corrige la forma del verbo pero mantiene 'have', que no es compatible con 'yesterday'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Alguna vez estuviste en Mendoza?",
+        "answers": [
+          "Have you ever been to Mendoza?",
+          "Have you ever been in Mendoza?"
+        ],
+        "explanation": "Las preguntas sobre experiencias con 'ever' se forman con present perfect: Have + sujeto + ever + been.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you ever go to Mendoza?",
+            "why": "Con 'ever' preguntando por experiencia general se usa present perfect, no pasado simple."
+          },
+          {
+            "answer": "You have ever been to Mendoza?",
+            "why": "Falta la inversión sujeto-auxiliar necesaria para formar la pregunta."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Fui al médico ayer porque me dolía la cabeza.",
+        "answers": [
+          "I went to the doctor yesterday because I had a headache.",
+          "I went to the doctor's yesterday because I had a headache."
+        ],
+        "explanation": "Como hay un momento definido ('ayer'), se usa pasado simple en toda la oración.",
+        "wrongAnswers": [
+          {
+            "answer": "I have gone to the doctor yesterday because I had a headache.",
+            "why": "'Ayer' es tiempo definido, corresponde pasado simple, no present perfect."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Todavía no firmé el contrato de alquiler.",
+        "answers": [
+          "I haven't signed the rental contract yet.",
+          "I have not signed the rental contract yet."
+        ],
+        "explanation": "'Todavía no... yet' sin un momento definido se expresa con present perfect negativo: haven't + participio.",
+        "wrongAnswers": [
+          {
+            "answer": "I didn't sign the rental contract yet.",
+            "why": "Con 'yet' en oraciones sin tiempo definido se usa present perfect negativo, no pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mandé mi currículum la semana pasada.",
+        "answers": [
+          "I sent my CV last week.",
+          "I sent my resume last week."
+        ],
+        "explanation": "'La semana pasada' marca un tiempo definido en el pasado, por eso corresponde pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I have sent my CV last week.",
+            "why": "'La semana pasada' es un momento definido, se necesita pasado simple sin auxiliar."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Ya terminaste la entrevista con Martín?",
+        "answers": [
+          "Have you already finished the interview with Martín?",
+          "Have you finished the interview with Martín yet?"
+        ],
+        "explanation": "'Ya' sin un momento específico y con conexión al presente se expresa con present perfect.",
+        "wrongAnswers": [
+          {
+            "answer": "Did you already finish the interview with Martín?",
+            "why": "'Ya' en relación con el presente normalmente va con present perfect, no con pasado simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nunca vi esa película, pero mi hermano la vio el sábado.",
+        "answers": [
+          "I have never seen that movie, but my brother saw it on Saturday.",
+          "I've never seen that movie, but my brother saw it on Saturday."
+        ],
+        "explanation": "La primera parte no tiene tiempo definido ('never') y usa present perfect; la segunda tiene una fecha definida ('on Saturday') y usa pasado simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I never saw that movie, but my brother has seen it on Saturday.",
+            "why": "Están invertidos los tiempos: sin fecha se necesita present perfect ('never seen') y con 'on Saturday' (fecha definida) corresponde pasado simple ('saw')."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre los viajes de Nico y respondé las preguntas eligiendo entre present perfect y pasado simple.",
+        "text": "Nico has traveled to many places in Argentina. He has been to Mendoza, Bariloche and Salta. Last year, he went to Mendoza with his sister to visit the wineries. They stayed there for five days and tried a lot of delicious food.\n\nNico has never been to Ushuaia, but he wants to go next winter. His friend Pablo has already been there twice. Pablo went in 2021 and again in 2023, and he loved it both times.\n\nYesterday, Nico bought a new backpack for his next trip. He hasn't decided where to go yet, but he has already started saving money. He thinks traveling is the best way to learn about new cultures.",
+        "questions": [
+          {
+            "prompt": "Has Nico been to Ushuaia?",
+            "options": [
+              "No, he has never been there.",
+              "Yes, he went last year.",
+              "Yes, he has been there twice.",
+              "No, but he went in 2021."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Has never been' está en present perfect porque habla de una experiencia sin momento definido, es decir, en toda su vida hasta ahora."
+          },
+          {
+            "prompt": "When did Nico go to Mendoza?",
+            "options": [
+              "Last year.",
+              "He has never gone.",
+              "Next winter.",
+              "Yesterday."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Last year' es un momento definido y terminado, por eso se usa pasado simple: 'he went'."
+          },
+          {
+            "prompt": "What did Nico do yesterday?",
+            "options": [
+              "He saved money for years.",
+              "He traveled to Ushuaia.",
+              "He bought a new backpack.",
+              "He visited wineries."
+            ],
+            "correctIndex": 2,
+            "explanation": "'Yesterday' indica un momento específico del pasado, por eso la acción va en pasado simple: 'bought'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la búsqueda de trabajo de Carla y respondé las preguntas eligiendo entre present perfect y pasado simple.",
+        "text": "Carla has worked in marketing for eight years. She has worked for three different companies, but she has never worked abroad. Last month, she applied for a new job at a company in Buenos Aires.\n\nShe had an interview on Tuesday. The interviewer asked her many questions about her experience. Carla has already managed several big projects, so she talked about them with confidence.\n\nShe hasn't received an answer yet, but she is still waiting. Yesterday, she called the company to ask about the result, but nobody answered. Her friend Marcos has also applied for a job this month, and he already got an offer.\n\nCarla hopes she will have good news soon.",
+        "questions": [
+          {
+            "prompt": "Has Carla ever worked abroad?",
+            "options": [
+              "No, she has never worked abroad.",
+              "Yes, she worked in Brazil.",
+              "Yes, last year.",
+              "No, but she will next month."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Has never worked' es present perfect porque describe una experiencia de toda su vida, sin un momento concreto del pasado."
+          },
+          {
+            "prompt": "When did Carla have her interview?",
+            "options": [
+              "Last month.",
+              "Yesterday.",
+              "On Tuesday.",
+              "She hasn't had one yet."
+            ],
+            "correctIndex": 2,
+            "explanation": "'On Tuesday' es un momento definido, por eso la acción se expresa en pasado simple: 'had'."
+          },
+          {
+            "prompt": "What did Carla do yesterday?",
+            "options": [
+              "She called the company to ask about the result.",
+              "She managed a big project.",
+              "She received a job offer.",
+              "She had an interview."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Yesterday' marca un momento específico y terminado, por eso se usa pasado simple: 'called'."
+          }
+        ]
+      }
+    ]
+  }
+}

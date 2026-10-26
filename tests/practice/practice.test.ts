@@ -8,7 +8,7 @@ import { SESSION_SIZE } from '../../src/main/practice/composition'
 import type { PoolGenerator } from '../../src/main/practice/generation'
 import { Practice } from '../../src/main/practice/practice'
 import { addDays } from '../../src/shared/dates'
-import type { ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
+import type { ExerciseAnswer, ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
 import { rightAnswer, sample } from '../helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
@@ -16,6 +16,11 @@ const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
 // 14/9/2026 es lunes.
 const MON = '2026-09-14'
 const day = (offset: number): string => addDays(MON, offset)
+// Una práctica de 10 en la que siempre entra la traducción (sin los cortos de escuchar que compiten por su lugar).
+const WITH_TRANSLATION = (): { size: number; excluded: ExerciseType[] } => ({
+  size: 10,
+  excluded: ['dictation', 'minimal_pair', 'listening', 'shadowing']
+})
 
 let db: Db
 let progression: Progression
@@ -132,6 +137,7 @@ describe('práctica del día', () => {
   })
 
   it('una traducción distinta de la referencia la corrige Claude sin frenar la práctica', async () => {
+    practice = new Practice(db, curriculum, progression, generator, grader, WITH_TRANSLATION)
     const s = session(await practice.start(MON))
     const translation = s.exercises.find((e) => e.type === 'translation')!
     const view = session(await practice.answer(translation.id, { type: 'translation', text: 'I work teaching English' }))
@@ -149,10 +155,17 @@ describe('práctica del día', () => {
 
   it('si la corrección de Claude falla, se puede reintentar sin volver a responder', async () => {
     let fail = true
-    practice = new Practice(db, curriculum, progression, generator, async (request) => {
-      if (fail) throw new Error('Claude saturado')
-      return grader(request)
-    })
+    practice = new Practice(
+      db,
+      curriculum,
+      progression,
+      generator,
+      async (request) => {
+        if (fail) throw new Error('Claude saturado')
+        return grader(request)
+      },
+      WITH_TRANSLATION
+    )
     const s = session(await practice.start(MON))
     const translation = s.exercises.find((e) => e.type === 'translation')!
     await practice.answer(translation.id, { type: 'translation', text: 'I work teaching English' })
@@ -338,5 +351,73 @@ describe('dificultad que se adapta', () => {
     await practice.start(day(1))
     expect(asked[0]).toBe('normal')
     expect(asked.at(-1)).toBe('harder')
+  })
+})
+
+describe('segundo intento y repetición al final', () => {
+  const RETRYABLE: ExerciseType[] = ['multiple_choice', 'fill_blank', 'error_correction', 'word_order']
+
+  // Una respuesta equivocada de los tipos que se corrigen al instante.
+  function wrongAnswer(e: StoredExercise): ExerciseAnswer {
+    switch (e.type) {
+      case 'multiple_choice':
+        return { type: e.type, choice: (e.correctIndex + 1) % e.options.length }
+      case 'word_order':
+        return { type: e.type, tokens: [...e.tokens].sort().reverse() }
+      case 'fill_blank':
+      case 'error_correction':
+        return { type: e.type, text: 'zzz' }
+      default:
+        throw new Error(`sin respuesta equivocada para ${e.type}`)
+    }
+  }
+  const mistakes = (): number => (db.prepare("SELECT COUNT(*) AS n FROM cards WHERE kind = 'mistake'").get() as { n: number }).n
+  const find = (s: SessionView, id: number): SessionView['exercises'][number] => s.exercises.find((e) => e.id === id)!
+
+  it('si le erra, tiene un segundo intento con una pista; si acierta, vale con menos puntaje y no va al cuaderno', async () => {
+    const s = session(await practice.start(MON))
+    const e = s.exercises.find((x) => RETRYABLE.includes(x.type))!
+    const first = find(session(await practice.answer(e.id, wrongAnswer(stored(e.id)))), e.id)
+    expect(first).toMatchObject({ answer: null, feedback: null })
+    expect(first.retry).toBeTruthy()
+
+    const done = find(session(await practice.answer(e.id, rightAnswer(stored(e.id)))), e.id)
+    expect(done.feedback).toMatchObject({ correct: true, score: 7 })
+    expect(done.feedback!.explanation).toMatch(/^Bien al segundo intento/)
+    expect(done.retry).toBeNull()
+    expect(mistakes()).toBe(0)
+  })
+
+  it('si le erra dos veces, va al cuaderno y vuelve al final, sin segundo intento ni otra vuelta', async () => {
+    const s = session(await practice.start(MON))
+    const e = s.exercises.find((x) => RETRYABLE.includes(x.type))!
+    await practice.answer(e.id, wrongAnswer(stored(e.id)))
+    const view = session(await practice.answer(e.id, wrongAnswer(stored(e.id))))
+    expect(find(view, e.id).feedback?.correct).toBe(false)
+    expect(mistakes()).toBe(1)
+
+    const repeat = view.exercises.at(-1)!
+    expect(repeat).toMatchObject({ type: e.type, repeat: true, answer: null })
+    expect(view.exercises).toHaveLength(s.exercises.length + 1)
+
+    const after = session(await practice.answer(repeat.id, wrongAnswer(stored(repeat.id))))
+    expect(find(after, repeat.id).feedback?.correct).toBe(false)
+    expect(after.exercises).toHaveLength(view.exercises.length)
+    expect(mistakes()).toBe(1)
+  })
+
+  it('la repetición hay que hacerla para terminar, pero no cuenta en el resultado', async () => {
+    const s = session(await practice.start(MON))
+    const e = s.exercises.find((x) => RETRYABLE.includes(x.type))!
+    await practice.answer(e.id, wrongAnswer(stored(e.id)))
+    await practice.answer(e.id, wrongAnswer(stored(e.id)))
+    for (const x of s.exercises) if (x.id !== e.id) await practice.answer(x.id, rightAnswer(stored(x.id)))
+    await practice.settled()
+    const view = session(practice.getView(MON))
+    expect(view.canFinish).toBe(false)
+
+    const repeat = view.exercises.at(-1)!
+    await practice.answer(repeat.id, rightAnswer(stored(repeat.id)))
+    expect(practice.finish(view.id, MON)).toMatchObject({ correct: SESSION_SIZE - 1, total: SESSION_SIZE })
   })
 })

@@ -550,6 +550,257 @@
             "explanation": "El pronombre 'he' antes de la frase señala que el sujeto es el dueño del hostel, el señor Gómez, quien les da la bienvenida a los huéspedes."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "I am ready for my first day at work.",
+        "alternatives": [
+          "I'm ready for my first day at work."
+        ],
+        "translation": "Estoy listo/a para mi primer día de trabajo.",
+        "explanation": "I siempre se escribe con mayúscula, incluso cuando no está al principio de la oración; el oído no distingue esto, hay que recordarlo al escribir."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "It is sunny today in Mendoza.",
+        "alternatives": [
+          "It's sunny today in Mendoza."
+        ],
+        "translation": "Hoy está soleado en Mendoza.",
+        "explanation": "En inglés el sujeto es obligatorio: para hablar del clima siempre se usa it, aunque en español digamos 'está soleado' sin sujeto."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "We are interested in this apartment.",
+        "alternatives": [
+          "We're interested in this apartment."
+        ],
+        "translation": "Estamos interesados en este departamento.",
+        "explanation": "We incluye al hablante más otra persona; no hay que confundirlo con they, que deja afuera al hablante."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "They are from Rosario, like you.",
+        "alternatives": [
+          "They're from Rosario, like you."
+        ],
+        "translation": "Ellos son de Rosario, como vos.",
+        "explanation": "They es la forma plural para hablar de personas o cosas; su sonido inicial es un diptongo que se puede confundir con 'the' si no se pronuncia bien."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "is",
+          "his"
+        ],
+        "target": 1,
+        "meanings": [
+          "es / está",
+          "su (de él)"
+        ],
+        "explanation": "His empieza con un sonido /h/ muy suave que casi no se pronuncia en inglés rápido, mientras que is no tiene ese sonido inicial."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "she",
+          "see"
+        ],
+        "target": 0,
+        "meanings": [
+          "ella",
+          "ver"
+        ],
+        "explanation": "She se pronuncia con el sonido /sh/ (labios más redondeados), mientras que see usa el sonido /s/ más fino; prestá atención a la fricción al principio."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "eat",
+          "it"
+        ],
+        "target": 0,
+        "meanings": [
+          "comer",
+          "eso / ello"
+        ],
+        "explanation": "It tiene una vocal corta /ɪ/, mientras que eat tiene una vocal larga /iː/; alargá el sonido para distinguir una de otra."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "We are so excited about our trip to Bariloche!",
+        "translation": "¡Estamos tan emocionados por nuestro viaje a Bariloche!",
+        "tip": "Uní 'we are' como si fuera 'we're' al hablar rápido, y subí un poco el tono en la palabra 'excited'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "He is always on time for his appointments.",
+        "translation": "Él siempre llega a tiempo a sus citas.",
+        "tip": "Juntá 'he is' en un solo golpe de voz, como 'he's', y bajá el tono al final de la oración."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "They are waiting for us at the hostel.",
+        "translation": "Ellos nos están esperando en el hostel.",
+        "tip": "Decí 'they're waiting' como una sola unidad de sonido, sin pausas entre las palabras."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En la recepción de un hostel en Ushuaia, el viajero Lucas habla con la recepcionista Valentina sobre su reserva y sus dos amigos de viaje.",
+        "lines": [
+          {
+            "speaker": "Valentina",
+            "text": "Hi! Welcome to Ushuaia Hostel. Are you Lucas?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Yes, I am. I am here with my two friends, Martina and Pablo."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Great! Are they in the car now?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "No, they are at the airport. They are late because of the flight."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "No problem. Is it cold outside today?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Yes, it is very cold! It is windy too."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Welcome anyway! Your room is number five, on the second floor."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Perfect, thank you!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde están Martina y Pablo en este momento?",
+            "options": [
+              "En el aeropuerto",
+              "En el auto",
+              "En la recepción",
+              "En la habitación"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas dice 'they are at the airport'; usa they porque se refiere a Martina y Pablo juntos, como grupo."
+          },
+          {
+            "prompt": "¿Cómo está el clima afuera según Lucas?",
+            "options": [
+              "Hace frío y viento",
+              "Está nublado",
+              "Hace calor",
+              "Está lloviendo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas usa it para hablar del clima: 'it is very cold' y 'it is windy', ya que it se usa para el clima, sin sujeto concreto."
+          },
+          {
+            "prompt": "¿Por qué llegan tarde Martina y Pablo?",
+            "options": [
+              "Por el vuelo",
+              "Porque se perdieron",
+              "Porque el auto se rompió",
+              "Porque el hostel está lejos"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas dice 'they are late because of the flight'; they reemplaza a Martina y Pablo como grupo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista y respondé las preguntas sobre los detalles.",
+        "situation": "Una entrevista laboral por videollamada entre el entrevistador Mr. Lopez y la candidata Agustina, para un puesto en una empresa de Buenos Aires.",
+        "lines": [
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Hello Agustina, I am Mr. Lopez. Nice to meet you."
+          },
+          {
+            "speaker": "Agustina",
+            "text": "Nice to meet you too! I am very happy to be here."
+          },
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Perfect. Are you from Buenos Aires?"
+          },
+          {
+            "speaker": "Agustina",
+            "text": "No, I am not. I am from Santa Fe, but I am in Buenos Aires now for work."
+          },
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Great. This is my colleague, Laura. She is the manager of the team."
+          },
+          {
+            "speaker": "Agustina",
+            "text": "Hi Laura! It is a pleasure to meet you."
+          },
+          {
+            "speaker": "Laura",
+            "text": "Hi Agustina! We are a small team, only four people."
+          },
+          {
+            "speaker": "Mr. Lopez",
+            "text": "Yes, and we are very excited to have a new person."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Agustina originalmente?",
+            "options": [
+              "Córdoba",
+              "Mendoza",
+              "Buenos Aires",
+              "Santa Fe"
+            ],
+            "correctIndex": 3,
+            "explanation": "Agustina dice 'I am from Santa Fe'; usa I porque habla de sí misma, y en inglés el sujeto es obligatorio."
+          },
+          {
+            "prompt": "¿Quién es Laura?",
+            "options": [
+              "La recepcionista",
+              "La candidata",
+              "La gerente del equipo",
+              "La hermana de Agustina"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mr. Lopez dice 'She is the manager of the team'; usa she porque Laura es una mujer de la que ya se habló antes."
+          },
+          {
+            "prompt": "¿Cuántas personas hay en el equipo?",
+            "options": [
+              "Cuatro",
+              "Tres",
+              "Dos",
+              "Cinco"
+            ],
+            "correctIndex": 0,
+            "explanation": "Laura dice 'We are a small team, only four people'; usa we porque se incluye a sí misma dentro del grupo del que habla."
+          }
+        ]
       }
     ],
     "to-be-afirmativo": [
@@ -1039,6 +1290,257 @@
             "why": "Calco del español 'tener años'; en inglés la edad se expresa con to be, no con have."
           }
         ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "We're staying at a small hotel near the beach.",
+        "alternatives": [
+          "We are staying at a small hotel near the beach."
+        ],
+        "translation": "Estamos alojados en un hotel pequeño cerca de la playa.",
+        "explanation": "We're es la contracción de we are; al escucharla rápido puede confundirse con 'where', hay que prestar atención al contexto."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "I'm responsible for the marketing team at my job.",
+        "alternatives": [
+          "I am responsible for the marketing team at my job."
+        ],
+        "translation": "Soy responsable del equipo de marketing en mi trabajo.",
+        "explanation": "I'm se pronuncia como una sola sílaba fundida; si el audio es más lento puede sonar como 'I am' separado, pero ambas formas son correctas."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "My grandmother is eighty-two years old.",
+        "alternatives": [
+          "My grandmother's eighty-two years old."
+        ],
+        "translation": "Mi abuela tiene ochenta y dos años.",
+        "explanation": "La edad en inglés se expresa con el verbo to be (is), nunca con 'have'; además, 'eighty-two' lleva guion al escribirse en letras."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "They're very quiet neighbors in this building.",
+        "alternatives": [
+          "They are very quiet neighbors in this building."
+        ],
+        "translation": "Son vecinos muy tranquilos en este edificio.",
+        "explanation": "They're es la contracción de they are; no confundir con 'their' (posesivo), que suena igual pero se escribe distinto."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "arm",
+          "am"
+        ],
+        "target": 1,
+        "meanings": [
+          "brazo",
+          "soy / estoy (verbo)"
+        ],
+        "explanation": "Am tiene una vocal corta /æ/ sin sonido de r, mientras que arm agrega un sonido de r más largo y abierto al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "is",
+          "ease"
+        ],
+        "target": 1,
+        "meanings": [
+          "es / está (verbo)",
+          "facilidad"
+        ],
+        "explanation": "Is tiene una vocal corta /ɪ/, mientras que ease tiene una vocal larga /iː/; alargá el sonido para diferenciarlas."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "are",
+          "our"
+        ],
+        "target": 0,
+        "meanings": [
+          "somos / son / sos (verbo)",
+          "nuestro / nuestra"
+        ],
+        "explanation": "Are se pronuncia con un sonido simple y largo /ɑː/, mientras que our empieza con un diptongo que suena como 'ow'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "I'm really nervous about tomorrow's interview.",
+        "translation": "Estoy realmente nervioso/a por la entrevista de mañana.",
+        "tip": "Uní 'I'm' en una sola sílaba bien corta y marcá el énfasis en la palabra 'nervous'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "She's finally feeling better after the flu.",
+        "translation": "Ella finalmente se siente mejor después de la gripe.",
+        "tip": "Pronunciá 'she's' rápido, uniendo el sonido final /z/ con la palabra que sigue, sin pausa."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "We're meeting the landlord at five o'clock.",
+        "translation": "Nos encontramos con el dueño a las cinco.",
+        "tip": "Decí 'we're meeting' como una sola unidad de sonido, sin pausa entre las dos palabras."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En una agencia de alquiler de autos en Mendoza, el empleado Martín atiende a la turista Camila, que llega a retirar su auto reservado.",
+        "lines": [
+          {
+            "speaker": "Martín",
+            "text": "Hi! Welcome to Mendoza Rent a Car. Are you Camila?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Yes, I'm Camila. I'm here to pick up my car."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Perfect. You're from Chile, right?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Yes, I'm from Santiago. I'm here for a work trip."
+          },
+          {
+            "speaker": "Martín",
+            "text": "Great! Your car is a small red car. It's very economical."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Nice! Is it automatic?"
+          },
+          {
+            "speaker": "Martín",
+            "text": "Yes, it's automatic. It's ready in the parking lot."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Thank you! I'm really happy with the service."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Camila?",
+            "options": [
+              "Córdoba",
+              "Santiago",
+              "Buenos Aires",
+              "Mendoza"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila dice 'I'm from Santiago', usando la contracción I'm (I am) para hablar de sí misma."
+          },
+          {
+            "prompt": "¿Qué tipo de auto le dan a Camila?",
+            "options": [
+              "Un auto deportivo negro",
+              "Una camioneta blanca",
+              "Un auto pequeño rojo",
+              "Un auto grande azul"
+            ],
+            "correctIndex": 2,
+            "explanation": "Martín dice 'Your car is a small red car', usando is para describir el auto, que se nombra con it."
+          },
+          {
+            "prompt": "¿El auto es automático o manual?",
+            "options": [
+              "Manual",
+              "Automático",
+              "Semiautomático",
+              "No lo dice"
+            ],
+            "correctIndex": 1,
+            "explanation": "Martín confirma 'Yes, it's automatic', usando la contracción it's (it is) para referirse al auto."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En un gimnasio de Córdoba, el recepcionista Nicolás ayuda a Valentina a inscribirse por primera vez.",
+        "lines": [
+          {
+            "speaker": "Nicolás",
+            "text": "Hi! Welcome to Córdoba Fitness. Are you here for the first time?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Yes, I'm new here. I'm Valentina."
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "Nice to meet you, Valentina. You're 22, right? It's on the form."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Yes, I'm 22 years old. I'm a student at the university."
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "Great. Our trainer is Diego. He's very experienced."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Is he friendly? I'm a bit nervous."
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "Don't worry, he's very friendly. He's great with beginners."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Perfect, I'm excited to start!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Valentina?",
+            "options": [
+              "22",
+              "23",
+              "25",
+              "21"
+            ],
+            "correctIndex": 0,
+            "explanation": "Valentina dice 'I'm 22 years old', usando la contracción I'm (I am) para expresar su edad con to be."
+          },
+          {
+            "prompt": "¿Quién es el entrenador del gimnasio?",
+            "options": [
+              "No lo dicen",
+              "Diego",
+              "Valentina",
+              "Nicolás"
+            ],
+            "correctIndex": 1,
+            "explanation": "Nicolás dice 'Our trainer is Diego. He's very experienced', usando he's (he is) para describirlo."
+          },
+          {
+            "prompt": "¿Cómo es el entrenador según Nicolás?",
+            "options": [
+              "Estricto y serio",
+              "Nuevo en el gimnasio",
+              "Ocupado todo el día",
+              "Amigable y bueno con principiantes"
+            ],
+            "correctIndex": 3,
+            "explanation": "Nicolás dice 'he's very friendly. He's great with beginners', usando he's para describir al entrenador."
+          }
+        ]
       }
     ],
     "to-be-negativo": [
@@ -1502,6 +2004,257 @@
           {
             "answer": "You no are ready for the trip, Lucía.",
             "why": "No se usa 'no' para negar el verbo to be."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "My flight isn't until six in the evening.",
+        "alternatives": [
+          "My flight is not until six in the evening."
+        ],
+        "translation": "Mi vuelo no es hasta las seis de la tarde.",
+        "explanation": "Isn't es la contracción de is not; al hablar rápido el sonido final /z/ puede perderse si no se presta atención."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "The manager isn't available this afternoon.",
+        "alternatives": [
+          "The manager is not available this afternoon."
+        ],
+        "translation": "El gerente no está disponible esta tarde.",
+        "explanation": "Con he/she/it se usa isn't; su terminación /znt/ puede confundirse con 'doesn't' si no se escucha con atención."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "I'm not feeling well today, doctor.",
+        "alternatives": [
+          "I am not feeling well today, doctor."
+        ],
+        "translation": "No me siento bien hoy, doctor.",
+        "explanation": "No existe la forma 'amn't'; para la primera persona siempre se dice I'm not o I am not."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "These neighbors aren't very noisy, luckily.",
+        "alternatives": [
+          "These neighbors are not very noisy, luckily."
+        ],
+        "translation": "Estos vecinos no son muy ruidosos, por suerte.",
+        "explanation": "Aren't es la contracción de are not, usada con you/we/they; su sonido final /nt/ se puede perder si se habla muy rápido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "not",
+          "note"
+        ],
+        "target": 0,
+        "meanings": [
+          "no (negación)",
+          "nota"
+        ],
+        "explanation": "Not tiene una vocal corta /ɒ/, mientras que note tiene un diptongo /oʊ/ más largo y una t final más suave."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "bit",
+          "bet"
+        ],
+        "target": 1,
+        "meanings": [
+          "pedacito",
+          "apuesta"
+        ],
+        "explanation": "Bit usa una vocal cerrada /ɪ/, mientras que bet usa una vocal más abierta /ɛ/; escuchá bien la altura del sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "rice",
+          "rise"
+        ],
+        "target": 1,
+        "meanings": [
+          "arroz",
+          "subir / levantarse"
+        ],
+        "explanation": "Rice termina con un sonido /s/ sordo, mientras que rise termina con un sonido /z/ sonoro; sentí la vibración en la garganta para distinguirlos."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "I'm not sure about this restaurant, Carla.",
+        "translation": "No estoy seguro/a sobre este restaurante, Carla.",
+        "tip": "Uní 'I'm not' en un solo bloque de sonido, sin pausa entre las dos palabras."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "This neighborhood isn't dangerous at all.",
+        "translation": "Este barrio no es peligroso para nada.",
+        "tip": "Marcá bien el sonido final /znt/ de 'isn't', sin perderlo aunque hables rápido."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "We aren't ready to leave yet, Martín.",
+        "translation": "No estamos listos para irnos todavía, Martín.",
+        "tip": "Pronunciá 'aren't' con una vocal larga y clara, seguida de un sonido /nt/ bien marcado."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En un taller mecánico de La Plata, la clienta Rocío habla con el mecánico Walter sobre su auto, que no arranca.",
+        "lines": [
+          {
+            "speaker": "Walter",
+            "text": "Hi Rocío! What's wrong with your car?"
+          },
+          {
+            "speaker": "Rocío",
+            "text": "It isn't starting this morning. I'm worried."
+          },
+          {
+            "speaker": "Walter",
+            "text": "Let's check the battery. Is it new?"
+          },
+          {
+            "speaker": "Rocío",
+            "text": "No, it isn't new. It's from last year."
+          },
+          {
+            "speaker": "Walter",
+            "text": "OK, the battery isn't the problem then; it's not that old. Let's check the engine."
+          },
+          {
+            "speaker": "Rocío",
+            "text": "I hope it isn't expensive to fix!"
+          },
+          {
+            "speaker": "Walter",
+            "text": "Don't worry, it isn't a big problem. We aren't going to charge much."
+          },
+          {
+            "speaker": "Rocío",
+            "text": "Great, thank you!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué problema tiene el auto de Rocío?",
+            "options": [
+              "Hace un ruido raro",
+              "No frena bien",
+              "No arranca",
+              "Tiene una rueda pinchada"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rocío dice 'It isn't starting this morning', usando isn't (is not) para negar que el auto arranque."
+          },
+          {
+            "prompt": "¿La batería del auto es nueva o vieja?",
+            "options": [
+              "No tiene batería",
+              "Es nueva, de este año",
+              "Es del año pasado",
+              "Es de hace varios años"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rocío dice 'it isn't new. It's from last year', usando isn't para negar que sea nueva."
+          },
+          {
+            "prompt": "Según Walter, ¿va a ser caro arreglar el auto?",
+            "options": [
+              "Sí, necesita un repuesto importado",
+              "No, no es un problema grande",
+              "No sabe todavía",
+              "Sí, muy caro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Walter dice 'it isn't a big problem. We aren't going to charge much', usando isn't y aren't para tranquilizar a Rocío."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En una clínica veterinaria de Rosario, el veterinario Diego revisa al perro Toby, que llegó con su dueña Carla.",
+        "lines": [
+          {
+            "speaker": "Diego",
+            "text": "Hi Carla, how is Toby today?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "He isn't eating well, and he isn't very active."
+          },
+          {
+            "speaker": "Diego",
+            "text": "Let's check him. Is he in pain?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "No, he isn't in pain, I think. He's just a little tired."
+          },
+          {
+            "speaker": "Diego",
+            "text": "OK, his temperature isn't high, that's good news."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Great! So it isn't serious?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "No, it isn't serious. He just needs more rest. We aren't worried at all."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Thank you, Diego!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué problema tiene Toby según Carla?",
+            "options": [
+              "Tiene fiebre alta",
+              "Está muy agresivo",
+              "No puede caminar",
+              "No come bien y no está activo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Carla dice 'He isn't eating well, and he isn't very active', usando isn't para negar que coma bien y que esté activo."
+          },
+          {
+            "prompt": "¿Toby tiene fiebre?",
+            "options": [
+              "Sí, tiene fiebre alta",
+              "No, su temperatura no es alta",
+              "Sí, un poco de fiebre",
+              "No lo revisaron"
+            ],
+            "correctIndex": 1,
+            "explanation": "Diego dice 'his temperature isn't high', usando isn't para negar que tenga fiebre alta."
+          },
+          {
+            "prompt": "¿Es grave la situación de Toby según Diego?",
+            "options": [
+              "Necesita cirugía",
+              "No está seguro",
+              "No, no es grave",
+              "Sí, muy grave"
+            ],
+            "correctIndex": 2,
+            "explanation": "Diego dice 'No, it isn't serious... We aren't worried at all', usando isn't y aren't para indicar que la situación no es grave."
           }
         ]
       }
@@ -2056,6 +2809,249 @@
           {
             "answer": "Is clean the bathroom?",
             "why": "El sujeto 'the bathroom' debe ir inmediatamente después del verbo 'is', no al final de la oración."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Is your new apartment close to the subway, Valentina?",
+        "alternatives": [],
+        "translation": "¿Tu departamento nuevo está cerca del subte, Valentina?",
+        "explanation": "En las preguntas con to be, el verbo is va antes del sujeto 'your new apartment'; no se agrega 'does' como en otros verbos."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Are Martina and Sofía coming to the interview too?",
+        "alternatives": [],
+        "translation": "¿Martina y Sofía también vienen a la entrevista?",
+        "explanation": "Con sujetos plurales se usa are antes del sujeto, invirtiendo el orden que tendría la oración afirmativa."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "How old is the baby, Mrs. Fernández?",
+        "alternatives": [],
+        "translation": "¿Cuántos años tiene el bebé, señora Fernández?",
+        "explanation": "Las palabras de pregunta como how old van al principio, seguidas del verbo to be y después el sujeto."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Yes, she is. She's ready for the trip to Bariloche.",
+        "alternatives": [],
+        "translation": "Sí, lo está. Está lista para el viaje a Bariloche.",
+        "explanation": "En la respuesta corta 'Yes, she is' no se contrae el verbo, pero en la oración siguiente sí se puede contraer: 'she's ready'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "fool",
+          "full"
+        ],
+        "target": 1,
+        "meanings": [
+          "tonto/a",
+          "lleno/a"
+        ],
+        "explanation": "Full tiene una vocal corta /ʊ/, mientras que fool tiene una vocal larga /uː/; alargá el sonido para distinguirlas."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "cheap",
+          "chip"
+        ],
+        "target": 0,
+        "meanings": [
+          "barato/a",
+          "papita frita"
+        ],
+        "explanation": "Chip tiene una vocal corta /ɪ/, mientras que cheap tiene una vocal larga /iː/; escuchá bien la duración del sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "sin",
+          "sing"
+        ],
+        "target": 1,
+        "meanings": [
+          "pecado",
+          "cantar"
+        ],
+        "explanation": "Sin termina con el sonido /n/ con la lengua tocando los dientes, mientras que sing termina con /ŋ/, un sonido más gutural, como en 'tango'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "Are you ready to sign the lease today?",
+        "translation": "¿Estás listo/a para firmar el contrato de alquiler hoy?",
+        "tip": "Subí la entonación al final de la pregunta, ya que es una pregunta de sí o no."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "Where is the nearest bus stop from here?",
+        "translation": "¿Dónde está la parada de colectivo más cercana desde acá?",
+        "tip": "Uní 'where is' como 'where's' al hablar rápido, y bajá el tono después de 'stop'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta imitando el ritmo.",
+        "phrase": "No, I'm not nervous about the results.",
+        "translation": "No, no estoy nervioso/a por los resultados.",
+        "tip": "Marcá bien la contracción 'I'm not' en un solo golpe de voz, con énfasis en la palabra 'nervous'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En una inmobiliaria de Mendoza, la agente Martina le muestra una casa en alquiler a Nicolás, un cliente nuevo en la ciudad.",
+        "lines": [
+          {
+            "speaker": "Martina",
+            "text": "Hi Nicolás! Welcome. Are you looking for a house or an apartment?"
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "A house, please. Is this house furnished?"
+          },
+          {
+            "speaker": "Martina",
+            "text": "Yes, it is. It has a nice kitchen too."
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "Great! How old is the house?"
+          },
+          {
+            "speaker": "Martina",
+            "text": "It's about ten years old. Is that okay for you?"
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "Yes, that's perfect. Are the neighbors friendly?"
+          },
+          {
+            "speaker": "Martina",
+            "text": "Yes, they are! What type of neighborhood do you like, quiet or lively?"
+          },
+          {
+            "speaker": "Nicolás",
+            "text": "Quiet, definitely."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Nicolás busca una casa o un departamento?",
+            "options": [
+              "Un departamento",
+              "Una casa",
+              "Un local comercial",
+              "Una oficina"
+            ],
+            "correctIndex": 1,
+            "explanation": "Nicolás responde 'A house, please' a la pregunta invertida de Martina 'Are you looking for a house or an apartment?'."
+          },
+          {
+            "prompt": "¿Cuántos años tiene la casa?",
+            "options": [
+              "Veinte años",
+              "Diez años",
+              "Cinco años",
+              "Un año"
+            ],
+            "correctIndex": 1,
+            "explanation": "Martina responde 'It's about ten years old' a la pregunta 'How old is the house?', que lleva la palabra de pregunta al principio."
+          },
+          {
+            "prompt": "¿Los vecinos son simpáticos según Martina?",
+            "options": [
+              "No, no lo son",
+              "No sabe",
+              "Son muy ruidosos",
+              "Sí, lo son"
+            ],
+            "correctIndex": 3,
+            "explanation": "Martina responde 'Yes, they are!' sin contraer, como corresponde en una respuesta corta afirmativa."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas sobre los detalles.",
+        "situation": "En una agencia de viajes de Córdoba, el agente Facundo ayuda a la clienta Sol a reservar un viaje a Ushuaia.",
+        "lines": [
+          {
+            "speaker": "Facundo",
+            "text": "Hi Sol! Are you ready to book your trip to Ushuaia?"
+          },
+          {
+            "speaker": "Sol",
+            "text": "Yes, I am! Is the flight direct?"
+          },
+          {
+            "speaker": "Facundo",
+            "text": "No, it isn't. There's a stop in Buenos Aires. Is that a problem for you?"
+          },
+          {
+            "speaker": "Sol",
+            "text": "No, it isn't. How long is the stop?"
+          },
+          {
+            "speaker": "Facundo",
+            "text": "It's only two hours. Are you traveling alone?"
+          },
+          {
+            "speaker": "Sol",
+            "text": "No, I'm not. My sister is coming too. What is the airline for this flight?"
+          },
+          {
+            "speaker": "Facundo",
+            "text": "It's Aerolíneas Argentinas. Are you excited for the trip?"
+          },
+          {
+            "speaker": "Sol",
+            "text": "Yes, I am! I can't wait."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿El vuelo de Sol es directo?",
+            "options": [
+              "No lo saben todavía",
+              "Sí, es directo",
+              "No, hace escala en Mendoza",
+              "No, hace escala en Buenos Aires"
+            ],
+            "correctIndex": 3,
+            "explanation": "Facundo responde 'No, it isn't. There's a stop in Buenos Aires' a la pregunta invertida 'Is the flight direct?'."
+          },
+          {
+            "prompt": "¿Cuánto dura la escala?",
+            "options": [
+              "Tres horas",
+              "Dos horas",
+              "Una hora",
+              "Cuatro horas"
+            ],
+            "correctIndex": 1,
+            "explanation": "Facundo responde 'It's only two hours' a la pregunta 'How long is the stop?', que ubica la palabra de pregunta al principio."
+          },
+          {
+            "prompt": "¿Sol viaja sola?",
+            "options": [
+              "No, viaja con una amiga",
+              "Sí, viaja sola",
+              "No, viaja con su madre",
+              "No, viaja con su hermana"
+            ],
+            "correctIndex": 3,
+            "explanation": "Sol responde 'No, I'm not. My sister is coming too' a la pregunta invertida 'Are you traveling alone?'."
           }
         ]
       }

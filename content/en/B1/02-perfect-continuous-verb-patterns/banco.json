@@ -1,0 +1,2937 @@
+{
+  "subtopics": {
+    "have-been-doing": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ for this job interview for almost an hour. I'm getting nervous.",
+        "options": [
+          "am waiting",
+          "have been waiting",
+          "wait",
+          "have waited"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa have been + -ing porque la espera empezó antes y continúa ahora, reforzada por 'for + período'.",
+        "optionNotes": [
+          "No marca que la acción comenzó en el pasado; solo describe el presente continuo.",
+          "Correcto: acción que empezó antes y sigue ahora, con 'for' + período de tiempo.",
+          "El presente simple no indica ninguna duración ni relación con el pasado.",
+          "El present perfect simple no enfatiza la duración continua de la espera."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Lucía ___ in Rosario since she got her new job.",
+        "options": [
+          "is living",
+          "has been living",
+          "lived",
+          "has living"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'since' + punto de inicio se necesita have/has been + -ing para marcar que la acción comenzó en ese momento y sigue.",
+        "optionNotes": [
+          "El presente continuo simple no marca desde cuándo empezó la acción.",
+          "Correcto: usa 'since' con el punto de inicio y have been + -ing.",
+          "El pasado simple no indica que la acción sigue en el presente.",
+          "Falta 'been'; la forma correcta es has been + verbo-ing."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "How long ___ for the marathon?",
+        "options": [
+          "did you train",
+          "you have been training",
+          "have you been training",
+          "are you training"
+        ],
+        "correctIndex": 2,
+        "explanation": "'How long' pregunta por la duración de una acción en curso, por eso se usa have/has been + -ing.",
+        "optionNotes": [
+          "El pasado simple no sirve para preguntar sobre una acción que todavía continúa.",
+          "El orden es incorrecto: en preguntas el auxiliar 'have' debe ir antes del sujeto.",
+          "Correcto: 'how long' con have/has been + -ing pregunta por la duración de una actividad que continúa.",
+          "No indica duración desde el pasado, solo describe la acción en curso ahora."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My neighbor ___ about the noise for two weeks, but the landlord hasn't done anything.",
+        "options": [
+          "complains",
+          "is complaining",
+          "has complained",
+          "has been complaining"
+        ],
+        "correctIndex": 3,
+        "explanation": "La queja es repetida y continúa desde hace dos semanas, por eso corresponde have been + -ing con 'for'.",
+        "optionNotes": [
+          "El presente simple no marca la duración desde un punto del pasado.",
+          "El presente continuo no indica que la acción comenzó antes y sigue.",
+          "El present perfect simple pone foco en el resultado, no en el proceso continuo y repetido.",
+          "Correcto: queja repetida que empezó hace dos semanas y sigue, con 'for' + período."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Doctor, I ___ headaches since Monday.",
+        "options": [
+          "had",
+          "'m having",
+          "'ve been having",
+          "have"
+        ],
+        "correctIndex": 2,
+        "explanation": "El síntoma comenzó el lunes y sigue presente, por lo que se usa have/has been + -ing con 'since'.",
+        "optionNotes": [
+          "El pasado simple sugiere que el síntoma ya terminó, pero en realidad continúa.",
+          "El presente continuo no marca la relación con el inicio en el pasado.",
+          "Correcto: describe un síntoma que empezó el lunes y continúa, con have been + -ing y 'since'.",
+          "El presente simple no indica que la acción comenzó en un momento pasado y sigue."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We ___ Spanish classes since March, and we can already have simple conversations.",
+        "options": [
+          "take",
+          "are taking",
+          "have been taking",
+          "took"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las clases empezaron en marzo y continúan, por eso se usa have been + -ing con 'since'.",
+        "optionNotes": [
+          "El presente simple no expresa duración desde un punto del pasado.",
+          "El presente continuo no indica desde cuándo empezó la acción.",
+          "Correcto: have been taking + 'since' marca el inicio en marzo y la continuidad de las clases.",
+          "El pasado simple implicaría que las clases ya terminaron."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I ___ (look) for a new apartment for three months, but I haven't found anything yet.",
+        "hint": "(look)",
+        "answers": [
+          "have been looking",
+          "'ve been looking"
+        ],
+        "explanation": "Se usa have been + -ing con 'for + período' porque la búsqueda empezó hace tres meses y todavía continúa.",
+        "wrongAnswers": [
+          {
+            "answer": "am looking",
+            "why": "No indica que la acción empezó hace tres meses y continúa; falta have been + -ing."
+          },
+          {
+            "answer": "looked",
+            "why": "El pasado simple sugiere que la búsqueda ya terminó, pero en realidad sigue buscando."
+          },
+          {
+            "answer": "look",
+            "why": "El presente simple no expresa duración desde el pasado ni continuidad de la acción."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Marcos ___ (run) every morning since January, and he feels much healthier now.",
+        "hint": "(run)",
+        "answers": [
+          "has been running",
+          "Marcos's been running"
+        ],
+        "explanation": "Con 'since January' se necesita has been + -ing para mostrar que la actividad empezó en ese momento y continúa.",
+        "wrongAnswers": [
+          {
+            "answer": "runs",
+            "why": "No marca el inicio en enero ni la continuidad de la actividad hasta ahora."
+          },
+          {
+            "answer": "is running",
+            "why": "El presente continuo no conecta la acción con su comienzo en el pasado."
+          },
+          {
+            "answer": "ran",
+            "why": "El pasado simple implica que la acción terminó, pero en realidad sigue corriendo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "How long ___ (wait) here? The doctor is really late today.",
+        "hint": "(wait)",
+        "answers": [
+          "have you been waiting"
+        ],
+        "explanation": "'How long' con have/has been + -ing pregunta por la duración de una acción que sigue en curso.",
+        "wrongAnswers": [
+          {
+            "answer": "are you waiting",
+            "why": "No pregunta por la duración de la espera desde que comenzó."
+          },
+          {
+            "answer": "did you wait",
+            "why": "El pasado simple no sirve para preguntar por una acción que todavía continúa."
+          },
+          {
+            "answer": "you have been waiting",
+            "why": "El orden es incorrecto en una pregunta; el auxiliar 'have' debe ir antes del sujeto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "We ___ (not / sleep) well since the neighbors moved in last month.",
+        "hint": "(not / sleep)",
+        "answers": [
+          "haven't been sleeping",
+          "have not been sleeping"
+        ],
+        "explanation": "Con 'since' + punto de inicio se usa have/has been + -ing en forma negativa para describir un problema que continúa.",
+        "wrongAnswers": [
+          {
+            "answer": "don't sleep",
+            "why": "El presente simple no indica que el problema empezó en el pasado y continúa."
+          },
+          {
+            "answer": "didn't sleep",
+            "why": "El pasado simple sugiere que el problema ya terminó, pero sigue sin dormir bien."
+          },
+          {
+            "answer": "aren't sleeping",
+            "why": "Falta el auxiliar 'have'; esta forma no conecta la acción con su inicio en el pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Sofía ___ (apply) for jobs for six months, but she hasn't had any luck yet.",
+        "hint": "(apply)",
+        "answers": [
+          "has been applying",
+          "Sofía's been applying"
+        ],
+        "explanation": "Se usa has been + -ing con 'for + período' porque la búsqueda de trabajo empezó hace seis meses y continúa.",
+        "wrongAnswers": [
+          {
+            "answer": "applies",
+            "why": "El presente simple no expresa la duración de la búsqueda desde hace seis meses."
+          },
+          {
+            "answer": "applied",
+            "why": "El pasado simple implicaría que dejó de buscar trabajo, pero en realidad sigue intentando."
+          },
+          {
+            "answer": "is applying",
+            "why": "El presente continuo no indica desde cuándo comenzó la acción."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I ___ (study) English since I was a teenager, and I still enjoy it.",
+        "hint": "(study)",
+        "answers": [
+          "have been studying",
+          "'ve been studying"
+        ],
+        "explanation": "Con 'since' + punto de inicio en el pasado se usa have been + -ing para mostrar que la acción continúa hasta hoy.",
+        "wrongAnswers": [
+          {
+            "answer": "study",
+            "why": "El presente simple no marca que la acción comenzó en el pasado y continúa."
+          },
+          {
+            "answer": "studied",
+            "why": "El pasado simple sugiere que ya terminó de estudiar, pero en realidad sigue haciéndolo."
+          },
+          {
+            "answer": "am studying",
+            "why": "El presente continuo no conecta la acción con su inicio en la adolescencia."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has been working at that company for five years.",
+        "alternatives": [
+          "For five years, she has been working at that company."
+        ],
+        "translation": "Hace cinco años que ella trabaja en esa empresa.",
+        "explanation": "Have/has been + -ing con 'for + período' describe una actividad que empezó en el pasado y continúa hasta ahora.",
+        "tokens": [
+          "years",
+          "that",
+          "has",
+          "working",
+          "for",
+          "five",
+          "company",
+          "at",
+          "She",
+          "been"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "How long have you been learning English?",
+        "alternatives": [],
+        "translation": "¿Hace cuánto que estás aprendiendo inglés?",
+        "explanation": "En preguntas con 'how long', el auxiliar 'have' va antes del sujeto, seguido de 'been' y el verbo en -ing.",
+        "tokens": [
+          "English",
+          "How",
+          "learning",
+          "you",
+          "long",
+          "have",
+          "been"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We have been waiting for the bus since eight o'clock.",
+        "alternatives": [
+          "Since eight o'clock, we have been waiting for the bus."
+        ],
+        "translation": "Estamos esperando el colectivo desde las ocho.",
+        "explanation": "'Since' se usa con el punto de inicio (eight o'clock) junto con have been + -ing para marcar una acción que continúa.",
+        "tokens": [
+          "waiting",
+          "for",
+          "We",
+          "bus",
+          "eight",
+          "been",
+          "since",
+          "o'clock",
+          "have",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "My neighbors have been renovating their kitchen for two months.",
+        "alternatives": [
+          "For two months, my neighbors have been renovating their kitchen."
+        ],
+        "translation": "Hace dos meses que mis vecinos están renovando la cocina.",
+        "explanation": "'For + período' acompaña a have been + -ing cuando se habla de la duración de una obra que todavía no terminó.",
+        "tokens": [
+          "have",
+          "kitchen",
+          "neighbors",
+          "months",
+          "My",
+          "been",
+          "their",
+          "renovating",
+          "for",
+          "two"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Have you been feeling okay since the surgery?",
+        "alternatives": [],
+        "translation": "¿Te sentís bien desde la cirugía?",
+        "explanation": "En preguntas, 'have' se coloca antes del sujeto, seguido de 'been' y el verbo en -ing, para preguntar por algo que continúa desde un punto del pasado.",
+        "tokens": [
+          "been",
+          "okay",
+          "the",
+          "since",
+          "you",
+          "feeling",
+          "surgery",
+          "Have"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con present perfect continuous en la oración.",
+        "sentence": "I am waiting for you for an hour, where were you?",
+        "answers": [
+          "I've been waiting for you for an hour, where were you?",
+          "I have been waiting for you for an hour, where were you?"
+        ],
+        "explanation": "Cuando una acción empezó antes y sigue ahora, se usa have/has been + -ing, no el presente continuo simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I am waiting for you since an hour, where were you?",
+            "why": "Cambia 'for' por 'since', pero el error real es el tiempo verbal; además 'since' no se usa con períodos como 'an hour'."
+          },
+          {
+            "answer": "I was waiting for you for an hour, where were you?",
+            "why": "El pasado simple no conecta la espera con el presente; la acción todavía continúa ahora."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con present perfect continuous en la oración.",
+        "sentence": "We've been living here since two years.",
+        "answers": [
+          "We've been living here for two years.",
+          "We have been living here for two years."
+        ],
+        "explanation": "Con un período de tiempo (two years) se usa 'for'; 'since' se reserva para un punto de inicio como una fecha o momento.",
+        "wrongAnswers": [
+          {
+            "answer": "We've been living here since 2022.",
+            "why": "Cambia el período por una fecha inventada; el error original era la preposición, no el dato temporal."
+          },
+          {
+            "answer": "We lived here since two years.",
+            "why": "Cambia el tiempo verbal a pasado simple y no corrige el uso incorrecto de 'since' con un período."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con present perfect continuous en la oración.",
+        "sentence": "She has been work at the hospital for ten years.",
+        "answers": [
+          "She has been working at the hospital for ten years."
+        ],
+        "explanation": "La estructura have/has been siempre va seguida del verbo en su forma -ing, no en infinitivo ni en participio.",
+        "wrongAnswers": [
+          {
+            "answer": "She has work at the hospital for ten years.",
+            "why": "Quita 'been', pero la forma correcta necesita have/has + been + verbo en -ing."
+          },
+          {
+            "answer": "She has been worked at the hospital for ten years.",
+            "why": "Usa el participio pasado 'worked' en vez del gerundio 'working', que es lo que exige esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con present perfect continuous en la oración.",
+        "sentence": "How long has Martín been study for the exam?",
+        "answers": [
+          "How long has Martín been studying for the exam?"
+        ],
+        "explanation": "Después de have/has been siempre va el verbo con -ing, por eso 'study' debe convertirse en 'studying'.",
+        "wrongAnswers": [
+          {
+            "answer": "How long has Martín studying for the exam?",
+            "why": "Elimina 'been', que es necesario entre have/has y el verbo en -ing."
+          },
+          {
+            "answer": "How long is Martín being study for the exam?",
+            "why": "Cambia toda la estructura verbal de forma incorrecta; esta forma no existe en inglés."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con present perfect continuous en la oración.",
+        "sentence": "They have been arguing about the rent since three days.",
+        "answers": [
+          "They have been arguing about the rent for three days."
+        ],
+        "explanation": "Con un período de tiempo como 'three days' corresponde usar 'for', no 'since'.",
+        "wrongAnswers": [
+          {
+            "answer": "They have been arguing about the rent since Monday.",
+            "why": "Cambia el dato original (three days) por un punto de inicio inventado; el error era solo la preposición."
+          },
+          {
+            "answer": "They argued about the rent since three days.",
+            "why": "Cambia el tiempo verbal a pasado simple y no corrige el uso incorrecto de 'since' con un período."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect continuous.",
+        "spanish": "Hace dos horas que te espero en la puerta del cine.",
+        "answers": [
+          "I've been waiting for you at the cinema entrance for two hours.",
+          "I have been waiting for you at the cinema entrance for two hours.",
+          "I've been waiting for you outside the cinema for two hours."
+        ],
+        "explanation": "El 'hace + tiempo + que' del español se traduce con have/has been + -ing y 'for' cuando se indica un período de duración.",
+        "wrongAnswers": [
+          {
+            "answer": "I wait for you at the cinema entrance for two hours.",
+            "why": "Es un calco del presente simple en español; en inglés se necesita have been + -ing para una acción que empezó antes y continúa."
+          },
+          {
+            "answer": "I am waiting for you at the cinema entrance since two hours.",
+            "why": "Usa 'since' con un período de tiempo; debe usarse 'for' con duraciones como 'two hours'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect continuous.",
+        "spanish": "¿Hace cuánto que estudiás inglés?",
+        "answers": [
+          "How long have you been studying English?",
+          "How long have you been learning English?"
+        ],
+        "explanation": "'Hace cuánto que' se traduce como 'how long have/has you been' + verbo en -ing para preguntar por la duración de una acción.",
+        "wrongAnswers": [
+          {
+            "answer": "How much time do you study English?",
+            "why": "Es un calco literal de 'cuánto tiempo'; la pregunta natural en inglés usa 'how long' con present perfect continuous."
+          },
+          {
+            "answer": "Since when are you studying English?",
+            "why": "Mezcla estructuras; la pregunta natural en inglés usa 'how long have you been', no 'since when are you'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect continuous.",
+        "spanish": "Mi hermana trabaja en ese hospital desde 2020.",
+        "answers": [
+          "My sister has been working at that hospital since 2020.",
+          "My sister's been working at that hospital since 2020."
+        ],
+        "explanation": "El presente simple del español ('trabaja desde 2020') se traduce con has/have been + -ing cuando la acción empezó en el pasado y continúa.",
+        "wrongAnswers": [
+          {
+            "answer": "My sister works at that hospital since 2020.",
+            "why": "El presente simple no puede combinarse con 'since'; se necesita present perfect continuous."
+          },
+          {
+            "answer": "My sister is working at that hospital since 2020.",
+            "why": "El presente continuo tampoco se combina con 'since' para marcar duración desde un punto del pasado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect continuous.",
+        "spanish": "Estamos esperando al plomero desde las nueve de la mañana.",
+        "answers": [
+          "We've been waiting for the plumber since nine in the morning.",
+          "We have been waiting for the plumber since nine in the morning.",
+          "We've been waiting for the plumber since nine a.m."
+        ],
+        "explanation": "'Since' + punto de inicio exige have/has been + -ing para mostrar que la espera comenzó a esa hora y continúa.",
+        "wrongAnswers": [
+          {
+            "answer": "We are waiting for the plumber since nine in the morning.",
+            "why": "El presente continuo no se usa con 'since' para indicar el inicio de una acción que todavía sigue."
+          },
+          {
+            "answer": "We wait for the plumber since nine in the morning.",
+            "why": "El presente simple no expresa continuidad desde un punto pasado; falta have been + -ing."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect continuous.",
+        "spanish": "¿Por qué tenés las manos tan sucias? Estuve arreglando el auto.",
+        "answers": [
+          "I've been fixing the car.",
+          "I have been fixing the car."
+        ],
+        "explanation": "Have/has been + -ing también se usa para explicar un resultado visible ahora, como las manos sucias por una actividad reciente.",
+        "wrongAnswers": [
+          {
+            "answer": "I fixed the car.",
+            "why": "El pasado simple no explica un resultado visible ahora; se necesita present perfect continuous para justificar el estado actual."
+          },
+          {
+            "answer": "I am fixing the car.",
+            "why": "El presente continuo no conecta la actividad pasada con el resultado visible en el presente."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando present perfect continuous.",
+        "spanish": "Hace tres meses que busco departamento, pero todavía no encontré nada.",
+        "answers": [
+          "I've been looking for an apartment for three months, but I still haven't found anything.",
+          "I have been looking for an apartment for three months, but I haven't found anything yet."
+        ],
+        "explanation": "'Hace + tiempo + que' se traduce con have/has been + -ing y 'for' para mostrar que la búsqueda sigue sin resultado.",
+        "wrongAnswers": [
+          {
+            "answer": "I look for an apartment for three months, but I didn't find anything.",
+            "why": "El presente simple no expresa la duración desde hace tres meses ni la continuidad de la búsqueda."
+          },
+          {
+            "answer": "I searched an apartment for three months, but I don't find anything.",
+            "why": "Mezcla tiempos de forma incorrecta y falta la preposición 'for' antes de 'apartment', además de usar mal el verbo 'search'."
+          }
+        ]
+      }
+    ],
+    "simple-vs-continuo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I ___ three reports this morning, and I still have two more to do.",
+        "options": [
+          "am writing",
+          "have written",
+          "have been writing",
+          "write"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando se menciona una cantidad específica ('three reports'), se usa present perfect simple para destacar el resultado.",
+        "optionNotes": [
+          "Incorrecto: el presente continuo no corresponde, se necesita present perfect.",
+          "Correcto: la cantidad 'three reports' pide present perfect simple.",
+          "Incorrecto: con cantidades específicas se usa el simple, no el continuo.",
+          "Incorrecto: el presente simple no conecta la acción con el momento actual."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "My hands are covered in paint because I ___ the office walls all afternoon.",
+        "options": [
+          "have been painting",
+          "am painting",
+          "paint",
+          "have painted"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando se describe la actividad en sí y su duración como explicación de un resultado visible, se usa present perfect continuo.",
+        "optionNotes": [
+          "Correcto: describe la actividad continua que explica por qué tengo pintura en las manos.",
+          "Incorrecto: el presente continuo no conecta la acción pasada con el presente como lo hace el present perfect.",
+          "Incorrecto: el presente simple no corresponde en este contexto.",
+          "Incorrecto: enfoca el resultado/cantidad terminada, no la actividad en curso como causa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Clara ___ her neighbor for fifteen years, but they've never had dinner together.",
+        "options": [
+          "has been knowing",
+          "has known",
+          "knows",
+          "is knowing"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Know' es un verbo de estado y no se usa en continuo; con 'for + período' se usa present perfect simple.",
+        "optionNotes": [
+          "Incorrecto: los verbos de estado como 'know' no se usan en continuo.",
+          "Correcto: 'know' es un verbo de estado, se usa en present perfect simple.",
+          "Incorrecto: el presente simple no indica la duración desde el pasado hasta ahora.",
+          "Incorrecto: los verbos de estado no se usan en continuo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "How many countries ___ this year?",
+        "options": [
+          "are you visiting",
+          "have you been visiting",
+          "do you visit",
+          "have you visited"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'how many' se pregunta por una cantidad, y las cantidades se expresan con present perfect simple.",
+        "optionNotes": [
+          "Incorrecto: el presente continuo no corresponde para preguntar por una cantidad con present perfect.",
+          "Incorrecto: con cantidades se usa el simple, no el continuo.",
+          "Incorrecto: el presente simple no corresponde para preguntar por un resultado acumulado hasta ahora.",
+          "Correcto: 'how many' pide una cantidad, se usa el simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "My back hurts because I ___ furniture up the stairs all morning.",
+        "options": [
+          "am carrying",
+          "have carried",
+          "have been carrying",
+          "carry"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando se describe la actividad en curso y su duración como causa de un efecto físico visible en el presente (el dolor de espalda), se usa present perfect continuo.",
+        "optionNotes": [
+          "Incorrecto: el presente continuo no conecta la acción pasada con el presente como lo hace el present perfect.",
+          "Incorrecto: enfoca el resultado/cantidad terminada, no la actividad en curso como causa del dolor actual.",
+          "Correcto: describe la actividad continua que explica por qué me duele la espalda ahora.",
+          "Incorrecto: el presente simple no corresponde para conectar una actividad pasada con un efecto presente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "We ___ about this apartment three times this month because of the noisy neighbors.",
+        "options": [
+          "have been complaining",
+          "are complaining",
+          "complain",
+          "have complained"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con una cantidad específica ('three times') se usa present perfect simple, no continuo.",
+        "optionNotes": [
+          "Incorrecto: con cantidades se usa el simple, no el continuo.",
+          "Incorrecto: el presente continuo no corresponde para expresar una cantidad con present perfect.",
+          "Incorrecto: el presente simple no conecta la acción con el momento actual.",
+          "Correcto: 'three times' es una cantidad, se usa el simple."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I ___ (apply) for five jobs this month, but I haven't had any interviews yet.",
+        "hint": "(apply)",
+        "answers": [
+          "have applied"
+        ],
+        "explanation": "Cuando se menciona una cantidad específica se usa present perfect simple para destacar el resultado.",
+        "wrongAnswers": [
+          {
+            "answer": "have been applying",
+            "why": "Con una cantidad específica ('five jobs') se usa present perfect simple, no continuo."
+          },
+          {
+            "answer": "applied",
+            "why": "El pasado simple no conecta la acción con el presente, pero 'this month' aún no terminó."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "Sorry I'm late, I ___ (look) for parking for twenty minutes!",
+        "hint": "(look)",
+        "answers": [
+          "have been looking"
+        ],
+        "explanation": "Present perfect continuo expresa la actividad en curso y su duración.",
+        "wrongAnswers": [
+          {
+            "answer": "have looked",
+            "why": "Cuando se enfatiza la actividad y su duración se usa present perfect continuo, no el simple."
+          },
+          {
+            "answer": "looked",
+            "why": "El pasado simple no conecta la búsqueda con el momento actual en que sigo buscando o acabo de encontrar lugar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "Sofía ___ (like) this neighborhood since she moved here.",
+        "hint": "(like)",
+        "answers": [
+          "has liked"
+        ],
+        "explanation": "Los verbos de estado como 'like' solo se usan en present perfect simple, nunca en continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "has been liking",
+            "why": "'Like' es un verbo de estado y no se usa en continuo."
+          },
+          {
+            "answer": "likes",
+            "why": "El presente simple no indica desde cuándo le gusta el barrio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "We ___ (visit) three museums since we arrived in Buenos Aires.",
+        "hint": "(visit)",
+        "answers": [
+          "have visited"
+        ],
+        "explanation": "Cuando se menciona una cantidad específica se usa present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "have been visiting",
+            "why": "Con una cantidad específica ('three museums') se usa present perfect simple, no continuo."
+          },
+          {
+            "answer": "visited",
+            "why": "El pasado simple no conecta la acción con el presente de nuestra estadía actual."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I ___ (feel) dizzy all day, so I think I should see a doctor.",
+        "hint": "(feel)",
+        "answers": [
+          "have been feeling",
+          "have felt"
+        ],
+        "explanation": "El verbo 'feel' admite tanto el present perfect simple como el continuo para describir una sensación que dura en el tiempo, de forma similar a 'live/work/study'.",
+        "wrongAnswers": [
+          {
+            "answer": "feel",
+            "why": "El presente simple no conecta la sensación con 'all day' desde el pasado hasta ahora."
+          },
+          {
+            "answer": "am feeling",
+            "why": "El presente continuo no indica la duración desde el pasado hasta el presente, que es lo que pide el present perfect."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "The landlord ___ (not fix) the leak, even though I've called him twice.",
+        "hint": "(not fix)",
+        "answers": [
+          "hasn't fixed",
+          "has not fixed"
+        ],
+        "explanation": "Cuando se destaca el resultado (que no se arregló) se usa present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "hasn't been fixing",
+            "why": "El resultado ('no arreglado') requiere present perfect simple, no continuo."
+          },
+          {
+            "answer": "didn't fix",
+            "why": "El pasado simple no conecta la falta de arreglo con la situación actual."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I've written three emails this morning.",
+        "alternatives": [
+          "This morning I've written three emails."
+        ],
+        "translation": "Escribí tres mails esta mañana.",
+        "explanation": "La cantidad específica ('three emails') pide present perfect simple para destacar el resultado.",
+        "tokens": [
+          "this",
+          "three",
+          "emails",
+          "written",
+          "morning",
+          "I've"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I've been painting the kitchen all weekend.",
+        "alternatives": [
+          "All weekend I've been painting the kitchen."
+        ],
+        "translation": "Estuve pintando la cocina todo el fin de semana.",
+        "explanation": "Present perfect continuo expresa la actividad y su duración, sin enfocarse en el resultado.",
+        "tokens": [
+          "I've",
+          "all",
+          "painting",
+          "the",
+          "kitchen",
+          "weekend",
+          "been"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We've known each other since elementary school.",
+        "alternatives": [
+          "Since elementary school, we've known each other."
+        ],
+        "translation": "Nos conocemos desde la primaria.",
+        "explanation": "'Know' es un verbo de estado y solo se usa en present perfect simple, nunca en continuo.",
+        "tokens": [
+          "other",
+          "since",
+          "each",
+          "We've",
+          "school",
+          "elementary",
+          "known"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "How many pages have you read so far?",
+        "alternatives": [
+          "So far, how many pages have you read?"
+        ],
+        "translation": "¿Cuántas páginas leíste hasta ahora?",
+        "explanation": "Con 'how many' se pregunta por una cantidad, y las cantidades se expresan con present perfect simple.",
+        "tokens": [
+          "you",
+          "read",
+          "pages",
+          "How",
+          "far",
+          "so",
+          "many",
+          "have"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has been looking for a new job for months.",
+        "alternatives": [
+          "For months she has been looking for a new job."
+        ],
+        "translation": "Ella está buscando un trabajo nuevo hace meses.",
+        "explanation": "Present perfect continuo expresa la actividad en curso y su duración, sin destacar un resultado terminado.",
+        "tokens": [
+          "been",
+          "new",
+          "job",
+          "has",
+          "looking",
+          "a",
+          "for",
+          "She",
+          "for",
+          "months"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect simple o continuo.",
+        "sentence": "I've been knowing him for ten years.",
+        "answers": [
+          "I've known him for ten years.",
+          "I have known him for ten years."
+        ],
+        "explanation": "'Know' es un verbo de estado y no se usa en continuo; se necesita present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I've been knowing him since ten years.",
+            "why": "No corrige el verdadero error (el verbo de estado 'know' no va en continuo) y además usa mal 'since' con un período de tiempo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect simple o continuo.",
+        "sentence": "I've been reading five books this month.",
+        "answers": [
+          "I've read five books this month.",
+          "I have read five books this month."
+        ],
+        "explanation": "Con una cantidad específica ('five books') se usa present perfect simple, no continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "I read five books this month.",
+            "why": "Cambia a pasado simple, perdiendo la conexión con el presente, ya que 'this month' todavía no terminó."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect simple o continuo.",
+        "sentence": "Diego has been finishing four exams this week.",
+        "answers": [
+          "Diego has finished four exams this week."
+        ],
+        "explanation": "Con una cantidad específica ('four exams') se usa present perfect simple, no continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "Diego finished four exams this week.",
+            "why": "Cambia a pasado simple, perdiendo la conexión con el presente, ya que 'this week' todavía no terminó."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect simple o continuo.",
+        "sentence": "The landlord has been owning this building for twenty years.",
+        "answers": [
+          "The landlord has owned this building for twenty years."
+        ],
+        "explanation": "'Own' es un verbo de estado y no se usa en continuo; se necesita present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord owns this building for twenty years.",
+            "why": "El presente simple no se combina con 'for + período' para expresar que la situación continúa; se necesita present perfect."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con present perfect simple o continuo.",
+        "sentence": "She has been visiting five countries this year.",
+        "answers": [
+          "She has visited five countries this year."
+        ],
+        "explanation": "Con una cantidad específica ('five countries') se usa present perfect simple, no continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "She visited five countries this year.",
+            "why": "Cambia a pasado simple, perdiendo la conexión con el presente, ya que 'this year' todavía no terminó."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Escribí tres informes esta mañana, y todavía tengo dos más para hacer.",
+        "answers": [
+          "I've written three reports this morning, and I still have two more to do.",
+          "I have written three reports this morning, and I still have two more to do."
+        ],
+        "explanation": "La cantidad específica ('three reports') pide present perfect simple para destacar el resultado.",
+        "wrongAnswers": [
+          {
+            "answer": "I've been writing three reports this morning, and I still have two more to do.",
+            "why": "Con una cantidad específica ('three reports') se usa present perfect simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nos conocemos desde la primaria.",
+        "answers": [
+          "We've known each other since elementary school.",
+          "We have known each other since elementary school."
+        ],
+        "explanation": "Los verbos de estado como 'know' solo se usan en present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "We've been knowing each other since elementary school.",
+            "why": "'Know' es un verbo de estado y no se usa en continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estoy agotada porque estuve limpiando la casa toda la tarde.",
+        "answers": [
+          "I'm exhausted because I've been cleaning the house all afternoon.",
+          "I am exhausted because I have been cleaning the house all afternoon."
+        ],
+        "explanation": "Present perfect continuo expresa la actividad y su duración como explicación de un estado actual (el cansancio).",
+        "wrongAnswers": [
+          {
+            "answer": "I'm exhausted because I've cleaned the house all afternoon.",
+            "why": "Para enfatizar la actividad y su duración ('toda la tarde') se usa present perfect continuo, no el simple centrado en el resultado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Cuántos mails le mandaste al cliente hoy?",
+        "answers": [
+          "How many emails have you sent the client today?",
+          "How many emails have you sent to the client today?"
+        ],
+        "explanation": "Con 'how many' se pregunta por una cantidad, así que se usa present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "How many emails have you been sending the client today?",
+            "why": "Con 'how many' se pregunta por una cantidad, y las cantidades requieren present perfect simple, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El dueño tiene este edificio hace veinte años.",
+        "answers": [
+          "The landlord has owned this building for twenty years."
+        ],
+        "explanation": "Los verbos de estado como 'own' solo se usan en present perfect simple, nunca en continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord has been owning this building for twenty years.",
+            "why": "'Own' es un verbo de estado y no se usa en continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Me duele la cabeza desde ayer, y está empeorando.",
+        "answers": [
+          "I've had a headache since yesterday, and it's getting worse.",
+          "I have had a headache since yesterday, and it's getting worse."
+        ],
+        "explanation": "Cuando 'have' significa 'tener/sentir' algo, funciona como verbo de estado y se usa en present perfect simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I've been having a headache since yesterday, and it's getting worse.",
+            "why": "'Have' en el sentido de sentir o poseer un dolor es un verbo de estado y no suele usarse en continuo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Sofía moved into her new apartment in Rosario last month, and she has been fixing it up every weekend. Her friend Valentina calls to see how things are going.\n\n'How's the apartment?' Valentina asks.\n\n'I've been painting the living room all afternoon,' Sofía says. 'My arms are so tired! I've painted two walls so far, but I still have one more to do.'\n\n'That's a lot of work! Have you finished the kitchen yet?'\n\n'Yes, I finished it last weekend,' Sofía replies. 'I've also been looking for new curtains online, but I haven't found anything I like.'\n\n'What about the landlord? Did he fix the broken window?'\n\n'He's been promising to send someone for two weeks, but nobody has come yet,' Sofía says, sounding frustrated. 'I've called him three times already this month.'\n\n'Wow, that's annoying. Do you want help with the painting this weekend?'\n\n'Yes, please! I've been doing this alone, and I'm exhausted. Come over on Saturday!'",
+        "questions": [
+          {
+            "prompt": "How many walls has Sofía painted so far?",
+            "options": [
+              "One",
+              "Two",
+              "All of them",
+              "Three"
+            ],
+            "correctIndex": 1,
+            "explanation": "Con cantidades específicas ('two walls') se usa el present perfect simple para indicar el resultado logrado hasta ahora."
+          },
+          {
+            "prompt": "What does 'He's been promising to send someone for two weeks' show about the landlord?",
+            "options": [
+              "He finished fixing the window two weeks ago.",
+              "He sent someone two weeks ago.",
+              "He called Sofía three times this month.",
+              "He has been saying this repeatedly, but nothing has happened yet."
+            ],
+            "correctIndex": 3,
+            "explanation": "El present perfect continuo ('has been promising') destaca la actividad repetida y su duración, a diferencia del simple que marca un resultado logrado."
+          },
+          {
+            "prompt": "Did Sofía finish fixing up the kitchen?",
+            "options": [
+              "No, she is still working on it.",
+              "Yes, she finished it last weekend.",
+              "Valentina finished it for her.",
+              "She hasn't started it yet."
+            ],
+            "correctIndex": 1,
+            "explanation": "El present perfect simple ('finished') se usa porque la acción ya terminó por completo y tiene un resultado claro."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Martín has a big exam next week, and he's been studying every night after work. His sister Flor calls him to check how he's doing.\n\n'How's the studying going?' Flor asks.\n\n'I've been reading about the immune system all week,' Martín says. 'It's a lot of information! I've read three chapters so far, and I still have two more.'\n\n'That sounds exhausting. Have you finished the practice questions?'\n\n'Not yet. I've been doing them slowly because some topics are really difficult,' Martín explains. 'But I've already answered fifty questions.'\n\n'Do you know Dr. Herrera? Didn't she teach that course?'\n\n'Yes, I've known her for years. She was my teacher in 2019,' Martín says. 'She's been helping me with some tricky topics this week too.'\n\n'That's great. Are you sleeping enough?'\n\n'Not really. I've been staying up late every night, and I'm starting to feel tired,' Martín admits. 'But I've learned a lot, so it's worth it.'\n\n'Good luck! You'll do great.'",
+        "questions": [
+          {
+            "prompt": "How many chapters has Martín read so far?",
+            "options": [
+              "Fifty",
+              "Three",
+              "Five",
+              "Two"
+            ],
+            "correctIndex": 1,
+            "explanation": "Con un número específico ('three chapters') se usa el present perfect simple para marcar el resultado alcanzado hasta el momento."
+          },
+          {
+            "prompt": "Why does Martín say 'I've known her for years' instead of 'I've been knowing her for years'?",
+            "options": [
+              "Because 'know' is a stative verb and doesn't normally take the continuous form.",
+              "Because the action finished a long time ago.",
+              "Because 'years' always requires the simple form.",
+              "Because Dr. Herrera is not important anymore."
+            ],
+            "correctIndex": 0,
+            "explanation": "Los verbos de estado como 'know' casi nunca se usan en continuo; con ellos siempre va el present perfect simple."
+          },
+          {
+            "prompt": "What does 'I've been staying up late every night' emphasize?",
+            "options": [
+              "That he only stayed up once.",
+              "The ongoing activity and its duration, not a finished result.",
+              "The exact number of nights he stayed up.",
+              "That he finished studying completely."
+            ],
+            "correctIndex": 1,
+            "explanation": "El present perfect continuo destaca la actividad y su duración repetida, en vez de un resultado o cantidad terminada."
+          }
+        ]
+      }
+    ],
+    "ing-o-to": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Marina suggested ___ the meeting to Friday.",
+        "options": [
+          "to move",
+          "moved",
+          "moving",
+          "move"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'suggest' siempre va la forma en -ing, nunca 'to + infinitivo'.",
+        "optionNotes": [
+          "Incorrecto: 'suggest' no se usa con 'to + infinitivo'.",
+          "Incorrecto: el pasado simple no corresponde como segundo verbo después de 'suggested'.",
+          "Correcto: 'suggest' siempre va seguido de -ing.",
+          "Incorrecto: falta la forma en -ing después de 'suggest'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "We've decided ___ to Bariloche for our vacation.",
+        "options": [
+          "to go",
+          "went",
+          "go",
+          "going"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'decide' siempre va 'to + infinitivo', nunca la forma en -ing.",
+        "optionNotes": [
+          "Correcto: 'decide' siempre va seguido de 'to + infinitivo'.",
+          "Incorrecto: el pasado simple no corresponde como segundo verbo después de 'decided'.",
+          "Incorrecto: falta el 'to' antes del infinitivo.",
+          "Incorrecto: 'decide' no se usa con la forma en -ing."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "The doctor told me ___ eating so much sugar.",
+        "options": [
+          "stop",
+          "to stop",
+          "stopping",
+          "stopped"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'tell', la estructura es objeto + 'to + infinitivo': 'tell someone to do something'.",
+        "optionNotes": [
+          "Incorrecto: falta el 'to' antes del infinitivo.",
+          "Correcto: 'tell someone to do something' necesita 'to + infinitivo'.",
+          "Incorrecto: 'tell' con objeto no se usa con la forma en -ing.",
+          "Incorrecto: el pasado simple no corresponde como segundo verbo en esta estructura."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I can't stand ___ with noisy neighbors.",
+        "options": [
+          "live",
+          "to live",
+          "lived",
+          "living"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Can't stand' siempre va seguido de la forma en -ing, nunca de 'to + infinitivo'.",
+        "optionNotes": [
+          "Incorrecto: falta la forma en -ing después de 'can't stand'.",
+          "Incorrecto: 'can't stand' no se usa con 'to + infinitivo'.",
+          "Incorrecto: el pasado simple no corresponde como segundo verbo aquí.",
+          "Correcto: 'can't stand' siempre va seguido de -ing."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I'm looking forward to ___ you at the interview tomorrow.",
+        "options": [
+          "saw",
+          "see",
+          "seeing",
+          "to see"
+        ],
+        "correctIndex": 2,
+        "explanation": "En 'look forward to', el 'to' es una preposición, así que va seguido de -ing.",
+        "optionNotes": [
+          "Incorrecto: el pasado simple no corresponde como segundo verbo aquí.",
+          "Incorrecto: falta la forma en -ing después de la preposición 'to'.",
+          "Correcto: el 'to' de 'look forward to' es preposición, va seguido de -ing.",
+          "Incorrecto: se confunde el 'to' preposicional con el 'to' del infinitivo; aquí no corresponde."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Pablo finally gave up ___ for a new job.",
+        "options": [
+          "look",
+          "to look",
+          "looking",
+          "looked"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Give up' siempre va seguido de la forma en -ing, nunca de 'to + infinitivo'.",
+        "optionNotes": [
+          "Incorrecto: falta la forma en -ing después de 'give up'.",
+          "Incorrecto: 'give up' no se usa con 'to + infinitivo'.",
+          "Correcto: 'give up' siempre va seguido de -ing.",
+          "Incorrecto: el pasado simple no corresponde como segundo verbo aquí."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I enjoy ___ (work) with my new team.",
+        "hint": "(work)",
+        "answers": [
+          "working"
+        ],
+        "explanation": "'Enjoy' siempre va seguido de la forma en -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "to work",
+            "why": "'Enjoy' no se usa con 'to + infinitivo'; siempre va seguido de -ing."
+          },
+          {
+            "answer": "work",
+            "why": "Falta la forma en -ing después de 'enjoy'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "We plan ___ (visit) Mendoza next month.",
+        "hint": "(visit)",
+        "answers": [
+          "to visit"
+        ],
+        "explanation": "'Plan' siempre va seguido de 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "visiting",
+            "why": "'Plan' no se usa con la forma en -ing; siempre va seguido de 'to + infinitivo'."
+          },
+          {
+            "answer": "visit",
+            "why": "Falta el 'to' antes del infinitivo después de 'plan'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I'm thinking about ___ (change) my doctor.",
+        "hint": "(change)",
+        "answers": [
+          "changing"
+        ],
+        "explanation": "Después de una preposición siempre va la forma en -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "to change",
+            "why": "Después de una preposición ('about') siempre va la forma en -ing, no 'to + infinitivo'."
+          },
+          {
+            "answer": "change",
+            "why": "Falta la forma en -ing después de la preposición 'about'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "The landlord agreed ___ (fix) the heater.",
+        "hint": "(fix)",
+        "answers": [
+          "to fix"
+        ],
+        "explanation": "'Agree' siempre va seguido de 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "fixing",
+            "why": "'Agree' no se usa con la forma en -ing; siempre va seguido de 'to + infinitivo'."
+          },
+          {
+            "answer": "fix",
+            "why": "Falta el 'to' antes del infinitivo después de 'agree'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "I promise ___ (arrive) on time for the interview.",
+        "hint": "(arrive)",
+        "answers": [
+          "to arrive"
+        ],
+        "explanation": "'Promise' siempre va seguido de 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "arriving",
+            "why": "'Promise' no se usa con la forma en -ing; siempre va seguido de 'to + infinitivo'."
+          },
+          {
+            "answer": "arrive",
+            "why": "Falta el 'to' antes del infinitivo después de 'promise'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo.",
+        "sentence": "Clara misses ___ (travel) with her old friends.",
+        "hint": "(travel)",
+        "answers": [
+          "traveling",
+          "travelling"
+        ],
+        "explanation": "'Miss' siempre va seguido de la forma en -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "to travel",
+            "why": "'Miss' no se usa con 'to + infinitivo'; siempre va seguido de -ing."
+          },
+          {
+            "answer": "travel",
+            "why": "Falta la forma en -ing después de 'miss'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sofía has finally given up smoking.",
+        "alternatives": [],
+        "translation": "Sofía por fin dejó de fumar.",
+        "explanation": "'Give up' siempre va seguido de la forma en -ing.",
+        "tokens": [
+          "Sofía",
+          "has",
+          "given",
+          "up",
+          "finally",
+          "smoking"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We managed to get tickets for the concert.",
+        "alternatives": [],
+        "translation": "Conseguimos entradas para el recital.",
+        "explanation": "'Manage' siempre va seguido de 'to + infinitivo'.",
+        "tokens": [
+          "to",
+          "the",
+          "for",
+          "We",
+          "managed",
+          "concert",
+          "tickets",
+          "get"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She's looking forward to seeing her family.",
+        "alternatives": [],
+        "translation": "Tiene muchas ganas de ver a su familia.",
+        "explanation": "En 'look forward to', el 'to' es preposición y va seguido de -ing.",
+        "tokens": [
+          "seeing",
+          "looking",
+          "to",
+          "her",
+          "She's",
+          "family",
+          "forward"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I want you to come to the meeting.",
+        "alternatives": [],
+        "translation": "Quiero que vengas a la reunión.",
+        "explanation": "'Want' con objeto usa la estructura objeto + 'to + infinitivo', no 'that + verbo' como en español.",
+        "tokens": [
+          "want",
+          "to",
+          "to",
+          "you",
+          "I",
+          "the",
+          "come",
+          "meeting"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Diego suggested changing the meeting time.",
+        "alternatives": [],
+        "translation": "Diego sugirió cambiar el horario de la reunión.",
+        "explanation": "'Suggest' siempre va seguido de la forma en -ing.",
+        "tokens": [
+          "suggested",
+          "changing",
+          "Diego",
+          "time",
+          "the",
+          "meeting"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo + -ing o to + infinitivo.",
+        "sentence": "I want that you come to the party.",
+        "answers": [
+          "I want you to come to the party."
+        ],
+        "explanation": "'Want' no va seguido de 'that + verbo' como en español; se usa objeto + 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "I want you come to the party.",
+            "why": "Falta el 'to' antes del infinitivo; 'want' con objeto necesita 'to + infinitivo'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo + -ing o to + infinitivo.",
+        "sentence": "I'm looking forward to see you this weekend.",
+        "answers": [
+          "I'm looking forward to seeing you this weekend.",
+          "I am looking forward to seeing you this weekend."
+        ],
+        "explanation": "En 'look forward to', el 'to' es una preposición, así que siempre va seguido de -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm looking forward seeing you this weekend.",
+            "why": "Elimina la preposición 'to', pero 'look forward to' siempre lleva 'to' seguido de -ing."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo + -ing o to + infinitivo.",
+        "sentence": "I enjoy to dance at parties.",
+        "answers": [
+          "I enjoy dancing at parties."
+        ],
+        "explanation": "'Enjoy' siempre va seguido de la forma en -ing, nunca de 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "I enjoy dance at parties.",
+            "why": "Falta la forma en -ing; 'enjoy' siempre va seguido de -ing, no del verbo base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo + -ing o to + infinitivo.",
+        "sentence": "Marina avoided to talk about the problem in the meeting.",
+        "answers": [
+          "Marina avoided talking about the problem in the meeting."
+        ],
+        "explanation": "'Avoid' siempre va seguido de la forma en -ing, nunca de 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Marina avoided talk about the problem in the meeting.",
+            "why": "Falta la forma en -ing; 'avoid' siempre va seguido de -ing, no del verbo base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el verbo + -ing o to + infinitivo.",
+        "sentence": "The nurse asked me waiting in the room.",
+        "answers": [
+          "The nurse asked me to wait in the room."
+        ],
+        "explanation": "'Ask' con objeto usa la estructura objeto + 'to + infinitivo', no la forma en -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "The nurse asked me wait in the room.",
+            "why": "Falta el 'to'; 'ask' con objeto necesita 'to + infinitivo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Quiero que vengas a mi entrevista de trabajo.",
+        "answers": [
+          "I want you to come to my job interview.",
+          "I'd like you to come to my job interview."
+        ],
+        "explanation": "'Want' con objeto usa la estructura objeto + 'to + infinitivo', no 'that + verbo' como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "I want that you come to my job interview.",
+            "why": "'Want' no va seguido de 'that + verbo'; se usa objeto + 'to + infinitivo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tengo muchas ganas de verte este fin de semana.",
+        "answers": [
+          "I'm looking forward to seeing you this weekend.",
+          "I am looking forward to seeing you this weekend."
+        ],
+        "explanation": "En 'look forward to', el 'to' es preposición y va seguido de -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm looking forward to see you this weekend.",
+            "why": "Después del 'to' preposicional de 'look forward to' va -ing, no el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Disfruto bailar en las fiestas.",
+        "answers": [
+          "I enjoy dancing at parties.",
+          "I really enjoy dancing at parties."
+        ],
+        "explanation": "'Enjoy' siempre va seguido de la forma en -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "I enjoy to dance at parties.",
+            "why": "'Enjoy' siempre va seguido de -ing, no de 'to + infinitivo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El dueño accedió a arreglar la pérdida de agua.",
+        "answers": [
+          "The landlord agreed to fix the leak.",
+          "The owner agreed to fix the leak."
+        ],
+        "explanation": "'Agree' siempre va seguido de 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord agreed fixing the leak.",
+            "why": "'Agree' va seguido de 'to + infinitivo', no de -ing."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "La enfermera me pidió que esperara en la sala.",
+        "answers": [
+          "The nurse asked me to wait in the room.",
+          "The nurse asked me to wait in the waiting room."
+        ],
+        "explanation": "'Ask' con objeto usa la estructura objeto + 'to + infinitivo'.",
+        "wrongAnswers": [
+          {
+            "answer": "The nurse asked me waiting in the room.",
+            "why": "'Ask' con objeto necesita 'to + infinitivo', no la forma en -ing."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Por fin dejé de fumar.",
+        "answers": [
+          "I've finally given up smoking.",
+          "I finally gave up smoking."
+        ],
+        "explanation": "'Give up' siempre va seguido de la forma en -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "I've finally given up to smoke.",
+            "why": "'Give up' siempre va seguido de -ing, no de 'to + infinitivo'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y elegí la opción correcta para cada pregunta.",
+        "text": "Mariana has just moved to Córdoba for a new job, and she's renting a small flat near the university. She decided to rent it because it was cheap and close to her office. At first, she enjoyed living there, but after a few weeks, she started having problems with the heating. She called the landlord, Mr. Rivas, and asked him to fix it as soon as possible. He promised to send someone the next day, but nobody came. Mariana can't stand waiting for things that never happen, so she called him again. This time, Mr. Rivas apologized and suggested meeting at the flat on Saturday morning. He also agreed to lower the rent for that month because of the inconvenience. Mariana was relieved. She's looking forward to having hot water again, and she hopes to stay in the flat for at least a year, as long as Mr. Rivas keeps fixing problems quickly.",
+        "questions": [
+          {
+            "prompt": "¿Qué le pidió Mariana a Mr. Rivas?",
+            "options": [
+              "To fix the heating as soon as possible.",
+              "To lower the rent immediately.",
+              "To find her a new flat.",
+              "To meet her on Saturday."
+            ],
+            "correctIndex": 0,
+            "explanation": "Ask sigue el patrón objeto + to + infinitivo (asked him to fix it), por eso la respuesta correcta repite esa misma estructura con lo que realmente pidió."
+          },
+          {
+            "prompt": "¿Qué propuso Mr. Rivas?",
+            "options": [
+              "Suggested calling again.",
+              "Suggested sending someone the next day.",
+              "Suggested lowering the rent.",
+              "Suggested meeting at the flat on Saturday morning."
+            ],
+            "correctIndex": 3,
+            "explanation": "Suggest siempre va seguido de -ing (suggested meeting), y el texto dice exactamente qué propuso: encontrarse el sábado a la mañana."
+          },
+          {
+            "prompt": "¿Qué tiene ganas de hacer Mariana?",
+            "options": [
+              "Looking forward to moving to a new flat.",
+              "Looking forward to having hot water again.",
+              "Looking forward to paying less rent.",
+              "Looking forward to meeting Mr. Rivas."
+            ],
+            "correctIndex": 1,
+            "explanation": "En look forward to, 'to' funciona como preposición y por eso va seguida de -ing (looking forward to having), tal como aparece en el texto."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y elegí la opción correcta para cada pregunta.",
+        "text": "Tomás works in the marketing department of a company in Buenos Aires. Last month, his team was given a new project with a tight deadline. His boss, Laura, wanted the whole team to finish the project before the end of October. Tomás didn't mind working extra hours, but he refused to work on weekends because he needed time with his family. He suggested dividing the tasks more evenly among the team members, and Laura agreed to try his idea. At first, some colleagues kept complaining about the workload, but they eventually managed to organize everything better. Tomás avoided missing any deadlines by planning his week carefully. He promised to send a report every Friday, and he's really enjoying leading the project now. Laura was impressed and asked him to continue managing the team until the end of the year. Tomás hopes to get a promotion soon, although he knows he still needs to improve his time management skills.",
+        "questions": [
+          {
+            "prompt": "¿Qué se negó a hacer Tomás?",
+            "options": [
+              "Refused to work on weekends.",
+              "Refused to lead the project.",
+              "Refused to send reports.",
+              "Refused to finish the project."
+            ],
+            "correctIndex": 0,
+            "explanation": "Refuse va seguido de to + infinitivo (refused to work), y el texto indica claramente que no quiso trabajar los fines de semana."
+          },
+          {
+            "prompt": "¿Qué propuso Tomás al equipo?",
+            "options": [
+              "Suggested dividing the tasks more evenly.",
+              "Suggested hiring more people.",
+              "Suggested working on weekends.",
+              "Suggested asking for a new deadline."
+            ],
+            "correctIndex": 0,
+            "explanation": "Suggest siempre lleva -ing (suggested dividing), y esa es exactamente la propuesta que hizo Tomás para repartir mejor el trabajo."
+          },
+          {
+            "prompt": "¿Qué le pidió Laura a Tomás al final?",
+            "options": [
+              "Asked him to send a report every day.",
+              "Asked him to continue managing the team.",
+              "Asked him to stop leading the project.",
+              "Asked him to work on weekends."
+            ],
+            "correctIndex": 1,
+            "explanation": "Ask sigue el patrón objeto + to + infinitivo (asked him to continue), y el texto confirma que Laura quería que él siguiéra a cargo del equipo."
+          }
+        ]
+      }
+    ],
+    "stop-remember-try": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "On the way to Bariloche, we ___ some water before continuing the hike.",
+        "options": [
+          "stopped buying",
+          "stopped buy",
+          "stop to buy",
+          "stopped to buy"
+        ],
+        "correctIndex": 3,
+        "explanation": "Stop + to + infinitivo indica que se detiene una acción para hacer otra cosa; aquí pararon para comprar agua.",
+        "optionNotes": [
+          "Incorrecto: stopped buying significaría que dejaron de comprar agua como hábito, no tiene sentido aquí.",
+          "Incorrecto: falta 'to' antes del infinitivo, forma gramaticalmente incompleta.",
+          "Incorrecto: falta el pasado 'stopped', el contexto requiere pasado.",
+          "Correcto: stop + to indica que pararon con el propósito de comprar agua."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Martina ___ meat two years ago; now she's vegetarian.",
+        "options": [
+          "stopped eat",
+          "stopped to eat",
+          "stops eating",
+          "stopped eating"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para expresar que alguien dejó un hábito se usa stop + -ing; stop + to cambiaría completamente el sentido.",
+        "optionNotes": [
+          "Incorrecto: falta el gerundio -ing después de stopped.",
+          "Incorrecto: stopped to eat significaría que paró para comer carne, lo opuesto de ser vegetariana.",
+          "Incorrecto: el presente no concuerda con 'two years ago', se necesita pasado.",
+          "Correcto: stop + -ing significa dejar de hacer algo como hábito."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I remember ___ Lucas at that conference in Mendoza last year.",
+        "options": [
+          "to meet",
+          "meet",
+          "meeting",
+          "having meet"
+        ],
+        "correctIndex": 2,
+        "explanation": "Remember + -ing expresa el recuerdo de un evento pasado, como conocer a alguien en una conferencia.",
+        "optionNotes": [
+          "Incorrecto: remember + to se usa para tareas pendientes, no para recuerdos del pasado.",
+          "Incorrecto: falta el gerundio, forma incompleta.",
+          "Correcto: remember + -ing se usa para recordar algo que ya pasó.",
+          "Incorrecto: 'having meet' no es una forma gramatical correcta en inglés."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Please remember ___ the landlord about the broken heater.",
+        "options": [
+          "call",
+          "to calling",
+          "calling",
+          "to call"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando algo todavía no se hizo y hay que recordarlo, se usa remember + to + infinitivo.",
+        "optionNotes": [
+          "Incorrecto: falta el 'to' del infinitivo.",
+          "Incorrecto: no existe la forma 'to calling' en inglés.",
+          "Incorrecto: remember + -ing se usa para recuerdos del pasado, no para tareas pendientes.",
+          "Correcto: remember + to se usa para una tarea que todavía hay que hacer."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "If the printer doesn't work, try ___ it off and on again.",
+        "options": [
+          "turned",
+          "turn",
+          "to turn",
+          "turning"
+        ],
+        "correctIndex": 3,
+        "explanation": "Try + -ing se usa para sugerir una posible solución a un problema, como reiniciar un aparato.",
+        "optionNotes": [
+          "Incorrecto: 'turned' no concuerda gramaticalmente después de try.",
+          "Incorrecto: falta el gerundio -ing.",
+          "Incorrecto: try + to se usa para expresar esfuerzo, no para probar algo como experimento.",
+          "Correcto: try + -ing se usa para probar una solución y ver si funciona."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I'll never forget ___ the glaciers in El Calafate; it was breathtaking.",
+        "options": [
+          "having to see",
+          "to see",
+          "seeing",
+          "see"
+        ],
+        "correctIndex": 2,
+        "explanation": "Forget + -ing se usa igual que remember + -ing: para hablar de recuerdos de experiencias pasadas.",
+        "optionNotes": [
+          "Incorrecto: 'having to see' cambia el sentido a obligación, no corresponde aquí.",
+          "Incorrecto: forget + to se usa para tareas pendientes, no para experiencias vividas.",
+          "Correcto: forget + -ing se usa para recordar una experiencia pasada memorable.",
+          "Incorrecto: falta el gerundio -ing."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "During the interview, I forgot ___ my experience with Excel, so I had to email the recruiter later.",
+        "hint": "(mention)",
+        "answers": [
+          "to mention"
+        ],
+        "explanation": "Forget + to + infinitivo se usa cuando alguien no hizo algo que debía hacer, como mencionar su experiencia.",
+        "wrongAnswers": [
+          {
+            "answer": "mentioning",
+            "why": "Forget + -ing se usa para recuerdos de cosas pasadas, pero acá se trata de algo que no se hizo y había que hacer, así que corresponde forget + to."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "The doctor suggested I try ___ more water every day to see if my headaches improve.",
+        "hint": "(drink)",
+        "answers": [
+          "drinking"
+        ],
+        "explanation": "Try + -ing se usa para proponer probar algo como posible solución, como tomar más agua para los dolores de cabeza.",
+        "wrongAnswers": [
+          {
+            "answer": "to drink",
+            "why": "Try + to expresa esfuerzo para lograr algo difícil, pero acá se sugiere probar una solución, que es try + -ing."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Remember ___ the gas before you leave the apartment, Martina.",
+        "hint": "(turn off)",
+        "answers": [
+          "to turn off"
+        ],
+        "explanation": "Remember + to + infinitivo se usa para tareas que todavía hay que hacer, como apagar el gas antes de salir.",
+        "wrongAnswers": [
+          {
+            "answer": "turning off",
+            "why": "Remember + -ing se usa para recuerdos de cosas pasadas, pero acá es una tarea pendiente, así que corresponde remember + to."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "We were driving to Ushuaia when we stopped ___ some pictures of the mountains.",
+        "hint": "(take)",
+        "answers": [
+          "to take"
+        ],
+        "explanation": "Stop + to + infinitivo indica que se interrumpe una acción para hacer otra cosa, como sacar fotos en el camino.",
+        "wrongAnswers": [
+          {
+            "answer": "taking",
+            "why": "Stop + -ing significa dejar de hacer algo como hábito, pero acá pararon el viaje para sacar fotos, así que corresponde stop + to."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Juan stopped ___ last January, and he feels much healthier now.",
+        "hint": "(smoke)",
+        "answers": [
+          "smoking"
+        ],
+        "explanation": "Stop + -ing se usa para expresar que alguien dejó un hábito, como fumar.",
+        "wrongAnswers": [
+          {
+            "answer": "to smoke",
+            "why": "Stop + to significaría que paró de hacer algo para fumar, lo opuesto de dejar el hábito."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta del verbo entre paréntesis.",
+        "sentence": "I remember ___ that movie with you at the cinema in Palermo.",
+        "hint": "(see)",
+        "answers": [
+          "seeing"
+        ],
+        "explanation": "Remember + -ing se usa para hablar de recuerdos de experiencias pasadas, como haber visto una película juntos.",
+        "wrongAnswers": [
+          {
+            "answer": "to see",
+            "why": "Remember + to se usa para tareas pendientes, pero acá se habla de un recuerdo de algo que ya pasó."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I stopped drinking coffee last month.",
+        "alternatives": [
+          "Last month I stopped drinking coffee."
+        ],
+        "translation": "Dejé de tomar café el mes pasado.",
+        "explanation": "Stop + -ing expresa que se dejó un hábito; 'last month' puede ir al principio o al final de la oración.",
+        "tokens": [
+          "stopped",
+          "last",
+          "month",
+          "I",
+          "drinking",
+          "coffee"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Remember to bring your passport tomorrow.",
+        "alternatives": [],
+        "translation": "Acordate de traer tu pasaporte mañana.",
+        "explanation": "Remember + to se usa para recordar una tarea pendiente, como traer el pasaporte.",
+        "tokens": [
+          "Remember",
+          "to",
+          "bring",
+          "tomorrow",
+          "passport",
+          "your"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She stopped to answer her phone during the meeting.",
+        "alternatives": [
+          "During the meeting, she stopped to answer her phone."
+        ],
+        "translation": "Ella paró para atender su teléfono durante la reunión.",
+        "explanation": "Stop + to indica que interrumpió la reunión para hacer otra cosa, en este caso atender el teléfono.",
+        "tokens": [
+          "to",
+          "phone",
+          "stopped",
+          "her",
+          "meeting",
+          "answer",
+          "the",
+          "She",
+          "during"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Try calling him again in ten minutes.",
+        "alternatives": [
+          "In ten minutes, try calling him again."
+        ],
+        "translation": "Probá llamarlo de nuevo en diez minutos.",
+        "explanation": "Try + -ing sugiere una acción para ver si funciona, como volver a llamar más tarde.",
+        "tokens": [
+          "Try",
+          "minutes",
+          "him",
+          "calling",
+          "in",
+          "again",
+          "ten"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I'll never forget visiting that old castle in Spain.",
+        "alternatives": [],
+        "translation": "Nunca voy a olvidar haber visitado ese viejo castillo en España.",
+        "explanation": "Forget + -ing se usa para hablar de un recuerdo memorable de una experiencia pasada.",
+        "tokens": [
+          "forget",
+          "in",
+          "never",
+          "old",
+          "that",
+          "visiting",
+          "castle",
+          "Spain",
+          "I'll"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I stopped to eat sugar after my doctor's appointment.",
+        "answers": [
+          "I stopped eating sugar after my doctor's appointment."
+        ],
+        "explanation": "Stop + -ing se usa para decir que alguien dejó un hábito; stop + to cambiaría el sentido a 'paró para comer azúcar'.",
+        "wrongAnswers": [
+          {
+            "answer": "I stopped eat sugar after my doctor's appointment.",
+            "why": "Falta el gerundio -ing después de stopped; además no corrige el error de sentido real."
+          },
+          {
+            "answer": "I stop eating sugar after my doctor's appointment.",
+            "why": "Cambia el tiempo verbal a presente, pero el contexto requiere pasado ya que la cita médica ya ocurrió."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Don't forget calling the plumber about the leak, Juan.",
+        "answers": [
+          "Don't forget to call the plumber about the leak, Juan."
+        ],
+        "explanation": "Forget + to se usa cuando algo todavía no se hizo y hay que recordarlo, como llamar al plomero.",
+        "wrongAnswers": [
+          {
+            "answer": "Don't forget call the plumber about the leak, Juan.",
+            "why": "Falta la palabra 'to' antes del infinitivo; forget + to necesita el infinitivo completo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I remember to visit Bariloche when I was a kid.",
+        "answers": [
+          "I remember visiting Bariloche when I was a kid."
+        ],
+        "explanation": "Remember + -ing se usa para hablar de un recuerdo de algo que ya pasó, como haber visitado un lugar de chico.",
+        "wrongAnswers": [
+          {
+            "answer": "I remembered to visit Bariloche when I was a kid.",
+            "why": "Cambia el verbo principal a pasado, pero el error real es el patrón verbal: se necesita remember + -ing para un recuerdo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "While driving to Mar del Plata, they stopped eating at a small restaurant on the highway, then continued the trip.",
+        "answers": [
+          "While driving to Mar del Plata, they stopped to eat at a small restaurant on the highway, then continued the trip."
+        ],
+        "explanation": "Stop + to indica que pararon de manejar para comer; stop + -ing significaría que dejaron de comer ahí para siempre, lo cual no tiene sentido en el contexto.",
+        "wrongAnswers": [
+          {
+            "answer": "While driving to Mar del Plata, they stop to eat at a small restaurant on the highway, then continued the trip.",
+            "why": "Cambia el tiempo verbal pero no corrige el verdadero error, que es usar 'eating' en vez de 'to eat'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Try to turn off and on the router to see if the Wi-Fi comes back.",
+        "answers": [
+          "Try turning off and on the router to see if the Wi-Fi comes back."
+        ],
+        "explanation": "Try + -ing se usa para proponer una solución a modo de prueba, como reiniciar el router.",
+        "wrongAnswers": [
+          {
+            "answer": "Try turn off and on the router to see if the Wi-Fi comes back.",
+            "why": "Falta el gerundio -ing después de try; try + -ing necesita la forma -ing, no el infinitivo sin 'to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Dejé de tomar alcohol hace seis meses.",
+        "answers": [
+          "I stopped drinking alcohol six months ago.",
+          "I stopped drinking alcohol 6 months ago."
+        ],
+        "explanation": "Para expresar que se dejó un hábito se usa stop + -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "I stopped to drink alcohol six months ago.",
+            "why": "Stop + to significaría que paró de hacer algo para tomar alcohol, no que dejó el hábito."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Acordate de traer el pasaporte cuando vengas a buscarme al aeropuerto.",
+        "answers": [
+          "Remember to bring your passport when you come to pick me up at the airport.",
+          "Remember to bring your passport when you come pick me up at the airport."
+        ],
+        "explanation": "Remember + to se usa para recordar algo que todavía hay que hacer.",
+        "wrongAnswers": [
+          {
+            "answer": "Remember bringing your passport when you come pick me up at the airport.",
+            "why": "Para una tarea pendiente se usa remember + to, no remember + -ing."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Nunca me voy a olvidar de haber visto esas cataratas en Iguazú.",
+        "answers": [
+          "I'll never forget seeing those waterfalls in Iguazú.",
+          "I will never forget seeing those waterfalls in Iguazú."
+        ],
+        "explanation": "Forget + -ing se usa para hablar de un recuerdo memorable de algo que ya se vivió.",
+        "wrongAnswers": [
+          {
+            "answer": "I'll never forget to see those waterfalls in Iguazú.",
+            "why": "Forget + to se usa para tareas pendientes, no para recuerdos de experiencias vividas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Si te duele la espalda, probá hacer estiramientos todas las mañanas.",
+        "answers": [
+          "If your back hurts, try doing stretches every morning.",
+          "If your back hurts, try stretching every morning."
+        ],
+        "explanation": "Try + -ing se usa para proponer una posible solución a un problema.",
+        "wrongAnswers": [
+          {
+            "answer": "If your back hurts, try to do stretches every morning.",
+            "why": "Try + to implica esfuerzo para lograr algo, pero acá se sugiere probar una solución, que es try + -ing."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Paramos a cargar nafta antes de llegar a Córdoba.",
+        "answers": [
+          "We stopped to get gas before arriving in Córdoba.",
+          "We stopped to get petrol before arriving in Córdoba.",
+          "We stopped to fill up on gas before reaching Córdoba."
+        ],
+        "explanation": "Stop + to se usa cuando se interrumpe una acción para hacer otra cosa, como parar a cargar nafta.",
+        "wrongAnswers": [
+          {
+            "answer": "We stopped getting gas before arriving in Córdoba.",
+            "why": "Stop + -ing significaría dejar de cargar nafta como hábito, no parar en el camino para hacerlo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Te acordás de haber visto a Lucas en la fiesta de fin de año?",
+        "answers": [
+          "Do you remember seeing Lucas at the New Year's party?",
+          "Do you remember seeing Lucas at the end-of-year party?"
+        ],
+        "explanation": "Remember + -ing se usa para preguntar o hablar sobre recuerdos de cosas que ya pasaron.",
+        "wrongAnswers": [
+          {
+            "answer": "Do you remember to see Lucas at the New Year's party?",
+            "why": "Remember + to se usa para tareas futuras, pero acá se pregunta por un recuerdo del pasado."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los patrones verbales con stop, remember y try.",
+        "text": "Last weekend, Pablo drove from Buenos Aires to Mendoza to visit his sister, Flor. On the way, he stopped to get gas in San Luis because the tank was almost empty. While he was there, he remembered meeting an old friend, Nico, at that same gas station two years before.\n\nBefore leaving home, Pablo's mother had told him: 'Remember to call me when you arrive.' Pablo agreed, but he almost forgot. Luckily, when he stopped to buy some water near Mendoza, he saw his phone and remembered to send her a message.\n\nPablo used to smoke during long trips, but he stopped smoking last year after a doctor's appointment. Now, when he feels stressed while driving, he tries listening to music instead. Yesterday, when traffic got heavy near San Luis, he tried calling Flor to ask about the best route, but she didn't answer. So he tried using a map app instead, and it helped him find a faster way.\n\nFinally, Pablo arrived in Mendoza, tired but happy, and he never forgot buying the bottle of wine for Flor's birthday.",
+        "questions": [
+          {
+            "prompt": "¿Qué significa 'he stopped to get gas in San Luis'?",
+            "options": [
+              "Dejó de manejar el auto completamente",
+              "Hizo una pausa en el viaje para conseguir gasolina",
+              "Nunca consiguió gasolina en el viaje",
+              "Dejó de buscar gasolina para siempre"
+            ],
+            "correctIndex": 1,
+            "explanation": "Stop + to + infinitivo indica que Pablo paró el viaje para hacer otra cosa (conseguir gasolina), no que dejó de hacer algo para siempre."
+          },
+          {
+            "prompt": "¿Qué significa 'Remember to call me when you arrive', que le dijo la madre de Pablo?",
+            "options": [
+              "Le pide que pruebe llamar para ver si el teléfono funciona",
+              "Le pide que no se olvide de hacer esa llamada en el futuro",
+              "Le pide que recuerde una llamada que ya hizo antes",
+              "Le pide que deje de llamarla"
+            ],
+            "correctIndex": 1,
+            "explanation": "Remember + to + infinitivo se usa para una tarea pendiente que todavía hay que hacer, no para un recuerdo de algo pasado."
+          },
+          {
+            "prompt": "¿Qué indica la frase 'he stopped smoking last year'?",
+            "options": [
+              "Que paró de caminar para fumar un cigarrillo",
+              "Que dejó el hábito de fumar",
+              "Que todavía fuma, pero menos que antes",
+              "Que empezó a fumar el año pasado"
+            ],
+            "correctIndex": 1,
+            "explanation": "Stop + -ing significa dejar de hacer algo como hábito; en este caso, Pablo abandonó el hábito de fumar."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los patrones verbales con stop, remember y try.",
+        "text": "Esteban visited his doctor, Dr. Suárez, in Rosario to talk about his knee pain. Esteban used to run five kilometers every morning, but he stopped running two months ago because of the pain. Dr. Suárez suggested: 'Try swimming instead. It's easier for your knee.' Esteban decided to try it, and now he swims three times a week.\n\nDuring the appointment, Dr. Suárez asked: 'Do you remember taking any medicine before the pain started?' Esteban thought about it and remembered taking some anti-inflammatory pills a few months earlier, after a different injury. Dr. Suárez wrote this down.\n\nThen Dr. Suárez gave Esteban a new prescription. 'Remember to take one pill every eight hours,' she said. 'And remember to drink plenty of water.' Esteban promised he would.\n\nOn his way home, Esteban stopped to buy the medicine at a pharmacy near the hospital. He almost forgot to ask about the price, but the pharmacist, Marta, reminded him. Esteban also tried asking Marta if the pills had side effects, and she explained everything clearly.\n\nEsteban left the pharmacy feeling more confident about his recovery.",
+        "questions": [
+          {
+            "prompt": "¿Qué significa 'Esteban stopped running two months ago because of the pain'?",
+            "options": [
+              "Nunca corrió antes de sentir dolor",
+              "Sigue corriendo, pero más despacio",
+              "Dejó el hábito de correr debido al dolor",
+              "Paró de caminar para empezar a correr"
+            ],
+            "correctIndex": 2,
+            "explanation": "Stop + -ing significa dejar de hacer algo como hábito; Esteban abandonó la costumbre de correr por el dolor en la rodilla."
+          },
+          {
+            "prompt": "¿Qué diferencia hay entre 'Esteban remembered taking some anti-inflammatory pills a few months earlier' y 'Remember to take one pill every eight hours'?",
+            "options": [
+              "No hay ninguna diferencia de significado entre las dos",
+              "Las dos hablan de una tarea pendiente en el futuro",
+              "Las dos hablan de un recuerdo del pasado",
+              "La primera es un recuerdo de algo que ya pasó; la segunda es una instrucción para no olvidar algo pendiente"
+            ],
+            "correctIndex": 3,
+            "explanation": "Remember + -ing se refiere a recordar algo que ya ocurrió; remember + to + infinitivo se refiere a no olvidarse de hacer algo que todavía está pendiente."
+          },
+          {
+            "prompt": "¿Qué quiere decir 'Esteban also tried asking Marta if the pills had side effects'?",
+            "options": [
+              "Esteban probó preguntarle a Marta para ver qué información obtenía",
+              "Esteban hizo un esfuerzo enorme para lograr hacerle esa pregunta difícil",
+              "Esteban dejó de hablar con Marta",
+              "Esteban se acordó de una pregunta que le había hecho antes"
+            ],
+            "correctIndex": 0,
+            "explanation": "Try + -ing se usa para probar algo y ver qué resultado da; Esteban probó hacer la pregunta para obtener información sobre los efectos secundarios."
+          }
+        ]
+      }
+    ],
+    "email-novedades": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ a lot these days, so I haven't had much free time.",
+        "options": [
+          "am working since",
+          "have been working",
+          "has been working",
+          "have work"
+        ],
+        "correctIndex": 1,
+        "explanation": "El present perfect continuo (have been + -ing) describe una actividad reciente que sigue sin terminar.",
+        "optionNotes": [
+          "Incorrecto: el presente continuo no combina con 'since' de esta manera; se necesita el present perfect continuo.",
+          "Correcto: present perfect continuo para una actividad reciente y continua.",
+          "Incorrecto: has no concuerda con el sujeto 'I'; corresponde have.",
+          "Incorrecto: falta -ing y la forma del verbo no es válida después de have."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Guess what? I ___ to a new apartment in Palermo!",
+        "options": [
+          "'ve moved",
+          "am moving",
+          "'ve been moving",
+          "move"
+        ],
+        "correctIndex": 0,
+        "explanation": "El present perfect simple se usa para contar una noticia o resultado puntual ya terminado, como un cambio de vivienda.",
+        "optionNotes": [
+          "Correcto: present perfect simple para una noticia o cambio ya terminado.",
+          "Incorrecto: el presente continuo sugiere que la acción está pasando ahora mismo, no que ya ocurrió.",
+          "Incorrecto: la forma continua pone el foco en la duración de una actividad, pero mudarse es un cambio puntual.",
+          "Incorrecto: el presente simple no transmite que es una noticia reciente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I've also started ___ yoga classes twice a week.",
+        "options": [
+          "taking",
+          "took",
+          "take",
+          "takes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de start se puede usar -ing (o to + infinitivo); taking es la forma de gerundio correcta aquí.",
+        "optionNotes": [
+          "Correcto: start puede ir seguido de -ing (taking).",
+          "Incorrecto: took es pasado simple, no corresponde después de started.",
+          "Incorrecto: take sin 'to' ni -ing no completa el patrón después de started.",
+          "Incorrecto: takes es presente simple, no es la forma que sigue a un verbo como started."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I'm thinking ___ visiting you in March.",
+        "options": [
+          "of",
+          "about to",
+          "for",
+          "to"
+        ],
+        "correctIndex": 0,
+        "explanation": "Think of + -ing expresa un plan posible; think no va seguido de to + infinitivo.",
+        "optionNotes": [
+          "Correcto: think of + gerundio expresa un plan posible.",
+          "Incorrecto: about to + infinitivo significa que algo está a punto de pasar, un significado distinto.",
+          "Incorrecto: think for no existe con este sentido.",
+          "Incorrecto: think to + infinitivo no existe en inglés; es un error típico por el 'pensar en' del español."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I'm really looking forward to ___ from you soon.",
+        "options": [
+          "hearing",
+          "to hear",
+          "hear",
+          "heard"
+        ],
+        "correctIndex": 0,
+        "explanation": "En look forward to, 'to' funciona como preposición, así que va seguida de -ing.",
+        "optionNotes": [
+          "Correcto: look forward to + gerundio, ya que 'to' aquí es preposición.",
+          "Incorrecto: no se repite 'to' con infinitivo; después de la preposición to va solo el gerundio.",
+          "Incorrecto: hear (infinitivo sin to) no corresponde después de una preposición.",
+          "Incorrecto: heard es pasado/participio, no corresponde en esta estructura."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ to change jobs, and I start at the new company next week.",
+        "options": [
+          "'ve decided",
+          "decide",
+          "am deciding",
+          "'ve been deciding"
+        ],
+        "correctIndex": 0,
+        "explanation": "Decided en present perfect simple muestra que la decisión ya está tomada, como una noticia o resultado.",
+        "optionNotes": [
+          "Correcto: present perfect simple para una decisión ya tomada.",
+          "Incorrecto: el presente simple no transmite que es una noticia reciente.",
+          "Incorrecto: el presente continuo (decidiendo ahora) contradice que empieza el trabajo la semana que viene.",
+          "Incorrecto: la forma continua sugiere indecisión o un proceso sin terminar, pero la decisión ya está tomada."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "I ___ English really hard this semester, so I feel more confident now.",
+        "hint": "(study)",
+        "answers": [
+          "'ve been studying",
+          "have been studying"
+        ],
+        "explanation": "El present perfect continuo describe una actividad reciente que sigue sin terminar.",
+        "wrongAnswers": [
+          {
+            "answer": "study",
+            "why": "Study en presente simple no transmite que es una actividad reciente y continua; se necesita have been studying."
+          },
+          {
+            "answer": "have studied",
+            "why": "Have studied (present perfect simple) se usa más para resultados puntuales, no para describir una actividad continua reciente."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "Guess what? I ___ a new job at a travel agency!",
+        "hint": "(get)",
+        "answers": [
+          "'ve gotten",
+          "have gotten",
+          "'ve got",
+          "have got"
+        ],
+        "explanation": "El present perfect simple se usa para contar una noticia o resultado puntual ya terminado.",
+        "wrongAnswers": [
+          {
+            "answer": "get",
+            "why": "Get en presente simple no transmite que es una noticia reciente; se necesita el present perfect: I've got/gotten."
+          },
+          {
+            "answer": "'ve been getting",
+            "why": "Sugiere un proceso repetido o continuo, pero conseguir un trabajo es un resultado puntual, no continuo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "I've started ___ Portuguese classes on Tuesdays.",
+        "hint": "(take)",
+        "answers": [
+          "taking",
+          "to take"
+        ],
+        "explanation": "Start acepta tanto -ing como to + infinitivo casi sin cambio de sentido.",
+        "wrongAnswers": [
+          {
+            "answer": "take",
+            "why": "Take sin 'to' ni -ing no completa correctamente el patrón después de started."
+          },
+          {
+            "answer": "took",
+            "why": "Took es pasado simple; después de started se necesita la forma -ing o to + infinitivo, no el pasado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "I'm thinking ___ to a bigger apartment next year.",
+        "hint": "(move)",
+        "answers": [
+          "of moving",
+          "about moving"
+        ],
+        "explanation": "Think of/about + -ing expresa un plan posible.",
+        "wrongAnswers": [
+          {
+            "answer": "to move",
+            "why": "Think no va seguido de to + infinitivo; se usa think of/about + -ing."
+          },
+          {
+            "answer": "moving",
+            "why": "Falta la preposición of/about antes del verbo en -ing: thinking of moving."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "I'm looking forward to ___ you when you come back to Buenos Aires.",
+        "hint": "(see)",
+        "answers": [
+          "seeing"
+        ],
+        "explanation": "En look forward to, 'to' funciona como preposición, así que va seguida de -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "see",
+            "why": "En look forward to, 'to' es preposición y necesita -ing: looking forward to seeing."
+          },
+          {
+            "answer": "to see",
+            "why": "No se repite 'to' con infinitivo; después de look forward to ya está la preposición to, se necesita solo el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo.",
+        "sentence": "My sister ___ for her visa for almost two years now.",
+        "hint": "(wait)",
+        "answers": [
+          "has been waiting"
+        ],
+        "explanation": "El present perfect continuo con 'for' resalta que una actividad sigue en curso hasta ahora.",
+        "wrongAnswers": [
+          {
+            "answer": "waits",
+            "why": "Waits en presente simple no expresa que la espera continúa desde hace tiempo; se necesita has been waiting."
+          },
+          {
+            "answer": "has waited",
+            "why": "Has waited pone el énfasis en el resultado, pero aquí se quiere resaltar que la acción sigue en curso desde hace casi dos años."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "I've been working really hard this month.",
+        "alternatives": [],
+        "translation": "Estuve trabajando muchísimo este mes.",
+        "explanation": "Present perfect continuo (have been + -ing) para una actividad reciente y continua.",
+        "tokens": [
+          "I've",
+          "month",
+          "hard",
+          "been",
+          "working",
+          "this",
+          "really"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "I've decided to look for a new flat.",
+        "alternatives": [],
+        "translation": "Decidí buscar un departamento nuevo.",
+        "explanation": "Decide va seguido de to + infinitivo: decided to look.",
+        "tokens": [
+          "look",
+          "decided",
+          "I've",
+          "for",
+          "new",
+          "flat",
+          "a",
+          "to"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "I'm thinking of visiting you in March.",
+        "alternatives": [],
+        "translation": "Estoy pensando en ir a visitarte en marzo.",
+        "explanation": "Think of + -ing expresa un plan posible, no think to + infinitivo.",
+        "tokens": [
+          "you",
+          "in",
+          "I'm",
+          "March",
+          "of",
+          "thinking",
+          "visiting"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "She's been learning Portuguese since January.",
+        "alternatives": [],
+        "translation": "Ella viene aprendiendo portugués desde enero.",
+        "explanation": "Present perfect continuo con 'since' para una actividad que empezó en el pasado y sigue ahora.",
+        "tokens": [
+          "January",
+          "been",
+          "learning",
+          "She's",
+          "since",
+          "Portuguese"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "I'm looking forward to hearing from you soon.",
+        "alternatives": [],
+        "translation": "Tengo muchas ganas de saber de vos pronto.",
+        "explanation": "Look forward to + -ing es la forma natural de cerrar un email informal.",
+        "tokens": [
+          "to",
+          "hearing",
+          "I'm",
+          "looking",
+          "from",
+          "forward",
+          "soon",
+          "you"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "I'm thinking to visit you in March.",
+        "answers": [
+          "I'm thinking of visiting you in March.",
+          "I'm thinking about visiting you in March."
+        ],
+        "explanation": "Think no va seguido de to + infinitivo; se usa think of/about + -ing.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm thinking to visiting you in March.",
+            "why": "Cambiar solo la forma del verbo no alcanza; falta la preposición of/about antes del gerundio y sobra 'to'."
+          },
+          {
+            "answer": "I'm thinking of visit you in March.",
+            "why": "Después de la preposición of va el gerundio (visiting), no el infinitivo sin to (visit)."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "I've start taking salsa classes this month.",
+        "answers": [
+          "I've started taking salsa classes this month."
+        ],
+        "explanation": "El present perfect necesita el participio (started), y luego start puede ir seguido de -ing o to + infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "I've starting taking salsa classes this month.",
+            "why": "Después de have no va la forma -ing (starting); se necesita el participio started."
+          },
+          {
+            "answer": "I've started take salsa classes this month.",
+            "why": "Después de started se necesita el gerundio taking (o to take), no el infinitivo sin to (take)."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "I'm looking forward to hear from you soon.",
+        "answers": [
+          "I'm looking forward to hearing from you soon."
+        ],
+        "explanation": "En look forward to, 'to' es preposición y necesita -ing, no el infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm looking forward to heard from you soon.",
+            "why": "Heard es participio/pasado, no corresponde; se necesita el gerundio hearing después de to (preposición)."
+          },
+          {
+            "answer": "I'm looking forward hear from you soon.",
+            "why": "Quitar 'to' no corrige el error; la preposición to debe mantenerse antes del gerundio hearing."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "Guess what? I've been moved to a new apartment!",
+        "answers": [
+          "Guess what? I've moved to a new apartment!"
+        ],
+        "explanation": "Para contar una noticia o resultado puntual se usa el present perfect simple activo (I've moved), no una forma pasiva.",
+        "wrongAnswers": [
+          {
+            "answer": "Guess what? I've being moved to a new apartment!",
+            "why": "Being moved sigue siendo una forma pasiva incorrecta; la noticia de un cambio de vivienda se expresa con el present perfect simple activo: I've moved."
+          },
+          {
+            "answer": "Guess what? I'm moved to a new apartment!",
+            "why": "I'm moved no es una estructura válida para contar esta noticia; se necesita el present perfect: I've moved."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "My sister has been waited for her visa for two years.",
+        "answers": [
+          "My sister has been waiting for her visa for two years."
+        ],
+        "explanation": "El present perfect continuo necesita has been + gerundio (waiting), no el participio pasivo (waited).",
+        "wrongAnswers": [
+          {
+            "answer": "My sister has being waiting for her visa for two years.",
+            "why": "Being no es la forma correcta del auxiliar; el present perfect continuo es has been + gerundio (waiting), no has being."
+          },
+          {
+            "answer": "My sister have been waiting for her visa for two years.",
+            "why": "Have no concuerda con el sujeto singular 'sister'; corresponde has been waiting."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Perdón por no escribirte en tanto tiempo, estuve laburando muchísimo.",
+        "answers": [
+          "Sorry I haven't written in ages, I've been working really hard.",
+          "Sorry I haven't written for ages, I've been working really hard.",
+          "Sorry for not writing in ages, I've been working really hard."
+        ],
+        "explanation": "Sorry I haven't written in ages es la apertura típica, y have been + -ing describe la actividad reciente.",
+        "wrongAnswers": [
+          {
+            "answer": "Sorry I haven't wrote in ages, I've been working really hard.",
+            "why": "Después de haven't se necesita el participio written, no el pasado simple wrote."
+          },
+          {
+            "answer": "Sorry I haven't written in ages, I work really hard.",
+            "why": "El presente simple work no transmite que es algo que viene pasando últimamente; se necesita el present perfect continuo: I've been working."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Sabés qué? Me mudé a un depto nuevo en Palermo.",
+        "answers": [
+          "Guess what? I've moved to a new apartment in Palermo.",
+          "Guess what? I've moved to a new flat in Palermo."
+        ],
+        "explanation": "El present perfect simple se usa para contar una noticia o resultado puntual ya terminado.",
+        "wrongAnswers": [
+          {
+            "answer": "Guess what? I've been moving to a new apartment in Palermo.",
+            "why": "Esta es una noticia puntual y terminada, no una actividad continua; corresponde el present perfect simple: I've moved."
+          },
+          {
+            "answer": "Guess what? I move to a new apartment in Palermo.",
+            "why": "El presente simple move no funciona para contar una noticia reciente; se necesita el present perfect: I've moved."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "También empecé a tomar clases de yoga dos veces por semana.",
+        "answers": [
+          "I've also started taking yoga classes twice a week.",
+          "I've also started to take yoga classes twice a week."
+        ],
+        "explanation": "Start acepta tanto -ing como to + infinitivo casi sin cambio de sentido.",
+        "wrongAnswers": [
+          {
+            "answer": "I've also start taking yoga classes twice a week.",
+            "why": "Falta el participio started después de have; start sin -ed no funciona en el present perfect."
+          },
+          {
+            "answer": "I've also started take yoga classes twice a week.",
+            "why": "Después de started se necesita el gerundio taking (o to take), no el infinitivo sin to."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Estoy pensando en visitarte en marzo.",
+        "answers": [
+          "I'm thinking of visiting you in March.",
+          "I'm thinking about visiting you in March."
+        ],
+        "explanation": "Think of/about + -ing expresa un plan posible.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm thinking to visit you in March.",
+            "why": "Think no va seguido de to + infinitivo; se usa think of/about + gerundio."
+          },
+          {
+            "answer": "I'm thinking visit you in March.",
+            "why": "Falta la preposición of/about antes del gerundio: thinking of visiting."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tengo muchas ganas de saber de vos pronto.",
+        "answers": [
+          "I'm looking forward to hearing from you soon.",
+          "I look forward to hearing from you soon."
+        ],
+        "explanation": "Look forward to + -ing es la forma natural de cerrar un email informal con una expectativa.",
+        "wrongAnswers": [
+          {
+            "answer": "I'm looking forward to hear from you soon.",
+            "why": "Después de look forward to (donde to es preposición) se necesita el gerundio hearing, no el infinitivo hear."
+          },
+          {
+            "answer": "I wait to hear from you soon.",
+            "why": "Esta traducción literal no es la expresión natural en inglés; se usa look forward to + gerundio para cerrar un email."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Mi hermana viene esperando la visa desde hace casi dos años.",
+        "answers": [
+          "My sister has been waiting for her visa for almost two years.",
+          "My sister's been waiting for her visa for almost two years."
+        ],
+        "explanation": "El present perfect continuo con 'for' resalta que una actividad sigue en curso hasta ahora.",
+        "wrongAnswers": [
+          {
+            "answer": "My sister waits for her visa for almost two years.",
+            "why": "El presente simple waits no expresa que la espera continúa desde hace tiempo; se necesita has been waiting."
+          },
+          {
+            "answer": "My sister has waiting for her visa for almost two years.",
+            "why": "Falta been; el present perfect continuo necesita has been + gerundio: has been waiting."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el email y respondé las preguntas.",
+        "text": "Hey Flor,\n\nSorry I haven't written in ages! Life has been pretty hectic. I've been working at a new marketing agency in Belgrano for about three months now, and I've been learning so much, even though it's exhausting. Guess what? I've also decided to start studying French, so I've been going to classes twice a week at a language school near my place.\n\nLast weekend, I finally finished unpacking all my boxes, so my new apartment feels like home now. I've also started going to the gym with my neighbor Sole, and we've been getting up really early to go before work, which is hard but kind of fun.\n\nI'm thinking of visiting my parents in Córdoba next month, and I was wondering if you wanted to come with me. It's been ages since the three of us hung out together.\n\nLet me know how you're doing! I'm looking forward to hearing all your news too.\n\nLove, Martina",
+        "questions": [
+          {
+            "prompt": "¿Qué estuvo haciendo Martina durante los últimos tres meses?",
+            "options": [
+              "Viajando por Córdoba",
+              "Trabajando en una nueva agencia de marketing en Belgrano",
+              "Estudiando francés a tiempo completo",
+              "Buscando un nuevo departamento"
+            ],
+            "correctIndex": 1,
+            "explanation": "El present perfect continuous (I've been working) describe una acción que empezó en el pasado y continúa en el presente, en este caso su trabajo nuevo."
+          },
+          {
+            "prompt": "¿Qué significa 'I'm thinking of visiting my parents in Córdoba next month'?",
+            "options": [
+              "Ya visitó a sus padres el mes pasado",
+              "Decidió que no va a ir",
+              "Está considerando la idea, pero todavía no decidió nada seguro",
+              "Ya compró los pasajes para el viaje"
+            ],
+            "correctIndex": 2,
+            "explanation": "Think of / about + -ing expresa un plan posible que todavía no es una decisión firme, a diferencia de decide + to."
+          },
+          {
+            "prompt": "¿Qué nos dice la frase 'I've also decided to start studying French'?",
+            "options": [
+              "Decidió estudiar francés en el futuro, pero aún no empezó",
+              "Tomó una decisión y ya empezó a tomar clases",
+              "Todavía está pensando si estudiar francés o no",
+              "Dejó de estudiar francés"
+            ],
+            "correctIndex": 1,
+            "explanation": "Decide + to + infinitivo expresa una decisión tomada, y start + -ing indica que ya comenzó a hacerlo; juntos muestran que la decisión ya se puso en acción."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el email y respondé las preguntas.",
+        "text": "Hey Nico,\n\nIt's been a while! Sorry I haven't been in touch for so long, but things have been crazy since I moved to Mendoza. I've been working at a software company downtown for almost four months now, and I've been learning a lot about the wine industry because half our clients are vineyards.\n\nGuess what? I've also started taking a wine-tasting course on Saturdays, and I've met some really interesting people there. I never thought I'd enjoy it so much!\n\nLast month, I finally finished setting up my apartment, so now I have people over for dinner sometimes. I've been going for runs in the mornings too, since the mountains here are amazing for that.\n\nI'm thinking of coming back to Buenos Aires for a few days in December. I've decided to take some time off work, so maybe we could finally catch up in person.\n\nLet me know how everything's going with you. I'm looking forward to hearing your news!\n\nTake care, Juan",
+        "questions": [
+          {
+            "prompt": "¿Qué quiere decir Juan con 'I've been learning a lot about the wine industry'?",
+            "options": [
+              "Que planea aprender sobre vinos en el futuro",
+              "Que ya terminó de aprender todo sobre el vino",
+              "Que aprendió sobre vinos antes de mudarse a Mendoza",
+              "Que fue adquiriendo conocimiento sobre el vino de manera gradual desde que empezó su trabajo"
+            ],
+            "correctIndex": 3,
+            "explanation": "El present perfect continuous describe un proceso que sigue desarrollándose desde un punto del pasado hasta ahora."
+          },
+          {
+            "prompt": "¿Qué nos dice la frase 'I've decided to take some time off work'?",
+            "options": [
+              "Juan ya tomó esos días libres hace varios meses",
+              "Juan tomó una decisión firme sobre sus vacaciones",
+              "El jefe de Juan decidió por él",
+              "Juan todavía está considerando si tomarse tiempo libre"
+            ],
+            "correctIndex": 1,
+            "explanation": "Decide + to + infinitivo expresa una decisión ya tomada, a diferencia de think of + -ing, que expresa solo una posibilidad."
+          },
+          {
+            "prompt": "¿Qué significa 'I'm thinking of coming back to Buenos Aires in December'?",
+            "options": [
+              "Juan ya compró el pasaje",
+              "Es un plan posible que Juan está considerando",
+              "Juan decidió no ir",
+              "Juan está recordando un viaje que hizo en el pasado"
+            ],
+            "correctIndex": 1,
+            "explanation": "Think of / about + -ing se usa para hablar de un plan posible que todavía no está confirmado."
+          }
+        ]
+      }
+    ]
+  }
+}

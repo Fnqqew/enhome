@@ -1,0 +1,2331 @@
+{
+  "subtopics": {
+    "pronombres-relativos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "That's the chef ___ cooked our dinner last night.",
+        "options": [
+          "who",
+          "where",
+          "whose",
+          "which"
+        ],
+        "correctIndex": 0,
+        "explanation": "Who se usa para referirse a personas.",
+        "optionNotes": [
+          "Correcto: who se usa para personas.",
+          "Incorrecto: where se usa para lugares.",
+          "Incorrecto: whose indica posesión, no corresponde aquí.",
+          "Incorrecto: which se usa para cosas o animales, no para personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The laptop ___ I bought last month stopped working.",
+        "options": [
+          "where",
+          "that",
+          "whose",
+          "who"
+        ],
+        "correctIndex": 1,
+        "explanation": "That (o which) se usa para referirse a cosas.",
+        "optionNotes": [
+          "Incorrecto: where se usa para lugares, no para objetos.",
+          "Correcto: that se usa para cosas.",
+          "Incorrecto: whose indica posesión, no corresponde aquí.",
+          "Incorrecto: who es solo para personas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This is the café ___ we first met.",
+        "options": [
+          "who",
+          "which",
+          "whose",
+          "where"
+        ],
+        "correctIndex": 3,
+        "explanation": "Where se usa para referirse a lugares.",
+        "optionNotes": [
+          "Incorrecto: who es para personas, no para lugares.",
+          "Incorrecto: which no introduce un lugar sin una preposición adicional.",
+          "Incorrecto: whose indica posesión, no corresponde aquí.",
+          "Correcto: where se usa para lugares."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I have a friend ___ father is a famous chef.",
+        "options": [
+          "whose",
+          "that",
+          "which",
+          "who's"
+        ],
+        "correctIndex": 0,
+        "explanation": "Whose muestra posesión (de quién es algo), equivalente a 'cuyo' en español.",
+        "optionNotes": [
+          "Correcto: whose muestra posesión.",
+          "Incorrecto: that no muestra posesión.",
+          "Incorrecto: which es para cosas y tampoco muestra posesión de una persona.",
+          "Incorrecto: who's significa 'who is', no expresa posesión."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The book ___ I'm reading at the moment is really interesting.",
+        "options": [
+          "who",
+          "whose",
+          "what",
+          "that"
+        ],
+        "correctIndex": 3,
+        "explanation": "That (o which) se usa para referirse a cosas como 'book'.",
+        "optionNotes": [
+          "Incorrecto: who es solo para personas.",
+          "Incorrecto: whose indica posesión, no corresponde aquí.",
+          "Incorrecto: what no funciona como pronombre relativo después de un sustantivo.",
+          "Correcto: that se usa para cosas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The man ___ helped me carry my suitcase was very kind.",
+        "options": [
+          "who",
+          "whose",
+          "which",
+          "where"
+        ],
+        "correctIndex": 0,
+        "explanation": "Who se usa para personas; which es un error típico porque se usa solo para cosas o animales.",
+        "optionNotes": [
+          "Correcto: who se usa para personas.",
+          "Incorrecto: whose indica posesión, no corresponde aquí.",
+          "Incorrecto: which se usa para cosas o animales, no para personas.",
+          "Incorrecto: where se usa para lugares."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el pronombre relativo correcto.",
+        "sentence": "The woman ___ interviewed me for the job was really friendly.",
+        "hint": "(persona)",
+        "answers": [
+          "who",
+          "that"
+        ],
+        "explanation": "Who (o that) se usa para referirse a personas.",
+        "wrongAnswers": [
+          {
+            "answer": "which",
+            "why": "Which se usa para cosas o animales, no para personas; corresponde who o that."
+          },
+          {
+            "answer": "whose",
+            "why": "Whose indica posesión, pero aquí se necesita un pronombre que reemplace al sujeto 'la mujer'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el pronombre relativo correcto.",
+        "sentence": "The apartment ___ we rented last year was really small.",
+        "hint": "(cosa)",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "That (o which) se usa para referirse a cosas como 'apartment'.",
+        "wrongAnswers": [
+          {
+            "answer": "who",
+            "why": "Who es para personas, pero 'apartment' es una cosa; corresponde that o which."
+          },
+          {
+            "answer": "where",
+            "why": "Where introduce un lugar como complemento, pero aquí el relativo funciona como objeto directo del verbo 'rented'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el pronombre relativo correcto.",
+        "sentence": "Bariloche is the town ___ I grew up.",
+        "hint": "(lugar)",
+        "answers": [
+          "where"
+        ],
+        "explanation": "Where se usa para referirse a lugares.",
+        "wrongAnswers": [
+          {
+            "answer": "which",
+            "why": "Which no funciona solo para expresar lugar; se necesita where."
+          },
+          {
+            "answer": "that",
+            "why": "That sin preposición no expresa correctamente el lugar; where es la forma más clara aquí."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el pronombre relativo correcto.",
+        "sentence": "I have a cousin ___ restaurant became really popular in Palermo.",
+        "hint": "(posesión)",
+        "answers": [
+          "whose"
+        ],
+        "explanation": "Whose muestra posesión, equivalente a 'cuyo' en español.",
+        "wrongAnswers": [
+          {
+            "answer": "who's",
+            "why": "Who's significa 'who is', no muestra posesión; se necesita whose."
+          },
+          {
+            "answer": "who",
+            "why": "Who no muestra posesión; para decir 'cuyo restaurante' se necesita whose."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el pronombre relativo correcto.",
+        "sentence": "The dress ___ she wore to the wedding was beautiful.",
+        "hint": "(cosa)",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "That (o which) se usa para referirse a cosas como 'dress'.",
+        "wrongAnswers": [
+          {
+            "answer": "what",
+            "why": "What no funciona como pronombre relativo después de un sustantivo; se usa that o which."
+          },
+          {
+            "answer": "who",
+            "why": "Who es para personas, pero 'dress' es una cosa."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el pronombre relativo correcto.",
+        "sentence": "The doctor ___ examined me yesterday was very thorough.",
+        "hint": "(persona, sujeto)",
+        "answers": [
+          "who",
+          "that"
+        ],
+        "explanation": "Who (o that) se usa para referirse a personas, y no se puede omitir cuando es el sujeto del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "which",
+            "why": "Which se usa para cosas o animales, no para personas."
+          },
+          {
+            "answer": "whose",
+            "why": "Whose indica posesión, no corresponde para reemplazar al sujeto 'the doctor' en esta oración."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "That's the girl who won the competition.",
+        "alternatives": [],
+        "translation": "Esa es la chica que ganó el concurso.",
+        "explanation": "Who se usa para referirse a personas como sujeto de la oración relativa.",
+        "tokens": [
+          "won",
+          "who",
+          "the",
+          "girl",
+          "the",
+          "That's",
+          "competition"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "This is the café where we first met.",
+        "alternatives": [],
+        "translation": "Este es el café donde nos conocimos por primera vez.",
+        "explanation": "Where se usa para referirse a lugares.",
+        "tokens": [
+          "is",
+          "This",
+          "we",
+          "café",
+          "the",
+          "first",
+          "met",
+          "where"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "I have a friend whose father is a chef.",
+        "alternatives": [],
+        "translation": "Tengo un amigo cuyo padre es chef.",
+        "explanation": "Whose muestra posesión, equivalente a 'cuyo' en español.",
+        "tokens": [
+          "chef",
+          "is",
+          "whose",
+          "a",
+          "have",
+          "friend",
+          "father",
+          "I",
+          "a"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "The man who helped me was very kind.",
+        "alternatives": [],
+        "translation": "El hombre que me ayudó fue muy amable.",
+        "explanation": "Who se usa para referirse a personas como sujeto de la oración relativa.",
+        "tokens": [
+          "helped",
+          "man",
+          "who",
+          "me",
+          "very",
+          "was",
+          "The",
+          "kind"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en inglés.",
+        "sentence": "The laptop that I bought last month broke.",
+        "alternatives": [],
+        "translation": "La laptop que compré el mes pasado se rompió.",
+        "explanation": "That (o which) se usa para referirse a cosas como objeto del verbo 'bought'.",
+        "tokens": [
+          "last",
+          "bought",
+          "laptop",
+          "broke",
+          "that",
+          "I",
+          "month",
+          "The"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "The phone what I bought is broken.",
+        "answers": [
+          "The phone that I bought is broken.",
+          "The phone which I bought is broken.",
+          "The phone I bought is broken."
+        ],
+        "explanation": "What no funciona como pronombre relativo después de un sustantivo; se usa that, which, o se omite porque es el objeto del verbo 'bought'.",
+        "wrongAnswers": [
+          {
+            "answer": "The phone what I bought is broke.",
+            "why": "Cambiar broken por broke no corrige el error real, que es el uso de 'what' como relativo; se necesita that, which, u omitirlo."
+          },
+          {
+            "answer": "The phone who I bought is broken.",
+            "why": "Who se usa para personas, no para cosas como 'phone'; corresponde that, which o la omisión."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "The man which helped me was very kind.",
+        "answers": [
+          "The man who helped me was very kind.",
+          "The man that helped me was very kind."
+        ],
+        "explanation": "Para personas se usa who o that, no which.",
+        "wrongAnswers": [
+          {
+            "answer": "The man which help me was very kind.",
+            "why": "Cambiar helped por help no corrige el error; el problema es which, que no se usa para personas."
+          },
+          {
+            "answer": "The man whose helped me was very kind.",
+            "why": "Whose indica posesión y no tiene sentido aquí; para personas como sujeto se necesita who o that."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "This is the café which we first met.",
+        "answers": [
+          "This is the café where we first met."
+        ],
+        "explanation": "Where se usa para referirse a lugares.",
+        "wrongAnswers": [
+          {
+            "answer": "This is the café that we first met.",
+            "why": "That sin preposición no expresa correctamente el lugar; para indicar dónde ocurrió algo se necesita where."
+          },
+          {
+            "answer": "This is the café who we first met.",
+            "why": "Who se usa para personas, no para lugares como 'café'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "I have a cousin who restaurant became famous.",
+        "answers": [
+          "I have a cousin whose restaurant became famous."
+        ],
+        "explanation": "Whose muestra posesión, equivalente a 'cuyo' en español.",
+        "wrongAnswers": [
+          {
+            "answer": "I have a cousin which restaurant became famous.",
+            "why": "Which no muestra posesión y además no se usa para personas; se necesita whose."
+          },
+          {
+            "answer": "I have a cousin who's restaurant became famous.",
+            "why": "Who's significa 'who is', no expresa posesión; se necesita whose."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y escribí la oración corregida.",
+        "sentence": "The woman whose helped me yesterday works at the bank.",
+        "answers": [
+          "The woman who helped me yesterday works at the bank.",
+          "The woman that helped me yesterday works at the bank."
+        ],
+        "explanation": "Who (o that) se usa como sujeto para referirse a personas; whose solo se usa para mostrar posesión.",
+        "wrongAnswers": [
+          {
+            "answer": "The woman whose help me yesterday works at the bank.",
+            "why": "Cambiar helped por help no corrige el error; el problema es whose, que indica posesión y no corresponde aquí."
+          },
+          {
+            "answer": "The woman which helped me yesterday works at the bank.",
+            "why": "Which se usa para cosas o animales, no para personas; se necesita who o that."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Esa es la chica que ganó el concurso de cocina.",
+        "answers": [
+          "That's the girl who won the cooking competition.",
+          "That's the girl that won the cooking competition.",
+          "That is the girl who won the cooking competition."
+        ],
+        "explanation": "Who (o that) se usa para referirse a personas.",
+        "wrongAnswers": [
+          {
+            "answer": "That's the girl which won the cooking competition.",
+            "why": "Which no se usa para personas; corresponde who o that."
+          },
+          {
+            "answer": "That's the girl what won the cooking competition.",
+            "why": "What no funciona como pronombre relativo después de un sustantivo; se usa who o that."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Este es el café donde nos conocimos.",
+        "answers": [
+          "This is the café where we met.",
+          "This is the café where we first met."
+        ],
+        "explanation": "Where se usa para referirse a lugares.",
+        "wrongAnswers": [
+          {
+            "answer": "This is the café which we met.",
+            "why": "Which no expresa lugar por sí solo; se necesita where para introducir el lugar."
+          },
+          {
+            "answer": "This is the café that we met.",
+            "why": "That sin preposición no expresa correctamente el lugar donde ocurrió algo; se necesita where."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tengo un amigo cuyo papá es un chef famoso.",
+        "answers": [
+          "I have a friend whose father is a famous chef.",
+          "I have a friend whose dad is a famous chef."
+        ],
+        "explanation": "Whose muestra posesión, equivalente a 'cuyo' en español.",
+        "wrongAnswers": [
+          {
+            "answer": "I have a friend who's father is a famous chef.",
+            "why": "Who's significa 'who is', no muestra posesión; se necesita whose."
+          },
+          {
+            "answer": "I have a friend who father is a famous chef.",
+            "why": "Who no muestra posesión; para 'cuyo padre' se necesita whose."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El celular que compré la semana pasada se rompió.",
+        "answers": [
+          "The phone that I bought last week broke.",
+          "The phone which I bought last week broke.",
+          "The phone I bought last week broke."
+        ],
+        "explanation": "That (o which) se usa para referirse a cosas; también se puede omitir cuando es objeto del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "The phone what I bought last week broke.",
+            "why": "What no funciona como pronombre relativo después de un sustantivo; se usa that o which."
+          },
+          {
+            "answer": "The phone who I bought last week broke.",
+            "why": "Who se usa para personas, no para objetos como 'phone'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El hombre que me ayudó a cargar las valijas era muy amable.",
+        "answers": [
+          "The man who helped me carry the suitcases was very kind.",
+          "The man that helped me carry the suitcases was very kind."
+        ],
+        "explanation": "Who (o that) se usa para referirse a personas como sujeto de la oración relativa.",
+        "wrongAnswers": [
+          {
+            "answer": "The man which helped me carry the suitcases was very kind.",
+            "why": "Which no se usa para personas; corresponde who o that."
+          },
+          {
+            "answer": "The man whose helped me carry the suitcases was very kind.",
+            "why": "Whose indica posesión, pero aquí se necesita un sujeto que reemplace a 'el hombre', no una relación de pertenencia."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Bariloche es el pueblo donde crecí.",
+        "answers": [
+          "Bariloche is the town where I grew up."
+        ],
+        "explanation": "Where se usa para referirse a lugares.",
+        "wrongAnswers": [
+          {
+            "answer": "Bariloche is the town which I grew up.",
+            "why": "Which no expresa lugar por sí solo; se necesita where."
+          },
+          {
+            "answer": "Bariloche is the town that I grew up.",
+            "why": "That sin preposición no expresa correctamente el lugar; se necesita where."
+          }
+        ]
+      }
+    ],
+    "especificativas-explicativas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el relativo correcto para completar la oración.",
+        "prompt": "The doctor ___ examined my knee recommended physical therapy.",
+        "options": [
+          "who",
+          "which",
+          "what",
+          "whom"
+        ],
+        "correctIndex": 0,
+        "explanation": "Who se usa para personas como sujeto de la cláusula especificativa, que no necesita comas porque identifica de quién se habla.",
+        "optionNotes": [
+          "Correcto: sujeto persona en cláusula especificativa.",
+          "Incorrecto: which se usa para cosas, no para personas.",
+          "Incorrecto: what no se usa como relativo para introducir este tipo de cláusula.",
+          "Incorrecto: whom es objeto, no sujeto, y no corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el relativo correcto para completar la oración.",
+        "prompt": "My cousin's apartment, ___ is in Palermo, has a great view.",
+        "options": [
+          "that",
+          "who",
+          "what",
+          "which"
+        ],
+        "correctIndex": 3,
+        "explanation": "En las cláusulas explicativas (entre comas) no se usa that; se usa which para cosas y lugares.",
+        "optionNotes": [
+          "Error típico: that no se usa en cláusulas explicativas, entre comas.",
+          "Incorrecto: who se usa para personas, no para 'apartment'.",
+          "Incorrecto: what no funciona como relativo para introducir información extra sobre un sustantivo.",
+          "Correcto: which se usa para cosas o lugares en explicativas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el relativo correcto para completar la oración.",
+        "prompt": "Marcos forgot his passport at home, ___ delayed the whole group at the airport.",
+        "options": [
+          "who",
+          "which",
+          "what",
+          "that"
+        ],
+        "correctIndex": 1,
+        "explanation": "Which puede referirse a toda la oración anterior, equivalente a 'lo que' o 'lo cual'; what no cumple esta función.",
+        "optionNotes": [
+          "Incorrecto: who se usa para personas, no para situaciones.",
+          "Correcto: se refiere a toda la situación anterior (olvidarse el pasaporte).",
+          "Error típico: what no se usa para resumir toda una oración anterior.",
+          "Incorrecto: that no se usa después de coma para referirse a toda una idea anterior."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la oración que significa que SOLO los médicos que se especializan en pediatría recibieron entrenamiento extra.",
+        "prompt": "Which sentence means that only the doctors specializing in pediatrics got extra training, not all doctors?",
+        "options": [
+          "The doctors, who specialize in pediatrics, got extra training.",
+          "The doctors, that specialize in pediatrics, got extra training.",
+          "The doctors whom specialize in pediatrics got extra training.",
+          "The doctors who specialize in pediatrics got extra training."
+        ],
+        "correctIndex": 3,
+        "explanation": "Sin comas, la cláusula es especificativa y limita el significado a 'solo los que se especializan en pediatría'; con comas sonaría como un dato extra sobre todos los médicos.",
+        "optionNotes": [
+          "Incorrecto: con comas es explicativa, como si todos los médicos se especializaran en pediatría.",
+          "Incorrecto: combina comas (explicativa) con that, que no se usa en explicativas, y además cambia el sentido.",
+          "Incorrecto: whom es objeto, no corresponde como sujeto de la cláusula.",
+          "Correcto: sin comas, limita el significado solo a los que se especializan en pediatría."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el relativo correcto para completar la oración.",
+        "prompt": "Valentina passed the bar exam on her first attempt, ___ surprised everyone in her family.",
+        "options": [
+          "who",
+          "what",
+          "that",
+          "which"
+        ],
+        "correctIndex": 3,
+        "explanation": "Which puede resumir toda la oración anterior y equivale a 'lo cual'; what no se usa en esta estructura.",
+        "optionNotes": [
+          "Incorrecto: who se usa para personas, no para una situación completa.",
+          "Error típico: what no se usa para esta función.",
+          "Incorrecto: that no se usa después de coma para referirse a toda la oración anterior.",
+          "Correcto: se refiere a toda la acción anterior (aprobar el examen)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el relativo correcto para completar la oración.",
+        "prompt": "The tenant ___ car was towed last week is complaining to the building manager.",
+        "options": [
+          "which",
+          "who",
+          "that",
+          "whose"
+        ],
+        "correctIndex": 3,
+        "explanation": "Whose se usa para mostrar posesión dentro de la cláusula relativa, equivalente a 'cuyo/cuya'.",
+        "optionNotes": [
+          "Incorrecto: which se usa para cosas, no para personas, y no indica posesión.",
+          "Incorrecto: who no indica posesión, solo funciona como sujeto.",
+          "Incorrecto: that no indica posesión.",
+          "Correcto: indica posesión, el auto es del inquilino."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el relativo correcto.",
+        "sentence": "The nurse ___ took my blood pressure was really friendly.",
+        "hint": "(relativo para personas)",
+        "answers": [
+          "who",
+          "that"
+        ],
+        "explanation": "En una cláusula especificativa sobre una persona como sujeto, se usa who (o that), sin comas.",
+        "wrongAnswers": [
+          {
+            "answer": "which",
+            "why": "Which se usa para cosas, no para personas."
+          },
+          {
+            "answer": "whom",
+            "why": "Whom se usa como objeto, pero acá el relativo es el sujeto de 'took'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el relativo correcto.",
+        "sentence": "My uncle's house, ___ is near the beach, was built in the 1950s.",
+        "hint": "(relativo para cosas, explicativa)",
+        "answers": [
+          "which"
+        ],
+        "explanation": "En las explicativas (entre comas) se usa which para cosas, nunca that.",
+        "wrongAnswers": [
+          {
+            "answer": "that",
+            "why": "En las cláusulas explicativas, entre comas, no se usa that."
+          },
+          {
+            "answer": "who",
+            "why": "Who se usa para personas, no para 'house'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el relativo correcto.",
+        "sentence": "Fede lost his wallet on the bus, ___ ruined his whole day.",
+        "hint": "(relativo para toda la oración anterior)",
+        "answers": [
+          "which"
+        ],
+        "explanation": "Which puede referirse a toda la oración anterior, equivalente a 'lo cual'.",
+        "wrongAnswers": [
+          {
+            "answer": "what",
+            "why": "Para referirse a toda la oración anterior ('lo que', 'lo cual') se usa which, no what."
+          },
+          {
+            "answer": "that",
+            "why": "No se usa that después de una coma para resumir toda la oración anterior."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el relativo correcto.",
+        "sentence": "The woman ___ suitcase was lost at the airport filed a complaint.",
+        "hint": "(relativo de posesión)",
+        "answers": [
+          "whose"
+        ],
+        "explanation": "Whose se usa para indicar posesión, equivalente a 'cuyo/cuya'.",
+        "wrongAnswers": [
+          {
+            "answer": "who",
+            "why": "Who no indica posesión; acá se necesita mostrar que la maleta es de la mujer."
+          },
+          {
+            "answer": "which",
+            "why": "Which se usa para cosas, no para personas como antecedente."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el relativo correcto.",
+        "sentence": "The apartment ___ Marina rented last month is downtown.",
+        "hint": "(relativo para cosas)",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "En cláusulas especificativas sobre cosas, se puede usar that o which, ya que el relativo es el objeto del verbo 'rented'.",
+        "wrongAnswers": [
+          {
+            "answer": "who",
+            "why": "Who se usa para personas, no para 'apartment'."
+          },
+          {
+            "answer": "whose",
+            "why": "Whose indica posesión, pero acá no se expresa posesión."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el relativo correcto.",
+        "sentence": "Lucía got a promotion at work, ___ made her parents incredibly proud.",
+        "hint": "(relativo para toda la oración anterior)",
+        "answers": [
+          "which"
+        ],
+        "explanation": "Which puede resumir toda la oración anterior, funcionando como 'lo cual'.",
+        "wrongAnswers": [
+          {
+            "answer": "what",
+            "why": "What no se usa para resumir toda la oración anterior; se necesita which."
+          },
+          {
+            "answer": "that",
+            "why": "That no se usa después de una coma para referirse a toda la idea anterior."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "The students who passed the exam got a certificate.",
+        "alternatives": [],
+        "translation": "Los estudiantes que aprobaron el examen recibieron un certificado.",
+        "explanation": "Es una cláusula especificativa, sin comas, porque identifica solo a los estudiantes que aprobaron.",
+        "tokens": [
+          "passed",
+          "The",
+          "students",
+          "who",
+          "exam",
+          "the",
+          "certificate",
+          "a",
+          "got"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "My sister, who lives in Spain, is a nurse.",
+        "alternatives": [],
+        "translation": "Mi hermana, que vive en España, es enfermera.",
+        "explanation": "Es una cláusula explicativa, entre comas, porque agrega un dato extra sobre una hermana ya identificada.",
+        "tokens": [
+          "who",
+          "in",
+          "a",
+          "Spain,",
+          "lives",
+          "is",
+          "My",
+          "sister,",
+          "nurse"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "He didn't call, which was really strange.",
+        "alternatives": [],
+        "translation": "No llamó, lo cual fue realmente extraño.",
+        "explanation": "Which se refiere a toda la oración anterior, equivalente a 'lo cual'.",
+        "tokens": [
+          "call,",
+          "really",
+          "He",
+          "which",
+          "was",
+          "strange",
+          "didn't"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "The man whose car broke down called a tow truck.",
+        "alternatives": [],
+        "translation": "El hombre cuyo auto se descompuso llamó a una grúa.",
+        "explanation": "Whose indica posesión dentro de la cláusula relativa, equivalente a 'cuyo'.",
+        "tokens": [
+          "whose",
+          "car",
+          "man",
+          "truck",
+          "down",
+          "tow",
+          "called",
+          "broke",
+          "a",
+          "The"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "The flight that leaves at six is cheaper.",
+        "alternatives": [],
+        "translation": "El vuelo que sale a las seis es más barato.",
+        "explanation": "Es una cláusula especificativa, sin comas, porque identifica de qué vuelo se habla entre varios posibles.",
+        "tokens": [
+          "at",
+          "is",
+          "six",
+          "The",
+          "cheaper",
+          "leaves",
+          "that",
+          "flight"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los relativos.",
+        "sentence": "Buenos Aires, that is the capital of Argentina, is huge.",
+        "answers": [
+          "Buenos Aires, which is the capital of Argentina, is huge."
+        ],
+        "explanation": "En las explicativas (entre comas) no se usa that: va which o who.",
+        "wrongAnswers": [
+          {
+            "answer": "Buenos Aires, which is the capital of Argentina, is big.",
+            "why": "Cambia 'huge' por 'big' innecesariamente; el error real es usar 'that' en una explicativa, que debe ser 'which'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los relativos.",
+        "sentence": "He was late, what annoyed everyone at the meeting.",
+        "answers": [
+          "He was late, which annoyed everyone at the meeting."
+        ],
+        "explanation": "Para referirte a toda la oración anterior ('lo que', 'lo cual') se usa which, no what.",
+        "wrongAnswers": [
+          {
+            "answer": "He was late, which annoys everyone at the meeting.",
+            "why": "Cambia el tiempo verbal innecesariamente; el error real es 'what', que debe ser 'which' para referirse a toda la oración anterior."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los relativos.",
+        "sentence": "My boss, that studied in the US, speaks perfect English.",
+        "answers": [
+          "My boss, who studied in the US, speaks perfect English."
+        ],
+        "explanation": "En las explicativas no se usa that, y además which no se usa para personas; con personas corresponde who.",
+        "wrongAnswers": [
+          {
+            "answer": "My boss, which studied in the US, speaks perfect English.",
+            "why": "Which se usa para cosas, no para personas; el antecedente 'boss' es una persona, por lo que corresponde 'who'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los relativos.",
+        "sentence": "The woman who car was stolen called the police immediately.",
+        "answers": [
+          "The woman whose car was stolen called the police immediately."
+        ],
+        "explanation": "Para indicar posesión dentro de la cláusula relativa se usa whose, no who.",
+        "wrongAnswers": [
+          {
+            "answer": "The woman who's car was stolen called the police immediately.",
+            "why": "Confunde 'whose' (posesivo) con la contracción 'who's' (who is), que no indica posesión."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los relativos.",
+        "sentence": "The report, that was written by the intern, had several mistakes.",
+        "answers": [
+          "The report, which was written by the intern, had several mistakes."
+        ],
+        "explanation": "En las cláusulas explicativas (entre comas) no se usa that; para cosas corresponde which.",
+        "wrongAnswers": [
+          {
+            "answer": "The report, who was written by the intern, had several mistakes.",
+            "why": "Who se usa para personas, no para 'report'; el error real es usar 'that' en una explicativa, que debe corregirse con 'which'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el relativo correcto.",
+        "spanish": "El médico que me revisó la rodilla me recomendó fisioterapia.",
+        "answers": [
+          "The doctor who examined my knee recommended physical therapy.",
+          "The doctor that examined my knee recommended physical therapy."
+        ],
+        "explanation": "Cuando la cláusula identifica de quién se habla (hay varios médicos posibles), es especificativa y va sin comas.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor, who examined my knee, recommended physical therapy.",
+            "why": "Agregar comas convierte la cláusula en explicativa, como si ya supiéramos de qué médico se habla; acá la cláusula identifica de qué médico se trata, por lo que debe ir sin comas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el relativo correcto.",
+        "spanish": "Mi hermano, que es médico, trabaja en Mendoza.",
+        "answers": [
+          "My brother, who is a doctor, works in Mendoza."
+        ],
+        "explanation": "Cuando el dato es extra y no identifica de quién hablás (porque ya se sabe quién es), la cláusula es explicativa y va entre comas con who.",
+        "wrongAnswers": [
+          {
+            "answer": "My brother, that is a doctor, works in Mendoza.",
+            "why": "En las explicativas (entre comas) no se usa that; corresponde who para personas."
+          },
+          {
+            "answer": "My brother who is a doctor works in Mendoza.",
+            "why": "Falta las comas; la información de que es médico es un dato extra que no identifica a cuál hermano te referís, por lo que debe ir entre comas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el relativo correcto.",
+        "spanish": "Se le pinchó una goma, lo cual la hizo llegar tarde a la entrevista.",
+        "answers": [
+          "She got a flat tyre, which made her late for the interview.",
+          "She got a flat tire, which made her late for the interview."
+        ],
+        "explanation": "Which puede referirse a toda la oración anterior, equivalente a 'lo cual'.",
+        "wrongAnswers": [
+          {
+            "answer": "She got a flat tyre, what made her late for the interview.",
+            "why": "Para referirse a toda la oración anterior ('lo cual') se usa which, no what."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el relativo correcto.",
+        "spanish": "El inquilino cuyo contrato vence este mes quiere renovarlo.",
+        "answers": [
+          "The tenant whose contract expires this month wants to renew it."
+        ],
+        "explanation": "Whose se usa para indicar posesión dentro de la cláusula relativa, equivalente a 'cuyo/cuya'.",
+        "wrongAnswers": [
+          {
+            "answer": "The tenant who contract expires this month wants to renew it.",
+            "why": "Who no indica posesión; para expresar 'cuyo' se necesita whose."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el relativo correcto.",
+        "spanish": "El vuelo que sale a las seis de la mañana es más barato que el de la tarde.",
+        "answers": [
+          "The flight that leaves at six in the morning is cheaper than the afternoon one.",
+          "The flight which leaves at six in the morning is cheaper than the afternoon one."
+        ],
+        "explanation": "Cuando la cláusula identifica de qué elemento se habla entre varias opciones, es especificativa y va sin comas.",
+        "wrongAnswers": [
+          {
+            "answer": "The flight, that leaves at six in the morning, is cheaper than the afternoon one.",
+            "why": "Agregar comas no corresponde porque la cláusula identifica de qué vuelo se habla entre varias opciones, por lo que debe ser especificativa, sin comas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el relativo correcto.",
+        "spanish": "Mi vecina, que tiene ochenta años, todavía sale a correr todos los días.",
+        "answers": [
+          "My neighbour, who is eighty years old, still goes running every day.",
+          "My neighbor, who is eighty years old, still goes running every day."
+        ],
+        "explanation": "Cuando el dato es extra sobre una persona ya identificada, la cláusula es explicativa, va entre comas y usa who, nunca that.",
+        "wrongAnswers": [
+          {
+            "answer": "My neighbour, that is eighty years old, still goes running every day.",
+            "why": "En las explicativas (entre comas) no se usa that; con personas corresponde who."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas.",
+        "text": "Last month, the manager at Marcos's company sent an important email. The employees who completed the new safety training before the deadline received a $50,000 bonus. Marcos had been very busy with a project, so he wasn't sure if he had finished the training on time.\n\nHe called his coworker Flor, who works in Human Resources, to ask about it. Flor told him that only the employees who had completed every module by Friday were included in the bonus list. Marcos, who finished the training on Thursday night, felt relieved when he checked his name on the list.\n\nHis friend Ezequiel, who started at the company the same week as Marcos, wasn't so lucky. Ezequiel had finished the training, but he submitted the final quiz one day after the deadline, which meant he didn't get the bonus. Marcos felt bad for him and offered to buy him lunch instead.",
+        "questions": [
+          {
+            "prompt": "Según el texto, ¿quiénes recibieron el bono?",
+            "options": [
+              "Todos los empleados de la empresa",
+              "Solo Marcos y Flor",
+              "Solo los empleados que trabajan en Recursos Humanos",
+              "Solo los empleados que completaron el entrenamiento antes del viernes"
+            ],
+            "correctIndex": 3,
+            "explanation": "La cláusula especificativa 'who completed... by Friday' indica que solo esos empleados recibieron el bono, sin comas porque es información necesaria."
+          },
+          {
+            "prompt": "¿Qué nos dice la frase 'Marcos, who finished the training on Thursday night, felt relieved'?",
+            "options": [
+              "Marcos terminó el viernes, no el jueves",
+              "Solo los empleados que terminaron un jueves recibieron el bono",
+              "Es información extra sobre Marcos; él ya había terminado antes de la fecha límite",
+              "Marcos no es uno de los empleados que recibió el bono"
+            ],
+            "correctIndex": 2,
+            "explanation": "La cláusula explicativa entre comas agrega un dato extra sobre Marcos, no define una condición para el bono."
+          },
+          {
+            "prompt": "¿Qué le pasó a Ezequiel, según el texto?",
+            "options": [
+              "Recibió el bono junto con Marcos",
+              "Nunca empezó el entrenamiento",
+              "Lo despidieron por llegar tarde",
+              "Terminó el entrenamiento pero entregó el cuestionario demasiado tarde, así que no recibió el bono"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto indica que Ezequiel completó el entrenamiento pero entregó el cuestionario después de la fecha límite, lo cual (which) significó que no recibió el bono."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas.",
+        "text": "When Julieta arrived in Bariloche last weekend, she joined a tour to see the Nahuel Huapi Lake. The tourists who had booked the full-day excursion were taken to three different viewpoints, while the ones with the half-day ticket only visited one.\n\nHer guide, Rodrigo, who has worked in the mountains for over ten years, knew every trail by heart. He told the group that the viewpoint that offers the best photos is usually the last stop, so people shouldn't get tired and skip it.\n\nJulieta's friend Nadia, who was supposed to join the trip too, missed the bus because she overslept. Nadia called Julieta, who was already on the bus, to ask if there was any way to catch up with the group. Unfortunately, the bus that left at eight was already far from the hotel, so Nadia had to wait for the afternoon tour instead.",
+        "questions": [
+          {
+            "prompt": "Según el texto, ¿a qué turistas llevaron a los tres miradores distintos?",
+            "options": [
+              "Solo a los turistas con el ticket de medio día",
+              "Solo a los que habían reservado la excursión de día completo",
+              "A todos los turistas que estaban en Bariloche",
+              "Solo a los amigos personales de Rodrigo"
+            ],
+            "correctIndex": 1,
+            "explanation": "La cláusula especificativa 'who had booked the full-day excursion' indica una condición necesaria: solo esos turistas fueron a los tres miradores."
+          },
+          {
+            "prompt": "¿Qué nos dice el texto sobre Rodrigo con la frase 'who has worked in the mountains for over ten years'?",
+            "options": [
+              "Es información extra sobre su experiencia; no define de qué guía se trata",
+              "Especifica que hay varias personas llamadas Rodrigo",
+              "Significa que dejó de trabajar en la montaña hace diez años",
+              "Significa que solo los guías con diez años de experiencia pueden trabajar ahí"
+            ],
+            "correctIndex": 0,
+            "explanation": "La cláusula explicativa entre comas agrega información adicional sobre Rodrigo, que ya está identificado por su nombre."
+          },
+          {
+            "prompt": "¿Por qué Nadia no pudo alcanzar al grupo?",
+            "options": [
+              "Porque decidió no hacer el viaje",
+              "Porque Julieta no le atendió el teléfono",
+              "Porque el colectivo que salió a las ocho ya estaba muy lejos del hotel",
+              "Porque cancelaron la excursión de la tarde"
+            ],
+            "correctIndex": 2,
+            "explanation": "La cláusula especificativa 'that left at eight' identifica justamente ese colectivo, el que ya se había alejado del hotel."
+          }
+        ]
+      }
+    ],
+    "deduccion": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la deducción.",
+        "prompt": "Marcos has been at his desk since 7 a.m. without a break. He ___ exhausted.",
+        "options": [
+          "must to be",
+          "might be",
+          "must be",
+          "can't be"
+        ],
+        "correctIndex": 2,
+        "explanation": "Hay evidencia clara (trabajó muchas horas sin descanso) que permite una conclusión segura, por eso se usa 'must'.",
+        "optionNotes": [
+          "'must to be' es incorrecto: después de 'must' el verbo va sin 'to'.",
+          "'might be' expresa duda, pero la situación da certeza suficiente para usar 'must'.",
+          "Correcto: la evidencia es fuerte y clara, se usa 'must' para una deducción segura.",
+          "'can't be' niega la deducción, pero contradice la evidencia presentada."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la deducción.",
+        "prompt": "Nobody has seen Valentina since lunch. She ___ be in a meeting; I'm not sure.",
+        "options": [
+          "might",
+          "can't",
+          "mustn't",
+          "must"
+        ],
+        "correctIndex": 0,
+        "explanation": "La oración indica incertidumbre ('I'm not sure'), por eso corresponde 'might', que expresa posibilidad sin certeza.",
+        "optionNotes": [
+          "Correcto: 'might' expresa una posibilidad cuando no hay certeza.",
+          "'can't' negaría la posibilidad, pero no hay evidencia para descartarla.",
+          "'mustn't' expresa prohibición, no se usa para hacer deducciones.",
+          "'must' indicaría una conclusión segura, pero la oración aclara que no hay certeza."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la deducción.",
+        "prompt": "The lights in Martín's apartment are off and his car isn't in the garage. He ___ be home.",
+        "options": [
+          "might not",
+          "can't",
+          "must",
+          "mustn't"
+        ],
+        "correctIndex": 1,
+        "explanation": "Hay dos evidencias claras (luces apagadas, auto ausente) que permiten descartar con seguridad, por eso se usa 'can't'.",
+        "optionNotes": [
+          "'might not' indica duda, pero la evidencia es demasiado clara para solo una posibilidad.",
+          "Correcto: 'can't' se usa para negar una deducción con total seguridad.",
+          "'must' indicaría una afirmación positiva, contraria a la evidencia presentada.",
+          "'mustn't' expresa prohibición, no una deducción negativa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la deducción.",
+        "prompt": "Lucas is sweating and his hands are shaking before the interview. He ___ nervous.",
+        "options": [
+          "can't be",
+          "must being",
+          "must be",
+          "might be"
+        ],
+        "correctIndex": 2,
+        "explanation": "Los síntomas físicos (sudor, manos temblando) dan una evidencia clara, por eso corresponde 'must be' para una deducción segura.",
+        "optionNotes": [
+          "'can't be' negaría la deducción, pero contradice totalmente la evidencia.",
+          "'must being' es gramaticalmente incorrecto; después de 'must' va el infinitivo sin 'to' (be).",
+          "Correcto: la evidencia física es clara, se usa 'must be' para una conclusión segura.",
+          "'might be' expresa duda, pero los síntomas son evidentes y permiten mayor certeza."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la deducción.",
+        "prompt": "I can hear pots and pans in the kitchen. The chefs ___ lunch right now.",
+        "options": [
+          "might preparing",
+          "can't preparing",
+          "must be preparing",
+          "must prepare"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para deducir sobre una acción en curso se usa must + be + -ing; el ruido de ollas es evidencia clara de que están cocinando ahora mismo.",
+        "optionNotes": [
+          "'might preparing' le falta el verbo 'be' entre el modal y el gerundio.",
+          "'can't preparing' también le falta 'be', y además 'can't' contradice la evidencia presentada.",
+          "Correcto: 'must be preparing' combina la deducción segura con la forma continua para una acción en curso.",
+          "'must prepare' le falta 'be + -ing', necesario para describir una acción que ocurre en este momento."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la deducción.",
+        "prompt": "Rodrigo has a high fever and a terrible cough. He ___ a bad flu.",
+        "options": [
+          "must having",
+          "must have",
+          "can't have",
+          "might have"
+        ],
+        "correctIndex": 1,
+        "explanation": "Los síntomas claros (fiebre alta, tos terrible) permiten una conclusión segura, por eso se usa 'must have'.",
+        "optionNotes": [
+          "'must having' es incorrecto; después de 'must' el verbo va en infinitivo sin '-ing' (have).",
+          "Correcto: los síntomas son evidencia clara, se usa 'must have' para una deducción segura.",
+          "'can't have' negaría la deducción, pero contradice la evidencia de los síntomas.",
+          "'might have' expresa duda, pero los síntomas son demasiado claros para solo una posibilidad."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal de deducción correcto.",
+        "sentence": "Camila ___ at the office; her car is in the parking lot.",
+        "hint": "(be - deducción segura)",
+        "answers": [
+          "must be"
+        ],
+        "explanation": "La evidencia (el auto en el estacionamiento) permite una conclusión segura, por eso se usa 'must be'.",
+        "wrongAnswers": [
+          {
+            "answer": "might be",
+            "why": "Indica duda, pero hay evidencia clara (el auto estacionado) que permite una conclusión segura."
+          },
+          {
+            "answer": "can't be",
+            "why": "Niega la deducción, pero la evidencia confirma justamente lo contrario."
+          },
+          {
+            "answer": "must to be",
+            "why": "Después de 'must' el verbo va sin 'to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal de deducción correcto.",
+        "sentence": "I'm not sure if Nicolás is coming to the party. He ___ busy with work.",
+        "hint": "(be - no estás seguro)",
+        "answers": [
+          "might be",
+          "may be",
+          "could be"
+        ],
+        "explanation": "Como la oración indica incertidumbre ('not sure'), corresponde un modal de posibilidad como 'might be'.",
+        "wrongAnswers": [
+          {
+            "answer": "must be",
+            "why": "Expresa certeza, pero la oración indica duda ('I'm not sure')."
+          },
+          {
+            "answer": "can't be",
+            "why": "Niega la posibilidad, pero no hay evidencia para descartarla por completo."
+          },
+          {
+            "answer": "mustn't be",
+            "why": "Expresa prohibición, no se usa para hacer una deducción posible."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal de deducción correcto.",
+        "sentence": "Valentina said she was in Rosario this morning, so that ___ her in the photo from Buenos Aires.",
+        "hint": "(be - deducción negativa segura)",
+        "answers": [
+          "can't be"
+        ],
+        "explanation": "Como hay evidencia clara que contradice la foto, se usa 'can't be' para negar con total seguridad.",
+        "wrongAnswers": [
+          {
+            "answer": "mustn't be",
+            "why": "Expresa prohibición, no una deducción negativa segura."
+          },
+          {
+            "answer": "might not be",
+            "why": "Indica duda, pero hay evidencia clara (ella estaba en Rosario) que permite descartarlo con seguridad."
+          },
+          {
+            "answer": "doesn't be",
+            "why": "No es una forma válida en inglés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal de deducción correcto.",
+        "sentence": "Listen, the neighbors ___ a party; I can hear loud music and laughter.",
+        "hint": "(have - acción en curso, deducción segura)",
+        "answers": [
+          "must be having"
+        ],
+        "explanation": "Para deducir sobre una acción en curso con certeza se usa must + be + -ing (must be having).",
+        "wrongAnswers": [
+          {
+            "answer": "must have",
+            "why": "Falta 'be + -ing' para describir una acción que está ocurriendo en este momento."
+          },
+          {
+            "answer": "might be having",
+            "why": "Indica duda, pero la evidencia (música y risas) es clara y permite una conclusión segura."
+          },
+          {
+            "answer": "must having",
+            "why": "Falta el verbo 'be' entre 'must' y 'having'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal de deducción correcto.",
+        "sentence": "Lucas isn't answering his phone. He ___ in class right now.",
+        "hint": "(be - no estás seguro, acción en curso)",
+        "answers": [
+          "might be",
+          "may be",
+          "could be"
+        ],
+        "explanation": "Como no hay evidencia suficiente, corresponde un modal de posibilidad como 'might be' en vez de una certeza.",
+        "wrongAnswers": [
+          {
+            "answer": "must be",
+            "why": "Expresa certeza total, pero no hay evidencia suficiente para estar completamente seguro."
+          },
+          {
+            "answer": "can't be",
+            "why": "Niega la posibilidad, pero no hay evidencia para descartarla."
+          },
+          {
+            "answer": "might being",
+            "why": "El verbo 'be' está mal ubicado; después de 'might' va 'be' seguido del adjetivo o frase."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal de deducción correcto.",
+        "sentence": "The landlord said the apartment was empty, so those ___ his tenants at the door.",
+        "hint": "(be - deducción negativa segura)",
+        "answers": [
+          "can't be"
+        ],
+        "explanation": "Como la información del dueño contradice claramente la situación, se usa 'can't be' para negar con seguridad.",
+        "wrongAnswers": [
+          {
+            "answer": "mustn't be",
+            "why": "Expresa prohibición, no una deducción negativa segura."
+          },
+          {
+            "answer": "might not be",
+            "why": "Indica duda, pero la evidencia (el departamento estaba vacío) es clara y permite descartarlo con seguridad."
+          },
+          {
+            "answer": "isn't",
+            "why": "No tiene la forma modal necesaria para expresar una deducción."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Camila must be exhausted after that long flight.",
+        "alternatives": [
+          "After that long flight, Camila must be exhausted."
+        ],
+        "translation": "Camila debe estar agotada después de ese vuelo largo.",
+        "explanation": "Se usa 'must be' para una deducción segura sobre el estado actual de Camila, basada en la evidencia del vuelo largo.",
+        "tokens": [
+          "must",
+          "exhausted",
+          "Camila",
+          "be",
+          "flight",
+          "that",
+          "long",
+          "after"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nicolás might be stuck in traffic on his way here.",
+        "alternatives": [],
+        "translation": "Puede que Nicolás esté atascado en el tráfico viniendo para acá.",
+        "explanation": "Se usa 'might be' para expresar una posibilidad sin certeza sobre por qué Nicolás no llega.",
+        "tokens": [
+          "Nicolás",
+          "his",
+          "be",
+          "here",
+          "might",
+          "stuck",
+          "on",
+          "in",
+          "way",
+          "traffic"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "That can't be Valentina; she's in Rosario today.",
+        "alternatives": [],
+        "translation": "Esa no puede ser Valentina; ella está en Rosario hoy.",
+        "explanation": "Se usa 'can't be' para negar con seguridad una deducción, ya que hay evidencia clara que lo contradice.",
+        "tokens": [
+          "she's",
+          "That",
+          "Valentina;",
+          "in",
+          "Rosario",
+          "be",
+          "can't",
+          "today"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The neighbors must be having a party tonight.",
+        "alternatives": [],
+        "translation": "Los vecinos deben estar festejando esta noche.",
+        "explanation": "Se usa must + be + -ing para deducir con seguridad sobre una acción que está ocurriendo en este momento.",
+        "tokens": [
+          "tonight",
+          "must",
+          "having",
+          "party",
+          "neighbors",
+          "be",
+          "The",
+          "a"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Lucas might be in a meeting with his boss.",
+        "alternatives": [],
+        "translation": "Puede que Lucas esté en una reunión con su jefe.",
+        "explanation": "Se usa 'might be' para expresar una posibilidad sin certeza sobre dónde está Lucas.",
+        "tokens": [
+          "boss",
+          "be",
+          "Lucas",
+          "with",
+          "meeting",
+          "a",
+          "might",
+          "his",
+          "in"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los modales de deducción.",
+        "sentence": "He mustn't be at home; the lights are off.",
+        "answers": [
+          "He can't be at home; the lights are off."
+        ],
+        "explanation": "Para decir 'seguro que no' en una deducción se usa 'can't', no 'mustn't', que expresa prohibición.",
+        "wrongAnswers": [
+          {
+            "answer": "He must not be at home; the lights are off.",
+            "why": "'must not' significa lo mismo que 'mustn't' (prohibición) y no corrige el error; para una deducción negativa segura se usa 'can't'."
+          },
+          {
+            "answer": "He mustn't been at home; the lights are off.",
+            "why": "Cambia la forma verbal pero no corrige el modal incorrecto para expresar la deducción negativa."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los modales de deducción.",
+        "sentence": "She must to be his sister; they look so alike.",
+        "answers": [
+          "She must be his sister; they look so alike."
+        ],
+        "explanation": "Después de 'must' el verbo va en infinitivo sin 'to', por eso corresponde 'must be', no 'must to be'.",
+        "wrongAnswers": [
+          {
+            "answer": "She musts be his sister; they look so alike.",
+            "why": "Agrega una 's' incorrecta a 'must', que nunca cambia de forma sin importar el sujeto."
+          },
+          {
+            "answer": "She must being his sister; they look so alike.",
+            "why": "Usa una forma incorrecta del verbo después de 'must'; debe ir en infinitivo sin 'to' (be)."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los modales de deducción.",
+        "sentence": "Martín can't being at the gym; his car isn't there.",
+        "answers": [
+          "Martín can't be at the gym; his car isn't there."
+        ],
+        "explanation": "Después de 'can't' el verbo va en infinitivo sin 'to', por eso corresponde 'be', no 'being'.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín can't been at the gym; his car isn't there.",
+            "why": "Usa el participio en vez del infinitivo; después de 'can't' el verbo va en infinitivo sin 'to' (be)."
+          },
+          {
+            "answer": "Martín couldn't being at the gym; his car isn't there.",
+            "why": "Cambia el modal a 'couldn't', que no expresa la misma certeza negativa que 'can't' en una deducción, y tampoco corrige la forma verbal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los modales de deducción.",
+        "sentence": "I hear voices in the kitchen. The chefs must preparing dinner.",
+        "answers": [
+          "I hear voices in the kitchen. The chefs must be preparing dinner."
+        ],
+        "explanation": "Para deducir sobre una acción en curso se usa must + be + -ing, por eso falta el verbo 'be' antes de 'preparing'.",
+        "wrongAnswers": [
+          {
+            "answer": "I hear voices in the kitchen. The chefs must prepare dinner.",
+            "why": "Elimina la forma continua, pero la acción está ocurriendo ahora mismo, por eso se necesita 'be + -ing'."
+          },
+          {
+            "answer": "I hear voices in the kitchen. The chefs might preparing dinner.",
+            "why": "Cambia el modal a 'might', pero no corrige el verdadero error, que es la falta de 'be' antes de 'preparing'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los modales de deducción.",
+        "sentence": "Lucas doesn't answer his phone. He mustn't be in class right now; I'm not sure.",
+        "answers": [
+          "Lucas doesn't answer his phone. He might not be in class right now; I'm not sure.",
+          "Lucas doesn't answer his phone. He may not be in class right now; I'm not sure."
+        ],
+        "explanation": "Como la oración indica incertidumbre ('I'm not sure'), corresponde 'might not', no 'mustn't', que expresa prohibición.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas doesn't answer his phone. He can't be in class right now; I'm not sure.",
+            "why": "'can't' expresa certeza total de que algo es imposible, pero la oración indica duda ('I'm not sure'), no certeza."
+          },
+          {
+            "answer": "Lucas doesn't answer his phone. He must not be in class right now; I'm not sure.",
+            "why": "'must not' significa lo mismo que 'mustn't' (prohibición) y contradice 'I'm not sure', que indica incertidumbre."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el modal de deducción correcto.",
+        "spanish": "Debés estar agotado después de viajar veinte horas.",
+        "answers": [
+          "You must be exhausted after traveling for twenty hours.",
+          "You must be exhausted after traveling twenty hours."
+        ],
+        "explanation": "La evidencia (veinte horas de viaje) permite una conclusión segura, por eso se usa 'must be'.",
+        "wrongAnswers": [
+          {
+            "answer": "You must to be exhausted after traveling for twenty hours.",
+            "why": "Después de 'must' el verbo va sin 'to'."
+          },
+          {
+            "answer": "You might be exhausted after traveling for twenty hours.",
+            "why": "Expresa duda, pero la situación (veinte horas de viaje) da una evidencia clara que permite usar 'must' con seguridad."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el modal de deducción correcto.",
+        "spanish": "Puede que Lucía esté en el gimnasio; no estoy seguro.",
+        "answers": [
+          "Lucía might be at the gym; I'm not sure.",
+          "Lucía may be at the gym; I'm not sure.",
+          "Lucía could be at the gym; I'm not sure."
+        ],
+        "explanation": "Como hay incertidumbre, se usa 'might be' para expresar una posibilidad sin certeza.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucía must be at the gym; I'm not sure.",
+            "why": "'must' expresa certeza, pero la oración indica duda ('no estoy seguro')."
+          },
+          {
+            "answer": "Lucía can be at the gym; I'm not sure.",
+            "why": "'can' expresa habilidad o posibilidad general, no se usa para deducciones de incertidumbre como 'might'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el modal de deducción correcto.",
+        "spanish": "Esa no puede ser la dirección correcta; esto es un estacionamiento.",
+        "answers": [
+          "That can't be the right address; this is a parking lot."
+        ],
+        "explanation": "Para negar con total seguridad una deducción se usa 'can't', no 'mustn't' ni 'might not'.",
+        "wrongAnswers": [
+          {
+            "answer": "That mustn't be the right address; this is a parking lot.",
+            "why": "'mustn't' expresa prohibición, no una deducción negativa segura; para eso se usa 'can't'."
+          },
+          {
+            "answer": "That might not be the right address; this is a parking lot.",
+            "why": "Expresa duda, pero la evidencia (es un estacionamiento) da una certeza clara de que no puede ser correcta."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el modal de deducción correcto.",
+        "spanish": "Los vecinos deben estar teniendo una fiesta; escucho música fuerte.",
+        "answers": [
+          "The neighbors must be having a party; I can hear loud music.",
+          "The neighbors must be having a party; I hear loud music."
+        ],
+        "explanation": "Para deducir con seguridad sobre una acción en curso se usa must + be + -ing (must be having).",
+        "wrongAnswers": [
+          {
+            "answer": "The neighbors must have a party; I can hear loud music.",
+            "why": "Falta la forma continua (be + -ing) para describir una acción que ocurre en este momento."
+          },
+          {
+            "answer": "The neighbors mustn't be having a party; I can hear loud music.",
+            "why": "'mustn't' expresa prohibición, no corresponde a una deducción positiva segura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el modal de deducción correcto.",
+        "spanish": "Rodrigo tiene fiebre alta y tos terrible. Debe tener una gripe fuerte.",
+        "answers": [
+          "Rodrigo has a high fever and a terrible cough. He must have a bad flu.",
+          "Rodrigo has a high fever and a terrible cough. He must have a terrible flu."
+        ],
+        "explanation": "Los síntomas claros permiten una conclusión segura, por eso se usa 'must have'.",
+        "wrongAnswers": [
+          {
+            "answer": "Rodrigo has a high fever and a terrible cough. He might have a bad flu.",
+            "why": "Expresa duda, pero los síntomas claros (fiebre alta, tos terrible) permiten una conclusión segura con 'must'."
+          },
+          {
+            "answer": "Rodrigo has a high fever and a terrible cough. He must to have a bad flu.",
+            "why": "Después de 'must' el verbo va sin 'to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el modal de deducción correcto.",
+        "spanish": "El dueño dijo que el departamento estaba vacío, así que esos no pueden ser sus inquilinos en la puerta.",
+        "answers": [
+          "The landlord said the apartment was empty, so those can't be his tenants at the door."
+        ],
+        "explanation": "Como la información contradice claramente la situación, se usa 'can't be' para negar con seguridad.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord said the apartment was empty, so those mustn't be his tenants at the door.",
+            "why": "'mustn't' expresa prohibición, no una deducción negativa segura; para eso se usa 'can't'."
+          },
+          {
+            "answer": "The landlord said the apartment was empty, so those might not be his tenants at the door.",
+            "why": "Expresa duda, pero la información (el departamento estaba vacío) da una certeza clara de que no pueden ser los inquilinos."
+          }
+        ]
+      }
+    ],
+    "conectores": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el conector correcto para completar la oración.",
+        "prompt": "___ it was raining, Marina decided to go for a run in Palermo.",
+        "options": [
+          "However",
+          "Despite",
+          "Although",
+          "So"
+        ],
+        "correctIndex": 2,
+        "explanation": "Although se usa antes de una oración completa con sujeto y verbo; despite necesitaría un sustantivo o gerundio.",
+        "optionNotes": [
+          "Incorrecto: however no conecta dentro de la misma oración, se usa para empezar una oración nueva.",
+          "Incorrecto: despite necesita un sustantivo o gerundio después, no una oración completa.",
+          "Correcto: although + oración completa con sujeto y verbo.",
+          "Incorrecto: so indica resultado, pero aquí hay una idea de contraste."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el conector correcto para completar la oración.",
+        "prompt": "The flight was delayed for three hours. ___, we managed to catch our connection in Santiago.",
+        "options": [
+          "Although",
+          "Because",
+          "However",
+          "Despite"
+        ],
+        "correctIndex": 2,
+        "explanation": "However va al principio de una nueva oración, separada de la anterior por un punto, y seguida de coma.",
+        "optionNotes": [
+          "Incorrecto: although debe estar dentro de la misma oración, no empezando una nueva después de un punto.",
+          "Incorrecto: because indica causa, pero aquí hay un contraste inesperado.",
+          "Correcto: however conecta dos oraciones separadas por punto, con coma después.",
+          "Incorrecto: despite necesita un sustantivo o gerundio, no puede conectar dos oraciones así."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración con despite.",
+        "prompt": "Despite ___ a lot of experience, Tomás didn't get the job at the bank.",
+        "options": [
+          "he had",
+          "having",
+          "although he had",
+          "he has"
+        ],
+        "correctIndex": 1,
+        "explanation": "Despite se usa seguido de un sustantivo o un gerundio, nunca de una oración con sujeto y verbo conjugado.",
+        "optionNotes": [
+          "Incorrecto: despite no puede ir seguido de sujeto + verbo conjugado.",
+          "Correcto: despite + gerundio (having).",
+          "Incorrecto: mezcla despite y although, lo cual es redundante e incorrecto.",
+          "Incorrecto: igual que la primera opción, estructura con sujeto y verbo conjugado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el conector correcto para completar la oración.",
+        "prompt": "There was a long line at the immigration office, ___ we had to wait almost two hours.",
+        "options": [
+          "although",
+          "so",
+          "because",
+          "despite"
+        ],
+        "correctIndex": 1,
+        "explanation": "So introduce el resultado de una situación; aquí la espera es la consecuencia de la fila larga.",
+        "optionNotes": [
+          "Incorrecto: although indica contraste, pero aquí hay una relación de causa y resultado.",
+          "Correcto: so introduce el resultado lógico de la situación anterior.",
+          "Incorrecto: because indicaría causa, pero la primera parte ya es la causa; falta el resultado.",
+          "Incorrecto: despite no puede conectar dos oraciones de esta forma."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la oración correcta.",
+        "prompt": "Which sentence is correct?",
+        "options": [
+          "Although he studied hard, but he failed the exam.",
+          "Although he studied hard, he failed the exam.",
+          "Despite he studied hard, he failed the exam.",
+          "However he studied hard, he failed the exam."
+        ],
+        "correctIndex": 1,
+        "explanation": "Although y but no se combinan en la misma oración; con although alcanza para expresar el contraste.",
+        "optionNotes": [
+          "Incorrecto: although y but no van juntos en la misma oración, es redundante.",
+          "Correcto: although + oración completa, sin but.",
+          "Incorrecto: despite no puede ir seguido de sujeto + verbo conjugado.",
+          "Incorrecto: however no conecta así dentro de la misma oración sin un punto previo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración con in spite of.",
+        "prompt": "In spite of ___, the surgery was successful, according to Dr. Álvarez.",
+        "options": [
+          "because it was risky",
+          "it was risky",
+          "the risks",
+          "although it was risky"
+        ],
+        "correctIndex": 2,
+        "explanation": "In spite of se usa seguido de un sustantivo, nunca de una oración con sujeto y verbo conjugado.",
+        "optionNotes": [
+          "Incorrecto: because no corresponde después de in spite of, la estructura está mal combinada.",
+          "Incorrecto: in spite of no puede ir seguido de una oración con sujeto y verbo conjugado.",
+          "Correcto: in spite of + sustantivo.",
+          "Incorrecto: mezcla in spite of con although, lo cual es incorrecto."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el conector de contraste correcto.",
+        "sentence": "___ the hotel in Mendoza was expensive, we decided to stay there for the wine tour.",
+        "hint": "(conector + oración completa)",
+        "answers": [
+          "Although",
+          "Even though"
+        ],
+        "explanation": "Although y even though van seguidos de una oración completa con sujeto y verbo, dentro de la misma frase.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite",
+            "why": "Despite necesita un sustantivo o gerundio después, no una oración completa con sujeto y verbo."
+          },
+          {
+            "answer": "However",
+            "why": "However no puede ir al principio conectando dentro de la misma oración sin un punto previo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el conector correcto.",
+        "sentence": "Sebastián missed his flight to Bariloche. ___, he managed to get a seat on the next one.",
+        "hint": "(conector que empieza una oración nueva)",
+        "answers": [
+          "However"
+        ],
+        "explanation": "However se usa al principio de una nueva oración, separada por punto, para marcar un contraste con lo anterior.",
+        "wrongAnswers": [
+          {
+            "answer": "Although",
+            "why": "Although debe estar dentro de la misma oración que contiene ambas ideas, no al principio de una oración nueva separada por punto."
+          },
+          {
+            "answer": "So",
+            "why": "So indicaría una consecuencia lógica, pero aquí hay un contraste inesperado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo después de despite.",
+        "sentence": "Despite ___ late, Valentina caught the last bus home.",
+        "hint": "(leave - gerundio)",
+        "answers": [
+          "leaving"
+        ],
+        "explanation": "Despite se usa seguido de un gerundio cuando queremos mencionar una acción, no de sujeto + verbo conjugado.",
+        "wrongAnswers": [
+          {
+            "answer": "she left",
+            "why": "Despite no puede ir seguido de sujeto + verbo conjugado."
+          },
+          {
+            "answer": "to leave",
+            "why": "Despite no se usa con infinitivo, sino con gerundio."
+          },
+          {
+            "answer": "left",
+            "why": "Falta el '-ing'; despite necesita la forma en gerundio del verbo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el conector de resultado correcto.",
+        "sentence": "The landlord raised the rent, ___ we started looking for a new apartment.",
+        "hint": "(así que)",
+        "answers": [
+          "so"
+        ],
+        "explanation": "So introduce el resultado de una situación anterior, equivalente a 'así que' en español.",
+        "wrongAnswers": [
+          {
+            "answer": "because",
+            "why": "Because indica causa, pero aquí la segunda parte es el resultado, no la razón."
+          },
+          {
+            "answer": "although",
+            "why": "Although indica contraste, pero aquí hay una relación de causa y resultado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la expresión correcta.",
+        "sentence": "___ of the heavy traffic, Martín arrived on time for his job interview.",
+        "hint": "(a pesar de)",
+        "answers": [
+          "In spite"
+        ],
+        "explanation": "Como la oración ya tiene 'of', la expresión correcta es 'in spite of', ya que 'despite' nunca se combina con 'of'.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite",
+            "why": "Despite nunca va seguido de 'of'; si se usa 'of' corresponde 'in spite of'."
+          },
+          {
+            "answer": "Although",
+            "why": "Although no se combina con 'of' ni con un sustantivo directamente, necesita una oración completa."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el conector correcto.",
+        "sentence": "Camila didn't study for the exam. ___, she passed it with a good grade.",
+        "hint": "(conector de contraste entre oraciones)",
+        "answers": [
+          "However"
+        ],
+        "explanation": "However marca un contraste inesperado entre dos oraciones separadas por punto.",
+        "wrongAnswers": [
+          {
+            "answer": "So",
+            "why": "So indicaría una consecuencia lógica, pero aprobar sin estudiar es un resultado inesperado, no lógico."
+          },
+          {
+            "answer": "Because",
+            "why": "Because indica causa, pero aquí no se está explicando la razón, sino un contraste."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "Although it was cold, we went to the beach.",
+        "alternatives": [
+          "We went to the beach, although it was cold."
+        ],
+        "translation": "Aunque hacía frío, fuimos a la playa.",
+        "explanation": "Although puede ir al principio o en medio de la oración, siempre introduciendo una oración completa con sujeto y verbo.",
+        "tokens": [
+          "went",
+          "cold,",
+          "we",
+          "was",
+          "to",
+          "Although",
+          "beach",
+          "the",
+          "it"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "The interview went badly. However, she got the job.",
+        "alternatives": [],
+        "translation": "La entrevista salió mal. Sin embargo, consiguió el trabajo.",
+        "explanation": "However se usa al principio de una nueva oración, separada por punto, y seguida de coma.",
+        "tokens": [
+          "went",
+          "job",
+          "she",
+          "interview",
+          "The",
+          "got",
+          "However,",
+          "badly.",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "Despite the heavy rain, the match continued.",
+        "alternatives": [
+          "The match continued despite the heavy rain."
+        ],
+        "translation": "A pesar de la lluvia intensa, el partido continuó.",
+        "explanation": "Despite se usa seguido de un sustantivo, y puede ir al principio o al final de la oración.",
+        "tokens": [
+          "match",
+          "the",
+          "the",
+          "rain,",
+          "Despite",
+          "heavy",
+          "continued"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "There was no wifi, so we couldn't check our email.",
+        "alternatives": [],
+        "translation": "No había wifi, así que no pudimos revisar el correo.",
+        "explanation": "So introduce el resultado de la situación anterior y siempre va en medio, uniendo las dos partes.",
+        "tokens": [
+          "There",
+          "so",
+          "couldn't",
+          "no",
+          "was",
+          "wifi,",
+          "we",
+          "check",
+          "our",
+          "email"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la oración correcta.",
+        "sentence": "In spite of the delay, the doctor saw all her patients.",
+        "alternatives": [
+          "The doctor saw all her patients in spite of the delay."
+        ],
+        "translation": "A pesar de la demora, la doctora atendió a todos sus pacientes.",
+        "explanation": "In spite of se usa seguido de un sustantivo, y puede ir al principio o al final de la oración.",
+        "tokens": [
+          "doctor",
+          "all",
+          "her",
+          "the",
+          "In",
+          "spite",
+          "of",
+          "the",
+          "delay,",
+          "patients",
+          "saw"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración.",
+        "sentence": "Despite it was cold, we went to the beach in Mar del Plata.",
+        "answers": [
+          "Although it was cold, we went to the beach in Mar del Plata.",
+          "Despite the cold, we went to the beach in Mar del Plata."
+        ],
+        "explanation": "Despite no puede ir seguido de una oración completa con sujeto y verbo; se necesita although, o cambiar a despite + sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite it was cold, but we went to the beach in Mar del Plata.",
+            "why": "Agrega 'but' innecesariamente y no corrige el verdadero error, que es usar 'despite' con una oración completa."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración.",
+        "sentence": "Although I studied a lot, but I failed the exam.",
+        "answers": [
+          "Although I studied a lot, I failed the exam."
+        ],
+        "explanation": "Although y but no se combinan en la misma oración; alcanza con uno de los dos para expresar el contraste.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite I studied a lot, I failed the exam.",
+            "why": "Despite no puede ir seguido de una oración completa con sujeto y verbo, sigue estando mal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración.",
+        "sentence": "The restaurant was fully booked, however we decided to wait for a table.",
+        "answers": [
+          "The restaurant was fully booked. However, we decided to wait for a table."
+        ],
+        "explanation": "However conecta dos oraciones separadas por un punto, no por una coma, y siempre lleva coma después.",
+        "wrongAnswers": [
+          {
+            "answer": "The restaurant was fully booked, however, we decided to wait for a table.",
+            "why": "No corrige el error real: however no puede unir dos oraciones con una coma, necesita un punto antes."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración.",
+        "sentence": "In spite the long queue, Sofía got her visa approved.",
+        "answers": [
+          "In spite of the long queue, Sofía got her visa approved."
+        ],
+        "explanation": "La expresión completa es 'in spite of', siempre con 'of' antes del sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite of the long queue, Sofía got her visa approved.",
+            "why": "Despite nunca lleva 'of' después; se usa 'despite' solo o 'in spite of', pero no 'despite of'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la siguiente oración.",
+        "sentence": "Nicolás was exhausted, because he decided to go to bed early.",
+        "answers": [
+          "Nicolás was exhausted, so he decided to go to bed early."
+        ],
+        "explanation": "So introduce el resultado lógico de una situación; aquí irse a la cama temprano es la consecuencia de estar agotado, no la causa.",
+        "wrongAnswers": [
+          {
+            "answer": "Nicolás was exhausted, although he decided to go to bed early.",
+            "why": "Although indicaría contraste, pero irse a la cama temprano es una consecuencia lógica de estar cansado, no un contraste."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Aunque llovía mucho, fuimos a la casa de Fede en Villa Crespo.",
+        "answers": [
+          "Although it was raining a lot, we went to Fede's house in Villa Crespo.",
+          "Even though it was raining a lot, we went to Fede's house in Villa Crespo."
+        ],
+        "explanation": "Although y even though van seguidos de una oración completa con sujeto y verbo, dentro de la misma frase.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite it was raining a lot, we went to Fede's house in Villa Crespo.",
+            "why": "Despite no puede ir seguido de una oración completa con sujeto y verbo."
+          },
+          {
+            "answer": "Although it was raining a lot, but we went to Fede's house in Villa Crespo.",
+            "why": "Although y but no se combinan en la misma oración."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El vuelo se retrasó dos horas. Sin embargo, llegamos a tiempo a la reunión.",
+        "answers": [
+          "The flight was delayed two hours. However, we arrived on time for the meeting.",
+          "The flight was delayed by two hours. However, we arrived on time for the meeting."
+        ],
+        "explanation": "However va al principio de una nueva oración, separada por punto de la anterior, y seguida de coma.",
+        "wrongAnswers": [
+          {
+            "answer": "The flight was delayed two hours, however, we arrived on time for the meeting.",
+            "why": "However no puede unir dos oraciones con una coma; necesita un punto antes."
+          },
+          {
+            "answer": "The flight was delayed two hours. Although, we arrived on time for the meeting.",
+            "why": "Although no se usa al principio de una oración nueva separada por punto; para eso se usa however."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "A pesar del tráfico, Julián llegó temprano a la entrevista.",
+        "answers": [
+          "Despite the traffic, Julián arrived early for the interview.",
+          "In spite of the traffic, Julián arrived early for the interview."
+        ],
+        "explanation": "Despite e in spite of se usan seguidos de un sustantivo; despite nunca lleva 'of'.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite of the traffic, Julián arrived early for the interview.",
+            "why": "'Despite' nunca lleva 'of' después."
+          },
+          {
+            "answer": "Although the traffic, Julián arrived early for the interview.",
+            "why": "Although necesita una oración completa con sujeto y verbo, no solo un sustantivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Había mucho ruido, así que no pudimos dormir en el hotel.",
+        "answers": [
+          "There was a lot of noise, so we couldn't sleep at the hotel.",
+          "There was a lot of noise, so we could not sleep at the hotel."
+        ],
+        "explanation": "So introduce el resultado de una situación anterior, equivalente a 'así que' en español.",
+        "wrongAnswers": [
+          {
+            "answer": "There was a lot of noise, because we couldn't sleep at the hotel.",
+            "why": "Because indica causa, pero aquí la segunda parte es el resultado, que corresponde a 'so'."
+          },
+          {
+            "answer": "There was a lot of noise, although we couldn't sleep at the hotel.",
+            "why": "Although indicaría contraste, pero aquí hay una relación de causa y resultado, no de contraste."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Aunque el departamento es caro, Carolina decidió alquilarlo.",
+        "answers": [
+          "Although the apartment is expensive, Carolina decided to rent it.",
+          "Even though the apartment is expensive, Carolina decided to rent it."
+        ],
+        "explanation": "Although y even though van seguidos de una oración completa con sujeto y verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "Despite the apartment is expensive, Carolina decided to rent it.",
+            "why": "Despite no puede ir seguido de una oración completa; necesitaría 'despite the high price' o usar 'although'."
+          },
+          {
+            "answer": "The apartment is expensive, so Carolina decided to rent it.",
+            "why": "So indicaría que el precio alto fue la causa de alquilarlo, pero en realidad hay un contraste, no una consecuencia lógica."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El médico me dijo que tenía que operarme. Sin embargo, decidí pedir una segunda opinión.",
+        "answers": [
+          "The doctor told me I had to have surgery. However, I decided to ask for a second opinion.",
+          "The doctor told me I needed surgery. However, I decided to ask for a second opinion."
+        ],
+        "explanation": "However va al principio de una nueva oración, separada por punto de la anterior, y seguida de coma.",
+        "wrongAnswers": [
+          {
+            "answer": "The doctor told me I had to have surgery, however, I decided to ask for a second opinion.",
+            "why": "However no puede conectar dos oraciones solo con una coma; necesita un punto antes."
+          },
+          {
+            "answer": "The doctor told me I had to have surgery. Despite, I decided to ask for a second opinion.",
+            "why": "Despite no puede usarse solo al principio de una oración sin un sustantivo o gerundio después."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas de opción múltiple sobre los conectores de contraste, causa y resultado.",
+        "text": "Mariana had to travel to Bariloche for a work conference. Although she left her house at five in the morning, she almost missed her flight because of terrible traffic in Buenos Aires. Despite the delay, she managed to get to the airport just in time.\n\nDuring the flight, the weather got worse. The plane shook a lot, and Mariana felt very nervous. However, the pilot landed safely in Bariloche, and everyone applauded.\n\nAt the hotel, she discovered that her room didn't have hot water. She complained to the receptionist, who apologized and gave her a different room immediately. The new room was perfect, so Mariana finally relaxed before the conference.\n\nThe next morning, although she hadn't slept much, she gave an excellent presentation. Her boss was impressed because she had prepared very well, despite all the problems from the day before. In spite of the rough start, the trip turned out to be a success, and Mariana returned home feeling proud of herself.",
+        "questions": [
+          {
+            "prompt": "¿Por qué Mariana casi perdió el vuelo?",
+            "options": [
+              "Porque se despertó demasiado tarde.",
+              "Porque el vuelo se canceló.",
+              "Porque había mucho tránsito, aunque había salido temprano.",
+              "Porque se olvidó el pasaporte."
+            ],
+            "correctIndex": 2,
+            "explanation": "Although introduce un contraste dentro de la misma oración: salir temprano no evitó el problema, porque la causa real fue el tránsito."
+          },
+          {
+            "prompt": "¿Qué significa \"despite the delay\" en el texto?",
+            "options": [
+              "Ella misma provocó la demora.",
+              "La demora en realidad no existió.",
+              "A pesar de la demora, igual llegó al aeropuerto a tiempo.",
+              "Por culpa de la demora, perdió el vuelo."
+            ],
+            "correctIndex": 2,
+            "explanation": "Despite + sustantivo expresa un contraste: a pesar de la demora, el resultado fue positivo (llegó a tiempo)."
+          },
+          {
+            "prompt": "¿Por qué Mariana finalmente se relajó en el hotel?",
+            "options": [
+              "Porque el hotel no tenía agua caliente en ningún lado.",
+              "Porque la recepcionista le dio una habitación nueva que era perfecta, así que pudo descansar.",
+              "Porque se quejó con la recepcionista, pero nada cambió.",
+              "Aunque la habitación era perfecta, igual no pudo dormir."
+            ],
+            "correctIndex": 1,
+            "explanation": "So conecta una causa con su resultado lógico: la habitación nueva fue perfecta, así que ella se relajó."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas de opción múltiple sobre los conectores de contraste, causa y resultado.",
+        "text": "Tomás wanted to rent a small apartment in Rosario before starting his new job. Although the apartment was a bit far from the city center, he liked it because it was bright and quiet.\n\nHe visited the landlord, Mrs. Pereyra, to discuss the contract. Despite her initial price, which seemed too high for his budget, Tomás decided to negotiate politely. \"The apartment is lovely,\" he said, \"however, I can't pay that much every month.\"\n\nMrs. Pereyra thought about it. In spite of her first offer, she agreed to lower the rent a little, so Tomás felt relieved. Although he still needed to save money for the deposit, he was happy with the new price.\n\nA week later, Tomás noticed that the kitchen tap was broken. He called Mrs. Pereyra immediately. She didn't answer at first. However, she called back that evening and promised to send someone the next day.\n\nThe plumber arrived early, so the problem was fixed before Tomás even finished his coffee. Despite the small issues, Tomás was glad he had chosen that apartment, and he signed the contract for a full year.",
+        "questions": [
+          {
+            "prompt": "¿Por qué a Tomás le siguió gustando el departamento?",
+            "options": [
+              "A pesar de ser ruidoso, tenía una linda vista.",
+              "Aunque quedaba lejos del centro, era luminoso y tranquilo.",
+              "Porque la Sra. Pereyra le hizo un gran descuento de inmediato.",
+              "Porque quedaba cerca del centro."
+            ],
+            "correctIndex": 1,
+            "explanation": "Although introduce un contraste dentro de la misma oración: la distancia al centro no fue un problema porque otras cualidades compensaron esa desventaja."
+          },
+          {
+            "prompt": "¿Qué muestra \"however\" en la frase que Tomás le dice a la Sra. Pereyra?",
+            "options": [
+              "Que quiere cancelar la negociación por completo.",
+              "Que piensa que el precio es justo.",
+              "Que acepta pagar el precio completo de inmediato.",
+              "Que el departamento le gusta, pero contrasta eso con no poder pagar ese precio."
+            ],
+            "correctIndex": 3,
+            "explanation": "However va al principio de una oración nueva y marca un contraste con la idea anterior: le gusta el lugar, pero no puede pagar ese monto."
+          },
+          {
+            "prompt": "¿Por qué se solucionó rápido el problema de la cocina?",
+            "options": [
+              "Porque el plomero llegó temprano, así que hubo tiempo de arreglarlo antes de que Tomás terminara el café.",
+              "Aunque el plomero llegó tarde, trabajó muy rápido.",
+              "Porque Tomás no llamó a la Sra. Pereyra.",
+              "A pesar de estar ocupado, el plomero nunca llegó."
+            ],
+            "correctIndex": 0,
+            "explanation": "So conecta una causa con su resultado lógico: el plomero llegó temprano, así que el problema se arregló rápido."
+          }
+        ]
+      }
+    ]
+  }
+}

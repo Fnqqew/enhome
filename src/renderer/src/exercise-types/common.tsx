@@ -51,6 +51,46 @@ export function OptionList({
   )
 }
 
+// Preguntas de opción múltiple sobre un texto o una charla: se contestan todas antes de entregar.
+export function QuestionList({
+  questions,
+  initial,
+  feedback,
+  locked,
+  onAnswer
+}: {
+  questions: { prompt: string; options: string[] }[]
+  initial: number[] | null
+  feedback: ExerciseFeedback | null
+  locked: boolean
+  onAnswer: (choices: number[] | null) => void
+}): React.JSX.Element {
+  const [choices, setChoices] = useState<number[]>(initial ?? questions.map(() => -1))
+  const correctLines = feedback?.correctAnswer?.split('\n').map((line) => line.replace(/^\d+\.\s*/, '')) ?? []
+  return (
+    <>
+      {questions.map((question, qi) => (
+        <div key={qi} className="stack-sm">
+          <p>
+            <strong>{qi + 1}.</strong> {question.prompt}
+          </p>
+          <OptionList
+            options={question.options}
+            selected={choices[qi] >= 0 ? choices[qi] : null}
+            correctText={correctLines[qi] ?? null}
+            locked={locked}
+            onSelect={(i) => {
+              const next = choices.map((c, k) => (k === qi ? i : c))
+              setChoices(next)
+              onAnswer(next.every((c) => c >= 0) ? next : null)
+            }}
+          />
+        </div>
+      ))}
+    </>
+  )
+}
+
 // Las respuestas de a varias partes: se completan todas antes de entregar.
 export function useParts(
   count: number,

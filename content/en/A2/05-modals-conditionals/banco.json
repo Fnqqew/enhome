@@ -1,0 +1,2883 @@
+{
+  "subtopics": {
+    "must-have-to": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "According to the clinic's rules, Martina ___ wear a uniform every day.",
+        "options": [
+          "musts",
+          "must",
+          "has to",
+          "have to"
+        ],
+        "correctIndex": 2,
+        "explanation": "Se usa 'has to' porque es una obligación externa (una regla del trabajo) y el sujeto es tercera persona singular.",
+        "optionNotes": [
+          "Incorrecto: 'must' nunca lleva 's', es un modal invariable.",
+          "Incorrecto en este contexto: 'must' se usa más para obligaciones que impone quien habla, no reglas externas de un tercero.",
+          "Correcto: expresa una obligación impuesta por otra persona o institución; con 'she' se usa 'has to'.",
+          "Incorrecto: con sujetos en tercera persona singular (Martina = she) se necesita 'has to', no 'have to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "You ___ use your phone during the exam, it's forbidden.",
+        "options": [
+          "don't have to",
+          "mustn't",
+          "doesn't have to",
+          "not have to"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para prohibir algo se usa 'mustn't', no 'don't have to', que significa que algo no es necesario.",
+        "optionNotes": [
+          "Incorrecto: 'don't have to' significa que no es necesario, no que esté prohibido.",
+          "Correcto: 'mustn't' expresa prohibición.",
+          "Incorrecto: el sujeto es 'you', que siempre usa 'don't', nunca 'doesn't'.",
+          "Incorrecto: la forma negativa correcta es 'don't have to', no 'not have to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "___ Martina have to clock in every morning at the clinic?",
+        "options": [
+          "Must",
+          "Does",
+          "Do",
+          "Has"
+        ],
+        "correctIndex": 1,
+        "explanation": "Las preguntas con 'have to' se forman con el auxiliar 'do/does', y como 'Martina' es tercera persona singular corresponde 'does'.",
+        "optionNotes": [
+          "Incorrecto: 'must' no necesita auxiliar para preguntas; se diría 'Must Martina...' sin 'have to'.",
+          "Correcto: se usa 'does' porque el sujeto es tercera persona singular.",
+          "Incorrecto: con tercera persona singular corresponde 'does', no 'do'.",
+          "Incorrecto: 'has' no se usa como auxiliar para formar preguntas con 'have to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "You must ___ silent in the library, other people are studying.",
+        "options": [
+          "be",
+          "is",
+          "to be",
+          "being"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'must' el verbo va siempre en infinitivo sin 'to'.",
+        "optionNotes": [
+          "Correcto: 'must' siempre se combina con el verbo base, sin 'to'.",
+          "Incorrecto: 'is' es una forma conjugada, pero después de 'must' se necesita el verbo base.",
+          "Incorrecto: después de 'must' nunca se usa 'to'.",
+          "Incorrecto: 'being' es gerundio, pero después de 'must' va el verbo base."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "At the airport, Franco found out that you ___ pay extra for one checked bag, it's included in the ticket.",
+        "options": [
+          "haven't to",
+          "don't must",
+          "mustn't",
+          "don't have to"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando algo no es necesario (no hay obligación), se usa 'don't have to', no 'mustn't', que indica prohibición.",
+        "optionNotes": [
+          "Incorrecto: esa forma no existe en inglés.",
+          "Incorrecto: 'don't must' no es una estructura válida en inglés; 'don't' nunca se combina con 'must'.",
+          "Incorrecto: 'mustn't' significa que está prohibido pagar, lo cual no es el sentido de la oración.",
+          "Correcto: expresa que no es necesario pagar extra."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "According to the rental contract, tenants ___ sign every page before moving in.",
+        "options": [
+          "has to",
+          "having to",
+          "must to",
+          "have to"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con sujetos plurales como 'tenants' se usa 'have to', y nunca 'must to', porque 'must' no lleva 'to'.",
+        "optionNotes": [
+          "Incorrecto: 'tenants' es plural, por lo que corresponde 'have to', no 'has to'.",
+          "Incorrecto: 'having to' es una forma de gerundio que no corresponde en esta posición.",
+          "Incorrecto: 'must' nunca se combina con 'to'.",
+          "Correcto: sujeto plural + 'have to' + verbo base."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "Patients ___ take this medicine three times a day, the doctor said.",
+        "hint": "(have to)",
+        "answers": [
+          "have to"
+        ],
+        "explanation": "Con sujetos plurales se usa 'have to' para expresar obligación.",
+        "wrongAnswers": [
+          {
+            "answer": "has to",
+            "why": "'Patients' es plural, así que corresponde 'have to', no 'has to'."
+          },
+          {
+            "answer": "must to",
+            "why": "'Must' nunca se combina con 'to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "You ___ smoke in the waiting room, it's strictly forbidden.",
+        "hint": "(prohibición)",
+        "answers": [
+          "mustn't",
+          "must not"
+        ],
+        "explanation": "'Mustn't' se usa para expresar prohibición.",
+        "wrongAnswers": [
+          {
+            "answer": "don't have to",
+            "why": "Esto significa que no es necesario fumar, pero la oración indica que está prohibido."
+          },
+          {
+            "answer": "not must",
+            "why": "El orden correcto es 'must not', no 'not must'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "Franco ___ wake up at 5 a.m. tomorrow because his flight leaves early.",
+        "hint": "(have to)",
+        "answers": [
+          "has to"
+        ],
+        "explanation": "Con 'he/she/it' se usa 'has to' para la obligación externa.",
+        "wrongAnswers": [
+          {
+            "answer": "have to",
+            "why": "Franco es tercera persona singular, por lo que corresponde 'has to'."
+          },
+          {
+            "answer": "must to",
+            "why": "'Must' no se combina con 'to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "You ___ bring your passport for this flight, your DNI is enough.",
+        "hint": "(no es necesario)",
+        "answers": [
+          "don't have to"
+        ],
+        "explanation": "'Don't have to' expresa que algo no es obligatorio.",
+        "wrongAnswers": [
+          {
+            "answer": "mustn't",
+            "why": "'Mustn't' indica prohibición, pero aquí se expresa que no es necesario."
+          },
+          {
+            "answer": "doesn't have to",
+            "why": "El sujeto es 'you', que siempre usa 'don't', no 'doesn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "The landlord says tenants ___ keep the garden clean.",
+        "hint": "(have to)",
+        "answers": [
+          "have to"
+        ],
+        "explanation": "Sujeto plural + 'have to' para obligación impuesta por otra persona.",
+        "wrongAnswers": [
+          {
+            "answer": "has to",
+            "why": "'Tenants' es plural, así que se usa 'have to'."
+          },
+          {
+            "answer": "must to",
+            "why": "'Must' nunca lleva 'to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "I ___ finish this report tonight, I promised my boss.",
+        "hint": "(obligación personal)",
+        "answers": [
+          "must"
+        ],
+        "explanation": "'Must' se usa para obligaciones que impone quien habla sobre sí mismo.",
+        "wrongAnswers": [
+          {
+            "answer": "musts",
+            "why": "'Must' es invariable, nunca lleva 's'."
+          },
+          {
+            "answer": "must to",
+            "why": "Después de 'must' no se usa 'to'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You must wear a helmet on this bike.",
+        "alternatives": [],
+        "translation": "Tenés que usar casco en esta bici.",
+        "explanation": "'Must' va seguido del verbo base sin 'to', y el orden es sujeto + must + verbo + complemento.",
+        "tokens": [
+          "bike",
+          "wear",
+          "a",
+          "You",
+          "must",
+          "this",
+          "helmet",
+          "on"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She has to finish her homework before dinner.",
+        "alternatives": [],
+        "translation": "Ella tiene que terminar la tarea antes de la cena.",
+        "explanation": "Con tercera persona singular se usa 'has to' seguido del verbo base.",
+        "tokens": [
+          "her",
+          "finish",
+          "before",
+          "dinner",
+          "has",
+          "She",
+          "to",
+          "homework"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You mustn't park here, it's a bus stop.",
+        "alternatives": [],
+        "translation": "No podés estacionar aquí, es una parada de colectivo.",
+        "explanation": "'Mustn't' expresa prohibición y va seguido del verbo base.",
+        "tokens": [
+          "You",
+          "a",
+          "it's",
+          "here,",
+          "stop",
+          "mustn't",
+          "park",
+          "bus"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We don't have to pay for parking on Sundays.",
+        "alternatives": [],
+        "translation": "No tenemos que pagar por el estacionamiento los domingos.",
+        "explanation": "'Don't have to' indica que algo no es necesario.",
+        "tokens": [
+          "Sundays",
+          "for",
+          "on",
+          "parking",
+          "pay",
+          "We",
+          "to",
+          "don't",
+          "have"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Does Martina have to work this weekend?",
+        "alternatives": [],
+        "translation": "¿Martina tiene que trabajar este fin de semana?",
+        "explanation": "Las preguntas con 'have to' se forman con 'does' para la tercera persona singular.",
+        "tokens": [
+          "weekend",
+          "this",
+          "have",
+          "Does",
+          "Martina",
+          "work",
+          "to"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con obligación o prohibición.",
+        "sentence": "This is a non-smoking hospital, so you don't have to smoke here.",
+        "answers": [
+          "This is a non-smoking hospital, so you mustn't smoke here.",
+          "This is a non-smoking hospital, so you must not smoke here."
+        ],
+        "explanation": "Para prohibir se usa 'mustn't', no 'don't have to', que significa que algo no es necesario.",
+        "wrongAnswers": [
+          {
+            "answer": "This is a non-smoking hospital, so you doesn't have to smoke here.",
+            "why": "Corrige la concordancia pero no el error real: la oración necesita expresar prohibición, no falta de necesidad."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con obligación o prohibición.",
+        "sentence": "She must to call the landlord today to ask about the contract.",
+        "answers": [
+          "She must call the landlord today to ask about the contract."
+        ],
+        "explanation": "Después de 'must' el verbo va en infinitivo sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "She musts call the landlord today to ask about the contract.",
+            "why": "'Must' es invariable y nunca lleva 's'; el error real es el 'to' sobrante después de 'must'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con obligación o prohibición.",
+        "sentence": "Tenants has to pay the rent before the 10th of each month.",
+        "answers": [
+          "Tenants have to pay the rent before the 10th of each month."
+        ],
+        "explanation": "Con sujetos plurales se usa 'have to', no 'has to'.",
+        "wrongAnswers": [
+          {
+            "answer": "Tenants has to paid the rent before the 10th of each month.",
+            "why": "Esto cambia el verbo principal, pero el error real es la concordancia 'has/have', no la forma de 'pay'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con obligación o prohibición.",
+        "sentence": "I must going to the interview early tomorrow morning.",
+        "answers": [
+          "I must go to the interview early tomorrow morning."
+        ],
+        "explanation": "'Must' siempre se combina con el verbo base, nunca con gerundio ni con otras formas conjugadas.",
+        "wrongAnswers": [
+          {
+            "answer": "I must went to the interview early tomorrow morning.",
+            "why": "Después de 'must' el verbo va en infinitivo sin conjugar, no en pasado."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con obligación o prohibición.",
+        "sentence": "He don't have to bring his own uniform, the company gives it to him.",
+        "answers": [
+          "He doesn't have to bring his own uniform, the company gives it to him."
+        ],
+        "explanation": "Con 'he/she/it' el negativo de 'have to' es 'doesn't have to', no 'don't have to'.",
+        "wrongAnswers": [
+          {
+            "answer": "He mustn't bring his own uniform, the company gives it to him.",
+            "why": "Esto cambia el significado a prohibición; la oración original solo tenía un error de concordancia, no de prohibición."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tenés que usar casco en esta bici.",
+        "answers": [
+          "You have to wear a helmet on this bike.",
+          "You must wear a helmet on this bike."
+        ],
+        "explanation": "Tanto 'have to' como 'must' funcionan aquí para expresar esta obligación de seguridad.",
+        "wrongAnswers": [
+          {
+            "answer": "You have to use a helmet on this bike.",
+            "why": "En inglés, el casco y la ropa se 'wear', no se 'use'; eso suena a calco del español."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No podés fumar en la sala de espera, está prohibido.",
+        "answers": [
+          "You mustn't smoke in the waiting room, it's forbidden.",
+          "You must not smoke in the waiting room, it's forbidden."
+        ],
+        "explanation": "'Mustn't' es la forma correcta para expresar prohibición en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "You don't have to smoke in the waiting room, it's forbidden.",
+            "why": "Esto significa que no es necesario fumar, no que esté prohibido; para prohibir se usa 'mustn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Martina no tiene que pagar la consulta, es gratis.",
+        "answers": [
+          "Martina doesn't have to pay for the appointment, it's free.",
+          "Martina does not have to pay for the appointment, it's free."
+        ],
+        "explanation": "'Doesn't have to' expresa que no es necesario hacer algo, no prohibición.",
+        "wrongAnswers": [
+          {
+            "answer": "Martina mustn't pay for the appointment, it's free.",
+            "why": "Esto significa que está prohibido pagar, pero la idea es que no es necesario pagar."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tengo que firmar el contrato antes del viernes.",
+        "answers": [
+          "I have to sign the contract before Friday.",
+          "I must sign the contract before Friday."
+        ],
+        "explanation": "'Have to' y 'must' son válidos aquí para expresar esta obligación personal.",
+        "wrongAnswers": [
+          {
+            "answer": "I have to sign the contract before to Friday.",
+            "why": "No se usa 'to' delante de los días de la semana después de 'before'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Los inquilinos tienen que limpiar el jardín.",
+        "answers": [
+          "The tenants have to clean the garden.",
+          "Tenants have to clean the garden."
+        ],
+        "explanation": "Con sujetos plurales siempre se usa 'have to'.",
+        "wrongAnswers": [
+          {
+            "answer": "The tenants has to clean the garden.",
+            "why": "'Tenants' es plural, por lo que corresponde 'have to', no 'has to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Franco tiene que llegar temprano a la entrevista?",
+        "answers": [
+          "Does Franco have to arrive early for the interview?",
+          "Does Franco have to be at the interview early?"
+        ],
+        "explanation": "Las preguntas con 'have to' se forman con 'does' para la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "Must Franco have to arrive early for the interview?",
+            "why": "No se combinan 'must' y 'have to' juntos en la misma pregunta."
+          }
+        ]
+      }
+    ],
+    "should": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "You ___ see a doctor about that back pain.",
+        "options": [
+          "should seeing",
+          "should see",
+          "should to see",
+          "shoulds see"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después de 'should' el verbo va en forma base, sin 'to', sin '-ing' y sin '-s'.",
+        "optionNotes": [
+          "Incorrecto: después de 'should' se usa el verbo base, no el gerundio.",
+          "Correcto: 'should' + verbo base es la forma correcta para dar un consejo.",
+          "Incorrecto: después de 'should' el verbo va sin 'to'.",
+          "Incorrecto: 'should' nunca lleva '-s', es igual para todos los sujetos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She ___ eat so much junk food before the interview.",
+        "options": [
+          "shouldn't eats",
+          "shouldn't to eat",
+          "not should eat",
+          "shouldn't eat"
+        ],
+        "correctIndex": 3,
+        "explanation": "La forma negativa de consejo es 'shouldn't' + verbo base, sin 'to' y sin '-s'.",
+        "optionNotes": [
+          "Incorrecto: después de 'shouldn't' el verbo va en forma base, sin '-s'.",
+          "Incorrecto: después de 'shouldn't' el verbo va sin 'to'.",
+          "Incorrecto: el orden correcto es 'should not/shouldn't', no 'not should'.",
+          "Correcto: 'shouldn't' + verbo base expresa que algo no es recomendable."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ I call the landlord about the leak?",
+        "options": [
+          "Should",
+          "Do I should",
+          "Am I should",
+          "Shoulds"
+        ],
+        "correctIndex": 0,
+        "explanation": "Las preguntas con 'should' se forman poniendo 'Should' antes del sujeto, sin agregar otro auxiliar.",
+        "optionNotes": [
+          "Correcto: 'Should' va al principio de la pregunta, antes del sujeto.",
+          "Incorrecto: 'should' ya funciona como auxiliar, no se necesita agregar 'do'.",
+          "Incorrecto: no se usa el verbo 'be' junto con 'should' para formar preguntas.",
+          "Incorrecto: 'should' nunca lleva '-s'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "What ___ do if the flight is delayed?",
+        "options": [
+          "should me",
+          "should I",
+          "I shoulds",
+          "I should"
+        ],
+        "correctIndex": 1,
+        "explanation": "En preguntas con palabra interrogativa, el orden es: palabra interrogativa + should + sujeto + verbo.",
+        "optionNotes": [
+          "Incorrecto: después de 'should' va el sujeto en forma de pronombre sujeto ('I'), no de objeto ('me').",
+          "Correcto: 'What should I do...?' sigue el orden correcto para pedir consejo.",
+          "Incorrecto: 'should' nunca lleva '-s' y el orden de palabras también está invertido.",
+          "Incorrecto: el orden correcto en la pregunta es 'should' antes del sujeto, no después."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I think you ___ take an umbrella to Bariloche.",
+        "options": [
+          "should take",
+          "should takes",
+          "should taking",
+          "should to take"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'should' el verbo va en forma base, sin 'to', sin '-ing' y sin '-s'.",
+        "optionNotes": [
+          "Correcto: 'should' + verbo base es la forma correcta para dar un consejo.",
+          "Incorrecto: 'should' nunca lleva '-s', es igual para todos los sujetos.",
+          "Incorrecto: después de 'should' se usa el verbo base, no el gerundio.",
+          "Incorrecto: después de 'should' el verbo va sin 'to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "You ___ so late if you're tired, Lucas.",
+        "options": [
+          "shouldn't drive",
+          "shouldn't to drive",
+          "not should drive",
+          "shouldn't driving"
+        ],
+        "correctIndex": 0,
+        "explanation": "La forma negativa de consejo es 'shouldn't' + verbo base, sin 'to' y sin '-ing'.",
+        "optionNotes": [
+          "Correcto: 'shouldn't' + verbo base expresa que algo no es recomendable.",
+          "Incorrecto: después de 'shouldn't' el verbo va sin 'to'.",
+          "Incorrecto: el orden correcto es 'should not/shouldn't', no 'not should'.",
+          "Incorrecto: después de 'shouldn't' se usa el verbo base, no el gerundio."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con 'should' y el verbo entre paréntesis.",
+        "sentence": "You ___ rest for a few days, Juan.",
+        "hint": "(rest)",
+        "answers": [
+          "should rest"
+        ],
+        "explanation": "'Should' + verbo base se usa para dar un consejo; el verbo nunca lleva 'to', '-ing' ni '-s'.",
+        "wrongAnswers": [
+          {
+            "answer": "should to rest",
+            "why": "Después de 'should' el verbo va sin 'to'."
+          },
+          {
+            "answer": "should resting",
+            "why": "Después de 'should' se usa el verbo base, no el gerundio."
+          },
+          {
+            "answer": "should rests",
+            "why": "Después de 'should' el verbo no lleva '-s', va en forma base."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa de consejo y el verbo entre paréntesis.",
+        "sentence": "We ___ so much money on this trip.",
+        "hint": "(not/spend)",
+        "answers": [
+          "shouldn't spend",
+          "should not spend"
+        ],
+        "explanation": "La negación de consejo se forma con 'shouldn't' (o 'should not') + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "shouldn't to spend",
+            "why": "Después de 'shouldn't' el verbo va sin 'to'."
+          },
+          {
+            "answer": "don't should spend",
+            "why": "'Should' ya es el auxiliar; no se combina con 'don't'."
+          },
+          {
+            "answer": "shouldn't spends",
+            "why": "Después de 'shouldn't' el verbo va en forma base, sin '-s'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta para pedir consejo.",
+        "sentence": "___ I take painkillers for this pain?",
+        "hint": "",
+        "answers": [
+          "Should"
+        ],
+        "explanation": "Para pedir consejo se forma la pregunta poniendo 'Should' al principio, antes del sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "Do",
+            "why": "'Should' ya es un auxiliar modal, no se necesita agregar 'do' para formar la pregunta."
+          },
+          {
+            "answer": "Am",
+            "why": "No se usa el verbo 'be' para formar preguntas de consejo; se usa 'should' directamente."
+          },
+          {
+            "answer": "Have",
+            "why": "'Have' no se usa para pedir consejo; el auxiliar correcto para esto es 'should'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta para pedir consejo.",
+        "sentence": "What ___ I say in the interview if they ask about my salary?",
+        "hint": "",
+        "answers": [
+          "should"
+        ],
+        "explanation": "En preguntas con palabra interrogativa, 'should' va justo después de ella y antes del sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "I should",
+            "why": "El orden correcto en preguntas con palabra interrogativa es 'What should I...', no 'What I should...'."
+          },
+          {
+            "answer": "do I should",
+            "why": "No se combina 'do' con 'should'; el auxiliar modal ya cumple esa función por sí solo."
+          },
+          {
+            "answer": "must",
+            "why": "Para pedir consejo se usa 'should'; 'must' expresa obligación fuerte, no consejo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa de consejo y el verbo entre paréntesis.",
+        "sentence": "You ___ if you're this tired, Lucas.",
+        "hint": "(not/drive)",
+        "answers": [
+          "shouldn't drive",
+          "should not drive"
+        ],
+        "explanation": "La negación de consejo se forma con 'shouldn't' (o 'should not') + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "shouldn't to drive",
+            "why": "Después de 'shouldn't' el verbo va sin 'to'."
+          },
+          {
+            "answer": "shouldn't driving",
+            "why": "Después de 'shouldn't' se usa el verbo base, no el gerundio."
+          },
+          {
+            "answer": "not should drive",
+            "why": "El orden correcto es 'should not/shouldn't', no 'not should'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con 'should' y el verbo entre paréntesis.",
+        "sentence": "I think you ___ an umbrella to Bariloche, it rains a lot there.",
+        "hint": "(take)",
+        "answers": [
+          "should take"
+        ],
+        "explanation": "'I think you should...' es una forma amable de dar un consejo, seguida del verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "should to take",
+            "why": "Después de 'should' el verbo va sin 'to'."
+          },
+          {
+            "answer": "should taking",
+            "why": "Después de 'should' se usa el verbo base, no el gerundio."
+          },
+          {
+            "answer": "should takes",
+            "why": "Después de 'should' el verbo no lleva '-s'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You should see a doctor about that pain.",
+        "alternatives": [],
+        "translation": "Deberías ir al médico por ese dolor.",
+        "explanation": "'Should' + verbo base da un consejo; el verbo 'see' no lleva 'to' ni cambia de forma.",
+        "tokens": [
+          "should",
+          "see",
+          "doctor",
+          "about",
+          "You",
+          "pain",
+          "a",
+          "that"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We shouldn't spend so much money on this trip.",
+        "alternatives": [],
+        "translation": "No deberíamos gastar tanta plata en este viaje.",
+        "explanation": "'Shouldn't' + verbo base expresa que algo no es recomendable.",
+        "tokens": [
+          "so",
+          "shouldn't",
+          "spend",
+          "on",
+          "We",
+          "trip",
+          "money",
+          "this",
+          "much"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Should I call the landlord about the leak?",
+        "alternatives": [],
+        "translation": "¿Debería llamar al propietario por la pérdida de agua?",
+        "explanation": "Las preguntas de consejo se forman con 'Should' al principio, antes del sujeto.",
+        "tokens": [
+          "about",
+          "call",
+          "landlord",
+          "Should",
+          "I",
+          "the",
+          "leak",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "What should I say in the interview tomorrow?",
+        "alternatives": [],
+        "translation": "¿Qué debería decir en la entrevista de mañana?",
+        "explanation": "Con palabras interrogativas, el orden es: palabra interrogativa + should + sujeto + verbo base.",
+        "tokens": [
+          "in",
+          "tomorrow",
+          "should",
+          "say",
+          "I",
+          "What",
+          "interview",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You shouldn't drive if you're this tired.",
+        "alternatives": [],
+        "translation": "No deberías manejar si estás tan cansado.",
+        "explanation": "'Shouldn't' + verbo base se usa para aconsejar que algo no se haga.",
+        "tokens": [
+          "if",
+          "You",
+          "shouldn't",
+          "drive",
+          "this",
+          "tired",
+          "you're"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'should'.",
+        "sentence": "You should to see a doctor about that pain.",
+        "answers": [
+          "You should see a doctor about that pain."
+        ],
+        "explanation": "Después de 'should' el verbo va sin 'to', en su forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "You should saw a doctor about that pain.",
+            "why": "Cambia el verbo a pasado simple en vez de quitar el 'to' innecesario; después de 'should' va el verbo base."
+          },
+          {
+            "answer": "You should to seeing a doctor about that pain.",
+            "why": "Agrega '-ing' y mantiene el 'to'; ambos son errores."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'should'.",
+        "sentence": "We shouldn't to spend so much money on this trip.",
+        "answers": [
+          "We shouldn't spend so much money on this trip.",
+          "We should not spend so much money on this trip."
+        ],
+        "explanation": "Después de 'shouldn't' el verbo va sin 'to', en su forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "We shouldn't spent so much money on this trip.",
+            "why": "Cambia el verbo a pasado en vez de quitar el 'to'; después de 'shouldn't' va el verbo base."
+          },
+          {
+            "answer": "We don't should to spend so much money on this trip.",
+            "why": "Agrega 'don't' innecesariamente y mantiene el 'to'; 'should' ya funciona como auxiliar negativo con 'shouldn't'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'should'.",
+        "sentence": "Should I to call the landlord about the leak?",
+        "answers": [
+          "Should I call the landlord about the leak?"
+        ],
+        "explanation": "Después de 'should' el verbo va sin 'to', incluso en preguntas.",
+        "wrongAnswers": [
+          {
+            "answer": "Do I should call the landlord about the leak?",
+            "why": "Agrega 'do' innecesariamente; 'should' ya es el auxiliar para formar la pregunta."
+          },
+          {
+            "answer": "Should I to calling the landlord about the leak?",
+            "why": "Mantiene el 'to' y agrega '-ing'; ambos son errores."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'should'.",
+        "sentence": "What should I to say in the interview tomorrow?",
+        "answers": [
+          "What should I say in the interview tomorrow?"
+        ],
+        "explanation": "Después de 'should' el verbo va sin 'to', en su forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "What I should say in the interview tomorrow?",
+            "why": "Cambia el orden de palabras en vez de quitar el 'to'; en preguntas 'should' va antes del sujeto."
+          },
+          {
+            "answer": "What should I to saying in the interview tomorrow?",
+            "why": "Mantiene el 'to' y agrega '-ing'; ambos son errores."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con 'should'.",
+        "sentence": "You shouldn't to drive if you're this tired.",
+        "answers": [
+          "You shouldn't drive if you're this tired.",
+          "You should not drive if you're this tired."
+        ],
+        "explanation": "Después de 'shouldn't' el verbo va sin 'to', en su forma base.",
+        "wrongAnswers": [
+          {
+            "answer": "You shouldn't drove if you're this tired.",
+            "why": "Cambia el verbo a pasado en vez de quitar el 'to'; después de 'shouldn't' va el verbo base."
+          },
+          {
+            "answer": "You don't should to drive if you're this tired.",
+            "why": "Agrega 'don't' innecesariamente y mantiene el 'to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'should'.",
+        "spanish": "Deberías ir al médico por ese dolor de espalda, Juan.",
+        "answers": [
+          "You should see a doctor about that back pain, Juan.",
+          "You should go to the doctor about that back pain, Juan."
+        ],
+        "explanation": "Para dar un consejo se usa 'should' + verbo base, sin 'to' ni '-ing'.",
+        "wrongAnswers": [
+          {
+            "answer": "You should to see a doctor about that back pain, Juan.",
+            "why": "Después de 'should' el verbo va sin 'to'."
+          },
+          {
+            "answer": "You should seeing a doctor about that back pain, Juan.",
+            "why": "Después de 'should' se usa el verbo base, no el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'shouldn't'.",
+        "spanish": "No deberíamos gastar tanta plata en este viaje.",
+        "answers": [
+          "We shouldn't spend so much money on this trip.",
+          "We should not spend so much money on this trip."
+        ],
+        "explanation": "La negación de consejo se forma con 'shouldn't' (o 'should not') + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "We shouldn't to spend so much money on this trip.",
+            "why": "Después de 'shouldn't' el verbo va sin 'to'."
+          },
+          {
+            "answer": "We don't should spend so much money on this trip.",
+            "why": "'Should' ya es un auxiliar; no se combina con 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés usando 'should'.",
+        "spanish": "¿Debería llamar al propietario por la pérdida de agua?",
+        "answers": [
+          "Should I call the landlord about the leak?"
+        ],
+        "explanation": "Las preguntas de consejo se forman con 'Should' al principio, antes del sujeto.",
+        "wrongAnswers": [
+          {
+            "answer": "Do I should call the landlord about the leak?",
+            "why": "'Should' ya funciona como auxiliar para preguntas, no se necesita agregar 'do'."
+          },
+          {
+            "answer": "Should I to call the landlord about the leak?",
+            "why": "Después de 'should' el verbo va sin 'to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al inglés usando 'should'.",
+        "spanish": "¿Qué debería decir en la entrevista de mañana?",
+        "answers": [
+          "What should I say in the interview tomorrow?"
+        ],
+        "explanation": "Con palabras interrogativas, el orden correcto es: palabra interrogativa + should + sujeto + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "What I should say in the interview tomorrow?",
+            "why": "En preguntas con palabra interrogativa, 'should' va antes del sujeto: 'What should I...'."
+          },
+          {
+            "answer": "What do I should say in the interview tomorrow?",
+            "why": "No se combina 'do' con 'should'; el auxiliar modal ya cumple esa función."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'should'.",
+        "spanish": "Pienso que deberías llevar un paraguas a Bariloche.",
+        "answers": [
+          "I think you should take an umbrella to Bariloche.",
+          "I think you should bring an umbrella to Bariloche."
+        ],
+        "explanation": "'I think you should...' es una forma amable de dar consejo, seguida del verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "I think you should to take an umbrella to Bariloche.",
+            "why": "Después de 'should' el verbo va sin 'to'."
+          },
+          {
+            "answer": "I think you should taking an umbrella to Bariloche.",
+            "why": "Después de 'should' se usa el verbo base, no el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando 'shouldn't'.",
+        "spanish": "No deberías manejar si estás tan cansado, Lucas.",
+        "answers": [
+          "You shouldn't drive if you're this tired, Lucas.",
+          "You should not drive if you're this tired, Lucas.",
+          "You shouldn't drive if you are this tired, Lucas."
+        ],
+        "explanation": "La negación de consejo se forma con 'shouldn't' (o 'should not') + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "You shouldn't to drive if you're this tired, Lucas.",
+            "why": "Después de 'shouldn't' el verbo va sin 'to'."
+          },
+          {
+            "answer": "You don't should drive if you're this tired, Lucas.",
+            "why": "'Should' ya es un auxiliar; no se combina con 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los consejos de la doctora.",
+        "text": "Pablo hasn't felt well for three days. He has a headache and he's very tired, so he goes to see Dr. Fernández. The doctor asks him many questions. 'Do you sleep well?' she asks. Pablo says he goes to bed very late because he works at night. Dr. Fernández says, 'You should sleep at least seven hours a night. You shouldn't drink so much coffee, either, because it makes you more tired later.' She also says, 'You should drink more water and you should rest this weekend.' Pablo asks, 'Should I take any medicine?' The doctor says he doesn't need medicine, just better habits.",
+        "questions": [
+          {
+            "prompt": "What does Dr. Fernández say about sleep?",
+            "options": [
+              "Pablo should sleep at least seven hours",
+              "Pablo shouldn't sleep during the day",
+              "Pablo should work at night",
+              "Pablo should sleep less"
+            ],
+            "correctIndex": 0,
+            "explanation": "La doctora usa 'should' para dar un consejo: 'You should sleep at least seven hours a night'."
+          },
+          {
+            "prompt": "Why shouldn't Pablo drink so much coffee?",
+            "options": [
+              "Because it makes him more tired later",
+              "Because the doctor doesn't like coffee",
+              "Because it gives him a headache",
+              "Because it's expensive"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'you shouldn't drink so much coffee... because it makes you more tired later', usando 'shouldn't' para aconsejar no hacer algo."
+          },
+          {
+            "prompt": "Does Pablo need medicine?",
+            "options": [
+              "No, just better habits",
+              "Yes, for his stomach",
+              "Yes, for his headache",
+              "The text doesn't say"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice que la doctora responde que no necesita medicamentos, solo mejores hábitos."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los consejos de Nico.",
+        "text": "Valentina wants to rent her first apartment in La Plata, and she calls her friend Nico for advice because he has done it before. 'What should I do first?' she asks. Nico says, 'You should visit at least three apartments before you decide. You shouldn't choose the first one you see because you need to compare prices.' He also says, 'You should ask the landlord about the expenses, and you should read the contract carefully before you sign it.' Valentina asks, 'Should I bring someone with me when I visit the apartments?' Nico answers, 'Yes, you should. It's always better to go with a friend or your family.'",
+        "questions": [
+          {
+            "prompt": "According to Nico, what shouldn't Valentina do?",
+            "options": [
+              "Choose the first apartment she sees",
+              "Bring a friend with her",
+              "Ask about expenses",
+              "Visit several apartments"
+            ],
+            "correctIndex": 0,
+            "explanation": "Nico dice 'you shouldn't choose the first one you see', aconsejándole no apurarse con la decisión."
+          },
+          {
+            "prompt": "What does Nico say Valentina should do before signing?",
+            "options": [
+              "Call the landlord's family",
+              "Paint the apartment",
+              "Read the contract carefully",
+              "Pay the deposit"
+            ],
+            "correctIndex": 2,
+            "explanation": "Nico dice 'you should read the contract carefully before you sign it', usando 'should' para dar un consejo importante."
+          },
+          {
+            "prompt": "Should Valentina visit the apartments alone, according to Nico?",
+            "options": [
+              "Yes, she should go alone",
+              "No, she should go with someone",
+              "Nico doesn't know",
+              "It doesn't matter"
+            ],
+            "correctIndex": 1,
+            "explanation": "Nico responde 'Yes, you should' a la pregunta sobre llevar a alguien, y agrega que es mejor ir con un amigo o la familia."
+          }
+        ]
+      }
+    ],
+    "might-may": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Look at those clouds. It ___ rain this afternoon.",
+        "options": [
+          "can",
+          "will",
+          "must",
+          "might"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Might' se usa para expresar que algo es posible pero no seguro, como al mirar nubes sin saber si va a llover.",
+        "optionNotes": [
+          "Incorrecto: 'can' expresa capacidad o permiso, no incertidumbre sobre el futuro.",
+          "Incorrecto: 'will' indica certeza, pero mirar las nubes solo sugiere una posibilidad, no algo seguro.",
+          "Incorrecto: 'must' se usa para obligación o deducción fuerte, no para posibilidad incierta sobre el clima.",
+          "Correcto: 'might' expresa que algo es posible pero no está confirmado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I might ___ to Brazil next year if I save enough money.",
+        "options": [
+          "travel",
+          "traveling",
+          "to travel",
+          "travels"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'might' el verbo va siempre en infinitivo sin 'to'.",
+        "optionNotes": [
+          "Correcto: 'might' se combina con el verbo base, sin 'to' y sin conjugar.",
+          "Incorrecto: 'traveling' es gerundio, pero después de 'might' se necesita el verbo base.",
+          "Incorrecto: después de 'might' nunca se usa 'to'.",
+          "Incorrecto: 'travels' es una forma conjugada, pero después de 'might' va el verbo base."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Valentina ___ come to the party, she isn't sure yet.",
+        "options": [
+          "not might",
+          "don't might",
+          "might not",
+          "doesn't might"
+        ],
+        "correctIndex": 2,
+        "explanation": "La forma negativa habitual de 'might' es 'might not'; nunca se invierte el orden ni se usa un auxiliar como 'don't/doesn't' junto a 'might'.",
+        "optionNotes": [
+          "Incorrecto: el orden correcto es 'might not', no 'not might'.",
+          "Incorrecto: 'might' no se combina con el auxiliar 'don't'.",
+          "Correcto: 'might not' es la forma negativa habitual y natural.",
+          "Incorrecto: 'might' no se combina con el auxiliar 'doesn't'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "The manager said the interview ___ take longer than expected, but he isn't sure.",
+        "options": [
+          "should",
+          "must",
+          "may",
+          "can"
+        ],
+        "correctIndex": 2,
+        "explanation": "'May' expresa posibilidad, igual que 'might', cuando algo no es seguro.",
+        "optionNotes": [
+          "Incorrecto: 'should' se usa para dar consejos, no para expresar posibilidad.",
+          "Incorrecto: 'must' expresa obligación o una deducción muy fuerte, no una simple posibilidad.",
+          "Correcto: 'may' expresa posibilidad, de forma similar a 'might'.",
+          "Incorrecto: 'can' expresa capacidad, no incertidumbre sobre el futuro."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "Franco is 100% sure he ___ get the job, the manager already told him.",
+        "options": [
+          "will",
+          "may",
+          "could",
+          "might"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Will' se usa cuando algo es seguro o muy probable, a diferencia de 'might' o 'may', que expresan posibilidad.",
+        "optionNotes": [
+          "Correcto: 'will' se usa cuando algo es seguro, como en este caso donde el gerente ya confirmó la noticia.",
+          "Incorrecto: igual que 'might', 'may' no expresa seguridad total.",
+          "Incorrecto: 'could' también expresa posibilidad, no certeza.",
+          "Incorrecto: 'might' indica posibilidad, no la certeza total que describe la oración."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta.",
+        "prompt": "I'm not sure about my plans. I ___ travel to Bariloche this winter.",
+        "options": [
+          "won't definitely",
+          "might not",
+          "don't have to",
+          "mustn't"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Might not' expresa que tal vez no viaje, sin seguridad, que es justamente lo que dice la oración.",
+        "optionNotes": [
+          "Incorrecto: esa expresión no es natural en inglés y además contradice la idea de incertidumbre.",
+          "Correcto: 'might not' expresa que tal vez no viaje, sin estar seguro.",
+          "Incorrecto: 'don't have to' expresa que algo no es necesario, no posibilidad.",
+          "Incorrecto: 'mustn't' expresa prohibición, no incertidumbre sobre un plan."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "Look at the sky! It ___ rain later.",
+        "hint": "(posibilidad)",
+        "answers": [
+          "might",
+          "may"
+        ],
+        "explanation": "'Might' y 'may' se usan para expresar que algo es posible pero no seguro.",
+        "wrongAnswers": [
+          {
+            "answer": "will",
+            "why": "'Will' expresa certeza, pero mirar el cielo solo sugiere una posibilidad."
+          },
+          {
+            "answer": "must",
+            "why": "'Must' expresa obligación o deducción fuerte, no una simple posibilidad sobre el clima."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "Sofía ___ not come to the meeting, she has a doctor's appointment.",
+        "hint": "(posibilidad negativa)",
+        "answers": [
+          "might",
+          "may"
+        ],
+        "explanation": "'Might not' y 'may not' expresan que algo tal vez no suceda, sin seguridad.",
+        "wrongAnswers": [
+          {
+            "answer": "don't",
+            "why": "'Might' y 'may' no se combinan con el auxiliar 'don't'."
+          },
+          {
+            "answer": "won't",
+            "why": "'Won't' expresa certeza de que no va a venir, pero la idea es que es solo posible que no venga."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "I might ___ to Brazil next month if I get some extra days off.",
+        "hint": "(travel, sin 'to')",
+        "answers": [
+          "travel"
+        ],
+        "explanation": "'Might' siempre va seguido del verbo base, sin 'to' y sin conjugar.",
+        "wrongAnswers": [
+          {
+            "answer": "to travel",
+            "why": "Después de 'might' no se usa 'to'."
+          },
+          {
+            "answer": "traveling",
+            "why": "Después de 'might' se necesita el verbo base, no el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "Diego ___ get the promotion, but it's not confirmed yet.",
+        "hint": "(posibilidad)",
+        "answers": [
+          "might",
+          "may"
+        ],
+        "explanation": "'Might' y 'may' se usan cuando algo es posible pero todavía no es seguro.",
+        "wrongAnswers": [
+          {
+            "answer": "will",
+            "why": "'Will' expresa certeza, pero la oración dice que todavía no está confirmado."
+          },
+          {
+            "answer": "has to",
+            "why": "'Has to' expresa obligación, no posibilidad."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "We ___ go to the beach this weekend, it depends on the weather.",
+        "hint": "(posibilidad)",
+        "answers": [
+          "might",
+          "may"
+        ],
+        "explanation": "'Might' y 'may' expresan un plan posible que depende de algo, en este caso del clima.",
+        "wrongAnswers": [
+          {
+            "answer": "must",
+            "why": "'Must' expresa obligación, pero la oración dice que depende del clima, no que sea obligatorio."
+          },
+          {
+            "answer": "can",
+            "why": "'Can' expresa capacidad o permiso, no incertidumbre sobre un plan futuro."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta.",
+        "sentence": "The landlord ___ not accept pets, I'm not sure about the building's rules.",
+        "hint": "(posibilidad negativa)",
+        "answers": [
+          "might",
+          "may"
+        ],
+        "explanation": "'Might not' y 'may not' expresan que algo tal vez no sea permitido, sin seguridad total.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't",
+            "why": "'Might' y 'may' no se combinan con el auxiliar 'doesn't'."
+          },
+          {
+            "answer": "won't",
+            "why": "'Won't' expresa certeza, pero la oración dice que no está segura de las reglas."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "It might rain this afternoon.",
+        "alternatives": [],
+        "translation": "Puede que llueva esta tarde.",
+        "explanation": "'Might' expresa posibilidad y va seguido del verbo base, sin 'to'.",
+        "tokens": [
+          "this",
+          "afternoon",
+          "It",
+          "rain",
+          "might"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She may not come to the party tonight.",
+        "alternatives": [],
+        "translation": "Puede que ella no venga a la fiesta esta noche.",
+        "explanation": "'May not' expresa que algo tal vez no suceda, sin seguridad.",
+        "tokens": [
+          "tonight",
+          "to",
+          "may",
+          "come",
+          "She",
+          "not",
+          "the",
+          "party"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I might travel to Uruguay next month.",
+        "alternatives": [],
+        "translation": "Puede que viaje a Uruguay el mes que viene.",
+        "explanation": "'Might' se usa para un plan posible pero no confirmado, seguido del verbo base.",
+        "tokens": [
+          "Uruguay",
+          "might",
+          "next",
+          "to",
+          "travel",
+          "month",
+          "I"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "They might not have any rooms available.",
+        "alternatives": [],
+        "translation": "Puede que no tengan habitaciones disponibles.",
+        "explanation": "'Might not' expresa una posibilidad negativa, y 'any' se usa porque la oración es negativa.",
+        "tokens": [
+          "have",
+          "available",
+          "any",
+          "rooms",
+          "They",
+          "not",
+          "might"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The doctor might change your medicine.",
+        "alternatives": [],
+        "translation": "Puede que el médico te cambie la medicación.",
+        "explanation": "'Might' expresa una posibilidad futura y va seguido del verbo base.",
+        "tokens": [
+          "your",
+          "might",
+          "The",
+          "doctor",
+          "medicine",
+          "change"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posibilidad.",
+        "sentence": "I might to travel to Brazil next year.",
+        "answers": [
+          "I might travel to Brazil next year."
+        ],
+        "explanation": "Después de 'might' el verbo va en infinitivo sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I mights travel to Brazil next year.",
+            "why": "'Might' es invariable y nunca lleva 's'; el error real es el 'to' sobrante después de 'might'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posibilidad.",
+        "sentence": "Valentina don't might come to the party.",
+        "answers": [
+          "Valentina might not come to the party."
+        ],
+        "explanation": "'Might' forma su negativo con 'not' directamente, sin usar 'don't' ni 'doesn't'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina doesn't might come to the party.",
+            "why": "'Might' nunca se combina con auxiliares como 'do/does'; el error es usar un auxiliar junto a 'might'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posibilidad.",
+        "sentence": "The flight might delays because of the storm.",
+        "answers": [
+          "The flight might delay because of the storm."
+        ],
+        "explanation": "Después de 'might' el verbo va en su forma base, sin 's' ni otras terminaciones.",
+        "wrongAnswers": [
+          {
+            "answer": "The flight might delayed because of the storm.",
+            "why": "Usa el pasado en vez del verbo base; después de 'might' siempre va el verbo sin conjugar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posibilidad.",
+        "sentence": "We might not has enough money for the trip.",
+        "answers": [
+          "We might not have enough money for the trip."
+        ],
+        "explanation": "Después de 'might not' el verbo va en infinitivo sin 'to' y sin conjugar.",
+        "wrongAnswers": [
+          {
+            "answer": "We might not haves enough money for the trip.",
+            "why": "Esa forma no existe en inglés; después de 'might not' va el verbo base sin conjugar, es decir 'have'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posibilidad.",
+        "sentence": "He may not to come to work tomorrow, he's sick.",
+        "answers": [
+          "He may not come to work tomorrow, he's sick."
+        ],
+        "explanation": "Después de 'may not' el verbo va en infinitivo sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "He may to not come to work tomorrow, he's sick.",
+            "why": "El orden correcto es 'may not' seguido del verbo base; 'to' no se usa en ningún lugar de esta estructura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puede que llueva esta tarde, llevá un paraguas.",
+        "answers": [
+          "It might rain this afternoon, take an umbrella.",
+          "It may rain this afternoon, take an umbrella."
+        ],
+        "explanation": "'Might' y 'may' expresan que algo es posible pero no seguro, como en este caso con el clima.",
+        "wrongAnswers": [
+          {
+            "answer": "It will rain this afternoon, take an umbrella.",
+            "why": "'Will' expresa certeza, pero la idea original es que es solo una posibilidad."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puede que Martina no venga a la reunión, tiene un turno con el médico.",
+        "answers": [
+          "Martina might not come to the meeting, she has a doctor's appointment.",
+          "Martina may not come to the meeting, she has a doctor's appointment."
+        ],
+        "explanation": "'Might not' y 'may not' expresan que algo tal vez no suceda, sin seguridad.",
+        "wrongAnswers": [
+          {
+            "answer": "Martina doesn't might come to the meeting, she has a doctor's appointment.",
+            "why": "'Might' no se combina con el auxiliar 'doesn't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puede que viaje a Bariloche el mes que viene si consigo vacaciones.",
+        "answers": [
+          "I might travel to Bariloche next month if I get some vacation days.",
+          "I may travel to Bariloche next month if I get some vacation days."
+        ],
+        "explanation": "'Might' y 'may' expresan un plan posible pero no confirmado, seguidos del verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "I might to travel to Bariloche next month if I get some vacation days.",
+            "why": "Después de 'might' no se usa 'to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El dueño puede que no acepte mascotas en el departamento.",
+        "answers": [
+          "The landlord might not accept pets in the apartment.",
+          "The landlord may not accept pets in the apartment."
+        ],
+        "explanation": "'Might not' y 'may not' expresan incertidumbre sobre una regla, no una prohibición segura.",
+        "wrongAnswers": [
+          {
+            "answer": "The landlord mustn't accept pets in the apartment.",
+            "why": "'Mustn't' significa que está prohibido, pero la idea original es que no se sabe con seguridad, no que esté prohibido."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puede que Franco consiga el trabajo, todavía no es seguro.",
+        "answers": [
+          "Franco might get the job, it's not sure yet.",
+          "Franco may get the job, it's not sure yet."
+        ],
+        "explanation": "'Might' y 'may' se usan para algo posible pero no confirmado, como en este caso.",
+        "wrongAnswers": [
+          {
+            "answer": "Franco will get the job, it's not sure yet.",
+            "why": "'Will' expresa certeza, lo cual contradice la idea de que todavía no es seguro."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puede que no tengamos suficiente plata para el alquiler este mes.",
+        "answers": [
+          "We might not have enough money for the rent this month.",
+          "We may not have enough money for the rent this month."
+        ],
+        "explanation": "'Might not' y 'may not' expresan una posibilidad negativa sobre el futuro.",
+        "wrongAnswers": [
+          {
+            "answer": "We don't might have enough money for the rent this month.",
+            "why": "'Might' nunca se combina con el auxiliar 'don't'."
+          }
+        ]
+      }
+    ],
+    "primer-condicional": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "If it ___ tomorrow, we'll cancel the trip to Mendoza.",
+        "options": [
+          "will rain",
+          "rains",
+          "is raining",
+          "rain"
+        ],
+        "correctIndex": 1,
+        "explanation": "En el primer condicional, la parte con 'if' va en presente simple, aunque hable de algo futuro.",
+        "optionNotes": [
+          "Incorrecto: después de 'if' no se usa 'will', se usa presente simple.",
+          "Correcto: la parte del 'if' va en presente simple para hablar de una condición futura probable.",
+          "Incorrecto: no se usa el presente continuo en la parte del 'if' del primer condicional.",
+          "Incorrecto: falta la '-s' de la tercera persona singular ('it'); el presente simple requiere 'rains'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "If Juan ___ the job, he'll move to Buenos Aires.",
+        "options": [
+          "will get",
+          "is getting",
+          "get",
+          "gets"
+        ],
+        "correctIndex": 3,
+        "explanation": "La parte del 'if' en el primer condicional va en presente simple, con la '-s' de la tercera persona singular.",
+        "optionNotes": [
+          "Incorrecto: no se usa 'will' después de 'if'.",
+          "Incorrecto: no se usa el presente continuo en esta parte de la oración.",
+          "Incorrecto: falta la '-s' de tercera persona singular.",
+          "Correcto: presente simple en la parte del 'if', con la '-s' de tercera persona."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I'll call you if I ___ any news about the apartment.",
+        "options": [
+          "having",
+          "have",
+          "had",
+          "will have"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después de 'if' se usa el presente simple, no 'will', ni el pasado, ni el gerundio solo.",
+        "optionNotes": [
+          "Incorrecto: falta el verbo conjugado; 'having' no funciona solo como verbo principal aquí.",
+          "Correcto: presente simple después de 'if'.",
+          "Incorrecto: 'had' es pasado; se necesita presente simple para una condición futura.",
+          "Incorrecto: no se usa 'will' después de 'if'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "What will you do if the landlord ___ the contract?",
+        "options": [
+          "not signs",
+          "doesn't sign",
+          "don't sign",
+          "won't sign"
+        ],
+        "correctIndex": 1,
+        "explanation": "La negación en presente simple con tercera persona singular se forma con 'doesn't' + verbo base, incluso en la parte del 'if'.",
+        "optionNotes": [
+          "Incorrecto: el orden es incorrecto y falta el auxiliar 'doesn't'; no se dice 'not signs'.",
+          "Correcto: la negación en presente simple de tercera persona es 'doesn't' + verbo base.",
+          "Incorrecto: con 'the landlord' (tercera persona singular) se necesita 'doesn't', no 'don't'.",
+          "Incorrecto: no se usa 'won't' (will not) después de 'if'; la parte del if va en presente simple."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "If Sofía ___ early, she'll catch the bus to Bariloche.",
+        "options": [
+          "is leaving",
+          "will leave",
+          "leave",
+          "leaves"
+        ],
+        "correctIndex": 3,
+        "explanation": "La parte del 'if' en el primer condicional va en presente simple, con la '-s' de la tercera persona singular.",
+        "optionNotes": [
+          "Incorrecto: no se usa el presente continuo en esta parte de la oración.",
+          "Incorrecto: no se usa 'will' después de 'if'.",
+          "Incorrecto: falta la '-s' de tercera persona singular.",
+          "Correcto: presente simple con la '-s' de tercera persona singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "You'll pass the interview if you ___ well.",
+        "options": [
+          "prepare",
+          "preparing",
+          "prepared",
+          "will prepare"
+        ],
+        "correctIndex": 0,
+        "explanation": "Incluso cuando la parte del 'if' va al final de la oración, se usa presente simple, no 'will' ni el pasado.",
+        "optionNotes": [
+          "Correcto: presente simple después de 'if', incluso cuando esta parte va al final de la oración.",
+          "Incorrecto: falta el verbo conjugado en presente simple; 'preparing' no funciona solo como verbo principal.",
+          "Incorrecto: 'prepared' es pasado; se necesita presente simple para la condición futura.",
+          "Incorrecto: no se usa 'will' después de 'if', aunque la oración esté invertida."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el presente simple del verbo entre paréntesis.",
+        "sentence": "If it ___ tomorrow, we'll cancel the trip to Mendoza.",
+        "hint": "(rain)",
+        "answers": [
+          "rains"
+        ],
+        "explanation": "La parte del 'if' en el primer condicional va en presente simple, aunque hable de algo futuro.",
+        "wrongAnswers": [
+          {
+            "answer": "will rain",
+            "why": "Después de 'if' no se usa 'will', se usa presente simple."
+          },
+          {
+            "answer": "rain",
+            "why": "Falta la '-s' de tercera persona singular ('it'); el presente simple requiere 'rains'."
+          },
+          {
+            "answer": "is raining",
+            "why": "No se usa el presente continuo en la parte del 'if' del primer condicional."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el presente simple del verbo entre paréntesis.",
+        "sentence": "If Juan ___ the job, he'll move to Buenos Aires.",
+        "hint": "(get)",
+        "answers": [
+          "gets"
+        ],
+        "explanation": "La parte del 'if' va en presente simple, con la '-s' de la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "will get",
+            "why": "Después de 'if' no se usa 'will'."
+          },
+          {
+            "answer": "get",
+            "why": "Falta la '-s' de tercera persona singular."
+          },
+          {
+            "answer": "is getting",
+            "why": "No se usa el presente continuo en esta parte de la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el presente simple del verbo entre paréntesis.",
+        "sentence": "I'll call you if I ___ any news about the apartment.",
+        "hint": "(have)",
+        "answers": [
+          "have"
+        ],
+        "explanation": "Después de 'if' se usa el presente simple del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "will have",
+            "why": "Después de 'if' no se usa 'will'."
+          },
+          {
+            "answer": "had",
+            "why": "'Had' es pasado; se necesita presente simple para una condición futura."
+          },
+          {
+            "answer": "having",
+            "why": "Falta el verbo conjugado; 'having' no funciona solo como verbo principal aquí."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa del presente simple del verbo entre paréntesis.",
+        "sentence": "If the landlord ___ the contract, we'll look for another apartment.",
+        "hint": "(not/sign)",
+        "answers": [
+          "doesn't sign",
+          "does not sign"
+        ],
+        "explanation": "La negación en presente simple con tercera persona singular se forma con 'doesn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "won't sign",
+            "why": "No se usa 'won't' (will not) después de 'if'; la parte del if va en presente simple."
+          },
+          {
+            "answer": "don't sign",
+            "why": "Con 'the landlord' (tercera persona singular) se necesita 'doesn't', no 'don't'."
+          },
+          {
+            "answer": "not signs",
+            "why": "El orden es incorrecto y falta el auxiliar 'doesn't' para formar la negación en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el presente simple del verbo entre paréntesis.",
+        "sentence": "If Sofía ___ early, she'll catch the bus to Bariloche.",
+        "hint": "(leave)",
+        "answers": [
+          "leaves"
+        ],
+        "explanation": "La parte del 'if' va en presente simple, con la '-s' de la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "will leave",
+            "why": "Después de 'if' no se usa 'will'."
+          },
+          {
+            "answer": "leave",
+            "why": "Falta la '-s' de tercera persona singular."
+          },
+          {
+            "answer": "is leaving",
+            "why": "No se usa el presente continuo en esta parte de la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el presente simple del verbo entre paréntesis.",
+        "sentence": "You'll pass the interview if you ___ well.",
+        "hint": "(prepare)",
+        "answers": [
+          "prepare"
+        ],
+        "explanation": "Incluso cuando la parte del 'if' va al final de la oración, se usa presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "will prepare",
+            "why": "Después de 'if' no se usa 'will', aunque la oración esté invertida."
+          },
+          {
+            "answer": "prepared",
+            "why": "'Prepared' es pasado; se necesita presente simple para la condición futura."
+          },
+          {
+            "answer": "preparing",
+            "why": "Falta el verbo conjugado en presente simple; 'preparing' no funciona solo como verbo principal."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "If it rains tomorrow, we'll cancel the trip.",
+        "alternatives": [
+          "We'll cancel the trip if it rains tomorrow."
+        ],
+        "translation": "Si llueve mañana, vamos a cancelar el viaje.",
+        "explanation": "La parte del 'if' va en presente simple; la otra parte usa 'will' para hablar de la consecuencia futura.",
+        "tokens": [
+          "rains",
+          "it",
+          "tomorrow,",
+          "we'll",
+          "If",
+          "cancel",
+          "trip",
+          "the"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "If Juan gets the job, he'll move to Buenos Aires.",
+        "alternatives": [
+          "He'll move to Buenos Aires if Juan gets the job."
+        ],
+        "translation": "Si Juan consigue el trabajo, se va a mudar a Buenos Aires.",
+        "explanation": "La parte del 'if' va en presente simple, con la '-s' de tercera persona singular.",
+        "tokens": [
+          "he'll",
+          "to",
+          "Juan",
+          "gets",
+          "Aires",
+          "Buenos",
+          "the",
+          "If",
+          "move",
+          "job,"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I'll call you if I have any news.",
+        "alternatives": [
+          "If I have any news, I'll call you."
+        ],
+        "translation": "Te voy a llamar si tengo alguna novedad.",
+        "explanation": "Cuando la oración se invierte y el 'if' va al final, no se usa coma.",
+        "tokens": [
+          "any",
+          "I'll",
+          "news",
+          "I",
+          "call",
+          "you",
+          "if",
+          "have"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "If the landlord doesn't sign the contract, we'll look for another apartment.",
+        "alternatives": [
+          "We'll look for another apartment if the landlord doesn't sign the contract."
+        ],
+        "translation": "Si el propietario no firma el contrato, vamos a buscar otro departamento.",
+        "explanation": "La negación en presente simple con tercera persona singular es 'doesn't' + verbo base.",
+        "tokens": [
+          "doesn't",
+          "another",
+          "If",
+          "we'll",
+          "sign",
+          "the",
+          "the",
+          "landlord",
+          "for",
+          "contract,",
+          "apartment",
+          "look"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sofía will catch the bus if she leaves early.",
+        "alternatives": [
+          "If she leaves early, Sofía will catch the bus."
+        ],
+        "translation": "Sofía va a alcanzar el colectivo si sale temprano.",
+        "explanation": "Cuando el 'if' va al final de la oración, no lleva coma antes.",
+        "tokens": [
+          "catch",
+          "early",
+          "the",
+          "bus",
+          "leaves",
+          "will",
+          "if",
+          "Sofía",
+          "she"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el primer condicional.",
+        "sentence": "If it will rain tomorrow, we'll cancel the trip.",
+        "answers": [
+          "If it rains tomorrow, we'll cancel the trip."
+        ],
+        "explanation": "Después de 'if' no se usa 'will'; se usa presente simple con la '-s' de tercera persona.",
+        "wrongAnswers": [
+          {
+            "answer": "If it will rains tomorrow, we'll cancel the trip.",
+            "why": "Agrega la '-s' pero mantiene 'will', que no debe usarse después de 'if'."
+          },
+          {
+            "answer": "If it rain tomorrow, we'll cancel the trip.",
+            "why": "Quita 'will' pero no agrega la '-s' de tercera persona singular necesaria en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el primer condicional.",
+        "sentence": "If Juan will get the job, he'll move to Buenos Aires.",
+        "answers": [
+          "If Juan gets the job, he'll move to Buenos Aires."
+        ],
+        "explanation": "Después de 'if' no se usa 'will'; se usa presente simple con la '-s' de tercera persona.",
+        "wrongAnswers": [
+          {
+            "answer": "If Juan will gets the job, he'll move to Buenos Aires.",
+            "why": "Agrega la '-s' pero mantiene 'will', que no debe usarse después de 'if'."
+          },
+          {
+            "answer": "If Juan get the job, he'll move to Buenos Aires.",
+            "why": "Quita 'will' pero no agrega la '-s' de tercera persona singular."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el primer condicional.",
+        "sentence": "I'll call you if I will have any news about the apartment.",
+        "answers": [
+          "I'll call you if I have any news about the apartment."
+        ],
+        "explanation": "Después de 'if' no se usa 'will'; se usa presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "I'll call you if I will having any news about the apartment.",
+            "why": "Cambia el verbo a gerundio y mantiene 'will', ambos incorrectos después de 'if'."
+          },
+          {
+            "answer": "I'll call you if I had any news about the apartment.",
+            "why": "Usa el pasado 'had' en vez del presente simple necesario para una condición futura."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el primer condicional.",
+        "sentence": "If the landlord won't sign the contract, we'll look for another apartment.",
+        "answers": [
+          "If the landlord doesn't sign the contract, we'll look for another apartment."
+        ],
+        "explanation": "No se usa 'won't' (will not) después de 'if'; la negación en presente simple es 'doesn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "If the landlord don't sign the contract, we'll look for another apartment.",
+            "why": "Con 'the landlord' (tercera persona singular) se necesita 'doesn't', no 'don't'."
+          },
+          {
+            "answer": "If the landlord not signs the contract, we'll look for another apartment.",
+            "why": "El orden es incorrecto y falta el auxiliar 'doesn't' para formar la negación en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el primer condicional.",
+        "sentence": "You'll pass the interview if you will prepare well.",
+        "answers": [
+          "You'll pass the interview if you prepare well."
+        ],
+        "explanation": "Después de 'if' no se usa 'will', incluso cuando esta parte va al final de la oración.",
+        "wrongAnswers": [
+          {
+            "answer": "You'll pass the interview if you prepared well.",
+            "why": "Usa el pasado 'prepared' en vez del presente simple necesario después de 'if'."
+          },
+          {
+            "answer": "You'll pass the interview if you will preparing well.",
+            "why": "Cambia el verbo a gerundio y mantiene 'will', ambos incorrectos después de 'if'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el primer condicional.",
+        "spanish": "Si llueve mañana, vamos a cancelar el viaje a Mendoza.",
+        "answers": [
+          "If it rains tomorrow, we'll cancel the trip to Mendoza.",
+          "If it rains tomorrow, we will cancel the trip to Mendoza."
+        ],
+        "explanation": "La parte del 'if' va en presente simple, y la otra parte usa 'will' para la consecuencia futura.",
+        "wrongAnswers": [
+          {
+            "answer": "If it will rain tomorrow, we'll cancel the trip to Mendoza.",
+            "why": "Después de 'if' no se usa 'will'; se necesita el presente simple 'rains'."
+          },
+          {
+            "answer": "If it rain tomorrow, we'll cancel the trip to Mendoza.",
+            "why": "Falta la '-s' de tercera persona singular en el presente simple: 'rains'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el primer condicional.",
+        "spanish": "Si Juan consigue el trabajo, se va a mudar a Buenos Aires.",
+        "answers": [
+          "If Juan gets the job, he'll move to Buenos Aires.",
+          "If Juan gets the job, he will move to Buenos Aires."
+        ],
+        "explanation": "La parte del 'if' va en presente simple, con la '-s' de la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "If Juan will get the job, he'll move to Buenos Aires.",
+            "why": "Después de 'if' no se usa 'will'; se necesita el presente simple 'gets'."
+          },
+          {
+            "answer": "If Juan get the job, he'll move to Buenos Aires.",
+            "why": "Falta la '-s' de tercera persona singular: 'gets'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el primer condicional.",
+        "spanish": "Te voy a llamar si tengo alguna novedad sobre el departamento.",
+        "answers": [
+          "I'll call you if I have any news about the apartment.",
+          "I will call you if I have any news about the apartment."
+        ],
+        "explanation": "Después de 'if' se usa el presente simple del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "I'll call you if I will have any news about the apartment.",
+            "why": "Después de 'if' no se usa 'will'; se necesita el presente simple 'have'."
+          },
+          {
+            "answer": "I'll call you if I had any news about the apartment.",
+            "why": "'Had' es pasado; se necesita presente simple para una condición futura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el primer condicional.",
+        "spanish": "Si el propietario no firma el contrato, vamos a buscar otro departamento.",
+        "answers": [
+          "If the landlord doesn't sign the contract, we'll look for another apartment.",
+          "If the landlord doesn't sign the contract, we will look for another apartment."
+        ],
+        "explanation": "La negación en presente simple con tercera persona singular es 'doesn't' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "If the landlord won't sign the contract, we'll look for another apartment.",
+            "why": "Después de 'if' no se usa 'won't' (will not); se necesita el presente simple negativo 'doesn't sign'."
+          },
+          {
+            "answer": "If the landlord don't sign the contract, we'll look for another apartment.",
+            "why": "Con 'the landlord' (tercera persona singular) se necesita 'doesn't', no 'don't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el primer condicional.",
+        "spanish": "Si Sofía sale temprano, va a alcanzar el colectivo a Bariloche.",
+        "answers": [
+          "If Sofía leaves early, she'll catch the bus to Bariloche.",
+          "If Sofía leaves early, she will catch the bus to Bariloche."
+        ],
+        "explanation": "La parte del 'if' va en presente simple, con la '-s' de la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "If Sofía will leave early, she'll catch the bus to Bariloche.",
+            "why": "Después de 'if' no se usa 'will'; se necesita el presente simple 'leaves'."
+          },
+          {
+            "answer": "If Sofía leave early, she'll catch the bus to Bariloche.",
+            "why": "Falta la '-s' de tercera persona singular: 'leaves'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el primer condicional.",
+        "spanish": "Vas a pasar la entrevista si te preparás bien.",
+        "answers": [
+          "You'll pass the interview if you prepare well.",
+          "You will pass the interview if you prepare well."
+        ],
+        "explanation": "Incluso cuando la parte del 'if' va al final de la oración, se usa presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "You'll pass the interview if you will prepare well.",
+            "why": "Después de 'if' no se usa 'will'; se necesita el presente simple 'prepare'."
+          },
+          {
+            "answer": "You'll pass the interview if you prepared well.",
+            "why": "'Prepared' es pasado; se necesita presente simple para la condición futura."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas usando lo que entendiste sobre el primer condicional.",
+        "text": "Martín and his friend Lucía are planning a weekend trip to Bariloche in July. The weather in the mountains is often unpredictable, so they are making two plans. If it snows on Saturday, they will go skiing in the morning and relax in a café in the afternoon. If it doesn't snow, they will rent bikes and ride around the lake instead. Lucía is a little worried about the cold, so she will bring a warm jacket just in case. Martín says, 'If we leave early, we won't miss the bus to the hotel.' They will call the hotel tonight if they find a good price. Lucía hopes the weather will be nice, but she knows that in the mountains, anything can happen.",
+        "questions": [
+          {
+            "prompt": "What will Martín and Lucía do if it snows on Saturday?",
+            "options": [
+              "They will cancel the trip.",
+              "They will rent bikes and ride around the lake.",
+              "They will stay at the hotel all day.",
+              "They will go skiing in the morning and relax in a café."
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'If it snows on Saturday, they will go skiing in the morning and relax in a café in the afternoon', usando el primer condicional para describir una consecuencia futura probable."
+          },
+          {
+            "prompt": "According to Martín, what will happen if they leave early?",
+            "options": [
+              "They won't miss the bus to the hotel.",
+              "They will miss the bus.",
+              "They will arrive late to the hotel.",
+              "They will go skiing instead."
+            ],
+            "correctIndex": 0,
+            "explanation": "Martín dice 'If we leave early, we won't miss the bus to the hotel', mostrando la consecuencia futura de una condición en presente simple."
+          },
+          {
+            "prompt": "When will Lucía and Martín call the hotel?",
+            "options": [
+              "Tomorrow morning, no matter the price.",
+              "They already called the hotel.",
+              "Only if it snows.",
+              "Tonight, if they find a good price."
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'They will call the hotel tonight if they find a good price', donde la acción futura depende de una condición en presente simple."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas usando lo que entendiste sobre el primer condicional.",
+        "text": "Diego has a job interview next Monday at a company in Córdoba. He is nervous, so he is talking to his friend Sofía about his plans. 'If the interview goes well, I'll call you right away,' he says. Sofía smiles and answers, 'If you get the job, we'll celebrate at that new restaurant downtown!' Diego also worries about transport. 'If the bus is late, I won't arrive on time,' he says. 'So I'll leave home an hour early.' Sofía tells him, 'If you don't understand a question, you can ask the interviewer to repeat it. That's normal.' Diego feels a little better. 'If they offer me the job, I'll need to move to a new apartment near the office,' he adds. Sofía promises to help him if that happens.",
+        "questions": [
+          {
+            "prompt": "What will Diego do if the interview goes well?",
+            "options": [
+              "He will look for another job.",
+              "He will call Sofía right away.",
+              "He won't tell anyone.",
+              "He will go to the restaurant alone."
+            ],
+            "correctIndex": 1,
+            "explanation": "Diego dice 'If the interview goes well, I'll call you right away', usando el primer condicional para expresar una consecuencia futura probable."
+          },
+          {
+            "prompt": "Why will Diego leave home an hour early?",
+            "options": [
+              "Because he wants to have breakfast downtown.",
+              "Because if the bus is late, he won't arrive on time.",
+              "Because Sofía asked him to.",
+              "Because the interview starts earlier than planned."
+            ],
+            "correctIndex": 1,
+            "explanation": "Diego explica 'If the bus is late, I won't arrive on time', por eso decide salir una hora antes para evitar esa consecuencia."
+          },
+          {
+            "prompt": "What does Diego say he will need if they offer him the job?",
+            "options": [
+              "A new phone.",
+              "More money.",
+              "A new car.",
+              "A new apartment near the office."
+            ],
+            "correctIndex": 3,
+            "explanation": "Diego dice 'If they offer me the job, I'll need to move to a new apartment near the office', usando el primer condicional para una situación futura posible."
+          }
+        ]
+      }
+    ],
+    "email-consejos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el saludo del email.",
+        "prompt": "___ Tomás, thanks for your message!",
+        "options": [
+          "To",
+          "Dear",
+          "Hi",
+          "Hello friend"
+        ],
+        "correctIndex": 2,
+        "explanation": "En un email informal entre amigos se usa 'Hi' seguido de coma, no 'Dear', que es muy formal.",
+        "optionNotes": [
+          "Incorrecto: 'To' no es un saludo; se usa en direcciones o cartas formales.",
+          "Incorrecto: 'Dear' es muy formal para un email informal entre amigos.",
+          "Correcto: 'Hi' es el saludo informal típico en un email entre amigos.",
+          "Incorrecto: no es natural en inglés agregar 'friend' después de 'Hello'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el consejo.",
+        "prompt": "You ___ bring a jacket because it might be cold at night.",
+        "options": [
+          "must to",
+          "will",
+          "has to",
+          "should"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para dar un consejo se usa el modal 'should', que no cambia de forma según el sujeto.",
+        "optionNotes": [
+          "Incorrecto: 'must' nunca va seguido de 'to'.",
+          "Incorrecto: 'will' no se usa para dar consejos, sino para hablar de decisiones o futuro.",
+          "Incorrecto: 'has to' se usa con he/she/it, no con 'you'; además expresa obligación, no consejo.",
+          "Correcto: 'should' es el modal que se usa para dar consejos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración condicional.",
+        "prompt": "If you ___ time, you should visit the old town.",
+        "options": [
+          "will have",
+          "having",
+          "have",
+          "had"
+        ],
+        "correctIndex": 2,
+        "explanation": "En la parte del 'if' del primer condicional se usa presente simple, nunca 'will'.",
+        "optionNotes": [
+          "Incorrecto: después de 'if' no se usa 'will'.",
+          "Incorrecto: 'having' es gerundio, falta un verbo conjugado en presente simple.",
+          "Correcto: en la parte del 'if' se usa presente simple.",
+          "Incorrecto: 'had' es pasado, y la oración habla de una situación futura posible."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "You ___ show your passport at the airport, it's obligatory.",
+        "options": [
+          "have to",
+          "should",
+          "might",
+          "would"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Have to' se usa para expresar obligaciones necesarias, como lo confirma 'it's obligatory'.",
+        "optionNotes": [
+          "Correcto: 'have to' expresa una obligación necesaria.",
+          "Incorrecto: 'should' es un consejo, pero la oración indica que es obligatorio.",
+          "Incorrecto: 'might' expresa posibilidad, no obligación.",
+          "Incorrecto: 'would' no se usa para expresar obligación."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "It ___ rain tomorrow, so bring an umbrella just in case.",
+        "options": [
+          "might",
+          "must",
+          "have to",
+          "should"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Might' se usa para expresar posibilidad, como en este caso sobre el clima.",
+        "optionNotes": [
+          "Correcto: 'might' expresa posibilidad, ideal para hablar del clima.",
+          "Incorrecto: 'must' expresa una obligación fuerte o una conclusión lógica, no una simple posibilidad.",
+          "Incorrecto: 'have to' expresa obligación, no posibilidad.",
+          "Incorrecto: 'should' es un consejo, no indica posibilidad sobre el clima."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la despedida del email.",
+        "prompt": "I hope this helps. ___,",
+        "options": [
+          "Take care",
+          "To whom it may concern",
+          "Sincerely yours faithfully",
+          "Dear friend"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Take care' es una despedida informal típica en emails entre amigos.",
+        "optionNotes": [
+          "Correcto: 'Take care' es una despedida informal común entre amigos.",
+          "Incorrecto: 'To whom it may concern' se usa como saludo en cartas formales a desconocidos, no como despedida.",
+          "Incorrecto: es una mezcla extraña de despedidas muy formales que no se usa así en inglés.",
+          "Incorrecto: 'Dear friend' no se usa como despedida; 'dear' corresponde al saludo formal."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el saludo informal del email.",
+        "sentence": "___ Martina, it's great to hear from you!",
+        "hint": "(saludo informal)",
+        "answers": [
+          "Hi",
+          "Hello"
+        ],
+        "explanation": "En emails informales se usa 'Hi' o 'Hello' seguido de coma, no 'Dear'.",
+        "wrongAnswers": [
+          {
+            "answer": "Dear",
+            "why": "'Dear' es muy formal para un email informal entre amigos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal correcto para dar un consejo.",
+        "sentence": "You ___ try the empanadas here, they're amazing!",
+        "hint": "(consejo)",
+        "answers": [
+          "should"
+        ],
+        "explanation": "Para dar un consejo se usa el modal 'should'.",
+        "wrongAnswers": [
+          {
+            "answer": "have to",
+            "why": "'have to' expresa obligación, pero esto es solo una recomendación."
+          },
+          {
+            "answer": "will",
+            "why": "'will' no se usa para dar consejos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración condicional con el tiempo verbal correcto.",
+        "sentence": "If it ___ cold, you should bring a warm jacket.",
+        "hint": "(presente simple después de if)",
+        "answers": [
+          "is"
+        ],
+        "explanation": "En la parte del 'if' del primer condicional se usa presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "will be",
+            "why": "Después de 'if' no se usa 'will'."
+          },
+          {
+            "answer": "was",
+            "why": "'was' es pasado, y la oración habla de una situación futura posible."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal correcto para expresar obligación.",
+        "sentence": "You ___ bring your ID card, it's a legal requirement at the hotel.",
+        "hint": "(obligación necesaria)",
+        "answers": [
+          "have to"
+        ],
+        "explanation": "'Have to' se usa para expresar obligaciones necesarias, como un requisito legal.",
+        "wrongAnswers": [
+          {
+            "answer": "should",
+            "why": "'should' es un consejo, pero esto es obligatorio."
+          },
+          {
+            "answer": "might",
+            "why": "'might' expresa posibilidad, no obligación."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el modal correcto para expresar posibilidad.",
+        "sentence": "The weather ___ change this weekend, so check the forecast before the trip.",
+        "hint": "(posibilidad)",
+        "answers": [
+          "might",
+          "may"
+        ],
+        "explanation": "'Might' o 'may' se usan para expresar posibilidad, ideal para hablar del clima.",
+        "wrongAnswers": [
+          {
+            "answer": "have to",
+            "why": "'have to' expresa obligación, no posibilidad."
+          },
+          {
+            "answer": "should",
+            "why": "'should' es un consejo, no una posibilidad sobre el clima."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la despedida informal del email.",
+        "sentence": "Thanks for your advice. ___, Tomás",
+        "hint": "(despedida informal)",
+        "answers": [
+          "Take care",
+          "See you soon"
+        ],
+        "explanation": "En emails informales se usan despedidas como 'Take care' o 'See you soon'.",
+        "wrongAnswers": [
+          {
+            "answer": "Sincerely",
+            "why": "'Sincerely' es una despedida formal, no se usa en emails informales entre amigos."
+          },
+          {
+            "answer": "Dear",
+            "why": "'Dear' se usa en el saludo, no en la despedida."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You should bring warm clothes for the trip.",
+        "alternatives": [],
+        "translation": "Deberías llevar ropa abrigada para el viaje.",
+        "explanation": "'Should' se usa para dar consejos y va seguido del verbo base.",
+        "tokens": [
+          "the",
+          "for",
+          "should",
+          "warm",
+          "bring",
+          "You",
+          "trip",
+          "clothes"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "If you have time, you should visit the museum.",
+        "alternatives": [
+          "You should visit the museum if you have time."
+        ],
+        "translation": "Si tenés tiempo, deberías visitar el museo.",
+        "explanation": "En la parte del 'if' se usa presente simple, y en la otra parte se usa 'should' para aconsejar; la cláusula con 'if' puede ir antes o después de la cláusula principal.",
+        "tokens": [
+          "have",
+          "visit",
+          "time,",
+          "you",
+          "you",
+          "If",
+          "the",
+          "should",
+          "museum"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "You have to show your passport at customs.",
+        "alternatives": [],
+        "translation": "Tenés que mostrar tu pasaporte en la aduana.",
+        "explanation": "'Have to' se usa para expresar una obligación necesaria.",
+        "tokens": [
+          "passport",
+          "You",
+          "have",
+          "to",
+          "at",
+          "your",
+          "customs",
+          "show"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "It might rain, so bring an umbrella.",
+        "alternatives": [],
+        "translation": "Puede que llueva, así que llevá un paraguas.",
+        "explanation": "'Might' se usa para expresar posibilidad, como hablar del clima.",
+        "tokens": [
+          "rain,",
+          "so",
+          "bring",
+          "might",
+          "It",
+          "umbrella",
+          "an"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I hope you have a great trip.",
+        "alternatives": [],
+        "translation": "Espero que tengas un viaje genial.",
+        "explanation": "Es una expresión típica para cerrar un mensaje con buenos deseos.",
+        "tokens": [
+          "a",
+          "great",
+          "have",
+          "you",
+          "I",
+          "trip",
+          "hope"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Dear Tomás, thanks for your email!",
+        "answers": [
+          "Hi Tomás, thanks for your email!",
+          "Hello Tomás, thanks for your email!"
+        ],
+        "explanation": "En un email informal se saluda con 'Hi' o 'Hello', no con 'Dear', que es muy formal.",
+        "wrongAnswers": [
+          {
+            "answer": "Dear Tomás: thanks for your email!",
+            "why": "El problema no es la puntuación después del nombre, sino que 'Dear' es demasiado formal para un email informal entre amigos."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "If it will rain, we will stay inside.",
+        "answers": [
+          "If it rains, we will stay inside."
+        ],
+        "explanation": "En la parte del 'if' del primer condicional se usa presente simple, nunca 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "If it will rains, we will stay inside.",
+            "why": "Sigue teniendo 'will' en la parte del if, que no se debe usar; además no es gramaticalmente correcto combinarlo con 'rains'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "You must to bring your student ID to the exam.",
+        "answers": [
+          "You must bring your student ID to the exam."
+        ],
+        "explanation": "El modal 'must' nunca va seguido de 'to', directamente se usa con el verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "You have must bring your student ID to the exam.",
+            "why": "'have must' no es una estructura válida; el modal 'must' no se usa junto con 'have'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "You has to check in online before the flight.",
+        "answers": [
+          "You have to check in online before the flight."
+        ],
+        "explanation": "Con el sujeto 'you' se usa 'have to', no 'has to', que corresponde a he/she/it.",
+        "wrongAnswers": [
+          {
+            "answer": "You has to checks in online before the flight.",
+            "why": "El problema no está en 'check', sino en el auxiliar: con 'you' se usa 'have to', no 'has to'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "If you don't have a reservation, you should to call the hotel.",
+        "answers": [
+          "If you don't have a reservation, you should call the hotel."
+        ],
+        "explanation": "El modal 'should' nunca va seguido de 'to', directamente se usa con el verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "If you don't have a reservation, you should calling the hotel.",
+            "why": "Después de 'should' se usa el verbo base, no el gerundio 'calling'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Hola Sofía, ¡qué bueno saber de vos!",
+        "answers": [
+          "Hi Sofía, it's great to hear from you!",
+          "Hello Sofía, it's great to hear from you!"
+        ],
+        "explanation": "En emails informales entre amigos se saluda con 'Hi' o 'Hello', no con 'Dear'.",
+        "wrongAnswers": [
+          {
+            "answer": "Dear Sofía, it's great to hear from you!",
+            "why": "'Dear' es muy formal para un email informal entre amigos; se usa 'Hi' o 'Hello'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Deberías probar el asado si venís a Argentina.",
+        "answers": [
+          "You should try asado if you come to Argentina."
+        ],
+        "explanation": "Para dar un consejo se usa 'should', no 'have to', que expresa obligación.",
+        "wrongAnswers": [
+          {
+            "answer": "You have to try asado if you come to Argentina.",
+            "why": "'have to' expresa obligación, pero acá se está dando un consejo, que se expresa con 'should'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Si llueve, deberíamos quedarnos en el hotel.",
+        "answers": [
+          "If it rains, we should stay at the hotel."
+        ],
+        "explanation": "En la parte del 'if' del primer condicional se usa presente simple, nunca 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "If it will rain, we should stay at the hotel.",
+            "why": "Después de 'if' no se usa 'will'; se usa presente simple."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Tenés que llevar tu documento al aeropuerto, es obligatorio.",
+        "answers": [
+          "You have to bring your ID to the airport, it's obligatory."
+        ],
+        "explanation": "'Have to' se usa para expresar obligaciones necesarias, como lo confirma 'es obligatorio'.",
+        "wrongAnswers": [
+          {
+            "answer": "You should bring your ID to the airport, it's obligatory.",
+            "why": "'should' es un consejo, pero la oración dice que es obligatorio, por eso corresponde 'have to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puede que haga frío de noche, así que llevá una campera.",
+        "answers": [
+          "It might be cold at night, so bring a jacket.",
+          "It may be cold at night, so bring a jacket."
+        ],
+        "explanation": "'Might' o 'may' se usan para expresar posibilidad, como en este caso sobre el clima.",
+        "wrongAnswers": [
+          {
+            "answer": "It has to be cold at night, so bring a jacket.",
+            "why": "'has to' expresa obligación o certeza fuerte, no la posibilidad que se quiere expresar con 'might'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Gracias por tu mensaje. ¡Nos vemos pronto!",
+        "answers": [
+          "Thanks for your message. See you soon!"
+        ],
+        "explanation": "En emails informales se usan despedidas como 'See you soon' o 'Take care'.",
+        "wrongAnswers": [
+          {
+            "answer": "Thanks for your message. Sincerely yours.",
+            "why": "'Sincerely yours' es una despedida muy formal, no se usa en un mensaje informal entre amigos."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el email que Tomás le escribe a su amiga Sofía y respondé las preguntas sobre los consejos que le da.",
+        "text": "Hi Sofía,\n\nThanks for your message! I'm so happy you're coming to Bariloche next month. I have some advice for your trip.\n\nFirst, you should bring warm clothes because it might be cold at night, even in spring. Also, if you want to see the lake, you have to wake up early because the tour buses leave at 7 a.m.\n\nYou don't have to bring your own ski equipment, but you should book it online before you arrive, so you don't wait in a long line.\n\nIf the weather is bad, we might go to the chocolate museum instead. It's small, but it's really fun!\n\nSee you soon,\nTomás",
+        "questions": [
+          {
+            "prompt": "According to Tomás, why should Sofía bring warm clothes?",
+            "options": [
+              "Because she has to climb a mountain.",
+              "Because it might be cold at night, even in spring.",
+              "Because it will definitely snow.",
+              "Because the hotel doesn't have heating."
+            ],
+            "correctIndex": 1,
+            "explanation": "Tomás usa 'should' para dar un consejo y 'might' para expresar una posibilidad ('it might be cold'), no una certeza."
+          },
+          {
+            "prompt": "What does Sofía have to do to see the lake?",
+            "options": [
+              "Wake up early because the tour buses leave at 7 a.m.",
+              "Book a hotel room online.",
+              "Bring her own boat.",
+              "Ask Tomás for a car."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Have to' indica una obligación: Sofía necesita madrugar porque los buses salen a las 7 a.m., no es opcional."
+          },
+          {
+            "prompt": "What might they do if the weather is bad?",
+            "options": [
+              "They might go to the chocolate museum.",
+              "They will stay at home all day.",
+              "They will go skiing anyway.",
+              "They will cancel the trip."
+            ],
+            "correctIndex": 0,
+            "explanation": "Es una oración de primer condicional con 'might' para expresar un resultado posible, no seguro: 'If the weather is bad, we might go to the chocolate museum'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el email que Lucía le escribe a Martín sobre su nuevo departamento en Buenos Aires y respondé las preguntas.",
+        "text": "Hi Martín,\n\nCongratulations on your new job in Buenos Aires! I know you're looking for an apartment, so here are some tips.\n\nFirst, you have to bring your ID and proof of income when you visit an apartment, because landlords ask for these documents immediately. Also, you should visit the apartment in the evening, so you can check if the street is noisy.\n\nIf the rent is too high, you might find a cheaper place in Almagro or Caballito. Those neighborhoods are close to the center, but they're quieter and less expensive.\n\nYou don't have to sign a contract on the first visit, but you should decide quickly because good apartments disappear fast in this city.\n\nIf you need any help, I can go with you this weekend.\n\nTake care,\nLucía",
+        "questions": [
+          {
+            "prompt": "Why does Martín have to bring his ID and proof of income?",
+            "options": [
+              "Because landlords ask for these documents immediately.",
+              "Because he is traveling abroad.",
+              "Because he needs them for his new job.",
+              "Because the bank requires them."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Have to' expresa una obligación impuesta por otra persona: los dueños piden esos documentos de inmediato."
+          },
+          {
+            "prompt": "According to Lucía, what might happen if the rent is too high?",
+            "options": [
+              "Martín might move to another city.",
+              "Martín might lose his job.",
+              "Martín might find a cheaper apartment in Almagro or Caballito.",
+              "Martín might have to pay more."
+            ],
+            "correctIndex": 2,
+            "explanation": "La estructura 'If + presente, might + infinitivo' (primer condicional) muestra un resultado posible, no seguro, ante esa condición."
+          },
+          {
+            "prompt": "Why should Martín decide quickly about an apartment?",
+            "options": [
+              "Because the rent will increase every day.",
+              "Because good apartments disappear fast in the city.",
+              "Because he has to start work tomorrow.",
+              "Because Lucía is leaving soon."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Should' se usa para dar un consejo basado en una razón lógica, en este caso, que los buenos departamentos se alquilan rápido."
+          }
+        ]
+      }
+    ]
+  }
+}

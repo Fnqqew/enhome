@@ -46,6 +46,7 @@ export const fillBlank: ExerciseKind<FillGenerated, FillGenerated, FillPublic, F
     return graded(right, e.sentence.replace('___', e.answers[0]), mistake ? `${mistake.why} ${e.explanation}` : e.explanation)
   },
   empty: (e) => ({ type: e.type, text: '' }),
+  retry: (e, a) => predictedMistake(a.text, e.wrongAnswers)?.why ?? fillBlank.hint(e),
   hint: (e) => {
     const answer = e.answers[0]
     return `La respuesta empieza con «${answer[0]}» y tiene ${answer.length} ${answer.length === 1 ? 'carácter' : 'caracteres'}.`
@@ -94,6 +95,7 @@ export const wordOrder: ExerciseKind<OrderGenerated, OrderStored, OrderPublic, O
   mainText: (e) => e.sentence,
   grade: (e, a) => graded(matchesAny(a.tokens.join(' '), [e.sentence, ...e.alternatives]), e.sentence, e.explanation),
   empty: (e) => ({ type: e.type, tokens: [] }),
+  retry: (e) => wordOrder.hint(e),
   hint: (e) => `La oración empieza con «${tokenize(e.sentence).slice(0, 2).join(' ')}».`,
   guide: ({ language }) =>
     `word_order: sentence es una oración correcta en ${language} de 5 a 12 palabras (el alumno la arma con las palabras mezcladas); alternatives con otros órdenes válidos o vacío; translation es su traducción al español.`,
@@ -148,6 +150,7 @@ export const errorCorrection: ExerciseKind<FixGenerated, FixGenerated, FixPublic
     return graded(right, e.answers[0], mistake ? `${mistake.why} ${e.explanation}` : e.explanation)
   },
   empty: (e) => ({ type: e.type, text: '' }),
+  retry: (e, a) => predictedMistake(a.text, e.wrongAnswers)?.why ?? errorCorrection.hint(e),
   hint: (e) => {
     const word = firstDifferentWord(e.sentence, e.answers[0])
     return word ? `Fijate en «${word}».` : 'Revisá el verbo y los artículos de la oración.'

@@ -1,0 +1,2886 @@
+{
+  "subtopics": {
+    "going-to": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You found a leak in your apartment. I ___ call the landlord about the leak tomorrow.",
+        "options": [
+          "are going to",
+          "going to",
+          "am going to",
+          "is going to"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el sujeto 'I' se usa 'am going to', no 'is' ni 'are', y el auxiliar nunca se omite.",
+        "optionNotes": [
+          "Incorrecto: 'are' se usa con you/we/they, no con 'I'.",
+          "Incorrecto: falta el auxiliar 'am', que es obligatorio con 'going to'.",
+          "Correcto: el sujeto 'I' siempre lleva 'am'.",
+          "Incorrecto: 'is' se usa con he/she/it, no con 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "Marta ___ sign the rental contract this Friday.",
+        "options": [
+          "am going to",
+          "are going to",
+          "going to",
+          "is going to"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con un sujeto en tercera persona singular como 'Marta' se usa 'is going to'.",
+        "optionNotes": [
+          "Incorrecto: 'am' solo se usa con 'I'.",
+          "Incorrecto: 'are' se usa con you/we/they, no con 'Marta'.",
+          "Incorrecto: falta el auxiliar 'is', que es obligatorio con 'going to'.",
+          "Correcto: 'Marta' es tercera persona singular, lleva 'is'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You and your partner are looking at apartments. We ___ move to that neighborhood because it's too far from work.",
+        "options": [
+          "am not going to",
+          "don't going to",
+          "aren't going to",
+          "isn't going to"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'we' la forma negativa de going to es 'aren't going to'.",
+        "optionNotes": [
+          "Incorrecto: 'am' solo se usa con 'I', no con 'we'.",
+          "Incorrecto: no se usa 'don't' con la estructura 'going to'.",
+          "Correcto: 'we' lleva 'are', y en negativo es 'aren't going to'.",
+          "Incorrecto: 'isn't' se usa con he/she/it, no con 'we'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are talking to a friend about his career. ___ you going to apply for that job at the hospital?",
+        "options": [
+          "Will",
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'you' en una pregunta con going to se usa 'are', colocado antes del sujeto.",
+        "optionNotes": [
+          "Incorrecto: 'will' es otra forma de futuro; no se combina con 'going to'.",
+          "Incorrecto: 'is' se usa con he/she/it, no con 'you'.",
+          "Correcto: 'you' lleva 'are' en preguntas con going to.",
+          "Incorrecto: no se usa 'do' con la estructura 'going to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "Your friend Lucas doesn't have a car. Lucas ___ bring his car to Bariloche; he'll take the bus.",
+        "options": [
+          "doesn't going to",
+          "don't going to",
+          "isn't going to",
+          "aren't going to"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con un sujeto en tercera persona singular como 'Lucas' el negativo de going to es 'isn't going to'.",
+        "optionNotes": [
+          "Incorrecto: no se usa 'doesn't' con la estructura 'going to'.",
+          "Incorrecto: no se usa 'don't' con la estructura 'going to'.",
+          "Correcto: 'Lucas' es tercera persona singular, lleva 'isn't'.",
+          "Incorrecto: 'aren't' se usa con you/we/they, no con 'Lucas'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta según el contexto.",
+        "prompt": "You are planning a trip with friends. ___ they going to visit Mendoza this summer?",
+        "options": [
+          "Is",
+          "Are",
+          "Will",
+          "Do"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'they' en una pregunta con going to se usa 'are', colocado antes del sujeto.",
+        "optionNotes": [
+          "Incorrecto: 'is' se usa con he/she/it, no con 'they'.",
+          "Correcto: 'they' lleva 'are' en preguntas con going to.",
+          "Incorrecto: 'will' es otra forma de futuro; no se combina con 'going to'.",
+          "Incorrecto: no se usa 'do' con la estructura 'going to'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el sujeto y el auxiliar correctos de going to.",
+        "sentence": "___ going to see the doctor tomorrow morning.",
+        "hint": "(yo, afirmativo)",
+        "answers": [
+          "I am",
+          "I'm"
+        ],
+        "explanation": "Con el sujeto 'I' siempre se usa 'am' antes de 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I is",
+            "why": "'is' no corresponde al sujeto 'I'; se usa 'am'."
+          },
+          {
+            "answer": "I going to",
+            "why": "Falta el auxiliar 'am', que es obligatorio con 'going to'."
+          },
+          {
+            "answer": "I are",
+            "why": "'are' no corresponde al sujeto 'I'; se usa 'am'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el sujeto y el auxiliar correctos de going to.",
+        "sentence": "___ going to rent a new apartment next year.",
+        "hint": "(nosotros, afirmativo)",
+        "answers": [
+          "We are",
+          "We're"
+        ],
+        "explanation": "Con 'we' se usa 'are' antes de 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "We is",
+            "why": "'is' no corresponde a 'we'; se usa 'are'."
+          },
+          {
+            "answer": "We going to",
+            "why": "Falta el auxiliar 'are', que es obligatorio con 'going to'."
+          },
+          {
+            "answer": "We am",
+            "why": "'am' solo se usa con 'I', no con 'we'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el sujeto y el auxiliar correctos de going to.",
+        "sentence": "___ going to call you after the interview.",
+        "hint": "(ella, afirmativo)",
+        "answers": [
+          "She is",
+          "She's"
+        ],
+        "explanation": "Con 'she' se usa 'is' antes de 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "She are",
+            "why": "'are' no corresponde a 'she'; se usa 'is'."
+          },
+          {
+            "answer": "She going to",
+            "why": "Falta el auxiliar 'is', que es obligatorio con 'going to'."
+          },
+          {
+            "answer": "She am",
+            "why": "'am' solo se usa con 'I', no con 'she'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta de going to.",
+        "sentence": "Lucas ___ bring his umbrella; it's not going to rain.",
+        "hint": "(negativo, él)",
+        "answers": [
+          "isn't going to",
+          "is not going to"
+        ],
+        "explanation": "Con un sujeto singular como 'Lucas' el negativo de going to es 'isn't going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "doesn't going to",
+            "why": "No se usa 'doesn't' con la estructura 'going to'; se usa 'isn't'."
+          },
+          {
+            "answer": "aren't going to",
+            "why": "'aren't' no corresponde a 'Lucas', que es singular; se usa 'isn't'."
+          },
+          {
+            "answer": "don't going to",
+            "why": "No se usa 'don't' con la estructura 'going to'; se usa 'isn't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el auxiliar correcto para formar la pregunta con going to.",
+        "sentence": "___ you going to travel to Bariloche this winter?",
+        "hint": "(pregunta)",
+        "answers": [
+          "Are"
+        ],
+        "explanation": "Con 'you' se usa 'are' para formar la pregunta con going to.",
+        "wrongAnswers": [
+          {
+            "answer": "Do",
+            "why": "No se usa 'do' con la estructura 'going to'; se usa 'are'."
+          },
+          {
+            "answer": "Is",
+            "why": "'is' no corresponde a 'you'; se usa 'are'."
+          },
+          {
+            "answer": "Will",
+            "why": "'will' es otra forma de futuro; no se combina con 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma negativa correcta de going to.",
+        "sentence": "They ___ sell the house this year.",
+        "hint": "(negativo, ellos)",
+        "answers": [
+          "aren't going to",
+          "are not going to"
+        ],
+        "explanation": "Con 'they' el negativo de going to es 'aren't going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "isn't going to",
+            "why": "'isn't' no corresponde a 'they'; se usa 'aren't'."
+          },
+          {
+            "answer": "doesn't going to",
+            "why": "No se usa 'doesn't' con la estructura 'going to'."
+          },
+          {
+            "answer": "don't going to",
+            "why": "No se usa 'don't' con la estructura 'going to'; se usa 'aren't'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I'm going to call the landlord tomorrow morning.",
+        "alternatives": [],
+        "translation": "Voy a llamar al propietario mañana a la mañana.",
+        "explanation": "Se usa 'I'm going to' para hablar de un plan ya decidido con el sujeto 'I'.",
+        "tokens": [
+          "tomorrow",
+          "to",
+          "going",
+          "morning",
+          "the",
+          "call",
+          "I'm",
+          "landlord"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "She's going to start her new job on Monday.",
+        "alternatives": [],
+        "translation": "Ella va a empezar su nuevo trabajo el lunes.",
+        "explanation": "Se usa 'she's going to' porque el sujeto es tercera persona singular.",
+        "tokens": [
+          "to",
+          "She's",
+          "start",
+          "on",
+          "going",
+          "job",
+          "her",
+          "new",
+          "Monday"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Are you going to visit Mendoza this summer?",
+        "alternatives": [],
+        "translation": "¿Vas a visitar Mendoza este verano?",
+        "explanation": "Para preguntar con 'you' se invierte el orden: 'are you going to'.",
+        "tokens": [
+          "Mendoza",
+          "going",
+          "to",
+          "Are",
+          "summer",
+          "you",
+          "visit",
+          "this"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "We aren't going to rent that apartment.",
+        "alternatives": [],
+        "translation": "No vamos a alquilar ese departamento.",
+        "explanation": "Con 'we' el negativo de going to es 'aren't going to'.",
+        "tokens": [
+          "that",
+          "rent",
+          "We",
+          "apartment",
+          "to",
+          "aren't",
+          "going"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "What are you going to do after the interview?",
+        "alternatives": [],
+        "translation": "¿Qué vas a hacer después de la entrevista?",
+        "explanation": "Las preguntas con 'what' siguen la estructura: palabra qu-, auxiliar, sujeto, going to + verbo.",
+        "tokens": [
+          "after",
+          "do",
+          "interview",
+          "you",
+          "What",
+          "going",
+          "to",
+          "are",
+          "the"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con going to.",
+        "sentence": "I going to call him tomorrow.",
+        "answers": [
+          "I'm going to call him tomorrow.",
+          "I am going to call him tomorrow."
+        ],
+        "explanation": "Going to siempre necesita el auxiliar am/is/are; con 'I' se usa 'am'.",
+        "wrongAnswers": [
+          {
+            "answer": "I going to called him tomorrow.",
+            "why": "Cambia el verbo en lugar de agregar el auxiliar 'am', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con going to.",
+        "sentence": "She going to travel to Salta next week.",
+        "answers": [
+          "She's going to travel to Salta next week.",
+          "She is going to travel to Salta next week."
+        ],
+        "explanation": "Going to siempre necesita el auxiliar am/is/are; con 'she' se usa 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "She going to travels to Salta next week.",
+            "why": "Agrega una 's' al verbo en lugar de agregar el auxiliar 'is', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con going to.",
+        "sentence": "We is going to sign the contract on Friday.",
+        "answers": [
+          "We are going to sign the contract on Friday.",
+          "We're going to sign the contract on Friday."
+        ],
+        "explanation": "Con 'we' se usa 'are', no 'is', antes de 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "We is going to signs the contract on Friday.",
+            "why": "Agrega una 's' al verbo en lugar de corregir el auxiliar a 'are', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con going to.",
+        "sentence": "They isn't going to buy that car.",
+        "answers": [
+          "They aren't going to buy that car.",
+          "They're not going to buy that car."
+        ],
+        "explanation": "Con 'they' se usa 'aren't', no 'isn't', en la forma negativa.",
+        "wrongAnswers": [
+          {
+            "answer": "They isn't going to buys that car.",
+            "why": "Agrega una 's' al verbo en lugar de corregir el auxiliar a 'aren't', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregií el error relacionado con going to.",
+        "sentence": "Is they going to move to a new house?",
+        "answers": [
+          "Are they going to move to a new house?"
+        ],
+        "explanation": "Con 'they' se usa 'are', no 'is', para formar la pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Is they going to moves to a new house?",
+            "why": "Agrega una 's' al verbo en lugar de corregir el auxiliar a 'are', que es el error real de la oración."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Voy a llamar al casero por el problema del agua.",
+        "answers": [
+          "I'm going to call the landlord about the water problem.",
+          "I am going to call the landlord about the water problem."
+        ],
+        "explanation": "Con el sujeto 'I' siempre se usa 'am' antes de 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I going to call the landlord about the water problem.",
+            "why": "Falta el auxiliar 'am', que es obligatorio con 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Vas a postularte para ese trabajo en el hospital?",
+        "answers": [
+          "Are you going to apply for that job at the hospital?"
+        ],
+        "explanation": "Para preguntar con 'you' se invierte el orden: 'are you going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "You going to apply for that job at the hospital?",
+            "why": "Falta el auxiliar 'are' y la inversión necesaria para formar la pregunta."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Ella no va a comprar un auto nuevo este año.",
+        "answers": [
+          "She isn't going to buy a new car this year.",
+          "She's not going to buy a new car this year.",
+          "She is not going to buy a new car this year."
+        ],
+        "explanation": "Con 'she' el negativo de going to es 'isn't going to', no 'don't going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "She don't going to buy a new car this year.",
+            "why": "Se usa 'don't' en lugar de 'isn't', que es la forma negativa correcta con going to para 'she'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Vamos a mudarnos a un departamento más grande el año que viene.",
+        "answers": [
+          "We're going to move to a bigger apartment next year.",
+          "We are going to move to a bigger apartment next year."
+        ],
+        "explanation": "Con 'we' siempre se usa 'are' antes de 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "We going to move to a bigger apartment next year.",
+            "why": "Falta el auxiliar 'are', que es obligatorio con 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¿Qué van a hacer Lucas y Sofía este fin de semana?",
+        "answers": [
+          "What are Lucas and Sofía going to do this weekend?"
+        ],
+        "explanation": "En las preguntas con going to no se puede omitir el auxiliar 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "What Lucas and Sofía going to do this weekend?",
+            "why": "Falta el auxiliar 'are' en la pregunta, que es obligatorio con going to."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No vamos a viajar a Bariloche este invierno.",
+        "answers": [
+          "We aren't going to travel to Bariloche this winter.",
+          "We're not going to travel to Bariloche this winter.",
+          "We are not going to travel to Bariloche this winter."
+        ],
+        "explanation": "Con 'we' el negativo de going to es 'aren't going to', no 'no going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "We no going to travel to Bariloche this winter.",
+            "why": "Es un calco del español: en inglés no se usa 'no' antes del verbo para negar; se usa 'aren't' o 'not'."
+          }
+        ]
+      }
+    ],
+    "going-to-evidencia": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Look at those dark clouds! It ___ rain soon.",
+        "options": [
+          "going to",
+          "is go to",
+          "is going to",
+          "will"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando hay evidencia presente (las nubes oscuras) que indica lo que va a pasar, se usa 'going to'.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'is' antes de 'going to'.",
+          "Incorrecto: el verbo principal debe ir en infinitivo con 'to', pero falta la palabra 'going'.",
+          "Correcto: hay evidencia presente (las nubes) que indica lo que va a pasar.",
+          "Incorrecto: aunque es posible, cuando hay evidencia visible se prefiere 'going to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "River is winning 2-0 in the last minute. They ___ the match.",
+        "options": [
+          "are going to win",
+          "is going to win",
+          "will won",
+          "going to win"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'they' se usa 'are' + 'going to' + verbo base para hacer una predicción basada en evidencia.",
+        "optionNotes": [
+          "Correcto: con 'they' se usa 'are' + 'going to' + verbo base.",
+          "Incorrecto: 'they' necesita 'are', no 'is'.",
+          "Incorrecto: 'will' se combina con el verbo base, no con el pasado 'won'.",
+          "Incorrecto: falta el auxiliar 'are'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Valentina looks really pale and dizzy. I think she ___ faint.",
+        "options": [
+          "are going to",
+          "is going to",
+          "go to",
+          "will going to"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'she' se usa 'is' + 'going to' + verbo base para predecir algo a partir de evidencia visible.",
+        "optionNotes": [
+          "Incorrecto: 'she' necesita 'is', no 'are'.",
+          "Correcto: con 'she' se usa 'is' + 'going to' + verbo base.",
+          "Incorrecto: falta el auxiliar 'is' y la palabra 'going'.",
+          "Incorrecto: no se puede combinar 'will' con 'going to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The baby is crying and rubbing his eyes. He ___ fall asleep.",
+        "options": [
+          "going to is",
+          "'re going to",
+          "'s going to",
+          "am going to"
+        ],
+        "correctIndex": 2,
+        "explanation": "'s going to' es la contracción de 'is going to', correcta para la tercera persona singular 'he'.",
+        "optionNotes": [
+          "Incorrecto: el orden de las palabras está invertido; debe ser 'is going to'.",
+          "Incorrecto: corresponde a 'you/we/they', no a 'he'.",
+          "Correcto: es la contracción de 'is going to' para la tercera persona singular 'he'.",
+          "Incorrecto: corresponde a 'I', no a 'he'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "You're driving too fast and the road is wet. You ___ have an accident!",
+        "options": [
+          "am going to",
+          "'s going to",
+          "going to are",
+          "'re going to"
+        ],
+        "correctIndex": 3,
+        "explanation": "'re going to' es la contracción de 'are going to', correcta para 'you'.",
+        "optionNotes": [
+          "Incorrecto: corresponde solo a 'I', no a 'you'.",
+          "Incorrecto: corresponde a he/she/it, no a 'you'.",
+          "Incorrecto: el orden de las palabras está invertido.",
+          "Correcto: es la contracción de 'are going to' para 'you'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I can see smoke coming from the kitchen. Something ___ burn!",
+        "options": [
+          "is going to",
+          "go to",
+          "are going to",
+          "am going to"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Something' es singular, por eso se usa 'is' + 'going to' para la predicción.",
+        "optionNotes": [
+          "Correcto: con 'something' (singular) se usa 'is' + 'going to'.",
+          "Incorrecto: falta el auxiliar 'is' y la palabra 'going'.",
+          "Incorrecto: 'something' es singular y necesita 'is', no 'are'.",
+          "Incorrecto: 'am' corresponde solo a 'I'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'going to'.",
+        "sentence": "Look at those dark clouds! It ___ rain soon.",
+        "hint": "(predicción con evidencia)",
+        "answers": [
+          "is going to",
+          "'s going to"
+        ],
+        "explanation": "Cuando la evidencia presente (las nubes) indica lo que va a pasar, se usa 'is/are going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "will",
+            "why": "Cuando hay evidencia visible en el presente se prefiere 'going to' en lugar de 'will'."
+          },
+          {
+            "answer": "going to",
+            "why": "Falta el auxiliar 'is' antes de 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'going to'.",
+        "sentence": "River is winning 2-0 in the last minute. They ___ win the match.",
+        "hint": "(they)",
+        "answers": [
+          "are going to",
+          "'re going to"
+        ],
+        "explanation": "Con 'they' se usa 'are going to' para hacer una predicción basada en evidencia actual.",
+        "wrongAnswers": [
+          {
+            "answer": "is going to",
+            "why": "Con 'they' se usa 'are', no 'is'."
+          },
+          {
+            "answer": "will",
+            "why": "Hay evidencia clara en el presente (el resultado del partido), por eso se prefiere 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'going to'.",
+        "sentence": "Valentina looks really pale and dizzy. I think she ___ faint.",
+        "hint": "(she)",
+        "answers": [
+          "is going to",
+          "'s going to"
+        ],
+        "explanation": "Con 'she' se usa 'is going to' para predecir algo a partir de evidencia visible.",
+        "wrongAnswers": [
+          {
+            "answer": "are going to",
+            "why": "Con 'she' se usa 'is', no 'are'."
+          },
+          {
+            "answer": "will faint",
+            "why": "Aunque es gramaticalmente posible con 'will', la evidencia visible (estar pálida y mareada) pide 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'going to'.",
+        "sentence": "The baby is crying and rubbing his eyes. He ___ fall asleep.",
+        "hint": "(he)",
+        "answers": [
+          "is going to",
+          "'s going to"
+        ],
+        "explanation": "Con 'he' se usa 'is going to' para predecir algo a partir de evidencia presente.",
+        "wrongAnswers": [
+          {
+            "answer": "are going to",
+            "why": "Con 'he' se usa 'is', no 'are'."
+          },
+          {
+            "answer": "go to",
+            "why": "Falta el auxiliar 'is' y la palabra 'going'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'going to'.",
+        "sentence": "You're driving too fast and the road is wet. You ___ have an accident!",
+        "hint": "(you)",
+        "answers": [
+          "are going to",
+          "'re going to"
+        ],
+        "explanation": "Con 'you' se usa 'are going to' para hacer una predicción basada en evidencia presente.",
+        "wrongAnswers": [
+          {
+            "answer": "is going to",
+            "why": "Con 'you' se usa 'are', no 'is'."
+          },
+          {
+            "answer": "will having",
+            "why": "'Will' se combina con el verbo base, no con la forma '-ing'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'going to'.",
+        "sentence": "I can see smoke coming from the kitchen. Something ___ burn!",
+        "hint": "(something, singular)",
+        "answers": [
+          "is going to",
+          "'s going to"
+        ],
+        "explanation": "'Something' es singular, por eso se usa 'is going to' para la predicción.",
+        "wrongAnswers": [
+          {
+            "answer": "are going to",
+            "why": "'Something' es singular y necesita 'is', no 'are'."
+          },
+          {
+            "answer": "am going to",
+            "why": "'Am' corresponde solo a 'I'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Look at those dark clouds; it is going to rain.",
+        "alternatives": [],
+        "translation": "Mirá esas nubes oscuras; va a llover.",
+        "explanation": "La evidencia presente (las nubes oscuras) indica lo que va a pasar, por eso se usa 'is going to'.",
+        "tokens": [
+          "is",
+          "it",
+          "to",
+          "at",
+          "dark",
+          "going",
+          "those",
+          "clouds;",
+          "rain",
+          "Look"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "River is going to win the match tonight.",
+        "alternatives": [],
+        "translation": "River va a ganar el partido esta noche.",
+        "explanation": "Se usa 'is going to' para predecir un resultado basado en la evidencia del partido actual.",
+        "tokens": [
+          "going",
+          "tonight",
+          "the",
+          "River",
+          "is",
+          "win",
+          "match",
+          "to"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Valentina is going to faint; she looks very pale.",
+        "alternatives": [],
+        "translation": "Valentina se va a desmayar; está muy pálida.",
+        "explanation": "La evidencia visible (estar pálida) indica lo que va a pasar, por eso se usa 'is going to'.",
+        "tokens": [
+          "she",
+          "is",
+          "pale",
+          "Valentina",
+          "looks",
+          "to",
+          "very",
+          "going",
+          "faint;"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Be careful, you are going to fall on the ice.",
+        "alternatives": [],
+        "translation": "Cuidado, te vas a caer en el hielo.",
+        "explanation": "La evidencia presente (el hielo) indica lo que va a pasar, por eso se usa 'are going to'.",
+        "tokens": [
+          "you",
+          "to",
+          "careful,",
+          "fall",
+          "ice",
+          "Be",
+          "on",
+          "the",
+          "going",
+          "are"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Something is going to burn in the kitchen.",
+        "alternatives": [],
+        "translation": "Algo se va a quemar en la cocina.",
+        "explanation": "La evidencia presente (el humo) indica lo que va a pasar, por eso se usa 'is going to'.",
+        "tokens": [
+          "Something",
+          "to",
+          "going",
+          "kitchen",
+          "is",
+          "in",
+          "burn",
+          "the"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'going to'.",
+        "sentence": "Look at those clouds! It will going to rain.",
+        "answers": [
+          "Look at those clouds! It is going to rain."
+        ],
+        "explanation": "No se puede combinar 'will' con 'going to'; cuando hay evidencia presente se usa solo 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "Look at those clouds! It will rain soon.",
+            "why": "Cambia la oración a 'will', pero cuando hay evidencia presente como las nubes se prefiere 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'going to'.",
+        "sentence": "River is winning 2-0. They is going to win the match.",
+        "answers": [
+          "River is winning 2-0. They are going to win the match."
+        ],
+        "explanation": "Con 'they' se usa el auxiliar 'are', no 'is'.",
+        "wrongAnswers": [
+          {
+            "answer": "River is winning 2-0. They going to win the match.",
+            "why": "Quita el auxiliar 'are' por completo, pero la oración necesita 'are', no eliminarlo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'going to'.",
+        "sentence": "Valentina looks pale. I think she are going to faint.",
+        "answers": [
+          "Valentina looks pale. I think she is going to faint."
+        ],
+        "explanation": "Con 'she' se usa el auxiliar 'is', no 'are'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina looks pale. I think she are going faint.",
+            "why": "Quita la palabra 'to', pero el error real es el auxiliar 'are', que debe ser 'is' con 'she'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'going to'.",
+        "sentence": "The baby is crying. He go to fall asleep soon.",
+        "answers": [
+          "The baby is crying. He is going to fall asleep soon."
+        ],
+        "explanation": "Falta el auxiliar 'is' y la palabra 'going' para formar correctamente la predicción.",
+        "wrongAnswers": [
+          {
+            "answer": "The baby is crying. He goes to fall asleep soon.",
+            "why": "Agrega '-es' al verbo pero no corrige el error real, que es la falta de 'is going' para formar la estructura de predicción."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'going to'.",
+        "sentence": "You're driving too fast. You going to have an accident!",
+        "answers": [
+          "You're driving too fast. You are going to have an accident!",
+          "You're driving too fast. You're going to have an accident!"
+        ],
+        "explanation": "Falta el auxiliar 'are' antes de 'going to' con el sujeto 'you'.",
+        "wrongAnswers": [
+          {
+            "answer": "You're driving too fast. You will going to have an accident!",
+            "why": "Combina incorrectamente 'will' con 'going to'; solo se debe usar uno de los dos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¡Mirá esas nubes! Va a llover pronto.",
+        "answers": [
+          "Look at those clouds! It's going to rain soon.",
+          "Look at those clouds! It is going to rain soon."
+        ],
+        "explanation": "La evidencia presente (las nubes) indica lo que va a pasar, por eso se usa 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "Look at those clouds! It will rain soon.",
+            "why": "Cuando hay evidencia visible en el presente, como las nubes, se prefiere 'going to' en lugar de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "River va ganando 2 a 0 en el último minuto. Va a ganar el partido.",
+        "answers": [
+          "River is winning 2-0 in the last minute. They're going to win the match.",
+          "River is winning 2-0 in the last minute. They are going to win the match."
+        ],
+        "explanation": "La evidencia presente (el resultado del partido) indica lo que va a pasar, por eso se usa 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "River is winning 2-0 in the last minute. They will win the match.",
+            "why": "La evidencia clara del marcador actual pide 'going to' en lugar de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Valentina está muy pálida. Se va a desmayar.",
+        "answers": [
+          "Valentina looks very pale. She's going to faint.",
+          "Valentina is very pale. She is going to faint."
+        ],
+        "explanation": "La evidencia presente (estar pálida) indica lo que va a pasar, por eso se usa 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina looks very pale. She will faint.",
+            "why": "La evidencia visible (estar pálida) pide 'going to' en lugar de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "¡Cuidado! Te vas a caer en el hielo.",
+        "answers": [
+          "Be careful! You're going to fall on the ice.",
+          "Be careful! You are going to fall on the ice."
+        ],
+        "explanation": "La evidencia presente (el hielo) indica lo que va a pasar, por eso se usa 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "Be careful! You will fall on the ice.",
+            "why": "La evidencia presente (el hielo) pide 'going to' en lugar de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Puedo ver humo en la cocina. Algo se va a quemar.",
+        "answers": [
+          "I can see smoke in the kitchen. Something's going to burn.",
+          "I can see smoke in the kitchen. Something is going to burn."
+        ],
+        "explanation": "La evidencia presente (el humo) indica lo que va a pasar, por eso se usa 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I can see smoke in the kitchen. Something will burn.",
+            "why": "La evidencia presente (el humo) pide 'going to' en lugar de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El bebé está llorando y se frota los ojos. Se va a quedar dormido.",
+        "answers": [
+          "The baby is crying and rubbing his eyes. He's going to fall asleep.",
+          "The baby is crying and rubbing his eyes. He is going to fall asleep."
+        ],
+        "explanation": "La evidencia presente (llorar y frotarse los ojos) indica lo que va a pasar, por eso se usa 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "The baby is crying and rubbing his eyes. He will fall asleep.",
+            "why": "La evidencia presente (llorar y frotarse los ojos) pide 'going to' en lugar de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las predicciones con going to.",
+        "text": "Marcos and his friend Diego are at Diego's house watching a football match between Boca and River. Boca is winning two to zero in the second half. Diego looks out the window and says, 'Look at those dark clouds! It's going to rain soon.' Marcos says, 'Don't worry, we're inside.' Suddenly, Diego's dog starts barking loudly next to the door. 'Someone is going to knock on the door,' says Diego. A few seconds later, they hear a knock. It's their friend Pablo, and he's completely wet. 'It's raining a lot outside!' he says. They watch the rest of the match together. Boca is still winning, so Marcos thinks they're going to win the championship this year.",
+        "questions": [
+          {
+            "prompt": "¿Por qué dice Diego 'It's going to rain soon'?",
+            "options": [
+              "Porque escuchó el pronóstico del tiempo",
+              "Porque es invierno",
+              "Porque Pablo se lo dijo",
+              "Porque ve nubes oscuras en el cielo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Se usa 'going to' porque hay una evidencia presente (las nubes oscuras) que indica lo que va a pasar."
+          },
+          {
+            "prompt": "¿Por qué dice Diego 'Someone is going to knock on the door'?",
+            "options": [
+              "Porque escuchó un auto afuera",
+              "Porque suena el timbre",
+              "Porque su perro empieza a ladrar junto a la puerta",
+              "Porque Pablo lo llamó por teléfono"
+            ],
+            "correctIndex": 2,
+            "explanation": "La predicción con 'going to' se basa en la evidencia presente: el perro ladrando junto a la puerta."
+          },
+          {
+            "prompt": "¿Por qué piensa Marcos que Boca 'is going to win the championship'?",
+            "options": [
+              "Porque lo leyó en el diario",
+              "Porque el árbitro lo dijo",
+              "Porque están ganando el partido",
+              "Porque River juega muy mal este año"
+            ],
+            "correctIndex": 2,
+            "explanation": "Se usa 'going to' porque la evidencia presente (van ganando el partido) sostiene la predicción de Marcos."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre las predicciones con going to.",
+        "text": "Sofía is waiting for a job interview at a company in Buenos Aires. She is very nervous and her hands are shaking. Her friend Valentina messages her: 'How do you feel?' Sofía replies, 'My hands are shaking! I'm going to make a mistake.' Valentina says, 'Don't worry, you're going to do great.' In the waiting room, Sofía sees the manager walking quickly with a worried face. 'He's going to cancel the interview,' she thinks. But the manager smiles and says, 'Sorry for the delay, let's start now.' During the interview, Sofía answers every question with confidence. The manager looks very happy and takes a lot of notes. 'I think they're going to offer me the job,' Sofía tells Valentina after the interview.",
+        "questions": [
+          {
+            "prompt": "¿Por qué dice Sofía 'I'm going to make a mistake'?",
+            "options": [
+              "Porque le tiemblan las manos y se siente nerviosa",
+              "Porque se olvidó el currículum",
+              "Porque llegó tarde",
+              "Porque el gerente se lo dijo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Se usa 'going to' porque la evidencia presente (las manos temblando) sostiene la predicción de Sofía."
+          },
+          {
+            "prompt": "¿Por qué piensa Sofía 'He's going to cancel the interview'?",
+            "options": [
+              "Porque ve al gerente caminando rápido con cara preocupada",
+              "Porque el gerente la llamó por teléfono",
+              "Porque Valentina se lo dijo",
+              "Porque la oficina está cerrada"
+            ],
+            "correctIndex": 0,
+            "explanation": "La predicción con 'going to' se basa en la evidencia presente: la cara preocupada y el paso rápido del gerente."
+          },
+          {
+            "prompt": "¿Por qué piensa Sofía que 'they're going to offer me the job'?",
+            "options": [
+              "Porque el gerente se ve contento y toma muchas notas",
+              "Porque Valentina se lo dijo",
+              "Porque recibió un correo electrónico",
+              "Porque la entrevista fue muy corta"
+            ],
+            "correctIndex": 0,
+            "explanation": "Se usa 'going to' porque la evidencia presente (el gerente contento y tomando notas) sostiene la predicción de Sofía."
+          }
+        ]
+      }
+    ],
+    "will": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The phone is ringing. ___ answer it.",
+        "options": [
+          "I will to",
+          "I going to",
+          "I will going to",
+          "I'll"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando decidís algo en el momento de hablar, como atender el teléfono que está sonando, se usa 'will' (o 'I'll').",
+        "optionNotes": [
+          "Incorrecto: después de 'will' el verbo va sin 'to'.",
+          "Incorrecto: falta el verbo auxiliar 'am' para usar 'going to'.",
+          "Incorrecto: no se combinan 'will' y 'going to' en la misma oración.",
+          "Correcto: 'will' expresa una decisión tomada en el momento, y 'I'll' es su forma contraída."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Don't worry, Sofía. I ___ tell anyone about your secret.",
+        "options": [
+          "won't",
+          "not will",
+          "don't will",
+          "willn't"
+        ],
+        "correctIndex": 0,
+        "explanation": "La forma negativa de 'will' es 'won't'; se usa para prometer que algo no va a pasar.",
+        "optionNotes": [
+          "Correcto: 'won't' es la forma negativa de 'will', usada para promesas negativas.",
+          "Incorrecto: el orden correcto es sujeto + won't + verbo, no 'not will'.",
+          "Incorrecto: 'will' no se niega con 'don't', sino con 'won't'.",
+          "Incorrecto: 'willn't' no existe en inglés."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I think it ___ rain tomorrow, so bring an umbrella.",
+        "options": [
+          "is going",
+          "will",
+          "wills",
+          "going to"
+        ],
+        "correctIndex": 1,
+        "explanation": "Las predicciones que expresan una opinión personal (con 'I think') se forman con 'will' + verbo base.",
+        "optionNotes": [
+          "Incorrecto: falta 'to' después de 'going' para formar 'is going to'.",
+          "Correcto: 'will' se usa para predicciones basadas en opinión, como 'I think...'.",
+          "Incorrecto: 'will' no cambia según el sujeto, nunca lleva -s.",
+          "Incorrecto: falta el verbo auxiliar 'is' para completar 'going to'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Great, Mr. Castro! I ___ start on Monday.",
+        "options": [
+          "will to",
+          "going will",
+          "am will",
+          "will"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando aceptás una propuesta o confirmás algo en el momento, como el inicio de un trabajo, se usa 'will'.",
+        "optionNotes": [
+          "Incorrecto: después de 'will' el verbo va sin 'to'.",
+          "Incorrecto: 'going' y 'will' no se usan juntos de esta forma.",
+          "Incorrecto: no se combinan 'am' y 'will' juntos.",
+          "Correcto: 'will' expresa una decisión o compromiso tomado en ese momento."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Don't worry about the heater, I ___ fix it this week.",
+        "options": [
+          "willing",
+          "will to",
+          "am will",
+          "will"
+        ],
+        "correctIndex": 3,
+        "explanation": "Los ofrecimientos y promesas espontáneas, como arreglar algo pronto, se expresan con 'will'.",
+        "optionNotes": [
+          "Incorrecto: 'willing' no es una forma verbal de futuro con 'will'.",
+          "Incorrecto: después de 'will' el verbo va sin 'to'.",
+          "Incorrecto: no se combinan 'am' y 'will' juntos.",
+          "Correcto: 'will' expresa un ofrecimiento o promesa espontánea tomada en el momento de hablar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The doctor thinks you ___ feel better soon.",
+        "options": [
+          "are will",
+          "going will",
+          "will",
+          "wills"
+        ],
+        "correctIndex": 2,
+        "explanation": "Las predicciones basadas en la opinión de alguien (el médico piensa que...) se forman con 'will' + verbo base.",
+        "optionNotes": [
+          "Incorrecto: no se combinan 'are' y 'will' juntos.",
+          "Incorrecto: 'going' y 'will' no se combinan de esta manera.",
+          "Correcto: 'will' se usa para predicciones basadas en la opinión de alguien.",
+          "Incorrecto: 'will' no lleva -s, no cambia según el sujeto."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'will'.",
+        "sentence": "___ call you tomorrow, Mom. I promise!",
+        "hint": "(call - promesa)",
+        "answers": [
+          "I will",
+          "I'll"
+        ],
+        "explanation": "Las promesas espontáneas, como prometerle a tu mamá que la vas a llamar, se expresan con 'will' o su contracción 'I'll'.",
+        "wrongAnswers": [
+          {
+            "answer": "I am going to call",
+            "why": "'Going to' expresa un plan ya decidido, no una promesa espontánea como esta."
+          },
+          {
+            "answer": "I will to call",
+            "why": "Después de 'will' el verbo va sin 'to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'will'.",
+        "sentence": "The kettle is boiling over! I ___ turn it off.",
+        "hint": "(turn off - decisión en el momento)",
+        "answers": [
+          "will"
+        ],
+        "explanation": "Las decisiones tomadas en el instante de hablar, como apagar una pava que hierve, se expresan con 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "am going to",
+            "why": "'Going to' implica un plan previo, no una decisión tomada justo en ese momento."
+          },
+          {
+            "answer": "will to",
+            "why": "No se agrega 'to' después de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'will'.",
+        "sentence": "I think it ___ be sunny in Mendoza this weekend.",
+        "hint": "(be - predicción)",
+        "answers": [
+          "will"
+        ],
+        "explanation": "Las predicciones basadas en opinión personal, como el clima para un viaje, se expresan con 'will' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "wills",
+            "why": "'Will' no cambia con la persona, nunca lleva -s."
+          },
+          {
+            "answer": "is going",
+            "why": "Falta 'to' y la estructura queda incompleta para 'is going to'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'will'.",
+        "sentence": "Don't worry, Sofía. I ___ tell anyone your secret.",
+        "hint": "(tell - promesa negativa)",
+        "answers": [
+          "won't"
+        ],
+        "explanation": "La forma negativa de 'will' es 'won't', usada para prometer que algo no va a suceder.",
+        "wrongAnswers": [
+          {
+            "answer": "don't will",
+            "why": "La negación de 'will' es 'won't', no se combina con 'don't'."
+          },
+          {
+            "answer": "will not to",
+            "why": "No se agrega 'to' después de 'will not/won't'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'will'.",
+        "sentence": "Great news! You ___ start next Monday.",
+        "hint": "(start - decisión del entrevistador)",
+        "answers": [
+          "will"
+        ],
+        "explanation": "Cuando alguien anuncia una decisión, como confirmar la fecha de inicio de un trabajo, se usa 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "are going",
+            "why": "Falta 'to' y esta no es la estructura típica para anunciar una decisión con 'will'."
+          },
+          {
+            "answer": "will to",
+            "why": "No se usa 'to' después de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'will'.",
+        "sentence": "Don't worry about the heater, I ___ fix it this week.",
+        "hint": "(fix - promesa)",
+        "answers": [
+          "will"
+        ],
+        "explanation": "Los ofrecimientos espontáneos, como el de un dueño prometiendo arreglar algo, se expresan con 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "am will",
+            "why": "No se combinan 'am' y 'will' juntos; alcanza con 'will' solo."
+          },
+          {
+            "answer": "going to",
+            "why": "Falta 'am' y además no es la forma más natural para un ofrecimiento espontáneo como este."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I will call you tomorrow afternoon.",
+        "alternatives": [
+          "Tomorrow afternoon I will call you."
+        ],
+        "translation": "Te voy a llamar mañana a la tarde.",
+        "explanation": "'Will' va siempre antes del verbo base y no cambia su forma; acá expresa una promesa u ofrecimiento.",
+        "tokens": [
+          "I",
+          "will",
+          "afternoon",
+          "you",
+          "tomorrow",
+          "call"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I think you will love this restaurant.",
+        "alternatives": [],
+        "translation": "Creo que te va a encantar este restaurante.",
+        "explanation": "'I think' + 'will' expresa una predicción basada en una opinión personal.",
+        "tokens": [
+          "I",
+          "think",
+          "this",
+          "love",
+          "restaurant",
+          "you",
+          "will"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "I won't forget your birthday this year.",
+        "alternatives": [
+          "This year I won't forget your birthday."
+        ],
+        "translation": "No me voy a olvidar de tu cumpleaños este año.",
+        "explanation": "'Won't' es la forma negativa de 'will' y se usa para promesas negativas.",
+        "tokens": [
+          "won't",
+          "your",
+          "birthday",
+          "I",
+          "forget",
+          "this",
+          "year"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The printer is broken, so I will fix it.",
+        "alternatives": [],
+        "translation": "La impresora está rota, así que la voy a arreglar.",
+        "explanation": "Una decisión tomada en el momento de hablar se expresa con 'will' + verbo base.",
+        "tokens": [
+          "The",
+          "so",
+          "is",
+          "broken,",
+          "printer",
+          "it",
+          "I",
+          "fix",
+          "will"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "The doctor thinks you will feel better soon.",
+        "alternatives": [],
+        "translation": "El médico cree que te vas a sentir mejor pronto.",
+        "explanation": "Una predicción basada en la opinión de alguien se forma con 'will', sin 'to' antes del verbo.",
+        "tokens": [
+          "doctor",
+          "you",
+          "The",
+          "thinks",
+          "soon",
+          "feel",
+          "better",
+          "will"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I will to help you with your suitcase.",
+        "answers": [
+          "I will help you with your suitcase."
+        ],
+        "explanation": "Después de 'will' el verbo va sin 'to': se dice 'will help', no 'will to help'.",
+        "wrongAnswers": [
+          {
+            "answer": "I will helping you with your suitcase.",
+            "why": "Después de 'will' el verbo va en forma base, no en '-ing'."
+          },
+          {
+            "answer": "I am will help you with your suitcase.",
+            "why": "No se combinan 'am' y 'will' juntos."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "She wills call us when she arrives.",
+        "answers": [
+          "She will call us when she arrives."
+        ],
+        "explanation": "'Will' nunca cambia según el sujeto, por eso no lleva -s: 'she will', no 'she wills'.",
+        "wrongAnswers": [
+          {
+            "answer": "She will calls us when she arrives.",
+            "why": "Después de 'will' el verbo va en forma base, sin -s aunque el sujeto sea 'she'."
+          },
+          {
+            "answer": "She willing call us when she arrives.",
+            "why": "'Will' no se combina con '-ing'; va seguido del verbo base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Don't worry, I don't will tell your secret.",
+        "answers": [
+          "Don't worry, I won't tell your secret."
+        ],
+        "explanation": "La negación de 'will' es 'won't' (o 'will not'); no se usa 'don't will'.",
+        "wrongAnswers": [
+          {
+            "answer": "Don't worry, I will not to tell your secret.",
+            "why": "No se agrega 'to' después de 'will not/won't'."
+          },
+          {
+            "answer": "Don't worry, I not will tell your secret.",
+            "why": "El orden correcto es sujeto + won't + verbo, no 'not will'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "I think it will rains tomorrow.",
+        "answers": [
+          "I think it will rain tomorrow."
+        ],
+        "explanation": "Después de 'will' el verbo va en forma base, sin -s: 'will rain', no 'will rains'.",
+        "wrongAnswers": [
+          {
+            "answer": "I think it wills rain tomorrow.",
+            "why": "'Will' no cambia según el sujeto, no lleva -s."
+          },
+          {
+            "answer": "I think it is will rain tomorrow.",
+            "why": "No se usa 'is' junto con 'will' en la misma oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "We going to will visit Mendoza next year.",
+        "answers": [
+          "We will visit Mendoza next year."
+        ],
+        "explanation": "Para predicciones u decisiones sobre el futuro se usa una sola forma: 'will' + verbo base, sin mezclarla con 'going to'.",
+        "wrongAnswers": [
+          {
+            "answer": "We will going to visit Mendoza next year.",
+            "why": "No se combinan 'will' y 'going to' en la misma oración."
+          },
+          {
+            "answer": "We will to visit Mendoza next year.",
+            "why": "No se agrega 'to' después de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Te voy a llamar esta noche, te lo prometo.",
+        "answers": [
+          "I'll call you tonight, I promise.",
+          "I will call you tonight, I promise."
+        ],
+        "explanation": "Para promesas espontáneas se usa 'will' (o su contracción 'll), no una traducción literal de 'ir a'.",
+        "wrongAnswers": [
+          {
+            "answer": "I go to call you tonight, I promise.",
+            "why": "Es un calco literal de 'voy a'; en inglés no existe esa estructura."
+          },
+          {
+            "answer": "I am calling you tonight, I promise.",
+            "why": "El presente continuo no expresa una promesa espontánea; se usa 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Creo que va a llover mañana.",
+        "answers": [
+          "I think it will rain tomorrow.",
+          "I think it'll rain tomorrow."
+        ],
+        "explanation": "Las predicciones basadas en opinión personal ('creo que') se expresan con 'will', no con presente simple ni calcos de 'ir a'.",
+        "wrongAnswers": [
+          {
+            "answer": "I think it rains tomorrow.",
+            "why": "No se usa presente simple para predicciones futuras basadas en opinión."
+          },
+          {
+            "answer": "I think it go to rain tomorrow.",
+            "why": "Es un calco de 'va a'; la forma correcta usa 'will' o 'is going to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No te voy a contar a nadie, quedate tranquila.",
+        "answers": [
+          "I won't tell anyone, don't worry.",
+          "I will not tell anyone, don't worry."
+        ],
+        "explanation": "La forma negativa de 'will' es 'won't'; no se combina con 'don't' ni con 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "I don't will tell anyone, don't worry.",
+            "why": "La negación correcta de 'will' es 'won't', no 'don't will'."
+          },
+          {
+            "answer": "I no will tell anyone, don't worry.",
+            "why": "En inglés no se usa 'no' para negar verbos; se usa 'won't'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "El teléfono está sonando, yo atiendo.",
+        "answers": [
+          "The phone is ringing, I'll answer it.",
+          "The phone is ringing, I will answer it."
+        ],
+        "explanation": "Las decisiones tomadas en el momento de hablar se expresan con 'will', no con presente continuo ni calcos de 'ir a'.",
+        "wrongAnswers": [
+          {
+            "answer": "The phone is ringing, I'm answering it.",
+            "why": "El presente continuo no expresa una decisión tomada en el momento; se usa 'will'."
+          },
+          {
+            "answer": "The phone is ringing, I go to answer it.",
+            "why": "Es un calco de 'voy a'; esa estructura no existe en inglés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "No te preocupes, voy a arreglar el calefactor esta semana.",
+        "answers": [
+          "Don't worry, I'll fix the heater this week.",
+          "Don't worry, I will fix the heater this week."
+        ],
+        "explanation": "Los ofrecimientos y promesas espontáneas se expresan con 'will', no con presente simple ni continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "Don't worry, I fix the heater this week.",
+            "why": "Falta el auxiliar 'will' para expresar la promesa futura."
+          },
+          {
+            "answer": "Don't worry, I am fixing the heater this week.",
+            "why": "El presente continuo sugiere algo ya planificado o en curso, no una promesa espontánea con 'will'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés.",
+        "spanish": "Creo que te va a gustar este trabajo.",
+        "answers": [
+          "I think you'll like this job.",
+          "I think you will like this job."
+        ],
+        "explanation": "Las predicciones de opinión se expresan con 'will' + verbo base, sin 'to' ni calcos de 'ir a'.",
+        "wrongAnswers": [
+          {
+            "answer": "I think you like this job.",
+            "why": "Falta el auxiliar 'will' para expresar una predicción futura."
+          },
+          {
+            "answer": "I think you going to like this job.",
+            "why": "Falta el verbo 'are' para 'going to'; además 'will' es más natural para esta predicción de opinión."
+          }
+        ]
+      }
+    ],
+    "continuo-futuro": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para hablar de una cita ya organizada.",
+        "prompt": "Valentina ___ the dentist on Tuesday morning.",
+        "options": [
+          "sees",
+          "see",
+          "will see",
+          "is seeing"
+        ],
+        "correctIndex": 3,
+        "explanation": "El presente continuo ('is seeing') se usa para citas ya organizadas con fecha y hora.",
+        "optionNotes": [
+          "Incorrecto: 'sees' es presente simple, no describe un plan futuro organizado.",
+          "Incorrecto: falta el auxiliar 'is'; 'see' solo no forma el presente continuo.",
+          "Incorrecto: 'will see' sugiere una decisión del momento, no una cita ya pautada.",
+          "Correcto: 'is seeing' expresa una cita ya arreglada con fecha y hora."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para hablar de un plan ya organizado.",
+        "prompt": "We ___ to Bariloche tomorrow; we already bought the tickets.",
+        "options": [
+          "are flying",
+          "fly",
+          "will fly",
+          "flies"
+        ],
+        "correctIndex": 0,
+        "explanation": "El presente continuo se usa para planes futuros ya organizados, como un vuelo con pasajes comprados.",
+        "optionNotes": [
+          "Correcto: 'are flying' expresa un plan ya organizado con pasajes comprados.",
+          "Incorrecto: 'fly' es presente simple, no describe un plan futuro específico.",
+          "Incorrecto: 'will fly' sugiere una decisión del momento, pero el contexto indica que ya está organizado.",
+          "Incorrecto: 'flies' es presente simple para tercera persona, no concuerda con 'we' ni describe un plan."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para preguntar sobre un plan.",
+        "prompt": "___ you doing anything on Saturday night?",
+        "options": [
+          "Are",
+          "Is",
+          "Will",
+          "Do"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para preguntar por un plan con presente continuo se usa 'are' + sujeto + verbo-ing.",
+        "optionNotes": [
+          "Correcto: 'are' es el auxiliar correcto para 'you' en presente continuo.",
+          "Incorrecto: 'is' no concuerda con el sujeto 'you'; corresponde 'are'.",
+          "Incorrecto: 'will' sugiere una decisión del momento, no se usa para preguntar por planes ya organizados de esta forma.",
+          "Incorrecto: 'do' es el auxiliar de presente simple, no se combina con el gerundio 'doing'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para hablar de una cita ya organizada.",
+        "prompt": "I ___ Sofía for coffee at 5 pm on Saturday.",
+        "options": [
+          "meet",
+          "am meeting",
+          "will meet",
+          "meets"
+        ],
+        "correctIndex": 1,
+        "explanation": "El presente continuo se usa para citas con otra persona ya arregladas con hora y día.",
+        "optionNotes": [
+          "Incorrecto: 'meet' es presente simple, no describe un plan futuro específico.",
+          "Correcto: 'am meeting' expresa una cita ya arreglada con hora y día.",
+          "Incorrecto: 'will meet' sugiere una decisión del momento, pero el contexto indica que ya está organizado.",
+          "Incorrecto: 'meets' es presente simple de tercera persona, no concuerda con 'I'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para hablar de una cita ya organizada.",
+        "prompt": "Martín ___ the landlord on Thursday to sign the contract.",
+        "options": [
+          "meet",
+          "meets",
+          "is meeting",
+          "will meet"
+        ],
+        "correctIndex": 2,
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una reunión para firmar un contrato.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'is'; 'meet' solo no forma el presente continuo.",
+          "Incorrecto: 'meets' es presente simple, no describe un plan futuro específico.",
+          "Correcto: 'is meeting' expresa una cita ya organizada con fecha.",
+          "Incorrecto: 'will meet' sugiere una decisión del momento, pero la cita ya está pautada."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para hablar de una cita ya organizada.",
+        "prompt": "The company ___ Valentina for a second interview next Monday.",
+        "options": [
+          "see",
+          "is seeing",
+          "sees",
+          "will see"
+        ],
+        "correctIndex": 1,
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una segunda entrevista con fecha confirmada.",
+        "optionNotes": [
+          "Incorrecto: falta el auxiliar 'is'; 'see' solo no forma el presente continuo.",
+          "Correcto: 'is seeing' expresa una cita ya organizada con fecha confirmada.",
+          "Incorrecto: 'sees' es presente simple, no describe un plan futuro específico.",
+          "Incorrecto: 'will see' sugiere una decisión del momento, pero la entrevista ya está organizada."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el presente continuo para hablar de una cita ya organizada.",
+        "sentence": "Valentina ___ the dentist on Tuesday morning.",
+        "hint": "(see)",
+        "answers": [
+          "is seeing"
+        ],
+        "explanation": "El presente continuo ('is seeing') se usa para citas ya organizadas con fecha y hora.",
+        "wrongAnswers": [
+          {
+            "answer": "sees",
+            "why": "El presente simple no expresa un plan futuro ya organizado; corresponde el presente continuo."
+          },
+          {
+            "answer": "will see",
+            "why": "'Will' sugiere una decisión del momento, pero la cita ya está organizada con fecha y hora."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el presente continuo para hablar de un plan ya organizado.",
+        "sentence": "We ___ to Bariloche tomorrow afternoon.",
+        "hint": "(fly)",
+        "answers": [
+          "are flying"
+        ],
+        "explanation": "El presente continuo se usa para planes futuros ya organizados, como un vuelo con pasajes comprados.",
+        "wrongAnswers": [
+          {
+            "answer": "fly",
+            "why": "El presente simple no describe un plan futuro específico ya organizado."
+          },
+          {
+            "answer": "will fly",
+            "why": "'Will' sugiere una decisión del momento, pero el vuelo ya está organizado con pasajes comprados."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el presente continuo para hablar de una cita ya organizada.",
+        "sentence": "I ___ Sofía for coffee on Saturday.",
+        "hint": "(meet)",
+        "answers": [
+          "am meeting"
+        ],
+        "explanation": "El presente continuo se usa para citas con otra persona ya arregladas con fecha y hora.",
+        "wrongAnswers": [
+          {
+            "answer": "meet",
+            "why": "El presente simple no describe una cita ya arreglada con otra persona."
+          },
+          {
+            "answer": "will meet",
+            "why": "'Will' sugiere una decisión del momento, pero la cita ya está organizada con día y hora."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el presente continuo para hablar de una cita ya organizada.",
+        "sentence": "Martín ___ the landlord on Thursday.",
+        "hint": "(meet)",
+        "answers": [
+          "is meeting"
+        ],
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una reunión con fecha confirmada.",
+        "wrongAnswers": [
+          {
+            "answer": "meets",
+            "why": "El presente simple no describe un plan futuro ya organizado con fecha."
+          },
+          {
+            "answer": "will meet",
+            "why": "'Will' sugiere una decisión del momento, pero la reunión ya está organizada."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el presente continuo para hablar de una cita ya organizada.",
+        "sentence": "The company ___ Valentina again next Monday.",
+        "hint": "(see)",
+        "answers": [
+          "is seeing"
+        ],
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una segunda entrevista con fecha confirmada.",
+        "wrongAnswers": [
+          {
+            "answer": "sees",
+            "why": "El presente simple no describe un plan futuro ya organizado con fecha confirmada."
+          },
+          {
+            "answer": "will see",
+            "why": "'Will' sugiere una decisión del momento, pero la entrevista ya está organizada."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con el auxiliar correcto del presente continuo.",
+        "sentence": "What ___ you doing tonight?",
+        "hint": "(pregunta en presente continuo)",
+        "answers": [
+          "are"
+        ],
+        "explanation": "Para preguntar por un plan con presente continuo se usa 'are' + sujeto + verbo-ing.",
+        "wrongAnswers": [
+          {
+            "answer": "do",
+            "why": "'Do' es el auxiliar de presente simple y no se combina con el gerundio 'doing'."
+          },
+          {
+            "answer": "will",
+            "why": "'Will' sugiere una decisión del momento, pero para preguntar por planes de esta forma se usa el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre una cita ya organizada.",
+        "sentence": "Valentina is seeing the dentist on Tuesday morning.",
+        "alternatives": [],
+        "translation": "Valentina va al dentista el martes a la mañana.",
+        "explanation": "El presente continuo se usa para citas ya organizadas con fecha y hora.",
+        "tokens": [
+          "dentist",
+          "seeing",
+          "is",
+          "the",
+          "Valentina",
+          "on",
+          "Tuesday",
+          "morning"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre un plan ya organizado.",
+        "sentence": "We are flying to Bariloche tomorrow afternoon.",
+        "alternatives": [],
+        "translation": "Volamos a Bariloche mañana a la tarde.",
+        "explanation": "El presente continuo se usa para planes futuros ya organizados, como un vuelo con pasajes comprados.",
+        "tokens": [
+          "to",
+          "are",
+          "tomorrow",
+          "afternoon",
+          "Bariloche",
+          "flying",
+          "We"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre una cita ya organizada.",
+        "sentence": "I am meeting Sofía for coffee on Saturday.",
+        "alternatives": [],
+        "translation": "El sábado me encuentro con Sofía para tomar un café.",
+        "explanation": "El presente continuo se usa para citas con otra persona ya arregladas con fecha y hora.",
+        "tokens": [
+          "on",
+          "am",
+          "coffee",
+          "meeting",
+          "for",
+          "Sofía",
+          "I",
+          "Saturday"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre una cita ya organizada.",
+        "sentence": "Martín is meeting the landlord on Thursday.",
+        "alternatives": [],
+        "translation": "Martín se reúne con el propietario el jueves.",
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una reunión con fecha confirmada.",
+        "tokens": [
+          "the",
+          "on",
+          "meeting",
+          "landlord",
+          "is",
+          "Martín",
+          "Thursday"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta sobre un plan.",
+        "sentence": "What are you doing tonight after work?",
+        "alternatives": [],
+        "translation": "¿Qué vas a hacer esta noche después del trabajo?",
+        "explanation": "Para preguntar por un plan con presente continuo se usa 'are' + sujeto + verbo-ing.",
+        "tokens": [
+          "What",
+          "work",
+          "doing",
+          "are",
+          "you",
+          "tonight",
+          "after"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo para citas organizadas.",
+        "sentence": "Valentina sees the dentist on Tuesday morning.",
+        "answers": [
+          "Valentina is seeing the dentist on Tuesday morning."
+        ],
+        "explanation": "El presente continuo ('is seeing') se usa para citas ya organizadas con fecha y hora, no el presente simple.",
+        "wrongAnswers": [
+          {
+            "answer": "Valentina will see the dentist on Tuesday morning.",
+            "why": "'Will' se usa para decisiones del momento, pero esta cita ya está organizada, por eso corresponde el presente continuo."
+          },
+          {
+            "answer": "Valentina is see the dentist on Tuesday morning.",
+            "why": "Falta el gerundio después de 'is'; debe ser 'is seeing', no 'is see'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo para planes organizados.",
+        "sentence": "We fly to Bariloche tomorrow afternoon; we already bought the tickets.",
+        "answers": [
+          "We are flying to Bariloche tomorrow afternoon; we already bought the tickets."
+        ],
+        "explanation": "El presente continuo se usa para planes futuros ya organizados, como un vuelo con pasajes comprados.",
+        "wrongAnswers": [
+          {
+            "answer": "We will fly to Bariloche tomorrow afternoon; we already bought the tickets.",
+            "why": "'Will' no es lo más natural para un plan ya organizado con pasajes comprados; corresponde el presente continuo."
+          },
+          {
+            "answer": "We flying to Bariloche tomorrow afternoon; we already bought the tickets.",
+            "why": "Falta el auxiliar 'are' antes del gerundio; debe ser 'are flying'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo para citas organizadas.",
+        "sentence": "I meeting Sofía for coffee on Saturday.",
+        "answers": [
+          "I am meeting Sofía for coffee on Saturday.",
+          "I'm meeting Sofía for coffee on Saturday."
+        ],
+        "explanation": "Falta el auxiliar 'am' antes del gerundio; el presente continuo necesita siempre un auxiliar.",
+        "wrongAnswers": [
+          {
+            "answer": "I meet Sofía for coffee on Saturday.",
+            "why": "El presente simple no expresa un plan ya arreglado; corresponde el presente continuo 'am meeting'."
+          },
+          {
+            "answer": "I is meeting Sofía for coffee on Saturday.",
+            "why": "El auxiliar no concuerda con el sujeto 'I'; debe ser 'am', no 'is'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo para citas organizadas.",
+        "sentence": "Martín meets the landlord on Thursday to sign the contract.",
+        "answers": [
+          "Martín is meeting the landlord on Thursday to sign the contract."
+        ],
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una reunión para firmar un contrato.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín will meet the landlord on Thursday to sign the contract.",
+            "why": "'Will' no es lo más natural para una cita ya arreglada; corresponde el presente continuo."
+          },
+          {
+            "answer": "Martín meeting the landlord on Thursday to sign the contract.",
+            "why": "Falta el auxiliar 'is' antes del gerundio; debe ser 'is meeting'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el presente continuo para preguntar por planes.",
+        "sentence": "What do you doing tonight after work?",
+        "answers": [
+          "What are you doing tonight after work?"
+        ],
+        "explanation": "Para preguntar por un plan con presente continuo se usa 'are' + sujeto + verbo-ing.",
+        "wrongAnswers": [
+          {
+            "answer": "What does you doing tonight after work?",
+            "why": "'Does' no concuerda con 'you' y además no se combina con el gerundio; corresponde 'are'."
+          },
+          {
+            "answer": "What you are doing tonight after work?",
+            "why": "El orden correcto en preguntas es 'What + auxiliar + sujeto + verbo', no 'sujeto + auxiliar + verbo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el presente continuo para citas organizadas.",
+        "spanish": "El martes voy al dentista.",
+        "answers": [
+          "I'm seeing the dentist on Tuesday.",
+          "I am seeing the dentist on Tuesday."
+        ],
+        "explanation": "El presente continuo se usa para citas ya organizadas con fecha y hora.",
+        "wrongAnswers": [
+          {
+            "answer": "I will see the dentist on Tuesday.",
+            "why": "'Will' no es lo más natural para una cita ya organizada; se prefiere el presente continuo."
+          },
+          {
+            "answer": "I see the dentist on Tuesday.",
+            "why": "El presente simple no expresa un plan futuro ya arreglado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el presente continuo para planes organizados.",
+        "spanish": "Mañana a la tarde volamos a Bariloche.",
+        "answers": [
+          "We're flying to Bariloche tomorrow afternoon.",
+          "We are flying to Bariloche tomorrow afternoon."
+        ],
+        "explanation": "El presente continuo se usa para planes futuros ya organizados, como un vuelo.",
+        "wrongAnswers": [
+          {
+            "answer": "We fly to Bariloche tomorrow afternoon.",
+            "why": "El presente simple no se usa para un plan futuro ya organizado; corresponde el presente continuo."
+          },
+          {
+            "answer": "We will fly to Bariloche tomorrow afternoon.",
+            "why": "'Will' sugiere una decisión del momento, pero el vuelo ya está organizado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el presente continuo para preguntar por planes.",
+        "spanish": "¿Qué vas a hacer esta noche?",
+        "answers": [
+          "What are you doing tonight?"
+        ],
+        "explanation": "Para preguntar por un plan con presente continuo se usa 'are' + sujeto + verbo-ing.",
+        "wrongAnswers": [
+          {
+            "answer": "What do you doing tonight?",
+            "why": "'Do' no se combina con el gerundio; el auxiliar correcto para presente continuo es 'are'."
+          },
+          {
+            "answer": "What you are doing tonight?",
+            "why": "El orden correcto en preguntas es 'What + are + sujeto + verbo', no al revés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el presente continuo para citas organizadas.",
+        "spanish": "El sábado me encuentro con Sofía para tomar un café.",
+        "answers": [
+          "I'm meeting Sofía for coffee on Saturday.",
+          "I am meeting Sofía for coffee on Saturday."
+        ],
+        "explanation": "El presente continuo se usa para citas con otra persona ya arregladas con fecha y hora.",
+        "wrongAnswers": [
+          {
+            "answer": "I meet Sofía for coffee on Saturday.",
+            "why": "El presente simple no expresa un plan ya arreglado con hora y persona."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el presente continuo para citas organizadas.",
+        "spanish": "Martín se reúne con el propietario el jueves para firmar el contrato.",
+        "answers": [
+          "Martín is meeting the landlord on Thursday to sign the contract."
+        ],
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una reunión para firmar un contrato.",
+        "wrongAnswers": [
+          {
+            "answer": "Martín will meet the landlord on Thursday to sign the contract.",
+            "why": "'Will' no es lo más natural para una cita ya organizada; corresponde el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando el presente continuo para citas organizadas.",
+        "spanish": "La empresa me ve de nuevo el lunes que viene para la segunda entrevista.",
+        "answers": [
+          "The company is seeing me again next Monday for the second interview."
+        ],
+        "explanation": "El presente continuo se usa para citas ya organizadas, como una segunda entrevista con fecha confirmada.",
+        "wrongAnswers": [
+          {
+            "answer": "The company sees me again next Monday for the second interview.",
+            "why": "El presente simple no expresa un plan futuro ya organizado; corresponde el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Agustina is texting her friend Pedro about her plans for next week.\n'Hi Pedro! This week is really busy for me. On Monday, I'm seeing the dentist at 10 in the morning. On Wednesday, I'm having a job interview at a new company downtown, so I'm a little nervous. On Thursday evening, I'm meeting my sister for dinner; we're going to a new restaurant in Palermo. On Friday, I'm flying to Bariloche with my boyfriend for the weekend! We already bought the tickets and booked a hotel. On Saturday morning, we're visiting my boyfriend's parents before we come back to Buenos Aires on Sunday night. It's going to be a tiring week, but I'm excited about the trip.'",
+        "questions": [
+          {
+            "prompt": "What is Agustina doing on Wednesday?",
+            "options": [
+              "She's flying to Bariloche",
+              "She's seeing the dentist",
+              "She's having a job interview",
+              "She's meeting her sister for dinner"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'On Wednesday, I'm having a job interview', usando presente continuo para una cita ya organizada con fecha."
+          },
+          {
+            "prompt": "Why is she a little nervous?",
+            "options": [
+              "Because she's visiting her boyfriend's parents",
+              "Because she has a job interview",
+              "Because she's meeting her sister",
+              "Because she's flying to Bariloche"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'I'm having a job interview... so I'm a little nervous', conectando el plan organizado con el motivo de sus nervios."
+          },
+          {
+            "prompt": "What are Agustina and her boyfriend doing on Saturday morning?",
+            "options": [
+              "They're flying back to Buenos Aires",
+              "They're going to the dentist",
+              "They're visiting his parents",
+              "They're having dinner at a restaurant"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'On Saturday morning, we're visiting my boyfriend's parents', usando presente continuo para un plan ya arreglado con fecha."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Marcos is checking his calendar with his colleague, Noelia, before a busy week at work.\n'Noelia, can you check my schedule? I think I'm meeting the clients from Córdoba on Monday at 11, right?'\n'Yes, that's right. You're also having lunch with Mr. Fernández on Tuesday at one o'clock. He wants to talk about the new project.'\n'Okay. And on Wednesday?'\n'On Wednesday, you're flying to Rosario for the conference. Your flight leaves at 7 in the morning, so you're not having any meetings that day.'\n'Great. What about Thursday?'\n'On Thursday, we're presenting the sales report to the boss at 3 in the afternoon. Please prepare the slides before then.'\n'And Friday?'\n'Friday is free! You're not working, because it's a holiday.'\n'Perfect, thanks for your help, Noelia!'",
+        "questions": [
+          {
+            "prompt": "What is Marcos doing on Tuesday?",
+            "options": [
+              "He's flying to Rosario",
+              "He's meeting clients from Córdoba",
+              "He's presenting the sales report",
+              "He's having lunch with Mr. Fernández"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'You're also having lunch with Mr. Fernández on Tuesday', usando presente continuo para una cita ya organizada con hora."
+          },
+          {
+            "prompt": "Why isn't Marcos having any meetings on Wednesday?",
+            "options": [
+              "Because it's a holiday",
+              "Because he's having lunch with a client",
+              "Because he's flying to Rosario for the conference",
+              "Because he's presenting the sales report"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'you're flying to Rosario for the conference... so you're not having any meetings that day', mostrando el presente continuo negativo para explicar la ausencia de citas."
+          },
+          {
+            "prompt": "What is happening on Friday?",
+            "options": [
+              "Marcos is flying to Rosario",
+              "Marcos is presenting the sales report",
+              "Marcos is meeting the clients from Córdoba",
+              "Marcos isn't working because it's a holiday"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'You're not working, because it's a holiday', usando presente continuo negativo para describir que no hay un plan organizado ese día."
+          }
+        ]
+      }
+    ],
+    "planes": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de futuro correcta según el contexto.",
+        "prompt": "Next year I ___ learn to cook; I already decided.",
+        "options": [
+          "will",
+          "am learning",
+          "learn",
+          "am going to"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para una intención ya decidida se usa 'be going to' + verbo base.",
+        "optionNotes": [
+          "Incorrecto: 'will' no transmite que la decisión ya está tomada de antes.",
+          "Incorrecto: 'am learning' (presente continuo) se usa para citas ya organizadas con fecha, no para una intención general.",
+          "Incorrecto: 'learn' solo, sin auxiliar, no forma ninguna estructura de futuro.",
+          "Correcto: 'am going to' expresa una intención ya decidida."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de futuro correcta según el contexto.",
+        "prompt": "On Friday I ___ dinner with my parents; we booked a table.",
+        "options": [
+          "will have",
+          "am go to have",
+          "have",
+          "am having"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para un plan ya organizado con otra persona (mesa reservada) se usa el presente continuo.",
+        "optionNotes": [
+          "Incorrecto: 'will have' no es lo más natural cuando el plan ya está arreglado con detalles concretos.",
+          "Incorrecto: 'am go to have' no es una estructura correcta en inglés.",
+          "Incorrecto: 'have' (presente simple) no describe un plan futuro específico.",
+          "Correcto: 'am having' expresa un plan ya organizado con reserva confirmada."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de futuro correcta según el contexto.",
+        "prompt": "Maybe I ___ visit my cousins in Spain next year.",
+        "options": [
+          "am going to",
+          "am visiting",
+          "visit",
+          "will"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'maybe' se usa 'will' para expresar una predicción incierta, no una decisión firme.",
+        "optionNotes": [
+          "Incorrecto: 'am going to' implica una intención más decidida, que contradice la incertidumbre de 'maybe'.",
+          "Incorrecto: 'am visiting' (presente continuo) implica un plan ya organizado, no algo incierto.",
+          "Incorrecto: 'visit' solo, sin auxiliar, no forma ninguna estructura de futuro.",
+          "Correcto: con 'maybe' se usa 'will' para una predicción incierta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de futuro correcta según el contexto.",
+        "prompt": "I think it ___ rain tomorrow.",
+        "options": [
+          "rains",
+          "is raining",
+          "is going to",
+          "will"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'I think' para expresar una opinión sobre el futuro se usa 'will'.",
+        "optionNotes": [
+          "Incorrecto: 'rains' (presente simple) no se usa para predecir el futuro.",
+          "Incorrecto: 'is raining' (presente continuo) describe algo que pasa ahora mismo, no una predicción futura.",
+          "Incorrecto: 'is going to' se asocia más con predicciones basadas en evidencia visible, no con una simple opinión.",
+          "Correcto: 'will' se usa con opiniones sobre el futuro introducidas por 'I think'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de futuro correcta según el contexto.",
+        "prompt": "Camila ___ to Mendoza next month; she already bought the tickets.",
+        "options": [
+          "is going to moving",
+          "is moving",
+          "will move",
+          "moves"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando el plan ya tiene evidencia concreta (pasajes comprados) se prefiere el presente continuo.",
+        "optionNotes": [
+          "Incorrecto: 'is going to moving' tiene un error de forma; después de 'going to' el verbo va en base, sin '-ing'.",
+          "Correcto: 'is moving' expresa un plan ya organizado con pasajes comprados.",
+          "Incorrecto: 'will move' no es lo más natural cuando ya hay evidencia concreta del plan.",
+          "Incorrecto: 'moves' (presente simple) no describe un plan futuro específico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de futuro correcta según el contexto.",
+        "prompt": "I ___ probably stay home this weekend.",
+        "options": [
+          "am staying",
+          "will",
+          "am going to",
+          "stay"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Probably' se coloca entre 'will' y el verbo base, sin 'to': 'will probably stay'.",
+        "optionNotes": [
+          "Incorrecto: 'am staying' (presente continuo) no suele combinarse con 'probably' de esta manera.",
+          "Correcto: 'will' se combina naturalmente con 'probably' en esta posición.",
+          "Incorrecto: 'am going to' no es lo habitual con 'probably' en esta estructura a nivel A2.",
+          "Incorrecto: 'stay' solo, sin auxiliar, no forma ninguna estructura de futuro."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma de futuro correcta según el contexto.",
+        "sentence": "Next year I ___ to cook; I already decided.",
+        "hint": "(learn - intención decidida)",
+        "answers": [
+          "am going to learn",
+          "'m going to learn"
+        ],
+        "explanation": "Para una intención ya decidida se usa 'be going to' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "will learn",
+            "why": "'Will' no transmite que la decisión ya está tomada de antes; corresponde 'going to'."
+          },
+          {
+            "answer": "learn",
+            "why": "Falta el auxiliar; sin 'am going to' no se forma ninguna estructura de futuro."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma de futuro correcta según el contexto.",
+        "sentence": "On Friday I ___ dinner with my parents; we booked a table.",
+        "hint": "(have - plan ya organizado)",
+        "answers": [
+          "am having",
+          "'m having"
+        ],
+        "explanation": "Para un plan ya organizado con otra persona (mesa reservada) se usa el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "will have",
+            "why": "'Will' no es lo más natural cuando el plan ya está arreglado con una reserva confirmada."
+          },
+          {
+            "answer": "have",
+            "why": "El presente simple no describe un plan futuro específico ya organizado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma de futuro correcta según el contexto.",
+        "sentence": "Maybe I ___ my cousins in Spain next year.",
+        "hint": "(visit - predicción incierta)",
+        "answers": [
+          "'ll visit",
+          "will visit"
+        ],
+        "explanation": "Con 'maybe' se usa 'will' para expresar una predicción incierta.",
+        "wrongAnswers": [
+          {
+            "answer": "am going to visit",
+            "why": "'Going to' implica una intención más decidida, que contradice la incertidumbre de 'maybe'."
+          },
+          {
+            "answer": "visit",
+            "why": "Falta el auxiliar 'will' para expresar la predicción futura."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma de futuro correcta según el contexto.",
+        "sentence": "I think it ___ tomorrow.",
+        "hint": "(rain - opinión sobre el futuro)",
+        "answers": [
+          "will rain"
+        ],
+        "explanation": "Con 'I think' para expresar una opinión sobre el futuro se usa 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "is going to rain",
+            "why": "Con 'I think' para una simple opinión se prefiere 'will', no 'going to'."
+          },
+          {
+            "answer": "rains",
+            "why": "El presente simple no se usa para predecir el futuro."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma de futuro correcta según el contexto.",
+        "sentence": "Camila ___ to Mendoza next month; she already bought the tickets.",
+        "hint": "(move - plan ya organizado)",
+        "answers": [
+          "is moving"
+        ],
+        "explanation": "Cuando el plan ya tiene evidencia concreta (pasajes comprados) se prefiere el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "will move",
+            "why": "'Will' no es lo más natural cuando ya hay evidencia concreta del plan, como pasajes comprados."
+          },
+          {
+            "answer": "moves",
+            "why": "El presente simple no describe un plan futuro específico ya organizado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el verbo en la posición correcta junto a 'probably'.",
+        "sentence": "I will probably ___ home this weekend.",
+        "hint": "(stay)",
+        "answers": [
+          "stay"
+        ],
+        "explanation": "'Probably' se coloca entre 'will' y el verbo base, que nunca lleva 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "staying",
+            "why": "Después de 'will' el verbo siempre va en forma base, sin '-ing'."
+          },
+          {
+            "answer": "to stay",
+            "why": "El verbo nunca lleva 'to' después de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre un plan futuro.",
+        "sentence": "Next year I'm going to learn to cook.",
+        "alternatives": [],
+        "translation": "El año que viene voy a aprender a cocinar.",
+        "explanation": "Para una intención ya decidida se usa 'be going to' + verbo base.",
+        "tokens": [
+          "I'm",
+          "learn",
+          "going",
+          "to",
+          "Next",
+          "year",
+          "cook",
+          "to"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre un plan organizado.",
+        "sentence": "On Friday I'm having dinner with my parents.",
+        "alternatives": [],
+        "translation": "El viernes ceno con mis viejos.",
+        "explanation": "Para un plan ya organizado con otra persona se usa el presente continuo.",
+        "tokens": [
+          "my",
+          "having",
+          "Friday",
+          "with",
+          "I'm",
+          "On",
+          "parents",
+          "dinner"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre una predicción incierta.",
+        "sentence": "Maybe I'll visit my cousins in Spain.",
+        "alternatives": [],
+        "translation": "Quizás visite a mis primos en España.",
+        "explanation": "Con 'maybe' se usa 'will' para expresar una predicción incierta.",
+        "tokens": [
+          "Maybe",
+          "I'll",
+          "cousins",
+          "Spain",
+          "visit",
+          "my",
+          "in"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta sobre una predicción.",
+        "sentence": "I think it will rain tomorrow.",
+        "alternatives": [],
+        "translation": "Creo que va a llover mañana.",
+        "explanation": "Con 'I think' para expresar una opinión sobre el futuro se usa 'will'.",
+        "tokens": [
+          "will",
+          "I",
+          "tomorrow",
+          "it",
+          "think",
+          "rain"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta con 'probably'.",
+        "sentence": "I will probably stay home this weekend.",
+        "alternatives": [],
+        "translation": "Probablemente me quede en casa este fin de semana.",
+        "explanation": "'Probably' se coloca entre 'will' y el verbo base, que nunca lleva 'to'.",
+        "tokens": [
+          "weekend",
+          "stay",
+          "probably",
+          "this",
+          "home",
+          "will",
+          "I"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las formas de futuro.",
+        "sentence": "Next year I going to learn to cook.",
+        "answers": [
+          "Next year I'm going to learn to cook.",
+          "Next year I am going to learn to cook."
+        ],
+        "explanation": "Falta el auxiliar 'am' antes de 'going to'; esta estructura siempre necesita el verbo 'be' conjugado.",
+        "wrongAnswers": [
+          {
+            "answer": "Next year I will going to learn to cook.",
+            "why": "No se combinan 'will' y 'going to' en la misma oración; se debe usar solo una de las dos formas."
+          },
+          {
+            "answer": "Next year I am go to learn to cook.",
+            "why": "Falta el gerundio 'going'; la estructura correcta es 'am going to' + verbo base."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las formas de futuro.",
+        "sentence": "On Friday I having dinner with my parents.",
+        "answers": [
+          "On Friday I'm having dinner with my parents.",
+          "On Friday I am having dinner with my parents."
+        ],
+        "explanation": "Falta el auxiliar 'am' antes del gerundio; el presente continuo siempre necesita 'be' conjugado.",
+        "wrongAnswers": [
+          {
+            "answer": "On Friday I will having dinner with my parents.",
+            "why": "'Will' no se combina con el gerundio 'having'; para planes arreglados se usa el presente continuo con 'am'."
+          },
+          {
+            "answer": "On Friday I has dinner with my parents.",
+            "why": "'Has' es presente simple de tercera persona, no concuerda con 'I' ni expresa un plan ya arreglado."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las formas de futuro.",
+        "sentence": "Maybe I will to visit my cousins in Spain.",
+        "answers": [
+          "Maybe I will visit my cousins in Spain.",
+          "Maybe I'll visit my cousins in Spain."
+        ],
+        "explanation": "Después de 'will' el verbo va en forma base, sin 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "Maybe I am going to visit my cousins in Spain.",
+            "why": "No corrige el verdadero error de la oración original, que es el 'to' de más después de 'will'."
+          },
+          {
+            "answer": "Maybe I visit my cousins in Spain.",
+            "why": "Falta el auxiliar 'will' para expresar la predicción futura con 'maybe'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las formas de futuro.",
+        "sentence": "I will probably to stay home this weekend.",
+        "answers": [
+          "I will probably stay home this weekend."
+        ],
+        "explanation": "'Probably' va entre 'will' y el verbo, que nunca lleva 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I probably will to stay home this weekend.",
+            "why": "El verbo nunca lleva 'to' después de 'will', sin importar dónde se coloque 'probably'."
+          },
+          {
+            "answer": "I will to probably stay home this weekend.",
+            "why": "'Probably' va entre 'will' y el verbo; además el verbo no lleva 'to' después de 'will'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las formas de futuro.",
+        "sentence": "Next month Camila is going to moving to Mendoza.",
+        "answers": [
+          "Next month Camila is going to move to Mendoza."
+        ],
+        "explanation": "Después de 'going to' el verbo va en su forma base, sin '-ing'.",
+        "wrongAnswers": [
+          {
+            "answer": "Next month Camila is going moving to Mendoza.",
+            "why": "Falta la palabra 'to' en la estructura 'be going to' + verbo base."
+          },
+          {
+            "answer": "Next month Camila will going to move to Mendoza.",
+            "why": "No se combinan 'will' y 'going to' en la misma oración."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la forma de futuro adecuada.",
+        "spanish": "El año que viene voy a aprender a cocinar.",
+        "answers": [
+          "Next year I'm going to learn to cook.",
+          "Next year I am going to learn to cook."
+        ],
+        "explanation": "Para una intención ya decidida se usa 'be going to' + verbo base.",
+        "wrongAnswers": [
+          {
+            "answer": "Next year I will learn to cook.",
+            "why": "'Will' no transmite una intención ya decidida; para planes decididos se usa 'going to'."
+          },
+          {
+            "answer": "Next year I am going to learning to cook.",
+            "why": "Después de 'going to' el verbo va en forma base, no en gerundio."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la forma de futuro adecuada.",
+        "spanish": "El viernes ceno con mis viejos; ya reservamos mesa.",
+        "answers": [
+          "On Friday I'm having dinner with my parents; we already booked a table.",
+          "On Friday I am having dinner with my parents; we already booked a table."
+        ],
+        "explanation": "Para un plan ya organizado con otra persona se usa el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "On Friday I will have dinner with my parents; we already booked a table.",
+            "why": "'Will' no es lo más natural para un plan ya arreglado con mesa reservada; corresponde el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la forma de futuro adecuada.",
+        "spanish": "Quizás visite a mis primos en España el año que viene.",
+        "answers": [
+          "Maybe I'll visit my cousins in Spain next year.",
+          "Maybe I will visit my cousins in Spain next year."
+        ],
+        "explanation": "Con 'maybe' se usa 'will' para expresar una predicción incierta.",
+        "wrongAnswers": [
+          {
+            "answer": "Maybe I'm going to visit my cousins in Spain next year.",
+            "why": "Con 'maybe' se prefiere 'will' para expresar una predicción incierta, no 'going to' que implica mayor certeza."
+          },
+          {
+            "answer": "Maybe I visit my cousins in Spain next year.",
+            "why": "Falta el auxiliar 'will' para expresar la predicción futura."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la forma de futuro adecuada.",
+        "spanish": "Creo que va a llover mañana.",
+        "answers": [
+          "I think it will rain tomorrow.",
+          "I think it'll rain tomorrow."
+        ],
+        "explanation": "Con 'I think' para expresar una opinión sobre el futuro, sin evidencia visible, se usa 'will'.",
+        "wrongAnswers": [
+          {
+            "answer": "I think it rains tomorrow.",
+            "why": "El presente simple no se usa para predicciones futuras."
+          },
+          {
+            "answer": "I think it's going to rain tomorrow.",
+            "why": "Con 'I think' se expresa una opinión sin evidencia visible; en ese caso se prefiere 'will' y no 'going to'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la forma de futuro adecuada.",
+        "spanish": "Camila se muda a Mendoza el mes que viene; ya compró los pasajes.",
+        "answers": [
+          "Camila is moving to Mendoza next month; she already bought the tickets.",
+          "Camila's moving to Mendoza next month; she already bought the tickets."
+        ],
+        "explanation": "Cuando el plan ya tiene evidencia concreta (pasajes comprados) se prefiere el presente continuo.",
+        "wrongAnswers": [
+          {
+            "answer": "Camila will move to Mendoza next month; she already bought the tickets.",
+            "why": "'Will' no es lo más natural para un plan ya organizado con pasajes comprados; corresponde el presente continuo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al inglés usando la forma de futuro adecuada.",
+        "spanish": "Probablemente me quede en casa este fin de semana.",
+        "answers": [
+          "I'll probably stay home this weekend.",
+          "I will probably stay home this weekend."
+        ],
+        "explanation": "'Probably' se coloca entre 'will' y el verbo base, que nunca lleva 'to'.",
+        "wrongAnswers": [
+          {
+            "answer": "I will probably to stay home this weekend.",
+            "why": "El verbo nunca lleva 'to' después de 'will'; además 'probably' va entre 'will' y el verbo."
+          },
+          {
+            "answer": "Probably I will stay home this weekend.",
+            "why": "En inglés lo natural en este tipo de frase es colocar 'probably' entre 'will' y el verbo, no al principio de la oración."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Hi! I'm Sofía, and I want to tell you about my plans. Next month, I'm going to visit my sister in Bariloche because we already bought the bus tickets. I'm meeting her at the bus station on Friday afternoon. We're going to visit the lake and maybe go skiing if there's enough snow. I'll probably bring my camera because the mountains are beautiful in winter. One day, I'd like to learn to ski really well, but for now, I'll just try my best. My sister thinks it will be very cold, so I'm going to pack warm clothes. In two weeks, I'm also having a dentist appointment before the trip. I hope everything goes well!",
+        "questions": [
+          {
+            "prompt": "Why is Sofía going to visit her sister next month?",
+            "options": [
+              "Because they already bought the bus tickets.",
+              "Because her sister invited her last week.",
+              "Because she has a dentist appointment there.",
+              "Because she wants to learn to ski."
+            ],
+            "correctIndex": 0,
+            "explanation": "Se usa 'going to' porque ya hay una decisión tomada con una prueba concreta: los pasajes de micro ya comprados."
+          },
+          {
+            "prompt": "What is already arranged for Friday afternoon?",
+            "options": [
+              "Sofía is going skiing.",
+              "Sofía is having a dentist appointment.",
+              "Sofía is packing warm clothes.",
+              "Sofía is meeting her sister at the bus station."
+            ],
+            "correctIndex": 3,
+            "explanation": "El presente continuo se usa para planes ya organizados con fecha y hora fija, como 'I'm meeting her on Friday afternoon'."
+          },
+          {
+            "prompt": "What does Sofía's sister think will happen with the weather?",
+            "options": [
+              "She thinks it will be very cold.",
+              "She's going to check the weather before leaving.",
+              "She thinks it will probably be warm.",
+              "She knows it will snow a lot."
+            ],
+            "correctIndex": 0,
+            "explanation": "'Will' se usa para expresar una predicción basada en una opinión, como la de la hermana sobre el frío."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas eligiendo la opción correcta.",
+        "text": "Diego is talking to his friend Pablo about his future plans. Next year, Diego is going to start English classes because he wants a better job. He already registered at a language school near his house. On Monday, he's having an interview for a new position at a travel agency in the city center. He thinks the interview will go well because he practiced a lot. 'I'll probably be nervous,' Diego said, 'but I'll do my best.' Soon, he's also going to visit his grandparents in Rosario, since he hasn't seen them in months. One day, Diego would like to open his own travel agency, but for now, he's focusing on his English and his new job. Pablo thinks Diego's plans will come true.",
+        "questions": [
+          {
+            "prompt": "Why is Diego going to start English classes next year?",
+            "options": [
+              "Because the travel agency asked him to.",
+              "Because he wants a better job.",
+              "Because he will travel to Rosario.",
+              "Because Pablo suggested it."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Going to' se usa para planes con una razón o decisión previa, como querer un trabajo mejor."
+          },
+          {
+            "prompt": "What is already arranged for Monday?",
+            "options": [
+              "Diego is having an interview at a travel agency.",
+              "Diego is starting English classes.",
+              "Diego is visiting his grandparents.",
+              "Diego is opening his own agency."
+            ],
+            "correctIndex": 0,
+            "explanation": "El presente continuo describe un plan ya organizado con día y hora fijos, como la entrevista del lunes."
+          },
+          {
+            "prompt": "What does Diego say about how he will feel at the interview?",
+            "options": [
+              "He says he will ask Pablo to come with him.",
+              "He says he'll probably be nervous but will do his best.",
+              "He says he won't be nervous at all.",
+              "He says he will cancel the interview."
+            ],
+            "correctIndex": 1,
+            "explanation": "'Will' junto con 'probably' se usa para suavizar una predicción sobre cómo se va a sentir, y también como promesa de esforzarse."
+          }
+        ]
+      }
+    ]
+  }
+}

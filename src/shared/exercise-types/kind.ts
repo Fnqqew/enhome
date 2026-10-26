@@ -66,6 +66,9 @@ export interface ExerciseKind<
   empty: (exercise: S) => A
   // Pista que ayuda sin revelar la respuesta (se paga con un comodín).
   hint: (exercise: S) => string
+  // Los que se pueden intentar de nuevo después de errarle: qué se le dice al alumno para el segundo
+  // intento (por qué no era, si el error estaba previsto, o una pista), sin darle la respuesta.
+  retry?: (exercise: S, answer: A) => string
   // Cómo se le describe el formato a Claude y qué controla el revisor.
   guide: (context: GuideContext) => string
   check: string
