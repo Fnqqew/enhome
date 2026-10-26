@@ -3127,6 +3127,830 @@
           }
         ]
       }
+    ],
+    "apresentacao": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para decir la edad.",
+        "prompt": "Eu ___ 28 anos.",
+        "options": [
+          "sou",
+          "tenho",
+          "tem",
+          "estou"
+        ],
+        "correctIndex": 1,
+        "explanation": "La edad se expresa con el verbo ter, no con ser ni estar: eu tenho 28 anos.",
+        "optionNotes": [
+          "Incorrecto: en español se dice 'soy 28 años' coloquialmente mal, pero en portugués nunca se usa ser para la edad.",
+          "Correcto: la edad se expresa con ter; eu se conjuga como tenho.",
+          "Incorrecto: 'tem' corresponde a ele/ela/você, no a eu.",
+          "Incorrecto: estar tampoco se usa para la edad; siempre se usa ter."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para decir dónde vivís.",
+        "prompt": "Eu moro ___ Florianópolis, mas sou de Rosario.",
+        "options": [
+          "na",
+          "no em",
+          "em",
+          "no"
+        ],
+        "correctIndex": 2,
+        "explanation": "La mayoría de las ciudades no llevan artículo en portugués: se dice em Florianópolis.",
+        "optionNotes": [
+          "Incorrecto: 'na' también agrega un artículo incorrecto para una ciudad.",
+          "Incorrecto: esta combinación no existe en portugués.",
+          "Correcto: con nombres de ciudades se usa em, sin artículo.",
+          "Incorrecto: 'no' agrega un artículo que no corresponde con nombres de ciudades."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para decir el origen.",
+        "prompt": "Camila mora em Florianópolis, mas ___ de Salvador.",
+        "options": [
+          "é",
+          "mora",
+          "tem",
+          "está"
+        ],
+        "correctIndex": 0,
+        "explanation": "El origen de una persona se expresa con ser: ela é de Salvador.",
+        "optionNotes": [
+          "Correcto: ela se conjuga con ser como é, usado para el origen.",
+          "Incorrecto: 'mora' repite la idea de vivir, pero la frase pide el origen, que usa ser.",
+          "Incorrecto: 'tem' es el verbo ter, no corresponde para expresar origen.",
+          "Incorrecto: el origen se expresa con ser, no con estar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para una ciudad.",
+        "prompt": "Lucas mora ___ São Paulo, perto do trabalho.",
+        "options": [
+          "no",
+          "à",
+          "na",
+          "em"
+        ],
+        "correctIndex": 3,
+        "explanation": "Las ciudades generalmente no llevan artículo en portugués: em São Paulo.",
+        "optionNotes": [
+          "Incorrecto: 'no' agrega un artículo que no corresponde con nombres de ciudades.",
+          "Incorrecto: 'à' no se usa para indicar dónde vive alguien en este contexto.",
+          "Incorrecto: 'na' también agrega un artículo incorrecto para una ciudad.",
+          "Correcto: con nombres de ciudades se usa em, sin artículo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para expresar un sentimiento.",
+        "prompt": "Estou muito ___ de estar aqui nesta entrevista.",
+        "options": [
+          "moro feliz",
+          "sou feliz",
+          "feliz",
+          "tenho feliz"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de estou solo se necesita el adjetivo feliz, sin repetir otro verbo.",
+        "optionNotes": [
+          "Incorrecto: 'moro feliz' no tiene sentido gramatical en esta frase.",
+          "Incorrecto: no se puede repetir un segundo verbo (sou) después de estou.",
+          "Correcto: estou ya es el verbo conjugado; solo falta el adjetivo feliz.",
+          "Incorrecto: 'tenho feliz' no existe en portugués; feliz es un adjetivo, no se usa con ter."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para la profesión.",
+        "prompt": "Lucas se apresenta: 'Eu tenho 30 anos e ___ designer gráfico.'",
+        "options": [
+          "estou",
+          "moro",
+          "sou",
+          "tenho"
+        ],
+        "correctIndex": 2,
+        "explanation": "La profesión se expresa con ser: eu sou designer gráfico.",
+        "optionNotes": [
+          "Incorrecto: la profesión es una característica permanente, se usa ser, no estar.",
+          "Incorrecto: 'moro' significa 'vivo', no corresponde para indicar la profesión.",
+          "Correcto: la profesión se expresa con ser; eu se conjuga como sou.",
+          "Incorrecto: 'tenho' ya se usó para la edad; para la profesión se necesita ser."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de ter para la edad.",
+        "sentence": "Eu ___ 32 anos e trabalho como engenheiro.",
+        "hint": "(ter)",
+        "answers": [
+          "tenho"
+        ],
+        "explanation": "Eu se conjuga con ter como tenho, usado siempre para decir la edad.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "La edad se expresa con ter, no con ser."
+          },
+          {
+            "answer": "estou",
+            "why": "La edad se expresa con ter, no con estar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la preposición correcta para una ciudad.",
+        "sentence": "Eu moro ___ Florianópolis, perto da praia.",
+        "hint": "(preposición)",
+        "answers": [
+          "em"
+        ],
+        "explanation": "Con nombres de ciudades se usa em, sin artículo: moro em Florianópolis.",
+        "wrongAnswers": [
+          {
+            "answer": "no",
+            "why": "Las ciudades generalmente no llevan artículo en portugués; se dice em Florianópolis, no no Florianópolis."
+          },
+          {
+            "answer": "na",
+            "why": "Las ciudades generalmente no llevan artículo en portugués; se dice em Florianópolis, no na Florianópolis."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de ser para el origen.",
+        "sentence": "Eu ___ de Mendoza, mas moro no Brasil.",
+        "hint": "(ser)",
+        "answers": [
+          "sou"
+        ],
+        "explanation": "Eu se conjuga con ser como sou, usado para indicar el origen.",
+        "wrongAnswers": [
+          {
+            "answer": "estou",
+            "why": "El origen de una persona se expresa con ser, no con estar."
+          },
+          {
+            "answer": "moro",
+            "why": "'Moro' significa 'vivo', pero la frase pide el origen, que se expresa con ser."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de ter para la edad.",
+        "sentence": "Camila ___ 27 anos e é fisioterapeuta.",
+        "hint": "(ter)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "Ela se conjuga con ter como tem, usado para decir la edad de otra persona.",
+        "wrongAnswers": [
+          {
+            "answer": "tenho",
+            "why": "'Tenho' corresponde a eu, pero Camila (ela) necesita la forma tem."
+          },
+          {
+            "answer": "é",
+            "why": "La edad se expresa con ter, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adjetivo correcto para expresar el sentimiento.",
+        "sentence": "Estou muito ___ de estar nesta entrevista.",
+        "hint": "(adjetivo)",
+        "answers": [
+          "feliz"
+        ],
+        "explanation": "Después de estou se usa el adjetivo en singular para una sola persona: estou feliz.",
+        "wrongAnswers": [
+          {
+            "answer": "felizes",
+            "why": "Eu es singular, así que el adjetivo debe ir en singular: feliz, no felizes."
+          },
+          {
+            "answer": "feliz de",
+            "why": "La preposición 'de' ya está después en la frase; no se repite junto al adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de ser para la profesión.",
+        "sentence": "No currículo, Lucas escreve: 'Eu ___ designer gráfico há cinco anos.'",
+        "hint": "(ser)",
+        "answers": [
+          "sou"
+        ],
+        "explanation": "La profesión se expresa con ser: eu sou designer gráfico.",
+        "wrongAnswers": [
+          {
+            "answer": "estou",
+            "why": "La profesión es una característica permanente, se expresa con ser, no con estar."
+          },
+          {
+            "answer": "tenho",
+            "why": "'Tenho' se usa para la edad, no para la profesión, que necesita ser."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Meu nome é Juan Martín e eu sou argentino.",
+        "alternatives": [
+          "Eu sou argentino e meu nome é Juan Martín."
+        ],
+        "translation": "Me llamo Juan Martín y soy argentino.",
+        "explanation": "La presentación combina 'meu nome é' con 'eu sou' para dar nombre y nacionalidad; las dos cláusulas unidas por 'e' también pueden invertirse.",
+        "tokens": [
+          "sou",
+          "Juan",
+          "Meu",
+          "argentino",
+          "nome",
+          "eu",
+          "Martín",
+          "e",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu moro em Florianópolis há dois anos.",
+        "alternatives": [
+          "Há dois anos eu moro em Florianópolis."
+        ],
+        "translation": "Vivo en Florianópolis hace dos años.",
+        "explanation": "Las ciudades no llevan artículo en portugués (moro em Florianópolis) y la expresión temporal 'há dois anos' también puede colocarse al inicio de la oración.",
+        "tokens": [
+          "moro",
+          "Eu",
+          "anos",
+          "em",
+          "dois",
+          "há",
+          "Florianópolis"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu tenho trinta e dois anos.",
+        "alternatives": [],
+        "translation": "Tengo treinta y dos años.",
+        "explanation": "La edad se expresa con el verbo ter: eu tenho trinta e dois anos.",
+        "tokens": [
+          "Eu",
+          "tenho",
+          "dois",
+          "e",
+          "trinta",
+          "anos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Estou muito feliz de estar aqui.",
+        "alternatives": [],
+        "translation": "Estoy muy contento de estar acá.",
+        "explanation": "Estar expresa el sentimiento temporal de felicidad en este momento.",
+        "tokens": [
+          "feliz",
+          "Estou",
+          "estar",
+          "aqui",
+          "muito",
+          "de"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Sou designer gráfico e trabalho numa empresa de tecnologia.",
+        "alternatives": [
+          "Sou designer gráfico e trabalho em uma empresa de tecnologia."
+        ],
+        "translation": "Soy diseñador gráfico y trabajo en una empresa de tecnología.",
+        "explanation": "La profesión se expresa con ser: sou designer gráfico.",
+        "tokens": [
+          "trabalho",
+          "gráfico",
+          "e",
+          "empresa",
+          "Sou",
+          "tecnologia",
+          "de",
+          "designer",
+          "numa"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la expresión de la edad.",
+        "sentence": "Eu sou 32 anos.",
+        "answers": [
+          "Eu tenho 32 anos."
+        ],
+        "explanation": "La edad siempre se expresa con el verbo ter: eu tenho 32 anos.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu estou 32 anos.",
+            "why": "La edad se expresa con ter, no con estar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la preposición de la ciudad.",
+        "sentence": "Eu moro no Florianópolis.",
+        "answers": [
+          "Eu moro em Florianópolis."
+        ],
+        "explanation": "La mayoría de las ciudades no llevan artículo: moro em Florianópolis.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu moro na Florianópolis.",
+            "why": "Las ciudades no llevan artículo en portugués; se dice solo em Florianópolis."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación del verbo ter.",
+        "sentence": "Ela tenho 27 anos.",
+        "answers": [
+          "Ela tem 27 anos."
+        ],
+        "explanation": "Ela se conjuga con ter como tem, no tenho, que corresponde a eu.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é 27 anos.",
+            "why": "La edad se expresa con ter, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la expresión de la profesión.",
+        "sentence": "Eu estou designer gráfico.",
+        "answers": [
+          "Eu sou designer gráfico."
+        ],
+        "explanation": "La profesión es una característica permanente y se expresa con ser: eu sou designer gráfico.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tenho designer gráfico.",
+            "why": "La profesión se expresa con ser, no con ter."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de ser/estar después de la preposición de.",
+        "sentence": "Estou muito feliz de ser aqui nesta entrevista.",
+        "answers": [
+          "Estou muito feliz de estar aqui nesta entrevista."
+        ],
+        "explanation": "Para expresar la presencia física en un lugar se usa estar, no ser: estar aqui.",
+        "wrongAnswers": [
+          {
+            "answer": "Estou muito feliz de estou aqui nesta entrevista.",
+            "why": "Después de una preposición como de se usa el infinitivo (estar), no la forma conjugada (estou)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Me llamo Juan Martín y soy argentino.",
+        "answers": [
+          "Meu nome é Juan Martín e eu sou argentino.",
+          "Meu nome é Juan Martín e sou argentino."
+        ],
+        "explanation": "La nacionalidad se expresa con ser: eu sou argentino.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu nome é Juan Martín e eu estou argentino.",
+            "why": "La nacionalidad es una característica permanente, se expresa con ser, no con estar."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Vivo en Florianópolis hace dos años.",
+        "answers": [
+          "Eu moro em Florianópolis há dois anos.",
+          "Moro em Florianópolis há dois anos."
+        ],
+        "explanation": "Con nombres de ciudades se usa em, sin artículo: moro em Florianópolis.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu moro no Florianópolis há dois anos.",
+            "why": "Las ciudades no llevan artículo en portugués; se dice em Florianópolis, no no Florianópolis."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Tengo treinta y dos años y soy ingeniero.",
+        "answers": [
+          "Eu tenho trinta e dois anos e sou engenheiro.",
+          "Tenho trinta e dois anos e sou engenheiro."
+        ],
+        "explanation": "La edad se expresa con ter: eu tenho trinta e dois anos.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou trinta e dois anos e sou engenheiro.",
+            "why": "La edad se expresa con ter, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Estoy muy contento de estar en esta entrevista.",
+        "answers": [
+          "Estou muito feliz de estar nesta entrevista.",
+          "Estou muito contente de estar nesta entrevista."
+        ],
+        "explanation": "Los sentimientos pasajeros se expresan con estar: estou feliz.",
+        "wrongAnswers": [
+          {
+            "answer": "Sou muito feliz de estar nesta entrevista.",
+            "why": "Un sentimiento momentáneo como estar contento se expresa con estar, no con ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Soy diseñador gráfico y trabajo en una empresa de tecnología.",
+        "answers": [
+          "Sou designer gráfico e trabalho numa empresa de tecnologia.",
+          "Eu sou designer gráfico e trabalho em uma empresa de tecnologia."
+        ],
+        "explanation": "La profesión se expresa con ser: sou designer gráfico.",
+        "wrongAnswers": [
+          {
+            "answer": "Tenho designer gráfico e trabalho numa empresa de tecnologia.",
+            "why": "La profesión se expresa con ser, no con ter."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Ella tiene 27 años y es fisioterapeuta.",
+        "answers": [
+          "Ela tem 27 anos e é fisioterapeuta."
+        ],
+        "explanation": "Ela se conjuga con ter (tem) para la edad y con ser (é) para la profesión.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é 27 anos e tem fisioterapeuta.",
+            "why": "Se intercambiaron los verbos: la edad se expresa con ter y la profesión con ser."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Boa tarde, meu nome é Rodrigo e eu sou professor de espanhol.",
+        "alternatives": [
+          "Boa tarde, meu nome é Rodrigo, eu sou professor de espanhol."
+        ],
+        "translation": "Buenas tardes, me llamo Rodrigo y soy profesor de español.",
+        "explanation": "La profesión se expresa con \"sou\" (ser) porque es una característica estable de la persona, no un estado temporal."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eu tenho trinta e dois anos e moro em São Paulo.",
+        "alternatives": [
+          "Eu tenho 32 anos e moro em São Paulo."
+        ],
+        "translation": "Tengo treinta y dos años y vivo en San Pablo.",
+        "explanation": "La edad se dice siempre con \"tenho\" (verbo ter), igual que en español con \"tengo\", nunca con \"sou\"."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Doutora, eu estou um pouco nervoso hoje.",
+        "alternatives": [
+          "Doutora, estou um pouco nervoso hoje."
+        ],
+        "translation": "Doctora, estoy un poco nervioso hoy.",
+        "explanation": "Se usa \"estou\" porque el nerviosismo es un estado pasajero que puede cambiar, a diferencia de una cualidad fija que iría con \"sou\"."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Meu nome é Carla, sou de Mendoza e estou procurando um apartamento.",
+        "alternatives": [],
+        "translation": "Me llamo Carla, soy de Mendoza y estoy buscando un departamento.",
+        "explanation": "En la misma oración aparecen \"sou\" para el origen (algo permanente) y \"estou\" para una acción en curso (buscar), mostrando la diferencia entre ser y estar."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dijo.",
+        "pair": [
+          "morro",
+          "moro"
+        ],
+        "target": 1,
+        "meanings": [
+          "cerro/colina",
+          "vivo (de vivir)"
+        ],
+        "explanation": "La \"r\" simple entre vocales suena suave, como la \"r\" de \"pero\" en español; la \"rr\" doble suena fuerte y vibrante, como la \"rr\" de \"perro\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dijo.",
+        "pair": [
+          "é",
+          "e"
+        ],
+        "target": 1,
+        "meanings": [
+          "es (verbo ser)",
+          "y (conjunción)"
+        ],
+        "explanation": "\"É\" se pronuncia con una vocal abierta, como la \"e\" de \"mesa\" en español; en cambio \"e\" (y) se pronuncia cerrada, casi como una \"i\" corta, algo que no pasa en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dijo.",
+        "pair": [
+          "só",
+          "sou"
+        ],
+        "target": 1,
+        "meanings": [
+          "solo/solamente",
+          "soy (verbo ser)"
+        ],
+        "explanation": "\"Sou\" tiene un leve deslizamiento hacia \"u\" al final, como un diptongo cerrado; \"só\" es una vocal abierta y simple, sin ese sonido final."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Oi, tudo bem? Eu sou da Argentina e estou muito feliz de estar aqui.",
+        "translation": "Hola, ¿todo bien? Soy de Argentina y estoy muy contento de estar acá.",
+        "tip": "Uní \"tudo bem\" sin pausa, como si fuera una sola palabra: \"tudobem\"."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Meu nome é Rodrigo, tenho trinta e dois anos e sou professor.",
+        "translation": "Me llamo Rodrigo, tengo treinta y dos años y soy profesor.",
+        "tip": "Marcá bien la nasalidad de \"tenho\" (suena parecido a \"ñ\" pero más nasal) y seguí sin pausa hacia \"trinta\"."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Doutor, eu estou com dor de cabeça desde ontem.",
+        "translation": "Doctor, tengo dolor de cabeza desde ayer.",
+        "tip": "La \"o\" de \"dor\" es abierta y corta; no la alargues como harías en español."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la presentación de Sofía y respondé las preguntas con ser, estar y ter.",
+        "text": "Oi! Meu nome é Sofía Fernández. Eu sou argentina, de Córdoba, mas agora moro em Florianópolis. Eu tenho 24 anos e sou enfermeira. Trabalho em um hospital perto da praia. Estou muito feliz morando no Brasil, mas estou um pouco nervosa porque hoje é meu primeiro dia no trabalho novo. Meu colega se chama Rafael. Ele é de Recife e tem 30 anos. Ele não é enfermeiro, é médico. Nós estamos na mesma equipe. Rafael está calmo, porque já trabalha aqui há três anos. Eu espero aprender muito com ele. Amanhã vou conhecer os outros colegas do hospital.",
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Sofía?",
+            "options": [
+              "22",
+              "28",
+              "24",
+              "30"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Eu tenho 24 anos'. En portugués la edad se expresa con el verbo ter, no con ser."
+          },
+          {
+            "prompt": "¿Cómo se siente Sofía en su primer día de trabajo?",
+            "options": [
+              "Triste y cansada",
+              "Muy enojada",
+              "Tranquila y aburrida",
+              "Feliz pero un poco nerviosa"
+            ],
+            "correctIndex": 3,
+            "explanation": "Sofía dice 'estou muito feliz... mas estou um pouco nervosa', usando estar para describir estados de ánimo temporales."
+          },
+          {
+            "prompt": "¿Cuál es la profesión de Rafael?",
+            "options": [
+              "Motorista",
+              "Professor",
+              "Enfermeiro",
+              "Médico"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto aclara 'Ele não é enfermeiro, é médico', usando ser para indicar su profesión."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la presentación de Tomás y respondé las preguntas sobre su edad, familia y sentimientos.",
+        "text": "Olá! Meu nome é Tomás e sou estudante de intercâmbio. Sou do Chile, de Santiago, mas agora moro em Belo Horizonte com a família Silva. Eu tenho 19 anos e estudo economia na universidade. Não sou muito tímido, mas estou um pouco nervoso porque é a primeira vez que moro fora do meu país. A família Silva é muito simpática. O pai se chama Marcos, tem 45 anos e é professor. A mãe se chama Elaine, tem 42 anos e é dentista. Eles têm uma filha, a Beatriz, que tem 17 anos e está no último ano da escola. Estou muito contente de estar aqui e espero aprender muito português com eles.",
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Tomás?",
+            "options": [
+              "45",
+              "42",
+              "17",
+              "19"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'Eu tenho 19 anos', usando el verbo ter para expresar la edad, como en español."
+          },
+          {
+            "prompt": "¿Cuál es la profesión del padre de la familia Silva?",
+            "options": [
+              "Professor",
+              "Médico",
+              "Dentista",
+              "Estudante"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Marcos... é professor', usando ser para indicar su profesión."
+          },
+          {
+            "prompt": "¿Cómo se siente Tomás por vivir lejos de su país por primera vez?",
+            "options": [
+              "Tranquilo",
+              "Un poco nervioso",
+              "Enojado",
+              "Muy triste"
+            ],
+            "correctIndex": 1,
+            "explanation": "Tomás dice 'estou um pouco nervoso', usando estar para describir cómo se siente en ese momento."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo entre dos compañeros de trabajo y respondé las preguntas.",
+        "situation": "En una oficina de São Paulo, Ana y Bruno se conocen el primer día de Bruno en el nuevo empleo.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Oi! Eu sou a Ana. Qual é o seu nome?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Oi, Ana! Eu sou o Bruno. Muito prazer!"
+          },
+          {
+            "speaker": "Ana",
+            "text": "De onde você é, Bruno?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Sou do Rio de Janeiro, mas moro em São Paulo há dois anos."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Quantos anos você tem?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Tenho 27 anos. E você?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Eu tenho 25 anos. Você está gostando daqui?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Estou sim! Estou muito feliz com o novo emprego."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Bruno?",
+            "options": [
+              "27",
+              "25",
+              "29",
+              "22"
+            ],
+            "correctIndex": 0,
+            "explanation": "Bruno responde 'Tenho 27 anos', usando el verbo ter para decir su edad."
+          },
+          {
+            "prompt": "¿De dónde es Bruno y dónde vive ahora?",
+            "options": [
+              "Es de Bahía y vive en Río",
+              "Es de São Paulo y vive en São Paulo",
+              "Es de São Paulo y vive en Río",
+              "Es de Río de Janeiro y vive en São Paulo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Bruno dice 'Sou do Rio de Janeiro, mas moro em São Paulo', diferenciando el origen (ser) del lugar donde vive (morar em)."
+          },
+          {
+            "prompt": "¿Cómo se siente Bruno con el nuevo trabajo?",
+            "options": [
+              "Muy feliz",
+              "Enojado",
+              "Triste",
+              "Nervioso"
+            ],
+            "correctIndex": 0,
+            "explanation": "Bruno dice 'Estou muito feliz com o novo emprego', usando estar para expresar cómo se siente en este momento."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo entre dos estudiantes nuevos y respondé las preguntas.",
+        "situation": "En la Universidade Federal de Santa Catarina, en Florianópolis, Valentina (argentina) y Felipe (brasileño) se presentan el primer día de clase.",
+        "lines": [
+          {
+            "speaker": "Felipe",
+            "text": "Oi! Eu sou o Felipe. Você é nova aqui?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Oi! Sou sim, eu sou a Valentina. Sou da Argentina."
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Que legal! Quantos anos você tem?"
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Tenho 20 anos. E você, quantos anos tem?"
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Eu tenho 21 anos. Eu moro aqui em Florianópolis, mas sou de Curitiba."
+          },
+          {
+            "speaker": "Valentina",
+            "text": "Eu moro em um apartamento perto da universidade. Estou muito animada com o curso."
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Eu também estou animado! Vamos ser bons colegas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Valentina?",
+            "options": [
+              "19",
+              "20",
+              "22",
+              "21"
+            ],
+            "correctIndex": 1,
+            "explanation": "Valentina responde 'Tenho 20 anos', usando el verbo ter para expresar su edad."
+          },
+          {
+            "prompt": "¿Felipe es de Florianópolis?",
+            "options": [
+              "No, es de Buenos Aires",
+              "Sí, nació ahí",
+              "Sí, pero vive en Curitiba",
+              "No, es de Curitiba pero vive en Florianópolis"
+            ],
+            "correctIndex": 3,
+            "explanation": "Felipe dice 'moro aqui em Florianópolis, mas sou de Curitiba', diferenciando origen (ser) de residencia (morar em)."
+          },
+          {
+            "prompt": "¿Cómo se sienten Felipe y Valentina con el curso?",
+            "options": [
+              "Animados",
+              "Nerviosos",
+              "Tristes",
+              "Aburridos"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ambos usan estar para decir 'estou animada/animado', expresando entusiasmo por el curso nuevo."
+          }
+        ]
+      }
     ]
   }
 }
