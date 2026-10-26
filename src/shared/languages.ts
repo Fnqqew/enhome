@@ -3,6 +3,7 @@
 // Las explicaciones siempre van en español. Sumar un idioma: su carpeta y una línea acá.
 
 import { z } from 'zod'
+import { voiceSchema } from './voice'
 import en from '../../content/en/idioma.json'
 import fr from '../../content/fr/idioma.json'
 import it from '../../content/it/idioma.json'
@@ -37,22 +38,21 @@ export const languagePackSchema = z.object({
   variant: z.string().min(1),
   // Para la lectura en voz alta con las voces de Windows.
   speechTag: z.string().min(2),
-  systemVoices: z.array(z.string()).min(1)
+  systemVoices: z.array(z.string()).min(1),
+  // Voces neuronales: la primera es la principal y la segunda, de otro género, la del interlocutor.
+  voices: z.array(voiceSchema).min(1)
 })
 
 export type LanguagePack = z.infer<typeof languagePackSchema>
 
-export interface LanguageInfo extends LanguagePack {
-  // Voces del sistema preferidas, en orden (alias de systemVoices).
-  voices: readonly string[]
-}
+export type LanguageInfo = LanguagePack
 
 const PACKS: Record<LanguageId, unknown> = { en, pt, it, fr }
 
 export const LANGUAGES: readonly LanguageInfo[] = LANGUAGE_IDS.map((id) => {
   const pack = languagePackSchema.parse(PACKS[id])
   if (pack.id !== id) throw new Error(`content/${id}/idioma.json dice ser «${pack.id}».`)
-  return { ...pack, voices: pack.systemVoices }
+  return pack
 })
 
 export function languageInfo(id: LanguageId): LanguageInfo {

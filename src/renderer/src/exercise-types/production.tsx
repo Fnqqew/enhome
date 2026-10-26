@@ -1,4 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import type { VoiceRole } from '@shared/voice'
+import Icon from '../components/Icon'
+import { prefetchSpeech, useSpeech } from '../hooks/useSpeech'
+import { useSettings } from '../theme/SettingsProvider'
 import { useCourse } from '../hooks/useCourse'
 import { countWords, PartResult, partClass, useParts, type ItemProps } from './common'
 
@@ -12,10 +16,29 @@ export function Dialogue({ content, answer, feedback, locked, onChange }: ItemPr
   const turns = turnOf.filter((n) => n !== null).length
   const initial = answer?.type === 'dialogue' ? answer.texts : null
   const [texts, update] = useParts(turns, initial, 'dialogue', onChange)
+  const speech = useSpeech()
+  // Lo que se escucha: las líneas del otro con la segunda voz y, ya corregido, tus turnos con la principal.
+  const lines = content.script.flatMap((line, i): { text: string; role: VoiceRole }[] => {
+    if (line.role === 'other') return [{ text: line.text, role: 'other' }]
+    const expected = feedback?.parts?.[turnOf[i]!]?.expected
+    return expected ? [{ text: expected, role: 'main' }] : []
+  })
+  const settingsLang = useSettings().settings.language
+  useEffect(() => prefetchSpeech('', settingsLang, lines), [lines.map((l) => l.text).join('|'), settingsLang]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
-      <p className="situation">{content.situation}</p>
+      <div className="row spread">
+        <p className="situation">{content.situation}</p>
+        <button
+          type="button"
+          className="chip"
+          onClick={() => (speech.state === 'playing' ? speech.stop() : speech.speakLines(lines))}
+          aria-label={speech.state === 'playing' ? 'Parar' : 'Escuchar la conversación'}
+        >
+          <Icon name={speech.state === 'playing' ? 'stop' : 'play'} className="glyph" /> {speech.state === 'playing' ? 'Parar' : 'Escuchar'}
+        </button>
+      </div>
       <div className="chat">
         {content.script.map((line, i) => {
           if (line.role === 'other') {

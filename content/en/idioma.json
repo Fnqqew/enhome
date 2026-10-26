@@ -13,5 +13,35 @@
   "systemVoices": [
     "en-us",
     "en-gb"
+  ],
+  "voices": [
+    {
+      "id": "en_US-amy-medium",
+      "engine": "piper",
+      "label": "Amy",
+      "gender": "mujer",
+      "accent": "Estados Unidos"
+    },
+    {
+      "id": "en_US-ryan-medium",
+      "engine": "piper",
+      "label": "Ryan",
+      "gender": "hombre",
+      "accent": "Estados Unidos"
+    },
+    {
+      "id": "en_GB-alba-medium",
+      "engine": "piper",
+      "label": "Alba",
+      "gender": "mujer",
+      "accent": "Reino Unido"
+    },
+    {
+      "id": "en_GB-alan-medium",
+      "engine": "piper",
+      "label": "Alan",
+      "gender": "hombre",
+      "accent": "Reino Unido"
+    }
   ]
 }

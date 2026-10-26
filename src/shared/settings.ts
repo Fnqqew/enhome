@@ -186,6 +186,12 @@ export const settingsSchema = z.object({
   voicePt: z.string().max(200).nullable(),
   voiceIt: z.string().max(200).nullable(),
   voiceFr: z.string().max(200).nullable(),
+  // Lectura en voz alta: con las voces neuronales incluidas o con las de Windows.
+  speechEngine: z.enum(['neural', 'system']),
+  // Voz neural elegida en cada idioma (y en «es» para las explicaciones); sin elegir, la primera.
+  neuralVoices: z.record(z.string(), z.string().max(80)),
+  // Modelo de reconocimiento de voz: según la compu, o fijo en base o small.
+  asrModel: z.enum(['auto', 'base', 'small']),
   reduceMotion: z.boolean(),
   // Pantalla de carga al abrir: completa (la animación entera), breve o ninguna.
   splash: z.enum(['full', 'short', 'none']),
@@ -245,6 +251,9 @@ export const DEFAULT_SETTINGS: AppSettings = {
   voicePt: null,
   voiceIt: null,
   voiceFr: null,
+  speechEngine: 'neural',
+  neuralVoices: {},
+  asrModel: 'auto',
   reduceMotion: false,
   splash: 'full',
   practiceLength: 'normal',

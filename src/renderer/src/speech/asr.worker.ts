@@ -5,7 +5,9 @@ import { env, pipeline, type AutomaticSpeechRecognitionPipeline } from '@hugging
 import wasmUrl from 'onnxruntime-web/ort-wasm-simd-threaded.asyncify.wasm?url'
 import mjsUrl from 'onnxruntime-web/ort-wasm-simd-threaded.asyncify.mjs?url'
 
-export const MODEL = 'onnx-community/whisper-base'
+// Base reconoce bien el inglés; small, bastante mejor los demás idiomas, pero pesa y tarda más.
+export const MODELS = { base: 'onnx-community/whisper-base', small: 'onnx-community/whisper-small' } as const
+export type AsrModel = keyof typeof MODELS
 
 env.allowLocalModels = false
 // Las direcciones siguen siendo las de Hugging Face (transformers.js solo verifica archivos por http),
@@ -24,7 +26,8 @@ if (env.backends.onnx.wasm) {
   env.backends.onnx.wasm.numThreads = 1
 }
 
-export type AsrRequest = { type: 'load' } | { type: 'transcribe'; id: number; audio: Float32Array; language: string }
+export type AsrRequest =
+  { type: 'load'; model: AsrModel } | { type: 'transcribe'; id: number; audio: Float32Array; language: string; model: AsrModel }
 
 export type AsrMessage =
   | { type: 'progress'; loaded: number; total: number }
@@ -33,12 +36,19 @@ export type AsrMessage =
   | { type: 'error'; id?: number; message: string }
 
 let loading: Promise<AutomaticSpeechRecognitionPipeline> | null = null
+let loadedModel: AsrModel | null = null
 const files = new Map<string, { loaded: number; total: number }>()
 
 const post = (message: AsrMessage): void => self.postMessage(message)
 
-function load(): Promise<AutomaticSpeechRecognitionPipeline> {
-  loading ??= pipeline('automatic-speech-recognition', MODEL, {
+function load(model: AsrModel): Promise<AutomaticSpeechRecognitionPipeline> {
+  // Si se cambió el modelo en Ajustes, se carga el nuevo.
+  if (loadedModel !== model) {
+    loading = null
+    files.clear()
+    loadedModel = model
+  }
+  loading ??= pipeline('automatic-speech-recognition', MODELS[model], {
     dtype: { encoder_model: 'q8', decoder_model_merged: 'q8' },
     device: 'wasm',
     // La optimización «extendida» de ONNX choca con el decodificador cuantizado de Whisper.
@@ -64,7 +74,7 @@ function load(): Promise<AutomaticSpeechRecognitionPipeline> {
 self.onmessage = async (event: MessageEvent<AsrRequest>) => {
   const request = event.data
   try {
-    const asr = await load()
+    const asr = await load(request.model)
     if (request.type === 'load') {
       post({ type: 'ready' })
       return

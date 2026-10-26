@@ -141,7 +141,7 @@ if (!app.requestSingleInstanceLock()) {
       }
       return course
     }
-    // Al salir no quedan sesiones de Claude abiertas.
+    // Al salir no quedan sesiones de Claude ni el proceso de voz abiertos.
     app.on('will-quit', shutdownClaude)
     app.on('will-quit', () =>
       courseDbs.forEach((course) => {
@@ -156,7 +156,7 @@ if (!app.requestSingleInstanceLock()) {
 
     // En desarrollo el temario se lee del repo; instalada, de los recursos de la app.
     const contentDir = is.dev ? join(app.getAppPath(), 'content') : join(process.resourcesPath, 'content')
-    const { today, warmUp, dayStatus } = registerIpc({
+    const { today, warmUp, dayStatus, stopVoice } = registerIpc({
       db,
       courseDb,
       courseExists: (language) => language === 'en' || existsSync(coursePath(language)),
@@ -170,6 +170,7 @@ if (!app.requestSingleInstanceLock()) {
         applySystem(settings)
       }
     })
+    app.on('will-quit', stopVoice)
 
     ipcMain.on(IPC.windowMinimize, () => currentWindow()?.minimize())
     ipcMain.on(IPC.windowMaximizeToggle, () => {

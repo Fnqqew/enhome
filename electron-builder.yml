@@ -18,6 +18,9 @@ extraResources:
   - from: build/icons
     to: icons
 asar: true
+# El motor de voz es un módulo nativo con sus DLL: va afuera del asar.
+asarUnpack:
+  - '**/node_modules/sherpa-onnx-*/**'
 npmRebuild: false
 # Ícono generado con npm run icon (build/icon.ico).
 win:

@@ -20,6 +20,7 @@ import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 import type { Highlight, JournalView, ReadingSummary, ReadingView } from './reading'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 import type { UpdateInfo } from './updates'
+import type { VoiceRole, VoiceStatus } from './voice'
 
 export const IPC = {
   appInfo: 'app:info',
@@ -63,6 +64,12 @@ export const IPC = {
   practiceAnswer: 'practice:answer',
   practiceSkip: 'practice:skip',
   practiceRegrade: 'practice:regrade',
+  voiceList: 'voice:list',
+  voiceInstall: 'voice:install',
+  voiceRemove: 'voice:remove',
+  voiceSpeak: 'voice:speak',
+  voicePrefetch: 'voice:prefetch',
+  voiceChanged: 'voice:changed',
   practiceGraded: 'practice:graded',
   practiceRate: 'practice:rate',
   practiceFinish: 'practice:finish',
@@ -218,6 +225,14 @@ export interface Api {
   startPractice(): Promise<PracticeView>
   answerExercise(exerciseId: number, answer: ExerciseAnswer): Promise<PracticeView>
   skipExercise(exerciseId: number): Promise<PracticeView>
+  // Voces neuronales del idioma del curso (y la del español): cuáles hay, bajarlas y hablar.
+  listVoices(): Promise<VoiceStatus[]>
+  installVoice(voiceId: string): Promise<void>
+  removeVoice(voiceId: string): Promise<void>
+  // El audio (WAV) de un texto; null si no hay voz neural bajada para ese idioma (se usa la de Windows).
+  speakNeural(text: string, lang: string, speed: number, role: VoiceRole): Promise<Uint8Array | null>
+  prefetchVoice(texts: string[], lang: string, role: VoiceRole): Promise<void>
+  onVoiceChanged(callback: () => void): () => void
   // Vuelve a pedir la corrección de Claude que falló.
   regradeExercise(exerciseId: number): Promise<PracticeView>
   // Avisa cuando llega una corrección de Claude (para actualizar la práctica).

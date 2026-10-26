@@ -9,6 +9,7 @@ import { registerCourse } from './course'
 import { registerExams } from './exams'
 import { registerPractice } from './practice'
 import { registerReading } from './reading'
+import { registerVoice } from './voice'
 
 export type { IpcOptions } from './context'
 
@@ -16,6 +17,7 @@ export function registerIpc(options: IpcOptions): {
   today: () => string
   warmUp: () => void
   dayStatus: () => DayStatus | null
+  stopVoice: () => void
 } {
   const ctx = createContext(options)
   ctx.applyClaudePrefs(loadSettings(ctx.db))
@@ -25,6 +27,13 @@ export function registerIpc(options: IpcOptions): {
   registerPractice(ctx)
   registerReading(ctx)
   registerExams(ctx)
+  const voice = registerVoice(ctx)
+  // La voz del curso abierto se baja sola la primera vez (y al cambiar de idioma).
+  const warmUp = ctx.warmUp
+  ctx.warmUp = (): void => {
+    warmUp()
+    voice.ensure(ctx.activeLanguage())
+  }
 
   // Para el recordatorio: si falta la práctica de hoy y cómo va la meta del curso abierto.
   const dayStatus = (): DayStatus | null => {
@@ -37,5 +46,5 @@ export function registerIpc(options: IpcOptions): {
     }
   }
 
-  return { today: ctx.today, warmUp: ctx.warmUp, dayStatus }
+  return { today: ctx.today, warmUp: () => ctx.warmUp(), dayStatus, stopVoice: voice.stop }
 }

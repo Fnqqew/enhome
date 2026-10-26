@@ -152,7 +152,7 @@ export function splitForSpeech(text: string, target: LanguageId = 'en'): SpeechS
 
 const SPANISH_VOICES = ['es-ar', 'es-419', 'es-us', 'es-mx', 'es-es']
 
-const preferredVoices = (lang: SpeechLang): readonly string[] => (lang === 'es' ? SPANISH_VOICES : languageInfo(lang).voices)
+const preferredVoices = (lang: SpeechLang): readonly string[] => (lang === 'es' ? SPANISH_VOICES : languageInfo(lang).systemVoices)
 
 const langOf = (voice: { lang: string }): string => voice.lang.toLowerCase().replace('_', '-')
 

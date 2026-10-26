@@ -6,7 +6,9 @@ const shared = { '@shared': resolve('src/shared') }
 
 export default defineConfig({
   main: {
-    resolve: { alias: shared }
+    resolve: { alias: shared },
+    // El proceso de voz es un archivo aparte (lo lanza utilityProcess).
+    build: { rollupOptions: { input: { index: resolve('src/main/index.ts'), voiceWorker: resolve('src/main/voice/worker.ts') } } }
   },
   preload: {
     resolve: { alias: shared }

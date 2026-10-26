@@ -85,3 +85,62 @@
   background: var(--danger);
   color: #ffffff;
 }
+
+/* Voces incluidas: una fila por voz con su estado y la barra de descarga. */
+.voice-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.voice-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.voice-item.in-use {
+  border-color: var(--accent);
+}
+
+.voice-progress {
+  width: min(16rem, 100%);
+  height: 0.4rem;
+  border-radius: 99px;
+  background: var(--surface-hover);
+  overflow: hidden;
+}
+
+.voice-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.small-title {
+  font-size: var(--text-sm);
+}
+
+/* Descarga de una voz, al pie de la barra lateral. */
+.voice-download {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+
+.voice-download .voice-progress {
+  display: block;
+  width: 100%;
+}

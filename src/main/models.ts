@@ -13,7 +13,7 @@ import { pathToFileURL } from 'node:url'
 export const MODEL_SCHEME = 'enhome-model'
 
 // Solo se sirven los modelos que usa la app.
-const ALLOWED_MODELS = ['onnx-community/whisper-base/']
+const ALLOWED_MODELS = ['onnx-community/whisper-base/', 'onnx-community/whisper-small/']
 
 const modelsDir = (): string => join(app.getPath('userData'), 'models')
 

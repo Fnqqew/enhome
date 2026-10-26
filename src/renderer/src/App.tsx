@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import type { ClaudeStatus } from '@shared/ipc'
 import { SECTION_GROUPS, SECTIONS, type Navigate, type NavParams, type SectionId } from './navigation'
 import Icon from './components/Icon'
+import VoiceDownload from './components/VoiceDownload'
 import Logo from './components/Logo'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import Splash from './components/Splash'
@@ -249,6 +250,7 @@ function Shell({ status }: { status: ReadyStatus }): React.JSX.Element {
               ))}
             </div>
           ))}
+          <VoiceDownload />
           <div className="sidebar-foot">
             <span className={`status-dot${examLocked ? ' busy' : ''}`} aria-hidden="true" />
             <span className="nav-label">{examLocked ? 'Examen en curso' : 'Claude conectado'}</span>

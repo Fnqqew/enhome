@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { LanguageId } from '@shared/languages'
-import type { AsrMessage, AsrRequest } from './asr.worker'
+import type { AsrMessage, AsrModel, AsrRequest } from './asr.worker'
+import { useSettings } from '../theme/SettingsProvider'
 
 // Nombre del idioma para Whisper.
 const WHISPER_LANGUAGE: Record<LanguageId, string> = { en: 'english', pt: 'portuguese', it: 'italian', fr: 'french' }
@@ -16,8 +17,16 @@ function worker(): Worker {
   return shared
 }
 
+// El modelo según la compu: small con 8 núcleos o más y 8 GB de memoria; si no, base.
+export function autoModel(): AsrModel {
+  const memory = (navigator as Navigator & { deviceMemory?: number }).deviceMemory ?? 8
+  return navigator.hardwareConcurrency >= 8 && memory >= 8 ? 'small' : 'base'
+}
+
 // Graba del micrófono y lo transcribe con Whisper, todo en la computadora.
 export function useTranscriber(language: LanguageId) {
+  const { settings } = useSettings()
+  const model: AsrModel = settings.asrModel === 'auto' ? autoModel() : settings.asrModel
   const [state, setState] = useState<TranscriberState>('idle')
   const [progress, setProgress] = useState<{ loaded: number; total: number } | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -48,8 +57,8 @@ export function useTranscriber(language: LanguageId) {
   const load = useCallback(() => {
     setError(null)
     setState('loading')
-    worker().postMessage({ type: 'load' } satisfies AsrRequest)
-  }, [])
+    worker().postMessage({ type: 'load', model } satisfies AsrRequest)
+  }, [model])
 
   // Graba hasta que se llama a stop (o hasta 8 segundos) y devuelve lo que entendió.
   const record = useCallback(async (): Promise<string> => {
@@ -84,9 +93,9 @@ export function useTranscriber(language: LanguageId) {
     const id = nextId.current++
     return new Promise<string>((resolve) => {
       pending.current.set(id, resolve)
-      worker().postMessage({ type: 'transcribe', id, audio, language: WHISPER_LANGUAGE[language] } satisfies AsrRequest, [audio.buffer])
+      worker().postMessage({ type: 'transcribe', id, audio, language: WHISPER_LANGUAGE[language], model } satisfies AsrRequest, [audio.buffer])
     })
-  }, [language])
+  }, [language, model])
 
   const stop = useCallback(() => {
     if (recorder.current?.state === 'recording') recorder.current.stop()

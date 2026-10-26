@@ -53,6 +53,16 @@ const api: Api = {
   answerExercise: (exerciseId, answer) => invoke(IPC.practiceAnswer, exerciseId, answer),
   skipExercise: (exerciseId) => invoke(IPC.practiceSkip, exerciseId),
   regradeExercise: (exerciseId) => invoke(IPC.practiceRegrade, exerciseId),
+  listVoices: () => invoke(IPC.voiceList),
+  installVoice: (voiceId) => invoke(IPC.voiceInstall, voiceId),
+  removeVoice: (voiceId) => invoke(IPC.voiceRemove, voiceId),
+  speakNeural: (text, lang, speed, role) => invoke(IPC.voiceSpeak, text, lang, speed, role),
+  prefetchVoice: (texts, lang, role) => invoke(IPC.voicePrefetch, texts, lang, role),
+  onVoiceChanged: (callback) => {
+    const listener = (): void => callback()
+    ipcRenderer.on(IPC.voiceChanged, listener)
+    return () => ipcRenderer.removeListener(IPC.voiceChanged, listener)
+  },
   onPracticeGraded: (callback) => {
     const listener = (): void => callback()
     ipcRenderer.on(IPC.practiceGraded, listener)

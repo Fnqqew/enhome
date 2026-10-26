@@ -1,6 +1,8 @@
 // La presentación del día antes de practicar: qué se trabaja, los puntos clave y los ejemplos.
 
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
+import { prefetchSpeech } from '../../hooks/useSpeech'
+import { useSettings } from '../../theme/SettingsProvider'
 import { type PracticeView } from '@shared/exercises'
 import ClaudeWait from '../ClaudeWait'
 import SelectionAsk from '../summaries/SelectionAsk'
@@ -26,6 +28,9 @@ export default function Intro({
     'Ejemplos:',
     ...view.examples.map((e) => `*${e.target}* — ${e.es}`)
   ].join('\n')
+  // Mientras lee la presentación, se prepara el audio de los ejemplos.
+  const { settings } = useSettings()
+  useEffect(() => prefetchSpeech(speechText, settings.language), [speechText, settings.language])
 
   return (
     <section className="card stack">

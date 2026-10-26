@@ -44,13 +44,13 @@ Mediciones e investigación de respaldo:
 
 ## Voz
 
-- [ ] 13 Voz incluida que se baja sola
-- [ ] 14 Voz para japonés y coreano
-- [ ] 15 Elegir voz y velocidad en cada idioma
-- [ ] 16 Explicaciones en voz rioplatense
-- [ ] 17 Audio en todo el contenido
-- [ ] 18 Diálogos a dos voces
-- [ ] 19 Reconocimiento de voz que se baja solo
+- [x] 13 Voz incluida que se baja sola
+- [~] 14 Voz para japonés y coreano
+- [x] 15 Elegir voz y velocidad en cada idioma
+- [x] 16 Explicaciones en voz rioplatense
+- [x] 17 Audio en todo el contenido
+- [x] 18 Diálogos a dos voces
+- [x] 19 Reconocimiento de voz que se baja solo
 
 ## Actividades y ejercicios
 
@@ -90,7 +90,7 @@ Mediciones e investigación de respaldo:
 - [x] 47 Cada tipo de ejercicio, un módulo
 - [x] 48 Cada idioma, un paquete
 - [x] 49 Un motor de Claude
-- [ ] 50 Un motor de voz aparte
+- [x] 50 Un motor de voz aparte
 - [x] 51 El proceso principal ordenado por áreas
 - [x] 52 Pantallas grandes divididas
 - [x] 53 Un solo repaso
