@@ -11,7 +11,10 @@
     "Dar instrucciones con el imperativo de você",
     "Escribir consejos para alguien que viaja"
   ],
-  "prerequisites": ["pt-a1-ir-gerundio", "pt-a2-pronomes"],
+  "prerequisites": [
+    "pt-a1-ir-gerundio",
+    "pt-a2-pronomes"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +22,72 @@
       "day": 1,
       "title": "Futuro do presente",
       "goal": "Formar el futuro simple y saber cuándo se usa.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Infinitivo + -ei, -á, -emos, -ão: falarei, falará, falaremos, falarão.",
         "En la charla de Brasil se prefiere ir + infinitivo; el futuro simple aparece en textos, noticias y promesas formales.",
         "Ojo: falará (futuro) lleva tilde en la última sílaba."
       ],
       "examples": [
-        { "target": "O voo chegará às 18h.", "es": "El vuelo llegará a las 18." },
-        { "target": "Amanhã choverá no Sul.", "es": "Mañana lloverá en el Sur." },
-        { "target": "Nós te ajudaremos.", "es": "Te ayudaremos." }
+        {
+          "target": "O voo chegará às 18h.",
+          "es": "El vuelo llegará a las 18."
+        },
+        {
+          "target": "Amanhã choverá no Sul.",
+          "es": "Mañana lloverá en el Sur."
+        },
+        {
+          "target": "Nós te ajudaremos.",
+          "es": "Te ayudaremos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ele falara amanhã.", "right": "Ele falará amanhã.", "why": "El futuro lleva tilde: falará. Sin tilde es otro tiempo verbal." }
+        {
+          "wrong": "Ele falara amanhã.",
+          "right": "Ele falará amanhã.",
+          "why": "El futuro lleva tilde: falará. Sin tilde es otro tiempo verbal."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "será que",
+          "es": "será que",
+          "example": "Será que vai chover hoje?",
+          "exampleEs": "¿Será que va a llover hoy?"
+        },
+        {
+          "target": "o tempo dirá",
+          "es": "el tiempo dirá",
+          "example": "Não sei se vai dar certo, o tempo dirá.",
+          "exampleEs": "No sé si va a salir bien, el tiempo dirá."
+        },
+        {
+          "target": "amanhã será outro dia",
+          "es": "mañana será otro día",
+          "example": "Não fica triste, amanhã será outro dia.",
+          "exampleEs": "No te pongas triste, mañana será otro día."
+        },
+        {
+          "target": "tudo dará certo",
+          "es": "todo va a salir bien",
+          "example": "Fica tranquilo, tudo dará certo.",
+          "exampleEs": "Quedate tranquilo, todo va a salir bien."
+        },
+        {
+          "target": "não será fácil",
+          "es": "no va a ser fácil",
+          "example": "Não será fácil, mas vamos conseguir.",
+          "exampleEs": "No va a ser fácil, pero lo vamos a lograr."
+        },
+        {
+          "target": "isso ficará entre nós",
+          "es": "eso va a quedar entre nosotros",
+          "example": "Pode confiar, isso ficará entre nós.",
+          "exampleEs": "Podés confiar, eso va a quedar entre nosotros."
+        }
       ]
     },
     {
@@ -39,19 +95,66 @@
       "day": 2,
       "title": "Futuro irregular",
       "goal": "Usar los tres irregulares del futuro.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "fazer → farei, dizer → direi, trazer → trarei: pierden el -ze-.",
         "El resto de los verbos es regular, incluso ser (serei) e ir (irei).",
         "Las mismas raíces se usan en el condicional: faria, diria, traria."
       ],
       "examples": [
-        { "target": "Farei o possível.", "es": "Haré lo posible." },
-        { "target": "Direi a verdade.", "es": "Diré la verdad." },
-        { "target": "Quem trará as bebidas?", "es": "¿Quién traerá las bebidas?" }
+        {
+          "target": "Farei o possível.",
+          "es": "Haré lo posible."
+        },
+        {
+          "target": "Direi a verdade.",
+          "es": "Diré la verdad."
+        },
+        {
+          "target": "Quem trará as bebidas?",
+          "es": "¿Quién traerá las bebidas?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu fazerei.", "right": "Eu farei.", "why": "Fazer es irregular en futuro: farei." }
+        {
+          "wrong": "Eu fazerei.",
+          "right": "Eu farei.",
+          "why": "Fazer es irregular en futuro: farei."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "farei o possível",
+          "es": "voy a hacer lo posible",
+          "example": "Farei o possível para chegar a tempo.",
+          "exampleEs": "Voy a hacer lo posible para llegar a tiempo."
+        },
+        {
+          "target": "direi a verdade",
+          "es": "voy a decir la verdad",
+          "example": "Prometo que direi a verdade.",
+          "exampleEs": "Prometo que voy a decir la verdad."
+        },
+        {
+          "target": "trarei um presente",
+          "es": "voy a traer un regalo",
+          "example": "Quando eu voltar, trarei um presente para você.",
+          "exampleEs": "Cuando vuelva, te voy a traer un regalo."
+        },
+        {
+          "target": "farei de tudo",
+          "es": "voy a hacer lo que sea",
+          "example": "Farei de tudo para resolver isso.",
+          "exampleEs": "Voy a hacer lo que sea para resolver esto."
+        },
+        {
+          "target": "não direi nada",
+          "es": "no voy a decir nada",
+          "example": "Fica tranquilo, não direi nada a ninguém.",
+          "exampleEs": "Quedate tranquilo, no le voy a decir nada a nadie."
+        }
       ]
     },
     {
@@ -59,19 +162,73 @@
       "day": 3,
       "title": "Condicional",
       "goal": "Pedir con cortesía e imaginar situaciones.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Infinitivo + -ia, -ia, -íamos, -iam: falaria, falaríamos, falariam.",
         "Para pedir con cortesía: Eu gostaria de... Você poderia...?",
         "En la charla muchas veces se reemplaza por el imperfeito: Eu queria um café."
       ],
       "examples": [
-        { "target": "Eu gostaria de reservar uma mesa.", "es": "Quisiera reservar una mesa." },
-        { "target": "Você poderia falar mais devagar?", "es": "¿Podrías hablar más despacio?" },
-        { "target": "Com mais tempo, eu viajaria mais.", "es": "Con más tiempo, viajaría más." }
+        {
+          "target": "Eu gostaria de reservar uma mesa.",
+          "es": "Quisiera reservar una mesa."
+        },
+        {
+          "target": "Você poderia falar mais devagar?",
+          "es": "¿Podrías hablar más despacio?"
+        },
+        {
+          "target": "Com mais tempo, eu viajaria mais.",
+          "es": "Con más tiempo, viajaría más."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu gustaria de...", "right": "Eu gostaria de...", "why": "El verbo es gostar: gostaria, con o." }
+        {
+          "wrong": "Eu gustaria de...",
+          "right": "Eu gostaria de...",
+          "why": "El verbo es gostar: gostaria, con o."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "eu gostaria de",
+          "es": "me gustaría",
+          "example": "Eu gostaria de fazer uma pergunta.",
+          "exampleEs": "Me gustaría hacer una pregunta."
+        },
+        {
+          "target": "você poderia",
+          "es": "¿podrías?",
+          "example": "Você poderia me ajudar com isso?",
+          "exampleEs": "¿Podrías ayudarme con esto?"
+        },
+        {
+          "target": "seria ótimo",
+          "es": "sería genial",
+          "example": "Seria ótimo viajar no fim de semana.",
+          "exampleEs": "Sería genial viajar el fin de semana."
+        },
+        {
+          "target": "eu adoraria",
+          "es": "me encantaría",
+          "example": "Eu adoraria conhecer esse lugar.",
+          "exampleEs": "Me encantaría conocer ese lugar."
+        },
+        {
+          "target": "daria para",
+          "es": "¿se podría?",
+          "example": "Daria para remarcar a reunião?",
+          "exampleEs": "¿Se podría reprogramar la reunión?"
+        },
+        {
+          "target": "seria melhor",
+          "es": "sería mejor",
+          "example": "Seria melhor sair mais cedo.",
+          "exampleEs": "Sería mejor salir más temprano."
+        }
       ]
     },
     {
@@ -79,19 +236,72 @@
       "day": 4,
       "title": "Imperativo con você",
       "goal": "Dar instrucciones, consejos y prohibiciones.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Verbos en -ar cambian a -e: falar → fale. En -er/-ir cambian a -a: comer → coma, abrir → abra.",
         "Para vocês: falem, comam. La negación usa la misma forma: Não fale.",
         "En la charla de Brasil es muy común el imperativo con la forma de ele: Fala!, Vem cá!, Olha!"
       ],
       "examples": [
-        { "target": "Vire à direita na segunda rua.", "es": "Doblá a la derecha en la segunda calle." },
-        { "target": "Não esqueça o passaporte.", "es": "No te olvides el pasaporte." },
-        { "target": "Vem cá, olha isso!", "es": "Vení, ¡mirá esto!" }
+        {
+          "target": "Vire à direita na segunda rua.",
+          "es": "Doblá a la derecha en la segunda calle."
+        },
+        {
+          "target": "Não esqueça o passaporte.",
+          "es": "No te olvides el pasaporte."
+        },
+        {
+          "target": "Vem cá, olha isso!",
+          "es": "Vení, ¡mirá esto!"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Não fala alto (en un cartel).", "right": "Não fale alto.", "why": "En lo escrito y formal, la negación usa la forma del subjuntivo: fale." }
+        {
+          "wrong": "Não fala alto (en un cartel).",
+          "right": "Não fale alto.",
+          "why": "En lo escrito y formal, la negación usa la forma del subjuntivo: fale."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "escute bem",
+          "es": "escuchá bien",
+          "example": "Escute bem o que vou te dizer.",
+          "exampleEs": "Escuchá bien lo que te voy a decir."
+        },
+        {
+          "target": "não se esqueça",
+          "es": "no te olvides",
+          "example": "Não se esqueça de trancar a porta.",
+          "exampleEs": "No te olvides de cerrar la puerta con llave."
+        },
+        {
+          "target": "fique tranquilo",
+          "es": "quedate tranquilo",
+          "example": "Fique tranquilo, tudo vai se resolver.",
+          "exampleEs": "Quedate tranquilo, todo se va a resolver."
+        },
+        {
+          "target": "preste atenção",
+          "es": "prestá atención",
+          "example": "Preste atenção nas instruções.",
+          "exampleEs": "Prestá atención a las instrucciones."
+        },
+        {
+          "target": "cuide-se",
+          "es": "cuidate",
+          "example": "Cuide-se e boa viagem!",
+          "exampleEs": "¡Cuidate y buen viaje!"
+        },
+        {
+          "target": "não desista",
+          "es": "no te rindas",
+          "example": "Não desista, você está quase lá.",
+          "exampleEs": "No te rindas, ya casi llegaste."
+        }
       ]
     },
     {
@@ -99,19 +309,73 @@
       "day": 5,
       "title": "Consejos e instrucciones",
       "goal": "Comprender y escribir consejos para un viaje.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Combiná imperativo, condicional y futuro: Leve protetor solar. Eu iria em março. Você vai adorar.",
         "Para aconsejar: É melhor..., Vale a pena..., Eu no seu lugar...",
         "Conectores: antes de, depois de, além disso."
       ],
       "examples": [
-        { "target": "Leve roupa leve e protetor solar.", "es": "Llevá ropa liviana y protector solar." },
-        { "target": "Eu no seu lugar ficaria em Copacabana.", "es": "Yo en tu lugar me quedaría en Copacabana." },
-        { "target": "Vale a pena conhecer o Pão de Açúcar.", "es": "Vale la pena conocer el Pan de Azúcar." }
+        {
+          "target": "Leve roupa leve e protetor solar.",
+          "es": "Llevá ropa liviana y protector solar."
+        },
+        {
+          "target": "Eu no seu lugar ficaria em Copacabana.",
+          "es": "Yo en tu lugar me quedaría en Copacabana."
+        },
+        {
+          "target": "Vale a pena conhecer o Pão de Açúcar.",
+          "es": "Vale la pena conocer el Pan de Azúcar."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Vale a pena de conhecer.", "right": "Vale a pena conhecer.", "why": "Después de vale a pena el verbo va directo, sin de." }
+        {
+          "wrong": "Vale a pena de conhecer.",
+          "right": "Vale a pena conhecer.",
+          "why": "Después de vale a pena el verbo va directo, sin de."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "leve um casaco",
+          "es": "llevá un abrigo",
+          "example": "Leve um casaco porque vai fazer frio.",
+          "exampleEs": "Llevá un abrigo porque va a hacer frío."
+        },
+        {
+          "target": "evite horário de pico",
+          "es": "evitá la hora pico",
+          "example": "Evite horário de pico para não pegar trânsito.",
+          "exampleEs": "Evitá la hora pico para no quedar en el tránsito."
+        },
+        {
+          "target": "reserve com antecedência",
+          "es": "reservá con anticipación",
+          "example": "Reserve com antecedência o hotel.",
+          "exampleEs": "Reservá el hotel con anticipación."
+        },
+        {
+          "target": "fique de olho",
+          "es": "fijate bien",
+          "example": "Fique de olho nas suas coisas no ônibus.",
+          "exampleEs": "Fijate bien con tus cosas en el colectivo."
+        },
+        {
+          "target": "aproveite a viagem",
+          "es": "disfrutá el viaje",
+          "example": "Aproveite a viagem e tire muitas fotos.",
+          "exampleEs": "Disfrutá el viaje y sacá muchas fotos."
+        },
+        {
+          "target": "não esqueça o passaporte",
+          "es": "no te olvides el pasaporte",
+          "example": "Não esqueça o passaporte antes de sair.",
+          "exampleEs": "No te olvides el pasaporte antes de salir."
+        }
       ]
     }
   ]

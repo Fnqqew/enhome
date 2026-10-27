@@ -12,7 +12,9 @@
     "Expresar duda y emoción, y usar talvez",
     "Escribir un mensaje de buenos deseos"
   ],
-  "prerequisites": ["pt-a2-futuro-condicional"],
+  "prerequisites": [
+    "pt-a2-futuro-condicional"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +22,9 @@
       "day": 1,
       "title": "Formación regular",
       "goal": "Formar el presente do subjuntivo a partir de la forma de eu del presente.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Se parte de la forma de eu del presente, se saca la -o y se cambia la vocal: falo → fale, como → coma, abro → abra.",
         "Terminaciones: -ar → -e, -e, -emos, -em; -er e -ir → -a, -a, -amos, -am.",
@@ -28,13 +32,62 @@
         "Ortografía: chegar → chegue, ficar → fique, começar → comece, pegar → pegue."
       ],
       "examples": [
-        { "target": "Espero que você fale com ela hoje.", "es": "Espero que hables con ella hoy." },
-        { "target": "É importante que vocês cheguem cedo.", "es": "Es importante que lleguen temprano." },
-        { "target": "Quero que você faça uma lista.", "es": "Quiero que hagas una lista." }
+        {
+          "target": "Espero que você fale com ela hoje.",
+          "es": "Espero que hables con ella hoy."
+        },
+        {
+          "target": "É importante que vocês cheguem cedo.",
+          "es": "Es importante que lleguen temprano."
+        },
+        {
+          "target": "Quero que você faça uma lista.",
+          "es": "Quiero que hagas una lista."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Espero que você tenga sorte.", "right": "Espero que você tenha sorte.", "why": "El subjuntivo sale de la forma de eu: tenho → tenha. 'Tenga' es español." },
-        { "wrong": "É importante que ele chege na hora.", "right": "É importante que ele chegue na hora.", "why": "Para mantener el sonido de la g, chegar se escribe chegue." }
+        {
+          "wrong": "Espero que você tenga sorte.",
+          "right": "Espero que você tenha sorte.",
+          "why": "El subjuntivo sale de la forma de eu: tenho → tenha. 'Tenga' es español."
+        },
+        {
+          "wrong": "É importante que ele chege na hora.",
+          "right": "É importante que ele chegue na hora.",
+          "why": "Para mantener el sonido de la g, chegar se escribe chegue."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Espero que corra tudo bem",
+          "es": "Espero que todo salga bien",
+          "example": "Antes da viagem, espero que corra tudo bem.",
+          "exampleEs": "Antes del viaje, espero que todo salga bien."
+        },
+        {
+          "target": "Que descanse bem",
+          "es": "Que descanses bien",
+          "example": "Boa noite, que descanse bem.",
+          "exampleEs": "Buenas noches, que descanses bien."
+        },
+        {
+          "target": "Talvez eu chegue atrasado",
+          "es": "Tal vez llegue tarde",
+          "example": "Com esse trânsito, talvez eu chegue atrasado.",
+          "exampleEs": "Con este tránsito, tal vez llegue tarde."
+        },
+        {
+          "target": "Caso precise de algo",
+          "es": "En caso de que necesites algo",
+          "example": "Me liga, caso precise de algo.",
+          "exampleEs": "Llamame, en caso de que necesites algo."
+        },
+        {
+          "target": "Para que não falte nada",
+          "es": "Para que no falte nada",
+          "example": "Vou comprar tudo para que não falte nada.",
+          "exampleEs": "Voy a comprar todo para que no falte nada."
+        }
       ]
     },
     {
@@ -42,7 +95,9 @@
       "day": 2,
       "title": "Irregulares",
       "goal": "Usar los siete verbos que no siguen la regla.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "ser: seja, seja, sejamos, sejam. estar: esteja, esteja, estejamos, estejam.",
         "ir: vá, vá, vamos, vão. dar: dê, dê, demos, deem.",
@@ -50,13 +105,68 @@
         "En el habla popular se oye 'seje' y 'esteje', pero la forma correcta es seja y esteja."
       ],
       "examples": [
-        { "target": "Tomara que seja verdade.", "es": "Ojalá sea verdad." },
-        { "target": "Espero que vocês estejam bem.", "es": "Espero que estén bien." },
-        { "target": "Não quero que você vá sozinho.", "es": "No quiero que vayas solo." }
+        {
+          "target": "Tomara que seja verdade.",
+          "es": "Ojalá sea verdad."
+        },
+        {
+          "target": "Espero que vocês estejam bem.",
+          "es": "Espero que estén bien."
+        },
+        {
+          "target": "Não quero que você vá sozinho.",
+          "es": "No quiero que vayas solo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quero que você sepa a verdade.", "right": "Quero que você saiba a verdade.", "why": "El subjuntivo de saber es saiba; 'sepa' viene del español." },
-        { "wrong": "Espero que tudo esteje bem.", "right": "Espero que tudo esteja bem.", "why": "'Esteje' y 'seje' son formas populares; la norma es esteja y seja." }
+        {
+          "wrong": "Quero que você sepa a verdade.",
+          "right": "Quero que você saiba a verdade.",
+          "why": "El subjuntivo de saber es saiba; 'sepa' viene del español."
+        },
+        {
+          "wrong": "Espero que tudo esteje bem.",
+          "right": "Espero que tudo esteja bem.",
+          "why": "'Esteje' y 'seje' son formas populares; la norma es esteja y seja."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Seja bem-vindo",
+          "es": "Sos bienvenido",
+          "example": "Entre, seja bem-vindo à nossa casa.",
+          "exampleEs": "Entrá, sos bienvenido a nuestra casa."
+        },
+        {
+          "target": "Que Deus te proteja",
+          "es": "Que Dios te proteja",
+          "example": "Boa viagem, que Deus te proteja.",
+          "exampleEs": "Buen viaje, que Dios te proteja."
+        },
+        {
+          "target": "Espero que esteja tudo bem",
+          "es": "Espero que todo esté bien",
+          "example": "Há tempos não falamos, espero que esteja tudo bem.",
+          "exampleEs": "Hace rato que no hablamos, espero que todo esté bien."
+        },
+        {
+          "target": "Talvez não haja solução",
+          "es": "Tal vez no haya solución",
+          "example": "Pelo jeito, talvez não haja solução para isso.",
+          "exampleEs": "Por lo visto, tal vez no haya solución para esto."
+        },
+        {
+          "target": "Quem sabe dê certo",
+          "es": "Quien sabe, salga bien",
+          "example": "Vamos tentar, quem sabe dê certo.",
+          "exampleEs": "Vamos a intentarlo, quien sabe, salga bien."
+        },
+        {
+          "target": "Que você saiba disso",
+          "es": "Que sepas esto",
+          "example": "Eu menti, só para que você saiba disso.",
+          "exampleEs": "Yo menti, solo para que sepas esto."
+        }
       ]
     },
     {
@@ -64,7 +174,10 @@
       "day": 3,
       "title": "Deseos y recomendaciones",
       "goal": "Pedir, desear y aconsejar con verbo + que + subjuntivo.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Verbos de deseo y pedido: querer que, esperar que, pedir que, preferir que, sugerir que, recomendar que.",
         "Expresiones impersonales: é importante que, é melhor que, é preciso que, é bom que, é necessário que.",
@@ -73,13 +186,62 @@
         "En la charla de Brasil, pedir va mucho con para + infinitivo: Ela pede para a gente chegar cedo."
       ],
       "examples": [
-        { "target": "O médico recomenda que eu durma mais.", "es": "El médico me recomienda que duerma más." },
-        { "target": "Tomara que o voo não atrase.", "es": "Ojalá el vuelo no se atrase." },
-        { "target": "É melhor que você leve um casaco.", "es": "Es mejor que lleves un abrigo." }
+        {
+          "target": "O médico recomenda que eu durma mais.",
+          "es": "El médico me recomienda que duerma más."
+        },
+        {
+          "target": "Tomara que o voo não atrase.",
+          "es": "Ojalá el vuelo no se atrase."
+        },
+        {
+          "target": "É melhor que você leve um casaco.",
+          "es": "Es mejor que lleves un abrigo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ojalá que dê certo.", "right": "Tomara que dê certo.", "why": "En Brasil se dice tomara que; oxalá existe, pero suena antiguo o de Portugal." },
-        { "wrong": "Espero que você gosta do presente.", "right": "Espero que você goste do presente.", "why": "Después de espero que va subjuntivo, igual que en 'espero que te guste'." }
+        {
+          "wrong": "Ojalá que dê certo.",
+          "right": "Tomara que dê certo.",
+          "why": "En Brasil se dice tomara que; oxalá existe, pero suena antiguo o de Portugal."
+        },
+        {
+          "wrong": "Espero que você gosta do presente.",
+          "right": "Espero que você goste do presente.",
+          "why": "Después de espero que va subjuntivo, igual que en 'espero que te guste'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Espero que você goste",
+          "es": "Espero que te guste",
+          "example": "Fiz esse bolo, espero que você goste.",
+          "exampleEs": "Hice esta torta, espero que te guste."
+        },
+        {
+          "target": "Quero que você saiba",
+          "es": "Quiero que sepas",
+          "example": "Quero que você saiba que pode contar comigo.",
+          "exampleEs": "Quiero que sepas que podés contar conmigo."
+        },
+        {
+          "target": "Sugiro que você descanse",
+          "es": "Te sugiero que descanses",
+          "example": "Você trabalhou demais, sugiro que você descanse hoje.",
+          "exampleEs": "Trabajaste demasiado, te sugiero que descanses hoy."
+        },
+        {
+          "target": "É melhor que você vá",
+          "es": "Es mejor que te vayas",
+          "example": "Está tarde, é melhor que você vá embora.",
+          "exampleEs": "Es tarde, es mejor que te vayas."
+        },
+        {
+          "target": "Recomendo que tenha cuidado",
+          "es": "Te recomiendo que tengas cuidado",
+          "example": "A rua está escura, recomendo que tenha cuidado.",
+          "exampleEs": "La calle está oscura, te recomiendo que tengas cuidado."
+        }
       ]
     },
     {
@@ -87,7 +249,9 @@
       "day": 4,
       "title": "Duda, emoción y talvez",
       "goal": "Expresar duda, emoción y posibilidad con subjuntivo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Duda y opinión negada: duvido que, não acho que, não acredito que, é possível que, pode ser que.",
         "Con acho que y acredito que afirmativos va indicativo, como en español: Acho que ele vem. Não acho que ele venha.",
@@ -95,13 +259,62 @@
         "Talvez antes del verbo pide subjuntivo: Talvez ele venha. Si va después, indicativo: Ele vem, talvez."
       ],
       "examples": [
-        { "target": "Talvez a gente viaje em julho.", "es": "Tal vez viajemos en julio." },
-        { "target": "Duvido que ele saiba a resposta.", "es": "Dudo que sepa la respuesta." },
-        { "target": "Fico feliz que você esteja melhor.", "es": "Me alegra que estés mejor." }
+        {
+          "target": "Talvez a gente viaje em julho.",
+          "es": "Tal vez viajemos en julio."
+        },
+        {
+          "target": "Duvido que ele saiba a resposta.",
+          "es": "Dudo que sepa la respuesta."
+        },
+        {
+          "target": "Fico feliz que você esteja melhor.",
+          "es": "Me alegra que estés mejor."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Talvez ele vem amanhã.", "right": "Talvez ele venha amanhã.", "why": "En español 'tal vez' admite indicativo; en portugués, talvez antes del verbo va con subjuntivo." },
-        { "wrong": "Não acho que é uma boa ideia.", "right": "Não acho que seja uma boa ideia.", "why": "Igual que 'no creo que sea': la opinión negada pide subjuntivo." }
+        {
+          "wrong": "Talvez ele vem amanhã.",
+          "right": "Talvez ele venha amanhã.",
+          "why": "En español 'tal vez' admite indicativo; en portugués, talvez antes del verbo va con subjuntivo."
+        },
+        {
+          "wrong": "Não acho que é uma boa ideia.",
+          "right": "Não acho que seja uma boa ideia.",
+          "why": "Igual que 'no creo que sea': la opinión negada pide subjuntivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Talvez seja isso",
+          "es": "Tal vez sea eso",
+          "example": "Não sei o motivo, mas talvez seja isso.",
+          "exampleEs": "No sé el motivo, pero tal vez sea eso."
+        },
+        {
+          "target": "Fico feliz que você esteja bem",
+          "es": "Me alegro de que estés bien",
+          "example": "Que bom te ver, fico feliz que você esteja bem.",
+          "exampleEs": "Qué bueno verte, me alegro de que estés bien."
+        },
+        {
+          "target": "Tenho medo que dê errado",
+          "es": "Tengo miedo de que salga mal",
+          "example": "Essa ideia é arriscada, tenho medo que dê errado.",
+          "exampleEs": "Esa idea es arriesgada, tengo miedo de que salga mal."
+        },
+        {
+          "target": "Duvido que ele venha",
+          "es": "Dudo que él venga",
+          "example": "Com essa chuva, duvido que ele venha hoje.",
+          "exampleEs": "Con esta lluvia, dudo que él venga hoy."
+        },
+        {
+          "target": "É uma pena que não possa ir",
+          "es": "Es una lástima que no puedas ir",
+          "example": "É uma pena que não possa ir à festa.",
+          "exampleEs": "Es una lástima que no puedas ir a la fiesta."
+        }
       ]
     },
     {
@@ -109,7 +322,10 @@
       "day": 5,
       "title": "Mensaje de buenos deseos",
       "goal": "Comprender y escribir un mensaje con deseos y consejos para alguien que empieza algo nuevo.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Deseos: Espero que tudo dê certo. Tomara que você goste. Desejo que você tenha muito sucesso.",
         "Consejos: É importante que você descanse. É melhor que você não pense demais.",
@@ -117,13 +333,62 @@
         "dar certo es 'salir bien' y torcer por alguien es 'hacerle fuerza'."
       ],
       "examples": [
-        { "target": "Parabéns pela aprovação! Espero que você aproveite muito a faculdade.", "es": "¡Felicitaciones por haber entrado! Espero que disfrutes mucho la facultad." },
-        { "target": "Torço para que tudo dê certo na entrevista.", "es": "Hago fuerza para que todo salga bien en la entrevista." },
-        { "target": "É bom que você durma cedo na véspera.", "es": "Conviene que te acuestes temprano el día anterior." }
+        {
+          "target": "Parabéns pela aprovação! Espero que você aproveite muito a faculdade.",
+          "es": "¡Felicitaciones por haber entrado! Espero que disfrutes mucho la facultad."
+        },
+        {
+          "target": "Torço para que tudo dê certo na entrevista.",
+          "es": "Hago fuerza para que todo salga bien en la entrevista."
+        },
+        {
+          "target": "É bom que você durma cedo na véspera.",
+          "es": "Conviene que te acuestes temprano el día anterior."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Felicitações pelo novo emprego!", "right": "Parabéns pelo novo emprego!", "why": "En Brasil, para felicitar se dice parabéns; felicitações existe, pero suena muy formal." },
-        { "wrong": "Desejo que você tem muito sucesso.", "right": "Desejo que você tenha muito sucesso.", "why": "Después de desejar que va subjuntivo." }
+        {
+          "wrong": "Felicitações pelo novo emprego!",
+          "right": "Parabéns pelo novo emprego!",
+          "why": "En Brasil, para felicitar se dice parabéns; felicitações existe, pero suena muy formal."
+        },
+        {
+          "wrong": "Desejo que você tem muito sucesso.",
+          "right": "Desejo que você tenha muito sucesso.",
+          "why": "Después de desejar que va subjuntivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Que tudo dê certo!",
+          "es": "¡Que todo salga bien!",
+          "example": "Boa sorte no novo emprego, que tudo dê certo!",
+          "exampleEs": "Buena suerte en el nuevo trabajo, ¡que todo salga bien!"
+        },
+        {
+          "target": "Desejo que você tenha sucesso",
+          "es": "Te deseo que tengas éxito",
+          "example": "Nessa nova fase, desejo que você tenha sucesso.",
+          "exampleEs": "En esta nueva etapa, te deseo que tengas éxito."
+        },
+        {
+          "target": "Que essa nova fase seja incrível",
+          "es": "Que esta nueva etapa sea increíble",
+          "example": "Parabéns pela faculdade, que essa nova fase seja incrível.",
+          "exampleEs": "Felicitaciones por la facultad, que esta nueva etapa sea increíble."
+        },
+        {
+          "target": "Espero que você se dê bem",
+          "es": "Espero que te vaya bien",
+          "example": "No seu primeiro dia, espero que você se dê bem.",
+          "exampleEs": "En tu primer día, espero que te vaya bien."
+        },
+        {
+          "target": "Que venham dias melhores",
+          "es": "Que vengan días mejores",
+          "example": "Foi difícil, mas que venham dias melhores agora.",
+          "exampleEs": "Fue difícil, pero que vengan días mejores ahora."
+        }
       ]
     }
   ]

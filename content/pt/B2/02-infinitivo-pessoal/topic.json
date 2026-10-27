@@ -12,7 +12,10 @@
     "Saber cuándo no se flexiona",
     "Escribir indicaciones para un grupo"
   ],
-  "prerequisites": ["pt-b1-presente-subjuntivo", "pt-b1-futuro-subjuntivo"],
+  "prerequisites": [
+    "pt-b1-presente-subjuntivo",
+    "pt-b1-futuro-subjuntivo"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,9 @@
       "day": 1,
       "title": "Formación",
       "goal": "Conjugar el infinitivo pessoal y no confundirlo con el futuro do subjuntivo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Infinitivo + terminación: eu falar, você falar, nós falarmos, vocês falarem.",
         "Siempre es regular, porque parte del infinitivo: fazer → fazermos, fazerem; ser → sermos, serem; pôr → pormos, porem.",
@@ -29,12 +34,57 @@
         "No existe en español: donde decimos 'para que vayamos', el portugués puede decir para nós irmos."
       ],
       "examples": [
-        { "target": "Isso é para vocês levarem.", "es": "Esto es para que lo lleven ustedes." },
-        { "target": "Trouxe o mapa para nós não nos perdermos.", "es": "Traje el mapa para que no nos perdamos." },
-        { "target": "É hora de eles saírem.", "es": "Es hora de que salgan." }
+        {
+          "target": "Isso é para vocês levarem.",
+          "es": "Esto es para que lo lleven ustedes."
+        },
+        {
+          "target": "Trouxe o mapa para nós não nos perdermos.",
+          "es": "Traje el mapa para que no nos perdamos."
+        },
+        {
+          "target": "É hora de eles saírem.",
+          "es": "Es hora de que salgan."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Para nós fizermos o trabalho, precisamos de tempo.", "right": "Para nós fazermos o trabalho, precisamos de tempo.", "why": "El infinitivo pessoal sale del infinitivo (fazer), no del perfeito como el futuro do subjuntivo (fizer)." }
+        {
+          "wrong": "Para nós fizermos o trabalho, precisamos de tempo.",
+          "right": "Para nós fazermos o trabalho, precisamos de tempo.",
+          "why": "El infinitivo pessoal sale del infinitivo (fazer), no del perfeito como el futuro do subjuntivo (fizer)."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Para vocês saberem",
+          "es": "Para que sepan",
+          "example": "Para vocês saberem, a reunião foi remarcada.",
+          "exampleEs": "Para que sepan, la reunión fue reprogramada."
+        },
+        {
+          "target": "Até nos vermos",
+          "es": "Hasta que nos veamos",
+          "example": "Um abraço e até nos vermos de novo.",
+          "exampleEs": "Un abrazo y hasta que nos veamos de nuevo."
+        },
+        {
+          "target": "Antes de sairmos",
+          "es": "Antes de que salgamos",
+          "example": "Antes de sairmos, vamos verificar tudo.",
+          "exampleEs": "Antes de que salgamos, vamos a revisar todo."
+        },
+        {
+          "target": "Para eles entenderem",
+          "es": "Para que ellos entiendan",
+          "example": "Vou explicar de novo, para eles entenderem.",
+          "exampleEs": "Voy a explicar de nuevo, para que ellos entiendan."
+        },
+        {
+          "target": "Sem vocês perceberem",
+          "es": "Sin que ustedes se den cuenta",
+          "example": "Tudo mudou aqui sem vocês perceberem.",
+          "exampleEs": "Todo cambió aquí sin que ustedes se dieran cuenta."
+        }
       ]
     },
     {
@@ -42,7 +92,9 @@
       "day": 2,
       "title": "Después de preposiciones",
       "goal": "Usar el infinitivo pessoal con para, antes de, depois de, sem y até.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "para + infinitivo pessoal equivale a 'para que' + subjuntivo: Falei devagar para vocês entenderem.",
         "antes de, depois de, sem, até: Antes de vocês saírem, fechem as janelas. Sem eles saberem.",
@@ -50,13 +102,62 @@
         "En la norma la preposición no se contrae con el sujeto: antes de ele chegar. Al hablar se oye antes dele chegar."
       ],
       "examples": [
-        { "target": "Antes de vocês saírem, desliguem o ar-condicionado.", "es": "Antes de salir, apaguen el aire acondicionado." },
-        { "target": "Ele saiu sem os filhos perceberem.", "es": "Se fue sin que los hijos se dieran cuenta." },
-        { "target": "Esperamos até todos chegarem.", "es": "Esperamos hasta que llegaron todos." }
+        {
+          "target": "Antes de vocês saírem, desliguem o ar-condicionado.",
+          "es": "Antes de salir, apaguen el aire acondicionado."
+        },
+        {
+          "target": "Ele saiu sem os filhos perceberem.",
+          "es": "Se fue sin que los hijos se dieran cuenta."
+        },
+        {
+          "target": "Esperamos até todos chegarem.",
+          "es": "Esperamos hasta que llegaron todos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Antes de que vocês saiam, desliguem a luz.", "right": "Antes de vocês saírem, desliguem a luz.", "why": "'Antes de que' es un calco: se dice antes de + infinitivo pessoal o antes que + subjuntivo (antes que vocês saiam)." },
-        { "wrong": "Liguei antes dele sair. (en un texto formal)", "right": "Liguei antes de ele sair.", "why": "En la norma, de no se contrae con el sujeto de un infinitivo; la contracción dele es de la charla." }
+        {
+          "wrong": "Antes de que vocês saiam, desliguem a luz.",
+          "right": "Antes de vocês saírem, desliguem a luz.",
+          "why": "'Antes de que' es un calco: se dice antes de + infinitivo pessoal o antes que + subjuntivo (antes que vocês saiam)."
+        },
+        {
+          "wrong": "Liguei antes dele sair. (en un texto formal)",
+          "right": "Liguei antes de ele sair.",
+          "why": "En la norma, de no se contrae con el sujeto de un infinitivo; la contracción dele es de la charla."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Depois de chegarmos",
+          "es": "Después de que lleguemos",
+          "example": "Depois de chegarmos, vamos descansar um pouco.",
+          "exampleEs": "Después de que lleguemos, vamos a descansar un poco."
+        },
+        {
+          "target": "Antes de irmos embora",
+          "es": "Antes de que nos vayamos",
+          "example": "Antes de irmos embora, vamos pagar a conta.",
+          "exampleEs": "Antes de que nos vayamos, vamos a pagar la cuenta."
+        },
+        {
+          "target": "Sem eu saber",
+          "es": "Sin que yo me enterara",
+          "example": "Eles mudaram tudo sem eu saber.",
+          "exampleEs": "Ellos cambiaron todo sin que yo me enterara."
+        },
+        {
+          "target": "Até vocês decidirem",
+          "es": "Hasta que ustedes decidan",
+          "example": "Vamos esperar aqui até vocês decidirem.",
+          "exampleEs": "Vamos a esperar acá hasta que ustedes decidan."
+        },
+        {
+          "target": "Para nós conseguirmos",
+          "es": "Para que logremos",
+          "example": "Precisamos de ajuda para nós conseguirmos terminar.",
+          "exampleEs": "Necesitamos ayuda para que logremos terminar."
+        }
       ]
     },
     {
@@ -64,7 +165,10 @@
       "day": 3,
       "title": "Con expresiones impersonales",
       "goal": "Usar el infinitivo pessoal en lugar de que + subjuntivo.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Expresiones impersonales: É melhor vocês chegarem cedo. É importante todos participarem. Basta você pedir.",
         "Significa lo mismo que con subjuntivo: É melhor vocês chegarem cedo = É melhor que vocês cheguem cedo.",
@@ -72,13 +176,62 @@
         "Es muy común al hablar y al escribir: suena más natural que la versión con que."
       ],
       "examples": [
-        { "target": "É melhor vocês reservarem com antecedência.", "es": "Es mejor que reserven con anticipación." },
-        { "target": "Basta você mandar um e-mail.", "es": "Alcanza con que mandes un mail." },
-        { "target": "O livro é para eu ler nas férias.", "es": "El libro es para que yo lo lea en las vacaciones." }
+        {
+          "target": "É melhor vocês reservarem com antecedência.",
+          "es": "Es mejor que reserven con anticipación."
+        },
+        {
+          "target": "Basta você mandar um e-mail.",
+          "es": "Alcanza con que mandes un mail."
+        },
+        {
+          "target": "O livro é para eu ler nas férias.",
+          "es": "El libro es para que yo lo lea en las vacaciones."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Isso é para mim fazer?", "right": "Isso é para eu fazer?", "why": "Cuando el pronombre es sujeto del infinitivo va eu, no mim. Es un error frecuente incluso entre brasileños." },
-        { "wrong": "É importante que todos participam.", "right": "É importante todos participarem.", "why": "Va subjuntivo (que todos participem) o infinitivo pessoal (todos participarem), nunca indicativo." }
+        {
+          "wrong": "Isso é para mim fazer?",
+          "right": "Isso é para eu fazer?",
+          "why": "Cuando el pronombre es sujeto del infinitivo va eu, no mim. Es un error frecuente incluso entre brasileños."
+        },
+        {
+          "wrong": "É importante que todos participam.",
+          "right": "É importante todos participarem.",
+          "why": "Va subjuntivo (que todos participem) o infinitivo pessoal (todos participarem), nunca indicativo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "É importante vocês chegarem",
+          "es": "Es importante que ustedes lleguen",
+          "example": "É importante vocês chegarem antes das oito.",
+          "exampleEs": "Es importante que ustedes lleguen antes de las ocho."
+        },
+        {
+          "target": "É melhor eles saberem",
+          "es": "Es mejor que ellos sepan",
+          "example": "É melhor eles saberem logo a verdade.",
+          "exampleEs": "Es mejor que ellos sepan la verdad de una vez."
+        },
+        {
+          "target": "Basta vocês avisarem",
+          "es": "Alcanza con que avisen",
+          "example": "Basta vocês avisarem com um dia de antecedência.",
+          "exampleEs": "Alcanza con que avisen con un día de anticipación."
+        },
+        {
+          "target": "É preciso todos colaborarem",
+          "es": "Es necesario que todos colaboren",
+          "example": "Para dar certo, é preciso todos colaborarem.",
+          "exampleEs": "Para que salga bien, es necesario que todos colaboren."
+        },
+        {
+          "target": "É bom nós conversarmos",
+          "es": "Es bueno que hablemos",
+          "example": "Sobre esse assunto, é bom nós conversarmos com calma.",
+          "exampleEs": "Sobre ese tema, es bueno que hablemos con calma."
+        }
       ]
     },
     {
@@ -86,7 +239,9 @@
       "day": 4,
       "title": "Cuándo flexionar y cuándo no",
       "goal": "Evitar el exceso de infinitivo pessoal.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "No se flexiona después de verbos auxiliares o modales: Nós podemos ir. Eles querem sair. Vamos viajar.",
         "Tampoco en perífrasis como começar a, voltar a, deixar de: Eles começaram a trabalhar.",
@@ -95,13 +250,56 @@
         "En una perífrasis se flexiona solo el primer verbo: para eles poderem entrar."
       ],
       "examples": [
-        { "target": "Nós precisamos sair às sete.", "es": "Tenemos que salir a las siete." },
-        { "target": "Viemos aqui para conversar.", "es": "Vinimos acá para charlar." },
-        { "target": "Comprei os ingressos para vocês irem ao show.", "es": "Compré las entradas para que ustedes vayan al recital." }
+        {
+          "target": "Nós precisamos sair às sete.",
+          "es": "Tenemos que salir a las siete."
+        },
+        {
+          "target": "Viemos aqui para conversar.",
+          "es": "Vinimos acá para charlar."
+        },
+        {
+          "target": "Comprei os ingressos para vocês irem ao show.",
+          "es": "Compré las entradas para que ustedes vayan al recital."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Nós precisamos sairmos cedo.", "right": "Nós precisamos sair cedo.", "why": "Después de un verbo como precisar, poder o querer, el infinitivo no se conjuga." },
-        { "wrong": "Eles começaram a trabalharem.", "right": "Eles começaram a trabalhar.", "why": "En una perífrasis (começar a, voltar a, deixar de) el infinitivo queda sin flexión." }
+        {
+          "wrong": "Nós precisamos sairmos cedo.",
+          "right": "Nós precisamos sair cedo.",
+          "why": "Después de un verbo como precisar, poder o querer, el infinitivo no se conjuga."
+        },
+        {
+          "wrong": "Eles começaram a trabalharem.",
+          "right": "Eles começaram a trabalhar.",
+          "why": "En una perífrasis (começar a, voltar a, deixar de) el infinitivo queda sin flexión."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Vim aqui para ajudar",
+          "es": "Vine acá para ayudar",
+          "example": "Vim aqui para ajudar, não para criticar.",
+          "exampleEs": "Vine acá para ayudar, no para criticar."
+        },
+        {
+          "target": "Preciso sair agora",
+          "es": "Necesito salir ahora",
+          "example": "Desculpa, mas preciso sair agora mesmo.",
+          "exampleEs": "Disculpá, pero necesito salir ahora mismo."
+        },
+        {
+          "target": "Vamos tentar entender",
+          "es": "Vamos a intentar entender",
+          "example": "Calma, vamos tentar entender a situação.",
+          "exampleEs": "Tranquilo, vamos a intentar entender la situación."
+        },
+        {
+          "target": "Ele saiu sem avisar",
+          "es": "Se fue sin avisar",
+          "example": "De repente, ele saiu sem avisar ninguém.",
+          "exampleEs": "De repente, se fue sin avisar a nadie."
+        }
       ]
     },
     {
@@ -109,20 +307,72 @@
       "day": 5,
       "title": "Indicaciones para un grupo",
       "goal": "Comprender y escribir un mensaje con indicaciones para un evento.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Indicaciones: Para vocês chegarem..., Antes de saírem..., Depois de estacionarem...",
         "Pedidos al grupo: É importante todos confirmarem presença. É melhor vocês virem de carro.",
         "Vocabulario: sítio (casa de campo, quinta), churrasco, confirmar presença (confirmar asistencia), dar carona (llevar a alguien en el auto)."
       ],
       "examples": [
-        { "target": "Para vocês chegarem ao sítio, peguem a estrada até o km 32.", "es": "Para llegar a la quinta, tomen la ruta hasta el km 32." },
-        { "target": "Antes de saírem, confirmem presença no grupo.", "es": "Antes de salir, confirmen asistencia en el grupo." },
-        { "target": "É melhor vocês virem cedo para pegar lugar na sombra.", "es": "Es mejor que vengan temprano para agarrar lugar a la sombra." }
+        {
+          "target": "Para vocês chegarem ao sítio, peguem a estrada até o km 32.",
+          "es": "Para llegar a la quinta, tomen la ruta hasta el km 32."
+        },
+        {
+          "target": "Antes de saírem, confirmem presença no grupo.",
+          "es": "Antes de salir, confirmen asistencia en el grupo."
+        },
+        {
+          "target": "É melhor vocês virem cedo para pegar lugar na sombra.",
+          "es": "Es mejor que vengan temprano para agarrar lugar a la sombra."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Para eles poderem entrarem, precisam do convite.", "right": "Para eles poderem entrar, precisam do convite.", "why": "En una perífrasis se flexiona solo el primer verbo." },
-        { "wrong": "Confirmem a assistência até sexta.", "right": "Confirmem presença até sexta.", "why": "La 'asistencia' a un evento es presença; assistência es 'ayuda' o 'servicio técnico'." }
+        {
+          "wrong": "Para eles poderem entrarem, precisam do convite.",
+          "right": "Para eles poderem entrar, precisam do convite.",
+          "why": "En una perífrasis se flexiona solo el primer verbo."
+        },
+        {
+          "wrong": "Confirmem a assistência até sexta.",
+          "right": "Confirmem presença até sexta.",
+          "why": "La 'asistencia' a un evento es presença; assistência es 'ayuda' o 'servicio técnico'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Para chegarem na hora",
+          "es": "Para que lleguen a tiempo",
+          "example": "Saiam mais cedo para chegarem na hora.",
+          "exampleEs": "Salgan más temprano para que lleguen a tiempo."
+        },
+        {
+          "target": "Antes de saírem de casa",
+          "es": "Antes de que salgan de casa",
+          "example": "Antes de saírem de casa, confiram o endereço.",
+          "exampleEs": "Antes de que salgan de casa, confirmen la dirección."
+        },
+        {
+          "target": "Assim que todos confirmarem",
+          "es": "En cuanto todos confirmen",
+          "example": "Assim que todos confirmarem, fecho a lista.",
+          "exampleEs": "En cuanto todos confirmen, cierro la lista."
+        },
+        {
+          "target": "Para evitarmos atraso",
+          "es": "Para evitar la demora",
+          "example": "Vamos marcar mais cedo para evitarmos atraso.",
+          "exampleEs": "Vamos a coordinar más temprano para evitar la demora."
+        },
+        {
+          "target": "Até combinarmos tudo",
+          "es": "Hasta que acordemos todo",
+          "example": "Fiquem atentos ao grupo até combinarmos tudo.",
+          "exampleEs": "Estén atentos al grupo hasta que acordemos todo."
+        }
       ]
     }
   ]

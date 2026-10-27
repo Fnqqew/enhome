@@ -11,7 +11,9 @@
     "Formar superlativos con o mais y -íssimo",
     "Escribir una comparación entre dos ciudades"
   ],
-  "prerequisites": ["pt-a1-artigos-genero"],
+  "prerequisites": [
+    "pt-a1-artigos-genero"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,72 @@
       "day": 1,
       "title": "Mais y menos",
       "goal": "Comparar con mais ... (do) que y menos ... (do) que.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "mais + adjetivo + (do) que: São Paulo é mais caro (do) que Curitiba.",
         "menos + adjetivo + (do) que: O ônibus é menos rápido que o metrô.",
         "Con verbos: Ela trabalha mais do que eu."
       ],
       "examples": [
-        { "target": "Meu irmão é mais alto do que eu.", "es": "Mi hermano es más alto que yo." },
-        { "target": "Este celular é menos caro.", "es": "Este celular es menos caro." },
-        { "target": "Hoje está mais frio que ontem.", "es": "Hoy hace más frío que ayer." }
+        {
+          "target": "Meu irmão é mais alto do que eu.",
+          "es": "Mi hermano es más alto que yo."
+        },
+        {
+          "target": "Este celular é menos caro.",
+          "es": "Este celular es menos caro."
+        },
+        {
+          "target": "Hoje está mais frio que ontem.",
+          "es": "Hoy hace más frío que ayer."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ele é mais alto de mim.", "right": "Ele é mais alto do que eu.", "why": "La comparación va con (do) que + pronombre sujeto." }
+        {
+          "wrong": "Ele é mais alto de mim.",
+          "right": "Ele é mais alto do que eu.",
+          "why": "La comparación va con (do) que + pronombre sujeto."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "mais ou menos",
+          "es": "más o menos",
+          "example": "O filme foi mais ou menos.",
+          "exampleEs": "La película estuvo más o menos."
+        },
+        {
+          "target": "cada vez mais",
+          "es": "cada vez más",
+          "example": "Essa cidade fica cada vez mais cara.",
+          "exampleEs": "Esta ciudad se pone cada vez más cara."
+        },
+        {
+          "target": "muito mais fácil",
+          "es": "mucho más fácil",
+          "example": "Esse caminho é muito mais fácil.",
+          "exampleEs": "Este camino es mucho más fácil."
+        },
+        {
+          "target": "bem menos caro",
+          "es": "mucho más barato",
+          "example": "Aqui é bem menos caro do que lá.",
+          "exampleEs": "Acá es mucho más barato que allá."
+        },
+        {
+          "target": "mais do que imaginava",
+          "es": "más de lo que imaginaba",
+          "example": "A viagem custou mais do que imaginava.",
+          "exampleEs": "El viaje costó más de lo que imaginaba."
+        },
+        {
+          "target": "menos do que pensava",
+          "es": "menos de lo que pensaba",
+          "example": "Gastei menos do que pensava.",
+          "exampleEs": "Gasté menos de lo que pensaba."
+        }
       ]
     },
     {
@@ -39,19 +94,72 @@
       "day": 2,
       "title": "Igualdad: tão ... quanto",
       "goal": "Decir que dos cosas son iguales.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "tão + adjetivo + quanto: Ela é tão inteligente quanto a irmã.",
         "tanto/tanta/tantos/tantas + sustantivo + quanto: Tenho tantos livros quanto você.",
         "Con verbos: Ele estuda tanto quanto eu."
       ],
       "examples": [
-        { "target": "O filme é tão bom quanto o livro.", "es": "La película es tan buena como el libro." },
-        { "target": "Não tenho tanto tempo quanto antes.", "es": "No tengo tanto tiempo como antes." },
-        { "target": "Ela corre tanto quanto o treinador.", "es": "Corre tanto como el entrenador." }
+        {
+          "target": "O filme é tão bom quanto o livro.",
+          "es": "La película es tan buena como el libro."
+        },
+        {
+          "target": "Não tenho tanto tempo quanto antes.",
+          "es": "No tengo tanto tiempo como antes."
+        },
+        {
+          "target": "Ela corre tanto quanto o treinador.",
+          "es": "Corre tanto como el entrenador."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Tão bom como o livro.", "right": "Tão bom quanto o livro.", "why": "En Brasil la forma más usada es tão... quanto." }
+        {
+          "wrong": "Tão bom como o livro.",
+          "right": "Tão bom quanto o livro.",
+          "why": "En Brasil la forma más usada es tão... quanto."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "tão bom quanto",
+          "es": "tan bueno como",
+          "example": "Esse restaurante é tão bom quanto o outro.",
+          "exampleEs": "Este restaurante es tan bueno como el otro."
+        },
+        {
+          "target": "tão caro quanto",
+          "es": "tan caro como",
+          "example": "O ingresso é tão caro quanto o do ano passado.",
+          "exampleEs": "La entrada es tan cara como la del año pasado."
+        },
+        {
+          "target": "do mesmo jeito",
+          "es": "de la misma manera",
+          "example": "As duas cidades são do mesmo jeito.",
+          "exampleEs": "Las dos ciudades son de la misma manera."
+        },
+        {
+          "target": "tão rápido quanto possível",
+          "es": "tan rápido como se pueda",
+          "example": "Preciso disso tão rápido quanto possível.",
+          "exampleEs": "Necesito eso tan rápido como se pueda."
+        },
+        {
+          "target": "não é tão difícil quanto parece",
+          "es": "no es tan difícil como parece",
+          "example": "Essa prova não é tão difícil quanto parece.",
+          "exampleEs": "Este examen no es tan difícil como parece."
+        },
+        {
+          "target": "tão longe quanto",
+          "es": "tan lejos como",
+          "example": "A praia não é tão longe quanto eu pensava.",
+          "exampleEs": "La playa no está tan lejos como yo pensaba."
+        }
       ]
     },
     {
@@ -59,19 +167,73 @@
       "day": 3,
       "title": "Comparativos irregulares",
       "goal": "Usar melhor, pior, maior y menor.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "bom → melhor, ruim/mau → pior, grande → maior, pequeno → menor.",
         "Nunca se dice 'mais bom' ni 'mais grande'.",
         "Mais pequeno se usa en Portugal, pero en Brasil se prefiere menor."
       ],
       "examples": [
-        { "target": "Este café é melhor que o outro.", "es": "Este café es mejor que el otro." },
-        { "target": "O Brasil é maior que a Argentina.", "es": "Brasil es más grande que la Argentina." },
-        { "target": "O trânsito hoje está pior.", "es": "Hoy el tránsito está peor." }
+        {
+          "target": "Este café é melhor que o outro.",
+          "es": "Este café es mejor que el otro."
+        },
+        {
+          "target": "O Brasil é maior que a Argentina.",
+          "es": "Brasil es más grande que la Argentina."
+        },
+        {
+          "target": "O trânsito hoje está pior.",
+          "es": "Hoy el tránsito está peor."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "É mais bom.", "right": "É melhor.", "why": "El comparativo de bom es melhor." }
+        {
+          "wrong": "É mais bom.",
+          "right": "É melhor.",
+          "why": "El comparativo de bom es melhor."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "é melhor assim",
+          "es": "es mejor así",
+          "example": "Acho que é melhor assim.",
+          "exampleEs": "Creo que es mejor así."
+        },
+        {
+          "target": "cada vez pior",
+          "es": "cada vez peor",
+          "example": "O trânsito está cada vez pior.",
+          "exampleEs": "El tránsito está cada vez peor."
+        },
+        {
+          "target": "maior do que eu pensava",
+          "es": "más grande de lo que pensaba",
+          "example": "O apartamento é maior do que eu pensava.",
+          "exampleEs": "El departamento es más grande de lo que pensaba."
+        },
+        {
+          "target": "menor possível",
+          "es": "lo más chico posible",
+          "example": "Quero a mala menor possível.",
+          "exampleEs": "Quiero la valija más chica posible."
+        },
+        {
+          "target": "na pior das hipóteses",
+          "es": "en el peor de los casos",
+          "example": "Na pior das hipóteses, perdemos o voo.",
+          "exampleEs": "En el peor de los casos, perdemos el vuelo."
+        },
+        {
+          "target": "o melhor de tudo",
+          "es": "lo mejor de todo",
+          "example": "O melhor de tudo foi a comida.",
+          "exampleEs": "Lo mejor de todo fue la comida."
+        }
       ]
     },
     {
@@ -79,19 +241,72 @@
       "day": 4,
       "title": "Superlativos",
       "goal": "Decir que algo es el más y que es muy, muy algo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "o/a mais + adjetivo + de: É a praia mais bonita da ilha.",
         "o melhor, o pior, o maior, o menor: É o melhor restaurante da cidade.",
         "-íssimo para intensificar: lindíssimo, caríssimo, facílimo; también muito o super: superbarato."
       ],
       "examples": [
-        { "target": "Ela é a aluna mais dedicada da turma.", "es": "Es la alumna más dedicada del curso." },
-        { "target": "O hotel era caríssimo.", "es": "El hotel era carísimo." },
-        { "target": "Foi o pior dia do ano.", "es": "Fue el peor día del año." }
+        {
+          "target": "Ela é a aluna mais dedicada da turma.",
+          "es": "Es la alumna más dedicada del curso."
+        },
+        {
+          "target": "O hotel era caríssimo.",
+          "es": "El hotel era carísimo."
+        },
+        {
+          "target": "Foi o pior dia do ano.",
+          "es": "Fue el peor día del año."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "A praia mais bonita de a ilha.", "right": "A praia mais bonita da ilha.", "why": "de + a se contrae en da." }
+        {
+          "wrong": "A praia mais bonita de a ilha.",
+          "right": "A praia mais bonita da ilha.",
+          "why": "de + a se contrae en da."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "de longe o melhor",
+          "es": "de lejos el mejor",
+          "example": "Esse lugar é de longe o melhor da cidade.",
+          "exampleEs": "Este lugar es de lejos el mejor de la ciudad."
+        },
+        {
+          "target": "super fácil",
+          "es": "súper fácil",
+          "example": "A receita é super fácil de fazer.",
+          "exampleEs": "La receta es súper fácil de hacer."
+        },
+        {
+          "target": "muito obrigado mesmo",
+          "es": "muchas gracias en serio",
+          "example": "Muito obrigado mesmo pela ajuda.",
+          "exampleEs": "Muchas gracias en serio por la ayuda."
+        },
+        {
+          "target": "o mais rápido possível",
+          "es": "lo más rápido posible",
+          "example": "Preciso da resposta o mais rápido possível.",
+          "exampleEs": "Necesito la respuesta lo más rápido posible."
+        },
+        {
+          "target": "sem dúvida o melhor",
+          "es": "sin duda el mejor",
+          "example": "Esse foi sem dúvida o melhor passeio.",
+          "exampleEs": "Ese fue sin duda el mejor paseo."
+        },
+        {
+          "target": "é baríssimo",
+          "es": "es súper barato",
+          "example": "Comer na rua aqui é baríssimo.",
+          "exampleEs": "Comer en la calle acá es súper barato."
+        }
       ]
     },
     {
@@ -99,19 +314,73 @@
       "day": 5,
       "title": "Comparar ciudades",
       "goal": "Comprender y escribir una comparación entre dos lugares.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Combiná comparativos de superioridad, igualdad y superlativos.",
         "Vocabulario: trânsito, custo de vida, clima, segurança, vida noturna.",
         "Para dar tu opinión: Na minha opinião, acho que, prefiro."
       ],
       "examples": [
-        { "target": "Na minha opinião, o Rio é mais bonito, mas São Paulo tem mais opções culturais.", "es": "En mi opinión, Río es más lindo, pero San Pablo tiene más opciones culturales." },
-        { "target": "O custo de vida aqui é tão alto quanto lá.", "es": "El costo de vida acá es tan alto como allá." },
-        { "target": "Prefiro cidades menores.", "es": "Prefiero ciudades más chicas." }
+        {
+          "target": "Na minha opinião, o Rio é mais bonito, mas São Paulo tem mais opções culturais.",
+          "es": "En mi opinión, Río es más lindo, pero San Pablo tiene más opciones culturales."
+        },
+        {
+          "target": "O custo de vida aqui é tão alto quanto lá.",
+          "es": "El costo de vida acá es tan alto como allá."
+        },
+        {
+          "target": "Prefiro cidades menores.",
+          "es": "Prefiero ciudades más chicas."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Prefiro cidades mais pequenas.", "right": "Prefiro cidades menores.", "why": "En Brasil se usa menor como comparativo de pequeno." }
+        {
+          "wrong": "Prefiro cidades mais pequenas.",
+          "right": "Prefiro cidades menores.",
+          "why": "En Brasil se usa menor como comparativo de pequeno."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "é bem diferente de",
+          "es": "es bien diferente de",
+          "example": "Buenos Aires é bem diferente de São Paulo.",
+          "exampleEs": "Buenos Aires es bien diferente de San Pablo."
+        },
+        {
+          "target": "tem mais a oferecer",
+          "es": "tiene más para ofrecer",
+          "example": "Essa cidade tem mais a oferecer do que parece.",
+          "exampleEs": "Esta ciudad tiene más para ofrecer de lo que parece."
+        },
+        {
+          "target": "custa mais caro",
+          "es": "sale más caro",
+          "example": "Morar no centro custa mais caro.",
+          "exampleEs": "Vivir en el centro sale más caro."
+        },
+        {
+          "target": "vale mais a pena",
+          "es": "vale más la pena",
+          "example": "Ir de trem vale mais a pena.",
+          "exampleEs": "Ir en tren vale más la pena."
+        },
+        {
+          "target": "lembra muito",
+          "es": "se parece mucho a",
+          "example": "Essa cidade lembra muito o Rio.",
+          "exampleEs": "Esta ciudad se parece mucho a Río."
+        },
+        {
+          "target": "não tem nada a ver com",
+          "es": "no tiene nada que ver con",
+          "example": "Essa praia não tem nada a ver com aquela.",
+          "exampleEs": "Esta playa no tiene nada que ver con aquella."
+        }
       ]
     }
   ]

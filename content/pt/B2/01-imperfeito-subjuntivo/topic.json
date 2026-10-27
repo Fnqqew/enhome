@@ -12,7 +12,11 @@
     "Encadenar tiempos: queria que, pediu que, era importante que",
     "Escribir sobre una situación imaginaria"
   ],
-  "prerequisites": ["pt-b1-presente-subjuntivo", "pt-b1-futuro-subjuntivo", "pt-a2-futuro-condicional"],
+  "prerequisites": [
+    "pt-b1-presente-subjuntivo",
+    "pt-b1-futuro-subjuntivo",
+    "pt-a2-futuro-condicional"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +24,9 @@
       "day": 1,
       "title": "Formación",
       "goal": "Formar el imperfeito do subjuntivo de cualquier verbo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Tercera persona plural del perfeito sin -ram + -sse: falaram → falasse, fizeram → fizesse, tiveram → tivesse.",
         "Personas: eu y você falasse, nós falássemos, vocês falassem. La forma de nós siempre lleva tilde: comêssemos, partíssemos, fôssemos.",
@@ -28,13 +34,68 @@
         "Solo existe la forma en -sse: el 'tuviera' del español no es tivera (eso es pluscuamperfecto), sino tivesse."
       ],
       "examples": [
-        { "target": "Se eu soubesse a resposta, te diria.", "es": "Si supiera la respuesta, te la diría." },
-        { "target": "Eu queria que você ficasse mais um pouco.", "es": "Quería que te quedaras un rato más." },
-        { "target": "Se nós fôssemos mais organizados, terminaríamos antes.", "es": "Si fuéramos más organizados, terminaríamos antes." }
+        {
+          "target": "Se eu soubesse a resposta, te diria.",
+          "es": "Si supiera la respuesta, te la diría."
+        },
+        {
+          "target": "Eu queria que você ficasse mais um pouco.",
+          "es": "Quería que te quedaras un rato más."
+        },
+        {
+          "target": "Se nós fôssemos mais organizados, terminaríamos antes.",
+          "es": "Si fuéramos más organizados, terminaríamos antes."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se eu tivera dinheiro, compraria um carro.", "right": "Se eu tivesse dinheiro, compraria um carro.", "why": "El imperfeito do subjuntivo termina en -sse; tivera es el pluscuamperfecto de indicativo." },
-        { "wrong": "Se nós tivessemos tempo, iríamos.", "right": "Se nós tivéssemos tempo, iríamos.", "why": "La forma de nós lleva tilde: tivéssemos, fôssemos, falássemos." }
+        {
+          "wrong": "Se eu tivera dinheiro, compraria um carro.",
+          "right": "Se eu tivesse dinheiro, compraria um carro.",
+          "why": "El imperfeito do subjuntivo termina en -sse; tivera es el pluscuamperfecto de indicativo."
+        },
+        {
+          "wrong": "Se nós tivessemos tempo, iríamos.",
+          "right": "Se nós tivéssemos tempo, iríamos.",
+          "why": "La forma de nós lleva tilde: tivéssemos, fôssemos, falássemos."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "se eu fosse você",
+          "es": "si yo fuera vos",
+          "example": "Se eu fosse você, eu aceitaria a proposta.",
+          "exampleEs": "Si yo fuera vos, aceptaría la propuesta."
+        },
+        {
+          "target": "se eu pudesse",
+          "es": "si pudiera",
+          "example": "Se eu pudesse, mudaria de cidade.",
+          "exampleEs": "Si pudiera, me mudaría de ciudad."
+        },
+        {
+          "target": "se eu tivesse tempo",
+          "es": "si tuviera tiempo",
+          "example": "Se eu tivesse tempo, aprenderia a tocar violão.",
+          "exampleEs": "Si tuviera tiempo, aprendería a tocar la guitarra."
+        },
+        {
+          "target": "se eu soubesse",
+          "es": "si hubiera sabido",
+          "example": "Se eu soubesse, teria trazido um guarda-chuva.",
+          "exampleEs": "Si hubiera sabido, habría traído un paraguas."
+        },
+        {
+          "target": "se fosse possível",
+          "es": "si fuera posible",
+          "example": "Se fosse possível, eu viajaria todo mês.",
+          "exampleEs": "Si fuera posible, viajaría todos los meses."
+        },
+        {
+          "target": "caso eu precisasse",
+          "es": "en caso de que necesitara",
+          "example": "Caso eu precisasse, eu te chamaria.",
+          "exampleEs": "En caso de que necesitara, te llamaría."
+        }
       ]
     },
     {
@@ -42,7 +103,9 @@
       "day": 2,
       "title": "Condicionales hipotéticas",
       "goal": "Construir condicionales hipotéticas y distinguirlas de las posibles.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Condición posible en el futuro: se + futuro do subjuntivo: Se eu tiver tempo, vou.",
         "Condición hipotética o imposible ahora: se + imperfeito do subjuntivo + condicional: Se eu tivesse tempo, iria.",
@@ -50,13 +113,68 @@
         "Nunca va condicional después de se: el 'si tendría' que a veces se escucha en la Argentina es un error en los dos idiomas."
       ],
       "examples": [
-        { "target": "Se eu morasse perto, iria a pé.", "es": "Si viviera cerca, iría caminando." },
-        { "target": "Se ela ganhasse mais, trocava de carro.", "es": "Si ganara más, cambiaba el auto." },
-        { "target": "O que você faria se fosse presidente?", "es": "¿Qué harías si fueras presidente?" }
+        {
+          "target": "Se eu morasse perto, iria a pé.",
+          "es": "Si viviera cerca, iría caminando."
+        },
+        {
+          "target": "Se ela ganhasse mais, trocava de carro.",
+          "es": "Si ganara más, cambiaba el auto."
+        },
+        {
+          "target": "O que você faria se fosse presidente?",
+          "es": "¿Qué harías si fueras presidente?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se eu teria tempo, viajaria mais.", "right": "Se eu tivesse tempo, viajaria mais.", "why": "Después de se nunca va condicional: va imperfeito do subjuntivo." },
-        { "wrong": "Se eu tenho dinheiro, compraria uma casa.", "right": "Se eu tivesse dinheiro, compraria uma casa.", "why": "Con condicional en la consecuencia, la condición va en imperfeito do subjuntivo." }
+        {
+          "wrong": "Se eu teria tempo, viajaria mais.",
+          "right": "Se eu tivesse tempo, viajaria mais.",
+          "why": "Después de se nunca va condicional: va imperfeito do subjuntivo."
+        },
+        {
+          "wrong": "Se eu tenho dinheiro, compraria uma casa.",
+          "right": "Se eu tivesse dinheiro, compraria uma casa.",
+          "why": "Con condicional en la consecuencia, la condición va en imperfeito do subjuntivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "se eu fosse rico",
+          "es": "si fuera rico",
+          "example": "Se eu fosse rico, viajaria o mundo todo.",
+          "exampleEs": "Si fuera rico, viajaría por todo el mundo."
+        },
+        {
+          "target": "se tivesse dado tempo",
+          "es": "si hubiera dado el tiempo",
+          "example": "Se tivesse dado tempo, eu teria terminado o projeto.",
+          "exampleEs": "Si hubiera dado el tiempo, habría terminado el proyecto."
+        },
+        {
+          "target": "se não fosse por você",
+          "es": "si no fuera por vos",
+          "example": "Se não fosse por você, eu teria desistido.",
+          "exampleEs": "Si no fuera por vos, me habría rendido."
+        },
+        {
+          "target": "se as coisas fossem diferentes",
+          "es": "si las cosas fueran diferentes",
+          "example": "Se as coisas fossem diferentes, eu ficaria aqui.",
+          "exampleEs": "Si las cosas fueran diferentes, me quedaría acá."
+        },
+        {
+          "target": "se dependesse de mim",
+          "es": "si dependiera de mí",
+          "example": "Se dependesse de mim, já tinha resolvido tudo.",
+          "exampleEs": "Si dependiera de mí, ya hubiera resuelto todo."
+        },
+        {
+          "target": "se tudo corresse bem",
+          "es": "si todo saliera bien",
+          "example": "Se tudo corresse bem, chegaríamos antes do jantar.",
+          "exampleEs": "Si todo saliera bien, llegaríamos antes de la cena."
+        }
       ]
     },
     {
@@ -64,7 +182,10 @@
       "day": 3,
       "title": "Como se, quem dera y e se",
       "goal": "Usar el imperfeito do subjuntivo en comparaciones, deseos, propuestas y concesiones.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "como se + imperfeito do subjuntivo: Ele fala como se fosse o dono.",
         "Deseos difíciles o imposibles: Quem dera eu pudesse! Se pelo menos eu tivesse mais tempo!",
@@ -72,13 +193,68 @@
         "Concesión y condición hipotéticas: mesmo que, ainda que, caso: Mesmo que chovesse, eu iria. Caso precisasse, ligaria."
       ],
       "examples": [
-        { "target": "Ela me olhou como se não me conhecesse.", "es": "Me miró como si no me conociera." },
-        { "target": "Quem dera eu tivesse férias agora!", "es": "¡Ojalá tuviera vacaciones ahora!" },
-        { "target": "E se a gente pedisse uma pizza?", "es": "¿Y si pedimos una pizza?" }
+        {
+          "target": "Ela me olhou como se não me conhecesse.",
+          "es": "Me miró como si no me conociera."
+        },
+        {
+          "target": "Quem dera eu tivesse férias agora!",
+          "es": "¡Ojalá tuviera vacaciones ahora!"
+        },
+        {
+          "target": "E se a gente pedisse uma pizza?",
+          "es": "¿Y si pedimos una pizza?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ele fala como se fora o chefe.", "right": "Ele fala como se fosse o chefe.", "why": "Después de como se va la forma en -sse; fora es el pluscuamperfecto de ser e ir." },
-        { "wrong": "Ojalá pudesse ir.", "right": "Quem dera eu pudesse ir.", "why": "Para deseos poco probables o imposibles se usa quem dera; 'ojalá' no existe en portugués." }
+        {
+          "wrong": "Ele fala como se fora o chefe.",
+          "right": "Ele fala como se fosse o chefe.",
+          "why": "Después de como se va la forma en -sse; fora es el pluscuamperfecto de ser e ir."
+        },
+        {
+          "wrong": "Ojalá pudesse ir.",
+          "right": "Quem dera eu pudesse ir.",
+          "why": "Para deseos poco probables o imposibles se usa quem dera; 'ojalá' no existe en portugués."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "como se nada tivesse acontecido",
+          "es": "como si nada hubiera pasado",
+          "example": "Ele continuou trabalhando como se nada tivesse acontecido.",
+          "exampleEs": "Él siguió trabajando como si nada hubiera pasado."
+        },
+        {
+          "target": "quem dera eu pudesse",
+          "es": "ojalá pudiera",
+          "example": "Quem dera eu pudesse viajar com vocês.",
+          "exampleEs": "Ojalá pudiera viajar con ustedes."
+        },
+        {
+          "target": "e se a gente fosse",
+          "es": "¿y si fuéramos?",
+          "example": "E se a gente fosse para a praia esse fim de semana?",
+          "exampleEs": "¿Y si fuéramos a la playa este fin de semana?"
+        },
+        {
+          "target": "fala como se soubesse tudo",
+          "es": "habla como si supiera todo",
+          "example": "Ele fala como se soubesse tudo sobre o assunto.",
+          "exampleEs": "Él habla como si supiera todo sobre el tema."
+        },
+        {
+          "target": "quem dera fosse tão simples",
+          "es": "ojalá fuera tan simple",
+          "example": "Quem dera fosse tão simples resolver isso.",
+          "exampleEs": "Ojalá fuera tan simple resolver eso."
+        },
+        {
+          "target": "e se desse errado",
+          "es": "¿y si saliera mal?",
+          "example": "E se desse errado, o que a gente faria?",
+          "exampleEs": "¿Y si saliera mal, qué haríamos?"
+        }
       ]
     },
     {
@@ -86,7 +262,9 @@
       "day": 4,
       "title": "Correlación de tiempos",
       "goal": "Usar el imperfeito do subjuntivo cuando la oración principal está en pasado o en condicional.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Verbo principal en pasado o condicional → imperfeito do subjuntivo: Eu queria que você viesse. Seria bom que todos participassem.",
         "Compará: Peço que você ligue (presente) / Pedi que você ligasse (pasado).",
@@ -94,13 +272,68 @@
         "Con pedir, en la charla se sigue usando para + infinitivo: Ele pediu para eu ligar."
       ],
       "examples": [
-        { "target": "O médico mandou que eu descansasse.", "es": "El médico me indicó que descansara." },
-        { "target": "Era importante que todos soubessem a verdade.", "es": "Era importante que todos supieran la verdad." },
-        { "target": "Duvidei que ele viesse, mas ele veio.", "es": "Dudé que viniera, pero vino." }
+        {
+          "target": "O médico mandou que eu descansasse.",
+          "es": "El médico me indicó que descansara."
+        },
+        {
+          "target": "Era importante que todos soubessem a verdade.",
+          "es": "Era importante que todos supieran la verdad."
+        },
+        {
+          "target": "Duvidei que ele viesse, mas ele veio.",
+          "es": "Dudé que viniera, pero vino."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu queria que você vinhesse.", "right": "Eu queria que você viesse.", "why": "Se forma desde vieram: viesse. No lo mezcles con el imperfeito de indicativo vinha." },
-        { "wrong": "Duvidei que ele vinha.", "right": "Duvidei que ele viesse.", "why": "La duda pide subjuntivo también en pasado." }
+        {
+          "wrong": "Eu queria que você vinhesse.",
+          "right": "Eu queria que você viesse.",
+          "why": "Se forma desde vieram: viesse. No lo mezcles con el imperfeito de indicativo vinha."
+        },
+        {
+          "wrong": "Duvidei que ele vinha.",
+          "right": "Duvidei que ele viesse.",
+          "why": "La duda pide subjuntivo también en pasado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "eu queria que você viesse",
+          "es": "quería que vinieras",
+          "example": "Eu queria que você viesse à festa.",
+          "exampleEs": "Quería que vinieras a la fiesta."
+        },
+        {
+          "target": "pedi que ele esperasse",
+          "es": "le pedí que esperara",
+          "example": "Eu pedi que ele esperasse um pouco.",
+          "exampleEs": "Le pedí que esperara un poco."
+        },
+        {
+          "target": "seria bom se você ajudasse",
+          "es": "estaría bueno si ayudaras",
+          "example": "Seria bom se você ajudasse com a mudança.",
+          "exampleEs": "Estaría bueno si ayudaras con la mudanza."
+        },
+        {
+          "target": "eu esperava que funcionasse",
+          "es": "esperaba que funcionara",
+          "example": "Eu esperava que funcionasse na primeira tentativa.",
+          "exampleEs": "Esperaba que funcionara en el primer intento."
+        },
+        {
+          "target": "ele disse que viria se pudesse",
+          "es": "dijo que vendría si podía",
+          "example": "Ele disse que viria se pudesse sair do trabalho mais cedo.",
+          "exampleEs": "Dijo que vendría si podía salir del trabajo más temprano."
+        },
+        {
+          "target": "eu gostaria que fosse diferente",
+          "es": "me gustaría que fuera diferente",
+          "example": "Eu gostaria que fosse diferente, mas não é.",
+          "exampleEs": "Me gustaría que fuera diferente, pero no lo es."
+        }
       ]
     },
     {
@@ -108,19 +341,73 @@
       "day": 5,
       "title": "Situaciones imaginarias",
       "goal": "Comprender y escribir un texto sobre qué harías en una situación hipotética.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Plantear: Se eu pudesse..., Se eu ganhasse na loteria..., Imagina se...",
         "Desarrollar con condicional (o imperfeito en la charla): eu moraria, eu trabalharia menos, eu ia viajar.",
         "Matizar: Mesmo que..., Ainda que..., Pensando bem..."
       ],
       "examples": [
-        { "target": "Se eu ganhasse na loteria, a primeira coisa que faria seria comprar uma casa para os meus pais.", "es": "Si ganara la lotería, lo primero que haría sería comprarles una casa a mis padres." },
-        { "target": "Se eu pudesse morar em qualquer lugar, escolheria uma cidade com praia.", "es": "Si pudiera vivir en cualquier lugar, elegiría una ciudad con playa." },
-        { "target": "Pensando bem, mesmo que eu fosse rico, continuaria trabalhando.", "es": "Pensándolo bien, aunque fuera rico, seguiría trabajando." }
+        {
+          "target": "Se eu ganhasse na loteria, a primeira coisa que faria seria comprar uma casa para os meus pais.",
+          "es": "Si ganara la lotería, lo primero que haría sería comprarles una casa a mis padres."
+        },
+        {
+          "target": "Se eu pudesse morar em qualquer lugar, escolheria uma cidade com praia.",
+          "es": "Si pudiera vivir en cualquier lugar, elegiría una ciudad con playa."
+        },
+        {
+          "target": "Pensando bem, mesmo que eu fosse rico, continuaria trabalhando.",
+          "es": "Pensándolo bien, aunque fuera rico, seguiría trabajando."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se eu ganhasse a loteria, pararia de trabalhar.", "right": "Se eu ganhasse na loteria, pararia de trabalhar.", "why": "En Brasil se dice ganhar na loteria, con em." }
+        {
+          "wrong": "Se eu ganhasse a loteria, pararia de trabalhar.",
+          "right": "Se eu ganhasse na loteria, pararia de trabalhar.",
+          "why": "En Brasil se dice ganhar na loteria, con em."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "o que você faria",
+          "es": "qué harías",
+          "example": "O que você faria no meu lugar?",
+          "exampleEs": "¿Qué harías en mi lugar?"
+        },
+        {
+          "target": "eu faria tudo diferente",
+          "es": "haría todo diferente",
+          "example": "Se eu pudesse voltar no tempo, eu faria tudo diferente.",
+          "exampleEs": "Si pudiera volver en el tiempo, haría todo diferente."
+        },
+        {
+          "target": "na sua situação, eu",
+          "es": "en tu situación, yo",
+          "example": "Na sua situação, eu procuraria outro emprego.",
+          "exampleEs": "En tu situación, yo buscaría otro trabajo."
+        },
+        {
+          "target": "imagina se",
+          "es": "imaginate si",
+          "example": "Imagina se a gente ganhasse na loteria.",
+          "exampleEs": "Imaginate si ganáramos la lotería."
+        },
+        {
+          "target": "eu não sei o que seria de mim",
+          "es": "no sé qué sería de mí",
+          "example": "Sem vocês, eu não sei o que seria de mim.",
+          "exampleEs": "Sin ustedes, no sé qué sería de mí."
+        },
+        {
+          "target": "tanto faria",
+          "es": "daría lo mismo",
+          "example": "Tanto faria ir hoje ou amanhã.",
+          "exampleEs": "Daría lo mismo ir hoy o mañana."
+        }
       ]
     }
   ]

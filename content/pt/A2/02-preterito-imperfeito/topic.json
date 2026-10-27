@@ -11,7 +11,9 @@
     "Hablar de hábitos y descripciones del pasado",
     "Combinar imperfeito y perfeito en un relato"
   ],
-  "prerequisites": ["pt-a2-preterito-perfeito"],
+  "prerequisites": [
+    "pt-a2-preterito-perfeito"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,66 @@
       "day": 1,
       "title": "Formación",
       "goal": "Conjugar el imperfeito de los verbos regulares.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "-ar: falava, falava, falávamos, falavam.",
         "-er e -ir: comia, comia, comíamos, comiam; abria, abria, abríamos, abriam.",
         "Eu y ele tienen la misma forma: el contexto o el pronombre aclaran quién."
       ],
       "examples": [
-        { "target": "Eu morava em Córdoba.", "es": "Yo vivía en Córdoba." },
-        { "target": "Nós comíamos juntos todos os domingos.", "es": "Comíamos juntos todos los domingos." },
-        { "target": "Ela sempre abria a loja cedo.", "es": "Ella siempre abría el negocio temprano." }
+        {
+          "target": "Eu morava em Córdoba.",
+          "es": "Yo vivía en Córdoba."
+        },
+        {
+          "target": "Nós comíamos juntos todos os domingos.",
+          "es": "Comíamos juntos todos los domingos."
+        },
+        {
+          "target": "Ela sempre abria a loja cedo.",
+          "es": "Ella siempre abría el negocio temprano."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Nós falavamos.", "right": "Nós falávamos.", "why": "La forma de nós lleva tilde: falávamos, comíamos." }
+        {
+          "wrong": "Nós falavamos.",
+          "right": "Nós falávamos.",
+          "why": "La forma de nós lleva tilde: falávamos, comíamos."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Eu não sabia disso",
+          "es": "Yo no sabía eso",
+          "example": "Eu não sabia disso até ontem.",
+          "exampleEs": "Yo no sabía eso hasta ayer."
+        },
+        {
+          "target": "Ela sempre falava a verdade",
+          "es": "Ella siempre decía la verdad",
+          "example": "Na escola, ela sempre falava a verdade.",
+          "exampleEs": "En la escuela, ella siempre decía la verdad."
+        },
+        {
+          "target": "Nós morávamos perto daqui",
+          "es": "Vivíamos cerca de acá",
+          "example": "Há dez anos, nós morávamos perto daqui.",
+          "exampleEs": "Hace diez años, vivíamos cerca de acá."
+        },
+        {
+          "target": "Eles trabalhavam juntos",
+          "es": "Ellos trabajaban juntos",
+          "example": "No ano passado, eles trabalhavam juntos.",
+          "exampleEs": "El año pasado, ellos trabajaban juntos."
+        },
+        {
+          "target": "Eu achava que sim",
+          "es": "Yo pensaba que sí",
+          "example": "No começo, eu achava que sim.",
+          "exampleEs": "Al principio, yo pensaba que sí."
+        }
       ]
     },
     {
@@ -39,19 +88,66 @@
       "day": 2,
       "title": "Irregulares",
       "goal": "Conjugar los cuatro irregulares del imperfeito.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "ser: era, era, éramos, eram.",
         "ter: tinha, tinha, tínhamos, tinham. vir: vinha, vinha, vínhamos, vinham.",
         "pôr: punha, punha, púnhamos, punham. Son los únicos irregulares."
       ],
       "examples": [
-        { "target": "Quando eu era criança, tinha um cachorro.", "es": "Cuando era chico, tenía un perro." },
-        { "target": "Eles vinham sempre no verão.", "es": "Siempre venían en verano." },
-        { "target": "A casa era enorme.", "es": "La casa era enorme." }
+        {
+          "target": "Quando eu era criança, tinha um cachorro.",
+          "es": "Cuando era chico, tenía un perro."
+        },
+        {
+          "target": "Eles vinham sempre no verão.",
+          "es": "Siempre venían en verano."
+        },
+        {
+          "target": "A casa era enorme.",
+          "es": "La casa era enorme."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu tenia.", "right": "Eu tinha.", "why": "El imperfeito de ter es tinha." }
+        {
+          "wrong": "Eu tenia.",
+          "right": "Eu tinha.",
+          "why": "El imperfeito de ter es tinha."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Era uma vez",
+          "es": "Había una vez",
+          "example": "Era uma vez uma menina muito corajosa.",
+          "exampleEs": "Había una vez una nena muy valiente."
+        },
+        {
+          "target": "Eu tinha um sonho",
+          "es": "Yo tenía un sueño",
+          "example": "Quando jovem, eu tinha um sonho.",
+          "exampleEs": "Cuando era joven, yo tenía un sueño."
+        },
+        {
+          "target": "Ela vinha sempre aqui",
+          "es": "Ella venía siempre acá",
+          "example": "Antes, ela vinha sempre aqui depois da escola.",
+          "exampleEs": "Antes, ella venía siempre acá después de la escuela."
+        },
+        {
+          "target": "Não tinha nada a ver",
+          "es": "No tenía nada que ver",
+          "example": "Aquilo não tinha nada a ver com o problema.",
+          "exampleEs": "Eso no tenía nada que ver con el problema."
+        },
+        {
+          "target": "Isso não era normal",
+          "es": "Eso no era normal",
+          "example": "Na minha casa, isso não era normal.",
+          "exampleEs": "En mi casa, eso no era normal."
+        }
       ]
     },
     {
@@ -59,19 +155,67 @@
       "day": 3,
       "title": "Hábitos y descripciones",
       "goal": "Contar cómo eran las cosas y qué hacías habitualmente.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Hábitos: todos os dias, sempre, antigamente, quando eu era jovem.",
         "Descripciones de personas, lugares, el tiempo y la edad: Fazia calor. Eu tinha dez anos.",
         "costumava + infinitivo también expresa hábito: Eu costumava correr."
       ],
       "examples": [
-        { "target": "Antigamente a gente ia à praia todo fim de semana.", "es": "Antes íbamos a la playa todos los fines de semana." },
-        { "target": "Meu avô contava histórias incríveis.", "es": "Mi abuelo contaba historias increíbles." },
-        { "target": "Eu costumava acordar às seis.", "es": "Solía levantarme a las seis." }
+        {
+          "target": "Antigamente a gente ia à praia todo fim de semana.",
+          "es": "Antes íbamos a la playa todos los fines de semana."
+        },
+        {
+          "target": "Meu avô contava histórias incríveis.",
+          "es": "Mi abuelo contaba historias increíbles."
+        },
+        {
+          "target": "Eu costumava acordar às seis.",
+          "es": "Solía levantarme a las seis."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quando eu fui criança, morei no campo.", "right": "Quando eu era criança, morava no campo.", "why": "Para describir una etapa y lo habitual se usa el imperfeito." }
+        {
+          "wrong": "Quando eu fui criança, morei no campo.",
+          "right": "Quando eu era criança, morava no campo.",
+          "why": "Para describir una etapa y lo habitual se usa el imperfeito."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Eu sempre ia à praia",
+          "es": "Yo siempre iba a la playa",
+          "example": "No verão, eu sempre ia à praia.",
+          "exampleEs": "En verano, yo siempre iba a la playa."
+        },
+        {
+          "target": "A gente brincava na rua",
+          "es": "Jugábamos en la calle",
+          "example": "Antigamente, a gente brincava na rua até tarde.",
+          "exampleEs": "Antes, jugábamos en la calle hasta tarde."
+        },
+        {
+          "target": "Todo domingo almoçávamos juntos",
+          "es": "Todos los domingos almorzábamos juntos",
+          "example": "Todo domingo almoçávamos juntos na casa da vó.",
+          "exampleEs": "Todos los domingos almorzábamos juntos en la casa de la abuela."
+        },
+        {
+          "target": "De vez em quando ele aparecia",
+          "es": "De vez en cuando él aparecía",
+          "example": "De vez em quando ele aparecia sem avisar.",
+          "exampleEs": "De vez en cuando él aparecía sin avisar."
+        },
+        {
+          "target": "Na época, eu estudava muito",
+          "es": "En esa época yo estudiaba mucho",
+          "example": "Na época, eu estudava muito para as provas.",
+          "exampleEs": "En esa época yo estudiaba mucho para los exámenes."
+        }
       ]
     },
     {
@@ -79,19 +223,66 @@
       "day": 4,
       "title": "Imperfeito y perfeito juntos",
       "goal": "Distinguir el fondo de la historia de las acciones puntuales.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "El imperfeito describe el fondo; el perfeito, lo que pasó: Eu dormia quando o telefone tocou.",
         "estava + gerúndio es la acción en curso interrumpida: Eu estava jantando quando ela chegou.",
         "Igual que en español entre 'dormía' y 'durmió'."
       ],
       "examples": [
-        { "target": "Estava chovendo quando saímos.", "es": "Estaba lloviendo cuando salimos." },
-        { "target": "Ela lia um livro quando eu cheguei.", "es": "Ella leía un libro cuando llegué." },
-        { "target": "Era tarde, então pegamos um táxi.", "es": "Era tarde, así que tomamos un taxi." }
+        {
+          "target": "Estava chovendo quando saímos.",
+          "es": "Estaba lloviendo cuando salimos."
+        },
+        {
+          "target": "Ela lia um livro quando eu cheguei.",
+          "es": "Ella leía un libro cuando llegué."
+        },
+        {
+          "target": "Era tarde, então pegamos um táxi.",
+          "es": "Era tarde, así que tomamos un taxi."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu dormi quando o telefone tocava.", "right": "Eu dormia quando o telefone tocou.", "why": "La acción de fondo va en imperfeito y la que interrumpe, en perfeito." }
+        {
+          "wrong": "Eu dormi quando o telefone tocava.",
+          "right": "Eu dormia quando o telefone tocou.",
+          "why": "La acción de fondo va en imperfeito y la que interrumpe, en perfeito."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Estava chovendo quando saí",
+          "es": "Estaba lloviendo cuando salí",
+          "example": "Estava chovendo quando saí de casa.",
+          "exampleEs": "Estaba lloviendo cuando salí de casa."
+        },
+        {
+          "target": "De repente, tudo mudou",
+          "es": "De repente, todo cambió",
+          "example": "Estava tudo calmo, mas de repente, tudo mudou.",
+          "exampleEs": "Todo estaba tranquilo, pero de repente, todo cambió."
+        },
+        {
+          "target": "Enquanto isso, ele dormia",
+          "es": "Mientras tanto, él dormía",
+          "example": "Eu arrumava a casa e, enquanto isso, ele dormia.",
+          "exampleEs": "Yo ordenaba la casa y, mientras tanto, él dormía."
+        },
+        {
+          "target": "Foi então que eu entendi",
+          "es": "Fue entonces que entendí",
+          "example": "Ele explicou tudo e foi então que eu entendi.",
+          "exampleEs": "Él explicó todo y fue entonces que entendí."
+        },
+        {
+          "target": "Eu já sabia disso",
+          "es": "Yo ya sabía eso",
+          "example": "Quando ela me contou, eu já sabia disso.",
+          "exampleEs": "Cuando ella me contó, yo ya sabía eso."
+        }
       ]
     },
     {
@@ -99,19 +290,67 @@
       "day": 5,
       "title": "Recuerdos de infancia",
       "goal": "Comprender y escribir un texto sobre tu infancia.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Usá el imperfeito para describir y los hábitos, y el perfeito para un hecho puntual.",
         "Conectores: naquela época, quando, enquanto, um dia.",
         "Vocabulario: brincar (jugar), bairro, vizinho, escola, férias."
       ],
       "examples": [
-        { "target": "Naquela época eu brincava na rua com os vizinhos.", "es": "En esa época jugaba en la calle con los vecinos." },
-        { "target": "Um dia caí da bicicleta e quebrei o braço.", "es": "Un día me caí de la bici y me quebré el brazo." },
-        { "target": "Enquanto minha mãe cozinhava, eu fazia a lição.", "es": "Mientras mi mamá cocinaba, yo hacía la tarea." }
+        {
+          "target": "Naquela época eu brincava na rua com os vizinhos.",
+          "es": "En esa época jugaba en la calle con los vecinos."
+        },
+        {
+          "target": "Um dia caí da bicicleta e quebrei o braço.",
+          "es": "Un día me caí de la bici y me quebré el brazo."
+        },
+        {
+          "target": "Enquanto minha mãe cozinhava, eu fazia a lição.",
+          "es": "Mientras mi mamá cocinaba, yo hacía la tarea."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quando era criança, eu jogava de esconde-esconde.", "right": "Quando era criança, eu brincava de esconde-esconde.", "why": "Para los juegos de chicos se usa brincar; jogar es para deportes y juegos con reglas." }
+        {
+          "wrong": "Quando era criança, eu jogava de esconde-esconde.",
+          "right": "Quando era criança, eu brincava de esconde-esconde.",
+          "why": "Para los juegos de chicos se usa brincar; jogar es para deportes y juegos con reglas."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Quando eu era criança",
+          "es": "Cuando yo era chico",
+          "example": "Quando eu era criança, morava no interior.",
+          "exampleEs": "Cuando yo era chico, vivía en el interior."
+        },
+        {
+          "target": "Na minha infância",
+          "es": "En mi infancia",
+          "example": "Na minha infância, tudo parecia mais simples.",
+          "exampleEs": "En mi infancia, todo parecía más simple."
+        },
+        {
+          "target": "Eu adorava isso",
+          "es": "Yo adoraba eso",
+          "example": "Brincar na chuva, eu adorava isso.",
+          "exampleEs": "Jugar en la lluvia, yo adoraba eso."
+        },
+        {
+          "target": "Que saudade daquela época!",
+          "es": "¡Qué nostalgia de esa época!",
+          "example": "Vendo essas fotos, que saudade daquela época!",
+          "exampleEs": "Viendo estas fotos, ¡qué nostalgia de esa época!"
+        },
+        {
+          "target": "Os tempos eram outros",
+          "es": "Los tiempos eran otros",
+          "example": "Na minha infância, os tempos eram outros.",
+          "exampleEs": "En mi infancia, los tiempos eran otros."
+        }
       ]
     }
   ]

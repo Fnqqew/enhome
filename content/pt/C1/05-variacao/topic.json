@@ -12,7 +12,10 @@
     "Reconocer las diferencias de ortografía y pronunciación",
     "Adaptar un texto de Portugal al portugués de Brasil"
   ],
-  "prerequisites": ["pt-c1-colocacao-pronominal", "pt-c1-expressoes-idiomaticas"],
+  "prerequisites": [
+    "pt-c1-colocacao-pronominal",
+    "pt-c1-expressoes-idiomaticas"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,9 @@
       "day": 1,
       "title": "Tu, você y el trato",
       "goal": "Reconocer las formas de tratamiento de cada país.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Brasil: você es el trato general. Tu se usa en el Sur y en partes del Norte y el Nordeste, muchas veces con el verbo en tercera persona al hablar (tu vai).",
         "Portugal: tu con verbo en segunda persona (tu vais, tu falas) entre amigos y en familia.",
@@ -28,12 +33,63 @@
         "Vocês es el plural en los dos países; vós quedó para la liturgia y algunas zonas del norte de Portugal."
       ],
       "examples": [
-        { "target": "Tu vais à festa hoje à noite?", "es": "¿Vas a la fiesta esta noche? (Portugal)" },
-        { "target": "Você vai à festa hoje à noite?", "es": "¿Vas a la fiesta esta noche? (Brasil)" },
-        { "target": "O senhor deseja mais alguma coisa?", "es": "¿Desea algo más? (los dos países)" }
+        {
+          "target": "Tu vais à festa hoje à noite?",
+          "es": "¿Vas a la fiesta esta noche? (Portugal)"
+        },
+        {
+          "target": "Você vai à festa hoje à noite?",
+          "es": "¿Vas a la fiesta esta noche? (Brasil)"
+        },
+        {
+          "target": "O senhor deseja mais alguma coisa?",
+          "es": "¿Desea algo más? (los dos países)"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Tu vai gostar do filme. (en un texto escrito)", "right": "Você vai gostar do filme.", "why": "Tu con verbo en tercera persona es muy común al hablar en partes de Brasil, pero al escribir va você vai o tu vais." }
+        {
+          "wrong": "Tu vai gostar do filme. (en un texto escrito)",
+          "right": "Você vai gostar do filme.",
+          "why": "Tu con verbo en tercera persona es muy común al hablar en partes de Brasil, pero al escribir va você vai o tu vais."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "tu estás bem?",
+          "es": "¿vos estás bien?",
+          "example": "Tu estás bem? Pareces cansado hoje.",
+          "exampleEs": "¿Vos estás bien? Parés cansado hoy."
+        },
+        {
+          "target": "como é que tu te chamas",
+          "es": "¿cómo te llamás?",
+          "example": "Desculpa, como é que tu te chamas?",
+          "exampleEs": "Disculpá, ¿cómo te llamás?"
+        },
+        {
+          "target": "você poderia me ajudar",
+          "es": "¿podrías ayudarme?",
+          "example": "Você poderia me ajudar a carregar essas malas?",
+          "exampleEs": "¿Podrías ayudarme a llevar estas valijas?"
+        },
+        {
+          "target": "o senhor tem hora marcada",
+          "es": "¿tiene hora reservada?",
+          "example": "Bom dia, o senhor tem hora marcada com o doutor?",
+          "exampleEs": "Buen día, ¿tiene hora reservada con el doctor?"
+        },
+        {
+          "target": "a senhora precisa de algo",
+          "es": "¿necesita algo?",
+          "example": "A senhora precisa de algo mais antes de eu sair?",
+          "exampleEs": "¿Necesita algo más antes de que me vaya?"
+        },
+        {
+          "target": "tu vais sair hoje",
+          "es": "¿vos vas a salir hoy?",
+          "example": "Tu vais sair hoje à noite ou ficas em casa?",
+          "exampleEs": "¿Vos vas a salir hoy a la noche o te quedás en casa?"
+        }
       ]
     },
     {
@@ -41,7 +97,9 @@
       "day": 2,
       "title": "Gerundio, pronombres y artículos",
       "goal": "Distinguir las estructuras gramaticales típicas de cada variante.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Acción en curso: Brasil estou fazendo; Portugal estou a fazer (en el sur de Portugal también se oye el gerundio).",
         "Pronombres: en Portugal la ênclise es normal al hablar (Chamo-me Ana, Ele disse-me); en Brasil, la próclise (Me chamo Ana, Ele me disse).",
@@ -49,12 +107,63 @@
         "En la charla de Brasil: deixa eu ver, vi ele; en Portugal: deixa-me ver, vi-o."
       ],
       "examples": [
-        { "target": "Estou a trabalhar em casa hoje.", "es": "Hoy estoy trabajando desde casa. (Portugal)" },
-        { "target": "Chamo-me Inês e moro em Lisboa.", "es": "Me llamo Inés y vivo en Lisboa. (Portugal)" },
-        { "target": "Deixa eu ver o seu celular.", "es": "Dejame ver tu celular. (Brasil)" }
+        {
+          "target": "Estou a trabalhar em casa hoje.",
+          "es": "Hoy estoy trabajando desde casa. (Portugal)"
+        },
+        {
+          "target": "Chamo-me Inês e moro em Lisboa.",
+          "es": "Me llamo Inés y vivo en Lisboa. (Portugal)"
+        },
+        {
+          "target": "Deixa eu ver o seu celular.",
+          "es": "Dejame ver tu celular. (Brasil)"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Estou a fazendo o jantar.", "right": "Estou fazendo o jantar.", "why": "Elegí una variante: gerundio (Brasil: estou fazendo) o a + infinitivo (Portugal: estou a fazer), nunca las dos juntas." }
+        {
+          "wrong": "Estou a fazendo o jantar.",
+          "right": "Estou fazendo o jantar.",
+          "why": "Elegí una variante: gerundio (Brasil: estou fazendo) o a + infinitivo (Portugal: estou a fazer), nunca las dos juntas."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "estou a fazer",
+          "es": "estoy haciendo",
+          "example": "Estou a fazer o jantar, espera só um pouco.",
+          "exampleEs": "Estoy haciendo la cena, esperá un poquito."
+        },
+        {
+          "target": "estou fazendo",
+          "es": "estoy haciendo",
+          "example": "Estou fazendo o jantar, espera só um pouco.",
+          "exampleEs": "Estoy haciendo la cena, esperá un poquito."
+        },
+        {
+          "target": "vou-me embora",
+          "es": "me voy",
+          "example": "Já está tarde, vou-me embora para casa.",
+          "exampleEs": "Ya es tarde, me voy para casa."
+        },
+        {
+          "target": "vou embora",
+          "es": "me voy",
+          "example": "Já está tarde, vou embora para casa.",
+          "exampleEs": "Ya es tarde, me voy para casa."
+        },
+        {
+          "target": "dá-me um minuto",
+          "es": "dame un minuto",
+          "example": "Dá-me um minuto que já vou contigo.",
+          "exampleEs": "Dame un minuto que ya voy con vos."
+        },
+        {
+          "target": "me dá um minuto",
+          "es": "dame un minuto",
+          "example": "Me dá um minuto que já vou com você.",
+          "exampleEs": "Dame un minuto que ya voy con vos."
+        }
       ]
     },
     {
@@ -62,7 +171,10 @@
       "day": 3,
       "title": "Vocabulario distinto",
       "goal": "Reconocer las palabras que cambian entre Brasil y Portugal.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Transporte: ônibus / autocarro, trem / comboio, metrô / metro, pegar / apanhar (o ônibus), pedestre / peão.",
         "Casa y comida: café da manhã / pequeno-almoço, banheiro / casa de banho, geladeira / frigorífico, suco / sumo, sorvete / gelado.",
@@ -71,13 +183,68 @@
         "Para 'copado': legal (Brasil), fixe (Portugal)."
       ],
       "examples": [
-        { "target": "Peguei o ônibus e depois o metrô.", "es": "Tomé el colectivo y después el subte. (Brasil)" },
-        { "target": "Apanhei o autocarro e depois o comboio.", "es": "Tomé el colectivo y después el tren. (Portugal)" },
-        { "target": "Deixei o celular na mesa do café da manhã.", "es": "Dejé el celular en la mesa del desayuno. (Brasil)" }
+        {
+          "target": "Peguei o ônibus e depois o metrô.",
+          "es": "Tomé el colectivo y después el subte. (Brasil)"
+        },
+        {
+          "target": "Apanhei o autocarro e depois o comboio.",
+          "es": "Tomé el colectivo y después el tren. (Portugal)"
+        },
+        {
+          "target": "Deixei o celular na mesa do café da manhã.",
+          "es": "Dejé el celular en la mesa del desayuno. (Brasil)"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Vou deixar uma propina para o garçom.", "right": "Vou deixar uma gorjeta para o garçom.", "why": "En Brasil propina es un soborno; la propina del español es gorjeta." },
-        { "wrong": "Que rapariga simpática! (en Brasil)", "right": "Que moça simpática!", "why": "En buena parte de Brasil rapariga es un insulto; usá moça o garota." }
+        {
+          "wrong": "Vou deixar uma propina para o garçom.",
+          "right": "Vou deixar uma gorjeta para o garçom.",
+          "why": "En Brasil propina es un soborno; la propina del español es gorjeta."
+        },
+        {
+          "wrong": "Que rapariga simpática! (en Brasil)",
+          "right": "Que moça simpática!",
+          "why": "En buena parte de Brasil rapariga es un insulto; usá moça o garota."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "fazer bicha",
+          "es": "hacer fila",
+          "example": "Tivemos de fazer bicha durante uma hora no banco.",
+          "exampleEs": "Tuvimos que hacer fila durante una hora en el banco."
+        },
+        {
+          "target": "fazer fila",
+          "es": "hacer fila",
+          "example": "Tivemos que fazer fila durante uma hora no banco.",
+          "exampleEs": "Tuvimos que hacer fila durante una hora en el banco."
+        },
+        {
+          "target": "pequeno-almoço",
+          "es": "desayuno",
+          "example": "Tomei o pequeno-almoço às oito da manhã.",
+          "exampleEs": "Desayuné a las ocho de la mañana."
+        },
+        {
+          "target": "café da manhã",
+          "es": "desayuno",
+          "example": "Tomei o café da manhã às oito.",
+          "exampleEs": "Desayuné a las ocho."
+        },
+        {
+          "target": "casa de banho",
+          "es": "baño",
+          "example": "Onde fica a casa de banho, por favor?",
+          "exampleEs": "¿Dónde queda el baño, por favor?"
+        },
+        {
+          "target": "ir ao banheiro",
+          "es": "ir al baño",
+          "example": "Precisava ir ao banheiro antes de sair.",
+          "exampleEs": "Necesitaba ir al baño antes de salir."
+        }
       ]
     },
     {
@@ -85,7 +252,9 @@
       "day": 4,
       "title": "Ortografía y pronunciación",
       "goal": "Reconocer las diferencias de escritura y de sonido.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Con el Acuerdo Ortográfico (obligatorio en Brasil desde 2016) casi todo se escribe igual, pero quedan diferencias.",
         "Acentos según la vocal sea cerrada (Brasil) o abierta (Portugal): econômico / económico, Antônio / António, gênero / género, bebê / bebé.",
@@ -93,13 +262,68 @@
         "Pronunciación: en Brasil se oyen todas las vocales y en gran parte del país de y te suenan 'dyi' y 'chi' (tarde, noite); en Portugal las vocales átonas casi desaparecen y la s final suena 'sh'."
       ],
       "examples": [
-        { "target": "O fato é que ninguém sabia.", "es": "El hecho es que nadie sabía. (Brasil)" },
-        { "target": "O facto é que ninguém sabia.", "es": "El hecho es que nadie sabía. (Portugal)" },
-        { "target": "O Antônio está na recepção.", "es": "Antonio está en la recepción. (Brasil)" }
+        {
+          "target": "O fato é que ninguém sabia.",
+          "es": "El hecho es que nadie sabía. (Brasil)"
+        },
+        {
+          "target": "O facto é que ninguém sabia.",
+          "es": "El hecho es que nadie sabía. (Portugal)"
+        },
+        {
+          "target": "O Antônio está na recepção.",
+          "es": "Antonio está en la recepción. (Brasil)"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "O plano é muito económico.", "right": "O plano é muito econômico.", "why": "En Brasil la o de econômico es cerrada y lleva circunflejo; económico es la grafía de Portugal." },
-        { "wrong": "Vou ao casamento de fato e gravata. (en Brasil)", "right": "Vou ao casamento de terno e gravata.", "why": "En Brasil el traje es terno; fato con ese sentido es de Portugal, y en Brasil fato es 'hecho'." }
+        {
+          "wrong": "O plano é muito económico.",
+          "right": "O plano é muito econômico.",
+          "why": "En Brasil la o de econômico es cerrada y lleva circunflejo; económico es la grafía de Portugal."
+        },
+        {
+          "wrong": "Vou ao casamento de fato e gravata. (en Brasil)",
+          "right": "Vou ao casamento de terno e gravata.",
+          "why": "En Brasil el traje es terno; fato con ese sentido es de Portugal, y en Brasil fato es 'hecho'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "isso é económico",
+          "es": "eso es económico",
+          "example": "Para quem viaja muito, isso é económico a longo prazo.",
+          "exampleEs": "Para quien viaja mucho, eso es económico a largo plazo."
+        },
+        {
+          "target": "isso é econômico",
+          "es": "eso es económico",
+          "example": "Para quem viaja muito, isso é econômico a longo prazo.",
+          "exampleEs": "Para quien viaja mucho, eso es económico a largo plazo."
+        },
+        {
+          "target": "um fenómeno estranho",
+          "es": "un fenómeno raro",
+          "example": "Os cientistas observaram um fenómeno estranho no céu.",
+          "exampleEs": "Los científicos observaron un fenómeno raro en el cielo."
+        },
+        {
+          "target": "um fenômeno estranho",
+          "es": "un fenómeno raro",
+          "example": "Os cientistas observaram um fenômeno estranho no céu.",
+          "exampleEs": "Los científicos observaron un fenómeno raro en el cielo."
+        },
+        {
+          "target": "um bebé lindo",
+          "es": "un bebé lindo",
+          "example": "Eles tiveram um bebé lindo no mês passado.",
+          "exampleEs": "Ellos tuvieron un bebé lindo el mes pasado."
+        },
+        {
+          "target": "um bebê lindo",
+          "es": "un bebé lindo",
+          "example": "Eles tiveram um bebê lindo no mês passado.",
+          "exampleEs": "Ellos tuvieron un bebé lindo el mes pasado."
+        }
       ]
     },
     {
@@ -107,7 +331,10 @@
       "day": 5,
       "title": "Adaptar un texto de Portugal",
       "goal": "Comprender un texto de Portugal y reescribirlo en portugués de Brasil.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Buscá las marcas de Portugal: a + infinitivo, ênclise al hablar, tu con segunda persona, vocabulario como autocarro o telemóvel.",
         "Reemplazalas por las de Brasil sin mezclar: un mismo texto, una sola variante.",
@@ -115,12 +342,63 @@
         "Ejemplos: Estou a ligar-te do telemóvel → Estou te ligando do celular. Apanhei o comboio → Peguei o trem. O pequeno-almoço → O café da manhã."
       ],
       "examples": [
-        { "target": "Estou te ligando do celular do meu irmão.", "es": "Te estoy llamando del celular de mi hermano." },
-        { "target": "Vamos tomar café da manhã às oito.", "es": "Vamos a desayunar a las ocho." },
-        { "target": "Peguei o trem para o centro.", "es": "Tomé el tren al centro." }
+        {
+          "target": "Estou te ligando do celular do meu irmão.",
+          "es": "Te estoy llamando del celular de mi hermano."
+        },
+        {
+          "target": "Vamos tomar café da manhã às oito.",
+          "es": "Vamos a desayunar a las ocho."
+        },
+        {
+          "target": "Peguei o trem para o centro.",
+          "es": "Tomé el tren al centro."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Peguei o autocarro e liguei do celular.", "right": "Peguei o ônibus e liguei do celular.", "why": "Mezclar variantes en un mismo texto suena raro: autocarro es de Portugal; en Brasil, ônibus." }
+        {
+          "wrong": "Peguei o autocarro e liguei do celular.",
+          "right": "Peguei o ônibus e liguei do celular.",
+          "why": "Mezclar variantes en un mismo texto suena raro: autocarro es de Portugal; en Brasil, ônibus."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "encontra-se disponível",
+          "es": "está disponible",
+          "example": "O documento encontra-se disponível na secretaria até sexta-feira.",
+          "exampleEs": "El documento está disponible en la secretaría hasta el viernes."
+        },
+        {
+          "target": "dever-se-á proceder",
+          "es": "se deberá proceder",
+          "example": "Dever-se-á proceder à revisão do contrato antes do final do mês.",
+          "exampleEs": "Se deberá proceder a la revisión del contrato antes de fin de mes."
+        },
+        {
+          "target": "no âmbito de",
+          "es": "en el marco de",
+          "example": "A pesquisa foi realizada no âmbito de um projeto europeu.",
+          "exampleEs": "La investigación se realizó en el marco de un proyecto europeo."
+        },
+        {
+          "target": "a presente informação",
+          "es": "la presente información",
+          "example": "A presente informação destina-se apenas aos funcionários do setor.",
+          "exampleEs": "La presente información está destinada solo a los empleados del sector."
+        },
+        {
+          "target": "tal como referido",
+          "es": "tal como se mencionó",
+          "example": "Tal como referido no relatório, as vendas caíram este trimestre.",
+          "exampleEs": "Tal como se mencionó en el informe, las ventas cayeron este trimestre."
+        },
+        {
+          "target": "encontra-se em análise",
+          "es": "se encuentra en análisis",
+          "example": "O pedido encontra-se em análise pelo departamento jurídico.",
+          "exampleEs": "El pedido se encuentra en análisis por el departamento legal."
+        }
       ]
     }
   ]

@@ -11,7 +11,9 @@
     "Ubicar me, te y nos antes o después del verbo",
     "Reconocer el uso hablado de Brasil (vi ele, te ligo)"
   ],
-  "prerequisites": ["pt-a1-presente"],
+  "prerequisites": [
+    "pt-a1-presente"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,66 @@
       "day": 1,
       "title": "Objeto directo: o, a, os, as",
       "goal": "Reemplazar el objeto directo con un pronombre.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "o, a, os, as equivalen a lo, la, los, las: Eu comprei o livro → Eu o comprei.",
         "Después de un verbo terminado en -r, -s o -z cambian a lo, la: Vou comprá-lo.",
         "Después de un verbo terminado en sonido nasal cambian a no, na: Viram-no (más escrito que hablado)."
       ],
       "examples": [
-        { "target": "Conheço a Marta. Eu a conheço há anos.", "es": "Conozco a Marta. La conozco hace años." },
-        { "target": "Preciso ver o relatório. Vou vê-lo amanhã.", "es": "Tengo que ver el informe. Lo voy a ver mañana." },
-        { "target": "Onde estão as chaves? Não as encontro.", "es": "¿Dónde están las llaves? No las encuentro." }
+        {
+          "target": "Conheço a Marta. Eu a conheço há anos.",
+          "es": "Conozco a Marta. La conozco hace años."
+        },
+        {
+          "target": "Preciso ver o relatório. Vou vê-lo amanhã.",
+          "es": "Tengo que ver el informe. Lo voy a ver mañana."
+        },
+        {
+          "target": "Onde estão as chaves? Não as encontro.",
+          "es": "¿Dónde están las llaves? No las encuentro."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Vou comprar-o.", "right": "Vou comprá-lo.", "why": "Después de -r el pronombre pasa a lo y el verbo pierde la r." }
+        {
+          "wrong": "Vou comprar-o.",
+          "right": "Vou comprá-lo.",
+          "why": "Después de -r el pronombre pasa a lo y el verbo pierde la r."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "posso ajudá-lo?",
+          "es": "¿lo puedo ayudar?",
+          "example": "Bom dia, posso ajudá-lo?",
+          "exampleEs": "Buen día, ¿lo puedo ayudar?"
+        },
+        {
+          "target": "vou buscá-la",
+          "es": "la voy a buscar",
+          "example": "Vou buscá-la na escola às cinco.",
+          "exampleEs": "La voy a buscar al colegio a las cinco."
+        },
+        {
+          "target": "não vou fazê-lo",
+          "es": "no lo voy a hacer",
+          "example": "Eu sei que é importante, mas não vou fazê-lo hoje.",
+          "exampleEs": "Sé que es importante, pero no lo voy a hacer hoy."
+        },
+        {
+          "target": "vou levá-los comigo",
+          "es": "los voy a llevar conmigo",
+          "example": "Vou levá-los comigo pra festa.",
+          "exampleEs": "Los voy a llevar conmigo a la fiesta."
+        },
+        {
+          "target": "Deus o abençoe",
+          "es": "que Dios te bendiga",
+          "example": "Vai com cuidado, Deus o abençoe.",
+          "exampleEs": "Andá con cuidado, que Dios te bendiga."
+        }
       ]
     },
     {
@@ -39,19 +88,66 @@
       "day": 2,
       "title": "Objeto indirecto: lhe y para ele",
       "goal": "Indicar a quién va dirigida una acción.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "lhe/lhes equivale a le/les: Eu lhe dei um presente (escrito y formal).",
         "En el habla de Brasil se prefiere preposición + pronombre: Dei um presente para ele.",
         "Con você, lhe suele significar 'a vos' o 'a usted': Posso lhe ajudar?"
       ],
       "examples": [
-        { "target": "Mandei uma mensagem para ela.", "es": "Le mandé un mensaje a ella." },
-        { "target": "Vou explicar para vocês.", "es": "Les voy a explicar." },
-        { "target": "Posso lhe fazer uma pergunta?", "es": "¿Le puedo hacer una pregunta?" }
+        {
+          "target": "Mandei uma mensagem para ela.",
+          "es": "Le mandé un mensaje a ella."
+        },
+        {
+          "target": "Vou explicar para vocês.",
+          "es": "Les voy a explicar."
+        },
+        {
+          "target": "Posso lhe fazer uma pergunta?",
+          "es": "¿Le puedo hacer una pregunta?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Le dei o livro.", "right": "Dei o livro para ele.", "why": "En portugués no existe le: se usa lhe o para + pronombre." }
+        {
+          "wrong": "Le dei o livro.",
+          "right": "Dei o livro para ele.",
+          "why": "En portugués no existe le: se usa lhe o para + pronombre."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "isso não lhe diz respeito",
+          "es": "eso no te incumbe",
+          "example": "Com todo respeito, isso não lhe diz respeito.",
+          "exampleEs": "Con todo respeto, eso no te incumbe."
+        },
+        {
+          "target": "lhe desejo boa sorte",
+          "es": "te deseo buena suerte",
+          "example": "Antes da prova, lhe desejo boa sorte.",
+          "exampleEs": "Antes del examen, te deseo buena suerte."
+        },
+        {
+          "target": "vou dar isso pra ele",
+          "es": "le voy a dar esto a él",
+          "example": "Comprei um presente e vou dar isso pra ele.",
+          "exampleEs": "Compré un regalo y le voy a dar esto a él."
+        },
+        {
+          "target": "manda um abraço pra ela",
+          "es": "mandale un abrazo a ella",
+          "example": "Quando falar com a tua mãe, manda um abraço pra ela.",
+          "exampleEs": "Cuando hables con tu mamá, mandale un abrazo a ella."
+        },
+        {
+          "target": "faz um favor pra mim",
+          "es": "hacemé un favor",
+          "example": "Faz um favor pra mim e fecha a porta.",
+          "exampleEs": "Hacemé un favor y cerrá la puerta."
+        }
       ]
     },
     {
@@ -59,19 +155,67 @@
       "day": 3,
       "title": "Me, te, nos y dónde van",
       "goal": "Ubicar los pronombres antes o después del verbo según el uso de Brasil.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "En Brasil, en la charla, el pronombre va antes del verbo: Me liga depois. Te espero aqui.",
         "Con não, palabras de pregunta, que y adverbios como já o sempre, va antes también en la norma: Não me ligue.",
         "En el escrito formal no se empieza una oración con pronombre: Ligue-me."
       ],
       "examples": [
-        { "target": "Me passa o sal, por favor?", "es": "¿Me pasás la sal, por favor?" },
-        { "target": "Eu não te entendi.", "es": "No te entendí." },
-        { "target": "Ela sempre nos ajuda.", "es": "Ella siempre nos ayuda." }
+        {
+          "target": "Me passa o sal, por favor?",
+          "es": "¿Me pasás la sal, por favor?"
+        },
+        {
+          "target": "Eu não te entendi.",
+          "es": "No te entendí."
+        },
+        {
+          "target": "Ela sempre nos ajuda.",
+          "es": "Ella siempre nos ayuda."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Não ligue-me.", "right": "Não me ligue.", "why": "Con não el pronombre va siempre antes del verbo." }
+        {
+          "wrong": "Não ligue-me.",
+          "right": "Não me ligue.",
+          "why": "Con não el pronombre va siempre antes del verbo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "me liga depois",
+          "es": "llamame después",
+          "example": "Agora estou ocupado, me liga depois.",
+          "exampleEs": "Ahora estoy ocupado, llamame después."
+        },
+        {
+          "target": "me faz um favor",
+          "es": "hacemé un favor",
+          "example": "Me faz um favor e passa o celular.",
+          "exampleEs": "Hacemé un favor y pasame el celular."
+        },
+        {
+          "target": "te vejo lá",
+          "es": "te veo allá",
+          "example": "Pode ir na frente, te vejo lá.",
+          "exampleEs": "Podés ir adelante, te veo allá."
+        },
+        {
+          "target": "me espera um minuto",
+          "es": "esperame un minuto",
+          "example": "Me espera um minuto, já volto.",
+          "exampleEs": "Esperame un minuto, ya vuelvo."
+        },
+        {
+          "target": "te conto depois",
+          "es": "te cuento después",
+          "example": "Agora não dá, te conto depois.",
+          "exampleEs": "Ahora no puedo, te cuento después."
+        }
       ]
     },
     {
@@ -79,19 +223,66 @@
       "day": 4,
       "title": "Cómo se habla en Brasil",
       "goal": "Reconocer los usos orales que no coinciden con la gramática escrita.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "En la charla se usa ele/ela como objeto directo: Vi ele ontem (en lo escrito: Eu o vi).",
         "Te se usa con você aunque la norma pediría lhe u o: Te ligo amanhã.",
         "Muchas veces el objeto se omite: Você comprou o pão? — Comprei."
       ],
       "examples": [
-        { "target": "Encontrei ela no shopping.", "es": "La encontré en el shopping." },
-        { "target": "Te mando o endereço.", "es": "Te mando la dirección." },
-        { "target": "Você viu o jogo? — Vi.", "es": "¿Viste el partido? — Sí, lo vi." }
+        {
+          "target": "Encontrei ela no shopping.",
+          "es": "La encontré en el shopping."
+        },
+        {
+          "target": "Te mando o endereço.",
+          "es": "Te mando la dirección."
+        },
+        {
+          "target": "Você viu o jogo? — Vi.",
+          "es": "¿Viste el partido? — Sí, lo vi."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Prezado senhor, vi ele na reunião.", "right": "Prezado senhor, eu o vi na reunião.", "why": "La forma oral es normal en la charla, pero en un texto formal se usa el pronombre de la norma." }
+        {
+          "wrong": "Prezado senhor, vi ele na reunião.",
+          "right": "Prezado senhor, eu o vi na reunião.",
+          "why": "La forma oral es normal en la charla, pero en un texto formal se usa el pronombre de la norma."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "me dá uma mão",
+          "es": "dame una mano",
+          "example": "Cara, me dá uma mão aqui com isso.",
+          "exampleEs": "Che, dame una mano con esto."
+        },
+        {
+          "target": "cadê você?",
+          "es": "¿dónde estás?",
+          "example": "Faz tempo que te espero, cadê você?",
+          "exampleEs": "Hace rato que te espero, ¿dónde estás?"
+        },
+        {
+          "target": "pode crer",
+          "es": "tenés razon",
+          "example": "Isso que você disse faz sentido, pode crer.",
+          "exampleEs": "Lo que dijiste tiene sentido, tenés razon."
+        },
+        {
+          "target": "nem vem",
+          "es": "ni ahí",
+          "example": "Nem vem com desculpa, eu sei que você esqueceu.",
+          "exampleEs": "Ni ahí con excusas, se que te olvidaste."
+        },
+        {
+          "target": "tipo assim",
+          "es": "tipo así",
+          "example": "Eu queria explicar, tipo assim, do meu jeito.",
+          "exampleEs": "Quería explicar, tipo así, a mi manera."
+        }
       ]
     },
     {
@@ -99,19 +290,67 @@
       "day": 5,
       "title": "Pedir y ofrecer cosas",
       "goal": "Comprender y escribir pedidos y ofrecimientos usando pronombres.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Pedidos: Você pode me emprestar...? Me empresta...? Pode me mandar...?",
         "Ofrecimientos: Quer que eu te ajude? Posso te levar?",
         "Agradecer: Obrigado/a pela ajuda. Valeu!"
       ],
       "examples": [
-        { "target": "Você pode me emprestar o carregador?", "es": "¿Me podés prestar el cargador?" },
-        { "target": "Quer que eu te leve no aeroporto?", "es": "¿Querés que te lleve al aeropuerto?" },
-        { "target": "Valeu, você me salvou!", "es": "Gracias, ¡me salvaste!" }
+        {
+          "target": "Você pode me emprestar o carregador?",
+          "es": "¿Me podés prestar el cargador?"
+        },
+        {
+          "target": "Quer que eu te leve no aeroporto?",
+          "es": "¿Querés que te lleve al aeropuerto?"
+        },
+        {
+          "target": "Valeu, você me salvou!",
+          "es": "Gracias, ¡me salvaste!"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Você pode prestar-me o carregador?", "right": "Você pode me emprestar o carregador?", "why": "'Prestar' algo a alguien es emprestar en portugués, y en Brasil el pronombre va antes del infinitivo." }
+        {
+          "wrong": "Você pode prestar-me o carregador?",
+          "right": "Você pode me emprestar o carregador?",
+          "why": "'Prestar' algo a alguien es emprestar en portugués, y en Brasil el pronombre va antes del infinitivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "me passa o sal",
+          "es": "pasame la sal",
+          "example": "Por favor, me passa o sal.",
+          "exampleEs": "Por favor, pasame la sal."
+        },
+        {
+          "target": "posso te ajudar?",
+          "es": "¿te puedo ayudar?",
+          "example": "Você está com dificuldade, posso te ajudar?",
+          "exampleEs": "Estás con dificultades, ¿te puedo ayudar?"
+        },
+        {
+          "target": "quer que eu te ajude?",
+          "es": "¿querés que te ayude?",
+          "example": "Está pesado isso, quer que eu te ajude?",
+          "exampleEs": "Eso está pesado, ¿querés que te ayude?"
+        },
+        {
+          "target": "me dá uma mãozinha?",
+          "es": "¿me das una mano?",
+          "example": "Com essas malas, me dá uma mãozinha?",
+          "exampleEs": "Con estas valijas, ¿me das una mano?"
+        },
+        {
+          "target": "aceita um cafezinho?",
+          "es": "¿aceptás un cafecito?",
+          "example": "Entra e senta, aceita um cafezinho?",
+          "exampleEs": "Entrá y sentate, ¿aceptás un cafecito?"
+        }
       ]
     }
   ]

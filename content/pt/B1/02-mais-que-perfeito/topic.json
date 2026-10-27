@@ -12,7 +12,10 @@
     "Ordenar hechos en el pasado",
     "Contar una anécdota"
   ],
-  "prerequisites": ["pt-a2-preterito-perfeito", "pt-a2-preterito-imperfeito"],
+  "prerequisites": [
+    "pt-a2-preterito-perfeito",
+    "pt-a2-preterito-imperfeito"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,9 @@
       "day": 1,
       "title": "Tinha + participio",
       "goal": "Formar el pluscuamperfecto compuesto.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Imperfeito de ter + participio: eu tinha falado, você tinha comido, nós tínhamos saído, eles tinham partido.",
         "Participios regulares: -ar → -ado (falado); -er e -ir → -ido (comido, partido).",
@@ -28,13 +33,62 @@
         "El participio no cambia: Ela tinha chegado. Elas tinham chegado."
       ],
       "examples": [
-        { "target": "Quando cheguei, o filme já tinha começado.", "es": "Cuando llegué, la película ya había empezado." },
-        { "target": "Ela tinha saído cinco minutos antes.", "es": "Ella había salido cinco minutos antes." },
-        { "target": "Nós nunca tínhamos comido açaí.", "es": "Nunca habíamos comido açaí." }
+        {
+          "target": "Quando cheguei, o filme já tinha começado.",
+          "es": "Cuando llegué, la película ya había empezado."
+        },
+        {
+          "target": "Ela tinha saído cinco minutos antes.",
+          "es": "Ella había salido cinco minutos antes."
+        },
+        {
+          "target": "Nós nunca tínhamos comido açaí.",
+          "es": "Nunca habíamos comido açaí."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quando cheguei, ela já saiu.", "right": "Quando cheguei, ela já tinha saído.", "why": "Para una acción anterior a otra del pasado se usa tinha + participio, como 'ya había salido'." },
-        { "wrong": "Nós tinhamos ido.", "right": "Nós tínhamos ido.", "why": "La forma de nós lleva tilde: tínhamos, igual que en el imperfeito." }
+        {
+          "wrong": "Quando cheguei, ela já saiu.",
+          "right": "Quando cheguei, ela já tinha saído.",
+          "why": "Para una acción anterior a otra del pasado se usa tinha + participio, como 'ya había salido'."
+        },
+        {
+          "wrong": "Nós tinhamos ido.",
+          "right": "Nós tínhamos ido.",
+          "why": "La forma de nós lleva tilde: tínhamos, igual que en el imperfeito."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "eu já tinha dito",
+          "es": "ya te lo había dicho",
+          "example": "Eu já tinha dito que isso ia acontecer.",
+          "exampleEs": "Ya te había dicho que eso iba a pasar."
+        },
+        {
+          "target": "ele tinha esquecido",
+          "es": "se había olvidado",
+          "example": "Ele tinha esquecido a chave em casa.",
+          "exampleEs": "Se había olvidado la llave en casa."
+        },
+        {
+          "target": "nunca tinha visto isso",
+          "es": "nunca había visto eso",
+          "example": "Até aquele dia, eu nunca tinha visto isso.",
+          "exampleEs": "Hasta ese día, yo nunca había visto eso."
+        },
+        {
+          "target": "ela já tinha saído",
+          "es": "ya se había ido",
+          "example": "Quando chegamos, ela já tinha saído.",
+          "exampleEs": "Cuando llegamos, ella ya se había ido."
+        },
+        {
+          "target": "a gente tinha combinado",
+          "es": "habíamos quedado",
+          "example": "A gente tinha combinado de se encontrar às oito.",
+          "exampleEs": "Habíamos quedado en encontrarnos a las ocho."
+        }
       ]
     },
     {
@@ -42,7 +96,9 @@
       "day": 2,
       "title": "Participios irregulares",
       "goal": "Usar los participios irregulares más comunes.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "fazer → feito, dizer → dito, escrever → escrito, ver → visto, pôr → posto, abrir → aberto.",
         "vir → vindo: el participio es igual al gerundio (Ele tinha vindo de longe).",
@@ -50,14 +106,73 @@
         "Con ter, en Brasil se usan mucho ganho, gasto y pago: Eu já tinha pago a conta."
       ],
       "examples": [
-        { "target": "Ele disse que tinha feito tudo sozinho.", "es": "Dijo que había hecho todo solo." },
-        { "target": "Eu nunca tinha visto tanta gente.", "es": "Nunca había visto tanta gente." },
-        { "target": "Eles tinham vindo de ônibus.", "es": "Habían venido en colectivo." }
+        {
+          "target": "Ele disse que tinha feito tudo sozinho.",
+          "es": "Dijo que había hecho todo solo."
+        },
+        {
+          "target": "Eu nunca tinha visto tanta gente.",
+          "es": "Nunca había visto tanta gente."
+        },
+        {
+          "target": "Eles tinham vindo de ônibus.",
+          "es": "Habían venido en colectivo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu tinha escrevido uma carta.", "right": "Eu tinha escrito uma carta.", "why": "Escrever tiene participio irregular: escrito." },
-        { "wrong": "Ela tinha vinido cedo.", "right": "Ela tinha vindo cedo.", "why": "El participio de vir es vindo, igual que el gerundio." },
-        { "wrong": "Eu tinha volto tarde.", "right": "Eu tinha voltado tarde.", "why": "Voltar es regular: voltado. No copies el 'vuelto' del español." }
+        {
+          "wrong": "Eu tinha escrevido uma carta.",
+          "right": "Eu tinha escrito uma carta.",
+          "why": "Escrever tiene participio irregular: escrito."
+        },
+        {
+          "wrong": "Ela tinha vinido cedo.",
+          "right": "Ela tinha vindo cedo.",
+          "why": "El participio de vir es vindo, igual que el gerundio."
+        },
+        {
+          "wrong": "Eu tinha volto tarde.",
+          "right": "Eu tinha voltado tarde.",
+          "why": "Voltar es regular: voltado. No copies el 'vuelto' del español."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "tinha feito de propósito",
+          "es": "lo había hecho a propósito",
+          "example": "Descobri que ele tinha feito de propósito.",
+          "exampleEs": "Descubrí que él lo había hecho a propósito."
+        },
+        {
+          "target": "já tinha dito isso antes",
+          "es": "ya había dicho eso antes",
+          "example": "Fiquei irritado porque já tinha dito isso antes.",
+          "exampleEs": "Me enojé porque ya había dicho eso antes."
+        },
+        {
+          "target": "a porta tinha ficado aberta",
+          "es": "la puerta había quedado abierta",
+          "example": "Quando voltamos, a porta tinha ficado aberta.",
+          "exampleEs": "Cuando volvimos, la puerta había quedado abierta."
+        },
+        {
+          "target": "tinha posto a culpa em mim",
+          "es": "me había echado la culpa a mí",
+          "example": "Fiquei sabendo que ele tinha posto a culpa em mim.",
+          "exampleEs": "Me enteré de que él me había echado la culpa a mí."
+        },
+        {
+          "target": "ela tinha vindo correndo",
+          "es": "ella había venido corriendo",
+          "example": "Quando ouviu o grito, ela tinha vindo correndo.",
+          "exampleEs": "Cuando escuchó el grito, ella había venido corriendo."
+        },
+        {
+          "target": "eu tinha escrito um bilhete",
+          "es": "yo había escrito una nota",
+          "example": "Antes de sair, eu tinha escrito um bilhete pra ela.",
+          "exampleEs": "Antes de salir, yo había escrito una nota para ella."
+        }
       ]
     },
     {
@@ -65,7 +180,10 @@
       "day": 3,
       "title": "La forma simple: fizera",
       "goal": "Reconocer el mais-que-perfeito simples en la literatura y en expresiones fijas.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Se forma con la tercera persona plural del perfeito sin -ram + -ra: falaram → falara, fizeram → fizera, tiveram → tivera, foram → fora.",
         "Significa lo mismo que tinha + participio: Quando chegou, o ônibus já partira (= já tinha partido).",
@@ -74,12 +192,57 @@
         "Sobrevive en expresiones fijas: Quem me dera! (¡Ojalá!), Pudera! (¡Con razón!)."
       ],
       "examples": [
-        { "target": "Ela percebeu que esquecera as chaves.", "es": "Se dio cuenta de que se había olvidado las llaves." },
-        { "target": "O escritor nascera numa pequena cidade de Minas Gerais.", "es": "El escritor había nacido en un pueblito de Minas Gerais." },
-        { "target": "Quem me dera ter mais tempo!", "es": "¡Ojalá tuviera más tiempo!" }
+        {
+          "target": "Ela percebeu que esquecera as chaves.",
+          "es": "Se dio cuenta de que se había olvidado las llaves."
+        },
+        {
+          "target": "O escritor nascera numa pequena cidade de Minas Gerais.",
+          "es": "El escritor había nacido en un pueblito de Minas Gerais."
+        },
+        {
+          "target": "Quem me dera ter mais tempo!",
+          "es": "¡Ojalá tuviera más tiempo!"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se eu falara português, moraria no Rio.", "right": "Se eu falasse português, moraria no Rio.", "why": "En portugués la forma en -ra es indicativo ('había hablado'), no subjuntivo. El 'si yo hablara' del español es se eu falasse." }
+        {
+          "wrong": "Se eu falara português, moraria no Rio.",
+          "right": "Se eu falasse português, moraria no Rio.",
+          "why": "En portugués la forma en -ra es indicativo ('había hablado'), no subjuntivo. El 'si yo hablara' del español es se eu falasse."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "já se fizera tarde",
+          "es": "ya se había hecho tarde",
+          "example": "Quando ele percebeu, já se fizera tarde.",
+          "exampleEs": "Cuando se dio cuenta, ya se había hecho tarde."
+        },
+        {
+          "target": "ninguém o vira chegar",
+          "es": "nadie lo había visto llegar",
+          "example": "Ele entrou tão de mansinho que ninguém o vira chegar.",
+          "exampleEs": "Entró tan silenciosamente que nadie lo había visto llegar."
+        },
+        {
+          "target": "tudo acontecera rápido demais",
+          "es": "todo había pasado demasiado rápido",
+          "example": "Pra ela, tudo acontecera rápido demais.",
+          "exampleEs": "Para ella, todo había pasado demasiado rápido."
+        },
+        {
+          "target": "mal tivera tempo de pensar",
+          "es": "apenas había tenido tiempo de pensar",
+          "example": "Diante do perigo, mal tivera tempo de pensar.",
+          "exampleEs": "Frente al peligro, apenas había tenido tiempo de pensar."
+        },
+        {
+          "target": "fora ele quem decidira",
+          "es": "había sido él quien había decidido",
+          "example": "No fim, fora ele quem decidira tudo.",
+          "exampleEs": "Al final, había sido él quien había decidido todo."
+        }
       ]
     },
     {
@@ -87,7 +250,9 @@
       "day": 4,
       "title": "Ordenar hechos en el pasado",
       "goal": "Combinar perfeito, imperfeito y mais-que-perfeito para ordenar un relato.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "El imperfeito describe el fondo, el perfeito cuenta los hechos y el mais-que-perfeito, lo que había pasado antes: Quando ela ligou, eu já tinha saído.",
         "Marcadores: já, ainda não, nunca... antes, até então, na véspera (el día anterior), dias antes.",
@@ -95,12 +260,57 @@
         "Para algo que pasaba por primera vez: Eu nunca tinha andado de avião até aquele dia."
       ],
       "examples": [
-        { "target": "Na véspera da prova, eu ainda não tinha estudado nada.", "es": "El día antes del examen, todavía no había estudiado nada." },
-        { "target": "Até então, ninguém tinha percebido o erro.", "es": "Hasta ese momento, nadie se había dado cuenta del error." },
-        { "target": "Depois que todos saíram, percebi que tinha perdido o celular.", "es": "Después de que se fueron todos, me di cuenta de que había perdido el celular." }
+        {
+          "target": "Na véspera da prova, eu ainda não tinha estudado nada.",
+          "es": "El día antes del examen, todavía no había estudiado nada."
+        },
+        {
+          "target": "Até então, ninguém tinha percebido o erro.",
+          "es": "Hasta ese momento, nadie se había dado cuenta del error."
+        },
+        {
+          "target": "Depois que todos saíram, percebi que tinha perdido o celular.",
+          "es": "Después de que se fueron todos, me di cuenta de que había perdido el celular."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Depois de que ele chegou, jantamos.", "right": "Depois que ele chegou, jantamos.", "why": "En Brasil se dice depois que, sin de. 'Depois de que' es un calco del español." }
+        {
+          "wrong": "Depois de que ele chegou, jantamos.",
+          "right": "Depois que ele chegou, jantamos.",
+          "why": "En Brasil se dice depois que, sin de. 'Depois de que' es un calco del español."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "antes disso",
+          "es": "antes de eso",
+          "example": "Antes disso, eu nunca tinha viajado sozinho.",
+          "exampleEs": "Antes de eso, nunca había viajado solo."
+        },
+        {
+          "target": "assim que",
+          "es": "en cuanto",
+          "example": "Assim que ela chegou, todo mundo já tinha ido embora.",
+          "exampleEs": "En cuanto ella llegó, todo el mundo ya se había ido."
+        },
+        {
+          "target": "até aquele momento",
+          "es": "hasta ese momento",
+          "example": "Até aquele momento, ninguém tinha percebido o erro.",
+          "exampleEs": "Hasta ese momento, nadie se había dado cuenta del error."
+        },
+        {
+          "target": "quando finalmente",
+          "es": "cuando finalmente",
+          "example": "Quando finalmente chegamos, a festa já tinha acabado.",
+          "exampleEs": "Cuando finalmente llegamos, la fiesta ya se había terminado."
+        },
+        {
+          "target": "foi então que",
+          "es": "fue entonces que",
+          "example": "Foi então que percebi que já tinha perdido o ônibus.",
+          "exampleEs": "Fue entonces que me di cuenta de que ya había perdido el micro."
+        }
       ]
     },
     {
@@ -108,19 +318,67 @@
       "day": 5,
       "title": "Contar una anécdota",
       "goal": "Comprender y escribir el relato de algo que salió mal.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Estructura: la situación (imperfeito), los hechos (perfeito) y lo que ya había pasado (tinha + participio).",
         "Para dar suspenso: de repente, foi aí que, para piorar (para colmo), no fim das contas (al final).",
         "Vocabulario: perder o voo, decolar (despegar), esquecer, perceber (darse cuenta), virar (convertirse en)."
       ],
       "examples": [
-        { "target": "Quando chegamos ao aeroporto, o voo já tinha decolado.", "es": "Cuando llegamos al aeropuerto, el vuelo ya había despegado." },
-        { "target": "Para piorar, eu tinha deixado a carteira no táxi.", "es": "Para colmo, me había dejado la billetera en el taxi." },
-        { "target": "No fim das contas, virou uma história engraçada.", "es": "Al final, terminó siendo una historia graciosa." }
+        {
+          "target": "Quando chegamos ao aeroporto, o voo já tinha decolado.",
+          "es": "Cuando llegamos al aeropuerto, el vuelo ya había despegado."
+        },
+        {
+          "target": "Para piorar, eu tinha deixado a carteira no táxi.",
+          "es": "Para colmo, me había dejado la billetera en el taxi."
+        },
+        {
+          "target": "No fim das contas, virou uma história engraçada.",
+          "es": "Al final, terminó siendo una historia graciosa."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu tinha me esquecido o passaporte.", "right": "Eu tinha esquecido o passaporte.", "why": "Esquecer va sin pronombre con objeto directo (esqueci o passaporte) o con me y de (me esqueci do passaporte). Mezclar las dos es un calco de 'me había olvidado el pasaporte'." }
+        {
+          "wrong": "Eu tinha me esquecido o passaporte.",
+          "right": "Eu tinha esquecido o passaporte.",
+          "why": "Esquecer va sin pronombre con objeto directo (esqueci o passaporte) o con me y de (me esqueci do passaporte). Mezclar las dos es un calco de 'me había olvidado el pasaporte'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "não vai dar pra crer o que aconteceu",
+          "es": "no vas a poder creer lo que pasó",
+          "example": "Escuta essa, não vai dar pra crer o que aconteceu comigo ontem.",
+          "exampleEs": "Escuchá esto, no vas a poder creer lo que me pasó ayer."
+        },
+        {
+          "target": "foi aí que tudo deu errado",
+          "es": "ahí fue cuando todo salió mal",
+          "example": "A gente já tinha saído de casa, e foi aí que tudo deu errado.",
+          "exampleEs": "Ya habíamos salido de casa, y ahí fue cuando todo salió mal."
+        },
+        {
+          "target": "para resumir a história",
+          "es": "para resumir la historia",
+          "example": "Para resumir a história, eu tinha perdido o voo.",
+          "exampleEs": "Para resumir la historia, yo había perdido el vuelo."
+        },
+        {
+          "target": "no fim das contas",
+          "es": "al final de cuentas",
+          "example": "No fim das contas, tudo tinha sido um grande engano.",
+          "exampleEs": "Al final de cuentas, todo había sido un gran error."
+        },
+        {
+          "target": "quando eu menos esperava",
+          "es": "cuando menos lo esperaba",
+          "example": "Quando eu menos esperava, ele já tinha contado tudo pra todo mundo.",
+          "exampleEs": "Cuando menos lo esperaba, él ya le había contado todo a todo el mundo."
+        }
       ]
     }
   ]

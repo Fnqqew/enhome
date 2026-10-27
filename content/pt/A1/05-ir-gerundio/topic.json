@@ -11,7 +11,9 @@
     "Usar gostar de correctamente",
     "Escribir un mensaje sobre tus planes del fin de semana"
   ],
-  "prerequisites": ["pt-a1-presente"],
+  "prerequisites": [
+    "pt-a1-presente"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,60 @@
       "day": 1,
       "title": "Estar + gerundio",
       "goal": "Decir lo que está pasando ahora.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "El gerundio termina en -ando, -endo, -indo: falando, comendo, abrindo.",
         "Se forma con estar: Estou trabalhando agora.",
         "En Brasil es la forma normal; en Portugal se dice estou a trabalhar."
       ],
       "examples": [
-        { "target": "Estou estudando para a prova.", "es": "Estoy estudiando para el examen." },
-        { "target": "O que você está fazendo?", "es": "¿Qué estás haciendo?" },
-        { "target": "Está chovendo muito.", "es": "Está lloviendo mucho." }
+        {
+          "target": "Estou estudando para a prova.",
+          "es": "Estoy estudiando para el examen."
+        },
+        {
+          "target": "O que você está fazendo?",
+          "es": "¿Qué estás haciendo?"
+        },
+        {
+          "target": "Está chovendo muito.",
+          "es": "Está lloviendo mucho."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Estou trabalhendo.", "right": "Estou trabalhando.", "why": "Los verbos en -ar forman el gerundio en -ando." }
+        {
+          "wrong": "Estou trabalhendo.",
+          "right": "Estou trabalhando.",
+          "why": "Los verbos en -ar forman el gerundio en -ando."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "estou indo",
+          "es": "ya voy",
+          "example": "Espera um pouco, estou indo!",
+          "exampleEs": "Esperá un poco, ¡ya voy!"
+        },
+        {
+          "target": "estou brincando",
+          "es": "estoy bromeando",
+          "example": "Relaxa, estou brincando com você.",
+          "exampleEs": "Relajáte, estoy bromeando con vos."
+        },
+        {
+          "target": "estou chegando",
+          "es": "ya llego",
+          "example": "Calma, estou chegando em cinco minutos.",
+          "exampleEs": "Tranquilo, ya llego en cinco minutos."
+        },
+        {
+          "target": "estou trabalhando nisso",
+          "es": "estoy en eso",
+          "example": "Não se preocupe, estou trabalhando nisso.",
+          "exampleEs": "No te preocupes, estoy en eso."
+        }
       ]
     },
     {
@@ -39,19 +82,66 @@
       "day": 2,
       "title": "Ir + infinitivo",
       "goal": "Hablar de planes y del futuro cercano.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "ir conjugado + infinitivo, sin preposición: Vou viajar (no 'vou a viajar').",
         "Es la forma más usada para hablar del futuro en Brasil.",
         "Negación: Não vou sair hoje."
       ],
       "examples": [
-        { "target": "Vou visitar meus pais no domingo.", "es": "Voy a visitar a mis padres el domingo." },
-        { "target": "Vocês vão jantar fora?", "es": "¿Van a cenar afuera?" },
-        { "target": "A gente vai pegar um táxi.", "es": "Vamos a tomar un taxi." }
+        {
+          "target": "Vou visitar meus pais no domingo.",
+          "es": "Voy a visitar a mis padres el domingo."
+        },
+        {
+          "target": "Vocês vão jantar fora?",
+          "es": "¿Van a cenar afuera?"
+        },
+        {
+          "target": "A gente vai pegar um táxi.",
+          "es": "Vamos a tomar un taxi."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Vou a viajar amanhã.", "right": "Vou viajar amanhã.", "why": "En portugués no va a entre ir y el infinitivo." }
+        {
+          "wrong": "Vou a viajar amanhã.",
+          "right": "Vou viajar amanhã.",
+          "why": "En portugués no va a entre ir y el infinitivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "vou te ligar",
+          "es": "te voy a llamar",
+          "example": "Agora não posso falar, vou te ligar depois.",
+          "exampleEs": "Ahora no puedo hablar, te voy a llamar después."
+        },
+        {
+          "target": "vamos ver",
+          "es": "vamos a ver",
+          "example": "Vamos ver se dá tempo de ir ao cinema.",
+          "exampleEs": "Vamos a ver si llegamos a ir al cine."
+        },
+        {
+          "target": "vai dar tudo certo",
+          "es": "todo va a salir bien",
+          "example": "Não fica nervoso, vai dar tudo certo.",
+          "exampleEs": "No te pongas nervioso, todo va a salir bien."
+        },
+        {
+          "target": "não vai dar",
+          "es": "no va a poder ser",
+          "example": "Hoje não vai dar, estou muito ocupado.",
+          "exampleEs": "Hoy no va a poder ser, estoy muy ocupado."
+        },
+        {
+          "target": "vamos combinar",
+          "es": "quedamos en algo",
+          "example": "Vamos combinar um dia pra nos ver.",
+          "exampleEs": "Quedamos en algo para vernos un día."
+        }
       ]
     },
     {
@@ -59,19 +149,67 @@
       "day": 3,
       "title": "Expresiones de tiempo",
       "goal": "Ubicar acciones en el presente y el futuro.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "agora, hoje, hoje à noite, amanhã, depois de amanhã.",
         "a semana que vem / na próxima semana, o mês que vem, no fim de semana.",
         "Los días: segunda-feira, terça, quarta, quinta, sexta, sábado, domingo."
       ],
       "examples": [
-        { "target": "Na sexta-feira vou ao show.", "es": "El viernes voy al recital." },
-        { "target": "O mês que vem começo um curso.", "es": "El mes que viene empiezo un curso." },
-        { "target": "Agora estou ocupado.", "es": "Ahora estoy ocupado." }
+        {
+          "target": "Na sexta-feira vou ao show.",
+          "es": "El viernes voy al recital."
+        },
+        {
+          "target": "O mês que vem começo um curso.",
+          "es": "El mes que viene empiezo un curso."
+        },
+        {
+          "target": "Agora estou ocupado.",
+          "es": "Ahora estoy ocupado."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Na lunes.", "right": "Na segunda-feira.", "why": "Los días hábiles en portugués se cuentan: segunda, terça, quarta, quinta, sexta." }
+        {
+          "wrong": "Na lunes.",
+          "right": "Na segunda-feira.",
+          "why": "Los días hábiles en portugués se cuentan: segunda, terça, quarta, quinta, sexta."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "mais tarde",
+          "es": "más tarde",
+          "example": "Agora não posso, falo com você mais tarde.",
+          "exampleEs": "Ahora no puedo, hablo con vos más tarde."
+        },
+        {
+          "target": "daqui a pouco",
+          "es": "en un rato",
+          "example": "Daqui a pouco eu te mando a resposta.",
+          "exampleEs": "En un rato te mando la respuesta."
+        },
+        {
+          "target": "de vez em quando",
+          "es": "de vez en cuando",
+          "example": "De vez em quando a gente janta fora.",
+          "exampleEs": "De vez en cuando cenamos afuera."
+        },
+        {
+          "target": "hoje em dia",
+          "es": "hoy en día",
+          "example": "Hoje em dia quase todo mundo tem celular.",
+          "exampleEs": "Hoy en día casi todo el mundo tiene celular."
+        },
+        {
+          "target": "a partir de agora",
+          "es": "a partir de ahora",
+          "example": "A partir de agora vou estudar todo dia.",
+          "exampleEs": "A partir de ahora voy a estudiar todos los días."
+        }
       ]
     },
     {
@@ -79,19 +217,66 @@
       "day": 4,
       "title": "Gostar de",
       "goal": "Decir lo que te gusta con la estructura correcta.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Gostar funciona como querer, no como 'gustar': Eu gosto de música (yo gusto de música).",
         "Siempre lleva de, que se contrae: gosto do filme, gosto da praia.",
         "Con verbos: Gosto de ler. Para decir que no: Não gosto de acordar cedo."
       ],
       "examples": [
-        { "target": "Eu gosto muito de cozinhar.", "es": "Me gusta mucho cocinar." },
-        { "target": "Você gosta do Rio?", "es": "¿Te gusta Río?" },
-        { "target": "Ela não gosta de futebol.", "es": "A ella no le gusta el fútbol." }
+        {
+          "target": "Eu gosto muito de cozinhar.",
+          "es": "Me gusta mucho cocinar."
+        },
+        {
+          "target": "Você gosta do Rio?",
+          "es": "¿Te gusta Río?"
+        },
+        {
+          "target": "Ela não gosta de futebol.",
+          "es": "A ella no le gusta el fútbol."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Me gosta o café.", "right": "Eu gosto do café.", "why": "En portugués la persona es el sujeto de gostar y el objeto va con de." }
+        {
+          "wrong": "Me gosta o café.",
+          "right": "Eu gosto do café.",
+          "why": "En portugués la persona es el sujeto de gostar y el objeto va con de."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "gosto muito de você",
+          "es": "te quiero mucho",
+          "example": "Eu gosto muito de você, sabia?",
+          "exampleEs": "Te quiero mucho, ¿sabías?"
+        },
+        {
+          "target": "gosto de ficar em casa",
+          "es": "me gusta quedarme en casa",
+          "example": "No fim de semana, gosto de ficar em casa.",
+          "exampleEs": "El finde, me gusta quedarme en casa."
+        },
+        {
+          "target": "você gosta de mim?",
+          "es": "¿te gusto?",
+          "example": "Me diz a verdade, você gosta de mim?",
+          "exampleEs": "Decime la verdad, ¿te gusto?"
+        },
+        {
+          "target": "não gosto nem um pouco",
+          "es": "no me gusta nada",
+          "example": "Desse filme eu não gosto nem um pouco.",
+          "exampleEs": "Esa película no me gusta nada."
+        },
+        {
+          "target": "gostei muito",
+          "es": "me gustó mucho",
+          "example": "Gostei muito do seu presente, obrigado.",
+          "exampleEs": "Me gustó mucho tu regalo, gracias."
+        }
       ]
     },
     {
@@ -99,19 +284,61 @@
       "day": 5,
       "title": "Planes para el fin de semana",
       "goal": "Comprender y escribir un mensaje con planes.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Para invitar: Vamos ao cinema? Quer ir comigo?",
         "Para aceptar o rechazar: Claro! / Que pena, não posso.",
         "Combiná ir + infinitivo con expresiones de tiempo."
       ],
       "examples": [
-        { "target": "No sábado vou acordar tarde e depois vou à praia.", "es": "El sábado me voy a levantar tarde y después voy a la playa." },
-        { "target": "Quer jantar comigo no domingo?", "es": "¿Querés cenar conmigo el domingo?" },
-        { "target": "Que pena, não posso. Vou trabalhar.", "es": "Qué lástima, no puedo. Voy a trabajar." }
+        {
+          "target": "No sábado vou acordar tarde e depois vou à praia.",
+          "es": "El sábado me voy a levantar tarde y después voy a la playa."
+        },
+        {
+          "target": "Quer jantar comigo no domingo?",
+          "es": "¿Querés cenar conmigo el domingo?"
+        },
+        {
+          "target": "Que pena, não posso. Vou trabalhar.",
+          "es": "Qué lástima, no puedo. Voy a trabajar."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quer ir con mim?", "right": "Quer ir comigo?", "why": "'Conmigo' en portugués es comigo, en una sola palabra." }
+        {
+          "wrong": "Quer ir con mim?",
+          "right": "Quer ir comigo?",
+          "why": "'Conmigo' en portugués es comigo, en una sola palabra."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "o que você vai fazer no fim de semana?",
+          "es": "¿qué vas a hacer el finde?",
+          "example": "E aí, o que você vai fazer no fim de semana?",
+          "exampleEs": "Y bueno, ¿qué vas a hacer el finde?"
+        },
+        {
+          "target": "bora marcar algo",
+          "es": "dale, organicemos algo",
+          "example": "Bora marcar algo pra esse fim de semana.",
+          "exampleEs": "Dale, organicemos algo para este finde."
+        },
+        {
+          "target": "topa ir comigo?",
+          "es": "¿te copás a ir conmigo?",
+          "example": "Vou numa festa no sábado, topa ir comigo?",
+          "exampleEs": "Voy a una fiesta el sábado, ¿te copás a ir conmigo?"
+        },
+        {
+          "target": "a gente se vê no sábado",
+          "es": "nos vemos el sábado",
+          "example": "Tá bom, a gente se vê no sábado.",
+          "exampleEs": "Dale, nos vemos el sábado."
+        }
       ]
     }
   ]

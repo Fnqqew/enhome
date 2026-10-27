@@ -19,7 +19,10 @@
       "day": 1,
       "title": "Pronombres y saludos",
       "goal": "Reconocer eu, você, ele, ela, nós, vocês, eles y elas, y saludar.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "En Brasil se usa você para 'vos' o 'usted', y se conjuga como ele o ela: você é, você está.",
         "Vocês es 'ustedes' y se conjuga como eles: vocês são.",
@@ -27,12 +30,57 @@
         "Saludos: Oi, Olá, Bom dia, Boa tarde, Boa noite, Tudo bem?"
       ],
       "examples": [
-        { "target": "Oi! Tudo bem?", "es": "¡Hola! ¿Todo bien?" },
-        { "target": "Você é argentino?", "es": "¿Sos argentino?" },
-        { "target": "Nós somos amigos.", "es": "Somos amigos." }
+        {
+          "target": "Oi! Tudo bem?",
+          "es": "¡Hola! ¿Todo bien?"
+        },
+        {
+          "target": "Você é argentino?",
+          "es": "¿Sos argentino?"
+        },
+        {
+          "target": "Nós somos amigos.",
+          "es": "Somos amigos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Tu é brasileiro?", "right": "Você é brasileiro?", "why": "En la mayor parte de Brasil se usa você, no tu, y el verbo va en tercera persona." }
+        {
+          "wrong": "Tu é brasileiro?",
+          "right": "Você é brasileiro?",
+          "why": "En la mayor parte de Brasil se usa você, no tu, y el verbo va en tercera persona."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Tudo bem?",
+          "es": "¿Todo bien?",
+          "example": "Oi, tudo bem?",
+          "exampleEs": "Hola, ¿todo bien?"
+        },
+        {
+          "target": "Tudo bem, e você?",
+          "es": "Todo bien, ¿y vos?",
+          "example": "Tudo bem, e você?",
+          "exampleEs": "Todo bien, ¿y vos?"
+        },
+        {
+          "target": "Muito prazer",
+          "es": "Mucho gusto",
+          "example": "Muito prazer, eu sou o João.",
+          "exampleEs": "Mucho gusto, yo soy Juan."
+        },
+        {
+          "target": "Como você se chama?",
+          "es": "¿Cómo te llamás?",
+          "example": "Oi, como você se chama?",
+          "exampleEs": "Hola, ¿cómo te llamás?"
+        },
+        {
+          "target": "Até logo",
+          "es": "Hasta luego",
+          "example": "Tchau, até logo!",
+          "exampleEs": "Chau, ¡hasta luego!"
+        }
       ]
     },
     {
@@ -40,7 +88,9 @@
       "day": 2,
       "title": "El verbo ser",
       "goal": "Conjugar ser para hablar de identidad, origen, profesión y características.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "eu sou, você/ele/ela é, nós somos, vocês/eles/elas são.",
         "Ser se usa para identidad, nacionalidad, profesión, características permanentes y la hora: É uma hora.",
@@ -48,13 +98,62 @@
         "Ojo: é lleva tilde y significa 'es'; e sin tilde significa 'y'."
       ],
       "examples": [
-        { "target": "Eu sou professora.", "es": "Soy profesora." },
-        { "target": "Ela é de Salvador.", "es": "Ella es de Salvador." },
-        { "target": "Eles são muito simpáticos.", "es": "Ellos son muy simpáticos." }
+        {
+          "target": "Eu sou professora.",
+          "es": "Soy profesora."
+        },
+        {
+          "target": "Ela é de Salvador.",
+          "es": "Ella es de Salvador."
+        },
+        {
+          "target": "Eles são muito simpáticos.",
+          "es": "Ellos son muy simpáticos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu é estudante.", "right": "Eu sou estudante.", "why": "Con eu se usa sou." },
-        { "wrong": "Ela e médica.", "right": "Ela é médica.", "why": "Sin tilde, e significa 'y'; el verbo es é." }
+        {
+          "wrong": "Eu é estudante.",
+          "right": "Eu sou estudante.",
+          "why": "Con eu se usa sou."
+        },
+        {
+          "wrong": "Ela e médica.",
+          "right": "Ela é médica.",
+          "why": "Sin tilde, e significa 'y'; el verbo es é."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "É mesmo?",
+          "es": "¿En serio?",
+          "example": "Ele é médico? É mesmo?",
+          "exampleEs": "¿Él es médico? ¿En serio?"
+        },
+        {
+          "target": "Pode ser",
+          "es": "Puede ser / Dale",
+          "example": "A gente se encontra às oito? Pode ser.",
+          "exampleEs": "¿Nos encontramos a las ocho? Dale."
+        },
+        {
+          "target": "Sou eu",
+          "es": "Soy yo",
+          "example": "Quem está na porta? Sou eu.",
+          "exampleEs": "¿Quién está en la puerta? Soy yo."
+        },
+        {
+          "target": "Não é?",
+          "es": "¿No es cierto?",
+          "example": "Você é de São Paulo, não é?",
+          "exampleEs": "Sos de San Pablo, ¿no es cierto?"
+        },
+        {
+          "target": "É isso aí",
+          "es": "Así es / Exactamente",
+          "example": "Você é professor, é isso aí.",
+          "exampleEs": "Sos profesor, exactamente."
+        }
       ]
     },
     {
@@ -62,7 +161,9 @@
       "day": 3,
       "title": "El verbo estar",
       "goal": "Conjugar estar para estados pasajeros y ubicación.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "eu estou, você/ele/ela está, nós estamos, vocês/eles/elas estão.",
         "Estar se usa para estados que cambian (cansado, feliz, doente) y para la ubicación de personas y cosas.",
@@ -70,13 +171,68 @@
         "En la conversación se acorta: tô, tá, tamos, tão."
       ],
       "examples": [
-        { "target": "Eu estou cansado hoje.", "es": "Hoy estoy cansado." },
-        { "target": "Onde você está?", "es": "¿Dónde estás?" },
-        { "target": "A praia fica perto do hotel.", "es": "La playa queda cerca del hotel." }
+        {
+          "target": "Eu estou cansado hoje.",
+          "es": "Hoy estoy cansado."
+        },
+        {
+          "target": "Onde você está?",
+          "es": "¿Dónde estás?"
+        },
+        {
+          "target": "A praia fica perto do hotel.",
+          "es": "La playa queda cerca del hotel."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu sou cansado.", "right": "Eu estou cansado.", "why": "Un estado pasajero se expresa con estar, igual que en español." },
-        { "wrong": "O Rio de Janeiro está no Brasil.", "right": "O Rio de Janeiro fica no Brasil.", "why": "Para lugares que no se mueven se prefiere ficar." }
+        {
+          "wrong": "Eu sou cansado.",
+          "right": "Eu estou cansado.",
+          "why": "Un estado pasajero se expresa con estar, igual que en español."
+        },
+        {
+          "wrong": "O Rio de Janeiro está no Brasil.",
+          "right": "O Rio de Janeiro fica no Brasil.",
+          "why": "Para lugares que no se mueven se prefiere ficar."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Estou bem",
+          "es": "Estoy bien",
+          "example": "Estou bem, obrigado.",
+          "exampleEs": "Estoy bien, gracias."
+        },
+        {
+          "target": "Como você está?",
+          "es": "¿Cómo estás?",
+          "example": "Oi, como você está?",
+          "exampleEs": "Hola, ¿cómo estás?"
+        },
+        {
+          "target": "Estou com fome",
+          "es": "Tengo hambre",
+          "example": "Já são duas horas e estou com fome.",
+          "exampleEs": "Ya son las dos y tengo hambre."
+        },
+        {
+          "target": "Estou com sede",
+          "es": "Tengo sed",
+          "example": "Faz calor e estou com sede.",
+          "exampleEs": "Hace calor y tengo sed."
+        },
+        {
+          "target": "Está certo",
+          "es": "Está bien / De acuerdo",
+          "example": "Vamos sair mais tarde? Está certo.",
+          "exampleEs": "¿Salimos más tarde? Está bien."
+        },
+        {
+          "target": "Estou indo",
+          "es": "Ya voy",
+          "example": "Espera, estou indo!",
+          "exampleEs": "Esperá, ¡ya voy!"
+        }
       ]
     },
     {
@@ -84,7 +240,10 @@
       "day": 4,
       "title": "Negación y preguntas",
       "goal": "Negar con não y formar preguntas con y sin palabras interrogativas.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Não va antes del verbo: Eu não sou de São Paulo.",
         "Las preguntas de sí o no mantienen el orden y suben la entonación: Você está bem?",
@@ -92,13 +251,56 @@
         "Para responder 'sí' se suele repetir el verbo: Você é casado? — Sou."
       ],
       "examples": [
-        { "target": "Eu não estou com fome.", "es": "No tengo hambre." },
-        { "target": "Como você está?", "es": "¿Cómo estás?" },
-        { "target": "Qual é o seu nome?", "es": "¿Cuál es tu nombre?" }
+        {
+          "target": "Eu não estou com fome.",
+          "es": "No tengo hambre."
+        },
+        {
+          "target": "Como você está?",
+          "es": "¿Cómo estás?"
+        },
+        {
+          "target": "Qual é o seu nome?",
+          "es": "¿Cuál es tu nombre?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu sou não brasileiro.", "right": "Eu não sou brasileiro.", "why": "Não va siempre antes del verbo." },
-        { "wrong": "Que é seu nome?", "right": "Qual é o seu nome?", "why": "Para preguntar el nombre se usa qual." }
+        {
+          "wrong": "Eu sou não brasileiro.",
+          "right": "Eu não sou brasileiro.",
+          "why": "Não va siempre antes del verbo."
+        },
+        {
+          "wrong": "Que é seu nome?",
+          "right": "Qual é o seu nome?",
+          "why": "Para preguntar el nombre se usa qual."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Não sei",
+          "es": "No sé",
+          "example": "Onde ele está? Não sei.",
+          "exampleEs": "¿Dónde está él? No sé."
+        },
+        {
+          "target": "Não tem problema",
+          "es": "No hay problema",
+          "example": "Chegou atrasado? Não tem problema.",
+          "exampleEs": "¿Llegaste tarde? No hay problema."
+        },
+        {
+          "target": "Tem certeza?",
+          "es": "¿Estás seguro?",
+          "example": "Você é de Portugal? Tem certeza?",
+          "exampleEs": "¿Sos de Portugal? ¿Estás seguro?"
+        },
+        {
+          "target": "De onde você é?",
+          "es": "¿De dónde sos?",
+          "example": "Oi, de onde você é?",
+          "exampleEs": "Hola, ¿de dónde sos?"
+        }
       ]
     },
     {
@@ -106,20 +308,72 @@
       "day": 5,
       "title": "Presentarte",
       "goal": "Comprender y escribir una presentación personal con ser y estar.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Estructura: nombre (Meu nome é…), origen, profesión, dónde vivís y cómo estás.",
         "La edad se dice con ter: Eu tenho 30 anos.",
         "Para decir dónde vivís: Eu moro em Córdoba."
       ],
       "examples": [
-        { "target": "Meu nome é Lucas. Eu sou de Mendoza e moro em Florianópolis.", "es": "Me llamo Lucas. Soy de Mendoza y vivo en Florianópolis." },
-        { "target": "Eu tenho 28 anos e sou designer.", "es": "Tengo 28 años y soy diseñador." },
-        { "target": "Estou muito feliz de estar aqui.", "es": "Estoy muy contento de estar acá." }
+        {
+          "target": "Meu nome é Lucas. Eu sou de Mendoza e moro em Florianópolis.",
+          "es": "Me llamo Lucas. Soy de Mendoza y vivo en Florianópolis."
+        },
+        {
+          "target": "Eu tenho 28 anos e sou designer.",
+          "es": "Tengo 28 años y soy diseñador."
+        },
+        {
+          "target": "Estou muito feliz de estar aqui.",
+          "es": "Estoy muy contento de estar acá."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu sou 28 anos.", "right": "Eu tenho 28 anos.", "why": "La edad se expresa con ter, como en español." },
-        { "wrong": "Eu moro no Córdoba.", "right": "Eu moro em Córdoba.", "why": "La mayoría de las ciudades no llevan artículo: em Córdoba, em São Paulo." }
+        {
+          "wrong": "Eu sou 28 anos.",
+          "right": "Eu tenho 28 anos.",
+          "why": "La edad se expresa con ter, como en español."
+        },
+        {
+          "wrong": "Eu moro no Córdoba.",
+          "right": "Eu moro em Córdoba.",
+          "why": "La mayoría de las ciudades no llevan artículo: em Córdoba, em São Paulo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Deixa eu me apresentar",
+          "es": "Dejame presentarme",
+          "example": "Deixa eu me apresentar: eu sou a Ana.",
+          "exampleEs": "Dejame presentarme: yo soy Ana."
+        },
+        {
+          "target": "Meu nome é",
+          "es": "Mi nombre es",
+          "example": "Meu nome é Pedro e sou de Buenos Aires.",
+          "exampleEs": "Mi nombre es Pedro y soy de Buenos Aires."
+        },
+        {
+          "target": "Eu trabalho como",
+          "es": "Yo trabajo como",
+          "example": "Eu trabalho como professor aqui no Brasil.",
+          "exampleEs": "Yo trabajo como profesor aquí en Brasil."
+        },
+        {
+          "target": "Fico muito feliz em conhecer você",
+          "es": "Estoy muy contento de conocerte",
+          "example": "Fico muito feliz em conhecer você, Maria.",
+          "exampleEs": "Estoy muy contento de conocerte, María."
+        },
+        {
+          "target": "Sou novo por aqui",
+          "es": "Soy nuevo por acá",
+          "example": "Oi, sou novo por aqui, me chamo Lucas.",
+          "exampleEs": "Hola, soy nuevo por acá, me llamo Lucas."
+        }
       ]
     }
   ]

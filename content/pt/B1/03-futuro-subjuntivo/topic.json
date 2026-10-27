@@ -12,7 +12,10 @@
     "Usarlo con assim que, enquanto y relativos como o que você quiser",
     "Escribir un mensaje para coordinar planes"
   ],
-  "prerequisites": ["pt-b1-presente-subjuntivo", "pt-a2-preterito-perfeito"],
+  "prerequisites": [
+    "pt-b1-presente-subjuntivo",
+    "pt-a2-preterito-perfeito"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,9 @@
       "day": 1,
       "title": "Formación",
       "goal": "Formar el futuro do subjuntivo de cualquier verbo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Se parte de la tercera persona plural del perfeito sin -ram: falaram → falar, comeram → comer, puderam → puder.",
         "Terminaciones: eu y você sin terminación, nós -rmos, vocês -rem: quando eu puder, quando nós pudermos, quando eles puderem.",
@@ -28,12 +33,63 @@
         "No existe en el español actual (solo en leyes y refranes: 'adonde fueres, haz lo que vieres')."
       ],
       "examples": [
-        { "target": "Quando eu chegar, te ligo.", "es": "Cuando llegue, te llamo." },
-        { "target": "Se vocês precisarem de ajuda, me avisem.", "es": "Si necesitan ayuda, avísenme." },
-        { "target": "Quando nós terminarmos, vamos jantar.", "es": "Cuando terminemos, vamos a cenar." }
+        {
+          "target": "Quando eu chegar, te ligo.",
+          "es": "Cuando llegue, te llamo."
+        },
+        {
+          "target": "Se vocês precisarem de ajuda, me avisem.",
+          "es": "Si necesitan ayuda, avísenme."
+        },
+        {
+          "target": "Quando nós terminarmos, vamos jantar.",
+          "es": "Cuando terminemos, vamos a cenar."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quando eu poder, te visito.", "right": "Quando eu puder, te visito.", "why": "Se forma desde el perfeito (puderam → puder), no desde el infinitivo." }
+        {
+          "wrong": "Quando eu poder, te visito.",
+          "right": "Quando eu puder, te visito.",
+          "why": "Se forma desde el perfeito (puderam → puder), no desde el infinitivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "se eu puder",
+          "es": "si puedo",
+          "example": "Se eu puder, eu te ajudo com a mudança.",
+          "exampleEs": "Si puedo, te ayudo con la mudanza."
+        },
+        {
+          "target": "quando eu puder",
+          "es": "cuando pueda",
+          "example": "Eu te ligo quando eu puder.",
+          "exampleEs": "Te llamo cuando pueda."
+        },
+        {
+          "target": "se tudo der certo",
+          "es": "si todo sale bien",
+          "example": "Se tudo der certo, chegamos antes das seis.",
+          "exampleEs": "Si todo sale bien, llegamos antes de las seis."
+        },
+        {
+          "target": "quando chegar a hora",
+          "es": "cuando llegue el momento",
+          "example": "Vamos decidir isso quando chegar a hora.",
+          "exampleEs": "Vamos a decidir eso cuando llegue el momento."
+        },
+        {
+          "target": "se for necessário",
+          "es": "si es necesario",
+          "example": "Se for necessário, eu volto mais tarde.",
+          "exampleEs": "Si es necesario, vuelvo más tarde."
+        },
+        {
+          "target": "quando for possível",
+          "es": "cuando sea posible",
+          "example": "Resolvo isso quando for possível.",
+          "exampleEs": "Resuelvo eso cuando sea posible."
+        }
       ]
     },
     {
@@ -41,7 +97,9 @@
       "day": 2,
       "title": "Irregulares",
       "goal": "Usar los irregulares más frecuentes.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "ser e ir: for. ter: tiver. estar: estiver. fazer: fizer. dizer: disser.",
         "querer: quiser. poder: puder. saber: souber. trazer: trouxer. dar: der. pôr: puser.",
@@ -49,13 +107,68 @@
         "En la charla mucha gente dice 'se eu ver', pero la norma es se eu vir."
       ],
       "examples": [
-        { "target": "Se for possível, chego mais cedo.", "es": "Si es posible, llego más temprano." },
-        { "target": "Quando você vier ao Rio, me avisa.", "es": "Cuando vengas a Río, avisame." },
-        { "target": "Se eu vir a Ana, dou o recado.", "es": "Si veo a Ana, le doy el mensaje." }
+        {
+          "target": "Se for possível, chego mais cedo.",
+          "es": "Si es posible, llego más temprano."
+        },
+        {
+          "target": "Quando você vier ao Rio, me avisa.",
+          "es": "Cuando vengas a Río, avisame."
+        },
+        {
+          "target": "Se eu vir a Ana, dou o recado.",
+          "es": "Si veo a Ana, le doy el mensaje."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quando você vir aqui, me avisa.", "right": "Quando você vier aqui, me avisa.", "why": "De vir (venir) la forma es vier; vir es el futuro do subjuntivo de ver." },
-        { "wrong": "Se eu tenho tempo amanhã, passo aí.", "right": "Se eu tiver tempo amanhã, passo aí.", "why": "Para una condición en el futuro no se usa el presente como en español ('si tengo tiempo'), sino el futuro do subjuntivo." }
+        {
+          "wrong": "Quando você vir aqui, me avisa.",
+          "right": "Quando você vier aqui, me avisa.",
+          "why": "De vir (venir) la forma es vier; vir es el futuro do subjuntivo de ver."
+        },
+        {
+          "wrong": "Se eu tenho tempo amanhã, passo aí.",
+          "right": "Se eu tiver tempo amanhã, passo aí.",
+          "why": "Para una condición en el futuro no se usa el presente como en español ('si tengo tiempo'), sino el futuro do subjuntivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "seja como for",
+          "es": "sea como sea",
+          "example": "Seja como for, vamos terminar o projeto.",
+          "exampleEs": "Sea como sea, vamos a terminar el proyecto."
+        },
+        {
+          "target": "aconteça o que acontecer",
+          "es": "pase lo que pase",
+          "example": "Aconteça o que acontecer, eu vou estar lá.",
+          "exampleEs": "Pase lo que pase, voy a estar ahí."
+        },
+        {
+          "target": "custe o que custar",
+          "es": "cueste lo que cueste",
+          "example": "Vou terminar esse trabalho, custe o que custar.",
+          "exampleEs": "Voy a terminar este trabajo, cueste lo que cueste."
+        },
+        {
+          "target": "se Deus quiser",
+          "es": "si Dios quiere",
+          "example": "Se Deus quiser, nos vemos no fim de semana.",
+          "exampleEs": "Si Dios quiere, nos vemos el fin de semana."
+        },
+        {
+          "target": "quando você vier",
+          "es": "cuando vengas",
+          "example": "Quando você vier, me avisa.",
+          "exampleEs": "Cuando vengas, avisame."
+        },
+        {
+          "target": "se eu tiver tempo",
+          "es": "si tengo tiempo",
+          "example": "Se eu tiver tempo, passo lá em casa.",
+          "exampleEs": "Si tengo tiempo, paso por tu casa."
+        }
       ]
     },
     {
@@ -63,7 +176,10 @@
       "day": 3,
       "title": "Con se y quando",
       "goal": "Hablar de condiciones y momentos futuros.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "se + futuro do subjuntivo para condiciones posibles: Se chover, a gente fica em casa.",
         "quando + futuro do subjuntivo para un momento del futuro: Quando eu me formar, vou viajar.",
@@ -71,13 +187,68 @@
         "Para hábitos y verdades generales, quando va con presente: Quando chove, o trânsito para."
       ],
       "examples": [
-        { "target": "Se chover amanhã, o jogo vai ser adiado.", "es": "Si llueve mañana, el partido se va a postergar." },
-        { "target": "Quando eu me formar, quero morar fora.", "es": "Cuando me reciba, quiero vivir afuera." },
-        { "target": "Se você quiser, a gente pode ir junto.", "es": "Si querés, podemos ir juntos." }
+        {
+          "target": "Se chover amanhã, o jogo vai ser adiado.",
+          "es": "Si llueve mañana, el partido se va a postergar."
+        },
+        {
+          "target": "Quando eu me formar, quero morar fora.",
+          "es": "Cuando me reciba, quiero vivir afuera."
+        },
+        {
+          "target": "Se você quiser, a gente pode ir junto.",
+          "es": "Si querés, podemos ir juntos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Quando você possa, me liga.", "right": "Quando você puder, me liga.", "why": "Donde el español usa presente del subjuntivo después de 'cuando' ('cuando puedas'), el portugués usa el futuro do subjuntivo." },
-        { "wrong": "Se chove amanhã, não vamos.", "right": "Se chover amanhã, não vamos.", "why": "Para una condición en el futuro va el futuro do subjuntivo, no el presente." }
+        {
+          "wrong": "Quando você possa, me liga.",
+          "right": "Quando você puder, me liga.",
+          "why": "Donde el español usa presente del subjuntivo después de 'cuando' ('cuando puedas'), el portugués usa el futuro do subjuntivo."
+        },
+        {
+          "wrong": "Se chove amanhã, não vamos.",
+          "right": "Se chover amanhã, não vamos.",
+          "why": "Para una condición en el futuro va el futuro do subjuntivo, no el presente."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "se precisar, me chama",
+          "es": "si necesitás, llamame",
+          "example": "Se precisar, me chama no celular.",
+          "exampleEs": "Si necesitás, llamame al celular."
+        },
+        {
+          "target": "quando der, eu vou",
+          "es": "cuando pueda, voy",
+          "example": "Quando der, eu vou te visitar.",
+          "exampleEs": "Cuando pueda, voy a visitarte."
+        },
+        {
+          "target": "se for o caso",
+          "es": "si es el caso",
+          "example": "Se for o caso, a gente remarca a reunião.",
+          "exampleEs": "Si es el caso, reprogramamos la reunión."
+        },
+        {
+          "target": "quando eu tiver uma folga",
+          "es": "cuando tenga un día libre",
+          "example": "Quando eu tiver uma folga, vou visitar você.",
+          "exampleEs": "Cuando tenga un día libre, voy a visitarte."
+        },
+        {
+          "target": "se não houver problema",
+          "es": "si no hay problema",
+          "example": "Se não houver problema, chego mais tarde.",
+          "exampleEs": "Si no hay problema, llego más tarde."
+        },
+        {
+          "target": "quando terminar o trabalho",
+          "es": "cuando termine el trabajo",
+          "example": "Quando terminar o trabalho, eu te ligo.",
+          "exampleEs": "Cuando termine el trabajo, te llamo."
+        }
       ]
     },
     {
@@ -85,7 +256,9 @@
       "day": 4,
       "title": "Assim que, enquanto y o que você quiser",
       "goal": "Usar el futuro do subjuntivo con otras conjunciones y con relativos.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Conjunciones de tiempo: assim que y logo que (en cuanto), enquanto (mientras), sempre que (cada vez que), depois que.",
         "Relativos que miran al futuro: quem quiser (el que quiera), o que você quiser (lo que quieras), como você preferir, onde você estiver.",
@@ -93,13 +266,68 @@
         "El sujeto se omite mucho: Assim que chegar, me avisa."
       ],
       "examples": [
-        { "target": "Assim que eu souber o resultado, te conto.", "es": "En cuanto sepa el resultado, te cuento." },
-        { "target": "Pode pedir o que você quiser.", "es": "Podés pedir lo que quieras." },
-        { "target": "Enquanto você estiver aqui, não precisa pagar nada.", "es": "Mientras estés acá, no tenés que pagar nada." }
+        {
+          "target": "Assim que eu souber o resultado, te conto.",
+          "es": "En cuanto sepa el resultado, te cuento."
+        },
+        {
+          "target": "Pode pedir o que você quiser.",
+          "es": "Podés pedir lo que quieras."
+        },
+        {
+          "target": "Enquanto você estiver aqui, não precisa pagar nada.",
+          "es": "Mientras estés acá, no tenés que pagar nada."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Faça como você prefira.", "right": "Faça como você preferir.", "why": "Con como, onde, quem y o que referidos al futuro se usa el futuro do subjuntivo." },
-        { "wrong": "Assim que eu chegue, te ligo.", "right": "Assim que eu chegar, te ligo.", "why": "Assim que, como 'en cuanto', pide futuro do subjuntivo cuando se habla del futuro." }
+        {
+          "wrong": "Faça como você prefira.",
+          "right": "Faça como você preferir.",
+          "why": "Con como, onde, quem y o que referidos al futuro se usa el futuro do subjuntivo."
+        },
+        {
+          "wrong": "Assim que eu chegue, te ligo.",
+          "right": "Assim que eu chegar, te ligo.",
+          "why": "Assim que, como 'en cuanto', pide futuro do subjuntivo cuando se habla del futuro."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "assim que eu chegar",
+          "es": "apenas llegue",
+          "example": "Assim que eu chegar, te mando uma mensagem.",
+          "exampleEs": "Apenas llegue, te mando un mensaje."
+        },
+        {
+          "target": "enquanto houver tempo",
+          "es": "mientras haya tiempo",
+          "example": "Vamos aproveitar enquanto houver tempo.",
+          "exampleEs": "Aprovechemos mientras haya tiempo."
+        },
+        {
+          "target": "o que você quiser",
+          "es": "lo que quieras",
+          "example": "Pode pedir o que você quiser.",
+          "exampleEs": "Podés pedir lo que quieras."
+        },
+        {
+          "target": "faça o que for melhor",
+          "es": "hacé lo que sea mejor",
+          "example": "Faça o que for melhor para você.",
+          "exampleEs": "Hacé lo que sea mejor para vos."
+        },
+        {
+          "target": "assim que puder",
+          "es": "en cuanto puedas",
+          "example": "Me responde assim que puder.",
+          "exampleEs": "Respondeme en cuanto puedas."
+        },
+        {
+          "target": "enquanto for possível",
+          "es": "mientras sea posible",
+          "example": "Vou continuar estudando enquanto for possível.",
+          "exampleEs": "Voy a seguir estudiando mientras sea posible."
+        }
       ]
     },
     {
@@ -107,7 +335,10 @@
       "day": 5,
       "title": "Coordinar planes",
       "goal": "Comprender y escribir un mensaje para organizar una visita.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Ofrecer: Se você quiser, posso te buscar. Qualquer coisa, me avisa.",
         "Condicionar: Se der, passo aí (si puedo). Se não der, a gente marca outro dia.",
@@ -115,13 +346,68 @@
         "'Quedar' en una cita se dice marcar o combinar: Vamos marcar para sábado?"
       ],
       "examples": [
-        { "target": "Se der, passo aí depois do trabalho.", "es": "Si puedo, paso por ahí después del trabajo." },
-        { "target": "Assim que o avião pousar, te mando uma mensagem.", "es": "En cuanto aterrice el avión, te mando un mensaje." },
-        { "target": "Se precisar de alguma coisa, é só falar.", "es": "Si necesitás algo, decime nomás." }
+        {
+          "target": "Se der, passo aí depois do trabalho.",
+          "es": "Si puedo, paso por ahí después del trabajo."
+        },
+        {
+          "target": "Assim que o avião pousar, te mando uma mensagem.",
+          "es": "En cuanto aterrice el avión, te mando un mensaje."
+        },
+        {
+          "target": "Se precisar de alguma coisa, é só falar.",
+          "es": "Si necesitás algo, decime nomás."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se você precisa algo, me avisa.", "right": "Se você precisar de alguma coisa, me avisa.", "why": "La condición futura va en futuro do subjuntivo, y precisar lleva de antes de un sustantivo." },
-        { "wrong": "Vamos quedar para sábado?", "right": "Vamos marcar para sábado?", "why": "'Quedar' en una cita se dice marcar o combinar." }
+        {
+          "wrong": "Se você precisa algo, me avisa.",
+          "right": "Se você precisar de alguma coisa, me avisa.",
+          "why": "La condición futura va en futuro do subjuntivo, y precisar lleva de antes de un sustantivo."
+        },
+        {
+          "wrong": "Vamos quedar para sábado?",
+          "right": "Vamos marcar para sábado?",
+          "why": "'Quedar' en una cita se dice marcar o combinar."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "me avisa quando chegar",
+          "es": "avisame cuando llegues",
+          "example": "Me avisa quando chegar na estação.",
+          "exampleEs": "Avisame cuando llegues a la estación."
+        },
+        {
+          "target": "a gente se fala quando puder",
+          "es": "hablamos cuando puedas",
+          "example": "Agora tô ocupado, mas a gente se fala quando puder.",
+          "exampleEs": "Ahora estoy ocupado, pero hablamos cuando puedas."
+        },
+        {
+          "target": "qualquer coisa, me liga",
+          "es": "cualquier cosa, llamame",
+          "example": "Qualquer coisa, me liga que eu te busco.",
+          "exampleEs": "Cualquier cosa, llamame que te paso a buscar."
+        },
+        {
+          "target": "vamos ver o que der",
+          "es": "vamos a ver qué sale",
+          "example": "Ainda não sei, vamos ver o que der.",
+          "exampleEs": "Todavía no sé, vamos a ver qué sale."
+        },
+        {
+          "target": "fico te esperando",
+          "es": "te espero",
+          "example": "Fico te esperando na porta do prédio.",
+          "exampleEs": "Te espero en la puerta del edificio."
+        },
+        {
+          "target": "assim que tiver uma data",
+          "es": "apenas tenga una fecha",
+          "example": "Assim que tiver uma data, te conto.",
+          "exampleEs": "Apenas tenga una fecha, te cuento."
+        }
       ]
     }
   ]

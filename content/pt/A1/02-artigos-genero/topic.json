@@ -11,7 +11,9 @@
     "Formar el plural, incluidos los terminados en -ão, -l y -m",
     "Describir un lugar con tem y há"
   ],
-  "prerequisites": ["pt-a1-ser-estar"],
+  "prerequisites": [
+    "pt-a1-ser-estar"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,60 @@
       "day": 1,
       "title": "Artículos definidos",
       "goal": "Usar o, a, os y as.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "o (el), a (la), os (los), as (las).",
         "En Brasil es común poner artículo delante de los nombres propios en la charla: o Pedro, a Ana.",
         "Los países suelen llevar artículo: o Brasil, a Argentina; las ciudades, en general no: São Paulo."
       ],
       "examples": [
-        { "target": "O carro é novo.", "es": "El auto es nuevo." },
-        { "target": "As meninas estão na escola.", "es": "Las chicas están en la escuela." },
-        { "target": "A Argentina é grande.", "es": "La Argentina es grande." }
+        {
+          "target": "O carro é novo.",
+          "es": "El auto es nuevo."
+        },
+        {
+          "target": "As meninas estão na escola.",
+          "es": "Las chicas están en la escuela."
+        },
+        {
+          "target": "A Argentina é grande.",
+          "es": "La Argentina es grande."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "El carro é novo.", "right": "O carro é novo.", "why": "El artículo masculino en portugués es o." }
+        {
+          "wrong": "El carro é novo.",
+          "right": "O carro é novo.",
+          "why": "El artículo masculino en portugués es o."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Qual é o problema?",
+          "es": "¿Cuál es el problema?",
+          "example": "Fala logo, qual é o problema?",
+          "exampleEs": "Hablá ya, ¿cuál es el problema?"
+        },
+        {
+          "target": "Não é a mesma coisa",
+          "es": "No es lo mismo",
+          "example": "Comprar ou alugar não é a mesma coisa.",
+          "exampleEs": "Comprar o alquilar no es lo mismo."
+        },
+        {
+          "target": "Os dois estão certos",
+          "es": "Los dos tienen razón",
+          "example": "Na minha opinião, os dois estão certos.",
+          "exampleEs": "En mi opinión, los dos tienen razón."
+        },
+        {
+          "target": "As coisas mudam",
+          "es": "Las cosas cambian",
+          "example": "Com o tempo, as coisas mudam.",
+          "exampleEs": "Con el tiempo, las cosas cambian."
+        }
       ]
     },
     {
@@ -39,19 +82,66 @@
       "day": 2,
       "title": "Artículos indefinidos",
       "goal": "Usar um, uma, uns y umas.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "um (un), uma (una), uns (unos), umas (unas).",
         "Delante de una profesión no se usa artículo, igual que en español: Ele é médico.",
         "Um se pronuncia nasal, sin la n marcada del español."
       ],
       "examples": [
-        { "target": "Eu tenho um irmão e uma irmã.", "es": "Tengo un hermano y una hermana." },
-        { "target": "Uns amigos vêm hoje.", "es": "Unos amigos vienen hoy." },
-        { "target": "Ela é professora.", "es": "Ella es profesora." }
+        {
+          "target": "Eu tenho um irmão e uma irmã.",
+          "es": "Tengo un hermano y una hermana."
+        },
+        {
+          "target": "Uns amigos vêm hoje.",
+          "es": "Unos amigos vienen hoy."
+        },
+        {
+          "target": "Ela é professora.",
+          "es": "Ella es profesora."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu tenho una irmã.", "right": "Eu tenho uma irmã.", "why": "En portugués es uma, con m." }
+        {
+          "wrong": "Eu tenho una irmã.",
+          "right": "Eu tenho uma irmã.",
+          "why": "En portugués es uma, con m."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Um momento, por favor",
+          "es": "Un momento, por favor",
+          "example": "Um momento, por favor, já te atendo.",
+          "exampleEs": "Un momento, por favor, ya te atiendo."
+        },
+        {
+          "target": "Uma vez na vida",
+          "es": "Una vez en la vida",
+          "example": "Isso só acontece uma vez na vida.",
+          "exampleEs": "Eso solo pasa una vez en la vida."
+        },
+        {
+          "target": "Uns dias atrás",
+          "es": "Unos días atrás",
+          "example": "A gente se viu uns dias atrás.",
+          "exampleEs": "Nos vimos unos días atrás."
+        },
+        {
+          "target": "Umas vezes sim, outras não",
+          "es": "A veces sí, a veces no",
+          "example": "Funciona? Umas vezes sim, outras não.",
+          "exampleEs": "¿Funciona? A veces sí, a veces no."
+        },
+        {
+          "target": "Uma coisa é certa",
+          "es": "Una cosa es segura",
+          "example": "Uma coisa é certa: ele vai voltar.",
+          "exampleEs": "Una cosa es segura: él va a volver."
+        }
       ]
     },
     {
@@ -59,20 +149,72 @@
       "day": 3,
       "title": "El género de los sustantivos",
       "goal": "Reconocer el género, sobre todo en las palabras que cambian respecto del español.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Como en español, -o suele ser masculino y -a femenino: o livro, a casa.",
         "Algunas palabras cambian de género: o leite (la leche), o sangue (la sangre), a ponte (el puente), a dor (el dolor), a árvore (el árbol).",
         "Las terminadas en -agem son femeninas: a garagem, a mensagem, a viagem."
       ],
       "examples": [
-        { "target": "O leite está frio.", "es": "La leche está fría." },
-        { "target": "A viagem foi longa.", "es": "El viaje fue largo." },
-        { "target": "A árvore é muito alta.", "es": "El árbol es muy alto." }
+        {
+          "target": "O leite está frio.",
+          "es": "La leche está fría."
+        },
+        {
+          "target": "A viagem foi longa.",
+          "es": "El viaje fue largo."
+        },
+        {
+          "target": "A árvore é muito alta.",
+          "es": "El árbol es muy alto."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "O viagem é cara.", "right": "A viagem é cara.", "why": "Las palabras en -agem son femeninas en portugués." },
-        { "wrong": "A leite é bom.", "right": "O leite é bom.", "why": "Leite es masculino en portugués, aunque en español sea femenino." }
+        {
+          "wrong": "O viagem é cara.",
+          "right": "A viagem é cara.",
+          "why": "Las palabras en -agem son femeninas en portugués."
+        },
+        {
+          "wrong": "A leite é bom.",
+          "right": "O leite é bom.",
+          "why": "Leite es masculino en portugués, aunque en español sea femenino."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "A viagem foi ótima",
+          "es": "El viaje fue genial",
+          "example": "A viagem foi ótima, adorei tudo.",
+          "exampleEs": "El viaje fue genial, me encantó todo."
+        },
+        {
+          "target": "O leite está quente",
+          "es": "La leche está caliente",
+          "example": "Cuidado, o leite está quente.",
+          "exampleEs": "Cuidado, la leche está caliente."
+        },
+        {
+          "target": "A árvore é enorme",
+          "es": "El árbol es enorme",
+          "example": "No quintal, a árvore é enorme.",
+          "exampleEs": "En el patio, el árbol es enorme."
+        },
+        {
+          "target": "O sangue é vermelho",
+          "es": "La sangre es roja",
+          "example": "Todo mundo sabe que o sangue é vermelho.",
+          "exampleEs": "Todo el mundo sabe que la sangre es roja."
+        },
+        {
+          "target": "A ponte é muito longa",
+          "es": "El puente es muy largo",
+          "example": "Para chegar lá, a ponte é muito longa.",
+          "exampleEs": "Para llegar allá, el puente es muy largo."
+        }
       ]
     },
     {
@@ -80,20 +222,39 @@
       "day": 4,
       "title": "El plural",
       "goal": "Formar el plural de las terminaciones más comunes.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "La mayoría suma -s: livro → livros, casa → casas.",
         "-ão tiene tres plurales: -ões (avião → aviões), -ães (pão → pães), -ãos (mão → mãos); el más común es -ões.",
         "-l cambia a -is (animal → animais, papel → papéis) y -m cambia a -ns (homem → homens)."
       ],
       "examples": [
-        { "target": "Os aviões estão atrasados.", "es": "Los aviones están atrasados." },
-        { "target": "Eu quero dois pães.", "es": "Quiero dos panes." },
-        { "target": "Os homens e as mulheres.", "es": "Los hombres y las mujeres." }
+        {
+          "target": "Os aviões estão atrasados.",
+          "es": "Los aviones están atrasados."
+        },
+        {
+          "target": "Eu quero dois pães.",
+          "es": "Quiero dos panes."
+        },
+        {
+          "target": "Os homens e as mulheres.",
+          "es": "Los hombres y las mujeres."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Os animals.", "right": "Os animais.", "why": "Las palabras en -al forman el plural en -ais." },
-        { "wrong": "Os homems.", "right": "Os homens.", "why": "La -m final se cambia por -ns." }
+        {
+          "wrong": "Os animals.",
+          "right": "Os animais.",
+          "why": "Las palabras en -al forman el plural en -ais."
+        },
+        {
+          "wrong": "Os homems.",
+          "right": "Os homens.",
+          "why": "La -m final se cambia por -ns."
+        }
       ]
     },
     {
@@ -101,20 +262,66 @@
       "day": 5,
       "title": "Describir un lugar: tem y há",
       "goal": "Comprender y escribir una descripción de un barrio o una casa.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Para decir 'hay' en Brasil se usa tem en la charla y há en lo escrito formal: Tem uma padaria aqui.",
         "Tem y há no cambian en plural: Tem dois parques.",
         "Para negar: Não tem farmácia no bairro."
       ],
       "examples": [
-        { "target": "No meu bairro tem uma praça e dois mercados.", "es": "En mi barrio hay una plaza y dos supermercados." },
-        { "target": "Há muitas árvores na rua.", "es": "Hay muchos árboles en la calle." },
-        { "target": "Não tem metrô na minha cidade.", "es": "No hay subte en mi ciudad." }
+        {
+          "target": "No meu bairro tem uma praça e dois mercados.",
+          "es": "En mi barrio hay una plaza y dos supermercados."
+        },
+        {
+          "target": "Há muitas árvores na rua.",
+          "es": "Hay muchos árboles en la calle."
+        },
+        {
+          "target": "Não tem metrô na minha cidade.",
+          "es": "No hay subte en mi ciudad."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Hay um café na esquina.", "right": "Tem um café na esquina.", "why": "En portugués no existe 'hay': se dice tem o há." },
-        { "wrong": "Têm dois parques.", "right": "Tem dois parques.", "why": "Con el sentido de 'hay', tem no cambia en plural." }
+        {
+          "wrong": "Hay um café na esquina.",
+          "right": "Tem um café na esquina.",
+          "why": "En portugués no existe 'hay': se dice tem o há."
+        },
+        {
+          "wrong": "Têm dois parques.",
+          "right": "Tem dois parques.",
+          "why": "Con el sentido de 'hay', tem no cambia en plural."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Tem muita gente aqui",
+          "es": "Hay mucha gente aquí",
+          "example": "No shopping, tem muita gente aqui hoje.",
+          "exampleEs": "En el shopping hay mucha gente hoy."
+        },
+        {
+          "target": "Não tem nada aqui",
+          "es": "No hay nada aquí",
+          "example": "Abri a geladeira e não tem nada aqui.",
+          "exampleEs": "Abrí la heladera y no hay nada ahí."
+        },
+        {
+          "target": "Tem alguma coisa errada",
+          "es": "Hay algo que está mal",
+          "example": "Tem alguma coisa errada com esse carro.",
+          "exampleEs": "Hay algo que está mal con ese auto."
+        },
+        {
+          "target": "Aqui tem de tudo",
+          "es": "Aquí hay de todo",
+          "example": "Nesse mercado, aqui tem de tudo.",
+          "exampleEs": "En ese mercado, aquí hay de todo."
+        }
       ]
     }
   ]

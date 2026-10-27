@@ -12,7 +12,10 @@
     "Ubicar el pronombre en las locuciones verbales al estilo de Brasil",
     "Pasar un mensaje informal a registro formal"
   ],
-  "prerequisites": ["pt-a2-pronomes", "pt-b2-registro-formal"],
+  "prerequisites": [
+    "pt-a2-pronomes",
+    "pt-b2-registro-formal"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,9 @@
       "day": 1,
       "title": "Próclise: el pronombre antes",
       "goal": "Reconocer las palabras que atraen el pronombre antes del verbo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Palabras negativas: não, nunca, jamais, ninguém, nada: Ninguém me avisou.",
         "Adverbios sin coma: já, sempre, ainda, aqui, talvez, também, só: Ele sempre nos ajuda. Con coma vuelve la ênclise: Aqui, trabalha-se muito.",
@@ -29,13 +34,68 @@
         "Preguntas, exclamaciones y deseos: Quem te disse isso? Deus te abençoe!"
       ],
       "examples": [
-        { "target": "Ninguém me disse nada.", "es": "Nadie me dijo nada." },
-        { "target": "Foi o presente que ela me deu.", "es": "Fue el regalo que ella me dio." },
-        { "target": "Quando o encontrei, ele já tinha saído da empresa.", "es": "Cuando lo encontré, ya se había ido de la empresa." }
+        {
+          "target": "Ninguém me disse nada.",
+          "es": "Nadie me dijo nada."
+        },
+        {
+          "target": "Foi o presente que ela me deu.",
+          "es": "Fue el regalo que ella me dio."
+        },
+        {
+          "target": "Quando o encontrei, ele já tinha saído da empresa.",
+          "es": "Cuando lo encontré, ya se había ido de la empresa."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ninguém disse-me nada.", "right": "Ninguém me disse nada.", "why": "Ninguém atrae el pronombre: va antes del verbo." },
-        { "wrong": "O livro que deram-me é ótimo.", "right": "O livro que me deram é ótimo.", "why": "El relativo que también atrae el pronombre." }
+        {
+          "wrong": "Ninguém disse-me nada.",
+          "right": "Ninguém me disse nada.",
+          "why": "Ninguém atrae el pronombre: va antes del verbo."
+        },
+        {
+          "wrong": "O livro que deram-me é ótimo.",
+          "right": "O livro que me deram é ótimo.",
+          "why": "El relativo que también atrae el pronombre."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "não se preocupe",
+          "es": "no te preocupes",
+          "example": "Não se preocupe, tudo vai se resolver.",
+          "exampleEs": "No te preocupes, todo se va a resolver."
+        },
+        {
+          "target": "que se cuide",
+          "es": "que se cuide",
+          "example": "Disse a ele que se cuide nessa viagem.",
+          "exampleEs": "Le dije que se cuide en ese viaje."
+        },
+        {
+          "target": "quando se trata de",
+          "es": "cuando se trata de",
+          "example": "Quando se trata de dinheiro, ele é bem cuidadoso.",
+          "exampleEs": "Cuando se trata de plata, él es bien cuidadoso."
+        },
+        {
+          "target": "como se diz",
+          "es": "como se dice",
+          "example": "Não sei como se diz isso em português.",
+          "exampleEs": "No sé cómo se dice eso en portugués."
+        },
+        {
+          "target": "já se sabe",
+          "es": "ya se sabe",
+          "example": "Já se sabe que ele sempre chega atrasado.",
+          "exampleEs": "Ya se sabe que él siempre llega tarde."
+        },
+        {
+          "target": "ninguém se importa",
+          "es": "a nadie le importa",
+          "example": "Parece que ninguém se importa com isso aqui.",
+          "exampleEs": "Parece que a nadie le importa eso acá."
+        }
       ]
     },
     {
@@ -43,7 +103,9 @@
       "day": 2,
       "title": "Ênclise: el pronombre después",
       "goal": "Usar el pronombre después del verbo cuando lo pide la norma.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "La norma no permite empezar una oración con pronombre átono: Disseram-me que..., Parece-me que...",
         "Con imperativo afirmativo y con gerundio: Diga-me a verdade. Saiu, deixando-nos sem resposta.",
@@ -51,13 +113,68 @@
         "Con o, a, os, as cambian las formas: después de -r, -s o -z cae la letra y queda lo, la (fazê-lo, fi-lo, encontramo-la); después de sonido nasal, no, na (fazem-no, dão-na)."
       ],
       "examples": [
-        { "target": "Parece-me que houve um engano.", "es": "Me parece que hubo un error." },
-        { "target": "Diga-me o que aconteceu.", "es": "Dígame qué pasó." },
-        { "target": "Recebi o convite e aceitei-o na hora.", "es": "Recibí la invitación y la acepté en el momento." }
+        {
+          "target": "Parece-me que houve um engano.",
+          "es": "Me parece que hubo un error."
+        },
+        {
+          "target": "Diga-me o que aconteceu.",
+          "es": "Dígame qué pasó."
+        },
+        {
+          "target": "Recebi o convite e aceitei-o na hora.",
+          "es": "Recibí la invitación y la acepté en el momento."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Me parece que houve um engano. (en un informe)", "right": "Parece-me que houve um engano.", "why": "En la norma la oración no empieza con pronombre átono; al hablar, en Brasil, me parece es lo normal." },
-        { "wrong": "Encontramos-o na saída.", "right": "Encontramo-lo na saída.", "why": "Después de -s el verbo pierde la s y el pronombre pasa a lo." }
+        {
+          "wrong": "Me parece que houve um engano. (en un informe)",
+          "right": "Parece-me que houve um engano.",
+          "why": "En la norma la oración no empieza con pronombre átono; al hablar, en Brasil, me parece es lo normal."
+        },
+        {
+          "wrong": "Encontramos-o na saída.",
+          "right": "Encontramo-lo na saída.",
+          "why": "Después de -s el verbo pierde la s y el pronombre pasa a lo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "diga-me a verdade",
+          "es": "decime la verdad",
+          "example": "Diga-me a verdade, o que aconteceu?",
+          "exampleEs": "Decime la verdad, ¿qué pasó?"
+        },
+        {
+          "target": "permita-me insistir",
+          "es": "permitime insistir",
+          "example": "Permita-me insistir nesse ponto importante.",
+          "exampleEs": "Permitime insistir en ese punto importante."
+        },
+        {
+          "target": "ouça-me bem",
+          "es": "escuchame bien",
+          "example": "Ouça-me bem antes de tomar essa decisão.",
+          "exampleEs": "Escuchame bien antes de tomar esa decisión."
+        },
+        {
+          "target": "faça-me um favor",
+          "es": "hacéme un favor",
+          "example": "Faça-me um favor e feche a porta.",
+          "exampleEs": "Hacéme un favor y cerrá la puerta."
+        },
+        {
+          "target": "deixe-me ver",
+          "es": "dejame ver",
+          "example": "Deixe-me ver esse documento antes de assinar.",
+          "exampleEs": "Dejame ver ese documento antes de firmar."
+        },
+        {
+          "target": "sente-se, por favor",
+          "es": "sentate, por favor",
+          "example": "Sente-se, por favor, o médico já vem atendê-lo.",
+          "exampleEs": "Sentate, por favor, el médico ya viene a atenderte."
+        }
       ]
     },
     {
@@ -65,7 +182,10 @@
       "day": 3,
       "title": "Mesóclise: dir-se-ia, far-lhe-ei",
       "goal": "Reconocer y formar la mesóclise en futuro y condicional.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Solo con futuro do presente y futuro do pretérito (condicional), cuando no hay palabra que atraiga el pronombre.",
         "El pronombre va entre la raíz y la terminación: dir-se-ia, far-lhe-ei, encontrar-nos-emos, dar-te-ia.",
@@ -74,13 +194,62 @@
         "Con futuro nunca hay ênclise: direi-lhe es un error. Hoy la mesóclise vive en contratos, discursos y literatura; en la charla suena pomposa o en broma."
       ],
       "examples": [
-        { "target": "Dir-se-ia que ele não queria ser encontrado.", "es": "Se diría que no quería que lo encontraran." },
-        { "target": "Far-lhe-ei uma proposta irrecusável.", "es": "Le haré una propuesta que no podrá rechazar." },
-        { "target": "Encontrar-nos-emos às dez, na entrada do teatro.", "es": "Nos encontraremos a las diez, en la entrada del teatro." }
+        {
+          "target": "Dir-se-ia que ele não queria ser encontrado.",
+          "es": "Se diría que no quería que lo encontraran."
+        },
+        {
+          "target": "Far-lhe-ei uma proposta irrecusável.",
+          "es": "Le haré una propuesta que no podrá rechazar."
+        },
+        {
+          "target": "Encontrar-nos-emos às dez, na entrada do teatro.",
+          "es": "Nos encontraremos a las diez, en la entrada del teatro."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Direi-lhe a verdade.", "right": "Dir-lhe-ei a verdade.", "why": "Con futuro nunca va ênclise: se usa mesóclise o, si hay sujeto o atractor, próclise (Eu lhe direi a verdade)." },
-        { "wrong": "Não dir-lhe-ei nada.", "right": "Não lhe direi nada.", "why": "Não atrae el pronombre: con atractor siempre va próclise, también en futuro." }
+        {
+          "wrong": "Direi-lhe a verdade.",
+          "right": "Dir-lhe-ei a verdade.",
+          "why": "Con futuro nunca va ênclise: se usa mesóclise o, si hay sujeto o atractor, próclise (Eu lhe direi a verdade)."
+        },
+        {
+          "wrong": "Não dir-lhe-ei nada.",
+          "right": "Não lhe direi nada.",
+          "why": "Não atrae el pronombre: con atractor siempre va próclise, también en futuro."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "dir-se-ia que",
+          "es": "se diría que",
+          "example": "Dir-se-ia que ele nem percebeu o erro.",
+          "exampleEs": "Se diría que él ni se dio cuenta del error."
+        },
+        {
+          "target": "far-lhe-ei o favor",
+          "es": "te haré el favor",
+          "example": "Far-lhe-ei o favor de revisar o contrato pessoalmente.",
+          "exampleEs": "Te haré el favor de revisar el contrato personalmente."
+        },
+        {
+          "target": "dar-se-á o caso",
+          "es": "se dará el caso",
+          "example": "Dar-se-á o caso de precisarmos reagendar a reunião.",
+          "exampleEs": "Se dará el caso de que necesitemos reprogramar la reunión."
+        },
+        {
+          "target": "poder-se-ia dizer",
+          "es": "se podría decir",
+          "example": "Poder-se-ia dizer que o projeto foi um sucesso.",
+          "exampleEs": "Se podría decir que el proyecto fue un éxito."
+        },
+        {
+          "target": "ver-se-á depois",
+          "es": "se verá después",
+          "example": "Ver-se-á depois se essa medida deu resultado.",
+          "exampleEs": "Se verá después si esa medida dio resultado."
+        }
       ]
     },
     {
@@ -88,7 +257,9 @@
       "day": 4,
       "title": "Locuciones verbales y el uso de Brasil",
       "goal": "Ubicar el pronombre con auxiliar + infinitivo, gerundio o participio.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Con auxiliar + infinitivo o gerundio, en Brasil el pronombre va entre los dos verbos, sin guion: Vou te ligar. Estou te esperando. Quero lhe dizer uma coisa.",
         "También es correcto después del infinitivo, más formal: Quero dizer-lhe uma coisa.",
@@ -96,12 +267,63 @@
         "En la charla de Brasil la próclise se generaliza, incluso al comienzo: Me disseram que... Te amo. Se vira! Es correcto al hablar; en lo formal, ajustá."
       ],
       "examples": [
-        { "target": "Vou te mandar o endereço por mensagem.", "es": "Te voy a mandar la dirección por mensaje." },
-        { "target": "Estou te esperando na portaria.", "es": "Te estoy esperando en la entrada del edificio." },
-        { "target": "Eu tinha me esquecido completamente da reunião.", "es": "Me había olvidado por completo de la reunión." }
+        {
+          "target": "Vou te mandar o endereço por mensagem.",
+          "es": "Te voy a mandar la dirección por mensaje."
+        },
+        {
+          "target": "Estou te esperando na portaria.",
+          "es": "Te estoy esperando en la entrada del edificio."
+        },
+        {
+          "target": "Eu tinha me esquecido completamente da reunião.",
+          "es": "Me había olvidado por completo de la reunión."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu tinha visto-o no jornal.", "right": "Eu o tinha visto no jornal.", "why": "El pronombre nunca va después del participio: va antes del auxiliar o pegado a él." }
+        {
+          "wrong": "Eu tinha visto-o no jornal.",
+          "right": "Eu o tinha visto no jornal.",
+          "why": "El pronombre nunca va después del participio: va antes del auxiliar o pegado a él."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "vou lhe dizer",
+          "es": "te voy a decir",
+          "example": "Vou lhe dizer exatamente o que aconteceu ontem.",
+          "exampleEs": "Te voy a decir exactamente lo que pasó ayer."
+        },
+        {
+          "target": "está me ligando",
+          "es": "me está llamando",
+          "example": "Ele está me ligando desde cedo e eu não atendi.",
+          "exampleEs": "Él me está llamando desde temprano y no le atendí."
+        },
+        {
+          "target": "tenho que lhe falar",
+          "es": "tengo que hablarte",
+          "example": "Tenho que lhe falar sobre um assunto urgente.",
+          "exampleEs": "Tengo que hablarte sobre un asunto urgente."
+        },
+        {
+          "target": "vai se dar bem",
+          "es": "te va a ir bien",
+          "example": "Com esse currículo, você vai se dar bem na entrevista.",
+          "exampleEs": "Con ese currículum, te va a ir bien en la entrevista."
+        },
+        {
+          "target": "estou lhe avisando",
+          "es": "te estoy avisando",
+          "example": "Estou lhe avisando com antecedência para você se organizar.",
+          "exampleEs": "Te estoy avisando con anticipación para que te organices."
+        },
+        {
+          "target": "pode me ajudar",
+          "es": "podés ayudarme",
+          "example": "Você pode me ajudar a carregar essas caixas?",
+          "exampleEs": "¿Podés ayudarme a llevar estas cajas?"
+        }
       ]
     },
     {
@@ -109,7 +331,10 @@
       "day": 5,
       "title": "Del mensaje informal al texto formal",
       "goal": "Comprender y reescribir un mensaje informal en registro formal.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Revisá el comienzo de cada oración: Me manda... → Envie-me...; Se trata de... → Trata-se de...",
         "Cambiá ele o ela como objeto por o, a, y para ele por lhe: Vi ele → Eu o vi; Mandei para ele → Enviei-lhe.",
@@ -117,13 +342,68 @@
         "No abuses de la mesóclise: un mail formal de Brasil usa próclise con sujeto (Eu lhe envio) y ênclise al comenzar."
       ],
       "examples": [
-        { "target": "Envie-me, por gentileza, a versão final do contrato.", "es": "Envíeme, por favor, la versión final del contrato." },
-        { "target": "Conforme lhe informei por telefone, a entrega foi adiada.", "es": "Como le informé por teléfono, la entrega se postergó." },
-        { "target": "Trata-se de uma alteração urgente.", "es": "Se trata de un cambio urgente." }
+        {
+          "target": "Envie-me, por gentileza, a versão final do contrato.",
+          "es": "Envíeme, por favor, la versión final del contrato."
+        },
+        {
+          "target": "Conforme lhe informei por telefone, a entrega foi adiada.",
+          "es": "Como le informé por teléfono, la entrega se postergó."
+        },
+        {
+          "target": "Trata-se de uma alteração urgente.",
+          "es": "Se trata de un cambio urgente."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Conforme informou-nos, o prazo terminou.", "right": "Conforme nos informou, o prazo terminou.", "why": "Conforme es una conjunción subordinante y atrae el pronombre." },
-        { "wrong": "Se trata de um caso urgente. (en un oficio)", "right": "Trata-se de um caso urgente.", "why": "En lo escrito formal no se empieza la oración con pronombre átono." }
+        {
+          "wrong": "Conforme informou-nos, o prazo terminou.",
+          "right": "Conforme nos informou, o prazo terminou.",
+          "why": "Conforme es una conjunción subordinante y atrae el pronombre."
+        },
+        {
+          "wrong": "Se trata de um caso urgente. (en un oficio)",
+          "right": "Trata-se de um caso urgente.",
+          "why": "En lo escrito formal no se empieza la oración con pronombre átono."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "venho por meio desta",
+          "es": "vengo por medio de esta nota",
+          "example": "Venho por meio desta solicitar a liberação do documento.",
+          "exampleEs": "Vengo por medio de esta nota a solicitar la liberación del documento."
+        },
+        {
+          "target": "solicito a gentileza de",
+          "es": "solicito la gentileza de",
+          "example": "Solicito a gentileza de confirmar o recebimento deste e-mail.",
+          "exampleEs": "Solicito la gentileza de confirmar la recepción de este mail."
+        },
+        {
+          "target": "agradeço antecipadamente",
+          "es": "agradezco de antemano",
+          "example": "Agradeço antecipadamente a atenção dispensada a este pedido.",
+          "exampleEs": "Agradezco de antemano la atención dada a este pedido."
+        },
+        {
+          "target": "venho informar que",
+          "es": "vengo a informar que",
+          "example": "Venho informar que a reunião foi remarcada para sexta-feira.",
+          "exampleEs": "Vengo a informar que la reunión fue reprogramada para el viernes."
+        },
+        {
+          "target": "ficarei no aguardo",
+          "es": "quedaré a la espera",
+          "example": "Ficarei no aguardo de um retorno o mais breve possível.",
+          "exampleEs": "Quedaré a la espera de una respuesta lo antes posible."
+        },
+        {
+          "target": "sem mais para o momento",
+          "es": "sin más por el momento",
+          "example": "Sem mais para o momento, agradeço desde já a atenção.",
+          "exampleEs": "Sin más por el momento, agradezco desde ya la atención."
+        }
       ]
     }
   ]

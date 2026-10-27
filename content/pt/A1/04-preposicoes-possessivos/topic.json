@@ -11,7 +11,9 @@
     "Usar los posesivos meu, seu, nosso y dele/dela",
     "Describir tu casa y tu familia"
   ],
-  "prerequisites": ["pt-a1-artigos-genero"],
+  "prerequisites": [
+    "pt-a1-artigos-genero"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,66 @@
       "day": 1,
       "title": "em + artículo: no, na, nos, nas",
       "goal": "Indicar dónde está algo con em y sus contracciones.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "em + o = no, em + a = na, em + os = nos, em + as = nas.",
         "em + um = num, em + uma = numa (muy común en Brasil).",
         "Con ciudades sin artículo queda em: em Lima, em Paris."
       ],
       "examples": [
-        { "target": "O celular está na bolsa.", "es": "El celular está en la cartera." },
-        { "target": "Eu moro no Brasil.", "es": "Vivo en Brasil." },
-        { "target": "Ela trabalha numa escola.", "es": "Trabaja en una escuela." }
+        {
+          "target": "O celular está na bolsa.",
+          "es": "El celular está en la cartera."
+        },
+        {
+          "target": "Eu moro no Brasil.",
+          "es": "Vivo en Brasil."
+        },
+        {
+          "target": "Ela trabalha numa escola.",
+          "es": "Trabaja en una escuela."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Está em a mesa.", "right": "Está na mesa.", "why": "em + a se contrae siempre en na." }
+        {
+          "wrong": "Está em a mesa.",
+          "right": "Está na mesa.",
+          "why": "em + a se contrae siempre en na."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "na verdade",
+          "es": "en realidad",
+          "example": "Na verdade, eu não gosto de café.",
+          "exampleEs": "En realidad, no me gusta el café."
+        },
+        {
+          "target": "no fundo",
+          "es": "en el fondo",
+          "example": "No fundo, ele é uma boa pessoa.",
+          "exampleEs": "En el fondo, él es buena persona."
+        },
+        {
+          "target": "está na hora",
+          "es": "ya es hora",
+          "example": "Está na hora de ir embora.",
+          "exampleEs": "Ya es hora de irnos."
+        },
+        {
+          "target": "na esquina",
+          "es": "en la esquina",
+          "example": "O mercado fica na esquina.",
+          "exampleEs": "El mercado queda en la esquina."
+        },
+        {
+          "target": "no meio do caminho",
+          "es": "en el medio del camino",
+          "example": "Encontrei um problema no meio do caminho.",
+          "exampleEs": "Me encontré un problema en el medio del camino."
+        }
       ]
     },
     {
@@ -39,19 +88,66 @@
       "day": 2,
       "title": "de + artículo: do, da, dos, das",
       "goal": "Expresar origen y pertenencia con de y sus contracciones.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "de + o = do, de + a = da, de + os = dos, de + as = das.",
         "Origen: Eu sou do Uruguai. Pertenencia: o carro da Marta.",
         "de + ele = dele, de + ela = dela: o livro dele (el libro de él)."
       ],
       "examples": [
-        { "target": "A casa dos meus pais é grande.", "es": "La casa de mis padres es grande." },
-        { "target": "Ele é do Chile.", "es": "Es de Chile." },
-        { "target": "Esse é o quarto dela.", "es": "Ese es el cuarto de ella." }
+        {
+          "target": "A casa dos meus pais é grande.",
+          "es": "La casa de mis padres es grande."
+        },
+        {
+          "target": "Ele é do Chile.",
+          "es": "Es de Chile."
+        },
+        {
+          "target": "Esse é o quarto dela.",
+          "es": "Ese es el cuarto de ella."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "O carro de o João.", "right": "O carro do João.", "why": "de + o se contrae en do." }
+        {
+          "wrong": "O carro de o João.",
+          "right": "O carro do João.",
+          "why": "de + o se contrae en do."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "sou do Brasil",
+          "es": "soy de Brasil",
+          "example": "Eu sou do Brasil, mas moro na Argentina.",
+          "exampleEs": "Yo soy de Brasil, pero vivo en Argentina."
+        },
+        {
+          "target": "perto do trabalho",
+          "es": "cerca del trabajo",
+          "example": "Minha casa fica perto do trabalho.",
+          "exampleEs": "Mi casa queda cerca del trabajo."
+        },
+        {
+          "target": "do outro lado",
+          "es": "del otro lado",
+          "example": "O banco fica do outro lado da rua.",
+          "exampleEs": "El banco queda del otro lado de la calle."
+        },
+        {
+          "target": "da próxima vez",
+          "es": "la próxima vez",
+          "example": "Da próxima vez, eu te aviso antes.",
+          "exampleEs": "La próxima vez, te aviso antes."
+        },
+        {
+          "target": "longe da escola",
+          "es": "lejos de la escuela",
+          "example": "Eu moro longe da escola.",
+          "exampleEs": "Yo vivo lejos de la escuela."
+        }
       ]
     },
     {
@@ -59,20 +155,66 @@
       "day": 3,
       "title": "a y para: movimiento",
       "goal": "Indicar hacia dónde vas con a, para y sus contracciones.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "a + o = ao, a + a = à (con acento grave): Vou ao cinema, Vou à praia.",
         "En la charla de Brasil se usa mucho para: Vou para casa, Vou pro trabalho (pro = para o).",
         "Ir a casa se dice ir para casa, sin artículo."
       ],
       "examples": [
-        { "target": "Amanhã vou à academia.", "es": "Mañana voy al gimnasio." },
-        { "target": "Eles vão pro centro de ônibus.", "es": "Van al centro en colectivo." },
-        { "target": "Volto para casa às seis.", "es": "Vuelvo a casa a las seis." }
+        {
+          "target": "Amanhã vou à academia.",
+          "es": "Mañana voy al gimnasio."
+        },
+        {
+          "target": "Eles vão pro centro de ônibus.",
+          "es": "Van al centro en colectivo."
+        },
+        {
+          "target": "Volto para casa às seis.",
+          "es": "Vuelvo a casa a las seis."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Vou a o cinema.", "right": "Vou ao cinema.", "why": "a + o se contrae en ao." },
-        { "wrong": "Vou à casa.", "right": "Vou para casa.", "why": "Para tu propia casa se dice ir para casa, sin artículo." }
+        {
+          "wrong": "Vou a o cinema.",
+          "right": "Vou ao cinema.",
+          "why": "a + o se contrae en ao."
+        },
+        {
+          "wrong": "Vou à casa.",
+          "right": "Vou para casa.",
+          "why": "Para tu propia casa se dice ir para casa, sin artículo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "vou para casa",
+          "es": "voy a casa",
+          "example": "Já são seis horas, vou para casa.",
+          "exampleEs": "Ya son las seis, me voy a casa."
+        },
+        {
+          "target": "a caminho do trabalho",
+          "es": "en camino al trabajo",
+          "example": "Te ligo a caminho do trabalho.",
+          "exampleEs": "Te llamo en camino al trabajo."
+        },
+        {
+          "target": "vou ao banco",
+          "es": "voy al banco",
+          "example": "Agora vou ao banco pagar as contas.",
+          "exampleEs": "Ahora voy al banco a pagar las cuentas."
+        },
+        {
+          "target": "vou à praia",
+          "es": "voy a la playa",
+          "example": "No verão, eu vou à praia todo fim de semana.",
+          "exampleEs": "En verano, voy a la playa todos los fines de semana."
+        }
       ]
     },
     {
@@ -80,20 +222,71 @@
       "day": 4,
       "title": "Posesivos",
       "goal": "Usar meu, seu, nosso y dele/dela.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "meu/minha (mi), seu/sua (tu/su), nosso/nossa (nuestro); plural: meus, minhas, seus, suas.",
         "El posesivo concuerda con la cosa: minha casa, meus livros.",
         "Como seu puede ser ambiguo, para 'de él / de ella' se usa dele y dela, después del sustantivo."
       ],
       "examples": [
-        { "target": "Minha irmã mora em Curitiba.", "es": "Mi hermana vive en Curitiba." },
-        { "target": "Qual é o seu telefone?", "es": "¿Cuál es tu teléfono?" },
-        { "target": "O carro dele é vermelho.", "es": "Su auto (el de él) es rojo." }
+        {
+          "target": "Minha irmã mora em Curitiba.",
+          "es": "Mi hermana vive en Curitiba."
+        },
+        {
+          "target": "Qual é o seu telefone?",
+          "es": "¿Cuál es tu teléfono?"
+        },
+        {
+          "target": "O carro dele é vermelho.",
+          "es": "Su auto (el de él) es rojo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Meu casa.", "right": "Minha casa.", "why": "Casa es femenino: el posesivo va en femenino." },
-        { "wrong": "O seu carro de ele.", "right": "O carro dele.", "why": "Para 'de él' alcanza con dele después del sustantivo." }
+        {
+          "wrong": "Meu casa.",
+          "right": "Minha casa.",
+          "why": "Casa es femenino: el posesivo va en femenino."
+        },
+        {
+          "wrong": "O seu carro de ele.",
+          "right": "O carro dele.",
+          "why": "Para 'de él' alcanza con dele después del sustantivo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "qual é o seu nome?",
+          "es": "¿cómo te llamás?",
+          "example": "Oi, qual é o seu nome?",
+          "exampleEs": "Hola, ¿cómo te llamás?"
+        },
+        {
+          "target": "este é o meu amigo",
+          "es": "este es mi amigo",
+          "example": "Este é o meu amigo Pedro.",
+          "exampleEs": "Este es mi amigo Pedro."
+        },
+        {
+          "target": "o carro dele",
+          "es": "el auto de él",
+          "example": "O carro dele é novo.",
+          "exampleEs": "El auto de él es nuevo."
+        },
+        {
+          "target": "a bolsa dela",
+          "es": "la bolsa de ella",
+          "example": "A bolsa dela ficou na mesa.",
+          "exampleEs": "La bolsa de ella quedó en la mesa."
+        },
+        {
+          "target": "isso é meu",
+          "es": "eso es mío",
+          "example": "Cuidado, isso é meu!",
+          "exampleEs": "Cuidado, ¡eso es mío!"
+        }
       ]
     },
     {
@@ -101,19 +294,67 @@
       "day": 5,
       "title": "Mi casa y mi familia",
       "goal": "Comprender y escribir una descripción de tu casa y tu familia.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Familia: pai, mãe, irmão, irmã, filho, filha, avô, avó, marido, esposa.",
         "Partes de la casa: sala, cozinha, quarto, banheiro, varanda.",
         "Combiná posesivos y contracciones: O quarto do meu irmão fica no segundo andar."
       ],
       "examples": [
-        { "target": "Na minha casa tem três quartos e uma varanda.", "es": "En mi casa hay tres cuartos y un balcón." },
-        { "target": "Meus avós moram no interior.", "es": "Mis abuelos viven en el interior." },
-        { "target": "A cozinha fica ao lado da sala.", "es": "La cocina queda al lado del living." }
+        {
+          "target": "Na minha casa tem três quartos e uma varanda.",
+          "es": "En mi casa hay tres cuartos y un balcón."
+        },
+        {
+          "target": "Meus avós moram no interior.",
+          "es": "Mis abuelos viven en el interior."
+        },
+        {
+          "target": "A cozinha fica ao lado da sala.",
+          "es": "La cocina queda al lado del living."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Meu avó.", "right": "Minha avó / meu avô.", "why": "avó (con tilde aguda) es la abuela y avô (circunflejo) el abuelo." }
+        {
+          "wrong": "Meu avó.",
+          "right": "Minha avó / meu avô.",
+          "why": "avó (con tilde aguda) es la abuela y avô (circunflejo) el abuelo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "sinta-se em casa",
+          "es": "sentite como en tu casa",
+          "example": "Entre e sinta-se em casa.",
+          "exampleEs": "Entrá y sentite como en tu casa."
+        },
+        {
+          "target": "minha casa é a sua casa",
+          "es": "mi casa es tu casa",
+          "example": "Pode vir quando quiser, minha casa é a sua casa.",
+          "exampleEs": "Podés venir cuando quieras, mi casa es tu casa."
+        },
+        {
+          "target": "somos em quatro",
+          "es": "somos cuatro",
+          "example": "Na minha família, somos em quatro.",
+          "exampleEs": "En mi familia, somos cuatro."
+        },
+        {
+          "target": "moro com meus pais",
+          "es": "vivo con mis padres",
+          "example": "Ainda moro com meus pais.",
+          "exampleEs": "Todavía vivo con mis padres."
+        },
+        {
+          "target": "cada um tem o seu quarto",
+          "es": "cada uno tiene su cuarto",
+          "example": "Em casa, cada um tem o seu quarto.",
+          "exampleEs": "En casa, cada uno tiene su cuarto."
+        }
       ]
     }
   ]

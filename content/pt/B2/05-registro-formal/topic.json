@@ -12,7 +12,10 @@
     "Organizar un texto de opinión en introducción, desarrollo y conclusión",
     "Escribir un texto de opinión breve"
   ],
-  "prerequisites": ["pt-b1-discurso-indireto", "pt-b2-regencia-crase"],
+  "prerequisites": [
+    "pt-b1-discurso-indireto",
+    "pt-b2-regencia-crase"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,10 @@
       "day": 1,
       "title": "El e-mail formal",
       "goal": "Abrir, desarrollar y cerrar un e-mail formal.",
-      "focus": ["grammar", "writing"],
+      "focus": [
+        "grammar",
+        "writing"
+      ],
       "keyPoints": [
         "Saludo: Prezado senhor, Prezada senhora, Prezado João, Prezados (a un grupo). Más cercano: Caro João, Olá, João.",
         "Para abrir: Escrevo para..., Gostaria de solicitar..., Em resposta ao seu e-mail de...",
@@ -28,13 +34,68 @@
         "Abraços o Um abraço cierran mails de trabajo con alguien conocido; Beijos, solo con amigos."
       ],
       "examples": [
-        { "target": "Prezada Sra. Oliveira, escrevo para solicitar informações sobre o curso de verão.", "es": "Estimada Sra. Oliveira: le escribo para pedir información sobre el curso de verano." },
-        { "target": "Fico no aguardo de seu retorno.", "es": "Quedo a la espera de su respuesta." },
-        { "target": "Desde já agradeço a atenção.", "es": "Desde ya, muchas gracias por su atención." }
+        {
+          "target": "Prezada Sra. Oliveira, escrevo para solicitar informações sobre o curso de verão.",
+          "es": "Estimada Sra. Oliveira: le escribo para pedir información sobre el curso de verano."
+        },
+        {
+          "target": "Fico no aguardo de seu retorno.",
+          "es": "Quedo a la espera de su respuesta."
+        },
+        {
+          "target": "Desde já agradeço a atenção.",
+          "es": "Desde ya, muchas gracias por su atención."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Estimado senhor Silva,", "right": "Prezado senhor Silva,", "why": "Estimado existe, pero el saludo habitual de los mails formales en Brasil es prezado." },
-        { "wrong": "Saudações cordiais, Ana", "right": "Atenciosamente, Ana", "why": "El 'saludos cordiales' del español no es la fórmula habitual: se cierra con atenciosamente o cordialmente." }
+        {
+          "wrong": "Estimado senhor Silva,",
+          "right": "Prezado senhor Silva,",
+          "why": "Estimado existe, pero el saludo habitual de los mails formales en Brasil es prezado."
+        },
+        {
+          "wrong": "Saudações cordiais, Ana",
+          "right": "Atenciosamente, Ana",
+          "why": "El 'saludos cordiales' del español no es la fórmula habitual: se cierra con atenciosamente o cordialmente."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Venho por meio deste",
+          "es": "Le escribo mediante este mensaje",
+          "example": "Venho por meio deste solicitar informações sobre o curso.",
+          "exampleEs": "Le escribo mediante este mensaje para solicitar información sobre el curso."
+        },
+        {
+          "target": "Sem mais para o momento",
+          "es": "Sin más por el momento",
+          "example": "Sem mais para o momento, agradeço a atenção.",
+          "exampleEs": "Sin más por el momento, te agradezco la atención."
+        },
+        {
+          "target": "Fico à disposição",
+          "es": "Quedo a disposición",
+          "example": "Fico à disposição para qualquer esclarecimento.",
+          "exampleEs": "Quedo a disposición para cualquier aclaración."
+        },
+        {
+          "target": "Aguardo retorno",
+          "es": "Espero tu respuesta",
+          "example": "Aguardo retorno o mais breve possível.",
+          "exampleEs": "Espero tu respuesta lo antes posible."
+        },
+        {
+          "target": "Desde já, agradeço",
+          "es": "Desde ya, te agradezco",
+          "example": "Desde já, agradeço a sua atenção.",
+          "exampleEs": "Desde ya, te agradezco la atención."
+        },
+        {
+          "target": "Com os melhores cumprimentos",
+          "es": "Con los mejores saludos",
+          "example": "Encerro este e-mail com os melhores cumprimentos.",
+          "exampleEs": "Cierro este mail con los mejores saludos."
+        }
       ]
     },
     {
@@ -42,7 +103,9 @@
       "day": 2,
       "title": "Tratamiento y cortesía",
       "goal": "Dirigirse con respeto a alguien y pedir con cortesía.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "o senhor / a senhora es el 'usted', con verbo en tercera persona: O senhor poderia me enviar o contrato?",
         "En el trabajo se usa mucho você con jefes y clientes; o senhor marca distancia o respeto por la edad.",
@@ -51,12 +114,57 @@
         "No mezcles tratamientos: con o senhor van lhe, o seu, o do senhor; nunca te ni teu."
       ],
       "examples": [
-        { "target": "O senhor poderia confirmar o horário da reunião?", "es": "¿Podría confirmar el horario de la reunión?" },
-        { "target": "Peço a gentileza de responder até sexta-feira.", "es": "Le pido por favor que responda antes del viernes." },
-        { "target": "Seria possível remarcar a entrevista?", "es": "¿Sería posible reprogramar la entrevista?" }
+        {
+          "target": "O senhor poderia confirmar o horário da reunião?",
+          "es": "¿Podría confirmar el horario de la reunión?"
+        },
+        {
+          "target": "Peço a gentileza de responder até sexta-feira.",
+          "es": "Le pido por favor que responda antes del viernes."
+        },
+        {
+          "target": "Seria possível remarcar a entrevista?",
+          "es": "¿Sería posible reprogramar la entrevista?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "A senhora quer que eu te mande o documento?", "right": "A senhora quer que eu lhe mande o documento?", "why": "Con a senhora no va te: se usa lhe o para a senhora. Mezclar tratamientos suena descuidado." }
+        {
+          "wrong": "A senhora quer que eu te mande o documento?",
+          "right": "A senhora quer que eu lhe mande o documento?",
+          "why": "Con a senhora no va te: se usa lhe o para a senhora. Mezclar tratamientos suena descuidado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Com todo respeito",
+          "es": "Con todo respeto",
+          "example": "Com todo respeito, discordo da sua opinião.",
+          "exampleEs": "Con todo respeto, no estoy de acuerdo con tu opinión."
+        },
+        {
+          "target": "Gostaria de solicitar",
+          "es": "Quisiera solicitar",
+          "example": "Gostaria de solicitar uma reunião com o senhor.",
+          "exampleEs": "Quisiera solicitar una reunión con usted."
+        },
+        {
+          "target": "Se não for incômodo",
+          "es": "Si no es molestia",
+          "example": "Se não for incômodo, poderia me enviar o documento?",
+          "exampleEs": "Si no es molestia, ¿me podrías enviar el documento?"
+        },
+        {
+          "target": "Peço a gentileza de",
+          "es": "Te pido el favor de",
+          "example": "Peço a gentileza de responder o quanto antes.",
+          "exampleEs": "Te pido el favor de responder lo antes posible."
+        },
+        {
+          "target": "Muito obrigado pela atenção",
+          "es": "Muchas gracias por la atención",
+          "example": "Muito obrigado pela atenção, aguardo seu retorno.",
+          "exampleEs": "Muchas gracias por la atención, espero tu respuesta."
+        }
       ]
     },
     {
@@ -64,7 +172,10 @@
       "day": 3,
       "title": "Conectores para argumentar",
       "goal": "Unir ideas con conectores de adición, contraste, causa y conclusión.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Adición: além disso, ademais, também, não só... mas também.",
         "Contraste: no entanto, porém, contudo, entretanto, todavia; embora + subjuntivo; apesar de + sustantivo o infinitivo.",
@@ -72,13 +183,62 @@
         "Falsos amigos: entretanto es 'sin embargo' (no 'mientras tanto') y embora va siempre con subjuntivo."
       ],
       "examples": [
-        { "target": "O projeto é caro; no entanto, pode trazer muitos benefícios.", "es": "El proyecto es caro; sin embargo, puede traer muchos beneficios." },
-        { "target": "Embora o salário seja bom, o horário é cansativo.", "es": "Aunque el sueldo es bueno, el horario es agotador." },
-        { "target": "Visto que os prazos são curtos, é preciso priorizar as tarefas.", "es": "Dado que los plazos son cortos, hay que priorizar las tareas." }
+        {
+          "target": "O projeto é caro; no entanto, pode trazer muitos benefícios.",
+          "es": "El proyecto es caro; sin embargo, puede traer muchos beneficios."
+        },
+        {
+          "target": "Embora o salário seja bom, o horário é cansativo.",
+          "es": "Aunque el sueldo es bueno, el horario es agotador."
+        },
+        {
+          "target": "Visto que os prazos são curtos, é preciso priorizar as tarefas.",
+          "es": "Dado que los plazos son cortos, hay que priorizar las tareas."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Embora ele é competente, não foi promovido.", "right": "Embora ele seja competente, não foi promovido.", "why": "En español 'aunque' admite indicativo; embora pide siempre subjuntivo." },
-        { "wrong": "Entretanto eu cozinho, você arruma a mesa.", "right": "Enquanto eu cozinho, você arruma a mesa.", "why": "Entretanto significa 'sin embargo'; 'mientras' es enquanto." }
+        {
+          "wrong": "Embora ele é competente, não foi promovido.",
+          "right": "Embora ele seja competente, não foi promovido.",
+          "why": "En español 'aunque' admite indicativo; embora pide siempre subjuntivo."
+        },
+        {
+          "wrong": "Entretanto eu cozinho, você arruma a mesa.",
+          "right": "Enquanto eu cozinho, você arruma a mesa.",
+          "why": "Entretanto significa 'sin embargo'; 'mientras' es enquanto."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Além disso",
+          "es": "Además de eso",
+          "example": "Além disso, é importante considerar o custo.",
+          "exampleEs": "Además de eso, es importante considerar el costo."
+        },
+        {
+          "target": "Por outro lado",
+          "es": "Por otro lado",
+          "example": "Por outro lado, existem riscos a avaliar.",
+          "exampleEs": "Por otro lado, hay riesgos que hay que evaluar."
+        },
+        {
+          "target": "Visto que",
+          "es": "Dado que",
+          "example": "Visto que o prazo é curto, devemos agir rápido.",
+          "exampleEs": "Dado que el plazo es corto, tenemos que actuar rápido."
+        },
+        {
+          "target": "Diante disso",
+          "es": "Frente a esto",
+          "example": "Diante disso, concluímos que a medida é necessária.",
+          "exampleEs": "Frente a esto, concluimos que la medida es necesaria."
+        },
+        {
+          "target": "Em primeiro lugar",
+          "es": "En primer lugar",
+          "example": "Em primeiro lugar, cabe destacar os benefícios do projeto.",
+          "exampleEs": "En primer lugar, hay que destacar los beneficios del proyecto."
+        }
       ]
     },
     {
@@ -86,7 +246,10 @@
       "day": 4,
       "title": "El texto de opinión",
       "goal": "Organizar un texto de opinión con tesis, argumentos y conclusión.",
-      "focus": ["grammar", "writing"],
+      "focus": [
+        "grammar",
+        "writing"
+      ],
       "keyPoints": [
         "Introducción con el tema y la tesis: Atualmente, discute-se muito... Na minha visão, ...",
         "Desarrollo con dos argumentos: Em primeiro lugar..., Além disso..., Por um lado... por outro...",
@@ -94,13 +257,62 @@
         "En textos académicos (como la redação del ENEM) se evita la primera persona: É possível afirmar que..., Observa-se que..., Cabe ressaltar que..."
       ],
       "examples": [
-        { "target": "Por um lado, o teletrabalho economiza tempo; por outro, pode isolar o trabalhador.", "es": "Por un lado, el teletrabajo ahorra tiempo; por el otro, puede aislar al trabajador." },
-        { "target": "Cabe ressaltar que nem todos têm acesso à internet de qualidade.", "es": "Cabe destacar que no todos tienen acceso a internet de calidad." },
-        { "target": "Diante disso, conclui-se que é necessário investir em educação.", "es": "Frente a esto, se concluye que es necesario invertir en educación." }
+        {
+          "target": "Por um lado, o teletrabalho economiza tempo; por outro, pode isolar o trabalhador.",
+          "es": "Por un lado, el teletrabajo ahorra tiempo; por el otro, puede aislar al trabajador."
+        },
+        {
+          "target": "Cabe ressaltar que nem todos têm acesso à internet de qualidade.",
+          "es": "Cabe destacar que no todos tienen acceso a internet de calidad."
+        },
+        {
+          "target": "Diante disso, conclui-se que é necessário investir em educação.",
+          "es": "Frente a esto, se concluye que es necesario invertir en educación."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ao meu ver, a proposta é boa.", "right": "A meu ver, a proposta é boa.", "why": "La expresión fija es a meu ver, sin artículo." },
-        { "wrong": "Eu acho que a educação é importante. (en una redação)", "right": "É possível afirmar que a educação é importante.", "why": "En un texto académico se evita la primera persona y el verbo achar, que suena oral." }
+        {
+          "wrong": "Ao meu ver, a proposta é boa.",
+          "right": "A meu ver, a proposta é boa.",
+          "why": "La expresión fija es a meu ver, sin artículo."
+        },
+        {
+          "wrong": "Eu acho que a educação é importante. (en una redação)",
+          "right": "É possível afirmar que a educação é importante.",
+          "why": "En un texto académico se evita la primera persona y el verbo achar, que suena oral."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Na minha opinião",
+          "es": "En mi opinión",
+          "example": "Na minha opinião, essa lei precisa ser revista.",
+          "exampleEs": "En mi opinión, esa ley necesita ser revisada."
+        },
+        {
+          "target": "É importante ressaltar que",
+          "es": "Es importante destacar que",
+          "example": "É importante ressaltar que o problema afeta todos.",
+          "exampleEs": "Es importante destacar que el problema nos afecta a todos."
+        },
+        {
+          "target": "Diante do exposto",
+          "es": "Frente a lo expuesto",
+          "example": "Diante do exposto, fica claro o impacto da medida.",
+          "exampleEs": "Frente a lo expuesto, queda claro el impacto de la medida."
+        },
+        {
+          "target": "Em suma",
+          "es": "En resumen",
+          "example": "Em suma, a proposta traz mais benefícios que prejuízos.",
+          "exampleEs": "En resumen, la propuesta trae más beneficios que perjuicios."
+        },
+        {
+          "target": "Vale a pena destacar",
+          "es": "Vale la pena destacar",
+          "example": "Vale a pena destacar os avanços obtidos este ano.",
+          "exampleEs": "Vale la pena destacar los avances logrados este año."
+        }
       ]
     },
     {
@@ -108,20 +320,72 @@
       "day": 5,
       "title": "Escribir un texto de opinión",
       "goal": "Comprender y escribir un texto de opinión breve sobre un tema actual.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Elegí una tesis clara y dos argumentos con ejemplos.",
         "Usá un conector distinto en cada párrafo para no repetir mas y também.",
         "Cuidá el registro: nada de tipo, aí o a gente; preferí nós o formas impersonales."
       ],
       "examples": [
-        { "target": "Nos últimos anos, o trabalho remoto deixou de ser exceção.", "es": "En los últimos años, el trabajo remoto dejó de ser una excepción." },
-        { "target": "Embora ofereça mais liberdade, ele exige disciplina.", "es": "Aunque ofrece más libertad, exige disciplina." },
-        { "target": "Em suma, o modelo híbrido parece ser a solução mais equilibrada.", "es": "En suma, el modelo híbrido parece ser la solución más equilibrada." }
+        {
+          "target": "Nos últimos anos, o trabalho remoto deixou de ser exceção.",
+          "es": "En los últimos años, el trabajo remoto dejó de ser una excepción."
+        },
+        {
+          "target": "Embora ofereça mais liberdade, ele exige disciplina.",
+          "es": "Aunque ofrece más libertad, exige disciplina."
+        },
+        {
+          "target": "Em suma, o modelo híbrido parece ser a solução mais equilibrada.",
+          "es": "En suma, el modelo híbrido parece ser la solución más equilibrada."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Os dados mostram de que o problema cresceu.", "right": "Os dados mostram que o problema cresceu.", "why": "Mostrar, dizer y afirmar van con que directo: 'de que' ahí es dequeísmo, igual que en español." },
-        { "wrong": "A gente precisa repensar o modelo.", "right": "Precisamos repensar o modelo.", "why": "En un texto formal, a gente suena oral: usá nós o una forma impersonal." }
+        {
+          "wrong": "Os dados mostram de que o problema cresceu.",
+          "right": "Os dados mostram que o problema cresceu.",
+          "why": "Mostrar, dizer y afirmar van con que directo: 'de que' ahí es dequeísmo, igual que en español."
+        },
+        {
+          "wrong": "A gente precisa repensar o modelo.",
+          "right": "Precisamos repensar o modelo.",
+          "why": "En un texto formal, a gente suena oral: usá nós o una forma impersonal."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Levando em conta",
+          "es": "Teniendo en cuenta",
+          "example": "Levando em conta os dados, a decisão parece acertada.",
+          "exampleEs": "Teniendo en cuenta los datos, la decisión parece acertada."
+        },
+        {
+          "target": "A meu ver",
+          "es": "A mi entender",
+          "example": "A meu ver, essa é a melhor solução possível.",
+          "exampleEs": "A mi entender, esa es la mejor solución posible."
+        },
+        {
+          "target": "Em linhas gerais",
+          "es": "En líneas generales",
+          "example": "Em linhas gerais, o texto defende essa posição.",
+          "exampleEs": "En líneas generales, el texto defiende esa posición."
+        },
+        {
+          "target": "Tendo em vista",
+          "es": "Teniendo en cuenta",
+          "example": "Tendo em vista o cenário atual, é preciso agir.",
+          "exampleEs": "Teniendo en cuenta el panorama actual, hay que actuar."
+        },
+        {
+          "target": "Partindo desse princípio",
+          "es": "Partiendo de esa base",
+          "example": "Partindo desse princípio, podemos afirmar que a mudança é positiva.",
+          "exampleEs": "Partiendo de esa base, podemos afirmar que el cambio es positivo."
+        }
       ]
     }
   ]

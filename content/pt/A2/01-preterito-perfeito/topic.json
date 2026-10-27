@@ -11,7 +11,9 @@
     "Ubicar acciones en el pasado con marcadores de tiempo",
     "Contar un viaje"
   ],
-  "prerequisites": ["pt-a1-presente"],
+  "prerequisites": [
+    "pt-a1-presente"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +21,72 @@
       "day": 1,
       "title": "Regulares en -ar",
       "goal": "Conjugar los verbos en -ar en pretérito perfeito.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "falar: falei, falou, falamos, falaram.",
         "La forma de nós (falamos) es igual en presente y en pasado: lo aclara el contexto.",
         "Ojo con la ortografía: chegar → cheguei, ficar → fiquei, começar → comecei."
       ],
       "examples": [
-        { "target": "Ontem eu trabalhei até tarde.", "es": "Ayer trabajé hasta tarde." },
-        { "target": "Você comprou o presente?", "es": "¿Compraste el regalo?" },
-        { "target": "Eles chegaram às dez.", "es": "Llegaron a las diez." }
+        {
+          "target": "Ontem eu trabalhei até tarde.",
+          "es": "Ayer trabajé hasta tarde."
+        },
+        {
+          "target": "Você comprou o presente?",
+          "es": "¿Compraste el regalo?"
+        },
+        {
+          "target": "Eles chegaram às dez.",
+          "es": "Llegaron a las diez."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu chegei.", "right": "Eu cheguei.", "why": "Para mantener el sonido, chegar se escribe cheguei." }
+        {
+          "wrong": "Eu chegei.",
+          "right": "Eu cheguei.",
+          "why": "Para mantener el sonido, chegar se escribe cheguei."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "já paguei",
+          "es": "ya pagué",
+          "example": "Já paguei a conta do restaurante.",
+          "exampleEs": "Ya pagué la cuenta del restaurante."
+        },
+        {
+          "target": "cheguei atrasado",
+          "es": "llegué tarde",
+          "example": "Cheguei atrasado para a reunião.",
+          "exampleEs": "Llegué tarde a la reunión."
+        },
+        {
+          "target": "liguei para você",
+          "es": "te llamé",
+          "example": "Liguei para você ontem à noite.",
+          "exampleEs": "Te llamé anoche."
+        },
+        {
+          "target": "comprei um presente",
+          "es": "compré un regalo",
+          "example": "Comprei um presente para ela.",
+          "exampleEs": "Le compré un regalo a ella."
+        },
+        {
+          "target": "viajei muito",
+          "es": "viajé mucho",
+          "example": "Esse ano eu viajei muito.",
+          "exampleEs": "Este año viajé mucho."
+        },
+        {
+          "target": "estudei bastante",
+          "es": "estudié bastante",
+          "example": "Estudei bastante para a prova.",
+          "exampleEs": "Estudié bastante para el examen."
+        }
       ]
     },
     {
@@ -39,19 +94,72 @@
       "day": 2,
       "title": "Regulares en -er e -ir",
       "goal": "Conjugar los verbos en -er e -ir en pretérito perfeito.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "comer: comi, comeu, comemos, comeram.",
         "abrir: abri, abriu, abrimos, abriram.",
         "La tercera persona termina en -eu o -iu, nunca en -ió como en español."
       ],
       "examples": [
-        { "target": "Nós comemos num restaurante japonês.", "es": "Comimos en un restaurante japonés." },
-        { "target": "Ela abriu a janela.", "es": "Ella abrió la ventana." },
-        { "target": "Você entendeu?", "es": "¿Entendiste?" }
+        {
+          "target": "Nós comemos num restaurante japonês.",
+          "es": "Comimos en un restaurante japonés."
+        },
+        {
+          "target": "Ela abriu a janela.",
+          "es": "Ella abrió la ventana."
+        },
+        {
+          "target": "Você entendeu?",
+          "es": "¿Entendiste?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ele comió muito.", "right": "Ele comeu muito.", "why": "En portugués la terminación es -eu: comeu, bebeu, vendeu." }
+        {
+          "wrong": "Ele comió muito.",
+          "right": "Ele comeu muito.",
+          "why": "En portugués la terminación es -eu: comeu, bebeu, vendeu."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "já comi",
+          "es": "ya comí",
+          "example": "Já comi, obrigado.",
+          "exampleEs": "Ya comí, gracias."
+        },
+        {
+          "target": "dormi muito bem",
+          "es": "dormí muy bien",
+          "example": "Ontem eu dormi muito bem.",
+          "exampleEs": "Ayer dormí muy bien."
+        },
+        {
+          "target": "escrevi um e-mail",
+          "es": "escribí un mail",
+          "example": "Escrevi um e-mail para o chefe.",
+          "exampleEs": "Le escribí un mail al jefe."
+        },
+        {
+          "target": "entendi tudo",
+          "es": "entendí todo",
+          "example": "Finalmente entendi tudo.",
+          "exampleEs": "Finalmente entendí todo."
+        },
+        {
+          "target": "saí mais cedo",
+          "es": "salí más temprano",
+          "example": "Hoje eu saí mais cedo do trabalho.",
+          "exampleEs": "Hoy salí más temprano del trabajo."
+        },
+        {
+          "target": "pedi desculpas",
+          "es": "pedí disculpas",
+          "example": "Eu pedi desculpas para ela.",
+          "exampleEs": "Le pedí disculpas a ella."
+        }
       ]
     },
     {
@@ -59,20 +167,78 @@
       "day": 3,
       "title": "Irregulares frecuentes",
       "goal": "Conjugar ser, ir, ter, fazer y estar en pasado.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "ser e ir comparten formas: fui, foi, fomos, foram.",
         "ter: tive, teve, tivemos, tiveram. estar: estive, esteve, estivemos, estiveram.",
         "fazer: fiz, fez, fizemos, fizeram. Otros: dizer (disse), poder (pude), querer (quis), ver (vi)."
       ],
       "examples": [
-        { "target": "Eu fui ao Brasil em 2023.", "es": "Fui a Brasil en 2023." },
-        { "target": "Foi uma viagem incrível.", "es": "Fue un viaje increíble." },
-        { "target": "O que você fez no fim de semana?", "es": "¿Qué hiciste el fin de semana?" }
+        {
+          "target": "Eu fui ao Brasil em 2023.",
+          "es": "Fui a Brasil en 2023."
+        },
+        {
+          "target": "Foi uma viagem incrível.",
+          "es": "Fue un viaje increíble."
+        },
+        {
+          "target": "O que você fez no fim de semana?",
+          "es": "¿Qué hiciste el fin de semana?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eu fazi.", "right": "Eu fiz.", "why": "Fazer es irregular en pasado: fiz, fez." },
-        { "wrong": "Eu tenhi.", "right": "Eu tive.", "why": "El pasado de ter es tive." }
+        {
+          "wrong": "Eu fazi.",
+          "right": "Eu fiz.",
+          "why": "Fazer es irregular en pasado: fiz, fez."
+        },
+        {
+          "wrong": "Eu tenhi.",
+          "right": "Eu tive.",
+          "why": "El pasado de ter es tive."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "foi ótimo",
+          "es": "estuvo genial",
+          "example": "O show foi ótimo.",
+          "exampleEs": "El show estuvo genial."
+        },
+        {
+          "target": "fui ao médico",
+          "es": "fui al médico",
+          "example": "Eu fui ao médico ontem.",
+          "exampleEs": "Yo fui al médico ayer."
+        },
+        {
+          "target": "tive um problema",
+          "es": "tuve un problema",
+          "example": "Tive um problema com o carro.",
+          "exampleEs": "Tuve un problema con el auto."
+        },
+        {
+          "target": "fiz tudo certo",
+          "es": "hice todo bien",
+          "example": "Acho que fiz tudo certo.",
+          "exampleEs": "Creo que hice todo bien."
+        },
+        {
+          "target": "estive lá",
+          "es": "estuve ahí",
+          "example": "Eu estive lá na festa.",
+          "exampleEs": "Yo estuve ahí en la fiesta."
+        },
+        {
+          "target": "foi mal",
+          "es": "salió mal",
+          "example": "A entrevista foi mal.",
+          "exampleEs": "La entrevista salió mal."
+        }
       ]
     },
     {
@@ -80,19 +246,72 @@
       "day": 4,
       "title": "Marcadores de pasado",
       "goal": "Ubicar acciones en el pasado y hablar de lo que ya hiciste.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "ontem, anteontem, semana passada, mês passado, ano passado.",
         "'Hace' se dice há: há dois dias (hace dos días).",
         "já (ya) y ainda não (todavía no) se usan con el perfeito: Já comi. Ainda não terminei."
       ],
       "examples": [
-        { "target": "Mudei de casa há três meses.", "es": "Me mudé hace tres meses." },
-        { "target": "Você já viu esse filme?", "es": "¿Ya viste esa película?" },
-        { "target": "Ainda não liguei para ela.", "es": "Todavía no la llamé." }
+        {
+          "target": "Mudei de casa há três meses.",
+          "es": "Me mudé hace tres meses."
+        },
+        {
+          "target": "Você já viu esse filme?",
+          "es": "¿Ya viste esa película?"
+        },
+        {
+          "target": "Ainda não liguei para ela.",
+          "es": "Todavía no la llamé."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Cheguei hace dois dias.", "right": "Cheguei há dois dias.", "why": "En portugués 'hace' con tiempo pasado es há (también se dice faz dois dias que cheguei)." }
+        {
+          "wrong": "Cheguei hace dois dias.",
+          "right": "Cheguei há dois dias.",
+          "why": "En portugués 'hace' con tiempo pasado es há (también se dice faz dois dias que cheguei)."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "ontem à noite",
+          "es": "ayer a la noche",
+          "example": "Ontem à noite eu saí com amigos.",
+          "exampleEs": "Ayer a la noche salí con amigos."
+        },
+        {
+          "target": "na semana passada",
+          "es": "la semana pasada",
+          "example": "Na semana passada eu viajei para o Rio.",
+          "exampleEs": "La semana pasada viajé a Río."
+        },
+        {
+          "target": "há dois dias",
+          "es": "hace dos días",
+          "example": "Há dois dias eu cheguei de viagem.",
+          "exampleEs": "Hace dos días llegué de viaje."
+        },
+        {
+          "target": "já fiz isso",
+          "es": "ya hice eso",
+          "example": "Já fiz isso antes.",
+          "exampleEs": "Ya hice eso antes."
+        },
+        {
+          "target": "no ano passado",
+          "es": "el año pasado",
+          "example": "No ano passado eu morei em Lisboa.",
+          "exampleEs": "El año pasado viví en Lisboa."
+        },
+        {
+          "target": "antes de ontem",
+          "es": "anteayer",
+          "example": "Antes de ontem choveu muito.",
+          "exampleEs": "Anteayer llovió mucho."
+        }
       ]
     },
     {
@@ -100,19 +319,73 @@
       "day": 5,
       "title": "Contar un viaje",
       "goal": "Comprender y escribir el relato de un viaje.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Ordená el relato: primeiro, depois, no dia seguinte, no último dia.",
         "Vocabulario: pegar um voo, ficar num hotel, conhecer (conocer un lugar), passear.",
         "Para valorar: Foi ótimo! Adorei. Não gostei muito."
       ],
       "examples": [
-        { "target": "No verão passado fomos a Salvador e ficamos uma semana.", "es": "El verano pasado fuimos a Salvador y nos quedamos una semana." },
-        { "target": "Conhecemos o Pelourinho e comemos acarajé.", "es": "Conocimos el Pelourinho y comimos acarajé." },
-        { "target": "Adorei a viagem!", "es": "¡Me encantó el viaje!" }
+        {
+          "target": "No verão passado fomos a Salvador e ficamos uma semana.",
+          "es": "El verano pasado fuimos a Salvador y nos quedamos una semana."
+        },
+        {
+          "target": "Conhecemos o Pelourinho e comemos acarajé.",
+          "es": "Conocimos el Pelourinho y comimos acarajé."
+        },
+        {
+          "target": "Adorei a viagem!",
+          "es": "¡Me encantó el viaje!"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Conhecemos a o Pelourinho.", "right": "Conhecemos o Pelourinho.", "why": "Conhecer lleva objeto directo, sin preposición." }
+        {
+          "wrong": "Conhecemos a o Pelourinho.",
+          "right": "Conhecemos o Pelourinho.",
+          "why": "Conhecer lleva objeto directo, sin preposición."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "foi uma viagem incrível",
+          "es": "fue un viaje increíble",
+          "example": "Foi uma viagem incrível, recomendo demais.",
+          "exampleEs": "Fue un viaje increíble, lo recomiendo mucho."
+        },
+        {
+          "target": "conheci lugares novos",
+          "es": "conocí lugares nuevos",
+          "example": "Nessa viagem conheci lugares novos.",
+          "exampleEs": "En ese viaje conocí lugares nuevos."
+        },
+        {
+          "target": "me perdi",
+          "es": "me perdí",
+          "example": "Eu me perdi na cidade.",
+          "exampleEs": "Me perdí en la ciudad."
+        },
+        {
+          "target": "valeu a pena",
+          "es": "valió la pena",
+          "example": "O passeio valeu a pena.",
+          "exampleEs": "El paseo valió la pena."
+        },
+        {
+          "target": "tirei várias fotos",
+          "es": "saqué varias fotos",
+          "example": "Tirei várias fotos na praia.",
+          "exampleEs": "Saqué varias fotos en la playa."
+        },
+        {
+          "target": "voltei cansado",
+          "es": "volví cansado",
+          "example": "Voltei cansado, mas feliz.",
+          "exampleEs": "Volví cansado, pero feliz."
+        }
       ]
     }
   ]
