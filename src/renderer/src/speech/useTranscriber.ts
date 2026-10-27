@@ -4,7 +4,17 @@ import type { AsrMessage, AsrModel, AsrRequest } from './asr.worker'
 import { useSettings } from '../theme/SettingsProvider'
 
 // Nombre del idioma para Whisper.
-const WHISPER_LANGUAGE: Record<LanguageId, string> = { en: 'english', pt: 'portuguese', it: 'italian', fr: 'french' }
+const WHISPER_LANGUAGE: Record<LanguageId, string> = {
+  en: 'english',
+  pt: 'portuguese',
+  it: 'italian',
+  fr: 'french',
+  de: 'german',
+  ru: 'russian',
+  ja: 'japanese',
+  zh: 'chinese',
+  ko: 'korean'
+}
 const SAMPLE_RATE = 16_000
 const MAX_RECORDING_MS = 8_000
 

@@ -55,14 +55,30 @@ const TARGET_WORDS: Record<Exclude<LanguageId, 'en'>, Set<string>> = {
     mon ma mes ton ta tes son sa ses notre votre leur qui quoi où quand comment pourquoi aujourd'hui demain hier
     maintenant ici toujours jamais c'est j'ai il y être avoir faire aller vais va veux peux maison travail ville
     ami amie frère sœur mère père fils fille
-  `)
+  `),
+  de: words(`
+    ich du er sie es wir ihr der die das den dem des ein eine einen einem einer nicht und oder aber mit
+    für auf aus bei nach von zu ist sind bin bist hat habe haben hast war waren wird werden auch sehr
+    hallo danke bitte ja nein heute morgen gestern jetzt hier dort immer nie wo wann wer was wie warum
+    mein meine dein deine sein seine unser euer gut schön Haus Arbeit Stadt Freund Freundin Bruder Schwester
+  `),
+  // Los idiomas con otro alfabeto se reconocen por su escritura.
+  ru: new Set<string>(),
+  ja: new Set<string>(),
+  zh: new Set<string>(),
+  ko: new Set<string>()
 }
 
 // Rasgos de escritura que el español no tiene.
 const TARGET_MARKERS: Record<Exclude<LanguageId, 'en'>, RegExp> = {
   pt: /[ãõçâêô]|ção$|ções$|nh|lh/,
   it: /[àèìòù]|zz|cch|gli|^[a-z]+(i)$/,
-  fr: /[àâçèêëîïôûùœ]|^(l|d|j|c|qu|n|s|m|t)'|eau|aux$/
+  fr: /[àâçèêëîïôûùœ]|^(l|d|j|c|qu|n|s|m|t)'|eau|aux$/,
+  de: /[äöüß]|sch|^(der|die|das|und|nicht|ich)$|chen$|ung$|keit$|heit$/,
+  ru: /[а-яё]/,
+  ja: /[\u3040-\u30ff\u4e00-\u9fff]/,
+  zh: /[\u4e00-\u9fff]/,
+  ko: /[\uac00-\ud7af\u1100-\u11ff]/
 }
 
 const SPANISH_MARKER = /[ñ¿¡]|ción$|ciones$|mente$|dad$|ando$|iendo$/

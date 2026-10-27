@@ -186,6 +186,11 @@ export const settingsSchema = z.object({
   voicePt: z.string().max(200).nullable(),
   voiceIt: z.string().max(200).nullable(),
   voiceFr: z.string().max(200).nullable(),
+  voiceDe: z.string().max(200).nullable(),
+  voiceRu: z.string().max(200).nullable(),
+  voiceJa: z.string().max(200).nullable(),
+  voiceZh: z.string().max(200).nullable(),
+  voiceKo: z.string().max(200).nullable(),
   // Lectura en voz alta: con las voces neuronales incluidas o con las de Windows.
   speechEngine: z.enum(['neural', 'system']),
   // Voz neural elegida en cada idioma (y en «es» para las explicaciones); sin elegir, la primera.
@@ -232,7 +237,12 @@ export const VOICE_SETTING = {
   en: 'voiceEn',
   pt: 'voicePt',
   it: 'voiceIt',
-  fr: 'voiceFr'
+  fr: 'voiceFr',
+  de: 'voiceDe',
+  ru: 'voiceRu',
+  ja: 'voiceJa',
+  zh: 'voiceZh',
+  ko: 'voiceKo'
 } as const satisfies Record<'es' | LanguageId, keyof z.infer<typeof settingsSchema>>
 
 export type AppSettings = z.infer<typeof settingsSchema>
@@ -251,6 +261,11 @@ export const DEFAULT_SETTINGS: AppSettings = {
   voicePt: null,
   voiceIt: null,
   voiceFr: null,
+  voiceDe: null,
+  voiceRu: null,
+  voiceJa: null,
+  voiceZh: null,
+  voiceKo: null,
   speechEngine: 'neural',
   neuralVoices: {},
   asrModel: 'auto',

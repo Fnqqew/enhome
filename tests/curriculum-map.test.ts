@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { loadCurriculum, loadRoadmap } from '../src/main/content/curriculum'
 import { buildCurriculumMap } from '../src/main/content/curriculum-map'
 import type { Roadmap } from '../src/shared/curriculum'
-import { LANGUAGE_IDS } from '../src/shared/languages'
+import { COURSES } from './helpers/courses'
 
 const CONTENT_DIR = join(__dirname, '..', 'content')
 const curriculum = loadCurriculum(CONTENT_DIR)
@@ -11,7 +11,7 @@ const roadmap = loadRoadmap(CONTENT_DIR)
 
 describe('roadmap', () => {
   it('cada curso tiene contenido de A1 a C1 (y C2 a medida que se escribe), así que no queda nada planificado', () => {
-    for (const language of LANGUAGE_IDS) {
+    for (const language of COURSES) {
       expect(loadRoadmap(CONTENT_DIR, language).levels).toEqual([])
       const levels = new Set(loadCurriculum(CONTENT_DIR, language).map((t) => t.level))
       for (const level of ['A1', 'A2', 'B1', 'B2', 'C1']) expect(levels).toContain(level)

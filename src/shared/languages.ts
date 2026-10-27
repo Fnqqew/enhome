@@ -8,8 +8,13 @@ import en from '../../content/en/idioma.json'
 import fr from '../../content/fr/idioma.json'
 import it from '../../content/it/idioma.json'
 import pt from '../../content/pt/idioma.json'
+import de from '../../content/de/idioma.json'
+import ru from '../../content/ru/idioma.json'
+import ja from '../../content/ja/idioma.json'
+import zh from '../../content/zh/idioma.json'
+import ko from '../../content/ko/idioma.json'
 
-export const LANGUAGE_IDS = ['en', 'pt', 'it', 'fr'] as const
+export const LANGUAGE_IDS = ['en', 'pt', 'it', 'fr', 'de', 'ru', 'ja', 'zh', 'ko'] as const
 
 export type LanguageId = (typeof LANGUAGE_IDS)[number]
 
@@ -47,7 +52,7 @@ export type LanguagePack = z.infer<typeof languagePackSchema>
 
 export type LanguageInfo = LanguagePack
 
-const PACKS: Record<LanguageId, unknown> = { en, pt, it, fr }
+const PACKS: Record<LanguageId, unknown> = { en, pt, it, fr, de, ru, ja, zh, ko }
 
 export const LANGUAGES: readonly LanguageInfo[] = LANGUAGE_IDS.map((id) => {
   const pack = languagePackSchema.parse(PACKS[id])

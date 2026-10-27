@@ -17,7 +17,12 @@ const VOICE_SAMPLES: Partial<Record<SpeechLang, string>> & { en: string } = {
   en: 'Hello, this is how the English voice sounds.',
   pt: 'Olá, é assim que soa a voz em português.',
   it: 'Ciao, così suona la voce in italiano.',
-  fr: 'Bonjour, voici la voix en français.'
+  fr: 'Bonjour, voici la voix en français.',
+  de: 'Hallo, so klingt die Stimme auf Deutsch.',
+  ru: 'Привет, так звучит голос на русском.',
+  ja: 'こんにちは、これが日本語の声です。',
+  zh: '你好，这是中文的声音。',
+  ko: '안녕하세요, 한국어 목소리입니다.'
 }
 
 const VOICE_LANGS: { lang: SpeechLang; label: string }[] = [

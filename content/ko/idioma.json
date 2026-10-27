@@ -1,0 +1,36 @@
+{
+  "id": "ko",
+  "name": "coreano",
+  "label": "Coreano",
+  "endonym": "한국어",
+  "code": "KO",
+  "promptName": "coreano",
+  "greeting": "안녕하세요",
+  "color": "#1098ad",
+  "script": "hangul",
+  "variant": "Coreano estándar de Seúl, con el registro cortés (해요체) como base y notas del formal y el informal.",
+  "speechTag": "ko-KR",
+  "systemVoices": [
+    "ko-kr"
+  ],
+  "voices": [
+    {
+      "id": "supertonic-ko-0",
+      "engine": "supertonic",
+      "label": "Voz de mujer",
+      "gender": "mujer",
+      "accent": "Corea del Sur",
+      "sid": 0,
+      "lang": "ko"
+    },
+    {
+      "id": "supertonic-ko-5",
+      "engine": "supertonic",
+      "label": "Voz de hombre",
+      "gender": "hombre",
+      "accent": "Corea del Sur",
+      "sid": 5,
+      "lang": "ko"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "zh",
+  "name": "chino mandarín",
+  "label": "Chino",
+  "endonym": "中文",
+  "code": "ZH",
+  "promptName": "chino mandarín (caracteres simplificados, con pinyin)",
+  "greeting": "你好",
+  "color": "#e8590c",
+  "script": "chinese",
+  "variant": "Mandarín estándar de China continental (putonghua), con caracteres simplificados y pinyin con tonos.",
+  "speechTag": "zh-CN",
+  "systemVoices": [
+    "zh-cn"
+  ],
+  "voices": [
+    {
+      "id": "zh_CN-huayan-medium",
+      "engine": "piper",
+      "label": "Huayan",
+      "gender": "mujer",
+      "accent": "China"
+    },
+    {
+      "id": "zh_CN-chaowen-medium",
+      "engine": "piper",
+      "label": "Chaowen",
+      "gender": "hombre",
+      "accent": "China"
+    }
+  ]
+}

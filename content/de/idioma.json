@@ -1,0 +1,32 @@
+{
+  "id": "de",
+  "name": "alemán",
+  "label": "Alemán",
+  "endonym": "Deutsch",
+  "code": "DE",
+  "promptName": "alemán estándar de Alemania",
+  "greeting": "Hallo",
+  "color": "#c92a2a",
+  "script": "latin",
+  "variant": "Alemán estándar de Alemania (Hochdeutsch), con notas del de Austria y Suiza cuando cambian palabras o pronunciación.",
+  "speechTag": "de-DE",
+  "systemVoices": [
+    "de-de"
+  ],
+  "voices": [
+    {
+      "id": "de_DE-dii-high",
+      "engine": "piper",
+      "label": "Dii",
+      "gender": "mujer",
+      "accent": "Alemania"
+    },
+    {
+      "id": "de_DE-thorsten-medium",
+      "engine": "piper",
+      "label": "Thorsten",
+      "gender": "hombre",
+      "accent": "Alemania"
+    }
+  ]
+}

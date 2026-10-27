@@ -1,0 +1,32 @@
+{
+  "id": "ru",
+  "name": "ruso",
+  "label": "Ruso",
+  "endonym": "Русский",
+  "code": "RU",
+  "promptName": "ruso",
+  "greeting": "Привет",
+  "color": "#4c6ef5",
+  "script": "cyrillic",
+  "variant": "Ruso estándar de Rusia.",
+  "speechTag": "ru-RU",
+  "systemVoices": [
+    "ru-ru"
+  ],
+  "voices": [
+    {
+      "id": "ru_RU-irina-medium",
+      "engine": "piper",
+      "label": "Irina",
+      "gender": "mujer",
+      "accent": "Rusia"
+    },
+    {
+      "id": "ru_RU-dmitri-medium",
+      "engine": "piper",
+      "label": "Dmitri",
+      "gender": "hombre",
+      "accent": "Rusia"
+    }
+  ]
+}

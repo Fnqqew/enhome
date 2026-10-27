@@ -13,7 +13,12 @@ const PLACEHOLDER: Record<LanguageId, string> = {
   en: 'Today I…',
   pt: 'Hoje eu…',
   it: 'Oggi ho…',
-  fr: "Aujourd'hui, j'ai…"
+  fr: "Aujourd'hui, j'ai…",
+  de: 'Heute habe ich…',
+  ru: 'Сегодня я…',
+  ja: '今日は…',
+  zh: '今天我…',
+  ko: '오늘은…'
 }
 
 // Diario: una entrada corta por día en el idioma del curso; Claude la corrige y queda guardada.

@@ -1,0 +1,36 @@
+{
+  "id": "ja",
+  "name": "japonés",
+  "label": "Japonés",
+  "endonym": "日本語",
+  "code": "JA",
+  "promptName": "japonés",
+  "greeting": "こんにちは",
+  "color": "#d6336c",
+  "script": "japanese",
+  "variant": "Japonés estándar (de Tokio), con el registro cortés (です/ます) como base y notas del informal.",
+  "speechTag": "ja-JP",
+  "systemVoices": [
+    "ja-jp"
+  ],
+  "voices": [
+    {
+      "id": "supertonic-ja-0",
+      "engine": "supertonic",
+      "label": "Voz de mujer",
+      "gender": "mujer",
+      "accent": "Japón",
+      "sid": 0,
+      "lang": "ja"
+    },
+    {
+      "id": "supertonic-ja-5",
+      "engine": "supertonic",
+      "label": "Voz de hombre",
+      "gender": "hombre",
+      "accent": "Japón",
+      "sid": 5,
+      "lang": "ja"
+    }
+  ]
+}

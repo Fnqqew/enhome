@@ -38,7 +38,7 @@ function makeTopic(overrides: Partial<CurriculumTopic> = {}): CurriculumTopic {
 }
 
 // Cada idioma con contenido se valida entero: formato, orden, prerrequisitos y resumen por día.
-const COURSES = LANGUAGE_IDS.filter((language) => existsSync(join(CONTENT_DIR, language)))
+const COURSES = LANGUAGE_IDS.filter((language) => existsSync(join(CONTENT_DIR, language, 'A1')))
 
 describe.each(COURSES)('temario real de %s (content/)', (language) => {
   // Se carga dentro de cada prueba: con -t "temario real de it" se valida un solo idioma.

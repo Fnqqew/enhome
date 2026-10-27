@@ -7,7 +7,7 @@ import { auditContent } from '../../src/main/content/audit'
 import { LANGUAGE_IDS } from '../../src/shared/languages'
 
 const CONTENT_DIR = join(__dirname, '..', '..', 'content')
-const COURSES = LANGUAGE_IDS.filter((language) => existsSync(join(CONTENT_DIR, language)))
+const COURSES = LANGUAGE_IDS.filter((language) => existsSync(join(CONTENT_DIR, language, 'A1')))
 
 describe.each(COURSES)('contenido de %s', (language) => {
   it('no tiene errores', () => {
