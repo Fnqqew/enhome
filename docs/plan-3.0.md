@@ -67,7 +67,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [x] 28 Pares mínimos y sonidos difíciles
 - [x] 29 Frases hechas como bloques
 - [x] 30 La historia de la semana
-- [ ] 31 La misión de la semana
+- [x] 31 La misión de la semana
 - [ ] 32 Conversación por voz con Claude
 - [x] 33 Ejercicios hechos con tus errores
 - [x] 34 Lecturas y escuchas largas a tu nivel

@@ -23,6 +23,7 @@ import { CourseBanks } from '../content/bank'
 import { Practice } from '../practice/practice'
 import { Journal } from '../reading/journal'
 import { Readings } from '../reading/readings'
+import { Missions } from '../mission/missions'
 import { Notebook } from '../review/notebook'
 import { Rewards } from '../rewards/rewards'
 import { answerAboutText, generateSummary } from '../summaries/generation'
@@ -64,6 +65,7 @@ export interface Services {
   games: Games
   vocab: Vocabulary
   readings: Readings
+  missions: Missions
   journal: Journal
   chats: Chats
   bank: ExerciseBank
@@ -141,6 +143,7 @@ export function createContext(options: IpcOptions): IpcContext {
         games: new Games(courseData, curriculum, progression),
         vocab: new Vocabulary(courseData, curriculum, language),
         readings: new Readings(courseData, curriculum, progression, language),
+        missions: new Missions(courseData, curriculum, progression, language),
         journal: new Journal(courseData, curriculum, progression, language),
         chats: new Chats(courseData, curriculum, progression, language)
       }

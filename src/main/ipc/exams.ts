@@ -15,6 +15,9 @@ export function registerExams(ctx: IpcContext): void {
   const { db, courseDb, activeLanguage, services, today } = ctx
 
   handle(IPC.testsOverview, () => services().exams.getOverview(today()))
+  handle(IPC.missionGet, () => services().missions.get(today()))
+  handle(IPC.missionCreate, (mode) => services().missions.create(z.enum(['write', 'speak']).parse(mode), today()))
+  handle(IPC.missionSubmit, (answer) => services().missions.submit(z.string().max(4000).parse(answer), today()))
   handle(IPC.examLock, () => services().exams.hasBlockingExam())
   handle(IPC.examStartWeekly, () => services().exams.startWeekly(today()))
   handle(IPC.examStartMock, (scope, subtopicId) =>

@@ -273,6 +273,7 @@ export class Progression {
         DELETE FROM cards;
         DELETE FROM game_scores;
         DELETE FROM readings;
+        DELETE FROM missions;
         DELETE FROM journal;
         DELETE FROM chat_messages;
         DELETE FROM chats;

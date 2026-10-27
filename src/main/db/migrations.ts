@@ -568,5 +568,21 @@ export const MIGRATIONS: Migration[] = [
       ALTER TABLE readings ADD COLUMN week_id INTEGER;
       ALTER TABLE readings ADD COLUMN chapter INTEGER;
     `
+  },
+  {
+    version: 19,
+    name: 'misión de la semana',
+    sql: `
+      -- Una misión por semana: la tarea con su rúbrica, la respuesta y la evaluación de Claude.
+      CREATE TABLE missions (
+        week_id      INTEGER PRIMARY KEY,
+        topic_id     TEXT NOT NULL,
+        task         TEXT NOT NULL,
+        answer       TEXT,
+        review       TEXT,
+        created_on   TEXT NOT NULL,
+        submitted_on TEXT
+      );
+    `
   }
 ]

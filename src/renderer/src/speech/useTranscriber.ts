@@ -61,41 +61,45 @@ export function useTranscriber(language: LanguageId) {
   }, [model])
 
   // Graba hasta que se llama a stop (o hasta 8 segundos) y devuelve lo que entendió.
-  const record = useCallback(async (): Promise<string> => {
-    setError(null)
-    let stream: MediaStream
-    try {
-      stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true } })
-    } catch {
-      setState('error')
-      const message = 'No se pudo usar el micrófono. Revisá que esté conectado y que Windows permita usarlo (Configuración → Privacidad → Micrófono).'
-      setError(message)
-      throw new Error(message)
-    }
-    const chunks: Blob[] = []
-    const media = new MediaRecorder(stream)
-    recorder.current = media
-    media.ondataavailable = (e) => chunks.push(e.data)
-    const stopped = new Promise<void>((resolve) => (media.onstop = () => resolve()))
-    media.start()
-    setState('recording')
-    stopTimer.current = setTimeout(() => media.state === 'recording' && media.stop(), MAX_RECORDING_MS)
-    await stopped
-    clearTimeout(stopTimer.current)
-    stream.getTracks().forEach((t) => t.stop())
+  const record = useCallback(
+    async (maxMs: number = MAX_RECORDING_MS): Promise<string> => {
+      setError(null)
+      let stream: MediaStream
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true } })
+      } catch {
+        setState('error')
+        const message =
+          'No se pudo usar el micrófono. Revisá que esté conectado y que Windows permita usarlo (Configuración → Privacidad → Micrófono).'
+        setError(message)
+        throw new Error(message)
+      }
+      const chunks: Blob[] = []
+      const media = new MediaRecorder(stream)
+      recorder.current = media
+      media.ondataavailable = (e) => chunks.push(e.data)
+      const stopped = new Promise<void>((resolve) => (media.onstop = () => resolve()))
+      media.start()
+      setState('recording')
+      stopTimer.current = setTimeout(() => media.state === 'recording' && media.stop(), maxMs)
+      await stopped
+      clearTimeout(stopTimer.current)
+      stream.getTracks().forEach((t) => t.stop())
 
-    setState('transcribing')
-    const context = new AudioContext({ sampleRate: SAMPLE_RATE })
-    const decoded = await context.decodeAudioData(await new Blob(chunks).arrayBuffer())
-    const audio = decoded.getChannelData(0).slice()
-    await context.close()
+      setState('transcribing')
+      const context = new AudioContext({ sampleRate: SAMPLE_RATE })
+      const decoded = await context.decodeAudioData(await new Blob(chunks).arrayBuffer())
+      const audio = decoded.getChannelData(0).slice()
+      await context.close()
 
-    const id = nextId.current++
-    return new Promise<string>((resolve) => {
-      pending.current.set(id, resolve)
-      worker().postMessage({ type: 'transcribe', id, audio, language: WHISPER_LANGUAGE[language], model } satisfies AsrRequest, [audio.buffer])
-    })
-  }, [language, model])
+      const id = nextId.current++
+      return new Promise<string>((resolve) => {
+        pending.current.set(id, resolve)
+        worker().postMessage({ type: 'transcribe', id, audio, language: WHISPER_LANGUAGE[language], model } satisfies AsrRequest, [audio.buffer])
+      })
+    },
+    [language, model]
+  )
 
   const stop = useCallback(() => {
     if (recorder.current?.state === 'recording') recorder.current.stop()

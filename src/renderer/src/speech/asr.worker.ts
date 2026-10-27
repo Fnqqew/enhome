@@ -79,7 +79,8 @@ self.onmessage = async (event: MessageEvent<AsrRequest>) => {
       post({ type: 'ready' })
       return
     }
-    const output = await asr(request.audio, { language: request.language, task: 'transcribe' })
+    // De a tramos de 30 s: así entra también una grabación larga (la misión hablada).
+    const output = await asr(request.audio, { language: request.language, task: 'transcribe', chunk_length_s: 30, stride_length_s: 5 })
     const text = Array.isArray(output) ? output.map((o) => o.text).join(' ') : output.text
     post({ type: 'result', id: request.id, text: text.trim() })
   } catch (error) {

@@ -18,6 +18,7 @@ import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './revie
 import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 import type { Highlight, JournalView, ReadingSummary, ReadingView, StoryView } from './reading'
+import type { MissionMode, MissionView } from './mission'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 import type { UpdateInfo } from './updates'
 import type { VoiceRole, VoiceStatus } from './voice'
@@ -121,6 +122,9 @@ export const IPC = {
   readingRemove: 'reading:remove',
   readingStory: 'reading:story',
   readingNextChapter: 'reading:next-chapter',
+  missionGet: 'mission:get',
+  missionCreate: 'mission:create',
+  missionSubmit: 'mission:submit',
   journalGet: 'journal:get',
   journalSave: 'journal:save',
   journalCorrect: 'journal:correct',
@@ -291,6 +295,9 @@ export interface Api {
   removeReading(readingId: number): Promise<ReadingSummary[]>
   getStory(): Promise<StoryView | null>
   nextChapter(): Promise<ReadingView>
+  getMission(): Promise<MissionView | null>
+  createMission(mode: MissionMode): Promise<MissionView>
+  submitMission(answer: string): Promise<MissionView>
   getJournal(): Promise<JournalView>
   saveJournal(text: string): Promise<JournalView>
   correctJournal(): Promise<JournalView>

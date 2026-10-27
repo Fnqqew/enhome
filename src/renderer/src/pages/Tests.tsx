@@ -6,6 +6,7 @@ import ExamPlayer from '../components/exams/ExamPlayer'
 import ExamResult from '../components/exams/ExamResult'
 import { useDayChange } from '../hooks/useDay'
 import type { Navigate } from '../navigation'
+import MissionCard from '../components/tests/MissionCard'
 import { SkeletonCard } from '../components/Skeleton'
 
 const WEEKLY_RULES =
@@ -112,6 +113,7 @@ export default function Tests({ navigate, onLockChange }: { navigate: Navigate; 
           <p className="error multiline">{error}</p>
         </section>
       )}
+      <MissionCard />
       {!overview ? (
         <SkeletonCard lines={4} />
       ) : (
