@@ -1,0 +1,904 @@
+{
+  "language": "ja",
+  "existing": [],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "ja-a1-hiragana-katakana",
+          "title": "Sistema de escritura: hiragana y katakana",
+          "targetTitle": "ひらがなとカタカナ",
+          "description": "Vas a aprender a leer y escribir los dos silabarios japoneses, hiragana y katakana, con su pronunciación correcta. Te sirve como base para poder leer cualquier texto en japonés desde el primer día.",
+          "subtopics": [
+            "Hiragana: vocales y primeras sílabas (あ行〜た行)",
+            "Hiragana: sílabas restantes y sonidos sonoros (だ行〜ん)",
+            "Katakana: vocales y sílabas básicas",
+            "Katakana: sonidos extendidos para palabras extranjeras",
+            "Práctica de lectura combinada y trazo correcto"
+          ],
+          "prerequisites": []
+        },
+        {
+          "id": "ja-a1-saludos-presentaciones",
+          "title": "Saludos y presentaciones personales",
+          "targetTitle": "あいさつと自己紹介",
+          "description": "Vas a aprender a saludar, presentarte y presentar a otras personas usando el registro cortés です/ます como base. Esto te permite empezar a comunicarte desde el primer encuentro en situaciones cotidianas.",
+          "subtopics": [
+            "Saludos formales e informales según el momento del día",
+            "Presentarte: nombre, nacionalidad y ocupación con です",
+            "Preguntar y responder datos personales básicos",
+            "Despedidas y fórmulas de cortesía",
+            "Diálogos de primer encuentro (nota sobre registro informal)"
+          ],
+          "prerequisites": ["ja-a1-hiragana-katakana"]
+        },
+        {
+          "id": "ja-a1-particulas-basicas",
+          "title": "Partículas básicas de la oración",
+          "targetTitle": "基本的な助詞",
+          "description": "Vas a aprender las partículas は、が、を、に y で, que marcan las funciones de las palabras dentro de la oración japonesa. Dominarlas te permite armar frases simples y entender la estructura básica del idioma.",
+          "subtopics": [
+            "Partícula は: tema de la oración",
+            "Partícula が: sujeto y existencia",
+            "Partícula を: objeto directo",
+            "Partícula に: destino, hora y lugar",
+            "Partícula で: medio, lugar de acción y herramienta"
+          ],
+          "prerequisites": ["ja-a1-saludos-presentaciones"]
+        },
+        {
+          "id": "ja-a1-numeros-contadores",
+          "title": "Números y contadores básicos",
+          "targetTitle": "数字と基本的な数え方",
+          "description": "Vas a aprender a contar del 1 al 10000 y a usar los contadores más comunes para objetos, personas y edad. Esto te sirve para manejarte con precios, cantidades y datos numéricos en la vida diaria.",
+          "subtopics": [
+            "Números del 1 al 100",
+            "Números grandes: cientos, miles y diez mil",
+            "Contadores de objetos y personas (つ, 人)",
+            "Edad y contador de años (歳)",
+            "Precios y uso de 円 en situaciones de compra"
+          ],
+          "prerequisites": ["ja-a1-particulas-basicas"]
+        },
+        {
+          "id": "ja-a1-tiempo-fecha",
+          "title": "La hora, los días y las fechas",
+          "targetTitle": "時間と日付",
+          "description": "Vas a aprender a decir la hora, los días de la semana, los meses y las fechas completas en japonés. Te sirve para organizar citas, horarios y planes cotidianos.",
+          "subtopics": [
+            "Decir la hora en punto y con minutos",
+            "Días de la semana",
+            "Meses del año y cómo decir fechas",
+            "Partículas de tiempo: に y から〜まで",
+            "Preguntar y responder sobre horarios"
+          ],
+          "prerequisites": ["ja-a1-numeros-contadores"]
+        },
+        {
+          "id": "ja-a1-objetos-adjetivos",
+          "title": "Objetos cotidianos y adjetivos básicos",
+          "targetTitle": "身近なものと基本的な形容詞",
+          "description": "Vas a aprender vocabulario de objetos de uso diario y los dos tipos de adjetivos japoneses, い-adjetivos y な-adjetivos, para describirlos. Esto te permite empezar a describir el mundo que te rodea con oraciones simples.",
+          "subtopics": [
+            "Vocabulario de objetos de la casa y la escuela",
+            "Adjetivos い: forma afirmativa y negativa",
+            "Adjetivos な: forma afirmativa y negativa",
+            "Demostrativos これ・それ・あれ y この・その・あの",
+            "Describir objetos con です"
+          ],
+          "prerequisites": ["ja-a1-particulas-basicas"]
+        },
+        {
+          "id": "ja-a1-verbos-presente",
+          "title": "Verbos en forma ます: presente y pasado",
+          "targetTitle": "ます形：現在と過去",
+          "description": "Vas a aprender a conjugar verbos en la forma cortés ます en presente, pasado y sus negativos. Con esto vas a poder contar qué hacés o hiciste todos los días usando el registro formal.",
+          "subtopics": [
+            "Grupos de verbos y forma ます afirmativa presente",
+            "Forma ます negativa presente",
+            "Forma ました: pasado afirmativo",
+            "Forma ませんでした: pasado negativo",
+            "Preguntas con か y respuestas cortas"
+          ],
+          "prerequisites": ["ja-a1-particulas-basicas"]
+        },
+        {
+          "id": "ja-a1-familia-descripciones",
+          "title": "La familia y la descripción de personas",
+          "targetTitle": "家族と人の説明",
+          "description": "Vas a aprender vocabulario de parentesco y a describir físicamente y en personalidad a las personas usando adjetivos. Te sirve para hablar de tu familia y de otras personas en conversaciones cotidianas.",
+          "subtopics": [
+            "Vocabulario de familia propia y de otras personas",
+            "Descripción física con adjetivos い y な",
+            "Descripción de personalidad",
+            "Posesivo の y pertenencia",
+            "Presentar a tu familia en una conversación"
+          ],
+          "prerequisites": ["ja-a1-objetos-adjetivos", "ja-a1-verbos-presente"]
+        },
+        {
+          "id": "ja-a1-rutina-diaria",
+          "title": "La rutina diaria",
+          "targetTitle": "日常のスケジュール",
+          "description": "Vas a aprender a describir tu rutina diaria combinando verbos en ます con expresiones de tiempo y frecuencia. Esto te permite contar cómo es un día típico en tu vida de manera clara.",
+          "subtopics": [
+            "Verbos de actividades diarias (levantarse, comer, dormir)",
+            "Expresiones de frecuencia: いつも、よく、たまに",
+            "Secuencia de acciones con それから y そして",
+            "Describir la rutina de otra persona",
+            "Contar tu rutina de fin de semana"
+          ],
+          "prerequisites": ["ja-a1-verbos-presente", "ja-a1-tiempo-fecha"]
+        },
+        {
+          "id": "ja-a1-lugares-direcciones",
+          "title": "Lugares y direcciones básicas",
+          "targetTitle": "場所と基本的な道案内",
+          "description": "Vas a aprender vocabulario de lugares de la ciudad y expresiones para pedir y dar indicaciones básicas de ubicación. Te sirve para moverte y orientarte en un entorno japonés real.",
+          "subtopics": [
+            "Vocabulario de lugares de la ciudad",
+            "Expresiones de ubicación: 上、下、前、後ろ、中",
+            "Preguntar dónde está algo con どこ",
+            "Indicar dirección con 右・左・まっすぐ",
+            "Diálogo completo de pedir indicaciones"
+          ],
+          "prerequisites": ["ja-a1-particulas-basicas", "ja-a1-verbos-presente"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "ja-a2-te-forma",
+          "title": "La forma て y sus usos principales",
+          "targetTitle": "て形とその使い方",
+          "description": "Vas a aprender a formar y usar la forma て de los verbos para pedir permiso, hacer peticiones y describir acciones en progreso. Esta forma es la base de muchísimas estructuras gramaticales más avanzadas del japonés.",
+          "subtopics": [
+            "Reglas de formación de la forma て por grupo verbal",
+            "Peticiones con てください",
+            "Acción en progreso con ている",
+            "Permiso con てもいいです",
+            "Enumerar acciones conectadas con て"
+          ],
+          "prerequisites": ["ja-a1-verbos-presente"]
+        },
+        {
+          "id": "ja-a2-peticiones-permisos",
+          "title": "Peticiones, permisos y prohibiciones",
+          "targetTitle": "依頼・許可・禁止の表現",
+          "description": "Vas a aprender a pedir cosas, dar permiso y prohibir acciones usando estructuras con la forma て. Esto te permite manejar situaciones sociales donde necesitás negociar lo que podés o no podés hacer.",
+          "subtopics": [
+            "Pedidos corteses con てください y ていただけますか",
+            "Dar y pedir permiso con てもいいですか",
+            "Prohibición con てはいけません",
+            "Obligación con なければなりません",
+            "Combinar peticiones en diálogos cotidianos"
+          ],
+          "prerequisites": ["ja-a2-te-forma"]
+        },
+        {
+          "id": "ja-a2-pasado-simple",
+          "title": "Las formas simples: diccionario y pasado た",
+          "targetTitle": "辞書形とた形",
+          "description": "Vas a aprender las formas simples de los verbos, la forma diccionario y la forma た, que son la base del japonés informal y de muchas estructuras gramaticales. Te sirve para entender y usar el registro informal junto con el cortés です/ます.",
+          "subtopics": [
+            "Formación de la forma diccionario por grupo verbal",
+            "Formación de la forma た (pasado simple)",
+            "Negativo simple: ない形",
+            "Uso informal entre amigos y familia (nota de registro)",
+            "Relación entre forma simple y forma ます"
+          ],
+          "prerequisites": ["ja-a2-te-forma"]
+        },
+        {
+          "id": "ja-a2-adjetivos-comparacion",
+          "title": "Comparativos y superlativos",
+          "targetTitle": "比較と最上級",
+          "description": "Vas a aprender a comparar dos o más elementos y a expresar el superlativo usando adjetivos. Esto te permite opinar y elegir entre opciones en conversaciones cotidianas.",
+          "subtopics": [
+            "Comparación con より y のほうが",
+            "Comparación de igualdad con と同じくらい",
+            "Superlativo con いちばん",
+            "Preguntar cuál es mejor: どちらのほうが",
+            "Practicar comparaciones de productos y lugares"
+          ],
+          "prerequisites": ["ja-a1-objetos-adjetivos"]
+        },
+        {
+          "id": "ja-a2-compras-restaurante",
+          "title": "Compras y restaurantes",
+          "targetTitle": "買い物とレストラン",
+          "description": "Vas a aprender el vocabulario y las frases para comprar productos y pedir comida en un restaurante. Te sirve para manejarte con autonomía en situaciones reales de consumo en Japón.",
+          "subtopics": [
+            "Vocabulario de tiendas y productos",
+            "Pedir y elegir productos con ください y にします",
+            "Preguntar precios y pagar",
+            "Vocabulario de comida y menú de restaurante",
+            "Diálogo completo para pedir en un restaurante"
+          ],
+          "prerequisites": ["ja-a2-peticiones-permisos"]
+        },
+        {
+          "id": "ja-a2-clima-estaciones",
+          "title": "El clima y las estaciones del año",
+          "targetTitle": "天気と季節",
+          "description": "Vas a aprender vocabulario sobre el clima y las cuatro estaciones japonesas para describir el tiempo y hacer planes según la época del año. Esto te permite mantener conversaciones informales típicas sobre el clima.",
+          "subtopics": [
+            "Vocabulario del clima y temperatura",
+            "Las cuatro estaciones y sus características",
+            "Expresiones para predecir el clima con でしょう",
+            "Actividades típicas de cada estación",
+            "Pequeñas charlas sobre el clima"
+          ],
+          "prerequisites": ["ja-a1-tiempo-fecha"]
+        },
+        {
+          "id": "ja-a2-hobbies-gustos",
+          "title": "Gustos, hobbies y habilidades",
+          "targetTitle": "趣味と能力の表現",
+          "description": "Vas a aprender a expresar gustos, aficiones y habilidades usando 好き、上手 y la forma potencial de los verbos. Te sirve para hablar de tus intereses y lo que sabés hacer en situaciones sociales.",
+          "subtopics": [
+            "Expresar gustos con 好き・嫌い",
+            "Vocabulario de hobbies y actividades de ocio",
+            "Forma potencial de los verbos",
+            "Expresar habilidad con 上手・下手",
+            "Conversación sobre tus hobbies y habilidades"
+          ],
+          "prerequisites": ["ja-a2-pasado-simple"]
+        },
+        {
+          "id": "ja-a2-invitaciones-planes",
+          "title": "Invitaciones y planes a futuro",
+          "targetTitle": "誘いと将来の予定",
+          "description": "Vas a aprender a invitar a alguien, aceptar o rechazar propuestas y hablar de planes futuros con つもり y でしょう. Esto te permite organizar actividades sociales en japonés de forma natural.",
+          "subtopics": [
+            "Invitar con ませんか y proponer con ましょう",
+            "Aceptar y rechazar invitaciones cortésmente",
+            "Expresar intención con つもり",
+            "Expresar predicción con でしょう",
+            "Diálogo de organizar un plan entre amigos"
+          ],
+          "prerequisites": ["ja-a2-hobbies-gustos"]
+        },
+        {
+          "id": "ja-a2-salud-cuerpo",
+          "title": "Salud, cuerpo y síntomas",
+          "targetTitle": "健康・体・症状",
+          "description": "Vas a aprender vocabulario del cuerpo humano y expresiones para describir síntomas y pedir ayuda médica. Te sirve para manejarte en situaciones de salud durante un viaje o estadía en Japón.",
+          "subtopics": [
+            "Vocabulario de partes del cuerpo",
+            "Describir síntomas con が痛い y 気分が悪い",
+            "Pedir turno y hablar con un médico",
+            "Dar consejos de salud con たほうがいい",
+            "Diálogo en una farmacia o clínica"
+          ],
+          "prerequisites": ["ja-a1-objetos-adjetivos"]
+        },
+        {
+          "id": "ja-a2-narracion-pasado",
+          "title": "Narrar experiencias pasadas",
+          "targetTitle": "経験を語る",
+          "description": "Vas a aprender a narrar experiencias usando たことがある y conectores temporales como てから. Esto te permite contar historias personales y experiencias de vida con cierta fluidez.",
+          "subtopics": [
+            "Expresar experiencia con たことがある",
+            "Secuencia temporal con てから",
+            "Conectar oraciones con前に y 後で",
+            "Narrar un viaje o experiencia pasada",
+            "Preguntar sobre experiencias de otra persona"
+          ],
+          "prerequisites": ["ja-a2-pasado-simple", "ja-a2-te-forma"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "ja-b1-condicionales",
+          "title": "Formas condicionales: ば、たら y と",
+          "targetTitle": "条件形：ば・たら・と",
+          "description": "Vas a aprender las tres formas condicionales principales del japonés y sus diferencias de uso según el contexto. Esto te permite expresar hipótesis, consecuencias y condiciones de manera precisa.",
+          "subtopics": [
+            "Formación y uso de ば",
+            "Formación y uso de たら",
+            "Uso de と para verdades generales",
+            "Diferencias de matiz entre ば、たら y と",
+            "Práctica de oraciones condicionales complejas"
+          ],
+          "prerequisites": ["ja-a2-pasado-simple"]
+        },
+        {
+          "id": "ja-b1-pasiva",
+          "title": "La voz pasiva",
+          "targetTitle": "受身形",
+          "description": "Vas a aprender a formar y usar la voz pasiva en japonés para describir acciones desde la perspectiva de quien las recibe. Te sirve para narrar eventos de forma objetiva y para el japonés de noticias y textos formales.",
+          "subtopics": [
+            "Formación de la voz pasiva por grupo verbal",
+            "Uso de la pasiva directa",
+            "Uso de la pasiva de afectación (迷惑の受身)",
+            "Pasiva con sujeto implícito en noticias",
+            "Práctica de transformación activa a pasiva"
+          ],
+          "prerequisites": ["ja-b1-condicionales"]
+        },
+        {
+          "id": "ja-b1-causativa",
+          "title": "La forma causativa y causativa-pasiva",
+          "targetTitle": "使役形と使役受身形",
+          "description": "Vas a aprender a formar la causativa para expresar que alguien hace o deja hacer algo a otra persona, y su forma pasiva para expresar obligación forzada. Esto te permite describir relaciones de poder y obligación con más matiz.",
+          "subtopics": [
+            "Formación de la forma causativa",
+            "Causativa de obligación (させる)",
+            "Causativa de permiso (させてあげる)",
+            "Forma causativa-pasiva (させられる)",
+            "Práctica de situaciones laborales y familiares"
+          ],
+          "prerequisites": ["ja-b1-pasiva"]
+        },
+        {
+          "id": "ja-b1-especulacion",
+          "title": "Expresar probabilidad y apariencia",
+          "targetTitle": "推量表現：そう・よう・らしい",
+          "description": "Vas a aprender a usar そう、よう y らしい para expresar distintos grados de probabilidad, apariencia y rumor. Te sirve para matizar tus afirmaciones según qué tan segura es la información.",
+          "subtopics": [
+            "そう de apariencia visual (見た目)",
+            "よう de inferencia subjetiva",
+            "らしい para rumores e información de terceros",
+            "そう de rumor (伝聞)",
+            "Diferencias de uso entre las cuatro formas"
+          ],
+          "prerequisites": ["ja-b1-condicionales"]
+        },
+        {
+          "id": "ja-b1-keigo-introduccion",
+          "title": "Introducción al keigo: sonkeigo y kenjougo",
+          "targetTitle": "敬語入門：尊敬語と謙譲語",
+          "description": "Vas a aprender los conceptos básicos del lenguaje honorífico japonés, distinguiendo el sonkeigo para elevar al interlocutor y el kenjougo para rebajarte a vos mismo. Esto te permite empezar a manejarte en contextos formales y de respeto.",
+          "subtopics": [
+            "Concepto de keigo y cuándo usarlo",
+            "Verbos honoríficos irregulares (sonkeigo)",
+            "Verbos humildes irregulares (kenjougo)",
+            "Formas regulares お〜になる y お〜する",
+            "Práctica de diálogos con un superior o cliente"
+          ],
+          "prerequisites": ["ja-a2-peticiones-permisos"]
+        },
+        {
+          "id": "ja-b1-opinion-argumentacion",
+          "title": "Dar opiniones y argumentar",
+          "targetTitle": "意見と主張の表現",
+          "description": "Vas a aprender estructuras para dar tu opinión, justificarla y matizarla usando と思う、ため y のに. Esto te permite participar en conversaciones más complejas donde tenés que sostener un punto de vista.",
+          "subtopics": [
+            "Opinar con と思う y と考える",
+            "Dar razones con から y ので",
+            "Expresar causa formal con ため",
+            "Contraste inesperado con のに",
+            "Práctica de pequeños debates orales"
+          ],
+          "prerequisites": ["ja-b1-especulacion"]
+        },
+        {
+          "id": "ja-b1-consejos-sugerencias",
+          "title": "Consejos y sugerencias",
+          "targetTitle": "アドバイスと提案",
+          "description": "Vas a aprender a dar consejos y sugerencias usando ほうがいい y べき, matizando el grado de obligación de cada expresión. Te sirve para aconsejar a otros de manera apropiada según el contexto.",
+          "subtopics": [
+            "Sugerir con たほうがいい",
+            "Desaconsejar con ないほうがいい",
+            "Expresar deber con べき",
+            "Diferencias de matiz entre べき y なければならない",
+            "Práctica de diálogos de consejo entre amigos y colegas"
+          ],
+          "prerequisites": ["ja-b1-opinion-argumentacion"]
+        },
+        {
+          "id": "ja-b1-trabajo-oficina",
+          "title": "Vocabulario de trabajo y oficina",
+          "targetTitle": "仕事とオフィスの言葉",
+          "description": "Vas a aprender vocabulario relacionado con el ámbito laboral japonés y expresiones básicas de keigo usadas en la oficina. Esto te prepara para desenvolverte en un entorno de trabajo japonés.",
+          "subtopics": [
+            "Vocabulario de puestos y departamentos",
+            "Expresiones de entrada y salida del trabajo",
+            "Keigo básico por teléfono en la oficina",
+            "Pedir licencias y permisos laborales",
+            "Diálogo de presentación en una reunión"
+          ],
+          "prerequisites": ["ja-b1-keigo-introduccion"]
+        },
+        {
+          "id": "ja-b1-comparaciones-decisiones",
+          "title": "Comparar opciones y tomar decisiones",
+          "targetTitle": "選択肢の比較と決定",
+          "description": "Vas a aprender estructuras para comparar múltiples opciones y expresar una decisión final de manera argumentada. Te sirve para situaciones donde tenés que elegir y justificar tu elección frente a otros.",
+          "subtopics": [
+            "Comparar más de dos opciones",
+            "Expresar preferencia con にする",
+            "Justificar una decisión con ことにした",
+            "Expresar duda entre opciones con かどうか",
+            "Práctica de simulacro de decisión grupal"
+          ],
+          "prerequisites": ["ja-b1-opinion-argumentacion"]
+        },
+        {
+          "id": "ja-b1-narracion-compleja",
+          "title": "Narración de historias y conectores temporales",
+          "targetTitle": "物語と時間の接続表現",
+          "description": "Vas a aprender conectores temporales y recursos narrativos para contar historias más largas y detalladas. Esto te permite estructurar relatos coherentes combinando pasado, causa y consecuencia.",
+          "subtopics": [
+            "Conectores 間に、うちに y 最中に",
+            "Combinar pasiva y causativa en narraciones",
+            "Marcadores de inicio y fin de una historia",
+            "Discurso narrado con と言った",
+            "Práctica de contar una anécdota completa"
+          ],
+          "prerequisites": ["ja-b1-condicionales", "ja-b1-pasiva"]
+        },
+        {
+          "id": "ja-b1-medios-noticias",
+          "title": "Medios de comunicación y noticias",
+          "targetTitle": "メディアとニュース",
+          "description": "Vas a aprender vocabulario y estructuras típicas de titulares y noticias en japonés para empezar a comprender medios reales. Te sirve para acceder a información auténtica y practicar comprensión lectora y auditiva de nivel intermedio.",
+          "subtopics": [
+            "Vocabulario de prensa y titulares",
+            "Estructura típica de un titular de noticia",
+            "Vocabulario de temas de actualidad simples",
+            "Comprensión de un noticiero breve",
+            "Resumir una noticia con tus propias palabras"
+          ],
+          "prerequisites": ["ja-b1-narracion-compleja"]
+        },
+        {
+          "id": "ja-b1-cartas-emails",
+          "title": "Redacción de cartas y correos",
+          "targetTitle": "手紙とメールの書き方",
+          "description": "Vas a aprender la estructura de cartas y correos electrónicos formales e informales en japonés, incluyendo fórmulas fijas de apertura y cierre. Esto te permite comunicarte por escrito de manera apropiada según la relación con el destinatario.",
+          "subtopics": [
+            "Estructura de un correo formal con keigo",
+            "Fórmulas fijas de apertura y cierre",
+            "Correos informales entre amigos",
+            "Pedir algo por escrito de forma cortés",
+            "Práctica de redacción de un correo completo"
+          ],
+          "prerequisites": ["ja-b1-keigo-introduccion", "ja-b1-opinion-argumentacion"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "ja-b2-nominalizacion",
+          "title": "Nominalización con こと y の",
+          "targetTitle": "こと・のによる名詞化",
+          "description": "Vas a aprender a transformar oraciones completas en sustantivos usando こと y の para construir oraciones más complejas. Esto te permite expresar ideas abstractas y conectar cláusulas de forma más sofisticada.",
+          "subtopics": [
+            "Nominalización con こと: usos generales",
+            "Nominalización con の: usos generales",
+            "Diferencias de uso entre こと y の",
+            "Nominalización en expresiones fijas (ことになる、ことにする)",
+            "Práctica de oraciones complejas nominalizadas"
+          ],
+          "prerequisites": ["ja-b1-opinion-argumentacion"]
+        },
+        {
+          "id": "ja-b2-concesion-contraste",
+          "title": "Concesión y contraste avanzado",
+          "targetTitle": "譬歩と対比の表現",
+          "description": "Vas a aprender estructuras de concesión y contraste como ても、にもかかわらず y くせに para matizar argumentos complejos. Te sirve para expresar ideas con tensión lógica, muy comunes en el japonés formal y argumentativo.",
+          "subtopics": [
+            "Concesión con ても y だとしても",
+            "Contraste formal con にもかかわらず",
+            "Crítica implícita con くせに",
+            "Contraste con 一方で",
+            "Práctica de redacción con estructuras de contraste"
+          ],
+          "prerequisites": ["ja-b2-nominalizacion"]
+        },
+        {
+          "id": "ja-b2-keigo-negocios",
+          "title": "Keigo de negocios: teléfono y reuniones",
+          "targetTitle": "ビジネス敬語：電話と会議",
+          "description": "Vas a aprender el keigo específico usado en llamadas telefónicas y reuniones de negocios japonesas. Esto te permite desenvolverte profesionalmente en contextos corporativos formales.",
+          "subtopics": [
+            "Fórmulas fijas de llamadas telefónicas de negocios",
+            "Keigo para recibir visitas y clientes",
+            "Expresiones para iniciar y cerrar una reunión",
+            "Pedir disculpas formales en contexto laboral",
+            "Simulacro de llamada y reunión de negocios"
+          ],
+          "prerequisites": ["ja-b1-trabajo-oficina"]
+        },
+        {
+          "id": "ja-b2-discurso-indirecto",
+          "title": "Estilo indirecto y citas",
+          "targetTitle": "間接話法と引用",
+          "description": "Vas a aprender a reportar lo que otra persona dijo o piensa usando 〜と言っていた y 〜そうだ. Te sirve para transmitir información de terceros con precisión en conversaciones y textos.",
+          "subtopics": [
+            "Cita directa e indirecta con と",
+            "Reportar dichos con と言っていた",
+            "Reportar información con そうだ de oído",
+            "Transformar discurso directo a indirecto",
+            "Práctica de reportar una conversación ajena"
+          ],
+          "prerequisites": ["ja-b2-nominalizacion"]
+        },
+        {
+          "id": "ja-b2-matices-gramaticales",
+          "title": "Matices gramaticales finos",
+          "targetTitle": "細かい文法のニュアンス",
+          "description": "Vas a aprender estructuras de matiz fino como ばかり、つつ y あげく para expresar ideas con precisión estilística. Esto te permite acercarte a una expresión más natural y elaborada del japonés.",
+          "subtopics": [
+            "ばかり: solo, nada más que",
+            "つつ: simultaneidad formal",
+            "あげく: resultado negativo tras un proceso",
+            "からこそ: énfasis en la causa",
+            "Práctica de redacción con matices combinados"
+          ],
+          "prerequisites": ["ja-b2-concesion-contraste"]
+        },
+        {
+          "id": "ja-b2-sociedad-actualidad",
+          "title": "Sociedad y temas de actualidad",
+          "targetTitle": "社会と時事問題",
+          "description": "Vas a aprender vocabulario y expresiones para hablar de temas sociales contemporáneos como educación, trabajo y demografía en Japón. Te sirve para participar en conversaciones y lecturas sobre la realidad social japonesa.",
+          "subtopics": [
+            "Vocabulario de estructura social y demografía",
+            "Vocabulario de educación y mercado laboral",
+            "Expresar tendencias con 傾向がある",
+            "Comentar estadísticas y datos sociales",
+            "Debate guiado sobre un tema social actual"
+          ],
+          "prerequisites": ["ja-b2-nominalizacion"]
+        },
+        {
+          "id": "ja-b2-medio-ambiente-economia",
+          "title": "Medio ambiente y economía",
+          "targetTitle": "環境と経済",
+          "description": "Vas a aprender vocabulario especializado sobre medio ambiente y economía para comprender textos y noticias sobre estos temas. Esto amplía tu capacidad de discutir problemáticas globales en japonés.",
+          "subtopics": [
+            "Vocabulario de medio ambiente y cambio climático",
+            "Vocabulario de economía y mercado",
+            "Expresar causa y efecto en contextos técnicos",
+            "Lectura de un artículo de opinión sobre economía",
+            "Práctica de resumen de un texto especializado"
+          ],
+          "prerequisites": ["ja-b2-sociedad-actualidad"]
+        },
+        {
+          "id": "ja-b2-debate-argumentacion-avanzada",
+          "title": "Debate y argumentación avanzada",
+          "targetTitle": "高度な討論と主張",
+          "description": "Vas a aprender a estructurar argumentos complejos, refutar posturas ajenas y defender una posición en un debate formal. Te sirve para participar con solidez en discusiones académicas o profesionales en japonés.",
+          "subtopics": [
+            "Estructurar un argumento con premisas y conclusión",
+            "Refutar con しかし y それにしても",
+            "Matizar un desacuerdo con やんわり断る",
+            "Conectores de conclusión: 結局、つまり",
+            "Simulacro de debate formal grupal"
+          ],
+          "prerequisites": ["ja-b2-sociedad-actualidad", "ja-b2-matices-gramaticales"]
+        },
+        {
+          "id": "ja-b2-estilo-escrito-formal",
+          "title": "Estilo escrito formal: だ・である体",
+          "targetTitle": "だ・である体の文章",
+          "description": "Vas a aprender el estilo escrito formal usado en ensayos, informes y textos académicos, distinto del habla cotidiana です/ます. Esto te permite leer y redactar textos formales como artículos o informes.",
+          "subtopics": [
+            "Características del estilo だ・である体",
+            "Conversión de です/ます a だ/である",
+            "Conectores propios del texto escrito formal",
+            "Redacción de un párrafo argumentativo formal",
+            "Práctica de lectura de un texto en である体"
+          ],
+          "prerequisites": ["ja-b2-discurso-indirecto"]
+        },
+        {
+          "id": "ja-b2-expresiones-idiomaticas-b2",
+          "title": "Expresiones idiomáticas cotidianas",
+          "targetTitle": "日常の慣用表現",
+          "description": "Vas a aprender expresiones idiomáticas y modismos de uso frecuente en la conversación japonesa cotidiana. Te sirve para sonar más natural y entender el habla coloquial de hablantes nativos.",
+          "subtopics": [
+            "Modismos con partes del cuerpo (手, 頭, 腹)",
+            "Expresiones idiomáticas de emociones",
+            "Modismos de la vida social y el trabajo",
+            "Expresiones onomatopéyicas comunes",
+            "Práctica de uso de modismos en contexto"
+          ],
+          "prerequisites": ["ja-b2-matices-gramaticales"]
+        },
+        {
+          "id": "ja-b2-presentaciones-orales",
+          "title": "Presentaciones orales formales",
+          "targetTitle": "フォーマルな口頭発表",
+          "description": "Vas a aprender a estructurar y presentar una exposición oral formal en japonés, usando keigo y conectores de discurso. Esto te sirve para desempeñarte en contextos académicos o profesionales donde debés exponer frente a una audiencia.",
+          "subtopics": [
+            "Estructura de una presentación formal",
+            "Frases de apertura y transición entre secciones",
+            "Keigo aplicado a una exposición pública",
+            "Responder preguntas del público formalmente",
+            "Práctica de una presentación oral completa"
+          ],
+          "prerequisites": ["ja-b2-keigo-negocios", "ja-b2-debate-argumentacion-avanzada"]
+        },
+        {
+          "id": "ja-b2-comprension-noticias-avanzada",
+          "title": "Comprensión de noticias y documentales",
+          "targetTitle": "ニュースとドキュメンタリーの理解",
+          "description": "Vas a aprender a comprender noticieros y documentales japoneses auténticos con vocabulario y estructuras de nivel avanzado. Te sirve para alcanzar comprensión auditiva de materiales reales sin adaptación.",
+          "subtopics": [
+            "Vocabulario avanzado de noticieros",
+            "Estructuras narrativas de documentales",
+            "Comprensión de entrevistas cortas en noticias",
+            "Tomar notas mientras se escucha un informe",
+            "Resumen oral de una noticia completa"
+          ],
+          "prerequisites": ["ja-b2-discurso-indirecto", "ja-b2-sociedad-actualidad"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "ja-c1-conectores-formales",
+          "title": "Conectores formales avanzados",
+          "targetTitle": "高度な接続表現",
+          "description": "Vas a aprender conectores de registro muy formal como ゆえに、のみならず y にしても, propios de textos académicos y discursos. Esto te permite leer y producir textos de nivel universitario o profesional con fluidez.",
+          "subtopics": [
+            "ゆえに: causa formal",
+            "のみならず: no solo... sino también",
+            "にしても: concesión fuerte",
+            "ことなく: sin hacer algo",
+            "Práctica de redacción con conectores combinados"
+          ],
+          "prerequisites": ["ja-b2-estilo-escrito-formal"]
+        },
+        {
+          "id": "ja-c1-keigo-matices",
+          "title": "Matices avanzados de keigo y cortesía social",
+          "targetTitle": "敬語と社会的配慮の高度な使い分け",
+          "description": "Vas a aprender a elegir el nivel exacto de keigo según el contexto social y la relación jerárquica entre hablantes. Te sirve para manejarte con naturalidad en situaciones formales complejas como entrevistas o negociaciones.",
+          "subtopics": [
+            "Niveles de formalidad y su elección contextual",
+            "Keigo en situaciones de conflicto o desacuerdo",
+            "Expresiones de humildad extrema (謙遜表現)",
+            "Errores comunes de keigo y cómo evitarlos",
+            "Práctica de simulacros de entrevista formal"
+          ],
+          "prerequisites": ["ja-b2-keigo-negocios"]
+        },
+        {
+          "id": "ja-c1-redaccion-academica",
+          "title": "Redacción académica y ensayos",
+          "targetTitle": "学術的な文章とエッセイ",
+          "description": "Vas a aprender la estructura de un ensayo académico en japonés, incluyendo introducción, desarrollo y conclusión con argumentación sostenida. Esto te prepara para producir textos de nivel universitario o de investigación.",
+          "subtopics": [
+            "Estructura de un ensayo académico",
+            "Formulación de una tesis o hipótesis",
+            "Citar fuentes y referencias en japonés",
+            "Conectores de desarrollo argumentativo",
+            "Redacción de un ensayo corto completo"
+          ],
+          "prerequisites": ["ja-c1-conectores-formales"]
+        },
+        {
+          "id": "ja-c1-retorica-persuasion",
+          "title": "Recursos retóricos y persuasión",
+          "targetTitle": "レトリックと説得技術",
+          "description": "Vas a aprender recursos retóricos japoneses para persuadir, enfatizar y estructurar un discurso convincente. Te sirve para dar discursos, negociar o escribir textos de opinión con impacto.",
+          "subtopics": [
+            "Figuras retóricas comunes en japonés",
+            "Técnicas de énfasis y repetición",
+            "Apelación a la lógica y a la emoción",
+            "Estructura de un discurso persuasivo",
+            "Práctica de un discurso de persuasión"
+          ],
+          "prerequisites": ["ja-c1-redaccion-academica"]
+        },
+        {
+          "id": "ja-c1-lenguaje-especializado",
+          "title": "Lenguaje especializado: legal, médico y técnico",
+          "targetTitle": "専門用語：法律・医療・技術",
+          "description": "Vas a aprender vocabulario y estructuras propias de textos legales, médicos y técnicos en japonés. Esto te permite leer documentos especializados y comunicarte en contextos profesionales específicos.",
+          "subtopics": [
+            "Vocabulario legal básico y contratos",
+            "Vocabulario médico y de informes clínicos",
+            "Vocabulario técnico e instructivos",
+            "Estructuras fijas de documentos oficiales",
+            "Práctica de lectura de un documento especializado"
+          ],
+          "prerequisites": ["ja-c1-conectores-formales"]
+        },
+        {
+          "id": "ja-c1-dialectos-variedades",
+          "title": "Dialectos y variedades regionales",
+          "targetTitle": "方言と地域変種",
+          "description": "Vas a aprender las características principales de los dialectos más conocidos del japonés, como el kansai-ben, y a reconocerlos al escuchar. Te sirve para entender la diversidad lingüística real de Japón más allá del estándar de Tokio.",
+          "subtopics": [
+            "Características del kansai-ben",
+            "Diferencias léxicas y de entonación regionales",
+            "Reconocimiento de dialectos en medios",
+            "Actitudes sociales hacia los dialectos",
+            "Práctica de comprensión auditiva dialectal"
+          ],
+          "prerequisites": ["ja-c1-keigo-matices"]
+        },
+        {
+          "id": "ja-c1-humor-ironia",
+          "title": "Humor, ironía y sarcasmo",
+          "targetTitle": "ユーモア・皮肉・嫌味",
+          "description": "Vas a aprender a reconocer y usar recursos de humor, ironía y sarcasmo propios del japonés conversacional. Esto te permite captar matices sutiles del habla real que no son evidentes en el discurso literal.",
+          "subtopics": [
+            "Marcadores de ironía en el habla",
+            "Juegos de palabras y chistes comunes",
+            "Sarcasmo encubierto en registro cortés",
+            "Humor en manzai y comedia japonesa",
+            "Práctica de identificación de tono irónico"
+          ],
+          "prerequisites": ["ja-c1-dialectos-variedades"]
+        },
+        {
+          "id": "ja-c1-literatura-moderna",
+          "title": "Lectura de literatura moderna japonesa",
+          "targetTitle": "近代日本文学の読解",
+          "description": "Vas a aprender a leer fragmentos de literatura moderna japonesa, analizando estilo, vocabulario literario y contexto cultural. Te sirve para acceder a la cultura japonesa en su forma escrita más elaborada.",
+          "subtopics": [
+            "Vocabulario literario y estilo narrativo",
+            "Lectura de un cuento corto moderno",
+            "Análisis de estilo del autor",
+            "Contexto histórico y cultural de la obra",
+            "Discusión oral sobre el texto leído"
+          ],
+          "prerequisites": ["ja-c1-retorica-persuasion"]
+        },
+        {
+          "id": "ja-c1-entrevistas-debates",
+          "title": "Comprensión de entrevistas y debates auténticos",
+          "targetTitle": "インタビューと討論の理解",
+          "description": "Vas a aprender a comprender entrevistas y debates televisivos japoneses sin adaptación, identificando posturas y argumentos. Esto te acerca a la comprensión auditiva de nivel casi nativo en contextos reales.",
+          "subtopics": [
+            "Comprensión de entrevistas periodísticas",
+            "Identificación de posturas en un debate",
+            "Vocabulario de transición en discursos orales",
+            "Toma de notas de un debate completo",
+            "Resumen crítico de lo escuchado"
+          ],
+          "prerequisites": ["ja-c1-retorica-persuasion", "ja-c1-humor-ironia"]
+        },
+        {
+          "id": "ja-c1-escritura-creativa",
+          "title": "Escritura creativa y narrativa avanzada",
+          "targetTitle": "創作とストーリーテリング",
+          "description": "Vas a aprender técnicas de escritura creativa en japonés para producir narraciones originales con estilo propio. Te sirve para expresar tu creatividad y consolidar un dominio expresivo avanzado del idioma.",
+          "subtopics": [
+            "Técnicas de creación de personajes y ambientación",
+            "Punto de vista narrativo y voz del narrador",
+            "Diálogos naturales en registro informal y formal",
+            "Recursos estilísticos de la narrativa japonesa",
+            "Redacción de un relato corto original"
+          ],
+          "prerequisites": ["ja-c1-literatura-moderna", "ja-c1-redaccion-academica"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "ja-c2-japones-clasico",
+          "title": "Introducción al japonés clásico",
+          "targetTitle": "古典日本語（文語）入門",
+          "description": "Vas a aprender las bases gramaticales del japonés clásico literario, distinto del japonés moderno, para poder leer textos históricos. Esto te da acceso a la raíz lingüística de la literatura y cultura tradicional japonesa.",
+          "subtopics": [
+            "Diferencias entre japonés clásico y moderno",
+            "Conjugaciones verbales clásicas básicas",
+            "Partículas y auxiliares clásicos comunes",
+            "Lectura de un fragmento clásico breve",
+            "Práctica de traducción al japonés moderno"
+          ],
+          "prerequisites": ["ja-c1-literatura-moderna"]
+        },
+        {
+          "id": "ja-c2-yojijukugo-proverbios",
+          "title": "Yojijukugo y proverbios",
+          "targetTitle": "四字熟語とことわざ",
+          "description": "Vas a aprender expresiones de cuatro caracteres y proverbios tradicionales japoneses junto con su origen y uso apropiado. Te sirve para enriquecer tu expresión con un nivel de sofisticación cercano al nativo.",
+          "subtopics": [
+            "Yojijukugo de uso frecuente y su origen",
+            "Proverbios (ことわざ) comunes y su significado",
+            "Contextos apropiados de uso formal e informal",
+            "Yojijukugo de origen chino clásico",
+            "Práctica de uso en redacción y conversación"
+          ],
+          "prerequisites": ["ja-c2-japones-clasico"]
+        },
+        {
+          "id": "ja-c2-poesia-haiku-tanka",
+          "title": "Poesía tradicional: haiku y tanka",
+          "targetTitle": "俳句と短歌",
+          "description": "Vas a aprender la estructura y estética del haiku y el tanka, dos formas poéticas tradicionales japonesas. Esto te permite apreciar y producir poesía breve dentro de la tradición literaria japonesa.",
+          "subtopics": [
+            "Estructura silábica del haiku",
+            "Kigo: palabras estacionales en el haiku",
+            "Estructura y temática del tanka",
+            "Lectura y análisis de poemas clásicos",
+            "Composición de un haiku propio"
+          ],
+          "prerequisites": ["ja-c2-japones-clasico"]
+        },
+        {
+          "id": "ja-c2-ambiguedad-implicatura",
+          "title": "Ambigüedad, implicatura y lectura entre líneas",
+          "targetTitle": "曖昧さと行間を読む力",
+          "description": "Vas a aprender a interpretar lo no dicho explícitamente en el japonés, una habilidad central en la comunicación social japonesa. Te sirve para entender matices culturales y comunicativos que escapan a la traducción literal.",
+          "subtopics": [
+            "El concepto de 行間を読む (leer entre líneas)",
+            "Ambigüedad intencional en respuestas corteses",
+            "Silencios y pausas con valor comunicativo",
+            "Implicaturas culturales en el rechazo indirecto",
+            "Práctica de interpretación de diálogos ambiguos"
+          ],
+          "prerequisites": ["ja-c1-humor-ironia"]
+        },
+        {
+          "id": "ja-c2-evolucion-linguistica",
+          "title": "Evolución histórica y variación sociolingüística",
+          "targetTitle": "言語の歴史的変化と社会言語学的変異",
+          "description": "Vas a aprender cómo evolucionó el japonés a través de la historia y cómo varía socialmente según edad, género y región. Esto te da una visión completa del idioma como sistema vivo y en constante cambio.",
+          "subtopics": [
+            "Etapas históricas del japonés",
+            "Variación lingüística por generación",
+            "Variación de género en el habla (nota de uso actual)",
+            "Influencia de préstamos lingüísticos a través del tiempo",
+            "Debate sobre el futuro del idioma japonés"
+          ],
+          "prerequisites": ["ja-c2-japones-clasico", "ja-c1-dialectos-variedades"]
+        },
+        {
+          "id": "ja-c2-traduccion-interpretacion",
+          "title": "Técnicas de traducción e interpretación",
+          "targetTitle": "翻訳と通訳の技術",
+          "description": "Vas a aprender técnicas profesionales de traducción e interpretación entre japonés y español, atendiendo a matices culturales y de registro. Te sirve para desempeñarte profesionalmente como traductor o intérprete de japonés.",
+          "subtopics": [
+            "Principios de equivalencia y fidelidad en traducción",
+            "Técnicas de interpretación consecutiva",
+            "Traducción de matices culturales intraducibles",
+            "Manejo de registro al traducir keigo",
+            "Práctica de traducción de un texto real"
+          ],
+          "prerequisites": ["ja-c2-ambiguedad-implicatura"]
+        },
+        {
+          "id": "ja-c2-registros-multiples",
+          "title": "Dominio de múltiples registros discursivos",
+          "targetTitle": "多様な文体の使い分け",
+          "description": "Vas a aprender a moverte con fluidez entre registros muy formales, coloquiales, dialectales y literarios según el contexto comunicativo. Esto consolida tu capacidad de adaptar el idioma a cualquier situación como lo haría un hablante nativo.",
+          "subtopics": [
+            "Cambio de registro según interlocutor y contexto",
+            "Mezcla de registros en la vida profesional real",
+            "Registro literario versus registro oral",
+            "Reconocimiento de registro en textos auténticos",
+            "Práctica de producción en distintos registros"
+          ],
+          "prerequisites": ["ja-c2-ambiguedad-implicatura", "ja-c2-evolucion-linguistica"]
+        },
+        {
+          "id": "ja-c2-dominio-nativo-capstone",
+          "title": "Proyecto final: dominio nativo del discurso japonés",
+          "targetTitle": "最終プロジェクト：ネイティブレベルの日本語運用",
+          "description": "Vas a integrar todo lo aprendido en un proyecto final que demuestre dominio nativo del japonés en comprensión, producción oral y escrita. Esto certifica tu capacidad de usar el idioma con la misma naturalidad y flexibilidad que un hablante nativo culto.",
+          "subtopics": [
+            "Planificación de un proyecto integrador personal",
+            "Producción de un texto escrito de nivel nativo",
+            "Presentación oral formal ante un público exigente",
+            "Defensa y debate sobre el proyecto presentado",
+            "Autoevaluación y plan de mantenimiento del idioma"
+          ],
+          "prerequisites": ["ja-c2-traduccion-interpretacion", "ja-c2-registros-multiples", "ja-c2-yojijukugo-proverbios", "ja-c2-poesia-haiku-tanka"]
+        }
+      ]
+    }
+  ]
+}

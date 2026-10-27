@@ -1,0 +1,504 @@
+{
+  "id": "pt-c1-retorica-estilo",
+  "level": "C1",
+  "order": 9,
+  "title": "Retórica y estilo",
+  "targetTitle": "Retórica e estilo",
+  "description": "Vas a aprender figuras retóricas, ironía y distintos registros literarios del portugués. Te sirve para analizar textos literarios breves y reconocer el tono e intención del autor.",
+  "objectives": [
+    "Vas a poder reconocer e interpretar las principales figuras retóricas (metáfora, metonimia, hipérbole, antítese, anáfora, etc.) en textos portugueses.",
+    "Vas a poder identificar la ironía y el humor en portugués, distinguiendo el tono literal del irónico según el contexto.",
+    "Vas a poder diferenciar registros literarios (formal, coloquial, arcaico, poético) y reconocer sus marcas lingüísticas típicas.",
+    "Vas a poder determinar el tono y la intención del autor en un fragmento usando vocabulario específico de análisis.",
+    "Vas a poder leer un texto literario breve y redactar un análisis coherente combinando figuras retóricas, tono e intención."
+  ],
+  "prerequisites": [
+    "pt-c1-expressoes-idiomaticas"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "figuras-retoricas-comuns",
+      "day": 1,
+      "title": "Figuras retóricas comunes",
+      "goal": "vas a poder identificar y usar las principales figuras retóricas en portugués (metáfora, metonimia, hipérbole, antítese, anáfora, prosopopeia, eufemismo).",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "La metáfora compara dos cosas sin usar 'como', igual que en español: 'Seus olhos são estrelas'.",
+        "La metonimia reemplaza una palabra por otra relacionada (autor por obra, parte por el todo): 'leu Machado de Assis' = leyó su obra.",
+        "La hipérbole exagera para dar énfasis y es muy frecuente en el habla coloquial brasileña ('esperei um século').",
+        "La antítese contrapone ideas opuestas en la misma frase; la anáfora repite una palabra al inicio de frases o versos seguidos.",
+        "La prosopopeia (personificação) le da acciones humanas a cosas o fenómenos naturales; el eufemismo suaviza algo duro de decir (ej. la muerte).",
+        "Nota de Portugal: las mismas figuras existen igual, pero el vocabulario de ejemplo puede variar (ônibus/autocarro, trem/comboio)."
+      ],
+      "examples": [
+        {
+          "target": "Seus olhos são duas estrelas no escuro do quarto.",
+          "es": "Sus ojos son dos estrellas en la oscuridad del cuarto."
+        },
+        {
+          "target": "Ele passou a tarde lendo Machado de Assis.",
+          "es": "Él pasó la tarde leyendo a Machado de Assis."
+        },
+        {
+          "target": "Não vi nenhuma alma na rua.",
+          "es": "No vi ninguna alma en la calle."
+        },
+        {
+          "target": "Esperei um século para você responder essa mensagem.",
+          "es": "Esperé un siglo para que respondieras ese mensaje."
+        },
+        {
+          "target": "Ele é rico em dinheiro, mas pobre em amigos.",
+          "es": "Él es rico en dinero, pero pobre en amigos."
+        },
+        {
+          "target": "Tudo passa, tudo se transforma, tudo recomeça.",
+          "es": "Todo pasa, todo se transforma, todo recomienza."
+        },
+        {
+          "target": "O vento sussurrava segredos antigos pela floresta.",
+          "es": "El viento susurraba secretos antiguos por el bosque."
+        },
+        {
+          "target": "Ele passou dessa para melhor ontem de madrugada.",
+          "es": "Él falleció ayer de madrugada."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Ele parece como um leão.",
+          "right": "Ele parece um leão.",
+          "why": "En portugués 'parecer' no lleva 'como' en la comparación directa, a diferencia del uso que a veces se escucha en español; agregarlo suena raro y redundante."
+        },
+        {
+          "wrong": "metafora",
+          "right": "metáfora",
+          "why": "La palabra necesita tilde en la á (acento agudo); muchos hispanohablantes la omiten porque en español no lleva tilde."
+        },
+        {
+          "wrong": "sentido figurativo",
+          "right": "sentido figurado",
+          "why": "En portugués se dice 'sentido figurado'; 'figurativo' es un falso amigo que no se usa con ese significado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "em sentido figurado",
+          "es": "en sentido figurado",
+          "example": "Essa frase deve ser lida em sentido figurado, não ao pé da letra.",
+          "exampleEs": "Esta frase debe leerse en sentido figurado, no al pie de la letra."
+        },
+        {
+          "target": "ao pé da letra",
+          "es": "al pie de la letra",
+          "example": "Ele levou a piada ao pé da letra e ficou chateado.",
+          "exampleEs": "Él se tomó el chiste al pie de la letra y se enojó."
+        },
+        {
+          "target": "figura de linguagem",
+          "es": "figura retórica / del lenguaje",
+          "example": "A hipérbole é uma figura de linguagem muito usada em discursos.",
+          "exampleEs": "La hipérbole es una figura retórica muy usada en discursos."
+        },
+        {
+          "target": "dar ênfase a",
+          "es": "darle énfasis a",
+          "example": "O autor usa a repetição para dar ênfase a certos detalhes da trama.",
+          "exampleEs": "El autor usa la repetición para darle énfasis a ciertos detalles de la trama."
+        },
+        {
+          "target": "fazer uso de",
+          "es": "hacer uso de",
+          "example": "É comum fazer uso de antíteses para criar contraste no poema.",
+          "exampleEs": "Es común hacer uso de antítesis para crear contraste en el poema."
+        }
+      ]
+    },
+    {
+      "id": "ironia-e-humor",
+      "day": 2,
+      "title": "Ironía y humor en portugués",
+      "goal": "vas a poder reconocer y producir ironía y humor en portugués, distinguiendo el tono literal del irónico según el contexto.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "La ironía se marca más por el contexto y la entonación que por palabras explícitas: hay desproporción entre lo que se dice y lo que se espera.",
+        "'Que ótimo!' dicho en una situación negativa es irónico, igual que en español '¡Qué bueno!'.",
+        "El sarcasmo (sarcasmo) es una ironía más agresiva, con intención de criticar o herir directamente.",
+        "Marcadores típicos de ironía en el habla: 'né?', 'com certeza', puntos suspensivos, diminutivos irónicos ('que coisinha linda').",
+        "Evitar la palabra 'ironicamente' en cada frase irónica le quita gracia al recurso; la ironía funciona mejor implícita."
+      ],
+      "examples": [
+        {
+          "target": "Que dia lindo para ficar presa no trânsito, né?",
+          "es": "Qué día lindo para quedar atrapada en el tránsito, ¿no?"
+        },
+        {
+          "target": "Ah, claro, porque eu tenho todo o tempo do mundo.",
+          "es": "Ah, claro, porque yo tengo todo el tiempo del mundo."
+        },
+        {
+          "target": "Parabéns, você quebrou o copo de novo. Que talento!",
+          "es": "Felicitaciones, rompiste la copa de nuevo. ¡Qué talento!"
+        },
+        {
+          "target": "Com certeza ele vai chegar na hora... daqui a duas horas.",
+          "es": "Seguro que él va a llegar a tiempo... dentro de dos horas."
+        },
+        {
+          "target": "Nada como estudar na última hora para aprender bem a matéria.",
+          "es": "Nada como estudiar a último momento para aprender bien la materia."
+        },
+        {
+          "target": "Que chuvinha fraquinha, hein? Alagou a cidade toda.",
+          "es": "Qué lluviecita débil, ¿eh? Inundó toda la ciudad."
+        },
+        {
+          "target": "Ele disse que ia ajudar, e eu ainda acreditei, imagina.",
+          "es": "Él dijo que iba a ayudar, y yo todavía le creí, imaginate."
+        },
+        {
+          "target": "Obrigada por me avisar com uma semana de atraso.",
+          "es": "Gracias por avisarme con una semana de atraso."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Isso é muito irônico, ironicamente falando, porque ele chegou atrasado.",
+          "right": "Que pontual, né? Chegou uma hora atrasado.",
+          "why": "Nombrar la ironía explícitamente ('ironicamente falando') suena forzado y le quita el efecto; es mejor dejar que el contexto y el tono hagan el trabajo."
+        },
+        {
+          "wrong": "irónico",
+          "right": "irônico",
+          "why": "En portugués de Brasil la palabra lleva acento circunflejo (^), no agudo como en español; es un falso amigo ortográfico frecuente."
+        },
+        {
+          "wrong": "que bronca que eu tô!",
+          "right": "que raiva que eu tô!",
+          "why": "'Bronca' en portugués de Brasil significa 'regañada' o 'bronca/pelea', no 'enojo' como en el Río de la Plata; para expresar enojo se usa 'raiva'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "fazer graça",
+          "es": "hacer gracia / bromear",
+          "example": "Ele sempre tenta fazer graça até nas situações mais sérias.",
+          "exampleEs": "Él siempre intenta hacer gracia hasta en las situaciones más serias."
+        },
+        {
+          "target": "tirar sarro de",
+          "es": "burlarse de",
+          "example": "Pare de tirar sarro de mim na frente dos outros.",
+          "exampleEs": "Dejá de burlarte de mí delante de los demás."
+        },
+        {
+          "target": "com certeza, né",
+          "es": "seguro, ¿no? (irónico)",
+          "example": "Com certeza, né, ele vai lembrar do meu aniversário.",
+          "exampleEs": "Seguro, ¿no?, él se va a acordar de mi cumpleaños."
+        },
+        {
+          "target": "não me faça rir",
+          "es": "no me hagas reír",
+          "example": "Ele, pontual? Não me faça rir.",
+          "exampleEs": "¿Él, puntual? No me hagas reír."
+        },
+        {
+          "target": "cair na risada",
+          "es": "largarse a reír",
+          "example": "Diante de uma piada tão boa, é impossível não cair na risada.",
+          "exampleEs": "Frente a un chiste tan bueno, es imposible no largarse a reír."
+        }
+      ]
+    },
+    {
+      "id": "registros-literarios",
+      "day": 3,
+      "title": "Registros literarios",
+      "goal": "vas a poder distinguir registros (coloquial, formal, poético, arcaico) en textos literarios portugueses y brasileños y reconocer sus marcas.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "El registro culto/formal usa colocación pronominal próclitica, vocabulario rebuscado y subordinadas largas.",
+        "El registro coloquial literario imita el habla real (gírias, 'pra', 'tá', 'né') para dar verosimilitud a los personajes.",
+        "En textos clásicos puede aparecer 'vós' con su propia conjugación (ej. 'suspendei'), un pronombre arcaico que hay que reconocer, no reemplazar.",
+        "Nota PT-PT vs PT-BR: en Portugal el registro formal escrito conserva 'tu' con su conjugación propia; en Brasil domina 'você' incluso en registros formales.",
+        "El vocabulario cambia según el país del texto: 'ônibus' (BR) vs 'autocarro' (PT), 'trem' (BR) vs 'comboio' (PT)."
+      ],
+      "examples": [
+        {
+          "target": "Era uma vez, numa terra distante, um rei que nada temia.",
+          "es": "Había una vez, en una tierra distante, un rey que no temía nada."
+        },
+        {
+          "target": "Ó tempo, suspende o teu voo, e vós, horas propícias, suspendei o vosso curso.",
+          "es": "Oh tiempo, suspendé tu vuelo, y ustedes, horas propicias, suspendan su curso."
+        },
+        {
+          "target": "Aí, cara, tu tá de brincadeira comigo?",
+          "es": "Ahí, hermano, ¿estás jugando conmigo?"
+        },
+        {
+          "target": "Cumpre salientar que a presente obra se insere num contexto de profunda transformação social.",
+          "es": "Cabe destacar que la presente obra se inserta en un contexto de profunda transformación social."
+        },
+        {
+          "target": "Num casebre à beira da estrada, vivia uma velha solitária.",
+          "es": "En un rancho al borde de la ruta, vivía una vieja solitaria."
+        },
+        {
+          "target": "Ele tava bolado com aquela situação toda, sacou?",
+          "es": "Él estaba enojado con toda esa situación, ¿entendés?"
+        },
+        {
+          "target": "Em Portugal, dizem 'tu vais', ao passo que no Brasil se diz 'você vai'.",
+          "es": "En Portugal dicen 'tu vais', mientras que en Brasil se dice 'você vai'."
+        },
+        {
+          "target": "A linguagem rebuscada do autor dificulta a leitura para quem não está familiarizado com o estilo.",
+          "es": "El lenguaje rebuscado del autor dificulta la lectura para quien no está familiarizado con el estilo."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "tu vai",
+          "right": "tu vais / você vai",
+          "why": "No hay que mezclar el pronombre 'tu' con la conjugación de tercera persona; cada variante del portugués tiene su propia conjugación coherente."
+        },
+        {
+          "wrong": "Em textos antigos, troco 'vós' por 'vocês' para entender melhor.",
+          "right": "Reconhecer 'vós' como pronome arcaico de 2ª pessoa do plural, com conjugação própria (suspendei, fazei).",
+          "why": "'Vós' casi no se usa hoy, pero aparece en textos clásicos y hay que identificarlo, no reemplazarlo al leer."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "à beira de",
+          "es": "al borde de",
+          "example": "A cabana ficava à beira de um rio tranquilo.",
+          "exampleEs": "La cabaña quedaba al borde de un río tranquilo."
+        },
+        {
+          "target": "cumpre salientar que",
+          "es": "cabe destacar que",
+          "example": "Cumpre salientar que o enredo se desenrola em três atos.",
+          "exampleEs": "Cabe destacar que la trama se desarrolla en tres actos."
+        },
+        {
+          "target": "de brincadeira",
+          "es": "en broma / de joda",
+          "example": "Falei isso de brincadeira, não leva a mal.",
+          "exampleEs": "Dije eso en broma, no te lo tomes a mal."
+        },
+        {
+          "target": "ao passo que",
+          "es": "mientras que",
+          "example": "O protagonista cresce, ao passo que o antagonista se perde.",
+          "exampleEs": "El protagonista crece, mientras que el antagonista se pierde."
+        },
+        {
+          "target": "era uma vez",
+          "es": "había una vez",
+          "example": "Era uma vez um reino muito distante.",
+          "exampleEs": "Había una vez un reino muy distante."
+        }
+      ]
+    },
+    {
+      "id": "tom-e-intencao",
+      "day": 4,
+      "title": "Tono e intención",
+      "goal": "vas a poder identificar el tono (crítico, nostálgico, irónico, solemne) y la intención del autor en un fragmento usando vocabulario específico.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El tono se reconoce por la elección de vocabulario, la puntuación (exclamaciones, puntos suspensivos) y la estructura de las frases.",
+        "Verbos de intención como 'pretender', 'visar', 'criticar', 'elogiar', 'denunciar' sirven para nombrar el propósito del autor.",
+        "Adverbios cargados de connotación ('infelizmente', 'felizmente', 'ironicamente') marcan claramente el tono del narrador.",
+        "Hay que distinguir entre el tono del narrador y el tono de un personaje: pueden ser diferentes dentro del mismo texto.",
+        "En Brasil 'visar' + infinitivo no necesita la preposición 'a' ('visa criticar'); en el portugués más formal/europeo sí aparece ('visa a criticar')."
+      ],
+      "examples": [
+        {
+          "target": "O autor denuncia, com tom indignado, a desigualdade social retratada no romance.",
+          "es": "El autor denuncia, con tono indignado, la desigualdad social retratada en la novela."
+        },
+        {
+          "target": "Infelizmente, pouco mudou desde então.",
+          "es": "Lamentablemente, poco cambió desde entonces."
+        },
+        {
+          "target": "O narrador descreve a cena com uma nostalgia evidente da infância.",
+          "es": "El narrador describe la escena con una nostalgia evidente de la infancia."
+        },
+        {
+          "target": "Com ironia, o cronista elogia o 'progresso' que destruiu o bairro.",
+          "es": "Con ironía, el cronista elogia el 'progreso' que destruyó el barrio."
+        },
+        {
+          "target": "A crítica do autor visa expor a hipocrisia da elite.",
+          "es": "La crítica del autor apunta a exponer la hipocresía de la elite."
+        },
+        {
+          "target": "O tom solene do discurso contrasta com a simplicidade do tema.",
+          "es": "El tono solemne del discurso contrasta con la simplicidad del tema."
+        },
+        {
+          "target": "Pode-se perceber, pelas escolhas lexicais, uma intenção claramente irônica.",
+          "es": "Se puede percibir, por las elecciones léxicas, una intención claramente irónica."
+        },
+        {
+          "target": "O poema, embora breve, carrega um tom de profunda melancolia.",
+          "es": "El poema, aunque breve, lleva un tono de profunda melancolía."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "A intenção do autor é para criticar...",
+          "right": "A intenção do autor é criticar...",
+          "why": "Después de 'a intenção é' no se usa la preposición 'para' antes del infinitivo; la construcción es directa."
+        },
+        {
+          "wrong": "o tono do texto é melancólico",
+          "right": "o tom do texto é melancólico",
+          "why": "La palabra en portugués es 'tom', sin la 'o' final; decir 'tono' es un calco directo del español que hay que evitar."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "ter por objetivo",
+          "es": "tener como objetivo",
+          "example": "Esse tipo de crônica costuma ter por objetivo provocar reflexão no leitor.",
+          "exampleEs": "Este tipo de crónica suele tener como objetivo provocar reflexión en el lector."
+        },
+        {
+          "target": "deixar entrever",
+          "es": "dejar entrever",
+          "example": "O autor prefere deixar entrever sua opinião nas entrelinhas do texto.",
+          "exampleEs": "El autor prefiere dejar entrever su opinión entre líneas del texto."
+        },
+        {
+          "target": "dar a entender",
+          "es": "dar a entender",
+          "example": "Ele tentou dar a entender que o final seria trágico.",
+          "exampleEs": "Él intentó dar a entender que el final sería trágico."
+        },
+        {
+          "target": "pôr a nu",
+          "es": "poner al descubierto / desnudar",
+          "example": "A crônica consegue pôr a nu as contradições da sociedade.",
+          "exampleEs": "La crónica logra poner al descubierto las contradicciones de la sociedad."
+        },
+        {
+          "target": "com tom de",
+          "es": "con tono de",
+          "example": "Ele falou com tom de reprovação.",
+          "exampleEs": "Él habló con tono de reprobación."
+        }
+      ]
+    },
+    {
+      "id": "analisar-texto-literario-breve",
+      "day": 5,
+      "title": "Analizar un texto literario breve",
+      "goal": "vas a poder leer un texto literario breve en portugués e identificar figuras retóricas, tono e intención, y escribir un breve análisis en registro académico.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Estructura básica del análisis: tema, figuras retóricas, tono, intención del autor y conclusión personal.",
+        "Usar conectores de análisis académico: 'percebe-se que', 'nota-se que', 'pode-se inferir que', 'isso sugere que'.",
+        "Citar textualmente usando comillas y expresiones como 'como se lê em' o 'conforme o trecho'.",
+        "Diferenciar la interpretación personal ('na minha leitura') de los datos objetivos del texto ('o texto afirma').",
+        "Mantener coherencia de registro formal en el análisis, evitando mezclar coloquialismos con vocabulario académico.",
+        "Variar los verbos de análisis (sugere, aponta, evidencia, denota) en vez de repetir siempre 'quer dizer'."
+      ],
+      "examples": [
+        {
+          "target": "No trecho analisado, percebe-se uma clara metáfora entre a vida e o mar.",
+          "es": "En el fragmento analizado, se percibe una clara metáfora entre la vida y el mar."
+        },
+        {
+          "target": "Conforme o trecho, o narrador demonstra desprezo pela hipocrisia social.",
+          "es": "Según el fragmento, el narrador demuestra desprecio por la hipocresía social."
+        },
+        {
+          "target": "Pode-se inferir que a ironia do autor visa criticar o conformismo da época.",
+          "es": "Se puede inferir que la ironía del autor apunta a criticar el conformismo de la época."
+        },
+        {
+          "target": "Na minha leitura, o tom melancólico reflete a solidão do protagonista.",
+          "es": "En mi lectura, el tono melancólico refleja la soledad del protagonista."
+        },
+        {
+          "target": "O texto afirma, logo no início, que 'tudo começou numa tarde de verão'.",
+          "es": "El texto afirma, ya al principio, que 'todo empezó una tarde de verano'."
+        },
+        {
+          "target": "Nota-se o uso recorrente da anáfora para reforçar a angústia da personagem.",
+          "es": "Se nota el uso recurrente de la anáfora para reforzar la angustia del personaje."
+        },
+        {
+          "target": "Isso sugere que o autor pretende provocar reflexão no leitor sobre o tempo.",
+          "es": "Esto sugiere que el autor pretende provocar reflexión en el lector sobre el tiempo."
+        },
+        {
+          "target": "Em suma, o conto combina humor e crítica social de maneira sutil.",
+          "es": "En suma, el cuento combina humor y crítica social de manera sutil."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu penso que o texto fala sobre...",
+          "right": "Depreende-se do texto que... / O texto aborda...",
+          "why": "En un análisis literario formal se evita el 'eu penso' muy directo y se prefieren construcciones más impersonales y académicas."
+        },
+        {
+          "wrong": "O autor quer dizer que... (repetido en todo el análisis)",
+          "right": "Variar con 'sugere', 'aponta', 'evidencia', 'denota'.",
+          "why": "Repetir siempre el mismo verbo empobrece el análisis; el registro culto pide variedad léxica."
+        },
+        {
+          "wrong": "Como se lê no trecho: o personagem está triste",
+          "right": "Como se lê no trecho, 'o personagem está triste'.",
+          "why": "Al citar textualmente hay que usar comillas para marcar que son palabras exactas del texto y no una paráfrasis."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "em suma",
+          "es": "en suma / en resumen",
+          "example": "Em suma, o texto critica a superficialidade das relações modernas.",
+          "exampleEs": "En suma, el texto critica la superficialidad de las relaciones modernas."
+        },
+        {
+          "target": "no que diz respeito a",
+          "es": "en lo que respecta a",
+          "example": "No que diz respeito a esse aspecto, o autor opta por frases curtas.",
+          "exampleEs": "En lo que respecta a ese aspecto, el autor opta por frases cortas."
+        },
+        {
+          "target": "à primeira vista",
+          "es": "a primera vista",
+          "example": "À primeira vista, o poema parece simples, mas esconde camadas de sentido.",
+          "exampleEs": "A primera vista, el poema parece simple, pero esconde capas de sentido."
+        },
+        {
+          "target": "lançar luz sobre",
+          "es": "echar luz sobre",
+          "example": "Esse tipo de análise ajuda a lançar luz sobre aspectos pouco discutidos da obra.",
+          "exampleEs": "Este tipo de análisis ayuda a echar luz sobre aspectos poco discutidos de la obra."
+        }
+      ]
+    }
+  ]
+}

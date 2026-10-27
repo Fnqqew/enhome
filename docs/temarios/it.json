@@ -1,0 +1,888 @@
+{
+  "language": "it",
+  "existing": [
+    "it-a1-essere-avere",
+    "it-a1-articoli-genere",
+    "it-a1-presente",
+    "it-a1-preposizioni-possessivi",
+    "it-a1-irregolari-stare",
+    "it-a2-passato-prossimo",
+    "it-a2-imperfetto",
+    "it-a2-pronomi",
+    "it-a2-riflessivi-comparativi",
+    "it-a2-futuro-condizionale",
+    "it-b1-congiuntivo-presente",
+    "it-b1-trapassato-remoto",
+    "it-b1-periodo-ipotetico",
+    "it-b1-passiva-si",
+    "it-b1-discorso-indiretto",
+    "it-b2-congiuntivo-imperfetto",
+    "it-b2-ipotetico-irreale",
+    "it-b2-pronomi-combinati",
+    "it-b2-forme-implicite",
+    "it-b2-registro-formale",
+    "it-c1-concordanza-tempi",
+    "it-c1-passato-remoto",
+    "it-c1-espressioni-idiomatiche",
+    "it-c1-connettivi",
+    "it-c1-registri-varieta"
+  ],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "it-a1-essere-avere",
+          "title": "Ser, estar y tener",
+          "targetTitle": "Essere e avere",
+          "description": "Vas a aprender a usar essere y avere junto con los pronombres personales y los saludos básicos para presentarte en italiano. Esto te va a servir para tener tu primera conversación simple y decir quién sos y qué tenés.",
+          "subtopics": ["Pronombres y saludos", "El verbo essere", "El verbo avere", "C'è y ci sono", "Presentarte"],
+          "prerequisites": []
+        },
+        {
+          "id": "it-a1-articoli-genere",
+          "title": "Artículos, género y plural",
+          "targetTitle": "Articoli, genere e plurale",
+          "description": "Vas a aprender los artículos definidos e indefinidos y cómo formar el género y el plural de sustantivos y adjetivos. Te va a servir para armar frases simples y describir cosas y lugares con precisión.",
+          "subtopics": [
+            "El artículo definido",
+            "El artículo indefinido",
+            "Género y plural de los sustantivos",
+            "Los adjetivos",
+            "Describir un lugar"
+          ],
+          "prerequisites": ["it-a1-essere-avere"]
+        },
+        {
+          "id": "it-a1-numeri-tempo",
+          "title": "Números, hora y calendario",
+          "targetTitle": "I numeri, l'ora e il calendario",
+          "description": "Vas a aprender a contar, preguntar y decir la hora, y a usar los días, meses y estaciones del año. Esto te va a servir para organizar tu rutina y entender fechas y horarios en italiano.",
+          "subtopics": [
+            "Los números cardinales",
+            "Los números ordinales y la edad",
+            "Qué hora es",
+            "Los días de la semana y los meses",
+            "Las estaciones y el clima"
+          ],
+          "prerequisites": ["it-a1-essere-avere", "it-a1-articoli-genere"]
+        },
+        {
+          "id": "it-a1-interrogativi",
+          "title": "Preguntar y responder",
+          "targetTitle": "Fare domande",
+          "description": "Vas a aprender las palabras interrogativas y cómo armar preguntas simples en italiano para pedir información. Te va a servir para presentarte, preguntarle datos a otra persona y entender lo que te preguntan.",
+          "subtopics": [
+            "Chi, che cosa y quale",
+            "Dove, quando y come",
+            "Perché y quanto",
+            "Preguntas con y sin inversión",
+            "Entrevistar a un compañero"
+          ],
+          "prerequisites": ["it-a1-essere-avere", "it-a1-numeri-tempo"]
+        },
+        {
+          "id": "it-a1-presente",
+          "title": "Presente regular",
+          "targetTitle": "Il presente regolare",
+          "description": "Vas a aprender a conjugar los verbos regulares en -are, -ere e -ire en presente, y a hacer preguntas y negaciones. Esto te va a servir para hablar de tu rutina diaria y tus horarios.",
+          "subtopics": ["Verbos en -are", "Verbos en -ere e -ire", "Negación y preguntas", "Rutina, horarios y frecuencia", "Mi día"],
+          "prerequisites": ["it-a1-articoli-genere", "it-a1-interrogativi"]
+        },
+        {
+          "id": "it-a1-preposizioni-possessivi",
+          "title": "Preposiciones y posesivos",
+          "targetTitle": "Preposizioni e possessivi",
+          "description": "Vas a aprender las preposiciones simples y articuladas, y los adjetivos posesivos para hablar de dónde está algo y de quién es. Te va a servir para describir tu casa, tu familia y tus pertenencias.",
+          "subtopics": [
+            "Preposiciones simples",
+            "di, a y da + artículo",
+            "in y su + artículo: dónde está algo",
+            "Los posesivos",
+            "Mi casa y mi familia"
+          ],
+          "prerequisites": ["it-a1-articoli-genere", "it-a1-presente"]
+        },
+        {
+          "id": "it-a1-piacere-dimostrativi",
+          "title": "Gustos y demostrativos",
+          "targetTitle": "Piacere e i dimostrativi",
+          "description": "Vas a aprender a usar el verbo piacere con los pronombres indirectos para hablar de gustos, y los demostrativos questo y quello. Esto te va a servir para expresar preferencias y señalar objetos cercanos o lejanos.",
+          "subtopics": [
+            "El verbo piacere",
+            "Piacere con pronombres indirectos",
+            "Questo y quello",
+            "Concordancia de los demostrativos",
+            "Hablar de tus gustos"
+          ],
+          "prerequisites": ["it-a1-presente", "it-a1-preposizioni-possessivi"]
+        },
+        {
+          "id": "it-a1-irregolari-stare",
+          "title": "Verbos irregulares y stare + gerundio",
+          "targetTitle": "Verbi irregolari e stare + gerundio",
+          "description": "Vas a aprender verbos irregulares frecuentes como andare, fare, venire, volere, potere y dovere, y la forma stare + gerundio. Te va a servir para hablar de acciones en curso, planes y pedir cosas en un bar.",
+          "subtopics": ["Andare, fare y venire", "Volere, potere y dovere", "Stare + gerundio", "Stare per y los planes", "Pedir en un bar"],
+          "prerequisites": ["it-a1-presente", "it-a1-piacere-dimostrativi"]
+        },
+        {
+          "id": "it-a1-vocabolario-vita",
+          "title": "Comida, ropa y compras",
+          "targetTitle": "Cibo, vestiti e shopping",
+          "description": "Vas a ampliar tu vocabulario con comidas, bebidas, ropa y objetos de uso diario para manejarte en situaciones cotidianas. Esto te va a servir para pedir en un restaurante, comprar ropa y entender precios y cantidades.",
+          "subtopics": [
+            "Comidas y bebidas",
+            "En el restaurante",
+            "La ropa y los colores",
+            "En la tienda: cantidades y precios",
+            "Simular una compra"
+          ],
+          "prerequisites": ["it-a1-irregolari-stare"]
+        },
+        {
+          "id": "it-a1-imperativo-direzioni",
+          "title": "Indicaciones y el imperativo informal",
+          "targetTitle": "Indicazioni e l'imperativo informale",
+          "description": "Vas a aprender el imperativo informal y el vocabulario de la ciudad para dar y entender indicaciones en la calle. Esto te va a servir para orientarte en un lugar nuevo y ayudar a otros a llegar a destino.",
+          "subtopics": [
+            "El imperativo con tu",
+            "El imperativo negativo",
+            "Preposiciones de lugar y movimiento",
+            "Vocabulario de la ciudad",
+            "Dar indicaciones para llegar a un lugar"
+          ],
+          "prerequisites": ["it-a1-preposizioni-possessivi", "it-a1-vocabolario-vita"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "it-a2-passato-prossimo",
+          "title": "Pasado compuesto",
+          "targetTitle": "Il passato prossimo",
+          "description": "Vas a aprender a formar el passato prossimo con avere y essere, incluyendo la concordancia y los participios irregulares más comunes. Te va a servir para contar cosas que hiciste, como tu fin de semana.",
+          "subtopics": [
+            "Con avere: participios regulares",
+            "Con essere: la concordancia",
+            "Participios irregulares",
+            "Marcadores de pasado",
+            "Contar un fin de semana"
+          ],
+          "prerequisites": ["it-a1-irregolari-stare"]
+        },
+        {
+          "id": "it-a2-imperfetto",
+          "title": "Imperfecto",
+          "targetTitle": "L'imperfetto",
+          "description": "Vas a aprender a formar el imperfecto, incluyendo los verbos irregulares, para describir hábitos pasados y acciones en curso. Te va a servir para combinarlo con el passato prossimo y contar recuerdos de infancia.",
+          "subtopics": [
+            "Formación",
+            "Irregulares",
+            "Descripciones, hábitos y acciones en curso",
+            "Imperfetto y passato prossimo juntos",
+            "Recuerdos de infancia"
+          ],
+          "prerequisites": ["it-a2-passato-prossimo"]
+        },
+        {
+          "id": "it-a2-modali-passato",
+          "title": "Verbos modales en pasado y sapere/conoscere",
+          "targetTitle": "I modali al passato e sapere/conoscere",
+          "description": "Vas a aprender a usar dovere, potere y volere en imperfecto y passato prossimo, y la diferencia entre sapere y conoscere. Esto te va a servir para justificar decisiones pasadas y hablar de lo que sabías o conocías.",
+          "subtopics": [
+            "Dovere, potere y volere en imperfecto",
+            "Dovere, potere y volere en passato prossimo",
+            "Sapere y conoscere",
+            "La doble negación",
+            "Justificar decisiones pasadas"
+          ],
+          "prerequisites": ["it-a2-passato-prossimo", "it-a2-imperfetto"]
+        },
+        {
+          "id": "it-a2-vocabolario-corpo-salute",
+          "title": "El cuerpo, la salud y el médico",
+          "targetTitle": "Il corpo, la salute e il medico",
+          "description": "Vas a aprender el vocabulario del cuerpo, los síntomas y las situaciones en la farmacia y el consultorio médico. Te va a servir para explicar un malestar y entender las indicaciones de un médico.",
+          "subtopics": ["Partes del cuerpo", "Síntomas y malestares", "En la farmacia", "En el consultorio médico", "Contar un problema de salud"],
+          "prerequisites": ["it-a2-modali-passato"]
+        },
+        {
+          "id": "it-a2-pronomi",
+          "title": "Pronombres, ne y ci",
+          "targetTitle": "I pronomi, ne e ci",
+          "description": "Vas a aprender los pronombres directos e indirectos, su posición y concordancia con el participio, y las partículas ne y ci. Te va a servir para no repetir palabras y hablar con más fluidez, por ejemplo al ir de compras.",
+          "subtopics": ["Pronombres directos", "Pronombres indirectos", "Posición y concordancia del participio", "Ne y ci", "De compras"],
+          "prerequisites": ["it-a2-passato-prossimo", "it-a2-vocabolario-corpo-salute"]
+        },
+        {
+          "id": "it-a2-pronomi-relativi-indefiniti",
+          "title": "Pronombres relativos e indefinidos",
+          "targetTitle": "Pronomi relativi e indefiniti",
+          "description": "Vas a aprender a usar che, cui y dove como relativos, y los indefinidos qualcuno, qualcosa, qualche y ogni. Esto te va a servir para describir personas y cosas con más detalle y precisión.",
+          "subtopics": [
+            "Che, cui y chi",
+            "Dove como relativo",
+            "Adjetivos indefinidos: qualche, ogni, alcuni",
+            "Pronombres indefinidos: qualcuno, qualcosa, niente",
+            "Describir personas y cosas con detalle"
+          ],
+          "prerequisites": ["it-a2-pronomi"]
+        },
+        {
+          "id": "it-a2-riflessivi-comparativi",
+          "title": "Reflexivos y comparativos",
+          "targetTitle": "Riflessivi e comparativi",
+          "description": "Vas a aprender los verbos reflexivos y recíprocos en presente y pasado, y las estructuras para comparar con más, menos e igualdad. Te va a servir para hablar de tu rutina personal y comparar ciudades o cosas.",
+          "subtopics": [
+            "Verbos reflexivos",
+            "Reflexivos en pasado y recíprocos",
+            "Più, meno y tanto quanto",
+            "Migliore, meglio y -issimo",
+            "Comparar ciudades"
+          ],
+          "prerequisites": ["it-a2-pronomi-relativi-indefiniti"]
+        },
+        {
+          "id": "it-a2-avverbi-quantita",
+          "title": "Adverbios y cantidad",
+          "targetTitle": "Avverbi e quantità",
+          "description": "Vas a aprender los adverbios de modo, tiempo, frecuencia y cantidad, incluyendo molto, poco, troppo y abbastanza. Te va a servir para describir con más precisión tus hábitos y la cantidad de las cosas.",
+          "subtopics": [
+            "Adverbios de modo",
+            "Adverbios de tiempo y frecuencia",
+            "Adverbios de cantidad",
+            "Molto, poco, troppo y abbastanza",
+            "Hablar de hábitos y cantidades"
+          ],
+          "prerequisites": ["it-a2-riflessivi-comparativi"]
+        },
+        {
+          "id": "it-a2-futuro-condizionale",
+          "title": "Futuro, condicional e imperativo",
+          "targetTitle": "Futuro, condizionale e imperativo",
+          "description": "Vas a aprender el futuro simple, el condicional y el imperativo con tu y con Lei, incluyendo las formas irregulares. Te va a servir para hacer planes, dar consejos y hablar con cortesía.",
+          "subtopics": [
+            "Futuro simple",
+            "Futuro irregular y de probabilidad",
+            "Condicional",
+            "Imperativo con tu y con Lei",
+            "Consejos para un viaje"
+          ],
+          "prerequisites": ["it-a2-avverbi-quantita"]
+        },
+        {
+          "id": "it-a2-viaggi-lavoro",
+          "title": "Viajes, trabajo y la carta informal",
+          "targetTitle": "Viaggi, lavoro e la lettera informale",
+          "description": "Vas a aprender vocabulario de viajes, alojamiento y profesiones, y la estructura de un mail informal en italiano. Te va a servir para organizar un viaje, hablar de tu trabajo y escribirle a un amigo.",
+          "subtopics": [
+            "Vocabulario de viajes y alojamiento",
+            "En el aeropuerto y la estación",
+            "Profesiones y el lugar de trabajo",
+            "La estructura de un mail informal",
+            "Escribir un mail contando un viaje"
+          ],
+          "prerequisites": ["it-a2-futuro-condizionale"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "it-b1-congiuntivo-presente",
+          "title": "Subjuntivo presente",
+          "targetTitle": "Il congiuntivo presente",
+          "description": "Vas a aprender a formar el congiuntivo presente, incluyendo los verbos irregulares, para expresar opinión, deseo y emoción. Te va a servir para dar tu punto de vista de forma más natural en italiano.",
+          "subtopics": ["Formación", "Irregulares", "Opinión, deseo y emoción", "Expresiones impersonales y conjunciones", "Dar tu opinión"],
+          "prerequisites": ["it-a2-futuro-condizionale"]
+        },
+        {
+          "id": "it-b1-connettivi-opinione",
+          "title": "Conectores para opinar y argumentar",
+          "targetTitle": "Connettivi per opinare e argomentare",
+          "description": "Vas a aprender conectores como secondo me, comunque, perciò y infatti para organizar tu opinión y tus argumentos. Te va a servir para participar en una conversación o debate de forma más natural.",
+          "subtopics": [
+            "Dar tu opinión: secondo me, per me",
+            "Agregar ideas: inoltre, anche",
+            "Contrastar: però, comunque, invece",
+            "Concluir: quindi, perciò, infatti",
+            "Participar en un debate"
+          ],
+          "prerequisites": ["it-b1-congiuntivo-presente"]
+        },
+        {
+          "id": "it-b1-pronomi-relativi-avanzati",
+          "title": "Pronombres relativos avanzados",
+          "targetTitle": "I pronomi relativi avanzati",
+          "description": "Vas a aprender a usar cui con preposiciones y il quale como alternativa a che y cui. Te va a servir para armar oraciones más elaboradas y evitar ambigüedades al describir personas y cosas.",
+          "subtopics": [
+            "Cui con preposiciones",
+            "Il quale, la quale y sus formas",
+            "Cui posesivo",
+            "Elegir entre che, cui e il quale",
+            "Redactar definiciones"
+          ],
+          "prerequisites": ["it-a2-pronomi-relativi-indefiniti"]
+        },
+        {
+          "id": "it-b1-futuro-anteriore",
+          "title": "Futuro anterior",
+          "targetTitle": "Il futuro anteriore",
+          "description": "Vas a aprender a formar el futuro anteriore para hablar de acciones que van a terminar antes que otra en el futuro. Te va a servir para planificar y expresar condiciones temporales futuras.",
+          "subtopics": [
+            "Formación con avere y essere",
+            "Usos: acción anterior a otra futura",
+            "Futuro anteriore después de quando, dopo che, appena",
+            "Diferencia con el futuro simple",
+            "Planificar un proyecto"
+          ],
+          "prerequisites": ["it-a2-futuro-condizionale"]
+        },
+        {
+          "id": "it-b1-condizionale-passato",
+          "title": "Condicional compuesto y arrepentimientos",
+          "targetTitle": "Il condizionale passato",
+          "description": "Vas a aprender a formar el condicional compuesto para hablar de cosas que hubieras hecho o de información no confirmada en el pasado. Te va a servir para expresar arrepentimiento, dar consejos pasados y reportar noticias.",
+          "subtopics": [
+            "Formación del condicional passato",
+            "Usos: arrepentimiento y consejo pasado",
+            "Usos: rumor o información no confirmada",
+            "Condizionale passato en el discurso indirecto",
+            "Hablar de decisiones que no tomaste"
+          ],
+          "prerequisites": ["it-b1-futuro-anteriore"]
+        },
+        {
+          "id": "it-b1-trapassato-remoto",
+          "title": "Pluscuamperfecto y pasado remoto",
+          "targetTitle": "Il trapassato e il passato remoto",
+          "description": "Vas a aprender el trapassato prossimo para ordenar hechos pasados y el passato remoto para narrar historias y hechos históricos. Te va a servir para contar relatos con más precisión temporal.",
+          "subtopics": [
+            "El trapassato prossimo",
+            "Ordenar los hechos",
+            "El passato remoto regular",
+            "Irregulares del passato remoto",
+            "Contar una historia"
+          ],
+          "prerequisites": ["it-a2-passato-prossimo", "it-a2-imperfetto"]
+        },
+        {
+          "id": "it-b1-gerundio-causale",
+          "title": "Gerundio, causa y tiempo",
+          "targetTitle": "Il gerundio, causa e tempo",
+          "description": "Vas a aprender a usar el gerundio simple para expresar causa, modo y tiempo sin usar una conjunción. Esto te va a servir para redactar oraciones más fluidas y naturales en italiano.",
+          "subtopics": [
+            "Formación del gerundio",
+            "El gerundio de causa",
+            "El gerundio de modo",
+            "El gerundio de tiempo",
+            "Transformar oraciones con gerundio"
+          ],
+          "prerequisites": ["it-a2-imperfetto"]
+        },
+        {
+          "id": "it-b1-testo-narrativo-descrittivo",
+          "title": "Textos narrativos y descriptivos",
+          "targetTitle": "Il testo narrativo e descrittivo",
+          "description": "Vas a aprender la estructura de un texto narrativo y uno descriptivo, combinando los tiempos del pasado que ya conocés. Te va a servir para escribir relatos, anécdotas y descripciones de forma organizada.",
+          "subtopics": [
+            "La estructura de un relato",
+            "Conectores de secuencia temporal",
+            "Describir personas y lugares",
+            "Combinar passato prossimo, imperfetto y trapassato",
+            "Escribir una anécdota"
+          ],
+          "prerequisites": ["it-b1-trapassato-remoto", "it-b1-gerundio-causale"]
+        },
+        {
+          "id": "it-b1-discorso-indiretto",
+          "title": "Discurso indirecto",
+          "targetTitle": "Il discorso indiretto",
+          "description": "Vas a aprender a reportar lo que dijo otra persona cambiando tiempos, pronombres y referencias de tiempo y lugar. Te va a servir para contar una conversación o una noticia que escuchaste.",
+          "subtopics": [
+            "Con el verbo en presente",
+            "Con el verbo en pasado: los tiempos",
+            "Pronombres, tiempo y lugar",
+            "Preguntas y órdenes",
+            "Contar una conversación"
+          ],
+          "prerequisites": ["it-b1-condizionale-passato"]
+        },
+        {
+          "id": "it-b1-periodo-ipotetico",
+          "title": "Hipótesis reales y posibles",
+          "targetTitle": "Il periodo ipotetico (reale e possibile)",
+          "description": "Vas a aprender a construir hipótesis reales con el indicativo y posibles con el congiuntivo imperfetto. Te va a servir para hablar de condiciones, sueños y deseos de forma natural.",
+          "subtopics": [
+            "Hipótesis reales (primer tipo)",
+            "El congiuntivo imperfetto",
+            "Hipótesis posibles (segundo tipo)",
+            "Elegir entre el primer y el segundo tipo",
+            "Sueños y deseos"
+          ],
+          "prerequisites": ["it-b1-congiuntivo-presente"]
+        },
+        {
+          "id": "it-b1-passiva-si",
+          "title": "Pasiva y si impersonal",
+          "targetTitle": "Il passivo e il si impersonale",
+          "description": "Vas a aprender a formar la voz pasiva con essere, venire y andare, y el si impersonal y pasivante. Te va a servir para redactar instrucciones, recetas y textos informativos.",
+          "subtopics": [
+            "La pasiva con essere",
+            "Venire y andare + participio",
+            "El si impersonal",
+            "El si pasivante y los tiempos compuestos",
+            "Una receta"
+          ],
+          "prerequisites": ["it-b1-congiuntivo-presente"]
+        },
+        {
+          "id": "it-b1-vocabolario-lavoro-ambiente",
+          "title": "Trabajo, currículum y medio ambiente",
+          "targetTitle": "Lavoro, curriculum e ambiente",
+          "description": "Vas a ampliar tu vocabulario sobre el mundo laboral, el currículum y los temas ambientales que aparecen en textos y conversaciones de nivel B1. Te va a servir para hablar de tu experiencia laboral y opinar sobre temas de actualidad.",
+          "subtopics": [
+            "Profesiones y el currículum",
+            "La entrevista de trabajo",
+            "El medio ambiente y el reciclaje",
+            "Problemas y soluciones ambientales",
+            "Simular una entrevista de trabajo"
+          ],
+          "prerequisites": ["it-b1-connettivi-opinione"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "it-b2-congiuntivo-imperfetto",
+          "title": "Subjuntivo imperfecto y pluscuamperfecto",
+          "targetTitle": "Il congiuntivo imperfetto e trapassato",
+          "description": "Vas a aprender el congiuntivo passato, imperfetto y trapassato para expresar opiniones y emociones sobre hechos pasados. Te va a servir para hablar de expectativas, sorpresas y hechos hipotéticos en el pasado.",
+          "subtopics": [
+            "Congiuntivo passato",
+            "Congiuntivo imperfetto con verbos en pasado",
+            "Congiuntivo trapassato",
+            "Magari y come se",
+            "Expectativas y sorpresas"
+          ],
+          "prerequisites": ["it-b1-congiuntivo-presente"]
+        },
+        {
+          "id": "it-b2-ipotetico-irreale",
+          "title": "Hipótesis irreales",
+          "targetTitle": "Il periodo ipotetico dell'irrealtà",
+          "description": "Vas a aprender el tercer tipo de hipótesis para hablar de condiciones irreales en el pasado, con el condicional compuesto y las formas mixtas. Te va a servir para expresar arrepentimientos y situaciones alternativas.",
+          "subtopics": [
+            "Condicional compuesto",
+            "El tercer tipo: lo que no pasó",
+            "Hipótesis mixtas",
+            "La forma coloquial y otras formas",
+            "Arrepentimientos y alternativas"
+          ],
+          "prerequisites": ["it-b1-periodo-ipotetico", "it-b2-congiuntivo-imperfetto"]
+        },
+        {
+          "id": "it-b2-dubbio-certezza",
+          "title": "Duda, certeza y opinión: congiuntivo o indicativo",
+          "targetTitle": "Dubbio, certezza e opinione: congiuntivo o indicativo",
+          "description": "Vas a aprender cuándo usar el congiuntivo y cuándo el indicativo después de verbos de opinión, duda y certeza. Te va a servir para matizar tus afirmaciones y sonar más preciso en italiano.",
+          "subtopics": [
+            "Verbos que piden indicativo",
+            "Verbos que piden congiuntivo",
+            "Verbos que aceptan los dos",
+            "Penso che vs sono sicuro che",
+            "Matizar una afirmación"
+          ],
+          "prerequisites": ["it-b2-congiuntivo-imperfetto"]
+        },
+        {
+          "id": "it-b2-pronomi-combinati",
+          "title": "Pronombres combinados",
+          "targetTitle": "I pronomi combinati",
+          "description": "Vas a aprender a combinar pronombres directos e indirectos como me lo, te lo y glielo, y verbos pronominales como cavarsela. Te va a servir para hablar con más fluidez al pedir y hacer favores.",
+          "subtopics": [
+            "Me lo, te lo, ce lo",
+            "Glielo, gliela, gliene",
+            "Posición y concordancia",
+            "Ce l'ho, me ne vado y otros verbos pronominales",
+            "Pedir y hacer favores"
+          ],
+          "prerequisites": ["it-a2-pronomi"]
+        },
+        {
+          "id": "it-b2-verbi-preposizione-collocazioni",
+          "title": "Verbos con preposición y colocaciones",
+          "targetTitle": "Verbi con preposizione e collocazioni",
+          "description": "Vas a aprender verbos frecuentes que se combinan con preposiciones fijas y colocaciones típicas del italiano. Te va a servir para hablar con más naturalidad y evitar traducir literalmente del español.",
+          "subtopics": [
+            "Verbos + a + infinitivo",
+            "Verbos + di + infinitivo",
+            "Verbos + preposición + sustantivo",
+            "Colocaciones frecuentes",
+            "Corregir errores comunes de hispanohablantes"
+          ],
+          "prerequisites": ["it-b2-dubbio-certezza"]
+        },
+        {
+          "id": "it-b2-forme-implicite",
+          "title": "Gerundio, participio e infinitivo",
+          "targetTitle": "Le forme implicite: gerundio, participio e infinito",
+          "description": "Vas a aprender a usar el gerundio compuesto, el participio absoluto y el infinitivo sustantivado para escribir de forma más fluida. Te va a servir para reescribir textos evitando repetir conjunciones.",
+          "subtopics": [
+            "El gerundio en lugar de una oración",
+            "El gerundio compuesto",
+            "El participio absoluto",
+            "El infinitivo: presente, pasado y sustantivo",
+            "Reescribir un texto"
+          ],
+          "prerequisites": ["it-b1-gerundio-causale", "it-b2-pronomi-combinati"]
+        },
+        {
+          "id": "it-b2-nominalizzazione",
+          "title": "Nominalización y estilo nominal",
+          "targetTitle": "La nominalizzazione",
+          "description": "Vas a aprender a transformar verbos y oraciones en sustantivos para lograr un estilo más formal y compacto. Te va a servir para escribir textos de nivel más alto, como noticias o informes.",
+          "subtopics": [
+            "De verbo a sustantivo",
+            "Sufijos para nominalizar",
+            "Nominalización en los títulos de noticias",
+            "Estilo nominal vs estilo verbal",
+            "Reescribir una noticia"
+          ],
+          "prerequisites": ["it-b2-forme-implicite"]
+        },
+        {
+          "id": "it-b2-registro-formale",
+          "title": "Registro formal",
+          "targetTitle": "Il registro formale",
+          "description": "Vas a aprender a usar el Lei y las fórmulas típicas de un mail formal para pedir, agradecer y disculparte. Te va a servir para comunicarte correctamente en contextos laborales y administrativos.",
+          "subtopics": [
+            "El Lei de punta a punta",
+            "La estructura de un mail formal",
+            "Fórmulas para pedir, agradecer y disculparte",
+            "Conectores del registro formal",
+            "Escribir un mail formal"
+          ],
+          "prerequisites": ["it-b2-nominalizzazione"]
+        },
+        {
+          "id": "it-b2-lettera-reclamo",
+          "title": "La carta de reclamo y la queja formal",
+          "targetTitle": "La lettera di reclamo",
+          "description": "Vas a aprender las fórmulas y la estructura para escribir una carta de reclamo formal en italiano. Te va a servir para quejarte de un servicio o producto de manera educada y efectiva.",
+          "subtopics": [
+            "Fórmulas para quejarse formalmente",
+            "Describir el problema con precisión",
+            "Pedir una solución o compensación",
+            "Conectores de reclamo",
+            "Escribir una carta de reclamo"
+          ],
+          "prerequisites": ["it-b2-registro-formale"]
+        },
+        {
+          "id": "it-b2-passivo-avanzato",
+          "title": "Pasiva avanzada y construcciones impersonales",
+          "targetTitle": "Il passivo avanzato e le costruzioni impersonali",
+          "description": "Vas a aprender a combinar la pasiva con los verbos modales y otras construcciones impersonales más complejas, como el causativo fare. Te va a servir para entender y redactar textos periodísticos y académicos.",
+          "subtopics": [
+            "Pasiva con verbos modales",
+            "Il si impersonale con verbos reflexivos",
+            "Fare + infinitivo causativo",
+            "Lasciare + infinitivo",
+            "Transformar un texto informativo"
+          ],
+          "prerequisites": ["it-b1-passiva-si", "it-b2-forme-implicite"]
+        },
+        {
+          "id": "it-b2-vocabolario-attualita",
+          "title": "Economía, sociedad y actualidad",
+          "targetTitle": "Economia, società e attualità",
+          "description": "Vas a ampliar tu vocabulario sobre economía, política, medios de comunicación y tecnología para seguir noticias y debates de actualidad. Te va a servir para participar en conversaciones más complejas sobre temas sociales.",
+          "subtopics": [
+            "Economía y trabajo",
+            "Política y sociedad",
+            "Medios de comunicación",
+            "Tecnología y redes sociales",
+            "Debatir un tema de actualidad"
+          ],
+          "prerequisites": ["it-b1-vocabolario-lavoro-ambiente"]
+        },
+        {
+          "id": "it-b2-testo-argomentativo",
+          "title": "El texto argumentativo",
+          "targetTitle": "Il testo argomentativo",
+          "description": "Vas a aprender la estructura de un texto argumentativo: tesis, argumentos y conclusión, con los conectores adecuados. Te va a servir para escribir ensayos de opinión y defender un punto de vista por escrito.",
+          "subtopics": [
+            "La tesis y los argumentos",
+            "Conectores de causa y consecuencia",
+            "Conectores de contraste y concesión",
+            "La conclusión",
+            "Escribir un texto de opinión"
+          ],
+          "prerequisites": ["it-b2-vocabolario-attualita", "it-b1-connettivi-opinione"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "it-c1-concordanza-tempi",
+          "title": "Concordancia de los tiempos",
+          "targetTitle": "La concordanza dei tempi",
+          "description": "Vas a aprender las reglas de concordancia de los tiempos verbales con el indicativo y el congiuntivo, incluyendo el futuro en el pasado. Te va a servir para revisar y corregir tus propios textos con más precisión.",
+          "subtopics": [
+            "Concordancia con el indicativo",
+            "Concordancia con el congiuntivo",
+            "El futuro en el pasado",
+            "Después del condicional y casos especiales",
+            "Revisar un texto"
+          ],
+          "prerequisites": ["it-b2-ipotetico-irreale"]
+        },
+        {
+          "id": "it-c1-condizionale-dubbio-cortesia",
+          "title": "Usos avanzados del condicional: cortesía, duda y rumor",
+          "targetTitle": "Usi avanzati del condizionale",
+          "description": "Vas a aprender usos avanzados del condicional para la cortesía extrema, la duda periodística y el rumor no confirmado. Te va a servir para entender noticias e interactuar con un registro muy formal.",
+          "subtopics": [
+            "Condicional de cortesía",
+            "Condicional en las noticias: rumor no confirmado",
+            "Condicional para suavizar una crítica",
+            "Condicional y el discurso indirecto avanzado",
+            "Reescribir una noticia con condicional"
+          ],
+          "prerequisites": ["it-b1-discorso-indiretto", "it-b2-ipotetico-irreale"]
+        },
+        {
+          "id": "it-c1-passato-remoto",
+          "title": "El passato remoto en la narración",
+          "targetTitle": "Il passato remoto nella narrazione",
+          "description": "Vas a aprender todas las formas del passato remoto y del trapassato remoto, y cuándo se usan según la zona de Italia. Te va a servir para leer y escribir biografías y relatos literarios.",
+          "subtopics": ["Todas las formas", "El trapassato remoto", "Remoto o prossimo", "Norte, Toscana y sur", "Escribir una biografía"],
+          "prerequisites": ["it-b1-trapassato-remoto"]
+        },
+        {
+          "id": "it-c1-connettivi",
+          "title": "Conectores avanzados",
+          "targetTitle": "I connettivi avanzati",
+          "description": "Vas a aprender conectores avanzados de causa, consecuencia, concesión y finalidad, y recursos de cohesión como la nominalización. Te va a servir para escribir textos argumentativos bien organizados.",
+          "subtopics": [
+            "Causa y consecuencia",
+            "Concesión y contraste",
+            "Finalidad y condición",
+            "Cohesión: referencias, sinónimos y nominalizaciones",
+            "Texto argumentativo"
+          ],
+          "prerequisites": ["it-b2-testo-argomentativo"]
+        },
+        {
+          "id": "it-c1-sintassi-marcata",
+          "title": "Sintaxis marcada: dislocaciones y frases hendidas",
+          "targetTitle": "La sintassi marcata: dislocazioni e frasi scisse",
+          "description": "Vas a aprender las dislocaciones a la izquierda y derecha, y las frases hendidas con è... che para dar énfasis en italiano. Te va a servir para sonar más natural al hablar y para entender textos complejos.",
+          "subtopics": [
+            "Dislocación a la izquierda",
+            "Dislocación a la derecha",
+            "Frases hendidas: è... che",
+            "C'è chi y otras estructuras enfáticas",
+            "Reescribir oraciones con énfasis"
+          ],
+          "prerequisites": ["it-c1-connettivi"]
+        },
+        {
+          "id": "it-c1-espressioni-idiomatiche",
+          "title": "Expresiones idiomáticas",
+          "targetTitle": "Le espressioni idiomatiche",
+          "description": "Vas a aprender expresiones idiomáticas con partes del cuerpo, comida, animales y verbos pronominales típicos del italiano. Te va a servir para sonar más natural y entender el habla coloquial.",
+          "subtopics": [
+            "Expresiones con el cuerpo",
+            "Comida y animales",
+            "Verbos pronominales idiomáticos",
+            "Refranes",
+            "Usar expresiones en un texto"
+          ],
+          "prerequisites": ["it-b2-pronomi-combinati"]
+        },
+        {
+          "id": "it-c1-retorica-figure",
+          "title": "Figuras retóricas e ironía",
+          "targetTitle": "Le figure retoriche e l'ironia",
+          "description": "Vas a aprender a reconocer y usar metáforas, ironía y otras figuras retóricas presentes en textos literarios y en la conversación cotidiana. Te va a servir para entender matices y humor en italiano.",
+          "subtopics": [
+            "La metáfora y la comparación",
+            "La ironía y el sarcasmo",
+            "La hipérbole y el eufemismo",
+            "Figuras en la publicidad",
+            "Analizar un texto literario breve"
+          ],
+          "prerequisites": ["it-c1-espressioni-idiomatiche"]
+        },
+        {
+          "id": "it-c1-linguaggio-media",
+          "title": "El lenguaje de los medios y el periodismo",
+          "targetTitle": "Il linguaggio dei media e del giornalismo",
+          "description": "Vas a aprender las características del lenguaje periodístico italiano: titulares, estilo nominal y vocabulario de actualidad. Te va a servir para leer noticias y escribir un artículo breve.",
+          "subtopics": [
+            "El titular periodístico",
+            "El lead y la estructura de una noticia",
+            "Vocabulario de actualidad y política",
+            "Estilo nominal en la prensa",
+            "Escribir un artículo breve"
+          ],
+          "prerequisites": ["it-b2-nominalizzazione", "it-c1-connettivi"]
+        },
+        {
+          "id": "it-c1-scrittura-accademica",
+          "title": "Escritura académica: el ensayo breve",
+          "targetTitle": "La scrittura accademica: il saggio breve",
+          "description": "Vas a aprender la estructura de un ensayo breve con introducción, desarrollo y conclusión, y el vocabulario académico correspondiente. Te va a servir para escribir textos argumentativos de nivel universitario.",
+          "subtopics": [
+            "La introducción y la tesis",
+            "El desarrollo: argumentos y contraargumentos",
+            "Citar fuentes y datos",
+            "La conclusión académica",
+            "Escribir un saggio breve"
+          ],
+          "prerequisites": ["it-c1-connettivi", "it-b2-testo-argomentativo"]
+        },
+        {
+          "id": "it-c1-registri-varieta",
+          "title": "Registros e italiano regional",
+          "targetTitle": "I registri e le varietà regionali",
+          "description": "Vas a aprender a reconocer los distintos registros del italiano y las principales variedades regionales del norte, centro y sur. Te va a servir para adaptar tus mensajes según el contexto y el interlocutor.",
+          "subtopics": [
+            "Los registros",
+            "El italiano coloquial",
+            "Italiano regional: norte, centro y sur",
+            "Italiano regional y dialectos",
+            "Adaptar un mensaje al registro"
+          ],
+          "prerequisites": ["it-c1-linguaggio-media", "it-c1-scrittura-accademica"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "it-c2-burocratese",
+          "title": "El italiano burocrático y jurídico",
+          "targetTitle": "Il burocratese e il linguaggio giuridico",
+          "description": "Vas a aprender las características del lenguaje burocrático y jurídico italiano, con su vocabulario y estructuras típicas. Te va a servir para entender documentos oficiales, contratos y comunicaciones institucionales.",
+          "subtopics": [
+            "Vocabulario burocrático frecuente",
+            "Estructuras fijas de los documentos oficiales",
+            "El lenguaje de los contratos",
+            "Simplificar un texto burocrático",
+            "Redactar una instancia formal"
+          ],
+          "prerequisites": ["it-c1-linguaggio-media", "it-b2-registro-formale"]
+        },
+        {
+          "id": "it-c2-linguaggio-scientifico-tecnico",
+          "title": "El italiano científico y técnico",
+          "targetTitle": "L'italiano scientifico e tecnico",
+          "description": "Vas a aprender las características del discurso científico y técnico en italiano, incluyendo su vocabulario especializado y su estilo impersonal. Te va a servir para leer artículos académicos y divulgación científica.",
+          "subtopics": [
+            "El estilo impersonal y objetivo",
+            "Vocabulario científico frecuente",
+            "Nominalización y tecnicismos",
+            "La divulgación científica",
+            "Resumir un artículo científico"
+          ],
+          "prerequisites": ["it-c1-connettivi"]
+        },
+        {
+          "id": "it-c2-scrittura-professionale",
+          "title": "Escritura profesional avanzada",
+          "targetTitle": "La scrittura professionale avanzata",
+          "description": "Vas a aprender a redactar informes, actas de reunión y cartas de presentación institucional con un italiano profesional de alto nivel. Te va a servir para desenvolverte en contextos laborales y académicos exigentes.",
+          "subtopics": [
+            "El informe (relazione)",
+            "El acta de una reunión",
+            "La carta de presentación institucional",
+            "Revisar y pulir un texto profesional",
+            "Redactar un informe breve"
+          ],
+          "prerequisites": ["it-c2-burocratese"]
+        },
+        {
+          "id": "it-c2-retorica-persuasione",
+          "title": "Retórica y persuasión",
+          "targetTitle": "Retorica e persuasione",
+          "description": "Vas a aprender estrategias retóricas avanzadas para persuadir, convencer y rebatir argumentos con elegancia. Te va a servir para participar en debates formales y defender posiciones complejas.",
+          "subtopics": [
+            "Estrategias de persuasión",
+            "Rebatir un argumento con elegancia",
+            "Las falacias argumentativas",
+            "El lenguaje del debate político",
+            "Participar en un debate formal"
+          ],
+          "prerequisites": ["it-c1-retorica-figure", "it-c1-scrittura-accademica"]
+        },
+        {
+          "id": "it-c2-letteratura-analisi",
+          "title": "Análisis literario",
+          "targetTitle": "L'analisi letteraria",
+          "description": "Vas a aprender a analizar textos literarios italianos identificando estilo, voz narrativa y recursos propios de cada autor o época. Te va a servir para leer literatura italiana con una mirada crítica.",
+          "subtopics": [
+            "La voz narrativa y el punto de vista",
+            "Estilo y registro de un autor",
+            "Poesía: métrica y figuras",
+            "Analizar un cuento breve",
+            "Escribir una reseña crítica"
+          ],
+          "prerequisites": ["it-c1-retorica-figure", "it-c1-passato-remoto"]
+        },
+        {
+          "id": "it-c2-variazione-sociolinguistica",
+          "title": "Variación sociolingüística y jerga",
+          "targetTitle": "La variazione sociolinguistica e il gergo",
+          "description": "Vas a profundizar en la jerga juvenil, los lenguajes sectoriales y la variación sociolingüística del italiano contemporáneo. Te va a servir para entender conversaciones informales, series y redes sociales en italiano real.",
+          "subtopics": [
+            "La jerga juvenil",
+            "Lenguajes sectoriales: deporte, moda, tecnología",
+            "Préstamos del inglés y anglicismos",
+            "Code-switching y dialectos en la conversación",
+            "Entender un diálogo informal real"
+          ],
+          "prerequisites": ["it-c1-registri-varieta"]
+        },
+        {
+          "id": "it-c2-traduzione-falsi-amici",
+          "title": "Traducción, falsos amigos y matices intraducibles",
+          "targetTitle": "Traduzione, falsi amici e intraducibilità",
+          "description": "Vas a profundizar en los falsos amigos más sutiles entre el español y el italiano, y en expresiones difíciles de traducir literalmente. Te va a servir para traducir con precisión y evitar errores de interferencia.",
+          "subtopics": [
+            "Falsos amigos avanzados",
+            "Expresiones sin traducción literal",
+            "Matices de significado entre sinónimos",
+            "Traducir humor y juegos de palabras",
+            "Traducir un texto breve"
+          ],
+          "prerequisites": ["it-c1-espressioni-idiomatiche"]
+        },
+        {
+          "id": "it-c2-umorismo-giochi-parole",
+          "title": "Humor, juegos de palabras y doble sentido",
+          "targetTitle": "Umorismo, giochi di parole e doppio senso",
+          "description": "Vas a aprender a reconocer y usar el humor, los juegos de palabras y el doble sentido propios del italiano hablado y escrito. Te va a servir para disfrutar de la comedia, la publicidad y las conversaciones informales con total naturalidad.",
+          "subtopics": [
+            "Juegos de palabras frecuentes",
+            "La ironía fina y el doble sentido",
+            "Humor en la publicidad",
+            "Humor regional y estereotipos",
+            "Analizar un sketch de comedia"
+          ],
+          "prerequisites": ["it-c2-variazione-sociolinguistica", "it-c2-traduzione-falsi-amici"]
+        }
+      ]
+    }
+  ]
+}

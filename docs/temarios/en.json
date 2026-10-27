@@ -1,0 +1,900 @@
+{
+  "language": "en",
+  "existing": [
+    "a1-to-be",
+    "a1-nouns-articles",
+    "a1-present-simple",
+    "a1-possessives-prepositions",
+    "a1-can-present-continuous",
+    "a2-past-simple",
+    "a2-future",
+    "a2-comparing-quantifying",
+    "a2-present-perfect",
+    "a2-modals-conditionals",
+    "b1-narrative-tenses",
+    "b1-perfect-continuous-verb-patterns",
+    "b1-conditionals",
+    "b1-passive-reported",
+    "b1-relatives-deduction",
+    "b2-conditionals-past-modals",
+    "b2-future-forms",
+    "b2-passive-causative",
+    "b2-wishes-reporting",
+    "b2-emphasis-cohesion",
+    "c1-advanced-modality",
+    "c1-formal-style",
+    "c1-phrasal-collocations",
+    "c1-idioms",
+    "c1-discourse-hedging"
+  ],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "a1-to-be",
+          "title": "El verbo to be",
+          "targetTitle": "The Verb To Be",
+          "description": "Vas a aprender a usar el verbo to be para presentarte, describir personas y hacer preguntas básicas en inglés. Es la base de toda la gramática inglesa, así que te sirve para construir tus primeras oraciones con confianza.",
+          "subtopics": [
+            "Pronombres personales",
+            "To be en afirmativo",
+            "To be en negativo",
+            "Preguntas y respuestas cortas",
+            "Presentarte y describir personas"
+          ],
+          "prerequisites": []
+        },
+        {
+          "id": "en-a1-questions-whwords",
+          "title": "Preguntas con wh-words",
+          "targetTitle": "Wh- Questions",
+          "description": "Vas a aprender a armar preguntas con what, where, when, who, why y how para pedir información básica en inglés. Te sirve para presentarte, conocer gente y manejarte en situaciones cotidianas donde necesitás preguntar algo.",
+          "subtopics": [
+            "What y who: preguntar qué y quién",
+            "Where y when: lugar y tiempo",
+            "Why y how: razones y maneras",
+            "How much y how many",
+            "Practicar preguntas en una conversación"
+          ],
+          "prerequisites": ["a1-to-be"]
+        },
+        {
+          "id": "a1-nouns-articles",
+          "title": "Sustantivos, artículos y there is / there are",
+          "targetTitle": "Nouns, Articles and There Is / There Are",
+          "description": "Vas a aprender a usar los artículos a, an y the, a formar plurales y a usar there is/there are para describir qué hay en un lugar. Esto te sirve para nombrar objetos y describir espacios desde el principio.",
+          "subtopics": ["Artículos a y an", "El artículo the", "Plurales", "This, that, these y those", "There is y there are"],
+          "prerequisites": ["en-a1-questions-whwords"]
+        },
+        {
+          "id": "en-a1-numbers-time",
+          "title": "Números, hora y fechas",
+          "targetTitle": "Numbers, Time and Dates",
+          "description": "Vas a aprender los números, cómo decir la hora, los días de la semana y los meses del año en inglés. Esto te sirve para organizar tu rutina, hacer planes y entender fechas y horarios en situaciones reales.",
+          "subtopics": [
+            "Números cardinales y ordinales",
+            "Cómo decir la hora",
+            "Días de la semana y meses",
+            "Fechas: cómo se escriben y se dicen",
+            "Hablar de horarios y citas"
+          ],
+          "prerequisites": ["a1-nouns-articles"]
+        },
+        {
+          "id": "a1-present-simple",
+          "title": "Presente simple",
+          "targetTitle": "Present Simple",
+          "description": "Vas a aprender a formar el presente simple en afirmativo, negativo y preguntas para hablar de rutinas y hechos generales. Te sirve para describir tu día a día y tus hábitos en inglés.",
+          "subtopics": [
+            "Afirmativo y la -s de tercera persona",
+            "Negativo con don't y doesn't",
+            "Preguntas con do y does",
+            "Adverbios de frecuencia",
+            "Describir tu rutina"
+          ],
+          "prerequisites": ["en-a1-numbers-time"]
+        },
+        {
+          "id": "en-a1-have-got-adjectives",
+          "title": "Have got y adjetivos descriptivos",
+          "targetTitle": "Have Got and Descriptive Adjectives",
+          "description": "Vas a aprender a usar have got para hablar de posesión y características, y a describir personas y cosas con adjetivos en el orden correcto. Te sirve para describir a tu familia, tus objetos y lo que tenés a tu alrededor.",
+          "subtopics": [
+            "Have got y has got: afirmativo",
+            "Have got: negativo y preguntas",
+            "Adjetivos descriptivos comunes",
+            "El orden de los adjetivos",
+            "Describir a una persona u objeto"
+          ],
+          "prerequisites": ["a1-present-simple"]
+        },
+        {
+          "id": "en-a1-likes-imperatives",
+          "title": "Gustos e imperativos",
+          "targetTitle": "Likes, Dislikes and Imperatives",
+          "description": "Vas a aprender a expresar lo que te gusta o no te gusta con like, love y hate, y a dar instrucciones u órdenes con el imperativo. Esto te sirve para hablar de tus preferencias y para pedir o dar indicaciones simples.",
+          "subtopics": [
+            "Like, love y hate + -ing",
+            "Preguntar sobre gustos",
+            "El imperativo afirmativo",
+            "El imperativo negativo: don't",
+            "Dar instrucciones y direcciones simples"
+          ],
+          "prerequisites": ["en-a1-have-got-adjectives"]
+        },
+        {
+          "id": "a1-possessives-prepositions",
+          "title": "Posesivos, pronombres objeto y preposiciones",
+          "targetTitle": "Possessives, Object Pronouns and Prepositions",
+          "description": "Vas a aprender a expresar posesión, a usar pronombres objeto y a ubicar cosas en el espacio y el tiempo con preposiciones. Esto te sirve para dar más detalle y precisión a tus oraciones cotidianas.",
+          "subtopics": [
+            "Adjetivos posesivos",
+            "El posesivo 's",
+            "Pronombres objeto",
+            "Preposiciones de lugar",
+            "Preposiciones de tiempo: in, on y at"
+          ],
+          "prerequisites": ["en-a1-likes-imperatives"]
+        },
+        {
+          "id": "en-a1-vocab-daily-life",
+          "title": "Vocabulario de la vida diaria",
+          "targetTitle": "Everyday Life Vocabulary",
+          "description": "Vas a ampliar tu vocabulario con palabras sobre familia, comida, ropa y la casa para hablar de tu entorno cercano. Te sirve para describir tu vida diaria y entender conversaciones cotidianas básicas.",
+          "subtopics": ["La familia", "Comida y bebida", "Ropa y colores", "Partes de la casa", "Describir tu entorno"],
+          "prerequisites": ["a1-possessives-prepositions"]
+        },
+        {
+          "id": "a1-can-present-continuous",
+          "title": "Can y presente continuo",
+          "targetTitle": "Can and Present Continuous",
+          "description": "Vas a aprender a expresar habilidad y permiso con can, y a describir acciones que están pasando ahora con el presente continuo. Te sirve para hablar de lo que podés hacer y de lo que está ocurriendo en este momento.",
+          "subtopics": [
+            "Can: habilidad y permiso",
+            "Presente continuo: cómo se forma",
+            "Presente continuo: cuándo se usa",
+            "Presente simple vs. continuo",
+            "Describir una escena"
+          ],
+          "prerequisites": ["en-a1-vocab-daily-life"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "a2-past-simple",
+          "title": "Pasado simple",
+          "targetTitle": "Past Simple",
+          "description": "Vas a aprender a hablar del pasado con was/were y con verbos regulares e irregulares, en afirmativo, negativo y preguntas. Esto te sirve para contar historias y experiencias que ya pasaron.",
+          "subtopics": ["Was y were", "Verbos regulares", "Verbos irregulares más usados", "Negativo y preguntas con did", "Contar lo que pasó"],
+          "prerequisites": ["a1-can-present-continuous"]
+        },
+        {
+          "id": "en-a2-adverbs-manner",
+          "title": "Adverbios de modo y grado",
+          "targetTitle": "Adverbs of Manner and Degree",
+          "description": "Vas a aprender a formar adverbios de modo a partir de adjetivos y a usar palabras como very, too y enough para matizar lo que decís. Te sirve para describir acciones con más precisión y expresar grados de intensidad.",
+          "subtopics": [
+            "Cómo formar adverbios de modo",
+            "Adverbios irregulares",
+            "Very y really para intensificar",
+            "Too y enough",
+            "Describir acciones con precisión"
+          ],
+          "prerequisites": ["a2-past-simple"]
+        },
+        {
+          "id": "a2-future",
+          "title": "Formas de futuro",
+          "targetTitle": "Future Forms",
+          "description": "Vas a aprender distintas formas de hablar del futuro en inglés: going to, will y el presente continuo para citas. Te sirve para expresar planes, predicciones y arreglos de manera adecuada según el contexto.",
+          "subtopics": [
+            "Going to: planes e intenciones",
+            "Going to: predicciones con evidencia",
+            "Will: decisiones, promesas y predicciones",
+            "Presente continuo para citas y arreglos",
+            "Escribir sobre tus planes"
+          ],
+          "prerequisites": ["en-a2-adverbs-manner"]
+        },
+        {
+          "id": "en-a2-requests-offers",
+          "title": "Pedidos, ofrecimientos y sugerencias",
+          "targetTitle": "Requests, Offers and Suggestions",
+          "description": "Vas a aprender a pedir cosas educadamente con can, could y would you, y a ofrecer o sugerir algo con shall y let's. Esto te sirve para manejarte con cortesía en restaurantes, negocios y situaciones sociales.",
+          "subtopics": [
+            "Pedidos educados: can you, could you",
+            "Would you mind...?",
+            "Ofrecimientos con shall I y would you like",
+            "Sugerencias con let's y why don't we",
+            "Role-play: pedir y ofrecer"
+          ],
+          "prerequisites": ["a2-future"]
+        },
+        {
+          "id": "a2-comparing-quantifying",
+          "title": "Comparar y cuantificar",
+          "targetTitle": "Comparing and Quantifying",
+          "description": "Vas a aprender a comparar cosas y personas con comparativos y superlativos, y a cuantificar con some, any, much, many y otros. Esto te sirve para describir diferencias y cantidades con precisión.",
+          "subtopics": [
+            "Comparativos",
+            "Superlativos",
+            "As ... as y not as ... as",
+            "Contables e incontables: some y any",
+            "Much, many, a lot of, a few y a little"
+          ],
+          "prerequisites": ["en-a2-requests-offers"]
+        },
+        {
+          "id": "en-a2-vocab-travel-health",
+          "title": "Vocabulario de viajes y salud",
+          "targetTitle": "Travel and Health Vocabulary",
+          "description": "Vas a aprender palabras y frases para viajar, pedir direcciones y hablar de síntomas y problemas de salud. Te sirve para desenvolverte en el aeropuerto, el hotel o una consulta médica en inglés.",
+          "subtopics": [
+            "En el aeropuerto y el hotel",
+            "Pedir y dar direcciones",
+            "Partes del cuerpo y síntomas",
+            "En la farmacia y el médico",
+            "Simular una situación de viaje"
+          ],
+          "prerequisites": ["a2-comparing-quantifying"]
+        },
+        {
+          "id": "a2-present-perfect",
+          "title": "Present perfect",
+          "targetTitle": "Present Perfect",
+          "description": "Vas a aprender a usar el present perfect para hablar de experiencias de vida y de acciones recientes, y a diferenciarlo del pasado simple. Te sirve para contar lo que hiciste sin especificar cuándo exactamente.",
+          "subtopics": ["Cómo se forma", "Experiencias: ever y never", "Just, already y yet", "For y since", "Present perfect vs. pasado simple"],
+          "prerequisites": ["en-a2-vocab-travel-health"]
+        },
+        {
+          "id": "en-a2-gerunds-infinitives",
+          "title": "Gerundios e infinitivos",
+          "targetTitle": "Gerunds and Infinitives",
+          "description": "Vas a aprender cuándo un verbo va seguido de gerundio (-ing) y cuándo de infinitivo (to + verbo), con los verbos más comunes de cada grupo. Esto te sirve para armar oraciones correctas al combinar dos verbos.",
+          "subtopics": [
+            "Verbos seguidos de gerundio",
+            "Verbos seguidos de infinitivo",
+            "Verbos que aceptan ambos",
+            "Gerundio como sujeto",
+            "Practicar con oraciones propias"
+          ],
+          "prerequisites": ["a2-present-perfect"]
+        },
+        {
+          "id": "a2-modals-conditionals",
+          "title": "Obligación, consejos, posibilidad y primer condicional",
+          "targetTitle": "Obligation, Advice, Possibility and the First Conditional",
+          "description": "Vas a aprender a expresar obligación, dar consejos, hablar de posibilidad y armar oraciones condicionales reales con el primer condicional. Esto te sirve para dar recomendaciones y hablar de situaciones futuras probables.",
+          "subtopics": [
+            "Must y have to: obligación",
+            "Should: consejos",
+            "Might y may: posibilidad",
+            "Primer condicional",
+            "Escribir un mensaje con consejos"
+          ],
+          "prerequisites": ["en-a2-gerunds-infinitives"]
+        },
+        {
+          "id": "en-a2-reported-speech-basic",
+          "title": "Estilo indirecto básico",
+          "targetTitle": "Basic Reported Speech",
+          "description": "Vas a aprender a contar lo que alguien dijo usando say y tell, con los cambios básicos de tiempo verbal. Te sirve para transmitir mensajes, chismes o información de otra persona en una conversación.",
+          "subtopics": [
+            "Say vs. tell",
+            "Cambios de tiempo verbal al reportar",
+            "Reportar afirmaciones simples",
+            "Cambios de pronombres y expresiones de tiempo",
+            "Contar un mensaje o conversación"
+          ],
+          "prerequisites": ["a2-modals-conditionals"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "b1-narrative-tenses",
+          "title": "Tiempos para narrar",
+          "targetTitle": "Narrative Tenses",
+          "description": "Vas a aprender a combinar past continuous, past perfect y used to/would para narrar historias con más riqueza y detalle. Te sirve para contar anécdotas y relatos de forma natural y ordenada.",
+          "subtopics": [
+            "Past continuous: el escenario",
+            "Past simple vs. past continuous",
+            "Past perfect: lo que había pasado",
+            "Used to y would: costumbres del pasado",
+            "Contar una historia"
+          ],
+          "prerequisites": ["en-a2-reported-speech-basic"]
+        },
+        {
+          "id": "en-b1-time-clauses",
+          "title": "Oraciones de tiempo",
+          "targetTitle": "Time Clauses",
+          "description": "Vas a aprender a conectar acciones en el tiempo con when, while, as soon as, until y before, prestando atención a qué tiempo verbal usar en cada caso. Te sirve para narrar secuencias de eventos y hablar de planes futuros con precisión.",
+          "subtopics": [
+            "When y while con pasado",
+            "As soon as, until y before",
+            "Tiempos verbales en oraciones de tiempo futuras",
+            "Combinar oraciones de tiempo",
+            "Narrar una secuencia de eventos"
+          ],
+          "prerequisites": ["b1-narrative-tenses"]
+        },
+        {
+          "id": "b1-perfect-continuous-verb-patterns",
+          "title": "Present perfect continuo y patrones verbales",
+          "targetTitle": "Present Perfect Continuous and Verb Patterns",
+          "description": "Vas a aprender a usar el present perfect continuous y a combinar verbos entre sí con gerundio o infinitivo. Esto te sirve para hablar de acciones que vienen pasando y para expresar ideas más complejas con dos verbos juntos.",
+          "subtopics": [
+            "Have been doing: forma y uso",
+            "Present perfect simple vs. continuo",
+            "Verbo + -ing o to + infinitivo",
+            "Stop, remember y try",
+            "Un email para ponerse al día"
+          ],
+          "prerequisites": ["en-b1-time-clauses"]
+        },
+        {
+          "id": "en-b1-gerund-subject",
+          "title": "Patrones verbales avanzados",
+          "targetTitle": "Advanced Verb Patterns",
+          "description": "Vas a profundizar en los patrones verbo + gerundio o infinitivo, incluyendo el gerundio como sujeto de la oración y verbos con significado distinto según la forma que los sigue. Esto te sirve para expresar ideas más complejas con mayor naturalidad.",
+          "subtopics": [
+            "El gerundio como sujeto",
+            "Verbos que cambian de significado: remember, forget",
+            "Verbo + preposición + gerundio",
+            "Infinitivo de propósito",
+            "Escribir sobre hábitos y preferencias"
+          ],
+          "prerequisites": ["b1-perfect-continuous-verb-patterns"]
+        },
+        {
+          "id": "b1-conditionals",
+          "title": "Condicionales",
+          "targetTitle": "Conditionals",
+          "description": "Vas a aprender el condicional cero, el primero y el segundo para hablar de verdades generales, situaciones futuras probables e hipótesis imaginarias. Te sirve para dar consejos y hablar de situaciones reales e irreales.",
+          "subtopics": [
+            "Condicional cero: verdades generales",
+            "Primer condicional: unless, as long as e in case",
+            "Segundo condicional: situaciones imaginarias",
+            "If I were you y cómo elegir",
+            "Responder en un foro de consejos"
+          ],
+          "prerequisites": ["en-b1-gerund-subject"]
+        },
+        {
+          "id": "en-b1-articles-determiners",
+          "title": "Artículos y determinantes avanzados",
+          "targetTitle": "Advanced Articles and Determiners",
+          "description": "Vas a aprender los usos más finos de a, an, the y el artículo cero, junto con determinantes como both, either, neither y all. Te sirve para sonar más natural y evitar errores comunes de hispanohablantes al hablar de sustantivos.",
+          "subtopics": [
+            "El artículo cero: casos generales",
+            "The con nombres específicos y únicos",
+            "Both, either y neither",
+            "All, every y each",
+            "Corregir errores comunes con artículos"
+          ],
+          "prerequisites": ["b1-conditionals"]
+        },
+        {
+          "id": "b1-passive-reported",
+          "title": "Voz pasiva y estilo indirecto",
+          "targetTitle": "Passive Voice and Reported Speech",
+          "description": "Vas a aprender a formar la voz pasiva en distintos tiempos y a reportar lo que dijo otra persona con los cambios correspondientes. Esto te sirve para escribir noticias y para contar conversaciones de forma más formal.",
+          "subtopics": [
+            "La pasiva: presente, pasado y present perfect",
+            "Cuándo usar la pasiva y el agente con by",
+            "Estilo indirecto: say, tell y el corrimiento de tiempos",
+            "Preguntas, pedidos y órdenes en estilo indirecto",
+            "Una noticia breve"
+          ],
+          "prerequisites": ["en-b1-articles-determiners"]
+        },
+        {
+          "id": "en-b1-phrasal-verbs",
+          "title": "Phrasal verbs intermedios",
+          "targetTitle": "Intermediate Phrasal Verbs",
+          "description": "Vas a aprender los phrasal verbs más usados en situaciones cotidianas y de trabajo, como get on, look after y give up. Esto te sirve para entender conversaciones informales y expresarte de manera más natural.",
+          "subtopics": [
+            "Phrasal verbs de rutina diaria",
+            "Phrasal verbs de relaciones personales",
+            "Phrasal verbs de trabajo y estudio",
+            "Separables vs. inseparables: repaso práctico",
+            "Usar phrasal verbs en una conversación"
+          ],
+          "prerequisites": ["b1-passive-reported"]
+        },
+        {
+          "id": "b1-relatives-deduction",
+          "title": "Relativos y deducción",
+          "targetTitle": "Relative Clauses and Deduction",
+          "description": "Vas a aprender a usar pronombres relativos para dar más información sobre algo, y a expresar deducción con must, might y can't. Te sirve para describir personas y cosas con detalle, y para hacer suposiciones lógicas.",
+          "subtopics": [
+            "Who, which, that, where y whose",
+            "Especificativas y explicativas",
+            "Must, might y can't: deducción",
+            "Although, however y so",
+            "Escribir una reseña"
+          ],
+          "prerequisites": ["en-b1-phrasal-verbs"]
+        },
+        {
+          "id": "en-b1-question-tags-agreement",
+          "title": "Question tags y acuerdo",
+          "targetTitle": "Question Tags and Agreement",
+          "description": "Vas a aprender a formar question tags como isn't it? o don't you? para confirmar información o buscar acuerdo en una conversación. Te sirve para sonar más natural al charlar y para mostrar interés en lo que dice la otra persona.",
+          "subtopics": [
+            "Cómo se forman los question tags",
+            "Question tags con verbos auxiliares",
+            "Question tags con modales",
+            "Entonación: pregunta real vs. confirmación",
+            "Practicar en una conversación informal"
+          ],
+          "prerequisites": ["b1-relatives-deduction"]
+        },
+        {
+          "id": "en-b1-vocab-work-education",
+          "title": "Vocabulario de trabajo y educación",
+          "targetTitle": "Work and Education Vocabulary",
+          "description": "Vas a ampliar tu vocabulario sobre el ámbito laboral y educativo: profesiones, entrevistas, materias y tecnología. Te sirve para hablar de tu trabajo, tus estudios y tus planes profesionales con más soltura.",
+          "subtopics": [
+            "Profesiones y responsabilidades",
+            "Entrevistas de trabajo",
+            "El sistema educativo",
+            "Tecnología en el trabajo y el estudio",
+            "Hablar de tu experiencia laboral o académica"
+          ],
+          "prerequisites": ["en-b1-question-tags-agreement"]
+        },
+        {
+          "id": "en-b1-opinions-discussion",
+          "title": "Opinar y discutir ideas",
+          "targetTitle": "Expressing Opinions and Discussing Ideas",
+          "description": "Vas a aprender frases para dar tu opinión, mostrar acuerdo o desacuerdo y participar en una discusión de manera educada. Esto te sirve para debatir temas cotidianos y defender tu punto de vista en inglés.",
+          "subtopics": [
+            "Dar tu opinión: I think, in my opinion",
+            "Mostrar acuerdo",
+            "Mostrar desacuerdo con cortesía",
+            "Pedir la opinión de otros",
+            "Participar en un debate simple"
+          ],
+          "prerequisites": ["en-b1-vocab-work-education"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "b2-conditionals-past-modals",
+          "title": "Tercer condicional y modales en pasado",
+          "targetTitle": "Third Conditional and Past Modals",
+          "description": "Vas a aprender el tercer condicional y los condicionales mixtos para hablar de situaciones hipotéticas en el pasado, junto con modales como should have y could have. Esto te sirve para hablar de arrepentimientos y de cosas que podrían haber sido distintas.",
+          "subtopics": [
+            "Tercer condicional",
+            "Condicionales mixtos",
+            "Must have, might have y can't have",
+            "Should have, could have y would have",
+            "Un email de disculpas"
+          ],
+          "prerequisites": ["en-b1-opinions-discussion"]
+        },
+        {
+          "id": "en-b2-participle-clauses",
+          "title": "Oraciones de participio",
+          "targetTitle": "Participle Clauses",
+          "description": "Vas a aprender a reducir oraciones relativas y de tiempo usando participios en -ing y -ed para que tu inglés escrito suene más fluido y menos repetitivo. Te sirve especialmente para textos formales y narrativos.",
+          "subtopics": [
+            "Participio presente (-ing) para acciones simultáneas",
+            "Participio pasado (-ed) con significado pasivo",
+            "Reducir oraciones relativas con participios",
+            "Participios para causa y resultado",
+            "Reescribir oraciones con participios"
+          ],
+          "prerequisites": ["b2-conditionals-past-modals"]
+        },
+        {
+          "id": "b2-future-forms",
+          "title": "Futuro continuo, perfecto y otros futuros",
+          "targetTitle": "Future Continuous, Future Perfect and Other Future Forms",
+          "description": "Vas a aprender formas de futuro más avanzadas como el future continuous, el future perfect y expresiones como be about to. Te sirve para hablar de planes y situaciones futuras con más matices y precisión.",
+          "subtopics": [
+            "Future continuous: will be doing",
+            "Future perfect: will have done",
+            "Be about to, be due to y be to",
+            "Cómo elegir la forma de futuro",
+            "Un email de trabajo con plazos"
+          ],
+          "prerequisites": ["en-b2-participle-clauses"]
+        },
+        {
+          "id": "en-b2-indirect-questions",
+          "title": "Preguntas indirectas e incrustadas",
+          "targetTitle": "Indirect and Embedded Questions",
+          "description": "Vas a aprender a formar preguntas indirectas y preguntas incrustadas dentro de otra oración, como do you know where...? o I wonder if... Esto te sirve para preguntar de manera más educada y formal en distintos contextos.",
+          "subtopics": [
+            "Preguntas indirectas: estructura",
+            "I wonder if / I'd like to know",
+            "Preguntas incrustadas en afirmaciones",
+            "Do you know / Could you tell me...?",
+            "Practicar preguntas formales"
+          ],
+          "prerequisites": ["b2-future-forms"]
+        },
+        {
+          "id": "b2-passive-causative",
+          "title": "Pasiva avanzada y causativa",
+          "targetTitle": "Advanced Passive and Causative Structures",
+          "description": "Vas a aprender a usar la voz pasiva en todos los tiempos y con modales, y a formar estructuras causativas como have/get something done. Esto te sirve para hablar de servicios que contratás y para dar un tono más formal a tus textos.",
+          "subtopics": [
+            "La pasiva en todos los tiempos",
+            "Pasiva con modales, infinitivos y gerundios",
+            "It is said that… y He is believed to…",
+            "Have / get something done",
+            "Un informe breve"
+          ],
+          "prerequisites": ["en-b2-indirect-questions"]
+        },
+        {
+          "id": "en-b2-word-formation",
+          "title": "Formación de palabras",
+          "targetTitle": "Word Formation",
+          "description": "Vas a aprender a usar prefijos y sufijos para crear sustantivos, adjetivos, verbos y adverbios a partir de una misma raíz. Te sirve para ampliar tu vocabulario rápidamente y entender palabras nuevas sin necesidad de memorizarlas todas.",
+          "subtopics": [
+            "Sufijos para sustantivos",
+            "Sufijos para adjetivos",
+            "Prefijos de negación: un-, in-, dis-",
+            "Prefijos de cantidad y repetición",
+            "Practicar con familias de palabras"
+          ],
+          "prerequisites": ["b2-passive-causative"]
+        },
+        {
+          "id": "b2-wishes-reporting",
+          "title": "Deseos, lamentos y verbos de reporte",
+          "targetTitle": "Wishes, Regrets and Reporting Verbs",
+          "description": "Vas a aprender a expresar deseos y lamentos con wish e if only, y a reportar lo que dijo alguien con verbos como suggest, admit y advise. Te sirve para hablar de arrepentimientos y para resumir conversaciones de forma más natural.",
+          "subtopics": [
+            "Wish e if only",
+            "Wish + would, would rather e it's time",
+            "Suggest, admit y deny",
+            "Advise, warn, remind y otros",
+            "Un resumen de reunión"
+          ],
+          "prerequisites": ["en-b2-word-formation"]
+        },
+        {
+          "id": "en-b2-comparative-structures",
+          "title": "Estructuras comparativas avanzadas",
+          "targetTitle": "Advanced Comparative Structures",
+          "description": "Vas a aprender estructuras comparativas más complejas como the more... the more y comparaciones con sustantivos y proporciones. Esto te sirve para expresar relaciones de causa y proporción de forma más sofisticada.",
+          "subtopics": [
+            "The + comparativo, the + comparativo",
+            "Comparaciones con sustantivos",
+            "Double comparatives y matices",
+            "As + adjetivo + as + sustantivo",
+            "Escribir comparaciones complejas"
+          ],
+          "prerequisites": ["b2-wishes-reporting"]
+        },
+        {
+          "id": "en-b2-vocab-society-environment",
+          "title": "Vocabulario de sociedad y medioambiente",
+          "targetTitle": "Society and Environment Vocabulary",
+          "description": "Vas a ampliar tu vocabulario sobre temas sociales, economía y medioambiente para poder seguir noticias y debates actuales. Te sirve para participar en conversaciones sobre temas de actualidad con más riqueza léxica.",
+          "subtopics": [
+            "Problemas sociales",
+            "Economía y trabajo",
+            "Cambio climático y medioambiente",
+            "Política y gobierno: vocabulario básico",
+            "Comentar una noticia"
+          ],
+          "prerequisites": ["en-b2-comparative-structures"]
+        },
+        {
+          "id": "b2-emphasis-cohesion",
+          "title": "Énfasis, inversión y cohesión",
+          "targetTitle": "Emphasis, Inversion and Cohesion",
+          "description": "Vas a aprender a dar énfasis con oraciones escindidas e inversión, y a conectar ideas con conectores de contraste, causa y resultado. Esto te sirve para escribir textos de opinión más cohesivos y persuasivos.",
+          "subtopics": [
+            "Oraciones escindidas: It is… that y What… is",
+            "Inversión después de expresiones negativas",
+            "Conectores de contraste",
+            "Causa y resultado",
+            "Un artículo de opinión"
+          ],
+          "prerequisites": ["en-b2-vocab-society-environment"]
+        },
+        {
+          "id": "en-b2-debate-persuasion",
+          "title": "Debatir y persuadir",
+          "targetTitle": "Debating and Persuasive Language",
+          "description": "Vas a aprender frases y estructuras para argumentar, persuadir y rebatir ideas en una discusión formal. Te sirve para participar en debates, defender una postura y responder a contraargumentos con soltura.",
+          "subtopics": ["Presentar un argumento", "Rebatir un argumento", "Lenguaje persuasivo", "Ceder un punto y matizar", "Simular un debate"],
+          "prerequisites": ["b2-emphasis-cohesion"]
+        },
+        {
+          "id": "en-b2-formal-letters",
+          "title": "Cartas y emails formales",
+          "targetTitle": "Formal Letters and Emails",
+          "description": "Vas a aprender la estructura y el lenguaje de cartas y emails formales: quejas, solicitudes y pedidos de información. Esto te sirve para comunicarte de manera profesional por escrito en situaciones laborales o administrativas.",
+          "subtopics": [
+            "Estructura de una carta formal",
+            "Cartas de queja",
+            "Cartas de solicitud",
+            "Frases de apertura y cierre formales",
+            "Escribir un email formal completo"
+          ],
+          "prerequisites": ["en-b2-debate-persuasion"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "c1-advanced-modality",
+          "title": "Modalidad avanzada",
+          "targetTitle": "Advanced Modality",
+          "description": "Vas a aprender matices avanzados de los modales para hablar de obligación innecesaria, probabilidad y expectativas. Te sirve para expresar ideas complejas sobre certeza y necesidad con mayor precisión.",
+          "subtopics": [
+            "Needn't have vs. didn't need to",
+            "Be bound to, be likely to y be set to",
+            "Matices de la especulación",
+            "Obligación, permiso y expectativas",
+            "Un reclamo formal"
+          ],
+          "prerequisites": ["en-b2-formal-letters"]
+        },
+        {
+          "id": "en-c1-subjunctive-inversion",
+          "title": "Subjuntivo e inversión formal",
+          "targetTitle": "Subjunctive Mood and Formal Inversion",
+          "description": "Vas a aprender el modo subjuntivo en inglés formal (it's essential that...) y las estructuras de inversión después de adverbios negativos o condicionales formales como were I to o had I known. Te sirve para escribir y hablar con un registro formal y sofisticado.",
+          "subtopics": [
+            "El subjuntivo con suggest, insist y demand",
+            "Were I to y condicionales formales invertidos",
+            "Hardly, scarcely y no sooner con inversión",
+            "Had I known: inversión en el tercer condicional",
+            "Reescribir oraciones en registro formal"
+          ],
+          "prerequisites": ["c1-advanced-modality"]
+        },
+        {
+          "id": "c1-formal-style",
+          "title": "Nominalización y estilo formal",
+          "targetTitle": "Nominalization and Formal Style",
+          "description": "Vas a aprender a transformar verbos en sustantivos y a usar estructuras impersonales para lograr un estilo más formal y objetivo. Esto te sirve para escribir informes, ensayos y textos académicos en inglés.",
+          "subtopics": [
+            "Qué es la nominalización",
+            "Del verbo al sustantivo: transformar frases",
+            "Vocabulario formal",
+            "Estructuras impersonales y objetividad",
+            "De informal a formal"
+          ],
+          "prerequisites": ["en-c1-subjunctive-inversion"]
+        },
+        {
+          "id": "en-c1-vocab-precision",
+          "title": "Vocabulario de precisión",
+          "targetTitle": "Precision Vocabulary and Connotation",
+          "description": "Vas a aprender a elegir entre sinónimos cercanos según su connotación y matiz de significado, como big vs. huge vs. enormous. Esto te sirve para expresar tus ideas con mayor exactitud y evitar repeticiones en textos formales.",
+          "subtopics": [
+            "Sinónimos y matices de significado",
+            "Connotación positiva, negativa y neutra",
+            "Palabras formales vs. informales con el mismo sentido",
+            "Falsos amigos avanzados",
+            "Elegir la palabra justa en un texto"
+          ],
+          "prerequisites": ["c1-formal-style"]
+        },
+        {
+          "id": "c1-phrasal-collocations",
+          "title": "Phrasal verbs y colocaciones",
+          "targetTitle": "Phrasal Verbs and Collocations",
+          "description": "Vas a aprender la lógica de las partículas en los phrasal verbs y a usar colocaciones naturales con verbos, adjetivos y adverbios. Te sirve para expresarte con la naturalidad de un hablante avanzado.",
+          "subtopics": [
+            "La lógica de las partículas",
+            "Separables, inseparables y de tres partes",
+            "Colocaciones con verbos",
+            "Colocaciones con adjetivos y adverbios",
+            "Una entrada de blog"
+          ],
+          "prerequisites": ["en-c1-vocab-precision"]
+        },
+        {
+          "id": "en-c1-vocab-academic-business",
+          "title": "Vocabulario académico y de negocios",
+          "targetTitle": "Academic and Business Vocabulary",
+          "description": "Vas a aprender vocabulario específico para contextos académicos y de negocios, como términos de investigación, reuniones y negociaciones. Te sirve para desenvolverte en estudios superiores o en un ambiente laboral profesional en inglés.",
+          "subtopics": [
+            "Vocabulario de investigación académica",
+            "Vocabulario de reuniones y negociaciones",
+            "Verbos formales de negocios",
+            "Colocaciones académicas frecuentes",
+            "Redactar un párrafo académico o de negocios"
+          ],
+          "prerequisites": ["c1-phrasal-collocations"]
+        },
+        {
+          "id": "c1-idioms",
+          "title": "Expresiones idiomáticas",
+          "targetTitle": "Idiomatic Expressions",
+          "description": "Vas a aprender idioms frecuentes sobre trabajo, dinero, tiempo y emociones para enriquecer tu forma de hablar. Esto te sirve para entender y usar expresiones que un hablante nativo usa todos los días.",
+          "subtopics": [
+            "Idioms de trabajo y estudio",
+            "Dinero y tiempo",
+            "Emociones y relaciones",
+            "Binomios y frases hechas",
+            "Usar idioms con naturalidad"
+          ],
+          "prerequisites": ["en-c1-vocab-academic-business"]
+        },
+        {
+          "id": "en-c1-ellipsis-substitution",
+          "title": "Elipsis y sustitución",
+          "targetTitle": "Ellipsis and Substitution",
+          "description": "Vas a aprender a omitir información repetida con elipsis y a reemplazarla con palabras como so, such, do y so do I para que tu inglés fluya mejor. Esto te sirve para evitar redundancias y sonar más natural al hablar y escribir.",
+          "subtopics": [
+            "Elipsis después de auxiliares",
+            "So, such y not como sustitutos",
+            "So do I / Neither do I",
+            "Omitir sustantivos repetidos",
+            "Editar un texto para evitar repeticiones"
+          ],
+          "prerequisites": ["c1-idioms"]
+        },
+        {
+          "id": "c1-discourse-hedging",
+          "title": "Marcadores del discurso y atenuación",
+          "targetTitle": "Discourse Markers and Hedging",
+          "description": "Vas a aprender marcadores para organizar un texto o una conversación, y técnicas de atenuación para suavizar tus afirmaciones. Te sirve para escribir ensayos académicos y para argumentar con más matices.",
+          "subtopics": [
+            "Marcadores para organizar un texto",
+            "Marcadores de la conversación",
+            "Atenuación (hedging)",
+            "Estilo académico: citar y contraargumentar",
+            "Un ensayo breve"
+          ],
+          "prerequisites": ["en-c1-ellipsis-substitution"]
+        },
+        {
+          "id": "en-c1-presentation-skills",
+          "title": "Hablar en público y presentaciones",
+          "targetTitle": "Public Speaking and Presentations",
+          "description": "Vas a aprender el lenguaje para estructurar y dar una presentación oral: introducir el tema, organizar ideas y cerrar con conclusiones. Te sirve para comunicarte con confianza en contextos académicos o profesionales frente a una audiencia.",
+          "subtopics": [
+            "Introducir una presentación",
+            "Organizar ideas con marcadores del discurso",
+            "Mantener la atención del público",
+            "Responder preguntas con seguridad",
+            "Preparar y dar una presentación breve"
+          ],
+          "prerequisites": ["c1-discourse-hedging"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "en-c2-advanced-syntax",
+          "title": "Sintaxis avanzada y variedad estructural",
+          "targetTitle": "Advanced Syntax and Structural Variety",
+          "description": "Vas a dominar estructuras sintácticas complejas como el fronting, las oraciones escindidas avanzadas y los incisos parentéticos para enriquecer tu estilo. Esto te sirve para escribir y hablar con la variedad y precisión de un hablante nativo culto.",
+          "subtopics": [
+            "Fronting: adelantar información para dar énfasis",
+            "Cleft sentences avanzadas",
+            "Incisos y oraciones parentéticas",
+            "Subordinación múltiple sin perder claridad",
+            "Reescribir un texto con mayor variedad sintáctica"
+          ],
+          "prerequisites": ["en-c1-presentation-skills"]
+        },
+        {
+          "id": "en-c2-nuanced-modality",
+          "title": "Matices de modalidad y tono",
+          "targetTitle": "Nuances of Modality and Tone",
+          "description": "Vas a perfeccionar el uso de hedging, boosting y understatement para suavizar o reforzar tus afirmaciones según el contexto. Te sirve para manejar el tono de tus mensajes con la sutileza que exige el inglés en contextos profesionales o diplomáticos.",
+          "subtopics": [
+            "Hedging: suavizar afirmaciones",
+            "Boosting: reforzar afirmaciones",
+            "Understatement a la británica",
+            "Modales para especulación muy sutil",
+            "Ajustar el tono según la audiencia"
+          ],
+          "prerequisites": ["en-c2-advanced-syntax"]
+        },
+        {
+          "id": "en-c2-register-shifting",
+          "title": "Cambiar de registro con fluidez",
+          "targetTitle": "Shifting Register Fluently",
+          "description": "Vas a aprender a moverte con naturalidad entre el inglés muy formal y el muy coloquial según la situación, reconociendo marcas de registro en vocabulario y gramática. Esto te sirve para adaptar tu discurso a cualquier interlocutor, desde un informe académico hasta una charla entre amigos.",
+          "subtopics": [
+            "Marcas de registro formal",
+            "Marcas de registro coloquial",
+            "Slang y jerga contemporánea",
+            "Pasar de formal a informal en un mismo texto",
+            "Analizar el registro de un texto auténtico"
+          ],
+          "prerequisites": ["en-c2-nuanced-modality"]
+        },
+        {
+          "id": "en-c2-stylistic-devices",
+          "title": "Recursos estilísticos y retóricos",
+          "targetTitle": "Stylistic and Rhetorical Devices",
+          "description": "Vas a aprender a identificar y usar metáforas, símiles, aliteración y otros recursos retóricos para dar fuerza expresiva a tus textos. Te sirve para escribir de manera más persuasiva y literaria en inglés.",
+          "subtopics": [
+            "Metáforas y símiles",
+            "Aliteración y repetición retórica",
+            "Hipérbole e ironía",
+            "Paralelismo y tríadas retóricas",
+            "Escribir un texto con recursos estilísticos"
+          ],
+          "prerequisites": ["en-c2-register-shifting"]
+        },
+        {
+          "id": "en-c2-humor-wordplay",
+          "title": "Humor, ironía y juegos de palabras",
+          "targetTitle": "Humor, Irony and Wordplay",
+          "description": "Vas a aprender a reconocer y usar el humor, la ironía, el sarcasmo y los juegos de palabras típicos del inglés. Esto te sirve para entender chistes, memes y conversaciones informales, y para sumar humor a tu propio discurso.",
+          "subtopics": [
+            "Ironía y sarcasmo: cómo se marcan",
+            "Juegos de palabras y doble sentido",
+            "Humor en memes y redes sociales",
+            "Diferencias de humor entre EE.UU. y Reino Unido",
+            "Practicar el humor en una conversación"
+          ],
+          "prerequisites": ["en-c2-stylistic-devices"]
+        },
+        {
+          "id": "en-c2-vocab-specialized",
+          "title": "Vocabulario especializado y jerga profesional",
+          "targetTitle": "Specialized Vocabulary and Professional Jargon",
+          "description": "Vas a ampliar tu vocabulario con términos especializados de distintos campos profesionales y académicos, y vas a aprender a usar la jerga técnica con precisión. Te sirve para comunicarte con fluidez en entornos profesionales altamente específicos.",
+          "subtopics": [
+            "Jerga de tecnología e informática",
+            "Jerga legal y administrativa",
+            "Jerga médica y científica",
+            "Jerga financiera y de negocios",
+            "Adaptar un texto técnico a un público general"
+          ],
+          "prerequisites": ["en-c1-vocab-academic-business"]
+        },
+        {
+          "id": "en-c2-editing-precis",
+          "title": "Edición, paráfrasis y resumen",
+          "targetTitle": "Editing, Paraphrasing and Précis",
+          "description": "Vas a perfeccionar tus habilidades para editar un texto propio o ajeno, parafrasear ideas sin perder matices y resumir textos extensos de forma precisa. Esto te sirve para producir textos claros, concisos y de alta calidad en cualquier contexto profesional o académico.",
+          "subtopics": [
+            "Técnicas de paráfrasis avanzada",
+            "Resumir un texto extenso",
+            "Edición de estilo: claridad y concisión",
+            "Eliminar redundancias y muletillas",
+            "Parafrasear y resumir un artículo real"
+          ],
+          "prerequisites": ["en-c2-vocab-specialized"]
+        },
+        {
+          "id": "en-c2-dialects-variation",
+          "title": "Variación dialectal: EE.UU., Reino Unido y más",
+          "targetTitle": "Dialect Variation: US, UK and Beyond",
+          "description": "Vas a explorar las diferencias de vocabulario, pronunciación y expresiones idiomáticas entre el inglés americano, británico y otras variedades como el australiano o el irlandés. Te sirve para entender a hablantes de cualquier origen y para elegir con conciencia qué variedad usar vos mismo.",
+          "subtopics": [
+            "Diferencias de vocabulario entre variedades",
+            "Diferencias de pronunciación y acento",
+            "Expresiones idiomáticas regionales",
+            "Inglés australiano, irlandés y otras variedades",
+            "Identificar el origen de un hablante por su inglés"
+          ],
+          "prerequisites": ["en-c2-register-shifting"]
+        }
+      ]
+    }
+  ]
+}

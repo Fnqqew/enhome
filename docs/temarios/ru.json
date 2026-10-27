@@ -1,0 +1,904 @@
+{
+  "language": "ru",
+  "existing": [],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "ru-a1-alfabeto-fonetica",
+          "title": "El alfabeto cirílico y la fonética rusa",
+          "targetTitle": "Русский алфавит и фонетика",
+          "description": "Vas a aprender a reconocer y pronunciar las letras del alfabeto cirílico, incluyendo los sonidos que no existen en español. Esto te va a servir de base para leer y escribir cualquier palabra en ruso desde el primer día.",
+          "subtopics": [
+            "Vocales y su pronunciación",
+            "Consonantes duras y blandas",
+            "Signos duro y blando (ъ, ь)",
+            "Acentuación y reducción vocálica",
+            "Lectura de palabras simples"
+          ],
+          "prerequisites": []
+        },
+        {
+          "id": "ru-a1-saludos-presentaciones",
+          "title": "Saludos y presentaciones",
+          "targetTitle": "Приветствия и знакомство",
+          "description": "Vas a aprender a saludar, despedirte y presentarte en ruso usando frases básicas de cortesía. Te va a servir para iniciar cualquier conversación cotidiana desde el primer encuentro.",
+          "subtopics": [
+            "Saludos formales e informales",
+            "Cómo presentarte a vos mismo",
+            "Preguntar y decir el nombre",
+            "Fórmulas de cortesía básicas",
+            "Despedidas y agradecimientos"
+          ],
+          "prerequisites": ["ru-a1-alfabeto-fonetica"]
+        },
+        {
+          "id": "ru-a1-datos-personales",
+          "title": "Datos personales y nacionalidad",
+          "targetTitle": "Личные данные и национальность",
+          "description": "Vas a aprender a dar información personal como tu edad, nacionalidad e idioma que hablás. Esto te va a permitir completar formularios simples y responder preguntas básicas sobre vos.",
+          "subtopics": [
+            "Nacionalidades y países",
+            "Idiomas que hablás",
+            "La edad y cómo preguntarla",
+            "Pronombres personales",
+            "El verbo быть en presente"
+          ],
+          "prerequisites": ["ru-a1-saludos-presentaciones"]
+        },
+        {
+          "id": "ru-a1-numeros-cantidad",
+          "title": "Números y cantidades",
+          "targetTitle": "Числа и количество",
+          "description": "Vas a aprender los números cardinales y cómo usarlos para contar, dar precios y horarios básicos. Te va a servir para manejarte en situaciones cotidianas como compras o trámites simples.",
+          "subtopics": [
+            "Números del 1 al 20",
+            "Números del 20 al 100",
+            "Precios y moneda rusa",
+            "Preguntar y decir la hora",
+            "Cantidad y sustantivos contables"
+          ],
+          "prerequisites": ["ru-a1-datos-personales"]
+        },
+        {
+          "id": "ru-a1-sustantivos-genero",
+          "title": "Sustantivos, género y plural",
+          "targetTitle": "Существительные: род и множественное число",
+          "description": "Vas a aprender a identificar el género de los sustantivos rusos y a formar su plural. Esto es clave porque el género determina cómo se comportan las palabras en toda la gramática rusa.",
+          "subtopics": [
+            "Género masculino, femenino y neutro",
+            "Terminaciones típicas de cada género",
+            "Formación del plural regular",
+            "Plurales irregulares frecuentes",
+            "Práctica con vocabulario cotidiano"
+          ],
+          "prerequisites": ["ru-a1-numeros-cantidad"]
+        },
+        {
+          "id": "ru-a1-presente-verbos",
+          "title": "El presente de los verbos",
+          "targetTitle": "Настоящее время глаголов",
+          "description": "Vas a aprender a conjugar verbos regulares en presente para hablar de acciones habituales. Te va a servir para describir lo que hacés todos los días y lo que hacen otras personas.",
+          "subtopics": [
+            "Primera conjugación (-ать, -ять)",
+            "Segunda conjugación (-ить)",
+            "Verbos irregulares frecuentes",
+            "Negación con не",
+            "Preguntas con entonación y partículas"
+          ],
+          "prerequisites": ["ru-a1-sustantivos-genero"]
+        },
+        {
+          "id": "ru-a1-casos-introduccion",
+          "title": "Introducción al sistema de casos: nominativo y acusativo",
+          "targetTitle": "Введение в падежи: именительный и винительный",
+          "description": "Vas a entender para qué sirve el sistema de casos en ruso y vas a aprender a usar el nominativo y el acusativo en frases simples. Esto te va a dar la base para construir oraciones con sujeto y objeto directo.",
+          "subtopics": [
+            "Qué es un caso gramatical",
+            "El nominativo: sujeto de la oración",
+            "El acusativo: objeto directo",
+            "Acusativo con sustantivos animados e inanimados",
+            "Práctica con verbos de acción simple"
+          ],
+          "prerequisites": ["ru-a1-presente-verbos"]
+        },
+        {
+          "id": "ru-a1-familia-descripcion",
+          "title": "La familia y la descripción de personas",
+          "targetTitle": "Семья и описание людей",
+          "description": "Vas a aprender vocabulario de la familia y adjetivos para describir el aspecto físico y el carácter de alguien. Te va a servir para hablar de tus seres queridos y presentar a otras personas.",
+          "subtopics": [
+            "Miembros de la familia",
+            "Adjetivos de descripción física",
+            "Adjetivos de carácter",
+            "Posesivos (мой, твой, его, её)",
+            "Concordancia de adjetivos con sustantivos"
+          ],
+          "prerequisites": ["ru-a1-casos-introduccion"]
+        },
+        {
+          "id": "ru-a1-rutina-diaria",
+          "title": "La rutina diaria y la hora",
+          "targetTitle": "Распорядок дня и время",
+          "description": "Vas a aprender a describir tu rutina diaria usando verbos de acción y expresiones de tiempo. Esto te va a permitir contar qué hacés en un día típico, de la mañana a la noche.",
+          "subtopics": [
+            "Partes del día",
+            "Verbos reflexivos cotidianos",
+            "Días de la semana",
+            "Expresiones de frecuencia",
+            "Narrar una rutina simple"
+          ],
+          "prerequisites": ["ru-a1-familia-descripcion"]
+        },
+        {
+          "id": "ru-a1-comida-compras",
+          "title": "Comida, bebida y compras básicas",
+          "targetTitle": "Еда, напитки и покупки",
+          "description": "Vas a aprender vocabulario de comida y bebida, y frases útiles para hacer compras simples en un negocio o restaurante. Te va a servir para pedir lo que necesitás en situaciones cotidianas de consumo.",
+          "subtopics": [
+            "Alimentos y bebidas comunes",
+            "Pedir en un restaurante",
+            "Frases para comprar en una tienda",
+            "El genitivo en expresiones de cantidad",
+            "Diálogos de compra y venta"
+          ],
+          "prerequisites": ["ru-a1-rutina-diaria"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "ru-a2-casa-ciudad",
+          "title": "La casa, los muebles y la orientación en la ciudad",
+          "targetTitle": "Дом, мебель и ориентация в городе",
+          "description": "Vas a aprender a describir tu casa y a orientarte en la ciudad usando el caso preposicional. Te va a servir para dar y entender direcciones, y para hablar de dónde está cada cosa.",
+          "subtopics": [
+            "Partes de la casa y muebles",
+            "El caso preposicional (locativo)",
+            "Preposiciones de lugar (в, на)",
+            "Lugares de la ciudad",
+            "Pedir y dar indicaciones"
+          ],
+          "prerequisites": ["ru-a1-comida-compras"]
+        },
+        {
+          "id": "ru-a2-pasado-verbos",
+          "title": "El pasado de los verbos",
+          "targetTitle": "Прошедшее время глаголов",
+          "description": "Vas a aprender a formar el pasado de los verbos rusos según el género y número del sujeto. Esto te va a permitir contar cosas que ya pasaron, tanto en tu vida como en general.",
+          "subtopics": [
+            "Formación regular del pasado",
+            "Concordancia con el sujeto",
+            "Verbos irregulares en pasado",
+            "Marcadores temporales de pasado",
+            "Narrar hechos simples en pasado"
+          ],
+          "prerequisites": ["ru-a2-casa-ciudad"]
+        },
+        {
+          "id": "ru-a2-futuro-verbos",
+          "title": "El futuro de los verbos",
+          "targetTitle": "Будущее время глаголов",
+          "description": "Vas a aprender a formar el futuro simple y compuesto en ruso para hablar de planes y predicciones. Te va a servir para contar lo que vas a hacer o lo que va a pasar.",
+          "subtopics": [
+            "Futuro compuesto con быть",
+            "Futuro simple de verbos perfectivos",
+            "Expresiones de tiempo futuro",
+            "Planes y promesas",
+            "Diferencia inicial entre futuro simple y compuesto"
+          ],
+          "prerequisites": ["ru-a2-pasado-verbos"]
+        },
+        {
+          "id": "ru-a2-casos-dativo-instrumental",
+          "title": "El dativo y el instrumental: dar y usar",
+          "targetTitle": "Дательный и творительный падежи",
+          "description": "Vas a aprender a usar el dativo para expresar a quién se dirige una acción y el instrumental para indicar con qué o con quién se hace algo. Esto te va a servir para construir frases más completas y naturales.",
+          "subtopics": [
+            "El dativo: destinatario de la acción",
+            "Verbos que rigen dativo",
+            "El instrumental: medio e instrumento",
+            "El instrumental con быть y con quién",
+            "Práctica combinada de ambos casos"
+          ],
+          "prerequisites": ["ru-a2-futuro-verbos"]
+        },
+        {
+          "id": "ru-a2-aspecto-verbal",
+          "title": "El aspecto verbal: perfectivo e imperfectivo",
+          "targetTitle": "Виды глагола: совершенный и несовершенный",
+          "description": "Vas a aprender la diferencia entre el aspecto perfectivo y el imperfectivo en los verbos rusos. Te va a servir para expresar con precisión si una acción está terminada, en proceso o es habitual.",
+          "subtopics": [
+            "Qué es el aspecto verbal",
+            "Pares aspectuales comunes",
+            "Uso del imperfectivo para procesos y hábitos",
+            "Uso del perfectivo para acciones completadas",
+            "Práctica con narraciones cortas"
+          ],
+          "prerequisites": ["ru-a2-casos-dativo-instrumental"]
+        },
+        {
+          "id": "ru-a2-verbos-movimiento-basico",
+          "title": "Verbos de movimiento básicos: ir y venir",
+          "targetTitle": "Основные глаголы движения: идти/ходить, ехать/ездить",
+          "description": "Vas a aprender los verbos básicos de movimiento para hablar de desplazamientos a pie o en vehículo. Esto te va a servir para contar adónde vas, de dónde venís y cómo te movés habitualmente.",
+          "subtopics": [
+            "Идти vs ходить",
+            "Ехать vs ездить",
+            "Movimiento unidireccional vs habitual",
+            "Medios de transporte",
+            "Diálogos sobre desplazamientos"
+          ],
+          "prerequisites": ["ru-a2-aspecto-verbal"]
+        },
+        {
+          "id": "ru-a2-ropa-clima",
+          "title": "Ropa, clima y estaciones del año",
+          "targetTitle": "Одежда, погода и времена года",
+          "description": "Vas a aprender vocabulario de ropa y clima para describir cómo te vestís según la estación del año. Te va a servir para hablar del tiempo y dar recomendaciones sobre qué ponerse.",
+          "subtopics": [
+            "Prendas de ropa",
+            "Estaciones del año",
+            "Vocabulario del clima",
+            "Adjetivos de temperatura y sensación",
+            "Recomendaciones con hay que / conviene"
+          ],
+          "prerequisites": ["ru-a2-verbos-movimiento-basico"]
+        },
+        {
+          "id": "ru-a2-salud-cuerpo",
+          "title": "Salud, cuerpo y malestares",
+          "targetTitle": "Здоровье, тело и недомогания",
+          "description": "Vas a aprender vocabulario del cuerpo humano y frases para describir dolores y malestares. Esto te va a servir para comunicarte en una consulta médica o farmacia básica.",
+          "subtopics": [
+            "Partes del cuerpo",
+            "Expresar dolor y malestar",
+            "Verbos relacionados con la salud",
+            "En la farmacia y el consultorio",
+            "Dar consejos de salud simples"
+          ],
+          "prerequisites": ["ru-a2-ropa-clima"]
+        },
+        {
+          "id": "ru-a2-planes-invitaciones",
+          "title": "Planes, invitaciones y tiempo libre",
+          "targetTitle": "Планы, приглашения и свободное время",
+          "description": "Vas a aprender a proponer planes, invitar a alguien y hablar de tus actividades de tiempo libre. Te va a servir para organizar encuentros sociales y hablar de tus gustos.",
+          "subtopics": [
+            "Invitar y aceptar o rechazar",
+            "Actividades de tiempo libre",
+            "Expresar gustos y preferencias",
+            "Hacer y cambiar planes",
+            "Quedar en un lugar y una hora"
+          ],
+          "prerequisites": ["ru-a2-salud-cuerpo"]
+        },
+        {
+          "id": "ru-a2-comparativos-adjetivos",
+          "title": "Adjetivos, comparativos y superlativos",
+          "targetTitle": "Прилагательные, сравнительная и превосходная степень",
+          "description": "Vas a aprender a formar comparativos y superlativos de los adjetivos para comparar personas, cosas y situaciones. Esto te va a servir para dar opiniones y hacer comparaciones en la vida cotidiana.",
+          "subtopics": [
+            "Declinación básica de adjetivos",
+            "Comparativo simple",
+            "Comparativo con más/menos que",
+            "Superlativo",
+            "Práctica de comparaciones cotidianas"
+          ],
+          "prerequisites": ["ru-a2-planes-invitaciones"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "ru-b1-aspecto-verbal-avanzado",
+          "title": "El aspecto verbal en profundidad",
+          "targetTitle": "Виды глагола: углублённое изучение",
+          "description": "Vas a profundizar en los matices del aspecto verbal en distintos tiempos y contextos narrativos. Te va a servir para narrar con precisión y evitar errores comunes de hispanohablantes.",
+          "subtopics": [
+            "Aspecto en pasado narrativo",
+            "Aspecto en órdenes e imperativo",
+            "Aspecto con negación",
+            "Verbos de aspecto único",
+            "Errores frecuentes y cómo evitarlos"
+          ],
+          "prerequisites": ["ru-a2-aspecto-verbal"]
+        },
+        {
+          "id": "ru-b1-verbos-movimiento-avanzado",
+          "title": "Verbos de movimiento con prefijos",
+          "targetTitle": "Глаголы движения с приставками",
+          "description": "Vas a aprender los prefijos que se combinan con los verbos de movimiento para expresar entrar, salir, llegar y otras acciones espaciales. Esto te va a permitir narrar desplazamientos complejos con precisión.",
+          "subtopics": [
+            "Prefijos по-, при-, у-",
+            "Prefijos в-, вы-, пере-",
+            "Verbos de movimiento no direccionales con prefijo",
+            "Combinación con preposiciones de lugar",
+            "Narración de un trayecto completo"
+          ],
+          "prerequisites": ["ru-a2-verbos-movimiento-basico", "ru-b1-aspecto-verbal-avanzado"]
+        },
+        {
+          "id": "ru-b1-declinacion-completa",
+          "title": "Declinación completa de sustantivos y adjetivos",
+          "targetTitle": "Полное склонение существительных и прилагательных",
+          "description": "Vas a repasar y sistematizar los seis casos del ruso para sustantivos y adjetivos en singular y plural. Te va a servir para hablar y escribir con mayor corrección gramatical en cualquier contexto.",
+          "subtopics": [
+            "Repaso de los seis casos",
+            "Declinación de adjetivos en plural",
+            "Sustantivos de declinación irregular",
+            "Concordancia caso por caso",
+            "Práctica integradora de declinación"
+          ],
+          "prerequisites": ["ru-a2-casos-dativo-instrumental"]
+        },
+        {
+          "id": "ru-b1-numerales-casos",
+          "title": "Numerales y su combinación con casos",
+          "targetTitle": "Числительные и их сочетание с падежами",
+          "description": "Vas a aprender a declinar los numerales y a combinarlos correctamente con sustantivos según el caso que exigen. Esto te va a servir para hablar con precisión de cantidades, fechas y edades.",
+          "subtopics": [
+            "Numerales cardinales y su declinación",
+            "Numerales ordinales",
+            "Concordancia numeral-sustantivo",
+            "Fechas y años",
+            "Expresiones de edad y cantidad compleja"
+          ],
+          "prerequisites": ["ru-b1-declinacion-completa"]
+        },
+        {
+          "id": "ru-b1-opinion-acuerdo",
+          "title": "Dar opinión, acuerdo y desacuerdo",
+          "targetTitle": "Выражение мнения, согласия и несогласия",
+          "description": "Vas a aprender expresiones para dar tu opinión, mostrar acuerdo o desacuerdo de manera educada. Te va a servir para participar en conversaciones y pequeños debates cotidianos.",
+          "subtopics": [
+            "Expresiones para dar opinión",
+            "Mostrar acuerdo",
+            "Mostrar desacuerdo educadamente",
+            "Matizar una opinión",
+            "Diálogos de intercambio de opiniones"
+          ],
+          "prerequisites": ["ru-a2-comparativos-adjetivos"]
+        },
+        {
+          "id": "ru-b1-narracion-pasado",
+          "title": "Narrar hechos pasados y biografías",
+          "targetTitle": "Рассказ о прошлом и биографии",
+          "description": "Vas a aprender a estructurar relatos y biografías usando conectores temporales y aspecto verbal adecuado. Esto te va a servir para contar tu historia personal o la de otra persona de forma fluida.",
+          "subtopics": [
+            "Conectores temporales de narración",
+            "Estructura de una biografía",
+            "Combinación de aspectos en el relato",
+            "Hitos de vida y logros",
+            "Práctica de narración oral y escrita"
+          ],
+          "prerequisites": ["ru-b1-aspecto-verbal-avanzado"]
+        },
+        {
+          "id": "ru-b1-trabajo-estudios",
+          "title": "Trabajo, estudios y profesiones",
+          "targetTitle": "Работа, учёба и профессии",
+          "description": "Vas a aprender vocabulario sobre profesiones, estudios y el ámbito laboral para hablar de tu trayectoria. Te va a servir para desenvolverte en entrevistas simples y conversaciones sobre tu carrera.",
+          "subtopics": [
+            "Profesiones y oficios",
+            "El sistema educativo ruso",
+            "Vocabulario de la oficina y el trabajo",
+            "Hablar de tu experiencia laboral",
+            "Entrevista de trabajo simulada"
+          ],
+          "prerequisites": ["ru-b1-opinion-acuerdo"]
+        },
+        {
+          "id": "ru-b1-viajes-transporte",
+          "title": "Viajes y transporte",
+          "targetTitle": "Путешествия и транспорт",
+          "description": "Vas a aprender vocabulario y frases útiles para planear viajes, comprar pasajes y moverte en distintos medios de transporte. Esto te va a servir para manejarte en situaciones reales de viaje en Rusia.",
+          "subtopics": [
+            "En el aeropuerto y la estación",
+            "Comprar pasajes y reservas",
+            "El transporte público en Rusia",
+            "Problemas e imprevistos de viaje",
+            "Contar una experiencia de viaje"
+          ],
+          "prerequisites": ["ru-b1-verbos-movimiento-avanzado"]
+        },
+        {
+          "id": "ru-b1-condicional-subjuntivo",
+          "title": "El condicional y el modo subjuntivo con бы",
+          "targetTitle": "Условное наклонение с частицей бы",
+          "description": "Vas a aprender a formar oraciones condicionales e hipotéticas usando la partícula бы. Te va a servir para expresar deseos, consejos y situaciones imaginarias.",
+          "subtopics": [
+            "Formación del condicional con бы",
+            "Condicionales reales e hipotéticas",
+            "Expresar deseos con бы",
+            "Dar consejos con бы",
+            "Práctica de situaciones hipotéticas"
+          ],
+          "prerequisites": ["ru-b1-narracion-pasado"]
+        },
+        {
+          "id": "ru-b1-oraciones-subordinadas",
+          "title": "Oraciones subordinadas y conectores básicos",
+          "targetTitle": "Сложноподчинённые предложения и основные союзы",
+          "description": "Vas a aprender a construir oraciones subordinadas causales, temporales y condicionales con los conectores más usados. Esto te va a permitir expresar ideas más complejas y mejor conectadas.",
+          "subtopics": [
+            "Conectores causales (потому что, так как)",
+            "Conectores temporales (когда, пока)",
+            "Conectores condicionales (если)",
+            "El pronombre relativo который",
+            "Práctica de oraciones complejas"
+          ],
+          "prerequisites": ["ru-b1-condicional-subjuntivo"]
+        },
+        {
+          "id": "ru-b1-medios-comunicacion",
+          "title": "Medios de comunicación y tecnología",
+          "targetTitle": "Средства массовой информации и технологии",
+          "description": "Vas a aprender vocabulario sobre medios de comunicación, internet y tecnología para hablar de noticias y redes sociales. Te va a servir para entender titulares simples y comentar lo que leés o ves.",
+          "subtopics": [
+            "Vocabulario de internet y redes sociales",
+            "Tipos de medios de comunicación",
+            "Comentar una noticia simple",
+            "Ventajas y desventajas de la tecnología",
+            "Debate guiado sobre medios"
+          ],
+          "prerequisites": ["ru-b1-oraciones-subordinadas"]
+        },
+        {
+          "id": "ru-b1-cultura-rusa-introduccion",
+          "title": "Introducción a la cultura rusa",
+          "targetTitle": "Введение в русскую культуру",
+          "description": "Vas a conocer aspectos clave de las costumbres, festividades y referentes culturales de Rusia. Esto te va a servir para entender mejor el contexto en el que se usa el idioma que estás aprendiendo.",
+          "subtopics": [
+            "Festividades rusas principales",
+            "Costumbres y etiqueta social",
+            "Referentes de la cultura popular",
+            "Comida típica rusa",
+            "Comparación cultural con Argentina"
+          ],
+          "prerequisites": ["ru-b1-trabajo-estudios"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "ru-b2-participios",
+          "title": "Los participios (причастия)",
+          "targetTitle": "Причастия",
+          "description": "Vas a aprender a formar y usar los participios activos y pasivos en ruso para describir acciones de forma más compacta. Te va a servir para entender textos escritos y mejorar tu estilo al escribir.",
+          "subtopics": [
+            "Participios activos de presente",
+            "Participios activos de pasado",
+            "Participios pasivos de presente",
+            "Participios pasivos de pasado",
+            "Transformación de oraciones con participios"
+          ],
+          "prerequisites": ["ru-b1-declinacion-completa"]
+        },
+        {
+          "id": "ru-b2-gerundios",
+          "title": "Los gerundios (деепричастия)",
+          "targetTitle": "Деепричастия",
+          "description": "Vas a aprender a formar gerundios para expresar acciones simultáneas o anteriores de manera elegante. Esto te va a servir para dar fluidez y precisión a tus narraciones orales y escritas.",
+          "subtopics": [
+            "Gerundio imperfectivo",
+            "Gerundio perfectivo",
+            "Uso del gerundio en narración",
+            "Diferencia entre participio y gerundio",
+            "Práctica de redacción con gerundios"
+          ],
+          "prerequisites": ["ru-b2-participios"]
+        },
+        {
+          "id": "ru-b2-voz-pasiva",
+          "title": "La voz pasiva y las construcciones impersonales",
+          "targetTitle": "Страдательный залог и безличные конструкции",
+          "description": "Vas a aprender a construir oraciones pasivas e impersonales típicas del ruso formal y periodístico. Te va a servir para entender y producir textos donde no se enfatiza quién realiza la acción.",
+          "subtopics": [
+            "Voz pasiva con participios pasivos",
+            "Voz pasiva con verbos reflexivos en -ся",
+            "Construcciones impersonales comunes",
+            "Uso en textos administrativos",
+            "Transformar oraciones activas en pasivas"
+          ],
+          "prerequisites": ["ru-b2-participios"]
+        },
+        {
+          "id": "ru-b2-discurso-indirecto",
+          "title": "El discurso indirecto y reportado",
+          "targetTitle": "Косвенная речь",
+          "description": "Vas a aprender a reportar lo que dijo otra persona usando el discurso indirecto en ruso. Esto te va a servir para contar conversaciones, noticias y entrevistas sin citar literalmente.",
+          "subtopics": [
+            "Transformación de preguntas directas a indirectas",
+            "Transformación de afirmaciones",
+            "Verbos introductorios de discurso reportado",
+            "Cambios de pronombres y tiempos",
+            "Práctica con entrevistas y noticias"
+          ],
+          "prerequisites": ["ru-b1-oraciones-subordinadas"]
+        },
+        {
+          "id": "ru-b2-argumentacion",
+          "title": "Argumentación y debate",
+          "targetTitle": "Аргументация и дискуссия",
+          "description": "Vas a aprender estructuras para argumentar una postura, dar ejemplos y refutar ideas contrarias. Te va a servir para participar en debates formales e informales con mayor soltura.",
+          "subtopics": [
+            "Presentar una tesis",
+            "Dar ejemplos y evidencia",
+            "Refutar un argumento",
+            "Conectores argumentativos",
+            "Debate simulado sobre un tema de actualidad"
+          ],
+          "prerequisites": ["ru-b1-medios-comunicacion"]
+        },
+        {
+          "id": "ru-b2-medio-ambiente-sociedad",
+          "title": "Medio ambiente y problemas sociales",
+          "targetTitle": "Экология и социальные проблемы",
+          "description": "Vas a aprender vocabulario sobre ecología, medio ambiente y problemáticas sociales actuales. Esto te va a servir para comentar noticias y expresar tu postura sobre temas de interés general.",
+          "subtopics": [
+            "Vocabulario de ecología y clima",
+            "Problemas sociales contemporáneos",
+            "Expresar causa y consecuencia",
+            "Proponer soluciones",
+            "Comentario de un artículo temático"
+          ],
+          "prerequisites": ["ru-b2-argumentacion"]
+        },
+        {
+          "id": "ru-b2-economia-politica-basico",
+          "title": "Economía y política: vocabulario básico",
+          "targetTitle": "Экономика и политика: базовая лексика",
+          "description": "Vas a aprender el vocabulario esencial para entender noticias de economía y política en ruso. Te va a servir para seguir conversaciones y titulares sobre temas de actualidad.",
+          "subtopics": [
+            "Vocabulario económico básico",
+            "Vocabulario político básico",
+            "Sistema político ruso en líneas generales",
+            "Lectura de titulares",
+            "Resumen oral de una noticia"
+          ],
+          "prerequisites": ["ru-b2-medio-ambiente-sociedad"]
+        },
+        {
+          "id": "ru-b2-literatura-introduccion",
+          "title": "Introducción a la literatura rusa",
+          "targetTitle": "Введение в русскую литературу",
+          "description": "Vas a conocer autores y obras clave de la literatura rusa a través de fragmentos adaptados. Esto te va a servir como puerta de entrada a la lectura literaria en ruso.",
+          "subtopics": [
+            "Autores clásicos del siglo XIX",
+            "Fragmentos adaptados de Pushkin",
+            "Fragmentos adaptados de Chéjov",
+            "Vocabulario literario básico",
+            "Comentario guiado de un fragmento"
+          ],
+          "prerequisites": ["ru-b1-cultura-rusa-introduccion"]
+        },
+        {
+          "id": "ru-b2-cine-arte",
+          "title": "Cine, arte y crítica",
+          "targetTitle": "Кино, искусство и критика",
+          "description": "Vas a aprender vocabulario para hablar de cine y arte, y a expresar una crítica fundamentada. Te va a servir para comentar películas, exposiciones y obras de forma más elaborada.",
+          "subtopics": [
+            "Vocabulario de cine y artes visuales",
+            "Describir una obra o película",
+            "Dar una crítica positiva y negativa",
+            "Comparar estilos y corrientes",
+            "Reseña escrita breve"
+          ],
+          "prerequisites": ["ru-b2-literatura-introduccion"]
+        },
+        {
+          "id": "ru-b2-conectores-avanzados",
+          "title": "Conectores lógicos avanzados",
+          "targetTitle": "Продвинутые логические связки",
+          "description": "Vas a ampliar tu repertorio de conectores para expresar contraste, concesión y consecuencia con precisión. Esto te va a servir para redactar y hablar con un discurso más cohesivo y sofisticado.",
+          "subtopics": [
+            "Conectores de contraste",
+            "Conectores de concesión",
+            "Conectores de consecuencia",
+            "Conectores de adición y énfasis",
+            "Redacción cohesionada con conectores variados"
+          ],
+          "prerequisites": ["ru-b2-discurso-indirecto"]
+        },
+        {
+          "id": "ru-b2-estilo-formal-informal",
+          "title": "Estilo formal e informal",
+          "targetTitle": "Официальный и неформальный стиль",
+          "description": "Vas a aprender a distinguir y usar el registro formal e informal según la situación comunicativa. Te va a servir para adaptar tu forma de hablar y escribir al contexto adecuado.",
+          "subtopics": [
+            "Marcadores de formalidad",
+            "Vocabulario coloquial frecuente",
+            "Fórmulas de cortesía avanzadas",
+            "Cambio de registro según el interlocutor",
+            "Práctica de ambos registros en diálogo"
+          ],
+          "prerequisites": ["ru-b2-conectores-avanzados"]
+        },
+        {
+          "id": "ru-b2-correspondencia-escrita",
+          "title": "Correspondencia escrita y trámites",
+          "targetTitle": "Деловая переписка и документы",
+          "description": "Vas a aprender a redactar correos formales, cartas y completar trámites administrativos básicos en ruso. Esto te va a servir para comunicarte por escrito en contextos laborales o burocráticos.",
+          "subtopics": [
+            "Estructura de un correo formal",
+            "Fórmulas de apertura y cierre",
+            "Redacción de una solicitud",
+            "Vocabulario de trámites administrativos",
+            "Práctica de redacción formal completa"
+          ],
+          "prerequisites": ["ru-b2-estilo-formal-informal"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "ru-c1-matices-aspecto",
+          "title": "Matices avanzados del aspecto verbal",
+          "targetTitle": "Тонкости употребления видов глагола",
+          "description": "Vas a profundizar en usos excepcionales y matices finos del aspecto verbal en contextos literarios y coloquiales. Te va a servir para interpretar y producir textos con un nivel de precisión casi nativo.",
+          "subtopics": [
+            "Aspecto en contextos retóricos",
+            "Aspecto en instrucciones y recetas",
+            "Matices de cortesía según el aspecto",
+            "Aspecto en el habla coloquial",
+            "Análisis de textos auténticos"
+          ],
+          "prerequisites": ["ru-b1-aspecto-verbal-avanzado"]
+        },
+        {
+          "id": "ru-c1-registro-formal",
+          "title": "Registro formal y académico",
+          "targetTitle": "Официально-деловой и академический стиль",
+          "description": "Vas a aprender las características del registro académico y formal escrito, incluyendo vocabulario especializado y estructuras fijas. Esto te va a servir para redactar informes, ensayos y textos académicos en ruso.",
+          "subtopics": [
+            "Características del estilo académico",
+            "Vocabulario especializado frecuente",
+            "Estructuras fijas de textos formales",
+            "Citar fuentes y referencias",
+            "Redacción de un informe breve"
+          ],
+          "prerequisites": ["ru-b2-correspondencia-escrita"]
+        },
+        {
+          "id": "ru-c1-expresiones-idiomaticas",
+          "title": "Expresiones idiomáticas y modismos",
+          "targetTitle": "Идиомы и устойчивые выражения",
+          "description": "Vas a aprender expresiones idiomáticas y modismos de uso frecuente en el ruso cotidiano. Te va a servir para entender el habla natural de los rusos y sonar más auténtico al hablar.",
+          "subtopics": [
+            "Modismos con partes del cuerpo",
+            "Modismos con animales",
+            "Refranes y proverbios comunes",
+            "Expresiones de uso coloquial frecuente",
+            "Práctica de interpretación de modismos en contexto"
+          ],
+          "prerequisites": ["ru-b2-estilo-formal-informal"]
+        },
+        {
+          "id": "ru-c1-prensa-analisis",
+          "title": "Análisis de prensa y noticias",
+          "targetTitle": "Анализ прессы и новостей",
+          "description": "Vas a aprender a analizar artículos periodísticos identificando postura, estructura y recursos retóricos. Esto te va a servir para leer críticamente medios rusos y formarte tu propia opinión informada.",
+          "subtopics": [
+            "Estructura de una noticia",
+            "Identificar la postura del autor",
+            "Recursos retóricos en la prensa",
+            "Comparación de distintas fuentes",
+            "Resumen crítico de un artículo"
+          ],
+          "prerequisites": ["ru-b2-economia-politica-basico"]
+        },
+        {
+          "id": "ru-c1-ensayo-argumentativo",
+          "title": "El ensayo argumentativo",
+          "targetTitle": "Эссе-рассуждение",
+          "description": "Vas a aprender a estructurar un ensayo argumentativo completo, con introducción, desarrollo y conclusión. Te va a servir para expresar tu postura sobre temas complejos de forma organizada y persuasiva.",
+          "subtopics": [
+            "Estructura del ensayo argumentativo",
+            "Introducción y planteamiento de la tesis",
+            "Desarrollo de argumentos y contraargumentos",
+            "Conclusión efectiva",
+            "Redacción de un ensayo completo"
+          ],
+          "prerequisites": ["ru-c1-prensa-analisis"]
+        },
+        {
+          "id": "ru-c1-historia-rusia",
+          "title": "Historia de Rusia y referencias culturales",
+          "targetTitle": "История России и культурные отсылки",
+          "description": "Vas a conocer los hitos principales de la historia rusa y las referencias culturales que aparecen frecuentemente en el discurso cotidiano. Esto te va a servir para entender alusiones históricas en conversaciones y textos.",
+          "subtopics": [
+            "Hitos de la historia rusa",
+            "Figuras históricas relevantes",
+            "Referencias históricas en el lenguaje cotidiano",
+            "Simbolismo cultural y nacional",
+            "Debate sobre memoria histórica"
+          ],
+          "prerequisites": ["ru-b2-literatura-introduccion"]
+        },
+        {
+          "id": "ru-c1-lexico-abstracto",
+          "title": "Léxico abstracto y nominalización",
+          "targetTitle": "Абстрактная лексика и номинализация",
+          "description": "Vas a aprender a usar sustantivos abstractos y a transformar verbos y adjetivos en sustantivos para un estilo más elaborado. Te va a servir para escribir y hablar sobre ideas complejas con mayor precisión.",
+          "subtopics": [
+            "Sufijos de nominalización frecuentes",
+            "Sustantivos abstractos comunes",
+            "Transformación de oraciones verbales en nominales",
+            "Uso en textos académicos y periodísticos",
+            "Práctica de reescritura con léxico abstracto"
+          ],
+          "prerequisites": ["ru-c1-registro-formal"]
+        },
+        {
+          "id": "ru-c1-ironia-humor",
+          "title": "Ironía, humor y dobles sentidos",
+          "targetTitle": "Ирония, юмор и двойной смысл",
+          "description": "Vas a aprender a reconocer y usar la ironía y el humor en ruso, incluyendo juegos de palabras frecuentes. Esto te va a servir para entender chistes, memes y conversaciones informales con matices.",
+          "subtopics": [
+            "Marcadores de ironía en el habla",
+            "Humor en la cultura rusa",
+            "Juegos de palabras frecuentes",
+            "Interpretación de memes y chistes",
+            "Práctica de producción humorística"
+          ],
+          "prerequisites": ["ru-c1-expresiones-idiomaticas"]
+        },
+        {
+          "id": "ru-c1-debate-formal",
+          "title": "Debate formal y negociación",
+          "targetTitle": "Формальные дебаты и переговоры",
+          "description": "Vas a aprender estrategias lingüísticas para participar en debates formales y procesos de negociación. Te va a servir para defender posturas, ceder posiciones y llegar a acuerdos en ruso.",
+          "subtopics": [
+            "Estructura de un debate formal",
+            "Estrategias de negociación",
+            "Ceder y proponer alternativas",
+            "Lenguaje diplomático",
+            "Simulación de una negociación completa"
+          ],
+          "prerequisites": ["ru-c1-ensayo-argumentativo"]
+        },
+        {
+          "id": "ru-c1-literatura-analisis",
+          "title": "Análisis literario avanzado",
+          "targetTitle": "Продвинутый анализ художественного текста",
+          "description": "Vas a aprender a analizar textos literarios identificando estilo, narrador y recursos estéticos. Esto te va a servir para leer literatura rusa original con una comprensión más profunda.",
+          "subtopics": [
+            "Tipos de narrador",
+            "Recursos estilísticos frecuentes",
+            "Análisis de un cuento corto",
+            "Contexto histórico-literario",
+            "Comentario de texto guiado"
+          ],
+          "prerequisites": ["ru-c1-historia-rusia"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "ru-c2-estilistica-textual",
+          "title": "Estilística textual y géneros discursivos",
+          "targetTitle": "Текстовая стилистика и речевые жанры",
+          "description": "Vas a aprender a identificar y producir distintos géneros discursivos con sus particularidades estilísticas propias. Te va a servir para moverte con total naturalidad entre registros y tipos de texto.",
+          "subtopics": [
+            "Géneros discursivos principales",
+            "Estilo científico vs periodístico vs literario",
+            "Marcas estilísticas distintivas",
+            "Producción de un texto en género elegido",
+            "Análisis comparativo de estilos"
+          ],
+          "prerequisites": ["ru-c1-lexico-abstracto"]
+        },
+        {
+          "id": "ru-c2-dialectos-variedades",
+          "title": "Variedades regionales y sociolectos",
+          "targetTitle": "Региональные варианты и социолекты",
+          "description": "Vas a conocer las principales variedades regionales del ruso y cómo varía el habla según el grupo social. Esto te va a servir para entender acentos y usos particulares al interactuar con hablantes de distintas regiones.",
+          "subtopics": [
+            "Variedades regionales del ruso",
+            "Sociolectos urbanos y rurales",
+            "Jerga juvenil",
+            "Diferencias entre generaciones",
+            "Comprensión auditiva de distintos acentos"
+          ],
+          "prerequisites": ["ru-c1-ironia-humor"]
+        },
+        {
+          "id": "ru-c2-lenguaje-juridico-administrativo",
+          "title": "Lenguaje jurídico y administrativo",
+          "targetTitle": "Юридический и административный язык",
+          "description": "Vas a aprender el vocabulario y las estructuras típicas de textos jurídicos y administrativos rusos. Te va a servir para comprender y redactar documentos legales y oficiales con precisión.",
+          "subtopics": [
+            "Vocabulario jurídico frecuente",
+            "Estructura de documentos oficiales",
+            "Fórmulas fijas administrativas",
+            "Lectura de un contrato simplificado",
+            "Redacción de un documento formal"
+          ],
+          "prerequisites": ["ru-c1-registro-formal"]
+        },
+        {
+          "id": "ru-c2-lenguaje-cientifico-tecnico",
+          "title": "Lenguaje científico y técnico",
+          "targetTitle": "Научно-технический язык",
+          "description": "Vas a aprender las convenciones del lenguaje científico y técnico ruso, incluyendo terminología especializada. Esto te va a servir para leer y producir textos académicos y técnicos de tu área de interés.",
+          "subtopics": [
+            "Terminología científica general",
+            "Estructura de un artículo científico",
+            "Precisión y objetividad en el estilo técnico",
+            "Lectura de un artículo especializado",
+            "Redacción de un resumen técnico"
+          ],
+          "prerequisites": ["ru-c1-lexico-abstracto"]
+        },
+        {
+          "id": "ru-c2-traduccion-interpretacion",
+          "title": "Traducción e interpretación",
+          "targetTitle": "Перевод и устная интерпретация",
+          "description": "Vas a practicar técnicas de traducción e interpretación entre el ruso y el español en distintos registros. Te va a servir para desempeñarte en contextos que requieran mediación lingüística profesional.",
+          "subtopics": [
+            "Técnicas de traducción escrita",
+            "Interpretación consecutiva básica",
+            "Falsos amigos y trampas frecuentes",
+            "Traducción de textos especializados",
+            "Práctica de interpretación en vivo"
+          ],
+          "prerequisites": ["ru-c2-lenguaje-cientifico-tecnico"]
+        },
+        {
+          "id": "ru-c2-retorica-discurso-publico",
+          "title": "Retórica y discurso público",
+          "targetTitle": "Риторика и публичная речь",
+          "description": "Vas a aprender técnicas retóricas para preparar y dar discursos públicos persuasivos en ruso. Esto te va a servir para hablar en público con impacto, claridad y dominio del idioma.",
+          "subtopics": [
+            "Estructura de un discurso público",
+            "Recursos retóricos persuasivos",
+            "Entonación y énfasis en la oratoria",
+            "Preparación de un discurso propio",
+            "Presentación oral ante público"
+          ],
+          "prerequisites": ["ru-c1-debate-formal"]
+        },
+        {
+          "id": "ru-c2-literatura-clasicos-contemporaneos",
+          "title": "Clásicos y literatura contemporánea",
+          "targetTitle": "Классика и современная литература",
+          "description": "Vas a profundizar en obras clásicas y contemporáneas de la literatura rusa, comparando estilos y épocas. Te va a servir para desarrollar un criterio propio sobre la evolución literaria rusa.",
+          "subtopics": [
+            "Grandes clásicos del siglo XIX y XX",
+            "Autores contemporáneos relevantes",
+            "Comparación de estilos entre épocas",
+            "Lectura y comentario de una obra contemporánea",
+            "Ensayo comparativo final"
+          ],
+          "prerequisites": ["ru-c1-literatura-analisis"]
+        },
+        {
+          "id": "ru-c2-dominio-integral",
+          "title": "Dominio integral y perfeccionamiento estilístico",
+          "targetTitle": "Полное владение языком и стилистическое совершенствование",
+          "description": "Vas a integrar todos los registros, géneros y matices aprendidos para perfeccionar tu estilo personal en ruso. Esto te va a servir para alcanzar un dominio equiparable al de un hablante nativo culto.",
+          "subtopics": [
+            "Autoevaluación de competencias integradas",
+            "Pulido de matices estilísticos personales",
+            "Producción libre en distintos géneros",
+            "Retroalimentación y corrección fina",
+            "Proyecto final de dominio integral"
+          ],
+          "prerequisites": ["ru-c2-retorica-discurso-publico", "ru-c2-literatura-clasicos-contemporaneos"]
+        }
+      ]
+    }
+  ]
+}

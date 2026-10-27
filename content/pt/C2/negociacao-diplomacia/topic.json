@@ -1,0 +1,507 @@
+{
+  "id": "pt-c2-negociacao-diplomacia",
+  "level": "C2",
+  "order": 6,
+  "title": "Lenguaje de negociación y diplomacia",
+  "targetTitle": "Linguagem de negociação e diplomacia",
+  "description": "Vas a aprender estrategias de persuasión y lenguaje diplomático para manejar conflictos verbales. Te sirve para participar con soltura en reuniones y negociaciones formales.",
+  "objectives": [
+    "Vas a poder usar estructuras persuasivas (condicional, modales, impersonales) para argumentar y convencer en contextos formales.",
+    "Vas a poder aplicar eufemismos y lenguaje diplomático para comunicar desacuerdos o malas noticias sin confrontar.",
+    "Vas a poder manejar conflictos verbales desactivando tensión y redirigiendo la conversación hacia una solución.",
+    "Vas a poder manejar el vocabulario y las fórmulas típicas de reuniones y negociaciones formales en portugués.",
+    "Vas a poder simular por escrito una negociación completa combinando persuasión, diplomacia y cierre de acuerdo."
+  ],
+  "prerequisites": [
+    "pt-c2-escrita-criativa"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "estrategias-de-persuasion",
+      "day": 1,
+      "title": "Estrategias de persuasión",
+      "goal": "vas a poder usar estructuras persuasivas (condicional, modales, construcciones impersonales) para argumentar y convencer en portugués formal.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El condicional suaviza propuestas y las hace más persuasivas: 'Seria interessante considerar...' en vez de 'Eu quero que você considere'.",
+        "Verbos modales como 'poder', 'dever', 'convir' matizan la fuerza de una sugerencia sin imponerla directamente.",
+        "Las construcciones impersonales ('é importante que', 'convém ressaltar que') despersonalizan el argumento y lo hacen sonar más objetivo.",
+        "Las preguntas retóricas y las apelaciones al interés común ('não seria mais vantajoso para ambos...?') son una técnica clásica de persuasión diplomática.",
+        "Repetir ideas clave con sinónimos (paráfrasis) refuerza el argumento sin sonar repetitivo, técnica muy usada en negociación."
+      ],
+      "examples": [
+        {
+          "target": "Seria interessante considerarmos uma proposta intermediária.",
+          "es": "Sería interesante que consideráramos una propuesta intermedia."
+        },
+        {
+          "target": "Convém ressaltar que essa solução beneficia as duas partes.",
+          "es": "Conviene destacar que esta solución beneficia a las dos partes."
+        },
+        {
+          "target": "Não seria mais vantajoso para ambos chegarmos a um meio-termo?",
+          "es": "¿No sería más ventajoso para ambos llegar a un término medio?"
+        },
+        {
+          "target": "Poderíamos, talvez, revisar os termos do contrato antes de fechar o acordo.",
+          "es": "Podríamos, tal vez, revisar los términos del contrato antes de cerrar el acuerdo."
+        },
+        {
+          "target": "É fundamental que ambas as partes cedam em algum ponto.",
+          "es": "Es fundamental que ambas partes cedan en algún punto."
+        },
+        {
+          "target": "Entendo sua posição, mas gostaria de apresentar outro ângulo da questão.",
+          "es": "Entiendo tu postura, pero me gustaría presentar otro ángulo de la cuestión."
+        },
+        {
+          "target": "Se chegarmos a um consenso hoje, evitamos atrasos desnecessários.",
+          "es": "Si llegamos a un consenso hoy, evitamos atrasos innecesarios."
+        },
+        {
+          "target": "Nossa proposta busca atender aos interesses de todos os envolvidos.",
+          "es": "Nuestra propuesta busca atender los intereses de todos los involucrados."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu quero que você aceite minha proposta agora.",
+          "right": "Gostaria de propor que avaliássemos essa alternativa.",
+          "why": "En lenguaje de negociación formal conviene suavizar el pedido con condicional e imperfecto del subjuntivo, en vez de un pedido directo con 'querer', que suena impositivo."
+        },
+        {
+          "wrong": "Você deve aceitar isso.",
+          "right": "Seria recomendável considerar essa alternativa.",
+          "why": "'Deve' suena a obligación fuerte; en negociación conviene matizar con formas más suaves para no generar resistencia."
+        },
+        {
+          "wrong": "Eu acho que devemos aceitar essa condição.",
+          "right": "Poderíamos considerar essa condição.",
+          "why": "En diplomacia conviene incluir a la otra parte en el verbo ('poderíamos') para generar sensación de colaboración, no de imposición unilateral."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "chegar a um meio-termo",
+          "es": "llegar a un término medio",
+          "example": "Depois de horas de debate, conseguimos chegar a um meio-termo.",
+          "exampleEs": "Después de horas de debate, logramos llegar a un término medio."
+        },
+        {
+          "target": "ceder em algum ponto",
+          "es": "ceder en algún punto",
+          "example": "Para o acordo avançar, alguém precisa ceder em algum ponto.",
+          "exampleEs": "Para que el acuerdo avance, alguien tiene que ceder en algún punto."
+        },
+        {
+          "target": "pesar os prós e os contras",
+          "es": "sopesar los pros y los contras",
+          "example": "Antes de decidir, vamos pesar os prós e os contras de cada proposta.",
+          "exampleEs": "Antes de decidir, vamos a sopesar los pros y los contras de cada propuesta."
+        },
+        {
+          "target": "abrir mão de",
+          "es": "renunciar a / ceder algo",
+          "example": "A empresa teve que abrir mão de parte do lucro para fechar o contrato.",
+          "exampleEs": "La empresa tuvo que renunciar a parte de la ganancia para cerrar el contrato."
+        }
+      ]
+    },
+    {
+      "id": "linguagem-diplomatica-eufemismos",
+      "day": 2,
+      "title": "Lenguaje diplomático y eufemismos",
+      "goal": "vas a poder usar eufemismos y lenguaje diplomático para comunicar desacuerdos, malas noticias o críticas sin confrontar directamente.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El eufemismo diplomático reemplaza una palabra directa por otra más suave sin cambiar el mensaje de fondo: 'desafio' en vez de 'problema', 'ajuste' en vez de 'corte'.",
+        "Expresiones como 'com todo o respeito', 'não é bem assim', 'permita-me discordar' introducen desacuerdo sin agresividad.",
+        "El condicional y el subjuntivo en frases como 'eu diria que' o 'talvez fosse o caso de revisar' distancian al hablante de una afirmación tajante.",
+        "Evitar negaciones directas ('não concordo') a favor de formulaciones indirectas ('vejo a questão de outra forma') es típico del registro diplomático.",
+        "Nota de Portugal: el registro diplomático portugués europeo tiende a ser aún más formal e indirecto que el brasileño, que admite mayor cercanía incluso en contextos oficiales."
+      ],
+      "examples": [
+        {
+          "target": "Encontramos alguns desafios na implementação do projeto.",
+          "es": "Encontramos algunos desafíos en la implementación del proyecto."
+        },
+        {
+          "target": "Precisamos fazer um ajuste no orçamento deste trimestre.",
+          "es": "Necesitamos hacer un ajuste en el presupuesto de este trimestre."
+        },
+        {
+          "target": "Com todo o respeito, não acho que essa seja a melhor abordagem.",
+          "es": "Con todo respeto, no creo que ese sea el mejor enfoque."
+        },
+        {
+          "target": "Permita-me discordar nesse ponto específico.",
+          "es": "Permitime discrepar en ese punto específico."
+        },
+        {
+          "target": "Vejo a questão de uma forma um pouco diferente.",
+          "es": "Veo la cuestión de una forma un poco diferente."
+        },
+        {
+          "target": "Talvez fosse o caso de revisarmos esse prazo.",
+          "es": "Tal vez sería el caso de revisar ese plazo."
+        },
+        {
+          "target": "A equipe apresentou um desempenho abaixo do esperado neste período.",
+          "es": "El equipo presentó un desempeño por debajo de lo esperado en este período."
+        },
+        {
+          "target": "Essa decisão terá um impacto significativo no quadro de funcionários.",
+          "es": "Esta decisión va a tener un impacto significativo en la dotación de personal."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Isso está errado.",
+          "right": "Talvez haja uma forma mais eficaz de abordar isso.",
+          "why": "La negación directa y tajante suena agresiva en contexto diplomático; conviene reformular en términos de alternativa."
+        },
+        {
+          "wrong": "A empresa anunciou a demissão de 200 funcionários.",
+          "right": "A empresa anunciou uma reestruturação do quadro de pessoal.",
+          "why": "En el lenguaje corporativo/diplomático se prefiere suavizar términos sensibles como despidos con eufemismos institucionales."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "com todo o respeito",
+          "es": "con todo respeto",
+          "example": "Com todo o respeito, discordo da sua análise.",
+          "exampleEs": "Con todo respeto, discrepo de tu análisis."
+        },
+        {
+          "target": "permita-me discordar",
+          "es": "permitime discrepar",
+          "example": "Permita-me discordar, mas os números contam outra história.",
+          "exampleEs": "Permitime discrepar, pero los números cuentan otra historia."
+        },
+        {
+          "target": "não é bem assim",
+          "es": "no es exactamente así",
+          "example": "Não é bem assim, a situação é mais complexa do que parece.",
+          "exampleEs": "No es exactamente así, la situación es más compleja de lo que parece."
+        },
+        {
+          "target": "fazer um ajuste",
+          "es": "hacer un ajuste",
+          "example": "Vamos precisar fazer um ajuste no cronograma.",
+          "exampleEs": "Vamos a necesitar hacer un ajuste en el cronograma."
+        },
+        {
+          "target": "ver a questão de outra forma",
+          "es": "ver la cuestión de otra manera",
+          "example": "Prefiro ver a questão de outra forma antes de criticar alguém.",
+          "exampleEs": "Prefiero ver la cuestión de otra manera antes de criticar a alguien."
+        }
+      ]
+    },
+    {
+      "id": "manejar-conflictos-verbales",
+      "day": 3,
+      "title": "Manejar conflictos verbales",
+      "goal": "vas a poder manejar conflictos verbales en portugués, desactivando tensión y redirigiendo la conversación hacia una solución.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "Para desactivar tensión conviene validar primero la postura del otro antes de contraargumentar: 'Entendo seu ponto, porém...'.",
+        "Las preguntas abiertas ('Como você vê isso?') destraban un conflicto porque invitan a explicar en vez de confrontar.",
+        "Conectores concesivos ('ainda que', 'por mais que') permiten reconocer el argumento contrario sin aceptarlo del todo.",
+        "Conviene evitar el 'você' acusatorio en reclamos ('você sempre faz isso') y preferir formulaciones centradas en el problema, no en la persona.",
+        "Parafrasear lo que dijo el otro antes de responder reduce la sensación de ataque y muestra que escuchaste de verdad."
+      ],
+      "examples": [
+        {
+          "target": "Entendo seu ponto, porém gostaria de acrescentar outra perspectiva.",
+          "es": "Entiendo tu punto, pero me gustaría agregar otra perspectiva."
+        },
+        {
+          "target": "Como você vê essa situação do seu lado?",
+          "es": "¿Cómo ves esta situación de tu lado?"
+        },
+        {
+          "target": "Ainda que eu concorde em parte, acho que falta considerar os custos.",
+          "es": "Aunque esté de acuerdo en parte, creo que falta considerar los costos."
+        },
+        {
+          "target": "Esse tipo de atraso costuma gerar bastante atrito na equipe.",
+          "es": "Este tipo de atraso suele generar bastante fricción en el equipo."
+        },
+        {
+          "target": "Se eu entendi bem, sua preocupação principal é com o prazo, certo?",
+          "es": "Si entendí bien, tu preocupación principal es con el plazo, ¿no?"
+        },
+        {
+          "target": "Por mais que o argumento pareça válido, os dados mostram outra realidade.",
+          "es": "Por más que el argumento parezca válido, los datos muestran otra realidad."
+        },
+        {
+          "target": "Vamos tentar separar o problema da pessoa para resolver isso com calma.",
+          "es": "Tratemos de separar el problema de la persona para resolver esto con calma."
+        },
+        {
+          "target": "Antes de continuarmos, podemos esclarecer o que gerou esse desentendimento?",
+          "es": "Antes de seguir, ¿podemos aclarar qué generó este malentendido?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Você sempre erra nos prazos.",
+          "right": "Os prazos têm sido um desafio recorrente, vamos ver como resolver.",
+          "why": "Acusar directamente a la persona ('você sempre') escala el conflicto; es mejor centrarse en el problema, no en quién lo causa."
+        },
+        {
+          "wrong": "interrumpir con 'mas' apenas el otro termina de hablar, sin validar nada antes",
+          "right": "empezar con una validación ('Entendo seu ponto, porém...') antes de contraargumentar",
+          "why": "Contraargumentar sin reconocer primero lo dicho por el otro suena confrontativo y cierra el diálogo."
+        },
+        {
+          "wrong": "Você concorda ou não?",
+          "right": "Como você vê essa questão?",
+          "why": "Las preguntas cerradas fuerzan una posición binaria y pueden escalar la tensión; las abiertas invitan a explicar y bajan la guardia."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "gerar atrito",
+          "es": "generar fricción",
+          "example": "Um comentário mal colocado pode gerar atrito entre os dois times.",
+          "exampleEs": "Un comentario mal formulado puede generar fricción entre los dos equipos."
+        },
+        {
+          "target": "separar o problema da pessoa",
+          "es": "separar el problema de la persona",
+          "example": "Vamos separar o problema da pessoa para discutir com mais clareza.",
+          "exampleEs": "Separemos el problema de la persona para discutir con más claridad."
+        },
+        {
+          "target": "esclarecer um desentendimento",
+          "es": "aclarar un malentendido",
+          "example": "Precisamos esclarecer um desentendimento antes de seguir adiante.",
+          "exampleEs": "Necesitamos aclarar un malentendido antes de seguir adelante."
+        },
+        {
+          "target": "baixar a guarda",
+          "es": "bajar la guardia",
+          "example": "Depois da conversa franca, foi mais fácil baixar a guarda.",
+          "exampleEs": "Después de la charla franca, fue más fácil bajar la guardia."
+        },
+        {
+          "target": "chegar a um denominador comum",
+          "es": "llegar a un denominador común",
+          "example": "Depois de muita conversa, conseguimos chegar a um denominador comum.",
+          "exampleEs": "Después de mucha charla, logramos llegar a un denominador común."
+        }
+      ]
+    },
+    {
+      "id": "reunioes-e-negociacoes-formais",
+      "day": 4,
+      "title": "Reuniones y negociaciones formales",
+      "goal": "vas a poder manejar el vocabulario y las estructuras típicas de reuniones y negociaciones formales en portugués (agenda, actas, propuestas, cierre de acuerdos).",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El léxico formal de reunión incluye: 'pauta' (agenda), 'ata' (acta), 'deliberação' (deliberación), 'encaminhamento' (próximos pasos/resolución).",
+        "Para abrir y cerrar una reunión se usan fórmulas fijas: 'Dando início à pauta de hoje...' / 'Encerramos, então, com os encaminhamentos definidos.'",
+        "El presente del subjuntivo aparece obligatoriamente después de 'caso' en cláusulas de condición para cerrar acuerdos: 'Caso as partes concordem, o contrato será assinado.'",
+        "Las expresiones de cierre de acuerdo usan verbos como 'firmar', 'formalizar': 'firmar o acordo', 'formalizar a proposta por escrito'.",
+        "Nota de Portugal: en reuniones formales portuguesas se usa más 'reunião de trabalho' y 'ficar acordado que' en vez de 'ficou definido que', más común en Brasil."
+      ],
+      "examples": [
+        {
+          "target": "Dando início à pauta de hoje, vamos tratar primeiro do orçamento.",
+          "es": "Dando inicio a la agenda de hoy, vamos a tratar primero el presupuesto."
+        },
+        {
+          "target": "A ata da reunião anterior já foi enviada a todos os participantes.",
+          "es": "El acta de la reunión anterior ya fue enviada a todos los participantes."
+        },
+        {
+          "target": "Ficou definido que a proposta final será enviada até sexta-feira.",
+          "es": "Quedó definido que la propuesta final se va a enviar hasta el viernes."
+        },
+        {
+          "target": "Caso as partes concordem com os termos, o contrato será assinado na próxima semana.",
+          "es": "En caso de que las partes estén de acuerdo con los términos, el contrato se va a firmar la próxima semana."
+        },
+        {
+          "target": "Precisamos formalizar essa proposta por escrito antes da próxima reunião.",
+          "es": "Necesitamos formalizar esta propuesta por escrito antes de la próxima reunión."
+        },
+        {
+          "target": "Os encaminhamentos da reunião serão compartilhados por e-mail ainda hoje.",
+          "es": "Las resoluciones de la reunión se van a compartir por mail hoy mismo."
+        },
+        {
+          "target": "Vamos abrir espaço para perguntas antes de encerrarmos a sessão.",
+          "es": "Vamos a abrir un espacio para preguntas antes de cerrar la sesión."
+        },
+        {
+          "target": "As duas empresas finalmente firmaram o acordo depois de meses de negociação.",
+          "es": "Las dos empresas finalmente firmaron el acuerdo después de meses de negociación."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "A gente vai ver isso depois.",
+          "right": "Esse ponto será analisado em um momento posterior.",
+          "why": "En registro formal de reunión se evita 'a gente' y las construcciones muy coloquiales; se prefiere un registro neutro e impersonal."
+        },
+        {
+          "wrong": "confundir 'pauta' con 'pasta'",
+          "right": "usar 'pauta' para agenda/temario y 'pasta' para carpeta de documentos",
+          "why": "Son palabras parecidas en sonido pero con significados distintos; es un error clásico por paronimia entre hispanohablantes."
+        },
+        {
+          "wrong": "Caso as partes concordam com os termos...",
+          "right": "Caso as partes concordem com os termos...",
+          "why": "La conjunción 'caso' rige obligatoriamente el modo subjuntivo en portugués, a diferencia de construcciones similares en español donde a veces se tiende a usar indicativo por error."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "dar início à pauta",
+          "es": "dar inicio a la agenda",
+          "example": "Vamos dar início à pauta assim que todos chegarem.",
+          "exampleEs": "Vamos a dar inicio a la agenda en cuanto lleguen todos."
+        },
+        {
+          "target": "ficar definido que",
+          "es": "quedar definido que",
+          "example": "Pode ficar definido que o prazo final é dia 30, se todos concordarem.",
+          "exampleEs": "Puede quedar definido que el plazo final es el día 30, si todos están de acuerdo."
+        },
+        {
+          "target": "firmar um acordo",
+          "es": "firmar un acuerdo",
+          "example": "As partes conseguiram firmar um acordo depois de longas negociações.",
+          "exampleEs": "Las partes lograron firmar un acuerdo después de largas negociaciones."
+        },
+        {
+          "target": "encerrar a sessão",
+          "es": "cerrar la sesión",
+          "example": "Vamos encerrar a sessão com um resumo dos próximos passos.",
+          "exampleEs": "Vamos a cerrar la sesión con un resumen de los próximos pasos."
+        },
+        {
+          "target": "formalizar por escrito",
+          "es": "formalizar por escrito",
+          "example": "É importante formalizar por escrito tudo o que foi acordado.",
+          "exampleEs": "Es importante formalizar por escrito todo lo que se acordó."
+        }
+      ]
+    },
+    {
+      "id": "simular-uma-negociacao",
+      "day": 5,
+      "title": "Simular una negociación",
+      "goal": "vas a poder leer y producir un diálogo de negociación formal completo, combinando persuasión, eufemismos, manejo de conflicto y cierre de acuerdo.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Una negociación completa sigue una estructura: apertura, exposición de posturas, manejo de objeciones, propuesta de acuerdo y cierre formal.",
+        "Conviene alternar estrategias: validar, proponer, ceder parcialmente y formalizar, combinando todo lo visto en los días anteriores.",
+        "Al escribir un diálogo de negociación hay que mantener coherencia de registro formal y cortés de principio a fin, sin bajar a coloquialismos.",
+        "Las fórmulas de cierre ('ficamos então de acordo', 'podemos considerar o assunto encerrado') marcan claramente el final de la negociación.",
+        "Revisar que las concesiones y condiciones queden explícitas y sin ambigüedad evita malentendidos posteriores al acuerdo."
+      ],
+      "examples": [
+        {
+          "target": "Agradecemos a presença de todos e vamos iniciar a negociação com a proposta da nossa equipe.",
+          "es": "Agradecemos la presencia de todos y vamos a iniciar la negociación con la propuesta de nuestro equipo."
+        },
+        {
+          "target": "Entendemos a preocupação de vocês com o prazo, mas acreditamos que é possível um meio-termo.",
+          "es": "Entendemos la preocupación de ustedes con el plazo, pero creemos que es posible un término medio."
+        },
+        {
+          "target": "Se vocês puderem flexibilizar o valor, nós flexibilizamos o prazo de entrega.",
+          "es": "Si ustedes pueden flexibilizar el valor, nosotros flexibilizamos el plazo de entrega."
+        },
+        {
+          "target": "Podemos considerar essa cláusula resolvida, desde que fique registrada por escrito.",
+          "es": "Podemos considerar esta cláusula resuelta, siempre que quede registrada por escrito."
+        },
+        {
+          "target": "Ficamos então de acordo quanto aos termos principais do contrato.",
+          "es": "Quedamos entonces de acuerdo en cuanto a los términos principales del contrato."
+        },
+        {
+          "target": "Antes de encerrarmos, alguém gostaria de acrescentar algum ponto?",
+          "es": "Antes de cerrar, ¿alguien quisiera agregar algún punto?"
+        },
+        {
+          "target": "Podemos considerar o assunto encerrado, com as condições que acabamos de definir.",
+          "es": "Podemos considerar el tema cerrado, con las condiciones que acabamos de definir."
+        },
+        {
+          "target": "Foi um prazer negociar com vocês, esperamos formalizar tudo até o final da semana.",
+          "es": "Fue un placer negociar con ustedes, esperamos formalizar todo para fin de semana."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Ficamos de acordo, show de bola!",
+          "right": "Ficamos de acordo, foi um prazer negociar com vocês.",
+          "why": "Cambiar de registro abruptamente al cerrar, metiendo un coloquialismo, rompe la coherencia estilística de todo el diálogo de negociación."
+        },
+        {
+          "wrong": "Vamos ver isso depois, tranquilo.",
+          "right": "Essa condição ficará registrada na ata, com o prazo de 10 dias.",
+          "why": "En negociaciones formales la ambigüedad genera conflictos posteriores; todo acuerdo debe quedar claro y, preferentemente, por escrito."
+        },
+        {
+          "wrong": "Sim. / Não.",
+          "right": "Podemos avaliar essa possibilidade, mas com algumas ressalvas.",
+          "why": "Respuestas tan cortas no corresponden al registro formal esperado en una negociación y pueden sonar abruptas o poco diplomáticas."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "ficar de acordo",
+          "es": "quedar de acuerdo",
+          "example": "Espero que possamos ficar de acordo quanto ao valor final do contrato.",
+          "exampleEs": "Espero que podamos quedar de acuerdo en cuanto al valor final del contrato."
+        },
+        {
+          "target": "considerar o assunto encerrado",
+          "es": "considerar el tema cerrado",
+          "example": "Podemos considerar o assunto encerrado por hoje.",
+          "exampleEs": "Podemos considerar el tema cerrado por hoy."
+        },
+        {
+          "target": "com algumas ressalvas",
+          "es": "con algunas salvedades",
+          "example": "Aceitamos a proposta, com algumas ressalvas sobre o prazo.",
+          "exampleEs": "Aceptamos la propuesta, con algunas salvedades sobre el plazo."
+        },
+        {
+          "target": "flexibilizar os termos",
+          "es": "flexibilizar los términos",
+          "example": "A empresa decidiu flexibilizar os termos do contrato.",
+          "exampleEs": "La empresa decidió flexibilizar los términos del contrato."
+        },
+        {
+          "target": "foi um prazer negociar com vocês",
+          "es": "fue un placer negociar con ustedes",
+          "example": "Foi um prazer negociar com vocês, até a próxima reunião.",
+          "exampleEs": "Fue un placer negociar con ustedes, hasta la próxima reunión."
+        }
+      ]
+    }
+  ]
+}

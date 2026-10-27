@@ -1,0 +1,756 @@
+{
+  "language": "fr",
+  "existing": [
+    "fr-a1-etre-avoir",
+    "fr-a1-articles",
+    "fr-a1-present",
+    "fr-a1-negation-questions",
+    "fr-a1-possessifs-futur-proche",
+    "fr-a2-passe-compose",
+    "fr-a2-imparfait",
+    "fr-a2-pronoms",
+    "fr-a2-comparatifs-adverbes",
+    "fr-a2-futur-conditionnel",
+    "fr-b1-subjonctif-present",
+    "fr-b1-plus-que-parfait",
+    "fr-b1-hypothese-si",
+    "fr-b1-passif-relatifs",
+    "fr-b1-discours-indirect",
+    "fr-b2-subjonctif-passe",
+    "fr-b2-conditionnel-passe",
+    "fr-b2-relatifs-composes",
+    "fr-b2-participe-gerondif",
+    "fr-b2-registre-soutenu",
+    "fr-c1-passe-simple",
+    "fr-c1-nominalisation",
+    "fr-c1-expressions-idiomatiques",
+    "fr-c1-concession",
+    "fr-c1-varietes"
+  ],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "fr-a1-etre-avoir",
+          "title": "Ser, estar y tener",
+          "targetTitle": "Être, avoir et se présenter",
+          "description": "Vas a aprender a usar los verbos être y avoir, los pronombres personales y los saludos básicos en francés. Te sirve para presentarte, decir tu edad y arrancar cualquier conversación cotidiana.",
+          "subtopics": ["Pronombres y saludos", "El verbo être", "El verbo avoir y la edad", "Il y a y c'est", "Presentarte"],
+          "prerequisites": []
+        },
+        {
+          "id": "fr-a1-articles",
+          "title": "Artículos y partitivos",
+          "targetTitle": "Les articles et les partitifs",
+          "description": "Vas a distinguir los artículos definidos, indefinidos y partitivos, y cómo cambian con la negación. Te sirve para nombrar objetos y pedir comida correctamente, por ejemplo en una boulangerie.",
+          "subtopics": [
+            "Artículos definidos",
+            "Indefinidos y género",
+            "Partitivos y de en la negación",
+            "Contracciones con à y de",
+            "En la boulangerie"
+          ],
+          "prerequisites": ["fr-a1-etre-avoir"]
+        },
+        {
+          "id": "fr-a1-adjectifs",
+          "title": "Adjetivos y descripción física",
+          "targetTitle": "Les adjectifs et la description physique",
+          "description": "Vas a aprender a concordar los adjetivos en género y número, y a usarlos para describir personas y nacionalidades. Te sirve para hablar de vos mismo y de otros con más detalle.",
+          "subtopics": [
+            "Género y número de los adjetivos",
+            "Adjetivos de nacionalidad",
+            "Descripción física",
+            "Adjetivos de personalidad",
+            "Posición del adjetivo"
+          ],
+          "prerequisites": ["fr-a1-articles"]
+        },
+        {
+          "id": "fr-a1-nombres-heure",
+          "title": "Números, hora y fecha",
+          "targetTitle": "Les nombres, l'heure et la date",
+          "description": "Vas a aprender a contar, decir la hora y manejar los días, meses y fechas en francés. Te sirve para organizar citas, horarios y entender precios o direcciones.",
+          "subtopics": ["Números del 0 al 100", "La hora", "Los días y los meses", "La fecha", "Dar y pedir una cita"],
+          "prerequisites": ["fr-a1-etre-avoir"]
+        },
+        {
+          "id": "fr-a1-present",
+          "title": "Presente, aller y faire",
+          "targetTitle": "Le présent, aller et faire",
+          "description": "Vas a aprender a conjugar verbos en -er y los verbos aller, faire, prendre y venir en presente. Te sirve para contar tu rutina y hablar de actividades diarias.",
+          "subtopics": ["Verbos en -er", "Letras mudas y pronunciación", "Aller y faire", "Prendre y venir", "Mi rutina"],
+          "prerequisites": ["fr-a1-etre-avoir", "fr-a1-articles"]
+        },
+        {
+          "id": "fr-a1-pronominaux-routine",
+          "title": "Verbos pronominales y rutina diaria",
+          "targetTitle": "Les verbes pronominaux et la routine quotidienne",
+          "description": "Vas a aprender a conjugar los verbos pronominales y a usarlos para contar tu rutina diaria. Te sirve para hablar de hábitos, horarios y actividades de todos los días con naturalidad.",
+          "subtopics": [
+            "Cómo se forman los pronominales",
+            "Se lever, se laver, se coucher",
+            "Adverbios de frecuencia",
+            "Rutina de la mañana a la noche",
+            "Contar tu día"
+          ],
+          "prerequisites": ["fr-a1-present", "fr-a1-nombres-heure"]
+        },
+        {
+          "id": "fr-a1-negation-questions",
+          "title": "Negación y preguntas",
+          "targetTitle": "La négation et les questions",
+          "description": "Vas a aprender a negar oraciones con ne... pas y sus variantes, y a formular preguntas de distintas formas. Te sirve para pedir información y manejarte en conversaciones básicas.",
+          "subtopics": ["Ne… pas", "Ne… jamais, rien, plus y personne", "Preguntas de sí o no", "Palabras interrogativas", "Pedir información"],
+          "prerequisites": ["fr-a1-present"]
+        },
+        {
+          "id": "fr-a1-modaux-imperatif",
+          "title": "Verbos modales e imperativo",
+          "targetTitle": "Les verbes modaux et l'impératif",
+          "description": "Vas a aprender a usar pouvoir, vouloir y devoir para expresar posibilidad, deseo y obligación, y a formar el imperativo para dar órdenes o consejos. Te sirve para pedir cosas educadamente y dar instrucciones simples.",
+          "subtopics": ["Pouvoir, vouloir y devoir", "El imperativo afirmativo", "El imperativo negativo", "Pedidos educados", "Dar instrucciones"],
+          "prerequisites": ["fr-a1-negation-questions"]
+        },
+        {
+          "id": "fr-a1-possessifs-futur-proche",
+          "title": "Posesivos, lugares y futuro próximo",
+          "targetTitle": "Les possessifs, les lieux et le futur proche",
+          "description": "Vas a aprender los adjetivos posesivos, a hablar de ciudades y países, y a formar el futuro próximo. Te sirve para contar tus planes y hablar de dónde vivís o viajás.",
+          "subtopics": ["Posesivos", "Mon amie, de y à moi", "Ciudades, países y chez", "Futuro próximo", "Planes para el fin de semana"],
+          "prerequisites": ["fr-a1-adjectifs"]
+        },
+        {
+          "id": "fr-a1-vocabulaire-quotidien",
+          "title": "Vocabulario cotidiano: comida, clima y lugares",
+          "targetTitle": "Le vocabulaire du quotidien : nourriture, météo et lieux",
+          "description": "Vas a ampliar tu vocabulario con comida, el clima y los lugares de la ciudad para manejarte en situaciones cotidianas. Te sirve para pedir en un restaurante, hablar del tiempo y orientarte en la calle.",
+          "subtopics": ["Comida y bebida", "El clima y las estaciones", "Lugares en la ciudad", "Pedir indicaciones", "En el restaurante"],
+          "prerequisites": ["fr-a1-modaux-imperatif", "fr-a1-possessifs-futur-proche"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "fr-a2-passe-compose",
+          "title": "Pasado compuesto",
+          "targetTitle": "Le passé composé",
+          "description": "Vas a aprender a formar el passé composé con avoir y être, y a usar los participios regulares e irregulares. Te sirve para contar cosas que ya pasaron, como tu fin de semana.",
+          "subtopics": [
+            "Con avoir",
+            "Con être: DR MRS VANDERTRAMP",
+            "Participios irregulares",
+            "Concordancia, negación y marcadores",
+            "Contar un fin de semana"
+          ],
+          "prerequisites": ["fr-a1-present", "fr-a1-negation-questions"]
+        },
+        {
+          "id": "fr-a2-imparfait",
+          "title": "Imperfecto",
+          "targetTitle": "L'imparfait",
+          "description": "Vas a aprender a formar el imperfecto y a usarlo para describir personas, lugares y costumbres del pasado. Te sirve para contar recuerdos y comparar cómo eran las cosas antes.",
+          "subtopics": [
+            "Cómo se forma",
+            "Être y las descripciones",
+            "Costumbres y acciones en curso",
+            "Imparfait o passé composé",
+            "Un recuerdo de la infancia"
+          ],
+          "prerequisites": ["fr-a2-passe-compose"]
+        },
+        {
+          "id": "fr-a2-indefinis-quantite",
+          "title": "Indefinidos y cantidades",
+          "targetTitle": "Les indéfinis et les quantités",
+          "description": "Vas a aprender a usar palabras como quelque, chaque, tout y plusieurs, y a expresar cantidades con beaucoup de, un peu de y ne... que. Te sirve para hablar de compras, cantidades y hacer comparaciones más precisas.",
+          "subtopics": ["Quelque, chaque y tout", "Plusieurs y quelques-uns", "Beaucoup de y un peu de", "Ne... que", "Hacer las compras"],
+          "prerequisites": ["fr-a1-articles"]
+        },
+        {
+          "id": "fr-a2-pronoms",
+          "title": "Pronombres, y y en",
+          "targetTitle": "Les pronoms, y et en",
+          "description": "Vas a aprender a usar los pronombres de objeto directo e indirecto, y los pronombres y y en para no repetir palabras. Te sirve para hablar con más fluidez al pedir y ofrecer cosas.",
+          "subtopics": ["Objeto directo", "Objeto indirecto", "Y y en", "Dónde van los pronombres", "Pedir y ofrecer"],
+          "prerequisites": ["fr-a2-indefinis-quantite"]
+        },
+        {
+          "id": "fr-a2-corps-sante",
+          "title": "El cuerpo y la salud",
+          "targetTitle": "Le corps et la santé",
+          "description": "Vas a aprender el vocabulario del cuerpo y las expresiones para hablar de síntomas y malestares con avoir mal à. Te sirve para ir al médico, pedir ayuda y dar consejos de salud.",
+          "subtopics": ["Las partes del cuerpo", "Avoir mal à", "En la farmacia", "Síntomas comunes", "Dar consejos de salud"],
+          "prerequisites": ["fr-a2-pronoms"]
+        },
+        {
+          "id": "fr-a2-vie-quotidienne-logement",
+          "title": "Vivienda y vida cotidiana",
+          "targetTitle": "Le logement et la vie quotidienne",
+          "description": "Vas a aprender vocabulario de la casa, las tareas domésticas y las preposiciones de lugar. Te sirve para describir tu vivienda y contar tu día a día en el hogar.",
+          "subtopics": [
+            "Las habitaciones de la casa",
+            "Preposiciones de lugar",
+            "Las tareas domésticas",
+            "Alquilar un departamento",
+            "Describir tu vivienda"
+          ],
+          "prerequisites": ["fr-a2-corps-sante"]
+        },
+        {
+          "id": "fr-a2-comparatifs-adverbes",
+          "title": "Comparativos y adverbios",
+          "targetTitle": "Les comparatifs et les adverbes",
+          "description": "Vas a aprender a comparar con plus, moins y aussi que, y a formar adverbios en -ment para describir acciones. Te sirve para comparar lugares, personas y cosas con más matices.",
+          "subtopics": [
+            "Plus, moins, aussi… que",
+            "Cantidades y verbos",
+            "Meilleur, mieux y el superlativo",
+            "Adverbios en -ment",
+            "Comparar dos ciudades"
+          ],
+          "prerequisites": ["fr-a2-vie-quotidienne-logement"]
+        },
+        {
+          "id": "fr-a2-obligation-opinion",
+          "title": "Opinión, obligación y consejo",
+          "targetTitle": "L'opinion, l'obligation et le conseil",
+          "description": "Vas a aprender a dar tu opinión con penser que y croire que, y a expresar obligación con il faut y devoir. Te sirve para opinar, aconsejar y justificar tus decisiones.",
+          "subtopics": ["Il faut y falloir", "Penser que y croire que", "Dar tu opinión", "Aconsejar con devoir", "Justificar una decisión"],
+          "prerequisites": ["fr-a2-comparatifs-adverbes"]
+        },
+        {
+          "id": "fr-a2-voyages-transports",
+          "title": "Viajes y transporte",
+          "targetTitle": "Les voyages et les transports",
+          "description": "Vas a aprender el vocabulario de los medios de transporte y las frases para comprar pasajes y pedir indicaciones en un viaje. Te sirve para organizarte y contar experiencias de viaje.",
+          "subtopics": ["Medios de transporte", "Comprar un pasaje", "Pedir indicaciones", "Contar un viaje pasado", "Planear un viaje"],
+          "prerequisites": ["fr-a2-obligation-opinion", "fr-a2-imparfait"]
+        },
+        {
+          "id": "fr-a2-futur-conditionnel",
+          "title": "Futuro, condicional e imperativo",
+          "targetTitle": "Le futur, le conditionnel et l'impératif",
+          "description": "Vas a aprender el futur simple, el conditionnel y a reforzar el imperativo para dar consejos. Te sirve para hablar de planes futuros y dar recomendaciones para un viaje.",
+          "subtopics": ["Futur simple", "Irregulares y si + presente", "Conditionnel", "Imperativo", "Consejos para un viaje"],
+          "prerequisites": ["fr-a2-voyages-transports"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "fr-b1-subjonctif-present",
+          "title": "Subjuntivo presente",
+          "targetTitle": "Le subjonctif présent",
+          "description": "Vas a aprender a formar el subjuntivo presente y a usarlo después de expresiones de necesidad, voluntad, emoción y duda. Te sirve para pedir cosas, poner condiciones y matizar lo que decís.",
+          "subtopics": ["Cómo se forma", "Necesidad y voluntad", "Emoción y duda", "Bien que, avant que, pour que", "Pedidos y condiciones"],
+          "prerequisites": ["fr-a2-futur-conditionnel"]
+        },
+        {
+          "id": "fr-b1-connecteurs-logiques",
+          "title": "Conectores lógicos y argumentación",
+          "targetTitle": "Les connecteurs logiques et l'argumentation",
+          "description": "Vas a aprender a usar conectores de causa, consecuencia y finalidad como parce que, puisque, donc y afin de. Te sirve para armar argumentos más claros y organizados al hablar y escribir.",
+          "subtopics": ["Parce que, car y puisque", "Donc y alors", "Pour y afin de", "Comme al inicio de la oración", "Estructurar un argumento"],
+          "prerequisites": ["fr-b1-subjonctif-present"]
+        },
+        {
+          "id": "fr-b1-pronoms-demonstratifs-possessifs",
+          "title": "Pronombres demostrativos y posesivos",
+          "targetTitle": "Les pronoms démonstratifs et possessifs",
+          "description": "Vas a aprender a usar celui, celle, ceux y celles, y los pronombres posesivos como le mien y le tien para no repetir sustantivos. Te sirve para comparar y referirte a cosas ya mencionadas con más precisión.",
+          "subtopics": ["Celui, celle, ceux y celles", "Le mien y el tien", "Ce qui y ce que", "Ce dont", "Evitar repeticiones"],
+          "prerequisites": ["fr-b1-connecteurs-logiques"]
+        },
+        {
+          "id": "fr-b1-plus-que-parfait",
+          "title": "Pluscuamperfecto",
+          "targetTitle": "Le plus-que-parfait",
+          "description": "Vas a aprender a formar el pluscuamperfecto y a combinarlo con los otros pasados para ordenar los hechos en el tiempo. Te sirve para contar anécdotas con precisión y expresar lamentos o sorpresas.",
+          "subtopics": ["Cómo se forma", "Lo que pasó antes", "Los tres pasados juntos", "Lamentos, sorpresas y dichos", "Contar una anécdota"],
+          "prerequisites": ["fr-b1-pronoms-demonstratifs-possessifs"]
+        },
+        {
+          "id": "fr-b1-recit-biographie",
+          "title": "Narración biográfica",
+          "targetTitle": "Le récit biographique",
+          "description": "Vas a aprender a combinar passé composé, imparfait y plus-que-parfait para contar la historia de una vida con conectores temporales. Te sirve para escribir o contar una biografía y marcar los momentos clave.",
+          "subtopics": [
+            "Conectores temporales",
+            "Puis, ensuite y enfin",
+            "Combinar los tres pasados",
+            "Momentos clave de una vida",
+            "Escribir una biografía"
+          ],
+          "prerequisites": ["fr-b1-plus-que-parfait"]
+        },
+        {
+          "id": "fr-b1-hypothese-si",
+          "title": "Hipótesis con si",
+          "targetTitle": "L'hypothèse avec si",
+          "description": "Vas a aprender a usar si + presente para lo posible y si + imparfait para lo imaginario, entre otras formas de expresar condición. Te sirve para imaginar situaciones alternativas y dar consejos hipotéticos.",
+          "subtopics": [
+            "Si + presente: lo posible",
+            "Si + imparfait: lo imaginario",
+            "Si de condición y si de pregunta",
+            "Otras formas de la condición",
+            "¿Y si…? Imaginar otra vida"
+          ],
+          "prerequisites": ["fr-b1-recit-biographie"]
+        },
+        {
+          "id": "fr-b1-expressions-temps-futur",
+          "title": "Expresiones de tiempo y proyectos futuros",
+          "targetTitle": "Les expressions de temps et les projets futurs",
+          "description": "Vas a reforzar el futuro simple y aprender a expresar intenciones con avoir l'intention de y compter, además de usar quand y lorsque con futuro. Te sirve para hablar de tus planes y metas a largo plazo.",
+          "subtopics": ["Quand y lorsque con futuro", "Avoir l'intention de", "Compter + infinitivo", "Planes a largo plazo", "Expresar una meta"],
+          "prerequisites": ["fr-b1-hypothese-si"]
+        },
+        {
+          "id": "fr-b1-passif-relatifs",
+          "title": "Pasiva y relativos",
+          "targetTitle": "Le passif et les relatifs",
+          "description": "Vas a aprender a formar la voz pasiva, a usar on y los verbos pronominales con valor pasivo, y los relativos qui, que, dont y où. Te sirve para describir lugares y hechos con un estilo más fluido y variado.",
+          "subtopics": ["La voz pasiva", "On y los pronominales", "Qui y que", "Dont y où", "Describir un lugar"],
+          "prerequisites": ["fr-b1-pronoms-demonstratifs-possessifs"]
+        },
+        {
+          "id": "fr-b1-discours-indirect",
+          "title": "Discurso indirecto",
+          "targetTitle": "Le discours indirect",
+          "description": "Vas a aprender a transformar preguntas, órdenes y afirmaciones en discurso indirecto, respetando la concordancia de tiempos. Te sirve para contar lo que alguien dijo sin citarlo textualmente.",
+          "subtopics": [
+            "Contar lo que alguien dice",
+            "Preguntas indirectas",
+            "Órdenes y pedidos",
+            "Concordancia de tiempos",
+            "Contar una conversación"
+          ],
+          "prerequisites": ["fr-b1-passif-relatifs"]
+        },
+        {
+          "id": "fr-b1-expression-opinion-nuancee",
+          "title": "Opinión matizada y debate",
+          "targetTitle": "L'opinion nuancée et le débat",
+          "description": "Vas a aprender a expresar acuerdo, desacuerdo y matices con expresiones como il me semble que y je trouve que. Te sirve para debatir un tema y defender tu punto de vista con más sutileza.",
+          "subtopics": ["Estar de acuerdo o en desacuerdo", "Il me semble que", "Je trouve que", "Matizar una opinión", "Debatir un tema"],
+          "prerequisites": ["fr-b1-discours-indirect"]
+        },
+        {
+          "id": "fr-b1-travail-professionnel",
+          "title": "El mundo laboral",
+          "targetTitle": "Le monde du travail",
+          "description": "Vas a aprender vocabulario de trabajo y las frases para armar un CV, una carta de presentación y manejarte en una entrevista. Te sirve para buscar empleo y comunicarte en un entorno profesional.",
+          "subtopics": [
+            "Vocabulario del trabajo",
+            "El CV y la carta de presentación",
+            "La entrevista laboral",
+            "Hablar de tu carrera",
+            "El correo profesional básico"
+          ],
+          "prerequisites": ["fr-b1-expression-opinion-nuancee"]
+        },
+        {
+          "id": "fr-b1-environnement-societe",
+          "title": "Medio ambiente y sociedad",
+          "targetTitle": "L'environnement et la société",
+          "description": "Vas a aprender vocabulario sobre medio ambiente y temas sociales, y a usar el subjuntivo para expresar preocupación y proponer soluciones. Te sirve para discutir noticias y problemáticas actuales en francés.",
+          "subtopics": ["Vocabulario ambiental", "Problemáticas sociales", "Il faut que + subjuntivo", "Proponer soluciones", "Comentar una noticia"],
+          "prerequisites": ["fr-b1-travail-professionnel"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "fr-b2-subjonctif-passe",
+          "title": "Subjuntivo pasado",
+          "targetTitle": "Le subjonctif passé",
+          "description": "Vas a aprender a formar el subjuntivo pasado y a elegir entre presente y pasado según el momento de la acción. Te sirve para felicitar, agradecer y lamentar hechos ya terminados.",
+          "subtopics": [
+            "Cómo se forma",
+            "Presente o pasado",
+            "Después de emociones y conjunciones",
+            "Relativas y superlativos",
+            "Felicitar, agradecer, lamentar"
+          ],
+          "prerequisites": ["fr-b1-environnement-societe"]
+        },
+        {
+          "id": "fr-b2-subjonctif-expressions",
+          "title": "Subjuntivo con locuciones complejas",
+          "targetTitle": "Le subjonctif avec des locutions complexes",
+          "description": "Vas a aprender a usar el subjuntivo después de locuciones como à moins que, pourvu que y sans que para expresar condiciones y restricciones. Te sirve para redactar reglamentos, acuerdos y textos con condiciones precisas.",
+          "subtopics": ["À moins que y pourvu que", "De peur que y sans que", "À condition que", "Quoi que y où que", "Redactar una condición"],
+          "prerequisites": ["fr-b2-subjonctif-passe"]
+        },
+        {
+          "id": "fr-b2-conditionnel-passe",
+          "title": "Condicional pasado e hipótesis irreales",
+          "targetTitle": "Le conditionnel passé et les hypothèses irréelles",
+          "description": "Vas a aprender a formar el condicional pasado y a usarlo con si + plus-que-parfait para hablar de hipótesis irreales en el pasado. Te sirve para expresar arrepentimientos, reproches e información no confirmada.",
+          "subtopics": [
+            "Cómo se forma",
+            "Si + plus-que-parfait",
+            "Arrepentimientos y reproches",
+            "Información no confirmada",
+            "Una decisión que cambió todo"
+          ],
+          "prerequisites": ["fr-b2-subjonctif-expressions"]
+        },
+        {
+          "id": "fr-b2-connecteurs-avances",
+          "title": "Conectores avanzados de redacción",
+          "targetTitle": "Les connecteurs avancés à l'écrit",
+          "description": "Vas a aprender conectores de adición, reformulación, ejemplo y consecuencia como par ailleurs, c'est-à-dire y si bien que. Te sirve para redactar textos argumentativos más organizados y cohesivos.",
+          "subtopics": [
+            "De plus y par ailleurs",
+            "C'est-à-dire y autrement dit",
+            "Par exemple y notamment",
+            "De sorte que y si bien que",
+            "Redactar un texto estructurado"
+          ],
+          "prerequisites": ["fr-b2-conditionnel-passe"]
+        },
+        {
+          "id": "fr-b2-relatifs-composes",
+          "title": "Relativos compuestos",
+          "targetTitle": "Les relatifs composés",
+          "description": "Vas a aprender a usar lequel y sus formas, auquel, duquel y dont, para evitar ambigüedades al describir con precisión. Te sirve para escribir textos más claros y elegantes cuando hablás de personas o cosas.",
+          "subtopics": ["Lequel y sus formas", "Auquel y duquel", "Qui o lequel con personas", "Dont o duquel", "Escribir con precisión"],
+          "prerequisites": ["fr-b2-connecteurs-avances"]
+        },
+        {
+          "id": "fr-b2-nuances-lexicales",
+          "title": "Precisión léxica y matices de significado",
+          "targetTitle": "La précision lexicale et les nuances de sens",
+          "description": "Vas a aprender sinónimos, colocaciones y diferencias de registro entre palabras parecidas para elegir el término justo. Te sirve para escribir y hablar con más precisión, sin repetir siempre las mismas palabras.",
+          "subtopics": [
+            "Sinónimos y matices",
+            "Colocaciones frecuentes",
+            "Registro de las palabras",
+            "Evitar repeticiones",
+            "Elegir la palabra justa"
+          ],
+          "prerequisites": ["fr-b2-relatifs-composes"]
+        },
+        {
+          "id": "fr-b2-participe-gerondif",
+          "title": "Participio presente y gerundio",
+          "targetTitle": "Le participe présent et le gérondif",
+          "description": "Vas a aprender a formar y diferenciar el gérondif y el participio presente, y a distinguirlo de un simple adjetivo. Te sirve para explicar cómo se logra algo de manera más fluida y elegante.",
+          "subtopics": ["Cómo se forma", "El gérondif", "El participio presente", "Participio o adjetivo", "Explicar cómo se logra algo"],
+          "prerequisites": ["fr-b2-nuances-lexicales"]
+        },
+        {
+          "id": "fr-b2-style-indirect-libre",
+          "title": "Estilo indirecto libre en la narrativa",
+          "targetTitle": "Le style indirect libre dans le récit",
+          "description": "Vas a aprender a reconocer y usar el estilo indirecto libre, una técnica narrativa que mezcla la voz del narrador con la del personaje. Te sirve para entender textos literarios y escribir relatos más elaborados.",
+          "subtopics": [
+            "Qué es el estilo indirecto libre",
+            "Diferencia con el discurso directo e indirecto",
+            "Reconocerlo en un texto",
+            "La voz del narrador y del personaje",
+            "Escribir un pasaje narrativo"
+          ],
+          "prerequisites": ["fr-b2-participe-gerondif"]
+        },
+        {
+          "id": "fr-b2-registre-soutenu",
+          "title": "Registro formal",
+          "targetTitle": "Le registre soutenu",
+          "description": "Vas a aprender a abrir y cerrar textos formales, usar el vous con cortesía y manejar conectores formales. Te sirve para pasar de lo coloquial a lo formal y escribir un mail formal de reclamo.",
+          "subtopics": ["Abrir y cerrar", "El vous y la cortesía", "Conectores formales", "De lo coloquial a lo formal", "Un mail formal de reclamo"],
+          "prerequisites": ["fr-b2-style-indirect-libre"]
+        },
+        {
+          "id": "fr-b2-actualite-medias",
+          "title": "Actualidad y medios de comunicación",
+          "targetTitle": "L'actualité et les médias",
+          "description": "Vas a aprender vocabulario de noticias y a analizar titulares, distinguiendo hechos de opiniones en los medios. Te sirve para seguir la actualidad en francés y debatir sobre temas de público interés.",
+          "subtopics": [
+            "Vocabulario de las noticias",
+            "Analizar un titular",
+            "Resumir un artículo",
+            "Hechos y opiniones",
+            "Debatir un tema de actualidad"
+          ],
+          "prerequisites": ["fr-b2-registre-soutenu"]
+        },
+        {
+          "id": "fr-b2-analyse-texte",
+          "title": "Análisis y comentario de texto",
+          "targetTitle": "L'analyse et le commentaire de texte",
+          "description": "Vas a aprender a identificar la tesis y los argumentos de un texto, y a estructurar un comentario con citas y comparación de puntos de vista. Te sirve para analizar textos literarios o de opinión en profundidad.",
+          "subtopics": [
+            "Identificar la tesis",
+            "Los argumentos del autor",
+            "Citar un texto",
+            "Comparar puntos de vista",
+            "Estructurar un comentario"
+          ],
+          "prerequisites": ["fr-b2-actualite-medias"]
+        },
+        {
+          "id": "fr-b2-debat-persuasion",
+          "title": "Debate y persuasión oral",
+          "targetTitle": "Le débat et la persuasion à l'oral",
+          "description": "Vas a aprender a estructurar argumentos orales, concesiones y réplicas para participar en un debate formal. Te sirve para defender tu postura con firmeza y cortesía en una discusión.",
+          "subtopics": [
+            "Estructurar un argumento oral",
+            "Conceder y replicar",
+            "Expresar una opinión firme",
+            "Técnicas de persuasión",
+            "Participar en un debate formal"
+          ],
+          "prerequisites": ["fr-b2-analyse-texte"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "fr-c1-passe-simple",
+          "title": "Pretérito simple literario",
+          "targetTitle": "Le passé simple littéraire",
+          "description": "Vas a aprender a reconocer y formar el passé simple, el tiempo verbal típico de la narrativa literaria. Te sirve para leer novelas y textos clásicos, y para escribir con un estilo literario.",
+          "subtopics": [
+            "Verbos regulares",
+            "Irregulares frecuentes",
+            "Passé simple e imparfait",
+            "Passé antérieur y otras formas",
+            "Escribir como en una novela"
+          ],
+          "prerequisites": ["fr-b2-debat-persuasion"]
+        },
+        {
+          "id": "fr-c1-subjonctif-imparfait",
+          "title": "Subjuntivo imperfecto y pluscuamperfecto literarios",
+          "targetTitle": "Le subjonctif imparfait et plus-que-parfait littéraires",
+          "description": "Vas a aprender a reconocer el subjuntivo imperfecto y pluscuamperfecto propios del registro literario y formal elevado. Te sirve para entender textos clásicos y reescribir pasajes con un estilo más refinado.",
+          "subtopics": [
+            "Formación del subjuntivo imperfecto",
+            "El pluscuamperfecto del subjuntivo",
+            "Uso en la literatura clásica",
+            "Concordancia en registro elevado",
+            "Reescribir un pasaje en estilo literario"
+          ],
+          "prerequisites": ["fr-c1-passe-simple"]
+        },
+        {
+          "id": "fr-c1-nominalisation",
+          "title": "Nominalización",
+          "targetTitle": "La nominalisation",
+          "description": "Vas a aprender a transformar verbos y adjetivos en sustantivos para condensar ideas en un grupo nominal. Te sirve para escribir titulares, carteles y textos académicos con un estilo más conciso.",
+          "subtopics": [
+            "De verbo a sustantivo",
+            "De adjetivo a sustantivo",
+            "De la oración al grupo nominal",
+            "Titulares, carteles y textos académicos",
+            "Titulares y resumen de prensa"
+          ],
+          "prerequisites": ["fr-c1-subjonctif-imparfait"]
+        },
+        {
+          "id": "fr-c1-concession",
+          "title": "Concesión y matices",
+          "targetTitle": "La concession et les nuances",
+          "description": "Vas a aprender a expresar concesión con bien que, quoique, même si y avoir beau, y a usar conectores como pourtant y cependant. Te sirve para argumentar con matices, reconociendo objeciones sin perder tu postura.",
+          "subtopics": [
+            "Bien que y quoique",
+            "Même si",
+            "Avoir beau, malgré, en dépit de",
+            "Pourtant, cependant, quand même",
+            "Argumentar con matices"
+          ],
+          "prerequisites": ["fr-c1-nominalisation"]
+        },
+        {
+          "id": "fr-c1-vocabulaire-specialise",
+          "title": "Vocabulario especializado: economía, política y ciencia",
+          "targetTitle": "Le vocabulaire spécialisé : économie, politique et science",
+          "description": "Vas a aprender vocabulario abstracto y especializado de distintos ámbitos como economía, política y ciencia. Te sirve para leer artículos especializados y exponer un tema técnico con precisión.",
+          "subtopics": [
+            "Vocabulario de economía",
+            "Vocabulario de política",
+            "Vocabulario de ciencia",
+            "Sustantivos abstractos",
+            "Presentar un tema especializado"
+          ],
+          "prerequisites": ["fr-c1-concession"]
+        },
+        {
+          "id": "fr-c1-synthese-documents",
+          "title": "Síntesis de documentos",
+          "targetTitle": "La synthèse de documents",
+          "description": "Vas a aprender a extraer y comparar información de varios textos para armar una síntesis clara y objetiva. Te sirve para rendir exámenes tipo DALF y para resumir información compleja en el trabajo o estudio.",
+          "subtopics": ["Extraer ideas clave", "Comparar varias fuentes", "Parafrasear sin copiar", "Conectores académicos", "Redactar una síntesis"],
+          "prerequisites": ["fr-c1-vocabulaire-specialise"]
+        },
+        {
+          "id": "fr-c1-essai-argumentatif",
+          "title": "Ensayo argumentativo",
+          "targetTitle": "L'essai argumentatif",
+          "description": "Vas a aprender a estructurar un ensayo con tesis, antítesis y síntesis, usando conectores y contraargumentos matizados. Te sirve para escribir ensayos formales tipo DALF y defender una postura por escrito.",
+          "subtopics": [
+            "Tesis, antítesis y síntesis",
+            "Conectores argumentativos matizados",
+            "Presentar un contraargumento",
+            "La conclusión formal",
+            "Escribir un ensayo tipo DALF"
+          ],
+          "prerequisites": ["fr-c1-synthese-documents"]
+        },
+        {
+          "id": "fr-c1-expressions-idiomatiques",
+          "title": "Expresiones idiomáticas",
+          "targetTitle": "Les expressions idiomatiques",
+          "description": "Vas a aprender expresiones idiomáticas con el cuerpo, comida, animales y verbos como avoir, faire, mettre y prendre. Te sirve para sonar más natural y entender falsos amigos y calcos frecuentes.",
+          "subtopics": ["Con el cuerpo", "Comida y animales", "Con avoir, faire, mettre y prendre", "Falsos amigos y calcos", "Un mensaje con onda"],
+          "prerequisites": ["fr-c1-essai-argumentatif"]
+        },
+        {
+          "id": "fr-c1-ironie-humour",
+          "title": "Ironía, humor y doble sentido",
+          "targetTitle": "L'ironie, l'humour et le double sens",
+          "description": "Vas a aprender a reconocer la ironía, el sarcasmo y los juegos de palabras típicos del humor francés. Te sirve para entender chistes, dobles sentidos y el humor en series, películas y conversaciones.",
+          "subtopics": ["Reconocer la ironía", "El sarcasmo", "Juegos de palabras", "Litote e hipérbole", "Entender el humor en un texto o video"],
+          "prerequisites": ["fr-c1-expressions-idiomatiques"]
+        },
+        {
+          "id": "fr-c1-varietes",
+          "title": "Variedades del francés",
+          "targetTitle": "Les variétés du français",
+          "description": "Vas a aprender las diferencias del francés de Bélgica, Suiza, Quebec y África, además de registros, argot y verlan. Te sirve para reconocer y adaptarte a distintas formas de hablar francés en el mundo.",
+          "subtopics": ["Bélgica y Suiza", "Quebec", "El francés en África", "Registros, argot y verlan", "Reconocer y adaptar"],
+          "prerequisites": ["fr-c1-ironie-humour"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "fr-c2-rhetorique",
+          "title": "Retórica y figuras de estilo",
+          "targetTitle": "La rhétorique et les figures de style",
+          "description": "Vas a aprender las principales figuras retóricas como la metáfora, la antítesis y el quiasmo, y a usarlas para dar fuerza a tus argumentos. Te sirve para analizar discursos famosos y escribir con más impacto.",
+          "subtopics": [
+            "Metáfora y comparación",
+            "Antítesis y quiasmo",
+            "Anáfora y repetición",
+            "Analizar un discurso famoso",
+            "Escribir con figuras retóricas"
+          ],
+          "prerequisites": ["fr-c1-varietes"]
+        },
+        {
+          "id": "fr-c2-maitrise-registres",
+          "title": "Dominio de todos los registros",
+          "targetTitle": "La maîtrise de tous les registres",
+          "description": "Vas a aprender a pasar con fluidez entre el registro formal, informal, técnico y coloquial según la situación. Te sirve para adaptar tu forma de hablar a cualquier interlocutor o contexto.",
+          "subtopics": [
+            "Registro formal e informal",
+            "Registro técnico",
+            "Registro coloquial y argot",
+            "Variación sociolingüística",
+            "Simular una conversación multiregistro"
+          ],
+          "prerequisites": ["fr-c2-rhetorique"]
+        },
+        {
+          "id": "fr-c2-sous-entendus",
+          "title": "Subtexto, implícitos y pragmática",
+          "targetTitle": "Le sous-entendu, l'implicite et la pragmatique",
+          "description": "Vas a aprender a identificar lo que no se dice directamente: presuposiciones, implícitos y estrategias de cortesía indirecta. Te sirve para interpretar correctamente diálogos, negociaciones y textos con doble lectura.",
+          "subtopics": [
+            "La presuposición",
+            "El implícito conversacional",
+            "Estrategias de cortesía indirecta",
+            "Leer entre líneas",
+            "Interpretar el subtexto de un diálogo"
+          ],
+          "prerequisites": ["fr-c2-maitrise-registres"]
+        },
+        {
+          "id": "fr-c2-ecriture-academique",
+          "title": "Escritura académica avanzada",
+          "targetTitle": "L'écriture académique avancée",
+          "description": "Vas a aprender las convenciones de la escritura académica francesa, desde la estructura de una tesis hasta cómo citar fuentes correctamente. Te sirve para redactar trabajos universitarios o artículos de investigación.",
+          "subtopics": [
+            "Estructura de una tesis",
+            "Convenciones académicas",
+            "Citar fuentes",
+            "Conectores académicos precisos",
+            "Redactar un resumen académico"
+          ],
+          "prerequisites": ["fr-c2-sous-entendus"]
+        },
+        {
+          "id": "fr-c2-litterature-poesie",
+          "title": "Literatura y poesía",
+          "targetTitle": "La littérature et la poésie",
+          "description": "Vas a aprender a analizar recursos literarios en poesía y prosa, incluyendo versificación básica y simbolismo. Te sirve para interpretar obras literarias y escribir un comentario literario con criterio propio.",
+          "subtopics": [
+            "Recursos literarios en poesía",
+            "Versificación básica",
+            "Simbolismo e interpretación",
+            "Analizar un estilo en prosa",
+            "Escribir un comentario literario"
+          ],
+          "prerequisites": ["fr-c2-ecriture-academique"]
+        },
+        {
+          "id": "fr-c2-langue-droit-administration",
+          "title": "Francés jurídico y administrativo",
+          "targetTitle": "Le français juridique et administratif",
+          "description": "Vas a aprender vocabulario y fórmulas propias de los documentos legales y administrativos franceses. Te sirve para interpretar contratos, formularios oficiales y redactar una carta administrativa formal.",
+          "subtopics": [
+            "Vocabulario jurídico",
+            "Vocabulario administrativo",
+            "Fórmulas de documentos oficiales",
+            "Interpretar un contrato",
+            "Redactar una carta administrativa"
+          ],
+          "prerequisites": ["fr-c2-litterature-poesie"]
+        },
+        {
+          "id": "fr-c2-traduction-nuances",
+          "title": "Traducción y matices entre español y francés",
+          "targetTitle": "La traduction et les nuances entre l'espagnol et le français",
+          "description": "Vas a aprender a identificar falsos amigos avanzados y expresiones intraducibles, y a adaptar el registro al traducir entre español y francés. Te sirve para traducir textos literarios o profesionales con precisión y naturalidad.",
+          "subtopics": [
+            "Falsos amigos avanzados",
+            "Expresiones intraducibles",
+            "Adaptar el registro al traducir",
+            "Matices idiomáticos",
+            "Traducir un fragmento literario"
+          ],
+          "prerequisites": ["fr-c2-langue-droit-administration"]
+        },
+        {
+          "id": "fr-c2-art-oratoire",
+          "title": "Arte oratorio y exposición pública",
+          "targetTitle": "L'art oratoire et la prise de parole en public",
+          "description": "Vas a aprender a estructurar una exposición formal tipo conferencia y a manejar preguntas del público con seguridad. Te sirve para dar charlas, presentaciones o ponencias en francés frente a cualquier audiencia.",
+          "subtopics": [
+            "Estructurar una conferencia",
+            "Manejar la sesión de preguntas",
+            "Énfasis y modulación en el discurso",
+            "Debatir bajo presión",
+            "Dar una charla tipo keynote"
+          ],
+          "prerequisites": ["fr-c2-traduction-nuances"]
+        }
+      ]
+    }
+  ]
+}

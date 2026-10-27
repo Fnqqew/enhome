@@ -1,0 +1,518 @@
+{
+  "id": "pt-c2-escrita-criativa",
+  "level": "C2",
+  "order": 5,
+  "title": "Escritura creativa",
+  "targetTitle": "Escrita criativa",
+  "description": "Vas a aprender a escribir narrativa creativa con diálogos naturales y descripciones ricas. Te sirve para desarrollar tu propio estilo al escribir un microrrelato en portugués.",
+  "objectives": [
+    "Vas a poder narrar escenas breves en portugués usando los tiempos narrativos y el punto de vista adecuado.",
+    "Vas a poder escribir diálogos naturales, con la puntuación correcta (travessão) y el registro adecuado a cada personaje.",
+    "Vas a poder construir descripciones sensoriales ricas, con un estilo propio y variado.",
+    "Vas a poder crear juegos de palabras, ironía y humor escrito usando los recursos típicos del portugués brasileño.",
+    "Vas a poder escribir un microrrelato completo combinando narración, diálogo, descripción sensorial y humor."
+  ],
+  "prerequisites": [
+    "pt-c2-traducao-interpretacao"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "narrativa-criativa",
+      "day": 1,
+      "title": "Narrativa creativa",
+      "goal": "Vas a poder narrar una escena breve en portugués usando los tiempos narrativos y el punto de vista (primera o tercera persona) de forma coherente y con voz propia.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El pretérito perfeito simples es el tiempo base para narrar hechos puntuales: *Ela abriu a porta e saiu.* (equivale al pretérito perfecto simple del español: abrió).",
+        "El imperfeito describe el fondo, los estados y lo habitual dentro del relato: *A casa estava silenciosa.* = La casa estaba silenciosa.",
+        "El foco narrativo (primeira pessoa vs terceira pessoa) hay que mantenerlo estable: en primera persona usás 'eu', en tercera 'ele/ela' o el nombre del personaje.",
+        "El presente histórico le da inmediatez al relato: *Ele entra na sala e todos ficam em silêncio.* = Entra en la sala y todos se quedan en silencio.",
+        "El discurso indirecto libre (mezclar la voz del narrador con la del personaje sin verbos de habla) es un recurso de estilo propio de la narrativa literaria contemporánea."
+      ],
+      "examples": [
+        {
+          "target": "Ela abriu a porta devagar, como se tivesse medo do que poderia encontrar.",
+          "es": "Abrió la puerta despacio, como si tuviera miedo de lo que pudiera encontrar."
+        },
+        {
+          "target": "A cidade dormia, mas algo dentro dele continuava acordado.",
+          "es": "La ciudad dormía, pero algo dentro de él seguía despierto."
+        },
+        {
+          "target": "Fazia anos que ele não voltava àquela rua.",
+          "es": "Hacía años que no volvía a esa calle."
+        },
+        {
+          "target": "De repente, a luz se apagou e ninguém disse nada.",
+          "es": "De repente, la luz se apagó y nadie dijo nada."
+        },
+        {
+          "target": "Ele entra na sala e todos ficam em silêncio.",
+          "es": "Entra en la sala y todos se quedan en silencio."
+        },
+        {
+          "target": "Eu sabia que aquilo ia mudar tudo, mas fingi que não.",
+          "es": "Yo sabía que eso iba a cambiar todo, pero hice como que no."
+        },
+        {
+          "target": "Nada daquilo fazia sentido, e talvez fosse melhor assim.",
+          "es": "Nada de eso tenía sentido, y tal vez fuera mejor así."
+        },
+        {
+          "target": "O vento batia na janela enquanto ela escrevia a última carta.",
+          "es": "El viento golpeaba la ventana mientras ella escribía la última carta."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Ela abria a porta e saía.",
+          "right": "Ela abriu a porta e saiu.",
+          "why": "Para narrar una acción puntual y completada se usa el pretérito perfeito simples, no el imperfeito, que es para el fondo o la repetición."
+        },
+        {
+          "wrong": "Eu estou entrando na sala, e todos ficam em silêncio.",
+          "right": "Eu entro na sala, e todos ficam em silêncio.",
+          "why": "El presente histórico narrativo usa el presente simple, no el presente continuo (estar + gerúndio); usar el gerundio le quita el efecto de inmediatez propio de este recurso."
+        },
+        {
+          "wrong": "Eu caminhei pela rua. Ele sentiu medo.",
+          "right": "Eu caminhei pela rua. Senti medo.",
+          "why": "Mezclar la primera y la tercera persona sin marcar el cambio de narrador confunde al lector; hay que mantener el mismo punto de vista salvo que el cambio sea intencional y claro."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "dar o tom da história",
+          "es": "marcar el tono de la historia",
+          "example": "A primeira frase costuma dar o tom da história.",
+          "exampleEs": "La primera frase suele marcar el tono de la historia."
+        },
+        {
+          "target": "criar um clima de",
+          "es": "crear un clima de",
+          "example": "A descrição pode criar um clima de tensão.",
+          "exampleEs": "La descripción puede crear un clima de tensión."
+        },
+        {
+          "target": "mudar de rumo",
+          "es": "cambiar de rumbo",
+          "example": "Depois daquela cena, a história parece mudar de rumo.",
+          "exampleEs": "Después de esa escena, la historia parece cambiar de rumbo."
+        },
+        {
+          "target": "deixar pistas",
+          "es": "dejar pistas",
+          "example": "Ao longo do texto, o autor gosta de deixar pistas.",
+          "exampleEs": "A lo largo del texto, al autor le gusta dejar pistas."
+        },
+        {
+          "target": "construir um personagem",
+          "es": "construir un personaje",
+          "example": "Com poucos detalhes, o escritor consegue construir um personagem.",
+          "exampleEs": "Con pocos detalles, el escritor logra construir un personaje."
+        }
+      ]
+    },
+    {
+      "id": "dialogos-naturais",
+      "day": 2,
+      "title": "Diálogos naturales",
+      "goal": "Vas a poder escribir diálogos naturales en portugués, con la puntuación correcta y el registro adecuado a cada personaje.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "En el portugués brasileño literario se usa el travessão (—) para marcar el habla de cada personaje, no las comillas como en el diálogo directo del inglés: *— Você vem? — perguntou ela.*",
+        "Los verbos de habla (dizer, perguntar, responder, exclamar) suelen ir después de la línea de diálogo, con el sujeto detrás del verbo: *— Vamos. — disse ele baixinho.*",
+        "El registro coloquial se marca con reducciones y marcadores conversacionales propios del habla oral: 'Cê tá bem?', 'Olha, eu acho que...', 'Sei não.'",
+        "Las acotaciones (indicaciones de acción o gesto) van entre rayas o en párrafo aparte, y ayudan a mostrar la emoción del personaje sin nombrarla directamente.",
+        "Nota de Portugal: también se usa el travessão, pero el registro coloquial cambia (pronombre 'tu' conjugado, 'fixe', etc.), así que un diálogo brasileño informal no suena igual al mismo diálogo escrito por un portugués."
+      ],
+      "examples": [
+        {
+          "target": "— Você vem ou não? — perguntou ela, impaciente.",
+          "es": "—¿Venís o no? — preguntó ella, impaciente."
+        },
+        {
+          "target": "— Não sei... — ele hesitou. — Talvez seja melhor eu ficar.",
+          "es": "—No sé... — él dudó. — Tal vez sea mejor que me quede."
+        },
+        {
+          "target": "— Cê tá bem? Parece cansado. — Tô, só um pouco.",
+          "es": "—¿Estás bien? Parecés cansado. — Estoy, solo un poco."
+        },
+        {
+          "target": "— Olha, eu acho que a gente devia conversar. — Agora? — Agora.",
+          "es": "—Mirá, creo que deberíamos hablar. — ¿Ahora? — Ahora."
+        },
+        {
+          "target": "— Sei não — respondeu o velho, sem olhar para ninguém.",
+          "es": "—No sé — respondió el viejo, sin mirar a nadie."
+        },
+        {
+          "target": "— Para! — gritou ela, e todo mundo parou na hora.",
+          "es": "—¡Pará! — gritó ella, y todos se detuvieron en el acto."
+        },
+        {
+          "target": "Ele abaixou a cabeça. — Desculpa. Eu não devia ter dito aquilo.",
+          "es": "Él bajó la cabeza. — Perdón. No debería haber dicho eso."
+        },
+        {
+          "target": "— Vai com calma — ela disse baixinho, quase um sussurro.",
+          "es": "—Andá con calma — dijo ella bajito, casi un susurro."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "\"Você vem?\" ele perguntou.",
+          "right": "— Você vem? — ele perguntou.",
+          "why": "En el portugués literario brasileño, el diálogo se marca tradicionalmente con travessão, no con comillas, aunque en chats y mensajes a veces se usan comillas o nada."
+        },
+        {
+          "wrong": "Ela disse — Vamos embora.",
+          "right": "— Vamos embora — disse ela.",
+          "why": "El orden natural pone primero la línea hablada, y el verbo de habla va después, también marcado con travessão."
+        },
+        {
+          "wrong": "Você está bem?",
+          "right": "Cê tá bem?",
+          "why": "Para que el diálogo suene natural hay que adaptar el registro al personaje; en una charla informal entre adolescentes, un brasileño diría 'Cê tá bem?', no 'Você está bem?'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "soltar uma frase",
+          "es": "soltar una frase",
+          "example": "Ele preferiu soltar uma frase seca e sair sem mais explicações.",
+          "exampleEs": "Prefirió soltar una frase seca e irse sin más explicaciones."
+        },
+        {
+          "target": "ficar sem resposta",
+          "es": "quedarse sin respuesta",
+          "example": "Diante daquela pergunta, ela acabou por ficar sem resposta.",
+          "exampleEs": "Frente a esa pregunta, terminó quedándose sin respuesta."
+        },
+        {
+          "target": "falar por entre dentes",
+          "es": "hablar entre dientes",
+          "example": "Ele continuou a falar por entre dentes, quase um resmungo.",
+          "exampleEs": "Siguió hablando entre dientes, casi un refunfuño."
+        },
+        {
+          "target": "baixar a voz",
+          "es": "bajar la voz",
+          "example": "Antes de contar o segredo, ela preferiu baixar a voz.",
+          "exampleEs": "Antes de contar el secreto, prefirió bajar la voz."
+        },
+        {
+          "target": "trocar olhares",
+          "es": "cruzar miradas",
+          "example": "Antes de responder, os dois pareceram trocar olhares.",
+          "exampleEs": "Antes de responder, los dos parecieron cruzar miradas."
+        }
+      ]
+    },
+    {
+      "id": "descricao-sensorial",
+      "day": 3,
+      "title": "Descripción sensorial y estilo propio",
+      "goal": "Vas a poder escribir descripciones ricas en detalles sensoriales (vista, oído, olfato, tacto, gusto) con un estilo propio y variado.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "Las descripciones sensoriales usan verbos específicos en vez de genéricos: en vez de 'sentir calor', mejor *o calor queimava a pele* (quemaba la piel).",
+        "Los adjetivos compuestos y las comparaciones ('como', 'que nem') enriquecen el estilo: *um silêncio pesado como chumbo* = un silencio pesado como el plomo.",
+        "La sinestesia (mezclar sentidos) da estilo propio: 'um som azul', 'um gosto de saudade' son recursos válidos en portugués igual que en español.",
+        "El orden del adjetivo cambia el matiz: *uma velha casa* (valor afectivo/nostálgico) vs *uma casa velha* (simplemente deteriorada).",
+        "Nota de Portugal: también se valora la economía de palabras en la prosa literaria, pero el vocabulario sensorial puede diferir (p. ej. 'frigorífico' en vez de 'geladeira' para describir un ambiente)."
+      ],
+      "examples": [
+        {
+          "target": "O cheiro de café invadiu a cozinha antes mesmo de ela acordar.",
+          "es": "El olor a café invadió la cocina antes de que ella se despertara."
+        },
+        {
+          "target": "A pele dele ainda guardava o sal do mar.",
+          "es": "Su piel todavía guardaba la sal del mar."
+        },
+        {
+          "target": "Um silêncio pesado como chumbo caiu sobre a sala.",
+          "es": "Un silencio pesado como el plomo cayó sobre la sala."
+        },
+        {
+          "target": "O som da chuva na janela parecia uma canção antiga.",
+          "es": "El sonido de la lluvia en la ventana parecía una canción antigua."
+        },
+        {
+          "target": "Tinha um gosto de saudade naquele chá frio.",
+          "es": "Tenía un gusto a nostalgia en aquel té frío."
+        },
+        {
+          "target": "A luz entrava torta pela persiana, cortando o quarto em fatias.",
+          "es": "La luz entraba torcida por la persiana, cortando el cuarto en tajadas."
+        },
+        {
+          "target": "O calor queimava a pele mesmo à sombra da árvore.",
+          "es": "El calor quemaba la piel aunque fuera a la sombra del árbol."
+        },
+        {
+          "target": "Era uma velha casa de madeira, cheia de histórias nas paredes.",
+          "es": "Era una vieja casa de madera, llena de historias en las paredes."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu sentia calor.",
+          "right": "O calor me sufocava.",
+          "why": "Para un estilo propio a nivel C2 conviene evitar verbos genéricos como 'sentir' y buscar verbos que muestren la sensación con más fuerza."
+        },
+        {
+          "wrong": "uma casa velha",
+          "right": "uma velha casa",
+          "why": "El orden del adjetivo en portugués, como en español, cambia el matiz afectivo; 'uma casa velha' suena a simple deterioro, mientras que para dar un tono nostálgico conviene decir 'uma velha casa'."
+        },
+        {
+          "wrong": "A casa era grande, bonita, antiga, silenciosa e triste.",
+          "right": "A casa era grande e antiga; o silêncio pesava nas paredes.",
+          "why": "A nivel C2 el estilo se enriquece variando estructuras y combinando acciones con adjetivos, no acumulando adjetivos en una sola oración."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "invadir os sentidos",
+          "es": "invadir los sentidos",
+          "example": "Antes mesmo de ela entrar na sala, o perfume já parecia invadir os sentidos.",
+          "exampleEs": "Incluso antes de que ella entrara a la sala, el perfume ya parecía invadir los sentidos."
+        },
+        {
+          "target": "cortar o ar",
+          "es": "cortar el aire (tensión palpable)",
+          "example": "Dava pra sentir a tensão cortar o ar daquela sala.",
+          "exampleEs": "Se podía sentir cómo la tensión cortaba el aire de esa sala."
+        },
+        {
+          "target": "pesar sobre tudo",
+          "es": "pesar sobre todo",
+          "example": "Um silêncio parecia pesar sobre tudo naquela sala.",
+          "exampleEs": "Un silencio parecía pesar sobre todo en esa sala."
+        },
+        {
+          "target": "guardar o cheiro de",
+          "es": "guardar el olor de",
+          "example": "Anos depois, a roupa continuava a guardar o cheiro de perfume dela.",
+          "exampleEs": "Años después, la ropa seguía guardando el olor del perfume de ella."
+        },
+        {
+          "target": "cair sobre a cena",
+          "es": "caer sobre la escena",
+          "example": "No fim do dia, uma luz dourada parecia cair sobre a cena.",
+          "exampleEs": "Al final del día, una luz dorada parecía caer sobre la escena."
+        }
+      ]
+    },
+    {
+      "id": "jogos-de-palavras",
+      "day": 4,
+      "title": "Juegos de palabras y humor en la escritura",
+      "goal": "Vas a poder crear juegos de palabras, dobles sentidos e ironía en tus textos, usando los recursos típicos del humor escrito en portugués brasileño.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "La homofonía (palabras que suenan igual) es la base de muchos juegos de palabras; algunos dependen de reducciones típicamente orales del portugués de Brasil.",
+        "El trocadilho (juego de palabras) suele usar una palabra con doble sentido en el mismo contexto: *Ele é uma pessoa de peso* puede ser literal (gordo) o figurado (importante).",
+        "La ironía se marca con el contraste entre lo dicho y el contexto, sin necesidad de explicarla: *Que dia lindo pra ficar presa em casa*, dicho bajo la lluvia.",
+        "Los diminutivos y aumentativos dan matices humorísticos: *um probleminha* (minimiza) vs *um problemão* (exagera) cambian el tono cómico de la frase.",
+        "Nota de Portugal: muchos trocadilhos brasileños no funcionan en Portugal porque dependen de reducciones propias del habla brasileña, como 'cê', que no existe en el portugués europeo."
+      ],
+      "examples": [
+        {
+          "target": "Cadê o controle? Cadê, cadê... sumiu de novo!",
+          "es": "¿Dónde está el control? ¡Dónde, dónde... desapareció otra vez!"
+        },
+        {
+          "target": "Ele é uma pessoa de peso na empresa, e também pesa uns cem quilos.",
+          "es": "Es una persona de peso en la empresa, y también pesa unos cien kilos."
+        },
+        {
+          "target": "Que dia lindo pra ficar presa em casa, não é? — disse ela, olhando a chuva.",
+          "es": "Qué día lindo para quedarme encerrada en casa, ¿no? — dijo ella, mirando la lluvia."
+        },
+        {
+          "target": "Não é um probleminha, é um problemão, viu.",
+          "es": "No es un problemita, es un problemón, mirá."
+        },
+        {
+          "target": "Ela disse que ia 'só dar uma olhadinha', e passou duas horas na loja.",
+          "es": "Dijo que iba a 'echar un vistazito', y se pasó dos horas en el local."
+        },
+        {
+          "target": "Com tanta sorte, até parece que ele nasceu com estrela.",
+          "es": "Con tanta suerte, hasta parece que nació con buena estrella."
+        },
+        {
+          "target": "Ah, claro, porque eu tenho TANTO tempo livre... — disse ela, rindo sem graça.",
+          "es": "Ah, claro, porque yo tengo TANTO tiempo libre... — dijo ella, riendo sin ganas."
+        },
+        {
+          "target": "Trocadilho bom é aquele que faz rir e doer ao mesmo tempo.",
+          "es": "Un buen juego de palabras es el que hace reír y doler al mismo tiempo."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Traduzir trocadilhos palavra por palavra do espanhol para o português.",
+          "right": "Criar ou adaptar o trocadilho diretamente em português, buscando outra palavra que funcione nesse idioma.",
+          "why": "Los juegos de palabras dependen del sonido y significado específico de cada idioma; traducir literal del español casi nunca funciona."
+        },
+        {
+          "wrong": "Que dia lindo, estou sendo irônica.",
+          "right": "Que dia lindo pra ficar presa em casa, não é?",
+          "why": "Explicar el chiste le quita toda la gracia; en portugués, como en español, la ironía se entiende por el contraste con el contexto, no se anuncia."
+        },
+        {
+          "wrong": "Usar diminutivo ou aumentativo sempre com o mesmo valor (só tamanho).",
+          "right": "Ler o contexto: 'um probleminha' pode parecer sarcástico se o problema, na verdade, for grande.",
+          "why": "Los diminutivos y aumentativos en portugués no son solo medidas de tamaño; también transmiten actitud del hablante."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "fazer graça",
+          "es": "hacer un chiste / hacerse el gracioso",
+          "example": "Ele adora fazer graça até na hora errada.",
+          "exampleEs": "Le encanta hacer chistes hasta en el momento equivocado."
+        },
+        {
+          "target": "ter graça",
+          "es": "tener gracia (ser divertido)",
+          "example": "Um bom trocadilho não deixa de ter graça, mesmo repetido.",
+          "exampleEs": "Un buen juego de palabras no deja de tener gracia, aunque se repita."
+        },
+        {
+          "target": "rir sem graça",
+          "es": "reírse sin ganas, forzado",
+          "example": "Diante da piada, ela só conseguiu rir sem graça.",
+          "exampleEs": "Ante el chiste, solo consiguió reírse sin ganas."
+        },
+        {
+          "target": "jogar com as palavras",
+          "es": "jugar con las palabras",
+          "example": "O autor adora jogar com as palavras no título.",
+          "exampleEs": "Al autor le encanta jugar con las palabras en el título."
+        },
+        {
+          "target": "dar um nó na língua",
+          "es": "trabarse al hablar",
+          "example": "Esse trocadilho consegue dar um nó na língua de quem tenta falar rápido.",
+          "exampleEs": "Ese juego de palabras logra trabar la lengua de quien intenta decirlo rápido."
+        }
+      ]
+    },
+    {
+      "id": "escrever-microrrelato",
+      "day": 5,
+      "title": "Escribir un microrrelato",
+      "goal": "Vas a poder escribir un microrrelato completo en portugués (con inicio, nudo y final) combinando narración, diálogo, descripción sensorial y algún recurso de humor o juego de palabras.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Un microconto suele tener menos de 300 palabras, por eso cada palabra tiene que aportar algo a la trama o a la atmósfera.",
+        "El final debe cerrar con un giro, una revelación o una imagen fuerte: en portugués se habla de 'virada' o 'final de efeito'.",
+        "Hay que elegir un único punto de vista narrativo y mantenerlo durante todo el microrrelato, salvo que el cambio sea un recurso intencional.",
+        "Conviene combinar narración (hechos en pretérito perfeito), diálogo breve (con travessão) y al menos un detalle sensorial fuerte para que el texto no quede plano.",
+        "Al revisar el texto final, fijate en la coherencia de los tiempos verbales (perfeito para hechos, imperfeito para el fondo) y en la puntuación correcta del diálogo."
+      ],
+      "examples": [
+        {
+          "target": "Ela guardou a carta no bolso e saiu sem olhar para trás.",
+          "es": "Guardó la carta en el bolsillo y salió sin mirar atrás."
+        },
+        {
+          "target": "— Você vai mesmo? — Vou. Não tem mais nada aqui pra mim.",
+          "es": "—¿De verdad te vas? — Me voy. Ya no hay nada más aquí para mí."
+        },
+        {
+          "target": "O relógio parou às três da tarde, bem na hora em que tudo mudou.",
+          "es": "El reloj se detuvo a las tres de la tarde, justo cuando todo cambió."
+        },
+        {
+          "target": "O final de efeito surpreendeu até quem já tinha lido o conto antes.",
+          "es": "El final sorpresa sorprendió hasta a quien ya había leído el cuento antes."
+        },
+        {
+          "target": "Um microconto bom cabe numa página, mas pesa como um romance.",
+          "es": "Un buen microrrelato entra en una página, pero pesa como una novela."
+        },
+        {
+          "target": "No fim, ela entendeu que a casa vazia era, na verdade, ela mesma.",
+          "es": "Al final, entendió que la casa vacía era, en realidad, ella misma."
+        },
+        {
+          "target": "A última frase precisa fechar a história com força, não explicar nada.",
+          "es": "La última frase tiene que cerrar la historia con fuerza, no explicar nada."
+        },
+        {
+          "target": "Cada palavra, nesse texto curto, precisa ganhar o seu lugar.",
+          "es": "Cada palabra, en ese texto corto, tiene que ganarse su lugar."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Escrever um microconto com muitos personagens e subtramas.",
+          "right": "Concentrar o microconto em um só conflito e um ou dois personagens.",
+          "why": "El formato breve no da espacio para desarrollar muchas líneas narrativas; hay que elegir una sola idea fuerte."
+        },
+        {
+          "wrong": "No final, ela percebeu que estava sozinha e isso a fez triste.",
+          "right": "No final, ela abriu a porta e não tinha mais ninguém para dizer adeus.",
+          "why": "A nivel C2 conviene mostrar la emoción a través de la acción o la imagen, no nombrarla directamente."
+        },
+        {
+          "wrong": "Começar o microconto no pretérito perfeito e, sem motivo, terminar no presente.",
+          "right": "Manter a coerência temporal, ou marcar claramente a mudança (por exemplo, passar para o presente histórico só no clímax).",
+          "why": "La inconsistencia de tiempos sin motivo narrativo distrae al lector y rompe el efecto buscado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "fechar a história com força",
+          "es": "cerrar la historia con fuerza",
+          "example": "A última linha precisa fechar a história com força.",
+          "exampleEs": "La última línea tiene que cerrar la historia con fuerza."
+        },
+        {
+          "target": "caber numa página",
+          "es": "entrar en una página (ser breve)",
+          "example": "Um bom microconto costuma caber numa página.",
+          "exampleEs": "Un buen microrrelato suele entrar en una página."
+        },
+        {
+          "target": "ganhar o seu lugar",
+          "es": "ganarse su lugar",
+          "example": "Cada palavra precisa ganhar o seu lugar no texto.",
+          "exampleEs": "Cada palabra tiene que ganarse su lugar en el texto."
+        },
+        {
+          "target": "dar um nó na trama",
+          "es": "darle un nudo a la trama (complicar la historia)",
+          "example": "Um bom final de efeito consegue dar um nó na trama até o último segundo.",
+          "exampleEs": "Un buen final sorpresa logra darle un nudo a la trama hasta el último segundo."
+        },
+        {
+          "target": "deixar o leitor de boca aberta",
+          "es": "dejar al lector con la boca abierta (asombrado)",
+          "example": "Um bom final consegue deixar o leitor de boca aberta.",
+          "exampleEs": "Un buen final logra dejar al lector con la boca abierta."
+        }
+      ]
+    }
+  ]
+}

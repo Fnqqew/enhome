@@ -1,0 +1,904 @@
+{
+  "language": "de",
+  "existing": [],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "de-a1-primeros-contactos",
+          "title": "Primeros Pasos en Alemán",
+          "targetTitle": "Erste Schritte auf Deutsch",
+          "description": "En esta semana vas a aprender a saludar, presentarte y pronunciar correctamente el alfabeto alemán. Te va a servir para romper el hielo en cualquier situación cotidiana en Alemania.",
+          "subtopics": [
+            "Saludos y despedidas formales e informales",
+            "El alfabeto alemán y la pronunciación básica",
+            "Presentarte: nombre, edad y nacionalidad",
+            "Países e idiomas en alemán",
+            "Pronombres personales y el verbo \"sein\""
+          ],
+          "prerequisites": []
+        },
+        {
+          "id": "de-a1-articulos-genero",
+          "title": "Géneros y Artículos",
+          "targetTitle": "Genus und Artikel",
+          "description": "Vas a descubrir cómo funcionan los géneros gramaticales en alemán y a usar los artículos definidos e indefinidos correctamente. Esta base es clave para armar cualquier oración sin errores.",
+          "subtopics": [
+            "Los tres géneros: der, die, das",
+            "Artículos definidos e indefinidos",
+            "Formación del plural",
+            "La negación con \"kein\"",
+            "Vocabulario de objetos cotidianos"
+          ],
+          "prerequisites": ["de-a1-primeros-contactos"]
+        },
+        {
+          "id": "de-a1-verbos-presente",
+          "title": "Verbos en Presente",
+          "targetTitle": "Verben im Präsens",
+          "description": "Esta semana vas a conjugar verbos regulares e irregulares en presente, incluyendo \"haben\" y \"sein\". Con esto vas a poder armar frases simples sobre vos y los demás.",
+          "subtopics": [
+            "Conjugación de verbos regulares",
+            "Los verbos \"haben\" y \"sein\"",
+            "Verbos irregulares frecuentes (fahren, sprechen)",
+            "El orden de las palabras en la oración",
+            "Preguntas con W-Fragen (wer, was, wo)"
+          ],
+          "prerequisites": ["de-a1-articulos-genero"]
+        },
+        {
+          "id": "de-a1-numeros-hora",
+          "title": "Números, Hora y Fechas",
+          "targetTitle": "Zahlen, Uhrzeit und Datum",
+          "description": "Vas a aprender a contar, decir la hora y manejar fechas en alemán. Esto te va a servir para organizar citas, compras y cualquier trámite cotidiano.",
+          "subtopics": [
+            "Números cardinales del 0 al 100",
+            "Decir la hora formal e informal",
+            "Días de la semana y meses",
+            "Fechas y cumpleaños",
+            "Precios y moneda"
+          ],
+          "prerequisites": ["de-a1-verbos-presente"]
+        },
+        {
+          "id": "de-a1-familia-posesivos",
+          "title": "Familia y Posesivos",
+          "targetTitle": "Familie und Possessivpronomen",
+          "description": "En esta semana vas a hablar de tu familia usando los pronombres posesivos en alemán. Esto te va a permitir describir relaciones personales con precisión.",
+          "subtopics": [
+            "Vocabulario de la familia",
+            "Pronombres posesivos (mein, dein, sein)",
+            "Declinación de posesivos en nominativo y acusativo",
+            "Describir personas físicamente",
+            "Adjetivos de personalidad básicos"
+          ],
+          "prerequisites": ["de-a1-numeros-hora"]
+        },
+        {
+          "id": "de-a1-casa-vivienda",
+          "title": "La Casa y la Vivienda",
+          "targetTitle": "Haus und Wohnung",
+          "description": "Vas a aprender vocabulario de la casa y las preposiciones de lugar para describir dónde están las cosas. Te va a servir para alquilar, mudarte o simplemente orientarte en un espacio nuevo.",
+          "subtopics": [
+            "Habitaciones y muebles",
+            "Preposiciones de lugar (in, auf, neben)",
+            "Describir tu vivienda",
+            "El verbo \"es gibt\"",
+            "Vocabulario de electrodomésticos"
+          ],
+          "prerequisites": ["de-a1-familia-posesivos"]
+        },
+        {
+          "id": "de-a1-rutina-diaria",
+          "title": "La Rutina Diaria",
+          "targetTitle": "Der Tagesablauf",
+          "description": "Esta semana vas a describir tu rutina diaria usando verbos separables y expresiones de tiempo. Esto te va a permitir contar cómo es un día típico en tu vida.",
+          "subtopics": [
+            "Verbos separables (aufstehen, anfangen)",
+            "Expresiones de frecuencia (immer, manchmal, nie)",
+            "Actividades del día a día",
+            "El reloj de 24 horas en contextos formales",
+            "Conectores temporales (dann, danach, zuerst)"
+          ],
+          "prerequisites": ["de-a1-casa-vivienda"]
+        },
+        {
+          "id": "de-a1-comida-compras",
+          "title": "Comida y Compras",
+          "targetTitle": "Essen und Einkaufen",
+          "description": "Vas a aprender vocabulario de comida y bebida junto con el caso acusativo para pedir y comprar cosas. Esto te va a servir para manejarte en un supermercado o restaurante alemán.",
+          "subtopics": [
+            "Vocabulario de alimentos y bebidas",
+            "El caso acusativo",
+            "Pedir en un restaurante",
+            "Cantidades y envases",
+            "Diálogos de compras en el supermercado"
+          ],
+          "prerequisites": ["de-a1-rutina-diaria"]
+        },
+        {
+          "id": "de-a1-ciudad-indicaciones",
+          "title": "La Ciudad y las Indicaciones",
+          "targetTitle": "Die Stadt und Wegbeschreibungen",
+          "description": "En esta semana vas a aprender a pedir y dar indicaciones para moverte por una ciudad alemana. También vas a conocer vocabulario de transporte público esencial para el día a día.",
+          "subtopics": [
+            "Lugares en la ciudad (Bahnhof, Apotheke, Markt)",
+            "Preposiciones de dirección (zu, nach, in)",
+            "Pedir y dar indicaciones",
+            "Medios de transporte público",
+            "Comprar boletos y horarios"
+          ],
+          "prerequisites": ["de-a1-comida-compras"]
+        },
+        {
+          "id": "de-a1-pasado-modales",
+          "title": "Pasado Simple y Verbos Modales",
+          "targetTitle": "Perfekt und Modalverben",
+          "description": "Vas a aprender a contar cosas que pasaron usando el Perfekt y a expresar posibilidad, deseo y obligación con los verbos modales. Con esto vas a cerrar las bases gramaticales necesarias para el nivel A2.",
+          "subtopics": [
+            "Formación del Perfekt con haben y sein",
+            "Participios regulares e irregulares",
+            "Verbos modales: können, müssen, wollen",
+            "El verbo modal \"möchten\" para pedidos",
+            "Contar experiencias pasadas simples"
+          ],
+          "prerequisites": ["de-a1-ciudad-indicaciones"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "de-a2-pasado-prateritum",
+          "title": "El Pasado Narrativo: Präteritum",
+          "targetTitle": "Die Vergangenheit: Präteritum",
+          "description": "Vas a aprender el Präteritum de los verbos más usados, sobre todo haben, sein y los modales, para narrar historias y hechos pasados. Esto te va a servir para contar anécdotas de forma natural, tanto hablando como escribiendo.",
+          "subtopics": [
+            "Präteritum de sein y haben",
+            "Präteritum de verbos modales",
+            "Präteritum vs Perfekt: cuándo usar cada uno",
+            "Verbos irregulares frecuentes en Präteritum",
+            "Narrar una anécdota corta"
+          ],
+          "prerequisites": ["de-a1-pasado-modales"]
+        },
+        {
+          "id": "de-a2-dativo-pronombres",
+          "title": "El Caso Dativo",
+          "targetTitle": "Der Dativ",
+          "description": "Esta semana vas a incorporar el caso dativo, fundamental para expresar a quién le pasa algo o a quién le dan algo. Vas a poder usar verbos como geben, helfen y gefallen con total naturalidad.",
+          "subtopics": [
+            "Artículos y pronombres en dativo",
+            "Verbos que rigen dativo (helfen, gefallen, danken)",
+            "Preposiciones fijas con dativo (mit, bei, nach)",
+            "Dativo y acusativo juntos en una oración",
+            "Pedir y dar objetos usando dativo"
+          ],
+          "prerequisites": ["de-a2-pasado-prateritum"]
+        },
+        {
+          "id": "de-a2-preposiciones-wechsel",
+          "title": "Preposiciones de Dos Casos",
+          "targetTitle": "Wechselpräpositionen",
+          "description": "Vas a aprender las preposiciones que cambian entre acusativo y dativo según indiquen movimiento o ubicación. Esto es clave para describir con precisión dónde pasan las cosas y hacia dónde se mueven.",
+          "subtopics": [
+            "Preposiciones in, auf, an, unter, über",
+            "Diferencia entre movimiento (wohin) y ubicación (wo)",
+            "Verbos de posición (stellen, legen, stehen, liegen)",
+            "Contracciones de preposición y artículo",
+            "Describir una habitación con precisión"
+          ],
+          "prerequisites": ["de-a2-dativo-pronombres"]
+        },
+        {
+          "id": "de-a2-comparativos-superlativos",
+          "title": "Comparaciones y Superlativos",
+          "targetTitle": "Komparativ und Superlativ",
+          "description": "Vas a aprender a comparar personas, cosas y situaciones usando el comparativo y el superlativo en alemán. Esto te va a servir para opinar y describir diferencias con más matices.",
+          "subtopics": [
+            "Formación del comparativo",
+            "Formación del superlativo",
+            "Comparativos irregulares (gut, viel, gern)",
+            "Estructuras \"genauso wie\" y \"als\"",
+            "Comparar ciudades, personas y objetos"
+          ],
+          "prerequisites": ["de-a2-preposiciones-wechsel"]
+        },
+        {
+          "id": "de-a2-verbos-reflexivos",
+          "title": "Verbos Reflexivos y el Cuerpo",
+          "targetTitle": "Reflexive Verben und der Körper",
+          "description": "Esta semana vas a aprender los verbos reflexivos y vocabulario del cuerpo humano para hablar de salud y rutinas personales. Vas a poder ir al médico o describir síntomas sin problema.",
+          "subtopics": [
+            "Pronombres reflexivos",
+            "Verbos reflexivos frecuentes (sich freuen, sich fühlen)",
+            "Vocabulario del cuerpo humano",
+            "Describir síntomas y malestares",
+            "Diálogo en la consulta médica"
+          ],
+          "prerequisites": ["de-a2-comparativos-superlativos"]
+        },
+        {
+          "id": "de-a2-oraciones-subordinadas",
+          "title": "Oraciones Subordinadas Básicas",
+          "targetTitle": "Nebensätze mit weil, dass, wenn",
+          "description": "Vas a aprender a conectar ideas con weil, dass y wenn, dominando el orden de las palabras en oraciones subordinadas. Esto te va a permitir justificar opiniones y expresar condiciones simples.",
+          "subtopics": [
+            "Oraciones causales con \"weil\"",
+            "Oraciones con \"dass\" para opiniones",
+            "Oraciones condicionales con \"wenn\"",
+            "El verbo al final en la subordinada",
+            "Combinar oraciones principales y subordinadas"
+          ],
+          "prerequisites": ["de-a2-verbos-reflexivos"]
+        },
+        {
+          "id": "de-a2-imperativo-consejos",
+          "title": "El Imperativo y los Consejos",
+          "targetTitle": "Der Imperativ und Ratschläge",
+          "description": "Vas a aprender a dar órdenes, instrucciones y consejos usando el imperativo en sus distintas formas. Esto te va a servir tanto para situaciones formales como informales en la vida diaria.",
+          "subtopics": [
+            "Imperativo informal (du, ihr)",
+            "Imperativo formal (Sie)",
+            "Dar consejos con \"sollte\"",
+            "Instrucciones de recetas y manuales",
+            "Pedidos corteses con el imperativo"
+          ],
+          "prerequisites": ["de-a2-oraciones-subordinadas"]
+        },
+        {
+          "id": "de-a2-futuro-planes",
+          "title": "El Futuro y los Planes de Viaje",
+          "targetTitle": "Die Zukunft und Reisepläne",
+          "description": "Esta semana vas a aprender a hablar de planes futuros con el futuro con werden y vocabulario de viajes. Vas a poder organizar un viaje y contar tus proyectos en alemán.",
+          "subtopics": [
+            "Futuro con \"werden\"",
+            "Futuro con presente y marcador temporal",
+            "Vocabulario de viajes y alojamiento",
+            "Reservar un hotel o un pasaje",
+            "Hablar de planes y proyectos personales"
+          ],
+          "prerequisites": ["de-a2-imperativo-consejos"]
+        },
+        {
+          "id": "de-a2-adjetivos-declinacion",
+          "title": "Declinación de Adjetivos",
+          "targetTitle": "Adjektivdeklination",
+          "description": "Vas a aprender cómo se declinan los adjetivos según el artículo y el caso que los acompañe. Esta estructura es fundamental para describir con precisión en cualquier nivel más avanzado.",
+          "subtopics": [
+            "Declinación después del artículo definido",
+            "Declinación después del artículo indefinido",
+            "Declinación sin artículo",
+            "Adjetivos en nominativo, acusativo y dativo",
+            "Describir objetos y personas con detalle"
+          ],
+          "prerequisites": ["de-a2-futuro-planes"]
+        },
+        {
+          "id": "de-a2-trabajo-opiniones",
+          "title": "El Trabajo y las Opiniones",
+          "targetTitle": "Arbeit und Meinungen",
+          "description": "En esta última semana de A2 vas a aprender vocabulario laboral y estructuras para dar tu opinión y mostrar acuerdo o desacuerdo. Con esto vas a cerrar el nivel con las herramientas para desenvolverte en conversaciones cotidianas más complejas.",
+          "subtopics": [
+            "Vocabulario de profesiones y trabajo",
+            "Expresar opinión (ich finde, ich denke)",
+            "Mostrar acuerdo y desacuerdo",
+            "Entrevista de trabajo simple",
+            "Hablar de ventajas y desventajas"
+          ],
+          "prerequisites": ["de-a2-adjetivos-declinacion"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "de-b1-genitivo-uso",
+          "title": "El Caso Genitivo",
+          "targetTitle": "Der Genitiv",
+          "description": "Vas a aprender el caso genitivo para expresar posesión y relaciones entre sustantivos de forma más formal. Este caso es clave para entender textos escritos y el alemán más cuidado.",
+          "subtopics": [
+            "Formación del genitivo en sustantivos",
+            "Artículos y adjetivos en genitivo",
+            "Preposiciones que rigen genitivo (während, trotz, wegen)",
+            "Genitivo vs \"von\" en el habla coloquial",
+            "Leer textos formales con genitivo"
+          ],
+          "prerequisites": ["de-a2-trabajo-opiniones"]
+        },
+        {
+          "id": "de-b1-pasiva-voz",
+          "title": "La Voz Pasiva",
+          "targetTitle": "Das Passiv",
+          "description": "Esta semana vas a aprender a formar y usar la voz pasiva para describir procesos y acciones sin enfocarte en quién las hace. Esto te va a servir para textos informativos, noticias y descripciones técnicas.",
+          "subtopics": [
+            "Formación del Passiv con werden",
+            "Pasiva en presente y pasado",
+            "El agente con \"von\" y \"durch\"",
+            "Pasiva sin agente",
+            "Diferencias entre voz activa y pasiva"
+          ],
+          "prerequisites": ["de-b1-genitivo-uso"]
+        },
+        {
+          "id": "de-b1-konjunktiv2-hipoteticas",
+          "title": "Konjunktiv II: Situaciones Hipotéticas",
+          "targetTitle": "Konjunktiv II: Hypothetische Situationen",
+          "description": "Vas a aprender el Konjunktiv II para expresar deseos, condiciones irreales y pedidos corteses con würde. Esta herramienta es esencial para sonar más natural y matizado en alemán.",
+          "subtopics": [
+            "Formación de würde + infinitivo",
+            "Konjunktiv II de verbos frecuentes (wäre, hätte, könnte)",
+            "Oraciones condicionales irreales",
+            "Deseos y consejos con Konjunktiv II",
+            "Pedidos corteses en contextos formales"
+          ],
+          "prerequisites": ["de-b1-pasiva-voz"]
+        },
+        {
+          "id": "de-b1-oraciones-relativas",
+          "title": "Oraciones Relativas",
+          "targetTitle": "Relativsätze",
+          "description": "Esta semana vas a aprender a conectar ideas usando oraciones relativas para describir personas y cosas con más detalle. Esto te va a permitir evitar repeticiones y hablar con un alemán más fluido.",
+          "subtopics": [
+            "Pronombres relativos en nominativo y acusativo",
+            "Pronombres relativos en dativo y genitivo",
+            "Oraciones relativas con preposición",
+            "Relativas con \"wo\" y \"was\"",
+            "Combinar relativas en descripciones complejas"
+          ],
+          "prerequisites": ["de-b1-konjunktiv2-hipoteticas"]
+        },
+        {
+          "id": "de-b1-conectores-concesivos",
+          "title": "Conectores de Contraste y Concesión",
+          "targetTitle": "Konnektoren: Gegensatz und Konzession",
+          "description": "Vas a aprender a usar conectores como obwohl, trotzdem y während para expresar contraste y concesión entre ideas. Esto te va a servir para argumentar con más matices en conversaciones y textos.",
+          "subtopics": [
+            "Obwohl vs trotzdem: subordinante vs conector",
+            "Während para contraste temporal o de ideas",
+            "Zwar... aber como estructura de concesión",
+            "Combinar conectores en un párrafo argumentativo",
+            "Practicar el contraste de opiniones"
+          ],
+          "prerequisites": ["de-b1-oraciones-relativas"]
+        },
+        {
+          "id": "de-b1-infinitivo-zu",
+          "title": "Infinitivo con zu",
+          "targetTitle": "Infinitiv mit zu",
+          "description": "Esta semana vas a aprender las construcciones de infinitivo con zu, incluyendo um...zu y ohne...zu, para expresar finalidad y modo. Esto te va a permitir redactar oraciones más complejas y naturales.",
+          "subtopics": [
+            "Infinitivo con zu después de verbos",
+            "Estructura \"um...zu\" para finalidad",
+            "Estructura \"ohne...zu\" para modo negativo",
+            "Estructura \"statt...zu\"",
+            "Diferencias con oraciones subordinadas equivalentes"
+          ],
+          "prerequisites": ["de-b1-conectores-concesivos"]
+        },
+        {
+          "id": "de-b1-preguntas-indirectas",
+          "title": "Preguntas Indirectas y Estilo Indirecto Básico",
+          "targetTitle": "Indirekte Fragen und einfache indirekte Rede",
+          "description": "Vas a aprender a formular preguntas indirectas y a introducir el discurso indirecto básico para reportar lo que otros dicen. Esto es muy útil para contar conversaciones y transmitir información de forma más formal.",
+          "subtopics": [
+            "Preguntas indirectas con ob",
+            "Preguntas indirectas con palabras W",
+            "Introducir discurso indirecto con \"dass\"",
+            "Verbos introductorios (fragen, sagen, erzählen)",
+            "Reportar una conversación breve"
+          ],
+          "prerequisites": ["de-b1-infinitivo-zu"]
+        },
+        {
+          "id": "de-b1-verbos-preposicion",
+          "title": "Verbos con Preposición Fija",
+          "targetTitle": "Verben mit festen Präpositionen",
+          "description": "Esta semana vas a aprender los verbos que necesitan una preposición fija, como sich freuen auf o warten auf. Dominar esto es fundamental para expresarte con precisión y naturalidad en alemán.",
+          "subtopics": [
+            "Verbos con preposición y acusativo",
+            "Verbos con preposición y dativo",
+            "Pronombres interrogativos \"wor-\" y \"dar-\"",
+            "Construir oraciones con verbos preposicionales",
+            "Vocabulario de sentimientos y relaciones"
+          ],
+          "prerequisites": ["de-b1-preguntas-indirectas"]
+        },
+        {
+          "id": "de-b1-nominalizacion",
+          "title": "Nominalización y Estilo Formal",
+          "targetTitle": "Nominalisierung und formeller Stil",
+          "description": "Vas a aprender a transformar verbos y oraciones en sustantivos para lograr un estilo más formal y escrito. Esto te va a servir para entender y producir textos académicos y administrativos.",
+          "subtopics": [
+            "Sustantivación de verbos con -ung",
+            "Sustantivación de adjetivos",
+            "Reformular oraciones subordinadas como sustantivos",
+            "Estilo formal vs estilo hablado",
+            "Redactar un párrafo formal breve"
+          ],
+          "prerequisites": ["de-b1-verbos-preposicion"]
+        },
+        {
+          "id": "de-b1-medio-ambiente",
+          "title": "Medio Ambiente y Sostenibilidad",
+          "targetTitle": "Umwelt und Nachhaltigkeit",
+          "description": "Esta semana vas a ampliar tu vocabulario sobre medio ambiente, cambio climático y sostenibilidad. Vas a poder participar en conversaciones y debates sobre estos temas tan presentes en Alemania.",
+          "subtopics": [
+            "Vocabulario de cambio climático",
+            "Reciclaje y consumo responsable",
+            "Energías renovables",
+            "Dar opiniones sobre sostenibilidad",
+            "Debate guiado sobre medio ambiente"
+          ],
+          "prerequisites": ["de-b1-nominalizacion"]
+        },
+        {
+          "id": "de-b1-medios-comunicacion",
+          "title": "Medios de Comunicación",
+          "targetTitle": "Medien und Kommunikation",
+          "description": "Vas a aprender vocabulario sobre medios de comunicación, noticias y redes sociales para seguir la actualidad en alemán. Esto te va a ayudar a leer y comentar noticias con mayor soltura.",
+          "subtopics": [
+            "Tipos de medios (Zeitung, Fernsehen, Internet)",
+            "Vocabulario de noticias y titulares",
+            "Redes sociales y comunicación digital",
+            "Comentar una noticia con tu opinión",
+            "Ventajas y desventajas de los medios digitales"
+          ],
+          "prerequisites": ["de-b1-medio-ambiente"]
+        },
+        {
+          "id": "de-b1-narrar-experiencias",
+          "title": "Narrar Experiencias Personales",
+          "targetTitle": "Persönliche Erfahrungen erzählen",
+          "description": "En esta última semana de B1 vas a integrar todo lo aprendido para narrar experiencias personales y armar un relato biográfico coherente. Con esto vas a cerrar el nivel con la capacidad de contar tu historia de forma fluida y conectada.",
+          "subtopics": [
+            "Estructura de un relato biográfico",
+            "Conectores temporales avanzados (nachdem, bevor, während)",
+            "Contar un viaje o una experiencia significativa",
+            "Redactar un Lebenslauf básico",
+            "Presentar oralmente tu historia personal"
+          ],
+          "prerequisites": ["de-b1-medios-comunicacion"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "de-b2-konjunktiv1-discurso-indirecto",
+          "title": "Konjunktiv I y el Discurso Indirecto Formal",
+          "targetTitle": "Konjunktiv I und die formelle indirekte Rede",
+          "description": "Vas a aprender el Konjunktiv I para reportar discurso indirecto de forma formal, típico de noticias y textos periodísticos. Esto te va a permitir entender y redactar informes con el registro adecuado.",
+          "subtopics": [
+            "Formación del Konjunktiv I",
+            "Uso en discurso indirecto formal",
+            "Konjunktiv I en titulares y noticias",
+            "Diferencias entre Konjunktiv I y II",
+            "Reportar una noticia en estilo indirecto"
+          ],
+          "prerequisites": ["de-b1-narrar-experiencias"]
+        },
+        {
+          "id": "de-b2-pasiva-modal",
+          "title": "Pasiva con Verbos Modales y Construcciones Impersonales",
+          "targetTitle": "Passiv mit Modalverben und unpersönliche Konstruktionen",
+          "description": "Esta semana vas a aprender la pasiva combinada con verbos modales y otras construcciones impersonales como \"man\" y \"sein + zu\". Esto te va a servir para redactar instrucciones y textos técnicos con precisión.",
+          "subtopics": [
+            "Pasiva con verbos modales (muss gemacht werden)",
+            "Construcción \"sein + zu + Infinitiv\"",
+            "Uso impersonal de \"man\"",
+            "Pasiva de estado (Zustandspassiv)",
+            "Redactar instrucciones técnicas"
+          ],
+          "prerequisites": ["de-b2-konjunktiv1-discurso-indirecto"]
+        },
+        {
+          "id": "de-b2-estilo-nominal",
+          "title": "Estilo Nominal vs Estilo Verbal",
+          "targetTitle": "Nominalstil vs Verbalstil",
+          "description": "Vas a aprender a reconocer y producir el estilo nominal típico de textos administrativos y académicos, en contraste con el estilo verbal más hablado. Esto te va a ayudar a adaptar tu redacción según el contexto formal que necesites.",
+          "subtopics": [
+            "Características del estilo nominal",
+            "Transformar oraciones verbales en nominales",
+            "Preposiciones funcionales (aufgrund, infolge, mittels)",
+            "Leer un texto administrativo típico",
+            "Reescribir un texto informal en estilo formal"
+          ],
+          "prerequisites": ["de-b2-pasiva-modal"]
+        },
+        {
+          "id": "de-b2-participios-construcciones",
+          "title": "Construcciones con Participios",
+          "targetTitle": "Partizipialkonstruktionen",
+          "description": "Esta semana vas a aprender a usar participios presentes y pasados como adjetivos y en construcciones reducidas. Esto te va a permitir escribir de forma más compacta y elegante, como en textos periodísticos.",
+          "subtopics": [
+            "Participio I como adjetivo",
+            "Participio II como adjetivo",
+            "Construcciones participiales extendidas",
+            "Reducir oraciones relativas con participios",
+            "Analizar participios en artículos periodísticos"
+          ],
+          "prerequisites": ["de-b2-estilo-nominal"]
+        },
+        {
+          "id": "de-b2-conectores-avanzados",
+          "title": "Conectores Avanzados y Correlativos",
+          "targetTitle": "Fortgeschrittene Konnektoren: je...desto, sodass",
+          "description": "Vas a aprender conectores más complejos como je...desto, sodass y zumal para expresar proporcionalidad, consecuencia y causa con matices. Esto te va a dar más herramientas para argumentar con precisión en debates y textos.",
+          "subtopics": [
+            "Estructura \"je...desto\" para proporcionalidad",
+            "\"Sodass\" para consecuencia",
+            "\"Zumal\" y \"insofern\" para causa y condición",
+            "Combinar varios conectores en un texto argumentativo",
+            "Practicar argumentación escrita con conectores avanzados"
+          ],
+          "prerequisites": ["de-b2-participios-construcciones"]
+        },
+        {
+          "id": "de-b2-cartas-formales",
+          "title": "Cartas Formales y Correos Electrónicos",
+          "targetTitle": "Formelle Briefe und E-Mails",
+          "description": "Esta semana vas a aprender a redactar cartas formales, correos electrónicos y una carta de presentación laboral. Esto te va a servir para comunicarte de forma profesional en contextos administrativos y laborales en Alemania.",
+          "subtopics": [
+            "Estructura de una carta formal",
+            "Fórmulas de saludo y despedida formales",
+            "Redactar un correo de reclamo",
+            "Redactar una carta de presentación (Anschreiben)",
+            "Vocabulario de solicitudes y trámites"
+          ],
+          "prerequisites": ["de-b2-conectores-avanzados"]
+        },
+        {
+          "id": "de-b2-argumentacion-debate",
+          "title": "Técnicas de Argumentación y Debate",
+          "targetTitle": "Argumentations- und Debattentechniken",
+          "description": "Vas a aprender estructuras y vocabulario para argumentar de forma organizada y participar en debates en alemán. Esto te va a permitir defender una posición y rebatir argumentos de manera efectiva.",
+          "subtopics": [
+            "Estructura de un argumento (tesis, razón, ejemplo)",
+            "Conectores para organizar un debate",
+            "Expresar acuerdo parcial y matizado",
+            "Rebatir un argumento con cortesía",
+            "Simulacro de debate oral"
+          ],
+          "prerequisites": ["de-b2-cartas-formales"]
+        },
+        {
+          "id": "de-b2-economia-vocabulario",
+          "title": "Vocabulario de Economía y Negocios",
+          "targetTitle": "Wortschatz: Wirtschaft und Geschäft",
+          "description": "Esta semana vas a ampliar tu vocabulario sobre economía, finanzas y el mundo de los negocios en alemán. Esto te va a servir para leer noticias económicas y participar en reuniones de trabajo.",
+          "subtopics": [
+            "Vocabulario de finanzas personales",
+            "El mercado laboral alemán",
+            "Vocabulario de empresas y negociación",
+            "Leer un gráfico o estadística económica",
+            "Presentar datos económicos oralmente"
+          ],
+          "prerequisites": ["de-b2-argumentacion-debate"]
+        },
+        {
+          "id": "de-b2-politica-sociedad",
+          "title": "Política y Sociedad",
+          "targetTitle": "Politik und Gesellschaft",
+          "description": "Vas a aprender vocabulario sobre el sistema político alemán y temas sociales actuales para poder opinar con fundamento. Esto te va a permitir seguir discusiones políticas y sociales con mayor profundidad.",
+          "subtopics": [
+            "El sistema político alemán (Bundestag, Parteien)",
+            "Vocabulario de temas sociales actuales",
+            "Expresar una postura política con matices",
+            "Leer un artículo de opinión político",
+            "Debate sobre un tema social controvertido"
+          ],
+          "prerequisites": ["de-b2-economia-vocabulario"]
+        },
+        {
+          "id": "de-b2-historia-alemania",
+          "title": "Historia Alemana del Siglo XX",
+          "targetTitle": "Deutsche Geschichte des 20. Jahrhunderts",
+          "description": "Esta semana vas a conocer los hechos clave de la historia alemana del siglo XX, como las guerras mundiales y la división del país. Esto te va a dar el contexto cultural necesario para entender muchas referencias en alemán.",
+          "subtopics": [
+            "La República de Weimar y el ascenso del nazismo",
+            "La Segunda Guerra Mundial y sus consecuencias",
+            "La división de Alemania: RFA y RDA",
+            "La caída del Muro de Berlín",
+            "Vocabulario histórico y narración de hechos pasados"
+          ],
+          "prerequisites": ["de-b2-politica-sociedad"]
+        },
+        {
+          "id": "de-b2-literatura-cultura",
+          "title": "Literatura y Cultura Contemporánea",
+          "targetTitle": "Literatur und zeitgenössische Kultur",
+          "description": "Vas a conocer autores y obras clave de la literatura alemana y a comentar producciones culturales contemporáneas como cine y música. Esto te va a servir para enriquecer tu bagaje cultural y participar en conversaciones más sofisticadas.",
+          "subtopics": [
+            "Autores clave de la literatura alemana",
+            "Análisis breve de un cuento o poema",
+            "Cine alemán contemporáneo",
+            "Música y expresiones artísticas actuales",
+            "Comentar una obra cultural con vocabulario crítico"
+          ],
+          "prerequisites": ["de-b2-historia-alemania"]
+        },
+        {
+          "id": "de-b2-matices-sinonimos",
+          "title": "Matices, Sinónimos y Falsos Amigos",
+          "targetTitle": "Nuancen, Synonyme und falsche Freunde",
+          "description": "En esta última semana de B2 vas a profundizar en matices de significado entre sinónimos y en los falsos amigos más comunes entre español y alemán. Con esto vas a cerrar el nivel con una precisión léxica mucho más fina para avanzar a C1.",
+          "subtopics": [
+            "Sinónimos con matices de formalidad",
+            "Falsos amigos frecuentes español-alemán",
+            "Verbos con significados similares pero usos distintos",
+            "Expresiones coloquiales vs formales equivalentes",
+            "Ejercicios de selección léxica precisa"
+          ],
+          "prerequisites": ["de-b2-literatura-cultura"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "de-c1-registros-formal-informal",
+          "title": "Registros: Formal e Informal",
+          "targetTitle": "Register: Formell und Informell",
+          "description": "Vas a aprender a identificar y producir distintos registros de habla, desde el lenguaje coloquial hasta el más formal y académico. Esto te va a permitir adaptar tu alemán según el contexto social o profesional en el que estés.",
+          "subtopics": [
+            "Características del registro coloquial",
+            "Características del registro formal y académico",
+            "Marcadores lingüísticos de cada registro",
+            "Adaptar un mismo mensaje a distintos registros",
+            "Analizar registros en textos auténticos"
+          ],
+          "prerequisites": ["de-b2-matices-sinonimos"]
+        },
+        {
+          "id": "de-c1-textos-academicos",
+          "title": "Redacción de Textos Académicos",
+          "targetTitle": "Akademisches Schreiben",
+          "description": "Esta semana vas a aprender la estructura y las convenciones de los textos académicos en alemán, como ensayos e informes. Esto te va a servir si pensás estudiar o trabajar en un ámbito académico alemán.",
+          "subtopics": [
+            "Estructura de un ensayo argumentativo",
+            "Introducción, desarrollo y conclusión académica",
+            "Citar fuentes y referencias",
+            "Conectores propios del discurso académico",
+            "Redactar un ensayo breve sobre un tema dado"
+          ],
+          "prerequisites": ["de-c1-registros-formal-informal"]
+        },
+        {
+          "id": "de-c1-modismos-expresiones",
+          "title": "Modismos y Expresiones Idiomáticas",
+          "targetTitle": "Redewendungen und idiomatische Ausdrücke",
+          "description": "Vas a aprender modismos y expresiones idiomáticas de uso frecuente en alemán cotidiano y literario. Esto te va a dar naturalidad y color a tu forma de hablar, acercándote al nivel de un hablante nativo.",
+          "subtopics": [
+            "Modismos relacionados con el cuerpo",
+            "Modismos relacionados con animales",
+            "Expresiones idiomáticas de uso cotidiano",
+            "Origen y contexto de uso de ciertos modismos",
+            "Practicar modismos en diálogos naturales"
+          ],
+          "prerequisites": ["de-c1-textos-academicos"]
+        },
+        {
+          "id": "de-c1-particulas-modales",
+          "title": "Partículas Modales",
+          "targetTitle": "Modalpartikeln",
+          "description": "Esta semana vas a aprender las partículas modales como doch, mal, eben y ja, que son esenciales para sonar natural en alemán hablado. Estas palabras no tienen traducción directa, pero marcan matices de actitud e intención fundamentales.",
+          "subtopics": [
+            "La partícula \"doch\" y sus usos",
+            "Las partículas \"mal\" y \"eben\"",
+            "La partícula \"ja\" como refuerzo",
+            "Combinación de partículas en el habla coloquial",
+            "Practicar partículas modales en diálogos"
+          ],
+          "prerequisites": ["de-c1-modismos-expresiones"]
+        },
+        {
+          "id": "de-c1-konjunktiv-matices",
+          "title": "Matices del Konjunktiv I y II",
+          "targetTitle": "Nuancen von Konjunktiv I und II",
+          "description": "Vas a profundizar en los usos más sofisticados del Konjunktiv I y II, incluyendo la ironía, la cortesía extrema y el discurso referido complejo. Esto te va a permitir matizar tus expresiones con la sutileza de un hablante avanzado.",
+          "subtopics": [
+            "Konjunktiv II para ironía y distanciamiento",
+            "Konjunktiv I en textos literarios",
+            "Cortesía extrema con el subjuntivo",
+            "Discurso referido complejo en textos periodísticos",
+            "Analizar matices de subjuntivo en textos auténticos"
+          ],
+          "prerequisites": ["de-c1-particulas-modales"]
+        },
+        {
+          "id": "de-c1-lenguaje-periodistico",
+          "title": "Lenguaje Periodístico",
+          "targetTitle": "Journalistische Sprache",
+          "description": "Esta semana vas a analizar las características del lenguaje periodístico alemán, como titulares, crónicas y columnas de opinión. Esto te va a permitir leer medios alemanes con comprensión crítica y profunda.",
+          "subtopics": [
+            "Estructura de titulares periodísticos",
+            "Lenguaje de la crónica informativa",
+            "La columna de opinión y su estilo",
+            "Vocabulario especializado de distintas secciones",
+            "Redactar una breve noticia periodística"
+          ],
+          "prerequisites": ["de-c1-konjunktiv-matices"]
+        },
+        {
+          "id": "de-c1-lenguaje-economico-juridico",
+          "title": "Lenguaje Económico y Jurídico",
+          "targetTitle": "Wirtschafts- und Rechtssprache",
+          "description": "Vas a aprender el vocabulario y las estructuras típicas del lenguaje económico y jurídico alemán. Esto te va a servir para entender contratos, informes financieros y documentos legales básicos.",
+          "subtopics": [
+            "Vocabulario de contratos y documentos legales",
+            "Vocabulario de informes financieros",
+            "Estructuras típicas del lenguaje jurídico",
+            "Lectura comprensiva de un contrato simple",
+            "Vocabulario de trámites administrativos complejos"
+          ],
+          "prerequisites": ["de-c1-lenguaje-periodistico"]
+        },
+        {
+          "id": "de-c1-argumentacion-avanzada",
+          "title": "Argumentación Avanzada y Retórica",
+          "targetTitle": "Fortgeschrittene Argumentation und Rhetorik",
+          "description": "Esta semana vas a perfeccionar tus técnicas de argumentación con recursos retóricos avanzados como la ironía, la analogía y la concesión estratégica. Esto te va a permitir defender posiciones complejas con elegancia y persuasión.",
+          "subtopics": [
+            "Recursos retóricos: analogía e ironía",
+            "La concesión estratégica en el debate",
+            "Estructuras para refutar con matices",
+            "Argumentación en un texto de opinión extenso",
+            "Debate formal sobre un tema complejo"
+          ],
+          "prerequisites": ["de-c1-lenguaje-economico-juridico"]
+        },
+        {
+          "id": "de-c1-variedades-alemania-austria-suiza",
+          "title": "Variedades: Alemania, Austria y Suiza",
+          "targetTitle": "Varietäten: Deutschland, Österreich und die Schweiz",
+          "description": "Vas a conocer las principales diferencias de vocabulario, pronunciación y expresiones entre el alemán de Alemania, Austria y Suiza. Esto te va a ayudar a entender a hablantes de cualquier región de habla alemana sin confusiones.",
+          "subtopics": [
+            "Diferencias de vocabulario cotidiano (Austria y Suiza)",
+            "Diferencias de pronunciación regional",
+            "El Schweizerdeutsch y su relación con el Hochdeutsch",
+            "Expresiones típicas austríacas",
+            "Comprensión auditiva de variedades regionales"
+          ],
+          "prerequisites": ["de-c1-argumentacion-avanzada"]
+        },
+        {
+          "id": "de-c1-resenas-informes",
+          "title": "Reseñas e Informes",
+          "targetTitle": "Rezensionen und Berichte",
+          "description": "En esta última semana de C1 vas a aprender a redactar reseñas críticas e informes estructurados sobre distintos temas. Con esto vas a cerrar el nivel con la capacidad de producir textos complejos y bien organizados en alemán.",
+          "subtopics": [
+            "Estructura de una reseña crítica",
+            "Vocabulario evaluativo para reseñas",
+            "Estructura de un informe formal",
+            "Resumir y sintetizar información compleja",
+            "Redactar una reseña o informe completo"
+          ],
+          "prerequisites": ["de-c1-variedades-alemania-austria-suiza"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "de-c2-estilo-literario",
+          "title": "Análisis de Estilo Literario",
+          "targetTitle": "Analyse des literarischen Stils",
+          "description": "Vas a aprender a analizar recursos estilísticos en textos literarios alemanes de distintas épocas y autores. Esto te va a permitir apreciar y comentar literatura en alemán con una mirada crítica y profesional.",
+          "subtopics": [
+            "Recursos estilísticos en prosa literaria",
+            "Análisis de un fragmento narrativo clásico",
+            "Análisis de un fragmento narrativo contemporáneo",
+            "La voz narrativa y el punto de vista",
+            "Comentario crítico de un texto literario"
+          ],
+          "prerequisites": ["de-c1-resenas-informes"]
+        },
+        {
+          "id": "de-c2-ironia-humor",
+          "title": "Ironía, Humor y Juegos de Palabras",
+          "targetTitle": "Ironie, Humor und Wortspiele",
+          "description": "Esta semana vas a profundizar en el humor alemán, la ironía y los juegos de palabras, elementos difíciles de dominar incluso en niveles avanzados. Esto te va a permitir entender chistes, sátira y humor sofisticado en contextos reales.",
+          "subtopics": [
+            "Mecanismos lingüísticos del humor alemán",
+            "Ironía y sarcasmo en el habla cotidiana",
+            "Juegos de palabras y dobles sentidos",
+            "Humor en publicidad y medios",
+            "Analizar un texto satírico o humorístico"
+          ],
+          "prerequisites": ["de-c2-estilo-literario"]
+        },
+        {
+          "id": "de-c2-retorica-persuasion",
+          "title": "Retórica y Discurso Persuasivo",
+          "targetTitle": "Rhetorik und überzeugende Rede",
+          "description": "Vas a aprender técnicas retóricas avanzadas para estructurar discursos persuasivos de alto nivel, como los usados en política o en charlas públicas. Esto te va a permitir hablar en público con impacto y total dominio del idioma.",
+          "subtopics": [
+            "Estructura clásica de un discurso persuasivo",
+            "Figuras retóricas avanzadas (anáfora, antítesis)",
+            "El uso estratégico del pathos, ethos y logos",
+            "Analizar un discurso político famoso",
+            "Preparar y presentar un discurso propio"
+          ],
+          "prerequisites": ["de-c2-ironia-humor"]
+        },
+        {
+          "id": "de-c2-discurso-academico-avanzado",
+          "title": "Discurso Académico Avanzado",
+          "targetTitle": "Fortgeschrittener akademischer Diskurs",
+          "description": "Esta semana vas a perfeccionar el discurso académico oral y escrito para contextos como conferencias, tesis o publicaciones científicas. Esto te va a servir si tu objetivo es desempeñarte en un entorno académico o de investigación en alemán.",
+          "subtopics": [
+            "Estructura de una presentación de conferencia",
+            "Lenguaje de la investigación científica",
+            "Citar y debatir fuentes académicas con matices",
+            "Responder preguntas en un contexto académico formal",
+            "Simulacro de presentación académica"
+          ],
+          "prerequisites": ["de-c2-retorica-persuasion"]
+        },
+        {
+          "id": "de-c2-traduccion-matices-culturales",
+          "title": "Traducción y Matices Culturales",
+          "targetTitle": "Übersetzung und kulturelle Nuancen",
+          "description": "Vas a explorar los desafíos de traducir entre español y alemán, prestando especial atención a los matices culturales intraducibles. Esto te va a dar una comprensión profunda de cómo la lengua refleja la cultura y viceversa.",
+          "subtopics": [
+            "Conceptos culturales intraducibles del alemán",
+            "Estrategias de traducción de modismos",
+            "Referencias culturales específicas de Alemania",
+            "Comparar traducciones de un mismo texto literario",
+            "Traducir un texto breve con matices culturales"
+          ],
+          "prerequisites": ["de-c2-discurso-academico-avanzado"]
+        },
+        {
+          "id": "de-c2-redaccion-creativa",
+          "title": "Redacción Creativa",
+          "targetTitle": "Kreatives Schreiben",
+          "description": "Esta semana vas a explorar la escritura creativa en alemán, produciendo relatos cortos y textos con voz propia. Esto te va a permitir expresar tu creatividad y personalidad con total libertad en el idioma.",
+          "subtopics": [
+            "Técnicas narrativas para relatos cortos",
+            "Construcción de personajes y diálogos",
+            "Descripciones sensoriales y atmósfera",
+            "Escribir un microrrelato en alemán",
+            "Retroalimentación y revisión de un texto creativo"
+          ],
+          "prerequisites": ["de-c2-traduccion-matices-culturales"]
+        },
+        {
+          "id": "de-c2-dialectos-variacion",
+          "title": "Dialectos y Variación Sociolingüística",
+          "targetTitle": "Dialekte und soziolinguistische Variation",
+          "description": "Vas a profundizar en los principales dialectos del alemán y en la variación sociolingüística según región, edad y clase social. Esto te va a dar una comprensión completa de la diversidad real del idioma más allá del Hochdeutsch estándar.",
+          "subtopics": [
+            "Mapa de los principales dialectos alemanes",
+            "Bairisch, Sächsisch y Kölsch: características básicas",
+            "Variación sociolingüística por edad y grupo social",
+            "Comprensión auditiva de dialectos fuertes",
+            "Actitudes sociales hacia los dialectos en Alemania"
+          ],
+          "prerequisites": ["de-c2-redaccion-creativa"]
+        },
+        {
+          "id": "de-c2-dominio-integrador",
+          "title": "Dominio Integrador y Preparación Final",
+          "targetTitle": "Integrative Beherrschung und Abschlussvorbereitung",
+          "description": "En esta última semana de C2 vas a integrar todas las destrezas trabajadas en el curso a través de simulacros de examen y tareas complejas de comprensión y producción. Con esto vas a cerrar tu formación con el dominio total del alemán al nivel de un hablante casi nativo.",
+          "subtopics": [
+            "Simulacro de examen de comprensión auditiva C2",
+            "Simulacro de examen de comprensión lectora C2",
+            "Producción escrita compleja bajo tiempo limitado",
+            "Producción oral: debate y presentación integrados",
+            "Retroalimentación final y plan de mejora continua"
+          ],
+          "prerequisites": ["de-c2-dialectos-variacion"]
+        }
+      ]
+    }
+  ]
+}

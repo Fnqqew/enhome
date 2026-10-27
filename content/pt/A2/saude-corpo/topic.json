@@ -1,0 +1,404 @@
+{
+  "id": "pt-a2-saude-corpo",
+  "level": "A2",
+  "order": 8,
+  "title": "Salud, cuerpo y emociones",
+  "targetTitle": "Saúde, corpo e emoções",
+  "description": "Vas a aprender vocabulario del cuerpo, los síntomas y las emociones. Te sirve para explicar cómo te sentís y manejarte en una consulta médica.",
+  "objectives": [
+    "Vas a poder nombrar las partes del cuerpo y usarlas para describir dolores y golpes.",
+    "Vas a poder describir síntomas y malestares usando \"estar com\", \"ter\" y \"doer\".",
+    "Vas a poder manejarte en una consulta médica: pedir turno, entender al médico y hablar de remedios y estudios.",
+    "Vas a poder expresar emociones y estados de ánimo con \"estar\", \"ficar\" y \"estar com\".",
+    "Vas a poder pedir ayuda en una emergencia y redactar un mensaje breve describiendo cómo te sentís.",
+    "Vas a reconocer algunas diferencias entre el portugués de Brasil y de Portugal relacionadas con este tema."
+  ],
+  "prerequisites": [
+    "pt-a2-preterito-imperfeito"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "partes-del-cuerpo",
+      "day": 1,
+      "title": "Partes del cuerpo",
+      "goal": "Vas a poder nombrar las principales partes del cuerpo, con su género correcto, y usarlas en frases simples sobre golpes o dolores.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El género de las partes del cuerpo no siempre coincide con el español: o joelho es masculino en portugués, pero \"la rodilla\" es femenina en español; en cambio o braço y o ombro son masculinos en los dos idiomas (el brazo, el hombro).",
+        "A mão es femenina aunque termine en -ão: es una excepción a la regla general de que las palabras en -ão suelen ser masculinas.",
+        "Para hablar de dolor se usa el verbo doer (3ra persona: dói / doem) o la expresión estar com dor de + parte del cuerpo.",
+        "El plural sigue las reglas generales: o olho → os olhos, a perna → as pernas, o pé → os pés.",
+        "Con rutinas del cuerpo (lavar, cepillar) muchas veces no hace falta el posesivo si ya está claro de quién es: Lavo as mãos (no siempre \"minhas mãos\").",
+        "Pronunciación: el grupo lh (como en joelho) suena como una \"l\" palatal, parecida a la \"ll\" tradicional del español de España (en \"pollo\"), no como el sonido \"sh\" que usamos en Argentina para la \"ll\"."
+      ],
+      "examples": [
+        {
+          "target": "A cabeça",
+          "es": "La cabeza"
+        },
+        {
+          "target": "O braço direito está machucado.",
+          "es": "El brazo derecho está lastimado."
+        },
+        {
+          "target": "Ela tem os olhos verdes.",
+          "es": "Ella tiene los ojos verdes."
+        },
+        {
+          "target": "Meu joelho dói muito.",
+          "es": "Mi rodilla me duele mucho."
+        },
+        {
+          "target": "Lavo as mãos antes de comer.",
+          "es": "Me lavo las manos antes de comer."
+        },
+        {
+          "target": "O nariz dele é grande.",
+          "es": "La nariz de él es grande."
+        },
+        {
+          "target": "As pernas estão cansadas.",
+          "es": "Las piernas están cansadas."
+        },
+        {
+          "target": "Ele quebrou o braço jogando futebol.",
+          "es": "Él se rompió el brazo jugando al fútbol."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "o mão",
+          "right": "a mão",
+          "why": "Mão termina en -ão pero es una excepción: es femenina, a diferencia de la mayoría de las palabras terminadas en -ão."
+        },
+        {
+          "wrong": "Eu sou com dor de cabeça.",
+          "right": "Eu estou com dor de cabeça.",
+          "why": "Los síntomas y dolores son estados pasajeros, así que se usa estar com, nunca ser com."
+        },
+        {
+          "wrong": "a joelho",
+          "right": "o joelho",
+          "why": "En español \"la rodilla\" es femenina, pero en portugués o joelho es masculino: no te guíes por el género del español."
+        }
+      ],
+      "chunks": []
+    },
+    {
+      "id": "sintomas-y-malestares",
+      "day": 2,
+      "title": "Síntomas y malestares",
+      "goal": "Vas a poder describir cómo te sentís físicamente usando estar com, ter y sentir-se.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Para síntomas se usa estar com + sustantivo: estar com febre, estar com tosse, estar com gripe.",
+        "También se usa ter con algunos síntomas: ter dor de garganta, ter náusea, ter alergia.",
+        "El verbo sentir-se + adjetivo sirve para decir cómo te sentís en general: sentir-se mal, sentir-se melhor.",
+        "Ojo con el falso amigo constipado: en Brasil significa \"con problemas para ir al baño\" (estreñido), y en Portugal significa \"resfriado\". En Brasil, para resfrío se dice estar resfriado o estar gripado.",
+        "Doer es impersonal y se conjuga según la parte del cuerpo: Minha garganta está doendo / Meus pés estão doendo."
+      ],
+      "examples": [
+        {
+          "target": "Estou com febre e dor de garganta.",
+          "es": "Tengo fiebre y dolor de garganta."
+        },
+        {
+          "target": "Ele está com tosse há três dias.",
+          "es": "Él tiene tos desde hace tres días."
+        },
+        {
+          "target": "Eu me sinto mal hoje.",
+          "es": "Me siento mal hoy."
+        },
+        {
+          "target": "Ela está enjoada no ônibus.",
+          "es": "Ella está mareada en el colectivo."
+        },
+        {
+          "target": "Tenho náusea depois de comer.",
+          "es": "Tengo náuseas después de comer."
+        },
+        {
+          "target": "Você está resfriado?",
+          "es": "¿Estás resfriado?"
+        },
+        {
+          "target": "Meu estômago está doendo.",
+          "es": "Me está doliendo el estómago."
+        },
+        {
+          "target": "Eles estão com alergia a poeira.",
+          "es": "Ellos tienen alergia al polvo."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu tenho frio, por isso não vou trabalhar.",
+          "right": "Eu estou com febre, por isso não vou trabalhar.",
+          "why": "Frio significa frío (temperatura); para fiebre se usa febre, no los confundas."
+        },
+        {
+          "wrong": "Eu sou doente hoje.",
+          "right": "Eu estou doente hoje.",
+          "why": "Estar enfermo es un estado pasajero, así que va con estar, no con ser."
+        },
+        {
+          "wrong": "Minha garganta dor.",
+          "right": "Minha garganta está doendo. / Tenho dor de garganta.",
+          "why": "Dor es un sustantivo, no un verbo: necesitás doer (conjugado) o ter dor de."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "dor de garganta",
+          "es": "dolor de garganta",
+          "example": "Tenho dor de garganta e não consigo falar.",
+          "exampleEs": "Tengo dolor de garganta y no puedo hablar."
+        }
+      ]
+    },
+    {
+      "id": "consultorio-medico",
+      "day": 3,
+      "title": "En el consultorio médico",
+      "goal": "Vas a poder pedir un turno, entender indicaciones básicas del médico y hablar de remedios y estudios.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "Precisar + infinitivo no lleva preposición (preciso ir ao médico), pero precisar de + sustantivo sí la lleva (preciso de um remédio).",
+        "Marcar uma consulta com o médico es la forma habitual de decir \"sacar turno con el médico\"; se usa com, no para.",
+        "Receitar es transitivo directo: o médico me receitou um remédio (sin preposición).",
+        "Vocabulario clave: consultório (consultorio), receita (receta), exame (estudio/análisis), remédio (remedio/medicamento), atestado médico (certificado médico).",
+        "En textos y diálogos del consultorio, el médico suele usar você o, en trato más formal, o(a) senhor(a)."
+      ],
+      "examples": [
+        {
+          "target": "Eu preciso marcar uma consulta com o médico.",
+          "es": "Necesito sacar un turno con el médico."
+        },
+        {
+          "target": "O médico me examinou e passou uma receita.",
+          "es": "El médico me examinó y me dio una receta."
+        },
+        {
+          "target": "Você precisa fazer um exame de sangue.",
+          "es": "Necesitás hacerte un análisis de sangre."
+        },
+        {
+          "target": "Qual é o seu sintoma principal?",
+          "es": "¿Cuál es tu síntoma principal?"
+        },
+        {
+          "target": "Tome este remédio duas vezes ao dia.",
+          "es": "Tomá este remedio dos veces al día."
+        },
+        {
+          "target": "Preciso de um atestado médico.",
+          "es": "Necesito un certificado médico."
+        },
+        {
+          "target": "A enfermeira vai medir sua pressão.",
+          "es": "La enfermera va a medirte la presión."
+        },
+        {
+          "target": "O consultório fica no segundo andar.",
+          "es": "El consultorio queda en el segundo piso."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu preciso de ir ao médico.",
+          "right": "Eu preciso ir ao médico.",
+          "why": "Precisar + infinitivo no lleva de; de solo aparece cuando después va un sustantivo (preciso de um remédio)."
+        },
+        {
+          "wrong": "Marquei uma consulta para o médico.",
+          "right": "Marquei uma consulta com o médico.",
+          "why": "Para decir con quién es la consulta se usa com, no para."
+        },
+        {
+          "wrong": "O médico me receitou para um remédio.",
+          "right": "O médico me receitou um remédio.",
+          "why": "Receitar es un verbo transitivo directo: no necesita preposición antes del objeto."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "marcar uma consulta",
+          "es": "sacar un turno",
+          "example": "Vou marcar uma consulta com o dentista.",
+          "exampleEs": "Voy a sacar un turno con el dentista."
+        },
+        {
+          "target": "fazer um exame",
+          "es": "hacerse un estudio/análisis",
+          "example": "Preciso fazer um exame de sangue amanhã.",
+          "exampleEs": "Necesito hacerme un análisis de sangre mañana."
+        },
+        {
+          "target": "tomar remédio",
+          "es": "tomar remedio",
+          "example": "Tenho que tomar remédio três vezes ao dia.",
+          "exampleEs": "Tengo que tomar remedio tres veces al día."
+        },
+        {
+          "target": "sala de espera",
+          "es": "sala de espera",
+          "example": "Esperei uma hora na sala de espera.",
+          "exampleEs": "Esperé una hora en la sala de espera."
+        }
+      ]
+    },
+    {
+      "id": "emociones-y-estados-de-animo",
+      "day": 4,
+      "title": "Expresar emociones y estados de ánimo",
+      "goal": "Vas a poder expresar cómo te sentís emocionalmente usando estar, ficar y estar com.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Con adjetivos de emoción se usa estar directo: estar feliz, estar triste, estar nervoso/a (sin com).",
+        "Con sustantivos de emoción se usa estar com: estar com medo, estar com raiva, estar com vergonha, estar com saudade.",
+        "Ficar + adjetivo marca el cambio de estado: ficar triste (ponerse triste), ficar bravo (enojarse).",
+        "Saudade es una palabra típica del portugués sin equivalente exacto en español; se usa con sentir o ter y siempre con de: sentir saudade de alguém.",
+        "Los adjetivos de emoción concuerdan en género y número con la persona: ele está nervoso / ela está nervosa / eles estão nervosos."
+      ],
+      "examples": [
+        {
+          "target": "Estou muito feliz hoje.",
+          "es": "Estoy muy feliz hoy."
+        },
+        {
+          "target": "Ela ficou triste com a notícia.",
+          "es": "Ella se puso triste con la noticia."
+        },
+        {
+          "target": "Estou com medo de altura.",
+          "es": "Tengo miedo a la altura."
+        },
+        {
+          "target": "Ele está com raiva do irmão.",
+          "es": "Él está enojado con su hermano."
+        },
+        {
+          "target": "Tenho saudade da minha família.",
+          "es": "Extraño a mi familia."
+        },
+        {
+          "target": "Ficamos nervosos antes da prova.",
+          "es": "Nos pusimos nerviosos antes del examen."
+        },
+        {
+          "target": "Ela está com vergonha de falar em público.",
+          "es": "Ella tiene vergüenza de hablar en público."
+        },
+        {
+          "target": "Estamos animados para a viagem.",
+          "es": "Estamos entusiasmados para el viaje."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Estou com feliz.",
+          "right": "Estou feliz.",
+          "why": "Los adjetivos de emoción van directo con estar; com se usa solo con sustantivos como medo, raiva, vergonha o saudade."
+        },
+        {
+          "wrong": "Eu sinto saudade você.",
+          "right": "Eu sinto saudade de você.",
+          "why": "Saudade siempre necesita la preposición de antes de la persona o cosa que se extraña."
+        },
+        {
+          "wrong": "Ela é nervosa hoje.",
+          "right": "Ela está nervosa hoje.",
+          "why": "Para un estado emocional pasajero se usa estar; ser nervosa implicaría que es un rasgo permanente de su personalidad."
+        }
+      ],
+      "chunks": []
+    },
+    {
+      "id": "pedir-ayuda-y-describir-como-te-sentis",
+      "day": 5,
+      "title": "Pedir ayuda y describir cómo te sentís",
+      "goal": "Vas a poder pedir ayuda en una situación de urgencia y escribir un mensaje breve describiendo cómo te sentís.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Para pedir ayuda formal o urgente: Preciso de ajuda, Pode me ajudar?, Socorro!, Chama o médico / uma ambulância.",
+        "Precisar de ajuda siempre lleva de porque ajuda es un sustantivo.",
+        "En Brasil el pronombre va antes del verbo en el habla cotidiana: me ajudar, me sinto; en Portugal es más común el pronombre después, con guion: ajudar-me, sinto-me.",
+        "Para describir cómo te sentís podés combinar lo aprendido: Estou com + síntoma, Estou me sentindo + adjetivo, Sinto + sustantivo.",
+        "Al escribir un mensaje de emergencia conviene ser breve y claro: qué pasa, desde cuándo y qué necesitás."
+      ],
+      "examples": [
+        {
+          "target": "Socorro! Preciso de ajuda!",
+          "es": "¡Socorro! ¡Necesito ayuda!"
+        },
+        {
+          "target": "Você pode me ajudar, por favor?",
+          "es": "¿Me podés ayudar, por favor?"
+        },
+        {
+          "target": "Não estou me sentindo bem.",
+          "es": "No me estoy sintiendo bien."
+        },
+        {
+          "target": "Podem chamar uma ambulância?",
+          "es": "¿Pueden llamar a una ambulancia?"
+        },
+        {
+          "target": "Estou com uma dor forte no peito.",
+          "es": "Tengo un dolor fuerte en el pecho."
+        },
+        {
+          "target": "Preciso falar com um médico urgentemente.",
+          "es": "Necesito hablar con un médico urgentemente."
+        },
+        {
+          "target": "Me sinto cansado e sem energia.",
+          "es": "Me siento cansado y sin energía."
+        },
+        {
+          "target": "Qual é a farmácia mais próxima?",
+          "es": "¿Cuál es la farmacia más cercana?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu preciso ajuda.",
+          "right": "Eu preciso de ajuda.",
+          "why": "Como ajuda es un sustantivo, precisar necesita la preposición de antes."
+        },
+        {
+          "wrong": "Pode ajudar-me?",
+          "right": "Pode me ajudar?",
+          "why": "En el portugués hablado de Brasil el pronombre suele ir antes del verbo; ajudar-me con guion es más típico del portugués de Portugal. (En un chat informal brasileño suena demasiado formal.)"
+        },
+        {
+          "wrong": "Eu sinto-me mal. (en el habla cotidiana de Brasil)",
+          "right": "Eu me sinto mal.",
+          "why": "En Brasil lo natural en el día a día es poner el pronombre antes del verbo; sinto-me es más común en Portugal."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "dor no peito",
+          "es": "dolor en el pecho",
+          "example": "Ele sentiu uma dor no peito e foi ao hospital.",
+          "exampleEs": "Él sintió un dolor en el pecho y fue al hospital."
+        }
+      ]
+    }
+  ]
+}

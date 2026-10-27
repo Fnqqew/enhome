@@ -1,0 +1,487 @@
+{
+  "id": "pt-c1-generos-textuais-formais",
+  "level": "C1",
+  "order": 5,
+  "title": "Géneros textuales formales avanzados",
+  "targetTitle": "Gêneros textuais formais avançados",
+  "description": "Vas a aprender la estructura de géneros formales como el ensayo académico, el informe técnico y la carta formal compleja. Te sirve para redactar textos formales completos con el registro adecuado.",
+  "objectives": [
+    "Vas a poder reconocer y producir la estructura de un ensayo académico en portugués con registro impersonal.",
+    "Vas a poder redactar un informe técnico siguiendo su estructura fija y su lenguaje objetivo.",
+    "Vas a poder escribir una carta formal compleja con las fórmulas de cortesía y la colocación pronominal culta adecuadas.",
+    "Vas a poder distinguir la estructura y el registro propios de cada género formal estudiado.",
+    "Vas a poder redactar un ensayo breve propio, coherente y con el registro académico adecuado."
+  ],
+  "prerequisites": [
+    "pt-c1-coesao"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "ensaio-academico",
+      "day": 1,
+      "title": "El ensayo académico",
+      "goal": "Vas a poder reconocer y producir la estructura de un ensayo académico en portugués con el registro impersonal adecuado.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "El ensayo académico se organiza en introdução (presentación de la tesis), desenvolvimento (argumentos con fundamentación) y conclusão (retomada de la tesis y cierre).",
+        "Se evita la primera persona del singular; se prefiere la voz pasiva o fórmulas impersonales como \"entende-se que\", \"é possível afirmar que\".",
+        "Los conectores argumentativos cultos organizan las ideas: \"em primeiro lugar\", \"ademais\", \"por conseguinte\", \"nesse sentido\".",
+        "Para referirse al propio texto se usan fórmulas como \"o presente ensaio\" o \"este trabalho\", nunca \"eu\".",
+        "La nominalización (transformar verbos en sustantivos) le da formalidad al texto: \"a implementação dessa política\" en vez de \"implementar essa política\"."
+      ],
+      "examples": [
+        {
+          "target": "O presente ensaio tem como objetivo analisar os impactos da tecnologia na educação.",
+          "es": "El presente ensayo tiene como objetivo analizar los impactos de la tecnología en la educación."
+        },
+        {
+          "target": "Em primeiro lugar, cabe destacar que a desigualdade social permanece um desafio estrutural.",
+          "es": "En primer lugar, cabe destacar que la desigualdad social sigue siendo un desafío estructural."
+        },
+        {
+          "target": "Ademais, diversos estudos apontam para uma correlação entre renda e escolaridade.",
+          "es": "Además, diversos estudios señalan una correlación entre ingreso y escolaridad."
+        },
+        {
+          "target": "Por conseguinte, torna-se necessário repensar as políticas públicas vigentes.",
+          "es": "Por consiguiente, se vuelve necesario repensar las políticas públicas vigentes."
+        },
+        {
+          "target": "Entende-se que a inovação tecnológica, por si só, não resolve problemas estruturais.",
+          "es": "Se entiende que la innovación tecnológica, por sí sola, no resuelve problemas estructurales."
+        },
+        {
+          "target": "Nesse sentido, a implementação de reformas educacionais mostra-se urgente.",
+          "es": "En ese sentido, la implementación de reformas educativas se muestra urgente."
+        },
+        {
+          "target": "Conclui-se, portanto, que o debate exige uma abordagem multidisciplinar.",
+          "es": "Se concluye, por lo tanto, que el debate exige un enfoque multidisciplinario."
+        },
+        {
+          "target": "Este trabalho buscou demonstrar a complexidade do tema abordado.",
+          "es": "Este trabajo buscó demostrar la complejidad del tema abordado."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu acho que a tecnologia é importante.",
+          "right": "Entende-se que a tecnologia desempenha um papel relevante.",
+          "why": "En el registro académico formal se evita la primera persona del singular; se prefieren construcciones impersonales o la voz pasiva."
+        },
+        {
+          "wrong": "Em primeiro lugar, eu quero falar sobre...",
+          "right": "Em primeiro lugar, cabe destacar que...",
+          "why": "Los conectores argumentativos cultos se combinan con estructuras impersonales, no con \"eu quero falar sobre\", que suena coloquial."
+        },
+        {
+          "wrong": "Implementar essa política vai ajudar muito.",
+          "right": "A implementação dessa política contribuirá significativamente.",
+          "why": "La nominalización (\"a implementação\") junto con un verbo más formal (\"contribuirá\") eleva el registro, adecuado para un ensayo académico."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Cabe destacar que",
+          "es": "Cabe destacar que",
+          "example": "Cabe destacar que os dados são preliminares.",
+          "exampleEs": "Cabe destacar que los datos son preliminares."
+        },
+        {
+          "target": "Nesse sentido",
+          "es": "En ese sentido",
+          "example": "Nesse sentido, a pesquisa avança para novas hipóteses.",
+          "exampleEs": "En ese sentido, la investigación avanza hacia nuevas hipótesis."
+        },
+        {
+          "target": "Por conseguinte",
+          "es": "Por consiguiente",
+          "example": "Por conseguinte, conclui-se que o modelo é eficaz.",
+          "exampleEs": "Por consiguiente, se concluye que el modelo es eficaz."
+        },
+        {
+          "target": "O presente ensaio",
+          "es": "El presente ensayo",
+          "example": "O presente ensaio discute as causas do fenômeno.",
+          "exampleEs": "El presente ensayo discute las causas del fenómeno."
+        }
+      ]
+    },
+    {
+      "id": "relatorio-tecnico",
+      "day": 2,
+      "title": "El informe técnico",
+      "goal": "Vas a poder redactar un informe técnico siguiendo su estructura fija y su lenguaje objetivo.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "Un informe técnico sigue una estructura fija: objetivo, metodologia, resultados, discussão y conclusão con recomendações.",
+        "El lenguaje es objetivo e impersonal: se prefiere \"foi constatado que\" en vez de \"eu constatei que\".",
+        "Se usan verbos en voz pasiva para describir procedimientos: \"Os dados foram coletados por meio de questionários.\"",
+        "Las recomendaciones se formulan con \"recomenda-se que\" + subjuntivo, o con infinitivo impersonal: \"Recomenda-se revisar o processo.\"",
+        "Es común el uso de marcadores de resultado como \"os resultados indicam que\", \"verificou-se que\", \"observou-se uma tendência de...\"."
+      ],
+      "examples": [
+        {
+          "target": "O objetivo deste relatório é avaliar a eficiência do novo sistema.",
+          "es": "El objetivo de este informe es evaluar la eficiencia del nuevo sistema."
+        },
+        {
+          "target": "Os dados foram coletados por meio de questionários aplicados a cem funcionários.",
+          "es": "Los datos fueron recolectados mediante cuestionarios aplicados a cien empleados."
+        },
+        {
+          "target": "Verificou-se que a produtividade aumentou em quinze por cento.",
+          "es": "Se verificó que la productividad aumentó un quince por ciento."
+        },
+        {
+          "target": "Os resultados indicam uma correlação significativa entre as variáveis analisadas.",
+          "es": "Los resultados indican una correlación significativa entre las variables analizadas."
+        },
+        {
+          "target": "Observou-se uma tendência de queda nos índices de retrabalho.",
+          "es": "Se observó una tendencia a la baja en los índices de retrabajo."
+        },
+        {
+          "target": "Recomenda-se que a empresa revise os procedimentos de controle de qualidade.",
+          "es": "Se recomienda que la empresa revise los procedimientos de control de calidad."
+        },
+        {
+          "target": "Foi constatado que parte das falhas decorre de treinamento insuficiente.",
+          "es": "Se constató que parte de las fallas se debe a una capacitación insuficiente."
+        },
+        {
+          "target": "Conclui-se que as melhorias propostas são viáveis a curto prazo.",
+          "es": "Se concluye que las mejoras propuestas son viables a corto plazo."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu constatei que a produtividade aumentou.",
+          "right": "Constatou-se que a produtividade aumentou.",
+          "why": "En los informes técnicos se prefiere la forma impersonal o pasiva, evitando el \"eu\" del investigador o autor."
+        },
+        {
+          "wrong": "Recomendo que a empresa revisa os procedimentos.",
+          "right": "Recomenda-se que a empresa revise os procedimentos.",
+          "why": "\"Recomendar que\" exige subjuntivo (\"revise\"), no indicativo (\"revisa\"); además en el registro técnico se prefiere la forma impersonal \"recomenda-se\"."
+        },
+        {
+          "wrong": "Os dados foi coletado por questionários.",
+          "right": "Os dados foram coletados por meio de questionários.",
+          "why": "El sujeto \"os dados\" es plural, así que el verbo y el participio deben concordar en plural: \"foram coletados\", no \"foi coletado\"."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Foi constatado que",
+          "es": "Se constató que",
+          "example": "Foi constatado que o equipamento apresentava falhas.",
+          "exampleEs": "Se constató que el equipo presentaba fallas."
+        },
+        {
+          "target": "Os dados indicam que",
+          "es": "Los datos indican que",
+          "example": "Os dados indicam que o problema persiste.",
+          "exampleEs": "Los datos indican que el problema persiste."
+        },
+        {
+          "target": "Recomenda-se que",
+          "es": "Se recomienda que",
+          "example": "Recomenda-se que o processo seja revisado.",
+          "exampleEs": "Se recomienda que se revise el proceso."
+        },
+        {
+          "target": "Por meio de",
+          "es": "Por medio de / mediante",
+          "example": "A pesquisa foi realizada por meio de entrevistas.",
+          "exampleEs": "La investigación se realizó mediante entrevistas."
+        }
+      ]
+    },
+    {
+      "id": "carta-formal-complexa",
+      "day": 3,
+      "title": "La carta formal compleja",
+      "goal": "Vas a poder escribir una carta formal compleja con las fórmulas de cortesía y la colocación pronominal culta adecuadas.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "Una carta formal compleja empieza con un vocativo adecuado al destinatario: \"Ilustríssimo Senhor\", \"Excelentíssima Senhora\" para cargos muy altos, o \"Prezado(a) Senhor(a)\" en la mayoría de los casos.",
+        "La fórmula \"Venho por meio desta\" introduce el motivo de la carta de forma culta, sin necesidad de agregar \"eu\" explícito.",
+        "Para pedidos formales se usa \"Solicito a gentileza de\" + infinitivo, o \"Solicito que\" + subjuntivo.",
+        "El cierre formal varía según la jerarquía: \"Atenciosamente\" es el más neutro; \"Respeitosamente\" se reserva para autoridades de mayor jerarquía.",
+        "La colocación pronominal culta prefiere la ênclise al inicio de frase (\"Solicita-se\", \"Informa-se\") en vez de la próclise típica del habla coloquial."
+      ],
+      "examples": [
+        {
+          "target": "Venho por meio desta solicitar a revisão do contrato firmado em março.",
+          "es": "Vengo por medio de esta a solicitar la revisión del contrato firmado en marzo."
+        },
+        {
+          "target": "Prezado Senhor Diretor, dirijo-me a esta instituição para relatar uma irregularidade.",
+          "es": "Estimado Señor Director, me dirijo a esta institución para informar una irregularidad."
+        },
+        {
+          "target": "Solicito a gentileza de providenciar a correção do erro apontado.",
+          "es": "Solicito la gentileza de que se corrija el error señalado."
+        },
+        {
+          "target": "Agradeço antecipadamente a atenção dispensada a este pedido.",
+          "es": "Agradezco anticipadamente la atención brindada a este pedido."
+        },
+        {
+          "target": "Informa-se que o prazo estabelecido já expirou.",
+          "es": "Se informa que el plazo establecido ya venció."
+        },
+        {
+          "target": "Solicito que seja reavaliada a decisão tomada pela comissão.",
+          "es": "Solicito que se reevalúe la decisión tomada por la comisión."
+        },
+        {
+          "target": "Respeitosamente, aguardo um retorno sobre o assunto exposto.",
+          "es": "Respetuosamente, espero una respuesta sobre el asunto expuesto."
+        },
+        {
+          "target": "Na qualidade de representante legal, encaminho esta solicitação formal.",
+          "es": "En calidad de representante legal, envío esta solicitud formal."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu venho por meio desta para solicitar...",
+          "right": "Venho por meio desta solicitar...",
+          "why": "En el registro formal culto, el sujeto \"eu\" ya está implícito en la conjugación verbal; agregarlo explícitamente suena redundante y menos elegante."
+        },
+        {
+          "wrong": "Se informa que o prazo já expirou. (início de frase com próclise, em um comunicado formal)",
+          "right": "Informa-se que o prazo já expirou.",
+          "why": "En el registro formal escrito no se puede iniciar la oración con el pronombre antes del verbo (próclise); la norma culta exige la ênclise al comienzo de la frase: \"Informa-se\", no \"Se informa\"."
+        },
+        {
+          "wrong": "Atenciosamente, (despedida usada al dirigirse a Su Excelencia el Presidente de la República)",
+          "right": "Respeitosamente, (despedida más adecuada para una autoridad de rango tan alto)",
+          "why": "El cierre de la carta debe adecuarse a la jerarquía del destinatario; \"Atenciosamente\" es neutro, mientras que \"Respeitosamente\" marca mayor formalidad y respeto jerárquico, reservado para autoridades de muy alto rango."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Venho por meio desta",
+          "es": "Vengo por medio de esta / por medio de la presente",
+          "example": "Venho por meio desta informar a mudança de endereço.",
+          "exampleEs": "Vengo por medio de esta a informar el cambio de domicilio."
+        },
+        {
+          "target": "Solicito a gentileza de",
+          "es": "Solicito la gentileza de",
+          "example": "Solicito a gentileza de confirmar o recebimento deste e-mail.",
+          "exampleEs": "Solicito la gentileza de confirmar la recepción de este mail."
+        },
+        {
+          "target": "Agradeço antecipadamente",
+          "es": "Agradezco anticipadamente",
+          "example": "Agradeço antecipadamente pela atenção.",
+          "exampleEs": "Agradezco anticipadamente la atención."
+        },
+        {
+          "target": "Na qualidade de",
+          "es": "En calidad de",
+          "example": "Na qualidade de coordenador, assino este documento.",
+          "exampleEs": "En calidad de coordinador, firmo este documento."
+        }
+      ]
+    },
+    {
+      "id": "estrutura-registro-generos",
+      "day": 4,
+      "title": "Estructura y registro de cada género",
+      "goal": "Vas a poder distinguir la estructura y el registro propios del ensayo, el informe y la carta formal.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "Cada género formal tiene una estructura fija y un registro propio; mezclar géneros (por ejemplo, usar fórmulas de carta en un informe técnico) resulta inadecuado.",
+        "El ensayo académico privilegia la argumentación y la voz pasiva o impersonal; el informe técnico privilegia la objetividad y los datos; la carta formal privilegia la cortesía y las fórmulas fijas de apertura y cierre.",
+        "El grado de formalidad también varía: la carta formal usa vocativos y fórmulas de cortesía que no aparecen en el ensayo ni en el informe.",
+        "Todos los géneros formales comparten rasgos: evitar la primera persona del singular, usar nominalización y conectores cultos, y mantener un registro elevado y objetivo.",
+        "Reconocer el género de un texto antes de escribir ayuda a elegir las fórmulas y conectores adecuados desde el principio."
+      ],
+      "examples": [
+        {
+          "target": "No ensaio, prefere-se \"entende-se que\" em vez de \"eu acho que\".",
+          "es": "En el ensayo, se prefiere \"se entiende que\" en vez de \"yo creo que\"."
+        },
+        {
+          "target": "No relatório técnico, os dados substituem opiniões pessoais.",
+          "es": "En el informe técnico, los datos reemplazan las opiniones personales."
+        },
+        {
+          "target": "Na carta formal, o vocativo inicial define o tom de toda a comunicação.",
+          "es": "En la carta formal, el vocativo inicial define el tono de toda la comunicación."
+        },
+        {
+          "target": "Cada gênero exige uma estrutura própria, que não deve ser misturada com a de outro.",
+          "es": "Cada género exige una estructura propia, que no debe mezclarse con la de otro."
+        },
+        {
+          "target": "O registro formal é uma característica comum aos três gêneros estudados.",
+          "es": "El registro formal es una característica común a los tres géneros estudiados."
+        },
+        {
+          "target": "Enquanto o ensaio argumenta, o relatório descreve e a carta solicita ou informa.",
+          "es": "Mientras el ensayo argumenta, el informe describe y la carta solicita o informa."
+        },
+        {
+          "target": "A nominalização aparece nos três gêneros como recurso de formalidade.",
+          "es": "La nominalización aparece en los tres géneros como recurso de formalidad."
+        },
+        {
+          "target": "Identificar o gênero antes de escrever evita erros de registro.",
+          "es": "Identificar el género antes de escribir evita errores de registro."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Prezado Senhor, o presente ensaio tem como objetivo analisar... (vocativo de carta usado para abrir un ensayo académico)",
+          "right": "O presente ensaio tem como objetivo analisar... (sin vocativo, como corresponde al género)",
+          "why": "Cada género tiene su propia fórmula de apertura; los vocativos como \"Prezado Senhor\" son propios de la carta formal, no del ensayo académico, que empieza directamente con la presentación del tema."
+        },
+        {
+          "wrong": "Eu acho que os dados comprovam essa tendência. (en un informe técnico)",
+          "right": "Os dados indicam essa tendência.",
+          "why": "El informe técnico exige objetividad; las opiniones personales sin fundamento, como \"eu acho\", no son adecuadas en este género, que prefiere basarse en los datos."
+        },
+        {
+          "wrong": "Atenciosamente, conclui-se que os resultados confirmam a hipótese. (mezcla el cierre de carta con una fórmula de conclusión de ensayo o informe)",
+          "right": "Atenciosamente, (cierre simple de la carta formal, sin fórmulas argumentativas)",
+          "why": "Cada género tiene su propio cierre; \"conclui-se que\" es típico de textos argumentativos o técnicos, no de una carta formal, que cierra con una fórmula de cortesía."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Entende-se que",
+          "es": "Se entiende que (ensayo)",
+          "example": "Entende-se que o fenômeno é multifatorial.",
+          "exampleEs": "Se entiende que el fenómeno es multifactorial."
+        },
+        {
+          "target": "Os dados indicam",
+          "es": "Los datos indican (informe)",
+          "example": "Os dados indicam uma melhora significativa.",
+          "exampleEs": "Los datos indican una mejora significativa."
+        },
+        {
+          "target": "Dirijo-me a",
+          "es": "Me dirijo a (carta)",
+          "example": "Dirijo-me a esta secretaria para esclarecer uma dúvida.",
+          "exampleEs": "Me dirijo a esta secretaría para aclarar una duda."
+        },
+        {
+          "target": "Identificar o gênero",
+          "es": "Identificar el género",
+          "example": "Identificar o gênero textual é o primeiro passo da escrita formal.",
+          "exampleEs": "Identificar el género textual es el primer paso de la escritura formal."
+        }
+      ]
+    },
+    {
+      "id": "redigir-ensaio-breve",
+      "day": 5,
+      "title": "Redactar un ensayo breve",
+      "goal": "Vas a poder redactar un ensayo breve propio, coherente y con el registro académico adecuado.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Antes de escribir, definí claramente la tesis que vas a defender en el ensayo.",
+        "Organizá el texto en introdução (tesis), dos o tres párrafos de desenvolvimento (cada uno con un argumento y su fundamentación) y una conclusão que retome la tesis sin repetirla literalmente.",
+        "Usá conectores argumentativos variados para no repetir siempre el mismo: \"em primeiro lugar\", \"além disso\", \"por outro lado\", \"em suma\".",
+        "Mantené el registro impersonal en todo el texto: evitá \"eu penso\" y usá \"entende-se\", \"é possível afirmar\" o la voz pasiva.",
+        "Releé el ensayo final prestando atención a la coherencia entre los párrafos y a la variedad de vocabulario, evitando repetir siempre las mismas palabras."
+      ],
+      "examples": [
+        {
+          "target": "A presente dissertação defende que a educação digital é fundamental para reduzir desigualdades.",
+          "es": "La presente disertación defiende que la educación digital es fundamental para reducir desigualdades."
+        },
+        {
+          "target": "Em primeiro lugar, é preciso considerar o acesso desigual à internet no país.",
+          "es": "En primer lugar, hay que considerar el acceso desigual a internet en el país."
+        },
+        {
+          "target": "Além disso, a falta de formação docente agrava o problema.",
+          "es": "Además, la falta de formación docente agrava el problema."
+        },
+        {
+          "target": "Por outro lado, iniciativas públicas recentes têm mostrado resultados promissores.",
+          "es": "Por otro lado, iniciativas públicas recientes han mostrado resultados prometedores."
+        },
+        {
+          "target": "É possível afirmar que investimentos contínuos são indispensáveis.",
+          "es": "Se puede afirmar que las inversiones continuas son indispensables."
+        },
+        {
+          "target": "Em suma, a superação dessas desigualdades depende de políticas integradas.",
+          "es": "En suma, la superación de estas desigualdades depende de políticas integradas."
+        },
+        {
+          "target": "Diante do exposto, conclui-se que o tema exige atenção prioritária.",
+          "es": "Ante lo expuesto, se concluye que el tema exige atención prioritaria."
+        },
+        {
+          "target": "Dessa forma, retoma-se a ideia central: a educação digital como motor de equidade.",
+          "es": "De esta forma, se retoma la idea central: la educación digital como motor de equidad."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Eu penso que a educação digital é importante.",
+          "right": "Defende-se que a educação digital é fundamental.",
+          "why": "Incluso en la tesis inicial se mantiene el registro impersonal; evitar \"eu penso\" refuerza la objetividad esperada del género."
+        },
+        {
+          "wrong": "Além disso, o acesso à internet é desigual. Além disso, a formação docente é insuficiente. Além disso, os investimentos são baixos.",
+          "right": "Além disso, o acesso à internet é desigual. Por outro lado, a formação docente é insuficiente. Nesse sentido, os investimentos permanecem baixos.",
+          "why": "Repetir siempre el mismo conector empobrece el texto; el registro académico valora la variedad de conectores argumentativos."
+        },
+        {
+          "wrong": "Em suma, a educação digital é fundamental para reduzir desigualdades. (repite la tesis inicial palabra por palabra en la conclusión)",
+          "right": "Retoma-se, portanto, a centralidade da educação digital na redução das desigualdades.",
+          "why": "La conclusión debe reformular la tesis con otras palabras, no copiarla literalmente, para mostrar dominio del tema y evitar redundancia."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Diante do exposto",
+          "es": "Ante lo expuesto",
+          "example": "Diante do exposto, é necessário agir com urgência.",
+          "exampleEs": "Ante lo expuesto, es necesario actuar con urgencia."
+        },
+        {
+          "target": "Em suma",
+          "es": "En suma",
+          "example": "Em suma, os argumentos apresentados se complementam.",
+          "exampleEs": "En suma, los argumentos presentados se complementan."
+        },
+        {
+          "target": "É possível afirmar que",
+          "es": "Se puede afirmar que",
+          "example": "É possível afirmar que o cenário mudou significativamente.",
+          "exampleEs": "Se puede afirmar que el escenario cambió significativamente."
+        },
+        {
+          "target": "Retoma-se a ideia central",
+          "es": "Se retoma la idea central",
+          "example": "Ao final, retoma-se a ideia central do texto.",
+          "exampleEs": "Al final, se retoma la idea central del texto."
+        }
+      ]
+    }
+  ]
+}
