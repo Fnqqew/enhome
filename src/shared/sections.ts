@@ -20,6 +20,7 @@ export const SECTIONS = [
   { id: 'charla', label: 'Charla', group: 'extra' },
   { id: 'juegos', label: 'Juegos', group: 'extra' },
   { id: 'lecturas', label: 'Lecturas', group: 'extra' },
+  { id: 'pronunciacion', label: 'Pronunciación', group: 'extra' },
   { id: 'diario', label: 'Diario', group: 'extra' },
   { id: 'biblioteca', label: 'Biblioteca', group: 'extra' },
   { id: 'ajustes', label: 'Ajustes', group: 'app' },

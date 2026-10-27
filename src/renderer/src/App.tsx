@@ -23,6 +23,7 @@ const PAGES = {
   repaso: () => import('./pages/Review'),
   juegos: () => import('./pages/Games'),
   lecturas: () => import('./pages/Readings'),
+  pronunciacion: () => import('./pages/Pronunciation'),
   diario: () => import('./pages/Journal'),
   ayuda: () => import('./pages/Help'),
   estadisticas: () => import('./pages/Stats'),
@@ -40,6 +41,7 @@ const Practice = lazy(PAGES.practica)
 const Review = lazy(PAGES.repaso)
 const Games = lazy(PAGES.juegos)
 const Readings = lazy(PAGES.lecturas)
+const Pronunciation = lazy(PAGES.pronunciacion)
 const Journal = lazy(PAGES.diario)
 const Help = lazy(PAGES.ayuda)
 const Stats = lazy(PAGES.estadisticas)
@@ -302,6 +304,7 @@ function Page({
   if (section === 'repaso') return <Review examId={params.examId ?? null} navigate={navigate} />
   if (section === 'juegos') return <Games />
   if (section === 'lecturas') return <Readings />
+  if (section === 'pronunciacion') return <Pronunciation />
   if (section === 'diario') return <Journal />
   if (section === 'ayuda') return <Help navigate={navigate} />
   if (section === 'estadisticas') return <Stats />

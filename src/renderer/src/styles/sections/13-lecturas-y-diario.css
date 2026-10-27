@@ -149,3 +149,21 @@ mark.gloss {
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+
+/* Pronunciación */
+
+.pron-pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pron-pairs li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+}

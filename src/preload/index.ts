@@ -119,6 +119,7 @@ const api: Api = {
   getStory: () => invoke(IPC.readingStory),
   nextChapter: () => invoke(IPC.readingNextChapter),
   getMission: () => invoke(IPC.missionGet),
+  getPronunciation: () => invoke(IPC.pronunciationGet),
   createMission: (mode) => invoke(IPC.missionCreate, mode),
   submitMission: (answer) => invoke(IPC.missionSubmit, answer),
   getJournal: () => invoke(IPC.journalGet),

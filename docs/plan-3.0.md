@@ -81,7 +81,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [ ] 39 Más tópicos por nivel
 - [ ] 40 Vocabulario núcleo
 - [ ] 41 Contenido más rico en cada subtema
-- [ ] 42 Guía de pronunciación
+- [~] 42 Guía de pronunciación
 - [ ] 43 Revisión a la perfección
 - [ ] 44 Examen inicial hasta C1
 - [ ] 45 Variante regional clara

@@ -19,6 +19,7 @@ import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 import type { Highlight, JournalView, ReadingSummary, ReadingView, StoryView } from './reading'
 import type { MissionMode, MissionView } from './mission'
+import type { PronunciationGuide } from './pronunciation'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 import type { UpdateInfo } from './updates'
 import type { VoiceRole, VoiceStatus } from './voice'
@@ -123,6 +124,7 @@ export const IPC = {
   readingStory: 'reading:story',
   readingNextChapter: 'reading:next-chapter',
   missionGet: 'mission:get',
+  pronunciationGet: 'pronunciation:get',
   missionCreate: 'mission:create',
   missionSubmit: 'mission:submit',
   journalGet: 'journal:get',
@@ -296,6 +298,7 @@ export interface Api {
   getStory(): Promise<StoryView | null>
   nextChapter(): Promise<ReadingView>
   getMission(): Promise<MissionView | null>
+  getPronunciation(): Promise<PronunciationGuide | null>
   createMission(mode: MissionMode): Promise<MissionView>
   submitMission(answer: string): Promise<MissionView>
   getJournal(): Promise<JournalView>

@@ -48,6 +48,13 @@ const PATHS: Record<IconName, React.JSX.Element> = {
       <path d="M12 6.5v13" />
     </>
   ),
+  pronunciacion: (
+    <>
+      <path d="M9 5.5a3 3 0 0 1 3-3 3 3 0 0 1 3 3v6a3 3 0 0 1-6 0z" />
+      <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5v4" />
+      <path d="M2.5 9v4M21.5 9v4" />
+    </>
+  ),
   diario: (
     <>
       <path d="M6.5 3.5h11a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5h-11z" />
