@@ -77,8 +77,59 @@ describe('Enhome', () => {
 
   step('abre cada sección sin errores', async (win) => {
     const sections = ['Temario', 'Práctica', 'Repaso', 'Resúmenes', 'Pruebas', 'Progreso', 'Estadísticas']
-    const extra = ['Charla', 'Juegos', 'Lecturas', 'Diario', 'Biblioteca', 'Ajustes', 'Ayuda', 'Comentarios', 'Acerca de', 'Inicio']
+    const extra = ['Charla', 'Juegos', 'Lecturas', 'Pronunciación', 'Diario', 'Biblioteca', 'Ajustes', 'Ayuda', 'Comentarios', 'Acerca de', 'Inicio']
     for (const label of [...sections, ...extra]) await open(win, label)
+  })
+
+  step('hace una práctica entera sin Claude, con los ejercicios del banco', async (win) => {
+    // Solo los formatos que se corrigen al instante: el Claude de prueba no responde.
+    await win.evaluate(() =>
+      window.api.updateSettings({
+        practiceLength: 'short',
+        excludedTypes: ['translation', 'translation_set', 'dialogue', 'roleplay', 'writing', 'shadowing', 'transformation']
+      })
+    )
+    // El día en que empieza la semana del primer tópico, para que haya práctica.
+    const state = await win.evaluate(() => window.api.devSetToday(null))
+    if (state.week) await win.evaluate((day) => window.api.devSetToday(day), state.week.startsOn)
+    await open(win, 'Práctica')
+    await win.getByRole('button', { name: 'Empezar la práctica' }).click()
+
+    const main = win.locator('.exercise-main')
+    let finished = false
+    for (let round = 0; round < 150 && !finished; round++) {
+      if (await win.getByRole('button', { name: 'Terminar práctica' }).isVisible()) {
+        finished = true
+        break
+      }
+      const next = win.getByRole('button', { name: /^(Siguiente|Ver resultado)$/ })
+      if (await next.isVisible()) {
+        await next.click()
+        continue
+      }
+      // Se responde cualquier cosa: también se prueban el segundo intento y la repetición al final.
+      for (const group of await main.locator('.options').all()) {
+        const option = group.locator('.option:not([disabled])').first()
+        if (await option.count()) await option.click()
+      }
+      for (const input of await main.locator('input.blank:not([disabled]), input.text-answer:not([disabled])').all()) await input.fill(`zz${round}`)
+      // Ordenar: si ya estaba armado (segundo intento), se saca una ficha y se vuelve a poner.
+      const placed = main.locator('.answer-line .token:not([disabled]), .reorder-text .sentence-piece:not([disabled])')
+      if (await placed.count()) await placed.first().click()
+      for (let k = 0; k < 15; k++) {
+        const piece = main.locator('.token-bank .token:not([disabled]), .stack-sm > .sentence-piece:not([disabled])').first()
+        if (!(await piece.count())) break
+        await piece.click()
+      }
+      const check = win.getByRole('button', { name: 'Comprobar' })
+      if (await check.isEnabled()) await check.click()
+      else await win.getByRole('button', { name: 'Cambiar ejercicio' }).click()
+      await win.waitForTimeout(100)
+    }
+    assert.ok(finished, 'la práctica no llegó al final')
+    await win.getByRole('button', { name: 'Terminar práctica' }).click()
+    await win.getByText(/Terminaste la práctica/).waitFor({ timeout: 15_000 })
+    await win.evaluate(() => window.api.devSetToday(null))
   })
 
   step('el temario muestra el primer tópico', async (win) => {

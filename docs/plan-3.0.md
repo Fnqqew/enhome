@@ -97,4 +97,4 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [x] 52 Pantallas grandes divididas
 - [x] 53 Un solo repaso
 - [~] 54 Herramientas para el contenido
-- [~] 55 Más pruebas
+- [x] 55 Más pruebas
