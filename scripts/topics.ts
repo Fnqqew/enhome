@@ -123,6 +123,8 @@ async function writeTopic(level: CefrLevel, topic: PlannedTopic, before: string[
     timeoutMs: 600_000,
     ticket: { priority: 'now' }
   })
+  // Claude a veces titula las secciones a su manera («### Dia 1», «## DÍA 1»): se llevan al formato del temario.
+  reviewed.summary = reviewed.summary.replace(/^#{2,4}\s*d[ií]a\s*(\d)\b/gim, '## Día $1')
   for (let day = 1; day <= 5; day++) {
     if (!new RegExp(`^## Día ${day}\\b`, 'm').test(reviewed.summary)) throw new Error(`al resumen le falta la sección «## Día ${day}»`)
   }
