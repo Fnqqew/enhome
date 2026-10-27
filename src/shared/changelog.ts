@@ -9,6 +9,19 @@ export interface Release {
 
 export const CHANGELOG: Release[] = [
   {
+    version: '3.2.0',
+    date: '2026-10-27',
+    title: 'Frases hechas, la historia y la misión de la semana, y la charla por voz',
+    items: [
+      'Frases hechas en cada subtema: se ven en la microlección, pasan a tus tarjetas y se repasan enteras, con un hueco en la oración.',
+      'La historia de la semana, en Lecturas: un capítulo por día con los mismos personajes y el tema de ese día.',
+      'La misión de la semana, en Pruebas: una tarea real, por escrito o hablando, que Claude evalúa con una rúbrica.',
+      'Charla por voz: hablás y Claude te contesta en voz alta.',
+      'Lecturas para escuchar primero, y oraciones que se tocan para escucharlas y guardarlas enteras.',
+      'Cada ejercicio se puede escuchar: el enunciado antes de responder y la respuesta correcta después.'
+    ]
+  },
+  {
     version: '3.1.0',
     date: '2026-10-26',
     title: 'El día con estructura y Claude que vuelve a crear los ejercicios',

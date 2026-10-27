@@ -2,6 +2,23 @@
 
 Todas las versiones de Enhome. Los instaladores están en las [versiones publicadas](https://github.com/Fnqqew/enhome/releases) del repositorio.
 
+## 3.2.0 · 2026-10-27
+
+Frases hechas, la historia y la misión de la semana, y la charla por voz.
+
+### Para aprender
+
+- **Frases hechas:** cada subtema de portugués trae de 4 a 6 expresiones de uso real («Pode ser», «Muito prazer»). Se ven en la microlección con audio, al terminar la práctica pasan a tus tarjetas y en el repaso se practican enteras, con la oración de ejemplo y un hueco.
+- **La historia de la semana** (en Lecturas): un capítulo por día con los mismos personajes, que usa el tema de ese día y trae glosario, preguntas y audio.
+- **La misión de la semana** (en Pruebas): una tarea real para cerrar el tópico, por escrito o hablando, que Claude evalúa con una rúbrica criterio por criterio. Se habilita desde la tercera práctica de la semana.
+- **Charla por voz:** en Charla, con «Modo voz» hablás, se transcribe en tu compu y Claude te contesta en voz alta.
+- **Lecturas para escuchar:** «Escuchar primero» oculta el texto hasta que respondés las preguntas. Tocando una oración la escuchás y la podés guardar entera para repasarla.
+- **Audio en todo el ejercicio:** el enunciado se puede escuchar antes de responder y la respuesta correcta después de corregir.
+
+### Contenido
+
+- Bancos de ejercicios del segundo tópico de portugués (artículos y género).
+
 ## 3.1.0 · 2026-10-26
 
 El día con estructura y Claude que vuelve a crear los ejercicios.
