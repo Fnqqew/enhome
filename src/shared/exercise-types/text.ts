@@ -11,17 +11,27 @@ const CONTRACTIONS: [RegExp, string][] = [
   [/'ll\b/g, ' will']
 ]
 
+// Kana y caracteres chinos: el japonés y el chino no separan las palabras con espacios.
+const CJK = '\\u3040-\\u30ff\\u3400-\\u9fff'
+const CJK_SPACES = new RegExp(`(?<=[${CJK}])\\s+|\\s+(?=[${CJK}])`, 'g')
+
 export function normalize(value: string): string {
-  return value
-    .normalize('NFC')
-    .replace(/[’‘`´]/g, "'")
-    .replace(/[“”]/g, '"')
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/\s+([,.!?;:])/g, '$1')
-    .replace(/[\s.!?;:,"]+$/g, '')
-    .replace(/^["¿¡\s]+/, '')
+  return (
+    value
+      // NFKC lleva el ancho completo (ＡＢＣ, ！) a la forma común.
+      .normalize('NFKC')
+      .replace(/[。]/g, '.')
+      .replace(/[、]/g, ',')
+      .replace(CJK_SPACES, '')
+      .replace(/[’‘`´]/g, "'")
+      .replace(/[“”]/g, '"')
+      .toLowerCase()
+      .replace(/\s+/g, ' ')
+      .trim()
+      .replace(/\s+([,.!?;:])/g, '$1')
+      .replace(/[\s.!?;:,"]+$/g, '')
+      .replace(/^["¿¡\s]+/, '')
+  )
 }
 
 // Forma canónica: sin contracciones ni comas, para no penalizar variantes equivalentes.
@@ -93,7 +103,7 @@ export function predictedMistake(answer: string, wrong: { answer: string; why: s
 export function tokenize(sentence: string): string[] {
   return sentence
     .trim()
-    .replace(/[.!?]+$/, '')
+    .replace(/[.!?。！？]+$/, '')
     .split(/\s+/)
     .filter(Boolean)
 }

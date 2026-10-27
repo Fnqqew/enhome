@@ -88,7 +88,12 @@ const KIND_GUIDE: Record<UnitKind, string> = {
 
 // Cómo es cada formato (lo define cada tipo). El idioma cambia en qué lengua van las oraciones.
 export function formatGuide(language: LanguageId, types?: ExerciseType[]): string {
-  return formatGuideFor({ language: languageInfo(language).name, spanish: spanish() }, types)
+  const info = languageInfo(language)
+  const guide = formatGuideFor({ language: info.name, spanish: spanish() }, types)
+  // El japonés y el chino no separan palabras: para ordenar, los bloques van separados por espacios.
+  return info.script === 'japanese' || info.script === 'chinese'
+    ? `${guide}\nComo el ${info.name} no separa las palabras con espacios, en word_order escribí sentence con los bloques (cada palabra con su partícula) separados por un espacio; en las demás respuestas, escribí normalmente, sin espacios.`
+    : guide
 }
 
 const immersionGuide = (language: LanguageId): string =>
