@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import type { PronunciationGuide } from '@shared/pronunciation'
+import type { WritingCourse } from '@shared/writing'
+import WritingCourseView from '../components/pronunciation/WritingCourse'
 import Icon from '../components/Icon'
 import { SkeletonCard } from '../components/Skeleton'
 import { useCourse } from '../hooks/useCourse'
@@ -11,15 +13,47 @@ export default function Pronunciation(): React.JSX.Element {
   const course = useCourse()
   const speech = useSpeech()
   const [guide, setGuide] = useState<PronunciationGuide | null | undefined>(undefined)
+  const [writing, setWriting] = useState<WritingCourse | null>(null)
+  const [tab, setTab] = useState<'pronunciation' | 'writing'>('pronunciation')
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     setGuide(undefined)
-    window.api
-      .getPronunciation()
-      .then(setGuide)
+    setWriting(null)
+    Promise.all([window.api.getPronunciation(), window.api.getWriting()])
+      .then(([g, w]) => {
+        setGuide(g)
+        setWriting(w)
+        // En los idiomas con otro alfabeto se empieza por la escritura.
+        setTab(w ? 'writing' : 'pronunciation')
+      })
       .catch((err: Error) => setError(err.message))
   }, [course.id])
+
+  const tabs = writing && (
+    <div className="segmented" role="tablist" aria-label="Pronunciación o escritura">
+      <button
+        type="button"
+        role="tab"
+        className="chip"
+        aria-selected={tab === 'writing'}
+        aria-pressed={tab === 'writing'}
+        onClick={() => setTab('writing')}
+      >
+        Escritura
+      </button>
+      <button
+        type="button"
+        role="tab"
+        className="chip"
+        aria-selected={tab === 'pronunciation'}
+        aria-pressed={tab === 'pronunciation'}
+        onClick={() => setTab('pronunciation')}
+      >
+        Pronunciación
+      </button>
+    </div>
+  )
 
   const say = (text: string, slower = false): void => speech.speakAs(text, course.id, slower)
 
@@ -39,10 +73,20 @@ export default function Pronunciation(): React.JSX.Element {
       </>
     )
   }
+  if (writing && tab === 'writing') {
+    return (
+      <>
+        <h1>Pronunciación</h1>
+        {tabs}
+        <WritingCourseView course={writing} />
+      </>
+    )
+  }
   if (guide === null) {
     return (
       <>
         <h1>Pronunciación</h1>
+        {tabs}
         <section className="card">
           <p className="muted">La guía de pronunciación de {course.name} todavía no está escrita.</p>
         </section>
@@ -53,6 +97,7 @@ export default function Pronunciation(): React.JSX.Element {
   return (
     <>
       <h1>Pronunciación</h1>
+      {tabs}
       <section className="card stack fade-in">
         <span className="level">GUÍA DE PRONUNCIACIÓN · {course.name.toUpperCase()}</span>
         <p>{guide.intro}</p>

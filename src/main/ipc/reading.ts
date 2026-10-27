@@ -1,6 +1,6 @@
 // Leer y estudiar: resúmenes, vocabulario, resaltados, lecturas, diario, biblioteca y estadísticas.
 
-import { loadPronunciation } from '../content/pronunciation'
+import { loadPronunciation, loadWriting } from '../content/pronunciation'
 import { z } from 'zod'
 import { searchLibrary } from '../library/library'
 import { addHighlight, listHighlights, removeHighlight, updateHighlightNote } from '../reading/highlights'
@@ -63,6 +63,7 @@ export function registerReading(ctx: IpcContext): void {
   handle(IPC.readingRemove, (readingId) => services().readings.remove(id.parse(readingId)))
   handle(IPC.readingStory, () => services().readings.story(today()))
   handle(IPC.pronunciationGet, () => loadPronunciation(ctx.contentDir, activeLanguage()))
+  handle(IPC.writingGet, () => loadWriting(ctx.contentDir, activeLanguage()))
   // Las palabras núcleo del nivel del tópico de la semana.
   const coreLevel = (): string => {
     const { vocab, progression } = services()

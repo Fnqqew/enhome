@@ -120,6 +120,7 @@ const api: Api = {
   nextChapter: () => invoke(IPC.readingNextChapter),
   getMission: () => invoke(IPC.missionGet),
   getPronunciation: () => invoke(IPC.pronunciationGet),
+  getWriting: () => invoke(IPC.writingGet),
   getCoreWords: () => invoke(IPC.coreWordsToday),
   learnCoreWords: (terms) => invoke(IPC.coreWordsLearn, terms),
   createMission: (mode) => invoke(IPC.missionCreate, mode),

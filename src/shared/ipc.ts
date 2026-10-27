@@ -20,6 +20,7 @@ import type { VocabCard, VocabOverview, WordInfo } from './vocab'
 import type { Highlight, JournalView, ReadingSummary, ReadingView, StoryView } from './reading'
 import type { MissionMode, MissionView } from './mission'
 import type { PronunciationGuide } from './pronunciation'
+import type { WritingCourse } from './writing'
 import type { CoreVocabToday } from './core-vocab'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 import type { UpdateInfo } from './updates'
@@ -126,6 +127,7 @@ export const IPC = {
   readingNextChapter: 'reading:next-chapter',
   missionGet: 'mission:get',
   pronunciationGet: 'pronunciation:get',
+  writingGet: 'writing:get',
   coreWordsToday: 'core-words:today',
   coreWordsLearn: 'core-words:learn',
   missionCreate: 'mission:create',
@@ -302,6 +304,7 @@ export interface Api {
   nextChapter(): Promise<ReadingView>
   getMission(): Promise<MissionView | null>
   getPronunciation(): Promise<PronunciationGuide | null>
+  getWriting(): Promise<WritingCourse | null>
   getCoreWords(): Promise<CoreVocabToday>
   learnCoreWords(terms: string[]): Promise<CoreVocabToday>
   createMission(mode: MissionMode): Promise<MissionView>
