@@ -1,7 +1,7 @@
 // La pantalla de cada tipo de ejercicio. Un tipo nuevo se anota acá con su componente.
 
 import type { ComponentType } from 'react'
-import type { ExerciseType } from '@shared/exercises'
+import type { ExerciseType, PublicExercise } from '@shared/exercises'
 import { MultipleChoice, Reading } from './choice'
 import type { InputProps, ItemProps } from './common'
 import { Dictation, Listening, MinimalPair, Shadowing } from './listening'
@@ -35,3 +35,23 @@ export default function ExerciseInput(props: InputProps): React.JSX.Element {
 }
 
 export type { InputProps } from './common'
+
+// Lo que se puede escuchar del enunciado antes de responder (solo lo que está en el idioma del curso
+// y no es la respuesta). Los de escuchar ya traen su audio; los de traducir parten del español.
+export function promptAudio(content: PublicExercise): string | null {
+  const blank = (text: string): string => text.replace(/_{2,}/g, '…')
+  switch (content.type) {
+    case 'multiple_choice':
+      return blank(content.prompt)
+    case 'fill_blank':
+      return blank(content.sentence)
+    case 'error_correction':
+      return content.sentence
+    case 'transformation':
+      return content.source
+    case 'reading':
+      return content.text
+    default:
+      return null
+  }
+}

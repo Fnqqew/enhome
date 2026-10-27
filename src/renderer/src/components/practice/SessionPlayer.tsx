@@ -1,8 +1,17 @@
 // La práctica en curso: un ejercicio por vez, la corrección y el avance.
 
 import { useEffect, useRef, useState } from 'react'
-import { EXERCISE_TYPE_LABELS, type ExerciseAnswer, type PracticeResult, type PracticeView, type SessionView } from '@shared/exercises'
+import {
+  EXERCISE_TYPE_LABELS,
+  type ExerciseAnswer,
+  type ExerciseType,
+  type PracticeResult,
+  type PracticeView,
+  type SessionView
+} from '@shared/exercises'
 import ExerciseInput from './ExerciseInput'
+import { promptAudio } from '../../exercise-types'
+import { useSpeech } from '../../hooks/useSpeech'
 import Feedback from './Feedback'
 import ClaudeWait from '../ClaudeWait'
 import { play } from '../../sounds'
@@ -13,6 +22,19 @@ import Rating from '../Rating'
 import SelectionAsk from '../summaries/SelectionAsk'
 import { useMinutesToMidnight } from '../../hooks/useDay'
 import Heading from './Heading'
+
+// Los tipos cuya respuesta correcta es una oración en el idioma del curso: se puede escuchar al corregir.
+const ANSWER_AUDIO: ExerciseType[] = [
+  'multiple_choice',
+  'fill_blank',
+  'word_order',
+  'error_correction',
+  'translation',
+  'transformation',
+  'dictation',
+  'reorder_text',
+  'shadowing'
+]
 
 // Desde cuántos minutos antes de medianoche se avisa durante una práctica.
 const MIDNIGHT_WARNING_MINUTES = 30
@@ -31,6 +53,7 @@ export default function SessionPlayer({
   const [busy, setBusy] = useState<'answer' | 'skip' | 'finish' | 'hint' | null>(null)
   const [error, setError] = useState<string | null>(null)
   const minutesLeft = useMinutesToMidnight()
+  const speech = useSpeech()
 
   // El próximo sin responder (lo que corrige Claude no frena: se sigue mientras llega la corrección).
   const pending = session.exercises.find((e) => !e.answer)
@@ -243,7 +266,30 @@ export default function SessionPlayer({
               {current.repeat && !current.answer && (
                 <p className="muted small">Este te costó: vuelve al final para que lo fijes. No cuenta en el puntaje.</p>
               )}
-              <p>{current.content.instruction}</p>
+              <div className="row spread">
+                <p>{current.content.instruction}</p>
+                {/* Audio en todo: el enunciado antes de responder y la respuesta correcta después. */}
+                {(() => {
+                  const audio = current.feedback
+                    ? ANSWER_AUDIO.includes(current.type)
+                      ? current.feedback.correctAnswer
+                      : null
+                    : current.answer
+                      ? null
+                      : promptAudio(current.content)
+                  return audio && current.type !== 'writing' ? (
+                    <button
+                      type="button"
+                      className="icon-btn"
+                      aria-label={current.feedback ? 'Escuchar la respuesta correcta' : 'Escuchar el enunciado'}
+                      title={current.feedback ? 'Escuchar la respuesta correcta' : 'Escuchar el enunciado'}
+                      onClick={() => (speech.state === 'playing' ? speech.stop() : speech.speakAs(audio))}
+                    >
+                      <Icon name={speech.state === 'playing' ? 'stop' : 'play'} className="glyph" />
+                    </button>
+                  ) : null
+                })()}
+              </div>
               <ExerciseInput
                 key={current.id}
                 content={current.content}

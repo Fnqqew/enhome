@@ -58,7 +58,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 
 - [x] 20 Cada día con una estructura que funciona
 - [x] 21 Microlección antes de practicar
-- [~] 22 Recordar en vez de releer
+- [x] 22 Recordar en vez de releer
 - [x] 23 Corrección que hace pensar
 - [x] 24 Repaso con FSRS
 - [x] 25 Mezclar lo que se confunde
@@ -72,7 +72,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [x] 33 Ejercicios hechos con tus errores
 - [x] 34 Lecturas y escuchas largas a tu nivel
 - [x] 35 Formatos nuevos
-- [ ] 36 Ejercicio rediseñado
+- [x] 36 Ejercicio rediseñado
 
 ## Idiomas
 
