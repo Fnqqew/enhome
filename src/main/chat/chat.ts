@@ -44,7 +44,14 @@ interface MessageRow {
   review: string | null
 }
 
-export function buildTurnPrompt(target: string, level: string, scenario: string, history: { role: string; text: string }[], text: string): string {
+export function buildTurnPrompt(
+  target: string,
+  level: string,
+  scenario: string,
+  history: { role: string; text: string }[],
+  text: string,
+  spoken = false
+): string {
   const transcript = history.map((m) => `${m.role === 'user' ? 'Alumno' : 'Vos'}: ${m.text}`).join('\n')
   return `Estás charlando en ${target} con un alumno hispanohablante de nivel ${level}.
 Situación: ${scenario}
@@ -58,7 +65,11 @@ Devolvé:
 - correction: la corrección del último mensaje del alumno.
   - ok: true si es correcto y natural (detalles de puntuación o mayúsculas no cuentan).
   - corrected: el mensaje corregido con los cambios mínimos (igual al original si está bien). Si escribió partes en español, cómo se dicen en ${target}.
-  - notes: hasta 4 explicaciones breves en ${spanish()} de lo que cambiaste. Vacío si está bien.`
+  - notes: hasta 4 explicaciones breves en ${spanish()} de lo que cambiaste. Vacío si está bien.${
+    spoken
+      ? `\nEl alumno habló: su último mensaje es una transcripción automática. No corrijas puntuación, mayúsculas ni palabras mal reconocidas que suenan parecido; corregí solo lo que dijo mal. En reply usá oraciones cortas y claras, fáciles de entender al escucharlas.`
+      : ''
+  }`
 }
 
 export class Chats {
@@ -118,7 +129,8 @@ Devolvé reply: tu primer mensaje en ${target}, corto (1 a 3 oraciones), del niv
     return this.get(id)
   }
 
-  async send(id: number, text: string): Promise<ChatView> {
+  // spoken: el mensaje se dijo en voz alta y llega transcripto.
+  async send(id: number, text: string, spoken = false): Promise<ChatView> {
     const chat = this.get(id)
     const clean = text.trim()
     if (!clean) throw new ChatError('Escribí algo para mandar.')
@@ -131,7 +143,7 @@ Devolvé reply: tu primer mensaje en ${target}, corto (1 a 3 oraciones), del niv
         'compañero de conversación',
         'Charlás para que el alumno practique y corregís sus mensajes aparte.'
       ),
-      prompt: buildTurnPrompt(languageInfo(this.language).promptName, chat.level, chat.scenario, history, clean),
+      prompt: buildTurnPrompt(languageInfo(this.language).promptName, chat.level, chat.scenario, history, clean, spoken),
       schema: turnSchema,
       timeoutMs: 90_000
     })

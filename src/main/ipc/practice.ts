@@ -49,6 +49,8 @@ export function registerPractice(ctx: IpcContext): void {
   handle(IPC.chatList, () => ({ chats: services().chats.list(), suggestions: services().chats.suggestions(today()) }))
   handle(IPC.chatGet, (chatId) => services().chats.get(id.parse(chatId)))
   handle(IPC.chatStart, (suggestion) => services().chats.start(suggestionSchema.parse(suggestion), today()))
-  handle(IPC.chatSend, (chatId, text) => services().chats.send(id.parse(chatId), z.string().max(MAX_CHAT_MESSAGE).parse(text)))
+  handle(IPC.chatSend, (chatId, text, spoken) =>
+    services().chats.send(id.parse(chatId), z.string().max(MAX_CHAT_MESSAGE).parse(text), z.boolean().optional().parse(spoken) ?? false)
+  )
   handle(IPC.chatRemove, (chatId) => services().chats.remove(id.parse(chatId)))
 }

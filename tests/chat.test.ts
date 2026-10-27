@@ -54,3 +54,13 @@ describe('charla con Claude', () => {
     expect(prompt).toContain('Alumno: Un café, merci.')
   })
 })
+
+describe('charla por voz', () => {
+  it('si el alumno habló, Claude no corrige lo que es de la transcripción y contesta fácil de escuchar', () => {
+    const written = buildTurnPrompt('francés', 'A1', 'En un café.', [], 'Un café merci')
+    const spoken = buildTurnPrompt('francés', 'A1', 'En un café.', [], 'Un café merci', true)
+    expect(written).not.toContain('transcripción automática')
+    expect(spoken).toContain('transcripción automática')
+    expect(spoken).toContain('fáciles de entender al escucharlas')
+  })
+})

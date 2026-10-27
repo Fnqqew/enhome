@@ -282,7 +282,7 @@ export interface Api {
   getChats(): Promise<{ chats: ChatSummary[]; suggestions: ChatSuggestion[] }>
   getChat(chatId: number): Promise<ChatView>
   startChat(suggestion: ChatSuggestion): Promise<ChatView>
-  sendChat(chatId: number, text: string): Promise<ChatView>
+  sendChat(chatId: number, text: string, spoken?: boolean): Promise<ChatView>
   removeChat(chatId: number): Promise<ChatSummary[]>
   getHighlights(docKey: string): Promise<Highlight[]>
   addHighlight(docKey: string, text: string): Promise<Highlight[]>
