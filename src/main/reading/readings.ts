@@ -19,7 +19,8 @@ export const READING_LENGTH: Record<CefrLevel, [number, number]> = {
   A2: [170, 250],
   B1: [250, 360],
   B2: [340, 460],
-  C1: [430, 580]
+  C1: [430, 580],
+  C2: [500, 700]
 }
 
 const readingSchema = z.object({

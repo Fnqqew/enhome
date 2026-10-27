@@ -3,7 +3,7 @@
 import { z } from 'zod'
 import type { LanguageId } from './languages'
 
-export const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const
+export const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const
 export const SKILLS = ['grammar', 'reading', 'writing', 'listening', 'speaking'] as const
 
 export type CefrLevel = (typeof CEFR_LEVELS)[number]
@@ -61,7 +61,8 @@ export const CEFR_LEVEL_NAMES: Record<CefrLevel, string> = {
   A2: 'Elemental',
   B1: 'Intermedio',
   B2: 'Intermedio alto',
-  C1: 'Avanzado'
+  C1: 'Avanzado',
+  C2: 'Maestría'
 }
 
 export const SKILL_LABELS: Record<Skill, string> = {

@@ -10,10 +10,11 @@ const curriculum = loadCurriculum(CONTENT_DIR)
 const roadmap = loadRoadmap(CONTENT_DIR)
 
 describe('roadmap', () => {
-  it('los cuatro cursos tienen contenido de A1 a C1, así que no queda nada planificado', () => {
+  it('cada curso tiene contenido de A1 a C1 (y C2 a medida que se escribe), así que no queda nada planificado', () => {
     for (const language of LANGUAGE_IDS) {
       expect(loadRoadmap(CONTENT_DIR, language).levels).toEqual([])
-      expect(new Set(loadCurriculum(CONTENT_DIR, language).map((t) => t.level))).toEqual(new Set(['A1', 'A2', 'B1', 'B2', 'C1']))
+      const levels = new Set(loadCurriculum(CONTENT_DIR, language).map((t) => t.level))
+      for (const level of ['A1', 'A2', 'B1', 'B2', 'C1']) expect(levels).toContain(level)
     }
   })
 })

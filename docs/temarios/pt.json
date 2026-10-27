@@ -1,0 +1,828 @@
+{
+  "language": "pt",
+  "existing": [
+    "pt-a1-ser-estar",
+    "pt-a1-artigos-genero",
+    "pt-a1-presente",
+    "pt-a1-preposicoes-possessivos",
+    "pt-a1-ir-gerundio",
+    "pt-a2-preterito-perfeito",
+    "pt-a2-preterito-imperfeito",
+    "pt-a2-comparativos",
+    "pt-a2-pronomes",
+    "pt-a2-futuro-condicional",
+    "pt-b1-presente-subjuntivo",
+    "pt-b1-mais-que-perfeito",
+    "pt-b1-futuro-subjuntivo",
+    "pt-b1-voz-passiva",
+    "pt-b1-discurso-indireto",
+    "pt-b2-imperfeito-subjuntivo",
+    "pt-b2-infinitivo-pessoal",
+    "pt-b2-tempos-compostos-subjuntivo",
+    "pt-b2-regencia-crase",
+    "pt-b2-registro-formal",
+    "pt-c1-colocacao-pronominal",
+    "pt-c1-concordancia",
+    "pt-c1-expressoes-idiomaticas",
+    "pt-c1-coesao",
+    "pt-c1-variacao"
+  ],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "pt-a1-ser-estar",
+          "title": "Ser y estar",
+          "targetTitle": "Ser e estar",
+          "description": "Vas a aprender a usar los verbos ser y estar para presentarte, saludar y decir de dónde sos. Te sirve para mantener tus primeras conversaciones básicas en portugués.",
+          "subtopics": ["Pronombres y saludos", "El verbo ser", "El verbo estar", "Negación y preguntas", "Presentarte"],
+          "prerequisites": []
+        },
+        {
+          "id": "pt-a1-artigos-genero",
+          "title": "Artículos, género y plural",
+          "targetTitle": "Artigos, gênero e plural",
+          "description": "Vas a aprender a usar los artículos, el género de los sustantivos y el plural en portugués. Te sirve para armar frases simples y describir lugares y objetos.",
+          "subtopics": ["Artículos definidos", "Artículos indefinidos", "El género de los sustantivos", "El plural", "Describir un lugar: tem y há"],
+          "prerequisites": ["pt-a1-ser-estar"]
+        },
+        {
+          "id": "pt-a1-interrogativos",
+          "title": "Palabras interrogativas y preguntas",
+          "targetTitle": "Palavras interrogativas e perguntas",
+          "description": "Vas a aprender a usar qué, quién, cómo, cuándo, dónde y por qué para armar preguntas en portugués. Te sirve para pedir información y mantener una conversación básica con otra persona.",
+          "subtopics": [
+            "Palabras interrogativas: o que, quem, como",
+            "Cuándo, dónde y por qué",
+            "Cuánto y cuántos",
+            "Armar preguntas con sí o no",
+            "Entrevistar a alguien"
+          ],
+          "prerequisites": ["pt-a1-ser-estar"]
+        },
+        {
+          "id": "pt-a1-numeros-horas",
+          "title": "Números, horas y fechas",
+          "targetTitle": "Números, horas e datas",
+          "description": "Vas a aprender los números, las horas y las fechas en portugués. Te sirve para manejarte con precios, horarios y planes del día a día.",
+          "subtopics": ["Números cardinales", "Números ordinales", "Decir la hora", "Días de la semana y meses", "Organizar una cita"],
+          "prerequisites": ["pt-a1-artigos-genero"]
+        },
+        {
+          "id": "pt-a1-presente",
+          "title": "Presente de los verbos regulares",
+          "targetTitle": "Presente dos verbos regulares",
+          "description": "Vas a aprender a conjugar los verbos regulares en presente para hablar de acciones habituales. Te sirve para contar tu rutina y hablar de lo que hacés todos los días.",
+          "subtopics": ["Verbos en -ar", "Verbos en -er e -ir", "Irregulares frecuentes", "Rutina y frecuencia", "Mi día"],
+          "prerequisites": ["pt-a1-ser-estar", "pt-a1-numeros-horas"]
+        },
+        {
+          "id": "pt-a1-demonstrativos-adjetivos",
+          "title": "Demostrativos y adjetivos descriptivos",
+          "targetTitle": "Demonstrativos e adjetivos descritivos",
+          "description": "Vas a aprender a usar este, esse y aquele junto con adjetivos para describir personas y cosas. Te sirve para hablar del aspecto físico y la personalidad de alguien.",
+          "subtopics": [
+            "Este, esse y aquele",
+            "Adjetivos de descripción física",
+            "Adjetivos de personalidad",
+            "Concordancia de los adjetivos",
+            "Describir a una persona"
+          ],
+          "prerequisites": ["pt-a1-artigos-genero"]
+        },
+        {
+          "id": "pt-a1-preposicoes-possessivos",
+          "title": "Contracciones, preposiciones y posesivos",
+          "targetTitle": "Contrações, preposições e possessivos",
+          "description": "Vas a aprender las contracciones de las preposiciones con los artículos y los posesivos en portugués. Te sirve para hablar de tu casa, tu familia y los lugares donde estás.",
+          "subtopics": [
+            "em + artículo: no, na, nos, nas",
+            "de + artículo: do, da, dos, das",
+            "a y para: movimiento",
+            "Posesivos",
+            "Mi casa y mi familia"
+          ],
+          "prerequisites": ["pt-a1-artigos-genero"]
+        },
+        {
+          "id": "pt-a1-verbos-modais",
+          "title": "Verbos modales y pedidos",
+          "targetTitle": "Verbos modais e pedidos",
+          "description": "Vas a aprender a usar poder, querer y precisar para pedir cosas y expresar necesidad. Te sirve para manejarte en un restaurante, un comercio o cualquier pedido cotidiano.",
+          "subtopics": [
+            "Poder: permiso y posibilidad",
+            "Querer: deseos y pedidos",
+            "Precisar: necesidad",
+            "Pedir de forma educada",
+            "Hacer un pedido en un restaurante"
+          ],
+          "prerequisites": ["pt-a1-presente"]
+        },
+        {
+          "id": "pt-a1-vocabulario-cotidiano",
+          "title": "Vocabulario cotidiano: comida, compras y ciudad",
+          "targetTitle": "Vocabulário cotidiano: comida, compras e cidade",
+          "description": "Vas a aprender vocabulario de comida, compras y lugares de la ciudad. Te sirve para manejarte en el mercado, en un café y para moverte por una ciudad brasileña.",
+          "subtopics": ["Comida y bebida", "En el mercado", "Lugares de la ciudad", "Precios y dinero", "Pedir en un café o restaurante"],
+          "prerequisites": ["pt-a1-verbos-modais", "pt-a1-numeros-horas"]
+        },
+        {
+          "id": "pt-a1-ir-gerundio",
+          "title": "Ir + infinitivo y estar + gerundio",
+          "targetTitle": "Ir + infinitivo e estar + gerúndio",
+          "description": "Vas a aprender a hablar de planes futuros y de acciones que están pasando ahora mismo. Te sirve para contar lo que estás haciendo y lo que vas a hacer el fin de semana.",
+          "subtopics": ["Estar + gerundio", "Ir + infinitivo", "Expresiones de tiempo", "Gostar de", "Planes para el fin de semana"],
+          "prerequisites": ["pt-a1-presente"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "pt-a2-preterito-perfeito",
+          "title": "Pretérito perfeito",
+          "targetTitle": "Pretérito perfeito",
+          "description": "Vas a aprender a conjugar el pretérito perfeito para contar acciones terminadas en el pasado. Te sirve para narrar lo que hiciste ayer o en un viaje reciente.",
+          "subtopics": ["Regulares en -ar", "Regulares en -er e -ir", "Irregulares frecuentes", "Marcadores de pasado", "Contar un viaje"],
+          "prerequisites": ["pt-a1-presente", "pt-a1-ir-gerundio"]
+        },
+        {
+          "id": "pt-a2-preterito-imperfeito",
+          "title": "Pretérito imperfeito",
+          "targetTitle": "Pretérito imperfeito",
+          "description": "Vas a aprender a usar el pretérito imperfeito para describir hábitos y situaciones del pasado. Te sirve para contar cómo era tu vida antes o tus recuerdos de infancia.",
+          "subtopics": ["Formación", "Irregulares", "Hábitos y descripciones", "Imperfeito y perfeito juntos", "Recuerdos de infancia"],
+          "prerequisites": ["pt-a2-preterito-perfeito"]
+        },
+        {
+          "id": "pt-a2-reflexivos-rotina",
+          "title": "Verbos reflexivos y rutina diaria",
+          "targetTitle": "Verbos reflexivos e rotina diária",
+          "description": "Vas a aprender a usar los verbos reflexivos para describir tu rutina diaria y acciones recíprocas. Te sirve para hablar de tus hábitos de higiene y de cosas que hacés con otra persona.",
+          "subtopics": [
+            "Verbos reflexivos y pronombres",
+            "La rutina diaria con reflexivos",
+            "Acciones recíprocas",
+            "Reflexivos: portugués vs español",
+            "Describir la rutina de otra persona"
+          ],
+          "prerequisites": ["pt-a1-presente"]
+        },
+        {
+          "id": "pt-a2-por-para",
+          "title": "Por y para",
+          "targetTitle": "Por e para",
+          "description": "Vas a aprender a diferenciar los usos de por y para en portugués. Te sirve para expresar causa, finalidad y dirección sin confundirte entre los dos.",
+          "subtopics": [
+            "Usos de por",
+            "Usos de para",
+            "Por vs para: diferencias clave",
+            "Expresiones fijas con por y para",
+            "Pedir y dar indicaciones"
+          ],
+          "prerequisites": ["pt-a1-preposicoes-possessivos"]
+        },
+        {
+          "id": "pt-a2-comparativos",
+          "title": "Comparativos y superlativos",
+          "targetTitle": "Comparativos e superlativos",
+          "description": "Vas a aprender a comparar personas, cosas y lugares usando comparativos y superlativos. Te sirve para opinar sobre cuál es mejor, peor o más grande entre varias opciones.",
+          "subtopics": ["Mais y menos", "Igualdad: tão ... quanto", "Comparativos irregulares", "Superlativos", "Comparar ciudades"],
+          "prerequisites": ["pt-a1-demonstrativos-adjetivos"]
+        },
+        {
+          "id": "pt-a2-pronomes",
+          "title": "Pronombres de objeto",
+          "targetTitle": "Pronomes de objeto",
+          "description": "Vas a aprender a usar los pronombres de objeto directo e indirecto para no repetir palabras. Te sirve para hablar de forma más natural, como se usa realmente en Brasil.",
+          "subtopics": [
+            "Objeto directo: o, a, os, as",
+            "Objeto indirecto: lhe y para ele",
+            "Me, te, nos y dónde van",
+            "Cómo se habla en Brasil",
+            "Pedir y ofrecer cosas"
+          ],
+          "prerequisites": ["pt-a2-preterito-perfeito"]
+        },
+        {
+          "id": "pt-a2-relativos-conectores",
+          "title": "Pronombres relativos y conectores",
+          "targetTitle": "Pronomes relativos e conectores",
+          "description": "Vas a aprender a usar que, quem y onde para unir frases, y conectores para dar causa y consecuencia. Te sirve para armar textos más fluidos y mejor conectados.",
+          "subtopics": [
+            "Pronombres relativos: que, quem, onde",
+            "Conectores causales: porque, já que",
+            "Conectores de consecuencia: por isso, então",
+            "Conectores de contraste: mas, porém",
+            "Escribir un párrafo conectado"
+          ],
+          "prerequisites": ["pt-a2-pronomes"]
+        },
+        {
+          "id": "pt-a2-saude-corpo",
+          "title": "Salud, cuerpo y emociones",
+          "targetTitle": "Saúde, corpo e emoções",
+          "description": "Vas a aprender vocabulario del cuerpo, los síntomas y las emociones. Te sirve para explicar cómo te sentís y manejarte en una consulta médica.",
+          "subtopics": [
+            "Partes del cuerpo",
+            "Síntomas y malestares",
+            "En el consultorio médico",
+            "Expresar emociones y estados de ánimo",
+            "Pedir ayuda y describir cómo te sentís"
+          ],
+          "prerequisites": ["pt-a2-preterito-imperfeito"]
+        },
+        {
+          "id": "pt-a2-viagem-indicacoes",
+          "title": "Viajes, indicaciones y transporte",
+          "targetTitle": "Viagens, indicações e transporte",
+          "description": "Vas a aprender vocabulario de viajes, transporte y cómo pedir indicaciones en la calle. Te sirve para planear un itinerario y moverte sin problemas en Brasil.",
+          "subtopics": [
+            "Medios de transporte",
+            "Pedir y dar indicaciones en la calle",
+            "En el aeropuerto y el hotel",
+            "Vocabulario de viaje y turismo",
+            "Planear un itinerario de viaje"
+          ],
+          "prerequisites": ["pt-a2-por-para"]
+        },
+        {
+          "id": "pt-a2-futuro-condicional",
+          "title": "Futuro, condicional e imperativo",
+          "targetTitle": "Futuro, condicional e imperativo",
+          "description": "Vas a aprender a hablar del futuro, hacer propuestas con condicional y dar órdenes con el imperativo. Te sirve para dar consejos, instrucciones y hacer planes.",
+          "subtopics": ["Futuro do presente", "Futuro irregular", "Condicional", "Imperativo con você", "Consejos e instrucciones"],
+          "prerequisites": ["pt-a2-preterito-imperfeito", "pt-a2-relativos-conectores"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "pt-b1-presente-subjuntivo",
+          "title": "Presente del subjuntivo",
+          "targetTitle": "Presente do subjuntivo",
+          "description": "Vas a aprender a formar y usar el presente del subjuntivo para expresar deseos, dudas y recomendaciones. Te sirve para sonar más natural al dar consejos u opinar con matices.",
+          "subtopics": ["Formación regular", "Irregulares", "Deseos y recomendaciones", "Duda, emoción y talvez", "Mensaje de buenos deseos"],
+          "prerequisites": ["pt-a2-futuro-condicional"]
+        },
+        {
+          "id": "pt-b1-opiniao-argumentacao",
+          "title": "Expresar opinión y argumentar",
+          "targetTitle": "Expressar opinião e argumentar",
+          "description": "Vas a aprender a dar tu opinión, mostrar acuerdo o desacuerdo y justificar con razones. Te sirve para participar en una conversación o debate de nivel intermedio.",
+          "subtopics": [
+            "Dar tu opinión: acho que, acredito que",
+            "Acuerdo y desacuerdo",
+            "Dar razones: porque, pois",
+            "Matizar una opinión",
+            "Escribir un comentario de opinión breve"
+          ],
+          "prerequisites": ["pt-b1-presente-subjuntivo"]
+        },
+        {
+          "id": "pt-b1-regencia-verbal",
+          "title": "Régimen verbal básico y preposiciones",
+          "targetTitle": "Regência verbal básica e preposições",
+          "description": "Vas a aprender qué preposición acompaña a los verbos más comunes del portugués. Te sirve para evitar errores frecuentes al armar frases con verbos como gostar, pensar o depender.",
+          "subtopics": [
+            "Verbos con de: gostar de, depender de",
+            "Verbos con em: pensar em, acreditar em",
+            "Verbos con a: assistir a, responder a",
+            "Errores frecuentes por interferencia del español",
+            "Armar frases con régimen correcto"
+          ],
+          "prerequisites": ["pt-a2-pronomes"]
+        },
+        {
+          "id": "pt-b1-perfeito-composto",
+          "title": "Pretérito perfeito composto",
+          "targetTitle": "Pretérito perfeito composto",
+          "description": "Vas a aprender a usar tenho feito para hablar de acciones repetidas o recientes que siguen vigentes. Te sirve para describir cambios y hábitos de un período reciente.",
+          "subtopics": [
+            "Formación: tenho + participio",
+            "Diferencia con el pretérito perfeito simple",
+            "Acciones repetidas y recientes",
+            "Marcadores de tiempo típicos",
+            "Hablar de cambios recientes"
+          ],
+          "prerequisites": ["pt-a2-preterito-perfeito"]
+        },
+        {
+          "id": "pt-b1-mais-que-perfeito",
+          "title": "Pluscuamperfecto",
+          "targetTitle": "Mais-que-perfeito",
+          "description": "Vas a aprender a usar el pluscuamperfecto para ordenar hechos que pasaron antes de otro momento del pasado. Te sirve para contar anécdotas con más precisión temporal.",
+          "subtopics": [
+            "Tinha + participio",
+            "Participios irregulares",
+            "La forma simple: fizera",
+            "Ordenar hechos en el pasado",
+            "Contar una anécdota"
+          ],
+          "prerequisites": ["pt-b1-perfeito-composto"]
+        },
+        {
+          "id": "pt-b1-condicionais-se",
+          "title": "Oraciones condicionales con se",
+          "targetTitle": "Orações condicionais com se",
+          "description": "Vas a aprender a armar condiciones reales y futuras con se para expresar consecuencias. Te sirve para dar consejos y advertencias condicionadas a una situación.",
+          "subtopics": [
+            "Condición real: se + presente",
+            "Condición futura: se + futuro",
+            "Consecuencias y resultados",
+            "Conectores condicionales: caso, a não ser que",
+            "Dar consejos condicionados"
+          ],
+          "prerequisites": ["pt-b1-presente-subjuntivo"]
+        },
+        {
+          "id": "pt-b1-futuro-subjuntivo",
+          "title": "Futuro del subjuntivo",
+          "targetTitle": "Futuro do subjuntivo",
+          "description": "Vas a aprender a formar el futuro del subjuntivo para hablar de condiciones y situaciones futuras hipotéticas. Te sirve para coordinar planes y hacer promesas condicionadas.",
+          "subtopics": ["Formación", "Irregulares", "Con se y quando", "Assim que, enquanto y o que você quiser", "Coordinar planes"],
+          "prerequisites": ["pt-b1-condicionais-se"]
+        },
+        {
+          "id": "pt-b1-voz-passiva",
+          "title": "Voz pasiva y se",
+          "targetTitle": "Voz passiva e se",
+          "description": "Vas a aprender a usar la voz pasiva y el se impersonal para hablar sin mencionar quién hace la acción. Te sirve para entender y escribir avisos, clasificados y noticias.",
+          "subtopics": ["Pasiva con ser", "Participios dobles", "Vende-se, alugam-se", "Sujeto indeterminado", "Clasificados y noticias"],
+          "prerequisites": ["pt-b1-mais-que-perfeito"]
+        },
+        {
+          "id": "pt-b1-trabalho-profissao",
+          "title": "Vocabulario de trabajo y profesiones",
+          "targetTitle": "Vocabulário de trabalho e profissões",
+          "description": "Vas a aprender vocabulario sobre oficios, reuniones y el ambiente laboral. Te sirve para hablar de tu trabajo, tu carrera y manejarte en una entrevista laboral.",
+          "subtopics": [
+            "Profesiones y oficios",
+            "El ambiente de oficina",
+            "Reuniones de trabajo",
+            "Hablar de tu experiencia laboral",
+            "Simular una entrevista de trabajo"
+          ],
+          "prerequisites": ["pt-b1-opiniao-argumentacao"]
+        },
+        {
+          "id": "pt-b1-meio-ambiente-tecnologia",
+          "title": "Vocabulario de medio ambiente y tecnología",
+          "targetTitle": "Vocabulário de meio ambiente e tecnologia",
+          "description": "Vas a aprender vocabulario sobre el medio ambiente y la tecnología para hablar de temas actuales. Te sirve para comentar noticias y problemas del mundo de hoy.",
+          "subtopics": [
+            "Vocabulario del medio ambiente",
+            "Vocabulario de tecnología e internet",
+            "Problemas y soluciones",
+            "Discutir un tema actual",
+            "Redactar un comentario breve"
+          ],
+          "prerequisites": ["pt-b1-voz-passiva"]
+        },
+        {
+          "id": "pt-b1-discurso-indireto",
+          "title": "Discurso indirecto y conectores",
+          "targetTitle": "Discurso indireto e conectores",
+          "description": "Vas a aprender a contar lo que alguien dijo cambiando los tiempos y las referencias necesarias. Te sirve para relatar conversaciones y transmitir pedidos o preguntas de otra persona.",
+          "subtopics": [
+            "Contar lo que alguien dijo",
+            "Cambios de tiempo y referencias",
+            "Preguntas y pedidos indirectos",
+            "Conectores para contar",
+            "Contar una conversación"
+          ],
+          "prerequisites": ["pt-b1-voz-passiva"]
+        },
+        {
+          "id": "pt-b1-expressoes-coloquiais",
+          "title": "Expresiones coloquiales y marcadores conversacionales",
+          "targetTitle": "Expressões coloquiais e marcadores conversacionais",
+          "description": "Vas a aprender muletillas, intensificadores y expresiones coloquiales del portugués de todos los días. Te sirve para entender y participar en una charla informal con brasileños.",
+          "subtopics": [
+            "Muletillas y marcadores conversacionales",
+            "Intensificadores: muito, super, bem",
+            "Interjecciones comunes",
+            "Coloquialismos cotidianos",
+            "Mantener una conversación informal"
+          ],
+          "prerequisites": ["pt-b1-discurso-indireto"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "pt-b2-imperfeito-subjuntivo",
+          "title": "Imperfecto del subjuntivo y condicionales",
+          "targetTitle": "Imperfeito do subjuntivo e condicionais",
+          "description": "Vas a aprender a formar el imperfecto del subjuntivo y a usarlo en condicionales hipotéticas. Te sirve para imaginar situaciones irreales y hablar de lo que harías en otro contexto.",
+          "subtopics": ["Formación", "Condicionales hipotéticas", "Como se, quem dera y e se", "Correlación de tiempos", "Situaciones imaginarias"],
+          "prerequisites": ["pt-b1-futuro-subjuntivo", "pt-b1-condicionais-se"]
+        },
+        {
+          "id": "pt-b2-conjuncoes-concessivas-finais",
+          "title": "Conjunciones concesivas, finales y condicionales avanzadas",
+          "targetTitle": "Conjunções concessivas, finais e condicionais avançadas",
+          "description": "Vas a aprender conjunciones como embora, apesar de y para que para matizar tus ideas. Te sirve para escribir y hablar con más precisión en textos argumentativos.",
+          "subtopics": [
+            "Embora y apesar de + subjuntivo",
+            "Para que y a fim de que",
+            "A menos que y desde que",
+            "Combinar conjunciones en un texto",
+            "Redactar un párrafo con conjunciones variadas"
+          ],
+          "prerequisites": ["pt-b2-imperfeito-subjuntivo"]
+        },
+        {
+          "id": "pt-b2-infinitivo-pessoal",
+          "title": "Infinitivo personal",
+          "targetTitle": "Infinitivo pessoal",
+          "description": "Vas a aprender a usar el infinitivo personal, una estructura que no existe en español. Te sirve para dar indicaciones claras a un grupo y escribir instrucciones precisas.",
+          "subtopics": [
+            "Formación",
+            "Después de preposiciones",
+            "Con expresiones impersonales",
+            "Cuándo flexionar y cuándo no",
+            "Indicaciones para un grupo"
+          ],
+          "prerequisites": ["pt-b2-conjuncoes-concessivas-finais"]
+        },
+        {
+          "id": "pt-b2-tempos-compostos-subjuntivo",
+          "title": "Tiempos compuestos del subjuntivo",
+          "targetTitle": "Tempos compostos do subjuntivo",
+          "description": "Vas a aprender los tiempos compuestos del subjuntivo para hablar de hipótesis sobre el pasado. Te sirve para redactar reclamos formales y expresar condiciones más complejas.",
+          "subtopics": ["Tenha feito", "Tivesse feito", "Condicionales sobre el pasado", "Tiver feito", "Un reclamo formal"],
+          "prerequisites": ["pt-b2-imperfeito-subjuntivo"]
+        },
+        {
+          "id": "pt-b2-regencia-crase",
+          "title": "Régimen verbal y crase",
+          "targetTitle": "Regência verbal e crase",
+          "description": "Vas a aprender el régimen verbal avanzado y el uso de la crase. Te sirve para escribir correos y textos sin errores típicos de preposiciones.",
+          "subtopics": [
+            "Verbos y preposiciones",
+            "Ir a, ir para y chegar em",
+            "La crase: a + a = à",
+            "Horas, expresiones y lugares",
+            "Revisar un correo antes de mandarlo"
+          ],
+          "prerequisites": ["pt-b1-regencia-verbal"]
+        },
+        {
+          "id": "pt-b2-nominalizacao",
+          "title": "Nominalización y estilo formal escrito",
+          "targetTitle": "Nominalização e estilo formal escrito",
+          "description": "Vas a aprender a transformar verbos en sustantivos para lograr un estilo más formal e impersonal. Te sirve para escribir textos académicos y evitar repeticiones innecesarias.",
+          "subtopics": [
+            "Transformar verbos en sustantivos",
+            "Estilo impersonal",
+            "Evitar repeticiones",
+            "Textos académicos simples",
+            "Reescribir un párrafo informal en formal"
+          ],
+          "prerequisites": ["pt-b2-regencia-crase"]
+        },
+        {
+          "id": "pt-b2-registro-formal",
+          "title": "Registro formal y argumentación",
+          "targetTitle": "Registro formal e argumentação",
+          "description": "Vas a aprender a escribir con registro formal y a argumentar por escrito con conectores apropiados. Te sirve para redactar correos formales y textos de opinión bien estructurados.",
+          "subtopics": [
+            "El e-mail formal",
+            "Tratamiento y cortesía",
+            "Conectores para argumentar",
+            "El texto de opinión",
+            "Escribir un texto de opinión"
+          ],
+          "prerequisites": ["pt-b2-nominalizacao"]
+        },
+        {
+          "id": "pt-b2-textos-narrativos-descritivos",
+          "title": "Géneros textuales: narración y descripción",
+          "targetTitle": "Gêneros textuais: narração e descrição",
+          "description": "Vas a aprender la estructura de los textos narrativos y descriptivos en portugués. Te sirve para escribir una reseña o contar una historia con más recursos.",
+          "subtopics": [
+            "Estructura narrativa",
+            "Técnicas descriptivas",
+            "Conectores narrativos",
+            "Reseña de un libro o película",
+            "Escribir una narración breve"
+          ],
+          "prerequisites": ["pt-b2-registro-formal"]
+        },
+        {
+          "id": "pt-b2-vocabulario-atualidades",
+          "title": "Vocabulario de actualidad: economía, política y sociedad",
+          "targetTitle": "Vocabulário de atualidades: economia, política e sociedade",
+          "description": "Vas a aprender vocabulario de economía, política y sociedad para entender noticias en portugués. Te sirve para leer y comentar artículos periodísticos actuales.",
+          "subtopics": ["Vocabulario de economía", "Vocabulario de política", "Temas sociales actuales", "Leer una noticia", "Comentar una noticia"],
+          "prerequisites": ["pt-b1-meio-ambiente-tecnologia"]
+        },
+        {
+          "id": "pt-b2-debate-argumentacao",
+          "title": "Debate y argumentación avanzada",
+          "targetTitle": "Debate e argumentação avançada",
+          "description": "Vas a aprender a presentar y refutar argumentos de forma matizada en un debate. Te sirve para defender tu postura y responder a contraargumentos en portugués.",
+          "subtopics": [
+            "Presentar un argumento",
+            "Refutar un argumento",
+            "Conectores de contraargumentación",
+            "Matizar una opinión",
+            "Participar en un debate simulado"
+          ],
+          "prerequisites": ["pt-b2-vocabulario-atualidades"]
+        },
+        {
+          "id": "pt-b2-expressoes-idiomaticas-intermedias",
+          "title": "Expresiones idiomáticas y lenguaje figurado",
+          "targetTitle": "Expressões idiomáticas e linguagem figurada",
+          "description": "Vas a aprender expresiones idiomáticas y lenguaje figurado de uso frecuente en portugués. Te sirve para entender textos y conversaciones que no son literales.",
+          "subtopics": [
+            "Expresiones idiomáticas frecuentes",
+            "Metáforas de uso común",
+            "Expresiones coloquiales regionales",
+            "Falsos amigos con el español",
+            "Interpretar un texto con modismos"
+          ],
+          "prerequisites": ["pt-b2-textos-narrativos-descritivos"]
+        },
+        {
+          "id": "pt-b2-compreensao-audio",
+          "title": "Comprensión auditiva y registro oral",
+          "targetTitle": "Compreensão auditiva e registro oral",
+          "description": "Vas a aprender estrategias para entender el portugués hablado rápido y con distintos acentos. Te sirve para seguir podcasts, noticias y conversaciones reales sin perderte.",
+          "subtopics": [
+            "Entender habla rápida",
+            "Acentos regionales básicos",
+            "Estrategias de escucha",
+            "Tomar notas mientras escuchás",
+            "Resumir un audio escuchado"
+          ],
+          "prerequisites": ["pt-b2-debate-argumentacao"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "pt-c1-colocacao-pronominal",
+          "title": "Colocación pronominal culta",
+          "targetTitle": "Colocação pronominal culta",
+          "description": "Vas a aprender las reglas cultas de colocación de los pronombres átonos en portugués. Te sirve para pasar de un mensaje informal a un texto formal correctamente escrito.",
+          "subtopics": [
+            "Próclise: el pronombre antes",
+            "Ênclise: el pronombre después",
+            "Mesóclise: dir-se-ia, far-lhe-ei",
+            "Locuciones verbales y el uso de Brasil",
+            "Del mensaje informal al texto formal"
+          ],
+          "prerequisites": ["pt-b2-registro-formal"]
+        },
+        {
+          "id": "pt-c1-concordancia",
+          "title": "Concordancia avanzada",
+          "targetTitle": "Concordância avançada",
+          "description": "Vas a aprender casos avanzados de concordancia verbal y nominal que suelen confundir a hispanohablantes. Te sirve para revisar informes y textos con datos sin errores de concordancia.",
+          "subtopics": [
+            "Sujeto compuesto y a gente",
+            "Haver, fazer, colectivos y porcentajes",
+            "Se, ser y fui eu que",
+            "Concordancia nominal",
+            "Revisar un informe con datos"
+          ],
+          "prerequisites": ["pt-c1-colocacao-pronominal"]
+        },
+        {
+          "id": "pt-c1-matizes-significado",
+          "title": "Matices de significado y sinonimia",
+          "targetTitle": "Matizes de significado e sinonímia",
+          "description": "Vas a aprender a distinguir sinónimos finos y verbos con varios significados según el contexto. Te sirve para elegir la palabra justa al escribir o hablar con precisión.",
+          "subtopics": [
+            "Verbos con múltiples significados",
+            "Sinónimos y sus diferencias finas",
+            "Falsos cognados avanzados",
+            "Ambigüedad y precisión léxica",
+            "Elegir la palabra justa en un texto"
+          ],
+          "prerequisites": ["pt-c1-concordancia"]
+        },
+        {
+          "id": "pt-c1-coesao",
+          "title": "Cohesión y marcadores",
+          "targetTitle": "Coesão e marcadores",
+          "description": "Vas a aprender recursos de cohesión para retomar ideas sin repetir palabras. Te sirve para resumir textos y hablar de forma más fluida y conectada.",
+          "subtopics": [
+            "Retomar sin repetir",
+            "Este, esse y aquele en el texto",
+            "Conectores con matices",
+            "Reformular y marcar la charla",
+            "Resumir un texto"
+          ],
+          "prerequisites": ["pt-c1-matizes-significado"]
+        },
+        {
+          "id": "pt-c1-generos-textuais-formais",
+          "title": "Géneros textuales formales avanzados",
+          "targetTitle": "Gêneros textuais formais avançados",
+          "description": "Vas a aprender la estructura de géneros formales como el ensayo académico, el informe técnico y la carta formal compleja. Te sirve para redactar textos formales completos con el registro adecuado.",
+          "subtopics": [
+            "El ensayo académico",
+            "El informe técnico",
+            "La carta formal compleja",
+            "Estructura y registro de cada género",
+            "Redactar un ensayo breve"
+          ],
+          "prerequisites": ["pt-c1-coesao"]
+        },
+        {
+          "id": "pt-c1-discurso-academico",
+          "title": "Discurso académico y presentaciones",
+          "targetTitle": "Discurso acadêmico e apresentações",
+          "description": "Vas a aprender la estructura y los conectores propios de una presentación académica oral. Te sirve para preparar y defender una presentación o trabajo en portugués.",
+          "subtopics": [
+            "Estructura de una presentación oral",
+            "Conectores académicos",
+            "Citar y referenciar ideas",
+            "Lenguaje de defensa de una tesis",
+            "Preparar una presentación académica breve"
+          ],
+          "prerequisites": ["pt-c1-generos-textuais-formais"]
+        },
+        {
+          "id": "pt-c1-linguagem-juridica-tecnica",
+          "title": "Lenguaje jurídico y técnico básico",
+          "targetTitle": "Linguagem jurídica e técnica básica",
+          "description": "Vas a aprender vocabulario legal, administrativo y técnico de uso frecuente en documentos formales. Te sirve para interpretar contratos simples y completar formularios oficiales.",
+          "subtopics": [
+            "Vocabulario legal y administrativo",
+            "Vocabulario técnico y profesional",
+            "Formularios y documentos oficiales",
+            "Interpretar un contrato simple",
+            "Completar un formulario oficial"
+          ],
+          "prerequisites": ["pt-c1-generos-textuais-formais"]
+        },
+        {
+          "id": "pt-c1-expressoes-idiomaticas",
+          "title": "Expresiones idiomáticas brasileñas",
+          "targetTitle": "Expressões idiomáticas brasileiras",
+          "description": "Vas a aprender expresiones idiomáticas típicas del portugués brasileño del día a día. Te sirve para entender chats y conversaciones informales entre amigos.",
+          "subtopics": ["Del día a día", "Fútbol y comida", "Animales y cuerpo", "Parecidas, pero no iguales", "Un chat entre amigos"],
+          "prerequisites": ["pt-c1-matizes-significado"]
+        },
+        {
+          "id": "pt-c1-retorica-estilo",
+          "title": "Retórica y estilo",
+          "targetTitle": "Retórica e estilo",
+          "description": "Vas a aprender figuras retóricas, ironía y distintos registros literarios del portugués. Te sirve para analizar textos literarios breves y reconocer el tono e intención del autor.",
+          "subtopics": [
+            "Figuras retóricas comunes",
+            "Ironía y humor en portugués",
+            "Registros literarios",
+            "Tono e intención",
+            "Analizar un texto literario breve"
+          ],
+          "prerequisites": ["pt-c1-expressoes-idiomaticas"]
+        },
+        {
+          "id": "pt-c1-variacao",
+          "title": "Variación Brasil-Portugal",
+          "targetTitle": "Variação Brasil-Portugal",
+          "description": "Vas a aprender las principales diferencias de vocabulario, pronombres y pronunciación entre Brasil y Portugal. Te sirve para adaptar un texto o entender a un hablante de Portugal.",
+          "subtopics": [
+            "Tu, você y el trato",
+            "Gerundio, pronombres y artículos",
+            "Vocabulario distinto",
+            "Ortografía y pronunciación",
+            "Adaptar un texto de Portugal"
+          ],
+          "prerequisites": ["pt-c1-retorica-estilo"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "pt-c2-dialetos-variedades",
+          "title": "Dialectos y variedades regionales de Brasil",
+          "targetTitle": "Dialetos e variedades regionais do Brasil",
+          "description": "Vas a aprender a reconocer acentos regionales y vocabulario propio de distintas regiones de Brasil. Te sirve para entender a hablantes de cualquier parte del país sin perderte.",
+          "subtopics": [
+            "Acentos regionales: nordestino, caipira, carioca, gaúcho",
+            "Vocabulario regional",
+            "Giria y lenguaje juvenil actual",
+            "Comprensión de hablantes rápidos y regionales",
+            "Identificar el origen de un hablante por su habla"
+          ],
+          "prerequisites": ["pt-c1-variacao"]
+        },
+        {
+          "id": "pt-c2-literatura-analise",
+          "title": "Análisis literario y textos clásicos",
+          "targetTitle": "Análise literária e textos clássicos",
+          "description": "Vas a aprender a analizar prosa y poesía en portugués, identificando recursos y simbolismo. Te sirve para comentar obras de autores brasileños representativos con criterio propio.",
+          "subtopics": [
+            "Leer y analizar prosa literaria",
+            "Poesía: métrica y recursos",
+            "Autores brasileños representativos",
+            "Interpretar simbolismo y subtexto",
+            "Comentar un poema o cuento"
+          ],
+          "prerequisites": ["pt-c2-dialetos-variedades"]
+        },
+        {
+          "id": "pt-c2-humor-ironia-avancada",
+          "title": "Humor, ironía y juegos de palabras avanzados",
+          "targetTitle": "Humor, ironia e trocadilhos avançados",
+          "description": "Vas a aprender a captar el doble sentido, el sarcasmo y los juegos de palabras del portugués brasileño. Te sirve para entender chistes, memes y el humor en redes sociales.",
+          "subtopics": [
+            "Doble sentido y ambigüedad buscada",
+            "Chistes y memes brasileños",
+            "Sarcasmo e ironía fina",
+            "Trocadilhos: juegos de palabras",
+            "Interpretar humor en redes sociales"
+          ],
+          "prerequisites": ["pt-c2-literatura-analise"]
+        },
+        {
+          "id": "pt-c2-traducao-interpretacao",
+          "title": "Traducción e interpretación",
+          "targetTitle": "Tradução e interpretação",
+          "description": "Vas a aprender técnicas de traducción entre español y portugués y nociones básicas de interpretación oral. Te sirve para traducir textos adaptando el registro correctamente.",
+          "subtopics": [
+            "Técnicas de traducción español-portugués",
+            "Falsos amigos y trampas de traducción",
+            "Interpretación consecutiva básica",
+            "Adaptar el registro al traducir",
+            "Traducir un texto breve"
+          ],
+          "prerequisites": ["pt-c2-humor-ironia-avancada"]
+        },
+        {
+          "id": "pt-c2-escrita-criativa",
+          "title": "Escritura creativa",
+          "targetTitle": "Escrita criativa",
+          "description": "Vas a aprender a escribir narrativa creativa con diálogos naturales y descripciones ricas. Te sirve para desarrollar tu propio estilo al escribir un microrrelato en portugués.",
+          "subtopics": [
+            "Narrativa creativa",
+            "Diálogos naturales",
+            "Descripción sensorial y estilo propio",
+            "Juegos de palabras y humor en la escritura",
+            "Escribir un microrrelato"
+          ],
+          "prerequisites": ["pt-c2-traducao-interpretacao"]
+        },
+        {
+          "id": "pt-c2-negociacao-diplomacia",
+          "title": "Lenguaje de negociación y diplomacia",
+          "targetTitle": "Linguagem de negociação e diplomacia",
+          "description": "Vas a aprender estrategias de persuasión y lenguaje diplomático para manejar conflictos verbales. Te sirve para participar con soltura en reuniones y negociaciones formales.",
+          "subtopics": [
+            "Estrategias de persuasión",
+            "Lenguaje diplomático y eufemismos",
+            "Manejar conflictos verbales",
+            "Reuniones y negociaciones formales",
+            "Simular una negociación"
+          ],
+          "prerequisites": ["pt-c2-escrita-criativa"]
+        },
+        {
+          "id": "pt-c2-edicao-revisao",
+          "title": "Edición y revisión de textos a nivel nativo",
+          "targetTitle": "Edição e revisão de textos em nível nativo",
+          "description": "Vas a aprender a corregir el estilo y la coherencia de textos largos como lo haría un hablante nativo. Te sirve para revisar y mejorar textos propios o ajenos con criterio profesional.",
+          "subtopics": [
+            "Corrección de estilo",
+            "Coherencia y cohesión en textos largos",
+            "Normas cultas vs uso real",
+            "Revisar y mejorar un texto ajeno",
+            "Editar un artículo completo"
+          ],
+          "prerequisites": ["pt-c2-negociacao-diplomacia"]
+        },
+        {
+          "id": "pt-c2-cultura-historia-linguistica",
+          "title": "Cultura, historia e identidad lingüística",
+          "targetTitle": "Cultura, história e identidade linguística",
+          "description": "Vas a aprender sobre la historia del portugués y la diversidad cultural de los países lusófonos. Te sirve para reflexionar sobre la relación entre lengua e identidad y cerrar tu formación con un ensayo final.",
+          "subtopics": [
+            "Historia del portugués y su evolución",
+            "Diversidad cultural de los países lusófonos",
+            "Norma culta vs lenguaje popular",
+            "Identidad y lengua",
+            "Ensayo final sobre la lengua portuguesa"
+          ],
+          "prerequisites": ["pt-c2-edicao-revisao"]
+        }
+      ]
+    }
+  ]
+}

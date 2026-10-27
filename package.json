@@ -18,6 +18,8 @@
     "content:check": "vitest run tests/content",
     "content:banks": "node scripts/run-ts.mjs scripts/banks.ts",
     "content:chunks": "node scripts/run-ts.mjs scripts/chunks.ts",
+    "content:syllabus": "node scripts/run-ts.mjs scripts/syllabus.ts",
+    "content:topics": "node scripts/run-ts.mjs scripts/topics.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

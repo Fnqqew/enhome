@@ -45,8 +45,8 @@ export const BANK_TARGET: Record<BankType, number> = {
 // Los formatos que no van en todos los niveles (igual que en la práctica): transformar y ordenar un texto
 // desde A2, pares mínimos hasta B1. Los de lectura, solo en los subtemas con días de lectura.
 const LEVELS: Partial<Record<BankType, [CefrLevel, CefrLevel]>> = {
-  transformation: ['A2', 'C1'],
-  reorder_text: ['A2', 'C1'],
+  transformation: ['A2', 'C2'],
+  reorder_text: ['A2', 'C2'],
   minimal_pair: ['A1', 'B1']
 }
 const READING_TYPES: BankType[] = ['reading', 'reorder_text']

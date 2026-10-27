@@ -18,7 +18,8 @@ function message(err: unknown): string {
 }
 
 // dir es la carpeta content/; cada idioma tiene su temario en content/<idioma>/.
-export function loadCurriculum(dir: string, language: LanguageId = 'en'): CurriculumTopic[] {
+// validate: false lo usan las herramientas de contenido mientras escriben un temario a medias.
+export function loadCurriculum(dir: string, language: LanguageId = 'en', { validate = true } = {}): CurriculumTopic[] {
   const topics: CurriculumTopic[] = []
   const courseDir = join(dir, language)
 
@@ -50,7 +51,7 @@ export function loadCurriculum(dir: string, language: LanguageId = 'en'): Curric
   if (topics.length === 0) {
     throw new CurriculumError(`No se encontró el temario de ${languageInfo(language).name} (se busca en ${courseDir}).`)
   }
-  validateCurriculum(topics)
+  if (validate) validateCurriculum(topics)
   return topics.sort(compareTopics)
 }
 
