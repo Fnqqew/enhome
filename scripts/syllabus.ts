@@ -23,7 +23,8 @@ if (!LANGUAGE_IDS.includes(language as LanguageId)) {
 const lang = language as LanguageId
 const ROOT = resolve(import.meta.dirname, '..', '..')
 const info = languageInfo(lang)
-const existing = loadCurriculum(join(ROOT, 'content'), lang)
+// Un idioma nuevo todavía no tiene tópicos: el plan se arma entero.
+const existing = loadCurriculum(join(ROOT, 'content'), lang, { validate: false })
 
 const text = z.string().trim().min(1)
 const slug = z.string().regex(/^[a-z0-9-]+$/)

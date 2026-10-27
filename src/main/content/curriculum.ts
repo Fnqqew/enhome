@@ -48,7 +48,7 @@ export function loadCurriculum(dir: string, language: LanguageId = 'en', { valid
     }
   }
 
-  if (topics.length === 0) {
+  if (topics.length === 0 && validate) {
     throw new CurriculumError(`No se encontró el temario de ${languageInfo(language).name} (se busca en ${courseDir}).`)
   }
   if (validate) validateCurriculum(topics)
