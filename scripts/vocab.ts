@@ -27,7 +27,9 @@ const FILE = join(resolve(import.meta.dirname, '..', '..', 'content'), lang, 'vo
 const words: CoreWord[] = existsSync(FILE) ? (JSON.parse(readFileSync(FILE, 'utf8')) as { words: CoreWord[] }).words : []
 const save = (): void => writeFileSync(FILE, `${JSON.stringify({ words }, null, 2)}\n`)
 
-const batchSchema = z.object({ words: z.array(coreWordSchema.omit({ level: true }).catch(null as unknown as Omit<CoreWord, 'level'>)) })
+// Cada palabra se valida aparte (las que no cumplen se descartan y se cuenta por qué).
+const wordSchema = coreWordSchema.omit({ level: true })
+const batchSchema = z.object({ words: z.array(z.unknown()) })
 
 for (const level of CEFR_LEVELS.filter((l) => !onlyLevel || l === onlyLevel)) {
   while (words.filter((w) => w.level === level).length < PER_LEVEL[level]) {
@@ -50,7 +52,13 @@ ${selfCheck(lang)}`,
       timeoutMs: 300_000,
       ticket: { priority: 'now' }
     })
-    const fresh = batch.filter((w): w is Omit<CoreWord, 'level'> => !!w && !known.has(w.term.toLowerCase()))
+    const parsed = batch.map((w) => wordSchema.safeParse(w))
+    const invalid = parsed.filter((p) => !p.success)
+    if (invalid.length > 0) {
+      const first = invalid[0].error?.issues[0]
+      console.error(`${level}: ${invalid.length} palabras con formato inválido (${first?.path.join('.')}: ${first?.message})`)
+    }
+    const fresh = parsed.flatMap((p) => (p.success && !known.has(p.data.term.toLowerCase()) ? [p.data] : []))
     for (const w of fresh) {
       known.add(w.term.toLowerCase())
       words.push({ ...w, level })
