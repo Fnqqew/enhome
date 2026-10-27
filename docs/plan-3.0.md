@@ -47,7 +47,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 ## Voz
 
 - [x] 13 Voz incluida que se baja sola
-- [~] 14 Voz para japonés y coreano
+- [x] 14 Voz para japonés y coreano
 - [x] 15 Elegir voz y velocidad en cada idioma
 - [x] 16 Explicaciones en voz rioplatense
 - [x] 17 Audio en todo el contenido
@@ -80,12 +80,12 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [~] 38 Escritura para los idiomas con otro alfabeto
 - [~] 39 Más tópicos por nivel
 - [~] 40 Vocabulario núcleo
-- [ ] 41 Contenido más rico en cada subtema
+- [~] 41 Contenido más rico en cada subtema
 - [~] 42 Guía de pronunciación
-- [ ] 43 Revisión a la perfección
-- [ ] 44 Examen inicial hasta C1
-- [ ] 45 Variante regional clara
-- [ ] 46 Contraste con el español en todos los temas
+- [~] 43 Revisión a la perfección
+- [~] 44 Examen inicial hasta C1
+- [x] 45 Variante regional clara
+- [~] 46 Contraste con el español en todos los temas
 
 ## Estructura del programa
 
@@ -96,5 +96,5 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [x] 51 El proceso principal ordenado por áreas
 - [x] 52 Pantallas grandes divididas
 - [x] 53 Un solo repaso
-- [~] 54 Herramientas para el contenido
+- [x] 54 Herramientas para el contenido
 - [x] 55 Más pruebas

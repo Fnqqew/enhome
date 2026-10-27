@@ -38,6 +38,24 @@ export function registerVoice(ctx: IpcContext): VoiceService {
     return voices.find((v) => v.gender !== chosen.gender && store.installed(v)) ?? voices.find((v) => v.gender !== chosen.gender) ?? chosen
   }
 
+  // Lo que se va a escuchar esta semana: los ejemplos y las frases hechas del tópico, y las palabras del día.
+  const courseTexts = (language: LanguageId): string[] => {
+    try {
+      const { curriculum, progression, core, vocab } = ctx.services(language)
+      const week = progression.getState(ctx.today()).week
+      const topic = curriculum.find((t) => t.id === week?.topicId)
+      const lesson = (topic?.subtopics ?? []).flatMap((s) => [
+        ...s.examples.map((e) => e.target),
+        ...(s.chunks ?? []).flatMap((c) => [c.target, c.example])
+      ])
+      const words = core.today(vocab.levelOf(topic?.id ?? null)).words.flatMap((w) => [w.term, w.example])
+      return [...new Set([...lesson, ...words])].slice(0, 200)
+    } catch (err) {
+      console.error('[voz] No se pudo armar el audio de la semana', err)
+      return []
+    }
+  }
+
   handle(IPC.voiceList, (): VoiceStatus[] => {
     const lang = ctx.activeLanguage()
     return [...voicesOf(lang), SPANISH_VOICE].map((voice) => ({ voice, ...store.status(voice) }))
@@ -77,11 +95,17 @@ export function registerVoice(ctx: IpcContext): VoiceService {
       if (process.env.ENHOME_DATA_DIR || loadSettings(ctx.db).speechEngine !== 'neural') return
       const voice = pick(language, 'main')
       if (!voice) return
-      if (store.installed(voice)) engine.warm(voice)
+      // Con la voz lista, se genera de antemano el audio de la semana: así suena al instante (sobre
+      // todo con las voces lentas, como las de japonés y coreano).
+      const ready = (): void => {
+        engine.warm(voice)
+        engine.prefetch(voice, courseTexts(language))
+      }
+      if (store.installed(voice)) ready()
       else
         void store
           .install(voice)
-          .then(() => engine.warm(voice))
+          .then(ready)
           .catch((err) => console.error('[voz] No se pudo bajar la voz', err))
     },
     stop: () => engine.stop()
