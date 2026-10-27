@@ -63,6 +63,13 @@ export function registerReading(ctx: IpcContext): void {
   handle(IPC.readingRemove, (readingId) => services().readings.remove(id.parse(readingId)))
   handle(IPC.readingStory, () => services().readings.story(today()))
   handle(IPC.pronunciationGet, () => loadPronunciation(ctx.contentDir, activeLanguage()))
+  // Las palabras núcleo del nivel del tópico de la semana.
+  const coreLevel = (): string => {
+    const { vocab, progression } = services()
+    return vocab.levelOf(progression.getState(today()).week?.topicId ?? null)
+  }
+  handle(IPC.coreWordsToday, () => services().core.today(coreLevel()))
+  handle(IPC.coreWordsLearn, (terms) => services().core.learn(z.array(z.string().max(80)).max(50).parse(terms), coreLevel(), today()))
   handle(IPC.readingNextChapter, () => services().readings.nextChapter(today()))
 
   handle(IPC.journalGet, () => services().journal.view(today()))

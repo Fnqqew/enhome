@@ -22,6 +22,7 @@
     "content:topics": "node scripts/run-ts.mjs scripts/topics.ts",
     "content:placement": "node scripts/run-ts.mjs scripts/placement.ts",
     "content:pronunciation": "node scripts/run-ts.mjs scripts/pronunciation.ts",
+    "content:vocab": "node scripts/run-ts.mjs scripts/vocab.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",

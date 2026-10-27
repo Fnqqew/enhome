@@ -4,6 +4,8 @@ import type { Ask } from '../src/main/claude/bridge'
 import { loadCurriculum } from '../src/main/content/curriculum'
 import { openDatabase, type Db } from '../src/main/db/database'
 import { buildLookupPrompt, Vocabulary } from '../src/main/vocab/vocab'
+import { CoreVocabulary } from '../src/main/vocab/core'
+import type { CoreWord } from '../src/shared/core-vocab'
 import { addDays } from '../src/shared/dates'
 
 const curriculum = loadCurriculum(join(__dirname, '..', 'content'), 'pt')
@@ -81,5 +83,34 @@ describe('oraciones guardadas de una lectura', () => {
     })
     expect(prompts[0]).toContain('portugués')
     expect(reader.due(addDays(TODAY, 1)).map((c) => c.kind)).toEqual(['sentence'])
+  })
+})
+
+describe('vocabulario núcleo', () => {
+  const core = (term: string, level: 'A1' | 'A2' = 'A1'): CoreWord => ({
+    term,
+    es: `es-${term}`,
+    level,
+    theme: 'casa',
+    example: `${term}.`,
+    exampleEs: '.'
+  })
+
+  it('propone las siguientes del nivel en orden de frecuencia, sin las que ya están en las tarjetas', () => {
+    const words = [...Array.from({ length: 10 }, (_, i) => core(`a1-${i}`)), core('a2-0', 'A2')]
+    const vocabulary = new CoreVocabulary(db, words)
+    vocab.save({ term: 'a1-0', translation: 'x', example: '', exampleEs: '', note: '' }, TODAY)
+
+    const today = vocabulary.today('A1')
+    expect(today.words.map((w) => w.term)).toEqual(['a1-1', 'a1-2', 'a1-3', 'a1-4', 'a1-5', 'a1-6', 'a1-7', 'a1-8'])
+    expect(today).toMatchObject({ learned: 1, total: 10 })
+
+    const after = vocabulary.learn(
+      today.words.map((w) => w.term),
+      'A1',
+      TODAY
+    )
+    expect(after.words.map((w) => w.term)).toEqual(['a1-9'])
+    expect(vocab.overview(TODAY).cards).toHaveLength(9)
   })
 })

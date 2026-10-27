@@ -29,6 +29,7 @@ import { Rewards } from '../rewards/rewards'
 import { answerAboutText, generateSummary } from '../summaries/generation'
 import { Summaries } from '../summaries/summaries'
 import { Vocabulary } from '../vocab/vocab'
+import { CoreVocabulary, loadCoreVocab } from '../vocab/core'
 import { Chats } from '../chat/chat'
 import type { CurriculumTopic, Roadmap } from '../../shared/curriculum'
 import { toLocalDate } from '../../shared/dates'
@@ -64,6 +65,7 @@ export interface Services {
   notebook: Notebook
   games: Games
   vocab: Vocabulary
+  core: CoreVocabulary
   readings: Readings
   missions: Missions
   journal: Journal
@@ -142,6 +144,7 @@ export function createContext(options: IpcOptions): IpcContext {
         notebook: new Notebook(courseData, curriculum, gradeOpenAnswer),
         games: new Games(courseData, curriculum, progression),
         vocab: new Vocabulary(courseData, curriculum, language),
+        core: new CoreVocabulary(courseData, loadCoreVocab(contentDir, language)),
         readings: new Readings(courseData, curriculum, progression, language),
         missions: new Missions(courseData, curriculum, progression, language),
         journal: new Journal(courseData, curriculum, progression, language),

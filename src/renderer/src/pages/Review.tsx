@@ -4,6 +4,7 @@ import { REVIEW_STEPS, type ReviewItemView, type ReviewOverview } from '@shared/
 import Icon from '../components/Icon'
 import ReviewPlayer from '../components/review/ReviewPlayer'
 import VocabCards from '../components/review/VocabCards'
+import CoreWords from '../components/review/CoreWords'
 import { announceRewards } from '../rewardsBus'
 import type { Navigate } from '../navigation'
 import { SkeletonCard } from '../components/Skeleton'
@@ -15,6 +16,8 @@ export default function Review({ examId, navigate }: { examId: number | null; na
   const [items, setItems] = useState<ReviewItemView[] | null>(null)
   const [playing, setPlaying] = useState(examId !== null)
   const [error, setError] = useState<string | null>(null)
+  // Al sumar palabras del día, la lista de tarjetas se vuelve a cargar.
+  const [vocabKey, setVocabKey] = useState(0)
 
   const load = useCallback(() => {
     setError(null)
@@ -101,7 +104,8 @@ export default function Review({ examId, navigate }: { examId: number | null; na
         ) : null}
       </section>
 
-      <VocabCards />
+      <CoreWords onLearned={() => setVocabKey((k) => k + 1)} />
+      <VocabCards key={vocabKey} />
 
       {overview.pending > 0 && (
         <section className="card stack fade-in">
