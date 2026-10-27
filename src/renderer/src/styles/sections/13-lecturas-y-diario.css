@@ -106,3 +106,46 @@ mark.gloss {
 .journal-entry[open] summary {
   margin-bottom: 0.6rem;
 }
+
+/* Lecturas: escuchar primero y oraciones para tocar */
+
+.reading-text .sentence {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reading-text .sentence:hover {
+  background: var(--surface-hover);
+}
+
+.reading-text .sentence.picked {
+  background: var(--accent-soft);
+}
+
+.sentence-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-hover);
+}
+
+.listen-first {
+  padding: 1rem;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.segmented {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.segmented .chip[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}

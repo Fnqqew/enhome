@@ -104,6 +104,7 @@ export const IPC = {
   vocabDue: 'vocab:due',
   vocabReview: 'vocab:review',
   vocabRemove: 'vocab:remove',
+  vocabSaveSentence: 'vocab:save-sentence',
   chatList: 'chat:list',
   chatGet: 'chat:get',
   chatStart: 'chat:start',
@@ -271,6 +272,7 @@ export interface Api {
   getDueWords(): Promise<VocabCard[]>
   reviewWord(cardId: number, knew: boolean): Promise<VocabCard>
   removeWord(cardId: number): Promise<VocabOverview>
+  saveSentence(sentence: string): Promise<VocabOverview>
   getChats(): Promise<{ chats: ChatSummary[]; suggestions: ChatSuggestion[] }>
   getChat(chatId: number): Promise<ChatView>
   startChat(suggestion: ChatSuggestion): Promise<ChatView>

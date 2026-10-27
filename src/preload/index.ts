@@ -101,6 +101,7 @@ const api: Api = {
   getDueWords: () => invoke(IPC.vocabDue),
   reviewWord: (cardId, knew) => invoke(IPC.vocabReview, cardId, knew),
   removeWord: (cardId) => invoke(IPC.vocabRemove, cardId),
+  saveSentence: (sentence) => invoke(IPC.vocabSaveSentence, sentence),
   getChats: () => invoke(IPC.chatList),
   getChat: (chatId) => invoke(IPC.chatGet, chatId),
   startChat: (suggestion) => invoke(IPC.chatStart, suggestion),

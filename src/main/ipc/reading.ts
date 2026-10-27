@@ -45,6 +45,7 @@ export function registerReading(ctx: IpcContext): void {
   handle(IPC.vocabDue, () => services().vocab.due(today()))
   handle(IPC.vocabReview, (cardId, knew) => services().vocab.review(id.parse(cardId), z.boolean().parse(knew), today()))
   handle(IPC.vocabRemove, (cardId) => services().vocab.remove(id.parse(cardId), today()))
+  handle(IPC.vocabSaveSentence, (sentence) => services().vocab.saveSentence(z.string().max(1000).parse(sentence), today()))
 
   const docKey = z.string().min(1).max(200)
   handle(IPC.highlightsList, (key) => listHighlights(courseDb(activeLanguage()), docKey.parse(key)))

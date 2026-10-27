@@ -61,3 +61,25 @@ describe('vocabulario', () => {
     expect(prompt).toContain('Você me empresta a caneta?')
   })
 })
+
+describe('oraciones guardadas de una lectura', () => {
+  it('se guardan enteras con la traducción de Claude, una sola vez, y vuelven con las tarjetas', async () => {
+    const prompts: string[] = []
+    const ask = (async (options: { prompt: string }) => {
+      prompts.push(options.prompt)
+      return { translation: 'Mañana voy a la playa con mis amigos.' }
+    }) as unknown as Ask
+    const reader = new Vocabulary(db, curriculum, 'pt', ask)
+    const sentence = 'Amanhã  vou à praia com os meus amigos.'
+    await reader.saveSentence(sentence, TODAY)
+    const overview = await reader.saveSentence(sentence, TODAY)
+    expect(overview.cards).toHaveLength(1)
+    expect(overview.cards[0]).toMatchObject({
+      kind: 'sentence',
+      term: 'Amanhã vou à praia com os meus amigos.',
+      translation: 'Mañana voy a la playa con mis amigos.'
+    })
+    expect(prompts[0]).toContain('portugués')
+    expect(reader.due(addDays(TODAY, 1)).map((c) => c.kind)).toEqual(['sentence'])
+  })
+})
