@@ -41,6 +41,11 @@ export default function ResultCard({
               ? 'Lo que fallaste pasó al cuaderno de errores: vuelve justo antes de que se te olvide.'
               : `Los ${result.newMistakes} que fallaste pasaron al cuaderno de errores: vuelven justo antes de que se te olviden.`}
         </li>
+        {result.newPhrases > 0 && (
+          <li>
+            {result.newPhrases === 1 ? 'Sumaste una frase hecha a tus tarjetas.' : `Sumaste ${result.newPhrases} frases hechas a tus tarjetas.`}
+          </li>
+        )}
         {result.dueTomorrow > 0 && <li>Mañana te esperan {result.dueTomorrow === 1 ? 'un repaso' : `${result.dueTomorrow} repasos`}.</li>}
       </ul>
       <p className="muted small">Para cerrar, un juego de dos minutos suelta la mano: la fluidez también se entrena.</p>

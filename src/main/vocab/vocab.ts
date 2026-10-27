@@ -29,6 +29,7 @@ const card = (r: CardRow): VocabCard => {
   const extra = (r.payload ? JSON.parse(r.payload) : {}) as Partial<WordExtra>
   return {
     id: r.id,
+    kind: r.kind === 'phrase' ? 'phrase' : 'word',
     term: r.front,
     translation: r.back,
     example: extra.example ?? '',
@@ -95,13 +96,13 @@ export class Vocabulary {
   }
 
   overview(today: string): VocabOverview {
-    const rows = this.db.prepare("SELECT * FROM cards WHERE kind = 'word' ORDER BY id DESC").all() as unknown as CardRow[]
+    const rows = this.db.prepare("SELECT * FROM cards WHERE kind IN ('word', 'phrase') ORDER BY id DESC").all() as unknown as CardRow[]
     const cards = rows.map(card)
     return { cards, dueToday: cards.filter((c) => c.dueOn <= today).length }
   }
 
   due(today: string): VocabCard[] {
-    return dueCards(this.db, ['word'], today, 30).map(card)
+    return dueCards(this.db, ['word', 'phrase'], today, 30).map(card)
   }
 
   // Me la sabía o no: FSRS decide cuándo vuelve.
@@ -122,7 +123,7 @@ export class Vocabulary {
 
   private row(id: number): CardRow {
     const row = getCard(this.db, id)
-    if (!row || row.kind !== 'word') throw new VocabError('Esa palabra no está en tu vocabulario.')
+    if (!row || (row.kind !== 'word' && row.kind !== 'phrase')) throw new VocabError('Esa palabra no está en tu vocabulario.')
     return row
   }
 

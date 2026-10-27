@@ -86,6 +86,31 @@ export default function Intro({
             ))}
           </ul>
         </div>
+        {view.chunks.length > 0 && (
+          <div>
+            <h3 className="level">FRASES PARA LLEVARTE</h3>
+            <p className="muted small">Se dicen así, enteras. Al terminar la práctica pasan a tus tarjetas.</p>
+            <ul className="examples lesson-examples">
+              {view.chunks.map((chunk, i) => (
+                <li key={i}>
+                  <button
+                    type="button"
+                    className="icon-btn"
+                    aria-label={`Escuchar «${chunk.example}»`}
+                    onClick={() => speech.speakAs(chunk.example, settings.language)}
+                  >
+                    <Icon name="play" className="glyph" />
+                  </button>
+                  <span>
+                    <strong className="en">{chunk.target}</strong> <span className="muted">— {chunk.es}</span>
+                    <br />
+                    <span className="en small">{chunk.example}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         {contrast.length > 0 && (
           <div className="lesson-contrast">
             <h3 className="level">OJO CON EL ESPAÑOL</h3>

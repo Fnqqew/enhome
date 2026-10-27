@@ -107,6 +107,13 @@ export default function VocabCards(): React.JSX.Element {
   )
 }
 
+// La oración de ejemplo con la frase hecha tapada (null si la frase no aparece tal cual en el ejemplo).
+function cloze(card: VocabCard): string | null {
+  const at = card.example.toLowerCase().indexOf(card.term.toLowerCase())
+  if (at < 0) return null
+  return `${card.example.slice(0, at)}_____${card.example.slice(at + card.term.length)}`
+}
+
 function Flashcards({ cards, onDone }: { cards: VocabCard[]; onDone: () => void }): React.JSX.Element {
   const speech = useSpeech()
   const [index, setIndex] = useState(0)
@@ -147,10 +154,24 @@ function Flashcards({ cards, onDone }: { cards: VocabCard[]; onDone: () => void 
         </span>
       </div>
       <button type="button" className={`flashcard${flipped ? ' flipped' : ''}`} onClick={() => setFlipped(true)} aria-live="polite">
-        {!flipped ? (
+        {!flipped && card.kind === 'phrase' && cloze(card) ? (
+          <>
+            <span className="flashcard-term en">{cloze(card)}</span>
+            <span className="muted small">Completá la frase hecha: «{card.translation}». Decila entera y tocá para ver si era.</span>
+          </>
+        ) : !flipped ? (
           <>
             <span className="flashcard-term en">{card.term}</span>
             <span className="muted small">Tocá para ver la traducción</span>
+          </>
+        ) : card.kind === 'phrase' ? (
+          <>
+            <span className="flashcard-term en">{card.term}</span>
+            <span className="small">
+              <span className="en">{card.example}</span>
+              <br />
+              <span className="muted">{card.exampleEs}</span>
+            </span>
           </>
         ) : (
           <>
@@ -164,7 +185,7 @@ function Flashcards({ cards, onDone }: { cards: VocabCard[]; onDone: () => void 
         )}
       </button>
       <div className="row">
-        <button type="button" className="btn secondary" onClick={() => speech.speakAs(card.term)}>
+        <button type="button" className="btn secondary" onClick={() => speech.speakAs(card.kind === 'phrase' && flipped ? card.example : card.term)}>
           <Icon name="play" className="glyph" /> Escuchar
         </button>
         {flipped && (

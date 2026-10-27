@@ -11,6 +11,7 @@ import { addDays } from '../../src/shared/dates'
 import type { ExerciseAnswer, ExerciseType, PracticeView, SessionView, StoredExercise } from '../../src/shared/exercises'
 import { emptyAnswer } from '../../src/shared/exercise-types'
 import { recordMistake } from '../../src/main/review/notebook'
+import { Vocabulary } from '../../src/main/vocab/vocab'
 import { generatedSample, rightAnswer, sample } from '../helpers/exercises'
 
 const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
@@ -509,5 +510,28 @@ describe('lo de otros tópicos que se mezcla', () => {
     await practice.answer(mixed[0].id, wrong, MON)
     await practice.answer(mixed[0].id, wrong, MON)
     expect((db.prepare('SELECT COUNT(*) AS n FROM cards WHERE topic_id = ?').get(other.id) as { n: number }).n).toBe(2)
+  })
+})
+
+describe('frases hechas', () => {
+  it('al terminar, las frases del subtema pasan a las tarjetas y se repasan como frases', async () => {
+    const withChunks = structuredClone(curriculum)
+    withChunks[0].subtopics[0].chunks = [
+      { target: 'How are you?', es: '¿Cómo estás?', example: 'Hi Ana, how are you?', exampleEs: 'Hola Ana, ¿cómo estás?' },
+      { target: 'Nice to meet you', es: 'Encantado', example: 'Nice to meet you, Tom.', exampleEs: 'Encantado, Tom.' }
+    ]
+    progression = new Progression(db, withChunks)
+    practice = new Practice(db, withChunks, progression, generator, grader)
+    const view = practice.getView(MON)
+    if (view.status !== 'ready') throw new Error('se esperaba la microlección')
+    expect(view.chunks).toHaveLength(2)
+
+    const s = await answerAllRight(session(await practice.start(MON)))
+    expect(practice.finish(s.id, MON).newPhrases).toBe(2)
+    const cards = new Vocabulary(db, withChunks, 'en').overview(MON).cards
+    expect(cards.map((c) => [c.kind, c.term, c.example])).toEqual([
+      ['phrase', 'Nice to meet you', 'Nice to meet you, Tom.'],
+      ['phrase', 'How are you?', 'Hi Ana, how are you?']
+    ])
   })
 })

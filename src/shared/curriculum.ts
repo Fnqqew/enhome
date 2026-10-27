@@ -21,7 +21,12 @@ export const subtopicSchema = z
     focus: z.array(z.enum(SKILLS)).min(1),
     keyPoints: z.array(text).min(1),
     examples: z.array(z.object({ target: text, es: text }).strict()).min(2),
-    commonMistakes: z.array(z.object({ wrong: text, right: text, why: text }).strict())
+    commonMistakes: z.array(z.object({ wrong: text, right: text, why: text }).strict()),
+    // Frases hechas del subtema (colocaciones, expresiones): se aprenden enteras, con tarjetas y huecos.
+    chunks: z
+      .array(z.object({ target: text, es: text, example: text, exampleEs: text }).strict())
+      .max(8)
+      .optional()
   })
   .strict()
 
@@ -41,6 +46,7 @@ export const topicSchema = z
   .strict()
 
 export type Subtopic = z.infer<typeof subtopicSchema>
+export type Chunk = NonNullable<Subtopic['chunks']>[number]
 export type Topic = z.infer<typeof topicSchema>
 
 export interface CurriculumTopic extends Topic {

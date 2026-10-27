@@ -41,7 +41,7 @@ import { quantity, usedHints } from '../rewards/inventory'
 import { recordMistake } from '../review/notebook'
 import { addDays, toLocalDate } from '../../shared/dates'
 import { shuffled } from '../../shared/shuffle'
-import { countCards } from '../review/cards'
+import { addCard, countCards } from '../review/cards'
 
 export class PracticeError extends Error {}
 
@@ -170,6 +170,7 @@ export class Practice {
       keyPoints: subtopic.keyPoints,
       examples: subtopic.examples,
       commonMistakes: subtopic.commonMistakes,
+      chunks: subtopic.chunks ?? [],
       warmUp: countCards(this.db, ['mistake'], 'due_on <= ?', today)
     }
   }
@@ -381,6 +382,25 @@ export class Practice {
     const view = this.sessionView(session)
     if (!view.canFinish) throw new PracticeError('Todavía quedan ejercicios sin responder.')
 
+    // Las frases hechas del subtema pasan a las tarjetas: se repasan enteras, con un hueco en la oración.
+    const { subtopic } = this.content(session.topic_id, session.subtopic_id)
+    const newPhrases = (subtopic.chunks ?? []).filter(
+      (chunk) =>
+        addCard(
+          this.db,
+          {
+            kind: 'phrase',
+            source: 'lesson',
+            sourceKey: chunk.target.trim().toLowerCase(),
+            topicId: session.topic_id,
+            subtopicId: session.subtopic_id,
+            front: chunk.target,
+            back: chunk.es,
+            payload: { example: chunk.example, exampleEs: chunk.exampleEs, note: '' }
+          },
+          today
+        ) !== null
+    ).length
     if (session.unit_id !== null) this.progression.completeUnit(session.unit_id, today)
     else this.progression.recordRecoverySession(today)
     this.db.prepare('UPDATE practice_sessions SET completed_on = ? WHERE id = ?').run(today, session.id)
@@ -396,7 +416,8 @@ export class Practice {
       averageScore: Math.round((feedbacks.reduce((sum, f) => sum + f.score, 0) / feedbacks.length) * 10) / 10,
       subtopicTitle: view.subtopicTitle,
       newMistakes: feedbacks.filter((f) => !f.correct).length,
-      dueTomorrow: countCards(this.db, ['mistake', 'word', 'phrase', 'sentence'], 'due_on <= ?', addDays(today, 1))
+      dueTomorrow: countCards(this.db, ['mistake', 'word', 'phrase', 'sentence'], 'due_on <= ?', addDays(today, 1)),
+      newPhrases
     }
   }
 

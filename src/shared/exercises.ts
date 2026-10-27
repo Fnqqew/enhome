@@ -212,6 +212,8 @@ export type PracticeView =
       // Los errores típicos de hispanohablantes en el subtema: el contraste con el español y la pregunta
       // para comprobar que se entendió, en la microlección.
       commonMistakes: { wrong: string; right: string; why: string }[]
+      // Frases hechas del subtema: se muestran en la microlección y pasan a las tarjetas al terminar.
+      chunks: { target: string; es: string; example: string; exampleEs: string }[]
       // Cuántos errores del cuaderno tocan hoy: con alguno, el día arranca con un calentamiento.
       warmUp: number
     }
@@ -227,4 +229,6 @@ export interface PracticeResult {
   subtopicTitle: string
   newMistakes: number
   dueTomorrow: number
+  // Frases hechas del subtema que se sumaron a las tarjetas.
+  newPhrases: number
 }

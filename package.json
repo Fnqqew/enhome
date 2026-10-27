@@ -17,6 +17,7 @@
     "e2e": "electron-vite build && node --test --test-concurrency=1 tests/e2e/app.e2e.mjs",
     "content:check": "vitest run tests/content",
     "content:banks": "node scripts/run-ts.mjs scripts/banks.ts",
+    "content:chunks": "node scripts/run-ts.mjs scripts/chunks.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
