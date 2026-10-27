@@ -9,6 +9,18 @@ export interface Release {
 
 export const CHANGELOG: Release[] = [
   {
+    version: '3.3.0',
+    date: '2026-10-27',
+    title: 'Portugués hasta C2 y la sección de pronunciación',
+    items: [
+      'El curso de portugués pasa de 25 a 60 tópicos, de A1 a C2, con más ejemplos, errores típicos y frases hechas en cada subtema.',
+      'Sección nueva «Pronunciación»: los sonidos que no existen en español para escuchar, pares mínimos y un juego de «¿cuál escuchaste?».',
+      'Palabras del día en Repaso: las más usadas de tu nivel, para sumar a tus tarjetas (cuando el idioma tenga su vocabulario núcleo).',
+      'El audio de la semana se prepara de antemano, así suena al instante.',
+      'Alemán, ruso, japonés, chino y coreano, en camino: aparecen como «próximamente».'
+    ]
+  },
+  {
     version: '3.2.0',
     date: '2026-10-27',
     title: 'Frases hechas, la historia y la misión de la semana, y la charla por voz',

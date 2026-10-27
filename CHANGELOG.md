@@ -2,6 +2,30 @@
 
 Todas las versiones de Enhome. Los instaladores están en las [versiones publicadas](https://github.com/Fnqqew/enhome/releases) del repositorio.
 
+## 3.3.0 · 2026-10-27
+
+Portugués hasta C2, la sección de pronunciación y el camino para cinco idiomas nuevos.
+
+### Portugués
+
+- **De 25 a 60 tópicos, de A1 a C2:** se suman temas que faltaban en cada nivel (preguntas, números y horas, *por* y *para*, reflexivos, salud, viajes, opinión, régimen verbal, expresiones coloquiales, géneros textuales, retórica) y el nivel C2 (variedades de Brasil, literatura, humor e ironía, traducción, escritura creativa, negociación). Cada tópico nuevo trae 8 ejemplos y 3 errores típicos de hispanohablantes por subtema, frases hechas y su resumen, escritos y revisados por Claude.
+- **Guía de pronunciación** (sección nueva «Pronunciación»): los sonidos que no existen en español con ejemplos para escuchar (también despacio), pares mínimos como *avó / avô*, acentuación, entonación, diferencias entre Brasil y Portugal, y un juego de «¿cuál escuchaste?».
+
+### Para practicar
+
+- **Palabras del día** (en Repaso): las siguientes 8 palabras más usadas de tu nivel para sumar a las tarjetas, apenas esté escrito el vocabulario núcleo del idioma.
+- La semana se escucha al instante: el audio de los ejemplos, las frases hechas y las palabras del día se genera de antemano.
+- **Nivel C2** en todo el programa.
+
+### Idiomas nuevos en camino
+
+- Alemán, ruso, japonés, chino y coreano aparecen como «próximamente», con sus voces listas. Las respuestas en japonés y chino se corrigen sin contar espacios entre caracteres, y los idiomas con otro alfabeto van a tener un curso de escritura (en Pronunciación).
+
+### Por dentro
+
+- Herramientas de contenido: planes de temario de 62 tópicos, tópicos nuevos, enriquecer los existentes, examen inicial hasta C1, vocabulario núcleo, pronunciación y escritura.
+- Una prueba de interfaz recorre una práctica entera sin Claude.
+
 ## 3.2.0 · 2026-10-27
 
 Frases hechas, la historia y la misión de la semana, y la charla por voz.
