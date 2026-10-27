@@ -27,7 +27,8 @@
       "keyPoints": [
         "em + o = no, em + a = na, em + os = nos, em + as = nas.",
         "em + um = num, em + uma = numa (muy común en Brasil).",
-        "Con ciudades sin artículo queda em: em Lima, em Paris."
+        "Con ciudades sin artículo queda em: em Lima, em Paris.",
+        "En español decimos simplemente \"en el/en la\" sin fusionar las palabras, pero en portugués la preposición \"em\" se funde obligatoriamente con el artículo que la sigue: em + o = no, em + a = na."
       ],
       "examples": [
         {
@@ -41,6 +42,26 @@
         {
           "target": "Ela trabalha numa escola.",
           "es": "Trabaja en una escuela."
+        },
+        {
+          "target": "As chaves estão no carro.",
+          "es": "Las llaves están en el auto."
+        },
+        {
+          "target": "Nós estudamos na biblioteca.",
+          "es": "Nosotros estudiamos en la biblioteca."
+        },
+        {
+          "target": "Eles moram numa casa pequena.",
+          "es": "Ellos viven en una casa chica."
+        },
+        {
+          "target": "O livro está nas prateleiras.",
+          "es": "El libro está en los estantes."
+        },
+        {
+          "target": "Ela nasceu em Buenos Aires.",
+          "es": "Ella nació en Buenos Aires."
         }
       ],
       "commonMistakes": [
@@ -48,6 +69,16 @@
           "wrong": "Está em a mesa.",
           "right": "Está na mesa.",
           "why": "em + a se contrae siempre en na."
+        },
+        {
+          "wrong": "Eu moro em o Brasil.",
+          "right": "Eu moro no Brasil.",
+          "why": "En español decimos \"vivo en el Brasil\" dejando las palabras separadas, pero en portugués \"em\" se funde obligatoriamente con \"o\" formando \"no\"; nunca se dejan separadas."
+        },
+        {
+          "wrong": "As chaves estão em os carros.",
+          "right": "As chaves estão nos carros.",
+          "why": "Igual que \"em\" + \"o\" = \"no\", la combinación \"em\" + \"os\" siempre se funde en \"nos\"; no se puede dejar \"em os\" separado."
         }
       ],
       "chunks": [
@@ -94,7 +125,8 @@
       "keyPoints": [
         "de + o = do, de + a = da, de + os = dos, de + as = das.",
         "Origen: Eu sou do Uruguai. Pertenencia: o carro da Marta.",
-        "de + ele = dele, de + ela = dela: o livro dele (el libro de él)."
+        "de + ele = dele, de + ela = dela: o livro dele (el libro de él).",
+        "En español la preposición \"de\" casi nunca se funde con el artículo (solo \"de + el\" = \"del\"), pero en portugués \"de\" se funde siempre con cualquier artículo: do, da, dos, das."
       ],
       "examples": [
         {
@@ -108,6 +140,26 @@
         {
           "target": "Esse é o quarto dela.",
           "es": "Ese es el cuarto de ella."
+        },
+        {
+          "target": "Esses são os sapatos das minhas filhas.",
+          "es": "Esos son los zapatos de mis hijas."
+        },
+        {
+          "target": "O professor é da Argentina.",
+          "es": "El profesor es de Argentina."
+        },
+        {
+          "target": "A mochila do menino é azul.",
+          "es": "La mochila del chico es azul."
+        },
+        {
+          "target": "Gosto muito do bairro onde eu moro.",
+          "es": "Me gusta mucho el barrio donde vivo."
+        },
+        {
+          "target": "Essa é a opinião dele, não a minha.",
+          "es": "Esa es la opinión de él, no la mía."
         }
       ],
       "commonMistakes": [
@@ -115,6 +167,16 @@
           "wrong": "O carro de o João.",
           "right": "O carro do João.",
           "why": "de + o se contrae en do."
+        },
+        {
+          "wrong": "A casa de a Maria é linda.",
+          "right": "A casa da Maria é linda.",
+          "why": "La preposición \"de\" seguida del artículo \"a\" siempre se funde en \"da\"; nunca queda separado como en español cuando no hay contracción."
+        },
+        {
+          "wrong": "Os livros de os alunos estão aqui.",
+          "right": "Os livros dos alunos estão aqui.",
+          "why": "\"de\" + \"os\" se funde obligatoriamente en \"dos\"; dejarlos separados es un error típico de quien traduce literal del español."
         }
       ],
       "chunks": [
@@ -176,6 +238,26 @@
         {
           "target": "Volto para casa às seis.",
           "es": "Vuelvo a casa a las seis."
+        },
+        {
+          "target": "Vamos ao museu no sábado.",
+          "es": "Vamos al museo el sábado."
+        },
+        {
+          "target": "Ela vai à festa de aniversário.",
+          "es": "Ella va a la fiesta de cumpleaños."
+        },
+        {
+          "target": "Mandei uma mensagem para ela.",
+          "es": "Le mandé un mensaje a ella."
+        },
+        {
+          "target": "Vocês vão para a praia nas férias?",
+          "es": "¿Van a la playa en las vacaciones?"
+        },
+        {
+          "target": "Dou o presente ao meu irmão.",
+          "es": "Le doy el regalo a mi hermano."
         }
       ],
       "commonMistakes": [
@@ -188,6 +270,11 @@
           "wrong": "Vou à casa.",
           "right": "Vou para casa.",
           "why": "Para tu propia casa se dice ir para casa, sin artículo."
+        },
+        {
+          "wrong": "Vou para a casa.",
+          "right": "Vou para casa.",
+          "why": "Cuando \"casa\" significa el propio hogar, en portugués no lleva artículo después de \"para\", igual que en español decimos \"voy a casa\" sin agregar \"la\"."
         }
       ],
       "chunks": [
@@ -228,7 +315,8 @@
       "keyPoints": [
         "meu/minha (mi), seu/sua (tu/su), nosso/nossa (nuestro); plural: meus, minhas, seus, suas.",
         "El posesivo concuerda con la cosa: minha casa, meus livros.",
-        "Como seu puede ser ambiguo, para 'de él / de ella' se usa dele y dela, después del sustantivo."
+        "Como seu puede ser ambiguo, para 'de él / de ella' se usa dele y dela, después del sustantivo.",
+        "En español el posesivo concuerda con la persona que posee (mi, tu, su) y no cambia según el género de la cosa poseída, pero en portugués el posesivo concuerda con el género y el número del sustantivo que acompaña: meu livro, minha casa."
       ],
       "examples": [
         {
@@ -242,6 +330,26 @@
         {
           "target": "O carro dele é vermelho.",
           "es": "Su auto (el de él) es rojo."
+        },
+        {
+          "target": "Nossos amigos vêm jantar hoje.",
+          "es": "Nuestros amigos vienen a cenar hoy."
+        },
+        {
+          "target": "Essas são minhas chaves.",
+          "es": "Esas son mis llaves."
+        },
+        {
+          "target": "A bolsa é da Ana, não é sua.",
+          "es": "La bolsa es de Ana, no es tuya."
+        },
+        {
+          "target": "Seus pais moram perto daqui?",
+          "es": "¿Tus padres viven cerca de aquí?"
+        },
+        {
+          "target": "Este caderno não é meu, é dela.",
+          "es": "Este cuaderno no es mío, es de ella."
         }
       ],
       "commonMistakes": [
@@ -254,6 +362,11 @@
           "wrong": "O seu carro de ele.",
           "right": "O carro dele.",
           "why": "Para 'de él' alcanza con dele después del sustantivo."
+        },
+        {
+          "wrong": "Minhas livro.",
+          "right": "Meus livros.",
+          "why": "El posesivo tiene que concordar en género y número con el sustantivo; como \"livro\" es masculino y está en plural, corresponde \"meus livros\", no \"minhas\"."
         }
       ],
       "chunks": [
@@ -301,7 +414,8 @@
       "keyPoints": [
         "Familia: pai, mãe, irmão, irmã, filho, filha, avô, avó, marido, esposa.",
         "Partes de la casa: sala, cozinha, quarto, banheiro, varanda.",
-        "Combiná posesivos y contracciones: O quarto do meu irmão fica no segundo andar."
+        "Combiná posesivos y contracciones: O quarto do meu irmão fica no segundo andar.",
+        "En español el posesivo suele ir solo antes del sustantivo (mi casa), pero en el habla de Brasil es común agregar también el artículo definido antes del posesivo: a minha casa, igual de correcto que minha casa."
       ],
       "examples": [
         {
@@ -315,6 +429,26 @@
         {
           "target": "A cozinha fica ao lado da sala.",
           "es": "La cocina queda al lado del living."
+        },
+        {
+          "target": "O meu marido trabalha na cozinha hoje.",
+          "es": "Mi marido trabaja en la cocina hoy."
+        },
+        {
+          "target": "Minha filha dorme no quarto azul.",
+          "es": "Mi hija duerme en el cuarto azul."
+        },
+        {
+          "target": "O banheiro fica perto da varanda.",
+          "es": "El baño queda cerca del balcón."
+        },
+        {
+          "target": "Meus irmãos moram com meus pais.",
+          "es": "Mis hermanos viven con mis padres."
+        },
+        {
+          "target": "A sala da minha casa é bem grande.",
+          "es": "El living de mi casa es bastante grande."
         }
       ],
       "commonMistakes": [
@@ -322,6 +456,16 @@
           "wrong": "Meu avó.",
           "right": "Minha avó / meu avô.",
           "why": "avó (con tilde aguda) es la abuela y avô (circunflejo) el abuelo."
+        },
+        {
+          "wrong": "Minha irmão mora comigo.",
+          "right": "Meu irmão mora comigo.",
+          "why": "\"Irmão\" es masculino, entonces el posesivo tiene que ser \"meu\", no \"minha\", aunque en español \"mi\" no cambie según el género."
+        },
+        {
+          "wrong": "Tem quatro quarto na casa.",
+          "right": "Tem quatro quartos na casa.",
+          "why": "Cuando hay más de uno, el sustantivo va en plural en portugués igual que en español: corresponde \"quartos\", no \"quarto\"."
         }
       ],
       "chunks": [

@@ -2,7 +2,7 @@
 // para los tópicos de A1 a C1 que todavía no tienen. Uso: npm run content:placement -- <idioma>
 // Así el examen inicial puede ubicar hasta C1 sin esperar a Claude.
 
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { z } from 'zod'
 import { askClaude, shutdownClaude } from '../src/main/claude/bridge'
@@ -54,7 +54,8 @@ Campos, con estos nombres exactos: { questions: [{ subtopicId, instruction, prom
 ${selfCheck(lang)}`
 }
 
-const bank = JSON.parse(readFileSync(FILE, 'utf8')) as { topics: Record<string, Question[]> }
+// Un idioma nuevo todavía no tiene banco: se arranca vacío.
+const bank = (existsSync(FILE) ? JSON.parse(readFileSync(FILE, 'utf8')) : { topics: {} }) as { topics: Record<string, Question[]> }
 const save = (): void => writeFileSync(FILE, `${JSON.stringify(bank, null, 2)}\n`)
 const topics = loadCurriculum(CONTENT, lang).filter((t) => LEVELS.includes(t.level) && !bank.topics[t.id])
 console.log(`Examen inicial de ${lang}: faltan ${topics.length} tópicos`)

@@ -41,6 +41,26 @@
         {
           "target": "Onde estão as chaves? Não as encontro.",
           "es": "¿Dónde están las llaves? No las encuentro."
+        },
+        {
+          "target": "Comprei um bolo. Vou comê-lo à tarde.",
+          "es": "Compré una torta. Voy a comerla a la tarde."
+        },
+        {
+          "target": "Você viu meus óculos? Não os vejo.",
+          "es": "¿Viste mis anteojos? No los veo."
+        },
+        {
+          "target": "Ela escreveu a carta e a enviou ontem.",
+          "es": "Ella escribió la carta y la envió ayer."
+        },
+        {
+          "target": "Perdi minhas chaves, mas já as encontrei.",
+          "es": "Perdí mis llaves, pero ya las encontré."
+        },
+        {
+          "target": "Fiz o trabalho e entreguei-o na sexta.",
+          "es": "Hice el trabajo y lo entregué el viernes."
         }
       ],
       "commonMistakes": [
@@ -48,6 +68,16 @@
           "wrong": "Vou comprar-o.",
           "right": "Vou comprá-lo.",
           "why": "Después de -r el pronombre pasa a lo y el verbo pierde la r."
+        },
+        {
+          "wrong": "Vou ver-o amanhã.",
+          "right": "Vou vê-lo amanhã.",
+          "why": "Después de un verbo terminado en '-r' el pronombre 'o' se convierte en 'lo' y al verbo se le saca la '-r': vê-lo, no ver-o."
+        },
+        {
+          "wrong": "Não encontro-as.",
+          "right": "Não as encontro.",
+          "why": "Cuando hay una palabra negativa como 'não', el pronombre va antes del verbo: não as encontro, no encontro-as."
         }
       ],
       "chunks": [
@@ -108,6 +138,26 @@
         {
           "target": "Posso lhe fazer uma pergunta?",
           "es": "¿Le puedo hacer una pregunta?"
+        },
+        {
+          "target": "Dei um conselho para ele.",
+          "es": "Le di un consejo a él."
+        },
+        {
+          "target": "Vou escrever para vocês depois.",
+          "es": "Les voy a escribir después."
+        },
+        {
+          "target": "Ela sempre lhe manda mensagens.",
+          "es": "Ella siempre le manda mensajes."
+        },
+        {
+          "target": "Comprei um presente para minha mãe.",
+          "es": "Le compré un regalo a mi mamá."
+        },
+        {
+          "target": "Expliquei a situação para eles.",
+          "es": "Les expliqué la situación a ellos."
         }
       ],
       "commonMistakes": [
@@ -115,6 +165,16 @@
           "wrong": "Le dei o livro.",
           "right": "Dei o livro para ele.",
           "why": "En portugués no existe le: se usa lhe o para + pronombre."
+        },
+        {
+          "wrong": "Eu dei lhe um presente.",
+          "right": "Eu lhe dei um presente.",
+          "why": "El pronombre 'lhe' va antes del verbo en este tipo de oración, no después: lhe dei, no dei lhe."
+        },
+        {
+          "wrong": "Dei le um presente.",
+          "right": "Dei para ele um presente.",
+          "why": "'Le' es una palabra española; en el portugués brasileño hablado se usa 'para ele/ela' en lugar de 'lhe'."
         }
       ],
       "chunks": [
@@ -162,7 +222,8 @@
       "keyPoints": [
         "En Brasil, en la charla, el pronombre va antes del verbo: Me liga depois. Te espero aqui.",
         "Con não, palabras de pregunta, que y adverbios como já o sempre, va antes también en la norma: Não me ligue.",
-        "En el escrito formal no se empieza una oración con pronombre: Ligue-me."
+        "En el escrito formal no se empieza una oración con pronombre: Ligue-me.",
+        "En español los pronombres de objeto siempre van pegados antes del verbo conjugado (me llama, te espero), y en portugués de Brasil pasa algo parecido en la charla cotidiana (me liga, te espero), aunque en el portugués más formal o escrito, sobre todo en Portugal, el pronombre se pega después del verbo con un guión: liga-me, espero-te."
       ],
       "examples": [
         {
@@ -176,6 +237,26 @@
         {
           "target": "Ela sempre nos ajuda.",
           "es": "Ella siempre nos ayuda."
+        },
+        {
+          "target": "Me manda a localização, por favor.",
+          "es": "Mandame la ubicación, por favor."
+        },
+        {
+          "target": "Te chamo mais tarde.",
+          "es": "Te llamo más tarde."
+        },
+        {
+          "target": "Eles nos convidaram para a festa.",
+          "es": "Ellos nos invitaron a la fiesta."
+        },
+        {
+          "target": "Você já me contou essa história.",
+          "es": "Ya me contaste esa historia."
+        },
+        {
+          "target": "Nunca me disseram isso.",
+          "es": "Nunca me dijeron eso."
         }
       ],
       "commonMistakes": [
@@ -183,6 +264,16 @@
           "wrong": "Não ligue-me.",
           "right": "Não me ligue.",
           "why": "Con não el pronombre va siempre antes del verbo."
+        },
+        {
+          "wrong": "Liga-me depois.",
+          "right": "Me liga depois.",
+          "why": "En el habla de Brasil el pronombre va antes del verbo en frases como esta; 'liga-me' es más típico del portugués de Portugal."
+        },
+        {
+          "wrong": "Sempre ajuda-nos.",
+          "right": "Sempre nos ajuda.",
+          "why": "Con adverbios como 'sempre' el pronombre va antes del verbo: nos ajuda, no ajuda-nos."
         }
       ],
       "chunks": [
@@ -229,7 +320,8 @@
       "keyPoints": [
         "En la charla se usa ele/ela como objeto directo: Vi ele ontem (en lo escrito: Eu o vi).",
         "Te se usa con você aunque la norma pediría lhe u o: Te ligo amanhã.",
-        "Muchas veces el objeto se omite: Você comprou o pão? — Comprei."
+        "Muchas veces el objeto se omite: Você comprou o pão? — Comprei.",
+        "En español no hay una diferencia tan marcada entre la lengua hablada y la escrita en el uso de los pronombres de objeto, pero en portugués de Brasil el habla cotidiana usa 'ele/ela/te' como objeto (vi ele, te mando) mientras que lo escrito formal prefiere 'o/a/lhe' (eu o vi, envio-lhe)."
       ],
       "examples": [
         {
@@ -243,6 +335,26 @@
         {
           "target": "Você viu o jogo? — Vi.",
           "es": "¿Viste el partido? — Sí, lo vi."
+        },
+        {
+          "target": "Vi ela na faculdade ontem.",
+          "es": "La vi en la facultad ayer."
+        },
+        {
+          "target": "Te chamo quando chegar.",
+          "es": "Te llamo cuando llegue."
+        },
+        {
+          "target": "Comprou o pão? — Comprei.",
+          "es": "¿Compraste el pan? — Compré."
+        },
+        {
+          "target": "Conheço ele desde criança.",
+          "es": "Lo conozco desde chico."
+        },
+        {
+          "target": "Deixei ela na escola.",
+          "es": "La dejé en la escuela."
         }
       ],
       "commonMistakes": [
@@ -250,6 +362,16 @@
           "wrong": "Prezado senhor, vi ele na reunião.",
           "right": "Prezado senhor, eu o vi na reunião.",
           "why": "La forma oral es normal en la charla, pero en un texto formal se usa el pronombre de la norma."
+        },
+        {
+          "wrong": "No currículo, escrevi: 'vi ele no evento'.",
+          "right": "No currículo, escrevi: 'eu o vi no evento'.",
+          "why": "En textos formales o escritos conviene usar 'o/a' en lugar de 'ele/ela' como objeto, aunque en la charla todos digan 'vi ele'."
+        },
+        {
+          "wrong": "Prezada, te envio o relatório em anexo.",
+          "right": "Prezada, envio-lhe o relatório em anexo.",
+          "why": "En un correo formal no se usa 'te', que es muy coloquial; se prefiere 'lhe' o directamente evitar el pronombre."
         }
       ],
       "chunks": [
@@ -297,7 +419,8 @@
       "keyPoints": [
         "Pedidos: Você pode me emprestar...? Me empresta...? Pode me mandar...?",
         "Ofrecimientos: Quer que eu te ajude? Posso te levar?",
-        "Agradecer: Obrigado/a pela ajuda. Valeu!"
+        "Agradecer: Obrigado/a pela ajuda. Valeu!",
+        "En español para pedir algo decimos '¿me podés...?' o '¿podés...?', y en portugués de Brasil se usa una estructura muy parecida con el pronombre antes del verbo principal: 'você pode me...?', aunque en portugués de Portugal es más común decir 'pode emprestar-me...?' con el pronombre después."
       ],
       "examples": [
         {
@@ -311,6 +434,26 @@
         {
           "target": "Valeu, você me salvou!",
           "es": "Gracias, ¡me salvaste!"
+        },
+        {
+          "target": "Me ajuda com isso, por favor?",
+          "es": "¿Me ayudás con esto, por favor?"
+        },
+        {
+          "target": "Posso te pedir um favor?",
+          "es": "¿Te puedo pedir un favor?"
+        },
+        {
+          "target": "Quer que eu te mande o link?",
+          "es": "¿Querés que te mande el link?"
+        },
+        {
+          "target": "Pode me dar um minuto?",
+          "es": "¿Me podés dar un minuto?"
+        },
+        {
+          "target": "Obrigado por me ajudar hoje.",
+          "es": "Gracias por ayudarme hoy."
         }
       ],
       "commonMistakes": [
@@ -318,6 +461,16 @@
           "wrong": "Você pode prestar-me o carregador?",
           "right": "Você pode me emprestar o carregador?",
           "why": "'Prestar' algo a alguien es emprestar en portugués, y en Brasil el pronombre va antes del infinitivo."
+        },
+        {
+          "wrong": "Você pode emprestar-me o carregador?",
+          "right": "Você pode me emprestar o carregador?",
+          "why": "En el habla de Brasil el pronombre va antes del verbo principal, no pegado al infinitivo con guión."
+        },
+        {
+          "wrong": "Quer que te ajude eu?",
+          "right": "Quer que eu te ajude?",
+          "why": "El orden natural es sujeto + pronombre + verbo: eu te ajude, no te ajude eu."
         }
       ],
       "chunks": [

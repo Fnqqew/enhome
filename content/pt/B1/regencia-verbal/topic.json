@@ -83,7 +83,32 @@
           "why": "Cuando \"de\" se encuentra con el artículo \"o\", se contraen obligatoriamente en \"do\"; no se escriben separados."
         }
       ],
-      "chunks": []
+      "chunks": [
+        {
+          "target": "depende de você",
+          "es": "depende de vos",
+          "example": "Isso depende de você.",
+          "exampleEs": "Eso depende de vos."
+        },
+        {
+          "target": "gosto de dizer",
+          "es": "me gusta decir",
+          "example": "Eu gosto de dizer a verdade.",
+          "exampleEs": "Me gusta decir la verdad."
+        },
+        {
+          "target": "não me lembro de nada",
+          "es": "no me acuerdo de nada",
+          "example": "Não me lembro de nada daquele dia.",
+          "exampleEs": "No me acuerdo de nada de ese día."
+        },
+        {
+          "target": "esqueci de tudo",
+          "es": "me olvidé de todo",
+          "example": "Eu esqueci de tudo sobre a reunião.",
+          "exampleEs": "Me olvidé de todo sobre la reunión."
+        }
+      ]
     },
     {
       "id": "verbos-com-em",
@@ -151,7 +176,32 @@
           "why": "\"Em\" más \"a\" se contraen obligatoriamente en \"na\"; no se deja separado en portugués."
         }
       ],
-      "chunks": []
+      "chunks": [
+        {
+          "target": "penso em você",
+          "es": "pienso en vos",
+          "example": "Eu penso em você toda hora.",
+          "exampleEs": "Pienso en vos todo el tiempo."
+        },
+        {
+          "target": "acredito em mim mesmo",
+          "es": "creo en mí mismo",
+          "example": "Eu acredito em mim mesmo.",
+          "exampleEs": "Creo en mí mismo."
+        },
+        {
+          "target": "confio em você",
+          "es": "confío en vos",
+          "example": "Eu confio em você de verdade.",
+          "exampleEs": "Confío en vos de verdad."
+        },
+        {
+          "target": "insisto em ajudar",
+          "es": "insisto en ayudar",
+          "example": "Eu insisto em ajudar vocês.",
+          "exampleEs": "Insisto en ayudarlos."
+        }
+      ]
     },
     {
       "id": "verbos-com-a",
@@ -232,6 +282,18 @@
           "es": "Responder/contestar a",
           "example": "Preciso responder a esse e-mail.",
           "exampleEs": "Necesito responder ese mail."
+        },
+        {
+          "target": "assisti ao jogo",
+          "es": "miré el partido",
+          "example": "Eu assisti ao jogo inteiro.",
+          "exampleEs": "Miré el partido entero."
+        },
+        {
+          "target": "respondi à pergunta",
+          "es": "respondí la pregunta",
+          "example": "Eu respondi à pergunta sem pensar.",
+          "exampleEs": "Respondí la pregunta sin pensar."
         }
       ]
     },
@@ -313,6 +375,18 @@
           "es": "Casarse con",
           "example": "Ela vai casar com o namorado.",
           "exampleEs": "Ella se va a casar con el novio."
+        },
+        {
+          "target": "espero por uma resposta",
+          "es": "espero una respuesta",
+          "example": "Eu espero por uma resposta sua.",
+          "exampleEs": "Espero una respuesta tuya."
+        },
+        {
+          "target": "chego em casa",
+          "es": "llego a casa",
+          "example": "Eu chego em casa às seis.",
+          "exampleEs": "Llego a casa a las seis."
         }
       ]
     },
@@ -330,7 +404,8 @@
         "Antes de escribir una frase, identificá el verbo principal y preguntate: ¿este verbo necesita preposición en portugués? ¿Cuál?",
         "Recordá las contracciones obligatorias: de+o=do, de+a=da, em+o=no, em+a=na, a+a=à, a+o=ao.",
         "Armá tu propia tabla de verbos con régimen fijo y repasala, en vez de traducir cada oración palabra por palabra desde el español.",
-        "Verbos clave para repasar: gostar de, depender de, precisar de, pensar em, acreditar em, confiar em, assistir a, responder a, esperar por, sonhar com."
+        "Verbos clave para repasar: gostar de, depender de, precisar de, pensar em, acreditar em, confiar em, assistir a, responder a, esperar por, sonhar com.",
+        "En español muchas veces usamos la preposición 'a' con el objeto cuando es una persona (esperar a alguien, llamar a alguien), y en portugués esa 'a' personal no existe: se dice 'esperar você', sin preposición, salvo que el verbo pida otra preposición distinta como 'por' o 'com'."
       ],
       "examples": [
         {
@@ -389,6 +464,24 @@
           "es": "Depende de cómo",
           "example": "Depende de como a gente organiza o tempo.",
           "exampleEs": "Depende de cómo organizamos el tiempo."
+        },
+        {
+          "target": "pensa bem antes de decidir",
+          "es": "pensalo bien antes de decidir",
+          "example": "Pensa bem antes de decidir isso.",
+          "exampleEs": "Pensalo bien antes de decidir eso."
+        },
+        {
+          "target": "não esquece de responder",
+          "es": "no te olvides de responder",
+          "example": "Não esquece de responder ao e-mail.",
+          "exampleEs": "No te olvides de responder el mail."
+        },
+        {
+          "target": "confia em mim",
+          "es": "confiá en mí",
+          "example": "Confia em mim, vai dar tudo certo.",
+          "exampleEs": "Confiá en mí, va a salir todo bien."
         }
       ]
     }

@@ -27,7 +27,8 @@
       "keyPoints": [
         "mais + adjetivo + (do) que: São Paulo é mais caro (do) que Curitiba.",
         "menos + adjetivo + (do) que: O ônibus é menos rápido que o metrô.",
-        "Con verbos: Ela trabalha mais do que eu."
+        "Con verbos: Ela trabalha mais do que eu.",
+        "En español comparamos con 'más... que' (más caro que), y en portugués se agrega opcionalmente do antes de que: mais caro do que, aunque también se puede decir simplemente mais caro que."
       ],
       "examples": [
         {
@@ -41,6 +42,26 @@
         {
           "target": "Hoje está mais frio que ontem.",
           "es": "Hoy hace más frío que ayer."
+        },
+        {
+          "target": "Este carro é mais caro do que o outro.",
+          "es": "Este auto es más caro que el otro."
+        },
+        {
+          "target": "Ela fala mais rápido do que eu.",
+          "es": "Ella habla más rápido que yo."
+        },
+        {
+          "target": "O apartamento é menos barato do que pensávamos.",
+          "es": "El departamento es menos barato de lo que pensábamos."
+        },
+        {
+          "target": "Trabalho mais horas do que antes.",
+          "es": "Trabajo más horas que antes."
+        },
+        {
+          "target": "Esse time joga menos do que o outro.",
+          "es": "Ese equipo juega menos que el otro."
         }
       ],
       "commonMistakes": [
@@ -48,6 +69,16 @@
           "wrong": "Ele é mais alto de mim.",
           "right": "Ele é mais alto do que eu.",
           "why": "La comparación va con (do) que + pronombre sujeto."
+        },
+        {
+          "wrong": "Ela é mais inteligente que mim.",
+          "right": "Ela é mais inteligente do que eu.",
+          "why": "Después de do que se usa el pronombre sujeto (eu), no el pronombre de objeto (mim)."
+        },
+        {
+          "wrong": "É mais barato que o outro é.",
+          "right": "É mais barato do que o outro.",
+          "why": "No hace falta repetir el verbo ser después de do que; alcanza con nombrar el segundo elemento de la comparación."
         }
       ],
       "chunks": [
@@ -100,7 +131,8 @@
       "keyPoints": [
         "tão + adjetivo + quanto: Ela é tão inteligente quanto a irmã.",
         "tanto/tanta/tantos/tantas + sustantivo + quanto: Tenho tantos livros quanto você.",
-        "Con verbos: Ele estuda tanto quanto eu."
+        "Con verbos: Ele estuda tanto quanto eu.",
+        "En español decimos 'tan... como' (tan caro como) o 'tanto... como' (tantos libros como), y en portugués se usa quanto en vez de como: tão caro quanto, tantos livros quanto."
       ],
       "examples": [
         {
@@ -114,6 +146,26 @@
         {
           "target": "Ela corre tanto quanto o treinador.",
           "es": "Corre tanto como el entrenador."
+        },
+        {
+          "target": "Esta cidade é tão cara quanto a capital.",
+          "es": "Esta ciudad es tan cara como la capital."
+        },
+        {
+          "target": "Ele fala tão bem quanto um nativo.",
+          "es": "Él habla tan bien como un nativo."
+        },
+        {
+          "target": "Tenho tanta sorte quanto você.",
+          "es": "Tengo tanta suerte como vos."
+        },
+        {
+          "target": "Não é tão difícil quanto parece.",
+          "es": "No es tan difícil como parece."
+        },
+        {
+          "target": "Ela estuda tanto quanto trabalha.",
+          "es": "Ella estudia tanto como trabaja."
         }
       ],
       "commonMistakes": [
@@ -121,6 +173,16 @@
           "wrong": "Tão bom como o livro.",
           "right": "Tão bom quanto o livro.",
           "why": "En Brasil la forma más usada es tão... quanto."
+        },
+        {
+          "wrong": "Tão caro como o outro.",
+          "right": "Tão caro quanto o outro.",
+          "why": "En portugués de Brasil, para comparar igualdad se usa quanto, no como, que suena a influencia del español."
+        },
+        {
+          "wrong": "Tenho tanto livros quanto você.",
+          "right": "Tenho tantos livros quanto você.",
+          "why": "Tanto concuerda en género y número con el sustantivo: tantos livros (masculino plural), no tanto."
         }
       ],
       "chunks": [
@@ -174,7 +236,8 @@
       "keyPoints": [
         "bom → melhor, ruim/mau → pior, grande → maior, pequeno → menor.",
         "Nunca se dice 'mais bom' ni 'mais grande'.",
-        "Mais pequeno se usa en Portugal, pero en Brasil se prefiere menor."
+        "Mais pequeno se usa en Portugal, pero en Brasil se prefiere menor.",
+        "En español también existen comparativos irregulares (bueno→mejor, grande→mayor), y en portugués pasa algo parecido: bom→melhor, grande→maior, así que la lógica es similar en los dos idiomas, aunque las palabras cambian."
       ],
       "examples": [
         {
@@ -188,6 +251,26 @@
         {
           "target": "O trânsito hoje está pior.",
           "es": "Hoy el tránsito está peor."
+        },
+        {
+          "target": "Este restaurante é melhor do que o outro.",
+          "es": "Este restaurante es mejor que el otro."
+        },
+        {
+          "target": "A situação está pior do que imaginávamos.",
+          "es": "La situación está peor de lo que imaginábamos."
+        },
+        {
+          "target": "Essa casa é maior do que a nossa.",
+          "es": "Esa casa es más grande que la nuestra."
+        },
+        {
+          "target": "Meu quarto é menor do que o seu.",
+          "es": "Mi cuarto es más chico que el tuyo."
+        },
+        {
+          "target": "O resultado foi melhor do que esperado.",
+          "es": "El resultado fue mejor de lo esperado."
         }
       ],
       "commonMistakes": [
@@ -195,6 +278,16 @@
           "wrong": "É mais bom.",
           "right": "É melhor.",
           "why": "El comparativo de bom es melhor."
+        },
+        {
+          "wrong": "É mais grande que o outro.",
+          "right": "É maior do que o outro.",
+          "why": "Para 'más grande' en portugués se usa el comparativo irregular maior, no mais grande."
+        },
+        {
+          "wrong": "Está mais pior hoje.",
+          "right": "Está pior hoje.",
+          "why": "Pior ya es la forma comparativa de ruim/mau, así que no se le agrega mais delante."
         }
       ],
       "chunks": [
@@ -247,7 +340,8 @@
       "keyPoints": [
         "o/a mais + adjetivo + de: É a praia mais bonita da ilha.",
         "o melhor, o pior, o maior, o menor: É o melhor restaurante da cidade.",
-        "-íssimo para intensificar: lindíssimo, caríssimo, facílimo; también muito o super: superbarato."
+        "-íssimo para intensificar: lindíssimo, caríssimo, facílimo; también muito o super: superbarato.",
+        "En español formamos el superlativo con 'el/la más' + adjetivo + 'de' (la más bonita de la isla), y en portugués se usa la misma estructura: a mais bonita da ilha, así que el orden es prácticamente igual en los dos idiomas."
       ],
       "examples": [
         {
@@ -261,6 +355,26 @@
         {
           "target": "Foi o pior dia do ano.",
           "es": "Fue el peor día del año."
+        },
+        {
+          "target": "Este é o prato mais saboroso do restaurante.",
+          "es": "Este es el plato más sabroso del restaurante."
+        },
+        {
+          "target": "Ela é a mais rápida da equipe.",
+          "es": "Ella es la más rápida del equipo."
+        },
+        {
+          "target": "Foi a melhor viagem da minha vida.",
+          "es": "Fue el mejor viaje de mi vida."
+        },
+        {
+          "target": "O exame foi facílimo.",
+          "es": "El examen fue facilísimo."
+        },
+        {
+          "target": "Essa é a pior notícia do dia.",
+          "es": "Esa es la peor noticia del día."
         }
       ],
       "commonMistakes": [
@@ -268,6 +382,16 @@
           "wrong": "A praia mais bonita de a ilha.",
           "right": "A praia mais bonita da ilha.",
           "why": "de + a se contrae en da."
+        },
+        {
+          "wrong": "O mais bonito praia.",
+          "right": "A praia mais bonita.",
+          "why": "El adjetivo superlativo va después del sustantivo y concuerda en género: a praia mais bonita, no antes."
+        },
+        {
+          "wrong": "É a mais boa do grupo.",
+          "right": "É a melhor do grupo.",
+          "why": "Para el superlativo de bom se usa la forma irregular melhor, no mais boa."
         }
       ],
       "chunks": [
@@ -321,7 +445,8 @@
       "keyPoints": [
         "Combiná comparativos de superioridad, igualdad y superlativos.",
         "Vocabulario: trânsito, custo de vida, clima, segurança, vida noturna.",
-        "Para dar tu opinión: Na minha opinião, acho que, prefiro."
+        "Para dar tu opinión: Na minha opinião, acho que, prefiro.",
+        "En español para comparar lugares usamos estructuras como 'más... que' y 'tan... como', y en portugués se mantiene una lógica semejante combinando mais/menos... do que y tão... quanto, aunque las palabras de comparación cambian (que → do que, como → quanto)."
       ],
       "examples": [
         {
@@ -335,6 +460,26 @@
         {
           "target": "Prefiro cidades menores.",
           "es": "Prefiero ciudades más chicas."
+        },
+        {
+          "target": "Buenos Aires tem um trânsito tão complicado quanto São Paulo.",
+          "es": "Buenos Aires tiene un tránsito tan complicado como San Pablo."
+        },
+        {
+          "target": "A vida noturna daqui é mais animada do que lá.",
+          "es": "La vida nocturna de aquí es más animada que allá."
+        },
+        {
+          "target": "O clima de Florianópolis é melhor do que o de Porto Alegre.",
+          "es": "El clima de Florianópolis es mejor que el de Porto Alegre."
+        },
+        {
+          "target": "A segurança é a maior preocupação dos moradores.",
+          "es": "La seguridad es la mayor preocupación de los habitantes."
+        },
+        {
+          "target": "Prefiro o custo de vida daqui, é menor.",
+          "es": "Prefiero el costo de vida de aquí, es menor."
         }
       ],
       "commonMistakes": [
@@ -342,6 +487,16 @@
           "wrong": "Prefiro cidades mais pequenas.",
           "right": "Prefiro cidades menores.",
           "why": "En Brasil se usa menor como comparativo de pequeno."
+        },
+        {
+          "wrong": "O custo de vida é mais alto de lá.",
+          "right": "O custo de vida é mais alto do que lá.",
+          "why": "Para comparar hay que usar do que, no la preposición de sola."
+        },
+        {
+          "wrong": "A vida noturna é mais boa aqui.",
+          "right": "A vida noturna é melhor aqui.",
+          "why": "Con bom/boa se usa el comparativo irregular melhor, no mais boa."
         }
       ],
       "chunks": [

@@ -5,7 +5,12 @@
         "subtopicId": "pronomes-saudacoes",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "A gente ___ de Buenos Aires.",
-        "options": ["somos", "é", "são", "está"],
+        "options": [
+          "somos",
+          "é",
+          "são",
+          "está"
+        ],
         "correctIndex": 1,
         "explanation": "A gente significa 'nosotros' pero se conjuga en tercera persona del singular: a gente é."
       },
@@ -13,7 +18,12 @@
         "subtopicId": "verbo-ser",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "A Mariana ___ médica.",
-        "options": ["e", "sou", "é", "és"],
+        "options": [
+          "e",
+          "sou",
+          "é",
+          "és"
+        ],
         "correctIndex": 2,
         "explanation": "Para una profesión se usa ser, y con ela va é con tilde, porque e sin tilde significa 'y'."
       },
@@ -21,7 +31,12 @@
         "subtopicId": "verbo-estar",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Hoje eu ___ muito cansado.",
-        "options": ["sou", "esto", "está", "estou"],
+        "options": [
+          "sou",
+          "esto",
+          "está",
+          "estou"
+        ],
         "correctIndex": 3,
         "explanation": "Un estado pasajero se expresa con estar, y con eu la forma es estou."
       },
@@ -29,7 +44,12 @@
         "subtopicId": "negacao-perguntas",
         "instruction": "Elegí la opción correcta para completar la pregunta.",
         "prompt": "Oi! ___ é o seu nome?",
-        "options": ["Qual", "Que", "Quem", "Quanto"],
+        "options": [
+          "Qual",
+          "Que",
+          "Quem",
+          "Quanto"
+        ],
         "correctIndex": 0,
         "explanation": "Para preguntar el nombre en portugués se usa qual: Qual é o seu nome?"
       }
@@ -39,7 +59,12 @@
         "subtopicId": "artigos-definidos",
         "instruction": "Elegí el artículo correcto para completar la oración.",
         "prompt": "___ Brasil é um país enorme.",
-        "options": ["El", "A", "O", "Os"],
+        "options": [
+          "El",
+          "A",
+          "O",
+          "Os"
+        ],
         "correctIndex": 2,
         "explanation": "Brasil es masculino y lleva artículo, y el artículo masculino en portugués es o."
       },
@@ -47,7 +72,12 @@
         "subtopicId": "artigos-indefinidos",
         "instruction": "Elegí el artículo correcto para completar la oración.",
         "prompt": "Eu tenho ___ irmã e dois irmãos.",
-        "options": ["uma", "um", "una", "a"],
+        "options": [
+          "uma",
+          "um",
+          "una",
+          "a"
+        ],
         "correctIndex": 0,
         "explanation": "Irmã es femenino y el artículo indefinido femenino en portugués es uma, con m."
       },
@@ -55,7 +85,12 @@
         "subtopicId": "genero",
         "instruction": "Elegí el artículo correcto para completar la oración.",
         "prompt": "___ viagem para Salvador é longa.",
-        "options": ["O", "Os", "Um", "A"],
+        "options": [
+          "O",
+          "Os",
+          "Um",
+          "A"
+        ],
         "correctIndex": 3,
         "explanation": "Las palabras terminadas en -agem son femeninas en portugués: a viagem."
       },
@@ -63,7 +98,12 @@
         "subtopicId": "plural",
         "instruction": "Elegí el plural correcto para completar la oración.",
         "prompt": "No zoológico tem muitos ___.",
-        "options": ["animals", "animais", "animales", "animaes"],
+        "options": [
+          "animals",
+          "animais",
+          "animales",
+          "animaes"
+        ],
         "correctIndex": 1,
         "explanation": "Las palabras terminadas en -al forman el plural en -ais: animal, animais."
       }
@@ -73,7 +113,12 @@
         "subtopicId": "verbos-ar",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Você ___ português muito bem!",
-        "options": ["falas", "falo", "falam", "fala"],
+        "options": [
+          "falas",
+          "falo",
+          "falam",
+          "fala"
+        ],
         "correctIndex": 3,
         "explanation": "Você se conjuga como ele, sin -s: você fala."
       },
@@ -81,7 +126,12 @@
         "subtopicId": "verbos-er-ir",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "À noite eu ___ TV com a minha família.",
-        "options": ["miro", "assisto", "asisto", "assiste"],
+        "options": [
+          "miro",
+          "assisto",
+          "asisto",
+          "assiste"
+        ],
         "correctIndex": 1,
         "explanation": "Para la televisión se usa assistir, y con eu la forma es assisto, con doble s."
       },
@@ -89,7 +139,12 @@
         "subtopicId": "irregulares",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Eu ___ o jantar todos os dias.",
-        "options": ["faço", "fazo", "faz", "hago"],
+        "options": [
+          "faço",
+          "fazo",
+          "faz",
+          "hago"
+        ],
         "correctIndex": 0,
         "explanation": "Fazer es irregular en la primera persona del presente: eu faço."
       },
@@ -97,7 +152,12 @@
         "subtopicId": "rotina-frequencia",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Eu ___ bebo café à noite.",
-        "options": ["não nunca", "no nunca", "nunca", "nunca não"],
+        "options": [
+          "não nunca",
+          "no nunca",
+          "nunca",
+          "nunca não"
+        ],
         "correctIndex": 2,
         "explanation": "Nunca ya niega y va antes del verbo, así que no hace falta agregar não."
       }
@@ -107,7 +167,12 @@
         "subtopicId": "em-contracoes",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "O livro está ___ mesa.",
-        "options": ["em a", "no", "en la", "na"],
+        "options": [
+          "em a",
+          "no",
+          "en la",
+          "na"
+        ],
         "correctIndex": 3,
         "explanation": "Em + a se contrae siempre en na, y mesa es femenino: na mesa."
       },
@@ -115,7 +180,12 @@
         "subtopicId": "de-contracoes",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Este é o carro ___ João.",
-        "options": ["do", "de o", "da", "del"],
+        "options": [
+          "do",
+          "de o",
+          "da",
+          "del"
+        ],
         "correctIndex": 0,
         "explanation": "De + o se contrae en do: o carro do João."
       },
@@ -123,7 +193,12 @@
         "subtopicId": "a-para",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Hoje eu vou ___ cinema com a Ana.",
-        "options": ["a o", "ao", "à", "al"],
+        "options": [
+          "a o",
+          "ao",
+          "à",
+          "al"
+        ],
         "correctIndex": 1,
         "explanation": "A + o se contrae en ao, y cinema es masculino: vou ao cinema."
       },
@@ -131,7 +206,12 @@
         "subtopicId": "possessivos",
         "instruction": "Elegí el posesivo correcto para completar la oración.",
         "prompt": "___ casa é muito grande.",
-        "options": ["Meu", "Mi", "Minha", "Minhas"],
+        "options": [
+          "Meu",
+          "Mi",
+          "Minha",
+          "Minhas"
+        ],
         "correctIndex": 2,
         "explanation": "El posesivo concuerda con la cosa, y casa es femenino singular: minha casa."
       }
@@ -141,7 +221,12 @@
         "subtopicId": "estar-gerundio",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Não posso falar agora, estou ___.",
-        "options": ["trabalhendo", "trabalhado", "trabalhar", "trabalhando"],
+        "options": [
+          "trabalhendo",
+          "trabalhado",
+          "trabalhar",
+          "trabalhando"
+        ],
         "correctIndex": 3,
         "explanation": "Los verbos en -ar forman el gerundio en -ando: estou trabalhando."
       },
@@ -149,7 +234,12 @@
         "subtopicId": "ir-infinitivo",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Amanhã eu vou ___ para o Rio.",
-        "options": ["a viajar", "viajar", "viajo", "viajei"],
+        "options": [
+          "a viajar",
+          "viajar",
+          "viajo",
+          "viajei"
+        ],
         "correctIndex": 1,
         "explanation": "Entre ir y el infinitivo no va ninguna preposición: vou viajar."
       },
@@ -157,7 +247,12 @@
         "subtopicId": "expressoes-tempo",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "Hoje é domingo. Amanhã é ___.",
-        "options": ["segunda-feira", "lunes", "primeira-feira", "terça-feira"],
+        "options": [
+          "segunda-feira",
+          "lunes",
+          "primeira-feira",
+          "terça-feira"
+        ],
         "correctIndex": 0,
         "explanation": "Después del domingo viene segunda-feira, porque los días hábiles se cuentan a partir de segunda."
       },
@@ -165,7 +260,12 @@
         "subtopicId": "gostar-de",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Eu gosto muito ___ praia.",
-        "options": ["a", "de a", "da", "na"],
+        "options": [
+          "a",
+          "de a",
+          "da",
+          "na"
+        ],
         "correctIndex": 2,
         "explanation": "Gostar siempre lleva de, que con a se contrae en da: gosto da praia."
       }
@@ -175,7 +275,12 @@
         "subtopicId": "perfeito-ar",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Ontem eu ___ em casa às dez da noite.",
-        "options": ["chegei", "chegué", "cheguei", "chegou"],
+        "options": [
+          "chegei",
+          "chegué",
+          "cheguei",
+          "chegou"
+        ],
         "correctIndex": 2,
         "explanation": "Para mantener el sonido de la g, chegar en primera persona del perfeito se escribe cheguei."
       },
@@ -183,7 +288,12 @@
         "subtopicId": "perfeito-er-ir",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "No sábado o Pedro ___ muito no churrasco.",
-        "options": ["comeu", "comió", "comiu", "comeou"],
+        "options": [
+          "comeu",
+          "comió",
+          "comiu",
+          "comeou"
+        ],
         "correctIndex": 0,
         "explanation": "En la tercera persona del perfeito los verbos en -er terminan en -eu: comeu."
       },
@@ -191,7 +301,12 @@
         "subtopicId": "perfeito-irregulares",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Ontem eu ___ um bolo de chocolate.",
-        "options": ["fazi", "fez", "fazei", "fiz"],
+        "options": [
+          "fazi",
+          "fez",
+          "fazei",
+          "fiz"
+        ],
         "correctIndex": 3,
         "explanation": "Fazer es irregular en el pasado: eu fiz, ele fez."
       },
@@ -199,7 +314,12 @@
         "subtopicId": "marcadores-passado",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Eu cheguei aqui ___ dois dias.",
-        "options": ["hace", "há", "a", "à"],
+        "options": [
+          "hace",
+          "há",
+          "a",
+          "à"
+        ],
         "correctIndex": 1,
         "explanation": "Para decir 'hace' con un tiempo pasado se usa há: cheguei há dois dias."
       }
@@ -209,7 +329,12 @@
         "subtopicId": "imperfeito-formacao",
         "instruction": "Elegí la forma bien escrita para completar la oración.",
         "prompt": "Antigamente eu e minha irmã ___ por telefone todos os dias.",
-        "options": ["falavamos", "falábamos", "falavámos", "falávamos"],
+        "options": [
+          "falavamos",
+          "falábamos",
+          "falavámos",
+          "falávamos"
+        ],
         "correctIndex": 3,
         "explanation": "En el imperfeito la forma de nós lleva tilde en la a que va antes de -vamos: falávamos."
       },
@@ -217,7 +342,12 @@
         "subtopicId": "imperfeito-irregulares",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Quando eu ___ dez anos, morava em Mendoza.",
-        "options": ["tinha", "tenia", "tive", "tenho"],
+        "options": [
+          "tinha",
+          "tenia",
+          "tive",
+          "tenho"
+        ],
         "correctIndex": 0,
         "explanation": "La edad en el pasado se describe con el imperfeito, y el de ter es irregular: tinha."
       },
@@ -225,7 +355,12 @@
         "subtopicId": "habitos-passados",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Quando eu ___ criança, brincava muito na rua.",
-        "options": ["fui", "era", "estava", "sou"],
+        "options": [
+          "fui",
+          "era",
+          "estava",
+          "sou"
+        ],
         "correctIndex": 1,
         "explanation": "Para describir una etapa de la vida en el pasado se usa el imperfeito de ser: quando eu era criança."
       },
@@ -233,7 +368,12 @@
         "subtopicId": "imperfeito-perfeito",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Ontem à noite, enquanto eu ___, o telefone tocou.",
-        "options": ["dormi", "durmo", "dormia", "dormía"],
+        "options": [
+          "dormi",
+          "durmo",
+          "dormia",
+          "dormía"
+        ],
         "correctIndex": 2,
         "explanation": "La acción de fondo que se interrumpe va en imperfeito, y en portugués se escribe sin tilde: enquanto eu dormia."
       }
@@ -243,7 +383,12 @@
         "subtopicId": "mais-menos",
         "instruction": "Elegí la opción correcta para completar la comparación.",
         "prompt": "O Pedro é mais alto ___ eu.",
-        "options": ["de", "como", "do que", "do"],
+        "options": [
+          "de",
+          "como",
+          "do que",
+          "do"
+        ],
         "correctIndex": 2,
         "explanation": "La comparación se arma con mais ... do que (o solo que) y el pronombre sujeto: mais alto do que eu."
       },
@@ -251,7 +396,12 @@
         "subtopicId": "tao-quanto",
         "instruction": "Elegí la opción correcta para completar la comparación.",
         "prompt": "A Ana é tão inteligente ___ a irmã.",
-        "options": ["quanto", "que", "do que", "tanto"],
+        "options": [
+          "quanto",
+          "que",
+          "do que",
+          "tanto"
+        ],
         "correctIndex": 0,
         "explanation": "Para expresar igualdad en Brasil se usa tão ... quanto: tão inteligente quanto a irmã."
       },
@@ -259,7 +409,12 @@
         "subtopicId": "irregulares-comparativos",
         "instruction": "Elegí la opción correcta para completar la comparación.",
         "prompt": "Este restaurante é ___ do que aquele.",
-        "options": ["mais bom", "mejor", "mais melhor", "melhor"],
+        "options": [
+          "mais bom",
+          "mejor",
+          "mais melhor",
+          "melhor"
+        ],
         "correctIndex": 3,
         "explanation": "El comparativo de bom es irregular: melhor, nunca mais bom."
       },
@@ -267,7 +422,12 @@
         "subtopicId": "superlativos",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Esta é a praia mais bonita ___ ilha.",
-        "options": ["de a", "da", "do", "que a"],
+        "options": [
+          "de a",
+          "da",
+          "do",
+          "que a"
+        ],
         "correctIndex": 1,
         "explanation": "El superlativo lleva de, que con a se contrae en da: a praia mais bonita da ilha."
       }
@@ -277,7 +437,12 @@
         "subtopicId": "objeto-direto",
         "instruction": "Elegí la forma escrita correcta para completar la oración.",
         "prompt": "Esse livro parece ótimo. Vou ___ amanhã.",
-        "options": ["comprar-o", "comprar-lo", "comprá-o", "comprá-lo"],
+        "options": [
+          "comprar-o",
+          "comprar-lo",
+          "comprá-o",
+          "comprá-lo"
+        ],
         "correctIndex": 3,
         "explanation": "Después de un verbo terminado en -r el pronombre o pasa a lo y el verbo pierde la r: comprá-lo."
       },
@@ -285,7 +450,12 @@
         "subtopicId": "objeto-indireto",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "Hoje é o aniversário do meu irmão. Eu dei um presente ___.",
-        "options": ["le", "para ele", "ele", "para lhe"],
+        "options": [
+          "le",
+          "para ele",
+          "ele",
+          "para lhe"
+        ],
         "correctIndex": 1,
         "explanation": "En portugués no existe le, y en Brasil el objeto indirecto se suele decir con para + pronombre: dei um presente para ele."
       },
@@ -293,7 +463,12 @@
         "subtopicId": "me-te-nos",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Não ___ depois das dez, por favor.",
-        "options": ["me ligue", "ligue-me", "liga-me", "ligue-lhe"],
+        "options": [
+          "me ligue",
+          "ligue-me",
+          "liga-me",
+          "ligue-lhe"
+        ],
         "correctIndex": 0,
         "explanation": "Con não el pronombre va siempre antes del verbo: não me ligue."
       },
@@ -301,7 +476,12 @@
         "subtopicId": "fala-brasileira",
         "instruction": "Elegí la opción adecuada para este email formal.",
         "prompt": "Prezado senhor Silva, o novo diretor esteve aqui ontem e ___ na reunião.",
-        "options": ["vi ele", "eu lo vi", "eu o vi", "eu le vi"],
+        "options": [
+          "vi ele",
+          "eu lo vi",
+          "eu o vi",
+          "eu le vi"
+        ],
         "correctIndex": 2,
         "explanation": "En un texto formal se usa el pronombre de la norma (eu o vi), porque vi ele queda para la charla."
       }
@@ -311,7 +491,12 @@
         "subtopicId": "futuro-presente",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "O presidente ___ amanhã na televisão.",
-        "options": ["falara", "falarà", "falará", "falarás"],
+        "options": [
+          "falara",
+          "falarà",
+          "falará",
+          "falarás"
+        ],
         "correctIndex": 2,
         "explanation": "El futuro do presente lleva tilde en la última sílaba, falará, y sin tilde es otro tiempo verbal."
       },
@@ -319,7 +504,12 @@
         "subtopicId": "futuro-irregular",
         "instruction": "Elegí la forma correcta del verbo para completar la oración.",
         "prompt": "Amanhã eu ___ um bolo para a festa.",
-        "options": ["fazerei", "fazeria", "farão", "farei"],
+        "options": [
+          "fazerei",
+          "fazeria",
+          "farão",
+          "farei"
+        ],
         "correctIndex": 3,
         "explanation": "Fazer es irregular en el futuro y pierde el -ze-: eu farei."
       },
@@ -327,7 +517,12 @@
         "subtopicId": "condicional",
         "instruction": "Elegí la opción correcta para hacer un pedido con cortesía.",
         "prompt": "Boa tarde! Eu ___ de um café, por favor.",
-        "options": ["gostaria", "gustaria", "gostarei", "gosto"],
+        "options": [
+          "gostaria",
+          "gustaria",
+          "gostarei",
+          "gosto"
+        ],
         "correctIndex": 0,
         "explanation": "Para pedir con cortesía se usa el condicional de gostar: eu gostaria de."
       },
@@ -335,9 +530,2390 @@
         "subtopicId": "imperativo",
         "instruction": "Elegí la opción correcta para completar el cartel.",
         "prompt": "Placa no hospital: «Por favor, não ___ alto.»",
-        "options": ["fala", "fale", "falas", "hable"],
+        "options": [
+          "fala",
+          "fale",
+          "falas",
+          "hable"
+        ],
         "correctIndex": 1,
         "explanation": "En un cartel, el imperativo negativo con você usa la forma fale: não fale alto."
+      }
+    ],
+    "pt-a1-demonstrativos-adjetivos": [
+      {
+        "subtopicId": "este-esse-aquele",
+        "instruction": "Elegí el demostrativo correcto según el contexto.",
+        "prompt": "Você está com um livro na mão e diz: \"___ livro aqui é muito bom.\"",
+        "options": [
+          "Este",
+          "Esse",
+          "Aquele",
+          "Aquela"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'este' para algo que está cerca de quien habla, como un libro que tiene en la mano."
+      },
+      {
+        "subtopicId": "adjetivos-fisicos",
+        "instruction": "Completá la descripción física con la opción correcta.",
+        "prompt": "Ela ___ cabelo loiro e olhos verdes.",
+        "options": [
+          "é",
+          "está",
+          "tem",
+          "ser"
+        ],
+        "correctIndex": 2,
+        "explanation": "En portugués se usa el verbo 'ter' para describir el pelo y los ojos, no 'ser' como en español."
+      },
+      {
+        "subtopicId": "adjetivos-personalidade",
+        "instruction": "Elegí el adjetivo de personalidad adecuado.",
+        "prompt": "Meu irmão ajuda todo mundo, ele é muito ___.",
+        "options": [
+          "simpático",
+          "alto",
+          "magro",
+          "moreno"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Simpático' describe el carácter de una persona, mientras que las otras opciones son adjetivos físicos."
+      },
+      {
+        "subtopicId": "concordancia-adjetivos",
+        "instruction": "Elegí la forma del adjetivo que concuerda correctamente.",
+        "prompt": "As meninas são muito ___.",
+        "options": [
+          "inteligente",
+          "inteligentes",
+          "inteligenta",
+          "inteligentos"
+        ],
+        "correctIndex": 1,
+        "explanation": "El adjetivo tiene que concordar en plural con 'as meninas', por eso es 'inteligentes'."
+      }
+    ],
+    "pt-a1-numeros-horas": [
+      {
+        "subtopicId": "numeros-cardinales",
+        "instruction": "Elegí la opción correcta para completar el número en portugués.",
+        "prompt": "Este livro custa ___ reais (90).",
+        "options": [
+          "noventa",
+          "nonenta",
+          "novanta",
+          "noventa e um"
+        ],
+        "correctIndex": 0,
+        "explanation": "Noventa es la forma correcta de 90 en portugués, sin la 'n' que lleva el español 'noventa' en otra sílaba ni cambios de vocal."
+      },
+      {
+        "subtopicId": "numeros-ordinales",
+        "instruction": "Elegí el ordinal correcto para completar la oración.",
+        "prompt": "Eu moro no ___ andar deste prédio (3°).",
+        "options": [
+          "terceiro",
+          "terço",
+          "terciero",
+          "três"
+        ],
+        "correctIndex": 0,
+        "explanation": "Terceiro es el ordinal correspondiente a 3° en portugués; 'terço' significa 'tercio' y 'três' es el cardinal, no el ordinal."
+      },
+      {
+        "subtopicId": "decir-la-hora",
+        "instruction": "Elegí la forma correcta de decir la hora en portugués de Brasil.",
+        "prompt": "Que horas são? São ___ (14:30).",
+        "options": [
+          "catorze e meia",
+          "duas e meia da tarde",
+          "catorze horas e trinta minutos",
+          "quatorze e meio"
+        ],
+        "correctIndex": 1,
+        "explanation": "En el habla informal de Brasil se suele usar el formato de 12 horas aclarando 'da tarde', y 'meia' concuerda en femenino con 'horas'."
+      },
+      {
+        "subtopicId": "dias-semana-meses",
+        "instruction": "Elegí el día de la semana correcto en portugués.",
+        "prompt": "Hoje é ___ (miércoles).",
+        "options": [
+          "quarta-feira",
+          "miércoles",
+          "quarto-feira",
+          "quarta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Quarta-feira es la forma completa y correcta para decir miércoles en portugués de Brasil."
+      }
+    ],
+    "pt-a1-verbos-modais": [
+      {
+        "subtopicId": "poder-permiso-posibilidad",
+        "instruction": "Completá la oración con la forma correcta del verbo 'poder'.",
+        "prompt": "___ abrir a janela, por favor?",
+        "options": [
+          "Posso",
+          "Pode",
+          "Podo",
+          "Poço"
+        ],
+        "correctIndex": 0,
+        "explanation": "La primera persona del singular de 'poder' en presente es 'posso', no 'podo' ni 'poço'."
+      },
+      {
+        "subtopicId": "querer-deseos-pedidos",
+        "instruction": "Elegí la forma correcta del verbo 'querer' para completar el pedido.",
+        "prompt": "Eu ___ um suco de laranja, por favor.",
+        "options": [
+          "quiero",
+          "quero",
+          "queiro",
+          "quer"
+        ],
+        "correctIndex": 1,
+        "explanation": "La primera persona del singular de 'querer' en portugués es 'quero', diferente del español 'quiero'."
+      },
+      {
+        "subtopicId": "precisar-necesidad",
+        "instruction": "Completá la oración expresando necesidad con 'precisar'.",
+        "prompt": "Nós ___ de mais tempo para terminar o projeto.",
+        "options": [
+          "precisam",
+          "precisa",
+          "precisamos",
+          "precisar"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el sujeto 'nós' el verbo 'precisar' se conjuga como 'precisamos'."
+      },
+      {
+        "subtopicId": "pedir-forma-educada",
+        "instruction": "Elegí la expresión más educada para pedir algo en portugués.",
+        "prompt": "Para pedir un café de forma educada en un bar, decís: 'Um café, ___?'",
+        "options": [
+          "por favor",
+          "obrigado",
+          "de nada",
+          "com licença"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Por favor' es la fórmula de cortesía correcta para acompañar un pedido, como en español."
+      }
+    ],
+    "pt-a1-interrogativos": [
+      {
+        "subtopicId": "o-que-quem-como",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar quién es alguien.",
+        "prompt": "___ é aquela mulher ali?",
+        "options": [
+          "Quem",
+          "O que",
+          "Como",
+          "Quando"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usás 'quem' para preguntar por una persona, mientras que 'o que' se usa para preguntar por cosas."
+      },
+      {
+        "subtopicId": "quando-onde-por-que",
+        "instruction": "Elegí la forma correcta para preguntar por el destino de un viaje.",
+        "prompt": "___ você vai de férias?",
+        "options": [
+          "Onde",
+          "Aonde",
+          "Quando",
+          "Por que"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa 'aonde' cuando el verbo implica movimiento o dirección hacia un lugar, como con 'ir'."
+      },
+      {
+        "subtopicId": "quanto-quantos",
+        "instruction": "Elegí la palabra correcta para preguntar la edad de alguien.",
+        "prompt": "___ anos você tem?",
+        "options": [
+          "Quanto",
+          "Quanta",
+          "Quantos",
+          "Quantas"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Anos' es masculino plural, así que la palabra que concuerda es 'quantos'."
+      },
+      {
+        "subtopicId": "preguntas-si-no",
+        "instruction": "Elegí la forma correcta de armar una pregunta de sí o no en portugués.",
+        "prompt": "¿Cómo preguntás si a alguien le gusta el café?",
+        "options": [
+          "Does você gosta de café?",
+          "Você gosta de café?",
+          "Faz você gosta de café?",
+          "Está você gosta de café?"
+        ],
+        "correctIndex": 1,
+        "explanation": "En portugués no existen auxiliares como 'do/does'; la pregunta se forma solo con la entonación."
+      }
+    ],
+    "pt-a1-vocabulario-cotidiano": [
+      {
+        "subtopicId": "comida-e-bebida",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "Eu gosto muito de comer ___ no café da manhã.",
+        "options": [
+          "pan",
+          "pão",
+          "po",
+          "peixe"
+        ],
+        "correctIndex": 1,
+        "explanation": "Pão es la palabra correcta en portugués para 'pan', con la nasalización propia del idioma."
+      },
+      {
+        "subtopicId": "no-mercado",
+        "instruction": "Elegí la forma correcta de pedir una cantidad en el mercado.",
+        "prompt": "Eu queria ___ de tomate, por favor.",
+        "options": [
+          "um kilo",
+          "um quilo",
+          "uma quilo",
+          "um kilogramo"
+        ],
+        "correctIndex": 1,
+        "explanation": "La forma correcta en portugués es 'quilo', con 'qu' y género masculino, no 'kilo' como en español."
+      },
+      {
+        "subtopicId": "lugares-da-cidade",
+        "instruction": "Elegí la palabra correcta para completar la pregunta.",
+        "prompt": "Onde fica a ___ mais próxima? Preciso comprar remédio.",
+        "options": [
+          "farmácia",
+          "farmacia",
+          "drogaría",
+          "botica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Farmácia lleva tilde en la 'a' en portugués y es la forma correcta para nombrar ese lugar."
+      },
+      {
+        "subtopicId": "precos-e-dinheiro",
+        "instruction": "Elegí la forma correcta de preguntar el precio.",
+        "prompt": "___ custa esta camisa?",
+        "options": [
+          "Cuanto",
+          "Quanto",
+          "Cuanta",
+          "Quanta"
+        ],
+        "correctIndex": 1,
+        "explanation": "Quanto es la forma correcta en portugués para preguntar 'cuánto', con 'qu' en lugar de 'c'."
+      }
+    ],
+    "pt-a2-por-para": [
+      {
+        "subtopicId": "usos-de-por",
+        "instruction": "Elegí la opción correcta para expresar el precio de algo.",
+        "prompt": "Comprei este livro ___ vinte reais.",
+        "options": [
+          "por",
+          "para",
+          "pelo",
+          "pra"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usás 'por' para expresar el precio o el intercambio de algo, como en este caso con el libro."
+      },
+      {
+        "subtopicId": "usos-de-para",
+        "instruction": "Elegí la opción correcta para expresar el destinatario de algo.",
+        "prompt": "Comprei um presente ___ minha mãe.",
+        "options": [
+          "por",
+          "pelo",
+          "para",
+          "pra o"
+        ],
+        "correctIndex": 2,
+        "explanation": "Usás 'para' cuando indicás el destinatario de algo, es decir, para quién es la cosa."
+      },
+      {
+        "subtopicId": "por-vs-para",
+        "instruction": "Elegí la opción correcta para completar la oración que expresa finalidad.",
+        "prompt": "Estudo português ___ conseguir um emprego melhor.",
+        "options": [
+          "por",
+          "para",
+          "pelo",
+          "pela"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando expresás la finalidad de una acción (el objetivo), corresponde usar 'para', no 'por'."
+      },
+      {
+        "subtopicId": "expressoes-por-para",
+        "instruction": "Elegí la expresión fija correcta usada en Brasil.",
+        "prompt": "Ele fez tudo isso ___ nada, não ganhou nada em troca.",
+        "options": [
+          "por nada",
+          "para nada",
+          "pela nada",
+          "por um nada"
+        ],
+        "correctIndex": 1,
+        "explanation": "La expresión fija 'para nada' se usa para decir que algo no sirvió de nada o no tuvo resultado."
+      }
+    ],
+    "pt-a2-relativos-conectores": [
+      {
+        "subtopicId": "pronomes-relativos-que-quem-onde",
+        "instruction": "Elegí el pronombre relativo correcto para completar la oración.",
+        "prompt": "Esta é a cidade ___ eu nasci.",
+        "options": [
+          "que",
+          "quem",
+          "onde",
+          "qual"
+        ],
+        "correctIndex": 2,
+        "explanation": "Onde es el relativo correcto porque se refiere a un lugar, no a una persona ni a una cosa."
+      },
+      {
+        "subtopicId": "conectores-causais-porque-ja-que",
+        "instruction": "Elegí el conector causal correcto para completar la oración.",
+        "prompt": "Não fui à festa ___ estava doente.",
+        "options": [
+          "por isso",
+          "porque",
+          "mas",
+          "então"
+        ],
+        "correctIndex": 1,
+        "explanation": "Porque introduce la causa de no haber ido a la fiesta, mientras que los otros conectores expresan consecuencia o contraste."
+      },
+      {
+        "subtopicId": "conectores-de-consequencia-por-isso-entao",
+        "instruction": "Elegí el conector de consecuencia correcto para completar la oración.",
+        "prompt": "Estava muito cansado, ___ fui dormir mais cedo.",
+        "options": [
+          "porque",
+          "por isso",
+          "mas",
+          "onde"
+        ],
+        "correctIndex": 1,
+        "explanation": "Por isso introduce la consecuencia de estar cansado, a diferencia de 'porque' que introduce causa."
+      },
+      {
+        "subtopicId": "conectores-de-contraste-mas-porem",
+        "instruction": "Elegí el conector de contraste correcto para completar la oración.",
+        "prompt": "Ele estudou muito, ___ não passou na prova.",
+        "options": [
+          "por isso",
+          "já que",
+          "porém",
+          "quem"
+        ],
+        "correctIndex": 2,
+        "explanation": "Porém marca el contraste entre haber estudiado mucho y no haber aprobado el examen."
+      }
+    ],
+    "pt-a2-reflexivos-rotina": [
+      {
+        "subtopicId": "verbos-reflexivos-pronombres",
+        "instruction": "Completá la oración con el pronombre reflexivo correcto.",
+        "prompt": "Eu ___ chamo João.",
+        "options": [
+          "me",
+          "se",
+          "te",
+          "nos"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con el sujeto 'eu' el pronombre reflexivo correcto es 'me', como en 'eu me chamo'."
+      },
+      {
+        "subtopicId": "rutina-diaria-reflexivos",
+        "instruction": "Elegí la forma correcta para describir tu rutina diaria.",
+        "prompt": "Todos os dias, eu ___ às sete da manhã.",
+        "options": [
+          "me levanto",
+          "se levanto",
+          "levanta-se",
+          "me levanta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'eu' el pronombre reflexivo es 'me' y va antes del verbo conjugado en primera persona: 'me levanto'."
+      },
+      {
+        "subtopicId": "acciones-reciprocas",
+        "instruction": "Completá la oración expresando una acción recíproca.",
+        "prompt": "Nós ___ todos os dias no parque.",
+        "options": [
+          "nos encontra",
+          "se encontramos",
+          "encontram-se",
+          "nos encontramos"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con el sujeto 'nós' el pronombre recíproco es 'nos' y el verbo va en primera persona del plural: 'nos encontramos'."
+      },
+      {
+        "subtopicId": "reflexivos-portugues-vs-espanol",
+        "instruction": "Elegí la forma correcta en portugués, teniendo en cuenta que no siempre coincide con el español.",
+        "prompt": "Eu ___ amanhã para São Paulo.",
+        "options": [
+          "me vou",
+          "vou-me",
+          "vou",
+          "me vou embora"
+        ],
+        "correctIndex": 2,
+        "explanation": "A diferencia del español 'irse', en portugués el verbo 'ir' no es reflexivo, por eso se dice simplemente 'eu vou'."
+      }
+    ],
+    "pt-a2-saude-corpo": [
+      {
+        "subtopicId": "partes-del-cuerpo",
+        "instruction": "Elegí el artículo correcto para esta parte del cuerpo.",
+        "prompt": "___ nariz está sangrando.",
+        "options": [
+          "A",
+          "O",
+          "Os",
+          "As"
+        ],
+        "correctIndex": 1,
+        "explanation": "En portugués 'nariz' es masculino ('o nariz'), aunque en español 'la nariz' sea femenino."
+      },
+      {
+        "subtopicId": "sintomas-y-malestares",
+        "instruction": "Elegí el verbo correcto para describir este síntoma.",
+        "prompt": "Eu ___ com febre desde ontem.",
+        "options": [
+          "estou",
+          "sou",
+          "fico",
+          "tenho"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para describir un malestar temporal se usa 'estar com', por eso corresponde 'estou com febre'."
+      },
+      {
+        "subtopicId": "consultorio-medico",
+        "instruction": "Elegí el verbo correcto para pedir un turno con el médico.",
+        "prompt": "Preciso ___ uma consulta com o médico.",
+        "options": [
+          "marcar",
+          "fazer",
+          "pedir",
+          "tomar"
+        ],
+        "correctIndex": 0,
+        "explanation": "En portugués brasileño se usa 'marcar uma consulta' para decir 'pedir un turno médico'."
+      },
+      {
+        "subtopicId": "emociones-y-estados-de-animo",
+        "instruction": "Elegí el verbo correcto para expresar un cambio de emoción repentino.",
+        "prompt": "Quando recebi a notícia, eu ___ muito feliz.",
+        "options": [
+          "fiquei",
+          "estive",
+          "fui",
+          "tive"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se usa 'ficar' para marcar un cambio repentino de estado de ánimo, por eso corresponde 'fiquei feliz'."
+      }
+    ],
+    "pt-a2-viagem-indicacoes": [
+      {
+        "subtopicId": "medios-de-transporte",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Eu vou ao trabalho ___ ônibus.",
+        "options": [
+          "de",
+          "em",
+          "por",
+          "a"
+        ],
+        "correctIndex": 0,
+        "explanation": "En portugués se usa 'de' con los medios de transporte (de ônibus, de carro), a diferencia del español que usa 'en'."
+      },
+      {
+        "subtopicId": "pedir-dar-indicacoes-calle",
+        "instruction": "Elegí la forma correcta del imperativo para dar una indicación.",
+        "prompt": "___ à direita na próxima rua.",
+        "options": [
+          "Virando",
+          "Vira",
+          "Vire",
+          "Virar"
+        ],
+        "correctIndex": 2,
+        "explanation": "Vire es la forma correcta del imperativo para você en portugués de Brasil, usada para dar indicaciones."
+      },
+      {
+        "subtopicId": "aeroporto-hotel",
+        "instruction": "Elegí la palabra correcta para completar la pregunta.",
+        "prompt": "Qual é o ___ de embarque do seu voo?",
+        "options": [
+          "porta",
+          "portão",
+          "puerta",
+          "entrada"
+        ],
+        "correctIndex": 1,
+        "explanation": "Portão es la palabra correcta para 'puerta de embarque' en el aeropuerto, distinta de 'porta' que es una puerta común."
+      },
+      {
+        "subtopicId": "vocabulario-viaje-turismo",
+        "instruction": "Elegí la expresión correcta para completar la oración.",
+        "prompt": "Esse museu é um ___ muito visitado pelos turistas.",
+        "options": [
+          "punto turístico",
+          "lugar turístico",
+          "local turistico",
+          "ponto turístico"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ponto turístico es la expresión correcta en portugués, con 'ponto' en lugar de 'punto' como en español."
+      }
+    ],
+    "pt-b1-presente-subjuntivo": [
+      {
+        "subtopicId": "subjuntivo-regulares",
+        "instruction": "Completá la oración con el presente del subjuntivo del verbo 'falar'.",
+        "prompt": "Espero que você ___ a verdade.",
+        "options": [
+          "fale",
+          "falas",
+          "falo",
+          "fala"
+        ],
+        "correctIndex": 0,
+        "explanation": "El subjuntivo regular se forma a partir de la raíz de 'eu falo', y para 'você' la forma correcta es 'fale'."
+      },
+      {
+        "subtopicId": "subjuntivo-irregulares",
+        "instruction": "Elegí la forma correcta del verbo 'ser' en presente del subjuntivo.",
+        "prompt": "É importante que ela ___ paciente.",
+        "options": [
+          "é",
+          "seja",
+          "seje",
+          "for"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Ser' es uno de los verbos irregulares en subjuntivo y su forma correcta es 'seja', no 'seje' ni el indicativo 'é'."
+      },
+      {
+        "subtopicId": "desejos-recomendacoes",
+        "instruction": "Completá el pedido usando el subjuntivo después de 'querer que'.",
+        "prompt": "Eu quero que você ___ aqui comigo.",
+        "options": [
+          "fica",
+          "ficas",
+          "fique",
+          "ficar"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'querer que' se usa el subjuntivo, y para 'você' la forma del verbo 'ficar' es 'fique'."
+      },
+      {
+        "subtopicId": "duvida-emocao",
+        "instruction": "Elegí la forma correcta para expresar duda con 'talvez'.",
+        "prompt": "Talvez ele ___ à festa hoje.",
+        "options": [
+          "vem",
+          "veio",
+          "venha",
+          "vier"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Talvez' exige el subjuntivo, y la forma irregular correcta del verbo 'vir' para 'ele' es 'venha'."
+      }
+    ],
+    "pt-b1-opiniao-argumentacao": [
+      {
+        "subtopicId": "dar-opiniao-acho-que-acredito-que",
+        "instruction": "Elegí la palabra correcta para completar esta opinión.",
+        "prompt": "Acho ___ isso é uma boa ideia.",
+        "options": [
+          "que",
+          "de que",
+          "o que",
+          "se"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'acho' va directamente 'que', sin preposición, para introducir la opinión."
+      },
+      {
+        "subtopicId": "acordo-e-desacordo",
+        "instruction": "Elegí el verbo correcto para expresar desacuerdo.",
+        "prompt": "Eu ___ com você, prefiro outra solução.",
+        "options": [
+          "discordo",
+          "concordo",
+          "acho",
+          "sou de acordo"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Discordo' es el verbo que expresa desacuerdo en portugués, mientras que 'concordo' significa lo contrario."
+      },
+      {
+        "subtopicId": "dar-razoes-porque-pois",
+        "instruction": "Elegí la forma correcta para dar una razón dentro de la oración.",
+        "prompt": "Vou sair mais cedo, ___ tenho uma reunião.",
+        "options": [
+          "porque",
+          "por que",
+          "por quê",
+          "porquê"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para dar una razón dentro de una oración afirmativa se usa 'porque' junto y sin acento."
+      },
+      {
+        "subtopicId": "matizar-uma-opiniao",
+        "instruction": "Elegí la expresión correcta para empezar a matizar una opinión mostrando dos puntos de vista.",
+        "prompt": "___, acho que a tecnologia ajuda, mas também pode atrapalhar.",
+        "options": [
+          "Por um lado",
+          "Por outro lado",
+          "De qualquer jeito",
+          "Com certeza"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Por um lado' se usa para presentar el primer punto de vista antes de contrastarlo con otro."
+      }
+    ],
+    "pt-b1-perfeito-composto": [
+      {
+        "subtopicId": "formacion-tenho-participio",
+        "instruction": "Completá la oración con el pretérito perfeito composto del verbo 'trabalhar'.",
+        "prompt": "Eu ___ muito ultimamente.",
+        "options": [
+          "tenho trabalhado",
+          "tenho trabalhando",
+          "tenho trabalhar",
+          "tive trabalhado"
+        ],
+        "correctIndex": 0,
+        "explanation": "El pretérito perfeito composto se forma con 'tenho' + participio, por eso es 'tenho trabalhado'."
+      },
+      {
+        "subtopicId": "diferencia-perfeito-simples",
+        "instruction": "Elegí el tiempo verbal correcto para una acción puntual y terminada en el pasado.",
+        "prompt": "Ontem eu ___ ao cinema com meus amigos.",
+        "options": [
+          "tenho ido",
+          "fui",
+          "tenho sido",
+          "vou"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con un marcador puntual como 'ontem' se usa el pretérito perfeito simples 'fui', no el composto."
+      },
+      {
+        "subtopicId": "acciones-repetidas-recientes",
+        "instruction": "Completá la oración describiendo un estado que se repite en un período reciente.",
+        "prompt": "Ela ___ muito cansada nos últimos dias.",
+        "options": [
+          "esteve",
+          "teve estado",
+          "tem estado",
+          "está"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para describir un estado repetido en un período reciente que sigue vigente se usa 'tem estado', pretérito perfeito composto del verbo 'estar'."
+      },
+      {
+        "subtopicId": "marcadores-tiempo-composto",
+        "instruction": "Elegí el marcador de tiempo que corresponde al pretérito perfeito composto.",
+        "prompt": "___, tenho dormido muito mal.",
+        "options": [
+          "Ultimamente",
+          "Ontem",
+          "No ano passado",
+          "Na semana passada, no dia 3"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Ultimamente' indica un período reciente que continúa, por eso acompaña al pretérito perfeito composto."
+      }
+    ],
+    "pt-b1-regencia-verbal": [
+      {
+        "subtopicId": "verbos-com-de",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Eu gosto ___ chocolate.",
+        "options": [
+          "em",
+          "a",
+          "de",
+          "com"
+        ],
+        "correctIndex": 2,
+        "explanation": "El verbo 'gostar' siempre pide la preposición 'de' en portugués, aunque en español 'gustar' no lleve preposición después del objeto."
+      },
+      {
+        "subtopicId": "verbos-com-em",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Eu penso ___ você todos os dias.",
+        "options": [
+          "de",
+          "em",
+          "a",
+          "com"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo 'pensar' pide la preposición 'em' en portugués, a diferencia del español que usa 'en' también pero muchos confunden con 'de'."
+      },
+      {
+        "subtopicId": "verbos-com-a",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Eu assisto ___ filmes brasileiros nos fins de semana.",
+        "options": [
+          "de",
+          "em",
+          "a",
+          "com"
+        ],
+        "correctIndex": 2,
+        "explanation": "El verbo 'assistir' en el sentido de 'ver' pide la preposición 'a' en portugués, aunque en español 'asistir a' tenga otro significado."
+      },
+      {
+        "subtopicId": "erros-interferencia-espanhol",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Ela namora ___ um cara muito legal.",
+        "options": [
+          "(sem preposição)",
+          "com",
+          "de",
+          "a"
+        ],
+        "correctIndex": 0,
+        "explanation": "El verbo 'namorar' en portugués se usa sin preposición, a diferencia del español que suele decir 'salir con alguien'."
+      }
+    ],
+    "pt-b1-futuro-subjuntivo": [
+      {
+        "subtopicId": "futuro-subj-formacao",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Quando eu ___ com ela, vou te contar as novidades.",
+        "options": [
+          "falo",
+          "falasse",
+          "falar",
+          "falarei"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'quando' con sentido de futuro se usa el futuro do subjuntivo, que para 'falar' es 'falar', igual al infinitivo en los verbos regulares."
+      },
+      {
+        "subtopicId": "futuro-subj-irregulares",
+        "instruction": "Elegí la forma correcta del verbo 'ser' para completar la oración.",
+        "prompt": "Se ele ___ seu amigo de verdade, vai te ajudar.",
+        "options": [
+          "seja",
+          "será",
+          "fosse",
+          "for"
+        ],
+        "correctIndex": 3,
+        "explanation": "El futuro do subjuntivo del verbo 'ser' es 'for', una forma irregular que no se parece al infinitivo."
+      },
+      {
+        "subtopicId": "se-quando",
+        "instruction": "Elegí la forma correcta del verbo 'ter' para completar la oración.",
+        "prompt": "Se você ___ tempo, me liga mais tarde.",
+        "options": [
+          "tem",
+          "terá",
+          "tiver",
+          "tinha"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'se' con sentido de condición futura se usa el futuro do subjuntivo, y la forma irregular de 'ter' es 'tiver'."
+      },
+      {
+        "subtopicId": "assim-que-relativos",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Assim que ele ___ , vamos embora para casa.",
+        "options": [
+          "chega",
+          "chegasse",
+          "chegará",
+          "chegar"
+        ],
+        "correctIndex": 3,
+        "explanation": "Después de 'assim que' con sentido de futuro se usa el futuro do subjuntivo, que para 'chegar' es 'chegar'."
+      }
+    ],
+    "pt-b1-mais-que-perfeito": [
+      {
+        "subtopicId": "mqp-composto",
+        "instruction": "Elegí la forma correcta del pluscuamperfecto compuesto.",
+        "prompt": "Quando cheguei, ela já ___ saído.",
+        "options": [
+          "tinha",
+          "tenho",
+          "tive",
+          "terá"
+        ],
+        "correctIndex": 0,
+        "explanation": "El pluscuamperfecto compuesto se forma con 'tinha' (imperfecto de ter) más el participio, así que corresponde 'tinha saído'."
+      },
+      {
+        "subtopicId": "participios-irregulares",
+        "instruction": "Elegí el participio irregular correcto del verbo 'ver'.",
+        "prompt": "Eu ainda não tinha ___ esse filme.",
+        "options": [
+          "vido",
+          "visto",
+          "vistado",
+          "veido"
+        ],
+        "correctIndex": 1,
+        "explanation": "El participio irregular de 'ver' es 'visto', no existe la forma 'vido' como en español con otros verbos."
+      },
+      {
+        "subtopicId": "mqp-simples",
+        "instruction": "Elegí la forma que significa lo mismo que 'fizera' en este texto literario.",
+        "prompt": "Ele fizera tudo sozinho, sem ajuda.",
+        "options": [
+          "fez",
+          "faz",
+          "tinha feito",
+          "fará"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Fizera' es la forma simple del mais-que-perfeito, equivalente en el habla a 'tinha feito'."
+      },
+      {
+        "subtopicId": "sequencias-passado",
+        "instruction": "Elegí la forma correcta para indicar qué había pasado antes de que llegara el profesor.",
+        "prompt": "Quando o professor chegou, os alunos já ___ a prova.",
+        "options": [
+          "terminaram",
+          "terminavam",
+          "tinham terminando",
+          "tinham terminado"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para marcar una acción anterior a otra en el pasado se usa 'tinham terminado', con el participio y no el gerundio."
+      }
+    ],
+    "pt-b1-condicionais-se": [
+      {
+        "subtopicId": "condicao-real-se-presente",
+        "instruction": "Completá la condición real usando se + presente do indicativo.",
+        "prompt": "Se eu ___ tempo, eu leio um livro todos os dias.",
+        "options": [
+          "tenho",
+          "tiver",
+          "tivesse",
+          "ter"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para condiciones reales o habituales se usa 'se' + presente do indicativo, por eso corresponde 'tenho'."
+      },
+      {
+        "subtopicId": "condicao-futura-se-futuro",
+        "instruction": "Completá la condición futura usando se + futuro do subjuntivo.",
+        "prompt": "Se ela ___ amanhã, nós vamos ao cinema juntos.",
+        "options": [
+          "vem",
+          "viria",
+          "venha",
+          "vier"
+        ],
+        "correctIndex": 3,
+        "explanation": "Después de 'se' para expresar una condición futura se usa el futuro do subjuntivo, y la forma irregular de 'vir' es 'vier'."
+      },
+      {
+        "subtopicId": "consequencias-e-resultados",
+        "instruction": "Elegí el tiempo verbal correcto para la consecuencia de la condición.",
+        "prompt": "Se chover, eu ___ em casa.",
+        "options": [
+          "fico",
+          "fique",
+          "ficasse",
+          "ficar"
+        ],
+        "correctIndex": 0,
+        "explanation": "La cláusula de consecuencia va en presente o futuro do indicativo, por eso 'fico' es correcto y no una forma de subjuntivo."
+      },
+      {
+        "subtopicId": "conectores-condicionais-caso-a-nao-ser-que",
+        "instruction": "Completá la oración usando 'caso' con el modo verbal correcto.",
+        "prompt": "Caso você ___ dúvidas, me ligue.",
+        "options": [
+          "tem",
+          "ter",
+          "teria",
+          "tenha"
+        ],
+        "correctIndex": 3,
+        "explanation": "El conector 'caso' exige el subjuntivo, por eso la forma correcta es 'tenha', no el indicativo 'tem'."
+      }
+    ],
+    "pt-b1-trabalho-profissao": [
+      {
+        "subtopicId": "profesiones-oficios",
+        "instruction": "Elegí la forma femenina correcta de esta profesión.",
+        "prompt": "Minha irmã é ___, trabalha em um escritório de advocacia.",
+        "options": [
+          "advogada",
+          "advogado",
+          "advogadera",
+          "advoga"
+        ],
+        "correctIndex": 0,
+        "explanation": "El femenino de 'advogado' es 'advogada', cambiando solo la terminación."
+      },
+      {
+        "subtopicId": "ambiente-de-oficina",
+        "instruction": "Elegí el lugar correcto de la oficina donde normalmente se hacen las reuniones.",
+        "prompt": "A reunião de hoje vai acontecer n ___a.",
+        "options": [
+          "corredor",
+          "sala de reuniões",
+          "cozinha",
+          "elevador"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Sala de reuniões' es el espacio de la oficina destinado específicamente a las reuniones de trabajo."
+      },
+      {
+        "subtopicId": "reuniones-de-trabajo",
+        "instruction": "Elegí la expresión correcta para proponer algo en una reunión.",
+        "prompt": "___ fazermos uma pausa para o café?",
+        "options": [
+          "Como tal",
+          "Qual tal",
+          "Que tal",
+          "O que tal"
+        ],
+        "correctIndex": 2,
+        "explanation": "La expresión fija para proponer algo de manera informal es 'que tal', sin agregar 'o' ni cambiar la palabra."
+      },
+      {
+        "subtopicId": "experiencia-laboral",
+        "instruction": "Elegí la forma verbal correcta para describir una acción que empezó en el pasado y continúa hasta ahora.",
+        "prompt": "Eu ___ nessa empresa há três anos.",
+        "options": [
+          "trabalhei",
+          "trabalhava",
+          "trabalho",
+          "tenho trabalhado"
+        ],
+        "correctIndex": 3,
+        "explanation": "El pretérito perfeito composto ('tenho trabalhado') se usa para acciones que empezaron en el pasado y siguen repitiéndose hasta el presente."
+      }
+    ],
+    "pt-b1-meio-ambiente-tecnologia": [
+      {
+        "subtopicId": "vocabulario-medio-ambiente",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "O ___ global é um dos maiores problemas ambientais da atualidade.",
+        "options": [
+          "aquecimento",
+          "calentamento",
+          "esquentamento",
+          "calor"
+        ],
+        "correctIndex": 0,
+        "explanation": "En portugués se dice \"aquecimento global\" (calentamiento global); \"calentamento\" y \"esquentamento\" son formas que no existen en portugués."
+      },
+      {
+        "subtopicId": "vocabulario-tecnologia-internet",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "Eu sempre uso o celular para acessar as ___ sociais, como Instagram e Facebook.",
+        "options": [
+          "redes",
+          "mídias",
+          "telas",
+          "conexões"
+        ],
+        "correctIndex": 0,
+        "explanation": "La expresión correcta en portugués es \"redes sociais\", equivalente a \"redes sociales\"."
+      },
+      {
+        "subtopicId": "problemas-y-soluciones",
+        "instruction": "Elegí la opción que completa correctamente la oración usando subjuntivo.",
+        "prompt": "É importante que o governo ___ mais políticas de reciclagem.",
+        "options": [
+          "crie",
+          "cria",
+          "criar",
+          "criará"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de \"é importante que\" se usa el presente de subjuntivo, por eso la forma correcta es \"crie\"."
+      },
+      {
+        "subtopicId": "discutir-un-tema-actual",
+        "instruction": "Elegí el conector que expresa contraste de forma correcta.",
+        "prompt": "A tecnologia facilita a vida das pessoas; ___, ela também pode causar dependência.",
+        "options": [
+          "no entanto",
+          "porque",
+          "portanto",
+          "além disso"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"No entanto\" es el conector adecuado para expresar contraste, equivalente a \"sin embargo\"."
+      }
+    ],
+    "pt-b1-expressoes-coloquiais": [
+      {
+        "subtopicId": "muletillas-marcadores",
+        "instruction": "Elegí la muletilla que se usa para pedir confirmación o acuerdo al final de una frase.",
+        "prompt": "Ele chegou atrasado de novo, ___?",
+        "options": [
+          "né",
+          "então",
+          "tipo",
+          "aí"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Né\" se usa al final de una frase para pedir confirmación, como el \"¿no?\" o \"¿viste?\" en español."
+      },
+      {
+        "subtopicId": "intensificadores-muito-super-bem",
+        "instruction": "Elegí el intensificador correcto para completar la oración.",
+        "prompt": "Esse filme é ___ bom, você precisa ver!",
+        "options": [
+          "super",
+          "muita",
+          "bastantemente",
+          "tanto"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Super\" se usa coloquialmente antes de un adjetivo para intensificarlo, como en \"super bom\"."
+      },
+      {
+        "subtopicId": "interjeicoes-comuns",
+        "instruction": "Elegí la interjección que expresa dolor físico.",
+        "prompt": "___! Eu bati o dedo na porta!",
+        "options": [
+          "Ai",
+          "Oba",
+          "Eita",
+          "Uai"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Ai\" es la interjección que se usa para expresar dolor físico repentino, igual que en español \"¡ay!\"."
+      },
+      {
+        "subtopicId": "coloquialismos-cotidianos",
+        "instruction": "Elegí la expresión coloquial que significa \"no tener dinero\".",
+        "prompt": "Hoje eu não posso sair, estou ___.",
+        "options": [
+          "duro",
+          "pesado",
+          "fraco",
+          "cheio"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Estar duro\" es una expresión coloquial brasileña que significa \"no tener dinero\", equivalente a \"estar seco\" en Argentina."
+      }
+    ],
+    "pt-b1-voz-passiva": [
+      {
+        "subtopicId": "passiva-ser",
+        "instruction": "Elegí la opción que completa correctamente la voz pasiva con ser.",
+        "prompt": "A ponte ___ construída em 1950 pelos engenheiros da cidade.",
+        "options": [
+          "tinha",
+          "foi",
+          "fez",
+          "houve"
+        ],
+        "correctIndex": 1,
+        "explanation": "La voz pasiva con acción terminada en el pasado se forma con el pretérito perfecto de ser (\"foi\") + participio."
+      },
+      {
+        "subtopicId": "participios-duplos",
+        "instruction": "Elegí el participio correcto para usar junto con 'ser' en voz pasiva.",
+        "prompt": "O convite ainda não foi ___ pela empresa.",
+        "options": [
+          "aceitando",
+          "aceitável",
+          "aceitado",
+          "aceito"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'ser' se usa la forma irregular del participio doble, por eso la norma pide \"aceito\" y no \"aceitado\"."
+      },
+      {
+        "subtopicId": "se-apassivador",
+        "instruction": "Elegí la forma del verbo que concuerda con la norma en el se pasivo.",
+        "prompt": "___-se apartamentos no centro da cidade.",
+        "options": [
+          "Aluga",
+          "Alugou",
+          "Alugam",
+          "Alugando"
+        ],
+        "correctIndex": 2,
+        "explanation": "En el se pasivo el verbo concuerda en número con el sustantivo que sigue, y como \"apartamentos\" es plural, corresponde \"Alugam-se\"."
+      },
+      {
+        "subtopicId": "sujeito-indeterminado",
+        "instruction": "Elegí la opción que expresa sujeto indeterminado, sin decir quién realiza la acción.",
+        "prompt": "Aqui ___ muito bem.",
+        "options": [
+          "Come-se",
+          "Comem-se",
+          "Comeu-se",
+          "Comendo-se"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando 'comer' no tiene objeto directo, el se indeterminado va siempre con el verbo en tercera persona del singular, por eso es \"Come-se\"."
+      }
+    ],
+    "pt-b2-imperfeito-subjuntivo": [
+      {
+        "subtopicId": "imperfeito-subj-formacao",
+        "instruction": "Elegí la forma correcta del imperfecto de subjuntivo.",
+        "prompt": "Se ela ___ mais cedo, teria pegado o trem.",
+        "options": [
+          "fizesse",
+          "fazesse",
+          "faria",
+          "fazia"
+        ],
+        "correctIndex": 0,
+        "explanation": "El imperfecto de subjuntivo del verbo \"fazer\" es irregular y se forma \"fizesse\", no \"fazesse\"."
+      },
+      {
+        "subtopicId": "condicionais-hipoteticas",
+        "instruction": "Elegí la forma correcta para completar la condicional hipotética.",
+        "prompt": "Se eu ___ rico, moraria em outro país.",
+        "options": [
+          "seria",
+          "for",
+          "fosse",
+          "sou"
+        ],
+        "correctIndex": 2,
+        "explanation": "En una condicional hipotética contraria a la realidad, la cláusula con \"se\" va en imperfecto de subjuntivo, por eso es \"fosse\"."
+      },
+      {
+        "subtopicId": "como-se-quem-dera",
+        "instruction": "Elegí la forma correcta para completar la expresión de deseo.",
+        "prompt": "Quem dera eu ___ mais tempo livre!",
+        "options": [
+          "tenho",
+          "tivesse",
+          "terei",
+          "tive"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después de \"quem dera\" se usa el imperfecto de subjuntivo para expresar un deseo irreal, por eso es \"tivesse\"."
+      },
+      {
+        "subtopicId": "correlacao-tempos",
+        "instruction": "Elegí la forma correcta según la correlación de tiempos.",
+        "prompt": "Ele queria que eu ___ com ele.",
+        "options": [
+          "vou",
+          "vá",
+          "irei",
+          "fosse"
+        ],
+        "correctIndex": 3,
+        "explanation": "Como el verbo principal \"queria\" está en pasado, la cláusula subordinada necesita el imperfecto de subjuntivo \"fosse\", no el presente de subjuntivo ni el indicativo."
+      }
+    ],
+    "pt-b1-discurso-indireto": [
+      {
+        "subtopicId": "verbos-dizer",
+        "instruction": "Elegí la opción que completa correctamente la oración para contar lo que dijo otra persona.",
+        "prompt": "Ela ___ que não podia vir à reunião.",
+        "options": [
+          "disse",
+          "falou pra",
+          "contou pra",
+          "perguntou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para reproducir lo que alguien afirmó de forma neutra se usa 'disse que', sin preposición antes de 'que'."
+      },
+      {
+        "subtopicId": "mudanca-tempos",
+        "instruction": "Elegí la forma verbal correcta al pasar la frase original 'Vou ao médico amanhã' al discurso indirecto introducido en pasado.",
+        "prompt": "Ele disse que ___ ao médico no dia seguinte.",
+        "options": [
+          "vai",
+          "foi",
+          "iria",
+          "vá"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando el verbo introductorio está en pasado, el futuro simple ('vou') pasa a futuro do pretérito ('iria'), igual que en español pasa a condicional."
+      },
+      {
+        "subtopicId": "perguntas-pedidos",
+        "instruction": "Elegí la forma verbal correcta para reproducir un pedido formal hecho por otra persona.",
+        "prompt": "O chefe pediu que eu ___ o relatório até sexta.",
+        "options": [
+          "enviasse",
+          "enviar",
+          "enviei",
+          "enviaria"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'pedir que' en pasado se usa el pretérito imperfecto del subjuntivo ('enviasse'), igual que en español se usaría 'enviara/enviase'."
+      },
+      {
+        "subtopicId": "conectores-relato",
+        "instruction": "Elegí el conector que expresa consecuencia en esta oración.",
+        "prompt": "Ele perdeu o trem; ___, chegou atrasado na reunião.",
+        "options": [
+          "logo",
+          "depois",
+          "enquanto",
+          "embora"
+        ],
+        "correctIndex": 0,
+        "explanation": "En portugués 'logo' funciona como conector de consecuencia ('por lo tanto'), y no significa 'luego' (después) como en español, que sería una trampa típica."
+      }
+    ],
+    "pt-b2-conjuncoes-concessivas-finais": [
+      {
+        "subtopicId": "embora-apesar-de",
+        "instruction": "Elegí la forma verbal correcta después de 'embora'.",
+        "prompt": "Embora ___ cansado, ele foi trabalhar.",
+        "options": [
+          "está",
+          "esteja",
+          "estava",
+          "esteve"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después de 'embora' siempre va el subjuntivo, por eso corresponde \"esteja\" y no una forma del indicativo."
+      },
+      {
+        "subtopicId": "para-que-fim-de-que",
+        "instruction": "Elegí la forma verbal correcta cuando el sujeto de las dos acciones es distinto.",
+        "prompt": "Ele vai explicar tudo para que você ___ a decisão.",
+        "options": [
+          "entende",
+          "entendeu",
+          "entenda",
+          "entender"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando 'para que' introduce una finalidad con sujeto diferente, el verbo va en subjuntivo, por eso corresponde \"entenda\"."
+      },
+      {
+        "subtopicId": "a-menos-que-desde-que",
+        "instruction": "Elegí la forma verbal correcta después de 'a menos que'.",
+        "prompt": "Vou ao evento, a menos que ___ chover.",
+        "options": [
+          "chove",
+          "choveu",
+          "chovendo",
+          "chova"
+        ],
+        "correctIndex": 3,
+        "explanation": "La expresión 'a menos que' exige subjuntivo, por eso la forma correcta es \"chova\" y no una forma del indicativo."
+      },
+      {
+        "subtopicId": "combinar-conjunciones",
+        "instruction": "Elegí la conjunción concesiva que combina correctamente con el verbo en subjuntivo que sigue.",
+        "prompt": "___ ele não tenha dinheiro, vai comprar o carro para impressionar os amigos.",
+        "options": [
+          "Embora",
+          "Apesar de",
+          "Por causa de",
+          "Desde que"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como la cláusula sigue con un verbo conjugado en subjuntivo (\"tenha\"), corresponde usar \"Embora\" y no \"Apesar de\", que pide infinitivo o sustantivo."
+      }
+    ],
+    "pt-b2-tempos-compostos-subjuntivo": [
+      {
+        "subtopicId": "perfeito-subjuntivo",
+        "instruction": "Elegí la forma correcta para expresar una emoción sobre algo que ya pasó.",
+        "prompt": "Espero que você ___ gostado do presente.",
+        "options": [
+          "tenha",
+          "tinha",
+          "teria",
+          "tenha tido"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para hablar de un hecho pasado con duda o emoción se usa el pretérito perfeito do subjuntivo 'tenha gostado', equivalente al 'haya gustado' del español."
+      },
+      {
+        "subtopicId": "mais-que-perfeito-subjuntivo",
+        "instruction": "Elegí la forma correcta para expresar un deseo sobre algo que no pasó en el pasado.",
+        "prompt": "Se eu ___ sabido, teria avisado você.",
+        "options": [
+          "tivesse",
+          "tinha",
+          "tenha",
+          "teria"
+        ],
+        "correctIndex": 0,
+        "explanation": "En la condición irreal de pasado se usa el mais-que-perfeito do subjuntivo 'tivesse sabido', equivalente al 'hubiera sabido' del español."
+      },
+      {
+        "subtopicId": "condicionais-passado",
+        "instruction": "Elegí la forma correcta para completar la consecuencia de una condición irreal sobre el pasado.",
+        "prompt": "Se eu tivesse sabido, ___ avisado você.",
+        "options": [
+          "tivesse",
+          "tinha",
+          "teria",
+          "tenha"
+        ],
+        "correctIndex": 2,
+        "explanation": "La consecuencia de un 'se tivesse' va en condicional compuesto 'teria avisado', equivalente al 'habría avisado' del español."
+      },
+      {
+        "subtopicId": "futuro-composto-subjuntivo",
+        "instruction": "Elegí la forma correcta para hablar de algo que estará terminado en un momento futuro.",
+        "prompt": "Quando você ___ terminado o relatório, me avise.",
+        "options": [
+          "tiver",
+          "tenha",
+          "terá",
+          "tiver tido"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para hablar de algo que va a estar completado en el futuro se usa el futuro composto do subjuntivo 'tiver terminado', un tiempo que el español no tiene como tal."
+      }
+    ],
+    "pt-b2-infinitivo-pessoal": [
+      {
+        "subtopicId": "infinitivo-pessoal-formas",
+        "instruction": "Elegí la forma correcta del infinitivo pessoal.",
+        "prompt": "É melhor eles ___ cedo.",
+        "options": [
+          "chegar",
+          "chegarem",
+          "cheguem",
+          "chegaram"
+        ],
+        "correctIndex": 1,
+        "explanation": "Como el sujeto \"eles\" es distinto del sujeto implícito de \"é melhor\", el verbo se flexiona en infinitivo pessoal: \"chegarem\"."
+      },
+      {
+        "subtopicId": "depois-preposicoes",
+        "instruction": "Elegí la forma correcta después de la preposición \"antes de\".",
+        "prompt": "Antes de vocês ___, avisem a gente.",
+        "options": [
+          "sair",
+          "saiam",
+          "saírem",
+          "saíssem"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de \"antes de\" con sujeto explícito \"vocês\", se usa el infinitivo pessoal flexionado: \"saírem\"."
+      },
+      {
+        "subtopicId": "expressoes-impessoais",
+        "instruction": "Elegí la forma correcta para completar la expresión impersonal.",
+        "prompt": "É necessário nós ___ cedo para pegar o vôo.",
+        "options": [
+          "cheguemos",
+          "chegar",
+          "chegaremos",
+          "chegarmos"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con expresiones impersonales como \"é necessário\" y sujeto explícito \"nós\", se usa el infinitivo pessoal \"chegarmos\" en vez de \"que + subjuntivo\"."
+      },
+      {
+        "subtopicId": "quando-flexionar",
+        "instruction": "Elegí la forma correcta, evitando flexionar de más.",
+        "prompt": "Eu vou ___ depois do trabalho.",
+        "options": [
+          "descansar",
+          "descansarmos",
+          "descansarem",
+          "descansarei"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como el sujeto de \"descansar\" es el mismo que el de \"vou\" (eu), no hace falta flexionar el infinitivo, se usa la forma simple \"descansar\"."
+      }
+    ],
+    "pt-b2-regencia-crase": [
+      {
+        "subtopicId": "regencia-verbal",
+        "instruction": "Elegí la preposición que pide el verbo 'precisar'.",
+        "prompt": "Eu preciso ___ ajuda para terminar o projeto.",
+        "options": [
+          "de",
+          "em",
+          "a",
+          "com"
+        ],
+        "correctIndex": 0,
+        "explanation": "El verbo 'precisar' siempre pide la preposición \"de\", a diferencia del español \"necesitar\" que no lleva preposición."
+      },
+      {
+        "subtopicId": "ir-chegar",
+        "instruction": "Elegí la preposición correcta cuando el destino es una permanencia larga o definitiva.",
+        "prompt": "Ela vai ___ Portugal morar lá pelo resto da vida.",
+        "options": [
+          "a",
+          "para",
+          "em",
+          "de"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando el destino implica una estadía larga o permanente, la norma pide \"para\" en vez de \"a\"."
+      },
+      {
+        "subtopicId": "crase-regra",
+        "instruction": "Elegí la forma correcta aplicando la regla de la crase.",
+        "prompt": "Vou ___ escola agora porque a reunião já vai começar.",
+        "options": [
+          "a",
+          "há",
+          "à",
+          "na"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como 'escola' es femenino y lleva artículo 'a', se funde con la preposición 'a' y se escribe con crase: \"à escola\"."
+      },
+      {
+        "subtopicId": "crase-casos",
+        "instruction": "Elegí la forma correcta para indicar la hora con crase.",
+        "prompt": "O exame começa ___ 14 horas.",
+        "options": [
+          "a",
+          "há",
+          "as",
+          "às"
+        ],
+        "correctIndex": 3,
+        "explanation": "Antes de horas con artículo femenino plural corresponde la crase, por eso se escribe \"às 14 horas\"."
+      }
+    ],
+    "pt-b2-nominalizacao": [
+      {
+        "subtopicId": "transformar-verbos-en-sustantivos",
+        "instruction": "Elegí el sustantivo formado correctamente a partir del verbo 'analisar'.",
+        "prompt": "A ___ dos dados foi feita com cuidado.",
+        "options": [
+          "análise",
+          "analisação",
+          "analisamento",
+          "analização"
+        ],
+        "correctIndex": 0,
+        "explanation": "El sustantivo correspondiente a 'analisar' es 'análise', una forma irregular que no sigue el sufijo productivo -ção."
+      },
+      {
+        "subtopicId": "estilo-impersonal",
+        "instruction": "Elegí la forma verbal que completa correctamente esta oración en voz pasiva formal.",
+        "prompt": "O contrato ___ assinado pelas duas partes ontem.",
+        "options": [
+          "foi",
+          "tinha",
+          "teve",
+          "estava"
+        ],
+        "correctIndex": 0,
+        "explanation": "La voz pasiva formal se forma con 'ser' + participio, por eso 'foi assinado' es la opción correcta para un hecho puntual del pasado."
+      },
+      {
+        "subtopicId": "evitar-repeticiones",
+        "instruction": "Elegí la expresión formal que evita repetir el sustantivo mencionado antes.",
+        "prompt": "A empresa apresentou um relatório. ___ documento continha dados confidenciais.",
+        "options": [
+          "O referido",
+          "O mesmo",
+          "Esse mesmo",
+          "O tal"
+        ],
+        "correctIndex": 0,
+        "explanation": "'O referido documento' es la expresión fija de registro formal que se usa en textos escritos para retomar algo mencionado antes sin repetirlo."
+      },
+      {
+        "subtopicId": "textos-academicos-simples",
+        "instruction": "Elegí el conector típico de un texto académico para introducir una conclusión basada en datos.",
+        "prompt": "___ os resultados obtidos, pode-se concluir que a hipótese foi confirmada.",
+        "options": [
+          "Diante de",
+          "Mas",
+          "Então",
+          "Por isso"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Diante de' es un conector formal propio del registro académico para introducir una conclusión a partir de lo expuesto, a diferencia de 'então' o 'mas', que son más coloquiales."
+      }
+    ],
+    "pt-b2-registro-formal": [
+      {
+        "subtopicId": "email-formal",
+        "instruction": "Elegí la forma correcta de abrir un e-mail formal dirigido a un desconocido.",
+        "prompt": "___ Senhor(a), venho por meio deste e-mail solicitar informações sobre o curso.",
+        "options": [
+          "Oi",
+          "Querido(a)",
+          "Prezado(a)",
+          "Fala"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Prezado(a) Senhor(a)\" es la fórmula estándar y respetuosa para abrir un e-mail formal en portugués."
+      },
+      {
+        "subtopicId": "tratamento-cortesia",
+        "instruction": "Elegí el tratamiento correcto para dirigirte con respeto a alguien en un contexto formal.",
+        "prompt": "Gostaria de perguntar se ___ teria disponibilidade para uma reunião amanhã.",
+        "options": [
+          "tu",
+          "o senhor",
+          "vós",
+          "contigo"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"O senhor\" es el tratamiento formal y respetuoso en portugués brasileño, a diferencia de \"tu\" que es informal."
+      },
+      {
+        "subtopicId": "conectores-argumentativos",
+        "instruction": "Elegí el conector que expresa causa correctamente.",
+        "prompt": "Muitos jovens preferem trabalhar remotamente, ___ a maior flexibilidade de horários.",
+        "options": [
+          "mas",
+          "portanto",
+          "além",
+          "devido a"
+        ],
+        "correctIndex": 3,
+        "explanation": "\"Devido a\" introduce la causa de algo, equivalente a \"debido a\" en español, y es el conector que corresponde en este contexto."
+      },
+      {
+        "subtopicId": "texto-opiniao",
+        "instruction": "Elegí el conector adecuado para introducir la conclusión de un texto de opinión.",
+        "prompt": "___, é fundamental que as empresas invistam em tecnologia sustentável.",
+        "options": [
+          "Em suma",
+          "Além disso",
+          "Por exemplo",
+          "Em primeiro lugar"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Em suma\" se usa para introducir la conclusión de un texto, resumiendo la idea principal."
+      }
+    ],
+    "pt-b2-vocabulario-atualidades": [
+      {
+        "subtopicId": "vocabulario-economia",
+        "instruction": "Elegí la palabra que completa correctamente este titular de economía.",
+        "prompt": "A ___ subiu 0,5% no mês passado, segundo o IBGE.",
+        "options": [
+          "inflação",
+          "imposto",
+          "dívida",
+          "mercado"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Inflação' es la palabra que se usa para hablar del aumento generalizado de precios, tema típico de los titulares económicos."
+      },
+      {
+        "subtopicId": "vocabulario-politica",
+        "instruction": "Elegí la palabra correcta para completar esta oración sobre política.",
+        "prompt": "As ___ presidenciais acontecem em outubro deste ano.",
+        "options": [
+          "eleições",
+          "elegências",
+          "votações",
+          "eleitorado"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Eleições' es la palabra correcta para referirse al proceso en el que se vota para elegir un cargo; 'elegências' no existe con ese sentido en portugués."
+      },
+      {
+        "subtopicId": "temas-sociales-actuales",
+        "instruction": "Elegí la palabra que completa correctamente esta oración sobre un tema social.",
+        "prompt": "O projeto busca reduzir a ___ social no país.",
+        "options": [
+          "desigualdade",
+          "igualdade",
+          "inclusão",
+          "pobreza"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Desigualdade social' es la expresión correcta para referirse a la diferencia de oportunidades o recursos entre grupos, que es lo que un proyecto busca reducir."
+      },
+      {
+        "subtopicId": "leer-una-noticia",
+        "instruction": "Elegí la respuesta correcta sobre la estructura de una noticia periodística.",
+        "prompt": "Qual é a função do \"lide\" (lead) em uma notícia?",
+        "options": [
+          "Resumir as informações principais no início do texto",
+          "Dar a opinião pessoal do jornalista",
+          "Listar as fontes consultadas ao final",
+          "Apresentar a conclusão do texto"
+        ],
+        "correctIndex": 0,
+        "explanation": "El 'lide' es el primer párrafo de la noticia y resume lo esencial (qué, quién, cuándo, dónde, cómo y por qué) para que el lector entienda rápido de qué se trata."
+      }
+    ],
+    "pt-b2-textos-narrativos-descritivos": [
+      {
+        "subtopicId": "estructura-narrativa",
+        "instruction": "Elegí el tiempo verbal correcto para describir una situación habitual en el pasado dentro de una narración.",
+        "prompt": "Quando eu ___ pequeno, eu sempre viajava com minha família nas férias.",
+        "options": [
+          "fui",
+          "era",
+          "tinha sido",
+          "estive"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para describir una característica o situación de fondo que se repetía en el pasado se usa el imperfecto (\"era\"), no el pretérito perfecto."
+      },
+      {
+        "subtopicId": "tecnicas-descriptivas",
+        "instruction": "Elegí la opción que describe el paisaje de forma más rica, evitando un simple intensificador.",
+        "prompt": "Qual das opções é uma descrição mais elaborada da paisagem?",
+        "options": [
+          "A paisagem era bem bonita.",
+          "A paisagem era muito bonita.",
+          "A paisagem era super bonita.",
+          "A paisagem parecia saída de uma pintura."
+        ],
+        "correctIndex": 3,
+        "explanation": "Usar una comparación o imagen, como \"parecia saída de uma pintura\", enriquece la descripción mucho más que repetir un intensificador como 'muito' o 'super'."
+      },
+      {
+        "subtopicId": "conectores-narrativos",
+        "instruction": "Elegí el conector que indica la acción siguiente en el orden de los hechos.",
+        "prompt": "Primeiro ela arrumou as malas; ___, chamou um táxi.",
+        "options": [
+          "por isso",
+          "enquanto",
+          "em seguida",
+          "embora"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Em seguida\" indica que una acción ocurre justo después de otra, marcando la secuencia temporal de los hechos."
+      },
+      {
+        "subtopicId": "resenha-livro-filme",
+        "instruction": "Elegí la expresión típica para recomendar una obra al final de una reseña.",
+        "prompt": "Qual expressão é típica para recomendar uma obra no final de uma resenha?",
+        "options": [
+          "Vale a pena conferir.",
+          "Em seguida, ele saiu de casa.",
+          "Por isso, ele decidiu voltar.",
+          "Era uma vez um reino distante."
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Vale a pena conferir\" es una fórmula típica del género reseña para recomendar una película o libro al cierre del texto."
+      }
+    ],
+    "pt-b2-debate-argumentacao": [
+      {
+        "subtopicId": "presentar-un-argumento",
+        "instruction": "Elegí la expresión correcta para presentar tu propia postura en un debate.",
+        "prompt": "___, acredito que a educação pública deveria receber mais investimentos.",
+        "options": [
+          "Por outro lado",
+          "No entanto",
+          "Do meu ponto de vista",
+          "Apesar disso"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Do meu ponto de vista\" es la expresión adecuada para introducir una opinión propia al presentar un argumento."
+      },
+      {
+        "subtopicId": "refutar-un-argumento",
+        "instruction": "Elegí la preposición correcta que acompaña al verbo \"discordar\".",
+        "prompt": "Eu discordo ___ sua opinião, pois os dados mostram outra realidade.",
+        "options": [
+          "de",
+          "com",
+          "em",
+          "por"
+        ],
+        "correctIndex": 0,
+        "explanation": "El verbo \"discordar\" en portugués se usa con la preposición \"de\", a diferencia del español \"discrepar con\"."
+      },
+      {
+        "subtopicId": "conectores-de-contraargumentacion",
+        "instruction": "Elegí el conector de concesión correcto para completar la oración.",
+        "prompt": "___ o projeto tenha custos altos, os benefícios a longo prazo compensam.",
+        "options": [
+          "Portanto",
+          "Embora",
+          "Porque",
+          "Além disso"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"Embora\" introduce una concesión y exige subjuntivo, por eso es el conector correcto en esta oración."
+      },
+      {
+        "subtopicId": "matizar-una-opinion",
+        "instruction": "Elegí la forma correcta del verbo para matizar la opinión con \"talvez\".",
+        "prompt": "Talvez ___ necessário repensar essa política.",
+        "options": [
+          "é",
+          "será",
+          "foi",
+          "seja"
+        ],
+        "correctIndex": 3,
+        "explanation": "Después de \"talvez\" se usa el presente de subjuntivo para matizar una afirmación, por eso corresponde \"seja\"."
+      }
+    ],
+    "pt-b2-expressoes-idiomaticas-intermedias": [
+      {
+        "subtopicId": "expresiones-idiomaticas-frecuentes",
+        "instruction": "Elegí el significado correcto de esta expresión idiomática.",
+        "prompt": "O que significa a expressão \"pagar o pato\"?",
+        "options": [
+          "Assumir a culpa por algo que não fez",
+          "Pagar uma conta muito cara",
+          "Comprar um animal de estimação",
+          "Fazer um favor a alguém"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Pagar o pato\" significa asumir las consecuencias de algo que hizo otra persona, equivalente a \"pagar los platos rotos\" en español."
+      },
+      {
+        "subtopicId": "metaforas-uso-comun",
+        "instruction": "Elegí la palabra que completa correctamente esta metáfora de uso común.",
+        "prompt": "Ela é muito realista, sempre tem os pés no ___.",
+        "options": [
+          "chão",
+          "céu",
+          "ar",
+          "mundo"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Ter os pés no chão\" es una metáfora casi igual a la española \"tener los pies en la tierra\", y significa ser realista."
+      },
+      {
+        "subtopicId": "expresiones-coloquiales-regionales",
+        "instruction": "Elegí la región de Brasil donde esta expresión coloquial es típica.",
+        "prompt": "A expressão \"oxente\", usada para expressar surpresa, é típica de qual região do Brasil?",
+        "options": [
+          "Nordeste",
+          "Sul",
+          "Sudeste",
+          "Centro-Oeste"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Oxente\" es una expresión coloquial de sorpresa muy característica del habla del Nordeste brasileño."
+      },
+      {
+        "subtopicId": "falsos-amigos-espanhol",
+        "instruction": "Elegí el significado correcto de esta palabra, que es un falso amigo con el español.",
+        "prompt": "O que significa \"embaraçada\" em português?",
+        "options": [
+          "Envergonhada",
+          "Grávida",
+          "Cansada",
+          "Irritada"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Embaraçada\" significa avergonzada en portugués, y no \"embarazada\" como podría pensar un hispanohablante por la semejanza de las palabras."
+      }
+    ],
+    "pt-c1-concordancia": [
+      {
+        "subtopicId": "sujeito-composto",
+        "instruction": "Elegí la forma verbal correcta para concordar con \"a gente\".",
+        "prompt": "A gente ___ para a praia no fim de semana.",
+        "options": [
+          "vai",
+          "vamos",
+          "vão",
+          "foi"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"A gente\" concuerda siempre en tercera persona del singular, por eso es \"a gente vai\" y no \"a gente vamos\", aunque el significado sea \"nosotros\"."
+      },
+      {
+        "subtopicId": "haver-fazer-coletivos",
+        "instruction": "Elegí la forma correcta del verbo \"haver\" en esta oración impersonal.",
+        "prompt": "___ muitas pessoas na festa ontem.",
+        "options": [
+          "Havia",
+          "Haviam",
+          "Houveram",
+          "Tinham"
+        ],
+        "correctIndex": 0,
+        "explanation": "El verbo \"haver\" en sentido impersonal (equivalente a \"había\") es siempre invariable en tercera persona del singular, sin importar si lo que sigue está en plural."
+      },
+      {
+        "subtopicId": "concordancia-se-ser",
+        "instruction": "Elegí la forma verbal correcta después de \"que\" en esta construcción con \"fui eu\".",
+        "prompt": "Fui eu que ___ o problema sozinho.",
+        "options": [
+          "resolvi",
+          "resolveu",
+          "resolvemos",
+          "resolveram"
+        ],
+        "correctIndex": 0,
+        "explanation": "En \"fui eu que\", el verbo que sigue a \"que\" concuerda con \"eu\" y no con una tercera persona, por eso es \"resolvi\" y no \"resolveu\"."
+      },
+      {
+        "subtopicId": "concordancia-nominal",
+        "instruction": "Elegí la forma correcta de esta palabra que funciona como adverbio invariable.",
+        "prompt": "Ela ficou ___ cansada depois do trabalho.",
+        "options": [
+          "meio",
+          "meia",
+          "meios",
+          "meias"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando \"meio\" funciona como adverbio (equivalente a \"medio\" en español, con sentido de \"un poco\"), es invariable y no concuerda en género con el adjetivo que sigue."
+      }
+    ],
+    "pt-b2-compreensao-audio": [
+      {
+        "subtopicId": "entender-habla-rapida",
+        "instruction": "Elegí la forma reducida que se usa en el habla rápida informal de Brasil para la palabra 'para'.",
+        "prompt": "Vou ___ a casa da minha avó agora.",
+        "options": [
+          "pra",
+          "por",
+          "paro",
+          "pera"
+        ],
+        "correctIndex": 0,
+        "explanation": "En el habla rápida informal de Brasil, 'para' se reduce comúnmente a \"pra\"."
+      },
+      {
+        "subtopicId": "acentos-regionales-basicos",
+        "instruction": "Elegí la región de Brasil donde es típico pronunciar el 'r' al final de las palabras de forma retrofleja, parecida al 'r' del inglés.",
+        "prompt": "Em qual região do Brasil esse traço de pronúncia é mais característico?",
+        "options": [
+          "Nordeste",
+          "Interior de São Paulo",
+          "Sul",
+          "Rio de Janeiro"
+        ],
+        "correctIndex": 1,
+        "explanation": "El 'r' retroflejo al final de palabra, llamado 'r caipira', es un rasgo típico del habla del interior de São Paulo y zonas cercanas."
+      },
+      {
+        "subtopicId": "estrategias-de-escucha",
+        "instruction": "Elegí la mejor estrategia para seguir un audio en portugués aunque no entiendas cada palabra.",
+        "prompt": "Qual é a melhor estratégia de escuta ativa quando você não entende todas as palavras de um áudio?",
+        "options": [
+          "Parar o áudio e traduzir cada palavra",
+          "Repetir o áudio dez vezes seguidas",
+          "Focar nas palavras-chave e no contexto geral",
+          "Ignorar o áudio e ler a transcrição depois"
+        ],
+        "correctIndex": 2,
+        "explanation": "La escucha activa consiste en apoyarte en las palabras clave y el contexto general para entender el sentido, sin trabarte por cada palabra suelta."
+      },
+      {
+        "subtopicId": "tomar-notas-escuchando",
+        "instruction": "Elegí la estrategia más efectiva para tomar notas mientras escuchás un audio en portugués.",
+        "prompt": "Qual é uma boa estratégia ao tomar notas durante um áudio em português?",
+        "options": [
+          "Escrever cada palavra igual você ouve",
+          "Traduzir tudo para o espanhol primeiro",
+          "Escrever somente depois que o áudio terminar",
+          "Usar abreviaturas e símbolos para as ideias principais"
+        ],
+        "correctIndex": 3,
+        "explanation": "Usar abreviaturas y símbolos te permite anotar las ideas principales sin perder el ritmo del audio, a diferencia de escribir palabra por palabra."
+      }
+    ],
+    "pt-c1-colocacao-pronominal": [
+      {
+        "subtopicId": "proclise",
+        "instruction": "Elegí la opción con la colocación pronominal correcta según la norma culta.",
+        "prompt": "Nunca ___ a verdade sobre o caso.",
+        "options": [
+          "lhe disse",
+          "disse-lhe",
+          "disse lhe",
+          "se lhe disse"
+        ],
+        "correctIndex": 0,
+        "explanation": "La palabra 'nunca' es un atractor de próclise, así que el pronombre tiene que ir antes del verbo: 'lhe disse'."
+      },
+      {
+        "subtopicId": "enclise",
+        "instruction": "Elegí la opción con la colocación pronominal correcta según la norma culta.",
+        "prompt": "___ a carta ontem à tarde.",
+        "options": [
+          "Lhe entreguei",
+          "Entreguei lhe",
+          "Entreguei-lhe",
+          "Me entreguei lhe"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como la oración empieza con el verbo y no hay ningún atractor antes, la norma culta pide ênclise con guión: 'Entreguei-lhe'."
+      },
+      {
+        "subtopicId": "mesoclise",
+        "instruction": "Elegí la forma mesoclítica correcta para completar la oración.",
+        "prompt": "Se tiver tempo, ___ a resposta amanhã.",
+        "options": [
+          "lhe darei",
+          "darei-lhe",
+          "dar-lhe-ei",
+          "lhe-darei"
+        ],
+        "correctIndex": 2,
+        "explanation": "En futuro del indicativo sin atractor antes del verbo, la norma culta exige mesóclise: el pronombre se intercala como 'dar-lhe-ei'."
+      },
+      {
+        "subtopicId": "locucoes-verbais",
+        "instruction": "Elegí la opción que refleja cómo se ubica el pronombre en esta locución verbal en Brasil, incluso en registro formal.",
+        "prompt": "Eu vou ___ a novidade a ela amanhã.",
+        "options": [
+          "vou contar-lhe",
+          "lhe vou contar",
+          "vou-lhe contar",
+          "vou lhe contar"
+        ],
+        "correctIndex": 3,
+        "explanation": "En Brasil, a diferencia de Portugal, el pronombre se coloca antes del infinitivo en las locuciones verbales también en registro formal, por eso 'vou lhe contar' es la forma aceptada."
+      }
+    ],
+    "pt-c1-matizes-significado": [
+      {
+        "subtopicId": "verbos-con-multiples-significados",
+        "instruction": "Elegí el verbo que completa correctamente la oración según el sentido que se busca.",
+        "prompt": "Depois de tanto tempo no fogo, a sopa ___ fria e ninguém quis comer.",
+        "options": [
+          "ficou",
+          "deu",
+          "passou",
+          "tirou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Acá 'ficar' se usa con el sentido de 'quedar/resultar en un estado', como en 'ficou fria', por eso es la opción correcta."
+      },
+      {
+        "subtopicId": "sinonimos-y-diferencias-finas",
+        "instruction": "Elegí el verbo que expresa mejor la capacidad visual de percibir algo, no la acción de mirar o ver en general.",
+        "prompt": "Sem os óculos, ele não consegue ___ bem as placas da rua.",
+        "options": [
+          "ver",
+          "olhar",
+          "assistir",
+          "enxergar"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Enxergar' se refiere puntualmente a la capacidad física de distinguir algo con la vista, que es justo lo que falla sin los lentes."
+      },
+      {
+        "subtopicId": "falsos-cognados-avanzados",
+        "instruction": "Elegí el significado correcto de la palabra destacada en portugués.",
+        "prompt": "O prato estava muito esquisito, por isso não repeti.",
+        "options": [
+          "Raro o extraño",
+          "Delicioso",
+          "Exquisito o refinado",
+          "Caro"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Esquisito' en portugués es un falso cognado que significa 'raro' o 'extraño', no 'exquisito' como en español."
+      },
+      {
+        "subtopicId": "ambiguedad-y-precision-lexica",
+        "instruction": "Elegí la reformulación que elimina la ambigüedad y deja en claro que el problema es de Pedro.",
+        "prompt": "La frase 'Maria falou com Pedro sobre seu problema' es ambigua porque 'seu' puede referirse a Maria o a Pedro. ¿Cuál opción aclara que el problema es de Pedro?",
+        "options": [
+          "Maria falou com Pedro sobre o problema dele.",
+          "Maria falou com Pedro sobre seu problema.",
+          "Maria falou com Pedro sobre problema seu.",
+          "Maria falou com Pedro sobre o problema de ambos."
+        ],
+        "correctIndex": 0,
+        "explanation": "Reemplazar 'seu' por 'o problema dele' elimina la ambigüedad, ya que 'dele' remite claramente a Pedro y no a Maria."
+      }
+    ],
+    "pt-c1-generos-textuais-formais": [
+      {
+        "subtopicId": "ensaio-academico",
+        "instruction": "Elegí la opción que mantiene el registro impersonal propio del ensayo académico.",
+        "prompt": "___ que a hipótese inicial não se confirma.",
+        "options": [
+          "Constata-se",
+          "Eu constato",
+          "A gente constata",
+          "Eu acho"
+        ],
+        "correctIndex": 0,
+        "explanation": "El ensayo académico evita la primera persona y usa construcciones impersonales con 'se', como 'constata-se'."
+      },
+      {
+        "subtopicId": "relatorio-tecnico",
+        "instruction": "Elegí la opción que corresponde al lenguaje objetivo de un informe técnico.",
+        "prompt": "No relatório técnico, os dados ___ na tabela 2.",
+        "options": [
+          "a gente apresenta",
+          "eu apresento",
+          "são apresentados",
+          "apresentei"
+        ],
+        "correctIndex": 2,
+        "explanation": "El informe técnico usa voz pasiva impersonal para mantener objetividad, por eso 'são apresentados' es la forma correcta."
+      },
+      {
+        "subtopicId": "carta-formal-complexa",
+        "instruction": "Elegí la fórmula de cierre correcta según la norma culta para una carta formal.",
+        "prompt": "Sem mais para o momento, ___ atenciosamente.",
+        "options": [
+          "me subscrevo",
+          "subscrevo me",
+          "subscrevo-me",
+          "me subscrevendo"
+        ],
+        "correctIndex": 2,
+        "explanation": "En el cierre de una carta formal sin ningún atractor antes del verbo, la norma culta pide ênclise con guión: 'subscrevo-me'."
+      },
+      {
+        "subtopicId": "estrutura-registro-generos",
+        "instruction": "Elegí el género textual que corresponde a esta estructura fija.",
+        "prompt": "Qual gênero costuma seguir a estrutura: resumo, introdução, metodologia, resultados e conclusão?",
+        "options": [
+          "Carta formal",
+          "E-mail informal",
+          "Ensaio acadêmico",
+          "Relatório técnico"
+        ],
+        "correctIndex": 3,
+        "explanation": "Esa secuencia fija de secciones es propia del informe técnico, a diferencia del ensayo o la carta formal que tienen otra estructura."
+      }
+    ],
+    "pt-c1-linguagem-juridica-tecnica": [
+      {
+        "subtopicId": "vocabulario-legal-y-administrativo",
+        "instruction": "Elegí la palabra correcta para completar la oración en lenguaje legal.",
+        "prompt": "A ___ terceira do contrato trata do prazo de pagamento.",
+        "options": [
+          "clausura",
+          "cláusula",
+          "artículo",
+          "anexo"
+        ],
+        "correctIndex": 1,
+        "explanation": "En portugués 'cláusula' es la parte de un contrato, mientras que 'clausura' es un falso amigo que significa encierro o cierre de un lugar."
+      },
+      {
+        "subtopicId": "vocabulario-tecnico-y-profesional",
+        "instruction": "Elegí la palabra correcta para completar la oración técnica.",
+        "prompt": "Este produto possui ___ de 12 meses contra defeitos de fabricação.",
+        "options": [
+          "fiança",
+          "seguro",
+          "garantia",
+          "garantía"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Garantia' es la palabra correcta en portugués para referirse a la cobertura del fabricante, con una sola 'i' y sin tilde como en español."
+      },
+      {
+        "subtopicId": "formularios-y-documentos-oficiales",
+        "instruction": "Elegí qué información pide este campo frecuente en formularios oficiales brasileños.",
+        "prompt": "No formulário, o campo CEP pede:",
+        "options": [
+          "o número de telefone",
+          "o estado civil",
+          "o código postal",
+          "a data de nascimento"
+        ],
+        "correctIndex": 2,
+        "explanation": "CEP significa 'Código de Endereçamento Postal', equivalente al código postal argentino."
+      },
+      {
+        "subtopicId": "interpretar-un-contrato-simple",
+        "instruction": "Elegí el verbo que corresponde al lenguaje jurídico de contratos.",
+        "prompt": "O contrato pode ser ___ por qualquer das partes mediante aviso prévio de 30 dias.",
+        "options": [
+          "anulado",
+          "suspenso",
+          "cancelado",
+          "rescindido"
+        ],
+        "correctIndex": 3,
+        "explanation": "En lenguaje contractual, 'rescindido' es el término técnico para la finalización anticipada de un contrato por alguna de las partes."
+      }
+    ],
+    "pt-c1-coesao": [
+      {
+        "subtopicId": "referenciacao",
+        "instruction": "Elegí la opción que retoma correctamente lo mencionado antes, respetando el género y el registro formal.",
+        "prompt": "A empresa lançou um aplicativo revolucionário para pagamentos digitais. ___ ferramenta já tem mais de um milhão de usuários.",
+        "options": [
+          "O mesmo",
+          "A referida",
+          "Esse",
+          "Aquilo"
+        ],
+        "correctIndex": 1,
+        "explanation": "Como 'ferramenta' es femenino, la expresión formal de retomada que concuerda en género es \"A referida\", mientras que las otras opciones o no concuerdan en género o no son adecuadas en registro culto."
+      },
+      {
+        "subtopicId": "demonstrativos",
+        "instruction": "Elegí el demostrativo que anuncia correctamente algo que todavía no se dijo.",
+        "prompt": "Quero dizer uma coisa importante: ___ decisão não foi fácil de tomar.",
+        "options": [
+          "essa",
+          "aquela",
+          "esta",
+          "aquele"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando el demostrativo anticipa algo que se va a decir a continuación, corresponde usar \"esta\" (o \"isto\"), no \"essa\", que se usa para retomar algo ya dicho."
+      },
+      {
+        "subtopicId": "conectores-logicos",
+        "instruction": "Elegí el conector que expresa la condición correcta en registro culto.",
+        "prompt": "Vou aceitar a proposta, ___ vocês cumpram o prazo estabelecido.",
+        "options": [
+          "ainda que",
+          "de modo que",
+          "desde que",
+          "a não ser que"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Desde que\" introduce una condición necesaria para que se cumpla la acción principal, a diferencia de \"ainda que\" (concesión) o \"de modo que\" (consecuencia)."
+      },
+      {
+        "subtopicId": "marcadores-fala",
+        "instruction": "Elegí el marcador típico de la charla informal que sirve para reformular una idea, equivalente a 'o sea'.",
+        "prompt": "Na fala informal, qual marcador costuma ser usado para reformular uma ideia?",
+        "options": [
+          "né",
+          "tipo",
+          "aí",
+          "quer dizer"
+        ],
+        "correctIndex": 3,
+        "explanation": "\"Quer dizer\" funciona como marcador de reformulación (equivalente a 'o sea'), mientras que 'né' busca confirmación, 'tipo' aproxima o ejemplifica y 'aí' marca secuencia narrativa."
+      }
+    ],
+    "pt-c1-discurso-academico": [
+      {
+        "subtopicId": "estructura-presentacion-oral",
+        "instruction": "Elegí la frase apropiada para marcar el inicio de la conclusión en una presentación académica oral.",
+        "prompt": "¿Qué frase usás para introducir la sección final de una apresentação acadêmica?",
+        "options": [
+          "Para concluir, gostaria de retomar os pontos principais.",
+          "Em primeiro lugar, vou apresentar o tema.",
+          "Como eu disse antes, o tema é complexo.",
+          "Por outro lado, existem outras visões."
+        ],
+        "correctIndex": 0,
+        "explanation": "'Para concluir' es el conector típico para abrir la conclusión, mientras que las otras opciones corresponden a la introducción o al desarrollo."
+      },
+      {
+        "subtopicId": "conectores-academicos",
+        "instruction": "Elegí el conector que expresa contraste entre dos ideas en registro académico.",
+        "prompt": "Os resultados foram positivos; ___, é preciso considerar as limitações do estudo.",
+        "options": [
+          "No entanto",
+          "Por exemplo",
+          "Além disso",
+          "Ou seja"
+        ],
+        "correctIndex": 0,
+        "explanation": "'No entanto' introduce un contraste con lo dicho antes, que es justo lo que pide la oración, a diferencia de los otros conectores que suman o aclaran ideas."
+      },
+      {
+        "subtopicId": "citar-referenciar-ideas",
+        "instruction": "Elegí la oración que cita correctamente a un autor en portugués académico.",
+        "prompt": "¿Cuál de estas oraciones cita correctamente a un autor?",
+        "options": [
+          "Segundo com Ferreira (2019), o fenômeno é recorrente.",
+          "De acordo com Ferreira (2019), o fenômeno é recorrente.",
+          "Conforme à Ferreira (2019), o fenômeno é recorrente.",
+          "Baseado em com Ferreira (2019), o fenômeno é recorrente."
+        ],
+        "correctIndex": 1,
+        "explanation": "'De acordo com' es la forma correcta de citar a un autor, mientras que las otras opciones agregan preposiciones de más por calco del español."
+      },
+      {
+        "subtopicId": "lenguaje-defensa-tesis",
+        "instruction": "Elegí la frase más apropiada para justificar una decisión metodológica durante la defensa de un trabajo.",
+        "prompt": "Durante a defesa, o aluno quer justificar uma escolha metodológica. Qual frase é apropriada?",
+        "options": [
+          "A gente escolheu isso porque achamos melhor.",
+          "Optamos por essa metodologia tendo em vista que ela permite maior precisão nos dados.",
+          "Fizemos assim porque sim.",
+          "Talvez isso esteja certo, não sei bem."
+        ],
+        "correctIndex": 1,
+        "explanation": "Esa opción usa un registro formal y justifica la decisión con un argumento concreto, como se espera en una defensa académica."
+      }
+    ],
+    "pt-c1-variacao": [
+      {
+        "subtopicId": "tu-voce",
+        "instruction": "Elegí la forma de tratamiento informal más usada en Brasil.",
+        "prompt": "No português do Brasil, a forma mais comum para tratar alguém informalmente é ___, enquanto em Portugal predomina o uso de 'tu'.",
+        "options": [
+          "você",
+          "tu",
+          "o senhor",
+          "vós"
+        ],
+        "correctIndex": 0,
+        "explanation": "En Brasil 'você' es la forma informal más extendida, mientras que en Portugal se prefiere 'tu' para el trato informal."
+      },
+      {
+        "subtopicId": "gramatica-variantes",
+        "instruction": "Elegí la preposición que se usa en Portugal para expresar una acción en curso con infinitivo.",
+        "prompt": "Em Portugal, para dizer que uma ação está acontecendo, diz-se 'estou ___ fazer', enquanto no Brasil se diz 'estou fazendo'.",
+        "options": [
+          "a",
+          "de",
+          "para",
+          "em"
+        ],
+        "correctIndex": 0,
+        "explanation": "En Portugal se usa la estructura 'estar a + infinitivo', con la preposición 'a', en lugar del gerundio que se usa en Brasil."
+      },
+      {
+        "subtopicId": "vocabulario-variantes",
+        "instruction": "Elegí la palabra que se usa en Brasil para el vehículo que en Portugal se llama 'autocarro'.",
+        "prompt": "A palavra usada no Brasil para o veículo que em Portugal se chama 'autocarro' é ___.",
+        "options": [
+          "ônibus",
+          "carro",
+          "trem",
+          "camiaão"
+        ],
+        "correctIndex": 0,
+        "explanation": "En Brasil se usa 'ônibus' para referirse a ese vehículo de transporte público, mientras que en Portugal se dice 'autocarro'."
+      },
+      {
+        "subtopicId": "ortografia-pronuncia",
+        "instruction": "Elegí cómo se escribe en portugués de Brasil la palabra que en Portugal se escribe 'receção'.",
+        "prompt": "No português do Brasil, a palavra que em Portugal se escreve 'receção' é escrita como ___.",
+        "options": [
+          "recepção",
+          "receçao",
+          "recessão",
+          "recepcion"
+        ],
+        "correctIndex": 0,
+        "explanation": "En Brasil se mantiene la 'p' y se escribe 'recepção', mientras que en Portugal esa letra muda se omite y queda 'receção'."
+      }
+    ],
+    "pt-c1-expressoes-idiomaticas": [
+      {
+        "subtopicId": "expressoes-dia-a-dia",
+        "instruction": "Elegí la expresión correcta para completar la oración con el sentido de 'buscar una solución'.",
+        "prompt": "Não se preocupe, eu vou ___ nisso.",
+        "options": [
+          "tomar um jeito",
+          "pegar um jeito",
+          "dar um jeito",
+          "fazer um jeito"
+        ],
+        "correctIndex": 2,
+        "explanation": "La expresión fija es 'dar um jeito', que significa encontrarle la vuelta a algo o resolverlo."
+      },
+      {
+        "subtopicId": "futebol-comida",
+        "instruction": "Elegí cómo se completa esta expresión brasileña que viene de la comida y significa 'cargar con la culpa de otro'.",
+        "prompt": "Eu não fiz nada, mas acabei pagando ___ pela confusão.",
+        "options": [
+          "a conta",
+          "o peixe",
+          "os pratos quebrados",
+          "o pato"
+        ],
+        "correctIndex": 3,
+        "explanation": "La expresión brasileña es 'pagar o pato', distinta de la imagen que usamos en español con los platos rotos."
+      },
+      {
+        "subtopicId": "bichos-corpo",
+        "instruction": "Elegí la expresión con animal correcta para completar la oración con el sentido de 'aguantarse algo desagradable'.",
+        "prompt": "Tive que ___ e aceitar a decisão, mesmo sem concordar.",
+        "options": [
+          "engolir rãs",
+          "comer sapos",
+          "tragar rãs",
+          "engolir sapos"
+        ],
+        "correctIndex": 3,
+        "explanation": "La expresión fija es 'engolir sapos', que significa tragarse algo desagradable sin protestar."
+      },
+      {
+        "subtopicId": "parecidas-diferentes",
+        "instruction": "Elegí la expresión correcta en portugués, sin calcar la expresión equivalente del español.",
+        "prompt": "Ele estava só ___ de mim, não falou sério.",
+        "options": [
+          "tomando o cabelo",
+          "puxando a perna",
+          "tirando sarro",
+          "tirando o cabelo"
+        ],
+        "correctIndex": 2,
+        "explanation": "En portugués se dice 'tirar sarro de alguém' para tomarle el pelo a alguien, no existe un calco literal con 'cabelo'."
+      }
+    ],
+    "pt-c1-retorica-estilo": [
+      {
+        "subtopicId": "figuras-retoricas-comuns",
+        "instruction": "Elegí qué figura retórica está presente en la frase en portugués.",
+        "prompt": "Identifique a figura de linguagem em: 'O tempo é um rio que tudo arrasta.'",
+        "options": [
+          "Hipérbole",
+          "Metonímia",
+          "Metáfora",
+          "Eufemismo"
+        ],
+        "correctIndex": 2,
+        "explanation": "Es una metáfora porque se compara el tiempo con un río sin usar 'como' ni otro conector comparativo explícito."
+      },
+      {
+        "subtopicId": "ironia-e-humor",
+        "instruction": "Elegí el tono correcto de la frase según el contexto.",
+        "prompt": "Depois de perder o trem por dez segundos, ele disse: 'Que sorte a minha!' Qual é o tom da frase?",
+        "options": [
+          "Irônico",
+          "Literal",
+          "Nostálgico",
+          "Solene"
+        ],
+        "correctIndex": 0,
+        "explanation": "Es irónico porque dice lo opuesto de lo que siente, ya que perder el tren no es tener suerte."
+      },
+      {
+        "subtopicId": "registros-literarios",
+        "instruction": "Elegí qué registro literario corresponde al fragmento.",
+        "prompt": "Qual registro está presente em: 'Ó vós que credes na fortuna, escutai minhas palavras'?",
+        "options": [
+          "Coloquial",
+          "Arcaico",
+          "Formal",
+          "Poético"
+        ],
+        "correctIndex": 1,
+        "explanation": "El uso de 'vós' y 'credes' son marcas típicas del registro arcaico en portugués."
+      },
+      {
+        "subtopicId": "tom-e-intencao",
+        "instruction": "Elegí el tono predominante del fragmento.",
+        "prompt": "No fragmento 'Ah, como tudo mudou... Nada mais é como era antes', qual é o tom predominante?",
+        "options": [
+          "Crítico",
+          "Irônico",
+          "Solene",
+          "Nostálgico"
+        ],
+        "correctIndex": 3,
+        "explanation": "Es nostálgico porque el autor lamenta con melancolía los cambios respecto al pasado."
       }
     ]
   }

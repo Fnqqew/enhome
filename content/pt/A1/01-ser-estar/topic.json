@@ -41,6 +41,26 @@
         {
           "target": "Nós somos amigos.",
           "es": "Somos amigos."
+        },
+        {
+          "target": "Olá, como você está?",
+          "es": "Hola, ¿cómo estás?"
+        },
+        {
+          "target": "Ele é meu amigo.",
+          "es": "Él es mi amigo."
+        },
+        {
+          "target": "Elas são de Buenos Aires.",
+          "es": "Ellas son de Buenos Aires."
+        },
+        {
+          "target": "A gente vai ao cinema hoje.",
+          "es": "Nosotros vamos al cine hoy."
+        },
+        {
+          "target": "Boa noite, pessoal!",
+          "es": "¡Buenas noches, gente!"
         }
       ],
       "commonMistakes": [
@@ -48,6 +68,16 @@
           "wrong": "Tu é brasileiro?",
           "right": "Você é brasileiro?",
           "why": "En la mayor parte de Brasil se usa você, no tu, y el verbo va en tercera persona."
+        },
+        {
+          "wrong": "Vocês é brasileiros.",
+          "right": "Vocês são brasileiros.",
+          "why": "Vocês se conjuga como eles, en plural: são, no é."
+        },
+        {
+          "wrong": "A gente somos felizes.",
+          "right": "A gente é feliz.",
+          "why": "Aunque a gente significa 'nosotros', siempre se conjuga en tercera persona del singular, como ele/ela, nunca en plural."
         }
       ],
       "chunks": [
@@ -95,7 +125,8 @@
         "eu sou, você/ele/ela é, nós somos, vocês/eles/elas são.",
         "Ser se usa para identidad, nacionalidad, profesión, características permanentes y la hora: É uma hora.",
         "El origen se dice con ser de: Eu sou de Rosario.",
-        "Ojo: é lleva tilde y significa 'es'; e sin tilde significa 'y'."
+        "Ojo: é lleva tilde y significa 'es'; e sin tilde significa 'y'.",
+        "En español el verbo 'ser' tiene seis formas distintas (soy, eres, es, somos, sois, son), pero en portugués brasileño se usan solo cuatro formas, porque você se conjuga igual que ele/ela (é) y vocês igual que eles/elas (são)."
       ],
       "examples": [
         {
@@ -109,6 +140,26 @@
         {
           "target": "Eles são muito simpáticos.",
           "es": "Ellos son muy simpáticos."
+        },
+        {
+          "target": "Nós somos de Córdoba.",
+          "es": "Nosotros somos de Córdoba."
+        },
+        {
+          "target": "Nova York é uma cidade grande.",
+          "es": "Nueva York es una ciudad grande."
+        },
+        {
+          "target": "Vocês são estudantes?",
+          "es": "¿Ustedes son estudiantes?"
+        },
+        {
+          "target": "Ela é muito inteligente.",
+          "es": "Ella es muy inteligente."
+        },
+        {
+          "target": "São nove horas da manhã.",
+          "es": "Son las nueve de la mañana."
         }
       ],
       "commonMistakes": [
@@ -121,6 +172,11 @@
           "wrong": "Ela e médica.",
           "right": "Ela é médica.",
           "why": "Sin tilde, e significa 'y'; el verbo es é."
+        },
+        {
+          "wrong": "Nós é amigos.",
+          "right": "Nós somos amigos.",
+          "why": "Con nós siempre se usa somos; é corresponde a ele, ela o você, no a nós."
         }
       ],
       "chunks": [
@@ -168,7 +224,8 @@
         "eu estou, você/ele/ela está, nós estamos, vocês/eles/elas estão.",
         "Estar se usa para estados que cambian (cansado, feliz, doente) y para la ubicación de personas y cosas.",
         "Para la ubicación de lugares fijos (ciudades, edificios) se usa ficar: O museu fica no centro.",
-        "En la conversación se acorta: tô, tá, tamos, tão."
+        "En la conversación se acorta: tô, tá, tamos, tão.",
+        "En español usamos 'estar' tanto para la ubicación de personas como de lugares fijos (el museo está en el centro), pero en portugués brasileño, para lugares fijos se prefiere el verbo ficar: o museu fica no centro."
       ],
       "examples": [
         {
@@ -182,6 +239,26 @@
         {
           "target": "A praia fica perto do hotel.",
           "es": "La playa queda cerca del hotel."
+        },
+        {
+          "target": "Nós estamos em casa.",
+          "es": "Nosotros estamos en casa."
+        },
+        {
+          "target": "Vocês estão prontos?",
+          "es": "¿Ustedes están listos?"
+        },
+        {
+          "target": "Ele está doente hoje.",
+          "es": "Él está enfermo hoy."
+        },
+        {
+          "target": "Eu estou com frio.",
+          "es": "Tengo frío."
+        },
+        {
+          "target": "O banco fica ao lado da farmácia.",
+          "es": "El banco queda al lado de la farmacia."
         }
       ],
       "commonMistakes": [
@@ -194,6 +271,11 @@
           "wrong": "O Rio de Janeiro está no Brasil.",
           "right": "O Rio de Janeiro fica no Brasil.",
           "why": "Para lugares que no se mueven se prefiere ficar."
+        },
+        {
+          "wrong": "Nós está em casa.",
+          "right": "Nós estamos em casa.",
+          "why": "Con nós el verbo estar es estamos; está es la forma de ele, ela o você."
         }
       ],
       "chunks": [
@@ -248,7 +330,8 @@
         "Não va antes del verbo: Eu não sou de São Paulo.",
         "Las preguntas de sí o no mantienen el orden y suben la entonación: Você está bem?",
         "Palabras de pregunta: Quem? O que? Onde? Quando? Como? Qual? Quanto?",
-        "Para responder 'sí' se suele repetir el verbo: Você é casado? — Sou."
+        "Para responder 'sí' se suele repetir el verbo: Você é casado? — Sou.",
+        "En español las preguntas de sí o no suelen marcarse solo con la entonación o el orden (¿Vos sos de aquí?), y en portugués brasileño funciona igual: no hace falta invertir el orden de las palabras, alcanza con subir la entonación: Você é daqui?"
       ],
       "examples": [
         {
@@ -262,6 +345,26 @@
         {
           "target": "Qual é o seu nome?",
           "es": "¿Cuál es tu nombre?"
+        },
+        {
+          "target": "Ela não é médica.",
+          "es": "Ella no es médica."
+        },
+        {
+          "target": "Vocês não estão cansados?",
+          "es": "¿Ustedes no están cansados?"
+        },
+        {
+          "target": "Onde fica o banheiro?",
+          "es": "¿Dónde queda el baño?"
+        },
+        {
+          "target": "Quando é a festa?",
+          "es": "¿Cuándo es la fiesta?"
+        },
+        {
+          "target": "Quanto custa isso?",
+          "es": "¿Cuánto cuesta esto?"
         }
       ],
       "commonMistakes": [
@@ -274,6 +377,11 @@
           "wrong": "Que é seu nome?",
           "right": "Qual é o seu nome?",
           "why": "Para preguntar el nombre se usa qual."
+        },
+        {
+          "wrong": "Você não é cansado?",
+          "right": "Você não está cansado?",
+          "why": "Cansado es un estado pasajero, así que va con estar y no con ser."
         }
       ],
       "chunks": [
@@ -315,7 +423,8 @@
       "keyPoints": [
         "Estructura: nombre (Meu nome é…), origen, profesión, dónde vivís y cómo estás.",
         "La edad se dice con ter: Eu tenho 30 anos.",
-        "Para decir dónde vivís: Eu moro em Córdoba."
+        "Para decir dónde vivís: Eu moro em Córdoba.",
+        "En español decimos 'tengo 28 años' con el verbo tener, y en portugués también se usa ter (eu tenho 28 anos) y no ser, aunque en otros contextos de identidad sí usemos ser."
       ],
       "examples": [
         {
@@ -329,6 +438,26 @@
         {
           "target": "Estou muito feliz de estar aqui.",
           "es": "Estoy muy contento de estar acá."
+        },
+        {
+          "target": "Sou argentino e estou morando no Brasil.",
+          "es": "Soy argentino y estoy viviendo en Brasil."
+        },
+        {
+          "target": "Ele se chama Pedro e tem 25 anos.",
+          "es": "Él se llama Pedro y tiene 25 años."
+        },
+        {
+          "target": "Nós somos de Rosario, mas moramos em Curitiba.",
+          "es": "Nosotros somos de Rosario, pero vivimos en Curitiba."
+        },
+        {
+          "target": "Estou um pouco nervoso, mas tudo bem.",
+          "es": "Estoy un poco nervioso, pero todo bien."
+        },
+        {
+          "target": "Qual é a sua profissão?",
+          "es": "¿Cuál es tu profesión?"
         }
       ],
       "commonMistakes": [
@@ -341,6 +470,11 @@
           "wrong": "Eu moro no Córdoba.",
           "right": "Eu moro em Córdoba.",
           "why": "La mayoría de las ciudades no llevan artículo: em Córdoba, em São Paulo."
+        },
+        {
+          "wrong": "Eu sou morando em São Paulo.",
+          "right": "Eu estou morando em São Paulo.",
+          "why": "Para describir una acción en curso se usa estar + gerúndio, no el verbo ser."
         }
       ],
       "chunks": [

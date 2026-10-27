@@ -27,7 +27,8 @@
       "keyPoints": [
         "o (el), a (la), os (los), as (las).",
         "En Brasil es común poner artículo delante de los nombres propios en la charla: o Pedro, a Ana.",
-        "Los países suelen llevar artículo: o Brasil, a Argentina; las ciudades, en general no: São Paulo."
+        "Los países suelen llevar artículo: o Brasil, a Argentina; las ciudades, en general no: São Paulo.",
+        "En español el artículo definido cambia según género y número (el, la, los, las), y en portugués también cambia (o, a, os, as), pero además en Brasil se suele usar el artículo delante de nombres propios de personas, algo que en español no se hace: 'A Maria chegou' (Llegó María, sin artículo)."
       ],
       "examples": [
         {
@@ -41,6 +42,26 @@
         {
           "target": "A Argentina é grande.",
           "es": "La Argentina es grande."
+        },
+        {
+          "target": "O professor explica a lição.",
+          "es": "El profesor explica la lección."
+        },
+        {
+          "target": "A casa fica perto do mercado.",
+          "es": "La casa queda cerca del mercado."
+        },
+        {
+          "target": "Os livros estão na mesa.",
+          "es": "Los libros están en la mesa."
+        },
+        {
+          "target": "As crianças brincam no parque.",
+          "es": "Los chicos juegan en la plaza."
+        },
+        {
+          "target": "O Brasil tem praias lindas.",
+          "es": "Brasil tiene playas lindas."
         }
       ],
       "commonMistakes": [
@@ -48,6 +69,16 @@
           "wrong": "El carro é novo.",
           "right": "O carro é novo.",
           "why": "El artículo masculino en portugués es o."
+        },
+        {
+          "wrong": "El livro é bom.",
+          "right": "O livro é bom.",
+          "why": "En portugués el artículo masculino singular es 'o', no 'el' como en español."
+        },
+        {
+          "wrong": "La casa é grande.",
+          "right": "A casa é grande.",
+          "why": "El artículo femenino singular en portugués es 'a', no 'la' como en español."
         }
       ],
       "chunks": [
@@ -102,6 +133,26 @@
         {
           "target": "Ela é professora.",
           "es": "Ella es profesora."
+        },
+        {
+          "target": "Ele comprou um carro novo.",
+          "es": "Él compró un auto nuevo."
+        },
+        {
+          "target": "Preciso de uma caneta.",
+          "es": "Necesito una lapicera."
+        },
+        {
+          "target": "Umas pessoas chegaram atrasadas.",
+          "es": "Unas personas llegaron tarde."
+        },
+        {
+          "target": "Vou comer um sanduíche.",
+          "es": "Voy a comer un sándwich."
+        },
+        {
+          "target": "Ela tem uns sapatos novos.",
+          "es": "Ella tiene unos zapatos nuevos."
         }
       ],
       "commonMistakes": [
@@ -109,6 +160,16 @@
           "wrong": "Eu tenho una irmã.",
           "right": "Eu tenho uma irmã.",
           "why": "En portugués es uma, con m."
+        },
+        {
+          "wrong": "Ele é um médico.",
+          "right": "Ele é médico.",
+          "why": "Cuando se indica una profesión sin adjetivo calificativo, en portugués no se usa artículo indefinido, igual que en español."
+        },
+        {
+          "wrong": "Eu tenho um casa.",
+          "right": "Eu tenho uma casa.",
+          "why": "Casa es femenina en portugués, por eso el artículo correcto es 'uma', no 'um'."
         }
       ],
       "chunks": [
@@ -170,6 +231,26 @@
         {
           "target": "A árvore é muito alta.",
           "es": "El árbol es muy alto."
+        },
+        {
+          "target": "A dor de cabeça passou.",
+          "es": "El dolor de cabeza se pasó."
+        },
+        {
+          "target": "A garagem está cheia.",
+          "es": "El garaje está lleno."
+        },
+        {
+          "target": "A ponte foi construída ano passado.",
+          "es": "El puente fue construido el año pasado."
+        },
+        {
+          "target": "O sangue dele é tipo O.",
+          "es": "La sangre de él es tipo O."
+        },
+        {
+          "target": "A mensagem chegou tarde.",
+          "es": "El mensaje llegó tarde."
         }
       ],
       "commonMistakes": [
@@ -182,6 +263,11 @@
           "wrong": "A leite é bom.",
           "right": "O leite é bom.",
           "why": "Leite es masculino en portugués, aunque en español sea femenino."
+        },
+        {
+          "wrong": "O dor de cabeça é forte.",
+          "right": "A dor de cabeça é forte.",
+          "why": "Dor es femenina en portugués, aunque en español 'dolor' sea masculino."
         }
       ],
       "chunks": [
@@ -228,7 +314,8 @@
       "keyPoints": [
         "La mayoría suma -s: livro → livros, casa → casas.",
         "-ão tiene tres plurales: -ões (avião → aviões), -ães (pão → pães), -ãos (mão → mãos); el más común es -ões.",
-        "-l cambia a -is (animal → animais, papel → papéis) y -m cambia a -ns (homem → homens)."
+        "-l cambia a -is (animal → animais, papel → papéis) y -m cambia a -ns (homem → homens).",
+        "En español los plurales de palabras terminadas en consonante suelen sumar '-es' (papel → papeles, animal → animales), mientras que en portugués las terminadas en '-l' cambian la 'l' por 'i' y agregan 's' (papel → papéis, animal → animais)."
       ],
       "examples": [
         {
@@ -242,6 +329,26 @@
         {
           "target": "Os homens e as mulheres.",
           "es": "Los hombres y las mujeres."
+        },
+        {
+          "target": "Os papéis estão na mesa.",
+          "es": "Los papeles están en la mesa."
+        },
+        {
+          "target": "As mãos estão limpas.",
+          "es": "Las manos están limpias."
+        },
+        {
+          "target": "Os animais do zoológico são bonitos.",
+          "es": "Los animales del zoológico son lindos."
+        },
+        {
+          "target": "Eles compraram três limões.",
+          "es": "Ellos compraron tres limones."
+        },
+        {
+          "target": "Os jornais chegaram atrasados.",
+          "es": "Los diarios llegaron tarde."
         }
       ],
       "commonMistakes": [
@@ -254,6 +361,37 @@
           "wrong": "Os homems.",
           "right": "Os homens.",
           "why": "La -m final se cambia por -ns."
+        },
+        {
+          "wrong": "Os papeis estão sujos.",
+          "right": "Os papéis estão sujos.",
+          "why": "Las palabras terminadas en '-el' llevan acento agudo en el plural: papel → papéis."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Todos os dias",
+          "es": "Todos los días",
+          "example": "Ela estuda todos os dias.",
+          "exampleEs": "Ella estudia todos los días."
+        },
+        {
+          "target": "Muitas vezes",
+          "es": "Muchas veces",
+          "example": "Muitas vezes eu chego atrasado.",
+          "exampleEs": "Muchas veces llego tarde."
+        },
+        {
+          "target": "Alguns minutos",
+          "es": "Unos minutos",
+          "example": "Espera alguns minutos, por favor.",
+          "exampleEs": "Esperá unos minutos, por favor."
+        },
+        {
+          "target": "Poucas palavras",
+          "es": "Pocas palabras",
+          "example": "Ele disse poucas palavras.",
+          "exampleEs": "Él dijo pocas palabras."
         }
       ]
     },
@@ -269,7 +407,8 @@
       "keyPoints": [
         "Para decir 'hay' en Brasil se usa tem en la charla y há en lo escrito formal: Tem uma padaria aqui.",
         "Tem y há no cambian en plural: Tem dois parques.",
-        "Para negar: Não tem farmácia no bairro."
+        "Para negar: Não tem farmácia no bairro.",
+        "En español se usa 'hay' tanto en la charla como por escrito para decir que algo existe, pero en portugués de Brasil se prefiere 'tem' en el habla cotidiana y 'há' queda reservado para textos más formales o escritos."
       ],
       "examples": [
         {
@@ -283,6 +422,26 @@
         {
           "target": "Não tem metrô na minha cidade.",
           "es": "No hay subte en mi ciudad."
+        },
+        {
+          "target": "Tem uma farmácia aberta agora?",
+          "es": "¿Hay una farmacia abierta ahora?"
+        },
+        {
+          "target": "Há poucos lugares como esse.",
+          "es": "Hay pocos lugares como ese."
+        },
+        {
+          "target": "Tem bastante gente na fila.",
+          "es": "Hay bastante gente en la fila."
+        },
+        {
+          "target": "Não há dúvida sobre isso.",
+          "es": "No hay duda sobre eso."
+        },
+        {
+          "target": "Tem um restaurante novo na esquina.",
+          "es": "Hay un restaurante nuevo en la esquina."
         }
       ],
       "commonMistakes": [
@@ -295,6 +454,11 @@
           "wrong": "Têm dois parques.",
           "right": "Tem dois parques.",
           "why": "Con el sentido de 'hay', tem no cambia en plural."
+        },
+        {
+          "wrong": "A uma farmácia aqui.",
+          "right": "Há uma farmácia aqui.",
+          "why": "El verbo impersonal se escribe 'há' (con h y acento), no 'a'; se confunde fácil porque se pronuncia igual que la preposición 'a'."
         }
       ],
       "chunks": [
