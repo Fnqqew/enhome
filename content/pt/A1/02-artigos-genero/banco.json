@@ -1,0 +1,2337 @@
+{
+  "subtopics": {
+    "artigos-definidos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo definido correcto.",
+        "prompt": "___ Pedro trabalha no escritório de São Paulo.",
+        "options": [
+          "A",
+          "O",
+          "Os",
+          "As"
+        ],
+        "correctIndex": 1,
+        "explanation": "En el habla brasileña se usa artículo delante de nombres propios; como Pedro es masculino singular, corresponde 'o'.",
+        "optionNotes": [
+          "Incorrecto: 'a' es femenino y Pedro es un nombre masculino.",
+          "Correcto: artículo masculino singular para un nombre propio masculino.",
+          "Incorrecto: 'os' es plural y Pedro es una sola persona.",
+          "Incorrecto: combina género femenino y plural, no corresponde a Pedro."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo definido correcto.",
+        "prompt": "___ Ana é a dona do apartamento.",
+        "options": [
+          "As",
+          "O",
+          "A",
+          "Os"
+        ],
+        "correctIndex": 2,
+        "explanation": "Ana es un nombre propio femenino singular, por eso corresponde el artículo 'a'.",
+        "optionNotes": [
+          "Incorrecto: Ana es una sola persona, no corresponde el plural.",
+          "Incorrecto: 'o' es masculino y Ana es un nombre femenino.",
+          "Correcto: artículo femenino singular para un nombre propio femenino.",
+          "Incorrecto: 'os' es masculino y plural, no corresponde."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo definido correcto.",
+        "prompt": "___ Argentina fica na América do Sul.",
+        "options": [
+          "As",
+          "O",
+          "Os",
+          "A"
+        ],
+        "correctIndex": 3,
+        "explanation": "Los nombres de países suelen llevar artículo definido; Argentina es femenino singular, por eso 'a Argentina'.",
+        "optionNotes": [
+          "Incorrecto: combina plural y género equivocado para este caso.",
+          "Incorrecto: 'o' es masculino y Argentina es femenino.",
+          "Incorrecto: 'os' es plural y Argentina es un solo país.",
+          "Correcto: artículo femenino singular para el país Argentina."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo definido correcto.",
+        "prompt": "___ Brasil é um país muito grande.",
+        "options": [
+          "O",
+          "As",
+          "Os",
+          "A"
+        ],
+        "correctIndex": 0,
+        "explanation": "Brasil es masculino singular y los países suelen llevar artículo, por eso se usa 'o Brasil'.",
+        "optionNotes": [
+          "Correcto: artículo masculino singular para el país Brasil.",
+          "Incorrecto: combina plural y género femenino, no corresponde.",
+          "Incorrecto: 'os' es plural y Brasil es un solo país.",
+          "Incorrecto: 'a' es femenino, pero Brasil es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo definido correcto.",
+        "prompt": "___ meninas chegaram cedo à entrevista.",
+        "options": [
+          "A",
+          "Os",
+          "As",
+          "O"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Meninas' es un sustantivo femenino plural, por eso corresponde el artículo 'as'.",
+        "optionNotes": [
+          "Incorrecto: 'a' es singular y 'meninas' está en plural.",
+          "Incorrecto: 'os' es masculino plural, pero 'meninas' es femenino.",
+          "Correcto: artículo femenino plural para 'meninas'.",
+          "Incorrecto: 'o' es masculino singular, no coincide en género ni número."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo definido correcto.",
+        "prompt": "___ carros estão no estacionamento do prédio.",
+        "options": [
+          "O",
+          "A",
+          "As",
+          "Os"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Carros' es un sustantivo masculino plural, por eso corresponde el artículo 'os'.",
+        "optionNotes": [
+          "Incorrecto: 'o' es singular y 'carros' está en plural.",
+          "Incorrecto: 'a' es femenino singular, pero 'carros' es masculino plural.",
+          "Incorrecto: 'as' es femenino, pero 'carros' es masculino.",
+          "Correcto: artículo masculino plural para 'carros'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo definido correcto.",
+        "sentence": "___ médico atendeu Juan Martín rapidamente.",
+        "hint": "(artículo masculino singular)",
+        "answers": [
+          "O"
+        ],
+        "explanation": "El sustantivo 'médico' es masculino singular, por eso se usa el artículo 'o'.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'Médico' es masculino, no corresponde el artículo femenino 'a'."
+          },
+          {
+            "answer": "Os",
+            "why": "'Médico' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo definido correcto.",
+        "sentence": "___ entrevista de emprego foi às dez horas.",
+        "hint": "(artículo femenino singular)",
+        "answers": [
+          "A"
+        ],
+        "explanation": "'Entrevista' es un sustantivo femenino singular, por eso se usa el artículo 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "O",
+            "why": "'Entrevista' es femenino, no corresponde el artículo masculino 'o'."
+          },
+          {
+            "answer": "As",
+            "why": "'Entrevista' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo definido correcto.",
+        "sentence": "___ chaves do apartamento ficam com a Ana.",
+        "hint": "(artículo femenino plural)",
+        "answers": [
+          "As"
+        ],
+        "explanation": "'Chaves' es un sustantivo femenino plural, por eso se usa el artículo 'as'.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'Chaves' está en plural, no en singular."
+          },
+          {
+            "answer": "Os",
+            "why": "'Chaves' es femenino, no corresponde el artículo masculino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo definido correcto.",
+        "sentence": "___ amigos de Juan Martín moram em Buenos Aires.",
+        "hint": "(artículo masculino plural)",
+        "answers": [
+          "Os"
+        ],
+        "explanation": "'Amigos' es un sustantivo masculino plural, por eso se usa el artículo 'os'.",
+        "wrongAnswers": [
+          {
+            "answer": "As",
+            "why": "'Amigos' es masculino, no corresponde el artículo femenino."
+          },
+          {
+            "answer": "O",
+            "why": "'Amigos' está en plural, no en singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo definido correcto.",
+        "sentence": "___ Ana mora perto do escritório de Pedro.",
+        "hint": "(artículo delante de nombre propio femenino)",
+        "answers": [
+          "A"
+        ],
+        "explanation": "En el habla brasileña es común usar artículo antes de nombres propios; como Ana es femenino, se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "O",
+            "why": "Ana es un nombre femenino, no corresponde el artículo masculino 'o'."
+          },
+          {
+            "answer": "As",
+            "why": "Ana es una sola persona, no corresponde el plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo definido correcto.",
+        "sentence": "___ Brasil tem praias lindas.",
+        "hint": "(artículo delante de nombre de país masculino)",
+        "answers": [
+          "O"
+        ],
+        "explanation": "Los nombres de países suelen llevar artículo definido; Brasil es masculino, por eso 'o Brasil'.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "Brasil es masculino, no corresponde el artículo femenino 'a'."
+          },
+          {
+            "answer": "Os",
+            "why": "Brasil es un solo país, no corresponde el plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O carro novo está na garagem do prédio.",
+        "alternatives": [
+          "Na garagem do prédio está o carro novo."
+        ],
+        "translation": "El auto nuevo está en el garage del edificio.",
+        "explanation": "Se usa 'o' porque 'carro' es un sustantivo masculino singular.",
+        "tokens": [
+          "na",
+          "do",
+          "garagem",
+          "carro",
+          "prédio",
+          "O",
+          "está",
+          "novo"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A Ana e o Pedro moram em São Paulo.",
+        "alternatives": [
+          "O Pedro e a Ana moram em São Paulo."
+        ],
+        "translation": "Ana y Pedro viven en San Pablo.",
+        "explanation": "En el habla brasileña se usa artículo delante de nombres propios: 'a Ana' (femenino) y 'o Pedro' (masculino).",
+        "tokens": [
+          "o",
+          "Pedro",
+          "Ana",
+          "Paulo",
+          "São",
+          "e",
+          "A",
+          "em",
+          "moram"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "As meninas chegaram cedo para a entrevista de emprego.",
+        "alternatives": [],
+        "translation": "Las chicas llegaron temprano a la entrevista de trabajo.",
+        "explanation": "'Meninas' es femenino plural, por eso se usa 'as'; 'entrevista' es femenino singular, por eso 'a'.",
+        "tokens": [
+          "para",
+          "cedo",
+          "entrevista",
+          "As",
+          "meninas",
+          "de",
+          "a",
+          "chegaram",
+          "emprego"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Os amigos de Juan Martín moram na Argentina.",
+        "alternatives": [],
+        "translation": "Los amigos de Juan Martín viven en Argentina.",
+        "explanation": "'Amigos' es masculino plural ('os'); 'Argentina' es femenino y los países llevan artículo, aquí contraído en 'na' (em + a).",
+        "tokens": [
+          "de",
+          "Os",
+          "amigos",
+          "moram",
+          "na",
+          "Argentina",
+          "Martín",
+          "Juan"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O Brasil é maior do que a Argentina.",
+        "alternatives": [],
+        "translation": "Brasil es más grande que Argentina.",
+        "explanation": "Ambos países llevan artículo definido: 'o' para Brasil (masculino) y 'a' para Argentina (femenino).",
+        "tokens": [
+          "a",
+          "que",
+          "do",
+          "Argentina",
+          "O",
+          "Brasil",
+          "é",
+          "maior"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "El médico chegou atrasado para a consulta.",
+        "answers": [
+          "O médico chegou atrasado para a consulta."
+        ],
+        "explanation": "En portugués el artículo masculino singular es 'o', no 'el' como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Os médico chegou atrasado para a consulta.",
+            "why": "Cambia el número a plural, pero el error real era usar 'El' (español) en vez de 'O' (portugués)."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "A Pedro trabalha no mesmo escritório que Juan Martín.",
+        "answers": [
+          "O Pedro trabalha no mesmo escritório que Juan Martín."
+        ],
+        "explanation": "Pedro es un nombre masculino, por eso corresponde el artículo 'o', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "As Pedro trabalha no mesmo escritório que Juan Martín.",
+            "why": "Agrega un plural innecesario; el error real era de género, no de número."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "As Argentina é um país da América do Sul.",
+        "answers": [
+          "A Argentina é um país da América do Sul."
+        ],
+        "explanation": "Argentina es femenino singular, por eso se usa 'a', no 'as'.",
+        "wrongAnswers": [
+          {
+            "answer": "As Argentinas é um país da América do Sul.",
+            "why": "Pluralizar el nombre del país es incorrecto; el error estaba en el artículo, no en el sustantivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "O meninas estudam português na escola.",
+        "answers": [
+          "As meninas estudam português na escola."
+        ],
+        "explanation": "'Meninas' es femenino plural, por eso corresponde 'as', no 'o'.",
+        "wrongAnswers": [
+          {
+            "answer": "O menina estudam português na escola.",
+            "why": "Cambiar 'meninas' a singular no corrige el error, que está en el artículo 'o' en vez de 'as'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "As Brasil tem praias bonitas.",
+        "answers": [
+          "O Brasil tem praias bonitas."
+        ],
+        "explanation": "Brasil es masculino singular, por eso corresponde 'o', no 'as'.",
+        "wrongAnswers": [
+          {
+            "answer": "As Brasis tem praias bonitas.",
+            "why": "Pluralizar 'Brasil' es incorrecto; el error estaba en el artículo, no en el nombre del país."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Vos conocés a Pedro? Él trabaja en San Pablo.",
+        "answers": [
+          "Você conhece o Pedro? Ele trabalha em São Paulo.",
+          "Você conhece Pedro? Ele trabalha em São Paulo.",
+          "Tu conheces o Pedro? Ele trabalha em São Paulo.",
+          "Tu conheces Pedro? Ele trabalha em São Paulo."
+        ],
+        "explanation": "En el habla brasileña es habitual, pero no obligatorio, usar un artículo delante de los nombres propios; como Pedro es masculino, si se usa artículo corresponde 'o'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você conhece a Pedro? Ele trabalha em São Paulo.",
+            "why": "Pedro es un nombre masculino; si se usa artículo corresponde 'o', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "La Argentina es un país grande, pero Brasil es más grande.",
+        "answers": [
+          "A Argentina é um país grande, mas o Brasil é maior."
+        ],
+        "explanation": "Los países llevan artículo definido: 'a Argentina' (femenino) y 'o Brasil' (masculino).",
+        "wrongAnswers": [
+          {
+            "answer": "Argentina é um país grande, mas Brasil é maior.",
+            "why": "Faltan los artículos delante de los nombres de países, que en portugués suelen llevarlos."
+          },
+          {
+            "answer": "A Argentina é um país grande, mas a Brasil é maior.",
+            "why": "Brasil es masculino, corresponde el artículo 'o', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Las chicas llegaron temprano a la entrevista.",
+        "answers": [
+          "As meninas chegaram cedo para a entrevista.",
+          "As meninas chegaram cedo à entrevista."
+        ],
+        "explanation": "'Meninas' es femenino plural ('as') y 'entrevista' es femenino singular ('a').",
+        "wrongAnswers": [
+          {
+            "answer": "Os meninas chegaram cedo para a entrevista.",
+            "why": "'Meninas' es femenino; corresponde el artículo 'as', no 'os'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El auto de Ana está en el garage.",
+        "answers": [
+          "O carro da Ana está na garagem.",
+          "O carro de Ana está na garagem."
+        ],
+        "explanation": "'Carro' es masculino ('o'); el artículo informal delante de 'Ana' es opcional, y si se usa se contrae obligatoriamente con 'de' formando 'da'.",
+        "wrongAnswers": [
+          {
+            "answer": "O carro de a Ana está na garagem.",
+            "why": "Si se usa el artículo 'a' después de 'de', la contracción 'da' es obligatoria; no puede quedar 'de a'."
+          },
+          {
+            "answer": "A carro da Ana está na garagem.",
+            "why": "'Carro' es masculino, corresponde el artículo 'o', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El médico me dijo que estoy bien.",
+        "answers": [
+          "O médico me disse que estou bem."
+        ],
+        "explanation": "'Médico' es un sustantivo masculino singular, por eso se usa el artículo 'o'.",
+        "wrongAnswers": [
+          {
+            "answer": "A médico me disse que estou bem.",
+            "why": "'Médico' es masculino, corresponde el artículo 'o', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Los amigos de Juan Martín viven en Buenos Aires.",
+        "answers": [
+          "Os amigos de Juan Martín moram em Buenos Aires."
+        ],
+        "explanation": "'Amigos' es un sustantivo masculino plural, por eso se usa el artículo 'os'.",
+        "wrongAnswers": [
+          {
+            "answer": "As amigos de Juan Martín moram em Buenos Aires.",
+            "why": "'Amigos' es masculino plural, corresponde el artículo 'os', no 'as'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "O Pedro alugou um apartamento em Copacabana.",
+        "alternatives": [],
+        "translation": "Pedro alquiló un departamento en Copacabana.",
+        "explanation": "En portugués hablado es normal poner 'o' antes del nombre propio ('o Pedro'); en español no se usa artículo delante de nombres de persona."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A Ana e o Pedro moram na mesma rua.",
+        "alternatives": [
+          "O Pedro e a Ana moram na mesma rua."
+        ],
+        "translation": "Ana y Pedro viven en la misma calle.",
+        "explanation": "Cada nombre lleva su artículo según el género: 'a Ana' (femenino) y 'o Pedro' (masculino); en español no se usan artículos con nombres propios."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "O Brasil é maior do que a Argentina.",
+        "alternatives": [
+          "O Brasil é maior que a Argentina."
+        ],
+        "translation": "Brasil es más grande que Argentina.",
+        "explanation": "Los nombres de países suelen llevar artículo en portugués ('o Brasil', 'a Argentina'), algo que en español muchas veces se omite."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "As crianças brincam no parque todos os dias.",
+        "alternatives": [
+          "As crianças brincam todos os dias no parque."
+        ],
+        "translation": "Los niños juegan en el parque todos los días.",
+        "explanation": "Prestá atención a la vocal final: 'as crianças' (femenino plural) y 'os dias' (masculino plural) suenan parecido pero marcan géneros distintos."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "ela",
+          "ele"
+        ],
+        "target": 0,
+        "meanings": [
+          "ella",
+          "él"
+        ],
+        "explanation": "La vocal final cambia el género: '-a' es femenino y '-o' es masculino; son breves, así que hay que escuchar bien el final de la palabra."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "menina",
+          "menino"
+        ],
+        "target": 1,
+        "meanings": [
+          "niña",
+          "niño"
+        ],
+        "explanation": "La vocal final marca el género, igual que en los artículos 'o' y 'a': '-o' es masculino y '-a' es femenino, así que hay que prestar atención al sonido final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "certa",
+          "certo"
+        ],
+        "target": 0,
+        "meanings": [
+          "correcta",
+          "correcto"
+        ],
+        "explanation": "Igual que con los artículos 'o' y 'a', la vocal final indica el género: '-o' para masculino y '-a' para femenino; hay que escuchar bien el final de la palabra."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "O apartamento fica perto do metrô, é bem prático.",
+        "translation": "El departamento queda cerca del subte, es bastante práctico.",
+        "tip": "Uní 'fica perto' sin pausa y decí la contracción 'do' rápido, casi como una sola sílaba."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "A entrevista de trabalho é na segunda-feira de manhã.",
+        "translation": "La entrevista de trabajo es el lunes por la mañana.",
+        "tip": "Decí 'segunda-feira' de un solo tirón, sin cortar entre sílabas, como si fuera una palabra larga."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "O médico disse que as vitaminas são importantes.",
+        "translation": "El médico dijo que las vitaminas son importantes.",
+        "tip": "Enlazá 'disse que' como si fuera una sola palabra, sin pausa entre las dos."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre Lucas y Fernanda y respondé las preguntas.",
+        "situation": "Fernanda visita la casa de su amigo Lucas en Porto Alegre y él le presenta a su familia.",
+        "lines": [
+          {
+            "speaker": "Lucas",
+            "text": "Fernanda, essa é a minha irmã, a Camila."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Oi, Camila! E o seu irmão, ele está em casa?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Não, o Pedro está no trabalho agora."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "E os seus pais, onde estão?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "A minha mãe está na cozinha e o meu pai está no jardim."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "As plantas do jardim são muito bonitas!"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "É verdade, a Camila cuida das plantas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Quién está trabajando en este momento, según la charla?",
+            "options": [
+              "O pai de Lucas",
+              "A Camila",
+              "O Pedro",
+              "A mãe de Lucas"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucas dice 'o Pedro está no trabalho agora'. Como Pedro es un nombre masculino, en el habla de Brasil se usa el artículo o delante del nombre propio."
+          },
+          {
+            "prompt": "¿Dónde está la madre de Lucas?",
+            "options": [
+              "No jardim",
+              "No trabalho",
+              "Na cozinha",
+              "Na escola"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucas afirma 'a minha mãe está na cozinha'. Cozinha es un sustantivo femenino, por eso lleva el artículo a."
+          },
+          {
+            "prompt": "¿Quién cuida las plantas del jardín?",
+            "options": [
+              "O pai de Lucas",
+              "O Pedro",
+              "A Fernanda",
+              "A Camila"
+            ],
+            "correctIndex": 3,
+            "explanation": "Lucas dice 'a Camila cuida das plantas', usando a Camila porque Camila es un nombre femenino y en Brasil es común poner el artículo antes de los nombres propios en la charla."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo entre Ricardo y Mariana y respondé las preguntas.",
+        "situation": "Mariana está en una entrevista de trabajo en una empresa de turismo en San Pablo. El entrevistador, Ricardo, le pregunta sobre su experiencia viajando.",
+        "lines": [
+          {
+            "speaker": "Ricardo",
+            "text": "Mariana, você já visitou o Brasil antes?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Sim, eu morei em São Paulo por dois anos."
+          },
+          {
+            "speaker": "Ricardo",
+            "text": "E a Argentina, você conhece?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Conheço só a capital, Buenos Aires."
+          },
+          {
+            "speaker": "Ricardo",
+            "text": "As cidades grandes são muito diferentes dos lugares pequenos."
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Com certeza. O Brasil é enorme, não é?"
+          },
+          {
+            "speaker": "Ricardo",
+            "text": "Sim, e as praias do nordeste são famosas."
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Eu adoro as praias de Salvador."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿En qué ciudad vivió Mariana durante dos años?",
+            "options": [
+              "Salvador",
+              "Buenos Aires",
+              "São Paulo",
+              "Rio de Janeiro"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mariana dice 'eu morei em São Paulo'. Las ciudades en portugués generalmente no llevan artículo, por eso se dice São Paulo sin a."
+          },
+          {
+            "prompt": "¿Qué país describe Mariana como enorme?",
+            "options": [
+              "As praias",
+              "O Brasil",
+              "A Argentina",
+              "A capital"
+            ],
+            "correctIndex": 1,
+            "explanation": "Mariana comenta 'o Brasil é enorme'. Los países suelen llevar artículo definido en portugués, y Brasil es masculino, por eso se usa o."
+          },
+          {
+            "prompt": "¿Qué lugar de Argentina conoce Mariana?",
+            "options": [
+              "As montanhas",
+              "O litoral",
+              "O interior",
+              "A capital"
+            ],
+            "correctIndex": 3,
+            "explanation": "Mariana responde 'conheço só a capital, Buenos Aires'. Capital es un sustantivo femenino, por eso lleva el artículo a."
+          }
+        ]
+      }
+    ],
+    "artigos-indefinidos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo indefinido correcto.",
+        "prompt": "Juan Martín tem ___ irmão em Buenos Aires.",
+        "options": [
+          "uns",
+          "uma",
+          "umas",
+          "um"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Irmão' es masculino singular, por eso corresponde 'um'.",
+        "optionNotes": [
+          "Incorrecto: 'uns' es plural y aquí hay un solo hermano.",
+          "Incorrecto: 'uma' es femenino y 'irmão' es masculino.",
+          "Incorrecto: combina género femenino y plural, no corresponde.",
+          "Correcto: artículo indefinido masculino singular para 'irmão'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Pedro ___ médico no hospital de São Paulo.",
+        "options": [
+          "é uma",
+          "é uns",
+          "é um",
+          "é"
+        ],
+        "correctIndex": 3,
+        "explanation": "En portugués, igual que en español, no se usa artículo delante de una profesión sin modificador: 'Pedro é médico'.",
+        "optionNotes": [
+          "Incorrecto: además de sobrar el artículo, el género no coincide con Pedro.",
+          "Incorrecto: sobra el artículo y además está en plural, cuando se habla de una sola persona.",
+          "Incorrecto: agrega un artículo innecesario delante de la profesión.",
+          "Correcto: no lleva artículo delante de la profesión sin adjetivo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo indefinido correcto.",
+        "prompt": "Ana tem ___ amiga que mora em São Paulo.",
+        "options": [
+          "uns",
+          "um",
+          "umas",
+          "uma"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Amiga' es femenino singular, por eso corresponde 'uma'.",
+        "optionNotes": [
+          "Incorrecto: 'uns' es masculino y plural, no coincide.",
+          "Incorrecto: 'um' es masculino y 'amiga' es femenino.",
+          "Incorrecto: 'umas' es plural, pero aquí hay una sola amiga.",
+          "Correcto: artículo indefinido femenino singular para 'amiga'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo indefinido correcto.",
+        "prompt": "Juan Martín procura ___ apartamento pequeno para alugar.",
+        "options": [
+          "uma",
+          "umas",
+          "um",
+          "uns"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Apartamento' es masculino singular, por eso corresponde 'um'.",
+        "optionNotes": [
+          "Incorrecto: 'uma' es femenino y 'apartamento' es masculino.",
+          "Incorrecto: combina género femenino y plural, no corresponde.",
+          "Correcto: artículo indefinido masculino singular para 'apartamento'.",
+          "Incorrecto: 'uns' es plural y aquí se busca un solo apartamento."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo indefinido correcto.",
+        "prompt": "Tem ___ amigos esperando na porta do escritório.",
+        "options": [
+          "um",
+          "umas",
+          "uma",
+          "uns"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Amigos' es masculino plural, por eso corresponde 'uns'.",
+        "optionNotes": [
+          "Incorrecto: 'um' es singular y 'amigos' está en plural.",
+          "Incorrecto: 'umas' es femenino, pero 'amigos' es masculino.",
+          "Incorrecto: 'uma' es femenino singular, no coincide en género ni número.",
+          "Correcto: artículo indefinido masculino plural para 'amigos'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo indefinido correcto.",
+        "prompt": "Preciso comprar ___ malas novas para a viagem.",
+        "options": [
+          "umas",
+          "uns",
+          "um",
+          "uma"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Malas' es femenino plural, por eso corresponde 'umas'.",
+        "optionNotes": [
+          "Correcto: artículo indefinido femenino plural para 'malas'.",
+          "Incorrecto: 'uns' es masculino, pero 'malas' es femenino.",
+          "Incorrecto: 'um' es masculino singular, no coincide en género ni número.",
+          "Incorrecto: 'uma' es singular y 'malas' está en plural."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo indefinido correcto.",
+        "sentence": "Juan Martín tem ___ irmã que mora em Buenos Aires.",
+        "hint": "(artículo indefinido femenino singular)",
+        "answers": [
+          "uma"
+        ],
+        "explanation": "'Irmã' es un sustantivo femenino singular, por eso se usa el artículo 'uma'.",
+        "wrongAnswers": [
+          {
+            "answer": "una",
+            "why": "Es un error de ortografía: en portugués el artículo femenino se escribe con 'm', 'uma'."
+          },
+          {
+            "answer": "um",
+            "why": "'Irmã' es femenino, no corresponde el artículo masculino 'um'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra correcta (puede no llevar artículo).",
+        "sentence": "Ela ___ professora de inglês na escola de São Paulo.",
+        "hint": "(verbo ser, sin artículo antes de la profesión)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "Delante de una profesión sin adjetivo no se usa artículo indefinido, por eso alcanza con 'ela é professora'.",
+        "wrongAnswers": [
+          {
+            "answer": "é uma",
+            "why": "En portugués, igual que en español, no se usa artículo delante de una profesión sin modificador."
+          },
+          {
+            "answer": "é umas",
+            "why": "Además de sobrar el artículo, está en plural cuando se habla de una sola persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo indefinido correcto.",
+        "sentence": "Pedro precisa de ___ apartamento perto do escritório.",
+        "hint": "(artículo indefinido masculino singular)",
+        "answers": [
+          "um"
+        ],
+        "explanation": "'Apartamento' es masculino singular, por eso se usa el artículo 'um'.",
+        "wrongAnswers": [
+          {
+            "answer": "uma",
+            "why": "'Apartamento' es masculino, no corresponde el artículo femenino 'uma'."
+          },
+          {
+            "answer": "uns",
+            "why": "'Apartamento' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo indefinido correcto.",
+        "sentence": "Tem ___ malas no quarto da Ana.",
+        "hint": "(artículo indefinido femenino plural)",
+        "answers": [
+          "umas"
+        ],
+        "explanation": "'Malas' es un sustantivo femenino plural, por eso se usa el artículo 'umas'.",
+        "wrongAnswers": [
+          {
+            "answer": "uma",
+            "why": "'Malas' está en plural, no en singular."
+          },
+          {
+            "answer": "uns",
+            "why": "'Malas' es femenino, no corresponde el artículo masculino 'uns'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo indefinido correcto.",
+        "sentence": "Vou convidar ___ amigos para o jantar.",
+        "hint": "(artículo indefinido masculino plural)",
+        "answers": [
+          "uns"
+        ],
+        "explanation": "'Amigos' es un sustantivo masculino plural, por eso se usa el artículo 'uns'.",
+        "wrongAnswers": [
+          {
+            "answer": "umas",
+            "why": "'Amigos' es masculino, no corresponde el artículo femenino 'umas'."
+          },
+          {
+            "answer": "um",
+            "why": "'Amigos' está en plural, no en singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo indefinido correcto.",
+        "sentence": "Juan Martín comprou ___ carro usado em São Paulo.",
+        "hint": "(artículo indefinido masculino singular)",
+        "answers": [
+          "um"
+        ],
+        "explanation": "'Carro' es un sustantivo masculino singular, por eso se usa el artículo 'um'.",
+        "wrongAnswers": [
+          {
+            "answer": "uma",
+            "why": "'Carro' es masculino, no corresponde el artículo femenino 'uma'."
+          },
+          {
+            "answer": "uns",
+            "why": "'Carro' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Juan Martín tem um irmão e uma irmã em Buenos Aires.",
+        "alternatives": [
+          "Juan Martín tem uma irmã e um irmão em Buenos Aires."
+        ],
+        "translation": "Juan Martín tiene un hermano y una hermana en Buenos Aires.",
+        "explanation": "'Irmão' es masculino ('um') e 'irmã' es femenino ('uma'), cada uno con su artículo correspondiente.",
+        "tokens": [
+          "um",
+          "Martín",
+          "irmã",
+          "Buenos",
+          "em",
+          "Aires",
+          "irmão",
+          "tem",
+          "Juan",
+          "e",
+          "uma"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ana é professora de inglês em São Paulo.",
+        "alternatives": [],
+        "translation": "Ana es profesora de inglés en San Pablo.",
+        "explanation": "Delante de una profesión sin adjetivo no se usa artículo indefinido en portugués, igual que en español.",
+        "tokens": [
+          "em",
+          "professora",
+          "inglês",
+          "Paulo",
+          "de",
+          "São",
+          "Ana",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Uns amigos vêm jantar na casa de Pedro hoje.",
+        "alternatives": [
+          "Hoje uns amigos vêm jantar na casa de Pedro."
+        ],
+        "translation": "Unos amigos vienen a cenar a la casa de Pedro hoy.",
+        "explanation": "'Amigos' es masculino plural, por eso se usa el artículo indefinido 'uns'.",
+        "tokens": [
+          "amigos",
+          "vêm",
+          "hoje",
+          "casa",
+          "de",
+          "Pedro",
+          "na",
+          "Uns",
+          "jantar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Preciso alugar um apartamento pequeno em São Paulo.",
+        "alternatives": [],
+        "translation": "Necesito alquilar un departamento pequeño en San Pablo.",
+        "explanation": "'Apartamento' es masculino singular, por eso se usa el artículo 'um'.",
+        "tokens": [
+          "alugar",
+          "em",
+          "São",
+          "pequeno",
+          "um",
+          "apartamento",
+          "Preciso",
+          "Paulo"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ela comprou umas malas novas para a viagem.",
+        "alternatives": [],
+        "translation": "Ella compró unas valijas nuevas para el viaje.",
+        "explanation": "'Malas' es femenino plural, por eso se usa el artículo indefinido 'umas'.",
+        "tokens": [
+          "para",
+          "umas",
+          "Ela",
+          "a",
+          "comprou",
+          "viagem",
+          "malas",
+          "novas"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "Eu tenho una irmã em Buenos Aires.",
+        "answers": [
+          "Eu tenho uma irmã em Buenos Aires."
+        ],
+        "explanation": "En portugués el artículo femenino se escribe 'uma', con 'm', no 'una' como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tenho uma irmão em Buenos Aires.",
+            "why": "Cambia el sustantivo 'irmã' por 'irmão' en vez de corregir la ortografía del artículo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "Pedro é um médico no hospital de São Paulo.",
+        "answers": [
+          "Pedro é médico no hospital de São Paulo."
+        ],
+        "explanation": "En portugués, igual que en español, no se usa artículo indefinido delante de una profesión sin modificador.",
+        "wrongAnswers": [
+          {
+            "answer": "Pedro é uma médico no hospital de São Paulo.",
+            "why": "Cambia el artículo a femenino en vez de eliminarlo; delante de una profesión sin adjetivo no se usa artículo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "Juan Martín tem umas amigos em São Paulo.",
+        "answers": [
+          "Juan Martín tem uns amigos em São Paulo."
+        ],
+        "explanation": "'Amigos' es masculino plural, por eso corresponde el artículo 'uns', no 'umas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan Martín tem umas amigas em São Paulo.",
+            "why": "Cambia el sustantivo a femenino en vez de corregir el artículo, que debería ser masculino plural."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "Ana comprou um malas novas para a viagem.",
+        "answers": [
+          "Ana comprou umas malas novas para a viagem."
+        ],
+        "explanation": "'Malas' es femenino plural, por eso corresponde el artículo 'umas', no 'um'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ana comprou uma malas novas para a viagem.",
+            "why": "Corrige el género pero no el número; 'malas' está en plural, por eso corresponde 'umas'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con los artículos.",
+        "sentence": "Tem um amigos esperando na porta.",
+        "answers": [
+          "Tem uns amigos esperando na porta."
+        ],
+        "explanation": "'Amigos' es masculino plural, por eso corresponde el artículo 'uns', no 'um'.",
+        "wrongAnswers": [
+          {
+            "answer": "Tem uma amigos esperando na porta.",
+            "why": "Corrige el género a femenino pero 'amigos' es masculino; además sigue sin corregir el número."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Tengo un hermano y una hermana en Buenos Aires.",
+        "answers": [
+          "Eu tenho um irmão e uma irmã em Buenos Aires.",
+          "Tenho um irmão e uma irmã em Buenos Aires."
+        ],
+        "explanation": "'Irmão' es masculino ('um') e 'irmã' es femenino ('uma'), cada uno lleva su artículo correspondiente.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tenho um irmão e una irmã em Buenos Aires.",
+            "why": "En portugués el artículo femenino se escribe 'uma', con 'm', no 'una'."
+          },
+          {
+            "answer": "Eu tenho uma irmão e um irmã em Buenos Aires.",
+            "why": "Los géneros están invertidos: 'irmão' es masculino ('um') e 'irmã' es femenino ('uma')."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ella es profesora de inglés en San Pablo.",
+        "answers": [
+          "Ela é professora de inglês em São Paulo."
+        ],
+        "explanation": "En portugués, igual que en español, no se usa artículo delante de la profesión sin modificador.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é uma professora de inglês em São Paulo.",
+            "why": "Delante de una profesión sin adjetivo no se usa artículo indefinido en portugués."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Unos amigos vienen a cenar hoy.",
+        "answers": [
+          "Uns amigos vêm jantar hoje.",
+          "Hoje vêm uns amigos jantar."
+        ],
+        "explanation": "'Amigos' es masculino plural, por eso se usa el artículo indefinido 'uns'.",
+        "wrongAnswers": [
+          {
+            "answer": "Umas amigos vêm jantar hoje.",
+            "why": "'Amigos' es masculino, no corresponde el artículo femenino 'umas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Necesito un departamento pequeño cerca del trabajo.",
+        "answers": [
+          "Preciso de um apartamento pequeno perto do trabalho.",
+          "Preciso de um apartamento pequeno perto do emprego."
+        ],
+        "explanation": "'Apartamento' es masculino singular, por eso se usa el artículo 'um'.",
+        "wrongAnswers": [
+          {
+            "answer": "Preciso de uma apartamento pequeno perto do trabalho.",
+            "why": "'Apartamento' es masculino, no corresponde el artículo femenino 'uma'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Compré unas valijas nuevas para el viaje.",
+        "answers": [
+          "Comprei umas malas novas para a viagem."
+        ],
+        "explanation": "'Malas' es un sustantivo femenino plural, por eso se usa el artículo indefinido 'umas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Comprei uns malas novas para a viagem.",
+            "why": "'Malas' es femenino, no corresponde el artículo masculino 'uns'."
+          },
+          {
+            "answer": "Comprei uma malas novas para a viagem.",
+            "why": "'Malas' está en plural, no en singular, por eso corresponde 'umas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Pedro es médico en un hospital de San Pablo.",
+        "answers": [
+          "Pedro é médico em um hospital de São Paulo.",
+          "Pedro é médico num hospital de São Paulo."
+        ],
+        "explanation": "No se usa artículo delante de la profesión sin modificador, pero sí delante de 'hospital', que es masculino singular ('um').",
+        "wrongAnswers": [
+          {
+            "answer": "Pedro é um médico em um hospital de São Paulo.",
+            "why": "Sobra el artículo delante de la profesión; en portugués no se usa antes de 'médico' sin adjetivo."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eu tenho um amigo que mora em São Paulo.",
+        "alternatives": [],
+        "translation": "Tengo un amigo que vive en San Pablo.",
+        "explanation": "Antes de 'amigo' (masculino) va 'um', no 'uma'. Prestá atención al género del sustantivo que sigue, no al sonido final de la oración anterior."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Marcos tem uma irmã e um irmão mais novo.",
+        "alternatives": [
+          "Marcos tem um irmão mais novo e uma irmã."
+        ],
+        "translation": "Marcos tiene una hermana y un hermano menor.",
+        "explanation": "'Irmã' e 'irmão' suenan parecido pero son de género distinto: 'uma irmã' (femenino) y 'um irmão' (masculino). No te guíes por la terminación '-ã/-ão', fijate en el significado."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Uns amigos de Marcos vêm jantar no sábado.",
+        "alternatives": [
+          "No sábado, uns amigos de Marcos vêm jantar."
+        ],
+        "translation": "Unos amigos de Marcos vienen a cenar el sábado.",
+        "explanation": "'Uns' se pronuncia con una vocal nasal breve antes de la 's', distinta del 'uma' que vas a escuchar en otras oraciones. No lo confundas con 'um' sin la 's' final."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Preciso de umas informações antes da entrevista.",
+        "alternatives": [],
+        "translation": "Necesito unas informaciones antes de la entrevista.",
+        "explanation": "'Informações' es femenino plural, por eso lleva 'umas' y no 'uns'. El error típico es poner 'uns' porque la palabra termina en '-ões' y suena neutra."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "uns",
+          "um"
+        ],
+        "target": 0,
+        "meanings": [
+          "unos",
+          "un"
+        ],
+        "explanation": "La diferencia está en la 's' final: 'um' termina en una vocal nasal pura y 'uns' agrega el sonido 's' después de esa vocal nasal; fijate si aparece esa 's' al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "uma",
+          "umas"
+        ],
+        "target": 0,
+        "meanings": [
+          "una",
+          "unas"
+        ],
+        "explanation": "Igual que con 'um/uns', la 's' final de 'umas' es el único sonido que cambia. Escuchá si la palabra termina en vocal nasal pura o en vocal nasal más 's'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "mau",
+          "mão"
+        ],
+        "target": 1,
+        "meanings": [
+          "malo",
+          "mano"
+        ],
+        "explanation": "'Mão' lleva nasalización en el diptongo final (como en 'um'), mientras que 'mau' termina en un sonido oral, sin pasar aire por la nariz."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Eu tenho uma reunião importante amanhã de manhã.",
+        "translation": "Tengo una reunión importante mañana por la mañana.",
+        "tip": "Uní 'tenho uma' sin pausa y nasalizá la 'a' de 'uma', como si el sonido se fuera un poco por la nariz."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Vou alugar um apartamento perto da praia.",
+        "translation": "Voy a alquilar un departamento cerca de la playa.",
+        "tip": "Encadená 'alugar um' como si fuera una sola palabra: la nasal de 'um' se mezcla con la vocal final de 'alugar'."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Tenho uns amigos legais aqui em São Paulo.",
+        "translation": "Tengo unos amigos buena onda acá en San Pablo.",
+        "tip": "Marcá bien la 's' final de 'uns' antes de pasar a 'amigos', pero sin hacer pausa entre las dos palabras."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre dos amigos y respondé las preguntas.",
+        "situation": "Lucas y Marina son amigos y están charlando en un café de Río de Janeiro sobre sus familias y mascotas.",
+        "lines": [
+          {
+            "speaker": "Lucas",
+            "text": "Marina, você tem irmãos?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Tenho sim! Tenho um irmão e uma irmã."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Que legal! E eles moram com você?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Não, meu irmão mora em São Paulo. Ele é engenheiro."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "E sua irmã?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Ela mora aqui no Rio. Ela é professora."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Vocês têm um gato ou um cachorro em casa?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Temos uma gata e um cachorro!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué hermanos tiene Marina?",
+            "options": [
+              "Una hermana y un hermano mayor",
+              "Un hermano y una hermana",
+              "Un hermano y un hermano más chico",
+              "Dos hermanas"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina dice 'Tenho um irmão e uma irmã', usando um (masculino) para irmão y uma (femenino) para irmã."
+          },
+          {
+            "prompt": "¿Qué profesión tiene el hermano de Marina?",
+            "options": [
+              "Médico",
+              "Professor",
+              "Engenheiro",
+              "Advogado"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marina responde 'Ele é engenheiro', sin artículo delante de la profesión, igual que en español."
+          },
+          {
+            "prompt": "¿Qué mascotas tienen Marina y su familia?",
+            "options": [
+              "Um gato e um cachorro",
+              "Um gato e uma cachorra",
+              "Dois gatos",
+              "Uma gata e um cachorro"
+            ],
+            "correctIndex": 3,
+            "explanation": "Marina dice 'Temos uma gata e um cachorro', usando uma (femenino) para gata y um (masculino) para cachorro."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas.",
+        "situation": "Ana entrevista a Pedro para un puesto en una oficina de San Pablo.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Pedro, você tem experiência em vendas?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Tenho sim. Trabalhei em uma loja de roupas por dois anos."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Que bom. Você fala alguma língua estrangeira?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Falo inglês e um pouco de espanhol."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Perfeito. Aqui temos uma equipe pequena: um gerente, uma assistente e você, se for contratado."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Que legal! Vocês têm uns escritórios bonitos."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, temos umas salas novas também."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde trabajó Pedro antes?",
+            "options": [
+              "En un supermercado",
+              "En una oficina de abogados",
+              "En una tienda de ropa",
+              "En un banco"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'Trabalhei em uma loja de roupas', usando uma (femenino) para loja."
+          },
+          {
+            "prompt": "¿Cómo está compuesto el equipo según Ana?",
+            "options": [
+              "Un gerente y una asistente",
+              "Dos gerentes",
+              "Una gerente y un asistente",
+              "Tres asistentes"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ana dice 'um gerente, uma assistente', usando um (masculino) para gerente y uma (femenino) para assistente."
+          },
+          {
+            "prompt": "¿Qué dice Ana sobre las salas de la oficina?",
+            "options": [
+              "Que no hay salas",
+              "Que son unas salas nuevas",
+              "Que son unos escritorios viejos",
+              "Que son unas salas pequeñas"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana responde 'temos umas salas novas', usando umas (femenino plural) para referirse a varias salas nuevas."
+          }
+        ]
+      }
+    ],
+    "genero": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto según el género de la palabra.",
+        "prompt": "___ leite que Juan Martín comprou está frio.",
+        "options": [
+          "A",
+          "As",
+          "O",
+          "Os"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Leite' es masculino en portugués, aunque en español 'leche' sea femenino.",
+        "optionNotes": [
+          "Incorrecto: calco del español, donde 'leche' es femenino, pero en portugués 'leite' es masculino.",
+          "Incorrecto: combina género equivocado y plural.",
+          "Correcto: 'leite' es masculino singular en portugués.",
+          "Incorrecto: 'leite' está en singular, no en plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto según el género de la palabra.",
+        "prompt": "___ viagem para São Paulo foi muito longa.",
+        "options": [
+          "O",
+          "As",
+          "Os",
+          "A"
+        ],
+        "correctIndex": 3,
+        "explanation": "Las palabras terminadas en '-agem' son femeninas en portugués, por eso 'a viagem'.",
+        "optionNotes": [
+          "Incorrecto: 'viagem' termina en '-agem' y esas palabras son femeninas, no masculinas.",
+          "Incorrecto: 'viagem' está en singular, no en plural.",
+          "Incorrecto: 'viagem' está en singular, no en plural, y además el género es incorrecto.",
+          "Correcto: 'viagem' es femenino singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto según el género de la palabra.",
+        "prompt": "___ árvore do jardim é muito alta.",
+        "options": [
+          "O",
+          "As",
+          "A",
+          "Os"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Árvore' es femenino en portugués, por eso corresponde 'a árvore'.",
+        "optionNotes": [
+          "Incorrecto: 'o' es masculino, pero 'árvore' es femenino.",
+          "Incorrecto: 'árvore' está en singular, no en plural.",
+          "Correcto: 'árvore' es femenino singular.",
+          "Incorrecto: 'árvore' está en singular, no en plural, y además el género es incorrecto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto según el género de la palabra.",
+        "prompt": "___ dor nas costas de Juan Martín começou ontem.",
+        "options": [
+          "A",
+          "Os",
+          "O",
+          "As"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Dor' es femenino en portugués, por eso corresponde 'a dor', aunque en español 'dolor' sea masculino.",
+        "optionNotes": [
+          "Correcto: 'dor' es femenino singular en portugués.",
+          "Incorrecto: 'dor' está en singular, no en plural, y además el género es incorrecto.",
+          "Incorrecto: calco del español 'el dolor'; en portugués 'dor' es femenino.",
+          "Incorrecto: 'dor' está en singular, no en plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto según el género de la palabra.",
+        "prompt": "___ sangue do paciente foi coletado pelo médico.",
+        "options": [
+          "As",
+          "O",
+          "Os",
+          "A"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Sangue' es masculino en portugués, aunque en español 'sangre' sea femenino.",
+        "optionNotes": [
+          "Incorrecto: combina género equivocado y plural.",
+          "Correcto: 'sangue' es masculino singular en portugués.",
+          "Incorrecto: 'sangue' está en singular, no en plural.",
+          "Incorrecto: calco del español 'la sangre'; en portugués 'sangue' es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto según el género de la palabra.",
+        "prompt": "___ garagem do prédio é pequena.",
+        "options": [
+          "O",
+          "A",
+          "As",
+          "Os"
+        ],
+        "correctIndex": 1,
+        "explanation": "Las palabras terminadas en '-agem' son femeninas en portugués, por eso 'a garagem'.",
+        "optionNotes": [
+          "Incorrecto: 'garagem' termina en '-agem' y esas palabras son femeninas, no masculinas.",
+          "Correcto: 'garagem' es femenino singular.",
+          "Incorrecto: 'garagem' está en singular, no en plural.",
+          "Incorrecto: 'garagem' está en singular, no en plural, y además el género es incorrecto."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto según el género de la palabra.",
+        "sentence": "___ ponte sobre o rio é muito antiga.",
+        "hint": "(artículo definido femenino)",
+        "answers": [
+          "A"
+        ],
+        "explanation": "'Ponte' es femenino en portugués, aunque en español 'puente' sea masculino, por eso se usa 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "O",
+            "why": "'Ponte' es femenino en portugués, no corresponde el artículo masculino 'o'."
+          },
+          {
+            "answer": "Os",
+            "why": "'Ponte' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto según el género de la palabra.",
+        "sentence": "Juan Martín bebeu ___ leite antes de dormir.",
+        "hint": "(artículo definido masculino, aunque en español sea femenino)",
+        "answers": [
+          "o"
+        ],
+        "explanation": "'Leite' es masculino en portugués, por eso se usa el artículo 'o', aunque en español sea femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "Calco del español 'la leche'; en portugués 'leite' es masculino."
+          },
+          {
+            "answer": "os",
+            "why": "'Leite' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto según el género de la palabra.",
+        "sentence": "Ana enviou ___ mensagem para Pedro ontem.",
+        "hint": "(artículo indefinido femenino)",
+        "answers": [
+          "uma"
+        ],
+        "explanation": "'Mensagem' termina en '-agem' y esas palabras son femeninas en portugués, por eso 'uma mensagem'.",
+        "wrongAnswers": [
+          {
+            "answer": "um",
+            "why": "Las palabras terminadas en '-agem' son femeninas, no corresponde el artículo masculino 'um'."
+          },
+          {
+            "answer": "uns",
+            "why": "'Mensagem' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto según el género de la palabra.",
+        "sentence": "Juan Martín fez ___ viagem longa até São Paulo.",
+        "hint": "(artículo indefinido femenino)",
+        "answers": [
+          "uma"
+        ],
+        "explanation": "'Viagem' termina en '-agem' y esas palabras son femeninas en portugués, por eso 'uma viagem'.",
+        "wrongAnswers": [
+          {
+            "answer": "um",
+            "why": "Las palabras terminadas en '-agem' son femeninas, no corresponde el artículo masculino 'um'."
+          },
+          {
+            "answer": "uns",
+            "why": "'Viagem' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto según el género de la palabra.",
+        "sentence": "___ sangue do paciente foi analisado no hospital.",
+        "hint": "(artículo definido masculino, aunque en español sea femenino)",
+        "answers": [
+          "O"
+        ],
+        "explanation": "'Sangue' es masculino en portugués, por eso se usa el artículo 'o', aunque en español sea femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "Calco del español 'la sangre'; en portugués 'sangue' es masculino."
+          },
+          {
+            "answer": "Os",
+            "why": "'Sangue' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el artículo correcto según el género de la palabra.",
+        "sentence": "___ árvore na frente da casa de Ana é enorme.",
+        "hint": "(artículo definido femenino)",
+        "answers": [
+          "A"
+        ],
+        "explanation": "'Árvore' es femenino en portugués, por eso se usa el artículo 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "O",
+            "why": "'Árvore' es femenino en portugués, no corresponde el artículo masculino 'o'."
+          },
+          {
+            "answer": "As",
+            "why": "'Árvore' está en singular, no en plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A viagem para São Paulo foi muito cansativa.",
+        "alternatives": [],
+        "translation": "El viaje a San Pablo fue muy cansador.",
+        "explanation": "'Viagem' termina en '-agem' y es femenino en portugués, por eso 'a viagem'.",
+        "tokens": [
+          "muito",
+          "Paulo",
+          "cansativa",
+          "para",
+          "viagem",
+          "A",
+          "São",
+          "foi"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O leite estava frio na geladeira de Ana.",
+        "alternatives": [],
+        "translation": "La leche estaba fría en la heladera de Ana.",
+        "explanation": "'Leite' es masculino en portugués, por eso se usa 'o', aunque en español 'leche' sea femenino.",
+        "tokens": [
+          "leite",
+          "Ana",
+          "frio",
+          "geladeira",
+          "de",
+          "estava",
+          "O",
+          "na"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A dor nas costas de Pedro começou ontem.",
+        "alternatives": [],
+        "translation": "El dolor de espalda de Pedro empezó ayer.",
+        "explanation": "'Dor' es femenino en portugués, por eso se usa 'a', aunque en español 'dolor' sea masculino.",
+        "tokens": [
+          "nas",
+          "dor",
+          "de",
+          "ontem",
+          "A",
+          "Pedro",
+          "costas",
+          "começou"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A árvore do jardim é muito alta.",
+        "alternatives": [],
+        "translation": "El árbol del jardín es muy alto.",
+        "explanation": "'Árvore' es femenino en portugués, por eso se usa 'a', aunque en español 'árbol' sea masculino.",
+        "tokens": [
+          "alta",
+          "é",
+          "do",
+          "A",
+          "árvore",
+          "muito",
+          "jardim"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A garagem do prédio é pequena demais.",
+        "alternatives": [],
+        "translation": "El garage del edificio es demasiado pequeño.",
+        "explanation": "'Garagem' termina en '-agem' y es femenino en portugués, por eso 'a garagem'.",
+        "tokens": [
+          "é",
+          "prédio",
+          "do",
+          "demais",
+          "pequena",
+          "A",
+          "garagem"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de género en la oración.",
+        "sentence": "O viagem foi muito cara.",
+        "answers": [
+          "A viagem foi muito cara."
+        ],
+        "explanation": "Las palabras terminadas en '-agem' son femeninas en portugués, por eso corresponde 'a viagem', no 'o viagem'.",
+        "wrongAnswers": [
+          {
+            "answer": "As viagens foi muito cara.",
+            "why": "Pluralizar 'viagem' no corrige el error, que estaba en el género del artículo, no en el número."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de género en la oración.",
+        "sentence": "A leite está quente.",
+        "answers": [
+          "O leite está quente."
+        ],
+        "explanation": "'Leite' es masculino en portugués, por eso corresponde 'o leite', no 'a leite'.",
+        "wrongAnswers": [
+          {
+            "answer": "As leites estão quente.",
+            "why": "Pluralizar 'leite' no corrige el error, que estaba en el género del artículo, no en el número."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de género en la oración.",
+        "sentence": "O dor nas costas não passou.",
+        "answers": [
+          "A dor nas costas não passou."
+        ],
+        "explanation": "'Dor' es femenino en portugués, por eso corresponde 'a dor', no 'o dor'.",
+        "wrongAnswers": [
+          {
+            "answer": "As dores nas costas não passou.",
+            "why": "Pluralizar 'dor' no corrige el error, que estaba en el género del artículo, no en el número."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de género en la oración.",
+        "sentence": "A sangue foi coletado pelo médico.",
+        "answers": [
+          "O sangue foi coletado pelo médico."
+        ],
+        "explanation": "'Sangue' es masculino en portugués, por eso corresponde 'o sangue', no 'a sangue'.",
+        "wrongAnswers": [
+          {
+            "answer": "Os sangues foram coletados pelo médico.",
+            "why": "Pluralizar 'sangue' no corrige el error, que estaba en el género del artículo, no en el número."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de género en la oración.",
+        "sentence": "O árvore do jardim caiu ontem.",
+        "answers": [
+          "A árvore do jardim caiu ontem."
+        ],
+        "explanation": "'Árvore' es femenino en portugués, por eso corresponde 'a árvore', no 'o árvore'.",
+        "wrongAnswers": [
+          {
+            "answer": "As árvores do jardim caiu ontem.",
+            "why": "Pluralizar 'árvore' no corrige el error, que estaba en el género del artículo, no en el número."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "La leche está fría.",
+        "answers": [
+          "O leite está frio."
+        ],
+        "explanation": "'Leite' es masculino en portugués, aunque en español 'leche' sea femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "A leite está fria.",
+            "why": "Calco del español 'la leche'; en portugués 'leite' es masculino, por eso corresponde 'o leite está frio'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El viaje fue muy largo.",
+        "answers": [
+          "A viagem foi muito longa."
+        ],
+        "explanation": "'Viagem' termina en '-agem' y es femenino en portugués, por eso se usa 'a' y el adjetivo en femenino 'longa'.",
+        "wrongAnswers": [
+          {
+            "answer": "O viagem foi muito longo.",
+            "why": "Las palabras terminadas en '-agem' son femeninas en portugués, por eso corresponde 'a viagem foi muito longa'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El árbol del jardín es enorme.",
+        "answers": [
+          "A árvore do jardim é enorme."
+        ],
+        "explanation": "'Árvore' es femenino en portugués, aunque en español 'árbol' sea masculino.",
+        "wrongAnswers": [
+          {
+            "answer": "O árvore do jardim é enorme.",
+            "why": "Calco del español 'el árbol'; en portugués 'árvore' es femenino, por eso corresponde 'a árvore'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Tengo un dolor fuerte en la espalda.",
+        "answers": [
+          "Tenho uma dor forte nas costas."
+        ],
+        "explanation": "'Dor' es femenino en portugués, aunque en español 'dolor' sea masculino.",
+        "wrongAnswers": [
+          {
+            "answer": "Tenho um dor forte nas costas.",
+            "why": "Calco del español 'el dolor'; en portugués 'dor' es femenino, por eso corresponde 'uma dor'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El médico pidió un análisis de sangre.",
+        "answers": [
+          "O médico pediu um exame de sangue."
+        ],
+        "explanation": "'Sangue' es masculino en portugués, aunque en español 'sangre' sea femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "O médico pediu uma exame de sangue.",
+            "why": "'Exame' es masculino en portugués, no corresponde el artículo femenino 'uma'."
+          },
+          {
+            "answer": "O médico pediu um exame de uma sangue.",
+            "why": "Calco del español 'la sangre'; en portugués 'sangue' es masculino, no lleva 'uma'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El garage del edificio es chico.",
+        "answers": [
+          "A garagem do prédio é pequena."
+        ],
+        "explanation": "'Garagem' termina en '-agem' y es femenino en portugués, por eso se usa 'a' y el adjetivo en femenino 'pequena'.",
+        "wrongAnswers": [
+          {
+            "answer": "O garagem do prédio é pequeno.",
+            "why": "Las palabras terminadas en '-agem' son femeninas en portugués, por eso corresponde 'a garagem é pequena'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Felipe, o leite desta garrafa está frio.",
+        "alternatives": [
+          "Felipe, o leite dessa garrafa está frio."
+        ],
+        "translation": "Felipe, la leche de esta botella está fría.",
+        "explanation": "En portugués 'leite' es masculino (o leite), aunque en español 'leche' sea femenino; prestá atención al artículo 'o' al principio."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A viagem para o Rio foi cansativa, mas valeu a pena.",
+        "alternatives": [
+          "A viagem para o Rio de Janeiro foi cansativa, mas valeu a pena."
+        ],
+        "translation": "El viaje a Río fue cansador, pero valió la pena.",
+        "explanation": "Las palabras terminadas en -agem son femeninas en portugués, por eso se dice 'a viagem' y no 'o viagem'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A árvore do jardim de Mariana é enorme.",
+        "alternatives": [
+          "A árvore do jardim da Mariana é enorme."
+        ],
+        "translation": "El árbol del jardín de Mariana es enorme.",
+        "explanation": "'Árvore' es femenina en portugués (a árvore), a diferencia de lo que podría sugerir su terminación en -e; el artículo correcto es 'a', no 'o'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Depois da queda, ele sentiu uma dor forte no braço.",
+        "alternatives": [
+          "Depois da queda, ele sentiu uma forte dor no braço."
+        ],
+        "translation": "Después de la caída, sintió un dolor fuerte en el brazo.",
+        "explanation": "'Dor' es femenina en portugués (a dor / uma dor), aunque termine en consonante y en español 'dolor' sea masculino."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "avô",
+          "avó"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "La diferencia está en el sonido de la 'o': 'avó' tiene o abierta (como en 'bola') y 'avô' tiene o cerrada (como en 'bolo'); en español no distinguimos estos dos sonidos."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "caza (de animales)",
+          "casa (vivienda)"
+        ],
+        "explanation": "En portugués, la 's' entre vocales suena como 'z' ('casa'), mientras que 'ç' siempre suena como una 's' suave ('caça'); en español esa diferencia no existe."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "mão",
+          "mau"
+        ],
+        "target": 0,
+        "meanings": [
+          "mano",
+          "malo"
+        ],
+        "explanation": "'Mão' termina en sonido nasal (como si cerraras la nariz al final), mientras que 'mau' termina en diptongo oral sin nasalizar; esta nasalización no existe en español."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "O leite já acabou, vou comprar mais depois do trabalho.",
+        "translation": "La leche ya se terminó, voy a comprar más después del trabajo.",
+        "tip": "Unís 'do trabalho' como una sola unidad sonora, y pronunciá 'leite' con el diptongo 'ei' suave, sin alargar la 'e' como en español."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "A viagem de ônibus até São Paulo demora seis horas.",
+        "translation": "El viaje en micro hasta San Pablo demora seis horas.",
+        "tip": "Marcá bien la nasal final de 'viagem': termina en un sonido como 'ei' pero con el aire saliendo por la nariz, no con los labios cerrados como en una 'm' fuerte."
+      },
+      {
+        "type": "shadowing",
+        "instruction": "Escuchá la frase y repetila en voz alta.",
+        "phrase": "Essa dor de cabeça começou depois da reunião.",
+        "translation": "Ese dolor de cabeza empezó después de la reunión.",
+        "tip": "Enlazá 'essa dor' sin pausa entre las dos palabras, y recordá que 'dor' usa artículo femenino ('a', 'essa'), no masculino."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre el género de las palabras marcadas.",
+        "text": "Mariana vai visitar a avó em Petrópolis. A viagem é curta, só duas horas de carro. Na casa da avó, tem uma árvore grande no jardim. A árvore tem flores amarelas. Mariana entra na cozinha e vê o leite na mesa. O leite está frio. Ela bebe um pouco. Depois, ela ajuda a avó a guardar o carro na garagem. A garagem é pequena, mas tem espaço para o carro e as bicicletas. Mariana manda uma mensagem para a mãe: 'Chegamos bem!' A mensagem é curta. À noite, as duas conversam sobre a viagem e riem muito. Mariana gosta muito desses dias com a avó.",
+        "questions": [
+          {
+            "prompt": "¿Qué adjetivo concuerda con 'a garagem' en el texto?",
+            "options": [
+              "pequeno",
+              "frio",
+              "curto",
+              "pequena"
+            ],
+            "correctIndex": 3,
+            "explanation": "Garagem termina en -agem, por eso es femenina en portugués, y el adjetivo concuerda en femenino: pequena."
+          },
+          {
+            "prompt": "¿Qué adjetivo concuerda con 'o leite' en el texto?",
+            "options": [
+              "fria",
+              "frio",
+              "pequena",
+              "curta"
+            ],
+            "correctIndex": 1,
+            "explanation": "Leite es masculino en portugués (o leite), aunque en español 'la leche' sea femenina, por eso se usa 'frio'."
+          },
+          {
+            "prompt": "¿Cuánto dura el viaje de Mariana hasta la casa de su abuela?",
+            "options": [
+              "Media hora",
+              "Un día entero",
+              "Tres horas",
+              "Dos horas"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'A viagem é curta, só duas horas de carro', es decir, dos horas."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre el género de las palabras marcadas.",
+        "text": "Lucas trabalha em um hospital em Curitiba. Todos os dias, ele atravessa uma ponte para chegar ao trabalho. A ponte é longa e bonita. Hoje tem uma campanha de doação de sangue no hospital. O sangue é muito precioso para salvar vidas. Lucas ajuda os médicos e fala com os pacientes. De tarde, ele sente uma dor de cabeça forte. A dor é chata, mas ele toma um remédio e continua o trabalho. Depois do expediente, Lucas manda uma mensagem rápida para a esposa: 'Vou chegar um pouco tarde.' Ele atravessa a ponte de novo e vai para casa, cansado mas feliz com o dia de trabalho.",
+        "questions": [
+          {
+            "prompt": "¿Qué adjetivo concuerda con 'a ponte' en el texto?",
+            "options": [
+              "longa",
+              "precioso",
+              "chato",
+              "longo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ponte es femenina en portugués (a ponte), por eso el adjetivo concuerda en femenino: longa."
+          },
+          {
+            "prompt": "¿Qué adjetivo concuerda con 'o sangue' en el texto?",
+            "options": [
+              "precioso",
+              "preciosa",
+              "chata",
+              "longa"
+            ],
+            "correctIndex": 0,
+            "explanation": "Sangue es masculino en portugués (o sangue), aunque en español 'la sangre' sea femenina, por eso se usa 'precioso'."
+          },
+          {
+            "prompt": "¿Qué le manda Lucas a su esposa al final de su jornada de trabajo?",
+            "options": [
+              "Un mensaje rápido",
+              "Una llamada telefónica",
+              "Un remedio",
+              "Una foto del hospital"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice: 'Lucas manda uma mensagem rápida para a esposa', es decir, le manda un mensaje rápido."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas.",
+        "situation": "En una inmobiliaria de São Paulo, la corretora Carla le muestra un departamento a Rodrigo, que se va a mudar pronto.",
+        "lines": [
+          {
+            "speaker": "Carla",
+            "text": "Oi, Rodrigo! Esse apartamento tem uma garagem grande para o seu carro."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Que bom! Eu preciso de uma garagem, porque tenho dois carros."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Perfeito. A garagem é coberta e bem segura."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Ótimo. Quando posso me mudar?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Você pode se mudar na próxima semana. A viagem da sua mudança não vai ser longa, porque o apartamento fica perto do seu trabalho."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Que alívio! Vou mandar uma mensagem para o pessoal da empresa de mudança."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Boa ideia. Me manda uma mensagem quando tudo estiver confirmado."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Combinado! Muito obrigado, Carla."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo es el garaje del departamento?",
+            "options": [
+              "Grande y cubierto",
+              "No tiene garaje",
+              "Pequeño y descubierto",
+              "Grande pero descubierto"
+            ],
+            "correctIndex": 0,
+            "explanation": "Carla dice que 'a garagem é coberta' y antes aclara que es 'grande', por eso es grande y cubierto."
+          },
+          {
+            "prompt": "¿Por qué el viaje de la mudanza de Rodrigo no va a ser largo?",
+            "options": [
+              "Porque la empresa de mudanza es muy rápida",
+              "Porque tiene un auto rápido",
+              "Porque Carla lo va a acompañar",
+              "Porque el departamento queda cerca de su trabajo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Carla dice que la mudanza no será larga 'porque o apartamento fica perto do seu trabalho'."
+          },
+          {
+            "prompt": "¿Qué género gramatical tienen en portugués las palabras 'garagem' y 'mensagem'?",
+            "options": [
+              "Depende del contexto",
+              "Neutro",
+              "Masculino",
+              "Femenino"
+            ],
+            "correctIndex": 3,
+            "explanation": "Las palabras terminadas en -agem son femeninas en portugués: a garagem, a mensagem, a viagem."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas.",
+        "situation": "En un consultorio médico de São Paulo, la paciente Ana consulta al doctor Pedro porque siente un dolor fuerte.",
+        "lines": [
+          {
+            "speaker": "Dr. Pedro",
+            "text": "Bom dia, Ana! Me diga, onde você sente a dor?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "A dor é aqui, na barriga. Ela começou ontem à noite."
+          },
+          {
+            "speaker": "Dr. Pedro",
+            "text": "Entendi. Você vai precisar fazer um exame de sangue."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Tudo bem. O sangue vai mostrar o que eu tenho?"
+          },
+          {
+            "speaker": "Dr. Pedro",
+            "text": "Sim, o exame de sangue ajuda muito. Você tomou café da manhã hoje?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Só tomei um pouco de leite, nada mais."
+          },
+          {
+            "speaker": "Dr. Pedro",
+            "text": "O leite não é problema para esse exame. Pode ir fazer o exame agora mesmo."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Perfeito, doutor. Muito obrigada!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde siente Ana el dolor?",
+            "options": [
+              "En la espalda",
+              "En la barriga",
+              "En el pecho",
+              "En la cabeza"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana dice: 'A dor é aqui, na barriga'."
+          },
+          {
+            "prompt": "¿Qué tomó Ana en el desayuno?",
+            "options": [
+              "Café",
+              "Un poco de leche",
+              "Jugo de naranja",
+              "Nada"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana responde: 'Só tomei um pouco de leite, nada mais', es decir, tomó un poco de leche."
+          },
+          {
+            "prompt": "¿Qué género tiene la palabra 'sangue' en portugués, a diferencia del español 'sangre'?",
+            "options": [
+              "Femenino",
+              "Neutro",
+              "No tiene género",
+              "Masculino"
+            ],
+            "correctIndex": 3,
+            "explanation": "Sangue es masculino en portugués (o sangue), aunque en español 'la sangre' sea femenina."
+          }
+        ]
+      }
+    ]
+  }
+}
