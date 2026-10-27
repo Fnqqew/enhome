@@ -83,3 +83,36 @@ describe('diario', () => {
     expect(prompt).toContain(curriculum[0].title)
   })
 })
+
+describe('la historia de la semana', () => {
+  // La semana del primer tópico empieza el lunes 19/10.
+  const MON = '2026-10-19'
+
+  it('un capítulo por día, con los anteriores en el pedido, y no más adelante que las prácticas hechas', async () => {
+    const prompts: string[] = []
+    const ask = (async (options: { prompt: string }) => {
+      prompts.push(options.prompt)
+      return story
+    }) as unknown as Ask
+    progression.applyPlacementResult(curriculum[0].id, [], addDays(MON, -1))
+    const readings = new Readings(db, curriculum, progression, 'it', ask)
+    const week = progression.getState(MON).week!
+    expect(readings.story(MON)).toMatchObject({ chapters: [], next: { chapter: 1, subtopicTitle: curriculum[0].subtopics[0].title } })
+
+    const first = await readings.nextChapter(MON)
+    expect(first.chapter).toBe(1)
+    expect(readings.story(MON)).toMatchObject({ next: null, waitReason: expect.stringMatching(/Mañana/) })
+    await expect(readings.nextChapter(MON)).rejects.toThrow(/Mañana/)
+
+    // Al otro día sin haber practicado, hay que hacer la práctica primero.
+    const tomorrow = addDays(MON, 1)
+    expect(readings.story(tomorrow)?.waitReason).toMatch(/práctica/)
+
+    // Con la práctica del día hecha, sigue con el capítulo 2, que lleva el 1 en el pedido.
+    progression.completeUnit(week.units[0].id, tomorrow)
+    expect(readings.story(tomorrow)?.next?.chapter).toBe(2)
+    await readings.nextChapter(tomorrow)
+    expect(prompts[1]).toContain(`Capítulo 1: ${story.title}`)
+    expect(readings.list()[0]).toMatchObject({ chapter: 2 })
+  })
+})

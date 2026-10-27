@@ -22,10 +22,13 @@ export interface ReadingView {
   answers: number[] | null
   score: number | null
   createdOn: string
+  // Si es un capítulo de la historia de la semana, cuál.
+  chapter: number | null
 }
 
 export interface ReadingSummary {
   id: number
+  chapter: number | null
   title: string
   level: string
   score: number | null
@@ -64,4 +67,17 @@ export interface Highlight {
   id: number
   text: string
   note: string
+}
+
+// Cuántos capítulos tiene la historia de una semana (uno por subtema).
+export const STORY_CHAPTERS = 5
+
+// La historia de la semana: los capítulos que hay y si se puede leer uno nuevo hoy.
+export interface StoryView {
+  topicTitle: string
+  chapters: ReadingSummary[]
+  // El capítulo que se puede escribir ahora, con el subtema que usa (null si hay que esperar).
+  next: { chapter: number; subtopicTitle: string } | null
+  // Por qué todavía no sigue (null si se puede seguir).
+  waitReason: string | null
 }

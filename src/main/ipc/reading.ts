@@ -60,6 +60,8 @@ export function registerReading(ctx: IpcContext): void {
     services().readings.answer(id.parse(readingId), z.array(z.number().int().min(0).max(3)).parse(answers))
   )
   handle(IPC.readingRemove, (readingId) => services().readings.remove(id.parse(readingId)))
+  handle(IPC.readingStory, () => services().readings.story(today()))
+  handle(IPC.readingNextChapter, () => services().readings.nextChapter(today()))
 
   handle(IPC.journalGet, () => services().journal.view(today()))
   handle(IPC.journalSave, (text) =>

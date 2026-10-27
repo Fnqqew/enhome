@@ -17,7 +17,7 @@ import type { ProgressView, RewardNews, SecondChanceResult } from './rewards'
 import type { ReviewAnswerResult, ReviewItemView, ReviewOverview } from './review'
 import type { GameDeck, GameId, GameResult } from './games'
 import type { VocabCard, VocabOverview, WordInfo } from './vocab'
-import type { Highlight, JournalView, ReadingSummary, ReadingView } from './reading'
+import type { Highlight, JournalView, ReadingSummary, ReadingView, StoryView } from './reading'
 import type { ChatSuggestion, ChatSummary, ChatView } from './chat'
 import type { UpdateInfo } from './updates'
 import type { VoiceRole, VoiceStatus } from './voice'
@@ -119,6 +119,8 @@ export const IPC = {
   readingGenerate: 'reading:generate',
   readingAnswer: 'reading:answer',
   readingRemove: 'reading:remove',
+  readingStory: 'reading:story',
+  readingNextChapter: 'reading:next-chapter',
   journalGet: 'journal:get',
   journalSave: 'journal:save',
   journalCorrect: 'journal:correct',
@@ -287,6 +289,8 @@ export interface Api {
   generateReading(theme: string): Promise<ReadingView>
   answerReading(readingId: number, answers: number[]): Promise<ReadingView>
   removeReading(readingId: number): Promise<ReadingSummary[]>
+  getStory(): Promise<StoryView | null>
+  nextChapter(): Promise<ReadingView>
   getJournal(): Promise<JournalView>
   saveJournal(text: string): Promise<JournalView>
   correctJournal(): Promise<JournalView>

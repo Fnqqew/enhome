@@ -559,5 +559,14 @@ export const MIGRATIONS: Migration[] = [
       ALTER TABLE exercises ADD COLUMN first_try TEXT;
       ALTER TABLE exercises ADD COLUMN repeat_of INTEGER;
     `
+  },
+  {
+    version: 18,
+    name: 'historia de la semana',
+    sql: `
+      -- Los capítulos de la historia de la semana son lecturas con su semana y su número.
+      ALTER TABLE readings ADD COLUMN week_id INTEGER;
+      ALTER TABLE readings ADD COLUMN chapter INTEGER;
+    `
   }
 ]

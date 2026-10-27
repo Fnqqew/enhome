@@ -3,6 +3,7 @@ import { formatDayMonth } from '@shared/dates'
 import { READING_THEMES, type ReadingSummary, type ReadingView } from '@shared/reading'
 import ClaudeWait from '../components/ClaudeWait'
 import Icon from '../components/Icon'
+import StoryCard from '../components/readings/StoryCard'
 import SelectionAsk from '../components/summaries/SelectionAsk'
 import { useCourse } from '../hooks/useCourse'
 import { useSpeech } from '../hooks/useSpeech'
@@ -61,6 +62,12 @@ export default function Readings(): React.JSX.Element {
   return (
     <>
       <h1>Lecturas</h1>
+      <StoryCard
+        onOpen={(reading) => {
+          setOpen(reading)
+          load()
+        }}
+      />
       <section className="card stack fade-in">
         <div>
           <span className="level">LECTURA NUEVA</span>
@@ -194,7 +201,7 @@ function Reading({ reading, onAnswered }: { reading: ReadingView; onAnswered: (r
         <div className="card-header">
           <div>
             <span className="level">
-              NIVEL {reading.level}
+              {reading.chapter ? `CAPÍTULO ${reading.chapter} · ` : ''}NIVEL {reading.level}
               {reading.topicTitle ? ` · ${reading.topicTitle.toUpperCase()}` : ''}
             </span>
             <h2 className="en">{reading.title}</h2>
