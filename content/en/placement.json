@@ -2429,6 +2429,276 @@
         "correctIndex": 3,
         "explanation": "La inversión formal del tercer condicional reemplaza 'If I had known' por 'Had I known', por eso 'Had' es la opción correcta."
       }
+    ],
+    "c1-formal-style": [
+      {
+        "subtopicId": "nominalizacion",
+        "instruction": "Elegí la forma nominalizada correcta para completar la oración.",
+        "prompt": "Their ___ of the data was extremely thorough.",
+        "options": [
+          "analysis",
+          "analyzation",
+          "analyzing",
+          "analyze"
+        ],
+        "correctIndex": 0,
+        "explanation": "La forma nominal correcta del verbo 'analyze' es 'analysis'; 'analyzation' no existe en inglés."
+      },
+      {
+        "subtopicId": "transformar-frases",
+        "instruction": "Elegí la forma nominal correcta para reescribir esta oración en estilo formal.",
+        "prompt": "The government's ___ of taxes was significant.",
+        "options": [
+          "reducing",
+          "reduction",
+          "reduce",
+          "reductive"
+        ],
+        "correctIndex": 1,
+        "explanation": "El sustantivo correcto derivado del verbo 'reduce' es 'reduction', que es la forma nominal estándar en inglés formal."
+      },
+      {
+        "subtopicId": "vocabulario-formal",
+        "instruction": "Elegí la palabra de registro formal más adecuada para completar la oración.",
+        "prompt": "The company managed to ___ a significant increase in revenue.",
+        "options": [
+          "grab",
+          "pick up",
+          "get",
+          "obtain"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Obtain' es la palabra de registro formal adecuada, mientras que 'get', 'grab' y 'pick up' son demasiado coloquiales para un informe formal."
+      },
+      {
+        "subtopicId": "estructuras-impersonales",
+        "instruction": "Elegí la estructura impersonal correcta para completar la oración.",
+        "prompt": "___ noted that the results were inconclusive.",
+        "options": [
+          "We is",
+          "One are",
+          "It is",
+          "They was"
+        ],
+        "correctIndex": 2,
+        "explanation": "La estructura impersonal 'It is noted that...' permite dar un tono objetivo sin usar la primera persona, y es gramaticalmente correcta."
+      }
+    ],
+    "c1-advanced-modality": [
+      {
+        "subtopicId": "neednt-have",
+        "instruction": "Elegí la opción que completa la oración indicando que la acción se hizo, pero no era necesaria.",
+        "prompt": "She got up at 6am, but then found out the meeting had been cancelled. She ___ so early.",
+        "options": [
+          "needn't have gotten up",
+          "didn't need to get up",
+          "mustn't have gotten up",
+          "shouldn't get up"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usamos 'needn't have + participio' para señalar que una acción ya realizada resultó innecesaria, mientras que 'didn't need to' solo indica que algo no era necesario sin confirmar si se hizo o no."
+      },
+      {
+        "subtopicId": "bound-likely-set",
+        "instruction": "Elegí la expresión que indica mayor certeza, casi inevitable, sobre el futuro.",
+        "prompt": "Given how stubborn he is, he ___ refuse to apologize, no matter what anyone says.",
+        "options": [
+          "is likely to",
+          "is supposed to",
+          "is bound to",
+          "is set to"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Be bound to' expresa una certeza casi absoluta basada en el carácter o la lógica de la situación, más fuerte que 'likely to' (probable) y distinto de 'set to' (planeado/programado)."
+      },
+      {
+        "subtopicId": "especulacion",
+        "instruction": "Elegí la opción que expresa el mayor grado de certeza positiva al especular sobre el pasado.",
+        "prompt": "I'm not sure who called, but given the time, it ___ my sister - she always rings at this hour.",
+        "options": [
+          "might have been",
+          "must have been",
+          "can't have been",
+          "should have been"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Must have been' se usa para especular con alto grado de certeza sobre algo del pasado, a diferencia de 'might have been' (posibilidad menor) o 'can't have been' (certeza negativa)."
+      },
+      {
+        "subtopicId": "obligacion-matices",
+        "instruction": "Elegí la opción que expresa permiso, no obligación.",
+        "prompt": "According to company policy, employees ___ take a 15-minute break, but it's not compulsory.",
+        "options": [
+          "must",
+          "are required to",
+          "are allowed to",
+          "have to"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Be allowed to' expresa permiso, no obligación, a diferencia de 'must', 'are required to' y 'have to', que sí indican obligación."
+      }
+    ],
+    "en-c1-vocab-precision": [
+      {
+        "subtopicId": "sinonimos-matices",
+        "instruction": "Elegí la palabra que exprese la escala más extrema de tamaño.",
+        "prompt": "After the earthquake, the city was left in ___ ruins — entire blocks had vanished.",
+        "options": [
+          "big",
+          "great",
+          "enormous",
+          "huge"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Enormous' indica una escala extrema de magnitud, más intensa que 'big' o 'huge', por eso es la más adecuada para describir una destrucción tan grande."
+      },
+      {
+        "subtopicId": "connotacion-positiva-negativa-neutra",
+        "instruction": "Elegí la palabra con connotación negativa, que sugiere una delgadez poco saludable.",
+        "prompt": "He looked dangerously ___ after months of illness, and his family grew worried.",
+        "options": [
+          "skinny",
+          "slim",
+          "lean",
+          "thin"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Skinny' tiene connotación negativa y sugiere una delgadez excesiva o poco saludable, a diferencia de 'slim' y 'lean', que son positivas."
+      },
+      {
+        "subtopicId": "formal-vs-informal",
+        "instruction": "Elegí la palabra de registro formal apropiada para un memo oficial.",
+        "prompt": "In the official memo, the board announced that it would ___ the contract effective immediately.",
+        "options": [
+          "ditch",
+          "dump",
+          "terminate",
+          "axe"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Terminate' es el término formal correcto para un documento oficial, mientras que 'ditch', 'dump' y 'axe' son expresiones informales."
+      },
+      {
+        "subtopicId": "falsos-amigos-avanzados",
+        "instruction": "Elegí la palabra que significa 'prudente, con sentido común' (cuidado con el falso amigo en español).",
+        "prompt": "She's a very ___ person who always makes well-thought-out decisions before acting.",
+        "options": [
+          "sensitive",
+          "sensible",
+          "emotional",
+          "susceptible"
+        ],
+        "correctIndex": 1,
+        "explanation": "En inglés, 'sensible' significa prudente o con sentido común, no 'sensible' en el sentido emocional, que se traduce como 'sensitive'."
+      }
+    ],
+    "c1-phrasal-collocations": [
+      {
+        "subtopicId": "particulas",
+        "instruction": "Elegí la partícula que completa correctamente el phrasal verb según el sentido de la oración.",
+        "prompt": "Prices have gone ___ sharply over the past year, making it hard for families to cope.",
+        "options": [
+          "up",
+          "down",
+          "off",
+          "over"
+        ],
+        "correctIndex": 0,
+        "explanation": "La partícula 'up' indica aumento o crecimiento, que es el sentido que pide la oración sobre los precios."
+      },
+      {
+        "subtopicId": "separables-inseparables",
+        "instruction": "Elegí la opción con el orden correcto de palabras para este phrasal verb separable con pronombre.",
+        "prompt": "I didn't like the job offer, so I turned ___ straight away.",
+        "options": [
+          "down it",
+          "it down",
+          "down it down",
+          "it down it"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con un phrasal verb separable como 'turn down', cuando el objeto es un pronombre (it) debe ir obligatoriamente entre el verbo y la partícula: 'turned it down'."
+      },
+      {
+        "subtopicId": "colocaciones-verbos",
+        "instruction": "Elegí el verbo que forma la colocación correcta con 'an agreement'.",
+        "prompt": "After hours of negotiation, both sides finally ___ an agreement.",
+        "options": [
+          "did",
+          "made",
+          "took",
+          "reached"
+        ],
+        "correctIndex": 3,
+        "explanation": "La colocación natural en inglés es 'reach an agreement', no 'make', 'do' ni 'take' an agreement."
+      },
+      {
+        "subtopicId": "colocaciones-adjetivos",
+        "instruction": "Elegí el adverbio que forma la colocación natural con 'unaware'.",
+        "prompt": "He walked straight into the trap, ___ unaware of the danger ahead.",
+        "options": [
+          "hardly",
+          "strongly",
+          "deeply",
+          "blissfully"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Blissfully unaware' es una colocación fija en inglés que significa no darse cuenta de algo de manera ingenua o despreocupada; las otras combinaciones no suenan naturales con 'unaware'."
+      }
+    ],
+    "en-c1-vocab-academic-business": [
+      {
+        "subtopicId": "vocabulario-investigacion-academica",
+        "instruction": "Elegí la palabra que completa correctamente el término académico.",
+        "prompt": "Before collecting data, the researchers described their ___ in detail, explaining how the sample was selected and the data analyzed.",
+        "options": [
+          "methodology",
+          "findings",
+          "literature",
+          "abstract"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Methodology' se refiere al conjunto de métodos y procedimientos usados en una investigación, que es justo lo que se describe antes de recolectar datos."
+      },
+      {
+        "subtopicId": "vocabulario-reuniones-negociaciones",
+        "instruction": "Elegí la palabra que completa correctamente la oración de contexto laboral.",
+        "prompt": "After hours of discussion, both parties were finally able to reach a ___ on the new pricing policy.",
+        "options": [
+          "consensus",
+          "conclusion",
+          "resolution",
+          "deal"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Reach a consensus' es la colocación estándar en inglés de negocios para indicar que todas las partes llegaron a un acuerdo general."
+      },
+      {
+        "subtopicId": "verbos-formales-negocios",
+        "instruction": "Elegí el verbo formal de una sola palabra que reemplaza correctamente a 'deal with' en este contexto.",
+        "prompt": "The new policy aims to ___ the rising costs of production before they affect profit margins.",
+        "options": [
+          "mitigate",
+          "fix",
+          "handle",
+          "solve"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Mitigate' es el verbo formal típico de negocios para indicar que se busca reducir o atenuar un problema o riesgo, en este caso los costos crecientes."
+      },
+      {
+        "subtopicId": "colocaciones-academicas-frecuentes",
+        "instruction": "Elegí la colocación académica que completa correctamente la oración.",
+        "prompt": "The new evidence has ___ the validity of the original study's conclusions, prompting further investigation.",
+        "options": [
+          "called into question",
+          "shed light on",
+          "taken into account",
+          "put into practice"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Call into question' significa poner en duda algo, que es el sentido que necesita la oración al referirse a cuestionar la validez de las conclusiones."
+      }
     ]
   }
 }
