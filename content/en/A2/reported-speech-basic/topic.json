@@ -1,0 +1,500 @@
+{
+  "id": "en-a2-reported-speech-basic",
+  "level": "A2",
+  "order": 10,
+  "title": "Estilo indirecto básico",
+  "targetTitle": "Basic Reported Speech",
+  "description": "Vas a aprender a contar lo que alguien dijo usando say y tell, con los cambios básicos de tiempo verbal. Te sirve para transmitir mensajes, chismes o información de otra persona en una conversación.",
+  "objectives": [
+    "Diferenciar y usar correctamente say y tell para reportar lo que alguien dijo.",
+    "Aplicar el retroceso de tiempo verbal (backshift) al reportar afirmaciones en pasado.",
+    "Reportar afirmaciones simples, tanto afirmativas como negativas, de forma completa.",
+    "Ajustar pronombres, posesivos y expresiones de tiempo o lugar al contar lo que dijo otra persona.",
+    "Contar un mensaje o una conversación completa combinando say, tell y los cambios necesarios."
+  ],
+  "prerequisites": [
+    "a2-modals-conditionals"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "say-vs-tell",
+      "day": 1,
+      "title": "Say vs. tell",
+      "goal": "Poder diferenciar y usar correctamente say y tell para reportar lo que alguien dijo.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Say no necesita un objeto de persona: He said that he was tired. Si querés mencionar a quién le habló, usás say to + persona.",
+        "Tell siempre necesita un objeto de persona (a quién le dijeron algo): He told me that he was tired.",
+        "That es opcional después de say/tell: He said (that) he was tired.",
+        "Tell aparece en expresiones fijas como tell the truth, tell a story, tell a lie.",
+        "Say aparece en expresiones fijas como say hello, say sorry."
+      ],
+      "examples": [
+        {
+          "target": "She said she was happy.",
+          "es": "Ella dijo que estaba feliz."
+        },
+        {
+          "target": "She told me she was happy.",
+          "es": "Ella me dijo que estaba feliz."
+        },
+        {
+          "target": "He said (that) he liked the movie.",
+          "es": "Él dijo que le gustó la película."
+        },
+        {
+          "target": "He told his friend (that) he liked the movie.",
+          "es": "Él le dijo a su amigo que le gustó la película."
+        },
+        {
+          "target": "They said they were busy.",
+          "es": "Ellos dijeron que estaban ocupados."
+        },
+        {
+          "target": "They told us they were busy.",
+          "es": "Ellos nos dijeron que estaban ocupados."
+        },
+        {
+          "target": "Don't tell a lie.",
+          "es": "No digas una mentira."
+        },
+        {
+          "target": "She said hello to everyone.",
+          "es": "Ella saludó a todos."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "She told that she was tired.",
+          "right": "She told me that she was tired.",
+          "why": "Tell siempre necesita un objeto de persona (a quién); no se puede usar sin él."
+        },
+        {
+          "wrong": "He said me he was busy.",
+          "right": "He told me he was busy.",
+          "why": "Say no lleva un objeto directo de persona; para eso se usa tell, o say to + persona."
+        },
+        {
+          "wrong": "She said to that she liked it.",
+          "right": "She said that she liked it.",
+          "why": "Say to se usa solo cuando sigue la persona, no antes de that."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Tell the truth",
+          "es": "Decir la verdad",
+          "example": "You should always tell the truth.",
+          "exampleEs": "Siempre deberías decir la verdad."
+        },
+        {
+          "target": "Tell a story",
+          "es": "Contar una historia",
+          "example": "My grandfather loves to tell a story.",
+          "exampleEs": "A mi abuelo le encanta contar una historia."
+        },
+        {
+          "target": "Say hello",
+          "es": "Saludar",
+          "example": "Say hello to your family for me.",
+          "exampleEs": "Saludá a tu familia de mi parte."
+        },
+        {
+          "target": "Say sorry",
+          "es": "Pedir disculpas",
+          "example": "He didn't even say sorry.",
+          "exampleEs": "Ni siquiera pidió disculpas."
+        },
+        {
+          "target": "Tell a lie",
+          "es": "Decir una mentira",
+          "example": "She would never tell a lie.",
+          "exampleEs": "Ella nunca diría una mentira."
+        }
+      ]
+    },
+    {
+      "id": "verb-tense-backshift",
+      "day": 2,
+      "title": "Cambios de tiempo verbal al reportar",
+      "goal": "Poder aplicar el retroceso verbal (backshift) al reportar lo que alguien dijo en pasado.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Cuando el verbo reportador (said/told) está en pasado, el verbo de la oración reportada también retrocede un tiempo: presente simple → pasado simple.",
+        "Present continuous → past continuous: 'I am working' → He said he was working.",
+        "Present perfect → past perfect: 'I have finished' → She said she had finished.",
+        "Will → would: 'I will call you' → He said he would call me.",
+        "Can → could: 'I can swim' → She said she could swim."
+      ],
+      "examples": [
+        {
+          "target": "\"I am tired,\" she said. → She said she was tired.",
+          "es": "\"Estoy cansada\", dijo ella. → Dijo que estaba cansada."
+        },
+        {
+          "target": "\"I work from home,\" he said. → He said he worked from home.",
+          "es": "\"Trabajo desde casa\", dijo él. → Dijo que trabajaba desde casa."
+        },
+        {
+          "target": "\"I am studying English,\" she said. → She said she was studying English.",
+          "es": "\"Estoy estudiando inglés\", dijo ella. → Dijo que estaba estudiando inglés."
+        },
+        {
+          "target": "\"I have finished the report,\" he said. → He said he had finished the report.",
+          "es": "\"Terminé el informe\", dijo él. → Dijo que había terminado el informe."
+        },
+        {
+          "target": "\"I will help you,\" she said. → She said she would help me.",
+          "es": "\"Te voy a ayudar\", dijo ella. → Dijo que me iba a ayudar."
+        },
+        {
+          "target": "\"I can drive,\" he said. → He said he could drive.",
+          "es": "\"Sé manejar\", dijo él. → Dijo que sabía manejar."
+        },
+        {
+          "target": "\"I went to Spain,\" she said. → She said she had gone to Spain.",
+          "es": "\"Fui a España\", dijo ella. → Dijo que había ido a España."
+        },
+        {
+          "target": "\"I don't like coffee,\" he said. → He said he didn't like coffee.",
+          "es": "\"No me gusta el café\", dijo él. → Dijo que no le gustaba el café."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "She said she is tired.",
+          "right": "She said she was tired.",
+          "why": "Cuando el verbo reportador está en pasado, el presente simple retrocede a pasado simple."
+        },
+        {
+          "wrong": "He said he will help me.",
+          "right": "He said he would help me.",
+          "why": "Will retrocede a would al reportar algo dicho en el pasado."
+        },
+        {
+          "wrong": "She said she has finished.",
+          "right": "She said she had finished.",
+          "why": "El present perfect retrocede a past perfect (had + participio) al reportar en pasado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "He said that he was busy.",
+          "es": "Dijo que estaba ocupado.",
+          "example": "He said that he was busy.",
+          "exampleEs": "Dijo que estaba ocupado."
+        },
+        {
+          "target": "She told me that she was leaving.",
+          "es": "Ella me dijo que se iba.",
+          "example": "She told me that she was leaving.",
+          "exampleEs": "Ella me dijo que se iba."
+        },
+        {
+          "target": "According to him",
+          "es": "Según él",
+          "example": "According to him, the meeting was canceled.",
+          "exampleEs": "Según él, se canceló la reunión."
+        },
+        {
+          "target": "As far as I know",
+          "es": "Que yo sepa",
+          "example": "As far as I know, she said she would come.",
+          "exampleEs": "Que yo sepa, dijo que iba a venir."
+        }
+      ]
+    },
+    {
+      "id": "reporting-statements",
+      "day": 3,
+      "title": "Reportar afirmaciones simples",
+      "goal": "Poder reportar afirmaciones simples completas combinando say/tell con el cambio de tiempo verbal.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "Para reportar una afirmación usamos said/told + (that) + sujeto + verbo retrocedido.",
+        "El pronombre sujeto de la oración original puede cambiar según quién cuenta la historia: 'I am tired' (María) → María said she was tired.",
+        "Las afirmaciones negativas se reportan igual que las afirmativas, retrocediendo el verbo: 'I don't like it' → He said he didn't like it.",
+        "Pasar un diálogo directo a estilo indirecto implica cambiar el verbo, el pronombre y a veces las expresiones de tiempo.",
+        "A este nivel aplicamos el retroceso verbal siempre que el verbo reportador (said/told) esté en pasado."
+      ],
+      "examples": [
+        {
+          "target": "\"I live in Buenos Aires,\" said Juan. → Juan said he lived in Buenos Aires.",
+          "es": "\"Vivo en Buenos Aires\", dijo Juan. → Juan dijo que vivía en Buenos Aires."
+        },
+        {
+          "target": "\"We are happy,\" they said. → They said they were happy.",
+          "es": "\"Estamos felices\", dijeron. → Dijeron que estaban felices."
+        },
+        {
+          "target": "\"I don't understand,\" she said. → She said she didn't understand.",
+          "es": "\"No entiendo\", dijo ella. → Dijo que no entendía."
+        },
+        {
+          "target": "\"I have a dog,\" he said. → He said he had a dog.",
+          "es": "\"Tengo un perro\", dijo él. → Dijo que tenía un perro."
+        },
+        {
+          "target": "\"I need help,\" she said. → She said she needed help.",
+          "es": "\"Necesito ayuda\", dijo ella. → Dijo que necesitaba ayuda."
+        },
+        {
+          "target": "\"I'm not hungry,\" he said. → He said he wasn't hungry.",
+          "es": "\"No tengo hambre\", dijo él. → Dijo que no tenía hambre."
+        },
+        {
+          "target": "\"We don't have time,\" they said. → They said they didn't have time.",
+          "es": "\"No tenemos tiempo\", dijeron. → Dijeron que no tenían tiempo."
+        },
+        {
+          "target": "\"I feel sick,\" she told me. → She told me she felt sick.",
+          "es": "\"Me siento mal\", me dijo. → Me dijo que se sentía mal."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Juan said he lives in Buenos Aires.",
+          "right": "Juan said he lived in Buenos Aires.",
+          "why": "Al reportar en pasado, el presente simple retrocede a pasado simple."
+        },
+        {
+          "wrong": "She said she doesn't understand.",
+          "right": "She said she didn't understand.",
+          "why": "La negación en presente también retrocede a pasado al reportar en pasado."
+        },
+        {
+          "wrong": "He said I had a dog.",
+          "right": "He said he had a dog.",
+          "why": "El pronombre tiene que coincidir con quién habla; si él habla de sí mismo, se usa he, no I."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "He mentioned that he was moving.",
+          "es": "Mencionó que se mudaba.",
+          "example": "He mentioned that he was moving.",
+          "exampleEs": "Mencionó que se mudaba."
+        },
+        {
+          "target": "She explained that she was busy.",
+          "es": "Explicó que estaba ocupada.",
+          "example": "She explained that she was busy.",
+          "exampleEs": "Explicó que estaba ocupada."
+        },
+        {
+          "target": "They admitted that they were wrong.",
+          "es": "Admitieron que estaban equivocados.",
+          "example": "They admitted that they were wrong.",
+          "exampleEs": "Admitieron que estaban equivocados."
+        },
+        {
+          "target": "He claimed that he knew the answer.",
+          "es": "Afirmó que sabía la respuesta.",
+          "example": "He claimed that he knew the answer.",
+          "exampleEs": "Afirmó que sabía la respuesta."
+        }
+      ]
+    },
+    {
+      "id": "pronoun-time-changes",
+      "day": 4,
+      "title": "Cambios de pronombres y expresiones de tiempo",
+      "goal": "Poder ajustar pronombres, posesivos y expresiones de tiempo o lugar al reportar lo que alguien dijo.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Los pronombres cambian según la perspectiva de quien cuenta: 'I' se convierte en he/she; 'my' se convierte en his/her.",
+        "Las expresiones de tiempo también cambian si contamos algo más tarde: today → that day, tomorrow → the next day, yesterday → the day before.",
+        "Here cambia a there, y this/these pueden cambiar a that/those según el contexto.",
+        "Now suele cambiar a then al reportar algo dicho antes.",
+        "Estos cambios dependen del contexto: si contás algo el mismo día, a veces no hace falta cambiar la expresión de tiempo."
+      ],
+      "examples": [
+        {
+          "target": "\"I will call you tomorrow,\" she said. → She said she would call me the next day.",
+          "es": "\"Te voy a llamar mañana\", dijo ella. → Dijo que me iba a llamar al día siguiente."
+        },
+        {
+          "target": "\"My car is broken,\" he said. → He said his car was broken.",
+          "es": "\"Mi auto está roto\", dijo él. → Dijo que su auto estaba roto."
+        },
+        {
+          "target": "\"I saw her yesterday,\" he said. → He said he had seen her the day before.",
+          "es": "\"La vi ayer\", dijo él. → Dijo que la había visto el día anterior."
+        },
+        {
+          "target": "\"We are here now,\" they said. → They said they were there then.",
+          "es": "\"Estamos aquí ahora\", dijeron. → Dijeron que estaban allí en ese momento."
+        },
+        {
+          "target": "\"This is my favorite book,\" she said. → She said that was her favorite book.",
+          "es": "\"Este es mi libro favorito\", dijo ella. → Dijo que ese era su libro favorito."
+        },
+        {
+          "target": "\"I'm leaving today,\" he said. → He said he was leaving that day.",
+          "es": "\"Me voy hoy\", dijo él. → Dijo que se iba ese día."
+        },
+        {
+          "target": "\"Our team won the match,\" they said. → They said their team had won the match.",
+          "es": "\"Nuestro equipo ganó el partido\", dijeron. → Dijeron que su equipo había ganado el partido."
+        },
+        {
+          "target": "\"I need my keys,\" she said. → She said she needed her keys.",
+          "es": "\"Necesito mis llaves\", dijo ella. → Dijo que necesitaba sus llaves."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "She said she would call me tomorrow.",
+          "right": "She said she would call me the next day.",
+          "why": "Cuando contás algo mucho después, tomorrow cambia a the next day para que la referencia temporal siga siendo clara."
+        },
+        {
+          "wrong": "He said my car was broken.",
+          "right": "He said his car was broken.",
+          "why": "El posesivo tiene que coincidir con la persona que habló (él), no con quien escucha."
+        },
+        {
+          "wrong": "They said we are here then.",
+          "right": "They said they were there then.",
+          "why": "Here cambia a there, el verbo retrocede a pasado, y el pronombre tiene que coincidir con los que hablaron (they), no con we."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "The next day",
+          "es": "Al día siguiente",
+          "example": "He said he would finish it the next day.",
+          "exampleEs": "Dijo que lo terminaría al día siguiente."
+        },
+        {
+          "target": "The day before",
+          "es": "El día anterior",
+          "example": "She said she had arrived the day before.",
+          "exampleEs": "Dijo que había llegado el día anterior."
+        },
+        {
+          "target": "At that time",
+          "es": "En ese momento",
+          "example": "He said he was busy at that time.",
+          "exampleEs": "Dijo que estaba ocupado en ese momento."
+        },
+        {
+          "target": "Back then",
+          "es": "En esa época",
+          "example": "She said things were different back then.",
+          "exampleEs": "Dijo que las cosas eran distintas en esa época."
+        }
+      ]
+    },
+    {
+      "id": "reporting-conversation",
+      "day": 5,
+      "title": "Contar un mensaje o conversación",
+      "goal": "Poder contar en estilo indirecto un mensaje o una conversación completa combinando todo lo aprendido.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Para contar una conversación completa combinamos said/told, el retroceso verbal, y los cambios de pronombres y expresiones de tiempo.",
+        "Es útil organizar el relato con conectores: She said that... Then she told me that... After that, she mentioned that...",
+        "Al escribir un mensaje reportado conviene mantener la coherencia de pronombres en todo el párrafo.",
+        "Para contar chismes o rumores se usan expresiones como apparently o I heard that...",
+        "No es obligatorio cambiar el tiempo verbal si lo dicho sigue siendo cierto al contarlo, pero a este nivel practicamos siempre el cambio para afianzar la estructura."
+      ],
+      "examples": [
+        {
+          "target": "She said she was tired and told me she wanted to go home.",
+          "es": "Dijo que estaba cansada y me dijo que quería irse a casa."
+        },
+        {
+          "target": "He told me he had lost his phone the day before.",
+          "es": "Me dijo que había perdido el celular el día anterior."
+        },
+        {
+          "target": "Apparently, she said she was moving to Canada.",
+          "es": "Al parecer, dijo que se iba a mudar a Canadá."
+        },
+        {
+          "target": "I heard that he told everyone he had won the lottery.",
+          "es": "Escuché que les dijo a todos que había ganado la lotería."
+        },
+        {
+          "target": "My friend said she would come to the party, but she didn't.",
+          "es": "Mi amiga dijo que vendría a la fiesta, pero no vino."
+        },
+        {
+          "target": "He told me (that) he couldn't attend the meeting.",
+          "es": "Me dijo que no podía asistir a la reunión."
+        },
+        {
+          "target": "She told her boss she needed more time.",
+          "es": "Le dijo a su jefe que necesitaba más tiempo."
+        },
+        {
+          "target": "They said they had never been there before.",
+          "es": "Dijeron que nunca habían estado ahí antes."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "She said me she was tired.",
+          "right": "She told me she was tired.",
+          "why": "Cuando hay un objeto de persona (me), se usa tell, no say."
+        },
+        {
+          "wrong": "He told that he had lost his phone.",
+          "right": "He told me that he had lost his phone.",
+          "why": "Tell necesita el objeto de persona (me, him, her, etc.); no se puede omitir."
+        },
+        {
+          "wrong": "I heard he say he won the lottery.",
+          "right": "I heard that he said he had won the lottery.",
+          "why": "Falta el that, y los verbos tienen que retroceder: said y had won, porque ganar la lotería fue una acción anterior a decirlo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "Apparently",
+          "es": "Al parecer",
+          "example": "Apparently, she's moving to another city.",
+          "exampleEs": "Al parecer, se muda a otra ciudad."
+        },
+        {
+          "target": "I heard that",
+          "es": "Escuché que",
+          "example": "I heard that they got married.",
+          "exampleEs": "Escuché que se casaron."
+        },
+        {
+          "target": "Rumor has it that",
+          "es": "Se dice que",
+          "example": "Rumor has it that he's leaving the company.",
+          "exampleEs": "Se dice que deja la empresa."
+        },
+        {
+          "target": "Word is",
+          "es": "Se comenta que",
+          "example": "Word is she got a new job.",
+          "exampleEs": "Se comenta que consiguió un trabajo nuevo."
+        },
+        {
+          "target": "As she put it",
+          "es": "Como ella lo dijo",
+          "example": "As she put it, the project was a disaster.",
+          "exampleEs": "Como ella lo dijo, el proyecto fue un desastre."
+        }
+      ]
+    }
+  ]
+}

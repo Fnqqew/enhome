@@ -1,7 +1,7 @@
 {
   "id": "fr-c1-concession",
   "level": "C1",
-  "order": 4,
+  "order": 3,
   "title": "Concesión y matices",
   "targetTitle": "La concession",
   "description": "Cómo decir 'aunque', 'a pesar de', 'por más que' y 'sin embargo' con precisión. Cada conector tiene su construcción: algunos piden subjuntivo, otros indicativo, otros un sustantivo o un infinitivo.",
@@ -12,7 +12,9 @@
     "Usar pourtant, cependant, toutefois, quand même y tout de même",
     "Escribir un texto argumentativo que matice una opinión"
   ],
-  "prerequisites": ["fr-b2-subjonctif-passe"],
+  "prerequisites": [
+    "fr-b2-subjonctif-passe"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +22,9 @@
       "day": 1,
       "title": "Bien que y quoique",
       "goal": "Usar bien que y quoique con subjuntivo, y distinguir quoique de quoi que.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Bien que y quoique (aunque) llevan siempre subjuntivo, aunque el hecho sea real: Bien qu'il soit riche, il vit simplement.",
         "Quoique es un poco más literario. No lo confundas con quoi que, en dos palabras, que significa 'lo que sea que': Quoi que tu fasses, je t'aimerai.",
@@ -28,13 +32,30 @@
         "Para un hecho anterior, subjonctif passé: Bien qu'elle ait beaucoup travaillé, elle n'a pas été promue."
       ],
       "examples": [
-        { "target": "Bien qu'il fasse beau, je préfère rester chez moi.", "es": "Aunque hace lindo, prefiero quedarme en casa." },
-        { "target": "Quoiqu'elle soit jeune, elle a beaucoup d'expérience.", "es": "Aunque es joven, tiene mucha experiencia." },
-        { "target": "Quoi que tu dises, je ne changerai pas d'avis.", "es": "Digas lo que digas, no voy a cambiar de opinión." }
+        {
+          "target": "Bien qu'il fasse beau, je préfère rester chez moi.",
+          "es": "Aunque hace lindo, prefiero quedarme en casa."
+        },
+        {
+          "target": "Quoiqu'elle soit jeune, elle a beaucoup d'expérience.",
+          "es": "Aunque es joven, tiene mucha experiencia."
+        },
+        {
+          "target": "Quoi que tu dises, je ne changerai pas d'avis.",
+          "es": "Digas lo que digas, no voy a cambiar de opinión."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Bien qu'il est riche, il vit simplement.", "right": "Bien qu'il soit riche, il vit simplement.", "why": "Bien que lleva subjuntivo aunque el hecho sea real, a diferencia de 'aunque es rico'." },
-        { "wrong": "Quoique tu fasses, je t'aimerai.", "right": "Quoi que tu fasses, je t'aimerai.", "why": "'Lo que sea que' se escribe en dos palabras: quoi que." }
+        {
+          "wrong": "Bien qu'il est riche, il vit simplement.",
+          "right": "Bien qu'il soit riche, il vit simplement.",
+          "why": "Bien que lleva subjuntivo aunque el hecho sea real, a diferencia de 'aunque es rico'."
+        },
+        {
+          "wrong": "Quoique tu fasses, je t'aimerai.",
+          "right": "Quoi que tu fasses, je t'aimerai.",
+          "why": "'Lo que sea que' se escribe en dos palabras: quoi que."
+        }
       ]
     },
     {
@@ -42,7 +63,9 @@
       "day": 2,
       "title": "Même si",
       "goal": "Usar même si con indicativo para conceder hechos e hipótesis.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Même si (aunque, incluso si) lleva indicativo y sigue las reglas de si: Même si tu insistes, je ne viendrai pas.",
         "Por eso nunca va futuro ni condicional después: Même s'il pleuvait, on sortirait (aunque lloviera, saldríamos).",
@@ -50,13 +73,30 @@
         "El 'aunque' + subjuntivo del español ('aunque llueva') se traduce casi siempre con même si + indicativo: Même s'il pleut, on sortira."
       ],
       "examples": [
-        { "target": "Même s'il pleut, le match aura lieu.", "es": "Aunque llueva, el partido se va a jugar." },
-        { "target": "Même si j'avais le temps, je n'irais pas.", "es": "Aunque tuviera tiempo, no iría." },
-        { "target": "Même si tu as raison, tu aurais pu le dire autrement.", "es": "Aunque tengas razón, lo podrías haber dicho de otra manera." }
+        {
+          "target": "Même s'il pleut, le match aura lieu.",
+          "es": "Aunque llueva, el partido se va a jugar."
+        },
+        {
+          "target": "Même si j'avais le temps, je n'irais pas.",
+          "es": "Aunque tuviera tiempo, no iría."
+        },
+        {
+          "target": "Même si tu as raison, tu aurais pu le dire autrement.",
+          "es": "Aunque tengas razón, lo podrías haber dicho de otra manera."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Même s'il pleuve, on sortira.", "right": "Même s'il pleut, on sortira.", "why": "Même si lleva indicativo, aunque en español digas 'aunque llueva'." },
-        { "wrong": "Même si j'aurais le temps, je n'irais pas.", "right": "Même si j'avais le temps, je n'irais pas.", "why": "Même si sigue las reglas de si: nunca condicional después, va imparfait." }
+        {
+          "wrong": "Même s'il pleuve, on sortira.",
+          "right": "Même s'il pleut, on sortira.",
+          "why": "Même si lleva indicativo, aunque en español digas 'aunque llueva'."
+        },
+        {
+          "wrong": "Même si j'aurais le temps, je n'irais pas.",
+          "right": "Même si j'avais le temps, je n'irais pas.",
+          "why": "Même si sigue las reglas de si: nunca condicional después, va imparfait."
+        }
       ]
     },
     {
@@ -64,7 +104,10 @@
       "day": 3,
       "title": "Avoir beau, malgré, en dépit de",
       "goal": "Expresar la concesión con avoir beau + infinitivo, malgré, en dépit de y quand bien même.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Avoir beau + infinitivo = por más que: J'ai beau chercher, je ne trouve pas mes clés. Avoir se conjuga y beau no cambia.",
         "Malgré + sustantivo (a pesar de): malgré la pluie, malgré tout. Malgré que + subjuntivo existe, pero muchos lo consideran incorrecto: mejor bien que.",
@@ -72,13 +115,30 @@
         "Quand bien même + condicional, literario: Quand bien même il viendrait, je ne lui parlerais pas (aun cuando viniera, no le hablaría)."
       ],
       "examples": [
-        { "target": "Il a beau s'entraîner, il perd toujours.", "es": "Por más que entrena, siempre pierde." },
-        { "target": "Malgré la grève, j'ai réussi à arriver à l'heure.", "es": "A pesar de la huelga, logré llegar a horario." },
-        { "target": "En dépit de nos efforts, le projet a échoué.", "es": "Pese a nuestros esfuerzos, el proyecto fracasó." }
+        {
+          "target": "Il a beau s'entraîner, il perd toujours.",
+          "es": "Por más que entrena, siempre pierde."
+        },
+        {
+          "target": "Malgré la grève, j'ai réussi à arriver à l'heure.",
+          "es": "A pesar de la huelga, logré llegar a horario."
+        },
+        {
+          "target": "En dépit de nos efforts, le projet a échoué.",
+          "es": "Pese a nuestros esfuerzos, el proyecto fracasó."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Malgré de la pluie, on est sortis.", "right": "Malgré la pluie, on est sortis.", "why": "Malgré va directo con el sustantivo, sin de, aunque en español digas 'a pesar de'." },
-        { "wrong": "Elle a belle chercher, elle ne trouve rien.", "right": "Elle a beau chercher, elle ne trouve rien.", "why": "En esta expresión beau es invariable." }
+        {
+          "wrong": "Malgré de la pluie, on est sortis.",
+          "right": "Malgré la pluie, on est sortis.",
+          "why": "Malgré va directo con el sustantivo, sin de, aunque en español digas 'a pesar de'."
+        },
+        {
+          "wrong": "Elle a belle chercher, elle ne trouve rien.",
+          "right": "Elle a beau chercher, elle ne trouve rien.",
+          "why": "En esta expresión beau es invariable."
+        }
       ]
     },
     {
@@ -86,7 +146,9 @@
       "day": 4,
       "title": "Pourtant, cependant, quand même",
       "goal": "Usar los conectores que oponen dos ideas en oraciones independientes.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Pourtant (sin embargo, y eso que) une dos ideas que chocan: Il est malade ; pourtant, il est venu.",
         "Cependant, toutefois y néanmoins son más formales y van sobre todo en lo escrito.",
@@ -95,12 +157,25 @@
         "En la charla, quand même también sirve para insistir o reprochar: C'est quand même incroyable ! Tu pourrais quand même dire bonjour !"
       ],
       "examples": [
-        { "target": "Il avait promis de venir ; pourtant, il n'est pas venu.", "es": "Había prometido venir; sin embargo, no vino." },
-        { "target": "Le film était long, mais je l'ai aimé quand même.", "es": "La película era larga, pero igual me gustó." },
-        { "target": "Tu pourrais quand même m'aider !", "es": "¡Por lo menos podrías ayudarme!" }
+        {
+          "target": "Il avait promis de venir ; pourtant, il n'est pas venu.",
+          "es": "Había prometido venir; sin embargo, no vino."
+        },
+        {
+          "target": "Le film était long, mais je l'ai aimé quand même.",
+          "es": "La película era larga, pero igual me gustó."
+        },
+        {
+          "target": "Tu pourrais quand même m'aider !",
+          "es": "¡Por lo menos podrías ayudarme!"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Pourtant il soit malade, il est venu.", "right": "Bien qu'il soit malade, il est venu.", "why": "Pourtant no introduce una subordinada: conecta dos oraciones independientes. Para 'aunque' + verbo se usa bien que." }
+        {
+          "wrong": "Pourtant il soit malade, il est venu.",
+          "right": "Bien qu'il soit malade, il est venu.",
+          "why": "Pourtant no introduce una subordinada: conecta dos oraciones independientes. Para 'aunque' + verbo se usa bien que."
+        }
       ]
     },
     {
@@ -108,7 +183,10 @@
       "day": 5,
       "title": "Argumentar con matices",
       "goal": "Comprender y escribir un párrafo argumentativo que reconozca el punto de vista contrario.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Estructura de concesión: reconocé el argumento contrario (Certes…, Il est vrai que…, On peut penser que…) y después oponé el tuyo (mais, cependant, il n'en reste pas moins que…).",
         "Certes (es cierto) va al principio, seguido de coma, y casi siempre anuncia un mais.",
@@ -116,12 +194,25 @@
         "Variá los conectores: no repitas mais en cada frase."
       ],
       "examples": [
-        { "target": "Certes, le télétravail offre plus de liberté, mais il peut isoler les salariés.", "es": "Es cierto que el teletrabajo da más libertad, pero puede aislar a los empleados." },
-        { "target": "Il est vrai que la ville est chère ; il n'en reste pas moins qu'elle est très agréable.", "es": "Es verdad que la ciudad es cara; no deja de ser cierto que es muy agradable." },
-        { "target": "Bien que l'idée soit intéressante, sa mise en œuvre semble difficile.", "es": "Aunque la idea es interesante, ponerla en práctica parece difícil." }
+        {
+          "target": "Certes, le télétravail offre plus de liberté, mais il peut isoler les salariés.",
+          "es": "Es cierto que el teletrabajo da más libertad, pero puede aislar a los empleados."
+        },
+        {
+          "target": "Il est vrai que la ville est chère ; il n'en reste pas moins qu'elle est très agréable.",
+          "es": "Es verdad que la ciudad es cara; no deja de ser cierto que es muy agradable."
+        },
+        {
+          "target": "Bien que l'idée soit intéressante, sa mise en œuvre semble difficile.",
+          "es": "Aunque la idea es interesante, ponerla en práctica parece difícil."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Certes que le télétravail offre plus de liberté.", "right": "Certes, le télétravail offre plus de liberté.", "why": "Certes va solo, seguido de coma, sin que, aunque en español digas 'es cierto que'." }
+        {
+          "wrong": "Certes que le télétravail offre plus de liberté.",
+          "right": "Certes, le télétravail offre plus de liberté.",
+          "why": "Certes va solo, seguido de coma, sin que, aunque en español digas 'es cierto que'."
+        }
       ]
     }
   ]

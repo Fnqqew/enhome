@@ -1,7 +1,7 @@
 {
   "id": "fr-c1-expressions-idiomatiques",
   "level": "C1",
-  "order": 3,
+  "order": 4,
   "title": "Expresiones idiomáticas",
   "targetTitle": "Les expressions idiomatiques",
   "description": "Las expresiones que hacen que tu francés suene natural: con partes del cuerpo, con comida, con animales y con los verbos más comunes. Muchas no se traducen palabra por palabra, y otras parecen iguales al español pero no lo son.",
@@ -12,7 +12,9 @@
     "Evitar los falsos amigos y los calcos del español",
     "Usar expresiones con naturalidad en un mensaje informal"
   ],
-  "prerequisites": ["fr-a2-pronoms"],
+  "prerequisites": [
+    "fr-a2-pronoms"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +22,10 @@
       "day": 1,
       "title": "Con el cuerpo",
       "goal": "Entender y usar expresiones idiomáticas con partes del cuerpo.",
-      "focus": ["reading", "grammar"],
+      "focus": [
+        "reading",
+        "grammar"
+      ],
       "keyPoints": [
         "Coûter les yeux de la tête = costar un ojo de la cara (en francés, los dos ojos).",
         "Mettre les pieds dans le plat = meter la pata, sacar un tema delicado. Casser les pieds à quelqu'un = hinchar, molestar.",
@@ -29,13 +34,30 @@
         "Avoir la tête dans les nuages = estar en las nubes, igual que en español."
       ],
       "examples": [
-        { "target": "Ce restaurant coûte les yeux de la tête.", "es": "Este restaurante cuesta un ojo de la cara." },
-        { "target": "Arrête de me casser les pieds !", "es": "¡Dejá de hincharme!" },
-        { "target": "Il a mis les pieds dans le plat en parlant de son ex.", "es": "Metió la pata al hablar de su ex." }
+        {
+          "target": "Ce restaurant coûte les yeux de la tête.",
+          "es": "Este restaurante cuesta un ojo de la cara."
+        },
+        {
+          "target": "Arrête de me casser les pieds !",
+          "es": "¡Dejá de hincharme!"
+        },
+        {
+          "target": "Il a mis les pieds dans le plat en parlant de son ex.",
+          "es": "Metió la pata al hablar de su ex."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ça coûte un œil de la tête.", "right": "Ça coûte les yeux de la tête.", "why": "La expresión francesa usa los dos ojos: les yeux de la tête." },
-        { "wrong": "Il a mis la patte.", "right": "Il a mis les pieds dans le plat. / Il a fait une gaffe.", "why": "'Meter la pata' no se traduce palabra por palabra: en francés es mettre les pieds dans le plat o faire une gaffe." }
+        {
+          "wrong": "Ça coûte un œil de la tête.",
+          "right": "Ça coûte les yeux de la tête.",
+          "why": "La expresión francesa usa los dos ojos: les yeux de la tête."
+        },
+        {
+          "wrong": "Il a mis la patte.",
+          "right": "Il a mis les pieds dans le plat. / Il a fait une gaffe.",
+          "why": "'Meter la pata' no se traduce palabra por palabra: en francés es mettre les pieds dans le plat o faire une gaffe."
+        }
       ]
     },
     {
@@ -43,7 +65,10 @@
       "day": 2,
       "title": "Comida y animales",
       "goal": "Entender y usar expresiones con comida y con animales.",
-      "focus": ["reading", "grammar"],
+      "focus": [
+        "reading",
+        "grammar"
+      ],
       "keyPoints": [
         "Tomber dans les pommes = desmayarse. Avoir la pêche o avoir la frite = estar con todas las pilas.",
         "Raconter des salades = contar mentiras. Occupe-toi de tes oignons ! = ¡Ocupate de lo tuyo! Ça ne mange pas de pain = no cuesta nada, no se pierde nada.",
@@ -51,12 +76,25 @@
         "Il fait un froid de canard = hace un frío terrible. Quand les poules auront des dents = cuando las vacas vuelen, es decir, nunca."
       ],
       "examples": [
-        { "target": "Il m'a posé un lapin hier soir.", "es": "Me dejó plantado anoche." },
-        { "target": "Avec cette chaleur, elle est tombée dans les pommes.", "es": "Con este calor, se desmayó." },
-        { "target": "Ce matin, j'ai la pêche !", "es": "¡Hoy a la mañana estoy con todas las pilas!" }
+        {
+          "target": "Il m'a posé un lapin hier soir.",
+          "es": "Me dejó plantado anoche."
+        },
+        {
+          "target": "Avec cette chaleur, elle est tombée dans les pommes.",
+          "es": "Con este calor, se desmayó."
+        },
+        {
+          "target": "Ce matin, j'ai la pêche !",
+          "es": "¡Hoy a la mañana estoy con todas las pilas!"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Il va ranger sa chambre quand les vaches voleront.", "right": "Il va ranger sa chambre quand les poules auront des dents.", "why": "Para algo que no va a pasar nunca, el francés habla de gallinas con dientes, no de vacas que vuelan." }
+        {
+          "wrong": "Il va ranger sa chambre quand les vaches voleront.",
+          "right": "Il va ranger sa chambre quand les poules auront des dents.",
+          "why": "Para algo que no va a pasar nunca, el francés habla de gallinas con dientes, no de vacas que vuelan."
+        }
       ]
     },
     {
@@ -64,7 +102,9 @@
       "day": 3,
       "title": "Con avoir, faire, mettre y prendre",
       "goal": "Usar expresiones frecuentes construidas con verbos básicos.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Avoir: en avoir marre (estar harto), avoir du mal à (costarle a uno), avoir l'air (parecer), avoir de la chance.",
         "Faire: faire la tête (estar con cara larga, enojado), faire la grasse matinée (quedarse durmiendo hasta tarde), faire semblant de (hacer como que).",
@@ -72,13 +112,30 @@
         "Prendre: prendre son temps, prendre la tête à quelqu'un (hacerle la cabeza, coloquial), s'en prendre à quelqu'un (agarrársela con alguien)."
       ],
       "examples": [
-        { "target": "J'en ai marre de ce temps pourri.", "es": "Estoy harto de este tiempo horrible." },
-        { "target": "Il fait semblant de dormir.", "es": "Hace como que duerme." },
-        { "target": "Tu as mis combien de temps à venir ?", "es": "¿Cuánto tardaste en venir?" }
+        {
+          "target": "J'en ai marre de ce temps pourri.",
+          "es": "Estoy harto de este tiempo horrible."
+        },
+        {
+          "target": "Il fait semblant de dormir.",
+          "es": "Hace como que duerme."
+        },
+        {
+          "target": "Tu as mis combien de temps à venir ?",
+          "es": "¿Cuánto tardaste en venir?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "J'ai marre du travail.", "right": "J'en ai marre du travail.", "why": "La expresión lleva siempre en: en avoir marre." },
-        { "wrong": "J'ai du mal de comprendre.", "right": "J'ai du mal à comprendre.", "why": "Avoir du mal va con à + infinitivo." }
+        {
+          "wrong": "J'ai marre du travail.",
+          "right": "J'en ai marre du travail.",
+          "why": "La expresión lleva siempre en: en avoir marre."
+        },
+        {
+          "wrong": "J'ai du mal de comprendre.",
+          "right": "J'ai du mal à comprendre.",
+          "why": "Avoir du mal va con à + infinitivo."
+        }
       ]
     },
     {
@@ -86,7 +143,10 @@
       "day": 4,
       "title": "Falsos amigos y calcos",
       "goal": "Evitar los falsos amigos y los calcos más frecuentes del español.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Constipé significa 'estreñido'; 'resfriado' se dice enrhumé.",
         "Embarrassé significa 'incómodo' o 'avergonzado'; 'embarazada' se dice enceinte.",
@@ -95,14 +155,35 @@
         "'Darse cuenta' es se rendre compte, no se donner compte."
       ],
       "examples": [
-        { "target": "Je suis enrhumé depuis trois jours.", "es": "Estoy resfriado hace tres días." },
-        { "target": "Tu me manques beaucoup.", "es": "Te extraño mucho." },
-        { "target": "Je ne me suis pas rendu compte de l'heure.", "es": "No me di cuenta de la hora." }
+        {
+          "target": "Je suis enrhumé depuis trois jours.",
+          "es": "Estoy resfriado hace tres días."
+        },
+        {
+          "target": "Tu me manques beaucoup.",
+          "es": "Te extraño mucho."
+        },
+        {
+          "target": "Je ne me suis pas rendu compte de l'heure.",
+          "es": "No me di cuenta de la hora."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Je suis constipé, j'ai de la fièvre.", "right": "Je suis enrhumé, j'ai de la fièvre.", "why": "Constipé significa 'estreñido'; para 'resfriado' se dice enrhumé." },
-        { "wrong": "Je te manque beaucoup.", "right": "Tu me manques beaucoup.", "why": "Para decir «te extraño», manquer funciona al revés: lo que se extraña es el sujeto, como en «me hacés falta»." },
-        { "wrong": "Excuse-moi de te molester.", "right": "Excuse-moi de te déranger.", "why": "Molester es 'maltratar'; 'molestar' es déranger." }
+        {
+          "wrong": "Je suis constipé, j'ai de la fièvre.",
+          "right": "Je suis enrhumé, j'ai de la fièvre.",
+          "why": "Constipé significa 'estreñido'; para 'resfriado' se dice enrhumé."
+        },
+        {
+          "wrong": "Je te manque beaucoup.",
+          "right": "Tu me manques beaucoup.",
+          "why": "Para decir «te extraño», manquer funciona al revés: lo que se extraña es el sujeto, como en «me hacés falta»."
+        },
+        {
+          "wrong": "Excuse-moi de te molester.",
+          "right": "Excuse-moi de te déranger.",
+          "why": "Molester es 'maltratar'; 'molestar' es déranger."
+        }
       ]
     },
     {
@@ -110,7 +191,10 @@
       "day": 5,
       "title": "Un mensaje con onda",
       "goal": "Comprender y escribir un mensaje informal que use expresiones idiomáticas con naturalidad.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Elegí dos o tres expresiones por texto: más que eso suena forzado.",
         "Cuidá el registro: casser les pieds, en avoir marre o prendre la tête son coloquiales y no van en un mail formal.",
@@ -118,12 +202,25 @@
         "Para dar naturalidad: franchement, carrément (directamente, totalmente), un peu."
       ],
       "examples": [
-        { "target": "Franchement, j'en ai un peu marre de ce boulot.", "es": "Sinceramente, estoy un poco harto de este laburo." },
-        { "target": "Samedi, Julien m'a encore posé un lapin !", "es": "¡El sábado Julien me dejó plantado otra vez!" },
-        { "target": "Le concert était génial, mais les billets coûtaient les yeux de la tête.", "es": "El recital estuvo genial, pero las entradas costaban un ojo de la cara." }
+        {
+          "target": "Franchement, j'en ai un peu marre de ce boulot.",
+          "es": "Sinceramente, estoy un poco harto de este laburo."
+        },
+        {
+          "target": "Samedi, Julien m'a encore posé un lapin !",
+          "es": "¡El sábado Julien me dejó plantado otra vez!"
+        },
+        {
+          "target": "Le concert était génial, mais les billets coûtaient les yeux de la tête.",
+          "es": "El recital estuvo genial, pero las entradas costaban un ojo de la cara."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Madame, j'en ai marre d'attendre votre réponse.", "right": "Madame, je suis toujours dans l'attente de votre réponse.", "why": "En avoir marre es coloquial: en un mail formal suena agresivo y fuera de lugar." }
+        {
+          "wrong": "Madame, j'en ai marre d'attendre votre réponse.",
+          "right": "Madame, je suis toujours dans l'attente de votre réponse.",
+          "why": "En avoir marre es coloquial: en un mail formal suena agresivo y fuera de lugar."
+        }
       ]
     }
   ]

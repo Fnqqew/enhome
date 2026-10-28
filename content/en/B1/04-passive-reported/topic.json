@@ -1,7 +1,7 @@
 {
   "id": "b1-passive-reported",
   "level": "B1",
-  "order": 4,
+  "order": 6,
   "title": "Voz pasiva y estilo indirecto",
   "targetTitle": "The passive and reported speech",
   "description": "Cómo poner el foco en la acción y no en quién la hace, y cómo contar lo que dijo, preguntó o pidió otra persona.",
@@ -11,7 +11,10 @@
     "Transmitir afirmaciones con say y tell aplicando el corrimiento de tiempos",
     "Transmitir preguntas, pedidos y órdenes en estilo indirecto"
   ],
-  "prerequisites": ["a2-past-simple", "a2-present-perfect"],
+  "prerequisites": [
+    "a2-past-simple",
+    "a2-present-perfect"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,7 +22,9 @@
       "day": 1,
       "title": "La pasiva: presente, pasado y present perfect",
       "goal": "Formar la voz pasiva en los tiempos más comunes.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "be + participio. El tiempo lo marca be: is made, was made, has been made.",
         "Presente: English is spoken here. Pasado: The bridge was built in 1920. Present perfect: My car has been stolen.",
@@ -27,13 +32,30 @@
         "El objeto de la oración activa pasa a ser el sujeto: They canceled the game → The game was canceled."
       ],
       "examples": [
-        { "target": "Coffee is grown in Colombia and Brazil.", "es": "El café se cultiva en Colombia y Brasil." },
-        { "target": "The windows were cleaned yesterday.", "es": "Las ventanas se limpiaron ayer." },
-        { "target": "Two new hospitals have been opened this year.", "es": "Este año se abrieron dos hospitales nuevos." }
+        {
+          "target": "Coffee is grown in Colombia and Brazil.",
+          "es": "El café se cultiva en Colombia y Brasil."
+        },
+        {
+          "target": "The windows were cleaned yesterday.",
+          "es": "Las ventanas se limpiaron ayer."
+        },
+        {
+          "target": "Two new hospitals have been opened this year.",
+          "es": "Este año se abrieron dos hospitales nuevos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "The house was build in 1950.", "right": "The house was built in 1950.", "why": "La pasiva necesita el participio (built), no el verbo base." },
-        { "wrong": "Here is spoken English.", "right": "English is spoken here.", "why": "El 'se habla inglés' del español pasa a pasiva, pero el sujeto (English) va adelante, antes del verbo." }
+        {
+          "wrong": "The house was build in 1950.",
+          "right": "The house was built in 1950.",
+          "why": "La pasiva necesita el participio (built), no el verbo base."
+        },
+        {
+          "wrong": "Here is spoken English.",
+          "right": "English is spoken here.",
+          "why": "El 'se habla inglés' del español pasa a pasiva, pero el sujeto (English) va adelante, antes del verbo."
+        }
       ]
     },
     {
@@ -41,7 +63,10 @@
       "day": 2,
       "title": "Cuándo usar la pasiva y el agente con by",
       "goal": "Elegir entre activa y pasiva y saber cuándo nombrar a quien hace la acción.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "La pasiva se usa cuando importa más la acción o el resultado que quién lo hizo, o cuando no se sabe quién fue: My bike was stolen.",
         "by + agente solo si aporta información: Guernica was painted by Picasso.",
@@ -50,13 +75,30 @@
         "Muchas veces equivale al 'se' del español o a la tercera persona del plural: se vendieron, cerraron la ruta."
       ],
       "examples": [
-        { "target": "Penicillin was discovered by Alexander Fleming in 1928.", "es": "La penicilina fue descubierta por Alexander Fleming en 1928." },
-        { "target": "The road has been closed because of the snow.", "es": "Cerraron la ruta por la nieve." },
-        { "target": "All the tickets were sold in two hours.", "es": "Se vendieron todas las entradas en dos horas." }
+        {
+          "target": "Penicillin was discovered by Alexander Fleming in 1928.",
+          "es": "La penicilina fue descubierta por Alexander Fleming en 1928."
+        },
+        {
+          "target": "The road has been closed because of the snow.",
+          "es": "Cerraron la ruta por la nieve."
+        },
+        {
+          "target": "All the tickets were sold in two hours.",
+          "es": "Se vendieron todas las entradas en dos horas."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "My wallet was stolen by someone.", "right": "My wallet was stolen.", "why": "Si el agente no aporta información (someone, people), no se menciona." },
-        { "wrong": "The letter was written for my grandfather.", "right": "The letter was written by my grandfather.", "why": "El agente de la pasiva va con by. For significa 'para', aunque en español los dos puedan ser 'por'." }
+        {
+          "wrong": "My wallet was stolen by someone.",
+          "right": "My wallet was stolen.",
+          "why": "Si el agente no aporta información (someone, people), no se menciona."
+        },
+        {
+          "wrong": "The letter was written for my grandfather.",
+          "right": "The letter was written by my grandfather.",
+          "why": "El agente de la pasiva va con by. For significa 'para', aunque en español los dos puedan ser 'por'."
+        }
       ]
     },
     {
@@ -64,7 +106,10 @@
       "day": 3,
       "title": "Estilo indirecto: say, tell y el corrimiento de tiempos",
       "goal": "Contar lo que dijo otra persona.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "say + lo dicho: He said (that) he was tired. tell + persona + lo dicho: He told me (that) he was tired. That se puede omitir.",
         "Si el verbo que introduce está en pasado, el tiempo suele ir un paso para atrás: am → was, will → would, can → could, went / have gone → had gone.",
@@ -72,13 +117,30 @@
         "Si lo que se dijo sigue siendo cierto, se puede no correr el tiempo: She said she lives in Salta."
       ],
       "examples": [
-        { "target": "She said she was too tired to go out.", "es": "Dijo que estaba demasiado cansada para salir." },
-        { "target": "He told me he would call me the next day.", "es": "Me dijo que me iba a llamar al día siguiente." },
-        { "target": "They said they had already seen the movie.", "es": "Dijeron que ya habían visto la película." }
+        {
+          "target": "She said she was too tired to go out.",
+          "es": "Dijo que estaba demasiado cansada para salir."
+        },
+        {
+          "target": "He told me he would call me the next day.",
+          "es": "Me dijo que me iba a llamar al día siguiente."
+        },
+        {
+          "target": "They said they had already seen the movie.",
+          "es": "Dijeron que ya habían visto la película."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "She said me that she was busy.", "right": "She told me that she was busy.", "why": "Say no lleva a la persona directamente: se dice told me o said to me." },
-        { "wrong": "He told that he was coming.", "right": "He said that he was coming.", "why": "Tell necesita a quién se lo dijo: told me, told us." }
+        {
+          "wrong": "She said me that she was busy.",
+          "right": "She told me that she was busy.",
+          "why": "Say no lleva a la persona directamente: se dice told me o said to me."
+        },
+        {
+          "wrong": "He told that he was coming.",
+          "right": "He said that he was coming.",
+          "why": "Tell necesita a quién se lo dijo: told me, told us."
+        }
       ]
     },
     {
@@ -86,7 +148,10 @@
       "day": 4,
       "title": "Preguntas, pedidos y órdenes en estilo indirecto",
       "goal": "Transmitir preguntas, pedidos y órdenes de otras personas.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Preguntas con palabra interrogativa: ask + where / what / how... + orden de afirmación: 'Where do you live?' → She asked me where I lived.",
         "Preguntas de sí o no: ask + if / whether: 'Are you coming?' → He asked if I was coming.",
@@ -94,13 +159,30 @@
         "Pedidos y órdenes: ask / tell + persona + (not) to + infinitivo: She told me to sit down. He asked us not to make any noise."
       ],
       "examples": [
-        { "target": "The officer asked me where I was going.", "es": "El policía me preguntó adónde iba." },
-        { "target": "My boss asked if I could stay late.", "es": "Mi jefe me preguntó si me podía quedar hasta tarde." },
-        { "target": "The doctor told me not to eat fried food.", "es": "El médico me dijo que no comiera frituras." }
+        {
+          "target": "The officer asked me where I was going.",
+          "es": "El policía me preguntó adónde iba."
+        },
+        {
+          "target": "My boss asked if I could stay late.",
+          "es": "Mi jefe me preguntó si me podía quedar hasta tarde."
+        },
+        {
+          "target": "The doctor told me not to eat fried food.",
+          "es": "El médico me dijo que no comiera frituras."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "She asked me where did I live.", "right": "She asked me where I lived.", "why": "En la pregunta indirecta no va did y el orden es el de una afirmación: sujeto + verbo." },
-        { "wrong": "He told me that I don't be late.", "right": "He told me not to be late.", "why": "Para órdenes indirectas se usa tell + persona + (not) to + infinitivo, no that + verbo como el 'que no llegara tarde' del español." }
+        {
+          "wrong": "She asked me where did I live.",
+          "right": "She asked me where I lived.",
+          "why": "En la pregunta indirecta no va did y el orden es el de una afirmación: sujeto + verbo."
+        },
+        {
+          "wrong": "He told me that I don't be late.",
+          "right": "He told me not to be late.",
+          "why": "Para órdenes indirectas se usa tell + persona + (not) to + infinitivo, no that + verbo como el 'que no llegara tarde' del español."
+        }
       ]
     },
     {
@@ -108,7 +190,10 @@
       "day": 5,
       "title": "Una noticia breve",
       "goal": "Leer y escribir una noticia corta usando la pasiva y el estilo indirecto.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "El titular es corto, sin artículos y muchas veces con la pasiva sin be: Paintings stolen from city museum.",
         "El primer párrafo cuenta qué pasó, dónde y cuándo, muchas veces en pasiva: Three paintings were stolen on Sunday night.",
@@ -116,12 +201,25 @@
         "Usá el present perfect para lo último que se sabe: Two men have been arrested."
       ],
       "examples": [
-        { "target": "Three paintings were stolen from the city museum on Sunday night.", "es": "El domingo a la noche robaron tres cuadros del museo de la ciudad." },
-        { "target": "A spokesperson said the alarm hadn't worked.", "es": "Un vocero dijo que la alarma no había funcionado." },
-        { "target": "Police have asked anyone with information to contact them.", "es": "La policía pidió que cualquier persona que tenga información se comunique con ellos." }
+        {
+          "target": "Three paintings were stolen from the city museum on Sunday night.",
+          "es": "El domingo a la noche robaron tres cuadros del museo de la ciudad."
+        },
+        {
+          "target": "A spokesperson said the alarm hadn't worked.",
+          "es": "Un vocero dijo que la alarma no había funcionado."
+        },
+        {
+          "target": "Police have asked anyone with information to contact them.",
+          "es": "La policía pidió que cualquier persona que tenga información se comunique con ellos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "The police has arrested two men.", "right": "The police have arrested two men.", "why": "En inglés police va siempre con verbo en plural (the police are, the police have), aunque en español 'la policía' sea singular." }
+        {
+          "wrong": "The police has arrested two men.",
+          "right": "The police have arrested two men.",
+          "why": "En inglés police va siempre con verbo en plural (the police are, the police have), aunque en español 'la policía' sea singular."
+        }
       ]
     }
   ]

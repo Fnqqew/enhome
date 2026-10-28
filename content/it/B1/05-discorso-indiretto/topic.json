@@ -1,7 +1,7 @@
 {
   "id": "it-b1-discorso-indiretto",
   "level": "B1",
-  "order": 5,
+  "order": 3,
   "title": "Discurso indirecto",
   "targetTitle": "Il discorso indiretto",
   "description": "Cómo contar lo que dijo otra persona: qué cambia en los pronombres, en los tiempos verbales y en las palabras de tiempo y lugar, y cómo transmitir preguntas, órdenes y pedidos.",
@@ -12,7 +12,10 @@
     "Transmitir preguntas con se y órdenes con di + infinitivo",
     "Contar una conversación"
   ],
-  "prerequisites": ["it-a2-pronomi", "it-b1-trapassato-remoto"],
+  "prerequisites": [
+    "it-a2-pronomi",
+    "it-b1-trapassato-remoto"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,19 +23,34 @@
       "day": 1,
       "title": "Con el verbo en presente",
       "goal": "Transmitir lo que dice alguien cuando el verbo introductor está en presente.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Si el verbo que introduce está en presente (dice, scrive, racconta), los tiempos no cambian: 'Sono stanco.' → Marco dice che è stanco.",
         "Cambian los pronombres, los posesivos y la persona del verbo según quién habla: 'Ti chiamo io.' → Dice che mi chiama lui.",
         "Verbos útiles: dire, raccontare, spiegare, rispondere, aggiungere, ammettere."
       ],
       "examples": [
-        { "target": "Giulia dice che arriva domani.", "es": "Giulia dice que llega mañana." },
-        { "target": "Il professore spiega che l'esame è facile.", "es": "El profesor explica que el examen es fácil." },
-        { "target": "Mia madre scrive che le manco molto.", "es": "Mi mamá escribe que me extraña mucho." }
+        {
+          "target": "Giulia dice che arriva domani.",
+          "es": "Giulia dice que llega mañana."
+        },
+        {
+          "target": "Il professore spiega che l'esame è facile.",
+          "es": "El profesor explica que el examen es fácil."
+        },
+        {
+          "target": "Mia madre scrive che le manco molto.",
+          "es": "Mi mamá escribe que me extraña mucho."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Anna dice: 'Sono stanca'. → Anna dice che sono stanca.", "right": "Anna dice che è stanca.", "why": "Al pasar al indirecto cambia la persona del verbo: lo que era io pasa a lei." }
+        {
+          "wrong": "Anna dice: 'Sono stanca'. → Anna dice che sono stanca.",
+          "right": "Anna dice che è stanca.",
+          "why": "Al pasar al indirecto cambia la persona del verbo: lo que era io pasa a lei."
+        }
       ]
     },
     {
@@ -40,7 +58,10 @@
       "day": 2,
       "title": "Con el verbo en pasado: los tiempos",
       "goal": "Cambiar los tiempos verbales cuando el verbo introductor está en pasado.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Con ha detto, disse o aveva detto, el presente pasa a imperfetto: 'Sono stanco' → Ha detto che era stanco.",
         "El passato prossimo pasa a trapassato: 'Ho perso il treno' → Ha detto che aveva perso il treno.",
@@ -48,12 +69,25 @@
         "El imperfetto y el trapassato no cambian."
       ],
       "examples": [
-        { "target": "Luca ha detto che era molto stanco.", "es": "Luca dijo que estaba muy cansado." },
-        { "target": "Mi ha scritto che aveva trovato lavoro.", "es": "Me escribió que había encontrado trabajo." },
-        { "target": "Ha promesso che sarebbe arrivato in tempo.", "es": "Prometió que llegaría a tiempo." }
+        {
+          "target": "Luca ha detto che era molto stanco.",
+          "es": "Luca dijo que estaba muy cansado."
+        },
+        {
+          "target": "Mi ha scritto che aveva trovato lavoro.",
+          "es": "Me escribió que había encontrado trabajo."
+        },
+        {
+          "target": "Ha promesso che sarebbe arrivato in tempo.",
+          "es": "Prometió que llegaría a tiempo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Ha detto che verrebbe.", "right": "Ha detto che sarebbe venuto.", "why": "Para un futuro visto desde el pasado, el italiano usa el condizionale passato, aunque en español digamos 'dijo que vendría'." }
+        {
+          "wrong": "Ha detto che verrebbe.",
+          "right": "Ha detto che sarebbe venuto.",
+          "why": "Para un futuro visto desde el pasado, el italiano usa el condizionale passato, aunque en español digamos 'dijo que vendría'."
+        }
       ]
     },
     {
@@ -61,19 +95,34 @@
       "day": 3,
       "title": "Pronombres, tiempo y lugar",
       "goal": "Ajustar pronombres, posesivos y marcadores de tiempo y lugar.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Con el verbo en pasado cambian las referencias: oggi → quel giorno, ieri → il giorno prima, domani → il giorno dopo o l'indomani, adesso → allora, la settimana prossima → la settimana dopo.",
         "También cambian el lugar y los demostrativos: qui → lì, questo → quello.",
         "Los pronombres y posesivos se ajustan a quién habla: 'la mia casa' → la sua casa; 'vengo con te' → veniva con me."
       ],
       "examples": [
-        { "target": "Ha detto che sarebbe partito il giorno dopo.", "es": "Dijo que se iba a ir al día siguiente." },
-        { "target": "Mi ha detto che quel giorno non poteva uscire.", "es": "Me dijo que ese día no podía salir." },
-        { "target": "Ha spiegato che lì faceva molto freddo.", "es": "Explicó que ahí hacía mucho frío." }
+        {
+          "target": "Ha detto che sarebbe partito il giorno dopo.",
+          "es": "Dijo que se iba a ir al día siguiente."
+        },
+        {
+          "target": "Mi ha detto che quel giorno non poteva uscire.",
+          "es": "Me dijo que ese día no podía salir."
+        },
+        {
+          "target": "Ha spiegato che lì faceva molto freddo.",
+          "es": "Explicó que ahí hacía mucho frío."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Marta dice: 'Ho perso il mio telefono'. → Marta dice che ha perso il mio telefono.", "right": "Marta dice che ha perso il suo telefono.", "why": "El posesivo cambia según quién habla: el mio de Marta pasa a suo." }
+        {
+          "wrong": "Marta dice: 'Ho perso il mio telefono'. → Marta dice che ha perso il mio telefono.",
+          "right": "Marta dice che ha perso il suo telefono.",
+          "why": "El posesivo cambia según quién habla: el mio de Marta pasa a suo."
+        }
       ]
     },
     {
@@ -81,7 +130,9 @@
       "day": 4,
       "title": "Preguntas y órdenes",
       "goal": "Transmitir preguntas, órdenes y pedidos.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Preguntas de sí o no con se: 'Vieni?' → Mi ha chiesto se venivo.",
         "Preguntas con interrogativo: se mantiene el interrogativo: 'Dove abiti?' → Mi ha chiesto dove abitavo.",
@@ -89,13 +140,30 @@
         "También existe che + congiuntivo, más formal: Mi ha detto che chiudessi la porta."
       ],
       "examples": [
-        { "target": "Mi ha chiesto se avevo fame.", "es": "Me preguntó si tenía hambre." },
-        { "target": "Le ho chiesto perché era arrabbiata.", "es": "Le pregunté por qué estaba enojada." },
-        { "target": "Il medico mi ha detto di riposare.", "es": "El médico me dijo que descansara." }
+        {
+          "target": "Mi ha chiesto se avevo fame.",
+          "es": "Me preguntó si tenía hambre."
+        },
+        {
+          "target": "Le ho chiesto perché era arrabbiata.",
+          "es": "Le pregunté por qué estaba enojada."
+        },
+        {
+          "target": "Il medico mi ha detto di riposare.",
+          "es": "El médico me dijo que descansara."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Mi ha detto che chiudo la porta.", "right": "Mi ha detto di chiudere la porta.", "why": "Una orden se transmite con di + infinitivo; con che + indicativo parece una información." },
-        { "wrong": "Mi ha chiesto si venivo.", "right": "Mi ha chiesto se venivo.", "why": "El 'si' de las preguntas indirectas se dice se." }
+        {
+          "wrong": "Mi ha detto che chiudo la porta.",
+          "right": "Mi ha detto di chiudere la porta.",
+          "why": "Una orden se transmite con di + infinitivo; con che + indicativo parece una información."
+        },
+        {
+          "wrong": "Mi ha chiesto si venivo.",
+          "right": "Mi ha chiesto se venivo.",
+          "why": "El 'si' de las preguntas indirectas se dice se."
+        }
       ]
     },
     {
@@ -103,19 +171,35 @@
       "day": 5,
       "title": "Contar una conversación",
       "goal": "Comprender y escribir el relato de una conversación.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Variá los verbos introductores: dire, chiedere, rispondere, spiegare, raccontare, promettere, consigliare.",
         "Para consejos y pedidos: mi ha consigliato di…, mi ha chiesto di…, mi ha pregato di… (me rogó que).",
         "Para resumir: secondo lui…, a quanto pare… (por lo visto), ha detto di sì, ha detto di no."
       ],
       "examples": [
-        { "target": "Gli ho chiesto se voleva venire e mi ha detto di sì.", "es": "Le pregunté si quería venir y me dijo que sí." },
-        { "target": "Mi ha consigliato di prenotare in anticipo.", "es": "Me aconsejó reservar con anticipación." },
-        { "target": "A quanto pare, il negozio chiude a dicembre.", "es": "Por lo visto, el negocio cierra en diciembre." }
+        {
+          "target": "Gli ho chiesto se voleva venire e mi ha detto di sì.",
+          "es": "Le pregunté si quería venir y me dijo que sí."
+        },
+        {
+          "target": "Mi ha consigliato di prenotare in anticipo.",
+          "es": "Me aconsejó reservar con anticipación."
+        },
+        {
+          "target": "A quanto pare, il negozio chiude a dicembre.",
+          "es": "Por lo visto, el negocio cierra en diciembre."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Mi ha detto che sì.", "right": "Mi ha detto di sì.", "why": "'Me dijo que sí' o 'que no' se dice mi ha detto di sì, di no." }
+        {
+          "wrong": "Mi ha detto che sì.",
+          "right": "Mi ha detto di sì.",
+          "why": "'Me dijo que sí' o 'que no' se dice mi ha detto di sì, di no."
+        }
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "it-b1-periodo-ipotetico",
   "level": "B1",
-  "order": 3,
+  "order": 4,
   "title": "Hipótesis reales y posibles",
   "targetTitle": "Il periodo ipotetico (I e II tipo)",
   "description": "Las oraciones con se para hablar de lo que pasa si se cumple una condición (se piove, resto a casa) y de lo que pasaría en una situación imaginaria (se avessi tempo, viaggerei). Para el segundo tipo aprendés el congiuntivo imperfetto.",
@@ -12,7 +12,10 @@
     "Elegir entre el primer y el segundo tipo según lo probable que sea la situación",
     "Escribir sobre sueños y deseos"
   ],
-  "prerequisites": ["it-a2-futuro-condizionale", "it-b1-congiuntivo-presente"],
+  "prerequisites": [
+    "it-a2-futuro-condizionale",
+    "it-b1-congiuntivo-presente"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -20,7 +23,9 @@
       "day": 1,
       "title": "Hipótesis reales (primer tipo)",
       "goal": "Expresar condiciones posibles o probables con se + indicativo.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Se + presente, y en la otra parte presente, futuro o imperativo: Se piove, resto a casa. Se hai tempo, chiamami.",
         "A diferencia del español, después de se también puede ir el futuro: Se verrai, ti divertirai. En español no decimos 'si vendrás'.",
@@ -28,12 +33,25 @@
         "Después de se nunca va el condicional."
       ],
       "examples": [
-        { "target": "Se piove, restiamo a casa.", "es": "Si llueve, nos quedamos en casa." },
-        { "target": "Se finisci presto, chiamami.", "es": "Si terminás temprano, llamame." },
-        { "target": "Se domani farà bel tempo, andremo al mare.", "es": "Si mañana hace buen tiempo, vamos a ir a la playa." }
+        {
+          "target": "Se piove, restiamo a casa.",
+          "es": "Si llueve, nos quedamos en casa."
+        },
+        {
+          "target": "Se finisci presto, chiamami.",
+          "es": "Si terminás temprano, llamame."
+        },
+        {
+          "target": "Se domani farà bel tempo, andremo al mare.",
+          "es": "Si mañana hace buen tiempo, vamos a ir a la playa."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se vorresti, possiamo uscire.", "right": "Se vuoi, possiamo uscire.", "why": "Después de se no va el condicional: para una hipótesis real usá el presente." }
+        {
+          "wrong": "Se vorresti, possiamo uscire.",
+          "right": "Se vuoi, possiamo uscire.",
+          "why": "Después de se no va el condicional: para una hipótesis real usá el presente."
+        }
       ]
     },
     {
@@ -41,7 +59,9 @@
       "day": 2,
       "title": "El congiuntivo imperfetto",
       "goal": "Conjugar el congiuntivo imperfetto de los verbos regulares e irregulares.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Raíz del infinitivo + -ssi, -ssi, -sse, -ssimo, -ste, -ssero: parlassi, prendessi, dormissi.",
         "essere: fossi, fossi, fosse, fossimo, foste, fossero. avere es regular: avessi, avesse, avessimo.",
@@ -49,13 +69,30 @@
         "Equivale al subjuntivo imperfecto del español: se avessi = si tuviera o si tuviese."
       ],
       "examples": [
-        { "target": "Se avessi più tempo, leggerei di più.", "es": "Si tuviera más tiempo, leería más." },
-        { "target": "Se fossi in te, accetterei.", "es": "Yo que vos, aceptaría." },
-        { "target": "Se facesse meno caldo, usciremmo.", "es": "Si hiciera menos calor, saldríamos." }
+        {
+          "target": "Se avessi più tempo, leggerei di più.",
+          "es": "Si tuviera más tiempo, leería más."
+        },
+        {
+          "target": "Se fossi in te, accetterei.",
+          "es": "Yo que vos, aceptaría."
+        },
+        {
+          "target": "Se facesse meno caldo, usciremmo.",
+          "es": "Si hiciera menos calor, saldríamos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se io fosse ricco, viaggerei.", "right": "Se io fossi ricco, viaggerei.", "why": "Con io la forma es fossi; fosse es la de lui o lei. En español 'si yo fuera' y 'si él fuera' son iguales, en italiano no." },
-        { "wrong": "Se stassi meglio, verrei.", "right": "Se stessi meglio, verrei.", "why": "Stare hace stessi, con e: stessi, stesse, stessimo." }
+        {
+          "wrong": "Se io fosse ricco, viaggerei.",
+          "right": "Se io fossi ricco, viaggerei.",
+          "why": "Con io la forma es fossi; fosse es la de lui o lei. En español 'si yo fuera' y 'si él fuera' son iguales, en italiano no."
+        },
+        {
+          "wrong": "Se stassi meglio, verrei.",
+          "right": "Se stessi meglio, verrei.",
+          "why": "Stare hace stessi, con e: stessi, stesse, stessimo."
+        }
       ]
     },
     {
@@ -63,7 +100,10 @@
       "day": 3,
       "title": "Hipótesis posibles (segundo tipo)",
       "goal": "Hablar de situaciones poco probables o imaginarias con se + congiuntivo imperfetto y condizionale.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Se + congiuntivo imperfetto, condizionale presente: Se avessi soldi, comprerei una casa. Igual que 'si tuviera, compraría'.",
         "Sirve para hipótesis poco probables o imaginarias sobre el presente o el futuro: Se vincessi alla lotteria, smetterei di lavorare.",
@@ -71,12 +111,25 @@
         "Nunca va el condicional después de se: se avrei y se sarei son errores típicos, también de algunos italianos."
       ],
       "examples": [
-        { "target": "Se vincessi alla lotteria, farei il giro del mondo.", "es": "Si ganara la lotería, daría la vuelta al mundo." },
-        { "target": "Che cosa faresti se perdessi il lavoro?", "es": "¿Qué harías si perdieras el trabajo?" },
-        { "target": "Se abitassimo più vicino, ci vedremmo più spesso.", "es": "Si viviéramos más cerca, nos veríamos más seguido." }
+        {
+          "target": "Se vincessi alla lotteria, farei il giro del mondo.",
+          "es": "Si ganara la lotería, daría la vuelta al mundo."
+        },
+        {
+          "target": "Che cosa faresti se perdessi il lavoro?",
+          "es": "¿Qué harías si perdieras el trabajo?"
+        },
+        {
+          "target": "Se abitassimo più vicino, ci vedremmo più spesso.",
+          "es": "Si viviéramos más cerca, nos veríamos más seguido."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Se avrei tempo, verrei.", "right": "Se avessi tempo, verrei.", "why": "Después de se va el congiuntivo imperfetto, nunca el condicional: el condicional va en la otra parte de la oración." }
+        {
+          "wrong": "Se avrei tempo, verrei.",
+          "right": "Se avessi tempo, verrei.",
+          "why": "Después de se va el congiuntivo imperfetto, nunca el condicional: el condicional va en la otra parte de la oración."
+        }
       ]
     },
     {
@@ -84,7 +137,9 @@
       "day": 4,
       "title": "Elegir entre el primer y el segundo tipo",
       "goal": "Elegir el tipo de hipótesis según lo probable que sea y usar otras formas de condición.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Primer tipo (se + presente): lo ves posible o probable. Se domani ho tempo, vengo.",
         "Segundo tipo (se + congiuntivo imperfetto): lo ves improbable o imaginario. Se domani avessi tempo, verrei (pero seguramente no voy a tener).",
@@ -92,12 +147,25 @@
         "Otras formas de condición con congiuntivo: nel caso in cui o nel caso che (en caso de que), a patto che, purché."
       ],
       "examples": [
-        { "target": "Se trovo i biglietti, andiamo al concerto.", "es": "Si consigo entradas, vamos al recital." },
-        { "target": "Se fossi un animale, sarei un gatto.", "es": "Si fuera un animal, sería un gato." },
-        { "target": "Nel caso in cui piova, la festa sarà al chiuso.", "es": "En caso de que llueva, la fiesta va a ser bajo techo." }
+        {
+          "target": "Se trovo i biglietti, andiamo al concerto.",
+          "es": "Si consigo entradas, vamos al recital."
+        },
+        {
+          "target": "Se fossi un animale, sarei un gatto.",
+          "es": "Si fuera un animal, sería un gato."
+        },
+        {
+          "target": "Nel caso in cui piova, la festa sarà al chiuso.",
+          "es": "En caso de que llueva, la fiesta va a ser bajo techo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Nel caso in cui piove, restiamo a casa.", "right": "Nel caso in cui piova, restiamo a casa.", "why": "Nel caso in cui pide congiuntivo, como 'en caso de que' en español." }
+        {
+          "wrong": "Nel caso in cui piove, restiamo a casa.",
+          "right": "Nel caso in cui piova, restiamo a casa.",
+          "why": "Nel caso in cui pide congiuntivo, como 'en caso de que' en español."
+        }
       ]
     },
     {
@@ -105,20 +173,40 @@
       "day": 5,
       "title": "Sueños y deseos",
       "goal": "Comprender y escribir un texto sobre lo que harías en una situación imaginaria.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Preguntas típicas: Che cosa faresti se…? Dove vivresti se potessi scegliere?",
         "Encadená hipótesis: Se avessi un anno libero, viaggerei. E se viaggiassi, andrei prima in Giappone.",
         "Para desear: Mi piacerebbe…, Vorrei…, Sarebbe bello…"
       ],
       "examples": [
-        { "target": "Se potessi scegliere, vivrei in una città di mare.", "es": "Si pudiera elegir, viviría en una ciudad con mar." },
-        { "target": "Mi piacerebbe imparare a suonare il pianoforte.", "es": "Me gustaría aprender a tocar el piano." },
-        { "target": "Sarebbe bello avere più tempo libero.", "es": "Estaría bueno tener más tiempo libre." }
+        {
+          "target": "Se potessi scegliere, vivrei in una città di mare.",
+          "es": "Si pudiera elegir, viviría en una ciudad con mar."
+        },
+        {
+          "target": "Mi piacerebbe imparare a suonare il pianoforte.",
+          "es": "Me gustaría aprender a tocar el piano."
+        },
+        {
+          "target": "Sarebbe bello avere più tempo libero.",
+          "es": "Estaría bueno tener más tiempo libre."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Mi gustarebbe viaggiare.", "right": "Mi piacerebbe viaggiare.", "why": "'Gustar' se dice piacere: mi piacerebbe." },
-        { "wrong": "Se potrei scegliere, vivrei al mare.", "right": "Se potessi scegliere, vivrei al mare.", "why": "Después de se va el congiuntivo imperfetto: se potessi." }
+        {
+          "wrong": "Mi gustarebbe viaggiare.",
+          "right": "Mi piacerebbe viaggiare.",
+          "why": "'Gustar' se dice piacere: mi piacerebbe."
+        },
+        {
+          "wrong": "Se potrei scegliere, vivrei al mare.",
+          "right": "Se potessi scegliere, vivrei al mare.",
+          "why": "Después de se va el congiuntivo imperfetto: se potessi."
+        }
       ]
     }
   ]

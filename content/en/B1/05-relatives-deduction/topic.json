@@ -1,7 +1,7 @@
 {
   "id": "b1-relatives-deduction",
   "level": "B1",
-  "order": 5,
+  "order": 7,
   "title": "Relativos y deducción",
   "targetTitle": "Relative clauses and modals of deduction",
   "description": "Cómo dar información sobre personas, cosas y lugares, cómo sacar conclusiones con must, might y can't, y cómo conectar ideas con although, however y so.",
@@ -11,7 +11,9 @@
     "Hacer deducciones sobre el presente con must, might, could y can't",
     "Conectar ideas con although, however, despite y so"
   ],
-  "prerequisites": ["a2-modals-conditionals"],
+  "prerequisites": [
+    "a2-modals-conditionals"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,7 +21,9 @@
       "day": 1,
       "title": "Who, which, that, where y whose",
       "goal": "Unir ideas con pronombres relativos.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "who para personas, which para cosas y animales, that para los dos (en la charla es lo más común): The man who / that lives next door is a chef.",
         "where para lugares: the town where I grew up. whose para posesión ('cuyo', 'de quien'): the woman whose car was stolen.",
@@ -27,13 +31,30 @@
         "No repitas el sujeto ni el objeto: se dice the movie that I saw, no the movie that I saw it."
       ],
       "examples": [
-        { "target": "That's the girl who won the competition.", "es": "Esa es la chica que ganó el concurso." },
-        { "target": "This is the café where we first met.", "es": "Este es el café donde nos conocimos." },
-        { "target": "I have a friend whose father is a famous chef.", "es": "Tengo un amigo cuyo papá es un chef famoso." }
+        {
+          "target": "That's the girl who won the competition.",
+          "es": "Esa es la chica que ganó el concurso."
+        },
+        {
+          "target": "This is the café where we first met.",
+          "es": "Este es el café donde nos conocimos."
+        },
+        {
+          "target": "I have a friend whose father is a famous chef.",
+          "es": "Tengo un amigo cuyo papá es un chef famoso."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "The phone what I bought is broken.", "right": "The phone that I bought is broken.", "why": "What no funciona como relativo después de un sustantivo: usá that, which o nada." },
-        { "wrong": "The man which helped me was very kind.", "right": "The man who helped me was very kind.", "why": "Para personas se usa who o that, no which." }
+        {
+          "wrong": "The phone what I bought is broken.",
+          "right": "The phone that I bought is broken.",
+          "why": "What no funciona como relativo después de un sustantivo: usá that, which o nada."
+        },
+        {
+          "wrong": "The man which helped me was very kind.",
+          "right": "The man who helped me was very kind.",
+          "why": "Para personas se usa who o that, no which."
+        }
       ]
     },
     {
@@ -41,7 +62,10 @@
       "day": 2,
       "title": "Especificativas y explicativas",
       "goal": "Distinguir la información necesaria de la información extra y puntuarla bien.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Especificativa (defining): dice de quién o de qué hablás y va sin comas: The students who passed got a certificate (solo los que aprobaron).",
         "Explicativa (non-defining): agrega un dato extra y va entre comas: My sister, who lives in Spain, is a nurse.",
@@ -49,13 +73,30 @@
         "which puede referirse a toda la oración anterior, como 'lo que' o 'lo cual': He didn't call, which was strange."
       ],
       "examples": [
-        { "target": "My brother, who is a doctor, works in Mendoza.", "es": "Mi hermano, que es médico, trabaja en Mendoza." },
-        { "target": "The flight that leaves at six is cheaper.", "es": "El vuelo que sale a las seis es más barato." },
-        { "target": "She passed all her exams, which made her parents very proud.", "es": "Aprobó todos los exámenes, lo cual llenó de orgullo a sus papás." }
+        {
+          "target": "My brother, who is a doctor, works in Mendoza.",
+          "es": "Mi hermano, que es médico, trabaja en Mendoza."
+        },
+        {
+          "target": "The flight that leaves at six is cheaper.",
+          "es": "El vuelo que sale a las seis es más barato."
+        },
+        {
+          "target": "She passed all her exams, which made her parents very proud.",
+          "es": "Aprobó todos los exámenes, lo cual llenó de orgullo a sus papás."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Buenos Aires, that is the capital of Argentina, is huge.", "right": "Buenos Aires, which is the capital of Argentina, is huge.", "why": "En las explicativas (entre comas) no se usa that: va which o who." },
-        { "wrong": "He was late, what annoyed everyone.", "right": "He was late, which annoyed everyone.", "why": "Para referirte a toda la oración anterior ('lo que', 'lo cual') se usa which, no what." }
+        {
+          "wrong": "Buenos Aires, that is the capital of Argentina, is huge.",
+          "right": "Buenos Aires, which is the capital of Argentina, is huge.",
+          "why": "En las explicativas (entre comas) no se usa that: va which o who."
+        },
+        {
+          "wrong": "He was late, what annoyed everyone.",
+          "right": "He was late, which annoyed everyone.",
+          "why": "Para referirte a toda la oración anterior ('lo que', 'lo cual') se usa which, no what."
+        }
       ]
     },
     {
@@ -63,7 +104,9 @@
       "day": 3,
       "title": "Must, might y can't: deducción",
       "goal": "Sacar conclusiones sobre el presente según qué tan seguro estás.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "must = seguro que sí, es una conclusión lógica: She's been working all day. She must be tired.",
         "might / may / could = puede ser, no estoy seguro: He might be in a meeting.",
@@ -72,13 +115,30 @@
         "Al deducir, lo contrario de must no es mustn't sino can't."
       ],
       "examples": [
-        { "target": "You've been traveling for twenty hours. You must be exhausted.", "es": "Viajaste veinte horas. Debés estar agotado." },
-        { "target": "I'm not sure where Lucía is. She might be at the gym.", "es": "No sé bien dónde está Lucía. Puede que esté en el gimnasio." },
-        { "target": "That can't be the right address. It's a parking lot.", "es": "No puede ser la dirección correcta: es un estacionamiento." }
+        {
+          "target": "You've been traveling for twenty hours. You must be exhausted.",
+          "es": "Viajaste veinte horas. Debés estar agotado."
+        },
+        {
+          "target": "I'm not sure where Lucía is. She might be at the gym.",
+          "es": "No sé bien dónde está Lucía. Puede que esté en el gimnasio."
+        },
+        {
+          "target": "That can't be the right address. It's a parking lot.",
+          "es": "No puede ser la dirección correcta: es un estacionamiento."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "He mustn't be at home; the lights are off.", "right": "He can't be at home; the lights are off.", "why": "Para decir 'seguro que no' en una deducción se usa can't; mustn't expresa prohibición." },
-        { "wrong": "She must to be his sister.", "right": "She must be his sister.", "why": "Después de must el verbo va sin to." }
+        {
+          "wrong": "He mustn't be at home; the lights are off.",
+          "right": "He can't be at home; the lights are off.",
+          "why": "Para decir 'seguro que no' en una deducción se usa can't; mustn't expresa prohibición."
+        },
+        {
+          "wrong": "She must to be his sister.",
+          "right": "She must be his sister.",
+          "why": "Después de must el verbo va sin to."
+        }
       ]
     },
     {
@@ -86,7 +146,10 @@
       "day": 4,
       "title": "Although, however y so",
       "goal": "Conectar ideas de contraste, causa y resultado.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "although / even though + oración completa, dentro de la misma frase: Although it was raining, we went out.",
         "however va al principio de una oración nueva y lleva coma: The hotel was expensive. However, it was worth it.",
@@ -94,13 +157,30 @@
         "so = así que (resultado); because = porque (causa): I was tired, so I went to bed. I went to bed because I was tired."
       ],
       "examples": [
-        { "target": "Although he's only sixteen, he speaks four languages.", "es": "Aunque tiene solo dieciséis años, habla cuatro idiomas." },
-        { "target": "The plan sounds good. However, it's too expensive.", "es": "El plan suena bien. Sin embargo, es demasiado caro." },
-        { "target": "There was a strike, so we had to walk to work.", "es": "Había paro, así que tuvimos que ir caminando al trabajo." }
+        {
+          "target": "Although he's only sixteen, he speaks four languages.",
+          "es": "Aunque tiene solo dieciséis años, habla cuatro idiomas."
+        },
+        {
+          "target": "The plan sounds good. However, it's too expensive.",
+          "es": "El plan suena bien. Sin embargo, es demasiado caro."
+        },
+        {
+          "target": "There was a strike, so we had to walk to work.",
+          "es": "Había paro, así que tuvimos que ir caminando al trabajo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Despite it was cold, we went to the beach.", "right": "Although it was cold, we went to the beach.", "why": "Despite va con sustantivo o -ing (Despite the cold); para una oración completa usá although." },
-        { "wrong": "Although I studied, but I failed.", "right": "Although I studied, I failed.", "why": "Although y but no van en la misma frase: con uno alcanza." }
+        {
+          "wrong": "Despite it was cold, we went to the beach.",
+          "right": "Although it was cold, we went to the beach.",
+          "why": "Despite va con sustantivo o -ing (Despite the cold); para una oración completa usá although."
+        },
+        {
+          "wrong": "Although I studied, but I failed.",
+          "right": "Although I studied, I failed.",
+          "why": "Although y but no van en la misma frase: con uno alcanza."
+        }
       ]
     },
     {
@@ -108,7 +188,10 @@
       "day": 5,
       "title": "Escribir una reseña",
       "goal": "Leer y escribir una reseña de un lugar con relativos, deducciones y conectores.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Presentá el lugar con una relativa: We stayed at Casa Verde, which is right next to the beach.",
         "Equilibrá lo bueno y lo malo con although, however y despite.",
@@ -116,12 +199,25 @@
         "Terminá con una recomendación clara: I'd definitely recommend it to anyone who..."
       ],
       "examples": [
-        { "target": "We had lunch at a small restaurant that a friend had recommended.", "es": "Almorzamos en un restaurante chiquito que nos había recomendado un amigo." },
-        { "target": "The service was slow. However, the food was delicious.", "es": "La atención fue lenta. Sin embargo, la comida estaba riquísima." },
-        { "target": "I'd recommend it to anyone who loves seafood.", "es": "Se lo recomendaría a cualquiera a quien le encanten los mariscos." }
+        {
+          "target": "We had lunch at a small restaurant that a friend had recommended.",
+          "es": "Almorzamos en un restaurante chiquito que nos había recomendado un amigo."
+        },
+        {
+          "target": "The service was slow. However, the food was delicious.",
+          "es": "La atención fue lenta. Sin embargo, la comida estaba riquísima."
+        },
+        {
+          "target": "I'd recommend it to anyone who loves seafood.",
+          "es": "Se lo recomendaría a cualquiera a quien le encanten los mariscos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "The food was delicious, however the service was slow.", "right": "The food was delicious. However, the service was slow.", "why": "However no une dos oraciones como but: va después de un punto (o un punto y coma) y seguido de coma. Si no, usá but." }
+        {
+          "wrong": "The food was delicious, however the service was slow.",
+          "right": "The food was delicious. However, the service was slow.",
+          "why": "However no une dos oraciones como but: va después de un punto (o un punto y coma) y seguido de coma. Si no, usá but."
+        }
       ]
     }
   ]
