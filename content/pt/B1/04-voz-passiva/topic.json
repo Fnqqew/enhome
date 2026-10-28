@@ -30,7 +30,8 @@
         "ser + participio + por: O livro foi escrito por Jorge Amado.",
         "El participio concuerda con el sujeto: A ponte foi construída. Os prédios foram construídos.",
         "por + artículo se contrae: pelo, pela, pelos, pelas.",
-        "Es típica de noticias y textos formales; al hablar se prefiere la activa."
+        "Es típica de noticias y textos formales; al hablar se prefiere la activa.",
+        "En español la voz pasiva con \"ser\" funciona de forma parecida (fue construido por...), pero en portugués el participio siempre tiene que concordar en género y número con el sujeto, algo que en español rioplatense a veces se descuida al hablar rápido."
       ],
       "examples": [
         {
@@ -44,6 +45,26 @@
         {
           "target": "Esse quadro foi pintado pela Tarsila do Amaral.",
           "es": "Ese cuadro fue pintado por Tarsila do Amaral."
+        },
+        {
+          "target": "O hino foi cantado por todos os presentes.",
+          "es": "El himno fue cantado por todos los presentes."
+        },
+        {
+          "target": "A ponte foi inaugurada pelo prefeito.",
+          "es": "El puente fue inaugurado por el intendente."
+        },
+        {
+          "target": "As cartas foram escritas em francês.",
+          "es": "Las cartas fueron escritas en francés."
+        },
+        {
+          "target": "O filme foi dirigido por um cineasta brasileiro.",
+          "es": "La película fue dirigida por un cineasta brasileño."
+        },
+        {
+          "target": "Os documentos foram assinados pela diretora.",
+          "es": "Los documentos fueron firmados por la directora."
         }
       ],
       "commonMistakes": [
@@ -56,6 +77,11 @@
           "wrong": "As cartas foram enviado ontem.",
           "right": "As cartas foram enviadas ontem.",
           "why": "En la pasiva con ser el participio concuerda en género y número con el sujeto."
+        },
+        {
+          "wrong": "A casa foi construído em 1920.",
+          "right": "A casa foi construída em 1920.",
+          "why": "El participio tiene que concordar en género y número con el sujeto (casa es femenino), así que va \"construída\" y no \"construído\"."
         }
       ],
       "chunks": [
@@ -103,7 +129,8 @@
         "Algunos verbos tienen dos participios: el regular va con ter y el irregular, con ser o estar.",
         "aceitar: tinha aceitado / foi aceito. entregar: tinha entregado / foi entregue. eleger: tinha elegido / foi eleito.",
         "prender: tinha prendido / foi preso. imprimir: tinha imprimido / foi impresso. matar: tinha matado / foi morto.",
-        "Ganho, gasto y pago se usan con los dos en Brasil: tinha pago, foi pago."
+        "Ganho, gasto y pago se usan con los dos en Brasil: tinha pago, foi pago.",
+        "En español no existen participios dobles (siempre decimos \"ha pagado\" o \"fue pagado\"), pero en portugués muchos verbos tienen una forma regular para usar con \"ter\" y otra irregular para usar con \"ser\", como entregado/entregue o prendido/preso."
       ],
       "examples": [
         {
@@ -117,6 +144,26 @@
         {
           "target": "O deputado foi eleito com muitos votos.",
           "es": "El diputado fue elegido con muchos votos."
+        },
+        {
+          "target": "A luz foi acesa antes da reunião.",
+          "es": "La luz fue encendida antes de la reunión."
+        },
+        {
+          "target": "O contrato foi rompido pela empresa.",
+          "es": "El contrato fue roto por la empresa."
+        },
+        {
+          "target": "As aulas foram suspensas por causa da chuva.",
+          "es": "Las clases fueron suspendidas por la lluvia."
+        },
+        {
+          "target": "O incêndio foi extinto pelos bombeiros.",
+          "es": "El incendio fue extinguido por los bomberos."
+        },
+        {
+          "target": "O prisioneiro foi solto depois do julgamento.",
+          "es": "El prisionero fue liberado después del juicio."
         }
       ],
       "commonMistakes": [
@@ -129,6 +176,11 @@
           "wrong": "A encomenda foi entregada.",
           "right": "A encomenda foi entregue.",
           "why": "El participio de entregar con ser es entregue, que sirve para masculino y femenino."
+        },
+        {
+          "wrong": "As aulas foram suspendido por causa da chuva.",
+          "right": "As aulas foram suspensas por causa da chuva.",
+          "why": "Con el verbo \"ser\" hay que usar el participio irregular (suspensas) y además concordarlo en género y número con el sujeto (aulas, femenino plural)."
         }
       ],
       "chunks": [
@@ -177,7 +229,8 @@
         "Verbo + se + sustantivo: el verbo concuerda con el sustantivo. Vende-se uma casa. Vendem-se casas.",
         "En lo escrito, el pronombre va después del verbo con guion: Aluga-se, Conserta-se.",
         "En la charla y en muchos carteles vas a ver Aluga-se quartos o Se vende carro; en un texto cuidado escribí Alugam-se quartos.",
-        "Equivale a la pasiva con ser: Vendem-se casas = Casas são vendidas."
+        "Equivale a la pasiva con ser: Vendem-se casas = Casas são vendidas.",
+        "En español el \"se\" pasivo no necesita guion ni un orden fijo (se venden casas, se vende casa), pero en portugués escrito el pronombre \"se\" va siempre pegado al verbo con guion y detrás de él: Vende-se, Alugam-se."
       ],
       "examples": [
         {
@@ -191,6 +244,26 @@
         {
           "target": "Ouviu-se um barulho estranho.",
           "es": "Se oyó un ruido raro."
+        },
+        {
+          "target": "Vendem-se roupas usadas.",
+          "es": "Se venden ropas usadas."
+        },
+        {
+          "target": "Compram-se livros antigos.",
+          "es": "Se compran libros antiguos."
+        },
+        {
+          "target": "Faz-se entrega em domicílio.",
+          "es": "Se hace entrega a domicilio."
+        },
+        {
+          "target": "Alugam-se salas comerciais.",
+          "es": "Se alquilan salas comerciales."
+        },
+        {
+          "target": "Vende-se essa bicicleta.",
+          "es": "Se vende esa bicicleta."
         }
       ],
       "commonMistakes": [
@@ -203,6 +276,11 @@
           "wrong": "Se vende carro.",
           "right": "Vende-se carro.",
           "why": "En lo escrito la oración no empieza con pronombre: va vende-se."
+        },
+        {
+          "wrong": "Vende-se roupas usadas.",
+          "right": "Vendem-se roupas usadas.",
+          "why": "El verbo tiene que concordar con el sustantivo que sigue (roupas es plural), así que va \"vendem-se\" y no \"vende-se\"."
         }
       ],
       "chunks": [
@@ -264,6 +342,26 @@
         {
           "target": "Em São Paulo você come bem a qualquer hora.",
           "es": "En San Pablo se come bien a cualquier hora."
+        },
+        {
+          "target": "Roubaram minha bicicleta ontem.",
+          "es": "Me robaron la bicicleta ayer."
+        },
+        {
+          "target": "Contrata-se motorista com experiência.",
+          "es": "Se contrata chofer con experiencia."
+        },
+        {
+          "target": "Dizem que vai ter promoção na loja.",
+          "es": "Dicen que va a haber promoción en el local."
+        },
+        {
+          "target": "Aqui a gente janta mais tarde do que na Argentina.",
+          "es": "Acá la gente cena más tarde que en Argentina."
+        },
+        {
+          "target": "Trata-se de um assunto delicado.",
+          "es": "Se trata de un asunto delicado."
         }
       ],
       "commonMistakes": [
@@ -276,6 +374,11 @@
           "wrong": "Um nunca sabe o que vai acontecer.",
           "right": "A gente nunca sabe o que vai acontecer.",
           "why": "El 'uno' impersonal del español se dice a gente o você en portugués."
+        },
+        {
+          "wrong": "Tratam-se de um assunto delicado.",
+          "right": "Trata-se de um assunto delicado.",
+          "why": "Como el verbo \"tratar\" va seguido de la preposición \"de\", el \"se\" queda siempre invariable en singular, sin concordar con lo que sigue."
         }
       ],
       "chunks": [
@@ -323,7 +426,8 @@
       "keyPoints": [
         "En los clasificados: Aluga-se, Vende-se, Precisa-se de, Contrata-se, Tratar com... (comunicarse con).",
         "En Brasil los departamentos se describen por dormitorios: apartamento de dois quartos, com suíte, com vaga de garagem.",
-        "En las noticias: foi preso, foram registrados, foi inaugurado, segundo a polícia."
+        "En las noticias: foi preso, foram registrados, foi inaugurado, segundo a polícia.",
+        "En español los clasificados suelen usar el infinitivo o el \"se\" impersonal (Se alquila, Se necesita), y en portugués aparece la misma idea con \"se\", pero el pronombre va pegado al verbo con guion y puede concordar con lo que sigue: Aluga-se, Contratam-se."
       ],
       "examples": [
         {
@@ -337,6 +441,26 @@
         {
           "target": "Precisa-se de recepcionista com inglês fluente.",
           "es": "Se busca recepcionista con inglés fluido."
+        },
+        {
+          "target": "Vende-se terreno com documentação em dia.",
+          "es": "Se vende terreno con documentación al día."
+        },
+        {
+          "target": "O suspeito foi detido pela polícia nesta manhã.",
+          "es": "El sospechoso fue detenido por la policía esta mañana."
+        },
+        {
+          "target": "Contrata-se auxiliar de cozinha com experiência.",
+          "es": "Se contrata ayudante de cocina con experiencia."
+        },
+        {
+          "target": "O show foi cancelado por motivos de segurança.",
+          "es": "El show fue cancelado por motivos de seguridad."
+        },
+        {
+          "target": "Foram encontrados vestígios de um incêndio no local.",
+          "es": "Se encontraron rastros de un incendio en el lugar."
         }
       ],
       "commonMistakes": [
@@ -349,6 +473,11 @@
           "wrong": "Se busca vendedor.",
           "right": "Precisa-se de vendedor.",
           "why": "En los avisos de trabajo se usa precisa-se de o contrata-se; 'se busca' es español."
+        },
+        {
+          "wrong": "Precisam-se de recepcionista.",
+          "right": "Precisa-se de recepcionista.",
+          "why": "Como \"precisar\" va con la preposición \"de\", el \"se\" se mantiene invariable en singular, sin importar si lo que sigue está en plural."
         }
       ],
       "chunks": [

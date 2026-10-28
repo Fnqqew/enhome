@@ -1,0 +1,904 @@
+{
+  "language": "ko",
+  "existing": [],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "ko-a1-hangul",
+          "title": "El alfabeto coreano (한글): vocales y consonantes básicas",
+          "targetTitle": "한글: 기본 자음과 모음",
+          "description": "Vas a aprender a leer y escribir las vocales y consonantes básicas del hangul, el alfabeto coreano. Esto te va a servir para arrancar a leer carteles, menús y textos simples desde el primer día.",
+          "subtopics": [
+            "Las vocales básicas del hangul",
+            "Las consonantes básicas del hangul",
+            "Combinación de vocales y consonantes en sílabas",
+            "Vocales compuestas y diptongos",
+            "Práctica de lectura y escritura de palabras simples"
+          ],
+          "prerequisites": []
+        },
+        {
+          "id": "ko-a1-saludos",
+          "title": "Saludos y presentaciones personales",
+          "targetTitle": "인사와 자기소개",
+          "description": "Vas a aprender a saludar, despedirte y presentarte usando el registro cortés 해요체, que es la base de este curso. Te va a servir para iniciar cualquier conversación cotidiana en coreano de forma educada.",
+          "subtopics": [
+            "Saludos básicos de encuentro y despedida",
+            "Presentarte: nombre, nacionalidad y ocupación",
+            "Preguntar el nombre y la nacionalidad a otra persona",
+            "El tratamiento con 씨 y pronombres básicos",
+            "Diálogo de presentación completo entre dos personas"
+          ],
+          "prerequisites": ["ko-a1-hangul"]
+        },
+        {
+          "id": "ko-a1-particulas-basicas",
+          "title": "Partículas básicas de sujeto y tema (이/가, 은/는)",
+          "targetTitle": "기본 조사 이/가, 은/는",
+          "description": "Vas a entender cómo funcionan las partículas de sujeto y de tema, que son clave para armar cualquier oración en coreano. Te va a servir para empezar a construir frases simples con sentido correcto.",
+          "subtopics": [
+            "La partícula de sujeto 이/가",
+            "La partícula de tema 은/는",
+            "Diferencia de uso entre 이/가 y 은/는",
+            "Oraciones simples con partículas de sujeto y tema",
+            "Práctica combinada con vocabulario conocido"
+          ],
+          "prerequisites": ["ko-a1-saludos"]
+        },
+        {
+          "id": "ko-a1-verbo-ser-estar",
+          "title": "El verbo ser/estar y los adjetivos descriptivos (이에요/예요)",
+          "targetTitle": "이에요/예요와 형용사",
+          "description": "Vas a aprender a usar el equivalente a 'ser' en coreano y a describir personas y cosas con adjetivos básicos. Esto te va a servir para hablar de vos mismo, de otros y del entorno que te rodea.",
+          "subtopics": [
+            "El verbo 이에요/예요 en afirmativo",
+            "La forma negativa 이/가 아니에요",
+            "Adjetivos descriptivos básicos en 해요체",
+            "Preguntas con 뭐예요 y 누구예요",
+            "Describir personas y objetos con adjetivos"
+          ],
+          "prerequisites": ["ko-a1-particulas-basicas"]
+        },
+        {
+          "id": "ko-a1-numeros-fechas",
+          "title": "Números coreanos y sino-coreanos, y las fechas",
+          "targetTitle": "한국어 숫자와 날짜",
+          "description": "Vas a aprender los dos sistemas numéricos del coreano y cómo se usan para decir fechas, edades y cantidades. Te va a servir para manejarte con precios, horarios y datos personales básicos.",
+          "subtopics": [
+            "Números nativos coreanos del 1 al 100",
+            "Números sino-coreanos y su uso",
+            "Decir la edad y el año de nacimiento",
+            "Los meses y los días del mes",
+            "Preguntar y decir la fecha completa"
+          ],
+          "prerequisites": ["ko-a1-verbo-ser-estar"]
+        },
+        {
+          "id": "ko-a1-tiempo-hora",
+          "title": "La hora y las rutinas diarias",
+          "targetTitle": "시간과 하루 일과",
+          "description": "Vas a aprender a decir la hora exacta y a describir tu rutina diaria con verbos simples en 해요체. Esto te va a servir para organizar y contar tu día a día en coreano.",
+          "subtopics": [
+            "Decir la hora con números nativos y sino-coreanos",
+            "Los días de la semana",
+            "Verbos de rutina diaria en presente",
+            "Adverbios de frecuencia y tiempo",
+            "Describir tu rutina diaria completa"
+          ],
+          "prerequisites": ["ko-a1-numeros-fechas"]
+        },
+        {
+          "id": "ko-a1-verbos-haeyo",
+          "title": "Verbos de acción en presente con 해요체",
+          "targetTitle": "해요체 동사 현재형",
+          "description": "Vas a aprender la conjugación regular de los verbos de acción en el registro cortés 해요체. Te va a servir para empezar a contar qué hacés habitualmente en situaciones cotidianas.",
+          "subtopics": [
+            "Verbos regulares terminados en 아요",
+            "Verbos regulares terminados en 어요",
+            "Verbos irregulares frecuentes en 해요체",
+            "La forma negativa de los verbos con 안",
+            "Preguntas y respuestas con verbos de acción"
+          ],
+          "prerequisites": ["ko-a1-tiempo-hora"]
+        },
+        {
+          "id": "ko-a1-objetos-lugares",
+          "title": "Objetos cotidianos, lugares y la partícula de ubicación (에, 에서)",
+          "targetTitle": "일상 물건과 장소, 에/에서",
+          "description": "Vas a ampliar tu vocabulario de objetos y lugares cotidianos, y vas a aprender a indicar ubicación y destino con las partículas 에 y 에서. Esto te va a servir para orientarte y hablar de dónde están las cosas o dónde pasan las acciones.",
+          "subtopics": [
+            "Vocabulario de objetos del hogar y la escuela",
+            "Lugares comunes de la ciudad",
+            "La partícula de ubicación 에",
+            "La partícula de lugar de acción 에서",
+            "Preguntar y responder dónde está algo o alguien"
+          ],
+          "prerequisites": ["ko-a1-verbos-haeyo"]
+        },
+        {
+          "id": "ko-a1-familia-comida",
+          "title": "La familia, la comida y la partícula de objeto (을/를)",
+          "targetTitle": "가족, 음식과 을/를",
+          "description": "Vas a aprender vocabulario de familia y comida, y a usar la partícula de objeto directo para armar oraciones más completas. Te va a servir para hablar de tu familia y pedir o describir comidas en coreano.",
+          "subtopics": [
+            "Vocabulario de miembros de la familia",
+            "La partícula de objeto 을/를",
+            "Vocabulario básico de comidas y bebidas",
+            "Verbos de consumo: comer, beber, cocinar",
+            "Describir una comida familiar en una oración completa"
+          ],
+          "prerequisites": ["ko-a1-objetos-lugares"]
+        },
+        {
+          "id": "ko-a1-compras-negacion",
+          "title": "De compras: precios, negación y preguntas básicas",
+          "targetTitle": "쇼핑, 가격과 기본 질문",
+          "description": "Vas a aprender a preguntar precios, negociar cantidades y usar formas de negación en situaciones de compra. Esto te va a servir para manejarte en un negocio o mercado coreano sin problemas.",
+          "subtopics": [
+            "Vocabulario de tiendas y productos",
+            "Preguntar precios y cantidades",
+            "Los contadores de objetos más usados",
+            "Formas de negación: 안 y 못",
+            "Diálogo completo de una compra"
+          ],
+          "prerequisites": ["ko-a1-familia-comida"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "ko-a2-pasado",
+          "title": "El pasado simple en 해요체",
+          "targetTitle": "해요체 과거형",
+          "description": "Vas a aprender a conjugar verbos y adjetivos en pasado dentro del registro cortés 해요체. Te va a servir para empezar a contar cosas que ya pasaron en tu vida cotidiana.",
+          "subtopics": [
+            "Formación del pasado con 았/었어요",
+            "El pasado de 이다 y de verbos irregulares",
+            "Adverbios de tiempo pasado",
+            "Preguntas y respuestas en pasado",
+            "Contar un evento pasado simple"
+          ],
+          "prerequisites": ["ko-a1-verbos-haeyo"]
+        },
+        {
+          "id": "ko-a2-futuro-planes",
+          "title": "El futuro y los planes (-(으)ㄹ 거예요)",
+          "targetTitle": "미래와 계획 -(으)ㄹ 거예요",
+          "description": "Vas a aprender a expresar planes e intenciones futuras con la estructura -(으)ㄹ 거예요. Esto te va a servir para hablar de lo que vas a hacer el fin de semana, en vacaciones o a futuro.",
+          "subtopics": [
+            "Formación de -(으)ㄹ 거예요",
+            "Diferencia entre plan y predicción",
+            "Vocabulario de tiempo futuro",
+            "Preguntas sobre planes futuros",
+            "Describir tus planes para el próximo mes"
+          ],
+          "prerequisites": ["ko-a2-pasado"]
+        },
+        {
+          "id": "ko-a2-conectores-basicos",
+          "title": "Conectores básicos: y, pero, porque, entonces",
+          "targetTitle": "기본 연결어미: 그리고, 그런데, 왜냐하면",
+          "description": "Vas a aprender los conectores más usados para unir oraciones simples y dar coherencia a tu discurso. Te va a servir para que tus frases dejen de ser sueltas y empiecen a sonar más naturales.",
+          "subtopics": [
+            "El conector de adición -고",
+            "El conector de contraste -지만",
+            "El conector de causa -아서/어서",
+            "El conector de secuencia 그래서",
+            "Práctica de unión de oraciones cotidianas"
+          ],
+          "prerequisites": ["ko-a2-futuro-planes"]
+        },
+        {
+          "id": "ko-a2-habilidad-posibilidad",
+          "title": "Habilidad y posibilidad (-(으)ㄹ 수 있다/없다)",
+          "targetTitle": "능력과 가능성 -(으)ㄹ 수 있다/없다",
+          "description": "Vas a aprender a expresar lo que podés o no podés hacer usando la estructura de habilidad y posibilidad. Esto te va a servir para hablar de tus capacidades y limitaciones en distintas situaciones.",
+          "subtopics": [
+            "Formación de -(으)ㄹ 수 있다",
+            "Formación de -(으)ㄹ 수 없다",
+            "Preguntas sobre habilidades",
+            "Vocabulario de destrezas y pasatiempos",
+            "Hablar de lo que podés y no podés hacer"
+          ],
+          "prerequisites": ["ko-a2-conectores-basicos"]
+        },
+        {
+          "id": "ko-a2-peticiones-sugerencias",
+          "title": "Peticiones, sugerencias y permisos",
+          "targetTitle": "요청, 제안과 허락 표현",
+          "description": "Vas a aprender a pedir favores, hacer sugerencias y pedir permiso de forma cortés en coreano. Te va a servir para manejarte socialmente en situaciones donde necesitás ayuda o querés proponer algo.",
+          "subtopics": [
+            "Peticiones con -아/어 주세요",
+            "Sugerencias con -(으)ㄹ까요",
+            "Permiso con -아/어도 되다",
+            "Ofrecimientos con -(으)ㄹ게요",
+            "Diálogo de petición y respuesta cortés"
+          ],
+          "prerequisites": ["ko-a2-habilidad-posibilidad"]
+        },
+        {
+          "id": "ko-a2-direcciones-transporte",
+          "title": "Direcciones y medios de transporte",
+          "targetTitle": "길 안내와 교통수단",
+          "description": "Vas a aprender vocabulario de transporte público y expresiones para pedir y dar indicaciones de cómo llegar a un lugar. Esto te va a servir para moverte por una ciudad coreana sin perderte.",
+          "subtopics": [
+            "Vocabulario de medios de transporte",
+            "Pedir indicaciones para llegar a un lugar",
+            "Dar indicaciones: izquierda, derecha, derecho",
+            "Expresiones de distancia y tiempo de viaje",
+            "Diálogo completo en una estación o parada"
+          ],
+          "prerequisites": ["ko-a2-peticiones-sugerencias"]
+        },
+        {
+          "id": "ko-a2-comparaciones",
+          "title": "Comparaciones y superlativos",
+          "targetTitle": "비교와 최상급 표현",
+          "description": "Vas a aprender a comparar personas, objetos y situaciones usando estructuras de comparación y superlativo. Te va a servir para opinar sobre qué es mejor, peor o el más destacado entre varias opciones.",
+          "subtopics": [
+            "Comparación con 보다",
+            "Expresiones de igualdad con 만큼",
+            "El superlativo con 가장/제일",
+            "Vocabulario de cualidades para comparar",
+            "Comparar productos o lugares en un diálogo"
+          ],
+          "prerequisites": ["ko-a2-direcciones-transporte"]
+        },
+        {
+          "id": "ko-a2-obligacion-prohibicion",
+          "title": "Obligación y prohibición",
+          "targetTitle": "의무와 금지 표현",
+          "description": "Vas a aprender a expresar lo que es obligatorio o está prohibido hacer en distintos contextos. Esto te va a servir para entender reglas, consejos y recomendaciones en coreano.",
+          "subtopics": [
+            "Obligación con -아/어야 하다",
+            "Prohibición con -(으)면 안 되다",
+            "Vocabulario de reglas y normas",
+            "Consejos con -는 게 좋다",
+            "Práctica de reglas de un lugar público"
+          ],
+          "prerequisites": ["ko-a2-comparaciones"]
+        },
+        {
+          "id": "ko-a2-salud-cuerpo",
+          "title": "El cuerpo, la salud y el médico",
+          "targetTitle": "신체, 건강과 병원",
+          "description": "Vas a aprender vocabulario del cuerpo humano y expresiones para describir síntomas y pedir ayuda médica. Te va a servir para manejarte en una consulta médica o farmacia en coreano.",
+          "subtopics": [
+            "Vocabulario de partes del cuerpo",
+            "Expresar dolor y síntomas con 아프다",
+            "Vocabulario de enfermedades comunes",
+            "Diálogo en la farmacia",
+            "Diálogo completo en el consultorio médico"
+          ],
+          "prerequisites": ["ko-a2-obligacion-prohibicion"]
+        },
+        {
+          "id": "ko-a2-clima-estaciones",
+          "title": "El clima, las estaciones y actividades de ocio",
+          "targetTitle": "날씨, 계절과 여가 활동",
+          "description": "Vas a aprender a hablar del clima, las estaciones del año y las actividades de tiempo libre que más te gustan. Esto te va a servir para mantener una charla informal sobre gustos y planes de ocio.",
+          "subtopics": [
+            "Vocabulario del clima y las estaciones",
+            "Expresiones para describir el tiempo",
+            "Vocabulario de actividades de ocio",
+            "Expresar gustos y preferencias con 좋아하다",
+            "Planear una actividad según el clima"
+          ],
+          "prerequisites": ["ko-a2-salud-cuerpo"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "ko-b1-honorificos-intro",
+          "title": "Introducción al habla honorífica (존댓말) con personas mayores",
+          "targetTitle": "존댓말 소개",
+          "description": "Vas a aprender las formas honoríficas básicas para dirigirte con respeto a personas mayores o de rango superior. Esto te va a servir para manejarte correctamente en contextos jerárquicos típicos de la cultura coreana.",
+          "subtopics": [
+            "El sufijo honorífico -(으)시-",
+            "Vocabulario honorífico especial (드시다, 계시다, 드리다)",
+            "La partícula honorífica de sujeto 께서",
+            "Diferencia entre 해요체 y 합니다체 honorífico",
+            "Práctica de diálogo con una persona mayor"
+          ],
+          "prerequisites": ["ko-a2-clima-estaciones"]
+        },
+        {
+          "id": "ko-b1-experiencias-pasadas",
+          "title": "Narrar experiencias pasadas y expresar arrepentimiento",
+          "targetTitle": "과거 경험과 후회 표현",
+          "description": "Vas a aprender a contar experiencias vividas y a expresar arrepentimiento sobre decisiones pasadas. Te va a servir para compartir anécdotas personales de forma más rica y natural.",
+          "subtopics": [
+            "Experiencias con -아/어 본 적이 있다",
+            "El pasado continuo con -고 있었다",
+            "Arrepentimiento con -았/었으면 좋았을 텐데",
+            "Vocabulario de anécdotas y viajes pasados",
+            "Narrar una anécdota personal completa"
+          ],
+          "prerequisites": ["ko-b1-honorificos-intro"]
+        },
+        {
+          "id": "ko-b1-condicionales",
+          "title": "Oraciones condicionales",
+          "targetTitle": "조건문 -(으)면, -다면",
+          "description": "Vas a aprender a formar oraciones condicionales reales e hipotéticas en coreano. Esto te va a servir para hablar de consecuencias, consejos y situaciones imaginarias.",
+          "subtopics": [
+            "Condicional real con -(으)면",
+            "Condicional hipotético con -다면",
+            "Diferencia entre -(으)면 y -다면",
+            "Vocabulario de consejos condicionales",
+            "Práctica de situaciones hipotéticas"
+          ],
+          "prerequisites": ["ko-b1-experiencias-pasadas"]
+        },
+        {
+          "id": "ko-b1-estilo-indirecto",
+          "title": "Estilo indirecto y citar lo que dicen otros",
+          "targetTitle": "간접화법과 인용 표현",
+          "description": "Vas a aprender a reportar lo que otra persona dijo, preguntó o pidió usando el estilo indirecto. Te va a servir para contar conversaciones y transmitir información de terceros con precisión.",
+          "subtopics": [
+            "Citar afirmaciones con -다고 하다",
+            "Citar preguntas con -냐고 하다",
+            "Citar órdenes y pedidos con -라고 하다",
+            "Reportar sugerencias con -자고 하다",
+            "Práctica de reporte de una conversación"
+          ],
+          "prerequisites": ["ko-b1-condicionales"]
+        },
+        {
+          "id": "ko-b1-opinion-acuerdo",
+          "title": "Expresar opinión, acuerdo y desacuerdo",
+          "targetTitle": "의견, 동의와 반대 표현",
+          "description": "Vas a aprender expresiones para dar tu opinión, mostrar acuerdo o discrepar de forma educada. Esto te va a servir para participar en charlas y discusiones cotidianas con más soltura.",
+          "subtopics": [
+            "Expresar opinión con -다고 생각하다",
+            "Mostrar acuerdo parcial y total",
+            "Expresar desacuerdo de forma cortés",
+            "Vocabulario de matización de opiniones",
+            "Diálogo de debate informal entre amigos"
+          ],
+          "prerequisites": ["ko-b1-estilo-indirecto"]
+        },
+        {
+          "id": "ko-b1-intenciones-deseos",
+          "title": "Intenciones, deseos y esperanzas",
+          "targetTitle": "의도, 희망과 바람 표현",
+          "description": "Vas a aprender a expresar deseos, esperanzas e intenciones futuras con distintas estructuras gramaticales. Te va a servir para hablar de tus metas personales y profesionales.",
+          "subtopics": [
+            "Deseos con -고 싶다 y -았/었으면 좋겠다",
+            "Esperanzas con -기를 바라다",
+            "Intenciones con -(으)려고 하다",
+            "Vocabulario de metas y proyectos",
+            "Describir tus metas a futuro"
+          ],
+          "prerequisites": ["ko-b1-opinion-acuerdo"]
+        },
+        {
+          "id": "ko-b1-causa-efecto",
+          "title": "Causa, efecto y consecuencia en discurso narrado",
+          "targetTitle": "원인, 결과와 서사적 표현",
+          "description": "Vas a aprender conectores más precisos para narrar hechos encadenados con causa y consecuencia. Esto te va a servir para contar historias largas con coherencia lógica.",
+          "subtopics": [
+            "El conector -는 바람에",
+            "El conector -는 덕분에",
+            "El conector -(으)ㄴ 결과",
+            "Vocabulario de narración de hechos",
+            "Narrar una historia con causa y efecto"
+          ],
+          "prerequisites": ["ko-b1-intenciones-deseos"]
+        },
+        {
+          "id": "ko-b1-trabajo-entrevistas",
+          "title": "Vocabulario de trabajo y entrevistas laborales",
+          "targetTitle": "직장 어휘와 면접",
+          "description": "Vas a aprender vocabulario relacionado al mundo laboral y expresiones típicas de una entrevista de trabajo. Te va a servir para presentarte profesionalmente en coreano.",
+          "subtopics": [
+            "Vocabulario de profesiones y oficinas",
+            "Expresiones para hablar de experiencia laboral",
+            "Preguntas frecuentes de entrevista",
+            "Describir fortalezas y debilidades",
+            "Simulación completa de entrevista laboral"
+          ],
+          "prerequisites": ["ko-b1-causa-efecto"]
+        },
+        {
+          "id": "ko-b1-viajes-alojamiento",
+          "title": "Viajes, alojamiento y resolución de problemas",
+          "targetTitle": "여행, 숙박과 문제 해결",
+          "description": "Vas a aprender vocabulario y frases útiles para reservar alojamiento y resolver inconvenientes durante un viaje. Esto te va a servir para manejarte con autonomía en un viaje por Corea.",
+          "subtopics": [
+            "Vocabulario de alojamiento y reservas",
+            "Expresiones para hacer una reserva",
+            "Quejas y reclamos corteses",
+            "Vocabulario de equipaje y aeropuerto",
+            "Resolver un problema de viaje en un diálogo"
+          ],
+          "prerequisites": ["ko-b1-trabajo-entrevistas"]
+        },
+        {
+          "id": "ko-b1-comparar-contraste",
+          "title": "Contraste y concesión avanzada",
+          "targetTitle": "대조와 양보 표현",
+          "description": "Vas a aprender conectores de contraste y concesión más matizados que los básicos de nivel A2. Te va a servir para expresar ideas más complejas donde algo ocurre a pesar de otra cosa.",
+          "subtopics": [
+            "El conector -는데도",
+            "El conector -(으)ㄹ지라도",
+            "Diferencia entre -지만 y -는데",
+            "Vocabulario de matices de contraste",
+            "Redactar un párrafo con contraste y concesión"
+          ],
+          "prerequisites": ["ko-b1-viajes-alojamiento"]
+        },
+        {
+          "id": "ko-b1-medios-noticias",
+          "title": "Medios de comunicación y noticias sencillas",
+          "targetTitle": "언론과 간단한 뉴스",
+          "description": "Vas a aprender vocabulario de medios de comunicación y a entender titulares y noticias sencillas en coreano. Esto te va a servir para empezar a consumir contenido real de noticieros coreanos.",
+          "subtopics": [
+            "Vocabulario de medios de comunicación",
+            "Estructura de un titular de noticia",
+            "Vocabulario de noticias de actualidad",
+            "Comprensión de una noticia corta",
+            "Resumir una noticia con tus palabras"
+          ],
+          "prerequisites": ["ko-b1-comparar-contraste"]
+        },
+        {
+          "id": "ko-b1-cultura-coreana",
+          "title": "Cultura coreana cotidiana y festividades",
+          "targetTitle": "한국 문화와 명절",
+          "description": "Vas a aprender sobre las festividades y costumbres cotidianas más importantes de la cultura coreana. Te va a servir para entender referencias culturales comunes en conversaciones y medios coreanos.",
+          "subtopics": [
+            "Las festividades principales: 설날 y 추석",
+            "Costumbres de etiqueta social coreana",
+            "Vocabulario de celebraciones familiares",
+            "Comida tradicional de festividades",
+            "Describir una festividad coreana con tus palabras"
+          ],
+          "prerequisites": ["ko-b1-medios-noticias"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "ko-b2-registro-formal",
+          "title": "El registro formal (합니다체) y sus usos",
+          "targetTitle": "합니다체의 사용",
+          "description": "Vas a aprender a usar el registro formal 합니다체 y a identificar en qué contextos reemplaza al 해요체. Esto te va a servir para comunicarte apropiadamente en situaciones oficiales, laborales y académicas.",
+          "subtopics": [
+            "Conjugación del presente en 합니다체",
+            "Conjugación del pasado y futuro en 합니다체",
+            "Contextos de uso de 합니다체 frente a 해요체",
+            "Formalidad en anuncios y discursos públicos",
+            "Redactar un texto breve en registro formal"
+          ],
+          "prerequisites": ["ko-b1-cultura-coreana"]
+        },
+        {
+          "id": "ko-b2-nominalizacion",
+          "title": "Nominalización y sustantivación de oraciones",
+          "targetTitle": "명사화 표현 -기, -음/ㅁ",
+          "description": "Vas a aprender a transformar oraciones verbales en sustantivos usando las formas nominalizadoras del coreano. Te va a servir para escribir con un estilo más formal y abstracto, típico de textos académicos.",
+          "subtopics": [
+            "La nominalización con -기",
+            "La nominalización con -음/ㅁ",
+            "Diferencia de uso entre -기 y -음/ㅁ",
+            "Nominalización en títulos y encabezados",
+            "Redactar oraciones nominalizadas formales"
+          ],
+          "prerequisites": ["ko-b2-registro-formal"]
+        },
+        {
+          "id": "ko-b2-voz-pasiva",
+          "title": "Voz pasiva y causativa",
+          "targetTitle": "피동과 사동 표현",
+          "description": "Vas a aprender a formar y usar la voz pasiva y causativa en coreano, tanto con sufijos como con verbos auxiliares. Esto te va a servir para describir procesos y relaciones de causa de forma más precisa.",
+          "subtopics": [
+            "Voz pasiva con sufijos -이/히/리/기",
+            "Voz pasiva con -아/어지다",
+            "Voz causativa con sufijos -이/히/리/기",
+            "Voz causativa con -게 하다",
+            "Práctica de transformación de activa a pasiva"
+          ],
+          "prerequisites": ["ko-b2-nominalizacion"]
+        },
+        {
+          "id": "ko-b2-argumentacion",
+          "title": "Argumentar y defender una postura",
+          "targetTitle": "논증과 입장 옹호",
+          "description": "Vas a aprender estructuras para presentar argumentos, justificarlos y defender tu postura frente a una objeción. Te va a servir para participar en discusiones formales e informales con más solidez.",
+          "subtopics": [
+            "Presentar un argumento con estructura clara",
+            "Justificar con ejemplos y evidencia",
+            "Responder a una objeción",
+            "Vocabulario de argumentación formal",
+            "Armar un argumento completo por escrito"
+          ],
+          "prerequisites": ["ko-b2-voz-pasiva"]
+        },
+        {
+          "id": "ko-b2-conectores-avanzados",
+          "title": "Conectores avanzados de causa, concesión y contraste",
+          "targetTitle": "고급 연결어미: 원인, 양보, 대조",
+          "description": "Vas a profundizar en conectores gramaticales más sofisticados para expresar causa, concesión y contraste en textos complejos. Esto te va a servir para redactar y entender textos con argumentación elaborada.",
+          "subtopics": [
+            "El conector -(으)ㄴ/는 만큼",
+            "El conector -(으)므로",
+            "El conector -(으)ㅁ에도 불구하고",
+            "El conector -거니와",
+            "Práctica de redacción con conectores avanzados"
+          ],
+          "prerequisites": ["ko-b2-argumentacion"]
+        },
+        {
+          "id": "ko-b2-debate-opinion",
+          "title": "Debate formal y expresión de matices de opinión",
+          "targetTitle": "공식 토론과 의견의 미묘한 표현",
+          "description": "Vas a aprender a participar en un debate formal, matizando tu opinión con expresiones de probabilidad y certeza. Te va a servir para sonar más persuasivo y preciso en discusiones serias.",
+          "subtopics": [
+            "Expresiones de certeza y probabilidad",
+            "Matizar una opinión con 아마, 반드시, 틀림없이",
+            "Estructura de un debate formal",
+            "Vocabulario de moderación y turno de palabra",
+            "Simulación de un debate formal"
+          ],
+          "prerequisites": ["ko-b2-conectores-avanzados"]
+        },
+        {
+          "id": "ko-b2-escritura-academica",
+          "title": "Introducción a la escritura académica y ensayos cortos",
+          "targetTitle": "학술적 글쓰기와 짧은 에세이",
+          "description": "Vas a aprender la estructura básica de un ensayo académico en coreano, con introducción, desarrollo y conclusión. Esto te va a servir para redactar textos argumentativos con un formato claro y ordenado.",
+          "subtopics": [
+            "Estructura de introducción, desarrollo y conclusión",
+            "Vocabulario de conectores académicos",
+            "Redactar una introducción con tesis clara",
+            "Redactar un párrafo de desarrollo con evidencia",
+            "Redactar una conclusión coherente"
+          ],
+          "prerequisites": ["ko-b2-debate-opinion"]
+        },
+        {
+          "id": "ko-b2-noticias-analisis",
+          "title": "Análisis de noticias y editoriales",
+          "targetTitle": "뉴스와 사설 분석",
+          "description": "Vas a aprender a leer y analizar críticamente noticias y editoriales coreanos de mediana complejidad. Te va a servir para entender distintos puntos de vista sobre un mismo tema de actualidad.",
+          "subtopics": [
+            "Vocabulario de editoriales de opinión",
+            "Identificar la postura del autor",
+            "Vocabulario de política y economía básica",
+            "Comparar dos noticias sobre el mismo tema",
+            "Redactar un comentario crítico sobre una noticia"
+          ],
+          "prerequisites": ["ko-b2-escritura-academica"]
+        },
+        {
+          "id": "ko-b2-problemas-sociales",
+          "title": "Problemas sociales y vocabulario abstracto",
+          "targetTitle": "사회 문제와 추상적 어휘",
+          "description": "Vas a aprender vocabulario abstracto para hablar de problemas sociales como la desigualdad, la educación o el envejecimiento poblacional. Esto te va a servir para discutir temas de relevancia social con más profundidad.",
+          "subtopics": [
+            "Vocabulario de desigualdad y pobreza",
+            "Vocabulario de educación y empleo",
+            "Vocabulario de envejecimiento poblacional",
+            "Expresar causas y soluciones a un problema social",
+            "Debatir sobre un problema social actual"
+          ],
+          "prerequisites": ["ko-b2-noticias-analisis"]
+        },
+        {
+          "id": "ko-b2-medio-ambiente",
+          "title": "Medio ambiente y sostenibilidad",
+          "targetTitle": "환경과 지속 가능성",
+          "description": "Vas a aprender vocabulario y estructuras para hablar del cambio climático y la sostenibilidad ambiental. Te va a servir para participar en conversaciones sobre un tema global cada vez más presente.",
+          "subtopics": [
+            "Vocabulario de cambio climático",
+            "Vocabulario de reciclaje y consumo responsable",
+            "Expresar causas del deterioro ambiental",
+            "Proponer soluciones ambientales",
+            "Redactar un texto de opinión sobre sostenibilidad"
+          ],
+          "prerequisites": ["ko-b2-problemas-sociales"]
+        },
+        {
+          "id": "ko-b2-tecnologia-sociedad",
+          "title": "Tecnología y su impacto en la sociedad",
+          "targetTitle": "기술과 사회에 미치는 영향",
+          "description": "Vas a aprender vocabulario sobre tecnología, inteligencia artificial y redes sociales, y a discutir su impacto en la vida cotidiana. Esto te va a servir para seguir el ritmo de conversaciones sobre temas actuales y tecnológicos.",
+          "subtopics": [
+            "Vocabulario de tecnología e innovación",
+            "Vocabulario de redes sociales",
+            "Ventajas y desventajas de la inteligencia artificial",
+            "Expresar opinión sobre el uso de la tecnología",
+            "Debatir sobre el futuro de la tecnología"
+          ],
+          "prerequisites": ["ko-b2-medio-ambiente"]
+        },
+        {
+          "id": "ko-b2-expresiones-idiomaticas-intro",
+          "title": "Expresiones idiomáticas y refranes de uso frecuente",
+          "targetTitle": "자주 쓰는 관용 표현과 속담",
+          "description": "Vas a aprender las expresiones idiomáticas y refranes coreanos más usados en la conversación cotidiana. Te va a servir para entender chistes, referencias culturales y hablar de forma más natural.",
+          "subtopics": [
+            "Expresiones idiomáticas con partes del cuerpo",
+            "Refranes coreanos más comunes",
+            "Expresiones idiomáticas de la vida diaria",
+            "Uso de expresiones en contexto conversacional",
+            "Práctica de reconocimiento de modismos en diálogos"
+          ],
+          "prerequisites": ["ko-b2-tecnologia-sociedad"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "ko-c1-matices-registro",
+          "title": "Matices de registro: de lo íntimo a lo protocolar",
+          "targetTitle": "말투의 미묘한 차이: 반말부터 격식체까지",
+          "description": "Vas a profundizar en los matices de registro que existen entre el habla íntima, el 해요체 cotidiano y el 합니다체 protocolar. Esto te va a servir para adaptar tu forma de hablar según el contexto social exacto en el que te encontrés.",
+          "subtopics": [
+            "Repaso y profundización del 반말 íntimo",
+            "Transiciones de registro según la relación social",
+            "Errores comunes de registro y cómo evitarlos",
+            "El registro protocolar en ceremonias y discursos",
+            "Práctica de cambio de registro según contexto"
+          ],
+          "prerequisites": ["ko-b2-expresiones-idiomaticas-intro"]
+        },
+        {
+          "id": "ko-c1-lenguaje-literario",
+          "title": "Introducción al lenguaje literario y poético",
+          "targetTitle": "문학적, 시적 언어 입문",
+          "description": "Vas a aprender rasgos del lenguaje literario coreano, como metáforas, tiempos verbales especiales y estructuras poéticas. Te va a servir para leer fragmentos de literatura coreana con mayor comprensión.",
+          "subtopics": [
+            "Rasgos del estilo narrativo literario",
+            "Tiempos verbales propios de la narrativa escrita",
+            "Metáforas y figuras retóricas comunes",
+            "Lectura guiada de un fragmento literario corto",
+            "Análisis de un poema breve coreano"
+          ],
+          "prerequisites": ["ko-c1-matices-registro"]
+        },
+        {
+          "id": "ko-c1-coreano-negocios",
+          "title": "Coreano de negocios y correspondencia formal",
+          "targetTitle": "비즈니스 한국어와 공식 서신",
+          "description": "Vas a aprender el vocabulario y las fórmulas típicas de la correspondencia comercial y las reuniones de negocios en coreano. Esto te va a servir para comunicarte profesionalmente en un entorno corporativo coreano.",
+          "subtopics": [
+            "Vocabulario de reuniones de negocios",
+            "Fórmulas de correos electrónicos formales",
+            "Vocabulario de contratos y propuestas",
+            "Expresiones de cortesía comercial",
+            "Redactar un correo de negocios completo"
+          ],
+          "prerequisites": ["ko-c1-lenguaje-literario"]
+        },
+        {
+          "id": "ko-c1-humor-ironia",
+          "title": "Humor, ironía y sarcasmo en coreano",
+          "targetTitle": "한국어의 유머, 반어와 냉소",
+          "description": "Vas a aprender a reconocer y usar el humor, la ironía y el sarcasmo según los códigos culturales coreanos. Te va a servir para entender chistes y matices de tono que no son literales.",
+          "subtopics": [
+            "Marcadores lingüísticos de ironía",
+            "Humor en la conversación cotidiana coreana",
+            "Sarcasmo y su entonación característica",
+            "Juegos de palabras frecuentes",
+            "Reconocer humor e ironía en un diálogo real"
+          ],
+          "prerequisites": ["ko-c1-coreano-negocios"]
+        },
+        {
+          "id": "ko-c1-dialectos-regionales",
+          "title": "Dialectos regionales y variación lingüística",
+          "targetTitle": "지역 방언과 언어 변이",
+          "description": "Vas a conocer los principales dialectos regionales de Corea y sus diferencias más notorias respecto al estándar de Seúl. Esto te va a servir para entender a hablantes de distintas regiones en situaciones reales.",
+          "subtopics": [
+            "El dialecto de Gyeongsang",
+            "El dialecto de Jeolla",
+            "El dialecto de Jeju y su particularidad",
+            "Diferencias de entonación entre dialectos",
+            "Reconocer frases dialectales en audio real"
+          ],
+          "prerequisites": ["ko-c1-humor-ironia"]
+        },
+        {
+          "id": "ko-c1-modismos-avanzados",
+          "title": "Modismos y expresiones idiomáticas avanzadas",
+          "targetTitle": "고급 관용 표현과 숙어",
+          "description": "Vas a ampliar tu repertorio de modismos avanzados, muchos de origen clásico o literario, usados en contextos cultos. Te va a servir para sonar más natural y matizado en conversaciones con hablantes nativos avanzados.",
+          "subtopics": [
+            "Modismos de origen clásico chino (한자성어)",
+            "Modismos de uso periodístico",
+            "Modismos de uso en discursos formales",
+            "Expresiones idiomáticas de doble sentido",
+            "Práctica de uso de modismos en contexto"
+          ],
+          "prerequisites": ["ko-c1-dialectos-regionales"]
+        },
+        {
+          "id": "ko-c1-escritura-persuasiva",
+          "title": "Escritura persuasiva y retórica",
+          "targetTitle": "설득적 글쓰기와 수사법",
+          "description": "Vas a aprender técnicas retóricas para persuadir a un lector u oyente en textos y discursos coreanos. Esto te va a servir para redactar textos de opinión y discursos con mayor impacto argumentativo.",
+          "subtopics": [
+            "Técnicas retóricas de persuasión",
+            "Estructura de un discurso persuasivo",
+            "Vocabulario de apelación emocional y lógica",
+            "Redactar un artículo de opinión persuasivo",
+            "Presentar oralmente un argumento persuasivo"
+          ],
+          "prerequisites": ["ko-c1-modismos-avanzados"]
+        },
+        {
+          "id": "ko-c1-presentaciones-academicas",
+          "title": "Presentaciones académicas y defensa de proyectos",
+          "targetTitle": "학술 발표와 프로젝트 발표",
+          "description": "Vas a aprender a estructurar y presentar un trabajo académico o profesional ante una audiencia coreana. Te va a servir para defender ideas y responder preguntas con fluidez en un contexto formal.",
+          "subtopics": [
+            "Estructura de una presentación académica",
+            "Vocabulario de gráficos y datos",
+            "Expresiones para responder preguntas difíciles",
+            "Lenguaje corporal y entonación formal",
+            "Simulación completa de una presentación académica"
+          ],
+          "prerequisites": ["ko-c1-escritura-persuasiva"]
+        },
+        {
+          "id": "ko-c1-subtexto-cultural",
+          "title": "Subtexto cultural y comunicación implícita",
+          "targetTitle": "문화적 함의와 암묵적 의사소통",
+          "description": "Vas a aprender a interpretar lo que los coreanos comunican de forma implícita, sin decirlo directamente, según códigos culturales como el 눈치. Esto te va a servir para evitar malentendidos en situaciones sociales delicadas.",
+          "subtopics": [
+            "El concepto de 눈치 y su importancia social",
+            "Comunicación indirecta en el rechazo y el desacuerdo",
+            "Silencios y pausas con significado cultural",
+            "Interpretar mensajes implícitos en diálogos reales",
+            "Práctica de respuesta culturalmente apropiada"
+          ],
+          "prerequisites": ["ko-c1-presentaciones-academicas"]
+        },
+        {
+          "id": "ko-c1-generos-textuales",
+          "title": "Géneros textuales: ensayo, crónica y reseña",
+          "targetTitle": "텍스트 장르: 에세이, 기사와 서평",
+          "description": "Vas a aprender las características y estructuras de distintos géneros textuales coreanos, como el ensayo, la crónica periodística y la reseña. Esto te va a servir para producir y comprender textos variados según su propósito comunicativo.",
+          "subtopics": [
+            "Estructura y estilo del ensayo personal",
+            "Estructura y estilo de la crónica periodística",
+            "Estructura y estilo de la reseña crítica",
+            "Diferencias de registro entre los tres géneros",
+            "Redactar un texto breve en el género elegido"
+          ],
+          "prerequisites": ["ko-c1-subtexto-cultural"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "ko-c2-hanja-avanzado",
+          "title": "Hanja avanzado y vocabulario sino-coreano culto",
+          "targetTitle": "고급 한자와 한자어 어휘",
+          "description": "Vas a profundizar en los caracteres hanja más frecuentes en textos académicos y profesionales, y en el vocabulario sino-coreano culto que se deriva de ellos. Esto te va a servir para comprender vocabulario especializado y textos de nivel universitario.",
+          "subtopics": [
+            "Raíces hanja más frecuentes en vocabulario culto",
+            "Vocabulario sino-coreano de ámbito académico",
+            "Vocabulario sino-coreano de ámbito legal y administrativo",
+            "Reconocer significado por componentes hanja",
+            "Práctica de lectura de un texto con vocabulario hanja denso"
+          ],
+          "prerequisites": ["ko-c1-generos-textuales"]
+        },
+        {
+          "id": "ko-c2-traduccion-interpretacion",
+          "title": "Nociones de traducción e interpretación",
+          "targetTitle": "번역과 통역의 기초",
+          "description": "Vas a aprender técnicas básicas de traducción e interpretación entre el español y el coreano, con atención a los matices culturales. Te va a servir para mediar entre ambos idiomas de forma precisa en contextos reales.",
+          "subtopics": [
+            "Técnicas de traducción de textos cortos",
+            "Problemas frecuentes de equivalencia cultural",
+            "Interpretación consecutiva básica",
+            "Vocabulario especializado de traducción",
+            "Práctica de traducción de un texto real"
+          ],
+          "prerequisites": ["ko-c2-hanja-avanzado"]
+        },
+        {
+          "id": "ko-c2-coreano-especializado",
+          "title": "Coreano especializado por disciplinas profesionales",
+          "targetTitle": "전문 분야별 한국어",
+          "description": "Vas a aprender vocabulario y estructuras específicas de disciplinas como derecho, medicina, economía o tecnología. Esto te va a servir para desenvolverte en conversaciones y textos de tu campo profesional específico.",
+          "subtopics": [
+            "Vocabulario especializado de derecho y economía",
+            "Vocabulario especializado de medicina",
+            "Vocabulario especializado de ingeniería y tecnología",
+            "Lectura de un texto profesional especializado",
+            "Práctica oral en un contexto profesional específico"
+          ],
+          "prerequisites": ["ko-c2-traduccion-interpretacion"]
+        },
+        {
+          "id": "ko-c2-debate-nativo",
+          "title": "Debate de nivel nativo y oratoria",
+          "targetTitle": "원어민 수준의 토론과 연설",
+          "description": "Vas a perfeccionar tu capacidad de debatir y dar discursos con la fluidez y naturalidad de un hablante nativo. Te va a servir para participar en discusiones de alto nivel sin perder matices ni precisión.",
+          "subtopics": [
+            "Técnicas avanzadas de oratoria",
+            "Estrategias de refutación en debate",
+            "Manejo de la improvisación en discurso",
+            "Vocabulario de alto registro para debates",
+            "Simulación de un debate de nivel nativo"
+          ],
+          "prerequisites": ["ko-c2-coreano-especializado"]
+        },
+        {
+          "id": "ko-c2-edicion-correccion",
+          "title": "Edición y corrección de textos en coreano",
+          "targetTitle": "한국어 텍스트의 편집과 교정",
+          "description": "Vas a aprender a revisar, corregir y mejorar textos en coreano, prestando atención a estilo, coherencia y registro. Esto te va a servir para pulir tus propios escritos o los de otras personas con criterio profesional.",
+          "subtopics": [
+            "Criterios de corrección de estilo",
+            "Errores frecuentes de coherencia textual",
+            "Ajuste de registro según el público",
+            "Herramientas y convenciones de edición",
+            "Práctica de corrección de un texto completo"
+          ],
+          "prerequisites": ["ko-c2-debate-nativo"]
+        },
+        {
+          "id": "ko-c2-mediacion-intercultural",
+          "title": "Mediación intercultural y malentendidos comunicativos",
+          "targetTitle": "문화 간 중재와 의사소통 오해",
+          "description": "Vas a aprender a identificar y resolver malentendidos interculturales entre hablantes de coreano y de español. Te va a servir para actuar como puente comunicativo en situaciones de choque cultural.",
+          "subtopics": [
+            "Fuentes comunes de malentendidos interculturales",
+            "Estrategias de mediación en conflictos comunicativos",
+            "Diferencias de comunicación directa e indirecta",
+            "Vocabulario de mediación y resolución de conflictos",
+            "Simulación de mediación intercultural"
+          ],
+          "prerequisites": ["ko-c2-edicion-correccion"]
+        },
+        {
+          "id": "ko-c2-escritura-creativa",
+          "title": "Escritura creativa avanzada",
+          "targetTitle": "고급 창작 글쓰기",
+          "description": "Vas a aprender técnicas de escritura creativa en coreano para producir relatos, ensayos personales o guiones breves. Esto te va a servir para expresar tu voz propia con recursos estilísticos variados en coreano.",
+          "subtopics": [
+            "Técnicas de construcción de personajes y voz narrativa",
+            "Recursos estilísticos para la escritura creativa",
+            "Estructura de un relato corto",
+            "Redacción de un relato o ensayo creativo propio",
+            "Revisión y pulido de un texto creativo"
+          ],
+          "prerequisites": ["ko-c2-mediacion-intercultural"]
+        },
+        {
+          "id": "ko-c2-coreano-clasico-intro",
+          "title": "Introducción al coreano clásico y textos históricos",
+          "targetTitle": "고전 한국어와 역사적 텍스트 입문",
+          "description": "Vas a tener una primera aproximación al coreano clásico (고어) y a textos históricos relevantes de la cultura coreana. Te va a servir para comprender referencias históricas y lingüísticas que aparecen en textos cultos contemporáneos.",
+          "subtopics": [
+            "Rasgos básicos del coreano clásico (고어)",
+            "Diferencias entre coreano clásico y moderno",
+            "Lectura guiada de un fragmento histórico",
+            "Vocabulario histórico y cultural relevante",
+            "Comentario final sobre la evolución del idioma coreano"
+          ],
+          "prerequisites": ["ko-c2-escritura-creativa"]
+        }
+      ]
+    }
+  ]
+}

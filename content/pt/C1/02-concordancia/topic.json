@@ -30,7 +30,8 @@
         "Sujeto compuesto antes del verbo: plural. O diretor e os alunos chegaram.",
         "Sujeto compuesto después del verbo: plural o concordancia con el más cercano. Chegaram o diretor e os alunos / Chegou o diretor e os alunos.",
         "Pronombres de personas distintas: manda la primera persona sobre las demás. Eu e você vamos. Você e ele vão.",
-        "A gente lleva verbo en tercera del singular: a gente vai, a gente fez. 'A gente vamos' es popular y se considera un error."
+        "A gente lleva verbo en tercera del singular: a gente vai, a gente fez. 'A gente vamos' es popular y se considera un error.",
+        "En español, cuando el sujeto está compuesto por pronombres de distinta persona, el verbo también concuerda con la de mayor jerarquía (yo y vos vamos), igual que en portugués (eu e você vamos); la diferencia aparece con 'a gente', que en portugués lleva el verbo en tercera persona del singular (a gente vai) aunque signifique 'nosotros', algo que no tiene equivalente directo en español."
       ],
       "examples": [
         {
@@ -44,6 +45,26 @@
         {
           "target": "A gente vai se encontrar na praça.",
           "es": "Nos vamos a encontrar en la plaza."
+        },
+        {
+          "target": "O professor e os alunos organizaram a feira de ciências.",
+          "es": "El profesor y los alumnos organizaron la feria de ciencias."
+        },
+        {
+          "target": "Chegou o diretor e os alunos atrás dele.",
+          "es": "Llegó el director y los alumnos detrás de él."
+        },
+        {
+          "target": "Você e eu vamos resolver isso juntos.",
+          "es": "Vos y yo vamos a resolver esto juntos."
+        },
+        {
+          "target": "A gente combinou de se encontrar depois do trabalho.",
+          "es": "Quedamos en encontrarnos después del trabajo."
+        },
+        {
+          "target": "Nem o chefe nem os funcionários sabiam da decisão.",
+          "es": "Ni el jefe ni los empleados sabían de la decisión."
         }
       ],
       "commonMistakes": [
@@ -56,6 +77,11 @@
           "wrong": "Eu e você vão juntos.",
           "right": "Eu e você vamos juntos.",
           "why": "Si en el sujeto aparece eu, el verbo va en primera persona del plural."
+        },
+        {
+          "wrong": "Nem o chefe nem os funcionários sabia da decisão.",
+          "right": "Nem o chefe nem os funcionários sabiam da decisão.",
+          "why": "Con sujeto compuesto unido por 'nem...nem', el verbo va en plural, igual que con otras conjunciones de sujeto compuesto."
         }
       ],
       "chunks": [
@@ -110,7 +136,8 @@
         "Fazer con tiempo transcurrido o clima, también en singular: Faz dois anos que moro aqui. Fazia dias que chovia.",
         "Colectivo + de + plural (a maioria dos, grande parte dos): singular o plural. A maioria dos alunos passou / passaram.",
         "Porcentajes: el verbo concuerda con el número o con lo que sigue. 1% da população votou. 30% dos eleitores votaram.",
-        "Mais de um va en singular: Mais de um candidato desistiu."
+        "Mais de um va en singular: Mais de um candidato desistiu.",
+        "En español, 'haber' impersonal también es invariable ('había muchas personas', nunca 'habían'), igual que en portugués con haver en este sentido; la diferencia aparece con 'hacer' en expresiones de tiempo, que en portugués con fazer queda siempre en singular (faz dois anos), sin la variación que a veces se escucha de forma incorrecta como 'fazem dois anos'."
       ],
       "examples": [
         {
@@ -124,6 +151,26 @@
         {
           "target": "Mais de um funcionário reclamou do horário.",
           "es": "Más de un empleado se quejó del horario."
+        },
+        {
+          "target": "A maioria dos funcionários concordou com a proposta.",
+          "es": "La mayoría de los empleados estuvo de acuerdo con la propuesta."
+        },
+        {
+          "target": "Grande parte das lojas fechou durante a pandemia.",
+          "es": "Gran parte de los comercios cerró durante la pandemia."
+        },
+        {
+          "target": "30% dos moradores participaram da reunião.",
+          "es": "El 30% de los vecinos participó de la reunión."
+        },
+        {
+          "target": "Deve haver uma explicação para isso.",
+          "es": "Debe haber una explicación para esto."
+        },
+        {
+          "target": "Fazia anos que eles não se falavam.",
+          "es": "Hacía años que ellos no se hablaban."
         }
       ],
       "commonMistakes": [
@@ -136,6 +183,11 @@
           "wrong": "Fazem dois anos que moro aqui.",
           "right": "Faz dois anos que moro aqui.",
           "why": "Fazer con tiempo transcurrido es impersonal: siempre faz, como 'hace' en español."
+        },
+        {
+          "wrong": "Deve haverem soluções para esse problema.",
+          "right": "Deve haver soluções para esse problema.",
+          "why": "Haver con sentido de existir es impersonal y siempre queda en singular, incluso dentro de una perífrasis con 'deve'."
         }
       ],
       "chunks": [
@@ -190,7 +242,8 @@
         "Se pasivo: el verbo concuerda (Vendem-se casas). Se con preposición: singular (Trata-se de casos graves, Precisa-se de técnicos).",
         "Ser con horas, fechas y distancias concuerda con el número: São duas horas. É uma hora. É meio-dia e meia.",
         "Con cantidades vistas como un todo, ser queda en singular: Dez reais é pouco. Dois quilos é demais.",
-        "Con que, el verbo concuerda con el pronombre: Fui eu que fiz. Con quem, va en tercera persona (o con el pronombre): Fui eu quem fez."
+        "Con que, el verbo concuerda con el pronombre: Fui eu que fiz. Con quem, va en tercera persona (o con el pronombre): Fui eu quem fez.",
+        "En español la pasiva con 'se' también concuerda con el objeto ('se venden casas'), igual que en portugués (vendem-se casas); la diferencia está en construcciones con 'precisar' o 'tratar' seguidas de preposición, que en portugués quedan fijas en singular (precisa-se de, trata-se de) aunque lo que sigue esté en plural."
       ],
       "examples": [
         {
@@ -204,6 +257,26 @@
         {
           "target": "Fomos nós que organizamos a festa.",
           "es": "Fuimos nosotros los que organizamos la fiesta."
+        },
+        {
+          "target": "Vendem-se apartamentos na praia.",
+          "es": "Se venden departamentos en la playa."
+        },
+        {
+          "target": "Precisa-se de voluntários para o evento.",
+          "es": "Se necesitan voluntarios para el evento."
+        },
+        {
+          "target": "Cinco quilos é muito para carregar sozinho.",
+          "es": "Cinco kilos es mucho para cargar solo."
+        },
+        {
+          "target": "Foi você quem resolveu o problema.",
+          "es": "Fuiste vos quien resolvió el problema."
+        },
+        {
+          "target": "São dez horas e a loja ainda está fechada.",
+          "es": "Son las diez y el negocio todavía está cerrado."
         }
       ],
       "commonMistakes": [
@@ -216,6 +289,11 @@
           "wrong": "Fui eu que fez o bolo.",
           "right": "Fui eu que fiz o bolo.",
           "why": "Con que, el verbo concuerda con el pronombre: eu fiz."
+        },
+        {
+          "wrong": "Vende-se casas no litoral.",
+          "right": "Vendem-se casas no litoral.",
+          "why": "En la pasiva con se, el verbo concuerda con lo que se vende; como 'casas' está en plural, el verbo también va en plural."
         }
       ],
       "chunks": [
@@ -270,7 +348,8 @@
         "Anexo, incluso y obrigado concuerdan: Seguem anexas as fotos. Ela disse: obrigada. En cambio, em anexo no cambia: Segue em anexo a planilha.",
         "Menos no cambia nunca: menos pessoas. Bastante concuerda solo como adjetivo: bastantes livros, pero eles estudam bastante.",
         "É proibido, é necessário, é bom: sin artículo quedan en masculino (É proibido entrada); con artículo, concuerdan (É proibida a entrada).",
-        "Adjetivo después de varios sustantivos: plural o concordancia con el más cercano: camisa e calça brancas / camisa e calça branca."
+        "Adjetivo después de varios sustantivos: plural o concordancia con el más cercano: camisa e calça brancas / camisa e calça branca.",
+        "En español 'medio' cambia según la función igual que en portugués meio: como adverbio es invariable ('está medio cansada'), pero como adjetivo concuerda ('media hora'); la diferencia es que en portugués palabras como anexo, incluso u obrigado también concuerdan en género y número cuando funcionan como adjetivo, algo que en español no siempre se nota tan claramente."
       ],
       "examples": [
         {
@@ -284,6 +363,26 @@
         {
           "target": "É proibida a entrada de animais.",
           "es": "Está prohibida la entrada de animales."
+        },
+        {
+          "target": "Os documentos seguem anexos a este e-mail.",
+          "es": "Los documentos van adjuntos a este correo."
+        },
+        {
+          "target": "Ele comprou meia dúzia de ovos.",
+          "es": "Compró media docena de huevos."
+        },
+        {
+          "target": "Há menos problemas do que esperaávamos.",
+          "es": "Hay menos problemas de los que esperábamos."
+        },
+        {
+          "target": "Eles estudaram bastante para a prova.",
+          "es": "Ellos estudiaron bastante para el examen."
+        },
+        {
+          "target": "Camisa e calça brancas combinam bem com esse casaco.",
+          "es": "Camisa y pantalón blancos combinan bien con ese abrigo."
         }
       ],
       "commonMistakes": [
@@ -296,6 +395,11 @@
           "wrong": "Segue anexo as fotos.",
           "right": "Seguem anexas as fotos.",
           "why": "Anexo es adjetivo y concuerda con fotos, y seguir va en plural. Si querés una forma fija, usá em anexo: Seguem em anexo as fotos."
+        },
+        {
+          "wrong": "Ela comprou bastantes pão.",
+          "right": "Ela comprou bastante pão.",
+          "why": "Bastante como adverbio delante de un sustantivo incontable como 'pão' no concuerda; solo concuerda cuando funciona como adjetivo delante de un sustantivo contable plural, como 'bastantes livros'."
         }
       ],
       "chunks": [
@@ -350,7 +454,8 @@
         "Porcentajes y colectivos: 45% dos entrevistados afirmaram..., A maioria prefere..., Grande parte dos usuários...",
         "Existencia y tiempo: Houve um aumento..., Faz dois anos que..., Há poucos dados sobre...",
         "Fórmulas de informe: Segundo a pesquisa, Os resultados indicam que, Cabe destacar que.",
-        "El porcentaje suele ir sin artículo: 62% dos entrevistados. Si lo ponés, va en plural: os 62%."
+        "El porcentaje suele ir sin artículo: 62% dos entrevistados. Si lo ponés, va en plural: os 62%.",
+        "En español decimos 'el 62% de los entrevistados aprobó' con el verbo en singular, concordando con 'el 62%'; en portugués, en cambio, el porcentaje suele ir sin artículo y el verbo puede concordar con el número completo o con lo que sigue: 62% dos entrevistados aprovou / aprovaram."
       ],
       "examples": [
         {
@@ -364,6 +469,26 @@
         {
           "target": "Mais de um setor relatou problemas de comunicação.",
           "es": "Más de un sector informó problemas de comunicación."
+        },
+        {
+          "target": "A pesquisa mostrou que 48% dos participantes preferem trabalhar em casa.",
+          "es": "La encuesta mostró que el 48% de los participantes prefiere trabajar desde casa."
+        },
+        {
+          "target": "Há poucos estudos sobre esse tema na região.",
+          "es": "Hay pocos estudios sobre este tema en la región."
+        },
+        {
+          "target": "Os resultados indicam que a maioria aprovou a mudança.",
+          "es": "Los resultados indican que la mayoría aprobó el cambio."
+        },
+        {
+          "target": "Cabe destacar que grande parte dos dados foi coletada online.",
+          "es": "Cabe destacar que gran parte de los datos fue recolectada online."
+        },
+        {
+          "target": "Conforme mostra o gráfico, houve um crescimento constante nos últimos anos.",
+          "es": "Según muestra el gráfico, hubo un crecimiento constante en los últimos años."
         }
       ],
       "commonMistakes": [
@@ -376,6 +501,11 @@
           "wrong": "O 62% dos entrevistados aprovou.",
           "right": "62% dos entrevistados aprovaram.",
           "why": "El porcentaje suele ir sin artículo (o con os, en plural), y el verbo concuerda con el número o con entrevistados."
+        },
+        {
+          "wrong": "Cabe destacar que a maioria dos dados foram coletados por telefone.",
+          "right": "Cabe destacar que a maioria dos dados foi coletada por telefone.",
+          "why": "Con 'a maioria de' + plural, el verbo puede ir en singular o plural, pero hay que elegir una sola concordancia para todo el predicado, incluido el participio."
         }
       ],
       "chunks": [

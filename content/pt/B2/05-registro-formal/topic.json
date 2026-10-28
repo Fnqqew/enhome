@@ -31,7 +31,8 @@
         "Saludo: Prezado senhor, Prezada senhora, Prezado João, Prezados (a un grupo). Más cercano: Caro João, Olá, João.",
         "Para abrir: Escrevo para..., Gostaria de solicitar..., Em resposta ao seu e-mail de...",
         "Para cerrar: Fico no aguardo (de seu retorno), Desde já agradeço, y la firma con Atenciosamente o Cordialmente.",
-        "Abraços o Um abraço cierran mails de trabajo con alguien conocido; Beijos, solo con amigos."
+        "Abraços o Um abraço cierran mails de trabajo con alguien conocido; Beijos, solo con amigos.",
+        "En español los mails formales suelen abrirse con 'Estimado/a' y cerrarse con 'Saludos cordiales' o 'Atentamente'; en portugués se usa 'Prezado/Prezada' para abrir y 'Atenciosamente' o 'Cordialmente' para cerrar, fórmulas que no son traducción literal pero cumplen la misma función."
       ],
       "examples": [
         {
@@ -45,6 +46,26 @@
         {
           "target": "Desde já agradeço a atenção.",
           "es": "Desde ya, muchas gracias por su atención."
+        },
+        {
+          "target": "Em resposta ao seu e-mail de ontem, envio os documentos solicitados.",
+          "es": "En respuesta a su correo de ayer, envío los documentos solicitados."
+        },
+        {
+          "target": "Gostaria de solicitar uma reunião para a próxima semana.",
+          "es": "Quisiera solicitar una reunión para la próxima semana."
+        },
+        {
+          "target": "Agradeço antecipadamente pela atenção dispensada.",
+          "es": "Agradezco de antemano la atención brindada."
+        },
+        {
+          "target": "Qualquer dúvida, estou à disposição.",
+          "es": "Cualquier duda, estoy a disposición."
+        },
+        {
+          "target": "Atenciosamente, Carlos Mendes.",
+          "es": "Atentamente, Carlos Mendes."
         }
       ],
       "commonMistakes": [
@@ -57,6 +78,11 @@
           "wrong": "Saudações cordiais, Ana",
           "right": "Atenciosamente, Ana",
           "why": "El 'saludos cordiales' del español no es la fórmula habitual: se cierra con atenciosamente o cordialmente."
+        },
+        {
+          "wrong": "Oi Sr. Silva, como vai?",
+          "right": "Prezado Sr. Silva,",
+          "why": "'Oi' es demasiado informal para abrir un mail formal; en ese registro se usa 'Prezado/Prezada' seguido del apellido."
         }
       ],
       "chunks": [
@@ -125,6 +151,26 @@
         {
           "target": "Seria possível remarcar a entrevista?",
           "es": "¿Sería posible reprogramar la entrevista?"
+        },
+        {
+          "target": "Vossa Senhoria poderia esclarecer essa dúvida?",
+          "es": "¿Usted podría aclarar esta duda?"
+        },
+        {
+          "target": "Gostaria de saber se o senhor já recebeu o relatório.",
+          "es": "Quisiera saber si usted ya recibió el informe."
+        },
+        {
+          "target": "Por gentileza, envie o documento até amanhã.",
+          "es": "Por favor, envíe el documento hasta mañana."
+        },
+        {
+          "target": "A senhora teria um tempo para me atender hoje?",
+          "es": "¿Usted tendría un tiempo para atenderme hoy?"
+        },
+        {
+          "target": "Seria possível adiar a reunião para sexta-feira?",
+          "es": "¿Sería posible postergar la reunión para el viernes?"
         }
       ],
       "commonMistakes": [
@@ -132,6 +178,16 @@
           "wrong": "A senhora quer que eu te mande o documento?",
           "right": "A senhora quer que eu lhe mande o documento?",
           "why": "Con a senhora no va te: se usa lhe o para a senhora. Mezclar tratamientos suena descuidado."
+        },
+        {
+          "wrong": "O senhor pode me dar teu telefone?",
+          "right": "O senhor pode me dar o seu telefone?",
+          "why": "Con o senhor no se usa 'teu', que corresponde a 'tu/vos'; el posesivo correcto es 'o seu' o 'do senhor'."
+        },
+        {
+          "wrong": "Você poderia me enviar o contrato, senhor?",
+          "right": "O senhor poderia me enviar o contrato?",
+          "why": "No se mezcla 'você' con el tratamiento 'senhor' en la misma oración; hay que elegir uno solo y mantenerlo."
         }
       ],
       "chunks": [
@@ -194,6 +250,26 @@
         {
           "target": "Visto que os prazos são curtos, é preciso priorizar as tarefas.",
           "es": "Dado que los plazos son cortos, hay que priorizar las tareas."
+        },
+        {
+          "target": "Além disso, a empresa investiu em novas tecnologias.",
+          "es": "Además, la empresa invirtió en nuevas tecnologías."
+        },
+        {
+          "target": "Dado que os recursos são limitados, é preciso priorizar.",
+          "es": "Dado que los recursos son limitados, hay que priorizar."
+        },
+        {
+          "target": "Por isso, muitos optaram por trabalhar de casa.",
+          "es": "Por eso, muchos optaron por trabajar desde casa."
+        },
+        {
+          "target": "Apesar das dificuldades, a equipe cumpriu o prazo.",
+          "es": "A pesar de las dificultades, el equipo cumplió el plazo."
+        },
+        {
+          "target": "Dessa forma, conseguimos reduzir os custos.",
+          "es": "De esa manera, logramos reducir los costos."
         }
       ],
       "commonMistakes": [
@@ -206,6 +282,11 @@
           "wrong": "Entretanto eu cozinho, você arruma a mesa.",
           "right": "Enquanto eu cozinho, você arruma a mesa.",
           "why": "Entretanto significa 'sin embargo'; 'mientras' es enquanto."
+        },
+        {
+          "wrong": "Apesar que o salário seja bom, o horário é cansativo.",
+          "right": "Apesar de o salário ser bom, o horário é cansativo.",
+          "why": "Apesar de va seguido de sustantivo o infinitivo, no de 'que'; para armar una cláusula con subjuntivo conviene usar 'embora'."
         }
       ],
       "chunks": [
@@ -254,7 +335,8 @@
         "Introducción con el tema y la tesis: Atualmente, discute-se muito... Na minha visão, ...",
         "Desarrollo con dos argumentos: Em primeiro lugar..., Além disso..., Por um lado... por outro...",
         "Conclusión que retoma la tesis: Portanto, Diante disso, Em suma, Dessa forma.",
-        "En textos académicos (como la redação del ENEM) se evita la primera persona: É possível afirmar que..., Observa-se que..., Cabe ressaltar que..."
+        "En textos académicos (como la redação del ENEM) se evita la primera persona: É possível afirmar que..., Observa-se que..., Cabe ressaltar que...",
+        "En español los textos de opinión también evitan la primera persona en registros académicos, usando formas como 'se observa que' o 'cabe destacar que', igual que en portugués con 'observa-se que' o 'cabe ressaltar que'; la diferencia es que en portugués estas construcciones con 'se' son todavía más frecuentes y casi obligatorias en la redação del ENEM."
       ],
       "examples": [
         {
@@ -268,6 +350,26 @@
         {
           "target": "Diante disso, conclui-se que é necessário investir em educação.",
           "es": "Frente a esto, se concluye que es necesario invertir en educación."
+        },
+        {
+          "target": "Em primeiro lugar, é preciso considerar o impacto ambiental.",
+          "es": "En primer lugar, hay que considerar el impacto ambiental."
+        },
+        {
+          "target": "Na minha visão, a tecnologia pode reduzir desigualdades.",
+          "es": "A mi parecer, la tecnología puede reducir desigualdades."
+        },
+        {
+          "target": "Observa-se que o número de usuários cresceu significativamente.",
+          "es": "Se observa que el número de usuarios creció significativamente."
+        },
+        {
+          "target": "Além disso, é fundamental investir em políticas públicas.",
+          "es": "Además, es fundamental invertir en políticas públicas."
+        },
+        {
+          "target": "Em suma, o debate sobre o tema ainda está em aberto.",
+          "es": "En suma, el debate sobre el tema todavía está abierto."
         }
       ],
       "commonMistakes": [
@@ -280,6 +382,11 @@
           "wrong": "Eu acho que a educação é importante. (en una redação)",
           "right": "É possível afirmar que a educação é importante.",
           "why": "En un texto académico se evita la primera persona y el verbo achar, que suena oral."
+        },
+        {
+          "wrong": "Eu penso que isso vai mudar tudo. (en una redação formal)",
+          "right": "Considera-se que isso pode mudar o cenário.",
+          "why": "En textos académicos como la redação se evita la primera persona; se prefieren formas impersonales como 'considera-se que' o 'é possível afirmar que'."
         }
       ],
       "chunks": [
@@ -327,7 +434,8 @@
       "keyPoints": [
         "Elegí una tesis clara y dos argumentos con ejemplos.",
         "Usá un conector distinto en cada párrafo para no repetir mas y também.",
-        "Cuidá el registro: nada de tipo, aí o a gente; preferí nós o formas impersonales."
+        "Cuidá el registro: nada de tipo, aí o a gente; preferí nós o formas impersonales.",
+        "En español evitamos muletillas como 'tipo' u 'o sea' en un texto formal y preferimos conectores como 'por un lado' o 'en síntesis'; en portugués pasa lo mismo: palabras coloquiales como tipo, aí o a gente quedan fuera del registro formal y se reemplazan por nós o formas impersonales."
       ],
       "examples": [
         {
@@ -341,6 +449,26 @@
         {
           "target": "Em suma, o modelo híbrido parece ser a solução mais equilibrada.",
           "es": "En suma, el modelo híbrido parece ser la solución más equilibrada."
+        },
+        {
+          "target": "Tendo em vista os dados apresentados, é possível afirmar que o problema é real.",
+          "es": "Teniendo en cuenta los datos presentados, se puede afirmar que el problema es real."
+        },
+        {
+          "target": "Partindo desse princípio, torna-se necessário repensar as políticas atuais.",
+          "es": "Partiendo de ese principio, se vuelve necesario repensar las políticas actuales."
+        },
+        {
+          "target": "A meu ver, a solução passa pela educação.",
+          "es": "A mi parecer, la solución pasa por la educación."
+        },
+        {
+          "target": "Em linhas gerais, o modelo apresentou resultados positivos.",
+          "es": "En líneas generales, el modelo presentó resultados positivos."
+        },
+        {
+          "target": "Levando em conta esses fatores, conclui-se que é preciso agir rápido.",
+          "es": "Teniendo en cuenta esos factores, se concluye que hay que actuar rápido."
         }
       ],
       "commonMistakes": [
@@ -353,6 +481,11 @@
           "wrong": "A gente precisa repensar o modelo.",
           "right": "Precisamos repensar o modelo.",
           "why": "En un texto formal, a gente suena oral: usá nós o una forma impersonal."
+        },
+        {
+          "wrong": "O texto deve ter tipo três parágrafos.",
+          "right": "O texto deve ter cerca de três parágrafos.",
+          "why": "La palabra 'tipo' es demasiado coloquial para un registro formal; en su lugar se usan expresiones como 'cerca de' o 'aproximadamente'."
         }
       ],
       "chunks": [

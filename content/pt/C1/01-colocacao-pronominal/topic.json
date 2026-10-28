@@ -31,7 +31,8 @@
         "Adverbios sin coma: já, sempre, ainda, aqui, talvez, também, só: Ele sempre nos ajuda. Con coma vuelve la ênclise: Aqui, trabalha-se muito.",
         "Relativos e indefinidos: que, quem, onde, tudo, alguém, todos: O livro que me deram. Tudo se resolve.",
         "Conjunciones subordinantes: quando, se, porque, embora, conforme, como: Quando o vi, sorri.",
-        "Preguntas, exclamaciones y deseos: Quem te disse isso? Deus te abençoe!"
+        "Preguntas, exclamaciones y deseos: Quem te disse isso? Deus te abençoe!",
+        "En español los pronombres átonos siempre van pegados antes del verbo conjugado (me dijo, nos ayuda) salvo con infinitivo, gerundio e imperativo afirmativo; en portugués, en cambio, la posición depende de si hay una palabra \"atractora\" antes del verbo, lo que da lugar a la próclise, la ênclise y la mesóclise."
       ],
       "examples": [
         {
@@ -45,6 +46,26 @@
         {
           "target": "Quando o encontrei, ele já tinha saído da empresa.",
           "es": "Cuando lo encontré, ya se había ido de la empresa."
+        },
+        {
+          "target": "Nunca lhe perguntei sobre isso.",
+          "es": "Nunca le pregunté sobre eso."
+        },
+        {
+          "target": "Talvez se arrependa depois.",
+          "es": "Tal vez se arrepienta después."
+        },
+        {
+          "target": "Tudo se resolveu sem problemas.",
+          "es": "Todo se resolvió sin problemas."
+        },
+        {
+          "target": "Embora me avisasse, eu não acreditei.",
+          "es": "Aunque me avisó, yo no le creí."
+        },
+        {
+          "target": "Quem te contou essa história?",
+          "es": "¿Quién te contó esa historia?"
         }
       ],
       "commonMistakes": [
@@ -57,6 +78,11 @@
           "wrong": "O livro que deram-me é ótimo.",
           "right": "O livro que me deram é ótimo.",
           "why": "El relativo que también atrae el pronombre."
+        },
+        {
+          "wrong": "Quando encontrei-o, ele já tinha saído.",
+          "right": "Quando o encontrei, ele já tinha saído.",
+          "why": "Después de una conjunción como \"quando\" el pronombre va antes del verbo (próclise), nunca después."
         }
       ],
       "chunks": [
@@ -110,7 +136,8 @@
         "La norma no permite empezar una oración con pronombre átono: Disseram-me que..., Parece-me que...",
         "Con imperativo afirmativo y con gerundio: Diga-me a verdade. Saiu, deixando-nos sem resposta.",
         "Con infinitivo impersonal, si no hay atractor: É preciso avisá-lo. Convém lembrá-los.",
-        "Con o, a, os, as cambian las formas: después de -r, -s o -z cae la letra y queda lo, la (fazê-lo, fi-lo, encontramo-la); después de sonido nasal, no, na (fazem-no, dão-na)."
+        "Con o, a, os, as cambian las formas: después de -r, -s o -z cae la letra y queda lo, la (fazê-lo, fi-lo, encontramo-la); después de sonido nasal, no, na (fazem-no, dão-na).",
+        "En español no existe una regla equivalente a la ênclise obligatoria al empezar una oración; podemos decir \"Me dijeron que...\" sin problema, mientras que en portugués formal esa misma oración exige el pronombre después del verbo: Disseram-me que..."
       ],
       "examples": [
         {
@@ -124,6 +151,26 @@
         {
           "target": "Recebi o convite e aceitei-o na hora.",
           "es": "Recibí la invitación y la acepté en el momento."
+        },
+        {
+          "target": "Convém avisá-los sobre a mudança de horário.",
+          "es": "Conviene avisarles sobre el cambio de horario."
+        },
+        {
+          "target": "Chamaram-me para participar do projeto.",
+          "es": "Me llamaron para participar del proyecto."
+        },
+        {
+          "target": "Entregue-me os documentos até sexta-feira.",
+          "es": "Entregame los documentos hasta el viernes."
+        },
+        {
+          "target": "Ele saiu, deixando-nos sem resposta nenhuma.",
+          "es": "Él se fue, dejándonos sin ninguna respuesta."
+        },
+        {
+          "target": "É necessário informá-la sobre a decisão.",
+          "es": "Es necesario informarle sobre la decisión."
         }
       ],
       "commonMistakes": [
@@ -136,6 +183,11 @@
           "wrong": "Encontramos-o na saída.",
           "right": "Encontramo-lo na saída.",
           "why": "Después de -s el verbo pierde la s y el pronombre pasa a lo."
+        },
+        {
+          "wrong": "Nos chamaram para o projeto. (no início de um relatório formal)",
+          "right": "Chamaram-nos para o projeto.",
+          "why": "En un texto formal no se empieza la oración con el pronombre átono (nos); hay que usar la ênclise y poner el pronombre después del verbo."
         }
       ],
       "chunks": [
@@ -191,7 +243,8 @@
         "El pronombre va entre la raíz y la terminación: dir-se-ia, far-lhe-ei, encontrar-nos-emos, dar-te-ia.",
         "Con o, a la raíz pierde la -r: fá-lo-ei (farei + o), dá-lo-ia (daria + o), encontrá-la-emos (encontraremos + a).",
         "Con atractor vuelve la próclise: Não lhe direi nada. Con sujeto expreso, en Brasil se acepta la próclise: Eu lhe direi.",
-        "Con futuro nunca hay ênclise: direi-lhe es un error. Hoy la mesóclise vive en contratos, discursos y literatura; en la charla suena pomposa o en broma."
+        "Con futuro nunca hay ênclise: direi-lhe es un error. Hoy la mesóclise vive en contratos, discursos y literatura; en la charla suena pomposa o en broma.",
+        "En español no existe nada parecido a la mesóclise, porque el pronombre nunca se inserta en medio del verbo; en portugués, en cambio, en el futuro do presente y el futuro do pretérito el pronombre puede ir intercalado entre la raíz y la terminación cuando no hay atractor."
       ],
       "examples": [
         {
@@ -205,6 +258,26 @@
         {
           "target": "Encontrar-nos-emos às dez, na entrada do teatro.",
           "es": "Nos encontraremos a las diez, en la entrada del teatro."
+        },
+        {
+          "target": "Dar-te-ei uma resposta até o fim da semana.",
+          "es": "Te daré una respuesta hasta el fin de semana."
+        },
+        {
+          "target": "Fá-lo-emos com muito prazer.",
+          "es": "Lo haremos con mucho gusto."
+        },
+        {
+          "target": "Poder-se-ia argumentar que a decisão foi precipitada.",
+          "es": "Se podría argumentar que la decisión fue precipitada."
+        },
+        {
+          "target": "Ver-se-á, mais adiante, que a teoria estava certa.",
+          "es": "Se verá, más adelante, que la teoría era correcta."
+        },
+        {
+          "target": "Dá-la-ia de presente se tivesse outra igual.",
+          "es": "La daría de regalo si tuviera otra igual."
         }
       ],
       "commonMistakes": [
@@ -217,6 +290,11 @@
           "wrong": "Não dir-lhe-ei nada.",
           "right": "Não lhe direi nada.",
           "why": "Não atrae el pronombre: con atractor siempre va próclise, también en futuro."
+        },
+        {
+          "wrong": "Encontrar-emos-nos às dez.",
+          "right": "Encontrar-nos-emos às dez.",
+          "why": "En la mesóclise el pronombre se intercala entre la raíz del verbo y la terminación de futuro (encontrar + nos + emos), nunca después de toda la terminación ya conjugada."
         }
       ],
       "chunks": [
@@ -264,7 +342,8 @@
         "Con auxiliar + infinitivo o gerundio, en Brasil el pronombre va entre los dos verbos, sin guion: Vou te ligar. Estou te esperando. Quero lhe dizer uma coisa.",
         "También es correcto después del infinitivo, más formal: Quero dizer-lhe uma coisa.",
         "Con auxiliar + participio, el pronombre nunca va después del participio: Eu o tinha visto, Tinha-o visto o, en Brasil, tinha me esquecido.",
-        "En la charla de Brasil la próclise se generaliza, incluso al comienzo: Me disseram que... Te amo. Se vira! Es correcto al hablar; en lo formal, ajustá."
+        "En la charla de Brasil la próclise se generaliza, incluso al comienzo: Me disseram que... Te amo. Se vira! Es correcto al hablar; en lo formal, ajustá.",
+        "En español, con un verbo auxiliar más infinitivo o gerundio, el pronombre puede ir antes del auxiliar o pegado al infinitivo/gerundio (te voy a llamar / voy a llamarte), y en portugués de Brasil pasa algo parecido: el pronombre se coloca entre los dos verbos sin guión (Vou te ligar) o después del infinitivo con guión en un registro más formal (Vou ligar-te)."
       ],
       "examples": [
         {
@@ -278,6 +357,26 @@
         {
           "target": "Eu tinha me esquecido completamente da reunião.",
           "es": "Me había olvidado por completo de la reunión."
+        },
+        {
+          "target": "Vamos lhe explicar tudo com calma.",
+          "es": "Le vamos a explicar todo con calma."
+        },
+        {
+          "target": "Ele está me ajudando com a mudança.",
+          "es": "Él me está ayudando con la mudanza."
+        },
+        {
+          "target": "Eu ia te chamar, mas o telefone não tinha sinal.",
+          "es": "Yo te iba a llamar, pero el teléfono no tenía señal."
+        },
+        {
+          "target": "Tínhamos nos encontrado antes, numa festa.",
+          "es": "Nos habíamos encontrado antes, en una fiesta."
+        },
+        {
+          "target": "Precisamos lhe avisar sobre a mudança de data.",
+          "es": "Necesitamos avisarle sobre el cambio de fecha."
         }
       ],
       "commonMistakes": [
@@ -285,6 +384,16 @@
           "wrong": "Eu tinha visto-o no jornal.",
           "right": "Eu o tinha visto no jornal.",
           "why": "El pronombre nunca va después del participio: va antes del auxiliar o pegado a él."
+        },
+        {
+          "wrong": "Eu tinha esquecido-me da reunião.",
+          "right": "Eu tinha me esquecido da reunião.",
+          "why": "Con el auxiliar \"tinha\" + participio, el pronombre nunca va después del participio; en Brasil se coloca antes, pegado al auxiliar (tinha me esquecido)."
+        },
+        {
+          "wrong": "Estou esperando-te na portaria.",
+          "right": "Estou te esperando na portaria.",
+          "why": "En el habla de Brasil, con auxiliar + gerundio, el pronombre va entre los dos verbos (estou te esperando), no pegado al gerundio con guion, que suena a portugués europeo."
         }
       ],
       "chunks": [
@@ -339,7 +448,8 @@
         "Revisá el comienzo de cada oración: Me manda... → Envie-me...; Se trata de... → Trata-se de...",
         "Cambiá ele o ela como objeto por o, a, y para ele por lhe: Vi ele → Eu o vi; Mandei para ele → Enviei-lhe.",
         "Respetá los atractores: Conforme nos informou..., Caso lhe interesse..., Não lhe foi enviado...",
-        "No abuses de la mesóclise: un mail formal de Brasil usa próclise con sujeto (Eu lhe envio) y ênclise al comenzar."
+        "No abuses de la mesóclise: un mail formal de Brasil usa próclise con sujeto (Eu lhe envio) y ênclise al comenzar.",
+        "En español no cambiamos la posición del pronombre según el registro formal o informal (siempre decimos \"le informo\" o \"se trata de\"), pero en portugués formal hay que prestar atención a la ênclise y a los atractores para que el texto no suene a conversación."
       ],
       "examples": [
         {
@@ -353,6 +463,26 @@
         {
           "target": "Trata-se de uma alteração urgente.",
           "es": "Se trata de un cambio urgente."
+        },
+        {
+          "target": "Solicito que me envie os documentos atualizados.",
+          "es": "Solicito que me envíe los documentos actualizados."
+        },
+        {
+          "target": "Caso lhe interesse, podemos agendar uma reunião.",
+          "es": "Si le interesa, podemos coordinar una reunión."
+        },
+        {
+          "target": "Informamos-lhe que o pedido foi aprovado.",
+          "es": "Le informamos que el pedido fue aprobado."
+        },
+        {
+          "target": "Não lhe foi enviado o comprovante por engano.",
+          "es": "No le fue enviado el comprobante por error."
+        },
+        {
+          "target": "Agradeceríamos se nos enviasse o parecer até amanhã.",
+          "es": "Le agradeceríamos si nos enviara el dictamen hasta mañana."
         }
       ],
       "commonMistakes": [
@@ -365,6 +495,11 @@
           "wrong": "Se trata de um caso urgente. (en un oficio)",
           "right": "Trata-se de um caso urgente.",
           "why": "En lo escrito formal no se empieza la oración con pronombre átono."
+        },
+        {
+          "wrong": "Lhe envio o contrato em anexo.",
+          "right": "Envio-lhe o contrato em anexo.",
+          "why": "En un texto formal no se empieza la oración con el pronombre átono; hay que usar la ênclise (envio-lhe) al comienzo del período."
         }
       ],
       "chunks": [

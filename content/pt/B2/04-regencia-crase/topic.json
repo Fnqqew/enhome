@@ -45,6 +45,26 @@
         {
           "target": "Ela namora o Pedro há dois anos.",
           "es": "Sale con Pedro hace dos años."
+        },
+        {
+          "target": "Esqueci o guarda-chuva em casa.",
+          "es": "Me olvidé el paraguas en casa."
+        },
+        {
+          "target": "Eu me lembro bem daquele dia.",
+          "es": "Me acuerdo bien de aquel día."
+        },
+        {
+          "target": "Ela confia muito em você.",
+          "es": "Ella confía mucho en vos."
+        },
+        {
+          "target": "Prefiro café a chá de manhã.",
+          "es": "Prefiero café antes que té a la mañana."
+        },
+        {
+          "target": "Precisamos de mais informações sobre o projeto.",
+          "es": "Necesitamos más información sobre el proyecto."
         }
       ],
       "commonMistakes": [
@@ -109,7 +129,8 @@
         "ir a: ir y volver pronto, y en lo escrito: Vou ao banco. ir para: quedarse un tiempo, y en general al hablar: Vou para casa. Ele foi para a Europa.",
         "En la charla se oye ir em: Vou no médico. Al escribir: Vou ao médico.",
         "chegar em es lo normal al hablar (Cheguei em casa); en textos formales se recomienda chegar a: Chegamos ao aeroporto às dez.",
-        "Casa, cuando es la tuya, va sin artículo: Vou para casa, Estou em casa, Saí de casa."
+        "Casa, cuando es la tuya, va sin artículo: Vou para casa, Estou em casa, Saí de casa.",
+        "En español decimos simplemente \"voy a\" sin importar si volvés enseguida o te quedás un tiempo, pero en portugués se distingue \"ir a\" (ida corta, volvés pronto) de \"ir para\" (te quedás más tiempo o te instalás)."
       ],
       "examples": [
         {
@@ -123,6 +144,26 @@
         {
           "target": "Chegamos ao hotel à meia-noite.",
           "es": "Llegamos al hotel a la medianoche."
+        },
+        {
+          "target": "Ela vai para os Estados Unidos estudar um ano.",
+          "es": "Ella se va a Estados Unidos a estudiar un año."
+        },
+        {
+          "target": "Vou ao dentista às três da tarde.",
+          "es": "Voy al dentista a las tres de la tarde."
+        },
+        {
+          "target": "Cheguei em casa exausto depois do trabalho.",
+          "es": "Llegué a casa agotado después del trabajo."
+        },
+        {
+          "target": "Vocês vão para a praia nas férias?",
+          "es": "¿Ustedes se van a la playa en las vacaciones?"
+        },
+        {
+          "target": "Chegamos ao aeroporto com uma hora de antecedência.",
+          "es": "Llegamos al aeropuerto con una hora de anticipación."
         }
       ],
       "commonMistakes": [
@@ -135,6 +176,11 @@
           "wrong": "Vou a casa.",
           "right": "Vou para casa.",
           "why": "En Brasil se dice ir para casa; vou a casa suena a Portugal."
+        },
+        {
+          "wrong": "Ela foi a Portugal para morar lá o resto da vida.",
+          "right": "Ela foi para Portugal morar lá o resto da vida.",
+          "why": "Cuando la idea es quedarse mucho tiempo o instalarse en un lugar, se usa \"ir para\" y no \"ir a\", que se reserva para estadías cortas."
         }
       ],
       "chunks": [
@@ -184,7 +230,8 @@
         "Truco: cambiá el sustantivo por uno masculino. Si queda ao, va à: Vou à praia → Vou ao parque.",
         "Nunca va antes de masculino, de verbo, de uma (salvo en la hora: à uma) ni de la mayoría de los pronombres: a pé, começar a falar, a uma amiga, a ela, a você.",
         "También se junta con aquele, aquela, aquilo: àquele, àquela, àquilo.",
-        "En Brasil se pronuncia igual que a: es solo una cuestión de escritura."
+        "En Brasil se pronuncia igual que a: es solo una cuestión de escritura.",
+        "En español no existe nada parecido a la crase, porque no fusionamos preposición y artículo en una sola palabra con tilde; en portugués, en cambio, \"a\" + \"a\" se escribe à y hay que decidir cuándo corresponde según el género y el tipo de palabra que sigue."
       ],
       "examples": [
         {
@@ -198,6 +245,26 @@
         {
           "target": "Não fui àquela festa.",
           "es": "No fui a esa fiesta."
+        },
+        {
+          "target": "Ela voltou à escola depois das férias.",
+          "es": "Ella volvió a la escuela después de las vacaciones."
+        },
+        {
+          "target": "Dei o recado à professora.",
+          "es": "Le di el mensaje a la profesora."
+        },
+        {
+          "target": "Chegamos à conclusão de que era melhor esperar.",
+          "es": "Llegamos a la conclusión de que era mejor esperar."
+        },
+        {
+          "target": "Ele se referiu à proposta anterior.",
+          "es": "Él se refirió a la propuesta anterior."
+        },
+        {
+          "target": "Voltamos àquela cidade depois de dez anos.",
+          "es": "Volvimos a aquella ciudad después de diez años."
         }
       ],
       "commonMistakes": [
@@ -210,6 +277,11 @@
           "wrong": "Fomos à pé.",
           "right": "Fomos a pé.",
           "why": "Pé es masculino: no lleva artículo femenino y no hay crase."
+        },
+        {
+          "wrong": "Dei o recado à ela.",
+          "right": "Dei o recado a ela.",
+          "why": "Antes de los pronombres como \"ela\", \"você\" y \"mim\" no se usa crase, porque esas palabras no llevan artículo."
         }
       ],
       "chunks": [
@@ -257,7 +329,8 @@
         "Horas: às três, à uma, à meia-noite, das 8h às 18h. Después de otra preposición no hay crase: para as três, desde as três, após as três. Con até es opcional.",
         "Expresiones femeninas fijas: à noite, à tarde, à direita, à esquerda, às vezes, à vontade, à toa, à vista.",
         "'A la manera de' lleva crase aunque no se vea la palabra moda: bife à milanesa, frango à passarinho.",
-        "Lugares, con el truco de la vuelta: Vou à Bahia (volto da Bahia) lleva crase; Vou a Salvador (volto de Salvador), no."
+        "Lugares, con el truco de la vuelta: Vou à Bahia (volto da Bahia) lleva crase; Vou a Salvador (volto de Salvador), no.",
+        "En español no distinguimos si un lugar lleva \"a\" o \"a la\" segun si podés decir \"vuelvo de la\", pero en portugués ese truco (volto da Bahia / volto de Salvador) es justamente el que sirve para saber si hay que poner crase antes del nombre del lugar."
       ],
       "examples": [
         {
@@ -271,6 +344,26 @@
         {
           "target": "Na semana que vem vou à Argentina e depois a Montevidéu.",
           "es": "La semana que viene voy a la Argentina y después a Montevideo."
+        },
+        {
+          "target": "O jantar foi servido à francesa.",
+          "es": "La cena se sirvió a la francesa."
+        },
+        {
+          "target": "Esse carro está à venda há duas semanas.",
+          "es": "Ese auto está en venta desde hace dos semanas."
+        },
+        {
+          "target": "Ele trabalha das 8h às 17h de segunda a sexta.",
+          "es": "Él trabaja de 8 a 17 de lunes a viernes."
+        },
+        {
+          "target": "Fomos à feira comprar frutas frescas.",
+          "es": "Fuimos a la feria a comprar fruta fresca."
+        },
+        {
+          "target": "Ela vive à procura de um emprego melhor.",
+          "es": "Ella vive en busca de un trabajo mejor."
         }
       ],
       "commonMistakes": [
@@ -335,7 +428,8 @@
       "keyPoints": [
         "Revisá los verbos con preposición: assistir à reunião, referir-se ao relatório, informar algo a alguém.",
         "Revisá cada a antes de una palabra femenina: à equipe, à diretoria, às 10h.",
-        "Expresiones de correo: em anexo, conforme combinado, referente a, devido a (referente à reunião, devido à greve)."
+        "Expresiones de correo: em anexo, conforme combinado, referente a, devido a (referente à reunião, devido à greve).",
+        "En español, al escribir un mail formal no tenemos que pensar en la crase ni en si el verbo lleva una preposición distinta a la del español; en portugués, en cambio, conviene revisar siempre esos dos puntos antes de enviar un correo, porque son los errores más comunes de los hispanohablantes."
       ],
       "examples": [
         {
@@ -349,6 +443,26 @@
         {
           "target": "Devido à greve, o evento foi transferido para as 14h.",
           "es": "Debido al paro, el evento se pasó a las 14."
+        },
+        {
+          "target": "Conforme combinado, segue em anexo o contrato assinado.",
+          "es": "Según lo acordado, adjunto el contrato firmado."
+        },
+        {
+          "target": "Gostaria de informar a todos sobre a mudança de horário.",
+          "es": "Quisiera informarles a todos sobre el cambio de horario."
+        },
+        {
+          "target": "Fico à disposição para qualquer dúvida.",
+          "es": "Quedo a disposición para cualquier duda."
+        },
+        {
+          "target": "Referente ao pedido anterior, segue a atualização.",
+          "es": "Con referencia al pedido anterior, adjunto la actualización."
+        },
+        {
+          "target": "Agradeço a atenção e aguardo o retorno.",
+          "es": "Agradezco la atención y espero la respuesta."
         }
       ],
       "commonMistakes": [
@@ -361,6 +475,11 @@
           "wrong": "Informo à todos que o prazo mudou.",
           "right": "Informo a todos que o prazo mudou.",
           "why": "Todos es masculino: no lleva crase."
+        },
+        {
+          "wrong": "Segue em anexo o relatório referente a reunião de ontem.",
+          "right": "Segue em anexo o relatório referente à reunião de ontem.",
+          "why": "Antes de \"reunião\" (sustantivo femenino) corresponde la crase, porque \"referente a\" exige la preposición \"a\" y se fusiona con el artículo \"a\" de \"a reunião\"."
         }
       ],
       "chunks": [

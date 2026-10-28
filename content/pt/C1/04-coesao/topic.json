@@ -45,6 +45,26 @@
         {
           "target": "Recebemos sua proposta e vamos analisá-la com atenção.",
           "es": "Recibimos su propuesta y la vamos a analizar con atención."
+        },
+        {
+          "target": "O relatório foi entregue ontem. Ele contém dados importantes.",
+          "es": "El informe se entregó ayer. Contiene datos importantes."
+        },
+        {
+          "target": "José Saramago ganhou o Nobel em 1998. O escritor português é muito respeitado no Brasil.",
+          "es": "José Saramago ganó el Nobel en 1998. El escritor portugués es muy respetado en Brasil."
+        },
+        {
+          "target": "O governo anunciou novas medidas. Elas entram em vigor no próximo mês.",
+          "es": "El gobierno anunció nuevas medidas. Entran en vigencia el próximo mes."
+        },
+        {
+          "target": "Comprei um notebook novo. O aparelho veio com defeito.",
+          "es": "Compré una notebook nueva. El aparato vino con un defecto."
+        },
+        {
+          "target": "A pesquisa foi publicada na revista. O estudo analisou mil pacientes.",
+          "es": "La investigación se publicó en la revista. El estudio analizó a mil pacientes."
         }
       ],
       "commonMistakes": [
@@ -52,6 +72,16 @@
           "wrong": "Antes de entrar no elevador, verifique se o mesmo está parado neste andar.",
           "right": "Antes de entrar no elevador, verifique se ele está parado neste andar.",
           "why": "Usar o mesmo como pronombre es un vicio de estilo: preferí ele, un pronombre átono o repetir el sustantivo."
+        },
+        {
+          "wrong": "A diretora chegou cedo. A diretora falou com a equipe.",
+          "right": "A diretora chegou cedo. Ela falou com a equipe.",
+          "why": "Repetir el mismo sustantivo en dos oraciones seguidas suena poco natural en portugués culto; conviene retomarlo con un pronombre (ela) o un sinónimo."
+        },
+        {
+          "wrong": "Recebemos sua proposta e vamos analisá-la ela.",
+          "right": "Recebemos sua proposta e vamos analisá-la.",
+          "why": "El pronombre átono ya quedó incorporado al verbo con el guión (analisá-la); no hay que repetirlo después con 'ela'."
         }
       ],
       "chunks": [
@@ -105,7 +135,8 @@
         "En la norma, esse y isso retoman lo que ya se dijo; este y isto anuncian lo que viene: Meu conselho é este: descanse.",
         "Para retomar dos elementos, este es el último nombrado y aquele el primero: Machado e Alencar foram contemporâneos; este era romântico, aquele, realista.",
         "Con el tiempo: neste ano (el actual), nesse ano (el mencionado), naquele ano (uno lejano).",
-        "Al hablar, en Brasil esse y isso reemplazaron casi por completo a este y isto."
+        "Al hablar, en Brasil esse y isso reemplazaron casi por completo a este y isto.",
+        "En español los demostrativos 'este' y 'ese' también distinguen cercanía temporal o textual (este año = el actual, ese año = uno mencionado), de forma parecida al portugués; la diferencia es que en el habla de Brasil 'esse/isso' absorbió casi todos los usos de 'este/isto', mientras que en español el uso de 'este' para anunciar lo que sigue se mantiene vivo en el habla cotidiana."
       ],
       "examples": [
         {
@@ -119,6 +150,26 @@
         {
           "target": "Em 2014 houve Copa do Mundo no Brasil. Nesse ano, o turismo cresceu muito.",
           "es": "En 2014 hubo Mundial en Brasil. Ese año, el turismo creció mucho."
+        },
+        {
+          "target": "Ela tem dois irmãos: este mora em São Paulo, aquele mora no Rio.",
+          "es": "Tiene dos hermanos: este vive en San Pablo, aquel vive en Río."
+        },
+        {
+          "target": "Minha proposta é esta: reduzir os custos em 10%.",
+          "es": "Mi propuesta es esta: reducir los costos en un 10%."
+        },
+        {
+          "target": "Ano passado houve uma crise econômica. Naquele ano, muitas empresas fecharam.",
+          "es": "El año pasado hubo una crisis económica. Ese año, muchas empresas cerraron."
+        },
+        {
+          "target": "Ele mencionou dois projetos; este já está pronto, aquele ainda está em andamento.",
+          "es": "Mencionó dos proyectos; este ya está terminado, aquel todavía está en marcha."
+        },
+        {
+          "target": "Nesta reunião vamos definir o orçamento do próximo trimestre.",
+          "es": "En esta reunión vamos a definir el presupuesto del próximo trimestre."
         }
       ],
       "commonMistakes": [
@@ -126,6 +177,16 @@
           "wrong": "Os custos subiram muito. Isto preocupa a diretoria.",
           "right": "Os custos subiram muito. Isso preocupa a diretoria.",
           "why": "Para retomar lo que ya se dijo, la norma pide isso; isto anuncia lo que viene. En español 'esto' sirve para las dos cosas."
+        },
+        {
+          "wrong": "O relatório foi entregue ontem. Este contém erros graves.",
+          "right": "O relatório foi entregue ontem. Esse contém erros graves.",
+          "why": "Para retomar algo que ya se mencionó antes, en portugués culto se usa 'esse/isso', no 'este/isto', que se reserva para anunciar lo que viene."
+        },
+        {
+          "wrong": "Em 2020 começou a pandemia. Este ano mudou tudo.",
+          "right": "Em 2020 começou a pandemia. Naquele ano, tudo mudou.",
+          "why": "'Este ano' se usa para el año en curso (el actual), no para un año ya mencionado en el texto; para retomar un año lejano hay que usar 'naquele ano'."
         }
       ],
       "chunks": [
@@ -180,7 +241,8 @@
         "Concesión: embora, ainda que, mesmo que, conquanto (muy formal) + subjuntivo; apesar de + sustantivo o infinitivo.",
         "Condición: desde que + subjuntivo significa 'siempre que, con tal de que': Pode sair, desde que volte cedo. Con indicativo es temporal: Desde que cheguei, chove.",
         "Consecuencia: de modo que, de forma que, tanto que, tão... que: Estava tão cansado que dormiu no ônibus.",
-        "Finalidad y causa formal: a fim de, a fim de que, com o objetivo de; visto que, uma vez que, porquanto."
+        "Finalidad y causa formal: a fim de, a fim de que, com o objetivo de; visto que, uma vez que, porquanto.",
+        "En español 'aunque' puede ir con indicativo o subjuntivo según el grado de certeza ('aunque es caro' vs 'aunque sea caro'), pero en portugués los conectores de concesión como 'embora', 'ainda que' y 'mesmo que' exigen siempre el subjuntivo, sin esa alternancia."
       ],
       "examples": [
         {
@@ -194,6 +256,26 @@
         {
           "target": "A reunião foi longa, de modo que ninguém conseguiu almoçar.",
           "es": "La reunión fue larga, así que nadie pudo almorzar."
+        },
+        {
+          "target": "Mesmo que chova, o evento vai acontecer ao ar livre.",
+          "es": "Aunque llueva, el evento va a hacerse al aire libre."
+        },
+        {
+          "target": "Apesar das dificuldades, a equipe conseguiu terminar o projeto a tempo.",
+          "es": "A pesar de las dificultades, el equipo logró terminar el proyecto a tiempo."
+        },
+        {
+          "target": "Visto que os custos aumentaram, precisamos revisar o orçamento.",
+          "es": "Dado que los costos aumentaron, necesitamos revisar el presupuesto."
+        },
+        {
+          "target": "Ele estudou tanto que passou em primeiro lugar no concurso.",
+          "es": "Estudió tanto que quedó primero en el concurso."
+        },
+        {
+          "target": "A empresa investiu em marketing a fim de aumentar as vendas.",
+          "es": "La empresa invirtió en marketing con el fin de aumentar las ventas."
         }
       ],
       "commonMistakes": [
@@ -206,6 +288,11 @@
           "wrong": "Apesar que estava cansado, foi trabalhar.",
           "right": "Apesar de estar cansado, foi trabalhar.",
           "why": "Apesar va con de: apesar de + infinitivo o sustantivo."
+        },
+        {
+          "wrong": "Conquanto que ele seja jovem, tem muita experiência.",
+          "right": "Conquanto ele seja jovem, tem muita experiência.",
+          "why": "'Conquanto' ya funciona por sí sola como conjunción de concesión y no necesita el 'que' adicional después, a diferencia de otras construcciones como 'desde que'."
         }
       ],
       "chunks": [
@@ -259,7 +346,8 @@
         "Reformular: ou seja, isto é, quer dizer, em outras palavras. Aliás significa 'por cierto' o 'mejor dicho'.",
         "Reforzar: inclusive (incluso), de fato (efectivamente), aliás.",
         "Marcadores de la charla: né? (¿no?, ¿viste?), tipo (onda, como), aí (y ahí), então, sabe?, olha, pois é (y sí), enfim, nossa! (¡guau!), ué (sorpresa).",
-        "El 'bueno' para arrancar o cambiar de tema es bom o então: Bom, vamos começar."
+        "El 'bueno' para arrancar o cambiar de tema es bom o então: Bom, vamos começar.",
+        "En español rioplatense usamos muletillas como 'o sea', 'digamos', 'viste' o '¿no?' para reformular o marcar la charla; en portugués de Brasil existen equivalentes directos como 'ou seja', 'tipo', 'sabe?' y 'né?', que cumplen exactamente la misma función conversacional."
       ],
       "examples": [
         {
@@ -273,6 +361,26 @@
         {
           "target": "Pois é, né? Tipo, ninguém avisou nada.",
           "es": "Y sí, ¿viste? O sea, nadie avisó nada."
+        },
+        {
+          "target": "Ele chegou atrasado; aliás, nem avisou que vinha.",
+          "es": "Llegó tarde; es más, ni avisó que venía."
+        },
+        {
+          "target": "Tipo, eu nem sabia que a reunião era hoje.",
+          "es": "Onda, ni sabía que la reunión era hoy."
+        },
+        {
+          "target": "Olha, eu acho que a gente devia esperar mais um pouco.",
+          "es": "Mirá, pienso que deberíamos esperar un poco más."
+        },
+        {
+          "target": "Nossa, que susto você me deu!",
+          "es": "¡Guau, qué susto me diste!"
+        },
+        {
+          "target": "Enfim, o importante é que deu tudo certo.",
+          "es": "En fin, lo importante es que todo salió bien."
         }
       ],
       "commonMistakes": [
@@ -285,6 +393,11 @@
           "wrong": "Alias, ele ligou ontem.",
           "right": "Aliás, ele ligou ontem.",
           "why": "Aliás lleva tilde y significa 'por cierto' o 'mejor dicho', no 'alias'."
+        },
+        {
+          "wrong": "Ele é, tipo de, muito inteligente.",
+          "right": "Ele é, tipo, muito inteligente.",
+          "why": "En el habla coloquial de Brasil 'tipo' funciona solo como marcador, sin la preposición 'de' después; eso es distinto de cuando 'tipo de' se usa literalmente para clasificar algo (um tipo de comida)."
         }
       ],
       "chunks": [
@@ -339,7 +452,8 @@
         "Presentá la fuente: O texto trata de..., Segundo o autor..., O artigo defende que...",
         "Retomá con sinónimos y pronombres en vez de repetir; evitá o mesmo.",
         "Encadená con conectores variados y cerrá con Em suma o Em síntese.",
-        "En un resumen no van ejemplos sueltos ni tu opinión."
+        "En un resumen no van ejemplos sueltos ni tu opinión.",
+        "En español, para resumir un texto usamos fórmulas como 'el texto trata sobre...', 'según el autor...' y cerramos con 'en síntesis' o 'en resumen'; en portugués las estructuras son casi idénticas (o texto trata de..., segundo o autor..., em síntese), aunque hay que prestar atención a que 'tratar de' en portugués no lleva 'sobre' después, a diferencia del uso frecuente en español."
       ],
       "examples": [
         {
@@ -353,6 +467,26 @@
         {
           "target": "Em síntese, o texto defende o uso consciente, e não a proibição.",
           "es": "En síntesis, el texto defiende el uso consciente, y no la prohibición."
+        },
+        {
+          "target": "O autor defende que a educação pública precisa de mais investimento.",
+          "es": "El autor sostiene que la educación pública necesita más inversión."
+        },
+        {
+          "target": "O texto aborda as consequências do aquecimento global nas cidades costeiras.",
+          "es": "El texto aborda las consecuencias del calentamiento global en las ciudades costeras."
+        },
+        {
+          "target": "De acordo com a pesquisa, o uso excessivo de telas afeta o sono dos jovens.",
+          "es": "Según la investigación, el uso excesivo de pantallas afecta el sueño de los jóvenes."
+        },
+        {
+          "target": "O artigo conclui que medidas simples podem reduzir bastante o desperdício de alimentos.",
+          "es": "El artículo concluye que medidas simples pueden reducir bastante el desperdicio de alimentos."
+        },
+        {
+          "target": "No geral, o texto tem um tom crítico em relação às políticas atuais.",
+          "es": "En general, el texto tiene un tono crítico respecto de las políticas actuales."
         }
       ],
       "commonMistakes": [
@@ -365,6 +499,11 @@
           "wrong": "O texto trata sobre a crise hídrica.",
           "right": "O texto trata da crise hídrica.",
           "why": "En la norma, tratar pide de: o texto trata de... (o aborda...)."
+        },
+        {
+          "wrong": "Segundo o autor, o problema é a falta de dinheiro, mas eu acho diferente.",
+          "right": "Segundo o autor, o problema é a falta de dinheiro.",
+          "why": "En un resumen no hay que incluir la opinión personal de quien resume, solo lo que dice el texto o el autor original."
         }
       ],
       "chunks": [

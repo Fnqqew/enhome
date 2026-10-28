@@ -1,0 +1,892 @@
+{
+  "language": "zh",
+  "existing": [],
+  "levels": [
+    {
+      "level": "A1",
+      "topics": [
+        {
+          "id": "zh-a1-pronunciacion-tonos",
+          "title": "Fonética y tonos del mandarín",
+          "targetTitle": "普通话发音与声调",
+          "description": "Vas a aprender a distinguir y producir los cuatro tonos del mandarín y los sonidos básicos del pinyin. Esto te va a servir de base para pronunciar correctamente cualquier palabra que aprendas de acá en más.",
+          "subtopics": [
+            "Los cuatro tonos y el tono neutro",
+            "Vocales y sonidos básicos del pinyin",
+            "Consonantes iniciales difíciles para hispanohablantes",
+            "Combinaciones de sonidos y sílabas",
+            "Práctica de discriminación auditiva de tonos"
+          ],
+          "prerequisites": []
+        },
+        {
+          "id": "zh-a1-pinyin-escritura",
+          "title": "Sistema pinyin y trazos básicos de caracteres",
+          "targetTitle": "拼音与汉字笔画基础",
+          "description": "Vas a conocer cómo funciona el sistema pinyin para transcribir el chino y vas a aprender el orden y los trazos básicos para escribir caracteres simples. Con esto vas a poder leer y empezar a escribir tus primeros caracteres de forma ordenada.",
+          "subtopics": [
+            "Reglas de transcripción del pinyin",
+            "Trazos básicos y orden de escritura",
+            "Radicales más comunes",
+            "Caracteres simples de alta frecuencia",
+            "Uso del diccionario y apps de consulta"
+          ],
+          "prerequisites": ["zh-a1-pronunciacion-tonos"]
+        },
+        {
+          "id": "zh-a1-saludos",
+          "title": "Saludos y presentaciones personales",
+          "targetTitle": "问候与自我介绍",
+          "description": "Vas a aprender a saludar, presentarte y dar datos personales básicos como tu nombre y tu nacionalidad. Esto te va a servir para iniciar cualquier conversación cotidiana en chino.",
+          "subtopics": [
+            "Saludos formales e informales",
+            "Presentarse: nombre y apellido",
+            "Preguntar y decir la nacionalidad",
+            "Pronombres personales",
+            "Despedidas y fórmulas de cortesía"
+          ],
+          "prerequisites": ["zh-a1-pinyin-escritura"]
+        },
+        {
+          "id": "zh-a1-numeros",
+          "title": "Números y cantidades básicas",
+          "targetTitle": "数字与数量",
+          "description": "Vas a aprender a contar del cero en adelante y a usar los números en situaciones cotidianas como precios y teléfonos. Esto te va a permitir manejar cantidades básicas en cualquier intercambio diario.",
+          "subtopics": [
+            "Números del 0 al 10",
+            "Números del 11 al 100",
+            "Números grandes y cifras",
+            "Edad y cantidad de personas",
+            "Números de teléfono y direcciones"
+          ],
+          "prerequisites": ["zh-a1-saludos"]
+        },
+        {
+          "id": "zh-a1-familia",
+          "title": "La familia y las relaciones personales",
+          "targetTitle": "家庭与人际关系",
+          "description": "Vas a aprender el vocabulario para hablar de tu familia y de las relaciones personales más cercanas. Esto te va a servir para describir tu entorno afectivo en una conversación básica.",
+          "subtopics": [
+            "Miembros de la familia nuclear",
+            "Familia extendida",
+            "Posesivos con 的",
+            "Describir relaciones personales",
+            "Preguntar por la familia del otro"
+          ],
+          "prerequisites": ["zh-a1-numeros"]
+        },
+        {
+          "id": "zh-a1-ser-estar",
+          "title": "El verbo \"ser/estar\" con 是 y la negación",
+          "targetTitle": "用\"是\"构成肯定与否定句",
+          "description": "Vas a aprender a construir oraciones afirmativas y negativas con el verbo 是 para identificar personas y cosas. Esto te va a permitir armar tus primeras oraciones completas en chino.",
+          "subtopics": [
+            "Estructura básica con 是",
+            "Negación con 不是",
+            "Preguntas de confirmación con 吗",
+            "Preguntas alternativas con 是不是",
+            "Adjetivos predicativos sin 是"
+          ],
+          "prerequisites": ["zh-a1-familia"]
+        },
+        {
+          "id": "zh-a1-preguntas",
+          "title": "Palabras interrogativas y preguntas básicas",
+          "targetTitle": "疑问词与基本问句",
+          "description": "Vas a aprender a usar las palabras interrogativas para preguntar qué, quién, dónde y cuándo. Esto te va a servir para pedir información básica en cualquier situación cotidiana.",
+          "subtopics": [
+            "Qué (什么) y quién (谁)",
+            "Dónde (哪里) y cuál (哪个)",
+            "Cuándo (什么时候)",
+            "Por qué (为什么) y cómo (怎么)",
+            "Orden de palabras en preguntas"
+          ],
+          "prerequisites": ["zh-a1-ser-estar"]
+        },
+        {
+          "id": "zh-a1-tiempo",
+          "title": "La hora, los días y las fechas",
+          "targetTitle": "时间、星期与日期",
+          "description": "Vas a aprender a decir la hora, los días de la semana y las fechas del calendario chino. Esto te va a permitir organizar citas y actividades en el tiempo.",
+          "subtopics": ["Decir la hora en punto y con minutos", "Días de la semana", "Meses y fechas", "Partes del día", "Expresiones de frecuencia"],
+          "prerequisites": ["zh-a1-numeros", "zh-a1-preguntas"]
+        },
+        {
+          "id": "zh-a1-verbos-cotidianos",
+          "title": "Verbos de acción cotidiana y rutina",
+          "targetTitle": "日常动作动词",
+          "description": "Vas a aprender los verbos más usados para describir tu rutina diaria y acciones comunes. Esto te va a servir para contar qué hacés en un día típico.",
+          "subtopics": [
+            "Verbos de rutina diaria",
+            "Estructura sujeto-verbo-objeto",
+            "Adverbios de frecuencia con verbos",
+            "Verbos de desplazamiento básico",
+            "Conectar acciones en secuencia"
+          ],
+          "prerequisites": ["zh-a1-tiempo"]
+        },
+        {
+          "id": "zh-a1-clasificadores",
+          "title": "Clasificadores y sustantivos comunes",
+          "targetTitle": "量词与常用名词",
+          "description": "Vas a aprender a usar los clasificadores correctos para contar objetos y personas en chino. Esto te va a permitir formar frases con cantidades de forma natural y correcta.",
+          "subtopics": [
+            "Qué es un clasificador y por qué se usa",
+            "Clasificador general 个",
+            "Clasificadores para objetos comunes",
+            "Clasificadores para personas y animales",
+            "Demostrativos 这 y 那 con clasificadores"
+          ],
+          "prerequisites": ["zh-a1-verbos-cotidianos"]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "topics": [
+        {
+          "id": "zh-a2-ubicacion",
+          "title": "Ubicación y existencia con 在 y 有",
+          "targetTitle": "用\"在\"和\"有\"表示位置与存在",
+          "description": "Vas a aprender a decir dónde están las cosas y las personas, y a expresar existencia con 有. Esto te va a servir para describir lugares y dar indicaciones básicas.",
+          "subtopics": [
+            "Uso de 在 para ubicación",
+            "Uso de 有 para existencia",
+            "Palabras de posición (arriba, abajo, al lado)",
+            "Preguntar por la ubicación de algo",
+            "Describir una habitación o un lugar"
+          ],
+          "prerequisites": ["zh-a1-clasificadores"]
+        },
+        {
+          "id": "zh-a2-aspecto-le",
+          "title": "El aspecto verbal con 了 para hechos completados",
+          "targetTitle": "用\"了\"表示完成态",
+          "description": "Vas a aprender a usar la partícula 了 para marcar acciones completadas y cambios de estado. Esto te va a permitir contar cosas que ya pasaron de forma natural.",
+          "subtopics": [
+            "了 al final de la oración",
+            "了 después del verbo",
+            "Diferencia entre 了 de acción y de cambio",
+            "Negación de acciones pasadas con 没",
+            "Secuencia de acciones completadas"
+          ],
+          "prerequisites": ["zh-a1-verbos-cotidianos"]
+        },
+        {
+          "id": "zh-a2-modales",
+          "title": "Verbos modales: poder, querer y deber",
+          "targetTitle": "能愿动词：能、想、应该",
+          "description": "Vas a aprender a usar los verbos modales para expresar capacidad, deseo y obligación. Esto te va a servir para pedir permiso, expresar intenciones y dar consejos simples.",
+          "subtopics": [
+            "能 y 可以 para posibilidad y permiso",
+            "想 y 要 para deseos e intenciones",
+            "应该 para obligación y consejo",
+            "Negación de verbos modales",
+            "Combinación de modales con otros verbos"
+          ],
+          "prerequisites": ["zh-a2-ubicacion"]
+        },
+        {
+          "id": "zh-a2-comparaciones",
+          "title": "Comparaciones con 比 y grados",
+          "targetTitle": "用\"比\"进行比较",
+          "description": "Vas a aprender a comparar personas, objetos y situaciones usando la estructura con 比. Esto te va a permitir expresar diferencias y similitudes en una conversación.",
+          "subtopics": [
+            "Estructura básica con 比",
+            "Comparaciones de igualdad con 一样",
+            "Grados de diferencia (mucho más, un poco más)",
+            "Comparaciones negativas",
+            "Superlativos con 最"
+          ],
+          "prerequisites": ["zh-a2-modales"]
+        },
+        {
+          "id": "zh-a2-compras",
+          "title": "De compras: precios, regateo y medidas",
+          "targetTitle": "购物、价格与讨价还价",
+          "description": "Vas a aprender el vocabulario y las estructuras para comprar, preguntar precios y regatear en un mercado. Esto te va a servir para manejarte con soltura en situaciones de compra en China.",
+          "subtopics": ["Preguntar precios", "Dinero y moneda china", "Medidas y unidades comunes", "Regatear y pedir descuentos", "Formas de pago"],
+          "prerequisites": ["zh-a1-clasificadores", "zh-a2-comparaciones"]
+        },
+        {
+          "id": "zh-a2-comida",
+          "title": "Comida, bebida y en el restaurante",
+          "targetTitle": "饮食与餐厅用语",
+          "description": "Vas a aprender vocabulario de comidas y bebidas y las frases típicas para pedir en un restaurante. Esto te va a permitir desenvolverte en situaciones de alimentación cotidianas.",
+          "subtopics": [
+            "Nombres de comidas y bebidas comunes",
+            "Pedir en un restaurante",
+            "Expresar gustos con comida",
+            "Alergias y preferencias alimentarias",
+            "Pagar la cuenta"
+          ],
+          "prerequisites": ["zh-a2-compras"]
+        },
+        {
+          "id": "zh-a2-transporte",
+          "title": "Direcciones, lugares y transporte",
+          "targetTitle": "方向、地点与交通",
+          "description": "Vas a aprender a pedir y dar indicaciones para llegar a un lugar y a usar el vocabulario de medios de transporte. Esto te va a servir para moverte por una ciudad de habla china.",
+          "subtopics": [
+            "Medios de transporte comunes",
+            "Pedir direcciones",
+            "Dar indicaciones con izquierda, derecha y recto",
+            "Comprar pasajes y boletos",
+            "Puntos de referencia en la ciudad"
+          ],
+          "prerequisites": ["zh-a2-ubicacion"]
+        },
+        {
+          "id": "zh-a2-clima",
+          "title": "El clima, las estaciones y la ropa",
+          "targetTitle": "天气、季节与服装",
+          "description": "Vas a aprender a describir el clima, las estaciones del año y la ropa adecuada para cada una. Esto te va a servir para mantener charlas cotidianas sobre el tiempo.",
+          "subtopics": [
+            "Describir el clima actual",
+            "Las cuatro estaciones del año",
+            "Prendas de vestir comunes",
+            "Comparar el clima entre lugares",
+            "Expresar sensaciones de frío y calor"
+          ],
+          "prerequisites": ["zh-a2-comparaciones"]
+        },
+        {
+          "id": "zh-a2-salud",
+          "title": "El cuerpo, la salud y el médico",
+          "targetTitle": "身体、健康与看医生",
+          "description": "Vas a aprender a nombrar las partes del cuerpo y a describir síntomas básicos frente a un médico. Esto te va a permitir manejar una consulta médica sencilla en chino.",
+          "subtopics": [
+            "Partes del cuerpo",
+            "Describir dolores y síntomas",
+            "Vocabulario de la consulta médica",
+            "Medicamentos y recomendaciones",
+            "Expresar malestar con 不舒服"
+          ],
+          "prerequisites": ["zh-a2-aspecto-le"]
+        },
+        {
+          "id": "zh-a2-pasatiempos",
+          "title": "Pasatiempos, gustos y planes futuros",
+          "targetTitle": "爱好、喜好与将来计划",
+          "description": "Vas a aprender a hablar de tus pasatiempos, tus gustos y tus planes para el futuro cercano. Esto te va a servir para mantener conversaciones informales más fluidas.",
+          "subtopics": [
+            "Hobbies y actividades de ocio",
+            "Expresar gustos con 喜欢",
+            "Planes con 打算 y 要",
+            "Invitar a alguien a hacer algo",
+            "Aceptar y rechazar invitaciones"
+          ],
+          "prerequisites": ["zh-a2-modales", "zh-a2-aspecto-le"]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "topics": [
+        {
+          "id": "zh-b1-experiencia-guo",
+          "title": "Expresar experiencias con 过 y narrar el pasado",
+          "targetTitle": "用\"过\"表达经历",
+          "description": "Vas a aprender a usar la partícula 过 para hablar de experiencias vividas alguna vez en la vida. Esto te va a servir para narrar anécdotas y contar tu historia personal.",
+          "subtopics": [
+            "Estructura con 过 para experiencias",
+            "Negación de experiencias con 没...过",
+            "Preguntar por experiencias pasadas",
+            "Combinar 过 con marcadores de tiempo",
+            "Narrar una anécdota breve"
+          ],
+          "prerequisites": ["zh-a2-pasatiempos", "zh-a2-aspecto-le"]
+        },
+        {
+          "id": "zh-b1-complemento-resultativo",
+          "title": "Complementos resultativos y direccionales",
+          "targetTitle": "结果补语与趋向补语",
+          "description": "Vas a aprender a usar complementos que indican el resultado o la dirección de una acción verbal. Esto te va a permitir expresar con precisión si una acción se logró o hacia dónde se mueve algo.",
+          "subtopics": [
+            "Complementos resultativos comunes (完, 好, 懂)",
+            "Complementos direccionales simples (来, 去)",
+            "Complementos direccionales compuestos",
+            "Negación de complementos resultativos",
+            "Combinar complementos con objetos"
+          ],
+          "prerequisites": ["zh-b1-experiencia-guo"]
+        },
+        {
+          "id": "zh-b1-complemento-potencial",
+          "title": "Complementos potenciales: posibilidad y capacidad",
+          "targetTitle": "可能补语",
+          "description": "Vas a aprender a formar complementos potenciales para expresar si una acción se puede o no se puede realizar. Esto te va a servir para matizar tu capacidad o imposibilidad de hacer algo.",
+          "subtopics": [
+            "Estructura afirmativa del complemento potencial",
+            "Estructura negativa del complemento potencial",
+            "Complementos potenciales fijos de uso frecuente",
+            "Diferencia entre 能 y el complemento potencial",
+            "Preguntas con complemento potencial"
+          ],
+          "prerequisites": ["zh-b1-complemento-resultativo"]
+        },
+        {
+          "id": "zh-b1-ba",
+          "title": "La construcción con 把",
+          "targetTitle": "把字句",
+          "description": "Vas a aprender a usar la estructura con 把 para enfatizar qué le pasa a un objeto directo. Esto te va a permitir expresar acciones con un resultado claro sobre algo específico.",
+          "subtopics": [
+            "Estructura básica de la oración con 把",
+            "Verbos que admiten la construcción con 把",
+            "Complementos obligatorios después del verbo",
+            "Negación en oraciones con 把",
+            "Diferencia entre oración con 把 y oración normal"
+          ],
+          "prerequisites": ["zh-b1-complemento-potencial"]
+        },
+        {
+          "id": "zh-b1-pasiva-bei",
+          "title": "La voz pasiva con 被",
+          "targetTitle": "被字句",
+          "description": "Vas a aprender a construir oraciones pasivas con 被 para indicar que el sujeto recibe la acción. Esto te va a servir para narrar hechos desde el punto de vista de quien los sufre.",
+          "subtopics": [
+            "Estructura básica con 被",
+            "Omisión del agente en la oración pasiva",
+            "Verbos comunes en construcciones pasivas",
+            "Diferencia entre 被, 让 y 叫",
+            "Contextos en los que se evita la voz pasiva"
+          ],
+          "prerequisites": ["zh-b1-ba"]
+        },
+        {
+          "id": "zh-b1-condicionales",
+          "title": "Oraciones condicionales y concesivas",
+          "targetTitle": "条件句与让步句",
+          "description": "Vas a aprender a formar oraciones condicionales con 如果 y concesivas con 虽然...但是. Esto te va a permitir expresar hipótesis y contrastes en tus argumentos.",
+          "subtopics": [
+            "Condicional con 如果...就",
+            "Condicional con 要是",
+            "Concesiva con 虽然...但是",
+            "Concesiva con 即使...也",
+            "Combinar condicionales con otras estructuras"
+          ],
+          "prerequisites": ["zh-b1-pasiva-bei"]
+        },
+        {
+          "id": "zh-b1-discurso-indirecto",
+          "title": "El discurso indirecto y reportado",
+          "targetTitle": "间接引语",
+          "description": "Vas a aprender a reportar lo que dijo otra persona sin citarla textualmente. Esto te va a servir para contar conversaciones y transmitir mensajes de terceros.",
+          "subtopics": [
+            "Verbos introductorios de discurso reportado",
+            "Cambios de pronombres al reportar",
+            "Cambios de tiempo y lugar al reportar",
+            "Reportar preguntas",
+            "Reportar órdenes y peticiones"
+          ],
+          "prerequisites": ["zh-b1-condicionales"]
+        },
+        {
+          "id": "zh-b1-personalidad",
+          "title": "Describir personalidad, carácter y emociones",
+          "targetTitle": "性格与情感描述",
+          "description": "Vas a aprender vocabulario para describir el carácter de las personas y expresar emociones con matices. Esto te va a permitir hablar de vos mismo y de los demás con más profundidad.",
+          "subtopics": [
+            "Adjetivos de personalidad",
+            "Expresar emociones y estados de ánimo",
+            "Comparar personalidades",
+            "Causas y consecuencias emocionales",
+            "Expresiones idiomáticas básicas de sentimientos"
+          ],
+          "prerequisites": ["zh-b1-discurso-indirecto"]
+        },
+        {
+          "id": "zh-b1-trabajo-estudio",
+          "title": "Vocabulario de trabajo, estudio y profesiones",
+          "targetTitle": "工作、学习与职业",
+          "description": "Vas a aprender el vocabulario relacionado con el mundo laboral, los estudios y las profesiones. Esto te va a servir para hablar de tu carrera y tus planes educativos.",
+          "subtopics": [
+            "Profesiones y lugares de trabajo",
+            "Vocabulario del ámbito académico",
+            "Hablar de tu experiencia laboral",
+            "Describir tareas y responsabilidades",
+            "Hablar de metas profesionales"
+          ],
+          "prerequisites": ["zh-b1-personalidad"]
+        },
+        {
+          "id": "zh-b1-viajes",
+          "title": "Viajes, alojamiento y experiencias turísticas",
+          "targetTitle": "旅行、住宿与旅游经历",
+          "description": "Vas a aprender a planificar un viaje, reservar alojamiento y contar experiencias turísticas. Esto te va a permitir manejarte con autonomía cuando viajás a un país de habla china.",
+          "subtopics": [
+            "Reservar alojamiento",
+            "Vocabulario del aeropuerto y la aduana",
+            "Pedir recomendaciones turísticas",
+            "Contar una experiencia de viaje",
+            "Resolver problemas durante un viaje"
+          ],
+          "prerequisites": ["zh-b1-experiencia-guo", "zh-b1-trabajo-estudio"]
+        },
+        {
+          "id": "zh-b1-opiniones",
+          "title": "Expresar opiniones y dar argumentos simples",
+          "targetTitle": "表达观点与简单论证",
+          "description": "Vas a aprender estructuras para dar tu opinión, estar de acuerdo o en desacuerdo y justificar tu postura. Esto te va a servir para participar en conversaciones de debate básico.",
+          "subtopics": [
+            "Expresar opinión con 我觉得 y 我认为",
+            "Mostrar acuerdo y desacuerdo",
+            "Dar razones con 因为...所以",
+            "Matizar una opinión",
+            "Pedir la opinión de otra persona"
+          ],
+          "prerequisites": ["zh-b1-condicionales"]
+        },
+        {
+          "id": "zh-b1-correspondencia",
+          "title": "Redacción de mensajes, correos y notas formales e informales",
+          "targetTitle": "写便条、邮件与简单书信",
+          "description": "Vas a aprender a redactar mensajes cortos, correos electrónicos y notas tanto formales como informales. Esto te va a permitir comunicarte por escrito en situaciones cotidianas y semiformales.",
+          "subtopics": [
+            "Estructura de un correo informal",
+            "Estructura de un correo formal",
+            "Fórmulas de saludo y despedida escritas",
+            "Redactar una nota o mensaje breve",
+            "Responder a un mensaje recibido"
+          ],
+          "prerequisites": ["zh-b1-opiniones"]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "topics": [
+        {
+          "id": "zh-b2-enfasis-shi-de",
+          "title": "La estructura enfática 是...的",
+          "targetTitle": "是…的强调句",
+          "description": "Vas a aprender a usar la estructura 是...的 para enfatizar cuándo, dónde o cómo pasó algo. Esto te va a permitir dar precisión y énfasis a tus relatos en pasado.",
+          "subtopics": [
+            "Estructura básica de 是...的",
+            "Énfasis en el tiempo de la acción",
+            "Énfasis en el lugar de la acción",
+            "Énfasis en el modo o medio de la acción",
+            "Diferencia con el uso de 了"
+          ],
+          "prerequisites": ["zh-b1-correspondencia"]
+        },
+        {
+          "id": "zh-b2-conectores-complejos",
+          "title": "Conectores complejos y conjunciones correlativas",
+          "targetTitle": "复杂关联词",
+          "description": "Vas a aprender conjunciones correlativas avanzadas para unir ideas con más matices lógicos. Esto te va a servir para construir discursos más cohesivos y elaborados.",
+          "subtopics": [
+            "Conectores de causa y efecto avanzados",
+            "Conectores de adición y progresión",
+            "Conectores de contraste avanzado",
+            "Conectores de finalidad",
+            "Uso de conectores en textos escritos"
+          ],
+          "prerequisites": ["zh-b2-enfasis-shi-de"]
+        },
+        {
+          "id": "zh-b2-reduplicacion",
+          "title": "Reduplicación de verbos y adjetivos",
+          "targetTitle": "动词和形容词的重叠",
+          "description": "Vas a aprender a duplicar verbos y adjetivos para suavizar acciones o intensificar cualidades. Esto te va a dar más naturalidad y matiz a tu expresión oral.",
+          "subtopics": [
+            "Reduplicación de verbos monosílabos",
+            "Reduplicación de verbos bisílabos",
+            "Reduplicación de adjetivos",
+            "Efectos de significado de la reduplicación",
+            "Contextos de uso natural"
+          ],
+          "prerequisites": ["zh-b2-conectores-complejos"]
+        },
+        {
+          "id": "zh-b2-particulas-modales",
+          "title": "Partículas modales y matices de tono",
+          "targetTitle": "语气助词的细微差别",
+          "description": "Vas a aprender a usar partículas como 啊, 呢, 吧 y 嘛 para matizar la intención y el tono de tus oraciones. Esto te va a servir para sonar más natural y expresar actitudes sutiles.",
+          "subtopics": [
+            "La partícula 啊 y su matiz emocional",
+            "La partícula 呢 en preguntas y continuidad",
+            "La partícula 吧 para sugerencias y suposiciones",
+            "La partícula 嘛 para obviedad",
+            "Combinación de partículas en el habla coloquial"
+          ],
+          "prerequisites": ["zh-b2-reduplicacion"]
+        },
+        {
+          "id": "zh-b2-medios-noticias",
+          "title": "Vocabulario de medios de comunicación y noticias",
+          "targetTitle": "媒体与新闻词汇",
+          "description": "Vas a aprender el vocabulario típico de las noticias y los medios de comunicación en chino. Esto te va a permitir entender titulares y resúmenes periodísticos básicos.",
+          "subtopics": [
+            "Estructura de una noticia",
+            "Vocabulario de prensa escrita y digital",
+            "Verbos usados en titulares",
+            "Diferenciar hechos de opiniones en una noticia",
+            "Resumir una noticia breve"
+          ],
+          "prerequisites": ["zh-b2-particulas-modales"]
+        },
+        {
+          "id": "zh-b2-medioambiente",
+          "title": "Medio ambiente y desarrollo sostenible",
+          "targetTitle": "环境与可持续发展",
+          "description": "Vas a aprender vocabulario sobre medio ambiente, cambio climático y sostenibilidad. Esto te va a servir para debatir sobre problemáticas ambientales actuales.",
+          "subtopics": [
+            "Vocabulario de contaminación y cambio climático",
+            "Energías renovables",
+            "Hábitos sostenibles",
+            "Políticas ambientales",
+            "Debatir sobre soluciones ecológicas"
+          ],
+          "prerequisites": ["zh-b2-medios-noticias"]
+        },
+        {
+          "id": "zh-b2-tecnologia",
+          "title": "Tecnología, internet y redes sociales",
+          "targetTitle": "科技、网络与社交媒体",
+          "description": "Vas a aprender vocabulario sobre tecnología, internet y el uso de redes sociales en China. Esto te va a permitir conversar sobre temas digitales y tecnológicos actuales.",
+          "subtopics": [
+            "Dispositivos y aplicaciones comunes",
+            "Redes sociales chinas y su vocabulario",
+            "Ventajas y riesgos de la tecnología",
+            "Vocabulario de inteligencia artificial",
+            "Expresar opiniones sobre el impacto tecnológico"
+          ],
+          "prerequisites": ["zh-b2-medioambiente"]
+        },
+        {
+          "id": "zh-b2-economia-trabajo",
+          "title": "Economía, mercado laboral y negocios",
+          "targetTitle": "经济、职场与商务",
+          "description": "Vas a aprender vocabulario de economía, mercado laboral y situaciones de negocios básicas. Esto te va a servir para desenvolverte en contextos profesionales más formales.",
+          "subtopics": [
+            "Vocabulario económico básico",
+            "El mercado laboral y la búsqueda de empleo",
+            "Reuniones de negocios",
+            "Negociaciones comerciales simples",
+            "Presentar una empresa o un producto"
+          ],
+          "prerequisites": ["zh-b2-tecnologia"]
+        },
+        {
+          "id": "zh-b2-cultura-tradiciones",
+          "title": "Cultura china, tradiciones y festividades",
+          "targetTitle": "中国文化与传统节日",
+          "description": "Vas a aprender sobre las festividades tradicionales chinas y las costumbres asociadas a cada una. Esto te va a permitir entender referencias culturales clave en cualquier conversación.",
+          "subtopics": [
+            "El Año Nuevo chino y sus costumbres",
+            "Festival del Medio Otoño y otras fiestas",
+            "Simbolismo y supersticiones comunes",
+            "Comida tradicional de cada festividad",
+            "Comparar tradiciones chinas y argentinas"
+          ],
+          "prerequisites": ["zh-b2-economia-trabajo"]
+        },
+        {
+          "id": "zh-b2-debate-argumentacion",
+          "title": "Técnicas de debate y argumentación",
+          "targetTitle": "辩论与论证技巧",
+          "description": "Vas a aprender estructuras y vocabulario para defender una postura y rebatir argumentos ajenos. Esto te va a servir para participar en debates orales más complejos.",
+          "subtopics": [
+            "Presentar una tesis clara",
+            "Dar contraargumentos",
+            "Usar ejemplos y evidencia",
+            "Matizar y ceder parcialmente en un debate",
+            "Cerrar un argumento con una conclusión"
+          ],
+          "prerequisites": ["zh-b2-cultura-tradiciones"]
+        },
+        {
+          "id": "zh-b2-redaccion-formal",
+          "title": "Redacción formal: informes y ensayos breves",
+          "targetTitle": "正式写作：报告与短文",
+          "description": "Vas a aprender a estructurar informes breves y ensayos argumentativos sencillos en chino. Esto te va a permitir producir textos formales con coherencia y cohesión.",
+          "subtopics": [
+            "Estructura de un informe breve",
+            "Introducción, desarrollo y conclusión",
+            "Uso de datos y ejemplos en un texto formal",
+            "Revisión y corrección de un texto propio",
+            "Diferencias entre registro formal e informal escrito"
+          ],
+          "prerequisites": ["zh-b2-debate-argumentacion"]
+        },
+        {
+          "id": "zh-b2-escucha-discursos",
+          "title": "Comprensión de discursos y entrevistas",
+          "targetTitle": "演讲与采访听力理解",
+          "description": "Vas a entrenar la comprensión auditiva con discursos públicos y entrevistas en mandarín estándar. Esto te va a servir para seguir contenido audiovisual auténtico con mayor fluidez.",
+          "subtopics": [
+            "Estrategias de escucha activa",
+            "Identificar ideas principales en un discurso",
+            "Comprender entrevistas informales",
+            "Tomar notas mientras se escucha",
+            "Resumir oralmente lo escuchado"
+          ],
+          "prerequisites": ["zh-b2-redaccion-formal"]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "topics": [
+        {
+          "id": "zh-c1-chengyu",
+          "title": "Modismos chengyu de uso frecuente",
+          "targetTitle": "常用四字成语",
+          "description": "Vas a aprender el origen y el uso de los chengyu, los modismos de cuatro caracteres más comunes del chino. Esto te va a permitir enriquecer tu expresión con referencias culturales clásicas.",
+          "subtopics": [
+            "Qué es un chengyu y su estructura",
+            "Chengyu relacionados con la naturaleza",
+            "Chengyu relacionados con la conducta humana",
+            "Origen histórico de chengyu populares",
+            "Uso de chengyu en la conversación formal"
+          ],
+          "prerequisites": ["zh-b2-escucha-discursos"]
+        },
+        {
+          "id": "zh-c1-registro-formal",
+          "title": "Registro formal versus coloquial y su uso social",
+          "targetTitle": "正式与口语语域对比",
+          "description": "Vas a aprender a distinguir y alternar entre el registro formal y el coloquial según el contexto social. Esto te va a servir para adaptar tu forma de hablar a cada situación de manera apropiada.",
+          "subtopics": [
+            "Marcadores léxicos de formalidad",
+            "Cambios gramaticales entre registros",
+            "Cortesía y honoríficos en contextos formales",
+            "Jerga y expresiones coloquiales",
+            "Adaptar un mismo mensaje a distintos registros"
+          ],
+          "prerequisites": ["zh-c1-chengyu"]
+        },
+        {
+          "id": "zh-c1-nominalizacion",
+          "title": "Nominalización y estructuras nominales complejas",
+          "targetTitle": "名词化结构",
+          "description": "Vas a aprender a transformar verbos y oraciones en estructuras nominales propias de un estilo más formal. Esto te va a permitir escribir y hablar con un estilo más académico y sofisticado.",
+          "subtopics": [
+            "Nominalización con 的 y 之",
+            "Frases nominales complejas",
+            "Nominalización en textos académicos",
+            "Diferencia entre estilo verbal y nominal",
+            "Practicar la reescritura de oraciones"
+          ],
+          "prerequisites": ["zh-c1-registro-formal"]
+        },
+        {
+          "id": "zh-c1-causativas",
+          "title": "Estructuras causativas y de permiso",
+          "targetTitle": "使令句",
+          "description": "Vas a aprender a usar 让, 使 y 令 para expresar que alguien provoca o permite que algo suceda. Esto te va a servir para narrar relaciones de causa entre personas y hechos con precisión.",
+          "subtopics": [
+            "Estructura causativa con 让",
+            "Estructura causativa con 使",
+            "Estructura causativa con 令 en registro formal",
+            "Diferencias de matiz entre las tres formas",
+            "Combinación con complementos de resultado"
+          ],
+          "prerequisites": ["zh-c1-nominalizacion"]
+        },
+        {
+          "id": "zh-c1-retorica",
+          "title": "Recursos retóricos y figuras del discurso",
+          "targetTitle": "修辞手法",
+          "description": "Vas a aprender figuras retóricas como la metáfora, la hipérbole y el paralelismo en chino. Esto te va a permitir dar fuerza expresiva a tus discursos y textos.",
+          "subtopics": [
+            "Metáforas y comparaciones retóricas",
+            "Hipérbole y exageración expresiva",
+            "Paralelismo y repetición estilística",
+            "Preguntas retóricas",
+            "Análisis de recursos en discursos reales"
+          ],
+          "prerequisites": ["zh-c1-causativas"]
+        },
+        {
+          "id": "zh-c1-editoriales",
+          "title": "Lectura crítica de editoriales y columnas de opinión",
+          "targetTitle": "社论与评论文章阅读",
+          "description": "Vas a aprender a leer de forma crítica editoriales y columnas de opinión de medios chinos. Esto te va a servir para identificar posturas ideológicas y argumentos implícitos en un texto.",
+          "subtopics": [
+            "Estructura de un editorial",
+            "Identificar la tesis del autor",
+            "Reconocer sesgos y posturas",
+            "Vocabulario de opinión periodística avanzada",
+            "Comparar editoriales de distintas fuentes"
+          ],
+          "prerequisites": ["zh-c1-retorica"]
+        },
+        {
+          "id": "zh-c1-literatura-moderna",
+          "title": "Literatura china moderna: fragmentos y análisis",
+          "targetTitle": "现当代文学选读",
+          "description": "Vas a leer y analizar fragmentos breves de literatura china moderna y contemporánea. Esto te va a permitir apreciar estilos narrativos propios y ampliar tu vocabulario literario.",
+          "subtopics": [
+            "Panorama de la literatura china moderna",
+            "Análisis de un cuento breve",
+            "Recursos narrativos del autor",
+            "Vocabulario literario y descriptivo",
+            "Comentario personal sobre un fragmento"
+          ],
+          "prerequisites": ["zh-c1-editoriales"]
+        },
+        {
+          "id": "zh-c1-escritura-academica",
+          "title": "Escritura académica y ensayos argumentativos",
+          "targetTitle": "学术写作与议论文",
+          "description": "Vas a aprender a estructurar ensayos argumentativos con rigor académico en chino. Esto te va a servir para producir textos extensos con una argumentación sólida y bien organizada.",
+          "subtopics": [
+            "Estructura de un ensayo argumentativo",
+            "Tesis, antítesis y síntesis",
+            "Citar fuentes y datos en un ensayo",
+            "Cohesión y coherencia en textos largos",
+            "Revisión y edición de un ensayo propio"
+          ],
+          "prerequisites": ["zh-c1-literatura-moderna"]
+        },
+        {
+          "id": "zh-c1-negociacion",
+          "title": "Lenguaje de negociación y negocios avanzados",
+          "targetTitle": "商务谈判语言",
+          "description": "Vas a aprender expresiones y estrategias lingüísticas para negociar en contextos de negocios de alto nivel. Esto te va a permitir desenvolverte con profesionalismo en reuniones y acuerdos comerciales.",
+          "subtopics": [
+            "Vocabulario de contratos y acuerdos",
+            "Estrategias de persuasión en la negociación",
+            "Expresar condiciones y concesiones comerciales",
+            "Resolver desacuerdos en una negociación",
+            "Cerrar un acuerdo formalmente"
+          ],
+          "prerequisites": ["zh-c1-escritura-academica"]
+        },
+        {
+          "id": "zh-c1-variacion-regional",
+          "title": "Variación regional y registros dialectales del mandarín",
+          "targetTitle": "普通话的地域变体",
+          "description": "Vas a conocer las principales variaciones regionales del mandarín hablado en distintas zonas de China. Esto te va a ayudar a entender acentos y expresiones fuera del estándar de Beijing.",
+          "subtopics": [
+            "Diferencias de acento entre regiones",
+            "Vocabulario regional común",
+            "Influencia de lenguas locales en el mandarín",
+            "Mandarín de Taiwán y otras variantes",
+            "Estrategias para entender distintos acentos"
+          ],
+          "prerequisites": ["zh-c1-negociacion"]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "topics": [
+        {
+          "id": "zh-c2-wenyanwen",
+          "title": "Introducción al chino clásico (文言文)",
+          "targetTitle": "文言文入门",
+          "description": "Vas a aprender las estructuras gramaticales básicas y el vocabulario esencial del chino clásico. Esto te va a permitir leer textos antiguos y entender el origen de muchas expresiones modernas.",
+          "subtopics": [
+            "Diferencias entre chino clásico y moderno",
+            "Partículas gramaticales clásicas comunes",
+            "Lectura de un texto clásico breve",
+            "Proverbios y citas clásicas célebres",
+            "Influencia del chino clásico en el mandarín actual"
+          ],
+          "prerequisites": ["zh-c1-variacion-regional"]
+        },
+        {
+          "id": "zh-c2-analisis-literario",
+          "title": "Análisis literario avanzado de textos chinos",
+          "targetTitle": "高级文学分析",
+          "description": "Vas a profundizar en el análisis crítico de obras literarias chinas de distintas épocas y estilos. Esto te va a servir para interpretar simbolismos y contextos históricos con nivel casi nativo.",
+          "subtopics": [
+            "Análisis de poesía clásica",
+            "Análisis de narrativa contemporánea",
+            "Simbolismo cultural en la literatura china",
+            "Contexto histórico y su influencia en el texto",
+            "Comparación de estilos entre autores"
+          ],
+          "prerequisites": ["zh-c2-wenyanwen"]
+        },
+        {
+          "id": "zh-c2-interpretacion",
+          "title": "Técnicas de interpretación y traducción oral",
+          "targetTitle": "口译与笔译技巧",
+          "description": "Vas a practicar técnicas de interpretación consecutiva y traducción oral entre el chino y el español. Esto te va a permitir actuar como intermediario lingüístico en situaciones profesionales exigentes.",
+          "subtopics": [
+            "Interpretación consecutiva básica",
+            "Toma de notas para interpretación",
+            "Traducción oral de textos técnicos",
+            "Manejo de la velocidad y la precisión",
+            "Ética y neutralidad del intérprete"
+          ],
+          "prerequisites": ["zh-c2-analisis-literario"]
+        },
+        {
+          "id": "zh-c2-oratoria",
+          "title": "Oratoria avanzada y discursos públicos",
+          "targetTitle": "高级演讲与公开演讲",
+          "description": "Vas a aprender a preparar y pronunciar discursos públicos persuasivos con un nivel de fluidez casi nativo. Esto te va a servir para presentar tus ideas con impacto ante cualquier audiencia china.",
+          "subtopics": [
+            "Estructura de un discurso persuasivo",
+            "Manejo de la voz y el ritmo",
+            "Conexión con la audiencia",
+            "Uso de recursos retóricos en vivo",
+            "Responder preguntas del público con soltura"
+          ],
+          "prerequisites": ["zh-c2-interpretacion"]
+        },
+        {
+          "id": "zh-c2-humor-juegos-palabras",
+          "title": "Humor, juegos de palabras y dobles sentidos",
+          "targetTitle": "幽默与文字游戏",
+          "description": "Vas a aprender a reconocer y producir humor, juegos de palabras y dobles sentidos propios del chino. Esto te va a permitir entender chistes y referencias culturales con matices muy sutiles.",
+          "subtopics": [
+            "Juegos de palabras basados en homófonos",
+            "Humor en la cultura popular china",
+            "Dobles sentidos en la conversación cotidiana",
+            "Memes y referencias de internet chino",
+            "Crear tus propios juegos de palabras"
+          ],
+          "prerequisites": ["zh-c2-oratoria"]
+        },
+        {
+          "id": "zh-c2-generos-textuales",
+          "title": "Dominio de géneros textuales: poesía, ensayo y reportaje",
+          "targetTitle": "诗歌、散文与报道写作",
+          "description": "Vas a aprender a producir textos propios en distintos géneros como la poesía, el ensayo y el reportaje periodístico. Esto te va a permitir expresar tus ideas con el estilo adecuado a cada formato.",
+          "subtopics": [
+            "Elementos de la poesía china moderna",
+            "Escritura de un ensayo personal",
+            "Redacción de un reportaje periodístico",
+            "Adaptar el tono según el género",
+            "Revisión estilística de un texto propio"
+          ],
+          "prerequisites": ["zh-c2-humor-juegos-palabras"]
+        },
+        {
+          "id": "zh-c2-pragmatica-intercultural",
+          "title": "Pragmática intercultural y matices de cortesía",
+          "targetTitle": "跨文化语用与礼貌细微差别",
+          "description": "Vas a profundizar en las normas de cortesía y los matices pragmáticos que varían entre la cultura china y la hispanohablante. Esto te va a ayudar a evitar malentendidos en contextos interculturales delicados.",
+          "subtopics": [
+            "Normas de cortesía indirecta en chino",
+            "Manejo del silencio y la ambigüedad",
+            "Malentendidos interculturales comunes",
+            "Adaptar el mensaje según la jerarquía social",
+            "Negociar significados en contextos ambiguos"
+          ],
+          "prerequisites": ["zh-c2-generos-textuales"]
+        },
+        {
+          "id": "zh-c2-dominio-integral",
+          "title": "Proyecto integrador: dominio nativo del mandarín",
+          "targetTitle": "综合能力：母语级运用",
+          "description": "Vas a integrar todas las competencias adquiridas en un proyecto final que demuestre un dominio del mandarín equivalente al de un hablante nativo culto. Esto te va a servir para certificar tu nivel más alto de competencia comunicativa en chino.",
+          "subtopics": [
+            "Producción de un ensayo extenso propio",
+            "Presentación oral integradora",
+            "Debate final sobre un tema complejo",
+            "Autoevaluación del progreso alcanzado",
+            "Plan de mantenimiento y perfeccionamiento continuo"
+          ],
+          "prerequisites": ["zh-c2-pragmatica-intercultural"]
+        }
+      ]
+    }
+  ]
+}
