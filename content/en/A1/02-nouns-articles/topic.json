@@ -41,6 +41,26 @@
         {
           "target": "The class is an hour long.",
           "es": "La clase dura una hora."
+        },
+        {
+          "target": "He wants a sandwich.",
+          "es": "Él quiere un sándwich."
+        },
+        {
+          "target": "She is an engineer.",
+          "es": "Ella es ingeniera."
+        },
+        {
+          "target": "I need an umbrella.",
+          "es": "Necesito un paraguas."
+        },
+        {
+          "target": "We saw a movie last night.",
+          "es": "Vimos una película anoche."
+        },
+        {
+          "target": "It's an honor to meet you.",
+          "es": "Es un honor conocerte."
         }
       ],
       "commonMistakes": [
@@ -48,6 +68,42 @@
           "wrong": "a apple",
           "right": "an apple",
           "why": "Delante de un sonido vocal se usa an."
+        },
+        {
+          "wrong": "an book",
+          "right": "a book",
+          "why": "Book empieza con sonido consonante /b/, así que va con a, no an."
+        },
+        {
+          "wrong": "She's an doctor.",
+          "right": "She's a doctor.",
+          "why": "Doctor empieza con sonido consonante /d/, por eso se usa a, no an."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "a couple of",
+          "es": "un par de",
+          "example": "I need a couple of apples.",
+          "exampleEs": "Necesito un par de manzanas."
+        },
+        {
+          "target": "a kind of",
+          "es": "una especie de",
+          "example": "It's a kind of fruit.",
+          "exampleEs": "Es una especie de fruta."
+        },
+        {
+          "target": "an hour ago",
+          "es": "hace una hora",
+          "example": "She arrived an hour ago.",
+          "exampleEs": "Ella llegó hace una hora."
+        },
+        {
+          "target": "a lot of",
+          "es": "mucho / mucha / muchos / muchas",
+          "example": "He has a lot of friends.",
+          "exampleEs": "Él tiene muchos amigos."
         }
       ]
     },
@@ -77,6 +133,26 @@
         {
           "target": "Close the door, please.",
           "es": "Cerrá la puerta, por favor."
+        },
+        {
+          "target": "The sun is shining today.",
+          "es": "El sol está brillando hoy."
+        },
+        {
+          "target": "Can you pass me the salt?",
+          "es": "¿Me pasás la sal?"
+        },
+        {
+          "target": "The children are playing outside.",
+          "es": "Los chicos están jugando afuera."
+        },
+        {
+          "target": "I bought the tickets online.",
+          "es": "Compré las entradas por internet."
+        },
+        {
+          "target": "She plays the guitar.",
+          "es": "Ella toca la guitarra."
         }
       ],
       "commonMistakes": [
@@ -84,6 +160,42 @@
           "wrong": "The life is beautiful.",
           "right": "Life is beautiful.",
           "why": "Para hablar de algo en general no se usa the."
+        },
+        {
+          "wrong": "I like the music.",
+          "right": "I like music.",
+          "why": "Cuando hablás de algo en general, sin referirte a algo específico, no se usa the."
+        },
+        {
+          "wrong": "Life is the beautiful.",
+          "right": "Life is beautiful.",
+          "why": "No se usa the antes de adjetivos; the va antes de sustantivos, no de adjetivos."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "in the morning",
+          "es": "por la mañana",
+          "example": "I drink coffee in the morning.",
+          "exampleEs": "Tomo café por la mañana."
+        },
+        {
+          "target": "the same",
+          "es": "lo mismo / el mismo",
+          "example": "We have the same book.",
+          "exampleEs": "Tenemos el mismo libro."
+        },
+        {
+          "target": "the best",
+          "es": "el/la mejor",
+          "example": "This is the best pizza in town.",
+          "exampleEs": "Esta es la mejor pizza de la ciudad."
+        },
+        {
+          "target": "on the weekend",
+          "es": "el fin de semana (EE.UU.: on the weekend; en inglés británico: at the weekend)",
+          "example": "I relax on the weekend.",
+          "exampleEs": "Me relajo el fin de semana."
         }
       ]
     },
@@ -99,7 +211,8 @@
         "Regla general: se agrega -s: car → cars.",
         "Terminados en -s, -sh, -ch, -x u -o: se agrega -es: bus → buses, watch → watches, potato → potatoes.",
         "Consonante + y → -ies: city → cities (pero day → days).",
-        "Irregulares frecuentes: man → men, woman → women, child → children, person → people, foot → feet, tooth → teeth."
+        "Irregulares frecuentes: man → men, woman → women, child → children, person → people, foot → feet, tooth → teeth.",
+        "En español los sustantivos tienen género (el niño/la niña) y el plural suele formarse agregando -s o -es de manera bastante regular. En inglés los sustantivos no tienen género gramatical y, además de la regla general de agregar -s/-es, hay varios plurales irregulares que hay que memorizar, como man → men o child → children."
       ],
       "examples": [
         {
@@ -113,6 +226,26 @@
         {
           "target": "Those people are my neighbors.",
           "es": "Esas personas son mis vecinos."
+        },
+        {
+          "target": "There are five boxes in the garage.",
+          "es": "Hay cinco cajas en el garage."
+        },
+        {
+          "target": "My feet hurt after the walk.",
+          "es": "Me duelen los pies después de la caminata."
+        },
+        {
+          "target": "The women are talking in the kitchen.",
+          "es": "Las mujeres están hablando en la cocina."
+        },
+        {
+          "target": "I have two brothers and three sisters.",
+          "es": "Tengo dos hermanos y tres hermanas."
+        },
+        {
+          "target": "The mice ran across the floor.",
+          "es": "Los ratones corrieron por el piso."
         }
       ],
       "commonMistakes": [
@@ -125,6 +258,37 @@
           "wrong": "The people is nice.",
           "right": "The people are nice.",
           "why": "People ya es plural, así que va con are."
+        },
+        {
+          "wrong": "two foots",
+          "right": "two feet",
+          "why": "Foot tiene plural irregular: foot → feet, no se le agrega -s."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "a few",
+          "es": "unos pocos / unas pocas",
+          "example": "I have a few questions.",
+          "exampleEs": "Tengo unas pocas preguntas."
+        },
+        {
+          "target": "lots of",
+          "es": "muchos / muchas",
+          "example": "There are lots of people here.",
+          "exampleEs": "Hay mucha gente acá."
+        },
+        {
+          "target": "a pair of",
+          "es": "un par de",
+          "example": "She bought a pair of shoes.",
+          "exampleEs": "Ella compró un par de zapatos."
+        },
+        {
+          "target": "both of them",
+          "es": "los dos / ambos",
+          "example": "Both of them are children.",
+          "exampleEs": "Los dos son chicos."
         }
       ]
     },
@@ -140,7 +304,8 @@
       "keyPoints": [
         "This (este, esta) y these (estos, estas) para lo que está cerca.",
         "That (ese, esa, aquel) y those (esos, esas, aquellos) para lo que está lejos.",
-        "This y that van con singular; these y those, con plural."
+        "This y that van con singular; these y those, con plural.",
+        "En español los demostrativos cambian según el género del sustantivo (este/esta, esos/esas), pero en inglés this/these y that/those no distinguen género, solo distinguen número (singular o plural) y distancia (cerca o lejos)."
       ],
       "examples": [
         {
@@ -154,6 +319,26 @@
         {
           "target": "Is that your car?",
           "es": "¿Ese es tu auto?"
+        },
+        {
+          "target": "This is my sister.",
+          "es": "Esta es mi hermana."
+        },
+        {
+          "target": "That man is my teacher.",
+          "es": "Ese hombre es mi profesor."
+        },
+        {
+          "target": "These cookies are delicious.",
+          "es": "Estas galletitas están deliciosas."
+        },
+        {
+          "target": "Those mountains are beautiful.",
+          "es": "Esas montañas son hermosas."
+        },
+        {
+          "target": "Is this your bag?",
+          "es": "¿Esta es tu bolsa?"
         }
       ],
       "commonMistakes": [
@@ -161,6 +346,42 @@
           "wrong": "This books are new.",
           "right": "These books are new.",
           "why": "Con sustantivos en plural se usa these."
+        },
+        {
+          "wrong": "Those book is mine.",
+          "right": "That book is mine.",
+          "why": "Book es singular, entonces corresponde that, no those, que se usa para plural."
+        },
+        {
+          "wrong": "This are my keys.",
+          "right": "These are my keys.",
+          "why": "Keys es plural, así que va con these, no con this, que es para singular."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "this way",
+          "es": "por aquí / así",
+          "example": "Come this way, please.",
+          "exampleEs": "Vení por aquí, por favor."
+        },
+        {
+          "target": "that's right",
+          "es": "eso es correcto",
+          "example": "That's right, the meeting is at 5.",
+          "exampleEs": "Eso es correcto, la reunión es a las 5."
+        },
+        {
+          "target": "these days",
+          "es": "en estos días / hoy en día",
+          "example": "People work from home these days.",
+          "exampleEs": "La gente trabaja desde casa hoy en día."
+        },
+        {
+          "target": "those were the days",
+          "es": "esos eran los tiempos",
+          "example": "Those were the days when we were young.",
+          "exampleEs": "Esos eran los tiempos cuando éramos jóvenes."
         }
       ]
     },
@@ -192,6 +413,26 @@
         {
           "target": "Is there a pharmacy near here?",
           "es": "¿Hay una farmacia cerca de acá?"
+        },
+        {
+          "target": "There is a book on the table.",
+          "es": "Hay un libro sobre la mesa."
+        },
+        {
+          "target": "There are many students in the classroom.",
+          "es": "Hay muchos estudiantes en el aula."
+        },
+        {
+          "target": "There isn't a bathroom on this floor.",
+          "es": "No hay un baño en este piso."
+        },
+        {
+          "target": "Are there any eggs in the fridge?",
+          "es": "¿Hay huevos en la heladera?"
+        },
+        {
+          "target": "There is no water left.",
+          "es": "No queda agua."
         }
       ],
       "commonMistakes": [
@@ -199,6 +440,42 @@
           "wrong": "Have a problem in my house.",
           "right": "There is a problem in my house.",
           "why": "'Hay' no se traduce con have: se usa there is o there are."
+        },
+        {
+          "wrong": "There is two cats in the yard.",
+          "right": "There are two cats in the yard.",
+          "why": "Cats es plural, entonces se usa there are, no there is."
+        },
+        {
+          "wrong": "There is some chairs.",
+          "right": "There are some chairs.",
+          "why": "Chairs es plural, así que corresponde there are, no there is."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "there is no",
+          "es": "no hay",
+          "example": "There is no milk in the fridge.",
+          "exampleEs": "No hay leche en la heladera."
+        },
+        {
+          "target": "there used to be",
+          "es": "solía haber",
+          "example": "There used to be a cinema here.",
+          "exampleEs": "Solía haber un cine acá."
+        },
+        {
+          "target": "there seems to be",
+          "es": "parece que hay",
+          "example": "There seems to be a problem.",
+          "exampleEs": "Parece que hay un problema."
+        },
+        {
+          "target": "there isn't any",
+          "es": "no hay nada de",
+          "example": "There isn't any sugar left.",
+          "exampleEs": "No queda nada de azúcar."
         }
       ]
     }

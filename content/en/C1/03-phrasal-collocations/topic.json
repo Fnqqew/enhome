@@ -1,7 +1,7 @@
 {
   "id": "c1-phrasal-collocations",
   "level": "C1",
-  "order": 3,
+  "order": 5,
   "title": "Phrasal verbs y colocaciones",
   "targetTitle": "Phrasal verbs and collocations",
   "description": "Cómo funcionan los phrasal verbs (separables, inseparables y de tres partes) y qué palabras van naturalmente juntas para sonar como un hablante nativo.",
@@ -11,7 +11,9 @@
     "Combinar verbos y sustantivos con sus colocaciones naturales (make, do, take, pay...)",
     "Usar colocaciones de adjetivos y adverbios y evitar traducciones literales del español"
   ],
-  "prerequisites": ["b2-wishes-reporting"],
+  "prerequisites": [
+    "b2-wishes-reporting"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,7 +21,10 @@
       "day": 1,
       "title": "La lógica de las partículas",
       "goal": "Deducir el significado de los phrasal verbs a partir de la partícula.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Muchos phrasal verbs tienen más de un significado, pero las partículas siguen patrones que ayudan a deducirlos.",
         "up = completar o aumentar: use up, eat up, speed up, turn up the volume. out = hasta el final, resolver o agotarse: work out, sort out, figure out, run out of.",
@@ -27,13 +32,30 @@
         "on = continuar: carry on, keep on, go on. back = volver o devolver: call back, pay back, cut back."
       ],
       "examples": [
-        { "target": "We've run out of milk; can you pick some up on your way home?", "es": "Se nos terminó la leche, ¿podés comprar a la vuelta?" },
-        { "target": "The game was called off because of the storm.", "es": "Suspendieron el partido por la tormenta." },
-        { "target": "I'm trying to cut down on sugar.", "es": "Estoy tratando de comer menos azúcar." }
+        {
+          "target": "We've run out of milk; can you pick some up on your way home?",
+          "es": "Se nos terminó la leche, ¿podés comprar a la vuelta?"
+        },
+        {
+          "target": "The game was called off because of the storm.",
+          "es": "Suspendieron el partido por la tormenta."
+        },
+        {
+          "target": "I'm trying to cut down on sugar.",
+          "es": "Estoy tratando de comer menos azúcar."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "The meeting was suspended because the boss was sick.", "right": "The meeting was called off because the boss was sick.", "why": "Suspend es interrumpir algo por un tiempo (o sancionar a alguien); para 'suspender' un evento en el sentido de cancelarlo se usa call off o cancel." },
-        { "wrong": "Can you turn on the volume?", "right": "Can you turn up the volume?", "why": "turn on / off = prender / apagar; turn up / down = subir / bajar el volumen o la temperatura." }
+        {
+          "wrong": "The meeting was suspended because the boss was sick.",
+          "right": "The meeting was called off because the boss was sick.",
+          "why": "Suspend es interrumpir algo por un tiempo (o sancionar a alguien); para 'suspender' un evento en el sentido de cancelarlo se usa call off o cancel."
+        },
+        {
+          "wrong": "Can you turn on the volume?",
+          "right": "Can you turn up the volume?",
+          "why": "turn on / off = prender / apagar; turn up / down = subir / bajar el volumen o la temperatura."
+        }
       ]
     },
     {
@@ -41,7 +63,9 @@
       "day": 2,
       "title": "Separables, inseparables y de tres partes",
       "goal": "Usar el orden correcto de las palabras con cada tipo de phrasal verb.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Separables: el objeto puede ir en el medio o al final: turn the light off / turn off the light.",
         "Con pronombres (it, them, her) el objeto va siempre en el medio: turn it off, nunca turn off it.",
@@ -50,13 +74,30 @@
         "Algunos no llevan objeto: break down, show up, grow up, give in."
       ],
       "examples": [
-        { "target": "I wrote her number down, but now I can't find it.", "es": "Anoté su número, pero ahora no lo encuentro." },
-        { "target": "It took me weeks to get over the flu.", "es": "Tardé semanas en recuperarme de la gripe." },
-        { "target": "I don't know how you put up with all that noise.", "es": "No sé cómo aguantás todo ese ruido." }
+        {
+          "target": "I wrote her number down, but now I can't find it.",
+          "es": "Anoté su número, pero ahora no lo encuentro."
+        },
+        {
+          "target": "It took me weeks to get over the flu.",
+          "es": "Tardé semanas en recuperarme de la gripe."
+        },
+        {
+          "target": "I don't know how you put up with all that noise.",
+          "es": "No sé cómo aguantás todo ese ruido."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I picked up her at the airport.", "right": "I picked her up at the airport.", "why": "Con un pronombre (her, it, them), el objeto va entre el verbo y la partícula." },
-        { "wrong": "She looks her little brother after.", "right": "She looks after her little brother.", "why": "Look after es inseparable: el objeto va siempre después de la partícula." }
+        {
+          "wrong": "I picked up her at the airport.",
+          "right": "I picked her up at the airport.",
+          "why": "Con un pronombre (her, it, them), el objeto va entre el verbo y la partícula."
+        },
+        {
+          "wrong": "She looks her little brother after.",
+          "right": "She looks after her little brother.",
+          "why": "Look after es inseparable: el objeto va siempre después de la partícula."
+        }
       ]
     },
     {
@@ -64,7 +105,10 @@
       "day": 3,
       "title": "Colocaciones con verbos",
       "goal": "Usar el verbo correcto con cada sustantivo.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Una colocación es una combinación natural de palabras: otra opción puede entenderse, pero suena extraña.",
         "make vs. do: make a decision, a mistake, progress, an effort, a complaint / do research, your best, damage, business, someone a favor.",
@@ -72,14 +116,35 @@
         "Verbos más precisos: raise a question, meet a deadline, reach a conclusion, run a business, break a record, keep a promise."
       ],
       "examples": [
-        { "target": "We need to make a decision by the end of the week.", "es": "Tenemos que tomar una decisión antes del fin de semana." },
-        { "target": "Could you do me a favor and water my plants?", "es": "¿Me hacés el favor de regarme las plantas?" },
-        { "target": "If we don't speed up, we won't meet the deadline.", "es": "Si no nos apuramos, no vamos a llegar con el plazo." }
+        {
+          "target": "We need to make a decision by the end of the week.",
+          "es": "Tenemos que tomar una decisión antes del fin de semana."
+        },
+        {
+          "target": "Could you do me a favor and water my plants?",
+          "es": "¿Me hacés el favor de regarme las plantas?"
+        },
+        {
+          "target": "If we don't speed up, we won't meet the deadline.",
+          "es": "Si no nos apuramos, no vamos a llegar con el plazo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I did a mistake.", "right": "I made a mistake.", "why": "Con mistake se usa make, aunque en español digas 'hacer' o 'cometer'." },
-        { "wrong": "She gave an exam yesterday.", "right": "She took an exam yesterday.", "why": "'Rendir un examen' es take an exam; give an exam es tomarlo, como hace el profesor." },
-        { "wrong": "Please lend attention.", "right": "Please pay attention.", "why": "'Prestar atención' es pay attention; lend es prestar algo material." }
+        {
+          "wrong": "I did a mistake.",
+          "right": "I made a mistake.",
+          "why": "Con mistake se usa make, aunque en español digas 'hacer' o 'cometer'."
+        },
+        {
+          "wrong": "She gave an exam yesterday.",
+          "right": "She took an exam yesterday.",
+          "why": "'Rendir un examen' es take an exam; give an exam es tomarlo, como hace el profesor."
+        },
+        {
+          "wrong": "Please lend attention.",
+          "right": "Please pay attention.",
+          "why": "'Prestar atención' es pay attention; lend es prestar algo material."
+        }
       ]
     },
     {
@@ -87,7 +152,10 @@
       "day": 4,
       "title": "Colocaciones con adjetivos y adverbios",
       "goal": "Combinar adjetivos, adverbios y sustantivos de forma natural.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Adjetivo + sustantivo: heavy rain / traffic, strong coffee / wind, a high price, a narrow escape, a close friend, a wide range.",
         "Adverbio + adjetivo: deeply concerned, highly unlikely, bitterly disappointed, fully aware, utterly ridiculous, painfully slow.",
@@ -95,13 +163,30 @@
         "Para encontrar colocaciones, fijate en los ejemplos de un diccionario para estudiantes o en un diccionario de colocaciones."
       ],
       "examples": [
-        { "target": "Heavy traffic delayed the start of the conference.", "es": "El tránsito pesado demoró el comienzo del congreso." },
-        { "target": "I'm fully aware of the risks involved.", "es": "Soy plenamente consciente de los riesgos que implica." },
-        { "target": "It's highly unlikely that they'll change their minds.", "es": "Es muy poco probable que cambien de opinión." }
+        {
+          "target": "Heavy traffic delayed the start of the conference.",
+          "es": "El tránsito pesado demoró el comienzo del congreso."
+        },
+        {
+          "target": "I'm fully aware of the risks involved.",
+          "es": "Soy plenamente consciente de los riesgos que implica."
+        },
+        {
+          "target": "It's highly unlikely that they'll change their minds.",
+          "es": "Es muy poco probable que cambien de opinión."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "There was strong rain yesterday.", "right": "There was heavy rain yesterday.", "why": "Para la lluvia, el tránsito o el humo intensos se usa heavy, no strong." },
-        { "wrong": "The movie was very fascinating.", "right": "The movie was absolutely fascinating.", "why": "Con adjetivos extremos (fascinating, exhausted, huge) se usa absolutely, no very." }
+        {
+          "wrong": "There was strong rain yesterday.",
+          "right": "There was heavy rain yesterday.",
+          "why": "Para la lluvia, el tránsito o el humo intensos se usa heavy, no strong."
+        },
+        {
+          "wrong": "The movie was very fascinating.",
+          "right": "The movie was absolutely fascinating.",
+          "why": "Con adjetivos extremos (fascinating, exhausted, huge) se usa absolutely, no very."
+        }
       ]
     },
     {
@@ -109,7 +194,10 @@
       "day": 5,
       "title": "Una entrada de blog",
       "goal": "Leer y escribir una entrada de blog natural y fluida con phrasal verbs y colocaciones.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Un registro personal o semiformal admite muchos phrasal verbs: set up, come across, end up, turn out, give up.",
         "Usá colocaciones para ser preciso: take a risk, make a living, a steep learning curve, a tough decision.",
@@ -117,12 +205,25 @@
         "Revisá la posición de los pronombres con los phrasal verbs separables: set it up, not set up it."
       ],
       "examples": [
-        { "target": "Three years ago, I decided to take the plunge and set up my own business.", "es": "Hace tres años me decidí a dar el salto y armar mi propio negocio." },
-        { "target": "It turned out to be much harder than I'd expected.", "es": "Resultó ser mucho más difícil de lo que esperaba." },
-        { "target": "I've made plenty of mistakes, but I've learned from every single one.", "es": "Cometí un montón de errores, pero aprendí de cada uno de ellos." }
+        {
+          "target": "Three years ago, I decided to take the plunge and set up my own business.",
+          "es": "Hace tres años me decidí a dar el salto y armar mi propio negocio."
+        },
+        {
+          "target": "It turned out to be much harder than I'd expected.",
+          "es": "Resultó ser mucho más difícil de lo que esperaba."
+        },
+        {
+          "target": "I've made plenty of mistakes, but I've learned from every single one.",
+          "es": "Cometí un montón de errores, pero aprendí de cada uno de ellos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I ended up to work there for five years.", "right": "I ended up working there for five years.", "why": "End up va seguido de -ing (o de un lugar: ended up in Spain), nunca de to." }
+        {
+          "wrong": "I ended up to work there for five years.",
+          "right": "I ended up working there for five years.",
+          "why": "End up va seguido de -ing (o de un lugar: ended up in Spain), nunca de to."
+        }
       ]
     }
   ]

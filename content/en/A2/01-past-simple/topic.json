@@ -11,7 +11,10 @@
     "Negar y preguntar con did",
     "Narrar una experiencia o un día en orden"
   ],
-  "prerequisites": ["a1-to-be", "a1-present-simple"],
+  "prerequisites": [
+    "a1-to-be",
+    "a1-present-simple"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,19 +22,85 @@
       "day": 1,
       "title": "Was y were",
       "goal": "Usar el pasado de to be en afirmativo, negativo y pregunta.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Pasado de to be: I / he / she / it was; you / we / they were.",
         "Negativo: wasn't, weren't. Pregunta: Were you at home?",
-        "Expresiones de tiempo: yesterday, last night, last week, two days ago, in 2020."
+        "Expresiones de tiempo: yesterday, last night, last week, two days ago, in 2020.",
+        "En español el verbo ser/estar en pasado cambia según cada persona (yo era, vos eras, él era), pero en inglés to be en pasado solo tiene dos formas: was (I/he/she/it) y were (you/we/they)."
       ],
       "examples": [
-        { "target": "I was tired yesterday.", "es": "Ayer estaba cansado." },
-        { "target": "We weren't at the party.", "es": "No estuvimos en la fiesta." },
-        { "target": "Where were you last night?", "es": "¿Dónde estuviste anoche?" }
+        {
+          "target": "I was tired yesterday.",
+          "es": "Ayer estaba cansado."
+        },
+        {
+          "target": "We weren't at the party.",
+          "es": "No estuvimos en la fiesta."
+        },
+        {
+          "target": "Where were you last night?",
+          "es": "¿Dónde estuviste anoche?"
+        },
+        {
+          "target": "She was at school yesterday.",
+          "es": "Ella estuvo en la escuela ayer."
+        },
+        {
+          "target": "They were very happy with the results.",
+          "es": "Ellos estaban muy contentos con los resultados."
+        },
+        {
+          "target": "I wasn't ready for the exam.",
+          "es": "Yo no estaba list@ para el examen."
+        },
+        {
+          "target": "Was he at the meeting this morning?",
+          "es": "¿Él estuvo en la reunión esta mañana?"
+        },
+        {
+          "target": "We were in Chicago last summer.",
+          "es": "Estuvimos en Chicago el verano pasado."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "They was happy.", "right": "They were happy.", "why": "Con you, we y they se usa were." }
+        {
+          "wrong": "They was happy.",
+          "right": "They were happy.",
+          "why": "Con you, we y they se usa were."
+        },
+        {
+          "wrong": "You was late.",
+          "right": "You were late.",
+          "why": "You siempre va con were, nunca con was, aunque te refieras a una sola persona."
+        },
+        {
+          "wrong": "She were sad.",
+          "right": "She was sad.",
+          "why": "Con he/she/it se usa was; were es solo para you/we/they."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "was born",
+          "es": "nació / nací",
+          "example": "She was born in 1995.",
+          "exampleEs": "Ella nació en 1995."
+        },
+        {
+          "target": "was about to",
+          "es": "estaba a punto de",
+          "example": "I was about to call you.",
+          "exampleEs": "Estaba a punto de llamarte."
+        },
+        {
+          "target": "it was a pleasure",
+          "es": "fue un placer",
+          "example": "It was a pleasure to meet you.",
+          "exampleEs": "Fue un placer conocerte."
+        }
       ]
     },
     {
@@ -39,19 +108,91 @@
       "day": 2,
       "title": "Verbos regulares",
       "goal": "Formar el pasado con -ed y aplicar sus reglas de escritura.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Se agrega -ed: work → worked. Es igual para todas las personas.",
         "Terminados en e: like → liked. Consonante + y: study → studied. Una sílaba consonante-vocal-consonante: stop → stopped.",
-        "El -ed suena /ɪd/ solo después de t o d: wanted, needed. En los demás casos no se agrega sílaba: worked, played."
+        "El -ed suena /ɪd/ solo después de t o d: wanted, needed. En los demás casos no se agrega sílaba: worked, played.",
+        "En español el pasado tiene terminaciones distintas según la persona (trabajé, trabajaste, trabajó), pero en inglés el pasado regular con -ed es igual para todas las personas: I worked, she worked, they worked."
       ],
       "examples": [
-        { "target": "I watched a movie last night.", "es": "Anoche vi una película." },
-        { "target": "She studied medicine.", "es": "Estudió medicina." },
-        { "target": "We stopped at a gas station.", "es": "Paramos en una estación de servicio." }
+        {
+          "target": "I watched a movie last night.",
+          "es": "Anoche vi una película."
+        },
+        {
+          "target": "She studied medicine.",
+          "es": "Estudió medicina."
+        },
+        {
+          "target": "We stopped at a gas station.",
+          "es": "Paramos en una estación de servicio."
+        },
+        {
+          "target": "They played soccer last weekend.",
+          "es": "Ellos jugaron al fútbol el fin de semana pasado."
+        },
+        {
+          "target": "We traveled to Brazil last year.",
+          "es": "Viajamos a Brasil el año pasado."
+        },
+        {
+          "target": "He cleaned his room yesterday.",
+          "es": "Él limpió su cuarto ayer."
+        },
+        {
+          "target": "I called you twice last night.",
+          "es": "Te llamé dos veces anoche."
+        },
+        {
+          "target": "She finished her homework early.",
+          "es": "Ella terminó la tarea temprano."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I studyed a lot.", "right": "I studied a lot.", "why": "Consonante + y cambia a -ied." }
+        {
+          "wrong": "I studyed a lot.",
+          "right": "I studied a lot.",
+          "why": "Consonante + y cambia a -ied."
+        },
+        {
+          "wrong": "I stoped at the light.",
+          "right": "I stopped at the light.",
+          "why": "En verbos de una sílaba que terminan en consonante-vocal-consonante se duplica la última consonante antes de agregar -ed."
+        },
+        {
+          "wrong": "He playd football.",
+          "right": "He played football.",
+          "why": "Cuando el verbo termina en vocal + y, solo se agrega -ed; no se cambia la y como en study → studied."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "worked out",
+          "es": "resultó bien / salió bien",
+          "example": "Everything worked out in the end.",
+          "exampleEs": "Al final todo salió bien."
+        },
+        {
+          "target": "showed up",
+          "es": "apareció / se presentó",
+          "example": "He showed up late to the meeting.",
+          "exampleEs": "Apareció tarde a la reunión."
+        },
+        {
+          "target": "turned out",
+          "es": "resultó ser",
+          "example": "The movie turned out to be great.",
+          "exampleEs": "La película resultó ser genial."
+        },
+        {
+          "target": "ended up",
+          "es": "terminó / acabó",
+          "example": "We ended up staying home all day.",
+          "exampleEs": "Terminamos quedándonos en casa todo el día."
+        }
       ]
     },
     {
@@ -59,19 +200,92 @@
       "day": 3,
       "title": "Verbos irregulares más usados",
       "goal": "Reconocer y usar los verbos irregulares más frecuentes.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "No siguen la regla -ed y hay que aprenderlos: go → went, have → had, do → did, make → made, see → saw, get → got, buy → bought, eat → ate, take → took, come → came.",
         "Igual que los regulares, no cambian según la persona: I went, she went.",
-        "Conviene aprenderlos en grupos que suenan parecido: buy / bought, think / thought, bring / brought."
+        "Conviene aprenderlos en grupos que suenan parecido: buy / bought, think / thought, bring / brought.",
+        "En español muchos verbos irregulares en pasado siguen patrones reconocibles (tener→tuve, hacer→hice), pero en inglés los verbos irregulares no tienen una regla fija y hay que memorizar cada forma por separado (go→went, buy→bought)."
       ],
       "examples": [
-        { "target": "We went to the beach in January.", "es": "Fuimos a la playa en enero." },
-        { "target": "He bought a new phone.", "es": "Se compró un teléfono nuevo." },
-        { "target": "I saw your brother yesterday.", "es": "Ayer vi a tu hermano." }
+        {
+          "target": "We went to the beach in January.",
+          "es": "Fuimos a la playa en enero."
+        },
+        {
+          "target": "He bought a new phone.",
+          "es": "Se compró un teléfono nuevo."
+        },
+        {
+          "target": "I saw your brother yesterday.",
+          "es": "Ayer vi a tu hermano."
+        },
+        {
+          "target": "She made a cake for the party.",
+          "es": "Ella hizo una torta para la fiesta."
+        },
+        {
+          "target": "I took a lot of photos on vacation.",
+          "es": "Saqué muchas fotos en las vacaciones."
+        },
+        {
+          "target": "They came home late last night.",
+          "es": "Ellos llegaron a casa tarde anoche."
+        },
+        {
+          "target": "He got a new job last month.",
+          "es": "Él consiguió un trabajo nuevo el mes pasado."
+        },
+        {
+          "target": "We had a great time at the wedding.",
+          "es": "La pasamos genial en el casamiento."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I goed to the cinema.", "right": "I went to the cinema.", "why": "Go es irregular: su pasado es went." }
+        {
+          "wrong": "I goed to the cinema.",
+          "right": "I went to the cinema.",
+          "why": "Go es irregular: su pasado es went."
+        },
+        {
+          "wrong": "She buyed a new car.",
+          "right": "She bought a new car.",
+          "why": "Buy es irregular: su pasado es bought, no se le agrega -ed."
+        },
+        {
+          "wrong": "I thinked about it.",
+          "right": "I thought about it.",
+          "why": "Think es irregular: su pasado es thought, no sigue la regla de -ed."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "took place",
+          "es": "tuvo lugar / se realizó",
+          "example": "The meeting took place last Friday.",
+          "exampleEs": "La reunión tuvo lugar el viernes pasado."
+        },
+        {
+          "target": "made up",
+          "es": "se inventó / se reconcilió",
+          "example": "He made up an excuse for being late.",
+          "exampleEs": "Él se inventó una excusa por llegar tarde."
+        },
+        {
+          "target": "got along",
+          "es": "se llevó bien",
+          "example": "We got along really well at the party.",
+          "exampleEs": "Nos llevamos muy bien en la fiesta."
+        },
+        {
+          "target": "had a good time",
+          "es": "la pasó bien",
+          "example": "We had a good time at the beach.",
+          "exampleEs": "La pasamos bien en la playa."
+        }
       ]
     },
     {
@@ -79,21 +293,81 @@
       "day": 4,
       "title": "Negativo y preguntas con did",
       "goal": "Negar y preguntar en pasado simple con did.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Negativo: didn't + verbo base: I didn't go.",
         "Pregunta: Did + sujeto + verbo base: Did you see it?",
         "El pasado lo marca did; el verbo principal vuelve a su forma base.",
-        "Respuestas cortas: Yes, I did. / No, she didn't."
+        "Respuestas cortas: Yes, I did. / No, she didn't.",
+        "En español la pregunta y la negación en pasado no necesitan una palabra extra (¿Fuiste? / No fui), pero en inglés el pasado simple necesita el auxiliar did/didn't tanto para negar como para preguntar."
       ],
       "examples": [
-        { "target": "I didn't sleep well.", "es": "No dormí bien." },
-        { "target": "Did you finish your homework?", "es": "¿Terminaste la tarea?" },
-        { "target": "What did they eat?", "es": "¿Qué comieron?" }
+        {
+          "target": "I didn't sleep well.",
+          "es": "No dormí bien."
+        },
+        {
+          "target": "Did you finish your homework?",
+          "es": "¿Terminaste la tarea?"
+        },
+        {
+          "target": "What did they eat?",
+          "es": "¿Qué comieron?"
+        },
+        {
+          "target": "We didn't watch the game.",
+          "es": "No vimos el partido."
+        },
+        {
+          "target": "Did she call you yesterday?",
+          "es": "¿Ella te llamó ayer?"
+        },
+        {
+          "target": "They didn't understand the question.",
+          "es": "Ellos no entendieron la pregunta."
+        },
+        {
+          "target": "Did he arrive on time?",
+          "es": "¿Él llegó a tiempo?"
+        },
+        {
+          "target": "Why didn't you answer my message?",
+          "es": "¿Por qué no contestaste mi mensaje?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "She didn't went to work.", "right": "She didn't go to work.", "why": "Después de didn't el verbo va en forma base." },
-        { "wrong": "Did you saw the game?", "right": "Did you see the game?", "why": "En preguntas con did el verbo va en forma base." }
+        {
+          "wrong": "She didn't went to work.",
+          "right": "She didn't go to work.",
+          "why": "Después de didn't el verbo va en forma base."
+        },
+        {
+          "wrong": "Did you saw the game?",
+          "right": "Did you see the game?",
+          "why": "En preguntas con did el verbo va en forma base."
+        },
+        {
+          "wrong": "Didn't you went to the party?",
+          "right": "Didn't you go to the party?",
+          "why": "Después de did/didn't, el verbo siempre va en su forma base, nunca en pasado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "didn't mean to",
+          "es": "no fue mi intención / no quise",
+          "example": "I didn't mean to hurt you.",
+          "exampleEs": "No fue mi intención lastimarte."
+        },
+        {
+          "target": "What did you say?",
+          "es": "¿Qué dijiste?",
+          "example": "Sorry, what did you say?",
+          "exampleEs": "Perdón, ¿qué dijiste?"
+        }
       ]
     },
     {
@@ -101,19 +375,92 @@
       "day": 5,
       "title": "Contar lo que pasó",
       "goal": "Comprender y escribir un relato breve en pasado.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Conectores para narrar: first, then, after that, later, finally.",
         "When une dos momentos: When I got home, I made dinner.",
-        "Las expresiones de tiempo pueden ir al principio o al final: Last Sunday we went out. / We went out last Sunday."
+        "Las expresiones de tiempo pueden ir al principio o al final: Last Sunday we went out. / We went out last Sunday.",
+        "En español al narrar solemos usar el pretérito simple sin tantos conectores explícitos, pero en inglés es muy común marcar el orden de los hechos con palabras como first, then, after that y finally."
       ],
       "examples": [
-        { "target": "Last Saturday I got up late.", "es": "El sábado pasado me levanté tarde." },
-        { "target": "After that, we had lunch at my grandmother's house.", "es": "Después almorzamos en la casa de mi abuela." },
-        { "target": "When I got home, I called my mom.", "es": "Cuando llegué a casa, llamé a mi mamá." }
+        {
+          "target": "Last Saturday I got up late.",
+          "es": "El sábado pasado me levanté tarde."
+        },
+        {
+          "target": "After that, we had lunch at my grandmother's house.",
+          "es": "Después almorzamos en la casa de mi abuela."
+        },
+        {
+          "target": "When I got home, I called my mom.",
+          "es": "Cuando llegué a casa, llamé a mi mamá."
+        },
+        {
+          "target": "First, we had breakfast, then we went for a walk.",
+          "es": "Primero desayunamos, después salimos a caminar."
+        },
+        {
+          "target": "Later, she called me to tell me the news.",
+          "es": "Más tarde ella me llamó para contarme la noticia."
+        },
+        {
+          "target": "Finally, we got home around midnight.",
+          "es": "Finalmente, llegamos a casa cerca de la medianoche."
+        },
+        {
+          "target": "Yesterday I ran into an old friend at the store.",
+          "es": "Ayer me encontré por casualidad con un viejo amigo en el almacén."
+        },
+        {
+          "target": "After the movie, we went for pizza.",
+          "es": "Después de la película, fuimos a comer pizza."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Yesterday I go to the supermarket.", "right": "Yesterday I went to the supermarket.", "why": "Con yesterday se usa pasado simple." }
+        {
+          "wrong": "Yesterday I go to the supermarket.",
+          "right": "Yesterday I went to the supermarket.",
+          "why": "Con yesterday se usa pasado simple."
+        },
+        {
+          "wrong": "When I was arrived, everyone was there.",
+          "right": "When I arrived, everyone was there.",
+          "why": "Con when + pasado simple no se usa was/were junto con el verbo principal; arrived ya está en pasado, no hace falta agregar was."
+        },
+        {
+          "wrong": "First I went to the bank, after I went home.",
+          "right": "First I went to the bank, then I went home.",
+          "why": "Then se usa para indicar la siguiente acción en una secuencia; after necesita un complemento (after that), no se usa solo de esa forma."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "ran into",
+          "es": "se encontró por casualidad con",
+          "example": "I ran into my old teacher downtown.",
+          "exampleEs": "Me encontré por casualidad con mi vieja profesora en el centro."
+        },
+        {
+          "target": "found out",
+          "es": "se enteró de",
+          "example": "She found out the truth later that day.",
+          "exampleEs": "Ella se enteró de la verdad más tarde ese día."
+        },
+        {
+          "target": "all of a sudden",
+          "es": "de repente",
+          "example": "All of a sudden, it started to rain.",
+          "exampleEs": "De repente, empezó a llover."
+        },
+        {
+          "target": "in the end",
+          "es": "al final",
+          "example": "In the end, we decided to stay home.",
+          "exampleEs": "Al final, decidimos quedarnos en casa."
+        }
       ]
     }
   ]

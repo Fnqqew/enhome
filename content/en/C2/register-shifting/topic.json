@@ -1,0 +1,520 @@
+{
+  "id": "en-c2-register-shifting",
+  "level": "C2",
+  "order": 3,
+  "title": "Cambiar de registro con fluidez",
+  "targetTitle": "Shifting Register Fluently",
+  "description": "Vas a aprender a moverte con naturalidad entre el inglés muy formal y el muy coloquial según la situación, reconociendo marcas de registro en vocabulario y gramática. Esto te sirve para adaptar tu discurso a cualquier interlocutor, desde un informe académico hasta una charla entre amigos.",
+  "objectives": [
+    "Reconocer las marcas léxicas, gramaticales y de puntuación que definen el registro formal y el informal en inglés.",
+    "Usar slang y jerga contemporánea con criterio, sabiendo cuándo conviene usarlo y cuándo es un error de registro.",
+    "Manejar transiciones de registro dentro de un mismo texto sin que suene a error ni a falta de control del idioma.",
+    "Analizar textos auténticos (cartas, emails, artículos, conversaciones) para identificar qué recursos construyen su registro.",
+    "Diferenciar marcas de registro propias del inglés estadounidense de las del inglés británico."
+  ],
+  "prerequisites": [
+    "en-c2-nuanced-modality"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "formal-register-markers",
+      "day": 1,
+      "title": "Marcas de registro formal",
+      "goal": "vas a poder identificar y producir las marcas léxicas y gramaticales que hacen que un texto en inglés suene formal.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El vocabulario de origen latino/francés (commence, terminate, request) reemplaza al germánico corto (start, end, ask) y marca formalidad.",
+        "La voz pasiva y la nominalización (the decision was made en vez de we decided) crean distancia e impersonalidad.",
+        "Los modales de cortesía extrema —would, could, shall— aparecen en pedidos y ofrecimientos formales.",
+        "Conectores como furthermore, notwithstanding, hereby y pursuant to organizan el discurso formal escrito.",
+        "Se evitan contracciones y phrasal verbs informales: se prefiere investigate a look into, por ejemplo.",
+        "En inglés británico, Yours faithfully / Yours sincerely cierran cartas formales; en EE.UU. se usa Sincerely o Best regards."
+      ],
+      "examples": [
+        {
+          "target": "We regret to inform you that your application has been unsuccessful.",
+          "es": "Lamentamos informarte que tu postulación no fue aceptada."
+        },
+        {
+          "target": "I would be most grateful if you could confirm your attendance at your earliest convenience.",
+          "es": "Te agradecería enormemente que confirmaras tu asistencia a la brevedad."
+        },
+        {
+          "target": "The committee has reached a unanimous decision regarding the matter.",
+          "es": "El comité llegó a una decisión unánime respecto del asunto."
+        },
+        {
+          "target": "Should you require further assistance, please do not hesitate to contact us.",
+          "es": "Si necesitás más ayuda, no dudes en contactarnos."
+        },
+        {
+          "target": "It is imperative that all employees adhere to the new regulations.",
+          "es": "Es imperativo que todos los empleados cumplan con las nuevas regulaciones."
+        },
+        {
+          "target": "Notwithstanding the aforementioned difficulties, the project was completed on schedule.",
+          "es": "A pesar de las dificultades mencionadas, el proyecto se completó en el plazo previsto."
+        },
+        {
+          "target": "We kindly request that you refrain from using mobile phones during the ceremony.",
+          "es": "Les pedimos amablemente que se abstengan de usar celulares durante la ceremonia."
+        },
+        {
+          "target": "The report was compiled by a team of independent researchers.",
+          "es": "El informe fue elaborado por un equipo de investigadores independientes."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I would be grateful if you can confirm.",
+          "right": "I would be grateful if you could confirm.",
+          "why": "En registro formal, después de would be grateful if se usa could (más cortés e hipotético), no can."
+        },
+        {
+          "wrong": "Please to find attached the document.",
+          "right": "Please find attached the document.",
+          "why": "Es una estructura fija sin to; agregarlo es un calco del español 'por favor encontrar'."
+        },
+        {
+          "wrong": "We don't have no further comments.",
+          "right": "We have no further comments.",
+          "why": "El registro formal evita la doble negación, que es un rasgo del habla coloquial o no estándar, además de un calco de 'no tengo ningún comentario'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "with reference to",
+          "es": "con referencia a",
+          "example": "With reference to your email, please find the attached report.",
+          "exampleEs": "Con referencia a tu correo, adjunto encontrarás el informe."
+        },
+        {
+          "target": "it is incumbent upon",
+          "es": "le corresponde a / es responsabilidad de",
+          "example": "It is incumbent upon the board to approve the final budget.",
+          "exampleEs": "Le corresponde al directorio aprobar el presupuesto final."
+        },
+        {
+          "target": "I would be most grateful if",
+          "es": "te agradecería enormemente si",
+          "example": "I would be most grateful if you could reply by Friday.",
+          "exampleEs": "Te agradecería enormemente si pudieras responder antes del viernes."
+        },
+        {
+          "target": "to whom it may concern",
+          "es": "a quien corresponda",
+          "example": "To whom it may concern, I am writing to request a reference letter.",
+          "exampleEs": "A quien corresponda, le escribo para solicitar una carta de recomendación."
+        },
+        {
+          "target": "in accordance with",
+          "es": "de acuerdo con / conforme a",
+          "example": "The contract was signed in accordance with company policy.",
+          "exampleEs": "El contrato se firmó de acuerdo con la política de la empresa."
+        }
+      ]
+    },
+    {
+      "id": "colloquial-register-markers",
+      "day": 2,
+      "title": "Marcas de registro coloquial",
+      "goal": "vas a poder reconocer y usar las marcas típicas del inglés hablado informal entre hablantes nativos.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Las contracciones (I'm, gonna, wanna) y la elisión de sonidos son la norma en el habla coloquial, no una excepción.",
+        "El vocabulario germánico corto (get, ask, start) reemplaza al latino largo del registro formal.",
+        "Muletillas y marcadores discursivos como like, you know, I mean y anyway organizan el habla espontánea.",
+        "La elipsis de sujeto o verbo es común en preguntas y respuestas rápidas: (Are you) Good? — Yeah.",
+        "Las tag questions informales y la entonación ascendente suavizan afirmaciones en la conversación.",
+        "En inglés británico, cheers reemplaza a thanks y mate a dude/buddy dentro del registro coloquial."
+      ],
+      "examples": [
+        {
+          "target": "I'm gonna grab a coffee, you want one?",
+          "es": "Voy a comprarme un café, ¿querés uno?"
+        },
+        {
+          "target": "She's been kinda stressed out lately.",
+          "es": "Ella ha estado como estresada últimamente."
+        },
+        {
+          "target": "We hung out at my place all weekend.",
+          "es": "Nos juntamos en mi casa todo el finde."
+        },
+        {
+          "target": "Don't worry about it, it's no biggie.",
+          "es": "No te hagas drama, no es gran cosa."
+        },
+        {
+          "target": "He's super into hiking these days.",
+          "es": "Está metidísimo con el senderismo últimamente."
+        },
+        {
+          "target": "Catch you later, man!",
+          "es": "¡Nos vemos, viejo!"
+        },
+        {
+          "target": "I mean, it's not that bad, you know?",
+          "es": "Digo, no está tan mal, ¿sabés?"
+        },
+        {
+          "target": "Gonna need you to chill for a sec.",
+          "es": "Vas a tener que calmarte un segundo."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I am gonna to go now.",
+          "right": "I'm gonna go now.",
+          "why": "Gonna ya reemplaza a going to; agregar otro to después es redundante."
+        },
+        {
+          "wrong": "She don't like it.",
+          "right": "She doesn't like it.",
+          "why": "El uso de don't con tercera persona es un rasgo dialectal marcado, no la norma coloquial estándar que se espera producir en C2."
+        },
+        {
+          "wrong": "We hang out yesterday.",
+          "right": "We hung out yesterday.",
+          "why": "Aunque el registro sea informal, el pasado irregular sigue siendo obligatorio: lo coloquial afecta el léxico y el discurso, no la morfología verbal básica."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "no biggie",
+          "es": "no es gran cosa",
+          "example": "You forgot the tickets? No biggie, we'll buy new ones.",
+          "exampleEs": "¿Te olvidaste las entradas? No es gran cosa, compramos otras."
+        },
+        {
+          "target": "hang out",
+          "es": "juntarse / pasar el rato",
+          "example": "Wanna hang out this weekend?",
+          "exampleEs": "¿Querés juntarte este finde?"
+        },
+        {
+          "target": "catch up",
+          "es": "ponerse al día",
+          "example": "Let's catch up over coffee sometime.",
+          "exampleEs": "Juntémonos a tomar un café para ponernos al día en algún momento."
+        },
+        {
+          "target": "what's up",
+          "es": "qué onda / qué hacés",
+          "example": "Hey, what's up? Haven't seen you in ages.",
+          "exampleEs": "Eh, ¿qué onda? Hace siglos que no te veo."
+        },
+        {
+          "target": "chill out",
+          "es": "relajarse / calmarse",
+          "example": "Just chill out, it's not that serious.",
+          "exampleEs": "Relajate, no es tan grave."
+        }
+      ]
+    },
+    {
+      "id": "slang-and-contemporary-jargon",
+      "day": 3,
+      "title": "Slang y jerga contemporánea",
+      "goal": "vas a poder entender y usar con criterio el slang y la jerga actual, sabiendo sus riesgos y su fecha de vencimiento.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "El slang cambia rápido por generación y plataforma (TikTok, Twitter/X); hay que usarlo con cautela porque se desactualiza.",
+        "Palabras como lowkey/highkey, no cap, sus, bet y flex cumplen funciones gramaticales específicas (adverbio, verbo, adjetivo) distintas del uso estándar.",
+        "El slang marca pertenencia a un grupo; usarlo fuera de contexto o de generación puede sonar forzado.",
+        "Hay diferencias entre slang estadounidense y británico: sick/dope (EE.UU.) frente a mint/peng (Reino Unido); buddy frente a mate.",
+        "La jerga contemporánea casi nunca aparece en registros formales o académicos, salvo que se la esté citando entre comillas."
+      ],
+      "examples": [
+        {
+          "target": "I'm lowkey obsessed with this show.",
+          "es": "Estoy como obsesionado con esta serie."
+        },
+        {
+          "target": "No cap, that movie was amazing.",
+          "es": "Posta, esa película estuvo increíble."
+        },
+        {
+          "target": "He totally ghosted her after the second date.",
+          "es": "La dejó completamente en visto después de la segunda cita."
+        },
+        {
+          "target": "Stop flexing your new car, dude.",
+          "es": "Dejá de hacerte el canchero con tu auto nuevo, viejo."
+        },
+        {
+          "target": "That story sounds kinda sus.",
+          "es": "Esa historia suena como sospechosa."
+        },
+        {
+          "target": "She's always extra when she talks about her ex.",
+          "es": "Ella siempre se pasa de dramática cuando habla de su ex."
+        },
+        {
+          "target": "I'm so done with this project, it's a whole mood.",
+          "es": "Estoy hasta las manos con este proyecto, es un mood total."
+        },
+        {
+          "target": "Bet, I'll see you there at six.",
+          "es": "Dale, nos vemos ahí a las seis."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "This party is very lowkey good.",
+          "right": "This party is lowkey good.",
+          "why": "Lowkey funciona como adverbio de intensidad atenuada y no se combina con very; se usa solo."
+        },
+        {
+          "wrong": "He ghosted on her.",
+          "right": "He ghosted her.",
+          "why": "Ghost es transitivo directo en este sentido de slang y no lleva preposición."
+        },
+        {
+          "wrong": "I'm using slang in my cover letter to sound cool.",
+          "right": "I'm keeping formal language in my cover letter.",
+          "why": "El slang es de registro muy bajo y generacional; usarlo en un contexto formal como una carta de presentación es un error de registro, no gramatical."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "no cap",
+          "es": "en serio / posta",
+          "example": "This is the best burger in town, no cap.",
+          "exampleEs": "Esta es la mejor hamburguesa de la ciudad, posta."
+        },
+        {
+          "target": "ghost someone",
+          "es": "dejar a alguien en visto / desaparecer sin avisar",
+          "example": "It's so easy to ghost someone these days; you just stop replying.",
+          "exampleEs": "Hoy en día es muy fácil dejar a alguien en visto; simplemente dejás de responder."
+        },
+        {
+          "target": "flex on",
+          "es": "alardear frente a / hacerse el canchero con",
+          "example": "She loves to flex on her friends with her new sneakers.",
+          "exampleEs": "A ella le encanta hacerse la canchera frente a sus amigas con sus championes nuevos."
+        },
+        {
+          "target": "vibe check",
+          "es": "chequeo de clima/onda",
+          "example": "Before the meeting, let's do a quick vibe check.",
+          "exampleEs": "Antes de la reunión, hagamos un chequeo rápido de la onda."
+        },
+        {
+          "target": "that's sus",
+          "es": "eso es sospechoso",
+          "example": "He left the party without saying bye, that's sus.",
+          "exampleEs": "Se fue de la fiesta sin despedirse, eso es sospechoso."
+        }
+      ]
+    },
+    {
+      "id": "shifting-formal-to-informal",
+      "day": 4,
+      "title": "Pasar de formal a informal en un mismo texto",
+      "goal": "vas a poder manejar transiciones de registro dentro de un mismo texto sin que suene a error de control del idioma.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Cambiar de registro dentro de un mismo texto requiere marcadores de transición claros: on a lighter note, anyway, that said.",
+        "Un cambio abrupto sin transición suena como error, no como estilo; siempre hay que señalizarlo.",
+        "El contraste de registros puede usarse intencionalmente para generar humor, ironía o cercanía, por ejemplo al cerrar un email de trabajo con un tono amistoso.",
+        "Si empezás formal, el léxico coloquial que insertes tiene que estar claramente delimitado, no mezclado estructura por estructura.",
+        "La relación con el destinatario y el propósito del texto determinan cuánto podés bajar el registro sin sonar inapropiado."
+      ],
+      "examples": [
+        {
+          "target": "Pursuant to our earlier correspondence, I just wanted to say thanks a ton for sorting this out.",
+          "es": "En relación con nuestra correspondencia anterior, quería agradecerte un montón por solucionar esto."
+        },
+        {
+          "target": "The board approved the budget; anyway, let's grab lunch to celebrate.",
+          "es": "El directorio aprobó el presupuesto; bueno, vamos a almorzar para festejar."
+        },
+        {
+          "target": "We regret the inconvenience caused. On a lighter note, free coffee's on us next time.",
+          "es": "Lamentamos el inconveniente causado. Para cambiar de tema, el próximo café va por nuestra cuenta."
+        },
+        {
+          "target": "The findings indicate a significant correlation—basically, more sleep means better grades.",
+          "es": "Los resultados indican una correlación significativa; básicamente, dormir más significa mejores notas."
+        },
+        {
+          "target": "I am writing to formally request a leave of absence. Also, hope you're doing great!",
+          "es": "Le escribo para solicitar formalmente una licencia. Además, ¡espero que esté muy bien!"
+        },
+        {
+          "target": "To cut to the chase, we're cutting costs, so no more fancy lunches.",
+          "es": "Para ir al grano, vamos a recortar gastos, así que se acabaron los almuerzos lujosos."
+        },
+        {
+          "target": "The data clearly demonstrate a decline; long story short, we need a new strategy.",
+          "es": "Los datos demuestran claramente una caída; en resumidas cuentas, necesitamos una nueva estrategia."
+        },
+        {
+          "target": "Please find attached the requested documents. Cheers, catch up soon!",
+          "es": "Adjunto los documentos solicitados. Saludos, ¡nos juntamos pronto!"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Dear Sir, what's up, I need the report.",
+          "right": "Dear Sir, I hope this email finds you well. Quick heads-up: I need the report.",
+          "why": "El cambio de registro necesita una transición marcada, no un salto brusco sin conector entre lo formal y lo informal."
+        },
+        {
+          "wrong": "I would like to inform you that stuff's going great.",
+          "right": "I would like to inform you that things are going great.",
+          "why": "Mezclar stuff, muy coloquial, dentro de una estructura formal como I would like to inform you rompe la coherencia de registro; hay que elegir un léxico acorde."
+        },
+        {
+          "wrong": "We ain't got the funds for this quarter.",
+          "right": "To be honest, we don't have the funds for this quarter.",
+          "why": "Ain't es no estándar y suele sonar como error, no como elección estilística; para bajar el registro conviene usar un marcador claro como to be honest en vez de una forma gramaticalmente no estándar."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "to put it bluntly",
+          "es": "para decirlo sin vueltas",
+          "example": "To put it bluntly, the project failed.",
+          "exampleEs": "Para decirlo sin vueltas, el proyecto fracasó."
+        },
+        {
+          "target": "on a lighter note",
+          "es": "para cambiar de tema a algo más liviano",
+          "example": "On a lighter note, the team party is confirmed for Friday.",
+          "exampleEs": "Para cambiar de tema a algo más liviano, la fiesta del equipo está confirmada para el viernes."
+        },
+        {
+          "target": "long story short",
+          "es": "en resumidas cuentas",
+          "example": "Long story short, we missed the flight.",
+          "exampleEs": "En resumidas cuentas, perdimos el vuelo."
+        },
+        {
+          "target": "between you and me",
+          "es": "entre nos",
+          "example": "Between you and me, the new policy won't last long.",
+          "exampleEs": "Entre nos, la nueva política no va a durar mucho."
+        },
+        {
+          "target": "to cut to the chase",
+          "es": "ir al grano",
+          "example": "To cut to the chase, we're not getting the funding.",
+          "exampleEs": "Para ir al grano, no vamos a conseguir el financiamiento."
+        }
+      ]
+    },
+    {
+      "id": "analyzing-register-authentic-text",
+      "day": 5,
+      "title": "Analizar el registro de un texto auténtico",
+      "goal": "vas a poder analizar un texto auténtico e identificar qué marcas construyen su registro.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "El registro se detecta en varios niveles a la vez: léxico (elección de palabras), gramática (pasiva, modales, contracciones) y puntuación/formato.",
+        "La escala de Joos (frozen, formal, consultative, casual, intimate) ubica un texto en un continuo, no en categorías cerradas.",
+        "El contexto —quién escribe, a quién y para qué— es la clave para interpretar por qué se eligió ese registro.",
+        "Hay que distinguir entre marcas universales de formalidad (pasiva, nominalización) y marcas específicas de variante (británico frente a estadounidense).",
+        "Analizar registro sirve tanto para comprender un texto como para producirlo: primero identificás el patrón, después lo podés replicar."
+      ],
+      "examples": [
+        {
+          "target": "The use of passive constructions and Latinate vocabulary signals a formal, bureaucratic register.",
+          "es": "El uso de construcciones pasivas y vocabulario de origen latino indica un registro formal y burocrático."
+        },
+        {
+          "target": "Contractions, ellipsis, and slang reveal an intimate, casual register between close friends.",
+          "es": "Las contracciones, la elipsis y el slang revelan un registro íntimo y casual entre amigos cercanos."
+        },
+        {
+          "target": "Legal documents tend to avoid personal pronouns to sound impersonal and authoritative.",
+          "es": "Los documentos legales tienden a evitar pronombres personales para sonar impersonales y autoritarios."
+        },
+        {
+          "target": "Tabloid headlines often mix slang with short, punchy sentences to grab attention.",
+          "es": "Los titulares sensacionalistas suelen mezclar slang con oraciones cortas y contundentes para captar la atención."
+        },
+        {
+          "target": "Academic abstracts favor nominalization over verb phrases to sound objective.",
+          "es": "Los resúmenes académicos prefieren la nominalización frente a frases verbales para sonar objetivos."
+        },
+        {
+          "target": "A shift from formal greetings to casual banter can signal growing familiarity between speakers.",
+          "es": "Un cambio de saludos formales a una charla informal puede indicar que los hablantes se están haciendo más cercanos."
+        },
+        {
+          "target": "Reading the room means picking up on these subtle register cues in real time.",
+          "es": "Leer el ambiente significa captar estas sutiles marcas de registro en tiempo real."
+        },
+        {
+          "target": "Even a single word choice, like 'residence' instead of 'home', can shift the whole tone of a text.",
+          "es": "Hasta la elección de una sola palabra, como residence en vez de home, puede cambiar todo el tono de un texto."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Register is only about vocabulary.",
+          "right": "Register involves vocabulary, grammar, and even punctuation or formatting choices.",
+          "why": "Muchos estudiantes creen que el registro se limita al léxico, pero también incluye estructuras gramaticales y rasgos de formato."
+        },
+        {
+          "wrong": "A formal text never uses contractions.",
+          "right": "Formal texts rarely use contractions, though some consultative styles allow a few.",
+          "why": "Es una tendencia general, no una regla absoluta; el continuo de registro de Joos tiene grados intermedios."
+        },
+        {
+          "wrong": "Slang words always have the same meaning in US and UK English.",
+          "right": "Slang words often differ in meaning or use between US and UK English.",
+          "why": "Palabras como mate o cheeky tienen connotaciones distintas en cada variante, así que hay que verificar el contexto regional."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "read the room",
+          "es": "leer el ambiente",
+          "example": "You really need to learn to read the room before making jokes like that.",
+          "exampleEs": "Realmente necesitás aprender a leer el ambiente antes de hacer chistes así."
+        },
+        {
+          "target": "strike the right tone",
+          "es": "dar con el tono justo",
+          "example": "The speech managed to strike the right tone for the occasion.",
+          "exampleEs": "El discurso logró dar con el tono justo para la ocasión."
+        },
+        {
+          "target": "pick up on cues",
+          "es": "captar señales",
+          "example": "A good reader can pick up on cues about register from just a few words.",
+          "exampleEs": "Un buen lector puede captar señales sobre el registro con apenas unas pocas palabras."
+        },
+        {
+          "target": "gauge the audience",
+          "es": "evaluar a la audiencia",
+          "example": "Before choosing your words, gauge the audience you're writing for.",
+          "exampleEs": "Antes de elegir tus palabras, evaluá a la audiencia para la que estás escribiendo."
+        },
+        {
+          "target": "tone it down",
+          "es": "bajarle el tono / moderar",
+          "example": "The editor asked the writer to tone it down for the formal report.",
+          "exampleEs": "El editor le pidió al escritor que bajara el tono para el informe formal."
+        }
+      ]
+    }
+  ]
+}

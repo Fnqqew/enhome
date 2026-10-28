@@ -29,7 +29,8 @@
         "Can + verbo base, igual para todas las personas: I can swim, she can swim.",
         "Negativo: can't (cannot). Pregunta: Can you...?",
         "Sirve para habilidades (saber, poder) y para pedir permiso o favores.",
-        "Nunca lleva to ni -s: She can drive (no 'She cans to drive')."
+        "Nunca lleva to ni -s: She can drive (no 'She cans to drive').",
+        "En español el verbo 'poder' cambia según la persona (puedo, podés, puede), pero en inglés 'can' es invariable para todos los sujetos."
       ],
       "examples": [
         {
@@ -43,6 +44,26 @@
         {
           "target": "He can't come tonight.",
           "es": "No puede venir esta noche."
+        },
+        {
+          "target": "Can you help me with this bag?",
+          "es": "¿Podés ayudarme con esta bolsa?"
+        },
+        {
+          "target": "My dad can cook really well.",
+          "es": "Mi papá sabe cocinar muy bien."
+        },
+        {
+          "target": "We can't park here.",
+          "es": "No podemos estacionar acá."
+        },
+        {
+          "target": "Can she drive a truck?",
+          "es": "¿Ella sabe manejar un camión?"
+        },
+        {
+          "target": "You can sit here if you want.",
+          "es": "Podés sentarte acá si querés."
         }
       ],
       "commonMistakes": [
@@ -50,6 +71,24 @@
           "wrong": "She can to play the guitar.",
           "right": "She can play the guitar.",
           "why": "Después de can el verbo va sin to."
+        },
+        {
+          "wrong": "She cans swim.",
+          "right": "She can swim.",
+          "why": "Can nunca lleva -s, es igual para todas las personas (I, you, he, she, it, we, they)."
+        },
+        {
+          "wrong": "Can you to pass me the salt?",
+          "right": "Can you pass me the salt?",
+          "why": "Después de can va el verbo base sin 'to'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "You can't miss it.",
+          "es": "Es imposible no verlo.",
+          "example": "Go straight and turn left, you can't miss it.",
+          "exampleEs": "Seguí derecho y doblá a la izquierda, es imposible no verlo."
         }
       ]
     },
@@ -64,7 +103,8 @@
       "keyPoints": [
         "am / is / are + verbo con -ing: I am reading.",
         "Reglas del -ing: make → making (se va la e), run → running (se duplica la consonante), lie → lying.",
-        "Negativo: She isn't working. Pregunta: Are you listening?"
+        "Negativo: She isn't working. Pregunta: Are you listening?",
+        "En español formamos el gerundio con 'estar' + verbo terminado en -ando/-iendo ('Estoy estudiando'), y en inglés la estructura es parecida pero usa am/is/are + verbo con -ing ('I am studying')."
       ],
       "examples": [
         {
@@ -78,6 +118,26 @@
         {
           "target": "Is it raining?",
           "es": "¿Está lloviendo?"
+        },
+        {
+          "target": "She's cooking dinner right now.",
+          "es": "Ella está cocinando la cena ahora."
+        },
+        {
+          "target": "We're waiting for the bus.",
+          "es": "Estamos esperando el colectivo."
+        },
+        {
+          "target": "Are you listening to me?",
+          "es": "¿Me estás escuchando?"
+        },
+        {
+          "target": "He's not sleeping yet.",
+          "es": "Todavía no está durmiendo."
+        },
+        {
+          "target": "The kids are playing in the yard.",
+          "es": "Los chicos están jugando en el patio."
         }
       ],
       "commonMistakes": [
@@ -90,6 +150,25 @@
           "wrong": "She is writting.",
           "right": "She is writing.",
           "why": "En write se va la e y no se duplica la t."
+        },
+        {
+          "wrong": "He is runing.",
+          "right": "He is running.",
+          "why": "Cuando el verbo termina en una sola vocal más una consonante acentuada, se duplica la consonante antes de agregar -ing."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "I'm just kidding.",
+          "es": "Es broma.",
+          "example": "Don't worry, I'm just kidding.",
+          "exampleEs": "No te preocupes, es broma."
+        },
+        {
+          "target": "We're running late.",
+          "es": "Estamos llegando tarde.",
+          "example": "Hurry up, we're running late.",
+          "exampleEs": "Apurate, estamos llegando tarde."
         }
       ]
     },
@@ -106,7 +185,8 @@
         "Acciones que pasan ahora mismo: Look! It's snowing.",
         "Situaciones temporales: I'm living with my cousin this month.",
         "Palabras típicas: now, right now, at the moment, today, this week.",
-        "Los verbos de estado casi no se usan en continuo: know, like, want, need, understand."
+        "Los verbos de estado casi no se usan en continuo: know, like, want, need, understand.",
+        "En español a veces usamos el presente simple para hablar de algo que pasa en este momento ('Hablo por teléfono'), pero en inglés para acciones en curso hay que usar el presente continuo ('I'm talking on the phone')."
       ],
       "examples": [
         {
@@ -120,6 +200,26 @@
         {
           "target": "I understand you.",
           "es": "Te entiendo."
+        },
+        {
+          "target": "Look! The baby is sleeping.",
+          "es": "¡Mirá! El bebé está durmiendo."
+        },
+        {
+          "target": "I'm reading a great book these days.",
+          "es": "Estoy leyendo un libro muy bueno estos días."
+        },
+        {
+          "target": "He's studying for his exam at the moment.",
+          "es": "Está estudiando para su examen en este momento."
+        },
+        {
+          "target": "I like coffee.",
+          "es": "Me gusta el café."
+        },
+        {
+          "target": "She's staying at a hotel this week.",
+          "es": "Se está quedando en un hotel esta semana."
         }
       ],
       "commonMistakes": [
@@ -127,6 +227,42 @@
           "wrong": "I am knowing the answer.",
           "right": "I know the answer.",
           "why": "Know es un verbo de estado y va en presente simple."
+        },
+        {
+          "wrong": "I'm wanting a coffee.",
+          "right": "I want a coffee.",
+          "why": "'Want' es un verbo de estado y casi no se usa en presente continuo."
+        },
+        {
+          "wrong": "She's needing help now.",
+          "right": "She needs help now.",
+          "why": "'Need' describe un estado, no una acción en curso, así que no se usa con -ing."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "right now",
+          "es": "ahora mismo",
+          "example": "I'm busy right now.",
+          "exampleEs": "Estoy ocupado ahora mismo."
+        },
+        {
+          "target": "at the moment",
+          "es": "en este momento",
+          "example": "She's sleeping at the moment.",
+          "exampleEs": "Está durmiendo en este momento."
+        },
+        {
+          "target": "these days",
+          "es": "en estos días / últimamente",
+          "example": "I'm working a lot these days.",
+          "exampleEs": "Estoy trabajando mucho en estos días."
+        },
+        {
+          "target": "Look!",
+          "es": "¡Mirá!",
+          "example": "Look! It's snowing!",
+          "exampleEs": "¡Mirá! ¡Está nevando!"
         }
       ]
     },
@@ -142,7 +278,8 @@
       "keyPoints": [
         "Simple: hábitos y cosas generales (I work in a bank).",
         "Continuo: lo que pasa ahora o es temporal (I'm working at home today).",
-        "Pistas: always, every day, usually → simple; now, at the moment, today → continuo."
+        "Pistas: always, every day, usually → simple; now, at the moment, today → continuo.",
+        "En español muchas veces usamos el presente simple tanto para hábitos como para acciones que pasan ahora ('Trabajo ahora mismo'), pero en inglés hay que elegir entre presente simple para hábitos ('I work') y presente continuo para lo que pasa en este momento ('I'm working')."
       ],
       "examples": [
         {
@@ -156,6 +293,26 @@
         {
           "target": "What are you doing?",
           "es": "¿Qué estás haciendo?"
+        },
+        {
+          "target": "I usually have breakfast at 7, but today I'm having it later.",
+          "es": "Normalmente desayuno a las 7, pero hoy lo estoy desayunando más tarde."
+        },
+        {
+          "target": "She works at a hospital.",
+          "es": "Ella trabaja en un hospital."
+        },
+        {
+          "target": "Right now, she's working on a new project.",
+          "es": "En este momento, está trabajando en un proyecto nuevo."
+        },
+        {
+          "target": "We always go to the beach in summer.",
+          "es": "Siempre vamos a la playa en verano."
+        },
+        {
+          "target": "Why are you crying?",
+          "es": "¿Por qué estás llorando?"
         }
       ],
       "commonMistakes": [
@@ -163,6 +320,42 @@
           "wrong": "I'm playing tennis every Saturday.",
           "right": "I play tennis every Saturday.",
           "why": "Con every Saturday se habla de un hábito: presente simple."
+        },
+        {
+          "wrong": "She is work at the moment.",
+          "right": "She is working at the moment.",
+          "why": "En presente continuo el verbo siempre lleva -ing, no la forma base."
+        },
+        {
+          "wrong": "I study English now.",
+          "right": "I'm studying English now.",
+          "why": "Con palabras como 'now' se usa el presente continuo, no el simple."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "every day",
+          "es": "todos los días",
+          "example": "I check my email every day.",
+          "exampleEs": "Reviso mi correo todos los días."
+        },
+        {
+          "target": "from time to time",
+          "es": "de vez en cuando",
+          "example": "We go to the movies from time to time.",
+          "exampleEs": "Vamos al cine de vez en cuando."
+        },
+        {
+          "target": "on weekends",
+          "es": "los fines de semana",
+          "example": "I usually relax on weekends.",
+          "exampleEs": "Normalmente descanso los fines de semana."
+        },
+        {
+          "target": "for now",
+          "es": "por ahora",
+          "example": "For now, I'm living with my parents.",
+          "exampleEs": "Por ahora, estoy viviendo con mis padres."
         }
       ]
     },
@@ -178,7 +371,8 @@
       "keyPoints": [
         "Combinar there is / there are con presente continuo: There are two kids. They're playing.",
         "Ubicar con preposiciones: on the left, on the right, in the background, next to the tree.",
-        "Usar can para lo que la gente puede o no puede hacer en la escena."
+        "Usar can para lo que la gente puede o no puede hacer en la escena.",
+        "En español para describir una imagen solemos usar el presente simple ('Hay dos chicos que juegan'), pero en inglés se combina 'there is/are' con el presente continuo para mostrar que la acción está pasando en la escena ('There are two kids. They're playing.')."
       ],
       "examples": [
         {
@@ -192,6 +386,26 @@
         {
           "target": "The man on the left is smiling.",
           "es": "El hombre de la izquierda está sonriendo."
+        },
+        {
+          "target": "There are three people in the photo.",
+          "es": "Hay tres personas en la foto."
+        },
+        {
+          "target": "A boy is riding his bike in the background.",
+          "es": "Un chico está andando en bici al fondo."
+        },
+        {
+          "target": "The woman next to the tree is talking on the phone.",
+          "es": "La mujer al lado del árbol está hablando por teléfono."
+        },
+        {
+          "target": "You can see a lake in the picture.",
+          "es": "Se puede ver un lago en la foto."
+        },
+        {
+          "target": "On the right, there's a small house.",
+          "es": "A la derecha, hay una casa chiquita."
         }
       ],
       "commonMistakes": [
@@ -199,6 +413,42 @@
           "wrong": "In the picture there are two kids that plays.",
           "right": "In the picture there are two kids playing.",
           "why": "Para describir una acción en curso se usa la forma -ing."
+        },
+        {
+          "wrong": "There is a man and a woman on the picture.",
+          "right": "There are a man and a woman in the picture.",
+          "why": "Cuando hay más de un elemento el verbo va en plural (are), y para describir imágenes se usa la preposición 'in', no 'on'."
+        },
+        {
+          "wrong": "The dog is run in the park.",
+          "right": "The dog is running in the park.",
+          "why": "En presente continuo el verbo siempre lleva -ing después de is/are/am."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "in the background",
+          "es": "al fondo",
+          "example": "There are mountains in the background.",
+          "exampleEs": "Hay montañas al fondo."
+        },
+        {
+          "target": "on the left",
+          "es": "a la izquierda",
+          "example": "On the left, there's a big tree.",
+          "exampleEs": "A la izquierda, hay un árbol grande."
+        },
+        {
+          "target": "next to",
+          "es": "al lado de",
+          "example": "The cat is sleeping next to the sofa.",
+          "exampleEs": "El gato está durmiendo al lado del sofá."
+        },
+        {
+          "target": "in the foreground",
+          "es": "en primer plano",
+          "example": "In the foreground, a child is playing with a ball.",
+          "exampleEs": "En primer plano, un chico está jugando con una pelota."
         }
       ]
     }

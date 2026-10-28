@@ -1,0 +1,518 @@
+{
+  "id": "en-c2-vocab-specialized",
+  "level": "C2",
+  "order": 5,
+  "title": "Vocabulario especializado y jerga profesional",
+  "targetTitle": "Specialized Vocabulary and Professional Jargon",
+  "description": "Vas a ampliar tu vocabulario con términos especializados de distintos campos profesionales y académicos, y vas a aprender a usar la jerga técnica con precisión. Te sirve para comunicarte con fluidez en entornos profesionales altamente específicos.",
+  "objectives": [
+    "Ampliar el vocabulario especializado de tecnología, derecho, medicina y finanzas en inglés.",
+    "Usar colocaciones y jerga técnica con precisión en cada campo profesional.",
+    "Reconocer diferencias terminológicas entre el inglés estadounidense y el británico en distintos campos.",
+    "Leer informes y documentos técnicos auténticos con comprensión profunda del vocabulario especializado.",
+    "Adaptar un texto técnico a un público general sin perder precisión de significado."
+  ],
+  "prerequisites": [
+    "en-c1-vocab-academic-business"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "tech-it-jargon",
+      "day": 1,
+      "title": "Jerga de tecnología e informática",
+      "goal": "vas a poder entender y usar con precisión los términos técnicos más comunes del mundo de la tecnología y la informática en inglés.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "Muchos términos técnicos son anglicismos directos (bug, server, backend), pero en inglés tienen colocaciones fijas propias: se dice to deploy a server, no simplemente to install.",
+        "Los verbos técnicos se combinan con partículas fijas: to roll out, to spin up, to scale up/down.",
+        "La jerga de IT usa muchas siglas (API, UX, CI/CD) que funcionan como sustantivos contables en la oración.",
+        "Hay diferencias de ortografía entre EE.UU. y Reino Unido: customize/customise, program/programme (aunque program se usa igual para software en ambos).",
+        "Varios términos técnicos se verbalizan informalmente en el habla diaria: to google something, to ping someone, to deploy."
+      ],
+      "examples": [
+        {
+          "target": "We need to deploy the new update before the end of the sprint.",
+          "es": "Necesitamos desplegar la nueva actualización antes de que termine el sprint."
+        },
+        {
+          "target": "The server crashed because of a memory leak.",
+          "es": "El servidor se cayó por una pérdida de memoria."
+        },
+        {
+          "target": "Can you spin up a new instance on the cloud?",
+          "es": "¿Podés levantar una nueva instancia en la nube?"
+        },
+        {
+          "target": "The bug was caused by an unhandled exception in the backend.",
+          "es": "El error fue causado por una excepción no manejada en el backend."
+        },
+        {
+          "target": "We're migrating the database to improve scalability.",
+          "es": "Estamos migrando la base de datos para mejorar la escalabilidad."
+        },
+        {
+          "target": "The API returns a 404 error when the endpoint doesn't exist.",
+          "es": "La API devuelve un error 404 cuando el endpoint no existe."
+        },
+        {
+          "target": "They refactored the codebase to reduce technical debt.",
+          "es": "Refactorizaron el código para reducir la deuda técnica."
+        },
+        {
+          "target": "The app froze because of a race condition.",
+          "es": "La aplicación se congeló por una condición de carrera."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I will install the server tomorrow.",
+          "right": "I will deploy the server tomorrow.",
+          "why": "En jerga de IT, deploy es la colocación específica para poner un servidor o aplicación en funcionamiento; install se reserva para software en una máquina local."
+        },
+        {
+          "wrong": "The program have a bug.",
+          "right": "The program has a bug.",
+          "why": "Error de concordancia sujeto-verbo, común al confundir program (singular) con plural por influencia del español 'los programas'."
+        },
+        {
+          "wrong": "We need to up-scale the servers.",
+          "right": "We need to scale up the servers.",
+          "why": "El phrasal verb técnico es scale up/down, con la partícula después del verbo, no como prefijo pegado."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "roll out",
+          "es": "implementar / lanzar (una actualización)",
+          "example": "We're going to roll out the new feature next week.",
+          "exampleEs": "Vamos a lanzar la nueva función la semana que viene."
+        },
+        {
+          "target": "spin up",
+          "es": "levantar/crear (un servidor o instancia)",
+          "example": "Let's spin up a test environment before deploying.",
+          "exampleEs": "Levantemos un entorno de prueba antes de desplegar."
+        },
+        {
+          "target": "technical debt",
+          "es": "deuda técnica",
+          "example": "Ignoring this bug will only increase our technical debt.",
+          "exampleEs": "Ignorar este error solo va a aumentar nuestra deuda técnica."
+        },
+        {
+          "target": "memory leak",
+          "es": "pérdida de memoria / fuga de memoria",
+          "example": "The crash was caused by a memory leak in the main thread.",
+          "exampleEs": "La caída fue causada por una pérdida de memoria en el hilo principal."
+        },
+        {
+          "target": "race condition",
+          "es": "condición de carrera",
+          "example": "This bug only appears under a race condition.",
+          "exampleEs": "Este error solo aparece bajo una condición de carrera."
+        }
+      ]
+    },
+    {
+      "id": "legal-administrative-jargon",
+      "day": 2,
+      "title": "Jerga legal y administrativa",
+      "goal": "vas a poder leer y producir textos con vocabulario legal y administrativo propio de contratos, trámites y documentos oficiales.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "El inglés legal usa dobletes de origen francés/latín + germánico que significan casi lo mismo (null and void, terms and conditions) por tradición histórica, no por redundancia real.",
+        "El modal shall se usa en contratos para expresar obligación legal, un uso distinto del shall casi inexistente en el habla cotidiana de EE.UU.",
+        "Sustantivos abstractos y nominalizaciones (breach, liability, indemnity) condensan ideas que en español suelen necesitar una oración completa.",
+        "Conectores fijos como pursuant to, hereinafter referred to as y in witness whereof marcan el género legal y no se usan fuera de él.",
+        "En Reino Unido se distingue entre solicitor y barrister según el tipo de abogado; en EE.UU. se usa attorney o lawyer para ambos roles."
+      ],
+      "examples": [
+        {
+          "target": "The tenant shall pay the rent on the first day of each month.",
+          "es": "El inquilino deberá pagar el alquiler el primer día de cada mes."
+        },
+        {
+          "target": "Any breach of this agreement may result in immediate termination.",
+          "es": "Cualquier incumplimiento de este acuerdo puede resultar en la rescisión inmediata."
+        },
+        {
+          "target": "The parties hereby agree to the terms and conditions set forth above.",
+          "es": "Las partes acuerdan por medio del presente los términos y condiciones establecidos anteriormente."
+        },
+        {
+          "target": "The company is not liable for any indirect damages.",
+          "es": "La empresa no es responsable por ningún daño indirecto."
+        },
+        {
+          "target": "This contract shall be governed by the laws of the State of New York.",
+          "es": "Este contrato se regirá por las leyes del Estado de Nueva York."
+        },
+        {
+          "target": "The defendant was found guilty on all counts.",
+          "es": "El acusado fue declarado culpable de todos los cargos."
+        },
+        {
+          "target": "Please submit the notarized affidavit along with your application.",
+          "es": "Por favor presente la declaración jurada notariada junto con su solicitud."
+        },
+        {
+          "target": "The court granted an injunction to stop the construction.",
+          "es": "El tribunal otorgó una medida cautelar para detener la construcción."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The tenant must pays the rent.",
+          "right": "The tenant shall pay the rent.",
+          "why": "En registro legal formal se usa shall + infinitivo sin to, no must + verbo mal conjugado; además hay error de concordancia."
+        },
+        {
+          "wrong": "The contract is void and null.",
+          "right": "The contract is null and void.",
+          "why": "Es una colocación fija con orden fijo, propio de los dobletes legales tradicionales; invertir el orden suena antinatural."
+        },
+        {
+          "wrong": "A lawyer is exactly the same as a solicitor in the UK.",
+          "right": "In the US, 'attorney' or 'lawyer' covers both roles that in the UK are split between 'solicitor' and 'barrister'.",
+          "why": "Los sistemas legales son distintos y no hay una equivalencia exacta uno a uno entre los términos."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "null and void",
+          "es": "nulo y sin efecto",
+          "example": "If any clause is found illegal, it shall be null and void.",
+          "exampleEs": "Si alguna cláusula resulta ilegal, será nula y sin efecto."
+        },
+        {
+          "target": "pursuant to",
+          "es": "de conformidad con / conforme a",
+          "example": "Pursuant to Section 5, the deposit is non-refundable.",
+          "exampleEs": "De conformidad con la Sección 5, el depósito no es reembolsable."
+        },
+        {
+          "target": "hereinafter referred to as",
+          "es": "en adelante denominado",
+          "example": "ABC Corp, hereinafter referred to as 'the Company', agrees to the following terms.",
+          "exampleEs": "ABC Corp, en adelante denominada 'la Empresa', acepta los siguientes términos."
+        },
+        {
+          "target": "in witness whereof",
+          "es": "en fe de lo cual",
+          "example": "In witness whereof, the parties have signed this agreement.",
+          "exampleEs": "En fe de lo cual, las partes firmaron este acuerdo."
+        },
+        {
+          "target": "breach of contract",
+          "es": "incumplimiento de contrato",
+          "example": "The supplier was sued for breach of contract.",
+          "exampleEs": "Demandaron al proveedor por incumplimiento de contrato."
+        }
+      ]
+    },
+    {
+      "id": "medical-scientific-jargon",
+      "day": 3,
+      "title": "Jerga médica y científica",
+      "goal": "vas a poder comprender y usar con precisión terminología médica y científica en contextos clínicos y de investigación.",
+      "focus": [
+        "reading",
+        "grammar"
+      ],
+      "keyPoints": [
+        "La terminología médica se forma con raíces griegas y latinas (cardio-, -itis, -ectomy) que permiten deducir el significado si conocés el patrón.",
+        "Los informes científicos prefieren la voz pasiva y la nominalización para sonar objetivos: the sample was analyzed en vez de we analyzed the sample.",
+        "Hay diferencias de registro entre el lenguaje que usa el médico con el paciente (términos simples) y el que usa en un informe clínico (términos técnicos exactos).",
+        "Algunos términos cambian de ortografía entre EE.UU. y Reino Unido: pediatrician/paediatrician, anesthesia/anaesthesia, tumor/tumour.",
+        "Las abreviaturas médicas (BP, MRI, ICU) se usan todo el tiempo en informes, pero se expanden la primera vez que aparecen en un texto formal."
+      ],
+      "examples": [
+        {
+          "target": "The patient presented with acute abdominal pain and was referred for an MRI.",
+          "es": "El paciente se presentó con dolor abdominal agudo y fue derivado para una resonancia magnética."
+        },
+        {
+          "target": "The biopsy confirmed the presence of malignant cells.",
+          "es": "La biopsia confirmó la presencia de células malignas."
+        },
+        {
+          "target": "The study's findings were statistically significant at a 95% confidence level.",
+          "es": "Los hallazgos del estudio fueron estadísticamente significativos con un nivel de confianza del 95%."
+        },
+        {
+          "target": "The patient was prescribed a course of antibiotics to treat the infection.",
+          "es": "Al paciente se le indicó un tratamiento con antibióticos para tratar la infección."
+        },
+        {
+          "target": "The surgeon performed an appendectomy without complications.",
+          "es": "El cirujano realizó una apendicectomía sin complicaciones."
+        },
+        {
+          "target": "Blood pressure was monitored continuously throughout the trial.",
+          "es": "La presión arterial se monitoreó de forma continua durante el ensayo."
+        },
+        {
+          "target": "The vaccine triggers an immune response by introducing a harmless antigen.",
+          "es": "La vacuna desencadena una respuesta inmunitaria introduciendo un antígeno inofensivo."
+        },
+        {
+          "target": "The researchers controlled for confounding variables in the experiment.",
+          "es": "Los investigadores controlaron las variables de confusión en el experimento."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The doctor make a diagnosis of pneumonia.",
+          "right": "The doctor made a diagnosis of pneumonia.",
+          "why": "Error de tiempo verbal, común al describir procedimientos médicos que ya ocurrieron; hay que usar el pasado simple."
+        },
+        {
+          "wrong": "He has a cancer.",
+          "right": "He has cancer.",
+          "why": "Cancer es un sustantivo no contable en este uso general; no lleva artículo indefinido en inglés, a diferencia del español 'un cáncer'."
+        },
+        {
+          "wrong": "The sample analyzed by the team.",
+          "right": "The sample was analyzed by the team.",
+          "why": "Falta el auxiliar was para formar la voz pasiva, estructura clave del registro científico."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "present with",
+          "es": "presentarse con (un síntoma)",
+          "example": "Patients who present with these symptoms should be tested immediately.",
+          "exampleEs": "Los pacientes que se presentan con estos síntomas deben hacerse estudios de inmediato."
+        },
+        {
+          "target": "rule out",
+          "es": "descartar",
+          "example": "Further tests were ordered to rule out a cardiac condition.",
+          "exampleEs": "Se pidieron más estudios para descartar una afección cardíaca."
+        },
+        {
+          "target": "statistically significant",
+          "es": "estadísticamente significativo",
+          "example": "The difference between the two groups was statistically significant.",
+          "exampleEs": "La diferencia entre los dos grupos fue estadísticamente significativa."
+        },
+        {
+          "target": "control for",
+          "es": "controlar (una variable)",
+          "example": "Researchers must control for age and gender in this type of analysis.",
+          "exampleEs": "Los investigadores deben controlar la edad y el género en este tipo de análisis."
+        },
+        {
+          "target": "adverse effect",
+          "es": "efecto adverso",
+          "example": "The most common adverse effect was mild nausea.",
+          "exampleEs": "El efecto adverso más común fue náusea leve."
+        }
+      ]
+    },
+    {
+      "id": "financial-business-jargon",
+      "day": 4,
+      "title": "Jerga financiera y de negocios",
+      "goal": "vas a poder entender y usar con precisión el vocabulario especializado de finanzas y negocios en informes, reuniones y noticias económicas.",
+      "focus": [
+        "reading"
+      ],
+      "keyPoints": [
+        "Muchos términos financieros son metáforas (bull/bear market, blue chip, burn rate) que no se traducen literalmente al español.",
+        "Los acrónimos financieros (ROI, EBITDA, GDP) funcionan como sustantivos y aparecen constantemente en informes y presentaciones.",
+        "Los verbos de negocios suelen ser phrasal verbs o colocaciones fijas: to break even, to scale up, to ramp up production.",
+        "Hay diferencias terminológicas entre EE.UU. y Reino Unido: checking account (EE.UU.) frente a current account (UK) para lo mismo.",
+        "El lenguaje de negocios formal evita el exceso de jerga cuando el público no es especializado; hay que calibrar según la audiencia."
+      ],
+      "examples": [
+        {
+          "target": "The company reported a 15% increase in quarterly revenue.",
+          "es": "La empresa reportó un aumento del 15% en los ingresos trimestrales."
+        },
+        {
+          "target": "Investors are worried about a potential bear market next year.",
+          "es": "Los inversores están preocupados por un posible mercado bajista el año que viene."
+        },
+        {
+          "target": "The startup is burning through cash faster than expected.",
+          "es": "La startup está quemando efectivo más rápido de lo esperado."
+        },
+        {
+          "target": "We need to break even by the end of the fiscal year.",
+          "es": "Necesitamos llegar al punto de equilibrio para fin del año fiscal."
+        },
+        {
+          "target": "The merger was finalized after months of due diligence.",
+          "es": "La fusión se finalizó después de meses de debida diligencia."
+        },
+        {
+          "target": "Our ROI on this campaign was higher than we projected.",
+          "es": "Nuestro retorno de inversión en esta campaña fue mayor de lo que proyectamos."
+        },
+        {
+          "target": "The board decided to diversify the portfolio to reduce risk.",
+          "es": "El directorio decidió diversificar la cartera para reducir el riesgo."
+        },
+        {
+          "target": "Earnings per share dropped due to rising production costs.",
+          "es": "Las ganancias por acción cayeron debido al aumento de los costos de producción."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The company earns much money this year.",
+          "right": "The company earned a lot of money this year.",
+          "why": "Error de cuantificador (much no se usa así en afirmaciones estándar; se usa a lot of) y de tiempo verbal."
+        },
+        {
+          "wrong": "We need to break the even point.",
+          "right": "We need to break even.",
+          "why": "Break even es una colocación fija intransitiva; no se dice break the even point en el habla de negocios."
+        },
+        {
+          "wrong": "The GDP of the country is very big.",
+          "right": "The country's GDP is very high.",
+          "why": "En jerga económica, el GDP se describe como high/low, no big/small, que suena infantil en ese contexto técnico."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "break even",
+          "es": "llegar al punto de equilibrio",
+          "example": "The company expects to break even by next quarter.",
+          "exampleEs": "La empresa espera llegar al punto de equilibrio para el próximo trimestre."
+        },
+        {
+          "target": "burn rate",
+          "es": "tasa de consumo de efectivo",
+          "example": "Investors are concerned about the startup's burn rate.",
+          "exampleEs": "A los inversores les preocupa la tasa de consumo de efectivo de la startup."
+        },
+        {
+          "target": "bear market",
+          "es": "mercado bajista",
+          "example": "Analysts predict a bear market in the next six months.",
+          "exampleEs": "Los analistas predicen un mercado bajista en los próximos seis meses."
+        },
+        {
+          "target": "due diligence",
+          "es": "debida diligencia / análisis previo",
+          "example": "The firm conducted due diligence before the acquisition.",
+          "exampleEs": "La firma realizó un análisis previo antes de la adquisición."
+        },
+        {
+          "target": "ramp up production",
+          "es": "acelerar/aumentar la producción",
+          "example": "The factory had to ramp up production to meet demand.",
+          "exampleEs": "La fábrica tuvo que acelerar la producción para cubrir la demanda."
+        }
+      ]
+    },
+    {
+      "id": "adapting-technical-text-general-audience",
+      "day": 5,
+      "title": "Adaptar un texto técnico a un público general",
+      "goal": "vas a poder reescribir un texto técnico especializado para que lo entienda una audiencia no especializada, sin perder precisión.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "El primer paso es identificar qué términos técnicos son imprescindibles y cuáles se pueden reemplazar por un equivalente simple sin perder exactitud.",
+        "Las nominalizaciones y la voz pasiva típicas del registro técnico se 'desarman' en sujeto + verbo activo para sonar más claras.",
+        "Las siglas y acrónimos se expanden la primera vez y, si no son esenciales, se explican con una analogía o definición breve.",
+        "Las oraciones largas y subordinadas se dividen en oraciones más cortas; la claridad importa más que la elegancia sintáctica en este contexto.",
+        "Mantener la precisión del significado es tan importante como simplificar: hay que evitar simplificar tanto que la información se vuelva incorrecta."
+      ],
+      "examples": [
+        {
+          "target": "The algorithm's time complexity is O(n log n), which basically means it slows down in a predictable way as the data grows.",
+          "es": "La complejidad temporal del algoritmo es O(n log n), lo que básicamente significa que se vuelve más lento de manera predecible cuando crecen los datos."
+        },
+        {
+          "target": "The patient was diagnosed with myocardial infarction, in plain English, a heart attack.",
+          "es": "Al paciente se le diagnosticó un infarto de miocardio, en criollo, un ataque cardíaco."
+        },
+        {
+          "target": "The defendant was found liable for damages, meaning the court decided he had to pay for the harm caused.",
+          "es": "Se determinó que el acusado era responsable de los daños, es decir, el tribunal decidió que tenía que pagar por el perjuicio causado."
+        },
+        {
+          "target": "The company's EBITDA grew by 12%, which simply means its profit before taxes and other costs went up.",
+          "es": "El EBITDA de la empresa creció un 12%, lo que simplemente significa que su ganancia antes de impuestos y otros costos aumentó."
+        },
+        {
+          "target": "A memory leak was identified in the backend, meaning the app was quietly using more and more memory until it crashed.",
+          "es": "Se identificó una pérdida de memoria en el backend, es decir, la aplicación iba usando cada vez más memoria hasta que se colgaba."
+        },
+        {
+          "target": "The vaccine induces an adaptive immune response, or in layman's terms, it teaches your body to fight the disease.",
+          "es": "La vacuna induce una respuesta inmunitaria adaptativa, o en términos simples, le enseña a tu cuerpo a combatir la enfermedad."
+        },
+        {
+          "target": "The merger is pending regulatory approval, so the two companies can't officially join yet.",
+          "es": "La fusión está pendiente de aprobación regulatoria, así que las dos empresas todavía no pueden unirse oficialmente."
+        },
+        {
+          "target": "Pursuant to Clause 7, the lessee shall vacate the premises, which just means the renter has to leave by a certain date.",
+          "es": "De conformidad con la Cláusula 7, el inquilino deberá desalojar la propiedad, lo que simplemente significa que tiene que irse para una fecha determinada."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The patient had myocardial infarction, which is bad for the heart.",
+          "right": "The patient had a heart attack.",
+          "why": "Al simplificar hay que reemplazar el término técnico directamente, no dejarlo y agregar una explicación vaga que no aclara nada."
+        },
+        {
+          "wrong": "Simplifying a benign tumor as 'cancer' to make it easier to understand.",
+          "right": "Simplifying it as 'an abnormal growth that isn't cancerous'.",
+          "why": "Simplificar no puede cambiar el significado médico real; hay que mantener la precisión aunque se use lenguaje simple."
+        },
+        {
+          "wrong": "The algorithm is O(n log n), basically.",
+          "right": "The program gets a bit slower each time you add more data, but not drastically slower.",
+          "why": "Dejar la notación técnica intacta y solo agregar 'basically' no simplifica nada; hay que reemplazar la idea completa con lenguaje llano."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "in plain English",
+          "es": "en criollo / en palabras simples",
+          "example": "Let me put this in plain English for you.",
+          "exampleEs": "Dejame explicarte esto en criollo."
+        },
+        {
+          "target": "break it down",
+          "es": "desglosarlo / explicarlo paso a paso",
+          "example": "Let's break it down so everyone can follow.",
+          "exampleEs": "Desglosémoslo para que todos puedan seguir."
+        },
+        {
+          "target": "in layman's terms",
+          "es": "en términos simples / para los no especialistas",
+          "example": "In layman's terms, the server just ran out of memory.",
+          "exampleEs": "En términos simples, al servidor se le acabó la memoria."
+        },
+        {
+          "target": "boil down to",
+          "es": "reducirse a / resumirse en",
+          "example": "In the end, it all has to boil down to one simple idea.",
+          "exampleEs": "Al final, todo tiene que reducirse a una idea simple."
+        },
+        {
+          "target": "dumb it down",
+          "es": "simplificarlo (de forma coloquial)",
+          "example": "Can you dumb it down a bit? I'm not an engineer.",
+          "exampleEs": "¿Lo podés simplificar un poco? No soy ingeniero."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "b2-future-forms",
   "level": "B2",
-  "order": 2,
+  "order": 3,
   "title": "Futuro continuo, perfecto y otros futuros",
   "targetTitle": "Future continuous, future perfect and other future forms",
   "description": "Cómo hablar de lo que va a estar pasando, de lo que ya va a estar terminado y de lo que está por pasar o previsto, y cómo elegir la forma de futuro adecuada.",
@@ -11,7 +11,9 @@
     "Expresar inminencia y horarios previstos con be about to y be due to",
     "Elegir entre will, going to, el presente continuo y el presente simple según el tipo de futuro"
   ],
-  "prerequisites": ["b1-perfect-continuous-verb-patterns"],
+  "prerequisites": [
+    "b1-perfect-continuous-verb-patterns"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,7 +21,9 @@
       "day": 1,
       "title": "Future continuous: will be doing",
       "goal": "Hablar de acciones que van a estar en curso en un momento del futuro.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "will be + verbo con -ing: This time tomorrow, I'll be flying to Lima.",
         "Para algo que va a estar en curso en un momento concreto del futuro: At eight I'll be having dinner, so call me later.",
@@ -27,12 +31,25 @@
         "Para preguntar planes de forma amable, sin presionar: Will you be using the car tonight?"
       ],
       "examples": [
-        { "target": "Don't call me at nine; I'll be watching the game.", "es": "No me llames a las nueve: voy a estar mirando el partido." },
-        { "target": "This time next week, we'll be lying on a beach in Brazil.", "es": "La semana que viene a esta hora vamos a estar tirados en una playa de Brasil." },
-        { "target": "Will you be going past the supermarket on your way home?", "es": "¿Vas a pasar por el súper a la vuelta?" }
+        {
+          "target": "Don't call me at nine; I'll be watching the game.",
+          "es": "No me llames a las nueve: voy a estar mirando el partido."
+        },
+        {
+          "target": "This time next week, we'll be lying on a beach in Brazil.",
+          "es": "La semana que viene a esta hora vamos a estar tirados en una playa de Brasil."
+        },
+        {
+          "target": "Will you be going past the supermarket on your way home?",
+          "es": "¿Vas a pasar por el súper a la vuelta?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "At ten I will working.", "right": "At ten I will be working.", "why": "Al future continuous no le puede faltar be: will be + -ing." }
+        {
+          "wrong": "At ten I will working.",
+          "right": "At ten I will be working.",
+          "why": "Al future continuous no le puede faltar be: will be + -ing."
+        }
       ]
     },
     {
@@ -40,7 +57,10 @@
       "day": 2,
       "title": "Future perfect: will have done",
       "goal": "Hablar de algo que va a estar terminado antes de un momento del futuro.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "will have + participio: By 2030, I'll have finished my degree.",
         "by + momento = para, a más tardar: by Friday, by the end of the year, by the time you arrive.",
@@ -48,13 +68,30 @@
         "Future perfect continuous (will have been + -ing) para la duración hasta un momento futuro: In June, I'll have been working here for ten years."
       ],
       "examples": [
-        { "target": "Don't worry, I'll have fixed the car by Monday.", "es": "Quedate tranquilo: para el lunes ya voy a tener el auto arreglado." },
-        { "target": "By the time the guests arrive, we'll have cleaned the whole house.", "es": "Para cuando lleguen los invitados, ya vamos a haber limpiado toda la casa." },
-        { "target": "Next month, they'll have been married for twenty-five years.", "es": "El mes que viene van a cumplir veinticinco años de casados." }
+        {
+          "target": "Don't worry, I'll have fixed the car by Monday.",
+          "es": "Quedate tranquilo: para el lunes ya voy a tener el auto arreglado."
+        },
+        {
+          "target": "By the time the guests arrive, we'll have cleaned the whole house.",
+          "es": "Para cuando lleguen los invitados, ya vamos a haber limpiado toda la casa."
+        },
+        {
+          "target": "Next month, they'll have been married for twenty-five years.",
+          "es": "El mes que viene van a cumplir veinticinco años de casados."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "By the time you will arrive, I'll have left.", "right": "By the time you arrive, I'll have left.", "why": "Después de by the time (igual que con when o if) va presente, aunque hables del futuro." },
-        { "wrong": "I'll have finished it until Friday.", "right": "I'll have finished it by Friday.", "why": "by marca un límite ('para', 'antes de'); until marca algo que dura hasta ese momento ('hasta')." }
+        {
+          "wrong": "By the time you will arrive, I'll have left.",
+          "right": "By the time you arrive, I'll have left.",
+          "why": "Después de by the time (igual que con when o if) va presente, aunque hables del futuro."
+        },
+        {
+          "wrong": "I'll have finished it until Friday.",
+          "right": "I'll have finished it by Friday.",
+          "why": "by marca un límite ('para', 'antes de'); until marca algo que dura hasta ese momento ('hasta')."
+        }
       ]
     },
     {
@@ -62,7 +99,9 @@
       "day": 3,
       "title": "Be about to, be due to y be to",
       "goal": "Expresar que algo está por pasar o que está previsto.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "be about to + verbo base = estar por, estar a punto de: Hurry up, the movie is about to start.",
         "be on the point of + -ing: más enfático y formal: The company was on the point of closing.",
@@ -70,13 +109,30 @@
         "be to + verbo base: planes oficiales, muy común en noticias: The president is to visit China next month."
       ],
       "examples": [
-        { "target": "I was about to call you when you texted me.", "es": "Estaba por llamarte cuando me mandaste el mensaje." },
-        { "target": "The new bridge is due to open in March.", "es": "Está previsto que el puente nuevo se inaugure en marzo." },
-        { "target": "Quick, get on! The doors are about to close.", "es": "¡Rápido, subí! Las puertas están por cerrarse." }
+        {
+          "target": "I was about to call you when you texted me.",
+          "es": "Estaba por llamarte cuando me mandaste el mensaje."
+        },
+        {
+          "target": "The new bridge is due to open in March.",
+          "es": "Está previsto que el puente nuevo se inaugure en marzo."
+        },
+        {
+          "target": "Quick, get on! The doors are about to close.",
+          "es": "¡Rápido, subí! Las puertas están por cerrarse."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "The movie is about to starting.", "right": "The movie is about to start.", "why": "Be about to va seguido del verbo base, sin -ing." },
-        { "wrong": "I'm at the point of leaving.", "right": "I'm about to leave.", "why": "'Estar a punto de' no se traduce palabra por palabra: se dice be about to o be on the point of." }
+        {
+          "wrong": "The movie is about to starting.",
+          "right": "The movie is about to start.",
+          "why": "Be about to va seguido del verbo base, sin -ing."
+        },
+        {
+          "wrong": "I'm at the point of leaving.",
+          "right": "I'm about to leave.",
+          "why": "'Estar a punto de' no se traduce palabra por palabra: se dice be about to o be on the point of."
+        }
       ]
     },
     {
@@ -84,7 +140,10 @@
       "day": 4,
       "title": "Cómo elegir la forma de futuro",
       "goal": "Elegir la forma de futuro adecuada según la situación.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "will: decisiones en el momento, ofrecimientos, promesas y predicciones basadas en tu opinión: I'll get it! I think it'll be fine.",
         "going to: planes ya decididos y predicciones basadas en lo que ves: Look at those clouds. It's going to rain.",
@@ -93,13 +152,30 @@
         "future continuous y future perfect: algo en curso o terminado en un momento futuro."
       ],
       "examples": [
-        { "target": "I'm having lunch with my boss on Thursday.", "es": "El jueves almuerzo con mi jefe." },
-        { "target": "The conference starts at nine and ends at five.", "es": "El congreso empieza a las nueve y termina a las cinco." },
-        { "target": "Careful! You're going to drop those glasses.", "es": "¡Cuidado! Se te van a caer esas copas." }
+        {
+          "target": "I'm having lunch with my boss on Thursday.",
+          "es": "El jueves almuerzo con mi jefe."
+        },
+        {
+          "target": "The conference starts at nine and ends at five.",
+          "es": "El congreso empieza a las nueve y termina a las cinco."
+        },
+        {
+          "target": "Careful! You're going to drop those glasses.",
+          "es": "¡Cuidado! Se te van a caer esas copas."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Wait, I help you.", "right": "Wait, I'll help you.", "why": "Para ofrecerte en el momento se usa will. En español alcanza el presente ('te ayudo'), en inglés no." },
-        { "wrong": "I will see the dentist tomorrow at four.", "right": "I'm seeing the dentist tomorrow at four.", "why": "Para un turno o una cita ya arreglada suena mucho más natural el presente continuo." }
+        {
+          "wrong": "Wait, I help you.",
+          "right": "Wait, I'll help you.",
+          "why": "Para ofrecerte en el momento se usa will. En español alcanza el presente ('te ayudo'), en inglés no."
+        },
+        {
+          "wrong": "I will see the dentist tomorrow at four.",
+          "right": "I'm seeing the dentist tomorrow at four.",
+          "why": "Para un turno o una cita ya arreglada suena mucho más natural el presente continuo."
+        }
       ]
     },
     {
@@ -107,7 +183,10 @@
       "day": 5,
       "title": "Un email de trabajo con plazos",
       "goal": "Leer y escribir un email de trabajo que informa planes, fechas y plazos.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Contá lo que va a estar pasando: I'll be working from the Córdoba office next week.",
         "Marcá plazos con el future perfect y by: We'll have finished the first draft by the 15th.",
@@ -115,12 +194,25 @@
         "Cerrá ofreciendo ayuda o pidiendo confirmación: Let me know if that works for you. / I'll keep you posted."
       ],
       "examples": [
-        { "target": "Just a quick update on the project.", "es": "Te paso una breve actualización del proyecto." },
-        { "target": "We're about to start testing the new app.", "es": "Estamos por empezar a probar la aplicación nueva." },
-        { "target": "By the end of the month, we'll have trained the whole team.", "es": "Para fin de mes ya vamos a haber capacitado a todo el equipo." }
+        {
+          "target": "Just a quick update on the project.",
+          "es": "Te paso una breve actualización del proyecto."
+        },
+        {
+          "target": "We're about to start testing the new app.",
+          "es": "Estamos por empezar a probar la aplicación nueva."
+        },
+        {
+          "target": "By the end of the month, we'll have trained the whole team.",
+          "es": "Para fin de mes ya vamos a haber capacitado a todo el equipo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I will be grateful if you confirm me the date.", "right": "I'd be grateful if you could confirm the date.", "why": "Confirm no lleva a la persona como objeto (confirm something, no confirm me), y would ... could suena más cortés." }
+        {
+          "wrong": "I will be grateful if you confirm me the date.",
+          "right": "I'd be grateful if you could confirm the date.",
+          "why": "Confirm no lleva a la persona como objeto (confirm something, no confirm me), y would ... could suena más cortés."
+        }
       ]
     }
   ]

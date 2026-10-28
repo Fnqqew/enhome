@@ -1,7 +1,7 @@
 {
   "id": "c1-discourse-hedging",
   "level": "C1",
-  "order": 5,
+  "order": 9,
   "title": "Marcadores del discurso y atenuación",
   "targetTitle": "Discourse markers, hedging and academic style",
   "description": "Cómo organizar un texto o una exposición con marcadores del discurso, cómo matizar afirmaciones para sonar prudente y preciso, y cómo escribir con estilo académico.",
@@ -11,7 +11,10 @@
     "Atenuar afirmaciones con verbos, modales, adverbios y cuantificadores (hedging)",
     "Escribir un texto académico breve con argumentos matizados, citas y contraargumentos"
   ],
-  "prerequisites": ["b2-passive-causative", "b2-emphasis-cohesion"],
+  "prerequisites": [
+    "b2-passive-causative",
+    "b2-emphasis-cohesion"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,7 +22,10 @@
       "day": 1,
       "title": "Marcadores para organizar un texto",
       "goal": "Estructurar ideas, agregar información, ejemplificar y concluir.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Secuenciar: First(ly), Second(ly), Finally / To begin with, Next, Lastly.",
         "Agregar: In addition, Furthermore, Moreover, What is more, Not to mention...",
@@ -28,14 +34,35 @@
         "Furthermore y moreover son formales y van al principio de la oración con coma: no los uses para unir dos ideas cortas como si fueran and."
       ],
       "examples": [
-        { "target": "Firstly, the plan is too expensive. Furthermore, it would take years to implement.", "es": "En primer lugar, el plan es demasiado caro. Además, llevaría años implementarlo." },
-        { "target": "Three factors need to be considered, namely cost, time and staffing.", "es": "Hay que tener en cuenta tres factores, a saber: el costo, el tiempo y el personal." },
-        { "target": "On balance, the advantages seem to outweigh the risks.", "es": "En términos generales, las ventajas parecen superar a los riesgos." }
+        {
+          "target": "Firstly, the plan is too expensive. Furthermore, it would take years to implement.",
+          "es": "En primer lugar, el plan es demasiado caro. Además, llevaría años implementarlo."
+        },
+        {
+          "target": "Three factors need to be considered, namely cost, time and staffing.",
+          "es": "Hay que tener en cuenta tres factores, a saber: el costo, el tiempo y el personal."
+        },
+        {
+          "target": "On balance, the advantages seem to outweigh the risks.",
+          "es": "En términos generales, las ventajas parecen superar a los riesgos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "In the other hand, the costs are high.", "right": "On the other hand, the costs are high.", "why": "Es on the other hand; el 'por otro lado' del español lleva otra preposición." },
-        { "wrong": "At first, I will describe the problem.", "right": "First, I will describe the problem.", "why": "At first significa 'al principio' (en contraste con lo que pasó después); para enumerar se usa First o Firstly." },
-        { "wrong": "Resuming, the project was a success.", "right": "To sum up, the project was a success.", "why": "Resume significa 'retomar'; 'resumiendo' se dice to sum up o in short." }
+        {
+          "wrong": "In the other hand, the costs are high.",
+          "right": "On the other hand, the costs are high.",
+          "why": "Es on the other hand; el 'por otro lado' del español lleva otra preposición."
+        },
+        {
+          "wrong": "At first, I will describe the problem.",
+          "right": "First, I will describe the problem.",
+          "why": "At first significa 'al principio' (en contraste con lo que pasó después); para enumerar se usa First o Firstly."
+        },
+        {
+          "wrong": "Resuming, the project was a success.",
+          "right": "To sum up, the project was a success.",
+          "why": "Resume significa 'retomar'; 'resumiendo' se dice to sum up o in short."
+        }
       ]
     },
     {
@@ -43,7 +70,10 @@
       "day": 2,
       "title": "Marcadores de la conversación",
       "goal": "Usar marcadores para manejar una conversación o una exposición oral.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Ganar tiempo: Well..., Let me think..., How can I put it?",
         "Cambiar de tema o volver: By the way, Anyway, Speaking of..., Going back to what you said...",
@@ -52,13 +82,30 @@
         "En una exposición: Let's move on to..., As I mentioned earlier..., To come back to my main point..."
       ],
       "examples": [
-        { "target": "Anyway, going back to what I was saying, the budget is the main issue.", "es": "Bueno, volviendo a lo que decía, el presupuesto es el problema principal." },
-        { "target": "Admittedly, the results weren't perfect, but they were better than expected.", "es": "Hay que reconocer que los resultados no fueron perfectos, pero fueron mejores de lo esperado." },
-        { "target": "The hotel was a bit noisy. Mind you, it was very cheap.", "es": "El hotel era un poco ruidoso. Igual, era muy barato." }
+        {
+          "target": "Anyway, going back to what I was saying, the budget is the main issue.",
+          "es": "Bueno, volviendo a lo que decía, el presupuesto es el problema principal."
+        },
+        {
+          "target": "Admittedly, the results weren't perfect, but they were better than expected.",
+          "es": "Hay que reconocer que los resultados no fueron perfectos, pero fueron mejores de lo esperado."
+        },
+        {
+          "target": "The hotel was a bit noisy. Mind you, it was very cheap.",
+          "es": "El hotel era un poco ruidoso. Igual, era muy barato."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Eventually, you can call me tomorrow.", "right": "If necessary, you can call me tomorrow.", "why": "Eventually significa 'finalmente, con el tiempo'; 'eventualmente' en el sentido de 'si hace falta' es if necessary o if need be." },
-        { "wrong": "Let me put it in other words.", "right": "Let me put it another way.", "why": "'Dicho de otra manera' se dice Let me put it another way o In other words; put it in other words no es natural." }
+        {
+          "wrong": "Eventually, you can call me tomorrow.",
+          "right": "If necessary, you can call me tomorrow.",
+          "why": "Eventually significa 'finalmente, con el tiempo'; 'eventualmente' en el sentido de 'si hace falta' es if necessary o if need be."
+        },
+        {
+          "wrong": "Let me put it in other words.",
+          "right": "Let me put it another way.",
+          "why": "'Dicho de otra manera' se dice Let me put it another way o In other words; put it in other words no es natural."
+        }
       ]
     },
     {
@@ -66,7 +113,10 @@
       "day": 3,
       "title": "Atenuación (hedging)",
       "goal": "Matizar afirmaciones para sonar prudente y preciso.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Hedging es suavizar o matizar una afirmación para no presentarla como una verdad absoluta: es clave en los textos académicos y en la diplomacia.",
         "Verbos: seem, appear, tend to, suggest, indicate: The results suggest that... / Prices tend to rise in winter.",
@@ -75,13 +125,30 @@
         "Expresiones y cuantificadores: to some extent, in most cases, It could be argued that..., There is some evidence that... Y most o many en vez de all."
       ],
       "examples": [
-        { "target": "The findings appear to support the original hypothesis.", "es": "Los resultados parecen respaldar la hipótesis original." },
-        { "target": "This may be partly due to changes in consumer habits.", "es": "Esto puede deberse en parte a cambios en los hábitos de consumo." },
-        { "target": "It could be argued that social media has, to some extent, changed the way we read.", "es": "Se podría argumentar que las redes sociales, hasta cierto punto, cambiaron nuestra forma de leer." }
+        {
+          "target": "The findings appear to support the original hypothesis.",
+          "es": "Los resultados parecen respaldar la hipótesis original."
+        },
+        {
+          "target": "This may be partly due to changes in consumer habits.",
+          "es": "Esto puede deberse en parte a cambios en los hábitos de consumo."
+        },
+        {
+          "target": "It could be argued that social media has, to some extent, changed the way we read.",
+          "es": "Se podría argumentar que las redes sociales, hasta cierto punto, cambiaron nuestra forma de leer."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "This proves that all young people prefer shopping online.", "right": "This suggests that most young people prefer shopping online.", "why": "Un texto académico evita generalizar sin matices: prove y all son demasiado absolutos." },
-        { "wrong": "The results seem be accurate.", "right": "The results seem to be accurate.", "why": "Seem y appear van seguidos de to + infinitivo." }
+        {
+          "wrong": "This proves that all young people prefer shopping online.",
+          "right": "This suggests that most young people prefer shopping online.",
+          "why": "Un texto académico evita generalizar sin matices: prove y all son demasiado absolutos."
+        },
+        {
+          "wrong": "The results seem be accurate.",
+          "right": "The results seem to be accurate.",
+          "why": "Seem y appear van seguidos de to + infinitivo."
+        }
       ]
     },
     {
@@ -89,7 +156,10 @@
       "day": 4,
       "title": "Estilo académico: citar y contraargumentar",
       "goal": "Presentar argumentos, citar fuentes y contraargumentar con estilo académico.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Citar y referir: According to Smith (2020)..., As Smith points out..., Smith argues / claims / maintains that...",
         "El verbo muestra tu postura: points out, shows, demonstrates (aceptás la idea); claims, alleges (tomás distancia).",
@@ -98,13 +168,30 @@
         "Párrafo típico: idea principal (topic sentence), evidencia, explicación y enlace con la idea siguiente."
       ],
       "examples": [
-        { "target": "As Smith (2019) points out, creativity is often undervalued in schools.", "es": "Como señala Smith (2019), muchas veces la creatividad se subestima en las escuelas." },
-        { "target": "While it is true that technology can be distracting, it also offers unique learning opportunities.", "es": "Si bien es cierto que la tecnología puede distraer, también ofrece oportunidades de aprendizaje únicas." },
-        { "target": "This argument fails to take into account the long-term costs.", "es": "Este argumento no tiene en cuenta los costos a largo plazo." }
+        {
+          "target": "As Smith (2019) points out, creativity is often undervalued in schools.",
+          "es": "Como señala Smith (2019), muchas veces la creatividad se subestima en las escuelas."
+        },
+        {
+          "target": "While it is true that technology can be distracting, it also offers unique learning opportunities.",
+          "es": "Si bien es cierto que la tecnología puede distraer, también ofrece oportunidades de aprendizaje únicas."
+        },
+        {
+          "target": "This argument fails to take into account the long-term costs.",
+          "es": "Este argumento no tiene en cuenta los costos a largo plazo."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "According to Smith, he says that the method works.", "right": "According to Smith, the method works.", "why": "According to ya introduce la fuente: no hace falta repetirla con he says." },
-        { "wrong": "According to me, the policy has failed.", "right": "In my view, the policy has failed.", "why": "According to se usa para fuentes ajenas; para tu opinión, In my view o I would argue that." }
+        {
+          "wrong": "According to Smith, he says that the method works.",
+          "right": "According to Smith, the method works.",
+          "why": "According to ya introduce la fuente: no hace falta repetirla con he says."
+        },
+        {
+          "wrong": "According to me, the policy has failed.",
+          "right": "In my view, the policy has failed.",
+          "why": "According to se usa para fuentes ajenas; para tu opinión, In my view o I would argue that."
+        }
       ]
     },
     {
@@ -112,7 +199,10 @@
       "day": 5,
       "title": "Un ensayo breve",
       "goal": "Leer y escribir un ensayo académico breve con marcadores del discurso y atenuación.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Introducción: contexto, pregunta y postura (This essay argues that...).",
         "Desarrollo: cada párrafo con una idea principal, evidencia y matices (tend to, to some extent, the evidence suggests).",
@@ -120,12 +210,25 @@
         "Conclusión: resumí sin repetir palabra por palabra y matizá: On balance, it would seem that..."
       ],
       "examples": [
-        { "target": "This essay argues that remote work, while beneficial, is not suitable for every profession.", "es": "Este ensayo sostiene que el trabajo remoto, si bien es beneficioso, no es adecuado para todas las profesiones." },
-        { "target": "Admittedly, the evidence is limited; however, the trend is clear.", "es": "Hay que reconocer que la evidencia es limitada; sin embargo, la tendencia es clara." },
-        { "target": "On balance, it would seem that the benefits outweigh the costs.", "es": "En términos generales, parecería que los beneficios superan a los costos." }
+        {
+          "target": "This essay argues that remote work, while beneficial, is not suitable for every profession.",
+          "es": "Este ensayo sostiene que el trabajo remoto, si bien es beneficioso, no es adecuado para todas las profesiones."
+        },
+        {
+          "target": "Admittedly, the evidence is limited; however, the trend is clear.",
+          "es": "Hay que reconocer que la evidencia es limitada; sin embargo, la tendencia es clara."
+        },
+        {
+          "target": "On balance, it would seem that the benefits outweigh the costs.",
+          "es": "En términos generales, parecería que los beneficios superan a los costos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "In this essay I am going to talk about remote work.", "right": "This essay examines the impact of remote work.", "why": "En un ensayo académico se evita el tono oral: el objetivo se presenta con un sujeto impersonal y un verbo preciso (examines, argues, explores)." }
+        {
+          "wrong": "In this essay I am going to talk about remote work.",
+          "right": "This essay examines the impact of remote work.",
+          "why": "En un ensayo académico se evita el tono oral: el objetivo se presenta con un sujeto impersonal y un verbo preciso (examines, argues, explores)."
+        }
       ]
     }
   ]

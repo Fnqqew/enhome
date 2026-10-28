@@ -19,7 +19,10 @@
       "day": 1,
       "title": "Pronombres personales",
       "goal": "Reconocer y usar I, you, he, she, it, we y they.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "I siempre se escribe con mayúscula.",
         "You sirve para 'vos', 'usted' y 'ustedes'.",
@@ -27,12 +30,69 @@
         "En inglés el sujeto casi nunca se omite: 'Es lindo' es 'It is nice', no 'Is nice'."
       ],
       "examples": [
-        { "target": "She is my sister.", "es": "Ella es mi hermana." },
-        { "target": "It is cold today.", "es": "Hoy hace frío." },
-        { "target": "They are from Córdoba.", "es": "Ellos son de Córdoba." }
+        {
+          "target": "She is my sister.",
+          "es": "Ella es mi hermana."
+        },
+        {
+          "target": "It is cold today.",
+          "es": "Hoy hace frío."
+        },
+        {
+          "target": "They are from Córdoba.",
+          "es": "Ellos son de Córdoba."
+        },
+        {
+          "target": "I am a student.",
+          "es": "Yo soy estudiante."
+        },
+        {
+          "target": "You are my best friend.",
+          "es": "Vos sos mi mejor amigo."
+        },
+        {
+          "target": "He is tall.",
+          "es": "Él es alto."
+        },
+        {
+          "target": "We are at the park.",
+          "es": "Estamos en la plaza."
+        },
+        {
+          "target": "It is nine o'clock.",
+          "es": "Son las nueve."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Is very late.", "right": "It is very late.", "why": "En inglés el sujeto es obligatorio; se usa it cuando no hay un sujeto concreto." }
+        {
+          "wrong": "Is very late.",
+          "right": "It is very late.",
+          "why": "En inglés el sujeto es obligatorio; se usa it cuando no hay un sujeto concreto."
+        },
+        {
+          "wrong": "Is raining today.",
+          "right": "It is raining today.",
+          "why": "En español el sujeto se omite ('Está lloviendo'), pero en inglés siempre hay que poner el pronombre 'it'."
+        },
+        {
+          "wrong": "He is a dog.",
+          "right": "It is a dog.",
+          "why": "Para animales sin nombre propio y para objetos se usa 'it', no 'he/she', salvo que sean mascotas con nombre o quieras personificarlos."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "It's up to you.",
+          "es": "Depende de vos.",
+          "example": "Should we go now? It's up to you.",
+          "exampleEs": "¿Vamos ahora? Depende de vos."
+        },
+        {
+          "target": "It's me.",
+          "es": "Soy yo.",
+          "example": "Who's calling? It's me.",
+          "exampleEs": "¿Quién llama? Soy yo."
+        }
       ]
     },
     {
@@ -40,7 +100,9 @@
       "day": 2,
       "title": "To be en afirmativo",
       "goal": "Conjugar am, is y are y usar sus contracciones.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "I am → I'm.",
         "He / she / it is → he's, she's, it's.",
@@ -48,13 +110,75 @@
         "To be equivale a 'ser' y a 'estar' en español."
       ],
       "examples": [
-        { "target": "I'm a teacher.", "es": "Soy docente." },
-        { "target": "We're at home.", "es": "Estamos en casa." },
-        { "target": "He's 25 years old.", "es": "Tiene 25 años." }
+        {
+          "target": "I'm a teacher.",
+          "es": "Soy docente."
+        },
+        {
+          "target": "We're at home.",
+          "es": "Estamos en casa."
+        },
+        {
+          "target": "He's 25 years old.",
+          "es": "Tiene 25 años."
+        },
+        {
+          "target": "You're very kind.",
+          "es": "Vos sos muy amable."
+        },
+        {
+          "target": "They're from Mendoza.",
+          "es": "Ellos son de Mendoza."
+        },
+        {
+          "target": "It's a beautiful day.",
+          "es": "Es un día hermoso."
+        },
+        {
+          "target": "I'm hungry.",
+          "es": "Tengo hambre."
+        },
+        {
+          "target": "She's a doctor.",
+          "es": "Ella es médica."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I have 25 years.", "right": "I am 25 years old.", "why": "La edad se expresa con to be, no con have." },
-        { "wrong": "She are happy.", "right": "She is happy.", "why": "Con he, she e it se usa is." }
+        {
+          "wrong": "I have 25 years.",
+          "right": "I am 25 years old.",
+          "why": "La edad se expresa con to be, no con have."
+        },
+        {
+          "wrong": "She are happy.",
+          "right": "She is happy.",
+          "why": "Con he, she e it se usa is."
+        },
+        {
+          "wrong": "I are tired.",
+          "right": "I am tired.",
+          "why": "Cada pronombre tiene su propia forma del verbo to be; 'are' solo corresponde a you/we/they, no a I."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "I'm fine, thanks.",
+          "es": "Estoy bien, gracias.",
+          "example": "How are you? I'm fine, thanks.",
+          "exampleEs": "¿Cómo estás? Estoy bien, gracias."
+        },
+        {
+          "target": "It's okay.",
+          "es": "Está bien / no pasa nada.",
+          "example": "Don't worry, it's okay.",
+          "exampleEs": "No te preocupes, está bien."
+        },
+        {
+          "target": "I'm in a hurry.",
+          "es": "Estoy apurado.",
+          "example": "Sorry, I'm in a hurry.",
+          "exampleEs": "Perdón, estoy apurado."
+        }
       ]
     },
     {
@@ -62,19 +186,79 @@
       "day": 3,
       "title": "To be en negativo",
       "goal": "Negar con not y usar sus contracciones.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "Se agrega not después del verbo: I am not, she is not, they are not.",
         "Contracciones: I'm not, isn't, aren't.",
-        "No existe 'amn't': se dice I'm not."
+        "No existe 'amn't': se dice I'm not.",
+        "En español la negación se forma poniendo 'no' antes del verbo ('No soy'), pero en inglés hay que agregar 'not' después del verbo to be ('I am not'), no antes."
       ],
       "examples": [
-        { "target": "I'm not tired.", "es": "No estoy cansado." },
-        { "target": "It isn't expensive.", "es": "No es caro." },
-        { "target": "They aren't here.", "es": "No están acá." }
+        {
+          "target": "I'm not tired.",
+          "es": "No estoy cansado."
+        },
+        {
+          "target": "It isn't expensive.",
+          "es": "No es caro."
+        },
+        {
+          "target": "They aren't here.",
+          "es": "No están acá."
+        },
+        {
+          "target": "We aren't ready yet.",
+          "es": "Todavía no estamos listos."
+        },
+        {
+          "target": "She isn't my sister.",
+          "es": "Ella no es mi hermana."
+        },
+        {
+          "target": "You aren't late.",
+          "es": "No llegaste tarde."
+        },
+        {
+          "target": "I'm not from here.",
+          "es": "No soy de acá."
+        },
+        {
+          "target": "They're not happy with the result.",
+          "es": "No están contentos con el resultado."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I no am ready.", "right": "I am not ready.", "why": "Not va después de am, is o are; no se usa 'no' para negar un verbo." }
+        {
+          "wrong": "I no am ready.",
+          "right": "I am not ready.",
+          "why": "Not va después de am, is o are; no se usa 'no' para negar un verbo."
+        },
+        {
+          "wrong": "She not is busy.",
+          "right": "She is not busy.",
+          "why": "La palabra 'not' va después del verbo to be, no antes."
+        },
+        {
+          "wrong": "I amn't sure.",
+          "right": "I'm not sure.",
+          "why": "'Amn't' no existe en el inglés estándar; siempre se usa la contracción 'I'm not'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "It's not a big deal.",
+          "es": "No es gran cosa.",
+          "example": "Don't worry, it's not a big deal.",
+          "exampleEs": "No te preocupes, no es gran cosa."
+        },
+        {
+          "target": "We're not in a rush.",
+          "es": "No estamos apurados.",
+          "example": "Take your time, we're not in a rush.",
+          "exampleEs": "Tomate tu tiempo, no estamos apurados."
+        }
       ]
     },
     {
@@ -82,21 +266,93 @@
       "day": 4,
       "title": "Preguntas y respuestas cortas",
       "goal": "Hacer preguntas invirtiendo el orden y responder con respuestas cortas.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Para preguntar, el verbo va antes del sujeto: Are you ready?",
         "Respuestas cortas: Yes, I am. / No, I'm not.",
         "En las respuestas cortas afirmativas no se contrae: Yes, she is (no 'Yes, she's').",
-        "Las palabras de pregunta van al principio: What, Where, Who, How, How old."
+        "Las palabras de pregunta van al principio: What, Where, Who, How, How old.",
+        "En español podemos preguntar solo con la entonación ('¿Vos sos de Rosario?'), pero en inglés hay que invertir el orden entre el verbo to be y el sujeto ('Are you from Rosario?')."
       ],
       "examples": [
-        { "target": "Are you Argentinian? — Yes, I am.", "es": "¿Sos argentino? — Sí." },
-        { "target": "Where is the bank?", "es": "¿Dónde está el banco?" },
-        { "target": "How old is your brother?", "es": "¿Cuántos años tiene tu hermano?" }
+        {
+          "target": "Are you Argentinian? — Yes, I am.",
+          "es": "¿Sos argentino? — Sí."
+        },
+        {
+          "target": "Where is the bank?",
+          "es": "¿Dónde está el banco?"
+        },
+        {
+          "target": "How old is your brother?",
+          "es": "¿Cuántos años tiene tu hermano?"
+        },
+        {
+          "target": "Is she your teacher?",
+          "es": "¿Ella es tu profesora?"
+        },
+        {
+          "target": "Are they ready?",
+          "es": "¿Están listos?"
+        },
+        {
+          "target": "What is your name?",
+          "es": "¿Cómo te llamás?"
+        },
+        {
+          "target": "Who is that man?",
+          "es": "¿Quién es ese hombre?"
+        },
+        {
+          "target": "Is it far from here?",
+          "es": "¿Queda lejos de acá?"
+        }
       ],
       "commonMistakes": [
-        { "wrong": "You are ready?", "right": "Are you ready?", "why": "En inglés la entonación no alcanza: hay que invertir sujeto y verbo." },
-        { "wrong": "Yes, I'm.", "right": "Yes, I am.", "why": "No se contrae al final de una respuesta corta afirmativa." }
+        {
+          "wrong": "You are ready?",
+          "right": "Are you ready?",
+          "why": "En inglés la entonación no alcanza: hay que invertir sujeto y verbo."
+        },
+        {
+          "wrong": "Yes, I'm.",
+          "right": "Yes, I am.",
+          "why": "No se contrae al final de una respuesta corta afirmativa."
+        },
+        {
+          "wrong": "What is it your name?",
+          "right": "What is your name?",
+          "why": "En preguntas con palabra interrogativa no se repite 'it'; el orden correcto es palabra interrogativa + verbo to be + sujeto."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "How are you?",
+          "es": "¿Cómo estás?",
+          "example": "Hi! How are you?",
+          "exampleEs": "¡Hola! ¿Cómo estás?"
+        },
+        {
+          "target": "What's up?",
+          "es": "¿Qué onda? / ¿Qué pasa?",
+          "example": "Hey, what's up?",
+          "exampleEs": "Hola, ¿qué onda?"
+        },
+        {
+          "target": "How old are you?",
+          "es": "¿Cuántos años tenés?",
+          "example": "How old are you?",
+          "exampleEs": "¿Cuántos años tenés?"
+        },
+        {
+          "target": "Where are you from?",
+          "es": "¿De dónde sos?",
+          "example": "Where are you from?",
+          "exampleEs": "¿De dónde sos?"
+        }
       ]
     },
     {
@@ -104,21 +360,68 @@
       "day": 5,
       "title": "Presentarte y describir personas",
       "goal": "Comprender y escribir presentaciones personales usando to be.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Estructura típica: nombre, edad, origen, profesión y cómo estás.",
         "Nacionalidades e idiomas van con mayúscula: Argentinian, English.",
-        "Delante de una profesión se usa a o an: I'm a nurse, she's an engineer."
+        "Delante de una profesión se usa a o an: I'm a nurse, she's an engineer.",
+        "En español decimos 'Tengo 30 años' usando el verbo tener, pero en inglés se usa el verbo to be: 'I am 30 years old'."
       ],
       "examples": [
-        { "target": "Hi! My name is Lucía. I'm 30 years old and I'm from Rosario.", "es": "¡Hola! Me llamo Lucía. Tengo 30 años y soy de Rosario." },
-        { "target": "He's an engineer.", "es": "Es ingeniero." },
-        { "target": "We're very happy to be here.", "es": "Estamos muy contentos de estar acá." }
+        {
+          "target": "Hi! My name is Lucía. I'm 30 years old and I'm from Rosario.",
+          "es": "¡Hola! Me llamo Lucía. Tengo 30 años y soy de Rosario."
+        },
+        {
+          "target": "He's an engineer.",
+          "es": "Es ingeniero."
+        },
+        {
+          "target": "We're very happy to be here.",
+          "es": "Estamos muy contentos de estar acá."
+        },
+        {
+          "target": "I'm from Buenos Aires.",
+          "es": "Soy de Buenos Aires."
+        },
+        {
+          "target": "She's 28 years old.",
+          "es": "Ella tiene 28 años."
+        },
+        {
+          "target": "They're students.",
+          "es": "Ellos son estudiantes."
+        },
+        {
+          "target": "I'm a nurse.",
+          "es": "Soy enfermero/a."
+        },
+        {
+          "target": "Nice to meet you, I'm Martín.",
+          "es": "Mucho gusto, soy Martín."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I am engineer.", "right": "I am an engineer.", "why": "Delante de una profesión en singular se usa a o an." },
-        { "wrong": "I'm argentinian.", "right": "I'm Argentinian.", "why": "Las nacionalidades se escriben con mayúscula." }
-      ]
+        {
+          "wrong": "I am engineer.",
+          "right": "I am an engineer.",
+          "why": "Delante de una profesión en singular se usa a o an."
+        },
+        {
+          "wrong": "I'm argentinian.",
+          "right": "I'm Argentinian.",
+          "why": "Las nacionalidades se escriben con mayúscula."
+        },
+        {
+          "wrong": "I have 30 years.",
+          "right": "I am 30 years old.",
+          "why": "En inglés la edad se expresa con el verbo to be, no con 'have', que es un calco directo de 'tener años' en español."
+        }
+      ],
+      "chunks": []
     }
   ]
 }

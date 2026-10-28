@@ -1,0 +1,519 @@
+{
+  "id": "en-c2-nuanced-modality",
+  "level": "C2",
+  "order": 2,
+  "title": "Matices de modalidad y tono",
+  "targetTitle": "Nuances of Modality and Tone",
+  "description": "Vas a perfeccionar el uso de hedging, boosting y understatement para suavizar o reforzar tus afirmaciones según el contexto. Te sirve para manejar el tono de tus mensajes con la sutileza que exige el inglés en contextos profesionales o diplomáticos.",
+  "objectives": [
+    "Suavizar afirmaciones con hedging para sonar prudente y profesional sin perder precisión",
+    "Reforzar afirmaciones con boosting cuando el contexto exige contundencia y seguridad",
+    "Reconocer e interpretar el understatement británico y su carga irónica implícita",
+    "Dominar modales compuestos y perfectos para expresar especulación muy sutil y matizada",
+    "Ajustar el registro y el tono según la audiencia: jefe, cliente, colega o desconocido",
+    "Combinar hedging, boosting y understatement de forma estratégica en un mismo texto"
+  ],
+  "prerequisites": [
+    "en-c2-advanced-syntax"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "hedging-suavizar",
+      "day": 1,
+      "title": "Hedging: suavizar afirmaciones",
+      "goal": "Vas a poder suavizar tus afirmaciones usando modales, verbos y expresiones de hedging sin sonar inseguro ni redundante.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El hedging usa modales (might, could, may), verbos (seem, appear, tend to) y frases (it could be argued that, there's a case for) para reducir la certeza de una afirmación.",
+        "A diferencia del español, donde alcanza con 'me parece' o 'podría ser', el inglés formal tiene fórmulas fijas: 'it's fairly likely that', 'to some extent'.",
+        "Evitá el overhedging: acumular varios hedges juntos (maybe, perhaps, might) suena inseguro, no diplomático; alcanza con uno solo.",
+        "Verbos como 'seem' y 'appear' necesitan sujeto explícito o la estructura 'it seems that', nunca se omite el sujeto como en español ('Parece que...').",
+        "El hedging se usa más en informes, emails formales y discusiones académicas que en charlas casuales entre amigos."
+      ],
+      "examples": [
+        {
+          "target": "It could be argued that the proposal lacks sufficient funding.",
+          "es": "Se podría argumentar que la propuesta no tiene suficiente financiamiento."
+        },
+        {
+          "target": "The results seem to indicate a slight improvement.",
+          "es": "Los resultados parecen indicar una leve mejora."
+        },
+        {
+          "target": "I'd suggest that we reconsider the timeline, if that's alright.",
+          "es": "Sugeriría que reconsideremos el cronograma, si está bien."
+        },
+        {
+          "target": "This approach tends to work better in smaller teams.",
+          "es": "Este enfoque tiende a funcionar mejor en equipos más chicos."
+        },
+        {
+          "target": "There's a case for saying the policy needs revision.",
+          "es": "Hay argumentos para decir que la política necesita revisión."
+        },
+        {
+          "target": "The data appears to support our hypothesis, to some extent.",
+          "es": "Los datos parecen respaldar nuestra hipótesis, hasta cierto punto."
+        },
+        {
+          "target": "It's fairly likely that the merger will go through.",
+          "es": "Es bastante probable que la fusión se concrete."
+        },
+        {
+          "target": "We might want to reconsider this decision.",
+          "es": "Tal vez queramos reconsiderar esta decisión."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I think maybe perhaps the plan could fail.",
+          "right": "I think the plan might fail.",
+          "why": "Acumular varios hedges juntos (maybe, perhaps, could) suena inseguro y poco natural; en inglés formal un solo hedge alcanza para transmitir la misma cautela."
+        },
+        {
+          "wrong": "It is possible that it could be the case that the data is wrong.",
+          "right": "It's possible that the data is wrong.",
+          "why": "Encadenar dos estructuras de hedging ('it is possible' + 'it could be the case') es redundante; hay que elegir una sola fórmula."
+        },
+        {
+          "wrong": "Seems that the report has errors.",
+          "right": "It seems that the report has errors.",
+          "why": "'Seem' necesita sujeto explícito ('it') o un sujeto claro antes del verbo; en español se puede omitir el sujeto ('Parece que...'), pero en inglés es obligatorio."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "to some extent",
+          "es": "hasta cierto punto",
+          "example": "The plan worked, to some extent.",
+          "exampleEs": "El plan funcionó, hasta cierto punto."
+        },
+        {
+          "target": "there's a case for",
+          "es": "hay argumentos para",
+          "example": "There's a case for extending the deadline.",
+          "exampleEs": "Hay argumentos para extender el plazo."
+        },
+        {
+          "target": "it could be argued that",
+          "es": "se podría argumentar que",
+          "example": "It could be argued that the data is incomplete.",
+          "exampleEs": "Se podría argumentar que los datos están incompletos."
+        },
+        {
+          "target": "tend to",
+          "es": "tender a",
+          "example": "Managers tend to overlook small details.",
+          "exampleEs": "Los gerentes tienden a pasar por alto los pequeños detalles."
+        },
+        {
+          "target": "I'd venture to say",
+          "es": "me atrevería a decir",
+          "example": "I'd venture to say this is our best option.",
+          "exampleEs": "Me atrevería a decir que esta es nuestra mejor opción."
+        }
+      ]
+    },
+    {
+      "id": "boosting-reforzar",
+      "day": 2,
+      "title": "Boosting: reforzar afirmaciones",
+      "goal": "Vas a poder reforzar tus afirmaciones con intensificadores, verbos de énfasis y estructuras enfáticas cuando el contexto exige contundencia.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "El boosting usa adverbios de certeza (clearly, undoubtedly, definitely, absolutely) y estructuras como 'there is no doubt that', 'the fact is that' para reforzar una afirmación.",
+        "Las oraciones hendidas (cleft sentences) como 'What's striking is...' concentran el énfasis en la parte más importante del mensaje; 'the fact is that' funciona de forma similar aunque no es técnicamente una cleft sentence.",
+        "Evitá el overboosting: combinar varios intensificadores juntos (very + definitely + absolutely) resulta redundante y puede sonar agresivo o poco creíble.",
+        "No mezcles un booster con un hedge de opinión personal en la misma oración (ej: 'It's clear that, in my opinion...'); son contradictorios.",
+        "Para énfasis en superlativos usá 'by far' o 'the single most', no un comparativo simple cuando buscás un efecto absoluto."
+      ],
+      "examples": [
+        {
+          "target": "It's clear that the team underestimated the risks.",
+          "es": "Está claro que el equipo subestimó los riesgos."
+        },
+        {
+          "target": "There is no doubt that this strategy will pay off.",
+          "es": "No hay duda de que esta estrategia va a dar resultado."
+        },
+        {
+          "target": "The evidence clearly demonstrates a strong correlation.",
+          "es": "La evidencia demuestra claramente una fuerte correlación."
+        },
+        {
+          "target": "What's striking is how quickly the market reacted.",
+          "es": "Lo llamativo es la rapidez con que reaccionó el mercado."
+        },
+        {
+          "target": "I'm absolutely convinced that we made the right call.",
+          "es": "Estoy absolutamente convencido de que tomamos la decisión correcta."
+        },
+        {
+          "target": "The fact is that profits have doubled this year.",
+          "es": "El hecho es que las ganancias se duplicaron este año."
+        },
+        {
+          "target": "This undoubtedly represents a major breakthrough.",
+          "es": "Esto representa, sin lugar a dudas, un gran avance."
+        },
+        {
+          "target": "She emphatically rejected the accusation.",
+          "es": "Ella rechazó la acusación de manera enfática."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I am very sure that this is true, definitely.",
+          "right": "I'm absolutely certain this is true.",
+          "why": "Acumular varios boosters (very + definitely) es redundante; en inglés se elige un solo intensificador fuerte para que suene natural."
+        },
+        {
+          "wrong": "It's clear that, in my opinion, this is wrong.",
+          "right": "It's clear that this is wrong.",
+          "why": "Combinar un booster ('it's clear') con un hedge de opinión personal ('in my opinion') es contradictorio porque mezcla certeza y cautela."
+        },
+        {
+          "wrong": "This is the more important point.",
+          "right": "This is by far the most important point.",
+          "why": "Para un boost de superlativo absoluto hay que usar estructuras como 'by far' con el superlativo, no un comparativo simple."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "there is no doubt that",
+          "es": "no hay duda de que",
+          "example": "There is no doubt that the project exceeded expectations.",
+          "exampleEs": "No hay duda de que el proyecto superó las expectativas."
+        },
+        {
+          "target": "the fact is that",
+          "es": "el hecho es que",
+          "example": "The fact is that we're behind schedule.",
+          "exampleEs": "El hecho es que estamos atrasados."
+        },
+        {
+          "target": "without a shadow of a doubt",
+          "es": "sin lugar a dudas",
+          "example": "This is, without a shadow of a doubt, our best quarter.",
+          "exampleEs": "Este es, sin lugar a dudas, nuestro mejor trimestre."
+        },
+        {
+          "target": "what's striking is",
+          "es": "lo llamativo es",
+          "example": "What's striking is how fast the numbers grew.",
+          "exampleEs": "Lo llamativo es la rapidez con que crecieron los números."
+        },
+        {
+          "target": "by far",
+          "es": "por lejos",
+          "example": "This is by far the most ambitious plan we've proposed.",
+          "exampleEs": "Este es por lejos el plan más ambicioso que propusimos."
+        }
+      ]
+    },
+    {
+      "id": "understatement-britanico",
+      "day": 3,
+      "title": "Understatement a la británica",
+      "goal": "Vas a poder reconocer e interpretar el understatement típico del inglés británico, donde minimizar algo en realidad lo exagera.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "El understatement británico minimiza deliberadamente algo grave o impresionante usando frases como 'quite good', 'not bad', 'a bit of a disaster'.",
+        "En inglés de Estados Unidos las frases suelen tomarse de forma más literal; en el británico, 'quite good' a menudo implica 'solo aceptable' y no 'muy bueno'.",
+        "El litotes (negar lo contrario) es clave: 'not bad at all' significa algo muy bueno, 'not the most punctual' implica que siempre llega tarde.",
+        "Palabras como 'a bit', 'a tad' y 'somewhat' en boca de un británico suelen minimizar emociones o problemas que en realidad son grandes.",
+        "Para interpretar correctamente hay que prestar atención al tono, el contexto y la expresión facial, no solo al significado literal de las palabras."
+      ],
+      "examples": [
+        {
+          "target": "The meeting was a bit of a disaster.",
+          "es": "La reunión fue un poco un desastre (se entiende que fue un desastre total)."
+        },
+        {
+          "target": "It's not the best weather we've had.",
+          "es": "No es el mejor clima que tuvimos (se entiende como 'el clima está pésimo')."
+        },
+        {
+          "target": "I wasn't overly impressed by the proposal.",
+          "es": "No quedé demasiado impresionado con la propuesta (equivale a 'la propuesta me pareció mala')."
+        },
+        {
+          "target": "That's not a bad idea at all.",
+          "es": "Esa no es una mala idea para nada (litotes: significa que es una muy buena idea)."
+        },
+        {
+          "target": "He's not the most punctual person.",
+          "es": "No es la persona más puntual (suele implicar que siempre llega tarde)."
+        },
+        {
+          "target": "The results were somewhat disappointing.",
+          "es": "Los resultados fueron algo decepcionantes (puede implicar una gran decepción)."
+        },
+        {
+          "target": "It could have gone better.",
+          "es": "Podría haber salido mejor (implica que salió muy mal)."
+        },
+        {
+          "target": "I'm a tad concerned about the budget.",
+          "es": "Estoy un poquito preocupado por el presupuesto (en tono británico implica preocupación seria)."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The food was quite good, so it must have been amazing.",
+          "right": "The food was quite good, which in British English often means it was simply average.",
+          "why": "Tomar 'quite good' literalmente como 'muy bueno' en lugar de entenderlo como un elogio tibio es un error común con el inglés británico."
+        },
+        {
+          "wrong": "He said it's 'not bad', so it must be terrible.",
+          "right": "He said it's 'not bad', which actually means it's quite good.",
+          "why": "El litotes británico invierte la intensidad: negar lo negativo expresa algo positivo, no algo neutral ni negativo."
+        },
+        {
+          "wrong": "I'm a bit annoyed, so it's a minor issue.",
+          "right": "I'm a bit annoyed, which can actually signal strong frustration in British understatement.",
+          "why": "'A bit' y 'a tad' suelen minimizar emociones fuertes, no describir molestias realmente pequeñas."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "a bit of a disaster",
+          "es": "bastante un desastre (understatement)",
+          "example": "The presentation was a bit of a disaster.",
+          "exampleEs": "La presentación fue bastante un desastre."
+        },
+        {
+          "target": "not the best",
+          "es": "no es el mejor / la mejor",
+          "example": "This is not the best outcome we hoped for.",
+          "exampleEs": "Este no es el mejor resultado que esperábamos."
+        },
+        {
+          "target": "not bad at all",
+          "es": "no está nada mal",
+          "example": "The new office is not bad at all.",
+          "exampleEs": "La nueva oficina no está nada mal."
+        },
+        {
+          "target": "a tad",
+          "es": "un poquito (minimiza, uso británico)",
+          "example": "I'm a tad worried about the deadline.",
+          "exampleEs": "Estoy un poquito preocupado por el plazo."
+        },
+        {
+          "target": "could have gone better",
+          "es": "podría haber salido mejor",
+          "example": "The negotiation could have gone better.",
+          "exampleEs": "La negociación podría haber salido mejor."
+        }
+      ]
+    },
+    {
+      "id": "modales-especulacion-sutil",
+      "day": 4,
+      "title": "Modales para especulación muy sutil",
+      "goal": "Vas a poder usar modales perfectos, continuos y combinados con adverbios para expresar especulación con distintos grados de sutileza.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Los modales perfectos (might have, could have, may have) especulan sobre el pasado; siempre van seguidos de participio pasado, no de infinitivo.",
+        "Los modales continuos (might be + -ing) especulan sobre algo que está pasando ahora de forma incierta: 'She might be reconsidering her position.'",
+        "Adverbios como 'well', 'possibly' y 'conceivably' combinados con modales (might well, could conceivably) agregan capas de sutileza a la especulación.",
+        "Frases como 'it would seem that', 'one might assume' distancian al hablante de la afirmación sin negarla del todo, algo muy usado en registros diplomáticos.",
+        "El español suele especular de forma más directa ('puede ser que', 'tal vez'); el inglés C2 matiza con combinaciones modales más elaboradas."
+      ],
+      "examples": [
+        {
+          "target": "She might have known about the decision before the meeting.",
+          "es": "Puede ser que ella supiera de la decisión antes de la reunión."
+        },
+        {
+          "target": "They could conceivably have misunderstood the instructions.",
+          "es": "Es concebible que hayan entendido mal las instrucciones."
+        },
+        {
+          "target": "It would seem that the figures were miscalculated.",
+          "es": "Parecería que las cifras estaban mal calculadas."
+        },
+        {
+          "target": "One might assume that the delay was intentional.",
+          "es": "Uno podría suponer que la demora fue intencional."
+        },
+        {
+          "target": "He may well be reconsidering his position.",
+          "es": "Es muy probable que esté reconsiderando su postura."
+        },
+        {
+          "target": "The committee might possibly have overlooked that clause.",
+          "es": "Es posible que el comité haya pasado por alto esa cláusula."
+        },
+        {
+          "target": "She could be being overly cautious.",
+          "es": "Puede que esté siendo demasiado cautelosa."
+        },
+        {
+          "target": "It's conceivable that the merger might fall through.",
+          "es": "Es concebible que la fusión se caiga."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "She might have know about it.",
+          "right": "She might have known about it.",
+          "why": "Después de un modal perfecto se usa el participio pasado (known), no la base verbal ni el infinitivo."
+        },
+        {
+          "wrong": "It would seem like the figures were wrong.",
+          "right": "It would seem that the figures were wrong.",
+          "why": "'Would seem' se combina con 'that' para introducir una cláusula formal; 'like' es más informal y cambia el registro buscado."
+        },
+        {
+          "wrong": "He may be reconsider his position.",
+          "right": "He may well be reconsidering his position.",
+          "why": "Después de un modal se usa el infinitivo sin 'to' (be reconsidering, en forma continua), no una base verbal repetida como 'be reconsider'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "might well",
+          "es": "es muy probable que",
+          "example": "The report might well be outdated.",
+          "exampleEs": "Es muy probable que el informe esté desactualizado."
+        },
+        {
+          "target": "could conceivably",
+          "es": "podría, concebiblemente",
+          "example": "The plan could conceivably fail if costs rise.",
+          "exampleEs": "El plan podría, concebiblemente, fallar si los costos suben."
+        },
+        {
+          "target": "would seem that",
+          "es": "parecería que",
+          "example": "It would seem that the strategy backfired.",
+          "exampleEs": "Parecería que la estrategia salió mal."
+        },
+        {
+          "target": "one might assume",
+          "es": "uno podría suponer",
+          "example": "One might assume that sales will recover.",
+          "exampleEs": "Uno podría suponer que las ventas se van a recuperar."
+        },
+        {
+          "target": "it's conceivable that",
+          "es": "es concebible que",
+          "example": "It's conceivable that the deal collapses.",
+          "exampleEs": "Es concebible que el acuerdo se caiga."
+        }
+      ]
+    },
+    {
+      "id": "tono-segun-audiencia",
+      "day": 5,
+      "title": "Ajustar el tono según la audiencia",
+      "goal": "Vas a poder elegir el nivel de formalidad, hedging y boosting adecuado según hables con un jefe, un cliente, un colega o un desconocido.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "El registro cambia según la jerarquía y la relación: con jefes y clientes se prioriza el hedging y la cortesía; con colegas de confianza se puede ser más directo.",
+        "Frases diplomáticas como 'I was wondering whether', 'with respect', 'if that's agreeable' suavizan desacuerdos o pedidos en contextos formales.",
+        "Para dar malas noticias en inglés formal se usan estructuras fijas como 'We regret to inform you that...', evitando mezclar registros informales.",
+        "El inglés de Estados Unidos tiende a ser algo más directo que el británico incluso en contextos formales, pero ambos evitan la confrontación abierta con superiores.",
+        "Combinar hedging y boosting en un mismo mensaje (suavizar el desacuerdo pero reforzar el punto principal) es clave para sonar persuasivo sin ser agresivo."
+      ],
+      "examples": [
+        {
+          "target": "I was wondering whether we might revisit the budget at your convenience.",
+          "es": "Me preguntaba si podríamos revisar el presupuesto cuando le resulte conveniente."
+        },
+        {
+          "target": "Honestly, I think the plan's got some serious holes in it.",
+          "es": "Honestamente, creo que el plan tiene varios agujeros serios (registro informal, entre pares)."
+        },
+        {
+          "target": "We regret to inform you that your application was unsuccessful on this occasion.",
+          "es": "Lamentamos informarle que su solicitud no fue aceptada en esta ocasión."
+        },
+        {
+          "target": "Look, this just isn't going to work.",
+          "es": "Mirá, esto simplemente no va a funcionar (registro informal y directo)."
+        },
+        {
+          "target": "With respect, I feel the proposal requires further consideration.",
+          "es": "Con todo respeto, siento que la propuesta necesita más consideración."
+        },
+        {
+          "target": "To be blunt, the numbers don't add up.",
+          "es": "Para ser directo, los números no cierran (entre colegas de confianza)."
+        },
+        {
+          "target": "It might be worth exploring alternative approaches, if that's agreeable.",
+          "es": "Podría valer la pena explorar otros enfoques, si le parece bien."
+        },
+        {
+          "target": "Just so you know, the deadline's probably not happening.",
+          "es": "Solo para que sepas, probablemente el plazo no se vaya a cumplir (registro informal, entre pares)."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "You are wrong about this.",
+          "right": "I'm not sure I entirely agree with that point.",
+          "why": "En contextos formales o jerárquicos hay que suavizar el desacuerdo directo, en lugar de una afirmación tajante que puede sonar grosera o irrespetuosa."
+        },
+        {
+          "wrong": "We regret to inform you that you're fired, sorry.",
+          "right": "We regret to inform you that your position has been made redundant.",
+          "why": "Mezclar un registro formal con una disculpa informal rompe la consistencia del tono diplomático esperado en comunicaciones formales."
+        },
+        {
+          "wrong": "Honestly I think your idea is terrible.",
+          "right": "I wonder if we might consider a slightly different approach.",
+          "why": "Con audiencias de mayor jerarquía o desconocidas hay que priorizar el hedging y la cortesía en lugar de la franqueza directa, que puede sonar irrespetuosa."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "if that's agreeable",
+          "es": "si le parece bien",
+          "example": "We could start next week, if that's agreeable.",
+          "exampleEs": "Podríamos empezar la semana que viene, si le parece bien."
+        },
+        {
+          "target": "with respect",
+          "es": "con todo respeto",
+          "example": "With respect, I think there's a flaw in this plan.",
+          "exampleEs": "Con todo respeto, creo que hay una falla en este plan."
+        },
+        {
+          "target": "to be blunt",
+          "es": "para ser directo / sincero",
+          "example": "To be blunt, this isn't working.",
+          "exampleEs": "Para ser directo, esto no está funcionando."
+        },
+        {
+          "target": "at your convenience",
+          "es": "cuando le resulte conveniente",
+          "example": "Please send the report at your convenience.",
+          "exampleEs": "Por favor envíe el informe cuando le resulte conveniente."
+        },
+        {
+          "target": "just so you know",
+          "es": "solo para que sepas",
+          "example": "Just so you know, the client called twice.",
+          "exampleEs": "Solo para que sepas, el cliente llamó dos veces."
+        }
+      ]
+    }
+  ]
+}

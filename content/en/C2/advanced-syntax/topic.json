@@ -1,0 +1,488 @@
+{
+  "id": "en-c2-advanced-syntax",
+  "level": "C2",
+  "order": 1,
+  "title": "Sintaxis avanzada y variedad estructural",
+  "targetTitle": "Advanced Syntax and Structural Variety",
+  "description": "Vas a dominar estructuras sintácticas complejas como el fronting, las oraciones escindidas avanzadas y los incisos parentéticos para enriquecer tu estilo. Esto te sirve para escribir y hablar con la variedad y precisión de un hablante nativo culto.",
+  "objectives": [
+    "Vas a poder usar el fronting para adelantar información y dar énfasis, incluyendo las inversiones que exige.",
+    "Vas a poder construir cleft sentences avanzadas (it-clefts, wh-clefts, all-clefts) para destacar distintos elementos de una oración.",
+    "Vas a poder insertar incisos y oraciones parentéticas con la puntuación correcta para agregar matices sin perder claridad.",
+    "Vas a poder combinar múltiples cláusulas subordinadas en una oración compleja sin perder claridad ni cohesión.",
+    "Vas a poder reescribir un texto aplicando variedad sintáctica (fronting, cleft sentences, incisos) de forma natural y precisa."
+  ],
+  "prerequisites": [
+    "en-c1-presentation-skills"
+  ],
+  "reviewed": false,
+  "subtopics": [
+    {
+      "id": "fronting-enfasis",
+      "day": 1,
+      "title": "Fronting: adelantar información para dar énfasis",
+      "goal": "Vas a poder adelantar objetos, adverbiales y adjetivos al principio de la oración para dar énfasis, aplicando la inversión cuando corresponde.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Fronting significa colocar al principio de la oración un elemento que normalmente no iría ahí (objeto, complemento, adverbial) para enfatizarlo o conectarlo con el contexto previo.",
+        "Al adelantar un objeto directo, el orden sujeto-verbo NO se invierte: 'That particular book, I've never read.'",
+        "Al adelantar adverbios de lugar o dirección con verbos intransitivos, SÍ hay inversión sujeto-verbo: 'Down the stairs came the cat.'",
+        "Al adelantar adverbios negativos (never, rarely, little, seldom), se requiere inversión con el auxiliar: 'Never have I seen such chaos.'",
+        "El fronting es un recurso estilístico de registro literario o muy elevado; no es neutro, da un tono enfático o dramático, poco usado en el habla cotidiana."
+      ],
+      "examples": [
+        {
+          "target": "That particular book, I've never read.",
+          "es": "Ese libro en particular, nunca lo leí."
+        },
+        {
+          "target": "Down the stairs came the cat, meowing loudly.",
+          "es": "Por las escaleras bajó el gato, maullando fuerte."
+        },
+        {
+          "target": "Never have I seen such a disorganized meeting.",
+          "es": "Nunca vi una reunión tan desorganizada."
+        },
+        {
+          "target": "Little did he know that his plan would fail completely.",
+          "es": "Poco sabía él que su plan iba a fracasar por completo."
+        },
+        {
+          "target": "Such was the chaos that the meeting had to be postponed.",
+          "es": "Tal fue el caos que la reunión tuvo que postergarse."
+        },
+        {
+          "target": "Into the silence walked a stranger, unnoticed by everyone.",
+          "es": "En medio del silencio entró un desconocido, sin que nadie lo notara."
+        },
+        {
+          "target": "Happy I am not, despite what people assume.",
+          "es": "Feliz no estoy, a pesar de lo que la gente supone."
+        },
+        {
+          "target": "Rarely does one encounter such dedication.",
+          "es": "Raras veces uno se encuentra con tanta dedicación."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Never I have seen such chaos.",
+          "right": "Never have I seen such chaos.",
+          "why": "Al adelantar un adverbio negativo como 'never', el sujeto y el auxiliar se invierten (have I); no se mantiene el orden normal sujeto-auxiliar."
+        },
+        {
+          "wrong": "That book, never I've read.",
+          "right": "That book, I've never read.",
+          "why": "Cuando se adelanta un objeto (no un adverbio negativo), el orden sujeto-verbo se mantiene normal; la inversión solo aplica con ciertos adverbiales, no con objetos adelantados."
+        },
+        {
+          "wrong": "Down the stairs the cat came.",
+          "right": "Down the stairs came the cat.",
+          "why": "Al adelantar un adverbio de lugar o dirección con un verbo intransitivo, el verbo va antes del sujeto (inversión), un patrón típico de narrativa literaria."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "little did she know",
+          "es": "poco sabía ella",
+          "example": "Little did she know what was about to happen.",
+          "exampleEs": "Poco sabía ella lo que estaba por pasar."
+        },
+        {
+          "target": "such was the noise that",
+          "es": "tal fue el ruido que",
+          "example": "Such was the noise that nobody could sleep.",
+          "exampleEs": "Tal fue el ruido que nadie pudo dormir."
+        },
+        {
+          "target": "never have I",
+          "es": "nunca he... (yo)",
+          "example": "Never have I felt so proud.",
+          "exampleEs": "Nunca me sentí tan orgulloso."
+        },
+        {
+          "target": "rarely does one",
+          "es": "raramente uno...",
+          "example": "Rarely does one find such loyalty.",
+          "exampleEs": "Raramente uno encuentra tanta lealtad."
+        }
+      ]
+    },
+    {
+      "id": "cleft-sentences-avanzadas",
+      "day": 2,
+      "title": "Cleft sentences avanzadas",
+      "goal": "Vas a poder construir it-clefts, wh-clefts y all-clefts para destacar distintos elementos de una oración sin cambiar su significado proposicional.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "It-cleft: It + be + elemento enfatizado + that/who + resto de la oración. Enfatiza el elemento después de 'it was/is'.",
+        "Wh-cleft (pseudo-cleft): What + resto de la oración + be + elemento enfatizado. 'What I need is some rest.'",
+        "All-cleft: All + sujeto + verbo + be + elemento, con matiz de 'lo único que'. 'All I want is a cup of coffee.'",
+        "En el pseudo-cleft invertido, el elemento enfatizado va primero: 'A cup of coffee is all I want.'",
+        "En las it-clefts, cuando el elemento enfatizado es una persona se usa 'who' (o 'that'), nunca 'which', que es solo para cosas."
+      ],
+      "examples": [
+        {
+          "target": "It was John who broke the vase, not his sister.",
+          "es": "Fue John quien rompió el jarrón, no su hermana."
+        },
+        {
+          "target": "It wasn't until midnight that we finally finished.",
+          "es": "No fue hasta la medianoche que finalmente terminamos."
+        },
+        {
+          "target": "What I need right now is some peace and quiet.",
+          "es": "Lo que necesito ahora mismo es algo de paz y tranquilidad."
+        },
+        {
+          "target": "What surprised everyone was how calm she remained.",
+          "es": "Lo que sorprendió a todos fue lo tranquila que se mantuvo."
+        },
+        {
+          "target": "All I'm asking for is a little patience.",
+          "es": "Todo lo que pido es un poco de paciencia."
+        },
+        {
+          "target": "A good night's sleep is all she needs.",
+          "es": "Lo único que necesita es una buena noche de sueño."
+        },
+        {
+          "target": "It is the lack of communication that causes most conflicts.",
+          "es": "Es la falta de comunicación lo que causa la mayoría de los conflictos."
+        },
+        {
+          "target": "What really matters is how we respond to failure.",
+          "es": "Lo que realmente importa es cómo respondemos al fracaso."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "It was John which broke the vase.",
+          "right": "It was John who broke the vase.",
+          "why": "En cleft sentences con 'it', cuando el elemento enfatizado es una persona se usa 'who' (o 'that'), no 'which', que es para cosas."
+        },
+        {
+          "wrong": "What I need are some rest.",
+          "right": "What I need is some rest.",
+          "why": "El verbo 'be' en la cleft concuerda con el sujeto implícito de la cláusula 'what', que aquí es singular (algo de descanso); por eso va 'is', no 'are'."
+        },
+        {
+          "wrong": "All what I want is peace.",
+          "right": "All I want is peace.",
+          "why": "En las 'all-clefts' no se usa 'what' después de 'all'; la estructura correcta es 'all + sujeto + verbo', sin 'what'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "it wasn't until",
+          "es": "no fue hasta... que",
+          "example": "It wasn't until later that I realized my mistake.",
+          "exampleEs": "No fue hasta más tarde que me di cuenta de mi error."
+        },
+        {
+          "target": "what really matters is",
+          "es": "lo que realmente importa es",
+          "example": "What really matters is your effort, not the result.",
+          "exampleEs": "Lo que realmente importa es tu esfuerzo, no el resultado."
+        },
+        {
+          "target": "all I'm asking for is",
+          "es": "todo lo que pido es",
+          "example": "All I'm asking for is a bit of honesty.",
+          "exampleEs": "Todo lo que pido es un poco de honestidad."
+        },
+        {
+          "target": "it is stress that",
+          "es": "es el estrés lo que",
+          "example": "It is stress that causes most of these symptoms.",
+          "exampleEs": "Es el estrés lo que causa la mayoría de estos síntomas."
+        }
+      ]
+    },
+    {
+      "id": "incisos-oraciones-parenteticas",
+      "day": 3,
+      "title": "Incisos y oraciones parentéticas",
+      "goal": "Vas a poder insertar incisos y comentarios parentéticos con la puntuación correcta (comas, rayas, paréntesis) sin perder la claridad de la oración principal.",
+      "focus": [
+        "grammar",
+        "reading"
+      ],
+      "keyPoints": [
+        "Un inciso agrega información adicional o un comentario sin interrumpir la estructura gramatical principal; se marca con comas, rayas (—) o paréntesis.",
+        "Las rayas dan más énfasis o un tono más dramático/informal que las comas; los paréntesis minimizan la importancia de la información.",
+        "Los incisos pueden ser cláusulas relativas no restrictivas (which, who), adverbios de actitud (frankly, interestingly) o comentarios completos insertados.",
+        "Si se quita el inciso, la oración principal tiene que seguir siendo gramaticalmente completa; por eso necesita puntuación en ambos extremos, no solo al principio.",
+        "En inglés el uso de rayas para incisos es más frecuente que en español, donde se prefieren comas o paréntesis."
+      ],
+      "examples": [
+        {
+          "target": "The results, surprisingly, confirmed our initial hypothesis.",
+          "es": "Los resultados, sorprendentemente, confirmaron nuestra hipótesis inicial."
+        },
+        {
+          "target": "My colleague — who has worked here for over a decade — disagrees with the proposal.",
+          "es": "Mi colega, que trabaja aquí hace más de una década, no está de acuerdo con la propuesta."
+        },
+        {
+          "target": "The report (published last year) is now outdated.",
+          "es": "El informe (publicado el año pasado) ya está desactualizado."
+        },
+        {
+          "target": "Frankly, I don't think this plan will work.",
+          "es": "Francamente, no creo que este plan vaya a funcionar."
+        },
+        {
+          "target": "This policy, which has been criticized by several experts, remains in place.",
+          "es": "Esta política, que ha sido criticada por varios expertos, sigue vigente."
+        },
+        {
+          "target": "The committee — and this is crucial — never actually voted on the matter.",
+          "es": "El comité, y esto es crucial, nunca votó realmente sobre el asunto."
+        },
+        {
+          "target": "Interestingly, the data shows the opposite trend.",
+          "es": "Curiosamente, los datos muestran la tendencia opuesta."
+        },
+        {
+          "target": "Her argument, though compelling, lacks solid evidence.",
+          "es": "Su argumento, aunque convincente, carece de evidencia sólida."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The results, surprisingly confirmed our hypothesis.",
+          "right": "The results, surprisingly, confirmed our hypothesis.",
+          "why": "Los incisos parentéticos necesitan comas (o rayas) en ambos extremos, no solo al principio; si falta una, la oración queda mal puntuada."
+        },
+        {
+          "wrong": "My colleague who has worked here for over a decade, disagrees with the proposal.",
+          "right": "My colleague, who has worked here for over a decade, disagrees with the proposal.",
+          "why": "Las cláusulas relativas no restrictivas necesitan comas en ambos lados; sin la primera coma, parece una cláusula restrictiva que distingue entre varios colegas."
+        },
+        {
+          "wrong": "The report, published last year is now outdated.",
+          "right": "The report, published last year, is now outdated.",
+          "why": "El inciso tiene que cerrarse con una coma (o raya) antes de continuar la oración principal; dejarlo abierto genera ambigüedad."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "and this is crucial",
+          "es": "y esto es crucial",
+          "example": "The budget — and this is crucial — was never approved.",
+          "exampleEs": "El presupuesto, y esto es crucial, nunca fue aprobado."
+        },
+        {
+          "target": "frankly speaking",
+          "es": "francamente / hablando con franqueza",
+          "example": "Frankly speaking, I don't trust this source.",
+          "exampleEs": "Hablando con franqueza, no confío en esta fuente."
+        },
+        {
+          "target": "though compelling",
+          "es": "aunque convincente",
+          "example": "His argument, though compelling, has several flaws.",
+          "exampleEs": "Su argumento, aunque convincente, tiene varias fallas."
+        },
+        {
+          "target": "interestingly enough",
+          "es": "curiosamente",
+          "example": "Interestingly enough, nobody noticed the error.",
+          "exampleEs": "Curiosamente, nadie notó el error."
+        }
+      ]
+    },
+    {
+      "id": "subordinacion-multiple-claridad",
+      "day": 4,
+      "title": "Subordinación múltiple sin perder claridad",
+      "goal": "Vas a poder combinar varias cláusulas subordinadas en una sola oración compleja manteniendo la claridad y la cohesión.",
+      "focus": [
+        "grammar"
+      ],
+      "keyPoints": [
+        "Al combinar varias cláusulas subordinadas (relativas, temporales, causales, condicionales), conviene tener una idea principal clara y subordinar el resto en orden lógico.",
+        "Evitá anidar demasiadas cláusulas relativas seguidas con 'which' o 'who' (cláusulas en cascada), porque dificultan la lectura; conviene reducir algunas a participios o incisos con rayas.",
+        "Marcadores como although, given that, provided that, insofar as e in that ayudan a señalar la relación lógica entre cláusulas sin oraciones cortas y repetitivas.",
+        "Conviene variar la posición de las cláusulas subordinadas (al principio, en medio o al final) para controlar el énfasis y la fluidez de la lectura.",
+        "La puntuación (comas, punto y coma, dos puntos) es clave para marcar los límites de cada cláusula en oraciones largas y evitar ambigüedad."
+      ],
+      "examples": [
+        {
+          "target": "Although the results were inconclusive, the researchers, who had spent years on the project, remained optimistic.",
+          "es": "Aunque los resultados fueron poco concluyentes, los investigadores, que habían pasado años en el proyecto, se mantuvieron optimistas."
+        },
+        {
+          "target": "Given that the deadline had passed, and considering the client's frustration, the team decided to offer a refund.",
+          "es": "Dado que la fecha límite había pasado, y considerando la frustración del cliente, el equipo decidió ofrecer un reembolso."
+        },
+        {
+          "target": "The proposal, which had been rejected twice before, was finally approved once the budget concerns had been addressed.",
+          "es": "La propuesta, que había sido rechazada dos veces antes, finalmente fue aprobada una vez que se abordaron las preocupaciones presupuestarias."
+        },
+        {
+          "target": "Provided that the necessary funding is secured, the project, which has been delayed for months, will begin next quarter.",
+          "es": "Siempre que se asegure el financiamiento necesario, el proyecto, que ha estado demorado por meses, va a comenzar el próximo trimestre."
+        },
+        {
+          "target": "Insofar as the evidence allows, we can conclude that the policy, despite its flaws, achieved its main objective.",
+          "es": "En la medida en que la evidencia lo permite, podemos concluir que la política, a pesar de sus fallas, logró su objetivo principal."
+        },
+        {
+          "target": "Because the manager, who was new to the role, had not reviewed the contract carefully, several clauses were overlooked.",
+          "es": "Porque el gerente, que era nuevo en el puesto, no había revisado el contrato con cuidado, se pasaron por alto varias cláusulas."
+        },
+        {
+          "target": "While the committee acknowledged the risks, it concluded, after much debate, that the benefits outweighed them.",
+          "es": "Si bien el comité reconoció los riesgos, concluyó, después de mucho debate, que los beneficios los superaban."
+        },
+        {
+          "target": "Once the data had been verified, a process that took several weeks, the findings were published.",
+          "es": "Una vez que los datos fueron verificados, un proceso que tomó varias semanas, los hallazgos fueron publicados."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The report which was written by the team which had been formed last year which nobody liked was rejected.",
+          "right": "The report, written by the team formed last year — a team that nobody particularly liked — was rejected.",
+          "why": "Encadenar demasiadas cláusulas relativas con 'which' seguidas hace que la oración sea difícil de seguir; conviene reducir algunas a participios o incisos con rayas."
+        },
+        {
+          "wrong": "Although the results were inconclusive the researchers remained optimistic they continued the project.",
+          "right": "Although the results were inconclusive, the researchers remained optimistic, and they continued the project.",
+          "why": "En oraciones con varias cláusulas subordinadas y coordinadas, las comas son necesarias para marcar los límites de cada una y evitar ambigüedad."
+        },
+        {
+          "wrong": "Given the deadline passed, the team decided to offer a refund.",
+          "right": "Given that the deadline had passed, the team decided to offer a refund.",
+          "why": "'Given' como conjunción subordinante necesita 'that' antes de la cláusula completa; sin 'that' suena incompleto en registro formal."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "given that",
+          "es": "dado que",
+          "example": "Given that the data is incomplete, we should be cautious.",
+          "exampleEs": "Dado que los datos están incompletos, deberíamos ser cautelosos."
+        },
+        {
+          "target": "provided that",
+          "es": "siempre que",
+          "example": "Provided that the conditions are met, the contract will be signed.",
+          "exampleEs": "Siempre que se cumplan las condiciones, se firmará el contrato."
+        },
+        {
+          "target": "insofar as",
+          "es": "en la medida en que",
+          "example": "Insofar as we can tell, the plan is working.",
+          "exampleEs": "En la medida en que podemos decir, el plan está funcionando."
+        },
+        {
+          "target": "in that",
+          "es": "en el sentido de que / porque",
+          "example": "The plan is flawed in that it ignores long-term costs.",
+          "exampleEs": "El plan tiene fallas en el sentido de que ignora los costos a largo plazo."
+        }
+      ]
+    },
+    {
+      "id": "reescribir-texto-variedad-sintactica",
+      "day": 5,
+      "title": "Reescribir un texto con mayor variedad sintáctica",
+      "goal": "Vas a poder reescribir un texto aplicando fronting, cleft sentences e incisos para lograr un estilo más rico y preciso, propio de un hablante nativo culto.",
+      "focus": [
+        "reading",
+        "writing"
+      ],
+      "keyPoints": [
+        "Al reescribir, variá la posición de los elementos (fronting), el tipo de oración (cleft sentences) y agregá incisos para evitar la monotonía de sujeto-verbo-objeto repetido.",
+        "No sobrecargues un solo párrafo con demasiados recursos sintácticos complejos a la vez; la variedad tiene que servir a la claridad, no complicarla.",
+        "Antes de reescribir, identificá qué información querés destacar (el foco) en cada oración, y elegí la estructura que mejor la resalte.",
+        "Revisá siempre la puntuación al insertar incisos o subordinar varias cláusulas: un solo error de coma puede generar ambigüedad en oraciones largas.",
+        "Leé el texto reescrito mentalmente en voz alta para verificar que el ritmo y el énfasis suenen naturales, no forzados."
+      ],
+      "examples": [
+        {
+          "target": "The manager made the decision. → It was the manager who made the decision.",
+          "es": "Fue el gerente quien tomó la decisión."
+        },
+        {
+          "target": "I have never seen such dedication. → Never have I seen such dedication.",
+          "es": "Nunca vi tanta dedicación."
+        },
+        {
+          "target": "He said he was tired, but he kept working. → Tired though he was, he kept working.",
+          "es": "Cansado como estaba, siguió trabajando."
+        },
+        {
+          "target": "We need more time, that's the main issue. → What we need is more time.",
+          "es": "Lo que necesitamos es más tiempo."
+        },
+        {
+          "target": "The report was criticized by several experts, and it is still used today. → The report, criticized by several experts, is still used today.",
+          "es": "El informe, criticado por varios expertos, todavía se usa hoy."
+        },
+        {
+          "target": "Nobody expected the announcement; it surprised everyone. → Nobody expected the announcement, which surprised everyone.",
+          "es": "Nadie esperaba el anuncio, lo cual sorprendió a todos."
+        },
+        {
+          "target": "The company didn't realize the risk until it was too late. → Not until it was too late did the company realize the risk.",
+          "es": "No fue hasta que fue demasiado tarde que la empresa se dio cuenta del riesgo."
+        },
+        {
+          "target": "This is the only thing I want: a bit of quiet. → All I want is a bit of quiet.",
+          "es": "Todo lo que quiero es un poco de tranquilidad."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "It was the manager that made the decision who nobody trusted.",
+          "right": "It was the manager — whom nobody trusted — who made the decision.",
+          "why": "Al combinar una cleft sentence con una cláusula relativa adicional, hay que usar comas o rayas para separar claramente los incisos y evitar ambigüedad sobre a qué se refiere cada cláusula."
+        },
+        {
+          "wrong": "Not until it was too late the company realized the risk.",
+          "right": "Not until it was too late did the company realize the risk.",
+          "why": "Al adelantar 'not until' se requiere inversión con el auxiliar (did), igual que con otros adverbiales negativos fronted."
+        },
+        {
+          "wrong": "Tired as he was he kept, working.",
+          "right": "Tired as he was, he kept working.",
+          "why": "La coma va después de la cláusula de concesión fronted (tired as he was), antes de continuar con la oración principal, no en medio del verbo y su complemento."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "tired though he was",
+          "es": "cansado como estaba (también: tired as he was)",
+          "example": "Tired though he was, he finished the report.",
+          "exampleEs": "Cansado como estaba, terminó el informe."
+        },
+        {
+          "target": "not until then did",
+          "es": "no fue hasta entonces que",
+          "example": "Not until then did she find out the truth.",
+          "exampleEs": "No fue hasta entonces que ella se enteró de la verdad."
+        },
+        {
+          "target": "all I want is",
+          "es": "todo lo que quiero es",
+          "example": "All I want is a clear answer.",
+          "exampleEs": "Todo lo que quiero es una respuesta clara."
+        },
+        {
+          "target": "which surprised everyone",
+          "es": "lo cual sorprendió a todos",
+          "example": "He resigned, which surprised everyone.",
+          "exampleEs": "Él renunció, lo cual sorprendió a todos."
+        }
+      ]
+    }
+  ]
+}

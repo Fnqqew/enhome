@@ -5,7 +5,12 @@
         "subtopicId": "pronombres-personales",
         "instruction": "Elegí la opción correcta para completar la respuesta.",
         "prompt": "What time is it? — ___ eight o'clock.",
-        "options": ["Is", "It's", "There is", "They're"],
+        "options": [
+          "Is",
+          "It's",
+          "There is",
+          "They're"
+        ],
         "correctIndex": 1,
         "explanation": "Para decir la hora el sujeto es it y en inglés no se puede omitir: it's eight o'clock."
       },
@@ -13,7 +18,12 @@
         "subtopicId": "to-be-afirmativo",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "My brother ___ 25 years old.",
-        "options": ["has", "are", "is", "have"],
+        "options": [
+          "has",
+          "are",
+          "is",
+          "have"
+        ],
         "correctIndex": 2,
         "explanation": "La edad se dice con to be, y con he, she o it va is: my brother is 25 years old."
       },
@@ -21,7 +31,12 @@
         "subtopicId": "to-be-negativo",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "No, thanks. I ___ hungry.",
-        "options": ["no am", "amn't", "not am", "am not"],
+        "options": [
+          "no am",
+          "amn't",
+          "not am",
+          "am not"
+        ],
         "correctIndex": 3,
         "explanation": "Para negar con to be, not va después del verbo: I am not (I'm not) hungry."
       },
@@ -29,7 +44,12 @@
         "subtopicId": "to-be-preguntas",
         "instruction": "Elegí la respuesta corta correcta.",
         "prompt": "Are you a teacher? — Yes, ___.",
-        "options": ["I am", "I'm", "I are", "you are"],
+        "options": [
+          "I am",
+          "I'm",
+          "I are",
+          "you are"
+        ],
         "correctIndex": 0,
         "explanation": "En una respuesta corta afirmativa el verbo no se contrae: Yes, I am."
       }
@@ -39,7 +59,12 @@
         "subtopicId": "a-an",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I waited for ___ at the bus stop.",
-        "options": ["a hour", "hour", "an hour", "an hours"],
+        "options": [
+          "a hour",
+          "hour",
+          "an hour",
+          "an hours"
+        ],
         "correctIndex": 2,
         "explanation": "La h de hour no suena, así que la palabra empieza con sonido de vocal y lleva an: an hour."
       },
@@ -47,7 +72,12 @@
         "subtopicId": "the",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "I have a dog and a cat. ___ dog is black.",
-        "options": ["The", "A", "An", "Some"],
+        "options": [
+          "The",
+          "A",
+          "An",
+          "Some"
+        ],
         "correctIndex": 0,
         "explanation": "Se usa the porque ya se sabe de qué perro se habla: el que se mencionó antes."
       },
@@ -55,7 +85,12 @@
         "subtopicId": "plurales",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I have three ___.",
-        "options": ["childs", "childrens", "child", "children"],
+        "options": [
+          "childs",
+          "childrens",
+          "child",
+          "children"
+        ],
         "correctIndex": 3,
         "explanation": "Child tiene plural irregular: children, sin -s."
       },
@@ -63,7 +98,12 @@
         "subtopicId": "there-is-are",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "___ two supermarkets near my house.",
-        "options": ["Have", "There are", "There is", "Are"],
+        "options": [
+          "Have",
+          "There are",
+          "There is",
+          "Are"
+        ],
         "correctIndex": 1,
         "explanation": "Para decir 'hay' con un sustantivo en plural se usa there are, porque have no significa 'hay'."
       }
@@ -73,7 +113,12 @@
         "subtopicId": "afirmativo",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "My father ___ in a bank.",
-        "options": ["work", "works", "is work", "working"],
+        "options": [
+          "work",
+          "works",
+          "is work",
+          "working"
+        ],
         "correctIndex": 1,
         "explanation": "Con he, she o it el verbo lleva -s en presente simple: my father works."
       },
@@ -81,7 +126,12 @@
         "subtopicId": "negativo",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "My sister ___ meat.",
-        "options": ["doesn't eats", "don't eat", "doesn't eat", "no eats"],
+        "options": [
+          "doesn't eats",
+          "don't eat",
+          "doesn't eat",
+          "no eats"
+        ],
         "correctIndex": 2,
         "explanation": "Con he, she o it se niega con doesn't y el verbo va en forma base: doesn't eat."
       },
@@ -89,7 +139,12 @@
         "subtopicId": "preguntas",
         "instruction": "Elegí la opción correcta para completar la pregunta.",
         "prompt": "___ your brother speak English?",
-        "options": ["Does", "Do", "Is", "Are"],
+        "options": [
+          "Does",
+          "Do",
+          "Is",
+          "Are"
+        ],
         "correctIndex": 0,
         "explanation": "Con he, she o it la pregunta en presente simple se arma con does: Does your brother speak English?"
       },
@@ -97,7 +152,12 @@
         "subtopicId": "frecuencia",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I ___ to work by bus.",
-        "options": ["go usually", "usually goes", "am usually go", "usually go"],
+        "options": [
+          "go usually",
+          "usually goes",
+          "am usually go",
+          "usually go"
+        ],
         "correctIndex": 3,
         "explanation": "El adverbio de frecuencia va antes del verbo principal, y con I el verbo no lleva -s: I usually go."
       }
@@ -107,7 +167,12 @@
         "subtopicId": "adjetivos-posesivos",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Laura lives with ___ husband in Rosario.",
-        "options": ["his", "her", "she", "their"],
+        "options": [
+          "his",
+          "her",
+          "she",
+          "their"
+        ],
         "correctIndex": 1,
         "explanation": "El posesivo concuerda con quien posee: Laura es mujer, entonces her husband."
       },
@@ -115,7 +180,12 @@
         "subtopicId": "pronombres-objeto",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "I love my grandmother. I visit ___ every Sunday.",
-        "options": ["she", "his", "her", "him"],
+        "options": [
+          "she",
+          "his",
+          "her",
+          "him"
+        ],
         "correctIndex": 2,
         "explanation": "Después del verbo va el pronombre objeto, y para una mujer es her."
       },
@@ -123,7 +193,12 @@
         "subtopicId": "preposiciones-lugar",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Call me later. I'm ___ home now.",
-        "options": ["in", "on", "to", "at"],
+        "options": [
+          "in",
+          "on",
+          "to",
+          "at"
+        ],
         "correctIndex": 3,
         "explanation": "Se dice at home, igual que at work y at school."
       },
@@ -131,7 +206,12 @@
         "subtopicId": "preposiciones-tiempo",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "My English class is ___ Monday.",
-        "options": ["on", "in", "at", "the"],
+        "options": [
+          "on",
+          "in",
+          "at",
+          "the"
+        ],
         "correctIndex": 0,
         "explanation": "Los días de la semana van con on: on Monday."
       }
@@ -141,7 +221,12 @@
         "subtopicId": "can",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "My sister ___ the guitar very well.",
-        "options": ["can to play", "cans play", "can play", "can plays"],
+        "options": [
+          "can to play",
+          "cans play",
+          "can play",
+          "can plays"
+        ],
         "correctIndex": 2,
         "explanation": "Después de can el verbo va en forma base, sin to ni -s: can play."
       },
@@ -149,7 +234,12 @@
         "subtopicId": "continuo-forma",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Look! Ana ___ a letter.",
-        "options": ["is writting", "is writing", "writing", "is writeing"],
+        "options": [
+          "is writting",
+          "is writing",
+          "writing",
+          "is writeing"
+        ],
         "correctIndex": 1,
         "explanation": "El presente continuo lleva is y el verbo con -ing, y en write se va la e sin duplicar la t: is writing."
       },
@@ -157,7 +247,12 @@
         "subtopicId": "continuo-usos",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I ___ the answer to this question.",
-        "options": ["know", "am knowing", "knowing", "am know"],
+        "options": [
+          "know",
+          "am knowing",
+          "knowing",
+          "am know"
+        ],
         "correctIndex": 0,
         "explanation": "Know es un verbo de estado y no se usa en continuo: I know the answer."
       },
@@ -165,7 +260,12 @@
         "subtopicId": "simple-vs-continuo",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "Can I call you later? I ___ dinner right now.",
-        "options": ["have", "has", "having", "am having"],
+        "options": [
+          "have",
+          "has",
+          "having",
+          "am having"
+        ],
         "correctIndex": 3,
         "explanation": "Con right now se habla de algo que está pasando en este momento, así que va el presente continuo: I am having dinner."
       }
@@ -175,7 +275,12 @@
         "subtopicId": "was-were",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "We ___ at the beach last weekend.",
-        "options": ["was", "were", "are", "been"],
+        "options": [
+          "was",
+          "were",
+          "are",
+          "been"
+        ],
         "correctIndex": 1,
         "explanation": "Con last weekend se habla del pasado, y con we el pasado de to be es were."
       },
@@ -183,7 +288,12 @@
         "subtopicId": "regulares",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I ___ English for three hours yesterday.",
-        "options": ["studyed", "study", "studied", "studed"],
+        "options": [
+          "studyed",
+          "study",
+          "studied",
+          "studed"
+        ],
         "correctIndex": 2,
         "explanation": "Study termina en consonante + y, así que en pasado cambia a -ied: studied."
       },
@@ -191,7 +301,12 @@
         "subtopicId": "irregulares",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Last summer we ___ to Bariloche.",
-        "options": ["went", "goed", "go", "gone"],
+        "options": [
+          "went",
+          "goed",
+          "go",
+          "gone"
+        ],
         "correctIndex": 0,
         "explanation": "Go es un verbo irregular y su pasado es went."
       },
@@ -199,7 +314,12 @@
         "subtopicId": "negativo-preguntas",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "She didn't ___ to work yesterday.",
-        "options": ["went", "goes", "going", "go"],
+        "options": [
+          "went",
+          "goes",
+          "going",
+          "go"
+        ],
         "correctIndex": 3,
         "explanation": "Después de didn't el verbo vuelve a la forma base, porque el pasado ya lo marca did: didn't go."
       }
@@ -209,7 +329,12 @@
         "subtopicId": "going-to",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Sara ___ study medicine next year: she decided last month.",
-        "options": ["going to", "is going to", "is going", "will to"],
+        "options": [
+          "going to",
+          "is going to",
+          "is going",
+          "will to"
+        ],
         "correctIndex": 1,
         "explanation": "Para un plan ya decidido se usa am, is o are + going to + verbo: Sara is going to study."
       },
@@ -217,7 +342,12 @@
         "subtopicId": "going-to-evidencia",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "Look at those black clouds! It ___ rain.",
-        "options": ["goes to", "is going", "going to", "is going to"],
+        "options": [
+          "goes to",
+          "is going",
+          "going to",
+          "is going to"
+        ],
         "correctIndex": 3,
         "explanation": "Cuando algo que ves ahora anuncia lo que va a pasar se usa be going to: it is going to rain."
       },
@@ -225,7 +355,12 @@
         "subtopicId": "will",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "Don't worry, I ___ you with your homework tomorrow. I promise!",
-        "options": ["will help", "will to help", "will helping", "helps"],
+        "options": [
+          "will help",
+          "will to help",
+          "will helping",
+          "helps"
+        ],
         "correctIndex": 0,
         "explanation": "Para prometer algo se usa will seguido del verbo en forma base, sin to: I will help you."
       },
@@ -233,7 +368,12 @@
         "subtopicId": "continuo-futuro",
         "instruction": "Leé el mensaje y elegí la respuesta correcta.",
         "prompt": "Tom: \"I'm meeting Ana at 6 tomorrow. We booked a table at a café.\" What is Tom talking about?",
-        "options": ["Something happening right now", "Something he does every day", "A plan that is already arranged", "A decision he is making now"],
+        "options": [
+          "Something happening right now",
+          "Something he does every day",
+          "A plan that is already arranged",
+          "A decision he is making now"
+        ],
         "correctIndex": 2,
         "explanation": "El presente continuo con tomorrow habla de una cita ya organizada, no de algo que pasa en este momento."
       }
@@ -243,7 +383,12 @@
         "subtopicId": "comparativos",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "My brother is ___ me.",
-        "options": ["more tall than", "taller than", "taller that", "more taller than"],
+        "options": [
+          "more tall than",
+          "taller than",
+          "taller that",
+          "more taller than"
+        ],
         "correctIndex": 1,
         "explanation": "Tall es un adjetivo corto, así que el comparativo se forma con -er y than: taller than."
       },
@@ -251,7 +396,12 @@
         "subtopicId": "superlativos",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "For me, Messi is the ___ player in the world.",
-        "options": ["better", "most good", "best", "goodest"],
+        "options": [
+          "better",
+          "most good",
+          "best",
+          "goodest"
+        ],
         "correctIndex": 2,
         "explanation": "Good es irregular y su superlativo es the best."
       },
@@ -259,7 +409,12 @@
         "subtopicId": "as-as",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "The bus isn't as ___ as the train.",
-        "options": ["fast", "faster", "fastest", "more fast"],
+        "options": [
+          "fast",
+          "faster",
+          "fastest",
+          "more fast"
+        ],
         "correctIndex": 0,
         "explanation": "Con as ... as el adjetivo va en su forma normal, sin -er ni more: as fast as."
       },
@@ -267,7 +422,12 @@
         "subtopicId": "contables-incontables",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "I have a problem. Can you give me ___ advice?",
-        "options": ["an", "a", "many", "some"],
+        "options": [
+          "an",
+          "a",
+          "many",
+          "some"
+        ],
         "correctIndex": 3,
         "explanation": "Advice es incontable, así que no lleva a, an ni many, y para pedir algo se usa some."
       }
@@ -277,7 +437,12 @@
         "subtopicId": "forma",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "We have ___ all the pizza. There's nothing left.",
-        "options": ["ate", "eaten", "eat", "eating"],
+        "options": [
+          "ate",
+          "eaten",
+          "eat",
+          "eating"
+        ],
         "correctIndex": 1,
         "explanation": "El present perfect se forma con have + participio, y el participio de eat es eaten."
       },
@@ -285,7 +450,12 @@
         "subtopicId": "experiencias",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "I've ___ seen snow. I want to see it one day.",
-        "options": ["ever", "already", "never", "yet"],
+        "options": [
+          "ever",
+          "already",
+          "never",
+          "yet"
+        ],
         "correctIndex": 2,
         "explanation": "Para decir que algo nunca te pasó en la vida se usa never entre have y el participio: I've never seen snow."
       },
@@ -293,7 +463,12 @@
         "subtopicId": "just-already-yet",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I haven't finished my homework ___.",
-        "options": ["yet", "already", "just", "ever"],
+        "options": [
+          "yet",
+          "already",
+          "just",
+          "ever"
+        ],
         "correctIndex": 0,
         "explanation": "En una negativa, 'todavía' se dice con yet al final de la oración: I haven't finished yet."
       },
@@ -301,7 +476,12 @@
         "subtopicId": "for-since",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I have worked here ___ three years.",
-        "options": ["since", "during", "from", "for"],
+        "options": [
+          "since",
+          "during",
+          "from",
+          "for"
+        ],
         "correctIndex": 3,
         "explanation": "Con un período de tiempo se usa for (for three years), mientras que since va con el momento de inicio."
       }
@@ -311,7 +491,12 @@
         "subtopicId": "must-have-to",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "You ___ smoke here. It's not allowed.",
-        "options": ["don't have to", "mustn't", "must", "have to"],
+        "options": [
+          "don't have to",
+          "mustn't",
+          "must",
+          "have to"
+        ],
         "correctIndex": 1,
         "explanation": "Para una prohibición se usa mustn't, mientras que don't have to significa que no es necesario."
       },
@@ -319,7 +504,12 @@
         "subtopicId": "should",
         "instruction": "Elegí la opción correcta para completar el texto.",
         "prompt": "You look tired. You ___ go to bed early tonight.",
-        "options": ["should", "should to", "shouldn't", "might to"],
+        "options": [
+          "should",
+          "should to",
+          "shouldn't",
+          "might to"
+        ],
         "correctIndex": 0,
         "explanation": "Para aconsejar se usa should seguido del verbo sin to, y acá el consejo es acostarte temprano."
       },
@@ -327,7 +517,12 @@
         "subtopicId": "might-may",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "I'm not sure, but I ___ travel to Chile next month.",
-        "options": ["will", "must", "might", "might to"],
+        "options": [
+          "will",
+          "must",
+          "might",
+          "might to"
+        ],
         "correctIndex": 2,
         "explanation": "Para algo posible pero no seguro se usa might seguido del verbo sin to, mientras que will indica seguridad."
       },
@@ -335,9 +530,1904 @@
         "subtopicId": "primer-condicional",
         "instruction": "Elegí la opción correcta para completar la oración.",
         "prompt": "If it ___ tomorrow, we'll stay at home.",
-        "options": ["will rain", "rain", "rained", "rains"],
+        "options": [
+          "will rain",
+          "rain",
+          "rained",
+          "rains"
+        ],
         "correctIndex": 3,
         "explanation": "En la parte del if va presente simple y no will: If it rains, we'll stay at home."
+      }
+    ],
+    "en-a1-have-got-adjectives": [
+      {
+        "subtopicId": "have-got-has-got-afirmativo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She ___ a new car.",
+        "options": [
+          "have got",
+          "has got",
+          "haves got",
+          "is got"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'she' (tercera persona singular) se usa 'has got', no 'have got'."
+      },
+      {
+        "subtopicId": "have-got-negativo-preguntas",
+        "instruction": "Elegí la pregunta correcta.",
+        "prompt": "___ you got a pet?",
+        "options": [
+          "Do",
+          "Have",
+          "Has",
+          "Are"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para preguntar con 'have got' en segunda persona se usa 'Have you got...?', sin agregar 'do'."
+      },
+      {
+        "subtopicId": "adjetivos-descriptivos-comunes",
+        "instruction": "Elegí el adjetivo que describe correctamente al sustantivo usando 'to be'.",
+        "prompt": "The house ___ very old.",
+        "options": [
+          "is",
+          "has",
+          "are",
+          "have"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para describir características con un adjetivo se usa 'to be' ('is' con 'the house'), no 'have'."
+      },
+      {
+        "subtopicId": "orden-de-adjetivos",
+        "instruction": "Elegí el orden correcto de los adjetivos.",
+        "prompt": "She has a ___ dress.",
+        "options": [
+          "beautiful red",
+          "red beautiful",
+          "beautiful's red",
+          "red's beautiful"
+        ],
+        "correctIndex": 0,
+        "explanation": "El orden correcto es opinión antes de color: 'beautiful red dress'."
+      }
+    ],
+    "en-a1-questions-whwords": [
+      {
+        "subtopicId": "what-who",
+        "instruction": "Elegí la palabra correcta para completar la pregunta.",
+        "prompt": "___ is that woman? She's my teacher.",
+        "options": [
+          "What",
+          "Who",
+          "Where",
+          "Which"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos 'Who' porque preguntamos por una persona, no por una cosa."
+      },
+      {
+        "subtopicId": "where-when",
+        "instruction": "Elegí la palabra correcta para completar la pregunta.",
+        "prompt": "___ do you live? In Buenos Aires.",
+        "options": [
+          "When",
+          "Who",
+          "Where",
+          "Why"
+        ],
+        "correctIndex": 2,
+        "explanation": "Usamos 'Where' porque la respuesta indica un lugar (Buenos Aires)."
+      },
+      {
+        "subtopicId": "why-how",
+        "instruction": "Elegí la palabra correcta para completar la pregunta.",
+        "prompt": "___ are you late? Because the bus didn't come.",
+        "options": [
+          "How",
+          "Why",
+          "What",
+          "Where"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos 'Why' porque la respuesta da una razón (introducida con 'Because')."
+      },
+      {
+        "subtopicId": "how-much-many",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ sisters do you have? I have two.",
+        "options": [
+          "How much",
+          "How many",
+          "How often",
+          "How long"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos 'How many' porque 'sisters' es un sustantivo contable y la respuesta es un número de unidades."
+      }
+    ],
+    "en-a1-numbers-time": [
+      {
+        "subtopicId": "numeros-cardinales-ordinales",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Today is my ___ birthday. I'm turning 21.",
+        "options": [
+          "twenty",
+          "twenty-one",
+          "twenty-first",
+          "one-twenty"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para indicar el orden (cumpleaños número 21) se usa el número ordinal \"twenty-first\", no el cardinal."
+      },
+      {
+        "subtopicId": "como-decir-la-hora",
+        "instruction": "Elegí la forma correcta de decir la hora 6:45.",
+        "prompt": "How do you say 6:45 in English?",
+        "options": [
+          "six to forty-five",
+          "quarter to seven",
+          "quarter past seven",
+          "forty-five to six"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando faltan 15 minutos para la hora siguiente se dice \"quarter to\" más la hora que sigue, en este caso \"quarter to seven\"."
+      },
+      {
+        "subtopicId": "dias-semana-meses",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "We have a meeting ___ Tuesday.",
+        "options": [
+          "in",
+          "at",
+          "on",
+          "for"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con días de la semana se usa la preposición \"on\", por eso es \"on Tuesday\"."
+      },
+      {
+        "subtopicId": "fechas-escribir-decir",
+        "instruction": "Elegí cómo se dice correctamente la fecha 03/05/2024 en inglés americano.",
+        "prompt": "In American English, 03/05/2024 is read as:",
+        "options": [
+          "the third of May, 2024",
+          "March fifth, 2024",
+          "May third, 2024",
+          "the fifth of March, 2024"
+        ],
+        "correctIndex": 1,
+        "explanation": "En inglés americano el formato es mes/día/año, por eso 03/05/2024 se lee \"March fifth, 2024\"."
+      }
+    ],
+    "en-a1-likes-imperatives": [
+      {
+        "subtopicId": "like-love-hate",
+        "instruction": "Elegí la forma correcta del verbo.",
+        "prompt": "I love ___ music.",
+        "options": [
+          "listen",
+          "to listening",
+          "listening",
+          "listens"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'love' se usa el gerundio, por eso es 'listening'."
+      },
+      {
+        "subtopicId": "asking-about-likes",
+        "instruction": "Elegí la pregunta correcta sobre gustos.",
+        "prompt": "___ she like playing tennis?",
+        "options": [
+          "Do",
+          "Does",
+          "Is",
+          "Has"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'she' (tercera persona singular) se usa 'does' para formar la pregunta."
+      },
+      {
+        "subtopicId": "affirmative-imperative",
+        "instruction": "Elegí la forma correcta para dar una orden.",
+        "prompt": "___ the door, please.",
+        "options": [
+          "You close",
+          "Closing",
+          "Close",
+          "To close"
+        ],
+        "correctIndex": 2,
+        "explanation": "El imperativo afirmativo se forma con el verbo base sin sujeto, por eso 'Close'."
+      },
+      {
+        "subtopicId": "negative-imperative",
+        "instruction": "Elegí la forma correcta para dar una orden negativa.",
+        "prompt": "___ touch that, it's hot!",
+        "options": [
+          "No",
+          "Not",
+          "Don't",
+          "Doesn't"
+        ],
+        "correctIndex": 2,
+        "explanation": "El imperativo negativo se forma con 'don't' + verbo base, por eso 'Don't touch'."
+      }
+    ],
+    "en-a1-vocab-daily-life": [
+      {
+        "subtopicId": "la-familia",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "My mother's brother is my ___.",
+        "options": [
+          "cousin",
+          "uncle",
+          "nephew",
+          "grandfather"
+        ],
+        "correctIndex": 1,
+        "explanation": "El hermano de la madre es el 'uncle' (tío) en inglés."
+      },
+      {
+        "subtopicId": "comida-y-bebida",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "There isn't ___ milk in the fridge.",
+        "options": [
+          "some",
+          "any",
+          "a",
+          "many"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos 'any' con sustantivos incontables en oraciones negativas, mientras que 'some' se usa en afirmativas."
+      },
+      {
+        "subtopicId": "ropa-y-colores",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "She is wearing a red ___ and blue jeans.",
+        "options": [
+          "shoes",
+          "shirt",
+          "socks",
+          "hat"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Shirt' (camisa) es una prenda singular que combina correctamente con 'a red', mientras las otras opciones son plurales o no corresponden."
+      },
+      {
+        "subtopicId": "partes-de-la-casa",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "We cook food in the ___.",
+        "options": [
+          "bathroom",
+          "kitchen",
+          "bedroom",
+          "garden"
+        ],
+        "correctIndex": 1,
+        "explanation": "La 'kitchen' (cocina) es la habitación donde se cocina la comida."
+      }
+    ],
+    "en-a2-adverbs-manner": [
+      {
+        "subtopicId": "formar-adverbios-modo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She speaks English ___.",
+        "options": [
+          "careful",
+          "carefully",
+          "carefuly",
+          "care"
+        ],
+        "correctIndex": 1,
+        "explanation": "El adverbio de modo se forma agregando -ly al adjetivo \"careful\", resultando en \"carefully\"."
+      },
+      {
+        "subtopicId": "adverbios-irregulares",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "He works very ___, so he deserves a promotion.",
+        "options": [
+          "hardly",
+          "hard",
+          "harder",
+          "hardy"
+        ],
+        "correctIndex": 1,
+        "explanation": "El adverbio irregular de \"hard\" (trabajar duro) es \"hard\", no \"hardly\", que significa \"apenas\"."
+      },
+      {
+        "subtopicId": "very-really-intensificar",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ enjoyed the movie last night.",
+        "options": [
+          "very",
+          "too",
+          "really",
+          "enough"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para intensificar un verbo como \"enjoyed\" se usa \"really\", ya que \"very\" no puede modificar verbos directamente."
+      },
+      {
+        "subtopicId": "too-enough",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "This coffee is ___ hot for me to drink right now.",
+        "options": [
+          "enough",
+          "too",
+          "very",
+          "so"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa \"too\" antes del adjetivo para indicar que algo es excesivo, como en \"too hot\"."
+      }
+    ],
+    "en-a2-vocab-travel-health": [
+      {
+        "subtopicId": "aeropuerto-y-hotel",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "Before boarding the plane, you need to show your ___ at the gate.",
+        "options": [
+          "luggage",
+          "boarding pass",
+          "reception",
+          "passport control"
+        ],
+        "correctIndex": 1,
+        "explanation": "El 'boarding pass' (tarjeta de embarque) es el documento que se muestra en la puerta antes de abordar el avión."
+      },
+      {
+        "subtopicId": "pedir-y-dar-direcciones",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Go straight and turn left ___ the bank.",
+        "options": [
+          "next to",
+          "between",
+          "in front of",
+          "under"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Next to' significa 'al lado de', que es la preposición correcta para indicar la ubicación junto al banco."
+      },
+      {
+        "subtopicId": "cuerpo-y-sintomas",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "I have a ___ and I can't stop coughing.",
+        "options": [
+          "headache",
+          "sore throat",
+          "stomachache",
+          "backache"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Sore throat' (dolor de garganta) es el síntoma que se relaciona directamente con no poder dejar de toser."
+      },
+      {
+        "subtopicId": "farmacia-y-medico",
+        "instruction": "Elegí la palabra correcta para completar la oración.",
+        "prompt": "The doctor gave me a ___ to buy the medicine at the pharmacy.",
+        "options": [
+          "receipt",
+          "prescription",
+          "recipe",
+          "ticket"
+        ],
+        "correctIndex": 1,
+        "explanation": "Una 'prescription' (receta médica) es el documento que da el médico para comprar medicamentos en la farmacia."
+      }
+    ],
+    "en-a2-gerunds-infinitives": [
+      {
+        "subtopicId": "verbos-gerundio",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I enjoy ___ music in my free time.",
+        "options": [
+          "listen",
+          "to listen",
+          "listening",
+          "listened"
+        ],
+        "correctIndex": 2,
+        "explanation": "El verbo \"enjoy\" siempre va seguido de gerundio, por eso es \"listening\"."
+      },
+      {
+        "subtopicId": "verbos-infinitivo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She decided ___ a new career.",
+        "options": [
+          "starting",
+          "start",
+          "to start",
+          "started"
+        ],
+        "correctIndex": 2,
+        "explanation": "El verbo \"decide\" va seguido de infinitivo con \"to\", por eso es \"to start\"."
+      },
+      {
+        "subtopicId": "verbos-ambos",
+        "instruction": "Elegí la opción correcta para completar la oración, sabiendo que no cambia el significado.",
+        "prompt": "It started ___ right after we left the house.",
+        "options": [
+          "rain",
+          "raining",
+          "rained",
+          "to raining"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo \"start\" acepta gerundio e infinitivo sin cambiar el significado, y \"raining\" es la forma correcta de gerundio."
+      },
+      {
+        "subtopicId": "gerundio-sujeto",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ a new language takes a lot of practice.",
+        "options": [
+          "To learning",
+          "Learn",
+          "Learning",
+          "Learns"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando un verbo funciona como sujeto de la oración, se usa la forma en gerundio, por eso es \"Learning\"."
+      }
+    ],
+    "en-a2-requests-offers": [
+      {
+        "subtopicId": "polite-requests",
+        "instruction": "Elegí la forma correcta para completar el pedido educado.",
+        "prompt": "Could you ___ me the salt, please?",
+        "options": [
+          "pass",
+          "passing",
+          "to pass",
+          "passed"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'could you' se usa el verbo base, por eso 'pass'."
+      },
+      {
+        "subtopicId": "would-you-mind",
+        "instruction": "Elegí la forma correcta para completar el pedido.",
+        "prompt": "Would you mind ___ the window? It's cold.",
+        "options": [
+          "close",
+          "to close",
+          "closing",
+          "closed"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'would you mind' se usa el gerundio, por eso 'closing'."
+      },
+      {
+        "subtopicId": "offers-shall-would-like",
+        "instruction": "Elegí la palabra correcta para ofrecer ayuda.",
+        "prompt": "___ I open the window for you?",
+        "options": [
+          "Shall",
+          "Do",
+          "Am",
+          "Will"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para ofrecer algo de forma educada en primera persona se usa 'Shall I...?'."
+      },
+      {
+        "subtopicId": "suggestions-lets-why-dont-we",
+        "instruction": "Elegí la forma correcta para completar la sugerencia.",
+        "prompt": "Why don't we ___ to the beach this weekend?",
+        "options": [
+          "go",
+          "going",
+          "to go",
+          "goes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'why don't we' se usa el verbo base, por eso 'go'."
+      }
+    ],
+    "en-a2-reported-speech-basic": [
+      {
+        "subtopicId": "say-vs-tell",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She ___ me that she was tired.",
+        "options": [
+          "said",
+          "told",
+          "says",
+          "tells"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos 'told' porque 'tell' necesita un objeto directo (me) y está en pasado, a diferencia de 'say' que no lleva objeto directo."
+      },
+      {
+        "subtopicId": "verb-tense-backshift",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "He said, \"I am hungry.\" → He said he ___ hungry.",
+        "options": [
+          "is",
+          "was",
+          "has been",
+          "be"
+        ],
+        "correctIndex": 1,
+        "explanation": "Al reportar en estilo indirecto, el presente simple ('am') retrocede a pasado simple ('was')."
+      },
+      {
+        "subtopicId": "reporting-statements",
+        "instruction": "Elegí la opción correcta para completar el reporte.",
+        "prompt": "Tom said, \"I will call you tomorrow.\" → Tom said he ___ call me the next day.",
+        "options": [
+          "will",
+          "would",
+          "can",
+          "is going to"
+        ],
+        "correctIndex": 1,
+        "explanation": "El futuro con 'will' retrocede a 'would' cuando se reporta lo que alguien dijo."
+      },
+      {
+        "subtopicId": "pronoun-time-changes",
+        "instruction": "Elegí la opción correcta para completar el reporte.",
+        "prompt": "She said, \"I will see you tomorrow.\" → She said she would see me ___.",
+        "options": [
+          "tomorrow",
+          "the next day",
+          "today",
+          "yesterday"
+        ],
+        "correctIndex": 1,
+        "explanation": "La expresión de tiempo 'tomorrow' cambia a 'the next day' cuando reportamos lo que alguien dijo en otro momento."
+      }
+    ],
+    "b1-narrative-tenses": [
+      {
+        "subtopicId": "past-continuous",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "At 8 p.m. yesterday, I ___ dinner with my family.",
+        "options": [
+          "was having",
+          "had",
+          "have had",
+          "having"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para describir una acción en progreso en un momento específico del pasado se usa el past continuous, por eso es \"was having\"."
+      },
+      {
+        "subtopicId": "simple-vs-continuous",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "While I ___ TV, the phone rang.",
+        "options": [
+          "watched",
+          "was watching",
+          "am watching",
+          "watch"
+        ],
+        "correctIndex": 1,
+        "explanation": "La acción de fondo (interrumpida) se expresa con past continuous, mientras que la que interrumpe va en past simple (\"rang\")."
+      },
+      {
+        "subtopicId": "past-perfect",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "When I arrived at the station, the train ___.",
+        "options": [
+          "left",
+          "has left",
+          "had left",
+          "was leaving"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como el tren se fue antes de que llegara la persona, esa acción anterior a otra acción pasada se marca con past perfect, \"had left\"."
+      },
+      {
+        "subtopicId": "used-to-would",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "When I was a child, I ___ play outside every afternoon.",
+        "options": [
+          "used to",
+          "was used to",
+          "use to",
+          "would used"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para hablar de un hábito pasado que ya no ocurre se usa \"used to\" más el verbo en infinitivo sin \"to\"."
+      }
+    ],
+    "en-b1-time-clauses": [
+      {
+        "subtopicId": "when-while-pasado",
+        "instruction": "Elegí el tiempo verbal correcto para la acción en progreso.",
+        "prompt": "While I ___ dinner, she called me.",
+        "options": [
+          "cook",
+          "was cooking",
+          "cooked",
+          "have cooked"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'while' se usa el pasado continuo para una acción en progreso interrumpida por otra."
+      },
+      {
+        "subtopicId": "as-soon-as-until-before",
+        "instruction": "Elegí la forma verbal correcta.",
+        "prompt": "I waited until she ___.",
+        "options": [
+          "arrived",
+          "arrive",
+          "will arrive",
+          "arriving"
+        ],
+        "correctIndex": 0,
+        "explanation": "En pasado, después de 'until' se usa el pasado simple, por eso 'arrived'."
+      },
+      {
+        "subtopicId": "tiempos-verbales-futuro",
+        "instruction": "Elegí la forma verbal correcta para la cláusula de tiempo futura.",
+        "prompt": "I will call you as soon as I ___ home.",
+        "options": [
+          "will arrive",
+          "arrived",
+          "am arriving",
+          "arrive"
+        ],
+        "correctIndex": 3,
+        "explanation": "En las cláusulas de tiempo futuras no se usa 'will', se usa el presente simple, por eso 'arrive'."
+      },
+      {
+        "subtopicId": "combinar-oraciones-de-tiempo",
+        "instruction": "Elegí la forma verbal correcta para la acción habitual.",
+        "prompt": "Before I ___ to bed, I always lock the door.",
+        "options": [
+          "went",
+          "will go",
+          "go",
+          "going"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para describir un hábito combinando oraciones de tiempo se usa el presente simple, por eso 'go'."
+      }
+    ],
+    "en-b1-gerund-subject": [
+      {
+        "subtopicId": "gerundio-como-sujeto",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ junk food every day is bad for your health.",
+        "options": [
+          "Not to eat",
+          "Not eating",
+          "No eating",
+          "To not eat"
+        ],
+        "correctIndex": 1,
+        "explanation": "La forma negativa del gerundio como sujeto se forma con \"not\" antes del gerundio, por eso es \"Not eating\"."
+      },
+      {
+        "subtopicId": "remember-forget-significado",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I remember ___ that movie when I was a kid. It scared me a lot.",
+        "options": [
+          "watching",
+          "to watch",
+          "watch",
+          "to watching"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Remember + gerundio\" se usa para recordar algo que ya pasó en el pasado, en este caso haber visto la película."
+      },
+      {
+        "subtopicId": "verbo-preposicion-gerundio",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I'm looking forward to ___ you next week.",
+        "options": [
+          "see",
+          "seeing",
+          "to see",
+          "seen"
+        ],
+        "correctIndex": 1,
+        "explanation": "La expresión \"look forward to\" va seguida de gerundio, por eso es \"seeing\"."
+      },
+      {
+        "subtopicId": "infinitivo-de-proposito",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She saved money ___ a trip to Europe.",
+        "options": [
+          "for to make",
+          "to make",
+          "for making",
+          "making"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para expresar el propósito de una acción se usa el infinitivo con \"to\", por eso es \"to make\"."
+      }
+    ],
+    "b1-perfect-continuous-verb-patterns": [
+      {
+        "subtopicId": "have-been-doing",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I ___ for three hours and I'm exhausted.",
+        "options": [
+          "have studied",
+          "have been studying",
+          "am studying",
+          "study"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos present perfect continuous ('have been studying') porque la actividad empezó hace tres horas y continúa, con énfasis en la duración."
+      },
+      {
+        "subtopicId": "simple-vs-continuo",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "She ___ three cups of coffee this morning. That's why she's so energetic now.",
+        "options": [
+          "has drunk",
+          "has been drinking",
+          "is drinking",
+          "drinks"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usamos present perfect simple ('has drunk') porque nos interesa el resultado total (tres tazas), no la actividad en sí."
+      },
+      {
+        "subtopicId": "ing-o-to",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I decided ___ a new job after the layoffs.",
+        "options": [
+          "looking for",
+          "to look for",
+          "look for",
+          "looked for"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo 'decide' siempre va seguido de 'to + infinitivo', nunca de la forma en -ing."
+      },
+      {
+        "subtopicId": "stop-remember-try",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "He stopped ___ a cigarette because he was nervous during the meeting.",
+        "options": [
+          "to smoke",
+          "smoking",
+          "smoke",
+          "smoked"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Stop to smoke' significa que interrumpió otra actividad con el propósito de fumar, que es el sentido correcto en este contexto."
+      }
+    ],
+    "b1-conditionals": [
+      {
+        "subtopicId": "condicional-cero",
+        "instruction": "Elegí la forma verbal correcta para la verdad general.",
+        "prompt": "If you heat ice, it ___.",
+        "options": [
+          "melts",
+          "will melt",
+          "melted",
+          "would melt"
+        ],
+        "correctIndex": 0,
+        "explanation": "El condicional cero usa presente simple en ambas cláusulas porque habla de una verdad general."
+      },
+      {
+        "subtopicId": "primer-condicional",
+        "instruction": "Elegí el conector correcto.",
+        "prompt": "I'll bring an umbrella ___ it rains.",
+        "options": [
+          "unless",
+          "in case",
+          "as long as",
+          "if were"
+        ],
+        "correctIndex": 1,
+        "explanation": "'In case' se usa para expresar precaución ante algo que podría pasar, por eso es la opción correcta."
+      },
+      {
+        "subtopicId": "segundo-condicional",
+        "instruction": "Elegí la forma verbal correcta para la situación imaginaria.",
+        "prompt": "If I won the lottery, I ___ a big house.",
+        "options": [
+          "will buy",
+          "buy",
+          "would buy",
+          "bought"
+        ],
+        "correctIndex": 2,
+        "explanation": "En el segundo condicional, la cláusula principal usa 'would' + verbo base, por eso 'would buy'."
+      },
+      {
+        "subtopicId": "if-i-were-you",
+        "instruction": "Elegí la forma correcta para dar el consejo.",
+        "prompt": "If I ___ you, I would talk to her.",
+        "options": [
+          "am",
+          "was",
+          "were",
+          "will be"
+        ],
+        "correctIndex": 2,
+        "explanation": "La expresión fija para dar consejos es 'If I were you', con 'were' aunque el sujeto sea 'I'."
+      }
+    ],
+    "b1-passive-reported": [
+      {
+        "subtopicId": "pasiva-forma",
+        "instruction": "Elegí la opción correcta para completar la oración en pasiva.",
+        "prompt": "The report ___ by the team last week.",
+        "options": [
+          "was written",
+          "wrote",
+          "is written",
+          "has write"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usamos 'was written' porque es pasado simple en voz pasiva: sujeto + was/were + participio."
+      },
+      {
+        "subtopicId": "pasiva-uso",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "The bridge was built in 1920 ___ a famous engineer.",
+        "options": [
+          "from",
+          "by",
+          "with",
+          "for"
+        ],
+        "correctIndex": 1,
+        "explanation": "Usamos 'by' para introducir al agente, es decir, quien realizó la acción en la voz pasiva."
+      },
+      {
+        "subtopicId": "estilo-indirecto",
+        "instruction": "Elegí la opción correcta para completar el reporte.",
+        "prompt": "She said, \"I am busy today.\" → She said she ___ busy that day.",
+        "options": [
+          "is",
+          "was",
+          "has been",
+          "be"
+        ],
+        "correctIndex": 1,
+        "explanation": "En estilo indirecto el presente simple ('am') retrocede a pasado simple ('was')."
+      },
+      {
+        "subtopicId": "preguntas-pedidos",
+        "instruction": "Elegí la opción correcta para completar el reporte.",
+        "prompt": "He asked, \"Where do you live?\" → He asked me ___ I lived.",
+        "options": [
+          "where do",
+          "where",
+          "that where",
+          "where did"
+        ],
+        "correctIndex": 1,
+        "explanation": "En preguntas reportadas usamos orden afirmativo sin auxiliar: 'where' + sujeto + verbo, sin 'do/did'."
+      }
+    ],
+    "en-b1-articles-determiners": [
+      {
+        "subtopicId": "zero-article-general-cases",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I love ___ coffee in the morning.",
+        "options": [
+          "a",
+          "the",
+          "an",
+          "(sin artículo)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando hablamos de una bebida en general, no se usa artículo en inglés, por eso la oración queda sin \"a\", \"an\" ni \"the\"."
+      },
+      {
+        "subtopicId": "the-specific-unique-nouns",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ Amazon River is the largest river in the world by water volume.",
+        "options": [
+          "A",
+          "An",
+          "The",
+          "(sin artículo)"
+        ],
+        "correctIndex": 2,
+        "explanation": "Los nombres de ríos son accidentes geográficos que siempre llevan \"the\", por eso es \"The Amazon River\"."
+      },
+      {
+        "subtopicId": "both-either-neither",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "I don't like ___ of these two shirts; can you show me something else?",
+        "options": [
+          "both",
+          "neither",
+          "either",
+          "all"
+        ],
+        "correctIndex": 2,
+        "explanation": "En una oración negativa que habla de dos elementos se usa \"either\" junto con \"don't\", ya que \"neither\" ya incluye la negación y no puede combinarse con \"don't\"."
+      },
+      {
+        "subtopicId": "all-every-each",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ student in the class has to submit the assignment individually, one by one.",
+        "options": [
+          "All",
+          "Every",
+          "Each",
+          "Both"
+        ],
+        "correctIndex": 2,
+        "explanation": "Cuando se habla de los individuos de un grupo por separado, se usa \"each\", mientras que \"every\" se enfoca más en la totalidad o frecuencia."
+      }
+    ],
+    "en-b1-phrasal-verbs": [
+      {
+        "subtopicId": "phrasal-verbs-rutina-diaria",
+        "instruction": "Elegí el phrasal verb correcto para la rutina diaria.",
+        "prompt": "I usually ___ at 7 am and have breakfast.",
+        "options": [
+          "wake up",
+          "wake on",
+          "get wake",
+          "wake in"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Wake up' significa despertarse, y es el phrasal verb correcto para describir esa parte de la rutina."
+      },
+      {
+        "subtopicId": "phrasal-verbs-relaciones-personales",
+        "instruction": "Elegí el phrasal verb correcto.",
+        "prompt": "She has to ___ her little brother while their parents are at work.",
+        "options": [
+          "look for",
+          "look at",
+          "look after",
+          "look up"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Look after' significa cuidar a alguien, que es el sentido que necesita la oración."
+      },
+      {
+        "subtopicId": "phrasal-verbs-trabajo-estudio",
+        "instruction": "Elegí el phrasal verb correcto.",
+        "prompt": "Please ___ your homework before Friday.",
+        "options": [
+          "hand out",
+          "hand up",
+          "hand in",
+          "hand on"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Hand in' significa entregar un trabajo o tarea, que es lo que pide la oración."
+      },
+      {
+        "subtopicId": "separables-vs-inseparables-repaso",
+        "instruction": "Elegí la ubicación correcta del pronombre con el phrasal verb separable.",
+        "prompt": "The music is too loud. Turn ___!",
+        "options": [
+          "off it",
+          "it off",
+          "the music off",
+          "off"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con phrasal verbs separables, el pronómbre va entre el verbo y la partícula, por eso 'turn it off'."
+      }
+    ],
+    "b1-relatives-deduction": [
+      {
+        "subtopicId": "pronombres-relativos",
+        "instruction": "Elegí el pronombre relativo correcto para completar la oración.",
+        "prompt": "The woman ___ lives next door is a doctor.",
+        "options": [
+          "who",
+          "which",
+          "whose",
+          "where"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usamos 'who' para referirnos a personas como sujeto de la oración relativa."
+      },
+      {
+        "subtopicId": "especificativas-explicativas",
+        "instruction": "Elegí la opción con la puntuación correcta para esta oración explicativa.",
+        "prompt": "My brother, ___ lives in Madrid, is visiting us next week.",
+        "options": [
+          "that",
+          "which",
+          "who",
+          "whose"
+        ],
+        "correctIndex": 2,
+        "explanation": "En las oraciones explicativas (con comas) no se puede usar 'that', y como se refiere a una persona corresponde 'who'."
+      },
+      {
+        "subtopicId": "deduccion",
+        "instruction": "Elegí el modal correcto según el nivel de certeza indicado.",
+        "prompt": "She's lived in Paris for ten years, so she ___ speak French fluently. (certeza alta)",
+        "options": [
+          "might",
+          "can't",
+          "must",
+          "could"
+        ],
+        "correctIndex": 2,
+        "explanation": "Usamos 'must' para expresar una deducción con alto grado de certeza sobre algo probable."
+      },
+      {
+        "subtopicId": "conectores",
+        "instruction": "Elegí el conector correcto para unir estas dos ideas de contraste.",
+        "prompt": "It was raining heavily, ___ we decided to go for a walk anyway.",
+        "options": [
+          "so",
+          "because",
+          "however",
+          "although"
+        ],
+        "correctIndex": 3,
+        "explanation": "Usamos 'although' dentro de la misma oración para introducir una idea de contraste inesperado."
+      }
+    ],
+    "en-b1-question-tags-agreement": [
+      {
+        "subtopicId": "formacion-question-tags",
+        "instruction": "Elegí la opción correcta para completar el question tag.",
+        "prompt": "She is from Spain, ___?",
+        "options": [
+          "isn't she",
+          "is she",
+          "doesn't she",
+          "isn't it"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como la oración principal es afirmativa, el question tag va en negativo y usa el mismo sujeto (she) con el verbo be."
+      },
+      {
+        "subtopicId": "question-tags-auxiliares",
+        "instruction": "Elegí el auxiliar correcto para el question tag según el tiempo verbal.",
+        "prompt": "You don't like coffee, ___?",
+        "options": [
+          "do you",
+          "don't you",
+          "are you",
+          "aren't you"
+        ],
+        "correctIndex": 0,
+        "explanation": "La oración es negativa (don't like), así que el question tag debe ser afirmativo usando el mismo auxiliar: do you."
+      },
+      {
+        "subtopicId": "question-tags-modales",
+        "instruction": "Elegí el question tag correcto con el modal adecuado.",
+        "prompt": "You can swim, ___?",
+        "options": [
+          "can't you",
+          "don't you",
+          "won't you",
+          "aren't you"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como la oración usa el modal 'can' en afirmativo, el question tag debe repetir ese modal en negativo: can't you."
+      },
+      {
+        "subtopicId": "entonacion-pregunta-confirmacion",
+        "instruction": "Elegí qué tipo de entonación corresponde a este question tag según el contexto.",
+        "prompt": "You already know the answer, so you say: 'It's a nice day, isn't it?' with falling intonation. This means you are ___.",
+        "options": [
+          "confirming something you already believe",
+          "asking a real question because you don't know the answer",
+          "asking for permission",
+          "making a request"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando el hablante ya sabe la respuesta y usa entonación descendente, el question tag busca confirmación, no información nueva."
+      }
+    ],
+    "en-b1-vocab-work-education": [
+      {
+        "subtopicId": "professions-and-responsibilities",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "She is responsible ___ managing the sales team.",
+        "options": [
+          "for",
+          "of",
+          "with",
+          "in"
+        ],
+        "correctIndex": 0,
+        "explanation": "La estructura correcta en inglés es 'responsible for' cuando hablás de las responsabilidades de alguien."
+      },
+      {
+        "subtopicId": "job-interviews",
+        "instruction": "Elegí la opción que completa mejor la pregunta típica de una entrevista de trabajo.",
+        "prompt": "What would you say is your biggest ___?",
+        "options": [
+          "weakness",
+          "weak",
+          "weakly",
+          "weakness's"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Weakness' es el sustantivo correcto que se usa para hablar de un punto débil en una entrevista de trabajo."
+      },
+      {
+        "subtopicId": "education-system",
+        "instruction": "Elegí la palabra que corresponde al título que se obtiene después de completar la universidad (primer nivel).",
+        "prompt": "After finishing university, she received her ___ degree.",
+        "options": [
+          "bachelor's",
+          "master",
+          "doctorate's",
+          "graduate's"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Bachelor's degree' es el título universitario de primer nivel, por eso es la forma correcta."
+      },
+      {
+        "subtopicId": "technology-at-work-and-study",
+        "instruction": "Elegí la palabra que completa correctamente la oración sobre trabajo remoto.",
+        "prompt": "We need to ___ the files to the cloud before the meeting.",
+        "options": [
+          "upload",
+          "download",
+          "update",
+          "unload"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Upload' significa subir archivos a la nube, que es lo que pide el contexto de la oración."
+      }
+    ],
+    "en-b2-participle-clauses": [
+      {
+        "subtopicId": "participio-presente-acciones-simultaneas",
+        "instruction": "Elegí la opción que completa correctamente la cláusula de participio presente.",
+        "prompt": "___ her coffee, she read the newspaper quietly.",
+        "options": [
+          "Drinking",
+          "Drunk",
+          "Drink",
+          "Having drink"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Drinking' es el participio presente que expresa una acción simultánea realizada por el mismo sujeto que 'read'."
+      },
+      {
+        "subtopicId": "participio-pasado-significado-pasivo",
+        "instruction": "Elegí la opción que completa correctamente la cláusula con significado pasivo.",
+        "prompt": "___ by the loud noise, the baby started crying.",
+        "options": [
+          "Frightened",
+          "Frightening",
+          "Frighten",
+          "Having frighten"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Frightened' es el participio pasado que indica que el bebé recibe la acción de asustarse, por eso tiene significado pasivo."
+      },
+      {
+        "subtopicId": "reducir-relativas-con-participios",
+        "instruction": "Elegí la forma reducida correcta de la oración relativa.",
+        "prompt": "The man ___ in the corner is my uncle. (original: who is standing in the corner)",
+        "options": [
+          "standing",
+          "stood",
+          "stand",
+          "who standing"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando la relativa activa tiene 'who is + verbo-ing', se reduce usando solo el participio presente 'standing'."
+      },
+      {
+        "subtopicId": "participios-causa-resultado",
+        "instruction": "Elegí la opción que completa correctamente la cláusula de causa.",
+        "prompt": "___ all the evidence, the jury found him guilty.",
+        "options": [
+          "Having considered",
+          "Considered",
+          "Consider",
+          "Having consider"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Having considered' expresa una acción previa completada que es la causa del resultado posterior, por eso es la forma correcta."
+      }
+    ],
+    "en-b1-opinions-discussion": [
+      {
+        "subtopicId": "dar-tu-opinion",
+        "instruction": "Elegí la opción correcta para dar una opinión.",
+        "prompt": "___, learning English is important for your career.",
+        "options": [
+          "In my opinion",
+          "I am agree",
+          "For me that",
+          "I think that in"
+        ],
+        "correctIndex": 0,
+        "explanation": "Usamos 'In my opinion' seguido de coma para introducir una opinión de forma correcta en inglés."
+      },
+      {
+        "subtopicId": "mostrar-acuerdo",
+        "instruction": "Elegí la frase correcta para mostrar que estás de acuerdo.",
+        "prompt": "A: I think online classes are more flexible. B: ___, they let you study at your own pace.",
+        "options": [
+          "I agree with",
+          "I'm agree",
+          "I think so too",
+          "Me too that"
+        ],
+        "correctIndex": 2,
+        "explanation": "'I think so too' es la forma natural de mostrar acuerdo con una opinión, mientras que 'I'm agree' es un error típico porque 'agree' es un verbo, no un adjetivo."
+      },
+      {
+        "subtopicId": "mostrar-desacuerdo-cortesia",
+        "instruction": "Elegí la frase correcta para mostrar desacuerdo de manera educada.",
+        "prompt": "A: I think social media is completely harmless. B: ___, I think it can be harmful for teenagers.",
+        "options": [
+          "I don't think so",
+          "I no agree",
+          "No, you are wrong",
+          "I'm not agree"
+        ],
+        "correctIndex": 0,
+        "explanation": "'I don't think so' es una forma educada y natural de expresar desacuerdo, a diferencia de 'you are wrong' que es muy directo y los otros que tienen errores gramaticales."
+      },
+      {
+        "subtopicId": "pedir-opinion-de-otros",
+        "instruction": "Elegí la pregunta correcta para pedir la opinión de alguien.",
+        "prompt": "___ about the new policy at work?",
+        "options": [
+          "How do you think",
+          "What do you think",
+          "What you think",
+          "How you think"
+        ],
+        "correctIndex": 1,
+        "explanation": "La estructura correcta para pedir opinión es 'What do you think about...?', con el auxiliar 'do' en su lugar."
+      }
+    ],
+    "b2-conditionals-past-modals": [
+      {
+        "subtopicId": "tercer-condicional",
+        "instruction": "Elegí la forma correcta para completar el tercer condicional.",
+        "prompt": "If I had studied harder, I ___ the exam.",
+        "options": [
+          "would pass",
+          "would have passed",
+          "had passed",
+          "will pass"
+        ],
+        "correctIndex": 1,
+        "explanation": "En el tercer condicional, la cláusula principal usa 'would have + participio' para hablar de un resultado hipotético en el pasado."
+      },
+      {
+        "subtopicId": "condicionales-mixtos",
+        "instruction": "Elegí la forma correcta para completar el condicional mixto.",
+        "prompt": "If she had taken that job, she ___ richer now.",
+        "options": [
+          "would have been",
+          "would be",
+          "had been",
+          "will be"
+        ],
+        "correctIndex": 1,
+        "explanation": "En este condicional mixto, la condición es pasada (had taken) pero el resultado se refiere al presente, por eso se usa 'would be' sin 'have'."
+      },
+      {
+        "subtopicId": "deduccion-pasado",
+        "instruction": "Elegí la opción correcta para expresar una deducción sobre el pasado.",
+        "prompt": "The lights were off when we arrived. They ___ already left.",
+        "options": [
+          "might have",
+          "can't have",
+          "must have",
+          "should have"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como hay una evidencia clara (las luces apagadas) que lleva a una conclusión lógica casi segura, se usa 'must have' para deducir algo sobre el pasado."
+      },
+      {
+        "subtopicId": "criticas-lamentos",
+        "instruction": "Elegí la opción correcta para expresar un lamento sobre una oportunidad perdida.",
+        "prompt": "You ___ told me about the meeting earlier; now I've missed it.",
+        "options": [
+          "must have",
+          "should have",
+          "would have",
+          "can have"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se usa 'should have' para criticar o lamentarse de algo que la otra persona no hizo y que hubiera sido lo correcto hacer."
+      }
+    ],
+    "b2-future-forms": [
+      {
+        "subtopicId": "future-continuous",
+        "instruction": "Elegí la opción que completa correctamente la oración en future continuous.",
+        "prompt": "At 9 pm tomorrow, I ___ dinner with my family.",
+        "options": [
+          "will be having",
+          "will have",
+          "will having",
+          "am having will"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Will be having' es la forma correcta del future continuous para describir una acción que estará en curso en un momento específico del futuro."
+      },
+      {
+        "subtopicId": "future-perfect",
+        "instruction": "Elegí la opción que completa correctamente la oración en future perfect.",
+        "prompt": "By next June, she ___ her degree.",
+        "options": [
+          "will have finished",
+          "will finish",
+          "will be finished",
+          "will have finish"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Will have finished' es la forma correcta del future perfect para indicar que algo estará terminado antes de un momento futuro."
+      },
+      {
+        "subtopicId": "about-to-due-to",
+        "instruction": "Elegí la opción que completa correctamente la oración sobre algo previsto.",
+        "prompt": "The meeting ___ start at 3 pm according to the schedule.",
+        "options": [
+          "is due to",
+          "is about",
+          "is to about",
+          "is due"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Is due to' se usa para expresar que algo está previsto para un momento específico, como lo indica el horario mencionado."
+      },
+      {
+        "subtopicId": "elegir-futuro",
+        "instruction": "Elegí la forma de futuro más adecuada según el contexto.",
+        "prompt": "Look at those dark clouds! It ___ rain soon.",
+        "options": [
+          "is going to",
+          "will have",
+          "will be",
+          "is to"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Is going to' es la forma correcta para predicciones basadas en evidencia presente, como las nubes oscuras que vemos ahora."
+      }
+    ],
+    "b2-passive-causative": [
+      {
+        "subtopicId": "pasiva-todos-los-tiempos",
+        "instruction": "Elegí la forma pasiva correcta según el tiempo verbal que corresponde.",
+        "prompt": "By next year, the bridge ___ for five years.",
+        "options": [
+          "will build",
+          "will have built",
+          "will have been built",
+          "will be built"
+        ],
+        "correctIndex": 2,
+        "explanation": "Se usa el futuro perfecto pasivo ('will have been + participio') porque la acción estará completada antes de un punto futuro específico."
+      },
+      {
+        "subtopicId": "pasiva-modales",
+        "instruction": "Elegí la forma correcta de la pasiva después del modal.",
+        "prompt": "The work must ___ by Friday.",
+        "options": [
+          "finish",
+          "be finished",
+          "been finished",
+          "have finished"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después de un modal como 'must', la pasiva se forma con 'be + participio', por eso la opción correcta es 'be finished'."
+      },
+      {
+        "subtopicId": "pasiva-impersonal",
+        "instruction": "Elegí la opción correcta para la pasiva impersonal usada en noticias.",
+        "prompt": "It ___ that he is one of the richest men in the world.",
+        "options": [
+          "says",
+          "said",
+          "is saying",
+          "is said"
+        ],
+        "correctIndex": 3,
+        "explanation": "La estructura impersonal para transmitir rumores u opiniones generales es 'It is said that...', usando la pasiva del presente simple."
+      },
+      {
+        "subtopicId": "causativa",
+        "instruction": "Elegí el verbo correcto para la construcción causativa en pasado.",
+        "prompt": "I ___ my car fixed yesterday.",
+        "options": [
+          "made",
+          "did",
+          "had",
+          "let"
+        ],
+        "correctIndex": 2,
+        "explanation": "La construcción causativa 'have something done' indica que otra persona hizo la acción por vos, y en pasado se usa 'had'."
+      }
+    ],
+    "en-b2-word-formation": [
+      {
+        "subtopicId": "sufijos-sustantivos",
+        "instruction": "Elegí el sustantivo correcto derivado del verbo 'develop'.",
+        "prompt": "The ___ of new technology has changed our lives.",
+        "options": [
+          "development",
+          "developness",
+          "developity",
+          "developation"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Development' es el sustantivo correcto formado con el sufijo '-ment' a partir del verbo 'develop'."
+      },
+      {
+        "subtopicId": "sufijos-adjetivos",
+        "instruction": "Elegí el adjetivo correcto derivado del sustantivo 'care'.",
+        "prompt": "He is a very ___ driver; he always checks his mirrors.",
+        "options": [
+          "careful",
+          "careless",
+          "caring",
+          "carely"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Careful' significa cuidadoso y se forma con el sufijo '-ful', que indica que tiene esa cualidad en abundancia."
+      },
+      {
+        "subtopicId": "prefijos-negacion",
+        "instruction": "Elegí el prefijo de negación correcto para el adjetivo 'possible'.",
+        "prompt": "It's ___ possible to finish this project in one day.",
+        "options": [
+          "im",
+          "un",
+          "dis",
+          "in"
+        ],
+        "correctIndex": 0,
+        "explanation": "El adjetivo 'possible' forma su negativo con el prefijo 'im-' (impossible), ya que antes de 'p' se usa esa variante."
+      },
+      {
+        "subtopicId": "prefijos-cantidad-repeticion",
+        "instruction": "Elegí el prefijo correcto para expresar que algo está por debajo de lo necesario.",
+        "prompt": "The project failed because the team was ___staffed.",
+        "options": [
+          "under",
+          "over",
+          "re",
+          "multi"
+        ],
+        "correctIndex": 0,
+        "explanation": "El prefijo 'under-' indica falta de cantidad, por eso 'understaffed' significa que faltaba personal."
+      }
+    ],
+    "en-b2-indirect-questions": [
+      {
+        "subtopicId": "indirect-questions-structure",
+        "instruction": "Elegí la opción con el orden correcto para esta pregunta indirecta.",
+        "prompt": "Could you tell me ___?",
+        "options": [
+          "where is the station",
+          "where the station it is",
+          "where the station is",
+          "where does the station is"
+        ],
+        "correctIndex": 2,
+        "explanation": "En las preguntas indirectas se usa el orden de afirmación (sujeto + verbo), por eso es 'where the station is' y no el orden de pregunta directa."
+      },
+      {
+        "subtopicId": "i-wonder-if-id-like-to-know",
+        "instruction": "Elegí la opción correcta para completar esta pregunta cortés.",
+        "prompt": "I was wondering if ___ me with this report.",
+        "options": [
+          "you could help",
+          "could you help",
+          "you can help",
+          "you helped"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'I was wondering if' va el orden de afirmación (sujeto + verbo), y 'could' suena más cortés que 'can'."
+      },
+      {
+        "subtopicId": "embedded-questions-in-statements",
+        "instruction": "Elegí la opción correcta para completar esta oración con una pregunta incrustada.",
+        "prompt": "I don't know ___ this is.",
+        "options": [
+          "what time is",
+          "is what time",
+          "what the time it is",
+          "what time"
+        ],
+        "correctIndex": 3,
+        "explanation": "En una pregunta incrustada se usa el orden de afirmación, entonces 'what time this is' sigue la estructura correcta sin invertir el verbo."
+      },
+      {
+        "subtopicId": "do-you-know-could-you-tell-me",
+        "instruction": "Elegí la opción correcta para completar esta pregunta educada.",
+        "prompt": "Do you know ___ the museum opens?",
+        "options": [
+          "what time does",
+          "what time",
+          "does what time",
+          "what time it"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después de 'Do you know' se usa el orden de afirmación, por eso va 'what time the museum opens' sin el auxiliar 'does'."
+      }
+    ],
+    "en-b2-comparative-structures": [
+      {
+        "subtopicId": "the-comparativo-the-comparativo",
+        "instruction": "Elegí la opción que completa correctamente la estructura comparativa proporcional.",
+        "prompt": "The more you practice, ___ you become.",
+        "options": [
+          "the better",
+          "better",
+          "the most better",
+          "the more better"
+        ],
+        "correctIndex": 0,
+        "explanation": "La estructura correcta repite 'the' antes de cada comparativo: 'the more... the better' para expresar que dos cosas cambian juntas."
+      },
+      {
+        "subtopicId": "comparaciones-con-sustantivos",
+        "instruction": "Elegí la opción correcta para comparar un sustantivo incontable.",
+        "prompt": "We have ___ time than we expected to finish the project.",
+        "options": [
+          "less",
+          "fewer",
+          "least",
+          "little"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Less' se usa con sustantivos incontables como 'time', mientras que 'fewer' se usa con sustantivos contables."
+      },
+      {
+        "subtopicId": "double-comparatives-matices",
+        "instruction": "Elegí la opción que expresa correctamente un cambio progresivo.",
+        "prompt": "The city is becoming ___ crowded every year.",
+        "options": [
+          "more and more",
+          "more more",
+          "the more",
+          "much more and"
+        ],
+        "correctIndex": 0,
+        "explanation": "'More and more' es la forma correcta de repetir el comparativo para expresar un cambio progresivo con el tiempo."
+      },
+      {
+        "subtopicId": "as-adjetivo-as-sustantivo",
+        "instruction": "Elegí la expresión fija (símil) correcta para completar la comparación.",
+        "prompt": "After the long hike, his legs felt as heavy ___ lead.",
+        "options": [
+          "as",
+          "than",
+          "like",
+          "so"
+        ],
+        "correctIndex": 0,
+        "explanation": "La estructura fija es 'as + adjetivo + as + sustantivo', por eso se usa 'as' y no 'than' ni 'like'."
+      }
+    ],
+    "b2-wishes-reporting": [
+      {
+        "subtopicId": "wish-if-only",
+        "instruction": "Elegí la forma correcta para expresar un deseo sobre el presente.",
+        "prompt": "I wish I ___ more time to finish this project.",
+        "options": [
+          "have",
+          "had",
+          "would have",
+          "having"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para expresar un deseo sobre una situación presente con 'wish', se usa el pasado simple, por eso la forma correcta es 'had'."
+      },
+      {
+        "subtopicId": "would-rather-its-time",
+        "instruction": "Elegí la forma correcta después de 'it's time'.",
+        "prompt": "It's time you ___ up and started working.",
+        "options": [
+          "grow",
+          "would grow",
+          "have grown",
+          "grew"
+        ],
+        "correctIndex": 3,
+        "explanation": "Después de 'it's time you', se usa el pasado simple para expresar urgencia sobre algo que debería pasar ya, por eso la opción correcta es 'grew'."
+      },
+      {
+        "subtopicId": "suggest-admit-deny",
+        "instruction": "Elegí la forma correcta del verbo después de 'admit'.",
+        "prompt": "She admitted ___ the money.",
+        "options": [
+          "to steal",
+          "stole",
+          "steal",
+          "stealing"
+        ],
+        "correctIndex": 3,
+        "explanation": "El verbo 'admit' se construye con gerundio, por eso la forma correcta es 'stealing'."
+      },
+      {
+        "subtopicId": "advise-warn-remind",
+        "instruction": "Elegí la forma correcta para reportar una advertencia con 'warn'.",
+        "prompt": "He warned me ___ late.",
+        "options": [
+          "don't be",
+          "to not be",
+          "not being",
+          "not to be"
+        ],
+        "correctIndex": 3,
+        "explanation": "El verbo 'warn' se construye con objeto + 'not to' + infinitivo para reportar una advertencia negativa, por eso la forma correcta es 'not to be'."
+      }
+    ],
+    "en-b2-vocab-society-environment": [
+      {
+        "subtopicId": "social-issues",
+        "instruction": "Elegí la palabra correcta para completar la oración sobre un problema social.",
+        "prompt": "The gap between rich and poor has grown, leading to greater social ___.",
+        "options": [
+          "inequality",
+          "inequity",
+          "unequality",
+          "disequality"
+        ],
+        "correctIndex": 0,
+        "explanation": "La palabra correcta en inglés para referirse a la desigualdad social es 'inequality', no 'unequality' ni 'disequality' que no existen."
+      },
+      {
+        "subtopicId": "economy-and-work",
+        "instruction": "Elegí la palabra correcta para completar la oración sobre economía.",
+        "prompt": "Prices have risen sharply this year due to high ___.",
+        "options": [
+          "inflation",
+          "inflammation",
+          "inflaction",
+          "inflate"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Inflation' es el término económico correcto para el aumento generalizado de precios, mientras que 'inflammation' significa inflamación en sentido médico."
+      },
+      {
+        "subtopicId": "climate-change-and-environment",
+        "instruction": "Elegí la palabra correcta para completar la oración sobre medioambiente.",
+        "prompt": "Rising temperatures and melting ice caps are clear signs of ___ change.",
+        "options": [
+          "climatic",
+          "climate",
+          "weather",
+          "atmosphere"
+        ],
+        "correctIndex": 1,
+        "explanation": "La expresión correcta en inglés es 'climate change', no 'climatic change' ni 'weather change'."
+      },
+      {
+        "subtopicId": "politics-and-government-basics",
+        "instruction": "Elegí la palabra correcta para completar la oración sobre política.",
+        "prompt": "Citizens will go to the polls next month to ___ in the national election.",
+        "options": [
+          "elect",
+          "vote",
+          "votation",
+          "election"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo correcto para expresar la acción de emitir el voto es 'vote', mientras que 'votation' no existe en inglés."
+      }
+    ],
+    "b2-emphasis-cohesion": [
+      {
+        "subtopicId": "oraciones-escindidas",
+        "instruction": "Elegí la opción que completa correctamente la oración escindida.",
+        "prompt": "___ John that broke the window, not his brother.",
+        "options": [
+          "It was",
+          "It is that",
+          "That was",
+          "There was"
+        ],
+        "correctIndex": 0,
+        "explanation": "La estructura 'It was... that' se usa para resaltar al sujeto responsable de la acción, en este caso John."
+      },
+      {
+        "subtopicId": "inversion",
+        "instruction": "Elegí la opción que completa correctamente la inversión después de la expresión negativa.",
+        "prompt": "Never ___ I seen such a beautiful sunset.",
+        "options": [
+          "before have",
+          "before had",
+          "did before",
+          "before has"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'Never before' se invierte el orden sujeto-auxiliar, por eso va 'have I seen' con el auxiliar 'have'."
+      },
+      {
+        "subtopicId": "contraste",
+        "instruction": "Elegí el conector de contraste que completa correctamente la oración.",
+        "prompt": "She was exhausted; ___, she kept working until midnight.",
+        "options": [
+          "nevertheless",
+          "moreover",
+          "therefore",
+          "because"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Nevertheless' expresa contraste entre el cansancio y el hecho de seguir trabajando, a diferencia de los otros conectores que indican causa o suma."
+      },
+      {
+        "subtopicId": "causa-resultado",
+        "instruction": "Elegí el conector de causa y resultado que completa correctamente la oración.",
+        "prompt": "He missed the bus; ___, he arrived late for the meeting.",
+        "options": [
+          "as a result",
+          "although",
+          "despite",
+          "whereas"
+        ],
+        "correctIndex": 0,
+        "explanation": "'As a result' indica que llegar tarde es la consecuencia directa de haber perdido el colectivo."
+      }
+    ],
+    "en-b2-debate-persuasion": [
+      {
+        "subtopicId": "presentar-argumento",
+        "instruction": "Elegí la expresión correcta para presentar un argumento de forma formal.",
+        "prompt": "___, the main reason to support this policy is economic growth.",
+        "options": [
+          "At first",
+          "Firstly of all",
+          "First and foremost",
+          "In the first"
+        ],
+        "correctIndex": 2,
+        "explanation": "'First and foremost' es una expresión formal usada para presentar el argumento principal de forma clara en un debate."
+      },
+      {
+        "subtopicId": "rebatir-argumento",
+        "instruction": "Elegí la expresión correcta para rebatir un argumento ajeno.",
+        "prompt": "___, the statistics actually suggest the opposite conclusion.",
+        "options": [
+          "Although",
+          "Despite of",
+          "By contrast with",
+          "On the contrary"
+        ],
+        "correctIndex": 3,
+        "explanation": "'On the contrary' se usa para contradecir directamente lo que afirmó la otra persona en un debate formal."
+      },
+      {
+        "subtopicId": "lenguaje-persuasivo",
+        "instruction": "Elegí el adverbio enfático correcto para esta pregunta retórica persuasiva.",
+        "prompt": "___ we really want to leave such an important decision to chance?",
+        "options": [
+          "Maybe",
+          "Perhaps",
+          "Surely",
+          "Possibly"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Surely' es un adverbio enfático típico del lenguaje persuasivo que refuerza una pregunta retórica, a diferencia de 'maybe' o 'perhaps' que expresan duda."
+      },
+      {
+        "subtopicId": "ceder-punto-matizar",
+        "instruction": "Elegí el conector correcto para ceder un punto antes de matizar tu postura.",
+        "prompt": "___ that may be true, it doesn't mean we should abandon the project entirely.",
+        "options": [
+          "Because",
+          "Unless",
+          "Despite",
+          "While"
+        ],
+        "correctIndex": 3,
+        "explanation": "'While' se usa para ceder parcialmente un punto al oponente antes de matizar y reafirmar tu propia postura."
+      }
+    ],
+    "en-b2-formal-letters": [
+      {
+        "subtopicId": "estructura-carta-formal",
+        "instruction": "Elegí la opción correcta sobre la estructura de una carta formal.",
+        "prompt": "In a formal letter, where do you usually write the recipient's address?",
+        "options": [
+          "Below the sender's address, aligned left",
+          "Top right corner",
+          "At the end of the letter",
+          "In the subject line"
+        ],
+        "correctIndex": 0,
+        "explanation": "En una carta formal, la dirección del destinatario se escribe alineada a la izquierda, debajo de la dirección del remitente que va a la derecha."
+      },
+      {
+        "subtopicId": "cartas-de-queja",
+        "instruction": "Elegí la palabra correcta para completar esta oración de una carta de queja.",
+        "prompt": "I am writing to ___ about the poor service I received at your store.",
+        "options": [
+          "complain",
+          "complaint",
+          "complainer",
+          "complaining"
+        ],
+        "correctIndex": 0,
+        "explanation": "Después de 'to' en la frase 'writing to' va el infinitivo sin 'to', es decir el verbo 'complain', no el sustantivo 'complaint'."
+      },
+      {
+        "subtopicId": "cartas-de-solicitud",
+        "instruction": "Elegí la palabra correcta para completar esta solicitud formal.",
+        "prompt": "I would be grateful if you ___ send me further information about the course.",
+        "options": [
+          "could",
+          "can",
+          "would",
+          "will"
+        ],
+        "correctIndex": 0,
+        "explanation": "La estructura cortés 'I would be grateful if you could...' usa 'could' para pedir algo de manera formal y educada."
+      },
+      {
+        "subtopicId": "frases-apertura-cierre-formales",
+        "instruction": "Elegí la frase de cierre correcta para esta situación.",
+        "prompt": "You are writing a formal letter but you don't know the recipient's name. Which closing phrase should you use?",
+        "options": [
+          "Yours faithfully",
+          "Yours sincerely",
+          "Best wishes",
+          "Love"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cuando no sabés el nombre del destinatario y empezaste con 'Dear Sir/Madam', el cierre correcto en inglés británico es 'Yours faithfully'."
+      }
+    ],
+    "en-c1-subjunctive-inversion": [
+      {
+        "subtopicId": "subjunctive-suggest-insist-demand",
+        "instruction": "Elegí la forma verbal correcta en subjuntivo formal.",
+        "prompt": "It is essential that she ___ the report before the meeting.",
+        "options": [
+          "submits",
+          "submitted",
+          "submit",
+          "will submit"
+        ],
+        "correctIndex": 2,
+        "explanation": "Después de 'it is essential that', el subjuntivo formal usa la forma base del verbo sin conjugar, por eso la opción correcta es 'submit'."
+      },
+      {
+        "subtopicId": "were-i-to-formal-inverted-conditionals",
+        "instruction": "Elegí la palabra correcta para formar este condicional formal invertido.",
+        "prompt": "___ I to resign, the company would struggle to replace me.",
+        "options": [
+          "If",
+          "Was",
+          "Should",
+          "Were"
+        ],
+        "correctIndex": 3,
+        "explanation": "La estructura formal invertida sin 'if' usa 'Were' al inicio seguido del sujeto para expresar una condición hipotética, por eso 'Were I to' es correcto."
+      },
+      {
+        "subtopicId": "hardly-scarcely-no-sooner-inversion",
+        "instruction": "Elegí la palabra correcta para completar esta inversión con 'hardly'.",
+        "prompt": "Hardly ___ the meeting begun when the fire alarm went off.",
+        "options": [
+          "did",
+          "has",
+          "was",
+          "had"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'hardly' al inicio seguido de inversión, se usa el auxiliar 'had' porque la acción está en pasado perfecto, por eso 'had' es correcto."
+      },
+      {
+        "subtopicId": "had-i-known-third-conditional-inversion",
+        "instruction": "Elegí la palabra correcta para invertir este tercer condicional en registro formal.",
+        "prompt": "___ I known about the delay, I would have left earlier.",
+        "options": [
+          "Should",
+          "If",
+          "Were",
+          "Had"
+        ],
+        "correctIndex": 3,
+        "explanation": "La inversión formal del tercer condicional reemplaza 'If I had known' por 'Had I known', por eso 'Had' es la opción correcta."
       }
     ]
   }
