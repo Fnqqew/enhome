@@ -1,6 +1,7 @@
 // Lee los bancos de ejercicios del temario (banco.json de cada tópico). Un ejercicio que no pasa el
 // esquema o los controles se descarta con un aviso, sin romper el resto.
 
+import { BANK_FILES, type Difficulty } from '../../shared/difficulty'
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { bankFileSchema, isBankType, type BankFile } from '../../shared/bank'
@@ -32,9 +33,14 @@ export function topicDir(contentDir: string, language: LanguageId, topic: Pick<C
   return null
 }
 
-export function bankPath(contentDir: string, language: LanguageId, topic: Pick<CurriculumTopic, 'id' | 'level'>): string | null {
+export function bankPath(
+  contentDir: string,
+  language: LanguageId,
+  topic: Pick<CurriculumTopic, 'id' | 'level'>,
+  difficulty: Difficulty = 'normal'
+): string | null {
   const dir = topicDir(contentDir, language, topic)
-  return dir ? join(dir, 'banco.json') : null
+  return dir ? join(dir, BANK_FILES[difficulty]) : null
 }
 
 export function readBank(path: string | null, topic: Pick<CurriculumTopic, 'id' | 'subtopics'>): LoadedBank {
@@ -89,12 +95,13 @@ export class CourseBanks {
     private readonly language: LanguageId
   ) {}
 
-  forTopic(topic: CurriculumTopic): LoadedBank {
-    let bank = this.cache.get(topic.id)
+  forTopic(topic: CurriculumTopic, difficulty: Difficulty = 'normal'): LoadedBank {
+    const key = `${topic.id}:${difficulty}`
+    let bank = this.cache.get(key)
     if (!bank) {
-      bank = readBank(bankPath(this.contentDir, this.language, topic), topic)
+      bank = readBank(bankPath(this.contentDir, this.language, topic, difficulty), topic)
       for (const problem of bank.problems) console.warn(`[banco] ${problem}`)
-      this.cache.set(topic.id, bank)
+      this.cache.set(key, bank)
     }
     return bank
   }

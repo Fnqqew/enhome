@@ -2,9 +2,8 @@
 // evalúa con una rúbrica.
 
 import { useCallback, useEffect, useState } from 'react'
-import { MISSION_RECORDING_MS, type MissionView } from '@shared/mission'
+import type { MissionView } from '@shared/mission'
 import { useCourse } from '../../hooks/useCourse'
-import { useTranscriber } from '../../speech/useTranscriber'
 import { countWords } from '../../exercise-types/common'
 import ClaudeWait from '../ClaudeWait'
 import Icon from '../Icon'
@@ -52,18 +51,15 @@ export default function MissionCard(): React.JSX.Element | null {
       {!mission && (
         <>
           <p className="muted">
-            Usás lo de la semana en algo que te puede pasar: escribir un mail, dejar un audio, resolver un trámite. Claude la arma a tu medida y
-            después la evalúa con una rúbrica, criterio por criterio.
+            Usás lo de la semana en algo que te puede pasar: escribir un mail, un mensaje o una reseña, resolver un trámite. Claude la arma a tu
+            medida y después la evalúa con una rúbrica, criterio por criterio.
           </p>
           {view.lockedReason ? (
             <p className="muted small">{view.lockedReason}</p>
           ) : (
-            <div className="row">
+            <div>
               <button className="btn" disabled={busy !== null} onClick={() => run('create', () => window.api.createMission('write'))}>
-                <Icon name="pencil" className="glyph" /> Una misión para escribir
-              </button>
-              <button className="btn secondary" disabled={busy !== null} onClick={() => run('create', () => window.api.createMission('speak'))}>
-                <Icon name="mic" className="glyph" /> Una misión para decir
+                <Icon name="pencil" className="glyph" /> Pedir la misión de la semana
               </button>
             </div>
           )}
@@ -99,11 +95,8 @@ export default function MissionCard(): React.JSX.Element | null {
             <MissionResult view={view} onRetry={() => setRetrying(true)} />
           ) : (
             <>
-              {mission.mode === 'write' ? (
-                <WriteAnswer value={answer} min={mission.minWords} max={mission.maxWords} onChange={setAnswer} />
-              ) : (
-                <SpeakAnswer value={answer} onChange={setAnswer} />
-              )}
+              {/* Siempre por escrito (una misión pensada para decir también se puede escribir). */}
+              <WriteAnswer value={answer} min={mission.minWords} max={mission.maxWords} onChange={setAnswer} />
               <div>
                 <button
                   className="btn"
@@ -140,63 +133,6 @@ function WriteAnswer({ value, min, max, onChange }: { value: string; min: number
         {words} palabras · entre {min} y {max}
       </p>
     </>
-  )
-}
-
-function SpeakAnswer({ value, onChange }: { value: string; onChange: (v: string) => void }): React.JSX.Element {
-  const course = useCourse()
-  const asr = useTranscriber(course.id)
-  const percent = asr.progress && asr.progress.total > 0 ? Math.round((asr.progress.loaded / asr.progress.total) * 100) : 0
-
-  if (asr.state === 'idle' || asr.state === 'loading') {
-    return (
-      <div className="stack-sm">
-        <p className="muted small">Para escucharte, un reconocimiento de voz corre en tu computadora (lo que grabás no sale de acá).</p>
-        {asr.state === 'loading' ? (
-          <span className="muted small">{percent > 0 && percent < 100 ? `Descargando el modelo: ${percent} %` : 'Preparando…'}</span>
-        ) : (
-          <div>
-            <button type="button" className="btn secondary" onClick={asr.load}>
-              <Icon name="mic" className="glyph" /> Preparar el micrófono
-            </button>
-          </div>
-        )}
-      </div>
-    )
-  }
-
-  return (
-    <div className="stack-sm">
-      <div className="row">
-        {asr.state === 'recording' ? (
-          <button type="button" className="btn recording" onClick={asr.stop}>
-            <Icon name="stop" className="glyph" /> Listo
-          </button>
-        ) : (
-          <button
-            type="button"
-            className="btn secondary"
-            disabled={asr.state === 'transcribing'}
-            onClick={() =>
-              asr
-                .record(MISSION_RECORDING_MS)
-                .then(onChange)
-                .catch(() => undefined)
-            }
-          >
-            <Icon name="mic" className="glyph" /> {value ? 'Grabar de nuevo' : 'Grabar'}
-          </button>
-        )}
-      </div>
-      {asr.state === 'recording' && <p className="muted small">Grabando… hablá tranquilo y tocá «Listo» (corta solo al minuto).</p>}
-      {asr.state === 'transcribing' && <p className="muted small">Pasando lo que dijiste a texto…</p>}
-      {value && (
-        <p className="small">
-          Se entendió: <span className="en">«{value}»</span>
-        </p>
-      )}
-      {asr.error && <p className="error small">{asr.error}</p>}
-    </div>
   )
 }
 

@@ -37,7 +37,8 @@ export const BANK_TARGET: Record<BankType, number> = {
   transformation: 5,
   dictation: 4,
   minimal_pair: 3,
-  shadowing: 3,
+  // Ya no se usan (no hay ejercicios para decir en voz alta).
+  shadowing: 0,
   listening: 2,
   reorder_text: 2
 }
@@ -59,7 +60,7 @@ export function bankWants(subtopic: Pick<Subtopic, 'focus'>, level: CefrLevel): 
     if (range && (rank < CEFR_LEVELS.indexOf(range[0]) || rank > CEFR_LEVELS.indexOf(range[1]))) return false
     return !READING_TYPES.includes(type) || subtopic.focus.includes('reading')
   }
-  return Object.fromEntries(BANK_TYPES.filter(fits).map((type) => [type, BANK_TARGET[type]]))
+  return Object.fromEntries(BANK_TYPES.filter((type) => BANK_TARGET[type] > 0 && fits(type)).map((type) => [type, BANK_TARGET[type]]))
 }
 
 // Los pedidos en que se escribe un banco, para que ninguno quede demasiado largo: los de gramática,

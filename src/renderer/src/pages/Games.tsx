@@ -3,7 +3,6 @@ import { GAME_IDS, GAMES, GAMES_WITH_XP_PER_DAY, type GameDeck, type GameId } fr
 import GameEnd from '../components/games/GameEnd'
 import { Countdown, Listen, TrueFalse, type GameProps } from '../components/games/QuizGames'
 import { Dictation, Hangman, Memory, Scramble } from '../components/games/WordGames'
-import { Pronunciation } from '../components/games/Pronunciation'
 import Icon from '../components/Icon'
 import { INSTALL_VOICE_HELP } from '../components/summaries/SpeechControls'
 import { useCourse } from '../hooks/useCourse'
@@ -17,8 +16,7 @@ const COMPONENTS: Record<GameId, (props: GameProps) => React.JSX.Element> = {
   memotest: Memory,
   ahorcado: Hangman,
   verdadero: TrueFalse,
-  dictado: Dictation,
-  pronunciacion: Pronunciation
+  dictado: Dictation
 }
 
 // Lo mínimo que necesita cada juego para armarse con lo visto.

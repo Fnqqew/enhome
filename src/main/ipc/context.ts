@@ -170,7 +170,8 @@ export function createContext(options: IpcOptions): IpcContext {
       practice.warmUp(today())
       const week = progression.getState(today()).week
       const topic = week ? curriculum.find((t) => t.id === week.topicId) : undefined
-      if (topic) for (const subtopic of topic.subtopics) bank.topUp({ topic, subtopic, kind: 'lesson' }, today())
+      const difficulty = practice.difficultyState().difficulty
+      if (topic) for (const subtopic of topic.subtopics) bank.topUp({ topic, subtopic, kind: 'lesson', difficulty }, today())
     } catch (err) {
       console.error('[practice] No se pudo preparar la práctica al abrir', err)
     }

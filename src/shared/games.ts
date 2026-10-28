@@ -3,7 +3,7 @@
 
 import type { Glyph } from './icons'
 
-export const GAME_IDS = ['contrarreloj', 'escucha', 'desordenadas', 'memotest', 'ahorcado', 'verdadero', 'dictado', 'pronunciacion'] as const
+export const GAME_IDS = ['contrarreloj', 'escucha', 'desordenadas', 'memotest', 'ahorcado', 'verdadero', 'dictado'] as const
 export type GameId = (typeof GAME_IDS)[number]
 
 export interface GameInfo {
@@ -64,13 +64,6 @@ export const GAMES: Record<GameId, GameInfo> = {
     description: 'Escuchá la frase y escribila tal cual. Entrena el oído y la ortografía.',
     icon: 'chat',
     needsVoice: true,
-    pointsPerXp: 7
-  },
-  pronunciacion: {
-    title: 'Pronunciación',
-    description: 'Decí la frase en voz alta y un reconocimiento de voz que corre en tu computadora te dice qué entendió. Experimental.',
-    icon: 'mic',
-    needsVoice: false,
     pointsPerXp: 7
   }
 }

@@ -1,6 +1,5 @@
-import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { loadCurriculum } from '../../src/main/content/curriculum'
+import { englishCore } from '../helpers/courses'
 import { openDatabase, type Db } from '../../src/main/db/database'
 import { Progression } from '../../src/main/engine/progression'
 import type { OpenAnswerGrader } from '../../src/main/practice/ai-grading'
@@ -14,7 +13,7 @@ import { recordMistake } from '../../src/main/review/notebook'
 import { Vocabulary } from '../../src/main/vocab/vocab'
 import { generatedSample, rightAnswer, sample } from '../helpers/exercises'
 
-const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
+const curriculum = englishCore()
 
 // 14/9/2026 es lunes.
 const MON = '2026-09-14'
@@ -340,20 +339,23 @@ describe('práctica que empieza con los ejercicios cortos', () => {
 })
 
 describe('dificultad que se adapta', () => {
-  it('después de acertar todo, la práctica siguiente se pide más exigente', async () => {
+  it('arranca guiada y sube un escalón después de dos prácticas casi perfectas', async () => {
     const asked: (string | undefined)[] = []
     const recording: PoolGenerator = async (request) => {
       asked.push(request.difficulty)
       return generator(request)
     }
     practice = new Practice(db, curriculum, progression, recording, grader)
-    const first = session(await practice.start(day(0)))
-    await answerAllRight(first)
-    practice.finish(first.id, day(0))
-
-    await practice.start(day(1))
-    expect(asked[0]).toBe('normal')
-    expect(asked.at(-1)).toBe('harder')
+    for (const offset of [0, 1]) {
+      const s = session(await practice.start(day(offset)))
+      await answerAllRight(s, day(offset))
+      practice.finish(s.id, day(offset))
+    }
+    await practice.start(day(2))
+    expect(asked[0]).toBe('guided')
+    expect(asked.at(-1)).toBe('normal')
+    const view = practice.getView(day(2))
+    if (view.status === 'session') expect(practice.difficultyState().difficulty).toBe('normal')
   })
 })
 
@@ -426,7 +428,7 @@ describe('segundo intento y repetición al final', () => {
 })
 
 describe('práctica que empieza antes de que llegue lo de escuchar', () => {
-  it('lo de escuchar y hablar que llega tarde entra en lugar de un corto repetido, sin alargar la práctica', async () => {
+  it('lo de escuchar que llega tarde entra en lugar de un corto, sin alargar la práctica', async () => {
     const LATE: ExerciseType[] = ['dictation', 'listening', 'minimal_pair', 'shadowing']
     let release!: () => void
     const later = new Promise<void>((resolve) => (release = resolve))
@@ -448,7 +450,7 @@ describe('práctica que empieza antes de que llegue lo de escuchar', () => {
     const after = session(practice.getView(MON))
     const types = after.exercises.map((e) => e.type)
     expect(after.exercises).toHaveLength(s.exercises.length)
-    expect(types).toContain('shadowing')
+    expect(types).not.toContain('shadowing')
     expect(types.some((t) => ['dictation', 'listening', 'minimal_pair'].includes(t))).toBe(true)
     // El primero sigue en su lugar: es el que el alumno tiene a la vista.
     expect(after.exercises[0].id).toBe(s.exercises[0].id)
@@ -474,7 +476,8 @@ describe('el recorrido del día', () => {
     await practice.settled()
     for (const e of session(practice.getView(MON)).exercises.filter((x) => x.repeat)) await practice.answer(e.id, rightAnswer(stored(e.id)))
     const result = practice.finish(s.id, MON)
-    expect(result).toMatchObject({ subtopicTitle: 'Pronombres personales', newMistakes: 1, dueTomorrow: 1 })
+    // Mañana vuelven el error y las frases hechas que se sumaron al terminar.
+    expect(result).toMatchObject({ subtopicTitle: 'Pronombres personales', newMistakes: 1, dueTomorrow: 1 + result.newPhrases })
   })
 })
 

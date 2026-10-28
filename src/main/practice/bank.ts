@@ -2,6 +2,7 @@
 // y solo los largos se le piden a Claude, de a uno y en paralelo. Cuando a un subtema le quedan pocos
 // ejercicios sin usar, se generan más en segundo plano.
 
+import type { Difficulty } from '../../shared/difficulty'
 import { BANK_LOW_WATER, bankWants, isBankType, splitBankCounts } from '../../shared/bank'
 import type { CurriculumTopic } from '../../shared/curriculum'
 import { mainText, prepareExercise } from '../../shared/exercise-types'
@@ -28,12 +29,12 @@ export class ExerciseBank {
   ) {}
 
   // Todo lo que hay para un subtema: lo del temario más lo que generó la app.
-  all(topic: CurriculumTopic, subtopicId: string): GeneratedExercise[] {
-    const shipped = this.banks.forTopic(topic).subtopics.get(subtopicId) ?? []
+  all(topic: CurriculumTopic, subtopicId: string, difficulty: Difficulty = 'normal'): GeneratedExercise[] {
+    const shipped = this.banks.forTopic(topic, difficulty).subtopics.get(subtopicId) ?? []
     const extra = (
       this.db
-        .prepare('SELECT payload FROM bank_exercises WHERE topic_id = ? AND subtopic_id = ? ORDER BY id')
-        .all(topic.id, subtopicId) as unknown as {
+        .prepare('SELECT payload FROM bank_exercises WHERE topic_id = ? AND subtopic_id = ? AND difficulty = ? ORDER BY id')
+        .all(topic.id, subtopicId, difficulty) as unknown as {
         payload: string
       }[]
     ).map((r) => JSON.parse(r.payload) as GeneratedExercise)
@@ -48,9 +49,9 @@ export class ExerciseBank {
     return new Set(rows.map((r) => key(JSON.parse(r.payload) as StoredExercise)))
   }
 
-  unused(topic: CurriculumTopic, subtopicId: string): number {
+  unused(topic: CurriculumTopic, subtopicId: string, difficulty: Difficulty = 'normal'): number {
     const seen = this.seen(topic.id, subtopicId)
-    return this.all(topic, subtopicId).filter((e) => !seen.has(key(e))).length
+    return this.all(topic, subtopicId, difficulty).filter((e) => !seen.has(key(e))).length
   }
 
   // Elige del banco lo pedido: primero lo que no vio y, si no alcanza, repite lo más viejo (repasar
@@ -60,11 +61,12 @@ export class ExerciseBank {
     subtopicId: string,
     counts: Partial<Record<ExerciseType, number>>,
     avoid: string[],
-    random: () => number = Math.random
+    random: () => number = Math.random,
+    difficulty: Difficulty = 'normal'
   ): { taken: GeneratedExercise[]; missing: Partial<Record<ExerciseType, number>> } {
     const seen = this.seen(topic.id, subtopicId)
     const recent = new Set(avoid.map((a) => a.trim().toLowerCase()))
-    const pool = this.all(topic, subtopicId)
+    const pool = this.all(topic, subtopicId, difficulty)
     const taken: GeneratedExercise[] = []
     const missing: Partial<Record<ExerciseType, number>> = {}
     for (const [type, count] of Object.entries(counts) as [ExerciseType, number][]) {
@@ -94,21 +96,24 @@ export class ExerciseBank {
     return null
   }
 
-  add(topicId: string, subtopicId: string, exercises: GeneratedExercise[], today: string): void {
-    const insert = this.db.prepare('INSERT INTO bank_exercises (topic_id, subtopic_id, type, payload, created_on) VALUES (?, ?, ?, ?, ?)')
-    for (const e of exercises) insert.run(topicId, subtopicId, e.type, JSON.stringify(e), today)
+  add(topicId: string, subtopicId: string, exercises: GeneratedExercise[], today: string, difficulty: Difficulty = 'normal'): void {
+    const insert = this.db.prepare(
+      'INSERT INTO bank_exercises (topic_id, subtopic_id, type, payload, created_on, difficulty) VALUES (?, ?, ?, ?, ?, ?)'
+    )
+    for (const e of exercises) insert.run(topicId, subtopicId, e.type, JSON.stringify(e), today, difficulty)
   }
 
   // Si al subtema le quedan pocos ejercicios sin usar, pide más en segundo plano (generados y revisados).
   topUp(request: Omit<PoolRequest, 'counts' | 'avoid'>, today: string, ask?: Ask): Promise<void> | null {
     const { topic, subtopic } = request
-    const id = `${topic.id}/${subtopic.id}`
-    if (this.filling.has(id) || this.unused(topic, subtopic.id) >= BANK_LOW_WATER) return null
+    const difficulty = request.difficulty ?? 'normal'
+    const id = `${topic.id}/${subtopic.id}:${difficulty}`
+    if (this.filling.has(id) || this.unused(topic, subtopic.id, difficulty) >= BANK_LOW_WATER) return null
     this.filling.add(id)
     const seen = [...this.seen(topic.id, subtopic.id)].slice(-40)
     const parts = splitBankCounts(bankWants(subtopic, topic.level)).map((counts) =>
       generateBankSet({ ...request, counts, avoid: seen, ticket: { priority: 'background' } }, counts, ask)
-        .then((exercises) => this.add(topic.id, subtopic.id, exercises, today))
+        .then((exercises) => this.add(topic.id, subtopic.id, exercises, today, difficulty))
         .catch((err) => console.error(`[banco] No se pudo sumar ejercicios a ${id}`, err))
     )
     return Promise.all(parts)
@@ -127,7 +132,8 @@ export function bankedGenerator(bank: ExerciseBank, ask?: Ask): PoolGenerator {
     const shortCounts = Object.fromEntries(entries.filter(([type]) => !isLongType(type)))
     const longTypes = entries.filter(([type]) => isLongType(type)).flatMap(([type, count]) => Array.from({ length: count }, () => type))
 
-    const { taken, missing } = bank.take(request.topic, request.subtopic.id, shortCounts, request.avoid)
+    // Del banco del escalón del alumno (si no tiene, Claude escribe lo que falta).
+    const { taken, missing } = bank.take(request.topic, request.subtopic.id, shortCounts, request.avoid, Math.random, request.difficulty ?? 'normal')
     const fromBank = taken.flatMap((e) => {
       try {
         return [prepareExercise(e)]
@@ -138,7 +144,24 @@ export function bankedGenerator(bank: ExerciseBank, ask?: Ask): PoolGenerator {
     if (fromBank.length > 0) request.onGroup?.(fromBank)
 
     // Lo que el banco no tenía (por ejemplo, un tópico sin banco todavía) se pide en una sola pasada.
-    const missingShort = Object.keys(missing).length > 0 ? generateShortOnce(request, missing, ask) : Promise.resolve([])
+    const difficulty = request.difficulty ?? 'normal'
+    const missingShort =
+      Object.keys(missing).length > 0
+        ? generateShortOnce(request, missing, ask).catch((err: unknown) => {
+            // Sin Claude, lo que falta de otro escalón sale del banco normal: mejor una práctica un poco más
+            // difícil (o más fácil) que ninguna.
+            if (difficulty === 'normal') throw err
+            const fallback = bank.take(request.topic, request.subtopic.id, missing, request.avoid).taken.flatMap((e) => {
+              try {
+                return [prepareExercise(e)]
+              } catch {
+                return []
+              }
+            })
+            if (fallback.length === 0) throw err
+            return fallback
+          })
+        : Promise.resolve([])
     const longs = longTypes.map((type) =>
       generateLongOnce(request, type, ask).then((exercise) => {
         request.onGroup?.([exercise])

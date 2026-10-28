@@ -2,6 +2,7 @@
 // como textos del idioma escritos con signos del español o ejemplos sin traducir, y un resumen
 // de cuánto contenido hay en cada nivel.
 
+import { DIFFICULTIES } from '../../shared/difficulty'
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { CEFR_LEVELS, type CurriculumTopic } from '../../shared/curriculum'
@@ -80,9 +81,13 @@ export function auditContent(contentDir: string, language: LanguageId): AuditRep
   // Bancos de práctica: lo que no pasa el formato o los controles es un error del contenido.
   const bankSizes = new Map<string, number>()
   for (const topic of curriculum) {
-    const bank = readBank(bankPath(contentDir, language, topic), topic)
-    errors.push(...bank.problems)
-    bankSizes.set(topic.id, [...bank.subtopics.values()].reduce((sum, list) => sum + list.length, 0))
+    let size = 0
+    for (const difficulty of DIFFICULTIES) {
+      const bank = readBank(bankPath(contentDir, language, topic, difficulty), topic)
+      errors.push(...bank.problems)
+      size += [...bank.subtopics.values()].reduce((sum, list) => sum + list.length, 0)
+    }
+    bankSizes.set(topic.id, size)
   }
 
   let placement = new Map<string, unknown[]>()

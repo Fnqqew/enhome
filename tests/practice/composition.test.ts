@@ -5,7 +5,7 @@ import { composeSession, lateSwaps, longSlots, MIN_POOL_SIZE, planPool, SESSION_
 const total = (plan: Partial<Record<ExerciseType, number>>): number => Object.values(plan).reduce((s, n) => s + (n ?? 0), 0)
 
 describe('planPool', () => {
-  it('día de gramática: gramática, una traducción, los tres largos, y algo para escuchar y para decir', () => {
+  it('día de gramática: gramática, una traducción, los tres largos y algo para escuchar', () => {
     expect(planPool(['grammar'])).toEqual({
       multiple_choice: 2,
       fill_blank: 2,
@@ -17,8 +17,7 @@ describe('planPool', () => {
       roleplay: 1,
       dictation: 1,
       listening: 1,
-      minimal_pair: 1,
-      shadowing: 1
+      minimal_pair: 1
     })
   })
 
@@ -76,9 +75,8 @@ describe('composeSession', () => {
       composeSession(items, ['grammar'], {}, () => 0)
     )
     expect(types).toHaveLength(SESSION_SIZE)
-    // La tanda, una situación, una escucha, una para decir en voz alta y cuatro cortos distintos.
-    expect(new Set(types).size).toBe(8)
-    expect(types).toContain('shadowing')
+    // La tanda, una situación, una escucha y los cortos; nada para decir en voz alta.
+    expect(types).not.toContain('shadowing')
     expect(types.some((t) => ['dictation', 'listening', 'minimal_pair'].includes(t))).toBe(true)
   })
 
@@ -202,10 +200,8 @@ describe('lo de escuchar y hablar que llega tarde', () => {
       ],
       8
     )
-    expect(swaps).toEqual([
-      [4, 20],
-      [2, 21]
-    ])
+    // Solo lo de escuchar: lo de decir en voz alta ya no entra.
+    expect(swaps).toEqual([[4, 20]])
   })
 
   it('no cambia nada si ya hay escucha, si no queda otro corto sin responder o si la práctica es corta', () => {
@@ -218,5 +214,15 @@ describe('lo de escuchar y hablar que llega tarde', () => {
   it('sin repetidos, sale el último corto sin responder', () => {
     const current = slotted(['multiple_choice', 'fill_blank', 'word_order', 'translation', 'translation_set', 'dialogue'])
     expect(lateSwaps(current, [{ id: 20, type: 'listening' }], 8)).toEqual([[4, 20]])
+  })
+})
+
+describe('escalones de dificultad', () => {
+  it('el guiado arma una práctica más fácil: más opción múltiple, sin transformar', () => {
+    const guided = planPool(['grammar'], {}, undefined, 'B1', 'guided')
+    const normal = planPool(['grammar'], {}, undefined, 'B1', 'normal')
+    expect(guided.multiple_choice).toBeGreaterThan(normal.multiple_choice!)
+    expect(guided.transformation).toBeUndefined()
+    expect(normal.transformation).toBe(2)
   })
 })

@@ -1,12 +1,11 @@
-import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { loadCurriculum } from '../../src/main/content/curriculum'
+import { englishCore } from '../helpers/courses'
 import { openDatabase, type Db } from '../../src/main/db/database'
 import { simulatedExam } from '../../src/main/engine/dev'
 import { Progression } from '../../src/main/engine/progression'
 import { addDays } from '../../src/shared/dates'
 
-const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
+const curriculum = englishCore()
 const topic = (id: string) => curriculum.find((t) => t.id === id)!
 
 // 14/9/2026 es lunes.

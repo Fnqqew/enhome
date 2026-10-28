@@ -1,6 +1,5 @@
-import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { loadCurriculum } from '../../src/main/content/curriculum'
+import { englishCore } from '../helpers/courses'
 import { openDatabase, type Db } from '../../src/main/db/database'
 import { Progression } from '../../src/main/engine/progression'
 import { Exams } from '../../src/main/exams/exams'
@@ -11,7 +10,7 @@ import { EXAM_INTERRUPTED_MESSAGE, type ExamQuestion, type ExamSessionView } fro
 import type { ExerciseAnswer } from '../../src/shared/exercises'
 import { rightAnswer, sample } from '../helpers/exercises'
 
-const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
+const curriculum = englishCore()
 
 // 14/9/2026 es lunes.
 const MON = '2026-09-14'

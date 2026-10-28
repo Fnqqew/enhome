@@ -35,7 +35,8 @@ import {
 } from './composition'
 import { mainText, toPublicExercise } from './exercises'
 import { canRetry, prepareExercise, retryNote } from '../../shared/exercise-types'
-import type { Difficulty, PoolGenerator } from './generation'
+import type { PoolGenerator } from './generation'
+import { difficultyFrom, type Difficulty, type DifficultyState } from '../../shared/difficulty'
 import { gradeAuto } from './grading'
 import { quantity, usedHints } from '../rewards/inventory'
 import { recordMistake } from '../review/notebook'
@@ -148,7 +149,10 @@ export class Practice {
     if ('reason' in target) return { status: 'unavailable', reason: target.reason }
 
     const session = this.repairSession(this.findSession(target), target)
-    if (session) this.resumeGrading(session)
+    if (session) {
+      this.dropSpeaking(session)
+      this.resumeGrading(session)
+    }
     if (session && this.hasSlots(session.id)) {
       // Una sesión que arrancó con los cortos y quedó sin los largos (por ejemplo, se cerró la app) los vuelve a pedir.
       if (this.waitingLong(session) && !this.generating.has(session.id) && !this.failures.has(session.id)) this.launch(session, 'now')
@@ -171,7 +175,8 @@ export class Practice {
       examples: subtopic.examples,
       commonMistakes: subtopic.commonMistakes,
       chunks: subtopic.chunks ?? [],
-      warmUp: countCards(this.db, ['mistake'], 'due_on <= ?', today)
+      warmUp: countCards(this.db, ['mistake'], 'due_on <= ?', today),
+      difficulty: this.difficultyState()
     }
   }
 
@@ -322,6 +327,17 @@ export class Practice {
       )
   }
 
+  // Los ejercicios para decir en voz alta se sacaron (el reconocimiento de voz no entendía bien al
+  // alumno): los que quedaron sin responder en una práctica ya empezada salen de ella.
+  private dropSpeaking(session: SessionRow): void {
+    if (session.completed_on) return
+    this.db
+      .prepare(
+        "UPDATE exercises SET slot = NULL, skipped = 1 WHERE session_id = ? AND type = 'shadowing' AND slot IS NOT NULL AND id NOT IN (SELECT exercise_id FROM exercise_attempts)"
+      )
+      .run(session.id)
+  }
+
   // Si se cerró la app con correcciones pendientes, se vuelven a pedir al abrir la práctica.
   private resumeGrading(session: SessionRow): void {
     if (session.completed_on) return
@@ -456,18 +472,30 @@ export class Practice {
 
   // Cómo le fue en las prácticas anteriores del mismo tópico (las últimas 16 respuestas): con casi
   // todo bien se sube la exigencia; con la mitad o menos, ejercicios más guiados.
-  private difficulty(session: SessionRow): Difficulty {
+  // El escalón de dificultad del alumno en este idioma, con todas sus prácticas terminadas (sin las
+  // repeticiones del final): se arranca guiado y se sube con dos prácticas seguidas de 80 % o más.
+  difficultyState(exceptSession: number | null = null): DifficultyState {
     const rows = this.db
       .prepare(
-        `SELECT a.correct FROM exercise_attempts a
-           JOIN exercises e ON e.id = a.exercise_id
-          WHERE e.topic_id = ? AND e.session_id <> ?
-          ORDER BY a.id DESC LIMIT 16`
+        `SELECT s.id AS session, a.correct FROM practice_sessions s
+           JOIN exercises e ON e.session_id = s.id
+           JOIN exercise_attempts a ON a.exercise_id = e.id
+          WHERE s.completed_on IS NOT NULL AND s.id <> ? AND e.repeat_of IS NULL AND e.slot IS NOT NULL
+          ORDER BY s.completed_on, s.id`
       )
-      .all(session.topic_id, session.id) as unknown as { correct: number | null }[]
-    if (rows.length < 6) return 'normal'
-    const ratio = rows.filter((r) => r.correct === 1).length / rows.length
-    return ratio >= 0.9 ? 'harder' : ratio <= 0.5 ? 'guided' : 'normal'
+      .all(exceptSession ?? -1) as unknown as { session: number; correct: number | null }[]
+    const bySession = new Map<number, { right: number; total: number }>()
+    for (const row of rows) {
+      const tally = bySession.get(row.session) ?? { right: 0, total: 0 }
+      tally.total++
+      if (row.correct === 1) tally.right++
+      bySession.set(row.session, tally)
+    }
+    return difficultyFrom([...bySession.values()].filter((t) => t.total > 0).map((t) => t.right / t.total))
+  }
+
+  private difficulty(session: SessionRow): Difficulty {
+    return this.difficultyState(session.id).difficulty
   }
 
   // Qué partes de los ejercicios ya están guardadas: la tanda corta y la larga llegan por separado.
@@ -504,7 +532,7 @@ export class Practice {
     const options = this.options()
     const difficulty = this.difficulty(session)
     const counts = Object.fromEntries(
-      Object.entries(planPool(subtopic.focus, this.preferences(), options, topic.level)).filter(([type]) => {
+      Object.entries(planPool(subtopic.focus, this.preferences(), options, topic.level, difficulty)).filter(([type]) => {
         const long = isLongType(type as ExerciseType)
         return state.short ? long : state.long ? !long : true
       })

@@ -38,14 +38,15 @@ export interface PoolRequest {
   ticket?: Ticket
 }
 
-export type Difficulty = 'guided' | 'normal' | 'harder'
+export type { Difficulty } from '../../shared/difficulty'
+import type { Difficulty } from '../../shared/difficulty'
 
 const DIFFICULTY_GUIDE: Record<Difficulty, string> = {
   guided:
-    'Al alumno le está costando este tópico: hacé ejercicios más guiados, con oraciones cortas, contexto claro y pistas en la consigna. Que sigan exigiendo lo del subtema, pero de a un paso por vez.',
+    'El alumno está en el escalón guiado (recién empieza o le está costando): hacé ejercicios fáciles y muy guiados. Oraciones cortas (de 4 a 8 palabras) con vocabulario muy frecuente, una sola cosa nueva por ejercicio y contexto claro. En opción múltiple, distractores claramente distintos; en completar, la pista con el infinitivo o la forma base; en traducir, oraciones cortas y literales; en ordenar, pocas palabras. Las consignas explican paso a paso qué hacer. Que igual practique lo del subtema, de a un paso por vez.',
   normal: '',
   harder:
-    'El alumno viene acertando casi todo en este tópico: subí la exigencia con oraciones más largas, vocabulario menos frecuente del nivel, distractores más finos y situaciones que combinen lo de este subtema con lo de los días anteriores.'
+    'El alumno está en el escalón exigente (viene acertando casi todo): subí la exigencia con oraciones más largas, vocabulario menos frecuente del nivel, distractores más finos y situaciones que combinen lo de este subtema con lo de los días anteriores.'
 }
 
 export type PoolGenerator = (request: PoolRequest) => Promise<StoredExercise[]>

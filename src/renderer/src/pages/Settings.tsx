@@ -7,7 +7,7 @@ import { ClaudeConnection, ClaudeModeSettings } from '../components/settings/cla
 import { DataSettings } from '../components/settings/data'
 import { NotificationSettings } from '../components/settings/notifications'
 import { CourseSettings, GoalSettings, PracticeSettings } from '../components/settings/study'
-import { NeuralVoiceSettings, SpeechModelSettings, VoiceSettings } from '../components/settings/voice'
+import { NeuralVoiceSettings, VoiceSettings } from '../components/settings/voice'
 
 const TABS = [
   { id: 'apariencia', label: 'Apariencia' },
@@ -52,7 +52,6 @@ export default function Settings({ status }: { status: Extract<ClaudeStatus, { s
           <>
             <NeuralVoiceSettings />
             <VoiceSettings />
-            <SpeechModelSettings />
           </>
         )}
         {tab === 'avisos' && <NotificationSettings />}

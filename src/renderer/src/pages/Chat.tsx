@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { useTranscriber } from '../speech/useTranscriber'
 import { MAX_CHAT_MESSAGE, type ChatMessage, type ChatSuggestion, type ChatSummary, type ChatView } from '@shared/chat'
 import { formatDayMonth } from '@shared/dates'
 import ClaudeWait from '../components/ClaudeWait'
@@ -43,7 +42,7 @@ export default function Chat(): React.JSX.Element {
         chat={chat}
         busy={busy}
         error={error}
-        onSend={(text, spoken) => run(() => window.api.sendChat(chat.id, text, spoken))}
+        onSend={(text) => run(() => window.api.sendChat(chat.id, text))}
         onBack={() => {
           setChat(null)
           load()
@@ -127,9 +126,6 @@ export default function Chat(): React.JSX.Element {
   )
 }
 
-// Lo más que se graba en un turno hablado.
-const VOICE_TURN_MS = 30_000
-
 function Conversation({
   chat,
   busy,
@@ -140,37 +136,13 @@ function Conversation({
   chat: ChatView
   busy: boolean
   error: string | null
-  onSend: (text: string, spoken?: boolean) => void
+  onSend: (text: string) => void
   onBack: () => void
 }): React.JSX.Element {
   const speech = useSpeech()
-  const course = useCourse()
-  const asr = useTranscriber(course.id)
   const [text, setText] = useState('')
   const listRef = useRef<HTMLDivElement>(null)
   const pending = useRef('')
-  // Modo voz: hablás (se transcribe en la compu) y la respuesta de Claude se escucha sola.
-  const [voice, setVoice] = useState(false)
-  const lastSpoken = useRef(chat.messages.at(-1)?.id ?? 0)
-  useEffect(() => {
-    const last = chat.messages.at(-1)
-    if (!last || last.id === lastSpoken.current) return
-    lastSpoken.current = last.id
-    if (voice && last.role === 'assistant') speech.speakAs(last.text, undefined, false, 'other')
-  }, [chat.messages, voice, speech])
-
-  const talk = (): void => {
-    if (asr.state === 'recording') return asr.stop()
-    asr
-      .record(VOICE_TURN_MS)
-      .then((heard) => {
-        const value = heard.trim()
-        if (!value || busy) return
-        pending.current = value
-        onSend(value, true)
-      })
-      .catch(() => undefined)
-  }
 
   // Cada mensaje nuevo baja al final; al terminar, se limpia lo que se mandó.
   useEffect(() => {
@@ -192,22 +164,9 @@ function Conversation({
     <>
       <div className="row spread">
         <h1>{chat.title}</h1>
-        <div className="row">
-          <button
-            type="button"
-            className="chip"
-            aria-pressed={voice}
-            onClick={() => {
-              setVoice(!voice)
-              if (!voice && asr.state === 'idle') asr.load()
-            }}
-          >
-            <Icon name="mic" className="glyph" /> Modo voz
-          </button>
-          <button className="btn secondary" onClick={onBack}>
-            Volver
-          </button>
-        </div>
+        <button className="btn secondary" onClick={onBack}>
+          Volver
+        </button>
       </div>
       <section className="card stack chat-card">
         <p className="muted small">{chat.scenario}</p>
@@ -250,30 +209,7 @@ function Conversation({
           <button className="btn" type="submit" disabled={busy || !text.trim()}>
             Mandar
           </button>
-          {voice && (
-            <button
-              type="button"
-              className={`btn${asr.state === 'recording' ? ' recording' : ' secondary'}`}
-              disabled={busy || asr.state === 'loading' || asr.state === 'transcribing'}
-              onClick={talk}
-            >
-              <Icon name={asr.state === 'recording' ? 'stop' : 'mic'} className="glyph" />{' '}
-              {asr.state === 'recording'
-                ? 'Listo'
-                : asr.state === 'loading'
-                  ? 'Preparando…'
-                  : asr.state === 'transcribing'
-                    ? 'Escuchando…'
-                    : 'Hablar'}
-            </button>
-          )}
         </form>
-        {voice && (
-          <p className="muted small">
-            Tocá «Hablar», decí tu respuesta y tocá «Listo»: se manda sola y Claude te contesta en voz alta. Lo que grabás no sale de tu compu.
-          </p>
-        )}
-        {voice && asr.error && <p className="error small">{asr.error}</p>}
       </section>
     </>
   )

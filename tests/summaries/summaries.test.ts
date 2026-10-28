@@ -1,12 +1,11 @@
-import { join } from 'node:path'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { loadCurriculum } from '../../src/main/content/curriculum'
+import { englishCore } from '../helpers/courses'
 import { openDatabase, type Db } from '../../src/main/db/database'
 import { loadSettings } from '../../src/main/db/settings-repo'
 import { Progression } from '../../src/main/engine/progression'
 import { Summaries, type SummaryGenerator, type TextAsker } from '../../src/main/summaries/summaries'
 
-const curriculum = loadCurriculum(join(__dirname, '..', '..', 'content'))
+const curriculum = englishCore()
 const TODAY = '2026-09-14'
 
 let db: Db

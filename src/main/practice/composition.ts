@@ -1,6 +1,7 @@
 // Qué ejercicios se piden para cada práctica y cuáles entran en la sesión.
 
 import type { Skill } from '../../shared/curriculum'
+import type { Difficulty } from '../../shared/difficulty'
 import { EXERCISE_TYPES, LONG_TYPES, type ExerciseType } from '../../shared/exercises'
 
 export const SESSION_SIZE = 8
@@ -35,9 +36,9 @@ const FLEXIBLE_TYPES: ExerciseType[] = [
 ]
 // Siempre entra uno de estos: es la parte en la que el alumno se mete en una situación real.
 const IMMERSIVE_TYPES: ExerciseType[] = ['dialogue', 'roleplay']
-// Escuchar y hablar todos los días (en las prácticas de 8 o más ejercicios).
+// Escuchar todos los días (en las prácticas de 8 o más ejercicios). Los ejercicios para decir en voz
+// alta se sacaron: el reconocimiento de voz no entendía bien al alumno.
 const LISTENING_TYPES: ExerciseType[] = ['dictation', 'listening', 'minimal_pair']
-const SPEAKING_TYPES: ExerciseType[] = ['shadowing']
 // Desde cuántos ejercicios la práctica suma una escucha y algo para decir en voz alta.
 const FULL_SESSION = 8
 
@@ -77,17 +78,21 @@ export function planPool(
   focus: Skill[],
   preferences: TypePreferences = {},
   options: SessionOptions = DEFAULT_SESSION_OPTIONS,
-  level = 'A1'
+  level = 'A1',
+  difficulty: Difficulty = 'normal'
 ): Partial<Record<ExerciseType, number>> {
   const grammarDay = focus.includes('grammar')
   const writingDay = focus.includes('writing')
-  const rank = Math.max(0, RECALL_LEVELS.indexOf(level))
+  // Guiado: la práctica de A1 (más elegir, menos producir); exigente: como un nivel más.
+  const levelRank = Math.max(0, RECALL_LEVELS.indexOf(level))
+  const rank = difficulty === 'guided' ? 0 : difficulty === 'harder' ? Math.min(RECALL_LEVELS.length - 1, levelRank + 1) : levelRank
+  const guided = difficulty === 'guided'
   const full = options.size >= FULL_SESSION
   const plan: Record<ExerciseType, number> = {
-    multiple_choice: rank === 0 ? (grammarDay ? 2 : 1) : 1,
+    multiple_choice: guided ? (grammarDay ? 3 : 2) : rank === 0 ? (grammarDay ? 2 : 1) : 1,
     fill_blank: grammarDay ? 2 : 1,
     word_order: grammarDay && rank < 3 ? 2 : 1,
-    error_correction: grammarDay ? 2 : 1,
+    error_correction: grammarDay && !guided ? 2 : 1,
     translation: writingDay ? 2 : 1,
     translation_set: 1,
     dialogue: 1,
@@ -97,7 +102,7 @@ export function planPool(
     dictation: full ? 1 : 0,
     listening: full ? 1 : 0,
     minimal_pair: full && rank < 3 ? 1 : 0,
-    shadowing: full ? 1 : 0,
+    shadowing: 0,
     transformation: rank >= 1 ? (grammarDay ? 2 : 1) : 0,
     reorder_text: rank >= 1 && focus.includes('reading') ? 1 : 0
   }
@@ -200,11 +205,8 @@ export function composeSession(
   take('translation_set')
   // La conversación y la situación se alternan para que la práctica no se vuelva rutina.
   take(...(random() < 0.5 ? IMMERSIVE_TYPES : [...IMMERSIVE_TYPES].reverse()))
-  // Escuchar y hablar todos los días.
-  if (size >= FULL_SESSION) {
-    take(...[...LISTENING_TYPES].sort(() => random() - 0.5))
-    take(...SPEAKING_TYPES)
-  }
+  // Escuchar todos los días.
+  if (size >= FULL_SESSION) take(...[...LISTENING_TYPES].sort(() => random() - 0.5))
 
   while (chosen.length < size && available.length > 0) {
     const flexible = available.filter((item) => FLEXIBLE_TYPES.includes(item.type))
@@ -246,7 +248,7 @@ export function lateSwaps(slotted: Slotted[], arrived: PoolItem[], size: number)
   if (size < FULL_SESSION) return []
   const out = new Set<number>()
   const swaps: [number, number][] = []
-  for (const group of [LISTENING_TYPES, SPEAKING_TYPES]) {
+  for (const group of [LISTENING_TYPES]) {
     if (slotted.some((s) => group.includes(s.type))) continue
     const incoming = arrived.find((a) => group.includes(a.type))
     const leaves = leaving(slotted, out)

@@ -23,6 +23,7 @@ import {
   wordOrder,
   writing
 } from './exercise-types/registry'
+import type { DifficultyState } from './difficulty'
 import type { PublicOf, StoredOf } from './exercise-types/kind'
 
 export const EXERCISE_TYPES = [
@@ -216,6 +217,8 @@ export type PracticeView =
       chunks: { target: string; es: string; example: string; exampleEs: string }[]
       // Cuántos errores del cuaderno tocan hoy: con alguno, el día arranca con un calentamiento.
       warmUp: number
+      // El escalón de dificultad y cuántas prácticas seguidas de 80 % o más lleva en él.
+      difficulty: DifficultyState
     }
   | { status: 'session'; session: SessionView }
 

@@ -3,10 +3,10 @@ import { describe, expect, it } from 'vitest'
 import { loadCurriculum, loadRoadmap } from '../src/main/content/curriculum'
 import { buildCurriculumMap } from '../src/main/content/curriculum-map'
 import type { Roadmap } from '../src/shared/curriculum'
-import { COURSES } from './helpers/courses'
+import { COURSES, englishCore } from './helpers/courses'
 
 const CONTENT_DIR = join(__dirname, '..', 'content')
-const curriculum = loadCurriculum(CONTENT_DIR)
+const curriculum = englishCore()
 const roadmap = loadRoadmap(CONTENT_DIR)
 
 describe('roadmap', () => {

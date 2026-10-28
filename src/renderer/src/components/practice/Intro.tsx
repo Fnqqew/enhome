@@ -6,6 +6,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { prefetchSpeech, useSpeech } from '../../hooks/useSpeech'
 import { useSettings } from '../../theme/SettingsProvider'
 import { type PracticeView } from '@shared/exercises'
+import { DIFFICULTY_LABELS, STEP_UP_RATIO, STEP_UP_STREAK, type DifficultyState } from '@shared/difficulty'
 import { OptionList } from '../../exercise-types/common'
 import ClaudeWait from '../ClaudeWait'
 import Icon from '../Icon'
@@ -52,6 +53,7 @@ export default function Intro({
         </div>
         {view.kind !== 'lesson' && <span className="badge">{view.kind === 'focus' ? 'Refuerzo' : 'Repaso'}</span>}
       </div>
+      <DifficultyNote state={view.difficulty} />
       <SpeechControls getText={() => speechText} />
       <div ref={contentRef} className="stack lesson">
         <div>
@@ -138,6 +140,19 @@ export default function Intro({
       </div>
       <ClaudeWait active={starting} />
     </section>
+  )
+}
+
+// En qué escalón de dificultad está y qué falta para subir.
+function DifficultyNote({ state }: { state: DifficultyState }): React.JSX.Element {
+  const top = state.difficulty === 'harder'
+  return (
+    <p className="muted small">
+      Dificultad: <strong>{DIFFICULTY_LABELS[state.difficulty]}</strong>
+      {top
+        ? '. Es el escalón más alto.'
+        : ` · sube cuando aciertes el ${Math.round(STEP_UP_RATIO * 100)} % en ${STEP_UP_STREAK} prácticas seguidas (llevás ${state.streak} de ${STEP_UP_STREAK}).`}
+    </p>
   )
 }
 

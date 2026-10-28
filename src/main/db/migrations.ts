@@ -584,5 +584,13 @@ export const MIGRATIONS: Migration[] = [
         submitted_on TEXT
       );
     `
+  },
+  {
+    version: 20,
+    name: 'dificultad de los bancos',
+    sql: `
+      -- Los ejercicios que suma la app a los bancos son de un escalón de dificultad (guiado, normal o exigente).
+      ALTER TABLE bank_exercises ADD COLUMN difficulty TEXT NOT NULL DEFAULT 'normal';
+    `
   }
 ]

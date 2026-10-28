@@ -104,15 +104,33 @@ describe('banco de ejercicios', () => {
     expect(prompts).toHaveLength(2)
     expect(prompts.some((p) => p.includes('- translation:') && !p.includes('- dialogue:'))).toBe(true)
   })
+
+  it('en el escalón guiado pide a Claude los ejercicios guiados y, si Claude falla, usa el banco normal', async () => {
+    const { ask, prompts } = fakeClaude([new Error('sin Claude')])
+    const all = await bankedGenerator(
+      bank,
+      ask
+    )({
+      topic,
+      subtopic,
+      kind: 'lesson',
+      counts: { multiple_choice: 2 },
+      avoid: [],
+      difficulty: 'guided'
+    })
+    expect(prompts[0]).toContain('escalón guiado')
+    expect(all.map((e) => e.type)).toEqual(['multiple_choice', 'multiple_choice'])
+  })
 })
 
 describe('qué lleva el banco de cada subtema', () => {
-  it('en A1, sin transformar ni ordenar textos, pero con pares mínimos y para escuchar y repetir', () => {
+  it('en A1, sin transformar ni ordenar textos, pero con pares mínimos y para escuchar (nada para decir en voz alta)', () => {
     const wants = bankWants({ focus: ['grammar'] }, 'A1')
     expect(wants.transformation).toBeUndefined()
     expect(wants.reorder_text).toBeUndefined()
     expect(wants.reading).toBeUndefined()
-    expect(wants).toMatchObject({ dictation: 4, minimal_pair: 3, shadowing: 3, listening: 2 })
+    expect(wants).toMatchObject({ dictation: 4, minimal_pair: 3, listening: 2 })
+    expect(wants.shadowing).toBeUndefined()
   })
 
   it('desde A2 suma transformar, y en los días de lectura, ordenar el texto; los pares mínimos llegan hasta B1', () => {

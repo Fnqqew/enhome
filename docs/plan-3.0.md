@@ -63,7 +63,7 @@ La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a
 - [x] 24 Repaso con FSRS
 - [x] 25 Mezclar lo que se confunde
 - [x] 26 Escucha todos los días
-- [x] 27 Hablar todos los días
+- [x] 27 Hablar todos los días (sacado a pedido del usuario: el reconocimiento de voz no lo entendía bien)
 - [x] 28 Pares mínimos y sonidos difíciles
 - [x] 29 Frases hechas como bloques
 - [x] 30 La historia de la semana
