@@ -9,6 +9,18 @@ export interface Release {
 
 export const CHANGELOG: Release[] = [
   {
+    version: '3.4.0',
+    date: '2026-10-28',
+    title: 'Dificultad que arranca guiada, sin ejercicios de voz y el portugués completo',
+    items: [
+      'Se arranca con ejercicios fáciles y guiados, y la dificultad sube de a un escalón cuando acertás el 80 % en dos prácticas seguidas.',
+      'La microlección muestra en qué escalón estás y cuánto falta para subir.',
+      'Se sacaron los ejercicios que usaban el micrófono; los de escuchar siguen.',
+      'Portugués completo: 62 tópicos de A1 a C2, examen inicial hasta C1 y palabras del día con el vocabulario núcleo.',
+      'Inglés: de 25 a 60 tópicos.'
+    ]
+  },
+  {
     version: '3.3.0',
     date: '2026-10-27',
     title: 'Portugués hasta C2 y la sección de pronunciación',

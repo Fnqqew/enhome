@@ -2,6 +2,30 @@
 
 Todas las versiones de Enhome. Los instaladores están en las [versiones publicadas](https://github.com/Fnqqew/enhome/releases) del repositorio.
 
+## 3.4.0 · 2026-10-28
+
+Una curva de dificultad que arranca guiada, sin ejercicios de voz, y el portugués completo.
+
+### Dificultad
+
+- **Se arranca en el escalón guiado:** ejercicios fáciles, con oraciones cortas y vocabulario muy frecuente, una sola cosa nueva por vez, más opción múltiple y completar con pista.
+- **Sube de a un escalón** (guiada → normal → exigente) cuando acertás el 80 % o más en dos prácticas seguidas, y baja uno si una práctica sale con menos de la mitad. Vale en todos los idiomas y la microlección muestra en qué escalón estás y cuánto falta para subir.
+- Ejercicios guiados ya escritos y revisados para el A1 de portugués: la práctica guiada abre al instante.
+
+### Sin ejercicios de voz
+
+- Se sacaron los ejercicios que usaban el micrófono, porque el reconocimiento de voz no entendía bien: repetir en voz alta, el modo voz de la charla, la misión hablada y el juego de pronunciación. Los de escuchar (dictado, escucha y pares mínimos) siguen.
+
+### Portugués completo
+
+- Los 62 tópicos de A1 a C2, enriquecidos con más ejemplos, errores típicos, el contraste con el español y frases hechas.
+- El examen inicial ubica hasta C1.
+- **Palabras del día** con el vocabulario núcleo: unas 3.200 palabras de A1 a C2, en orden de frecuencia.
+
+### Inglés
+
+- De 25 a 60 tópicos, de A1 a C2.
+
 ## 3.3.0 · 2026-10-27
 
 Portugués hasta C2, la sección de pronunciación y el camino para cinco idiomas nuevos.

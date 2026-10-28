@@ -9,7 +9,7 @@
 App de escritorio para Windows con cursos de **inglés, portugués de Brasil, italiano y francés**, cada uno del nivel **A1 al C1** del marco europeo (MCER). Cada curso tiene práctica diaria realista —conversaciones, situaciones y tandas de traducción—, resúmenes a tu medida, juegos y exámenes semanales. Todo el material lo genera y lo revisa **Claude Code** con tu propia suscripción.
 
 [![Revisión](https://github.com/Fnqqew/enhome/actions/workflows/ci.yml/badge.svg)](https://github.com/Fnqqew/enhome/actions/workflows/ci.yml)
-![Versión](https://img.shields.io/badge/versión-3.3.0-1c6fb3?style=flat-square)
+![Versión](https://img.shields.io/badge/versión-3.4.0-1c6fb3?style=flat-square)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b3c6d?style=flat-square&logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-44-47848f?style=flat-square&logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react&logoColor=white)
@@ -34,7 +34,7 @@ App de escritorio para Windows con cursos de **inglés, portugués de Brasil, it
 | 🧭 **Examen inicial** | Te ubica en el temario según lo que ya sabés. Si nunca estudiaste el idioma, «Empezar desde cero» te lleva al primer tópico. |
 | 🏠 **Qué hago hoy** | Inicio muestra una sola acción principal, la racha, la meta del día y cuánto falta para el examen. |
 | 📅 **Recorrido semanal** | Un tópico por semana, un subtema por día de lunes a viernes, y el examen al final de la semana. Si faltás, el domingo podés recuperar; si algo no sale, hay semanas de refuerzo. Un curso se puede pausar sin perder la racha. |
-| ✍️ **Práctica diaria** | Entre 5 y 10 ejercicios por día con 16 formatos distintos, con algo para escuchar y algo para decir en voz alta. Abre al instante con ejercicios ya escritos y revisados, y lo que corrige Claude llega mientras seguís con el siguiente. |
+| ✍️ **Práctica diaria** | Entre 5 y 10 ejercicios por día con 15 formatos distintos, con algo para escuchar todos los días. La dificultad arranca guiada y sube de a un escalón cuando acertás casi todo. Abre al instante con ejercicios ya escritos y revisados, y lo que corrige Claude llega mientras seguís con el siguiente. |
 | 🔊 **Voz incluida** | Voces naturales para cada idioma y para el español, que se bajan solas la primera vez y funcionan sin internet. Las conversaciones se escuchan a dos voces. |
 | 🔁 **Repaso** | Tus errores, palabras y frases vuelven justo antes de que se te olviden: el repaso (FSRS) aprende de lo que recordás. Después de cada examen podés revisarlo. |
 | 🎮 **Juegos** | Ocho juegos que no usan a Claude, así que empiezan al instante (ver [Juegos](#juegos)). |
@@ -66,7 +66,7 @@ El día tiene cuatro partes:
 3. **Práctica**, con hasta 2 ejercicios de tópicos anteriores donde más errores tenés.
 4. **Cierre:** qué trabajaste, qué pasó al cuaderno, qué vuelve mañana y un juego rápido.
 
-Cada práctica va de lo más guiado a lo más abierto. Siempre incluye una tanda de traducción y una conversación o una situación real y, desde 8 ejercicios, algo para escuchar y algo para decir en voz alta. Los días de lectura o escritura también suman ese formato. A medida que subís de nivel hay menos opción múltiple y más ejercicios en los que tenés que escribir la respuesta. La cantidad de ejercicios (5, 8 o 10) y los formatos que no te sirven se eligen en Ajustes.
+Cada práctica va de lo más guiado a lo más abierto. Siempre incluye una tanda de traducción y una conversación o una situación real y, desde 8 ejercicios, algo para escuchar. Los días de lectura o escritura también suman ese formato. A medida que subís de nivel hay menos opción múltiple y más ejercicios en los que tenés que escribir la respuesta. La cantidad de ejercicios (5, 8 o 10) y los formatos que no te sirven se eligen en Ajustes.
 
 | Formato | Qué hacés | Quién corrige |
 |---|---|---|
@@ -76,7 +76,6 @@ Cada práctica va de lo más guiado a lo más abierto. Siempre incluye una tanda
 | Dictado | Escuchás una oración (normal o más despacio) y la escribís. | La app, al instante. |
 | Escucha | Escuchás una charla entre dos personas y respondés preguntas. | La app, al instante. |
 | Pares mínimos | Escuchás una palabra y elegís cuál de dos muy parecidas era (*ship* o *sheep*). | La app, al instante. |
-| Repetí | Escuchás una frase y la decís en voz alta. El reconocimiento de voz te marca qué palabras se entendieron. | La app, en tu compu. |
 | Ordenar el texto | Ponés en orden las oraciones de un párrafo siguiendo sus conectores. Desde A2. | La app, al instante. |
 | **Tanda de traducción** | Traducís una escena cotidiana contada en 3 o 4 oraciones encadenadas. | Claude, oración por oración. |
 | **Conversación** | Completás tus turnos en un chat, según lo que pide cada consigna. | Claude, turno por turno. |
@@ -256,6 +255,8 @@ tests/                     tests · tests/e2e: interfaz · tests/live: contra Cl
 </details>
 
 ## Novedades
+
+**3.4.0** · Dificultad por escalones que arranca guiada, sin ejercicios de voz, portugués completo e inglés con 60 tópicos.
 
 **3.3.0** · Portugués de A1 a C2 (60 tópicos), la sección de pronunciación, palabras del día y cinco idiomas nuevos en camino.
 
