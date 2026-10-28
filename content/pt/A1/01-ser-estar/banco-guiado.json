@@ -1,0 +1,3810 @@
+{
+  "subtopics": {
+    "pronomes-saudacoes": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para completar la oración.",
+        "prompt": "___ é meu amigo Marcos.",
+        "options": [
+          "Ele",
+          "Você",
+          "Elas",
+          "Eu"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para referirse a un solo hombre (Marcos) se usa 'ele', en tercera persona del singular.",
+        "optionNotes": [
+          "Correcto: 'ele' se usa para hablar de un hombre, como Marcos.",
+          "No: 'você' significa 'vos', pero acá se está hablando de Marcos en tercera persona, no con él.",
+          "No: 'elas' es plural femenino, no corresponde a un solo hombre.",
+          "No: 'eu' significa 'yo', no coincide con el nombre Marcos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el saludo apropiado según la hora que se indica.",
+        "prompt": "Você chega ao Rio de Janeiro às 22h. Você diz: ___",
+        "options": [
+          "Boa noite!",
+          "Tudo bem?",
+          "Bom dia!",
+          "Boa tarde!"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Boa noite' se usa desde que oscurece, por ejemplo a las 22h.",
+        "optionNotes": [
+          "Correcto: a las 22h ya es de noche, se usa 'boa noite'.",
+          "No es un saludo de bienvenida según la hora, es una pregunta informal que se puede usar en cualquier momento.",
+          "No: 'bom dia' se usa de mañana, no a las 22h.",
+          "No: 'boa tarde' se usa por la tarde, no de noche."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Completá con la forma correcta del verbo ser para 'você'.",
+        "prompt": "Você ___ argentino?",
+        "options": [
+          "são",
+          "sou",
+          "somos",
+          "é"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'você' el verbo ser se conjuga como con 'ele/ela': é.",
+        "optionNotes": [
+          "No: 'são' es la forma para 'vocês' o 'eles/elas'.",
+          "No: 'sou' es la forma para 'eu'.",
+          "No: 'somos' es la forma para 'nós'.",
+          "Correcto: 'você' usa la misma forma que 'ele/ela', que es 'é'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Completá con la forma correcta del verbo ser para 'vocês'.",
+        "prompt": "Vocês ___ de Buenos Aires?",
+        "options": [
+          "sou",
+          "é",
+          "são",
+          "somos"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Vocês' se conjuga igual que 'eles/elas', por eso se usa 'são'.",
+        "optionNotes": [
+          "No: 'sou' es la forma para 'eu'.",
+          "No: 'é' es la forma singular, para 'ele/ela/você'.",
+          "Correcto: 'vocês' usa la forma plural 'são', igual que 'eles/elas'.",
+          "No: 'somos' es la forma para 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Completá con la forma correcta del verbo ser para 'a gente'.",
+        "prompt": "A gente ___ feliz hoje.",
+        "options": [
+          "são",
+          "sou",
+          "somos",
+          "é"
+        ],
+        "correctIndex": 3,
+        "explanation": "'A gente' significa 'nosotros', pero siempre se conjuga en tercera persona del singular, igual que 'ele/ela'.",
+        "optionNotes": [
+          "No: 'são' es plural, para 'eles/elas/vocês', y 'a gente' es singular en la conjugación.",
+          "No: 'sou' es la forma para 'eu', no para 'a gente'.",
+          "No: aunque 'a gente' significa 'nosotros', nunca se conjuga como 'nós'.",
+          "Correcto: 'a gente' siempre lleva el verbo en tercera persona del singular: é."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre correcto para reemplazar los nombres mencionados.",
+        "prompt": "Marcos e Pedro chegam. ___ são brasileiros.",
+        "options": [
+          "Elas",
+          "Ela",
+          "Vocês",
+          "Eles"
+        ],
+        "correctIndex": 3,
+        "explanation": "Marcos y Pedro son dos hombres, por eso se usa 'eles', masculino plural, en tercera persona.",
+        "optionNotes": [
+          "No: 'elas' es femenino plural, pero Marcos y Pedro son hombres.",
+          "No: 'ela' es singular femenino, no corresponde a dos personas.",
+          "No: 'vocês' cambiaría el sentido a segunda persona (hablarle a ellos), pero acá se habla de ellos, no con ellos.",
+          "Correcto: 'eles' es masculino plural y se usa para hablar de Marcos y Pedro."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el saludo informal con la palabra que falta.",
+        "sentence": "Oi! Tudo ___?",
+        "hint": "(saludo informal)",
+        "answers": [
+          "bem"
+        ],
+        "explanation": "La expresión fija para saludar es 'tudo bem?', no 'tudo bom?'.",
+        "wrongAnswers": [
+          {
+            "answer": "bom",
+            "why": "'Bom' es masculino, pero la expresión correcta y fija es 'tudo bem', no 'tudo bom'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el saludo según la hora que se indica.",
+        "sentence": "Boa ___, dona Marta! São dez da noite.",
+        "hint": "(parte del día)",
+        "answers": [
+          "noite"
+        ],
+        "explanation": "Como son las diez de la noche, el saludo correcto es 'boa noite'.",
+        "wrongAnswers": [
+          {
+            "answer": "dia",
+            "why": "'Bom dia' se usa de mañana, no a las diez de la noche."
+          },
+          {
+            "answer": "tarde",
+            "why": "'Boa tarde' se usa por la tarde, no de noche."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo ser (infinitivo: ser).",
+        "sentence": "Você ___ de Córdoba?",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "Con 'você' el verbo ser se conjuga como con 'ele/ela': é.",
+        "wrongAnswers": [
+          {
+            "answer": "és",
+            "why": "En portugués no existe la forma 'és'; con 'você' se usa 'é', igual que con 'ele/ela'."
+          },
+          {
+            "answer": "sou",
+            "why": "'Sou' es la forma del verbo ser para 'eu', no para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo ser (infinitivo: ser).",
+        "sentence": "Nós ___ estudantes de português.",
+        "hint": "(ser)",
+        "answers": [
+          "somos"
+        ],
+        "explanation": "La forma del verbo ser para 'nós' es 'somos'.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "'É' es la forma para 'ele/ela/você', no para 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo estar (infinitivo: estar).",
+        "sentence": "Vocês ___ cansados da viagem?",
+        "hint": "(estar)",
+        "answers": [
+          "estão"
+        ],
+        "explanation": "'Vocês' se conjuga como 'eles/elas', por eso el verbo estar es 'estão'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "'Está' es la forma singular; 'vocês' es plural y necesita 'estão'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo estar (infinitivo: estar).",
+        "sentence": "Elas ___ no hotel agora.",
+        "hint": "(estar)",
+        "answers": [
+          "estão"
+        ],
+        "explanation": "'Elas' es plural y se conjuga con 'estão', igual que 'eles/vocês'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "'Está' es singular; 'elas' es plural y necesita 'estão'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Você é argentino ou brasileiro?",
+        "alternatives": [],
+        "translation": "¿Sos argentino o brasileño?",
+        "explanation": "Con 'você' el verbo ser se conjuga como con 'ele/ela': é.",
+        "tokens": [
+          "argentino",
+          "ou",
+          "brasileiro",
+          "Você",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós somos amigos desde a escola.",
+        "alternatives": [],
+        "translation": "Somos amigos desde la escuela.",
+        "explanation": "La forma del verbo ser para 'nós' es 'somos'.",
+        "tokens": [
+          "escola",
+          "desde",
+          "a",
+          "somos",
+          "amigos",
+          "Nós"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Vocês estão prontos para a entrevista?",
+        "alternatives": [],
+        "translation": "¿Están listos para la entrevista?",
+        "explanation": "Con 'vocês' el verbo estar se conjuga como con 'eles': estão.",
+        "tokens": [
+          "a",
+          "Vocês",
+          "para",
+          "entrevista",
+          "estão",
+          "prontos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A gente vai ao cinema hoje à noite.",
+        "alternatives": [
+          "Hoje à noite a gente vai ao cinema."
+        ],
+        "translation": "Nosotros vamos al cine hoy a la noche.",
+        "explanation": "'A gente' significa 'nosotros', pero se conjuga en tercera persona del singular, como 'ele/ela': vai.",
+        "tokens": [
+          "noite",
+          "A",
+          "gente",
+          "cinema",
+          "à",
+          "vai",
+          "ao",
+          "hoje"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Elas são de Buenos Aires mas moram no Rio.",
+        "alternatives": [],
+        "translation": "Ellas son de Buenos Aires pero viven en Río.",
+        "explanation": "'Elas' es plural femenino y usa 'são', la forma del verbo ser para 'eles/elas'.",
+        "tokens": [
+          "Elas",
+          "mas",
+          "Buenos",
+          "Rio",
+          "no",
+          "Aires",
+          "de",
+          "são",
+          "moram"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con los pronombres y corregilo.",
+        "sentence": "Tu é brasileiro, Marcos?",
+        "answers": [
+          "Você é brasileiro, Marcos?"
+        ],
+        "explanation": "En la mayor parte de Brasil se usa 'você' en vez de 'tu', y el verbo se conjuga en tercera persona: você é.",
+        "wrongAnswers": [
+          {
+            "answer": "Tu és brasileiro, Marcos?",
+            "why": "En Brasil casi no se usa 'tu'; lo habitual es 'você', que lleva el verbo en tercera persona (é), no la forma 'és'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con los pronombres y corregilo.",
+        "sentence": "Vocês é estudantes de português.",
+        "answers": [
+          "Vocês são estudantes de português."
+        ],
+        "explanation": "'Vocês' se conjuga como 'eles', por eso el verbo correcto es 'são', no 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês é estudante de português.",
+            "why": "El error no está en el número de 'estudante', sino en el verbo: 'vocês' necesita 'são', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con los pronombres y corregilo.",
+        "sentence": "A gente somos feliz com a viagem.",
+        "answers": [
+          "A gente é feliz com a viagem."
+        ],
+        "explanation": "Aunque 'a gente' significa 'nosotros', siempre se conjuga en tercera persona del singular, como 'ele/ela': a gente é.",
+        "wrongAnswers": [
+          {
+            "answer": "A gente somos felizes com a viagem.",
+            "why": "El adjetivo 'feliz' ya está bien en singular porque 'a gente' concuerda como tercera persona del singular; el error real está en el verbo, que debe ser 'é' y no 'somos'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con los pronombres y corregilo.",
+        "sentence": "Nós é amigos há cinco anos.",
+        "answers": [
+          "Nós somos amigos há cinco anos."
+        ],
+        "explanation": "La forma del verbo ser para 'nós' es 'somos', no 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós é amigo há cinco anos.",
+            "why": "El error no está en 'amigos', sino en el verbo: 'nós' necesita 'somos', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con los pronombres y corregilo.",
+        "sentence": "Elas é de Buenos Aires.",
+        "answers": [
+          "Elas são de Buenos Aires."
+        ],
+        "explanation": "'Elas' es plural y se conjuga con 'são', la forma del verbo ser para 'eles/elas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é de Buenos Aires.",
+            "why": "Cambiar 'elas' por 'ela' altera el sentido de plural a singular; lo correcto es mantener 'elas' y usar 'são'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando 'você'.",
+        "spanish": "¿Sos argentino, Pedro?",
+        "answers": [
+          "Você é argentino, Pedro?",
+          "Pedro, você é argentino?"
+        ],
+        "explanation": "En Brasil se usa 'você' para 'vos', y el verbo ser se conjuga en tercera persona: é.",
+        "wrongAnswers": [
+          {
+            "answer": "Tu és argentino, Pedro?",
+            "why": "En Brasil lo natural es 'você', no 'tu'; además el verbo con 'você' es 'é', no 'és'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando 'nós'.",
+        "spanish": "Nosotros somos amigos desde la infancia.",
+        "answers": [
+          "Nós somos amigos desde a infância."
+        ],
+        "explanation": "La forma del verbo ser para 'nós' es 'somos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós é amigos desde a infância.",
+            "why": "Con 'nós' el verbo ser es 'somos', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando 'vocês'.",
+        "spanish": "¿Ustedes están listos para el viaje?",
+        "answers": [
+          "Vocês estão prontos para a viagem?",
+          "Vocês estão prontas para a viagem?"
+        ],
+        "explanation": "'Vocês' se conjuga como 'eles/elas', por eso el verbo estar es 'estão'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês está pronto para a viagem?",
+            "why": "'Vocês' es plural y necesita 'estão', no 'está'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando 'elas'.",
+        "spanish": "Ellas son de Córdoba.",
+        "answers": [
+          "Elas são de Córdoba."
+        ],
+        "explanation": "'Elas' es plural y se conjuga con 'são', la forma del verbo ser para 'eles/elas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Elas é de Córdoba.",
+            "why": "'Elas' es plural y requiere 'são', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando 'a gente'.",
+        "spanish": "Nosotros vamos al médico hoy.",
+        "answers": [
+          "A gente vai ao médico hoje."
+        ],
+        "explanation": "'A gente' significa 'nosotros', pero siempre se conjuga en tercera persona del singular: vai.",
+        "wrongAnswers": [
+          {
+            "answer": "A gente vamos ao médico hoje.",
+            "why": "'A gente' nunca se conjuga en primera persona del plural; debe usarse la forma de tercera persona del singular: vai."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el saludo al portugués.",
+        "spanish": "Buenas noches, ¿todo bien?",
+        "answers": [
+          "Boa noite, tudo bem?"
+        ],
+        "explanation": "'Boa noite' se usa para saludar de noche, y la expresión fija es 'tudo bem', no 'tudo bom'.",
+        "wrongAnswers": [
+          {
+            "answer": "Boa noite, tudo bom?",
+            "why": "La expresión fija para saludar es 'tudo bem', no 'tudo bom'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Oi, eu sou o Juan. Tudo bem?",
+        "alternatives": [
+          "Oi, eu sou Juan. Tudo bem?"
+        ],
+        "translation": "Hola, yo soy Juan. ¿Todo bien?",
+        "explanation": "No confundas 'sou' (eu sou) con 'são' (eles/vocês são): suenan parecido pero 'sou' es de una sola persona, la que habla."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Você é brasileiro ou argentino?",
+        "alternatives": [],
+        "translation": "¿Sos brasileño o argentino?",
+        "explanation": "Recordá que 'você' se conjuga como 'ele/ela': va con 'é', nunca con 'és' como en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Nós somos amigos desde a escola.",
+        "alternatives": [
+          "Somos amigos desde a escola."
+        ],
+        "translation": "Somos amigos desde la escuela.",
+        "explanation": "'Somos' corresponde a 'nós'; no lo confundas con 'são', que es para 'eles' o 'vocês'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Boa noite! Vocês são de São Paulo?",
+        "alternatives": [
+          "Boa noite, vocês são de São Paulo?"
+        ],
+        "translation": "¡Buenas noches! ¿Ustedes son de San Pablo?",
+        "explanation": "'Vocês' se conjuga como 'eles': 'são', no 'é'; prestá atención a esa 's' final del verbo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "ela",
+          "ele"
+        ],
+        "target": 0,
+        "meanings": [
+          "ella",
+          "él"
+        ],
+        "explanation": "La diferencia está en la vocal final: 'e' para masculino y 'a' para femenino; escuchá bien ese sonido al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "sou",
+          "só"
+        ],
+        "target": 0,
+        "meanings": [
+          "soy",
+          "solo/sola"
+        ],
+        "explanation": "'Sou' tiene un pequeño deslizamiento final (como 'ôu'), mientras que 'só' es una vocal cerrada simple; fijate en la duración del sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "são",
+          "sã"
+        ],
+        "target": 0,
+        "meanings": [
+          "son (ellos/ustedes son)",
+          "sana"
+        ],
+        "explanation": "'São' es un diptongo nasal con un leve sonido final en 'o', mientras que 'sã' es una vocal nasal simple sin ese deslizamiento."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los pronombres que aparecen.",
+        "text": "Olá! Eu sou Martín, sou argentino. Hoje eu chego a um hostel no Rio de Janeiro. Na recepção, uma moça diz: 'Oi! Tudo bem? Você é o novo hóspede?' Eu respondo: 'Sim, eu sou Martín.' Ela se chama Ana e é brasileira, de São Paulo. Ana me apresenta a dois amigos: Pedro e Lucas. Pedro é estudante, ele é muito simpático. Lucas é professor, ele também é muito gentil. Os dois são ótimos. Depois, a gente vai para a sala comum. Lá, Ana diz: 'Nós somos amigos há dois anos.' Eles são muito unidos. Boa noite para todos! Eu estou feliz no hostel.",
+        "questions": [
+          {
+            "prompt": "¿Qué pronombre usa la recepcionista para preguntarle a Martín si es el nuevo huésped?",
+            "options": [
+              "Ele",
+              "Tu",
+              "Nós",
+              "Você"
+            ],
+            "correctIndex": 3,
+            "explanation": "En Brasil se usa você para 'vos'/'usted', y se conjuga como ele o ela: você é."
+          },
+          {
+            "prompt": "¿Qué pronombre usa el texto para referirse a Pedro después de nombrarlo?",
+            "options": [
+              "Ele",
+              "Eles",
+              "Ela",
+              "Você"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ele es el pronombre de tercera persona singular masculino, usado para hablar de un hombre: 'Pedro é estudante, ele é muito simpático'."
+          },
+          {
+            "prompt": "¿Qué verbo acompaña a 'a gente' cuando van a la sala común?",
+            "options": [
+              "vai",
+              "vamos",
+              "vão",
+              "vou"
+            ],
+            "correctIndex": 0,
+            "explanation": "A gente significa 'nosotros', pero siempre se conjuga en tercera persona del singular, como ele/ela: a gente vai."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto de la entrevista de trabajo y respondé las preguntas sobre los pronombres.",
+        "text": "Bom dia! Eu sou Marcos, gerente da empresa. Hoje temos uma entrevista com três candidatos: Joana, Rafael e Beatriz. Joana e Beatriz são amigas, elas trabalham juntas há cinco anos. Rafael é novo na área. Eu pergunto: 'Vocês são de São Paulo?' Joana responde: 'Sim, nós somos de São Paulo.' Rafael diz: 'Eu não, eu sou do Rio de Janeiro.' Depois, eu digo: 'Vocês são muito qualificados.' Elas sorriem e dizem: 'Obrigadas!' No final, a gente decide contratar Joana. Ela está muito feliz com a notícia. Boa tarde para todos e até logo!",
+        "questions": [
+          {
+            "prompt": "¿Qué pronombre usa Marcos para preguntarles a los tres candidatos si son de São Paulo?",
+            "options": [
+              "Vocês",
+              "Eles",
+              "Nós",
+              "Você"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vocês es 'ustedes', se usa para dirigirse a varias personas y se conjuga como eles: vocês são."
+          },
+          {
+            "prompt": "¿Cómo responde Joana sobre su origen, incluyéndose junto con Beatriz?",
+            "options": [
+              "eu sou",
+              "elas são",
+              "nós somos",
+              "vocês são"
+            ],
+            "correctIndex": 2,
+            "explanation": "Nós es 'nosotros'; se usa cuando el hablante se incluye junto con otra persona, y se conjuga somos."
+          },
+          {
+            "prompt": "¿Qué pronombre se usa para referirse a Joana y Beatriz cuando sonríen?",
+            "options": [
+              "Elas",
+              "Nós",
+              "Eles",
+              "Vocês"
+            ],
+            "correctIndex": 0,
+            "explanation": "Elas es la tercera persona plural femenina, usada para referirse a dos o más mujeres."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo en la recepción del hotel y respondé las preguntas.",
+        "situation": "En la recepción de un hotel en Florianópolis, Brasil, el turista argentino Diego habla con la recepcionista Carla.",
+        "lines": [
+          {
+            "speaker": "Carla",
+            "text": "Boa tarde! Tudo bem?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Tudo bem! Eu sou Diego, sou argentino."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Você tem reserva para hoje?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Sim, eu tenho. Minha esposa também está aqui."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Ótimo! Vocês são os hóspedes do quarto 12."
+          },
+          {
+            "speaker": "Diego",
+            "text": "Perfeito. Ela se chama Laura."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Boa noite para vocês dois! Aproveitem a estadia."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pronombre usa Carla para preguntarle a Diego si tiene reserva?",
+            "options": [
+              "Vocês",
+              "Você",
+              "Eles",
+              "Tu"
+            ],
+            "correctIndex": 1,
+            "explanation": "Carla usa você, la forma estándar en Brasil para 'vos'/'usted', conjugada como tem."
+          },
+          {
+            "prompt": "¿Qué pronombre usa Carla para referirse a Diego y a su esposa juntos?",
+            "options": [
+              "Vocês",
+              "Você",
+              "Nós",
+              "Eles"
+            ],
+            "correctIndex": 0,
+            "explanation": "Vocês es 'ustedes', usado para dos o más personas, y se conjuga como eles: vocês são."
+          },
+          {
+            "prompt": "¿Qué pronombre usa Diego para presentar a su esposa Laura?",
+            "options": [
+              "Ela",
+              "Ele",
+              "Elas",
+              "Você"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ela es la tercera persona singular femenina, usada para hablar de una mujer."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo entre dos compañeros de oficina y respondé las preguntas.",
+        "situation": "En una oficina en São Paulo, Brasil, los compañeros de trabajo Ana y Bruno hablan antes de recibir a unas clientas.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Bom dia, Bruno! Como você está?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Oi, Ana! Eu estou bem, obrigado."
+          },
+          {
+            "speaker": "Ana",
+            "text": "As clientes chegam hoje às dez."
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Elas são da Argentina, certo?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, elas são de Córdoba."
+          },
+          {
+            "speaker": "Bruno",
+            "text": "E o motorista, ele já está aqui?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, ele está na portaria."
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Que legal! A gente está pronta para a reunião."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿A quién se refiere Bruno cuando dice 'Elas são da Argentina, certo?'?",
+            "options": [
+              "A Ana",
+              "A las clientas",
+              "Al motorista",
+              "A él mismo"
+            ],
+            "correctIndex": 1,
+            "explanation": "Elas es la tercera persona plural femenina, usada aquí para referirse a las clientas."
+          },
+          {
+            "prompt": "¿Qué pronombre usa Bruno para preguntar por el motorista?",
+            "options": [
+              "Você",
+              "Eles",
+              "Ele",
+              "Ela"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ele es la tercera persona singular masculina, usada para referirse a un hombre, en este caso el motorista."
+          },
+          {
+            "prompt": "¿Cómo conjuga Bruno el verbo con 'a gente' al decir que están listos para la reunión?",
+            "options": [
+              "a gente estás pronta",
+              "a gente estão prontos",
+              "a gente está pronta",
+              "a gente estamos prontos"
+            ],
+            "correctIndex": 2,
+            "explanation": "A gente se conjuga siempre en tercera persona del singular, como ele/ela: a gente está."
+          }
+        ]
+      }
+    ],
+    "verbo-ser": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo ser.",
+        "prompt": "Eu ___ estudante de português.",
+        "options": [
+          "somos",
+          "é",
+          "são",
+          "sou"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con el pronombre 'eu' siempre se usa la forma 'sou'.",
+        "optionNotes": [
+          "Incorrecto: 'somos' es la forma de nós.",
+          "Incorrecto: 'é' corresponde a você/ele/ela, no a eu.",
+          "Incorrecto: 'são' es la forma de vocês/eles/elas.",
+          "Correcto: 'eu' se conjuga con 'sou'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo ser.",
+        "prompt": "Ela ___ de Salvador.",
+        "options": [
+          "são",
+          "somos",
+          "sou",
+          "é"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'ela' se usa 'é', la misma forma que para você y ele.",
+        "optionNotes": [
+          "Incorrecto: 'são' es para vocês/eles/elas.",
+          "Incorrecto: 'somos' es la forma de nós.",
+          "Incorrecto: 'sou' es la forma de eu.",
+          "Correcto: 'ela' usa 'é'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo ser.",
+        "prompt": "Nós ___ de Rosario.",
+        "options": [
+          "é",
+          "somos",
+          "são",
+          "sou"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'nós' siempre se usa 'somos'.",
+        "optionNotes": [
+          "Incorrecto: 'é' es para você/ele/ela.",
+          "Correcto: 'nós' usa 'somos'.",
+          "Incorrecto: 'são' es para vocês/eles/elas.",
+          "Incorrecto: 'sou' es para eu."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo ser.",
+        "prompt": "Vocês ___ estudantes?",
+        "options": [
+          "somos",
+          "são",
+          "é",
+          "sou"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'vocês' se usa 'são', igual que con eles/elas.",
+        "optionNotes": [
+          "Incorrecto: forma de nós.",
+          "Correcto: 'vocês' usa 'são'.",
+          "Incorrecto: forma de você/ele/ela, pero aquí el sujeto es plural (vocês).",
+          "Incorrecto: forma de eu."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta. Ojo con la tilde.",
+        "prompt": "Marina ___ muito simpática.",
+        "options": [
+          "é",
+          "são",
+          "sou",
+          "e"
+        ],
+        "correctIndex": 0,
+        "explanation": "'É' (con tilde) es el verbo ser para ela; 'e' sin tilde significa 'y'.",
+        "optionNotes": [
+          "Correcto: 'é' es el verbo ser para ela/Marina.",
+          "Incorrecto: 'são' es para plural.",
+          "Incorrecto: 'sou' es para eu.",
+          "Incorrecto: 'e' sin tilde significa 'y', no es el verbo ser."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo ser.",
+        "prompt": "Eles ___ médicos.",
+        "options": [
+          "é",
+          "são",
+          "somos",
+          "sou"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'eles' se usa 'são'.",
+        "optionNotes": [
+          "Incorrecto: forma singular (você/ele/ela).",
+          "Correcto: 'eles' usa 'são'.",
+          "Incorrecto: forma de nós.",
+          "Incorrecto: forma de eu."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Eu ___ de Rosario.",
+        "hint": "(ser)",
+        "answers": [
+          "sou"
+        ],
+        "explanation": "Con 'eu' siempre se usa 'sou'.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "'É' corresponde a você/ele/ela, no a eu."
+          },
+          {
+            "answer": "somos",
+            "why": "'Somos' es la forma de nós, no de eu."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Ela ___ professora.",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "Con 'ela' se usa 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "'Sou' es la forma de eu."
+          },
+          {
+            "answer": "são",
+            "why": "'São' es para plural (vocês/eles/elas)."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Nós ___ amigos.",
+        "hint": "(ser)",
+        "answers": [
+          "somos"
+        ],
+        "explanation": "Con 'nós' siempre se usa 'somos'.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "'É' es singular, no corresponde a nós."
+          },
+          {
+            "answer": "são",
+            "why": "'São' es para vocês/eles/elas, no para nós."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Vocês ___ brasileiros?",
+        "hint": "(ser)",
+        "answers": [
+          "são"
+        ],
+        "explanation": "Con 'vocês' se usa 'são', igual que con eles/elas.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "'É' es singular, pero 'vocês' es plural."
+          },
+          {
+            "answer": "somos",
+            "why": "'Somos' corresponde a nós, no a vocês."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Rafael ___ muito inteligente.",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "Rafael es 'ele', así que se usa 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "'Sou' es la forma de eu."
+          },
+          {
+            "answer": "somos",
+            "why": "'Somos' es para nós, no para una sola persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser' para decir la hora.",
+        "sentence": "___ nove horas da manhã.",
+        "hint": "(ser - horas, plural)",
+        "answers": [
+          "São"
+        ],
+        "explanation": "Para decir la hora en plural se usa 'são': São nove horas.",
+        "wrongAnswers": [
+          {
+            "answer": "É",
+            "why": "'É' se usa solo con 'uma hora' (singular); para horas en plural se usa 'são'."
+          },
+          {
+            "answer": "Somos",
+            "why": "'Somos' no se usa para decir la hora."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Lucas é estudante de português em São Paulo.",
+        "alternatives": [],
+        "translation": "Lucas es estudiante de portugués en San Pablo.",
+        "explanation": "El orden típico es sujeto + verbo ser + complemento.",
+        "tokens": [
+          "Paulo",
+          "Lucas",
+          "de",
+          "em",
+          "português",
+          "São",
+          "estudante",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós somos amigos desde a escola.",
+        "alternatives": [],
+        "translation": "Nosotros somos amigos desde la escuela.",
+        "explanation": "El sujeto 'nós' va antes del verbo 'somos'.",
+        "tokens": [
+          "a",
+          "Nós",
+          "escola",
+          "desde",
+          "somos",
+          "amigos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Vocês são muito simpáticos comigo.",
+        "alternatives": [],
+        "translation": "Ustedes son muy simpáticos conmigo.",
+        "explanation": "El adjetivo 'simpáticos' va después del verbo 'são'.",
+        "tokens": [
+          "muito",
+          "comigo",
+          "simpáticos",
+          "Vocês",
+          "são"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Marina é médica no hospital central.",
+        "alternatives": [],
+        "translation": "Marina es médica en el hospital central.",
+        "explanation": "La profesión va después del verbo 'é', sin artículo en portugués.",
+        "tokens": [
+          "é",
+          "hospital",
+          "no",
+          "Marina",
+          "médica",
+          "central"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eles são de Salvador, na Bahia.",
+        "alternatives": [],
+        "translation": "Ellos son de Salvador, en Bahía.",
+        "explanation": "'São de' indica origen; la ciudad va después de la preposición 'de'.",
+        "tokens": [
+          "Salvador,",
+          "Eles",
+          "de",
+          "são",
+          "na",
+          "Bahia"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu é estudante de português.",
+        "answers": [
+          "Eu sou estudante de português."
+        ],
+        "explanation": "Con 'eu' se usa siempre 'sou', no 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu é estudantes de português.",
+            "why": "El error no está en el sustantivo, sino en el verbo: debe ser 'sou', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Ela e muito inteligente.",
+        "answers": [
+          "Ela é muito inteligente."
+        ],
+        "explanation": "Sin tilde, 'e' significa 'y'; el verbo ser para ela es 'é', con tilde.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela e muita inteligente.",
+            "why": "El problema no es el adjetivo, sino que falta la tilde en 'é', el verbo ser."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Nós é amigos de Lucas.",
+        "answers": [
+          "Nós somos amigos de Lucas."
+        ],
+        "explanation": "Con 'nós' siempre se usa 'somos', nunca 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós é amigo de Lucas.",
+            "why": "El error está en el verbo, no en el número del sustantivo: con 'nós' se usa 'somos'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vocês é brasileiros?",
+        "answers": [
+          "Vocês são brasileiros?"
+        ],
+        "explanation": "Con 'vocês' se usa 'são', igual que con eles/elas.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês é brasileiro?",
+            "why": "El error es el verbo: con 'vocês' se usa 'são', no 'é'; el adjetivo plural ya es correcto."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Marina são de Salvador.",
+        "answers": [
+          "Marina é de Salvador."
+        ],
+        "explanation": "Marina es 'ela' (singular), así que el verbo correcto es 'é', no 'são'.",
+        "wrongAnswers": [
+          {
+            "answer": "Marina são de Salvador, na Bahia.",
+            "why": "Agregar información no corrige el error; el verbo debe cambiar de 'são' a 'é' porque Marina es una sola persona."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Yo soy de Rosario.",
+        "answers": [
+          "Eu sou de Rosario.",
+          "Eu sou de Rosário."
+        ],
+        "explanation": "Con 'eu' siempre se usa 'sou'; el origen se expresa con 'ser de'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu é de Rosario.",
+            "why": "Con 'eu' se usa 'sou', no 'é'."
+          },
+          {
+            "answer": "Eu somos de Rosario.",
+            "why": "'Somos' es la forma de nós, no de eu."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Vos sos estudiante de portugués?",
+        "answers": [
+          "Você é estudante de português?"
+        ],
+        "explanation": "'Você' se conjuga igual que ele/ela: usa 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você sou estudante de português?",
+            "why": "'Sou' es la forma de eu, no de você."
+          },
+          {
+            "answer": "Você são estudante de português?",
+            "why": "'São' es para plural, pero 'você' es singular."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Nosotros somos amigos de Marina.",
+        "answers": [
+          "Nós somos amigos de Marina.",
+          "Nós somos amigos da Marina."
+        ],
+        "explanation": "Con 'nós' siempre se usa 'somos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós é amigos de Marina.",
+            "why": "Con 'nós' se usa 'somos', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Ella es muy simpática.",
+        "answers": [
+          "Ela é muito simpática."
+        ],
+        "explanation": "Con 'ela' se usa 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela são muito simpática.",
+            "why": "'São' es para plural; 'ela' es singular, corresponde 'é'."
+          },
+          {
+            "answer": "Ela sou muito simpática.",
+            "why": "'Sou' es la forma de eu, no de ela."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Ustedes son de Brasil?",
+        "answers": [
+          "Vocês são do Brasil?"
+        ],
+        "explanation": "'Vocês' usa 'são'; además, 'de' + 'o Brasil' se contrae en 'do Brasil'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês são de Brasil?",
+            "why": "Con países que llevan artículo, como 'o Brasil', 'de' se contrae en 'do': 'são do Brasil'."
+          },
+          {
+            "answer": "Vocês é do Brasil?",
+            "why": "Con 'vocês' se usa 'são', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Son las diez de la noche.",
+        "answers": [
+          "São dez horas da noite."
+        ],
+        "explanation": "Para decir la hora en plural siempre se usa 'são'.",
+        "wrongAnswers": [
+          {
+            "answer": "É dez horas da noite.",
+            "why": "'É' se usa solo para 'uma hora'; con números plurales de horas se usa 'são'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Eu sou de Mendoza, na Argentina.",
+        "alternatives": [],
+        "translation": "Soy de Mendoza, en Argentina.",
+        "explanation": "Con eu siempre se usa sou, nunca é; es la forma que suele costar distinguir al principio."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Ela é de São Paulo.",
+        "alternatives": [],
+        "translation": "Ella es de São Paulo.",
+        "explanation": "É lleva tilde y se pronuncia distinto de e (que significa 'y'); no los confundas al escuchar la oración."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Nós somos amigos de Marina.",
+        "alternatives": [],
+        "translation": "Nosotros somos amigos de Marina.",
+        "explanation": "Con nós siempre se usa somos; é corresponde a ele, ela o você, no a nós."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Vocês são estudantes de português?",
+        "alternatives": [],
+        "translation": "¿Ustedes son estudiantes de portugués?",
+        "explanation": "Vocês se conjuga igual que eles/elas, con são; no se usa é en plural."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "e",
+          "é"
+        ],
+        "target": 1,
+        "meanings": [
+          "y",
+          "es (del verbo ser)"
+        ],
+        "explanation": "É se pronuncia con una e abierta, como en 'elefante'; e sin tilde (la conjunción 'y') se pronuncia como una i corta."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "avô",
+          "avó"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "Avó tiene una o abierta y avô una o cerrada; en español no distinguimos estos dos sonidos de o."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "selo",
+          "zelo"
+        ],
+        "target": 1,
+        "meanings": [
+          "estampilla",
+          "cuidado/esmero"
+        ],
+        "explanation": "En portugués la s suena como una s sorda y la z como una s sonora (similar a la 's' del Río de la Plata); en español ambas letras se pronuncian igual."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre la identidad y el origen de cada persona.",
+        "situation": "En una escuela de idiomas en San Pablo, Juliana conoce a Pedro, un nuevo compañero de clase.",
+        "lines": [
+          {
+            "speaker": "Juliana",
+            "text": "Oi! Eu sou a Juliana."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu sou o Pedro. Muito prazer!"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "De onde você é, Pedro?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu sou de Belo Horizonte."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Eu sou de São Paulo."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Nós somos estudantes de inglês?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Sim, somos estudantes na mesma turma."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Que bom, vamos estudar juntos!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Pedro?",
+            "options": [
+              "Salvador",
+              "Rio de Janeiro",
+              "Belo Horizonte",
+              "São Paulo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'Eu sou de Belo Horizonte'; se usa sou porque el sujeto es eu."
+          },
+          {
+            "prompt": "¿De dónde es Juliana?",
+            "options": [
+              "São Paulo",
+              "Salvador",
+              "Belo Horizonte",
+              "Niterói"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana dice 'Eu sou de São Paulo', usando la forma sou para hablar de su propio origen."
+          },
+          {
+            "prompt": "¿Qué son Juliana y Pedro, según la conversación?",
+            "options": [
+              "Vecinos",
+              "Profesores",
+              "Médicos",
+              "Estudiantes"
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana dice 'somos estudantes na mesma turma'; con nós siempre se usa somos."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas sobre la profesión y el origen de Lucas.",
+        "situation": "Entrevista de trabajo en una oficina en Río de Janeiro: Renata entrevista a Lucas para un puesto de recepcionista.",
+        "lines": [
+          {
+            "speaker": "Renata",
+            "text": "Bom dia! Você é o Lucas?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Sim, eu sou o Lucas."
+          },
+          {
+            "speaker": "Renata",
+            "text": "De onde você é, Lucas?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Eu sou de Niterói."
+          },
+          {
+            "speaker": "Renata",
+            "text": "Você é estudante ou já trabalha?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Eu sou recepcionista em outra empresa."
+          },
+          {
+            "speaker": "Renata",
+            "text": "Ótimo! Nós somos uma empresa pequena."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Entendi, estou animado para começar."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Lucas?",
+            "options": [
+              "Salvador",
+              "Belo Horizonte",
+              "Niterói",
+              "Rio de Janeiro"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucas dice 'Eu sou de Niterói'; con eu se usa siempre la forma sou."
+          },
+          {
+            "prompt": "¿Cuál es la profesión actual de Lucas?",
+            "options": [
+              "Profesor",
+              "Estudiante",
+              "Recepcionista",
+              "Médico"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucas dice 'Eu sou recepcionista em outra empresa', usando sou para describir su profesión."
+          },
+          {
+            "prompt": "Según Renata, ¿cómo es la empresa?",
+            "options": [
+              "Grande",
+              "Pequena",
+              "Antiga",
+              "Nova"
+            ],
+            "correctIndex": 1,
+            "explanation": "Renata dice 'Nós somos uma empresa pequena'; con nós se usa siempre somos."
+          }
+        ]
+      }
+    ],
+    "verbo-estar": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Eu ___ cansado depois da viagem.",
+        "options": [
+          "estou",
+          "está",
+          "estamos",
+          "estão"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con el pronombre 'eu' siempre se usa 'estou'.",
+        "optionNotes": [
+          "Correcto: 'eu' se conjuga con 'estou'.",
+          "Incorrecto: 'está' corresponde a você/ele/ela, no a eu.",
+          "Incorrecto: 'estamos' es la forma de nós.",
+          "Incorrecto: 'estão' es la forma de vocês/eles/elas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Bruno ___ doente hoje.",
+        "options": [
+          "estou",
+          "estão",
+          "estamos",
+          "está"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'Bruno' (ele) se usa 'está'.",
+        "optionNotes": [
+          "Incorrecto: 'estou' es la forma de eu.",
+          "Incorrecto: 'estão' es para plural.",
+          "Incorrecto: 'estamos' es la forma de nós.",
+          "Correcto: 'Bruno' es 'ele', usa 'está'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Nós ___ no hotel agora.",
+        "options": [
+          "estão",
+          "está",
+          "estamos",
+          "estou"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'nós' siempre se usa 'estamos'.",
+        "optionNotes": [
+          "Incorrecto: forma de vocês/eles/elas.",
+          "Incorrecto: forma de você/ele/ela.",
+          "Correcto: 'nós' usa 'estamos'.",
+          "Incorrecto: forma de eu."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo estar.",
+        "prompt": "Vocês ___ prontos para o passeio?",
+        "options": [
+          "estão",
+          "estamos",
+          "estou",
+          "está"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'vocês' se usa 'estão', igual que con eles/elas.",
+        "optionNotes": [
+          "Correcto: 'vocês' usa 'estão'.",
+          "Incorrecto: forma de nós.",
+          "Incorrecto: forma de eu.",
+          "Incorrecto: forma singular de você/ele/ela, pero aquí el sujeto es plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta: estado pasajero, no identidad.",
+        "prompt": "João ___ muito cansado hoje.",
+        "options": [
+          "está",
+          "estou",
+          "são",
+          "é"
+        ],
+        "correctIndex": 0,
+        "explanation": "Estar cansado es un estado pasajero; se usa 'estar', no 'ser'. João es 'ele', por eso 'está'.",
+        "optionNotes": [
+          "Correcto: 'está' expresa el estado pasajero de João.",
+          "Incorrecto: 'estou' es la forma de eu, no de João (ele).",
+          "Incorrecto: 'são' es para plural y además es el verbo ser.",
+          "Incorrecto: 'ser' no se usa para estados pasajeros como el cansancio."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta: la playa es un lugar fijo.",
+        "prompt": "A praia ___ perto do hotel.",
+        "options": [
+          "estão",
+          "fica",
+          "ficam",
+          "está"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para la ubicación de lugares fijos como la playa se prefiere el verbo 'ficar', no 'estar'.",
+        "optionNotes": [
+          "Incorrecto: 'estão' es plural y además es el verbo estar.",
+          "Correcto: 'fica' es la forma singular de 'ficar' para lugares fijos.",
+          "Incorrecto: 'ficam' es plural, pero 'a praia' es singular.",
+          "Incorrecto: para lugares fijos se usa 'ficar', no 'estar'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'estar'.",
+        "sentence": "Eu ___ com frio agora.",
+        "hint": "(estar)",
+        "answers": [
+          "estou"
+        ],
+        "explanation": "Con 'eu' siempre se usa 'estou'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "'Está' corresponde a você/ele/ela, no a eu."
+          },
+          {
+            "answer": "estamos",
+            "why": "'Estamos' es la forma de nós, no de eu."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'estar'.",
+        "sentence": "Bruno ___ no trabalho agora.",
+        "hint": "(estar)",
+        "answers": [
+          "está"
+        ],
+        "explanation": "Bruno es 'ele', por eso se usa 'está'.",
+        "wrongAnswers": [
+          {
+            "answer": "estou",
+            "why": "'Estou' es la forma de eu, no de Bruno (ele)."
+          },
+          {
+            "answer": "estamos",
+            "why": "'Estamos' es la forma de nós, no de una sola persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'estar'.",
+        "sentence": "Nós ___ em casa à noite.",
+        "hint": "(estar)",
+        "answers": [
+          "estamos"
+        ],
+        "explanation": "Con 'nós' siempre se usa 'estamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "'Está' es singular, no corresponde a nós."
+          },
+          {
+            "answer": "estão",
+            "why": "'Estão' es para vocês/eles/elas, no para nós."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'estar'.",
+        "sentence": "Vocês ___ felizes com a viagem?",
+        "hint": "(estar)",
+        "answers": [
+          "estão"
+        ],
+        "explanation": "Con 'vocês' se usa 'estão', igual que con eles/elas.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "'Está' es singular, pero 'vocês' es plural."
+          },
+          {
+            "answer": "estamos",
+            "why": "'Estamos' corresponde a nós, no a vocês."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta: estado pasajero, no identidad.",
+        "sentence": "João ___ cansado depois do voo.",
+        "hint": "(estar, no ser)",
+        "answers": [
+          "está"
+        ],
+        "explanation": "El cansancio es un estado pasajero, por eso se usa 'estar': João está cansado.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "El cansancio es un estado pasajero; no se usa 'ser' sino 'estar'."
+          },
+          {
+            "answer": "estou",
+            "why": "'Estou' es la forma de eu, pero João es 'ele'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el verbo correcto para un lugar fijo.",
+        "sentence": "O museu ___ perto da praia.",
+        "hint": "(ficar, lugar fijo)",
+        "answers": [
+          "fica"
+        ],
+        "explanation": "Para la ubicación de lugares fijos se usa 'ficar': o museu fica perto da praia.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "Para lugares fijos como un museo se prefiere 'ficar', no 'estar'."
+          },
+          {
+            "answer": "fico",
+            "why": "'Fico' es la forma de eu, pero el sujeto aquí es 'o museu' (ele)."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu estou cansado depois da viagem.",
+        "alternatives": [],
+        "translation": "Estoy cansado después del viaje.",
+        "explanation": "El sujeto 'eu' va antes del verbo 'estou'.",
+        "tokens": [
+          "cansado",
+          "viagem",
+          "depois",
+          "estou",
+          "da",
+          "Eu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Bruno está doente desde ontem.",
+        "alternatives": [],
+        "translation": "Bruno está enfermo desde ayer.",
+        "explanation": "Bruno es 'ele', por eso se usa 'está'.",
+        "tokens": [
+          "está",
+          "doente",
+          "Bruno",
+          "ontem",
+          "desde"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós estamos em casa agora.",
+        "alternatives": [],
+        "translation": "Nosotros estamos en casa ahora.",
+        "explanation": "Con 'nós' siempre se usa 'estamos'.",
+        "tokens": [
+          "casa",
+          "Nós",
+          "agora",
+          "estamos",
+          "em"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Vocês estão prontos para o jantar?",
+        "alternatives": [],
+        "translation": "¿Ustedes están listos para la cena?",
+        "explanation": "Con 'vocês' se usa 'estão'.",
+        "tokens": [
+          "o",
+          "jantar",
+          "estão",
+          "para",
+          "prontos",
+          "Vocês"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A praia fica perto do hotel.",
+        "alternatives": [],
+        "translation": "La playa queda cerca del hotel.",
+        "explanation": "Para lugares fijos como la playa se usa 'ficar', no 'estar'.",
+        "tokens": [
+          "fica",
+          "hotel",
+          "do",
+          "praia",
+          "A",
+          "perto"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu sou cansado depois da viagem.",
+        "answers": [
+          "Eu estou cansado depois da viagem."
+        ],
+        "explanation": "Un estado pasajero como el cansancio se expresa con 'estar', no con 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou cansada depois da viagem.",
+            "why": "El error no es el género del adjetivo, sino el verbo: el cansancio es un estado pasajero y se expresa con 'estar', no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Nós está em casa agora.",
+        "answers": [
+          "Nós estamos em casa agora."
+        ],
+        "explanation": "Con 'nós' siempre se usa 'estamos', nunca 'está'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós está em casa agor.",
+            "why": "El error no tiene que ver con la última palabra, sino con el verbo: con 'nós' se usa 'estamos', no 'está'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "O Rio de Janeiro está no Brasil.",
+        "answers": [
+          "O Rio de Janeiro fica no Brasil."
+        ],
+        "explanation": "Para la ubicación de lugares fijos como una ciudad se prefiere 'ficar' en vez de 'estar'.",
+        "wrongAnswers": [
+          {
+            "answer": "O Rio de Janeiro está no Brasil mesmo.",
+            "why": "Agregar una palabra no corrige el error; el verbo debe cambiar de 'está' a 'fica' porque se trata de un lugar fijo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Bruno estão doente hoje.",
+        "answers": [
+          "Bruno está doente hoje."
+        ],
+        "explanation": "Bruno es 'ele' (singular), por eso el verbo correcto es 'está', no 'estão'.",
+        "wrongAnswers": [
+          {
+            "answer": "Bruno estão doentes hoje.",
+            "why": "El error no es el adjetivo, sino el verbo: Bruno es una sola persona (ele) y corresponde 'está', no 'estão'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vocês está prontos para o passeio?",
+        "answers": [
+          "Vocês estão prontos para o passeio?"
+        ],
+        "explanation": "Con 'vocês' se usa 'estão', igual que con eles/elas.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês está pronto para o passeio?",
+            "why": "El error no es el adjetivo, sino el verbo: 'vocês' es plural y corresponde 'estão', no 'está'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Estoy cansado después del viaje.",
+        "answers": [
+          "Eu estou cansado depois da viagem.",
+          "Estou cansado depois da viagem."
+        ],
+        "explanation": "Con 'eu' se usa 'estou'; el cansancio se expresa con 'estar' porque es un estado pasajero.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou cansado depois da viagem.",
+            "why": "El cansancio es un estado pasajero; se usa 'estar', no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Vos estás enfermo?",
+        "answers": [
+          "Você está doente?"
+        ],
+        "explanation": "'Você' se conjuga igual que ele/ela: usa 'está'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você estou doente?",
+            "why": "'Estou' es la forma de eu, no de você."
+          },
+          {
+            "answer": "Você é doente?",
+            "why": "Estar enfermo es un estado pasajero; se usa 'estar', no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Nosotros estamos en el hotel.",
+        "answers": [
+          "Nós estamos no hotel.",
+          "Estamos no hotel."
+        ],
+        "explanation": "Con 'nós' siempre se usa 'estamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós está no hotel.",
+            "why": "Con 'nós' se usa 'estamos', no 'está'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Ustedes están listos?",
+        "answers": [
+          "Vocês estão prontos?"
+        ],
+        "explanation": "Con 'vocês' se usa 'estão'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês está pronto?",
+            "why": "'Vocês' es plural; corresponde 'estão', no 'está'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "La playa queda cerca del centro.",
+        "answers": [
+          "A praia fica perto do centro."
+        ],
+        "explanation": "Para la ubicación de lugares fijos se usa 'ficar'.",
+        "wrongAnswers": [
+          {
+            "answer": "A praia está perto do centro.",
+            "why": "Para lugares fijos como la playa se prefiere 'ficar', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "El banco queda al lado de la farmacia.",
+        "answers": [
+          "O banco fica ao lado da farmácia."
+        ],
+        "explanation": "Para la ubicación de lugares fijos como un edificio se usa 'ficar'.",
+        "wrongAnswers": [
+          {
+            "answer": "O banco está ao lado da farmácia.",
+            "why": "Para lugares fijos como un banco se prefiere 'ficar', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eu estou muito cansado depois da viagem.",
+        "alternatives": [],
+        "translation": "Estoy muy cansado después del viaje.",
+        "explanation": "No confundas 'estou' con 'sou': para un estado pasajero como el cansancio se usa siempre estar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Nós estamos em casa agora.",
+        "alternatives": [],
+        "translation": "Nosotros estamos en casa ahora.",
+        "explanation": "Con nós el verbo es estamos, no está: prestá atención a la terminación -amos."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Vocês estão prontos para o jantar?",
+        "alternatives": [],
+        "translation": "¿Ustedes están listos para la cena?",
+        "explanation": "La forma estão tiene un sonido nasal final que puede confundirse con está; es la forma de vocês/eles/elas."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Ele está doente e não vai trabalhar.",
+        "alternatives": [],
+        "translation": "Él está enfermo y no va a trabajar.",
+        "explanation": "La salud es un estado pasajero, por eso se usa estar (está) y no ser."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá cuál de las dos palabras se dice.",
+        "pair": [
+          "pôde",
+          "pode"
+        ],
+        "target": 1,
+        "meanings": [
+          "pudo",
+          "puede"
+        ],
+        "explanation": "La diferencia está en el sonido de la o: en 'pode' es abierta y en 'pôde' es cerrada, algo que no distinguimos tan claramente en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá cuál de las dos palabras se dice.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "caza",
+          "casa"
+        ],
+        "explanation": "La ç siempre suena como s en español, pero la s entre vocales en portugués suena como z; escuchá si el sonido es suave (z) o fuerte (s)."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá cuál de las dos palabras se dice.",
+        "pair": [
+          "mau",
+          "mão"
+        ],
+        "target": 1,
+        "meanings": [
+          "malo",
+          "mano"
+        ],
+        "explanation": "El ão es un diptongo nasal que no existe en español: el aire sale también por la nariz, a diferencia del au de 'mau' que es totalmente oral."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación telefónica y respondé qué dicen sobre dónde están y cómo se sienten.",
+        "situation": "Marcos está en su casa y llama por teléfono a su amiga Beatriz para saber cómo está.",
+        "lines": [
+          {
+            "speaker": "Marcos",
+            "text": "Oi, Beatriz! Onde você está?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Oi, Marcos! Eu estou em casa."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Você está bem?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Não, eu estou com dor de cabeça."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Que pena! E o João, está com você?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Sim, ele está aqui também. Ele está cansado."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Vocês estão prontos para o jantar?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Não, nós não estamos prontos ainda."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde está Beatriz?",
+            "options": [
+              "En el trabajo",
+              "En el hospital",
+              "En la calle",
+              "En su casa"
+            ],
+            "correctIndex": 3,
+            "explanation": "Beatriz dice 'Eu estou em casa', usando estar para indicar ubicación."
+          },
+          {
+            "prompt": "¿Cómo se siente Beatriz?",
+            "options": [
+              "Está cansada",
+              "Está feliz",
+              "Está con dolor de cabeza",
+              "Está con frío"
+            ],
+            "correctIndex": 2,
+            "explanation": "Beatriz usa 'estou com dor de cabeça' para expresar un estado pasajero con el verbo estar."
+          },
+          {
+            "prompt": "¿Están Marcos y Beatriz listos para la cena?",
+            "options": [
+              "Sí, están listos",
+              "Solo João está listo",
+              "No, no están listos",
+              "Solo Beatriz está lista"
+            ],
+            "correctIndex": 2,
+            "explanation": "Beatriz responde 'nós não estamos prontos ainda', usando la forma 'estamos' que corresponde a nós."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación en la recepción del hotel y respondé usando lo que escuchaste sobre estar y ficar.",
+        "situation": "Pedro, un turista, le pregunta a Ana, la recepcionista de un hotel, dónde quedan algunos lugares de la ciudad.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Bom dia! O museu fica perto do hotel?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, o museu fica a dez minutos daqui."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "E a praia, onde ela fica?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "A praia fica perto do centro também."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Você está ocupada agora?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Não, eu estou livre. Posso ajudar."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Ótimo! E o restaurante, fica longe?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Não, ele fica ao lado do hotel."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde queda el museo según Ana?",
+            "options": [
+              "Al lado de la playa",
+              "Dentro del hotel",
+              "A diez minutos del hotel",
+              "Muy lejos del hotel"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ana usa 'fica' para indicar la ubicación fija del museo: 'o museu fica a dez minutos daqui'."
+          },
+          {
+            "prompt": "¿Ana está ocupada cuando Pedro le pregunta?",
+            "options": [
+              "Sí, está muy ocupada",
+              "No, está libre",
+              "No sabe",
+              "Está en una reunión"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana responde 'eu estou livre', usando estar para expresar su estado momentáneo."
+          },
+          {
+            "prompt": "¿Dónde queda el restaurante?",
+            "options": [
+              "Lejos del hotel",
+              "En el centro",
+              "Cerca de la playa",
+              "Al lado del hotel"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana dice 'ele fica ao lado do hotel', usando ficar para la ubicación fija del restaurante."
+          }
+        ]
+      }
+    ],
+    "negacao-perguntas": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Juan conversa com Mariana: Eu ___ de São Paulo, sou de Buenos Aires.",
+        "options": [
+          "não sou",
+          "sou não",
+          "não é",
+          "não estou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para negar con el verbo ser, não se coloca siempre antes del verbo: não sou.",
+        "optionNotes": [
+          "Correcto: não antes de sou niega el origen de Juan.",
+          "Incorrecto: não siempre va antes del verbo, nunca después.",
+          "Incorrecto: é concuerda con ele/ela, no con eu.",
+          "Incorrecto: para hablar de origen se usa ser, no estar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta.",
+        "prompt": "Mariana pergunta a Juan depois da viagem: ___ você está? Cansado?",
+        "options": [
+          "Qual",
+          "Onde",
+          "Como",
+          "Quem"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como se usa para preguntar por el estado o condición de alguien.",
+        "optionNotes": [
+          "Incorrecto: Qual pregunta por una elección entre opciones.",
+          "Incorrecto: Onde pregunta por un lugar.",
+          "Correcto: Como pregunta por el estado de Juan.",
+          "Incorrecto: Quem pregunta por una persona, no por un estado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra correcta para preguntar el nombre de alguien.",
+        "prompt": "Mariana pergunta: ___ é o seu nome?",
+        "options": [
+          "Quem",
+          "Que",
+          "Onde",
+          "Qual"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para preguntar el nombre en portugués se usa Qual, nunca Que.",
+        "optionNotes": [
+          "Incorrecto: Quem pregunta quién es alguien, no cuál es su nombre.",
+          "Incorrecto: en portugués no se usa que para preguntar el nombre.",
+          "Incorrecto: Onde pregunta por un lugar.",
+          "Correcto: Qual é o seu nome? es la forma natural de preguntar el nombre."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la negación correcta.",
+        "prompt": "Juan responde: Eu ___ cansado, estou bem.",
+        "options": [
+          "não é",
+          "não estou",
+          "não sou",
+          "estou não"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cansado es un estado pasajero, así que se usa estar, y não va antes del verbo: não estou.",
+        "optionNotes": [
+          "Incorrecto: é no concuerda con eu.",
+          "Correcto: não estou niega el estado de cansancio.",
+          "Incorrecto: cansado es un estado pasajero, va con estar, no con ser.",
+          "Incorrecto: não debe ir antes del verbo, no después."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el verbo correcto para esta pregunta sobre el estado civil.",
+        "prompt": "Na entrevista, Lucas pergunta: Você ___ casado?",
+        "options": [
+          "não",
+          "está",
+          "é",
+          "sou"
+        ],
+        "correctIndex": 2,
+        "explanation": "El estado civil se expresa con ser: Você é casado?",
+        "optionNotes": [
+          "Incorrecto: não es una negación, no completa la pregunta correctamente.",
+          "Incorrecto: para el estado civil se usa ser, no estar.",
+          "Correcto: é casado usa ser para preguntar por el estado civil.",
+          "Incorrecto: sou concuerda con eu, no con você."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar por un lugar.",
+        "prompt": "Juan procura o banheiro no escritório: ___ fica o banheiro?",
+        "options": [
+          "Onde",
+          "Quanto",
+          "Quem",
+          "Quando"
+        ],
+        "correctIndex": 0,
+        "explanation": "Onde se usa para preguntar por la ubicación de algo o alguien.",
+        "optionNotes": [
+          "Correcto: Onde pregunta por la ubicación del baño.",
+          "Incorrecto: Quanto pregunta por una cantidad.",
+          "Incorrecto: Quem pregunta por una persona.",
+          "Incorrecto: Quando pregunta por el momento, no por el lugar."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración negando con não.",
+        "sentence": "Juan ___ brasileiro, é argentino.",
+        "hint": "(ser)",
+        "answers": [
+          "não é"
+        ],
+        "explanation": "Para negar con ser, não se coloca antes del verbo: não é.",
+        "wrongAnswers": [
+          {
+            "answer": "é não",
+            "why": "Não siempre va antes del verbo, nunca después."
+          },
+          {
+            "answer": "não está",
+            "why": "Para la nacionalidad se usa ser, no estar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma negativa de estar.",
+        "sentence": "Nós já comemos, então ___ com fome agora.",
+        "hint": "(estar)",
+        "answers": [
+          "não estamos"
+        ],
+        "explanation": "Como ya comieron, ahora no tienen hambre: não estamos con fome, usando não + estar para un estado temporal.",
+        "wrongAnswers": [
+          {
+            "answer": "estamos não",
+            "why": "Não debe ir antes del verbo, no después."
+          },
+          {
+            "answer": "não somos",
+            "why": "Para sensaciones como el hambre se usa estar, no ser."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ é a entrevista de Juan?",
+        "hint": "(pregunta por el momento)",
+        "answers": [
+          "Quando"
+        ],
+        "explanation": "Quando se usa para preguntar por el momento en que sucede algo, como una entrevista.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde",
+            "why": "Onde pregunta por un lugar, no por el momento en que ocurre algo."
+          },
+          {
+            "answer": "Como",
+            "why": "Como pregunta por el modo, no por el tiempo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ custa o aluguel do apartamento?",
+        "hint": "(pregunta por una cantidad)",
+        "answers": [
+          "Quanto"
+        ],
+        "explanation": "Quanto se usa para preguntar por precios o cantidades, como el alquiler de un apartamento.",
+        "wrongAnswers": [
+          {
+            "answer": "Qual",
+            "why": "Qual se usa para elegir entre opciones, no para preguntar precios."
+          },
+          {
+            "answer": "Quem",
+            "why": "Quem pregunta por una persona, no por una cantidad."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta de estar.",
+        "sentence": "Você ___ bem hoje?",
+        "hint": "(estar)",
+        "answers": [
+          "está"
+        ],
+        "explanation": "Para preguntar por el estado de ánimo o salud de alguien se usa estar: Você está bem?",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "Bem se refiere a un estado momentáneo, por eso se usa estar, no ser."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ é o médico de Juan?",
+        "hint": "(pregunta por una persona)",
+        "answers": [
+          "Quem"
+        ],
+        "explanation": "Quem se usa para preguntar quién es una persona, en este caso el médico de Juan.",
+        "wrongAnswers": [
+          {
+            "answer": "Qual",
+            "why": "Qual pregunta por una elección entre opciones, no por una persona desconocida."
+          },
+          {
+            "answer": "Onde",
+            "why": "Onde pregunta por un lugar, no por una persona."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu não sou médico, sou professor.",
+        "alternatives": [],
+        "translation": "Yo no soy médico, soy profesor.",
+        "explanation": "Não va antes del verbo sou para negar la profesión de Juan.",
+        "tokens": [
+          "Eu",
+          "sou",
+          "professor",
+          "médico,",
+          "não",
+          "sou"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Você não está com fome agora?",
+        "alternatives": [
+          "Agora você não está com fome?"
+        ],
+        "translation": "¿No tenés hambre ahora?",
+        "explanation": "En las preguntas de sí o no no hace falta invertir el orden; alcanza con subir la entonación y poner não antes del verbo.",
+        "tokens": [
+          "está",
+          "não",
+          "com",
+          "fome",
+          "Você",
+          "agora"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Onde fica a farmácia mais próxima?",
+        "alternatives": [],
+        "translation": "¿Dónde queda la farmacia más cercana?",
+        "explanation": "Onde se usa para preguntar por un lugar, seguido del verbo fica.",
+        "tokens": [
+          "a",
+          "farmácia",
+          "fica",
+          "próxima",
+          "Onde",
+          "mais"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Quando é a reunião de trabalho?",
+        "alternatives": [],
+        "translation": "¿Cuándo es la reunión de trabajo?",
+        "explanation": "Quando se usa para preguntar por el momento en que ocurre un evento.",
+        "tokens": [
+          "é",
+          "de",
+          "reunião",
+          "a",
+          "Quando",
+          "trabalho"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ela não é médica, é enfermeira.",
+        "alternatives": [],
+        "translation": "Ella no es médica, es enfermera.",
+        "explanation": "Não va antes del verbo é para negar la profesión; luego se afirma la profesión correcta con é.",
+        "tokens": [
+          "enfermeira",
+          "Ela",
+          "é",
+          "médica,",
+          "é",
+          "não"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posición de não.",
+        "sentence": "Eu sou não de Buenos Aires.",
+        "answers": [
+          "Eu não sou de Buenos Aires."
+        ],
+        "explanation": "Não siempre se coloca antes del verbo que se quiere negar.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou de não Buenos Aires.",
+            "why": "Não debe ir antes del verbo sou, no en medio del lugar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de ser/estar en esta pregunta.",
+        "sentence": "Você não é cansado depois da viagem?",
+        "answers": [
+          "Você não está cansado depois da viagem?"
+        ],
+        "explanation": "Cansado es un estado pasajero, por eso se usa estar y no ser.",
+        "wrongAnswers": [
+          {
+            "answer": "Você está não cansado depois da viagem?",
+            "why": "El error es el verbo (ser en vez de estar), no la posición de não."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la palabra interrogativa.",
+        "sentence": "Que é o seu nome?",
+        "answers": [
+          "Qual é o seu nome?"
+        ],
+        "explanation": "Para preguntar el nombre de alguien en portugués se usa Qual, no Que.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem é o seu nome?",
+            "why": "Quem pregunta por una persona, no corrige el uso incorrecto de que para pedir el nombre."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de ser/estar en esta oración.",
+        "sentence": "Mariana não está brasileira.",
+        "answers": [
+          "Mariana não é brasileira."
+        ],
+        "explanation": "La nacionalidad es una característica permanente, por eso se usa ser y no estar.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana está não brasileira.",
+            "why": "El error es el verbo (estar en vez de ser), no la posición de não."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de ser/estar en esta pregunta.",
+        "sentence": "Lucas pergunta: Você está casado?",
+        "answers": [
+          "Lucas pergunta: Você é casado?"
+        ],
+        "explanation": "El estado civil se expresa con ser: Você é casado?",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas pergunta: Você não está casado?",
+            "why": "El error original es el verbo (estar en vez de ser), no agregar una negación."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta al portugués.",
+        "spanish": "¿Vos no sos de Buenos Aires?",
+        "answers": [
+          "Você não é de Buenos Aires?",
+          "Não é de Buenos Aires?"
+        ],
+        "explanation": "El verbo concuerda con você (é) y não se coloca antes del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "Você sou não de Buenos Aires?",
+            "why": "El verbo debe concordar con você (é), no con eu (sou), y não va antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta al portugués.",
+        "spanish": "¿Cómo estás después del viaje?",
+        "answers": [
+          "Como você está depois da viagem?",
+          "Como está depois da viagem?"
+        ],
+        "explanation": "Para preguntar por el estado de alguien se usa estar: Como você está?",
+        "wrongAnswers": [
+          {
+            "answer": "Como você é depois da viagem?",
+            "why": "El cansancio o el estado después de un viaje es temporal, se usa estar, no ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta oración al portugués.",
+        "spanish": "No tengo hambre ahora.",
+        "answers": [
+          "Eu não estou com fome agora.",
+          "Não estou com fome agora."
+        ],
+        "explanation": "La expresión estar com fome usa el verbo estar porque describe un estado temporal.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não sou com fome agora.",
+            "why": "Para la sensación de hambre se usa estar, no ser."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta al portugués.",
+        "spanish": "¿Cuál es tu nombre?",
+        "answers": [
+          "Qual é o seu nome?",
+          "Qual é seu nome?"
+        ],
+        "explanation": "Para preguntar el nombre de alguien en portugués se usa siempre Qual.",
+        "wrongAnswers": [
+          {
+            "answer": "Que é o seu nome?",
+            "why": "En portugués no se usa que para preguntar el nombre, se usa qual."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta al portugués.",
+        "spanish": "¿Dónde queda la farmacia?",
+        "answers": [
+          "Onde fica a farmácia?",
+          "Onde é que fica a farmácia?"
+        ],
+        "explanation": "Onde fica se usa para preguntar por la ubicación de un lugar específico.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde é a farmácia?",
+            "why": "Para preguntar por la ubicación física de un lugar se usa fica, no é."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta oración al portugués.",
+        "spanish": "Ella no es médica, es enfermera.",
+        "answers": [
+          "Ela não é médica, é enfermeira.",
+          "Ela não é médica, ela é enfermeira."
+        ],
+        "explanation": "Não se coloca antes del verbo é para negar la profesión, y luego se afirma la profesión correcta.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é não médica, é enfermeira.",
+            "why": "Não debe ir antes del verbo, no después."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Juan não é do Rio de Janeiro.",
+        "alternatives": [],
+        "translation": "Juan no es de Río de Janeiro.",
+        "explanation": "El 'não' va pegado antes del verbo y suele sonar junto a él en el habla rápida; prestá atención también a la contracción obligatoria 'do' (de + o), que a veces se escucha muy breve."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você está nervosa para a entrevista?",
+        "alternatives": [],
+        "translation": "¿Estás nerviosa para la entrevista?",
+        "explanation": "Es una pregunta de sí o no: el orden de las palabras no cambia, solo sube la entonación al final, igual que en español rioplatense."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Qual é o seu cargo atual?",
+        "alternatives": [],
+        "translation": "¿Cuál es tu cargo actual?",
+        "explanation": "No confundas 'qual' con 'que': para preguntar por una opción entre varias (el cargo, el nombre) se usa 'qual', no 'que'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A gerente não está na sala agora.",
+        "alternatives": [],
+        "translation": "La gerenta no está en la sala ahora.",
+        "explanation": "El 'não' siempre se coloca justo antes del verbo ('não está'), nunca después; en el habla rápida puede sonar como una sola palabra."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "não",
+          "nau"
+        ],
+        "target": 0,
+        "meanings": [
+          "no",
+          "barco (nave)"
+        ],
+        "explanation": "En 'não' el sonido final es nasal (el aire sale por la nariz), mientras que en 'nau' el diptongo final es oral, sin nasalizar."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "esta",
+          "está"
+        ],
+        "target": 1,
+        "meanings": [
+          "esta (demostrativo)",
+          "está (verbo estar)"
+        ],
+        "explanation": "La tilde marca dónde cae la fuerza de la voz: en 'está' el acento está al final, y en 'esta' está al principio; eso cambia por completo cómo suena la palabra."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 0,
+        "meanings": [
+          "casa",
+          "caza (de animales)"
+        ],
+        "explanation": "La 's' entre vocales en portugués suena como 'z' (como en 'casa'), mientras que 'ç' siempre suena como 's' sorda, como en 'caça'."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre Mariana.",
+        "text": "Olá! Eu me chamo Mariana e moro em Porto Alegre. Eu não sou de Porto Alegre, eu sou de Curitiba. Eu sou professora, mas não sou professora de matemática, sou professora de português. Hoje eu não estou em casa, estou no trabalho. Meus alunos sempre perguntam: 'Qual é a sua cidade?' e eu respondo: 'Minha cidade é Curitiba.' Eles também perguntam: 'Você está cansada?' e eu digo: 'Não, não estou cansada, estou feliz.' Meu amigo João não é professor, ele é médico. Ele trabalha em um hospital grande. João não está em São Paulo agora, ele está em Porto Alegre também. Nós somos amigos desde a escola.",
+        "questions": [
+          {
+            "prompt": "¿De dónde es Mariana?",
+            "options": [
+              "De Salvador",
+              "De Porto Alegre",
+              "De Curitiba",
+              "De São Paulo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mariana dice 'eu não sou de Porto Alegre, eu sou de Curitiba': usa não + ser para negar y ser para decir su origen real."
+          },
+          {
+            "prompt": "¿De qué materia es profesora Mariana?",
+            "options": [
+              "De português",
+              "De matemática",
+              "De história",
+              "De inglês"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'não sou professora de matemática, sou professora de português': la negación con não aclara que no es de matemática."
+          },
+          {
+            "prompt": "¿Cómo está Mariana hoy, según lo que les responde a sus alumnos?",
+            "options": [
+              "Ocupada",
+              "Cansada",
+              "Triste",
+              "Feliz"
+            ],
+            "correctIndex": 3,
+            "explanation": "Mariana responde 'Não, não estou cansada, estou feliz': niega un estado con estar y afirma otro distinto."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la entrevista de Lucas y respondé las preguntas.",
+        "text": "Lucas está muito nervoso hoje. Ele tem uma entrevista de emprego em uma empresa nova. A entrevistadora se chama Beatriz. Ela pergunta: 'Qual é o seu nome completo?' Lucas responde: 'Meu nome é Lucas Ferreira.' Beatriz pergunta: 'Onde você mora agora?' Lucas diz: 'Eu moro em Belo Horizonte, mas não sou de Belo Horizonte, sou de Salvador.' Beatriz pergunta: 'Você está desempregado?' Lucas responde: 'Não, não estou desempregado, trabalho em outra empresa, mas quero um novo emprego.' Beatriz sorri e pergunta: 'Quando você pode começar?' Lucas diz: 'Eu posso começar na próxima semana.' No final, Beatriz diz: 'Você não está nervoso agora?' Lucas responde: 'Um pouco, mas estou feliz com a entrevista.'",
+        "questions": [
+          {
+            "prompt": "¿De dónde es Lucas?",
+            "options": [
+              "De Curitiba",
+              "De São Paulo",
+              "De Salvador",
+              "De Belo Horizonte"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucas dice 'não sou de Belo Horizonte, sou de Salvador': la negación con não + ser señala que su origen real es Salvador."
+          },
+          {
+            "prompt": "¿Qué responde Lucas cuando Beatriz le pregunta si está desempleado?",
+            "options": [
+              "Sim, estou desempregado",
+              "Não, não estou desempregado",
+              "Estou de férias",
+              "Não sei"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lucas responde 'Não, não estou desempregado': repite el verbo estar después de não para negar esa pregunta de sí o no."
+          },
+          {
+            "prompt": "¿Cuándo puede empezar a trabajar Lucas?",
+            "options": [
+              "Hoy mismo",
+              "La próxima semana",
+              "Mañana",
+              "El próximo mes"
+            ],
+            "correctIndex": 1,
+            "explanation": "A la pregunta 'Quando você pode começar?' Lucas contesta 'na próxima semana', usando quando para preguntar por el tiempo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación y respondé las preguntas.",
+        "situation": "Rafael y Camila se encuentran en un café en Florianópolis, Brasil, y charlan sobre cómo están y de dónde son.",
+        "lines": [
+          {
+            "speaker": "Rafael",
+            "text": "Oi, Camila! Como você está?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Oi, Rafael! Estou bem, e você?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Estou bem também. Você não é de Florianópolis, né?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Não, eu não sou de Florianópolis, sou de Recife."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Que legal! E você está aqui de férias?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Não, não estou de férias. Estou aqui a trabalho."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Onde você trabalha agora?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Eu trabalho em um hotel perto da praia."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Camila?",
+            "options": [
+              "De Florianópolis",
+              "De Recife",
+              "De Salvador",
+              "De São Paulo"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila dice 'não sou de Florianópolis, sou de Recife': niega con não + ser y luego afirma su verdadero origen."
+          },
+          {
+            "prompt": "¿Camila está de vacaciones en Florianópolis?",
+            "options": [
+              "No sabe",
+              "No, está trabajando",
+              "Sí, está de vacaciones",
+              "Está estudiando"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila responde 'Não, não estou de férias. Estou aqui a trabalho': niega un estado temporal con não + estar."
+          },
+          {
+            "prompt": "¿Dónde trabaja Camila?",
+            "options": [
+              "En un restaurante",
+              "En un hotel cerca de la playa",
+              "En una escuela",
+              "En un hospital"
+            ],
+            "correctIndex": 1,
+            "explanation": "A la pregunta 'Onde você trabalha agora?' Camila responde 'em um hotel perto da praia', usando onde para preguntar por el lugar."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación en el consultorio y respondé las preguntas.",
+        "situation": "En un consultorio médico de Brasil, el doctor Pedro atiende a su paciente Ana y le pregunta cómo se siente.",
+        "lines": [
+          {
+            "speaker": "Dr. Pedro",
+            "text": "Bom dia, Ana. Como você está hoje?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Bom dia, doutor. Eu não estou muito bem."
+          },
+          {
+            "speaker": "Dr. Pedro",
+            "text": "O que você sente?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Estou com dor de cabeça e estou cansada."
+          },
+          {
+            "speaker": "Dr. Pedro",
+            "text": "Você está com febre?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Não, não estou com febre."
+          },
+          {
+            "speaker": "Dr. Pedro",
+            "text": "Você é alérgica a algum remédio?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Não, eu não sou alérgica a nada."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo se siente Ana hoy?",
+            "options": [
+              "Con mucha energía",
+              "Muy feliz",
+              "Muy bien",
+              "No muy bien"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana responde 'Eu não estou muito bem': usa não + estar para negar que se sienta bien."
+          },
+          {
+            "prompt": "¿Ana tiene fiebre?",
+            "options": [
+              "Sí, tiene fiebre",
+              "No, no tiene fiebre",
+              "No sabe",
+              "Tiene un poco de fiebre"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana contesta 'Não, não estou com febre': repite não antes de estar para responder que no tiene fiebre."
+          },
+          {
+            "prompt": "¿Ana es alérgica a algún remedio?",
+            "options": [
+              "No sabe",
+              "Es alérgica a dos remedios",
+              "Sí, es alérgica",
+              "No, no es alérgica"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana responde 'Não, eu não sou alérgica a nada': usa não + ser porque ser alérgico es una característica, no un estado pasajero."
+          }
+        ]
+      }
+    ],
+    "apresentacao": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Meu nome ___ Lucas.",
+        "options": [
+          "sou",
+          "é",
+          "estou",
+          "tenho"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'meu nome' se usa 'é', la forma de 'ser' para la tercera persona singular (el nombre 'es' tal cosa).",
+        "optionNotes": [
+          "Incorrecta: 'sou' corresponde a 'eu', pero el sujeto de la oración es 'nome', no 'eu'.",
+          "Correcta: 'é' es la forma de 'ser' que corresponde a 'nome'.",
+          "Incorrecta: 'estar' no se usa para presentar el nombre.",
+          "Incorrecta: 'ter' no se usa para decir cómo te llamás."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Eu ___ de Mendoza.",
+        "options": [
+          "tenho",
+          "sou",
+          "moro",
+          "estou"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para indicar el origen (de dónde es alguien) se usa 'ser', no 'estar'.",
+        "optionNotes": [
+          "Incorrecta: 'ter' no expresa origen.",
+          "Correcta: 'ser' indica origen, igual que en español.",
+          "Incorrecta: 'morar' significa vivir, no corresponde con 'de Mendoza' como origen.",
+          "Incorrecta: 'estar' no se usa para indicar de dónde es alguien."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Eu ___ 28 anos.",
+        "options": [
+          "estou",
+          "é",
+          "sou",
+          "tenho"
+        ],
+        "correctIndex": 3,
+        "explanation": "La edad en portugués se expresa con el verbo 'ter' (tenho), igual que en español con 'tener'.",
+        "optionNotes": [
+          "Incorrecta: 'estar' no expresa edad.",
+          "Incorrecta: 'é' es forma de tercera persona, no corresponde a 'eu'.",
+          "Incorrecta: error típico de hispanohablantes, 'ser' no se usa para la edad.",
+          "Correcta: 'ter' es el verbo que se usa para la edad."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Eu ___ designer.",
+        "options": [
+          "sou",
+          "estou",
+          "moro",
+          "tenho"
+        ],
+        "correctIndex": 0,
+        "explanation": "La profesión se expresa con el verbo 'ser'.",
+        "optionNotes": [
+          "Correcta: la profesión se dice con 'ser'.",
+          "Incorrecta: 'estar' no se usa para la profesión, que es algo permanente.",
+          "Incorrecta: 'morar' significa vivir, no tiene sentido con una profesión.",
+          "Incorrecta: 'ter' no expresa profesión."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'morar' para completar la oración.",
+        "prompt": "Eu ___ em Florianópolis.",
+        "options": [
+          "moro",
+          "sou",
+          "tenho",
+          "estou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para decir dónde vivís habitualmente se usa el verbo 'morar', no 'ser', 'ter' ni 'estar'.",
+        "optionNotes": [
+          "Correcta: 'morar' significa vivir en un lugar.",
+          "Incorrecta: 'ser' no indica el lugar donde vivís.",
+          "Incorrecta: 'ter' no corresponde para expresar dónde se vive.",
+          "Incorrecta: aunque 'estar' puede indicar ubicación momentánea, para decir dónde vivís se usa 'morar'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para completar la oración.",
+        "prompt": "Eu ___ muito feliz hoje.",
+        "options": [
+          "estou",
+          "moro",
+          "tenho",
+          "sou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Los estados de ánimo temporales se expresan con 'estar'.",
+        "optionNotes": [
+          "Correcta: 'estar' se usa para estados de ánimo pasajeros.",
+          "Incorrecta: 'morar' no tiene sentido en esta oración.",
+          "Incorrecta: 'ter' no corresponde aquí.",
+          "Incorrecta: 'ser' no expresa estados de ánimo temporales."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Meu nome ___ Ana.",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "Con 'meu nome' se usa 'é', la forma de 'ser' para la tercera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "'Sou' corresponde a 'eu', pero el sujeto de la oración es 'nome', no 'eu'."
+          },
+          {
+            "answer": "estou",
+            "why": "'Estar' no se usa para presentar el nombre."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Eu ___ de Rosario.",
+        "hint": "(ser)",
+        "answers": [
+          "sou"
+        ],
+        "explanation": "Para indicar origen se usa 'ser': 'eu sou de...'.",
+        "wrongAnswers": [
+          {
+            "answer": "estou",
+            "why": "'Estar' no indica de dónde es alguien."
+          },
+          {
+            "answer": "moro",
+            "why": "'Morar' significa vivir, no indica el origen de una persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ter' para decir la edad.",
+        "sentence": "Eu ___ 30 anos.",
+        "hint": "(ter)",
+        "answers": [
+          "tenho"
+        ],
+        "explanation": "La edad se expresa con 'ter', igual que en español con 'tener'.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "'Ser' no se usa para la edad en portugués."
+          },
+          {
+            "answer": "estou",
+            "why": "'Estar' no expresa edad."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'ser'.",
+        "sentence": "Ela ___ professora.",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "La profesión se expresa con 'ser', aquí en tercera persona singular: 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "'Estar' no se usa para la profesión."
+          },
+          {
+            "answer": "tem",
+            "why": "'Ter' no expresa profesión."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'morar'.",
+        "sentence": "Nós ___ em Curitiba.",
+        "hint": "(morar)",
+        "answers": [
+          "moramos"
+        ],
+        "explanation": "Para decir dónde vivís se usa 'morar', aquí conjugado para 'nós': 'moramos'.",
+        "wrongAnswers": [
+          {
+            "answer": "somos",
+            "why": "'Ser' no indica el lugar donde vivís."
+          },
+          {
+            "answer": "estamos",
+            "why": "Para decir dónde se vive habitualmente se usa 'morar', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'estar'.",
+        "sentence": "Eu ___ um pouco nervoso.",
+        "hint": "(estar)",
+        "answers": [
+          "estou"
+        ],
+        "explanation": "Los estados de ánimo temporales se expresan con 'estar'.",
+        "wrongAnswers": [
+          {
+            "answer": "sou",
+            "why": "'Ser' no expresa estados de ánimo pasajeros."
+          },
+          {
+            "answer": "tenho",
+            "why": "'Ter' no corresponde para describir un estado de ánimo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Meu nome é Lucas e eu sou de Mendoza.",
+        "alternatives": [
+          "Eu sou de Mendoza e meu nome é Lucas."
+        ],
+        "translation": "Me llamo Lucas y soy de Mendoza.",
+        "explanation": "'é' presenta el nombre y 'sou' indica el origen; ambos vienen de 'ser' pero cumplen funciones distintas.",
+        "tokens": [
+          "e",
+          "eu",
+          "de",
+          "é",
+          "sou",
+          "nome",
+          "Mendoza",
+          "Lucas",
+          "Meu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu tenho vinte e oito anos e sou designer.",
+        "alternatives": [
+          "Eu sou designer e tenho vinte e oito anos."
+        ],
+        "translation": "Tengo veintiocho años y soy diseñador.",
+        "explanation": "La edad se expresa con 'ter' y la profesión con 'ser', dos verbos distintos en la misma oración.",
+        "tokens": [
+          "tenho",
+          "vinte",
+          "Eu",
+          "oito",
+          "designer",
+          "anos",
+          "e",
+          "e",
+          "sou"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós somos de Rosario, mas moramos em Curitiba.",
+        "alternatives": [
+          "Nós moramos em Curitiba, mas somos de Rosario."
+        ],
+        "translation": "Nosotros somos de Rosario, pero vivimos en Curitiba.",
+        "explanation": "'somos' indica origen con 'ser' y 'moramos' indica el lugar donde se vive con 'morar'.",
+        "tokens": [
+          "Curitiba",
+          "Nós",
+          "somos",
+          "em",
+          "moramos",
+          "de",
+          "Rosario,",
+          "mas"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Estou muito feliz de estar aqui hoje.",
+        "alternatives": [],
+        "translation": "Estoy muy feliz de estar acá hoy.",
+        "explanation": "'estar' se repite porque describe tanto el estado de ánimo como la situación de encontrarse en un lugar.",
+        "tokens": [
+          "hoje",
+          "estar",
+          "de",
+          "Estou",
+          "muito",
+          "feliz",
+          "aqui"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ele se chama Pedro e tem vinte e cinco anos.",
+        "alternatives": [
+          "Ele tem vinte e cinco anos e se chama Pedro."
+        ],
+        "translation": "Él se llama Pedro y tiene veinticinco años.",
+        "explanation": "La edad siempre se expresa con 'ter', nunca con 'ser', igual que en español con 'tener'.",
+        "tokens": [
+          "Pedro",
+          "tem",
+          "anos",
+          "e",
+          "e",
+          "cinco",
+          "vinte",
+          "Ele",
+          "se",
+          "chama"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con ser, estar o ter.",
+        "sentence": "Eu sou 28 anos.",
+        "answers": [
+          "Eu tenho 28 anos."
+        ],
+        "explanation": "La edad se expresa con 'ter', no con 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu estou 28 anos.",
+            "why": "'Estar' tampoco se usa para la edad; el verbo correcto es 'ter'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con ser, estar o ter.",
+        "sentence": "Eu sou muito nervoso hoje.",
+        "answers": [
+          "Eu estou muito nervoso hoje."
+        ],
+        "explanation": "Los estados de ánimo temporales se expresan con 'estar', no con 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tenho muito nervoso hoje.",
+            "why": "'Ter' no se usa para expresar estados de ánimo; el verbo correcto es 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con ser, estar o ter.",
+        "sentence": "Eu sou morando em São Paulo.",
+        "answers": [
+          "Eu estou morando em São Paulo."
+        ],
+        "explanation": "Para una acción en curso (gerúndio) se usa 'estar', no 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou morado em São Paulo.",
+            "why": "El problema no es la forma de 'morar', sino el auxiliar: debe ser 'estar' + gerúndio."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con ser, estar o ter.",
+        "sentence": "Eu estou de Rosario.",
+        "answers": [
+          "Eu sou de Rosario."
+        ],
+        "explanation": "El origen se expresa con 'ser', no con 'estar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tenho de Rosario.",
+            "why": "'Ter' no se usa para indicar origen, el verbo correcto es 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con ser, estar o ter.",
+        "sentence": "Ela tem médica.",
+        "answers": [
+          "Ela é médica."
+        ],
+        "explanation": "La profesión se expresa con 'ser', no con 'ter'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela está médica.",
+            "why": "'Estar' no se usa para la profesión, que es una característica permanente; el verbo correcto es 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Me llamo Sofía y soy de Rosario.",
+        "answers": [
+          "Meu nome é Sofía e eu sou de Rosário.",
+          "Meu nome é Sofía e sou de Rosário."
+        ],
+        "explanation": "'Me llamo' se traduce con 'meu nome é' y el origen se expresa con 'sou'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu nome é Sofía e eu estou de Rosário.",
+            "why": "'Estar' no se usa para indicar origen, el verbo correcto es 'ser' (sou)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Tengo 25 años y soy médica.",
+        "answers": [
+          "Eu tenho 25 anos e sou médica.",
+          "Tenho 25 anos e sou médica."
+        ],
+        "explanation": "La edad va con 'ter' (tenho) y la profesión con 'ser' (sou).",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou 25 anos e sou médica.",
+            "why": "La edad no se expresa con 'ser', se usa 'ter': 'tenho 25 anos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Vivo en San Pablo desde marzo.",
+        "answers": [
+          "Eu moro em São Paulo desde março.",
+          "Moro em São Paulo desde março."
+        ],
+        "explanation": "'Vivir en un lugar' se traduce con 'morar em', sin artículo antes del nombre de la ciudad.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu moro no São Paulo desde março.",
+            "why": "Las ciudades generalmente no llevan artículo en portugués: se dice 'em São Paulo', no 'no São Paulo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Estoy un poco nerviosa, pero todo bien.",
+        "answers": [
+          "Estou um pouco nervosa, mas tudo bem.",
+          "Eu estou um pouco nervosa, mas tudo bem."
+        ],
+        "explanation": "El estado de ánimo temporal se expresa con 'estar' (estou).",
+        "wrongAnswers": [
+          {
+            "answer": "Sou um pouco nervosa, mas tudo bem.",
+            "why": "'Ser' no se usa para estados de ánimo pasajeros, el verbo correcto es 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "¿Cuál es tu profesión?",
+        "answers": [
+          "Qual é a sua profissão?",
+          "Qual é a tua profissão?"
+        ],
+        "explanation": "Para preguntar la profesión se usa 'ser' (é) junto con 'qual', igual que en español 'cuál es'.",
+        "wrongAnswers": [
+          {
+            "answer": "Qual está a sua profissão?",
+            "why": "'Estar' no se usa para preguntar por la profesión, que es una característica permanente; corresponde 'ser' (é)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí al portugués.",
+        "spanish": "Soy argentino y estoy viviendo en Brasil.",
+        "answers": [
+          "Eu sou argentino e estou morando no Brasil.",
+          "Sou argentino e estou morando no Brasil.",
+          "Eu sou argentino e estou vivendo no Brasil."
+        ],
+        "explanation": "La nacionalidad se expresa con 'ser' (sou) y la acción en curso de vivir con 'estar' + gerúndio (estou morando).",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou argentino e sou morando no Brasil.",
+            "why": "Para una acción en curso se usa 'estar' + gerúndio, no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Meu nome é Julia e sou de Córdoba.",
+        "alternatives": [],
+        "translation": "Me llamo Julia y soy de Córdoba.",
+        "explanation": "Acá 'sou' se usa para origen, algo permanente; no lo confundas con 'estou', que es para estados temporales."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Eu tenho vinte e oito anos.",
+        "alternatives": [
+          "Eu tenho 28 anos."
+        ],
+        "translation": "Tengo veintiocho años.",
+        "explanation": "La edad en portugués se dice con 'ter', igual que en español con 'tener'; nunca se usa 'ser' para la edad."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Eu moro em Florianópolis agora.",
+        "alternatives": [],
+        "translation": "Vivo en Florianópolis ahora.",
+        "explanation": "Con nombres de ciudades se usa 'em' sin artículo: 'em Florianópolis', no 'no Florianópolis'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Estou um pouco nervosa, mas feliz.",
+        "alternatives": [],
+        "translation": "Estoy un poco nerviosa, pero feliz.",
+        "explanation": "'Estou' se usa para un estado de ánimo temporal, como estar nerviosa en un momento puntual."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "é",
+          "e"
+        ],
+        "target": 0,
+        "meanings": [
+          "es (del verbo ser)",
+          "y (conjunción)"
+        ],
+        "explanation": "El acento en 'é' marca una vocal abierta y es la forma del verbo ser; 'e' sin acento es la conjunción 'y', con sonido más cerrado."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "só",
+          "sou"
+        ],
+        "target": 0,
+        "meanings": [
+          "solo/solamente",
+          "soy"
+        ],
+        "explanation": "'Sou' tiene un diptongo 'ou' que se desliza, mientras que 'só' es una vocal abierta y corta marcada con acento agudo; prestá atención a si el sonido se desliza o se corta de golpe."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "mau",
+          "mão"
+        ],
+        "target": 1,
+        "meanings": [
+          "malo",
+          "mano"
+        ],
+        "explanation": "'Mão' termina en un sonido nasal, como si el aire saliera por la nariz; 'mau' es un diptongo oral sin nasalidad."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la presentación de Rafael y respondé las preguntas.",
+        "text": "Meu nome é Rafael. Eu sou de Buenos Aires, mas moro em São Paulo há dois anos. Eu tenho 27 anos e sou professor de espanhol. Hoje eu estou um pouco cansado, porque trabalho muito. Minha esposa se chama Ana e ela é brasileira. Nós estamos muito felizes aqui em São Paulo. Minha casa é pequena, mas é muito bonita. Eu estou aprendendo português todos os dias. Meus pais são de Córdoba e eles estão de férias no Brasil agora. Eles estão muito contentes com a viagem. Eu sou muito feliz com a minha vida no Brasil.",
+        "questions": [
+          {
+            "prompt": "¿De dónde es Rafael?",
+            "options": [
+              "Rio de Janeiro",
+              "Córdoba",
+              "São Paulo",
+              "Buenos Aires"
+            ],
+            "correctIndex": 3,
+            "explanation": "Rafael dice 'Eu sou de Buenos Aires', usando el verbo ser para indicar su origen."
+          },
+          {
+            "prompt": "¿Cómo está Rafael hoy?",
+            "options": [
+              "Cansado",
+              "Triste",
+              "Feliz",
+              "Enojado"
+            ],
+            "correctIndex": 0,
+            "explanation": "Rafael cuenta 'Hoje eu estou um pouco cansado', usando estar para describir un estado temporal."
+          },
+          {
+            "prompt": "¿Qué están haciendo los padres de Rafael en Brasil?",
+            "options": [
+              "Están estudiando",
+              "Están buscando casa",
+              "Están trabajando",
+              "Están de vacaciones"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'eles estão de férias no Brasil agora', es decir, están de vacaciones."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la presentación de Camila en el consultorio médico y respondé las preguntas.",
+        "text": "Olá! Meu nome é Camila. Eu sou de Mendoza, mas estou morando em Florianópolis desde janeiro. Eu tenho 24 anos e sou estudante de medicina. Hoje eu estou no consultório porque estou com dor de cabeça. O médico se chama Dr. Paulo e ele é muito simpático. Ele está perguntando sobre a minha saúde. Eu estou um pouco nervosa, mas tudo bem. Minha família é de Mendoza e eles estão bem. Eu moro perto do hospital e estou muito contente com a cidade. Amanhã eu tenho uma consulta com outro médico.",
+        "questions": [
+          {
+            "prompt": "¿Por qué está Camila en el consultorio?",
+            "options": [
+              "Porque busca trabajo",
+              "Porque está de vacaciones",
+              "Porque es médica",
+              "Porque tiene dolor de cabeza"
+            ],
+            "correctIndex": 3,
+            "explanation": "Camila dice 'estou com dor de cabeça', usando estar + con para describir un malestar temporal."
+          },
+          {
+            "prompt": "¿Cómo se siente Camila?",
+            "options": [
+              "Triste",
+              "Enojada",
+              "Nerviosa",
+              "Feliz"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Eu estou um pouco nervosa', usando estar para un estado emocional pasajero."
+          },
+          {
+            "prompt": "¿Dónde vive Camila?",
+            "options": [
+              "En Mendoza",
+              "En Florianópolis",
+              "En Rio de Janeiro",
+              "En Buenos Aires"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila cuenta 'estou morando em Florianópolis desde janeiro', indicando dónde vive actualmente."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre dos amigos y respondé las preguntas.",
+        "situation": "Marina y Diego se conocen en un bar en Porto Alegre y se presentan.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Oi! Qual é o seu nome?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Meu nome é Diego. E você?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Eu sou Marina. De onde você é?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Eu sou de Rosario, na Argentina."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Que legal! Você está morando aqui em Porto Alegre?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Sim, estou morando aqui há três meses."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Quantos anos você tem?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Eu tenho 30 anos."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Diego?",
+            "options": [
+              "Rosario",
+              "Buenos Aires",
+              "Córdoba",
+              "Mendoza"
+            ],
+            "correctIndex": 0,
+            "explanation": "Diego dice 'Eu sou de Rosario, na Argentina', usando ser para indicar su origen."
+          },
+          {
+            "prompt": "¿Cuánto tiempo hace que Diego vive en Porto Alegre?",
+            "options": [
+              "Un mes",
+              "Seis meses",
+              "Tres meses",
+              "Un año"
+            ],
+            "correctIndex": 2,
+            "explanation": "Diego responde 'estou morando aqui há três meses', usando estar + gerundio para una acción en curso."
+          },
+          {
+            "prompt": "¿Cuántos años tiene Diego?",
+            "options": [
+              "25",
+              "35",
+              "30",
+              "28"
+            ],
+            "correctIndex": 2,
+            "explanation": "Diego dice 'Eu tenho 30 anos', usando el verbo ter para expresar la edad, como en español."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas.",
+        "situation": "El Sr. Carlos entrevista a Luiza para un puesto de trabajo en una oficina de Curitiba.",
+        "lines": [
+          {
+            "speaker": "Carlos",
+            "text": "Boa tarde! Qual é o seu nome completo?"
+          },
+          {
+            "speaker": "Luiza",
+            "text": "Boa tarde! Meu nome é Luiza Fernandes."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Você é de Curitiba?"
+          },
+          {
+            "speaker": "Luiza",
+            "text": "Não, eu sou de Florianópolis, mas estou morando em Curitiba agora."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Quantos anos você tem?"
+          },
+          {
+            "speaker": "Luiza",
+            "text": "Eu tenho 26 anos."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Você está nervosa?"
+          },
+          {
+            "speaker": "Luiza",
+            "text": "Um pouco, mas estou muito feliz com essa oportunidade."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Luiza?",
+            "options": [
+              "Florianópolis",
+              "Curitiba",
+              "São Paulo",
+              "Porto Alegre"
+            ],
+            "correctIndex": 0,
+            "explanation": "Luiza dice 'eu sou de Florianópolis', usando ser para indicar su origen, aunque ahora vive en Curitiba."
+          },
+          {
+            "prompt": "¿Cuántos años tiene Luiza?",
+            "options": [
+              "28",
+              "26",
+              "25",
+              "24"
+            ],
+            "correctIndex": 1,
+            "explanation": "Luiza responde 'Eu tenho 26 anos', usando el verbo ter para la edad."
+          },
+          {
+            "prompt": "¿Cómo se siente Luiza con la oportunidad de trabajo?",
+            "options": [
+              "Feliz",
+              "Triste",
+              "Enojada",
+              "Indiferente"
+            ],
+            "correctIndex": 0,
+            "explanation": "Luiza dice 'estou muito feliz com essa oportunidade', usando estar para describir su estado de ánimo actual."
+          }
+        ]
+      }
+    ]
+  }
+}

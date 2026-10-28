@@ -1,0 +1,3802 @@
+{
+  "subtopics": {
+    "o-que-quem-como": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar por un objeto.",
+        "prompt": "Camila mostra uma caixa. Juan pergunta: ___ é isso?",
+        "options": [
+          "Como",
+          "Quem",
+          "O que",
+          "Que"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para preguntar qué es una cosa siempre se usa 'o que' completo, nunca se saca el 'o'.",
+        "optionNotes": [
+          "No: 'como' pregunta por el modo o el estado, no identifica qué es algo.",
+          "No: 'quem' se usa para personas, no para objetos.",
+          "Correcto: 'o que' se usa para preguntar qué es un objeto.",
+          "No: en portugués no se puede sacar el 'o'; la forma correcta siempre es 'o que'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar por una persona.",
+        "prompt": "Juan vê uma mulher no escritório e pergunta: ___ é aquela mulher?",
+        "options": [
+          "Quem",
+          "O que",
+          "Onde",
+          "Como"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Quem' se usa para preguntar por la identidad de una persona.",
+        "optionNotes": [
+          "Correcto: 'quem' se usa para preguntar quién es alguien.",
+          "No: 'o que' se usa para cosas, no para personas.",
+          "No: 'onde' pregunta por un lugar, no corresponde acá.",
+          "No: 'como' pregunta por el modo o el estado, no por la identidad."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar por el estado de alguien.",
+        "prompt": "Juan pergunta ao médico: ___ você está hoje, doutor?",
+        "options": [
+          "O que",
+          "Quem",
+          "Como",
+          "Onde"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Como' se usa para preguntar por el modo o el estado de alguien.",
+        "optionNotes": [
+          "No: 'o que' se usa para cosas, no para preguntar cómo está alguien.",
+          "No: 'quem' pregunta por la identidad, no por el estado.",
+          "Correcto: 'como' se usa para preguntar por el estado.",
+          "No: 'onde' pregunta por un lugar, no corresponde acá."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar qué quiere alguien.",
+        "prompt": "Na lanchonete, o garçom pergunta: ___ você quer para o almoço?",
+        "options": [
+          "Quem",
+          "Que",
+          "O que",
+          "Como"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para preguntar qué quiere alguien se usa 'o que', sin sacar el 'o'.",
+        "optionNotes": [
+          "No: 'quem' se usa para personas, no para preguntar qué se quiere comer.",
+          "No: no se puede sacar el 'o'; la forma correcta es 'o que'.",
+          "Correcto: 'o que' se usa para preguntar por una cosa.",
+          "No: 'como' pregunta por el modo, no por lo que alguien quiere."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta con el orden correcto de las palabras.",
+        "prompt": "Qual é a forma correta de perguntar 'quién sos vos'?",
+        "options": [
+          "Você é quem?",
+          "É quem você?",
+          "Quem você é?",
+          "Quem é você?"
+        ],
+        "correctIndex": 3,
+        "explanation": "La palabra interrogativa siempre va al principio de la pregunta en portugués, nunca al final como en el español hablado informal.",
+        "optionNotes": [
+          "No: 'quem' quedó al final, pero debe ir al principio de la pregunta.",
+          "No: este orden no es natural en portugués.",
+          "No: el orden de las demás palabras no es el habitual después de 'quem'.",
+          "Correcto: 'quem' va al principio, seguido del verbo y el pronombre."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar cómo se llama alguien.",
+        "prompt": "Juan quer saber o nome do novo colega. Ele pergunta: ___ você se chama?",
+        "options": [
+          "Como",
+          "Onde",
+          "Quem",
+          "O que"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para preguntar cómo se llama alguien se usa 'como', que pregunta por el modo.",
+        "optionNotes": [
+          "Correcto: 'como' se usa en la expresión 'como você se chama'.",
+          "No: 'onde' pregunta por un lugar, no corresponde acá.",
+          "No: 'quem' se usa para identificar a una persona, no para preguntar cómo se llama.",
+          "No: 'o que' se usa para cosas, no corresponde acá."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ é isso na sua mala?",
+        "hint": "(pregunta por una cosa)",
+        "answers": [
+          "O que"
+        ],
+        "explanation": "Para preguntar qué es un objeto se usa 'o que' completo.",
+        "wrongAnswers": [
+          {
+            "answer": "Que",
+            "why": "En portugués no se puede sacar el 'o'; siempre se dice 'o que'."
+          },
+          {
+            "answer": "Quem",
+            "why": "'Quem' se usa para personas, no para objetos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ é você?",
+        "hint": "(pregunta por una persona)",
+        "answers": [
+          "Quem"
+        ],
+        "explanation": "'Quem' se usa para preguntar por la identidad de una persona.",
+        "wrongAnswers": [
+          {
+            "answer": "O que",
+            "why": "'O que' se usa para cosas, no para preguntar quién es alguien."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ você está, Camila?",
+        "hint": "(pregunta por el estado)",
+        "answers": [
+          "Como"
+        ],
+        "explanation": "'Como' se usa para preguntar por el estado de alguien.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem",
+            "why": "'Quem' pregunta por la identidad de una persona, no por su estado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ se escreve o seu nome?",
+        "hint": "(pregunta por el modo)",
+        "answers": [
+          "Como"
+        ],
+        "explanation": "'Como' se usa para preguntar por el modo en que se hace algo.",
+        "wrongAnswers": [
+          {
+            "answer": "O que",
+            "why": "'O que' no pregunta por el modo en que se hace algo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ fala português na sala?",
+        "hint": "(pregunta por una persona)",
+        "answers": [
+          "Quem"
+        ],
+        "explanation": "'Quem' se usa para preguntar qué persona realiza una acción.",
+        "wrongAnswers": [
+          {
+            "answer": "O que",
+            "why": "'O que' se usa para cosas, no para personas que realizan una acción."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ você quer comer hoje?",
+        "hint": "(pregunta por una cosa)",
+        "answers": [
+          "O que"
+        ],
+        "explanation": "Para preguntar qué quiere comer alguien se usa 'o que' completo.",
+        "wrongAnswers": [
+          {
+            "answer": "Que",
+            "why": "No se puede quitar el 'o'; la forma correcta siempre es 'o que'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta.",
+        "sentence": "O que é isso na caixa?",
+        "alternatives": [],
+        "translation": "¿Qué es eso en la caja?",
+        "explanation": "La pregunta por una cosa empieza con 'o que', completo, al principio de la oración.",
+        "tokens": [
+          "é",
+          "O",
+          "que",
+          "na",
+          "caixa",
+          "isso"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta.",
+        "sentence": "Quem é aquele homem alto?",
+        "alternatives": [],
+        "translation": "¿Quién es aquel hombre alto?",
+        "explanation": "La pregunta por una persona empieza con 'quem', al principio de la oración.",
+        "tokens": [
+          "Quem",
+          "homem",
+          "aquele",
+          "alto",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta.",
+        "sentence": "Como você se chama, moço?",
+        "alternatives": [],
+        "translation": "¿Cómo te llamás, muchacho?",
+        "explanation": "La pregunta por el modo empieza con 'como', al principio de la oración.",
+        "tokens": [
+          "você",
+          "moço",
+          "Como",
+          "chama,",
+          "se"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta.",
+        "sentence": "O que você quer para o jantar?",
+        "alternatives": [],
+        "translation": "¿Qué querés para la cena?",
+        "explanation": "La pregunta por una cosa empieza con 'o que', completo, al principio de la oración.",
+        "tokens": [
+          "você",
+          "jantar",
+          "o",
+          "quer",
+          "O",
+          "para",
+          "que"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta.",
+        "sentence": "Como está o tempo hoje em São Paulo?",
+        "alternatives": [],
+        "translation": "¿Cómo está el clima hoy en San Pablo?",
+        "explanation": "La pregunta por el estado empieza con 'como', al principio de la oración.",
+        "tokens": [
+          "o",
+          "São",
+          "tempo",
+          "em",
+          "Paulo",
+          "está",
+          "Como",
+          "hoje"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con las palabras interrogativas y corregilo.",
+        "sentence": "Que é isso na mesa?",
+        "answers": [
+          "O que é isso na mesa?"
+        ],
+        "explanation": "En portugués no se puede sacar el 'o' de 'o que'; siempre debe decirse completo.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem é isso na mesa?",
+            "why": "'Quem' se usa para personas, no para preguntar qué es un objeto sobre la mesa."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con las palabras interrogativas y corregilo.",
+        "sentence": "Quem é isso na sua mão?",
+        "answers": [
+          "O que é isso na sua mão?"
+        ],
+        "explanation": "'Quem' se usa solo para personas; para objetos siempre se usa 'o que'.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem é isto na sua mão?",
+            "why": "El problema no es 'isso' sino usar 'quem' para un objeto; debe usarse 'o que'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con las palabras interrogativas y corregilo.",
+        "sentence": "Você é quem?",
+        "answers": [
+          "Quem é você?"
+        ],
+        "explanation": "La palabra interrogativa tiene que ir al principio de la pregunta en portugués, no al final.",
+        "wrongAnswers": [
+          {
+            "answer": "Você é o que?",
+            "why": "Cambiar 'quem' por 'o que' no corrige el error de orden; además 'o que' no se usa para preguntar por personas."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con las palabras interrogativas y corregilo.",
+        "sentence": "Você se chama como?",
+        "answers": [
+          "Como você se chama?"
+        ],
+        "explanation": "La palabra interrogativa 'como' debe ir al principio de la pregunta, no al final.",
+        "wrongAnswers": [
+          {
+            "answer": "Você se chama quem?",
+            "why": "'Quem' no corresponde acá; además el error principal es la posición de la palabra interrogativa, que debe ir al principio."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con las palabras interrogativas y corregilo.",
+        "sentence": "Fala português quem aqui?",
+        "answers": [
+          "Quem fala português aqui?"
+        ],
+        "explanation": "'Quem' debe ir al principio de la pregunta cuando se pregunta qué persona realiza una acción.",
+        "wrongAnswers": [
+          {
+            "answer": "O que fala português aqui?",
+            "why": "'O que' se usa para cosas, no para preguntar qué persona habla portugués."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Qué es eso?",
+        "answers": [
+          "O que é isso?"
+        ],
+        "explanation": "Para preguntar qué es algo se usa 'o que', completo, al principio de la pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Que é isso?",
+            "why": "No se puede sacar el 'o'; la forma correcta es 'o que'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Quién sos vos?",
+        "answers": [
+          "Quem é você?"
+        ],
+        "explanation": "'Quem' se usa para preguntar por la identidad de una persona, y va al principio de la pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Você é quem?",
+            "why": "La palabra interrogativa debe ir al principio de la pregunta, no al final."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Cómo estás, Camila?",
+        "answers": [
+          "Como você está, Camila?",
+          "Como está você, Camila?"
+        ],
+        "explanation": "'Como' se usa para preguntar por el estado de alguien.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem você está, Camila?",
+            "why": "'Quem' se usa para personas, no para preguntar por el estado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Qué querés para el almuerzo?",
+        "answers": [
+          "O que você quer para o almoço?"
+        ],
+        "explanation": "Para preguntar qué quiere alguien se usa 'o que', completo.",
+        "wrongAnswers": [
+          {
+            "answer": "Que você quer para o almoço?",
+            "why": "No se puede sacar el 'o'; debe decirse 'o que'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Quién habla español acá?",
+        "answers": [
+          "Quem fala espanhol aqui?"
+        ],
+        "explanation": "'Quem' se usa para preguntar qué persona realiza una acción.",
+        "wrongAnswers": [
+          {
+            "answer": "O que fala espanhol aqui?",
+            "why": "'O que' se usa para cosas, no para preguntar qué persona realiza una acción."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Cómo te llamás?",
+        "answers": [
+          "Como você se chama?",
+          "Como se chama você?"
+        ],
+        "explanation": "'Como' se usa en la expresión 'como você se chama' para preguntar el nombre de alguien.",
+        "wrongAnswers": [
+          {
+            "answer": "Quem você se chama?",
+            "why": "'Quem' pregunta por la identidad directamente y no se combina así con 'se chama'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Oi, como você se chama?",
+        "alternatives": [],
+        "translation": "Hola, ¿cómo te llamás?",
+        "explanation": "'Como' va siempre al principio de la pregunta; en español hablado a veces se dice la pregunta al revés, pero en portugués no se puede."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Quem é aquele homem ao lado da porta?",
+        "alternatives": [],
+        "translation": "¿Quién es aquel hombre al lado de la puerta?",
+        "explanation": "'Quem' se usa solo para personas, nunca para cosas; además la contracción 'da' (de + a) es porque 'porta' es femenino."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "O que você quer para o jantar hoje?",
+        "alternatives": [],
+        "translation": "¿Qué querés para la cena hoy?",
+        "explanation": "El 'o' de 'o que' nunca se saca en portugués, aunque en español digamos solo 'qué'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Como está o tempo em São Paulo hoje?",
+        "alternatives": [],
+        "translation": "¿Cómo está el clima en San Pablo hoy?",
+        "explanation": "'Como' pregunta por un estado o manera, no por una persona ni una cosa; no la confundas con 'quem' u 'o que'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "vovô",
+          "vovó"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "'Vovó' tiene la última 'o' abierta y 'vovô' la tiene cerrada; escuchá bien si la vocal final suena más abierta o más cerrada."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "cedo",
+          "cego"
+        ],
+        "target": 1,
+        "meanings": [
+          "temprano",
+          "ciego"
+        ],
+        "explanation": "La diferencia está en la consonante del medio: 'd' en 'cedo' y 'g' en 'cego'; prestá atención a dónde se detiene la lengua."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "falha",
+          "fala"
+        ],
+        "target": 1,
+        "meanings": [
+          "falla",
+          "habla"
+        ],
+        "explanation": "'Lh' se pronuncia como una 'll' suave, distinta de la 'l' simple de 'fala'; escuchá si el sonido es más líquido o más simple."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre dos compañeros de oficina y prestá atención a las palabras interrogativas que usan.",
+        "situation": "Marcos es nuevo en una oficina de San Pablo y conoce a Juliana, una compañera de trabajo.",
+        "lines": [
+          {
+            "speaker": "Marcos",
+            "text": "Oi! Como você se chama?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Eu me chamo Juliana. E você?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Eu sou o Marcos. Quem é aquela mulher ali?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Aquela é a Beatriz, minha chefe."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Como ela é? Ela é simpática?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Sim, ela é muito simpática e simples."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "O que você faz aqui na empresa?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Eu trabalho no setor de vendas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pregunta usa Marcos para saber el nombre de Juliana?",
+            "options": [
+              "O que você se chama?",
+              "Como você se chama?",
+              "Você se chama como?",
+              "Quem você se chama?"
+            ],
+            "correctIndex": 1,
+            "explanation": "'Como' se usa para preguntar el modo o la manera, y también para pedir el nombre de alguien ('Como você se chama?'). La palabra interrogativa siempre va al principio de la pregunta."
+          },
+          {
+            "prompt": "¿Quién es Beatriz, según lo que dice Juliana?",
+            "options": [
+              "La chefe de Juliana",
+              "Una clienta",
+              "La recepcionista",
+              "La hermana de Marcos"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana responde a la pregunta de Marcos 'Quem é aquela mulher ali?' diciendo que es su chefe. 'Quem' se usa para preguntar por personas."
+          },
+          {
+            "prompt": "¿En qué sector de la empresa trabaja Juliana?",
+            "options": [
+              "Ventas",
+              "Marketing",
+              "Recursos Humanos",
+              "Finanzas"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marcos pregunta 'O que você faz aqui na empresa?' usando 'o que' porque pregunta por una actividad, y Juliana responde que trabaja en el sector de vendas."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre un turista y una señora en la calle. Fijate cómo se usan o que, quem y como.",
+        "situation": "Diego, un turista argentino, está perdido en Río de Janeiro y le pide ayuda a Rosa, una vecina del barrio.",
+        "lines": [
+          {
+            "speaker": "Diego",
+            "text": "Com licença, como eu chego na praia de Copacabana?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Você precisa pegar o ônibus 115."
+          },
+          {
+            "speaker": "Diego",
+            "text": "Quem pode me ajudar a encontrar o ponto de ônibus?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Aquele moço ali, perto da banca, pode ajudar você."
+          },
+          {
+            "speaker": "Diego",
+            "text": "O que ele vende na banca?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Ele vende água e suco."
+          },
+          {
+            "speaker": "Diego",
+            "text": "Como ele se chama?"
+          },
+          {
+            "speaker": "Rosa",
+            "text": "Eu não sei o nome dele."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pregunta hace Diego para saber cómo llegar a la playa?",
+            "options": [
+              "Eu chego na praia como?",
+              "Como eu chego na praia?",
+              "Quem eu chego na praia?",
+              "O que eu chego na praia?"
+            ],
+            "correctIndex": 1,
+            "explanation": "'Como' se usa para preguntar de qué manera se hace algo, en este caso cómo llegar a un lugar, y debe ir al principio de la pregunta."
+          },
+          {
+            "prompt": "¿Qué vende el muchacho en la banca?",
+            "options": [
+              "Ropa",
+              "Agua y jugo",
+              "Comida",
+              "Souvenirs"
+            ],
+            "correctIndex": 1,
+            "explanation": "Diego pregunta 'O que ele vende na banca?' usando 'o que' porque pregunta por una cosa, y Rosa responde que vende agua y jugo."
+          },
+          {
+            "prompt": "¿Rosa sabe cómo se llama el muchacho?",
+            "options": [
+              "No",
+              "Sí",
+              "Sí, pero no lo dice",
+              "No se menciona"
+            ],
+            "correctIndex": 0,
+            "explanation": "Diego pregunta 'Como ele se chama?' y Rosa responde 'Eu não sei o nome dele', es decir que no sabe su nombre."
+          }
+        ]
+      }
+    ],
+    "quando-onde-por-que": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para completar la pregunta.",
+        "prompt": "___ você chega em São Paulo, Lucas?",
+        "options": [
+          "Porque",
+          "Quando",
+          "Onde",
+          "Aonde"
+        ],
+        "correctIndex": 1,
+        "explanation": "Se pregunta por el momento de la llegada, así que corresponde 'Quando' (cuándo).",
+        "optionNotes": [
+          "Incorrecto: 'Porque' junto se usa para responder, no para preguntar, y acá además el sentido no es de causa.",
+          "Correcto: 'Quando' pregunta por el momento, igual que 'cuándo' en español.",
+          "Incorrecto: 'Onde' pregunta por el lugar, no por el momento.",
+          "Incorrecto: 'Aonde' también es de lugar (con movimiento), no sirve para preguntar cuándo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para completar la pregunta.",
+        "prompt": "___ fica o hotel de Marina?",
+        "options": [
+          "Aonde",
+          "Onde",
+          "Quando",
+          "Por que"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Fica' indica ubicación, sin movimiento, por eso se usa 'Onde' (dónde).",
+        "optionNotes": [
+          "Incorrecto: 'Aonde' implica movimiento hacia un lugar, y acá solo se pregunta la ubicación.",
+          "Correcto: 'Onde' se usa para preguntar dónde está algo, sin movimiento.",
+          "Incorrecto: 'Quando' pregunta por el momento, no por el lugar.",
+          "Incorrecto: 'Por que' pregunta por la causa, no tiene sentido con 'fica'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para completar la pregunta.",
+        "prompt": "___ você vai agora, Lucas?",
+        "options": [
+          "Aonde",
+          "Onde",
+          "Porque",
+          "Quando"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como hay movimiento ('vai'), la norma formal pide 'Aonde' (adónde) en vez de 'Onde'.",
+        "optionNotes": [
+          "Correcto: 'Aonde' se usa cuando hay movimiento hacia un lugar, como 'ir'.",
+          "Incorrecto: 'Onde' en la norma formal se reserva para ubicación sin movimiento.",
+          "Incorrecto: 'Porque' junto es para responder, no para preguntar.",
+          "Incorrecto: 'Quando' pregunta por el momento, no por el destino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para preguntar la causa.",
+        "prompt": "___ você está nervosa, Marina?",
+        "options": [
+          "Por que",
+          "Onde",
+          "Por quê",
+          "Porque"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para preguntar por la causa se usa 'por que' separado, no 'porque' junto (que es para responder).",
+        "optionNotes": [
+          "Correcto: 'Por que' separado se usa en preguntas por la causa.",
+          "Incorrecto: 'Onde' pregunta por lugar, no por causa.",
+          "Incorrecto: 'Por quê' con acento se usa solo cuando queda solo al final de la oración, no antes del verbo.",
+          "Incorrecto: 'Porque' junto se usa en respuestas, no en preguntas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para responder dando una causa.",
+        "prompt": "Estou nervosa ___ tenho uma entrevista hoje.",
+        "options": [
+          "porque",
+          "por quê",
+          "onde",
+          "por que"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para dar una respuesta con causa se usa 'porque' junto, no separado.",
+        "optionNotes": [
+          "Correcto: 'porque' junto se usa para responder, dando la causa.",
+          "Incorrecto: 'por quê' con acento solo se usa cuando queda solo al final de la oración.",
+          "Incorrecto: 'onde' pregunta por lugar, no tiene sentido de causa.",
+          "Incorrecto: 'por que' separado se usa para preguntar, no para responder."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para la pregunta que queda sola al final.",
+        "prompt": "Lucas: Não vou à festa. Marina: Por ___?",
+        "options": [
+          "onde",
+          "quê",
+          "que",
+          "porque"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando 'por quê' queda solo al final de la oración, se escribe separado y con acento circunflejo en la ê.",
+        "optionNotes": [
+          "Incorrecto: 'onde' pregunta por lugar, no por causa.",
+          "Correcto: 'quê' con acento circunflejo se usa cuando la palabra queda sola al final.",
+          "Incorrecto: 'que' sin acento es la forma que se usa antes de un verbo, no sola al final.",
+          "Incorrecto: 'porque' junto es para responder, no para preguntar."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ é a entrevista de Marina?",
+        "hint": "(pregunta por el momento)",
+        "answers": [
+          "Quando"
+        ],
+        "explanation": "Se pregunta por el momento de la entrevista, por eso corresponde 'Quando' (cuándo).",
+        "wrongAnswers": [
+          {
+            "answer": "Onde",
+            "why": "'Onde' pregunta por el lugar, no por el momento de un evento."
+          },
+          {
+            "answer": "Aonde",
+            "why": "'Aonde' se usa con movimiento hacia un lugar, no para preguntar cuándo es algo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ fica o apartamento de Lucas?",
+        "hint": "(pregunta por el lugar, sin movimiento)",
+        "answers": [
+          "Onde"
+        ],
+        "explanation": "'Fica' indica ubicación sin movimiento, por eso se usa 'Onde' (dónde).",
+        "wrongAnswers": [
+          {
+            "answer": "Aonde",
+            "why": "'Aonde' se usa cuando hay movimiento hacia un lugar, y acá solo se pregunta dónde queda algo."
+          },
+          {
+            "answer": "Quando",
+            "why": "'Quando' pregunta por el momento, no por el lugar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta (hay movimiento).",
+        "sentence": "___ Marina vai depois do trabalho?",
+        "hint": "(movimiento hacia un lugar)",
+        "answers": [
+          "Aonde",
+          "Onde"
+        ],
+        "explanation": "Como hay movimiento ('vai'), la norma formal pide 'Aonde'; en el habla coloquial también se escucha 'Onde'.",
+        "wrongAnswers": [
+          {
+            "answer": "Quando",
+            "why": "'Quando' pregunta por el momento, no por el destino del movimiento."
+          },
+          {
+            "answer": "Porque",
+            "why": "'Porque' junto se usa para responder con una causa, no para preguntar por un lugar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la respuesta con la forma correcta de 'porque'.",
+        "sentence": "Eu estou cansado ___ trabalhei muito hoje.",
+        "hint": "(respuesta con causa, junto)",
+        "answers": [
+          "porque"
+        ],
+        "explanation": "En las respuestas que dan una causa se usa 'porque' escrito junto.",
+        "wrongAnswers": [
+          {
+            "answer": "por que",
+            "why": "'por que' separado se usa en preguntas, no en respuestas con causa."
+          },
+          {
+            "answer": "por quê",
+            "why": "'por quê' con acento se usa solo cuando la palabra queda sola al final de la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta de 'por que'.",
+        "sentence": "___ você chegou tarde à reunião?",
+        "hint": "(pregunta por la causa, separado)",
+        "answers": [
+          "Por que"
+        ],
+        "explanation": "Para preguntar por la causa se usa 'por que' separado, antes del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "Porque",
+            "why": "'Porque' junto se usa para responder, no para preguntar."
+          },
+          {
+            "answer": "Por quê",
+            "why": "'Por quê' con acento se usa solo cuando queda solo al final de la oración, no antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta que queda sola al final de la oración.",
+        "sentence": "Ele não foi à festa. — Por ___?",
+        "hint": "(sola al final, con acento)",
+        "answers": [
+          "quê"
+        ],
+        "explanation": "Cuando 'por quê' queda solo al final de la oración, se escribe separado y con acento circunflejo en la ê.",
+        "wrongAnswers": [
+          {
+            "answer": "que",
+            "why": "Sin acento, 'que' se usa antes de un verbo, no cuando la palabra queda sola al final."
+          },
+          {
+            "answer": "porque",
+            "why": "'porque' junto es para responder con una causa, no para preguntar."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Quando você vai chegar ao Brasil?",
+        "alternatives": [],
+        "translation": "¿Cuándo vas a llegar a Brasil?",
+        "explanation": "'Quando' se usa para preguntar por el momento de una acción futura.",
+        "tokens": [
+          "ao",
+          "Brasil",
+          "você",
+          "vai",
+          "Quando",
+          "chegar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Onde fica a estação de metrô mais próxima?",
+        "alternatives": [],
+        "translation": "¿Dónde queda la estación de metro más cercana?",
+        "explanation": "'Onde' se usa para preguntar por la ubicación de algo, sin movimiento.",
+        "tokens": [
+          "mais",
+          "próxima",
+          "estação",
+          "metrô",
+          "de",
+          "Onde",
+          "a",
+          "fica"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Aonde vocês vão depois do jantar?",
+        "alternatives": [],
+        "translation": "¿Adónde van ustedes después de la cena?",
+        "explanation": "'Aonde' se usa cuando la pregunta implica movimiento hacia un lugar.",
+        "tokens": [
+          "depois",
+          "vocês",
+          "Aonde",
+          "vão",
+          "do",
+          "jantar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta correcta.",
+        "sentence": "Por que você está tão nervosa hoje?",
+        "alternatives": [],
+        "translation": "¿Por qué estás tan nerviosa hoy?",
+        "explanation": "'Por que' separado se usa para preguntar por la causa de algo.",
+        "tokens": [
+          "você",
+          "nervosa",
+          "Por",
+          "hoje",
+          "tão",
+          "está",
+          "que"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu não vou à reunião porque estou doente.",
+        "alternatives": [],
+        "translation": "No voy a la reunión porque estoy enfermo/a.",
+        "explanation": "'Porque' junto se usa para dar la causa en una respuesta o afirmación.",
+        "tokens": [
+          "à",
+          "porque",
+          "vou",
+          "Eu",
+          "reunião",
+          "não",
+          "doente",
+          "estou"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con las palabras interrogativas.",
+        "sentence": "Porque você chegou atrasado à entrevista?",
+        "answers": [
+          "Por que você chegou atrasado à entrevista?"
+        ],
+        "explanation": "Para preguntar por la causa se usa 'por que' separado; 'porque' junto es solo para responder.",
+        "wrongAnswers": [
+          {
+            "answer": "Por quê você chegou atrasado à entrevista?",
+            "why": "El acento circunflejo en 'quê' solo se usa cuando la palabra queda sola al final de la oración, no en medio de la pregunta."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con las palabras interrogativas.",
+        "sentence": "Quando fica a padaria mais próxima?",
+        "answers": [
+          "Onde fica a padaria mais próxima?"
+        ],
+        "explanation": "'Fica' indica ubicación sin movimiento, por eso corresponde 'onde' (dónde) y no 'quando' (cuándo), que pregunta por el momento.",
+        "wrongAnswers": [
+          {
+            "answer": "Aonde fica a padaria mais próxima?",
+            "why": "'Fica' no implica movimiento, así que no corresponde usar 'aonde'; además el error original estaba en 'quando', no en la distinción onde/aonde."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con las palabras interrogativas.",
+        "sentence": "Aonde fica o hospital mais próximo?",
+        "answers": [
+          "Onde fica o hospital mais próximo?"
+        ],
+        "explanation": "'Fica' indica ubicación sin movimiento, por eso corresponde 'onde' y no 'aonde'.",
+        "wrongAnswers": [
+          {
+            "answer": "Quando fica o hospital mais próximo?",
+            "why": "'Quando' pregunta por el momento, no por el lugar; el error está en 'aonde', no en el tiempo verbal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con las palabras interrogativas.",
+        "sentence": "Eu estou atrasada por que perdi o ônibus.",
+        "answers": [
+          "Eu estou atrasada porque perdi o ônibus."
+        ],
+        "explanation": "En las respuestas o afirmaciones que dan una causa se usa 'porque' junto, no 'por que' separado.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu estou atrasada por quê perdi o ônibus.",
+            "why": "El acento circunflejo en 'quê' solo se usa cuando la palabra queda sola al final de la oración, no en medio de una afirmación."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con las palabras interrogativas.",
+        "sentence": "Não vou trabalhar hoje. Por que?",
+        "answers": [
+          "Não vou trabalhar hoje. Por quê?"
+        ],
+        "explanation": "Cuando 'por quê' queda solo al final de la oración, se escribe separado y con acento circunflejo en la ê.",
+        "wrongAnswers": [
+          {
+            "answer": "Não vou trabalhar hoje. Porque?",
+            "why": "'Porque' junto se usa para responder con una causa, no para preguntar, aunque la palabra quede sola."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Cuándo llegás a San Pablo, Lucas?",
+        "answers": [
+          "Quando você chega em São Paulo, Lucas?",
+          "Quando você chega a São Paulo, Lucas?"
+        ],
+        "explanation": "'Quando' se usa para preguntar por el momento de una acción.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde você chega em São Paulo, Lucas?",
+            "why": "'Onde' pregunta por el lugar, no por el momento; acá se necesita 'Quando'."
+          },
+          {
+            "answer": "Quando você chega para São Paulo, Lucas?",
+            "why": "Con 'chegar' no se usa la preposición 'para'; se usa 'em' o 'a' seguido del lugar."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Dónde vivís ahora?",
+        "answers": [
+          "Onde você mora agora?"
+        ],
+        "explanation": "'Onde' se usa para preguntar por la ubicación, sin movimiento, como con el verbo 'morar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Aonde você mora agora?",
+            "why": "'Aonde' implica movimiento hacia un lugar, y 'morar' no tiene ese sentido, así que corresponde 'onde'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Adónde vas después del trabajo?",
+        "answers": [
+          "Aonde você vai depois do trabalho?",
+          "Onde você vai depois do trabalho?"
+        ],
+        "explanation": "Como hay movimiento ('vai'), la norma formal pide 'aonde'; en el habla coloquial también se usa 'onde'.",
+        "wrongAnswers": [
+          {
+            "answer": "Quando você vai depois do trabalho?",
+            "why": "'Quando' pregunta por el momento, no por el destino del movimiento."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Estoy nerviosa porque tengo una entrevista.",
+        "answers": [
+          "Estou nervosa porque tenho uma entrevista."
+        ],
+        "explanation": "En las respuestas que dan una causa se usa 'porque' escrito junto.",
+        "wrongAnswers": [
+          {
+            "answer": "Estou nervosa por que tenho uma entrevista.",
+            "why": "'por que' separado se usa en preguntas, no en afirmaciones que dan una causa."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Por qué llegaste tarde a la reunión?",
+        "answers": [
+          "Por que você chegou tarde à reunião?"
+        ],
+        "explanation": "Para preguntar por la causa se usa 'por que' separado, antes del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "Porque você chegou tarde à reunião?",
+            "why": "'Porque' junto se usa para responder, no para preguntar por la causa."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "No voy a la fiesta. ¿Por qué?",
+        "answers": [
+          "Não vou à festa. Por quê?"
+        ],
+        "explanation": "Cuando 'por quê' queda solo al final de la oración, se escribe separado y con acento circunflejo en la ê.",
+        "wrongAnswers": [
+          {
+            "answer": "Não vou à festa. Por que?",
+            "why": "Sin el acento circunflejo, 'por que' se usa antes de un verbo, no cuando la palabra queda sola al final."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Onde você mora agora, Lucas?",
+        "alternatives": [
+          "Onde você mora agora Lucas?"
+        ],
+        "translation": "¿Dónde vivís ahora, Lucas?",
+        "explanation": "Onde se usa para preguntar por el lugar sin movimiento, como la ubicación de alguien."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Aonde você vai no fim de semana?",
+        "alternatives": [
+          "Aonde você vai no final de semana?"
+        ],
+        "translation": "¿Adónde vas el fin de semana?",
+        "explanation": "Aonde se usa cuando hay movimiento hacia un lugar; no confundir con onde, que indica ubicación sin desplazamiento."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Quando é a festa de aniversário?",
+        "alternatives": [],
+        "translation": "¿Cuándo es la fiesta de cumpleaños?",
+        "explanation": "Quando pregunta por el momento en que ocurre algo, igual que 'cuándo' en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Por que você chegou tarde hoje?",
+        "alternatives": [],
+        "translation": "¿Por qué llegaste tarde hoy?",
+        "explanation": "Por que se escribe separado cuando se pregunta; no confundir con porque junto, que se usa para responder."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 1,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "La ç se pronuncia como una s sorda, como en 'sapo', mientras que la s entre vocales de casa suena como z; en español no hay esa diferencia de sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pode",
+          "pôde"
+        ],
+        "target": 0,
+        "meanings": [
+          "puede",
+          "pudo"
+        ],
+        "explanation": "Pode tiene una o abierta, como en 'bola', y pôde una o cerrada, como en 'bolo'; en español no distinguimos estos dos sonidos de o."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 0,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "Pão tiene una vocal nasal, con el aire saliendo por la nariz, y pau es un diptongo oral sin nasalidad; en español no existen vocales nasales."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre Marina y Bia sobre un viaje a Florianópolis y respondé las preguntas.",
+        "situation": "Marina llama por teléfono a su amiga Bia para preguntarle sobre su viaje a Florianópolis.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Bia, quando você viaja para Florianópolis?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "Eu viajo quinta-feira de manhã."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Aonde você vai primeiro na cidade?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "Primeiro eu vou à praia."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Onde fica o hotel?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "O hotel fica perto do centro."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Por que você escolheu esse hotel?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "Porque ele é barato e bonito."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuándo viaja Bia a Florianópolis?",
+            "options": [
+              "Sábado de manhã",
+              "Quinta-feira de manhã",
+              "Quarta-feira de tarde",
+              "Sexta-feira à noite"
+            ],
+            "correctIndex": 1,
+            "explanation": "Bia responde a la pregunta con quando diciendo 'Eu viajo quinta-feira de manhã', indicando el momento del viaje."
+          },
+          {
+            "prompt": "¿Adónde va primero Bia en la ciudad?",
+            "options": [
+              "Ao mercado",
+              "Ao centro",
+              "Ao hotel",
+              "À praia"
+            ],
+            "correctIndex": 3,
+            "explanation": "Marina pregunta con aonde porque hay movimiento, y Bia contesta 'Primeiro eu vou à praia'."
+          },
+          {
+            "prompt": "¿Por qué Bia eligió ese hotel?",
+            "options": [
+              "Porque fica na praia",
+              "Porque é grande",
+              "Porque é barato e bonito",
+              "Porque é novo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Para responder la causa se usa porque junto: 'Porque ele é barato e bonito'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la consulta entre João y la doctora Carla y respondé las preguntas.",
+        "situation": "João va a una consulta médica y conversa con la doctora Carla sobre su dolor.",
+        "lines": [
+          {
+            "speaker": "Dra. Carla",
+            "text": "Onde você sente dor, João?"
+          },
+          {
+            "speaker": "João",
+            "text": "Eu sinto dor aqui, no braço."
+          },
+          {
+            "speaker": "Dra. Carla",
+            "text": "Quando a dor começou?"
+          },
+          {
+            "speaker": "João",
+            "text": "A dor começou ontem à noite."
+          },
+          {
+            "speaker": "Dra. Carla",
+            "text": "Aonde você vai depois da consulta?"
+          },
+          {
+            "speaker": "João",
+            "text": "Eu vou para o trabalho."
+          },
+          {
+            "speaker": "Dra. Carla",
+            "text": "Por que você não foi ao médico antes?"
+          },
+          {
+            "speaker": "João",
+            "text": "Porque eu estava sem tempo."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde siente dolor João?",
+            "options": [
+              "No braço",
+              "Na cabeça",
+              "No peito",
+              "Na perna"
+            ],
+            "correctIndex": 0,
+            "explanation": "La doctora pregunta con onde por la ubicación del dolor, sin movimiento, y João responde 'no braço'."
+          },
+          {
+            "prompt": "¿Cuándo comenzó el dolor?",
+            "options": [
+              "Hoy a la tarde",
+              "Esta mañana",
+              "Hace una semana",
+              "Ayer a la noche"
+            ],
+            "correctIndex": 3,
+            "explanation": "La pregunta con quando se responde indicando el momento: 'A dor começou ontem à noite'."
+          },
+          {
+            "prompt": "¿Por qué João no fue al médico antes?",
+            "options": [
+              "Porque no creía que era grave",
+              "Porque no tenía tiempo",
+              "Porque estaba de viaje",
+              "Porque no tenía dinero"
+            ],
+            "correctIndex": 1,
+            "explanation": "Para contestar la causa se usa porque junto: 'Porque eu estava sem tempo'."
+          }
+        ]
+      }
+    ],
+    "quanto-quantos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para preguntar el precio.",
+        "prompt": "___ custa esta manga, no mercado?",
+        "options": [
+          "Quantos",
+          "Quanta",
+          "Quanto",
+          "Quantas"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el verbo custar para preguntar precios siempre se usa quanto, invariable, sin importar el género de lo que se pregunta.",
+        "optionNotes": [
+          "Incorrecto: quantos es plural y además no se usa con custar.",
+          "Incorrecto: quanta no se usa con custar, aunque manga sea femenino.",
+          "Correcto: con custar siempre se usa quanto, invariable.",
+          "Incorrecto: quantas es plural femenino y no corresponde con custar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de quanto para preguntar por una cantidad de hermanos.",
+        "prompt": "___ irmãos você tem, Marcela?",
+        "options": [
+          "Quantos",
+          "Quanta",
+          "Quantas",
+          "Quanto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Irmãos es masculino plural, entonces quanto concuerda y se transforma en quantos.",
+        "optionNotes": [
+          "Correcto: quantos concuerda en masculino plural con irmãos.",
+          "Incorrecto: quanta es femenino, pero irmãos es masculino.",
+          "Incorrecto: quantas es femenino plural, pero irmãos es masculino.",
+          "Incorrecto: quanto es singular y no concuerda con irmãos, que es plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el verbo correcto para completar la pregunta sobre la edad.",
+        "prompt": "Quantos anos você ___?",
+        "options": [
+          "está",
+          "tem",
+          "é",
+          "ten"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para preguntar la edad en portugués siempre se usa el verbo ter: Quantos anos você tem?",
+        "optionNotes": [
+          "Incorrecto: está es del verbo estar, que tampoco se usa para la edad.",
+          "Correcto: tem es la forma correcta del verbo ter para preguntar la edad.",
+          "Incorrecto: é es del verbo ser, que no se usa para la edad en portugués.",
+          "Incorrecto: ten no existe en portugués, es un calco del español."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de quanto para preguntar por agua.",
+        "prompt": "___ água tem na garrafa?",
+        "options": [
+          "Quanta",
+          "Quanto",
+          "Quantos",
+          "Quantas"
+        ],
+        "correctIndex": 0,
+        "explanation": "Água es un sustantivo femenino singular no contable, por eso se usa quanta.",
+        "optionNotes": [
+          "Correcto: quanta concuerda en femenino singular con água.",
+          "Incorrecto: quanto es masculino, pero água es femenino.",
+          "Incorrecto: quantos es masculino plural, no corresponde con água.",
+          "Incorrecto: quantas es femenino plural, pero água es singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo custar para esta pregunta de precio.",
+        "prompt": "Quanto ___ os sapatos, na loja?",
+        "options": [
+          "custas",
+          "custo",
+          "custam",
+          "custa"
+        ],
+        "correctIndex": 2,
+        "explanation": "Aunque quanto no cambia, el verbo custar debe concordar en plural porque os sapatos es plural.",
+        "optionNotes": [
+          "Incorrecto: custas es segunda persona, no se usa con os sapatos como sujeto.",
+          "Incorrecto: custo es primera persona del singular, no corresponde aquí.",
+          "Correcto: custam concuerda en plural con os sapatos.",
+          "Incorrecto: custa es singular, pero os sapatos es plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de quanto para preguntar por una cantidad de veces.",
+        "prompt": "___ vezes você viajou para o Brasil?",
+        "options": [
+          "Quantas",
+          "Quantos",
+          "Quanto",
+          "Quanta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vezes es femenino plural, por eso quanto se transforma en quantas.",
+        "optionNotes": [
+          "Correcto: quantas concuerda en femenino plural con vezes.",
+          "Incorrecto: quantos es masculino plural, pero vezes es femenino.",
+          "Incorrecto: quanto es singular masculino, no concuerda con vezes.",
+          "Incorrecto: quanta es singular, pero vezes es plural."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa correcta.",
+        "sentence": "___ custa este abacaxi, na feira?",
+        "hint": "(custar - preço)",
+        "answers": [
+          "Quanto"
+        ],
+        "explanation": "Con el verbo custar siempre se usa quanto, sin cambiar según el género del sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanta",
+            "why": "Quanto no concuerda con el género del sustantivo cuando acompaña a custar; siempre queda invariable."
+          },
+          {
+            "answer": "Quantos",
+            "why": "Con custar no se usa el plural de quanto; la forma correcta siempre es quanto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta sobre la edad de Pedro con el verbo correcto.",
+        "sentence": "Quantos anos Pedro ___?",
+        "hint": "(ter - idade)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "Para preguntar la edad en portugués se usa siempre el verbo ter, en este caso tem.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "El verbo ser no se usa para hablar de la edad en portugués."
+          },
+          {
+            "answer": "está",
+            "why": "El verbo estar no se usa para preguntar la edad en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta sobre el equipaje con la forma correcta de quanto.",
+        "sentence": "___ malas você vai levar na viagem?",
+        "hint": "(cuántas - femenino plural)",
+        "answers": [
+          "Quantas"
+        ],
+        "explanation": "Malas es un sustantivo femenino plural, por eso quanto se transforma en quantas.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto",
+            "why": "Quanto es singular masculino y no concuerda con malas, que es femenino plural."
+          },
+          {
+            "answer": "Quantos",
+            "why": "Quantos es masculino plural, pero malas es femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta sobre la cantidad de gente en la fiesta.",
+        "sentence": "___ gente tem na festa?",
+        "hint": "(cuánta - gente es femenino singular)",
+        "answers": [
+          "Quanta"
+        ],
+        "explanation": "Gente es un sustantivo femenino singular no contable, por eso se usa quanta.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto",
+            "why": "Gente es femenino, así que corresponde quanta y no quanto."
+          },
+          {
+            "answer": "Quantos",
+            "why": "Gente es singular, no plural, así que no corresponde quantos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo custar.",
+        "sentence": "Quanto ___ as blusas, nesta loja?",
+        "hint": "(custar)",
+        "answers": [
+          "custam"
+        ],
+        "explanation": "El verbo custar debe concordar en plural con as blusas, aunque quanto quede invariable.",
+        "wrongAnswers": [
+          {
+            "answer": "custa",
+            "why": "Custa es singular, pero as blusas es plural, así que el verbo debe concordar en plural."
+          },
+          {
+            "answer": "custo",
+            "why": "Custo es primera persona del singular y no corresponde a esta pregunta sobre blusas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo querer.",
+        "sentence": "Quantos quilos você ___?",
+        "hint": "(querer)",
+        "answers": [
+          "quer"
+        ],
+        "explanation": "Con você el verbo querer va en tercera persona del singular: quer.",
+        "wrongAnswers": [
+          {
+            "answer": "quero",
+            "why": "Quero es primera persona, pero la pregunta es para você, que necesita quer."
+          },
+          {
+            "answer": "queres",
+            "why": "Queres es una forma usada en Portugal con tu, no corresponde con você en Brasil."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta sobre el precio de un zapato.",
+        "sentence": "Quanto custa este sapato na loja?",
+        "alternatives": [
+          "Este sapato custa quanto na loja?"
+        ],
+        "translation": "¿Cuánto cuesta este zapato en la tienda?",
+        "explanation": "Quanto va invariable con custar, y la pregunta sigue el orden habitual: interrogativo, verbo, sujeto, complemento.",
+        "tokens": [
+          "este",
+          "na",
+          "Quanto",
+          "loja",
+          "custa",
+          "sapato"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta sobre la edad de una hermana.",
+        "sentence": "Quantos anos a sua irmã tem?",
+        "alternatives": [
+          "A sua irmã tem quantos anos?"
+        ],
+        "translation": "¿Cuántos años tiene tu hermana?",
+        "explanation": "Anos es masculino plural, por eso se usa quantos, y la pregunta de edad siempre incluye el verbo tem; en portugués hablado también es natural el orden eco, con quantos anos al final.",
+        "tokens": [
+          "tem",
+          "Quantos",
+          "a",
+          "sua",
+          "anos",
+          "irmã"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta sobre cuánta agua toma alguien por día.",
+        "sentence": "Quanta água você bebe por dia?",
+        "alternatives": [
+          "Você bebe quanta água por dia?"
+        ],
+        "translation": "¿Cuánta agua tomás por día?",
+        "explanation": "Água es femenino singular, por eso se usa quanta en lugar de quanto; en portugués hablado también es natural el orden eco, con quanta água al final.",
+        "tokens": [
+          "por",
+          "água",
+          "dia",
+          "você",
+          "bebe",
+          "Quanta"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta sobre cuántas veces alguien fue a Río.",
+        "sentence": "Quantas vezes você foi ao Rio?",
+        "alternatives": [
+          "Você foi ao Rio quantas vezes?"
+        ],
+        "translation": "¿Cuántas veces fuiste a Río?",
+        "explanation": "Vezes es femenino plural, por eso quanto se transforma en quantas; en portugués hablado también es natural el orden eco, con quantas vezes al final.",
+        "tokens": [
+          "vezes",
+          "Rio",
+          "Quantas",
+          "foi",
+          "ao",
+          "você"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta sobre el precio de los pasajes de avión.",
+        "sentence": "Quanto custam as passagens de avião?",
+        "alternatives": [
+          "As passagens de avião custam quanto?"
+        ],
+        "translation": "¿Cuánto cuestan los pasajes de avión?",
+        "explanation": "Quanto queda invariable con custar, pero el verbo custar concuerda en plural con as passagens; en portugués hablado también es natural el orden eco, con quanto al final.",
+        "tokens": [
+          "passagens",
+          "custam",
+          "Quanto",
+          "avião",
+          "as",
+          "de"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta sobre una fiesta.",
+        "sentence": "Quanto pessoas vêm para a festa?",
+        "answers": [
+          "Quantas pessoas vêm para a festa?"
+        ],
+        "explanation": "Pessoas es femenino plural, por eso quanto debe concordar y transformarse en quantas.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto pessoas vem para a festa",
+            "why": "El error no está en el verbo vêm, sino en la falta de concordancia de quanto con pessoas."
+          },
+          {
+            "answer": "Quantos pessoas vêm para a festa",
+            "why": "Pessoas es femenino, así que corresponde quantas y no quantos."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta sobre zapatillas.",
+        "sentence": "Quanto custa os tênis?",
+        "answers": [
+          "Quanto custam os tênis?"
+        ],
+        "explanation": "Os tênis es plural, por eso el verbo custar debe concordar en plural: custam.",
+        "wrongAnswers": [
+          {
+            "answer": "Quantos custa os tênis",
+            "why": "Quanto es invariable con custar; el error está en el verbo, no en quanto."
+          },
+          {
+            "answer": "Quanto custa o tênis",
+            "why": "Cambiar tênis a singular no corrige el verdadero error, que es la falta de concordancia del verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta sobre la edad.",
+        "sentence": "Quantos anos você?",
+        "answers": [
+          "Quantos anos você tem?"
+        ],
+        "explanation": "Para preguntar la edad en portugués siempre hay que incluir el verbo tem.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto anos você tem",
+            "why": "Anos es plural, así que quanto debe concordar y transformarse en quantos."
+          },
+          {
+            "answer": "Quantos ano você tem",
+            "why": "El error original era la falta del verbo tem, no el número de anos."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta sobre libros comprados.",
+        "sentence": "Quanta livros você comprou?",
+        "answers": [
+          "Quantos livros você comprou?"
+        ],
+        "explanation": "Livros es masculino plural, por eso corresponde quantos y no quanta.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanta livro você comprou",
+            "why": "El problema es el género de quanta, no el número de livros, que debe quedar en plural."
+          },
+          {
+            "answer": "Quanto livros você comprou",
+            "why": "Quanto es singular y no concuerda con livros, que es plural."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta sobre dinero.",
+        "sentence": "Quantas dinheiro você tem?",
+        "answers": [
+          "Quanto dinheiro você tem?"
+        ],
+        "explanation": "Dinheiro es masculino singular, por eso corresponde quanto y no quantas.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanta dinheiro você tem",
+            "why": "Dinheiro es masculino, no femenino, así que no corresponde quanta."
+          },
+          {
+            "answer": "Quantos dinheiro você tem",
+            "why": "Dinheiro es singular, no plural, así que no corresponde quantos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta sobre un precio al portugués.",
+        "spanish": "¿Cuánto cuesta esta camiseta?",
+        "answers": [
+          "Quanto custa esta camiseta?",
+          "Quanto custa essa camiseta?"
+        ],
+        "explanation": "Con custar se usa quanto invariable, sin importar el género de camiseta.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanta custa esta camiseta?",
+            "why": "Quanto es invariable con el verbo custar, no se usa quanta aunque camiseta sea femenino."
+          },
+          {
+            "answer": "Quanto custam esta camiseta?",
+            "why": "El verbo debe concordar en singular porque camiseta es singular, no plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta sobre la edad de Marcela al portugués.",
+        "spanish": "¿Cuántos años tenés, Marcela?",
+        "answers": [
+          "Quantos anos você tem, Marcela?"
+        ],
+        "explanation": "Para preguntar la edad siempre se usa quantos anos junto con el verbo tem.",
+        "wrongAnswers": [
+          {
+            "answer": "Quantos anos você é, Marcela?",
+            "why": "Para la edad se usa el verbo ter, no ser, en portugués."
+          },
+          {
+            "answer": "Quanto anos você tem, Marcela?",
+            "why": "Anos es plural, por eso quanto debe concordar y transformarse en quantos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta sobre el agua de una botella al portugués.",
+        "spanish": "¿Cuánta agua hay en la botella?",
+        "answers": [
+          "Quanta água tem na garrafa?"
+        ],
+        "explanation": "Água es femenino singular, por eso se usa quanta en vez de quanto.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto água tem na garrafa?",
+            "why": "Água es femenino, así que corresponde quanta y no quanto."
+          },
+          {
+            "answer": "Quantas água tem na garrafa?",
+            "why": "Água es singular, no plural, así que no corresponde quantas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta sobre hermanas al portugués.",
+        "spanish": "¿Cuántas hermanas tenés?",
+        "answers": [
+          "Quantas irmãs você tem?"
+        ],
+        "explanation": "Irmãs es femenino plural, por eso se usa quantas.",
+        "wrongAnswers": [
+          {
+            "answer": "Quantos irmãs você tem?",
+            "why": "Irmãs es femenino, así que corresponde quantas y no quantos."
+          },
+          {
+            "answer": "Quanta irmãs você tem?",
+            "why": "Irmãs es plural, así que corresponde quantas y no quanta."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta sobre el precio de unos zapatos al portugués.",
+        "spanish": "¿Cuánto cuestan los zapatos?",
+        "answers": [
+          "Quanto custam os sapatos?"
+        ],
+        "explanation": "Quanto queda invariable con custar, pero el verbo custar concuerda en plural con os sapatos.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto custa os sapatos?",
+            "why": "Os sapatos es plural, así que el verbo debe ser custam y no custa."
+          },
+          {
+            "answer": "Quantos custam os sapatos?",
+            "why": "Quanto es invariable cuando se usa con custar, no se transforma en quantos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí esta pregunta sobre viajes a Brasil al portugués.",
+        "spanish": "¿Cuántas veces viajaste a Brasil?",
+        "answers": [
+          "Quantas vezes você viajou para o Brasil?",
+          "Quantas vezes você viajou ao Brasil?"
+        ],
+        "explanation": "Vezes es femenino plural, por eso se usa quantas; para indicar destino se puede usar tanto para o Brasil como la forma contraída ao Brasil.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto vezes você viajou para o Brasil?",
+            "why": "Vezes es femenino plural, así que corresponde quantas y no quanto."
+          },
+          {
+            "answer": "Quantos vezes você viajou para o Brasil?",
+            "why": "Vezes es femenino, no masculino, así que corresponde quantas y no quantos."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Quanto custam essas frutas no mercado?",
+        "alternatives": [],
+        "translation": "¿Cuánto cuestan esas frutas en el mercado?",
+        "explanation": "Aunque quanto no cambia, el verbo custar va en plural (custam) porque frutas es plural; prestá atención a esa terminación."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Quantos anos tem o seu filho?",
+        "alternatives": [],
+        "translation": "¿Cuántos años tiene tu hijo?",
+        "explanation": "Para preguntar la edad siempre va el verbo tem después de anos; no se puede dejar la pregunta sin ese verbo."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Quanta água você bebe por dia?",
+        "alternatives": [],
+        "translation": "¿Cuánta agua tomás por día?",
+        "explanation": "Água es femenino y no contable, por eso se usa quanta y no quanto; no confundirlo con la forma invariable para precios."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Quantas vezes você foi ao Brasil?",
+        "alternatives": [],
+        "translation": "¿Cuántas veces fuiste a Brasil?",
+        "explanation": "Vezes es femenino plural, por eso quanto concuerda como quantas; recordá que esta forma no lleva tilde en portugués."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá cuál de las dos palabras se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La diferencia está en el sonido de la o: en 'avó' es abierta y en 'avô' es cerrada, un matiz que en español no distinguimos tanto."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá cuál de las dos palabras se dice.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 0,
+        "meanings": [
+          "caro",
+          "auto"
+        ],
+        "explanation": "El r simple entre vocales suena suave y breve, mientras que el rr se pronuncia fuerte, casi como una j o jota suave en portugués de Brasil."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá cuál de las dos palabras se dice.",
+        "pair": [
+          "nós",
+          "nos"
+        ],
+        "target": 0,
+        "meanings": [
+          "nosotros",
+          "nos (pronombre)"
+        ],
+        "explanation": "Nós lleva acento y se pronuncia con o abierta y fuerte, mientras que nos es átono y suena más corto y cerrado."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los precios y las cantidades.",
+        "text": "Marcos vai ao mercado em São Paulo. Ele quer comprar frutas para a semana. Primeiro, ele pergunta: Quanto custa o quilo de banana? A vendedora responde: Custa três reais. Depois, Marcos vê umas maçãs vermelhas e pergunta: Quanto custam as maçãs? A vendedora diz: Custam cinco reais o quilo. Marcos também precisa de água para a viagem. Ele pergunta: Quanta água tem na garrafa grande? A vendedora responde: Tem dois litros. No final, Marcos compra um quilo de banana, meio quilo de maçã e duas garrafas de água. Ele paga tudo e agradece à vendedora. Ela sorri e diz: Volte sempre!",
+        "questions": [
+          {
+            "prompt": "¿Cuánto cuesta el kilo de banana?",
+            "options": [
+              "Diez reales",
+              "Dos reales",
+              "Cinco reales",
+              "Tres reales"
+            ],
+            "correctIndex": 3,
+            "explanation": "En el texto la vendedora dice 'Custa três reais' respondiendo a 'Quanto custa o quilo de banana?'."
+          },
+          {
+            "prompt": "¿Por qué el verbo está en plural en 'Quanto custam as maçãs?'?",
+            "options": [
+              "Porque quanto cambia a femenino plural",
+              "Porque 'custam' es un error y debería ser 'custa'",
+              "Porque 'maçãs' es plural y el verbo custar debe concordar con el sujeto",
+              "Porque es una pregunta sobre la edad"
+            ],
+            "correctIndex": 2,
+            "explanation": "Quanto se mantiene invariable cuando se usa para preguntar precios, pero el verbo custar concuerda en número con el sustantivo plural: custam as maçãs."
+          },
+          {
+            "prompt": "¿Cuánta agua hay en la botella grande?",
+            "options": [
+              "Un litro",
+              "Cinco litros",
+              "Tres reales",
+              "Dos litros"
+            ],
+            "correctIndex": 3,
+            "explanation": "La vendedora responde 'Tem dois litros' a la pregunta 'Quanta água tem na garrafa grande?', usando quanta porque água es femenino singular."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre la edad y la familia.",
+        "text": "Juliana trabalha em um escritório no Rio de Janeiro. Hoje chega um colega novo, Pedro. Na hora do café, Juliana quer conhecer Pedro melhor. Ela pergunta: Quantos anos você tem, Pedro? Ele responde: Eu tenho vinte e oito anos. Depois, Juliana pergunta: Quantas irmãs você tem? Pedro diz: Eu tenho duas irmãs e um irmão. Juliana também pergunta: Quanto tempo você mora no Rio? Pedro responde: Eu moro aqui há três anos, antes eu morava em Salvador. No fim da conversa, Juliana convida Pedro para almoçar com a equipe. Pedro aceita e agradece o convite. Os dois ficam amigos rapidamente.",
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Pedro?",
+            "options": [
+              "30 años",
+              "25 años",
+              "28 años",
+              "18 años"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro responde 'Eu tenho vinte e oito anos' a la pregunta 'Quantos anos você tem?'."
+          },
+          {
+            "prompt": "¿Cuántas hermanas tiene Pedro?",
+            "options": [
+              "Ninguna hermana",
+              "Tres hermanas",
+              "Dos hermanas",
+              "Una hermana"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'Eu tenho duas irmãs e um irmão', así que tiene dos hermanas."
+          },
+          {
+            "prompt": "¿Por qué la pregunta 'Quantos anos você tem?' incluye la palabra 'tem'?",
+            "options": [
+              "Porque tem reemplaza a quantos",
+              "Porque para preguntar la edad en portugués siempre se usa el verbo tem junto con quantos anos",
+              "Porque anos es un sustantivo femenino",
+              "Porque tem es el sujeto de la oración"
+            ],
+            "correctIndex": 1,
+            "explanation": "Para preguntar la edad en portugués siempre hay que usar 'quantos anos' seguido del verbo tem; no se puede dejar la pregunta sin ese verbo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas sobre los precios y las cantidades.",
+        "situation": "Ana y Carla están comprando frutas y agua en una feria callejera de Porto Alegre, antes de ir a la playa.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Carla, quanto custa o quilo de laranja aqui?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Custa quatro reais, Ana."
+          },
+          {
+            "speaker": "Ana",
+            "text": "E quantas laranjas tem nesse saco?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Tem seis laranjas no saco."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Quanta água você quer levar para a praia?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Eu quero levar dois litros de água."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Então vamos comprar duas garrafas grandes."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Boa ideia, vamos pagar tudo agora."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuánto cuesta el kilo de naranja?",
+            "options": [
+              "Seis reales",
+              "Dos reales",
+              "Cuatro reales",
+              "Ocho reales"
+            ],
+            "correctIndex": 2,
+            "explanation": "Carla responde 'Custa quatro reais' a la pregunta 'Quanto custa o quilo de laranja?'."
+          },
+          {
+            "prompt": "¿Cuántas naranjas hay en la bolsa?",
+            "options": [
+              "Ocho naranjas",
+              "Seis naranjas",
+              "Cuatro naranjas",
+              "Dos naranjas"
+            ],
+            "correctIndex": 1,
+            "explanation": "Carla dice 'Tem seis laranjas no saco', respondiendo a 'Quantas laranjas tem nesse saco?', usando quantas porque laranjas es femenino plural."
+          },
+          {
+            "prompt": "¿Cuánta agua quiere llevar Carla a la playa?",
+            "options": [
+              "Un litro",
+              "Seis litros",
+              "Dos litros",
+              "Cuatro litros"
+            ],
+            "correctIndex": 2,
+            "explanation": "Carla responde 'Eu quero levar dois litros de água' a la pregunta 'Quanta água você quer levar?', usando quanta porque água es femenino singular."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas sobre la entrevista de trabajo.",
+        "situation": "Rodrigo entrevista a Beatriz para un puesto de trabajo en una empresa de São Paulo.",
+        "lines": [
+          {
+            "speaker": "Rodrigo",
+            "text": "Beatriz, quantos anos de experiência você tem?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Eu tenho cinco anos de experiência."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Quantas línguas você fala?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Eu falo três línguas: português, espanhol e inglês."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Quantas vezes você já viajou para o Brasil?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Eu viajei duas vezes para o Brasil."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Muito bem, isso é importante para o trabalho."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Obrigada, estou muito feliz com a oportunidade."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántos años de experiencia tiene Beatriz?",
+            "options": [
+              "Dos años",
+              "Tres años",
+              "Diez años",
+              "Cinco años"
+            ],
+            "correctIndex": 3,
+            "explanation": "Beatriz responde 'Eu tenho cinco anos de experiência' a la pregunta 'Quantos anos de experiência você tem?'."
+          },
+          {
+            "prompt": "¿Cuántas lenguas habla Beatriz?",
+            "options": [
+              "Cuatro lenguas",
+              "Dos lenguas",
+              "Tres lenguas",
+              "Una lengua"
+            ],
+            "correctIndex": 2,
+            "explanation": "Beatriz dice 'Eu falo três línguas: português, espanhol e inglês', usando quantas porque línguas es femenino plural."
+          },
+          {
+            "prompt": "¿Cuántas veces viajó Beatriz a Brasil antes?",
+            "options": [
+              "Dos veces",
+              "Una vez",
+              "Cinco veces",
+              "Tres veces"
+            ],
+            "correctIndex": 0,
+            "explanation": "Beatriz responde 'Eu viajei duas vezes para o Brasil' a la pregunta 'Quantas vezes você já viajou para o Brasil?'."
+          }
+        ]
+      }
+    ],
+    "preguntas-si-no": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta para esta situación.",
+        "prompt": "Lucas quiere saber si Pedro habla español. ¿Cuál es la pregunta correcta?",
+        "options": [
+          "Does você fala espanhol?",
+          "Você faz fala espanhol?",
+          "Você fala espanhol?",
+          "Fala você espanhol?"
+        ],
+        "correctIndex": 2,
+        "explanation": "En portugués, para preguntar sí/no se usa el mismo orden que en la afirmación, sin agregar ningún auxiliar como 'faz' o 'does'.",
+        "optionNotes": [
+          "Incorrecto: 'does' es un auxiliar del inglés, no se usa en portugués.",
+          "Incorrecto: 'faz' no existe como auxiliar de pregunta en portugués.",
+          "Correcto: mismo orden que la afirmación, solo cambia la entonación.",
+          "Incorrecto: invertir el verbo y el sujeto no es la forma natural de preguntar en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta para esta situación.",
+        "prompt": "Lucas le pregunta a su jefa María si ella trabaja los sábados.",
+        "options": [
+          "Você faz trabalha no sábado?",
+          "Trabalha você no sábado?",
+          "Você trabalha no sábado?",
+          "Você trabalhas no sábado?"
+        ],
+        "correctIndex": 2,
+        "explanation": "La pregunta sí/no mantiene el orden normal de la oración; además, con 'você' el verbo va en tercera persona ('trabalha'), no en segunda ('trabalhas').",
+        "optionNotes": [
+          "Incorrecto: no existe un auxiliar como 'faz' para preguntar.",
+          "Incorrecto: invertir sujeto y verbo no es la forma habitual de preguntar.",
+          "Correcto: orden normal y verbo en tercera persona con 'você'.",
+          "Incorrecto: con 'você' el verbo debe ir en tercera persona ('trabalha'), no en segunda ('trabalhas')."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta para esta situación.",
+        "prompt": "El médico le quiere preguntar a Lucas si duerme bien por la noche.",
+        "options": [
+          "O senhor dorme bem à noite?",
+          "Dorme o senhor bem à noite?",
+          "O senhor faz dorme bem à noite?",
+          "O senhor dormes bem à noite?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se pregunta con el mismo orden de la afirmación y el verbo en tercera persona ('dorme'), sin agregar auxiliares.",
+        "optionNotes": [
+          "Correcto: orden normal, verbo 'dorme' en tercera persona.",
+          "Incorrecto: no es necesario invertir el orden del sujeto y el verbo.",
+          "Incorrecto: 'faz' no se usa como auxiliar para preguntar en portugués.",
+          "Incorrecto: con 'o senhor' el verbo va en tercera persona ('dorme'), no en segunda ('dormes')."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta para esta situación.",
+        "prompt": "Lucas le quiere preguntar al dueño si el departamento tiene wifi.",
+        "options": [
+          "O apartamento faz tem wi-fi?",
+          "O apartamento tem wi-fi?",
+          "Tem o apartamento wi-fi?",
+          "O apartamento têm wi-fi?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Alcanza con mantener el orden de la afirmación y usar 'tem' (singular), sin agregar ningún auxiliar.",
+        "optionNotes": [
+          "Incorrecto: no existe un auxiliar 'faz' para armar preguntas en portugués.",
+          "Correcto: orden normal y verbo 'tem' en singular, de acuerdo con 'o apartamento'.",
+          "Incorrecto: no hace falta invertir el sujeto y el verbo.",
+          "Incorrecto: 'têm' es plural; el sujeto 'o apartamento' es singular, por eso va 'tem'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la pregunta correcta para esta situación.",
+        "prompt": "La entrevistadora le pregunta a Lucas si ya tiene experiencia en el área.",
+        "options": [
+          "Você já tens experiência?",
+          "Já você tem experiência?",
+          "Você já tem experiência?",
+          "Você já faz tem experiência?"
+        ],
+        "correctIndex": 2,
+        "explanation": "La pregunta se forma con el mismo orden que la afirmación y el verbo 'tem' en tercera persona, porque se usa 'você'.",
+        "optionNotes": [
+          "Incorrecto: con 'você' corresponde la tercera persona 'tem', no 'tens'.",
+          "Incorrecto: cambiar el lugar de 'já' y 'você' no es necesario ni natural.",
+          "Correcto: orden normal y verbo en tercera persona con 'você'.",
+          "Incorrecto: 'faz' no funciona como auxiliar de pregunta en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra que completa la pregunta de forma natural en una charla informal entre amigos.",
+        "prompt": "Pedro le dice a Lucas, en una charla informal: 'Você gosta de feijoada, ___?'",
+        "options": [
+          "está",
+          "sim",
+          "não",
+          "né"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Né' es una muletilla muy coloquial que funciona como '¿no?/¿viste?' al final de una pregunta; en registros más formales se usaría 'não é?'.",
+        "optionNotes": [
+          "Incorrecto: 'está' no tiene sentido como cierre de esta pregunta.",
+          "Incorrecto: 'sim' es una respuesta, no se usa para cerrar este tipo de pregunta.",
+          "Incorrecto: 'não' solo no funciona como muletilla de confirmación en esta posición.",
+          "Correcto: 'né' es la forma coloquial típica para este tipo de pregunta entre amigos."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo, sin agregar ningún auxiliar.",
+        "sentence": "Lucas pergunta: 'Você ___ português?'",
+        "hint": "(falar)",
+        "answers": [
+          "fala"
+        ],
+        "explanation": "Para preguntar sí/no alcanza con el verbo principal conjugado, sin ningún auxiliar extra.",
+        "wrongAnswers": [
+          {
+            "answer": "faz fala",
+            "why": "En portugués no se agrega 'faz' como auxiliar para preguntar."
+          },
+          {
+            "answer": "falas",
+            "why": "Con 'você' el verbo va en tercera persona ('fala'), no en segunda ('falas')."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo en pretérito, sin agregar auxiliares.",
+        "sentence": "Pedro pergunta: 'Vocês já ___ almoço?'",
+        "hint": "(almoçar)",
+        "answers": [
+          "almoçaram"
+        ],
+        "explanation": "La pregunta mantiene el mismo orden que la afirmación; solo se conjuga el verbo principal en pretérito perfeito.",
+        "wrongAnswers": [
+          {
+            "answer": "fazem almoçaram",
+            "why": "No existe un auxiliar como 'fazem' para armar preguntas en portugués."
+          },
+          {
+            "answer": "almoçou",
+            "why": "Con 'vocês' el verbo va en plural ('almoçaram'), no en singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta del médico con la forma correcta del verbo.",
+        "sentence": "O médico pergunta: 'O senhor ___ bem à noite?'",
+        "hint": "(dormir)",
+        "answers": [
+          "dorme"
+        ],
+        "explanation": "Con 'o senhor' el verbo se conjuga en tercera persona del singular, igual que en una afirmación.",
+        "wrongAnswers": [
+          {
+            "answer": "dormes",
+            "why": "Con 'o senhor' el verbo va en tercera persona ('dorme'), no en segunda ('dormes')."
+          },
+          {
+            "answer": "faz dorme",
+            "why": "No se usa 'faz' como auxiliar de pregunta en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta sobre el departamento con la forma correcta del verbo.",
+        "sentence": "Lucas pergunta: 'O apartamento ___ wi-fi?'",
+        "hint": "(ter)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "El verbo 'ter' se conjuga igual que en una afirmación; solo cambia la entonación para preguntar.",
+        "wrongAnswers": [
+          {
+            "answer": "têm",
+            "why": "'Têm' es plural; 'o apartamento' es singular, por eso corresponde 'tem'."
+          },
+          {
+            "answer": "faz tem",
+            "why": "No existe un auxiliar 'faz' para armar preguntas en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta de la entrevista con la forma correcta del verbo.",
+        "sentence": "A entrevistadora pergunta: 'Você já ___ experiência na área?'",
+        "hint": "(ter)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "Con 'você' se usa la tercera persona del verbo, igual que en una afirmación.",
+        "wrongAnswers": [
+          {
+            "answer": "tens",
+            "why": "Con 'você' el verbo va en tercera persona ('tem'), no en segunda ('tens')."
+          },
+          {
+            "answer": "faz tem",
+            "why": "No se agrega 'faz' como auxiliar para preguntar en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la muletilla formal que significa '¿no?' al final de la pregunta.",
+        "sentence": "Você gosta de café, não ___?",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "'Não é?' es la forma más formal de la muletilla equivalente a '¿no?/¿viste?', usando el verbo 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "La muletilla formal usa el verbo 'ser' ('não é'), no 'estar'."
+          },
+          {
+            "answer": "faz",
+            "why": "No se usa 'faz' en esta expresión; la forma correcta es 'não é'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta que Lucas le hace a Pedro en el aeropuerto.",
+        "sentence": "Você mora em São Paulo há muito tempo?",
+        "alternatives": [
+          "Você mora há muito tempo em São Paulo?"
+        ],
+        "translation": "¿Vivís en San Pablo desde hace mucho tiempo?",
+        "explanation": "La pregunta sí/no se forma con el mismo orden que la afirmación, sin invertir ni agregar palabras; los complementos de lugar y tiempo pueden intercambiar su posición sin cambiar el sentido.",
+        "tokens": [
+          "Você",
+          "muito",
+          "há",
+          "São",
+          "tempo",
+          "mora",
+          "em",
+          "Paulo"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta que Lucas le hace a un amigo antes de viajar a Salvador.",
+        "sentence": "Está chovendo muito em Salvador agora?",
+        "alternatives": [
+          "Está chovendo muito agora em Salvador?"
+        ],
+        "translation": "¿Está lloviendo mucho en Salvador ahora?",
+        "explanation": "Se mantiene el orden normal de la afirmación; solo cambia la entonación y el signo de pregunta, y el adverbio 'agora' puede ir antes o después del complemento de lugar.",
+        "tokens": [
+          "muito",
+          "chovendo",
+          "Salvador",
+          "Está",
+          "agora",
+          "em"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta de la entrevistadora en la entrevista de trabajo.",
+        "sentence": "Você já trabalhou em uma empresa grande?",
+        "alternatives": [],
+        "translation": "¿Ya trabajaste en una empresa grande?",
+        "explanation": "El orden de la pregunta es igual al de una afirmación; no se agrega ningún auxiliar.",
+        "tokens": [
+          "uma",
+          "Você",
+          "já",
+          "em",
+          "trabalhou",
+          "empresa",
+          "grande"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta que el médico le hace a Lucas.",
+        "sentence": "O senhor toma algum remédio todos os dias?",
+        "alternatives": [],
+        "translation": "¿Usted toma algún remedio todos los días?",
+        "explanation": "Con 'o senhor' el verbo va en tercera persona, igual que en la afirmación, y el orden no cambia.",
+        "tokens": [
+          "senhor",
+          "toma",
+          "remédio",
+          "os",
+          "dias",
+          "todos",
+          "O",
+          "algum"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta que Lucas le hace al dueño del departamento.",
+        "sentence": "O aluguel inclui a conta de luz?",
+        "alternatives": [],
+        "translation": "¿El alquiler incluye la factura de luz?",
+        "explanation": "La pregunta sí/no conserva el mismo orden que la afirmación, sin agregar ninguna palabra extra.",
+        "tokens": [
+          "a",
+          "conta",
+          "inclui",
+          "O",
+          "luz",
+          "de",
+          "aluguel"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la pregunta que Lucas le hace a Pedro.",
+        "sentence": "Você faz fala espanhol?",
+        "answers": [
+          "Você fala espanhol?"
+        ],
+        "explanation": "En portugués no existe un auxiliar como 'faz' para armar preguntas; se usa directamente el verbo principal conjugado.",
+        "wrongAnswers": [
+          {
+            "answer": "Você faz falar espanhol?",
+            "why": "Sigue sobrando el auxiliar 'faz'; en portugués no se usa ningún auxiliar para preguntar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la pregunta sobre una compañera de trabajo.",
+        "sentence": "Ela faz mora em Curitiba?",
+        "answers": [
+          "Ela mora em Curitiba?"
+        ],
+        "explanation": "Para preguntar sí/no alcanza con el verbo principal conjugado, sin agregar 'faz' ni ningún otro auxiliar.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela faz morar em Curitiba?",
+            "why": "Todavía queda el auxiliar 'faz', que no existe en portugués para preguntar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la invitación que le hace Pedro a Lucas.",
+        "sentence": "Vocês fazem vão à festa?",
+        "answers": [
+          "Vocês vão à festa?"
+        ],
+        "explanation": "La pregunta mantiene el mismo orden que la afirmación, sin agregar auxiliares como 'fazem'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês fazem ir à festa?",
+            "why": "Sigue sobrando 'fazem'; en portugués no se agrega ningún auxiliar para preguntar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de registro en esta pregunta formal que Lucas le escribe a su jefe.",
+        "sentence": "O senhor trabalha até tarde, né?",
+        "answers": [
+          "O senhor trabalha até tarde, não é?"
+        ],
+        "explanation": "En un registro formal conviene usar 'não é?' en lugar de la muletilla coloquial 'né?'.",
+        "wrongAnswers": [
+          {
+            "answer": "O senhor trabalhar até tarde, não é?",
+            "why": "El problema no es el verbo 'trabalha', que ya está bien conjugado; el error es usar 'né' en un contexto formal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en la pregunta de la entrevista de trabajo.",
+        "sentence": "Você faz tem experiência na área?",
+        "answers": [
+          "Você tem experiência na área?"
+        ],
+        "explanation": "Alcanza con el verbo principal conjugado ('tem'); no se agrega ningún auxiliar para preguntar en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "Você faz ter experiência na área?",
+            "why": "Sigue sobrando 'faz'; en portugués no se usa auxiliar para armar preguntas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Vos hablás portugués?",
+        "answers": [
+          "Você fala português?"
+        ],
+        "explanation": "Se traduce manteniendo el mismo orden que una afirmación, sin agregar ningún auxiliar.",
+        "wrongAnswers": [
+          {
+            "answer": "Você faz fala português?",
+            "why": "No existe un auxiliar como 'faz' para preguntar en portugués."
+          },
+          {
+            "answer": "Fala você português?",
+            "why": "No es necesario invertir el sujeto y el verbo; se usa el mismo orden que en la afirmación."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Ya almorzaste?",
+        "answers": [
+          "Você já almoçou?",
+          "Já almoçou?"
+        ],
+        "explanation": "La pregunta se forma con el verbo en pretérito perfeito, en el mismo orden que una afirmación.",
+        "wrongAnswers": [
+          {
+            "answer": "Você faz já almoçou?",
+            "why": "No se agrega 'faz' para armar la pregunta en portugués."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿El departamento tiene wifi?",
+        "answers": [
+          "O apartamento tem wi-fi?",
+          "O apartamento tem wifi?"
+        ],
+        "explanation": "Alcanza con el verbo 'tem' en el mismo orden que la afirmación para armar la pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "O apartamento faz tem wi-fi?",
+            "why": "No existe un auxiliar 'faz' para preguntar en portugués."
+          },
+          {
+            "answer": "Tem o apartamento wi-fi?",
+            "why": "No es necesario invertir el verbo y el sujeto; se mantiene el orden de la afirmación."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta del médico al portugués, usando un tratamiento formal.",
+        "spanish": "¿Usted duerme bien por la noche?",
+        "answers": [
+          "O senhor dorme bem à noite?",
+          "A senhora dorme bem à noite?"
+        ],
+        "explanation": "Con tratamientos formales como 'o senhor' o 'a senhora' el verbo va en tercera persona, igual que en una afirmación.",
+        "wrongAnswers": [
+          {
+            "answer": "O senhor faz dorme bem à noite?",
+            "why": "No se agrega 'faz' para armar la pregunta en portugués."
+          },
+          {
+            "answer": "O senhor dormes bem à noite?",
+            "why": "Con 'o senhor' el verbo va en tercera persona ('dorme'), no en segunda ('dormes')."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués, usando la muletilla informal.",
+        "spanish": "Te gusta el café, ¿no?",
+        "answers": [
+          "Você gosta de café, né?",
+          "Você gosta de café, não é?"
+        ],
+        "explanation": "'Né?' es la muletilla coloquial para '¿no?'; 'não é?' es su versión más formal.",
+        "wrongAnswers": [
+          {
+            "answer": "Você gosta de café, do you?",
+            "why": "'Do you' es una muletilla del inglés; en portugués se usa 'né?' o 'não é?'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués.",
+        "spanish": "¿Ya tenés experiencia en el área?",
+        "answers": [
+          "Você já tem experiência na área?",
+          "Já tem experiência na área?"
+        ],
+        "explanation": "La pregunta mantiene el orden de la afirmación y el verbo 'tem' en tercera persona con 'você'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você já tens experiência na área?",
+            "why": "Con 'você' el verbo va en tercera persona ('tem'), no en segunda ('tens')."
+          },
+          {
+            "answer": "Você faz já tem experiência na área?",
+            "why": "No se usa 'faz' como auxiliar para armar preguntas en portugués."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Beatriz, você fala espanhol também?",
+        "alternatives": [
+          "Beatriz você fala espanhol também?"
+        ],
+        "translation": "Beatriz, ¿también hablás español?",
+        "explanation": "No hace falta agregar ningún auxiliar como 'hacer'; la pregunta mantiene el mismo orden que una afirmación y solo cambia la entonación al final."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Vocês já almoçaram hoje, Beatriz?",
+        "alternatives": [
+          "Vocês já almoçaram hoje Beatriz?"
+        ],
+        "translation": "¿Ya almorzaron hoy, Beatriz?",
+        "explanation": "Prestá atención a 'já' (ya), que suena pegado al verbo; la pregunta no invierte el orden de las palabras, es igual que una afirmación."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Está chovendo muito lá fora?",
+        "alternatives": [
+          "Tá chovendo muito lá fora?"
+        ],
+        "translation": "¿Está lloviendo mucho afuera?",
+        "explanation": "'Está chovendo' a veces se escucha casi como una sola palabra; no hay ningún auxiliar agregado, solo la entonación marca que es pregunta."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você gosta de café, não é?",
+        "alternatives": [
+          "Você gosta de café não é?"
+        ],
+        "translation": "Te gusta el café, ¿no?",
+        "explanation": "'Não é?' funciona como una muletilla para confirmar, parecida a '¿no?' en español; en el habla informal se reemplaza por 'né', pero acá se dictó con 'não é'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "'Avó' se pronuncia con 'o' abierta, como en 'bola', y 'avô' con 'o' cerrada, como en 'bolo'; en español no distinguimos estos dos sonidos de 'o'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "mão",
+          "mau"
+        ],
+        "target": 0,
+        "meanings": [
+          "mano",
+          "malo"
+        ],
+        "explanation": "En 'mão' el sonido final es nasal (el aire sale por la nariz), mientras que en 'mau' el diptongo final es oral, sin nasalizar."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "roça",
+          "rosa"
+        ],
+        "target": 1,
+        "meanings": [
+          "chacra (campo cultivado)",
+          "rosa (flor)"
+        ],
+        "explanation": "La 's' entre vocales en portugués suena como 'z', como en 'rosa', mientras que 'ç' suena siempre como 's' sorda, como en 'roça'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación y respondé las preguntas según lo que dicen los personajes.",
+        "situation": "Marcos se encuentra con su amiga Ana en un café de San Pablo y charlan sobre su vida.",
+        "lines": [
+          {
+            "speaker": "Marcos",
+            "text": "Oi, Ana! Tudo bem?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Tudo bem! E você?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Bem também. Você mora aqui em São Paulo?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Moro. Moro perto do centro."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Você trabalha perto daqui?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Trabalho. Trabalho numa escola."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Você gosta do trabalho, né?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Gosto muito!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde vive Ana?",
+            "options": [
+              "Lejos del centro",
+              "No dice dónde vive",
+              "En otra ciudad",
+              "Cerca del centro"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana responde 'Moro. Moro perto do centro', repitiendo el verbo 'morar' para confirmar, como es típico en las respuestas cortas en portugués."
+          },
+          {
+            "prompt": "¿Dónde trabaja Ana?",
+            "options": [
+              "En un café",
+              "En un hospital",
+              "En una escuela",
+              "En una tienda"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ana dice 'Trabalho numa escola', usando el mismo verbo de la pregunta para responder que sí, sin agregar ningún auxiliar extra."
+          },
+          {
+            "prompt": "¿A Ana le gusta su trabajo?",
+            "options": [
+              "No le gusta",
+              "No contesta",
+              "Le gusta mucho",
+              "Le gusta poco"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ana responde 'Gosto muito!', repitiendo el verbo 'gostar' en vez de decir solo 'sim', que es la forma más natural de responder en portugués brasileño."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación y elegí la opción correcta en cada pregunta.",
+        "situation": "Juliana trabaja en Recursos Humanos y entrevista a Pedro para un puesto de trabajo en una oficina.",
+        "lines": [
+          {
+            "speaker": "Juliana",
+            "text": "Pedro, você fala inglês?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Falo. Falo inglês e espanhol."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Você já trabalhou numa empresa grande?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Trabalhei. Trabalhei na Petrobras."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Você mora perto daqui?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não moro. Moro em outro bairro."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Você pode começar na segunda-feira?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Posso. Posso começar na segunda."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué idiomas habla Pedro?",
+            "options": [
+              "Solo portugués",
+              "Solo inglés",
+              "Inglés y español",
+              "Inglés y francés"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro contesta 'Falo. Falo inglês e espanhol', repitiendo el verbo 'falar' para responder afirmativamente, sin usar ningún auxiliar como en inglés."
+          },
+          {
+            "prompt": "¿En qué empresa trabajó Pedro antes?",
+            "options": [
+              "Vale",
+              "Google",
+              "Petrobras",
+              "Itaú"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro responde 'Trabalhei. Trabalhei na Petrobras', confirmando con el verbo conjugado repetido en vez de decir solo 'sim'."
+          },
+          {
+            "prompt": "¿Pedro vive cerca de la oficina?",
+            "options": [
+              "Sí, muy cerca",
+              "No, vive en otro barrio",
+              "No dice dónde vive",
+              "Sí, pero lejos del centro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro responde 'Não moro. Moro em outro bairro', mostrando que para decir que no también se repite el verbo, agregando 'não' antes."
+          }
+        ]
+      }
+    ],
+    "entrevistar-alguem": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para completar la pregunta de la entrevista.",
+        "prompt": "___ você se chama?",
+        "options": [
+          "Como",
+          "O que",
+          "Quem",
+          "Onde"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con el verbo 'chamar-se' se usa 'Como' para preguntar el nombre: Como você se chama?",
+        "optionNotes": [
+          "Correcto: 'Como' se usa con 'chamar-se' para pedir el nombre.",
+          "Incorrecto: 'O que' pregunta por una cosa o actividad, no por el nombre.",
+          "Incorrecto: 'Quem' pregunta por una persona como sujeto, no se usa con 'se chamar'.",
+          "Incorrecto: 'Onde' pregunta por un lugar."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para completar la pregunta.",
+        "prompt": "___ é o seu nome completo?",
+        "options": [
+          "Como",
+          "Quem",
+          "Qual",
+          "O que"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para pedir un dato específico como el nombre con el verbo 'ser' se usa 'Qual': Qual é o seu nome completo?",
+        "optionNotes": [
+          "Incorrecto: 'Como' se usa con 'chamar-se', no con 'ser' para pedir el nombre.",
+          "Incorrecto: 'Quem' pregunta quién es alguien, no pide el nombre con 'ser'.",
+          "Correcto: 'Qual' se usa para pedir un dato específico como el nombre.",
+          "Incorrecto: 'O que' se usa para preguntar por actividades o cosas generales."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa correcta para completar la pregunta.",
+        "prompt": "___ você mora?",
+        "options": [
+          "Por que",
+          "Quando",
+          "Onde",
+          "Quem"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Onde' se usa para preguntar por el lugar: Onde você mora?",
+        "optionNotes": [
+          "Incorrecto: 'Por que' pregunta por un motivo, no por un lugar.",
+          "Incorrecto: 'Quando' pregunta por el momento, no por el lugar.",
+          "Correcto: 'Onde' pregunta por el lugar donde alguien vive.",
+          "Incorrecto: 'Quem' pregunta por una persona, no corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa que concuerda con 'anos'.",
+        "prompt": "___ anos você tem?",
+        "options": [
+          "Quem",
+          "Quantos",
+          "Quanto",
+          "Como"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Quantos' concuerda en género y número con 'anos' (plural masculino): Quantos anos você tem?",
+        "optionNotes": [
+          "Incorrecto: 'Quem' pregunta por una persona, no por una cantidad.",
+          "Correcto: 'Quantos' concuerda con 'anos', que es plural masculino.",
+          "Incorrecto: 'Quanto' no concuerda en número con 'anos'.",
+          "Incorrecto: 'Como' pregunta por el modo, no por una cantidad."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra interrogativa que corresponde a 'por qué' para completar la pregunta.",
+        "prompt": "___ você estuda português?",
+        "options": [
+          "Quando",
+          "Por que",
+          "Onde",
+          "Quem"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Por que' se usa para preguntar el motivo o la razón: Por que você estuda português?",
+        "optionNotes": [
+          "Incorrecto: 'Quando' pregunta por el momento, no por la razón que buscamos.",
+          "Correcto: 'Por que' pregunta por el motivo o la razón.",
+          "Incorrecto: 'Onde' pregunta por un lugar, no corresponde aquí.",
+          "Incorrecto: 'Quem' pregunta por una persona, no por una razón."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma de tratamiento correcta para mantener la coherencia con 'seu' usado antes en la entrevista.",
+        "prompt": "Qual é o seu nome? ___ estuda aqui?",
+        "options": [
+          "Ele",
+          "Tu",
+          "Vocês",
+          "Você"
+        ],
+        "correctIndex": 3,
+        "explanation": "En portugués de Brasil se mantiene 'você' de forma consistente en toda la entrevista; no se mezcla con 'tu'.",
+        "optionNotes": [
+          "Incorrecto: 'ele' es de tercera persona, pero la entrevista se dirige directamente a la persona.",
+          "Incorrecto: mezclar 'tu' con 'seu' es inconsistente en el portugués de Brasil que estamos aprendiendo.",
+          "Incorrecto: 'vocês' es plural y aquí se habla de una sola persona.",
+          "Correcto: 'você' mantiene la coherencia con 'seu' usado antes."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo entre paréntesis para 'você'.",
+        "sentence": "O que você ___?",
+        "hint": "(fazer)",
+        "answers": [
+          "faz"
+        ],
+        "explanation": "El verbo 'fazer' en la forma de 'você' es 'faz': O que você faz?",
+        "wrongAnswers": [
+          {
+            "answer": "faço",
+            "why": "Es la forma de 'eu', pero la pregunta es para 'você'."
+          },
+          {
+            "answer": "fazer",
+            "why": "Es el infinitivo; hay que conjugar el verbo para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo 'ser' para 'você'.",
+        "sentence": "De onde você ___?",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "La forma de 'ser' para 'você' es 'é', con acento agudo: De onde você é?",
+        "wrongAnswers": [
+          {
+            "answer": "e",
+            "why": "Falta el acento; sin él se confunde con la conjunción 'e' (y)."
+          },
+          {
+            "answer": "ser",
+            "why": "Es el infinitivo; hay que conjugar el verbo para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la palabra interrogativa que concuerda con 'anos'.",
+        "sentence": "___ anos você tem?",
+        "hint": "(cantidad, plural)",
+        "answers": [
+          "Quantos"
+        ],
+        "explanation": "'Quantos' concuerda en género y número con 'anos': Quantos anos você tem?",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto",
+            "why": "No concuerda en número con 'anos', que es plural."
+          },
+          {
+            "answer": "Quem",
+            "why": "'Quem' pregunta por una persona, no por una cantidad."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo 'ser' para 'a sua família'.",
+        "sentence": "Como ___ a sua família?",
+        "hint": "(ser)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "El verbo 'ser' para 'a sua família' (singular) es 'é': Como é a sua família?",
+        "wrongAnswers": [
+          {
+            "answer": "são",
+            "why": "'São' es la forma de plural; 'família' es singular."
+          },
+          {
+            "answer": "e",
+            "why": "Falta el acento; sin él cambia el significado de la palabra."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo entre paréntesis en pasado.",
+        "sentence": "Quando você ___ a estudar português?",
+        "hint": "(começar)",
+        "answers": [
+          "começou"
+        ],
+        "explanation": "El verbo 'começar' en pasado para 'você' es 'começou': Quando você começou a estudar português?",
+        "wrongAnswers": [
+          {
+            "answer": "começa",
+            "why": "Está en presente, pero 'Quando' en esta pregunta pide el pasado."
+          },
+          {
+            "answer": "começar",
+            "why": "Es el infinitivo; hay que conjugar en pasado para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la forma correcta del verbo entre paréntesis para 'você'.",
+        "sentence": "Onde você ___ agora?",
+        "hint": "(morar)",
+        "answers": [
+          "mora"
+        ],
+        "explanation": "El verbo 'morar' para 'você' es 'mora': Onde você mora agora?",
+        "wrongAnswers": [
+          {
+            "answer": "moro",
+            "why": "Es la forma de 'eu', pero la pregunta es para 'você'."
+          },
+          {
+            "answer": "morar",
+            "why": "Es el infinitivo; hay que conjugar el verbo para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta de la entrevista.",
+        "sentence": "Qual é o seu nome completo?",
+        "alternatives": [],
+        "translation": "¿Cuál es tu nombre completo?",
+        "explanation": "La palabra interrogativa 'Qual' va siempre al principio de la pregunta, seguida de 'é o seu nome completo'.",
+        "tokens": [
+          "o",
+          "Qual",
+          "seu",
+          "é",
+          "completo",
+          "nome"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta de la entrevista.",
+        "sentence": "De onde você é, Marina?",
+        "alternatives": [
+          "De onde é você, Marina?"
+        ],
+        "translation": "¿De dónde sos, Marina?",
+        "explanation": "'De onde' se coloca al principio de la pregunta; tanto 'você é' como 'é você' son órdenes válidos en portugués.",
+        "tokens": [
+          "é,",
+          "Marina",
+          "De",
+          "onde",
+          "você"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta de la entrevista.",
+        "sentence": "O que você faz no Brasil?",
+        "alternatives": [],
+        "translation": "¿A qué te dedicás en Brasil?",
+        "explanation": "'O que' se coloca al inicio de la pregunta, seguido del sujeto 'você' y el verbo 'faz'.",
+        "tokens": [
+          "Brasil",
+          "que",
+          "no",
+          "faz",
+          "você",
+          "O"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta de la entrevista.",
+        "sentence": "Quantos anos você tem agora?",
+        "alternatives": [],
+        "translation": "¿Cuántos años tenés ahora?",
+        "explanation": "'Quantos anos' va junto al principio de la pregunta, antes de 'você tem'.",
+        "tokens": [
+          "tem",
+          "agora",
+          "você",
+          "anos",
+          "Quantos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar la pregunta correcta de la entrevista.",
+        "sentence": "Por que você estuda português aqui?",
+        "alternatives": [],
+        "translation": "¿Por qué estudiás portugués aquí?",
+        "explanation": "'Por que' se coloca al inicio de la pregunta, antes de 'você estuda'.",
+        "tokens": [
+          "estuda",
+          "que",
+          "você",
+          "português",
+          "aqui",
+          "Por"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de tratamiento en esta parte de la entrevista.",
+        "sentence": "Qual é o seu nome? Tu estudas aqui?",
+        "answers": [
+          "Qual é o seu nome? Você estuda aqui?"
+        ],
+        "explanation": "En portugués de Brasil se usa 'você' de forma consistente en toda la entrevista; no se mezcla con 'tu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Qual é o seu nome? Tu estuda aqui?",
+            "why": "Sigue usando 'tu', que no concuerda con 'você' usado en el resto de la entrevista; hay que cambiar el pronombre y el verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el orden de las palabras en esta pregunta.",
+        "sentence": "Você o que faz?",
+        "answers": [
+          "O que você faz?"
+        ],
+        "explanation": "La palabra interrogativa siempre va al principio de la pregunta en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "Você faz o que?",
+            "why": "La palabra interrogativa 'o que' debe ir al principio de la pregunta, no al final."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta.",
+        "sentence": "Qual e o seu nome?",
+        "answers": [
+          "Qual é o seu nome?"
+        ],
+        "explanation": "Falta el acento agudo en 'é'; sin él se confunde con la conjunción 'e' (y).",
+        "wrongAnswers": [
+          {
+            "answer": "Quau é o seu nome?",
+            "why": "La palabra 'Qual' no cambia de forma; el error está en el acento de 'é', no en 'Qual'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de concordancia en esta pregunta.",
+        "sentence": "Quanto anos você tem?",
+        "answers": [
+          "Quantos anos você tem?"
+        ],
+        "explanation": "'Quanto' debe concordar en número con 'anos' (plural): Quantos anos você tem?",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto ano você tem?",
+            "why": "El problema es la falta de concordancia de 'quanto'; 'anos' debe quedar en plural, no cambiar a singular."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error en esta pregunta sobre el motivo.",
+        "sentence": "Porque você estuda português?",
+        "answers": [
+          "Por que você estuda português?"
+        ],
+        "explanation": "Para preguntar el motivo en portugués se escribe 'por que' separado y sin tilde; 'porque' junto se usa para responder.",
+        "wrongAnswers": [
+          {
+            "answer": "Por qué você estuda português?",
+            "why": "En portugués no se usa tilde como en español; se escribe 'por que' sin acento en las preguntas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués para la entrevista.",
+        "spanish": "¿Cuál es tu nombre completo, Marina?",
+        "answers": [
+          "Qual é o seu nome completo, Marina?",
+          "Qual é seu nome completo, Marina?"
+        ],
+        "explanation": "'Qual é o seu nome completo?' es la forma estándar; en portugués de Brasil también es natural omitir el artículo 'o' antes del posesivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Que é o seu nome completo, Marina?",
+            "why": "'Que' no se usa para pedir un dato específico como el nombre; se usa 'Qual'."
+          },
+          {
+            "answer": "Quem é o seu nome completo, Marina?",
+            "why": "'Quem' pregunta por una persona como sujeto, no se usa para pedir un dato como el nombre con el verbo 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués para la entrevista.",
+        "spanish": "¿De dónde sos?",
+        "answers": [
+          "De onde você é?",
+          "De onde é você?"
+        ],
+        "explanation": "'De onde' va al principio de la pregunta, seguido de 'você é'.",
+        "wrongAnswers": [
+          {
+            "answer": "De onde tu é?",
+            "why": "No se debe mezclar 'tu' con la conjugación de 'você' ('é'); en Brasil se usa 'você' de forma consistente."
+          },
+          {
+            "answer": "Onde você é de?",
+            "why": "La preposición 'de' debe ir junto a 'onde' al principio de la pregunta, no al final."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués para la entrevista.",
+        "spanish": "¿A qué te dedicás en Brasil?",
+        "answers": [
+          "O que você faz no Brasil?"
+        ],
+        "explanation": "'O que você faz?' es la forma habitual de preguntar a qué se dedica alguien; con Brasil se usa 'no Brasil'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você o que faz no Brasil?",
+            "why": "La palabra interrogativa 'o que' debe ir al principio de la pregunta, no después de 'você'."
+          },
+          {
+            "answer": "O que você faz em Brasil?",
+            "why": "Con el nombre del país Brasil se usa la contracción 'no', no 'em' suelto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués para la entrevista.",
+        "spanish": "¿Cuántos años tenés?",
+        "answers": [
+          "Quantos anos você tem?"
+        ],
+        "explanation": "'Quantos' concuerda con 'anos' y el verbo 'ter' para 'você' es 'tem': Quantos anos você tem?",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto anos você tem?",
+            "why": "'Quanto' no concuerda en número con 'anos'; debe ser 'Quantos'."
+          },
+          {
+            "answer": "Quantos anos você têm?",
+            "why": "'Têm' es la forma plural (vocês/eles); para 'você' se usa 'tem'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués para la entrevista.",
+        "spanish": "¿Por qué estudiás portugués?",
+        "answers": [
+          "Por que você estuda português?"
+        ],
+        "explanation": "Para preguntar el motivo se escribe 'por que' separado y antes del verbo: Por que você estuda português?",
+        "wrongAnswers": [
+          {
+            "answer": "Por que você estudas português?",
+            "why": "La conjugación 'estudas' corresponde a 'tu'; con 'você' se usa 'estuda'."
+          },
+          {
+            "answer": "Porque você estuda português?",
+            "why": "Para preguntar se escribe 'por que' separado; 'porque' junto se usa para responder, no para preguntar."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta al portugués para la entrevista.",
+        "spanish": "¿Cómo es tu familia?",
+        "answers": [
+          "Como é a sua família?",
+          "Como é sua família?"
+        ],
+        "explanation": "'Como é a sua família?' es la forma estándar; en portugués de Brasil también es natural omitir el artículo 'a' antes del posesivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Como é o seu família?",
+            "why": "'Família' es femenino, por lo que el posesivo debe ser 'sua', no 'seu'."
+          },
+          {
+            "answer": "Como e a sua família?",
+            "why": "Falta el acento en 'é'; sin él se confunde con la conjunción 'e' (y)."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Oi, qual é o seu nome?",
+        "alternatives": [
+          "Oi, qual é seu nome?"
+        ],
+        "translation": "Hola, ¿cuál es tu nombre?",
+        "explanation": "No te olvides del acento en 'é' y del signo de pregunta; sin el acento la oración queda incompleta."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "De onde você é, Lucas?",
+        "alternatives": [],
+        "translation": "¿De dónde sos, Lucas?",
+        "explanation": "Prestá atención a 'onde', que suele confundirse con 'quando' por el sonido inicial similar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "O que você faz em São Paulo?",
+        "alternatives": [],
+        "translation": "¿A qué te dedicás en San Pablo?",
+        "explanation": "'O que' pregunta por una actividad o cosa; no lo confundas con 'quem', que pregunta por una persona."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Quando você começou a trabalhar aqui?",
+        "alternatives": [],
+        "translation": "¿Cuándo empezaste a trabajar aquí?",
+        "explanation": "'Quando' y 'quanto' suenan parecido al principio; la diferencia está en el final de la palabra, no te confundas al escribir."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "quanto",
+          "quando"
+        ],
+        "target": 1,
+        "meanings": [
+          "cuánto",
+          "cuando"
+        ],
+        "explanation": "La diferencia está en la consonante final: 'quando' termina con un sonido suave (do) y 'quanto' con uno más fuerte (to)."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "avô",
+          "avó"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "La 'o' de 'avó' es abierta y la de 'avô' es cerrada; en español no distinguimos tan claramente estos dos sonidos de la 'o'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "cacería",
+          "casa"
+        ],
+        "explanation": "Entre vocales, la 's' portuguesa suena como 'z' (casa), mientras que la 'ç' siempre suena como una 's' fuerte (caça)."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la entrevista entre Marcos y Juliana y respondé las preguntas.",
+        "text": "Marcos: Oi, Juliana! Muito prazer. Qual é o seu nome completo?\nJuliana: Oi, Marcos! Meu nome é Juliana Costa.\nMarcos: De onde você é?\nJuliana: Eu sou de Salvador, na Bahia.\nMarcos: Como é a sua cidade?\nJuliana: Salvador é uma cidade linda, com praias bonitas e muita música.\nMarcos: O que você faz?\nJuliana: Eu sou professora de inglês.\nMarcos: Onde você mora agora?\nJuliana: Eu moro em São Paulo.\nMarcos: Quantos anos você tem?\nJuliana: Eu tenho vinte e nove anos.\nMarcos: Quem mora com você em São Paulo?\nJuliana: Minha irmã mora comigo.\nMarcos: Por que você mora em São Paulo?\nJuliana: Porque eu trabalho em uma escola grande aqui.\nMarcos: Muito obrigado pela entrevista!\nJuliana: De nada! Foi um prazer.",
+        "questions": [
+          {
+            "prompt": "¿De dónde es Juliana?",
+            "options": [
+              "De Salvador, na Bahia",
+              "De São Paulo",
+              "De Brasília",
+              "Do Rio de Janeiro"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marcos pregunta 'De onde você é?' y Juliana responde 'Eu sou de Salvador, na Bahia'; 'de onde' se usa para preguntar el origen."
+          },
+          {
+            "prompt": "¿A qué se dedica Juliana?",
+            "options": [
+              "Es médica",
+              "Es estudiante",
+              "Es periodista",
+              "Es profesora de inglés"
+            ],
+            "correctIndex": 3,
+            "explanation": "A la pregunta 'O que você faz?' Juliana contesta 'Eu sou professora de inglês', indicando su ocupación."
+          },
+          {
+            "prompt": "¿Por qué vive Juliana en São Paulo?",
+            "options": [
+              "Porque su familia vive allí",
+              "Porque trabaja en una escuela grande",
+              "Porque allí nació",
+              "Porque estudia allí"
+            ],
+            "correctIndex": 1,
+            "explanation": "Juliana responde a 'Por que você mora em São Paulo?' con 'Porque eu trabalho em uma escola grande aqui', dando el motivo con 'porque'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé la entrevista entre Pedro y Camila sobre un viaje y respondé las preguntas.",
+        "text": "Pedro: Oi, Camila! Como você está?\nCamila: Oi, Pedro! Eu estou bem, obrigada!\nPedro: Quando você vai viajar para o Brasil?\nCamila: Eu vou viajar em dezembro.\nPedro: Onde você vai ficar?\nCamila: Eu vou ficar em um hotel no Rio de Janeiro.\nPedro: Com quem você vai viajar?\nCamila: Eu vou viajar com minha amiga Laura.\nPedro: O que vocês vão fazer lá?\nCamila: Nós vamos visitar o Pão de Açúcar e o Cristo Redentor.\nPedro: Quanto tempo você vai ficar lá?\nCamila: Eu vou ficar duas semanas.\nPedro: Por que você escolheu o Rio de Janeiro?\nCamila: Porque eu quero ver a praia e conhecer a cidade.\nPedro: Que legal! Boa viagem!\nCamila: Muito obrigada, Pedro!",
+        "questions": [
+          {
+            "prompt": "¿Cuándo va a viajar Camila?",
+            "options": [
+              "En julio",
+              "En marzo",
+              "En enero",
+              "En diciembre"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro pregunta 'Quando você vai viajar?' y Camila responde 'Eu vou viajar em dezembro', usando 'quando' para el tiempo."
+          },
+          {
+            "prompt": "¿Con quién va a viajar Camila?",
+            "options": [
+              "Con su hermana",
+              "Sola",
+              "Con su amiga Laura",
+              "Con su madre"
+            ],
+            "correctIndex": 2,
+            "explanation": "A la pregunta 'Com quem você vai viajar?' Camila contesta 'Eu vou viajar com minha amiga Laura', indicando con quién va."
+          },
+          {
+            "prompt": "¿Cuánto tiempo se va a quedar Camila en Río de Janeiro?",
+            "options": [
+              "Tres días",
+              "Dos semanas",
+              "Una semana",
+              "Un mes"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila responde 'Eu vou ficar duas semanas' a la pregunta 'Quanto tempo você vai ficar lá?', usando 'quanto tempo' para preguntar duración."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre dos amigos y respondé las preguntas.",
+        "situation": "Bianca y Thiago están en una cafetería en Curitiba. Bianca le hace una entrevista a Thiago para un trabajo de la universidad.",
+        "lines": [
+          {
+            "speaker": "Bianca",
+            "text": "Oi, Thiago! Posso fazer umas perguntas para o meu trabalho?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Claro! Pode perguntar."
+          },
+          {
+            "speaker": "Bianca",
+            "text": "O que você estuda?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Eu estudo Engenharia na universidade."
+          },
+          {
+            "speaker": "Bianca",
+            "text": "Quando você começou o curso?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Eu comecei em dois mil e vinte e três."
+          },
+          {
+            "speaker": "Bianca",
+            "text": "Onde você estuda?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Eu estudo na Universidade Federal do Paraná."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué estudia Thiago?",
+            "options": [
+              "Engenharia",
+              "Direito",
+              "Arquitetura",
+              "Medicina"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thiago responde 'Eu estudo Engenharia na universidade' a la pregunta 'O que você estuda?'."
+          },
+          {
+            "prompt": "¿Cuándo empezó la carrera?",
+            "options": [
+              "En 2023",
+              "En 2021",
+              "En 2022",
+              "En 2024"
+            ],
+            "correctIndex": 0,
+            "explanation": "A la pregunta 'Quando você começou o curso?' Thiago dice 'Eu comecei em dois mil e vinte e três', es decir, en 2023."
+          },
+          {
+            "prompt": "¿Dónde estudia Thiago?",
+            "options": [
+              "Universidade de São Paulo",
+              "Universidade Federal do Paraná",
+              "Universidade Federal de Minas Gerais",
+              "Universidade Federal do Rio de Janeiro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Thiago contesta 'Eu estudo na Universidade Federal do Paraná' cuando Bianca pregunta 'Onde você estuda?'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas.",
+        "situation": "Fernanda es la entrevistadora en una oficina de Belo Horizonte y Rafael es el candidato para un puesto en un restaurante.",
+        "lines": [
+          {
+            "speaker": "Fernanda",
+            "text": "Oi, Rafael! Muito prazer. Qual é a sua profissão?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Oi! Eu sou cozinheiro."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Onde você trabalha agora?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Eu trabalho em um restaurante no centro."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Por que você quer trabalhar aqui?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Porque eu quero aprender pratos novos."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Quanto tempo você trabalha como cozinheiro?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Eu trabalho há cinco anos."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuál es la profesión de Rafael?",
+            "options": [
+              "Garçom",
+              "Motorista",
+              "Cozinheiro",
+              "Gerente"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael responde 'Eu sou cozinheiro' cuando Fernanda pregunta 'Qual é a sua profissão?'."
+          },
+          {
+            "prompt": "¿Por qué quiere trabajar ahí Rafael?",
+            "options": [
+              "Porque está cerca de su casa",
+              "Porque quiere aprender platos nuevos",
+              "Porque necesita el dinero",
+              "Porque conoce al dueño"
+            ],
+            "correctIndex": 1,
+            "explanation": "A la pregunta 'Por que você quer trabalhar aqui?' Rafael contesta 'Porque eu quero aprender pratos novos'."
+          },
+          {
+            "prompt": "¿Cuánto tiempo hace que Rafael trabaja como cocinero?",
+            "options": [
+              "Diez años",
+              "Dos años",
+              "Cinco años",
+              "Tres años"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice 'Eu trabalho há cinco anos' al responder 'Quanto tempo você trabalha como cozinheiro?'."
+          }
+        ]
+      }
+    ]
+  }
+}
