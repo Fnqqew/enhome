@@ -241,16 +241,7 @@
         "sentence": "O Pedro trabalha em um banco grande.",
         "alternatives": [],
         "translation": "Pedro trabaja en un banco grande.",
-        "explanation": "En portugués se suele usar el artículo \"o\" antes del nombre propio Pedro, aunque en español no se use.",
-        "tokens": [
-          "O",
-          "grande",
-          "em",
-          "Pedro",
-          "banco",
-          "trabalha",
-          "um"
-        ]
+        "explanation": "En portugués se suele usar el artículo \"o\" antes del nombre propio Pedro, aunque en español no se use."
       },
       {
         "type": "word_order",
@@ -258,16 +249,7 @@
         "sentence": "A Ana mora perto do escritório dela.",
         "alternatives": [],
         "translation": "Ana vive cerca de su oficina.",
-        "explanation": "Antes de nombres propios femeninos se usa el artículo \"a\" en portugués brasileño.",
-        "tokens": [
-          "perto",
-          "dela",
-          "Ana",
-          "do",
-          "escritório",
-          "A",
-          "mora"
-        ]
+        "explanation": "Antes de nombres propios femeninos se usa el artículo \"a\" en portugués brasileño."
       },
       {
         "type": "word_order",
@@ -275,16 +257,7 @@
         "sentence": "Os livros estão na mesa da sala.",
         "alternatives": [],
         "translation": "Los libros están en la mesa de la sala.",
-        "explanation": "\"Os\" es el artículo masculino plural, usado porque \"livros\" es masculino y plural.",
-        "tokens": [
-          "sala",
-          "livros",
-          "da",
-          "mesa",
-          "na",
-          "estão",
-          "Os"
-        ]
+        "explanation": "\"Os\" es el artículo masculino plural, usado porque \"livros\" es masculino y plural."
       },
       {
         "type": "word_order",
@@ -292,16 +265,7 @@
         "sentence": "As meninas brincam no parque da escola.",
         "alternatives": [],
         "translation": "Las chicas juegan en el parque de la escuela.",
-        "explanation": "\"As\" es el artículo femenino plural, que concuerda con \"meninas\".",
-        "tokens": [
-          "brincam",
-          "meninas",
-          "escola",
-          "da",
-          "no",
-          "parque",
-          "As"
-        ]
+        "explanation": "\"As\" es el artículo femenino plural, que concuerda con \"meninas\"."
       },
       {
         "type": "word_order",
@@ -309,15 +273,7 @@
         "sentence": "O Brasil tem praias muito bonitas.",
         "alternatives": [],
         "translation": "Brasil tiene playas muy lindas.",
-        "explanation": "Los países como Brasil suelen llevar el artículo definido masculino \"o\" en portugués.",
-        "tokens": [
-          "bonitas",
-          "tem",
-          "Brasil",
-          "O",
-          "muito",
-          "praias"
-        ]
+        "explanation": "Los países como Brasil suelen llevar el artículo definido masculino \"o\" en portugués."
       },
       {
         "type": "error_correction",
@@ -959,16 +915,7 @@
         "sentence": "Julieta tem um irmão e uma irmã.",
         "alternatives": [],
         "translation": "Julieta tiene un hermano y una hermana.",
-        "explanation": "Cada sustantivo lleva el artículo indefinido que corresponde a su género: 'um' para irmão y 'uma' para irmã.",
-        "tokens": [
-          "tem",
-          "e",
-          "irmã",
-          "uma",
-          "um",
-          "Julieta",
-          "irmão"
-        ]
+        "explanation": "Cada sustantivo lleva el artículo indefinido que corresponde a su género: 'um' para irmão y 'uma' para irmã."
       },
       {
         "type": "word_order",
@@ -976,17 +923,7 @@
         "sentence": "Ela precisa de uma caneta para o contrato.",
         "alternatives": [],
         "translation": "Ella necesita una lapicera para el contrato.",
-        "explanation": "'Caneta' es femenino singular, por eso se usa 'uma'.",
-        "tokens": [
-          "de",
-          "contrato",
-          "Ela",
-          "uma",
-          "o",
-          "precisa",
-          "para",
-          "caneta"
-        ]
+        "explanation": "'Caneta' es femenino singular, por eso se usa 'uma'."
       },
       {
         "type": "word_order",
@@ -994,15 +931,7 @@
         "sentence": "Uns amigos vêm visitar Julieta hoje.",
         "alternatives": [],
         "translation": "Unos amigos vienen a visitar a Julieta hoy.",
-        "explanation": "'Amigos' es masculino plural, por eso se usa 'uns'.",
-        "tokens": [
-          "vêm",
-          "Uns",
-          "hoje",
-          "amigos",
-          "Julieta",
-          "visitar"
-        ]
+        "explanation": "'Amigos' es masculino plural, por eso se usa 'uns'."
       },
       {
         "type": "word_order",
@@ -1010,15 +939,7 @@
         "sentence": "Umas pessoas chegaram atrasadas à reunião.",
         "alternatives": [],
         "translation": "Unas personas llegaron tarde a la reunión.",
-        "explanation": "'Pessoas' es femenino plural, por eso se usa 'umas'.",
-        "tokens": [
-          "chegaram",
-          "reunião",
-          "pessoas",
-          "atrasadas",
-          "Umas",
-          "à"
-        ]
+        "explanation": "'Pessoas' es femenino plural, por eso se usa 'umas'."
       },
       {
         "type": "word_order",
@@ -1026,15 +947,7 @@
         "sentence": "Ele comprou um carro novo ontem.",
         "alternatives": [],
         "translation": "Él compró un auto nuevo ayer.",
-        "explanation": "'Carro' es masculino singular, por eso se usa 'um'.",
-        "tokens": [
-          "comprou",
-          "um",
-          "Ele",
-          "ontem",
-          "carro",
-          "novo"
-        ]
+        "explanation": "'Carro' es masculino singular, por eso se usa 'um'."
       },
       {
         "type": "error_correction",
@@ -1424,6 +1337,30 @@
             "explanation": "Marcos dice 'Eu preciso de um quarto grande'; quarto es masculino singular, por eso se usa um."
           }
         ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el artículo indefinido correcto.",
+        "sentence": "Pedro vai à farmácia e compra ___ remédio para a gripe.",
+        "hint": "(remédio = masculino)",
+        "answers": [
+          "um"
+        ],
+        "explanation": "Remédio es una palabra masculina en portugués, por eso el artículo indefinido correcto es 'um', no 'uma'.",
+        "wrongAnswers": [
+          {
+            "answer": "uma",
+            "why": "Uma se usa con sustantivos femeninos, pero 'remédio' es masculino en portugués."
+          },
+          {
+            "answer": "uns",
+            "why": "Uns es plural y la oración habla de un solo remédio, en singular."
+          },
+          {
+            "answer": "o",
+            "why": "O es artículo definido, pero aquí se necesita un artículo indefinido porque no se especifica cuál remédio es."
+          }
+        ]
       }
     ],
     "genero": [
@@ -1643,17 +1580,7 @@
         "sentence": "O leite do café da manhã está quente.",
         "alternatives": [],
         "translation": "La leche del desayuno está caliente.",
-        "explanation": "'Leite' es masculino en portugués, por eso lleva el artículo 'o'.",
-        "tokens": [
-          "do",
-          "está",
-          "da",
-          "manhã",
-          "O",
-          "quente",
-          "café",
-          "leite"
-        ]
+        "explanation": "'Leite' es masculino en portugués, por eso lleva el artículo 'o'."
       },
       {
         "type": "word_order",
@@ -1661,16 +1588,7 @@
         "sentence": "A viagem para Salvador foi muito longa.",
         "alternatives": [],
         "translation": "El viaje a Salvador fue muy largo.",
-        "explanation": "'Viagem' termina en '-agem' y es femenina, por eso lleva 'a'.",
-        "tokens": [
-          "foi",
-          "A",
-          "para",
-          "muito",
-          "longa",
-          "viagem",
-          "Salvador"
-        ]
+        "explanation": "'Viagem' termina en '-agem' y es femenina, por eso lleva 'a'."
       },
       {
         "type": "word_order",
@@ -1678,17 +1596,7 @@
         "sentence": "A garagem da casa está cheia de malas.",
         "alternatives": [],
         "translation": "El garaje de la casa está lleno de maletas.",
-        "explanation": "'Garagem' termina en '-agem' y es femenina, por eso lleva 'a'.",
-        "tokens": [
-          "de",
-          "está",
-          "casa",
-          "da",
-          "A",
-          "malas",
-          "cheia",
-          "garagem"
-        ]
+        "explanation": "'Garagem' termina en '-agem' y es femenina, por eso lleva 'a'."
       },
       {
         "type": "word_order",
@@ -1696,16 +1604,7 @@
         "sentence": "A dor de cabeça não passou ainda.",
         "alternatives": [],
         "translation": "El dolor de cabeza no pasó todavía.",
-        "explanation": "'Dor' es femenina en portugués, aunque en español 'dolor' sea masculino.",
-        "tokens": [
-          "passou",
-          "cabeça",
-          "ainda",
-          "de",
-          "dor",
-          "não",
-          "A"
-        ]
+        "explanation": "'Dor' es femenina en portugués, aunque en español 'dolor' sea masculino."
       },
       {
         "type": "word_order",
@@ -1713,15 +1612,7 @@
         "sentence": "O sangue do exame estava normal.",
         "alternatives": [],
         "translation": "La sangre del análisis estaba normal.",
-        "explanation": "'Sangue' es masculino en portugués, aunque en español 'sangre' sea femenino.",
-        "tokens": [
-          "normal",
-          "exame",
-          "estava",
-          "sangue",
-          "O",
-          "do"
-        ]
+        "explanation": "'Sangue' es masculino en portugués, aunque en español 'sangre' sea femenino."
       },
       {
         "type": "error_correction",
@@ -2432,15 +2323,7 @@
         "sentence": "Os aviões estão atrasados no aeroporto.",
         "alternatives": [],
         "translation": "Los aviones están atrasados en el aeropuerto.",
-        "explanation": "Avião forma el plural en -ões: avião → aviões.",
-        "tokens": [
-          "aviões",
-          "no",
-          "atrasados",
-          "aeroporto",
-          "estão",
-          "Os"
-        ]
+        "explanation": "Avião forma el plural en -ões: avião → aviões."
       },
       {
         "type": "word_order",
@@ -2448,15 +2331,7 @@
         "sentence": "Juan comprou três pães na padaria.",
         "alternatives": [],
         "translation": "Juan compró tres panes en la panadería.",
-        "explanation": "Pão es una excepción que forma el plural en -ães: pão → pães.",
-        "tokens": [
-          "comprou",
-          "na",
-          "pães",
-          "Juan",
-          "três",
-          "padaria"
-        ]
+        "explanation": "Pão es una excepción que forma el plural en -ães: pão → pães."
       },
       {
         "type": "word_order",
@@ -2464,15 +2339,7 @@
         "sentence": "Os animais do zoológico são bonitos.",
         "alternatives": [],
         "translation": "Los animales del zoológico son lindos.",
-        "explanation": "Las palabras en -al cambian la l por i y suman -s: animal → animais.",
-        "tokens": [
-          "do",
-          "Os",
-          "zoológico",
-          "são",
-          "bonitos",
-          "animais"
-        ]
+        "explanation": "Las palabras en -al cambian la l por i y suman -s: animal → animais."
       },
       {
         "type": "word_order",
@@ -2480,16 +2347,7 @@
         "sentence": "Os papéis estão na mesa do hotel.",
         "alternatives": [],
         "translation": "Los papeles están en la mesa del hotel.",
-        "explanation": "Las palabras en -el forman el plural en -éis con acento: papel → papéis.",
-        "tokens": [
-          "papéis",
-          "na",
-          "do",
-          "mesa",
-          "Os",
-          "estão",
-          "hotel"
-        ]
+        "explanation": "Las palabras en -el forman el plural en -éis con acento: papel → papéis."
       },
       {
         "type": "word_order",
@@ -2497,15 +2355,7 @@
         "sentence": "As mãos dela estão limpas agora.",
         "alternatives": [],
         "translation": "Las manos de ella están limpias ahora.",
-        "explanation": "Mão forma el plural en -ãos: mão → mãos.",
-        "tokens": [
-          "mãos",
-          "estão",
-          "dela",
-          "As",
-          "limpas",
-          "agora"
-        ]
+        "explanation": "Mão forma el plural en -ãos: mão → mãos."
       },
       {
         "type": "error_correction",
@@ -3131,17 +2981,7 @@
           "Tem um mercado grande no bairro da Marina."
         ],
         "translation": "En el barrio de Marina hay un mercado grande.",
-        "explanation": "Tem se usa para decir 'hay' en el habla informal; puede ir al principio o después del lugar.",
-        "tokens": [
-          "grande",
-          "Marina",
-          "um",
-          "tem",
-          "mercado",
-          "bairro",
-          "da",
-          "No"
-        ]
+        "explanation": "Tem se usa para decir 'hay' en el habla informal; puede ir al principio o después del lugar."
       },
       {
         "type": "word_order",
@@ -3151,17 +2991,7 @@
           "Perto da praça central há uma escola nova."
         ],
         "translation": "Hay una escuela nueva cerca de la plaza central.",
-        "explanation": "Há es la forma más formal de decir 'hay' y tampoco cambia según el lugar en la oración.",
-        "tokens": [
-          "central",
-          "uma",
-          "praça",
-          "Há",
-          "perto",
-          "da",
-          "escola",
-          "nova"
-        ]
+        "explanation": "Há es la forma más formal de decir 'hay' y tampoco cambia según el lugar en la oración."
       },
       {
         "type": "word_order",
@@ -3171,16 +3001,7 @@
           "Aqui não tem farmácia aberta à noite."
         ],
         "translation": "No hay farmacia abierta a la noche aquí.",
-        "explanation": "Para negar la existencia de algo se usa 'não tem' (o 'não há'), seguido del sustantivo.",
-        "tokens": [
-          "Não",
-          "tem",
-          "farmácia",
-          "noite",
-          "aqui",
-          "aberta",
-          "à"
-        ]
+        "explanation": "Para negar la existencia de algo se usa 'não tem' (o 'não há'), seguido del sustantivo."
       },
       {
         "type": "word_order",
@@ -3190,16 +3011,7 @@
           "Tem dois parques muito bonitos no centro."
         ],
         "translation": "En el centro hay dos parques muy lindos.",
-        "explanation": "Tem no concuerda en plural: se usa igual con 'dois parques' que con un sustantivo singular.",
-        "tokens": [
-          "dois",
-          "muito",
-          "parques",
-          "No",
-          "bonitos",
-          "centro",
-          "tem"
-        ]
+        "explanation": "Tem no concuerda en plural: se usa igual con 'dois parques' que con un sustantivo singular."
       },
       {
         "type": "word_order",
@@ -3209,15 +3021,7 @@
           "Nesse bairro tem uma academia boa?"
         ],
         "translation": "¿Hay un gimnasio bueno en ese barrio?",
-        "explanation": "Las preguntas con 'tem' se forman igual que las afirmaciones, solo cambia la entonación o el signo de pregunta.",
-        "tokens": [
-          "bairro",
-          "academia",
-          "nesse",
-          "boa",
-          "uma",
-          "Tem"
-        ]
+        "explanation": "Las preguntas con 'tem' se forman igual que las afirmaciones, solo cambia la entonación o el signo de pregunta."
       },
       {
         "type": "error_correction",

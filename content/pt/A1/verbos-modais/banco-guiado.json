@@ -1,0 +1,3007 @@
+{
+  "subtopics": {
+    "poder-permiso-posibilidad": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'poder' para completar la frase.",
+        "prompt": "Marcos, ___ entrar no seu quarto?",
+        "options": [
+          "Posso",
+          "Pode",
+          "Podo",
+          "Podem"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para pedir permiso usando 'eu' se usa la forma irregular 'posso', con doble 's'.",
+        "optionNotes": [
+          "Correcto: 'posso' es la forma de 'eu' en el verbo poder.",
+          "Incorrecto: 'pode' es la forma de você/ele, no de 'eu'.",
+          "Incorrecto: 'podo' no existe en portugués; es un calco del español 'puedo'.",
+          "Incorrecto: 'podem' es la forma plural (vocês/eles), no corresponde a 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'poder' para completar la frase.",
+        "prompt": "Marcos pergunta: 'Você ___ me ajudar com as malas?'",
+        "options": [
+          "posso",
+          "podemos",
+          "podem",
+          "pode"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'você' se usa la forma 'pode' del verbo poder.",
+        "optionNotes": [
+          "Incorrecto: 'posso' es la forma de 'eu', no de 'você'.",
+          "Incorrecto: 'podemos' es la forma de 'nós'.",
+          "Incorrecto: 'podem' es la forma plural (vocês/eles).",
+          "Correcto: 'pode' es la forma para 'você'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'poder' para completar la frase.",
+        "prompt": "A enfermeira diz: 'Nós ___ entrar agora.'",
+        "options": [
+          "podem",
+          "podemos",
+          "pode",
+          "posso"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'nós' se usa 'podemos', la forma de primera persona plural del verbo poder.",
+        "optionNotes": [
+          "Incorrecto: 'podem' es para vocês/eles, no para 'nós'.",
+          "Correcto: 'podemos' es la forma para 'nós'.",
+          "Incorrecto: 'pode' es singular, para você/ele.",
+          "Incorrecto: 'posso' es la forma de 'eu', no de 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para completar la expresión fija.",
+        "prompt": "Juan pergunta ao chefe: 'Chefe, ___ ser às quatro horas?'",
+        "options": [
+          "posso",
+          "podemos",
+          "pode",
+          "podem"
+        ],
+        "correctIndex": 2,
+        "explanation": "La expresión fija 'pode ser' siempre usa 'pode', sin importar quién habla.",
+        "optionNotes": [
+          "Incorrecto: 'posso' no se usa en la expresión 'pode ser'.",
+          "Incorrecto: 'podemos' no se usa en esta expresión fija.",
+          "Correcto: 'pode ser' es una expresión fija que siempre usa 'pode'.",
+          "Incorrecto: 'podem' no se usa en esta expresión fija."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'poder' para completar la frase.",
+        "prompt": "Sobre os amigos de Marcos: 'Eles ___ pagar com cartão no restaurante.'",
+        "options": [
+          "podemos",
+          "pode",
+          "posso",
+          "podem"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'eles' se usa 'podem', la forma de tercera persona plural del verbo poder.",
+        "optionNotes": [
+          "Incorrecto: 'podemos' es la forma de 'nós', no de 'eles'.",
+          "Incorrecto: 'pode' es singular, no corresponde a 'eles'.",
+          "Incorrecto: 'posso' es la forma de 'eu'.",
+          "Correcto: 'podem' es la forma para 'eles'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de pedir permiso en portugués.",
+        "prompt": "¿Cuál es la forma correcta de preguntar '¿Puedo abrir la ventana?'",
+        "options": [
+          "Pode eu abrir a janela?",
+          "Eu podo abrir a janela?",
+          "Eu pode abrir a janela?",
+          "Posso abrir a janela?"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para pedir permiso con 'yo' se usa 'posso' sin anteponer el pronombre; no se dice 'pode eu' ni 'podo'.",
+        "optionNotes": [
+          "Incorrecto: en portugués no se antepone el pronombre al verbo 'poder' en este tipo de pregunta.",
+          "Incorrecto: 'podo' no existe en portugués; es un calco del español 'puedo'.",
+          "Incorrecto: mezcla el pronombre 'eu' con la forma 'pode', que no corresponde a esa persona.",
+          "Correcto: 'Posso abrir a janela?' es la forma natural de pedir permiso."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'poder'.",
+        "sentence": "Marcos, ___ entrar na sua casa?",
+        "hint": "(poder - eu)",
+        "answers": [
+          "posso"
+        ],
+        "explanation": "Para 'eu' el verbo poder tiene la forma irregular 'posso', con doble 's'.",
+        "wrongAnswers": [
+          {
+            "answer": "podo",
+            "why": "Poder es irregular en primera persona; la forma correcta es 'posso', con doble 's'."
+          },
+          {
+            "answer": "pode",
+            "why": "'Pode' corresponde a você/ele/ela, no a 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'poder'.",
+        "sentence": "Você ___ me ajudar com o mapa?",
+        "hint": "(poder - você)",
+        "answers": [
+          "pode"
+        ],
+        "explanation": "Con 'você' se usa la forma 'pode' del verbo poder.",
+        "wrongAnswers": [
+          {
+            "answer": "posso",
+            "why": "'Posso' es la forma de 'eu', no de 'você'."
+          },
+          {
+            "answer": "podes",
+            "why": "'Podes' no se usa en portugués de Brasil estándar; se usa 'pode' para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'poder'.",
+        "sentence": "Nós ___ sair mais tarde hoje.",
+        "hint": "(poder - nós)",
+        "answers": [
+          "podemos"
+        ],
+        "explanation": "Con 'nós' se usa 'podemos', la forma de primera persona plural del verbo poder.",
+        "wrongAnswers": [
+          {
+            "answer": "pode",
+            "why": "'Pode' es para você/ele, no para 'nós'; la forma correcta es 'podemos'."
+          },
+          {
+            "answer": "podo",
+            "why": "'Podo' no existe en portugués; además no corresponde a 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'poder'.",
+        "sentence": "Eles ___ pagar a conta com cartão.",
+        "hint": "(poder - eles)",
+        "answers": [
+          "podem"
+        ],
+        "explanation": "Con 'eles' se usa 'podem', la forma de tercera persona plural del verbo poder.",
+        "wrongAnswers": [
+          {
+            "answer": "pode",
+            "why": "'Pode' es singular; para 'eles' corresponde 'podem'."
+          },
+          {
+            "answer": "podemos",
+            "why": "'Podemos' es para 'nós', no para 'eles'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la expresión fija con la forma correcta del verbo 'poder'.",
+        "sentence": "___ ser às dez horas?",
+        "hint": "(poder - pedir confirmación)",
+        "answers": [
+          "Pode"
+        ],
+        "explanation": "La expresión fija 'pode ser' siempre usa 'pode', sin importar quién habla.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso",
+            "why": "La expresión fija 'pode ser' siempre usa 'pode', sin importar quién habla."
+          },
+          {
+            "answer": "Podemos",
+            "why": "La expresión 'pode ser' no cambia de forma; no se dice 'podemos ser' con este sentido."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'poder'.",
+        "sentence": "Doutor, eu ___ fazer uma pergunta?",
+        "hint": "(poder - eu)",
+        "answers": [
+          "posso"
+        ],
+        "explanation": "Para 'eu' el verbo poder tiene la forma irregular 'posso', con doble 's'.",
+        "wrongAnswers": [
+          {
+            "answer": "podo",
+            "why": "La forma correcta de 'eu' es 'posso', no 'podo'."
+          },
+          {
+            "answer": "pode",
+            "why": "'Pode' corresponde a você/ele, no a 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Posso entrar no seu escritório agora?",
+        "alternatives": [
+          "Posso entrar agora no seu escritório?"
+        ],
+        "translation": "¿Puedo entrar a tu oficina ahora?",
+        "explanation": "Se usa 'posso' para pedir permiso en primera persona, sin anteponer el pronombre 'eu'.",
+        "tokens": [
+          "agora",
+          "escritório",
+          "Posso",
+          "entrar",
+          "no",
+          "seu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Você pode me ajudar com isso?",
+        "alternatives": [],
+        "translation": "¿Podés ayudarme con eso?",
+        "explanation": "Con 'você' se usa la forma 'pode' del verbo poder; el pronombre objeto 'me' va siempre antes del infinitivo, por lo que no hay otro orden natural posible con estas mismas palabras.",
+        "tokens": [
+          "com",
+          "Você",
+          "isso",
+          "me",
+          "ajudar",
+          "pode"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós podemos sair mais tarde hoje.",
+        "alternatives": [
+          "Hoje nós podemos sair mais tarde."
+        ],
+        "translation": "Nosotros podemos salir más tarde hoy.",
+        "explanation": "Con 'nós' se usa 'podemos' para expresar posibilidad general.",
+        "tokens": [
+          "tarde",
+          "hoje",
+          "podemos",
+          "sair",
+          "Nós",
+          "mais"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eles podem pagar com cartão de crédito.",
+        "alternatives": [],
+        "translation": "Ellos pueden pagar con tarjeta de crédito.",
+        "explanation": "Con 'eles' se usa 'podem' para hablar de una posibilidad.",
+        "tokens": [
+          "cartão",
+          "com",
+          "podem",
+          "crédito",
+          "Eles",
+          "pagar",
+          "de"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Pode ser às cinco da tarde?",
+        "alternatives": [],
+        "translation": "¿Puede ser a las cinco de la tarde?",
+        "explanation": "'Pode ser' es una expresión fija para aceptar o confirmar algo, equivalente a 'puede ser' en español.",
+        "tokens": [
+          "tarde",
+          "ser",
+          "da",
+          "às",
+          "cinco",
+          "Pode"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu podo entrar na sala agora?",
+        "answers": [
+          "Eu posso entrar na sala agora?",
+          "Posso entrar na sala agora?"
+        ],
+        "explanation": "La forma correcta de 'eu' en el verbo poder es 'posso', con doble 's', no 'podo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu pode entrar na sala agora?",
+            "why": "Usa 'pode', que corresponde a você/ele, no a 'eu'; la forma correcta para 'eu' es 'posso'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Pode eu ajudar você com as malas?",
+        "answers": [
+          "Posso ajudar você com as malas?",
+          "Eu posso ajudar você com as malas?"
+        ],
+        "explanation": "En portugués no se coloca el pronombre 'eu' después del verbo 'poder' (como en 'pode eu'); se dice 'eu posso...' o simplemente 'posso...'.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso eu ajudar você com as malas?",
+            "why": "No se debe colocar el pronombre 'eu' después del verbo 'poder' en este tipo de pregunta."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Você pode a me ajudar amanhã?",
+        "answers": [
+          "Você pode me ajudar amanhã?"
+        ],
+        "explanation": "No se usa 'a' antes del infinitivo después de 'poder', a diferencia de algunos usos del español.",
+        "wrongAnswers": [
+          {
+            "answer": "Você pode à me ajudar amanhã?",
+            "why": "Agrega un acento a 'a', pero el error real es que no debe usarse esa palabra en absoluto antes del infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Nós pode sair mais tarde hoje.",
+        "answers": [
+          "Nós podemos sair mais tarde hoje."
+        ],
+        "explanation": "Con 'nós' se usa 'podemos', no 'pode', que corresponde a você/ele.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós pode sair mais tarder hoje.",
+            "why": "Corrige 'tarde' a 'tarder', que no existe, en vez de corregir la conjugación 'pode' a 'podemos'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eles pode pagar com cartão.",
+        "answers": [
+          "Eles podem pagar com cartão."
+        ],
+        "explanation": "Con 'eles' se usa 'podem', no 'pode', que es la forma singular.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles podem pagar com cartões.",
+            "why": "Cambia 'cartão' a plural innecesariamente, sin que ese fuera el error original relacionado con el verbo poder."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Puedo entrar a la oficina de Marcos?",
+        "answers": [
+          "Posso entrar no escritório do Marcos?"
+        ],
+        "explanation": "Para pedir permiso en primera persona se usa 'posso', sin anteponer el pronombre 'eu'; 'escritório' es la palabra correcta para 'oficina' (no 'sala', que significa 'habitación/sala').",
+        "wrongAnswers": [
+          {
+            "answer": "Eu podo entrar no escritório do Marcos?",
+            "why": "La forma correcta de 'yo puedo' es 'eu posso', no 'podo'."
+          },
+          {
+            "answer": "Pode eu entrar no escritório do Marcos?",
+            "why": "En portugués no se antepone el pronombre al verbo 'poder' en este tipo de pregunta."
+          },
+          {
+            "answer": "Posso entrar na sala do Marcos?",
+            "why": "'Sala' significa 'habitación/sala', no 'oficina'; la palabra correcta es 'escritório'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Podés ayudarme con el alquiler?",
+        "answers": [
+          "Você pode me ajudar com o aluguel?",
+          "Pode me ajudar com o aluguel?"
+        ],
+        "explanation": "Con 'você' se usa 'pode', y después del verbo poder no se usa 'a' antes del infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Você pode a me ajudar com o aluguel?",
+            "why": "No se usa 'a' antes del infinitivo después de 'poder'."
+          },
+          {
+            "answer": "Você podes me ajudar com o aluguel?",
+            "why": "'Podes' no es la forma usada en portugués de Brasil para 'você'; se usa 'pode'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nosotros podemos salir más tarde.",
+        "answers": [
+          "Nós podemos sair mais tarde."
+        ],
+        "explanation": "Con 'nós' se usa 'podemos', la forma de primera persona plural del verbo poder.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós pode sair mais tarde.",
+            "why": "La forma correcta para 'nós' es 'podemos', no 'pode'."
+          },
+          {
+            "answer": "Nós podemos saída mais tarde.",
+            "why": "Se usa el sustantivo 'saída' en vez del verbo 'sair' en infinitivo, que es lo que corresponde después de 'poder'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ellos pueden pagar con tarjeta.",
+        "answers": [
+          "Eles podem pagar com cartão."
+        ],
+        "explanation": "Con 'eles' se usa 'podem', y no se usa 'a' antes del infinitivo después de 'poder'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles pode pagar com cartão.",
+            "why": "La forma correcta para 'eles' es 'podem', no 'pode'."
+          },
+          {
+            "answer": "Eles podem a pagar com cartão.",
+            "why": "No se usa 'a' antes del infinitivo después de 'poder'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Puede ser a las cinco?",
+        "answers": [
+          "Pode ser às cinco?",
+          "Pode ser às cinco horas?"
+        ],
+        "explanation": "'Pode ser' es una expresión fija que no cambia según quién habla, y se usa la contracción 'às' antes de la hora.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso ser às cinco?",
+            "why": "La expresión fija es 'pode ser', no cambia según quien habla; no se usa 'posso ser' en este contexto."
+          },
+          {
+            "answer": "Pode ser a cinco?",
+            "why": "Falta la contracción 'às' (a + as) que se usa antes de la hora."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Puedo hacerte una pregunta, doctor?",
+        "answers": [
+          "Posso fazer uma pergunta, doutor?"
+        ],
+        "explanation": "Para pedir permiso en primera persona se usa 'posso', sin anteponer el pronombre 'eu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu podo fazer uma pergunta, doutor?",
+            "why": "La forma correcta es 'posso', no 'podo'."
+          },
+          {
+            "answer": "Pode eu fazer uma pergunta, doutor?",
+            "why": "No se antepone el pronombre 'eu' al verbo 'poder' en este tipo de pregunta."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Posso entrar na sala agora?",
+        "alternatives": [],
+        "translation": "¿Puedo entrar a la sala ahora?",
+        "explanation": "'Posso' se pronuncia con 's' doble sorda, no confundir con 'pode'; además, en preguntas no se agrega 'eu' antes del verbo."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você pode me ajudar com a mala?",
+        "alternatives": [],
+        "translation": "¿Podés ayudarme con la valija?",
+        "explanation": "Después de 'pode' va directamente el infinitivo sin preposición 'a', a diferencia de algunos usos en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Nós podemos sair mais tarde hoje.",
+        "alternatives": [],
+        "translation": "Nosotros podemos salir más tarde hoy.",
+        "explanation": "'Podemos' termina en '-mos', distinto del 'pode' de tercera persona; prestá atención a esa terminación al escuchar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eles podem pagar com cartão de crédito.",
+        "alternatives": [],
+        "translation": "Ellos pueden pagar con tarjeta de crédito.",
+        "explanation": "'Podem' lleva un sonido nasal final en la 'm', que lo diferencia de 'pode' en singular."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "'Avó' tiene la 'o' abierta y 'avô' la tiene cerrada; esa diferencia de apertura cambia el significado por completo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pode",
+          "pude"
+        ],
+        "target": 0,
+        "meanings": [
+          "puede (presente)",
+          "pude (pasado, yo)"
+        ],
+        "explanation": "La vocal tónica cambia de 'o' en 'pode' a 'u' en 'pude'; esa vocal marca si es presente o pasado del mismo verbo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "carro",
+          "caro"
+        ],
+        "target": 0,
+        "meanings": [
+          "auto",
+          "costoso"
+        ],
+        "explanation": "'Caro' tiene un sonido de 'r' suave, como en español, mientras que 'carro' lleva el 'rr' fuerte y vibrante típico del portugués brasileño."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé el diálogo entre Carlos y su jefa en la oficina y respondé las preguntas.",
+        "situation": "Carlos llega a trabajar a una oficina en Porto Alegre y habla con su jefa sobre varios permisos.",
+        "lines": [
+          {
+            "speaker": "Carlos",
+            "text": "Posso entrar, chefe?"
+          },
+          {
+            "speaker": "Chefe",
+            "text": "Pode, sim. Senta aí."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Posso fechar a janela?"
+          },
+          {
+            "speaker": "Chefe",
+            "text": "Pode. Está frio hoje."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Posso sair mais tarde hoje?"
+          },
+          {
+            "speaker": "Chefe",
+            "text": "Pode ser às seis?"
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Sim, pode ser!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué le pide permiso primero Carlos a la jefa?",
+            "options": [
+              "Salir más tarde",
+              "Cerrar la ventana",
+              "Entrar",
+              "Sentarse"
+            ],
+            "correctIndex": 2,
+            "explanation": "Carlos dice \"Posso entrar?\", usando \"posso\" (primera persona del verbo poder) para pedir permiso de entrar."
+          },
+          {
+            "prompt": "¿Por qué quiere cerrar la ventana Carlos?",
+            "options": [
+              "Porque hace calor",
+              "No dice el motivo",
+              "Porque hace frío",
+              "Porque hay ruido"
+            ],
+            "correctIndex": 2,
+            "explanation": "La jefa responde \"Pode. Está frio hoje\", dando el frío como razón para aceptar que cierre la ventana."
+          },
+          {
+            "prompt": "¿A qué hora finalmente puede salir Carlos?",
+            "options": [
+              "A las siete",
+              "A las cinco",
+              "No puede salir",
+              "A las seis"
+            ],
+            "correctIndex": 3,
+            "explanation": "La jefa propone \"Pode ser às seis?\" y Carlos acepta diciendo \"pode ser\", confirmando ese horario."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre el paciente Rogério y la Dra. Fernanda en el consultorio y respondé las preguntas.",
+        "situation": "Rogério está en el consultorio de la Dra. Fernanda en San Pablo, consultando qué actividades puede hacer durante su recuperación.",
+        "lines": [
+          {
+            "speaker": "Rogério",
+            "text": "Doutora, eu posso correr esta semana?"
+          },
+          {
+            "speaker": "Dra. Fernanda",
+            "text": "Não, você não pode correr ainda."
+          },
+          {
+            "speaker": "Rogério",
+            "text": "Eu posso caminhar um pouco?"
+          },
+          {
+            "speaker": "Dra. Fernanda",
+            "text": "Pode, sim. Pode caminhar devagar."
+          },
+          {
+            "speaker": "Rogério",
+            "text": "Nós podemos viajar no fim de semana?"
+          },
+          {
+            "speaker": "Dra. Fernanda",
+            "text": "Vocês podem viajar, mas sem pressa."
+          },
+          {
+            "speaker": "Rogério",
+            "text": "Posso tomar café com leite?"
+          },
+          {
+            "speaker": "Dra. Fernanda",
+            "text": "Pode, mas pouco café."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Puede correr Rogério esta semana?",
+            "options": [
+              "No, todavía no puede",
+              "Sí, pero despacio",
+              "La doctora no responde",
+              "Sí, sin problema"
+            ],
+            "correctIndex": 0,
+            "explanation": "La doctora dice \"você não pode correr ainda\", usando la forma negativa de poder en segunda persona para prohibirlo por ahora."
+          },
+          {
+            "prompt": "¿Qué actividad le permite hacer la doctora a Rogério?",
+            "options": [
+              "Viajar rápido",
+              "Tomar mucho café",
+              "Correr",
+              "Caminar despacio"
+            ],
+            "correctIndex": 3,
+            "explanation": "La doctora responde \"Pode caminhar devagar\", autorizando caminar pero de forma lenta."
+          },
+          {
+            "prompt": "¿Quiénes pueden viajar el fin de semana, según la doctora?",
+            "options": [
+              "Rogério y la persona que lo acompaña",
+              "Solo Rogério",
+              "Solo la doctora",
+              "Nadie puede viajar"
+            ],
+            "correctIndex": 0,
+            "explanation": "La doctora usa \"vocês podem viajar\", forma plural de poder, porque Rogério preguntó con \"nós\" incluyendo a otra persona."
+          }
+        ]
+      }
+    ],
+    "querer-deseos-pedidos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo \"querer\".",
+        "prompt": "Eu ___ um café, por favor.",
+        "options": [
+          "queremos",
+          "quero",
+          "querem",
+          "quer"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"Querer\" es irregular: la forma correspondiente a \"eu\" es \"quero\", sin terminar en \"-e\" como \"quer\".",
+        "optionNotes": [
+          "Incorrecto: \"queremos\" es la forma de \"nós\".",
+          "Correcto: \"eu quero\" es la primera persona del singular.",
+          "Incorrecto: \"querem\" es la forma de \"vocês/eles/elas\".",
+          "Incorrecto: \"quer\" es la forma de você/ele/ela, no de \"eu\"."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo \"querer\".",
+        "prompt": "Você ___ alguma coisa?",
+        "options": [
+          "queremos",
+          "quero",
+          "querem",
+          "quer"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con \"você\" (equivalente a \"vos\"/\"usted\"), el verbo \"querer\" se conjuga como \"quer\", sin vocal final agregada.",
+        "optionNotes": [
+          "Incorrecto: \"queremos\" es la forma de \"nós\".",
+          "Incorrecto: \"quero\" es la forma de \"eu\", no de \"você\".",
+          "Incorrecto: \"querem\" es para \"vocês/eles/elas\", plural.",
+          "Correcto: \"você quer\" es la forma correspondiente a la segunda persona (usada como \"usted/vos\" en Brasil)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo \"querer\".",
+        "prompt": "Nós ___ sair agora.",
+        "options": [
+          "quero",
+          "queremos",
+          "quer",
+          "querem"
+        ],
+        "correctIndex": 1,
+        "explanation": "La forma de \"querer\" para \"nós\" es \"queremos\", igual que en español \"queremos\".",
+        "optionNotes": [
+          "Incorrecto: \"quero\" es la forma de \"eu\", singular.",
+          "Correcto: \"nós queremos\" es la primera persona del plural.",
+          "Incorrecto: \"quer\" es la forma de \"você/ele/ela\".",
+          "Incorrecto: \"querem\" es para \"vocês/eles/elas\"."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo \"querer\".",
+        "prompt": "Eles ___ comprar uma casa.",
+        "options": [
+          "queremos",
+          "quer",
+          "quero",
+          "querem"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con \"eles/elas/vocês\", el verbo \"querer\" se conjuga como \"querem\".",
+        "optionNotes": [
+          "Incorrecto: \"queremos\" es la forma de \"nós\", no de \"eles\".",
+          "Incorrecto: \"quer\" es singular, pero \"eles\" es plural.",
+          "Incorrecto: \"quero\" es la forma de \"eu\".",
+          "Correcto: \"eles querem\" es la forma correspondiente a la tercera persona del plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma más educada para hacer un pedido en un restaurante.",
+        "prompt": "Eu ___ uma água, por favor.",
+        "options": [
+          "querem",
+          "quer",
+          "quero",
+          "queria"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para pedidos más educados se usa \"eu queria\" en vez de \"eu quero\", igual que \"quisiera\" en español.",
+        "optionNotes": [
+          "Incorrecto: \"querem\" es para \"vocês/eles/elas\", plural.",
+          "Incorrecto: \"quer\" es la forma de \"você/ele/ela\", no de \"eu\".",
+          "Posible pero menos educado: \"quero\" es directo, se usa en situaciones informales.",
+          "Correcto: \"queria\" suena más suave y educado, como \"quisiera\" en español."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo \"querer\".",
+        "prompt": "Ela ___ viajar no verão.",
+        "options": [
+          "queremos",
+          "quero",
+          "quer",
+          "querem"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con \"ele/ela/você\", el verbo \"querer\" se conjuga como \"quer\", sin agregar vocal final.",
+        "optionNotes": [
+          "Incorrecto: \"queremos\" es la forma de \"nós\".",
+          "Incorrecto: \"quero\" es la forma de \"eu\".",
+          "Correcto: \"ela quer\" es la forma correspondiente a la tercera persona del singular.",
+          "Incorrecto: \"querem\" es para \"vocês/eles/elas\", plural."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta de \"querer\".",
+        "sentence": "Eu ___ um café agora.",
+        "hint": "(querer, eu)",
+        "answers": [
+          "quero"
+        ],
+        "explanation": "La primera persona del singular de \"querer\" es \"quero\".",
+        "wrongAnswers": [
+          {
+            "answer": "quer",
+            "why": "\"quer\" es la forma de \"você/ele/ela\", no de \"eu\"."
+          },
+          {
+            "answer": "queres",
+            "why": "Esa forma no se usa en portugués de Brasil estándar; la forma correcta es \"quero\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta de \"querer\".",
+        "sentence": "Você ___ alguma coisa pra beber?",
+        "hint": "(querer, você)",
+        "answers": [
+          "quer"
+        ],
+        "explanation": "Con \"você\", el verbo \"querer\" se conjuga como \"quer\".",
+        "wrongAnswers": [
+          {
+            "answer": "queres",
+            "why": "Esa forma no se usa con \"você\" en Brasil; se usa \"quer\"."
+          },
+          {
+            "answer": "quero",
+            "why": "\"quero\" es la forma de \"eu\", no de \"você\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta de \"querer\".",
+        "sentence": "Nós ___ sair mais tarde.",
+        "hint": "(querer, nós)",
+        "answers": [
+          "queremos"
+        ],
+        "explanation": "La forma de \"querer\" para \"nós\" es \"queremos\".",
+        "wrongAnswers": [
+          {
+            "answer": "querem",
+            "why": "\"querem\" es la forma de \"vocês/eles/elas\", no de \"nós\"."
+          },
+          {
+            "answer": "quer",
+            "why": "\"quer\" es singular, pero \"nós\" necesita una forma plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma correcta de \"querer\".",
+        "sentence": "Eles ___ comprar um carro novo.",
+        "hint": "(querer, eles)",
+        "answers": [
+          "querem"
+        ],
+        "explanation": "Con \"eles/elas/vocês\", el verbo \"querer\" se conjuga como \"querem\".",
+        "wrongAnswers": [
+          {
+            "answer": "quer",
+            "why": "\"quer\" es singular, pero \"eles\" necesita una forma plural."
+          },
+          {
+            "answer": "queremos",
+            "why": "\"queremos\" es la forma de \"nós\", no de \"eles\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la forma más educada de \"querer\" para un pedido.",
+        "sentence": "Eu ___ uma água, por favor.",
+        "hint": "(querer - forma más educada, como \"quisiera\")",
+        "answers": [
+          "queria"
+        ],
+        "explanation": "\"Eu queria\" se usa para pedidos más educados, equivalente a \"quisiera\" en español.",
+        "wrongAnswers": [
+          {
+            "answer": "quero",
+            "why": "\"quero\" es correcto pero menos educado; para un pedido más suave se usa \"queria\"."
+          },
+          {
+            "answer": "quer",
+            "why": "\"quer\" es la forma de \"você/ele/ela\", no de \"eu\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo indefinido correcto.",
+        "sentence": "Eu quero ___ água, por favor.",
+        "hint": "(artículo indefinido femenino)",
+        "answers": [
+          "uma"
+        ],
+        "explanation": "\"Água\" es un sustantivo femenino, así que el artículo indefinido correcto es \"uma\".",
+        "wrongAnswers": [
+          {
+            "answer": "um",
+            "why": "\"água\" es femenina en portugués, por eso necesita el artículo \"uma\", no \"um\"."
+          },
+          {
+            "answer": "un",
+            "why": "Esa palabra no existe en portugués; es un calco del español \"un\"."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu quero um café, por favor.",
+        "alternatives": [
+          "Por favor, eu quero um café."
+        ],
+        "translation": "Quiero un café, por favor.",
+        "explanation": "'Por favor' puede colocarse al principio o al final del pedido en portugués; en esta oración aparece después del objeto que se pide.",
+        "tokens": [
+          "um",
+          "quero",
+          "café,",
+          "Eu",
+          "favor",
+          "por"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Você quer alguma coisa para beber?",
+        "alternatives": [],
+        "translation": "¿Querés algo para beber?",
+        "explanation": "Con \"você\", el verbo \"querer\" se conjuga como \"quer\", igual en preguntas que en afirmaciones.",
+        "tokens": [
+          "para",
+          "coisa",
+          "Você",
+          "quer",
+          "alguma",
+          "beber"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós queremos sair agora mesmo.",
+        "alternatives": [],
+        "translation": "Nosotros queremos salir ahora mismo.",
+        "explanation": "La forma de \"querer\" para \"nós\" es \"queremos\", seguida del infinitivo \"sair\".",
+        "tokens": [
+          "queremos",
+          "sair",
+          "agora",
+          "mesmo",
+          "Nós"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eles querem comprar uma casa nova.",
+        "alternatives": [],
+        "translation": "Ellos quieren comprar una casa nueva.",
+        "explanation": "Con \"eles\", el verbo \"querer\" se conjuga como \"querem\", seguido del infinitivo \"comprar\".",
+        "tokens": [
+          "comprar",
+          "querem",
+          "Eles",
+          "casa",
+          "nova",
+          "uma"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu queria uma água, por favor.",
+        "alternatives": [
+          "Por favor, eu queria uma água."
+        ],
+        "translation": "Quisiera un agua, por favor.",
+        "explanation": "'Eu queria' es la forma más educada para pedir algo, 'água' lleva el artículo femenino 'uma', y 'por favor' puede ir al principio o al final del pedido.",
+        "tokens": [
+          "favor",
+          "por",
+          "uma",
+          "água,",
+          "queria",
+          "Eu"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo \"querer\".",
+        "sentence": "Eu quer um café.",
+        "answers": [
+          "Eu quero um café."
+        ],
+        "explanation": "La primera persona del singular de \"querer\" es \"quero\", no \"quer\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quer um café agora.",
+            "why": "No corrige el verbo; sigue usando \"quer\" en vez de \"quero\" para \"eu\"."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la posición de \"por favor\".",
+        "sentence": "Eu quero por favor um suco.",
+        "answers": [
+          "Eu quero um suco, por favor.",
+          "Por favor, eu quero um suco."
+        ],
+        "explanation": "'Por favor' va al principio o al final del pedido, no en el medio separando el verbo del objeto.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero um suco por favor, agora.",
+            "why": "Agrega una palabra innecesaria y no soluciona el problema original de orden."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el género del artículo.",
+        "sentence": "Eu queria um água, por favor.",
+        "answers": [
+          "Eu queria uma água, por favor."
+        ],
+        "explanation": "\"Água\" es femenina en portugués, así que necesita el artículo \"uma\", no \"um\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quer uma água, por favor.",
+            "why": "Cambia el verbo en vez de corregir el artículo, y \"quer\" no corresponde a \"eu\"."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo \"querer\".",
+        "sentence": "Nós quer sair agora.",
+        "answers": [
+          "Nós queremos sair agora."
+        ],
+        "explanation": "La forma de \"querer\" para \"nós\" es \"queremos\".",
+        "wrongAnswers": [
+          {
+            "answer": "Nós querem sair agora.",
+            "why": "\"querem\" es la forma de \"vocês/eles/elas\", no de \"nós\"."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el verbo \"querer\".",
+        "sentence": "Eles quer comprar uma casa.",
+        "answers": [
+          "Eles querem comprar uma casa."
+        ],
+        "explanation": "Con \"eles\", el verbo \"querer\" se conjuga como \"querem\", en plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles queremos comprar uma casa.",
+            "why": "\"queremos\" es la forma de \"nós\", no de \"eles\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el verbo \"querer\".",
+        "spanish": "Quiero un café, por favor.",
+        "answers": [
+          "Eu quero um café, por favor.",
+          "Quero um café, por favor.",
+          "Por favor, eu quero um café.",
+          "Por favor, quero um café."
+        ],
+        "explanation": "'Por favor' se puede colocar al principio o al final del pedido, y la forma correcta para 'eu' es 'quero'; el pronombre 'eu' puede omitirse porque el verbo ya indica la persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero por favor um café.",
+            "why": "'Por favor' no puede ir en el medio del pedido, separando el verbo del objeto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el verbo \"querer\".",
+        "spanish": "¿Querés algo para comer?",
+        "answers": [
+          "Você quer alguma coisa para comer?",
+          "Quer alguma coisa para comer?"
+        ],
+        "explanation": "Con 'você', el verbo 'querer' se conjuga como 'quer'; el pronombre 'você' puede omitirse en una pregunta directa sin perder claridad.",
+        "wrongAnswers": [
+          {
+            "answer": "Você queres alguma coisa para comer?",
+            "why": "'queres' no se usa con 'você' en Brasil; la forma correcta es 'quer'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el verbo \"querer\".",
+        "spanish": "Nosotros queremos viajar en el verano.",
+        "answers": [
+          "Nós queremos viajar no verão.",
+          "Queremos viajar no verão."
+        ],
+        "explanation": "La forma de 'querer' para 'nós' es 'queremos'; el pronombre 'nós' puede omitirse porque el verbo ya indica la persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós querem viajar no verão.",
+            "why": "'querem' es la forma de 'eles/vocês', no de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el verbo \"querer\".",
+        "spanish": "Ellos quieren comprar una casa nueva.",
+        "answers": [
+          "Eles querem comprar uma casa nova."
+        ],
+        "explanation": "Con \"eles\", el verbo \"querer\" se conjuga como \"querem\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eles quer comprar uma casa nova.",
+            "why": "\"quer\" es singular, pero \"eles\" necesita la forma plural \"querem\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la forma más educada de \"querer\".",
+        "spanish": "Quisiera un agua, por favor.",
+        "answers": [
+          "Eu queria uma água, por favor.",
+          "Queria uma água, por favor.",
+          "Por favor, eu queria uma água.",
+          "Por favor, queria uma água."
+        ],
+        "explanation": "'Eu queria' es la forma más educada para pedir algo, 'água' lleva el artículo femenino 'uma', el pronombre 'eu' puede omitirse, y 'por favor' puede ir al principio o al final.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu queria um água, por favor.",
+            "why": "'água' es femenina, por eso necesita el artículo 'uma', no 'um'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el verbo \"querer\".",
+        "spanish": "No quiero nada, gracias.",
+        "answers": [
+          "Eu não quero nada, obrigado.",
+          "Eu não quero nada, obrigada.",
+          "Não quero nada, obrigado.",
+          "Não quero nada, obrigada."
+        ],
+        "explanation": "La primera persona del singular de 'querer' es 'quero', 'obrigado/obrigada' varía según el género de quien habla, y el pronombre 'eu' puede omitirse.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não quer nada, obrigado.",
+            "why": "'quer' es la forma de 'você/ele/ela', no de 'eu'; corresponde 'quero'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu quero um café, por favor.",
+        "alternatives": [
+          "Eu quero um café por favor."
+        ],
+        "translation": "Quiero un café, por favor.",
+        "explanation": "No confundas \"quero\" (yo) con \"quer\" (él/ella/usted); la primera persona del verbo irregular querer termina en -o."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Ela quer viajar para o Brasil.",
+        "alternatives": [],
+        "translation": "Ella quiere viajar a Brasil.",
+        "explanation": "\"Quer\" no agrega una vocal final como los verbos regulares en -er (ela come); es la forma irregular de él/ella/usted."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Nós queremos sair agora mesmo.",
+        "alternatives": [],
+        "translation": "Nosotros queremos salir ahora mismo.",
+        "explanation": "\"Queremos\" lleva \"e\" entre \"qu\" y \"r\"; recordá que es la forma de nosotros del verbo irregular querer."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu queria uma água, por favor.",
+        "alternatives": [
+          "Eu queria uma água por favor."
+        ],
+        "translation": "Quisiera un agua, por favor.",
+        "explanation": "\"Água\" es femenina en portugués, por eso lleva \"uma\" y no \"um\"; además \"queria\" es la forma más educada de pedir, como \"quisiera\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "mas",
+          "mais"
+        ],
+        "target": 1,
+        "meanings": [
+          "pero",
+          "más"
+        ],
+        "explanation": "\"Mas\" se pronuncia con una sola vocal corta; \"mais\" tiene un diptongo oral \"ai\" seguido de \"s\", sin nasalizarse, parecido a alargar la \"a\" hacia la \"i\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 1,
+        "meanings": [
+          "caro",
+          "auto"
+        ],
+        "explanation": "\"Carro\" tiene una \"rr\" fuerte y vibrante; \"caro\" tiene una sola \"r\" suave, como la de \"pero\" en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "pão",
+          "pau"
+        ],
+        "target": 1,
+        "meanings": [
+          "pan",
+          "palo"
+        ],
+        "explanation": "\"Pão\" termina en un sonido nasal que pasa por la nariz; \"pau\" termina en un diptongo oral, sin nasalidad."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo en un café y respondé las preguntas.",
+        "situation": "Ana está en un café en São Paulo y habla con el garçom para hacer su pedido.",
+        "lines": [
+          {
+            "speaker": "Garçom",
+            "text": "Bom dia! O que você quer?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Eu queria um café, por favor."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Quer alguma coisa para comer?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Quero um pão de queijo, por favor."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Mais alguma coisa?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Não, obrigada. Só isso."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué quiere tomar Ana?",
+            "options": [
+              "Uma água",
+              "Um café",
+              "Um chá",
+              "Um suco"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana dice 'Eu queria um café, por favor', usando 'queria' para pedir de forma educada."
+          },
+          {
+            "prompt": "¿Qué quiere comer Ana?",
+            "options": [
+              "Um bolo",
+              "Um pão de queijo",
+              "Um sanduíche",
+              "Uma torta"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana responde 'Quero um pão de queijo, por favor', usando 'quero' (yo quiero) para pedir la comida."
+          },
+          {
+            "prompt": "¿Ana pide algo más al final?",
+            "options": [
+              "Sí, pide un suco",
+              "Sí, pide otro café",
+              "Sí, pide una água",
+              "No, dice que no quiere nada más"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana contesta 'Não, obrigada. Só isso', indicando que no quiere nada más."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre dos amigos y respondé las preguntas.",
+        "situation": "Lucas y Marina son amigos y están charlando en la casa de Marina sobre planes para la tarde.",
+        "lines": [
+          {
+            "speaker": "Lucas",
+            "text": "Marina, você quer sair hoje?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Quero, sim! Eu quero ver um filme."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Eu também quero! Nós queremos ir ao cinema."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Perfeito. Eles querem vir também?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Sim, eles querem vir conosco."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Que bom! Vamos todos juntos."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué quiere hacer Marina hoy?",
+            "options": [
+              "Comer pizza",
+              "Ver un filme",
+              "Estudiar portugués",
+              "Ir a la playa"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina dice 'Eu quero ver um filme', usando 'quero' (yo quiero) para expresar su deseo."
+          },
+          {
+            "prompt": "¿Quiénes quieren ir al cine, según Lucas?",
+            "options": [
+              "Nadie quiere ir",
+              "Lucas y Marina",
+              "Marina y unos amigos",
+              "Solo Lucas"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lucas dice 'Nós queremos ir ao cinema', usando 'queremos' (nosotros queremos) para incluirse a él y a Marina."
+          },
+          {
+            "prompt": "¿Los amigos (eles) también quieren venir?",
+            "options": [
+              "No, no quieren venir",
+              "Sí, quieren venir",
+              "Solo uno de ellos quiere venir",
+              "No queda claro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lucas confirma 'Sim, eles querem vir conosco', usando 'querem' (ellos quieren) para los amigos."
+          }
+        ]
+      }
+    ],
+    "precisar-necesidad": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Mariana ___ um médico hoje.",
+        "options": [
+          "precisam de",
+          "precisa",
+          "preciso de",
+          "precisa de"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con un sustantivo, 'precisar' siempre lleva la preposición 'de': 'precisa de um médico'. El sujeto 'Mariana' es tercera persona singular.",
+        "optionNotes": [
+          "La conjugación es plural, pero 'Mariana' es un sujeto singular.",
+          "Falta la preposición 'de' antes del sustantivo 'médico'.",
+          "La conjugación es de primera persona ('eu'), no corresponde a 'Mariana'.",
+          "Correcta: tercera persona singular + 'de' porque sigue un sustantivo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Carlos ___ descansar um pouco depois do trabalho.",
+        "options": [
+          "precisam",
+          "preciso",
+          "precisa",
+          "precisa de"
+        ],
+        "correctIndex": 2,
+        "explanation": "Antes de un infinitivo ('descansar') no se usa la preposición 'de'; además 'Carlos' requiere la forma 'precisa'.",
+        "optionNotes": [
+          "Conjugación plural, pero 'Carlos' es singular.",
+          "Conjugación de primera persona, no corresponde a 'Carlos'.",
+          "Correcta: con infinitivo no se usa 'de', y concuerda con 'Carlos'.",
+          "Error: con un infinitivo nunca se agrega 'de' después de 'precisar'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma verbal correcta para completar la pregunta.",
+        "prompt": "Você ___ de ajuda para arrumar as malas?",
+        "options": [
+          "precisam",
+          "preciso",
+          "precisa",
+          "precisas"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'você' se usa la tercera persona del singular: 'precisa'. El orden de la pregunta no se invierte en portugués.",
+        "optionNotes": [
+          "Conjugación plural, no corresponde a 'você' (singular).",
+          "Primera persona ('eu'), no corresponde a 'você'.",
+          "Correcta: concuerda con 'você' en tercera persona singular.",
+          "Forma de 'tu', no se usa con 'você' en el portugués estándar de Brasil."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Nós ___ de mais informações sobre o voo.",
+        "options": [
+          "preciso",
+          "precisa",
+          "precisamos",
+          "precisam"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el sujeto 'nós' se usa 'precisamos'. Como sigue un sustantivo ('informações'), la preposición 'de' es obligatoria.",
+        "optionNotes": [
+          "Primera persona singular, no corresponde a 'nós' (plural).",
+          "Tercera persona singular, no corresponde a 'nós'.",
+          "Correcta: primera persona del plural, concuerda con 'nós'.",
+          "Tercera persona plural, no corresponde a 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Eles ___ comprar as passagens até sexta-feira.",
+        "options": [
+          "preciso",
+          "precisam",
+          "precisa",
+          "precisam de"
+        ],
+        "correctIndex": 1,
+        "explanation": "Antes de un infinitivo ('comprar') no se usa 'de', y el sujeto 'eles' requiere la forma 'precisam'.",
+        "optionNotes": [
+          "Primera persona singular, no corresponde a 'eles'.",
+          "Correcta: tercera persona plural, sin 'de' porque sigue un infinitivo.",
+          "Tercera persona singular, no corresponde a 'eles' (plural).",
+          "Error: con infinitivo nunca se usa 'de' después de 'precisar'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí qué va después de 'precisa' en esta oración.",
+        "prompt": "Você precisa ___ um passaporte para viajar.",
+        "options": [
+          "para",
+          "em",
+          "de",
+          "nada (sem preposição)"
+        ],
+        "correctIndex": 2,
+        "explanation": "Antes de un sustantivo ('passaporte'), 'precisar' siempre necesita la preposición 'de', aunque en español no se use ninguna preposición con 'necesitar'.",
+        "optionNotes": [
+          "Preposición incorrecta; 'precisar' no se combina con 'para' en este caso.",
+          "Preposición incorrecta; 'precisar' no se combina con 'em'.",
+          "Correcta: 'precisar de' + sustantivo es la estructura obligatoria.",
+          "Error: falta la preposición 'de', que es obligatoria antes de un sustantivo."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'precisar'.",
+        "sentence": "Mariana ___ ajuda para fazer as malas.",
+        "hint": "(precisar)",
+        "answers": [
+          "precisa de"
+        ],
+        "explanation": "Como sigue un sustantivo ('ajuda'), se usa 'precisar de' en tercera persona singular, concordando con 'Mariana'.",
+        "wrongAnswers": [
+          {
+            "answer": "precisa",
+            "why": "Falta la preposición 'de' antes del sustantivo 'ajuda'."
+          },
+          {
+            "answer": "preciso de",
+            "why": "Es la forma de primera persona ('eu'), pero el sujeto es 'Mariana'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'precisar'.",
+        "sentence": "Eu ___ um passaporte novo.",
+        "hint": "(precisar)",
+        "answers": [
+          "preciso de"
+        ],
+        "explanation": "Con 'eu' se usa 'preciso', y como sigue un sustantivo ('passaporte'), es obligatorio agregar 'de'.",
+        "wrongAnswers": [
+          {
+            "answer": "preciso",
+            "why": "Falta la preposición 'de' antes del sustantivo 'passaporte'."
+          },
+          {
+            "answer": "precisa de",
+            "why": "Es la forma de tercera persona, pero el sujeto es 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'precisar'.",
+        "sentence": "Carlos ___ falar com o chefe hoje.",
+        "hint": "(precisar)",
+        "answers": [
+          "precisa"
+        ],
+        "explanation": "Antes de un infinitivo ('falar') nunca se usa 'de'; la forma correcta para 'Carlos' es simplemente 'precisa'.",
+        "wrongAnswers": [
+          {
+            "answer": "precisa de",
+            "why": "Con un verbo en infinitivo no se agrega la preposición 'de'."
+          },
+          {
+            "answer": "precisam",
+            "why": "Es la forma plural, pero el sujeto 'Carlos' es singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'precisar'.",
+        "sentence": "Nós ___ de mais tempo para terminar o projeto.",
+        "hint": "(precisar)",
+        "answers": [
+          "precisamos"
+        ],
+        "explanation": "Con el sujeto 'nós' se usa 'precisamos'; la preposición 'de' ya está en la oración porque sigue el sustantivo 'tempo'.",
+        "wrongAnswers": [
+          {
+            "answer": "precisamos de",
+            "why": "La preposición 'de' ya está escrita en la oración; no hay que repetirla."
+          },
+          {
+            "answer": "precisa de",
+            "why": "Es la forma de tercera persona singular, pero el sujeto es 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'precisar'.",
+        "sentence": "Vocês ___ comprar as passagens online.",
+        "hint": "(precisar)",
+        "answers": [
+          "precisam"
+        ],
+        "explanation": "Antes de un infinitivo ('comprar') no se usa 'de'; la forma correcta para 'vocês' es 'precisam'.",
+        "wrongAnswers": [
+          {
+            "answer": "precisam de",
+            "why": "Con un verbo en infinitivo no se agrega la preposición 'de'."
+          },
+          {
+            "answer": "precisa",
+            "why": "Es la forma singular, pero el sujeto 'vocês' es plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'precisar'.",
+        "sentence": "Ela ___ descansar antes da viagem.",
+        "hint": "(precisar)",
+        "answers": [
+          "precisa"
+        ],
+        "explanation": "Antes de un infinitivo ('descansar') no se usa 'de'; la forma correcta para 'ela' es 'precisa'.",
+        "wrongAnswers": [
+          {
+            "answer": "precisa de",
+            "why": "Con un verbo en infinitivo no se agrega la preposición 'de'."
+          },
+          {
+            "answer": "preciso",
+            "why": "Es la forma de primera persona, pero el sujeto es 'ela'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Mariana precisa de um médico esta tarde.",
+        "alternatives": [
+          "Esta tarde Mariana precisa de um médico."
+        ],
+        "translation": "Mariana necesita un médico esta tarde.",
+        "explanation": "El sustantivo 'médico' exige la preposición 'de' después de 'precisa', y el complemento de tiempo puede ir al final o al principio.",
+        "tokens": [
+          "precisa",
+          "Mariana",
+          "médico",
+          "tarde",
+          "de",
+          "esta",
+          "um"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Carlos precisa descansar depois do trabalho hoje.",
+        "alternatives": [
+          "Hoje Carlos precisa descansar depois do trabalho."
+        ],
+        "translation": "Carlos necesita descansar después del trabajo hoy.",
+        "explanation": "Antes del infinitivo 'descansar' no se usa 'de'; el verbo va directamente seguido del infinitivo.",
+        "tokens": [
+          "hoje",
+          "do",
+          "precisa",
+          "trabalho",
+          "depois",
+          "Carlos",
+          "descansar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós precisamos de mais informações sobre o voo.",
+        "alternatives": [],
+        "translation": "Nosotros necesitamos más información sobre el vuelo.",
+        "explanation": "Con el sustantivo 'informações' se usa 'precisamos de', concordando con el sujeto 'nós'.",
+        "tokens": [
+          "de",
+          "sobre",
+          "mais",
+          "Nós",
+          "voo",
+          "precisamos",
+          "informações",
+          "o"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Vocês precisam comprar as passagens até sexta-feira.",
+        "alternatives": [],
+        "translation": "Ustedes necesitan comprar los pasajes hasta el viernes.",
+        "explanation": "Antes del infinitivo 'comprar' no se usa 'de'; 'precisam' concuerda con el sujeto plural 'vocês'.",
+        "tokens": [
+          "sexta-feira",
+          "até",
+          "comprar",
+          "Vocês",
+          "as",
+          "precisam",
+          "passagens"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ela precisa de ajuda para arrumar as malas.",
+        "alternatives": [],
+        "translation": "Ella necesita ayuda para armar las valijas.",
+        "explanation": "El sustantivo 'ajuda' exige la preposición 'de' después de 'precisa', a diferencia del español que no usa preposición con 'necesitar'.",
+        "tokens": [
+          "ajuda",
+          "precisa",
+          "arrumar",
+          "para",
+          "as",
+          "malas",
+          "Ela",
+          "de"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu preciso ajuda para fazer as malas.",
+        "answers": [
+          "Eu preciso de ajuda para fazer as malas."
+        ],
+        "explanation": "Falta la preposición 'de' antes del sustantivo 'ajuda'; con sustantivos, 'precisar' siempre va seguido de 'de'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu preciso ajuda para fazeres as malas.",
+            "why": "Cambia el verbo 'fazer' sin corregir el error real, que es la falta de 'de'."
+          },
+          {
+            "answer": "Eu precisam de ajuda para fazer as malas.",
+            "why": "Cambia la conjugación a plural, pero el sujeto 'eu' necesita 'preciso', no 'precisam'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Carlos precisa de descansar depois do trabalho.",
+        "answers": [
+          "Carlos precisa descansar depois do trabalho."
+        ],
+        "explanation": "Antes de un infinitivo ('descansar') no se usa la preposición 'de'; hay que sacarla.",
+        "wrongAnswers": [
+          {
+            "answer": "Carlos precisam de descansar depois do trabalho.",
+            "why": "Cambia la conjugación a plural, pero el problema real es la 'de' sobrante, no la concordancia."
+          },
+          {
+            "answer": "Carlos precisa descansando depois do trabalho.",
+            "why": "Cambia el infinitivo por gerundio, pero la forma correcta es el infinitivo 'descansar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Nós precisa de mais tempo para o projeto.",
+        "answers": [
+          "Nós precisamos de mais tempo para o projeto."
+        ],
+        "explanation": "El sujeto 'nós' requiere la forma 'precisamos', no 'precisa'; la preposición 'de' ya está correcta porque sigue un sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós precisa mais tempo para o projeto.",
+            "why": "Quita la preposición 'de', que es necesaria porque sigue el sustantivo 'tempo', y no corrige la concordancia."
+          },
+          {
+            "answer": "Nós precisamos mais tempo para o projeto.",
+            "why": "Corrige la concordancia pero elimina la preposición 'de', que es obligatoria antes de 'mais tempo'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Precisa você de ajuda com as malas?",
+        "answers": [
+          "Você precisa de ajuda com as malas?"
+        ],
+        "explanation": "En las preguntas de portugués el sujeto va antes del verbo; no se invierte el orden como a veces se hace en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Precisa de você ajuda com as malas?",
+            "why": "El orden de las palabras sigue siendo incorrecto y la oración no tiene sentido en portugués."
+          },
+          {
+            "answer": "Você precisa ajuda com as malas?",
+            "why": "Corrige el orden pero elimina la preposición 'de', que es obligatoria antes del sustantivo 'ajuda'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eles precisam de comprar as passagens até sexta-feira.",
+        "answers": [
+          "Eles precisam comprar as passagens até sexta-feira."
+        ],
+        "explanation": "Antes de un infinitivo ('comprar') no se usa la preposición 'de'; hay que sacarla.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles precisa comprar as passagens até sexta-feira.",
+            "why": "Cambia la conjugación a singular, pero el sujeto 'eles' necesita 'precisam', y el problema real es la 'de' sobrante."
+          },
+          {
+            "answer": "Eles precisam de comprarem as passagens até sexta-feira.",
+            "why": "Agrega un infinitivo personal innecesario y mantiene el error de la 'de' antes del infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Necesito ayuda para preparar la cena.",
+        "answers": [
+          "Eu preciso de ajuda para preparar o jantar.",
+          "Preciso de ajuda para preparar o jantar."
+        ],
+        "explanation": "Con el sustantivo 'ajuda' se usa 'precisar de', aunque en español 'necesitar ayuda' no lleve preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu preciso ajuda para preparar o jantar.",
+            "why": "Falta la preposición 'de' antes del sustantivo 'ajuda'."
+          },
+          {
+            "answer": "Eu preciso de ajudar para preparar o jantar.",
+            "why": "Confunde el sustantivo 'ajuda' con el verbo 'ajudar'; la oración pierde sentido."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Necesitás un médico ahora?",
+        "answers": [
+          "Você precisa de um médico agora?",
+          "Precisa de um médico agora?"
+        ],
+        "explanation": "El sujeto va antes del verbo en las preguntas de portugués, y como sigue un sustantivo, se usa 'precisar de'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você precisa um médico agora?",
+            "why": "Falta la preposición 'de' antes del sustantivo 'médico'."
+          },
+          {
+            "answer": "Precisa você de um médico agora?",
+            "why": "El orden es incorrecto; en portugués el sujeto 'você' va antes del verbo, no después."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Él necesita descansar un poco hoy.",
+        "answers": [
+          "Ele precisa descansar um pouco hoje."
+        ],
+        "explanation": "Antes de un infinitivo ('descansar') no se usa la preposición 'de', igual que en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Ele precisa de descansar um pouco hoje.",
+            "why": "Con un verbo en infinitivo no se agrega la preposición 'de'."
+          },
+          {
+            "answer": "Ele precisam descansar um pouco hoje.",
+            "why": "La conjugación plural no concuerda con el sujeto singular 'ele'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nosotros necesitamos más tiempo para terminar el trabajo.",
+        "answers": [
+          "Nós precisamos de mais tempo para terminar o trabalho.",
+          "Precisamos de mais tempo para terminar o trabalho."
+        ],
+        "explanation": "Como sigue un sustantivo ('tempo'), se usa 'precisar de' en primera persona del plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós precisamos mais tempo para terminar o trabalho.",
+            "why": "Falta la preposición 'de' antes del sustantivo 'tempo'."
+          },
+          {
+            "answer": "Nós precisa de mais tempo para terminar o trabalho.",
+            "why": "La conjugación singular no concuerda con el sujeto plural 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ellos necesitan comprar los pasajes para el viaje.",
+        "answers": [
+          "Eles precisam comprar as passagens para a viagem."
+        ],
+        "explanation": "Antes de un infinitivo ('comprar') no se usa la preposición 'de', y 'precisam' concuerda con el sujeto plural 'eles'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles precisam de comprar as passagens para a viagem.",
+            "why": "Con un verbo en infinitivo no se agrega la preposición 'de'."
+          },
+          {
+            "answer": "Eles precisa comprar as passagens para a viagem.",
+            "why": "La conjugación singular no concuerda con el sujeto plural 'eles'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Necesitás algo más, Mariana?",
+        "answers": [
+          "Você precisa de mais alguma coisa, Mariana?",
+          "Precisa de mais alguma coisa, Mariana?"
+        ],
+        "explanation": "Como sigue un sustantivo ('alguma coisa'), se usa 'precisar de'; el sujeto va antes del verbo en la pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Você precisa mais alguma coisa, Mariana?",
+            "why": "Falta la preposición 'de' antes del sustantivo 'alguma coisa'."
+          },
+          {
+            "answer": "Você precisas de mais alguma coisa, Mariana?",
+            "why": "'Precisas' es la forma de 'tu', que no se usa con 'você' en el portugués estándar de Brasil."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Marina precisa de um médico hoje de manhã.",
+        "alternatives": [
+          "Marina precisa de um médico hoje pela manhã."
+        ],
+        "translation": "Marina necesita un médico hoy a la mañana.",
+        "explanation": "Con sustantivo, 'precisar' siempre lleva 'de'; en español decimos 'necesito un médico' sin preposición, así que hay que prestar atención a ese sonido extra."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Ela precisa ir ao banco antes do trabalho.",
+        "alternatives": [],
+        "translation": "Ella necesita ir al banco antes del trabajo.",
+        "explanation": "Con infinitivo no se usa 'de': es 'precisa ir', no 'precisa de ir', aunque suene natural agregarlo por costumbre del español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Nós precisamos de mais informações sobre o aluguel.",
+        "alternatives": [
+          "Nós precisamos de mais informação sobre o aluguel."
+        ],
+        "translation": "Nosotros necesitamos más información sobre el alquiler.",
+        "explanation": "'Informações' en plural puede confundirse con 'informação' en singular al escuchar; además, no te olvides del 'de' después de 'precisamos'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eles precisam conversar com o gerente da loja.",
+        "alternatives": [],
+        "translation": "Ellos necesitan hablar con el gerente de la tienda.",
+        "explanation": "Como 'conversar' es un infinitivo, no va precedido por 'de'; prestar atención a que 'precisam' y 'conversar' quedan pegados sin preposición."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "mais",
+          "mas"
+        ],
+        "target": 0,
+        "meanings": [
+          "más",
+          "pero"
+        ],
+        "explanation": "El diptongo oral 'ai' de 'mais' agrega un sonido 'i' que no está en 'mas'; no hay nasalización, la diferencia es la presencia de ese diptongo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 1,
+        "meanings": [
+          "casa",
+          "cacería"
+        ],
+        "explanation": "Entre vocales, 'casa' suena con una 'z' suave, mientras que 'caça' se pronuncia con un sonido 's' fuerte; el español no distingue esta diferencia."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 1,
+        "meanings": [
+          "caro",
+          "auto"
+        ],
+        "explanation": "El 'rr' doble se pronuncia fuerte, como una especie de raspado en la garganta, mientras que el 'r' simple es más suave; en español ambos sonidos existen pero no se oponen de la misma manera."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre lo que necesita cada persona.",
+        "text": "Mariana mora em São Paulo e vai viajar para o Rio de Janeiro no fim de semana. Ela está um pouco nervosa porque precisa organizar tudo rápido. Primeiro, ela precisa de uma mala grande para as roupas. Depois, ela precisa comprar uma passagem de ônibus. Mariana também precisa de dinheiro para o hotel. Ela liga para o amigo Carlos e pergunta: 'Carlos, você precisa de alguma coisa do Rio?' Carlos responde que não precisa de nada, só quer saber se ela precisa de ajuda com as malas. Mariana diz que precisa descansar um pouco antes da viagem. No sábado de manhã, ela precisa chegar à estação às oito horas.",
+        "questions": [
+          {
+            "prompt": "¿Qué necesita Mariana para las ropas?",
+            "options": [
+              "Uma bicicleta",
+              "Um carro novo",
+              "Um casaco de frio",
+              "Uma mala grande"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'ela precisa de uma mala grande', usando 'precisar de' + sustantivo, como corresponde en portugués aunque en español digamos 'necesita una maleta' sin preposición."
+          },
+          {
+            "prompt": "¿Qué le pregunta Carlos a Mariana?",
+            "options": [
+              "Se ela precisa de uma passagem",
+              "Se ela precisa de ajuda com as malas",
+              "Se ela precisa de dinheiro",
+              "Se ela precisa de um hotel"
+            ],
+            "correctIndex": 1,
+            "explanation": "Carlos pregunta 'se ela precisa de ajuda com as malas'; como 'ajuda' es un sustantivo, el verbo lleva la preposición 'de'."
+          },
+          {
+            "prompt": "¿A qué hora necesita llegar Mariana a la estación?",
+            "options": [
+              "Às oito horas",
+              "Às dez horas",
+              "Às nove horas",
+              "Às sete horas"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'ela precisa chegar à estação às oito horas'; como 'chegar' es un infinitivo, no se usa 'de' después de 'precisar'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el trabajo de Lucas y respondé las preguntas.",
+        "text": "Lucas trabalha em um escritório em Curitiba. Hoje ele precisa terminar um relatório importante. Para isso, ele precisa de um computador novo, porque o seu está com problema. Ele pede ajuda para a colega Beatriz: 'Beatriz, eu preciso de um computador. Você pode me ajudar?' Beatriz diz que tem um computador extra e pode ajudar Lucas. Depois, Lucas precisa enviar o relatório para o chefe antes das seis horas. Ele também precisa de café para continuar trabalhando. Beatriz pergunta: 'Você precisa de mais alguma coisa?' Lucas responde que só precisa terminar o trabalho rápido. No final do dia, ele precisa descansar porque está muito cansado.",
+        "questions": [
+          {
+            "prompt": "¿Por qué Lucas necesita una computadora nueva?",
+            "options": [
+              "Porque ele não tem computador",
+              "Porque ele perdeu o computador",
+              "Porque o seu está com problema",
+              "Porque o chefe pediu um novo"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto explica que Lucas precisa de un computador novo 'porque o seu está com problema'; la causa está indicada claramente antes de esa frase."
+          },
+          {
+            "prompt": "¿Qué necesita hacer Lucas antes de las seis horas?",
+            "options": [
+              "Comprar um computador",
+              "Ajudar Beatriz",
+              "Enviar o relatório para o chefe",
+              "Tomar café"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Lucas precisa enviar o relatório para o chefe antes das seis horas'; como 'enviar' es infinitivo, no lleva 'de' después de 'precisar'."
+          },
+          {
+            "prompt": "¿Qué le pregunta Beatriz a Lucas?",
+            "options": [
+              "Se ele precisa descansar",
+              "Se ele precisa de dinheiro",
+              "Se ele precisa de mais alguma coisa",
+              "Se ele precisa de ajuda com o relatório"
+            ],
+            "correctIndex": 2,
+            "explanation": "Beatriz usa 'precisar de' + sustantivo ('mais alguma coisa'), por eso el verbo lleva la preposición 'de'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre los amigos y respondé qué necesita cada uno.",
+        "situation": "Dos amigos, Rodrigo y Fernanda, están en un mercado en Porto Alegre haciendo las compras de la semana.",
+        "lines": [
+          {
+            "speaker": "Fernanda",
+            "text": "Rodrigo, você precisa de alguma coisa no mercado?"
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Sim, eu preciso de leite e pão."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Eu preciso comprar frutas para a semana."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Você precisa de ajuda para carregar as compras?"
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Não, eu só preciso de uma sacola grande."
+          },
+          {
+            "speaker": "Rodrigo",
+            "text": "Tudo bem. Eu também preciso pagar a conta de luz hoje."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Então nós precisamos sair rápido do mercado."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué necesita comprar Rodrigo en el mercado?",
+            "options": [
+              "Frutas",
+              "A conta de luz",
+              "Uma sacola grande",
+              "Leite e pão"
+            ],
+            "correctIndex": 3,
+            "explanation": "Rodrigo dice 'eu preciso de leite e pão', usando 'precisar de' porque sigue un sustantivo."
+          },
+          {
+            "prompt": "¿Qué necesita Fernanda para llevar las compras?",
+            "options": [
+              "Uma sacola grande",
+              "Ajuda de Rodrigo",
+              "Uma mala",
+              "Um carro"
+            ],
+            "correctIndex": 0,
+            "explanation": "Fernanda responde 'eu só preciso de uma sacola grande'; el sustantivo 'sacola' requiere la preposición 'de' después de 'precisar'."
+          },
+          {
+            "prompt": "¿Qué necesita hacer Rodrigo hoy, además de las compras?",
+            "options": [
+              "Sair do mercado rápido",
+              "Comprar uma sacola",
+              "Comprar frutas",
+              "Pagar a conta de luz"
+            ],
+            "correctIndex": 3,
+            "explanation": "Rodrigo dice 'eu também preciso pagar a conta de luz hoje'; como 'pagar' es infinitivo, no se usa 'de' después de 'precisar'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la consulta médica y respondé qué necesita el paciente.",
+        "situation": "Un paciente, Felipe, está en la consulta con la doctora Ana en un hospital de Salvador.",
+        "lines": [
+          {
+            "speaker": "Doutora Ana",
+            "text": "Bom dia, Felipe. O que você precisa hoje?"
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Bom dia, doutora. Eu preciso de um remédio para a dor de cabeça."
+          },
+          {
+            "speaker": "Doutora Ana",
+            "text": "Você precisa descansar mais também."
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Eu sei, mas preciso trabalhar muito essa semana."
+          },
+          {
+            "speaker": "Doutora Ana",
+            "text": "Você precisa de água e também precisa dormir bem."
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Eu também preciso de uma receita para comprar o remédio."
+          },
+          {
+            "speaker": "Doutora Ana",
+            "text": "Claro, vou escrever a receita agora."
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Muito obrigado, doutora!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué necesita Felipe para el dolor de cabeza?",
+            "options": [
+              "Uma receita",
+              "Um remédio",
+              "Descansar",
+              "Água"
+            ],
+            "correctIndex": 1,
+            "explanation": "Felipe dice 'eu preciso de um remédio para a dor de cabeça'; 'remédio' es un sustantivo, por eso lleva la preposición 'de'."
+          },
+          {
+            "prompt": "Según la doctora, ¿qué dos cosas necesita Felipe?",
+            "options": [
+              "Água e dormir bem",
+              "Água e remédio",
+              "Trabalhar muito e descansar",
+              "Remédio e receita"
+            ],
+            "correctIndex": 0,
+            "explanation": "La doctora dice 'você precisa de água e também precisa dormir bem'; usa 'de' antes de 'água' porque es un sustantivo, pero repite el verbo 'precisar' sin 'de' antes del infinitivo 'dormir'."
+          },
+          {
+            "prompt": "¿Qué necesita Felipe para comprar el remedio?",
+            "options": [
+              "Um médico",
+              "Água",
+              "Dinheiro",
+              "Uma receita"
+            ],
+            "correctIndex": 3,
+            "explanation": "Felipe dice 'eu também preciso de uma receita para comprar o remédio'; 'receita' es un sustantivo, por eso el verbo lleva 'de'."
+          }
+        ]
+      }
+    ],
+    "pedir-forma-educada": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan está en una cafetería en Río de Janeiro y quiere pedir algo de forma educada. Elegí la opción correcta.",
+        "prompt": "Um café, ___.",
+        "options": [
+          "favor por",
+          "por favor",
+          "obrigado por favor",
+          "please"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"Por favor\" se agrega al final del pedido, igual que en español.",
+        "optionNotes": [
+          "Incorrecto: el orden de las palabras está invertido, no existe en portugués.",
+          "Correcto: así se agrega la fórmula de cortesía al final del pedido.",
+          "Incorrecto: mezcla dos fórmulas distintas que no se usan juntas así.",
+          "Incorrecto: es la palabra en inglés, no en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le quiere pedir ayuda a la recepcionista del hotel de la manera más formal posible. Elegí la mejor opción.",
+        "prompt": "___ me ajudar, por favor?",
+        "options": [
+          "Gostaria",
+          "Pode",
+          "Poderia",
+          "Poderia de"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Poderia\" (condicional de poder) es más formal que \"pode\" y se usa sin preposición antes del pronombre.",
+        "optionNotes": [
+          "Incorrecto: \"gostaria\" sin \"de\" no tiene sentido antes de un verbo como \"me ajudar\".",
+          "Incorrecto: \"pode\" es correcto gramaticalmente pero es menos formal, no es la mejor opción acá.",
+          "Correcto: es la forma más formal y cortés de pedir ayuda.",
+          "Incorrecto: no se usa \"de\" entre \"poderia\" y el pronombre."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan está en un bar y quiere pedir una bebida de forma suave. Elegí la opción correcta.",
+        "prompt": "Eu ___ um chá, por favor.",
+        "options": [
+          "gosto de",
+          "queria de",
+          "gostaria de",
+          "gostaria"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Gostaria\" siempre lleva la preposición \"de\" antes del sustantivo.",
+        "optionNotes": [
+          "Incorrecto: \"gosto de\" es presente y significa \"me gusta\", no sirve para pedir algo puntual.",
+          "Incorrecto: \"queria\" no lleva \"de\" antes del sustantivo.",
+          "Correcto: \"gostaria de\" es la forma correcta para pedir algo suavemente.",
+          "Incorrecto: falta la preposición \"de\", que es obligatoria con \"gostaria\"."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan está con su amigo Pedro en un bar ruidoso y le pide algo de manera relajada. Elegí la opción correcta.",
+        "prompt": "Pedro, ___ falar mais baixo?",
+        "options": [
+          "poderia",
+          "dá para",
+          "pode de",
+          "gostaria de"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"Dá para...?\" es una expresión informal muy usada en Brasil para pedir algo de manera relajada, típica entre amigos.",
+        "optionNotes": [
+          "Incorrecto: \"poderia\" es muy formal para hablarle a un amigo en este contexto.",
+          "Correcto: es la expresión informal típica entre amigos.",
+          "Incorrecto: \"pode\" no lleva \"de\" antes del verbo.",
+          "Incorrecto: \"gostaria de\" no se combina con un verbo así, se usa con sustantivos o infinitivos de otra manera."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan quiere entrar a la oficina de la doctora Ana y necesita pedir permiso. Elegí la expresión correcta.",
+        "prompt": "___, posso entrar?",
+        "options": [
+          "Com licença",
+          "Por favor",
+          "Dá para",
+          "Gostaria"
+        ],
+        "correctIndex": 0,
+        "explanation": "\"Com licença\" se usa para pedir permiso al pasar o interrumpir, equivale a \"disculpá\" o \"permiso\".",
+        "optionNotes": [
+          "Correcto: es la expresión fija para pedir permiso al entrar.",
+          "Incorrecto: \"por favor\" es una fórmula de cortesía pero no pide permiso específicamente.",
+          "Incorrecto: \"dá para\" no funciona sola al principio de la frase para pedir permiso.",
+          "Incorrecto: \"gostaria\" sola no tiene sentido sin un verbo o sustantivo después."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Pedro le pregunta a Juan si puede explicarle algo. Elegí la forma correcta.",
+        "prompt": "Você ___ me explicar isso?",
+        "options": [
+          "poderia",
+          "pode de",
+          "gostaria",
+          "poderia de"
+        ],
+        "correctIndex": 0,
+        "explanation": "No se usa \"de\" entre \"poderia\" y el pronombre o verbo que sigue.",
+        "optionNotes": [
+          "Correcto: \"poderia\" va directo seguido del pronombre, sin preposición.",
+          "Incorrecto: \"pode\" tampoco lleva \"de\" antes del pronombre.",
+          "Incorrecto: \"gostaria\" sola no funciona antes de un pronombre seguido de verbo así.",
+          "Incorrecto: se agrega \"de\" sin necesidad, error típico de hispanohablantes."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le pide agua al mozo João en un restaurante de forma educada. Completá con la forma correcta del verbo.",
+        "sentence": "Eu ___ um copo de água, por favor.",
+        "hint": "(querer, forma educada)",
+        "answers": [
+          "queria"
+        ],
+        "explanation": "Para sonar más educado al pedir algo, se usa \"queria\" (pretérito imperfecto) en vez de \"quero\".",
+        "wrongAnswers": [
+          {
+            "answer": "quero",
+            "why": "\"Quero\" es correcto gramaticalmente pero suena menos educado que \"queria\" para pedir algo."
+          },
+          {
+            "answer": "quer",
+            "why": "Es la conjugación de \"ele/ela\", no corresponde a \"eu\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan quiere hacerle una pregunta a la doctora Ana. Completá con la preposición correcta.",
+        "sentence": "Eu gostaria ___ fazer uma pergunta.",
+        "hint": "(preposición obligatoria con \"gostaria\")",
+        "answers": [
+          "de"
+        ],
+        "explanation": "\"Gostaria\" siempre lleva la preposición \"de\" antes del verbo o sustantivo que sigue.",
+        "wrongAnswers": [
+          {
+            "answer": "que",
+            "why": "\"Gostaria\" no se combina con \"que\" en este tipo de pedido simple."
+          },
+          {
+            "answer": "em",
+            "why": "La preposición correcta con \"gostaria\" es siempre \"de\", no \"em\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le pide ayuda a la recepcionista Márcia del hotel de forma formal. Completá con la forma correcta.",
+        "sentence": "___ você me ajudar, por favor?",
+        "hint": "(poder, forma educada)",
+        "answers": [
+          "Poderia"
+        ],
+        "explanation": "\"Poderia\" (condicional de poder) se usa sin preposición y suena más formal que \"pode\".",
+        "wrongAnswers": [
+          {
+            "answer": "Pode de",
+            "why": "\"Pode\" no lleva \"de\" antes del pronombre."
+          },
+          {
+            "answer": "Poderia de",
+            "why": "No se usa \"de\" entre \"poderia\" y el pronombre que sigue."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan quiere pasar por un pasillo angosto donde está Pedro. Completá la expresión fija para pedir permiso.",
+        "sentence": "___ licença, posso passar?",
+        "hint": "(expresión fija para pedir permiso)",
+        "answers": [
+          "Com"
+        ],
+        "explanation": "\"Com licença\" es una expresión fija que se usa para pedir permiso al pasar o interrumpir.",
+        "wrongAnswers": [
+          {
+            "answer": "Por",
+            "why": "La expresión fija es \"com licença\", no \"por licença\"."
+          },
+          {
+            "answer": "Para",
+            "why": "\"Para licença\" no existe como expresión en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Pedro tiene calor y le pide a Juan que abra la ventana, de manera informal. Completá la expresión.",
+        "sentence": "___ para abrir a janela?",
+        "hint": "(expresión informal de pedido)",
+        "answers": [
+          "Dá"
+        ],
+        "explanation": "\"Dá para...?\" es una expresión informal muy usada en Brasil para pedir algo de manera relajada.",
+        "wrongAnswers": [
+          {
+            "answer": "Da",
+            "why": "Falta el acento: la forma correcta es \"Dá\", con tilde."
+          },
+          {
+            "answer": "Pode",
+            "why": "\"Pode\" no forma parte de la expresión fija \"dá para\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan pide un café en la cafetería y agrega la fórmula de cortesía. Completá la palabra que falta.",
+        "sentence": "Um café, por ___.",
+        "hint": "(fórmula de cortesía)",
+        "answers": [
+          "favor"
+        ],
+        "explanation": "\"Por favor\" se agrega al final del pedido, igual que en español.",
+        "wrongAnswers": [
+          {
+            "answer": "favore",
+            "why": "No existe la palabra \"favore\" en portugués, es un error por influencia del italiano o del español mal escrito."
+          },
+          {
+            "answer": "please",
+            "why": "Es la palabra en inglés, no en portugués."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le pide un minuto a la doctora Ana antes de empezar la consulta. Ordená las palabras para formar la oración.",
+        "sentence": "Poderia me dar um minuto, por favor?",
+        "alternatives": [
+          "Você poderia me dar um minuto, por favor?"
+        ],
+        "translation": "¿Podría darme un minuto, por favor?",
+        "explanation": "\"Poderia\" va al principio seguido del pronombre \"me\" y el verbo, sin preposición entre ellos.",
+        "tokens": [
+          "por",
+          "me",
+          "favor",
+          "minuto,",
+          "um",
+          "Poderia",
+          "dar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le pide agua al mozo João en el restaurante. Ordená las palabras para formar la oración.",
+        "sentence": "Eu gostaria de um copo de água.",
+        "alternatives": [],
+        "translation": "Quisiera un vaso de agua.",
+        "explanation": "\"Gostaria de\" siempre lleva la preposición \"de\" antes del sustantivo que se pide.",
+        "tokens": [
+          "de",
+          "copo",
+          "gostaria",
+          "de",
+          "água",
+          "Eu",
+          "um"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan quiere pasar por donde está Pedro y pedirle ayuda. Ordená las palabras para formar la oración.",
+        "sentence": "Com licença, você pode me ajudar?",
+        "alternatives": [],
+        "translation": "Disculpá, ¿podés ayudarme?",
+        "explanation": "\"Com licença\" se usa para pedir permiso al interrumpir, y luego se hace el pedido con \"pode me ajudar\".",
+        "tokens": [
+          "Com",
+          "você",
+          "ajudar",
+          "me",
+          "pode",
+          "licença,"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Pedro está hablando muy alto y Juan le pide que baje la voz, de manera informal. Ordená las palabras.",
+        "sentence": "Dá para falar mais baixo, por favor?",
+        "alternatives": [],
+        "translation": "¿Se puede hablar más bajo, por favor?",
+        "explanation": "\"Dá para...?\" es la expresión informal de pedido, y \"por favor\" se agrega al final.",
+        "tokens": [
+          "baixo,",
+          "mais",
+          "para",
+          "falar",
+          "Dá",
+          "por",
+          "favor"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan no entendió la pregunta de la doctora Ana y le pide que la repita, de forma formal. Ordená las palabras.",
+        "sentence": "Você poderia repetir a pergunta, por favor?",
+        "alternatives": [],
+        "translation": "¿Podrías repetir la pregunta, por favor?",
+        "explanation": "\"Poderia\" se usa sin preposición antes del verbo, y \"por favor\" cierra el pedido formal.",
+        "tokens": [
+          "repetir",
+          "por",
+          "poderia",
+          "Você",
+          "pergunta,",
+          "favor",
+          "a"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le pide un café al mozo João, pero la frase suena poco educada. Corregí el error.",
+        "sentence": "Eu quero um café, por favor.",
+        "answers": [
+          "Eu queria um café, por favor."
+        ],
+        "explanation": "Para sonar más educado al pedir algo conviene usar \"queria\" (pretérito imperfecto) en vez de \"quero\" (presente), que suena más directo y menos cortés.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quer um café, por favor.",
+            "why": "\"Quer\" es la conjugación de \"ele/ela\", no corresponde al sujeto \"eu\"."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le pide ayuda a Márcia en la recepción del hotel. Corregí el error en la frase.",
+        "sentence": "Poderia de me ajudar?",
+        "answers": [
+          "Poderia me ajudar?"
+        ],
+        "explanation": "No se usa \"de\" entre \"poderia\" y el pronombre o verbo que sigue.",
+        "wrongAnswers": [
+          {
+            "answer": "Pode de me ajudar?",
+            "why": "Cambia \"poderia\" por \"pode\" pero el error real es el \"de\" sobrante, que sigue presente."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le pide un té al mozo João de forma suave. Corregí el error en la frase.",
+        "sentence": "Gostaria um chá, por favor.",
+        "answers": [
+          "Gostaria de um chá, por favor."
+        ],
+        "explanation": "\"Gostar\" y \"gostaria\" siempre llevan la preposición \"de\" antes del sustantivo, a diferencia de \"querer\".",
+        "wrongAnswers": [
+          {
+            "answer": "Queria de um chá, por favor.",
+            "why": "Cambia el verbo, pero \"queria\" no lleva \"de\"; el error está en la preposición faltante con \"gostaria\", no en el verbo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le pide permiso a Pedro para entrar a la habitación. Corregí el error en la frase.",
+        "sentence": "Com licença, pode de me ajudar?",
+        "answers": [
+          "Com licença, pode me ajudar?"
+        ],
+        "explanation": "\"Pode\" no lleva \"de\" antes del pronombre o verbo que sigue.",
+        "wrongAnswers": [
+          {
+            "answer": "Com licença, poderia de me ajudar?",
+            "why": "Cambia \"pode\" por \"poderia\" pero deja el \"de\" sobrante, que es el verdadero error."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Pedro le pide a Juan que hable más bajo, de manera informal. Corregí el error en la frase.",
+        "sentence": "Dá para de falar mais baixo?",
+        "answers": [
+          "Dá para falar mais baixo?"
+        ],
+        "explanation": "\"Dá para...?\" no lleva \"de\" antes del verbo; la preposición correcta en esta expresión es solo \"para\".",
+        "wrongAnswers": [
+          {
+            "answer": "Dá de falar mais baixo?",
+            "why": "Elimina \"para\", que es parte necesaria de la expresión fija \"dá para\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pide ayuda a Márcia en la recepción del hotel. Traducí la oración al portugués.",
+        "spanish": "¿Podrías ayudarme, por favor?",
+        "answers": [
+          "Você poderia me ajudar, por favor?",
+          "Poderia me ajudar, por favor?"
+        ],
+        "explanation": "\"Poderia\" se usa sin preposición antes del pronombre, y \"por favor\" se agrega al final del pedido.",
+        "wrongAnswers": [
+          {
+            "answer": "Você poderia de me ajudar, por favor?",
+            "why": "No se usa \"de\" entre \"poderia\" y el pronombre."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pide un café al mozo João de forma educada. Traducí la oración al portugués.",
+        "spanish": "Quisiera un café, por favor.",
+        "answers": [
+          "Eu queria um café, por favor.",
+          "Eu gostaria de um café, por favor.",
+          "Queria um café, por favor."
+        ],
+        "explanation": "\"Queria\" o \"gostaria de\" son las formas educadas para pedir algo; \"gostaria\" siempre necesita \"de\" antes del sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gostaria um café, por favor.",
+            "why": "Falta la preposición \"de\", obligatoria después de \"gostaria\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan quiere pasar por donde está Pedro y le pide permiso. Traducí la oración al portugués.",
+        "spanish": "Disculpá, ¿podés abrir la puerta?",
+        "answers": [
+          "Com licença, você pode abrir a porta?",
+          "Com licença, pode abrir a porta?"
+        ],
+        "explanation": "\"Com licença\" se usa para pedir permiso, y \"pode\" va seguido directamente del verbo sin preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "Com licença, você pode de abrir a porta?",
+            "why": "\"Pode\" no lleva \"de\" antes del verbo que sigue."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Pedro está hablando muy alto en un bar y Juan le pide que baje la voz. Traducí la oración al portugués.",
+        "spanish": "¿Se puede hablar más bajo?",
+        "answers": [
+          "Dá para falar mais baixo?"
+        ],
+        "explanation": "\"Dá para...?\" es la expresión informal típica para pedir algo de manera relajada, sin preposición extra.",
+        "wrongAnswers": [
+          {
+            "answer": "Dá para de falar mais baixo?",
+            "why": "La expresión \"dá para\" no lleva \"de\" antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan quiere hacerle una pregunta a la doctora Ana en la consulta. Traducí la oración al portugués.",
+        "spanish": "Me gustaría hacer una pregunta.",
+        "answers": [
+          "Eu gostaria de fazer uma pergunta.",
+          "Gostaria de fazer uma pergunta."
+        ],
+        "explanation": "\"Gostaria de\" siempre lleva la preposición \"de\" antes del verbo que sigue.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gostaria fazer uma pergunta.",
+            "why": "Falta la preposición \"de\", que es obligatoria después de \"gostaria\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan no entendió lo que dijo la doctora Ana y le pide que repita. Traducí la oración al portugués.",
+        "spanish": "¿Podría repetir, por favor?",
+        "answers": [
+          "Poderia repetir, por favor?",
+          "Você poderia repetir, por favor?"
+        ],
+        "explanation": "\"Poderia\" se usa directamente antes del verbo, sin preposición, y \"por favor\" cierra el pedido formal.",
+        "wrongAnswers": [
+          {
+            "answer": "Poderia de repetir, por favor?",
+            "why": "No se usa \"de\" entre \"poderia\" y el verbo que sigue."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Eu gostaria de um café, por favor.",
+        "alternatives": [
+          "Gostaria de um café, por favor."
+        ],
+        "translation": "Me gustaría un café, por favor.",
+        "explanation": "Recordá que 'gostaria' siempre lleva 'de' antes del sustantivo, a diferencia de 'queria' que no lo necesita."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Poderia me ajudar com isso, por favor?",
+        "alternatives": [
+          "Você poderia me ajudar com isso, por favor?"
+        ],
+        "translation": "¿Podría ayudarme con esto, por favor?",
+        "explanation": "No se agrega 'de' entre 'poderia' y el pronombre: se dice 'poderia me ajudar', nunca 'poderia de me ajudar'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Com licença, você pode me ajudar?",
+        "alternatives": [],
+        "translation": "Disculpá, ¿podés ayudarme?",
+        "explanation": "'Com licença' se usa para pedir permiso al pasar o interrumpir, no se traduce literalmente como 'con licencia'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Dá para falar mais baixo, por favor?",
+        "alternatives": [],
+        "translation": "¿Se puede hablar más bajo, por favor?",
+        "explanation": "'Dá para' es una fórmula informal muy usada en Brasil para pedir algo de manera relajada, equivalente a '¿se puede...?'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "pode",
+          "pôde"
+        ],
+        "target": 1,
+        "meanings": [
+          "puede",
+          "pudo"
+        ],
+        "explanation": "La diferencia está en el sonido de la 'o': en 'pode' es abierta y en 'pôde' es cerrada, marcada por el acento circunflejo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "já",
+          "chá"
+        ],
+        "target": 1,
+        "meanings": [
+          "ya",
+          "té"
+        ],
+        "explanation": "El sonido inicial de 'chá' es /sh/ como en español 'show', mientras que 'já' empieza con /ʒ/, similar a la 'j' francesa en 'jour', un sonido que no existe en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "mas",
+          "mais"
+        ],
+        "target": 1,
+        "meanings": [
+          "pero",
+          "más"
+        ],
+        "explanation": "'Mas' tiene una sola vocal 'a', mientras que 'mais' tiene el diptongo oral 'ai', que se pronuncia más largo y con un leve deslizamiento hacia 'i'."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre lo que piden.",
+        "situation": "Marina y Beatriz, dos amigas, están sentadas en una cafetería en São Paulo y le hacen su pedido al mozo.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Com licença, posso pedir?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Sim, pode falar."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Eu gostaria de um café."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "E para você?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Eu queria um chá, por favor."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Mais alguma coisa?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Poderia trazer um pão também?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Claro, já trago."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pide Marina para tomar?",
+            "options": [
+              "Un agua",
+              "Un café",
+              "Un té",
+              "Un jugo"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina dice 'Eu gostaria de um café', usando 'gostaria de' más sustantivo para pedir de forma educada."
+          },
+          {
+            "prompt": "¿Qué pide Beatriz para tomar?",
+            "options": [
+              "Un café",
+              "Un jugo",
+              "Un agua",
+              "Un té"
+            ],
+            "correctIndex": 3,
+            "explanation": "Beatriz dice 'Eu queria um chá, por favor', usando 'queria' más sustantivo y agregando 'por favor' al final, una forma cortés de pedir."
+          },
+          {
+            "prompt": "¿Qué le pide Marina al mozo además de la bebida?",
+            "options": [
+              "Una servilleta",
+              "Un pan",
+              "Una cuchara",
+              "Un plato"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina pregunta 'Poderia trazer um pão também?', usando 'poderia', condicional de 'poder', para hacer un pedido formal."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre la conversación.",
+        "situation": "Juan está en una tienda de ropa en Río de Janeiro y le pide ayuda a la vendedora, Camila.",
+        "lines": [
+          {
+            "speaker": "Juan",
+            "text": "Com licença, pode me ajudar?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Sim, claro. O que você precisa?"
+          },
+          {
+            "speaker": "Juan",
+            "text": "Eu gostaria de ver uma camisa."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Que cor você prefere?"
+          },
+          {
+            "speaker": "Juan",
+            "text": "Dá para ver a azul?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Claro, aqui está."
+          },
+          {
+            "speaker": "Juan",
+            "text": "Poderia trazer um tamanho maior?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Sim, já volto com ela."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué le pide Juan a Camila al principio?",
+            "options": [
+              "El precio",
+              "Ayuda",
+              "Una silla",
+              "Un descuento"
+            ],
+            "correctIndex": 1,
+            "explanation": "Juan dice 'Com licença, pode me ajudar?', usando 'com licença' para interrumpir de forma educada y pedir ayuda."
+          },
+          {
+            "prompt": "¿Qué color de camisa quiere ver Juan?",
+            "options": [
+              "Blanco",
+              "Amarillo",
+              "Azul",
+              "Verde"
+            ],
+            "correctIndex": 2,
+            "explanation": "Juan pregunta 'Dá para ver a azul?', usando la expresión informal 'Dá para...?' para pedir algo de manera relajada."
+          },
+          {
+            "prompt": "¿Qué le pide Juan después de ver la camisa azul?",
+            "options": [
+              "Un descuento",
+              "Otra tienda",
+              "Un tamaño más grande",
+              "Otro color"
+            ],
+            "correctIndex": 2,
+            "explanation": "Juan dice 'Poderia trazer um tamanho maior?', usando 'poderia' más verbo para hacer un pedido cortés con el condicional de 'poder'."
+          }
+        ]
+      }
+    ]
+  }
+}

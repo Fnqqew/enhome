@@ -1,0 +1,3013 @@
+{
+  "subtopics": {
+    "em-contracoes": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "O celular está ___ bolsa de Mariana.",
+        "options": [
+          "no",
+          "nos",
+          "na",
+          "nas"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Bolsa' es femenino singular, entonces em + a = na.",
+        "optionNotes": [
+          "Incorrecto: 'bolsa' es femenino, no corresponde 'no'.",
+          "Incorrecto: 'nos' es plural masculino, no corresponde.",
+          "Correcto: 'bolsa' es femenino singular, entonces em + a = na.",
+          "Incorrecto: 'nas' es plural femenino, pero 'bolsa' está en singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Mariana morava ___ Argentina antes de viajar.",
+        "options": [
+          "nas",
+          "na",
+          "nos",
+          "no"
+        ],
+        "correctIndex": 1,
+        "explanation": "El nombre 'Argentina' lleva artículo femenino ('a Argentina'), entonces em + a = na.",
+        "optionNotes": [
+          "Incorrecto: 'nas' es plural femenino, no corresponde.",
+          "Correcto: se dice 'a Argentina', entonces em + a = na.",
+          "Incorrecto: 'nos' es plural, no corresponde a un país en singular.",
+          "Incorrecto: 'Argentina' lleva artículo femenino 'a', no corresponde 'no'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Ela vai trabalhar ___ escritório novo.",
+        "options": [
+          "na",
+          "nas",
+          "nos",
+          "no"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Escritório' es masculino singular, entonces em + o = no.",
+        "optionNotes": [
+          "Incorrecto: 'escritório' es masculino, no corresponde 'na'.",
+          "Incorrecto: 'nas' es plural femenino, no corresponde.",
+          "Incorrecto: 'nos' es plural, pero 'escritório' está en singular.",
+          "Correcto: 'escritório' es masculino singular, entonces em + o = no."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "As chaves estão ___ mesa da cozinha.",
+        "options": [
+          "em a",
+          "no",
+          "nas",
+          "na"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Mesa' es femenino singular, entonces em + a = na; 'em' y 'a' siempre se funden.",
+        "optionNotes": [
+          "Incorrecto: en portugués 'em' y 'a' siempre se contraen, nunca quedan separadas.",
+          "Incorrecto: 'mesa' es femenino, no corresponde 'no'.",
+          "Incorrecto: 'mesa' está en singular, no corresponde 'nas' (plural).",
+          "Correcto: 'mesa' es femenino singular, entonces em + a = na."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Mariana nasceu ___ Buenos Aires, mas mora no Brasil agora.",
+        "options": [
+          "em",
+          "na",
+          "nos",
+          "no"
+        ],
+        "correctIndex": 0,
+        "explanation": "Las ciudades no llevan artículo en portugués, entonces se usa simplemente 'em', sin contracción.",
+        "optionNotes": [
+          "Correcto: los nombres de ciudades como Buenos Aires no llevan artículo, entonces 'em' queda sin contraer.",
+          "Incorrecto: no hay artículo 'a' para contraer con una ciudad.",
+          "Incorrecto: no hay artículo plural para contraer con una ciudad.",
+          "Incorrecto: no hay artículo 'o' para contraer con una ciudad."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Ela mora ___ casa pequena perto do trabalho.",
+        "options": [
+          "na",
+          "nas",
+          "numa",
+          "no"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el indefinido 'uma', em + uma = numa; es una forma muy común en Brasil.",
+        "optionNotes": [
+          "Incorrecto: 'na' corresponde a 'a' (artículo definido), pero aquí hay un indefinido 'uma'.",
+          "Incorrecto: 'casa' está en singular, no corresponde 'nas' (plural).",
+          "Correcto: 'uma casa' con 'em' se contrae en 'numa'.",
+          "Incorrecto: 'casa' es femenino, no corresponde 'no'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'em' más el artículo.",
+        "sentence": "O consultório do médico fica ___ rua principal.",
+        "hint": "(rua = calle, femenino)",
+        "answers": [
+          "na"
+        ],
+        "explanation": "'Rua' es femenino singular, entonces em + a = na.",
+        "wrongAnswers": [
+          {
+            "answer": "em a",
+            "why": "'em' y 'a' siempre se contraen en 'na'; nunca quedan separadas."
+          },
+          {
+            "answer": "no",
+            "why": "'rua' es femenino, por eso corresponde 'na' y no 'no'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'em' más el artículo.",
+        "sentence": "Mariana trabalha ___ hospital grande.",
+        "hint": "(hospital = masculino)",
+        "answers": [
+          "no"
+        ],
+        "explanation": "'Hospital' es masculino singular, entonces em + o = no.",
+        "wrongAnswers": [
+          {
+            "answer": "na",
+            "why": "'hospital' es masculino, por eso corresponde 'no' y no 'na'."
+          },
+          {
+            "answer": "em o",
+            "why": "'em' y 'o' siempre se contraen en 'no'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'em' más el artículo.",
+        "sentence": "Os remédios estão ___ armário do banheiro.",
+        "hint": "(armário = masculino, singular)",
+        "answers": [
+          "no"
+        ],
+        "explanation": "'Armário' es masculino singular, entonces em + o = no.",
+        "wrongAnswers": [
+          {
+            "answer": "na",
+            "why": "'armário' es masculino, no corresponde 'na'."
+          },
+          {
+            "answer": "em o",
+            "why": "'em' y 'o' siempre se contraen en 'no'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'em' más el artículo indefinido.",
+        "sentence": "Ela mora ___ apartamento pequeno em São Paulo.",
+        "hint": "(um apartamento)",
+        "answers": [
+          "num",
+          "em um"
+        ],
+        "explanation": "Con el indefinido 'um', em + um = num; también se puede decir 'em um' sin contraer, pero 'num' es más usado en Brasil.",
+        "wrongAnswers": [
+          {
+            "answer": "no",
+            "why": "falta el indefinido 'um'; 'no' corresponde solo a 'o' (artículo definido)."
+          },
+          {
+            "answer": "na",
+            "why": "'apartamento' es masculino, no corresponde 'na'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'em' más el artículo.",
+        "sentence": "As entrevistas de emprego acontecem ___ salas da empresa.",
+        "hint": "(as salas = plural, femenino)",
+        "answers": [
+          "nas"
+        ],
+        "explanation": "'Salas' es femenino plural, entonces em + as = nas.",
+        "wrongAnswers": [
+          {
+            "answer": "na",
+            "why": "'salas' está en plural, por eso corresponde 'nas' y no 'na'."
+          },
+          {
+            "answer": "em as",
+            "why": "'em' y 'as' siempre se contraen en 'nas'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'em' más el artículo indefinido.",
+        "sentence": "Mariana vai estudar português ___ uma escola nova.",
+        "hint": "(uma escola)",
+        "answers": [
+          "numa",
+          "em uma"
+        ],
+        "explanation": "Con el indefinido 'uma', em + uma = numa; es muy común en el habla brasileña.",
+        "wrongAnswers": [
+          {
+            "answer": "na",
+            "why": "falta el indefinido 'uma'; 'na' corresponde solo a 'a' (artículo definido)."
+          },
+          {
+            "answer": "no",
+            "why": "'escola' es femenino, no corresponde 'no'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "As chaves estão na gaveta da cozinha.",
+        "alternatives": [],
+        "translation": "Las llaves están en el cajón de la cocina.",
+        "explanation": "'Gaveta' es femenino singular, entonces em + a = na.",
+        "tokens": [
+          "As",
+          "gaveta",
+          "estão",
+          "da",
+          "na",
+          "cozinha",
+          "chaves"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Mariana trabalha num escritório perto do centro.",
+        "alternatives": [],
+        "translation": "Mariana trabaja en una oficina cerca del centro.",
+        "explanation": "'Um escritório' con 'em' se contrae en 'num', forma muy usada en Brasil.",
+        "tokens": [
+          "trabalha",
+          "Mariana",
+          "do",
+          "num",
+          "centro",
+          "perto",
+          "escritório"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "O médico atende os pacientes na clínica nova.",
+        "alternatives": [],
+        "translation": "El médico atiende a los pacientes en la clínica nueva.",
+        "explanation": "'Clínica' es femenino singular, entonces em + a = na.",
+        "tokens": [
+          "O",
+          "médico",
+          "os",
+          "na",
+          "clínica",
+          "pacientes",
+          "atende",
+          "nova"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Ela mora numa casa pequena em São Paulo.",
+        "alternatives": [],
+        "translation": "Ella vive en una casa pequeña en San Pablo.",
+        "explanation": "'Uma casa' con 'em' se contrae en 'numa'; 'São Paulo' al ser ciudad no lleva artículo, por eso queda solo 'em'.",
+        "tokens": [
+          "numa",
+          "Paulo",
+          "casa",
+          "Ela",
+          "mora",
+          "em",
+          "pequena",
+          "São"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Os documentos estão nas pastas do escritório.",
+        "alternatives": [],
+        "translation": "Los documentos están en las carpetas de la oficina.",
+        "explanation": "'Pastas' es femenino plural, entonces em + as = nas.",
+        "tokens": [
+          "nas",
+          "estão",
+          "do",
+          "pastas",
+          "Os",
+          "escritório",
+          "documentos"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'em' y los artículos.",
+        "sentence": "O celular está em a bolsa de Mariana.",
+        "answers": [
+          "O celular está na bolsa de Mariana."
+        ],
+        "explanation": "'Em' y 'a' siempre se contraen en 'na'; nunca quedan separadas.",
+        "wrongAnswers": [
+          {
+            "answer": "O celular está no bolsa de Mariana.",
+            "why": "'bolsa' es femenino, por eso corresponde 'na' y no 'no'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'em' y los artículos.",
+        "sentence": "Ela mora em o Brasil agora.",
+        "answers": [
+          "Ela mora no Brasil agora."
+        ],
+        "explanation": "'Em' y 'o' siempre se contraen en 'no'; con Brasil (masculino) se usa 'no Brasil'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela mora na Brasil agora.",
+            "why": "'Brasil' es masculino, por eso corresponde 'no' y no 'na'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'em' y los artículos.",
+        "sentence": "As chaves estão em os carros da empresa.",
+        "answers": [
+          "As chaves estão nos carros da empresa."
+        ],
+        "explanation": "'Em' y 'os' siempre se contraen en 'nos'.",
+        "wrongAnswers": [
+          {
+            "answer": "As chaves estão nas carros da empresa.",
+            "why": "'carros' es masculino plural, por eso corresponde 'nos' y no 'nas'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'em' y los artículos.",
+        "sentence": "Mariana trabalha na hospital novo.",
+        "answers": [
+          "Mariana trabalha no hospital novo."
+        ],
+        "explanation": "'Hospital' es masculino singular, entonces em + o = no.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana trabalha na hospital nova.",
+            "why": "el problema no es el adjetivo: 'hospital' es masculino y necesita 'no', no 'na'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con 'em' y los artículos.",
+        "sentence": "Os livros estão em as prateleiras da sala.",
+        "answers": [
+          "Os livros estão nas prateleiras da sala."
+        ],
+        "explanation": "'Em' y 'as' siempre se contraen en 'nas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Os livros estão na prateleiras da sala.",
+            "why": "'prateleiras' está en plural, por eso corresponde 'nas' y no 'na'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Dónde están las llaves? Están en la mesa.",
+        "answers": [
+          "Onde estão as chaves? Estão na mesa."
+        ],
+        "explanation": "'Mesa' es femenino singular, entonces em + a = na.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde estão as chaves? Estão em a mesa.",
+            "why": "'em' y 'a' siempre se contraen en 'na'; no pueden quedar separadas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Vos vivís en Brasil, no?",
+        "answers": [
+          "Você mora no Brasil, não é?",
+          "Você mora no Brasil, não?"
+        ],
+        "explanation": "'Brasil' es masculino, entonces em + o = no.",
+        "wrongAnswers": [
+          {
+            "answer": "Você mora em o Brasil, não é?",
+            "why": "'em' y 'o' siempre se contraen en 'no'; no quedan separadas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El médico trabaja en un hospital grande.",
+        "answers": [
+          "O médico trabalha num hospital grande.",
+          "O médico trabalha em um hospital grande."
+        ],
+        "explanation": "Con el indefinido 'um', la forma más usada en Brasil es 'num', aunque 'em um' también es válido.",
+        "wrongAnswers": [
+          {
+            "answer": "O médico trabalha na hospital grande.",
+            "why": "'hospital' es masculino, por eso no corresponde 'na'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nací en Buenos Aires pero vivo en San Pablo.",
+        "answers": [
+          "Nasci em Buenos Aires mas moro em São Paulo."
+        ],
+        "explanation": "Con ciudades como Buenos Aires o São Paulo no se usa artículo, entonces queda simplemente 'em'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nasci na Buenos Aires mas moro no São Paulo.",
+            "why": "los nombres de ciudades no llevan artículo, por eso se usa solo 'em', sin contraer."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Los documentos están en las carpetas de la oficina.",
+        "answers": [
+          "Os documentos estão nas pastas do escritório."
+        ],
+        "explanation": "'Pastas' es femenino plural, entonces em + as = nas.",
+        "wrongAnswers": [
+          {
+            "answer": "Os documentos estão em as pastas do escritório.",
+            "why": "'em' y 'as' siempre se contraen en 'nas'; no quedan separadas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Guardá el celular en la cartera, por favor.",
+        "answers": [
+          "Guarda o celular na bolsa, por favor.",
+          "Guarde o celular na bolsa, por favor."
+        ],
+        "explanation": "'Bolsa' es femenino singular, entonces em + a = na.",
+        "wrongAnswers": [
+          {
+            "answer": "Guarda o celular em a bolsa, por favor.",
+            "why": "'em' y 'a' siempre se contraen en 'na'; no quedan separadas."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "As chaves estão na mesa da cozinha.",
+        "alternatives": [],
+        "translation": "Las llaves están en la mesa de la cocina.",
+        "explanation": "No existe la forma 'em a mesa': 'em' más 'a' se funde siempre en 'na', así que prestá atención a ese sonido fusionado."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Pedro mora no Rio de Janeiro desde junho.",
+        "alternatives": [],
+        "translation": "Pedro vive en Río de Janeiro desde junio.",
+        "explanation": "Algunas ciudades llevan artículo en portugués, como 'o Rio de Janeiro', por eso se usa la contracción 'no' y no simplemente 'em'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Marina trabalha numa escola perto do centro.",
+        "alternatives": [],
+        "translation": "Marina trabaja en una escuela cerca del centro.",
+        "explanation": "'Em' más 'uma' se funde en 'numa'; al escuchar, no la confundas con 'uma' sola, porque falta el sonido inicial 'n'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Os documentos estão nas gavetas do escritório.",
+        "alternatives": [],
+        "translation": "Los documentos están en los cajones de la oficina.",
+        "explanation": "'Em' más 'as' se funde siempre en 'nas'; el sonido final nasalizado indica que es plural y femenino."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "no",
+          "num"
+        ],
+        "target": 0,
+        "meanings": [
+          "en el (contracción de 'em' + 'o')",
+          "en un (contracción de 'em' + 'um')"
+        ],
+        "explanation": "'Num' termina con sonido nasal, como si dijeras 'un' tapándote la nariz, mientras que 'no' termina en vocal abierta sin nasalizar."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "nós",
+          "nos"
+        ],
+        "target": 1,
+        "meanings": [
+          "nosotros",
+          "en los (contracción de 'em' + 'os')"
+        ],
+        "explanation": "'Nós' lleva acento en una vocal abierta y tónica, mientras que 'nos' (la contracción) es átono y con vocal más cerrada."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "nó",
+          "no"
+        ],
+        "target": 1,
+        "meanings": [
+          "nudo",
+          "en el (contracción de 'em' + 'o')"
+        ],
+        "explanation": "'Nó' tiene acento y vocal abierta y tónica (como 'nudo'), mientras que 'no' (la contracción) es átono y con vocal cerrada."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé el diálogo entre Lúcia y Marcos, que buscan sus cosas en casa, y respondé las preguntas.",
+        "situation": "Lúcia y Marcos están en la casa de Marcos antes de salir de viaje. Buscan las llaves y el celular.",
+        "lines": [
+          {
+            "speaker": "Lúcia",
+            "text": "Marcos, onde estão as chaves?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Elas estão na mesa."
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "Não, não estão na mesa."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Então estão no sofá."
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "Ah, aqui estão! Estão nas malas."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Que bom! E o celular, onde está?"
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "O celular está na bolsa."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde estaban finalmente las llaves?",
+            "options": [
+              "En la cartera",
+              "En el sofá",
+              "En la mesa",
+              "En las maletas"
+            ],
+            "correctIndex": 3,
+            "explanation": "\"Nas malas\" es la contracción de em + as (femenino plural), por eso indica que las llaves estaban en las maletas."
+          },
+          {
+            "prompt": "¿Dónde dijo Marcos primero que estaban las llaves?",
+            "options": [
+              "En el sofá",
+              "En la mesa",
+              "En las maletas",
+              "En la bolsa"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos dice primero \"na mesa\", que es em + a (femenino singular) = na."
+          },
+          {
+            "prompt": "¿Dónde está el celular?",
+            "options": [
+              "En las maletas",
+              "En la mesa",
+              "En el sofá",
+              "En la cartera"
+            ],
+            "correctIndex": 3,
+            "explanation": "\"Na bolsa\" es em + a = na, usada aquí con la palabra femenina \"bolsa\" (cartera/bolso)."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la entrevista de trabajo entre la Sra. Costa y Pedro y respondé las preguntas.",
+        "situation": "Pedro tiene una entrevista de trabajo en una oficina de San Pablo con la Sra. Costa.",
+        "lines": [
+          {
+            "speaker": "Sra. Costa",
+            "text": "Pedro, onde você mora?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu moro no Rio de Janeiro."
+          },
+          {
+            "speaker": "Sra. Costa",
+            "text": "E onde você trabalha agora?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu trabalho numa escola pequena."
+          },
+          {
+            "speaker": "Sra. Costa",
+            "text": "Interessante! E seus documentos estão onde?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Estão na minha bolsa aqui."
+          },
+          {
+            "speaker": "Sra. Costa",
+            "text": "Ótimo. Você nasceu em qual cidade?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu nasci em Buenos Aires."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde vive Pedro actualmente?",
+            "options": [
+              "En San Pablo",
+              "En Buenos Aires",
+              "En Río de Janeiro",
+              "En una escuela"
+            ],
+            "correctIndex": 2,
+            "explanation": "\"No Rio de Janeiro\" es la contracción em + o = no, usada con el artículo masculino que acompaña a este nombre de lugar."
+          },
+          {
+            "prompt": "¿Dónde trabaja Pedro?",
+            "options": [
+              "En su casa",
+              "En un banco",
+              "En una oficina",
+              "En una escuela pequeña"
+            ],
+            "correctIndex": 3,
+            "explanation": "\"Numa escola\" es la contracción de em + uma, forma muy común en Brasil para decir \"en una\" con sustantivo femenino."
+          },
+          {
+            "prompt": "¿Dónde nació Pedro?",
+            "options": [
+              "En una escuela",
+              "En Río de Janeiro",
+              "En Buenos Aires",
+              "En San Pablo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Con nombres de ciudades que no llevan artículo, como Buenos Aires, \"em\" no se contrae y queda igual: \"em Buenos Aires\"."
+          }
+        ]
+      }
+    ],
+    "de-contracoes": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Eu sou ___ Uruguai.",
+        "options": [
+          "dos",
+          "da",
+          "das",
+          "do"
+        ],
+        "correctIndex": 3,
+        "explanation": "'De' + 'o' se contrae siempre en 'do'; los países masculinos como 'o Uruguai' usan esta forma para indicar origen.",
+        "optionNotes": [
+          "Incorrecto: 'dos' es para plural masculino, pero 'Uruguai' es singular.",
+          "Incorrecto: 'da' se usa con sustantivos femeninos, pero 'Uruguai' es masculino.",
+          "Incorrecto: 'das' es para plural femenino, no corresponde aquí.",
+          "Correcto: 'Uruguai' es masculino y singular, por eso 'de + o' = 'do'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "A casa ___ Marta é grande.",
+        "options": [
+          "das",
+          "da",
+          "do",
+          "dos"
+        ],
+        "correctIndex": 1,
+        "explanation": "'De' + 'a' se contrae siempre en 'da' cuando el sustantivo es femenino singular, como los nombres de mujer.",
+        "optionNotes": [
+          "Incorrecto: 'das' es plural femenino, pero 'Marta' es singular.",
+          "Correcto: 'Marta' es femenino singular, por eso 'de + a' = 'da'.",
+          "Incorrecto: 'do' es masculino, pero 'Marta' es femenino.",
+          "Incorrecto: 'dos' es plural masculino, pero 'Marta' es un nombre singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "O carro ___ João é novo.",
+        "options": [
+          "das",
+          "da",
+          "do",
+          "dos"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con nombres masculinos singulares como 'João', 'de' + 'o' siempre se contrae en 'do'.",
+        "optionNotes": [
+          "Incorrecto: 'das' es plural femenino, no corresponde aquí.",
+          "Incorrecto: 'da' es femenino, pero 'João' es un nombre masculino.",
+          "Correcto: 'João' es masculino singular, por eso 'de + o' = 'do'.",
+          "Incorrecto: 'dos' es plural masculino, pero 'João' es singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Os sapatos ___ meninas são bonitos.",
+        "options": [
+          "dos",
+          "da",
+          "das",
+          "do"
+        ],
+        "correctIndex": 2,
+        "explanation": "'De' + 'as' se contrae siempre en 'das' cuando el sustantivo es femenino plural.",
+        "optionNotes": [
+          "Incorrecto: 'dos' es masculino plural, pero 'meninas' es femenino.",
+          "Incorrecto: 'da' es femenino singular, pero 'meninas' es plural.",
+          "Correcto: 'meninas' es femenino plural, por eso 'de + as' = 'das'.",
+          "Incorrecto: 'do' es masculino singular, pero 'meninas' es femenino plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "O professor é ___ Argentina.",
+        "options": [
+          "das",
+          "dos",
+          "da",
+          "do"
+        ],
+        "correctIndex": 2,
+        "explanation": "Los países femeninos como 'a Argentina' usan 'da' para indicar origen, a diferencia de los masculinos que usan 'do'.",
+        "optionNotes": [
+          "Incorrecto: 'das' es plural femenino, pero 'Argentina' es singular.",
+          "Incorrecto: 'dos' es plural masculino, no corresponde aquí.",
+          "Correcto: 'Argentina' es femenino singular, por eso 'de + a' = 'da'.",
+          "Incorrecto: 'do' es masculino, pero 'Argentina' es femenino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Lucas esqueceu o caderno. Esse é o caderno ___, não o meu.",
+        "options": [
+          "da",
+          "do",
+          "dela",
+          "dele"
+        ],
+        "correctIndex": 3,
+        "explanation": "'De' + 'ele' se contrae siempre en 'dele' para indicar posesión masculina sin repetir el nombre.",
+        "optionNotes": [
+          "Incorrecto: 'da' es femenino y también necesita un sustantivo después.",
+          "Incorrecto: 'do' necesita un sustantivo después, no puede quedar solo.",
+          "Incorrecto: 'dela' se usa para referirse a 'ella', pero se habla de Lucas.",
+          "Correcto: 'dele' se usa para referirse a 'él' (Lucas), reemplazando 'de ele'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la contracción correcta de 'de' + artículo.",
+        "sentence": "A mochila ___ menino é azul.",
+        "hint": "(de + o)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "'De' + 'o' se contrae siempre en 'do', sin excepción en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "da",
+            "why": "'da' es femenino, pero 'menino' es masculino."
+          },
+          {
+            "answer": "de o",
+            "why": "En portugués 'de' siempre se funde con el artículo; no se dice 'de o'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la contracción correcta de 'de' + artículo.",
+        "sentence": "Gosto muito ___ bairro onde eu moro.",
+        "hint": "(de + o)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "'De' + 'o' se contrae siempre en 'do' cuando el sustantivo es masculino singular.",
+        "wrongAnswers": [
+          {
+            "answer": "de o",
+            "why": "La contracción es obligatoria: se escribe 'do', nunca 'de o'."
+          },
+          {
+            "answer": "da",
+            "why": "'bairro' es masculino, no corresponde 'da'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la contracción correcta de 'de' + pronombre.",
+        "sentence": "Essa é a opinião ___, não a minha.",
+        "hint": "(de + ele)",
+        "answers": [
+          "dele"
+        ],
+        "explanation": "'De' + 'ele' se contrae siempre en 'dele' para indicar posesión masculina de tercera persona.",
+        "wrongAnswers": [
+          {
+            "answer": "dela",
+            "why": "'dela' se usa para referirse a 'ella', no a 'él'."
+          },
+          {
+            "answer": "de ele",
+            "why": "'de' y 'ele' siempre se funden en 'dele'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la contracción correcta de 'de' + artículo.",
+        "sentence": "Essa é a casa ___ minhas tias.",
+        "hint": "(de + as)",
+        "answers": [
+          "das"
+        ],
+        "explanation": "'De' + 'as' se contrae siempre en 'das' cuando el sustantivo es femenino plural.",
+        "wrongAnswers": [
+          {
+            "answer": "dos",
+            "why": "'dos' es masculino plural; 'tias' es femenino."
+          },
+          {
+            "answer": "de as",
+            "why": "'de' + 'as' se contrae obligatoriamente en 'das'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la contracción correcta de 'de' + artículo.",
+        "sentence": "Ele é ___ Chile.",
+        "hint": "(de + o, país masculino)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "Los países masculinos como 'o Chile' usan 'do' para indicar origen.",
+        "wrongAnswers": [
+          {
+            "answer": "da",
+            "why": "'Chile' es masculino, no femenino."
+          },
+          {
+            "answer": "de o",
+            "why": "La contracción es obligatoria: se escribe 'do', no 'de o'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la contracción correcta de 'de' + artículo.",
+        "sentence": "Os livros ___ alunos estão na mesa.",
+        "hint": "(de + os)",
+        "answers": [
+          "dos"
+        ],
+        "explanation": "'De' + 'os' se contrae siempre en 'dos' cuando el sustantivo es masculino plural.",
+        "wrongAnswers": [
+          {
+            "answer": "das",
+            "why": "'das' es femenino plural; 'alunos' es masculino."
+          },
+          {
+            "answer": "de os",
+            "why": "'de' + 'os' siempre se contrae en 'dos'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A casa dos meus pais é grande.",
+        "alternatives": [],
+        "translation": "La casa de mis padres es grande.",
+        "explanation": "'De' + 'os' se contrae en 'dos' para indicar posesión con sustantivos masculinos plurales.",
+        "tokens": [
+          "grande",
+          "pais",
+          "é",
+          "A",
+          "casa",
+          "meus",
+          "dos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O carro da Marta está na garagem.",
+        "alternatives": [],
+        "translation": "El auto de Marta está en el garage.",
+        "explanation": "'De' + 'a' se contrae en 'da' cuando el sustantivo es femenino singular, como un nombre de mujer.",
+        "tokens": [
+          "está",
+          "da",
+          "na",
+          "carro",
+          "garagem",
+          "Marta",
+          "O"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Esses são os sapatos das minhas filhas.",
+        "alternatives": [],
+        "translation": "Esos son los zapatos de mis hijas.",
+        "explanation": "'De' + 'as' se contrae en 'das' para indicar posesión con sustantivos femeninos plurales.",
+        "tokens": [
+          "são",
+          "filhas",
+          "os",
+          "Esses",
+          "das",
+          "minhas",
+          "sapatos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O professor novo é do Uruguai.",
+        "alternatives": [
+          "O novo professor é do Uruguai."
+        ],
+        "translation": "El profesor nuevo es de Uruguay.",
+        "explanation": "Los países masculinos como 'o Uruguai' usan 'do' para expresar origen; el adjetivo 'novo' puede ir antes o después del sustantivo sin cambiar el sentido.",
+        "tokens": [
+          "O",
+          "professor",
+          "do",
+          "novo",
+          "Uruguai",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Essa é a opinião dele sobre o trabalho.",
+        "alternatives": [],
+        "translation": "Esa es la opinión de él sobre el trabajo.",
+        "explanation": "'De' + 'ele' se contrae siempre en 'dele' para indicar posesión de tercera persona masculina.",
+        "tokens": [
+          "opinião",
+          "trabalho",
+          "o",
+          "dele",
+          "é",
+          "a",
+          "Essa",
+          "sobre"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las contracciones de 'de'.",
+        "sentence": "O carro de o João está sujo.",
+        "answers": [
+          "O carro do João está sujo.",
+          "O carro de João está sujo."
+        ],
+        "explanation": "'De' + 'o' se contrae siempre en 'do'; en portugués nunca queda separado como en español. Con nombres propios también es válido omitir el artículo y decir simplemente 'de João'.",
+        "wrongAnswers": [
+          {
+            "answer": "O carro de o João está sujo.",
+            "why": "No corrige el error; 'de' + 'o' debe contraerse obligatoriamente en 'do'."
+          },
+          {
+            "answer": "O carro da João está sujo.",
+            "why": "'João' es masculino, no corresponde usar 'da'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las contracciones de 'de'.",
+        "sentence": "A casa de a Maria é linda.",
+        "answers": [
+          "A casa da Maria é linda.",
+          "A casa de Maria é linda."
+        ],
+        "explanation": "'De' + 'a' se contrae siempre en 'da'; dejarlo separado es un calco incorrecto del español. Con nombres propios también es válido omitir el artículo y decir simplemente 'de Maria'.",
+        "wrongAnswers": [
+          {
+            "answer": "A casa do Maria é linda.",
+            "why": "'Maria' es femenino, corresponde 'da', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las contracciones de 'de'.",
+        "sentence": "Os livros de os alunos estão aqui.",
+        "answers": [
+          "Os livros dos alunos estão aqui."
+        ],
+        "explanation": "'De' + 'os' se contrae siempre en 'dos'; no puede quedar separado en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "Os livros das alunos estão aqui.",
+            "why": "'alunos' es masculino plural, corresponde 'dos', no 'das'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las contracciones de 'de'.",
+        "sentence": "Ela é de o Brasil.",
+        "answers": [
+          "Ela é do Brasil."
+        ],
+        "explanation": "Los países masculinos como 'o Brasil' usan 'do' para indicar origen, nunca 'de o'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é da Brasil.",
+            "why": "'Brasil' es masculino, corresponde 'do', no 'da'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con las contracciones de 'de'.",
+        "sentence": "As chaves de as portas estão na mesa.",
+        "answers": [
+          "As chaves das portas estão na mesa."
+        ],
+        "explanation": "'De' + 'as' se contrae siempre en 'das' cuando el sustantivo es femenino plural.",
+        "wrongAnswers": [
+          {
+            "answer": "As chaves dos portas estão na mesa.",
+            "why": "'portas' es femenino plural, corresponde 'das', no 'dos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la contracción correcta de 'de' + artículo.",
+        "spanish": "Vos sos de Uruguay, ¿no?",
+        "answers": [
+          "Você é do Uruguai, não é?",
+          "Você é do Uruguai, não é mesmo?"
+        ],
+        "explanation": "Para indicar origen de un país masculino como 'o Uruguai' se usa 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você é de o Uruguai, não é?",
+            "why": "'de' + 'o' debe contraerse siempre en 'do'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la contracción correcta de 'de' + artículo.",
+        "spanish": "El auto de Carlos es nuevo.",
+        "answers": [
+          "O carro do Carlos é novo.",
+          "O carro de Carlos é novo."
+        ],
+        "explanation": "Con nombres propios se puede usar 'de + nombre' o, de forma más coloquial, 'do + nombre' con el artículo contraído.",
+        "wrongAnswers": [
+          {
+            "answer": "O carro de o Carlos é novo.",
+            "why": "Si se usa artículo, 'de' + 'o' se contrae obligatoriamente en 'do'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la contracción correcta de 'de' + artículo.",
+        "spanish": "La casa de mis abuelos es grande.",
+        "answers": [
+          "A casa dos meus avós é grande."
+        ],
+        "explanation": "'De' + 'os' se contrae siempre en 'dos' para indicar posesión con sustantivos masculinos plurales.",
+        "wrongAnswers": [
+          {
+            "answer": "A casa de os meus avós é grande.",
+            "why": "'de' + 'os' se contrae siempre en 'dos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la contracción correcta de 'de' + pronombre.",
+        "spanish": "Esa es la opinión de ella, no la mía.",
+        "answers": [
+          "Essa é a opinião dela, não a minha."
+        ],
+        "explanation": "'De' + 'ela' se contrae siempre en 'dela' para indicar posesión femenina de tercera persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Essa é a opinião de ela, não a minha.",
+            "why": "'de' + 'ela' se contrae siempre en 'dela'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la contracción correcta de 'de' + artículo.",
+        "spanish": "Los zapatos de las chicas son lindos.",
+        "answers": [
+          "Os sapatos das meninas são bonitos.",
+          "Os sapatos das garotas são bonitos."
+        ],
+        "explanation": "'De' + 'as' se contrae siempre en 'das' cuando el sustantivo es femenino plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Os sapatos de as meninas são bonitos.",
+            "why": "'de' + 'as' se contrae siempre en 'das'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando la contracción correcta de 'de' + artículo.",
+        "spanish": "El profesor es de Argentina.",
+        "answers": [
+          "O professor é da Argentina."
+        ],
+        "explanation": "Los países femeninos como 'a Argentina' usan 'da' para indicar origen.",
+        "wrongAnswers": [
+          {
+            "answer": "O professor é de a Argentina.",
+            "why": "'de' + 'a' se contrae siempre en 'da'."
+          },
+          {
+            "answer": "O professor é do Argentina.",
+            "why": "'Argentina' es femenino, corresponde 'da', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Meu amigo Marcos é do Uruguai.",
+        "alternatives": [],
+        "translation": "Mi amigo Marcos es de Uruguay.",
+        "explanation": "Al escuchar \"do\" el alumno puede querer escribir \"de o\" separado, como en español; acordate que \"de\" + \"o\" se funde siempre en \"do\"."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "A casa da Ana é muito bonita.",
+        "alternatives": [],
+        "translation": "La casa de Ana es muy bonita.",
+        "explanation": "\"Da\" suena pegado a la palabra siguiente; no lo confundas con el artículo \"a\" solo ni lo separes en \"de a\"."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Os livros dos alunos estão na mesa.",
+        "alternatives": [],
+        "translation": "Los libros de los alumnos están en la mesa.",
+        "explanation": "\"Dos\" puede confundirse con el número \"dos\" del español; acá es la contracción de \"de\" + \"os\", sin relación con una cantidad."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "As chaves das meninas estão aqui.",
+        "alternatives": [],
+        "translation": "Las llaves de las chicas están aquí.",
+        "explanation": "\"Das\" suena parecido a \"as\" solo; prestá atención a la \"d\" inicial para no perder la contracción de \"de\" + \"as\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "dó",
+          "do"
+        ],
+        "target": 1,
+        "meanings": [
+          "pena, lástima",
+          "del (contracción de \"de\" + \"o\")"
+        ],
+        "explanation": "\"Do\" es átono y se pronuncia breve, casi como \"du\"; \"dó\" lleva el acento y el \"o\" se abre más, como en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "da",
+          "dá"
+        ],
+        "target": 0,
+        "meanings": [
+          "de la (contracción de \"de\" + \"a\")",
+          "da (forma del verbo dar)"
+        ],
+        "explanation": "\"Da\" es átona y se pronuncia breve y relajada; \"dá\" lleva tilde y se pronuncia más fuerte y marcada, como cuando decimos \"él/ella da\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "dela",
+          "dele"
+        ],
+        "target": 1,
+        "meanings": [
+          "de ella",
+          "de él"
+        ],
+        "explanation": "La diferencia está en la vocal final: \"dele\" termina en \"e\" cerrada y \"dela\" termina en \"a\" abierta; esa vocal final marca el género."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre Marcos y Juliana y respondé prestando atención a do, da y dos.",
+        "situation": "Marcos y Juliana son compañeros de la universidad y se encuentran en un café en San Pablo. Están charlando sobre de dónde son y de quién son algunas cosas que están sobre la mesa.",
+        "lines": [
+          {
+            "speaker": "Marcos",
+            "text": "Oi, Juliana! Você é de São Paulo?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, eu sou do Rio de Janeiro."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Que legal! E essa mochila é sua?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, é a mochila do meu irmão."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "E esse livro na mesa, é seu?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, é o livro da minha professora."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Ah, entendi. E os óculos, são dela também?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, os óculos são dos meus pais."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De dónde es Juliana?",
+            "options": [
+              "Rio de Janeiro",
+              "Argentina",
+              "Uruguai",
+              "São Paulo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana dice 'eu sou do Rio de Janeiro', usando 'do' (de + o) porque Rio de Janeiro es masculino."
+          },
+          {
+            "prompt": "¿De quién es la mochila?",
+            "options": [
+              "Es de los padres de Juliana",
+              "Es del hermano de Juliana",
+              "Es de Juliana misma",
+              "Es de la profesora"
+            ],
+            "correctIndex": 1,
+            "explanation": "Juliana dice 'é a mochila do meu irmão', usando 'do' (de + o) porque 'irmão' es masculino singular."
+          },
+          {
+            "prompt": "¿De quién son los anteojos (óculos)?",
+            "options": [
+              "Son de los padres de Juliana",
+              "Son del hermano de Juliana",
+              "Son de Juliana misma",
+              "Son de la profesora"
+            ],
+            "correctIndex": 0,
+            "explanation": "Juliana dice 'os óculos são dos meus pais', usando 'dos' (de + os) porque 'pais' es masculino plural."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre Ana y Pedro en la oficina y respondé fijándote en da, das y do.",
+        "situation": "Ana es nueva en una oficina de Buenos Aires y le pregunta a Pedro, su compañero, de quién son algunos objetos que ve en el lugar de trabajo.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Pedro, essa mesa é da diretora?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não, essa mesa é da secretária."
+          },
+          {
+            "speaker": "Ana",
+            "text": "E aquelas canetas são dos estagiários?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não, são das vendedoras."
+          },
+          {
+            "speaker": "Ana",
+            "text": "E o computador ali, é do gerente?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Sim, é do gerente, mas ele não está hoje."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Entendi, obrigada!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De quién es la mesa?",
+            "options": [
+              "De la secretaria",
+              "Del gerente",
+              "De la directora",
+              "De las vendedoras"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro dice 'essa mesa é da secretária', usando 'da' (de + a) porque 'secretária' es femenino singular."
+          },
+          {
+            "prompt": "¿De quién son las lapiceras (canetas)?",
+            "options": [
+              "Del gerente",
+              "De los pasantes",
+              "De la directora",
+              "De las vendedoras"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro dice 'são das vendedoras', usando 'das' (de + as) porque 'vendedoras' es femenino plural."
+          },
+          {
+            "prompt": "¿De quién es la computadora?",
+            "options": [
+              "De la secretaria",
+              "De las vendedoras",
+              "De la directora",
+              "Del gerente"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro dice 'é do gerente', usando 'do' (de + o) porque se refiere a un gerente varón, masculino singular."
+          }
+        ]
+      }
+    ],
+    "a-para": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Amanhã eu vou ___ cinema com o Pedro.",
+        "options": [
+          "a o",
+          "ao",
+          "à",
+          "no cinema"
+        ],
+        "correctIndex": 1,
+        "explanation": "La preposición 'a' más el artículo 'o' se contrae siempre en 'ao': a + o = ao.",
+        "optionNotes": [
+          "Incorrecto: en portugués nunca se escribe 'a o' por separado, siempre se contrae.",
+          "Correcto: a + o se contrae en 'ao'.",
+          "Incorrecto: 'à' es la contracción femenina (a+a) y 'cinema' es masculino.",
+          "Incorrecto: 'no cinema' indica que ya estás ahí, no que vas hacia allá."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Ela vai ___ praia com as amigas.",
+        "options": [
+          "para o",
+          "a",
+          "ao",
+          "à"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Praia' es femenino, entonces a + a se contrae en 'à'.",
+        "optionNotes": [
+          "Incorrecto: 'para o' usa un artículo masculino para un sustantivo femenino.",
+          "Incorrecto: falta la contracción con el artículo femenino 'a'.",
+          "Incorrecto: 'ao' es la contracción masculina, pero 'praia' es femenino.",
+          "Correcto: a + a = à, y 'praia' es femenino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Nós vamos ___ academia às sete.",
+        "options": [
+          "ao",
+          "a",
+          "à",
+          "para o"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Academia' es femenino, por eso se usa la contracción 'à' (a+a).",
+        "optionNotes": [
+          "Incorrecto: 'ao' es para sustantivos masculinos.",
+          "Incorrecto: falta la contracción con el artículo femenino.",
+          "Correcto: 'academia' es femenino, corresponde 'à'.",
+          "Incorrecto: el artículo 'o' es masculino y no corresponde a 'academia'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Depois do trabalho, eu volto ___ casa.",
+        "options": [
+          "para a",
+          "para",
+          "à",
+          "ao"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cuando 'casa' significa el propio hogar, se usa 'para' sin artículo ni contracción, igual que en español decimos 'voy a casa'.",
+        "optionNotes": [
+          "Incorrecto: no se agrega el artículo 'a' cuando 'casa' es el propio hogar.",
+          "Correcto: con 'casa' propia se usa 'para' sin artículo.",
+          "Incorrecto: no se usa 'à' con 'casa' propia.",
+          "Incorrecto: 'casa' es femenino, además no se usa artículo con el hogar propio."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Vamos ___ museu no sábado.",
+        "options": [
+          "ao",
+          "à",
+          "a",
+          "para a"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Museu' es masculino, entonces a + o se contrae en 'ao'.",
+        "optionNotes": [
+          "Correcto: a + o = ao, y 'museu' es masculino.",
+          "Incorrecto: 'à' es la forma femenina y 'museu' es masculino.",
+          "Incorrecto: falta la contracción con el artículo masculino.",
+          "Incorrecto: el artículo 'a' es femenino y no corresponde a 'museu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Eu dou o presente ___ meu irmão.",
+        "options": [
+          "à",
+          "ao",
+          "a",
+          "para a"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Irmão' es masculino, entonces a + o se contrae en 'ao'.",
+        "optionNotes": [
+          "Incorrecto: 'à' es femenino y 'irmão' es masculino.",
+          "Correcto: a + o = ao, 'irmão' es masculino.",
+          "Incorrecto: falta la contracción con el artículo masculino.",
+          "Incorrecto: el artículo 'a' es femenino y no corresponde a 'irmão'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'a' más el artículo.",
+        "sentence": "Hoje eu vou ___ consultório do dentista.",
+        "hint": "(a + o = ?)",
+        "answers": [
+          "ao",
+          "para o"
+        ],
+        "explanation": "'Consultório' es masculino, entonces a + o se contrae en 'ao'. En el habla también se usa 'para o'.",
+        "wrongAnswers": [
+          {
+            "answer": "a o",
+            "why": "En portugués nunca se escribe 'a o' por separado, siempre se contrae en 'ao'."
+          },
+          {
+            "answer": "à",
+            "why": "'à' es la contracción femenina, pero 'consultório' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'a' más el artículo.",
+        "sentence": "Depois da aula, vamos ___ praia pegar sol.",
+        "hint": "(a + a = ?)",
+        "answers": [
+          "à",
+          "para a"
+        ],
+        "explanation": "'Praia' es femenino, entonces a + a se contrae en 'à'. También se puede usar 'para a' en el habla.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "Falta la contracción con el artículo femenino 'a'."
+          },
+          {
+            "answer": "ao",
+            "why": "'ao' es la contracción masculina, pero 'praia' es femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'a' más el artículo.",
+        "sentence": "Minha mãe vai ___ mercado comprar pão.",
+        "hint": "(a + o = ?)",
+        "answers": [
+          "ao",
+          "para o"
+        ],
+        "explanation": "'Mercado' es masculino, entonces a + o se contrae en 'ao'.",
+        "wrongAnswers": [
+          {
+            "answer": "à",
+            "why": "'à' es femenino, pero 'mercado' es masculino."
+          },
+          {
+            "answer": "a",
+            "why": "Falta la contracción con el artículo masculino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración sabiendo que 'casa' es tu propio hogar.",
+        "sentence": "No fim do dia, eu volto ___ casa cansada.",
+        "hint": "(sin artículo)",
+        "answers": [
+          "para"
+        ],
+        "explanation": "Cuando 'casa' significa el propio hogar, se usa 'para' sin artículo, no 'para a' ni 'à'.",
+        "wrongAnswers": [
+          {
+            "answer": "para a casa",
+            "why": "Con 'casa' propia no se usa artículo después de 'para'."
+          },
+          {
+            "answer": "à casa",
+            "why": "No se usa 'à' con 'casa' propia; se dice simplemente 'para casa'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'a' más el artículo.",
+        "sentence": "Hoje à noite, eles vão ___ festa de aniversário.",
+        "hint": "(a + a = ?)",
+        "answers": [
+          "à",
+          "para a"
+        ],
+        "explanation": "'Festa' es femenino, entonces a + a se contrae en 'à'.",
+        "wrongAnswers": [
+          {
+            "answer": "ao",
+            "why": "'ao' es masculino, pero 'festa' es femenino."
+          },
+          {
+            "answer": "a",
+            "why": "Falta la contracción con el artículo femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta de 'a' más el artículo.",
+        "sentence": "Amanhã de manhã, vou ___ academia fazer exercício.",
+        "hint": "(a + a = ?)",
+        "answers": [
+          "à",
+          "para a"
+        ],
+        "explanation": "'Academia' es femenino, entonces a + a se contrae en 'à'.",
+        "wrongAnswers": [
+          {
+            "answer": "ao",
+            "why": "'ao' es masculino, pero 'academia' es femenino."
+          },
+          {
+            "answer": "a",
+            "why": "Falta la contracción con el artículo femenino."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Amanhã eu vou ao cinema com a Mariana.",
+        "alternatives": [],
+        "translation": "Mañana voy al cine con Mariana.",
+        "explanation": "La oración usa 'ao' (a+o) porque 'cinema' es masculino, indicando movimiento hacia ese lugar.",
+        "tokens": [
+          "Mariana",
+          "eu",
+          "a",
+          "Amanhã",
+          "ao",
+          "vou",
+          "cinema",
+          "com"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós vamos à praia no fim de semana.",
+        "alternatives": [],
+        "translation": "Nosotros vamos a la playa el fin de semana.",
+        "explanation": "Se usa 'à' (a+a) porque 'praia' es femenino.",
+        "tokens": [
+          "vamos",
+          "de",
+          "à",
+          "Nós",
+          "fim",
+          "praia",
+          "no",
+          "semana"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ela volta para casa depois do trabalho.",
+        "alternatives": [],
+        "translation": "Ella vuelve a casa después del trabajo.",
+        "explanation": "Con 'casa' propia se usa 'para' sin artículo, a diferencia de otros lugares.",
+        "tokens": [
+          "depois",
+          "para",
+          "do",
+          "Ela",
+          "casa",
+          "volta",
+          "trabalho"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Vocês vão ao museu no sábado de manhã?",
+        "alternatives": [],
+        "translation": "¿Ustedes van al museo el sábado por la mañana?",
+        "explanation": "Se usa 'ao' (a+o) porque 'museu' es masculino.",
+        "tokens": [
+          "manhã",
+          "vão",
+          "ao",
+          "de",
+          "no",
+          "museu",
+          "sábado",
+          "Vocês"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu dou o presente ao meu irmão hoje.",
+        "alternatives": [],
+        "translation": "Yo le doy el regalo a mi hermano hoy.",
+        "explanation": "Se usa 'ao' (a+o) porque 'irmão' es masculino.",
+        "tokens": [
+          "o",
+          "Eu",
+          "meu",
+          "hoje",
+          "dou",
+          "ao",
+          "irmão",
+          "presente"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vou a o cinema com o Pedro.",
+        "answers": [
+          "Vou ao cinema com o Pedro."
+        ],
+        "explanation": "La preposición 'a' más el artículo 'o' siempre se contrae en 'ao', nunca se escriben por separado.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou à cinema com o Pedro.",
+            "why": "'à' es la contracción femenina, pero 'cinema' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Ela vai a praia com as amigas.",
+        "answers": [
+          "Ela vai à praia com as amigas."
+        ],
+        "explanation": "'Praia' es femenino, entonces a + a debe contraerse en 'à', con acento grave.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela vai ao praia com as amigas.",
+            "why": "'ao' es la contracción masculina, pero 'praia' es femenino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu vou à casa depois da aula.",
+        "answers": [
+          "Eu vou para casa depois da aula."
+        ],
+        "explanation": "Cuando 'casa' es el propio hogar, se usa 'para' sin artículo, no 'à'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu vou para a casa depois da aula.",
+            "why": "Con 'casa' propia no se usa artículo después de 'para'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Nós vamos a o museu no sábado.",
+        "answers": [
+          "Nós vamos ao museu no sábado."
+        ],
+        "explanation": "La preposición 'a' más el artículo 'o' siempre se contrae en 'ao'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós vamos à museu no sábado.",
+            "why": "'museu' es masculino, corresponde 'ao', no 'à'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Dou o presente a o meu irmão.",
+        "answers": [
+          "Dou o presente ao meu irmão."
+        ],
+        "explanation": "La preposición 'a' más el artículo 'o' siempre se contrae en 'ao'.",
+        "wrongAnswers": [
+          {
+            "answer": "Dou o presente à meu irmão.",
+            "why": "'irmão' es masculino, corresponde 'ao', no 'à'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Mañana vas al cine con Pedro.",
+        "answers": [
+          "Amanhã você vai ao cinema com o Pedro.",
+          "Amanhã você vai pro cinema com o Pedro."
+        ],
+        "explanation": "'Cinema' es masculino, entonces se usa 'ao' (a+o); en el habla también se usa 'pro' (para o).",
+        "wrongAnswers": [
+          {
+            "answer": "Amanhã você vai a o cinema com o Pedro.",
+            "why": "a + o se contrae siempre en 'ao', nunca se escribe por separado."
+          },
+          {
+            "answer": "Amanhã você vai à cinema com o Pedro.",
+            "why": "'à' es femenino, pero 'cinema' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "¿Vas a la playa el sábado?",
+        "answers": [
+          "Você vai à praia no sábado?",
+          "Você vai para a praia no sábado?"
+        ],
+        "explanation": "'Praia' es femenino, entonces se usa 'à' (a+a).",
+        "wrongAnswers": [
+          {
+            "answer": "Você vai a praia no sábado?",
+            "why": "Falta la contracción con el artículo femenino; debe ser 'à'."
+          },
+          {
+            "answer": "Você vai ao praia no sábado?",
+            "why": "'ao' es masculino, pero 'praia' es femenino."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Volvemos a casa a las ocho.",
+        "answers": [
+          "Voltamos para casa às oito."
+        ],
+        "explanation": "Cuando 'casa' es el propio hogar, se usa 'para' sin artículo, igual que en español decimos 'voy a casa'.",
+        "wrongAnswers": [
+          {
+            "answer": "Voltamos para a casa às oito.",
+            "why": "Con 'casa' propia no se usa artículo después de 'para'."
+          },
+          {
+            "answer": "Voltamos à casa às oito.",
+            "why": "No se usa 'à' con 'casa' propia; se dice 'para casa'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Vamos al museo el domingo.",
+        "answers": [
+          "Vamos ao museu no domingo.",
+          "Vamos pro museu no domingo."
+        ],
+        "explanation": "'Museu' es masculino, entonces se usa 'ao' (a+o); en el habla también se usa 'pro'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos a o museu no domingo.",
+            "why": "a + o se contrae siempre en 'ao', nunca se escribe por separado."
+          },
+          {
+            "answer": "Vamos à museu no domingo.",
+            "why": "'à' es femenino, pero 'museu' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Le doy el regalo a mi hermana.",
+        "answers": [
+          "Dou o presente à minha irmã.",
+          "Dou o presente para a minha irmã."
+        ],
+        "explanation": "'Irmã' es femenino, entonces se usa 'à' (a+a).",
+        "wrongAnswers": [
+          {
+            "answer": "Dou o presente ao minha irmã.",
+            "why": "'ao' es masculino, pero 'irmã' es femenino."
+          },
+          {
+            "answer": "Dou o presente a minha irmã.",
+            "why": "Falta la contracción con el artículo femenino; debe ser 'à'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "¿Van a la fiesta de cumpleaños hoy?",
+        "answers": [
+          "Vocês vão à festa de aniversário hoje?",
+          "Vocês vão para a festa de aniversário hoje?"
+        ],
+        "explanation": "'Festa' es femenino, entonces se usa 'à' (a+a).",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês vão a festa de aniversário hoje?",
+            "why": "Falta la contracción con el artículo femenino; debe ser 'à'."
+          },
+          {
+            "answer": "Vocês vão ao festa de aniversário hoje?",
+            "why": "'ao' es masculino, pero 'festa' es femenino."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Carla vai ao médico às nove horas.",
+        "alternatives": [
+          "Carla vai ao médico às 9 horas."
+        ],
+        "translation": "Carla va al médico a las nueve.",
+        "explanation": "La contracción 'ao' (a + o) se escribe junta; no se separa en 'a o médico'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Pedro volta para casa depois do trabalho.",
+        "alternatives": [
+          "Pedro volta pra casa depois do trabalho."
+        ],
+        "translation": "Pedro vuelve a casa después del trabajo.",
+        "explanation": "Cuando 'casa' significa el propio hogar, va después de 'para' sin artículo: 'para casa', no 'para a casa'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Vamos à praia no fim de semana.",
+        "alternatives": [
+          "Vamos para a praia no fim de semana."
+        ],
+        "translation": "Vamos a la playa el fin de semana.",
+        "explanation": "El acento grave de 'à' (a + a) suena igual que una 'a' simple, pero marca la contracción con el artículo femenino 'a'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eles vão para o aeroporto de manhã.",
+        "alternatives": [
+          "Eles vão pro aeroporto de manhã."
+        ],
+        "translation": "Ellos van al aeropuerto por la mañana.",
+        "explanation": "En el habla informal, 'para o' se reduce a 'pro'; ambas formas son correctas, solo cambia el registro."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "cacería",
+          "casa"
+        ],
+        "explanation": "Entre vocales, la 's' de 'casa' suena como una 'z' suave, mientras que 'caça' se pronuncia con un sonido 's' fuerte; en español no se distingue esta diferencia."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' es una vocal abierta y la 'ô' es cerrada; en español no diferenciamos estos dos sonidos de 'o'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 1,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "El diptongo nasal 'ão' se pronuncia con resonancia en la nariz, a diferencia de 'au', que es un sonido oral sin nasalidad."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la rutina de Marcos y respondé las preguntas sobre los lugares adonde va.",
+        "text": "Marcos mora em Porto Alegre. De manhã, ele vai ao trabalho de ônibus. Depois do trabalho, ele vai à academia para fazer exercício. Às vezes, ele vai ao mercado para comprar comida. Hoje à noite, Marcos vai para casa mais cedo porque está cansado. Amanhã é sábado e ele vai à praia com os amigos. Na praia, eles vão comer um sanduíche. À noite, ele vai à festa de aniversário da Juliana. No domingo, ele vai ao cinema com a namorada. Ele gosta muito de sair com os amigos. Marcos está muito feliz com o fim de semana.",
+        "questions": [
+          {
+            "prompt": "Para onde Marcos vai depois do trabalho?",
+            "options": [
+              "para casa",
+              "ao mercado",
+              "ao cinema",
+              "à academia"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'ele vai à academia', con la contracción a + a = à porque 'academia' es femenino."
+          },
+          {
+            "prompt": "Aonde Marcos vai à noite de sábado?",
+            "options": [
+              "à academia",
+              "à festa de aniversário da Juliana",
+              "ao mercado",
+              "ao cinema"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'ele vai à festa de aniversário da Juliana', es decir, a la noche del sábado va a esa fiesta."
+          },
+          {
+            "prompt": "Com quem Marcos vai ao cinema no domingo?",
+            "options": [
+              "sozinho",
+              "com os amigos",
+              "com a Juliana",
+              "com a namorada"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'ele vai ao cinema com a namorada', usando la contracción a + o = ao porque 'cinema' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el viaje de Beatriz y respondé las preguntas sobre los lugares adonde va.",
+        "text": "Hoje é um dia especial para Beatriz. Ela vai viajar para São Paulo visitar a irmã. Primeiro, ela vai ao banco trocar dinheiro. Depois, ela vai à loja comprar um presente para a irmã. Mais tarde, ela vai para casa buscar a mala. À tarde, Beatriz vai ao aeroporto com o pai. O avião vai para São Paulo às quatro horas. Na chegada, a irmã busca Beatriz no aeroporto. Elas vão almoçar num restaurante perto do aeroporto. No domingo, elas vão ao parque andar de bicicleta. Depois, elas vão ao cinema ver um filme. Beatriz está muito feliz com a viagem.",
+        "questions": [
+          {
+            "prompt": "Onde Beatriz vai trocar dinheiro?",
+            "options": [
+              "ao aeroporto",
+              "ao banco",
+              "à loja",
+              "para casa"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'ela vai ao banco trocar dinheiro', con la contracción a + o = ao porque 'banco' es masculino."
+          },
+          {
+            "prompt": "Quem leva Beatriz ao aeroporto?",
+            "options": [
+              "o pai",
+              "a mãe",
+              "o amigo",
+              "a irmã"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Beatriz vai ao aeroporto com o pai', así que es el padre quien la acompaña."
+          },
+          {
+            "prompt": "O que elas fazem no domingo, antes do cinema?",
+            "options": [
+              "vão para casa buscar a mala",
+              "vão ao parque andar de bicicleta",
+              "vão ao banco trocar dinheiro",
+              "vão à loja comprar presente"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'elas vão ao parque andar de bicicleta' antes de ir al cine, usando a + o = ao."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre Rafael y Camila y respondé sobre los planes del sábado.",
+        "situation": "Rafael y Camila son amigos y hablan por teléfono sobre los planes del sábado, en San Pablo.",
+        "lines": [
+          {
+            "speaker": "Rafael",
+            "text": "Oi, Camila! O que você vai fazer no sábado?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Eu vou à praia de manhã com a Júlia."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Que legal! E de tarde, você vai para casa?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Não, de tarde eu vou ao shopping comprar um presente."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Presente para quem?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Para o meu irmão. O aniversário dele é domingo."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Entendi. E à noite, vocês vão à festa?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Sim! Ele vai fazer a festa na casa da nossa mãe."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Adónde va Camila el sábado por la mañana?",
+            "options": [
+              "a la playa",
+              "a la fiesta",
+              "al shopping",
+              "a su casa"
+            ],
+            "correctIndex": 0,
+            "explanation": "Camila dice 'Eu vou à praia de manhã com a Júlia', usando la contracción a + a = à porque 'praia' es femenino."
+          },
+          {
+            "prompt": "¿Para quién es el regalo que compra Camila?",
+            "options": [
+              "para su hermano",
+              "para Rafael",
+              "para su madre",
+              "para Júlia"
+            ],
+            "correctIndex": 0,
+            "explanation": "Camila dice que el regalo es 'para o meu irmão', porque el cumpleaños de él es el domingo."
+          },
+          {
+            "prompt": "¿Dónde será la fiesta de cumpleaños?",
+            "options": [
+              "en la casa de Camila",
+              "en la playa",
+              "en la casa de la madre de ambos",
+              "en el shopping"
+            ],
+            "correctIndex": 2,
+            "explanation": "Camila dice que la fiesta es 'na casa da nossa mãe', es decir, en la casa de la madre de ambos (Camila y su hermano)."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé sobre la rutina de Patrícia.",
+        "situation": "El Sr. Souza entrevista a Patrícia para un trabajo en Río de Janeiro y le pregunta sobre su rutina diaria.",
+        "lines": [
+          {
+            "speaker": "Sr. Souza",
+            "text": "Patrícia, como você vai para o trabalho hoje em dia?"
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Eu vou para o trabalho de metrô."
+          },
+          {
+            "speaker": "Sr. Souza",
+            "text": "E depois do trabalho, você vai direto para casa?"
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Não, às vezes eu vou à academia primeiro."
+          },
+          {
+            "speaker": "Sr. Souza",
+            "text": "Entendi. E nos fins de semana, você viaja?"
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Sim, no mês passado eu fui à praia com a família."
+          },
+          {
+            "speaker": "Sr. Souza",
+            "text": "Que bom! E você gosta de ir ao cinema?"
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Gosto muito! Eu vou ao cinema quase todo fim de semana."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo va Patrícia al trabajo?",
+            "options": [
+              "en auto",
+              "de metro",
+              "en colectivo",
+              "caminando"
+            ],
+            "correctIndex": 1,
+            "explanation": "Patrícia dice 'Eu vou para o trabalho de metrô', indicando que usa el metro."
+          },
+          {
+            "prompt": "¿Qué hace Patrícia a veces después del trabajo, antes de ir a casa?",
+            "options": [
+              "va al cine",
+              "va al gimnasio",
+              "va a la playa",
+              "va al banco"
+            ],
+            "correctIndex": 1,
+            "explanation": "Patrícia dice 'às vezes eu vou à academia primeiro', usando a + a = à porque 'academia' es femenino."
+          },
+          {
+            "prompt": "¿Qué hizo Patrícia el mes pasado con la familia?",
+            "options": [
+              "fue a la playa",
+              "fue a una fiesta",
+              "fue al banco",
+              "fue al cine"
+            ],
+            "correctIndex": 0,
+            "explanation": "Patrícia dice 'no mês passado eu fui à praia com a família', usando la contracción a + a = à."
+          }
+        ]
+      }
+    ],
+    "possessivos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el posesivo que significa 'mi' y concuerda con 'casa'.",
+        "prompt": "Esta é ___ casa.",
+        "options": [
+          "nosso",
+          "minha",
+          "meu",
+          "seus"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Casa' es femenino singular, por eso el posesivo correcto es 'minha'.",
+        "optionNotes": [
+          "Incorrecto: 'nosso' es masculino y significa 'nuestro', no concuerda ni en género ni en persona.",
+          "Correcto: 'casa' es femenino, por eso corresponde 'minha'.",
+          "Incorrecto: 'meu' es masculino y no concuerda con 'casa' (femenino).",
+          "Incorrecto: 'seus' es plural y de otra persona (tu/su), no corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el posesivo que significa 'mis' y concuerda con 'livros' (masculino plural).",
+        "prompt": "___ livros estão na mesa.",
+        "options": [
+          "Minha",
+          "Meus",
+          "Meu",
+          "Minhas"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Livros' es masculino plural, por eso corresponde 'meus'.",
+        "optionNotes": [
+          "Incorrecto: 'minha' es femenino singular, doble error de género y número.",
+          "Correcto: 'meus' concuerda en masculino plural con 'livros'.",
+          "Incorrecto: 'meu' está en singular, pero 'livros' está en plural.",
+          "Incorrecto: 'minhas' es femenino y 'livros' es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Le preguntás el nombre a un amigo. Elegí el posesivo que significa 'tu' y concuerda con 'nome' (masculino singular).",
+        "prompt": "Qual é ___ nome?",
+        "options": [
+          "suas",
+          "sua",
+          "seus",
+          "seu"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Nome' es masculino singular, por eso corresponde 'seu'.",
+        "optionNotes": [
+          "Incorrecto: 'suas' es femenino plural, doble error.",
+          "Incorrecto: 'sua' es femenino, pero 'nome' es masculino.",
+          "Incorrecto: 'seus' es plural, pero 'nome' está en singular.",
+          "Correcto: 'seu' concuerda en masculino singular con 'nome'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el posesivo que significa 'nuestro' y concuerda con 'carro' (masculino singular).",
+        "prompt": "___ carro é azul.",
+        "options": [
+          "Nossas",
+          "Nosso",
+          "Nossa",
+          "Nossos"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Carro' es masculino singular, por eso corresponde 'nosso'.",
+        "optionNotes": [
+          "Incorrecto: 'nossas' es femenino plural, doble error.",
+          "Correcto: 'nosso' concuerda en masculino singular con 'carro'.",
+          "Incorrecto: 'nossa' es femenino, pero 'carro' es masculino.",
+          "Incorrecto: 'nossos' es plural, pero 'carro' está en singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Se habla del auto de Pedro (él). Elegí la opción que indica claramente 'de él' sin ambigüedad.",
+        "prompt": "O carro ___ é novo.",
+        "options": [
+          "seu",
+          "dele",
+          "dela",
+          "nosso"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Dele' se usa después del sustantivo para expresar 'de él' sin la ambigüedad de 'seu'.",
+        "optionNotes": [
+          "Incorrecto: 'seu' es ambiguo, normalmente se entiende como 'tuyo' o 'de usted', no claramente 'de él'.",
+          "Correcto: 'dele' indica claramente 'de él' (Pedro), sin ambigüedad.",
+          "Incorrecto: 'dela' significa 'de ella', pero el contexto habla de Pedro (él).",
+          "Incorrecto: 'nosso' significa 'nuestro', no corresponde a Pedro."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Se habla de las llaves de Ana (ella). Elegí la opción que indica claramente 'de ella'.",
+        "prompt": "As chaves ___ estão na bolsa.",
+        "options": [
+          "dele",
+          "dela",
+          "sua",
+          "nossa"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Dela' se usa después del sustantivo para expresar 'de ella' sin ambigüedad.",
+        "optionNotes": [
+          "Incorrecto: 'dele' significa 'de él', pero el contexto habla de Ana (ella).",
+          "Correcto: 'dela' indica claramente 'de ella' (Ana).",
+          "Incorrecto: 'sua' es ambiguo, no queda claro que sea de Ana.",
+          "Incorrecto: 'nossa' significa 'nuestra', no corresponde al contexto de Ana."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto.",
+        "sentence": "___ mãe trabalha em um hospital em São Paulo.",
+        "hint": "(posesivo de 'eu', concuerda con 'mãe', femenino)",
+        "answers": [
+          "Minha"
+        ],
+        "explanation": "'Minha' concuerda en femenino singular con 'mãe'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu",
+            "why": "'mãe' es femenino, por eso corresponde 'minha', no 'meu'."
+          },
+          {
+            "answer": "Meus",
+            "why": "'mãe' está en singular, no corresponde el plural 'meus'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto.",
+        "sentence": "Os ___ amigos chegam hoje à noite.",
+        "hint": "(posesivo de 'nós', concuerda con 'amigos', masculino plural)",
+        "answers": [
+          "nossos"
+        ],
+        "explanation": "'Nossos' concuerda en masculino plural con 'amigos'.",
+        "wrongAnswers": [
+          {
+            "answer": "nosso",
+            "why": "Falta el plural; 'amigos' está en plural."
+          },
+          {
+            "answer": "nossas",
+            "why": "'amigos' es masculino, no femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta para decir 'de ella' (Ana).",
+        "sentence": "A Ana perdeu o celular. O celular ___ é preto.",
+        "hint": "(de ela, se coloca después del sustantivo)",
+        "answers": [
+          "dela"
+        ],
+        "explanation": "'Dela' se usa después del sustantivo para indicar claramente 'de ella' (Ana).",
+        "wrongAnswers": [
+          {
+            "answer": "seu",
+            "why": "'Seu' concuerda en género con 'celular' (masculino), pero es ambiguo: no deja claro que el celular es de Ana; por eso se prefiere 'dela'."
+          },
+          {
+            "answer": "dele",
+            "why": "'Dele' significa 'de él', pero el contexto habla de Ana (ella)."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto.",
+        "sentence": "___ telefone é este?",
+        "hint": "(posesivo de 'você', concuerda con 'telefone', masculino singular)",
+        "answers": [
+          "Seu"
+        ],
+        "explanation": "'Seu' concuerda en masculino singular con 'telefone'.",
+        "wrongAnswers": [
+          {
+            "answer": "Sua",
+            "why": "'telefone' es masculino, corresponde 'seu', no 'sua'."
+          },
+          {
+            "answer": "Seus",
+            "why": "'telefone' está en singular, no corresponde el plural 'seus'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto.",
+        "sentence": "Esses são ___ cadernos.",
+        "hint": "(posesivo de 'eu', concuerda con 'cadernos', masculino plural)",
+        "answers": [
+          "meus"
+        ],
+        "explanation": "'Meus' concuerda en masculino plural con 'cadernos'.",
+        "wrongAnswers": [
+          {
+            "answer": "minhas",
+            "why": "'cadernos' es masculino, corresponde 'meus', no 'minhas'."
+          },
+          {
+            "answer": "meu",
+            "why": "Falta el plural; 'cadernos' está en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo correcto.",
+        "sentence": "___ casa fica perto da praia.",
+        "hint": "(posesivo de 'nós', concuerda con 'casa', femenino singular)",
+        "answers": [
+          "Nossa"
+        ],
+        "explanation": "'Nossa' concuerda en femenino singular con 'casa'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nosso",
+            "why": "'casa' es femenino, corresponde 'nossa', no 'nosso'."
+          },
+          {
+            "answer": "Nossos",
+            "why": "'casa' está en singular y es femenino; 'nossos' es masculino plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Minha entrevista de emprego é amanhã de manhã.",
+        "alternatives": [],
+        "translation": "Mi entrevista de trabajo es mañana por la mañana.",
+        "explanation": "'Minha' concuerda con 'entrevista' (femenino singular) y va antes del sustantivo.",
+        "tokens": [
+          "de",
+          "emprego",
+          "de",
+          "manhã",
+          "Minha",
+          "amanhã",
+          "entrevista",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O médico perguntou sobre a minha alergia.",
+        "alternatives": [],
+        "translation": "El médico preguntó sobre mi alergia.",
+        "explanation": "'Minha' concuerda con 'alergia' (femenino singular); el posesivo va después del artículo 'a'.",
+        "tokens": [
+          "alergia",
+          "O",
+          "perguntou",
+          "médico",
+          "a",
+          "minha",
+          "sobre"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nosso apartamento fica perto da estação de metrô.",
+        "alternatives": [],
+        "translation": "Nuestro departamento queda cerca de la estación de metro.",
+        "explanation": "'Nosso' concuerda con 'apartamento' (masculino singular).",
+        "tokens": [
+          "estação",
+          "da",
+          "de",
+          "apartamento",
+          "metrô",
+          "perto",
+          "fica",
+          "Nosso"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "As chaves dela estão dentro da bolsa azul.",
+        "alternatives": [],
+        "translation": "Las llaves de ella están dentro de la bolsa azul.",
+        "explanation": "'Dela' se coloca después del sustantivo 'chaves' para indicar 'de ella' sin ambigüedad.",
+        "tokens": [
+          "azul",
+          "As",
+          "dentro",
+          "da",
+          "bolsa",
+          "estão",
+          "dela",
+          "chaves"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Seus documentos estão prontos para a entrevista.",
+        "alternatives": [
+          "Para a entrevista, seus documentos estão prontos."
+        ],
+        "translation": "Tus documentos están listos para la entrevista.",
+        "explanation": "'Seus' concuerda con 'documentos' (masculino plural) y expresa 'tus' en este contexto informal.",
+        "tokens": [
+          "prontos",
+          "a",
+          "estão",
+          "entrevista",
+          "Seus",
+          "documentos",
+          "para"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con los posesivos.",
+        "sentence": "Meu casa fica perto do hospital.",
+        "answers": [
+          "Minha casa fica perto do hospital."
+        ],
+        "explanation": "'Casa' es femenino singular, por eso el posesivo correcto es 'minha', no 'meu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu casa fica perto do hospital.",
+            "why": "No corrige el error; 'casa' es femenino y requiere 'minha'."
+          },
+          {
+            "answer": "Meus casa fica perto do hospital.",
+            "why": "Agrega un plural incorrecto en vez de corregir el género del posesivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con los posesivos.",
+        "sentence": "O carro de ele é muito rápido.",
+        "answers": [
+          "O carro dele é muito rápido."
+        ],
+        "explanation": "'De ele' no existe en portugués; la forma correcta es la contracción 'dele'.",
+        "wrongAnswers": [
+          {
+            "answer": "O carro dela é muito rápido.",
+            "why": "Cambia el poseedor a femenino (ella) cuando el original habla de 'ele' (él)."
+          },
+          {
+            "answer": "O seu carro de ele é muito rápido.",
+            "why": "Agrega 'seu' de forma redundante y no corrige la construcción incorrecta 'de ele'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con los posesivos.",
+        "sentence": "Minhas livros estão na mochila.",
+        "answers": [
+          "Meus livros estão na mochila."
+        ],
+        "explanation": "'Livros' es masculino plural, por eso corresponde 'meus', no 'minhas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha livros estão na mochila.",
+            "why": "Sigue sin concordar en número; 'livros' está en plural."
+          },
+          {
+            "answer": "Minhas livro estão na mochila.",
+            "why": "Cambia 'livros' a singular en vez de corregir el posesivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con los posesivos.",
+        "sentence": "Nosso amigas chegam à noite.",
+        "answers": [
+          "Nossas amigas chegam à noite."
+        ],
+        "explanation": "'Amigas' es femenino plural, por eso corresponde 'nossas', no 'nosso'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nossos amigas chegam à noite.",
+            "why": "Corrige el número pero no el género; 'amigas' es femenino."
+          },
+          {
+            "answer": "Nosso amiga chega à noite.",
+            "why": "Cambia 'amigas' a singular en vez de corregir el posesivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con los posesivos.",
+        "sentence": "As chaves são meu.",
+        "answers": [
+          "As chaves são minhas."
+        ],
+        "explanation": "'Chaves' es femenino plural, por eso corresponde 'minhas', no 'meu'.",
+        "wrongAnswers": [
+          {
+            "answer": "As chaves são meus.",
+            "why": "Corrige el número pero no el género; 'chaves' es femenino."
+          },
+          {
+            "answer": "As chaves são minha.",
+            "why": "Corrige el género pero no el número; 'chaves' está en plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Mi hermana vive en Porto Alegre.",
+        "answers": [
+          "Minha irmã mora em Porto Alegre."
+        ],
+        "explanation": "'Minha' concuerda en femenino singular con 'irmã'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu irmã mora em Porto Alegre.",
+            "why": "'irmã' es femenino, corresponde 'minha', no 'meu'."
+          },
+          {
+            "answer": "Minhas irmã mora em Porto Alegre.",
+            "why": "'irmã' está en singular, no corresponde el plural 'minhas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Cuál es tu dirección nueva?",
+        "answers": [
+          "Qual é o seu endereço novo?",
+          "Qual é seu endereço novo?"
+        ],
+        "explanation": "'Seu' concuerda en masculino singular con 'endereço'.",
+        "wrongAnswers": [
+          {
+            "answer": "Qual é a sua endereço novo?",
+            "why": "'endereço' es masculino, corresponde 'seu', no 'sua'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nuestro departamento queda cerca del centro.",
+        "answers": [
+          "Nosso apartamento fica perto do centro."
+        ],
+        "explanation": "'Nosso' concuerda en masculino singular con 'apartamento'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nossa apartamento fica perto do centro.",
+            "why": "'apartamento' es masculino, corresponde 'nosso', no 'nossa'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El auto de él es rojo.",
+        "answers": [
+          "O carro dele é vermelho."
+        ],
+        "explanation": "'Dele' se coloca después del sustantivo para expresar claramente 'de él'.",
+        "wrongAnswers": [
+          {
+            "answer": "O carro seu é vermelho.",
+            "why": "Para 'de él' se usa 'dele' después del sustantivo; 'seu' en esta posición resulta ambiguo o poco natural."
+          },
+          {
+            "answer": "O seu carro de ele é vermelho.",
+            "why": "Mezcla 'seu' con 'de ele' de forma redundante e incorrecta."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Estas son mis llaves, no son tuyas.",
+        "answers": [
+          "Estas são minhas chaves, não são suas.",
+          "Essas são minhas chaves, não são suas."
+        ],
+        "explanation": "'Minhas' concuerda en femenino plural con 'chaves'.",
+        "wrongAnswers": [
+          {
+            "answer": "Estas são meus chaves, não são suas.",
+            "why": "'chaves' es femenino plural, corresponde 'minhas', no 'meus'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Tus documentos están en la mesa?",
+        "answers": [
+          "Seus documentos estão na mesa?"
+        ],
+        "explanation": "'Seus' concuerda en masculino plural con 'documentos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Sua documentos estão na mesa?",
+            "why": "'documentos' es masculino plural, corresponde 'seus', no 'sua'."
+          },
+          {
+            "answer": "Seu documentos estão na mesa?",
+            "why": "Falta el plural; 'documentos' está en plural, necesita 'seus'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Minha irmã se chama Luísa.",
+        "alternatives": [],
+        "translation": "Mi hermana se llama Luísa.",
+        "explanation": "'Irmã' es femenino, por eso el posesivo tiene que ir en femenino: 'minha', nunca 'meu'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "O carro dele é branco.",
+        "alternatives": [],
+        "translation": "Su auto (el de él) es blanco.",
+        "explanation": "Para evitar la ambigüedad de 'seu', se usa 'dele' después del sustantivo cuando queremos aclarar que es 'de él'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Nossos amigos vêm jantar sábado.",
+        "alternatives": [
+          "Nossos amigos vêm jantar no sábado."
+        ],
+        "translation": "Nuestros amigos vienen a cenar el sábado.",
+        "explanation": "'Amigos' es masculino plural, por eso el posesivo concuerda en 'nossos', no en 'nossas'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Essas são as chaves dela.",
+        "alternatives": [],
+        "translation": "Esas son las llaves de ella.",
+        "explanation": "'Dela' no cambia según el número o género de lo que se posee, siempre queda igual: 'as chaves dela', no 'delas chaves'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "seu",
+          "céu"
+        ],
+        "target": 0,
+        "meanings": [
+          "tuyo/su",
+          "cielo"
+        ],
+        "explanation": "En 'seu' la 'e' es cerrada, mientras que en 'céu' la 'e' es abierta, algo que en español no se distingue tan claramente."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "irmã",
+          "irmão"
+        ],
+        "target": 1,
+        "meanings": [
+          "hermana",
+          "hermano"
+        ],
+        "explanation": "La diferencia está en la nasal final: 'irmã' termina en 'ã' nasal simple y 'irmão' en el diptongo nasal 'ão'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "cacería",
+          "casa"
+        ],
+        "explanation": "'Casa' se pronuncia con sonido de 'z' (vibrante) y 'caça' con sonido de 's' (sordo), una distinción que no existe en español."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre los posesivos.",
+        "situation": "Pedro y Lucas son amigos y están en la casa de Pedro hablando sobre su familia y una mascota.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Essa é minha irmã, Carla."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Ela mora com você?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não, ela mora em Curitiba."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Esse cachorro é seu?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não, não é meu, é dela."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Que legal! Ele é bonito."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Nossos pais também têm um cachorro."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De quién es la hermana que menciona Pedro?",
+            "options": [
+              "De Pedro",
+              "No se sabe",
+              "De Lucas",
+              "De Carla"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro dice 'minha irmã', y el posesivo 'minha' significa 'mi', referido a él mismo."
+          },
+          {
+            "prompt": "¿Dónde vive la hermana de Pedro?",
+            "options": [
+              "Rio de Janeiro",
+              "Belo Horizonte",
+              "São Paulo",
+              "Curitiba"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro responde 'ela mora em Curitiba', indicando el lugar donde vive su hermana."
+          },
+          {
+            "prompt": "¿De quién es el perro que ve Lucas?",
+            "options": [
+              "De la hermana de Pedro",
+              "De Pedro",
+              "De Lucas",
+              "De los padres de Pedro"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro aclara 'não é meu, é dela', usando 'dela' para decir que el perro es de su hermana, evitando la ambigüedad de 'seu'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre los posesivos.",
+        "situation": "Beatriz y Rafael son compañeros de trabajo y están en la oficina hablando sobre objetos y una colega, Marina.",
+        "lines": [
+          {
+            "speaker": "Beatriz",
+            "text": "Rafael, essa mochila é sua?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Não, é do João, não é minha."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "E esse computador, é seu?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Sim, é meu computador novo."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Onde estão seus relatórios?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "A Marina tem meus relatórios."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "E esses relatórios na mesa, são dela?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Sim, são dela, não são meus."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿De quién es la mochila?",
+            "options": [
+              "De Beatriz",
+              "De Rafael",
+              "De João",
+              "De Marina"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice 'é do João, não é minha', aclarando que la mochila no es suya sino de João."
+          },
+          {
+            "prompt": "¿De quién es la computadora nueva?",
+            "options": [
+              "De João",
+              "De Beatriz",
+              "De Rafael",
+              "De Marina"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice 'é meu computador novo', usando 'meu' para mostrar que la computadora es suya."
+          },
+          {
+            "prompt": "¿De quién son los informes que están sobre la mesa?",
+            "options": [
+              "De Rafael",
+              "De João",
+              "De Beatriz",
+              "De Marina"
+            ],
+            "correctIndex": 3,
+            "explanation": "Rafael confirma 'sim, são dela', usando 'dela' para referirse a Marina y evitar la ambigüedad que tendría 'seus'."
+          }
+        ]
+      }
+    ]
+  }
+}

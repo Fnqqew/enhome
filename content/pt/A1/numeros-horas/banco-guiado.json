@@ -237,17 +237,7 @@
         "sentence": "Lucas tem vinte e cinco anos de idade.",
         "alternatives": [],
         "translation": "Lucas tiene veinticinco años de edad.",
-        "explanation": "Entre 'vinte' y 'cinco' va la palabra 'e'; esa estructura no cambia de orden en portugués.",
-        "tokens": [
-          "Lucas",
-          "idade",
-          "tem",
-          "anos",
-          "cinco",
-          "e",
-          "vinte",
-          "de"
-        ]
+        "explanation": "Entre 'vinte' y 'cinco' va la palabra 'e'; esa estructura no cambia de orden en portugués."
       },
       {
         "type": "word_order",
@@ -255,15 +245,7 @@
         "sentence": "Minha irmã tem duas filhas pequenas.",
         "alternatives": [],
         "translation": "Mi hermana tiene dos hijas chiquitas.",
-        "explanation": "Duas concuerda en género femenino con 'filhas', a diferencia del español donde 'dos' no cambia.",
-        "tokens": [
-          "duas",
-          "pequenas",
-          "Minha",
-          "irmã",
-          "filhas",
-          "tem"
-        ]
+        "explanation": "Duas concuerda en género femenino con 'filhas', a diferencia del español donde 'dos' no cambia."
       },
       {
         "type": "word_order",
@@ -273,16 +255,7 @@
           "Para o aluguel, preciso de cem reais."
         ],
         "translation": "Necesito cien reales para el alquiler.",
-        "explanation": "Cem se usa para el 100 exacto; no lleva 'e' ni otra cifra después.",
-        "tokens": [
-          "cem",
-          "Preciso",
-          "o",
-          "de",
-          "reais",
-          "para",
-          "aluguel"
-        ]
+        "explanation": "Cem se usa para el 100 exacto; no lleva 'e' ni otra cifra después."
       },
       {
         "type": "word_order",
@@ -290,17 +263,7 @@
         "sentence": "O quarto é o número cento e um.",
         "alternatives": [],
         "translation": "La habitación es el número ciento uno.",
-        "explanation": "Como después del 100 sigue otra cifra, se usa 'cento' en vez de 'cem', junto con la palabra 'e'.",
-        "tokens": [
-          "o",
-          "é",
-          "quarto",
-          "cento",
-          "um",
-          "O",
-          "e",
-          "número"
-        ]
+        "explanation": "Como después del 100 sigue otra cifra, se usa 'cento' en vez de 'cem', junto con la palabra 'e'."
       },
       {
         "type": "word_order",
@@ -310,16 +273,7 @@
           "No sábado passado, ela fez dezenove anos."
         ],
         "translation": "Ella cumplió diecinueve años el sábado pasado.",
-        "explanation": "Dezenove es la forma brasileña para el número 19; en Portugal se dice 'dezanove'.",
-        "tokens": [
-          "Ela",
-          "no",
-          "dezenove",
-          "anos",
-          "fez",
-          "passado",
-          "sábado"
-        ]
+        "explanation": "Dezenove es la forma brasileña para el número 19; en Portugal se dice 'dezanove'."
       },
       {
         "type": "error_correction",
@@ -964,16 +918,7 @@
         "sentence": "Eu moro no primeiro andar deste prédio.",
         "alternatives": [],
         "translation": "Yo vivo en el primer piso de este edificio.",
-        "explanation": "'Primeiro' concuerda en masculino con 'andar' porque es el piso número uno.",
-        "tokens": [
-          "andar",
-          "primeiro",
-          "no",
-          "deste",
-          "moro",
-          "Eu",
-          "prédio"
-        ]
+        "explanation": "'Primeiro' concuerda en masculino con 'andar' porque es el piso número uno."
       },
       {
         "type": "word_order",
@@ -981,18 +926,7 @@
         "sentence": "Essa é a segunda vez que eu venho aqui.",
         "alternatives": [],
         "translation": "Esa es la segunda vez que vengo aquí.",
-        "explanation": "'Segunda' concuerda en femenino con 'vez' porque es la segunda vez que Juan viene.",
-        "tokens": [
-          "Essa",
-          "eu",
-          "é",
-          "que",
-          "a",
-          "aqui",
-          "vez",
-          "venho",
-          "segunda"
-        ]
+        "explanation": "'Segunda' concuerda en femenino con 'vez' porque es la segunda vez que Juan viene."
       },
       {
         "type": "word_order",
@@ -1000,16 +934,7 @@
         "sentence": "Ela ficou em primeiro lugar na corrida.",
         "alternatives": [],
         "translation": "Ella quedó en primer lugar en la carrera.",
-        "explanation": "'Primeiro' concuerda en masculino con 'lugar' porque Mariana quedó en el puesto número uno.",
-        "tokens": [
-          "ficou",
-          "Ela",
-          "primeiro",
-          "corrida",
-          "em",
-          "na",
-          "lugar"
-        ]
+        "explanation": "'Primeiro' concuerda en masculino con 'lugar' porque Mariana quedó en el puesto número uno."
       },
       {
         "type": "word_order",
@@ -1017,17 +942,7 @@
         "sentence": "O terceiro livro da série é o melhor.",
         "alternatives": [],
         "translation": "El tercer libro de la serie es el mejor.",
-        "explanation": "'Terceiro' concuerda en masculino con 'livro' porque es el libro número tres.",
-        "tokens": [
-          "da",
-          "é",
-          "série",
-          "terceiro",
-          "o",
-          "O",
-          "livro",
-          "melhor"
-        ]
+        "explanation": "'Terceiro' concuerda en masculino con 'livro' porque es el libro número tres."
       },
       {
         "type": "word_order",
@@ -1035,19 +950,7 @@
         "sentence": "A reunião com o senhor Ribeiro é no dia dois.",
         "alternatives": [],
         "translation": "La reunión con el señor Ribeiro es el día dos.",
-        "explanation": "Para las fechas del mes se usa el número cardinal 'dois', salvo el día 1 que usa el ordinal 'primeiro'.",
-        "tokens": [
-          "senhor",
-          "dia",
-          "Ribeiro",
-          "no",
-          "é",
-          "A",
-          "reunião",
-          "o",
-          "dois",
-          "com"
-        ]
+        "explanation": "Para las fechas del mes se usa el número cardinal 'dois', salvo el día 1 que usa el ordinal 'primeiro'."
       },
       {
         "type": "error_correction",
@@ -1662,14 +1565,7 @@
         "sentence": "Que horas são, por favor?",
         "alternatives": [],
         "translation": "¿Qué hora es, por favor?",
-        "explanation": "La pregunta por la hora siempre se hace con el verbo 'ser' en plural: 'Que horas são?'.",
-        "tokens": [
-          "por",
-          "são,",
-          "horas",
-          "favor",
-          "Que"
-        ]
+        "explanation": "La pregunta por la hora siempre se hace con el verbo 'ser' en plural: 'Que horas são?'."
       },
       {
         "type": "word_order",
@@ -1677,19 +1573,7 @@
         "sentence": "A consulta com o médico é às dez da manhã.",
         "alternatives": [],
         "translation": "La consulta con el médico es a las diez de la mañana.",
-        "explanation": "Se usa la contracción 'às' para indicar la hora en que ocurre algo.",
-        "tokens": [
-          "médico",
-          "dez",
-          "A",
-          "da",
-          "com",
-          "é",
-          "manhã",
-          "o",
-          "consulta",
-          "às"
-        ]
+        "explanation": "Se usa la contracción 'às' para indicar la hora en que ocurre algo."
       },
       {
         "type": "word_order",
@@ -1697,16 +1581,7 @@
         "sentence": "São quinze para as três da tarde.",
         "alternatives": [],
         "translation": "Son las tres menos cuarto de la tarde.",
-        "explanation": "Se usa 'para as' para restar minutos a la hora siguiente, como en el ejemplo 'quinze para as três'.",
-        "tokens": [
-          "São",
-          "para",
-          "da",
-          "as",
-          "três",
-          "tarde",
-          "quinze"
-        ]
+        "explanation": "Se usa 'para as' para restar minutos a la hora siguiente, como en el ejemplo 'quinze para as três'."
       },
       {
         "type": "word_order",
@@ -1714,16 +1589,7 @@
         "sentence": "O almoço com Mariana é ao meio-dia.",
         "alternatives": [],
         "translation": "El almuerzo con Mariana es al mediodía.",
-        "explanation": "'Meio-dia' no lleva la palabra 'horas' después y se usa con la preposición 'ao'.",
-        "tokens": [
-          "meio-dia",
-          "ao",
-          "O",
-          "é",
-          "almoço",
-          "Mariana",
-          "com"
-        ]
+        "explanation": "'Meio-dia' no lleva la palabra 'horas' después y se usa con la preposición 'ao'."
       },
       {
         "type": "word_order",
@@ -1731,17 +1597,7 @@
         "sentence": "O voo para São Paulo sai à meia-noite.",
         "alternatives": [],
         "translation": "El vuelo a San Pablo sale a la medianoche.",
-        "explanation": "Se usa la contracción 'à' porque 'meia-noite' es singular y femenino.",
-        "tokens": [
-          "O",
-          "à",
-          "Paulo",
-          "para",
-          "sai",
-          "São",
-          "voo",
-          "meia-noite"
-        ]
+        "explanation": "Se usa la contracción 'à' porque 'meia-noite' es singular y femenino."
       },
       {
         "type": "error_correction",
@@ -2216,6 +2072,1419 @@
             ],
             "correctIndex": 0,
             "explanation": "Marina responde 'São duas horas da tarde agora' cuando la secretaria le pregunta la hora durante la llamada."
+          }
+        ]
+      }
+    ],
+    "dias-semana-meses": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Hoje é sábado. Não trabalho no ___.",
+        "options": [
+          "sábado",
+          "domingo-feira",
+          "quinta-feira",
+          "sábado-feira"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sábado y domingo son los únicos días que no llevan el sufijo '-feira'.",
+        "optionNotes": [
+          "Correcto: coincide con 'hoje é sábado' y sábado no lleva -feira.",
+          "Incorrecto: sería domingo, pero además domingo tampoco lleva -feira.",
+          "Incorrecto: es otro día, no coincide con 'hoje é sábado'.",
+          "Incorrecto: sábado nunca lleva el sufijo -feira."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "A consulta com a médica é ___ quinta-feira.",
+        "options": [
+          "na",
+          "a",
+          "no",
+          "em"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como 'feira' es un sustantivo femenino, se usa el artículo y la preposición en femenino: 'na' (em + a).",
+        "optionNotes": [
+          "Correcto: 'na' concuerda en femenino con 'feira'.",
+          "Incorrecto: falta la preposición 'em' contraída con el artículo.",
+          "Incorrecto: 'no' es masculino y 'feira' es femenino.",
+          "Incorrecto: falta contraer con el artículo; sin contracción no se usa así ante un día específico."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "O Carnaval é ___ fevereiro, geralmente.",
+        "options": [
+          "em",
+          "de",
+          "na",
+          "no"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para hablar de meses se usa siempre la preposición 'em': em fevereiro, em julho, etc.",
+        "optionNotes": [
+          "Correcto: 'em' es la preposición que se usa con los meses.",
+          "Incorrecto: 'de' no es la preposición correcta en esta estructura.",
+          "Incorrecto: 'na' se usa para días, no para meses.",
+          "Incorrecto: 'no' se usa para días, no para meses."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la preposición correcta para completar la oración.",
+        "prompt": "Eu nasci ___ dia dez de abril.",
+        "options": [
+          "a",
+          "em",
+          "na",
+          "no"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para fechas completas se usa 'no dia' (em + o), porque 'dia' es una palabra masculina.",
+        "optionNotes": [
+          "Incorrecto: 'a' no es la preposición correcta aquí.",
+          "Incorrecto: falta el artículo contraído; no puede ir 'em' solo antes de 'dia'.",
+          "Incorrecto: 'na' es femenino, pero 'dia' es masculino.",
+          "Correcto: 'no' es la contracción de 'em + o', y 'dia' es masculino."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el día de la semana correcto.",
+        "sentence": "Hoje é ___. Vou trabalhar cedo com o Rafael.",
+        "hint": "(día que viene después del domingo)",
+        "answers": [
+          "segunda-feira",
+          "segunda"
+        ],
+        "explanation": "El lunes en portugués es 'segunda-feira', y en el habla cotidiana se puede acortar a 'segunda'.",
+        "wrongAnswers": [
+          {
+            "answer": "Segunda-feira",
+            "why": "En portugués los días de la semana se escriben con minúscula."
+          },
+          {
+            "answer": "lunes",
+            "why": "Es la palabra en español; en portugués es 'segunda-feira'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el día correcto.",
+        "sentence": "No ___ eu vou à praia com a Marina.",
+        "hint": "(sábado, el día que viene justo antes del domingo, no lleva -feira)",
+        "answers": [
+          "sábado"
+        ],
+        "explanation": "Sábado y domingo son excepciones: no llevan el sufijo '-feira' que tienen los días de lunes a viernes.",
+        "wrongAnswers": [
+          {
+            "answer": "sábado-feira",
+            "why": "Sábado nunca lleva el sufijo -feira."
+          },
+          {
+            "answer": "domingo",
+            "why": "Aunque domingo también es masculino y no lleva -feira, la pista especifica el día anterior al domingo, es decir, sábado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el mes correcto.",
+        "sentence": "O Natal é em ___.",
+        "hint": "(mes, en minúscula)",
+        "answers": [
+          "dezembro"
+        ],
+        "explanation": "La Navidad se celebra en diciembre, y los meses en portugués siempre se escriben con minúscula.",
+        "wrongAnswers": [
+          {
+            "answer": "Dezembro",
+            "why": "Los meses se escriben con minúscula en portugués, a diferencia del inglés."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición correcta.",
+        "sentence": "A reunião com o Sr. Pedro é ___ quarta-feira.",
+        "hint": "(preposición + artículo femenino, em + a)",
+        "answers": [
+          "na"
+        ],
+        "explanation": "Como 'feira' es femenino, el artículo y la preposición concuerdan en femenino: 'na quarta-feira'.",
+        "wrongAnswers": [
+          {
+            "answer": "no",
+            "why": "Feira es femenino, entonces hay que usar 'na', no 'no'."
+          },
+          {
+            "answer": "em a",
+            "why": "Hay que contraer 'em' con el artículo 'a' en 'na'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición correcta.",
+        "sentence": "As aulas começam ___ janeiro.",
+        "hint": "(preposición para meses)",
+        "answers": [
+          "em"
+        ],
+        "explanation": "Para hablar de meses se usa la preposición 'em': em janeiro, em julho, etc.",
+        "wrongAnswers": [
+          {
+            "answer": "na",
+            "why": "'Na' se usa para días, no para meses."
+          },
+          {
+            "answer": "no",
+            "why": "'No' se usa para días, no para meses."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta.",
+        "sentence": "Meu filho nasceu no ___ cinco de maio.",
+        "hint": "(día, en + artículo masculino)",
+        "answers": [
+          "dia"
+        ],
+        "explanation": "Para fechas completas se usa la estructura 'dia + número + de + mes': no dia cinco de maio.",
+        "wrongAnswers": [
+          {
+            "answer": "data",
+            "why": "'Data' significa fecha pero no se usa en esta estructura; se usa 'no dia + número + de + mês'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A reunião é na quinta-feira de manhã.",
+        "alternatives": [],
+        "translation": "La reunión es el jueves por la mañana.",
+        "explanation": "Se usa 'na' porque 'feira' es femenino: na quinta-feira de manhã.",
+        "tokens": [
+          "quinta-feira",
+          "A",
+          "na",
+          "de",
+          "manhã",
+          "é",
+          "reunião"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Meu aniversário é no dia dois de março.",
+        "alternatives": [],
+        "translation": "Mi cumpleaños es el dos de marzo.",
+        "explanation": "Para fechas completas se usa 'no dia + número + de + mês': no dia dois de março.",
+        "tokens": [
+          "aniversário",
+          "março",
+          "dois",
+          "Meu",
+          "é",
+          "de",
+          "dia",
+          "no"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós vamos viajar para o Brasil em julho.",
+        "alternatives": [],
+        "translation": "Nosotros vamos a viajar a Brasil en julio.",
+        "explanation": "Para hablar de meses se usa la preposición 'em': em julho.",
+        "tokens": [
+          "Nós",
+          "julho",
+          "para",
+          "Brasil",
+          "o",
+          "viajar",
+          "em",
+          "vamos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O médico atende na segunda e na quarta.",
+        "alternatives": [],
+        "translation": "El médico atiende el lunes y el miércoles.",
+        "explanation": "Se usa 'na' con los días porque 'feira' es femenino, aunque esté acortado: na segunda, na quarta.",
+        "tokens": [
+          "médico",
+          "atende",
+          "e",
+          "O",
+          "quarta",
+          "na",
+          "na",
+          "segunda"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Não trabalho nos fins de semana.",
+        "alternatives": [],
+        "translation": "No trabajo los fines de semana.",
+        "explanation": "La expresión 'fins de semana' se usa con la preposición 'nos' (en + os) para hablar de sábados y domingos en general.",
+        "tokens": [
+          "trabalho",
+          "nos",
+          "semana",
+          "Não",
+          "fins",
+          "de"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con días y meses.",
+        "sentence": "Nós vamos sair no sábado-feira.",
+        "answers": [
+          "Nós vamos sair no sábado."
+        ],
+        "explanation": "Sábado y domingo no llevan el sufijo '-feira'; solo lo llevan los días de lunes a viernes.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós vamos sair na sábado-feira.",
+            "why": "Cambia el artículo, pero el error real es agregar '-feira' a sábado, que nunca lo lleva."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con días y meses.",
+        "sentence": "O show é no quinta-feira à noite.",
+        "answers": [
+          "O show é na quinta-feira à noite."
+        ],
+        "explanation": "Como 'feira' es femenino, el artículo correcto es 'na', no 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "O show é no quinta à noite.",
+            "why": "Corrige mal, quitando -feira en vez de corregir el género del artículo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con días y meses.",
+        "sentence": "Nasci na dia vinte de junho.",
+        "answers": [
+          "Nasci no dia vinte de junho."
+        ],
+        "explanation": "'Dia' es una palabra masculina, entonces corresponde 'no dia' (em + o), no 'na dia'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nasci na data vinte de junho.",
+            "why": "Cambia la palabra 'dia' por 'data', pero el error real era el artículo, no el sustantivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Hoy es viernes y tengo una entrevista de trabajo.",
+        "answers": [
+          "Hoje é sexta-feira e eu tenho uma entrevista de emprego.",
+          "Hoje é sexta-feira e tenho uma entrevista de emprego.",
+          "Hoje é sexta e eu tenho uma entrevista de emprego."
+        ],
+        "explanation": "Viernes en portugués es 'sexta-feira', que en el habla cotidiana se puede acortar a 'sexta', y se escribe siempre con minúscula.",
+        "wrongAnswers": [
+          {
+            "answer": "Hoje é viernes e eu tenho uma entrevista de emprego.",
+            "why": "'Viernes' es español; en portugués el día es 'sexta-feira'."
+          },
+          {
+            "answer": "Hoje é Sexta-feira e eu tenho uma entrevista de emprego.",
+            "why": "Los días de la semana se escriben con minúscula en portugués."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El alquiler se paga el día cinco de cada mes.",
+        "answers": [
+          "O aluguel é pago no dia cinco de cada mês.",
+          "Paga-se o aluguel no dia cinco de cada mês."
+        ],
+        "explanation": "Para fechas se usa la estructura 'no dia + número + de + mês', con 'no' porque 'dia' es masculino; además, en portugués la construcción pasiva con 'se' va con el verbo antepuesto ('paga-se'), no con el sujeto antes del 'se' como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "O aluguel se paga na dia cinco de cada mês.",
+            "why": "'Dia' es masculino, entonces corresponde 'no dia', no 'na dia'."
+          },
+          {
+            "answer": "O aluguel se paga no dia cinco de cada mês.",
+            "why": "Es un calco del español; en portugués la construcción reflexiva con 'se' va antes del verbo ('paga-se'), no así."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nos vemos el lunes que viene.",
+        "answers": [
+          "A gente se vê na segunda-feira que vem.",
+          "A gente se vê na segunda que vem.",
+          "Nós nos vemos na segunda-feira que vem."
+        ],
+        "explanation": "Para decir 'el lunes' se usa 'na segunda-feira', con el artículo femenino porque 'feira' es femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "A gente se vê no segunda-feira que vem.",
+            "why": "Feira es femenino, entonces el artículo correcto es 'na', no 'no'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Mi cumpleaños es el dos de mayo.",
+        "answers": [
+          "Meu aniversário é no dia dois de maio.",
+          "Meu aniversário é dia dois de maio."
+        ],
+        "explanation": "Las fechas completas se dicen 'dia + número + de + mes': no dia dois de maio.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu aniversário é no dia dois de Maio.",
+            "why": "Los meses se escriben con minúscula en portugués."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "No trabajamos los domingos.",
+        "answers": [
+          "Nós não trabalhamos nos domingos.",
+          "A gente não trabalha nos domingos."
+        ],
+        "explanation": "Domingo es una excepción y nunca lleva el sufijo '-feira', a diferencia de los días de lunes a viernes.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós não trabalhamos nos domingos-feira.",
+            "why": "Domingo nunca lleva el sufijo -feira."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "La clase de portugués empieza el martes.",
+        "answers": [
+          "A aula de português começa na terça-feira.",
+          "A aula de português começa na terça."
+        ],
+        "explanation": "Martes es 'terça-feira' y se usa con el artículo femenino 'na' porque 'feira' es femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "A aula de português começa no terça-feira.",
+            "why": "Feira es femenino, entonces corresponde 'na', no 'no'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A consulta com o médico é na quinta-feira.",
+        "alternatives": [
+          "A consulta com o médico é na quinta."
+        ],
+        "translation": "La consulta con el médico es el jueves.",
+        "explanation": "En el habla cotidiana 'quinta-feira' se suele acortar a 'quinta'; prestá atención a si el locutor dice la forma completa o la corta."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "O aniversário da Ana é em julho.",
+        "alternatives": [],
+        "translation": "El cumpleaños de Ana es en julio.",
+        "explanation": "'julho' y 'junho' se parecen mucho al oído porque solo cambia una consonante palatal; fijate si suena nasal (nh) o lateral (lh)."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Nós viajamos para o Rio no dia dois de maio.",
+        "alternatives": [
+          "Nós viajamos para o Rio no dia 2 de maio."
+        ],
+        "translation": "Viajamos a Río el día dos de mayo.",
+        "explanation": "'dois' puede confundirse con 'doze' si no se escucha bien la terminación; recordá que la fecha completa sigue el patrón 'dia + número + de + mes'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A loja fecha todos os domingos.",
+        "alternatives": [],
+        "translation": "La tienda cierra todos los domingos.",
+        "explanation": "'domingos' en plural no lleva el sufijo '-feira', a diferencia de los días de lunes a viernes."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál de las dos es.",
+        "pair": [
+          "julho",
+          "junho"
+        ],
+        "target": 1,
+        "meanings": [
+          "julio",
+          "junio"
+        ],
+        "explanation": "La diferencia está en 'nh' (sonido nasal, como en 'señor') frente a 'lh' (sonido lateral suave, como la 'll' italiana); no son como ninguna letra del español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál de las dos es.",
+        "pair": [
+          "sexta",
+          "sesta"
+        ],
+        "target": 1,
+        "meanings": [
+          "viernes",
+          "siesta"
+        ],
+        "explanation": "La diferencia está en la vocal: 'sexta' suena con un leve diptongo 'ei' (como 'seis-ta'), mientras que 'sesta' tiene una 'e' abierta simple, sin ese deslizamiento; hay que prestar atención a ese matiz vocálico antes de la 's'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál de las dos es.",
+        "pair": [
+          "quarta",
+          "quarto"
+        ],
+        "target": 0,
+        "meanings": [
+          "miércoles",
+          "cuarto (habitación)"
+        ],
+        "explanation": "El cambio está solo en la vocal final, 'a' abierta frente a 'o' cerrada; en portugués esa vocal final sí modifica el significado, a diferencia del español."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre los días que mencionan.",
+        "situation": "Marina y Clara son amigas y hablan por teléfono para organizar una salida al cine en São Paulo.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Oi, Clara! Vamos ao cinema?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Oi, Marina! Que dia?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Na quinta-feira, pode?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Quinta-feira não. Trabalho até tarde."
+          },
+          {
+            "speaker": "Marina",
+            "text": "E na sexta-feira?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Sexta-feira é ótimo! Vamos sim."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué día propone Marina primero para ir al cine?",
+            "options": [
+              "jueves",
+              "lunes",
+              "sábado",
+              "viernes"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marina dice 'Na quinta-feira', y 'quinta-feira' significa jueves en portugués."
+          },
+          {
+            "prompt": "¿Por qué Clara no puede ir el jueves?",
+            "options": [
+              "Porque viaja",
+              "Porque no quiere",
+              "Porque está enferma",
+              "Porque trabaja hasta tarde"
+            ],
+            "correctIndex": 3,
+            "explanation": "Clara responde 'Trabalho até tarde', explicando que ese día trabaja hasta tarde."
+          },
+          {
+            "prompt": "¿Qué día finalmente quedan en ir al cine?",
+            "options": [
+              "domingo",
+              "jueves",
+              "sábado",
+              "viernes"
+            ],
+            "correctIndex": 3,
+            "explanation": "Clara acepta la propuesta diciendo 'Sexta-feira é ótimo! Vamos sim', es decir, el viernes."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre los meses y las fechas que mencionan.",
+        "situation": "Pedro y Luísa son compañeros de trabajo y charlan en la oficina en Rio de Janeiro sobre los cumpleaños.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Luísa, qual é o seu aniversário?"
+          },
+          {
+            "speaker": "Luísa",
+            "text": "Meu aniversário é em março."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Que dia de março?"
+          },
+          {
+            "speaker": "Luísa",
+            "text": "No dia dez de março."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Ah, e o aniversário do Carlos é em abril."
+          },
+          {
+            "speaker": "Luísa",
+            "text": "Sim, no dia vinte de abril."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿En qué mes es el cumpleaños de Luísa?",
+            "options": [
+              "abril",
+              "mayo",
+              "marzo",
+              "junio"
+            ],
+            "correctIndex": 2,
+            "explanation": "Luísa dice 'Meu aniversário é em março', y 'março' significa marzo."
+          },
+          {
+            "prompt": "¿Qué día de marzo es el cumpleaños de Luísa?",
+            "options": [
+              "el cinco",
+              "el quince",
+              "el veinte",
+              "el diez"
+            ],
+            "correctIndex": 3,
+            "explanation": "Luísa responde 'No dia dez de março', es decir, el día diez."
+          },
+          {
+            "prompt": "¿Cuándo es el cumpleaños de Carlos?",
+            "options": [
+              "el veinte de abril",
+              "el veinte de marzo",
+              "el diez de abril",
+              "el diez de marzo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Luísa dice que el cumpleaños de Carlos es 'no dia vinte de abril', es decir, el veinte de abril."
+          }
+        ]
+      }
+    ],
+    "organizar-una-cita": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Eu quero ___ uma consulta com a médica.",
+        "options": [
+          "fazer",
+          "marcar",
+          "criar",
+          "colocar"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con citas y compromisos se usa el verbo 'marcar', no 'fazer'.",
+        "optionNotes": [
+          "Incorrecto: es un calco del español 'hacer una cita', pero en portugués no se usa así.",
+          "Correcto: con citas y compromisos se usa el verbo 'marcar'.",
+          "Incorrecto: 'criar' significa 'crear', no corresponde a agendar citas.",
+          "Incorrecto: 'colocar' significa 'poner', no se usa para citas."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Posso ___ a consulta para sexta-feira?",
+        "options": [
+          "trocar",
+          "remarcar",
+          "mudar",
+          "cambiar"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para cambiar la fecha de un compromiso ya fijado se usa 'remarcar'.",
+        "optionNotes": [
+          "Incorrecto: 'trocar' significa 'intercambiar', no se usa para reprogramar una cita.",
+          "Correcto: 'remarcar' se usa para cambiar la fecha de una cita ya fijada.",
+          "Incorrecto: 'mudar' no es el verbo que se usa para reprogramar citas en portugués.",
+          "Incorrecto: 'cambiar' es una palabra en español, no existe en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Você está livre ___ quinta-feira?",
+        "options": [
+          "a",
+          "no",
+          "na",
+          "em"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Feira' es femenino, por eso se usa 'na' (em + a), no 'no'.",
+        "optionNotes": [
+          "Incorrecto: falta la preposición 'em' contraída.",
+          "Incorrecto: concordancia equivocada, 'feira' es femenino.",
+          "Correcto: 'feira' es femenino, la preposición concuerda en femenino.",
+          "Incorrecto: falta la contracción con el artículo femenino 'a'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente el diálogo.",
+        "prompt": "— Então nos encontramos às cinco. — ___!",
+        "options": [
+          "Pronto",
+          "Fazer",
+          "Combinado",
+          "Marcado"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Combinado' (o 'Fechado') es la forma natural de confirmar un plan en portugués.",
+        "optionNotes": [
+          "Incorrecto: no se usa como expresión de confirmación en este contexto.",
+          "Incorrecto: es un verbo en infinitivo, no una expresión de confirmación.",
+          "Correcto: 'combinado' se usa para confirmar un plan.",
+          "Incorrecto: no es la expresión fija para confirmar, aunque suena relacionado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la despedida.",
+        "prompt": "Tchau, Lucas! ___ sexta!",
+        "options": [
+          "Em",
+          "Até",
+          "No",
+          "Para"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para despedirse mencionando el próximo encuentro se usa 'até' + el día.",
+        "optionNotes": [
+          "Incorrecto: tampoco se usa en esta expresión fija.",
+          "Correcto: 'até' + día se usa para despedirse mencionando el próximo encuentro.",
+          "Incorrecto: no corresponde gramaticalmente en esta expresión.",
+          "Incorrecto: no se usa así para despedirse."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción que completa correctamente la oración.",
+        "prompt": "Vamos ___ a consulta para sábado?",
+        "options": [
+          "colocar",
+          "marcar",
+          "criar",
+          "fazer"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Marcar' es el verbo correcto para fijar un compromiso como una consulta.",
+        "optionNotes": [
+          "Incorrecto: no corresponde al contexto de agendar.",
+          "Correcto: 'marcar' se usa para fijar un compromiso como una consulta.",
+          "Incorrecto: no se usa para agendar compromisos.",
+          "Incorrecto: es un calco del español 'hacer una cita', no corresponde para agendar compromisos."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el verbo correcto.",
+        "sentence": "Eu quero ___ uma consulta com o dentista.",
+        "hint": "(marcar)",
+        "answers": [
+          "marcar"
+        ],
+        "explanation": "Con citas se usa el verbo 'marcar'.",
+        "wrongAnswers": [
+          {
+            "answer": "fazer",
+            "why": "'Fazer' es un calco del español 'hacer una cita'; en portugués se usa 'marcar'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la contracción correcta.",
+        "sentence": "Você está livre ___ quinta-feira de manhã?",
+        "hint": "(contracción de em + a)",
+        "answers": [
+          "na"
+        ],
+        "explanation": "'Feira' es femenino, así que la contracción correcta es 'na' (em + a).",
+        "wrongAnswers": [
+          {
+            "answer": "no",
+            "why": "'Feira' es femenino, por eso corresponde 'na', no 'no'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el verbo correcto.",
+        "sentence": "Prefiro ___ a reunião para a semana que vem.",
+        "hint": "(remarcar)",
+        "answers": [
+          "remarcar"
+        ],
+        "explanation": "'Remarcar' es el verbo correcto para reprogramar un compromiso ya fijado.",
+        "wrongAnswers": [
+          {
+            "answer": "mudar",
+            "why": "Para cambiar la fecha de un compromiso ya fijado se usa 'remarcar', no 'mudar'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el diálogo con la expresión de confirmación correcta.",
+        "sentence": "— Nos encontramos às três. — ___, até lá!",
+        "hint": "(expresión de confirmación)",
+        "answers": [
+          "Combinado",
+          "Fechado"
+        ],
+        "explanation": "'Combinado' o 'Fechado' son las expresiones naturales para confirmar un plan.",
+        "wrongAnswers": [
+          {
+            "answer": "Marcado",
+            "why": "No es la expresión fija para confirmar un plan; se usa 'combinado' o 'fechado'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la despedida con la palabra correcta.",
+        "sentence": "Tchau, Dona Marta! ___ segunda!",
+        "hint": "(hasta)",
+        "answers": [
+          "Até"
+        ],
+        "explanation": "Para despedirse mencionando el próximo encuentro se usa 'até' + el día.",
+        "wrongAnswers": [
+          {
+            "answer": "Para",
+            "why": "No se usa 'para' en esta expresión de despedida; corresponde 'até' + el día."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el verbo correcto.",
+        "sentence": "Podemos ___ o encontro para as quatro da tarde?",
+        "hint": "(marcar)",
+        "answers": [
+          "marcar"
+        ],
+        "explanation": "Para fijar un encuentro se usa el verbo 'marcar'.",
+        "wrongAnswers": [
+          {
+            "answer": "fazer",
+            "why": "'Fazer' no se usa para fijar un encuentro en portugués; corresponde 'marcar'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Você está livre na quinta-feira de manhã?",
+        "alternatives": [],
+        "translation": "¿Estás libre el jueves por la mañana?",
+        "explanation": "La preposición 'na' concuerda en femenino con 'feira'.",
+        "tokens": [
+          "está",
+          "na",
+          "livre",
+          "quinta-feira",
+          "de",
+          "manhã",
+          "Você"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Podemos marcar o jantar para sábado?",
+        "alternatives": [],
+        "translation": "¿Podemos fijar la cena para el sábado?",
+        "explanation": "Se usa 'marcar' para fijar un compromiso como una cena.",
+        "tokens": [
+          "Podemos",
+          "sábado",
+          "marcar",
+          "o",
+          "jantar",
+          "para"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Prefiro remarcar a consulta para sexta.",
+        "alternatives": [],
+        "translation": "Prefiero reprogramar la consulta para el viernes.",
+        "explanation": "'Remarcar' se usa para cambiar la fecha de una cita ya fijada.",
+        "tokens": [
+          "a",
+          "para",
+          "Prefiro",
+          "remarcar",
+          "consulta",
+          "sexta"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Que tal nos encontrarmos no sábado à tarde?",
+        "alternatives": [],
+        "translation": "¿Qué te parece si nos encontramos el sábado por la tarde?",
+        "explanation": "'Que tal' más infinitivo se usa para proponer un plan de manera informal.",
+        "tokens": [
+          "sábado",
+          "encontrarmos",
+          "Que",
+          "à",
+          "tarde",
+          "no",
+          "nos",
+          "tal"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Posso confirmar o horário por mensagem amanhã?",
+        "alternatives": [],
+        "translation": "¿Puedo confirmar el horario por mensaje mañana?",
+        "explanation": "'Confirmar' se usa para asegurar un compromiso que ya fue propuesto.",
+        "tokens": [
+          "Posso",
+          "mensagem",
+          "amanhã",
+          "o",
+          "por",
+          "horário",
+          "confirmar"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con el verbo de citas y corregí la oración.",
+        "sentence": "Eu faço uma consulta com o médico.",
+        "answers": [
+          "Eu marco uma consulta com o médico."
+        ],
+        "explanation": "Con citas se usa el verbo 'marcar', no 'fazer'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu faço um médico.",
+            "why": "Esto no corrige el verbo correcto; además cambia el sentido de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con reprogramar una cita y corregí la oración.",
+        "sentence": "Posso mudar a consulta para quinta-feira?",
+        "answers": [
+          "Posso remarcar a consulta para quinta-feira?"
+        ],
+        "explanation": "Para reprogramar una cita ya fijada se usa 'remarcar', no 'mudar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso mudar a quinta-feira?",
+            "why": "Esto no corrige el verbo correcto; se debe usar 'remarcar' para reprogramar una cita."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de concordancia y corregí la oración.",
+        "sentence": "Está livre no quinta-feira à tarde?",
+        "answers": [
+          "Está livre na quinta-feira à tarde?"
+        ],
+        "explanation": "'Feira' es femenino, por eso corresponde 'na', no 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "Está livre no quinta-feira de tarde?",
+            "why": "Esto corrige 'de tarde' en vez de la preposición 'no/na', que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error relacionado con el verbo de citas y corregí la oración.",
+        "sentence": "Vamos fazer o encontro para sábado?",
+        "answers": [
+          "Vamos marcar o encontro para sábado?"
+        ],
+        "explanation": "Para fijar un encuentro se usa 'marcar', no 'fazer'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos fazer um encontro sábado?",
+            "why": "No corrige el verbo correcto; sigue usando 'fazer' en vez de 'marcar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error en la despedida y corregí la oración.",
+        "sentence": "Tchau, até no sexta!",
+        "answers": [
+          "Tchau, até sexta!"
+        ],
+        "explanation": "La expresión fija es 'até' + el día, sin preposición adicional.",
+        "wrongAnswers": [
+          {
+            "answer": "Tchau, até na sexta!",
+            "why": "No se usa preposición después de 'até' en esta expresión fija de despedida."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Estás libre el jueves por la tarde?",
+        "answers": [
+          "Você está livre na quinta-feira à tarde?",
+          "Você está livre na quinta-feira de tarde?"
+        ],
+        "explanation": "Se usa 'na' porque 'feira' es femenino, y 'à tarde' para indicar el momento del día.",
+        "wrongAnswers": [
+          {
+            "answer": "Você está livre no quinta-feira à tarde?",
+            "why": "'Feira' es femenino, corresponde 'na', no 'no'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Quiero sacar un turno con la doctora.",
+        "answers": [
+          "Eu quero marcar uma consulta com a médica.",
+          "Quero marcar uma consulta com a médica."
+        ],
+        "explanation": "Con citas médicas se usa el verbo 'marcar', no 'fazer'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero fazer uma consulta com a médica.",
+            "why": "'Fazer' es un calco del español; en portugués se usa 'marcar' para citas."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Podemos quedar para el viernes a las cuatro?",
+        "answers": [
+          "Podemos marcar para sexta-feira às quatro?",
+          "Podemos marcar para a sexta-feira às quatro?"
+        ],
+        "explanation": "Para proponer un encuentro se usa el verbo 'marcar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Podemos fazer para sexta-feira às quatro?",
+            "why": "'Fazer' no se usa para proponer un encuentro; corresponde 'marcar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Prefiero reprogramar la reunión para la semana que viene.",
+        "answers": [
+          "Prefiro remarcar a reunião para a semana que vem.",
+          "Prefiro remarcar a reunião para a próxima semana."
+        ],
+        "explanation": "'Remarcar' es el verbo que se usa para cambiar la fecha de un compromiso ya fijado.",
+        "wrongAnswers": [
+          {
+            "answer": "Prefiro mudar a reunião para a semana que vem.",
+            "why": "'Mudar' no es el verbo típico para reprogramar una cita; corresponde 'remarcar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "De acuerdo, ¡hasta el lunes!",
+        "answers": [
+          "Combinado, até segunda!",
+          "Fechado, até segunda!"
+        ],
+        "explanation": "'Combinado' o 'Fechado' confirman el plan, y 'até' + el día se usa para despedirse.",
+        "wrongAnswers": [
+          {
+            "answer": "Combinado, até na segunda!",
+            "why": "No se usa preposición después de 'até' en esta expresión fija."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Puedo confirmar el horario por mensaje?",
+        "answers": [
+          "Posso confirmar o horário por mensagem?",
+          "Eu posso confirmar o horário por mensagem?"
+        ],
+        "explanation": "Para asegurar un compromiso ya propuesto se usa el verbo 'confirmar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso marcar o horário por mensagem?",
+            "why": "'Marcar' significa fijar un nuevo horario, no confirmar uno ya existente; aquí corresponde 'confirmar'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você está livre na quinta-feira de manhã?",
+        "alternatives": [
+          "Você está livre na quinta de manhã?"
+        ],
+        "translation": "¿Estás libre el jueves por la mañana?",
+        "explanation": "La preposición 'na' concuerda en femenino con 'feira'; muchos la confunden con 'no' porque en español decimos 'el jueves'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Podemos marcar a consulta para as dez?",
+        "alternatives": [],
+        "translation": "¿Podemos fijar la consulta para las diez?",
+        "explanation": "Se usa el verbo 'marcar' para compromisos y consultas, no 'fazer'; además 'as dez' lleva artículo plural femenino."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Prefiro remarcar para a semana que vem.",
+        "alternatives": [],
+        "translation": "Prefiero reprogramar para la semana que viene.",
+        "explanation": "Para cambiar una cita ya fijada se usa 'remarcar', no 'mudar'; 'a semana que vem' es una expresión fija para 'la semana que viene'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Tudo bem, então está combinado para sexta-feira.",
+        "alternatives": [
+          "Tudo bem, então está combinado para a sexta-feira."
+        ],
+        "translation": "Bien, entonces queda confirmado para el viernes.",
+        "explanation": "'Combinado' se usa para confirmar un plan; 'sexta-feira' puede llevar o no el artículo 'a' sin cambiar el sentido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "manha",
+          "manhã"
+        ],
+        "target": 1,
+        "meanings": [
+          "capricho (rabieta)",
+          "mañana"
+        ],
+        "explanation": "La nasalización marca la diferencia: en 'manhã' el sonido final sale por la nariz, en 'manha' no."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "carro",
+          "caro"
+        ],
+        "target": 0,
+        "meanings": [
+          "auto",
+          "costoso"
+        ],
+        "explanation": "El 'r' simple entre vocales suena suave, como la 'r' de 'pero' en español; el 'rr' suena fuerte y vibrante, como la 'rr' de 'perro'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "cacería",
+          "casa"
+        ],
+        "explanation": "En portugués brasileño, la 's' entre vocales suena como 'z', mientras que 'ç' siempre suena como 's'."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre cómo Ana y Pedro organizan su encuentro.",
+        "text": "Ana escreve uma mensagem para o amigo Pedro. Ela quer marcar um encontro com ele. Ana pergunta: Pedro, você está livre na quinta-feira? Pedro responde que trabalha até às seis da tarde. Ana diz: Podemos marcar para as sete da noite? Pedro gosta da ideia e diz: Combinado! Vamos jantar juntos. No dia seguinte, Pedro escreve de novo. Ele tem um problema no trabalho e precisa remarcar o encontro. Ele pergunta: Posso remarcar para sexta-feira? Ana concorda e responde: Tudo bem, até sexta! Os dois ficam felizes com o novo horário. Pedro promete chegar na hora certa.",
+        "questions": [
+          {
+            "prompt": "¿Para qué día Ana propone primero el encuentro?",
+            "options": [
+              "Sexta-feira",
+              "Domingo",
+              "Sábado",
+              "Quinta-feira"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana pregunta si Pedro está livre na quinta-feira, por eso esa es la primera propuesta de día."
+          },
+          {
+            "prompt": "¿Por qué Pedro necesita remarcar el encuentro?",
+            "options": [
+              "Porque se va de viaje",
+              "Porque está enfermo",
+              "Porque tiene un problema en el trabajo",
+              "Porque se olvidó"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que Pedro tem um problema no trabalho e precisa remarcar o encontro."
+          },
+          {
+            "prompt": "¿Qué palabra usa Pedro para confirmar que acepta la primera propuesta de Ana?",
+            "options": [
+              "Até logo!",
+              "Tudo bem?",
+              "Combinado!",
+              "Obrigado!"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro responde Combinado! Vamos jantar juntos, forma habitual de confirmar un plan en portugués."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la consulta de Marcos y respondé las preguntas.",
+        "text": "Marcos liga para a clínica porque precisa marcar uma consulta com o dentista. A recepcionista pergunta: Você está livre na segunda-feira de manhã? Marcos responde que trabalha até meio-dia. Ela oferece outro horário: Podemos marcar para as três da tarde? Marcos gosta e diz: Combinado, muito obrigado! No dia da consulta, Marcos fica doente e precisa remarcar. Ele liga de novo e pergunta: Posso remarcar para quarta-feira? A recepcionista confirma o novo dia e horário. Marcos agradece e diz: Até quarta-feira, então! Ele anota a nova data no celular para não esquecer.",
+        "questions": [
+          {
+            "prompt": "¿Para qué día de la semana la recepcionista propone primero la consulta?",
+            "options": [
+              "Terça-feira",
+              "Segunda-feira",
+              "Quinta-feira",
+              "Quarta-feira"
+            ],
+            "correctIndex": 1,
+            "explanation": "La recepcionista pregunta si Marcos está livre na segunda-feira de manhã, esa es la primera propuesta."
+          },
+          {
+            "prompt": "¿Por qué Marcos necesita remarcar la consulta?",
+            "options": [
+              "Porque se olvida",
+              "Porque se enferma",
+              "Porque trabaja",
+              "Porque viaja"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice que Marcos fica doente e precisa remarcar, por eso cambia el día."
+          },
+          {
+            "prompt": "¿Para qué día quedó finalmente reprogramada la consulta?",
+            "options": [
+              "Sexta-feira",
+              "Quarta-feira",
+              "Segunda-feira",
+              "Terça-feira"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos pregunta si puede remarcar para quarta-feira y la recepcionista confirma ese día."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre el encuentro entre Julia y Camila.",
+        "situation": "Julia, una turista argentina en Río de Janeiro, llama por teléfono a su amiga brasileña Camila para organizar un encuentro.",
+        "lines": [
+          {
+            "speaker": "Camila",
+            "text": "Oi, Julia! Tudo bem?"
+          },
+          {
+            "speaker": "Julia",
+            "text": "Oi, Camila! Tudo ótimo. Você está livre amanhã?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Estou sim! Que tal nos encontrarmos de manhã?"
+          },
+          {
+            "speaker": "Julia",
+            "text": "Podemos marcar para as dez horas?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Combinado! Vamos tomar um café."
+          },
+          {
+            "speaker": "Julia",
+            "text": "Perfeito! Onde nos encontramos?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Na praça perto do seu hotel."
+          },
+          {
+            "speaker": "Julia",
+            "text": "Até amanhã, então!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿A qué hora quedan en encontrarse?",
+            "options": [
+              "A las once",
+              "A las nueve",
+              "A las doce",
+              "A las diez"
+            ],
+            "correctIndex": 3,
+            "explanation": "Julia propone marcar para as dez horas y Camila acepta diciendo Combinado."
+          },
+          {
+            "prompt": "¿Dónde van a encontrarse?",
+            "options": [
+              "En un café del centro",
+              "En la plaza cerca del hotel de Julia",
+              "En la casa de Camila",
+              "En la playa"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila dice na praça perto do seu hotel, indicando el lugar del encuentro."
+          },
+          {
+            "prompt": "¿Qué van a hacer juntas?",
+            "options": [
+              "Ver una película",
+              "Tomar un café",
+              "Pasear por la playa",
+              "Almorzar"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila dice vamos tomar um café al confirmar el plan."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo y respondé las preguntas sobre la consulta de Roberto.",
+        "situation": "Roberto llama al consultorio del doctor Lima, en San Pablo, para reprogramar una consulta médica.",
+        "lines": [
+          {
+            "speaker": "Recepcionista",
+            "text": "Consultório do doutor Lima, bom dia."
+          },
+          {
+            "speaker": "Roberto",
+            "text": "Bom dia! Preciso remarcar minha consulta."
+          },
+          {
+            "speaker": "Recepcionista",
+            "text": "Claro. Qual é o seu nome?"
+          },
+          {
+            "speaker": "Roberto",
+            "text": "Roberto Fernandes. A consulta era na terça-feira."
+          },
+          {
+            "speaker": "Recepcionista",
+            "text": "Você está livre na quinta-feira à tarde?"
+          },
+          {
+            "speaker": "Roberto",
+            "text": "Estou sim. Podemos marcar para as quatro horas?"
+          },
+          {
+            "speaker": "Recepcionista",
+            "text": "Perfeito, está marcado para quinta-feira às quatro."
+          },
+          {
+            "speaker": "Roberto",
+            "text": "Combinado! Até quinta-feira."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Por qué llama Roberto al consultorio?",
+            "options": [
+              "Para remarcar su consulta",
+              "Para cancelar definitivamente",
+              "Para preguntar la dirección",
+              "Para pedir un análisis"
+            ],
+            "correctIndex": 0,
+            "explanation": "Roberto dice que precisa remarcar minha consulta, es decir, llama para cambiar la fecha."
+          },
+          {
+            "prompt": "¿Para qué día estaba la consulta originalmente?",
+            "options": [
+              "Quarta-feira",
+              "Quinta-feira",
+              "Sexta-feira",
+              "Terça-feira"
+            ],
+            "correctIndex": 3,
+            "explanation": "Roberto explica que a consulta era na terça-feira, ese era el día original."
+          },
+          {
+            "prompt": "¿Para qué día y hora quedó reprogramada la consulta?",
+            "options": [
+              "Sexta-feira às quatro horas",
+              "Terça-feira às quatro horas",
+              "Quinta-feira às quatro horas",
+              "Quinta-feira às três horas"
+            ],
+            "correctIndex": 2,
+            "explanation": "La recepcionista confirma que está marcado para quinta-feira às quatro, ese es el nuevo horario."
           }
         ]
       }

@@ -1,0 +1,3152 @@
+{
+  "subtopics": {
+    "comida-e-bebida": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Tomás pede um ___ de laranja no café da manhã.",
+        "options": [
+          "vinho",
+          "suco",
+          "sumo",
+          "água"
+        ],
+        "correctIndex": 1,
+        "explanation": "En Brasil, 'jugo' se dice 'suco'; 'sumo' es la forma usada en Portugal.",
+        "optionNotes": [
+          "Incorrecto: 'vinho' es vino, no tiene sentido en el desayuno con naranja.",
+          "Correcto: en Brasil se dice 'suco' para referirse al jugo.",
+          "Incorrecto: 'sumo' es la palabra que se usa en Portugal, no en Brasil.",
+          "Incorrecto: 'água' es agua, no jugo de naranja."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Eu gosto ___ arroz com feijão.",
+        "options": [
+          "de",
+          "para",
+          "em",
+          "que"
+        ],
+        "correctIndex": 0,
+        "explanation": "El verbo 'gostar' siempre necesita la preposición 'de' antes del sustantivo que indica lo que gusta.",
+        "optionNotes": [
+          "Correcto: el verbo 'gostar' siempre lleva la preposición 'de' antes del sustantivo.",
+          "Incorrecto: 'para' no se usa después de 'gostar' en este sentido.",
+          "Incorrecto: la preposición correcta después de 'gostar' es 'de', no 'em'.",
+          "Incorrecto: 'que' no es una preposición válida después de 'gostar' en este caso."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "___ leite está na geladeira.",
+        "options": [
+          "A",
+          "As",
+          "Os",
+          "O"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Leite' es masculino en portugués, aunque en español 'la leche' sea femenino; por eso se usa 'o leite'.",
+        "optionNotes": [
+          "Incorrecto: en español 'la leche' es femenino, pero en portugués 'leite' es masculino.",
+          "Incorrecto: 'leite' es masculino y singular, no corresponde 'as'.",
+          "Incorrecto: 'leite' está en singular, no corresponde el plural 'os'.",
+          "Correcto: 'leite' es masculino en portugués, entonces se usa 'o'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Carla perguntou: – Você quer ___ ou suco?",
+        "options": [
+          "pão",
+          "frango",
+          "arroz",
+          "água"
+        ],
+        "correctIndex": 3,
+        "explanation": "La pregunta compara dos bebidas, entonces la opción correcta tiene que ser otra bebida como 'água'.",
+        "optionNotes": [
+          "Incorrecto: 'pão' es una comida, no una bebida.",
+          "Incorrecto: 'frango' es una comida, no una bebida.",
+          "Incorrecto: 'arroz' es una comida, no una bebida.",
+          "Correcto: 'água' es una bebida, igual que 'suco', y tiene sentido en la pregunta."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Tomás não come carne vermelha; ele prefere comer ___.",
+        "options": [
+          "vinho",
+          "peixe",
+          "suco",
+          "leite"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Peixe' es una comida (pescado) y funciona como alternativa a la carne roja en la oración.",
+        "optionNotes": [
+          "Incorrecto: 'vinho' es una bebida, no una comida.",
+          "Correcto: 'peixe' es una comida alternativa a la carne roja.",
+          "Incorrecto: 'suco' es una bebida, no una comida.",
+          "Incorrecto: 'leite' es una bebida, no una comida."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "Vamos tomar ___ cerveja no bar?",
+        "options": [
+          "o",
+          "um",
+          "a",
+          "uma"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Cerveja' es femenino, entonces con el indefinido se dice 'uma cerveja'.",
+        "optionNotes": [
+          "Incorrecto: 'o' es masculino y definido, no corresponde a 'cerveja'.",
+          "Incorrecto: 'cerveja' es femenino, no corresponde el masculino 'um'.",
+          "Incorrecto: 'a' es un artículo definido; para una invitación general se usa el indefinido 'uma'.",
+          "Correcto: 'cerveja' es femenino, entonces el indefinido correcto es 'uma'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición correcta después de 'gostar'.",
+        "sentence": "Eu gosto ___ arroz com feijão.",
+        "hint": "(preposición que acompaña siempre a 'gostar')",
+        "answers": [
+          "de"
+        ],
+        "explanation": "El verbo 'gostar' siempre lleva la preposición 'de' antes del sustantivo que indica lo que gusta.",
+        "wrongAnswers": [
+          {
+            "answer": "em",
+            "why": "la preposición correcta después de 'gostar' es 'de', no 'em'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el artículo correcto.",
+        "sentence": "___ leite estava quente para o café da manhã.",
+        "hint": "(artículo definido masculino)",
+        "answers": [
+          "O"
+        ],
+        "explanation": "'Leite' es masculino en portugués, entonces se usa el artículo 'o'.",
+        "wrongAnswers": [
+          {
+            "answer": "A",
+            "why": "'leite' es masculino en portugués, aunque 'la leche' sea femenino en español."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta para 'jugo' en Brasil.",
+        "sentence": "Tomás pediu um ___ de laranja no bar.",
+        "hint": "(jugo, en Brasil)",
+        "answers": [
+          "suco"
+        ],
+        "explanation": "En Brasil, 'jugo' se dice 'suco'; 'sumo' es la forma usada en Portugal.",
+        "wrongAnswers": [
+          {
+            "answer": "sumo",
+            "why": "'sumo' se usa en Portugal; en Brasil se dice 'suco'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta para 'porotos'.",
+        "sentence": "O prato típico do Brasil é arroz com ___.",
+        "hint": "(porotos)",
+        "answers": [
+          "feijão"
+        ],
+        "explanation": "'Feijão' es la palabra en portugués para 'porotos'; el plato 'arroz com feijão' es muy típico en Brasil.",
+        "wrongAnswers": [
+          {
+            "answer": "feijon",
+            "why": "en portugués la palabra se escribe 'feijão', con 'j' y 'ã' finales, no 'feijon'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta para 'pollo'.",
+        "sentence": "Tomás prefere comer ___ no almoço.",
+        "hint": "(pollo)",
+        "answers": [
+          "frango"
+        ],
+        "explanation": "'Frango' es la palabra en portugués para 'pollo' como alimento.",
+        "wrongAnswers": [
+          {
+            "answer": "polo",
+            "why": "en portugués 'pollo' se dice 'frango'; 'polo' no existe con ese significado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la palabra correcta para 'cerveza'.",
+        "sentence": "Vou tomar uma ___ gelada depois do trabalho.",
+        "hint": "(cerveza)",
+        "answers": [
+          "cerveja"
+        ],
+        "explanation": "'Cerveja' es la palabra en portugués para 'cerveza'; se escribe con 'j', no con 'z'.",
+        "wrongAnswers": [
+          {
+            "answer": "cerveza",
+            "why": "en portugués se escribe 'cerveja', con 'j', no 'cerveza' como en español."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Eu gosto de arroz com feijão.",
+        "alternatives": [],
+        "translation": "Me gusta el arroz con porotos.",
+        "explanation": "El verbo 'gostar' siempre necesita la preposición 'de' antes del sustantivo.",
+        "tokens": [
+          "com",
+          "gosto",
+          "arroz",
+          "feijão",
+          "Eu",
+          "de"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Você quer água ou suco?",
+        "alternatives": [],
+        "translation": "¿Querés agua o jugo?",
+        "explanation": "En Brasil, 'jugo' se dice 'suco'; la pregunta ofrece elegir entre dos bebidas.",
+        "tokens": [
+          "ou",
+          "Você",
+          "quer",
+          "água",
+          "suco"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "O leite está na geladeira da cozinha.",
+        "alternatives": [],
+        "translation": "La leche está en la heladera de la cocina.",
+        "explanation": "'Leite' es masculino en portugués, entonces se usa el artículo 'o'.",
+        "tokens": [
+          "da",
+          "na",
+          "leite",
+          "está",
+          "O",
+          "cozinha",
+          "geladeira"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Tomás não come carne vermelha.",
+        "alternatives": [],
+        "translation": "Tomás no come carne roja.",
+        "explanation": "'Carne vermelha' es la expresión para 'carne roja' en portugués.",
+        "tokens": [
+          "carne",
+          "come",
+          "não",
+          "vermelha",
+          "Tomás"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Vamos tomar uma cerveja no bar hoje?",
+        "alternatives": [
+          "Vamos tomar uma cerveja hoje no bar?"
+        ],
+        "translation": "¿Vamos a tomar una cerveza en el bar hoy?",
+        "explanation": "'Cerveja' es femenino, entonces con el indefinido se dice 'uma cerveja'; el orden de 'no bar' y 'hoje' puede invertirse sin cambiar el sentido de la oración.",
+        "tokens": [
+          "tomar",
+          "hoje",
+          "Vamos",
+          "no",
+          "cerveja",
+          "uma",
+          "bar"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el vocabulario de comida y bebida.",
+        "sentence": "A leite está na geladeira.",
+        "answers": [
+          "O leite está na geladeira."
+        ],
+        "explanation": "'Leite' es masculino en portugués, aunque 'la leche' sea femenino en español.",
+        "wrongAnswers": [
+          {
+            "answer": "A leite está na geladeira fria.",
+            "why": "el error no es agregar 'fria', sino el artículo: 'leite' es masculino y necesita 'o', no 'a'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el vocabulario de comida y bebida.",
+        "sentence": "Eu gosto arroz com feijão.",
+        "answers": [
+          "Eu gosto de arroz com feijão."
+        ],
+        "explanation": "El verbo 'gostar' siempre lleva la preposición 'de' antes del sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gosto arroz e feijão.",
+            "why": "el error no es cambiar 'com' por 'e', sino que falta la preposición 'de' después de 'gostar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el vocabulario de comida y bebida.",
+        "sentence": "Tomás pediu um sumo de laranja no Brasil.",
+        "answers": [
+          "Tomás pediu um suco de laranja no Brasil."
+        ],
+        "explanation": "En Brasil, 'jugo' se dice 'suco'; 'sumo' es la forma usada en Portugal.",
+        "wrongAnswers": [
+          {
+            "answer": "Tomás pediu uma sumo de laranja no Brasil.",
+            "why": "el problema no es el género del artículo, sino la palabra: en Brasil se dice 'suco', no 'sumo'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el vocabulario de comida y bebida.",
+        "sentence": "Eu comprei um pan francês.",
+        "answers": [
+          "Eu comprei um pão francês."
+        ],
+        "explanation": "'Pão' es la palabra en portugués para 'pan'; se escribe con 'ão', no como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu comprei uma pan francês.",
+            "why": "el error no es el género del artículo (que ya es correcto, 'um'), sino la palabra: en portugués se escribe 'pão', no 'pan'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el vocabulario de comida y bebida.",
+        "sentence": "Carla comprou pollo para o jantar.",
+        "answers": [
+          "Carla comprou frango para o jantar."
+        ],
+        "explanation": "'Frango' es la palabra en portugués para 'pollo' como alimento; 'pollo' no existe en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "Carla comprou pollo para o almoço.",
+            "why": "el error real es la palabra 'pollo', que en portugués debe ser 'frango'; cambiar 'jantar' por 'almoço' no corrige ese error."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Querés agua o jugo?",
+        "answers": [
+          "Você quer água ou suco?",
+          "Quer água ou suco?"
+        ],
+        "explanation": "En Brasil, 'jugo' se dice 'suco'; el pronombre 'você' puede omitirse en el habla informal sin cambiar el sentido.",
+        "wrongAnswers": [
+          {
+            "answer": "Você quer água ou sumo?",
+            "why": "'sumo' se usa en Portugal; en Brasil se dice 'suco'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Me gusta el arroz con porotos.",
+        "answers": [
+          "Eu gosto de arroz com feijão.",
+          "Gosto de arroz com feijão."
+        ],
+        "explanation": "El verbo 'gostar' siempre lleva la preposición 'de' antes del sustantivo; el pronombre 'eu' puede omitirse porque la conjugación del verbo ya indica la persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gosto arroz com feijão.",
+            "why": "falta la preposición 'de' después de 'gostar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "La leche está en la heladera.",
+        "answers": [
+          "O leite está na geladeira."
+        ],
+        "explanation": "'Leite' es masculino en portugués, entonces se usa el artículo 'o'.",
+        "wrongAnswers": [
+          {
+            "answer": "A leite está na geladeira.",
+            "why": "'leite' es masculino en portugués, aunque 'la leche' sea femenino en español."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Vamos a tomar una cerveza?",
+        "answers": [
+          "Vamos tomar uma cerveja?"
+        ],
+        "explanation": "'Cerveja' es la palabra en portugués para 'cerveza'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos tomar uma cerveza?",
+            "why": "en portugués se escribe 'cerveja', con 'j', no 'cerveza'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Tomás no come carne roja, prefiere pollo.",
+        "answers": [
+          "Tomás não come carne vermelha, prefere frango."
+        ],
+        "explanation": "'Frango' es la palabra en portugués para 'pollo' como alimento.",
+        "wrongAnswers": [
+          {
+            "answer": "Tomás não come carne vermelha, prefere pollo.",
+            "why": "'pollo' no existe en portugués; la palabra correcta es 'frango'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Compré pan y jugo de naranja para el desayuno.",
+        "answers": [
+          "Comprei pão e suco de laranja para o café da manhã."
+        ],
+        "explanation": "En portugués se dice 'pão' (pan) y en Brasil 'suco' (jugo), no 'pan' ni 'sumo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Comprei pan e sumo de laranja para o café da manhã.",
+            "why": "'pan' no existe en portugués (se escribe 'pão') y en Brasil se usa 'suco', no 'sumo'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eu gosto de arroz com feijão.",
+        "alternatives": [],
+        "translation": "Me gusta el arroz con porotos.",
+        "explanation": "'Gostar' siempre lleva la preposición 'de' antes del sustantivo; no te olvides de ese 'de' aunque en español no se use."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você quer água ou suco de laranja?",
+        "alternatives": [],
+        "translation": "¿Querés agua o jugo de naranja?",
+        "explanation": "En Brasil se dice 'suco', no 'sumo' (eso es de Portugal); prestá atención a esa palabra al escribirla."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eu bebo café com leite de manhã.",
+        "alternatives": [],
+        "translation": "Tomo café con leche a la mañana.",
+        "explanation": "'Leite' es masculino en portugués aunque 'la leche' sea femenino en español, por eso nunca se dice 'a leite'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Ela não come carne vermelha.",
+        "alternatives": [],
+        "translation": "Ella no come carne roja.",
+        "explanation": "El dígrafo 'lh' en 'vermelha' suena parecido a la 'll' del español rioplatense pero más suave; no lo confundas con una simple 'l'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pão",
+          "pau"
+        ],
+        "target": 0,
+        "meanings": [
+          "pan",
+          "palo"
+        ],
+        "explanation": "'Pão' tiene un sonido nasal marcado por el 'ão', mientras que 'pau' termina en diptongo oral sin nasalizar."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "sujo",
+          "suco"
+        ],
+        "target": 0,
+        "meanings": [
+          "sucio",
+          "jugo"
+        ],
+        "explanation": "'Suco' se pronuncia con 's' suave, y 'sujo' con el sonido 'j' del portugués, parecido a la 'sh' francesa, muy distinto de la 'j' española."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "cereja",
+          "cerveja"
+        ],
+        "target": 1,
+        "meanings": [
+          "cereza",
+          "cerveza"
+        ],
+        "explanation": "'Cerveja' tiene el sonido 'v' antes de la 'e', que falta en 'cereja'; prestá atención a esa consonante extra."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la rutina de Lucas y respondé las preguntas.",
+        "text": "Lucas mora em São Paulo e trabalha em um escritório. De manhã, ele bebe café com leite e come pão. No almoço, Lucas gosta de comer arroz com feijão e frango. Ele também come legumes, porque são bons para a saúde. Para beber, ele toma água ou suco de laranja. À noite, Lucas janta com a família. Eles comem peixe ou carne, e sempre tem frutas na mesa depois do jantar. No fim de semana, Lucas gosta de tomar uma cerveja com os amigos. Mas durante a semana, ele prefere beber água. Lucas não gosta de vinho, mas sua esposa, Marina, gosta muito. Eles sempre cozinham juntos em casa.",
+        "questions": [
+          {
+            "prompt": "¿Qué toma Lucas a la mañana?",
+            "options": [
+              "Café com leite",
+              "Cerveja",
+              "Suco de laranja",
+              "Vinho"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'De manhã, ele bebe café com leite e come pão', por eso la respuesta correcta es café con leche."
+          },
+          {
+            "prompt": "¿Qué come Lucas en el almuerzo, además de pollo?",
+            "options": [
+              "Peixe e frutas",
+              "Só legumes",
+              "Arroz com feijão",
+              "Vinho e cerveja"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que en el almuerzo Lucas come 'arroz com feijão e frango', por eso la opción correcta es arroz con porotos."
+          },
+          {
+            "prompt": "¿Qué bebida le gusta mucho a Marina, la esposa de Lucas?",
+            "options": [
+              "Água",
+              "Cerveja",
+              "Vinho",
+              "Suco"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto aclara que 'Lucas não gosta de vinho, mas sua esposa, Marina, gosta muito', por eso a Marina le gusta mucho el vino."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la compra de Ana en el mercado y respondé las preguntas.",
+        "text": "Ana vai ao mercado perto da sua casa, no Rio de Janeiro. Ela precisa comprar comida para o jantar. Primeiro, Ana compra arroz e feijão, porque ela gosta muito de arroz com feijão. Depois, ela escolhe um peixe fresco e alguns legumes verdes. Ana também compra frutas, como banana e maçã, para o café da manhã. Na seção de bebidas, ela pega uma garrafa de água e um suco de laranja. Ana não compra carne vermelha, porque hoje ela quer comer peixe com legumes. No caixa, ela encontra sua amiga Paula, que está comprando pão e leite. As duas conversam um pouco e depois vão para casa preparar o jantar juntas.",
+        "questions": [
+          {
+            "prompt": "¿Qué compra Ana para el café da manhã (desayuno)?",
+            "options": [
+              "Frutas",
+              "Carne",
+              "Peixe",
+              "Cerveja"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice que Ana compra frutas 'para o café da manhã', por eso la respuesta correcta es frutas."
+          },
+          {
+            "prompt": "¿Por qué Ana no compra carne roja hoy?",
+            "options": [
+              "Porque no hay en el mercado",
+              "Porque es muy cara",
+              "Porque ella quiere comer peixe com legumes",
+              "Porque no le gusta la carne"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto explica: 'Ana não compra carne vermelha, porque hoje ela quer comer peixe com legumes'."
+          },
+          {
+            "prompt": "¿Qué está comprando Paula en la caja?",
+            "options": [
+              "Frutas e suco",
+              "Arroz e feijão",
+              "Pão e leite",
+              "Água e vinho"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que Paula 'está comprando pão e leite' cuando Ana la encuentra en la caja."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre Rafael y Bianca en un restaurante y respondé las preguntas.",
+        "situation": "Rafael y Bianca están en un restaurante en Salvador, eligiendo qué comer y beber para el almuerzo.",
+        "lines": [
+          {
+            "speaker": "Rafael",
+            "text": "Bianca, você quer água ou suco?"
+          },
+          {
+            "speaker": "Bianca",
+            "text": "Eu quero um suco de laranja, por favor."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "E para comer, você gosta de peixe?"
+          },
+          {
+            "speaker": "Bianca",
+            "text": "Sim, eu gosto muito de peixe. E você?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Eu prefiro frango com arroz e feijão."
+          },
+          {
+            "speaker": "Bianca",
+            "text": "Boa escolha! Eu também quero legumes no meu prato."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Perfeito. Eu vou pedir uma cerveja também."
+          },
+          {
+            "speaker": "Bianca",
+            "text": "Eu não bebo cerveja, só suco."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué bebida pide Bianca?",
+            "options": [
+              "Cerveja",
+              "Água",
+              "Suco de laranja",
+              "Vinho"
+            ],
+            "correctIndex": 2,
+            "explanation": "Bianca dice 'Eu quero um suco de laranja, por favor', por eso esa es la bebida que pide."
+          },
+          {
+            "prompt": "¿Qué come Rafael?",
+            "options": [
+              "Só legumes",
+              "Peixe com legumes",
+              "Frango com arroz e feijão",
+              "Carne vermelha"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice que prefiere 'frango com arroz e feijão'."
+          },
+          {
+            "prompt": "¿Bianca toma cerveza?",
+            "options": [
+              "Sí, pero solo un poco",
+              "No, ella solo bebe suco",
+              "No, ella prefiere vinho",
+              "Sí, junto con Rafael"
+            ],
+            "correctIndex": 1,
+            "explanation": "Bianca aclara al final de la charla: 'Eu não bebo cerveja, só suco'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre Dona Teresa y su hijo Pedro y respondé las preguntas.",
+        "situation": "Pedro llega a su casa en São Paulo y su madre, Dona Teresa, le pregunta qué quiere comer y tomar para la cena.",
+        "lines": [
+          {
+            "speaker": "Teresa",
+            "text": "Pedro, o que você quer comer no jantar?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu quero arroz com feijão e frango, mãe."
+          },
+          {
+            "speaker": "Teresa",
+            "text": "Certo. E para beber, água ou leite?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu prefiro água, por favor."
+          },
+          {
+            "speaker": "Teresa",
+            "text": "Você quer frutas depois do jantar?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Sim! Eu adoro frutas, principalmente banana."
+          },
+          {
+            "speaker": "Teresa",
+            "text": "Então vou preparar tudo agora."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué quiere comer Pedro en la cena?",
+            "options": [
+              "Peixe com legumes",
+              "Só pão",
+              "Carne vermelha",
+              "Arroz com feijão e frango"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro dice 'Eu quero arroz com feijão e frango, mãe'."
+          },
+          {
+            "prompt": "¿Qué bebida elige Pedro?",
+            "options": [
+              "Suco",
+              "Água",
+              "Cerveja",
+              "Leite"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro responde 'Eu prefiro água, por favor' cuando su madre le pregunta entre agua o leche."
+          },
+          {
+            "prompt": "¿Qué fruta le gusta especialmente a Pedro?",
+            "options": [
+              "Uva",
+              "Laranja",
+              "Banana",
+              "Maçã"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice que adora frutas, 'principalmente banana'."
+          }
+        ]
+      }
+    ],
+    "no-mercado": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra correcta para decir \"medio kilo\".",
+        "prompt": "Me dá ___ quilo de queijo, por favor.",
+        "options": [
+          "um",
+          "uma",
+          "meio",
+          "meia"
+        ],
+        "correctIndex": 2,
+        "explanation": "\"Quilo\" es masculino, entonces el adjetivo \"meio\" también va en masculino: \"meio quilo\", nunca \"meia quilo\".",
+        "optionNotes": [
+          "Incorrecto: \"um\" significa \"un kilo entero\", no \"medio kilo\".",
+          "Incorrecto: \"uma\" es femenino y tampoco significa \"medio\".",
+          "Correcto: \"quilo\" es masculino, por eso \"medio\" se dice \"meio\".",
+          "Incorrecto: \"meia\" es la forma femenina, pero \"quilo\" es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el artículo correcto para \"dúzia\".",
+        "prompt": "Eu quero ___ dúzia de ovos.",
+        "options": [
+          "um",
+          "meio",
+          "meia",
+          "uma"
+        ],
+        "correctIndex": 3,
+        "explanation": "\"Dúzia\" es un sustantivo femenino, entonces el artículo correcto es \"uma\", no \"um\".",
+        "optionNotes": [
+          "Incorrecto: \"um\" es masculino, pero \"dúzia\" es femenino.",
+          "Incorrecto: \"meio\" significa \"medio\" y además es masculino.",
+          "Incorrecto: \"meia\" significa \"media\", no es lo que se pide aquí.",
+          "Correcto: \"dúzia\" es femenino, por eso lleva \"uma\"."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra correcta para preguntar si hay algo.",
+        "prompt": "___ desconto se eu levar dois?",
+        "options": [
+          "É",
+          "Tem",
+          "Sou",
+          "Estou"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para preguntar si hay algo disponible se usa \"Tem...?\", equivalente a \"¿Hay...?\" en español.",
+        "optionNotes": [
+          "Incorrecto: \"É\" es la forma de \"ser\" para él/ella, no se usa para preguntar si hay algo.",
+          "Correcto: \"Tem\" se usa para preguntar si hay algo disponible.",
+          "Incorrecto: \"Sou\" es la forma de \"ser\" para \"eu\", no corresponde aquí.",
+          "Incorrecto: \"Estou\" es la forma de \"estar\" para \"eu\", no corresponde aquí."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el verbo correcto para preguntar el precio.",
+        "prompt": "Quanto ___ essa fruta?",
+        "options": [
+          "está",
+          "é",
+          "tem",
+          "custa"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para preguntar el precio de algo se usa \"Quanto custa...?\", con el verbo \"custar\".",
+        "optionNotes": [
+          "Incorrecto: \"está\" no corresponde a esta pregunta sobre precio.",
+          "Incorrecto: \"é\" no se usa para preguntar precios en esta estructura.",
+          "Incorrecto: \"tem\" se usa para preguntar si algo está disponible, no su precio.",
+          "Correcto: \"custar\" es el verbo que se usa para preguntar precios."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta de escribir \"kilo\" en portugués.",
+        "prompt": "Eu quero um ___ de tomate.",
+        "options": [
+          "kilo",
+          "quillo",
+          "quilo",
+          "kiloo"
+        ],
+        "correctIndex": 2,
+        "explanation": "En portugués la palabra correcta es \"quilo\", con \"qu\", a diferencia del español \"kilo\" con \"k\".",
+        "optionNotes": [
+          "Incorrecto: \"kilo\" con \"k\" es la forma en español, no en portugués.",
+          "Incorrecto: esta palabra no existe en portugués.",
+          "Correcto: en portugués se escribe \"quilo\", con \"qu\", no con \"k\".",
+          "Incorrecto: esta palabra no existe en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra correcta para el lugar al aire libre donde se venden frutas y verduras frescas.",
+        "prompt": "Vou à ___ todo sábado.",
+        "options": [
+          "praça",
+          "feira",
+          "loja",
+          "mercado"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"Feira\" es la feria de productos frescos al aire libre, mientras que \"mercado\" es un término más general.",
+        "optionNotes": [
+          "Incorrecto: \"praça\" significa \"plaza\", no es un lugar para comprar comida.",
+          "Correcto: \"feira\" es el mercado al aire libre de productos frescos, típico de los sábados.",
+          "Incorrecto: \"loja\" significa \"tienda\", no es el lugar de productos frescos.",
+          "Incorrecto: \"mercado\" es más general y no se refiere específicamente a la feria al aire libre."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo indefinido correcto.",
+        "sentence": "Eu quero ___ quilo de tomate.",
+        "hint": "(artículo indefinido masculino)",
+        "answers": [
+          "um"
+        ],
+        "explanation": "\"Quilo\" es masculino, entonces el artículo correcto es \"um\".",
+        "wrongAnswers": [
+          {
+            "answer": "uma",
+            "why": "\"quilo\" es masculino, por eso corresponde \"um\", no \"uma\"."
+          },
+          {
+            "answer": "meio",
+            "why": "\"meio\" significa \"medio\", pero aquí se pide un kilo entero."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la palabra correcta para decir \"medio\".",
+        "sentence": "Me dá ___ quilo de queijo, por favor.",
+        "hint": "(meio/meia - \"quilo\" es masculino)",
+        "answers": [
+          "meio"
+        ],
+        "explanation": "\"Quilo\" es masculino, entonces el adjetivo \"meio\" también va en masculino.",
+        "wrongAnswers": [
+          {
+            "answer": "meia",
+            "why": "\"meia\" es femenino, pero \"quilo\" es masculino; corresponde \"meio\"."
+          },
+          {
+            "answer": "medio",
+            "why": "Esa palabra no existe en portugués; la forma correcta es \"meio\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el artículo indefinido correcto.",
+        "sentence": "Quero ___ dúzia de ovos.",
+        "hint": "(artículo indefinido femenino, porque \"dúzia\" es femenino)",
+        "answers": [
+          "uma"
+        ],
+        "explanation": "\"Dúzia\" es un sustantivo femenino, entonces el artículo correcto es \"uma\".",
+        "wrongAnswers": [
+          {
+            "answer": "um",
+            "why": "\"dúzia\" es femenino, por eso corresponde \"uma\", no \"um\"."
+          },
+          {
+            "answer": "meia",
+            "why": "\"meia\" significa \"media\", pero aquí se pide una docena completa."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la palabra correcta para preguntar si hay algo.",
+        "sentence": "___ peixe fresco hoje?",
+        "hint": "(verbo para preguntar si hay algo)",
+        "answers": [
+          "Tem"
+        ],
+        "explanation": "Para preguntar si hay algo disponible se usa \"Tem...?\".",
+        "wrongAnswers": [
+          {
+            "answer": "É",
+            "why": "\"É\" no se usa para preguntar si algo está disponible."
+          },
+          {
+            "answer": "Está",
+            "why": "\"Está\" no es la forma correcta para preguntar si hay algo disponible en el mercado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con el verbo correcto para preguntar el precio.",
+        "sentence": "Quanto ___ essa fruta?",
+        "hint": "(custar, verbo)",
+        "answers": [
+          "custa"
+        ],
+        "explanation": "Para preguntar el precio de algo se usa el verbo \"custar\": \"Quanto custa...?\".",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "\"é\" no se usa en esta estructura para preguntar precios."
+          },
+          {
+            "answer": "tem",
+            "why": "\"tem\" se usa para preguntar disponibilidad, no precio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá el espacio con la palabra correcta para el lugar de productos frescos.",
+        "sentence": "Eu vou à ___ todo sábado para comprar frutas frescas.",
+        "hint": "(lugar al aire libre con productos frescos)",
+        "answers": [
+          "feira"
+        ],
+        "explanation": "\"Feira\" es el lugar al aire libre donde se venden productos frescos, diferente de \"mercado\" que es más general.",
+        "wrongAnswers": [
+          {
+            "answer": "mercado",
+            "why": "\"mercado\" es un término general; para la feria al aire libre de productos frescos se usa \"feira\"."
+          },
+          {
+            "answer": "loja",
+            "why": "\"loja\" significa \"tienda\", no es el lugar específico de productos frescos al aire libre."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu quero um quilo de tomate.",
+        "alternatives": [],
+        "translation": "Quiero un kilo de tomate.",
+        "explanation": "\"Quilo\" es masculino, por eso se usa \"um\" antes de él.",
+        "tokens": [
+          "um",
+          "quero",
+          "de",
+          "tomate",
+          "quilo",
+          "Eu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Me dá meio quilo de queijo, por favor.",
+        "alternatives": [],
+        "translation": "Dame medio kilo de queso, por favor.",
+        "explanation": "\"Meio\" va en masculino porque acompaña a \"quilo\", que también es masculino.",
+        "tokens": [
+          "favor",
+          "quilo",
+          "queijo,",
+          "meio",
+          "Me",
+          "por",
+          "dá",
+          "de"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Quero uma dúzia de ovos frescos.",
+        "alternatives": [],
+        "translation": "Quiero una docena de huevos frescos.",
+        "explanation": "\"Dúzia\" es femenino, por eso se usa \"uma\" antes de ella.",
+        "tokens": [
+          "de",
+          "frescos",
+          "dúzia",
+          "Quero",
+          "ovos",
+          "uma"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Tem desconto se eu levar dois?",
+        "alternatives": [],
+        "translation": "¿Hay descuento si llevo dos?",
+        "explanation": "\"Tem\" se usa para preguntar si hay algo disponible, en este caso un descuento.",
+        "tokens": [
+          "se",
+          "dois",
+          "eu",
+          "levar",
+          "Tem",
+          "desconto"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Quanto custa esse peixe fresco?",
+        "alternatives": [],
+        "translation": "¿Cuánto cuesta ese pescado fresco?",
+        "explanation": "Para preguntar el precio se usa \"Quanto custa...?\", con el verbo \"custar\".",
+        "tokens": [
+          "esse",
+          "fresco",
+          "Quanto",
+          "custa",
+          "peixe"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la ortografía de \"quilo\".",
+        "sentence": "Eu quero um kilo de tomate.",
+        "answers": [
+          "Eu quero um quilo de tomate."
+        ],
+        "explanation": "En portugués se escribe \"quilo\", con \"qu\", no \"kilo\" con \"k\" como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero uma kilo de tomate.",
+            "why": "Cambia el artículo en vez de corregir la ortografía de \"quilo\", y además \"quilo\" es masculino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el género de \"dúzia\".",
+        "sentence": "Eu quero um dúzia de ovos.",
+        "answers": [
+          "Eu quero uma dúzia de ovos."
+        ],
+        "explanation": "\"Dúzia\" es femenino, entonces lleva \"uma\", no \"um\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero um dúzia de ovo.",
+            "why": "Cambia \"ovos\" por \"ovo\" en vez de corregir el artículo, que es el error principal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el género de \"meio/meia\".",
+        "sentence": "Me dá meia quilo de queijo.",
+        "answers": [
+          "Me dá meio quilo de queijo."
+        ],
+        "explanation": "\"Quilo\" es masculino, entonces el adjetivo \"meio\" también va en masculino, no \"meia\".",
+        "wrongAnswers": [
+          {
+            "answer": "Me dá meia quilo de queijos.",
+            "why": "Cambia \"queijo\" por \"queijos\" en vez de corregir \"meia\", que es el error principal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con el género de \"quilo\".",
+        "sentence": "Eu quero uma quilo de banana.",
+        "answers": [
+          "Eu quero um quilo de banana."
+        ],
+        "explanation": "\"Quilo\" es masculino, entonces el artículo correcto es \"um\", no \"uma\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero uma quilo de bananas.",
+            "why": "Cambia \"banana\" por \"bananas\" en vez de corregir el artículo \"uma\", que es el error principal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la contracción antes de \"feira\".",
+        "sentence": "Vou ao feira todo sábado.",
+        "answers": [
+          "Vou à feira todo sábado."
+        ],
+        "explanation": "\"Feira\" es femenino, entonces se usa la contracción \"à\" (a + a), no \"ao\" que es para sustantivos masculinos.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou ao feiras todo sábado.",
+            "why": "Cambia \"feira\" por \"feiras\" en vez de corregir la contracción, que es el error principal."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el vocabulario del mercado.",
+        "spanish": "Quiero un kilo de tomate.",
+        "answers": [
+          "Eu quero um quilo de tomate."
+        ],
+        "explanation": "\"Quilo\" es masculino y se escribe con \"qu\" en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero um kilo de tomate.",
+            "why": "En portugués se escribe \"quilo\", con \"qu\", no \"kilo\" con \"k\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el vocabulario del mercado.",
+        "spanish": "Dame medio kilo de queso, por favor.",
+        "answers": [
+          "Me dá meio quilo de queijo, por favor."
+        ],
+        "explanation": "\"Meio\" va en masculino porque acompaña a \"quilo\", que también es masculino.",
+        "wrongAnswers": [
+          {
+            "answer": "Me dá meia quilo de queijo, por favor.",
+            "why": "\"Quilo\" es masculino, por eso corresponde \"meio\", no \"meia\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el vocabulario del mercado.",
+        "spanish": "Quiero una docena de huevos.",
+        "answers": [
+          "Eu quero uma dúzia de ovos."
+        ],
+        "explanation": "\"Dúzia\" es un sustantivo femenino, entonces lleva el artículo \"uma\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero um dúzia de ovos.",
+            "why": "\"Dúzia\" es femenino, por eso corresponde \"uma\", no \"um\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el vocabulario del mercado.",
+        "spanish": "¿Hay banana madura hoy?",
+        "answers": [
+          "Tem banana madura hoje?"
+        ],
+        "explanation": "Para preguntar si hay algo disponible se usa \"Tem...?\", equivalente a \"¿Hay...?\".",
+        "wrongAnswers": [
+          {
+            "answer": "É banana madura hoje?",
+            "why": "Para preguntar si hay algo disponible se usa \"Tem\", no el verbo \"ser\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el vocabulario del mercado.",
+        "spanish": "¿Cuánto cuesta esa fruta?",
+        "answers": [
+          "Quanto custa essa fruta?"
+        ],
+        "explanation": "Para preguntar el precio de algo se usa \"Quanto custa...?\".",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto é essa fruta?",
+            "why": "Para preguntar el precio de forma estándar se usa el verbo \"custar\", no \"ser\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el vocabulario del mercado.",
+        "spanish": "Voy a la feria todos los sábados.",
+        "answers": [
+          "Eu vou à feira todo sábado.",
+          "Eu vou à feira todos os sábados."
+        ],
+        "explanation": "\"Feira\" es femenino, entonces se usa \"à\" (a + a) para indicar movimiento hacia ese lugar.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu vou ao feira todo sábado.",
+            "why": "\"Feira\" es femenino, por eso corresponde la contracción \"à\", no \"ao\"."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu quero um quilo de tomate.",
+        "alternatives": [],
+        "translation": "Quiero un kilo de tomate.",
+        "explanation": "\"Quilo\" se escribe con \"qu\", nunca con \"k\" como en español; además concuerda en masculino con \"um\"."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Tem banana madura na feira hoje?",
+        "alternatives": [],
+        "translation": "¿Hay banana madura en la feria hoy?",
+        "explanation": "\"Tem\" se usa para preguntar si hay algo disponible, equivalente a \"¿hay...?\" en español; el tono de la voz marca que es pregunta."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Me dá meio quilo de queijo, por favor.",
+        "alternatives": [
+          "Me dá meio quilo de queijo por favor."
+        ],
+        "translation": "Dame medio kilo de queso, por favor.",
+        "explanation": "\"Meio\" va en masculino porque acompaña a \"quilo\" (masculino); no se dice \"meia quilo\" como \"media\" en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu quero uma dúzia de ovos frescos.",
+        "alternatives": [],
+        "translation": "Quiero una docena de huevos frescos.",
+        "explanation": "\"Dúzia\" es femenina en portugués, por eso lleva \"uma\" y no \"um\", a diferencia de lo que podría parecer al traducir del español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 1,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "La \"s\" entre vocales en portugués suena como \"z\" (casa), mientras que \"ç\" siempre suena como \"s\" (caça); en español la \"s\" nunca suena como \"z\"."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 1,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "\"Pão\" termina en un sonido nasal que pasa por la nariz, mientras que \"pau\" es un diptongo oral, sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchás una de estas dos palabras. Elegí cuál es.",
+        "pair": [
+          "carro",
+          "caro"
+        ],
+        "target": 1,
+        "meanings": [
+          "auto",
+          "caro, costoso"
+        ],
+        "explanation": "\"Carro\" tiene una \"rr\" fuerte y vibrante, mientras que \"caro\" tiene una sola \"r\" suave, como la de \"pero\" en español."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas.",
+        "text": "Marcos vai à feira todo sábado de manhã. Ele gosta de comprar frutas e legumes frescos. Hoje ele quer fazer uma salada de frutas para sua família. Primeiro, ele vai até a banca de frutas e pergunta: 'Tem banana madura?' A vendedora responde que sim e mostra bananas amarelas. Marcos pede um quilo de banana e meio quilo de morango. Depois, ele vai até a banca de ovos e pede uma dúzia de ovos para fazer um bolo. A vendedora pergunta: 'Mais alguma coisa?' Marcos diz que não, paga e volta para casa feliz com as compras.",
+        "questions": [
+          {
+            "prompt": "¿Qué cantidad de banana compra Marcos?",
+            "options": [
+              "Uma dúzia",
+              "Dois quilos",
+              "Um quilo",
+              "Meio quilo"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Marcos pede um quilo de banana', así que la cantidad correcta es un quilo."
+          },
+          {
+            "prompt": "¿Para qué pide Marcos uma dúzia de ovos?",
+            "options": [
+              "Para fazer uma salada",
+              "Para fazer um sanduíche",
+              "Para fazer um suco",
+              "Para fazer um bolo"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto indica que pide los huevos 'para fazer um bolo', es decir, para hacer una torta."
+          },
+          {
+            "prompt": "¿Qué día de la semana Marcos vai à feira?",
+            "options": [
+              "Sábado",
+              "Segunda-feira",
+              "Domingo",
+              "Sexta-feira"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto empieza diciendo 'Marcos vai à feira todo sábado de manhã'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas.",
+        "text": "Ana mora em São Paulo e gosta de cozinhar. No sábado, ela vai à feira perto de sua casa para comprar frutas e verduras frescas. Ela chega na banca de tomate e pergunta: 'Quanto custa o quilo de tomate?' O vendedor responde que custa quatro reais. Ana pede um quilo de tomate e meio quilo de cebola. Depois, ela vai até a banca de peixe e pergunta: 'Esse peixe está fresco?' O vendedor diz que sim, pegou o peixe hoje de manhã. Ana compra o peixe e também pede uma dúzia de ovos na banca ao lado. No fim, ela paga tudo e volta feliz para casa.",
+        "questions": [
+          {
+            "prompt": "¿Cuánto cuesta el quilo de tomate?",
+            "options": [
+              "Quatro reais",
+              "Seis reais",
+              "Dez reais",
+              "Dois reais"
+            ],
+            "correctIndex": 0,
+            "explanation": "El vendedor responde que el quilo de tomate 'custa quatro reais'."
+          },
+          {
+            "prompt": "¿Qué le pregunta Ana al vendedor sobre el pescado?",
+            "options": [
+              "Se está fresco",
+              "Se é grande",
+              "Se é caro",
+              "Se tem desconto"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ana pregunta 'Esse peixe está fresco?', es decir, si el pescado está fresco."
+          },
+          {
+            "prompt": "¿Qué cantidad de cebolla compra Ana?",
+            "options": [
+              "Um quilo",
+              "Dois quilos",
+              "Meio quilo",
+              "Uma dúzia"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'meio quilo de cebola', entonces compra medio quilo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas.",
+        "situation": "Juliana está comprando en la feria de su barrio un domingo por la mañana. Habla con el Sr. Antônio, el vendedor de frutas.",
+        "lines": [
+          {
+            "speaker": "Juliana",
+            "text": "Bom dia! Tem manga madura hoje?"
+          },
+          {
+            "speaker": "Sr. Antônio",
+            "text": "Bom dia! Tem sim, estão bem maduras."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Quanto custa o quilo?"
+          },
+          {
+            "speaker": "Sr. Antônio",
+            "text": "Custa cinco reais o quilo."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Então quero um quilo de manga e meio quilo de uva."
+          },
+          {
+            "speaker": "Sr. Antônio",
+            "text": "Certo. Mais alguma coisa?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Sim, quero também uma dúzia de ovos."
+          },
+          {
+            "speaker": "Sr. Antônio",
+            "text": "Perfeito, já pego tudo para você."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué cantidad de mango pide Juliana?",
+            "options": [
+              "Uma dúzia",
+              "Dois quilos",
+              "Meio quilo",
+              "Um quilo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana dice 'quero um quilo de manga', así que pide un quilo."
+          },
+          {
+            "prompt": "¿Cuánto cuesta el quilo de mango?",
+            "options": [
+              "Cinco reais",
+              "Dez reais",
+              "Dois reais",
+              "Três reais"
+            ],
+            "correctIndex": 0,
+            "explanation": "El vendedor dice 'Custa cinco reais o quilo'."
+          },
+          {
+            "prompt": "¿Qué pide Juliana además de las frutas?",
+            "options": [
+              "Um quilo de queijo",
+              "Um pacote de arroz",
+              "Meio quilo de carne",
+              "Uma dúzia de ovos"
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana agrega 'quero também uma dúzia de ovos', es decir, una docena de huevos."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas.",
+        "situation": "Lucas está en el mercado de su barrio, en la sección de quesos, hablando con Dona Rosa, la vendedora, un sábado al mediodía.",
+        "lines": [
+          {
+            "speaker": "Lucas",
+            "text": "Boa tarde, Dona Rosa. Tem queijo minas fresco?"
+          },
+          {
+            "speaker": "Dona Rosa",
+            "text": "Boa tarde! Tem sim, chegou hoje de manhã."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Ótimo. Me dá meio quilo de queijo, por favor."
+          },
+          {
+            "speaker": "Dona Rosa",
+            "text": "Só meio quilo? Tem desconto se você levar um quilo."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Então quero um quilo de queijo."
+          },
+          {
+            "speaker": "Dona Rosa",
+            "text": "Perfeito. Mais alguma coisa?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Não, só isso. Quanto custa tudo?"
+          },
+          {
+            "speaker": "Dona Rosa",
+            "text": "São vinte reais o quilo."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué cantidad de queso termina comprando Lucas?",
+            "options": [
+              "Dois quilos",
+              "Um quilo",
+              "Meio quilo",
+              "Uma dúzia"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lucas cambia su pedido y dice 'quero um quilo de queijo', así que compra un quilo."
+          },
+          {
+            "prompt": "¿Por qué Lucas cambia la cantidad que pide?",
+            "options": [
+              "Porque no queda queso fresco",
+              "Porque es más barato por medio quilo",
+              "Porque Dona Rosa se lo recomienda por el sabor",
+              "Porque hay descuento si lleva un quilo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Dona Rosa le dice 'Tem desconto se você levar um quilo', por eso Lucas decide comprar un quilo."
+          },
+          {
+            "prompt": "¿Cuánto cuesta el quilo de queso?",
+            "options": [
+              "Quinze reais",
+              "Vinte reais",
+              "Dez reais",
+              "Vinte e cinco reais"
+            ],
+            "correctIndex": 1,
+            "explanation": "Dona Rosa dice 'São vinte reais o quilo' al final del diálogo."
+          }
+        ]
+      }
+    ],
+    "lugares-da-cidade": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta.",
+        "prompt": "___ a farmácia mais próxima?",
+        "options": [
+          "Qual fica",
+          "Onde é",
+          "O que fica",
+          "Onde fica"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para preguntar la ubicación de un lugar se usa el verbo 'ficar', no 'ser'; 'onde fica' equivale a 'ónde queda'.",
+        "optionNotes": [
+          "Incorrecto: falta la palabra 'onde'; 'qual' pregunta por elección, no por ubicación.",
+          "Incorrecto: 'ser' se usa para identidad, no para ubicación de lugares.",
+          "Incorrecto: 'o que' pregunta por una cosa, no por un lugar.",
+          "Correcto: 'ficar' es el verbo para preguntar ubicación."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "O banco fica ___ praça.",
+        "options": [
+          "perto da",
+          "perto de a",
+          "ao lado",
+          "perto a"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Perto' siempre se usa con 'de', y 'de' más el artículo femenino 'a' se contrae en 'da'.",
+        "optionNotes": [
+          "Correcto: perto + de + a = perto da.",
+          "Incorrecto: 'de' y 'a' siempre se contraen, no se dejan separadas.",
+          "Incorrecto: 'ao lado' significa 'al lado', no 'cerca'.",
+          "Incorrecto: 'perto' nunca se usa con 'a' sola, siempre necesita 'de'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "A farmácia fica ao lado ___ supermercado.",
+        "options": [
+          "do o",
+          "de",
+          "de o",
+          "do"
+        ],
+        "correctIndex": 3,
+        "explanation": "'De' más el artículo masculino 'o' se contrae siempre en 'do'.",
+        "optionNotes": [
+          "Incorrecto: no existe un doble artículo 'do o'.",
+          "Incorrecto: falta el artículo contraído; 'de' solo no alcanza.",
+          "Incorrecto: 'de' y 'o' siempre se contraen, no se dejan separadas.",
+          "Correcto: de + o = do."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "O banco fica em frente ___ praça.",
+        "options": [
+          "de",
+          "a",
+          "à",
+          "ao"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Em frente' va seguido de 'a', y como 'praça' es femenino, a + a se contrae en 'à'.",
+        "optionNotes": [
+          "Incorrecto: 'em frente' usa la preposición 'a', no 'de'.",
+          "Incorrecto: falta la contracción con el artículo femenino.",
+          "Correcto: a + a = à, y 'praça' es femenino.",
+          "Incorrecto: 'ao' es la forma masculina, pero 'praça' es femenino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración según el sentido.",
+        "prompt": "A estação de trem fica ___ daqui; por isso, vamos de carro.",
+        "options": [
+          "ao lado",
+          "em frente",
+          "perto",
+          "longe"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Longe' significa 'lejos'; la pista 'vamos de carro' indica que el lugar no está cerca, lo que descarta las demás opciones.",
+        "optionNotes": [
+          "Incorrecto: 'ao lado' significa 'al lado' y, además, no combina naturalmente con 'daqui' en este contexto.",
+          "Incorrecto: 'em frente' significa 'enfrente' y, además, no combina naturalmente con 'daqui' en este contexto.",
+          "Incorrecto: 'perto' significa 'cerca', lo cual contradice la necesidad de ir en auto.",
+          "Correcto: 'longe' significa 'lejos', coherente con la pista de que hace falta ir en auto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración.",
+        "prompt": "A igreja fica na esquina ___ rua principal.",
+        "options": [
+          "de",
+          "de a",
+          "do",
+          "da"
+        ],
+        "correctIndex": 3,
+        "explanation": "'De' más el artículo femenino 'a' se contrae en 'da'; 'rua' es femenino.",
+        "optionNotes": [
+          "Incorrecto: falta el artículo contraído; 'de' solo no alcanza.",
+          "Incorrecto: 'de' y 'a' siempre se contraen, no se dejan separadas.",
+          "Incorrecto: 'do' es la forma masculina, pero 'rua' es femenino.",
+          "Correcto: de + a = da, y 'rua' es femenino."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta con la expresión correcta para pedir ubicación.",
+        "sentence": "___ o correio mais próximo?",
+        "hint": "(preguntar ubicación - ficar)",
+        "answers": [
+          "Onde fica"
+        ],
+        "explanation": "Para preguntar dónde queda un lugar se usa 'onde fica', con el verbo 'ficar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde é",
+            "why": "'ser' se usa para identidad, no para preguntar la ubicación de un lugar."
+          },
+          {
+            "answer": "Onde está",
+            "why": "'estar' no es el verbo habitual para preguntar la ubicación fija de un lugar; se usa 'ficar'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra que indica cercanía.",
+        "sentence": "A padaria fica ___ da farmácia.",
+        "hint": "(cerca)",
+        "answers": [
+          "perto"
+        ],
+        "explanation": "'Perto' significa 'cerca' y siempre va seguido de 'de' (aquí ya contraído en 'da').",
+        "wrongAnswers": [
+          {
+            "answer": "perto de",
+            "why": "La oración ya tiene 'da', que contiene 'de'; agregar 'de' de nuevo duplicaría la preposición."
+          },
+          {
+            "answer": "ao lado",
+            "why": "'ao lado' significa 'al lado', no 'cerca'; cambia el sentido de la oración."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la expresión correcta y su contracción.",
+        "sentence": "O hospital fica ___ hotel.",
+        "hint": "(al lado de - o)",
+        "answers": [
+          "ao lado do"
+        ],
+        "explanation": "'Ao lado' va seguido de 'de', y 'de' más el artículo masculino 'o' se contrae en 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "ao lado de o",
+            "why": "'de' más 'o' se contraen siempre en 'do', no se dejan separadas."
+          },
+          {
+            "answer": "ao lado o",
+            "why": "Falta la preposición 'de' antes del artículo contraído."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la contracción correcta.",
+        "sentence": "A praça fica em frente ___ igreja.",
+        "hint": "(enfrente de - a+a)",
+        "answers": [
+          "à"
+        ],
+        "explanation": "'Em frente' va seguido de 'a', y como 'igreja' es femenino, a + a se contrae en 'à'.",
+        "wrongAnswers": [
+          {
+            "answer": "a",
+            "why": "Falta la contracción con el artículo femenino; debe ser 'à'."
+          },
+          {
+            "answer": "ao",
+            "why": "'ao' es la forma masculina, pero 'igreja' es femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la contracción correcta.",
+        "sentence": "Eu moro perto ___ correio.",
+        "hint": "(cerca de - o)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "'Perto' va seguido de 'de', y 'de' más el artículo masculino 'o' se contrae en 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "de o",
+            "why": "'de' más 'o' se contraen siempre en 'do', no se dejan separadas."
+          },
+          {
+            "answer": "da",
+            "why": "'correio' es masculino, corresponde 'do', no 'da'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la contracción correcta.",
+        "sentence": "A loja fica na esquina ___ avenida principal.",
+        "hint": "(en la esquina de - a)",
+        "answers": [
+          "da"
+        ],
+        "explanation": "'De' más el artículo femenino 'a' se contrae en 'da'; 'avenida' es femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "de a",
+            "why": "'de' y 'a' siempre se contraen en 'da', no se dejan separadas."
+          },
+          {
+            "answer": "do",
+            "why": "'avenida' es femenino, corresponde 'da', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Onde fica a padaria mais próxima daqui?",
+        "alternatives": [],
+        "translation": "¿Dónde queda la panadería más cercana de aquí?",
+        "explanation": "Se usa 'onde fica' para preguntar ubicación, y 'daqui' es la contracción de 'de' + 'aqui'.",
+        "tokens": [
+          "fica",
+          "padaria",
+          "mais",
+          "a",
+          "daqui",
+          "Onde",
+          "próxima"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O banco fica em frente à praça.",
+        "alternatives": [],
+        "translation": "El banco queda frente a la plaza.",
+        "explanation": "'Em frente' va seguido de la preposición 'a', que se contrae en 'à' porque 'praça' es femenino.",
+        "tokens": [
+          "frente",
+          "praça",
+          "banco",
+          "em",
+          "O",
+          "fica",
+          "à"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A farmácia está ao lado do supermercado.",
+        "alternatives": [],
+        "translation": "La farmacia está al lado del supermercado.",
+        "explanation": "'Ao lado' va seguido de 'de', y 'de' más 'o' se contrae en 'do' porque 'supermercado' es masculino.",
+        "tokens": [
+          "A",
+          "ao",
+          "farmácia",
+          "do",
+          "lado",
+          "supermercado",
+          "está"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A estação de trem fica longe daqui.",
+        "alternatives": [],
+        "translation": "La estación de tren queda lejos de aquí.",
+        "explanation": "'Daqui' es la contracción fija de 'de' + 'aqui', usada para indicar distancia desde el lugar donde se habla.",
+        "tokens": [
+          "fica",
+          "de",
+          "daqui",
+          "estação",
+          "longe",
+          "A",
+          "trem"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A igreja fica na esquina da rua principal.",
+        "alternatives": [],
+        "translation": "La iglesia queda en la esquina de la calle principal.",
+        "explanation": "'Na esquina de' indica ubicación en una esquina, y 'de' más 'a' se contrae en 'da' porque 'rua' es femenino.",
+        "tokens": [
+          "esquina",
+          "fica",
+          "da",
+          "A",
+          "rua",
+          "na",
+          "principal",
+          "igreja"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Onde é a padaria mais próxima?",
+        "answers": [
+          "Onde fica a padaria mais próxima?"
+        ],
+        "explanation": "Para preguntar la ubicación de un lugar se usa 'ficar', no 'ser'; 'ser' se reserva para identidad.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde está a padaria mais próxima?",
+            "why": "'estar' no es el verbo habitual para preguntar la ubicación fija de un lugar; se usa 'ficar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "A farmácia fica ao lado de o supermercado.",
+        "answers": [
+          "A farmácia fica ao lado do supermercado."
+        ],
+        "explanation": "'De' más el artículo masculino 'o' se contrae siempre en 'do'; no se dejan separadas.",
+        "wrongAnswers": [
+          {
+            "answer": "A farmácia fica ao lado o supermercado.",
+            "why": "Esto elimina la preposición 'de', pero 'ao lado' siempre necesita 'de' antes del lugar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "O banco fica em frente o correio.",
+        "answers": [
+          "O banco fica em frente ao correio."
+        ],
+        "explanation": "'Em frente' va seguido de la preposición 'a', que se contrae con 'o' en 'ao'; no se usa sin preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "O banco fica em frente a correio.",
+            "why": "Falta la contracción con el artículo masculino 'o'; debe ser 'ao', no 'a' sola."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "A estação fica perto de a praça.",
+        "answers": [
+          "A estação fica perto da praça."
+        ],
+        "explanation": "'De' más el artículo femenino 'a' se contrae siempre en 'da'; no se dejan separadas.",
+        "wrongAnswers": [
+          {
+            "answer": "A estação fica perto à praça.",
+            "why": "'perto' siempre se usa con la preposición 'de', no con 'a'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "A igreja fica na esquina de a rua principal.",
+        "answers": [
+          "A igreja fica na esquina da rua principal."
+        ],
+        "explanation": "'De' más el artículo femenino 'a' se contrae siempre en 'da'; no se dejan separadas.",
+        "wrongAnswers": [
+          {
+            "answer": "A igreja fica na esquina a rua principal.",
+            "why": "Falta la preposición 'de'; 'esquina' siempre se indica con 'na esquina de'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "¿Dónde queda la farmacia más cercana?",
+        "answers": [
+          "Onde fica a farmácia mais próxima?"
+        ],
+        "explanation": "Para preguntar la ubicación de un lugar se usa el verbo 'ficar', no 'ser' ni 'estar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Onde é a farmácia mais próxima?",
+            "why": "'ser' no se usa para preguntar ubicación; se usa 'ficar'."
+          },
+          {
+            "answer": "Onde está a farmácia mais próxima?",
+            "why": "'estar' no es el verbo habitual para la ubicación fija de un lugar; se usa 'ficar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "El banco queda cerca de la plaza.",
+        "answers": [
+          "O banco fica perto da praça."
+        ],
+        "explanation": "'Perto' se usa siempre con 'de', y 'de' más el artículo femenino 'a' se contrae en 'da'.",
+        "wrongAnswers": [
+          {
+            "answer": "O banco fica perto de a praça.",
+            "why": "'de' más 'a' se contraen siempre en 'da', no se dejan separadas."
+          },
+          {
+            "answer": "O banco fica perto a praça.",
+            "why": "'perto' se usa con 'de', no con 'a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "La farmacia está al lado del supermercado.",
+        "answers": [
+          "A farmácia fica ao lado do supermercado.",
+          "A farmácia está ao lado do supermercado."
+        ],
+        "explanation": "'Ao lado' va seguido de 'de', y 'de' más el artículo masculino 'o' se contrae en 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "A farmácia fica ao lado de o supermercado.",
+            "why": "'de' más 'o' se contraen siempre en 'do', no se dejan separadas."
+          },
+          {
+            "answer": "A farmácia fica ao lado o supermercado.",
+            "why": "Falta la preposición 'de' antes del artículo contraído."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "¿Hay un hospital cerca de aquí?",
+        "answers": [
+          "Tem um hospital perto daqui?"
+        ],
+        "explanation": "'De' más 'aqui' se contrae siempre en la forma fija 'daqui'.",
+        "wrongAnswers": [
+          {
+            "answer": "Tem um hospital perto de aqui?",
+            "why": "'de' más 'aqui' se contrae siempre en 'daqui', no se dejan separadas."
+          },
+          {
+            "answer": "Tem um hospital perto aqui?",
+            "why": "Falta la preposición 'de'; la forma correcta es 'perto daqui'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "La municipalidad queda en el centro de la ciudad.",
+        "answers": [
+          "A prefeitura fica no centro da cidade."
+        ],
+        "explanation": "'Em' más 'o' se contrae en 'no', y 'de' más 'a' se contrae en 'da'; estas contracciones son obligatorias.",
+        "wrongAnswers": [
+          {
+            "answer": "A prefeitura fica em o centro de a cidade.",
+            "why": "'em' + 'o' y 'de' + 'a' siempre se contraen en 'no' y 'da', no se dejan separadas."
+          },
+          {
+            "answer": "A prefeitura é no centro da cidade.",
+            "why": "'ser' no se usa para indicar ubicación de un lugar; se usa 'ficar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Vivís cerca del correo.",
+        "answers": [
+          "Você mora perto do correio."
+        ],
+        "explanation": "'Perto' va seguido de 'de', y 'de' más el artículo masculino 'o' se contrae en 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você mora perto de o correio.",
+            "why": "'de' más 'o' se contraen siempre en 'do', no se dejan separadas."
+          },
+          {
+            "answer": "Você mora perto da correio.",
+            "why": "'correio' es masculino, corresponde 'do', no 'da'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Onde fica a farmácia mais próxima daqui?",
+        "alternatives": [
+          "Onde fica a farmácia mais próxima de aqui?"
+        ],
+        "translation": "¿Dónde queda la farmacia más cercana de aquí?",
+        "explanation": "Para preguntar ubicación se usa 'fica', no 'é'; además 'daqui' es la contracción natural de 'de' + 'aqui' y puede sonar como una sola palabra."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "O banco fica ao lado da padaria.",
+        "alternatives": [],
+        "translation": "El banco queda al lado de la panadería.",
+        "explanation": "'Ao lado de' se contrae con el artículo femenino en 'da' antes de un sustantivo como 'padaria'; prestar atención a esa fusión al escuchar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A praça fica em frente ao correio.",
+        "alternatives": [],
+        "translation": "La plaza queda frente al correo.",
+        "explanation": "'Em frente' siempre lleva 'a', que se contrae en 'ao' antes de un sustantivo masculino como 'correio'; no se dice 'em frente o correio'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "A estação de trem fica longe daqui.",
+        "alternatives": [
+          "A estação de trem fica longe de aqui."
+        ],
+        "translation": "La estación de tren queda lejos de aquí.",
+        "explanation": "'Longe' se usa con 'de', y en el habla cotidiana 'de' más 'aqui' suena como 'daqui', una sola unidad sonora."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "cem",
+          "sem"
+        ],
+        "target": 0,
+        "meanings": [
+          "cien",
+          "sin"
+        ],
+        "explanation": "Ambas palabras tienen el mismo sonido nasal 'ẽ'; la diferencia está solo en la consonante inicial, algo que en español no se nasaliza de esa forma."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 0,
+        "meanings": [
+          "cacería",
+          "casa"
+        ],
+        "explanation": "Entre vocales, 'casa' suena con una 'z' suave, mientras que 'caça' se pronuncia con un sonido 's' fuerte; el español no distingue esta diferencia."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí cuál de las dos palabras se escucha.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' es una vocal abierta y la 'ô' es cerrada; en español no existe esta oposición entre los dos sonidos de 'o'."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el barrio de Lucas y respondé las preguntas sobre la ubicación de los lugares.",
+        "text": "Lucas mora em Curitiba, num bairro tranquilo. A padaria fica perto da casa dele, na esquina da rua. O banco fica em frente à praça principal. A farmácia fica ao lado do supermercado, bem no centro do bairro. O correio fica longe da casa de Lucas, por isso ele vai de carro. Todos os dias, Lucas vai à padaria comprar pão fresco. Depois, ele passa na farmácia para comprar remédio para a mãe. No fim de semana, ele gosta de caminhar na praça com o cachorro. A igreja do bairro fica na esquina da rua principal, perto da escola. Lucas gosta muito do seu bairro.",
+        "questions": [
+          {
+            "prompt": "Onde fica a padaria?",
+            "options": [
+              "perto da casa de Lucas, na esquina da rua",
+              "ao lado do supermercado",
+              "longe da casa de Lucas",
+              "em frente à praça"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'A padaria fica perto da casa dele, na esquina da rua', usando el verbo 'ficar' para ubicar lugares."
+          },
+          {
+            "prompt": "Onde fica a farmácia?",
+            "options": [
+              "em frente à praça",
+              "longe da casa de Lucas",
+              "ao lado do supermercado",
+              "na esquina da rua principal"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'A farmácia fica ao lado do supermercado', usando la contracción de + o = do."
+          },
+          {
+            "prompt": "Por que Lucas vai de carro ao correio?",
+            "options": [
+              "porque fica na esquina da praça",
+              "porque fica longe da casa dele",
+              "porque fica ao lado do banco",
+              "porque fica perto da escola"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'O correio fica longe da casa de Lucas, por isso ele vai de carro'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el viaje de Marina a Salvador y respondé las preguntas sobre la ubicación de los lugares.",
+        "text": "Marina está em Salvador, de férias com a irmã. O hotel delas fica no centro da cidade. Perto do hotel tem uma praça bonita. A praça fica em frente ao mercado municipal. A padaria fica na esquina da rua do hotel. A farmácia fica longe do hotel, por isso elas vão de táxi. Hoje de manhã, Marina precisa trocar dinheiro. Ela pergunta na recepção: 'Onde fica o banco mais próximo?' O recepcionista explica que o banco fica ao lado da padaria. Marina e a irmã andam até lá. Depois, elas vão à praça tomar um café. À noite, elas vão a um restaurante perto da praia.",
+        "questions": [
+          {
+            "prompt": "Onde fica a praça perto do hotel?",
+            "options": [
+              "longe do hotel",
+              "ao lado da padaria",
+              "em frente ao mercado municipal",
+              "na esquina da rua do hotel"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'A praça fica em frente ao mercado municipal', usando 'em frente a' con la contracción a + o = ao."
+          },
+          {
+            "prompt": "Por que elas vão de táxi até a farmácia?",
+            "options": [
+              "porque fica perto da praça",
+              "porque fica longe do hotel",
+              "porque fica ao lado do banco",
+              "porque fica no centro da cidade"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'A farmácia fica longe do hotel, por isso elas vão de táxi'."
+          },
+          {
+            "prompt": "Onde fica o banco, segundo o recepcionista?",
+            "options": [
+              "na esquina da praça",
+              "em frente ao mercado",
+              "ao lado da padaria",
+              "longe do hotel"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que 'o banco fica ao lado da padaria', según la respuesta del recepcionista."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre Pedro y la Sra. Marta y respondé sobre la ubicación de los lugares.",
+        "situation": "Pedro es un turista en Recife y le pregunta a una vecina, la Sra. Marta, cómo llegar a algunos lugares de la ciudad.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Com licença, onde fica o correio?"
+          },
+          {
+            "speaker": "Marta",
+            "text": "O correio fica ao lado da farmácia."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "E a farmácia fica perto daqui?"
+          },
+          {
+            "speaker": "Marta",
+            "text": "Fica, sim. É na esquina desta rua."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "E tem um banco perto também?"
+          },
+          {
+            "speaker": "Marta",
+            "text": "Tem. O banco fica em frente à praça."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Muito obrigado! E o hospital, fica longe?"
+          },
+          {
+            "speaker": "Marta",
+            "text": "Fica um pouco longe, é melhor ir de ônibus."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde queda el correo?",
+            "options": [
+              "frente a la plaza",
+              "al lado de la farmacia",
+              "lejos de ahí",
+              "en la esquina de la calle"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marta dice 'O correio fica ao lado da farmácia', usando 'ao lado de' para indicar ubicación."
+          },
+          {
+            "prompt": "¿Dónde queda la farmacia?",
+            "options": [
+              "al lado del banco",
+              "frente a la plaza",
+              "en la esquina de esta calle",
+              "lejos de ahí"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marta dice que la farmacia 'fica, sim. É na esquina desta rua', es decir, en la esquina de esa calle."
+          },
+          {
+            "prompt": "¿Cómo conviene ir al hospital?",
+            "options": [
+              "caminando",
+              "en taxi",
+              "en colectivo",
+              "en bicicleta"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marta dice 'Fica um pouco longe, é melhor ir de ônibus', recomendando ir en colectivo porque queda lejos."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación entre Beatriz y Sofia y respondé sobre la ubicación de los lugares cerca del departamento.",
+        "situation": "Beatriz y Sofia son amigas y hablan por teléfono sobre un departamento que Beatriz va a ver en Belo Horizonte.",
+        "lines": [
+          {
+            "speaker": "Beatriz",
+            "text": "Sofia, eu vou ver um apartamento hoje."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Que legal! Onde fica o apartamento?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Fica perto do centro, na Rua das Flores."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Tem supermercado perto?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Tem! O supermercado fica ao lado do apartamento."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "E a farmácia, fica longe?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Não, a farmácia fica na esquina da rua."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Que bom! Parece um lugar ótimo para morar."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde queda el departamento que va a ver Beatriz?",
+            "options": [
+              "lejos del centro, en la Rua das Flores",
+              "al lado de la plaza",
+              "en la esquina de la farmacia",
+              "cerca del centro, en la Rua das Flores"
+            ],
+            "correctIndex": 3,
+            "explanation": "Beatriz dice 'Fica perto do centro, na Rua das Flores', indicando que el departamento queda cerca del centro."
+          },
+          {
+            "prompt": "¿Dónde queda el supermercado?",
+            "options": [
+              "lejos del departamento",
+              "al lado del departamento",
+              "en la esquina de la calle",
+              "frente a la plaza"
+            ],
+            "correctIndex": 1,
+            "explanation": "Beatriz dice 'O supermercado fica ao lado do apartamento', usando 'ao lado de' para ubicarlo."
+          },
+          {
+            "prompt": "¿Dónde queda la farmacia?",
+            "options": [
+              "lejos del departamento",
+              "al lado del supermercado",
+              "frente al departamento",
+              "en la esquina de la calle"
+            ],
+            "correctIndex": 3,
+            "explanation": "Beatriz dice 'a farmácia fica na esquina da rua', es decir, en la esquina de la calle."
+          }
+        ]
+      }
+    ],
+    "precos-e-dinheiro": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan está en una feria en San Pablo y el vendedor Carlos le dice el precio de una camisa. Elegí la opción correcta.",
+        "prompt": "A camisa custa dez ___.",
+        "options": [
+          "reais",
+          "réis",
+          "real",
+          "reals"
+        ],
+        "correctIndex": 0,
+        "explanation": "El plural de \"real\" (la moneda) es \"reais\", no \"real\" ni \"reals\".",
+        "optionNotes": [
+          "Correcto: \"reais\" es el plural correcto de la moneda brasileña.",
+          "Incorrecto: \"réis\" era la moneda antigua de Brasil, no la actual.",
+          "Incorrecto: \"real\" es la forma singular, no se usa con números mayores a uno.",
+          "Incorrecto: no existe esta palabra en portugués, es un calco mal formado del plural en español."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le dice a Carlos cómo quiere pagar la fruta que compró. Elegí la preposición correcta.",
+        "prompt": "Eu quero pagar ___ dinheiro.",
+        "options": [
+          "com",
+          "em",
+          "no",
+          "de"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para decir \"pagar en efectivo\" se usa la preposición \"em\", no \"com\".",
+        "optionNotes": [
+          "Incorrecto: es el calco directo del español \"con dinero\", pero en portugués no se usa así.",
+          "Correcto: \"em dinheiro\" es la forma fija para decir \"en efectivo\".",
+          "Incorrecto: \"no dinheiro\" no es la expresión correcta para pagar en efectivo.",
+          "Incorrecto: \"de dinheiro\" no tiene sentido en este contexto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan quiere saber el precio de un sombrero en una tienda de San Pablo. Elegí la palabra correcta para empezar la pregunta.",
+        "prompt": "___ custa esse chapéu?",
+        "options": [
+          "Quanto",
+          "Quanto é",
+          "Quando",
+          "Qual"
+        ],
+        "correctIndex": 0,
+        "explanation": "La expresión fija para preguntar el precio es \"Quanto custa?\"; como el verbo \"custa\" ya está en la frase, el hueco se completa con \"Quanto\".",
+        "optionNotes": [
+          "Correcto: \"Quanto custa?\" es la pregunta fija para pedir el precio.",
+          "Incorrecto: agregar \"é\" sobra porque el verbo \"custa\" ya está presente en la frase.",
+          "Incorrecto: \"Quando\" significa \"cuándo\", no tiene relación con el precio.",
+          "Incorrecto: \"Qual\" significa \"cuál\" y no se usa para preguntar precios."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le pregunta a la vendedora Fernanda si puede pagar con tarjeta en la tienda de ropa. Elegí la opción correcta.",
+        "prompt": "Posso pagar ___ cartão?",
+        "options": [
+          "de",
+          "no",
+          "com",
+          "em"
+        ],
+        "correctIndex": 1,
+        "explanation": "\"No cartão\" es la contracción de \"em + o\" y es la forma fija para decir \"con tarjeta\" al pagar.",
+        "optionNotes": [
+          "Incorrecto: \"de cartão\" no tiene sentido en este contexto.",
+          "Correcto: \"no cartão\" es la forma fija y correcta.",
+          "Incorrecto: es el calco directo del español \"con tarjeta\", pero en portugués no se dice así.",
+          "Incorrecto: falta la contracción con el artículo \"o\"; \"em cartão\" no se usa así."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Fernanda le muestra a Juan una calza y le dice el precio. Elegí el adjetivo con la forma correcta.",
+        "prompt": "Essa calça é muito ___, custa R$ 200.",
+        "options": [
+          "caro",
+          "barata",
+          "barato",
+          "cara"
+        ],
+        "correctIndex": 3,
+        "explanation": "El adjetivo debe concordar en género con el sustantivo; \"calça\" es femenino, por eso se usa \"cara\".",
+        "optionNotes": [
+          "Incorrecto: \"caro\" es masculino y \"calça\" es femenino, no concuerdan.",
+          "Incorrecto: además de significar lo contrario, \"barata\" tampoco corresponde al sentido de la frase.",
+          "Incorrecto: \"barato\" significa lo contrario de lo que indica el precio alto (R$ 200).",
+          "Correcto: \"cara\" concuerda en género con \"calça\" y el precio alto mencionado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan ve el precio de un par de zapatillas escrito en un cartel en la tienda. Elegí la forma correcta de escribirlo.",
+        "prompt": "Qual é a forma correta de escrever o preço?",
+        "options": [
+          "R$ 10-50",
+          "R$ 10.50",
+          "R$ 10:50",
+          "R$ 10,50"
+        ],
+        "correctIndex": 3,
+        "explanation": "En portugués los decimales se escriben con coma, igual que en castellano, no con punto como en inglés.",
+        "optionNotes": [
+          "Incorrecto: el guión no se usa para separar decimales en portugués.",
+          "Incorrecto: el punto para decimales se usa en inglés, no en portugués.",
+          "Incorrecto: los dos puntos no se usan para separar decimales en portugués.",
+          "Correcto: en portugués los decimales se separan con coma."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan compra una blusa en la tienda de Fernanda y ella le dice el precio. Completá con la palabra correcta.",
+        "sentence": "A blusa custa vinte ___.",
+        "hint": "(moeda do Brasil, plural)",
+        "answers": [
+          "reais"
+        ],
+        "explanation": "El plural de \"real\" (la moneda brasileña) es \"reais\", una forma irregular que hay que memorizar.",
+        "wrongAnswers": [
+          {
+            "answer": "real",
+            "why": "\"Real\" es la forma singular; con números mayores a uno se usa el plural \"reais\"."
+          },
+          {
+            "answer": "reals",
+            "why": "Esta palabra no existe en portugués, es un calco mal formado del plural en español."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le dice a Carlos, el vendedor de la feria, cómo prefiere pagar la fruta. Completá con la preposición correcta.",
+        "sentence": "Eu prefiro pagar ___ dinheiro.",
+        "hint": "(preposição)",
+        "answers": [
+          "em"
+        ],
+        "explanation": "Para decir \"pagar en efectivo\" se usa la preposición \"em\", no \"com\", a diferencia del español.",
+        "wrongAnswers": [
+          {
+            "answer": "com",
+            "why": "Es el calco directo del español \"con dinero\", pero en portugués se usa la preposición \"em\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan quiere saber el precio de un sombrero en la tienda de Fernanda. Completá la pregunta.",
+        "sentence": "___ custa esse chapéu?",
+        "hint": "(pregunta por el precio)",
+        "answers": [
+          "Quanto"
+        ],
+        "explanation": "La expresión fija para preguntar el precio con el verbo \"custar\" es simplemente \"Quanto custa?\".",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto é",
+            "why": "Sobra porque el verbo \"custa\" ya está en la frase; alcanza con \"Quanto\"."
+          },
+          {
+            "answer": "Qual",
+            "why": "\"Qual\" significa \"cuál\" y no se usa para preguntar precios."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le pregunta a Fernanda si la tienda acepta pagos con tarjeta. Completá la frase.",
+        "sentence": "Você aceita pagamento no ___?",
+        "hint": "(forma de pagamento com plástico)",
+        "answers": [
+          "cartão"
+        ],
+        "explanation": "\"No cartão\" es la forma fija y correcta para decir \"con tarjeta\" al pagar.",
+        "wrongAnswers": [
+          {
+            "answer": "dinheiro",
+            "why": "\"No dinheiro\" no se usa en portugués; para efectivo se dice \"em dinheiro\", sin contracción con \"o\"."
+          },
+          {
+            "answer": "crédito",
+            "why": "Falta la palabra \"cartão\"; la expresión completa es \"cartão de crédito\", no solo \"crédito\"."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le pregunta a Fernanda si puede pagar las zapatillas en cuotas. Completá con la preposición correcta.",
+        "sentence": "Posso parcelar ___ três vezes?",
+        "hint": "(preposição)",
+        "answers": [
+          "em"
+        ],
+        "explanation": "\"Parcelar em três vezes\" es la forma fija para decir \"pagar en tres cuotas\".",
+        "wrongAnswers": [
+          {
+            "answer": "de",
+            "why": "La preposición correcta para indicar la cantidad de cuotas es \"em\", no \"de\"."
+          },
+          {
+            "answer": "com",
+            "why": "No se usa \"com\" en esta expresión fija de pago en cuotas."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Carlos le ofrece a Juan una fruta con buen precio en la feria. Completá con el adjetivo correcto.",
+        "sentence": "Isso está muito ___, vou comprar.",
+        "hint": "(adjetivo: contrario de caro)",
+        "answers": [
+          "barato"
+        ],
+        "explanation": "Con \"isso\" (neutro) el adjetivo de precio se usa en su forma masculina: \"barato\".",
+        "wrongAnswers": [
+          {
+            "answer": "barata",
+            "why": "\"Isso\" es neutro, por eso el adjetivo va en la forma masculina \"barato\", no \"barata\"."
+          },
+          {
+            "answer": "caro",
+            "why": "\"Caro\" significa lo contrario; si Juan va a comprar es porque el precio le parece bajo, no alto."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le pregunta a Fernanda el precio de una camisa blanca en la tienda. Ordená las palabras para formar la oración.",
+        "sentence": "Quanto custa essa camisa branca?",
+        "alternatives": [
+          "Essa camisa branca custa quanto?"
+        ],
+        "translation": "¿Cuánto cuesta esa camisa blanca?",
+        "explanation": "La expresión fija \"Quanto custa?\" va al principio de la pregunta, seguida del objeto que se pregunta; también es natural en portugués hablado poner \"quanto\" al final de la oración.",
+        "tokens": [
+          "branca",
+          "camisa",
+          "essa",
+          "custa",
+          "Quanto"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le explica a Carlos cómo quiere pagar la fruta en la feria. Ordená las palabras para formar la oración.",
+        "sentence": "Eu prefiro pagar em dinheiro.",
+        "alternatives": [],
+        "translation": "Prefiero pagar en efectivo.",
+        "explanation": "\"Em dinheiro\" se usa con la preposición \"em\", no \"com\", para decir \"en efectivo\".",
+        "tokens": [
+          "pagar",
+          "prefiro",
+          "Eu",
+          "em",
+          "dinheiro"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le pregunta a Fernanda si puede pagar las zapatillas en tres cuotas. Ordená las palabras para formar la oración.",
+        "sentence": "Posso parcelar em três vezes?",
+        "alternatives": [],
+        "translation": "¿Puedo pagar en tres cuotas?",
+        "explanation": "\"Parcelar em três vezes\" es la forma fija para hablar de pagos en cuotas.",
+        "tokens": [
+          "três",
+          "em",
+          "parcelar",
+          "Posso",
+          "vezes"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Carlos le cuenta a Juan que un zapato está en oferta en la feria. Ordená las palabras para formar la oración.",
+        "sentence": "Esse sapato está barato na promoção.",
+        "alternatives": [],
+        "translation": "Ese zapato está barato en la promoción.",
+        "explanation": "El adjetivo \"barato\" concuerda en género masculino con \"sapato\" y va después del verbo \"estar\".",
+        "tokens": [
+          "sapato",
+          "está",
+          "na",
+          "barato",
+          "Esse",
+          "promoção"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le pregunta a Fernanda si la tienda acepta tarjeta de crédito. Ordená las palabras para formar la oración.",
+        "sentence": "Vocês aceitam cartão de crédito?",
+        "alternatives": [],
+        "translation": "¿Aceptan tarjeta de crédito?",
+        "explanation": "\"Cartão de crédito\" es la expresión fija para \"tarjeta de crédito\" en portugués.",
+        "tokens": [
+          "cartão",
+          "aceitam",
+          "Vocês",
+          "crédito",
+          "de"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Fernanda le dice a Juan el precio de una pollera en la tienda, pero usó mal el plural. Corregí el error.",
+        "sentence": "A saia custa vinte real.",
+        "answers": [
+          "A saia custa vinte reais."
+        ],
+        "explanation": "El plural de \"real\" (la moneda) es \"reais\", no \"real\".",
+        "wrongAnswers": [
+          {
+            "answer": "A saia custa vinte reas.",
+            "why": "Esta forma no existe en portugués; el plural correcto e irregular es \"reais\"."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le dice a Carlos cómo quiere pagar la fruta, pero usó mal la preposición. Corregí el error.",
+        "sentence": "Eu quero pagar com dinheiro.",
+        "answers": [
+          "Eu quero pagar em dinheiro."
+        ],
+        "explanation": "Para decir \"pagar en efectivo\" se usa la preposición \"em\", no \"com\", a diferencia del español.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu quero pagar o dinheiro.",
+            "why": "Cambia la preposición por un artículo, pero la expresión fija necesita \"em\", no un artículo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Fernanda escribe el precio de una remera en un cartel, pero usó el separador decimal incorrecto. Corregí el error.",
+        "sentence": "O preço é R$ 15.90.",
+        "answers": [
+          "O preço é R$ 15,90."
+        ],
+        "explanation": "En portugués los decimales se escriben con coma, igual que en castellano, no con punto como en inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "O preço é R$ 15:90.",
+            "why": "Los dos puntos tampoco son correctos; en portugués los decimales se separan con coma."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le pregunta a Fernanda si puede pagar con tarjeta, pero usó mal la preposición. Corregí el error.",
+        "sentence": "Posso pagar com cartão?",
+        "answers": [
+          "Posso pagar no cartão?"
+        ],
+        "explanation": "\"No cartão\" (contracción de \"em + o\") es la forma fija para decir \"con tarjeta\" al pagar.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso pagar em cartão?",
+            "why": "Falta la contracción con el artículo \"o\"; la forma fija es \"no cartão\", no \"em cartão\"."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan se queja del precio de una calza en la tienda, pero no concordó el adjetivo. Corregí el error.",
+        "sentence": "Essa calça é muito caro.",
+        "answers": [
+          "Essa calça é muito cara."
+        ],
+        "explanation": "El adjetivo debe concordar en género con el sustantivo; como \"calça\" es femenino, corresponde \"cara\".",
+        "wrongAnswers": [
+          {
+            "answer": "Essa calça é muito caros.",
+            "why": "El error no es de número sino de género; \"calça\" es femenino singular, el adjetivo debe ser \"cara\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pregunta a Fernanda el precio de una pollera en la tienda. Traducí la oración al portugués.",
+        "spanish": "¿Cuánto cuesta esta pollera?",
+        "answers": [
+          "Quanto custa essa saia?",
+          "Quanto é essa saia?"
+        ],
+        "explanation": "Para preguntar el precio se usa \"Quanto custa?\" o \"Quanto é?\", pero no se combinan ambas en la misma pregunta.",
+        "wrongAnswers": [
+          {
+            "answer": "Quanto é custa essa saia?",
+            "why": "Mezcla las dos expresiones fijas \"quanto custa\" y \"quanto é\"; hay que usar solo una de las dos."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice a Carlos cómo prefiere pagar la fruta en la feria. Traducí la oración al portugués.",
+        "spanish": "Prefiero pagar en efectivo.",
+        "answers": [
+          "Eu prefiro pagar em dinheiro.",
+          "Prefiro pagar em dinheiro."
+        ],
+        "explanation": "Para decir \"pagar en efectivo\" se usa la preposición \"em\", no \"com\".",
+        "wrongAnswers": [
+          {
+            "answer": "Eu prefiro pagar com dinheiro.",
+            "why": "Es el calco directo del español \"con dinero\"; en portugués se usa la preposición \"em\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Fernanda le dice a Juan el precio de una remera en la tienda. Traducí la oración al portugués.",
+        "spanish": "Esa remera cuesta treinta reales.",
+        "answers": [
+          "Essa camiseta custa trinta reais."
+        ],
+        "explanation": "El plural de la moneda brasileña \"real\" es irregular: \"reais\".",
+        "wrongAnswers": [
+          {
+            "answer": "Essa camiseta custa trinta real.",
+            "why": "El plural de \"real\" (la moneda) es \"reais\", no \"real\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pregunta a Fernanda si puede pagar las zapatillas en cuotas. Traducí la oración al portugués.",
+        "spanish": "¿Puedo pagar en cuotas?",
+        "answers": [
+          "Posso pagar parcelado?",
+          "Posso parcelar?"
+        ],
+        "explanation": "En portugués se usa \"parcelado\" o el verbo \"parcelar\" para hablar de pagos en cuotas, no la palabra \"cuotas\".",
+        "wrongAnswers": [
+          {
+            "answer": "Posso pagar em cuotas?",
+            "why": "\"Cuotas\" no es una palabra portuguesa; en Brasil se dice \"parcelado\" o se usa el verbo \"parcelar\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Fernanda le dice a Juan el total de la compra en la tienda. Traducí la oración al portugués.",
+        "spanish": "El total es diez reales con cincuenta centavos.",
+        "answers": [
+          "O total é dez reais e cinquenta centavos."
+        ],
+        "explanation": "Para combinar reales y centavos en un precio se usa la conjunción \"e\", no la preposición \"com\".",
+        "wrongAnswers": [
+          {
+            "answer": "O total é dez reais com cinquenta centavos.",
+            "why": "Para unir reales y centavos en portugués se usa \"e\", no \"com\"."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pregunta a Fernanda si la tienda acepta tarjeta de crédito. Traducí la oración al portugués.",
+        "spanish": "¿Aceptan tarjeta de crédito?",
+        "answers": [
+          "Vocês aceitam cartão de crédito?"
+        ],
+        "explanation": "La palabra portuguesa para \"tarjeta\" es \"cartão\", distinta del español \"tarjeta\".",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês aceitam tarjeta de crédito?",
+            "why": "\"Tarjeta\" es la palabra en español; en portugués se dice \"cartão\"."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Quanto custa esse sapato, por favor?",
+        "alternatives": [
+          "Quanto custa esse sapato?"
+        ],
+        "translation": "¿Cuánto cuesta ese zapato, por favor?",
+        "explanation": "'Quanto custa' es la forma fija para preguntar el precio; prestá atención a no confundir 'custa' con 'conta'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "São dez reais e cinquenta centavos.",
+        "alternatives": [
+          "São R$ 10,50."
+        ],
+        "translation": "Son diez reales con cincuenta centavos.",
+        "explanation": "El plural de 'real' es 'reais', no 'real'; además, en portugués los decimales se separan con coma, igual que en castellano."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Vocês aceitam cartão de crédito aqui?",
+        "alternatives": [],
+        "translation": "¿Aceptan tarjeta de crédito aquí?",
+        "explanation": "'Cartão' lleva el diptongo nasal 'ão', que suele confundirse con 'carta' si no se escucha bien la nasalización final."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración tal como la escuchás.",
+        "sentence": "Prefiro pagar em dinheiro, obrigado.",
+        "alternatives": [],
+        "translation": "Prefiero pagar en efectivo, gracias.",
+        "explanation": "Para decir 'pagar en efectivo' se usa la preposición 'em', no 'com', aunque en español digamos 'con'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "mil",
+          "mel"
+        ],
+        "target": 0,
+        "meanings": [
+          "mil",
+          "miel"
+        ],
+        "explanation": "'Mil' tiene una vocal 'i' cerrada, mientras que 'mel' tiene una vocal 'e' más abierta; prestá atención a ese sonido vocálico para diferenciarlas."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 0,
+        "meanings": [
+          "caro",
+          "auto"
+        ],
+        "explanation": "'Caro' se pronuncia con una sola 'r' suave (como la 'r' de 'pero' en español), mientras que 'carro' tiene una 'r' fuerte y vibrante, como la 'rr' de 'perro'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 1,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "'Pão' termina en el diptongo nasal 'ão', que se pronuncia por la nariz, mientras que 'pau' es un diptongo oral sin nasalidad."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre los precios y la forma de pago.",
+        "text": "Marina entra em uma loja no centro de São Paulo. Ela quer comprar uma camisa nova para o trabalho. A vendedora mostra três camisas diferentes. Marina pergunta: 'Quanto custa essa camisa azul?' A vendedora responde: 'Essa custa vinte e cinco reais.' Marina acha um pouco caro e pergunta sobre a camisa branca. 'A camisa branca custa quinze reais. Está na promoção', diz a vendedora. Marina gosta do preço e decide comprar a camisa branca. Ela pergunta: 'Vocês aceitam cartão?' A vendedora responde: 'Sim, aceitamos cartão e dinheiro.' Marina prefere pagar em dinheiro porque não gosta de usar cartão para compras pequenas. Ela paga quinze reais e recebe a camisa em uma sacola bonita. Marina sai da loja muito feliz com a compra barata.",
+        "questions": [
+          {
+            "prompt": "¿Cuánto cuesta la camisa blanca?",
+            "options": [
+              "Dez reais",
+              "Trinta reais",
+              "Quinze reais",
+              "Vinte e cinco reais"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'A camisa branca custa quinze reais'. Recordá que el plural de 'real' es 'reais'."
+          },
+          {
+            "prompt": "¿Cómo prefiere pagar Marina?",
+            "options": [
+              "Em dinheiro",
+              "Parcelado",
+              "No cartão",
+              "Não paga"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marina dice que prefiere pagar 'em dinheiro'. En portugués se usa la preposición 'em' para 'pagar en efectivo', no 'com'."
+          },
+          {
+            "prompt": "¿Por qué Marina no compra la camisa azul?",
+            "options": [
+              "Porque não tem seu tamanho",
+              "Porque acha caro",
+              "Porque não gosta da cor",
+              "Porque a loja fechou"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Marina acha um pouco caro', por eso elige la otra camisa más barata."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre una compra en la feria y respondé las preguntas.",
+        "text": "Pedro vai à feira perto da sua casa em Porto Alegre. Ele quer comprar frutas para a semana. Pedro escolhe maçãs, bananas e um melão. Ele pergunta ao vendedor: 'Quanto é no total?' O vendedor olha as frutas e diz: 'São doze reais e cinquenta centavos.' Pedro acha o preço justo e não é nada caro. Ele procura dinheiro na carteira, mas só tem uma nota de cinquenta reais. O vendedor diz: 'Sem problema, eu tenho troco.' Pedro paga com a nota de cinquenta reais. O vendedor devolve o troco: trinta e sete reais e cinquenta centavos. Pedro conta o dinheiro e agradece. Ele coloca as frutas na bolsa e volta para casa satisfeito com a compra.",
+        "questions": [
+          {
+            "prompt": "¿Cuánto es el total de la compra?",
+            "options": [
+              "Doze reais e cinquenta centavos",
+              "Trinta e sete reais",
+              "Dez reais",
+              "Cinquenta reais"
+            ],
+            "correctIndex": 0,
+            "explanation": "El vendedor dice 'São doze reais e cinquenta centavos'. Los centavos se expresan después de los reais, separados con 'e'."
+          },
+          {
+            "prompt": "¿Con qué paga Pedro?",
+            "options": [
+              "Parcelado",
+              "Com moedas",
+              "No cartão",
+              "Com uma nota de cinquenta reais"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice que Pedro 'paga com a nota de cinquenta reais' porque es lo único que tenía en la billetera."
+          },
+          {
+            "prompt": "¿Cuánto troco (vuelto) recibe Pedro?",
+            "options": [
+              "Doze reais e cinquenta centavos",
+              "Trinta e sete reais e cinquenta centavos",
+              "Cinquenta reais",
+              "Nada"
+            ],
+            "correctIndex": 1,
+            "explanation": "El vendedor devuelve 'trinta e sete reais e cinquenta centavos', que es la diferencia entre los cincuenta reales pagados y los doce con cincuenta de la compra."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación y respondé las preguntas sobre el precio y la forma de pago.",
+        "situation": "En un restaurante en Río de Janeiro, un cliente llamado Lucas habla con el garçom (mozo) sobre el precio de su plato.",
+        "lines": [
+          {
+            "speaker": "Garçom",
+            "text": "Aqui está o seu prato, senhor."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Obrigado! Quanto custa esse prato?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Custa vinte e dois reais."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Vocês aceitam cartão de crédito?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Sim, aceitamos cartão e dinheiro."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Posso parcelar em duas vezes?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Não, só aceitamos parcelamento em compras acima de cem reais."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Tudo bem, vou pagar no cartão em uma vez."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuánto cuesta el plato de Lucas?",
+            "options": [
+              "Vinte reais",
+              "Doze reais",
+              "Dois reais",
+              "Vinte e dois reais"
+            ],
+            "correctIndex": 3,
+            "explanation": "El garçom dice 'Custa vinte e dois reais', así se expresa el precio con la moneda 'reais'."
+          },
+          {
+            "prompt": "¿Puede Lucas pagar en cuotas?",
+            "options": [
+              "Sí, en dos cuotas",
+              "No, porque no aceptan tarjeta",
+              "No, porque el monto es menor a cien reales",
+              "Sí, en tres cuotas"
+            ],
+            "correctIndex": 2,
+            "explanation": "El garçom explica que el parcelamento solo es para compras 'acima de cem reais', y el plato cuesta menos que eso."
+          },
+          {
+            "prompt": "¿Cómo termina pagando Lucas?",
+            "options": [
+              "Em uma vez, no cartão",
+              "Não paga",
+              "Em duas vezes",
+              "Em dinheiro"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas dice 'vou pagar no cartão em uma vez' al final de la conversación."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación en la tienda de zapatos y respondé las preguntas.",
+        "situation": "En una tienda de zapatos en Belo Horizonte, una clienta llamada Camila habla con el vendedor sobre un sapato en promoción.",
+        "lines": [
+          {
+            "speaker": "Vendedor",
+            "text": "Boa tarde! Esse sapato está em promoção hoje."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Quanto custa?"
+          },
+          {
+            "speaker": "Vendedor",
+            "text": "Custa trinta e oito reais."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Isso é barato! Vou levar."
+          },
+          {
+            "speaker": "Vendedor",
+            "text": "Vai pagar em dinheiro ou no cartão?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Prefiro pagar em dinheiro."
+          },
+          {
+            "speaker": "Vendedor",
+            "text": "Perfeito. São trinta e oito reais."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Aqui está. Pode me dar o troco?"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuánto cuesta el zapato?",
+            "options": [
+              "Treze reais",
+              "Dezoito reais",
+              "Trinta e oito reais",
+              "Oitenta reais"
+            ],
+            "correctIndex": 2,
+            "explanation": "El vendedor dice dos veces 'trinta e oito reais', confirmando el precio del zapato."
+          },
+          {
+            "prompt": "¿Qué piensa Camila sobre el precio?",
+            "options": [
+              "Que es caro",
+              "Que es muy caro",
+              "Que es barato",
+              "Que es normal"
+            ],
+            "correctIndex": 2,
+            "explanation": "Camila dice 'Isso é barato!', usando el adjetivo 'barato' para expresar que el precio le parece bajo."
+          },
+          {
+            "prompt": "¿Cómo decide pagar Camila?",
+            "options": [
+              "Parcelado",
+              "No decide",
+              "Em dinheiro",
+              "No cartão"
+            ],
+            "correctIndex": 2,
+            "explanation": "Camila responde 'Prefiro pagar em dinheiro', usando la preposición 'em' para decir 'en efectivo'."
+          }
+        ]
+      }
+    ]
+  }
+}
