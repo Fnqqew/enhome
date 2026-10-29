@@ -9,7 +9,7 @@
 App de escritorio para Windows con cursos de **inglés, portugués de Brasil, italiano y francés**, cada uno del nivel **A1 al C1** del marco europeo (MCER). Cada curso tiene práctica diaria realista —conversaciones, situaciones y tandas de traducción—, resúmenes a tu medida, juegos y exámenes semanales. Todo el material lo genera y lo revisa **Claude Code** con tu propia suscripción.
 
 [![Revisión](https://github.com/Fnqqew/enhome/actions/workflows/ci.yml/badge.svg)](https://github.com/Fnqqew/enhome/actions/workflows/ci.yml)
-![Versión](https://img.shields.io/badge/versión-3.4.0-1c6fb3?style=flat-square)
+![Versión](https://img.shields.io/badge/versión-3.4.1-1c6fb3?style=flat-square)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b3c6d?style=flat-square&logo=windows&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-44-47848f?style=flat-square&logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-149eca?style=flat-square&logo=react&logoColor=white)

@@ -1,0 +1,3863 @@
+{
+  "subtopics": {
+    "estar-gerundio": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el diálogo.",
+        "prompt": "Lucas liga por vídeo para Marina e pergunta: \"O que você ___ agora?\"",
+        "options": [
+          "estás fazendo",
+          "está fazendo",
+          "vai fazer",
+          "faz"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para preguntar qué está pasando en este momento se usa estar + gerundio: está fazendo.",
+        "optionNotes": [
+          "Incorrecto: con 'você' en Brasil se usa 'está', no 'estás' (esa forma es de Portugal/España).",
+          "Correcto: estar + gerundio expresa una acción que ocurre justo ahora.",
+          "Incorrecto: vai fazer es futuro próximo, indica algo que todavía no pasó.",
+          "Incorrecto: el presente simple (faz) se usa para hábitos, no para algo que pasa en este instante."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la respuesta de Marina.",
+        "prompt": "Marina responde: \"Eu ___ um café agora.\"",
+        "options": [
+          "fazendo",
+          "estou fazer",
+          "sou fazendo",
+          "estou fazendo"
+        ],
+        "correctIndex": 3,
+        "explanation": "La acción en curso se forma con estar + gerundio: estou fazendo.",
+        "optionNotes": [
+          "Incorrecto: falta el verbo estar, no se puede usar el gerundio solo.",
+          "Incorrecto: estar + infinitivo (estou fazer) es la forma de Portugal, no de Brasil.",
+          "Incorrecto: se usa estar, no ser, para acciones en curso.",
+          "Correcto: estou (estar) + fazendo (gerundio) describe algo que está pasando ahora."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta sobre el clima en Buenos Aires.",
+        "prompt": "Marina escreve: \"Aqui em Buenos Aires ___ muito.\"",
+        "options": [
+          "está chover",
+          "chove chovendo",
+          "estão chovendo",
+          "está chovendo"
+        ],
+        "correctIndex": 3,
+        "explanation": "Chover es un verbo impersonal, siempre va en tercera persona singular: está chovendo.",
+        "optionNotes": [
+          "Incorrecto: falta el gerundio, chover termina en -er pero el gerundio es chovendo.",
+          "Incorrecto: no existen dos formas juntas del verbo así.",
+          "Incorrecto: chover no tiene sujeto plural, nunca se dice 'estão chovendo'.",
+          "Correcto: está chovendo, tercera persona singular del verbo impersonal chover."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta sobre los chicos en el parque.",
+        "prompt": "Lucas cuenta: \"Os meninos ___ futebol no parque.\"",
+        "options": [
+          "estão jogar",
+          "está jogando",
+          "jogando estão",
+          "estão jogando"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con un sujeto plural (os meninos) el verbo estar también va en plural: estão jogando.",
+        "optionNotes": [
+          "Incorrecto: después de estar va el gerundio, no el infinitivo.",
+          "Incorrecto: está es singular, no concuerda con un sujeto plural.",
+          "Incorrecto: el orden correcto es estar + gerundio, no al revés.",
+          "Correcto: estão (plural) concuerda con 'os meninos' y jogando es el gerundio."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para la llamada sobre el alquiler.",
+        "prompt": "O corretor liga para Marina e pergunta: \"Você ___ comigo agora?\"",
+        "options": [
+          "está falar",
+          "está falando",
+          "falando está",
+          "estou falando"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'você' se usa está, y después va el gerundio falando: está falando.",
+        "optionNotes": [
+          "Incorrecto: después de estar va el gerundio, no el infinitivo.",
+          "Correcto: está (3ª persona, usada con você) + falando (gerundio).",
+          "Incorrecto: el gerundio no puede ir antes del verbo estar.",
+          "Incorrecto: estou es primera persona (eu), no corresponde a 'você'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta sobre la médica.",
+        "prompt": "En la sala de espera, Marina escribe: \"A médica ___ com outro paciente.\"",
+        "options": [
+          "está atendendo",
+          "está atender",
+          "atendendo está",
+          "estão atendendo"
+        ],
+        "correctIndex": 0,
+        "explanation": "El sujeto 'a médica' es singular, por eso se usa está + atendendo (gerundio de atender).",
+        "optionNotes": [
+          "Correcto: está (singular, concuerda con 'a médica') + atendendo (gerundio).",
+          "Incorrecto: después de estar va el gerundio, no el infinitivo.",
+          "Incorrecto: el gerundio no puede ir antes del verbo estar.",
+          "Incorrecto: estão es plural, no concuerda con 'a médica' que es singular."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con estar + gerundio.",
+        "sentence": "Lucas, eu ___ o jantar agora.",
+        "hint": "(cozinhar)",
+        "answers": [
+          "estou cozinhando"
+        ],
+        "explanation": "Para decir que una acción está pasando ahora se usa estar + gerundio: estou cozinhando.",
+        "wrongAnswers": [
+          {
+            "answer": "sou cozinhando",
+            "why": "se usa estar, no ser, para formar el gerundio de una acción en curso."
+          },
+          {
+            "answer": "estou cozinhar",
+            "why": "después de estar va el gerundio (-ando/-endo/-indo), no el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con estar + gerundio.",
+        "sentence": "Minha irmã ___ no quarto, não faça barulho.",
+        "hint": "(dormir)",
+        "answers": [
+          "está dormindo"
+        ],
+        "explanation": "Los verbos terminados en -ir forman el gerundio en -indo: dormir → dormindo.",
+        "wrongAnswers": [
+          {
+            "answer": "está dormendo",
+            "why": "el gerundio de dormir termina en -indo (dormindo), no en -endo."
+          },
+          {
+            "answer": "está a dormir",
+            "why": "esa forma (estar a + infinitivo) se usa en Portugal; en Brasil se usa el gerundio."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el gerundio del verbo chover.",
+        "sentence": "Está ___ muito hoje, leve o guarda-chuva.",
+        "hint": "(chover)",
+        "answers": [
+          "chovendo"
+        ],
+        "explanation": "El gerundio de chover es chovendo, formado con -endo porque es un verbo terminado en -er.",
+        "wrongAnswers": [
+          {
+            "answer": "chovando",
+            "why": "el gerundio de chover es chovendo, con e, no con a."
+          },
+          {
+            "answer": "chover",
+            "why": "falta la terminación del gerundio (-endo); chover es el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con estar + gerundio, con el sujeto en plural.",
+        "sentence": "Os meninos ___ futebol no parque agora.",
+        "hint": "(jogar)",
+        "answers": [
+          "estão jogando"
+        ],
+        "explanation": "El sujeto 'os meninos' es plural, por eso el verbo estar también va en plural: estão jogando.",
+        "wrongAnswers": [
+          {
+            "answer": "está jogando",
+            "why": "está es singular, pero el sujeto 'os meninos' es plural."
+          },
+          {
+            "answer": "estão jogar",
+            "why": "después de estar va el gerundio, no el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con estar + gerundio, usando la negación correctamente.",
+        "sentence": "Eu não ___ nada, pode repetir?",
+        "hint": "(ouvir)",
+        "answers": [
+          "estou ouvindo"
+        ],
+        "explanation": "El não va antes del verbo estar; el gerundio de ouvir es ouvindo (-ir → -indo).",
+        "wrongAnswers": [
+          {
+            "answer": "sou ouvindo",
+            "why": "se usa estar, no ser, para la acción en curso."
+          },
+          {
+            "answer": "estou ouvendo",
+            "why": "el gerundio de ouvir termina en -indo (ouvindo), no en -endo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con estar + gerundio, con el sujeto en plural.",
+        "sentence": "Vocês ___ do quê?",
+        "hint": "(rir)",
+        "answers": [
+          "estão rindo"
+        ],
+        "explanation": "Con 'vocês' (plural) se usa estão, y el gerundio de rir es rindo.",
+        "wrongAnswers": [
+          {
+            "answer": "estão rir",
+            "why": "después de estar va el gerundio, no el infinitivo."
+          },
+          {
+            "answer": "está rindo",
+            "why": "está es singular, pero 'vocês' es plural."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu estou estudando português agora.",
+        "alternatives": [
+          "Agora eu estou estudando português."
+        ],
+        "translation": "Yo estoy estudiando portugués ahora.",
+        "explanation": "La estructura es sujeto + estar + gerundio + complemento: eu estou estudando português.",
+        "tokens": [
+          "português",
+          "agora",
+          "estudando",
+          "Eu",
+          "estou"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Lucas está jogando futebol no parque.",
+        "alternatives": [],
+        "translation": "Lucas está jugando al fútbol en el parque.",
+        "explanation": "El orden es sujeto + está + gerundio + complemento: Lucas está jogando futebol no parque.",
+        "tokens": [
+          "parque",
+          "no",
+          "jogando",
+          "futebol",
+          "Lucas",
+          "está"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Minha mãe está cozinhando o jantar agora.",
+        "alternatives": [
+          "Agora minha mãe está cozinhando o jantar."
+        ],
+        "translation": "Mi mamá está cocinando la cena ahora.",
+        "explanation": "La oración sigue el orden sujeto + está + gerundio + objeto + agora.",
+        "tokens": [
+          "está",
+          "jantar",
+          "Minha",
+          "o",
+          "cozinhando",
+          "agora",
+          "mãe"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O corretor está falando com a Marina.",
+        "alternatives": [],
+        "translation": "El agente inmobiliario está hablando con Marina.",
+        "explanation": "El orden correcto es sujeto + está + gerundio + complemento con 'com'.",
+        "tokens": [
+          "está",
+          "com",
+          "a",
+          "Marina",
+          "corretor",
+          "falando",
+          "O"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A médica está atendendo outro paciente agora.",
+        "alternatives": [
+          "Agora a médica está atendendo outro paciente."
+        ],
+        "translation": "La médica está atendiendo a otro paciente ahora.",
+        "explanation": "La estructura es sujeto + está + gerundio + objeto + agora.",
+        "tokens": [
+          "atendendo",
+          "agora",
+          "outro",
+          "A",
+          "está",
+          "paciente",
+          "médica"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu sou estudando para a prova.",
+        "answers": [
+          "Eu estou estudando para a prova."
+        ],
+        "explanation": "Para la acción en curso se usa estar, no ser: eu estou estudando.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu sou estudando para as provas.",
+            "why": "cambia 'prova' a plural pero no corrige el verdadero error, que es usar ser en vez de estar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Lucas estão jogando futebol.",
+        "answers": [
+          "Lucas está jogando futebol."
+        ],
+        "explanation": "Lucas es un sujeto singular, por eso el verbo estar debe ir en singular: está jogando.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas estão jogano futebol.",
+            "why": "cambia la terminación del gerundio en vez de corregir la concordancia del verbo estar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Está chovando muito hoje.",
+        "answers": [
+          "Está chovendo muito hoje."
+        ],
+        "explanation": "El gerundio de chover es chovendo, con la vocal e, no chovando.",
+        "wrongAnswers": [
+          {
+            "answer": "Estão chovendo muito hoje.",
+            "why": "cambia el número del verbo estar, pero chover siempre va en singular; eso no corrige el error de la oración original."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu não estou fazer nada agora.",
+        "answers": [
+          "Eu não estou fazendo nada agora."
+        ],
+        "explanation": "Después de estar va el gerundio, no el infinitivo: estou fazendo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não sou fazendo nada agora.",
+            "why": "cambia estar por ser, que no es el error presente en esta oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Os meninos estão rir muito.",
+        "answers": [
+          "Os meninos estão rindo muito."
+        ],
+        "explanation": "Después de estar va el gerundio; el gerundio de rir es rindo.",
+        "wrongAnswers": [
+          {
+            "answer": "Os meninos está rindo muito.",
+            "why": "cambia la conjugación de estar a singular en vez de corregir el gerundio, que era el error original."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Qué estás haciendo ahora, Lucas?",
+        "answers": [
+          "O que você está fazendo agora, Lucas?",
+          "O que você está fazendo agora Lucas?"
+        ],
+        "explanation": "Se usa estar + gerundio para preguntar qué está pasando en este momento: está fazendo.",
+        "wrongAnswers": [
+          {
+            "answer": "O que você é fazendo agora, Lucas?",
+            "why": "se usa estar, no ser, para acciones en curso."
+          },
+          {
+            "answer": "O que você está fazer agora, Lucas?",
+            "why": "después de estar va el gerundio (-ando/-endo/-indo), no el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Estoy estudiando para el examen de portugués.",
+        "answers": [
+          "Estou estudando para a prova de português.",
+          "Estou estudando para o exame de português."
+        ],
+        "explanation": "La acción en curso se forma con estar + gerundio: estou estudando.",
+        "wrongAnswers": [
+          {
+            "answer": "Sou estudando para a prova de português.",
+            "why": "se usa estar, no ser, para formar esta estructura."
+          },
+          {
+            "answer": "Estou estudar para a prova de português.",
+            "why": "falta el gerundio; después de estar va -ando/-endo/-indo, no el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Está lloviendo mucho en Buenos Aires.",
+        "answers": [
+          "Está chovendo muito em Buenos Aires."
+        ],
+        "explanation": "Chover es impersonal y siempre va en tercera persona singular: está chovendo.",
+        "wrongAnswers": [
+          {
+            "answer": "Estão chovendo muito em Buenos Aires.",
+            "why": "chover es impersonal y siempre va en singular, nunca en plural."
+          },
+          {
+            "answer": "Está chovando muito em Buenos Aires.",
+            "why": "el gerundio de chover es chovendo, con e, no chovando."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Mi mamá está cocinando la cena ahora.",
+        "answers": [
+          "Minha mãe está cozinhando o jantar agora."
+        ],
+        "explanation": "La acción en curso se forma con estar + gerundio: está cozinhando.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha mãe é cozinhando o jantar agora.",
+            "why": "se usa estar, no ser, para acciones en curso."
+          },
+          {
+            "answer": "Minha mãe está cozinhar o jantar agora.",
+            "why": "falta el gerundio después de estar; cozinhar es el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "No estoy escuchando nada, perdón.",
+        "answers": [
+          "Não estou ouvindo nada, desculpa.",
+          "Não estou ouvindo nada, desculpe."
+        ],
+        "explanation": "El não se coloca antes de estar, y el gerundio de ouvir es ouvindo.",
+        "wrongAnswers": [
+          {
+            "answer": "Estou não ouvindo nada, desculpa.",
+            "why": "el não debe ir antes de estar, no después."
+          },
+          {
+            "answer": "Não sou ouvindo nada, desculpa.",
+            "why": "se usa estar, no ser, para acciones en curso."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Los chicos están jugando al fútbol en el parque.",
+        "answers": [
+          "Os meninos estão jogando futebol no parque."
+        ],
+        "explanation": "Con sujeto plural (os meninos) el verbo estar va en plural: estão jogando.",
+        "wrongAnswers": [
+          {
+            "answer": "Os meninos está jogando futebol no parque.",
+            "why": "está es singular, pero el sujeto 'os meninos' es plural."
+          },
+          {
+            "answer": "Os meninos estão jogar futebol no parque.",
+            "why": "después de estar va el gerundio, no el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Marcos está trabalhando no escritório agora.",
+        "alternatives": [],
+        "translation": "Marcos está trabajando en la oficina ahora.",
+        "explanation": "Prestá atención al final '-ando' del gerundio; no se escribe '-endo' porque 'trabalhar' es un verbo en -ar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Ana está estudando português em casa.",
+        "alternatives": [],
+        "translation": "Ana está estudiando portugués en casa.",
+        "explanation": "La nasal de 'em' puede sonar parecida a 'en' en español; no confundas 'em casa' con 'escada'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Eles estão comendo pizza no restaurante.",
+        "alternatives": [],
+        "translation": "Ellos están comiendo pizza en el restaurante.",
+        "explanation": "El gerundio de verbos en -er termina en '-endo'; no lo confundas con el '-ando' de los verbos en -ar, como en 'comendo' (no 'comando')."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Está chovendo muito em São Paulo hoje.",
+        "alternatives": [],
+        "translation": "Está lloviendo mucho en San Pablo hoy.",
+        "explanation": "El sujeto 'está' no se repite antes de 'chovendo'; es una sola acción con 'estar + gerundio'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "mão",
+          "mau"
+        ],
+        "target": 0,
+        "meanings": [
+          "mano",
+          "malo"
+        ],
+        "explanation": "El sonido nasal de 'ão' se pronuncia con el aire saliendo por la nariz; 'au' es un diptongo oral sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' es una vocal abierta y la 'ô' es cerrada; en español no distinguimos esos dos sonidos de 'o'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 0,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "La 's' entre vocales suena como 'z' suave, mientras que 'ç' siempre suena como la 's' fuerte del español."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación telefónica entre dos amigas y respondé qué está haciendo cada persona en este momento.",
+        "situation": "Es sábado por la tarde. Ana llama por teléfono a su amiga Beatriz para charlar un rato.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Oi, Beatriz! O que você está fazendo?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Oi, Ana! Eu estou estudando para a prova."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Que legal! E o Pedro, o que ele está fazendo?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Ele está jogando futebol com os amigos."
+          },
+          {
+            "speaker": "Ana",
+            "text": "E a sua mãe?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Ela está cozinhando o jantar agora."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Tá bom, eu vou te ligar depois. Tchau!"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Tchau, Ana!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué está haciendo Beatriz en este momento?",
+            "options": [
+              "Está estudiando para la prueba",
+              "Está hablando por teléfono con Pedro",
+              "Está jugando al fútbol",
+              "Está cocinando la cena"
+            ],
+            "correctIndex": 0,
+            "explanation": "Beatriz dice 'Eu estou estudando para a prova', usando estar + gerundio (estudando) para expresar una acción que está pasando ahora."
+          },
+          {
+            "prompt": "¿Qué está haciendo Pedro ahora?",
+            "options": [
+              "Está jugando al fútbol con amigos",
+              "Está durmiendo",
+              "Está estudiando",
+              "Está cocinando"
+            ],
+            "correctIndex": 0,
+            "explanation": "Beatriz responde 'Ele está jogando futebol com os amigos', con el verbo jogar en gerundio (jogando) acompañado de está."
+          },
+          {
+            "prompt": "¿Qué está haciendo la madre de Beatriz?",
+            "options": [
+              "Está jugando al fútbol",
+              "Está cocinando la cena",
+              "Está estudiando",
+              "Está limpiando la casa"
+            ],
+            "correctIndex": 1,
+            "explanation": "Beatriz dice 'Ela está cozinhando o jantar agora', usando el gerundio cozinhando para describir la acción en curso de la madre."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación en la oficina y respondé qué está haciendo cada persona en este momento.",
+        "situation": "En una oficina en San Pablo, el jefe Carlos llama por teléfono a su empleada Lúcia para saber qué está haciendo el equipo.",
+        "lines": [
+          {
+            "speaker": "Carlos",
+            "text": "Lúcia, o que você está fazendo agora?"
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "Estou escrevendo um e-mail para o cliente."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "E o João, está trabalhando no relatório?"
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "Não, ele está almoçando no restaurante."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "E a Marina e o Pedro?"
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "Eles estão falando com o cliente novo."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Está bem, obrigado, Lúcia."
+          },
+          {
+            "speaker": "Lúcia",
+            "text": "De nada, Carlos!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué está haciendo Lúcia en este momento?",
+            "options": [
+              "Está trabajando en el informe",
+              "Está almorzando",
+              "Está escribiendo un e-mail",
+              "Está hablando con el cliente nuevo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lúcia dice 'Estou escrevendo um e-mail para o cliente', usando estar + gerundio (escrevendo) para la acción en curso."
+          },
+          {
+            "prompt": "¿Qué está haciendo João ahora?",
+            "options": [
+              "Está escribiendo un e-mail",
+              "Está almorzando en el restaurante",
+              "Está trabajando en el informe",
+              "Está hablando con el cliente"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lúcia responde 'ele está almoçando no restaurante', con el gerundio almoçando, no 'trabalhando no relatório' como preguntó Carlos."
+          },
+          {
+            "prompt": "¿Qué están haciendo Marina y Pedro?",
+            "options": [
+              "Están trabajando en el informe",
+              "Están hablando con el cliente nuevo",
+              "Están almorzando",
+              "Están escribiendo e-mails"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lúcia dice 'Eles estão falando com o cliente novo', usando estão + gerundio (falando) para la tercera persona del plural."
+          }
+        ]
+      }
+    ],
+    "ir-infinitivo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan.",
+        "prompt": "Juan le cuenta a Bia: \"Eu ___ viajar para o Rio em janeiro.\"",
+        "options": [
+          "vou a",
+          "vamos",
+          "vai",
+          "vou"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'eu' el verbo ir es 'vou', y va directo con el infinitivo, sin preposición: vou viajar.",
+        "optionNotes": [
+          "Incorrecto: en portugués no se usa 'a' entre ir y el infinitivo.",
+          "Incorrecto: 'vamos' es la forma de nós, no de eu.",
+          "Incorrecto: 'vai' es la forma de ele/ela/você, no de eu.",
+          "Correcto: vou (eu) + infinitivo, sin preposición."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta de Bia.",
+        "prompt": "Bia pregunta: \"Vocês ___ jantar fora no sábado?\"",
+        "options": [
+          "vão",
+          "vão a",
+          "vai",
+          "vamos"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'vocês' el verbo ir es 'vão', y va directo con el infinitivo: vão jantar.",
+        "optionNotes": [
+          "Correcto: vão (vocês) + infinitivo, sin preposición.",
+          "Incorrecto: en portugués no se usa 'a' entre ir y el infinitivo.",
+          "Incorrecto: 'vai' es la forma de ele/ela/você (singular), no de vocês.",
+          "Incorrecto: 'vamos' es la forma de nós, no de vocês."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que cuenta Juan.",
+        "prompt": "Juan conta: \"A Marina ___ começar um novo emprego.\"",
+        "options": [
+          "vai",
+          "vou",
+          "vamos",
+          "vai a"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'a Marina' (ela) el verbo ir es 'vai', y va directo con el infinitivo: vai começar.",
+        "optionNotes": [
+          "Correcto: vai (ela) + infinitivo, sin preposición.",
+          "Incorrecto: 'vou' es la forma de eu, no de ela.",
+          "Incorrecto: 'vamos' es la forma de nós, no de ela.",
+          "Incorrecto: en portugués no se usa 'a' entre ir y el infinitivo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el plan de Juan y Bia.",
+        "prompt": "Juan e Bia dizem: \"Nós ___ pegar um táxi para o aeroporto.\"",
+        "options": [
+          "vamos",
+          "vamos a",
+          "vai",
+          "vou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'nós' el verbo ir es 'vamos', y va directo con el infinitivo: vamos pegar.",
+        "optionNotes": [
+          "Correcto: vamos (nós) + infinitivo, sin preposición.",
+          "Incorrecto: en portugués no se usa 'a' entre ir y el infinitivo.",
+          "Incorrecto: 'vai' es la forma de ele/ela/você, no de nós.",
+          "Incorrecto: 'vou' es la forma de eu, no de nós."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la explicación de Juan.",
+        "prompt": "Juan explica: \"Eu não ___ sair hoje, tenho uma consulta médica.\"",
+        "options": [
+          "vai",
+          "vamos",
+          "vou",
+          "vou a"
+        ],
+        "correctIndex": 2,
+        "explanation": "La negación não va antes del verbo ir, y con 'eu' la forma correcta es 'vou': não vou sair.",
+        "optionNotes": [
+          "Incorrecto: 'vai' es la forma de ele/ela/você, no de eu.",
+          "Incorrecto: 'vamos' es la forma de nós, no de eu.",
+          "Correcto: vou (eu) + infinitivo, con não antes del verbo ir.",
+          "Incorrecto: en portugués no se usa 'a' entre ir y el infinitivo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la pregunta de la corretora.",
+        "prompt": "A corretora pergunta: \"Vocês ___ alugar o apartamento este mês?\"",
+        "options": [
+          "vamos",
+          "vai",
+          "vão a",
+          "vão"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'vocês' el verbo ir es 'vão', y va directo con el infinitivo: vão alugar.",
+        "optionNotes": [
+          "Incorrecto: 'vamos' es la forma de nós, no de vocês.",
+          "Incorrecto: 'vai' es la forma de ele/ela/você (singular), no de vocês.",
+          "Incorrecto: en portugués no se usa 'a' entre ir y el infinitivo.",
+          "Correcto: vão (vocês) + infinitivo, sin preposición."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir + infinitivo.",
+        "sentence": "Eu ___ visitar meus pais no domingo.",
+        "hint": "(visitar)",
+        "answers": [
+          "vou visitar"
+        ],
+        "explanation": "Con 'eu' el verbo ir es 'vou', y va directo con el infinitivo, sin preposición: vou visitar.",
+        "wrongAnswers": [
+          {
+            "answer": "vou a visitar",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "vai visitar",
+            "why": "'vai' es la forma de ele/ela/você, no de eu."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir + infinitivo.",
+        "sentence": "Marina ___ começar um novo emprego na segunda.",
+        "hint": "(começar)",
+        "answers": [
+          "vai começar"
+        ],
+        "explanation": "Con 'Marina' (ela) el verbo ir es 'vai', y va directo con el infinitivo: vai começar.",
+        "wrongAnswers": [
+          {
+            "answer": "vou começar",
+            "why": "'vou' es la forma de eu, no de ela."
+          },
+          {
+            "answer": "vai a começar",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir + infinitivo.",
+        "sentence": "Nós ___ alugar um apartamento em São Paulo.",
+        "hint": "(alugar)",
+        "answers": [
+          "vamos alugar"
+        ],
+        "explanation": "Con 'nós' el verbo ir es 'vamos', y va directo con el infinitivo: vamos alugar.",
+        "wrongAnswers": [
+          {
+            "answer": "vai alugar",
+            "why": "'vai' es la forma de ele/ela/você, no de nós."
+          },
+          {
+            "answer": "vamos a alugar",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir + infinitivo.",
+        "sentence": "Vocês ___ jantar fora no sábado?",
+        "hint": "(jantar)",
+        "answers": [
+          "vão jantar"
+        ],
+        "explanation": "Con 'vocês' el verbo ir es 'vão', y va directo con el infinitivo: vão jantar.",
+        "wrongAnswers": [
+          {
+            "answer": "vai jantar",
+            "why": "'vai' es la forma de ele/ela/você (singular), no de vocês."
+          },
+          {
+            "answer": "vão a jantar",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir + infinitivo.",
+        "sentence": "Eu não ___ sair hoje porque tenho uma consulta.",
+        "hint": "(sair)",
+        "answers": [
+          "vou sair"
+        ],
+        "explanation": "La negación não va antes del verbo ir; con 'eu' la forma correcta es 'vou': não vou sair.",
+        "wrongAnswers": [
+          {
+            "answer": "vou a sair",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "vai sair",
+            "why": "'vai' es la forma de ele/ela/você, no de eu."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir + infinitivo.",
+        "sentence": "A gente ___ pegar um táxi para o aeroporto.",
+        "hint": "(pegar)",
+        "answers": [
+          "vai pegar"
+        ],
+        "explanation": "'A gente' funciona como sujeto singular (equivalente a ele/ela), por eso usa 'vai': vai pegar.",
+        "wrongAnswers": [
+          {
+            "answer": "vamos pegar",
+            "why": "'a gente' se conjuga como ele/ela, con 'vai', no con 'vamos' (esa es la forma de nós)."
+          },
+          {
+            "answer": "vai a pegar",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu vou viajar para o Rio em janeiro.",
+        "alternatives": [
+          "Em janeiro eu vou viajar para o Rio."
+        ],
+        "translation": "Yo voy a viajar a Río en enero.",
+        "explanation": "La estructura es sujeto + ir conjugado + infinitivo + complemento: eu vou viajar para o Rio.",
+        "tokens": [
+          "Eu",
+          "viajar",
+          "vou",
+          "para",
+          "janeiro",
+          "o",
+          "em",
+          "Rio"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Vocês vão jantar fora no sábado?",
+        "alternatives": [],
+        "translation": "¿Ustedes van a cenar afuera el sábado?",
+        "explanation": "Con 'vocês' el verbo ir es 'vão', seguido directo del infinitivo jantar.",
+        "tokens": [
+          "no",
+          "jantar",
+          "vão",
+          "sábado",
+          "fora",
+          "Vocês"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós vamos alugar um apartamento novo.",
+        "alternatives": [],
+        "translation": "Nosotros vamos a alquilar un departamento nuevo.",
+        "explanation": "Con 'nós' el verbo ir es 'vamos', seguido directo del infinitivo alugar.",
+        "tokens": [
+          "alugar",
+          "um",
+          "novo",
+          "Nós",
+          "vamos",
+          "apartamento"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Marina vai começar um novo emprego.",
+        "alternatives": [],
+        "translation": "Marina va a empezar un nuevo trabajo.",
+        "explanation": "Con 'Marina' (ela) el verbo ir es 'vai', seguido directo del infinitivo começar.",
+        "tokens": [
+          "Marina",
+          "começar",
+          "vai",
+          "emprego",
+          "novo",
+          "um"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu não vou sair hoje à noite.",
+        "alternatives": [],
+        "translation": "Yo no voy a salir hoy a la noche.",
+        "explanation": "La negación não va antes del verbo ir: eu não vou sair.",
+        "tokens": [
+          "noite",
+          "vou",
+          "não",
+          "hoje",
+          "à",
+          "Eu",
+          "sair"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu vou a viajar para o Rio em janeiro.",
+        "answers": [
+          "Eu vou viajar para o Rio em janeiro."
+        ],
+        "explanation": "En portugués no se usa la preposición 'a' entre ir y el infinitivo: vou viajar.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu vai viajar para o Rio em janeiro.",
+            "why": "quita la preposición 'a' pero cambia mal la conjugación: con 'eu' el verbo ir debe ser 'vou', no 'vai'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Nós vai alugar um apartamento novo.",
+        "answers": [
+          "Nós vamos alugar um apartamento novo."
+        ],
+        "explanation": "Con 'nós' el verbo ir debe ser 'vamos', no 'vai' (esa es la forma de ele/ela/você).",
+        "wrongAnswers": [
+          {
+            "answer": "Nós vamos a alugar um apartamento novo.",
+            "why": "corrige la concordancia del verbo ir pero agrega la preposición 'a', que no se usa entre ir y el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Marina vai a começar um novo emprego.",
+        "answers": [
+          "Marina vai começar um novo emprego."
+        ],
+        "explanation": "En portugués no se usa la preposición 'a' entre ir y el infinitivo: vai começar.",
+        "wrongAnswers": [
+          {
+            "answer": "Marina vou começar um novo emprego.",
+            "why": "quita la preposición 'a' pero cambia mal la conjugación: con 'Marina' (ela) el verbo ir debe ser 'vai', no 'vou'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vocês vai jantar fora no sábado?",
+        "answers": [
+          "Vocês vão jantar fora no sábado?"
+        ],
+        "explanation": "Con 'vocês' el verbo ir debe ser 'vão', no 'vai' (esa es la forma singular).",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês vão a jantar fora no sábado?",
+            "why": "corrige la concordancia del verbo ir pero agrega la preposición 'a', que no se usa entre ir y el infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu não vou a sair hoje.",
+        "answers": [
+          "Eu não vou sair hoje."
+        ],
+        "explanation": "En portugués no se usa la preposición 'a' entre ir y el infinitivo: vou sair.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não vai sair hoje.",
+            "why": "quita la preposición 'a' pero cambia mal la conjugación: con 'eu' el verbo ir debe ser 'vou', no 'vai'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Voy a viajar a Río de Janeiro en enero.",
+        "answers": [
+          "Vou viajar para o Rio de Janeiro em janeiro."
+        ],
+        "explanation": "Ir + infinitivo se usa sin preposición en portugués: vou viajar.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou a viajar para o Rio de Janeiro em janeiro.",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "Vou viajarei para o Rio de Janeiro em janeiro.",
+            "why": "no se combinan dos formas verbales juntas; alcanza con vou + infinitivo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Vas a viajar en las vacaciones?",
+        "answers": [
+          "Você vai viajar nas férias?",
+          "Vai viajar nas férias?"
+        ],
+        "explanation": "Con 'você' el verbo ir es 'vai', seguido directo del infinitivo: vai viajar.",
+        "wrongAnswers": [
+          {
+            "answer": "Você vai a viajar nas férias?",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "Você vais viajar nas férias?",
+            "why": "con 'você' el verbo ir es 'vai', no 'vais' (esa forma es de Portugal)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nosotros vamos a alquilar un departamento en San Pablo.",
+        "answers": [
+          "Nós vamos alugar um apartamento em São Paulo.",
+          "A gente vai alugar um apartamento em São Paulo."
+        ],
+        "explanation": "Con 'nós' el verbo ir es 'vamos', seguido directo del infinitivo: vamos alugar.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós vamos a alugar um apartamento em São Paulo.",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "Nós vai alugar um apartamento em São Paulo.",
+            "why": "con 'nós' el verbo ir es 'vamos', no 'vai'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Marina va a empezar un nuevo trabajo el lunes.",
+        "answers": [
+          "Marina vai começar um novo emprego na segunda.",
+          "Marina vai começar um novo emprego na segunda-feira."
+        ],
+        "explanation": "Con 'Marina' (ela) el verbo ir es 'vai', seguido directo del infinitivo: vai começar.",
+        "wrongAnswers": [
+          {
+            "answer": "Marina vai a começar um novo emprego na segunda.",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "Marina vou começar um novo emprego na segunda.",
+            "why": "'vou' es la forma de eu, no corresponde a Marina (ela)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "No voy a salir hoy a la noche porque tengo una consulta médica.",
+        "answers": [
+          "Eu não vou sair hoje à noite porque tenho uma consulta médica."
+        ],
+        "explanation": "La negación não va antes del verbo ir; con 'eu' la forma correcta es 'vou': não vou sair.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não vou a sair hoje à noite porque tenho uma consulta médica.",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "Eu não vai sair hoje à noite porque tenho uma consulta médica.",
+            "why": "con 'eu' el verbo ir es 'vou', no 'vai'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Van a tomar un taxi para el aeropuerto?",
+        "answers": [
+          "Vocês vão pegar um táxi para o aeroporto?"
+        ],
+        "explanation": "Con 'vocês' el verbo ir es 'vão', seguido directo del infinitivo: vão pegar.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês vão a pegar um táxi para o aeroporto?",
+            "why": "en portugués no se usa la preposición 'a' entre ir y el infinitivo."
+          },
+          {
+            "answer": "Vocês vai pegar um táxi para o aeroporto?",
+            "why": "con 'vocês' el verbo ir es 'vão', no 'vai' (esa es la forma singular)."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Marcos vai começar um novo emprego na segunda.",
+        "alternatives": [
+          "Marcos vai começar um novo emprego na segunda-feira."
+        ],
+        "translation": "Marcos va a empezar un nuevo trabajo el lunes.",
+        "explanation": "El verbo 'ir' concuerda con el sujeto Marcos (vai, como ele/ela), y no hay ninguna preposición entre 'vai' y 'começar'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Eu vou viajar para o Rio em dezembro.",
+        "alternatives": [
+          "Eu vou viajar pro Rio em dezembro."
+        ],
+        "translation": "Yo voy a viajar a Río en diciembre.",
+        "explanation": "Entre 'vou' y 'viajar' no se usa ninguna preposición, a diferencia del español 'voy a viajar'; 'pro' es la forma oral contraída de 'para o'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Nós vamos pegar um táxi para o aeroporto.",
+        "alternatives": [
+          "A gente vai pegar um táxi para o aeroporto."
+        ],
+        "translation": "Nosotros vamos a tomar un taxi al aeropuerto.",
+        "explanation": "Con 'nós' el verbo ir es 'vamos', pero si decís 'a gente' el verbo cambia a 'vai' porque se conjuga como ele/ela."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila en portugués.",
+        "sentence": "Ela não vai sair hoje à noite.",
+        "alternatives": [],
+        "translation": "Ella no va a salir hoy a la noche.",
+        "explanation": "La negación 'não' se coloca antes de 'vai', y entre 'vai' y 'sair' tampoco hay preposición."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá las dos palabras y elegí cuál se pronunció.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 0,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "En portugués, la 's' entre vocales se pronuncia como 'z' (por eso 'casa' suena /kaza/), mientras que la 'ç' siempre suena como una 's' fuerte, como en 'caça'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá las dos palabras y elegí cuál se pronunció.",
+        "pair": [
+          "mão",
+          "mau"
+        ],
+        "target": 0,
+        "meanings": [
+          "mano",
+          "malo"
+        ],
+        "explanation": "El sonido nasal 'ão' se pronuncia dejando resonar el aire por la nariz, mientras que 'au' es un diptongo oral sin nasalizar; prestá atención a si el sonido final resuena en la nariz."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá las dos palabras y elegí cuál se pronunció.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "'avó' tiene una 'o' abierta como en 'bola', y 'avô' tiene una 'o' cerrada como en 'bolo'; fijate cuán abierta queda la boca al pronunciar esa vocal."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé el diálogo y respondé las preguntas sobre los planes de cada persona.",
+        "situation": "Marcos y Juliana son amigos y están tomando un café en São Paulo, hablando de sus planes para el fin de semana.",
+        "lines": [
+          {
+            "speaker": "Marcos",
+            "text": "Oi, Juliana! O que você vai fazer no sábado?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Vou visitar minha mãe no sábado."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "E no domingo, vai descansar?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Não, vou estudar português no domingo."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Eu vou jogar futebol com meus amigos."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Que legal! Vocês vão jogar de manhã?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Não, vamos jogar à tarde."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué va a hacer Juliana el sábado?",
+            "options": [
+              "Va a descansar",
+              "Va a jugar al fútbol",
+              "Va a visitar a su madre",
+              "Va a estudiar portugués"
+            ],
+            "correctIndex": 2,
+            "explanation": "Juliana dice 'Vou visitar minha mãe no sábado', usando ir + infinitivo (vou visitar) para hablar de su plan del sábado."
+          },
+          {
+            "prompt": "¿Qué va a hacer Juliana el domingo?",
+            "options": [
+              "Va a visitar a su madre",
+              "Va a jugar al fútbol",
+              "Va a estudiar portugués",
+              "Va a descansar"
+            ],
+            "correctIndex": 2,
+            "explanation": "Juliana responde 'Não, vou estudar português no domingo', formando el futuro con vou + estudar."
+          },
+          {
+            "prompt": "¿Cuándo van a jugar al fútbol Marcos y sus amigos?",
+            "options": [
+              "A la noche",
+              "A la mañana",
+              "El domingo",
+              "A la tarde"
+            ],
+            "correctIndex": 3,
+            "explanation": "Marcos aclara 'Não, vamos jogar à tarde', usando vamos + jogar para indicar el momento del plan."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas sobre los planes de viaje.",
+        "situation": "Pedro y Carla son compañeros de trabajo y están charlando en la oficina sobre sus próximas vacaciones.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Carla, você vai viajar nas férias?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Sim, vou viajar para o Rio de Janeiro."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Que bom! Vocês vão ficar em um hotel?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Não, vamos ficar na casa da minha tia."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Vão visitar a praia de Copacabana?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Sim, vamos visitar a praia todos os dias."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu também vou viajar, mas vou para Salvador."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Adónde va a viajar Carla en las vacaciones?",
+            "options": [
+              "Rio de Janeiro",
+              "Salvador",
+              "São Paulo",
+              "Copacabana"
+            ],
+            "correctIndex": 0,
+            "explanation": "Carla dice 'Vou viajar para o Rio de Janeiro', usando vou + viajar para expresar su plan de viaje."
+          },
+          {
+            "prompt": "¿Dónde van a quedarse Carla y su grupo en Río de Janeiro?",
+            "options": [
+              "En la casa de Pedro",
+              "En la playa",
+              "En un hotel",
+              "En la casa de la tía de Carla"
+            ],
+            "correctIndex": 3,
+            "explanation": "Carla responde 'Não, vamos ficar na casa da minha tia', formando el futuro con vamos + ficar."
+          },
+          {
+            "prompt": "¿Adónde va a viajar Pedro en sus vacaciones?",
+            "options": [
+              "São Paulo",
+              "Salvador",
+              "Copacabana",
+              "Rio de Janeiro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro dice 'Eu também vou viajar, mas vou para Salvador', usando vou + viajar para su propio plan."
+          }
+        ]
+      }
+    ],
+    "expressoes-tempo": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración sobre el día de la entrevista.",
+        "prompt": "A entrevista de Juan é no dia depois de domingo: é na ___-feira.",
+        "options": [
+          "terça",
+          "domingo",
+          "segunda",
+          "quarta"
+        ],
+        "correctIndex": 2,
+        "explanation": "El día después del domingo es segunda-feira (lunes); los días de la semana en portugués se cuentan segunda, terça, quarta, quinta, sexta.",
+        "optionNotes": [
+          "Incorrecto: terça-feira es el día después de segunda (martes), no después de domingo.",
+          "Incorrecto: domingo es el día mismo, no el día después.",
+          "Correcto: segunda-feira es el día después de domingo (lunes).",
+          "Incorrecto: quarta-feira es miércoles, dos días después de domingo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre el alquiler.",
+        "prompt": "Juan diz: \"Vou alugar o apartamento ___.\"",
+        "options": [
+          "no próximo semana",
+          "na próxima semana que vem",
+          "na próxima semana",
+          "no próxima semana"
+        ],
+        "correctIndex": 2,
+        "explanation": "Semana es femenino, por eso el artículo y el adjetivo deben concordar en femenino: na próxima semana.",
+        "optionNotes": [
+          "Incorrecto: 'no' es artículo masculino y 'próximo' es adjetivo masculino; semana es femenino.",
+          "Incorrecto: mezcla dos formas redundantes ('próxima' y 'que vem' juntas) que no se usan así.",
+          "Correcto: na (femenino) + próxima (femenino) concuerdan con semana.",
+          "Incorrecto: el artículo 'no' es masculino, pero 'próxima' es femenino; falta concordancia."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el mensaje de Juan.",
+        "prompt": "Juan escreve: \"___ vou ao médico.\"",
+        "options": [
+          "Hoje a noite",
+          "Noite de hoje",
+          "Hoje à noite",
+          "Hoje de noite"
+        ],
+        "correctIndex": 2,
+        "explanation": "La expresión fija para 'esta noche' es hoje à noite, con crasis; hoje de noite no se usa con ese sentido.",
+        "optionNotes": [
+          "Incorrecto: falta la crasis (à); la forma correcta es 'hoje à noite'.",
+          "Incorrecto: ese orden de palabras no es una expresión natural en portugués.",
+          "Correcto: hoje à noite es la expresión fija para 'esta noche'.",
+          "Incorrecto: 'de noite' se usa en otros contextos, no para decir 'esta noche'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre su cumpleaños.",
+        "prompt": "Juan diz: \"___ é meu aniversário.\"",
+        "options": [
+          "Amanhã de depois",
+          "Depois de hoje",
+          "Amanhã depois",
+          "Depois de amanhã"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Pasado mañana' se traduce como depois de amanhã, con ese orden fijo de palabras.",
+        "optionNotes": [
+          "Incorrecto: esa combinación de palabras no existe en portugués.",
+          "Incorrecto: 'depois de hoje' no es una expresión fija válida con ese significado.",
+          "Incorrecto: el orden de las palabras está invertido; debe ser 'depois de amanhã'.",
+          "Correcto: depois de amanhã significa 'pasado mañana'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre el curso.",
+        "prompt": "Juan diz: \"___ começo um curso de português.\"",
+        "options": [
+          "O mês que vem",
+          "O meses que vem",
+          "Os mês que vem",
+          "A mês que vem"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mês es masculino y singular, por eso el artículo correcto es 'o': o mês que vem.",
+        "optionNotes": [
+          "Correcto: o (masculino singular) concuerda con mês.",
+          "Incorrecto: cambia 'mês' a 'meses', pero la expresión fija usa el singular 'mês que vem'.",
+          "Incorrecto: 'os' es plural, pero mês está en singular en esta expresión.",
+          "Incorrecto: 'a' es artículo femenino, pero mês es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre el fin de semana.",
+        "prompt": "Juan diz: \"___ vou descansar.\"",
+        "options": [
+          "No fim de semana que",
+          "No fim de semana",
+          "Na fim de semana",
+          "Fim de semana no"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fim es masculino, por eso el artículo correcto es 'no': no fim de semana.",
+        "optionNotes": [
+          "Incorrecto: la expresión queda incompleta y no tiene sentido así.",
+          "Correcto: no (masculino) concuerda con fim.",
+          "Incorrecto: 'na' es artículo femenino, pero fim es masculino.",
+          "Incorrecto: ese orden de palabras no es una expresión natural en portugués."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el nombre correcto del día.",
+        "sentence": "A entrevista de Juan é na ___-feira.",
+        "hint": "(lunes)",
+        "answers": [
+          "segunda"
+        ],
+        "explanation": "En portugués los días hábiles se cuentan: segunda, terça, quarta, quinta, sexta; lunes es segunda-feira.",
+        "wrongAnswers": [
+          {
+            "answer": "lunes",
+            "why": "en portugués los días no se llaman 'lunes', 'martes', etc., sino segunda, terça, quarta..."
+          },
+          {
+            "answer": "segundo",
+            "why": "la expresión es femenina (segunda-feira), no 'segundo'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la expresión de tiempo correcta.",
+        "sentence": "Vou alugar o apartamento ___.",
+        "hint": "(la semana que viene)",
+        "answers": [
+          "na próxima semana",
+          "na semana que vem",
+          "semana que vem"
+        ],
+        "explanation": "Semana es femenino, por eso el artículo y el adjetivo concuerdan en femenino: na próxima semana; también es natural usar la expresión 'semana que vem' sin preposición al final de la oración.",
+        "wrongAnswers": [
+          {
+            "answer": "no próximo semana",
+            "why": "semana es femenino; el artículo y el adjetivo deben ser 'na próxima', no 'no próximo'."
+          },
+          {
+            "answer": "na semana que próxima",
+            "why": "ese orden de palabras no existe; la forma correcta es 'na próxima semana' o 'na semana que vem'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la expresión de tiempo correcta.",
+        "sentence": "___ vou ao médico.",
+        "hint": "(esta noche)",
+        "answers": [
+          "Hoje à noite"
+        ],
+        "explanation": "La expresión fija para 'esta noche' es hoje à noite, con crasis.",
+        "wrongAnswers": [
+          {
+            "answer": "Hoje de noite",
+            "why": "'de noite' se usa en otros contextos, no para decir 'esta noche'; la forma fija es 'hoje à noite'."
+          },
+          {
+            "answer": "Hoje a noite",
+            "why": "falta la crasis (à); la forma correcta es 'hoje à noite'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la expresión de tiempo correcta.",
+        "sentence": "___ é meu aniversário.",
+        "hint": "(pasado mañana)",
+        "answers": [
+          "Depois de amanhã"
+        ],
+        "explanation": "'Pasado mañana' se traduce como depois de amanhã.",
+        "wrongAnswers": [
+          {
+            "answer": "Depois de hoje",
+            "why": "no es la expresión correcta para 'pasado mañana'; debe ser 'depois de amanhã'."
+          },
+          {
+            "answer": "Amanhã depois",
+            "why": "el orden de las palabras está invertido; la forma correcta es 'depois de amanhã'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la expresión de tiempo correcta.",
+        "sentence": "___ começo um curso de português.",
+        "hint": "(el mes que viene)",
+        "answers": [
+          "O mês que vem",
+          "No mês que vem"
+        ],
+        "explanation": "Mês es masculino, por eso el artículo correcto es 'o': o mês que vem.",
+        "wrongAnswers": [
+          {
+            "answer": "A mês que vem",
+            "why": "mês es masculino, el artículo debe ser 'o', no 'a'."
+          },
+          {
+            "answer": "Os mês que vem",
+            "why": "mês está en singular, no corresponde usar el artículo plural 'os'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la expresión de tiempo correcta.",
+        "sentence": "___ vou descansar.",
+        "hint": "(el fin de semana)",
+        "answers": [
+          "No fim de semana"
+        ],
+        "explanation": "Fim es masculino, por eso el artículo correcto es 'no': no fim de semana.",
+        "wrongAnswers": [
+          {
+            "answer": "Na fim de semana",
+            "why": "fim es masculino; el artículo debe ser 'no', no 'na'."
+          },
+          {
+            "answer": "No fim de semana que",
+            "why": "la expresión queda incompleta; la forma correcta y completa es 'no fim de semana'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Hoje à noite vou ao cinema com a Bia.",
+        "alternatives": [
+          "Vou ao cinema com a Bia hoje à noite."
+        ],
+        "translation": "Esta noche voy al cine con Bia.",
+        "explanation": "La expresión fija hoje à noite puede ir al inicio de la oración o al final, sin cambiar el significado.",
+        "tokens": [
+          "vou",
+          "Hoje",
+          "com",
+          "à",
+          "Bia",
+          "ao",
+          "noite",
+          "a",
+          "cinema"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Na próxima semana começo as aulas de português.",
+        "alternatives": [
+          "Começo as aulas de português na próxima semana."
+        ],
+        "translation": "La semana que viene empiezo las clases de portugués.",
+        "explanation": "Na próxima semana concuerda en femenino con semana y puede ir al inicio o al final de la oración como expresión de tiempo.",
+        "tokens": [
+          "as",
+          "aulas",
+          "semana",
+          "Na",
+          "português",
+          "de",
+          "começo",
+          "próxima"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "No fim de semana vou visitar meus pais.",
+        "alternatives": [
+          "Vou visitar meus pais no fim de semana."
+        ],
+        "translation": "El fin de semana voy a visitar a mis padres.",
+        "explanation": "No fim de semana concuerda en masculino con fim y puede ir al inicio o al final de la oración como expresión de tiempo.",
+        "tokens": [
+          "meus",
+          "de",
+          "vou",
+          "No",
+          "fim",
+          "semana",
+          "pais",
+          "visitar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Depois de amanhã é meu aniversário.",
+        "alternatives": [
+          "Meu aniversário é depois de amanhã."
+        ],
+        "translation": "Pasado mañana es mi cumpleaños.",
+        "explanation": "Depois de amanhã es la expresión fija para 'pasado mañana' y puede ir al inicio o funcionar como predicado de la oración.",
+        "tokens": [
+          "é",
+          "meu",
+          "de",
+          "Depois",
+          "aniversário",
+          "amanhã"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A entrevista de Juan é na segunda-feira.",
+        "alternatives": [],
+        "translation": "La entrevista de Juan es el lunes.",
+        "explanation": "Segunda-feira es el nombre del día lunes en portugués y se usa con el artículo na.",
+        "tokens": [
+          "A",
+          "na",
+          "Juan",
+          "é",
+          "entrevista",
+          "de",
+          "segunda-feira"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Juan tem uma entrevista na lunes.",
+        "answers": [
+          "Juan tem uma entrevista na segunda-feira."
+        ],
+        "explanation": "En portugués los días de la semana se llaman segunda, terça, quarta... no 'lunes', 'martes', etc.",
+        "wrongAnswers": [
+          {
+            "answer": "Juan tem uma entrevista no lunes.",
+            "why": "cambia el artículo pero no corrige el nombre del día, que debe ser 'segunda-feira'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vou alugar o apartamento no próxima semana.",
+        "answers": [
+          "Vou alugar o apartamento na próxima semana."
+        ],
+        "explanation": "Semana es femenino, por eso el artículo correcto es 'na', no 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou alugar o apartamento no próximo semana.",
+            "why": "cambia 'próxima' a 'próximo' pero mantiene el artículo 'no', que también está mal porque semana es femenino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Hoje de noite vou ao médico.",
+        "answers": [
+          "Hoje à noite vou ao médico."
+        ],
+        "explanation": "La expresión fija para 'esta noche' es hoje à noite, no 'hoje de noite'.",
+        "wrongAnswers": [
+          {
+            "answer": "Hoje da noite vou ao médico.",
+            "why": "esa forma no existe; la expresión fija para 'esta noche' es 'hoje à noite'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "A mês que vem começo um curso.",
+        "answers": [
+          "O mês que vem começo um curso."
+        ],
+        "explanation": "Mês es masculino, por eso el artículo correcto es 'o', no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "A mês que vêm começo um curso.",
+            "why": "cambia la conjugación de 'vem' en vez de corregir el artículo, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Na fim de semana vou descansar.",
+        "answers": [
+          "No fim de semana vou descansar."
+        ],
+        "explanation": "Fim es masculino, por eso el artículo correcto es 'no', no 'na'.",
+        "wrongAnswers": [
+          {
+            "answer": "Na fim da semana vou descansar.",
+            "why": "agrega una contracción extra en vez de corregir el artículo, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El lunes tengo una entrevista de trabajo.",
+        "answers": [
+          "Na segunda-feira tenho uma entrevista de emprego.",
+          "Na segunda tenho uma entrevista de emprego."
+        ],
+        "explanation": "Lunes se traduce como segunda-feira (o segunda), con el artículo femenino na.",
+        "wrongAnswers": [
+          {
+            "answer": "No lunes tenho uma entrevista de emprego.",
+            "why": "los días de la semana en portugués no son 'lunes', 'martes', etc., sino segunda, terça, quarta..."
+          },
+          {
+            "answer": "Na lunes tenho uma entrevista de emprego.",
+            "why": "el nombre del día debe ser 'segunda-feira', no 'lunes'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Voy a alquilar el departamento la semana que viene.",
+        "answers": [
+          "Vou alugar o apartamento na próxima semana.",
+          "Vou alugar o apartamento na semana que vem.",
+          "Vou alugar o apartamento semana que vem."
+        ],
+        "explanation": "Semana es femenino, por eso el artículo y el adjetivo concuerdan en femenino: na próxima semana; también es natural decir 'semana que vem' sin preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou alugar o apartamento no próxima semana.",
+            "why": "semana es femenino, el artículo debe ser 'na', no 'no'."
+          },
+          {
+            "answer": "Vou alugar o apartamento no próximo semana.",
+            "why": "semana es femenino, por lo que el artículo y el adjetivo deben ser 'na próxima', no 'no próximo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Esta noche voy al médico.",
+        "answers": [
+          "Hoje à noite vou ao médico."
+        ],
+        "explanation": "La expresión fija para 'esta noche' es hoje à noite, no 'hoje de noite'.",
+        "wrongAnswers": [
+          {
+            "answer": "Hoje de noite vou ao médico.",
+            "why": "la expresión fija para 'esta noche' es 'hoje à noite', no 'hoje de noite'."
+          },
+          {
+            "answer": "Hoje a noite vou ao médico.",
+            "why": "falta la crasis (à); la forma correcta es 'hoje à noite'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Pasado mañana es mi cumpleaños.",
+        "answers": [
+          "Depois de amanhã é meu aniversário."
+        ],
+        "explanation": "'Pasado mañana' se traduce como depois de amanhã.",
+        "wrongAnswers": [
+          {
+            "answer": "Depois de hoje é meu aniversário.",
+            "why": "'pasado mañana' se traduce como 'depois de amanhã', no 'depois de hoje'."
+          },
+          {
+            "answer": "Amanhã depois é meu aniversário.",
+            "why": "el orden correcto de la expresión es 'depois de amanhã'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El mes que viene empiezo un curso de portugués.",
+        "answers": [
+          "O mês que vem começo um curso de português.",
+          "No mês que vem começo um curso de português."
+        ],
+        "explanation": "Mês es masculino, por eso el artículo correcto es 'o': o mês que vem.",
+        "wrongAnswers": [
+          {
+            "answer": "A mês que vem começo um curso de português.",
+            "why": "mês es masculino, el artículo debe ser 'o', no 'a'."
+          },
+          {
+            "answer": "Os mês que vem começo um curso de português.",
+            "why": "mês está en singular, no corresponde usar el artículo plural 'os'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El fin de semana voy a visitar a mis padres.",
+        "answers": [
+          "No fim de semana vou visitar meus pais."
+        ],
+        "explanation": "Fim es masculino, por eso el artículo correcto es 'no': no fim de semana.",
+        "wrongAnswers": [
+          {
+            "answer": "Na fim de semana vou visitar meus pais.",
+            "why": "fim es masculino, el artículo debe ser 'no', no 'na'."
+          },
+          {
+            "answer": "No fim da semana vou visitar meus pais.",
+            "why": "la expresión fija es 'fim de semana', sin la contracción 'da' entre fim y semana."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Na segunda-feira a Mariana vai ao médico.",
+        "alternatives": [
+          "Na segunda a Mariana vai ao médico."
+        ],
+        "translation": "El lunes Mariana va al médico.",
+        "explanation": "El lunes en portugués es 'segunda-feira' (o 'segunda' en forma corta), y siempre se usa con 'na' porque 'semana' y sus días son femeninos."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Hoje à noite vou ligar para a Mariana.",
+        "alternatives": [
+          "Hoje à noite eu vou ligar para a Mariana."
+        ],
+        "translation": "Esta noche voy a llamar a Mariana.",
+        "explanation": "'Hoje à noite' es la forma fija para decir 'esta noche'; no se dice 'hoje de noite', esa forma se usa en otros contextos."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Na próxima semana a Mariana vai começar o trabalho.",
+        "alternatives": [
+          "A semana que vem a Mariana vai começar o trabalho."
+        ],
+        "translation": "La semana que viene Mariana va a empezar el trabajo.",
+        "explanation": "Como 'semana' es femenino, se dice 'na próxima semana', con 'na' y 'próxima' en femenino, nunca 'no próximo'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Agora a Mariana está trabalhando em São Paulo.",
+        "alternatives": [],
+        "translation": "Ahora Mariana está trabajando en San Pablo.",
+        "explanation": "'Agora' marca el momento exacto del presente, por eso se usa con 'está trabalhando' (presente continuo) y no con el futuro próximo."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "caza",
+          "casa"
+        ],
+        "explanation": "La 's' entre vocales en portugués suena como 'z' (casa), mientras que 'ç' siempre suena como 's' fuerte (caça); en español ambas letras suenan igual, así que hay que guiarse por el sonido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "mau",
+          "mão"
+        ],
+        "target": 1,
+        "meanings": [
+          "malo",
+          "mano"
+        ],
+        "explanation": "'ão' es una vocal nasal, se pronuncia dejando salir el aire por la nariz, mientras que 'au' es un diptongo oral sin nasalidad; en español ese sonido nasal no existe."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y elegí cuál es.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' con acento agudo es abierta, parecida a la 'o' del español, y la 'ô' con acento circunflejo es cerrada, como un sonido entre 'o' y 'u'; hay que fijarse en ese matiz al escuchar."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre los planes de Marina y respondé las preguntas.",
+        "text": "Oi! Eu sou a Marina, moro em Belo Horizonte. Hoje eu estou trabalhando em casa. Agora estou escrevendo um e-mail para o chefe. Hoje à noite vou jantar com minha amiga Paula em um restaurante italiano. Amanhã de manhã eu vou trabalhar no escritório. Na quarta-feira vou ao médico porque estou com dor de cabeça. Na sexta-feira vou visitar minha mãe, ela mora perto do centro. No fim de semana vou descansar e vou ler um livro novo. A semana que vem eu vou viajar para São Paulo visitar meu irmão. O mês que vem eu vou começar um curso de inglês na escola nova. Estou muito feliz com meus planos para o futuro!",
+        "questions": [
+          {
+            "prompt": "¿Cuándo va a cenar Marina con su amiga Paula?",
+            "options": [
+              "Hoje à noite",
+              "No fim de semana",
+              "Na sexta-feira",
+              "Amanhã"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Hoje à noite vou jantar com minha amiga Paula', y esa es la expresión fija para 'esta noche', con à."
+          },
+          {
+            "prompt": "¿Qué va a hacer Marina el miércoles?",
+            "options": [
+              "Vai visitar a mãe",
+              "Vai ao médico",
+              "Vai viajar para São Paulo",
+              "Vai trabalhar no escritório"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Na quarta-feira vou ao médico', y quarta-feira es miércoles en portugués."
+          },
+          {
+            "prompt": "¿Cuándo va a empezar Marina el curso de inglés?",
+            "options": [
+              "Hoje à noite",
+              "Na semana que vem",
+              "No fim de semana",
+              "O mês que vem"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'O mês que vem eu vou começar um curso de inglês', es decir, el mes que viene."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre los planes de Pedro y respondé las preguntas.",
+        "text": "Oi, eu sou o Pedro, moro em Curitiba. Agora estou estudando para uma entrevista de emprego em uma empresa de tecnologia. Hoje à noite vou ligar para o recrutador. Amanhã eu vou ter a entrevista na empresa nova. Depois de amanhã vou saber a resposta. Na quinta-feira vou almoçar com um amigo para comemorar. Na próxima semana vou começar o trabalho novo. No fim de semana vou viajar para a praia com minha família. O mês que vem vou mudar de casa também. Estou muito nervoso, mas também estou animado com as novidades!",
+        "questions": [
+          {
+            "prompt": "¿Cuándo va a tener Pedro la entrevista de trabajo?",
+            "options": [
+              "Depois de amanhã",
+              "Amanhã",
+              "Na quinta-feira",
+              "Hoje à noite"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Amanhã eu vou ter a entrevista', amanhã significa mañana."
+          },
+          {
+            "prompt": "¿Cuándo va a saber Pedro la respuesta de la entrevista?",
+            "options": [
+              "Amanhã",
+              "Depois de amanhã",
+              "Na próxima semana",
+              "No fim de semana"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Depois de amanhã vou saber a resposta', esa expresión significa 'pasado mañana'."
+          },
+          {
+            "prompt": "¿Qué va a hacer Pedro el fin de semana?",
+            "options": [
+              "Vai almoçar com um amigo",
+              "Vai mudar de casa",
+              "Vai viajar para a praia",
+              "Vai começar o trabalho novo"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'No fim de semana vou viajar para a praia', y no fim de semana es la expresión para 'el fin de semana'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre Juliana y Camila y respondé las preguntas.",
+        "situation": "Dos amigas, Juliana y Camila, están charlando en un café en Rio de Janeiro sobre los planes de la semana.",
+        "lines": [
+          {
+            "speaker": "Juliana",
+            "text": "Oi, Camila! O que você vai fazer essa semana?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Agora estou tomando um café, mas hoje à noite eu vou estudar para a prova."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "E amanhã? Você vai trabalhar?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Não, amanhã eu vou descansar em casa."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Na quinta-feira eu vou ao cinema. Você quer ir?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Quero! Mas na sexta-feira eu vou viajar para Niterói."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Que legal! E no fim de semana, o que você vai fazer?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "No fim de semana eu vou visitar minha avó."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué va a hacer Camila esta noche?",
+            "options": [
+              "Va a trabajar",
+              "Va a estudiar para la prueba",
+              "Va a viajar",
+              "Va a visitar a su abuela"
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila dice 'hoje à noite eu vou estudar para a prova', es decir, esta noche va a estudiar."
+          },
+          {
+            "prompt": "¿Cuándo va a viajar Camila a Niterói?",
+            "options": [
+              "El viernes",
+              "Mañana",
+              "El jueves",
+              "El fin de semana"
+            ],
+            "correctIndex": 0,
+            "explanation": "Camila dice 'na sexta-feira eu vou viajar para Niterói', y sexta-feira es viernes en portugués."
+          },
+          {
+            "prompt": "¿Qué va a hacer Camila el fin de semana?",
+            "options": [
+              "Va a visitar a su abuela",
+              "Va a estudiar",
+              "Va a viajar a Niterói",
+              "Va a ir al cine"
+            ],
+            "correctIndex": 0,
+            "explanation": "Camila dice 'No fim de semana eu vou visitar minha avó', por eso el fin de semana va a visitar a la abuela."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre el doctor Ricardo y Fernanda y respondé las preguntas.",
+        "situation": "El doctor Ricardo está hablando con su paciente Fernanda en una clínica en São Paulo sobre los próximos exámenes.",
+        "lines": [
+          {
+            "speaker": "Doutor Ricardo",
+            "text": "Boa tarde, Fernanda! Como você está se sentindo?"
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Agora estou me sentindo melhor, doutor."
+          },
+          {
+            "speaker": "Doutor Ricardo",
+            "text": "Que bom! Amanhã você vai fazer um exame de sangue."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Certo. E o resultado, quando vou saber?"
+          },
+          {
+            "speaker": "Doutor Ricardo",
+            "text": "Depois de amanhã você vai saber o resultado."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Entendi. E hoje à noite eu posso comer normal?"
+          },
+          {
+            "speaker": "Doutor Ricardo",
+            "text": "Pode sim! Mas no dia do exame você não vai comer de manhã."
+          },
+          {
+            "speaker": "Fernanda",
+            "text": "Perfeito, na próxima semana eu volto para outra consulta. Muito obrigada!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuándo va a hacer Fernanda el análisis de sangre?",
+            "options": [
+              "Pasado mañana",
+              "Hoy a la noche",
+              "Mañana",
+              "La semana que viene"
+            ],
+            "correctIndex": 2,
+            "explanation": "El doctor dice 'Amanhã você vai fazer um exame de sangue', amanhã significa mañana."
+          },
+          {
+            "prompt": "¿Cuándo va a saber Fernanda el resultado del análisis?",
+            "options": [
+              "Pasado mañana",
+              "Mañana",
+              "La semana que viene",
+              "Hoy a la noche"
+            ],
+            "correctIndex": 0,
+            "explanation": "El doctor dice 'Depois de amanhã você vai saber o resultado', esa expresión equivale a 'pasado mañana'."
+          },
+          {
+            "prompt": "¿Cuándo va a volver Fernanda a la consulta?",
+            "options": [
+              "Mañana",
+              "Hoy a la noche",
+              "Pasado mañana",
+              "La semana que viene"
+            ],
+            "correctIndex": 3,
+            "explanation": "Fernanda dice 'na próxima semana eu volto para outra consulta', es decir, la semana que viene."
+          }
+        ]
+      }
+    ],
+    "gostar-de": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre Rio de Janeiro.",
+        "prompt": "Juan diz: \"Eu gosto muito ___ Rio de Janeiro.\"",
+        "options": [
+          "o",
+          "da",
+          "de",
+          "do"
+        ],
+        "correctIndex": 3,
+        "explanation": "Rio es masculino, por eso 'de' se contrae con el artículo 'o' formando 'do': gosto do Rio de Janeiro.",
+        "optionNotes": [
+          "Incorrecto: falta la preposición de; gostar siempre necesita de antes del objeto.",
+          "Incorrecto: 'da' es la contracción femenina, pero Rio es masculino.",
+          "Incorrecto: falta la contracción con el artículo; no se puede decir 'de o Rio'.",
+          "Correcto: de + o = do, porque Rio es masculino y lleva artículo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre su trabajo.",
+        "prompt": "Juan diz: \"Eu gosto muito ___ meu trabalho novo.\"",
+        "options": [
+          "de",
+          "no",
+          "do",
+          "da"
+        ],
+        "correctIndex": 2,
+        "explanation": "Trabalho es masculino, por eso 'de' se contrae con el artículo 'o' formando 'do'.",
+        "optionNotes": [
+          "Incorrecto: falta la contracción; al hablar de algo específico ('meu trabalho novo') hace falta el artículo contraído.",
+          "Incorrecto: 'no' no es la preposición que usa gostar; siempre es de/do/da.",
+          "Correcto: de + o = do, porque trabalho es masculino.",
+          "Incorrecto: 'da' es la contracción femenina, pero trabalho es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Bia sobre la playa.",
+        "prompt": "Bia diz: \"Eu gosto muito ___ praia de Ipanema.\"",
+        "options": [
+          "de",
+          "do",
+          "da",
+          "na"
+        ],
+        "correctIndex": 2,
+        "explanation": "Praia es femenino, por eso 'de' se contrae con el artículo 'a' formando 'da'.",
+        "optionNotes": [
+          "Incorrecto: falta la contracción; al hablar de una playa específica hace falta el artículo contraído.",
+          "Incorrecto: 'do' es la contracción masculina, pero praia es femenino.",
+          "Correcto: de + a = da, porque praia es femenino.",
+          "Incorrecto: 'na' no es la preposición que usa gostar; siempre es de/do/da."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre Bia.",
+        "prompt": "Juan fala sobre Bia: \"Eu gosto muito ___.\"",
+        "options": [
+          "de ela",
+          "ela",
+          "dela",
+          "dele"
+        ],
+        "correctIndex": 2,
+        "explanation": "La preposición de se contrae con el pronómbre ela formando dela; no se usan separados.",
+        "optionNotes": [
+          "Incorrecto: 'de ela' no existe en portugués; siempre se contrae en 'dela'.",
+          "Incorrecto: falta la preposición de; gostar siempre necesita de antes del objeto.",
+          "Correcto: de + ela = dela, forma contraída obligatoria.",
+          "Incorrecto: 'dele' es masculino, pero se habla de Bia, que es femenino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre sus amigos.",
+        "prompt": "Juan diz: \"Eles gostam ___ música brasileira.\"",
+        "options": [
+          "no",
+          "do",
+          "da",
+          "de"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando se habla de algo en general, como un tipo de música, no se usa artículo después de de: gostam de música brasileira.",
+        "optionNotes": [
+          "Incorrecto: 'no' no es la preposición que usa gostar; siempre es de/do/da.",
+          "Incorrecto: 'do' es la contracción masculina con artículo, pero aquí no hace falta artículo.",
+          "Incorrecto: 'da' es la contracción femenina con artículo, pero aquí no hace falta artículo.",
+          "Correcto: de, sin artículo, porque se habla de música en general."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar lo que dice Juan sobre madrugar.",
+        "prompt": "Juan diz: \"Eu não gosto ___ acordar cedo.\"",
+        "options": [
+          "da",
+          "a",
+          "de",
+          "do"
+        ],
+        "correctIndex": 2,
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo: gosto de acordar.",
+        "optionNotes": [
+          "Incorrecto: antes de un verbo no se usa artículo contraído; no corresponde 'da'.",
+          "Incorrecto: gostar usa la preposición de, no 'a' (eso sería un calco del español).",
+          "Correcto: de, sin artículo, porque va seguido de un verbo (acordar).",
+          "Incorrecto: antes de un verbo no se usa artículo contraído; no corresponde 'do'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición o contracción correcta.",
+        "sentence": "Eu gosto muito ___ Rio de Janeiro.",
+        "hint": "(de + o)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "Rio es masculino, por eso 'de' se contrae con 'o' formando 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "de",
+            "why": "falta la contracción con el artículo; no se puede decir 'de o Rio'."
+          },
+          {
+            "answer": "da",
+            "why": "'da' es la contracción femenina, pero Rio es masculino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición o contracción correcta.",
+        "sentence": "Bia gosta muito ___ praia de Copacabana.",
+        "hint": "(de + a)",
+        "answers": [
+          "da"
+        ],
+        "explanation": "Praia es femenino, por eso 'de' se contrae con 'a' formando 'da'.",
+        "wrongAnswers": [
+          {
+            "answer": "do",
+            "why": "'do' es la contracción masculina, pero praia es femenino."
+          },
+          {
+            "answer": "de",
+            "why": "falta la contracción; al hablar de una playa específica hace falta el artículo contraído."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición o contracción correcta.",
+        "sentence": "Eu gosto muito ___ meu trabalho novo.",
+        "hint": "(de + o)",
+        "answers": [
+          "do"
+        ],
+        "explanation": "Trabalho es masculino, por eso 'de' se contrae con 'o' formando 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "da",
+            "why": "'da' es la contracción femenina, pero trabalho es masculino."
+          },
+          {
+            "answer": "de",
+            "why": "falta la contracción; al hablar de algo específico hace falta el artículo contraído."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición contraída con el pronómbre correcto.",
+        "sentence": "Juan conheceu Bia e já gosta muito ___.",
+        "hint": "(de + ela)",
+        "answers": [
+          "dela"
+        ],
+        "explanation": "La preposición de se contrae con el pronómbre ela formando dela.",
+        "wrongAnswers": [
+          {
+            "answer": "de ela",
+            "why": "'de ela' no existe en portugués; siempre se contrae en 'dela'."
+          },
+          {
+            "answer": "dele",
+            "why": "'dele' es masculino, pero se habla de Bia, que es femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición correcta.",
+        "sentence": "Eles gostam ___ música brasileira.",
+        "hint": "(de, sin contracción)",
+        "answers": [
+          "de"
+        ],
+        "explanation": "Cuando se habla de algo en general, como un tipo de música, no se usa artículo después de de.",
+        "wrongAnswers": [
+          {
+            "answer": "do",
+            "why": "'do' es la contracción masculina con artículo, pero aquí no hace falta artículo."
+          },
+          {
+            "answer": "da",
+            "why": "'da' es la contracción femenina con artículo, pero aquí no hace falta artículo."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la preposición correcta.",
+        "sentence": "Eu não gosto ___ acordar cedo.",
+        "hint": "(de, antes de un verbo)",
+        "answers": [
+          "de"
+        ],
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo.",
+        "wrongAnswers": [
+          {
+            "answer": "do",
+            "why": "antes de un verbo no se usa artículo contraído; no corresponde 'do'."
+          },
+          {
+            "answer": "a",
+            "why": "gostar usa la preposición de, no 'a' (eso sería un calco del español)."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu gosto muito do Rio de Janeiro.",
+        "alternatives": [],
+        "translation": "Me gusta mucho Río de Janeiro.",
+        "explanation": "La estructura es sujeto + gostar + muito + de/do/da + objeto: eu gosto muito do Rio de Janeiro.",
+        "tokens": [
+          "muito",
+          "Janeiro",
+          "gosto",
+          "do",
+          "Eu",
+          "de",
+          "Rio"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Bia gosta muito da praia de Copacabana.",
+        "alternatives": [],
+        "translation": "A Bia le gusta mucho la playa de Copacabana.",
+        "explanation": "Praia es femenino, por eso se usa la contracción da (de + a) antes del objeto.",
+        "tokens": [
+          "praia",
+          "da",
+          "muito",
+          "gosta",
+          "de",
+          "Copacabana",
+          "Bia"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós gostamos de viajar para o Brasil.",
+        "alternatives": [],
+        "translation": "A nosotros nos gusta viajar a Brasil.",
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo: gostamos de viajar.",
+        "tokens": [
+          "de",
+          "Brasil",
+          "o",
+          "para",
+          "Nós",
+          "viajar",
+          "gostamos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eles gostam de dançar forró na festa.",
+        "alternatives": [],
+        "translation": "A ellos les gusta bailar forró en la fiesta.",
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo: gostam de dançar.",
+        "tokens": [
+          "na",
+          "Eles",
+          "dançar",
+          "festa",
+          "de",
+          "forró",
+          "gostam"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu não gosto de acordar cedo no trabalho.",
+        "alternatives": [],
+        "translation": "A mí no me gusta levantarme temprano en el trabajo.",
+        "explanation": "La negación não va antes de gostar, y antes del verbo acordar se usa de, sin artículo.",
+        "tokens": [
+          "gosto",
+          "no",
+          "Eu",
+          "trabalho",
+          "de",
+          "acordar",
+          "cedo",
+          "não"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu gosto música brasileira.",
+        "answers": [
+          "Eu gosto de música brasileira."
+        ],
+        "explanation": "Gostar siempre necesita la preposición de antes del objeto; no se puede omitir como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gosta música brasileira.",
+            "why": "cambia la conjugación del verbo gostar en vez de agregar la preposición de, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu gosto de o Rio de Janeiro.",
+        "answers": [
+          "Eu gosto do Rio de Janeiro."
+        ],
+        "explanation": "Rio es masculino, por eso 'de' debe contraerse con 'o' formando 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gosto da Rio de Janeiro.",
+            "why": "cambia el género de la contracción, pero Rio es masculino, por lo que corresponde 'do', no 'da'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Gosto de ela muito.",
+        "answers": [
+          "Gosto dela muito."
+        ],
+        "explanation": "La preposición de se contrae con el pronómbre ela formando dela; no se usan separados.",
+        "wrongAnswers": [
+          {
+            "answer": "Gosto dele muito.",
+            "why": "cambia el género del pronómbre, pero el error era no contraer 'de' con 'ela'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Bia gosta muito do praia de Copacabana.",
+        "answers": [
+          "Bia gosta muito da praia de Copacabana."
+        ],
+        "explanation": "Praia es femenino, por eso 'de' debe contraerse con 'a' formando 'da', no 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Bia gosta muito de praia de Copacabana.",
+            "why": "quita el artículo en vez de corregir el género de la contracción, que debe ser 'da'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu não gosto a acordar cedo.",
+        "answers": [
+          "Eu não gosto de acordar cedo."
+        ],
+        "explanation": "Antes de un verbo, gostar siempre va con la preposición de, no con 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não gosta de acordar cedo.",
+            "why": "cambia la conjugación del verbo gostar en vez de corregir la preposición, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Me gusta mucho Río de Janeiro.",
+        "answers": [
+          "Eu gosto muito do Rio de Janeiro.",
+          "Gosto muito do Rio de Janeiro."
+        ],
+        "explanation": "Rio es masculino, por eso 'de' se contrae con 'o' formando 'do'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu gosto muito o Rio de Janeiro.",
+            "why": "gostar siempre necesita la preposición de antes del objeto; no se puede omitir."
+          },
+          {
+            "answer": "Eu gosto muito de Rio de Janeiro.",
+            "why": "falta la contracción con el artículo; Rio es masculino, por eso se usa 'do', no 'de'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "A Bia le gusta mucho la playa de Copacabana.",
+        "answers": [
+          "A Bia gosta muito da praia de Copacabana.",
+          "Bia gosta muito da praia de Copacabana."
+        ],
+        "explanation": "Praia es femenino, por eso 'de' se contrae con 'a' formando 'da'.",
+        "wrongAnswers": [
+          {
+            "answer": "A Bia gosta muito a praia de Copacabana.",
+            "why": "gostar siempre necesita la preposición de, no se puede usar 'a' en su lugar."
+          },
+          {
+            "answer": "A Bia gosta muito do praia de Copacabana.",
+            "why": "praia es femenino, por eso la contracción correcta es 'da', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "A nosotros nos gusta viajar a Brasil.",
+        "answers": [
+          "Nós gostamos de viajar para o Brasil.",
+          "A gente gosta de viajar para o Brasil."
+        ],
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós gostamos viajar para o Brasil.",
+            "why": "antes de un verbo, gostar siempre necesita la preposición de: gostamos de viajar."
+          },
+          {
+            "answer": "Nós gosta de viajar para o Brasil.",
+            "why": "con 'nós' el verbo gostar es 'gostamos', no 'gosta' (esa es la forma de ele/ela/você)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "A ellos les gusta bailar forró.",
+        "answers": [
+          "Eles gostam de dançar forró."
+        ],
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles gostam dançar forró.",
+            "why": "antes de un verbo, gostar siempre necesita la preposición de."
+          },
+          {
+            "answer": "Eles gosta de dançar forró.",
+            "why": "con 'eles' el verbo gostar es 'gostam', no 'gosta'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "A mí no me gusta levantarme temprano.",
+        "answers": [
+          "Eu não gosto de acordar cedo.",
+          "Não gosto de acordar cedo."
+        ],
+        "explanation": "Antes de un verbo, gostar siempre va seguido de la preposición de, sin artículo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não gosto acordar cedo.",
+            "why": "antes de un verbo, gostar siempre necesita la preposición de."
+          },
+          {
+            "answer": "Eu não gosto a acordar cedo.",
+            "why": "gostar usa la preposición de, no 'a', antes del verbo."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "A ella no le gusta el fútbol.",
+        "answers": [
+          "Ela não gosta de futebol."
+        ],
+        "explanation": "Gostar siempre necesita la preposición de antes del objeto, y la persona que gusta es el sujeto del verbo.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela não gosta futebol.",
+            "why": "gostar siempre necesita la preposición de antes del objeto; no se puede omitir."
+          },
+          {
+            "answer": "A ela não gosta de futebol.",
+            "why": "en portugués la persona que gusta es el sujeto del verbo gostar; no se antepone 'a', se dice simplemente 'ela não gosta'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Lucas gosta muito de café com leite.",
+        "alternatives": [],
+        "translation": "A Lucas le gusta mucho el café con leche.",
+        "explanation": "Prestá atención a la terminación '-a' de 'gosta' (él/ella) y a que siempre va seguido de 'de', nunca se omite como en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Marina não gosta de acordar cedo.",
+        "alternatives": [],
+        "translation": "A Marina no le gusta levantarse temprano.",
+        "explanation": "El 'não' va antes de 'gosta', no después del verbo ni pegado a 'de'; es fácil perderlo si se escucha rápido."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Eles gostam de passear no parque todo dia.",
+        "alternatives": [
+          "Eles gostam de passear no parque todos os dias."
+        ],
+        "translation": "A ellos les gusta pasear por el parque todos los días.",
+        "explanation": "'Gostam' (ellos) termina en '-am' nasal, suena distinto de 'gosta' (él/ella); hay que escuchar bien esa nasalización final."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Você gosta do Rio de Janeiro?",
+        "alternatives": [],
+        "translation": "¿Te gusta Río de Janeiro?",
+        "explanation": "'Do' es la contracción de 'de' + 'o'; no se escribe separado como 'de o Rio', aunque en español no exista esa fusión."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "avô",
+          "avó"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "'Avó' tiene un sonido 'o' abierto (como en 'bola'), mientras que 'avô' tiene un 'o' cerrado (como en 'bolo'); el acento gráfico marca esa diferencia."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 0,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "'Pão' tiene un sonido nasal (el aire sale por la nariz), mientras que 'pau' es un diptongo oral sin nasalidad; escuchá si la 'ã' resuena en la nariz o no."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 0,
+        "meanings": [
+          "caza",
+          "casa"
+        ],
+        "explanation": "La 'ç' en 'caça' suena como una 's' suave y sorda, mientras que la 's' entre vocales en 'casa' suena como una 'z' vibrante; en español ambas sonarían igual, pero en portugués se distinguen."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas.",
+        "situation": "Lucas y Marina están en un café en São Paulo y hablan sobre lo que les gusta tomar.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Lucas, você gosta de café?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Sim, eu gosto muito de café com leite."
+          },
+          {
+            "speaker": "Marina",
+            "text": "E chá? Você gosta de chá?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Não, eu não gosto de chá."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Eu gosto de suco de laranja."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Eu também gosto de suco de laranja!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo le gusta tomar el café a Lucas?",
+            "options": [
+              "Solo, sin nada",
+              "Con azúcar",
+              "Con leche",
+              "Con limón"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucas dice 'eu gosto muito de café com leite', usando 'gosto de' + sustantivo para decir qué le gusta."
+          },
+          {
+            "prompt": "¿A Lucas le gusta el té?",
+            "options": [
+              "No, no le gusta",
+              "Sí, un poco",
+              "Sí, mucho",
+              "No sabe"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas responde 'não, eu não gosto de chá', usando la forma negativa 'não gosto de' para decir que algo no le gusta."
+          },
+          {
+            "prompt": "¿Qué bebida les gusta a los dos amigos?",
+            "options": [
+              "Chá",
+              "Água",
+              "Suco de laranja",
+              "Café"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ambos dicen que les gusta: Marina dice 'eu gosto de suco de laranja' y Lucas responde 'eu também gosto de suco de laranja', confirmando que comparten ese gusto con 'gostar de'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación y respondé las preguntas.",
+        "situation": "Ana y Pedro están planeando el fin de semana en Florianópolis y hablan sobre lo que les gusta hacer.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Ana, você gosta de praia?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, eu gosto muito de praia."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu gosto de passear no parque."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Você gosta de dançar?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não, eu não gosto de dançar."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Eu gosto de dançar forró!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué le gusta hacer a Ana?",
+            "options": [
+              "Pasear por el parque",
+              "Cocinar",
+              "Nadar",
+              "Bailar forró"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana dice 'eu gosto de dançar forró', usando 'gostar de' + verbo en infinitivo para contar qué le gusta hacer."
+          },
+          {
+            "prompt": "¿A Pedro le gusta bailar?",
+            "options": [
+              "Sí, un poco",
+              "Sí, mucho",
+              "No sabe",
+              "No, no le gusta"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro responde 'não, eu não gosto de dançar', usando la forma negativa 'não gosto de' para decir que no le gusta algo."
+          },
+          {
+            "prompt": "¿Qué le gusta hacer a Pedro?",
+            "options": [
+              "Bailar",
+              "Tomar café",
+              "Pasear por el parque",
+              "Nadar"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'eu gosto de passear no parque', mostrando que usa 'gostar de' + verbo para expresar lo que le gusta hacer."
+          }
+        ]
+      }
+    ],
+    "planos-fim-de-semana": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la invitación de Bia.",
+        "prompt": "Bia pergunta: \"Você quer ir ___?\"",
+        "options": [
+          "conmigo",
+          "comigo",
+          "com mim",
+          "com eu"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Conmigo' en portugués es comigo, una sola palabra que combina la preposición com con el pronómbre eu.",
+        "optionNotes": [
+          "Incorrecto: 'conmigo' es español, no portugués.",
+          "Correcto: comigo es la forma única y correcta para 'conmigo'.",
+          "Incorrecto: 'com mim' no existe en portugués.",
+          "Incorrecto: con la preposición com, eu se transforma en comigo; no se dice 'com eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la respuesta de Juan.",
+        "prompt": "Juan responde: \"___! Que horas a gente se encontra?\"",
+        "options": [
+          "Posso",
+          "Claro",
+          "Gosto",
+          "Quero"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Claro' es la forma típica de aceptar un plan con entusiasmo en portugués, tal como se enseña en los puntos clave del tema (Claro! / Que pena, não posso).",
+        "optionNotes": [
+          "Incorrecto: 'posso' (puedo) no expresa aceptación entusiasta de un plan.",
+          "Correcto: 'claro' expresa aceptación entusiasta de un plan, como se vio en los puntos clave.",
+          "Incorrecto: 'gosto' (me gusta) no es la expresión usada para aceptar un plan.",
+          "Incorrecto: 'quero' (quiero) no es la expresión típica para aceptar un plan así."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el plan de Juan.",
+        "prompt": "Juan diz: \"No sábado eu ___ acordar tarde.\"",
+        "options": [
+          "vou de",
+          "vou",
+          "voy",
+          "vou a"
+        ],
+        "correctIndex": 1,
+        "explanation": "Ir + infinitivo no lleva preposición en portugués: vou acordar.",
+        "optionNotes": [
+          "Incorrecto: ir + infinitivo no lleva la preposición 'de' en portugués.",
+          "Correcto: vou + infinitivo, sin preposición.",
+          "Incorrecto: 'voy' es español, no portugués.",
+          "Incorrecto: ir + infinitivo no lleva la preposición 'a' en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la respuesta de Bia.",
+        "prompt": "Bia diz: \"Que pena, não ___. Vou trabalhar.\"",
+        "options": [
+          "pode",
+          "posso",
+          "quero",
+          "gosto"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'eu' el verbo poder es 'posso'; se usa para decir que no se puede hacer algo.",
+        "optionNotes": [
+          "Incorrecto: 'pode' es la forma de ele/ela/você, no de eu.",
+          "Correcto: posso es la forma de 'eu' del verbo poder.",
+          "Incorrecto: 'quero' cambia el sentido a 'no quiero', que no es lo que dice Bia.",
+          "Incorrecto: 'gosto' (me gusta) no tiene sentido en este contexto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la propuesta de Juan.",
+        "prompt": "Juan escreve: \"___ marcar algo para o fim de semana?\"",
+        "options": [
+          "Imos",
+          "Vou",
+          "Vamos",
+          "Vamos a"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para proponer un plan juntos se usa 'vamos' + infinitivo, sin preposición: vamos marcar.",
+        "optionNotes": [
+          "Incorrecto: 'imos' no existe en portugués.",
+          "Incorrecto: 'vou' es primera persona singular, no sirve para proponer un plan juntos.",
+          "Correcto: vamos + infinitivo, para proponer un plan en conjunto.",
+          "Incorrecto: ir + infinitivo no lleva la preposición 'a' en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar el plan de Bia.",
+        "prompt": "Bia diz: \"Vamos ao show ___ à noite.\"",
+        "options": [
+          "no sábado de",
+          "no sábado",
+          "na sábado",
+          "no sábado que"
+        ],
+        "correctIndex": 1,
+        "explanation": "Sábado es masculino, por eso el artículo correcto es 'no': no sábado.",
+        "optionNotes": [
+          "Incorrecto: agrega la preposición 'de', que no corresponde en esta expresión.",
+          "Correcto: no (masculino) concuerda con sábado.",
+          "Incorrecto: 'na' es artículo femenino, pero sábado es masculino.",
+          "Incorrecto: agrega la palabra 'que', que no corresponde en esta expresión."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta de 'conmigo'.",
+        "sentence": "Você quer ir ___?",
+        "hint": "(conmigo)",
+        "answers": [
+          "comigo"
+        ],
+        "explanation": "'Conmigo' en portugués es comigo, una sola palabra.",
+        "wrongAnswers": [
+          {
+            "answer": "com mim",
+            "why": "esa forma no existe en portugués."
+          },
+          {
+            "answer": "com eu",
+            "why": "con la preposición com, eu se transforma en comigo; no se dice 'com eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir conjugado.",
+        "sentence": "No sábado eu ___ acordar tarde.",
+        "hint": "(ir)",
+        "answers": [
+          "vou"
+        ],
+        "explanation": "Ir + infinitivo no lleva preposición en portugués: vou acordar.",
+        "wrongAnswers": [
+          {
+            "answer": "vou de",
+            "why": "ir + infinitivo no lleva la preposición 'de' en portugués."
+          },
+          {
+            "answer": "vou a",
+            "why": "ir + infinitivo no lleva la preposición 'a' en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el verbo poder conjugado para 'eu'.",
+        "sentence": "Que pena, não ___. Vou trabalhar.",
+        "hint": "(poder, eu)",
+        "answers": [
+          "posso"
+        ],
+        "explanation": "Con 'eu' el verbo poder es 'posso'.",
+        "wrongAnswers": [
+          {
+            "answer": "pode",
+            "why": "'pode' es la forma de ele/ela/você, no de eu."
+          },
+          {
+            "answer": "pude",
+            "why": "esa es una forma de pasado; aquí se necesita el presente 'posso'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma de ir para proponer un plan juntos.",
+        "sentence": "___ marcar algo para o fim de semana?",
+        "hint": "(proponer un plan juntos)",
+        "answers": [
+          "Vamos"
+        ],
+        "explanation": "Para proponer un plan juntos se usa 'vamos' + infinitivo, sin preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos a",
+            "why": "ir + infinitivo no lleva la preposición 'a' en portugués."
+          },
+          {
+            "answer": "Vou",
+            "why": "'vou' es primera persona singular, no sirve para proponer un plan juntos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con ir conjugado para 'nós'.",
+        "sentence": "No domingo nós ___ almoçar na casa da minha mãe.",
+        "hint": "(ir, nós)",
+        "answers": [
+          "vamos"
+        ],
+        "explanation": "Con 'nós' el verbo ir es 'vamos', seguido directo del infinitivo.",
+        "wrongAnswers": [
+          {
+            "answer": "vai",
+            "why": "'vai' es la forma de ele/ela/você, no de nós."
+          },
+          {
+            "answer": "vamos a",
+            "why": "ir + infinitivo no lleva la preposición 'a' en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con el artículo correcto para el día.",
+        "sentence": "Vamos ao show ___ à noite.",
+        "hint": "(día: sábado)",
+        "answers": [
+          "no sábado"
+        ],
+        "explanation": "Sábado es masculino, por eso el artículo correcto es 'no'.",
+        "wrongAnswers": [
+          {
+            "answer": "na sábado",
+            "why": "'na' es artículo femenino, pero sábado es masculino."
+          },
+          {
+            "answer": "no sábado de",
+            "why": "agrega una preposición innecesaria; la forma correcta es solo 'no sábado'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Você quer ir ao cinema comigo?",
+        "alternatives": [],
+        "translation": "¿Querés ir al cine conmigo?",
+        "explanation": "La estructura es sujeto + querer + ir + a + lugar + comigo.",
+        "tokens": [
+          "ir",
+          "comigo",
+          "ao",
+          "Você",
+          "quer",
+          "cinema"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "No sábado vou acordar tarde e depois vou à praia.",
+        "alternatives": [],
+        "translation": "El sábado me voy a levantar tarde y después voy a la playa.",
+        "explanation": "Ir + infinitivo no lleva preposición: vou acordar; luego vou à praia usa la contracción à (a + a).",
+        "tokens": [
+          "tarde",
+          "depois",
+          "e",
+          "sábado",
+          "praia",
+          "à",
+          "vou",
+          "No",
+          "vou",
+          "acordar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Vamos marcar algo para o fim de semana?",
+        "alternatives": [],
+        "translation": "¿Armamos algo para el fin de semana?",
+        "explanation": "Para proponer un plan juntos se usa 'vamos' + infinitivo, sin preposición.",
+        "tokens": [
+          "fim",
+          "semana",
+          "marcar",
+          "o",
+          "algo",
+          "de",
+          "Vamos",
+          "para"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "No domingo vamos almoçar na casa da minha mãe.",
+        "alternatives": [],
+        "translation": "El domingo vamos a almorzar en la casa de mi mamá.",
+        "explanation": "Con 'nós' (implícito en 'vamos') el verbo ir es 'vamos', seguido directo del infinitivo almoçar.",
+        "tokens": [
+          "No",
+          "vamos",
+          "mãe",
+          "domingo",
+          "na",
+          "casa",
+          "minha",
+          "almoçar",
+          "da"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Que pena, não posso, vou trabalhar no sábado.",
+        "alternatives": [],
+        "translation": "Qué lástima, no puedo, voy a trabajar el sábado.",
+        "explanation": "Con 'eu' el verbo poder es 'posso', y luego vou trabalhar usa ir + infinitivo sin preposición.",
+        "tokens": [
+          "sábado",
+          "Que",
+          "não",
+          "pena,",
+          "vou",
+          "trabalhar",
+          "no",
+          "posso,"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Você quer ir com mim?",
+        "answers": [
+          "Você quer ir comigo?"
+        ],
+        "explanation": "'Conmigo' en portugués es comigo, una sola palabra; 'com mim' no existe.",
+        "wrongAnswers": [
+          {
+            "answer": "Você quer ir com eu?",
+            "why": "cambia una forma incorrecta por otra igualmente incorrecta; la forma correcta es 'comigo', en una sola palabra."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Eu vou de acordar tarde no sábado.",
+        "answers": [
+          "Eu vou acordar tarde no sábado."
+        ],
+        "explanation": "Ir + infinitivo no lleva preposición en portugués; no se dice 'vou de'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu vai acordar tarde no sábado.",
+            "why": "cambia la conjugación del verbo ir en vez de quitar la preposición 'de', que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vamos a marcar algo para o fim de semana?",
+        "answers": [
+          "Vamos marcar algo para o fim de semana?"
+        ],
+        "explanation": "Ir + infinitivo no lleva preposición en portugués; no se dice 'vamos a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vai marcar algo para o fim de semana?",
+            "why": "cambia la conjugación del verbo ir en vez de quitar la preposición 'a', que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "No domingo nós vai almoçar na casa da minha mãe.",
+        "answers": [
+          "No domingo nós vamos almoçar na casa da minha mãe."
+        ],
+        "explanation": "Con 'nós' el verbo ir debe ser 'vamos', no 'vai' (esa es la forma de ele/ela/você).",
+        "wrongAnswers": [
+          {
+            "answer": "No domingo nós vamos a almoçar na casa da minha mãe.",
+            "why": "agrega una preposición innecesaria en vez de corregir la concordancia del verbo ir."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Vamos ao show na sábado à noite.",
+        "answers": [
+          "Vamos ao show no sábado à noite."
+        ],
+        "explanation": "Sábado es masculino, por eso el artículo correcto es 'no', no 'na'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos ao show no sábado de à noite.",
+            "why": "agrega una preposición innecesaria en vez de corregir el artículo, que es el error real."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Querés ir al cine conmigo?",
+        "answers": [
+          "Você quer ir ao cinema comigo?",
+          "Quer ir ao cinema comigo?"
+        ],
+        "explanation": "'Conmigo' en portugués es comigo, una sola palabra.",
+        "wrongAnswers": [
+          {
+            "answer": "Você quer ir ao cinema com mim?",
+            "why": "'com mim' no existe en portugués; la forma correcta es 'comigo'."
+          },
+          {
+            "answer": "Você quer ir ao cinema com eu?",
+            "why": "con la preposición com, el pronómbre eu se transforma en comigo; no se dice 'com eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El sábado me voy a levantar tarde.",
+        "answers": [
+          "No sábado vou acordar tarde.",
+          "No sábado eu vou acordar tarde."
+        ],
+        "explanation": "Ir + infinitivo no lleva preposición en portugués: vou acordar.",
+        "wrongAnswers": [
+          {
+            "answer": "No sábado vou de acordar tarde.",
+            "why": "ir + infinitivo no lleva preposición 'de' en portugués."
+          },
+          {
+            "answer": "No sábado vou a acordar tarde.",
+            "why": "ir + infinitivo no lleva preposición en portugués; no se dice 'vou a'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Armamos algo para el fin de semana?",
+        "answers": [
+          "Vamos marcar algo para o fim de semana?"
+        ],
+        "explanation": "Para proponer un plan juntos se usa 'vamos' + infinitivo, sin preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos a marcar algo para o fim de semana?",
+            "why": "ir + infinitivo no lleva preposición en portugués; no se dice 'vamos a'."
+          },
+          {
+            "answer": "Vai marcar algo para o fim de semana?",
+            "why": "para proponer un plan juntos se usa 'vamos', no 'vai' (esa es la forma de ele/ela/você)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El domingo vamos a almorzar en la casa de mi mamá.",
+        "answers": [
+          "No domingo vamos almoçar na casa da minha mãe."
+        ],
+        "explanation": "Ir + infinitivo no lleva preposición en portugués: vamos almoçar.",
+        "wrongAnswers": [
+          {
+            "answer": "No domingo vamos a almoçar na casa da minha mãe.",
+            "why": "ir + infinitivo no lleva preposición en portugués; no se dice 'vamos a'."
+          },
+          {
+            "answer": "No domingo vai almoçar na casa da minha mãe.",
+            "why": "con 'nós' (implícito en vamos) el verbo ir es 'vamos', no 'vai'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Qué lástima, no puedo, voy a trabajar.",
+        "answers": [
+          "Que pena, não posso, vou trabalhar.",
+          "Que pena, não posso. Vou trabalhar."
+        ],
+        "explanation": "Con 'eu' el verbo poder es 'posso', y después ir + infinitivo sin preposición: vou trabalhar.",
+        "wrongAnswers": [
+          {
+            "answer": "Que pena, não pode, vou trabalhar.",
+            "why": "'pode' es la forma de ele/ela/você, no de eu; con 'eu' el verbo poder es 'posso'."
+          },
+          {
+            "answer": "Que pena, não posso, vou de trabalhar.",
+            "why": "ir + infinitivo no lleva la preposición 'de' en portugués."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Vamos al show el sábado a la noche.",
+        "answers": [
+          "Vamos ao show no sábado à noite."
+        ],
+        "explanation": "Sábado es masculino, por eso el artículo correcto es 'no'; 'a la noche' se traduce como à noite.",
+        "wrongAnswers": [
+          {
+            "answer": "Vamos ao show na sábado à noite.",
+            "why": "sábado es masculino, por eso el artículo correcto es 'no', no 'na'."
+          },
+          {
+            "answer": "Vamos ao show no sábado de noite.",
+            "why": "la expresión fija para 'a la noche' en este contexto es 'à noite', no 'de noite'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Ana, você quer ir ao cinema comigo no sábado?",
+        "alternatives": [
+          "Você quer ir ao cinema comigo no sábado, Ana?"
+        ],
+        "translation": "Ana, ¿querés ir al cine conmigo el sábado?",
+        "explanation": "Prestá atención a 'comigo', que se escribe junto y no 'com eu' ni 'com mim' como en español se tiende a calcar."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Que pena, não posso. Vou trabalhar no sábado.",
+        "alternatives": [
+          "Que pena, não posso, vou trabalhar no sábado."
+        ],
+        "translation": "Qué lástima, no puedo. Voy a trabajar el sábado.",
+        "explanation": "Fijate que después de 'vou' va el infinitivo directo, 'vou trabalhar', sin la preposición 'de' que a veces se agrega por error."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "No domingo vou almoçar na casa da minha mãe.",
+        "alternatives": [
+          "Vou almoçar na casa da minha mãe no domingo."
+        ],
+        "translation": "El domingo voy a almorzar en la casa de mi mamá.",
+        "explanation": "La 'ç' en 'almoçar' suena como una 's' suave, distinta de la 'c' de 'casa'; no confundas ambos sonidos al escribir."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa en portugués.",
+        "sentence": "Estou pensando em ir à praia no fim de semana.",
+        "alternatives": [
+          "Estou pensando em ir para a praia no fim de semana."
+        ],
+        "translation": "Estoy pensando en ir a la playa el fin de semana.",
+        "explanation": "En 'pensando' la terminación nasal '-ando' suena cerrada en la nariz; no la confundas con un simple 'ando' abierto como en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál es.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' de 'avó' es abierta (como en 'bola'), mientras que la 'ô' de 'avô' es cerrada (como en 'bolo'); en español no distinguimos estos dos sonidos de 'o'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál es.",
+        "pair": [
+          "pau",
+          "pão"
+        ],
+        "target": 0,
+        "meanings": [
+          "palo",
+          "pan"
+        ],
+        "explanation": "'Pão' tiene un sonido nasal que sale por la nariz, mientras que 'pau' es un diptongo oral sin nasalidad; escuchá si la vocal final resuena en la nariz o no."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá la palabra y marcá cuál es.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 0,
+        "meanings": [
+          "caza",
+          "casa"
+        ],
+        "explanation": "La 'ç' de 'caça' suena como una 's' sorda (como en español), pero la 's' entre vocales de 'casa' suena como 'z'; en español ese sonido de 'z' no existe para la 's'."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el mensaje de WhatsApp y respondé las preguntas sobre los planes de Ana.",
+        "text": "Oi Beto! Vamos marcar algo para o fim de semana? No sábado eu vou acordar tarde e depois vou à praia com a Carla. O dia promete ser bem ensolarado, então já vou levar um chapéu novo. Você quer ir também? À noite nós vamos jantar em um restaurante perto da praia que todo mundo recomenda. No domingo eu vou visitar minha mãe. Ela mora em Niterói, em um apartamento pequeno mas muito bonito. Vamos almoçar na casa dela e depois vamos assistir um filme juntas no sofá. Meu irmão também vai estar lá, porque ele adora os domingos em família. Ele vai chegar de São Paulo no sábado à noite, de ônibus. Responde rápido, por favor, porque preciso organizar tudo! Beijos, Ana.",
+        "questions": [
+          {
+            "prompt": "O que Ana vai fazer no sábado de manhã?",
+            "options": [
+              "Ela vai acordar tarde.",
+              "Ela vai estudar.",
+              "Ela vai trabalhar.",
+              "Ela vai cozinhar."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'eu vou acordar tarde', usando la estructura ir + infinitivo para un plan futuro."
+          },
+          {
+            "prompt": "Com quem Ana vai almoçar no domingo?",
+            "options": [
+              "Com a Carla.",
+              "Com o irmão.",
+              "Com a mãe.",
+              "Com Beto."
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que el domingo va a visitar a su madre y 'vamos almoçar na casa dela', refiriéndose a la mamá."
+          },
+          {
+            "prompt": "Quando o irmão de Ana vai chegar?",
+            "options": [
+              "Sábado à noite.",
+              "Domingo de manhã.",
+              "Domingo à noite.",
+              "Sábado de manhã."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Ele vai chegar de São Paulo no sábado à noite', usando ir + infinitivo con una expresión de tiempo."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el mensaje de Pedro y respondé las preguntas sobre el plan con Lucas.",
+        "text": "Lucas, vamos ao cinema no sábado? Tem um filme novo de ação que todo mundo está comentando. Eu vou convidar a Marina também, porque ela adora esse tipo de filme. Ela vai estar livre à tarde, então vai dar certo para todo mundo. Podemos nos encontrar às quatro horas na porta do shopping, perto da entrada principal. Depois do filme, vamos comer uma pizza perto de lá, naquele lugar que você gosta. Se você não puder no sábado, podemos ir no domingo à tarde sem problema. Eu não vou trabalhar nesse fim de semana, então estou livre os dois dias. Me avisa o que você prefere, assim já reservo a mesa! Um abraço, Pedro.",
+        "questions": [
+          {
+            "prompt": "O que Pedro quer fazer no sábado?",
+            "options": [
+              "Estudar.",
+              "Trabalhar.",
+              "Ir à praia.",
+              "Ir ao cinema."
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro invita con 'vamos ao cinema no sábado?', usando la fórmula 'vamos + infinitivo' para proponer un plan."
+          },
+          {
+            "prompt": "A que horas eles vão se encontrar?",
+            "options": [
+              "Às quatro horas.",
+              "Às cinco horas.",
+              "Às duas horas.",
+              "Às três horas."
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Podemos nos encontrar às quatro horas', especificando la hora del plan con ir + infinitivo."
+          },
+          {
+            "prompt": "Onde vão comer depois do filme?",
+            "options": [
+              "Em um restaurante chinês.",
+              "Uma pizza perto do shopping.",
+              "Um lanche em casa.",
+              "Um churrasco."
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'vamos comer uma pizza perto de lá', refiriéndose al lugar cerca del shopping donde se encuentran."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la charla y respondé qué planes tienen las amigas para el sábado.",
+        "situation": "Camila y Rafaela son amigas y están charlando en un café en São Paulo sobre sus planes para el sábado.",
+        "lines": [
+          {
+            "speaker": "Camila",
+            "text": "Oi, Rafaela! Vamos fazer algo no sábado?"
+          },
+          {
+            "speaker": "Rafaela",
+            "text": "Claro! O que você quer fazer?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Eu quero ir à praia de manhã."
+          },
+          {
+            "speaker": "Rafaela",
+            "text": "Boa ideia! Eu vou acordar tarde, mas posso ir à tarde."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Perfeito! Então vamos nos encontrar na praia às duas horas."
+          },
+          {
+            "speaker": "Rafaela",
+            "text": "Topo! E à noite, vamos jantar em algum lugar?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Vamos! Eu conheço um restaurante bom perto da praia."
+          },
+          {
+            "speaker": "Rafaela",
+            "text": "Combinado! Até sábado!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿A qué hora se van a encontrar en la playa?",
+            "options": [
+              "A las cuatro.",
+              "A las dos.",
+              "A la una.",
+              "A las tres."
+            ],
+            "correctIndex": 1,
+            "explanation": "Camila dice 'vamos nos encontrar na praia às duas horas', usando ir + infinitivo con la hora del encuentro."
+          },
+          {
+            "prompt": "¿Qué va a hacer Rafaela a la mañana del sábado?",
+            "options": [
+              "Va a estudiar.",
+              "Va a levantarse tarde.",
+              "Va a trabajar.",
+              "Va a ir a la playa."
+            ],
+            "correctIndex": 1,
+            "explanation": "Rafaela dice 'Eu vou acordar tarde', por eso recién puede ir a la playa a la tarde."
+          },
+          {
+            "prompt": "¿Qué van a hacer a la noche?",
+            "options": [
+              "Van a ver una película.",
+              "Van a ir a un show.",
+              "Van a cenar en un restaurante.",
+              "Van a quedarse en casa."
+            ],
+            "correctIndex": 2,
+            "explanation": "Camila dice 'Eu conheço um restaurante bom perto da praia' después de proponer 'vamos jantar em algum lugar'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la charla y respondé sobre los planes de Diego y Juliana.",
+        "situation": "Diego y Juliana son compañeros de trabajo y están charlando en la oficina, después de terminar sus tareas, sobre qué van a hacer el fin de semana.",
+        "lines": [
+          {
+            "speaker": "Diego",
+            "text": "Juliana, você quer fazer algo no domingo?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Talvez! O que você vai fazer?"
+          },
+          {
+            "speaker": "Diego",
+            "text": "Eu vou ao cinema de tarde. Quer ir comigo?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Que pena, não posso. Vou visitar minha família."
+          },
+          {
+            "speaker": "Diego",
+            "text": "Ah, entendi. E no sábado, você está livre?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Sim! No sábado eu não vou trabalhar."
+          },
+          {
+            "speaker": "Diego",
+            "text": "Então vamos tomar um café no sábado de manhã?"
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Topo! Vamos às dez horas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Por qué Juliana no puede ir al cine el domingo?",
+            "options": [
+              "Porque va a viajar.",
+              "Porque va a estudiar.",
+              "Porque va a trabajar.",
+              "Porque va a visitar a su familia."
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana responde 'Que pena, não posso. Vou visitar minha família', explicando su plan con ir + infinitivo."
+          },
+          {
+            "prompt": "¿Qué van a hacer el sábado?",
+            "options": [
+              "Van a tomar un café.",
+              "Van a ir a la playa.",
+              "Van a ir al cine.",
+              "Van a cenar."
+            ],
+            "correctIndex": 0,
+            "explanation": "Diego propone 'vamos tomar um café no sábado de manhã?' y Juliana acepta diciendo 'Topo!'."
+          },
+          {
+            "prompt": "¿A qué hora van a encontrarse el sábado?",
+            "options": [
+              "A las nueve.",
+              "A las once.",
+              "A las doce.",
+              "A las diez."
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana dice 'Vamos às dez horas', confirmando la hora del encuentro para tomar café."
+          }
+        ]
+      }
+    ]
+  }
+}

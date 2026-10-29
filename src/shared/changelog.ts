@@ -9,6 +9,12 @@ export interface Release {
 
 export const CHANGELOG: Release[] = [
   {
+    version: '3.4.1',
+    date: '2026-10-29',
+    title: 'Ejercicios guiados para todo el A1 de portugués',
+    items: ['Los 10 tópicos de A1 de portugués traen sus ejercicios guiados listos: la práctica abre al instante.']
+  },
+  {
     version: '3.4.0',
     date: '2026-10-28',
     title: 'Dificultad que arranca guiada, sin ejercicios de voz y el portugués completo',

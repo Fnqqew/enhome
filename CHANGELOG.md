@@ -2,6 +2,10 @@
 
 Todas las versiones de Enhome. Los instaladores están en las [versiones publicadas](https://github.com/Fnqqew/enhome/releases) del repositorio.
 
+## 3.4.1 · 2026-10-29
+
+- Ejercicios guiados ya escritos y revisados para todo el A1 de portugués (los 10 tópicos): la práctica guiada abre al instante.
+
 ## 3.4.0 · 2026-10-28
 
 Una curva de dificultad que arranca guiada, sin ejercicios de voz, y el portugués completo.

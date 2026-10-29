@@ -3008,6 +3008,800 @@
           }
         ]
       }
+    ],
+    "casa-familia": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la oración sobre la familia de Marina.",
+        "prompt": "Pedro, essa é ___ avó. Ela mora no interior.",
+        "options": [
+          "minhas",
+          "minha",
+          "meus",
+          "meu"
+        ],
+        "correctIndex": 1,
+        "explanation": "Avó (abuela) es femenino y singular, por eso el posesivo correcto es 'minha'.",
+        "optionNotes": [
+          "Incorrecto: 'minhas' es plural, pero hay una sola avó.",
+          "Correcto: avó es femenino singular, coincide con 'minha'.",
+          "Incorrecto: 'meus' es masculino y plural, no coincide con avó.",
+          "Incorrecto: 'meu' es masculino, pero avó es femenino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la combinación correcta de contracción y posesivo.",
+        "prompt": "O quarto ___ irmão fica no segundo andar.",
+        "options": [
+          "do minha",
+          "da minha",
+          "do meu",
+          "de meu"
+        ],
+        "correctIndex": 2,
+        "explanation": "Irmão es masculino, entonces se usa 'meu'; además 'de' + 'o' se contrae obligatoriamente en 'do'.",
+        "optionNotes": [
+          "Incorrecto: mezcla la contracción masculina 'do' con el posesivo femenino 'minha'.",
+          "Incorrecto: 'da minha' es femenino, pero irmão es masculino.",
+          "Correcto: 'do' (de+o) y 'meu' porque irmão es masculino.",
+          "Incorrecto: falta la contracción obligatoria, no se dice 'de meu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la contracción correcta para empezar la oración.",
+        "prompt": "___ minha casa tem três quartos e uma varanda.",
+        "options": [
+          "Na",
+          "Em a",
+          "No",
+          "Na a"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Em' + 'a' se contrae siempre en 'na', porque casa es femenino.",
+        "optionNotes": [
+          "Correcto: em+a=na, y casa es femenino.",
+          "Incorrecto: 'em a' no existe, siempre hay que contraer.",
+          "Incorrecto: 'no' es em+o, pero casa es femenino.",
+          "Incorrecto: no se repite el artículo después de contraer."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del sustantivo en plural.",
+        "prompt": "Tem quatro ___ na casa da Marina.",
+        "options": [
+          "quartas",
+          "quartoes",
+          "quarto",
+          "quartos"
+        ],
+        "correctIndex": 3,
+        "explanation": "Como son cuatro, el sustantivo va en plural: 'quartos', igual que en español.",
+        "optionNotes": [
+          "Incorrecto: cambia el género de la palabra, 'quarto' es masculino.",
+          "Incorrecto: el plural de 'quarto' no se forma así.",
+          "Incorrecto: falta el plural, pero son cuatro cuartos.",
+          "Correcto: plural regular agregando 's'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el posesivo correcto según el género de 'irmão'.",
+        "prompt": "O Lucas é ___ irmão. Ele mora comigo.",
+        "options": [
+          "meu",
+          "meus",
+          "minha",
+          "minhas"
+        ],
+        "correctIndex": 0,
+        "explanation": "Irmão es masculino y singular, por eso corresponde 'meu', aunque en español 'mi' no cambie de género.",
+        "optionNotes": [
+          "Correcto: irmão es masculino singular.",
+          "Incorrecto: 'meus' es plural, pero hay un solo irmão.",
+          "Incorrecto: 'minha' es femenino, pero irmão es masculino.",
+          "Incorrecto: 'minhas' es femenino y plural, no corresponde."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la contracción correcta para esta ubicación.",
+        "prompt": "A cozinha fica ao lado ___ sala.",
+        "options": [
+          "de a",
+          "na",
+          "da",
+          "do"
+        ],
+        "correctIndex": 2,
+        "explanation": "'De' + 'a' se contrae en 'da', porque sala es femenino.",
+        "optionNotes": [
+          "Incorrecto: 'de a' no existe, siempre se contrae.",
+          "Incorrecto: 'na' es em+a, no corresponde con 'ao lado de'.",
+          "Correcto: de+a=da, sala es femenino.",
+          "Incorrecto: 'do' es de+o, pero sala es femenino."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo y el sustantivo correctos.",
+        "sentence": "Minha ___ mora no interior.",
+        "hint": "(madre de mi madre)",
+        "answers": [
+          "avó"
+        ],
+        "explanation": "Avó, con tilde aguda, significa abuela; avô, con circunflejo, significa abuelo.",
+        "wrongAnswers": [
+          {
+            "answer": "avô",
+            "why": "avô es el abuelo (masculino); para abuela se usa avó."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra correcta para 'padre' en portugués.",
+        "sentence": "O ___ da Marina trabalha em São Paulo.",
+        "hint": "(padre)",
+        "answers": [
+          "pai"
+        ],
+        "explanation": "En portugués se dice 'pai', no 'padre' como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "padre",
+            "why": "'padre' es un calco del español; en portugués la palabra correcta es 'pai'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el sustantivo en la forma correcta según el número.",
+        "sentence": "A casa da Marina tem três ___.",
+        "hint": "(habitaciones, singular: quarto)",
+        "answers": [
+          "quartos"
+        ],
+        "explanation": "Como son tres, el sustantivo va en plural: 'quartos'.",
+        "wrongAnswers": [
+          {
+            "answer": "quarto",
+            "why": "con 'três' el sustantivo debe ir en plural: 'quartos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la contracción correcta de 'a' + 'o'.",
+        "sentence": "A varanda fica ___ lado da cozinha.",
+        "hint": "(a + o)",
+        "answers": [
+          "ao"
+        ],
+        "explanation": "La expresión 'ao lado de' usa siempre la contracción 'a'+'o'='ao'.",
+        "wrongAnswers": [
+          {
+            "answer": "no",
+            "why": "'no' es la contracción de 'em'+'o', pero aquí se necesita 'a'+'o' = 'ao'."
+          },
+          {
+            "answer": "a o",
+            "why": "la contracción es obligatoria y se escribe junta: 'ao'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la contracción correcta de 'de' + 'a'.",
+        "sentence": "O banheiro fica perto ___ varanda.",
+        "hint": "(de + a)",
+        "answers": [
+          "da"
+        ],
+        "explanation": "'De' + 'a' se contrae en 'da', porque varanda es femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "de a",
+            "why": "la contracción es obligatoria y se escribe junta: 'da'."
+          },
+          {
+            "answer": "do",
+            "why": "varanda es femenino, se necesita 'da', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el posesivo femenino correcto.",
+        "sentence": "___ filha dorme no quarto azul.",
+        "hint": "(mi, posesivo femenino)",
+        "answers": [
+          "Minha",
+          "A minha"
+        ],
+        "explanation": "Filha es femenino, por eso el posesivo correcto es 'minha' (con o sin el artículo 'a' antes, ambas formas son correctas en Brasil).",
+        "wrongAnswers": [
+          {
+            "answer": "Meu",
+            "why": "filha es femenino, el posesivo debe ser 'minha', no 'meu'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O quarto do meu irmão fica no segundo andar.",
+        "alternatives": [],
+        "translation": "El cuarto de mi hermano queda en el segundo piso.",
+        "explanation": "Se combina la contracción 'do' (de+o) con el posesivo 'meu', porque irmão es masculino.",
+        "tokens": [
+          "andar",
+          "segundo",
+          "no",
+          "quarto",
+          "fica",
+          "irmão",
+          "do",
+          "meu",
+          "O"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A cozinha da minha casa é bem grande.",
+        "alternatives": [],
+        "translation": "La cocina de mi casa es bastante grande.",
+        "explanation": "'Da' es la contracción de 'de'+'a', usada porque 'casa' es femenino.",
+        "tokens": [
+          "grande",
+          "bem",
+          "da",
+          "casa",
+          "A",
+          "minha",
+          "é",
+          "cozinha"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Meus avós moram no interior de São Paulo.",
+        "alternatives": [],
+        "translation": "Mis abuelos viven en el interior de San Pablo.",
+        "explanation": "'Avós' es plural, por eso el posesivo correcto es 'meus', y 'no' es la contracción de 'em'+'o'.",
+        "tokens": [
+          "Paulo",
+          "avós",
+          "interior",
+          "moram",
+          "de",
+          "São",
+          "no",
+          "Meus"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "A minha irmã mora com os meus pais.",
+        "alternatives": [],
+        "translation": "Mi hermana vive con mis padres.",
+        "explanation": "En Brasil es común usar el artículo antes del posesivo ('a minha'), igual de correcto que sin él ('minha'), pero al reordenar las mismas palabras dadas no existe otra secuencia válida.",
+        "tokens": [
+          "irmã",
+          "minha",
+          "com",
+          "A",
+          "mora",
+          "pais",
+          "meus",
+          "os"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "O banheiro fica perto da varanda azul.",
+        "alternatives": [],
+        "translation": "El baño queda cerca del balcón azul.",
+        "explanation": "'Da' es la contracción de 'de'+'a', porque 'varanda' es femenino.",
+        "tokens": [
+          "varanda",
+          "fica",
+          "azul",
+          "banheiro",
+          "perto",
+          "O",
+          "da"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Meu avó cozinha muito bem.",
+        "answers": [
+          "Meu avô cozinha muito bem."
+        ],
+        "explanation": "El posesivo masculino 'meu' indica que se habla del abuelo, por eso debe decir 'avô' (con circunflejo), no 'avó'.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha avó cozinha muito bem.",
+            "why": "corrige la palabra equivocada: el problema es el sustantivo 'avó', que debe cambiarse a 'avô', no el posesivo 'meu'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Minha irmão mora comigo em Buenos Aires.",
+        "answers": [
+          "Meu irmão mora comigo em Buenos Aires."
+        ],
+        "explanation": "Irmão es masculino, entonces el posesivo correcto es 'meu', no 'minha'.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha irmã mora comigo em Buenos Aires.",
+            "why": "cambia el sustantivo en vez de corregir el posesivo; el error está en 'minha', que debe ser 'meu' porque 'irmão' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Tem quatro quarto na casa da Marina.",
+        "answers": [
+          "Tem quatro quartos na casa da Marina."
+        ],
+        "explanation": "Como son cuatro cuartos, el sustantivo debe ir en plural: 'quartos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Tem quatro quartas na casa da Marina.",
+            "why": "cambia el género de la palabra en vez de ponerla en plural; el error es la falta de la 's', no el género."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "A sala fica ao lado o banheiro.",
+        "answers": [
+          "A sala fica ao lado do banheiro."
+        ],
+        "explanation": "La expresión 'ao lado de' necesita la contracción 'do' (de+o) porque banheiro es masculino.",
+        "wrongAnswers": [
+          {
+            "answer": "A sala fica ao lado da banheiro.",
+            "why": "banheiro es masculino, la contracción correcta es 'do', no 'da'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en la oración.",
+        "sentence": "Meu esposa trabalha na cozinha hoje.",
+        "answers": [
+          "Minha esposa trabalha na cozinha hoje."
+        ],
+        "explanation": "Esposa es femenino, entonces el posesivo correcto es 'minha', no 'meu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu esposo trabalha na cozinha hoje.",
+            "why": "cambia el sustantivo en vez de corregir el posesivo; el error está en 'meu', que debe ser 'minha' porque 'esposa' es femenino."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Mi casa tiene tres cuartos y un baño.",
+        "answers": [
+          "Minha casa tem três quartos e um banheiro.",
+          "A minha casa tem três quartos e um banheiro."
+        ],
+        "explanation": "Casa es femenino, entonces se usa 'minha', y como son tres cuartos, el sustantivo va en plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu casa tem três quartos e um banheiro.",
+            "why": "'casa' es femenino, el posesivo debe ser 'minha', no 'meu'."
+          },
+          {
+            "answer": "Minha casa tem três quarto e um banheiro.",
+            "why": "con 'três' el sustantivo debe ir en plural: 'quartos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Mi hermano vive en el segundo piso.",
+        "answers": [
+          "Meu irmão mora no segundo andar.",
+          "O meu irmão mora no segundo andar."
+        ],
+        "explanation": "Irmão es masculino, por eso el posesivo correcto es 'meu'; en el habla de Brasil también es válido agregar el artículo antes del posesivo ('o meu').",
+        "wrongAnswers": [
+          {
+            "answer": "Minha irmão mora no segundo andar.",
+            "why": "'irmão' es masculino, el posesivo correcto es 'meu', no 'minha'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "La cocina queda al lado del living.",
+        "answers": [
+          "A cozinha fica ao lado da sala."
+        ],
+        "explanation": "'Al lado del' se traduce como 'ao lado da', usando la contracción 'de'+'a'='da' porque sala es femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "A cozinha fica ao lado a sala.",
+            "why": "falta la contracción obligatoria 'de'+'a' = 'da'."
+          },
+          {
+            "answer": "A cozinha fica ao lado o sala.",
+            "why": "'sala' es femenino, la contracción correcta es 'da', no se usa 'o'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Mis abuelos viven en el interior.",
+        "answers": [
+          "Meus avós moram no interior.",
+          "Os meus avós moram no interior."
+        ],
+        "explanation": "Avós (abuelos) es masculino plural como forma general, por eso el posesivo correcto es 'meus'; en el habla de Brasil también es válido agregar el artículo antes del posesivo ('os meus').",
+        "wrongAnswers": [
+          {
+            "answer": "Minhas avós moram no interior.",
+            "why": "cuando 'avós' se refiere a abuelo y abuela juntos, se usa la forma masculina plural 'meus', no 'minhas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Tu hija duerme en el cuarto azul.",
+        "answers": [
+          "Sua filha dorme no quarto azul.",
+          "A sua filha dorme no quarto azul."
+        ],
+        "explanation": "Filha es femenino, por eso el posesivo correcto es 'sua', no 'seu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Seu filha dorme no quarto azul.",
+            "why": "'filha' es femenino, el posesivo debe ser 'sua', no 'seu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "El baño queda cerca del balcón.",
+        "answers": [
+          "O banheiro fica perto da varanda."
+        ],
+        "explanation": "'Cerca del' se traduce como 'perto da', usando la contracción 'de'+'a'='da' porque varanda es femenino.",
+        "wrongAnswers": [
+          {
+            "answer": "O banheiro fica perto do varanda.",
+            "why": "'varanda' es femenino, la contracción correcta es 'da', no 'do'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Minha mãe mora perto da praia em Florianópolis.",
+        "alternatives": [],
+        "translation": "Mi madre vive cerca de la playa en Florianópolis.",
+        "explanation": "La contracción 'da' (de + a) se pronuncia rápido; no la confundas con 'de a', que no existe en portugués."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "O quarto do meu irmão fica no segundo andar.",
+        "alternatives": [
+          "O quarto de meu irmão fica no segundo andar."
+        ],
+        "translation": "El cuarto de mi hermano queda en el segundo piso.",
+        "explanation": "El posesivo 'meu' va con 'irmão' porque es masculino; no se usa 'minha' aunque en español 'mi' no cambie."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Meus avós têm uma casa pequena no interior.",
+        "alternatives": [],
+        "translation": "Mis abuelos tienen una casa pequeña en el interior.",
+        "explanation": "'Avós' es el plural que incluye a abuelo y abuela juntos, y se pronuncia con 'ó' abierta, igual que 'avó'; no la confundas con 'avô', que tiene 'ô' cerrada."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "A cozinha da minha casa é bem grande.",
+        "alternatives": [
+          "A cozinha de minha casa é bem grande."
+        ],
+        "translation": "La cocina de mi casa es bastante grande.",
+        "explanation": "La contracción 'da' (de + a) se usa antes del posesivo; escribir 'de a' sería un error aunque se escuche parecido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' es una vocal abierta y la 'ô' es cerrada; en español no distinguimos esos dos sonidos de 'o'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "irmão",
+          "irmã"
+        ],
+        "target": 1,
+        "meanings": [
+          "hermano",
+          "hermana"
+        ],
+        "explanation": "'Irmão' tiene un diptongo nasal 'ão' con dos sonidos, mientras que 'irmã' es una sola vocal nasal 'ã'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y marcá qué palabra se dice.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 1,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "La 's' entre vocales suena como 'z' suave, mientras que 'ç' siempre suena como la 's' fuerte del español."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la casa y la familia, y respondé las preguntas.",
+        "text": "Minha casa é pequena, mas bem bonita. Na minha casa tem três quartos, uma sala, uma cozinha e um banheiro. Eu moro com meu pai, minha mãe e minha irmã. Meu quarto fica perto da sala. O quarto da minha irmã é azul e fica ao lado do banheiro. Meus pais dormem no quarto grande, perto da varanda. Minha mãe gosta de tomar café na varanda de manhã. Meu avô mora perto da minha casa, no interior. Ele vem visitar a gente todo fim de semana. Minha avó também vem, e ela adora cozinhar na nossa cozinha. Eu gosto muito da minha família e da minha casa.",
+        "questions": [
+          {
+            "prompt": "¿Dónde queda el cuarto de la hermana?",
+            "options": [
+              "Perto da sala",
+              "Perto da varanda",
+              "Na cozinha",
+              "Ao lado do banheiro"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'O quarto da minha irmã é azul e fica ao lado do banheiro', usando la contracción 'da' (de + a) con el posesivo."
+          },
+          {
+            "prompt": "¿Quién duerme en el cuarto grande, cerca de la varanda?",
+            "options": [
+              "O avô",
+              "A avó",
+              "A irmã",
+              "Os pais"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'Meus pais dormem no quarto grande, perto da varanda', con el posesivo plural 'meus' porque 'pais' es plural."
+          },
+          {
+            "prompt": "¿Qué le gusta hacer a la abuela?",
+            "options": [
+              "Tomar café na varanda",
+              "Dormir no quarto grande",
+              "Cozinhar na cozinha",
+              "Morar no interior"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Minha avó também vem, e ela adora cozinhar na nossa cozinha'; con tilde en 'avó' se refiere a la abuela."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el mensaje de Ana a su amiga y respondé las preguntas.",
+        "text": "Oi, Carla! Eu quero te contar sobre a casa do meu avô. A casa dele fica no interior de Minas Gerais. É uma casa grande, com quatro quartos e uma varanda enorme. O quarto do meu avô fica perto da cozinha. O quarto da minha avó fica ao lado da sala. Meu tio mora com eles, e o quarto dele fica perto do banheiro. Toda a família vai para a casa do meu avô nas férias. Meus irmãos adoram a varanda, porque é muito grande. Minha irmã dorme no quarto azul, perto da sala. Eu adoro visitar meus avós e minha família no interior. Beijos, Ana.",
+        "questions": [
+          {
+            "prompt": "¿Dónde queda el cuarto del abuelo?",
+            "options": [
+              "Ao lado da sala",
+              "Perto do banheiro",
+              "Na varanda",
+              "Perto da cozinha"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'O quarto do meu avô fica perto da cozinha', con 'avô' (circunflejo) refiriéndose al abuelo."
+          },
+          {
+            "prompt": "¿Quiénes duermen cerca de la sala?",
+            "options": [
+              "A avó e a irmã",
+              "O avô",
+              "O tio",
+              "Os irmãos"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice que el cuarto de la abuela queda 'ao lado da sala' y que la hermana duerme 'perto da sala'."
+          },
+          {
+            "prompt": "¿De quién es el cuarto que queda cerca del baño?",
+            "options": [
+              "Da irmã",
+              "Da avó",
+              "Do avô",
+              "Do tio"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'o quarto dele fica perto do banheiro', refiriéndose al tio mencionado en la frase anterior."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación y respondé las preguntas sobre la casa de Lucas.",
+        "situation": "Estás escuchando una llamada entre Beatriz y su amigo Lucas, que se mudó con su familia a una casa nueva en Belo Horizonte.",
+        "lines": [
+          {
+            "speaker": "Beatriz",
+            "text": "Oi, Lucas! Como é a casa nova da sua família?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "É bem grande! Tem três quartos e uma varanda."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Onde fica o quarto dos seus pais?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "O quarto dos meus pais fica perto da sala."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "E o seu quarto?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "O meu quarto fica ao lado do banheiro."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "E sua irmã, onde ela dorme?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Minha irmã dorme no quarto perto da cozinha."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde queda el cuarto de los padres de Lucas?",
+            "options": [
+              "Perto da sala",
+              "Ao lado do banheiro",
+              "Perto da cozinha",
+              "Na varanda"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas dice 'O quarto dos meus pais fica perto da sala', usando el posesivo plural 'meus' porque habla de los dos padres."
+          },
+          {
+            "prompt": "¿Dónde queda el cuarto de Lucas?",
+            "options": [
+              "Ao lado do banheiro",
+              "Na varanda",
+              "Perto da cozinha",
+              "Perto da sala"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas dice 'O meu quarto fica ao lado do banheiro'."
+          },
+          {
+            "prompt": "¿Dónde duerme la hermana de Lucas?",
+            "options": [
+              "Ao lado do banheiro",
+              "Perto da sala",
+              "Na varanda",
+              "Perto da cozinha"
+            ],
+            "correctIndex": 3,
+            "explanation": "Lucas dice 'Minha irmã dorme no quarto perto da cozinha'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación entre Felipe y Patrícia, y respondé las preguntas.",
+        "situation": "Felipe le cuenta a su compañera de trabajo Patrícia cómo es la casa de sus abuelos en el interior de São Paulo.",
+        "lines": [
+          {
+            "speaker": "Felipe",
+            "text": "Minha avó mora numa casa linda no interior."
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Que legal! E seu avô mora com ela?"
+          },
+          {
+            "speaker": "Felipe",
+            "text": "Sim, meu avô também mora lá. A casa tem quatro quartos."
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Onde fica o quarto do seu avô?"
+          },
+          {
+            "speaker": "Felipe",
+            "text": "O quarto do meu avô fica perto da varanda."
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "E o quarto da sua avó?"
+          },
+          {
+            "speaker": "Felipe",
+            "text": "O quarto da minha avó fica ao lado da cozinha."
+          },
+          {
+            "speaker": "Patrícia",
+            "text": "Que casa bonita!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde vive la abuela de Felipe?",
+            "options": [
+              "Em Belo Horizonte",
+              "Na cidade",
+              "No interior",
+              "Perto da praia"
+            ],
+            "correctIndex": 2,
+            "explanation": "Felipe dice 'Minha avó mora numa casa linda no interior'."
+          },
+          {
+            "prompt": "¿Dónde queda el cuarto del abuelo de Felipe?",
+            "options": [
+              "Ao lado da cozinha",
+              "Perto da varanda",
+              "Perto da sala",
+              "No banheiro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Felipe dice 'O quarto do meu avô fica perto da varanda', con 'avô' (circunflejo) refiriéndose al abuelo."
+          },
+          {
+            "prompt": "¿Dónde queda el cuarto de la abuela de Felipe?",
+            "options": [
+              "Ao lado da cozinha",
+              "Perto da sala",
+              "Perto da varanda",
+              "No quarto do avô"
+            ],
+            "correctIndex": 0,
+            "explanation": "Felipe dice 'O quarto da minha avó fica ao lado da cozinha', con 'avó' (tilde aguda) refiriéndose a la abuela."
+          }
+        ]
+      }
     ]
   }
 }

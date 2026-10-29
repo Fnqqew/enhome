@@ -3002,6 +3002,790 @@
           }
         ]
       }
+    ],
+    "pedido-restaurante": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la palabra correcta para completar el pedido en el restaurante.",
+        "prompt": "___ mesa para dois, por favor.",
+        "options": [
+          "Um",
+          "Uma",
+          "Uns",
+          "Umas"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Mesa' es femenina en portugués, por eso se usa el artículo 'uma' y no 'um'.",
+        "optionNotes": [
+          "Incorrecto: 'um' es masculino y no concuerda con 'mesa'.",
+          "Correcto: 'mesa' es femenina, entonces va 'uma'.",
+          "Incorrecto: 'uns' es plural y masculino, no concuerda.",
+          "Incorrecto: 'umas' es plural, pero se pide una sola mesa."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan Martín quiere ver las opciones de comida. Elegí la palabra correcta.",
+        "prompt": "Posso ver o ___?",
+        "options": [
+          "garçom",
+          "mesa",
+          "conta",
+          "cardápio"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Cardápio' es la palabra en portugués de Brasil para 'menú', que es lo que se pide ver antes de ordenar.",
+        "optionNotes": [
+          "Incorrecto: 'garçom' es el mozo, una persona, no se puede 'ver' como un objeto para elegir comida.",
+          "Incorrecto: 'mesa' es donde te sentás, no tiene relación con elegir comida.",
+          "Incorrecto: 'conta' es la cuenta, se pide al final, no al principio.",
+          "Correcto: 'cardápio' es el menú con los platos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Ana va a pedir su plato. Elegí la forma correcta del verbo 'ir' para 'eu'.",
+        "prompt": "Eu ___ querer o peixe com arroz.",
+        "options": [
+          "vai",
+          "vamos",
+          "vão",
+          "vou"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con el sujeto 'eu' el verbo 'ir' se conjuga como 'vou', formando 'vou querer' para pedir algo de manera natural.",
+        "optionNotes": [
+          "Incorrecto: 'vai' es la forma para 'ele/ela', no para 'eu'.",
+          "Incorrecto: 'vamos' es la forma para 'nós', no para 'eu'.",
+          "Incorrecto: 'vão' es la forma para 'eles/elas', plural.",
+          "Correcto: 'vou' es la forma de 'ir' para 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan Martín pide su bebida. Elegí la expresión correcta para indicar que el pedido es para él.",
+        "prompt": "___, uma água sem gás, por favor.",
+        "options": [
+          "Por mim",
+          "Para eu",
+          "Para me",
+          "Para mim"
+        ],
+        "correctIndex": 3,
+        "explanation": "Después de la preposición 'para' se usa el pronombre 'mim', no 'eu'; por eso la forma correcta es 'para mim'.",
+        "optionNotes": [
+          "Incorrecto: 'por mim' cambia el sentido, no significa 'para mí' en este contexto.",
+          "Incorrecto: 'eu' no se usa después de preposiciones como 'para'.",
+          "Incorrecto: 'me' no se combina así con 'para' en este tipo de pedido.",
+          "Correcto: después de 'para' va 'mim'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Ana le pide al garçom más pan. Elegí la palabra correcta para empezar el pedido educado.",
+        "prompt": "___ trazer mais pão, por favor?",
+        "options": [
+          "Deve",
+          "Faz",
+          "Pode",
+          "Tem"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Pode' es el modal que se usa para hacer pedidos educados en portugués, equivalente a '¿podés?' en español.",
+        "optionNotes": [
+          "Incorrecto: 'deve' significa 'debe', expresa obligación, no un pedido educado.",
+          "Incorrecto: 'faz' significa 'hace', no es un modal de pedido.",
+          "Correcto: 'pode' es el modal educado para pedir algo.",
+          "Incorrecto: 'tem' significa 'tiene', no sirve para pedir algo de esta forma."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Terminaron de comer y Juan Martín quiere pagar. Elegí la palabra correcta.",
+        "prompt": "A ___, por favor.",
+        "options": [
+          "mesa",
+          "conta",
+          "cardápio",
+          "garçom"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Conta' es la cuenta, lo que se pide al terminar de comer para pagar.",
+        "optionNotes": [
+          "Incorrecto: 'mesa' es el mueble donde te sentás, no se pide al final.",
+          "Correcto: 'conta' es lo que se pide para pagar.",
+          "Incorrecto: 'cardápio' es el menú, se pide al principio, no al final.",
+          "Incorrecto: 'garçom' es la persona, no lo que se pide para pagar."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo 'ir' para pedir un plato con 'eu'.",
+        "sentence": "Eu ___ querer o peixe com arroz.",
+        "hint": "(ir, presente)",
+        "answers": [
+          "vou"
+        ],
+        "explanation": "Para armar 'vou querer' con el sujeto 'eu' se usa 'vou', la forma del presente del verbo 'ir' para primera persona singular.",
+        "wrongAnswers": [
+          {
+            "answer": "vai",
+            "why": "'Vai' es la forma de 'ir' para 'ele/ela', no para 'eu'."
+          },
+          {
+            "answer": "vamos",
+            "why": "'Vamos' es la forma de 'ir' para 'nós', no para 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la preposición correcta para indicar que el pedido es para quien habla.",
+        "sentence": "___ mim, um suco de laranja.",
+        "hint": "(preposición)",
+        "answers": [
+          "Para"
+        ],
+        "explanation": "Para decir que un pedido es para uno mismo se usa la preposición 'para' junto con el pronombre 'mim': 'para mim'.",
+        "wrongAnswers": [
+          {
+            "answer": "Por",
+            "why": "'Por' no se usa para indicar para quién es un plato; la forma correcta es 'para mim'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el verbo en infinitivo después del modal 'pode'.",
+        "sentence": "Pode ___ mais pão, por favor?",
+        "hint": "(trazer, infinitivo)",
+        "answers": [
+          "trazer"
+        ],
+        "explanation": "Cuando se usa el modal 'pode' para pedir algo, el verbo que sigue queda en infinitivo: 'pode trazer'.",
+        "wrongAnswers": [
+          {
+            "answer": "traz",
+            "why": "Después de un verbo modal como 'pode' el verbo siguiente va en infinitivo, no conjugado."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el número correcto en portugués para pedir la mesa.",
+        "sentence": "Uma mesa para ___, por favor.",
+        "hint": "(número: 3)",
+        "answers": [
+          "três"
+        ],
+        "explanation": "El número tres en portugués se escribe 'três', con acento circunflejo en la 'e'.",
+        "wrongAnswers": [
+          {
+            "answer": "tres",
+            "why": "En portugués la palabra lleva acento circunflejo: 'três', no se escribe igual que en español."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra correcta para lo que trajo el garçom al final de la comida.",
+        "sentence": "O garçom trouxe a ___ rápido.",
+        "hint": "(lo que se pide para pagar)",
+        "answers": [
+          "conta"
+        ],
+        "explanation": "'Conta' es la cuenta, lo que el garçom trae al final para que el cliente pague.",
+        "wrongAnswers": [
+          {
+            "answer": "cardápio",
+            "why": "'Cardápio' es el menú, que se pide al principio de la comida, no lo que trae el garçom al final para pagar."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la preposición correcta para pedir también un postre.",
+        "sentence": "Eu vou querer a sobremesa também, ___ favor.",
+        "hint": "(preposición)",
+        "answers": [
+          "por"
+        ],
+        "explanation": "La expresión de cortesía en portugués es 'por favor', igual que en español, usando siempre 'por'.",
+        "wrongAnswers": [
+          {
+            "answer": "para",
+            "why": "En la expresión de cortesía 'por favor' se usa 'por', no 'para', aunque en español ambos existen por separado."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar el pedido de mesa de Juan Martín.",
+        "sentence": "Juan Martín pediu uma mesa para dois.",
+        "alternatives": [],
+        "translation": "Juan Martín pidió una mesa para dos.",
+        "explanation": "El orden en portugués sigue sujeto + verbo + objeto, igual que en español: 'Juan Martín pediu uma mesa para dois.'",
+        "tokens": [
+          "dois",
+          "Juan",
+          "uma",
+          "pediu",
+          "para",
+          "Martín",
+          "mesa"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar el pedido de comida de Ana.",
+        "sentence": "Ana vai querer o peixe com arroz.",
+        "alternatives": [],
+        "translation": "Ana va a pedir el pescado con arroz.",
+        "explanation": "'Vai querer' es el futuro perifrástico de 'querer' para 'ela', usado para pedir algo de manera natural.",
+        "tokens": [
+          "querer",
+          "vai",
+          "peixe",
+          "Ana",
+          "arroz",
+          "com",
+          "o"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar el pedido educado de más pan.",
+        "sentence": "Garçom, pode trazer mais pão, por favor?",
+        "alternatives": [],
+        "translation": "Mozo, ¿podés traer más pan, por favor?",
+        "explanation": "Para dirigirse directamente al mozo se usa el vocativo 'Garçom' y luego el modal 'pode' antes del verbo en infinitivo 'trazer', formando el pedido educado 'pode trazer'.",
+        "tokens": [
+          "por",
+          "trazer",
+          "pão,",
+          "pode",
+          "Garçom,",
+          "favor",
+          "mais"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar el pedido de bebida de Juan Martín.",
+        "sentence": "Para mim, uma água sem gás, por favor.",
+        "alternatives": [],
+        "translation": "Para mí, un agua sin gas, por favor.",
+        "explanation": "Para indicar para quién es un pedido se usa 'para mim' al comienzo de la oración.",
+        "tokens": [
+          "sem",
+          "uma",
+          "água",
+          "mim,",
+          "por",
+          "favor",
+          "gás,",
+          "Para"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para pedir la cuenta de manera educada.",
+        "sentence": "Pode trazer a conta, por favor?",
+        "alternatives": [],
+        "translation": "¿Podés traer la cuenta, por favor?",
+        "explanation": "El modal 'pode' se coloca al principio de la pregunta, seguido del verbo en infinitivo 'trazer'.",
+        "tokens": [
+          "trazer",
+          "favor",
+          "conta,",
+          "a",
+          "por",
+          "Pode"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error en el pedido de la cuenta y corregilo.",
+        "sentence": "A conta, por favor, pode trazer?",
+        "answers": [
+          "Pode trazer a conta, por favor?"
+        ],
+        "explanation": "El pedido educado con 'pode' va al principio de la pregunta, antes del verbo en infinitivo: 'Pode trazer a conta, por favor?'",
+        "wrongAnswers": [
+          {
+            "answer": "A conta, por favor, pode trazer.",
+            "why": "Solo quitar el signo de pregunta no corrige el orden incorrecto; el modal 'pode' debe ir al principio de la oración."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error al pedir el plato y corregilo.",
+        "sentence": "Eu vou querer de peixe.",
+        "answers": [
+          "Eu vou querer peixe."
+        ],
+        "explanation": "Después de 'querer' no se usa la preposición 'de' con el plato pedido, a diferencia de verbos como 'precisar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu vou querer o de peixe.",
+            "why": "Agregar un artículo no soluciona el problema; el error es el uso innecesario de la preposición 'de' después de 'querer'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de ortografía al llamar al mozo y corregilo.",
+        "sentence": "Garçon, a conta, por favor.",
+        "answers": [
+          "Garçom, a conta, por favor."
+        ],
+        "explanation": "En portugués de Brasil 'garçom' se escribe con 'm' al final, no con 'n' como en francés o español.",
+        "wrongAnswers": [
+          {
+            "answer": "Garçon, a conta, por favor!",
+            "why": "Cambiar el signo de puntuación no corrige el error; la palabra correcta en portugués de Brasil es 'garçom', con 'm' final."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de artículo al pedir ver el menú y corregilo.",
+        "sentence": "Posso ver a cardápio?",
+        "answers": [
+          "Posso ver o cardápio?"
+        ],
+        "explanation": "'Cardápio' es una palabra masculina en portugués, por eso se usa el artículo 'o' y no 'a'.",
+        "wrongAnswers": [
+          {
+            "answer": "Posso ver a cardápia?",
+            "why": "Cambiar la terminación de la palabra no es necesario; el error está solo en el artículo, 'cardápio' es masculino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error al repetir el modal en el pedido de pan y corregilo.",
+        "sentence": "Pode trazer mais pão, por favor, pode?",
+        "answers": [
+          "Pode trazer mais pão, por favor?"
+        ],
+        "explanation": "El modal 'pode' se usa una sola vez, al principio del pedido educado, sin repetirlo al final.",
+        "wrongAnswers": [
+          {
+            "answer": "Pode trazer mais pão, pode, por favor?",
+            "why": "Mover la palabra repetida no elimina la redundancia; el modal 'pode' solo debe aparecer una vez, al principio de la oración."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de Juan Martín al portugués.",
+        "spanish": "¿Podés traer el menú, por favor?",
+        "answers": [
+          "Pode trazer o cardápio, por favor?",
+          "Você pode trazer o cardápio, por favor?"
+        ],
+        "explanation": "El pedido educado se forma con 'pode' al principio seguido del verbo en infinitivo 'trazer'.",
+        "wrongAnswers": [
+          {
+            "answer": "Pode trazer o cardápio, por favor, pode?",
+            "why": "El modal 'pode' se usa una sola vez, al principio de la oración, no se repite al final."
+          },
+          {
+            "answer": "Pode trazer de cardápio, por favor?",
+            "why": "No se usa la preposición 'de' después de 'trazer' con lo que se pide."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí lo que Ana dice al pedir su plato.",
+        "spanish": "Voy a pedir el pescado con arroz.",
+        "answers": [
+          "Vou querer o peixe com arroz.",
+          "Eu vou querer o peixe com arroz."
+        ],
+        "explanation": "'Vou querer' es la forma más natural de pedir un plato en portugués, sin usar 'de' antes del nombre de la comida.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou querer de peixe com arroz.",
+            "why": "No se usa la preposición 'de' después de 'querer' cuando se pide un plato."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de bebida de Juan Martín.",
+        "spanish": "Para mí, un agua sin gas, por favor.",
+        "answers": [
+          "Para mim, uma água sem gás, por favor.",
+          "Pra mim, uma água sem gás, por favor."
+        ],
+        "explanation": "Para indicar que un pedido es para uno mismo se usa 'para mim' (o la forma coloquial 'pra mim'), con el pronombre 'mim' después de la preposición.",
+        "wrongAnswers": [
+          {
+            "answer": "Para eu, uma água sem gás, por favor.",
+            "why": "Después de la preposición 'para' se usa el pronombre 'mim', no 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí lo que pasó con la cuenta en el restaurante.",
+        "spanish": "El mozo trajo la cuenta rápido.",
+        "answers": [
+          "O garçom trouxe a conta rápido.",
+          "O garçom trouxe a conta rapidamente."
+        ],
+        "explanation": "'Garçom' es la palabra brasileña para 'mozo', se escribe con 'm' al final, y 'rápido' puede usarse de forma coloquial como adverbio o en su forma 'rapidamente'.",
+        "wrongAnswers": [
+          {
+            "answer": "O garçon trouxe a conta rápido.",
+            "why": "En portugués de Brasil se escribe 'garçom' con 'm' final, no 'garçon' como en francés o español."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de la cuenta de Juan Martín.",
+        "spanish": "¿Podés traer la cuenta, por favor?",
+        "answers": [
+          "Pode trazer a conta, por favor?",
+          "Você pode trazer a conta, por favor?"
+        ],
+        "explanation": "El modal 'pode' (con o sin el sujeto explícito 'você') se coloca al inicio de la pregunta, seguido del verbo en infinitivo 'trazer' y luego lo pedido.",
+        "wrongAnswers": [
+          {
+            "answer": "A conta, por favor, pode trazer?",
+            "why": "El pedido con 'pode' debe ir al principio de la oración, no separado del verbo al final."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de mesa para un grupo de amigos.",
+        "spanish": "Una mesa para tres, por favor.",
+        "answers": [
+          "Uma mesa para três, por favor.",
+          "Mesa para três, por favor."
+        ],
+        "explanation": "El número tres en portugués se escribe 'três', con acento circunflejo sobre la 'e'; el artículo 'uma' puede omitirse en el pedido informal.",
+        "wrongAnswers": [
+          {
+            "answer": "Uma mesa para tres, por favor.",
+            "why": "La palabra correcta en portugués es 'três', con acento circunflejo, no se escribe igual que en español."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Uma mesa para dois, por favor.",
+        "alternatives": [
+          "Uma mesa pra dois, por favor."
+        ],
+        "translation": "Una mesa para dos, por favor.",
+        "explanation": "En el habla rápida, 'para' se acorta a 'pra', pero conviene escribir la forma completa 'para'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu queria ver o cardápio, por favor.",
+        "alternatives": [],
+        "translation": "Yo quería ver el menú, por favor.",
+        "explanation": "El verbo 'queria' (pretérito imperfecto) suena parecido a 'queira' (subjuntivo), pero solo 'queria' se usa para pedidos educados."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Vou querer o peixe com arroz, por favor.",
+        "alternatives": [
+          "Eu vou querer o peixe com arroz, por favor."
+        ],
+        "translation": "Voy a pedir el pescado con arroz, por favor.",
+        "explanation": "La consonante final de 'peixe' y la vocal inicial de 'com' se unen al hablar, pero igual se escriben como palabras separadas."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Pode trazer a conta, por favor?",
+        "alternatives": [
+          "Você pode trazer a conta, por favor?"
+        ],
+        "translation": "¿Podés traer la cuenta, por favor?",
+        "explanation": "El verbo 'pode' está en presente y no significa 'pudo' como en español; aquí se usa para hacer un pedido educado."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "massa",
+          "mesa"
+        ],
+        "target": 1,
+        "meanings": [
+          "pasta/masa",
+          "mesa"
+        ],
+        "explanation": "La 's' entre vocales de 'mesa' se pronuncia como una 'z' suave, mientras que la doble 's' de 'massa' suena como la 's' del español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pão",
+          "pau"
+        ],
+        "target": 0,
+        "meanings": [
+          "pan",
+          "palo"
+        ],
+        "explanation": "El sonido nasal 'ão' se pronuncia con el aire saliendo por la nariz, mientras que 'au' es un sonido oral sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "fone",
+          "fome"
+        ],
+        "target": 1,
+        "meanings": [
+          "auricular/teléfono",
+          "hambre"
+        ],
+        "explanation": "La diferencia está en la consonante intervocálica: 'm' en 'fome' y 'n' en 'fone' son sonidos orales distintos, ya que al estar entre vocales no nasalizan la vocal anterior; hay que prestar atención al sonido de la consonante misma."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre el pedido en el restaurante.",
+        "text": "Marcos e Juliana vão a um restaurante em São Paulo. O garçom chega e pergunta: 'Mesa para quantos?' Marcos responde: 'Uma mesa para dois, por favor.' O garçom traz o cardápio. Juliana olha o cardápio e diz: 'Eu vou querer o peixe com arroz.' Marcos diz: 'Para mim, uma pizza de queijo.' O garçom pergunta: 'E para beber?' Juliana responde: 'Para mim, uma água sem gás.' Depois de comer, Marcos chama o garçom: 'Pode trazer a conta, por favor?' O garçom traz a conta rápido. Marcos paga e diz: 'Está muito bom, obrigado!' Os dois saem felizes do restaurante.",
+        "questions": [
+          {
+            "prompt": "¿Qué va a comer Juliana?",
+            "options": [
+              "Pizza de queijo",
+              "O cardápio",
+              "Água sem gás",
+              "Peixe com arroz"
+            ],
+            "correctIndex": 3,
+            "explanation": "Juliana dice 'Eu vou querer o peixe com arroz', usando la forma 'vou querer' para pedir un plato."
+          },
+          {
+            "prompt": "¿Qué va a comer Marcos?",
+            "options": [
+              "Peixe com arroz",
+              "Pizza de queijo",
+              "Água sem gás",
+              "A conta"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos dice 'Para mim, uma pizza de queijo', indicando con 'para mim' qué plato es para él."
+          },
+          {
+            "prompt": "¿Cómo pide Marcos la cuenta?",
+            "options": [
+              "Pode trazer a conta, por favor?",
+              "Garçom, você tem a conta?",
+              "A conta, por favor, pode trazer?",
+              "Eu quero a conta."
+            ],
+            "correctIndex": 0,
+            "explanation": "En un pedido educado, 'pode' va al principio de la pregunta junto al verbo: 'Pode trazer a conta, por favor?'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto y respondé las preguntas sobre lo que piden Ana y Paulo.",
+        "text": "Ana vai a um restaurante em Salvador com seu amigo Paulo. A garçonete chega e pergunta: 'Posso ajudar?' Ana diz: 'Uma mesa para dois, por favor.' A garçonete leva os dois até a mesa e traz o cardápio. Paulo olha o cardápio e pergunta: 'Posso ver o cardápio de bebidas também?' A garçonete traz o cardápio de bebidas. Ana diz: 'Eu vou querer a sopa de legumes.' Paulo diz: 'Para mim, o frango com batata.' A garçonete pergunta: 'E para beber?' Paulo responde: 'Para mim, um suco de laranja.' No final, Ana chama a garçonete: 'Pode trazer a conta, por favor?' A garçonete traz a conta e Ana paga. Os dois saem satisfeitos.",
+        "questions": [
+          {
+            "prompt": "¿Qué va a comer Ana?",
+            "options": [
+              "Suco de laranja",
+              "Sopa de legumes",
+              "Cardápio de bebidas",
+              "Frango com batata"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana dice 'Eu vou querer a sopa de legumes', usando 'vou querer' para pedir su plato."
+          },
+          {
+            "prompt": "¿Qué pide Paulo para beber?",
+            "options": [
+              "Cardápio",
+              "Sopa de legumes",
+              "Água sem gás",
+              "Suco de laranja"
+            ],
+            "correctIndex": 3,
+            "explanation": "Paulo responde 'Para mim, um suco de laranja' cuando la garçonete pregunta por las bebidas."
+          },
+          {
+            "prompt": "¿Quién le pide la cuenta a la garçonete?",
+            "options": [
+              "Paulo",
+              "Ana",
+              "Los dos juntos",
+              "El garçom"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Ana chama a garçonete: Pode trazer a conta, por favor?', así que es Ana quien pide la cuenta."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas sobre el pedido.",
+        "situation": "Estás cenando con tu amigo Rafael en un restaurante en Florianópolis. Un garçom atiende la mesa.",
+        "lines": [
+          {
+            "speaker": "Garçom",
+            "text": "Boa noite! Mesa para quantos?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Mesa para dois, por favor."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Aqui está o cardápio. O que vocês vão querer?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Eu vou querer a picanha com arroz."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "E para beber?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Para mim, uma cerveja. Para ela, uma água sem gás."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Mais alguma coisa?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Pode trazer mais pão, por favor?"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pide Rafael para comer?",
+            "options": [
+              "Sopa de legumes",
+              "Peixe grelhado",
+              "Picanha com arroz",
+              "Frango com batata"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice 'Eu vou querer a picanha com arroz', así que ese es su plato."
+          },
+          {
+            "prompt": "¿Qué bebida pide Rafael para la otra persona de la mesa?",
+            "options": [
+              "Água sem gás",
+              "Suco de laranja",
+              "Cerveja",
+              "Vinho"
+            ],
+            "correctIndex": 0,
+            "explanation": "Rafael dice 'Para ela, uma água sem gás', indicando la bebida de su acompañante."
+          },
+          {
+            "prompt": "¿Qué le pide Rafael al garçom al final del diálogo?",
+            "options": [
+              "O cardápio",
+              "Mais uma cerveja",
+              "Mais pão",
+              "A conta"
+            ],
+            "correctIndex": 2,
+            "explanation": "La última frase de Rafael es 'Pode trazer mais pão, por favor?', pidiendo más pan."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) el diálogo y respondé las preguntas sobre el pedido de Marina.",
+        "situation": "Estás almorzando con tu colega Marina en un restaurante en Curitiba, después de una reunión de trabajo.",
+        "lines": [
+          {
+            "speaker": "Garçonete",
+            "text": "Boa tarde! Uma mesa para dois?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Sim, por favor."
+          },
+          {
+            "speaker": "Garçonete",
+            "text": "Aqui está o cardápio de hoje."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Eu vou querer o frango com legumes."
+          },
+          {
+            "speaker": "Garçonete",
+            "text": "E para beber?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Para mim, um suco de maçã."
+          },
+          {
+            "speaker": "Garçonete",
+            "text": "Mais alguma coisa?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Pode trazer a conta no final, por favor?"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué comida pide Marina?",
+            "options": [
+              "Sopa de legumes",
+              "Peixe com arroz",
+              "Frango com legumes",
+              "Picanha com arroz"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marina dice 'Eu vou querer o frango com legumes', ese es su pedido."
+          },
+          {
+            "prompt": "¿Qué bebida pide Marina?",
+            "options": [
+              "Suco de maçã",
+              "Cerveja",
+              "Água sem gás",
+              "Suco de laranja"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marina responde 'Para mim, um suco de maçã' cuando le preguntan qué quiere tomar."
+          },
+          {
+            "prompt": "¿Qué le pide Marina a la garçonete para el final de la comida?",
+            "options": [
+              "Mais um suco",
+              "A conta",
+              "Mais pão",
+              "O cardápio"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina dice 'Pode trazer a conta no final, por favor?', pidiendo la cuenta."
+          }
+        ]
+      }
     ]
   }
 }

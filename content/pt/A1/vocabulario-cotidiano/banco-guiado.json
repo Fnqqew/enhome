@@ -3147,6 +3147,785 @@
           }
         ]
       }
+    ],
+    "pedir-em-cafe-ou-restaurante": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan Martín está en un café y quiere ver las opciones. Elegí la palabra correcta.",
+        "prompt": "Garçom, pode trazer o ___?",
+        "options": [
+          "suco",
+          "conta",
+          "menu",
+          "cardápio"
+        ],
+        "correctIndex": 3,
+        "explanation": "En Brasil se usa 'cardápio' para la carta del restaurante o café, no 'menu', que suena más a Portugal o al inglés.",
+        "optionNotes": [
+          "Incorrecto: 'suco' es jugo, no tiene relación con ver las opciones del café.",
+          "Incorrecto: 'conta' es la cuenta, se pide al final, no al principio.",
+          "Incorrecto: 'menu' se usa en Portugal o en inglés, no es lo típico en Brasil.",
+          "Correcto: 'cardápio' es la carta en Brasil."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Marina pide agua con burbujas. Elegí la palabra correcta.",
+        "prompt": "Eu queria uma água com ___, por favor.",
+        "options": [
+          "gais",
+          "gaz",
+          "gás",
+          "gas"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Gás' se escribe con tilde en portugués; 'gas' sin tilde, 'gaz' y 'gais' son formas incorrectas.",
+        "optionNotes": [
+          "Incorrecto: no existe esta forma, es una confusión de ortografía.",
+          "Incorrecto: no existe esta palabra en portugués para referirse al gas del agua.",
+          "Correcto: 'gás' lleva tilde en portugués.",
+          "Incorrecto: falta la tilde, en portugués no se escribe 'gas' como en español."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Una mujer atendió a Juan Martín en el café. Elegí la palabra correcta para referirte a ella.",
+        "prompt": "A ___ trouxe o café rápido.",
+        "options": [
+          "garçons",
+          "garçom",
+          "garçonetes",
+          "garçonete"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Garçonete' es la forma femenina singular para referirse a una moza en portugués de Brasil.",
+        "optionNotes": [
+          "Incorrecto: 'garçons' es plural masculino, no corresponde ni en género ni en número.",
+          "Incorrecto: 'garçom' es la forma masculina, no corresponde a una mujer.",
+          "Incorrecto: 'garçonetes' es plural, pero se habla de una sola persona.",
+          "Correcto: 'garçonete' es la moza, forma femenina singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan Martín quiere pedir la cuenta de forma educada. Elegí la frase correcta.",
+        "prompt": "Qual é a frase mais educada para pedir a conta?",
+        "options": [
+          "A conta, rápido!",
+          "A conta, por favor.",
+          "Rápido, a conta!",
+          "A conta, por favor, rápido!"
+        ],
+        "correctIndex": 1,
+        "explanation": "Agregar 'rápido' suena brusco y poco educado; alcanza con decir 'a conta, por favor' para pedir la cuenta de manera cortés.",
+        "optionNotes": [
+          "Incorrecto: sin 'por favor' y con 'rápido' suena todavía más brusco.",
+          "Correcto: es la forma educada y suficiente para pedir la cuenta.",
+          "Incorrecto: empezar con 'rápido' y sin 'por favor' es poco educado.",
+          "Incorrecto: agregar 'rápido' suena brusco, no hace falta para ser educado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan Martín pide algo para comer. Elegí la palabra correcta para completar el pedido.",
+        "prompt": "Eu vou querer um ___ de queijo.",
+        "options": [
+          "sandwich",
+          "sanduíche",
+          "sanduíches",
+          "sanduíche de"
+        ],
+        "correctIndex": 1,
+        "explanation": "La palabra correcta en portugués es 'sanduíche', con esa ortografía propia del idioma, no 'sandwich' como en inglés.",
+        "optionNotes": [
+          "Incorrecto: esa es la ortografía en inglés, no en portugués.",
+          "Correcto: 'sanduíche' es la forma correcta en portugués.",
+          "Incorrecto: 'sanduíches' es plural, pero se pide uno solo.",
+          "Incorrecto: repetir 'de' no tiene sentido, la oración ya tiene esa preposición después del hueco."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Marina pregunta si el jugo es de fruta de verdad. Elegí la palabra correcta.",
+        "prompt": "Esse suco é ___?",
+        "options": [
+          "naturalmente",
+          "natureza",
+          "natural",
+          "naturais"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Natural' es el adjetivo que concuerda en singular con 'suco' para preguntar si es de fruta de verdad.",
+        "optionNotes": [
+          "Incorrecto: 'naturalmente' es un adverbio, no un adjetivo para describir el jugo.",
+          "Incorrecto: 'natureza' significa 'naturaleza', un sustantivo, no sirve como adjetivo aquí.",
+          "Correcto: 'natural' concuerda en singular con 'suco'.",
+          "Incorrecto: 'naturais' es plural, pero 'suco' es singular."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra correcta para el pan típico brasileño con queso.",
+        "sentence": "Eu queria um cafezinho e um pão de ___.",
+        "hint": "(comida: lo que lleva el pão de queijo)",
+        "answers": [
+          "queijo"
+        ],
+        "explanation": "'Queijo' es la palabra en portugués para 'queso', y 'pão de queijo' es un pan típico brasileño.",
+        "wrongAnswers": [
+          {
+            "answer": "queso",
+            "why": "'Queso' es una palabra española; en portugués se dice 'queijo'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra correcta para pedir agua con burbujas.",
+        "sentence": "Uma água com ___, por favor.",
+        "hint": "(con burbujas, lleva tilde)",
+        "answers": [
+          "gás"
+        ],
+        "explanation": "'Gás' se escribe con tilde en portugués, a diferencia del español 'gas'.",
+        "wrongAnswers": [
+          {
+            "answer": "gas",
+            "why": "En portugués la palabra lleva tilde: 'gás', no se escribe igual que en español."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra para llamar al mozo varón en Brasil.",
+        "sentence": "___, pode trazer o cardápio?",
+        "hint": "(cómo se llama al mozo varón en Brasil)",
+        "answers": [
+          "Garçom"
+        ],
+        "explanation": "'Garçom' es la palabra brasileña para 'mozo', y se escribe con 'm' al final.",
+        "wrongAnswers": [
+          {
+            "answer": "Garçon",
+            "why": "En portugués de Brasil se escribe 'garçom' con 'm' final, no 'garçon' como en francés o español."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el adjetivo correcto para preguntar si el jugo es de fruta de verdad.",
+        "sentence": "Vou querer um suco ___.",
+        "hint": "(no es artificial, lleva fruta de verdad)",
+        "answers": [
+          "natural"
+        ],
+        "explanation": "El adjetivo 'natural' concuerda en singular con 'suco', ya que se pide un solo jugo.",
+        "wrongAnswers": [
+          {
+            "answer": "naturais",
+            "why": "'Naturais' es plural, pero 'suco' es singular, por eso el adjetivo debe ser 'natural'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la palabra que falta para pedir la cuenta de forma educada.",
+        "sentence": "A conta, por ___.",
+        "hint": "(fórmula de cortesía)",
+        "answers": [
+          "favor"
+        ],
+        "explanation": "'Por favor' es la fórmula educada para pedir algo en portugués, sin necesidad de agregar otras palabras.",
+        "wrongAnswers": [
+          {
+            "answer": "rápido",
+            "why": "Agregar 'rápido' suena brusco y poco educado; la fórmula de cortesía esperada es 'por favor'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el número correcto para pedir una mesa para cuatro personas.",
+        "sentence": "Uma mesa para ___, por favor.",
+        "hint": "(número: 4)",
+        "answers": [
+          "quatro"
+        ],
+        "explanation": "El número cuatro en portugués se escribe 'quatro', con ortografía distinta a la del español.",
+        "wrongAnswers": [
+          {
+            "answer": "cuatro",
+            "why": "La palabra en portugués se escribe 'quatro', no 'cuatro' como en español."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar el pedido de Juan Martín en el café.",
+        "sentence": "Eu queria um cafezinho e um pão de queijo.",
+        "alternatives": [
+          "Eu queria um pão de queijo e um cafezinho."
+        ],
+        "translation": "Yo quisiera un cafecito y un pan de queso.",
+        "explanation": "'Eu queria' es una forma educada de pedir algo, seguida de los sustantivos unidos por 'e'; el orden de los dos sustantivos puede invertirse sin cambiar el sentido.",
+        "tokens": [
+          "um",
+          "Eu",
+          "pão",
+          "queria",
+          "cafezinho",
+          "de",
+          "e",
+          "queijo",
+          "um"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para pedir el menú de forma educada.",
+        "sentence": "Garçom, pode trazer o cardápio, por favor?",
+        "alternatives": [],
+        "translation": "Mozo, ¿podés traer el menú, por favor?",
+        "explanation": "El pedido empieza con 'Garçom' para llamar al mozo, y luego el modal 'pode' antes del verbo 'trazer'.",
+        "tokens": [
+          "cardápio,",
+          "trazer",
+          "Garçom,",
+          "o",
+          "pode",
+          "favor",
+          "por"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para preguntar si el agua tiene gas o no.",
+        "sentence": "Essa água é com gás ou sem gás?",
+        "alternatives": [
+          "Essa água é sem gás ou com gás?"
+        ],
+        "translation": "¿Esa agua es con gas o sin gas?",
+        "explanation": "La pregunta usa 'com gás' y 'sem gás' unidos por 'ou' para preguntar por las dos opciones; el orden de ambas opciones puede invertirse sin cambiar el sentido.",
+        "tokens": [
+          "é",
+          "gás",
+          "gás",
+          "água",
+          "sem",
+          "ou",
+          "com",
+          "Essa"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para contar lo que trajo la moza.",
+        "sentence": "A garçonete trouxe o suco natural rápido.",
+        "alternatives": [
+          "A garçonete trouxe rápido o suco natural."
+        ],
+        "translation": "La moza trajo el jugo natural rápido.",
+        "explanation": "'Garçonete' es la forma femenina de mozo; el adverbio 'rápido' puede ir después del verbo o al final de la oración sin cambiar el sentido.",
+        "tokens": [
+          "garçonete",
+          "o",
+          "A",
+          "trouxe",
+          "natural",
+          "suco",
+          "rápido"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para pedir una mesa para cuatro personas.",
+        "sentence": "Uma mesa para quatro, por favor.",
+        "alternatives": [],
+        "translation": "Una mesa para cuatro, por favor.",
+        "explanation": "El pedido de mesa sigue el orden 'uma mesa para' más el número de personas y 'por favor'.",
+        "tokens": [
+          "quatro,",
+          "Uma",
+          "mesa",
+          "favor",
+          "para",
+          "por"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de vocabulario al pedir la carta y corregilo.",
+        "sentence": "Garçom, pode trazer o menu?",
+        "answers": [
+          "Garçom, pode trazer o cardápio?"
+        ],
+        "explanation": "En Brasil se usa 'cardápio' para la carta del restaurante, no 'menu', que es más propio de Portugal o del inglés.",
+        "wrongAnswers": [
+          {
+            "answer": "Garçom, pode trazer um menu?",
+            "why": "Cambiar el artículo no corrige el error; la palabra correcta en Brasil es 'cardápio', no 'menu'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de ortografía al pedir agua con gas y corregilo.",
+        "sentence": "Uma água com gas, por favor.",
+        "answers": [
+          "Uma água com gás, por favor."
+        ],
+        "explanation": "'Gás' lleva tilde en portugués, a diferencia del español 'gas' sin acento.",
+        "wrongAnswers": [
+          {
+            "answer": "Uma água com gaz, por favor.",
+            "why": "La palabra no se escribe con 'z'; la forma correcta es 'gás', con 's' y tilde."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de cortesía al pedir la cuenta y corregilo.",
+        "sentence": "A conta, por favor, rápido!",
+        "answers": [
+          "A conta, por favor."
+        ],
+        "explanation": "Agregar 'rápido' suena brusco y poco educado; alcanza con decir 'a conta, por favor' para pedir la cuenta.",
+        "wrongAnswers": [
+          {
+            "answer": "A conta, rápido, por favor!",
+            "why": "Mover la palabra 'rápido' no soluciona el problema; lo correcto es no agregarla, porque sonar brusco no es educado."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de ortografía al llamar al mozo y corregilo.",
+        "sentence": "Garçon, pode trazer a conta?",
+        "answers": [
+          "Garçom, pode trazer a conta?"
+        ],
+        "explanation": "En portugués de Brasil 'garçom' se escribe con 'm' al final, no con 'n' como en francés o español.",
+        "wrongAnswers": [
+          {
+            "answer": "Garçon, pode trazer a conta!",
+            "why": "Cambiar la puntuación no corrige la ortografía; la palabra correcta en portugués de Brasil es 'garçom' con 'm'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error de concordancia al pedir un jugo natural y corregilo.",
+        "sentence": "Eu vou querer um suco naturais.",
+        "answers": [
+          "Eu vou querer um suco natural."
+        ],
+        "explanation": "El adjetivo 'natural' debe concordar en singular con 'suco', ya que se pide un solo jugo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu vou querer uns sucos naturais.",
+            "why": "Cambiar el pedido a plural no corrige el error; el adjetivo debe concordar en singular con 'suco', que es una sola unidad."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de Juan Martín en el café.",
+        "spanish": "Quisiera un cafecito y un pan de queso.",
+        "answers": [
+          "Eu queria um cafezinho e um pão de queijo.",
+          "Queria um cafezinho e um pão de queijo."
+        ],
+        "explanation": "'Eu queria' es una forma educada de pedir algo, y 'pão de queijo' es un pan típico brasileño con queso.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu queria um cafezinho e um pão de queso.",
+            "why": "'Queso' es una palabra española; en portugués se dice 'queijo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de la carta en el restaurante.",
+        "spanish": "¿Podés traer el menú, por favor?",
+        "answers": [
+          "Pode trazer o cardápio, por favor?",
+          "Você pode trazer o cardápio, por favor?"
+        ],
+        "explanation": "'Cardápio' es la palabra usada en Brasil para la carta del restaurante o café.",
+        "wrongAnswers": [
+          {
+            "answer": "Pode trazer o menu, por favor?",
+            "why": "En Brasil se usa 'cardápio' para la carta del restaurante, no 'menu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta sobre el agua con o sin gas.",
+        "spanish": "¿Esa agua es con gas o sin gas?",
+        "answers": [
+          "Essa água é com gás ou sem gás?"
+        ],
+        "explanation": "'Gás' siempre se escribe con tilde en portugués, tanto en 'com gás' como en 'sem gás'.",
+        "wrongAnswers": [
+          {
+            "answer": "Essa água é com gas ou sem gas?",
+            "why": "La palabra 'gás' lleva tilde en portugués, no se escribe 'gas' sin acento."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de la cuenta de manera educada.",
+        "spanish": "La cuenta, por favor.",
+        "answers": [
+          "A conta, por favor."
+        ],
+        "explanation": "'A conta, por favor' es la forma educada y suficiente para pedir la cuenta en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "A conta, por favor, rápido!",
+            "why": "Agregar 'rápido' suena brusco y poco educado; alcanza con decir 'por favor'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de comida de Juan Martín.",
+        "spanish": "Voy a pedir un sándwich de queso.",
+        "answers": [
+          "Vou querer um sanduíche de queijo.",
+          "Eu vou querer um sanduíche de queijo."
+        ],
+        "explanation": "'Sanduíche' es la ortografía correcta en portugués para 'sándwich'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vou querer um sandwich de queijo.",
+            "why": "La palabra en portugués se escribe 'sanduíche', no 'sandwich' como en inglés."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí el pedido de mesa para el grupo de amigos.",
+        "spanish": "Una mesa para cuatro, por favor.",
+        "answers": [
+          "Uma mesa para quatro, por favor."
+        ],
+        "explanation": "El número cuatro en portugués se escribe 'quatro', con ortografía distinta a la del español.",
+        "wrongAnswers": [
+          {
+            "answer": "Uma mesa para cuatro, por favor.",
+            "why": "El número en portugués se escribe 'quatro', no 'cuatro' como en español."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Uma mesa para dois, por favor.",
+        "alternatives": [
+          "Uma mesa pra dois, por favor."
+        ],
+        "translation": "Una mesa para dos, por favor.",
+        "explanation": "En el habla rápida, 'para' se acorta a 'pra', pero conviene escribir la forma completa 'para'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu queria um cafezinho e um pão de queijo.",
+        "alternatives": [],
+        "translation": "Quisiera un cafecito y un pan de queso.",
+        "explanation": "El diminutivo '-zinho' en 'cafezinho' suena con una 'z' suave; además, 'pão' lleva nasalidad que no está presente en 'pau' o 'pá'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Esse suco é natural ou tem açúcar?",
+        "alternatives": [],
+        "translation": "¿Ese jugo es natural o tiene azúcar?",
+        "explanation": "La 'ç' de 'açúcar' siempre suena como la 's' del español, nunca se escribe esa palabra como 'asucar' sin cedilla."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Garçom, pode trazer a conta, por favor?",
+        "alternatives": [
+          "Garçom, pode trazer a conta?"
+        ],
+        "translation": "Mozo, ¿podés traer la cuenta, por favor?",
+        "explanation": "'Garçom' se escribe con 'm' final, no con 'n' como en francés o español; esa nasal final suele confundirse al escuchar la palabra rápido."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "queijo",
+          "queixo"
+        ],
+        "target": 0,
+        "meanings": [
+          "queso",
+          "mentón"
+        ],
+        "explanation": "La 'j' de 'queijo' se pronuncia con un sonido sonoro parecido a la 'y' del español rioplatense, mientras que la 'x' de 'queixo' suena como el 'sh' del inglés, sin vibración vocal."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "chá",
+          "já"
+        ],
+        "target": 0,
+        "meanings": [
+          "té",
+          "ya"
+        ],
+        "explanation": "'Ch' suena como 'sh' en inglés (sin vibración), mientras que 'j' suena como esa misma posición pero con las cuerdas vocales vibrando; esa vibración es la única diferencia entre las dos palabras."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pão",
+          "pau"
+        ],
+        "target": 0,
+        "meanings": [
+          "pan",
+          "palo"
+        ],
+        "explanation": "El sonido nasal 'ão' se pronuncia dejando salir el aire por la nariz, mientras que 'au' es un sonido oral, sin nasalidad."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre Pedro en el café y respondé las preguntas.",
+        "text": "Pedro vai a um café no centro de Curitiba. O garçom pergunta: 'O que você vai querer?' Pedro responde: 'Eu queria um cafezinho e um pão de queijo.' O garçom pergunta: 'E para beber, mais alguma coisa?' Pedro diz: 'Um suco natural de laranja, por favor.' O garçom traz o pedido rápido. Pedro pergunta: 'Esse pão de queijo é quentinho?' O garçom responde: 'Sim, acabou de sair do forno.' Pedro come tudo e gosta muito. No final, ele chama o garçom: 'A conta, por favor.' O garçom traz a conta. Pedro paga e sai feliz do café. Ele volta sempre a esse café porque o café daqui é muito bom.",
+        "questions": [
+          {
+            "prompt": "¿Qué pide Pedro para comer?",
+            "options": [
+              "Um pão de queijo",
+              "A conta",
+              "Um sanduíche de queijo",
+              "Um suco natural"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro dice 'Eu queria um cafezinho e um pão de queijo', así que el pão de queijo es lo que pide para comer."
+          },
+          {
+            "prompt": "Además del cafezinho, ¿qué otra bebida pide Pedro?",
+            "options": [
+              "Água sem gás",
+              "Um chá",
+              "Água com gás",
+              "Um suco natural de laranja"
+            ],
+            "correctIndex": 3,
+            "explanation": "Cuando el garçom pregunta si quiere algo más para beber, Pedro responde 'Um suco natural de laranja, por favor'."
+          },
+          {
+            "prompt": "¿Qué le dice Pedro al garçom al final?",
+            "options": [
+              "Água com gás ou sem gás?",
+              "Garçom, pode trazer o cardápio?",
+              "A conta, por favor.",
+              "Esse suco é natural?"
+            ],
+            "correctIndex": 2,
+            "explanation": "Al final del texto, Pedro llama al garçom y le dice 'A conta, por favor' para pedir la cuenta; las otras opciones son frases que no aparecen en ese momento del texto."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre Marina y Tiago en el restaurante y respondé las preguntas.",
+        "text": "Marina e seu amigo Tiago vão a um restaurante em Porto Alegre. Na entrada, Marina diz: 'Uma mesa para dois, por favor.' O garçom leva os dois até a mesa. Tiago pergunta: 'Garçom, pode trazer o cardápio?' O garçom traz o cardápio rapidinho. Marina olha e diz: 'Vou querer um sanduíche de queijo.' Tiago diz: 'Para mim, uma sopa de legumes.' O garçom pergunta: 'Água com gás ou sem gás?' Marina responde: 'Para mim, sem gás.' Tiago diz: 'Para mim, com gás, por favor.' Depois de comer, os dois conversam um pouco. No final, Tiago chama o garçom: 'A conta, por favor.' O garçom traz a conta e os dois pagam juntos.",
+        "questions": [
+          {
+            "prompt": "¿Qué pide Marina para comer?",
+            "options": [
+              "Pão de queijo",
+              "Sopa de legumes",
+              "Sanduíche de queijo",
+              "Cafezinho"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marina dice 'Vou querer um sanduíche de queijo', así que ese es su pedido de comida."
+          },
+          {
+            "prompt": "¿Qué tipo de agua pide Tiago?",
+            "options": [
+              "Suco natural",
+              "Água com gás",
+              "Cafezinho",
+              "Água sem gás"
+            ],
+            "correctIndex": 1,
+            "explanation": "Cuando el garçom pregunta 'Água com gás ou sem gás?', Tiago responde 'Para mim, com gás, por favor'."
+          },
+          {
+            "prompt": "¿Qué le dice Tiago al garçom para ver la carta?",
+            "options": [
+              "A conta, por favor.",
+              "Garçom, pode trazer o menu?",
+              "Uma mesa para dois, por favor.",
+              "Garçom, pode trazer o cardápio?"
+            ],
+            "correctIndex": 3,
+            "explanation": "En Brasil se usa 'cardápio' para pedir la carta, no 'menu', que es más típico de Portugal o del inglés."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación en la cafetería y respondé las preguntas.",
+        "situation": "Estás en una cafetería en Recife con tu amigo Thiago. Luana, la garçonete, toma el pedido de la mesa.",
+        "lines": [
+          {
+            "speaker": "Luana",
+            "text": "Bom dia! O que vocês vão querer?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Eu queria um cafezinho e um pão de queijo."
+          },
+          {
+            "speaker": "Luana",
+            "text": "E para beber?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Para mim, um suco natural de laranja."
+          },
+          {
+            "speaker": "Luana",
+            "text": "Água com gás ou sem gás?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Para mim, sem gás, por favor."
+          },
+          {
+            "speaker": "Luana",
+            "text": "Mais alguma coisa?"
+          },
+          {
+            "speaker": "Thiago",
+            "text": "Não, só isso. Obrigado."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pide Thiago para comer?",
+            "options": [
+              "Um sanduíche de queijo",
+              "Um suco natural",
+              "Um cafezinho e um pão de queijo",
+              "Uma sopa de legumes"
+            ],
+            "correctIndex": 2,
+            "explanation": "Thiago dice 'Eu queria um cafezinho e um pão de queijo', así que eso es lo que pide."
+          },
+          {
+            "prompt": "Además del café, ¿qué otra bebida pide Thiago?",
+            "options": [
+              "Água com gás",
+              "Suco natural de laranja",
+              "Água sem gás",
+              "Chá"
+            ],
+            "correctIndex": 1,
+            "explanation": "Cuando Luana pregunta qué quiere para beber, Thiago responde 'Para mim, um suco natural de laranja'."
+          },
+          {
+            "prompt": "¿Qué tipo de agua pide Thiago?",
+            "options": [
+              "Sem gás",
+              "Com gás e sem gás",
+              "No pide agua",
+              "Com gás"
+            ],
+            "correctIndex": 0,
+            "explanation": "Thiago responde 'Para mim, sem gás, por favor' cuando le preguntan por el agua."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la conversación en el restaurante y respondé las preguntas.",
+        "situation": "Estás cenando con tu colega Renata en un restaurante en Fortaleza, después del trabajo.",
+        "lines": [
+          {
+            "speaker": "Renata",
+            "text": "Boa noite! Uma mesa para dois, por favor."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Claro! Aqui está o cardápio."
+          },
+          {
+            "speaker": "Renata",
+            "text": "Obrigada. Vou querer um sanduíche de queijo."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "E para beber?"
+          },
+          {
+            "speaker": "Renata",
+            "text": "Uma água com gás, por favor."
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Mais alguma coisa?"
+          },
+          {
+            "speaker": "Renata",
+            "text": "Não, só isso. Ah, depois pode trazer a conta?"
+          },
+          {
+            "speaker": "Garçom",
+            "text": "Claro, sem problema."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué pide Renata para comer?",
+            "options": [
+              "Suco natural",
+              "Pão de queijo",
+              "Sopa de legumes",
+              "Sanduíche de queijo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Renata dice 'Vou querer um sanduíche de queijo', así que ese es su pedido de comida."
+          },
+          {
+            "prompt": "¿Qué tipo de agua pide Renata?",
+            "options": [
+              "Sem gás",
+              "Suco",
+              "Com gás",
+              "No pide agua"
+            ],
+            "correctIndex": 2,
+            "explanation": "Renata dice 'Uma água com gás, por favor' cuando el garçom le pregunta qué quiere beber."
+          },
+          {
+            "prompt": "¿Qué le pide Renata al garçom para el final de la cena?",
+            "options": [
+              "A conta",
+              "O cardápio",
+              "Mais uma água",
+              "Mais pão"
+            ],
+            "correctIndex": 0,
+            "explanation": "Renata pregunta 'pode trazer a conta?', pidiendo la cuenta para terminar la cena."
+          }
+        ]
+      }
     ]
   }
 }
