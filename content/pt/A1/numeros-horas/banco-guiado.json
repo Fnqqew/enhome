@@ -1,0 +1,2224 @@
+{
+  "subtopics": {
+    "numeros-cardinales": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la frase sobre la familia de Lucas.",
+        "prompt": "Lucas tem ___ irmãs.",
+        "options": [
+          "duas",
+          "dois",
+          "duo",
+          "dos"
+        ],
+        "correctIndex": 0,
+        "explanation": "Irmãs es femenino, así que el número 'dos' debe concordar en género: duas.",
+        "optionNotes": [
+          "Correcto: duas es la forma femenina de 'dos', y concuerda con irmãs.",
+          "Incorrecto: dois es la forma masculina; irmãs es femenino, así que no concuerda.",
+          "Incorrecto: 'duo' no es un número en portugués, significa 'dúo' (pareja de músicos, por ejemplo).",
+          "Incorrecto: 'dos' es español, no existe en portugués."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la opción correcta para completar la frase en el mercado.",
+        "prompt": "Vou comprar ___ maçã para o Lucas.",
+        "options": [
+          "duas",
+          "uns",
+          "um",
+          "uma"
+        ],
+        "correctIndex": 3,
+        "explanation": "Maçã es femenino, por eso se usa 'uma' y no 'um'.",
+        "optionNotes": [
+          "Incorrecto: duas significa 'dos', pero la frase indica una sola manzana.",
+          "Incorrecto: uns es plural y acá se habla de una sola manzana.",
+          "Incorrecto: um es la forma masculina; maçã es femenino.",
+          "Correcto: uma concuerda en género femenino con maçã."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta usada en Brasil para la edad.",
+        "prompt": "Ela tem ___ anos.",
+        "options": [
+          "dezinove",
+          "dezenove",
+          "dezanove",
+          "desenove"
+        ],
+        "correctIndex": 1,
+        "explanation": "En Brasil se dice 'dezenove'; 'dezanove' es la forma usada en Portugal.",
+        "optionNotes": [
+          "Incorrecto: 'dezinove' no existe en portugués.",
+          "Correcto: 'dezenove' es la forma brasileña para el número 19.",
+          "Incorrecto: 'dezanove' es la forma de Portugal, no la que se usa en Brasil.",
+          "Incorrecto: 'desenove' no existe, es una confusión de escritura."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para decir el precio.",
+        "prompt": "Isso custa ___ reais.",
+        "options": [
+          "trinta três",
+          "trinta e três",
+          "trinta-três",
+          "trinta e tres"
+        ],
+        "correctIndex": 1,
+        "explanation": "Del 21 al 99 siempre va la palabra 'e' entre decenas y unidades, sin guión, y 'três' lleva acento circunflejo.",
+        "optionNotes": [
+          "Incorrecto: falta la palabra 'e' entre 'trinta' y 'três'.",
+          "Correcto: lleva 'e' entre decenas y unidades, y 'três' con acento.",
+          "Incorrecto: en portugués no se usa guión entre decenas y unidades.",
+          "Incorrecto: 'tres' sin acento está mal escrito; la forma correcta es 'três'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para decir una cantidad exacta.",
+        "prompt": "Preciso de ___ reais para pagar o aluguel.",
+        "options": [
+          "cento",
+          "cem",
+          "um cem",
+          "cento e"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cem se usa cuando el número es exactamente 100; cento solo aparece cuando sigue otra cifra, como en 'cento e um'.",
+        "optionNotes": [
+          "Incorrecto: cento solo se usa cuando sigue otro número, como en 'cento e um'.",
+          "Correcto: cem se usa para el 100 exacto, sin otra cifra después.",
+          "Incorrecto: 'um cem' no existe en portugués; no se usa 'um' antes de cem.",
+          "Incorrecto: 'cento e' queda incompleto, falta el número que sigue."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta para decir el número de la habitación.",
+        "prompt": "O quarto é o número ___.",
+        "options": [
+          "cem e um",
+          "cento um",
+          "cem um",
+          "cento e um"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando sigue otra cifra después del 100, se usa 'cento' y no 'cem', y siempre va la palabra 'e' entre las partes.",
+        "optionNotes": [
+          "Incorrecto: cem solo se usa para el 100 exacto, no cuando sigue otra cifra.",
+          "Incorrecto: falta la palabra 'e' entre 'cento' y 'um'.",
+          "Incorrecto: cem no corresponde aquí, y también falta la palabra 'e'.",
+          "Correcto: cento e um es la forma correcta para el 101."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre las mascotas de Lucas con el número correcto.",
+        "sentence": "Lucas tem ___ gatos em casa.",
+        "hint": "(número 2, masculino)",
+        "answers": [
+          "dois"
+        ],
+        "explanation": "Dois se usa con sustantivos masculinos, como 'gatos'; en portugués el número 2 cambia según el género del sustantivo.",
+        "wrongAnswers": [
+          {
+            "answer": "duas",
+            "why": "Duas es la forma femenina; gatos es masculino, así que corresponde 'dois'."
+          },
+          {
+            "answer": "dos",
+            "why": "'Dos' es español; en portugués se dice 'dois' para el masculino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre la familia de Marina con el número correcto.",
+        "sentence": "Marina tem ___ primas na Bahia.",
+        "hint": "(número 2, feminino)",
+        "answers": [
+          "duas"
+        ],
+        "explanation": "Duas se usa con sustantivos femeninos, como 'primas'; a diferencia del español, en portugués el número 2 también cambia de género.",
+        "wrongAnswers": [
+          {
+            "answer": "dois",
+            "why": "Dois es la forma masculina; primas es femenino, así que corresponde 'duas'."
+          },
+          {
+            "answer": "dos",
+            "why": "'Dos' es español; en portugués se dice 'duas' para el femenino."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre la compra de Juan con el número correcto.",
+        "sentence": "Comprei ___ relógio novo.",
+        "hint": "(número 1, masculino)",
+        "answers": [
+          "um"
+        ],
+        "explanation": "Um se usa con sustantivos masculinos, como 'relógio'; el número 1 también concuerda en género en portugués.",
+        "wrongAnswers": [
+          {
+            "answer": "uma",
+            "why": "Uma es la forma femenina; relógio es masculino, así que corresponde 'um'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre el cumpleaños de Lucas con el número correcto (forma brasileña).",
+        "sentence": "Ele fez ___ anos ontem.",
+        "hint": "(número 17)",
+        "answers": [
+          "dezessete"
+        ],
+        "explanation": "En Brasil, el número 17 se escribe 'dezessete', con z y doble s.",
+        "wrongAnswers": [
+          {
+            "answer": "dezassete",
+            "why": "'Dezassete' es la forma usada en Portugal; en Brasil se dice 'dezessete'."
+          },
+          {
+            "answer": "desessete",
+            "why": "Esta forma no existe; la escritura correcta es 'dezessete', con z."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre el piso del edificio con el número correcto.",
+        "sentence": "O apartamento fica no andar ___.",
+        "hint": "(número 21)",
+        "answers": [
+          "vinte e um"
+        ],
+        "explanation": "Del 21 al 99 siempre se usa la palabra 'e' entre las decenas y las unidades, nunca un guión ni se omite.",
+        "wrongAnswers": [
+          {
+            "answer": "vinte-um",
+            "why": "En portugués no se usa guión entre decenas y unidades; corresponde la palabra 'e'."
+          },
+          {
+            "answer": "vinte um",
+            "why": "Falta la palabra 'e' entre 'vinte' y 'um'; siempre va 'e' del 21 al 99."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre el precio del celular con el número correcto.",
+        "sentence": "Esse celular custa ___ reais.",
+        "hint": "(número 100)",
+        "answers": [
+          "cem"
+        ],
+        "explanation": "Cem se usa para el número 100 exacto; cento aparece solo cuando sigue otra cifra después.",
+        "wrongAnswers": [
+          {
+            "answer": "cento",
+            "why": "Cento solo se usa cuando sigue otra cifra, como en 'cento e um'; para el 100 exacto se usa 'cem'."
+          },
+          {
+            "answer": "cento reais",
+            "why": "La forma correcta para el 100 exacto es simplemente 'cem', no 'cento'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre la edad de Lucas.",
+        "sentence": "Lucas tem vinte e cinco anos de idade.",
+        "alternatives": [],
+        "translation": "Lucas tiene veinticinco años de edad.",
+        "explanation": "Entre 'vinte' y 'cinco' va la palabra 'e'; esa estructura no cambia de orden en portugués.",
+        "tokens": [
+          "Lucas",
+          "idade",
+          "tem",
+          "anos",
+          "cinco",
+          "e",
+          "vinte",
+          "de"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre la hermana de Juan.",
+        "sentence": "Minha irmã tem duas filhas pequenas.",
+        "alternatives": [],
+        "translation": "Mi hermana tiene dos hijas chiquitas.",
+        "explanation": "Duas concuerda en género femenino con 'filhas', a diferencia del español donde 'dos' no cambia.",
+        "tokens": [
+          "duas",
+          "pequenas",
+          "Minha",
+          "irmã",
+          "filhas",
+          "tem"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre el alquiler.",
+        "sentence": "Preciso de cem reais para o aluguel.",
+        "alternatives": [
+          "Para o aluguel, preciso de cem reais."
+        ],
+        "translation": "Necesito cien reales para el alquiler.",
+        "explanation": "Cem se usa para el 100 exacto; no lleva 'e' ni otra cifra después.",
+        "tokens": [
+          "cem",
+          "Preciso",
+          "o",
+          "de",
+          "reais",
+          "para",
+          "aluguel"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre el número de la habitación.",
+        "sentence": "O quarto é o número cento e um.",
+        "alternatives": [],
+        "translation": "La habitación es el número ciento uno.",
+        "explanation": "Como después del 100 sigue otra cifra, se usa 'cento' en vez de 'cem', junto con la palabra 'e'.",
+        "tokens": [
+          "o",
+          "é",
+          "quarto",
+          "cento",
+          "um",
+          "O",
+          "e",
+          "número"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre el cumpleaños de Marina.",
+        "sentence": "Ela fez dezenove anos no sábado passado.",
+        "alternatives": [
+          "No sábado passado, ela fez dezenove anos."
+        ],
+        "translation": "Ella cumplió diecinueve años el sábado pasado.",
+        "explanation": "Dezenove es la forma brasileña para el número 19; en Portugal se dice 'dezanove'.",
+        "tokens": [
+          "Ela",
+          "no",
+          "dezenove",
+          "anos",
+          "fez",
+          "passado",
+          "sábado"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de concordancia de género en esta frase.",
+        "sentence": "Eu tenho dois filhas.",
+        "answers": [
+          "Eu tenho duas filhas."
+        ],
+        "explanation": "Dois/duas concuerda en género con el sustantivo; filhas es femenino, así que corresponde 'duas'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tenho duas filho.",
+            "why": "El error no está en el sustantivo 'filhas', que ya está en femenino plural correctamente; el problema es el número 'dois'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la palabra 'e' entre números.",
+        "sentence": "Ela tem vinte-um anos.",
+        "answers": [
+          "Ela tem vinte e um anos."
+        ],
+        "explanation": "En portugués se usa la palabra 'e' entre decenas y unidades, nunca un guión.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela tem vinte e uma anos.",
+            "why": "'Uma' está mal: anos es masculino, así que corresponde 'um', no 'uma'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con cem/cento en esta frase.",
+        "sentence": "Preciso de cento reais.",
+        "answers": [
+          "Preciso de cem reais."
+        ],
+        "explanation": "Cem se usa para el número 100 exacto; cento solo aparece cuando sigue otra cifra, como en 'cento e um'.",
+        "wrongAnswers": [
+          {
+            "answer": "Preciso de um cento reais.",
+            "why": "Agregar 'um' antes de 'cento' no es correcto; para el 100 exacto simplemente se dice 'cem reais'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error relacionado con la forma brasileña del número 19.",
+        "sentence": "Ele tem dezanove anos.",
+        "answers": [
+          "Ele tem dezenove anos."
+        ],
+        "explanation": "En Brasil se usa 'dezenove' para el número 19; 'dezanove' es la forma de Portugal.",
+        "wrongAnswers": [
+          {
+            "answer": "Ele tem dezenove ano.",
+            "why": "El error no está en 'ano', que debe quedar en plural 'anos'; el problema es la forma 'dezanove', propia de Portugal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de concordancia de género en esta frase.",
+        "sentence": "Moro em dois casas diferentes.",
+        "answers": [
+          "Moro em duas casas diferentes."
+        ],
+        "explanation": "Casas es femenino, así que el número 2 debe ser 'duas', no 'dois'.",
+        "wrongAnswers": [
+          {
+            "answer": "Moro em duas casa diferentes.",
+            "why": "El error no está en 'casas', que debe quedar en plural; el problema es el número 'dois', que no concuerda con el género femenino de 'casas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre la edad de Juan.",
+        "spanish": "Tengo veinticinco años.",
+        "answers": [
+          "Tenho vinte e cinco anos.",
+          "Eu tenho vinte e cinco anos."
+        ],
+        "explanation": "Del 21 al 99 siempre va la palabra 'e' entre decenas y unidades: 'vinte e cinco'; el pronombre 'eu' puede omitirse porque el verbo ya indica la persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Tenho vinte-cinco anos.",
+            "why": "En portugués no se usa guión entre decenas y unidades; corresponde la palabra 'e'."
+          },
+          {
+            "answer": "Tenho vinte e cinco ano.",
+            "why": "Falta el plural: debe ser 'anos', no 'ano'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre la familia de Marina.",
+        "spanish": "Ella tiene dos hermanas.",
+        "answers": [
+          "Ela tem duas irmãs."
+        ],
+        "explanation": "En portugués, a diferencia del español, el número 2 concuerda en género con el sustantivo: 'duas irmãs'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela tem dois irmãs.",
+            "why": "Irmãs es femenino, así que el número 2 debe ser 'duas', no 'dois'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre la compra de Juan.",
+        "spanish": "Compré un auto nuevo.",
+        "answers": [
+          "Comprei um carro novo.",
+          "Eu comprei um carro novo."
+        ],
+        "explanation": "Um se usa con sustantivos masculinos, como 'carro'; el número 1 concuerda en género en portugués, y el pronombre 'eu' es opcional.",
+        "wrongAnswers": [
+          {
+            "answer": "Comprei uma carro novo.",
+            "why": "Carro es masculino, así que corresponde 'um', no 'uma'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre el precio en el mercado.",
+        "spanish": "Esto cuesta cien reales.",
+        "answers": [
+          "Isso custa cem reais."
+        ],
+        "explanation": "Cem se usa para expresar exactamente 100; cento aparece solo seguido de otro número, como en 'cento e um'.",
+        "wrongAnswers": [
+          {
+            "answer": "Isso custa cento reais.",
+            "why": "Cento solo se usa cuando sigue otra cifra; para el 100 exacto corresponde 'cem'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre la dirección de Lucas.",
+        "spanish": "Él vive en el número treinta y dos.",
+        "answers": [
+          "Ele mora no número trinta e dois."
+        ],
+        "explanation": "Del 21 al 99 siempre va la palabra 'e' entre las decenas y las unidades: 'trinta e dois'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ele mora no número trinta-dois.",
+            "why": "En portugués no se usa guión entre decenas y unidades; corresponde la palabra 'e'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre el cumpleaños de Marina.",
+        "spanish": "Ella cumplió diecisiete años ayer.",
+        "answers": [
+          "Ela fez dezessete anos ontem."
+        ],
+        "explanation": "En Brasil, el número 17 se escribe 'dezessete', con z y doble s.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela fez dezessete ano ontem.",
+            "why": "Falta el plural: debe ser 'anos', no 'ano'."
+          },
+          {
+            "answer": "Ela fez dezassete anos ontem.",
+            "why": "'Dezassete' es la forma de Portugal; en Brasil se usa 'dezessete'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu tenho vinte e cinco anos.",
+        "alternatives": [
+          "Eu tenho 25 anos."
+        ],
+        "translation": "Tengo veinticinco años.",
+        "explanation": "Prestá atención a la palabra 'e' entre la decena y la unidad: se dice 'vinte e cinco', nunca 'vinte cinco' ni con guion."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "A fruta custa quatro reais.",
+        "alternatives": [
+          "A fruta custa 4 reais."
+        ],
+        "translation": "La fruta cuesta cuatro reales.",
+        "explanation": "No confundas 'quatro' (cuatro) con 'quatorze' (catorce): empiezan parecido pero el final cambia todo el sentido."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "O apartamento é no número dezenove.",
+        "alternatives": [
+          "O apartamento é no número 19."
+        ],
+        "translation": "El departamento es el número diecinueve.",
+        "explanation": "Dezenove (19) y dezesseis (16) pueden confundirse si escuchás rápido; fijate en la terminación '-nove' frente a '-sseis'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Preciso de cem reais para o aluguel.",
+        "alternatives": [
+          "Preciso de 100 reais para o aluguel."
+        ],
+        "translation": "Necesito cien reales para el alquiler.",
+        "explanation": "Cem se usa cuando el número es exactamente 100; si siguiera otra cifra se diría 'cento e...', como en 'cento e um'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "mau",
+          "mão"
+        ],
+        "target": 1,
+        "meanings": [
+          "malo",
+          "mano"
+        ],
+        "explanation": "La nasalización de 'ão' se pronuncia por la nariz y lleva tilde ~; 'au' en 'mau' es un diptongo oral, sin ese sonido nasal."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 1,
+        "meanings": [
+          "costoso",
+          "auto"
+        ],
+        "explanation": "El 'r' simple entre vocales suena suave, parecido a la 'r' del español en 'pero'; el 'rr' doble suena fuerte, casi como una jota."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La 'ó' es abierta, como la o de 'sol' en español; la 'ô' es cerrada y más larga. En español no distinguimos esta diferencia."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo en una feria y respondé las preguntas sobre los números.",
+        "situation": "Marcos está en una feria de San Pablo comprando frutas con la vendedora Dona Rita.",
+        "lines": [
+          {
+            "speaker": "Dona Rita",
+            "text": "Oi! Quantas maçãs você quer?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Quero duas maçãs, por favor."
+          },
+          {
+            "speaker": "Dona Rita",
+            "text": "São três reais as duas."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Também quero um quilo de banana."
+          },
+          {
+            "speaker": "Dona Rita",
+            "text": "O quilo custa quatro reais."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Então são sete reais no total?"
+          },
+          {
+            "speaker": "Dona Rita",
+            "text": "Isso mesmo, sete reais."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántas manzanas compra Marcos?",
+            "options": [
+              "Duas",
+              "Uma",
+              "Três",
+              "Quatro"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marcos dice 'Quero duas maçãs'; se usa 'duas' porque 'maçã' es femenino, y en portugués dois/duas cambian según el género."
+          },
+          {
+            "prompt": "¿Cuánto cuesta el kilo de banana?",
+            "options": [
+              "Dois reais",
+              "Três reais",
+              "Sete reais",
+              "Quatro reais"
+            ],
+            "correctIndex": 3,
+            "explanation": "Dona Rita dice 'O quilo custa quatro reais', así que el precio del kilo de banana es cuatro reales."
+          },
+          {
+            "prompt": "¿Cuánto paga Marcos en total?",
+            "options": [
+              "Três reais",
+              "Quatro reais",
+              "Sete reais",
+              "Dez reais"
+            ],
+            "correctIndex": 2,
+            "explanation": "Al sumar tres reais de las manzanas y cuatro reais de la banana, el total es sete reais, como confirma Dona Rita."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas sobre los números.",
+        "situation": "Juliana entrevista a Pedro para un trabajo en una oficina de Río de Janeiro y le pregunta sobre su edad y su familia.",
+        "lines": [
+          {
+            "speaker": "Juliana",
+            "text": "Pedro, quantos anos você tem?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu tenho vinte e oito anos."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Você tem irmãos?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Sim, tenho duas irmãs."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Quantos irmãos homens você tem?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Tenho um irmão só."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Então vocês são quatro na família."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Isso, somos quatro no total."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántos años tiene Pedro?",
+            "options": [
+              "Vinte e oito",
+              "Dezoito",
+              "Oito",
+              "Vinte e um"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pedro dice 'vinte e oito anos'; del 21 al 99 siempre se usa 'e' entre las decenas y las unidades."
+          },
+          {
+            "prompt": "¿Cuántas hermanas tiene Pedro?",
+            "options": [
+              "Um",
+              "Três",
+              "Duas",
+              "Quatro"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'tenho duas irmãs'; se usa 'duas' porque 'irmãs' es femenino, igual que con 'dois/duas' en portugués."
+          },
+          {
+            "prompt": "¿Cuántas personas hay en la familia de Pedro en total?",
+            "options": [
+              "Dois",
+              "Três",
+              "Quatro",
+              "Cinco"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro confirma 'somos quatro no total', sumando a él, sus dos hermanas y su hermano."
+          }
+        ]
+      }
+    ],
+    "numeros-ordinales": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le cuenta a Mariana que vive en el primer piso de su edificio. Elegí el ordinal correcto.",
+        "prompt": "Moro no ___ andar.",
+        "options": [
+          "segundo",
+          "primeira",
+          "primeiro",
+          "um"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como 'andar' es masculino y Juan vive en el piso número uno, corresponde el ordinal 'primeiro'.",
+        "optionNotes": [
+          "Incorrecto: 'segundo' indica el piso número dos, no el primero.",
+          "Incorrecto: 'primeira' es la forma femenina, pero 'andar' es masculino.",
+          "Correcto: concuerda en masculino con 'andar' y marca el primer piso.",
+          "Incorrecto: 'um' es un número cardinal; para el piso hay que usar el ordinal 'primeiro'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Mariana participó en una carrera y quedó en el segundo puesto. Elegí el ordinal correcto.",
+        "prompt": "Ela ficou em ___ lugar na corrida.",
+        "options": [
+          "terceiro",
+          "dois",
+          "segunda",
+          "segundo"
+        ],
+        "correctIndex": 3,
+        "explanation": "Como 'lugar' es masculino y Mariana quedó en el puesto número dos, corresponde el ordinal 'segundo'.",
+        "optionNotes": [
+          "Incorrecto: 'terceiro' indica el tercer puesto, no el segundo.",
+          "Incorrecto: 'dois' es un número cardinal; para el puesto hay que usar el ordinal 'segundo'.",
+          "Incorrecto: 'segunda' es la forma femenina, pero 'lugar' es masculino.",
+          "Correcto: concuerda en masculino con 'lugar' y marca el segundo puesto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le dice a Mariana que nunca estuvo antes en ese restaurante. Elegí el ordinal correcto.",
+        "prompt": "É a ___ vez que eu venho aqui.",
+        "options": [
+          "primeira",
+          "primeiro",
+          "uma",
+          "um"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como 'vez' es femenino y es la primera vez que Juan viene, corresponde el ordinal 'primeira'.",
+        "optionNotes": [
+          "Correcto: concuerda en femenino con 'vez' y marca la primera vez.",
+          "Incorrecto: 'primeiro' es la forma masculina, pero 'vez' es femenino.",
+          "Incorrecto: 'uma' es un número cardinal; para expresar orden hay que usar el ordinal 'primeira'.",
+          "Incorrecto: 'um' es un número cardinal masculino; no corresponde con 'vez', que es femenino y necesita un ordinal."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Es el primer día del mes de mayo. Elegí la forma correcta para la fecha.",
+        "prompt": "Hoje é o ___ de maio.",
+        "options": [
+          "um",
+          "primeiro",
+          "dia um",
+          "primeira"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para las fechas, solo el día 1 usa el ordinal 'primeiro'; el resto del mes se dice con números cardinales.",
+        "optionNotes": [
+          "Incorrecto: 'um' es cardinal, pero el día 1 es la única excepción que usa el ordinal.",
+          "Correcto: el día 1 del mes siempre se dice con el ordinal 'primeiro'.",
+          "Incorrecto: 'dia um' repite 'dia' de forma redundante y no es la expresión natural para el primer día del mes.",
+          "Incorrecto: 'primeira' es la forma femenina, pero el día ('dia') es masculino."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan tiene una reunión con el señor Ribeiro, su casero, el día 2 de mayo. Elegí la forma correcta para la fecha.",
+        "prompt": "A reunião é no dia ___ de maio.",
+        "options": [
+          "dois",
+          "primeiro",
+          "segunda",
+          "segundo"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para las fechas del mes se usa el número cardinal, salvo el día 1 que usa el ordinal 'primeiro'; por eso el día 2 se dice 'dois'.",
+        "optionNotes": [
+          "Correcto: las fechas, salvo el día 1, se dicen con números cardinales.",
+          "Incorrecto: 'primeiro' corresponde al día 1, no al día 2.",
+          "Incorrecto: 'segunda' es la forma femenina de un ordinal, pero además las fechas no usan ordinales salvo el día 1.",
+          "Incorrecto: 'segundo' es un ordinal, pero las fechas (salvo el día 1) usan números cardinales."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Mariana le comenta a Juan que está leyendo el tercer libro de una serie. Elegí el ordinal correcto.",
+        "prompt": "Esse é o ___ livro da série.",
+        "options": [
+          "terceira",
+          "segundo",
+          "terceiro",
+          "três"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como 'livro' es masculino y es el libro número tres de la serie, corresponde el ordinal 'terceiro'.",
+        "optionNotes": [
+          "Incorrecto: 'terceira' es la forma femenina, pero 'livro' es masculino.",
+          "Incorrecto: 'segundo' indica el segundo libro, no el tercero.",
+          "Correcto: concuerda en masculino con 'livro' y marca el tercer libro.",
+          "Incorrecto: 'três' es un número cardinal; para indicar el orden hay que usar el ordinal 'terceiro'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le dice a Mariana que vive en el primer piso de un edificio. Completá con el ordinal correcto.",
+        "sentence": "Eu moro no ___ andar do prédio.",
+        "hint": "(ordinal, concordando com 'andar')",
+        "answers": [
+          "primeiro"
+        ],
+        "explanation": "Como 'andar' es masculino y Juan vive en el piso número uno, corresponde el ordinal 'primeiro'.",
+        "wrongAnswers": [
+          {
+            "answer": "primeira",
+            "why": "'Andar' es masculino, por eso corresponde 'primeiro', no 'primeira'."
+          },
+          {
+            "answer": "um",
+            "why": "'Um' es un número cardinal; para indicar el orden del piso hay que usar el ordinal 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Mariana ganó un torneo y quedó en el primer puesto. Completá con el ordinal correcto.",
+        "sentence": "Mariana ficou em ___ lugar no torneio.",
+        "hint": "(ordinal, concordando com 'lugar')",
+        "answers": [
+          "primeiro"
+        ],
+        "explanation": "Como 'lugar' es masculino y Mariana quedó en el puesto número uno, corresponde el ordinal 'primeiro'.",
+        "wrongAnswers": [
+          {
+            "answer": "primeira",
+            "why": "'Lugar' es masculino, por eso corresponde 'primeiro', no 'primeira'."
+          },
+          {
+            "answer": "um",
+            "why": "'Um' es un número cardinal; para indicar el puesto hay que usar el ordinal 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Es la segunda vez que Juan visita al médico este mes. Completá con el ordinal correcto.",
+        "sentence": "Essa é a ___ vez que eu visito o médico.",
+        "hint": "(ordinal, concordando com 'vez')",
+        "answers": [
+          "segunda"
+        ],
+        "explanation": "Como 'vez' es femenino y es la segunda vez que Juan va, corresponde el ordinal 'segunda'.",
+        "wrongAnswers": [
+          {
+            "answer": "segundo",
+            "why": "'Vez' es femenino, por eso corresponde 'segunda', no 'segundo'."
+          },
+          {
+            "answer": "dois",
+            "why": "'Dois' es un número cardinal; para indicar el orden de la visita hay que usar el ordinal 'segunda'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Hoy Juan empieza sus clases de portugués, es el primer día. Completá con el ordinal correcto.",
+        "sentence": "Hoje é o ___ dia de aula de português.",
+        "hint": "(ordinal, concordando com 'dia')",
+        "answers": [
+          "primeiro"
+        ],
+        "explanation": "Como 'dia' es masculino y es el día número uno de clases, corresponde el ordinal 'primeiro'.",
+        "wrongAnswers": [
+          {
+            "answer": "primeira",
+            "why": "'Dia' es masculino, por eso corresponde 'primeiro', no 'primeira'."
+          },
+          {
+            "answer": "um",
+            "why": "'Um' es un número cardinal; para indicar el orden del día hay que usar el ordinal 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan tiene una entrevista de trabajo el dos de junio. Completá la fecha con la forma correcta.",
+        "sentence": "A entrevista de emprego é no dia ___ de junho.",
+        "hint": "(número cardinal, não ordinal)",
+        "answers": [
+          "dois"
+        ],
+        "explanation": "Para las fechas del mes se usa el número cardinal, salvo el día 1 que usa el ordinal 'primeiro'; por eso el día 2 se dice 'dois'.",
+        "wrongAnswers": [
+          {
+            "answer": "segundo",
+            "why": "Las fechas del mes, salvo el día 1, se dicen con números cardinales, no con ordinales como 'segundo'."
+          },
+          {
+            "answer": "segunda",
+            "why": "Además de ser un ordinal (que no corresponde en fechas salvo el día 1), 'segunda' tiene género femenino, que tampoco aplica aquí."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "El señor Ribeiro le avisa a Juan que el tercer piso del edificio está en remodelación. Completá con el ordinal correcto.",
+        "sentence": "O ___ andar do prédio está em reforma.",
+        "hint": "(ordinal, concordando com 'andar')",
+        "answers": [
+          "terceiro"
+        ],
+        "explanation": "Como 'andar' es masculino y se trata del piso número tres, corresponde el ordinal 'terceiro'.",
+        "wrongAnswers": [
+          {
+            "answer": "terceira",
+            "why": "'Andar' es masculino, por eso corresponde 'terceiro', no 'terceira'."
+          },
+          {
+            "answer": "três",
+            "why": "'Três' es un número cardinal; para indicar el orden del piso hay que usar el ordinal 'terceiro'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le cuenta a Mariana en qué piso vive. Ordená las palabras.",
+        "sentence": "Eu moro no primeiro andar deste prédio.",
+        "alternatives": [],
+        "translation": "Yo vivo en el primer piso de este edificio.",
+        "explanation": "'Primeiro' concuerda en masculino con 'andar' porque es el piso número uno.",
+        "tokens": [
+          "andar",
+          "primeiro",
+          "no",
+          "deste",
+          "moro",
+          "Eu",
+          "prédio"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan está en el consultorio del médico y le comenta que ya estuvo antes. Ordená las palabras.",
+        "sentence": "Essa é a segunda vez que eu venho aqui.",
+        "alternatives": [],
+        "translation": "Esa es la segunda vez que vengo aquí.",
+        "explanation": "'Segunda' concuerda en femenino con 'vez' porque es la segunda vez que Juan viene.",
+        "tokens": [
+          "Essa",
+          "eu",
+          "é",
+          "que",
+          "a",
+          "aqui",
+          "vez",
+          "venho",
+          "segunda"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Mariana ganó la carrera y Juan le cuenta a un amigo. Ordená las palabras.",
+        "sentence": "Ela ficou em primeiro lugar na corrida.",
+        "alternatives": [],
+        "translation": "Ella quedó en primer lugar en la carrera.",
+        "explanation": "'Primeiro' concuerda en masculino con 'lugar' porque Mariana quedó en el puesto número uno.",
+        "tokens": [
+          "ficou",
+          "Ela",
+          "primeiro",
+          "corrida",
+          "em",
+          "na",
+          "lugar"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Mariana le dice a Juan cuál es su libro favorito de una serie. Ordená las palabras.",
+        "sentence": "O terceiro livro da série é o melhor.",
+        "alternatives": [],
+        "translation": "El tercer libro de la serie es el mejor.",
+        "explanation": "'Terceiro' concuerda en masculino con 'livro' porque es el libro número tres.",
+        "tokens": [
+          "da",
+          "é",
+          "série",
+          "terceiro",
+          "o",
+          "O",
+          "livro",
+          "melhor"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le avisa a un amigo cuándo es la reunión con el señor Ribeiro. Ordená las palabras.",
+        "sentence": "A reunião com o senhor Ribeiro é no dia dois.",
+        "alternatives": [],
+        "translation": "La reunión con el señor Ribeiro es el día dos.",
+        "explanation": "Para las fechas del mes se usa el número cardinal 'dois', salvo el día 1 que usa el ordinal 'primeiro'.",
+        "tokens": [
+          "senhor",
+          "dia",
+          "Ribeiro",
+          "no",
+          "é",
+          "A",
+          "reunião",
+          "o",
+          "dois",
+          "com"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Mariana cuenta en qué puesto quedó en una prueba. Corregií el error.",
+        "sentence": "Mariana ficou em segunda lugar na prova.",
+        "answers": [
+          "Mariana ficou em segundo lugar na prova."
+        ],
+        "explanation": "El ordinal tiene que concordar en género con el sustantivo; como 'lugar' es masculino, corresponde 'segundo', no 'segunda'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana ficou em segundo lugares na prova.",
+            "why": "El error no es de número sino de género; hay que cambiar 'segunda' a 'segundo', no pluralizar 'lugar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le dice a un amigo cuándo es la reunión con el señor Ribeiro. Corregií el error.",
+        "sentence": "A reunião é no dia segundo de maio.",
+        "answers": [
+          "A reunião é no dia dois de maio."
+        ],
+        "explanation": "Para las fechas del mes se usa el número cardinal, salvo el día 1 que usa el ordinal 'primeiro'; por eso el día 2 se dice 'dois', no 'segundo'.",
+        "wrongAnswers": [
+          {
+            "answer": "A reunião é no dia segunda de maio.",
+            "why": "Cambiar el género del ordinal no soluciona el error; las fechas del mes, salvo el día 1, se dicen con número cardinal, no con ordinal."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le cuenta a Mariana que es la primera vez que visita a ese médico. Corregií el error.",
+        "sentence": "Essa é a primeiro vez que eu visito o médico.",
+        "answers": [
+          "Essa é a primeira vez que eu visito o médico."
+        ],
+        "explanation": "El ordinal tiene que concordar en género con el sustantivo; como 'vez' es femenino, corresponde 'primeira', no 'primeiro'.",
+        "wrongAnswers": [
+          {
+            "answer": "Esse é a primeiro vez que eu visito o médico.",
+            "why": "El error está en el ordinal 'primeiro', no en el demostrativo 'essa', que ya está correcto en femenino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le dice a Mariana en qué piso del edificio vive. Corregií el error.",
+        "sentence": "Eu moro no segunda andar do prédio.",
+        "answers": [
+          "Eu moro no segundo andar do prédio."
+        ],
+        "explanation": "El ordinal tiene que concordar en género con el sustantivo; como 'andar' es masculino, corresponde 'segundo', no 'segunda'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu moro no segunda andares do prédio.",
+            "why": "El error no es de número sino de género; hay que cambiar 'segunda' a 'segundo', no pluralizar 'andar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Mariana le cuenta a Juan que hoy es el primer día de clases. Corregií el error.",
+        "sentence": "Hoje é o um dia de aula.",
+        "answers": [
+          "Hoje é o primeiro dia de aula."
+        ],
+        "explanation": "Para las fechas y el orden de los días, el número uno siempre se expresa con el ordinal 'primeiro', no con el cardinal 'um'.",
+        "wrongAnswers": [
+          {
+            "answer": "Hoje é a um dia de aula.",
+            "why": "Cambiar el artículo no soluciona el error; el problema es usar el cardinal 'um' en vez del ordinal 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le cuenta a Mariana en qué piso vive. Traducí al portugués.",
+        "spanish": "Vivo en el primer piso de este edificio.",
+        "answers": [
+          "Eu moro no primeiro andar deste prédio.",
+          "Moro no primeiro andar deste prédio."
+        ],
+        "explanation": "Se usa el ordinal 'primeiro' porque concuerda en masculino con 'andar' y marca el piso número uno.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu moro no um andar deste prédio.",
+            "why": "'Um' es un número cardinal; para indicar el orden del piso hay que usar el ordinal 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le cuenta a un amigo cómo le fue a Mariana en la carrera. Traducí al portugués.",
+        "spanish": "Ella quedó en segundo lugar en la carrera.",
+        "answers": [
+          "Ela ficou em segundo lugar na corrida."
+        ],
+        "explanation": "Se usa el ordinal 'segundo' porque concuerda en masculino con 'lugar' y marca el puesto número dos.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela ficou em segunda lugar na corrida.",
+            "why": "'Lugar' es masculino, por eso corresponde 'segundo', no 'segunda'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice al mozo que nunca estuvo antes en ese restaurante. Traducí al portugués.",
+        "spanish": "Es la primera vez que vengo a este restaurante.",
+        "answers": [
+          "É a primeira vez que eu venho a este restaurante.",
+          "É a primeira vez que venho a este restaurante."
+        ],
+        "explanation": "Se usa el ordinal 'primeira' porque concuerda en femenino con 'vez' y marca la primera vez.",
+        "wrongAnswers": [
+          {
+            "answer": "É o primeiro vez que eu venho a este restaurante.",
+            "why": "'Vez' es femenino, por eso corresponde 'primeira', no 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le avisa a Mariana cuándo es su reunión con el señor Ribeiro. Traducí al portugués.",
+        "spanish": "La reunión es el dos de mayo.",
+        "answers": [
+          "A reunião é no dia dois de maio.",
+          "A reunião é dia dois de maio."
+        ],
+        "explanation": "Para las fechas del mes se usa el número cardinal, salvo el día 1 que usa el ordinal 'primeiro'; por eso el día 2 se dice 'dois'.",
+        "wrongAnswers": [
+          {
+            "answer": "A reunião é no dia segundo de maio.",
+            "why": "Las fechas del mes, salvo el día 1, se dicen con números cardinales, no con ordinales como 'segundo'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Mariana le dice a Juan que hoy empieza el mes. Traducí al portugués.",
+        "spanish": "Hoy es el primer día del mes.",
+        "answers": [
+          "Hoje é o primeiro dia do mês."
+        ],
+        "explanation": "El día 1 del mes siempre se dice con el ordinal 'primeiro', aunque el resto de las fechas use números cardinales.",
+        "wrongAnswers": [
+          {
+            "answer": "Hoje é o um dia do mês.",
+            "why": "'Um' es un número cardinal; el día 1 es la excepción que siempre usa el ordinal 'primeiro'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "El señor Ribeiro le explica a Juan que hay obras en el edificio. Traducí al portugués.",
+        "spanish": "El tercer piso está en remodelación.",
+        "answers": [
+          "O terceiro andar está em reforma."
+        ],
+        "explanation": "Se usa el ordinal 'terceiro' porque concuerda en masculino con 'andar' y marca el piso número tres.",
+        "wrongAnswers": [
+          {
+            "answer": "O terceira andar está em reforma.",
+            "why": "'Andar' es masculino, por eso corresponde 'terceiro', no 'terceira'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Moro no primeiro andar do prédio.",
+        "alternatives": [
+          "Moro no 1º andar do prédio."
+        ],
+        "translation": "Vivo en el primer piso del edificio.",
+        "explanation": "Para hablar de pisos se usa el ordinal 'primeiro', no el cardinal 'um': se dice 'primeiro andar', no 'um andar'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Ela ficou em segundo lugar na corrida.",
+        "alternatives": [],
+        "translation": "Ella quedó en segundo lugar en la carrera.",
+        "explanation": "El ordinal 'segundo' concuerda con 'lugar', que es masculino; no se dice 'segunda lugar'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Hoje é o primeiro dia de aula.",
+        "alternatives": [],
+        "translation": "Hoy es el primer día de clase.",
+        "explanation": "Para el primer día de algo se usa el ordinal 'primeiro', no el número cardinal 'um'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "A consulta é no dia dois de maio.",
+        "alternatives": [
+          "A consulta é no dia 2 de maio."
+        ],
+        "translation": "La consulta es el día dos de mayo.",
+        "explanation": "Para las fechas del mes se usa el número cardinal, como 'dois'; el ordinal 'primeiro' solo se usa para el día 1."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "primeira",
+          "primeiro"
+        ],
+        "target": 0,
+        "meanings": [
+          "primera",
+          "primero"
+        ],
+        "explanation": "La vocal final marca el género del ordinal: 'o' es masculino y 'a' es femenino; prestá atención a cuál se pronuncia al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "lã",
+          "lá"
+        ],
+        "target": 0,
+        "meanings": [
+          "lana",
+          "allá"
+        ],
+        "explanation": "La 'ã' es una vocal nasal, se pronuncia dejando salir el aire por la nariz, mientras que la 'á' es una vocal oral abierta; en español no existe esa nasalización."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 1,
+        "meanings": [
+          "costoso",
+          "auto"
+        ],
+        "explanation": "El 'r' simple entre vocales suena suave, como la 'r' de 'pero' en español; el 'rr' doble suena fuerte y gutural, casi como una jota."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre Pedro y Zé, el portero del edificio, y respondé sobre los pisos donde vive cada uno.",
+        "situation": "Pedro se mudó a un edificio en San Pablo y charla con Zé, el portero, sobre dónde vive él y su hermana.",
+        "lines": [
+          {
+            "speaker": "Zé",
+            "text": "Bom dia, Pedro! Qual é o seu andar?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Bom dia, Zé! Eu moro no segundo andar."
+          },
+          {
+            "speaker": "Zé",
+            "text": "Ah, o apartamento dois A, certo?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Isso mesmo! É o primeiro apartamento do corredor."
+          },
+          {
+            "speaker": "Zé",
+            "text": "E a sua irmã, onde ela mora?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Ela mora no terceiro andar, no apartamento três A."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿En qué piso vive Pedro?",
+            "options": [
+              "Terceiro andar",
+              "Segundo andar",
+              "Quarto andar",
+              "Primeiro andar"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro dice 'Eu moro no segundo andar'; el ordinal 'segundo' concuerda con 'andar', que es masculino."
+          },
+          {
+            "prompt": "¿Qué apartamento es el de Pedro dentro del pasillo?",
+            "options": [
+              "El tercer apartamento",
+              "El segundo apartamento",
+              "El cuarto apartamento",
+              "El primer apartamento"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro aclara: 'É o primeiro apartamento do corredor', usando el ordinal 'primeiro' para indicar su posición."
+          },
+          {
+            "prompt": "¿En qué piso vive la hermana de Pedro?",
+            "options": [
+              "Primeiro andar",
+              "Terceiro andar",
+              "Segundo andar",
+              "Quarto andar"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro dice 'Ela mora no terceiro andar', usando el ordinal 'terceiro' para el piso de su hermana."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre Marina y Caio sobre los resultados de la carrera en la escuela y respondé.",
+        "situation": "Marina le cuenta a su amigo Caio cómo quedaron ella y sus compañeros en una carrera de la escuela.",
+        "lines": [
+          {
+            "speaker": "Caio",
+            "text": "Marina, como foi a corrida na escola?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Eu fiquei em segundo lugar!"
+          },
+          {
+            "speaker": "Caio",
+            "text": "Que ótimo! Quem ficou em primeiro lugar?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "A Bia ficou em primeiro lugar."
+          },
+          {
+            "speaker": "Caio",
+            "text": "E o Pedro, como ele ficou?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Ele ficou em terceiro lugar."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿En qué puesto quedó Marina en la carrera?",
+            "options": [
+              "Primer lugar",
+              "Cuarto lugar",
+              "Tercer lugar",
+              "Segundo lugar"
+            ],
+            "correctIndex": 3,
+            "explanation": "Marina dice 'Eu fiquei em segundo lugar'; el ordinal 'segundo' concuerda con 'lugar', que es masculino."
+          },
+          {
+            "prompt": "¿Quién quedó en primer lugar?",
+            "options": [
+              "Caio",
+              "Bia",
+              "Marina",
+              "Pedro"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina responde 'A Bia ficou em primeiro lugar', indicando que Bia fue la primera."
+          },
+          {
+            "prompt": "¿En qué puesto quedó Pedro?",
+            "options": [
+              "Quarto lugar",
+              "Terceiro lugar",
+              "Primeiro lugar",
+              "Segundo lugar"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marina dice 'Ele ficou em terceiro lugar', usando el ordinal 'terceiro' para la posición de Pedro."
+          }
+        ]
+      }
+    ],
+    "decir-la-hora": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le pregunta la hora a un desconocido en la calle. Elegí la forma correcta.",
+        "prompt": "Que horas ___?",
+        "options": [
+          "são",
+          "tem",
+          "está",
+          "é"
+        ],
+        "correctIndex": 0,
+        "explanation": "La pregunta por la hora siempre se hace en plural: 'Que horas são?'.",
+        "optionNotes": [
+          "Correcto: la pregunta por la hora se hace siempre en plural.",
+          "Incorrecto: 'tem' se usa en la forma informal 'Você tem hora?', no después de 'Que horas'.",
+          "Incorrecto: 'está' no se usa para preguntar la hora.",
+          "Incorrecto: 'é' es singular, pero la pregunta 'Que horas...?' siempre va en plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le dice a Mariana que su reunión es a la una de la tarde. Elegí el verbo correcto.",
+        "prompt": "___ uma hora da tarde.",
+        "options": [
+          "São",
+          "Tem",
+          "Está",
+          "É"
+        ],
+        "correctIndex": 3,
+        "explanation": "El verbo 'ser' va en singular ('é') solo para la una; para el resto de las horas va en plural.",
+        "optionNotes": [
+          "Incorrecto: 'são' se usa para todas las horas excepto la una.",
+          "Incorrecto: 'tem' no se usa para decir la hora de esta manera.",
+          "Incorrecto: 'está' no se usa para decir la hora.",
+          "Correcto: para la una se usa 'é', en singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan tiene turno con el médico a las dos de la tarde. Elegí el verbo correcto.",
+        "prompt": "___ duas horas da tarde.",
+        "options": [
+          "Tem",
+          "São",
+          "É",
+          "Estão"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo 'ser' va en plural para todas las horas, excepto para la una.",
+        "optionNotes": [
+          "Incorrecto: 'tem' no se usa para decir la hora de esta manera.",
+          "Correcto: para las dos y las demás horas (salvo la una) se usa 'são'.",
+          "Incorrecto: 'é' es singular, pero se usa solo para la una.",
+          "Incorrecto: 'estão' no se usa para decir la hora."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan tiene una entrevista de trabajo a las nueve de la mañana. Elegí la preposición correcta.",
+        "prompt": "A entrevista é ___ nove da manhã.",
+        "options": [
+          "às",
+          "a",
+          "na",
+          "em"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para indicar 'a las' con una hora se usa la contracción 'às' (a + as), no 'na' ni 'em'.",
+        "optionNotes": [
+          "Correcto: 'às' es la contracción correcta para indicar la hora.",
+          "Incorrecto: falta la contracción con 'as'; sin ella, 'a' solo no es correcto.",
+          "Incorrecto: 'na' no se usa para marcar la hora en que ocurre algo.",
+          "Incorrecto: 'em' no se usa de esta manera para indicar la hora."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le dice a Mariana que almuerzan juntos al mediodía. Elegí la forma correcta.",
+        "prompt": "O almoço é ao ___.",
+        "options": [
+          "meio-dia",
+          "meia-noite",
+          "uma hora",
+          "meio-dia horas"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Meio-dia' no lleva la palabra 'horas' después.",
+        "optionNotes": [
+          "Correcto: 'meio-dia' se usa solo, sin agregar 'horas'.",
+          "Incorrecto: 'meia-noite' es la medianoche, no el mediodía.",
+          "Incorrecto: 'uma hora' no corresponde al mediodía.",
+          "Incorrecto: 'meio-dia' nunca va seguido de la palabra 'horas'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "El vuelo de Juan hacia San Pablo sale a la medianoche. Elegí la preposición correcta.",
+        "prompt": "O voo sai ___ meia-noite.",
+        "options": [
+          "à",
+          "a",
+          "na",
+          "às"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Meia-noite' es singular y femenino, por eso se usa la contracción 'à' (a + a), no 'às', que es para el plural.",
+        "optionNotes": [
+          "Correcto: 'à' es la contracción correcta para un momento singular y femenino como 'meia-noite'.",
+          "Incorrecto: falta la contracción con 'a'; sin ella, 'a' solo no es correcto.",
+          "Incorrecto: 'na' no se usa para marcar la hora en que ocurre algo.",
+          "Incorrecto: 'às' es la contracción para horas en plural, pero 'meia-noite' es singular."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le pregunta la hora a Mariana de forma informal. Completá con el verbo correcto.",
+        "sentence": "Você ___ hora?",
+        "hint": "(ter)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "En la forma informal para preguntar la hora se usa el verbo 'ter': 'Você tem hora?'.",
+        "wrongAnswers": [
+          {
+            "answer": "tens",
+            "why": "'Tens' es una forma usada en Portugal; en Brasil se usa 'você tem', con el verbo en la forma de él/ella."
+          },
+          {
+            "answer": "é",
+            "why": "Para esta pregunta informal se usa el verbo 'ter', no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le dice a Mariana que son las diez y cuarto de la mañana. Completá con la forma correcta.",
+        "sentence": "São dez e ___ da manhã.",
+        "hint": "(quinze / um quarto)",
+        "answers": [
+          "quinze",
+          "um quarto"
+        ],
+        "explanation": "Para decir 'y cuarto' se puede usar 'quinze' (los minutos) o 'um quarto'.",
+        "wrongAnswers": [
+          {
+            "answer": "menos quinze",
+            "why": "'Menos' se usa para restar minutos a la hora siguiente, no para sumarlos a la hora actual."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le dice a Mariana que es la una y media. Completá con la forma correcta.",
+        "sentence": "É uma hora e ___.",
+        "hint": "(meia, para 'y media')",
+        "answers": [
+          "meia"
+        ],
+        "explanation": "Para decir 'y media' se usa la expresión fija 'e meia', independientemente del género de la hora.",
+        "wrongAnswers": [
+          {
+            "answer": "meio",
+            "why": "La expresión fija para 'y media' es 'meia', no 'meio'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le cuenta a un amigo que su entrevista de trabajo es a las nueve de la noche. Completá con la preposición correcta.",
+        "sentence": "A entrevista é ___ nove da noite.",
+        "hint": "(às, preposição)",
+        "answers": [
+          "às"
+        ],
+        "explanation": "Para indicar 'a las' con una hora se usa la contracción 'às', no 'na' ni 'a' sin contraer.",
+        "wrongAnswers": [
+          {
+            "answer": "na",
+            "why": "'Na' no se usa para marcar la hora en que ocurre algo; corresponde la contracción 'às'."
+          },
+          {
+            "answer": "a",
+            "why": "Falta la contracción con 'as'; sin ella, 'a' solo no es correcto antes de una hora en plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan va corriendo al médico y le dice a Mariana que faltan cinco minutos para las ocho. Completá con el verbo correcto.",
+        "sentence": "___ cinco para as oito.",
+        "hint": "(faltar, 3ª pessoa plural)",
+        "answers": [
+          "Faltam"
+        ],
+        "explanation": "El verbo 'faltar' concuerda en plural con los minutos que faltan ('cinco').",
+        "wrongAnswers": [
+          {
+            "answer": "Falta",
+            "why": "El verbo 'faltar' tiene que concordar en plural con 'cinco' (minutos), por eso corresponde 'faltam', no 'falta'."
+          },
+          {
+            "answer": "Sobra",
+            "why": "'Sobrar' no se usa para expresar los minutos que faltan para una hora; corresponde 'faltar'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le dice a Mariana que es mediodía en punto. Completá con la forma correcta.",
+        "sentence": "É meio-dia ___.",
+        "hint": "(em ponto, exatamente)",
+        "answers": [
+          "em ponto"
+        ],
+        "explanation": "Para decir 'en punto' se usa la expresión 'em ponto', y 'meio-dia' nunca lleva la palabra 'horas' después.",
+        "wrongAnswers": [
+          {
+            "answer": "horas",
+            "why": "'Meio-dia' no lleva la palabra 'horas' después; para decir 'en punto' corresponde 'em ponto'."
+          },
+          {
+            "answer": "em hora",
+            "why": "La expresión correcta para 'en punto' es 'em ponto', no 'em hora'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le pregunta la hora a un desconocido en la calle. Ordená las palabras.",
+        "sentence": "Que horas são, por favor?",
+        "alternatives": [],
+        "translation": "¿Qué hora es, por favor?",
+        "explanation": "La pregunta por la hora siempre se hace con el verbo 'ser' en plural: 'Que horas são?'.",
+        "tokens": [
+          "por",
+          "são,",
+          "horas",
+          "favor",
+          "Que"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le cuenta a Mariana cuándo es su consulta con el médico. Ordená las palabras.",
+        "sentence": "A consulta com o médico é às dez da manhã.",
+        "alternatives": [],
+        "translation": "La consulta con el médico es a las diez de la mañana.",
+        "explanation": "Se usa la contracción 'às' para indicar la hora en que ocurre algo.",
+        "tokens": [
+          "médico",
+          "dez",
+          "A",
+          "da",
+          "com",
+          "é",
+          "manhã",
+          "o",
+          "consulta",
+          "às"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan mira el reloj antes de una reunión importante. Ordená las palabras.",
+        "sentence": "São quinze para as três da tarde.",
+        "alternatives": [],
+        "translation": "Son las tres menos cuarto de la tarde.",
+        "explanation": "Se usa 'para as' para restar minutos a la hora siguiente, como en el ejemplo 'quinze para as três'.",
+        "tokens": [
+          "São",
+          "para",
+          "da",
+          "as",
+          "três",
+          "tarde",
+          "quinze"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le cuenta a un amigo cuándo almuerza con Mariana. Ordená las palabras.",
+        "sentence": "O almoço com Mariana é ao meio-dia.",
+        "alternatives": [],
+        "translation": "El almuerzo con Mariana es al mediodía.",
+        "explanation": "'Meio-dia' no lleva la palabra 'horas' después y se usa con la preposición 'ao'.",
+        "tokens": [
+          "meio-dia",
+          "ao",
+          "O",
+          "é",
+          "almoço",
+          "Mariana",
+          "com"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le avisa a un amigo cuándo sale su vuelo a San Pablo. Ordená las palabras.",
+        "sentence": "O voo para São Paulo sai à meia-noite.",
+        "alternatives": [],
+        "translation": "El vuelo a San Pablo sale a la medianoche.",
+        "explanation": "Se usa la contracción 'à' porque 'meia-noite' es singular y femenino.",
+        "tokens": [
+          "O",
+          "à",
+          "Paulo",
+          "para",
+          "sai",
+          "São",
+          "voo",
+          "meia-noite"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le dice a Mariana la hora de una reunión. Corregí el error.",
+        "sentence": "É duas horas da tarde.",
+        "answers": [
+          "São duas horas da tarde."
+        ],
+        "explanation": "El verbo 'ser' va en plural para todas las horas, excepto para la una; por eso corresponde 'são', no 'é'.",
+        "wrongAnswers": [
+          {
+            "answer": "É duas hora da tarde.",
+            "why": "El error no está en 'horas', sino en el verbo; hay que cambiar 'é' por 'são', no quitarle la 's' a 'horas'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le cuenta a un amigo a qué hora es su entrevista de trabajo. Corregí el error.",
+        "sentence": "A entrevista é na nove da manhã.",
+        "answers": [
+          "A entrevista é às nove da manhã."
+        ],
+        "explanation": "Para indicar 'a las' con una hora se usa la contracción 'às', no 'na'.",
+        "wrongAnswers": [
+          {
+            "answer": "A entrevista é a nove da manhã.",
+            "why": "Falta la contracción con 'as'; sin ella, 'a' solo sigue siendo incorrecto antes de una hora en plural."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le dice a Mariana que es mediodía. Corregí el error.",
+        "sentence": "É meio-dia horas.",
+        "answers": [
+          "É meio-dia."
+        ],
+        "explanation": "'Meio-dia' no lleva la palabra 'horas' después.",
+        "wrongAnswers": [
+          {
+            "answer": "São meio-dia horas.",
+            "why": "Cambiar el verbo a 'são' no soluciona el error; el problema es agregar la palabra 'horas' después de 'meio-dia'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le dice a Mariana que su reunión es a la una de la tarde. Corregí el error.",
+        "sentence": "São uma hora da tarde.",
+        "answers": [
+          "É uma hora da tarde."
+        ],
+        "explanation": "El verbo 'ser' va en singular ('é') solo para la una; el resto de las horas usa el plural 'são'.",
+        "wrongAnswers": [
+          {
+            "answer": "São uma horas da tarde.",
+            "why": "El error está en el verbo, no en 'hora'; hay que cambiar 'são' por 'é', no agregarle una 's' a 'hora'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le avisa a un amigo cuándo sale su vuelo. Corregí el error.",
+        "sentence": "O voo sai às meia-noite.",
+        "answers": [
+          "O voo sai à meia-noite."
+        ],
+        "explanation": "'Meia-noite' es singular y femenino, por eso corresponde la contracción 'à', no 'às', que es para el plural.",
+        "wrongAnswers": [
+          {
+            "answer": "O voo sai a meia-noite.",
+            "why": "Falta la contracción con 'a'; sin ella, 'a' solo sigue siendo incorrecto antes de 'meia-noite'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pregunta la hora a un desconocido. Traducí al portugués.",
+        "spanish": "¿Qué hora es?",
+        "answers": [
+          "Que horas são?"
+        ],
+        "explanation": "La pregunta por la hora siempre se hace con el verbo 'ser' en plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Que hora é?",
+            "why": "La pregunta por la hora siempre va en plural ('horas são'), salvo cuando se responde con la una."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice a Mariana a qué hora es su turno con el médico. Traducí al portugués.",
+        "spanish": "Son las dos de la tarde.",
+        "answers": [
+          "São duas horas da tarde."
+        ],
+        "explanation": "El verbo 'ser' va en plural para todas las horas, excepto para la una.",
+        "wrongAnswers": [
+          {
+            "answer": "É duas horas da tarde.",
+            "why": "El verbo 'ser' va en singular solo para la una; para las dos y las demás horas se usa 'são'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice a Mariana qué hora es. Traducí al portugués.",
+        "spanish": "Es la una y media.",
+        "answers": [
+          "É uma hora e meia."
+        ],
+        "explanation": "El verbo 'ser' va en singular ('é') para la una, y se usa la expresión fija 'e meia' para 'y media'.",
+        "wrongAnswers": [
+          {
+            "answer": "São uma hora e meia.",
+            "why": "Para la una se usa el verbo en singular 'é', no 'são'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le cuenta a un amigo a qué hora es su reunión de trabajo. Traducí al portugués.",
+        "spanish": "La reunión es a las nueve de la noche.",
+        "answers": [
+          "A reunião é às nove da noite."
+        ],
+        "explanation": "Para indicar 'a las' con una hora se usa la contracción 'às'.",
+        "wrongAnswers": [
+          {
+            "answer": "A reunião é na nove da noite.",
+            "why": "La preposición correcta para indicar la hora es 'às', no 'na'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice a Mariana que es mediodía en punto. Traducí al portugués.",
+        "spanish": "Es mediodía en punto.",
+        "answers": [
+          "É meio-dia em ponto."
+        ],
+        "explanation": "'Meio-dia' no lleva la palabra 'horas' después, y 'en punto' se dice 'em ponto'.",
+        "wrongAnswers": [
+          {
+            "answer": "É meio-dia horas em ponto.",
+            "why": "'Meio-dia' nunca va seguido de la palabra 'horas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice a Mariana que tienen que apurarse porque casi es la hora de un turno. Traducí al portugués.",
+        "spanish": "Faltan cinco para las ocho.",
+        "answers": [
+          "Faltam cinco para as oito.",
+          "São cinco para as oito."
+        ],
+        "explanation": "El verbo 'faltar' concuerda en plural con los minutos que faltan; también se puede usar 'são' con el mismo sentido.",
+        "wrongAnswers": [
+          {
+            "answer": "Falta cinco para as oito.",
+            "why": "El verbo 'faltar' tiene que concordar en plural con 'cinco' (minutos), por eso corresponde 'faltam', no 'falta'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "São três horas da tarde.",
+        "alternatives": [
+          "São 3 horas da tarde."
+        ],
+        "translation": "Son las tres de la tarde.",
+        "explanation": "El verbo 'são' lleva un diptongo nasal que puede sonar parecido a 'som'; recordá que va en plural porque no es 'uma hora'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "A reunião é às duas horas da tarde.",
+        "alternatives": [
+          "A reunião é às 2 horas da tarde."
+        ],
+        "translation": "La reunión es a las dos de la tarde.",
+        "explanation": "'Às' se pronuncia con un sonido nasal cerrado, distinto de 'a' sola; la tilde marca la contracción de 'a' + 'as' que se usa para dar la hora."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Já é meio-dia em ponto.",
+        "alternatives": [
+          "Já é meio dia em ponto."
+        ],
+        "translation": "Ya es mediodía en punto.",
+        "explanation": "'Meio-dia' nunca va seguido de la palabra 'horas', a diferencia del resto de las horas en portugués que sí la llevan."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Pedro chega às dez e quinze da manhã.",
+        "alternatives": [
+          "Pedro chega às 10h15 da manhã."
+        ],
+        "translation": "Pedro llega a las diez y cuarto de la mañana.",
+        "explanation": "'Dez e quinze' puede sonar parecido a 'dezesseis' si no distinguís bien la pausa entre 'dez' y 'quinze'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "sem",
+          "cem"
+        ],
+        "target": 1,
+        "meanings": [
+          "sin",
+          "cien"
+        ],
+        "explanation": "'Cem' tiene una vocal nasal marcada (termina como un sonido 'm' nasalizado), mientras que 'sem' suena más corto y oral."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "meia",
+          "meio"
+        ],
+        "target": 1,
+        "meanings": [
+          "mitad (femenino)",
+          "medio (masculino)"
+        ],
+        "explanation": "La diferencia está en la vocal final: 'meia' termina en 'a' abierta y 'meio' en 'o' cerrada; esta palabra es clave para decir la hora con minutos como 'e meia'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "novo",
+          "nove"
+        ],
+        "target": 1,
+        "meanings": [
+          "nuevo",
+          "nueve"
+        ],
+        "explanation": "La diferencia está en la vocal final: 'nove' termina con un sonido parecido a 'i' y 'novo' con un sonido parecido a 'u'; esta distinción es clave al decir números como las horas."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la rutina de Marcos y respondé las preguntas sobre los horarios.",
+        "text": "Marcos mora em São Paulo e trabalha numa loja. Ele acorda às seis horas da manhã. Marcos toma café às seis e meia. Ele sai de casa às sete e quinze. A loja abre às oito horas. Marcos almoça ao meio-dia, com os colegas. À tarde, ele trabalha até às cinco horas. Depois do trabalho, Marcos vai para a academia. Ele chega em casa às sete da noite. Marcos janta às oito horas. Ele dorme à meia-noite, porque gosta de ler um pouco antes de dormir. No sábado, Marcos não trabalha. Ele dorme até às nove da manhã! No domingo, ele visita a mãe às três da tarde.",
+        "questions": [
+          {
+            "prompt": "¿A qué hora almuerza Marcos?",
+            "options": [
+              "Às cinco horas",
+              "Ao meio-dia",
+              "Às oito horas",
+              "À meia-noite"
+            ],
+            "correctIndex": 1,
+            "explanation": "El mediodía se dice 'ao meio-dia', sin la palabra 'horas', usando la preposición 'ao' (a + o)."
+          },
+          {
+            "prompt": "¿A qué hora abre la tienda?",
+            "options": [
+              "Às oito horas",
+              "Às sete e quinze",
+              "Ao meio-dia",
+              "Às seis horas"
+            ],
+            "correctIndex": 0,
+            "explanation": "Para decir 'a las' se usa la preposición 'às', como en 'às oito horas'; las otras opciones corresponden a otros momentos de la rutina."
+          },
+          {
+            "prompt": "¿A qué hora duerme Marcos?",
+            "options": [
+              "Às nove da manhã",
+              "Às oito horas",
+              "À meia-noite",
+              "Às sete da noite"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Marcos dorme à meia-noite'; la medianoche no lleva la palabra 'horas' después."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la consulta de Ana y respondé las preguntas sobre los horarios.",
+        "text": "Ana tem uma consulta no médico hoje. A consulta é às dez e quinze da manhã. Ana sai de casa às nove e meia. Ela chega no consultório às dez horas. A secretária diz: 'Que horas são?' Ana responde: 'São dez horas.' Ana espera um pouco. O médico chama Ana às dez e quinze, na hora certa. A consulta dura quarenta minutos. Depois, Ana vai ao mercado. Ela chega no mercado ao meio-dia. Ana compra frutas e legumes. Ela volta para casa à uma hora da tarde. À noite, Ana janta às sete horas e dorme às dez e meia.",
+        "questions": [
+          {
+            "prompt": "¿A qué hora es la consulta de Ana?",
+            "options": [
+              "Às nove e meia",
+              "Às dez e quinze da noite",
+              "Ao meio-dia",
+              "Às dez e quinze da manhã"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice claramente 'A consulta é às dez e quinze da manhã'; las otras opciones son otros momentos del día de Ana."
+          },
+          {
+            "prompt": "¿A qué hora llega Ana al mercado?",
+            "options": [
+              "Ao meio-dia",
+              "Às dez horas",
+              "À uma hora da tarde",
+              "Às sete horas"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Ela chega no mercado ao meio-dia', justo después de la consulta médica."
+          },
+          {
+            "prompt": "¿A qué hora vuelve Ana a su casa?",
+            "options": [
+              "À uma hora da tarde",
+              "Às sete horas",
+              "Ao meio-dia",
+              "Às dez e meia"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'Ela volta para casa à uma hora da tarde'; se usa 'à' porque 'uma hora' es femenina y singular."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la charla entre Pedro y Luana y respondé sobre los horarios mencionados.",
+        "situation": "Pedro y Luana, dos amigos, están en una cafetería en Rio de Janeiro y hablan sobre la hora de una película.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Oi, Luana! Que horas são?"
+          },
+          {
+            "speaker": "Luana",
+            "text": "São quatro horas da tarde."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "O filme começa às cinco, não é?"
+          },
+          {
+            "speaker": "Luana",
+            "text": "Não, começa às cinco e quinze."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Ótimo, temos tempo para um café."
+          },
+          {
+            "speaker": "Luana",
+            "text": "Sim! O cinema é longe daqui?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Não, fica a dez minutos de ônibus."
+          },
+          {
+            "speaker": "Luana",
+            "text": "Perfeito, vamos tomar café então."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué hora es cuando Pedro pregunta?",
+            "options": [
+              "Las cinco de la tarde",
+              "Las cuatro de la tarde",
+              "Las diez de la mañana",
+              "Las cinco y cuarto"
+            ],
+            "correctIndex": 1,
+            "explanation": "Luana responde 'São quatro horas da tarde', usando el verbo en plural porque no es la una."
+          },
+          {
+            "prompt": "¿A qué hora empieza la película?",
+            "options": [
+              "A las cinco y cuarto",
+              "A las cinco en punto",
+              "A las cuatro y media",
+              "A las diez"
+            ],
+            "correctIndex": 0,
+            "explanation": "Luana corrige a Pedro: la película empieza 'às cinco e quinze', no a las cinco en punto."
+          },
+          {
+            "prompt": "¿Cómo llegan al cine?",
+            "options": [
+              "En auto",
+              "A pie",
+              "En tren",
+              "En colectivo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pedro dice que el cine 'fica a dez minutos de ônibus', es decir que van en colectivo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la llamada entre Marina y la secretaria y respondé sobre los horarios mencionados.",
+        "situation": "Marina llama por teléfono a una empresa en Belo Horizonte para confirmar la hora de su entrevista de trabajo.",
+        "lines": [
+          {
+            "speaker": "Secretária",
+            "text": "Boa tarde! Aqui é da empresa Nova Vida."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Boa tarde! Eu tenho uma entrevista hoje."
+          },
+          {
+            "speaker": "Secretária",
+            "text": "Que horas são, por favor?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "São duas horas da tarde agora."
+          },
+          {
+            "speaker": "Secretária",
+            "text": "Certo. Sua entrevista é às duas e meia."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Perfeito, chego em quinze minutos."
+          },
+          {
+            "speaker": "Secretária",
+            "text": "Ótimo! O gerente espera você na sala três."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Muito obrigada! Até logo."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿A qué hora es la entrevista de Marina?",
+            "options": [
+              "A las dos y cuarto",
+              "A las tres",
+              "A las dos y media",
+              "A las dos"
+            ],
+            "correctIndex": 2,
+            "explanation": "La secretaria confirma: 'Sua entrevista é às duas e meia', es decir a las dos y media."
+          },
+          {
+            "prompt": "¿En qué sala la espera el gerente?",
+            "options": [
+              "Sala cuatro",
+              "Sala dos",
+              "Sala uno",
+              "Sala tres"
+            ],
+            "correctIndex": 3,
+            "explanation": "La secretaria dice que el gerente espera a Marina 'na sala três'."
+          },
+          {
+            "prompt": "¿Qué hora es cuando Marina llama a la empresa?",
+            "options": [
+              "Las dos de la tarde",
+              "Las tres",
+              "La una y media",
+              "Las dos y media"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marina responde 'São duas horas da tarde agora' cuando la secretaria le pregunta la hora durante la llamada."
+          }
+        ]
+      }
+    ]
+  }
+}

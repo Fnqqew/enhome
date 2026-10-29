@@ -1,0 +1,2228 @@
+{
+  "subtopics": {
+    "verbos-ar": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para hablar con tu colega Fernanda.",
+        "prompt": "Você ___ português muito bem.",
+        "options": [
+          "falas",
+          "falam",
+          "fala",
+          "falo"
+        ],
+        "correctIndex": 2,
+        "explanation": "Você se conjuga igual que 'ele/ela', en tercera persona del singular, sin agregar '-s'.",
+        "optionNotes": [
+          "Incorrecto: en portugués no existe 'falas' con você; esa terminación con -s no se usa en Brasil para você.",
+          "Incorrecto: 'falam' es la forma de plural (eles/elas), pero você es singular.",
+          "Correcto: você se conjuga como ele/ela, en tercera persona del singular.",
+          "Incorrecto: 'falo' es la forma de 'eu', no de 'você'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para presentarte en la entrevista.",
+        "prompt": "Eu ___ num banco em São Paulo.",
+        "options": [
+          "trabalha",
+          "trabalham",
+          "trabalhas",
+          "trabalho"
+        ],
+        "correctIndex": 3,
+        "explanation": "La forma de 'eu' para los verbos en -ar termina en '-o': trabalho.",
+        "optionNotes": [
+          "Incorrecto: 'trabalha' es la forma de ele/ela/você, no de 'eu'.",
+          "Incorrecto: 'trabalham' es la forma de eles/elas, no de 'eu'.",
+          "Incorrecto: 'trabalhas' no corresponde a 'eu'; esa forma no se usa para la primera persona en portugués.",
+          "Correcto: la primera persona del singular (eu) termina en '-o'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para hablar de vos y Fernanda.",
+        "prompt": "Nós ___ português à noite.",
+        "options": [
+          "estudamos",
+          "estuda",
+          "estudam",
+          "estudo"
+        ],
+        "correctIndex": 0,
+        "explanation": "La forma de 'nós' para los verbos en -ar termina en '-amos': estudamos.",
+        "optionNotes": [
+          "Correcto: la forma de 'nós' termina en '-amos': estudamos.",
+          "Incorrecto: 'estuda' es la forma de ele/ela/você, no de 'nós'.",
+          "Incorrecto: 'estudam' es la forma de eles/elas, no de 'nós'.",
+          "Incorrecto: 'estudo' es la forma de 'eu', no de 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para hablar de tus compañeras.",
+        "prompt": "Elas ___ de música brasileira.",
+        "options": [
+          "gosta",
+          "gostam",
+          "gostamos",
+          "gosto"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo tiene que concordar en plural con el sujeto 'elas': gostam.",
+        "optionNotes": [
+          "Incorrecto: 'gosta' es singular; 'elas' necesita la forma plural.",
+          "Correcto: 'elas' concuerda con la forma plural 'gostam'.",
+          "Incorrecto: 'gostamos' es la forma de 'nós', no de 'elas'.",
+          "Incorrecto: 'gosto' es la forma de 'eu', no de 'elas'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo para hablar de la rutina en la oficina.",
+        "prompt": "A gente ___ cedo no trabalho.",
+        "options": [
+          "chega",
+          "chegamos",
+          "chegam",
+          "chego"
+        ],
+        "correctIndex": 0,
+        "explanation": "A gente se conjuga en tercera persona del singular, igual que você/ele/ela: chega.",
+        "optionNotes": [
+          "Correcto: a gente se conjuga como ele/ela, en tercera persona del singular.",
+          "Incorrecto: 'chegamos' es la forma de 'nós'; a gente no usa esa terminación.",
+          "Incorrecto: 'chegam' es plural de eles/elas; a gente lleva forma singular.",
+          "Incorrecto: 'chego' es la forma de 'eu', no de 'a gente'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'morar' para decir dónde vivís.",
+        "prompt": "Eu ___ em Rosario.",
+        "options": [
+          "vivo",
+          "mora",
+          "moras",
+          "moro"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para decir dónde vivís con el verbo 'morar', la forma correcta para 'eu' es 'moro'.",
+        "optionNotes": [
+          "Incorrecto: esta consigna pide la forma del verbo 'morar', no de 'viver'.",
+          "Incorrecto: 'mora' es la forma de ele/ela/você, no de 'eu'.",
+          "Incorrecto: 'moras' no corresponde a 'eu'; esa forma no se usa en portugués para la primera persona.",
+          "Correcto: 'moro' es la forma de 'eu' del verbo 'morar'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre dónde vive Fernanda.",
+        "sentence": "Fernanda ___ perto do escritório.",
+        "hint": "(morar)",
+        "answers": [
+          "mora"
+        ],
+        "explanation": "Con sujetos como Fernanda (ele/ela), el verbo en -ar termina en '-a': mora.",
+        "wrongAnswers": [
+          {
+            "answer": "moro",
+            "why": "'Moro' es la forma de 'eu', pero el sujeto aquí es 'Fernanda', que necesita la forma de ele/ela."
+          },
+          {
+            "answer": "moras",
+            "why": "'Moras' no existe en portugués con este sujeto; Fernanda necesita la forma 'mora'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre cuánto hace que estudiás portugués.",
+        "sentence": "Eu ___ português há dois meses.",
+        "hint": "(estudar)",
+        "answers": [
+          "estudo"
+        ],
+        "explanation": "La forma de 'eu' para los verbos en -ar siempre termina en '-o': estudo.",
+        "wrongAnswers": [
+          {
+            "answer": "estuda",
+            "why": "'Estuda' es la forma de ele/ela/você, pero el sujeto aquí es 'eu', que necesita la forma 'estudo'."
+          },
+          {
+            "answer": "estudas",
+            "why": "'Estudas' no se usa en portugués de Brasil para 'eu'; esa terminación con -s no corresponde a la primera persona."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la pregunta sobre dónde viven tus compañeros.",
+        "sentence": "Vocês ___ perto da praia?",
+        "hint": "(morar)",
+        "answers": [
+          "moram"
+        ],
+        "explanation": "Vocês se conjuga como eles/elas, en tercera persona del plural: moram.",
+        "wrongAnswers": [
+          {
+            "answer": "mora",
+            "why": "'Mora' es singular; 'vocês' es plural y necesita la forma 'moram'."
+          },
+          {
+            "answer": "morais",
+            "why": "'Morais' es una forma usada en Portugal; en Brasil, con 'vocês' se usa 'moram'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre la rutina de la oficina.",
+        "sentence": "Nós ___ tarde todos os dias.",
+        "hint": "(chegar)",
+        "answers": [
+          "chegamos"
+        ],
+        "explanation": "La forma de 'nós' para los verbos en -ar termina en '-amos': chegamos.",
+        "wrongAnswers": [
+          {
+            "answer": "chega",
+            "why": "'Chega' es singular; el sujeto 'nós' necesita la forma 'chegamos'."
+          },
+          {
+            "answer": "chegam",
+            "why": "'Chegam' es la forma de eles/elas, no de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre la rutina de Fernanda.",
+        "sentence": "Ela ___ pão todos os dias.",
+        "hint": "(comprar)",
+        "answers": [
+          "compra"
+        ],
+        "explanation": "Con sujetos como ela (ele/ela/você), el verbo en -ar termina en '-a': compra.",
+        "wrongAnswers": [
+          {
+            "answer": "compro",
+            "why": "'Compro' es la forma de 'eu', pero el sujeto aquí es 'ela', que necesita la forma 'compra'."
+          },
+          {
+            "answer": "compram",
+            "why": "'Compram' es plural (eles/elas), pero 'ela' es singular y necesita 'compra'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase sobre los gustos de tus compañeros.",
+        "sentence": "Eles ___ de música brasileira.",
+        "hint": "(gostar)",
+        "answers": [
+          "gostam"
+        ],
+        "explanation": "El verbo tiene que concordar en plural con el sujeto 'eles': gostam.",
+        "wrongAnswers": [
+          {
+            "answer": "gosta",
+            "why": "'Gosta' es singular; 'eles' es plural y necesita la forma 'gostam'."
+          },
+          {
+            "answer": "gosto",
+            "why": "'Gosto' es la forma de 'eu', no de 'eles'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre el trabajo de Juan.",
+        "sentence": "Eu trabalho num banco em São Paulo.",
+        "alternatives": [],
+        "translation": "Trabajo en un banco en San Pablo.",
+        "explanation": "La forma de 'eu' en los verbos terminados en -ar siempre termina en '-o': trabalho.",
+        "tokens": [
+          "em",
+          "banco",
+          "Eu",
+          "num",
+          "Paulo",
+          "trabalho",
+          "São"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre dónde vive Fernanda.",
+        "sentence": "Fernanda mora perto do escritório novo.",
+        "alternatives": [],
+        "translation": "Fernanda vive cerca de la oficina nueva.",
+        "explanation": "Con sujetos como Fernanda, el verbo en -ar termina en '-a': mora.",
+        "tokens": [
+          "novo",
+          "perto",
+          "mora",
+          "Fernanda",
+          "do",
+          "escritório"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre la rutina de estudio.",
+        "sentence": "Nós estudamos português todas as noites.",
+        "alternatives": [
+          "Todas as noites nós estudamos português."
+        ],
+        "translation": "Estudiamos portugués todas las noches.",
+        "explanation": "La forma de 'nós' en los verbos terminados en -ar termina en '-amos': estudamos.",
+        "tokens": [
+          "Nós",
+          "português",
+          "noites",
+          "todas",
+          "as",
+          "estudamos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una pregunta sobre dónde viven tus compañeros.",
+        "sentence": "Vocês moram perto da praia agora?",
+        "alternatives": [
+          "Agora, vocês moram perto da praia?"
+        ],
+        "translation": "¿Viven cerca de la playa ahora?",
+        "explanation": "Vocês se conjuga como eles/elas, en tercera persona del plural: moram.",
+        "tokens": [
+          "praia",
+          "perto",
+          "moram",
+          "agora",
+          "Vocês",
+          "da"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase sobre los gustos de tus compañeros.",
+        "sentence": "Eles gostam muito de música brasileira.",
+        "alternatives": [],
+        "translation": "A ellos les gusta mucho la música brasileña.",
+        "explanation": "El verbo tiene que concordar en plural con el sujeto 'eles': gostam.",
+        "tokens": [
+          "música",
+          "muito",
+          "gostam",
+          "brasileira",
+          "de",
+          "Eles"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación con você en esta frase.",
+        "sentence": "Você falas português muito bem.",
+        "answers": [
+          "Você fala português muito bem."
+        ],
+        "explanation": "Você se conjuga como ele/ela, en tercera persona del singular, sin agregar '-s'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você fala portuguesa muito bem.",
+            "why": "El error no está en la palabra 'português', que no cambia de género aquí; el problema es la conjugación del verbo 'falar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación en esta frase.",
+        "sentence": "Eu mora em Rosario.",
+        "answers": [
+          "Eu moro em Rosario."
+        ],
+        "explanation": "La forma de 'eu' para los verbos en -ar termina en '-o': 'moro', no 'mora' (que es la forma de ele/ela/você).",
+        "wrongAnswers": [
+          {
+            "answer": "Eu morar em Rosario.",
+            "why": "'Morar' es el infinitivo sin conjugar; para 'eu' se necesita la forma conjugada 'moro'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de concordancia en esta frase.",
+        "sentence": "Elas gosta de praia.",
+        "answers": [
+          "Elas gostam de praia."
+        ],
+        "explanation": "El verbo tiene que concordar en plural con el sujeto 'elas': gostam.",
+        "wrongAnswers": [
+          {
+            "answer": "Elas gosta de praias.",
+            "why": "El error no está en 'praia', que puede quedar en singular; el problema es la conjugación del verbo, que debe ser 'gostam' para concordar con 'elas'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de concordancia en esta frase.",
+        "sentence": "Nós estuda português à noite.",
+        "answers": [
+          "Nós estudamos português à noite."
+        ],
+        "explanation": "La forma de 'nós' en los verbos terminados en -ar termina en '-amos': estudamos.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós estudamos portuguesa à noite.",
+            "why": "El error no está en la palabra 'português', que no cambia de género aquí; el problema es la conjugación del verbo para 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de concordancia con 'a gente' en esta frase.",
+        "sentence": "A gente chegam cedo no trabalho.",
+        "answers": [
+          "A gente chega cedo no trabalho."
+        ],
+        "explanation": "A gente se conjuga igual que você/ele/ela, en tercera persona del singular: chega.",
+        "wrongAnswers": [
+          {
+            "answer": "A gente chegamos cedo no trabalho.",
+            "why": "'A gente' se conjuga en tercera persona del singular, como ele/ela; no corresponde la forma 'chegamos' de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre el trabajo de Juan.",
+        "spanish": "Trabajo en un banco en San Pablo.",
+        "answers": [
+          "Trabalho num banco em São Paulo.",
+          "Eu trabalho num banco em São Paulo.",
+          "Eu trabalho em um banco em São Paulo."
+        ],
+        "explanation": "La forma de 'eu' en los verbos terminados en -ar siempre termina en '-o': trabalho.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu trabalhas num banco em São Paulo.",
+            "why": "'Trabalhas' no corresponde a 'eu'; la forma correcta de la primera persona es 'trabalho'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta sobre dónde vive tu colega (uso de você).",
+        "spanish": "¿Vivís cerca de la oficina?",
+        "answers": [
+          "Você mora perto do escritório?",
+          "Você vive perto do escritório?"
+        ],
+        "explanation": "Você se conjuga como ele/ela, en tercera persona del singular, sin '-s' final; tanto 'morar' como 'viver' son naturales para indicar residencia.",
+        "wrongAnswers": [
+          {
+            "answer": "Você moras perto do escritório?",
+            "why": "Con você no se agrega '-s' al verbo; la forma correcta es 'mora' (o 'vive'), igual que ele/ela."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre la rutina de estudio con vos y Fernanda.",
+        "spanish": "Estudiamos portugués a la noche.",
+        "answers": [
+          "Nós estudamos português à noite.",
+          "A gente estuda português à noite."
+        ],
+        "explanation": "La forma de 'nós' en los verbos en -ar termina en '-amos'; con 'a gente' se usa la tercera persona del singular, 'estuda'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós estuda português à noite.",
+            "why": "'Estuda' es singular; con 'nós' corresponde la forma 'estudamos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre los gustos de Fernanda.",
+        "spanish": "A ella le gusta la música brasileña.",
+        "answers": [
+          "Ela gosta de música brasileira."
+        ],
+        "explanation": "Con sujetos como ela (ele/ela/você), el verbo en -ar termina en '-a': gosta.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela gostam de música brasileira.",
+            "why": "'Gostam' es plural; el sujeto aquí es 'ela', que necesita la forma singular 'gosta'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase sobre la llegada de tus compañeros a la fiesta.",
+        "spanish": "Ellos llegan tarde a la fiesta.",
+        "answers": [
+          "Eles chegam tarde na festa.",
+          "Eles chegam tarde à festa."
+        ],
+        "explanation": "El verbo tiene que concordar en plural con el sujeto 'eles': chegam; tanto 'na festa' como 'à festa' son naturales en portugués brasileño.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles chega tarde na festa.",
+            "why": "'Chega' es singular; el sujeto 'eles' necesita la forma plural 'chegam'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la pregunta sobre la compra diaria de pan (uso de você).",
+        "spanish": "¿Comprás pan todos los días?",
+        "answers": [
+          "Você compra pão todos os dias?"
+        ],
+        "explanation": "A diferencia del 'vos comprás' del español rioplatense, en portugués 'você' se conjuga como ele/ela: compra.",
+        "wrongAnswers": [
+          {
+            "answer": "Você compras pão todos os dias?",
+            "why": "Con 'você' no se usa la terminación '-s'; la forma correcta es 'compra', igual que ele/ela."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu trabalho numa escola em São Paulo.",
+        "alternatives": [
+          "Eu trabalho em uma escola em São Paulo."
+        ],
+        "translation": "Trabajo en una escuela en San Pablo.",
+        "explanation": "Fijate en el final del verbo: 'trabalho' (yo trabajo) termina en -o, mientras que 'trabalha' (él/ella trabaja) termina en -a."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Ana mora perto da praia em Florianópolis.",
+        "alternatives": [],
+        "translation": "Ana vive cerca de la playa en Florianópolis.",
+        "explanation": "No confundas 'mora' (ella vive, singular) con 'moram' (ellos viven, plural); el -m final nasaliza un poco la vocal y marca el plural."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Nós chegamos no apartamento às dez horas.",
+        "alternatives": [
+          "Nós chegamos no apartamento às 10 horas."
+        ],
+        "translation": "Llegamos al departamento a las diez.",
+        "explanation": "La terminación '-amos' de 'nós' se puede confundir con '-am' de 'eles/elas'; escuchá bien si aparece la sílaba completa 'mos' al final."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Vocês compram pão todos os dias?",
+        "alternatives": [],
+        "translation": "¿Ustedes compran pan todos los días?",
+        "explanation": "No confundas 'compram' (vocês/eles compran, con -m final) con 'compra' (você/ele compra, sin -m); esa letra final marca el plural."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "fala",
+          "falha"
+        ],
+        "target": 0,
+        "meanings": [
+          "habla",
+          "falla"
+        ],
+        "explanation": "El dígrafo 'lh' se pronuncia como una 'll' palatal suave, muy distinto del 'l' simple de 'fala'; en español no existe esa diferencia."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "mora",
+          "morra"
+        ],
+        "target": 0,
+        "meanings": [
+          "vive",
+          "muera"
+        ],
+        "explanation": "El 'r' simple entre vocales suena suave, como la 'r' de 'pero' en español; el 'rr' doble suena fuerte y gutural, casi como una jota."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 0,
+        "meanings": [
+          "caza",
+          "casa"
+        ],
+        "explanation": "La 's' entre vocales en portugués suena como 'z', mientras que la 'ç' suena como una 's' fuerte; en español ambas letras se pronuncian igual, por eso cuesta distinguirlas."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre dos amigas y respondé las preguntas con los datos que dicen.",
+        "situation": "Ana y Bia se encuentran en un café de San Pablo y hablan sobre dónde viven, trabajan y estudian.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Oi, Bia! Onde você mora agora?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "Eu moro em Pinheiros, perto daqui."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Você trabalha perto de casa?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "Trabalho num escritório no centro."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Eu estudo português todo dia."
+          },
+          {
+            "speaker": "Bia",
+            "text": "Que bom! Eu também gosto de estudar."
+          },
+          {
+            "speaker": "Ana",
+            "text": "A gente estuda junto às vezes?"
+          },
+          {
+            "speaker": "Bia",
+            "text": "Claro, eu gosto dessa ideia!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde vive Bia ahora?",
+            "options": [
+              "En Belo Horizonte",
+              "En el centro",
+              "No dice",
+              "En Pinheiros"
+            ],
+            "correctIndex": 3,
+            "explanation": "Bia dice 'Eu moro em Pinheiros'; la forma 'moro' corresponde a la primera persona del verbo morar, igual que 'eu falo'."
+          },
+          {
+            "prompt": "¿Dónde trabaja Bia?",
+            "options": [
+              "En Pinheiros",
+              "En su casa",
+              "En una escuela",
+              "En una oficina en el centro"
+            ],
+            "correctIndex": 3,
+            "explanation": "Bia responde 'Trabalho num escritório no centro'; 'escritório' en portugués significa 'oficina' en español, y 'trabalho' es la primera persona de trabalhar."
+          },
+          {
+            "prompt": "¿Quién dice que estudia portugués todos los días?",
+            "options": [
+              "Las dos",
+              "Ana",
+              "Ninguna",
+              "Bia"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana dice 'Eu estudo português todo dia'; 'estudo' es la forma de primera persona de estudar, usada para hablar de uno mismo."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la entrevista de trabajo y respondé las preguntas con los datos que dicen.",
+        "situation": "El Sr. Carlos entrevista a Mariana para un puesto de trabajo en una empresa de Belo Horizonte.",
+        "lines": [
+          {
+            "speaker": "Carlos",
+            "text": "Mariana, onde você mora hoje?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Eu moro em Belo Horizonte, no centro."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Você trabalha em algum lugar agora?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Sim, trabalho numa loja de roupas."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Você chega sempre no horário?"
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Chego sempre dez minutos antes."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "A gente gosta de pontualidade aqui."
+          },
+          {
+            "speaker": "Mariana",
+            "text": "Eu também gosto muito disso."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde vive Mariana actualmente?",
+            "options": [
+              "En el centro de Belo Horizonte",
+              "En la Zona Norte",
+              "En la Zona Sul",
+              "En Pinheiros"
+            ],
+            "correctIndex": 0,
+            "explanation": "Mariana dice 'Eu moro em Belo Horizonte, no centro'; 'moro' es la primera persona del verbo morar, usada para hablar de uno mismo."
+          },
+          {
+            "prompt": "¿Dónde trabaja Mariana hoy?",
+            "options": [
+              "En una oficina",
+              "En una escuela",
+              "En una tienda de ropa",
+              "En un banco"
+            ],
+            "correctIndex": 2,
+            "explanation": "Mariana responde 'trabalho numa loja de roupas'; 'trabalho' es la forma de primera persona de trabalhar."
+          },
+          {
+            "prompt": "¿Cuántos minutos antes llega Mariana al trabajo?",
+            "options": [
+              "Cinco minutos",
+              "Quince minutos",
+              "Veinte minutos",
+              "Diez minutos"
+            ],
+            "correctIndex": 3,
+            "explanation": "Mariana dice 'Chego sempre dez minutos antes'; 'chego' es la primera persona del verbo chegar, que termina en -o para 'eu'."
+          }
+        ]
+      }
+    ],
+    "verbos-er-ir": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'comer' para completar la oración.",
+        "prompt": "Eu ___ pão no café da manhã.",
+        "options": [
+          "come",
+          "como",
+          "comem",
+          "comemos"
+        ],
+        "correctIndex": 1,
+        "explanation": "La primera persona del singular (eu) de los verbos en -er termina en '-o': como.",
+        "optionNotes": [
+          "Incorrecto: 'come' es la forma de 'ele/ela', no de 'eu'.",
+          "Correcto: 'como' es la forma de 'eu' en el presente de 'comer'.",
+          "Incorrecto: 'comem' es la forma de 'eles/elas'.",
+          "Incorrecto: 'comemos' es la forma de 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'escrever' para completar la oración sobre Lucas.",
+        "prompt": "Lucas ___ muito bem em português.",
+        "options": [
+          "escrevemos",
+          "escreve",
+          "escrevem",
+          "escrevo"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con sujeto 'Lucas' (él) se usa la tercera persona del singular: escreve.",
+        "optionNotes": [
+          "Incorrecto: 'escrevemos' es la forma de 'nós'.",
+          "Correcto: 'escreve' es la forma de 'ele/ela'.",
+          "Incorrecto: 'escrevem' es la forma de 'eles/elas'.",
+          "Incorrecto: 'escrevo' es la forma de 'eu', no de 'Lucas'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'assistir' para completar la oración.",
+        "prompt": "Nós ___ TV depois do jantar.",
+        "options": [
+          "assistem",
+          "assisto",
+          "assistimos",
+          "assiste"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con sujeto 'nós' se usa la forma 'assistimos', que termina en '-imos' en los verbos en -ir.",
+        "optionNotes": [
+          "Incorrecto: 'assistem' es la forma de 'eles/elas'.",
+          "Incorrecto: 'assisto' es la forma de 'eu'.",
+          "Correcto: 'assistimos' es la forma de 'nós'.",
+          "Incorrecto: 'assiste' es la forma de 'ele/ela'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'vender' para completar la oración.",
+        "prompt": "Eles ___ roupas na loja do centro.",
+        "options": [
+          "vendo",
+          "vendem",
+          "vendemos",
+          "vende"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con sujeto 'eles' (plural) se usa la forma 'vendem', terminada en '-em'.",
+        "optionNotes": [
+          "Incorrecto: 'vendo' es la forma de 'eu'.",
+          "Correcto: 'vendem' es la forma de 'eles/elas'.",
+          "Incorrecto: 'vendemos' es la forma de 'nós'.",
+          "Incorrecto: 'vende' es la forma de 'ele/ela'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'abrir' para completar la oración.",
+        "prompt": "Eu ___ a porta do apartamento agora.",
+        "options": [
+          "abre",
+          "abrem",
+          "abro",
+          "abrimos"
+        ],
+        "correctIndex": 2,
+        "explanation": "La primera persona del singular (eu) de los verbos en -ir termina en '-o': abro.",
+        "optionNotes": [
+          "Incorrecto: 'abre' es la forma de 'ele/ela'.",
+          "Incorrecto: 'abrem' es la forma de 'eles/elas'.",
+          "Correcto: 'abro' es la forma de 'eu' en el presente de 'abrir'.",
+          "Incorrecto: 'abrimos' es la forma de 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'entender' para completar la oración.",
+        "prompt": "Você ___ essa pergunta do médico?",
+        "options": [
+          "entendem",
+          "entende",
+          "entendemos",
+          "entendo"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'você' se usa la tercera persona del singular: entende.",
+        "optionNotes": [
+          "Incorrecto: 'entendem' es la forma de 'eles/elas'.",
+          "Correcto: 'entende' es la forma que corresponde a 'você'.",
+          "Incorrecto: 'entendemos' es la forma de 'nós'.",
+          "Incorrecto: 'entendo' es la forma de 'eu', no de 'você'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Eu ___ água mineral no almoço.",
+        "hint": "(beber)",
+        "answers": [
+          "bebo"
+        ],
+        "explanation": "La primera persona del singular (eu) de 'beber' termina en '-o': bebo.",
+        "wrongAnswers": [
+          {
+            "answer": "bebe",
+            "why": "Es la forma de 'ele/ela', no de 'eu'."
+          },
+          {
+            "answer": "bebemos",
+            "why": "Es la forma de 'nós', no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Lucas ___ cedo para o trabalho todos os dias.",
+        "hint": "(partir)",
+        "answers": [
+          "parte"
+        ],
+        "explanation": "Con sujeto 'Lucas' (él) se usa la tercera persona del singular: parte.",
+        "wrongAnswers": [
+          {
+            "answer": "parto",
+            "why": "Es la forma de 'eu', no de 'Lucas'."
+          },
+          {
+            "answer": "partem",
+            "why": "Es la forma de 'eles/elas', pero el sujeto es singular."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Nós ___ a carta para a embaixada hoje.",
+        "hint": "(escrever)",
+        "answers": [
+          "escrevemos"
+        ],
+        "explanation": "Con sujeto 'nós' se usa la forma 'escrevemos', terminada en '-emos'.",
+        "wrongAnswers": [
+          {
+            "answer": "escrevem",
+            "why": "Es la forma de 'eles/elas', no de 'nós'."
+          },
+          {
+            "answer": "escrevo",
+            "why": "Es la forma de 'eu', no de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Eu ___ rapidamente qual apartamento alugar.",
+        "hint": "(decidir)",
+        "answers": [
+          "decido"
+        ],
+        "explanation": "La primera persona del singular (eu) de 'decidir' termina en '-o': decido.",
+        "wrongAnswers": [
+          {
+            "answer": "decide",
+            "why": "Es la forma de 'ele/ela', no de 'eu'."
+          },
+          {
+            "answer": "decidimos",
+            "why": "Es la forma de 'nós', no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Os vizinhos ___ a janela de manhã.",
+        "hint": "(abrir)",
+        "answers": [
+          "abrem"
+        ],
+        "explanation": "Con sujeto plural 'os vizinhos' se usa la forma 'abrem', terminada en '-em'.",
+        "wrongAnswers": [
+          {
+            "answer": "abre",
+            "why": "Esa forma es singular, pero el sujeto 'os vizinhos' es plural."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo entre paréntesis.",
+        "sentence": "Você ___ bem essa explicação do médico?",
+        "hint": "(entender)",
+        "answers": [
+          "entende"
+        ],
+        "explanation": "Con 'você' se usa la tercera persona del singular: entende.",
+        "wrongAnswers": [
+          {
+            "answer": "entendo",
+            "why": "Es la forma de 'eu', no de 'você'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Nós assistimos TV depois do jantar.",
+        "alternatives": [
+          "Depois do jantar, nós assistimos TV."
+        ],
+        "translation": "Nosotros miramos tele después de la cena.",
+        "explanation": "El sujeto 'nós' va con la forma 'assistimos' del verbo 'assistir'; el complemento de tiempo puede ir al final o al principio.",
+        "tokens": [
+          "assistimos",
+          "do",
+          "jantar",
+          "TV",
+          "Nós",
+          "depois"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Lucas escreve uma carta para o chefe.",
+        "alternatives": [],
+        "translation": "Lucas le escribe una carta al jefe.",
+        "explanation": "Con sujeto 'Lucas' (él) se usa la tercera persona del singular del verbo 'escrever': escreve.",
+        "tokens": [
+          "uma",
+          "o",
+          "chefe",
+          "escreve",
+          "carta",
+          "para",
+          "Lucas"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Eles vendem roupas baratas na loja do centro.",
+        "alternatives": [],
+        "translation": "Ellos venden ropa barata en el local del centro.",
+        "explanation": "Con sujeto plural 'eles' se usa la forma 'vendem' del verbo 'vender'.",
+        "tokens": [
+          "centro",
+          "vendem",
+          "na",
+          "roupas",
+          "Eles",
+          "baratas",
+          "loja",
+          "do"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Eu abro a porta do consultório agora.",
+        "alternatives": [
+          "Agora eu abro a porta do consultório."
+        ],
+        "translation": "Yo abro la puerta del consultorio ahora.",
+        "explanation": "La primera persona del singular (eu) del verbo 'abrir' es 'abro'; el adverbio 'agora' puede ir al final o al principio.",
+        "tokens": [
+          "do",
+          "agora",
+          "abro",
+          "Eu",
+          "consultório",
+          "a",
+          "porta"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Nós partimos cedo para o aeroporto de Florianópolis.",
+        "alternatives": [],
+        "translation": "Nosotros salimos temprano para el aeropuerto de Florianópolis.",
+        "explanation": "Con sujeto 'nós' se usa la forma 'partimos' del verbo 'partir', que significa 'salir' o 'partir'.",
+        "tokens": [
+          "aeroporto",
+          "Florianópolis",
+          "cedo",
+          "o",
+          "partimos",
+          "para",
+          "Nós",
+          "de"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación en la oración.",
+        "sentence": "Eu come pão todos os dias.",
+        "answers": [
+          "Eu como pão todos os dias."
+        ],
+        "explanation": "La primera persona del singular (eu) de 'comer' es 'como', no 'come', que corresponde a 'ele/ela'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu comes pão todos os dias.",
+            "why": "Esa conjugación no existe en portugués; la forma correcta para 'eu' es 'como'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación en la oración.",
+        "sentence": "Eu parte agora para o trabalho.",
+        "answers": [
+          "Eu parto agora para o trabalho."
+        ],
+        "explanation": "La primera persona del singular (eu) de 'partir' es 'parto', no 'parte', que corresponde a 'ele/ela'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu partimos agora para o trabalho.",
+            "why": "Esa es la forma de 'nós', no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación en la oración.",
+        "sentence": "Nós assiste TV à noite.",
+        "answers": [
+          "Nós assistimos TV à noite."
+        ],
+        "explanation": "Con sujeto 'nós' se usa la forma 'assistimos', no 'assiste', que corresponde a 'ele/ela'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós assistem TV à noite.",
+            "why": "Esa es la forma de 'eles/elas', no de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación en la oración.",
+        "sentence": "Eles vende roupas na loja.",
+        "answers": [
+          "Eles vendem roupas na loja."
+        ],
+        "explanation": "Con sujeto plural 'eles' se usa la forma 'vendem', no 'vende', que corresponde a 'ele/ela'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles vendo roupas na loja.",
+            "why": "Esa es la forma de 'eu', no de 'eles'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Corregí el error de conjugación en la oración.",
+        "sentence": "Eu assiste TV todas as noites.",
+        "answers": [
+          "Eu assisto TV todas as noites."
+        ],
+        "explanation": "La primera persona del singular (eu) de 'assistir' es 'assisto', no 'assiste', que corresponde a 'ele/ela'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu assistimos TV todas as noites.",
+            "why": "Esa es la forma de 'nós', no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Yo como pan con manteca a la mañana.",
+        "answers": [
+          "Eu como pão com manteiga de manhã.",
+          "Eu como pão com manteiga pela manhã."
+        ],
+        "explanation": "La primera persona del singular (eu) de 'comer' es 'como'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu come pão com manteiga de manhã.",
+            "why": "Esa es la forma de 'ele/ela', no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "¿Vos entendés esta pregunta del médico?",
+        "answers": [
+          "Você entende essa pergunta do médico?",
+          "Você entende esta pergunta do médico?"
+        ],
+        "explanation": "En portugués, 'vos' se traduce como 'você' y usa la tercera persona del singular: entende.",
+        "wrongAnswers": [
+          {
+            "answer": "Você entendo essa pergunta do médico?",
+            "why": "La forma correcta para 'você' es 'entende', no 'entendo', que es la forma de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Nosotros miramos tele después de cenar.",
+        "answers": [
+          "Nós assistimos TV depois de jantar.",
+          "Nós assistimos TV depois do jantar."
+        ],
+        "explanation": "Para 'mirar' televisión en portugués se usa 'assistir', y con 'nós' la forma es 'assistimos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós miramos TV depois de jantar.",
+            "why": "En portugués no se usa 'mirar' con ese sentido; se usa 'assistir'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Lucas vende ropa en el local del centro.",
+        "answers": [
+          "Lucas vende roupas na loja do centro."
+        ],
+        "explanation": "Con sujeto 'Lucas' (él) se usa la tercera persona del singular del verbo 'vender': vende.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas vendo roupas na loja do centro.",
+            "why": "Esa es la forma de 'eu', no de 'Lucas'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Nosotros salimos temprano para el aeropuerto.",
+        "answers": [
+          "Nós partimos cedo para o aeroporto."
+        ],
+        "explanation": "Con sujeto 'nós' se usa la forma 'partimos' del verbo 'partir'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós parte cedo para o aeroporto.",
+            "why": "Esa es la forma de 'ele/ela', no de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués de Brasil.",
+        "spanish": "Yo abro la puerta del consultorio ahora.",
+        "answers": [
+          "Eu abro a porta do consultório agora."
+        ],
+        "explanation": "La primera persona del singular (eu) del verbo 'abrir' es 'abro'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu abre a porta do consultório agora.",
+            "why": "Esa es la forma de 'ele/ela', no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Eu bebo café todas as manhãs.",
+        "alternatives": [],
+        "translation": "Tomo café todas las mañanas.",
+        "explanation": "No confundas 'bebo' (yo tomo, termina en -o) con 'bebe' (él/ella toma, termina en -e)."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Ela escreve relatórios todos os dias.",
+        "alternatives": [],
+        "translation": "Ella escribe informes todos los días.",
+        "explanation": "No confundas 'escreve' (ella escribe, singular) con 'escrevem' (ellos escriben, plural); el -m final marca el plural."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Nós partimos cedo para o aeroporto.",
+        "alternatives": [
+          "Nós partimos cedo pro aeroporto."
+        ],
+        "translation": "Salimos temprano para el aeropuerto.",
+        "explanation": "No confundas 'partimos' (-imos, nós) con 'partem' (-em, eles); fijate en la terminación completa del verbo."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Você entende minha pergunta, doutora?",
+        "alternatives": [],
+        "translation": "¿Entendés mi pregunta, doctora?",
+        "explanation": "Você se conjuga como ele/ela, sin la 's' final que usarías con 'vos' en español rioplatense: 'entende', no 'entendes'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "comem",
+          "come"
+        ],
+        "target": 0,
+        "meanings": [
+          "comen",
+          "come"
+        ],
+        "explanation": "El -m final nasaliza la vocal y marca el plural de la tercera persona; sin esa nasalización se trata de la forma singular 'come'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "bebo",
+          "bebe"
+        ],
+        "target": 1,
+        "meanings": [
+          "tomo (yo)",
+          "toma (él/ella)"
+        ],
+        "explanation": "La vocal final cambia la persona: '-e' es él/ella y '-o' es yo; hay que escuchar bien cuál vocal se pronuncia al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "vem",
+          "vê"
+        ],
+        "target": 1,
+        "meanings": [
+          "viene",
+          "ve"
+        ],
+        "explanation": "'Vem' tiene una vocal nasal, se pronuncia por la nariz; 'vê' es una vocal oral abierta con acento, sin nasalizar."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre Ana y Lucas sobre el desayuno y respondé las preguntas.",
+        "situation": "Ana y Lucas son amigos y están desayunando juntos en la cocina, hablando de lo que comen y beben.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Lucas, o que você come no café da manhã?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Eu como pão com queijo."
+          },
+          {
+            "speaker": "Ana",
+            "text": "E o que você bebe?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Eu bebo café com leite."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Eu bebo suco de laranja."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Nós bebemos coisas diferentes!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué come Lucas en el desayuno?",
+            "options": [
+              "Pan con queso",
+              "Fruta",
+              "Pan con manteca",
+              "Huevo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Lucas dice 'Eu como pão com queijo'; 'como' es la primera persona singular del verbo comer (-er)."
+          },
+          {
+            "prompt": "¿Qué toma Lucas?",
+            "options": [
+              "Jugo de naranja",
+              "Café con leche",
+              "Agua",
+              "Té"
+            ],
+            "correctIndex": 1,
+            "explanation": "Lucas dice 'Eu bebo café com leite'; 'bebo' es la forma correcta de 'eu' para el verbo beber."
+          },
+          {
+            "prompt": "¿Qué toma Ana?",
+            "options": [
+              "Té",
+              "Agua",
+              "Café con leche",
+              "Jugo de naranja"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana dice 'Eu bebo suco de laranja', indicando que ella toma jugo de naranja, no café."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre Júlia y Marcos sobre su rutina de la noche y respondé las preguntas.",
+        "situation": "Júlia y Marcos son compañeros de departamento y hablan sobre lo que hacen cada noche antes de dormir.",
+        "lines": [
+          {
+            "speaker": "Marcos",
+            "text": "Júlia, o que você faz à noite?"
+          },
+          {
+            "speaker": "Júlia",
+            "text": "Eu assisto TV depois do jantar."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Eu escrevo e-mails de trabalho."
+          },
+          {
+            "speaker": "Júlia",
+            "text": "Você também abre a janela?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Sim, eu abro a janela antes de dormir."
+          },
+          {
+            "speaker": "Júlia",
+            "text": "Eu nunca abro a janela à noite, prefiro deixar fechada."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué hace Júlia a la noche después de cenar?",
+            "options": [
+              "Escribe e-mails",
+              "Duerme",
+              "Mira tele",
+              "Abre la ventana"
+            ],
+            "correctIndex": 2,
+            "explanation": "Júlia dice 'Eu assisto TV depois do jantar'; 'assisto' es la forma de 'eu' del verbo assistir, usado para mirar televisión."
+          },
+          {
+            "prompt": "¿Qué hace Marcos a la noche?",
+            "options": [
+              "Abre la ventana",
+              "Mira tele",
+              "Lee un libro",
+              "Escribe e-mails de trabajo"
+            ],
+            "correctIndex": 3,
+            "explanation": "Marcos dice 'Eu escrevo e-mails de trabalho'; 'escrevo' es la primera persona singular de escrever (-er)."
+          },
+          {
+            "prompt": "¿Quién abre la ventana antes de dormir?",
+            "options": [
+              "Los dos juntos",
+              "Nadie",
+              "Marcos",
+              "Júlia"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marcos dice 'Eu abro a janela antes de dormir', mientras que Júlia aclara que nunca la abre a la noche; 'abro' es la forma de 'eu' del verbo abrir (-ir)."
+          }
+        ]
+      }
+    ],
+    "irregulares": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'ter' para completar la oración.",
+        "prompt": "Eu ___ um voo para o Rio de Janeiro.",
+        "options": [
+          "temos",
+          "têm",
+          "tenho",
+          "tem"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el sujeto 'eu', el verbo 'ter' se conjuga como 'tenho'.",
+        "optionNotes": [
+          "Incorrecto: 'temos' corresponde a 'nós'.",
+          "Incorrecto: 'têm' corresponde a 'eles/elas'.",
+          "Correcto: 'eu tenho' es la forma para la primera persona del singular.",
+          "Incorrecto: 'tem' corresponde a 'você/ele/ela', no a 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'fazer' para completar la oración.",
+        "prompt": "Marcos ___ a mala para a viagem.",
+        "options": [
+          "fazem",
+          "faz",
+          "fazemos",
+          "faço"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con el sujeto 'Marcos' (él), el verbo 'fazer' se conjuga como 'faz'.",
+        "optionNotes": [
+          "Incorrecto: 'fazem' corresponde a 'eles/elas'.",
+          "Correcto: 'faz' es la forma para 'ele/ela/você'.",
+          "Incorrecto: 'fazemos' corresponde a 'nós'.",
+          "Incorrecto: 'faço' corresponde a 'eu', no a 'Marcos'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'ir' para completar la oración.",
+        "prompt": "Nós ___ ao aeroporto às seis da manhã.",
+        "options": [
+          "vai",
+          "vão",
+          "vamos",
+          "vou"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con el sujeto 'nós', el verbo 'ir' se conjuga como 'vamos'.",
+        "optionNotes": [
+          "Incorrecto: 'vai' corresponde a 'ele/ela/você'.",
+          "Incorrecto: 'vão' corresponde a 'eles/elas'.",
+          "Correcto: 'vamos' es la forma para 'nós'.",
+          "Incorrecto: 'vou' corresponde a 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'querer' para completar la oración.",
+        "prompt": "Você ___ um suco de laranja?",
+        "options": [
+          "queremos",
+          "quer",
+          "querem",
+          "quero"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con el sujeto 'você', el verbo 'querer' se conjuga como 'quer'.",
+        "optionNotes": [
+          "Incorrecto: 'queremos' corresponde a 'nós'.",
+          "Correcto: 'quer' es la forma para 'você/ele/ela'.",
+          "Incorrecto: 'querem' corresponde a 'eles/elas'.",
+          "Incorrecto: 'quero' corresponde a 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'poder' para completar la oración.",
+        "prompt": "Eles ___ chegar mais tarde ao hotel.",
+        "options": [
+          "posso",
+          "podem",
+          "podemos",
+          "pode"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con el sujeto 'eles', el verbo 'poder' se conjuga como 'podem'.",
+        "optionNotes": [
+          "Incorrecto: 'posso' corresponde a 'eu'.",
+          "Correcto: 'podem' es la forma para 'eles/elas'.",
+          "Incorrecto: 'podemos' corresponde a 'nós'.",
+          "Incorrecto: 'pode' corresponde a 'ele/ela/você'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo 'ter' para completar la oración.",
+        "prompt": "Os pais de Marcos ___ uma casa em Copacabana.",
+        "options": [
+          "temos",
+          "tem",
+          "têm",
+          "tenho"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Os pais de Marcos' es un sujeto plural (ellos), por eso se usa 'têm'.",
+        "optionNotes": [
+          "Incorrecto: 'temos' corresponde a 'nós'.",
+          "Incorrecto: 'tem' corresponde a un sujeto singular (ele/ela/você).",
+          "Correcto: 'têm' es la forma para un sujeto plural como 'os pais'.",
+          "Incorrecto: 'tenho' corresponde a 'eu'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo 'ter'.",
+        "sentence": "Eu ___ duas malas para a viagem.",
+        "hint": "(ter)",
+        "answers": [
+          "tenho"
+        ],
+        "explanation": "Con 'eu', el verbo 'ter' se conjuga como 'tenho'.",
+        "wrongAnswers": [
+          {
+            "answer": "tem",
+            "why": "Es la forma para 'ele/ela/você', no para 'eu'."
+          },
+          {
+            "answer": "teno",
+            "why": "Esa forma no existe en portugués; la correcta es 'tenho'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo 'fazer'.",
+        "sentence": "Marcos ___ o almoço para nós.",
+        "hint": "(fazer)",
+        "answers": [
+          "faz"
+        ],
+        "explanation": "Con el sujeto 'Marcos' (él), el verbo 'fazer' se conjuga como 'faz'.",
+        "wrongAnswers": [
+          {
+            "answer": "faço",
+            "why": "Es la forma para 'eu', no para 'Marcos'."
+          },
+          {
+            "answer": "fais",
+            "why": "Esa forma no existe en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo 'ir'.",
+        "sentence": "Nós ___ para a praia depois do almoço.",
+        "hint": "(ir)",
+        "answers": [
+          "vamos"
+        ],
+        "explanation": "Con el sujeto 'nós', el verbo 'ir' se conjuga como 'vamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "vão",
+            "why": "Es la forma para 'eles/elas', no para 'nós'."
+          },
+          {
+            "answer": "vamo",
+            "why": "Falta la 's' final; la forma correcta es 'vamos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo 'querer'.",
+        "sentence": "Você ___ ficar no hotel ou na casa de Marcos?",
+        "hint": "(querer)",
+        "answers": [
+          "quer"
+        ],
+        "explanation": "Con 'você', el verbo 'querer' se conjuga como 'quer'.",
+        "wrongAnswers": [
+          {
+            "answer": "queres",
+            "why": "Esa forma se usa con 'tu' en Portugal, pero con 'você' en Brasil se dice 'quer'."
+          },
+          {
+            "answer": "quero",
+            "why": "Es la forma para 'eu', no para 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo 'poder'.",
+        "sentence": "Eles ___ pagar o aluguel até o dia cinco.",
+        "hint": "(poder)",
+        "answers": [
+          "podem"
+        ],
+        "explanation": "Con el sujeto 'eles', el verbo 'poder' se conjuga como 'podem'.",
+        "wrongAnswers": [
+          {
+            "answer": "pode",
+            "why": "Es la forma para 'ele/ela/você', no para 'eles'."
+          },
+          {
+            "answer": "podam",
+            "why": "Esa forma no existe en portugués."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la oración con la forma correcta del verbo 'ter'.",
+        "sentence": "A irmã de Marcos ___ trabalho em uma clínica.",
+        "hint": "(ter)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "'A irmã de Marcos' es un sujeto singular (ela), por eso se usa 'tem'.",
+        "wrongAnswers": [
+          {
+            "answer": "tenho",
+            "why": "Es la forma para 'eu', no para 'a irmã'."
+          },
+          {
+            "answer": "têm",
+            "why": "Es la forma plural, pero el sujeto aquí es singular."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu tenho uma entrevista de trabalho hoje.",
+        "alternatives": [
+          "Hoje eu tenho uma entrevista de trabalho."
+        ],
+        "translation": "Tengo una entrevista de trabajo hoy.",
+        "explanation": "El orden en portugués sigue la estructura sujeto + verbo + complemento, igual que en español; el adverbio de tiempo 'hoje' también puede ir al principio de la oración.",
+        "tokens": [
+          "hoje",
+          "uma",
+          "tenho",
+          "de",
+          "trabalho",
+          "entrevista",
+          "Eu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós vamos alugar um apartamento em Copacabana.",
+        "alternatives": [
+          "Em Copacabana, nós vamos alugar um apartamento."
+        ],
+        "translation": "Vamos a alquilar un departamento en Copacabana.",
+        "explanation": "Con 'nós' el verbo 'ir' se conjuga como 'vamos', seguido del verbo principal en infinitivo ('alugar'); el complemento de lugar también puede ir al inicio de la oración.",
+        "tokens": [
+          "alugar",
+          "um",
+          "Copacabana",
+          "vamos",
+          "Nós",
+          "apartamento",
+          "em"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Marcos faz compras no mercado todos os dias.",
+        "alternatives": [
+          "Todos os dias, Marcos faz compras no mercado."
+        ],
+        "translation": "Marcos hace las compras en el mercado todos los días.",
+        "explanation": "Con el sujeto 'Marcos' (él), el verbo 'fazer' se conjuga como 'faz'; la expresión de frecuencia 'todos os dias' también puede ir al principio.",
+        "tokens": [
+          "mercado",
+          "no",
+          "Marcos",
+          "compras",
+          "os",
+          "dias",
+          "todos",
+          "faz"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eles querem visitar o médico antes da viagem.",
+        "alternatives": [
+          "Antes da viagem, eles querem visitar o médico."
+        ],
+        "translation": "Ellos quieren visitar al médico antes del viaje.",
+        "explanation": "Con el sujeto 'eles', el verbo 'querer' se conjuga como 'querem'; la frase 'antes da viagem' también puede ir al inicio de la oración.",
+        "tokens": [
+          "viagem",
+          "Eles",
+          "da",
+          "médico",
+          "visitar",
+          "o",
+          "antes",
+          "querem"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Você pode me ajudar com as malas agora?",
+        "alternatives": [
+          "Agora, você pode me ajudar com as malas?"
+        ],
+        "translation": "¿Podés ayudarme con las valijas ahora?",
+        "explanation": "Con 'você', el verbo 'poder' se conjuga como 'pode', seguido del infinitivo 'ajudar'; el adverbio 'agora' también puede ir al principio de la oración.",
+        "tokens": [
+          "com",
+          "agora",
+          "pode",
+          "me",
+          "ajudar",
+          "as",
+          "Você",
+          "malas"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la oración.",
+        "sentence": "Eu fazo o jantar para a família.",
+        "answers": [
+          "Eu faço o jantar para a família."
+        ],
+        "explanation": "El verbo 'fazer' es irregular en la primera persona: 'eu faço', no 'eu fazo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu fazo o jantar para a familiar.",
+            "why": "El error no está en 'família', sino en la conjugación del verbo 'fazer'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la oración.",
+        "sentence": "Eles vai pegar o ônibus às sete.",
+        "answers": [
+          "Eles vão pegar o ônibus às sete."
+        ],
+        "explanation": "Con el sujeto plural 'eles', el verbo 'ir' se conjuga como 'vão', no 'vai' (que es para él/ella).",
+        "wrongAnswers": [
+          {
+            "answer": "Eles vai pegar os ônibus às sete.",
+            "why": "El error no está en 'ônibus', sino en la conjugación de 'ir' para el sujeto plural."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la oración.",
+        "sentence": "Nós tem uma reunião importante hoje.",
+        "answers": [
+          "Nós temos uma reunião importante hoje."
+        ],
+        "explanation": "Con el sujeto 'nós', el verbo 'ter' se conjuga como 'temos', no 'tem' (que es para ele/ela/você).",
+        "wrongAnswers": [
+          {
+            "answer": "Nós tem uma reunião importantes hoje.",
+            "why": "El error no está en el adjetivo 'importante', sino en la conjugación del verbo 'ter'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la oración.",
+        "sentence": "Eu podo ajudar você com o aluguel.",
+        "answers": [
+          "Eu posso ajudar você com o aluguel."
+        ],
+        "explanation": "El verbo 'poder' es irregular en la primera persona: 'eu posso', no 'eu podo'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu podo ajudar você com a aluguel.",
+            "why": "El error no está en el artículo de 'aluguel', sino en la conjugación del verbo 'poder'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la oración.",
+        "sentence": "Você quer ir à festa, mas eu quer ficar em casa.",
+        "answers": [
+          "Você quer ir à festa, mas eu quero ficar em casa."
+        ],
+        "explanation": "Con el sujeto 'eu', el verbo 'querer' se conjuga como 'quero', no 'quer' (que es para você/ele/ela).",
+        "wrongAnswers": [
+          {
+            "answer": "Você quero ir à festa, mas eu quer ficar em casa.",
+            "why": "El error está en la segunda parte de la oración (con 'eu'), no en la primera (con 'você')."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Tenés tiempo para hablar ahora?",
+        "answers": [
+          "Você tem tempo para falar agora?",
+          "Você tem tempo pra falar agora?"
+        ],
+        "explanation": "Con 'você', el verbo 'ter' se conjuga como 'tem', aunque en español uses la forma de voseo 'tenés'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você tens tempo para falar agora?",
+            "why": "En portugués de Brasil, con 'você' se usa 'tem', no 'tens' (esa forma es de 'tu', más usada en Portugal)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Vamos a comer en ese restaurante nuevo.",
+        "answers": [
+          "Nós vamos comer naquele restaurante novo.",
+          "Vamos comer naquele restaurante novo."
+        ],
+        "explanation": "Con 'nós' (o sujeto implícito), el verbo 'ir' se conjuga como 'vamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós vai comer naquele restaurante novo.",
+            "why": "La forma 'vai' corresponde a 'ele/ela/você', pero el sujeto aquí es 'nós', que necesita 'vamos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Podés venir a la reunión mañana?",
+        "answers": [
+          "Você pode vir à reunião amanhã?"
+        ],
+        "explanation": "Con 'você', el verbo 'poder' se conjuga como 'pode', aunque en español uses la forma de voseo 'podés'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você podes vir à reunião amanhã?",
+            "why": "Con 'você' en portugués de Brasil se usa 'pode', no 'podes'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Hacemos la comida todos los domingos.",
+        "answers": [
+          "Nós fazemos a comida todos os domingos.",
+          "Fazemos a comida todos os domingos."
+        ],
+        "explanation": "Con 'nós', el verbo 'fazer' se conjuga como 'fazemos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós faz a comida todos os domingos.",
+            "why": "La forma 'faz' corresponde a 'ele/ela/você', pero el sujeto aquí es 'nós', que necesita 'fazemos'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ellos quieren alquilar un departamento en la playa.",
+        "answers": [
+          "Eles querem alugar um apartamento na praia."
+        ],
+        "explanation": "Con el sujeto plural 'eles', el verbo 'querer' se conjuga como 'querem'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles quer alugar um apartamento na praia.",
+            "why": "La forma 'quer' corresponde a un sujeto singular (ele/ela/você), pero 'eles' necesita 'querem'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Tengo una cita con el médico el lunes.",
+        "answers": [
+          "Eu tenho uma consulta com o médico na segunda-feira.",
+          "Tenho uma consulta com o médico na segunda-feira."
+        ],
+        "explanation": "Con 'eu', el verbo 'ter' se conjuga como 'tenho'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu tem uma consulta com o médico na segunda-feira.",
+            "why": "La forma 'tem' corresponde a 'ele/ela/você', pero el sujeto aquí es 'eu', que necesita 'tenho'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Marina tem duas filhas pequenas.",
+        "alternatives": [
+          "Marina tem 2 filhas pequenas."
+        ],
+        "translation": "Marina tiene dos hijas pequeñas.",
+        "explanation": "'Tem' se pronuncia con una nasal breve en singular; no lo confundas con 'têm' (plural), que suena más cerrado y alargado."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Rafael faz academia às seis horas.",
+        "alternatives": [
+          "Rafael faz academia às 6 horas."
+        ],
+        "translation": "Rafael va al gimnasio a las seis.",
+        "explanation": "'Faz' es la forma irregular de 'fazer' en singular; no la confundas con 'fazem', que es la forma plural."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Nós vamos ao mercado no sábado.",
+        "alternatives": [
+          "Nós vamos ao mercado no sábado."
+        ],
+        "translation": "Vamos al mercado el sábado.",
+        "explanation": "'Vamos' se parece al español, pero recordá que otras formas de 'ir' como 'vão' (ellos van) no se parecen en nada a su equivalente en español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Eles querem sair, mas não podem.",
+        "alternatives": [
+          "Eles querem sair mas não podem."
+        ],
+        "translation": "Ellos quieren salir, pero no pueden.",
+        "explanation": "'Querem' y 'podem' llevan una 'm' final nasal que marca el plural; no las confundas con las formas singulares 'quer' y 'pode'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "tem",
+          "têm"
+        ],
+        "target": 1,
+        "meanings": [
+          "tiene",
+          "tienen"
+        ],
+        "explanation": "El acento circunflejo en 'têm' marca un sonido nasal más cerrado y alargado que distingue el plural del singular 'tem'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "pôde",
+          "pode"
+        ],
+        "target": 1,
+        "meanings": [
+          "pudo",
+          "puede"
+        ],
+        "explanation": "El acento circunflejo en 'pôde' cierra la vocal 'o' y marca el pasado; sin acento, 'pode' tiene una 'o' más abierta y es presente."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "nós",
+          "nos"
+        ],
+        "target": 0,
+        "meanings": [
+          "nosotros",
+          "nos (objeto)"
+        ],
+        "explanation": "El acento agudo en 'nós' abre y alarga la vocal 'o'; sin acento, 'nos' tiene un sonido más corto y cerrado."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el día de Juliana y respondé las preguntas.",
+        "text": "Juliana mora em Porto Alegre. Ela tem um irmão e uma irmã. Hoje, Juliana faz compras no mercado. Ela quer comprar frutas e pão. Juliana não tem muito tempo, por isso ela vai rápido. Depois do mercado, ela vai para o trabalho. No trabalho, Juliana e os colegas fazem uma reunião às dez horas. Eles querem terminar o projeto esta semana. Juliana pode ajudar com o relatório. À tarde, ela tem uma pausa para o café. Seus colegas também têm vinte minutos de pausa. No fim do dia, Juliana vai para casa de ônibus. Ela quer descansar e fazer a janta rápido.",
+        "questions": [
+          {
+            "prompt": "¿Quién hace una reunión a las diez?",
+            "options": [
+              "O chefe",
+              "Só os colegas",
+              "Juliana e os colegas",
+              "Só Juliana"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Juliana e os colegas fazem uma reunião'; 'fazem' es la forma de fazer para 'eles' (plural)."
+          },
+          {
+            "prompt": "¿Cuántos minutos de pausa tienen los compañeros de Juliana?",
+            "options": [
+              "Uma hora",
+              "Dez minutos",
+              "Vinte minutos",
+              "Trinta minutos"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'Seus colegas também têm vinte minutos de pausa'; 'têm' es la forma plural de 'ter'."
+          },
+          {
+            "prompt": "¿Cómo va Juliana a su casa?",
+            "options": [
+              "De carro",
+              "De ônibus",
+              "A pé",
+              "De bicicleta"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'ela vai para casa de ônibus'; 'vai' es la forma de ir para 'ela' (singular)."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la entrevista de Marcos y respondé las preguntas.",
+        "text": "Marcos tem uma entrevista de emprego hoje. Ele quer o cargo de vendedor numa loja de roupas. Marcos faz muitas perguntas sobre o trabalho. O gerente diz: 'Você pode trabalhar nos fins de semana?' Marcos responde: 'Sim, eu posso trabalhar sábado e domingo.' O gerente também pergunta: 'Você tem experiência em vendas?' Marcos tem dois anos de experiência numa outra loja. Ele quer começar logo. O gerente e a equipe fazem a entrevista juntos. Eles querem um vendedor rápido e simpático. No final, o gerente diz: 'Nós vamos ligar para você amanhã.' Marcos vai para casa feliz e tem esperança de conseguir o emprego.",
+        "questions": [
+          {
+            "prompt": "¿Puede Marcos trabajar los fines de semana?",
+            "options": [
+              "Sólo el sábado",
+              "Sí, puede",
+              "No, no puede",
+              "Sólo el domingo"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos responde 'eu posso trabalhar sábado e domingo'; 'posso' es la forma irregular de poder para 'eu'."
+          },
+          {
+            "prompt": "¿Cuántos años de experiencia tiene Marcos?",
+            "options": [
+              "Um ano",
+              "Nenhum ano",
+              "Três anos",
+              "Dois anos"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'Marcos tem dois anos de experiência'; 'tem' es la forma de ter para 'ele' (singular)."
+          },
+          {
+            "prompt": "¿Qué va a hacer el gerente mañana?",
+            "options": [
+              "Va a pedir más experiencia",
+              "Va a cancelar la entrevista",
+              "Va a llamar a Marcos",
+              "Va a contratar a Marcos ahora"
+            ],
+            "correctIndex": 2,
+            "explanation": "El gerente dice 'Nós vamos ligar para você amanhã'; 'vamos' es la forma de ir para 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la llamada entre Camila y Beatriz y respondé sobre el viaje.",
+        "situation": "Dos amigas, Camila y Beatriz, hablan por teléfono sobre un viaje de fin de semana a Florianópolis.",
+        "lines": [
+          {
+            "speaker": "Camila",
+            "text": "Oi, Bia! Você quer viajar comigo no fim de semana?"
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Quero! Para onde você vai?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Eu vou para Florianópolis com a minha família."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Que legal! Vocês têm carro para a viagem?"
+          },
+          {
+            "speaker": "Camila",
+            "text": "Sim, nós temos um carro grande."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Eu posso ir também, se tiver espaço."
+          },
+          {
+            "speaker": "Camila",
+            "text": "Claro! Nós fazemos a viagem juntas então."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Perfeito! Eu faço as malas hoje à noite."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Adónde va a viajar Camila?",
+            "options": [
+              "Rio de Janeiro",
+              "São Paulo",
+              "Porto Alegre",
+              "Florianópolis"
+            ],
+            "correctIndex": 3,
+            "explanation": "Camila dice 'Eu vou para Florianópolis', usando 'vou', la forma de ir para 'eu'."
+          },
+          {
+            "prompt": "¿Puede Beatriz ir al viaje?",
+            "options": [
+              "No, no tiene tiempo",
+              "Sólo si maneja ella",
+              "Sí, si hay espacio",
+              "No, no puede"
+            ],
+            "correctIndex": 2,
+            "explanation": "Beatriz dice 'Eu posso ir também, se tiver espaço', usando 'posso', la forma de poder para 'eu'."
+          },
+          {
+            "prompt": "¿Quién tiene el auto para el viaje?",
+            "options": [
+              "Beatriz",
+              "El padre de Beatriz",
+              "La familia de Camila",
+              "Nadie, van en colectivo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Camila dice 'nós temos um carro grande', usando 'temos', la forma de ter para 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la consulta entre Rafael y la doctora y respondé sobre lo que dicen.",
+        "situation": "Un paciente, Rafael, está en el consultorio de la doctora Paula en Curitiba para una consulta de rutina.",
+        "lines": [
+          {
+            "speaker": "Doutora",
+            "text": "Bom dia, Rafael! Como você está?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Bom dia, doutora. Eu tenho uma dor de cabeça."
+          },
+          {
+            "speaker": "Doutora",
+            "text": "Você tem essa dor todos os dias?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Não, só às vezes. Eu faço exercícios, mas a dor não passa."
+          },
+          {
+            "speaker": "Doutora",
+            "text": "Você pode fazer um exame de sangue?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Posso, sim. Quando eu vou fazer o exame?"
+          },
+          {
+            "speaker": "Doutora",
+            "text": "Você pode ir ao laboratório amanhã de manhã."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Está bem, eu vou amanhã às oito horas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué síntoma tiene Rafael?",
+            "options": [
+              "Dolor de cabeza",
+              "Tos",
+              "Dolor de estómago",
+              "Fiebre"
+            ],
+            "correctIndex": 0,
+            "explanation": "Rafael dice 'Eu tenho uma dor de cabeça', usando 'tenho', la forma de ter para 'eu'."
+          },
+          {
+            "prompt": "¿Qué le pide la doctora a Rafael?",
+            "options": [
+              "Hacerse un análisis de sangre",
+              "Operarse",
+              "Hacer una radiografía",
+              "Tomar un remedio"
+            ],
+            "correctIndex": 0,
+            "explanation": "La doctora pregunta 'Você pode fazer um exame de sangue?', usando 'pode', la forma de poder para 'você'."
+          },
+          {
+            "prompt": "¿A qué hora va Rafael al laboratorio?",
+            "options": [
+              "A las diez de la mañana",
+              "Al mediodía",
+              "A las ocho de la mañana",
+              "A las ocho de la noche"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice 'eu vou amanhã às oito horas', usando 'vou', la forma de ir para 'eu'."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -29,7 +29,8 @@
         "Nominalizar es expresar como sustantivo lo que normalmente diría un verbo o un adjetivo: decide → decision, fail → failure, important → importance.",
         "Sufijos frecuentes: -tion / -sion (reduce → reduction), -ment (develop → development), -ance / -ence (perform → performance), -ity (possible → possibility), -al (refuse → refusal), -ness (aware → awareness).",
         "Hace el texto más compacto y abstracto, y pone el foco en los conceptos: Prices increased rapidly → There was a rapid increase in prices.",
-        "Algunos verbos y sustantivos tienen la misma forma: increase, change, decline, rise, report, use, demand."
+        "Algunos verbos y sustantivos tienen la misma forma: increase, change, decline, rise, report, use, demand.",
+        "En español también nominalizamos bastante (decidir → decisión, fallar → fallo), pero en inglés el estilo formal abusa todavía más de los sustantivos abstractos, al punto de evitar casi por completo los verbos de acción en textos académicos y burocráticos."
       ],
       "examples": [
         {
@@ -43,6 +44,26 @@
         {
           "target": "The failure of the project was due to poor planning.",
           "es": "El fracaso del proyecto se debió a una mala planificación."
+        },
+        {
+          "target": "The rapid growth of the city has created new challenges.",
+          "es": "El rápido crecimiento de la ciudad generó nuevos desafíos."
+        },
+        {
+          "target": "Her explanation of the results was clear and concise.",
+          "es": "Su explicación de los resultados fue clara y concisa."
+        },
+        {
+          "target": "The company's expansion into new markets boosted profits.",
+          "es": "La expansión de la empresa hacia nuevos mercados aumentó las ganancias."
+        },
+        {
+          "target": "There was a sharp decline in sales last quarter.",
+          "es": "Hubo una fuerte caída en las ventas el último trimestre."
+        },
+        {
+          "target": "The board's awareness of the risks led to a change in strategy.",
+          "es": "La conciencia de la junta sobre los riesgos llevó a un cambio de estrategia."
         }
       ],
       "commonMistakes": [
@@ -55,8 +76,14 @@
           "wrong": "The realization of the project took two years.",
           "right": "The completion of the project took two years.",
           "why": "Realization significa 'darse cuenta' o 'concreción de un sueño'; para 'realización' en el sentido de llevar a cabo se usa completion, implementation o carrying out."
+        },
+        {
+          "wrong": "The discover of the error happened too late.",
+          "right": "The discovery of the error happened too late.",
+          "why": "El sustantivo correspondiente a discover es discovery, una forma irregular que hay que memorizar; no se forma agregando un sufijo regular."
         }
-      ]
+      ],
+      "chunks": []
     },
     {
       "id": "transformar-frases",
@@ -71,7 +98,8 @@
         "El verbo pasa a sustantivo, el adverbio a adjetivo y el sujeto a posesivo o a una frase con of: The company expanded quickly → the company's rapid expansion / the rapid expansion of the company.",
         "El sustantivo necesita un verbo que lo sostenga: make a decision, carry out research, reach an agreement, take into account, give rise to.",
         "Las preposiciones cambian: increase in, demand for, reason for, effect on, impact on, solution to, access to, investigation into.",
-        "No abuses: demasiados sustantivos encadenados hacen que el texto sea pesado y difícil de leer."
+        "No abuses: demasiados sustantivos encadenados hacen que el texto sea pesado y difícil de leer.",
+        "En español alcanza con cambiar el verbo por un sustantivo sin tocar mucho más la oración (la empresa se expandió rápido → la rápida expansión de la empresa), pero en inglés además hay que ajustar las preposiciones que acompañan a cada sustantivo, que no siempre coinciden con las del español."
       ],
       "examples": [
         {
@@ -85,6 +113,26 @@
         {
           "target": "Social media has had a profound impact on the way we communicate.",
           "es": "Las redes sociales tuvieron un impacto profundo en la forma en que nos comunicamos."
+        },
+        {
+          "target": "The rise in unemployment has raised concerns among economists.",
+          "es": "El aumento del desempleo generó preocupación entre los economistas."
+        },
+        {
+          "target": "The government reached an agreement with the unions.",
+          "es": "El gobierno llegó a un acuerdo con los sindicatos."
+        },
+        {
+          "target": "The new regulation had a negative effect on small businesses.",
+          "es": "La nueva regulación tuvo un efecto negativo en las pequeñas empresas."
+        },
+        {
+          "target": "Access to clean water remains a problem in rural areas.",
+          "es": "El acceso al agua potable sigue siendo un problema en las zonas rurales."
+        },
+        {
+          "target": "The team took into account all the feedback before making changes.",
+          "es": "El equipo tuvo en cuenta todos los comentarios antes de hacer cambios."
         }
       ],
       "commonMistakes": [
@@ -97,6 +145,25 @@
           "wrong": "They made an investigation about the accident.",
           "right": "They carried out an investigation into the accident.",
           "why": "Con investigation se usa carry out o conduct, y la preposición es into."
+        },
+        {
+          "wrong": "The solution of the problem was simple.",
+          "right": "The solution to the problem was simple.",
+          "why": "Solution lleva la preposición to, no of, aunque en español digamos 'solución del problema' con 'de'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "demand for",
+          "es": "demanda de",
+          "example": "There has been a growing demand for renewable energy.",
+          "exampleEs": "Hubo una demanda creciente de energía renovable."
+        },
+        {
+          "target": "take into account",
+          "es": "tener en cuenta",
+          "example": "We must take into account the needs of all employees.",
+          "exampleEs": "Tenemos que tener en cuenta las necesidades de todos los empleados."
         }
       ]
     },
@@ -127,6 +194,26 @@
         {
           "target": "Applicants are required to submit two references.",
           "es": "Los postulantes tienen que presentar dos referencias."
+        },
+        {
+          "target": "The board will investigate the matter further.",
+          "es": "La junta va a investigar el asunto más a fondo."
+        },
+        {
+          "target": "Participants are required to arrive fifteen minutes early.",
+          "es": "Se les exige a los participantes llegar quince minutos antes."
+        },
+        {
+          "target": "The meeting has been postponed until next week.",
+          "es": "La reunión fue postergada hasta la semana que viene."
+        },
+        {
+          "target": "Please contact the office if you require further assistance.",
+          "es": "Por favor, contactá a la oficina si necesitás más asistencia."
+        },
+        {
+          "target": "The results were obtained through a rigorous methodology.",
+          "es": "Los resultados se obtuvieron mediante una metodología rigurosa."
         }
       ],
       "commonMistakes": [
@@ -139,6 +226,37 @@
           "wrong": "I am writing to solicit information about the course.",
           "right": "I am writing to request information about the course.",
           "why": "'Solicitar' se traduce request o apply for; solicit se usa para pedir dinero, votos o clientes, y acá suena raro."
+        },
+        {
+          "wrong": "I am writing to ask about the information.",
+          "right": "I am writing to request information.",
+          "why": "En un registro formal, 'ask' se reemplaza por 'request', un verbo más preciso y formal, típico de cartas e informes."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "due to",
+          "es": "debido a",
+          "example": "The flight was delayed due to bad weather.",
+          "exampleEs": "El vuelo se demoró debido al mal clima."
+        },
+        {
+          "target": "with regard to",
+          "es": "con respecto a",
+          "example": "With regard to your inquiry, we will respond within 48 hours.",
+          "exampleEs": "Con respecto a tu consulta, vamos a responder dentro de las 48 horas."
+        },
+        {
+          "target": "prior to",
+          "es": "antes de",
+          "example": "Please submit the form prior to the deadline.",
+          "exampleEs": "Por favor, entregá el formulario antes de la fecha límite."
+        },
+        {
+          "target": "in accordance with",
+          "es": "de acuerdo con / conforme a",
+          "example": "The payment will be made in accordance with the contract.",
+          "exampleEs": "El pago se va a realizar de acuerdo con el contrato."
         }
       ]
     },
@@ -156,7 +274,8 @@
         "There + be: There is little evidence that..., There appears to be growing concern about...",
         "Sujetos abstractos en lugar de personas: The results suggest..., This study examines..., The figures indicate...",
         "Frases participiales para condensar: Having analyzed the data, the team concluded... / Based on these findings, ... El sujeto de la oración principal tiene que ser quien hizo la acción.",
-        "En textos académicos, data suele ir en plural: The data show..."
+        "En textos académicos, data suele ir en plural: The data show...",
+        "En español logramos la impersonalidad con el 'se' (se considera que, se observa que) sin necesidad de sujeto explícito, pero en inglés siempre hace falta un sujeto gramatical, por eso usamos it, there o sustantivos abstractos para no hablar en primera persona."
       ],
       "examples": [
         {
@@ -170,6 +289,26 @@
         {
           "target": "Having reviewed the evidence, the panel recommended a change in policy.",
           "es": "Tras revisar la evidencia, el panel recomendó un cambio de política."
+        },
+        {
+          "target": "It is important to note that the results may vary.",
+          "es": "Es importante señalar que los resultados pueden variar."
+        },
+        {
+          "target": "There is growing evidence that the policy is effective.",
+          "es": "Hay evidencia creciente de que la política es efectiva."
+        },
+        {
+          "target": "This report examines the causes of the decline in sales.",
+          "es": "Este informe examina las causas de la caída en las ventas."
+        },
+        {
+          "target": "It could be argued that the measures were insufficient.",
+          "es": "Se podría argumentar que las medidas fueron insuficientes."
+        },
+        {
+          "target": "Based on the survey, most respondents support the change.",
+          "es": "Según la encuesta, la mayoría de los encuestados apoya el cambio."
         }
       ],
       "commonMistakes": [
@@ -182,6 +321,37 @@
           "wrong": "Having finished the report, the computer crashed.",
           "right": "Having finished the report, I sent it to my manager.",
           "why": "El sujeto de la oración principal tiene que ser el mismo que hizo la acción de la frase con -ing; si no, parece que la computadora terminó el informe. Otra opción: After I had finished the report, the computer crashed."
+        },
+        {
+          "wrong": "Is important to mention that sales dropped.",
+          "right": "It is important to mention that sales dropped.",
+          "why": "En inglés toda oración necesita un sujeto gramatical explícito; no se puede omitir el 'it' impersonal como a veces se omite el sujeto en español."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "it should be noted that",
+          "es": "cabe destacar que / hay que señalar que",
+          "example": "It should be noted that the sample size was small.",
+          "exampleEs": "Cabe destacar que el tamaño de la muestra era pequeño."
+        },
+        {
+          "target": "it is widely believed that",
+          "es": "se cree ampliamente que",
+          "example": "It is widely believed that stress affects memory.",
+          "exampleEs": "Se cree ampliamente que el estrés afecta la memoria."
+        },
+        {
+          "target": "based on these findings",
+          "es": "a partir de estos hallazgos / en base a estos hallazgos",
+          "example": "Based on these findings, the authors suggest further research.",
+          "exampleEs": "A partir de estos hallazgos, los autores sugieren más investigación."
+        },
+        {
+          "target": "the findings suggest that",
+          "es": "los hallazgos sugieren que",
+          "example": "The findings suggest that diet plays a major role in health.",
+          "exampleEs": "Los hallazgos sugieren que la dieta juega un papel importante en la salud."
         }
       ]
     },
@@ -198,7 +368,8 @@
         "Partí de las ideas, no de las palabras: identificá las acciones principales y convertilas en sustantivos.",
         "Usá sujetos abstractos y estructuras impersonales; evitá I think, really y a lot.",
         "Conectá con conectores formales: Furthermore, In addition, Consequently, Nevertheless.",
-        "Revisá que cada oración se entienda a la primera: un texto formal también tiene que ser claro."
+        "Revisá que cada oración se entienda a la primera: un texto formal también tiene que ser claro.",
+        "En español pasamos de lo informal a lo formal sobre todo cambiando el vocabulario y el tratamiento (vos por usted), pero en inglés el cambio de registro depende más de la estructura gramatical: nominalizar verbos, usar voz pasiva y evitar sujetos personales."
       ],
       "examples": [
         {
@@ -212,6 +383,26 @@
         {
           "target": "Furthermore, a reduction in absenteeism has been observed.",
           "es": "Además, se observó una disminución del ausentismo."
+        },
+        {
+          "target": "The company has implemented several measures to reduce costs.",
+          "es": "La empresa implementó varias medidas para reducir costos."
+        },
+        {
+          "target": "In addition, customer satisfaction has increased significantly.",
+          "es": "Además, la satisfacción del cliente aumentó significativamente."
+        },
+        {
+          "target": "Consequently, the department decided to hire more staff.",
+          "es": "En consecuencia, el departamento decidió contratar más personal."
+        },
+        {
+          "target": "Nevertheless, some issues remain unresolved.",
+          "es": "Sin embargo, algunos problemas siguen sin resolverse."
+        },
+        {
+          "target": "The data indicates a clear trend toward remote work.",
+          "es": "Los datos indican una clara tendencia hacia el trabajo remoto."
         }
       ],
       "commonMistakes": [
@@ -224,6 +415,37 @@
           "wrong": "Also, the employees are a lot happier.",
           "right": "In addition, staff satisfaction has increased considerably.",
           "why": "En un texto formal, also al principio y a lot happier suenan coloquiales: usá un conector formal y un sustantivo preciso."
+        },
+        {
+          "wrong": "Also, the sales went up a lot this year.",
+          "right": "Furthermore, sales increased significantly this year.",
+          "why": "En un informe formal evitamos conectores coloquiales como also y a lot, y los reemplazamos por furthermore y significantly."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "furthermore",
+          "es": "además / asimismo",
+          "example": "Furthermore, the new system has reduced errors by 20%.",
+          "exampleEs": "Asimismo, el nuevo sistema redujo los errores en un 20%."
+        },
+        {
+          "target": "it is worth noting that",
+          "es": "vale la pena señalar que",
+          "example": "It is worth noting that costs have remained stable.",
+          "exampleEs": "Vale la pena señalar que los costos se mantuvieron estables."
+        },
+        {
+          "target": "as a result",
+          "es": "como resultado / como consecuencia",
+          "example": "As a result, productivity has improved.",
+          "exampleEs": "Como resultado, mejoró la productividad."
+        },
+        {
+          "target": "overall",
+          "es": "en términos generales / en general",
+          "example": "Overall, the project has met its objectives.",
+          "exampleEs": "En términos generales, el proyecto cumplió sus objetivos."
         }
       ]
     }

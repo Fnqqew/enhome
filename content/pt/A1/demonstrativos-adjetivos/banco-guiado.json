@@ -1,0 +1,2199 @@
+{
+  "subtopics": {
+    "este-esse-aquele": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le muestra su propio celular a Mariana. Elegí el demostrativo correcto.",
+        "prompt": "___ celular aqui é meu.",
+        "options": [
+          "Aquele",
+          "Aquilo",
+          "Este",
+          "Esse"
+        ],
+        "correctIndex": 2,
+        "explanation": "Como el celular está cerca de quien habla (Juan), corresponde 'este'.",
+        "optionNotes": [
+          "Incorrecto: 'aquele' implica que está lejos de los dos.",
+          "Incorrecto: 'aquilo' es neutro y no acompaña un sustantivo nombrado.",
+          "Correcto: el celular está cerca de quien habla.",
+          "Incorrecto: 'esse' se usa para algo cerca de quien escucha."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Mariana tiene un libro en la mano y Juan le pregunta por él. Elegí el demostrativo correcto.",
+        "prompt": "___ livro na sua mão é interessante?",
+        "options": [
+          "Este",
+          "Aquele",
+          "Esse",
+          "Isso"
+        ],
+        "correctIndex": 2,
+        "explanation": "El libro está cerca de quien escucha (Mariana), por eso se usa 'esse'.",
+        "optionNotes": [
+          "Incorrecto: 'este' se usa para algo cerca de quien habla.",
+          "Incorrecto: 'aquele' implica que está lejos de los dos.",
+          "Correcto: el libro está cerca de quien escucha.",
+          "Incorrecto: 'isso' es neutro, pero aquí hay un sustantivo ('livro') que exige concordancia."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan señala un edificio muy lejos, donde trabaja. Elegí el demostrativo correcto.",
+        "prompt": "___ prédio, bem longe daqui, é o meu trabalho.",
+        "options": [
+          "Esse",
+          "Aquele",
+          "Este",
+          "Aquilo"
+        ],
+        "correctIndex": 1,
+        "explanation": "Como el edificio está lejos de quien habla y de quien escucha, corresponde 'aquele'.",
+        "optionNotes": [
+          "Incorrecto: 'esse' se usa para algo cerca de quien escucha, no lejos de los dos.",
+          "Correcto: el edificio está lejos de los dos.",
+          "Incorrecto: 'este' se usa para algo cerca de quien habla.",
+          "Incorrecto: 'aquilo' es neutro y no acompaña un sustantivo nombrado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le da un regalo a Mariana sin decir qué es. Elegí la forma correcta.",
+        "prompt": "___ aqui é um presente para você.",
+        "options": [
+          "Aquele",
+          "Este",
+          "Esse",
+          "Isto"
+        ],
+        "correctIndex": 3,
+        "explanation": "Como no se nombra el objeto, se usa la forma neutra 'isto', porque está cerca de quien habla.",
+        "optionNotes": [
+          "Incorrecto: 'aquele' necesita un sustantivo y además implica lejos de los dos.",
+          "Incorrecto: 'este' necesita acompañar un sustantivo con género.",
+          "Incorrecto: 'esse' necesita acompañar un sustantivo y además es para cerca del oyente.",
+          "Correcto: forma neutra para algo cerca de quien habla, sin nombrar el objeto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan y Mariana ven una casa muy lejos, al final de la calle. Elegí el demostrativo correcto.",
+        "prompt": "___ casa, lá no fim da rua, é muito bonita.",
+        "options": [
+          "Aquela",
+          "Esta",
+          "Aquele",
+          "Essa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como 'casa' es femenino y está lejos de los dos, corresponde 'aquela'.",
+        "optionNotes": [
+          "Correcto: concuerda en femenino con 'casa' y está lejos de los dos.",
+          "Incorrecto: 'esta' se usa para algo cerca de quien habla.",
+          "Incorrecto: 'aquele' es la forma masculina, pero 'casa' es femenino.",
+          "Incorrecto: 'essa' se usa para algo cerca de quien escucha, no lejos de los dos."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan ve que Mariana está comiendo algo pero no sabe qué es. Elegí la forma correcta.",
+        "prompt": "O que é ___ que você está comendo?",
+        "options": [
+          "isso",
+          "aquilo",
+          "esse",
+          "aquele"
+        ],
+        "correctIndex": 0,
+        "explanation": "Como no se nombra el objeto y está cerca de quien escucha, se usa la forma neutra 'isso'.",
+        "optionNotes": [
+          "Correcto: forma neutra para algo cerca de quien escucha, sin nombrar el objeto.",
+          "Incorrecto: 'aquilo' es neutro pero se usa para algo lejos de los dos, no cerca del oyente.",
+          "Incorrecto: 'esse' necesita acompañar un sustantivo con género.",
+          "Incorrecto: 'aquele' necesita un sustantivo y además implica lejos de los dos."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan mira su propio reloj y le comenta a Mariana. Completá con el demostrativo correcto.",
+        "sentence": "___ relógio é muito caro.",
+        "hint": "(perto de quem fala)",
+        "answers": [
+          "Este"
+        ],
+        "explanation": "Como 'relógio' es masculino y está cerca de quien habla, corresponde 'este'.",
+        "wrongAnswers": [
+          {
+            "answer": "Esta",
+            "why": "'Relógio' es masculino, por eso corresponde 'este', no 'esta'."
+          },
+          {
+            "answer": "Esse",
+            "why": "'Esse' se usa para algo cerca de quien escucha, no de quien habla."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Mariana mira los zapatos nuevos de Juan y le pregunta. Completá con el demostrativo correcto.",
+        "sentence": "___ sapatos são novos?",
+        "hint": "(perto de quem escuta)",
+        "answers": [
+          "Esses"
+        ],
+        "explanation": "Como los zapatos están cerca de quien escucha (Juan), corresponde 'esses'.",
+        "wrongAnswers": [
+          {
+            "answer": "Estes",
+            "why": "'Estes' se usa para algo cerca de quien habla, pero los zapatos están cerca del oyente."
+          },
+          {
+            "answer": "Aqueles",
+            "why": "'Aqueles' implica que algo está lejos de los dos, pero los zapatos están cerca del oyente."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Caminando, Juan y Mariana ven una montaña muy lejos en el horizonte. Completá con el demostrativo correcto.",
+        "sentence": "___ montanha, lá no horizonte, é muito alta.",
+        "hint": "(longe dos dois)",
+        "answers": [
+          "Aquela"
+        ],
+        "explanation": "Como 'montanha' es femenino y está lejos de los dos, corresponde 'aquela'.",
+        "wrongAnswers": [
+          {
+            "answer": "Esta",
+            "why": "'Esta' se usa para algo cerca de quien habla, no lejos de los dos."
+          },
+          {
+            "answer": "Essa",
+            "why": "'Essa' se usa para algo cerca de quien escucha, no lejos de los dos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan no entendió algo que dijo Mariana. Completá con la forma neutra correcta.",
+        "sentence": "Eu não entendi ___ que você disse.",
+        "hint": "(forma neutra, sem nome)",
+        "answers": [
+          "isso"
+        ],
+        "explanation": "Como no se nombra ningún sustantivo, se usa la forma neutra 'isso' para algo dicho por el oyente.",
+        "wrongAnswers": [
+          {
+            "answer": "esse",
+            "why": "'Esse' necesita acompañar un sustantivo con género, pero aquí no hay ninguno nombrado."
+          },
+          {
+            "answer": "aquele",
+            "why": "'Aquele' necesita acompañar un sustantivo y además implica lejos de los dos."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le presenta a un amigo que tiene al lado. Completá con el demostrativo correcto.",
+        "sentence": "___ amigo é muito gentil.",
+        "hint": "(perto de quem fala)",
+        "answers": [
+          "Este"
+        ],
+        "explanation": "Como 'amigo' es masculino y está cerca de quien habla, corresponde 'este'.",
+        "wrongAnswers": [
+          {
+            "answer": "Esta",
+            "why": "'Amigo' es masculino, por eso corresponde 'este', no 'esta'."
+          },
+          {
+            "answer": "Esse",
+            "why": "'Esse' se usa para algo cerca de quien escucha, no de quien habla."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "En la playa, Juan y Mariana ven algo lejos sin saber qué es. Completá con la forma neutra correcta.",
+        "sentence": "O que é ___ ali, no fim da praia?",
+        "hint": "(longe, sem nome)",
+        "answers": [
+          "aquilo"
+        ],
+        "explanation": "Como no se nombra el objeto y está lejos de los dos, se usa la forma neutra 'aquilo'.",
+        "wrongAnswers": [
+          {
+            "answer": "aquele",
+            "why": "'Aquele' necesita acompañar un sustantivo con género, pero aquí no hay ninguno nombrado."
+          },
+          {
+            "answer": "isso",
+            "why": "'Isso' es neutro pero se usa para algo cerca de quien escucha, no lejos de los dos."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le recomienda a Mariana un restaurante que está cerca de ellos. Ordená las palabras.",
+        "sentence": "Este restaurante perto de nós é muito bom.",
+        "alternatives": [],
+        "translation": "Este restaurante cerca de nosotros es muy bueno.",
+        "explanation": "'Este' se usa porque el restaurante está cerca de quien habla.",
+        "tokens": [
+          "é",
+          "Este",
+          "nós",
+          "restaurante",
+          "muito",
+          "perto",
+          "de",
+          "bom"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le hace un comentario a Mariana sobre la cartera que ella lleva. Ordená las palabras.",
+        "sentence": "Essa bolsa que você está carregando é linda.",
+        "alternatives": [],
+        "translation": "Esa cartera que estás llevando es hermosa.",
+        "explanation": "'Essa' se usa porque la cartera está cerca de quien escucha (Mariana).",
+        "tokens": [
+          "Essa",
+          "você",
+          "está",
+          "que",
+          "carregando",
+          "é",
+          "bolsa",
+          "linda"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le muestra a Mariana un edificio lejano. Ordená las palabras.",
+        "sentence": "Aquele prédio no fim da rua é um hospital.",
+        "alternatives": [],
+        "translation": "Aquel edificio al final de la calle es un hospital.",
+        "explanation": "'Aquele' se usa porque el edificio está lejos de los dos.",
+        "tokens": [
+          "da",
+          "fim",
+          "hospital",
+          "um",
+          "prédio",
+          "Aquele",
+          "rua",
+          "no",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le entrega un regalo a Mariana para su madre. Ordená las palabras.",
+        "sentence": "Isto aqui é um presente para a sua mãe.",
+        "alternatives": [],
+        "translation": "Esto de aquí es un regalo para tu madre.",
+        "explanation": "'Isto' se usa porque no se nombra el objeto y está cerca de quien habla.",
+        "tokens": [
+          "é",
+          "mãe",
+          "um",
+          "sua",
+          "para",
+          "aqui",
+          "a",
+          "presente",
+          "Isto"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Mariana le señala a Juan la casa de su tía, que está lejos. Ordená las palabras.",
+        "sentence": "Aquela casa amarela ali é da minha tia.",
+        "alternatives": [],
+        "translation": "Aquella casa amarilla de allá es de mi tía.",
+        "explanation": "'Aquela' se usa porque 'casa' es femenino y está lejos de los dos.",
+        "tokens": [
+          "tia",
+          "ali",
+          "casa",
+          "Aquela",
+          "é",
+          "da",
+          "amarela",
+          "minha"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Mariana habla de una casa que está lejos. Corregií el error.",
+        "sentence": "Aquele casa é muito grande.",
+        "answers": [
+          "Aquela casa é muito grande."
+        ],
+        "explanation": "El demostrativo tiene que concordar en género con el sustantivo; como 'casa' es femenino, corresponde 'aquela', no 'aquele'.",
+        "wrongAnswers": [
+          {
+            "answer": "Aquele casas é muito grande.",
+            "why": "El error no es de número sino de género; 'casa' es femenino, hay que usar 'aquela', no cambiar a plural."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan comenta sobre un libro. Corregií el error.",
+        "sentence": "Isso livro é muito interessante.",
+        "answers": [
+          "Esse livro é muito interessante."
+        ],
+        "explanation": "'Isso' es una forma neutra que no acompaña sustantivos; como hay un sustantivo masculino ('livro'), corresponde 'esse'.",
+        "wrongAnswers": [
+          {
+            "answer": "Essa livro é muito interessante.",
+            "why": "'Livro' es masculino, por eso corresponde 'esse', no 'essa'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Mariana habla de una computadora que está lejos de los dos. Corregií el error.",
+        "sentence": "Esse computador, bem longe de nós dois, é muito caro.",
+        "answers": [
+          "Aquele computador, bem longe de nós dois, é muito caro."
+        ],
+        "explanation": "Cuando algo está lejos de quien habla y de quien escucha, corresponde usar 'aquele', no 'esse'.",
+        "wrongAnswers": [
+          {
+            "answer": "Esse computador, bem longe de nós dois, é muito cara.",
+            "why": "El error de la oración es el demostrativo, no la concordancia del adjetivo 'caro', que ya está correcto en masculino."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le pregunta a Mariana por una lapicera que tiene cerca. Corregií el error.",
+        "sentence": "Este caneta aqui, perto de mim, é sua?",
+        "answers": [
+          "Esta caneta aqui, perto de mim, é sua?"
+        ],
+        "explanation": "El demostrativo tiene que concordar en género con el sustantivo; como 'caneta' es femenino, corresponde 'esta', no 'este'.",
+        "wrongAnswers": [
+          {
+            "answer": "Estes canetas aqui, perto de mim, são suas?",
+            "why": "El error es de género del demostrativo, no de número; hay que cambiar 'este' a 'esta', no pluralizar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Mariana comenta sobre una mesa cerca de la ventana. Corregií el error.",
+        "sentence": "Este mesa perto da janela é nova.",
+        "answers": [
+          "Esta mesa perto da janela é nova."
+        ],
+        "explanation": "El demostrativo tiene que concordar en género con el sustantivo; como 'mesa' es femenino, corresponde 'esta', no 'este'.",
+        "wrongAnswers": [
+          {
+            "answer": "Estes mesa perto da janela é nova.",
+            "why": "El error es de género, no de número; 'mesa' es femenino, por lo tanto corresponde 'esta', no cambiar a plural 'estes'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le muestra a Mariana un libro que tiene al lado. Traducí al portugués.",
+        "spanish": "Este libro es mío.",
+        "answers": [
+          "Este livro é meu."
+        ],
+        "explanation": "Se usa 'este' porque el libro está cerca de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "Esse livro é meu.",
+            "why": "Si el libro está cerca de quien habla, corresponde 'este', no 'esse'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le pregunta a Mariana por la lapicera que ella tiene en la mano. Traducí al portugués.",
+        "spanish": "¿Esa lapicera que tenés en la mano es tuya?",
+        "answers": [
+          "Essa caneta que você tem na mão é sua?",
+          "Essa caneta que está na sua mão é sua?"
+        ],
+        "explanation": "Se usa 'essa' porque la lapicera está cerca de quien escucha.",
+        "wrongAnswers": [
+          {
+            "answer": "Esta caneta que você tem na mão é sua?",
+            "why": "La lapicera está cerca del oyente, no de quien habla, por eso corresponde 'essa', no 'esta'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan y Mariana ven un auto muy lejos en la calle. Traducí al portugués.",
+        "spanish": "Aquel auto, allá lejos, es muy caro.",
+        "answers": [
+          "Aquele carro, lá longe, é muito caro.",
+          "Aquele carro, bem lá longe, é muito caro."
+        ],
+        "explanation": "Se usa 'aquele' porque el auto está lejos de los dos.",
+        "wrongAnswers": [
+          {
+            "answer": "Esse carro, lá longe, é muito caro.",
+            "why": "Si el auto está lejos de los dos, corresponde 'aquele', no 'esse'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le comenta a Mariana sobre San Pablo, donde están parados. Traducí al portugués.",
+        "spanish": "Esta ciudad es muy linda.",
+        "answers": [
+          "Esta cidade é muito bonita.",
+          "Esta cidade é muito linda."
+        ],
+        "explanation": "Se usa 'esta' porque 'cidade' es femenino y está cerca de quien habla.",
+        "wrongAnswers": [
+          {
+            "answer": "Este cidade é muito bonita.",
+            "why": "'Cidade' es femenino, por eso corresponde 'esta', no 'este'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Mariana sostiene algo en la mano y Juan le pregunta qué es. Traducí al portugués.",
+        "spanish": "¿Qué es eso que tenés en la mano?",
+        "answers": [
+          "O que é isso na sua mão?",
+          "O que é isso que você tem na mão?"
+        ],
+        "explanation": "Se usa la forma neutra 'isso' porque no se nombra el objeto y está cerca de quien escucha.",
+        "wrongAnswers": [
+          {
+            "answer": "O que é esse na sua mão?",
+            "why": "Cuando no se nombra el sustantivo se usa la forma neutra 'isso', no 'esse'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Mariana comenta sobre los zapatos nuevos de Juan. Traducí al portugués.",
+        "spanish": "Esos zapatos son nuevos.",
+        "answers": [
+          "Esses sapatos são novos."
+        ],
+        "explanation": "Se usa 'esses' porque los zapatos están cerca de quien escucha.",
+        "wrongAnswers": [
+          {
+            "answer": "Estes sapatos são novos.",
+            "why": "Si los zapatos están cerca de quien escucha, corresponde 'esses', no 'estes', que es para cerca de quien habla."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Este apartamento tem dois quartos.",
+        "alternatives": [
+          "Este apartamento tem 2 quartos."
+        ],
+        "translation": "Este departamento tiene dos habitaciones.",
+        "explanation": "No confundas 'este' (cerca de quien habla) con 'esse' (cerca de quien escucha); en el habla rápida pueden sonar parecidos, por eso hay que fijarse en el contexto."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Essa camisa é bonita, Pedro?",
+        "alternatives": [],
+        "translation": "¿Esa camisa es linda, Pedro?",
+        "explanation": "Essa se usa para algo cerca de la persona que escucha, como la camisa que tiene Pedro; no lo confundas con 'esta', que usarías si la tuvieras vos."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Aquela montanha é muito alta.",
+        "alternatives": [],
+        "translation": "Aquella montaña es muy alta.",
+        "explanation": "Aquela concuerda en género femenino con 'montanha'; no uses 'aquele', que es la forma masculina."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Isso aqui dói muito, doutor.",
+        "alternatives": [],
+        "translation": "Esto de aquí duele mucho, doctor.",
+        "explanation": "Isso es la forma neutra que se usa sin nombrar el sustantivo, por ejemplo al señalar una parte del cuerpo sin decir cuál es."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "pão",
+          "pau"
+        ],
+        "target": 0,
+        "meanings": [
+          "pan",
+          "palo"
+        ],
+        "explanation": "La 'ão' es una vocal nasal, se pronuncia dejando salir el aire por la nariz; 'au' es un diptongo oral, sin nasalizar, como en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 1,
+        "meanings": [
+          "costoso",
+          "auto"
+        ],
+        "explanation": "El 'r' simple entre vocales suena suave, como la 'r' de 'pero' en español; el 'rr' doble suena fuerte y gutural, casi como una jota."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 0,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "La 's' entre vocales en portugués suena como 'z'; la 'ç' suena como una 's' fuerte. En español no se distingue esa diferencia."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la conversación en la tienda de ropa y respondé las preguntas con los datos que dicen.",
+        "situation": "En una tienda de ropa de Florianópolis, la vendedora Lucia ayuda a Marcos a elegir una camisa.",
+        "lines": [
+          {
+            "speaker": "Lucia",
+            "text": "Marcos, esta camisa aqui é linda."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Gosto mais dessa camisa na sua mão."
+          },
+          {
+            "speaker": "Lucia",
+            "text": "Essa é bonita, mas é cara."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "E aquela camisa, lá no fundo?"
+          },
+          {
+            "speaker": "Lucia",
+            "text": "Aquela é mais barata, vou buscar."
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Perfeito, prefiro aquela mesmo."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué camisa prefiere Marcos al final?",
+            "options": [
+              "La que Lucia tiene cerca de ella (esta)",
+              "La que Lucia tiene en la mano (essa)",
+              "La que está lejos, al fondo (aquela)",
+              "Ninguna de las tres"
+            ],
+            "correctIndex": 2,
+            "explanation": "Marcos dice 'prefiro aquela mesmo', refiriéndose a la camisa del fondo; 'aquela' se usa para algo lejos tanto del que habla como del que escucha."
+          },
+          {
+            "prompt": "¿Dónde está la camisa que Marcos elige?",
+            "options": [
+              "Cerca de Lucia",
+              "Lejos de los dos, al fondo",
+              "En la mano de Lucia",
+              "Cerca de Marcos"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos pregunta por 'aquela camisa, lá no fundo' y Lucia confirma que irá a buscarla; 'aquela' indica que la camisa está lejos tanto de ella como de Marcos."
+          },
+          {
+            "prompt": "¿Qué dice Lucia sobre la camisa que tiene en la mano (essa)?",
+            "options": [
+              "Que no le gusta",
+              "Que es barata",
+              "Que es cara",
+              "Que es fea"
+            ],
+            "correctIndex": 2,
+            "explanation": "Lucia responde 'Essa é bonita, mas é cara'; usa 'essa' porque la camisa está cerca de ella, que es quien la sostiene en la mano."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla en la inmobiliaria y respondé las preguntas con los datos que dicen.",
+        "situation": "El agente inmobiliario Sr. Nogueira le muestra opciones de departamentos a Patricia en una inmobiliaria de Porto Alegre.",
+        "lines": [
+          {
+            "speaker": "Nogueira",
+            "text": "Este apartamento aqui é pequeno."
+          },
+          {
+            "speaker": "Patricia",
+            "text": "E esse apartamento na foto grande?"
+          },
+          {
+            "speaker": "Nogueira",
+            "text": "Esse tem dois quartos e é bom."
+          },
+          {
+            "speaker": "Patricia",
+            "text": "Aquele prédio ali na esquina, é caro?"
+          },
+          {
+            "speaker": "Nogueira",
+            "text": "Aquele é o mais caro da rua."
+          },
+          {
+            "speaker": "Patricia",
+            "text": "Então quero ver esse com dois quartos."
+          },
+          {
+            "speaker": "Nogueira",
+            "text": "Perfeito, vou marcar uma visita."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuántos cuartos tiene el departamento que elige Patricia?",
+            "options": [
+              "Uno",
+              "Cuatro",
+              "Dos",
+              "Tres"
+            ],
+            "correctIndex": 2,
+            "explanation": "Nogueira dice 'Esse tem dois quartos e é bom', y Patricia confirma 'quero ver esse com dois quartos'."
+          },
+          {
+            "prompt": "¿Cuál es el departamento más caro según Nogueira?",
+            "options": [
+              "Este, el que tiene cerca (pequeño)",
+              "Ninguno, todos cuestan igual",
+              "Aquele, el edificio de la esquina",
+              "Esse, el de la foto (con dos cuartos)"
+            ],
+            "correctIndex": 2,
+            "explanation": "Nogueira dice 'Aquele é o mais caro da rua'; usa 'aquele' porque el edificio de la esquina está lejos de los dos."
+          },
+          {
+            "prompt": "¿Qué dice Nogueira sobre el apartamento que tiene cerca de él (este)?",
+            "options": [
+              "Que es grande",
+              "Que tiene dos cuartos",
+              "Que es caro",
+              "Que es pequeño"
+            ],
+            "correctIndex": 3,
+            "explanation": "Nogueira dice 'Este apartamento aqui é pequeno'; usa 'este' porque el departamento está cerca de él, quien habla."
+          }
+        ]
+      }
+    ],
+    "adjetivos-fisicos": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le describe a un amigo cómo es Mariana. Elegí el verbo correcto.",
+        "prompt": "Mariana ___ alta e magra.",
+        "options": [
+          "são",
+          "é",
+          "está",
+          "tem"
+        ],
+        "correctIndex": 1,
+        "explanation": "La altura y la contextura física son características permanentes, por eso se usa 'ser' ('é'), no 'estar' ni 'ter'.",
+        "optionNotes": [
+          "Incorrecto: 'são' es la forma plural, pero Mariana es un sujeto singular.",
+          "Correcto: 'ser' se usa para características físicas permanentes.",
+          "Incorrecto: 'estar' se usa para estados temporales, pero la altura es permanente.",
+          "Incorrecto: 'ter' se usa para el pelo y los ojos, no para describir con adjetivos como 'alta'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le describe a Fernando, un compañero de trabajo, a un colega nuevo. Elegí el verbo correcto.",
+        "prompt": "Ele ___ cabelo castanho.",
+        "options": [
+          "são",
+          "está",
+          "tem",
+          "é"
+        ],
+        "correctIndex": 2,
+        "explanation": "Para describir el pelo cuando el sujeto es la persona, se usa el verbo 'ter', no 'ser' ni 'estar'.",
+        "optionNotes": [
+          "Incorrecto: 'eles' está en singular ('ele'), por eso 'são' no concuerda.",
+          "Incorrecto: 'estar' tampoco se usa para describir el pelo de esta manera.",
+          "Correcto: 'ter' se usa para el pelo cuando el sujeto es la persona.",
+          "Incorrecto: 'ser' no se usa para describir el pelo con el sustantivo 'cabelo'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le cuenta a un amigo de qué color son los ojos de Mariana. Elegí el verbo correcto.",
+        "prompt": "Os olhos dela ___ verdes.",
+        "options": [
+          "tem",
+          "é",
+          "estão",
+          "são"
+        ],
+        "correctIndex": 3,
+        "explanation": "Como el sujeto ya es 'os olhos' (plural), se usa 'ser' en plural ('são'), no 'ter' ni 'estar'.",
+        "optionNotes": [
+          "Incorrecto: 'ter' se usa cuando el sujeto es la persona, no cuando el sujeto ya es 'os olhos'.",
+          "Incorrecto: 'é' es singular, pero 'os olhos' es plural.",
+          "Incorrecto: el color de los ojos es una característica permanente, por eso se usa 'ser' y no 'estar'.",
+          "Correcto: cuando el sujeto ya es 'os olhos', se usa 'ser' en plural."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan describe a Beatriz, una compañera de trabajo, a un amigo. Elegí el verbo correcto.",
+        "prompt": "Ela ___ cabelo longo e liso.",
+        "options": [
+          "está",
+          "são",
+          "é",
+          "tem"
+        ],
+        "correctIndex": 3,
+        "explanation": "Para describir el pelo cuando el sujeto es la persona, se usa el verbo 'ter', no 'ser' ni 'estar'.",
+        "optionNotes": [
+          "Incorrecto: 'estar' tampoco se usa para describir el pelo de esta manera.",
+          "Incorrecto: 'ela' está en singular, por eso 'são' no concuerda.",
+          "Incorrecto: 'ser' no se usa para describir el pelo con el sustantivo 'cabelo'.",
+          "Correcto: 'ter' se usa para el pelo cuando el sujeto es la persona."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan describe el pelo de Mariana. Elegí la oración correcta.",
+        "prompt": "Elegí la oración correcta para describir el pelo de Mariana.",
+        "options": [
+          "Ela é loiro cabelo.",
+          "Ela tem loiro cabelo.",
+          "Ela tem cabelos loiro.",
+          "Ela tem cabelo loiro."
+        ],
+        "correctIndex": 3,
+        "explanation": "El adjetivo va después del sustantivo ('cabelo loiro') y se usa el verbo 'ter' para describir el pelo.",
+        "optionNotes": [
+          "Incorrecto: para describir el pelo se usa 'ter', no 'ser'.",
+          "Incorrecto: el adjetivo tiene que ir después del sustantivo, no antes.",
+          "Incorrecto: si se usa 'cabelos' en plural, el adjetivo también tiene que concordar en plural ('loiros').",
+          "Correcto: 'ter' + sustantivo + adjetivo después."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan describe a Fernando, un candidato, antes de una entrevista de trabajo. Elegí el verbo correcto.",
+        "prompt": "Fernando ___ alto e magro.",
+        "options": [
+          "está",
+          "são",
+          "é",
+          "tem"
+        ],
+        "correctIndex": 2,
+        "explanation": "La altura y la contextura física son características permanentes, por eso se usa 'ser' ('é'), no 'estar' ni 'ter'.",
+        "optionNotes": [
+          "Incorrecto: 'estar' se usa para estados temporales, pero la altura es permanente.",
+          "Incorrecto: 'são' es la forma plural, pero Fernando es un sujeto singular.",
+          "Correcto: 'ser' se usa para características físicas permanentes.",
+          "Incorrecto: 'ter' se usa para el pelo y los ojos, no para describir con adjetivos como 'alto'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan describe a su abuela Rosa. Completá con el verbo correcto.",
+        "sentence": "Minha avó Rosa ___ uma mulher muito bonita.",
+        "hint": "(ser, característica permanente)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "La belleza, como característica general de una persona, se describe con el verbo 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "Ser una mujer bonita es una característica permanente, por eso se usa 'ser', no 'estar'."
+          },
+          {
+            "answer": "tem",
+            "why": "'Ter' se usa para el pelo y los ojos, no para describir con un adjetivo como 'bonita'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan describe el pelo de Fernando, su compañero de trabajo. Completá con el verbo correcto.",
+        "sentence": "Fernando ___ cabelo preto e curto.",
+        "hint": "(ter, para cabelo)",
+        "answers": [
+          "tem"
+        ],
+        "explanation": "Para describir el pelo cuando el sujeto es la persona, se usa el verbo 'ter'.",
+        "wrongAnswers": [
+          {
+            "answer": "é",
+            "why": "Cuando el sujeto es la persona, el pelo se describe con 'ter', no con 'ser'."
+          },
+          {
+            "answer": "está",
+            "why": "'Estar' no se usa para describir el color o el largo del pelo de esta manera."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le cuenta a un amigo de qué color son los ojos de Mariana. Completá con el verbo correcto.",
+        "sentence": "Os olhos de Mariana ___ castanhos.",
+        "hint": "(ser, el sujeto ya es 'olhos')",
+        "answers": [
+          "são"
+        ],
+        "explanation": "Como el sujeto ya es 'os olhos' (plural), se usa 'ser' en plural ('são'), no 'ter'.",
+        "wrongAnswers": [
+          {
+            "answer": "tem",
+            "why": "El sujeto ya es 'os olhos', no la persona, por eso no se usa 'ter' en esta oración."
+          },
+          {
+            "answer": "é",
+            "why": "'Os olhos' es plural, por eso corresponde 'são', no 'é'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan describe a Beatriz, su compañera de trabajo. Completá con el adjetivo en la forma correcta.",
+        "sentence": "Beatriz é muito ___.",
+        "hint": "(alto, concordando con 'Beatriz')",
+        "answers": [
+          "alta"
+        ],
+        "explanation": "El adjetivo tiene que concordar en género con el sujeto; como Beatriz es mujer, corresponde 'alta'.",
+        "wrongAnswers": [
+          {
+            "answer": "alto",
+            "why": "'Alto' es la forma masculina, pero Beatriz es mujer, por eso corresponde 'alta'."
+          },
+          {
+            "answer": "altos",
+            "why": "Beatriz es un sujeto singular, por eso no corresponde la forma plural 'altos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan describe el pelo de Mariana. Completá con el adjetivo en la forma correcta.",
+        "sentence": "Ela tem cabelo ___ e liso.",
+        "hint": "(loiro, forma base)",
+        "answers": [
+          "loiro"
+        ],
+        "explanation": "El adjetivo tiene que concordar con 'cabelo', que es masculino, por eso corresponde 'loiro'.",
+        "wrongAnswers": [
+          {
+            "answer": "loira",
+            "why": "'Loiro' tiene que concordar con 'cabelo', que es masculino, no con 'ela'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan comenta que el señor Ribeiro, su casero, ya es grande de edad. Completá con el verbo correcto.",
+        "sentence": "O senhor Ribeiro já ___ velho.",
+        "hint": "(ser, característica permanente)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "La edad avanzada es una característica permanente, por eso se usa el verbo 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "Ser una persona grande de edad es una característica permanente, por eso se usa 'ser', no 'estar'."
+          },
+          {
+            "answer": "tem",
+            "why": "'Ter' se usa para el pelo y los ojos, no para describir con un adjetivo como 'velho'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan describe a Mariana a un amigo que no la conoce. Ordená las palabras.",
+        "sentence": "Mariana é alta e magra.",
+        "alternatives": [
+          "Mariana é magra e alta."
+        ],
+        "translation": "Mariana es alta y flaca.",
+        "explanation": "Se usa 'ser' porque la altura y la contextura física son características permanentes.",
+        "tokens": [
+          "e",
+          "magra",
+          "é",
+          "Mariana",
+          "alta"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan describe a Fernando, su compañero de trabajo. Ordená las palabras.",
+        "sentence": "Fernando tem cabelo castanho e curto.",
+        "alternatives": [
+          "Fernando tem cabelo curto e castanho."
+        ],
+        "translation": "Fernando tiene pelo castaño y corto.",
+        "explanation": "Se usa 'ter' porque el sujeto es la persona y describe su pelo.",
+        "tokens": [
+          "tem",
+          "e",
+          "castanho",
+          "cabelo",
+          "Fernando",
+          "curto"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le cuenta a un amigo cómo son los ojos de Beatriz. Ordená las palabras.",
+        "sentence": "Os olhos de Beatriz são verdes e grandes.",
+        "alternatives": [
+          "Os olhos de Beatriz são grandes e verdes."
+        ],
+        "translation": "Los ojos de Beatriz son verdes y grandes.",
+        "explanation": "Se usa 'ser' en plural porque el sujeto ya es 'os olhos'.",
+        "tokens": [
+          "Os",
+          "grandes",
+          "e",
+          "Beatriz",
+          "olhos",
+          "de",
+          "verdes",
+          "são"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan describe a su abuela Rosa. Ordená las palabras.",
+        "sentence": "Minha avó Rosa é uma mulher muito bonita.",
+        "alternatives": [],
+        "translation": "Mi abuela Rosa es una mujer muy linda.",
+        "explanation": "Se usa 'ser' porque la belleza es una característica general de la persona.",
+        "tokens": [
+          "muito",
+          "uma",
+          "mulher",
+          "Rosa",
+          "é",
+          "Minha",
+          "bonita",
+          "avó"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan describe al señor Ribeiro, su casero. Ordená las palabras.",
+        "sentence": "O senhor Ribeiro é baixo e um pouco gordinho.",
+        "alternatives": [
+          "O senhor Ribeiro é um pouco gordinho e baixo."
+        ],
+        "translation": "El señor Ribeiro es bajo y un poco gordito.",
+        "explanation": "Se usa 'ser' porque la altura y la contextura física son características permanentes.",
+        "tokens": [
+          "e",
+          "baixo",
+          "Ribeiro",
+          "pouco",
+          "senhor",
+          "gordinho",
+          "O",
+          "é",
+          "um"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan describe el pelo de Fernando. Corregií el error.",
+        "sentence": "Fernando é com cabelo preto.",
+        "answers": [
+          "Fernando tem cabelo preto."
+        ],
+        "explanation": "Para describir el pelo se usa el verbo 'ter', no la construcción 'ser com'.",
+        "wrongAnswers": [
+          {
+            "answer": "Fernando está com cabelo preto.",
+            "why": "Cambiar 'ser' por 'estar' no soluciona el error; para el pelo se usa el verbo 'ter', no 'estar com'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan describe el pelo de Mariana. Corregií el error.",
+        "sentence": "Mariana é cabelo loiro.",
+        "answers": [
+          "Mariana tem cabelo loiro."
+        ],
+        "explanation": "Para describir el pelo se usa el verbo 'ter', no 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana está cabelo loiro.",
+            "why": "Cambiar 'ser' por 'estar' no soluciona el error; para el pelo se usa el verbo 'ter', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan describe la altura del señor Ribeiro. Corregií el error.",
+        "sentence": "O senhor Ribeiro está alto.",
+        "answers": [
+          "O senhor Ribeiro é alto."
+        ],
+        "explanation": "La altura es una característica permanente, por eso se usa 'ser', no 'estar'.",
+        "wrongAnswers": [
+          {
+            "answer": "O senhor Ribeiro são alto.",
+            "why": "Cambiar a 'são' no soluciona el error; además crea una falta de concordancia, porque el sujeto es singular."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan describe el pelo de Beatriz. Corregií el error.",
+        "sentence": "Beatriz tem cabelo loira.",
+        "answers": [
+          "Beatriz tem cabelo loiro."
+        ],
+        "explanation": "El adjetivo tiene que concordar con 'cabelo', que es masculino, por eso corresponde 'loiro', no 'loira'.",
+        "wrongAnswers": [
+          {
+            "answer": "Beatriz tem cabelos loira.",
+            "why": "El error es de género del adjetivo, no de número; hay que cambiar 'loira' a 'loiro', no pluralizar 'cabelo'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le cuenta a un amigo de qué color son los ojos de Mariana. Corregií el error.",
+        "sentence": "Os olhos de Mariana tem verdes.",
+        "answers": [
+          "Os olhos de Mariana são verdes."
+        ],
+        "explanation": "Como el sujeto ya es 'os olhos', se usa el verbo 'ser' en plural ('são'), no 'ter'.",
+        "wrongAnswers": [
+          {
+            "answer": "Os olhos de Mariana têm verde.",
+            "why": "Corregir solo la conjugación de 'ter' no soluciona el error; el verbo correcto en esta oración es 'ser', no 'ter'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le describe Mariana a un amigo que no la conoce. Traducí al portugués.",
+        "spanish": "Mariana es alta y flaca.",
+        "answers": [
+          "Mariana é alta e magra.",
+          "Mariana é magra e alta."
+        ],
+        "explanation": "Se usa 'ser' porque la altura y la contextura física son características permanentes.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana está alta e magra.",
+            "why": "La altura es una característica permanente, por eso se usa 'ser', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan describe el pelo de Fernando, su compañero de trabajo. Traducí al portugués.",
+        "spanish": "Fernando tiene pelo castaño y corto.",
+        "answers": [
+          "Fernando tem cabelo castanho e curto.",
+          "Fernando tem cabelo curto e castanho."
+        ],
+        "explanation": "Se usa 'ter' porque el sujeto es la persona y describe su pelo.",
+        "wrongAnswers": [
+          {
+            "answer": "Fernando é cabelo castanho e curto.",
+            "why": "Para describir el pelo cuando el sujeto es la persona se usa 'ter', no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le cuenta a un amigo de qué color son los ojos de Beatriz. Traducí al portugués.",
+        "spanish": "Los ojos de Beatriz son verdes.",
+        "answers": [
+          "Os olhos de Beatriz são verdes."
+        ],
+        "explanation": "Como el sujeto ya es 'os olhos', se usa el verbo 'ser' en plural.",
+        "wrongAnswers": [
+          {
+            "answer": "Os olhos de Beatriz tem verdes.",
+            "why": "Cuando el sujeto ya es 'os olhos', se usa 'ser', no 'ter'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan describe a su abuela. Traducí al portugués.",
+        "spanish": "Mi abuela es una mujer muy linda.",
+        "answers": [
+          "Minha avó é uma mulher muito bonita."
+        ],
+        "explanation": "Se usa 'ser' porque la belleza es una característica general de la persona.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha avó tem uma mulher muito bonita.",
+            "why": "'Ter' no se usa para describir a una persona con un sustantivo y un adjetivo de esta manera; corresponde 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan describe al señor Ribeiro, su casero. Traducí al portugués.",
+        "spanish": "El señor Ribeiro es bajo y gordito.",
+        "answers": [
+          "O senhor Ribeiro é baixo e gordinho.",
+          "O senhor Ribeiro é gordinho e baixo."
+        ],
+        "explanation": "Se usa 'ser' porque la altura y la contextura física son características permanentes.",
+        "wrongAnswers": [
+          {
+            "answer": "O senhor Ribeiro está baixo e gordinho.",
+            "why": "La contextura física es una característica permanente, por eso se usa 'ser', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan describe el pelo de una amiga. Traducí al portugués.",
+        "spanish": "Ella tiene pelo rubio y lacio.",
+        "answers": [
+          "Ela tem cabelo loiro e liso.",
+          "Ela tem cabelo liso e loiro."
+        ],
+        "explanation": "Se usa 'ter' porque el sujeto es la persona y describe su pelo.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é cabelo loiro e liso.",
+            "why": "Para describir el pelo cuando el sujeto es la persona se usa 'ter', no 'ser'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Meu amigo Lucas é alto e magro.",
+        "alternatives": [],
+        "translation": "Mi amigo Lucas es alto y flaco.",
+        "explanation": "Para describir una característica física permanente se usa 'é' (ser), no 'está'; prestá atención a esa forma del verbo."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Ela tem cabelo castanho e olhos verdes.",
+        "alternatives": [],
+        "translation": "Ella tiene pelo castaño y ojos verdes.",
+        "explanation": "Para describir el pelo y los ojos se usa el verbo 'ter', no 'ser'; no confundas 'tem' con 'é'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "O novo gerente é baixo e simpático.",
+        "alternatives": [],
+        "translation": "El nuevo gerente es bajo y simpático.",
+        "explanation": "El adjetivo concuerda en género con la persona descrita: como 'gerente' en este caso es un hombre, va 'baixo', no 'baixa'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la escuchás.",
+        "sentence": "Minha colega de quarto tem cabelo loiro.",
+        "alternatives": [],
+        "translation": "Mi compañera de cuarto tiene pelo rubio.",
+        "explanation": "El adjetivo concuerda con 'cabelo', que es masculino, por eso se dice 'loiro' aunque la persona descrita sea mujer."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "liso",
+          "lixo"
+        ],
+        "target": 0,
+        "meanings": [
+          "lacio",
+          "basura"
+        ],
+        "explanation": "La 's' entre vocales suena como una 'z' suave; la 'x' en esta palabra suena como 'sh', un sonido que no existe en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "velha",
+          "velho"
+        ],
+        "target": 0,
+        "meanings": [
+          "vieja",
+          "viejo"
+        ],
+        "explanation": "La vocal final marca el género del adjetivo: 'o' es masculino y 'a' es femenino; escuchá bien cuál se pronuncia al final."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá el audio y elegí cuál de las dos palabras se dice.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 0,
+        "meanings": [
+          "costoso",
+          "auto"
+        ],
+        "explanation": "El 'r' simple entre vocales suena suave, como la 'r' de 'pero' en español; el 'rr' doble suena fuerte y gutural, casi como una jota."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre Rafael y Carla en el aeropuerto y respondé sobre la descripción de Fernanda.",
+        "situation": "Carla espera a su amiga Fernanda en el aeropuerto y le describe por teléfono a Rafael, que nunca la vio, cómo es ella para que la reconozca.",
+        "lines": [
+          {
+            "speaker": "Rafael",
+            "text": "Carla, como é a Fernanda? Eu nunca a vi."
+          },
+          {
+            "speaker": "Carla",
+            "text": "Ela é alta e magra."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "E o cabelo dela, como é?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Ela tem cabelo loiro e liso."
+          },
+          {
+            "speaker": "Rafael",
+            "text": "E os olhos?"
+          },
+          {
+            "speaker": "Carla",
+            "text": "Ela tem olhos verdes."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo es el cuerpo de Fernanda?",
+            "options": [
+              "Alta y flaca",
+              "Alta y gorda",
+              "Baja y gorda",
+              "Baja y flaca"
+            ],
+            "correctIndex": 0,
+            "explanation": "Carla dice 'Ela é alta e magra'; se usa 'ser' porque son características físicas permanentes."
+          },
+          {
+            "prompt": "¿Cómo es el pelo de Fernanda?",
+            "options": [
+              "Rubio y lacio",
+              "Castaño y corto",
+              "Negro y rizado",
+              "Rubio y rizado"
+            ],
+            "correctIndex": 0,
+            "explanation": "Carla dice 'Ela tem cabelo loiro e liso'; para describir el pelo se usa el verbo ter, no ser."
+          },
+          {
+            "prompt": "¿De qué color son los ojos de Fernanda?",
+            "options": [
+              "Marrones",
+              "Azules",
+              "Verdes",
+              "Negros"
+            ],
+            "correctIndex": 2,
+            "explanation": "Carla dice 'Ela tem olhos verdes'; el verbo ter se usa también para describir el color de los ojos."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá el diálogo entre Sofia y Bruno sobre el abuelo de Bruno y respondé.",
+        "situation": "Sofia va a conocer al abuelo de Bruno en una fiesta familiar y le pregunta a Bruno cómo es su abuelo para reconocerlo.",
+        "lines": [
+          {
+            "speaker": "Sofia",
+            "text": "Bruno, como é o seu avô?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Ele é baixinho e gordinho."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "Ele tem cabelo branco?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Sim, ele tem cabelo branco e curto."
+          },
+          {
+            "speaker": "Sofia",
+            "text": "E ele é simpático?"
+          },
+          {
+            "speaker": "Bruno",
+            "text": "Sim, ele é muito simpático e jovem de espírito."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo es el cuerpo del abuelo de Bruno?",
+            "options": [
+              "Bajito y gordito",
+              "Bajito y flaco",
+              "Alto y flaco",
+              "Alto y gordito"
+            ],
+            "correctIndex": 0,
+            "explanation": "Bruno dice 'Ele é baixinho e gordinho'; se usa 'ser' porque describe características físicas permanentes del cuerpo."
+          },
+          {
+            "prompt": "¿Cómo es el pelo del abuelo?",
+            "options": [
+              "Negro y largo",
+              "Castaño y largo",
+              "Blanco y corto",
+              "Blanco y largo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Bruno dice 'Ele tem cabelo branco e curto'; para el pelo se usa siempre el verbo ter, no ser."
+          },
+          {
+            "prompt": "¿Cómo es el carácter del abuelo según Bruno?",
+            "options": [
+              "Tímido",
+              "Simpático",
+              "Serio",
+              "Triste"
+            ],
+            "correctIndex": 1,
+            "explanation": "Bruno dice 'Ele é muito simpático'; el adjetivo 'simpático' describe el carácter del abuelo con el verbo ser."
+          }
+        ]
+      }
+    ],
+    "adjetivos-personalidade": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le describe a Mariana, su amiga, a un colega nuevo. Elegí el verbo correcto.",
+        "prompt": "Mariana ___ muito simpática.",
+        "options": [
+          "são",
+          "é",
+          "está",
+          "tem"
+        ],
+        "correctIndex": 1,
+        "explanation": "La personalidad es una característica permanente, por eso se usa 'ser' ('é'), no 'estar'.",
+        "optionNotes": [
+          "Incorrecto: 'são' es la forma plural, pero Mariana es un sujeto singular.",
+          "Correcto: 'ser' se usa para describir la personalidad, que es permanente.",
+          "Incorrecto: 'estar' se usa para estados temporales, pero la personalidad es permanente.",
+          "Incorrecto: 'ter' no se usa para describir la personalidad con un adjetivo."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan habla de su hermana, que trabaja mucho. Elegí el adjetivo correcto.",
+        "prompt": "Minha irmã é muito ___.",
+        "options": [
+          "trabalhando",
+          "trabalhadora",
+          "trabalhador",
+          "trabalhadoras"
+        ],
+        "correctIndex": 1,
+        "explanation": "El adjetivo tiene que concordar en género con 'irmã', que es femenino, por eso corresponde 'trabalhadora'.",
+        "optionNotes": [
+          "Incorrecto: 'trabalhando' es un gerundio, no un adjetivo de personalidad.",
+          "Correcto: concuerda en femenino singular con 'irmã'.",
+          "Incorrecto: 'trabalhador' es la forma masculina, pero 'irmã' es femenino.",
+          "Incorrecto: 'trabalhadoras' es plural, pero 'irmã' es singular."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan describe a su jefe, el señor Almeida, antes de una reunión. Elegí el adjetivo correcto.",
+        "prompt": "Meu chefe é um pouco ___.",
+        "options": [
+          "sérios",
+          "séria",
+          "sendo sério",
+          "sério"
+        ],
+        "correctIndex": 3,
+        "explanation": "El adjetivo tiene que concordar en género con 'chefe', que en este caso es masculino, por eso corresponde 'sério'.",
+        "optionNotes": [
+          "Incorrecto: 'sérios' es plural, pero 'chefe' es singular.",
+          "Incorrecto: 'séria' es la forma femenina, pero el jefe es un hombre.",
+          "Incorrecto: 'sendo sério' no es la construcción natural para describir una característica permanente con 'ser'.",
+          "Correcto: concuerda en masculino singular con 'chefe'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan y Mariana salen del cine después de ver una película aburrida. Elegí la palabra correcta.",
+        "prompt": "Esse filme é ___ chato.",
+        "options": [
+          "muy",
+          "muita",
+          "muitos",
+          "muito"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cuando 'muito' funciona como adverbio antes de un adjetivo, es invariable, por eso corresponde 'muito', no 'muita'.",
+        "optionNotes": [
+          "Incorrecto: 'muy' es una palabra en español, no existe en portugués.",
+          "Incorrecto: 'muita' se usa solo como adjetivo antes de un sustantivo femenino, no como adverbio.",
+          "Incorrecto: 'muitos' es plural, pero además 'muito' como adverbio no cambia de forma.",
+          "Correcto: 'muito' como adverbio antes de un adjetivo es invariable."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan se queja de que su compañero Carlos siempre habla de lo mismo. Elegí el significado correcto de 'chato' en este contexto.",
+        "prompt": "Carlos é muito chato. ¿Qué significa 'chato' acá?",
+        "options": [
+          "engreído",
+          "aburrido o pesado",
+          "gracioso",
+          "de nariz achatada"
+        ],
+        "correctIndex": 1,
+        "explanation": "En Brasil, 'chato' significa aburrido o pesado; no tiene relación con la nariz achatada como en español.",
+        "optionNotes": [
+          "Incorrecto: 'engreído' no es el significado de 'chato' en portugués.",
+          "Correcto: en Brasil 'chato' significa aburrido o pesado.",
+          "Incorrecto: 'gracioso' se dice 'engraçado' en portugués, no 'chato'.",
+          "Incorrecto: ese es el significado de 'chato' en español, pero en portugués de Brasil no se usa así."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Juan le cuenta a Mariana que su amigo Pedro siempre hace chistes. Elegí el significado correcto de 'engraçado' en este contexto.",
+        "prompt": "Pedro é muito engraçado. ¿Qué significa 'engraçado' acá?",
+        "options": [
+          "gracioso o divertido",
+          "engreído",
+          "extraño",
+          "serio"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Engraçado' es un falso amigo que significa gracioso o divertido, no 'engreído'.",
+        "optionNotes": [
+          "Correcto: 'engraçado' significa gracioso o divertido.",
+          "Incorrecto: 'engreído' es un falso amigo común, pero 'engraçado' no significa eso en portugués.",
+          "Incorrecto: 'extraño' se dice 'estranho' en portugués, no 'engraçado'.",
+          "Incorrecto: 'serio' sería lo contrario de alguien que hace chistes."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan describe a su jefe, el señor Almeida. Completá con el verbo correcto.",
+        "sentence": "Meu chefe ___ muito sério.",
+        "hint": "(ser, característica permanente)",
+        "answers": [
+          "é"
+        ],
+        "explanation": "La personalidad es una característica permanente, por eso se usa el verbo 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "está",
+            "why": "Ser serio es una característica permanente de la personalidad, por eso se usa 'ser', no 'estar'."
+          },
+          {
+            "answer": "tem",
+            "why": "'Ter' no se usa para describir la personalidad con un adjetivo como 'sério'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan cuenta que Mariana no le gusta hablar en público. Completá con el adjetivo en la forma correcta.",
+        "sentence": "Mariana é muito ___.",
+        "hint": "(tímido, concordando com 'Mariana')",
+        "answers": [
+          "tímida"
+        ],
+        "explanation": "El adjetivo tiene que concordar en género con 'Mariana', que es femenino, por eso corresponde 'tímida'.",
+        "wrongAnswers": [
+          {
+            "answer": "tímido",
+            "why": "'Tímido' es la forma masculina, pero Mariana es mujer, por eso corresponde 'tímida'."
+          },
+          {
+            "answer": "tímidos",
+            "why": "Mariana es un sujeto singular, por eso no corresponde la forma plural 'tímidos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan cuenta que su amigo Pedro siempre ayuda a los demás. Completá con el adjetivo en la forma correcta.",
+        "sentence": "Meu amigo Pedro é muito ___.",
+        "hint": "(generoso, concordando com 'Pedro')",
+        "answers": [
+          "generoso"
+        ],
+        "explanation": "El adjetivo tiene que concordar en género con 'Pedro', que es masculino, por eso corresponde 'generoso'.",
+        "wrongAnswers": [
+          {
+            "answer": "generosa",
+            "why": "'Generosa' es la forma femenina, pero Pedro es hombre, por eso corresponde 'generoso'."
+          },
+          {
+            "answer": "generosos",
+            "why": "Pedro es un sujeto singular, por eso no corresponde la forma plural 'generosos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le cuenta a Mariana que la reunión de trabajo fue muy aburrida. Completá con la palabra correcta.",
+        "sentence": "Essa reunião foi ___ chata.",
+        "hint": "(muito, advérbio invariável)",
+        "answers": [
+          "muito"
+        ],
+        "explanation": "Cuando 'muito' funciona como adverbio antes de un adjetivo, es invariable, por eso corresponde 'muito', no 'muita'.",
+        "wrongAnswers": [
+          {
+            "answer": "muita",
+            "why": "'Muita' se usa solo como adjetivo antes de un sustantivo femenino, no como adverbio invariable antes de un adjetivo."
+          },
+          {
+            "answer": "muitos",
+            "why": "'Muito' como adverbio antes de un adjetivo no cambia de forma; no corresponde usar 'muitos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le cuenta a un amigo que sus compañeros de trabajo siempre ayudan a los demás. Completá con el adjetivo en la forma correcta.",
+        "sentence": "Eles são muito ___.",
+        "hint": "(generoso, concordando com 'eles', plural)",
+        "answers": [
+          "generosos"
+        ],
+        "explanation": "El adjetivo tiene que concordar en plural con 'eles', por eso corresponde 'generosos'.",
+        "wrongAnswers": [
+          {
+            "answer": "generoso",
+            "why": "'Eles' es plural, por eso el adjetivo también tiene que ir en plural: 'generosos'."
+          },
+          {
+            "answer": "generosa",
+            "why": "'Generosa' es femenino singular, pero 'eles' es masculino plural, por eso corresponde 'generosos'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Juan le dice a Mariana que no entiende por qué pasó algo raro en el trabajo. Completá con el adjetivo en la forma correcta, evitando el falso amigo.",
+        "sentence": "Essa situação é muito ___, não faz sentido.",
+        "hint": "(estranho, concordando com 'situação')",
+        "answers": [
+          "estranha"
+        ],
+        "explanation": "'Engraçado' es un falso amigo que significa gracioso, no raro; para decir que algo es extraño se usa 'estranho', concordado en femenino con 'situação'.",
+        "wrongAnswers": [
+          {
+            "answer": "engraçada",
+            "why": "'Engraçado' significa gracioso o divertido, no raro; para expresar que algo es extraño corresponde 'estranho'."
+          },
+          {
+            "answer": "estranho",
+            "why": "'Situação' es femenino, por eso corresponde 'estranha', no 'estranho'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan le presenta a su amiga Mariana a un colega nuevo. Ordená las palabras.",
+        "sentence": "Minha amiga Mariana é muito simpática.",
+        "alternatives": [],
+        "translation": "Mi amiga Mariana es muy simpática.",
+        "explanation": "Se usa 'ser' porque la simpatía es una característica permanente de la personalidad.",
+        "tokens": [
+          "Minha",
+          "muito",
+          "amiga",
+          "simpática",
+          "Mariana",
+          "é"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan habla de su jefe antes de una reunión. Ordená las palabras.",
+        "sentence": "Meu chefe é um pouco sério.",
+        "alternatives": [],
+        "translation": "Mi jefe es un poco serio.",
+        "explanation": "El adjetivo 'sério' concuerda en masculino singular con 'chefe'.",
+        "tokens": [
+          "é",
+          "um",
+          "Meu",
+          "pouco",
+          "chefe",
+          "sério"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan habla de su hermana en una charla con un amigo. Ordená las palabras.",
+        "sentence": "Minha irmã é inteligente e trabalhadora.",
+        "alternatives": [],
+        "translation": "Mi hermana es inteligente y trabajadora.",
+        "explanation": "El adjetivo 'trabalhadora' concuerda en femenino singular con 'irmã'.",
+        "tokens": [
+          "é",
+          "Minha",
+          "irmã",
+          "e",
+          "trabalhadora",
+          "inteligente"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan y Mariana salen del cine después de ver una película. Ordená las palabras.",
+        "sentence": "Esse filme é muito chato.",
+        "alternatives": [],
+        "translation": "Esa película es muy aburrida.",
+        "explanation": "'Chato' en Brasil significa aburrido o pesado, y 'muito' como adverbio es invariable.",
+        "tokens": [
+          "Esse",
+          "chato",
+          "muito",
+          "é",
+          "filme"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Juan describe a su amigo Pedro en una charla con Mariana. Ordená las palabras.",
+        "sentence": "Pedro é engraçado, sempre faz piada.",
+        "alternatives": [],
+        "translation": "Pedro es gracioso, siempre hace chistes.",
+        "explanation": "'Engraçado' es un falso amigo que significa gracioso o divertido, no engreído.",
+        "tokens": [
+          "faz",
+          "Pedro",
+          "piada",
+          "sempre",
+          "engraçado,",
+          "é"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan describe a su amiga Mariana. Corregí el error.",
+        "sentence": "Mariana está muito simpática.",
+        "answers": [
+          "Mariana é muito simpática."
+        ],
+        "explanation": "La personalidad es una característica permanente, por eso se usa 'ser', no 'estar'.",
+        "wrongAnswers": [
+          {
+            "answer": "Mariana está muita simpática.",
+            "why": "El error principal es el verbo 'estar'; cambiar 'muito' a 'muita' no soluciona el problema, y además 'muito' como adverbio es invariable."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan habla de su hermana, que trabaja mucho. Corregí el error.",
+        "sentence": "Minha irmã é trabalhador.",
+        "answers": [
+          "Minha irmã é trabalhadora."
+        ],
+        "explanation": "El adjetivo tiene que concordar en género con 'irmã', que es femenino, por eso corresponde 'trabalhadora'.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha irmã é trabalhadores.",
+            "why": "El error es de género, no de número; hay que cambiar 'trabalhador' a 'trabalhadora', no pluralizar."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan se queja de que una compañera de trabajo habla demasiado de lo mismo. Corregí el error.",
+        "sentence": "Ela é muita chata.",
+        "answers": [
+          "Ela é muito chata."
+        ],
+        "explanation": "Cuando 'muito' funciona como adverbio antes de un adjetivo, es invariable, por eso corresponde 'muito', no 'muita'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela é muito chato.",
+            "why": "El error estaba en 'muita', no en 'chata'; 'chata' ya concuerda correctamente en femenino con 'ela'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan le cuenta a Mariana que algo raro pasó en el trabajo. Corregí el error.",
+        "sentence": "Essa situação é muito engraçada, não faz sentido.",
+        "answers": [
+          "Essa situação é muito estranha, não faz sentido."
+        ],
+        "explanation": "'Engraçado' es un falso amigo que significa gracioso, no raro; para decir que algo es extraño se usa 'estranho'.",
+        "wrongAnswers": [
+          {
+            "answer": "Essa situação é muito engraçado, não faz sentido.",
+            "why": "Corregir solo el género no soluciona el error; el problema es usar 'engraçado', que significa gracioso, no raro."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Juan describe a su jefe, el señor Almeida. Corregí el error.",
+        "sentence": "Meu chefe é sérios.",
+        "answers": [
+          "Meu chefe é sério."
+        ],
+        "explanation": "El adjetivo tiene que concordar en número con 'chefe', que es singular, por eso corresponde 'sério', no 'sérios'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu chefe é séria.",
+            "why": "El error es de número, no de género; hay que quitar la 's' final de 'sérios', no cambiar el género."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le presenta a su amiga Mariana a un colega nuevo. Traducí al portugués.",
+        "spanish": "Mi amiga es muy simpática.",
+        "answers": [
+          "Minha amiga é muito simpática."
+        ],
+        "explanation": "Se usa 'ser' porque la simpatía es una característica permanente de la personalidad.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha amiga está muito simpática.",
+            "why": "La personalidad es una característica permanente, por eso se usa 'ser', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan habla de su hermana en una charla con un amigo. Traducí al portugués.",
+        "spanish": "Mi hermana es inteligente y trabajadora.",
+        "answers": [
+          "Minha irmã é inteligente e trabalhadora."
+        ],
+        "explanation": "El adjetivo 'trabalhadora' tiene que concordar en femenino con 'irmã'.",
+        "wrongAnswers": [
+          {
+            "answer": "Minha irmã é inteligente e trabalhador.",
+            "why": "'Irmã' es femenino, por eso corresponde 'trabalhadora', no 'trabalhador'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan y Mariana salen del cine después de ver una película. Traducí al portugués.",
+        "spanish": "Esa película es muy aburrida.",
+        "answers": [
+          "Esse filme é muito chato."
+        ],
+        "explanation": "'Chato' en Brasil significa aburrido o pesado, y 'muito' como adverbio es invariable.",
+        "wrongAnswers": [
+          {
+            "answer": "Esse filme é muita chato.",
+            "why": "'Muito' como adverbio antes de un adjetivo es invariable, por eso corresponde 'muito', no 'muita'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan habla de su jefe antes de una reunión. Traducí al portugués.",
+        "spanish": "Mi jefe es un poco serio.",
+        "answers": [
+          "Meu chefe é um pouco sério."
+        ],
+        "explanation": "La seriedad es una característica permanente de la personalidad, por eso se usa 'ser'.",
+        "wrongAnswers": [
+          {
+            "answer": "Meu chefe está um pouco sério.",
+            "why": "Ser serio es una característica permanente, por eso se usa 'ser', no 'estar'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le cuenta a Mariana que algo raro pasó en el trabajo y no entiende por qué. Traducí al portugués.",
+        "spanish": "Esa situación es muy rara, no tiene sentido.",
+        "answers": [
+          "Essa situação é muito estranha, não faz sentido."
+        ],
+        "explanation": "'Engraçado' es un falso amigo que significa gracioso, no raro; para decir que algo es extraño se usa 'estranho'.",
+        "wrongAnswers": [
+          {
+            "answer": "Essa situação é muito engraçada, não faz sentido.",
+            "why": "'Engraçado' significa gracioso o divertido, no raro; es un falso amigo que no corresponde en este contexto."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Juan le dice a Mariana que un nuevo compañero de trabajo tiene buena onda. Traducí al portugués.",
+        "spanish": "Vos sos una persona buena onda.",
+        "answers": [
+          "Você é uma pessoa legal.",
+          "Você é uma pessoa massa."
+        ],
+        "explanation": "En Brasil se usa 'legal' o 'massa' para decir que alguien es buena onda; 'fixe' se usa en Portugal.",
+        "wrongAnswers": [
+          {
+            "answer": "Você é uma pessoa fixe.",
+            "why": "'Fixe' se usa en Portugal; en Brasil se dice 'legal' o 'massa' para expresar lo mismo."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Minha chefe é muito trabalhadora e exigente.",
+        "alternatives": [],
+        "translation": "Mi jefa es muy trabajadora y exigente.",
+        "explanation": "'Trabalhadora' tiene la tónica en 'do'; no la confundas con la forma masculina 'trabalhador', que no termina en 'a'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "O novo colega é tímido, mas simpático.",
+        "alternatives": [
+          "O novo colega é tímido mas simpático."
+        ],
+        "translation": "El nuevo compañero es tímido, pero simpático.",
+        "explanation": "'Tímido' lleva el acento en la primera sílaba; prestá atención para no agregarle una 's' de plural si hablás de una sola persona."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Meu amigo Rafael é engraçado, sempre faz piada.",
+        "alternatives": [],
+        "translation": "Mi amigo Rafael es gracioso, siempre hace chistes.",
+        "explanation": "'Engraçado' es un falso amigo: no significa 'engreído', sino 'gracioso' o 'divertido'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila tal como la oís.",
+        "sentence": "Esse curso de português é um pouco chato.",
+        "alternatives": [],
+        "translation": "Este curso de portugués es un poco aburrido.",
+        "explanation": "'Chato' en portugués de Brasil significa aburrido o pesado, sin relación con la nariz achatada como en español."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "caro",
+          "carro"
+        ],
+        "target": 1,
+        "meanings": [
+          "querido/costoso",
+          "auto"
+        ],
+        "explanation": "'Carro' se pronuncia con una 'r' fuerte y vibrante, mientras que 'caro' tiene una 'r' suave, como la del español entre vocales."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "selo",
+          "zelo"
+        ],
+        "target": 0,
+        "meanings": [
+          "sello/estampilla",
+          "celo/cuidado"
+        ],
+        "explanation": "'Selo' empieza con un sonido 's' suave y sordo, mientras que 'zelo' empieza con un sonido 'z' sonoro y vibrante."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Elegí qué palabra escuchás.",
+        "pair": [
+          "avô",
+          "avó"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuelo",
+          "abuela"
+        ],
+        "explanation": "'Avó' tiene una 'o' abierta, como en 'bola', mientras que 'avô' tiene una 'o' cerrada, como en 'bolo'."
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre la familia de Roberto y respondé las preguntas sobre la personalidad de cada uno.",
+        "text": "Minha família é grande. Meu pai se chama Roberto. Ele é sério, mas é muito generoso. Minha mãe se chama Cláudia. Ela é simpática e engraçada, sempre faz piada. Meu irmão Diego é tímido, não gosta de festas grandes. Minha irmã Paula é trabalhadora, estuda e trabalha ao mesmo tempo. Eu sou parecido com meu pai: um pouco sério, mas simpático com os amigos. No fim de semana, nós vamos à casa da minha avó. Ela é muito engraçada e conta histórias divertidas. Meu avô já não está aqui, mas era um homem generoso e inteligente. Toda a família gosta de ficar junta e conversar.",
+        "questions": [
+          {
+            "prompt": "¿Cómo es la madre, Cláudia?",
+            "options": [
+              "Trabalhadora e tímida",
+              "Tímida e séria",
+              "Chata e séria",
+              "Simpática e engraçada"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'Ela é simpática e engraçada'; los adjetivos van en femenino porque describen a Cláudia."
+          },
+          {
+            "prompt": "¿Quién es tímido en la familia?",
+            "options": [
+              "Paula",
+              "Diego",
+              "Roberto",
+              "Cláudia"
+            ],
+            "correctIndex": 1,
+            "explanation": "El texto dice 'Meu irmão Diego é tímido, não gosta de festas grandes'."
+          },
+          {
+            "prompt": "¿Cómo era el abuelo?",
+            "options": [
+              "Sério e chato",
+              "Trabalhador e sério",
+              "Generoso e inteligente",
+              "Tímido e engraçado"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice que el abuelo 'era um homem generoso e inteligente'."
+          }
+        ]
+      },
+      {
+        "type": "reading",
+        "instruction": "Leé el texto sobre el primer día de trabajo y respondé las preguntas sobre la personalidad de los colegas.",
+        "text": "Hoje é meu primeiro dia de trabalho numa escola em Salvador. Conheço três colegas novos. A diretora se chama Beatriz. Ela é séria no trabalho, mas é generosa com os professores novos. O professor de matemática, Fábio, é engraçado e sempre conta piadas na sala dos professores. A secretária, Renata, é tímida, mas muito trabalhadora. Ela organiza tudo com cuidado. Também conheço um professor chato, o senhor Osvaldo, que fala muito e não escuta ninguém. Apesar disso, todos são simpáticos comigo. Acho que vou gostar de trabalhar aqui. A escola é pequena, mas as pessoas são inteligentes e generosas. Estou feliz com o novo trabalho.",
+        "questions": [
+          {
+            "prompt": "¿Cómo es la directora Beatriz?",
+            "options": [
+              "Chata e tímida",
+              "Tímida e trabalhadora",
+              "Engraçada e séria",
+              "Séria, mas generosa"
+            ],
+            "correctIndex": 3,
+            "explanation": "El texto dice 'Ela é séria no trabalho, mas é generosa'; ambos adjetivos describen a Beatriz."
+          },
+          {
+            "prompt": "¿Quién es gracioso en la escuela?",
+            "options": [
+              "Beatriz",
+              "Renata",
+              "Fábio",
+              "Osvaldo"
+            ],
+            "correctIndex": 2,
+            "explanation": "El texto dice 'O professor de matemática, Fábio, é engraçado e sempre conta piadas'."
+          },
+          {
+            "prompt": "¿Cómo es el señor Osvaldo, según el texto?",
+            "options": [
+              "Chato",
+              "Simpático",
+              "Generoso",
+              "Tímido"
+            ],
+            "correctIndex": 0,
+            "explanation": "El texto dice 'um professor chato, o senhor Osvaldo, que fala muito e não escuta ninguém'; 'chato' significa pesado o aburrido."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la charla entre Sofía y Larissa y respondé sobre la personalidad de Bruno.",
+        "situation": "Dos amigas, Sofía y Larissa, hablan en un bar de São Paulo sobre un chico que Sofía va a conocer.",
+        "lines": [
+          {
+            "speaker": "Sofía",
+            "text": "Larissa, você conhece o Bruno?"
+          },
+          {
+            "speaker": "Larissa",
+            "text": "Conheço! Ele é meu colega de trabalho."
+          },
+          {
+            "speaker": "Sofía",
+            "text": "Como ele é? Ele é simpático?"
+          },
+          {
+            "speaker": "Larissa",
+            "text": "Sim, ele é muito simpático e engraçado."
+          },
+          {
+            "speaker": "Sofía",
+            "text": "Ele é tímido ou falante?"
+          },
+          {
+            "speaker": "Larissa",
+            "text": "Ele não é tímido, ele fala bastante."
+          },
+          {
+            "speaker": "Sofía",
+            "text": "Ele é chato às vezes?"
+          },
+          {
+            "speaker": "Larissa",
+            "text": "Não, ele é generoso e nunca é chato."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo es Bruno según Larissa?",
+            "options": [
+              "Aburrido y callado",
+              "Tímido y generoso",
+              "Serio y tímido",
+              "Simpático y gracioso"
+            ],
+            "correctIndex": 3,
+            "explanation": "Larissa dice 'ele é muito simpático e engraçado', usando los adjetivos en masculino porque describen a Bruno."
+          },
+          {
+            "prompt": "¿Bruno es tímido?",
+            "options": [
+              "A veces es tímido",
+              "No se sabe",
+              "Sí, es muy tímido",
+              "No, habla bastante"
+            ],
+            "correctIndex": 3,
+            "explanation": "Larissa dice 'Ele não é tímido, ele fala bastante', lo contrario de tímido."
+          },
+          {
+            "prompt": "¿Bruno es aburrido a veces?",
+            "options": [
+              "No se menciona",
+              "Sí, siempre es aburrido",
+              "No, nunca es aburrido",
+              "Sí, a veces es aburrido"
+            ],
+            "correctIndex": 2,
+            "explanation": "Larissa dice 'nunca é chato', usando 'chato' con el sentido de aburrido o pesado."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá (leé) la entrevista entre el dueño Carlos y Ana y respondé sobre la personalidad de cada uno.",
+        "situation": "Un dueño de un departamento, el señor Carlos, entrevista a una posible inquilina, Ana, en Belo Horizonte antes de alquilarle una habitación.",
+        "lines": [
+          {
+            "speaker": "Carlos",
+            "text": "Ana, me descreva um pouco a sua personalidade."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Eu sou bem tranquila e trabalhadora."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Você é uma pessoa simpática com os vizinhos?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, sou muito simpática, gosto de conversar."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "E você é tímida ou falante?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sou um pouco tímida no começo, mas depois fico mais à vontade."
+          },
+          {
+            "speaker": "Carlos",
+            "text": "Perfeito. Meu outro inquilino é engraçado, acho que vocês vão se dar bem."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Que bom! Adoro pessoas engraçadas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo se describe Ana a sí misma?",
+            "options": [
+              "Seria y pesada",
+              "Tímida y generosa",
+              "Graciosa y seria",
+              "Tranquila y trabajadora"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ana dice 'Eu sou bem tranquila e trabalhadora', usando los adjetivos en femenino porque habla de sí misma."
+          },
+          {
+            "prompt": "¿Ana es tímida todo el tiempo?",
+            "options": [
+              "No, nunca es tímida",
+              "Es tímida solo con el dueño",
+              "Es un poco tímida al principio, pero después no",
+              "Sí, siempre es muy tímida"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ana dice 'Sou um pouco tímida no começo, mas depois fico mais à vontade', es decir que no es tímida todo el tiempo."
+          },
+          {
+            "prompt": "¿Cómo es el otro inquilino según Carlos?",
+            "options": [
+              "Tímido",
+              "Engraçado",
+              "Sério",
+              "Chato"
+            ],
+            "correctIndex": 1,
+            "explanation": "Carlos dice 'Meu outro inquilino é engraçado'."
+          }
+        ]
+      }
+    ]
+  }
+}

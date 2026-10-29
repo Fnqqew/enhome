@@ -2699,6 +2699,222 @@
         "correctIndex": 0,
         "explanation": "'Call into question' significa poner en duda algo, que es el sentido que necesita la oración al referirse a cuestionar la validez de las conclusiones."
       }
+    ],
+    "en-c1-ellipsis-substitution": [
+      {
+        "subtopicId": "ellipsis-after-auxiliaries",
+        "instruction": "Elegí la opción que completa la oración evitando repetir el verbo principal.",
+        "prompt": "A: Have you finished the report? B: Yes, I ___.",
+        "options": [
+          "have finished it",
+          "have",
+          "do",
+          "am"
+        ],
+        "correctIndex": 1,
+        "explanation": "Después del auxiliar 'have' se omite el verbo principal ya mencionado ('finished the report'), por eso basta con 'I have'."
+      },
+      {
+        "subtopicId": "so-such-not-substitutes",
+        "instruction": "Elegí la palabra que reemplaza correctamente la idea ya mencionada.",
+        "prompt": "A: Is it going to rain tomorrow? B: I hope ___.",
+        "options": [
+          "so",
+          "that",
+          "it",
+          "such"
+        ],
+        "correctIndex": 0,
+        "explanation": "'I hope so' usa 'so' para reemplazar toda la cláusula 'it is going to rain tomorrow' sin repetirla."
+      },
+      {
+        "subtopicId": "so-do-i-neither-do-i",
+        "instruction": "Elegí la opción correcta para mostrar acuerdo con una afirmación negativa.",
+        "prompt": "A: I don't like horror movies. B: ___.",
+        "options": [
+          "So do I",
+          "Neither do I",
+          "I don't neither",
+          "So don't I"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para mostrar acuerdo con una afirmación negativa se usa 'Neither do I', con inversión y el auxiliar 'do'."
+      },
+      {
+        "subtopicId": "omitting-repeated-nouns",
+        "instruction": "Elegí la opción que evita repetir el sustantivo ya mencionado.",
+        "prompt": "I don't like this jacket. Can you show me a different ___?",
+        "options": [
+          "jacket",
+          "one",
+          "it",
+          "same"
+        ],
+        "correctIndex": 1,
+        "explanation": "'One' reemplaza al sustantivo contable ya mencionado ('jacket') para evitar la repetición."
+      }
+    ],
+    "c1-idioms": [
+      {
+        "subtopicId": "idioms-trabajo",
+        "instruction": "Elegí la palabra que completa correctamente la expresión idiomática de trabajo.",
+        "prompt": "It took me a few weeks to learn the ___ at my new job, but now I feel confident.",
+        "options": [
+          "ropes",
+          "chains",
+          "wires",
+          "cords"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Learn the ropes' es la expresión fija que significa aprender cómo funciona un trabajo nuevo; las demás palabras no forman parte del idiom."
+      },
+      {
+        "subtopicId": "dinero-tiempo",
+        "instruction": "Elegí la palabra que completa correctamente la expresión idiomática sobre dinero.",
+        "prompt": "That designer bag cost an arm and a ___!",
+        "options": [
+          "foot",
+          "hand",
+          "leg",
+          "finger"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Cost an arm and a leg' es la expresión fija para decir que algo es muy caro; no se usa con 'foot', 'hand' ni 'finger'."
+      },
+      {
+        "subtopicId": "emociones-relaciones",
+        "instruction": "Elegí el verbo que completa correctamente la expresión idiomática sobre relaciones.",
+        "prompt": "He told a joke to ___ the ice at the beginning of the meeting.",
+        "options": [
+          "crack",
+          "break",
+          "melt",
+          "split"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Break the ice' es la expresión fija para aliviar la tensión inicial en una situación social; los otros verbos no forman parte del idiom."
+      },
+      {
+        "subtopicId": "binomios-frases-hechas",
+        "instruction": "Elegí la palabra que completa correctamente el binomio fijo.",
+        "prompt": "Our negotiation requires a bit of give and ___ from both sides.",
+        "options": [
+          "receive",
+          "take",
+          "get",
+          "have"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Give and take' es un binomio fijo que significa hacer concesiones mutuas; el orden y la palabra 'take' no se pueden reemplazar."
+      }
+    ],
+    "c1-discourse-hedging": [
+      {
+        "subtopicId": "organizar-texto",
+        "instruction": "Elegí el marcador que completa correctamente la oración para concluir un texto.",
+        "prompt": "___, the evidence suggests that the policy has been largely ineffective.",
+        "options": [
+          "In conclusion",
+          "For instance",
+          "Moreover",
+          "On the other hand"
+        ],
+        "correctIndex": 0,
+        "explanation": "'In conclusion' es el marcador estándar para cerrar un texto resumiendo la idea principal, a diferencia de los otros que agregan o contrastan información."
+      },
+      {
+        "subtopicId": "marcadores-conversacion",
+        "instruction": "Elegí el marcador que se usa para volver al tema después de una interrupción en una conversación o exposición.",
+        "prompt": "Sorry, where was I? Oh yes, ___, the second point concerns funding.",
+        "options": [
+          "as I was saying",
+          "in other words",
+          "for example",
+          "to sum up"
+        ],
+        "correctIndex": 0,
+        "explanation": "'As I was saying' se usa justamente para retomar el hilo de lo que se estaba diciendo antes de una interrupción."
+      },
+      {
+        "subtopicId": "hedging",
+        "instruction": "Elegí la opción que atenaúa correctamente la afirmación, sonando prudente y no categórico.",
+        "prompt": "The results ___ indicate a correlation, although further research is needed to confirm this.",
+        "options": [
+          "definitely",
+          "seem to",
+          "clearly",
+          "undoubtedly"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Seem to' matiza la afirmación mostrando prudencia, mientras que las otras opciones expresan certeza absoluta, lo cual contradice la idea de que se necesita más investigación."
+      },
+      {
+        "subtopicId": "estilo-academico",
+        "instruction": "Elegí el marcador que introduce correctamente un contraargumento en estilo académico.",
+        "prompt": "Smith (2020) claims that the policy succeeded; ___, more recent data suggests otherwise.",
+        "options": [
+          "nevertheless",
+          "moreover",
+          "for example",
+          "in addition"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Nevertheless' introduce un contraste o contraargumento frente a lo afirmado previamente, a diferencia de 'moreover' o 'in addition', que agregan información en la misma dirección."
+      }
+    ],
+    "en-c1-presentation-skills": [
+      {
+        "subtopicId": "introducir-presentacion",
+        "instruction": "Elegí la frase más natural para abrir una presentación formal.",
+        "prompt": "___, I'd like to talk to you about the impact of remote work on productivity.",
+        "options": [
+          "Today",
+          "In this morning",
+          "Good morning everyone, today",
+          "I will speak"
+        ],
+        "correctIndex": 2,
+        "explanation": "Saludar al público y luego anunciar el tema ('Good morning everyone, today...') es la fórmula natural para abrir una presentación formal en inglés."
+      },
+      {
+        "subtopicId": "organizar-ideas-marcadores",
+        "instruction": "Elegí el marcador del discurso correcto para introducir el siguiente punto de la presentación.",
+        "prompt": "We've looked at the causes of the problem. ___, let's examine the possible solutions.",
+        "options": [
+          "Moreover",
+          "Next",
+          "Despite this",
+          "Although"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Next' indica claramente que se pasa a la siguiente sección de la presentación, mientras que las otras opciones expresan adición o contraste, no secuencia."
+      },
+      {
+        "subtopicId": "mantener-atencion-publico",
+        "instruction": "Elegí el recurso oral que mejor ayuda a mantener la atención del público en este fragmento.",
+        "prompt": "\"So, how many of you have ever felt completely overwhelmed by your inbox?\" Why does the speaker use this sentence?",
+        "options": [
+          "To summarize the topic",
+          "To ask the audience a rhetorical question and engage them",
+          "To conclude the presentation",
+          "To correct a previous statement"
+        ],
+        "correctIndex": 1,
+        "explanation": "Hacer una pregunta retórica directa al público es un recurso típico para captar y mantener su atención durante la presentación."
+      },
+      {
+        "subtopicId": "responder-preguntas-seguridad",
+        "instruction": "Elegí la respuesta más profesional cuando no sabés la respuesta a una pregunta del público.",
+        "prompt": "Audience member: What percentage of companies have adopted this technology? Speaker: ___",
+        "options": [
+          "I don't know, sorry.",
+          "That's a good question. I don't have the exact figure, but I'll find out and get back to you.",
+          "I have no idea about that.",
+          "Maybe, I think so."
+        ],
+        "correctIndex": 1,
+        "explanation": "Reconocer la pregunta como válida y ofrecer buscar la información después es la manera más profesional y segura de manejar una pregunta sin respuesta inmediata."
+      }
     ]
   }
 }

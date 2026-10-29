@@ -28,7 +28,8 @@
         "Continuo: is / was being + participio: The road is being repaired.",
         "Perfecto: has been / had been + participio: The suspect had been seen earlier that day.",
         "Futuro: will be / is going to be + participio: The winners will be announced tomorrow.",
-        "Con verbos de dos objetos (give, offer, send, tell) lo más natural es poner a la persona como sujeto: I was given a prize."
+        "Con verbos de dos objetos (give, offer, send, tell) lo más natural es poner a la persona como sujeto: I was given a prize.",
+        "En español el 'se' impersonal cubre varios de estos matices sin cambiar de tiempo verbal ('se está reparando', 'se repararon'), pero en inglés cada tiempo de la pasiva (continuo, perfecto, futuro) tiene una forma distinta con be + participio que hay que ajustar según el momento."
       ],
       "examples": [
         {
@@ -42,6 +43,26 @@
         {
           "target": "She was offered a job in Montevideo.",
           "es": "Le ofrecieron un trabajo en Montevideo."
+        },
+        {
+          "target": "The bridge is being painted this week.",
+          "es": "Están pintando el puente esta semana."
+        },
+        {
+          "target": "The documents will have been signed by Friday.",
+          "es": "Los documentos van a estar firmados para el viernes."
+        },
+        {
+          "target": "The patients are being monitored closely.",
+          "es": "A los pacientes los están monitoreando de cerca."
+        },
+        {
+          "target": "The contract hadn't been signed when we called.",
+          "es": "El contrato todavía no se había firmado cuando llamamos."
+        },
+        {
+          "target": "I was told some exciting news yesterday.",
+          "es": "Me contaron una noticia emocionante ayer."
         }
       ],
       "commonMistakes": [
@@ -54,6 +75,37 @@
           "wrong": "I was gave a present.",
           "right": "I was given a present.",
           "why": "La pasiva lleva el participio (given), no el pasado (gave)."
+        },
+        {
+          "wrong": "The letters are being wrote right now.",
+          "right": "The letters are being written right now.",
+          "why": "Después de being hay que usar el participio pasado (written), no el pasado simple (wrote)."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "in the works",
+          "es": "en marcha, en proceso",
+          "example": "A new policy is in the works.",
+          "exampleEs": "Hay una nueva política en marcha."
+        },
+        {
+          "target": "under construction",
+          "es": "en construcción",
+          "example": "The new bridge is under construction.",
+          "exampleEs": "El puente nuevo está en construcción."
+        },
+        {
+          "target": "on hold",
+          "es": "en pausa, suspendido",
+          "example": "The project has been put on hold.",
+          "exampleEs": "El proyecto quedó en pausa."
+        },
+        {
+          "target": "up for review",
+          "es": "en revisión",
+          "example": "The policy is up for review next month.",
+          "exampleEs": "La política está en revisión el mes que viene."
         }
       ]
     },
@@ -70,7 +122,8 @@
         "modal + be + participio: The form must be signed. This can't be done in a day.",
         "modal + have been + participio para el pasado: The accident could have been avoided.",
         "Infinitivo pasivo, to be + participio: I want to be told the truth. The house needs to be cleaned.",
-        "Gerundio pasivo, being + participio: I hate being interrupted. She's used to being photographed."
+        "Gerundio pasivo, being + participio: I hate being interrupted. She's used to being photographed.",
+        "En español, con los verbos modales usamos el infinitivo normal del verbo principal ('debe ser firmado' ya suena pasivo por 'ser'), pero en inglés después de un modal siempre hay que usar be + participio para formar la pasiva, y have been + participio para el pasado."
       ],
       "examples": [
         {
@@ -84,6 +137,26 @@
         {
           "target": "Nobody likes being told what to do.",
           "es": "A nadie le gusta que le digan qué hacer."
+        },
+        {
+          "target": "This document can be translated into several languages.",
+          "es": "Este documento se puede traducir a varios idiomas."
+        },
+        {
+          "target": "The mistake could have been avoided.",
+          "es": "El error se podría haber evitado."
+        },
+        {
+          "target": "I don't like being watched while I work.",
+          "es": "No me gusta que me miren mientras trabajo."
+        },
+        {
+          "target": "The package needs to be delivered before noon.",
+          "es": "El paquete tiene que ser entregado antes del mediodía."
+        },
+        {
+          "target": "She hates being interrupted during meetings.",
+          "es": "Ella odia que la interrumpan en las reuniones."
         }
       ],
       "commonMistakes": [
@@ -96,6 +169,37 @@
           "wrong": "The car needs to repair.",
           "right": "The car needs to be repaired.",
           "why": "El auto no repara nada: recibe la acción, así que va el infinitivo pasivo (to be repaired)."
+        },
+        {
+          "wrong": "This can be do tomorrow.",
+          "right": "This can be done tomorrow.",
+          "why": "Después de modal + be va el participio pasado (done), no el infinitivo sin to (do)."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "can't be helped",
+          "es": "no se puede evitar, no hay nada que hacer",
+          "example": "The delay can't be helped; it's the weather.",
+          "exampleEs": "La demora no se puede evitar; es por el clima."
+        },
+        {
+          "target": "needs to be seen",
+          "es": "está por verse",
+          "example": "Whether the plan will work needs to be seen.",
+          "exampleEs": "Si el plan va a funcionar está por verse."
+        },
+        {
+          "target": "is yet to be confirmed",
+          "es": "todavía no está confirmado",
+          "example": "The exact date is yet to be confirmed.",
+          "exampleEs": "La fecha exacta todavía no está confirmada."
+        },
+        {
+          "target": "it can't be done",
+          "es": "no se puede hacer",
+          "example": "Sorry, it can't be done by tomorrow.",
+          "exampleEs": "Perdón, no se puede hacer para mañana."
         }
       ]
     },
@@ -113,7 +217,8 @@
         "Sujeto + pasiva + to + infinitivo: He is said to be very rich. She is believed to live abroad.",
         "Para algo anterior, to have + participio: The thief is thought to have escaped through a window.",
         "Verbos típicos: say, believe, think, expect, report, consider, know, claim.",
-        "Sirve para no presentar algo como un hecho propio: es la forma típica de las noticias y los textos formales."
+        "Sirve para no presentar algo como un hecho propio: es la forma típica de las noticias y los textos formales.",
+        "En español usamos el 'se' impersonal para no afirmar algo como propio ('se dice que...', 'se cree que...'), y en inglés la pasiva impersonal cumple la misma función (it is said that..., he is believed to...), aunque en inglés también se puede poner a la persona como sujeto de la oración (he is said to be rich), algo que en español no se hace de forma tan directa."
       ],
       "examples": [
         {
@@ -127,6 +232,26 @@
         {
           "target": "The painting is thought to have been stolen in the 1970s.",
           "es": "Se cree que el cuadro fue robado en los años setenta."
+        },
+        {
+          "target": "It is reported that the company lost millions last year.",
+          "es": "Se informa que la empresa perdió millones el año pasado."
+        },
+        {
+          "target": "He is known to be very generous.",
+          "es": "Se lo conoce por ser muy generoso."
+        },
+        {
+          "target": "They are expected to arrive this afternoon.",
+          "es": "Se espera que lleguen esta tarde."
+        },
+        {
+          "target": "It is thought that the virus originated in bats.",
+          "es": "Se piensa que el virus se originó en los murciélagos."
+        },
+        {
+          "target": "She is considered to be one of the best writers of her generation.",
+          "es": "Se la considera una de las mejores escritoras de su generación."
         }
       ],
       "commonMistakes": [
@@ -139,6 +264,37 @@
           "wrong": "He is said that he is rich.",
           "right": "He is said to be rich.",
           "why": "Con la persona como sujeto se sigue con to + infinitivo, no con that."
+        },
+        {
+          "wrong": "He is said is very rich.",
+          "right": "He is said to be very rich.",
+          "why": "Después de 'is said' con sujeto personal se usa to be/to have, no otro verbo conjugado directamente."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "is rumored to",
+          "es": "se rumorea que",
+          "example": "The company is rumored to be launching a new product.",
+          "exampleEs": "Se rumorea que la empresa va a lanzar un producto nuevo."
+        },
+        {
+          "target": "is alleged to",
+          "es": "se alega que, presuntamente",
+          "example": "He is alleged to have taken the money.",
+          "exampleEs": "Presuntamente él se llevó el dinero."
+        },
+        {
+          "target": "according to reports",
+          "es": "según informes",
+          "example": "According to reports, the area was evacuated.",
+          "exampleEs": "Según informes, la zona fue evacuada."
+        },
+        {
+          "target": "is widely believed",
+          "es": "se cree ampliamente que",
+          "example": "It is widely believed that the economy will recover.",
+          "exampleEs": "Se cree ampliamente que la economía se va a recuperar."
         }
       ]
     },
@@ -156,7 +312,8 @@
         "get + objeto + participio: lo mismo, más informal: I need to get my car serviced.",
         "También se usa para cosas malas que te pasaron: She had her phone stolen on the train.",
         "El tiempo lo marca have / get: I'm having..., I had..., I've had..., I'll get...",
-        "have someone do / get someone to do = hacer que alguien haga algo: I'll have my assistant call you. I got my brother to help me."
+        "have someone do / get someone to do = hacer que alguien haga algo: I'll have my assistant call you. I got my brother to help me.",
+        "En español para esta idea usamos 'hacer que' + subjuntivo o 'mandar a' + infinitivo ('mandé a cortar el pasto'), pero en inglés se usa la estructura causativa have/get + objeto + participio (I had the grass cut), sin necesidad de un verbo conjugado adicional."
       ],
       "examples": [
         {
@@ -170,6 +327,26 @@
         {
           "target": "He had his bag stolen at the airport.",
           "es": "Le robaron el bolso en el aeropuerto."
+        },
+        {
+          "target": "I had my car washed this morning.",
+          "es": "Hice lavar mi auto esta mañana."
+        },
+        {
+          "target": "She's getting her nails done for the wedding.",
+          "es": "Ella se está haciendo las uñas para el casamiento."
+        },
+        {
+          "target": "We need to get the printer fixed.",
+          "es": "Tenemos que hacer arreglar la impresora."
+        },
+        {
+          "target": "They had their house broken into last week.",
+          "es": "Les entraron a robar a la casa la semana pasada."
+        },
+        {
+          "target": "I'll have my assistant send you the files.",
+          "es": "Voy a hacer que mi asistente te mande los archivos."
         }
       ],
       "commonMistakes": [
@@ -182,8 +359,14 @@
           "wrong": "I had repaired my car.",
           "right": "I had my car repaired.",
           "why": "El orden es have + objeto + participio; had repaired es un past perfect."
+        },
+        {
+          "wrong": "I had cut my hair.",
+          "right": "I had my hair cut.",
+          "why": "En la estructura causativa el orden es have + objeto + participio, no have + participio + objeto."
         }
-      ]
+      ],
+      "chunks": []
     },
     {
       "id": "informe",
@@ -198,7 +381,8 @@
         "Estructura: título, introducción (The aim of this report is to...), secciones con subtítulos y recomendaciones.",
         "La pasiva le da un tono objetivo: Several complaints have been received. The elevator is being repaired.",
         "La pasiva impersonal presenta información sin afirmarla como propia: It is expected that the work will take two weeks.",
-        "Para recomendar: It is recommended that + sujeto + verbo base, con o sin should: It is recommended that the boiler (should) be checked. También ... should be + participio: All leaks should be reported."
+        "Para recomendar: It is recommended that + sujeto + verbo base, con o sin should: It is recommended that the boiler (should) be checked. También ... should be + participio: All leaks should be reported.",
+        "En español un informe formal también usa un tono impersonal con 'se' ('se recomienda', 'se identificaron'), y en inglés se logra un efecto similar con la pasiva (it is recommended, several issues have been identified), aunque en inglés es mucho más frecuente usar esta estructura en todos los tiempos verbales del informe."
       ],
       "examples": [
         {
@@ -212,6 +396,26 @@
         {
           "target": "It is recommended that the boiler be checked every year.",
           "es": "Se recomienda revisar la caldera todos los años."
+        },
+        {
+          "target": "Several issues have been identified in the building's wiring.",
+          "es": "Se identificaron varios problemas en la instalación eléctrica del edificio."
+        },
+        {
+          "target": "It is expected that the repairs will be completed by next month.",
+          "es": "Se espera que las reparaciones estén terminadas para el mes que viene."
+        },
+        {
+          "target": "All staff should be informed of the new procedure.",
+          "es": "Se debería informar a todo el personal sobre el nuevo procedimiento."
+        },
+        {
+          "target": "The report concludes that further investment is needed.",
+          "es": "El informe concluye que se necesita más inversión."
+        },
+        {
+          "target": "It is suggested that additional safety measures be taken.",
+          "es": "Se sugiere que se tomen medidas de seguridad adicionales."
         }
       ],
       "commonMistakes": [
@@ -219,6 +423,42 @@
           "wrong": "Have been received several complaints.",
           "right": "Several complaints have been received.",
           "why": "En inglés el sujeto va antes del verbo, también en la pasiva; el español 'se recibieron varias quejas' invierte el orden."
+        },
+        {
+          "wrong": "It is recommend that the boiler be checked.",
+          "right": "It is recommended that the boiler be checked.",
+          "why": "Hay que usar el participio 'recommended', no la forma base 'recommend', después de 'it is'."
+        },
+        {
+          "wrong": "This report explain the repairs made.",
+          "right": "This report explains the repairs made.",
+          "why": "Con sujeto en tercera persona singular (this report) el verbo necesita la '-s' en presente simple."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "carried out",
+          "es": "realizado, llevado a cabo",
+          "example": "The inspection was carried out last Friday.",
+          "exampleEs": "La inspección se llevó a cabo el viernes pasado."
+        },
+        {
+          "target": "take into account",
+          "es": "tener en cuenta",
+          "example": "We should take into account the residents' complaints.",
+          "exampleEs": "Deberíamos tener en cuenta los reclamos de los vecinos."
+        },
+        {
+          "target": "in light of",
+          "es": "a la luz de, teniendo en cuenta",
+          "example": "In light of these findings, we recommend immediate repairs.",
+          "exampleEs": "A la luz de estos hallazgos, recomendamos reparaciones inmediatas."
+        },
+        {
+          "target": "with regard to",
+          "es": "con respecto a",
+          "example": "With regard to the budget, further approval is needed.",
+          "exampleEs": "Con respecto al presupuesto, se necesita más aprobación."
         }
       ]
     }

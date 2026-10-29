@@ -11,7 +11,10 @@
     "Graduar la especulación con may well, could easily, can't possibly y expresiones con chance",
     "Expresar obligación, permiso y expectativas con be supposed to, had better y be required to"
   ],
-  "prerequisites": ["b2-conditionals-past-modals", "b2-future-forms"],
+  "prerequisites": [
+    "b2-conditionals-past-modals",
+    "b2-future-forms"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,22 +22,87 @@
       "day": 1,
       "title": "Needn't have vs. didn't need to",
       "goal": "Expresar que algo no era necesario y dejar claro si se hizo o no.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "needn't have + participio: lo hiciste, pero no hacía falta: You needn't have brought a present (y lo trajiste).",
         "didn't need to + verbo base: no hacía falta, y normalmente no se hizo: I didn't need to take a taxi, so I walked.",
         "didn't need to también puede usarse cuando sí se hizo, si el contexto lo aclara; needn't have siempre implica que se hizo.",
         "No lo confundas con shouldn't have: needn't have = era innecesario; shouldn't have = estuvo mal hacerlo.",
-        "needn't + verbo base para el presente es más británico y formal: You needn't wait. En inglés americano es más común You don't have to wait."
+        "needn't + verbo base para el presente es más británico y formal: You needn't wait. En inglés americano es más común You don't have to wait.",
+        "En español usamos 'no hacía falta que' + subjuntivo tanto si la acción se hizo como si no, pero en inglés hay que elegir la estructura según el resultado: needn't have + participio si ya se hizo, y didn't need to + infinitivo si por lo general no se hizo."
       ],
       "examples": [
-        { "target": "You needn't have cooked so much; there were only four of us.", "es": "No hacía falta que cocinaras tanto: éramos solo cuatro." },
-        { "target": "The meeting was canceled, so I didn't need to prepare the presentation after all.", "es": "Se canceló la reunión, así que al final no tuve que preparar la presentación." },
-        { "target": "We needn't have hurried: the train was forty minutes late.", "es": "No hacía falta que nos apuráramos: el tren vino con cuarenta minutos de demora." }
+        {
+          "target": "You needn't have cooked so much; there were only four of us.",
+          "es": "No hacía falta que cocinaras tanto: éramos solo cuatro."
+        },
+        {
+          "target": "The meeting was canceled, so I didn't need to prepare the presentation after all.",
+          "es": "Se canceló la reunión, así que al final no tuve que preparar la presentación."
+        },
+        {
+          "target": "We needn't have hurried: the train was forty minutes late.",
+          "es": "No hacía falta que nos apuráramos: el tren vino con cuarenta minutos de demora."
+        },
+        {
+          "target": "I needn't have bought extra batteries; the remote already had some.",
+          "es": "No hacía falta que comprara pilas de más; el control ya tenía."
+        },
+        {
+          "target": "She didn't need to call ahead, since the restaurant wasn't full.",
+          "es": "No hacía falta que llamara antes, porque el restaurante no estaba lleno."
+        },
+        {
+          "target": "You needn't have apologized; it wasn't your fault at all.",
+          "es": "No hacía falta que te disculparas; no fue culpa tuya para nada."
+        },
+        {
+          "target": "We didn't need to rent a car, as the hotel offered a free shuttle.",
+          "es": "No hacía falta que alquiláramos un auto, porque el hotel ofrecía traslado gratis."
+        },
+        {
+          "target": "He needn't have worried so much about the exam; he passed easily.",
+          "es": "No hacía falta que se preocupara tanto por el examen; lo aprobó fácil."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I needn't have gone to work, so I stayed in bed.", "right": "I didn't need to go to work, so I stayed in bed.", "why": "Si no lo hiciste, va didn't need to; needn't have implica que sí lo hiciste." },
-        { "wrong": "You needn't to worry.", "right": "You needn't worry.", "why": "Needn't funciona como modal y va sin to. Need como verbo común sí lleva to: You don't need to worry." }
+        {
+          "wrong": "I needn't have gone to work, so I stayed in bed.",
+          "right": "I didn't need to go to work, so I stayed in bed.",
+          "why": "Si no lo hiciste, va didn't need to; needn't have implica que sí lo hiciste."
+        },
+        {
+          "wrong": "You needn't to worry.",
+          "right": "You needn't worry.",
+          "why": "Needn't funciona como modal y va sin to. Need como verbo común sí lleva to: You don't need to worry."
+        },
+        {
+          "wrong": "She needn't have to bring anything.",
+          "right": "She needn't have brought anything.",
+          "why": "Needn't have ya funciona como modal + participio; no hay que agregarle 'have to' ni ningún otro verbo modal extra, como tendemos a hacer traduciendo 'no hacía falta que trajera'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "as it turned out",
+          "es": "como resultó / como terminó siendo",
+          "example": "As it turned out, I needn't have printed the tickets, since they scanned them from my phone.",
+          "exampleEs": "Como terminó siendo, no hacía falta que imprimiera los tickets, porque los escanearon desde mi teléfono."
+        },
+        {
+          "target": "all that effort for nothing",
+          "es": "todo ese esfuerzo para nada",
+          "example": "All that effort for nothing: we needn't have repainted the fence.",
+          "exampleEs": "Todo ese esfuerzo para nada: no hacía falta que repintáramos el cerco."
+        },
+        {
+          "target": "there was no need to",
+          "es": "no había necesidad de",
+          "example": "There was no need to rush; the flight was delayed two hours.",
+          "exampleEs": "No había necesidad de apurarse; el vuelo se retrasó dos horas."
+        }
       ]
     },
     {
@@ -42,22 +110,82 @@
       "day": 2,
       "title": "Be bound to, be likely to y be set to",
       "goal": "Expresar distintos grados de probabilidad sobre el futuro.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "be bound to / be sure to / be certain to = es casi seguro: It's bound to rain on the day of the wedding.",
         "be likely to / be unlikely to = probable / poco probable: Prices are likely to rise again. También It's likely that...",
         "be set to = está previsto o todo indica que va a pasar; muy usado en noticias: The company is set to announce record profits.",
         "Escala aproximada: be bound to > be likely to > may / might > be unlikely to.",
-        "likely es adjetivo, así que va con be: He's likely to win (no He likely wins). En inglés americano también se usa will likely: He will likely win."
+        "likely es adjetivo, así que va con be: He's likely to win (no He likely wins). En inglés americano también se usa will likely: He will likely win.",
+        "En español solemos usar 'seguramente' o 'es probable que' + subjuntivo sin marcar mucho el grado exacto, pero en inglés bound to, likely to y set to indican niveles de certeza bien diferenciados que hay que elegir con cuidado según el contexto."
       ],
       "examples": [
-        { "target": "With so many fans in town, the hotels are bound to be full.", "es": "Con tantos hinchas en la ciudad, los hoteles van a estar llenos seguro." },
-        { "target": "The new law is unlikely to come into force before next year.", "es": "Es poco probable que la ley nueva entre en vigencia antes del año que viene." },
-        { "target": "The festival is set to attract over a million visitors.", "es": "Se espera que el festival atraiga a más de un millón de visitantes." }
+        {
+          "target": "With so many fans in town, the hotels are bound to be full.",
+          "es": "Con tantos hinchas en la ciudad, los hoteles van a estar llenos seguro."
+        },
+        {
+          "target": "The new law is unlikely to come into force before next year.",
+          "es": "Es poco probable que la ley nueva entre en vigencia antes del año que viene."
+        },
+        {
+          "target": "The festival is set to attract over a million visitors.",
+          "es": "Se espera que el festival atraiga a más de un millón de visitantes."
+        },
+        {
+          "target": "Given the traffic, we're bound to be late for the show.",
+          "es": "Con el tráfico que hay, seguro llegamos tarde al show."
+        },
+        {
+          "target": "The team is likely to reach the final if they keep playing like this.",
+          "es": "El equipo tiene chances de llegar a la final si sigue jugando así."
+        },
+        {
+          "target": "The government is set to introduce new tax rules next year.",
+          "es": "El gobierno tiene previsto introducir nuevas reglas impositivas el año que viene."
+        },
+        {
+          "target": "She's unlikely to accept the offer; it's far too low.",
+          "es": "Es poco probable que acepte la oferta; es demasiado baja."
+        },
+        {
+          "target": "Sales are bound to increase once the ad campaign starts.",
+          "es": "Las ventas seguro van a aumentar una vez que arranque la campaña publicitaria."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "He is probable to win.", "right": "He is likely to win.", "why": "Probable no admite persona + to: se dice likely to o It's probable that he'll win." },
-        { "wrong": "It's bound to raining.", "right": "It's bound to rain.", "why": "Be bound to va seguido del verbo base." }
+        {
+          "wrong": "He is probable to win.",
+          "right": "He is likely to win.",
+          "why": "Probable no admite persona + to: se dice likely to o It's probable that he'll win."
+        },
+        {
+          "wrong": "It's bound to raining.",
+          "right": "It's bound to rain.",
+          "why": "Be bound to va seguido del verbo base."
+        },
+        {
+          "wrong": "It's likely he wins the match.",
+          "right": "He's likely to win the match.",
+          "why": "Likely es adjetivo y necesita la estructura be + likely + to + infinitivo (o it's likely that + oración completa); no se usa pegado directo a un sujeto y verbo conjugado como en español 'es probable que gane'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "bound to happen",
+          "es": "va a pasar seguro",
+          "example": "With these cuts, layoffs were bound to happen.",
+          "exampleEs": "Con estos recortes, los despidos iban a pasar seguro."
+        },
+        {
+          "target": "far from likely",
+          "es": "lejos de ser probable",
+          "example": "A quick resolution is far from likely at this point.",
+          "exampleEs": "Una resolución rápida está lejos de ser probable en este punto."
+        }
       ]
     },
     {
@@ -65,22 +193,94 @@
       "day": 3,
       "title": "Matices de la especulación",
       "goal": "Graduar la certeza al especular sobre el presente, el pasado y el futuro.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "may well / might well = es bastante probable: She may well be right. Para el pasado: might well have + participio.",
         "could easily = es muy posible, podría pasar sin problema: That could easily happen to anyone.",
         "can't possibly / couldn't possibly = es imposible: He can't possibly have finished already.",
         "Expresiones con sustantivo: There's a good chance (that)..., The chances are (that)..., In all likelihood..., There's no way (that)... (informal).",
-        "Adverbios para graduar: definitely, almost certainly, probably, possibly, conceivably. Van después de will y antes de won't: She'll probably come. She probably won't come."
+        "Adverbios para graduar: definitely, almost certainly, probably, possibly, conceivably. Van después de will y antes de won't: She'll probably come. She probably won't come.",
+        "En español graduamos la especulación sobre todo cambiando el verbo (puede ser, es posible, seguramente), pero en inglés el matiz se marca combinando modal y adverbio (may well, could easily, can't possibly), así que hay que elegir la estructura entera y no solo un adverbio suelto."
       ],
       "examples": [
-        { "target": "Don't throw the box away; we may well need it later.", "es": "No tires la caja: es muy posible que después la necesitemos." },
-        { "target": "Chances are she's already heard the news.", "es": "Lo más probable es que ya se haya enterado de la noticia." },
-        { "target": "He can't possibly have written the whole report in one night.", "es": "Es imposible que haya escrito todo el informe en una noche." }
+        {
+          "target": "Don't throw the box away; we may well need it later.",
+          "es": "No tires la caja: es muy posible que después la necesitemos."
+        },
+        {
+          "target": "Chances are she's already heard the news.",
+          "es": "Lo más probable es que ya se haya enterado de la noticia."
+        },
+        {
+          "target": "He can't possibly have written the whole report in one night.",
+          "es": "Es imposible que haya escrito todo el informe en una noche."
+        },
+        {
+          "target": "He may well have forgotten about the meeting entirely.",
+          "es": "Es bastante probable que se haya olvidado completamente de la reunión."
+        },
+        {
+          "target": "That excuse could easily be true, knowing how chaotic his schedule is.",
+          "es": "Esa excusa fácilmente podría ser cierta, conociendo lo caótica que es su agenda."
+        },
+        {
+          "target": "She can't possibly know the results yet; the exam just finished.",
+          "es": "Es imposible que ya sepa los resultados; el examen recién terminó."
+        },
+        {
+          "target": "There's a good chance they'll postpone the launch.",
+          "es": "Hay buenas chances de que posterguen el lanzamiento."
+        },
+        {
+          "target": "He'll almost certainly be promoted after this project.",
+          "es": "Casi seguro lo van a ascender después de este proyecto."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Is possible that he comes later.", "right": "It's possible that he'll come later.", "why": "La oración necesita sujeto (It's possible), y después de that no hay subjuntivo como en español: va will o el presente según el caso. También podés decir He may come later." },
-        { "wrong": "She might well to be right.", "right": "She might well be right.", "why": "Después de might well va el verbo base, sin to." }
+        {
+          "wrong": "Is possible that he comes later.",
+          "right": "It's possible that he'll come later.",
+          "why": "La oración necesita sujeto (It's possible), y después de that no hay subjuntivo como en español: va will o el presente según el caso. También podés decir He may come later."
+        },
+        {
+          "wrong": "She might well to be right.",
+          "right": "She might well be right.",
+          "why": "Después de might well va el verbo base, sin to."
+        },
+        {
+          "wrong": "He can't possibly won the lottery twice.",
+          "right": "He can't possibly have won the lottery twice.",
+          "why": "Para especular sobre el pasado con can't possibly hace falta el perfecto (have + participio); no se usa el pasado simple después del modal."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "there's no way",
+          "es": "es imposible que",
+          "example": "There's no way she finished the report in one hour.",
+          "exampleEs": "Es imposible que haya terminado el informe en una hora."
+        },
+        {
+          "target": "it stands to reason that",
+          "es": "es lógico que / tiene sentido que",
+          "example": "It stands to reason that prices will rise if demand keeps growing.",
+          "exampleEs": "Es lógico que los precios suban si la demanda sigue creciendo."
+        },
+        {
+          "target": "in all likelihood",
+          "es": "con toda probabilidad",
+          "example": "In all likelihood, the contract will be renewed next month.",
+          "exampleEs": "Con toda probabilidad, el contrato se va a renovar el mes que viene."
+        },
+        {
+          "target": "for all we know",
+          "es": "por lo que sabemos",
+          "example": "For all we know, he could already be on his way here.",
+          "exampleEs": "Por lo que sabemos, podría estar ya en camino para aquí."
+        }
       ]
     },
     {
@@ -88,22 +288,82 @@
       "day": 4,
       "title": "Obligación, permiso y expectativas",
       "goal": "Expresar obligación, permiso y expectativas con matices de registro.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "be supposed to = se supone que, se espera que (una regla o un plan que muchas veces no se cumple): We were supposed to meet at six, but he never showed up.",
         "had better + verbo base = más vale que; es una advertencia con consecuencia: You'd better leave now or you'll miss the bus.",
         "be required to / be obliged to = obligación formal: Passengers are required to wear seatbelts.",
         "be allowed to / be permitted to (formal) = permiso. Para un permiso puntual en el pasado se usa was allowed to, no could: I was allowed to leave early.",
-        "it's up to you = depende de vos; there's no point in + -ing = no tiene sentido: There's no point in arguing."
+        "it's up to you = depende de vos; there's no point in + -ing = no tiene sentido: There's no point in arguing.",
+        "En español 'se supone que' muchas veces expresa duda sobre un hecho actual, pero en inglés be supposed to se usa sobre todo para hablar de reglas o planes que no se están cumpliendo, así que no conviene traducirlo de manera literal en todos los contextos."
       ],
       "examples": [
-        { "target": "You're not supposed to park here; it's a loading zone.", "es": "Acá no se puede estacionar: es zona de carga y descarga." },
-        { "target": "We'd better book a table; it gets really busy on Fridays.", "es": "Mejor reservemos una mesa: los viernes se llena." },
-        { "target": "All employees are required to complete the safety training.", "es": "Todos los empleados tienen la obligación de hacer la capacitación de seguridad." }
+        {
+          "target": "You're not supposed to park here; it's a loading zone.",
+          "es": "Acá no se puede estacionar: es zona de carga y descarga."
+        },
+        {
+          "target": "We'd better book a table; it gets really busy on Fridays.",
+          "es": "Mejor reservemos una mesa: los viernes se llena."
+        },
+        {
+          "target": "All employees are required to complete the safety training.",
+          "es": "Todos los empleados tienen la obligación de hacer la capacitación de seguridad."
+        },
+        {
+          "target": "We're supposed to hand in the assignment by Friday.",
+          "es": "Se supone que tenemos que entregar el trabajo para el viernes."
+        },
+        {
+          "target": "You'd better call the landlord before the pipe gets worse.",
+          "es": "Más vale que llames al propietario antes de que el caño empeore."
+        },
+        {
+          "target": "Staff are required to wear a uniform during working hours.",
+          "es": "El personal está obligado a usar uniforme durante el horario laboral."
+        },
+        {
+          "target": "Visitors are not permitted to take photographs inside the museum.",
+          "es": "A los visitantes no se les permite sacar fotos dentro del museo."
+        },
+        {
+          "target": "It's up to you whether we go by train or by car.",
+          "es": "Depende de vos si vamos en tren o en auto."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "You had better to go.", "right": "You'd better go.", "why": "Had better va seguido del verbo base sin to y, aunque tenga had, habla del presente o del futuro." },
-        { "wrong": "I'm supposed that he's coming.", "right": "I suppose he's coming.", "why": "'Supongo que' es I suppose (that); be supposed to es 'se supone que' (una expectativa o una regla): He's supposed to be coming." }
+        {
+          "wrong": "You had better to go.",
+          "right": "You'd better go.",
+          "why": "Had better va seguido del verbo base sin to y, aunque tenga had, habla del presente o del futuro."
+        },
+        {
+          "wrong": "I'm supposed that he's coming.",
+          "right": "I suppose he's coming.",
+          "why": "'Supongo que' es I suppose (that); be supposed to es 'se supone que' (una expectativa o una regla): He's supposed to be coming."
+        },
+        {
+          "wrong": "We are supposed to arrived at nine.",
+          "right": "We are supposed to arrive at nine.",
+          "why": "Después de 'be supposed to' va el infinitivo sin conjugar (arrive), no una forma de pasado, aunque en español 'se supone que llegamos' no marque ese cambio."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "under no obligation to",
+          "es": "sin ninguna obligación de",
+          "example": "You are under no obligation to accept the first offer you receive.",
+          "exampleEs": "No tenés ninguna obligación de aceptar la primera oferta que recibas."
+        },
+        {
+          "target": "it's your call",
+          "es": "es tu decisión",
+          "example": "Whether we cancel the trip or not, it's your call.",
+          "exampleEs": "Si cancelamos el viaje o no, es tu decisión."
+        }
       ]
     },
     {
@@ -111,22 +371,82 @@
       "day": 5,
       "title": "Un reclamo formal",
       "goal": "Leer y escribir un email formal de reclamo que mida con precisión obligaciones, expectativas y consecuencias.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Abrí con el motivo: I am writing to complain about... / to express my dissatisfaction with...",
         "Contrastá lo que se suponía que tenía que pasar con lo que pasó: The order was supposed to arrive within 48 hours.",
         "Usá needn't have y didn't need to para esfuerzos o gastos innecesarios: As it turned out, I needn't have taken the day off.",
         "Medí las consecuencias con matices: This is bound to affect..., It is unlikely that..., Further delays could easily...",
-        "Cerrá con un pedido concreto y una fórmula formal: I would appreciate a full refund. I look forward to your prompt reply."
+        "Cerrá con un pedido concreto y una fórmula formal: I would appreciate a full refund. I look forward to your prompt reply.",
+        "En español un reclamo formal se apoya sobre todo en el tono (uso de usted, formalidad general), pero en inglés además hace falta elegir estructuras modales precisas (was supposed to, is bound to, needn't have) para dejar clara la diferencia entre lo esperado y lo que realmente pasó."
       ],
       "examples": [
-        { "target": "The technician was supposed to arrive between 9 and 12, but nobody turned up.", "es": "El técnico tenía que venir entre las 9 y las 12, pero no apareció nadie." },
-        { "target": "As it turned out, I needn't have taken the day off work.", "es": "Al final, no hacía falta que me tomara el día en el trabajo." },
-        { "target": "Further delays are bound to cause serious problems for my business.", "es": "Si hay más demoras, sin duda van a causar problemas serios en mi negocio." }
+        {
+          "target": "The technician was supposed to arrive between 9 and 12, but nobody turned up.",
+          "es": "El técnico tenía que venir entre las 9 y las 12, pero no apareció nadie."
+        },
+        {
+          "target": "As it turned out, I needn't have taken the day off work.",
+          "es": "Al final, no hacía falta que me tomara el día en el trabajo."
+        },
+        {
+          "target": "Further delays are bound to cause serious problems for my business.",
+          "es": "Si hay más demoras, sin duda van a causar problemas serios en mi negocio."
+        },
+        {
+          "target": "I am writing to express my dissatisfaction with the service I received last week.",
+          "es": "Le escribo para expresar mi disconformidad con el servicio que recibí la semana pasada."
+        },
+        {
+          "target": "The package was supposed to be delivered within three business days.",
+          "es": "Se suponía que el paquete iba a ser entregado dentro de tres días hábiles."
+        },
+        {
+          "target": "As it turned out, we didn't need to reschedule the event after all.",
+          "es": "Como terminó resultando, no hacía falta que reprogramáramos el evento."
+        },
+        {
+          "target": "If this issue is not resolved promptly, it is likely to affect future orders.",
+          "es": "Si este problema no se resuelve pronto, es probable que afecte pedidos futuros."
+        },
+        {
+          "target": "I would appreciate it if you could look into this matter as soon as possible.",
+          "es": "Le agradecería que pudiera atender este asunto lo antes posible."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "I would like to receive a compensation.", "right": "I would like to receive compensation.", "why": "Compensation es incontable en este sentido: no lleva a." },
-        { "wrong": "I expect your answer.", "right": "I look forward to your reply.", "why": "'Espero su respuesta' traducido literal suena brusco, casi una exigencia; la fórmula formal es I look forward to your reply o to hearing from you." }
+        {
+          "wrong": "I would like to receive a compensation.",
+          "right": "I would like to receive compensation.",
+          "why": "Compensation es incontable en este sentido: no lleva a."
+        },
+        {
+          "wrong": "I expect your answer.",
+          "right": "I look forward to your reply.",
+          "why": "'Espero su respuesta' traducido literal suena brusco, casi una exigencia; la fórmula formal es I look forward to your reply o to hearing from you."
+        },
+        {
+          "wrong": "I am writing for complain about the delay.",
+          "right": "I am writing to complain about the delay.",
+          "why": "La frase formal para abrir un reclamo usa 'to complain', infinitivo de propósito, y no 'for complain', que es una traducción literal del español 'para quejarme'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "to no avail",
+          "es": "sin éxito / en vano",
+          "example": "I contacted customer service twice, to no avail.",
+          "exampleEs": "Me contacté con atención al cliente dos veces, sin éxito."
+        },
+        {
+          "target": "take this matter further",
+          "es": "llevar este asunto más allá / escalar el reclamo",
+          "example": "If I don't hear from you soon, I will have no choice but to take this matter further.",
+          "exampleEs": "Si no tengo noticias suyas pronto, no voy a tener otra opción que llevar este asunto más allá."
+        }
       ]
     }
   ]

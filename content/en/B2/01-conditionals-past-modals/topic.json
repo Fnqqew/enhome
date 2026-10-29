@@ -11,7 +11,10 @@
     "Hacer deducciones sobre el pasado con must have, might have y can't have",
     "Criticar y lamentar con should have, could have y would have"
   ],
-  "prerequisites": ["b1-conditionals", "b1-relatives-deduction"],
+  "prerequisites": [
+    "b1-conditionals",
+    "b1-relatives-deduction"
+  ],
   "reviewed": false,
   "subtopics": [
     {
@@ -19,21 +22,92 @@
       "day": 1,
       "title": "Tercer condicional",
       "goal": "Imaginar cómo podría haber sido el pasado si algo hubiera sido distinto.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "If + past perfect, would have + participio: If I had known, I would have told you.",
         "Habla de algo que no pasó y de su resultado imaginario: ya no se puede cambiar.",
         "Contracciones: If I'd known, I'd have told you. Al hablar, would have suena 'would've' y en la parte del if, I'd = I had.",
-        "En el resultado también van could have y might have: If we had left earlier, we might have caught the train."
+        "En el resultado también van could have y might have: If we had left earlier, we might have caught the train.",
+        "En español usamos el pluscuamperfecto del subjuntivo y el condicional compuesto para hablar de un pasado irreal ('si hubiera sabido, te habría dicho'), y en inglés se usa una estructura parecida pero fija: if + past perfect, would have + participio (If I had known, I would have told you)."
       ],
       "examples": [
-        { "target": "If you had told me about the party, I would have gone.", "es": "Si me hubieras avisado de la fiesta, habría ido." },
-        { "target": "We wouldn't have gotten lost if we'd taken a map.", "es": "No nos habríamos perdido si hubiéramos llevado un mapa." },
-        { "target": "If she hadn't missed the penalty, they would have won the final.", "es": "Si no hubiera errado el penal, habrían ganado la final." }
+        {
+          "target": "If you had told me about the party, I would have gone.",
+          "es": "Si me hubieras avisado de la fiesta, habría ido."
+        },
+        {
+          "target": "We wouldn't have gotten lost if we'd taken a map.",
+          "es": "No nos habríamos perdido si hubiéramos llevado un mapa."
+        },
+        {
+          "target": "If she hadn't missed the penalty, they would have won the final.",
+          "es": "Si no hubiera errado el penal, habrían ganado la final."
+        },
+        {
+          "target": "If I had saved more money, I could have bought that car.",
+          "es": "Si hubiera ahorrado más plata, podría haber comprado ese auto."
+        },
+        {
+          "target": "They would have arrived on time if the flight hadn't been delayed.",
+          "es": "Habrían llegado a tiempo si el vuelo no se hubiera retrasado."
+        },
+        {
+          "target": "If he had studied harder, he would have passed the exam.",
+          "es": "Si él hubiera estudiado más, habría aprobado el examen."
+        },
+        {
+          "target": "I wouldn't have met my best friend if I hadn't moved to this city.",
+          "es": "No habría conocido a mi mejor amigo si no me hubiera mudado a esta ciudad."
+        },
+        {
+          "target": "If we had booked earlier, the tickets would have been cheaper.",
+          "es": "Si hubiéramos reservado antes, los pasajes habrían sido más baratos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "If I would have known, I would have helped you.", "right": "If I had known, I would have helped you.", "why": "El 'hubiera sabido' del español es had known; would have va solo en el resultado." },
-        { "wrong": "If I had known, I would helped you.", "right": "If I had known, I would have helped you.", "why": "Después de would va have + participio." }
+        {
+          "wrong": "If I would have known, I would have helped you.",
+          "right": "If I had known, I would have helped you.",
+          "why": "El 'hubiera sabido' del español es had known; would have va solo en el resultado."
+        },
+        {
+          "wrong": "If I had known, I would helped you.",
+          "right": "If I had known, I would have helped you.",
+          "why": "Después de would va have + participio."
+        },
+        {
+          "wrong": "If she would have called me, I would have picked her up.",
+          "right": "If she had called me, I would have picked her up.",
+          "why": "En la parte con 'if' nunca se usa 'would have'; se usa el past perfect (had called), y 'would have' va solo en la segunda parte de la oración."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "hindsight is 20/20",
+          "es": "en retrospectiva todo se ve claro",
+          "example": "Hindsight is 20/20; we should have left earlier.",
+          "exampleEs": "En retrospectiva todo se ve claro; tendríamos que haber salido antes."
+        },
+        {
+          "target": "it's water under the bridge",
+          "es": "es agua pasada",
+          "example": "Don't worry about it anymore, it's water under the bridge.",
+          "exampleEs": "No te preocupes más por eso, es agua pasada."
+        },
+        {
+          "target": "what's done is done",
+          "es": "lo hecho, hecho está",
+          "example": "I know it was a mistake, but what's done is done.",
+          "exampleEs": "Sé que fue un error, pero lo hecho, hecho está."
+        },
+        {
+          "target": "there's no use crying over spilled milk",
+          "es": "no tiene sentido llorar por la leche derramada",
+          "example": "There's no use crying over spilled milk now.",
+          "exampleEs": "Ya no tiene sentido llorar por la leche derramada."
+        }
       ]
     },
     {
@@ -41,20 +115,93 @@
       "day": 2,
       "title": "Condicionales mixtos",
       "goal": "Combinar pasado y presente en una misma oración condicional.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "Condición pasada → resultado presente: If + past perfect, would + verbo base: If I had studied medicine, I would be a doctor now.",
         "Situación presente o permanente → resultado pasado: If + past simple, would have + participio: If I weren't so shy, I would have talked to her.",
         "Las referencias de tiempo (now, today, yesterday, last year) te ayudan a elegir cada parte.",
-        "Muchas veces explican cómo una decisión del pasado afecta tu vida actual."
+        "Muchas veces explican cómo una decisión del pasado afecta tu vida actual.",
+        "En español no separamos tanto entre un condicional de pasado y uno de presente, sino que mezclamos tiempos según el sentido ('si hubiera estudiado medicina, sería médico'), y en inglés también se combinan dos tiempos distintos en la misma oración (past perfect en el if, would + base en el resultado) según si la consecuencia es presente o pasada."
       ],
       "examples": [
-        { "target": "If I hadn't missed the flight, I'd be in Madrid now.", "es": "Si no hubiera perdido el vuelo, ahora estaría en Madrid." },
-        { "target": "If he were more organized, he wouldn't have forgotten the meeting.", "es": "Si fuera más organizado, no se habría olvidado de la reunión." },
-        { "target": "If you had gone to bed earlier, you wouldn't be so tired now.", "es": "Si te hubieras acostado más temprano, ahora no estarías tan cansado." }
+        {
+          "target": "If I hadn't missed the flight, I'd be in Madrid now.",
+          "es": "Si no hubiera perdido el vuelo, ahora estaría en Madrid."
+        },
+        {
+          "target": "If he were more organized, he wouldn't have forgotten the meeting.",
+          "es": "Si fuera más organizado, no se habría olvidado de la reunión."
+        },
+        {
+          "target": "If you had gone to bed earlier, you wouldn't be so tired now.",
+          "es": "Si te hubieras acostado más temprano, ahora no estarías tan cansado."
+        },
+        {
+          "target": "If I hadn't quit my job, I'd have more money now.",
+          "es": "Si no hubiera dejado mi trabajo, tendría más plata ahora."
+        },
+        {
+          "target": "If she weren't so stubborn, she would have apologized already.",
+          "es": "Si ella no fuera tan testaruda, ya se habría disculpado."
+        },
+        {
+          "target": "If we had taken that opportunity, we would be living abroad now.",
+          "es": "Si hubiéramos aprovechado esa oportunidad, estaríamos viviendo en el exterior ahora."
+        },
+        {
+          "target": "If he weren't afraid of flying, he would have traveled more.",
+          "es": "Si él no le tuviera miedo a volar, habría viajado más."
+        },
+        {
+          "target": "If I had learned to swim as a kid, I wouldn't be so nervous in the water now.",
+          "es": "Si hubiera aprendido a nadar de chico, no estaría tan nervioso en el agua ahora."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "If I had accepted that job, I would have lived in New York now.", "right": "If I had accepted that job, I would live in New York now.", "why": "Si el resultado es presente (now), va would + verbo base, no would have." }
+        {
+          "wrong": "If I had accepted that job, I would have lived in New York now.",
+          "right": "If I had accepted that job, I would live in New York now.",
+          "why": "Si el resultado es presente (now), va would + verbo base, no would have."
+        },
+        {
+          "wrong": "If I would be taller, I would have played basketball professionally.",
+          "right": "If I were taller, I would have played basketball professionally.",
+          "why": "La parte presente del condicional mixto va en pasado simple (were), no con 'would be'; 'would have' se usa solo en el resultado pasado."
+        },
+        {
+          "wrong": "If she hadn't studied law, she will be a teacher now.",
+          "right": "If she hadn't studied law, she would be a teacher now.",
+          "why": "El resultado presente del condicional mixto se forma con 'would' + verbo base, no con 'will'."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "a blessing in disguise",
+          "es": "una bendición disfrazada",
+          "example": "Losing that job was a blessing in disguise.",
+          "exampleEs": "Perder ese trabajo fue una bendición disfrazada."
+        },
+        {
+          "target": "in hindsight",
+          "es": "en retrospectiva / visto en perspectiva",
+          "example": "In hindsight, we should have taken that job offer.",
+          "exampleEs": "En retrospectiva, tendríamos que haber aceptado esa oferta de trabajo."
+        },
+        {
+          "target": "looking back",
+          "es": "mirando hacia atrás / pensándolo bien",
+          "example": "Looking back, I would have studied something else.",
+          "exampleEs": "Mirando hacia atrás, habría estudiado otra cosa."
+        },
+        {
+          "target": "for better or worse",
+          "es": "para bien o para mal",
+          "example": "For better or worse, that decision changed my life.",
+          "exampleEs": "Para bien o para mal, esa decisión me cambió la vida."
+        }
       ]
     },
     {
@@ -62,22 +209,93 @@
       "day": 3,
       "title": "Must have, might have y can't have",
       "goal": "Sacar conclusiones sobre lo que pasó.",
-      "focus": ["grammar"],
+      "focus": [
+        "grammar"
+      ],
       "keyPoints": [
         "modal + have + participio para deducir sobre el pasado.",
         "must have = seguro que sí: The streets are wet. It must have rained.",
         "might / may / could have = puede que: She might have missed the bus.",
         "can't have / couldn't have = seguro que no: He can't have seen us; he didn't say hello.",
-        "Para una acción en curso: must have been + -ing: You must have been dreaming."
+        "Para una acción en curso: must have been + -ing: You must have been dreaming.",
+        "En español usamos frases como 'debe ser que', 'puede ser que' o 'seguro que' + pasado para hacer deducciones sobre algo que ya pasó ('debe haber llovido'), y en inglés se usa un modal + have + participio (must have rained) para expresar ese mismo grado de certeza."
       ],
       "examples": [
-        { "target": "I can't find my keys. I must have left them at the office.", "es": "No encuentro las llaves. Me las debo haber olvidado en la oficina." },
-        { "target": "She didn't answer. She might have been driving.", "es": "No contestó. Capaz que estaba manejando." },
-        { "target": "They can't have finished already; they only started an hour ago.", "es": "No pueden haber terminado ya: empezaron hace una hora." }
+        {
+          "target": "I can't find my keys. I must have left them at the office.",
+          "es": "No encuentro las llaves. Me las debo haber olvidado en la oficina."
+        },
+        {
+          "target": "She didn't answer. She might have been driving.",
+          "es": "No contestó. Capaz que estaba manejando."
+        },
+        {
+          "target": "They can't have finished already; they only started an hour ago.",
+          "es": "No pueden haber terminado ya: empezaron hace una hora."
+        },
+        {
+          "target": "The lights are off. They must have gone out.",
+          "es": "Las luces están apagadas. Deben haber salido."
+        },
+        {
+          "target": "He looks exhausted. He must have worked all night.",
+          "es": "Se lo ve agotado. Debe haber trabajado toda la noche."
+        },
+        {
+          "target": "She could have forgotten about the meeting.",
+          "es": "Puede que se haya olvidado de la reunión."
+        },
+        {
+          "target": "The door was locked, so he can't have come home yet.",
+          "es": "La puerta estaba cerrada, así que seguro que todavía no llegó a casa."
+        },
+        {
+          "target": "They might have taken a different route.",
+          "es": "Puede que hayan tomado otro camino."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "He must have went home.", "right": "He must have gone home.", "why": "Después de have va el participio (gone), no el pasado (went)." },
-        { "wrong": "She mustn't have seen the message.", "right": "She can't have seen the message.", "why": "Para la deducción negativa en pasado se usa can't have o couldn't have." }
+        {
+          "wrong": "He must have went home.",
+          "right": "He must have gone home.",
+          "why": "Después de have va el participio (gone), no el pasado (went)."
+        },
+        {
+          "wrong": "She mustn't have seen the message.",
+          "right": "She can't have seen the message.",
+          "why": "Para la deducción negativa en pasado se usa can't have o couldn't have."
+        },
+        {
+          "wrong": "He can't have forget the keys.",
+          "right": "He can't have forgotten the keys.",
+          "why": "Después de un modal + have siempre va el participio pasado (forgotten), no la forma base (forget)."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "come to think of it",
+          "es": "ahora que lo pienso",
+          "example": "Come to think of it, he must have left already.",
+          "exampleEs": "Ahora que lo pienso, debe haberse ido ya."
+        },
+        {
+          "target": "no wonder",
+          "es": "no es de extrañar / con razón",
+          "example": "No wonder she's tired, she must have worked all night.",
+          "exampleEs": "No es de extrañar que esté cansada, debe haber trabajado toda la noche."
+        },
+        {
+          "target": "it figures",
+          "es": "tenía que ser / era de esperarse",
+          "example": "It figures he must have forgotten; he always does.",
+          "exampleEs": "Tenía que ser que se olvidó; siempre le pasa."
+        },
+        {
+          "target": "that explains it",
+          "es": "eso lo explica",
+          "example": "That explains it, she must have missed the bus.",
+          "exampleEs": "Eso lo explica, debe haber perdido el colectivo."
+        }
       ]
     },
     {
@@ -85,22 +303,94 @@
       "day": 4,
       "title": "Should have, could have y would have",
       "goal": "Criticar, lamentarse y hablar de oportunidades perdidas.",
-      "focus": ["grammar", "reading"],
+      "focus": [
+        "grammar",
+        "reading"
+      ],
       "keyPoints": [
         "should have + participio = debería haber, tendría que haber (crítica o arrepentimiento): You should have called me.",
         "shouldn't have = no tendría que haber: I shouldn't have eaten so much.",
         "could have = podría haber (algo posible que no pasó): You could have hurt yourself! We could have won.",
         "would have = habría, con una condición que no se dice: I would have helped you, but I was busy.",
-        "Al hablar suenan should've, could've, would've. Nunca escribas 'should of'."
+        "Al hablar suenan should've, could've, would've. Nunca escribas 'should of'.",
+        "En español usamos el condicional compuesto o 'tendría que haber' para criticar o lamentarnos de algo pasado ('debería haberte llamado'), y en inglés se usa should have / could have / would have + participio para expresar la misma idea."
       ],
       "examples": [
-        { "target": "You should have told me you were vegetarian.", "es": "Me tendrías que haber dicho que eras vegetariano." },
-        { "target": "I shouldn't have said that to her.", "es": "No le tendría que haber dicho eso." },
-        { "target": "Why didn't you ask? I could have lent you the money.", "es": "¿Por qué no me pediste? Te podría haber prestado la plata." }
+        {
+          "target": "You should have told me you were vegetarian.",
+          "es": "Me tendrías que haber dicho que eras vegetariano."
+        },
+        {
+          "target": "I shouldn't have said that to her.",
+          "es": "No le tendría que haber dicho eso."
+        },
+        {
+          "target": "Why didn't you ask? I could have lent you the money.",
+          "es": "¿Por qué no me pediste? Te podría haber prestado la plata."
+        },
+        {
+          "target": "We should have left earlier to avoid the traffic.",
+          "es": "Tendríamos que haber salido más temprano para evitar el tráfico."
+        },
+        {
+          "target": "You could have told me you were coming.",
+          "es": "Podrías haberme dicho que venías."
+        },
+        {
+          "target": "I would have helped you move, but I was out of town.",
+          "es": "Te habría ayudado con la mudanza, pero estaba de viaje."
+        },
+        {
+          "target": "She shouldn't have quit her job so suddenly.",
+          "es": "Ella no tendría que haber dejado su trabajo tan de golpe."
+        },
+        {
+          "target": "They could have asked for help instead of struggling alone.",
+          "es": "Podrían haber pedido ayuda en lugar de luchar solos."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "You should of called me.", "right": "You should have called me.", "why": "Should've suena parecido a 'should of', pero se escribe should have." },
-        { "wrong": "I must have studied more for the exam.", "right": "I should have studied more for the exam.", "why": "Must have es deducción ('seguro que'); para el arrepentimiento ('tendría que haber') va should have." }
+        {
+          "wrong": "You should of called me.",
+          "right": "You should have called me.",
+          "why": "Should've suena parecido a 'should of', pero se escribe should have."
+        },
+        {
+          "wrong": "I must have studied more for the exam.",
+          "right": "I should have studied more for the exam.",
+          "why": "Must have es deducción ('seguro que'); para el arrepentimiento ('tendría que haber') va should have."
+        },
+        {
+          "wrong": "I could have went to the party.",
+          "right": "I could have gone to the party.",
+          "why": "Después de 'could have' siempre va el participio (gone), no el pasado simple (went)."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "live and learn",
+          "es": "se aprende a los golpes",
+          "example": "I made the same mistake twice, but live and learn.",
+          "exampleEs": "Cometí el mismo error dos veces, pero se aprende a los golpes."
+        },
+        {
+          "target": "there's no point dwelling on it",
+          "es": "no tiene sentido quedarse pensando en eso",
+          "example": "There's no point dwelling on it now; it's over.",
+          "exampleEs": "No tiene sentido quedarse pensando en eso ahora; ya pasó."
+        },
+        {
+          "target": "there's nothing you can do about it now",
+          "es": "no hay nada que puedas hacer al respecto ahora",
+          "example": "I know it's frustrating, but there's nothing you can do about it now.",
+          "exampleEs": "Sé que es frustrante, pero no hay nada que puedas hacer al respecto ahora."
+        },
+        {
+          "target": "learn from your mistakes",
+          "es": "aprendé de tus errores",
+          "example": "Just learn from your mistakes and move on.",
+          "exampleEs": "Simplemente aprendé de tus errores y seguí adelante."
+        }
       ]
     },
     {
@@ -108,21 +398,93 @@
       "day": 5,
       "title": "Un email de disculpas",
       "goal": "Leer y escribir un email pidiendo disculpas y explicando qué salió mal.",
-      "focus": ["reading", "writing"],
+      "focus": [
+        "reading",
+        "writing"
+      ],
       "keyPoints": [
         "Empezá por la disculpa: I'm really sorry about... / I owe you an apology for...",
         "Explicá qué pasó y qué tendrías que haber hecho: I must have deleted your message by mistake. I should have checked.",
         "Mostrá el escenario alternativo con el tercer condicional: If I had known, I would have...",
-        "Proponé una solución y cerrá: Let me make it up to you. / I hope you can forgive me."
+        "Proponé una solución y cerrá: Let me make it up to you. / I hope you can forgive me.",
+        "En español pedimos disculpas con frases como 'perdón por no haber...' + infinitivo compuesto, y en inglés se usa 'sorry for' + gerundio (sorry for not calling) o 'I should have' + participio para explicar qué tendríamos que haber hecho."
       ],
       "examples": [
-        { "target": "I'm really sorry I missed your birthday dinner on Saturday.", "es": "Perdoname de verdad por haberme perdido tu cena de cumpleaños el sábado." },
-        { "target": "I must have written the wrong date in my calendar.", "es": "Debo haber anotado mal la fecha en la agenda." },
-        { "target": "If I had checked my messages, I would have come right away.", "es": "Si hubiera mirado los mensajes, habría ido enseguida." }
+        {
+          "target": "I'm really sorry I missed your birthday dinner on Saturday.",
+          "es": "Perdoname de verdad por haberme perdido tu cena de cumpleaños el sábado."
+        },
+        {
+          "target": "I must have written the wrong date in my calendar.",
+          "es": "Debo haber anotado mal la fecha en la agenda."
+        },
+        {
+          "target": "If I had checked my messages, I would have come right away.",
+          "es": "Si hubiera mirado los mensajes, habría ido enseguida."
+        },
+        {
+          "target": "I owe you an apology for forgetting our appointment.",
+          "es": "Te debo una disculpa por haberme olvidado de nuestra cita."
+        },
+        {
+          "target": "I'm sorry for the confusion I caused with the dates.",
+          "es": "Perdón por la confusión que causé con las fechas."
+        },
+        {
+          "target": "I should have let you know sooner.",
+          "es": "Tendría que haberte avisado antes."
+        },
+        {
+          "target": "Please let me know how I can make it up to you.",
+          "es": "Por favor, decime cómo puedo compensarte."
+        },
+        {
+          "target": "I hope you can forgive me for the misunderstanding.",
+          "es": "Espero que puedas perdonarme por el malentendido."
+        }
       ],
       "commonMistakes": [
-        { "wrong": "Sorry for not answer your message.", "right": "Sorry for not answering your message.", "why": "Después de for (preposición) va -ing." },
-        { "wrong": "I apologize for the inconveniences.", "right": "I apologize for the inconvenience.", "why": "En esta fórmula inconvenience va en singular. Y para 'un inconveniente' en el sentido de problema se usa problem o issue." }
+        {
+          "wrong": "Sorry for not answer your message.",
+          "right": "Sorry for not answering your message.",
+          "why": "Después de for (preposición) va -ing."
+        },
+        {
+          "wrong": "I apologize for the inconveniences.",
+          "right": "I apologize for the inconvenience.",
+          "why": "En esta fórmula inconvenience va en singular. Y para 'un inconveniente' en el sentido de problema se usa problem o issue."
+        },
+        {
+          "wrong": "I'm sorry to not call you earlier.",
+          "right": "I'm sorry for not calling you earlier.",
+          "why": "Después de 'sorry' usamos 'for' + gerundio (for not calling), no 'to' + infinitivo, cuando hablamos de algo que ya pasó."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "make it up to you",
+          "es": "compensarte",
+          "example": "Let me make it up to you with dinner this weekend.",
+          "exampleEs": "Dejame compensarte con una cena este fin de semana."
+        },
+        {
+          "target": "I owe you one",
+          "es": "te debo una",
+          "example": "Thanks for covering my shift, I owe you one.",
+          "exampleEs": "Gracias por cubrir mi turno, te debo una."
+        },
+        {
+          "target": "my bad",
+          "es": "mi culpa / la pifié",
+          "example": "My bad, I totally forgot to reply.",
+          "exampleEs": "Mi culpa, me olvidé completamente de responder."
+        },
+        {
+          "target": "it won't happen again",
+          "es": "no va a volver a pasar",
+          "example": "I promise it won't happen again.",
+          "exampleEs": "Te prometo que no va a volver a pasar."
+        }
       ]
     }
   ]

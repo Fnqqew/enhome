@@ -28,7 +28,8 @@
         "who para personas, which para cosas y animales, that para los dos (en la charla es lo más común): The man who / that lives next door is a chef.",
         "where para lugares: the town where I grew up. whose para posesión ('cuyo', 'de quien'): the woman whose car was stolen.",
         "Si el relativo es el objeto del verbo, se puede omitir: The book (that) I'm reading is great.",
-        "No repitas el sujeto ni el objeto: se dice the movie that I saw, no the movie that I saw it."
+        "No repitas el sujeto ni el objeto: se dice the movie that I saw, no the movie that I saw it.",
+        "En español el pronombre relativo 'que' sirve tanto para personas como para cosas ('el hombre que vino', 'el libro que leí'), pero en inglés hay que elegir entre who (personas), which (cosas) y that (los dos), según el caso."
       ],
       "examples": [
         {
@@ -42,6 +43,26 @@
         {
           "target": "I have a friend whose father is a famous chef.",
           "es": "Tengo un amigo cuyo papá es un chef famoso."
+        },
+        {
+          "target": "The man who lives next door is a chef.",
+          "es": "El hombre que vive al lado es chef."
+        },
+        {
+          "target": "I lost the keys that you gave me.",
+          "es": "Perdí las llaves que me diste."
+        },
+        {
+          "target": "This is the town where I grew up.",
+          "es": "Este es el pueblo donde crecí."
+        },
+        {
+          "target": "She's the teacher whose class I love.",
+          "es": "Ella es la profesora cuya clase me encanta."
+        },
+        {
+          "target": "The car which broke down is mine.",
+          "es": "El auto que se rompió es mío."
         }
       ],
       "commonMistakes": [
@@ -54,6 +75,31 @@
           "wrong": "The man which helped me was very kind.",
           "right": "The man who helped me was very kind.",
           "why": "Para personas se usa who o that, no which."
+        },
+        {
+          "wrong": "This is the house who I grew up in.",
+          "right": "This is the house where I grew up.",
+          "why": "Where se usa para lugares, no who, que es solo para personas."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "the reason why",
+          "es": "la razón por la cual",
+          "example": "That's the reason why I quit my job.",
+          "exampleEs": "Esa es la razón por la cual dejé mi trabajo."
+        },
+        {
+          "target": "someone you can trust",
+          "es": "alguien en quien podés confiar",
+          "example": "You need someone you can trust.",
+          "exampleEs": "Necesitás a alguien en quien podés confiar."
+        },
+        {
+          "target": "all that matters",
+          "es": "todo lo que importa",
+          "example": "Being happy is all that matters.",
+          "exampleEs": "Ser feliz es todo lo que importa."
         }
       ]
     },
@@ -70,7 +116,8 @@
         "Especificativa (defining): dice de quién o de qué hablás y va sin comas: The students who passed got a certificate (solo los que aprobaron).",
         "Explicativa (non-defining): agrega un dato extra y va entre comas: My sister, who lives in Spain, is a nurse.",
         "En las explicativas no se usa that y no se puede omitir el relativo: My car, which is ten years old, still works.",
-        "which puede referirse a toda la oración anterior, como 'lo que' o 'lo cual': He didn't call, which was strange."
+        "which puede referirse a toda la oración anterior, como 'lo que' o 'lo cual': He didn't call, which was strange.",
+        "En español no siempre marcamos con comas la diferencia entre información necesaria e información extra, pero en inglés las oraciones explicativas (non-defining) van siempre entre comas, mientras que las especificativas (defining) nunca llevan comas."
       ],
       "examples": [
         {
@@ -84,6 +131,26 @@
         {
           "target": "She passed all her exams, which made her parents very proud.",
           "es": "Aprobó todos los exámenes, lo cual llenó de orgullo a sus papás."
+        },
+        {
+          "target": "The book that you lent me was amazing.",
+          "es": "El libro que me prestaste fue increíble."
+        },
+        {
+          "target": "My father, who worked as a pilot, traveled a lot.",
+          "es": "Mi papá, que trabajó como piloto, viajaba mucho."
+        },
+        {
+          "target": "The restaurant where we had dinner was great.",
+          "es": "El restaurante donde cenamos estuvo genial."
+        },
+        {
+          "target": "Our neighbor, whose dog barks all night, apologized.",
+          "es": "Nuestro vecino, cuyo perro ladra toda la noche, se disculpó."
+        },
+        {
+          "target": "The people who live upstairs are very noisy.",
+          "es": "La gente que vive arriba es muy ruidosa."
         }
       ],
       "commonMistakes": [
@@ -96,6 +163,37 @@
           "wrong": "He was late, what annoyed everyone.",
           "right": "He was late, which annoyed everyone.",
           "why": "Para referirte a toda la oración anterior ('lo que', 'lo cual') se usa which, no what."
+        },
+        {
+          "wrong": "My car that is ten years old still works.",
+          "right": "My car, which is ten years old, still works.",
+          "why": "Como es información extra sobre algo único (tu único auto), hay que usar comas y which, no that sin comas."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "which is great news",
+          "es": "lo cual es una gran noticia",
+          "example": "She got the job, which is great news.",
+          "exampleEs": "Consiguió el trabajo, lo cual es una gran noticia."
+        },
+        {
+          "target": "which made sense",
+          "es": "lo cual tenía sentido",
+          "example": "He apologized, which made sense.",
+          "exampleEs": "Se disculpó, lo cual tenía sentido."
+        },
+        {
+          "target": "to be more precise",
+          "es": "para ser más preciso",
+          "example": "He lives in Spain, in Madrid, to be more precise.",
+          "exampleEs": "Vive en España, en Madrid, para ser más preciso."
+        },
+        {
+          "target": "in other words",
+          "es": "en otras palabras",
+          "example": "She quit her job, in other words, she's unemployed now.",
+          "exampleEs": "Dejó su trabajo, en otras palabras, ahora está desempleada."
         }
       ]
     },
@@ -112,7 +210,8 @@
         "might / may / could = puede ser, no estoy seguro: He might be in a meeting.",
         "can't = seguro que no: That can't be Juan; he's in Japan.",
         "Para acciones en curso: must / might / can't + be + -ing: They must be having lunch.",
-        "Al deducir, lo contrario de must no es mustn't sino can't."
+        "Al deducir, lo contrario de must no es mustn't sino can't.",
+        "En español usamos 'debe ser' o 'debe de ser' para una deducción lógica, de forma parecida a must en inglés, pero para decir que algo seguro no es así usamos 'no puede ser', mientras que en inglés se usa can't, nunca mustn't."
       ],
       "examples": [
         {
@@ -126,6 +225,26 @@
         {
           "target": "That can't be the right address. It's a parking lot.",
           "es": "No puede ser la dirección correcta: es un estacionamiento."
+        },
+        {
+          "target": "He hasn't eaten all day. He must be starving.",
+          "es": "No comió nada en todo el día. Debe estar muerto de hambre."
+        },
+        {
+          "target": "She might be running late.",
+          "es": "Puede ser que esté llegando tarde."
+        },
+        {
+          "target": "They can't be home; the lights are off.",
+          "es": "No pueden estar en casa; las luces están apagadas."
+        },
+        {
+          "target": "This must be the wrong address.",
+          "es": "Esta debe ser la dirección equivocada."
+        },
+        {
+          "target": "He could be at work right now.",
+          "es": "Puede que esté en el trabajo ahora."
         }
       ],
       "commonMistakes": [
@@ -138,6 +257,37 @@
           "wrong": "She must to be his sister.",
           "right": "She must be his sister.",
           "why": "Después de must el verbo va sin to."
+        },
+        {
+          "wrong": "She can must be at home.",
+          "right": "She must be at home.",
+          "why": "No se combinan dos modales juntos; usá solo uno (must, might o can't) antes del verbo."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "must be kidding",
+          "es": "debe estar bromeando",
+          "example": "You must be kidding!",
+          "exampleEs": "¡Debés estar bromeando!"
+        },
+        {
+          "target": "might as well",
+          "es": "tanto da / mejor aprovechar",
+          "example": "We're already here, we might as well stay for dinner.",
+          "exampleEs": "Ya que estamos acá, tanto da quedarnos a cenar."
+        },
+        {
+          "target": "can't be true",
+          "es": "no puede ser verdad",
+          "example": "This can't be true!",
+          "exampleEs": "¡Esto no puede ser verdad!"
+        },
+        {
+          "target": "it must be nice",
+          "es": "debe ser lindo",
+          "example": "It must be nice to live near the beach.",
+          "exampleEs": "Debe ser lindo vivir cerca de la playa."
         }
       ]
     },
@@ -154,7 +304,8 @@
         "although / even though + oración completa, dentro de la misma frase: Although it was raining, we went out.",
         "however va al principio de una oración nueva y lleva coma: The hotel was expensive. However, it was worth it.",
         "despite / in spite of + sustantivo o -ing: Despite the rain, we went out.",
-        "so = así que (resultado); because = porque (causa): I was tired, so I went to bed. I went to bed because I was tired."
+        "so = así que (resultado); because = porque (causa): I was tired, so I went to bed. I went to bed because I was tired.",
+        "En español 'aunque' puede ir seguido de indicativo o subjuntivo según el grado de certeza, pero en inglés although/even though siempre van seguidos de una oración con el verbo en forma normal, sin ese matiz gramatical."
       ],
       "examples": [
         {
@@ -168,6 +319,26 @@
         {
           "target": "There was a strike, so we had to walk to work.",
           "es": "Había paro, así que tuvimos que ir caminando al trabajo."
+        },
+        {
+          "target": "Although she was tired, she finished the race.",
+          "es": "Aunque estaba cansada, terminó la carrera."
+        },
+        {
+          "target": "Despite the traffic, we arrived on time.",
+          "es": "A pesar del tránsito, llegamos a tiempo."
+        },
+        {
+          "target": "It was late. However, we decided to go out anyway.",
+          "es": "Era tarde. Sin embargo, decidimos salir igual."
+        },
+        {
+          "target": "I didn't study, so I failed the test.",
+          "es": "No estudié, así que desaprobé el examen."
+        },
+        {
+          "target": "Even though he apologized, she was still angry.",
+          "es": "Aunque se disculpó, ella seguía enojada."
         }
       ],
       "commonMistakes": [
@@ -180,6 +351,37 @@
           "wrong": "Although I studied, but I failed.",
           "right": "Although I studied, I failed.",
           "why": "Although y but no van en la misma frase: con uno alcanza."
+        },
+        {
+          "wrong": "In spite the rain, we went out.",
+          "right": "In spite of the rain, we went out.",
+          "why": "Después de in spite siempre va of; no se puede omitir."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "even so",
+          "es": "aun así",
+          "example": "It was raining; even so, we went for a walk.",
+          "exampleEs": "Estaba lloviendo; aun así, salimos a caminar."
+        },
+        {
+          "target": "no matter what",
+          "es": "pase lo que pase",
+          "example": "I'll support you, no matter what.",
+          "exampleEs": "Te voy a apoyar, pase lo que pase."
+        },
+        {
+          "target": "on the other hand",
+          "es": "por otro lado",
+          "example": "The house is small; on the other hand, it's very cheap.",
+          "exampleEs": "La casa es chica; por otro lado, es muy barata."
+        },
+        {
+          "target": "as a result",
+          "es": "como resultado",
+          "example": "She studied every day. As a result, she passed with the highest grade.",
+          "exampleEs": "Estudió todos los días. Como resultado, aprobó con la mejor nota."
         }
       ]
     },
@@ -196,7 +398,8 @@
         "Presentá el lugar con una relativa: We stayed at Casa Verde, which is right next to the beach.",
         "Equilibrá lo bueno y lo malo con although, however y despite.",
         "Usá must, might y can't para suposiciones: It must be the best view in town.",
-        "Terminá con una recomendación clara: I'd definitely recommend it to anyone who..."
+        "Terminá con una recomendación clara: I'd definitely recommend it to anyone who...",
+        "En español una reseña suele combinar oraciones cortas con conectores simples como 'pero' y 'aunque', pero en inglés una buena reseña aprovecha relativos (which, that), modales de deducción (must, might) y conectores más variados (however, despite) para sonar más natural y fluida."
       ],
       "examples": [
         {
@@ -210,6 +413,26 @@
         {
           "target": "I'd recommend it to anyone who loves seafood.",
           "es": "Se lo recomendaría a cualquiera a quien le encanten los mariscos."
+        },
+        {
+          "target": "The hotel, which was recommended by a friend, exceeded our expectations.",
+          "es": "El hotel, que nos recomendó un amigo, superó nuestras expectativas."
+        },
+        {
+          "target": "Although the room was small, it was very comfortable.",
+          "es": "Aunque la habitación era chica, era muy cómoda."
+        },
+        {
+          "target": "This must be one of the best restaurants in town.",
+          "es": "Este debe ser uno de los mejores restaurantes de la ciudad."
+        },
+        {
+          "target": "Despite the high prices, the quality was excellent.",
+          "es": "A pesar de los precios altos, la calidad fue excelente."
+        },
+        {
+          "target": "It's a place that I would definitely visit again.",
+          "es": "Es un lugar que definitivamente visitaría de nuevo."
         }
       ],
       "commonMistakes": [
@@ -217,6 +440,42 @@
           "wrong": "The food was delicious, however the service was slow.",
           "right": "The food was delicious. However, the service was slow.",
           "why": "However no une dos oraciones como but: va después de un punto (o un punto y coma) y seguido de coma. Si no, usá but."
+        },
+        {
+          "wrong": "The place that we visited it was amazing.",
+          "right": "The place that we visited was amazing.",
+          "why": "No hay que repetir el objeto (it) después del relativo that; ya está incluido en la oración."
+        },
+        {
+          "wrong": "Despite of the bad weather, we enjoyed the trip.",
+          "right": "Despite the bad weather, we enjoyed the trip.",
+          "why": "Despite no lleva of; si querés usar of, tenés que decir in spite of, no despite of."
+        }
+      ],
+      "chunks": [
+        {
+          "target": "worth a visit",
+          "es": "vale la pena visitarlo",
+          "example": "This museum is worth a visit.",
+          "exampleEs": "Este museo vale la pena visitarlo."
+        },
+        {
+          "target": "highly recommend",
+          "es": "recomendar totalmente",
+          "example": "I highly recommend this restaurant.",
+          "exampleEs": "Recomiendo totalmente este restaurante."
+        },
+        {
+          "target": "a must-see",
+          "es": "algo que hay que ver sí o sí",
+          "example": "This beach is a must-see if you visit the coast.",
+          "exampleEs": "Esta playa es algo que hay que ver sí o sí si visitás la costa."
+        },
+        {
+          "target": "overall, I'd say",
+          "es": "en general, diría que",
+          "example": "Overall, I'd say it was a great experience.",
+          "exampleEs": "En general, diría que fue una gran experiencia."
         }
       ]
     }
