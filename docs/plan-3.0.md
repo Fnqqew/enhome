@@ -29,6 +29,17 @@ Mediciones e investigación de respaldo:
 
 La **3.0.0** se publicó el 2026-10-26, a pedido del usuario, con las etapas 1 a 4 y parte de la 5. Lo que falta sale en versiones 3.1, 3.2…, a medida que se termina (la etapa 7 queda para la última).
 
+Estado del contenido (2026-10-29): las herramientas de la etapa 6 están hechas (`npm run content:syllabus|topics|enrich|placement|pronunciation|vocab|writing|banks`) y lo que falta es correrlas, que lleva días por el límite de uso del plan de Claude:
+
+| Idioma | Tópicos | Examen inicial | Pronunciación | Vocabulario | Escritura |
+|---|---|---|---|---|---|
+| Portugués | 62 | hasta C1 | sí | sí | — |
+| Inglés | 62 | hasta C1 | en curso | en curso | — |
+| Italiano, francés | 25 | A1–A2 | falta | falta | — |
+| Alemán, ruso, japonés, chino, coreano | 0 (plan listo) | falta | falta | falta | falta (salvo alemán, que no la necesita) |
+
+A pedido del usuario (2026-10-28) se sacaron los ejercicios de voz y la dificultad arranca guiada y sube por escalones.
+
 ## Velocidad
 
 - [x] 1 Llamadas a Claude sin carga ajena
