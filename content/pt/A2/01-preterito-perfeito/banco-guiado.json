@@ -1,0 +1,1650 @@
+{
+  "subtopics": {
+    "perfeito-ar": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Ontem Juan ___ para o Brasil.",
+        "options": [
+          "viajei",
+          "viajar",
+          "viajou",
+          "viaja"
+        ],
+        "correctIndex": 2,
+        "explanation": "El sujeto es 'Juan' (ele), por eso el verbo 'viajar' toma la terminación '-ou': viajou.",
+        "optionNotes": [
+          "Incorrecto: 'viajei' es la forma de 'eu', no coincide con el sujeto 'Juan'.",
+          "Incorrecto: 'viajar' es el infinitivo, no una forma conjugada.",
+          "Correcto: 'viajou' es la forma de él/ella en pretérito perfeito.",
+          "Incorrecto: 'viaja' está en presente, pero la oración habla de 'ontem' (ayer)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Eu ___ com o gerente ontem à tarde.",
+        "options": [
+          "falei",
+          "fala",
+          "falamos",
+          "falou"
+        ],
+        "correctIndex": 0,
+        "explanation": "Para 'eu' en pretérito perfeito, los verbos en -ar terminan en '-ei': falei.",
+        "optionNotes": [
+          "Correcto: 'falei' es la forma de 'eu' en pretérito perfeito.",
+          "Incorrecto: 'fala' está en presente, pero la oración dice 'ontem'.",
+          "Incorrecto: 'falamos' es la forma de nós.",
+          "Incorrecto: 'falou' es la forma de él/ella, no de 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Nós ___ para a prova na semana passada.",
+        "options": [
+          "estudam",
+          "estudou",
+          "estudei",
+          "estudamos"
+        ],
+        "correctIndex": 3,
+        "explanation": "La forma de 'nós' en pretérito perfeito de los verbos en -ar es igual a la de presente: estudamos. Acá el contexto 'na semana passada' indica que es pasado.",
+        "optionNotes": [
+          "Incorrecto: 'estudam' es la forma de ellos en presente.",
+          "Incorrecto: 'estudou' es la forma de él/ella.",
+          "Incorrecto: 'estudei' es la forma de 'eu'.",
+          "Correcto: 'estudamos' es la forma de nós, igual en presente y pasado; el contexto aclara que es pasado."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Vocês ___ atrasados na reunião?",
+        "options": [
+          "chegou",
+          "chegaram",
+          "chegam",
+          "cheguei"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para 'vocês' en pretérito perfeito, el verbo 'chegar' termina en '-aram': chegaram.",
+        "optionNotes": [
+          "Incorrecto: 'chegou' es la forma de él/ella (singular).",
+          "Correcto: 'chegaram' es la forma de vocês/eles en pretérito perfeito.",
+          "Incorrecto: 'chegam' está en presente, no en pasado.",
+          "Incorrecto: 'cheguei' es la forma de 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito, prestando atención a la ortografía.",
+        "prompt": "Eu ___ a conta do aluguel ontem.",
+        "options": [
+          "pagamos",
+          "paguei",
+          "pagou",
+          "pagei"
+        ],
+        "correctIndex": 1,
+        "explanation": "El verbo 'pagar' en la forma de 'eu' agrega una 'u' para mantener el sonido /g/: paguei, no pagei.",
+        "optionNotes": [
+          "Incorrecto: 'pagamos' es la forma de nós.",
+          "Correcto: 'paguei' mantiene el sonido /g/ con la 'u' agregada.",
+          "Incorrecto: 'pagou' es la forma de él/ella.",
+          "Incorrecto: 'pagei' no existe en portugués, falta la 'u'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Marcos e Ana ___ o apartamento em São Paulo.",
+        "options": [
+          "alugaram",
+          "alugou",
+          "aluguei",
+          "alugamos"
+        ],
+        "correctIndex": 0,
+        "explanation": "El sujeto 'Marcos e Ana' es plural (eles), por eso el verbo termina en '-aram': alugaram.",
+        "optionNotes": [
+          "Correcto: 'alugaram' es la forma de eles en pretérito perfeito.",
+          "Incorrecto: 'alugou' es la forma de él/ella (singular).",
+          "Incorrecto: 'aluguei' es la forma de 'eu'.",
+          "Incorrecto: 'alugamos' es la forma de nós."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pretérito perfeito.",
+        "sentence": "Ontem eu ___ até as oito da noite.",
+        "hint": "(trabalhar)",
+        "answers": [
+          "trabalhei"
+        ],
+        "explanation": "Para 'eu' en pretérito perfeito, los verbos en -ar terminan en '-ei': trabalhei.",
+        "wrongAnswers": [
+          {
+            "answer": "trabalhou",
+            "why": "Es la forma de él/ella, pero el sujeto es 'eu'."
+          },
+          {
+            "answer": "trabalhamos",
+            "why": "Es la forma de nós, pero el sujeto es 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pretérito perfeito, cuidando la ortografía.",
+        "sentence": "Eu ___ na casa de Marcos depois do trabalho.",
+        "hint": "(chegar)",
+        "answers": [
+          "cheguei"
+        ],
+        "explanation": "El verbo 'chegar' en la forma de 'eu' agrega una 'u' para mantener el sonido /g/: cheguei.",
+        "wrongAnswers": [
+          {
+            "answer": "chegei",
+            "why": "Falta la 'u': la forma correcta es 'cheguei' para mantener el sonido /g/."
+          },
+          {
+            "answer": "chegou",
+            "why": "Es la forma de él/ella, pero el sujeto es 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pretérito perfeito.",
+        "sentence": "Nós ___ para a prova durante duas horas.",
+        "hint": "(estudar)",
+        "answers": [
+          "estudamos"
+        ],
+        "explanation": "La forma de 'nós' en pretérito perfeito de los verbos en -ar es igual a la de presente: estudamos; el contexto indica que es pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "estudei",
+            "why": "Es la forma de 'eu', pero el sujeto es 'nós'."
+          },
+          {
+            "answer": "estudaram",
+            "why": "Es la forma de eles, pero el sujeto es 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pretérito perfeito, cuidando la ortografía.",
+        "sentence": "Eu ___ a conta de luz esta semana.",
+        "hint": "(pagar - ojo con la ortografía)",
+        "answers": [
+          "paguei"
+        ],
+        "explanation": "El verbo 'pagar' en la forma de 'eu' agrega una 'u' para mantener el sonido /g/: paguei.",
+        "wrongAnswers": [
+          {
+            "answer": "pagei",
+            "why": "Falta la 'u': la forma correcta es 'paguei'."
+          },
+          {
+            "answer": "pagou",
+            "why": "Es la forma de él/ella, pero el sujeto es 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pretérito perfeito.",
+        "sentence": "Marcos e Ana ___ um apartamento perto do centro.",
+        "hint": "(alugar)",
+        "answers": [
+          "alugaram"
+        ],
+        "explanation": "El sujeto 'Marcos e Ana' es plural, por eso el verbo termina en '-aram': alugaram.",
+        "wrongAnswers": [
+          {
+            "answer": "alugou",
+            "why": "Es la forma singular de él/ella, pero el sujeto es plural."
+          },
+          {
+            "answer": "aluguei",
+            "why": "Es la forma de 'eu', pero el sujeto es 'Marcos e Ana'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del pretérito perfeito, cuidando la ortografía.",
+        "sentence": "Eu ___ o curso de português em março.",
+        "hint": "(começar - ojo con la ortografía)",
+        "answers": [
+          "comecei"
+        ],
+        "explanation": "Antes de 'e' o 'i' la 'c' ya suena suave, por eso no se usa 'ç': comecei, no começei.",
+        "wrongAnswers": [
+          {
+            "answer": "começei",
+            "why": "No se usa 'ç' antes de 'e'; la forma correcta es 'comecei'."
+          },
+          {
+            "answer": "começou",
+            "why": "Es la forma de él/ella, pero el sujeto es 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Ontem Juan chegou atrasado na reunião.",
+        "alternatives": [
+          "Juan chegou atrasado na reunião ontem."
+        ],
+        "translation": "Ayer Juan llegó tarde a la reunión.",
+        "explanation": "El verbo 'chegar' en pretérito perfeito para 'ele' es 'chegou'; el adverbio 'ontem' puede ir al principio o al final.",
+        "tokens": [
+          "Ontem",
+          "Juan",
+          "atrasado",
+          "chegou",
+          "na",
+          "reunião"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Marcos e Ana alugaram um apartamento em São Paulo.",
+        "alternatives": [
+          "Em São Paulo, Marcos e Ana alugaram um apartamento."
+        ],
+        "translation": "Marcos y Ana alquilaron un departamento en San Pablo.",
+        "explanation": "El sujeto plural 'Marcos e Ana' pide la forma 'alugaram' del verbo 'alugar' en pretérito perfeito; el complemento de lugar puede ir al final o al principio de la oración.",
+        "tokens": [
+          "um",
+          "Ana",
+          "São",
+          "alugaram",
+          "Marcos",
+          "e",
+          "em",
+          "Paulo",
+          "apartamento"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Nós estudamos português durante duas horas ontem.",
+        "alternatives": [
+          "Ontem nós estudamos português durante duas horas."
+        ],
+        "translation": "Nosotros estudiamos portugués durante dos horas ayer.",
+        "explanation": "La forma 'estudamos' de 'nós' es igual en presente y pasado; el adverbio 'ontem' marca que es pretérito perfeito.",
+        "tokens": [
+          "estudamos",
+          "durante",
+          "Nós",
+          "horas",
+          "duas",
+          "português",
+          "ontem"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Eu paguei a conta do aluguel na sexta-feira.",
+        "alternatives": [
+          "Na sexta-feira eu paguei a conta do aluguel."
+        ],
+        "translation": "Yo pagué la cuenta del alquiler el viernes.",
+        "explanation": "El verbo 'pagar' en la forma de 'eu' es 'paguei', con 'u' para mantener el sonido /g/.",
+        "tokens": [
+          "aluguel",
+          "na",
+          "conta",
+          "paguei",
+          "do",
+          "sexta-feira",
+          "Eu",
+          "a"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Vocês viajaram para o Rio de Janeiro no verão?",
+        "alternatives": [
+          "No verão, vocês viajaram para o Rio de Janeiro?"
+        ],
+        "translation": "¿Ustedes viajaron a Río de Janeiro en el verano?",
+        "explanation": "El sujeto plural 'vocês' pide la forma 'viajaram' del verbo 'viajar' en pretérito perfeito; el complemento de tiempo puede ir al final o al principio de la oración.",
+        "tokens": [
+          "no",
+          "o",
+          "verão",
+          "viajaram",
+          "Vocês",
+          "Janeiro",
+          "de",
+          "Rio",
+          "para"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de conjugación en esta oración.",
+        "sentence": "Eu chegei tarde no trabalho ontem.",
+        "answers": [
+          "Eu cheguei tarde no trabalho ontem."
+        ],
+        "explanation": "El verbo 'chegar' en la forma de 'eu' necesita una 'u' para mantener el sonido /g/: cheguei, no chegei.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu chegou tarde no trabalho ontem.",
+            "why": "Esto cambia la persona a él/ella en vez de corregir la ortografía de la forma de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de conjugación en esta oración.",
+        "sentence": "Marcos e Ana alugou um apartamento novo.",
+        "answers": [
+          "Marcos e Ana alugaram um apartamento novo."
+        ],
+        "explanation": "El sujeto 'Marcos e Ana' es plural, por eso el verbo debe ser 'alugaram', no 'alugou' (que es singular).",
+        "wrongAnswers": [
+          {
+            "answer": "Marcos e Ana alugaram um apartamento nova.",
+            "why": "Corrige el adjetivo en vez de la conjugación verbal, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de ortografía en esta oración.",
+        "sentence": "Eu pagei a conta de luz na segunda-feira.",
+        "answers": [
+          "Eu paguei a conta de luz na segunda-feira."
+        ],
+        "explanation": "El verbo 'pagar' en la forma de 'eu' agrega una 'u' para mantener el sonido /g/: paguei, no pagei.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu pagou a conta de luz na segunda-feira.",
+            "why": "Cambia la persona a él/ella, pero el sujeto es 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de conjugación en esta oración.",
+        "sentence": "Ontem, Juan começei o novo trabalho.",
+        "answers": [
+          "Ontem, Juan começou o novo trabalho."
+        ],
+        "explanation": "El sujeto es 'Juan' (ele), por eso el verbo debe ser 'começou', no 'começei' que es la forma de 'eu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ontem, Juan comecei o novo trabalho.",
+            "why": "Solo corrige la ortografía pero deja la persona equivocada; el sujeto es Juan (ele), no eu."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de conjugación en esta oración.",
+        "sentence": "Vocês viajou para o Uruguai no mês passado?",
+        "answers": [
+          "Vocês viajaram para o Uruguai no mês passado?"
+        ],
+        "explanation": "El sujeto 'vocês' es plural, por eso el verbo debe ser 'viajaram', no 'viajou' (que es singular).",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês viajaram para o Uruguai o mês passado?",
+            "why": "Cambia la preposición 'no' en vez de corregir solo la conjugación verbal, que era el error buscado."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ayer yo trabajé hasta las nueve de la noche.",
+        "answers": [
+          "Ontem eu trabalhei até as nove da noite.",
+          "Ontem eu trabalhei até às nove da noite."
+        ],
+        "explanation": "El verbo 'trabalhar' en la forma de 'eu' en pretérito perfeito es 'trabalhei'.",
+        "wrongAnswers": [
+          {
+            "answer": "Ontem eu trabalho até as nove da noite.",
+            "why": "Usa el presente en vez del pretérito perfeito."
+          },
+          {
+            "answer": "Ontem eu trabalhou até as nove da noite.",
+            "why": "Confunde la persona: 'trabalhou' es la forma de él/ella, no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Vos llegaste tarde a la reunión?",
+        "answers": [
+          "Você chegou tarde na reunião?",
+          "Você chegou atrasado na reunião?",
+          "Você chegou atrasada na reunião?"
+        ],
+        "explanation": "El verbo 'chegar' para 'você' en pretérito perfeito es 'chegou'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você chegeu tarde na reunião?",
+            "why": "La forma correcta de 'chegar' para 'você' es 'chegou', no 'chegeu'."
+          },
+          {
+            "answer": "Você chega tarde na reunião?",
+            "why": "Usa el presente en vez del pretérito perfeito."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nosotros estudiamos para la prueba toda la tarde.",
+        "answers": [
+          "Nós estudamos para a prova a tarde toda.",
+          "Nós estudamos para a prova durante toda a tarde."
+        ],
+        "explanation": "La forma de 'nós' en pretérito perfeito de los verbos en -ar es igual a la de presente: estudamos; el contexto indica que es pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós estudou para a prova toda a tarde.",
+            "why": "La forma 'estudou' corresponde a él/ella, no a 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués, cuidando la ortografía.",
+        "spanish": "Yo pagué el alquiler la semana pasada.",
+        "answers": [
+          "Eu paguei o aluguel na semana passada."
+        ],
+        "explanation": "El verbo 'pagar' en la forma de 'eu' agrega una 'u' para mantener el sonido /g/: paguei.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu pagei o aluguel na semana passada.",
+            "why": "Falta la 'u': la forma correcta es 'paguei'."
+          },
+          {
+            "answer": "Eu pagou o aluguel na semana passada.",
+            "why": "Esa es la forma de él/ella, no de 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ellos viajaron a Brasil en enero.",
+        "answers": [
+          "Eles viajaram para o Brasil em janeiro."
+        ],
+        "explanation": "El sujeto plural 'eles' pide la forma 'viajaram' del verbo 'viajar' en pretérito perfeito.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles viajou para o Brasil em janeiro.",
+            "why": "La forma correcta para 'eles' es 'viajaram', no 'viajou' (que es singular)."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Marcos y yo empezamos el curso la semana pasada.",
+        "answers": [
+          "Marcos e eu começamos o curso na semana passada."
+        ],
+        "explanation": "El sujeto 'Marcos e eu' equivale a 'nós', por eso el verbo es 'começamos', igual en presente y pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "Marcos e eu começei o curso na semana passada.",
+            "why": "'Começei' es la forma de 'eu', pero el sujeto es 'Marcos e eu' (nós)."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración del presente al pretérito perfeito.",
+        "sentence": "Eu falo com o chefe.",
+        "answers": [
+          "Eu falei com o chefe."
+        ],
+        "explanation": "Falar es regular en -ar: la forma de 'eu' en pretérito perfeito es 'falei'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu falou com o chefe.",
+            "why": "'Falou' es la forma de 'você/ele/ela', no de 'eu'; para primera persona se usa 'falei'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá la oración al pasado. Prestá atención a la ortografía de 'chegar'.",
+        "sentence": "Eu chego ao trabalho às oito.",
+        "answers": [
+          "Eu cheguei ao trabalho às oito."
+        ],
+        "explanation": "Para mantener el sonido /g/ antes de 'e', chegar se escribe con 'gu': cheguei.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu chegei ao trabalho às oito.",
+            "why": "Falta la 'u' que mantiene el sonido /g/; la forma correcta es 'cheguei'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá la oración al pasado. Cuidado con la ortografía de 'pagar'.",
+        "sentence": "Eu pago a conta de luz.",
+        "answers": [
+          "Eu paguei a conta de luz."
+        ],
+        "explanation": "Pagar en primera persona del pretérito perfeito lleva 'gu' para conservar el sonido /g/: paguei.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu pagei a conta de luz.",
+            "why": "Sin la 'u', la 'g' sonaría como /j/; se necesita 'gu' para mantener el sonido /g/."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración a la forma negativa, manteniendo el pretérito perfeito.",
+        "sentence": "Eu trabalhei ontem.",
+        "answers": [
+          "Eu não trabalhei ontem."
+        ],
+        "explanation": "Para negar en pretérito perfeito solo se agrega 'não' antes del verbo conjugado; el verbo no cambia de tiempo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não trabalho ontem.",
+            "why": "El verbo quedó en presente ('trabalho'); hay que mantener el pretérito perfeito 'trabalhei'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Marina chegou ao hotel em Salvador ontem à noite.",
+        "alternatives": [
+          "Marina chegou ao hotel em Salvador, ontem à noite."
+        ],
+        "translation": "Marina llegó al hotel en Salvador anoche.",
+        "explanation": "La terminación '-ou' de 'chegou' (él/ella) se pronuncia cerrada; no la confundas con 'cheguei' (yo), que termina en '-ei'."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Eu paguei a conta do aluguel na sexta-feira passada.",
+        "alternatives": [],
+        "translation": "Yo pagué la cuenta del alquiler el viernes pasado.",
+        "explanation": "Prestá atención al grupo 'gu' de 'paguei': se pronuncia /g/ y no /j/, y la terminación es '-ei' porque es la primera persona."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Nós estudamos português na semana passada.",
+        "alternatives": [],
+        "translation": "Nosotros estudiamos portugués la semana pasada.",
+        "explanation": "La forma 'estudamos' es igual en presente y en pretérito perfeito; aquí el contexto 'na semana passada' indica que es pasado."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Eles viajaram para o Rio de Janeiro no mês passado.",
+        "alternatives": [],
+        "translation": "Ellos viajaron a Río de Janeiro el mes pasado.",
+        "explanation": "La terminación '-aram' marca la tercera persona del plural en pretérito perfeito; no la confundas con '-amos' de 'nós'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "mão",
+          "mau"
+        ],
+        "target": 0,
+        "meanings": [
+          "mano",
+          "malo"
+        ],
+        "explanation": "El sonido nasal de 'mão' se produce dejando salir aire por la nariz; en 'mau' la vocal es oral, sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 1,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "La diferencia está en el timbre de la 'o': 'avó' tiene una 'o' abierta y 'avô' una 'o' cerrada, algo que en español no distinguimos."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "casa",
+          "caça"
+        ],
+        "target": 0,
+        "meanings": [
+          "casa",
+          "caza"
+        ],
+        "explanation": "El sonido de 'ç' en 'caça' es como la 's' sorda del español, mientras que la 's' entre vocales en 'casa' suena como 'z' sonora en portugués brasileño."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre Juliana y Marcos y respondé las preguntas sobre lo que pasó ayer.",
+        "situation": "Juliana y Marcos son compañeros de trabajo en São Paulo. Se encuentran en la oficina a la mañana y hablan sobre el día anterior.",
+        "lines": [
+          {
+            "speaker": "Juliana",
+            "text": "Marcos, você trabalhou até tarde ontem?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Sim, eu trabalhei até às nove da noite."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "Que cansaço! Você jantou em casa?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Não, eu cheguei tarde e comprei um lanche no caminho."
+          },
+          {
+            "speaker": "Juliana",
+            "text": "E hoje, você começou o novo projeto?"
+          },
+          {
+            "speaker": "Marcos",
+            "text": "Ainda não, eu só comecei a organizar as coisas."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Hasta qué hora trabajó Marcos ayer?",
+            "options": [
+              "Hasta las ocho de la noche",
+              "Hasta las nueve de la noche",
+              "Hasta las nueve de la mañana",
+              "Hasta las diez de la noche"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos dice 'eu trabalhei até às nove da noite', usando trabalhei, forma de yo del pretérito perfeito de trabalhar."
+          },
+          {
+            "prompt": "¿Marcos cenó en su casa?",
+            "options": [
+              "No, cenó en el trabajo",
+              "Sí, pero muy tarde",
+              "Sí, cenó en su casa",
+              "No, compró un sándwich en el camino"
+            ],
+            "correctIndex": 3,
+            "explanation": "Marcos responde 'eu cheguei tarde e comprei um lanche no caminho', usando comprei, forma de yo del pretérito perfeito de comprar."
+          },
+          {
+            "prompt": "¿Marcos ya empezó el nuevo proyecto?",
+            "options": [
+              "No, no sabe nada del proyecto",
+              "No, todavía no, solo empezó a organizar las cosas",
+              "Sí, lo empezó ayer",
+              "Sí, ya lo terminó"
+            ],
+            "correctIndex": 1,
+            "explanation": "Marcos dice 'eu só comecei a organizar as coisas', usando comecei (de começar), que se escribe con 'c' y no con 'ç' porque va antes de 'e'."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre Pedro y Ana sobre su viaje y respondé las preguntas.",
+        "situation": "Pedro y Ana son amigos y se encuentran en un café en Buenos Aires. Ana acaba de volver de un viaje a Uruguay con su familia.",
+        "lines": [
+          {
+            "speaker": "Pedro",
+            "text": "Ana, vocês viajaram para o Uruguai na semana passada?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, nós viajamos e ficamos em Punta del Este."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Que bom! Vocês chegaram de manhã ou de noite?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Chegamos de manhã, bem cedo."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "E você ligou para a sua mãe de lá?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Sim, eu liguei todos os dias."
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Vocês pagaram muito pelo hotel?"
+          },
+          {
+            "speaker": "Ana",
+            "text": "Não, pagamos pouco porque reservamos com desconto."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cuándo llegaron Ana y su familia a Punta del Este?",
+            "options": [
+              "A la noche",
+              "No llegaron, se quedaron en Buenos Aires",
+              "A la mañana, bien temprano",
+              "Al mediodía"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ana dice 'Chegamos de manhã, bem cedo', usando chegamos, forma de nosotros del pretérito perfeito de chegar."
+          },
+          {
+            "prompt": "¿Con qué frecuencia llamó Ana a su madre durante el viaje?",
+            "options": [
+              "Nunca la llamó",
+              "Una vez por semana",
+              "Todos los días",
+              "Solo el día que llegó"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ana responde 'eu liguei todos os dias', usando liguei (de ligar), con 'gu' para mantener el sonido /g/ antes de 'e'."
+          },
+          {
+            "prompt": "¿Pagaron mucho por el hotel?",
+            "options": [
+              "Sí, pero valió la pena",
+              "No, pagaron poco porque reservaron con descuento",
+              "Sí, fue muy caro",
+              "No pagaron nada"
+            ],
+            "correctIndex": 1,
+            "explanation": "Ana dice 'Não, pagamos pouco porque reservamos com desconto', usando pagamos, forma de nosotros del pretérito perfeito de pagar, igual al presente pero aclarada por el contexto de la conversación."
+          }
+        ]
+      }
+    ],
+    "perfeito-er-ir": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Juan ___ uma feijoada deliciosa no Rio de Janeiro.",
+        "options": [
+          "comeu",
+          "comeram",
+          "comi",
+          "come"
+        ],
+        "correctIndex": 0,
+        "explanation": "Juan es 'ele', y la tercera persona singular de 'comer' en pretérito perfeito es 'comeu'.",
+        "optionNotes": [
+          "Correcto: 'comeu' es la forma de ele/ela/você.",
+          "Incorrecto: 'comeram' es plural (eles), pero el sujeto es singular.",
+          "Incorrecto: 'comi' es la forma de 'eu', no corresponde a Juan.",
+          "Incorrecto: 'come' está en presente, no en pretérito perfeito."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Eu ___ toda a água da garrafa durante o treino.",
+        "options": [
+          "bebeu",
+          "beberam",
+          "bebi",
+          "bebe"
+        ],
+        "correctIndex": 2,
+        "explanation": "La primera persona ('eu') del pretérito perfeito de 'beber' termina en -i: bebi.",
+        "optionNotes": [
+          "Incorrecto: 'bebeu' es la forma de ele/ela/você, no de 'eu'.",
+          "Incorrecto: 'beberam' es la forma de eles/elas.",
+          "Correcto: 'bebi' es la forma de 'eu' en pretérito perfeito.",
+          "Incorrecto: 'bebe' está en presente."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Nós ___ as malas no hotel em Salvador.",
+        "options": [
+          "abri",
+          "abrimos",
+          "abrem",
+          "abriu"
+        ],
+        "correctIndex": 1,
+        "explanation": "Para 'nós' con verbos en -ir, la terminación del pretérito perfeito es -imos: abrimos.",
+        "optionNotes": [
+          "Incorrecto: 'abri' es la forma de 'eu'.",
+          "Correcto: 'abrimos' es la forma de 'nós'.",
+          "Incorrecto: 'abrem' está en presente y además es plural de otra persona.",
+          "Incorrecto: 'abriu' es la forma de ele/ela/você."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Ela ___ sair mais cedo do trabalho hoje.",
+        "options": [
+          "decidiu",
+          "decidi",
+          "decide",
+          "decidiram"
+        ],
+        "correctIndex": 0,
+        "explanation": "La tercera persona singular ('ela') de 'decidir' en pretérito perfeito termina en -iu: decidiu, nunca en -ió como en español.",
+        "optionNotes": [
+          "Correcto: 'decidiu' es la forma de ela/ele/você.",
+          "Incorrecto: 'decidi' es la forma de 'eu'.",
+          "Incorrecto: 'decide' está en presente.",
+          "Incorrecto: 'decidiram' es plural (elas)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Vocês ___ a carta que o Lucas mandou?",
+        "options": [
+          "receberam",
+          "recebi",
+          "recebe",
+          "recebeu"
+        ],
+        "correctIndex": 0,
+        "explanation": "'Vocês' es plural y usa la terminación -eram de los verbos en -er: receberam.",
+        "optionNotes": [
+          "Correcto: 'receberam' corresponde a vocês/eles.",
+          "Incorrecto: 'recebi' es la forma de 'eu'.",
+          "Incorrecto: 'recebe' está en presente.",
+          "Incorrecto: 'recebeu' es singular (ele/você)."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del verbo en pretérito perfeito.",
+        "prompt": "Eu ___ bem a explicação do médico.",
+        "options": [
+          "entenderam",
+          "entendeu",
+          "entendi",
+          "entende"
+        ],
+        "correctIndex": 2,
+        "explanation": "La primera persona ('eu') de los verbos en -er termina en -i: entendi, no en -eu (que es la forma de ele/ela/você).",
+        "optionNotes": [
+          "Incorrecto: 'entenderam' es plural (eles).",
+          "Incorrecto: 'entendeu' es la forma de ele/ela/você.",
+          "Correcto: 'entendi' es la forma de 'eu'.",
+          "Incorrecto: 'entende' está en presente."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en pretérito perfeito.",
+        "sentence": "Ontem nós ___ pizza no restaurante da esquina.",
+        "hint": "(comer)",
+        "answers": [
+          "comemos"
+        ],
+        "explanation": "La forma de 'nós' en pretérito perfeito de 'comer' es 'comemos', igual que en presente pero en este caso con valor de pasado por el 'ontem'.",
+        "wrongAnswers": [
+          {
+            "answer": "comimos",
+            "why": "Es un calco del español; en portugués la forma correcta es 'comemos', con 'e'."
+          },
+          {
+            "answer": "come",
+            "why": "Esa es la forma de presente, no de pretérito perfeito."
+          },
+          {
+            "answer": "comeram",
+            "why": "Esa es la forma de eles/elas, no de nós."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en pretérito perfeito.",
+        "sentence": "Lucas ___ a porta do apartamento para mim.",
+        "hint": "(abrir)",
+        "answers": [
+          "abriu"
+        ],
+        "explanation": "La tercera persona singular de 'abrir' en pretérito perfeito termina en -iu: abriu, nunca en -io.",
+        "wrongAnswers": [
+          {
+            "answer": "abrio",
+            "why": "Esta terminación no existe en portugués; la forma correcta es 'abriu'."
+          },
+          {
+            "answer": "abri",
+            "why": "Esa es la forma de 'eu', no de Lucas (ele)."
+          },
+          {
+            "answer": "abre",
+            "why": "Esa es la forma de presente, no de pretérito perfeito."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en pretérito perfeito.",
+        "sentence": "Eu ___ muito café de manhã.",
+        "hint": "(beber)",
+        "answers": [
+          "bebi"
+        ],
+        "explanation": "La primera persona ('eu') de los verbos en -er termina en -i: bebi.",
+        "wrongAnswers": [
+          {
+            "answer": "bebeu",
+            "why": "Esa es la forma de ele/ela/você, no de 'eu'."
+          },
+          {
+            "answer": "bebe",
+            "why": "Esa es la forma de presente, no de pretérito perfeito."
+          },
+          {
+            "answer": "bebo",
+            "why": "Esa es la forma de presente de 'eu', no de pretérito perfeito."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en pretérito perfeito.",
+        "sentence": "Você já ___ do consultório médico?",
+        "hint": "(sair)",
+        "answers": [
+          "saiu"
+        ],
+        "explanation": "La tercera persona de 'você' usa la forma 'saiu', con terminación -iu propia de los verbos en -ir.",
+        "wrongAnswers": [
+          {
+            "answer": "saiste",
+            "why": "Es un calco del español 'saliste'; en portugués esa forma no existe."
+          },
+          {
+            "answer": "sai",
+            "why": "Esa es la forma de presente, no de pretérito perfeito."
+          },
+          {
+            "answer": "saí",
+            "why": "Esa es la forma de 'eu', no de 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en pretérito perfeito.",
+        "sentence": "Nós ___ muito cedo para o aeroporto.",
+        "hint": "(partir)",
+        "answers": [
+          "partimos"
+        ],
+        "explanation": "La forma de 'nós' en pretérito perfeito de los verbos en -ir es -imos: partimos.",
+        "wrongAnswers": [
+          {
+            "answer": "parti",
+            "why": "Esa es la forma de 'eu', no de 'nós'."
+          },
+          {
+            "answer": "parte",
+            "why": "Esa es la forma de presente, no de pretérito perfeito."
+          },
+          {
+            "answer": "partiram",
+            "why": "Esa es la forma de eles/elas, no de nós."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con la forma correcta del verbo en pretérito perfeito.",
+        "sentence": "Ela ___ vender a casa antiga.",
+        "hint": "(decidir)",
+        "answers": [
+          "decidiu"
+        ],
+        "explanation": "La tercera persona singular de 'decidir' en pretérito perfeito es 'decidiu', con terminación -iu.",
+        "wrongAnswers": [
+          {
+            "answer": "decidio",
+            "why": "Esta terminación no existe en portugués; la forma correcta es 'decidiu'."
+          },
+          {
+            "answer": "decidi",
+            "why": "Esa es la forma de 'eu', no de 'ela'."
+          },
+          {
+            "answer": "decide",
+            "why": "Esa es la forma de presente, no de pretérito perfeito."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós comemos num restaurante japonês em São Paulo.",
+        "alternatives": [
+          "Em São Paulo, nós comemos num restaurante japonês.",
+          "Nós comemos em São Paulo num restaurante japonês."
+        ],
+        "translation": "Comimos en un restaurante japonés en San Pablo.",
+        "explanation": "El verbo 'comemos' (pretérito perfeito de 'comer' para 'nós') va después del sujeto y antes del lugar donde ocurrió la acción.",
+        "tokens": [
+          "em",
+          "São",
+          "Paulo",
+          "comemos",
+          "japonês",
+          "restaurante",
+          "num",
+          "Nós"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Ela abriu a janela do quarto cedo.",
+        "alternatives": [
+          "Cedo, ela abriu a janela do quarto."
+        ],
+        "translation": "Ella abrió la ventana del cuarto temprano.",
+        "explanation": "'Abriu' es la tercera persona singular del pretérito perfeito de 'abrir', terminada en -iu.",
+        "tokens": [
+          "a",
+          "do",
+          "Ela",
+          "abriu",
+          "quarto",
+          "cedo",
+          "janela"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eu bebi muita água depois do treino.",
+        "alternatives": [
+          "Depois do treino, eu bebi muita água."
+        ],
+        "translation": "Tomé mucha agua después del entrenamiento.",
+        "explanation": "'Bebi' es la primera persona del pretérito perfeito de 'beber', con terminación -i.",
+        "tokens": [
+          "do",
+          "água",
+          "Eu",
+          "treino",
+          "depois",
+          "bebi",
+          "muita"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Eles venderam a casa antiga no mês passado.",
+        "alternatives": [
+          "No mês passado, eles venderam a casa antiga."
+        ],
+        "translation": "Ellos vendieron la casa vieja el mes pasado.",
+        "explanation": "'Venderam' es la tercera persona plural del pretérito perfeito de 'vender', con terminación -eram.",
+        "tokens": [
+          "venderam",
+          "no",
+          "mês",
+          "passado",
+          "antiga",
+          "a",
+          "casa",
+          "Eles"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta.",
+        "sentence": "Nós partimos muito cedo para a entrevista.",
+        "alternatives": [
+          "Nós partimos para a entrevista muito cedo."
+        ],
+        "translation": "Salimos muy temprano para la entrevista.",
+        "explanation": "'Partimos' es la forma de 'nós' en pretérito perfeito de 'partir', con terminación -imos.",
+        "tokens": [
+          "partimos",
+          "entrevista",
+          "Nós",
+          "cedo",
+          "para",
+          "a",
+          "muito"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el pretérito perfeito.",
+        "sentence": "Ele comió muito no almoço de ontem.",
+        "answers": [
+          "Ele comeu muito no almoço de ontem."
+        ],
+        "explanation": "En portugués la tercera persona singular de 'comer' en pretérito perfeito es 'comeu', no 'comió' (eso es un calco del español).",
+        "wrongAnswers": [
+          {
+            "answer": "Ele comeu muita no almoço de ontem.",
+            "why": "El error no está en 'muito', sino en la forma verbal 'comió', que debía corregirse a 'comeu'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el pretérito perfeito.",
+        "sentence": "Eu abrio a porta da sala ontem.",
+        "answers": [
+          "Eu abri a porta da sala ontem."
+        ],
+        "explanation": "La primera persona ('eu') del pretérito perfeito de 'abrir' termina en -i: abri, no en -io.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu abriu a porta da sala ontem.",
+            "why": "'Abriu' es la forma de ele/ela/você, no de 'eu'; la corrección correcta es 'abri'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el pretérito perfeito.",
+        "sentence": "Eu comeu pão de manhã.",
+        "answers": [
+          "Eu comi pão de manhã."
+        ],
+        "explanation": "'Eu' usa la terminación -i en los verbos en -er; 'comeu' es la forma de ele/ela/você, no de 'eu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu comeu pães de manhã.",
+            "why": "El error no está en la palabra 'pão', sino en la conjugación del verbo; hay que cambiar 'comeu' por 'comi'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el pretérito perfeito.",
+        "sentence": "Nós vendeu a casa antiga ano passado.",
+        "answers": [
+          "Nós vendemos a casa antiga ano passado."
+        ],
+        "explanation": "La forma de 'nós' en pretérito perfeito de 'vender' es 'vendemos'; 'vendeu' corresponde a ele/ela/você.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós vendeu a casa antiga no ano passado.",
+            "why": "El error está en el verbo 'vendeu', no en la expresión de tiempo; hay que cambiarlo a 'vendemos'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error relacionado con el pretérito perfeito.",
+        "sentence": "Eu saiu do trabalho mais tarde.",
+        "answers": [
+          "Eu saí do trabalho mais tarde."
+        ],
+        "explanation": "La primera persona ('eu') del pretérito perfeito de 'sair' es 'saí', con acento; 'saiu' es la forma de ele/ela/você.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu saiu do trabalho mais tarde, hoje.",
+            "why": "Agregar 'hoje' no corrige el error; el problema está en la forma verbal 'saiu', que debe cambiarse a 'saí'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el pretérito perfeito.",
+        "spanish": "¿Vos ya comiste en ese restaurante nuevo?",
+        "answers": [
+          "Você já comeu nesse restaurante novo?",
+          "Você já comeu neste restaurante novo?"
+        ],
+        "explanation": "'Comiste' se traduce como 'comeu', la tercera persona del pretérito perfeito de 'comer' usada para 'você'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você já comió nesse restaurante novo?",
+            "why": "'Comió' es español; en portugués la forma correcta es 'comeu'."
+          },
+          {
+            "answer": "Você já comi nesse restaurante novo?",
+            "why": "'Comi' es la forma de 'eu', no de 'você'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el pretérito perfeito.",
+        "spanish": "Nosotros abrimos la tienda a las nueve.",
+        "answers": [
+          "Nós abrimos a loja às nove horas.",
+          "Nós abrimos a loja às nove."
+        ],
+        "explanation": "'Abrimos' en pretérito perfeito de 'abrir' para 'nós' es 'abrimos', igual que en presente pero con valor de pasado por el contexto.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós abriu a loja às nove horas.",
+            "why": "'Abriu' es la forma de ele/ela/você, no de 'nós'."
+          },
+          {
+            "answer": "Nós abrimos a loja a nove horas.",
+            "why": "Falta la contracción 'às' (a + as), necesaria antes de una hora en plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el pretérito perfeito.",
+        "spanish": "Ellos vendieron el auto viejo la semana pasada.",
+        "answers": [
+          "Eles venderam o carro velho na semana passada."
+        ],
+        "explanation": "'Vendieron' se traduce como 'venderam', tercera persona plural del pretérito perfeito de 'vender'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles vendió o carro velho na semana passada.",
+            "why": "'Vendió' es español; en portugués la forma correcta para eles es 'venderam'."
+          },
+          {
+            "answer": "Eles vendeu o carro velho na semana passada.",
+            "why": "'Vendeu' es singular (ele/você), pero el sujeto 'eles' es plural."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el pretérito perfeito.",
+        "spanish": "Yo bebí mucha agua durante el partido.",
+        "answers": [
+          "Eu bebi muita água durante o jogo."
+        ],
+        "explanation": "'Bebí' se traduce como 'bebi', primera persona del pretérito perfeito de 'beber', con terminación -i.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu bebeu muita água durante o jogo.",
+            "why": "'Bebeu' es la forma de ele/ela/você, no de 'eu'."
+          },
+          {
+            "answer": "Eu bebí muita água durante o jogo.",
+            "why": "La forma correcta no lleva acento: es 'bebi', sin tilde."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el pretérito perfeito.",
+        "spanish": "¿Vos entendiste la explicación del médico?",
+        "answers": [
+          "Você entendeu a explicação do médico?"
+        ],
+        "explanation": "'Entendiste' se traduce como 'entendeu', la forma de 'você' en pretérito perfeito de 'entender'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você entendió a explicação do médico?",
+            "why": "'Entendió' es español; en portugués la forma correcta es 'entendeu'."
+          },
+          {
+            "answer": "Você entendi a explicação do médico?",
+            "why": "'Entendi' es la forma de 'eu', no de 'você'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués usando el pretérito perfeito.",
+        "spanish": "Nosotros salimos muy temprano para el aeropuerto.",
+        "answers": [
+          "Nós saímos muito cedo para o aeroporto."
+        ],
+        "explanation": "'Salimos' se traduce como 'saímos', la forma de 'nós' en pretérito perfeito de 'sair', que lleva acento en el 'í'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós saimos muito cedo para o aeroporto.",
+            "why": "Falta el acento; la forma correcta es 'saímos', con tilde en la 'í'."
+          },
+          {
+            "answer": "Nós saiu muito cedo para o aeroporto.",
+            "why": "'Saiu' es la forma de ele/ela/você, no de 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración del presente al pretérito perfeito.",
+        "sentence": "Eu bebo água depois do treino.",
+        "answers": [
+          "Eu bebi água depois do treino."
+        ],
+        "explanation": "En los verbos en -er, la primera persona (eu) del pretérito perfeito termina en -i: bebi, no bebeu.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu bebeu água depois do treino.",
+            "why": "'Eu' usa la terminación -i en los verbos en -er; -eu es la forma de ele/ela."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Cambiá el sujeito de 'eu' a 'ele' (Lucas), ajustando el verbo.",
+        "sentence": "Eu abri a loja hoje.",
+        "answers": [
+          "Lucas abriu a loja hoje."
+        ],
+        "explanation": "La tercera persona de los verbos en -ir termina en -iu: abriu, nunca en -ió como en español.",
+        "wrongAnswers": [
+          {
+            "answer": "Lucas abrió a loja hoje.",
+            "why": "En portugués la tercera persona termina en -iu, no en -ió, que es la forma del español."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Cambiá el sujeito de 'ela' a 'nós'.",
+        "sentence": "Marina comeu no restaurante japonês.",
+        "answers": [
+          "Nós comemos no restaurante japonês."
+        ],
+        "explanation": "La forma de 'nós' en los verbos en -er es -emos: comemos, igual que en presente pero con sentido de pasado por el contexto.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós comeram no restaurante japonês.",
+            "why": "'Comeram' es la forma de 'eles/elas', no de 'nós', que usa 'comemos'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración a la forma negativa.",
+        "sentence": "Ana vendeu o celular antigo.",
+        "answers": [
+          "Ana não vendeu o celular antigo."
+        ],
+        "explanation": "En portugués, 'não' se coloca antes del verbo conjugado para negar la oración.",
+        "wrongAnswers": [
+          {
+            "answer": "Ana vendeu não o celular antigo.",
+            "why": "'Não' debe ir antes del verbo, no después."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Cambiá el sujeto de 'você' a 'vocês'.",
+        "sentence": "Você já abriu o consultório?",
+        "answers": [
+          "Vocês já abriram o consultório?"
+        ],
+        "explanation": "La tercera persona plural de los verbos en -ir termina en -iram: abriram, diferente de la forma singular -iu.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês já abriu o consultório?",
+            "why": "'Vocês' necesita la terminación plural -iram, no la forma singular -iu."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Nós comemos pizza no sábado à noite.",
+        "alternatives": [
+          "Comemos pizza no sábado à noite."
+        ],
+        "translation": "Comimos pizza el sábado a la noche.",
+        "explanation": "Al escuchar 'comemos', no lo confundas con 'comeu' (él comió); prestá atención a la terminación completa de la palabra."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Ela abriu o restaurante às oito horas.",
+        "alternatives": [
+          "Ela abriu o restaurante às 8 horas."
+        ],
+        "translation": "Ella abrió el restaurante a las ocho.",
+        "explanation": "El sonido final de 'abriu' es breve y termina en -iu; no le agregues una vocal extra como en el 'abrió' del español."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Eles venderam a casa antiga em outubro.",
+        "alternatives": [
+          "Eles venderam a casa antiga no mês de outubro."
+        ],
+        "translation": "Ellos vendieron la casa antigua en octubre.",
+        "explanation": "La terminación '-eram' de la tercera persona plural puede confundirse con '-eu' si no se escucha bien la sílaba final completa."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá la oración y escribila completa.",
+        "sentence": "Você já saiu do médico hoje de manhã?",
+        "alternatives": [
+          "Você já saiu do médico hoje pela manhã?"
+        ],
+        "translation": "¿Ya saliste del médico hoy a la mañana?",
+        "explanation": "No confundas 'saiu' (él/ella salió) con 'saí' (yo salí); la diferencia está en la vocal final de la palabra."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Marcá cuál de las dos palabras escuchás.",
+        "pair": [
+          "avó",
+          "avô"
+        ],
+        "target": 0,
+        "meanings": [
+          "abuela",
+          "abuelo"
+        ],
+        "explanation": "'Avó' tiene una 'o' abierta (como en 'bola') y 'avô' una 'o' cerrada (como en 'vôo'); en español no existe esta diferencia de apertura."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Marcá cuál de las dos palabras escuchás.",
+        "pair": [
+          "sim",
+          "cem"
+        ],
+        "target": 0,
+        "meanings": [
+          "sí",
+          "cien"
+        ],
+        "explanation": "Ambas son nasales, pero el sonido de la vocal es distinto: 'cem' nasaliza una 'e' y 'sim' nasaliza una 'i'; hay que escuchar bien la vocal antes de la nasalización."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Marcá cuál de las dos palabras escuchás.",
+        "pair": [
+          "caça",
+          "casa"
+        ],
+        "target": 1,
+        "meanings": [
+          "cacería",
+          "casa"
+        ],
+        "explanation": "La 'ç' suena como una 's' sorda (como en 'sapo'), mientras que la 's' entre vocales en portugués suena como 'z' ('casa' se pronuncia 'caza'); en español ambas sonarían igual."
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre Ana y Pedro y respondé las preguntas en español. Prestá atención a las terminaciones de los verbos.",
+        "situation": "Ana llama por teléfono a su amigo Pedro para preguntarle cómo le fue en su día de trabajo.",
+        "lines": [
+          {
+            "speaker": "Ana",
+            "text": "Oi, Pedro! O que você comeu no almoço?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Eu comi um peixe grande."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Você abriu a loja hoje?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Sim, eu abri a loja de manhã."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Vocês venderam muitas coisas?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Vendemos poucas coisas, mas foi bom."
+          },
+          {
+            "speaker": "Ana",
+            "text": "Você saiu tarde do trabalho?"
+          },
+          {
+            "speaker": "Pedro",
+            "text": "Saí bem tarde, quase às nove."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué comió Pedro en el almuerzo?",
+            "options": [
+              "Una sopa",
+              "Una pizza",
+              "Un pescado grande",
+              "Un pollo"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'Eu comi um peixe grande'. 'Comi' es la forma de 'eu' del verbo 'comer' en pretérito perfeito, que termina en -i."
+          },
+          {
+            "prompt": "¿Quién abrió la tienda esta mañana?",
+            "options": [
+              "No se dice",
+              "Pedro",
+              "Los dos juntos",
+              "Ana"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pedro responde 'eu abri a loja de manhã'. 'Abri' es la forma de 'eu' del verbo 'abrir', terminada en -i, no en -io."
+          },
+          {
+            "prompt": "¿A qué hora salió Pedro del trabajo?",
+            "options": [
+              "A las diez",
+              "A las ocho",
+              "A las nueve",
+              "A las siete"
+            ],
+            "correctIndex": 2,
+            "explanation": "Pedro dice 'Saí bem tarde, quase às nove'. 'Saí' es la forma de 'eu' del verbo 'sair' (regular en -ir) en pretérito perfeito."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Escuchá la charla entre Marina y Clara y respondé las preguntas en español. Fijate quién hizo cada acción.",
+        "situation": "Marina y Clara son amigas de viaje en Río de Janeiro. De noche, en el hostel, comentan lo que hicieron durante el día.",
+        "lines": [
+          {
+            "speaker": "Marina",
+            "text": "Clara, o que você comeu no café da manhã?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Eu comi um pão de queijo."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Nós decidimos visitar o Pão de Açúcar."
+          },
+          {
+            "speaker": "Clara",
+            "text": "Vocês subiram até o topo?"
+          },
+          {
+            "speaker": "Marina",
+            "text": "Sim, subimos e tiramos fotos."
+          },
+          {
+            "speaker": "Clara",
+            "text": "Eu abri uma garrafa de água lá."
+          },
+          {
+            "speaker": "Marina",
+            "text": "Você bebeu toda a água?"
+          },
+          {
+            "speaker": "Clara",
+            "text": "Bebi quase tudo, estava calor."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Qué comió Clara en el desayuno?",
+            "options": [
+              "Un pan de queso",
+              "Una fruta",
+              "Nada",
+              "Un bizcocho"
+            ],
+            "correctIndex": 0,
+            "explanation": "Clara dice 'Eu comi um pão de queijo'. 'Comi' es la forma de 'eu' del verbo 'comer', terminada en -i."
+          },
+          {
+            "prompt": "¿Qué decidieron visitar Marina y Clara?",
+            "options": [
+              "El Pan de Azúcar",
+              "El Cristo Redentor",
+              "La playa",
+              "El museo"
+            ],
+            "correctIndex": 0,
+            "explanation": "Marina dice 'Nós decidimos visitar o Pão de Açúcar'. 'Decidimos' es la forma de 'nós' del verbo 'decidir' en pretérito perfeito."
+          },
+          {
+            "prompt": "¿Quién abrió la botella de agua?",
+            "options": [
+              "El guía",
+              "Clara",
+              "Marina",
+              "Las dos juntas"
+            ],
+            "correctIndex": 1,
+            "explanation": "Clara dice 'Eu abri uma garrafa de água lá'. 'Abri' es la forma de 'eu' del verbo 'abrir', terminada en -i."
+          }
+        ]
+      }
+    ]
+  }
+}

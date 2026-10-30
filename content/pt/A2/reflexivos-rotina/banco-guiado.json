@@ -1,0 +1,783 @@
+{
+  "subtopics": {
+    "verbos-reflexivos-pronombres": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre reflexivo correcto.",
+        "prompt": "Oi, eu ___ chamo Lucas.",
+        "options": [
+          "se",
+          "nos",
+          "te",
+          "me"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con el sujeto 'eu' siempre se usa el pronombre reflexivo 'me': eu me chamo.",
+        "optionNotes": [
+          "Incorrecto: 'se' corresponde a você/ele/ela, no a 'eu'.",
+          "Incorrecto: 'nos' corresponde a 'nós', no a 'eu'.",
+          "Incorrecto: 'te' corresponde a 'tu', no se usa con 'eu'.",
+          "Correcto: 'me' es el pronombre que corresponde a 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre reflexivo correcto.",
+        "prompt": "Como você ___ chama?",
+        "options": [
+          "te",
+          "me",
+          "se",
+          "nos"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con 'você' el pronombre reflexivo correcto es 'se': você se chama.",
+        "optionNotes": [
+          "Incorrecto: 'te' no es el pronombre estándar que se usa con 'você' en esta lección.",
+          "Incorrecto: 'me' corresponde a 'eu', no a 'você'.",
+          "Correcto: 'se' es el pronombre reflexivo que corresponde a 'você'.",
+          "Incorrecto: 'nos' corresponde a 'nós', no a 'você'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre reflexivo correcto.",
+        "prompt": "Ela ___ chama Marina.",
+        "options": [
+          "me",
+          "se",
+          "te",
+          "nos"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con 'ela' el pronombre reflexivo correcto es 'se': ela se chama.",
+        "optionNotes": [
+          "Incorrecto: 'me' corresponde a 'eu', no a 'ela'.",
+          "Correcto: 'se' es el pronombre reflexivo que corresponde a 'ela'.",
+          "Incorrecto: 'te' corresponde a 'tu', no a 'ela'.",
+          "Incorrecto: 'nos' corresponde a 'nós', no a 'ela'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre reflexivo correcto.",
+        "prompt": "Nós ___ levantamos cedo para o trabalho.",
+        "options": [
+          "nos",
+          "se",
+          "me",
+          "te"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'nós' el pronombre reflexivo correcto es 'nos': nós nos levantamos.",
+        "optionNotes": [
+          "Correcto: 'nos' es el pronombre reflexivo que corresponde a 'nós'.",
+          "Incorrecto: 'se' corresponde a você/ele/ela/eles, no a 'nós'.",
+          "Incorrecto: 'me' corresponde a 'eu', no a 'nós'.",
+          "Incorrecto: 'te' corresponde a 'tu', no a 'nós'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre reflexivo correcto.",
+        "prompt": "Eles ___ chamam João e Pedro.",
+        "options": [
+          "se",
+          "te",
+          "nos",
+          "me"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con 'eles' el pronombre reflexivo correcto es 'se': eles se chamam.",
+        "optionNotes": [
+          "Correcto: 'se' es el pronombre reflexivo que corresponde a 'eles'.",
+          "Incorrecto: 'te' corresponde a 'tu', no a 'eles'.",
+          "Incorrecto: 'nos' corresponde a 'nós', no a 'eles'.",
+          "Incorrecto: 'me' corresponde a 'eu', no a 'eles'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí el pronombre reflexivo correcto.",
+        "prompt": "Eu ___ levanto cedo todos os dias.",
+        "options": [
+          "se",
+          "nos",
+          "te",
+          "me"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con el sujeto 'eu' siempre se usa el pronombre reflexivo 'me': eu me levanto.",
+        "optionNotes": [
+          "Incorrecto: 'se' corresponde a você/ele/ela, no a 'eu'.",
+          "Incorrecto: 'nos' corresponde a 'nós', no a 'eu'.",
+          "Incorrecto: 'te' corresponde a 'tu', no a 'eu'.",
+          "Correcto: 'me' es el pronombre que corresponde a 'eu'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre reflexivo correcto.",
+        "sentence": "Oi! Eu ___ chamo Lucas, prazer!",
+        "hint": "(chamar-se)",
+        "answers": [
+          "me"
+        ],
+        "explanation": "Con 'eu' el pronombre reflexivo correcto es 'me': eu me chamo.",
+        "wrongAnswers": [
+          {
+            "answer": "se",
+            "why": "Con 'eu' el reflexivo correcto es 'me', no 'se'."
+          },
+          {
+            "answer": "te",
+            "why": "'Te' corresponde a 'tu', no a 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre reflexivo correcto.",
+        "sentence": "Como você ___ chama?",
+        "hint": "(chamar-se)",
+        "answers": [
+          "se"
+        ],
+        "explanation": "Con 'você' el pronombre reflexivo correcto es 'se': você se chama.",
+        "wrongAnswers": [
+          {
+            "answer": "me",
+            "why": "'Me' corresponde a 'eu', no a 'você'."
+          },
+          {
+            "answer": "nos",
+            "why": "'Nos' corresponde a 'nós', no a 'você'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre reflexivo correcto.",
+        "sentence": "Marina, você ___ lembra de mim?",
+        "hint": "(lembrar-se)",
+        "answers": [
+          "se"
+        ],
+        "explanation": "Con 'você' el pronombre reflexivo correcto es 'se': você se lembra.",
+        "wrongAnswers": [
+          {
+            "answer": "me",
+            "why": "'Me' corresponde a 'eu', no a 'você'."
+          },
+          {
+            "answer": "te",
+            "why": "'Te' no es el pronombre que se usa con 'você' en esta lección."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre reflexivo correcto.",
+        "sentence": "Nós ___ conhecemos na faculdade.",
+        "hint": "(conhecer-se)",
+        "answers": [
+          "nos"
+        ],
+        "explanation": "Con 'nós' el pronombre reflexivo correcto es 'nos': nós nos conhecemos.",
+        "wrongAnswers": [
+          {
+            "answer": "se",
+            "why": "'Se' corresponde a você/ele/ela/eles, no a 'nós'."
+          },
+          {
+            "answer": "me",
+            "why": "'Me' corresponde a 'eu', no a 'nós'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre reflexivo correcto.",
+        "sentence": "Pedro e João ___ chamam assim desde pequenos.",
+        "hint": "(chamar-se)",
+        "answers": [
+          "se"
+        ],
+        "explanation": "Con 'eles' (Pedro e João) el pronombre reflexivo correcto es 'se': eles se chamam.",
+        "wrongAnswers": [
+          {
+            "answer": "nos",
+            "why": "'Nos' corresponde a 'nós', no a 'eles'."
+          },
+          {
+            "answer": "me",
+            "why": "'Me' corresponde a 'eu', no a 'eles'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá con el pronombre reflexivo correcto.",
+        "sentence": "Eu ___ levanto às seis da manhã para ir ao trabalho.",
+        "hint": "(levantar-se)",
+        "answers": [
+          "me"
+        ],
+        "explanation": "Con 'eu' el pronombre reflexivo correcto es 'me': eu me levanto.",
+        "wrongAnswers": [
+          {
+            "answer": "se",
+            "why": "'Se' corresponde a você/ele/ela, no a 'eu'."
+          },
+          {
+            "answer": "nos",
+            "why": "'Nos' corresponde a 'nós', no a 'eu'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Oi, eu me chamo Lucas.",
+        "alternatives": [],
+        "translation": "Hola, me llamo Lucas.",
+        "explanation": "En el habla cotidiana de Brasil el pronombre reflexivo 'me' va antes del verbo: 'me chamo'.",
+        "tokens": [
+          "Oi,",
+          "eu",
+          "chamo",
+          "Lucas",
+          "me"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Como você se chama, por favor?",
+        "alternatives": [
+          "Por favor, como você se chama?"
+        ],
+        "translation": "¿Cómo te llamás, por favor?",
+        "explanation": "Con 'você' el pronombre reflexivo 'se' va antes del verbo: 'se chama'.",
+        "tokens": [
+          "favor",
+          "chama,",
+          "se",
+          "por",
+          "você",
+          "Como"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Nós nos conhecemos na entrevista de emprego.",
+        "alternatives": [],
+        "translation": "Nosotros nos conocemos en la entrevista de trabajo.",
+        "explanation": "Con 'nós' el pronombre reflexivo 'nos' va antes del verbo: 'nos conhecemos'.",
+        "tokens": [
+          "na",
+          "Nós",
+          "nos",
+          "entrevista",
+          "conhecemos",
+          "de",
+          "emprego"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Eu me levanto cedo para o trabalho.",
+        "alternatives": [],
+        "translation": "Yo me levanto temprano para el trabajo.",
+        "explanation": "Con 'eu' el pronombre reflexivo 'me' va antes del verbo: 'me levanto'.",
+        "tokens": [
+          "cedo",
+          "levanto",
+          "me",
+          "para",
+          "o",
+          "trabalho",
+          "Eu"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una oración correcta en portugués.",
+        "sentence": "Vocês se conhecem desde a escola?",
+        "alternatives": [],
+        "translation": "¿Ustedes se conocen desde la escuela?",
+        "explanation": "Con 'vocês' el pronombre reflexivo 'se' va antes del verbo: 'se conhecem'.",
+        "tokens": [
+          "desde",
+          "se",
+          "Vocês",
+          "escola",
+          "conhecem",
+          "a"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en el pronombre reflexivo.",
+        "sentence": "Eu se chamo Lucas.",
+        "answers": [
+          "Eu me chamo Lucas."
+        ],
+        "explanation": "Con 'eu' el pronombre reflexivo correcto es 'me', no 'se'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu me chama Lucas.",
+            "why": "Esto cambia la conjugación del verbo en vez de corregir el pronombre, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en el pronombre reflexivo.",
+        "sentence": "Eles nos levantam cedo para o trabalho.",
+        "answers": [
+          "Eles se levantam cedo para o trabalho."
+        ],
+        "explanation": "Con 'eles' el pronombre reflexivo correcto es 'se', no 'nos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles se levanta cedo para o trabalho.",
+            "why": "Esto cambia la conjugación del verbo en vez de corregir el pronombre, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error de posición del pronombre.",
+        "sentence": "Eu levanto-me cedo todos os dias.",
+        "answers": [
+          "Eu me levanto cedo todos os dias."
+        ],
+        "explanation": "En el habla cotidiana de Brasil el pronombre reflexivo va antes del verbo: 'me levanto', no 'levanto-me' (eso es más típico de Portugal).",
+        "wrongAnswers": [
+          {
+            "answer": "Eu me levanta cedo todos os dias.",
+            "why": "Esto cambia la conjugación del verbo en vez de corregir la posición del pronombre, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en el pronombre reflexivo.",
+        "sentence": "Nós se conhecemos na faculdade.",
+        "answers": [
+          "Nós nos conhecemos na faculdade."
+        ],
+        "explanation": "Con 'nós' el pronombre reflexivo correcto es 'nos', no 'se'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós se conhece na faculdade.",
+            "why": "Esto cambia la conjugación del verbo en vez de corregir el pronombre, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá y corregí el error en el pronombre reflexivo.",
+        "sentence": "Eles nos chamam João e Pedro.",
+        "answers": [
+          "Eles se chamam João e Pedro."
+        ],
+        "explanation": "Con 'eles' el pronombre reflexivo correcto es 'se', no 'nos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles se chama João e Pedro.",
+            "why": "Esto cambia la conjugación del verbo en vez de corregir el pronombre, que era el error real."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Hola, ¿cómo te llamás?",
+        "answers": [
+          "Oi, como você se chama?",
+          "Olá, como você se chama?"
+        ],
+        "explanation": "Con 'você' el pronombre reflexivo correcto es 'se', y en Brasil va antes del verbo: 'se chama'.",
+        "wrongAnswers": [
+          {
+            "answer": "Oi, como você chama-se?",
+            "why": "En Brasil el pronombre va antes del verbo en el habla cotidiana; lo natural es 'se chama', no 'chama-se'."
+          },
+          {
+            "answer": "Oi, como você me chama?",
+            "why": "Usa el pronombre 'me', que corresponde a 'eu', no a 'você'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Me llamo Marina y soy de Buenos Aires.",
+        "answers": [
+          "Eu me chamo Marina e sou de Buenos Aires."
+        ],
+        "explanation": "Con 'eu' el pronombre reflexivo correcto es 'me': eu me chamo.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu se chamo Marina e sou de Buenos Aires.",
+            "why": "Con 'eu' el pronombre reflexivo correcto es 'me', no 'se'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Nos levantamos temprano para ir a trabajar.",
+        "answers": [
+          "Nós nos levantamos cedo para ir trabalhar."
+        ],
+        "explanation": "Con 'nós' el pronombre reflexivo correcto es 'nos': nós nos levantamos.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós se levantamos cedo para ir trabalhar.",
+            "why": "Con 'nós' el pronombre reflexivo correcto es 'nos', no 'se'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Te acordás de mi nombre?",
+        "answers": [
+          "Você se lembra do meu nome?"
+        ],
+        "explanation": "Con 'você' el pronombre reflexivo correcto es 'se', y en Brasil va antes del verbo: 'se lembra'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você lembra-se do meu nome?",
+            "why": "En el habla cotidiana de Brasil el pronombre va antes del verbo: 'se lembra', no 'lembra-se'."
+          },
+          {
+            "answer": "Você te lembra do meu nome?",
+            "why": "Con 'você' el pronombre reflexivo que se usa es 'se', no 'te'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "Ellos se llaman Juan y Pedro.",
+        "answers": [
+          "Eles se chamam João e Pedro."
+        ],
+        "explanation": "El verbo debe concordar con 'eles' en plural: 'chamam', y el pronombre reflexivo correcto es 'se'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eles se chama João e Pedro.",
+            "why": "El verbo debe concordar con 'eles' en plural: 'chamam', no 'chama'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la oración al portugués.",
+        "spanish": "¿Ustedes se conocen desde la escuela?",
+        "answers": [
+          "Vocês se conhecem desde a escola?"
+        ],
+        "explanation": "Con 'vocês' el pronombre reflexivo correcto es 'se', y en Brasil va antes del verbo: 'se conhecem'.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês conhecem-se desde a escola?",
+            "why": "En el habla cotidiana de Brasil el pronombre va antes del verbo: 'se conhecem', no 'conhecem-se'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Cambiá el sujeto de 'eu' a 'ele', ajustando el pronombre reflexivo y el verbo.",
+        "sentence": "Eu me chamo Lucas.",
+        "answers": [
+          "Ele se chama Lucas."
+        ],
+        "explanation": "Con 'ele' el pronombre reflexivo es 'se' y el verbo va en tercera persona singular: se chama.",
+        "wrongAnswers": [
+          {
+            "answer": "Ele me chama Lucas.",
+            "why": "El pronombre 'me' corresponde solo a 'eu'; con 'ele' hay que usar 'se'."
+          },
+          {
+            "answer": "Ele se chamam Lucas.",
+            "why": "El verbo quedó en plural ('chamam'); con 'ele' (singular) tiene que ser 'chama'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Cambiá el sujeto de 'você' a 'nós', ajustando el pronombre reflexivo y el verbo.",
+        "sentence": "Você se levanta cedo para o trabalho.",
+        "answers": [
+          "Nós nos levantamos cedo para o trabalho."
+        ],
+        "explanation": "Con 'nós' el pronombre reflexivo es 'nos' y el verbo va en primera persona del plural: levantamos.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós se levantamos cedo para o trabalho.",
+            "why": "El pronombre 'se' no corresponde a 'nós'; con 'nós' siempre se usa 'nos'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración a la forma negativa.",
+        "sentence": "Eu me lembro do endereço do consultório.",
+        "answers": [
+          "Eu não me lembro do endereço do consultório."
+        ],
+        "explanation": "Para negar, 'não' se coloca antes del pronombre reflexivo y del verbo: não me lembro.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu me não lembro do endereço do consultório.",
+            "why": "El 'não' tiene que ir antes del pronombre reflexivo, no entre el pronombre y el verbo."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Cambiá el sujeto de 'nós' a 'vocês', ajustando el pronombre reflexivo y el verbo.",
+        "sentence": "Nós nos chamamos Ana e Rita.",
+        "answers": [
+          "Vocês se chamam Ana e Rita."
+        ],
+        "explanation": "Con 'vocês' el pronombre reflexivo es 'se' y el verbo va en tercera persona del plural: chamam.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês nos chamam Ana e Rita.",
+            "why": "El pronombre 'nos' corresponde solo a 'nós'; con 'vocês' hay que usar 'se'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Eu me chamo Lucas e trabalho em São Paulo.",
+        "alternatives": [],
+        "translation": "Me llamo Lucas y trabajo en San Pablo.",
+        "explanation": "El pronombre 'me' va antes del verbo en el habla de todos los días en Brasil; no lo confundas con 'se', que es para você/ele/ela."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Nós nos levantamos muito cedo para o médico.",
+        "alternatives": [],
+        "translation": "Nosotros nos levantamos muy temprano para el médico.",
+        "explanation": "'Nos' antes del verbo corresponde a 'nós'; prestá atención a no decir 'se levantamos', que sería incorrecto."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Você se lembra do endereço do consultório?",
+        "alternatives": [],
+        "translation": "¿Te acordás de la dirección del consultorio?",
+        "explanation": "El pronombre 'se' con 'você' puede sonar parecido a 'te' del español, pero en portugués siempre es 'se', nunca 'te' en este caso."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Eles se conhecem desde a escola.",
+        "alternatives": [],
+        "translation": "Ellos se conocen desde la escuela.",
+        "explanation": "El verbo 'conhecem' termina en '-em' nasal; no lo confundas con 'conhece', que es singular."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "nos",
+          "nós"
+        ],
+        "target": 1,
+        "meanings": [
+          "nos (pronombre)",
+          "nosotros"
+        ],
+        "explanation": "'Nós' lleva acento y se pronuncia con una 'o' abierta y marcada; 'nos' sin acento suena más cerrado, casi como 'nus'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "chamam",
+          "chama"
+        ],
+        "target": 0,
+        "meanings": [
+          "llaman (ellos/ellas)",
+          "llama (él/ella)"
+        ],
+        "explanation": "La 'm' final de 'chamam' nasaliza la última vocal y se nota un leve sonido cerrado al final; en 'chama' la 'a' final queda abierta, sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "roça",
+          "rosa"
+        ],
+        "target": 1,
+        "meanings": [
+          "chacra / campo",
+          "rosa"
+        ],
+        "explanation": "La 's' entre vocales en 'rosa' suena como una 'z' sonora; la 'ç' de 'roça' suena como la 's' sorda del español."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre Beatriz y Rafael y respondé las preguntas.",
+        "situation": "Beatriz y Rafael se encuentran en una fiesta en San Pablo y charlan después de reconocerse.",
+        "lines": [
+          {
+            "speaker": "Beatriz",
+            "text": "Oi! Como você se chama?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Eu me chamo Rafael."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Nós já nos conhecemos?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Sim, nós nos conhecemos ontem."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Você se lembra de mim?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Claro, eu me lembro de você."
+          },
+          {
+            "speaker": "Beatriz",
+            "text": "Você se levanta cedo?"
+          },
+          {
+            "speaker": "Rafael",
+            "text": "Sim, eu me levanto às seis."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo se llama el varón que habla?",
+            "options": [
+              "Marcelo",
+              "Pedro",
+              "Lucas",
+              "Rafael"
+            ],
+            "correctIndex": 3,
+            "explanation": "Dice 'Eu me chamo Rafael', usando me, el pronombre reflexivo que corresponde a eu."
+          },
+          {
+            "prompt": "¿Cuándo se conocieron Beatriz y Rafael?",
+            "options": [
+              "Hace un año",
+              "Hoy",
+              "La semana pasada",
+              "Ayer"
+            ],
+            "correctIndex": 3,
+            "explanation": "Rafael dice 'nós nos conhecemos ontem', usando nos, el pronombre reflexivo que corresponde a nós."
+          },
+          {
+            "prompt": "¿A qué hora se levanta Rafael?",
+            "options": [
+              "A las ocho",
+              "A las siete",
+              "A las seis",
+              "A las cinco"
+            ],
+            "correctIndex": 2,
+            "explanation": "Rafael dice 'eu me levanto às seis', con el pronombre me antes del verbo levanto, como es habitual en Brasil."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre el médico y el paciente y respondé las preguntas.",
+        "situation": "Un médico atiende a un paciente en un consultorio en Río de Janeiro y le pregunta sobre su rutina.",
+        "lines": [
+          {
+            "speaker": "Médico",
+            "text": "Boa tarde! Como você se chama?"
+          },
+          {
+            "speaker": "Paciente",
+            "text": "Eu me chamo Marcelo."
+          },
+          {
+            "speaker": "Médico",
+            "text": "A que horas você se levanta?"
+          },
+          {
+            "speaker": "Paciente",
+            "text": "Eu me levanto às dez."
+          },
+          {
+            "speaker": "Médico",
+            "text": "Você se sente cansado hoje?"
+          },
+          {
+            "speaker": "Paciente",
+            "text": "Sim, eu me sinto cansado."
+          },
+          {
+            "speaker": "Médico",
+            "text": "Você se lembra do meu nome?"
+          },
+          {
+            "speaker": "Paciente",
+            "text": "Não, eu não me lembro."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Cómo se llama el paciente?",
+            "options": [
+              "Rafael",
+              "Marcelo",
+              "Pedro",
+              "Lucas"
+            ],
+            "correctIndex": 1,
+            "explanation": "El paciente dice 'Eu me chamo Marcelo', usando me, el pronombre reflexivo que corresponde a eu."
+          },
+          {
+            "prompt": "¿A qué hora se levanta Marcelo?",
+            "options": [
+              "A las ocho",
+              "A las seis",
+              "A las diez",
+              "A las doce"
+            ],
+            "correctIndex": 2,
+            "explanation": "El paciente dice 'Eu me levanto às dez', con el pronombre me antes del verbo levanto."
+          },
+          {
+            "prompt": "¿Marcelo se acuerda del nombre del médico?",
+            "options": [
+              "No, no se acuerda",
+              "No contesta",
+              "Sí, se acuerda",
+              "Se acuerda a veces"
+            ],
+            "correctIndex": 0,
+            "explanation": "El paciente responde 'Não, eu não me lembro', usando me lembro (de lembrar-se) con el pronombre me antes del verbo, negado con não."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,833 @@
+{
+  "subtopics": {
+    "imperfeito-formacao": [
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del imperfecto para completar la frase.",
+        "prompt": "Eu ___ em Córdoba quando era criança.",
+        "options": [
+          "morava",
+          "morou",
+          "morei",
+          "moro"
+        ],
+        "correctIndex": 0,
+        "explanation": "El imperfecto de 'morar' para 'eu' es 'morava'; se usa para hablar de algo habitual en el pasado, como vivir en un lugar durante la infancia.",
+        "optionNotes": [
+          "Correcto: 'morava' es el imperfecto de 'morar' para 'eu', usado para una situación habitual en el pasado.",
+          "'Morou' es pretérito perfecto (acción puntual), no imperfecto, que es lo que pide la frase.",
+          "'Morei' es pretérito perfecto, no imperfecto.",
+          "'Moro' es presente; la frase habla del pasado con 'quando era criança'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del imperfecto para completar la frase.",
+        "prompt": "Você ___ na mesma empresa todos os dias.",
+        "options": [
+          "trabalhiava",
+          "trabalhoava",
+          "trabalhavas",
+          "trabalhava"
+        ],
+        "correctIndex": 3,
+        "explanation": "Con 'você' se usa la misma forma del imperfecto que con 'ele/ela': 'trabalhava', sin la 's' final que llevaría la forma de 'tu'.",
+        "optionNotes": [
+          "'Trabalhiava' no existe; los verbos en -ar forman el imperfecto con '-ava', no con '-ia'.",
+          "'Trabalhoava' no es una forma válida del imperfecto.",
+          "'Trabalhavas' es la forma de 'tu', que no se usa con 'você' en portugués de Brasil.",
+          "Correcto: con 'você' se usa la misma forma que con 'ele/ela', 'trabalhava'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del imperfecto para completar la frase.",
+        "prompt": "Nós ___ português à noite.",
+        "options": [
+          "estudamos",
+          "estudávamos",
+          "estudiamos",
+          "estudavamos"
+        ],
+        "correctIndex": 1,
+        "explanation": "El imperfecto de 'nós' en verbos terminados en -ar lleva tilde: 'estudávamos'. No se usa '-iamos', que es un calco del español.",
+        "optionNotes": [
+          "'Estudamos' es presente o pretérito perfecto, no imperfecto.",
+          "Correcto: el imperfecto de 'nós' en verbos -ar lleva tilde: 'estudávamos'.",
+          "'Estudiamos' es un calco del español; en portugués no se usa '-iamos' para verbos en -ar.",
+          "Falta la tilde: la forma correcta es 'estudávamos', con acento en la á."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del imperfecto para completar la frase.",
+        "prompt": "Eles ___ pizza todos os sábados.",
+        "options": [
+          "comíam",
+          "comiavam",
+          "comiam",
+          "comem"
+        ],
+        "correctIndex": 2,
+        "explanation": "El imperfecto de 'comer' para 'eles' es 'comiam', sin tilde y sin mezclar terminaciones de otros verbos.",
+        "optionNotes": [
+          "'Comíam' no es correcto; la forma de 'eles' es 'comiam', sin acento.",
+          "'Comiavam' no existe; no se mezcla '-ia' con '-avam'.",
+          "Correcto: 'comiam' es el imperfecto de 'comer' para 'eles'.",
+          "'Comem' es presente, no imperfecto."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del imperfecto para completar la frase.",
+        "prompt": "Eu ___ a loja às oito horas.",
+        "options": [
+          "abriu",
+          "abriava",
+          "abro",
+          "abria"
+        ],
+        "correctIndex": 3,
+        "explanation": "El imperfecto de 'abrir' (verbo en -ir) para 'eu' es 'abria'; los verbos en -er e -ir usan la terminación '-ia', no '-ava'.",
+        "optionNotes": [
+          "'Abriu' es pretérito perfecto, una acción puntual, no habitual.",
+          "'Abriava' no existe; los verbos en -ir no usan '-ava'.",
+          "'Abro' es presente, no describe una costumbre pasada.",
+          "Correcto: 'abria' es el imperfecto de 'abrir' para 'eu'."
+        ]
+      },
+      {
+        "type": "multiple_choice",
+        "instruction": "Elegí la forma correcta del imperfecto para completar la frase.",
+        "prompt": "Nós ___ perto da praia quando éramos pequenos.",
+        "options": [
+          "viviamos",
+          "vivemos",
+          "vivíamos",
+          "vivávamos"
+        ],
+        "correctIndex": 2,
+        "explanation": "El imperfecto de 'nós' en verbos terminados en -er/-ir lleva tilde: 'vivíamos'.",
+        "optionNotes": [
+          "Falta la tilde: debe escribirse 'vivíamos', con acento en la í.",
+          "'Vivemos' es presente o pretérito perfecto, no imperfecto.",
+          "Correcto: 'vivíamos' lleva tilde porque es la forma de 'nós' en el imperfecto de 'viver'.",
+          "'Vivávamos' no existe; los verbos en -er/-ir no usan '-ava'."
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase con el imperfecto del verbo entre paréntesis.",
+        "sentence": "Eu ___ com o Lucas todos os dias depois da escola.",
+        "hint": "(falar)",
+        "answers": [
+          "falava"
+        ],
+        "explanation": "El imperfecto de 'falar' para 'eu' es 'falava'; los verbos en -ar usan la terminación '-ava'.",
+        "wrongAnswers": [
+          {
+            "answer": "falei",
+            "why": "'Falei' es pretérito perfecto, una acción puntual, no una costumbre pasada."
+          },
+          {
+            "answer": "falo",
+            "why": "'Falo' es presente; la frase describe algo habitual en el pasado."
+          },
+          {
+            "answer": "falaba",
+            "why": "'Falaba' es un calco del español; en portugués la forma correcta es 'falava'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase con el imperfecto del verbo entre paréntesis.",
+        "sentence": "Você ___ em São Paulo antes de se mudar para Buenos Aires?",
+        "hint": "(morar)",
+        "answers": [
+          "morava"
+        ],
+        "explanation": "Con 'você' se usa la misma forma del imperfecto que con 'ele/ela': 'morava'.",
+        "wrongAnswers": [
+          {
+            "answer": "morou",
+            "why": "'Morou' es pretérito perfecto, una acción puntual, no una situación que duraba en el pasado."
+          },
+          {
+            "answer": "mora",
+            "why": "'Mora' es presente; la frase pregunta sobre el pasado, antes de mudarse."
+          },
+          {
+            "answer": "moraba",
+            "why": "'Moraba' es un calco del español; en portugués la forma correcta es 'morava'."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase con el imperfecto del verbo entre paréntesis.",
+        "sentence": "Nós ___ juntos na mesma empresa todos os dias.",
+        "hint": "(trabalhar)",
+        "answers": [
+          "trabalhávamos"
+        ],
+        "explanation": "El imperfecto de 'nós' en verbos terminados en -ar lleva tilde: 'trabalhávamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "trabalhavamos",
+            "why": "Falta la tilde: la forma correcta es 'trabalhávamos', con acento en la á."
+          },
+          {
+            "answer": "trabalhiamos",
+            "why": "Es un calco del español; los verbos en -ar no usan '-iamos' en el imperfecto."
+          },
+          {
+            "answer": "trabalhamos",
+            "why": "Esa es la forma de presente o pretérito perfecto, no de imperfecto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase con el imperfecto del verbo entre paréntesis.",
+        "sentence": "Eles ___ frutas na feira todos os sábados.",
+        "hint": "(vender)",
+        "answers": [
+          "vendiam"
+        ],
+        "explanation": "El imperfecto de 'vender' para 'eles' es 'vendiam'; los verbos en -er usan la terminación '-ia'.",
+        "wrongAnswers": [
+          {
+            "answer": "vendiavam",
+            "why": "No existe esa terminación; no se mezcla '-ia' con '-avam'."
+          },
+          {
+            "answer": "vendian",
+            "why": "Es un calco de la ortografía española; en portugués se escribe 'vendiam', con 'm' final."
+          },
+          {
+            "answer": "vendem",
+            "why": "'Vendem' es presente, no imperfecto."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase con el imperfecto del verbo entre paréntesis.",
+        "sentence": "Eu ___ a porta da loja todas as manhãs.",
+        "hint": "(abrir)",
+        "answers": [
+          "abria"
+        ],
+        "explanation": "El imperfecto de 'abrir' para 'eu' es 'abria'; los verbos en -ir usan la terminación '-ia'.",
+        "wrongAnswers": [
+          {
+            "answer": "abriava",
+            "why": "No existe esa forma; los verbos en -ir no usan '-ava'."
+          },
+          {
+            "answer": "abro",
+            "why": "'Abro' es presente, no describe una costumbre pasada."
+          },
+          {
+            "answer": "abriu",
+            "why": "'Abriu' es pretérito perfecto, una acción puntual, no habitual."
+          }
+        ]
+      },
+      {
+        "type": "fill_blank",
+        "instruction": "Completá la frase con el imperfecto del verbo entre paréntesis.",
+        "sentence": "Nós ___ pão com manteiga no café da manhã.",
+        "hint": "(comer)",
+        "answers": [
+          "comíamos"
+        ],
+        "explanation": "El imperfecto de 'nós' en verbos terminados en -er lleva tilde: 'comíamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "comiamos",
+            "why": "Falta la tilde: la forma correcta es 'comíamos', con acento en la í."
+          },
+          {
+            "answer": "comemos",
+            "why": "Esa es la forma de presente o pretérito perfecto, no de imperfecto."
+          },
+          {
+            "answer": "comiábamos",
+            "why": "No existe esa forma en portugués; la terminación correcta es 'comíamos'."
+          }
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase correcta en portugués.",
+        "sentence": "Eu morava em Córdoba quando era criança.",
+        "alternatives": [
+          "Quando era criança, eu morava em Córdoba."
+        ],
+        "translation": "Yo vivía en Córdoba cuando era chico.",
+        "explanation": "'Morava' es el imperfecto de 'morar' para 'eu', usado para describir dónde vivía alguien en el pasado.",
+        "tokens": [
+          "quando",
+          "era",
+          "em",
+          "Córdoba",
+          "Eu",
+          "morava",
+          "criança"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase correcta en portugués.",
+        "sentence": "Nós comíamos juntos todos os domingos.",
+        "alternatives": [
+          "Todos os domingos, nós comíamos juntos."
+        ],
+        "translation": "Nosotros comíamos juntos todos los domingos.",
+        "explanation": "'Comíamos' lleva tilde porque es la forma de 'nós' en el imperfecto de 'comer'.",
+        "tokens": [
+          "juntos",
+          "Nós",
+          "os",
+          "domingos",
+          "comíamos",
+          "todos"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase correcta en portugués.",
+        "sentence": "Ela sempre abria a loja muito cedo.",
+        "alternatives": [],
+        "translation": "Ella siempre abría el negocio muy temprano.",
+        "explanation": "'Abria' es el imperfecto de 'abrir' para 'ela', usado para una acción habitual en el pasado.",
+        "tokens": [
+          "cedo",
+          "sempre",
+          "loja",
+          "Ela",
+          "a",
+          "abria",
+          "muito"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase correcta en portugués.",
+        "sentence": "Vocês trabalhavam na mesma empresa há anos.",
+        "alternatives": [
+          "Há anos, vocês trabalhavam na mesma empresa."
+        ],
+        "translation": "Ustedes trabajaban en la misma empresa hace años.",
+        "explanation": "'Trabalhavam' es el imperfecto de 'trabalhar' para 'vocês', con la terminación '-avam' típica de los verbos en -ar en plural.",
+        "tokens": [
+          "Vocês",
+          "há",
+          "mesma",
+          "na",
+          "empresa",
+          "anos",
+          "trabalhavam"
+        ]
+      },
+      {
+        "type": "word_order",
+        "instruction": "Ordená las palabras para formar una frase correcta en portugués.",
+        "sentence": "Eu escrevia cartas para meus amigos antigos.",
+        "alternatives": [],
+        "translation": "Yo escribía cartas para mis amigos antiguos.",
+        "explanation": "'Escrevia' es el imperfecto de 'escrever' para 'eu'; los verbos en -er usan la terminación '-ia'.",
+        "tokens": [
+          "antigos",
+          "Eu",
+          "para",
+          "meus",
+          "cartas",
+          "amigos",
+          "escrevia"
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la frase.",
+        "sentence": "Nós falavamos português na escola.",
+        "answers": [
+          "Nós falávamos português na escola."
+        ],
+        "explanation": "La forma de 'nós' en el imperfecto de verbos -ar lleva tilde: 'falávamos', no 'falavamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós falamos português na escola.",
+            "why": "Cambia el tiempo verbal a presente o pretérito perfecto, en vez de corregir la tilde faltante del imperfecto."
+          },
+          {
+            "answer": "Nós falavámos português na escola.",
+            "why": "La tilde está mal ubicada: debe ir sobre la 'a' que sigue a la raíz, antes de la 'v' ('falávamos'), no después de la 'v'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la frase.",
+        "sentence": "Eu trabalhia muito quando era jovem.",
+        "answers": [
+          "Eu trabalhava muito quando era jovem."
+        ],
+        "explanation": "Los verbos terminados en -ar forman el imperfecto con '-ava', no con '-ia', que es solo para verbos en -er e -ir.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu trabalhiava muito quando era jovem.",
+            "why": "Sigue mezclando la terminación '-ia' con el verbo en -ar; la forma correcta es 'trabalhava'."
+          },
+          {
+            "answer": "Eu trabalho muito quando era jovem.",
+            "why": "Cambia el tiempo verbal al presente en vez de usar el imperfecto 'trabalhava'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la frase.",
+        "sentence": "Nós estudiamos português todas as noites.",
+        "answers": [
+          "Nós estudávamos português todas as noites."
+        ],
+        "explanation": "El imperfecto de 'nós' en verbos -ar se forma con '-ávamos', no con '-iamos', que es un calco del español.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós estudamos português todas as noites.",
+            "why": "Esa forma es presente o pretérito perfecto, no imperfecto; falta la terminación '-ávamos'."
+          },
+          {
+            "answer": "Nós estudiávamos português todas as noites.",
+            "why": "Mezcla mal las terminaciones: para verbos en -ar es '-ávamos', no '-iávamos'."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la frase.",
+        "sentence": "Eu compravam pão na padaria todo dia.",
+        "answers": [
+          "Eu comprava pão na padaria todo dia."
+        ],
+        "explanation": "La forma de 'eu' en el imperfecto de verbos -ar es '-ava' (comprava), no '-avam', que corresponde a 'eles'.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu compro pão na padaria todo dia.",
+            "why": "Cambia el tiempo verbal a presente; el error era de persona (terminación de 'eles' usada con 'eu'), no de tiempo."
+          },
+          {
+            "answer": "Eu comprava pães na padaria todo dia.",
+            "why": "Esta opción sí corrige correctamente el verbo a 'comprava', pero además cambia 'pão' por 'pães' sin necesidad, modificando una parte de la frase que no tenía error."
+          }
+        ]
+      },
+      {
+        "type": "error_correction",
+        "instruction": "Encontrá el error y corregí la frase.",
+        "sentence": "Nós abriamos a loja às oito horas.",
+        "answers": [
+          "Nós abríamos a loja às oito horas."
+        ],
+        "explanation": "La forma de 'nós' en el imperfecto de verbos -ir lleva tilde: 'abríamos', no 'abriamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós abrimos a loja às oito horas.",
+            "why": "Cambia al presente o pretérito perfecto; el error era la falta de tilde en el imperfecto, no el tiempo verbal."
+          },
+          {
+            "answer": "Nós abríammos a loja às oito horas.",
+            "why": "Agrega una letra de más; la forma correcta es 'abríamos', con una sola 'm'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase al portugués.",
+        "spanish": "Yo vivía en Córdoba cuando era chico.",
+        "answers": [
+          "Eu morava em Córdoba quando era criança.",
+          "Eu vivia em Córdoba quando era criança."
+        ],
+        "explanation": "El imperfecto de 'morar'/'viver' para 'eu' es 'morava'/'vivia'; se usa para describir dónde vivía alguien en el pasado.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu moraba em Córdoba quando era criança.",
+            "why": "'Moraba' es un calco del español; en portugués el imperfecto de 'morar' es 'morava'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase al portugués.",
+        "spanish": "Vos trabajabas en la misma empresa que yo.",
+        "answers": [
+          "Você trabalhava na mesma empresa que eu."
+        ],
+        "explanation": "Con 'você' se usa la misma forma del imperfecto que con 'ele/ela': 'trabalhava', sin la 's' final que tendría la forma de 'tu'.",
+        "wrongAnswers": [
+          {
+            "answer": "Você trabalhavas na mesma empresa que eu.",
+            "why": "En portugués 'você' usa la misma forma que 'ele/ela', 'trabalhava', sin la 's' final."
+          },
+          {
+            "answer": "Você trabalhaba na mesma empresa que eu.",
+            "why": "'Trabalhaba' es un calco del español; la forma portuguesa es 'trabalhava'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase al portugués.",
+        "spanish": "Nosotros comíamos juntos todos los domingos.",
+        "answers": [
+          "Nós comíamos juntos todos os domingos."
+        ],
+        "explanation": "La forma de 'nós' en el imperfecto de verbos -er lleva tilde: 'comíamos'.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós comiamos juntos todos os domingos.",
+            "why": "Falta la tilde: la forma correcta de 'nós' es 'comíamos', con acento en la í."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase al portugués.",
+        "spanish": "Ella siempre abría el negocio temprano.",
+        "answers": [
+          "Ela sempre abria a loja cedo.",
+          "Ela sempre abria o negócio cedo."
+        ],
+        "explanation": "El imperfecto de 'abrir' para 'ela' es 'abria', sin mezclar con la terminación '-ava' de los verbos en -ar.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela sempre abriava a loja cedo.",
+            "why": "No existe la terminación '-iava'; el imperfecto de 'abrir' es 'abria'."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase al portugués.",
+        "spanish": "Ustedes vivían cerca del río.",
+        "answers": [
+          "Vocês viviam perto do rio."
+        ],
+        "explanation": "El imperfecto de 'viver' para 'vocês' es 'viviam', sin tilde y con 'm' final, a diferencia de la ortografía española.",
+        "wrongAnswers": [
+          {
+            "answer": "Vocês vivian perto do rio.",
+            "why": "Es un calco de la ortografía española 'vivían'; en portugués se escribe 'viviam', sin tilde y con 'm' final."
+          }
+        ]
+      },
+      {
+        "type": "translation",
+        "instruction": "Traducí la frase al portugués.",
+        "spanish": "Nosotros estudiábamos portugués de noche en la casa de Marcos.",
+        "answers": [
+          "Nós estudávamos português à noite na casa do Marcos."
+        ],
+        "explanation": "El imperfecto de 'nós' en verbos -ar se forma con '-ávamos', con tilde, y no con '-iávamos' ni con la forma de presente.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós estudiávamos português à noite na casa do Marcos.",
+            "why": "Mezcla mal las terminaciones; el imperfecto de verbos en -ar es '-ávamos', no '-iávamos'."
+          },
+          {
+            "answer": "Nós estudamos português à noite na casa do Marcos.",
+            "why": "Esa es la forma de presente o pretérito perfecto, no del imperfecto, que requiere 'estudávamos'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración del presente al pretérito imperfeito.",
+        "sentence": "Eu moro em Córdoba.",
+        "answers": [
+          "Eu morava em Córdoba."
+        ],
+        "explanation": "Los verbos en -ar forman el imperfeito con '-ava': morar → morava.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu morei em Córdoba.",
+            "why": "'Morei' es pretérito perfeito (acción puntual); para una acción habitual en el pasado se usa el imperfeito 'morava'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración al pretérito imperfeito. Ojo con el acento en la forma de 'nós'.",
+        "sentence": "Nós trabalhamos na mesma loja.",
+        "answers": [
+          "Nós trabalhávamos na mesma loja."
+        ],
+        "explanation": "La forma de 'nós' en el imperfeito de los verbos -ar lleva tilde: trabalhávamos.",
+        "wrongAnswers": [
+          {
+            "answer": "Nós trabalhavamos na mesma loja.",
+            "why": "Falta el acento; la forma correcta es 'trabalhávamos', con tilde en la 'a'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración al pretérito imperfeito.",
+        "sentence": "Ela escreve cartas longas.",
+        "answers": [
+          "Ela escrevia cartas longas."
+        ],
+        "explanation": "Los verbos en -er forman el imperfeito con '-ia': escrever → escrevia.",
+        "wrongAnswers": [
+          {
+            "answer": "Ela escrevava cartas longas.",
+            "why": "La terminación '-ava' es solo para verbos en -ar; 'escrever' termina en -er y usa '-ia'."
+          }
+        ]
+      },
+      {
+        "type": "transformation",
+        "instruction": "Pasá esta oración a la forma negativa, manteniendo el imperfeito.",
+        "sentence": "Eu estudava à noite.",
+        "answers": [
+          "Eu não estudava à noite."
+        ],
+        "explanation": "Para negar en pretérito imperfeito solo se agrega 'não' antes del verbo; el tiempo verbal no cambia.",
+        "wrongAnswers": [
+          {
+            "answer": "Eu não estudo à noite.",
+            "why": "El verbo pasó a presente ('estudo'); hay que mantener el imperfeito 'estudava'."
+          }
+        ]
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Quando eu era criança, eu morava em Mendoza.",
+        "alternatives": [],
+        "translation": "Cuando yo era niño, yo vivía en Mendoza.",
+        "explanation": "Tanto 'era' como 'morava' están en imperfeito porque describen una situación habitual del pasado, no una acción puntual."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Nós sempre comíamos juntos nos domingos.",
+        "alternatives": [],
+        "translation": "Nosotros siempre comíamos juntos los domingos.",
+        "explanation": "La forma 'comíamos' lleva tilde en la 'i'; no la confundas con 'comemos', que no tiene acento y puede ser presente o pretérito perfeito."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "A Sofia trabalhava numa loja de roupas em São Paulo.",
+        "alternatives": [
+          "A Sofia trabalhava em uma loja de roupas em São Paulo."
+        ],
+        "translation": "Sofía trabajaba en una tienda de ropa en San Pablo.",
+        "explanation": "'Trabalhava' termina en '-ava', típico de los verbos en -ar en imperfeito; no lo confundas con '-ia', que es para verbos en -er/-ir."
+      },
+      {
+        "type": "dictation",
+        "instruction": "Escuchá y escribí la oración completa.",
+        "sentence": "Vocês estudavam português todas as noites?",
+        "alternatives": [],
+        "translation": "¿Ustedes estudiaban portugués todas las noches?",
+        "explanation": "'Estudavam' es la forma de plural en imperfeito; prestá atención a que termina en '-avam', no en '-avão' ni '-aram'."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "pão",
+          "pau"
+        ],
+        "target": 0,
+        "meanings": [
+          "pan",
+          "palo"
+        ],
+        "explanation": "En 'pão' el aire sale por la nariz porque es un diptongo nasal; en 'pau' la vocal es oral, sin nasalidad."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "carro",
+          "caro"
+        ],
+        "target": 0,
+        "meanings": [
+          "auto",
+          "caro"
+        ],
+        "explanation": "La 'r' simple de 'caro' se pronuncia suave, como un golpecito de lengua; la 'rr' de 'carro' es más fuerte, parecida a una 'j' o 'h' aspirada en portugués brasileño."
+      },
+      {
+        "type": "minimal_pair",
+        "instruction": "Escuchá y elegí qué palabra se dice.",
+        "pair": [
+          "ganho",
+          "galho"
+        ],
+        "target": 0,
+        "meanings": [
+          "gano / ganancia",
+          "rama"
+        ],
+        "explanation": "El sonido 'lh' de 'galho' se parece a la 'll' del español rioplatense; el sonido 'nh' de 'ganho' es nasal, parecido a la 'ñ' del español."
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre Lucas y Carolina sobre su infancia y respondé las preguntas.",
+        "situation": "Lucas y Carolina son amigos de la infancia y se encuentran en un bar en Curitiba. Hablan de cómo era su vida cuando eran chicos.",
+        "lines": [
+          {
+            "speaker": "Lucas",
+            "text": "Carolina, onde você morava quando era criança?"
+          },
+          {
+            "speaker": "Carolina",
+            "text": "Eu morava em Curitiba, com meus pais."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "E você estudava em escola pública ou particular?"
+          },
+          {
+            "speaker": "Carolina",
+            "text": "Eu estudava numa escola particular, perto de casa."
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Nós morávamos em Porto Alegre, perto do rio."
+          },
+          {
+            "speaker": "Carolina",
+            "text": "Vocês brincavam muito na rua?"
+          },
+          {
+            "speaker": "Lucas",
+            "text": "Sim, eu e meu irmão brincávamos todos os dias."
+          },
+          {
+            "speaker": "Carolina",
+            "text": "Que saudade dessa época!"
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde vivía Carolina de chica?",
+            "options": [
+              "En Río de Janeiro",
+              "En San Pablo",
+              "En Porto Alegre",
+              "En Curitiba"
+            ],
+            "correctIndex": 3,
+            "explanation": "Carolina dice 'Eu morava em Curitiba, com meus pais', usando morava, forma de yo del pretérito imperfeito de morar."
+          },
+          {
+            "prompt": "¿En qué tipo de escuela estudiaba Carolina?",
+            "options": [
+              "No estudiaba",
+              "En una escuela particular",
+              "En una escuela a distancia",
+              "En una escuela pública"
+            ],
+            "correctIndex": 1,
+            "explanation": "Carolina dice 'Eu estudava numa escola particular, perto de casa', usando estudava, forma de yo del pretérito imperfeito de estudar."
+          },
+          {
+            "prompt": "¿Con quién jugaba Lucas todos los días?",
+            "options": [
+              "Solo",
+              "Con sus primos",
+              "Con Carolina",
+              "Con su hermano"
+            ],
+            "correctIndex": 3,
+            "explanation": "Lucas dice 'eu e meu irmão brincávamos todos os dias', usando brincávamos, forma de nós del pretérito imperfeito de brincar, que lleva tilde."
+          }
+        ]
+      },
+      {
+        "type": "listening",
+        "instruction": "Leé la conversación entre el entrevistador y el candidato y respondé las preguntas.",
+        "situation": "Un candidato está en una entrevista de trabajo en una empresa de San Pablo. El entrevistador le pregunta sobre su trabajo anterior.",
+        "lines": [
+          {
+            "speaker": "Entrevistador",
+            "text": "Você trabalhava em que tipo de empresa antes?"
+          },
+          {
+            "speaker": "Candidato",
+            "text": "Eu trabalhava numa loja de roupas, no centro."
+          },
+          {
+            "speaker": "Entrevistador",
+            "text": "E o que você fazia lá, exatamente?"
+          },
+          {
+            "speaker": "Candidato",
+            "text": "Eu vendia roupas e atendia os clientes."
+          },
+          {
+            "speaker": "Entrevistador",
+            "text": "Vocês abriam a loja muito cedo?"
+          },
+          {
+            "speaker": "Candidato",
+            "text": "Sim, nós abríamos a loja às oito da manhã."
+          },
+          {
+            "speaker": "Entrevistador",
+            "text": "E você gostava do trabalho?"
+          },
+          {
+            "speaker": "Candidato",
+            "text": "Gostava muito, mas o salário era baixo."
+          }
+        ],
+        "questions": [
+          {
+            "prompt": "¿Dónde trabajaba antes el candidato?",
+            "options": [
+              "En un restaurante",
+              "En un supermercado",
+              "En una tienda de ropa",
+              "En una oficina"
+            ],
+            "correctIndex": 2,
+            "explanation": "El candidato dice 'Eu trabalhava numa loja de roupas, no centro', usando trabalhava, forma de yo del pretérito imperfeito de trabalhar."
+          },
+          {
+            "prompt": "¿Qué hacía exactamente en ese trabajo?",
+            "options": [
+              "Vendía ropa y atendía a los clientes",
+              "Solo limpiaba la tienda",
+              "Cocinaba y limpiaba",
+              "Hacía las cuentas"
+            ],
+            "correctIndex": 0,
+            "explanation": "El candidato dice 'Eu vendia roupas e atendia os clientes', usando vendia y atendia, formas del pretérito imperfeito de vender y atender, verbos terminados en -er."
+          },
+          {
+            "prompt": "¿A qué hora abrían la tienda?",
+            "options": [
+              "A las siete de la mañana",
+              "A las ocho de la mañana",
+              "A las nueve de la mañana",
+              "A las diez de la mañana"
+            ],
+            "correctIndex": 1,
+            "explanation": "El candidato dice 'nós abríamos a loja às oito da manhã', usando abríamos, forma de nós del pretérito imperfeito de abrir, que lleva tilde."
+          }
+        ]
+      }
+    ]
+  }
+}
