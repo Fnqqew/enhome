@@ -5,7 +5,7 @@
 - Al terminar cada tarea: actualizá `.ecosistem/estado.md` (objetivo, hecho, próximos pasos, decisiones) y hacé commit + push.
 - Si el contexto o la cuota se están por agotar, o trabajan varios agentes: guardá todo lo extraído en `.ecosistem/estado.md` antes de seguir.
 - Código esencial: sin comentarios obvios ni abstracciones de más; editá en vez de reescribir archivos enteros.
-- Ahorro de tokens sin bajar calidad: buscá antes de leer y leé archivos grandes por partes; no releas lo que ya está en la conversación; sin subagentes para lo que se resuelve con pocas búsquedas; no cambies de modelo en mitad de la sesión; respuesta final corta (el diff ya se ve).
+- Ahorro de tokens sin bajar calidad: buscá antes de leer y leé archivos grandes por partes; no releas lo que ya está en la conversación; sin subagentes para lo que se resuelve con pocas búsquedas ni después de una pausa larga (con la caché fría, cada subagente reescribe todo el contexto); no cambies de modelo en mitad de la sesión; respuesta final corta (el diff ya se ve).
 - Una sesión por tarea: al terminarla, dejá `.ecosistem/estado.md` al día para que la próxima empiece con /clear.
 - Nunca el logo de Electron: siempre el logo del proyecto (ventana, barra de tareas, instalador, accesos directos).
 - Solo uso personal: nada de publicar ni monetizar.
